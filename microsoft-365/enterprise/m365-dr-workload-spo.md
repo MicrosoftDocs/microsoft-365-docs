@@ -49,7 +49,7 @@ Required Conditions:
 
 1. _Tenants_ have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_
 1. Customer must have an active Enterprise Agreement.
-1.Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the _Tenant_.
+1.Total purchased Multi-Geo units must be greater than 5% of the total eligible licenses in the _Tenant_.
 
 **Commitment:**
 Customers can assign users of SharePoint Online/OneDrive for Business to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
@@ -551,4 +551,4 @@ To set a _Geography_ location into SPO mode, connect to the _Geography_ location
 
 ## How can I determine customer data location?
 
-You can find the actual data location in __ Admin Center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a _Tenant_ created, you can have a _Tenant_ created when signing up for a Microsoft 365 trial.
+You can find the actual data location in Microsoft 365 admin center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a _Tenant_ created, you can have a _Tenant_ created when signing up for a Microsoft 365 trial.
