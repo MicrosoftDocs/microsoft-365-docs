@@ -3699,6 +3699,16 @@
       "source_path": "microsoft-365/security/office-365-security/exchange-online-protection-eop.md",
       "redirect_url": "/microsoft-365/security/office-365-security/eop-about",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#block-the-following-urls-list-for-safe-links",
+      "redirect_document_id": true
+    },
+    {
+      "source_path":"microsoft-365/security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
+      "redirect_url":"/azure/defender-for-iot/organizations/concept-enterprise",
+      "redirect_document_id":false
+   }
    ]
 }
