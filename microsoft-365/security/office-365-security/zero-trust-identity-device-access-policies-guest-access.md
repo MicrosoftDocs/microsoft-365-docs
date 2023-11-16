@@ -65,17 +65,17 @@ For more information on securing identity and device access policies for Teams, 
 
 ### Require MFA always for guest and external users
 
-This policy prompts guests to register for MFA in your tenant, regardless of whether they're registered for MFA in their home tenant. When accessing resources in your tenant, guests and external users are required to use MFA for every request.
+This policy prompts guests to register for MFA in your tenant, regardless of whether they're registered for MFA in their home tenant. Guests and external users accessing resources in your tenant are required to use MFA for every request.
 
 ### Excluding guests and external users from risk-based MFA
 
-While organizations can enforce risk-based policies for B2B users using Microsoft Entra ID Protection, there are limitations in the implementation of Microsoft Entra ID Protection for B2B collaboration users in a resource directory due to their identity existing in their home directory. Due to these limitations, Microsoft recommends you exclude guests from risk-based MFA policies and require these users to always use MFA.
+While organizations can enforce risk-based policies for B2B users using Microsoft Entra ID Protection, there are limitations in the implementation of Microsoft Entra ID Protection for B2B collaboration users in a resource directory because their identity exists in their home directory. Due to these limitations, Microsoft recommends you exclude guests from risk-based MFA policies and require these users to always use MFA.
 
 For more information, see [Limitations of Identity Protection for B2B collaboration users](/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users).
 
 ### Excluding guests and external users from device management
 
-Only one organization can manage a device. If you don't exclude guests and external users from policies that require device compliance, these policies will block these users.
+Only one organization can manage a device. If you don't exclude guests and external users from policies that require device compliance, these policies block these users.
 
 ## Next step
 
