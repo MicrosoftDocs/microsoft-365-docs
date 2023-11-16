@@ -13,7 +13,7 @@ ms.collection:
 - m365-security
 - tier2
 audience: ITPro
-ms.date: 11/15/2023
+ms.date: 11/16/2023
 search.appverid: MET150
 
 ---
@@ -38,7 +38,7 @@ Be aware of the following before you start:
 
 - WSL version 2.0.7 or later must be running with at least one active distro.
 
-   Run `wsl --update` to make sure you are on the latest version. If you observe `wsl –version` shows a version older than 2.0.7, run `wsl –update –pre-release` to get the latest update.
+   Run `wsl --update` to make sure you are on the latest version. If you observe `wsl -–version` shows a version older than 2.0.7, run `wsl -–update –pre-release` to get the latest update.
 
 - Defender for Endpoint must be onboarded and running on the Windows host OS.
 
@@ -66,7 +66,7 @@ If you haven't yet installed Windows Subsystem for Linux, follow these steps:
 
 1. Open Terminal or Command Prompt. (In Windows, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.) 
 
-2. Run the command `wsl –install`.
+2. Run the command `wsl -–install`.
 
 ### Confirm WSL is installed and running
 
@@ -273,7 +273,6 @@ DeviceProcessEvents
    ```
 
    The support bundle can be found in the path provided by the previous command. 
-
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-overview.png" alt-text="Screenshot showing status in PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check-overview.png":::
 
