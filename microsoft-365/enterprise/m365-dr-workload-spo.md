@@ -25,7 +25,7 @@ ms.collection:
 
 Required Conditions:
 
-- _Tenant_ has a sign up country/region included in _Local Region Geography_, the European Union or the United States.
+- _Tenant_ has a sign-up country/region included in _Local Region Geography_, the European Union or the United States.
 
 **Commitment:**
 
@@ -35,7 +35,7 @@ _For current language please refer to the [Privacy and Security Product Terms](h
 
 Required Conditions:
 
-1. _Tenant_ has a sign up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign-up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The SharePoint Online subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
@@ -49,7 +49,7 @@ Required Conditions:
 
 1. _Tenants_ have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_
 1. Customer must have an active Enterprise Agreement.
-1.Total purchased Multi-Geo units must be greater than 5% of the total eligible licenses in the _Tenant_.
+1. Total purchased Multi-Geo units must be greater than 5% of the total eligible licenses in the _Tenant_.
 
 **Commitment:**
 Customers can assign users of SharePoint Online/OneDrive for Business to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
