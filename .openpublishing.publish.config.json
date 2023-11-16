@@ -113,6 +113,7 @@
     ".openpublishing.redirection.solutions.json",
     ".openpublishing.redirection.syntex.json",
     ".openpublishing.redirection.topics.json",
-    ".openpublishing.redirection.lti.json"
+    ".openpublishing.redirection.lti.json",
+    ".openpublishing.redirection.viva.json"
   ]
 }
