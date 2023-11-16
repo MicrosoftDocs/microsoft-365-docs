@@ -291,7 +291,7 @@ Users with permissions to OneDrive content will continue to have access to the c
 
 #### **OneDrive sync app**
 
-The OneDrive sync app will automatically detect and seamlessly transfer syncing to the new OneDrive location once the OneDrive _Geography_ move is complete. The user does not need to sign-in again or take any other action. (Version 17.3.6943.0625 or later of the sync app required.)
+The OneDrive sync app automatically detects and seamlessly transfers syncing to the new OneDrive location once the OneDrive _Geography_ move is complete. The user doesn't need to sign-in again or take any other action. (Version 17.3.6943.0625 or later of the sync app required.)
 If a user updates a file while the OneDrive _Geography_ move is in progress, the sync app will notify them that file uploads are pending while the move is underway.
 
 #### **Sharing links**
@@ -300,7 +300,7 @@ Upon OneDrive _Geography_ move completion, the existing shared links for the fil
 
 #### **OneNote Experience**
 
-OneNote Win32 client and UWP (Universal) App will automatically detect and seamlessly sync notebooks to the new OneDrive location once OneDrive _Geography_ move is complete. The user does not need to sign-in again or take any other action. The only visible indicator to the user is notebook sync would fail when OneDrive _Geography_ move is in progress. This experience is available on the following OneNote client versions:
+OneNote Win32 client and UWP (Universal) App automatically detects and seamlessly syncs notebooks to the new OneDrive location once OneDrive _Geography_ move is complete. The user doesn't need to sign-in again or take any other action. The only visible indicator to the user is notebook sync would fail when OneDrive _Geography_ move is in progress. This experience is available on the following OneNote client versions:
 
 - OneNote Win32 – Version 16.0.8326.2096 (and later)
 - OneNote UWP – Version 16.0.8431.1006 (and later)
@@ -478,7 +478,7 @@ Users with permissions to site will continue to have access to the site during t
 
 #### **Sync app**
 
-The sync app will automatically detect and seamlessly transfer syncing to the new site location once the site move is complete. The user does not need to sign in again or take any other action. (Version 17.3.6943.0625 or later of the sync app required.)
+The sync app automatically detects and seamlessly transfers syncing to the new site location once the site move is complete. The user doesn't need to sign in again or take any other action. (Version 17.3.6943.0625 or later of the sync app required.)
 If a user updates a file while the move is in progress, the sync app will notify them that file uploads are pending while the move is underway.
 
 #### **Sharing links**
@@ -490,7 +490,7 @@ The MRU service is updated with the site url and its content URLs once the move 
 
 #### **OneNote experience**
 
-OneNote Win32 client and UWP (Universal) App will automatically detect and seamlessly sync notebooks to the new site location once site move is complete. The user does not need to sign in again or take any other action. The only visible indicator to the user is notebook sync would fail when site move is in progress. This experience is available on the following OneNote client versions:
+OneNote Win32 client and UWP (Universal) App automatically detects and seamlessly syncs notebooks to the new site location once site move is complete. The user doesn't need to sign in again or take any other action. The only visible indicator to the user is notebook sync would fail when site move is in progress. This experience is available on the following OneNote client versions:
 
 - OneNote Win32 – Version 16.0.8326.2096 (and later)
 - OneNote UWP – Version 16.0.8431.1006 (and later)
@@ -511,7 +511,7 @@ SharePoint 2013 workflows have to be republished after the site move. SharePoint
 If you are moving a site with apps, you must reinstantiate the app in the site's new _Geography_ location as the app and its connections may not be available in the destination _Geography_ location.
 
 #### **Power Automate**
-In most cases, Power Automate Flows will continue to work after a SharePoint site _Geography_ move. We recommend that you test them once the move has completed.
+In most cases, Power Automate Flows will continue to work after a SharePoint site _Geography_ move. We recommend that you test them once the move completes.
 
 #### **Power Apps**
 
@@ -551,4 +551,4 @@ To set a _Geography_ location into SPO mode, connect to the _Geography_ location
 
 ## How can I determine customer data location?
 
-You can find the actual data location in _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a _Tenant_ created, you can have a _Tenant_ created when signing up for a Microsoft 365 trial.
+You can find the actual data location in __ Admin Center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a _Tenant_ created, you can have a _Tenant_ created when signing up for a Microsoft 365 trial.
