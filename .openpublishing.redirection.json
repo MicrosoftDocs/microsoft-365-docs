@@ -1,7 +1,7 @@
 {
    "redirections":[
     {
-      "source_path": "office365/SecurityCompliance/secure-sharepoint-online-sites-and-files.md",
+      "source_path": "microsoft-365/office365/SecurityCompliance/secure-sharepoint-online-sites-and-files.md",
       "redirect_url": "/microsoft-365/community/sharepoint-security-a-team-effort",
       "redirect_document_id": false
     },
