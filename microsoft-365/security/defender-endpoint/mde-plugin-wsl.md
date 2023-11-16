@@ -38,7 +38,7 @@ Be aware of the following before you start:
 
 - WSL version 2.0.7 or later must be running with at least one active distro.
 
-   Run `wsl --update` to make sure you are on the latest version. If you observe `wsl –version` shows a version older than 2.0.7, run `wsl –update –pre-release` to get the latest update.
+   Run `wsl --update` to make sure you are on the latest version. If you observe `wsl --version` shows a version older than 2.0.7, run `wsl –update –pre-release` to get the latest update.
 
 - Defender for Endpoint must be onboarded and running on the Windows host OS.
 
