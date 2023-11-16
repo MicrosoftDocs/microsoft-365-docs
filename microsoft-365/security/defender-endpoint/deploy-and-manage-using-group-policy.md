@@ -3,11 +3,8 @@ title: Deploy and manage using group policy
 description: Use group policy to deploy and manage on printer protection.
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
-author: nimishasatapathy
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -16,7 +13,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 11/16/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
