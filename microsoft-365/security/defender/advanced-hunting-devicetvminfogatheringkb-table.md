@@ -29,7 +29,7 @@ ms.date: 06/22/2022
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Defender for Endpoint
 
 > [!IMPORTANT]

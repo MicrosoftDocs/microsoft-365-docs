@@ -24,11 +24,11 @@ description: "Learn how to manage Microsoft 365 Copilot access to public web con
 
 Microsoft 365 Copilot combines the power of large language models (LLMs) with your organization’s data – all in the flow of work – to turn your words into one of the most powerful productivity tools on the planet. Copilot can provide summaries of chats, messages, and meetings, answer business questions, and generate content. For more information, see [How Microsoft 365 Copilot works](https://www.youtube.com/watch?v=B2-8wrF9Okc).
 
-As your organization’s Microsoft 365 admin, you can turn off Copilot’s ability to access and include web content when it responds to your users’ prompts. For more information on how this control impacts data, privacy, and security within Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-public-web-content).
+As your organization’s Microsoft 365 admin, you can turn off Copilot’s ability to access and include web content when it responds to your users’ prompts. For more information on how this control impacts data, privacy, and security within Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-public-web-content).
 
 ## Before you begin
 
-- You must assign a Microsoft 365 Copilot license to your selected users before they can use Copilot. For more information, see Get started with Copilot in Microsoft 365.
+- You must assign a Microsoft 365 Copilot license to your selected users before they can use Copilot. For more information, see [Get started with Copilot in Microsoft 365](microsoft-365-copilot-setup.md).
 
 - You must be a global admin or search admin to complete the task in this article. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 

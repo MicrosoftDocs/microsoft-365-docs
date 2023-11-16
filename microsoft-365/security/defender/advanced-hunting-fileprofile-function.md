@@ -1,5 +1,5 @@
 ---
-title: FileProfile() function in advanced hunting for Microsoft 365 Defender
+title: FileProfile() function in advanced hunting for Microsoft Defender XDR
 description: Learn how to use the FileProfile() to enrich information about files in your advanced hunting query results
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
@@ -29,7 +29,7 @@ ms.date: 02/16/2021
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data to files found by the query.
 

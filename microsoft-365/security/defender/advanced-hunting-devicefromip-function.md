@@ -1,5 +1,5 @@
 ---
-title: DeviceFromIP() function in advanced hunting for Microsoft 365 Defender
+title: DeviceFromIP() function in advanced hunting for Microsoft Defender XDR
 description: Learn how to use the DeviceFromIP() function to get the devices that have been assigned a specific IP address
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, device, devicefromIP, function, enrichment
 search.product: eADQiWindows 10XVcnh
@@ -29,7 +29,7 @@ ms.date: 02/16/2021
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]

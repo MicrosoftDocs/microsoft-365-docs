@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Identity notifications in Microsoft 365 Defender
-description: Learn how to set Microsoft Defender for Identity notifications in Microsoft 365 Defender.
+title: Microsoft Defender for Identity notifications in Microsoft Defender XDR
+description: Learn how to set Microsoft Defender for Identity notifications in Microsoft Defender XDR.
 ms.date: 05/20/2021
 ms.topic: how-to
 author: batamig
@@ -12,23 +12,23 @@ ms.collection: m365-security
 search.appverid: met150
 ---
 
-# Defender for Identity notifications in Microsoft 365 Defender
+# Defender for Identity notifications in Microsoft Defender XDR
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Defender for Identity
 
-This article explains how to work with [Microsoft Defender for Identity](/defender-for-identity) notifications in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+This article explains how to work with [Microsoft Defender for Identity](/defender-for-identity) notifications in [Microsoft Defender XDR](/microsoft-365/security/defender/overview-security-center).
 
 > [!IMPORTANT]
-> As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
+> As part of the convergence with Microsoft Defender XDR, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## Health issues notifications
 
-In Microsoft 365 Defender, you can add recipients for email notifications of health issues in Defender for Identity.
+In Microsoft Defender XDR, you can add recipients for email notifications of health issues in Defender for Identity.
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option in the column Name" lightbox="../../media/defender-identity/settings-identities.png":::
 
@@ -48,9 +48,9 @@ In Microsoft 365 Defender, you can add recipients for email notifications of hea
 
 ## Alert notifications
 
-In Microsoft 365 Defender, you can add recipients for email notifications of detected alerts.
+In Microsoft Defender XDR, you can add recipients for email notifications of detected alerts.
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option" lightbox="../../media/defender-identity/settings-identities.png":::
 
@@ -65,9 +65,9 @@ In Microsoft 365 Defender, you can add recipients for email notifications of det
 Defender for Identity can notify you when it detects suspicious activities by sending security and health alerts to your Syslog server through a nominated sensor.
 
 > [!NOTE]
-> To learn how to integrate Defender for Identity with Microsoft Sentinel, see [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
+> To learn how to integrate Defender for Identity with Microsoft Sentinel, see [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The option of Identities in the Name column" lightbox="../../media/defender-identity/settings-identities.png":::
 

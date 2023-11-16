@@ -1,5 +1,5 @@
 ---
-title: AssignedIPAddresses() function in advanced hunting for Microsoft 365 Defender
+title: AssignedIPAddresses() function in advanced hunting for Microsoft Defender XDR
 description: Learn how to use the AssignedIPAddresses() function to get the latest IP addresses assigned to a device
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
@@ -29,7 +29,7 @@ ms.date: 02/16/2021
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Use the `AssignedIPAddresses()` function in your [advanced hunting](advanced-hunting-overview.md) queries to quickly obtain the latest IP addresses that have been assigned to a device. If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time. 
 
