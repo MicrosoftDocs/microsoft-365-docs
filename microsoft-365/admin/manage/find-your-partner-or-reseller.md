@@ -55,8 +55,7 @@ In some cases, you can find information in the Microsoft 365 admin center for pa
 
 ## View partner info in the Microsoft 365 admin center
 
-1. In the Microsoft 365 admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page.
-  
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page.
 2. If you have a partner, the partner's name and relationship to your organization is listed here. To view partner contact information, like the phone number and email address, select the partner name.
 
 ## Related content

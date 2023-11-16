@@ -40,7 +40,7 @@ When DAP is enabled, you have no control over the number of Global admins your p
 
 ## Review and remove roles from partners
 
-1. In the Microsoft 365 admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page. Partners with DAP have **Global Administrator** listed in the **Roles** column.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> page. Partners with DAP have **Global Administrator** listed in the **Roles** column.
 2. To remove the Global admin role from a partner, find the name of the partner that you want to remove.
 3. Select the row that has **Reseller** as the **Relationship Type**.
 4. On the partner details page, select **Remove roles**, then select **Yes**.

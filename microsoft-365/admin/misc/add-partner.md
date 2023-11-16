@@ -40,7 +40,7 @@ ms.date: 11/16/2023
 
 ::: moniker range="o365-worldwide"
 
-An Microsoft authorized partner can act as your subscription advisor and provide the sales, support, and technical expertise that you need to help you set up and maintain your Microsoft 365 business subscription. You can add a subscription advisor partner as a partner of record when you buy Microsoft 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website.
+A Microsoft authorized partner can act as your subscription advisor and provide the sales, support, and technical expertise that you need to help you set up and maintain your Microsoft 365 business subscription. You can add a subscription advisor partner as a partner of record when you buy Microsoft 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website.
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ As an admin for Office 365, you can create or edit users, reset user passwords, 
 
 ## Add a partner at the time of purchase
 
-1. Go to the Microsoft 365 admin center.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
     - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products.**
     - If you're using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a> page.
 2. On the **Purchase services** page, select the plan that you want to buy, and then select **Details**.
@@ -86,7 +86,7 @@ Follow the steps on the providers page to either search for, or to get matched w
 
 ::: moniker range="o365-worldwide"
 
-1. Go to the Microsoft 365 admin center.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
     - If you're using the **Simplified view**, select **Subscriptions**.
     - If you're using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to change.
@@ -110,7 +110,7 @@ To accept this offer
 
 ## Change or remove the partner for a subscription
 
-1. Go to the admin center.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
     - If you're using the **Simplified view**, select **Subscriptions**.
     - If you're using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscriptions that you want to change.
