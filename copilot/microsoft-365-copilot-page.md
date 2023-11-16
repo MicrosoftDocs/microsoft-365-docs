@@ -40,22 +40,25 @@ In this dashboard, you can access essential resources to help your organization 
 
 You can manage Copilot licenses, including assigning and unassigning licenses, for your users.
 
-### Manage how your organization interacts with Bing Chat in Microsoft Edge
+### Manage how your organization interacts with Copilot in Bing, Edge, and Windows
 
-Bing Chat Enterprise provides enhanced commercial data protection for users accessing the generative AI capabilities of Bing Chat. Use this setting to navigate enabling or disabling Bing Chat Enterprise, as well as Bing Chat.
+Copilot with commercial data protection provides enhanced security for users accessing the generative AI capabilities of Copilot. This experience is on by default for users when they are signed in and using Microsoft 365 E3 or E5 license assigned by your organization. 
+
+Copilot in Bing, Edge and Windows is the public version of Copilot and doesn’t require users to be signed in. You can reroute to the documentation available on the panel to turn off the public experience and still have access to the Copilot with commercial data protection experience.
 
 ### Manage plugins that work with Microsoft 365 Copilot
 
 Microsoft 365 Copilot is powered by an advanced processing and orchestration engine that seamlessly integrates Microsoft 365 apps, Microsoft Graph, and large language models (LLMs) to turn your words into the most powerful productivity tool. While Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many users still depend on various external tools and services for work management and collaboration. You can extend Microsoft 365 Copilot by building a plugin or by connecting to an external data source.
-This control navigates you to the Integrated App settings to control how non-Microsoft apps can work with Microsoft 365 Copilot.
+
+This control navigates you to the Integrated App settings to control how non-Microsoft apps and first party apps can work with Microsoft 365 Copilot.
 
 ### Public web content access
 
-This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Bing Chat Enterprise. Learn more about [how to Manage access to public web content in Microsoft 365 Copilot responses](manage-public-web-access.md).
+This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to public web content in Microsoft 365 Copilot responses](manage-public-web-access.md).
 
 ### Data Security and Compliance
 
-This link navigates you to the Microsoft Purview compliance portal where you can manage sensitivity labels and configure how Microsoft 365 Copilot interacts and references protected documents. Learn more about [how to protect and manage Microsoft 365 Copilot interactions with Microsoft Purview](/purview/ai-microsoft-purview).
+This link navigates you to the Microsoft Purview compliance portal where you can manage sensitivity labels, retention policies, Copilot interactions, audit records for Copilot, search Copilot interactions, and configure how Microsoft 365 Copilot interacts and references protected documents. Learn more about [how to protect and manage Microsoft 365 Copilot interactions with Microsoft Purview](/purview/ai-microsoft-purview).
 
 ### Security Copilot
 

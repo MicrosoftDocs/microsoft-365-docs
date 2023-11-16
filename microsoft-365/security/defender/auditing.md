@@ -26,7 +26,7 @@ ms.date: 05/29/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft Defender XDR](microsoft-365-defender.md)
 
 As a tenant administrator, you can use Microsoft Purview to search the audit logs for the times Microsoft Defender Experts signed into your tenant and the actions they did there to perform their investigations. You can also search the audit logs for the changes done by your tenant administrators to the Defender Experts settings.
 
@@ -47,8 +47,8 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 | Action performed by Defender Experts | Workload | Record type |
 |--------------|-----|-----------|
 | Sign into customer tenant |  AzureActiveDirectory | AzureActiveDirectoryStsLogon |
-| Make changes to incidents in Microsoft 365 Defender portal      |  Microsoft365Defender |  MS365Dincident |
-|Make changes to alert suppression rules in Microsoft 365 Defender portal|Microsoft365Defender|MS365DSuppressionRule|
+| Make changes to incidents in Microsoft Defender portal      |  Microsoft365Defender |  MS365Dincident |
+|Make changes to alert suppression rules in Microsoft Defender portal|Microsoft365Defender|MS365DSuppressionRule|
 |Make changes to indicators in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEIndicatorsSettings|
 |Perform device remediation actions in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEResponseActions|
 

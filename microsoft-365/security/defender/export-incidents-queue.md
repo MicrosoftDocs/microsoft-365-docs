@@ -33,11 +33,11 @@ ms.date: 07/11/2022
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 The **Export** feature allows you to export the data in the incident queue that is displayed according to the applied filters and time ranges. It's available in the form of a button named **Export**, as displayed in the following screenshot:
 
-:::image type="content" source="../../media/defender/incidents-queue-with-export-button.png" alt-text="Shows the Export button in the Incidents page  of the Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/defender/incidents-queue-with-export-button.png" alt-text="Shows the Export button in the Incidents page  of the Microsoft Defender portal":::
 
 When you click the **Export** button, the data is exported to a CSV file. You can apply various filters and time ranges to the incidents queue (not just in the context of exporting the data, but in a generic context). When you select **Export**, whichever filters and/or time ranges are applied to the incidents queue, such data is exported to the CSV file.
 
@@ -50,5 +50,5 @@ For example, for the data on the CSV file, you can apply filters to view the fol
 > [!NOTE]
 > The maximum number of records you can export to a CSV file is 10,000. 
 
-If you have thoughts or suggestions about the new **Export** feature (the **Export** button) for the incident queue, contact Microsoft team or send your feedback through the Microsoft 365 Defender portal.
+If you have thoughts or suggestions about the new **Export** feature (the **Export** button) for the incident queue, contact Microsoft team or send your feedback through the Microsoft Defender portal.
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

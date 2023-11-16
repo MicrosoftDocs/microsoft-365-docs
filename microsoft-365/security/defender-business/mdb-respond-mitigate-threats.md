@@ -22,15 +22,15 @@ ms.collection:
 
 # Respond to and mitigate threats in Microsoft Defender for Business
 
-The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats. This article walks you through an example of how you can use Defender for Business.
+The Microsoft Defender portal enables your security team to respond to and mitigate detected threats. This article walks you through an example of how you can use Defender for Business.
 
 ## View detected threats
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Notice cards on the Home page. These cards were designed to tell you at a glance how many threats were detected, how many user accounts, and what endpoints (devices) or other assets were affected. The following image is an example of cards you might see:
 
-   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Screenshot of cards in the Microsoft 365 Defender portal":::
+   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Screenshot of cards in the Microsoft Defender portal":::
 
 3. Select a button or link on the card to view more information and take action. As an example, our **Devices at risk** card includes a **View details** button. Selecting that button takes us to the **Devices** list, as shown in the following image:
 

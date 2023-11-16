@@ -29,7 +29,7 @@ ms.date: 9/13/2023
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Want to get started searching for email threats using advanced hunting? Try these steps:
 
@@ -37,7 +37,7 @@ The [Microsoft Defender for Office 365 deployment guide](../office-365-security/
 
 Depending on your [preset security policy vs. custom policy choices](../office-365-security/mdo-deployment-guide.md#determine-your-protection-policy-strategy), **Zero-Hour auto purge** (ZAP) settings are important to know if a malicious message was removed from a mailbox after delivery.
 
-Quickly navigating to Kusto query language to hunt for issues is an advantage of converging these two security centers. Security teams can monitor ZAP misses by taking their next steps in the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Hunting** \> **Advanced Hunting**.
+Quickly navigating to Kusto query language to hunt for issues is an advantage of converging these two security centers. Security teams can monitor ZAP misses by taking their next steps in the Microsoft Defender portal at <https://security.microsoft.com> \> **Hunting** \> **Advanced Hunting**.
 
 1. On the **Advanced Hunting page** at <https://security.microsoft.com/v2/advanced-hunting>, verify the **New Query** tab is selected.
 1. Copy the following query into the **Query** box:
