@@ -5,7 +5,6 @@ keywords: Zero Trust, Microsoft 365 Defender for Endpoint, Microsoft 365 Defende
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-zero-trust
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

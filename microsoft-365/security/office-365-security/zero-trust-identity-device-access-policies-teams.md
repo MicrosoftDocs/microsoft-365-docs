@@ -22,7 +22,6 @@ ms.collection:
   - zerotrust-solution
   - highpri
   - tier1
-ms.subservice: mdo
 search.appverid: met150
 ---
 
