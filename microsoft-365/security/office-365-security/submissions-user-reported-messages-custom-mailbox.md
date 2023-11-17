@@ -306,7 +306,7 @@ To view both the policy and the rule at the same time, run the following command
 Write-Output -InputObject `r`n,"Report Submission Policy",("-"*79); Get-ReportSubmissionPolicy; Write-Output -InputObject `r`n,"Report Submission Rule",("-"*79); Get-ReportSubmissionRule
 ```
 
-Remember, the report submission policy doesn't exist if any of the following statement are true:
+Remember, the report submission policy doesn't exist if any of the following statements are true:
 
 - No one ever opened the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>.
 - No one ever manually created the report submission policy in PowerShell.
