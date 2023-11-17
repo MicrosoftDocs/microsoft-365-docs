@@ -65,7 +65,7 @@ Follow the steps below if you want to set user passwords to expire after a speci
   
 People who only use the Outlook app won't be forced to reset their Microsoft 365 password until it expires in the cache. This can be several days after the actual expiration date. There's no workaround for this at the admin level.
 
-This feature sets the password policy expiration for each Managed domain present on the tenant, except Federated domains. If later you add a new domain or convert a domain from Federated to Managed, this domain will not contain the password expiration policy. Whenever you convert or add a new domain, you must re-enable password expiration policy to write the password policy expiration in the new domain.
+This feature sets the password policy expiration for each Managed domain, except for Federated domains, present in the organization. If you later add a new domain or convert a domain from Federated to Managed, this domain will not contain the password expiration policy. Whenever you convert or add a new domain, you must re-enable the password expiration policy to enter the password policy expiration in the new domain.
 
 ## Prevent last password from being used again
 
