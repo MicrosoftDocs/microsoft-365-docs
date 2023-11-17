@@ -63,7 +63,7 @@ By default, Syntex eSignature is turned on for libraries in all SharePoint sites
     c. Select **Save**.
 
 > [!NOTE]
-> The first eSignature request in a M365 tenant may take a little longer to execute than usual. It can take a few seconds to a few minutes, however, subsequent requests are executed normally. We recommend that admins create the first eSignature request in a SharePoint site as the final set up step. 
+> The first eSignature request in a Microsoft 365 tenant might take a little longer to execute than usual. It can take a few seconds to a few minutes; however, subsequent requests are executed normally. We recommend that admins create the first eSignature request in a SharePoint site as the final setup step. 
 
 ## Document storage and retention
 
