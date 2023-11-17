@@ -2,8 +2,7 @@
 title: Summarize incidents with Security Copilot in Microsoft Defender XDR
 description: Use Security Copilot incident summary capabilities embedded in Microsoft Defender XDR.
 keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, guided response, incident response playbooks, incident response, summary, summarize incident, summarize incidents, incident overview, write incident summary
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
