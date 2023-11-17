@@ -3,8 +3,7 @@ title: Prioritize incidents in Microsoft Defender XDR
 description: Learn how to filter incidents from the incident queue in Microsoft Defender XDR
 keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response, triage
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

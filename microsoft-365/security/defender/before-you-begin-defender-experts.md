@@ -3,9 +3,7 @@ title: Key infrastructure requirements before enrolling in the Microsoft Defende
 ms.reviewer:
 description: This section outlines the key infrastructure requirements you must meet and important information on data access and compliance
 keywords: managed threat hunting service, defender experts eligibility, managed detection and response (MDR) service, defender experts notifications, apply for defender experts service, dex, defender experts notification, Microsoft Defender Experts for hunting, threat hunting and analysis, managed response
-search.product: Windows 10
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-experts
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
