@@ -38,15 +38,15 @@ ms.date:
 
 ### Configure Shifts settings
 
-Choose the Shifts capabilities that you want to be available to your frontline teams. Capabilities include the ability to create and request open shifts, swap shifts, and offer shifts, time-off requests, and the time clock. [Learn more about Shifts settings](https://support.microsoft.com/office/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b).
+Choose the Shifts capabilities that you want to be available to your frontline teams. Capabilities include the ability to create and request open shifts, swap shifts and offer shifts, time-off requests, and time clock. [Learn more about Shifts settings](https://support.microsoft.com/office/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b).
  
 The settings you choose are applied to every team that you deploy Shifts to.
 
 1. Under **Shift requests**, set the types of shift requests you want to allow:  
 
-    - **Open shifts**: Turn on this setting to allow frontline managers to publish unfilled shifts and frontline workers to view and request those shifts.
-    - **Swap shift requests**: When you turn on this setting, frontline workers can swap shifts with other employees and frontline managers can approve or reject the requests.
-    - **Offer shift requests**: Turn on this setting to allow frontline workers to offer shifts to other employees and frontline managers to approve or reject the requests.
+    - **Open shifts**: Turn on to allow frontline managers to publish unfilled shifts and frontline workers to view and request those shifts.
+    - **Swap shift requests**: Turn on to allow frontline workers to swap shifts with other employees and frontline managers to approve or reject the requests.
+    - **Offer shift requests**: Turn on to allow frontline workers to offer shifts to other employees and frontline managers to approve or reject the requests.
 1. Choose whether to allow **Time off-requests**. When this setting is on, frontline workers can request time off, and frontline managers can approve or reject the requests.  
 
     Keep in mind that if you turn off this setting, frontline managers can still assign time off to employees.  
