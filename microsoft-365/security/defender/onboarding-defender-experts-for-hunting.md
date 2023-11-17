@@ -4,7 +4,6 @@ ms.reviewer:
 description: If you're new to Microsoft Defender XDR and Defender Experts for Hunting, this is how you subscribe to Defender experts notifications
 keywords: managed threat hunting service, sample DEN, defender experts notifications, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, EOD, endpoint attack notifications, Microsoft Defender Experts for hunting, managed response.
 search.product: Windows 10
-ms.service: microsoft-365-security
 ms.service: defender-experts
 ms.mktglfcycl: deploy
 ms.sitesec: library
