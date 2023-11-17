@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/19/2020
+ms.date: 11/16/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -20,17 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: "If you're responsible for configuring email settings for everyone in a business this article explains how to configure Focused Inbox for users."
 ---
 
 # Configure Focused Inbox for everyone in your organization
 
-If you're responsible for configuring how email works for EVERYONE in a business this article is for you! It explains how to customize it or turn it off for your business, and answers [frequently asked questions](#faq-for-focused-inbox).
+If you're responsible for configuring how email works for **everyone** in a business this article is for you! It explains how to customize it or turn it off for your business, and answers [frequently asked questions](#faq-for-focused-inbox).
 
 If you would like to turn off Focused Inbox for just yourself, please see [Turn off Focused Inbox](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
 

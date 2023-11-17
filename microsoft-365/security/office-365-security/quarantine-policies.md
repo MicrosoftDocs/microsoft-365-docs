@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 9/13/2023
+ms.date: 11/16/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -478,7 +478,9 @@ Quarantine notifications are already localized based on the recipient's language
 :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="A custom disclaimer at the bottom of a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
 > [!TIP]
-> A custom quarantine notification for a different language is shown to users only when their account/mailbox language matches the language in the custom quarantine notification.
+> A custom quarantine notification for a specific language is shown to users only when their account/mailbox language matches the language in the custom quarantine notification.
+>
+> The value **English_USA** applies only to US English clients. The value **English_Great Britain** applies to all other English clients (Great Britain, Canada, Australia, etc.).
 
 To create customized quarantine notifications for up to three languages, do the following steps:
 
@@ -491,9 +493,6 @@ To create customized quarantine notifications for up to three languages, do the 
    1. Select the language from the **Choose language** box. The default value is **English_USA**.
 
       Although this box is in the middle of the page, you need to select it first. If you enter values in the **Sender display name**, **Subject**, or **Disclaimer** boxes before you select the language value, the other values are removed and you start over when you select the language value.
-
-      > [!TIP]
-      > If you have a mix of mailboxes with en-US and other English languages codes (en-GB, en-CA, en-AU, etc.), use the language value **English_USA** in one customized quarantine notification, and the language value **English_Great Britain** in another customized quarantine notification.
 
    2. Enter values for **Sender display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a value in a different language, you'll get an error when you select **Save**.
    3. Select the **Add** button.
