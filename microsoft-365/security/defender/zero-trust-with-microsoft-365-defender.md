@@ -4,8 +4,7 @@ description: Microsoft Defender XDR contributes to a strong Zero Trust strategy 
 keywords: Zero Trust, Microsoft 365 Defender, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: microsoft-365-zero-trust
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

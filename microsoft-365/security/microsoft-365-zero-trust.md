@@ -9,7 +9,7 @@ manager: dansimp
 audience: Admin
 description: Learn how to apply Zero Trust security principles with Microsoft 365 to defend against threats and protect sensitive data.
 ms.topic: tutorial
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.localizationpriority: medium
 search.appverid:
 - MET150
