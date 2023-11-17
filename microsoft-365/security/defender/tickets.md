@@ -1,9 +1,8 @@
 ---
-title: Integrate ServiceNow tickets into the Microsoft 365 Defender portal and compliance center
-description: Learn how to create and track tickets in ServiceNow from the Microsoft 365 Defender portal and compliance center.
+title: Integrate ServiceNow tickets into the Microsoft Defender portal and compliance center
+description: Learn how to create and track tickets in ServiceNow from the Microsoft Defender portal and compliance center.
 keywords: security, Microsoft 365, M365, compliance, compliance center, security center, ServiceNow, tickets, tasks, SNOW, connection
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -24,7 +23,7 @@ ms.custom:
 ms.date: 02/16/2021
 ---
 
-# Integrate ServiceNow tickets into the Microsoft 365 Defender portal and compliance center
+# Integrate ServiceNow tickets into the Microsoft Defender portal and compliance center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

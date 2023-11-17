@@ -1,11 +1,11 @@
 ---
-title: Supported data types and filters in guided mode for hunting in Microsoft 365 Defender
-description: Refine your query by using the different guided mode capabilities in advanced hunting in Microsoft 365 Defender.
+title: Supported data types and filters in guided mode for hunting in Microsoft Defender XDR
+description: Refine your query by using the different guided mode capabilities in advanced hunting in Microsoft Defender XDR.
 keywords: guided mode, advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -30,7 +30,7 @@ ms.date: 08/11/2022
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
