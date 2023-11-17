@@ -2,8 +2,7 @@
 title: Investigate users in Microsoft Defender XDR
 description: Investigate users for an incident in the Microsoft Defender portal.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:

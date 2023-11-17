@@ -5,6 +5,8 @@ description: If you're new to Microsoft Defender XDR and Defender Experts for Hu
 keywords: managed threat hunting service, sample DEN, defender experts notifications, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, EOD, endpoint attack notifications, Microsoft Defender Experts for hunting, managed response.
 search.product: Windows 10
 ms.service: microsoft-365-security
+ms.subservice: m365d
+ms.service: defender-experts
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -83,7 +85,7 @@ You can set up Microsoft Defender XDR to notify you or your staff with an email 
 
 ### Generate sample Defender Experts Notifications
 
-You can generate a sample Defender Experts Notification to start experiencing the Defender Experts for Hunting service without having to wait for an actual critical activity to happen in your environment. Generating a sample notification also lets you test the [email notifications](#set-up-defender-experts-email-notifications) you might have previously configured in the Microsoft Defender XDR portal for this service, as well as test the configuration of playbooks (if configured for notifications) and rules in your Security Information and Event Management (SIEM) environment.
+You can generate a sample Defender Experts Notification to start experiencing the Defender Experts for Hunting service without having to wait for an actual critical activity to happen in your environment. Generating a sample notification also lets you test the [email notifications](#set-up-defender-experts-email-notifications) you might have previously configured in the Microsoft Defender XDR portal for this service, as well as test the configuration of playbooks (if configured for such notifications) and rules in your Security Information and Event Management (SIEM) environment.
 
 A sample Defender Experts Notification shows up in your **Incidents** page with the title _Defender Experts: Test Notification from Microsoft Defender Experts_. The [contents](#receive-defender-experts-notifications) of the notification are placeholder texts, while the other elements such as alerts are randomly generated from events present in your tenant and aren’t actually impacted.
 

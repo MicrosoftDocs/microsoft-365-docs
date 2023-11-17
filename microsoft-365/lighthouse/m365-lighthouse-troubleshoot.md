@@ -53,7 +53,7 @@ This article describes error messages and problems that you might encounter whil
 **Cause:** Your customer tenants don't meet the following criteria:
 
 - Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
-- Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license
+- Must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business
 - Must have no more than 2500 licensed users
 - Must reside in the same geographic region (Americas, European Union, or Asia plus Australia) as the partner organization that manages them
 
