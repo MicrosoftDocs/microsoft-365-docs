@@ -93,7 +93,7 @@ After WSL is running and fully up to date, follow these steps to install the plu
 
 2. Open Terminal or Command Prompt. (In Windows, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.) 
 
-3. Run the command: `cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
+3. Run the command: ```cd "C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools"```.
 
 4. Run the command `.\healthcheck.exe`.
 
