@@ -84,15 +84,15 @@ You can set up Microsoft Defender XDR to notify you or your staff with an email 
 
 ### Generate sample Defender Experts Notifications
 
-You can generate a sample Defender Experts Notification to start experiencing the full value of the Defender Experts for Hunting service without having to wait for an actual critical activity to happen in your environment. Generating a sample notification also lets you test the [email notifications](#set-up-defender-experts-email-notifications) you might have previously configured in the Microsoft Defender XDR portal for this service, as well as verify and fine-tune playbooks and rules in your Security Information and Event Management (SIEM) environment.
+You can generate a sample Defender Experts Notification to start experiencing the Defender Experts for Hunting service without having to wait for an actual critical activity to happen in your environment. Generating a sample notification also lets you test the [email notifications](#set-up-defender-experts-email-notifications) you might have previously configured in the Microsoft Defender XDR portal for this service, as well as test the configuration of playbooks (if configured for notifications) and rules in your Security Information and Event Management (SIEM) environment.
 
-A sample Defender Experts Notification shows up in your **Incidents** page with the title _Defender Experts: Test Notification from Microsoft Defender Experts_. The contents of the notification are placeholder texts, while the other elements such as alerts are randomly generated from events present in your tenant and aren’t actually impacted.
+A sample Defender Experts Notification shows up in your **Incidents** page with the title _Defender Experts: Test Notification from Microsoft Defender Experts_. The [contents](#receive-defender-experts-notifications) of the notification are placeholder texts, while the other elements such as alerts are randomly generated from events present in your tenant and aren’t actually impacted.
 
 :::image type="content" source="../../media/mte/defenderexperts/sample-den-dexh.png" alt-text="Screenshot of Sample DEN in Defender Experts for Hunting." lightbox="../../media/mte/defenderexperts/sample-den-dexh.png":::
 
 **To generate a sample notification:**
 
-1. In your Microsoft 365 XDR navigation pane, go to **Settings** > **Defender Experts** and then select **Sample DEN**.
+1. In your Microsoft Defender XDR navigation pane, go to **Settings** > **Defender Experts** and then select **Sample DEN**.
 2. Select **Generate a sample DEN**. A green status message appears, confirming that your sample notification is ready for review.
 3. Under **Recently generated Defender Experts Notifications**, select a link from the list to view its corresponding generated sample notification. The most recent sample appears on the top of the list. Selecting a link redirects you to the **Incidents** page.
 
