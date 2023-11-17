@@ -3,9 +3,8 @@ title: FAQs related to Microsoft Defender Experts for XDR incident notifications
 ms.reviewer:
 description: Frequently asked questions related to Defender Experts for XDR incident notifications
 keywords: XDR, XDR incidents, Xtended detection and response, FAQ's related to XDR, defender experts for xdr, XDR incident notifications, defender experts analyst, managed threat hunting, managed detection and response (MDR) service, real-time visibility with XDR experts, DEX-XDR FAQ's
-search.product: Windows 10
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-experts
+ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

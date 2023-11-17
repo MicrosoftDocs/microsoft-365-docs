@@ -6,6 +6,7 @@ keywords: managed threat hunting service, sample DEN, defender experts notificat
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
+ms.service: defender-experts
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
