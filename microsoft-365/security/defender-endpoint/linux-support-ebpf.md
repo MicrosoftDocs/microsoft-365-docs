@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 07/19/2023
+ms.date: 11/17/2023
 ---
 
 # Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
@@ -39,12 +39,12 @@ Key benefits include:
 
 ## How eBPF works
 
-With eBPF, events previously obtained from the auditd event provider now flow from the eBPF sensor. This helps with system stability and improving CPU and memory utilization and reduces disk usage. Also, when eBPF is enabled, all auditd-related custom rules are eliminated which help reduce the possibility of conflicts between applications.
+With eBPF, events previously obtained from the auditd event provider now flow from the eBPF sensor. This helps with system stability, improves CPU and memory utilization, and reduces disk usage. Also, when eBPF is enabled, all auditd-related custom rules are eliminated, which helps reduce the possibility of conflicts between applications.
 
 In addition, the eBPF sensor uses capabilities of the Linux kernel without requiring the use of a kernel module that helps increase system stability.
 
 > [!NOTE]
-> eBPF will be used in conjunction with auditd where auditd will be used only for user login events and will capture these events without any custom rules and flow them automatically. Be aware that auditd will be gradually removed in future versions.
+> eBPF is used in conjunction with auditd, whereas auditd is used only for user login events and captures these events without any custom rules and flow them automatically. Be aware that auditd will be gradually removed in future versions.
 
 ## System prerequisites
 
@@ -63,8 +63,6 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 
 > [!NOTE]
 > Oracle Linux 8.8 with kernel version 5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64 will result in kernel hang when eBPF is enabled as supplementary subsystem    provider. This kernel version should not be used for eBPF mode. Refer to Troubleshooting and Diagnostics section for mitigation steps.
-
-
 
 ## Use eBPF
 
