@@ -211,7 +211,7 @@ When you're finished on the **User reported settings** page, select **Save**.
 
 ### Options for third-party reporting tools
 
-If you're using a third-party reporting button for end users (for example, KnowBe4 Report Phish, Cofense Report Phishing, or PhishAlarm), you can benefit from the power of Defender incident management, in-product phishing triage, and native automated response capabilities by integrating the reporting button with Microsoft Defender for Office 365.
+If you're using a third-party reporting button for end users (for example, KnowBe4 Phish Alert Button, Cofense Report Phishing, or PhishAlarm), you can benefit from the power of Defender incident management, in-product phishing triage, and native automated response capabilities by integrating the reporting button with Microsoft Defender for Office 365.
 
 When **Monitor reported messages in Outlook** is selected and you also select **Use a non-Microsoft add-in button**, the following options are available on the **User reported settings** page:
 
@@ -306,7 +306,7 @@ To view both the policy and the rule at the same time, run the following command
 Write-Output -InputObject `r`n,"Report Submission Policy",("-"*79); Get-ReportSubmissionPolicy; Write-Output -InputObject `r`n,"Report Submission Rule",("-"*79); Get-ReportSubmissionRule
 ```
 
-Remember, the report submission policy doesn't exist if any of the following statement are true:
+Remember, the report submission policy doesn't exist if any of the following statements are true:
 
 - No one ever opened the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>.
 - No one ever manually created the report submission policy in PowerShell.
