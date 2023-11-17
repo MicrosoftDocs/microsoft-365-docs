@@ -117,7 +117,7 @@ To complete this process, you must have admin privileges on the device.
 
 ## How to Allow Full Disk Access
 
-The macOS Catalina (10.15) requires full disk access to be granted to **Microsoft Defender for Endpoint** in order to be able to protect and monitor.
+The macOS Catalina (10.15) and newer versions require full disk access to be granted to **Microsoft Defender for Endpoint** in order to be able to protect and monitor.
 
 > [!Note]
 > Full disk access grant to **Microsoft Defender for Endpoint** is a new requirement for all the third-party software by Apple for files and folders containing personal data.
