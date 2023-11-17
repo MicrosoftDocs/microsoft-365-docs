@@ -75,9 +75,9 @@ You can choose to allow schedule owners to create and manage schedule groups or 
     - **Schedule groups are created and managed in the Teams admin center**
 1. If you chose the option to create and manage schedule groups in the Teams admin center, select **Add** to add schedule groups.
     For each schedule group that you create:
-    1. Give it a unique name. It can’t be longer than 40??? characters. This is the name that frontline managers and workers see in the Shifts schedule.  
+    1. Give it a unique name. It can’t be longer than 40 characters. This is the name that frontline managers and workers see in the Shifts schedule.  
     1. Choose an icon.
-    1. Enter a unique code. The code can be up to ??? alphanumeric characters long.
+    1. Enter a unique code. The code can be up to 100 alphanumeric characters long.
 1. When you're done, select **Next**.
 
 ### Review and finish setup
@@ -97,9 +97,17 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
     You can also set a default time zone that’s automatically applied to all teams. If you choose to set a default time zone, you can still select different time zones for specific teams.
 1. When you’re done selecting team time zones, choose **Deploy**.
 
-    This process can take ??? depending on how many teams you're deploying Shifts to. After deployment is completed, the deployment status shows as **Deployed** on the Manage frontline apps page, along with the deployment date.  
+    This process can take a while depending on how many teams you're deploying Shifts to. Refresh the Manage frontline apps page to get the latest status.
 
-    On the **Shifts** tile, you’ll see the number of frontline teams that Shifts is deployed to. You can also download a CSV file with a list of those teams.
+    When deployment is completed, the deployment status shows as **Deployed** in the table. On the **Shifts** tile, you’ll see the number of frontline teams that Shifts is deployed to. You can also download a CSV file with a list of those teams.
+
+    You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed.
+
+## Troubleshoot errors
+
+If an error occurred during deployment, the status in the table shows as Error after you refresh the Manage frontline apps page.
+
+Select <linkname> to download an error CSV. Use this information to resolve the errors, and then repeat the deployment steps to deploy Shifts.  
 
 ## Related articles
 
