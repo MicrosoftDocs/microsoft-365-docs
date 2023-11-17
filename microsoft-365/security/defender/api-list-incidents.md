@@ -3,8 +3,7 @@ title: List incidents API in Microsoft Defender XDR
 description: Learn how to list incidents API in Microsoft Defender XDR
 keywords: list, incident, incidents, api
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
