@@ -25,7 +25,7 @@ ms.date: 09/27/2023
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -49,7 +49,7 @@ To get the latest features, including preview capabilities (such as endpoint det
 
 ### Prerequisites
 
-- A Defender for Endpoint subscription and access to the Microsoft 365 Defender portal
+- A Defender for Endpoint subscription and access to the Microsoft Defender portal
 - Beginner-level experience in macOS and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
@@ -69,8 +69,10 @@ There are several methods and deployment tools that you can use to install and c
 
 The three most recent major releases of macOS are supported.
 - 14 (Sonoma), 13 (Ventura), 12 (Monterey)
-> [!IMPORTANT]
-> On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Big Sur and newer versions of macOS](mac-sysext-policies.md). 
+
+  > [!IMPORTANT]
+  > On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Big Sur and newer versions of macOS](mac-sysext-policies.md).
+
 - Supported processors: x64 and ARM64 (M1 and M2).
 - Disk space: 1GB
 
@@ -105,7 +107,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |Spreadsheet of domains list| Description|
 |---|---|
-|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx)
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:

@@ -70,7 +70,8 @@ The eBPF sensor will be automatically enabled for all customers by default for a
 
 :::image type="content" source="../../media/defender-endpoint/ebpf-subsystem-linux.png" alt-text="ebpf subsystem highlight in the mdatp health command" lightbox="../../media/defender-endpoint/ebpf-subsystem-linux.png":::
 
-In case you want to manually disable eBPF then you can run the below command -
+In case you want to manually disable eBPF then you can run the following command:
+
 ```bash
 sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 ```

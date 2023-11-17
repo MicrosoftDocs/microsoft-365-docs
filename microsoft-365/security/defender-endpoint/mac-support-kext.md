@@ -3,9 +3,6 @@ title: Troubleshoot kernel extension issues in Microsoft Defender for Endpoint o
 description: Troubleshoot kernel extension-related issues in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, extension
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -18,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/01/2023
 ---
 
 # Troubleshoot kernel extension issues in Microsoft Defender for Endpoint on macOS
@@ -31,7 +28,7 @@ ms.date: 12/18/2020
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -51,7 +48,8 @@ You can also run ```mdatp health```. It reports if real-time protection is enabl
 ```bash
 mdatp health
 ```
-```Output
+
+```console
 ...
 real_time_protection_enabled                : true
 real_time_protection_available              : false
@@ -69,7 +67,7 @@ See the instructions corresponding to the management tool that you used to deplo
 
 ## Manual deployment
 
-If less than 30 minutes have passed since the product was installed, navigate to **System Preferences** \> **Security & Privacy**, where you have to **Allow** system software from developers "Microsoft Corporation".
+If less than 30 minutes have passed since the product was installed, navigate to **System Settings** \> **Privacy & Security**, where you have to **Allow** system software from developers "Microsoft Corporation".
 
 If you don't see this prompt, it means that 30 or more minutes have passed, and the kernel extension still not been approved to run on your device:
 
@@ -83,13 +81,13 @@ In this case, you need to perform the following steps to trigger the approval fl
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
 
-    ```Output
+    ```console
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. Open **System Preferences** \> **Security & Privacy** from the menu. (Close it first, if it's opened.)
+2. Open **System Settings** \> **Privacy & Security** from the menu. (Close it first, if it's opened.)
 
 3. **Allow** system software from developers "Microsoft Corporation"
 
@@ -105,10 +103,11 @@ In this case, you need to perform the following steps to trigger the approval fl
     mdatp health
     ```
 
-    ```Output
+    ```console
     ...
     real_time_protection_enabled                : true
     real_time_protection_available              : true
     ...
     ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -2,19 +2,11 @@
 
 
 
-## Week of September 25, 2023
+## Week of November 06, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 9/26/2023 | [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy) | added |
-
-
-## Week of September 18, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/21/2023 | [Enable users for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-enable-users) | added |
-| 9/21/2023 | [Microsoft 365 Copilot overview](/microsoft-365-copilot/microsoft-365-copilot-overview) | added |
-| 9/21/2023 | [Microsoft 365 Copilot Requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements) | added |
+| 11/7/2023 | [Enable users for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-enable-users) | modified |
+| 11/10/2023 | [Microsoft 365 Copilot overview](/microsoft-365-copilot/microsoft-365-copilot-overview) | modified |
+| 11/10/2023 | [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy) | modified |

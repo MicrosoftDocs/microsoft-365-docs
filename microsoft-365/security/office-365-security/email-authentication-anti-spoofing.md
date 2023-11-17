@@ -22,8 +22,8 @@ ms.service: microsoft-365-security
 ms.date: 6/15/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing
@@ -80,7 +80,7 @@ The rest of this article explains the elements of an SPF TXT record and describe
 
 Use the information in this article to create the SPF TXT record for your custom domain. Although there are other syntax options that aren't mentioned here, this article describes the most commonly used options.
 
-For information about the domains you need to include for Microsoft 365, see [External DNS records required for SPF](../../enterprise/external-domain-name-system-records.md). Use the [step-by-step instructions](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md#add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online) for updating SPF (TXT) records at your domain registrar.
+For information about the domains you need to include for Microsoft 365, see [External DNS records required for SPF](/microsoft-365/enterprise/external-domain-name-system-records). Use the [step-by-step instructions](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online) for updating SPF (TXT) records at your domain registrar.
 
 ### SPF TXT record syntax for Microsoft 365
 
@@ -103,7 +103,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
 
 - Typically, the IP addresses that you specify are the outbound email servers for your organization. Instead of individual IP addresses, you can also specify IP address ranges using CIDR notation, for example `ip4:192.168.0.1/26`.
 
-- Use `include:` statements to add domains as legitimate senders. For example, any custom domain with mailboxes in Microsoft 365 requires the value `include:spf.protection.outlook.com`. For a list of domain names you should include for Microsoft 365, see [External DNS records required for SPF](../../enterprise/external-domain-name-system-records.md).
+- Use `include:` statements to add domains as legitimate senders. For example, any custom domain with mailboxes in Microsoft 365 requires the value `include:spf.protection.outlook.com`. For a list of domain names you should include for Microsoft 365, see [External DNS records required for SPF](/microsoft-365/enterprise/external-domain-name-system-records).
 
 - The enforcement rule is one of the following values:
   - `-all`: Hard fail. Mark the message with 'hard fail' in the message envelope and follow the destination email server's configured spam policy for this type of message. We recommend this value in the following scenarios:
@@ -155,4 +155,4 @@ You can use nslookup to view your DNS records, including your SPF TXT record. Th
 
 ## For more information
 
-Need help with adding the SPF TXT record? Read [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md#add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online) for detailed information about using SPF with your custom domain in Microsoft 365. [Anti-spam message headers](message-headers-eop-mdo.md) includes the syntax and header fields used by Microsoft 365 for SPF checks.
+Need help with adding the SPF TXT record? Read [Create DNS records at any DNS hosting provider for Microsoft 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online) for detailed information about using SPF with your custom domain in Microsoft 365. [Anti-spam message headers](message-headers-eop-mdo.md) includes the syntax and header fields used by Microsoft 365 for SPF checks.

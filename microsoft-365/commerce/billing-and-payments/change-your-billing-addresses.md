@@ -91,8 +91,7 @@ If you have an MOSA billing account type, you can change the service usage addre
 
 ## Related content
 
-[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md)\
-[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md)\
-[Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md)\
-[Payment options for your Microsoft business subscription](pay-for-your-subscription.md)\
-[How to pay for your Microsoft business subscription with a billing profile](pay-for-subscription-billing-profile.md)
+[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
+[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)\
+[Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)\
+[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)\

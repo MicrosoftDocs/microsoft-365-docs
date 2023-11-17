@@ -23,7 +23,7 @@ f1.keywords: NOCSH
 
 # Compare security features in Microsoft 365 plans for small and medium-sized businesses
 
-Microsoft offers a wide variety of cloud solutions and services, including plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device-management capabilities, along with productivity features such as Office apps. This article describes the security features in Microsoft 365 Business Premium, Microsoft Defender for Business, and [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md).
+Microsoft offers a wide variety of cloud solutions and services, including plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md) includes security and device-management capabilities, along with productivity features such as Office apps. This article describes the security features in Microsoft 365 Business Premium, Microsoft Defender for Business, and [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md).
 
 > [!IMPORTANT]
 > This article provides a high-level overview of features and capabilities that are included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see the following resources:
@@ -47,11 +47,11 @@ Defender for Business provides advanced security protection for your devices, wi
 
 The following table summarizes what's included in each plan:
 
-| Feature/capability | [Defender for Business](mdb-overview.md)<br/>(standalone) | [Microsoft 365 Business Premium](../../business-premium/index.md) |
+| Feature/capability | [Defender for Business](mdb-overview.md)<br/>(standalone) | [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md) |
 |---|---|---|
 | **Identity management** | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::| 
-| [Azure Active Directory Free](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) (includes security defaults) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  | |
- [Azure AD Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (includes security defaults and Conditional Access) |  | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
+| [Microsoft Entra ID Free](/azure/active-directory/fundamentals/active-directory-whatis) (Microsoft Entra ID) (includes security defaults) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  | |
+ [Microsoft Entra ID P1 or P2 Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (includes security defaults and Conditional Access) |  | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
 | **Antivirus, antimalware, and ransomware protection for devices** | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::| 
 | [Next-generation protection](mdb-next-generation-protection.md) (antivirus/antimalware protection on devices together with cloud protection) |:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 | [Attack surface reduction](mdb-asr.md) (network protection, firewall, and attack surface reduction rules) (*see note 1 below*) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | 
@@ -60,7 +60,7 @@ The following table summarizes what's included in each plan:
 | [Automated investigation and response](../defender/m365d-autoir.md) (with self-healing for detected threats) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
 | [Microsoft Defender Vulnerability Management](mdb-view-tvm-dashboard.md) (view exposed devices and recommendations) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
 | [Cross-platform support for devices](mdb-onboard-devices.md) (Windows, Mac, iOS, and Android) (*see note 2 below*) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
-| [Centralized management and reporting](mdb-get-started.md) (Microsoft 365 Defender portal) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
+| [Centralized management and reporting](mdb-get-started.md) (Microsoft Defender portal) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
 | [APIs for integration](../defender-endpoint/management-apis.md) (for Microsoft partners or your custom tools and apps) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
 | **Productivity and additional security for email and collaboration** | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::| 
 | [Microsoft 365 Business Standard](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (Office apps and services, and Microsoft Teams) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
@@ -102,7 +102,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 |[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: |
 
 > [!NOTE]
-> 1. Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or by using Microsoft Intune ([https://intune.microsoft.com](https://intune.microsoft.com)).
+> 1. Onboard and manage devices in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or by using Microsoft Intune ([https://intune.microsoft.com](https://intune.microsoft.com)).
 > 
 > 2. Intune is required to configure and manage [Attack surface reduction rules](../defender-endpoint/attack-surface-reduction.md).
 > 
@@ -114,7 +114,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 > 
 > 6. To onboard servers, another license is required. See [Onboard devices to Defender for Business](mdb-onboard-devices.md) or [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md).
 >
-> 7. Using the [Microsoft 365 Streaming API](../defender/streaming-api.md) with Defender for Business, you can view information about device events in your SIEM server. For more information, see [Supported Microsoft 365 Defender streaming event types in event streaming API](../defender/supported-event-types.md). 
+> 7. Using the [Microsoft 365 Streaming API](../defender/streaming-api.md) with Defender for Business, you can view information about device events in your SIEM server. For more information, see [Supported Microsoft Defender XDR streaming event types in event streaming API](../defender/supported-event-types.md). 
 
 
 ## Next steps
@@ -122,4 +122,4 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 - [See the requirements for Microsoft Defender for Business](mdb-requirements.md)
 - [Get Microsoft Defender for Business](get-defender-business.md)
 - [Learn how to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
-- [Learn more about Microsoft 365 Business Premium](../../business-premium/index.md)
+- [Learn more about Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)

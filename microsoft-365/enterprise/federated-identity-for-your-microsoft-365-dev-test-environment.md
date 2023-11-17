@@ -37,7 +37,7 @@ This configuration consists of:
   
 - A Microsoft 365 E5 trial or production subscription.
     
-- A simplified organization intranet connected to the internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Azure AD Connect runs on APP1 to synchronize the list of accounts in the Active Directory Domain Services domain to Microsoft 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.
+- A simplified organization intranet connected to the internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Microsoft Entra Connect runs on APP1 to synchronize the list of accounts in the Active Directory Domain Services domain to Microsoft 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.
     
 Setting up this test environment involves five phases:
 - [Phase 1: Configure password hash synchronization for your Microsoft 365 test environment](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -58,7 +58,7 @@ Follow the instructions in [password hash synchronization for Microsoft 365](pas
 This configuration consists of:
   
 - A Microsoft 365 E5 trial or paid subscriptions.
-- A simplified organization intranet connected to the internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Microsoft 365 subscriptions periodically.
+- A simplified organization intranet connected to the internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Microsoft Entra Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Microsoft Entra tenant of your Microsoft 365 subscriptions periodically.
 
 ## Phase 2: Create the AD FS server
 
@@ -343,15 +343,15 @@ Use these steps to configure the web application proxy service to use ADFS1 as i
 
 Use the [Azure portal](https://portal.azure.com) to connect to the APP1 virtual machine with the CORP\\User1 account credentials.
   
-Use these steps to configure Azure AD Connect and your Microsoft 365 subscription for federated authentication:
+Use these steps to configure Microsoft Entra Connect and your Microsoft 365 subscription for federated authentication:
   
-1. From the desktop, double-click **Azure AD Connect**.
+1. From the desktop, double-click **Microsoft Entra Connect**.
     
-2. On the **Welcome to Azure AD Connect** page, select **Configure**.
+2. On the **Welcome to Microsoft Entra Connect** page, select **Configure**.
     
 3. On the **Additional tasks** page, select **Change user sign-in**, and then select **Next**.
     
-4. On the **Connect to Azure AD** page, enter your global administrator account name and password, and then select **Next**.
+4. On the **Connect to Microsoft Entra ID** page, enter your global administrator account name and password, and then select **Next**.
     
 5. On the **User sign-in** page, select **Federation with AD FS**, and then select **Next**.
     
@@ -363,7 +363,7 @@ Use these steps to configure Azure AD Connect and your Microsoft 365 subscriptio
     
 9. On the **AD FS service account** page, enter **CORP\\ADFS-Service** in the **Domain Username** box, enter the account password in the **Domain User Password** box, and then select **Next**.
     
-10. On the **Azure AD Domain** page, in **Domain**, select the name of the domain that you previously created and added to your subscription in Phase 1, and then select **Next**.
+10. On the **Microsoft Entra Domain** page, in **Domain**, select the name of the domain that you previously created and added to your subscription in Phase 1, and then select **Next**.
     
 11. On the **Ready to configure** page, select **Configure**.
     

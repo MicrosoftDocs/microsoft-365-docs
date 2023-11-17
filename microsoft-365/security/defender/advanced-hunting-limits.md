@@ -4,8 +4,8 @@ description: Understand various quotas and usage parameters (service limits) tha
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, CPU limit, query limit, resources, maximum results, quota, parameters, allocation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -28,7 +28,7 @@ ms.date: 02/16/2021
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 ## Understand advanced hunting quotas and usage parameters
 
@@ -63,7 +63,7 @@ The report can be accessed in two ways:
 
   :::image type="content" source="../../media/ah-query-resources/reports-general-query-resources.png" alt-text="view the query resources report in the Reports section" lightbox="../../media/ah-query-resources/reports-general-query-resources.png":::
 
-All users can access the reports, however, only the AAD global admin, AAD security admin, and AAD security reader roles can see queries done by all users in all interfaces. Any other user can only see:
+All users can access the reports, however, only the Microsoft Entra global admin, Microsoft Entra security admin, and Microsoft Entra security reader roles can see queries done by all users in all interfaces. Any other user can only see:
 
 - Queries they ran via the portal
 - Public API queries they ran themselves and not through the application

@@ -21,8 +21,8 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 06/30/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Usage card in Microsoft Defender for Office 365
@@ -44,7 +44,7 @@ Usage cards can help determine:
 
 ## View the usage card
 
-The usage card is available in the Microsoft 365 Defender portal at https://security.microsoft.com. Go to **Reports** > **Email & collaboration reports and insights**. You’ll find Defender for Office 365 usage under the **Email & collaboration insights** section. Or, to go directly to the **Email & collaboration reports and insights** page, use https://security.microsoft.com/emailandcollabreport.
+The usage card is available in the Microsoft Defender portal at https://security.microsoft.com. Go to **Reports** > **Email & collaboration reports and insights**. You’ll find Defender for Office 365 usage under the **Email & collaboration insights** section. Or, to go directly to the **Email & collaboration reports and insights** page, use https://security.microsoft.com/emailandcollabreport.
 
 In the usage card for the global and billing admins, there’s a **Add more licenses** link at the bottom of the card, which takes you to the billing portal to purchase more licenses for your organization.
 

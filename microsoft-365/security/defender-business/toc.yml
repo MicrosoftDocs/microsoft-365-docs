@@ -25,7 +25,7 @@
     items:
     - name: Trial user guide - Defender for Business
       href: trial-playbook-defender-business.md
-    - name: Visit the Microsoft 365 Defender portal
+    - name: Visit the Microsoft Defender portal
       href: mdb-get-started.md
     - name: Try tutorials and simulations
       href: mdb-tutorials.md
@@ -71,16 +71,18 @@
       href: mdb-offboard-devices.md
   - name: View and respond to detected threats
     items: 
-    - name: View and use reports
-      href: mdb-reports.md
     - name: Use your vulnerability management dashboard
       href: mdb-view-tvm-dashboard.md
     - name: View and manage incidents
       href: mdb-view-manage-incidents.md
+    - name: Use attack disruption capabilities
+      href: mdb-attack-disruption.md
     - name: Respond to and mitigate threats
       href: mdb-respond-mitigate-threats.md
     - name: Review remediation actions
       href: mdb-review-remediation-actions.md
+    - name: View and use reports
+      href: mdb-reports.md
   - name: Create, view, or edit security policies
     items:
     - name: View, edit, and create policies

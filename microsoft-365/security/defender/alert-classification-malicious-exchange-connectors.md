@@ -2,8 +2,7 @@
 title: Alert classification for malicious exchange connectors
 description: Alert grading recipients from malicious exchange connectors activity and protect their network from malicious attack.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -31,7 +30,7 @@ ms.date: 08/11/2023
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Threat actors use compromised exchange connectors for sending out spam and phishing emails in bulk to unsuspecting recipients by masquerading legitimate emails. Since the connector is compromised, the emails would usually be trusted by the recipients. These kinds of phishing emails are common vectors for phishing campaigns, and business email compromise (BEC) scenario. Hence, such emails need to be monitored heavily due to the likelihood of successful recipients' compromises being high.
 

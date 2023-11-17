@@ -27,7 +27,7 @@ ms.date: 12/18/2020
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -56,8 +56,8 @@ Here is a list of the types of data being collected:
   - Wi-Fi adapter MAC address
   - Randomly generated globally unique identifier (GUID)
 - Tenant, Device, and User information
-  - Azure Active Directory (AD) Device ID and Azure User ID - Uniquely identifies the device, User respectively at Azure Active directory.
-  - Azure tenant ID - GUID that identifies your organization within Azure Active Directory.
+  - Microsoft Entra Device ID and Azure User ID - Uniquely identifies the device, User respectively at Microsoft Entra ID.
+  - Azure tenant ID - GUID that identifies your organization within Microsoft Entra ID.
   - Microsoft Defender for Endpoint org ID - Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify if there are issues affecting a select set of enterprises and the number of enterprises impacted.
   - User Principal Name - Email ID of the user.
 

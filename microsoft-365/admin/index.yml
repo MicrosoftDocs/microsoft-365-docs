@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: kwekua #Required; your GitHub user alias, with correct capitalization.
   ms.author: kwekua #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/12/2023
+  ms.date: 11/03/2023
   ms.localizationpriority: high
   ms.custom: 
   - VSBFY23
@@ -30,10 +30,6 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Office 365 is now Microsoft 365!
-      itemType: whats-new
-      url: new-subscription-names.md
-    # Card
     - title: What's new in the Microsoft 365 admin center!
       itemType: whats-new
       url: whats-new-in-preview.md
@@ -41,6 +37,10 @@ highlightedContent:
     - title: Stay on top of Microsoft 365 changes
       itemType: how-to-guide
       url: manage/stay-on-top-of-updates.md
+    # Card
+    - title: Set up multifactor authentication for Microsoft 365
+      itemType: how-to-guide
+      url: security-and-compliance/set-up-multi-factor-authentication.md
 
 # productDirectory section (optional)
 productDirectory:

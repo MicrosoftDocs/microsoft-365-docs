@@ -4,8 +4,8 @@ description: Learn about antivirus, firewall, and other event types in the misce
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -28,13 +28,13 @@ ms.date: 02/16/2021
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Defender for Endpoint
 
 The miscellaneous device events or `DeviceEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Microsoft Defender Antivirus and exploit protection. Use this reference to construct queries that return information from this table.
 
 > [!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft 365 Defender.
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft Defender XDR.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -83,7 +83,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountObjectId` | `string` | Azure AD object ID of the user account that ran the process responsible for the event |
+| `InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessVersionInfoCompanyName` | `string` | Company name from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessVersionInfoProductName` | `string` | Product name from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessVersionInfoProductVersion` | `string` | Product version from the version information of the process (image file) responsible for the event |

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
+- essentials-manage
 description: "Follow these instructions to create your About Us page with business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
 ---
 
@@ -21,7 +21,7 @@ In Microsoft Bookings, the Business Information page within the web app contains
 
 The information you provide here will be displayed on the page customers and clients use to book appointments (known as the booking page) and in messages and reminders sent to them by Bookings. An example of this information on the booking page is highlighted below.
 
-   ![Image of Business Information page example in Microsoft Bookings.](../media/bookings-business-info-2.png)
+![Image of Business Information page example in Microsoft Bookings.](../media/bookings-business-info-2.png)
 
 > [!NOTE]
 > To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
@@ -34,21 +34,21 @@ The information you provide here will be displayed on the page customers and cli
 
 1. On the **Basic details** section, enter your business name, address, and phone number you would like to use for your booking page.
 
-:::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Screenshot: Page to enter your basic business information":::
+    :::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Screenshot: Page to enter your basic business information":::
 
-In **Send customer replies to**, type the preferred email address where email replies to booking confirmations and reminders should be forwarded.
+    In **Send customer replies to**, type the preferred email address where email replies to booking confirmations and reminders should be forwarded.
 
-In the **Website URL** field, enter the URL of the home page for your business.
+    In the **Website URL** field, enter the URL of the home page for your business.
 
-Enter the **privacy policy** and **terms & conditions** URLs.
+    Enter the **privacy policy** and **terms & conditions** URLs.
 
 1. On the **Business logo** section, if you haven't already uploaded your business logo to the Bookings app, add your business logo.
 
 1. On the **Set your business hours** section, set business hours to your operational hours. These are the hours to which all bookings are restricted. Additional time restrictions of when appointments can be booked can be set for each service and for each staff member in the **Services** and **Staff** pages.
 
-On the Business information page, under Business hours, use the dropdowns to select start and end times for each day. Click **+** to add start- and end-time selectors.
+    On the Business information page, under Business hours, use the dropdowns to select start and end times for each day. Click **+** to add start- and end-time selectors.
 
-By default, the business hours in the Bookings app are set to 8 a.m. to 5 p.m., Monday through Friday. Times are provided in 15-minute increments. The Bookings app uses the 12-hour clock.
+    By default, the business hours in the Bookings app are set to 8 a.m. to 5 p.m., Monday through Friday. Times are provided in 15-minute increments. The Bookings app uses the 12-hour clock.
 
 1. Select **Save**.
 
