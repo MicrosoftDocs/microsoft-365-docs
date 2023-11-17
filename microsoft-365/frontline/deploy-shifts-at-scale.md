@@ -65,7 +65,9 @@ The settings you choose are applied to every team that you deploy Shifts to.
 
 In this step, you identify the schedule owners in your organization and specify how schedule groups are created and managed across your frontline teams.
 
-In Shifts, schedule owners are frontline managers who create and manage schedules for their teams. Schedule groups represent groups of employees who have the same job type in the schedule???. You can allow schedule owners to create and manage schedule groups or you can do so centrally in the Teams admin center.  
+In Shifts, schedule owners, similar to team owners, are frontline managers who create and manage schedules for their teams. [Learn more about schedule owners](schedule-owner-for-shift-management.md). With schedule groups, you can group employees based on common characteristics within a team. For example, schedules groups can be departments or job types.
+
+You can choose to allow schedule owners to create and manage schedule groups or you can do so centrally in the Teams admin center.  
 
 1. In the **Group ID** box, enter the group ID of the group that contains the schedule owners in your organization.  
 1. Choose one of the following options to define how schedule groups are managed:
@@ -73,7 +75,7 @@ In Shifts, schedule owners are frontline managers who create and manage schedule
     - **Schedule groups are created and managed in the Teams admin center**
 1. If you chose the option to create and manage schedule groups in the Teams admin center, select **Add** to add schedule groups.
     For each schedule group that you create:
-    1. Give it a name. It can’t be longer than 40??? characters. This is the name that frontline managers and workers see in the Shifts schedule.  
+    1. Give it a unique name. It can’t be longer than 40??? characters. This is the name that frontline managers and workers see in the Shifts schedule.  
     1. Choose an icon.
     1. Enter a unique code. The code can be up to ??? alphanumeric characters long.
 1. When you're done, select **Next**.
