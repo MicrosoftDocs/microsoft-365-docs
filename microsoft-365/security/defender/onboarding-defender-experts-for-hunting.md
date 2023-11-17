@@ -3,9 +3,7 @@ title: How to subscribe to Microsoft Defender Experts for Hunting
 ms.reviewer:
 description: If you're new to Microsoft Defender XDR and Defender Experts for Hunting, this is how you subscribe to Defender experts notifications
 keywords: managed threat hunting service, defender experts notifications, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, endpoint attack notifications, Microsoft Defender Experts for hunting, managed response, guided response.
-search.product: Windows 10
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-experts
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
