@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-for-business
 ms.localizationpriority: medium
 ms.date: 09/06/2023
 ms.reviewer: efratka
@@ -123,3 +122,4 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 - [Get Microsoft Defender for Business](get-defender-business.md)
 - [Learn how to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
 - [Learn more about Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
+

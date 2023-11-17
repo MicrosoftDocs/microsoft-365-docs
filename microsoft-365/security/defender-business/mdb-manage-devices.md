@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-for-business
 ms.localizationpriority: medium
 ms.date: 05/10/2023
 ms.reviewer: nehabha
@@ -102,3 +101,4 @@ See [Offboarding a device](mdb-offboard-devices.md).
 - [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 - [Create or edit device groups](mdb-create-edit-device-groups.md)
+

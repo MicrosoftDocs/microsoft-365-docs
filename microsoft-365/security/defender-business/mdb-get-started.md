@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-for-business
 ms.localizationpriority: medium
 ms.date: 09/06/2023
 ms.reviewer: nehabha
@@ -58,3 +57,4 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 ## Next steps
 
 - [See the overall setup and configuration process](mdb-setup-configuration.md)
+
