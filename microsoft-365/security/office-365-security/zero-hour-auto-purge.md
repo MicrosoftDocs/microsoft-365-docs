@@ -162,7 +162,7 @@ ZAP for Teams protection supports the following types of Teams channels:
 
 Currently, ZAP isn't available in private channels.
 
-To configure exceptions for ZAP protection for Teams channels, you need the recipient email address. This address is different than the channel email address in the Teams client or in quarantine.
+To configure exceptions for ZAP protection for Teams channels, you need the recipient email address. This address is different than the channel email address in the Teams client.
 
 To get the recipient email address to use for exceptions for Teams channel protection, use the **Name and email** value from the **Channel details** section of the Teams Message Entity Panel. For more information, see [The Teams Message Entity Panel in Microsoft Defender for Office 365](teams-message-entity-panel.md).
 
