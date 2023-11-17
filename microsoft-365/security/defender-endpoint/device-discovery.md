@@ -1,6 +1,6 @@
 ---
 title: Device discovery overview
-description: Learn how to leverage endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
+description: Learn how to leverage endpoint discovery in Microsoft Defender XDR to find unmanaged devices in your network
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -32,7 +32,7 @@ ms.date: 05/11/2023
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming.
 

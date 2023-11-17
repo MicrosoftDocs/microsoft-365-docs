@@ -1,8 +1,8 @@
 ---
 title: Microsoft Secure score data storage and privacy
 description: Learn about how Microsoft Secure score handles privacy and data that it collects.
-keywords: microsoft secure score, secure score,  Microsoft 365 Defender portal, Secure score, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
-ms.service: microsoft-365-security
+keywords: microsoft secure score, secure score,  Microsoft Defender portal, Secure score, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,6 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 11/17/2022
 ---

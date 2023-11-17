@@ -13,13 +13,13 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to set up and configuer Microsoft Syntex eSignature. 
+description: Learn how to set up and configure Microsoft Syntex eSignature. 
 ---
 
 # Set up Microsoft Syntex eSignature
 
 > [!NOTE]
-> Syntex eSignature is currently available for the US market only. If a tenant's location is the United States, Syntex eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. Syntex eSignature will roll out to other regions in 2024.
+> Syntex eSignature is currently rolling out to the US market. If a tenant's location is the United States, Syntex eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. Syntex eSignature will roll out to other regions in 2024.
 
 The Microsoft Syntex eSignature service is set up in the Microsoft 365 admin center. Syntex eSignature uses simple electronic signatures. Before you begin, determine whether this feature is appropriate for your needs and then read the [Microsoft Syntex eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
 
@@ -61,6 +61,9 @@ By default, Syntex eSignature is turned on for libraries in all SharePoint sites
     b. To restrict user access to this service, select **No SharePoint libraries** or **Libraries in selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
+
+> [!NOTE]
+> The first eSignature request in a Microsoft 365 tenant might take a little longer to execute than usual. It can take a few seconds to a few minutes; however, subsequent requests are executed normally. We recommend that admins create the first eSignature request in a SharePoint site as the final setup step. 
 
 ## Document storage and retention
 

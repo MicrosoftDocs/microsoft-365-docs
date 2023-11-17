@@ -6,7 +6,7 @@ ms.author: macapara
 author: mjcaparas
 ms.reviewer: pahuijbr
 ms.localizationpriority: medium
-ms.date: 10/27/2023
+ms.date: 11/15/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -23,7 +23,7 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
 
@@ -104,6 +104,7 @@ To add antimalware protection to these older operating systems, you can use [Sys
 
 - [macOS](microsoft-defender-endpoint-mac.md)
 - [Linux](microsoft-defender-endpoint-linux.md)
+- [Windows Subsystem for Linux](mde-plugin-wsl.md)
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
 
@@ -171,4 +172,3 @@ If you're running a third-party antimalware client and use Mobile Device Managem
 - [Onboard devices](onboard-configure.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-
