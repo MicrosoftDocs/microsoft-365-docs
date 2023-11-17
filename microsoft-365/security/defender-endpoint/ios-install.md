@@ -29,7 +29,7 @@ ms.date: 12/18/2020
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -239,7 +239,7 @@ Admins can configure auto-setup of VPN profile. This will automatically set up t
 > [!NOTE] 
 > Skip this step if you configure zero touch (silent) onboarding. Manually launching application is not necessary if zero touch (silent) onboarding is configured.
 
-3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal.
+3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft Defender portal.
 
    :::image type="content" source="images/device-inventory-screen.png" alt-text="The Device inventory page." lightbox="images/device-inventory-screen.png":::
 

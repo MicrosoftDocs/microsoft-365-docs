@@ -15,7 +15,7 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
   - m365-security
   - tier2
-description: "Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal. This article helps answer the question, 'What is the Threat protection status report in EOP and Microsoft Defender for Office 365?'"
+description: "Admins can learn how to find and use the email security reports that are available in the Microsoft Defender portal. This article helps answer the question, 'What is the Threat protection status report in EOP and Microsoft Defender for Office 365?'"
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
@@ -24,16 +24,16 @@ ms.date: 6/30/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# View email security reports in the Microsoft 365 Defender portal
+# View email security reports in the Microsoft Defender portal
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 In all Microsoft 365 organizations, a variety of reports are available to help you see how email security features are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view and download these reports as described in this article.
 
-The reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> on the **Email & collaboration reports** page at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. Or, to go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
+The reports are available in the Microsoft Defender portal at <https://security.microsoft.com> on the **Email & collaboration reports** page at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. Or, to go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
 
 Summary information for each report is available on the page. Identify the report you want to view, and then select **View details** for that report.
 
@@ -41,15 +41,17 @@ The rest of this article describes the reports that are exclusive to Defender fo
 
 > [!NOTE]
 >
-> - Some of the reports on the **Email & collaboration reports** page are exclusive to Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](reports-defender-for-office-365.md).
+> - Some of the reports on the **Email & collaboration reports** page are exclusive to Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft Defender portal](reports-defender-for-office-365.md).
 >
 > - Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 >
 >   A link to these reports is available in the Defender portal at **Reports** \> **Email & collaboration** \> **Email & collaboration reports** \> **Exchange mail flow reports**, which takes you to <https://admin.exchange.microsoft.com/#/reports/mailflowreportsmain>.
 
-## Email security report changes in the Microsoft 365 Defender portal
+<a name='email-security-report-changes-in-the-microsoft-365-defender-portal'></a>
 
-The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft 365 Defender portal that have been replaced, moved, or deprecated are described in the following table.
+## Email security report changes in the Microsoft Defender portal
+
+The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft Defender portal that have been replaced, moved, or deprecated are described in the following table.
 
 |Deprecated report and cmdlets|New report and cmdlets|Message Center ID|Date|
 |---|---|:---:|:---:|
@@ -382,7 +384,7 @@ When you're finished configuring the filters, select **Apply**, **Cancel**, or :
 
 On the **Spoof mail report** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
-:::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="The Spoof mail report page in the Microsoft 365 Defender portal." lightbox="../../media/spoof-detections-report-page.png":::
+:::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="The Spoof mail report page in the Microsoft Defender portal." lightbox="../../media/spoof-detections-report-page.png":::
 
 ## Submissions report
 
@@ -424,7 +426,7 @@ When you're finished configuring the filters, select **Apply**, **Cancel**, or :
 
 On the **Submissions** report page, the **[Export](#export-report-data)** action is available.
 
-:::image type="content" source="../../media/submissions-report-page.png" alt-text="The Submissions report page in the Microsoft 365 Defender portal." lightbox="../../media/submissions-report-page.png":::
+:::image type="content" source="../../media/submissions-report-page.png" alt-text="The Submissions report page in the Microsoft Defender portal." lightbox="../../media/submissions-report-page.png":::
 
 ## Threat protection status report
 
@@ -1049,7 +1051,7 @@ On the **User reported messages** page, the :::image type="icon" source="../../m
 
 You need to be assigned permissions before you can view and use the reports that are described in this article. You have the following options:
 
-- [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
+- [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
   - **Organization Management**<sup>\*</sup>
   - **Security Administrator**
   - **Security Reader**
@@ -1153,7 +1155,7 @@ The scheduled report entry is available on the **Managed schedules** page as des
 
 After you create a scheduled report as described in the previous section, the scheduled report entry is available on the **Manage schedules** page in the Defender portal.
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> select **Manage schedules**. Or, to go directly to the **Manage schedules** page, use <https://security.microsoft.com/ManageSubscription>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> select **Manage schedules**. Or, to go directly to the **Manage schedules** page, use <https://security.microsoft.com/ManageSubscription>.
 
 On the **Manage schedules** page, the following information is shown for each scheduled report entry:
 
@@ -1228,7 +1230,7 @@ The report creation task (and eventually the finished report) is available on th
 
 After you request an on-demand report as described in the previous section, you check the status of the report and eventually download the report on the **Reports for download** page in the Defender portal.
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> select **Reports for download**. Or, to go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> select **Reports for download**. Or, to go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload>.
 
 On the **Reports for download** page, the following information is shown for each available report:
    - **Start date**

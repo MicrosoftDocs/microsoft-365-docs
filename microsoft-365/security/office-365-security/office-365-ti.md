@@ -36,11 +36,11 @@ Threat investigation and response capabilities in [Microsoft Defender for Office
 - Providing insights and knowledge to help security operations prevent cyberattacks against their organization.
 - Employing [automated investigation and response in Office 365](air-about-office.md) for critical email-based threats.
 
-Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Microsoft 365 Defender portal. These insights can help your organization's security team protect users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
+Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Microsoft Defender portal. These insights can help your organization's security team protect users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
 
 ## Get acquainted with threat investigation and response tools
 
-Threat investigation and response capabilities in the Microsoft 365 Defender portal at <https://security.microsoft.com> are a set of tools and response workflows that include:
+Threat investigation and response capabilities in the Microsoft Defender portal at <https://security.microsoft.com> are a set of tools and response workflows that include:
 
 - [Explorer](#explorer)
 - [Incidents](#incidents)
@@ -53,13 +53,13 @@ Use [Explorer (and real-time detections)](threat-explorer-about.md) to analyze t
 
 :::image type="content" source="../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png" alt-text="The Threat explorer page" lightbox="../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png":::
 
-To view and use this report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+To view and use this report in the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 #### Office 365 Threat Intelligence connection
 
 This feature is only available if you have an active Office 365 E5 or G5 or Microsoft 365 E5 or G5 subscription or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-Data from Microsoft Defender for Office 365 is incorporated into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+Data from Microsoft Defender for Office 365 is incorporated into Microsoft Defender XDR to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 ### Incidents
 
@@ -67,13 +67,13 @@ Use the Incidents list (this is also called Investigations) to see a list of in 
 
 :::image type="content" source="../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png" alt-text="The list of current Threat Incidents in Office 365" lightbox="../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png":::
 
-To view the list of current incidents for your organization in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Incidents & alerts** \> **Incidents**. Or, to go directly to the **Incidents** page, use <https://security.microsoft.com/incidents>.
+To view the list of current incidents for your organization in the Microsoft Defender portal at <https://security.microsoft.com>, go to **Incidents & alerts** \> **Incidents**. Or, to go directly to the **Incidents** page, use <https://security.microsoft.com/incidents>.
 
 ### Attack simulation training
 
 Use Attack simulation training to set up and run realistic cyberattacks in your organization, and identify vulnerable people before a real cyberattack affects your business. To learn more, see [Simulate a phishing attack](attack-simulation-training-simulations.md).
 
-To view and use this feature in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** > **Attack simulation training**. Or, to go directly to the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
+To view and use this feature in the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** > **Attack simulation training**. Or, to go directly to the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
 
 ### Automated investigation and response
 
@@ -91,12 +91,12 @@ Microsoft 365 threat investigation and response capabilities are included in Mic
 
 ## Required roles and permissions
 
-Microsoft Defender for Office 365 uses role-based access control. Permissions are assigned through certain roles in Microsoft Entra ID, the Microsoft 365 admin center, or the Microsoft 365 Defender portal.
+Microsoft Defender for Office 365 uses role-based access control. Permissions are assigned through certain roles in Microsoft Entra ID, the Microsoft 365 admin center, or the Microsoft Defender portal.
 
 > [!TIP]
-> Although some roles, such as Security Administrator, can be assigned in the Microsoft 365 Defender portal, consider using either the Microsoft 365 admin center or Microsoft Entra ID instead. For information about roles, role groups, and permissions, see the following resources:
+> Although some roles, such as Security Administrator, can be assigned in the Microsoft Defender portal, consider using either the Microsoft 365 admin center or Microsoft Entra ID instead. For information about roles, role groups, and permissions, see the following resources:
 >
-> - [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
+> - [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md)
 > - [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)
 
 |Activity|Roles and permissions|

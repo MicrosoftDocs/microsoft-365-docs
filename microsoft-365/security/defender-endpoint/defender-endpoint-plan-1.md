@@ -39,7 +39,7 @@ Use this guide to:
 - [Get an overview of what's included in Defender for Endpoint Plan 1](#defender-for-endpoint-plan-1-capabilities)
 - [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 - [Learn how to set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
-- [Get started using the Microsoft 365 Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
+- [Get started using the Microsoft Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
 - [Get an overview of maintenance and operations](manage-mde-post-migration.md)
 
 > [!TIP]
@@ -52,7 +52,7 @@ Defender for Endpoint Plan 1 includes the following capabilities:
 - **[Next-generation protection](#next-generation-protection)** that includes industry-leading, robust antimalware and antivirus protection
 - **[Manual response actions](#manual-response-actions)**, such as sending a file to quarantine, that your security team can take on devices or files when threats are detected
 - **[Attack surface reduction capabilities](#attack-surface-reduction)** that harden devices, prevent zero-day attacks, and offer granular control over endpoint access and behaviors
-- **[Centralized configuration and management](#centralized-management)** with the Microsoft 365 Defender portal and integration with Microsoft Intune
+- **[Centralized configuration and management](#centralized-management)** with the Microsoft Defender portal and integration with Microsoft Intune
 - **[Protection for a variety of platforms](#cross-platform-support)**, including Windows, macOS, iOS, and Android devices
 
 The following sections provide more details about these capabilities. 
@@ -154,19 +154,19 @@ To learn more, see [Application control for Windows](/windows/security/threat-pr
 
 ## Centralized management
 
-Defender for Endpoint Plan 1 includes the Microsoft 365 Defender portal, which enables your security team to view current information about detected threats, take appropriate actions to mitigate threats, and centrally manage your organization's threat protection settings.
+Defender for Endpoint Plan 1 includes the Microsoft Defender portal, which enables your security team to view current information about detected threats, take appropriate actions to mitigate threats, and centrally manage your organization's threat protection settings.
 
-To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
+To learn more, see [Microsoft Defender portal overview](portal-overview.md).
 
 ### Role-based access control
 
-Using role-based access control (RBAC), your security administrator can create roles and groups to grant appropriate access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). With RBAC, you have fine-grained control over who can access the Defender for Cloud, and what they can see and do. 
+Using role-based access control (RBAC), your security administrator can create roles and groups to grant appropriate access to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). With RBAC, you have fine-grained control over who can access the Defender for Cloud, and what they can see and do. 
 
 To learn more, see [Manage portal access using role-based access control](rbac.md).
 
 ### Reporting
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) provides easy access to information about detected threats and actions to address those threats. 
+The Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) provides easy access to information about detected threats and actions to address those threats. 
 
 - The **Home** page includes cards to show at a glance which users or devices are at risk, how many threats were detected, and what alerts/incidents were created.
 - The **Incidents & alerts** section lists any incidents that were created as a result of triggered alerts. Alerts and incidents are generated as threats are detected across devices.
