@@ -66,7 +66,7 @@ To see the following new SharePoint controls the Office 365 connector in Microso
 
 ### Microsoft Secure Score integration with Microsoft Lighthouse 365
 
-Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale from a single portal. Lighthouse allows customers standardize configurations, manage risk, identify artificial intelligence (AI)-driven sales opportunities, and engage with customers to help them maximize their investment in Microsoft 365.
+Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale from a single portal. Lighthouse allows customers standardize configurations, manage risk, identify artificial intelligence (AI)-driven sales opportunities, and engage with customers to help them maximize their investment in Microsoft 365.
 
 We've now integrated Microsoft Secure Score into Microsoft 365 Lighthouse. This integration provides an aggregate view of the Secure Score across all managed tenants, as well as Secure Score details for each individual tenant. Access to Secure Score is a available from a new card on the Lighthouse homepage or by selecting a tenant on the Lighthouse Tenants page.
 
@@ -77,7 +77,7 @@ We've now integrated Microsoft Secure Score into Microsoft 365 Lighthouse. This 
 
 ### Microsoft Secure Score permissions integration with Microsoft Defender XDR Unified role-based access control (RBAC) is now in Public Preview
 
-Previously, only Microsoft Entra global roles (such as Global Administrators) could access Microsoft Secure Score. Now, you'll be able to control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft Defender XDR Unified RBAC model.  
+Previously, only Microsoft Entra global roles (such as Global Administrators) could access Microsoft Secure Score. Now, you'll be able to control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft Defender XDR Unified RBAC model.
 
 You can add the new permission and choose the data sources the user has access to by selecting the **Security posture** permissions group when creating the role. For more information, see [Create custom roles with Microsoft Defender XDR Unified RBAC](./create-custom-rbac-roles.md). Users will see Secure Score data for the data sources they have permissions to.
 
