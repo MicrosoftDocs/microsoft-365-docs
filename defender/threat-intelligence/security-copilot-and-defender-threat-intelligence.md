@@ -12,7 +12,7 @@ audience: ITPro
 ms.collection: 
   - Tier1
 ms.topic: conceptual
-ms.date: 11/15/2023
+ms.date: 11/17/2023
 ---
 
 # Microsoft Security Copilot (preview) and Microsoft Defender Threat Intelligence
