@@ -32,8 +32,8 @@ The Teams Message Entity Panel in Microsoft Defender for Office 365 puts all Mic
 The Teams Message Entity Panel is the single source of Teams message metadata for Security Operations team (SecOps) review. In other words, you can see and review threats coming from the following locations in one place:
 
 - Chats
-- Meeting chats
 - Group chats
+- Channels
 
 ## Use the Teams Message Entity Panel in Microsoft Defender for Office 365
 
@@ -97,10 +97,14 @@ Selecting a Teams message across any Microsoft Defender for Office 365 experienc
   - The sender's name and email address
   - **Domain**
   - **External**: The value **Yes** indicates the message was sent between an internal user and an external user.
-- **Participants**:
+- **Participants**: Available for messages in chats
   - **Conversation type**
   - **Chat name**
   - **Name and email**:  Contains the name and email addresses of all of the participants (including the sender). If there are more than 10 participants, it also links to a secondary panel that lists all the participants in the chat at the time of the suspected threat.
+- **Channel details**: Available for messages in channels
+  - **Conversation type**
+  - **Conversation name**: Contains the name of the channel.
+  - **Name and email**: Contains the name and address of the channel. 
 - **URLs**:
   - **Name and type** Contains the URL from the Teams message.
   - **Threat**
