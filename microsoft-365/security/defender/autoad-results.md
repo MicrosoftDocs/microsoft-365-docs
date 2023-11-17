@@ -3,8 +3,7 @@ title: Details and results of an automatic attack disruption action
 description: View the results and key findings of automatic attack disruption in Microsoft Defender XDR
 keywords: automated, attack, disruption, investigation, results, analyze, details
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

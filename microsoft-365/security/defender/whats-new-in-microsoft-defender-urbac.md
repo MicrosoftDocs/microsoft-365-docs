@@ -2,8 +2,7 @@
 title: What's new in Microsoft Defender XDR Unified role-based access control (RBAC)
 description: See what features are available in the latest release of Microsoft Defender XDR Unified role-based access control (RBAC)
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
