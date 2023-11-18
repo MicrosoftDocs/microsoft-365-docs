@@ -41,7 +41,7 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [Ma
 
 2. In the **Explorer** page, verify that **Malware** is selected.
 
-3. Select the filter dropdown, and then choose **Basic** \> **Detection technology** in the dropdown list.
+3. Select the filter dropdown, and then choose **Basic** \> **Detection technology** in the dropdown list.
 
    :::image type="content" source="../../media/threat-explorer-malware-detection.png" alt-text="Screenshot of the malware detection technology." lightbox="../../media/threat-explorer-malware-detection.png":::
 
@@ -81,7 +81,7 @@ You can view phishing attempts through URLs in email, including a list of URLs t
 
    :::image type="content" source="../../media/explorer-view-email-phish-menu-new.png" alt-text="Screenshot of the View menu for Explorer in phishing context." lightbox="../../media/explorer-view-email-phish-menu-new.png":::
 
-3. Select the filter dropdown, and then choose **URLs** \> **Click verdict** in the dropdown list.
+3. Select the filter dropdown, and then choose **URLs** \> **Click verdict** in the dropdown list.
 
 4. In options that appear, select one or more options, such as **Blocked** and **Block overridden**, and then click **Refresh** (don't refresh your browser window).
 
