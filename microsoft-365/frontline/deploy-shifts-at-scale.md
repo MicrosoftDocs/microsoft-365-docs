@@ -39,8 +39,9 @@ ms.date:
 ### Configure Shifts settings
 
 Choose the Shifts capabilities that you want to be available to your frontline teams. Capabilities include the ability to create and request open shifts, swap shifts and offer shifts, time-off requests, and time clock. [Learn more about Shifts settings](https://support.microsoft.com/office/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b).
- 
-The settings you choose are applied to every team that you deploy Shifts to.
+
+> [!IMPORTANT]
+> The settings you choose are applied to every team that you deploy Shifts to. Your frontline managers won't be able to change these settings in Shifts.
 
 1. Under **Shift requests**, set the types of shift requests you want to allow:  
 
