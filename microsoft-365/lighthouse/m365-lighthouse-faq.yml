@@ -279,6 +279,10 @@ sections:
         answer: |
           Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
 
+      - question: How does Microsoft 365 Lighthouse affect activity reported by Microsoft Sentinel?
+        answer: |
+          Microsoft 365 Lighthouse sources and aggregates information from across your customer tenants through Microsoft Graph APIs. If Microsoft Sentinel is monitoring customer tenants that are managed by Lighthouse, it will detect such API activity and, depending on how Microsoft Sentinel is configured, report it as an incident. You can create an automation rule in Microsoft Sentinel to identify these incidents as false positives and close them automatically. For instructions on how to do this, see [Handle false positives in Microsoft Sentinel](/azure/sentinel/false-positives). To learn more about Microsoft Sentinel, review the [Microsoft Sentinel technical documentation](/azure/sentinel/).
+
       - question: What's the difference between Microsoft 365 Lighthouse and the multitenant organization capabilities in Microsoft Defender XDR? If I manage services for SMBs, which should I use?
         answer: |
           The multitenant capabilities in Microsoft Defender XDR provide large organizations with the ability to secure and manage multiple tenants from a single portal, with a focus on global security operations center (SOC) investigation flows, including a unified view of incidents across tenants and the ability to perform advanced search across the data contained in multiple tenants. The capabilities also help enterprise managed security service providers (MSSPs) efficiently run their SOC.
