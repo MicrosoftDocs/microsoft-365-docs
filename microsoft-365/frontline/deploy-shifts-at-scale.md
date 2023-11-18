@@ -106,9 +106,9 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
 ## Troubleshoot errors
 
-If an error occurred during deployment, the status in the table shows as Error after you refresh the Manage frontline apps page.
+If an error occurred during deployment, the status in the table shows as **Error** after you refresh the Manage frontline apps page.
 
-Select <linkname> to download an error CSV. Use this information to resolve the errors, and then repeat the deployment steps to deploy Shifts.  
+Select [linkname] to download an error CSV and use the information in the file to help resolve the errors. Then, rerun the [deployment experience](#deploy-shifts-to-your-frontline-teams).  
 
 ## Related articles
 
