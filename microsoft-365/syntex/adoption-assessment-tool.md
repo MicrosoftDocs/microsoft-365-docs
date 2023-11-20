@@ -2,7 +2,7 @@
 title: Discover opportunities in Microsoft Syntex by using the Microsoft 365 Assessment tool
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: jaeccles
 ms.date: 08/25/2023
 audience: admin
