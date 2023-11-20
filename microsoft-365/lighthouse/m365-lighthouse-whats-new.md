@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 08/24/2023
+ms.date: 10/23/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -30,6 +30,14 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## September 2023
+
+### Windows event logs
+
+The **Windows event logs** page in Microsoft 365 Lighthouse uses artificial intelligence (AI) to generate suggestions for mitigating issues found in Windows event logs. The "Collect Windows event logs" baseline enables collection of managed device event logs. After records have been ingested, you can view them by selecting **Devices** > **Windows event logs** in the left navigation pane in Lighthouse. To see additional details, select any log entry.
+
+[Go to the Windows event logs page now](https://lighthouse.microsoft.com/view/Microsoft_Intune_MTM/WindowsEventLogs.ReactView)
 
 ## August 2023
 
@@ -429,7 +437,9 @@ These insights can help inform your customer engagements and deliver more value 
 
 For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 services usage section](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
 
-### Exchange Online Protection and Microsoft 365 Defender for Office 365 default baseline step
+<a name='exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step'></a>
+
+### Exchange Online Protection and Microsoft Defender XDR for Office 365 default baseline step
 
 We've added a new step to the default baseline to include guidance for enabling Security Policies for Exchange Online Protection (EOP) and Microsoft Defender for Office 365 (MDO). EOP and MDO help protect users from spam, phishing, and malware emails by sending the emails to the user's quarantine or junk mail folder (coming soon). The deployment plan guides you in setting up EOP and MDO, further expanding your security stance during your next customer tenant deployment plan review.
 

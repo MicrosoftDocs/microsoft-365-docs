@@ -22,27 +22,27 @@ description: Learn how to manage user sync in multitenant organizations in Micro
 
 For users in your tenant to be able to collaborate with those in other tenants, you must synchronize your users to the other tenants.
 
-We recommend that you [set up security groups in Azure AD](/azure/active-directory/fundamentals/how-to-manage-groups) and add the users that you want to synchronize. Note that users must be members of the security group - owners of the group aren't synchronized.
+We recommend that you [set up security groups in Microsoft Entra ID](/azure/active-directory/fundamentals/how-to-manage-groups) and add the users that you want to synchronize. Note that users must be members of the security group - owners of the group aren't synchronized.
 
 There are two ways to set up user synchronization:
 
 - Share your users with other tenants in a multitenant organization by using the Microsoft 365 admin center (covered in this article)
-- [Configure user synchronization in Azure AD](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure)
+- [Configure user synchronization in Microsoft Entra ID](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure)
 
-Both methods use cross-tenant synchronization in Azure AD.
+Both methods use cross-tenant synchronization in Microsoft Entra ID.
 
-If you want to synchronize the same users with all the other tenants in a multitenant organization, we recommend sharing users in the Microsoft 365 admin center. This will create the necessary configurations in Azure AD for you.
+If you want to synchronize the same users with all the other tenants in a multitenant organization, we recommend sharing users in the Microsoft 365 admin center. This will create the necessary configurations in Microsoft Entra ID for you.
 
-If you want to synchronize different users to different tenants, then you must configure cross-tenant synchronization directly in Azure AD.
+If you want to synchronize different users to different tenants, then you must configure cross-tenant synchronization directly in Microsoft Entra ID.
 
 While you can create multiple cross-tenant synchronization configurations for a single external tenant, we recommend that you only use one for ease of administration.
 
 > [!NOTE]
-> It may take up to 24 hours for synced users to be available in Microsoft 365 services such as Teams and SharePoint.
+> It might take up to 24 hours for synced users to be available in Microsoft 365 services such as Teams and SharePoint.
 
 For more information about cross-tenant synchronization, see [What is cross-tenant synchronization?](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview).
 
-If you have issues with user synchronization check the [provisioning logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-provisioning-logs).
+If you have issues with user synchronization check the [provisioning logs in Microsoft Entra ID](/azure/active-directory/reports-monitoring/concept-provisioning-logs).
 
 ## User property synchronization
 
@@ -66,25 +66,25 @@ You can change the properties that are synchronized after the synchronization ha
 
 ## Users synchronized to your tenant from other tenants
 
-Users synchronized to your tenant from other tenants in your multitenant organization are synchronized as [Azure AD members rather than guests](/azure/active-directory/external-identities/user-properties).
+Users synchronized to your tenant from other tenants in your multitenant organization are synchronized as [Microsoft Entra members rather than guests](/azure/active-directory/external-identities/user-properties).
 
 As members, people from other tenants have a more seamless collaboration experience. This includes access to files using [*people in your organization* sharable links](/sharepoint/shareable-links-anyone-specific-people-organization). (Consider using [sensitivity labels](/purview/sensitivity-labels) if you need to limit who can access a file with a *people in your organization* link.)
 
-If some people from the other tenant already have guest accounts in your directory, the synchronization process doesn't change their user type to member. You can change these users' user type to member by [updating the user properties in Azure AD](/azure/active-directory/fundamentals/how-to-manage-user-profile-info).
+If some people from the other tenant already have guest accounts in your directory, the synchronization process doesn't change their user type to member. You can change these users' user type to member by [updating the user properties in Microsoft Entra ID](/azure/active-directory/fundamentals/how-to-manage-user-profile-info).
 
 ## Set up initial user synchronization for a multitenant organization
 
 To synchronize identities to other tenants in a multitenant organization
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Share users**.
 1. Select **Select users and groups to share**.
 1. Choose the security group that you created, and then select **Save**.
 1. Select **Yes** to confirm.
 
-This creates a cross-tenant synchronization configuration in Azure AD for each tenant in your multitenant organization. The synchronization configurations are named *MTO_Sync_\<TenantID\>*.
+This creates a cross-tenant synchronization configuration in Microsoft Entra ID for each tenant in your multitenant organization. The synchronization configurations are named *MTO_Sync_\<TenantID\>*.
 
 ## Set up user synchronization with newly added tenants
 
@@ -92,8 +92,8 @@ If you add additional tenants to your multitenant organization, you need to set 
 
 To set up user synchronization with newly added tenants
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Share users**.
 1. Select **Share current user scope**.
@@ -105,21 +105,21 @@ You can change which users are synchronized to other tenants in your multitenant
 
 To change which users are synchronized to other tenants
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Share users**.
 1. Select **Edit shared users and groups**.
 1. Update the users and groups that you want to sync to other tenants and then select **Save**.
 1. Select **Yes** to confirm.
 
-This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configurations in Azure AD for each tenant in your multitenant organization.
+This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configurations in Microsoft Entra ID for each tenant in your multitenant organization.
 
 ## Related topics
 
 [Troubleshooting tips for multitenant organizations](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure#troubleshooting-tips)
 
-[Known issues for provisioning in Azure Active Directory](/azure/active-directory/app-provisioning/known-issues?pivots=cross-tenant-synchronization)
+[Known issues for provisioning in Microsoft Entra ID](/azure/active-directory/app-provisioning/known-issues?pivots=cross-tenant-synchronization)
 
 [Plan for multitenant organizations in Microsoft 365](plan-multi-tenant-org-overview.md)
 

@@ -29,7 +29,7 @@ ms.date: 12/18/2020
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -70,7 +70,7 @@ Deploy Defender for Endpoint on iOS via Microsoft Intune Company Portal.
 
 1. On the **Add app** page, click on **Search the App Store** and type **Microsoft Defender** in the search bar. In the search results section, click on *Microsoft Defender* and click **Select**.
 
-1. Select **iOS 14.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
+1. Select **iOS 15.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
 
 1. In the **Assignments** section, go to the **Required** section and select **Add group**. You can then choose the user group(s) that you would like to target Defender for Endpoint on iOS app. Click **Select** and then **Next**.
 
@@ -239,7 +239,7 @@ Admins can configure auto-setup of VPN profile. This will automatically set up t
 > [!NOTE] 
 > Skip this step if you configure zero touch (silent) onboarding. Manually launching application is not necessary if zero touch (silent) onboarding is configured.
 
-3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal.
+3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft Defender portal.
 
    :::image type="content" source="images/device-inventory-screen.png" alt-text="The Device inventory page." lightbox="images/device-inventory-screen.png":::
 

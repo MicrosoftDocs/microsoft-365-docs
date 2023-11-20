@@ -29,7 +29,7 @@ ms.date: 12/18/2020
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -76,7 +76,7 @@ ms.date: 12/18/2020
 |rbacGroupName|String|Machine group Name.|
 |rbacGroupId|String|Machine group ID.|
 |riskScore|Nullable Enum|Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.|
-|aadDeviceId|Nullable representation Guid|AAD Device ID (when [machine](machine.md) is AAD Joined).|
+|aadDeviceId|Nullable representation Guid|Microsoft Entra Device ID (when [machine](machine.md) is Microsoft Entra joined).|
 |machineTags|String collection|Set of [machine](machine.md) tags.|
 |exposureLevel|Nullable Enum|Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.|
 |deviceValue|Nullable Enum|The [value of the device](../tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.|

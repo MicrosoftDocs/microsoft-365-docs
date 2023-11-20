@@ -18,7 +18,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/28/2022
+ms.date: 10/17/2023
 ---
 
 # Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management
@@ -60,7 +60,7 @@ This article assumes that you've already set up a connection to Blue Yonder WFM,
     Connect-MicrosoftTeams
     ```
 
-    When you're prompted, sign in using your admin credentials. You're now set up to run the scripts in this article and Shifts connector cmdlets.
+    When you're prompted, sign in using your admin credentials. You're now set up to run the scripts in this article and the Shifts connector cmdlets.
 
 ## Check connection setup status
 <a name="setup_status"> </a>

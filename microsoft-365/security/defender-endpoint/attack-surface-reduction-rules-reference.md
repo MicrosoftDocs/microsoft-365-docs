@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar,
+ms.reviewer: sugamar,
 manager: dansimp
 ms.custom: asr
 ms.topic: reference
@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - mde-asr
-ms.date: 08/04/2023
+ms.date: 10/30/2023
 search.appverid: met150
 ---
 
@@ -23,9 +23,9 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Microsoft 365 Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Microsoft Defender XDR for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms:**
@@ -66,6 +66,7 @@ For the easiest method to enable the standard protection rules, see: [Simplified
 | Block persistence through WMI event subscription | Yes | |
 | Block process creations originating from PSExec and WMI commands | | Yes |
 | Block untrusted and unsigned processes that run from USB | | Yes |
+| Block Webshell creation for Servers | | Yes |
 | Block Win32 API calls from Office macros | | Yes |
 | Use advanced protection against ransomware | | Yes |
 
@@ -113,6 +114,7 @@ The following table lists the supported operating systems for rules that are cur
 | [Block persistence through Windows Management Instrumentation (WMI) event subscription](#block-persistence-through-wmi-event-subscription) <br> \* _File and folder exclusions not supported._ | Y <br> version 1903 (build 18362) or later <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> version 1903 (build 18362) or later | N | N |
 | [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
+| [Block Webshell creation for Servers](#block-webshell-creation-for-servers)  |   |   |   |   |   |
 | [Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
 | [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 
@@ -142,6 +144,7 @@ Links to information about configuration management system versions referenced i
 |[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |Y  |  |Y   | Y  |
 |[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |   |  Y | Y  |
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |Y <br><br> CB 1802  | Y  | Y  |
+|[Block Webshell creation for Servers](#block-webshell-creation-for-servers) |   |   |   |   |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y |Y <br><br> CB 1710  | Y  |  Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y |Y <br><br> CB 1802 | Y  | Y  |
 
@@ -178,6 +181,7 @@ For rules with the "Rule State" specified:
 |[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
 |[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
+|[Block Webshell creation for Servers](#block-webshell-creation-for-servers) |   |   |   |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
 
@@ -199,6 +203,7 @@ For rules with the "Rule State" specified:
 | Block persistence through WMI event subscription <br>* File and folder exclusions not supported. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
 | Block process creations originating from PSExec and WMI commands | d1e49aac-8f56-4280-b9ba-993a6d77406c |
 | Block untrusted and unsigned processes that run from USB | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
+| Block Webshell creation for Servers | a8f5898e-1dc8-49a9-9878-85004b8a61e6 |
 | Block Win32 API calls from Office macros | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
 | Use advanced protection against ransomware | c1db55ab-c21a-4637-bb3f-a12568109d35 |
 
@@ -529,6 +534,15 @@ Advanced hunting action type:
 
 Dependencies: Microsoft Defender Antivirus
 
+### Block Webshell creation for Servers
+
+GUID: `a8f5898e-1dc8-49a9-9878-85004b8a61e6`
+
+Intune name: `Block Webshell creation for Servers`
+
+Supported operating systems:
+- [Windows 11](/windows/whats-new/whats-new-windows-11-version-22h2)
+
 ### Block Win32 API calls from Office macros
 
 This rule prevents VBA macros from calling Win32 APIs.
@@ -594,4 +608,3 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-
