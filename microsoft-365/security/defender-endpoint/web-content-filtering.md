@@ -5,7 +5,7 @@ ms.service: microsoft-365-security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 09/07/2023
+ms.date: 11/17/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -145,7 +145,7 @@ To define a custom indicator, follow these steps:
 
 If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the Microsoft Defender portal.
 
-To dispute the category of a domain, navigate to **Reports** \> **Web protection** \> **Web Content Filtering Details** \> **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
+To dispute the category of a domain, navigate to **Reports** \> **Web protection** \> **Web content filtering categories details** \> **Domains**. On the domains tab of the Web Content Filtering reports, find the ellipsis beside each of the domains. Hover over the ellipsis and then select **Dispute Category**.
 
 A panel opens where you can select the priority and add more details such as the suggested category for recategorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
 
