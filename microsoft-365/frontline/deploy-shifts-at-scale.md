@@ -100,7 +100,7 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
     > [!NOTE]
     > Frontline managers can later change the time zone setting for their teams in Shifts. You might want to ask your frontline managers to verify the time zone before they start using Shifts.
-1. When you’re done selecting team time zones, choose **Deploy**.
+1. When you’re done, choose **Deploy**.
 
     This process can take a while depending on how many teams you're deploying Shifts to. Refresh the Manage frontline apps page to get the latest status.
 
