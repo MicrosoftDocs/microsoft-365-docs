@@ -57,7 +57,7 @@ You can assign users with one of the following levels of permissions:
   > [!NOTE]
   > You need to run the PowerShell cmdlets in an elevated command-line.
 
-- Connect to your Microsoft Entra ID. For more information, see [Connect-MgGraph](/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0).
+- Connect to your Microsoft Entra ID. For more information, see [Connect-MgGraph](/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0&preserve-view=true).
 
   - **Full access**: Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" Microsoft Entra built-in roles.
   - **Read-only access**: Users with read-only access can log in, view all alerts, and related information.
