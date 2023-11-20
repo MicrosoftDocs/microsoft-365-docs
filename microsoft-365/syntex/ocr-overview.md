@@ -2,7 +2,7 @@
 title: Overview of optical character recognition in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: kkameth
 ms.date: 10/16/2023
 audience: admin

@@ -1,10 +1,10 @@
 ---
 title: Push content types to a hub
-ms.author: mikeplum
+ms.author: chuckedmonson
 author: chucked
-ms.reviewer: chuckedmonson
+ms.reviewer: ssquires
 ms.date: 01/14/2023
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
