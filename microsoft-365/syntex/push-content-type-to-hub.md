@@ -1,7 +1,7 @@
 ---
 title: Push content types to a hub
-ms.author: chuckedmonson
-author: chucked
+ms.author: chucked
+author: chuckedmonson
 ms.reviewer: ssquires
 ms.date: 01/14/2023
 manager: jtremper
