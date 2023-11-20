@@ -5,8 +5,7 @@ description: Learn what steps you need to take to get started with Microsoft Def
 keywords: get started, microsoft 365 defender, turn on, onboard, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

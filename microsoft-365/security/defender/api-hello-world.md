@@ -3,8 +3,7 @@ title: Hello World for Microsoft Defender XDR REST API
 description: Learn how to create an app and use a token to access the Microsoft Defender XDR APIs
 keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
