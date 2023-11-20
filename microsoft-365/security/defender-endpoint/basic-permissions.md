@@ -11,7 +11,7 @@ ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 ms.custom:
-  - has-azure-ad-ps-ref
+  - has-azure-ad-ps-ref, azure-ad-ref-level-one-done 
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -57,7 +57,7 @@ You can assign users with one of the following levels of permissions:
   > [!NOTE]
   > You need to run the PowerShell cmdlets in an elevated command-line.
 
-- Connect to your Microsoft Entra ID. For more information, see [Connect-MsolService](/powershell/module/msonline/connect-msolservice).
+- Connect to your Microsoft Entra ID. For more information, see [Connect-MgGraph](/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0).
 
   - **Full access**: Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" Microsoft Entra built-in roles.
   - **Read-only access**: Users with read-only access can log in, view all alerts, and related information.
@@ -71,13 +71,13 @@ Use the following steps to assign security roles:
 - For **read and write** access, assign users to the security administrator role by using the following command:
 
   ```PowerShell
-  Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress "secadmin@Contoso.onmicrosoft.com"
+  New-MgDirectoryRoleMemberByRef -RoleName "Security Administrator" -RoleMemberEmailAddress "secadmin@Contoso.onmicrosoft.com"
   ```
 
 - For **read-only** access, assign users to the security reader role by using the following command:
 
   ```PowerShell
-  Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
+  New-MgDirectoryRoleMemberByRef -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
 For more information, see [Add or remove group members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
