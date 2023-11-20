@@ -2,7 +2,7 @@
 title: Edit a modern template in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.date: 10/21/2023

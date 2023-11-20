@@ -2,7 +2,7 @@
 title: Overview of prebuilt document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 5/12/2023
 audience: admin

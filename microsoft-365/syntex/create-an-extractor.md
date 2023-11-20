@@ -2,7 +2,7 @@
 title: Create an extractor in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 03/02/2023
 audience: admin

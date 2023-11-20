@@ -2,7 +2,7 @@
 title: Use metadata to find content in document libraries in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: kkameth
 ms.date: 09/11/2023
 audience: admin
