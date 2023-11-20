@@ -3,7 +3,7 @@ title: Deploy Shifts to your frontline teams at scale
 author: lana-chin
 ms.author: v-chinlana
 manager: serdars
-ms.reviewer: arnavgupta
+ms.reviewer: arnavgupta, imarquesgil
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -27,7 +27,7 @@ ms.date:
 ## Prerequisites
 
 - Your frontline employees must have a Microsoft 365 F3, F1, E3, or E5 license. [Learn more about frontline licensing](flw-licensing-options.md).
-- Your organization’s frontline teams are created through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
+- You created your organization’s frontline teams through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
 - The admin running the deployment process is a Teams admin.  
 
 ## Set up Shifts for your frontline teams
@@ -66,7 +66,8 @@ Choose the Shifts capabilities that you want to be available to your frontline t
 
 In this step, you identify the schedule owners in your organization and specify how schedule groups are created and managed across your frontline teams.
 
-In Shifts, schedule owners, similar to team owners, are frontline managers who create and manage schedules for their teams. [Learn more about schedule owners](schedule-owner-for-shift-management.md). With schedule groups, you can group employees based on common characteristics within a team. For example, schedules groups can be departments or job types.
+ - Schedule owners, similar to team owners, are frontline managers who create and manage schedules for their teams. [Learn more about schedule owners](schedule-owner-for-shift-management.md).
+ - Schedule groups are used to further group employees based on common characteristics within a team. For example, schedule groups can be departments or job types.
 
 You can choose to allow schedule owners to create and manage schedule groups or you can do so centrally in the Teams admin center.  
 
