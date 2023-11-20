@@ -2,7 +2,7 @@
 title: Use the content center site template for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: ssquires
 ms.date: 02/28/2023
