@@ -2,7 +2,7 @@
 title: Overview of unstructured document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 07/12/2022
 audience: admin

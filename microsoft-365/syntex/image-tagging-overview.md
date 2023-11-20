@@ -2,7 +2,7 @@
 title: Overview of enhanced image tagging in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
 ms.date: 07/27/2023
