@@ -94,9 +94,12 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
 1. On the Manage frontline apps page, next to **Deploy Shifts to your teams** in the table, choose **Deploy**.  
 1. Select the teams that you want to deploy Shifts to, and then choose **Next**.
-1. For each team that you selected, set the time zone for the team’s schedule in Shifts.
+1. For each team that you selected, set the time zone for the team’s schedule in Shifts. The time zone should reflect the team's location.
 
     You can also set a default time zone that’s automatically applied to all teams. If you choose to set a default time zone, you can still select different time zones for specific teams.
+
+    > [!NOTE]
+    > Frontline managers can later change the time zone setting for their teams in Shifts. You might want to ask your frontline managers to verify the time zone before they start using Shifts.
 1. When you’re done selecting team time zones, choose **Deploy**.
 
     This process can take a while depending on how many teams you're deploying Shifts to. Refresh the Manage frontline apps page to get the latest status.
@@ -107,7 +110,7 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
 ## Troubleshoot errors
 
-If an error occurred during deployment, the status in the table shows as **Error** after you refresh the Manage frontline apps page.
+If an error occurred during the deployment process, the status in the table shows as **Error** after you refresh the Manage frontline apps page.
 
 Select [linkname] to download an error CSV and use the information in the file to help resolve the errors. Then, rerun the [deployment experience](#deploy-shifts-to-your-frontline-teams).  
 
