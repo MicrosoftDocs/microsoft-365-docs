@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/20/2023
 ---
 
 # Detect and block potentially unwanted applications with Microsoft Defender for Endpoint on macOS
