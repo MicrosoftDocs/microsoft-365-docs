@@ -2,7 +2,7 @@
 title: Merge and extract PDF files in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: spodeanu
 ms.date: 10/23/2023

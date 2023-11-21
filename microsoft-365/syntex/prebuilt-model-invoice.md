@@ -2,7 +2,7 @@
 title: Use a prebuilt model to extract information from invoices in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 02/05/2023
 audience: admin

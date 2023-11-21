@@ -2,10 +2,10 @@
 title: Use the contracts management site template for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: kkameth
-ms.date: 12/18/2022
+ms.date: 11/15/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 

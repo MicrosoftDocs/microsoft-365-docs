@@ -2,7 +2,7 @@
 title: Find and manage terms using taxonomy tagging in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
 ms.date: 08/31/2023
