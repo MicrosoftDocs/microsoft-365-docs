@@ -2,9 +2,9 @@
 title: Apply a retention label to a model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 12/01/2022
+ms.date: 11/01/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

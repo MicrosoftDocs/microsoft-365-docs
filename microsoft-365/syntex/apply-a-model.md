@@ -2,7 +2,7 @@
 title: Apply a model to a document library in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 05/01/2023
 audience: admin

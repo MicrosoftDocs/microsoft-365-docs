@@ -2,9 +2,9 @@
 title: Microsoft Syntex video library
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/06/2023
+ms.date: 09/06/2023
 audience: admin
 ms.topic: conceptual
 ms.custom: 
