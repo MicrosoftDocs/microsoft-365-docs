@@ -106,7 +106,7 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
     When deployment is completed, the deployment status shows as **Deployed** in the table. On the **Shifts** tile, you’ll see the number of frontline teams that Shifts is deployed to. You can also download a CSV file with a list of those teams.
 
-    You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed.
+    You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed. Keep in mind that you can't redeploy Shifts to teams that already have it.
 
 ## Troubleshoot errors
 
