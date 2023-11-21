@@ -187,6 +187,10 @@
           items:
           - name: Configure and validate exclusions
             href: mac-exclusions.md
+          - name: validate antimalware
+            href: validate-antimalware.md
+          - name: EDR detections
+            href: edr-detection.md
           - name: Set preferences
             href: mac-preferences.md 
           - name: Detect and block Potentially Unwanted Applications
