@@ -2,7 +2,7 @@
 title: View the status of a file processed by Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 10/23/2023
 audience: admin

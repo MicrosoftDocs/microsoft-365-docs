@@ -2,7 +2,7 @@
 title: Set up and manage structured and freeform document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 08/08/2023
 audience: admin
