@@ -187,7 +187,7 @@
           items:
           - name: Configure and validate exclusions
             href: mac-exclusions.md
-          - name: validate antimalware
+          - name: Validate antimalware
             href: validate-antimalware.md
           - name: EDR detections
             href: edr-detection.md
