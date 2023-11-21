@@ -34,6 +34,8 @@ Be aware of the following before you start:
 
 3.	If you're using a proxy in your (test) environment, make sure that the plug-in is set up to use it correctly. WSL is typically not automatically configured to use a proxy. For more information, see the section, [Setting a proxy for Defender running in WSL](#setting-a-proxy-for-defender-running-in-wsl).
 
+4.	The use of a custom kernel in combination with the plug-in is not supported. When you attempt to launch WSL  with the plugin installed, you will encounter the error *A fatal error was returned by plugin 'DefenderforEndpointPlug-in'. Error message: 'Custom Kernel/Configuration not supported.'*. 
+
 ## Software prerequisites
 
 - WSL version 2.0.7 or later must be running with at least one active distro.
