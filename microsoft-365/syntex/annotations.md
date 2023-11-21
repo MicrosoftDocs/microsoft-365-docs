@@ -2,7 +2,7 @@
 title: Comment and collaborate using annotations in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: kkameth
 ms.date: 09/21/2023
 audience: admin

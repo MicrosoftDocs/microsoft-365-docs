@@ -2,7 +2,7 @@
 title: Get started driving adoption of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.date: 10/15/2022
 audience: admin
 ms.topic: conceptual
