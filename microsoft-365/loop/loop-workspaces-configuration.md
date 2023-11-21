@@ -90,7 +90,7 @@ In case you create a new policy configuration or change the configuration for an
 - If there were no policy configurations prior to the change, then it takes 24 hours for the change to be reflected.
 
 > [!NOTE]
-> In order to target only a group of users in your organization to be able to create Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
+> In order to target only a group of users in your organization to be able to create Loop content in workspaces, create a group that targets only the users you want to allow to create Loop content in workspaces and set it to Enabled. Then create a second group that targets All Users and set it to Disabled. Then make sure that the priority of the first Enabled group has a smaller priority number and the second Disabled group has a larger priority number. By following these steps, you will allow only the users in the first group to create Loop content in workspaces.
 
 ## Related topics
 
