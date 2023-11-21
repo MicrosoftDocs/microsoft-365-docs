@@ -4,10 +4,11 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 10/20/2023
+ms.date: 12/01/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -18,33 +19,24 @@ description: Learn about the document translation service in Microsoft Syntex.
 
 # Overview of document translation in Microsoft Syntex
 
-> [!NOTE]
-> This article is currently in development.
+Microsoft Syntex lets you easily create a translated copy of a selected file or a set of files in a SharePoint document library. You can translate a file, while preserving the original format and structure of the file. Translation is available for all supported languages and dialects. 
 
-Microsoft Syntex lets you easily create a translated copy of a selected file or a set of files in a SharePoint document library. Translation is available for all supported languages and dialects. You can translate a file, while preserving the original format and structure of the file.
+This feature lets you translate files of different types either manually or automatically by creating a rule. You can also use custom glossaries and models to improve the quality and consistency of your translations.
 
-This feature lets you translate files of different types either manually or automatically by setting a rule. You can also use custom glossaries and models to improve the quality and consistency of your translations.
+## Requirements and limitations
 
-## Translate a document on demand
+### Supported file types
 
-To create a translated version of a document, follow these steps:
+Translation is available for the following file types: .doc, .docx, .pdf, .xls, .xlsx, .rtf, and .txt.
 
-1. From a SharePoint document library, select the file or files you want to translate, and then select **Translate**.
+## Supported languages
 
-2. On the **Translate documents** screen, use the drop-down menu to choose the language into which you want to translate the file, and then select **Translate**.
+Translation is available for [all supported languages and dialects](/azure/ai-services/translator/language-support?source=recommendations#translation).
 
+### Current release notes
 
+- Text on an image within the document is not translated.
 
-## Translate a document automatically
+- Password-protected files are not translated.
 
-To create a rule to translate documents automatically under specific conditions, follow these steps:
-
-1. From a SharePoint document library, select **Automate** > **Rules** > **Create a rule**.
-
-2. On the **Create a rule** page, select **A new file is added**.
-
-3. Under **When a new file is added**, complete the rule statement:
-
-    a. Select **Choose action**, and then select **Create a translated copy in**.
-
-    b. Select **Enter a language**, and then select the language into which you want to translate the file. 
+- On-demand translation on folders will be available in a future release.
