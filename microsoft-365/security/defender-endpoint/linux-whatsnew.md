@@ -63,7 +63,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **Known issues**
 
-- CPU lock-up seen on kernel version 5.15.0-0.30.20 in ebpf mode, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-support-ebpf?view=o365-worldwide) for details and Mitigation options.
+- CPU lock-up seen on kernel version 5.15.0-0.30.20 in ebpf mode, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/linux-support-ebpf?view=o365-worldwide) for details and Mitigation options.
 
 </details>
 
