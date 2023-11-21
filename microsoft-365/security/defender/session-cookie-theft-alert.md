@@ -3,8 +3,7 @@ title: Alert grading for session cookie theft alert
 description: Review, manage and grade the session cookie theft alert as True Positive (TP) or False Positive (FP), and if there is TP, take recommended actions to remediate the attack and mitigate the security risks arising because of it.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, cookie theft, AiTM, Attacker-in-the-middle, Adversary-in-the-middle, session theft, aitm cookie theft, aitm session theft.
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -31,9 +30,9 @@ ms.date: 10/18/2022
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-This article contains information about alert grading for Session Cookie theft alerts in Microsoft 365 Defender:
+This article contains information about alert grading for Session Cookie theft alerts in Microsoft Defender XDR:
 
 - **Stolen session cookie was used**
 - **Authentication request from AiTM-related phishing page**

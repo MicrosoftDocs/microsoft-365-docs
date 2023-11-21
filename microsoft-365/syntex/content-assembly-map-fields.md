@@ -2,7 +2,7 @@
 title: Map fields of a modern template to library columns in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
 ms.date: 03/14/2023

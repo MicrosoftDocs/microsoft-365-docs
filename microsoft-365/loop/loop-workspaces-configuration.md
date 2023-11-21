@@ -62,7 +62,7 @@ If you're looking for a simple way to turn on or off the creation of content in 
     > While we are updating the admin center to reflect the state of Loop in your environment, the checkbox may not reflect your configured state on load. However, the state you select and choose Save in the Admin Center will persist and override any defaults for your tenant.
 1. Select Save.
 
-The Microsoft Admin Center configures the Cloud Policy setting described in the next section, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
+The Microsoft Admin Center configures the Cloud Policy setting described in the next section, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls. If you previously configured a Cloud Policy for a group prior to when this Loop setting was defaulted to Enabled, review your Cloud Policy settings to confirm they still match your expectation.
 
 ## Settings management in Cloud Policy
 
@@ -90,7 +90,7 @@ In case you create a new policy configuration or change the configuration for an
 - If there were no policy configurations prior to the change, then it takes 24 hours for the change to be reflected.
 
 > [!NOTE]
-> In order to target only a group of users in your organization to be able to create Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
+> In order to target only a group of users in your organization to be able to create Loop content in workspaces, create a group that targets only the users you want to allow to create Loop content in workspaces and set it to Enabled. Then create a second group that targets All Users and set it to Disabled. Then make sure that the priority of the first Enabled group has a smaller priority number and the second Disabled group has a larger priority number. By following these steps, you will allow only the users in the first group to create Loop content in workspaces.
 
 ## Related topics
 

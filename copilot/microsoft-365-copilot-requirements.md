@@ -32,6 +32,9 @@ The following are the prerequisites for using Microsoft 365 Copilot. If your org
 
 [Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoft365appssetup) in the Microsoft 365 admin center to deploy to your users.
 
+> [!NOTE]
+> For Copilot to work in Word Online and PowerPoint Online, you need to have third-party cookies enabled.
+
 ### Microsoft Entra ID
 
 Users must have [Microsoft Entra ID](/microsoft-365/admin/add-users/add-users) (formerly Azure Active Directory) accounts. You can add or sync users using the [onboarding wizard](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/identitywizard) in the Microsoft 365 admin center.
@@ -44,7 +47,9 @@ Some features in Microsoft 365 Copilot, such as file restore and OneDrive manage
 
 Microsoft 365 Copilot works with the new Outlook (for [Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) and [Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)), which are currently in preview. Users can switch to the new Outlook by selecting **Try the new Outlook** in their existing Outlook client.
 
-To have Copilot appear in the new Outlook, you'll need to sync your Microsoft 365 settings. To do this, go to [View and manage your Microsoft 365 settings](https://myaccount.microsoft.com/settingsandprivacy/language).
+To have Copilot appear in the new Outlook, you need to sync your Microsoft 365 settings. To do this, go to [View and manage your Microsoft 365 settings](https://myaccount.microsoft.com/settingsandprivacy/language).
+
+Microsoft 365 Copilot will be supported on classic Outlook for Windows (Win32 desktop app) in the future. You can [review the roadmap item here](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Outlook&searchterms=copilot).
 
 ### Microsoft Teams
 
@@ -54,9 +59,15 @@ You can use the [Microsoft Teams setup guide](https://admin.microsoft.com/Adminp
 
 To use Microsoft 365 Copilot with Microsoft Loop, you must have Loop enabled for your tenant. This can be done in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop) or the [Microsoft 365 Apps admin center](https://config.office.com) under **Customization** \| **Policy Management**. For more information, see [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration) and [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).
 
-### Update channels
+### Microsoft Whiteboard
 
-User devices must be on either Current Channel or Monthly Enterprise Channel to access Microsoft 365 Copilot features. In November, Copilot will initially be available on Current Channel, and Monthly Enterprise Channel a month later. To learn more about update channels, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
+To use Microsoft 365 Copilot with Microsoft Whiteboard, you must have Whiteboard enabled for your tenant. To learn more about Microsoft Whiteboard, see [Manage access to Microsoft Whiteboard for your organization](/whiteboard/manage-whiteboard-access-organizations).
+
+## Update channels
+
+Microsoft 365 Copilot will follow Microsoft 365 Apps' standard practice for deployment and updates, being available in all update channels, except for Semi-annual channel. Preview channels include Insiders, Current Channel - Preview and Beta Channel. Production channels include Current Channel and then Monthly Enterprise Channel.
+
+Once generally available on 11/1, Copilot will be in Current Channel, and starting December 12, on Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and the [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
 ## Network requirements
 
@@ -66,10 +77,16 @@ There are many Copilot experiences, including some core experiences like Excel, 
 
 ## License requirements
 
-Microsoft 365 Copilot users require a license for Microsoft 365 E3 or Microsoft 365 E5, as well as a license for Microsoft 365 Copilot. You can use the [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/p/?linkid=2243702) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
+Microsoft 365 Copilot users require a license for Microsoft 365 E3 or Microsoft 365 E5, and a license for Microsoft 365 Copilot. You can use the [Microsoft 365 Copilot setup guide](https://setup.microsoft.com/microsoft-365/copilot-setup-guide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
-The Semantic Index for Microsoft 365 Copilot also requires a license for Microsoft 365 E3 or E5.
+## Conditional Access
+
+While Copilot supports Conditional Access Policies in SharePoint Online configured to target "all cloud apps" or "Office 365 group," Microsoft 365 Chat does not currently support Conditional Access policies configured to the SharePoint Online app directly. We anticipate deploying a change in coming weeks.
+
+## Restricted Access Control
+
+Microsoft 365 Chat does not currently support Restricted Access Control and Microsoft 365 Information Barriers (Implicit and Owner moderated mode) on sites. Support for both policies is intended.  We anticipate deploying a change in coming weeks.
 
 ## Privacy settings for Microsoft 365 Apps for enterprise
 
-Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).

@@ -25,7 +25,7 @@ ms.date: 09/27/2023
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -49,7 +49,7 @@ To get the latest features, including preview capabilities (such as endpoint det
 
 ### Prerequisites
 
-- A Defender for Endpoint subscription and access to the Microsoft 365 Defender portal
+- A Defender for Endpoint subscription and access to the Microsoft Defender portal
 - Beginner-level experience in macOS and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 

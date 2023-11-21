@@ -18,7 +18,7 @@ metadata:
   author: denisebmsft #Required; your GitHub user alias, with correct capitalization.
   ms.author: deniseb #Required; microsoft alias of author; optional team alias.
   ms.reviewer: nehabha
-  ms.date: 10/02/2023
+  ms.date: 10/27/2023
 
 # productDirectory section (optional)
 productDirectory:
@@ -71,15 +71,12 @@ conceptualContent:
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:
-        - url: ../business-premium/get-microsoft-365-business-premium.md
-          itemType: how-to-guide
-          text: Get Microsoft 365 Business Premium
         - url: ../business-premium/m365bp-setup.md
           itemType: how-to-guide
-          text: 1. Complete the basic setup process
+          text: 1. Sign in and set up
         - url: ../business-premium/m365bp-security-overview.md
           itemType: overview
-          text: 2. Set up security capabilities
+          text: 2. Configure your security protection
         - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
           text: 3. Protect unmanaged (BYOD) devices
@@ -150,11 +147,14 @@ conceptualContent:
         - url: ../business-premium/m365bp-protect-managed-devices.md
           itemType: overview
           text: Set up and secure managed devices
-
+        - url: ../business-premium/m365bp-device-states.md
+          itemType: how-to-guide
+          text: View device status
+    
   # Card
     - title: Protect email content and Microsoft 365 files
       links:
-        - url: ..//security/office-365-security/index.yml
+        - url: ../security/office-365-security/index.yml
           itemType: overview
           text: Get started with Microsoft Defender for Office 365
         - url: ../business-premium/m365bp-protect-against-malware-cyberthreats.md

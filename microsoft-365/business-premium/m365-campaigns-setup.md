@@ -1,5 +1,5 @@
 ---
-title: "Setup overview for Microsoft 365 for Campaigns"
+title: "Sign in and set up Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.date: 10/10/2023
+ms.date: 11/01/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -23,9 +23,11 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Setup overview for Microsoft 365 for Campaigns or other businesses"
 ---
 
-# Set up Microsoft 365 for Campaigns
+# Sign in and set up Microsoft 365 for Campaigns
 
-This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), and how to complete the basic setup process and proceed to next steps.
+This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), how to complete the basic setup process, and identify next steps.
+
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
 
 ## Get Microsoft 365 for Campaigns
 
@@ -101,7 +103,7 @@ Here's how to sign in:
 
 3. Type your username and password. Select **Sign in**.
 
-4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Boost your security protection for your campaign](m365bp-security-overview.md).
+4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Configure your security protection for your campaign](m365bp-security-overview.md).
 
 ## How your staff will sign in
 

@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
 ms.date: 09/25/2023
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -43,8 +43,10 @@ Pay-as-you-go currently supports the following Syntex services:
 - Content assembly
 - Image tagging
 - Taxonomy tagging
+- Syntex eSignature
 - Optical character recognition
-<!---- Microsoft 365 Archive--->
+- Microsoft 365 Archive (Preview)
+- Microsoft 365 Backup (Preview)
 
 More Syntex services will be added as they become available.
 
@@ -64,7 +66,7 @@ For more information, see [Microsoft Syntex features limited time license agreem
 
 ## If you still have active per-user licenses
 
-As of July 1, 2023, per-user licenses are no longer available for purchase. Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you'll need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing.md) to continue using Syntex services.
+As of July 1, 2023, per-user licenses are no longer available for purchase. Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you'll need to opt in to Syntex [pay-as-you-go billing](syntex-azure-billing.md) to continue using Syntex services.
 
 Users with active per-user licenses can perform the following tasks:
 
@@ -79,6 +81,8 @@ Users with active per-user licenses can perform the following tasks:
 - Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
 - Use the document library rules to move or copy content.
 - Merge and extract PDFs
+
+If you plan to use a custom Power Platform environment for structured or freeform document processing, see [Using a custom Power Platform environment](structured-freeform-setup.md#using-a-custom-power-platform-environment).
 
 <!---
 ## AI Builder credits

@@ -22,7 +22,7 @@ ms.date: 8/14/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Configure the advanced delivery policy for third-party phishing simulations and email delivery to SecOps mailboxes
@@ -36,19 +36,15 @@ To keep your organization [secure by default](secure-by-default.md), Exchange On
 
 Use the _advanced delivery policy_ in EOP to prevent inbound messages _in these specific scenarios_ from being filtered¹. The advanced delivery policy ensures that messages in these scenarios achieve the following results:
 
-- Filters in EOP and Defender for Office 365 take no action on these messages.¹
-- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages².
+- Filters in EOP and Defender for Office 365 take no action on these messages. Malware filtering is bypassed for SecOps mailboxes only.
+- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages. ZAP for malware is bypassed for SecOps mailboxes only.
+- [Safe Links in Defender for Office 365](safe-links-about.md) doesn't block or detonate the specified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
+- [Safe Attachments in Defender for Office 365](safe-attachments-about.md) doesn't detonate attachments in these messages.
 - [Default system alerts](/purview/alert-policies#default-alert-policies) aren't triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](air-about.md) ignores these messages.
 - Specifically for third-party phishing simulations:
   - [Admin submission](submissions-admin.md) generates an automatic response saying that the message is part of a phishing simulation campaign and isn't a real threat. Alerts and AIR aren't triggered. The admin submissions experience shows these messages as a simulated threat.
   - When a user reports a phishing simulation message using the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web) or the [Microsoft Report Message or Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook), the system doesn't generate an alert, investigation, or incident. The links or files aren't detonated, but the message appears on the **User reported** tab of the **Submissions** page.
-  - [Safe Links in Defender for Office 365](safe-links-about.md) doesn't block or detonate the specified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
-  - [Safe Attachments in Defender for Office 365](safe-attachments-about.md) doesn't detonate attachments in these messages.
-
-¹ Malware filtering is bypassed for SecOps mailboxes only.
-
-² You can bypass ZAP for malware by creating an anti-malware policy for the SecOps mailbox where ZAP for malware is turned off. For instructions, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked with system overrides. Admin experiences show these messages as **Phishing simulation** or **SecOps mailbox** system overrides. Admins can use these values to filter and analyze messages in the following experiences:
 
@@ -60,20 +56,22 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
+- You open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
+  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md) and [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Create, modify, or remove configured settings in the advanced delivery policy_: Membership in the **Security Administrator** role groups in Email & collaboration RBAC <u>and</u> membership in the **Organization Management** role group in Exchange Online RBAC.
     - _Read-only access to the advanced delivery policy_: Membership in the **Global Reader** or **Security Reader** role groups in Email & collaboration RBAC.
       - **View-Only Organization Management** in Exchange Online RBAC.
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-## Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy
+<a name='use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy'></a>
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
+## Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy
+
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
    On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected.
 
@@ -99,15 +97,17 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 - The **Email** column contains the email address for each entry.
 - To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-## Use the Microsoft 365 Defender portal to modify or remove SecOps mailboxes in the advanced delivery policy
+<a name='use-the-microsoft-365-defender-portal-to-modify-or-remove-secops-mailboxes-in-the-advanced-delivery-policy'></a>
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
+## Use the Microsoft Defender portal to modify or remove SecOps mailboxes in the advanced delivery policy
+
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
    On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected.
 
 2. On the **SecOps mailbox** tab, select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
-3. In **Edit SecOps mailboxes** flyout that opens, add or remove mailboxes as described in Step 3 in the [Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
+3. In **Edit SecOps mailboxes** flyout that opens, add or remove mailboxes as described in Step 3 in the [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
 
    To remove all mailboxes, select remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to each value until there are no more mailboxes selected.
 
@@ -117,7 +117,9 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 
 Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configured are displayed. If you removed all entries, the list is empty.
 
-## Use the Microsoft 365 Defender portal to configure third-party phishing simulations in the advanced delivery policy
+<a name='use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy'></a>
+
+## Use the Microsoft Defender portal to configure third-party phishing simulations in the advanced delivery policy
 
 To configure a third-party phishing simulation, you need to provide the following information:
 
@@ -136,7 +138,7 @@ If your MX record doesn't point to Microsoft 365, the IP address in the `Authent
 >
 > Adding phishing simulation URLs to the **Do not rewrite the following URLs in email** section in Safe Links policies might result in unwanted alerts for URL clicks. Phishing simulation URLs in email messages are automatically allowed both during mail flow and at time of click. 
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
    On the **Advanced delivery** page, select the **Phishing simulation** tab.
 
@@ -173,15 +175,17 @@ Back on the **Phishing simulation** tab, the third-party phishing simulation ent
 - The **Date** column shows when the entry was created.
 - To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-## Use the Microsoft 365 Defender portal to modify or remove third-party phishing simulations in the advanced delivery policy
+<a name='use-the-microsoft-365-defender-portal-to-modify-or-remove-third-party-phishing-simulations-in-the-advanced-delivery-policy'></a>
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
+## Use the Microsoft Defender portal to modify or remove third-party phishing simulations in the advanced delivery policy
+
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
    On the **Advanced delivery** page, select the **Phishing simulation** tab.
 
 2. On the **Phishing simulation** tab, select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
-3. In the **Edit third-party phishing simulation** flyout that opens, add or remove entries for **Domain**, **Sending IP**, and **Simulation URLs** as described in Step 3 in the [Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
+3. In the **Edit third-party phishing simulation** flyout that opens, add or remove entries for **Domain**, **Sending IP**, and **Simulation URLs** as described in Step 3 in the [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
 
    To remove all entries, select remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to each value until there are no more domains, IPs, or URLs selected.
 

@@ -3,7 +3,7 @@ title: "Getting an account disabled error in Outlook on the web"
 f1.keywords:
 - CSH
 ms.author: pebaum
-author: pebaum
+author: cmcatee
 manager: scotv
 ms.date: 10/29/2020
 audience: Admin

@@ -23,9 +23,6 @@ description: "Learn how to prepare your organization for Microsoft 365 Copilot."
 
 # Get started with Microsoft 365 Copilot
 
->[!IMPORTANT]
-> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/), an invite-only preview program for commercial customers. Details are subject to change.
-
 [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is an AI-powered productivity tool that uses large language models (LLMs) and integrates your data with the Microsoft Graph and Microsoft 365 Apps. It works alongside popular Microsoft 365 Apps such as Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills. This article covers the technical requirements to access and configure Microsoft 365 Copilot once you're invited to the Early Access Program.
 
 ## Prerequisites for Microsoft 365 Copilot
@@ -52,11 +49,12 @@ To get started with the implementation process, see [Deployment guide for Micros
 
 - **Microsoft Loop** To use Copilot in Microsoft Loop, you must have Loop enabled for your tenant. For more information on enabling Loop, see [Get started with Microsoft Loop](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c).
 
->[!IMPORTANT]
-> This note only applies to Microsoft 365 Apps for enterprise subscribers. Your users must be on Current Channel to access Copilot. To learn more, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
+- **Microsoft Whiteboard** To use Microsoft 365 Copilot with Microsoft Whiteboard, you must have Whiteboard enabled for your tenant. To learn more about Microsoft Whiteboard, see [Manage access to Microsoft Whiteboard for your organization](/whiteboard/manage-whiteboard-access-organizations).
 
->[!NOTE]
-> We previously stated that support for Monthly Enterprise Channel was available for Microsoft 365 Copilot. As we continue to make frequent product updates and enhancements during the early access program, the time between updates in Monthly Enterprise Channel limits Microsoft's ability to provide an optimum Copilot experience on desktop clients. Going forward, users in the early access program must be on Current Channel to receive Copilot updates when they become available. We expect support in Monthly Enterprise Channel in the future.
+>[!IMPORTANT]
+> Microsoft 365 Copilot will follow Microsoft 365 Apps' standard practice for deployment and updates, being available in all update channels, except for Semi-annual channel. Preview channels include Insiders, Current Channel - Preview and Beta Channel. Production channels include Current Channel and then Monthly Enterprise Channel.
+
+> Once generally available on 11/1, Copilot will be in Current Channel, and starting December 12, on Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and the [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
 ## Manage licenses for Copilot
 
@@ -72,10 +70,10 @@ Microsoft 365 Copilot ensures data security and privacy by adhering to existing 
 
 ### Privacy settings for Microsoft 365 Apps for enterprise
 
-Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
 
 ## More resources
 
-- [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/p/?linkid=2243702)
+- [Microsoft 365 Copilot setup guide](https://setup.microsoft.com/microsoft-365/copilot-setup-guide)
 - [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot)
 - [Microsoft 365 Copilot - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/ct-p/Microsoft365Copilot)

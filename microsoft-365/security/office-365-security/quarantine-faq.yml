@@ -6,7 +6,7 @@ metadata:
   ms.author: chrisda
   author: chrisda
   manager: dansimp
-  ms.date: 9/13/2023
+  ms.date: 11/3/2023
   audience: ITPro
   ms.topic: faq
 
@@ -34,7 +34,7 @@ summary: |
   This article provides frequently asked questions and answers about quarantined email messages for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 
   > [!NOTE]
-  > In Microsoft 365 operated by 21Vianet, quarantine isn't currently available in the Microsoft 365 Defender portal. Quarantine is available only in the classic Exchange admin center (classic EAC).
+  > In Microsoft 365 operated by 21Vianet, quarantine isn't currently available in the Microsoft Defender portal. Quarantine is available only in the classic Exchange admin center (classic EAC).
 
   For questions and answers about anti-spam protection, see [Anti-spam protection FAQ](anti-spam-protection-faq.yml).
 
@@ -78,6 +78,8 @@ sections:
           A user must have a valid account to access their own messages in quarantine. Standalone EOP requires that users are represented as mail users in EOP (manually created or created via directory synchronization). For more information about managing users in standalone EOP environments, see [Manage mail users in standalone EOP](/exchange/standalone-eop/manage-mail-users-in-eop).
 
           Quarantine policies determine whether users can access their quarantined messages, and what they're allowed to do to them. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+
+          If the quarantine policy requires users to request the release of messages or requires admins to release messages, an admin must [approve the release request](quarantine-admin-manage-messages-files.md#approve-or-deny-release-requests-from-users-for-quarantined-email) or [release the message](quarantine-admin-manage-messages-files.md#release-quarantined-email) before the message is available to users.
 
       - question: |
           What messages can end users access in quarantine?
@@ -126,14 +128,14 @@ sections:
       - question: |
           Can I release or report more than one quarantined message at a time?
         answer: |
-          In the Microsoft 365 Defender portal, you can select and release up to 100 messages at a time.
+          In the Microsoft Defender portal, you can select and release up to 100 messages at a time.
 
           Admins can use the [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) and [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) cmdlets in Exchange Online PowerShell or standalone EOP PowerShell to find and release quarantined messages in bulk, and to report false positives in bulk.
 
       - question: |
           Are wildcards supported when searching for quarantined messages? Can I search for quarantined messages for a specific domain?
         answer: |
-          Wildcards aren't supported in the Microsoft 365 Defender portal. For example, when searching for a sender, you need to specify the full email address. But, you can use wildcards in Exchange Online PowerShell or standalone EOP PowerShell.
+          Wildcards aren't supported in the Microsoft Defender portal. For example, when searching for a sender, you need to specify the full email address. But, you can use wildcards in Exchange Online PowerShell or standalone EOP PowerShell.
 
           For example, copy the following PowerShell code into NotePad and save the file as .ps1 in a location that's easy for you to find (for example, C:\Data\QuarantineRelease.ps1).
 
@@ -179,6 +181,17 @@ sections:
 
           > [!TIP]
           > The fastest, most frequent notification schedule that's available is every four hours.
+          >
+          > If you select every four hours, and a message is quarantined _just after_ the last notification generation, the recipient will receive the quarantine notification _slightly more than_ four hours later.
+
+      - question: |
+          Why aren't users receiving notifications about their quarantined messages?
+        answer: |
+          If the quarantine policy that's defined for the [supported quarantine action](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) doesn't have notifications turned on, the quarantine notifications aren't sent.
+
+          For more information, see the last table in [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy) and the individual feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md) to see which default quarantine policies have quarantine notifications turned on.
+
+          Also, the protection policies in [preset security policies](preset-security-policies.md) are always applied _before_ custom protection policies. A user who's defined in the Standard or Strict preset security policy will never get a customized protection policy where the quarantine policy is customized to turn on quarantine notifications. For more information, see [Policy settings in preset security policies](preset-security-policies.md#policy-settings-in-preset-security-policies)
 
       - question: |
           How do I customize quarantine notifications to add a custom logo?
@@ -194,3 +207,8 @@ sections:
           I created a custom quarantine for a specific language, but users aren't seeing it. What's going on?
         answer: |
           A custom quarantine notification for a different language is shown to users only when their account/mailbox language matches the language in the custom quarantine notification.
+
+      - question: |
+          I can't preview a quarantined Microsoft Teams message. What's going on?
+        answer: |
+          If a user deletes the message from the Teams client, the message is gone, so Preview isn't available in quarantine for the deleted message.

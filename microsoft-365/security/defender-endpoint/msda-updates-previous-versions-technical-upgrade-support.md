@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 10/04/2023
+ms.date: 10/31/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -26,6 +26,38 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## July-2023 (Platform: 4.18.23070.1004 | Engine: 1.1.23070.1005)
+ 
+- Security intelligence update version: **1.395.30.0**
+- Released:  **August 9, 2023 (Engine and Platform)**
+- Platform: **4.18.23070.1004**
+- Engine: **1.1.23070.1005**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+ 
+- Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) if scan results fail to retrieve
+- Extended management options for configuring security intelligence updates with Intune, Group Policy, and PowerShell
+- Extended management options for disabling IOAV scans over the network using Intune, Group Policy, and PowerShell. The new setting is `ApplyDisableNetworkScanningToIOAV` for [Set-MpPreference](/powershell/module/defender/set-mppreference).
+- Improved the Unified agent installation process to handle [MsMpEng.exe](troubleshooting-mode-scenarios.md#scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe) debugger extensions, if present
+- Fixed an issue pertaining to showing the exclusions list with PowerShell [Get-MpPreference](/powershell/module/defender/get-mppreference) on systems managed by Intune
+- Fixed warn notifications for two attack surface reduction rules ([Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
+- Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a nonelevated PowerShell console (see [Update-MpSignature](/powershell/module/defender/update-mpsignature))
+- Fixed an issue with [ASR rules deployed via Intune](enable-attack-surface-reduction.md#intune) to display accurately in the Microsoft Defender portal
+- Fixed [tamper protection management](prevent-changes-to-security-settings-with-tamper-protection.md) for customers who have Microsoft 365 E3 or [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
+- Improved installation and uninstallation logic on Server SKUs using the modern, unified agent (see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md))
+- Fixed an issue where `AntivirusSignatureLastUpdated` was incorrect when executing [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
+- Addressed a deadlock caused by Microsoft Defender Antivirus in rare cases
+- Added `ProcessId` to ASR Warn exclusion events (see [ASR rules configuration summary card](attack-surface-reduction-rules-report.md#asr-rules-configuration-summary-card))
+- Fixed an issue where values specified in [ThreatSeverityDefaultAction](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-threatseveritydefaultaction) weren't honored intermittently
+- Improved error reporting in the [modern, unified agent installer](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)
+- Fixed the overriding logic in the ASR rule [Block all Office applications from creating child processes](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes) configured in warn mode
+- Added support for scanning Zstandard (Zstd) containers/archives
+ 
+### Known issues
+ 
+- None
 
 ## May-2023 *UPDATE* (Platform: 4.18.23050.9)
 
@@ -51,7 +83,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
    
 ### What's new  
 
-- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
+- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft Defender portal
 - Fixed a performance issue when building and validating the Microsoft Defender Antivirus cache
 - Improved performance by removing redundant exclusion checks
  

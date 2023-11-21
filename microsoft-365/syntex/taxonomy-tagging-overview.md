@@ -2,7 +2,7 @@
 title: Overview of taxonomy tagging in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
 ms.date: 08/31/2023
@@ -32,6 +32,8 @@ Taxonomy tagging is available for the following file types: .doc, .docx, .pdf, a
 ### Current release notes
 
 - A maximum of three columns in a library can be configured with taxonomy tagging.
+
+- Taxonomy tagging does not work on scanned PDF files at this time. It only works on regular (native) PDF files.
 
 - Time taken to reflect tags getting in the taxonomy column: Minimum: 20 minutes, maximum: 24 hours.
 

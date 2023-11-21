@@ -25,6 +25,7 @@ ms.custom:
   - admindeeplinkMAC
   - business_assist
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 description: "Learn how an admin can set a password expiration policy for your business, school, or nonprofit in Microsoft 365 admin center."
 ---
 
@@ -72,6 +73,10 @@ In Microsoft Entra ID, The last password can't be used again when the user chang
 
 <a name='synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365'></a>
 
+## New and federated domains
+
+Password policies you choose is set for each managed domain in your organization. If you add a new domain or convert a domain from federated to managed, you need to re-enable the organization password policy to update all domains again, otherwise the new or converted domain keeps the default policy.
+
 ## Synchronize user passwords hashes from an on-premises Active Directory to Microsoft Entra ID (Microsoft 365)
 
 This article is for setting the expiration policy for cloud-only users (Microsoft Entra ID). It doesn't apply to hybrid identity users who use password hash sync, pass-through authentication, or on-premises federation like ADFS.
@@ -86,12 +91,12 @@ You can set more password policies and restrictions in Microsoft Entra ID. Check
 
 ## Update password Policy using PowerShell
 
-The Set-MsolPasswordPolicy cmdlet updates the password policy of a specified domain or tenant and indicates the length of time that a password remains valid before it must be changed.
+The Update-MgDomain cmdlet updates the password policy of a specified domain or tenant and indicates the length of time that a password remains valid before it must be changed.
 
-To learn how to update password policy for a specific domain or tenant, see [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy).
+To learn how to update password policy for a specific domain or tenant, see [Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain).
 
 ## Related content
 
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)/
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
 
 [Reset passwords](../add-users/reset-passwords.md) (article)
