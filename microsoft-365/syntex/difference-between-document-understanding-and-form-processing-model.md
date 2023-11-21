@@ -2,7 +2,7 @@
 title: Compare custom models in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: lauris
 ms.date: 06/12/2023
 audience: admin

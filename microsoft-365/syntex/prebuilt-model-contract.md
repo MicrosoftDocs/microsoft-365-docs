@@ -2,9 +2,9 @@
 title: Use a prebuilt model to extract information from contracts in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/05/2023
+ms.date: 08/05/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

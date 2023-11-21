@@ -1,5 +1,5 @@
 ---
-title: Manage your Microsoft Defender for Endpoint subscription settings across client devices (preview!)
+title: Manage your Microsoft Defender for Endpoint subscription settings across client devices
 description: Learn about your options for managing your Defender for Endpoint subscription settings. Choose Plan 1, Plan 2, or mixed mode.
 search.appverid: MET150  
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 08/05/2023
+ms.date: 11/20/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -18,9 +18,9 @@ ms.collection:
 - m365initiative-defender-endpoint
 ---
 
-# Manage Microsoft Defender for Endpoint subscription settings across client devices (preview!)
+# Manage Microsoft Defender for Endpoint subscription settings across client devices
 
-A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, **the ability to manage your subscription settings to accommodate mixed licensing scenarios across client devices is currently in preview**! These capabilities enable you to:
+A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, you can manage your subscription settings to accommodate mixed licensing scenarios across client devices. These capabilities enable you to:
 
 - **Set your tenant to mixed mode and tag devices** to determine which client devices will receive features and capabilities from each plan (we call this option *mixed mode*); **OR**,
 - **Use the features and capabilities from one plan across all your client devices**. 
@@ -32,7 +32,6 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 > [!IMPORTANT]
 > - **Mixed-mode settings apply to client endpoints only**. Tagging server devices won't change their subscription state. All server devices running Windows Server or Linux should have appropriate licenses, such as [Defender for Servers](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). See [Options for onboarding servers](defender-endpoint-plan-1-2.md#options-for-onboarding-servers).
 > - **Make sure to follow the procedures in this article to try mixed-license scenarios in your environment**. Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) doesn't set your tenant to mixed mode. 
-> - Make sure that you have opted in to receive [preview features](preview.md).
 > - **You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2**. 
 > - To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
 >    - Global Admin
@@ -91,11 +90,10 @@ For example, suppose that you want to use a tag called `VIP` for all the devices
 ## Use the features and capabilities from one plan across all your devices
 
 > [!IMPORTANT]
-> - Make sure that you have opted in to receive [preview features](preview.md).
-> - To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
->    - Global Admin
->    - Security Admin
->    - License Admin + MDE Admin  
+> To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
+> - Global Admin
+> - Security Admin
+> - License Admin + MDE Admin  
 
 1. As a Security Admin or Global Admin, go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -111,7 +109,6 @@ For example, suppose that you want to use a tag called `VIP` for all the devices
 4. A **Subscription settings** flyout opens. Choose one plan for all users and devices, and then select **Done**. It can take up to three hours for your changes to be applied.
 
    If you chose to apply Defender for Endpoint Plan 1 to all devices, proceed to [Validate that devices are receiving only Defender for Endpoint Plan 1 capabilities](#validate-that-a-device-is-receiving-only-defender-for-endpoint-plan-1-capabilities).
-
 
 ---
 
