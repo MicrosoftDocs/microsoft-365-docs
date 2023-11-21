@@ -3,8 +3,7 @@ title: Microsoft Defender XDR incidents APIs and the incidents resource type
 description: Learn about the methods and properties of the Incidents resource type in Microsoft Defender XDR
 keywords: incident, incidents, api
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

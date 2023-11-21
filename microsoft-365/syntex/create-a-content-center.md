@@ -2,7 +2,7 @@
 title: Create a content center in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 07/06/2023
 audience: admin

@@ -3,9 +3,8 @@ title: Additional information and important considerations related to Defender E
 ms.reviewer:
 description: Additional information and important considerations related to Defender Experts for XDR
 keywords: XDR, managed response, incident response, managed threat hunting, managed detection and response (MDR) service, readiness assessment, real-time visibility with XDR experts, Additional information related to XDR, benefits of microsoft xdr
-search.product: Windows 10
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-experts
+ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

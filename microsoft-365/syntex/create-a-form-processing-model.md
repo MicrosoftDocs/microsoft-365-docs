@@ -2,7 +2,7 @@
 title: Train a structured or freeform document processing model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 07/13/2023
 audience: admin
