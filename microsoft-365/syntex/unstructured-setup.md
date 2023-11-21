@@ -9,6 +9,7 @@ audience: admin
 ms.topic: conceptual
 ms.custom: setup
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic
