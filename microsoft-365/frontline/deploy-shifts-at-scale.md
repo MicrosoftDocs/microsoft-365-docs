@@ -86,7 +86,7 @@ You can choose to allow schedule owners to create and manage schedule groups or 
 
 Review your settings. If you need to make changes, choose **Back**, and edit the settings that you want. When you're ready, select **Finish setup**.
 
-Setup can take ???. Refresh the Manage frontline apps page to get the latest status. The setup status in the table changes to **Completed** when setup is finished.  
+The setup status in the table changes to **Completed** when setup is finished.  
 
 ## Deploy Shifts to your frontline teams
 
