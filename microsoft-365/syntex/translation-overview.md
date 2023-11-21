@@ -35,7 +35,7 @@ Translation is available for [all supported languages and dialects](/azure/ai-se
 
 ### Current release notes
 
-- Text on an image within the document is not translated.
+- Text on an image within a document is not translated.
 
 - Password-protected files are not translated.
 
