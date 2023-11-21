@@ -38,7 +38,7 @@ If you need to immediately prevent a user's sign-in access, reset their password
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the box next to the user's name, and then select **Reset password**.
 3. Enter a new password, and then select **Reset**.
-4. On the **Reset password** page, choose whether to automatically create the new password or create one yourself. You can also email the new password to yourself. Make sure you don't don't email the password to the former employee.
+4. On the **Reset password** page, choose whether to automatically create the new password or create one yourself. You can also email the new password to yourself. Make sure you don't email the password to the former employee.
 5. Select **Reset password** and then **Close**.
 6. Select the user's name again, and on the **Account** tab, select **Sign out of all sessions**.
 
