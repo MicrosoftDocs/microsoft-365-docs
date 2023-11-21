@@ -69,6 +69,10 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 In your enterprise, you can configure PUA protection from a management console, such as JAMF or Intune, similarly to how other product settings are configured. For more information, see the [Threat type settings](mac-preferences.md#threat-type-settings) section of the [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md) topic.
 
+### Test PUA protection:
+
+You are able to test PUA protection by going to [Potentially unwanted applications (PUA) demonstration](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-potentially-unwanted-applications).
+
 ## Related topics
 
 - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
