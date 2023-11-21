@@ -47,22 +47,23 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 
-- There are multiple fixes and new changes in this release 
-  - Support to restore Threat based on original path
+There are multiple fixes and new changes in this release: 
+
+- Support added to restore threat based on original path using the following command:
+  
  ```bash
  sudo mdatp threat quarantine restore threat-path --path [threat-original-path] --destination-path [destination-folder]
 ```
-
-  - Starting with this release, MDE Linux will no longer be shipping solution for RHEL 6.
-
-    RHEL 6 'Extended end of life support' is poised to end by June 30, 2024 and customers are advised to plan their RHEL upgrades accordingly aligned with guidance from Red Hat. Customers who need to run MDE on RHEL 6 servers can continue to leverage version 101.23082.0011 (does not expire before June 30, 2024) supported on kernel versions 2.6.32-754.49.1.el6.x86_64 or prior.
+  - Starting with this release, Microsoft Defender for Endpoint on Linux will no longer be shipping a solution for RHEL 6.
+  
+    RHEL 6 'Extended end of life support' is poised to end by June 30, 2024 and customers are advised to plan their RHEL upgrades accordingly aligned with guidance from Red Hat. Customers who need to run Defender for Endpoint on RHEL 6 servers can continue to leverage version 101.23082.0011 (does not expire before June 30, 2024) supported on kernel versions 2.6.32-754.49.1.el6.x86_64 or prior.
   - Engine Update to `1.1.23080.2007` and Signatures Ver: `1.395.1560.0`.
   - Streamlined device connectivity experience is now in public preview mode. [public blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-a-streamlined-device-connectivity-experience-for/ba-p/3956236)
-  - Performance improvements & bug fixes
+  - Performance improvements & bug fixes.
 
 **Known issues**
 
-- CPU lock-up seen on kernel version 5.15.0-0.30.20 in ebpf mode, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-support-ebpf?view=o365-worldwide) for details and Mitigation options.
+- CPU lock-up seen on kernel version 5.15.0-0.30.20 in ebpf mode, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/linux-support-ebpf?view=o365-worldwide) for details and Mitigation options.
 
 </details>
 
