@@ -8,6 +8,7 @@ ms.reviewer: shrganguly
 ms.date: 07/27/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 ms.custom: admindeeplinkMAC
 search.appverid: 
 ms.collection: 
