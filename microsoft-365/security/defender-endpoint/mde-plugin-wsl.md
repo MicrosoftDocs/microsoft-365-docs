@@ -22,7 +22,7 @@ search.appverid: MET150
 
 ## Overview
 
-Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint for Windows Subsystem for Linux 2 (WSL) enables Defender for Endpoint to provide more visibility into all running WSL containers, by plugging into the isolated subsystem.
+The Windows Subsystem for Linux (WSL) 2, which replaces the previous version of WSL (supported by Microsoft Defender for Endpoint without a plug-in), provides a Linux environment that is seamlessly integrated with Windows yet isolated using virtualization technology. The Microsoft Defender for Endpoint for Windows Subsystem for Linux 2 (WSL) plug-in enables Defender for Endpoint to provide more visibility into all running WSL containers, by plugging into the isolated subsystem.
 
 ## Known issues and limitations
 
