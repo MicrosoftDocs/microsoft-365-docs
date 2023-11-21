@@ -2,7 +2,7 @@
 title: Create a modern template in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.date: 05/02/2023
