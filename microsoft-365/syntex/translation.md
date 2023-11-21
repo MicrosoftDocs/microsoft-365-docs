@@ -1,5 +1,5 @@
 ---
-title: Translate documents in Microsoft Syntex
+title: Translate a document in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,12 +17,12 @@ ms.localizationpriority:  medium
 description: Learn how to translate documents using Microsoft Syntex.
 ---
 
-# Translate documents in Microsoft Syntex
+# Translate a document in Microsoft Syntex
 
 > [!NOTE]
 > This article is currently in development.
 
-Translation in Microsoft Syntex lets you create translated copies of documents manually and on demand or set a rule to create the copies automatically when documents are created or changed.​
+Translation in Microsoft Syntex lets you create translated copies of documents manually and on demand or set a rule to create a translated copy automatically when a document is created or modified.​
 
 ## Translate a document on demand
 
