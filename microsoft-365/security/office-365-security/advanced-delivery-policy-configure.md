@@ -138,11 +138,7 @@ If your MX record doesn't point to Microsoft 365, the IP address in the `Authent
 >
 > Adding phishing simulation URLs to the **Do not rewrite the following URLs in email** section in Safe Links policies might result in unwanted alerts for URL clicks. Phishing simulation URLs in email messages are automatically allowed both during mail flow and at time of click.
 >
-> With Intra org protection being released, if customers switched on intra-org protection for phish/spam verdict, they will notice a regression in SecOps Mailbox Advanced Delivery behaviour. The emails which are  marked as phish/spam intra-org will be quarantined, because the SecOps Mailbox override today is not configured for Intra-org.
-> 
-> For Phishing Simulation emails, if the messages are coming from Exchange Hybrid and are authenticated as internal, it's possible that they'll be seen as Intra-org and the override will not work. So, Look for DIR:INT in the X-Forefront-Antispam-Report header.
-> 
->Engineering is currently working to fix the behaviour to make SecOps Mailbox override all verdicts (including malware) for both External and Intra-org emails
+> SecOps Mailbox Advanced Delivery Policy does not currently support intra-organizational messages (DIR:INT). Such messages will be quarantined,so Add the SecOps Mailbox as an exception in the appropriate Antispam policies as a workaround. This note will be removed once intra-organizational messages support is enabled. 
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
