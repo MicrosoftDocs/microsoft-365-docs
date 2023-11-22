@@ -14,7 +14,7 @@ ms.collection:
 - mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 11/06/2023
+ms.date: 11/21/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
