@@ -28,7 +28,7 @@ ms.date: 09/23/2022
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -55,7 +55,7 @@ If you're a Microsoft Defender for Endpoint customer, you can apply for Endpoint
 
 ## Receive Endpoint Attack notifications
 Endpoint Attack Notifications are alerts that have been hand crafted by Microsoft's managed hunting service based on suspicious activity in your environment. They can be viewed through several mediums:
-- The alerts queue in the Microsoft 365 Defender portal
+- The alerts queue in the Microsoft Defender portal
 - Using the [API](../../security/defender-endpoint/get-alerts.md)
 - [DeviceAlertEvents](../../security/defender-endpoint/advanced-hunting-devicealertevents-table.md) table in Advanced hunting
 - Your email if you [configure an email notifications](../../security/defender-endpoint/configure-vulnerability-email-notifications.md) rule

@@ -3,7 +3,7 @@ title: Manage who can create Microsoft 365 Groups
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: rahulnayak
-ms.date: 07/28/2023
+ms.date: 11/22/2023
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
@@ -12,6 +12,7 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.custom:
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.collection: 
 - highpri
 - M365-subscription-management
@@ -87,13 +88,9 @@ For detailed instructions, see [Create, edit, or delete a security group in the 
 
 ## Step 2: Run PowerShell commands
 
-You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
+You will use the [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation) **Beta** module to change the group-level guest access setting:
 
-- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD module](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) and follow the instructions to install the public preview release.
-
-- If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.
-
-- If you have already installed the preview version, run `Update-Module AzureADPreview` to make sure it's the latest version of this module.
+- If you have already installed the Beta version, run `Update-Module Microsoft.Graph.Beta` to make sure it's the latest version of this module.
 
 Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
@@ -112,32 +109,54 @@ Run the script by typing:
 and [sign in with your administrator account](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) when prompted.
 
 ```PowerShell
-$GroupName = "<GroupName>"
-$AllowGroupCreation = $False
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Groups
 
-Connect-AzureAD
+Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Group.Read.All"
 
-$settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+$GroupName = ""
+$AllowGroupCreation = "False"
+
+$settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+
 if(!$settingsObjectID)
 {
-    $template = Get-AzureADDirectorySettingTemplate | Where-object {$_.displayname -eq "group.unified"}
-    $settingsCopy = $template.CreateDirectorySetting()
-    New-AzureADDirectorySetting -DirectorySetting $settingsCopy
-    $settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+    $params = @{
+	  templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
+	  values = @(
+		    @{
+			       name = "EnableMSStandardBlockedWords"
+			       value = "true"
+		     }
+	 	     )
+	     }
+	
+    New-MgBetaDirectorySetting -BodyParameter $params
+	
+    $settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).Id
 }
 
-$settingsCopy = Get-AzureADDirectorySetting -Id $settingsObjectID
-$settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
+ 
+$groupId = (Get-MgBetaGroup | Where-object {$_.displayname -eq $GroupName}).Id
 
-if($GroupName)
-{
-  $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
-} else {
-$settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
+$params = @{
+	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
+	values = @(
+		@{
+			name = "EnableGroupCreation"
+			value = $AllowGroupCreation
+		}
+		@{
+			name = "GroupCreationAllowedGroupId"
+			value = $groupId
+		}
+	)
 }
-Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCopy
 
-(Get-AzureADDirectorySetting -Id $settingsObjectID).Values
+Update-MgBetaDirectorySetting -DirectorySettingId $settingsObjectID -BodyParameter $params
+
+(Get-MgBetaDirectorySetting -DirectorySettingId $settingsObjectID).Values
+
 ```
 
 The last line of the script will display the updated settings:

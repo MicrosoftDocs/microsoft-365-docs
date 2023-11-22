@@ -25,7 +25,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Investigate malicious email that was delivered in Microsoft 365
@@ -45,7 +45,7 @@ Make sure that the following requirements are met:
 
 - [Audit logging](/purview/audit-log-enable-disable) is turned on for your organization (it's on by default).
 
-- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in **Email & Collaboration permissions** the Microsoft 365 Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md). For some actions, you must also have the Preview role assigned.
+- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in **Email & Collaboration permissions** the Microsoft Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md). For some actions, you must also have the Preview role assigned.
 
 ### Preview role permissions
 
@@ -58,11 +58,11 @@ To perform certain actions, such as viewing message headers or downloading email
 |Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <br/><br/> Security Administrator <br/><br/> Security Reader <br/><br/> Preview|Yes|
 
 > [!NOTE]
-> **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in **Email & Collaboration permissions** the Microsoft 365 Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+> **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in **Email & Collaboration permissions** the Microsoft Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
 >
-> The Global Administrator role is assigned the Microsoft 365 admin center at <https://admin.microsoft.com>. The Security Administrator and Security Reader roles are assigned in Microsoft 365 Defender portal at <https://security.microsoft.com/emailandcollabpermissions>.
+> The Global Administrator role is assigned the Microsoft 365 admin center at <https://admin.microsoft.com>. The Security Administrator and Security Reader roles are assigned in Microsoft Defender portal at <https://security.microsoft.com/emailandcollabpermissions>.
 
-We understand previewing and downloading email are sensitive activities, so auditing is enabled for these activities. Once an admin performs these activities on email, audit log entries are generated. To see these entries, go to the **Audit** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/auditlogsearch>. Filter on the admin name in the **Users** box. The filtered results will show activity for **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
+We understand previewing and downloading email are sensitive activities, so auditing is enabled for these activities. Once an admin performs these activities on email, audit log entries are generated. To see these entries, go to the **Audit** page in the Microsoft Defender portal at <https://security.microsoft.com/auditlogsearch>. Filter on the admin name in the **Users** box. The filtered results will show activity for **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
 
 ## Find suspicious email that was delivered
 
@@ -71,7 +71,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 > [!NOTE]
 > Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto purge (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** . To go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** . To go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
    On the **Explorer** page, the **Additional actions** column shows admins the outcome of processing an email. The **Additional actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
 
