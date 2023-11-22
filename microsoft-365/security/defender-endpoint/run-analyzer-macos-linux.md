@@ -49,10 +49,10 @@ If using a terminal download using the command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: 'BF29775CA8A032B071FDF41A5F08FD62432DE54CE5885DD3DF6B5EC27D5577D0'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '9743C02442B2E0C3396E7E659AB7F8A0B925AD388E10970D8E427B03CE3BD7F8'
 
     ```console
-    echo 'BF29775CA8A032B071FDF41A5F08FD62432DE54CE5885DD3DF6B5EC27D5577D0 XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '9743C02442B2E0C3396E7E659AB7F8A0B925AD388E10970D8E427B03CE3BD7F8 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
@@ -133,7 +133,7 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo '3B8A5623AAEDE8183F816D1B13BBB3B2B0630B3B9A9E40AFA936722D83B8B54D XMDEClientAnalyzer.zip' | sha256sum -c
+    echo 'B2B0452416AAA308668693601C0A540D7BAB1F13D1E42503B7292B00DE18DAFE XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
