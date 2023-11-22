@@ -13,7 +13,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about privacy, security, and compliance in Microsoft Syntex.
 ---
 
