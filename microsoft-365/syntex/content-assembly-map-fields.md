@@ -8,6 +8,7 @@ ms.reviewer: shrganguly
 ms.date: 03/14/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid:
 ms.collection:
     - enabler-strategic
