@@ -1,5 +1,5 @@
 ---
-title: Privacy and security in Microsoft Syntex
+title: Privacy, security, and compliance in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,15 +14,18 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about privacy and security in Microsoft Syntex.
+description: Learn about privacy, security, and compliance in Microsoft Syntex.
 ---
 
-# Privacy and security in Microsoft Syntex
+# Privacy, security, and compliance in Microsoft Syntex
 
-> [!NOTE]
-> This article is currently in development.
+Microsoft is transparent about the specific policies, operational practices, and technologies that help you ensure the privacy, security, and compliance of your data across Microsoft Syntex.
 
-Microsoft is transparent about the specific policies, operational practices, and technologies that help you ensure the privacy and security of your data across Microsoft Syntex.
+- Microsoft respects the privacy and ownership of data you use to train and process models in Syntex.
+
+- None of your organization's data is used or transferred by Microsoft to train AI models, large-language models, or any other models.
+
+- Your data remains securely within your organization’s tenant.
 
 - You control your data.
 - We're transparent about where data is located and how it's used.
@@ -47,3 +50,26 @@ All data within Syntex is stored within the customer tenant for any given servic
 
 Note
 Microsoft respects the privacy and ownership of data you use to train and process models in Syntex. None of your organization's data is used or transferred by Microsoft to train AI models, large-language models, or any other models. Your data remains securely within your organization’s tenant. For more information, see Microsoft data protection and privacy.
+
+## Security
+
+Microsoft Syntex works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—like role-based access, identity and app management, and others—apply to Microsoft Syntex.
+
+The Viva apps can also use specific settings and policies of the apps that Viva interacts with. For example, while all users can access Viva Learning in Microsoft Teams by default, you can use app permissions policies in Teams to allow or block access for specific users.
+
+## Compliance
+
+Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data. Microsoft Syntex is also covered under the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms) and [Data Protection Agreement](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?year=2021#:%7E:text=Microsoft%20Products%20and%20Services%20Data%20Protection%20Addendum%20%28DPA%29,to%20the%20Product%20Terms%20site%20%28and%20formerly%20OST%29) (DPA). Learn more on the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+
+For more detailed information, see the following resources:
+
+- **Microsoft 365** – Plan for security and compliance
+
+- **Microsoft SharePoint** – Plan compliance requirements for SharePoint and OneDrive
+
+- **Microsoft Graph** – Use the Microsoft Graph compliance and privacy APIs
+
+- **Microsoft Entra ID** – Microsoft Entra security baseline for Microsoft Entra ID
+
+- **Azure** – Azure, Dynamics 365, Microsoft 365, and Power Platform compliance offerings
+
