@@ -27,11 +27,6 @@ Microsoft is transparent about the specific policies, operational practices, and
 
 - Your data remains securely within your organization’s tenant.
 
-- You control your data.
-- We're transparent about where data is located and how it's used.
-- We secure data at rest and in transit.
-- We defend your data.
-
 ## Privacy
 
 Privacy is built into all Microsoft Syntex experiences. Microsoft Syntex services adhere to the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and follow Microsoft's compliance with [General Data Protection Regulation](/compliance/regulatory/gdpr) and the [Microsoft EU Data Boundary](https://www.microsoft.com/trust-center/privacy/european-data-boundary-eudb).
@@ -53,13 +48,13 @@ Microsoft respects the privacy and ownership of data you use to train and proces
 
 ## Security
 
-Microsoft Syntex works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—like role-based access, identity and app management, and others—apply to Microsoft Syntex.
-
-The Viva apps can also use specific settings and policies of the apps that Viva interacts with. For example, while all users can access Viva Learning in Microsoft Teams by default, you can use app permissions policies in Teams to allow or block access for specific users.
+Microsoft Syntex works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—such role-based access, identity and app management, and others—apply to Microsoft Syntex.
 
 ## Compliance
 
-Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data. Microsoft Syntex is also covered under the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms) and [Data Protection Agreement](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?year=2021#:%7E:text=Microsoft%20Products%20and%20Services%20Data%20Protection%20Addendum%20%28DPA%29,to%20the%20Product%20Terms%20site%20%28and%20formerly%20OST%29) (DPA). Learn more on the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data.
+
+Microsoft Syntex is also covered under the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms) and [Data Protection Agreement](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?year=2021#:%7E:text=Microsoft%20Products%20and%20Services%20Data%20Protection%20Addendum%20%28DPA%29,to%20the%20Product%20Terms%20site%20%28and%20formerly%20OST%29) (DPA). Learn more on the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
 
 For more detailed information, see the following resources:
 
