@@ -13,7 +13,7 @@ ms.collection:
 - m365-security
 - tier2
 audience: ITPro
-ms.date: 11/16/2023
+ms.date: 11/21/2023
 search.appverid: MET150
 
 ---
@@ -22,7 +22,7 @@ search.appverid: MET150
 
 ## Overview
 
-Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint for Windows Subsystem for Linux 2 (WSL) enables Defender for Endpoint to provide more visibility into all running WSL containers, by plugging into the isolated subsystem.
+The Windows Subsystem for Linux (WSL) 2, which replaces the previous version of WSL (supported by Microsoft Defender for Endpoint without a plug-in), provides a Linux environment that is seamlessly integrated with Windows yet isolated using virtualization technology. The Microsoft Defender for Endpoint for Windows Subsystem for Linux 2 (WSL) plug-in enables Defender for Endpoint to provide more visibility into all running WSL containers, by plugging into the isolated subsystem.
 
 ## Known issues and limitations
 
@@ -33,6 +33,8 @@ Be aware of the following before you start:
 2.	As it takes a few minutes for the plug-in to fully instantiate and up to 30 minutes for a WSL2 instance to onboard itself, short-lived WSL container instances might result in the WSL2 instance not showing up in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Once a (any) distribution has been running long enough (at least 30 minutes), it does show up.
 
 3.	If you're using a proxy in your (test) environment, make sure that the plug-in is set up to use it correctly. WSL is typically not automatically configured to use a proxy. For more information, see the section, [Setting a proxy for Defender running in WSL](#setting-a-proxy-for-defender-running-in-wsl).
+
+4.	The use of a custom kernel in combination with the plug-in is not supported. When you attempt to launch WSL with the plugin installed, you will encounter the error *A fatal error was returned by plugin 'DefenderforEndpointPlug-in'. Error message: 'Custom Kernel/Configuration not supported.'*. 
 
 ## Software prerequisites
 
