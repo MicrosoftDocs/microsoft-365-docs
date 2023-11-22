@@ -86,7 +86,7 @@ Before you set up email forwarding, note the following:
 ## Related content
 
 [Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)\
-[Forward emails that are sent to a shared mailbox](/email/configure-a-shared-mailbox?view=o365-worldwide#forward-emails-that-are-sent-to-a-shared-mailbox) (article)\
+[Forward emails that are sent to a shared mailbox](/microsoft-365/admin/email/configure-a-shared-mailbox#forward-emails-that-are-sent-to-a-shared-mailbox) (article)\
 [Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)\
 [Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding) (article)

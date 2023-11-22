@@ -21,7 +21,7 @@ ms.service: microsoft-365-security
 search.appverid: met150
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # What is Threat Explorer and Real-time detections?
@@ -32,7 +32,7 @@ This article explains the difference between Threat Explorer and real-time detec
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** (also known as **Threat Explorer**) or **Real-time detections** to detect and remediate threats.
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** *or* **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** *or* **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
 
 With these tools, you can:
 
@@ -158,7 +158,7 @@ To view and use Explorer *or* Real-time detections, you need the following permi
 
 To learn more about roles and permissions, see the following articles:
 
-- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
+- [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md)
 - [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 
 ## More information

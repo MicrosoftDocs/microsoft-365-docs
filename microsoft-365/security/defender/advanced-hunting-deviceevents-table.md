@@ -4,8 +4,8 @@ description: Learn about antivirus, firewall, and other event types in the misce
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -28,13 +28,13 @@ ms.date: 02/16/2021
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Defender for Endpoint
 
 The miscellaneous device events or `DeviceEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Microsoft Defender Antivirus and exploit protection. Use this reference to construct queries that return information from this table.
 
 > [!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft 365 Defender.
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft Defender XDR.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -91,7 +91,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessVersionInfoOriginalFileName` | `string` | Original file name from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessVersionInfoFileDescription` | `string` | Description from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessParentId` | `int` | Process ID (PID) of the parent process that spawned the process responsible for the event |
-| `InitiatingProcessParentFileName` | `string` | Name of the parent process that spawned the process responsible for the event |
+| `InitiatingProcessParentFileName` | `string` | Name or full path of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentCreationTime` | `datetime` | Date and time when the parent of the process responsible for the event was started |
 | `InitiatingProcessLogonId` | `string` | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts |
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |

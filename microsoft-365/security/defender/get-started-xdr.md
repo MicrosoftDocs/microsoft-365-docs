@@ -3,9 +3,8 @@ title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
 description: Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there's a critical incident
 keywords: XDR, protected assets, defender experts for xdr, set up microsoft xdr, managed threat hunting, managed detection and response (MDR) service, service delivery manager, readiness, threat hunting and analysis, actions needed xdr
-search.product: Windows 10
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-experts
+ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -26,11 +25,11 @@ ms.date: 11/10/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft Defender XDR](microsoft-365-defender.md)
 
 Once the Defender Experts for XDR team is ready to onboard your organization, you'll receive a welcome email to continue the setup and get you started.
 
-Select the link in the welcome email to directly launch the Defender Experts settings step-by-step guide in the Microsoft 365 Defender portal. You can also open this guide by going to **Settings** > **Defender Experts** and selecting **Get started**.
+Select the link in the welcome email to directly launch the Defender Experts settings step-by-step guide in the Microsoft Defender portal. You can also open this guide by going to **Settings** > **Defender Experts** and selecting **Get started**.
 
 :::image type="content" source="../../media/xdr/security-team-boost.png" alt-text="Screenshot of the Get started page in Defender for Experts XDR settings step-by-step guide." lightbox="../../media/xdr/security-team-boost.png":::
 
@@ -87,9 +86,9 @@ To edit or update your notification contacts after the initial setup, go to **Se
 
 ## Prepare your environment for the Defender Experts service
 
-Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to let you run a **readiness assessment** and help you get the most out of your Microsoft security products.
+Apart from onboarding service delivery, our expertise on the Microsoft Defender XDR product suite enables Defender Experts for XDR to let you run a **readiness assessment** and help you get the most out of your Microsoft security products.
 
-The readiness assessment is based on the number of protected devices and identities in your environment, and Defender Experts' policy recommendations. To view the assessment, in your Microsoft 365 Defender portal, go to **Settings** > **Defender Experts** then select **Service status**.
+The readiness assessment is based on the number of protected devices and identities in your environment, and Defender Experts' policy recommendations. To view the assessment, in your Microsoft Defender portal, go to **Settings** > **Defender Experts** then select **Service status**.
 
 :::image type="content" source="../../media/xdr/readiness-assessment-xdr.png" alt-text="Screenshot of readiness assessment environment." lightbox="../../media/xdr/readiness-assessment-xdr.png":::
 

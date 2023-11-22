@@ -2,7 +2,7 @@
 title: Overview of content assembly in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.date: 02/02/2023

@@ -28,7 +28,7 @@ ms.date: 05/15/2021
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -86,7 +86,7 @@ Phishing websites impersonate trustworthy websites for obtaining your personal o
 
 ## Malicious site detected
 
-Microsoft Defender for Endpoint protects you against phishing or other web-based attacks. If a malicious site is detected, the connection is blocked and an alert is sent to the organization's Microsoft 365 Defender portal. The alert includes the domain name of the connection, remote IP address and the device details.
+Microsoft Defender for Endpoint protects you against phishing or other web-based attacks. If a malicious site is detected, the connection is blocked and an alert is sent to the organization's Microsoft Defender portal. The alert includes the domain name of the connection, remote IP address and the device details.
 
 In addition, a notification is shown on the iOS device. Tapping on the notification opens the following screen for the user to review the details.
 
