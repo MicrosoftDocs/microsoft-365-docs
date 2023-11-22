@@ -27,11 +27,11 @@ This feature lets you translate files of different types either manually or auto
 
 ### Supported file types
 
-Translation is available for the following file types: .doc, .docx, .pdf, .xls, .xlsx, .rtf, and .txt.
+Translation in Syntex is available for the following file types: .doc, .docx, .pdf, .xls, .xlsx, .rtf, and .txt.
 
 ### Supported languages
 
-Translation is available for [all supported languages and dialects](/azure/ai-services/translator/language-support?source=recommendations#translation).
+Translation in Syntex is available for [all supported languages and dialects](/azure/ai-services/translator/language-support?source=recommendations#translation).
 
 ### Current release notes
 

@@ -37,21 +37,18 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 ## Manage sites
 
-By default, translation is turned on for libraries in all SharePoint sites. Follow these steps to manage which SharePoint sites users can use to create custom models to process files.
+Follow these steps to manage on which SharePoint sites users can use translation.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
 2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
 
-3. On the **Manage Microsoft Syntex** page, select **Translation**.
+3. On the **Microsoft Syntex** panel, select **Translation**.
 
-4. On the **Translation** page:
+4. On the **Translation** panel:
 
-    a. Choose which site or sites this service should be enabled for.
+    a. By default, translation is turned on for libraries in all SharePoint sites.  Choose which site or sites this service should be enabled for.
 
-    > [!NOTE]
-    > Disabling a site after a model is made available to process files on that site will not disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created either on that site or in a content center.
-
-    b. To restrict user access to this service, select **No SharePoint libraries** or **Libraries in selected SharePoint sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
+    b. To restrict user access to this service, under **Sites where files can be translated**, select **Edit**. Select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
