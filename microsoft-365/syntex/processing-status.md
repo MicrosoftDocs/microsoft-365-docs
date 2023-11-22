@@ -38,5 +38,5 @@ The **Processing details** column provides more information about the processing
 
 When a new model is applied to a library, the **Processing status** and the **Processing details** columns are automatically added. However, the columns won't be automatically added to libraries where a model has already been applied. You'll need to apply the model again to add the columns.
 
-> [!TIP]
+> [!NOTE]
 > Libraries that run a document understanding model have a column named **Corrected**. The **Corrected** column is set to true when a user has manually changed the content type of a processed file. This excludes the file from future reprocessing.
