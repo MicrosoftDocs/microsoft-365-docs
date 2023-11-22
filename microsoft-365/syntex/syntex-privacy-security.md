@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 12/01/2023
+ms.date: 11/22/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -21,7 +21,7 @@ description: Learn about privacy, security, and compliance in Microsoft Syntex.
 
 Microsoft is transparent about the specific policies, operational practices, and technologies that help you ensure the privacy, security, and compliance of your data across Microsoft Syntex.
 
-- Microsoft respects the privacy and ownership of data you use to train and process models in Syntex.
+- Microsoft respects the privacy and ownership of data you use to train and process models in Microsoft Syntex.
 
 - None of your organization's data is used or transferred by Microsoft to train AI models, large-language models, or any other models.
 
@@ -41,10 +41,7 @@ Microsoft Syntex supports compliance with [General Data Protection Regulation](/
 
 Data residency refers to the geographic location where data is stored at rest. The way that data is transferred and stored in Microsoft Syntex is defined in the [Microsoft Products and Services Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) (DPA).
 
-All data within Syntex is stored within the customer tenant for any given service and follows the standard Microsoft 365 data storage guidelines by available geography.
-
-Note
-Microsoft respects the privacy and ownership of data you use to train and process models in Syntex. None of your organization's data is used or transferred by Microsoft to train AI models, large-language models, or any other models. Your data remains securely within your organization’s tenant. For more information, see Microsoft data protection and privacy.
+All data within Microsoft Syntex is stored within the customer tenant for any given service and follows the standard Microsoft 365 data storage guidelines by available geography.
 
 ## Security
 
@@ -58,13 +55,13 @@ Microsoft Syntex is also covered under the [Microsoft Product Terms](https://www
 
 For more detailed information, see the following resources:
 
-- **Microsoft 365** – Plan for security and compliance
+- **Microsoft 365** – [Plan for security and compliance](/purview/plan-for-security-and-compliance)
 
-- **Microsoft SharePoint** – Plan compliance requirements for SharePoint and OneDrive
+- **Microsoft SharePoint** – [Plan compliance requirements for SharePoint and OneDrive](/SharePoint/compliant-environment)
 
-- **Microsoft Graph** – Use the Microsoft Graph compliance and privacy APIs
+- **Microsoft Graph** – [Use the Microsoft Graph compliance and privacy APIs](/graph/api/resources/complianceapioverview?view=graph-rest-1.0)
 
-- **Microsoft Entra ID** – Microsoft Entra security baseline for Microsoft Entra ID
+- **Microsoft Entra ID** – [Microsoft Entra security baseline for Microsoft Entra ID](/security/benchmark/azure/baselines/aad-security-baseline)
 
-- **Azure** – Azure, Dynamics 365, Microsoft 365, and Power Platform compliance offerings
+- **Azure** – [Azure, Dynamics 365, Microsoft 365, and Power Platform compliance offerings](/azure/compliance/offerings/)
 
