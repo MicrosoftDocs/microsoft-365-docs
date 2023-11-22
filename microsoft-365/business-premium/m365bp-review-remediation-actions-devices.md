@@ -1,5 +1,5 @@
 ---
-title: Review remediation actions in Microsoft 365 Defender
+title: Review remediation actions in Microsoft Defender XDR
 description: See how to view remediations that were taken automatically or that are awaiting approval in the Action center.
 search.appverid: MET150
 author: denisebmsft
@@ -19,7 +19,7 @@ ms.collection:
 - tier1
 ---
 
-# Review remediation actions in the Microsoft 365 Defender portal
+# Review remediation actions in the Microsoft Defender portal
 
 Okay, you've discovered a security breach, but what do you do? It depends on the nature of it.
 
@@ -37,7 +37,7 @@ Examples of remediation actions include sending a file to quarantine, stopping a
 
 ## How to use your Action center
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
 2. In the navigation pane, choose **Action center**.
 

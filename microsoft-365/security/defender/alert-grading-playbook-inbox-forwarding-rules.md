@@ -2,8 +2,7 @@
 title: Alert classification for suspicious inbox forwarding rules
 description: Alert classification for suspicious inbox forwarding rules to review the alerts and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, alert classification, alert grading, classify alert
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -30,7 +29,7 @@ ms.date: 04/05/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Threat actors can use compromised user accounts for several malicious purposes including reading emails in a user's inbox, creating inbox rules to forward emails to external accounts, sending phishing mails, among others. Malicious inbox rules are widely common during business email compromise (BEC) and phishing campaigns, and it important to monitor them consistently.
 

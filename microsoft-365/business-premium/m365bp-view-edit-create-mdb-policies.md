@@ -20,12 +20,12 @@ ms.collection:
 
 # View and edit device protection policies
 
-In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies in the Microsoft 365 Defender portal or in the Microsoft Intune admin center. To help simplify setup and configuration, there are pre-configured policies that help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit existing policies, or create your own policies.
+In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies in the Microsoft Defender portal or in the Microsoft Intune admin center. To help simplify setup and configuration, there are pre-configured policies that help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit existing policies, or create your own policies.
 
 **This guidance describes how to**:
 
 - Get an overview of your default policies
-- Work with device policies in either the Microsoft 365 Defender portal or the Microsoft Intune admin center.
+- Work with device policies in either the Microsoft Defender portal or the Microsoft Intune admin center.
 
 ## About the default device protection policies
 
@@ -41,17 +41,21 @@ Additional policies include:
 - **Controlled folder access**, which allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware protection. For more information, see [Set up or edit your controlled folder access policy in Microsoft Defender for Business](../security/defender-business/mdb-controlled-folder-access.md).
 - **Attack surface reduction rules** that help reduce the places and ways your business might be vulnerable to cyberthreats and attacks. For more information, see [Enable your attack surface reduction rules in Microsoft Defender for Business](../security/defender-business/mdb-asr.md).
 
-These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft 365 Defender portal or in the Microsoft Intune admin center.
+These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft Defender portal or in the Microsoft Intune admin center.
 
-## Working with device policies in the Microsoft 365 Defender portal
+<a name='working-with-device-policies-in-the-microsoft-365-defender-portal'></a>
 
-The following details apply to working with your policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+## Working with device policies in the Microsoft Defender portal
 
-:::image type="content" source="media/m365defender.png" alt-text="Screenshot of the Microsoft 365 Defender portal." lightbox="media/m365defender.png":::
+The following details apply to working with your policies in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
-### View existing device protection policies in Microsoft 365 Defender
+:::image type="content" source="media/m365defender.png" alt-text="Screenshot of the Microsoft Defender portal." lightbox="media/m365defender.png":::
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
+<a name='view-existing-device-protection-policies-in-microsoft-365-defender'></a>
+
+### View existing device protection policies in Microsoft Defender XDR
+
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
     :::image type="content" source="../media/mdb-deviceconfiguration.png" lightbox="../media/mdb-deviceconfiguration.png" alt-text="The Device configuration page.":::
 
@@ -61,9 +65,11 @@ The following details apply to working with your policies in the Microsoft 365 D
 
    :::image type="content" source="../media/mdb-deviceconfig-selectedpolicy.png" lightbox="../media/mdb-deviceconfig-selectedpolicy.png" alt-text="Screenshot of a policy selected in the Device configuration page.":::
 
-### Edit an existing device protection policy in Microsoft 365 Defender
+<a name='edit-an-existing-device-protection-policy-in-microsoft-365-defender'></a>
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
+### Edit an existing device protection policy in Microsoft Defender XDR
+
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
 2. Select an operating system tab (for example, **Windows clients**), and then review the list of policies under the **Next-generation protection** and **Firewall** categories.
 
@@ -92,9 +98,11 @@ The following details apply to working with your policies in the Microsoft 365 D
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Update policy**.
 
-### Create a new device protection policy in Microsoft 365 Defender
+<a name='create-a-new-device-protection-policy-in-microsoft-365-defender'></a>
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
+### Create a new device protection policy in Microsoft Defender XDR
+
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
 2. Select an operating system tab (for example, **Windows clients**), and then review the list of **Next-generation protection** policies.
 

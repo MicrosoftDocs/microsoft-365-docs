@@ -2,6 +2,331 @@
 
 
 
+## Week of November 13, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/13/2023 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365-whats-new?view=o365-worldwide) | modified |
+| 11/13/2023 | [Get your environment ready for Topics](/microsoft-365/topics/topic-experiences-get-ready?view=o365-worldwide) | modified |
+| 11/14/2023 | Isolated team for a top-secret project of the Contoso Corporation | removed |
+| 11/14/2023 | [Request FastTrack assistance for Microsoft 365](/microsoft-365/enterprise/request-fasttrack-assistance-microsoft-365?view=o365-worldwide) | added |
+| 11/14/2023 | [Deploy your frontline operational hierarchy](/microsoft-365/frontline/deploy-frontline-operational-hierarchy?view=o365-worldwide) | added |
+| 11/14/2023 | [Frequently asked questions about Microsoft 365 Backup (Preview)](/microsoft-365/syntex/backup/backup-faq) | added |
+| 11/14/2023 | [Preview limitations in Microsoft 365 Backup (Preview)](/microsoft-365/syntex/backup/backup-limitations) | added |
+| 11/14/2023 | [Offboarding in Microsoft 365 Backup (Preview)](/microsoft-365/syntex/backup/backup-offboarding) | added |
+| 11/14/2023 | [Overview of Microsoft 365 Backup (Preview)](/microsoft-365/syntex/backup/backup-overview) | added |
+| 11/14/2023 | [Microsoft 365 Backup public preview terms and conditions](/microsoft-365/syntex/backup/backup-preview-terms) | added |
+| 11/14/2023 | [Pricing for Microsoft 365 Backup (Preview)](/microsoft-365/syntex/backup/backup-pricing) | added |
+| 11/14/2023 | [Restore data in Microsoft 365 Backup (Preview)](/microsoft-365/syntex/backup/backup-restore-data) | added |
+| 11/14/2023 | [Set up Microsoft 365 Backup (Preview)](/microsoft-365/syntex/backup/backup-setup) | added |
+| 11/14/2023 | [View and edit backup policies in Microsoft 365 Backup (Preview)](/microsoft-365/syntex/backup/backup-view-edit-policies) | added |
+| 11/14/2023 | [Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview](/microsoft-365/security/office-365-security/scc-permissions?view=o365-worldwide) | modified |
+| 11/14/2023 | [Compliance features in Microsoft 365 Archive (Preview)](/microsoft-365/syntex/archive/archive-compliance) | modified |
+| 11/14/2023 | [End user experience in Microsoft 365 Archive (Preview)](/microsoft-365/syntex/archive/archive-end-user) | modified |
+| 11/14/2023 | [Manage Microsoft 365 Archive (Preview)](/microsoft-365/syntex/archive/archive-manage) | modified |
+| 11/14/2023 | [Overview of Microsoft 365 Archive (Preview)](/microsoft-365/syntex/archive/archive-overview) | modified |
+| 11/14/2023 | [Microsoft 365 Archive public preview terms and conditions](/microsoft-365/syntex/archive/archive-preview-terms) | modified |
+| 11/14/2023 | [Pricing model for Microsoft 365 Archive (Preview)](/microsoft-365/syntex/archive/archive-pricing) | modified |
+| 11/14/2023 | [Set up Microsoft 365 Archive (Preview)](/microsoft-365/syntex/archive/archive-setup) | modified |
+| 11/14/2023 | [Archive states in Microsoft 365 Archive (Preview)](/microsoft-365/syntex/archive/archive-states) | modified |
+| 11/14/2023 | [Microsoft Syntex documentation # < 60 chars](/microsoft-365/syntex/index) | modified |
+| 11/14/2023 | [Overview of Microsoft Syntex](/microsoft-365/syntex/syntex-overview) | modified |
+| 11/14/2023 | [Overview of Microsoft Syntex eSignature](/microsoft-365/syntex/esignature-overview) | added |
+| 11/14/2023 | [Review and sign a signature request using Microsoft Syntex eSignature](/microsoft-365/syntex/esignature-review-sign-requests) | added |
+| 11/14/2023 | [Create a signature request using Microsoft Syntex eSignature](/microsoft-365/syntex/esignature-send-requests) | modified |
+| 11/14/2023 | [Set up Microsoft Syntex eSignature](/microsoft-365/syntex/esignature-setup) | modified |
+| 11/14/2023 | [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services) | modified |
+| 11/14/2023 | [Investigate data loss alerts with Microsoft 365 Defender](/microsoft-365/security/defender/dlp-investigate-alerts-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Vulnerability support in Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/fixed-reported-inaccuracies?view=o365-worldwide) | modified |
+| 11/15/2023 | Microsoft 365 solutions for the Contoso Corporation | removed |
+| 11/15/2023 | Contoso's COVID-19 response and support for hybrid work | removed |
+| 11/15/2023 | [Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)](/microsoft-365/security/defender-endpoint/mde-plugin-wsl?view=o365-worldwide) | added |
+| 11/15/2023 | [Monitor and maintain Microsoft 365 Business Premium and Defender for Business](/microsoft-365/business-premium/m365bp-mdb-maintain-environment?view=o365-worldwide) | modified |
+| 11/15/2023 | [View or edit device protection policies](/microsoft-365/business-premium/m365bp-view-edit-create-mdb-policies?view=o365-worldwide) | modified |
+| 11/15/2023 | [Get Microsoft Defender for Business](/microsoft-365/security/defender-business/get-defender-business?view=o365-worldwide) | modified |
+| 11/15/2023 | [Automatic attack disruption in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-attack-disruption?view=o365-worldwide) | modified |
+| 11/15/2023 | [Set up, review, and edit your security policies and settings in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-configure-security-settings?view=o365-worldwide) | modified |
+| 11/15/2023 | [Firewall in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-firewall?view=o365-worldwide) | modified |
+| 11/15/2023 | [Visit the Microsoft Defender portal](/microsoft-365/security/defender-business/mdb-get-started?view=o365-worldwide) | modified |
+| 11/15/2023 | [Review or edit your next-generation protection policies Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-next-generation-protection?view=o365-worldwide) | modified |
+| 11/15/2023 | [Onboard devices to Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-onboard-devices?view=o365-worldwide) | modified |
+| 11/15/2023 | [Review and edit settings in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-portal-advanced-feature-settings?view=o365-worldwide) | modified |
+| 11/15/2023 | [Set up and configure Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-setup-configuration?view=o365-worldwide) | modified |
+| 11/15/2023 | [Use the streaming API (preview) with Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-streaming-api?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Business troubleshooting](/microsoft-365/security/defender-business/mdb-troubleshooting?view=o365-worldwide) | modified |
+| 11/15/2023 | [View or edit policies in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-view-edit-create-policies?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Business trial user guide](/microsoft-365/security/defender-business/trial-playbook-defender-business?view=o365-worldwide) | modified |
+| 11/15/2023 | [Access the Microsoft Defender XDR MSSP customer portal](/microsoft-365/security/defender-endpoint/access-mssp-portal?view=o365-worldwide) | modified |
+| 11/15/2023 | [Submit files in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/admin-submissions-mde?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure advanced features in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/advanced-features?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure Microsoft Defender for Endpoint on Android risk signals using App Protection Policies (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam?view=o365-worldwide) | modified |
+| 11/15/2023 | [Fetch alerts from MSSP customer tenant](/microsoft-365/security/defender-endpoint/api/fetch-alerts-mssp?view=o365-worldwide) | modified |
+| 11/15/2023 | [Stream Microsoft Defender for Endpoint events to your Storage account](/microsoft-365/security/defender-endpoint/api/raw-data-export-storage?view=o365-worldwide) | modified |
+| 11/15/2023 | [Operationalize attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize?view=o365-worldwide) | modified |
+| 11/15/2023 | [Use attack surface reduction rules to prevent malware infection](/microsoft-365/security/defender-endpoint/attack-surface-reduction?view=o365-worldwide) | modified |
+| 11/15/2023 | [Visit the Action center to see remediation actions](/microsoft-365/security/defender-endpoint/auto-investigation-action-center?view=o365-worldwide) | modified |
+| 11/15/2023 | [Behavioral blocking and containment](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment?view=o365-worldwide) | modified |
+| 11/15/2023 | [Built-in protection helps guard against ransomware](/microsoft-365/security/defender-endpoint/built-in-protection?view=o365-worldwide) | modified |
+| 11/15/2023 | [Advanced deployment guidance for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/comprehensive-guidance-on-linux-deployment?view=o365-worldwide) | modified |
+| 11/15/2023 | [Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-device-connectivity?view=o365-worldwide) | modified |
+| 11/15/2023 | [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi?view=o365-worldwide) | modified |
+| 11/15/2023 | [Optimize ASR rule deployment and detections](/microsoft-365/security/defender-endpoint/configure-machines-asr?view=o365-worldwide) | modified |
+| 11/15/2023 | [Migrate from the MDE SIEM API to the Microsoft Defender XDR alerts API](/microsoft-365/security/defender-endpoint/configure-siem?view=o365-worldwide) | modified |
+| 11/15/2023 | [Protect important folders from ransomware from encrypting your files with controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders?view=o365-worldwide) | modified |
+| 11/15/2023 | [Address false positives/negatives in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives?view=o365-worldwide) | modified |
+| 11/15/2023 | [Overview of Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage your Microsoft Defender for Endpoint subscription settings across client devices (preview!)](/microsoft-365/security/defender-endpoint/defender-endpoint-subscription-settings?view=o365-worldwide) | modified |
+| 11/15/2023 | [Trial user guide - Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-trial-user-guide?view=o365-worldwide) | modified |
+| 11/15/2023 | [Deploy, manage, and report on Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/deploy-manage-report-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 11/15/2023 | [Endpoint detection and response in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode?view=o365-worldwide) | modified |
+| 11/15/2023 | [Experts on Demand](/microsoft-365/security/defender-endpoint/experts-on-demand?view=o365-worldwide) | modified |
+| 11/15/2023 | [Frequently asked questions (FAQs) about tamper protection](/microsoft-365/security/defender-endpoint/faqs-on-tamper-protection?view=o365-worldwide) | modified |
+| 11/15/2023 | [Host firewall reporting in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/host-firewall-reporting?view=o365-worldwide) | modified |
+| 11/15/2023 | [Identify internet-facing devices in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/internet-facing-devices?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide) | modified |
+| 11/15/2023 | [Deploy Microsoft Defender for Endpoint on Linux manually](/microsoft-365/security/defender-endpoint/linux-install-manually?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage Microsoft Defender for Endpoint using Configuration Manager](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-configuration-manager?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage Microsoft Defender for Endpoint using Group Policy Objects](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-group-policy-objects?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage Microsoft Defender for Endpoint using Intune](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-intune?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage tamper protection for your organization using Microsoft Defender XDR](/microsoft-365/security/defender-endpoint/manage-tamper-protection-microsoft-365-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Set up and configure Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/mde-p1-setup-configuration?view=o365-worldwide) | modified |
+| 11/15/2023 | [Get started with Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/mde-plan1-getting-started?view=o365-worldwide) | modified |
+| 11/15/2023 | [Migrate devices to use the streamlined onboarding method](/microsoft-365/security/defender-endpoint/migrate-devices-streamlined?view=o365-worldwide) | modified |
+| 11/15/2023 | [Use network protection to help prevent macOS connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection-macos?view=o365-worldwide) | modified |
+| 11/15/2023 | [Use network protection to help prevent connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection?view=o365-worldwide) | modified |
+| 11/15/2023 | [Professional services supported by Microsoft Defender XDR](/microsoft-365/security/defender-endpoint/professional-services?view=o365-worldwide) | modified |
+| 11/15/2023 | [Use role-based access control to grant fine-grained access to Microsoft Defender portal](/microsoft-365/security/defender-endpoint/rbac?view=o365-worldwide) | modified |
+| 11/15/2023 | [Take response actions on a file in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-file-alerts?view=o365-worldwide) | modified |
+| 11/15/2023 | [Migrate to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-1?view=o365-worldwide) | modified |
+| 11/15/2023 | [Migrate to Microsoft Defender for Endpoint - Setup](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2?view=o365-worldwide) | modified |
+| 11/15/2023 | [Technological partners of Microsoft Defender XDR](/microsoft-365/security/defender-endpoint/technological-partners?view=o365-worldwide) | modified |
+| 11/15/2023 | [Integrate Microsoft Defender for Endpoint with other Microsoft solutions](/microsoft-365/security/defender-endpoint/threat-protection-integration?view=o365-worldwide) | modified |
+| 11/15/2023 | [Report and troubleshoot Microsoft Defender for Endpoint ASR Rules](/microsoft-365/security/defender-endpoint/troubleshoot-asr-rules?view=o365-worldwide) | modified |
+| 11/15/2023 | [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure Directory Services account in Microsoft Defender for Identity](/microsoft-365/security/defender-identity/directory-service-accounts?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Identity entity tags in Microsoft Defender XDR](/microsoft-365/security/defender-identity/entity-tags?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Identity detection exclusions in Microsoft Defender XDR](/microsoft-365/security/defender-identity/exclusions?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Identity security alerts in Microsoft Defender XDR](/microsoft-365/security/defender-identity/manage-security-alerts?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Identity notifications in Microsoft Defender XDR](/microsoft-365/security/defender-identity/notifications?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Identity sensor health and settings in Microsoft Defender XDR](/microsoft-365/security/defender-identity/sensor-health?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Identity VPN integration in Microsoft Defender XDR](/microsoft-365/security/defender-identity/vpn-integration?view=o365-worldwide) | modified |
+| 11/15/2023 | [Firmware and hardware assessment](/microsoft-365/security/defender-vulnerability-management/tvm-hardware-and-firmware?view=o365-worldwide) | modified |
+| 11/15/2023 | [Learn how to mitigate the Log4Shell vulnerability in Microsoft Defender for Endpoint - Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/tvm-manage-log4shell-guidance?view=o365-worldwide) | modified |
+| 11/15/2023 | [Activate Microsoft Defender XDR Unified role-based access control (RBAC)](/microsoft-365/security/defender/activate-defender-rbac?view=o365-worldwide) | modified |
+| 11/15/2023 | [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware?view=o365-worldwide) | modified |
+| 11/15/2023 | [Get relevant info about an entity with go hunt](/microsoft-365/security/defender/advanced-hunting-go-hunt?view=o365-worldwide) | modified |
+| 11/15/2023 | [Link query results to an incident](/microsoft-365/security/defender/advanced-hunting-link-to-incident?view=o365-worldwide) | modified |
+| 11/15/2023 | [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde?view=o365-worldwide) | modified |
+| 11/15/2023 | [Choose between guided and advanced modes for hunting in Microsoft Defender XDR](/microsoft-365/security/defender/advanced-hunting-modes?view=o365-worldwide) | modified |
+| 11/15/2023 | [Overview - Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview?view=o365-worldwide) | modified |
+| 11/15/2023 | [Learn the advanced hunting query language in Microsoft Defender XDR](/microsoft-365/security/defender/advanced-hunting-query-language?view=o365-worldwide) | modified |
+| 11/15/2023 | [Work with advanced hunting query results in Microsoft Defender XDR](/microsoft-365/security/defender/advanced-hunting-query-results?view=o365-worldwide) | modified |
+| 11/15/2023 | [Naming changes in the Microsoft Defender XDR advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-changes?view=o365-worldwide) | modified |
+| 11/15/2023 | [Use shared queries in Microsoft Defender XDR advanced hunting](/microsoft-365/security/defender/advanced-hunting-shared-queries?view=o365-worldwide) | modified |
+| 11/15/2023 | [Take action on advanced hunting query results in Microsoft Defender XDR](/microsoft-365/security/defender/advanced-hunting-take-action?view=o365-worldwide) | modified |
+| 11/15/2023 | [Access the Microsoft Defender XDR APIs](/microsoft-365/security/defender/api-access?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender XDR advanced hunting API](/microsoft-365/security/defender/api-advanced-hunting?view=o365-worldwide) | modified |
+| 11/15/2023 | [Create an app to access Microsoft Defender XDR APIs on behalf of a user](/microsoft-365/security/defender/api-create-app-user-context?view=o365-worldwide) | modified |
+| 11/15/2023 | [Create an app to access Microsoft Defender XDR without a user](/microsoft-365/security/defender/api-create-app-web?view=o365-worldwide) | modified |
+| 11/15/2023 | [Common Microsoft Defender XDR REST API error codes](/microsoft-365/security/defender/api-error-codes?view=o365-worldwide) | modified |
+| 11/15/2023 | [Hello World for Microsoft Defender XDR REST API](/microsoft-365/security/defender/api-hello-world?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender XDR incidents APIs and the incidents resource type](/microsoft-365/security/defender/api-incident?view=o365-worldwide) | modified |
+| 11/15/2023 | [List incidents API in Microsoft Defender XDR](/microsoft-365/security/defender/api-list-incidents?view=o365-worldwide) | modified |
+| 11/15/2023 | [Overview of Microsoft Defender XDR APIs](/microsoft-365/security/defender/api-overview?view=o365-worldwide) | modified |
+| 11/15/2023 | [Partner access through Microsoft Defender XDR APIs](/microsoft-365/security/defender/api-partner-access?view=o365-worldwide) | modified |
+| 11/15/2023 | [Supported Microsoft Defender XDR APIs](/microsoft-365/security/defender/api-supported?view=o365-worldwide) | modified |
+| 11/15/2023 | [Details and results of an automatic attack disruption action](/microsoft-365/security/defender/autoad-results?view=o365-worldwide) | modified |
+| 11/15/2023 | [Automatic attack disruption in Microsoft Defender XDR](/microsoft-365/security/defender/automatic-attack-disruption?view=o365-worldwide) | modified |
+| 11/15/2023 | [Key infrastructure requirements before enrolling in the Microsoft Defender Experts for Hunting service](/microsoft-365/security/defender/before-you-begin-defender-experts?view=o365-worldwide) | modified |
+| 11/15/2023 | [Before you begin using Defender Experts for XDR](/microsoft-365/security/defender/before-you-begin-xdr?view=o365-worldwide) | modified |
+| 11/15/2023 | [Map Microsoft Defender XDR Unified role-based access control (RBAC) permissions](/microsoft-365/security/defender/compare-rbac-roles?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure automatic attack disruption capabilities in Microsoft Defender XDR](/microsoft-365/security/defender/configure-attack-disruption?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure alert notifications in Microsoft Defender XDR](/microsoft-365/security/defender/configure-email-notifications?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure your Event Hubs](/microsoft-365/security/defender/configure-event-hub?view=o365-worldwide) | modified |
+| 11/15/2023 | [Integrate your SIEM tools with Microsoft Defender XDR](/microsoft-365/security/defender/configure-siem-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Create custom roles with Microsoft Defender XDR Unified role-based access control (RBAC)](/microsoft-365/security/defender/create-custom-rbac-roles?view=o365-worldwide) | modified |
+| 11/15/2023 | [Create and manage custom detection rules in Microsoft Defender XDR](/microsoft-365/security/defender/custom-detection-rules?view=o365-worldwide) | modified |
+| 11/15/2023 | [Details of custom permissions in Microsoft Defender XDR Unified role-based access control (RBAC)](/microsoft-365/security/defender/custom-permissions-details?view=o365-worldwide) | modified |
+| 11/15/2023 | [Custom roles for role-based access control](/microsoft-365/security/defender/custom-roles?view=o365-worldwide) | modified |
+| 11/15/2023 | [Understand the Defender Experts for Hunting report in Microsoft Defender XDR](/microsoft-365/security/defender/defender-experts-report?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender Threat Intelligence in Microsoft Defender XDR](/microsoft-365/security/defender/defender-threat-intelligence?view=o365-worldwide) | modified |
+| 11/15/2023 | [Setup guides for Microsoft Defender XDR](/microsoft-365/security/defender/deploy-configure-m365-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Deploy services supported by Microsoft Defender XDR](/microsoft-365/security/defender/deploy-supported-services?view=o365-worldwide) | modified |
+| 11/15/2023 | [Device profile in Microsoft 365 security portal](/microsoft-365/security/defender/device-profile?view=o365-worldwide) | modified |
+| 11/15/2023 | [What is Microsoft Defender Experts for XDR offering](/microsoft-365/security/defender/dex-xdr-overview?view=o365-worldwide) | modified |
+| 11/15/2023 | [Investigate data loss alerts with Microsoft Defender XDR](/microsoft-365/security/defender/dlp-investigate-alerts-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Edit or delete roles Microsoft Defender XDR Unified role-based access control (RBAC)](/microsoft-365/security/defender/edit-delete-rbac-roles?view=o365-worldwide) | modified |
+| 11/15/2023 | [Create the Microsoft Defender XDR Evaluation Environment for greater cyber security and XDR](/microsoft-365/security/defender/eval-create-eval-environment?view=o365-worldwide) | modified |
+| 11/15/2023 | [Review Microsoft Defender for Endpoint architecture requirements and key concepts](/microsoft-365/security/defender/eval-defender-endpoint-architecture?view=o365-worldwide) | modified |
+| 11/15/2023 | [Review architecture requirements and the technical framework for Microsoft Defender for Identity](/microsoft-365/security/defender/eval-defender-identity-architecture?view=o365-worldwide) | modified |
+| 11/15/2023 | [Step 2. An Overview of Microsoft Defender XDR for Identity evaluation](/microsoft-365/security/defender/eval-defender-identity-overview?view=o365-worldwide) | modified |
+| 11/15/2023 | [Try Microsoft Defender XDR incident response capabilities in a pilot environment](/microsoft-365/security/defender/eval-defender-investigate-respond-additional?view=o365-worldwide) | modified |
+| 11/15/2023 | [Run an attack simulation in a Microsoft Defender XDR pilot environment](/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack?view=o365-worldwide) | modified |
+| 11/15/2023 | [Investigate and respond using Microsoft Defender XDR in a pilot environment](/microsoft-365/security/defender/eval-defender-investigate-respond?view=o365-worldwide) | modified |
+| 11/15/2023 | [Review architecture requirements and the structure for Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-architecture?view=o365-worldwide) | modified |
+| 11/15/2023 | [Pilot Microsoft Defender for Cloud Apps with Microsoft Defender XDR](/microsoft-365/security/defender/eval-defender-mcas-pilot?view=o365-worldwide) | modified |
+| 11/15/2023 | [Pilot Microsoft Defender for Office 365, use the evaluation in your production environment](/microsoft-365/security/defender/eval-defender-office-365-pilot?view=o365-worldwide) | modified |
+| 11/15/2023 | [Step 7. Promote your Microsoft Defender XDR evaluation environment to Production](/microsoft-365/security/defender/eval-defender-promote-to-production?view=o365-worldwide) | modified |
+| 11/15/2023 | [Evaluate and pilot Microsoft Defender XDR, an XDR solution](/microsoft-365/security/defender/eval-overview?view=o365-worldwide) | modified |
+| 11/15/2023 | [FAQs related to Microsoft Defender Experts for XDR incident notifications](/microsoft-365/security/defender/faq-incident-notifications-xdr?view=o365-worldwide) | modified |
+| 11/15/2023 | [Fetch Microsoft Defender XDR incidents](/microsoft-365/security/defender/fetch-incidents?view=o365-worldwide) | modified |
+| 11/15/2023 | [Get started with Microsoft Defender XDR](/microsoft-365/security/defender/get-started?view=o365-worldwide) | modified |
+| 11/15/2023 | [Import roles to Microsoft Defender XDR Unified role-based access control (RBAC)](/microsoft-365/security/defender/import-rbac-roles?view=o365-worldwide) | modified |
+| 11/15/2023 | [Prioritize incidents in Microsoft Defender XDR](/microsoft-365/security/defender/incident-queue?view=o365-worldwide) | modified |
+| 11/15/2023 | [Investigate and respond with Microsoft Defender XDR](/microsoft-365/security/defender/incident-response-overview?view=o365-worldwide) | modified |
+| 11/15/2023 | [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender XDR # < 60 chars](/microsoft-365/security/defender/index?view=o365-worldwide) | modified |
+| 11/15/2023 | [Step 2. Perform a SOC integration readiness assessment using the Zero Trust Framework](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops-readiness?view=o365-worldwide) | modified |
+| 11/15/2023 | [Step 4. Define Microsoft Defender XDR roles, responsibilities, and oversight](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops-roles?view=o365-worldwide) | modified |
+| 11/15/2023 | [Step 3. Plan for Microsoft Defender XDR integration with your SOC catalog of services](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops-services?view=o365-worldwide) | modified |
+| 11/15/2023 | [Step 6. Identify SOC maintenance tasks](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops-tasks?view=o365-worldwide) | modified |
+| 11/15/2023 | [Step 5. Develop and test use cases](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops-use-cases?view=o365-worldwide) | modified |
+| 11/15/2023 | [Integrating Microsoft Defender XDR into your security operations](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops?view=o365-worldwide) | modified |
+| 11/15/2023 | [Investigate alerts in Microsoft Defender XDR](/microsoft-365/security/defender/investigate-alerts?view=o365-worldwide) | modified |
+| 11/15/2023 | [Investigate incidents in Microsoft Defender XDR](/microsoft-365/security/defender/investigate-incidents?view=o365-worldwide) | modified |
+| 11/15/2023 | [Investigate users in Microsoft Defender XDR](/microsoft-365/security/defender/investigate-users?view=o365-worldwide) | modified |
+| 11/15/2023 | [Go to the Action center to view and approve your automated investigation and remediation tasks](/microsoft-365/security/defender/m365d-action-center?view=o365-worldwide) | modified |
+| 11/15/2023 | [Address false positives or false negatives in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-autoir-report-false-positives-negatives?view=o365-worldwide) | modified |
+| 11/15/2023 | [Details and results of an automated investigation](/microsoft-365/security/defender/m365d-autoir-results?view=o365-worldwide) | modified |
+| 11/15/2023 | [Automated investigation and response in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-autoir?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure automated investigation and response capabilities in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-configure-auto-investigation-response?view=o365-worldwide) | modified |
+| 11/15/2023 | [Frequently asked questions when turning on Microsoft Defender XDR](/microsoft-365/security/defender/m365d-enable-faq?view=o365-worldwide) | modified |
+| 11/15/2023 | [Turn on Microsoft Defender XDR](/microsoft-365/security/defender/m365d-enable?view=o365-worldwide) | modified |
+| 11/15/2023 | [Get incident notifications by email in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-notifications-incidents?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage access to Microsoft Defender XDR data in the Microsoft Defender portal](/microsoft-365/security/defender/m365d-permissions?view=o365-worldwide) | modified |
+| 11/15/2023 | [Remediation actions in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-remediation-actions?view=o365-worldwide) | modified |
+| 11/15/2023 | [Get email notifications for response actions in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-response-actions-notifications?view=o365-worldwide) | modified |
+| 11/15/2023 | [Get email notifications for Threat analytics updates in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-threat-analytics-notifications?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage incidents in Microsoft Defender XDR](/microsoft-365/security/defender/manage-incidents?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender XDR Unified role-based access control (RBAC)](/microsoft-365/security/defender/manage-rbac?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender XDR integration with Microsoft Sentinel](/microsoft-365/security/defender/microsoft-365-defender-integration-with-azure-sentinel?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal?view=o365-worldwide) | modified |
+| 11/15/2023 | [Train your security staff for Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender-train-security-staff?view=o365-worldwide) | modified |
+| 11/15/2023 | [What is Microsoft Defender XDR?](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Endpoint in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-mde?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Identity in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-mdi?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Office 365 in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-mdo?view=o365-worldwide) | modified |
+| 11/15/2023 | [Redirecting accounts from Microsoft Defender for Endpoint to Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-mde-redirection?view=o365-worldwide) | modified |
+| 11/15/2023 | [Assess your security posture through Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions?view=o365-worldwide) | modified |
+| 11/15/2023 | [What's new in Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-whats-new?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score?view=o365-worldwide) | modified |
+| 11/15/2023 | [Provide managed security service provider (MSSP) access](/microsoft-365/security/defender/mssp-access?view=o365-worldwide) | modified |
+| 11/15/2023 | [Advanced hunting in multi-tenant management in Microsoft Defender XDR](/microsoft-365/security/defender/mto-advanced-hunting?view=o365-worldwide) | modified |
+| 11/15/2023 | [Vulnerability management in multi-tenant management](/microsoft-365/security/defender/mto-dashboard?view=o365-worldwide) | modified |
+| 11/15/2023 | [View and manage incidents and alerts in multi-tenant management in Microsoft Defender XDR](/microsoft-365/security/defender/mto-incidents-alerts?view=o365-worldwide) | modified |
+| 11/15/2023 | [Multi-tenant management in Microsoft Defender XDR](/microsoft-365/security/defender/mto-overview?view=o365-worldwide) | modified |
+| 11/15/2023 | [Set up multi-tenant management in Microsoft Defender XDR](/microsoft-365/security/defender/mto-requirements?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage tenants with multi-tenant management in Microsoft Defender XDR](/microsoft-365/security/defender/mto-tenants?view=o365-worldwide) | modified |
+| 11/15/2023 | [How to subscribe to Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-worldwide) | modified |
+| 11/15/2023 | [Detecting human-operated ransomware attacks with Microsoft Defender XDR](/microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft security portals and admin centers](/microsoft-365/security/defender/portals?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender XDR prerequisites](/microsoft-365/security/defender/prerequisites?view=o365-worldwide) | modified |
+| 11/15/2023 | [Preview features in Microsoft Defender XDR](/microsoft-365/security/defender/preview?view=o365-worldwide) | modified |
+| 11/15/2023 | [Responding to your first incident in Microsoft Defender XDR](/microsoft-365/security/defender/respond-first-incident-365-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Analyze your first incident in Microsoft Defender XDR](/microsoft-365/security/defender/respond-first-incident-analyze?view=o365-worldwide) | modified |
+| 11/15/2023 | [Remediate your first incident in Microsoft Defender XDR](/microsoft-365/security/defender/respond-first-incident-remediate?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Security Copilot in Microsoft Defender XDR](/microsoft-365/security/defender/security-copilot-in-microsoft-365-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Create incident reports with Security Copilot in Microsoft Defender XDR](/microsoft-365/security/defender/security-copilot-m365d-create-incident-report?view=o365-worldwide) | modified |
+| 11/15/2023 | [Use guided responses with Security Copilot in Microsoft Defender XDR](/microsoft-365/security/defender/security-copilot-m365d-guided-response?view=o365-worldwide) | modified |
+| 11/15/2023 | [Summarize incidents with Security Copilot in Microsoft Defender XDR](/microsoft-365/security/defender/security-copilot-m365d-incident-summary?view=o365-worldwide) | modified |
+| 11/15/2023 | [Analyze scripts and codes with Security Copilot in Microsoft Defender XDR](/microsoft-365/security/defender/security-copilot-m365d-script-analysis?view=o365-worldwide) | modified |
+| 11/15/2023 | [Set up your Microsoft Defender XDR trial lab or pilot environment](/microsoft-365/security/defender/setup-m365deval?view=o365-worldwide) | modified |
+| 11/15/2023 | [How to use the Microsoft Defender Experts for XDR service](/microsoft-365/security/defender/start-using-mdex-xdr?view=o365-worldwide) | modified |
+| 11/15/2023 | [Stream Microsoft Defender XDR events to Azure Event Hubs](/microsoft-365/security/defender/streaming-api-event-hub?view=o365-worldwide) | modified |
+| 11/15/2023 | [Stream Microsoft Defender XDR events to your Storage account](/microsoft-365/security/defender/streaming-api-storage?view=o365-worldwide) | modified |
+| 11/15/2023 | [Stream Microsoft Defender XDR events](/microsoft-365/security/defender/streaming-api?view=o365-worldwide) | modified |
+| 11/15/2023 | [Threat analytics in Microsoft Defender XDR](/microsoft-365/security/defender/threat-analytics?view=o365-worldwide) | modified |
+| 11/15/2023 | [Top scoring in industry tests - Microsoft Defender XDR](/microsoft-365/security/defender/top-scoring-industry-tests?view=o365-worldwide) | modified |
+| 11/15/2023 | [Troubleshoot Microsoft Defender XDR service issues](/microsoft-365/security/defender/troubleshoot?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender XDR for US Government customers](/microsoft-365/security/defender/usgov?view=o365-worldwide) | modified |
+| 11/15/2023 | [What's new in Microsoft Defender XDR Unified role-based access control (RBAC)](/microsoft-365/security/defender/whats-new-in-microsoft-defender-urbac?view=o365-worldwide) | modified |
+| 11/15/2023 | [What's new in Microsoft Defender XDR](/microsoft-365/security/defender/whats-new?view=o365-worldwide) | modified |
+| 11/15/2023 | [Zero Trust with Microsoft Defender XDR](/microsoft-365/security/defender/zero-trust-with-microsoft-365-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft 365 security # < 60 chars](/microsoft-365/security/index?view=o365-worldwide) | modified |
+| 11/15/2023 | [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure the advanced delivery policy for third-party phishing simulations and email delivery to SecOps mailboxes](/microsoft-365/security/office-365-security/advanced-delivery-policy-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Review and manage remediation actions in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide) | modified |
+| 11/15/2023 | [Alert policies in the Microsoft Defender portal](/microsoft-365/security/office-365-security/alert-policies-defender-portal?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure anti-malware policies](/microsoft-365/security/office-365-security/anti-malware-policies-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Impersonation insight](/microsoft-365/security/office-365-security/anti-phishing-mdo-impersonation-insight?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure anti-phishing policies in EOP](/microsoft-365/security/office-365-security/anti-phishing-policies-eop-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure anti-phishing policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/anti-phishing-policies-mdo-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure spam filter policies](/microsoft-365/security/office-365-security/anti-spam-policies-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Spoof intelligence insight](/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence?view=o365-worldwide) | modified |
+| 11/15/2023 | [Insights and reports Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-worldwide) | modified |
+| 11/15/2023 | [Payloads in Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide) | modified |
+| 11/15/2023 | [Simulation automations for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-simulation-automations?view=o365-worldwide) | modified |
+| 11/15/2023 | [Simulate a phishing attack with Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-simulations?view=o365-worldwide) | modified |
+| 11/15/2023 | [Training campaigns in Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-training-campaigns?view=o365-worldwide) | modified |
+| 11/15/2023 | [Audit log search in the Microsoft Defender portal](/microsoft-365/security/office-365-security/audit-log-search-defender-portal?view=o365-worldwide) | modified |
+| 11/15/2023 | [Campaigns in Microsoft Defender for Office 365 Plan](/microsoft-365/security/office-365-security/campaigns?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configuration analyzer for security policies](/microsoft-365/security/office-365-security/configuration-analyzer-for-security-policies?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure the default connection filter policy](/microsoft-365/security/office-365-security/connection-filter-policies-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Remove blocked connectors from the Restricted entities page in Microsoft 365](/microsoft-365/security/office-365-security/connectors-remove-blocked?view=o365-worldwide) | modified |
+| 11/15/2023 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365-whats-new?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Investigate malicious email that was delivered in Microsoft 365, Find and investigate malicious email](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide) | modified |
+| 11/15/2023 | [Why do I need Microsoft Defender for Office 365?](/microsoft-365/security/office-365-security/mdo-about?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Office 365 permissions in the Microsoft Defender portal](/microsoft-365/security/office-365-security/mdo-portal-permissions?view=o365-worldwide) | modified |
+| 11/15/2023 | [Security Operations Guide for Defender for Office 365](/microsoft-365/security/office-365-security/mdo-sec-ops-guide?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage incidents and alerts from Defender for Office 365 in Microsoft Defender XDR](/microsoft-365/security/office-365-security/mdo-sec-ops-manage-incidents-and-alerts?view=o365-worldwide) | modified |
+| 11/15/2023 | [Message trace in the Microsoft Defender portal](/microsoft-365/security/office-365-security/message-trace-defender-portal?view=o365-worldwide) | modified |
+| 11/15/2023 | [Migrate to Microsoft Defender for Office 365 Phase 3: Onboard](/microsoft-365/security/office-365-security/migrate-to-defender-for-office-365-onboard?view=o365-worldwide) | modified |
+| 11/15/2023 | [Threat investigation & response capabilities in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-ti?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure outbound spam policies](/microsoft-365/security/office-365-security/outbound-spam-policies-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Remove blocked users from the Restricted entities page](/microsoft-365/security/office-365-security/outbound-spam-restore-restricted-users?view=o365-worldwide) | modified |
+| 11/15/2023 | [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure and review priority account protection in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/priority-accounts-turn-on-priority-account-protection?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage quarantined messages and files as an admin](/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files?view=o365-worldwide) | modified |
+| 11/15/2023 | [Find and release quarantined messages as a user](/microsoft-365/security/office-365-security/quarantine-end-user?view=o365-worldwide) | modified |
+| 11/15/2023 | [Quarantine policies](/microsoft-365/security/office-365-security/quarantine-policies?view=o365-worldwide) | modified |
+| 11/15/2023 | [View Defender for Office 365 reports](/microsoft-365/security/office-365-security/reports-defender-for-office-365?view=o365-worldwide) | modified |
+| 11/15/2023 | [View email security reports](/microsoft-365/security/office-365-security/reports-email-security?view=o365-worldwide) | modified |
+| 11/15/2023 | [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Set up Safe Attachments policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-attachments-policies-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Safe Documents in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-documents-in-e5-plus-security-about?view=o365-worldwide) | modified |
+| 11/15/2023 | [Set up Safe Links policies in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links-policies-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Connect Microsoft Defender for Office 365 to Microsoft Sentinel](/microsoft-365/security/office-365-security/step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel?view=o365-worldwide) | modified |
+| 11/15/2023 | [How to prioritize, Manage, Investigate & Respond to Incidents in Microsoft Defender XDR](/microsoft-365/security/office-365-security/step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender?view=o365-worldwide) | modified |
+| 11/15/2023 | [Manage submissions](/microsoft-365/security/office-365-security/submissions-admin?view=o365-worldwide) | modified |
+| 11/15/2023 | [User reported settings](/microsoft-365/security/office-365-security/submissions-user-reported-messages-custom-mailbox?view=o365-worldwide) | modified |
+| 11/15/2023 | [Allow or block email using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list-email-spoof-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Allow or block files using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list-files-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Allow or block URLs using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure your Microsoft 365 tenant for increased security](/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security?view=o365-worldwide) | modified |
+| 11/15/2023 | [Threat Explorer and Real-time Detections](/microsoft-365/security/office-365-security/threat-explorer-about?view=o365-worldwide) | modified |
+| 11/15/2023 | [Threat hunting in Threat Explorer for Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/threat-explorer-threat-hunting?view=o365-worldwide) | modified |
+| 11/15/2023 | [Threat Trackers - New and Noteworthy](/microsoft-365/security/office-365-security/threat-trackers?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Office 365 trial user guide](/microsoft-365/security/office-365-security/trial-user-guide-defender-for-office-365?view=o365-worldwide) | modified |
+| 11/15/2023 | [Try and evaluate Defender for Office 365](/microsoft-365/security/office-365-security/try-microsoft-defender-for-office-365?view=o365-worldwide) | modified |
+| 11/15/2023 | [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags-about?view=o365-worldwide) | modified |
+| 11/15/2023 | [Strengthen your security posture with Microsoft Defender XDR](/microsoft-365/security/security-posture-solution-overview?view=o365-worldwide) | modified |
+| 11/15/2023 | [Top 12 tasks for security teams to support working from home](/microsoft-365/security/top-security-tasks-for-remote-work?view=o365-worldwide) | modified |
+| 11/15/2023 | [To identity and beyond—One architect's viewpoint](/microsoft-365/solutions/identity-design-principles?view=o365-worldwide) | modified |
+| 11/15/2023 | [Step 2. Deploy attack detection and response](/microsoft-365/solutions/ransomware-protection-microsoft-365-attack-detection-response?view=o365-worldwide) | modified |
+| 11/15/2023 | [Configure the deception capability in Microsoft Defender XDR](/microsoft-365/security/defender/configure-deception?view=o365-worldwide) | added |
+| 11/15/2023 | [Manage the deception capability in Microsoft Defender XDR](/microsoft-365/security/defender/deception-overview?view=o365-worldwide) | added |
+| 11/15/2023 | [Microsoft 365 Lighthouse frequently asked questions (FAQs)](/microsoft-365/lighthouse/m365-lighthouse-faq?view=o365-worldwide) | modified |
+| 11/15/2023 | [Microsoft Defender for Cloud in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud?view=o365-worldwide) | added |
+| 11/15/2023 | [Connect Microsoft Sentinel to Microsoft Defender XDR (preview)](/microsoft-365/security/defender/microsoft-sentinel-onboard?view=o365-worldwide) | added |
+| 11/15/2023 | [Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)](/microsoft-365/security/defender-endpoint/mde-plugin-wsl?view=o365-worldwide) | modified |
+| 11/15/2023 | [Using self-service sign-up in your organization](/microsoft-365/admin/misc/self-service-sign-up?view=o365-worldwide) | modified |
+| 11/15/2023 | [Set up Microsoft 365 Archive (Preview)](/microsoft-365/syntex/archive/archive-setup) | modified |
+| 11/16/2023 | [Microsoft 365 admin center Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage?view=o365-worldwide) | modified |
+| 11/16/2023 | [Find your Microsoft 365 partner or reseller](/microsoft-365/admin/manage/find-your-partner-or-reseller?view=o365-worldwide) | modified |
+| 11/16/2023 | [Add, change, or delete a Microsoft 365 subscription advisor partner](/microsoft-365/admin/misc/add-partner?view=o365-worldwide) | modified |
+| 11/16/2023 | [Review cloud solution provider (partner) admin privileges](/microsoft-365/commerce/review-partner-admin-privileges?view=o365-worldwide) | modified |
+| 11/16/2023 | [Data Residency for SharePoint Online and OneDrive for Business](/microsoft-365/enterprise/m365-dr-workload-spo?view=o365-worldwide) | modified |
+| 11/16/2023 | [Deploy and manage using group policy](/microsoft-365/security/defender-endpoint/deploy-and-manage-using-group-policy?view=o365-worldwide) | modified |
+| 11/16/2023 | [Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)](/microsoft-365/security/defender-endpoint/mde-plugin-wsl?view=o365-worldwide) | modified |
+| 11/17/2023 | [Zero Trust with Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/zero-trust-with-microsoft-defender-endpoint?view=o365-worldwide) | modified |
+| 11/17/2023 | [Identity and device access policies for allowing guest and external user B2B access - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-guest-access?view=o365-worldwide) | modified |
+| 11/17/2023 | [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-ebpf?view=o365-worldwide) | modified |
+
+
 ## Week of November 06, 2023
 
 
