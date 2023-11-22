@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - mde-asr
-ms.date: 10/30/2023
+ms.date: 11/22/2023
 search.appverid: met150
 ---
 
@@ -318,7 +318,7 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block executable content from email client and webmail
 
-This rule blocks the following file types from launching from email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers:
+This rule blocks email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers from propagating the following file types:
 
 - Executable files (such as .exe, .dll, or .scr)
 - Script files (such as a PowerShell .ps1, Visual Basic .vbs, or JavaScript .js file)
@@ -372,7 +372,7 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 This rule detects suspicious properties within an obfuscated script.
   
 > [!IMPORTANT]
-> PowerShell scripts have been temporarily excluded from the "Block execution of potentially obfuscated scripts" rule due to a high number of false positives. We will provide an update when PowerShell scripts are included again in the scope of this rule.
+> PowerShell scripts are now supported for the "Block execution of potentially obfuscated scripts" rule. 
 
 Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which hampers close scrutiny by humans and security software.
 
@@ -536,27 +536,19 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block Webshell creation for Servers
 
-GUID: `a8f5898e-1dc8-49a9-9878-85004b8a61e6`
-
+This rule blocks web shell script creation on Microsoft Server, Exchange Role.
+ 
+A web shell script is a specifically crafted script that allows an attacker to control the compromise server. A web shell may include functionalities such as receiving and executing malicious commands, downloading and executing malicious files, stealing and exfiltrating credentials and sensitive information, identifying potential targets etc.
+ 
 Intune name: `Block Webshell creation for Servers`
-
-Supported operating systems:
-- [Windows 11](/windows/whats-new/whats-new-windows-11-version-22h2)
+ 
+GUID: `a8f5898e-1dc8-49a9-9878-85004b8a61e6`
 
 ### Block Win32 API calls from Office macros
 
 This rule prevents VBA macros from calling Win32 APIs.
 
 Office VBA enables Win32 API calls. Malware can abuse this capability, such as [calling Win32 APIs to launch malicious shellcode](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) without writing anything directly to disk. Most organizations don't rely on the ability to call Win32 APIs in their day-to-day functioning, even if they use macros in other ways.
-
-Supported operating systems:
-
-- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 11](/windows/whats-new/whats-new-windows-11-version-22h2)
-- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022)
-- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune name: `Win32 imports from Office macro code`
 
