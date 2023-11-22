@@ -1,12 +1,8 @@
 ---
 title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect devices with malware.
-keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
@@ -22,7 +18,7 @@ ms.collection:
 - tier2
 - mde-asr
 search.appverid: met150
-ms.date: 1/11/2023
+ms.date: 11/22/2023
 ---
 
 # Attack surface reduction rules overview
@@ -139,6 +135,7 @@ You can set attack surface reduction rules for devices that are running any of t
 - Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
+- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022) 
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh801901(v=ws.11))
