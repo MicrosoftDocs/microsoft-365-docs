@@ -82,7 +82,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessCreationTime` | `datetime` | Date and time when the process that initiated the event was started |
 | `InitiatingProcessFolderPath` | `string` | Folder containing the process (image file) that initiated the event |
 | `InitiatingProcessParentId` | `int` | Process ID (PID) of the parent process that spawned the process responsible for the event |
-| `InitiatingProcessParentFileName` | `string` | Name of the parent process that spawned the process responsible for the event |
+| `InitiatingProcessParentFileName` | `string` | Name or full path of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentCreationTime` | `datetime` | Date and time when the parent of the process responsible for the event was started |
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | `string` | Identifier for the virtualized container used by Application Guard to isolate browser activity |

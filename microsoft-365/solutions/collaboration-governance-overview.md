@@ -202,3 +202,5 @@ This set of illustrations uses one of the most regulated industries, financial s
 [Microsoft 365 security documentation](../security/index.yml)
 
 [Microsoft Purview documentation](../compliance/index.yml)
+
+[Governance & Security Practices for Microsoft 365 - Microsoft Ignite](https://ignite.microsoft.com/sessions/bd7aa4f7-f9a6-4dc0-a900-bd06254e1281)
