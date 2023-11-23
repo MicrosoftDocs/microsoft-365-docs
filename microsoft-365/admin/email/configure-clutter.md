@@ -44,12 +44,11 @@ Turn off Clutter for a single user named Allie Bellew:
 
 `Set-Clutter -Identity "Allie Bellew" -Enable $false`
 
-If you use PowerShell to bulk create your users, then you'll need to run [Set-Clutter](/powershell/module/exchange/set-clutter) against each user's mailbox to manage Clutter.
+If you use PowerShell to bulk create your users, then you need to run [Set-Clutter](/powershell/module/exchange/set-clutter) against each user's mailbox to manage Clutter.
   
-## When does the Clutter on/off switch appear to users in Outlook on the web?
-<a name="bkmk_onoff"> </a>
+## When does the Clutter On/Off switch appear to users in Outlook on the web?
 
-As an admin, you can re-enable Clutter using Exchange PowerShell. Once this is done, Focused Inbox will be turned off and Clutter will be active again.
+As an admin, you can re-enable Clutter using Exchange PowerShell. Focused Inbox is turned off and Clutter will be active again.
   
  **If you're using Outlook on the web with a Microsoft 365 Business Premium subscription:**
   
@@ -59,7 +58,7 @@ As an admin, you can re-enable Clutter using Exchange PowerShell. Once this is d
 
 - If user currently has Focused Inbox enabled:
 
-  - Clutter settings will not appear
+  - Clutter settings won't appear
 
 - If neither Clutter or Focused Inbox is enabled:
 
@@ -73,19 +72,11 @@ As an admin, you can re-enable Clutter using Exchange PowerShell. Once this is d
 
 - If user currently has Focused Inbox enabled:
 
-  - Clutter settings will not appear
+  - Clutter settings won't appear
 
 - If neither Clutter or Focused Inbox is enabled:
 
   - Both Clutter and Focused Inbox appear as options in the user's Mail Settings
-
-- If user enabled Focused Inbox at some point in the past:
-
-  - Clutter settings will never appear
-
-    Otherwise,
-
-  - Clutter settings will appear
 
 ## Related content
 
