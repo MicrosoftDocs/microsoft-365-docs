@@ -33,7 +33,7 @@ ms.date:
 ## Set up Shifts for your frontline teams
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline apps**.
-1. On the Manage frontline apps page, next to **Deploy Shifts to your teams** in the table, choose **Set up**.
+1. On the Manage frontline apps page, next to **Deploy Shifts to your teams** in the table, select **Set up**.
 1. Review the setup and prerequisites information, and then select **Next**.
 
 ### Configure Shifts settings
@@ -64,7 +64,7 @@ Choose the Shifts capabilities that you want to be available to your frontline t
 
 ### Create schedule groups
 
-In this step, you identify the schedule owners in your organization and specify how schedule groups are created and managed across your frontline teams.
+In this step, you identify the schedule owners in your organization and define how schedule groups are created and managed across your frontline teams.
 
  - Schedule owners, similar to team owners, are frontline managers who create and manage schedules for their teams. [Learn more about schedule owners](schedule-owner-for-shift-management.md).
  - Schedule groups are used to further group employees based on common characteristics within a team. For example, schedule groups can be departments or job types.
@@ -84,7 +84,7 @@ You can choose to allow schedule owners to create and manage schedule groups or 
 
 ### Review and finish setup
 
-Review your settings. If you need to make changes, choose **Back**, and edit the settings that you want. When you're ready, select **Finish setup**.
+Review your settings. If you need to make changes, select **Back**, and edit the settings that you want. When you're ready, select **Finish setup**.
 
 The setup status in the table changes to **Completed** when setup is finished.  
 
@@ -100,7 +100,7 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
     > [!NOTE]
     > Frontline managers can later change the time zone setting for their teams in Shifts. You might want to ask your frontline managers to verify the time zone before they start using Shifts.
-1. When you’re done, choose **Deploy**.
+1. When you’re done, select **Deploy**.
 
     This process can take a while depending on how many teams you're deploying Shifts to. Refresh the Manage frontline apps page to get the latest status.
 
