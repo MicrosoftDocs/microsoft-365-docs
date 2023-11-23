@@ -88,7 +88,7 @@ In the user feedback section, you can see the actual comments your users submitt
 
 ### Teams Net Promoter Score (NPS) example
 
-NPS details allow you see promoters, passives, and detractors so that you can get a pulse on the sentiment in your organization. Similar to product feedback, you can also view the specific comments your users submitted. In some cases where there is enough volume, you may also see Top topics that categorizes some of the comments into bucketed categories for easier parsing of the data.
+NPS details allows you to see promoters, passives, and detractors so that you can get a pulse on the sentiment in your organization. Similar to product feedback, you can also view the specific comments your users submitted. In some cases where there is enough volume, you may also see Top topics that categorizes some of the comments into bucketed categories for easier parsing of the data.
 
 :::image type="content" source="../../media/experience-insights-teams-nps2.png" alt-text="Screenshot: Image showing Teams NPS insights":::
 
