@@ -52,7 +52,7 @@ For more information on remote access to data by personnel, see [Continuing data
 | Cambodia | Indonesia | Netherlands | Thailand |
 | Cameroon | Ireland | New Zealand | Trinidad and Tobago |
 | Canada | Israel | Nigeria | Tunisia |
-| Chile | Italy | North Macedonia | Turkey |
+| Chile | Italy | North Macedonia | Türkiye |
 | China | Jamaica | Norway | Ukraine |
 | Colombia | Japan | Oman | United Arab Emirates |
 | Costa Rica | Jordan | Pakistan | United Kingdom |
