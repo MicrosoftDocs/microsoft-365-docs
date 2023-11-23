@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 04/22/2021
+ms.date: 11/22/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -29,7 +29,7 @@ Follow the steps in this article to move your OneDrive, Outlook and Teams data t
 > [!IMPORTANT]
 > You can still keep your data in your personal account. The data in your personal account won’t expire once you create a new business email account and migrate your data. You can move all your data to your new business account or you can move some of your data. For example, you can move your work documents to your business account, but keep your personal family photos in your personal account.
 
-## Move files to OneDrive for business
+## Move files to OneDrive for work
 
 Learn how to move the files stored in your Microsoft 365 personal account to your Microsoft 365 business account. With both OneDrive accounts synced to your device, you can easily drag and drop the files between two OneDrive folders. For the steps, check out [Migrate your OneDrive files](https://support.microsoft.com/office/7fb28cad-7e25-451f-8b4b-2d1a71e5c0e9).
 
