@@ -30,11 +30,11 @@ appliesto:
 
 In Microsoft 365 organizations with mailboxes in Exchange Online, organizational anti-spam settings are controlled by Exchange Online Protection (EOP). For more information, see [Anti-spam protection in EOP](anti-spam-protection-about.md).
 
-But, there are also specific anti-spam settings that administrators can configure on individual mailboxes in Exchange Online:
+However, there are also specific anti-spam settings that administrators can configure on individual mailboxes in Exchange Online:
 
 - **Move messages to the Junk Email folder based on anti-spam policies**: When an anti-spam policy is configured with the action **Move message to Junk Email folder** for a spam-filtering verdict, the message is moved to the Junk Email folder *after* the message is delivered to the mailbox. For more information about spam-filtering verdicts in anti-spam policies, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md). Similarly, if zero-hour auto purge (ZAP) determines that a delivered message is spam or phish, the message is moved to the Junk Email folder for **Move message to Junk Email folder** spam-filtering verdict actions. For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
 
-- **Junk email settings that users configure for themselves in Outlook or Outlook on the web**: The _safelist collection_ is the Safe Senders list, the Safe Recipients list, and the Blocked Senders list on each mailbox. The entries in these lists determine whether the message is moved to the Inbox or the Junk Email folder. Users can configure the safelist collection for their own mailbox in Outlook or Outlook on the web (formerly known as Outlook Web App). Administrators can configure the safelist collection on any user's mailbox.
+- **Junk email settings that users configure for themselves in Outlook or Outlook on the web**: The _safelist collection_ is the Safe Senders list, the Safe Recipients list, and the Blocked Senders list on each mailbox. The entries in these lists determine whether the message is moved to the Inbox or the Junk Email folder. Users can configure the safelist collection for their own mailboxes in Outlook or Outlook on the web (formerly known as Outlook Web App). Administrators can configure the safelist collection on any user's mailbox.
 
 EOP is able to move messages to the Junk Email folder based on the spam-filtering verdict action **Move message to Junk Email folder** or the Blocked Senders list on the mailbox, and prevent messages from being delivered to the Junk Email folder (based on the Safe Senders list on the mailbox).
 
@@ -49,7 +49,7 @@ Administrators can use Exchange Online PowerShell to configure entries in the sa
 
 - You can only use Exchange Online PowerShell to do the procedures in this article. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions in Exchange Online before you can do the procedures in this article. Specifically, you need the **Mail Recipients** role (which is assigned to the **Organization Management**, **Recipient Management**, and **Custom Mail Recipients** role groups by default) or the **User Options** role (which is assigned to the **Organization Management** and **Help Desk** role groups by default). To add users to role groups in Exchange Online, see [Modify role groups in Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Users with default permissions can do these same procedures on their own mailbox, as long as they have [access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
+- You need to be assigned permissions in Exchange Online before you can do the procedures in this article. Specifically, you need the **Mail Recipients** role (which is assigned to the **Organization Management**, **Recipient Management**, and **Custom Mail Recipients** role groups by default) or the **User Options** role (which is assigned to the **Organization Management** and **Help Desk** role groups by default). To add users to role groups in Exchange Online, see [Modify role groups in Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Users with default permissions can do these same procedures on their own mailboxes, as long as they have [access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 - In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange. These mail flow rules translate the EOP spam-filtering verdict so that the junk email rule in the mailbox can move the message to the Junk Email folder. For more information, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid). The Exchange transport rules allow a mail flow rule to be stored in the cloud.
 
@@ -60,7 +60,7 @@ Administrators can use Exchange Online PowerShell to configure entries in the sa
 
 ## Use Exchange Online PowerShell to configure the safelist collection on a mailbox
 
-The safelist collection on a mailbox includes the Safe Senders list, the Safe Recipients list, and the Blocked Senders list. By default, users can configure the safelist collection on their own mailbox in Outlook or Outlook on the web. Administrators can use the corresponding parameters on the **Set-MailboxJunkEmailConfiguration** cmdlet to configure the safelist collection on a user's mailbox. These parameters are described in the following table.
+The safelist collection on a mailbox includes the Safe Senders list, the Safe Recipients list, and the Blocked Senders list. By default, users can configure the safelist collection on their own mailboxes in Outlook or Outlook on the web. Administrators can use the corresponding parameters on the **Set-MailboxJunkEmailConfiguration** cmdlet to configure the safelist collection on a user's mailbox. These parameters are described in the following table.
 
 |Parameter on Set-MailboxJunkEmailConfiguration|Outlook on the web setting|
 |---|---|
@@ -110,7 +110,7 @@ For detailed syntax and parameter information, see [Set-MailboxJunkEmailConfigur
 
 ### How do you know that you've successfully configured the safelist collection on a mailbox?
 
-To verify that you've successfully configured the safelist collection on a mailbox, use any of following procedures:
+To verify that you've successfully configured the safelist collection on a mailbox, use any of the following procedures:
 
 - Replace _\<MailboxIdentity\>_ with the name, alias, or email address of the mailbox, and run the following command to verify the property values:
 
@@ -164,7 +164,7 @@ The safelist collection (the Safe Senders list, the Safe Recipients list, and th
 
 - With directory synchronization, the entries are synchronized to Microsoft Entra ID in the following order:
   1. Mail contacts if **Trust email from my contacts** is enabled.
-  2. The Safe Sender list and the Safe Recipient list are combined, deduplicated, and sorted alphabetically whenever a change is made for the first 1024 entries.
+  2. The Safe Senders list and the Safe Recipient list are combined, deduplicated, and sorted alphabetically whenever a change is made for the first 1024 entries.
 
   The first 1024 entries are used, and relevant information is stamped in the message headers.
 
