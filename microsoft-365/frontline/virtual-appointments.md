@@ -2,7 +2,7 @@
 title: Virtual Appointments with Microsoft Teams
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: megano
 ms.topic: conceptual
 audience: admin
