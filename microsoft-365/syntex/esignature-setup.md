@@ -62,6 +62,14 @@ By default, Syntex eSignature is turned on for libraries in all SharePoint sites
 
     c. Select **Save**.
 
+
+### Turn oof eSignature
+
+1. On the **Manage Microsoft Syntex** page, select **Syntex eSignature**.
+
+2. If **Syntex eSignature** is turned on, there will be a **Turn off** button visible.  Click on the button to turn **Syntex eSignature** off
+
+
 ## Document storage and retention
 
 ### Document storage
