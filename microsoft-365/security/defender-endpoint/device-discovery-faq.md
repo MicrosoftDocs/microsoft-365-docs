@@ -75,6 +75,8 @@ ARP, CDP, DHCP, DHCPv6, IP (headers), LLDP, LLMNR, mDNS, MNDP, MSSQL, NBNS, SSDP
 When a device is configured to run Standard discovery, exposed services are being probed by using the following protocols:
 ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP, LDAP
 
+> [!NOTE]
+>In addition, device discovery might also scan other commonly used ports to improve classification accuracy & coverage.
 
 ## How can I exclude targets from being probed with Standard discovery?
 
