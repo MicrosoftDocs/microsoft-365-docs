@@ -58,6 +58,8 @@ This section covers:
     1. **Zero touch (Silent) Onboarding** - App is automatically installed and activated without the need for users to open the app.
     1. **Auto Onboarding of VPN** - Defender for Endpoint VPN profile is automatically setup without having the user to do so during onboarding. This step is not recommended in Zero touch configurations.
 
+1. **User Enrollment setup** (only for Intune User Enrolled devices) - Admins can deploy and configure the Defender for Endpoint app on the Intune User Enrolled devices also.
+
 ## Deployment steps (applicable for both Supervised and Unsupervised devices)
 
 Deploy Defender for Endpoint on iOS via Microsoft Intune Company Portal.
@@ -196,6 +198,7 @@ Once the above configuration is done and synced with the device, the following a
 
 > [!NOTE]
 > For supervised devices, admins can setup Zero touch onboarding with the new [ZeroTouch Control Filter Profile](#device-configuration-profile-control-filter).
+
 Defender for Endpoint VPN Profile will not be installed on the device and Web protection will be provided by the Control Filter Profile.
 
 ### Auto-Onboarding of VPN profile (Simplified Onboarding)
@@ -227,6 +230,29 @@ Admins can configure auto-setup of VPN profile. This will automatically set up t
 
 1. Click **Next** and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
+
+##  **User Enrollment setup** (only for Intune User Enrolled devices)
+Defender iOS app can be deployed on the Intune User Enrolled devices using the following steps.
+### Admin
+1.	Set up User Enrollment Profile in Intune. Intune supports account driven Apple User Enrollment and Apple User Enrollment with Company Portal. Read more about the comparison of the two methods and select one.
+a.	Set up user enrollment with Company Portal
+b.	Set up account driven user enrollment
+
+2.	Set up SSO Plugin. Authenticator app with SSO extension is a pre-requisite for user enrollment in an iOS device.
+a.	Create is Device configuration Profile in Intune-  Configure iOS/iPadOS Enterprise SSO plug-in with MDM | Microsoft Learn. 
+b.	Ensure to add these two keys in the above configuration:
+i.	App bundle ID: Include the Defender App bundle ID in this list “com.microsoft.scmx”
+ii.	Additional configuration: 
+Key: device_registration ; Type: String ; Value: {{DEVICEREGISTRATION}}
+
+
+3.	Set up the MDM Key for User Enrollment.
+a.	In Intune, go to Go to Apps > App configuration policies > Add > Managed devices
+b.	Give the policy a name, select Platform > iOS/iPadOS, 
+c.	Select Microsoft Defender for Endpoint as the target app. 
+d.	In Settings page, select Use configuration designer and add UserEnrolmentEnabled as the key, value type as String, value as True.
+4.	Admin can push Defender as a required VPP app from Intune. 
+
 
 ## Complete onboarding and check status
 
