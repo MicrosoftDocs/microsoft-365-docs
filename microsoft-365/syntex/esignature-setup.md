@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to set up and configure Microsoft Syntex eSignature. 
+description: Learn how to set up and manage sites in Microsoft Syntex eSignature. 
 ---
 
 # Set up Microsoft Syntex eSignature
