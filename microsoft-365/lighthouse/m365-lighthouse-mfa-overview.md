@@ -22,7 +22,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs), learn more about multifactor authentication in Microsoft 365 Lighthouse."
 ---
 
-# Overview of the multifactor authentication page in Microsoft 365 Lighthouse
+# Overview of the Multifactor authentication page in Microsoft 365 Lighthouse
 
 Multifactor authentication (MFA) in Microsoft Entra ID helps protect your customer tenants against breaches due to lost or stolen credentials by using a second form of authentication to provide an extra layer of security.
 
