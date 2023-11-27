@@ -39,7 +39,7 @@ To get started with Copilot Insights, people in your organization need to be lic
 
 After people have been active in Copilot at least once in the last 28 days, you'll start to see the insights.
 
-:::image type="content" source="../../media/adoption-score-ai-view.png" alt-text="Screenshot showing the Adoption Sore dashboard with AI assistance category.":::
+:::image type="content" source="../../media/adoption-score-ai-view.png" alt-text="Screenshot showing the Adoption Sore dashboard with AI assistance category." lightbox="../../media/adoption-score-ai-view.png":::
 
 ## Scoring framework
 
@@ -53,7 +53,7 @@ The overall score takes into account individual user activity (each tenant) acro
 
 Further, a user score is calculated with the usage intensity of individual user and the possible utilization threshold (12 days as of now) of Copilot activity in mind. The tenant AI Assistance scores are created by the combination of user scores of each tenant and the number of individuals enabled to use CoPilot (for the applications considered).
 
-:::image type="content" source="../../media/ai-assistance-dashboard.png" alt-text="Screenshot showing the AI assistance category dashboard in Adoption Score.":::
+:::image type="content" source="../../media/ai-assistance-dashboard.png" alt-text="Screenshot showing the AI assistance category dashboard in Adoption Score." lightbox="../../media/ai-assistance-dashboard.png":::
 
 ## What makes up my score
 
