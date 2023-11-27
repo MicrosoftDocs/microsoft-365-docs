@@ -22,7 +22,7 @@ ms.custom:
 description: Zero-hour auto purge (ZAP) moves delivered messages in Microsoft 365 mailboxes to the Junk Email folder or quarantine if those messages are retroactively found to be spam, phishing, or contain malware.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 8/4/2023
+ms.date: 11/16/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -126,16 +126,16 @@ ZAP doesn't quarantine messages that are in the process of [Dynamic Delivery](sa
 
 ## Zero-hour auto purge (ZAP) in Microsoft Teams
 
-> [!NOTE]
+> [!TIP]
 > ZAP for Microsoft Teams is available only to customers with Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 subscriptions. To configure ZAP for Teams protection, see [Microsoft Defender for Office 365 Plan 2 support for Microsoft Teams](mdo-support-teams-about.md).
->
-> ZAP for Teams is available for internal Teams messages that are identified as malware or high confidence phishing. Currently, external messages aren't supported.
->
-> Currently, ZAP for Teams is supported only for Teams chats, shared channels, and standard channels.
+
+### ZAP in Teams chats
+
+ZAP is available for internal messages in Teams chats that are identified as malware or high confidence phishing. Currently, external messages aren't supported.
 
 Teams is different than email, because everyone in a Teams chat receives the same copy of the message at the same time (there's no message bifurcation). When ZAP for Teams protection blocks a message, the message is blocked for everyone in the chat. The initial block happens right after delivery, but ZAP occurs up to 48 hours after delivery.
 
-Exclusions for ZAP for Teams protection matter for message _recipients_, not message _senders_.
+Exclusions for ZAP for Teams protection in Teams chats matter for message _recipients_, not message _senders_. To configure exceptions for Teams chats, see [Configure ZAP for Teams protection in Defender for Office 365 Plan 2](mdo-support-teams-about.md#configure-zap-for-teams-protection-in-defender-for-office-365-plan-2).
 
 ZAP for Teams protection is able to take action on messages for _all_ recipients in a chat if _any_ recipients in the chat aren't excluded from ZAP for Teams protection. Only when _all_ recipients in a chat are excluded from ZAP for Teams protection will ZAP not take action on a message. These scenarios are illustrated in the following table:
 
@@ -152,6 +152,23 @@ ZAP for Teams protection is able to take action on messages for _all_ recipients
 **Recipient view**:
 
 :::image type="content" source="../../media/zero-hour-auto-purge-recipient.png" alt-text="Image showing how ZAP for Teams protection works for the recipient." lightbox="../../media/zero-hour-auto-purge-recipient.png":::
+
+### ZAP in Teams channels
+
+ZAP for Teams protection supports the following types of Teams channels:
+
+- **Standard channels**: ZAP is available for internal messages. Currently, external messages aren't supported.
+- **Shared channels**: ZAP is available for internal and external messages.
+
+Currently, ZAP isn't available in private channels.
+
+To configure exceptions for ZAP protection for Teams channels, you need the recipient email address. This address is different than the channel email address in the Teams client.
+
+To get the recipient email address to use for exceptions for Teams channel protection, use the **Name and email** value from the **Channel details** section of the Teams Message Entity Panel. For more information, see [The Teams Message Entity Panel in Microsoft Defender for Office 365](teams-message-entity-panel.md).
+
+:::image type="content" source="../../media/teams-message-entity-panel-channel-address.png" alt-text="The correct Teams channel email address from the Teams message entity panel." lightbox="../../media/teams-message-entity-panel-channel-address.png":::
+
+To configure exceptions for Teams channels, see [Configure ZAP for Teams protection in Defender for Office 365 Plan 2](mdo-support-teams-about.md#configure-zap-for-teams-protection-in-defender-for-office-365-plan-2).
 
 ### Zero-hour auto purge (ZAP) for high confidence phishing messages in Teams
 
