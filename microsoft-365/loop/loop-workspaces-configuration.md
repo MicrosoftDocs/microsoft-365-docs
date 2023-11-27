@@ -32,9 +32,9 @@ If you're looking to manage Loop components in the Microsoft 365 ecosystem, visi
 
 Just like other Microsoft 365 experiences, Loop also uses core services across SharePoint and Microsoft 365. To effectively enable Loop workspace experiences, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services.
 
-### Exchange Online license
+### License requirements
 
-Loop workspaces currently require each user to have an Exchange Online license and the user account can't be a resource account (for example, a shared mailbox user). If these requirements are not met: users experience failures in the Loop app, users won't receive notifications or signals when they collaborate and update, and users encounter failures in other experiences within Loop.
+Licensing through the new Loop with workspaces service plan covers the creation of new workspaces. If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
 
 ### WebSocket connections
 
@@ -62,7 +62,7 @@ If you're looking for a simple way to turn on or off the creation of content in 
     > While we are updating the admin center to reflect the state of Loop in your environment, the checkbox may not reflect your configured state on load. However, the state you select and choose Save in the Admin Center will persist and override any defaults for your tenant.
 1. Select Save.
 
-The Microsoft Admin Center configures the Cloud Policy setting described in the next section, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
+The Microsoft Admin Center configures the Cloud Policy setting described in the next section, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls. If you previously configured a Cloud Policy for a group prior to when this Loop setting was defaulted to Enabled, review your Cloud Policy settings to confirm they still match your expectation.
 
 ## Settings management in Cloud Policy
 
@@ -90,7 +90,8 @@ In case you create a new policy configuration or change the configuration for an
 - If there were no policy configurations prior to the change, then it takes 24 hours for the change to be reflected.
 
 > [!NOTE]
-> In order to target only a group of users in your organization to be able to create Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
+>  In order to target only a group of users in your organization to be able to create and view Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
+
 
 ## Related topics
 

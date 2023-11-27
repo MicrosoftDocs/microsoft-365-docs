@@ -49,7 +49,7 @@ You'll need to take the following steps:
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Settings > Endpoints > Onboarding**.
+1. In [Microsoft Defender XDR](https://security.microsoft.com), navigate to **Settings > Endpoints > Onboarding**.
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
@@ -659,7 +659,7 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
 
 ## Step 8: Configure Network Extension
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender portal. The following policy allows the network extension to perform this functionality.
 
 These steps are applicable on macOS 11 (Big Sur) or later.
 
