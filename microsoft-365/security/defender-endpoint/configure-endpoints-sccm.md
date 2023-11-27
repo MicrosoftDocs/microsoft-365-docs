@@ -97,7 +97,7 @@ To onboard Windows devices with Microsoft Configuration Manager, the deployment 
 
 Onboarding using tools such as Group Policy or a manual method doesn't install any agents on the system.
 
-Within the Microsoft Configuration Manager, console the onboarding process will be configured as part of the compliance settings within the console.
+Within the Microsoft Configuration Manager console, the onboarding process will be configured as part of the compliance settings within the console.
 
 Any system that receives this required configuration maintains that configuration for as long as the Configuration Manager client continues to receive this policy from the management point.
 
