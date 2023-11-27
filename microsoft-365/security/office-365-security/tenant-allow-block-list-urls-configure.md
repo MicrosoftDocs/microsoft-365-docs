@@ -42,7 +42,10 @@ This article describes how admins can manage entries for URLs in the Microsoft D
 
 - For URL entry syntax, see the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
 
-- For URLs, the maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 URL entries total).
+- - Entry limits for URLs:
+  - **Exchange Online Protection**: The maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 URL entries in total).
+  - **Defender for Office 365 Plan 1**: The maximum number of allow entries is 1000, and the maximum number of block entries is 1000 (2000 URL entries in total).
+  - **Defender for Office 365 Plan 2**: The maximum number of allow entries is 5000, and the maximum number of block entries is 10000 (15000 URL entries in total).
 
 - You can enter a maximum of 250 characters in a URL entry.
 
