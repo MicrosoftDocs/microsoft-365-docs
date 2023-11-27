@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 11/28/2023
+ms.date: 11/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,13 +17,10 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: 
-- AdminSurgePortfolio
-- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
-description: "Learn about the AI assistance score in Adoption Score." 
+description: "Learn about the AI assistance category in Adoption Score." 
 ---
 
 # AI Assistance Category in Adoption Score
