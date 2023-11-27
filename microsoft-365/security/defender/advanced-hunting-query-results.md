@@ -73,7 +73,7 @@ When rendering the results, a column chart displays each severity value as a sep
 ```kusto
 AlertInfo
 | summarize Total = count() by Severity
-| render coloumnchart
+| render columnchart
 ```
 
 :::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="An example of a chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-column-chart-new.png":::
