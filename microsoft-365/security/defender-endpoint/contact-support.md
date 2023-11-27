@@ -45,7 +45,7 @@ It's important to know the specific roles that have permission to open support c
 
 At a minimum, you must have a Service Support Administrator **OR** Helpdesk Administrator role.
 
-For more information on which roles have permission, see, [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). 
+For more information on which roles have permission, see [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). 
 
 For general information on admin roles, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
