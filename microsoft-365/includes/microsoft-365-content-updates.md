@@ -2,6 +2,35 @@
 
 
 
+## Week of November 20, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/20/2023 | [Change your contact preferences for communications from Microsoft](/microsoft-365/admin/manage/change-contact-preferences?view=o365-worldwide) | modified |
+| 11/20/2023 | [What's new in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-whats-new?view=o365-worldwide) | modified |
+| 11/20/2023 | [Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-device-connectivity?view=o365-worldwide) | modified |
+| 11/20/2023 | [What's new in Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-whats-new?view=o365-worldwide) | modified |
+| 11/20/2023 | [Adoption health metrics in Topics](/microsoft-365/topics/health-metrics?view=o365-worldwide) | added |
+| 11/20/2023 | [Manage your Microsoft Defender for Endpoint subscription settings across client devices](/microsoft-365/security/defender-endpoint/defender-endpoint-subscription-settings?view=o365-worldwide) | modified |
+| 11/20/2023 | [Manual deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-worldwide) | modified |
+| 11/20/2023 | [Accessibility mode in Microsoft Syntex](/microsoft-365/syntex/accessibility-mode) | modified |
+| 11/20/2023 | [Discover opportunities in Microsoft Syntex by using the Microsoft 365 Assessment tool](/microsoft-365/syntex/adoption-assessment-tool) | modified |
+| 11/20/2023 | [Choose the view in a document library in Microsoft Syntex](/microsoft-365/syntex/choose-library-view) | modified |
+| 11/20/2023 | [Microsoft Syntex Optical Character Recognition (“OCR”) Feature Preview Agreement](/microsoft-365/syntex/ocr-preview-terms) | modified |
+| 11/20/2023 | [Automatically generate routine documents with Microsoft Syntex](/microsoft-365/syntex/scenario-generate-routine-documents) | modified |
+| 11/20/2023 | [Use the content center site template for Microsoft Syntex](/microsoft-365/syntex/use-content-center-site) | modified |
+| 11/21/2023 | [What's new in Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-whatsnew?view=o365-worldwide) | modified |
+| 11/21/2023 | [How to subscribe to Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-worldwide) | modified |
+| 11/21/2023 | [Manage who can create Microsoft 365 Groups](/microsoft-365/solutions/manage-creation-of-groups?view=o365-worldwide) | modified |
+| 11/21/2023 | [Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services](/microsoft-365/admin/add-users/remove-former-employee-step-1?view=o365-worldwide) | modified |
+| 11/21/2023 | [Analytics for Topics](/microsoft-365/topics/topics-analytics?view=o365-worldwide) | modified |
+| 11/22/2023 | [Privacy, security, and compliance in Microsoft Syntex](/microsoft-365/syntex/syntex-privacy-security) | added |
+| 11/22/2023 | [Step 3 - Wipe and block a former employee's mobile device](/microsoft-365/admin/add-users/remove-former-employee-step-3?view=o365-worldwide) | modified |
+| 11/22/2023 | [Attack surface reduction rules reference](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference?view=o365-worldwide) | modified |
+| 11/22/2023 | [Detect and block potentially unwanted applications with Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-pua?view=o365-worldwide) | modified |
+
+
 ## Week of November 13, 2023
 
 
