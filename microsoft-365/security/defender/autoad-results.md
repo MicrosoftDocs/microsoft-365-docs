@@ -1,10 +1,9 @@
 ---
 title: Details and results of an automatic attack disruption action
-description: View the results and key findings of automatic attack disruption in Microsoft 365 Defender
+description: View the results and key findings of automatic attack disruption in Microsoft Defender XDR
 keywords: automated, attack, disruption, investigation, results, analyze, details
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -31,13 +30,13 @@ ms.reviewer: evaldm, isco
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-With Microsoft 365 Defender, when an automatic attack disruption triggers, details about the risk and the containment status of compromised assets are available during and after the process. You can view these on the Incident page, which provides the full details of the attack and the up-to-date status of associated assets.
+With Microsoft Defender XDR, when an automatic attack disruption triggers, details about the risk and the containment status of compromised assets are available during and after the process. You can view these on the Incident page, which provides the full details of the attack and the up-to-date status of associated assets.
 
 ## Review the incident graph
 
-Microsoft 365 Defender automatic attack disruption is built-in in the Incident view. Reviewing the incident graph enables you to get the entire attack story and assess the attack disruption impact and status.
+Microsoft Defender XDR automatic attack disruption is built-in in the Incident view. Reviewing the incident graph enables you to get the entire attack story and assess the attack disruption impact and status.
 
 Here are some examples of what it looks like:
 

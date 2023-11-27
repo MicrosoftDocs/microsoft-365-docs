@@ -4,8 +4,8 @@ description: Study common hunting scenarios and sample queries that cover device
 keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, apps, identities, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,9 +29,9 @@ ms.date: 02/16/2021
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-[Advanced hunting](advanced-hunting-overview.md) in Microsoft 365 Defender allows you to proactively hunt for threats across:
+[Advanced hunting](advanced-hunting-overview.md) in Microsoft Defender XDR allows you to proactively hunt for threats across:
 
 - Devices managed by Microsoft Defender for Endpoint
 - Emails processed by Microsoft 365

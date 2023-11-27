@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Identity sensor health and settings in Microsoft 365 Defender
-description: Learn how to configure Microsoft Defender for Identity sensors and monitor their health in Microsoft 365 Defender
+title: Microsoft Defender for Identity sensor health and settings in Microsoft Defender XDR
+description: Learn how to configure Microsoft Defender for Identity sensors and monitor their health in Microsoft Defender XDR
 ms.date: 06/07/2021
 ms.topic: how-to
 author: batamig
@@ -12,21 +12,21 @@ ms.collection: m365-security
 search.appverid: met150
 ---
 
-# Microsoft Defender for Identity sensor health and settings in Microsoft 365 Defender
+# Microsoft Defender for Identity sensor health and settings in Microsoft Defender XDR
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Defender for Identity
 
-This article explains how to configure and monitor [Microsoft Defender for Identity](/defender-for-identity) sensors in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+This article explains how to configure and monitor [Microsoft Defender for Identity](/defender-for-identity) sensors in [Microsoft Defender XDR](/microsoft-365/security/defender/overview-security-center).
 
 > [!IMPORTANT]
-> As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
+> As part of the convergence with Microsoft Defender XDR, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## View Defender for Identity sensor settings and status
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The option of Identities on the Settings page" lightbox="../../media/defender-identity/settings-identities.png":::
 
@@ -35,7 +35,7 @@ This article explains how to configure and monitor [Microsoft Defender for Ident
     [![Sensor page.](../../media/defender-identity/sensor-page.png)](../../media/defender-identity/sensor-page.png#lightbox)
 
     > [!NOTE]
-    > In the Defender for Identity portal, the sensor settings and health information were in separate locations. Note that in Microsoft 365 Defender they're now on the same page.
+    > In the Defender for Identity portal, the sensor settings and health information were in separate locations. Note that in Microsoft Defender XDR they're now on the same page.
 
 1. If you select **Filters**, you can choose which filters will be available. Then with each filter, you can choose which sensors to display.
 

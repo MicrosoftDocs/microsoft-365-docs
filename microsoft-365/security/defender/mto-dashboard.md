@@ -1,9 +1,8 @@
 ---
 title: Vulnerability management in multi-tenant management
-description: Learn about the capabilities of the vulnerability management dashboard in multi-tenant management in Microsoft 365 Defender
+description: Learn about the capabilities of the vulnerability management dashboard in multi-tenant management in Microsoft Defender XDR
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -21,7 +20,7 @@ ms.date: 09/01/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -32,7 +31,7 @@ You can use the Defender Vulnerability Management dashboard in multi-tenant mana
 - Your exposure score and exposure level for devices across all tenants.
 - Your most exposed tenants along with details of the number of weaknesses, exposed devices, and available recommendations for each tenant.
 
-   :::image type="content" source="../../media/defender/mto-mdvm-dashboard.png" alt-text="Screenshot of the defender vulnerability management dashboard in multi-tenant management in Microsoft 365 Defender" lightbox="../../media/defender/mto-mdvm-dashboard.png":::
+   :::image type="content" source="../../media/defender/mto-mdvm-dashboard.png" alt-text="Screenshot of the defender vulnerability management dashboard in multi-tenant management in Microsoft Defender XDR" lightbox="../../media/defender/mto-mdvm-dashboard.png":::
 
 The Defender Vulnerability Management dashboard in multi-tenant management provides the following information across all the tenants you have access to:
 
@@ -48,7 +47,7 @@ The Defender Vulnerability Management dashboard in multi-tenant management provi
 
 The **Tenants page** under **Vulnerability management** includes vulnerability information for all tenants, and at a tenant-specific level, such as exposed devices, security recommendations, weaknesses, and critical CVEs.
 
-   :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of multi-tenant vulnerability management in Microsoft 365 Defender" lightbox="../../media/defender/mto-multi-tenant-view.png":::
+   :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of multi-tenant vulnerability management in Microsoft Defender XDR" lightbox="../../media/defender/mto-multi-tenant-view.png":::
 
 At the top of the page, you can view the number of tenants and the aggregate number of:
 
@@ -57,7 +56,7 @@ At the top of the page, you can view the number of tenants and the aggregate num
 - High severity CVEs
 - Security recommendations
 
-Select a tenant name to navigate to the Defender Vulnerability Management dashboard for that tenant in the [Microsoft 365 Defender](https://security.microsoft.com/machines) portal.
+Select a tenant name to navigate to the Defender Vulnerability Management dashboard for that tenant in the [Microsoft Defender XDR](https://security.microsoft.com/machines) portal.
 
 For more information, see [Microsoft Defender Vulnerability Management dashboard](../defender-vulnerability-management/tvm-dashboard-insights.md).
 

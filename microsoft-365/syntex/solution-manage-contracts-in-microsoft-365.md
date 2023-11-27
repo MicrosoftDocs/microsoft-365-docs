@@ -2,7 +2,7 @@
 title: Manage contracts using a Microsoft 365 solution
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 audience: admin
 ms.topic: conceptual
