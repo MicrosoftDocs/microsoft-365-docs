@@ -136,13 +136,41 @@ The **Data Transfer** section of the **Data Protection** settings for an Windows
 
 ### Access requirements
 
+**iOS/iPadOS**:
+
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-10.png" alt-text="Access requirements UI for iOS/iPadOS" border="false" :::
+
+**Android**:
+
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-11.png" alt-text="Access requirements UI for Android" border="false" :::
+
 ### Conditional launch
 
-## Health checks
+**iOS/iPadOS**:
+
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-12.png" alt-text="Conditional launch UI for iOS/iPadOS" border="false" :::
+
+**Android**:
+
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-13.png" alt-text="Conditional launch UI for Android" border="false" :::
+
+
+### Health checks
+
+**Wihdows**:
+
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-14.png" alt-text="Health checks UI for Windows" border="false" :::
+
 
 ## How app protection policies protect app data
 
 ### With enrollment (MDM, devices channel)
+
 ### Without enrollment (MAM, app channel)
 
 
