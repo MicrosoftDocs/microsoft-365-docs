@@ -103,7 +103,7 @@ Any system that receives this required configuration maintains that configuratio
 
 Follow the steps below to onboard endpoints using Microsoft Configuration Manager.
 
-1. In Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.
+1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.
 
     :::image type="content" source="images/configmgr-device-collections.png" alt-text="The Microsoft Configuration Manager wizard1" lightbox="images/configmgr-device-collections.png":::
 
