@@ -37,7 +37,11 @@ This article describes how admins can manage entries for email senders in the Mi
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- For domains and email addresses, the maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 domain and email address entries in total).
+- For domains and email addresses, if you are on exchange online protection service plan, the maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 domain and email address entries in total).
+
+- For domains and email addresses, if you are on MDO P1 service plan, the maximum number of allow entries is 1000, and the maximum number of block entries is 1000 (2000 domain and email address entries in total).
+
+  For domains and email addresses, if you are on MDO P2 service plan, the maximum number of allow entries is 5000, and the maximum number of block entries is 10000 (15000 domain and email address entries in total).
 
 - For spoofed senders, the maximum number of allow entries and block entries is 1024 (1024 allow entries and no block entries, 512 allow entries and 512 block entries, etc.).
 
