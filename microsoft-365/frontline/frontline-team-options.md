@@ -2,7 +2,7 @@
 title: How to find the best frontline team solution for your organization
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: aaglick
 ms.topic: how-to
 audience: admin

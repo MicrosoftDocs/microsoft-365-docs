@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/17/2021
+ms.date: 11/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -23,10 +23,6 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "After you've saved and accessed all of a former employee's user data, you can delete the former employee's account in the Microsoft 365 admin center."
 ---
 
