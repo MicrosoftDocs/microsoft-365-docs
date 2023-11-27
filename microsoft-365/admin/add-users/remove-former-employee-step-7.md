@@ -57,9 +57,7 @@ If you're using Microsoft Entra ID, see the [Remove-MgUser](/powershell/module/m
 
 Here's information about how to get an employee out of email (Exchange).
 
-<br>
 
-****
 
 |What you can do|How you do it|
 |:-----|:-----|
@@ -70,9 +68,7 @@ Here's information about how to get an employee out of email (Exchange).
 
 The above operations can be done in three places:
   
-<br>
 
-****
 
 |If you terminate the session here|How long it takes|
 |---|---|
