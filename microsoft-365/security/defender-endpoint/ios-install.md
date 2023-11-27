@@ -56,11 +56,11 @@ This section covers:
   
 1. **Automated Onboarding setup** (only for **Unsupervised** devices) - Admins can automate the Defender for Endpoint onboarding for users in two different ways:
     1. **Zero touch (Silent) Onboarding** - App is automatically installed and activated without the need for users to open the app.
-    1. **Auto Onboarding of VPN** - Defender for Endpoint VPN profile is automatically setup without having the user to do so during onboarding. This step is not recommended in Zero touch configurations.
+    1. **Auto Onboarding of VPN** - Defender for Endpoint VPN profile is automatically set up without having the user to do so during onboarding. This step is not recommended in Zero touch configurations.
 
 1. **User Enrollment setup** (only for Intune User Enrolled devices) - Admins can deploy and configure the Defender for Endpoint app on the Intune User Enrolled devices also.
 
-1. **Complete onboarding and check status** -  This step is applicable for all enrolment types to ensure app is installed on the device, onboarding is completed and device is visible in the Microsoft Defender portal. It can be skipped for the zero touch (silent) onboarding.
+1. **Complete onboarding and check status** -  This step is applicable for all enrollment types to ensure app is installed on the device, onboarding is completed and device is visible in the Microsoft Defender portal. It can be skipped for the zero touch (silent) onboarding.
 
 ## Deployment steps (applicable for both Supervised and Unsupervised devices)
 
