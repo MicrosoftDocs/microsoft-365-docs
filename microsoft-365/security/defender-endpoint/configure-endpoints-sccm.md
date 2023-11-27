@@ -119,7 +119,7 @@ Follow the steps below to onboard endpoints using Microsoft Configuration Manage
 
     :::image type="content" source="images/configmgr-query-rule.png" alt-text="The Microsoft Configuration Manager wizard4" lightbox="images/configmgr-query-rule.png":::
 
-5. Select **Next** on the **Direct Membership Wizard** and select on **Edit Query Statement**.
+5. Select **Next** on the **Direct Membership Wizard** and then select **Edit Query Statement**.
 
     :::image type="content" source="images/configmgr-direct-membership.png" alt-text="The Microsoft Configuration Manager wizard5" lightbox="images/configmgr-direct-membership.png":::
 
