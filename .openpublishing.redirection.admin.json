@@ -1727,6 +1727,11 @@
          "redirect_document_id":false
       },
       {
+         "source_path":"microsoft-365/admin/manage/remove-licenses-from-users.md",
+         "redirect_url":"/microsoft-365/admin/manage/assign-licenses-to-users",
+         "redirect_document_id":true
+      },
+      {
          "source_path":"microsoft-365/admin/dns/create-dns-records-at-bluehost.md",
          "redirect_url":"/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
          "redirect_document_id":false
@@ -1808,7 +1813,7 @@
       },
       {
          "source_path":"microsoft-365/admin/misc/business-assist.md",
-         "redirect_url":"https://support.microsoft.com/office/business-assist-for-microsoft-365-37deb8fe-61cc-4cf9-9ad1-1c8d93475070",
+         "redirect_url":"https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070",
          "redirect_document_id":false
       },
       {
@@ -2020,6 +2025,56 @@
          "source_path": "microsoft-365/admin/manage/language-translation-for-message-center-posts.md",
          "redirect_url": "/microsoft-365/enterprise/view-service-health",
          "redirect_document_id":false
-       }       
+       },
+       {
+         "source_path": "microsoft-365/admin/email/resolve-issues-with-shared-mailboxes.md",
+         "redirect_url": "/microsoft-365/admin/email/about-shared-mailboxes",
+         "redirect_document_id":false
+       },
+       {
+         "source_path": "microsoft-365/admin/new-subscription-names.md",
+         "redirect_url": "https://go.microsoft.com/fwlink/p/?linkid=2120533",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/misc/deleted-user.md",
+         "redirect_url": "/microsoft-365/admin/add-users/delete-a-user",
+         "redirect_document_id":false
+       },
+       {
+         "source_path": "microsoft-365/admin/setup/migrate-email-and-contacts-admin.md",
+         "redirect_url": "https://support.microsoft.com/office/365-2c37f0b7-2915-423c-b35e-9e03267f23dc",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/services-in-china/services-in-china.md",
+         "redirect_url": "/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-operated-by-21vianet",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/services-in-china/download-office-app-for-android.md",
+         "redirect_url": "https://support.microsoft.com/office/0383d031-a1c6-46c9-b734-53cd1d22765b",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/services-in-china/download-office-app-for-ios.md",
+         "redirect_url": "https://support.microsoft.com/office/c8880c05-883a-46b6-ad32-9bffa31228d0",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/services-in-china/apply-for-a-fapiao.md",
+         "redirect_url": "/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-operated-by-21vianet",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/misc/device-list.md",
+         "redirect_url": "https://learn.microsoft.com/autopilot/add-devices",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/misc/cortana-integration.md",
+         "redirect_url": "https://support.microsoft.com/topic/d025b39f-ee5b-4836-a954-0ab646ee1efa",
+         "redirect_document_id": false
+       }
    ]
 }

@@ -20,6 +20,8 @@
         href: uploadapplication.md
       - name: Create Package from App Gallery
         href: createpackagefromappgallery.md
+      - name: Package Validation
+        href: packagevalidation.md
     - name: Build a Package
       href: buildpackage.md
     - name: Clone an existing package
@@ -42,6 +44,8 @@
       href: validate-monthly-security-updates.md
     - name: Validate apps against a custom image
       href: validate-apps-against-a-custom-image.md
+    - name: Validate your Intune apps and policies on Test Base
+      href: import-intune-credentials.md
 - name: How-to guides
   items:
   - name: Server application testing
@@ -85,7 +89,11 @@
     href: prepare-testbase-vhd-file.md
   - name: SDK & API
     href: sdkapi.md
+  - name: Grant Test Base managed identities to your Key Vault account
+    href: managed-identity.md
 - name: Reference
   items:
   - name: Frequently Asked Questions
     href: faq.md
+  - name: Test Base Chat
+    href: chat.md

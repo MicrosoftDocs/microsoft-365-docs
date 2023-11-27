@@ -1,7 +1,7 @@
 ---
-title: Alerts queue in Microsoft 365 Defender
+title: Alerts queue in Microsoft Defender XDR
 ms.reviewer:
-description: View and manage the alerts surfaced in Microsoft 365 Defender
+description: View and manage the alerts surfaced in Microsoft Defender XDR
 keywords:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -22,7 +22,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Alerts queue in Microsoft 365 Defender
+# Alerts queue in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

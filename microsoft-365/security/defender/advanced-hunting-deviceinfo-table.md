@@ -4,8 +4,8 @@ description: Learn about OS, computer name, and other machine information in the
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, machineinfo, DeviceInfo, device, machine, OS, platform, users
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,7 +29,7 @@ ms.date: 03/07/2023
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Defender for Endpoint
 
 The `DeviceInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about devices in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from this table.
@@ -48,9 +48,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `PublicIP` | `string` | Public IP address used by the onboarded machine to connect to the Microsoft  Defender for Endpoint service. This could be the IP address of the machine itself, a NAT device, or a proxy |
 | `OSArchitecture` | `string` | Architecture of the operating system running on the machine |
 | `OSPlatform` | `string` | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
-| `OSBuild` | `string` | Build version of the operating system running on the machine |
-| `IsAzureADJoined` | `boolean` | Boolean indicator of whether machine is joined to the Azure Active Directory |
-| `AadDeviceId` | `string` | Unique identifier for the device in Azure AD |
+| `OSBuild` | `long` | Build version of the operating system running on the machine |
+| `IsAzureADJoined` | `boolean` | Boolean indicator of whether machine is joined to the Microsoft Entra ID |
+| `AadDeviceId` | `string` | Unique identifier for the device in Microsoft Entra ID |
 | `LoggedOnUsers` | `string` | List of all users that are logged on the machine at the time of the event in JSON array format |
 | `RegistryDeviceTag` | `string` | Machine tag added through the registry |
 | `OSVersion` | `string` | Version of the operating system running on the machine |
