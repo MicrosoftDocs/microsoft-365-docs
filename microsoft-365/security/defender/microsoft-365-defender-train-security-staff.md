@@ -3,8 +3,7 @@ title: Train your security staff for Microsoft Defender XDR
 description: Get to the key training resources for quick ramp-up of your security staff.
 keywords: videos, self-help, self-study, ramp-up, instruction, courses, learning path, Microsoft Learn, course, courses, SecOps, security analyst
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

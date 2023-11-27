@@ -69,12 +69,13 @@ The discovery engine distinguishes between network events that are received in t
 ## What protocols are you capturing and analyzing?
 
 By default, all onboarded devices running on Windows 10 version 1809 or later, Windows 11, Windows Server 2019, or Windows Server 2022 are capturing and analyzing the following protocols:
-ARP, CDP, DHCP, DHCPv6, IP (headers), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (SYN headers), UDP (headers), WSD
+ARP, CDP, DHCP, DHCPv6, IP (headers), LLDP, LLMNR, mDNS, MNDP, MSSQL, NBNS, SSDP, TCP (SYN headers), UDP (headers), WSD
 
 ## Which protocols do you use for active probing in Standard discovery?
 When a device is configured to run Standard discovery, exposed services are being probed by using the following protocols:
 ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP, LDAP
 
+In addition, device discovery might also scan other commonly used ports to improve classification accuracy & coverage.
 
 ## How can I exclude targets from being probed with Standard discovery?
 

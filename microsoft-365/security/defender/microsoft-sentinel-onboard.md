@@ -1,8 +1,7 @@
 ---
 title: Connect Microsoft Sentinel to Microsoft Defender XDR (preview)
 description: Learn how to connect your Microsoft Sentinel environment to Microsoft Defender XDR to unify your security operations.
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -79,7 +78,6 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
 1. Read and understand the product changes associated with connecting your workspace. These changes include:
 
    - Log tables, queries, and functions in the Microsoft Sentinel workspace are also available in advanced hunting within Defender XDR.
-   - Only Microsoft Sentinel alerts that are tied to incidents are ingested into the `AlertInfo` table in Defender XDR. All other alerts are added to the `BehaviorInfo` table.
    - The Microsoft Sentinel Contributor role is assigned to the Microsoft Threat Protection and WindowsDefenderATP apps within the subscription.
    - Active [Microsoft security incident creation rules](/azure/sentinel/create-incidents-from-alerts#using-microsoft-security-incident-creation-analytics-rules) are deactivated to avoid duplicate incidents. This change only applies to incident creation rules for Microsoft alerts and not to other analytics rules.
    - All alerts related to Defender XDR products are streamed directly from the main Defender XDR data connector to ensure consistency. Make sure you have incidents and alerts from this connector turned on in the workspace.

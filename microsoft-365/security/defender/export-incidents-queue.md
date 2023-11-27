@@ -3,8 +3,7 @@ title: Export incidents queue to CSV files
 description: Learn about the newly introduced Export button to migrate incidents queue-related data to CSV files
 keywords: incident, queue, export, csv
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

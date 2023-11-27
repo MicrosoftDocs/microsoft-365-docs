@@ -33,7 +33,7 @@ The following are the prerequisites for using Microsoft 365 Copilot. If your org
 [Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoft365appssetup) in the Microsoft 365 admin center to deploy to your users.
 
 > [!NOTE]
-> For Copilot to work in Word Online and PowerPoint Online, you need to have third-party cookies enabled.
+> For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
 
 ### Microsoft Entra ID
 
@@ -89,4 +89,4 @@ Microsoft 365 Chat does not currently support Restricted Access Control and Micr
 
 ## Privacy settings for Microsoft 365 Apps for enterprise
 
-Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
