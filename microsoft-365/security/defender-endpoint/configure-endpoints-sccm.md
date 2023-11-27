@@ -107,7 +107,7 @@ Follow the steps below to onboard endpoints using Microsoft Configuration Manage
 
     :::image type="content" source="images/configmgr-device-collections.png" alt-text="The Microsoft Configuration Manager wizard1" lightbox="images/configmgr-device-collections.png":::
 
-2. Right select **Device Collection** and select **Create Device Collection**.
+2. Select and hold (or right-click) **Device Collection** and select **Create Device Collection**.
 
     :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="The Microsoft Configuration Manager wizard2" lightbox="images/configmgr-create-device-collection.png":::
 
