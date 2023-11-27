@@ -74,7 +74,7 @@ See [Admin Management of Loop workspaces](/microsoft-365/loop/loop-compliance-su
 
 ## Pricing and licensing model for Loop app
 
-Refer to [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/en-us/office/loop-access-via-microsoft-365-subscriptions-92915461-4b14-49a4-9cd4-d1c259292afa).
+Refer to [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/office/92915461-4b14-49a4-9cd4-d1c259292afa).
 
 ## Related topics
 
