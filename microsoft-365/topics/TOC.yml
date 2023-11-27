@@ -1,14 +1,14 @@
-    - name: Get started with Viva Topics
+    - name: Get started with Topics
       items:    
-        - name: Viva Topics overview
+        - name: Topics overview
           href: topic-experiences-overview.md
-        - name: Where to find Viva Topics
+        - name: Where to find Topics
           href: where-to-find-topics.md
-        - name: Viva Topics discovery and curation
+        - name: Topics discovery and curation
           href: topic-experiences-discovery-curation.md
-        - name: Try Viva Topics in Viva Engage
+        - name: Try Topics in Viva Engage
           href: topics-lightweight-management.md
-        - name: Viva Topics roles
+        - name: Topics roles
           items:
             - name: Overview
               href: topic-experiences-roles.md 
@@ -20,7 +20,7 @@
           href: topics-language-support.md 
         - name: Get your environment ready 
           href: topic-experiences-get-ready.md  
-        - name: Viva Topics FAQ
+        - name: Topics FAQ
           href: faq-topics.md         
 
     - name: Setup and administration
@@ -41,17 +41,21 @@
           href: rename-topic-center.md
         - name: Add the Topics app to Teams
           href: add-topics-app.md
-        - name: Viva Topics in Viva Engage
+        - name: Topics in Viva Engage
           href: topic-experiences-viva-engage.md
 
     - name: Topics analytics
       items:
         - name: Topics analytics
           href: topics-analytics.md
+        - name: Adoption health metrics
+          href: health-metrics.md
+        - name: Usage and engagement metrics
+          href: topics-engagement-metrics.md
        
     - name: Work with topics
       items:
-        - name: Learn about topics in Viva Topics
+        - name: Learn about topics in Topics
           href: get-started-with-viva-topics.md
         - name: Topic center overview
           href: topic-center-overview.md    

@@ -29,7 +29,7 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 - **Training assignment notification**: Sent when users are assigned required trainings as a result of a simulation or simulation automations.
 - **Training reminder notification**: Sent as reminders for required trainings.
 
-To see the available end-user notifications, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **End user notifications**. To go directly to the **Content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+To see the available end-user notifications, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **End user notifications**. To go directly to the **Content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **End user notifications** in the **Content library** tab has two tabs:
 
@@ -86,7 +86,7 @@ On the details flyout from the **Tenant notifications** tab only, select **Edit 
 
 ## Create end-user notifications
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **End user notifications** \> and then select the **Tenant notifications** tab. To go directly to the **Content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **End user notifications** \> and then select the **Tenant notifications** tab. To go directly to the **Content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 2. On the **Tenant notifications** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new** to start the new end-user notification wizard.
 
