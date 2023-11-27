@@ -3,7 +3,7 @@ title: Recommended Teams policies - Microsoft 365 for enterprise | Microsoft Doc
 description: Describes the policies for Microsoft recommendations about how to secure Teams communication and file access.
 author: MicrosoftHeidi
 manager: serdars
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
 audience: Admin
 f1.keywords: 
@@ -22,7 +22,6 @@ ms.collection:
   - zerotrust-solution
   - highpri
   - tier1
-ms.subservice: mdo
 search.appverid: met150
 ---
 
@@ -48,7 +47,7 @@ You don't need to enable dependent services to get started with Microsoft Teams.
 
 To protect chat, groups and content in Teams, the following diagram illustrates which policies to update from the common identity and device access policies. For each policy to update, make sure that Teams and dependent services are included in the assignment of cloud apps.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="The summary of policy updates for the protection of access to Teams and its dependent services" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.svg" alt-text="The summary of policy updates for the protection of access to Teams and its dependent services" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.svg":::
 
 These services are the dependent services to include in the assignment of cloud apps for Teams:
 

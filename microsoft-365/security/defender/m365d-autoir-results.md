@@ -3,8 +3,7 @@ title: Details and results of an automated investigation
 description: View the results and key findings of automated investigation in Microsoft Defender XDR
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

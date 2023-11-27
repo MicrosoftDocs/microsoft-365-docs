@@ -3,8 +3,7 @@ title: Supported Microsoft Defender XDR APIs
 description: Supported Microsoft Defender XDR APIs
 keywords: Microsoft 365 Defender, APIs, api
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

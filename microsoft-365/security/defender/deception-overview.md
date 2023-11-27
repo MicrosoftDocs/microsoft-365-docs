@@ -2,8 +2,7 @@
 title: Manage the deception capability in Microsoft Defender XDR
 description: Detect human-operated attacks with lateral movement in the early stages using high confidence signals from the deception feature in Microsoft Defender XDR.
 keywords:  deception, defender for endpoint, Microsoft 365 Defender, Microsoft defender for endpoint, lures, fake hosts, fake users, fake network, honeypot, honeytoken, decoy, fake host, fake user, deception technology
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
