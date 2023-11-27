@@ -64,6 +64,9 @@ Runs a sequence of live response commands on a device
 
 8. Multiple live response sessions can't be executed on the same machine (if live response action is already running, subsequent requests are responded to with HTTP 400 - ActiveRequestAlreadyExists).
 
+> [!NOTE]
+> Live response actions initiated from the Device page are not available in the machineactions API.
+
 ## Minimum Requirements
 
 Before you can initiate a session on a device, make sure you fulfill the following requirements:

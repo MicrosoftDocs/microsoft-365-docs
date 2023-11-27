@@ -37,7 +37,7 @@ ms.date: 06/07/2023
 
 You can submit feedback by opening Microsoft Defender for Endpoint on Mac on your device and by navigating to **Help > Send feedback**.
 
-Another option is to submit feedback via the Microsoft Defender XDR by launching **security.microsoft.com** and selecting the **Give feedback** tab.
+Another option is to submit feedback via the Microsoft Defender XDR by launching **security.microsoft.com** and selecting the **Give feedback** tab.
 
 This article provides information on how to troubleshoot issues with the system extension that's installed as part of Microsoft Defender for Endpoint on macOS.
 

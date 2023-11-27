@@ -75,7 +75,7 @@ In the Microsoft Defender portal, create a custom role group that contains the p
 2. Name your Microsoft Entra group to reflect its purpose, **no owners or members are required** right now.
 3. Turn **Microsoft Entra roles can be assigned to the group** to **Yes**.
 4. Don't add any roles, members or owners, create the group.
-5. Go back into the group you've just created, and select **Privileged Access** > **Enable Privileged Access**.
+5. Go back into the group you've just created, and select **Privileged Identity Management** > **Enable PIM**.
 6. Within the group, select **Eligible assignments** > **Add assignments** > Add the user who needs Search & Purge as a role of **Member**.
 7. Configure the **Settings** within the group's Privileged Access pane. Choose to **Edit** the settings for the role of **Member**.
 8. Change the activation time to suit your organization. In this example require *Azure MFA*, *justification*, and *ticket information* before selecting **Update**.
