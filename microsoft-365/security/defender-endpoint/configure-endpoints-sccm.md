@@ -127,7 +127,7 @@ Follow the steps below to onboard endpoints using Microsoft Configuration Manage
 
     :::image type="content" source="images/configmgr-criteria.png" alt-text="The Microsoft Configuration Manager wizard6" lightbox="images/configmgr-criteria.png":::
 
-7. Keep criterion type as **simple value**, choose whereas **Operating System - build number**, operator as **is greater than or equal to** and value **14393** and select on **OK**.
+7. Keep criterion type as **simple value**, choose whereas **Operating System - build number**, operator as **is greater than or equal to** and value **14393**, and select **OK**.
 
     :::image type="content" source="images/configmgr-simple-value.png" alt-text="The Microsoft Configuration Manager wizard7" lightbox="images/configmgr-simple-value.png":::
 
