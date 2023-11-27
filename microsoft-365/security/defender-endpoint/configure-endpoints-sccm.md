@@ -95,7 +95,7 @@ For more information about System Center Configuration Manager Compliance, see [
 
 To onboard Windows devices with Microsoft Configuration Manager, the deployment can target an existing collection or a new collection can be created for testing.
 
-Onboarding using tools such as Group policy or manual method doesn't install any agent on the system.
+Onboarding using tools such as Group Policy or a manual method doesn't install any agents on the system.
 
 Within the Microsoft Configuration Manager, console the onboarding process will be configured as part of the compliance settings within the console.
 
