@@ -44,7 +44,19 @@ For iOS/iPadOS and Android platforms, you can apply app protection policies to a
 
 ## App protection
 
-App protection can be applied to supported managed apps on supported platform devices that are either enrolled with Microsoft Intune, enrolled in a third-party Mobile device management (MDM) solution, or are not enrolled in any mobile device management solution. When creating an app protection policy, you specifically choose the app you want to protect, select the data protection settings, determine your access requirements, and apply conditional launch settings. Different settings are available for the different supported platforms.
+App protection can be applied to supported managed apps on supported platform devices that are either enrolled with Microsoft Intune, enrolled in a third-party Mobile device management (MDM) solution, or are not enrolled in any mobile device management solution. When creating an app protection policy, you choose the following details in the following order:
+
+1. The platform
+2. The app you want to protect
+3. The data protection settings for the app
+4. The access requirements for the app
+5. The conditional launch settings for the app
+
+In addition to the above list, you can also choose scope tags and app assignments. 
+
+### App protection categories by platform
+
+Different app protection settings are available for each supported platform. It is important to recognize that the iOS/iPadOS and Android platform have the same app protection categories. However, Windows is different. The Windows platform protects organization data by managing the flow of data through Microsoft Edge to your organization's storage locations.
 
 | Platform  | App protection categories |
 |---|---|
@@ -52,10 +64,81 @@ App protection can be applied to supported managed apps on supported platform de
 | Android | Data protection, Access requirements, Conditional launch |
 | Windows | Data protection, Health checks |
 
-### Data protection
-### Access protection (access requirements)
-### Launch protection (conditional launch)
+When you create an app protection policy, you  choose the platform, the app to target,  
 
+### Data protection
+
+The **Data Protection** settings determine how users interact with org data and context in policy-managed apps. As the admin, you can control the movement of data into and out of the context of org protection. The org context is defined by documents, services, and sites accessed by the specified org account. The app protection policy settings help control external data received into the org context and org data sent out of the org context.
+
+> [!NOTE]
+> The term *policy-managed apps* refers to apps that are configured with app protection policies.
+
+Data protection is available for policy-managed apps that support the [iOS/iPadOS](/mem/intune/apps/app-protection-policy-settings-ios#data-protection), [Android](/mem/intune/apps/app-protection-policy-settings-android#data-protection), and [Windows](/mem/intune/apps/app-protection-policy-settings-windows#data-protection) platforms. Each platform offers a different set of settings related to data protection.
+
+Data protection has three primary categories:
+
+| Data Protection  | Categories |
+|---|---|
+| iOS/iPadOS  | Data Transfer, Encryption, Functionality  |
+| Android | Data Transfer, Encryption, Functionality |
+| Windows | Data Transfer, Functionality |
+
+#### Data Transfer
+
+**iOS/iPadOS**:
+The **Data Transfer** section of the **Data Protection** settings for an iOS/iPadOS specific app protection policy has settings that are specific to the iOS/iPadOS platform. These settings include the Data Loss Prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. 
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-02.png" alt-text="Data Transfer UI for iOS/iPadOS" border="false" :::
+
+**Android**:
+The **Data Transfer** section of the **Data Protection** settings for an Android specific app protection policy has settings that are specific to the Android platform. These settings include the Data Loss Prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. 
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-03.png" alt-text="Data Transfer UI for Android" border="false" :::
+
+**Windows**:
+The **Data Transfer** section of the **Data Protection** settings for an Windows specific app protection policy has settings that are specific to the Windows platform. These settings include the Data Loss Prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. 
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-04.png" alt-text="Data Transfer UI for Windows" border="false" :::
+
+#### Encryption
+
+**iOS/iPadOS**:
+
+
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-05.png" alt-text="Encryption UI for iOS/iPadOS" border="false" :::
+
+**Android**:
+
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-06.png" alt-text="Encryption UI for Android" border="false" :::
+
+
+#### Functionality
+
+**iOS/iPadOS**:
+
+
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-07.png" alt-text="Functionality UI for iOS/iPadOS" border="false" :::
+
+**Android**:
+
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-08.png" alt-text="Functionality UI for Android" border="false" :::
+
+**Windows**:
+
+
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-09.png" alt-text="Functionality UI for Windows" border="false" :::
+
+
+
+### Access requirements
+
+### Conditional launch
+
+## Health checks
 
 ## How app protection policies protect app data
 
@@ -65,4 +148,6 @@ App protection can be applied to supported managed apps on supported platform de
 
 ## Understand app protection framework
 
-https://learn.microsoft.com/en-us/mem/intune/apps/app-protection-policy#app-protection-policy-data-protection-framework
+<!--
+https://learn.microsoft.com/mem/intune/apps/app-protection-policy#app-protection-policy-data-protection-framework
+-->
