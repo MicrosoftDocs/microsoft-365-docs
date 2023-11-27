@@ -139,8 +139,7 @@ Follow the steps below to onboard endpoints using Microsoft Configuration Manage
 
     :::image type="content" source="images/configmgr-confirm.png" alt-text="The Microsoft Configuration Manager wizard9" lightbox="images/configmgr-confirm.png":::
 
-After completing this task, you now have a device collection with all the Windows endpoints in the environment.
-
+After completing this task you have a device collection with all the Windows endpoints in the environment.
 
 ## Other recommended configuration settings
 
