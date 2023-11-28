@@ -1,11 +1,6 @@
 {
     "redirections": [
         {
-            "source_path": "test-base/testbase-for-m365-product-terms.md",
-            "redirect_url": "https://learn.microsoft.com/legal/test-base/testbase-for-m365-product-terms",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "solutions/secure-teams-security-isolation.md",
             "redirect_url": "/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
             "redirect_document_id": false
@@ -18,11 +13,6 @@
         {
             "source_path": "compliance/intro-to-info-mgmt-policies.md",
             "redirect_url": "/sharepoint/intro-to-info-mgmt-policies",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "test-base/testbase-for-m365-product-terms-changehistory.md",
-            "redirect_url": "/legal/test-base/testbase-for-m365-product-terms-changehistory",
             "redirect_document_id": false
         },
         {
