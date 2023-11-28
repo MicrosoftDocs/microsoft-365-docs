@@ -53,6 +53,9 @@ Administrators should notify the site owners and end users before a site is arch
 
 ## Preview limitations
 
+> [!NOTE]
+> These limitations are temporary during the preview. Unless otherwise stated, these limitations will be resolved when the product is available for general release.
+
 - As a part of the preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the **Archived sites** page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
 
 - Currently, end user search results won't show any archived content. Columns such as Archived Date and Archived By aren't currently available, but are planned and will be rolled out when available.
