@@ -1,6 +1,6 @@
 ---
 ms.date: 08/21/2023
-title: "Manage Loop workspaces in Syntex repository services"
+title: "Manage Loop workspaces in SharePoint Embedded"
 ms.reviewer: dancost, tonchan
 ms.author: v-smandalika
 author: v-smandalika
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - SPO160
 - MET150
-description: "Learn how to manage Loop workspaces in Syntex repository services."
+description: "Learn how to manage Loop workspaces in SharePoint Embedded."
 ---
 
-# Manage Loop workspace experiences in Microsoft Syntex repository services
+# Manage Loop workspace experiences in SharePoint Embedded
 
-Loop workspaces and the content created in Loop workspaces are backed by [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/). IT admins can manage access to Loop workspaces experiences using Cloud Policy.
+Loop workspaces and the content created in Loop workspaces are stored in [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428) containers. IT admins can manage access to Loop workspaces experiences using Cloud Policy.
 
 If you're looking to manage Loop components in the Microsoft 365 ecosystem, visit [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration).
 
