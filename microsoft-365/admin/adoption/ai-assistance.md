@@ -20,16 +20,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Learn about the AI assistance category in Adoption Score." 
+description: "Learn about the AI assistance category in Adoption Score."
 ---
 
 # AI Assistance Category in Adoption Score
 
 With AI rapidly entering the day-to-day experience of people in your organization, you'll see a new People Experiences category called AI assistance, set to roll out in the coming weeks.
 
-First, it offers a score, on a 100-point scale, to quickly assess how well people in your organization are adopting Copilot in Microsoft 365.
+First, it offers a score, on a 100-point scale, to quickly assess how well people in your organization are adopting Microsoft Copilot for Microsoft 365.
 
-You can dive deeper into what makes up your AI assistance score by looking at the specific features and activities that drive impact, like how well your organization is using Copilot to summarize and create content in your organization, be it Teams meetings, Chat, email in Outlook, documents in Word or PowerPoint and more.
+You can dive deeper into what makes up your AI assistance score by looking at the specific features and activities that drive impact, like how well your organization is using Copilot to summarize and create content in your organization, including Teams meetings, Chat, email in Outlook, documents in Word or PowerPoint, and more.
 
 ## Prerequisites
 
@@ -43,31 +43,35 @@ After people have been active in Copilot at least once in the last 28 days, you'
 
 ## Scoring framework
 
-The AI assistance score for your organization measures at an aggregate (organizational) level whether users are consistently using Copilot capabilities across Microsoft 365 apps within the last 28 days.
+The AI assistance score for your organization measures at an organizational level whether users are consistently using Copilot capabilities across Microsoft 365 apps within the last 28 days.
 
 Scores aren't provided at the individual user level.
 
 ## Overall score
 
-The overall score takes into account individual user activity (each tenant) across different insights in summarization and creation (of documents, emails and presentations) in RL28 day time frame, with a focus that better use of Copilot best practices leads to a better score.  
+The overall score takes into account individual user activity (each tenant) across different insights in summarization and creation (of documents, emails and presentations) in RL28 day time frame, with a focus that better use of Copilot best practices leads to a better score.
 
-Further, a user score is calculated with the usage intensity of individual user and the possible utilization threshold (12 days as of now) of Copilot activity in mind. The tenant AI Assistance scores are created by the combination of user scores of each tenant and the number of individuals enabled to use Copilot (for the applications considered).
+Further, a user score is calculated with the usage intensity of individual user and the possible utilization threshold (currently 12 days) of Copilot activity in mind. The tenant AI Assistance scores are created by the combination of user scores of each tenant and the number of individuals enabled to use Copilot (for the applications considered).
 
 :::image type="content" source="../../media/ai-assistance-dashboard.png" alt-text="Screenshot showing the AI assistance category dashboard in Adoption Score." lightbox="../../media/ai-assistance-dashboard.png":::
 
 ## What makes up my score
 
-There are two sections of insights: summarize and create. The summarize section captures all the information and data summarization across meetings and messages, sparing users the labor of sorting it out from notes and complex chat or email threads. The create section captures the user actions to get past the roadblock of staring at a blank page by jump-starting their creative process and helping to streamline the tasks of researching, writing, and editing across Microsoft 365 apps with the help of Copilot capabilities.
+There are two sections of insights: Summarize and Create.
 
-Each insight captures the number of Copilot-enabled users in your organization performing these actions at least once out of the total number who are enabled to perform in the last 28 days. You can find more details on insights within the following sections.
+The Summarize section captures all the information and data summarization across meetings and messages, sparing users the labor of sorting it out from notes and complex chat or email threads.
+
+The Create section captures the user actions to get past the roadblock of staring at a blank page by jump-starting their creative process and helping to streamline the tasks of researching, writing, and editing across Microsoft 365 apps with the help of Copilot capabilities.
+
+Each insight captures the number of Copilot-enabled users in your organization performing these actions at least once out of the total number who are enabled to perform in the last 28 days. You can find more details on insights within the following sections.
 
 ### Summarize
 
-- **Summarize a Teams meeting:** This represents the number of users who summarize meetings using copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a meeting in the copilot chat box.
-- **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a conversation in the copilot chat box.
-- **Summarize an email thread:** This represents the number of users who summarize email thread using copilot in Outlook. This doesn't include the instances when the user types to summarize an outlook thread in the copilot chat box.
-- **Summarize a Word document:** This represents the number of users who summarize word documents using copilot in Microsoft Word. This doesn't include the instances when the user types to summarize a document in the copilot chat box.
-- **Summarize a presentation:** This represents the number of users who summarize a presentation using copilot in Microsoft PowerPoint. This doesn't include the instances when the user types to summarize a presentation in the copilot chat box.
+- **Summarize a Teams meeting:** This represents the number of users who summarize meetings using Copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a meeting in the Copilot chat box.
+- **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a conversation in the Copilot chat box.
+- **Summarize an email thread:** This represents the number of users who summarize email threads using Copilot in Outlook. This doesn't include the instances when the user types to summarize an Outlook thread in the Copilot chat box.
+- **Summarize a Word document:** This represents the number of users who summarize Word documents using Copilot in Microsoft Word. This doesn't include the instances when the user types to summarize a document in the Copilot chat box.
+- **Summarize a presentation:** This represents the number of users who summarize a presentation using Copilot in Microsoft PowerPoint. This doesn't include the instances when the user types to summarize a presentation in the Copilot chat box.
 
 ### Create
 
