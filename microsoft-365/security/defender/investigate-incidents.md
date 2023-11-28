@@ -65,9 +65,7 @@ The incident alert page has these sections:
 - Alert story, which includes:
 
    - What happened
-
    - Actions taken
-
    - Related events
 
 - Alert properties in the right pane (state, details, description, and others)
@@ -87,6 +85,22 @@ From the graph, you can:
   :::image type="content" source="../../media/investigate-incidents/review-entity-details-attack-story.gif" alt-text="Screenshot that shows the review of the entity details on the attack story graph page.":::
 
 - Highlight the alerts based on the entity to which they are related.
+
+- Hunt for entity information of a device, file, IP address, or URL.
+
+[INSERT SCREENSHOT]
+
+The *go hunt* option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you’re investigating. You can select any of the options to find relevant information about the entity:
+
+    - See all available queries – [definition/description needed]
+    - All Activity – this query returns all activities associated with an entity, providing you with a comprehensive view of the incident's context. 
+    - Related Alerts – this query searches for and returns all security alerts involving a specific entity, ensuring you don't miss any information.
+
+[INSERT SCREENSHOT]
+
+The resulting logs or alerts can be linked to an incident.
+
+[INSERT SCREENSHOT]
 
 Use the **Summary** page to assess the relative importance of the incident and quickly access the associated alerts and impacted entities.
 
