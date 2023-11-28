@@ -46,8 +46,9 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Signature version: **1.399.690.0**<br/>
 
 **What's new**
-- Updated default Engine version to `1.1.23090.2008`, and default Signatures version to `1.399.690.0`.
-- General stability, performance and bug fixes.
+- Updated default engine version to `1.1.23090.2008`, and default signatures version to `1.399.690.0`.
+- General stability and performance improvements.
+- Bug fixes.
 
 </details>
 
