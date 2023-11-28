@@ -52,3 +52,7 @@ Follow these steps to manage on which SharePoint sites users can use translation
     b. To restrict user access to this service, under **Sites where files can be translated**, select **Edit**. Select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
+
+## Video transcript translation
+
+To turn on translation for video transcripts and closed captioning, see [Enable transcript translations in Stream for SharePoint](https://prod.support.services.microsoft.com/office/microsoft-syntex-pay-as-you-go-transcript-translations-in-stream-for-sharepoint-2e34ad1b-e213-47ed-a806-5cc0d88751de#bkmk_enabletranslations).
