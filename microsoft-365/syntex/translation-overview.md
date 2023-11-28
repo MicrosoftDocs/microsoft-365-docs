@@ -23,11 +23,13 @@ Microsoft Syntex lets you easily create a translated copy of a selected file or 
 
 This feature lets you translate files of different types either manually or automatically by creating a rule. You can also use custom glossaries and models to improve the quality and consistency of your translations.
 
+You can also use the translation feature for translating video transcripts and closed captioning. For more information, see [Transcript translations in Stream for SharePoint](https://prod.support.services.microsoft.com/office/microsoft-syntex-pay-as-you-go-transcript-translations-in-stream-for-sharepoint-2e34ad1b-e213-47ed-a806-5cc0d88751de).
+
 ## Requirements and limitations
 
 ### Supported file types
 
-Translation in Syntex is available for the following file types: .doc, .docx, .pdf, .xls, .xlsx, .rtf, and .txt.
+Document translation is available for the following file types: .doc, .docx, .pdf, .xls, .xlsx, .rtf, and .txt.
 
 ### Supported languages
 
@@ -35,8 +37,8 @@ Translation in Syntex is available for [all supported languages and dialects](/a
 
 ### Current release notes
 
-- Text on an image within a document is not translated.
+- Text on an image within a document isn't translated.
 
-- Password-protected files are not translated.
+- Password-protected files aren't translated.
 
 - On-demand translation on folders will be available in a future release.
