@@ -68,3 +68,11 @@ To create a rule to translate documents automatically when data in a column chan
     c. Select **Enter a language**, and then select the language into which you want to translate the file.
 
 4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
+
+## View the translation activity feed of a document library
+
+When a file is translated, you'll see an update in the source library activity feed. The updates occur in both the source library and the target library.
+
+In the document library, in the upper-right corner of the page, select the details pane icon (![Screenshot of the details pane icon.](../media/content-understanding/details-pane-icon.png)) to view the recent history, activity, and rules that have been applied to the library.
+
+   ![Screenshot of a document library showing the details pane highlighted.](../media/content-understanding/content-processing-details-pane.png)
