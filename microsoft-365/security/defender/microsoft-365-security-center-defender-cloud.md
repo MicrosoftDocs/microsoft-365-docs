@@ -2,8 +2,7 @@
 title: Microsoft Defender for Cloud in Microsoft Defender XDR
 description: Learn about changes in Microsoft Defender XDR with the Microsoft Defender for Cloud integration.
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Cloud
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:

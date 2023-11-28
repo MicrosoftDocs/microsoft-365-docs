@@ -2,8 +2,7 @@
 title: Microsoft Defender for Identity in Microsoft Defender XDR
 description: Learn about changes from the Microsoft Defender for Identity to Microsoft Defender XDR
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Identity, MDI
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:

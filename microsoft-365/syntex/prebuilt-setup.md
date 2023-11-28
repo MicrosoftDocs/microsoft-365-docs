@@ -2,13 +2,14 @@
 title: Set up and manage prebuilt document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 07/12/2023
 audience: admin
 ms.topic: conceptual
 ms.custom: setup
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic

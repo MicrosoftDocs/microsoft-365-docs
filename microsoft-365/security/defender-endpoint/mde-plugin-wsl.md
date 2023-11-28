@@ -13,7 +13,7 @@ ms.collection:
 - m365-security
 - tier2
 audience: ITPro
-ms.date: 11/15/2023
+ms.date: 11/21/2023
 search.appverid: MET150
 
 ---
@@ -22,23 +22,25 @@ search.appverid: MET150
 
 ## Overview
 
-Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint for Windows Subsystem for Linux 2 (WSL) enables Defender for Endpoint to provide more visibility into all running WSL containers, by plugging into the isolated subsystem.
+The Windows Subsystem for Linux (WSL) 2, which replaces the previous version of WSL (supported by Microsoft Defender for Endpoint without a plug-in), provides a Linux environment that is seamlessly integrated with Windows yet isolated using virtualization technology. The Microsoft Defender for Endpoint for Windows Subsystem for Linux 2 (WSL) plug-in enables Defender for Endpoint to provide more visibility into all running WSL containers, by plugging into the isolated subsystem.
 
 ## Known issues and limitations
 
 Be aware of the following before you start:
 
-1.	The plug-in doesn't yet automatically update. When a new plug-in version is released, the new MSI package needs to be applied to perform the update. This can be performed through any tool that deploys software. Updates are coming soon through Microsoft Update. You can continue to use the MSI package method, if you prefer.
+1.	The plug-in doesn't yet automatically update. When a new plug-in version is released, the new MSI package needs to be applied to perform the update. You can apply the new package by using any tool that deploys software. Updates are coming soon through Microsoft Update. If preferred, you can continue to use the MSI package method.
 
 2.	As it takes a few minutes for the plug-in to fully instantiate and up to 30 minutes for a WSL2 instance to onboard itself, short-lived WSL container instances might result in the WSL2 instance not showing up in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Once a (any) distribution has been running long enough (at least 30 minutes), it does show up.
 
 3.	If you're using a proxy in your (test) environment, make sure that the plug-in is set up to use it correctly. WSL is typically not automatically configured to use a proxy. For more information, see the section, [Setting a proxy for Defender running in WSL](#setting-a-proxy-for-defender-running-in-wsl).
 
+4.	The use of a custom kernel in combination with the plug-in is not supported. When you attempt to launch WSL with the plugin installed, you will encounter the error *A fatal error was returned by plugin 'DefenderforEndpointPlug-in'. Error message: 'Custom Kernel/Configuration not supported.'*. 
+
 ## Software prerequisites
 
 - WSL version 2.0.7 or later must be running with at least one active distro.
 
-   Run `wsl --update` to make sure you are on the latest version. If you observe `wsl –version` shows a version older than 2.0.7, run `wsl –update –pre-release` to get the latest update.
+   Run `wsl --update` to make sure you are on the latest version. If `wsl -–version` shows a version older than 2.0.7, run `wsl -–update –pre-release` to get the latest update.
 
 - Defender for Endpoint must be onboarded and running on the Windows host OS.
 
@@ -62,11 +64,11 @@ Components installed:
 
 ## Installation steps
 
-If you haven't yet installed Windows Subsystem for Linux, follow these steps:
+If you Windows Subsystem for Linux isn't installed yet, follow these steps:
 
 1. Open Terminal or Command Prompt. (In Windows, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.) 
 
-2. Run the command `wsl –install`.
+2. Run the command `wsl -–install`.
 
 ### Confirm WSL is installed and running
 
@@ -76,7 +78,7 @@ If you haven't yet installed Windows Subsystem for Linux, follow these steps:
 
 ### Install the plug-in
 
-After you have ensured that WSL is running and fully up to date, follow these steps to install the plug-in:
+After WSL is running and fully up to date, follow these steps to install the plug-in:
 
 1. Install the MSI file downloaded from the onboarding section in the Microsoft Defender portal (**Settings** > **Endpoints** > **Onboarding** > **Windows Subsystem for Linux 2 (plug-in)**.)
 
@@ -93,7 +95,7 @@ After you have ensured that WSL is running and fully up to date, follow these st
 
 2. Open Terminal or Command Prompt. (In Windows, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.) 
 
-3. Run the command: `cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
+3. Run the command: ```cd "C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools"```.
 
 4. Run the command `.\healthcheck.exe`.
 
@@ -133,9 +135,7 @@ If you want to set up a different proxy for Defender running in WSL (other than 
 
 ## Connectivity test for Defender running in WSL
 
-These instructions help you verify if Defender in Endpoint in WSL has connectivity to the internet. 
-
-To run the connectivity test, please follow the below instructions:
+The following procedure describes how to confirm that Defender in Endpoint in WSL has internet connectivity. 
 
 1. Open Registry Editor as an administrator.
 
@@ -200,7 +200,7 @@ Treat the machine as if it were a regular Linux host in your environment to perf
 
 In the Advanced Hunting schema, under the `DeviceInfo` table, there's a new attribute called `HostDeviceId` that you can use to map a WSL instance to its Windows host device. Here are a few sample hunting queries: 
 
-#### Get all WSL device ids for the current organization/tenant 
+#### Get all WSL device IDs for the current organization/tenant 
 
 ```kusto
 Get all WSL device ids for the current organization/tenant 
@@ -210,7 +210,7 @@ let wsl_endpoints = DeviceInfo
 wsl_endpoints
 ```
 
-#### Get WSL device ids and their corresponding host device ids 
+#### Get WSL device IDs and their corresponding host device IDs 
 
 ```kusto
 Get WSL device ids and their corresponding host device ids 
@@ -219,7 +219,7 @@ DeviceInfo
 | distinct WSLDeviceId=DeviceId, HostDeviceId;
 ```
 
-#### Get a list of WSL device ids where curl or wget was run
+#### Get a list of WSL device IDs where curl or wget was run
 
 ```kusto
 Get a list of WSL device ids where curl or wget was run
@@ -273,7 +273,6 @@ DeviceProcessEvents
    ```
 
    The support bundle can be found in the path provided by the previous command. 
-
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-overview.png" alt-text="Screenshot showing status in PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check-overview.png":::
 
