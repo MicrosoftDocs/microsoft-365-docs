@@ -19,7 +19,7 @@ ms.collection:
 - demo
 ms.topic: article
 ms.subservice: mde
-ms.date: 10/21/2022
+ms.date: 11/20/2023
 ---
 
 # Potentially unwanted applications (PUA) demonstration

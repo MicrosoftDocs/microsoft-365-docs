@@ -1,8 +1,7 @@
 ---
 title: Microsoft Defender XDR prerequisites
 description: Learn about the licensing, hardware and software requirements, and other configuration settings for Microsoft Defender XDR
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 f1.keywords: 
   - NOCSH
 ms.author: macapara

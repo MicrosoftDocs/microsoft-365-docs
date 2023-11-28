@@ -2,8 +2,7 @@
 title: Configure the deception capability in Microsoft Defender XDR
 description: Learn how to create, edit, and delete deception rules in Microsoft Defender XDR.
 keywords:  deception, defender for endpoint, Microsoft 365 Defender, Microsoft defender for endpoint, lures, fake hosts, fake users, fake network, honeypot, honeytoken, decoy, fake host, fake user, deception technology, create deception rule, modify deception rule, edit deception rule, delete deception rule
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -69,7 +68,7 @@ To create a deception rule, perform the following steps:
 :::image type="content" source="../../media/deception/fig8-deception.png" alt-text="Screenshot of the deception rule decoy page" lightbox="../../media/deception/fig8-deception.png":::
 7. You can edit a decoy account name, host name, and the IP address where the lures are planted in the decoys section. When adding IP addresses, we recommend using a sandbox IP if it exists in the organization. Avoid using commonly used addresses, for example, *127.0.0.1*, *10.0.0.1*, and the like.
 :::image type="content" source="../../media/deception/fig9-deception.png" alt-text="Screenshot of editing a decoy host" lightbox="../../media/deception/fig9-deception.png":::
-:::image type="content" source="../../media/deception/fig10-deception.png" alt-text="Screenshot of editing a decoy account" lightbox="../../media/deception/fig10-deception.png":::
+:::image type="content" source="../../media/deception/fig10-2-deception.png" alt-text="Screenshot of editing a decoy account" lightbox="../../media/deception/fig10-2-deception.png":::
 > [!CAUTION]
 > To avoid false positive alerts, we highly recommend creating unique user accounts and host names when creating and editing decoy accounts and hosts. Ensure that created user accounts and hosts are unique for each deception rule and that these accounts and hosts do not exist in the organization's directory.
 

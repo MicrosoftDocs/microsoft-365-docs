@@ -2,7 +2,7 @@
 title: Step 1. Use Microsoft Syntex to identify contract files and extract data
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 audience: admin
 ms.topic: conceptual

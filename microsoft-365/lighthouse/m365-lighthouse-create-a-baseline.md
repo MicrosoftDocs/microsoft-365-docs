@@ -22,7 +22,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to create a custom baseline."
 ---
 
-# Create baselines in Microsoft 365 Lighthouse
+# Create a baseline in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse empowers you to create your own baselines to deploy to customer tenants. Create your own baselines to accommodate customers with varying degrees of tenant maturity, customers from different industries, customers that have subscribed to different managed services from your company, or customers with varying licensing models.
 

@@ -4,7 +4,7 @@ description: Learn how to use Viva Connections, SharePoint, Microsoft Teams, and
 ms.topic: conceptual
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 f1.keywords:
 - NOCSH
