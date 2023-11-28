@@ -47,7 +47,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 - Updated default Engine version to `1.1.23090.2008`, and default Signatures version to `1.399.690.0`.
-- General stability and bug fixes.
+- General stability, performance and bug fixes.
 
 </details>
 
