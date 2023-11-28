@@ -28,7 +28,7 @@ Loop experiences on Microsoft 365 OneDrive or SharePoint are backed by .loop fil
 1. Cloud Policy
 2. SharePoint PowerShell command
 
-If you're looking to manage Loop workspaces in the Loop app, see [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration).
+If you're looking to manage Loop workspaces in the Loop app, see [Manage Loop workspaces in SharePoint Embedded](/microsoft-365/loop/loop-workspaces-configuration).
 
 ## Requirements
 
