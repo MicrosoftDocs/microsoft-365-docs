@@ -333,10 +333,6 @@
               href: activity-reports/viva-engage-device-usage-report-ww.md
             - name: Viva Engage groups activity
               href: activity-reports/viva-engage-groups-activity-report-ww.md
-    - name: Manage domains
-      items:
-       - name: Manage Self-service purchases, trials, and licenses
-         href: manage\manage-self-service-purchases-org-trials-for-msproject.md
          - name: Microsoft Adoption Score
            items:
             - name: Microsoft Adoption Score - overview
