@@ -2,7 +2,7 @@
 title: Deploy your frontline operational hierarchy
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: arnavgupta
 ms.topic: conceptual
 audience: admin

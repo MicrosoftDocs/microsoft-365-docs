@@ -61,10 +61,11 @@ Once the network devices are discovered and classified, security administrators 
 The following operating systems are currently supported:
 
 - Cisco IOS, IOS-XE, NX-OS
+- Fortinet FortiOS
 - Juniper JUNOS
+- HPE Aruba Networking ArubaOS, AOS-CX
 - HPE ArubaOS, Procurve Switch Software
 - Palo Alto Networks PAN-OS
-- Fortinet FortiOS
 
 More networking vendors and OS will be added over time, based on data gathered from customer usage. Therefore, you're encouraged to configure all your network devices, even if they're not specified in this list.
 
