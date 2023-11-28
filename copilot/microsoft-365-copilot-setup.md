@@ -23,13 +23,13 @@ description: "Learn how to prepare your organization for Microsoft Copilot for M
 
 # Get started with Microsoft Copilot for Microsoft 365
 
-[Microsoft Copilot for Microsoft 365](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is an AI-powered productivity tool that uses large language models (LLMs) and integrates your data with the Microsoft Graph and Microsoft 365 Apps. It works alongside popular Microsoft 365 Apps such as Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills. This article covers the technical requirements to access and configure Microsoft Copilot for Microsoft 365 once you're invited to the Early Access Program.
+[Microsoft Copilot for Microsoft 365](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is an AI-powered productivity tool that uses large language models (LLMs) and integrates your data with the Microsoft Graph and Microsoft 365 Apps. It works alongside popular Microsoft 365 Apps such as Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills. This article covers the technical requirements to access and configure Microsoft Copilot for Microsoft 365.
 
 ## Prerequisites for Microsoft Copilot for Microsoft 365
 
 Before you can access Copilot, you must meet these requirements:
 
-- The following applications must be deployed for your users, which seamlessly integrate with Microsoft Copilot for Microsoft 365 and other applications: 
+- The following applications must be deployed for your users, which seamlessly integrate with Microsoft Copilot for Microsoft 365 and other applications:
   - Word
   - Excel
   - PowerPoint
