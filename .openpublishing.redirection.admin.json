@@ -2090,6 +2090,21 @@
          "source_path": "microsoft-365/admin/misc/cortana-integration.md",
          "redirect_url": "https://support.microsoft.com/topic/d025b39f-ee5b-4836-a954-0ab646ee1efa",
          "redirect_document_id": false
-      }
+      },
+      {
+         "source_path": "microsoft-365/admin/activity-reports/yammer-activity-report-ww.md",
+         "redirect_url": "/microsoft-365/admin/activity-reports/viva-engage-activity-report-ww",
+         "redirect_document_id": false
+     },    
+     {
+         "source_path": "microsoft-365/admin/activity-reports/yammer-device-usage-report-ww.md",
+         "redirect_url": "/microsoft-365/admin/activity-reports/viva-engage-device-usage-report-ww",
+         "redirect_document_id": false
+     },    
+     {
+         "source_path": "microsoft-365/admin/activity-reports/yammer-groups-activity-report-ww.md",
+         "redirect_url": "/microsoft-365/admin/activity-reports/viva-engage-groups-activity-report-ww",
+         "redirect_document_id": false
+     }
    ]
 }
