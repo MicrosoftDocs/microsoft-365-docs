@@ -33,7 +33,7 @@ As the admin of a Microsoft 365 Business Standard subscription, you can invite y
 - Get help anytime with around-the-clock phone and web support from Microsoft.
 
 > [!NOTE]
-> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
+> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. For more information, see [Assign admin roles](../add-users/assign-admin-roles.md).
 
 ## Before you begin
 
@@ -83,7 +83,7 @@ To search data that's been saved in the Microsoft cloud as part of your Microsof
 Depending on how you and other users save documents, you and every user you’ve invited may need to use built in search, and delete functionality to discover what is saved on your Windows PCs or Macs, on business apps on smartphones, and on non-Microsoft apps and sites.
 
 > [!NOTE]
-> Once you attach a domain, and you and your users use business accounts to save data into the Microsoft cloud, you can conduct data subject requests on behalf of all users by following guidance in the [Microsoft 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-office365) topic.
+> Once you attach a domain, and you and your users use business accounts to save data into the Microsoft cloud, you can conduct data subject requests on behalf of all users by following guidance in [Microsoft 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-office365).
 
 ## Related content
 
