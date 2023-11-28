@@ -64,7 +64,9 @@ You create *modern templates* based on the business documents you use most. You 
 
 [Learn more about how to generate documents using content assembly.](content-assembly.md)
 
-### Prebuilt document processing
+### Document processing
+
+#### Prebuilt document processing
 
 :::row:::
    :::column span="":::
@@ -79,7 +81,7 @@ Instead of having to create a new document processing model from scratch, you ca
 
 [Learn more about prebuilt models in Microsoft Syntex.](prebuilt-overview.md)
 
-### Structured and freeform document processing
+#### Structured and freeform document processing
 
 :::row:::
    :::column span="":::
@@ -94,7 +96,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about structured and freeform models in Microsoft Syntex.](form-processing-overview.md)
 
-### Unstructured document processing
+#### Unstructured document processing
 
 :::row:::
    :::column span="":::
@@ -137,10 +139,10 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 :::row:::
    :::column span="3":::
-      Send electronic requests using Syntex eSignature, keeping your content in Microsoft 365 while it’s being reviewed and signed. Use Syntex eSignature to quickly and securely send documents for signature to people both inside and outside of your organization.
+      Easily create a translated copy of a document or video transcipt in a SharePoint document library. You translate the file, while preserving the original format and structure of the file. Translation is available for all supported languages and dialects.
    :::column-end:::
    :::column span="":::
-      ![Image of generic esignature icon.](../media/content-understanding/esignature-image.png)
+      ![Image of generic translation icon.](../media/content-understanding/translation-image.png)
    :::column-end:::
 :::row-end:::
 
