@@ -61,7 +61,7 @@ There are three options for getting a business email.
 
 ### Why might I need to verify my domain to create a business email?
 
-If you choose to use a domain you already own, you can use it for your email address with Microsoft 365. As part of the sign up process, we ask you to verify the domain for security purposes and to protect against fraudulent activity.
+If you choose to use a domain you already own, you can use it for your email address with Microsoft 365. As part of the sign-up process, we ask you to verify the domain for security purposes and to protect against fraudulent activity.
 
 ### How does recurring billing work?
 

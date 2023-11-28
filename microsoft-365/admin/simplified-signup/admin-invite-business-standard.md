@@ -80,7 +80,7 @@ Under GDPR, an employee or customer may ask that you retrieve, or delete all inf
 
 To search data that's been saved in the Microsoft cloud as part of your Microsoft 365 Business subscription, you and each user you’ve invited will need to visit [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) to search data in locations such as OneDrive.  In addition, you (business or admin) may need to search for employee account data that's saved in the [Microsoft Entra admin center](/compliance/regulatory/gdpr-dsr-office365).
 
-Depending on how you and other users save documents, you and every user you’ve invited may need to use built in search, and delete functionality to discover what is saved on your Windows PCs or Macs, on business apps on smartphones, and on non-Microsoft apps and sites.
+Depending on how you and other users save documents, you and every user you’ve invited may need to use built-in search, and delete functionality to discover what is saved on your Windows PCs or Macs, on business apps on smartphones, and on non-Microsoft apps and sites.
 
 > [!NOTE]
 > Once you attach a domain, and you and your users use business accounts to save data into the Microsoft cloud, you can conduct data subject requests on behalf of all users by following guidance in [Microsoft 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-office365).
