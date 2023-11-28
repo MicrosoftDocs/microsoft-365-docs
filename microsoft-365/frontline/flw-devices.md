@@ -2,7 +2,7 @@
 title: Manage devices for frontline workers
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: mabolan
 ms.topic: conceptual
 audience: admin

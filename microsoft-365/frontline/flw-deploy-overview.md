@@ -2,7 +2,7 @@
 title: Learn where to start with a frontline deployment
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: aaglick
 ms.topic: conceptual
 audience: admin
