@@ -38,8 +38,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 ## November-2023 Build: 101.23102.0003 | Release version: 30.123102.0003.0
 
-&ensp;Released: **November ?,2023**<br/>
-&ensp;Published: **November ?,2023**<br/>
+&ensp;Released: **November 28,2023**<br/>
+&ensp;Published: **November 28,2023**<br/>
 &ensp;Build: **101.23102.0003**<br/>
 &ensp;Release version: **30.123102.0003.0**<br/>
 &ensp;Engine version: **1.1.23090.2008**<br/>
