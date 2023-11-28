@@ -1,35 +1,5 @@
 {
-    "redirections": [
-        {
-            "source_path": "solutions/secure-teams-security-isolation.md",
-            "redirect_url": "/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "compliance/create-info-mgmt-policies.md",
-            "redirect_url": "https://support.microsoft.com/office/eb501fe9-2ef6-4150-945a-65a6451ee9e9",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "compliance/intro-to-info-mgmt-policies.md",
-            "redirect_url": "/sharepoint/intro-to-info-mgmt-policies",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "solutions/test-lab-guides-overview-solutions.md",
-            "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "solutions/team-security-isolation-dev-test.md",
-            "redirect_url": "/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
-            "redirect_url": "/azure/defender-for-iot/organizations/concept-enterprise",
-            "redirect_document_id": false
-        },    
+    "redirections": [   
         {
             "source_path": "admin/activity-reports/yammer-activity-report-ww.md",
             "redirect_url": "/microsoft-365/admin/activity-reports/viva-engage-activity-report-ww",
