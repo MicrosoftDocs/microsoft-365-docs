@@ -1,5 +1,5 @@
 ---
-title: "AI Assistance Category in Adoption Score"
+title: "AI assistance category in Adoption Score"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn about the AI assistance category in Adoption Score."
 ---
 
-# AI Assistance Category in Adoption Score
+# AI assistance category in Adoption Score
 
 With AI rapidly entering the day-to-day experience of people in your organization, you'll see a new People Experiences category called AI assistance, set to roll out in the coming weeks.
 
@@ -49,9 +49,9 @@ Scores aren't provided at the individual user level.
 
 ## Overall score
 
-The overall score takes into account individual user activity (each tenant) across different insights in summarization and creation (of documents, emails and presentations) in RL28 day time frame, with a focus that better use of Copilot best practices leads to a better score.
+The overall score is a measure of how well each individual user (or tenant) has used Copilot's features for summarization and creation of documents, emails, and presentations. This score is calculated in RL28 day time frame, and it takes into account the user's activity across different insights. The main goal of this score is to encourage users to follow Copilot's best practices, which will ultimately lead to a higher score.
 
-Further, a user score is calculated with the usage intensity of individual user and the possible utilization threshold (currently 12 days) of Copilot activity in mind. The tenant AI Assistance scores are created by the combination of user scores of each tenant and the number of individuals enabled to use Copilot (for the applications considered).
+Further, a user score is calculated with the usage intensity of individual user and the possible utilization threshold (currently 12 days) of Copilot activity in mind. The tenant AI assistance scores are created by the combination of user scores of each tenant and the number of individuals enabled to use Copilot (for the applications considered).
 
 :::image type="content" source="../../media/ai-assistance-dashboard.png" alt-text="Screenshot showing the AI assistance category dashboard in Adoption Score." lightbox="../../media/ai-assistance-dashboard.png":::
 
@@ -68,7 +68,7 @@ Each insight captures the number of Copilot-enabled users in your organization p
 ### Summarize
 
 - **Summarize a Teams meeting:** This represents the number of users who summarize meetings using Copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a meeting in the Copilot chat box.
-- **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a conversation in the Copilot chat box.
+- **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using Copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a conversation in the Copilot chat box.
 - **Summarize an email thread:** This represents the number of users who summarize email threads using Copilot in Outlook. This doesn't include the instances when the user types to summarize an Outlook thread in the Copilot chat box.
 - **Summarize a Word document:** This represents the number of users who summarize Word documents using Copilot in Microsoft Word. This doesn't include the instances when the user types to summarize a document in the Copilot chat box.
 - **Summarize a presentation:** This represents the number of users who summarize a presentation using Copilot in Microsoft PowerPoint. This doesn't include the instances when the user types to summarize a presentation in the Copilot chat box.
