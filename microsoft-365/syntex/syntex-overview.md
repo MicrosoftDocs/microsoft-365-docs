@@ -146,7 +146,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
    :::column-end:::
 :::row-end:::
 
-[Learn more about using Microsoft Syntex eSignature.](esignature-overview.md)
+[Learn more about translation in Microsoft Syntex.](translation-overview.md)
 
 
 ### Syntex eSignature
