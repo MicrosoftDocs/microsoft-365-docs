@@ -4,7 +4,7 @@ description: Get the admin guidance you need to set up and manage Shifts, the sc
 ms.topic: conceptual
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 f1.keywords:
 - NOCSH

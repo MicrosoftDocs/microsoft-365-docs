@@ -2083,8 +2083,13 @@
       },
       {
          "source_path":"microsoft-365/admin/top-m365-admin-articles.md",
-         "redirect_url":"https://support.microsoft.com/smallbusiness",
+         "redirect_url": "https://support.microsoft.com/smallbusiness",
          "redirect_document_id":false
+      },
+      {
+         "source_path": "microsoft-365/admin/misc/cortana-integration.md",
+         "redirect_url": "https://support.microsoft.com/topic/d025b39f-ee5b-4836-a954-0ab646ee1efa",
+         "redirect_document_id": false
       }
    ]
 }
