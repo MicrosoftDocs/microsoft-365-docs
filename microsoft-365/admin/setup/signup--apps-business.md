@@ -69,7 +69,7 @@ When signing up for Microsoft 365 Apps for Business, you have 2 options for how 
 
 The table below outlines each choice.
 
-| | **Option 1 – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account**| **Option 2 – Add a business domain** |
+| | Option 1 – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account | Option 2 – Add a business domain |
 |---|---|---|
 |**Available apps and services**|Use Word, Excel, PowerPoint, OneDrive, Teams, Access. This set of apps is best for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange. You'll use Outlook with your existing email account (be it outlook.com, Hotmail, Yahoo, Gmail or other).|Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Option 2 also lets you access a wide range of additional services: Bookings appointment scheduling and Meeting recordings.|
 |**Required knowledge**|Let's you get started without technical know-how.|Requires you to buy a domain, or to own a domain. You may need technical knowledge to prove ownership of the domain.|
