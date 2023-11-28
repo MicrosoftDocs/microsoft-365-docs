@@ -2,7 +2,7 @@
 title: Set up Microsoft 365 for frontline workers
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: samanro
 ms.topic: how-to
 audience: admin
