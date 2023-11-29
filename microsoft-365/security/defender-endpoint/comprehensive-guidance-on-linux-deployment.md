@@ -68,7 +68,7 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 
 13. [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](#13-troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux).
 
-14. [Check resource utilization statistics and report on pre-deployment utilization compared to post-deployment](#14-check-resource-utilization-statistics).
+14. [Check resource utilization statistics and report on predeployment utilization compared to post-deployment](#14-check-resource-utilization-statistics).
 
 15. [Verify communication with Microsoft Defender for Endpoint backend](#15-verify-communication-with-microsoft-defender-for-endpoint-backend).
 
@@ -165,7 +165,7 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
 |Resource|Recommendation|
 |---|---|
-|Disk space |Minimum: 2 GB <br> NOTE: An additional 2-GB disk space might be needed if cloud diagnostics are enabled for crash collections. |
+|Disk space |Minimum: 2 GB <br> NOTE: More disk space might be needed if cloud diagnostics are enabled for crash collections. |
 |RAM |1 GB<br> 4 GB is preferred|
 |CPU |If the Linux system is running only 1 vcpu, we recommend it be increased to 2 vcpu's<br> 4 cores are preferred |
 
