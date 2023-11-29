@@ -25,8 +25,6 @@
         href: deploy-dynamic-teams-at-scale.md
       - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
-    - name: Managers - get your team started
-      href: get-up-and-running.md  
     - name: Manage devices
       items:
       - name: Manage shared and personal devices
@@ -51,6 +49,8 @@
         href: flw-licensing-options.md
       - name: Considerations for switching from E to F
         href: switch-from-enterprise-to-frontline.md
+  - name: Managers - get your team started
+    href: get-up-and-running.md  
   - name: Communications
     items: 
     - name: Frontline team collaboration
