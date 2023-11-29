@@ -45,7 +45,7 @@ But what can you do if you receive a message with a suspicious attachment or hav
 
 - Messages with attachments that contain scripts or other malicious executables are considered malware, and you can use the procedures in this article to report them.
 
-- Messages with links to malicious sites are considered spam. For more information about reporting spam and good messages, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
+- Messages with links to malicious sites are considered phishing. For more information about reporting phishing and good messages, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 - Files that block you from your accessing your system and demand money to open them are considered ransomware.
 
