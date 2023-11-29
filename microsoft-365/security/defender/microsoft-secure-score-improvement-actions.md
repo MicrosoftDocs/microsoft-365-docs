@@ -1,9 +1,8 @@
 ---
 title: Assess your security posture through Microsoft Secure Score
-description: Describes how to take action to improve your Microsoft Secure Score in the Microsoft 365 Defender portal.
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, recommended actions
-ms.service: microsoft-365-security
-ms.subservice: m365d
+description: Describes how to take action to improve your Microsoft Secure Score in the Microsoft Defender portal.
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft Defender portal, recommended actions
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -29,7 +28,7 @@ ms.date: 02/16/2021
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md).
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft Defender portal](microsoft-365-defender.md).
 
 To help you find the information you need more quickly, Microsoft recommended actions are organized into groups:
 
@@ -40,7 +39,7 @@ To help you find the information you need more quickly, Microsoft recommended ac
 
 In the Microsoft Secure Score overview page, view how points are split between these groups and what points are available. You can also get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized recommended actions that can be taken to improve your score.
 
-:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Secure Score homepage in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Secure Score homepage in the Microsoft Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## Check your current score
 
@@ -56,7 +55,7 @@ The following are scores you can add to your view of your overall score to give 
 
 This view is what it will look like if you've included all possible score views:
 
-:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="Your secure score including planned score, current license score, and achievable score in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-achievable.png":::
+:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="Your secure score including planned score, current license score, and achievable score in the Microsoft Defender portal" lightbox="../../media/secure-score/secure-score-achievable.png":::
 
 ## Take action to improve your score
 
@@ -72,7 +71,7 @@ Ranking is based on the number of points left to achieve, implementation difficu
 
 When you select a specific recommended action, a full page flyout appears.
 
-:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="Screenshot that shows the flyout of a recommended action in the Microsoft 365 Defender portal." lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="Screenshot that shows the flyout of a recommended action in the Microsoft Defender portal." lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 To complete the action, you have a few options:
 

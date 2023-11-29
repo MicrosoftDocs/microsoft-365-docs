@@ -1,6 +1,6 @@
 ---
-title: Visit the Microsoft 365 Defender portal
-description: Your security center in Defender for Business is the Microsoft 365 Defender portal. Learn how to navigate the portal, and see your next steps.
+title: Visit the Microsoft Defender portal
+description: Your security center in Defender for Business is the Microsoft Defender portal. Learn how to navigate the portal, and see your next steps.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -21,11 +21,11 @@ ms.collection:
 ms.custom: intro-get-started
 ---
 
-# Visit the Microsoft 365 Defender portal
+# Visit the Microsoft Defender portal
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Microsoft Defender for Business. It includes callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to various features and capabilities.
+The Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Microsoft Defender for Business. It includes callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to various features and capabilities.
 
-:::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft Defender portal":::
 
 ## The navigation bar
 
@@ -33,7 +33,7 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 
 | Item | Description |
 |:---|:---|
-| **Home** | Takes you to your home page in the Microsoft 365 Defender portal. The home page highlights any active threats that are detected, along with recommendations to help secure your company's data and devices. Recommendations are included in Defender for Business to save your security team time and effort. The recommendations are based on industry best practices. To learn more, see [Security recommendations - Microsoft Defender Vulnerability Management](../defender-endpoint/tvm-security-recommendation.md). |
+| **Home** | Takes you to your home page in the Microsoft Defender portal. The home page highlights any active threats that are detected, along with recommendations to help secure your company's data and devices. Recommendations are included in Defender for Business to save your security team time and effort. The recommendations are based on industry best practices. To learn more, see [Security recommendations - Microsoft Defender Vulnerability Management](../defender-endpoint/tvm-security-recommendation.md). |
 | **Incidents & alerts** > **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md).|
 | **Actions & submissions** > **Action center** | Takes you to your list of response actions, including completed and pending actions.<br/>- Select the **Pending** tab to view actions that require approval to proceed.<br/>- Select the **History** tab to see the actions that were taken. Some actions are taken automatically; others are taken manually or complete after they're approved.<br/><br/>To learn more, see [Review remediation actions in the Action center](mdb-review-remediation-actions.md). |
 | **Actions & submissions** > **Submissions** | Takes you to the unified submissions portal, where you can submit files to Microsoft for analysis. To learn more, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md) (the process is similar for Defender for Business). |
@@ -50,9 +50,9 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Cloud apps** > **App governance** | If your subscription includes [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps), you can add on [app governance](/defender-cloud-apps/app-governance-manage-app-governance), and this section is where you'll view and access those capabilities. *Defender for Business and Microsoft 365 Business Premium do not include Defender for Cloud Apps*. |
 | **Reports** | Lists available security reports. These reports enable you to see your security trends, view details about threat detections and alerts, and learn more about your company's vulnerable devices. |
 | **Health** | Enables you to view your service health status and plan for upcoming changes. <br/>- Select **Service health** to view the health status of the Microsoft 365 services that are included in your company's subscription.<br/>- Select **Message center** to learn about planned changes and what to expect.  |
-| **Permissions** | Enables you to assign permissions to the people in your company who manage your security and to view incidents and reports in the Microsoft 365 Defender portal. Also enables you to set up and manage device groups to onboard your company's devices and assign threat protection policies.  |
-| **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Defender for Business. For example, you can onboard (or offboard) your company's devices (also referred to as endpoints). You can also define rules, such as alert-suppression rules, and set up indicators to block or allow certain files or processes.  |
-| **More resources** | Navigate to other portals, such as Microsoft Entra ID. But keep in mind that the Microsoft 365 Defender portal should meet your needs without requiring you to navigate to other portals. |
+| **Permissions** | Enables you to assign permissions to the people in your company who manage your security and to view incidents and reports in the Microsoft Defender portal. Also enables you to set up and manage device groups to onboard your company's devices and assign threat protection policies.  |
+| **Settings** | Enables you to edit settings for the Microsoft Defender portal and Defender for Business. For example, you can onboard (or offboard) your company's devices (also referred to as endpoints). You can also define rules, such as alert-suppression rules, and set up indicators to block or allow certain files or processes.  |
+| **More resources** | Navigate to other portals, such as Microsoft Entra ID. But keep in mind that the Microsoft Defender portal should meet your needs without requiring you to navigate to other portals. |
 | **Customize your navigation pane** | Select this option to hide or display options in your navigation bar. |
 
 ## Next steps

@@ -27,7 +27,7 @@ ms.date: 05/02/2023
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -123,7 +123,10 @@ The dashboard also gives you access to:
 
 ## Initiate a live response session on a device
 
-1. Sign in to Microsoft 365 Defender portal.
+> [!NOTE]
+> Live response actions initiated from the Device page are not available in the machineactions API.
+
+1. Sign in to Microsoft Defender portal.
 
 2. Navigate to **Endpoints > Device inventory** and select a device to investigate. The devices page opens.
 

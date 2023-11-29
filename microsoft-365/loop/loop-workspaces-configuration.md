@@ -1,6 +1,6 @@
 ---
 ms.date: 08/21/2023
-title: "Manage Loop workspaces in Syntex repository services"
+title: "Manage Loop workspaces in SharePoint Embedded"
 ms.reviewer: dancost, tonchan
 ms.author: v-smandalika
 author: v-smandalika
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - SPO160
 - MET150
-description: "Learn how to manage Loop workspaces in Syntex repository services."
+description: "Learn how to manage Loop workspaces in SharePoint Embedded."
 ---
 
-# Manage Loop workspace experiences in Microsoft Syntex repository services
+# Manage Loop workspace experiences in SharePoint Embedded
 
-Loop workspaces and the content created in Loop workspaces are backed by [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/). IT admins can manage access to Loop workspaces experiences using Cloud Policy.
+Loop workspaces and the content created in Loop workspaces are stored in [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428) containers. IT admins can manage access to Loop workspaces experiences using Cloud Policy.
 
 If you're looking to manage Loop components in the Microsoft 365 ecosystem, visit [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration).
 
@@ -32,9 +32,9 @@ If you're looking to manage Loop components in the Microsoft 365 ecosystem, visi
 
 Just like other Microsoft 365 experiences, Loop also uses core services across SharePoint and Microsoft 365. To effectively enable Loop workspace experiences, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services.
 
-### Exchange Online license
+### License requirements
 
-Loop workspaces currently require each user to have an Exchange Online license and the user account can't be a resource account (for example, a shared mailbox user). If these requirements are not met: users experience failures in the Loop app, users won't receive notifications or signals when they collaborate and update, and users encounter failures in other experiences within Loop.
+Licensing through the new Loop with workspaces service plan covers the creation of new workspaces. If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
 
 ### WebSocket connections
 
@@ -90,7 +90,8 @@ In case you create a new policy configuration or change the configuration for an
 - If there were no policy configurations prior to the change, then it takes 24 hours for the change to be reflected.
 
 > [!NOTE]
-> In order to target only a group of users in your organization to be able to create Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
+>  In order to target only a group of users in your organization to be able to create and view Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
+
 
 ## Related topics
 

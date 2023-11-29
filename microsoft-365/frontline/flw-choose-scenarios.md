@@ -4,7 +4,7 @@ description: Learn about scenarios you can easily implement for the frontline wo
 search.appverid: MET150
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-365-frontline

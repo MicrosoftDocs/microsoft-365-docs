@@ -29,7 +29,7 @@ In order to promote clarity in the capability descriptions on data residency fun
 |:-----|:-----|
 |Macro Region Geography  <br/> |Macro Region Geography 1 – EMEA, Macro Region Geography 2 – Asia Pacific, Macro Region Geography 3 - Americas  <br/> |
 |Macro Region Geography 1 - EMEA  <br/> |Data centers in Austria, Finland, France, Ireland, Israel, Italy, Netherlands, Poland, Sweden  <br/> |
-|Macro Region Geography 2 - Asia Pacific  <br/> |Data centers in Hong Kong Special Administrative Region, Japan, Malaysia, Singapore, South Korea  <br/> |
+|Macro Region Geography 2 - Asia Pacific  <br/> |Data centers in Australia, Hong Kong Special Administrative Region, Japan, Malaysia, Singapore, South Korea  <br/> |
 |Macro Region Geography 3 - Americas  <br/> |Data centers in Brazil, Chile, United States  <br/> |
 |Local Region Geography  <br/> |Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom  <br/> |
 |Expanded Local Region Geography  <br/> | Future planned data center regions: Indonesia, Spain, Mexico, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan, Saudi Arabia  <br/> |

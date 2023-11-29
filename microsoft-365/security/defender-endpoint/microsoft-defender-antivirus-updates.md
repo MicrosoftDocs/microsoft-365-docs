@@ -101,7 +101,7 @@ All our updates contain
 
 - Performance improvements
 - Serviceability improvements
-- Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
+- Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
 ### October-2023 (Platform: Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
 
