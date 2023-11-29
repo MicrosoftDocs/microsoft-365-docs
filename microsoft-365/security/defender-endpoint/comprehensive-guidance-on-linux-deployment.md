@@ -56,11 +56,11 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 
 7. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#7-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
 
-[8. Keep the following points about exclusions in mind.](#8-keep-the-following-points-about-exclusions-in-mind)
+8. [Review important points about exclusions](#8-keep-the-following-points-about-exclusions-in-mind).
 
-[9. Create Device Groups.](#9-create-device-groups)
+9. [Create Device Groups](#9-create-device-groups).
 
-[10. Configure Microsoft Defender for Endpoint on Linux antimalware settings.](#10-configure-microsoft-defender-for-endpoint-on-linux-antimalware-settings)
+10. [Configure Microsoft Defender for Endpoint on Linux antimalware settings](#10-configure-microsoft-defender-for-endpoint-on-linux-antimalware-settings).
 
 [11. Download the Microsoft Defender for Endpoint on Linux onboarding package from the Microsoft 365 Defender portal.](#11-download-the-microsoft-defender-for-endpoint-on-linux-onboarding-package)
 
