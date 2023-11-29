@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 09/05/2023
+ms.date: 11/29/2023
 ---
 
 # Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
@@ -39,22 +39,22 @@ To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, se
 
 Learn about the general guidance on a typical Microsoft Defender for Endpoint on Linux deployment. The applicability of some steps is determined by the requirements of your Linux environment.
 
-[1. Work with your Firewall, Proxy, and Networking admin.](#1-work-with-your-firewall-proxy-and-networking-admin)
+1. [Work with your Firewall, Proxy, and Networking admin](#1-work-with-your-firewall-proxy-and-networking-admin).
 
-[2. Capture performance data from the endpoint.](#2-capture-performance-data-from-the-endpoint)
+2. [Capture performance data from the endpoint](#2-capture-performance-data-from-the-endpoint).
 
-> [!NOTE]
-> Consider doing the following optional items, even though they are not Microsoft Defender for Endpoint specific, they tend to improve performance in Linux systems.
+   > [!NOTE]
+   > Consider doing the following optional items, even though they are not Microsoft Defender for Endpoint specific, they tend to improve performance in Linux systems.
 
-[3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk).](#3-optional-check-for-filesystem-errors-fsck-akin-to-chkdsk)
+3. [(Optional) Check for filesystem errors 'fsck' (akin to chkdsk)](#3-optional-check-for-filesystem-errors-fsck-akin-to-chkdsk).
 
-[4. (Optional) Update storage subsystem drivers.](#4-optional-update-storage-subsystem-drivers)
+4. [(Optional) Update storage subsystem drivers](#4-optional-update-storage-subsystem-drivers).
 
-[5. (Optional) Update nic drivers.](#5-optional-update-nic-drivers)
+5. [(Optional) Update nic drivers](#5-optional-update-nic-drivers).
 
-[6. Confirm system requirements and resource recommendations are met.](#6-confirm-system-requirements-and-resource-recommendations-are-met)
+6. [Confirm system requirements and resource recommendations are met](#6-confirm-system-requirements-and-resource-recommendations-are-met).
 
-[7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus.](#7-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus)
+7. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#7-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
 
 [8. Keep the following points about exclusions in mind.](#8-keep-the-following-points-about-exclusions-in-mind)
 
@@ -102,7 +102,8 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 
 #### Step 1: Allow URLs for the Microsoft Defender for Endpoint traffic
 
-1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx) or the [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) for a list of services and their associated URLs that your network must be able to connect.
+1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx
+) or the [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) for a list of services and their associated URLs that your network must be able to connect.
 
 2. Under **Geography** column, ensure the following checkboxes are selected:
     - EU, or UK, or US
