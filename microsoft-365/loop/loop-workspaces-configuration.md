@@ -65,7 +65,7 @@ In addition, because there are no separate licensing requirements for the Loop c
 
 ### Additional IT Admin resources
 
-You can learn more about [Loop storage](/microsoft-365/loop/loop-compliance-summary#loop-storage) or [Conditional Access Policies](/sharepoint/control-access-from-unmanaged-devices) and [Manually provisioning the Loop app](/microsoft-365/loop/loop-compliance-summary#manually-initializing-microsoft-loop-app-for-conditional-access-management-in-microsoft-entra).
+You can learn more about [Loop storage](/microsoft-365/loop/loop-compliance-summary#loop-storage) or [Conditional Access Policies](/sharepoint/control-access-from-unmanaged-devices) and [manually provisioning the Loop app for conditional access](/microsoft-365/loop/loop-compliance-summary#manually-initializing-microsoft-loop-app-for-conditional-access-management-in-microsoft-entra).
 
 ## Settings management in the Microsoft Admin Center
 
