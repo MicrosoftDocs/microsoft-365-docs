@@ -181,15 +181,15 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 > [!TIP]
 > To get help configuring exclusions, refer to your solution provider's documentation.
 
-- Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft antimalware product depends on the implementation details of that product. If the other antimalware product leverages fanotify, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents.
+- Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft antimalware product depends on the implementation details of that product. If the other antimalware product uses fanotify, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents.
 
 - To check if there's a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
 
   :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result":::
 
-  Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft antimalware.
+  Under "conflicting_applications", if you see a result other than "unavailable", uninstall the non-Microsoft antimalware.
 
-- If you don't uninstall the non-Microsoft antimalware product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
+- If you don't uninstall the non-Microsoft antimalware product, you might encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
 
 - To identify the Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft antimalware product, run `systemctl status -l mdatp`.
 
@@ -239,11 +239,9 @@ Set up your device groups, device collections, and organizational units Device g
 
 **Before you begin**:
 
-- If you're already using a non-Microsoft antimalware product for your Linux servers:
-  - Consider that you may need to copy the existing exclusions to Microsoft Defender for Endpoint on Linux.
+- If you're already using a non-Microsoft antimalware product for your Linux servers, consider that you might have to copy the existing exclusions to Microsoft Defender for Endpoint on Linux.
 
-- If you're not using a non-Microsoft antimalware product for your Linux servers:
-  - Get a list of all your Linux applications and check the vendors website for exclusions.
+- If you're not using a non-Microsoft antimalware product for your Linux servers, get a list of all your Linux applications and check the vendors website for exclusions.
 
 - If you're running a non-Microsoft antimalware product, add the processes/paths to the Microsoft Defender for Endpoint's antivirus exclusion list. For more information, check the non-Microsoft antimalware documentation or contact their support.
 
