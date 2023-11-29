@@ -13,7 +13,7 @@ ms.custom:
   - next-gen
   - mde-edr
   - admindeeplinkDEFENDER
-ms.date: 03/31/2023
+ms.date: 11/29/2023
 ms.collection: 
 - m365-security
 - tier2
