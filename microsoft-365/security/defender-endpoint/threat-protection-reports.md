@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/29/2023
 ---
 
 # Threat protection report in Microsoft Defender for Endpoint
@@ -31,7 +31,53 @@ ms.date: 12/18/2020
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> [!IMPORTANT]
+> The Microsoft Defender for Endpoint Threat Protection report page is deprecated and will no longer be available after January 31st, 2024. Microsoft recommends that you transition to either the Defender XDR Incidents page or Advanced hunting to understand endpoint threat protection details.
+> Alert queue filter in Defender XDR 
+> **Defender XDR Incidents view**
+> Use the filter against Defender for Endpoint to see the current status of alerts for protected devices. For alert status, such as unresolved you can filter against New and In progress. 
+> ** Advanced hunting queries**
+> See below for a sample advanced hunting query that shows endpoint related threat protection details. Currently, there is no alert status in Advanced hunting that maps to resolve/unresolve.
+```
+// Alert Status  
+
+// Severity 
+AlertInfo 
+| where Timestamp > startofday(now()) // Today 
+| summarize count() by Severity 
+|render columnchart      
+
+// Detection source  
+AlertInfo 
+| where Timestamp > startofday(now()) // Today 
+| summarize count() by Severity 
+| render columnchart      
+
+// Detection Category 
+AlertInfo 
+| where Timestamp > startofday(now()) // Today 
+| summarize count() by Category 
+| render columnchart    
+// Alert trend  
+
+// Severity  
+AlertInfo 
+| where Timestamp > ago(30d)  
+| summarize count() by DetectionSource , bin(Timestamp, 1d) 
+|render timechart       
+
+// Detection source  
+AlertInfo 
+| where Timestamp > ago(30d) 
+| summarize count() by DetectionSource , bin(Timestamp, 1d) 
+|render timechart     
+
+// Detection Category 
+AlertInfo 
+| where Timestamp > ago(30d) 
+| summarize count() by Category , bin(Timestamp, 1d) 
+| render timechart
+```
 
 The threat protection report provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time.
 
