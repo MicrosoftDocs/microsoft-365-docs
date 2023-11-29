@@ -46,7 +46,7 @@ When you set up email notifications, you can choose from two types, as described
 > [!TIP]
 > **Email notifications are not the only way your security team can find out about new alerts or vulnerabilities**.
 > 
-> Email notifications are a convenient way to help keep your security team informed, in real time. But there are others! For example, whenever your security team signs into the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), they'll see cards highlighting new threats, alerts, and vulnerabilities. Defender for Business is designed to highlight important information that your security team cares about as soon as they sign in.
+> Email notifications are a convenient way to help keep your security team informed, in real time. But there are others! For example, whenever your security team signs into the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), they'll see cards highlighting new threats, alerts, and vulnerabilities. Defender for Business is designed to highlight important information that your security team cares about as soon as they sign in.
 > 
 > Your security team can also choose **Incidents** in the navigation pane to view information. To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md).
 
@@ -54,7 +54,7 @@ When you set up email notifications, you can choose from two types, as described
 
 To view or edit email notification settings for your company, follow these steps:
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, select **Settings**, and then select **Endpoints**. Then, under **General**, select **Email notifications**. 
 

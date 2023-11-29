@@ -1,10 +1,9 @@
 ---
-title: Preview features in Microsoft 365 Defender
+title: Preview features in Microsoft Defender XDR
 description: Learn about new features in Microsoft 365 security
 keywords: preview, new, m365 security, security, 365, capabilities
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -25,18 +24,18 @@ search.appverid:
 ms.date: 09/21/2023
 ---
 
-# Microsoft 365 Defender preview features
+# Microsoft Defender XDR preview features
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-The Microsoft 365 Defender service is constantly being updated to include new feature enhancements and capabilities.
+The Microsoft Defender XDR service is constantly being updated to include new feature enhancements and capabilities.
 
-Learn about new features in the Microsoft 365 Defender preview release and be among the first to try upcoming features by turning on the preview experience.
+Learn about new features in the Microsoft Defender XDR preview release and be among the first to try upcoming features by turning on the preview experience.
 
-For more information on new capabilities that are generally available, see [What's new in Microsoft 365 Defender](whats-new.md).
+For more information on new capabilities that are generally available, see [What's new in Microsoft Defender XDR](whats-new.md).
 
  ## What you need to know
 
@@ -53,7 +52,7 @@ When working with features in public preview, these features:
 
 ## Required permissions
 
-Accounts assigned the following Microsoft Entra roles can turn on Microsoft 365 Defender Preview features:
+Accounts assigned the following Microsoft Entra roles can turn on Microsoft Defender XDR Preview features:
 
 - Global administrator
 - Security administrator

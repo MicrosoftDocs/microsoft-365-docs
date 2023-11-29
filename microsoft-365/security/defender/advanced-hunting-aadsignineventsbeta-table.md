@@ -4,8 +4,8 @@ description: Learn about the Microsoft Entra sign-in events table of the advance
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -27,7 +27,7 @@ ms.date: 02/16/2021
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!IMPORTANT]
 > The `AADSignInEventsBeta` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Microsoft Entra sign-in events. Customers need to have a Microsoft Entra ID P2 license to collect and view activities for this table. All sign-in schema information will eventually move to the `IdentityLogonEvents` table.
@@ -92,4 +92,4 @@ Use this reference to construct queries that return information from the table. 
 - [Advanced hunting overview](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [Learn the query language](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
 - [Understand the schema](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

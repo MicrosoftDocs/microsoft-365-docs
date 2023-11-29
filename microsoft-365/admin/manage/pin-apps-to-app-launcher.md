@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/28/2020
+ms.date: 11/28/2023
 audience: Admin
 ms.topic: article
 ms.collection:
@@ -34,22 +34,25 @@ For more information about the app launcher and Microsoft365.com, see [meet the 
 > Microsoft 365 apps are excluded from this list since they’re already displayed in the App launcher.
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Microsoft Entra ID**.
-3. In **Microsoft Entra ID**, choose **Enterprise applications** > **App launchers** > **Settings**.
-4. In the **Microsoft 365 settings** section, choose **Add application**.
-5. Choose the applications you want to pin to the users' app launcher, and then choose **Add**.
+2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Microsoft Entra**.
+3. In Microsoft Entra admin center, under **Microsoft Entra ID (Azure AD)**, choose **Go to Microsoft Entra ID**.
+4. In the left nav, select **Applications** and then **Enterprise applications**.
+5. Choose **App launchers**, then **Settings**.
+6. In the **Microsoft 365 settings** section, choose **Add application**.
+7. Choose the applications you want to pin to the users' app launcher, and then choose **Add**.
 
 ### Pin a custom app
 
 > [!NOTE]
 > The user interface will indicate if you need need to purchase additional Microsoft Entra ID licenses to use this feature. For more information see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
-1. In **Microsoft Entra ID**, choose **Enterprise applications** > **New application** on the top of the **All applications** page.
-2. On the **Add an application** page, choose **Non-gallery application** or **Create your own application** if you are in the preview version of Microsoft Entra ID. 
-3. Type a name for the application and then assign user in the **Users and groups** tab.
-4. Use the **Properties** tab to upload an icon for the app.
-5. To assign a URL to the app, in the **Single sign-on** tab, choose **Linked** and then enter a URL.
-6. Choose **Save**.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Microsoft Entra**.
+3. In Microsoft Entra admin center, under **Microsoft Entra ID (Azure AD)**, choose **Go to Microsoft Entra ID**.
+4. In the left nav, select **Applications** and then **Enterprise applications**.
+5. On the **All applications** page, select an existing application or choose **New application**.
+6. If you choose an existing application, follow the steps to add users and groups, provision users and secure access.
+7. If you choose an existing application, follow the steps to create the new application and then follow the steps to add users and groups, provision users and secure access.
 
 ## Create application collections
 

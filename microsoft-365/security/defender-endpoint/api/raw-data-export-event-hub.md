@@ -29,7 +29,7 @@ ms.date: 10/24/2023
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> For the full data streaming experience available, please visit [Stream Microsoft 365 Defender events | Microsoft Learn](/microsoft-365/security/defender/streaming-api).
+> For the full data streaming experience available, please visit [Stream Microsoft Defender XDR events | Microsoft Learn](/microsoft-365/security/defender/streaming-api).
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -41,7 +41,7 @@ ms.date: 10/24/2023
 
 ## Enable raw data streaming
 
-1. Log in to the [Microsoft 365 Defender](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
+1. Log in to the [Microsoft Defender XDR](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to the [Data export settings page](https://security.microsoft.com/securitysettings/defender/raw_data_export) in the Microsoft Defender portal.
 
@@ -92,7 +92,7 @@ ms.date: 10/24/2023
 
 To get the data types for event properties do the following:
 
-1. Log in to [Microsoft 365 Defender](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
+1. Log in to [Microsoft Defender XDR](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
 
@@ -108,7 +108,7 @@ To get the data types for event properties do the following:
 
 ## Related topics
 
-- [Stream Microsoft 365 Defender events | Microsoft Learn](/microsoft-365/security/defender/streaming-api)
+- [Stream Microsoft Defender XDR events | Microsoft Learn](/microsoft-365/security/defender/streaming-api)
 
 - [Overview of Advanced Hunting](../advanced-hunting-overview.md)
 - [Microsoft Defender for Endpoint streaming API](raw-data-export.md)

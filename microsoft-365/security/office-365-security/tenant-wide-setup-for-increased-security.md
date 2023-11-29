@@ -18,14 +18,14 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom: 
   - seo-marvel-apr2020
   - admindeeplinkSPO
-description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft 365 Defender, for complete protection of your Office 365 subscription.
+description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft Defender XDR, for complete protection of your Office 365 subscription.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 10/16/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Configure your Microsoft 365 tenant for increased security
@@ -38,9 +38,11 @@ Specifics are up to your business.
 
 This article walks you through the manual configuration of tenant-wide settings that affect the security of your Microsoft 365 environment. Use these recommendations as a starting point.
 
-## Tune EOP and Defender for Office 365 protection policies in the Microsoft 365 Defender portal
+<a name='tune-eop-and-defender-for-office-365-protection-policies-in-the-microsoft-365-defender-portal'></a>
 
-The Microsoft 365 Defender portal has capabilities for both protection and reporting. It has dashboards you can use to monitor and take action when threats arise.
+## Tune EOP and Defender for Office 365 protection policies in the Microsoft Defender portal
+
+The Microsoft Defender portal has capabilities for both protection and reporting. It has dashboards you can use to monitor and take action when threats arise.
 
 As an initial step, you need to configure *email authentication* records in DNS for all custom email domains in Microsoft 365 (SPF, DKIM, and DMARC). Microsoft 365 automatically configures email authentication for the \*.onmicrosoft.com domain. For more information, see [Step 1: Configure email authentication for your Microsoft 365 domains](mdo-deployment-guide.md#step-1-configure-email-authentication-for-your-microsoft-365-domains).
 
@@ -57,7 +59,9 @@ We recommend turning on and using the Standard and/or Strict preset security pol
 
 Custom policies are required if the business needs of your organization require policy settings that are *different than* or *aren't defined in* preset security policies. Or, if your organization requires a different user experience for quarantined messages (including notifications). For more information, see [Determine your protection policy strategy](mdo-deployment-guide.md#determine-your-protection-policy-strategy).
 
-## View dashboards and reports in the Microsoft 365 Defender portal
+<a name='view-dashboards-and-reports-in-the-microsoft-365-defender-portal'></a>
+
+## View dashboards and reports in the Microsoft Defender portal
 
 In the Defender portal at <https://security.microsoft.com> select **Reports**. Or, to go directly to the **Reports** page, use <https://security.microsoft.com/securityreports>.
 
@@ -69,8 +73,8 @@ On the **Reports** page at <https://security.microsoft.com/securityreports>, sel
 
 On the **Email & collaboration reports** page that opens, note the cards that are available. In any card, select **View details** to dig into the data. For more information, see the following articles:
 
-- [View email security reports in the Microsoft 365 Defender portal](reports-email-security.md)
-- [View Defender for Office 365 reports in the Microsoft 365 Defender portal](reports-defender-for-office-365.md)
+- [View email security reports in the Microsoft Defender portal](reports-email-security.md)
+- [View Defender for Office 365 reports in the Microsoft Defender portal](reports-defender-for-office-365.md)
 
 Mail flow reports and insights are available in the Exchange admin center (EAC). For more information, see [Mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports) and [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights).
 

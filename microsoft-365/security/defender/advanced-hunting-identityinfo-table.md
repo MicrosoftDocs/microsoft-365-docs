@@ -4,8 +4,8 @@ description: Learn about user account information in the IdentityInfo table of t
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AccountInfo, IdentityInfo, account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,7 +29,7 @@ ms.date: 02/16/2021
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 The `IdentityInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about user accounts obtained from various services, including Microsoft Entra ID. Use this reference to construct queries that return information from this table.
 

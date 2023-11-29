@@ -93,7 +93,7 @@ You can filter the alerts based on the following Service sources:
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 - Microsoft Defender for Endpoint
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Defender for Office 365
 - App Governance
 - Microsoft Entra ID Protection
@@ -119,7 +119,7 @@ You can filter the alerts based on the following policies:
 |Custom detection|CustomDetection|
 |Custom TI|CustomerTI|
 |EDR|WindowsDefenderAtp|
-|Microsoft 365 Defender|MTP|
+|Microsoft Defender XDR|MTP|
 |Microsoft Defender for Office 365|OfficeATP|
 |Microsoft Defender Experts|ThreatExperts|
 |SmartScreen|WindowsDefenderSmartScreen|
