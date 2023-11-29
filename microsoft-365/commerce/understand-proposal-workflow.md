@@ -176,7 +176,7 @@ This section shows a list of all items included in the proposal, which can inclu
 - **Included** A list of items included as part of the proposal package at no extra charge. Some of these items might have a cost associated with them in the future.
 
 > [!NOTE]
-> Your proposal might include subscriptions with a future start date. For more information, see [Understand invoicing for future start dates](billing-and-payments/future-start-date.md).
+> Your proposal might include subscriptions with a future start date. For more information, see [Understand invoicing for future start dates](#understand-invoicing-for-future-start-dates).
 
 ### Summary
 
