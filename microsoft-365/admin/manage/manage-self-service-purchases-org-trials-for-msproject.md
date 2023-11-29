@@ -25,7 +25,7 @@ description: "Manage self-service purchases and organizational trials for Micros
 # Manage self-service purchases and organizational trials for Microsoft Project
 
 > [!IMPORTANT]
-> The Microsoft Project will soon be renamed as Microsoft Planner. For more information, see [new Microsoft Planner](https://techcommunity.microsoft.com/t5/planner-blog/the-new-microsoft-planner-a-unified-experience-bringing-together/ba-p/3977998).
+> The Microsoft Project will soon be renamed as Microsoft Planner. For more information, see the [new Microsoft Planner](https://techcommunity.microsoft.com/t5/planner-blog/the-new-microsoft-planner-a-unified-experience-bringing-together/ba-p/3977998).
 
 Microsoft Project is a tool that helps users to coordinate tasks. It allows for individual and team planning with tasks that have rich content, files, checklists, and more. For users who need more advanced options of project management with extra features, Microsoft Project offers a free trial experience that can help users and administrators decide if the product suits their needs.
 
@@ -53,14 +53,6 @@ There are a few ways to manage self-service license requests:
 
 ## Cancel a purchase or trial subscription
 
-An administrator can cancel a purchase or trial subscription for their users in the organization. The users will then lose access to certain features in Microsoft Project. The administrator, or the owners of the subscription, on canceling the subscription will receive an email that states that the subscription was canceled. 
+An administrator can cancel a purchase or trial subscription for their users in the organization. The users will then lose access to certain features in Microsoft Project. The administrator, or the owners of the subscription, on canceling the subscription will receive an email that states that the subscription was canceled.
 
 For instructions on how to cancel a purchase or trial subscription, see [Cancel a purchase or trial subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md).
-
-
-
-
-
-
-
-
