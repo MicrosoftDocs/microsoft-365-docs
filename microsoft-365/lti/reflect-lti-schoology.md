@@ -53,6 +53,9 @@ Integrate Reflect into Schoology to create impactful check-ins, gain wellbeing i
 1. Course owners can [create and share check-ins](https://support.microsoft.com/topic/c6cbbacc-5655-450e-bca9-988ddc506017).
 1. Once check-ins are created, course members can access and respond to them in their Reflect tab.
 
+> [!TIP]
+> [Explore the Educator Toolkit](https://reflect.microsoft.com/home/resources) for resources that can help educators bring the magic of Reflect to students and share it with peers. 
+
 ## Recommended browser settings
 
 - Cookies should be allowed for Microsoft Reflect.
