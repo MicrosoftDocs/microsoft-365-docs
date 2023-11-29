@@ -63,7 +63,7 @@ The following table summarizes what to expect:
 |Windows version|Primary antivirus/antimalware solution|Microsoft Defender Antivirus state|
 |:---|:---|:---|
 |Windows 10 <br/>Windows 11|Microsoft Defender Antivirus|Active mode|
-|Windows 10 <br/>Windows 11|A non-Microsoft antivirus/antimalware solution|Disabled mode (happens automatically)  Note: In Windows 11, if SmartAppControl is enabled, MDAV will go in Passive Mode.|
+|Windows 10 <br/>Windows 11|A non-Microsoft antivirus/antimalware solution|Disabled mode (happens automatically)  Note: In Windows 11, if SmartAppControl is enabled, Microsoft Defender Antivirus will go in Passive Mode.|
 |Windows Server 2022 <br/>Windows Server 2019<br/>Windows Server, version 1803, or newer <br/>Windows Server 2016 <br/>Windows Server 2012 R2 |Microsoft Defender Antivirus|Active mode|
 |Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, version 1803, or newer <br/>Windows Server 2016 |A non-Microsoft antivirus/antimalware solution|Disabled<br/>(set manually; see the note that follows this table) |
 
