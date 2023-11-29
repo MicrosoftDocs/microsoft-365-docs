@@ -614,8 +614,7 @@ Then your next step is to uninstall your non-Microsoft antivirus, antimalware, a
 
 - [Enhanced antimalware engine capabilities on Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
 
-- Boost protection of your Linux estate with behavior monitoring capabilities:
-  - [Boost protection of Linux estate with behavior monitoring](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)
+- [Boost protection of Linux estate with behavior monitoring](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)
 
   > [!NOTE]
   > The behavior monitoring functionality complements existing strong content-based capabilities, however you should carefully evaluate this feature in your environment before deploying it broadly since enabling behavioral monitoring consumes more resources and may cause performance issues.
@@ -633,4 +632,5 @@ Then your next step is to uninstall your non-Microsoft antivirus, antimalware, a
 - [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
 
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
