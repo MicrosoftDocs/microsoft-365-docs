@@ -35,7 +35,7 @@ ms.date: 11/29/2023
 > The Microsoft Defender for Endpoint Threat Protection report page is deprecated and will no longer be available after January 31st, 2024. Microsoft recommends that you transition to either the Defender XDR Incidents page or Advanced hunting to understand endpoint threat protection details. See the following sections for more information.
 
 ## Use the Alert queue filter in Defender XDR 
-Due to the deprecation of the Defender for Endpoint Threat protection report, you can use the Defender XDR Incidents view, filtered against Defender for Endpoint, to see the current status of alerts for protected devices. For alert status, such as unresolved, you can filter against New and In progress. [Learn more about Defender XDR Incidents](../defender/incident-queue#available-filters.md)
+Due to the deprecation of the Defender for Endpoint Threat protection report, you can use the Defender XDR Incidents view, filtered against Defender for Endpoint, to see the current status of alerts for protected devices. For alert status, such as unresolved, you can filter against New and In progress. [Learn more about Defender XDR Incidents](../defender/incident-queue.md#available-filters)
 
 ## Use Advanced hunting queries
 Due to the deprecation of the Defender for Endpoint Threat protection report, you can use Advanced hunting queries to find Defender for Endpoint threat protection information.  Note that currently there is no alert status in Advanced hunting elements that maps to resolve/unresolve. [Learn more about Advanced hunting in Defender XDR](../defender/advanced-hunting-overview.md). See below for a sample advanced hunting query that shows endpoint related threat protection details.
