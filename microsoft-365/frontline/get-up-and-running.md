@@ -59,7 +59,7 @@ Walkie Talkie is supported on Android devices with Google Mobile Services (GMS) 
 
 ## Manage frontline schedules, time, and attendance
 
-You can use the Shifts app to create and manage schedules for your team. With Shifts, employees can request time off, volunteer for open shifts, and request to swap shifts with coworkers.
+You can use the Shifts app to create and manage schedules for your team. With Shifts, employees can request time off, volunteer for open shifts, request to swap shifts with coworkers, and clock in and out of their shifts.
 
 To create a schedule in Shifts:
 
