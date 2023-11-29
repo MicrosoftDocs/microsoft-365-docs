@@ -68,23 +68,23 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 
 13. [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](#13-troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux).
 
-[14. Check resource utilization statistics and report on pre-deployment utilization compared to post-deployment.](#14-check-resource-utilization-statistics)
+14. [Check resource utilization statistics and report on pre-deployment utilization compared to post-deployment](#14-check-resource-utilization-statistics).
 
-[15. Verify communication with Microsoft Defender for Endpoint backend.](#15-verify-communication-with-microsoft-defender-for-endpoint-backend)
+15. [Verify communication with Microsoft Defender for Endpoint backend](#15-verify-communication-with-microsoft-defender-for-endpoint-backend).
 
-[16. Investigate agent health issues.](#16-investigate-agent-health-issues)
+16. [Investigate agent health issues](#16-investigate-agent-health-issues).
 
-[17. Verify that you're able to get "Platform Updates" (agent updates).](#17-verify-that-youre-able-to-get-platform-updates-agent-updates)
+17. [Verify that you're able to get "Platform Updates" (agent updates)](#17-verify-that-youre-able-to-get-platform-updates-agent-updates).
 
-[18. Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates).](#18-verify-that-youre-able-to-get-security-intelligence-updates-signaturesdefinition-updates)
+18. [Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates)](#18-verify-that-youre-able-to-get-security-intelligence-updates-signaturesdefinition-updates).
 
-[19. Test detections.](#19-test-detections)
+19. [Test detections](#19-test-detections).
 
-[20. Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux.](#20-troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux)
+20. [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](#20-troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux).
 
-[21. Troubleshooting High CPU utilization by ISVs, Linux apps, or scripts.](#21-troubleshoot-high-cpu-utilization-by-isvs-linux-apps-or-scripts)
+21. [Troubleshooting High CPU utilization by ISVs, Linux apps, or scripts](#21-troubleshoot-high-cpu-utilization-by-isvs-linux-apps-or-scripts).
 
-[22. Uninstall your non-Microsoft solution.](#22-uninstall-your-non-microsoft-solution)
+22. [Uninstall your non-Microsoft solution](#22-uninstall-your-non-microsoft-solution).
 
 ## 1. Work with your Firewall, Proxy, and Networking admin
 
