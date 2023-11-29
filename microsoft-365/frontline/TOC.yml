@@ -25,6 +25,8 @@
         href: deploy-dynamic-teams-at-scale.md
       - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
+    - name: Managers - get your team started
+      href: get-up-and-running.md  
     - name: Manage devices
       items:
       - name: Manage shared and personal devices
@@ -39,8 +41,6 @@
         href: pin-teams-apps-based-on-license.md
       - name: Teams policy packages for frontline managers and workers
         href: /microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-      - name: Managers - get your team started
-        href: get-up-and-running.md  
       - name: Secure messaging
         href: messaging-policies-hc.md
       - name: Message delegation
