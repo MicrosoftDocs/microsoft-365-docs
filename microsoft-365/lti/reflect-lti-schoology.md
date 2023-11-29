@@ -35,7 +35,7 @@ Integrate Reflect into Schoology to create impactful check-ins, gain wellbeing i
 1. Navigate to [Microsoft Reflect in the App Center](https://app.schoology.com/apps/profile/7024494126).
 1. Select the **Install LTI 1.3 App** button to begin the installation process.
 1. Select the **I agree** button.
-1. You are asked if the app should be installed for your entire organization or just for you. Select **Add to Organization**, and you are redirected to the **Organization Apps** page to complete the configuration.
+1. You're asked if the app should be installed for your entire organization or just for you. Select **Add to Organization**, and you're redirected to the **Organization Apps** page to complete the configuration.
 1. From the [**Organization Apps list**](https://app.schoology.com/apps/school_apps), locate the **Microsoft Reflect** app and select the **Install/Remove** button.
 1. Choose the **All Courses** checkbox. ***Don't*** check the "Course Admins Only" option to ensure the app is available to all members of the course.
 1. Select **Submit** to complete the installation.
@@ -48,7 +48,7 @@ Integrate Reflect into Schoology to create impactful check-ins, gain wellbeing i
 > 1. Or, they can select the **Install Your App(s)** link at the bottom of the course left rail navigation menu, and then select the **Microsoft Reflect** app to install.
 
 ## Ongoing use by course owners and members
-1. After the initial setup, course owners and members will find the Reflect app tab in every course.
+1. After the initial setup, course owners and members will find a tab of Reflect in every course.
 1. On their first access, they need to sign in using their Microsoft account to get started.
 1. Course owners can [create and share check-ins](https://support.microsoft.com/topic/c6cbbacc-5655-450e-bca9-988ddc506017).
 1. Once check-ins are created, course members can access and respond to them in their Reflect tab.
