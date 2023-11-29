@@ -28,22 +28,22 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 ## Loop Storage
 
-Where Loop content is stored impacts the admin management, governance, data lifecycle, and compliance capabilities available. Microsoft Loop is built on top of SharePoint, OneDrive, and [Microsoft Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/), which means that most of these capabilities work just like existing files in your ecosystem. Because Loop pages and components are files, they can be managed in a familiar way, within your existing workflows. To help you understand how Loop content is stored in the Microsoft ecosystem, here's a high-level diagram:
+Where Loop content is stored impacts the admin management, governance, data lifecycle, and compliance capabilities available. Microsoft Loop is built on top of SharePoint, OneDrive, and [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428), which means that most of these capabilities work just like existing files in your ecosystem. Because Loop pages and components are files, they can be managed in a familiar way, within your existing workflows. To help you understand how Loop content is stored in the Microsoft ecosystem, here's a high-level diagram:
 
 :::image type="content" source="media/loop-files-sharepoint.png" alt-text="Diagram showing that the place a Loop file is stored depends on where it was originally created.":::
 
 Where the loop content was originally created determines its storage location:
-- Created in the Loop app ➡️️ Microsoft Syntex
+- Created in the Loop app ➡️️ SharePoint Embedded
 - Created outside the Loop app in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint
 - Created outside the Loop app in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ OneDrive
 
 
 
 ## Summary table of admin management, governance, lifecycle and compliance capabilities based on where Loop content is stored
-|Category|OneDrive or SharePoint|Microsoft Syntex repository services|
+|Category|OneDrive or SharePoint|SharePoint Embedded|
 |-----|-----|-----|
-|  |This column applies to Loop content:  <ul><li>Created in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive  <li>Created in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint  </ul>|This column applies to Loop content:  <ul><li>Created inside the Loop app: Workspaces, Ideas ➡️ in Microsoft Syntex repository services, one container per Loop workspace  </ul>|
-|Foundations: Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** to turn on/off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem (the primary toggle), there are also a separate toggles to turn on/off Loop components specifically in Outlook or Teams chats and channels, and a toggle to turn on/off Loop components for collaborative meeting notes.  <br><br>Organizations with eCommunication regulations can choose to leave Loop components on across the Microsoft 365 ecosystem, but use the independent toggles for communication tools while evaluating the data lifecycle, governance, and compliance capabilities listed in this table.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** to turn on/off creation of content stored in Microsoft Syntex repository services. This includes creating Loop Ideas, creating new workspaces, or creating new pages or components within a workspace.|
+|  |This column applies to Loop content:  <ul><li>Created in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive  <li>Created in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint  </ul>|This column applies to Loop content:  <ul><li>Created inside the Loop app: Workspaces, Ideas ➡️ in SharePoint Embedded, one container per Loop workspace  </ul>|
+|Foundations: Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** to turn on/off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem (the primary toggle), there are also a separate toggles to turn on/off Loop components specifically in Outlook or Teams chats and channels, and a toggle to turn on/off Loop components for collaborative meeting notes.  <br><br>Organizations with eCommunication regulations can choose to leave Loop components on across the Microsoft 365 ecosystem, but use the independent toggles for communication tools while evaluating the data lifecycle, governance, and compliance capabilities listed in this table.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** to turn on/off creation of content stored in SharePoint Embedded. This includes creating Loop Ideas, creating new workspaces, or creating new pages or components within a workspace.|
 |Foundations: GDPR  |**GDPR** data subject requests as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|**GDPR** data subject requests as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|
 |Foundations: EDUB  |**EUDB** compliance - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|**EUDB** compliance - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|
 |Admin Management: Intune  |Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android.|Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android.|
@@ -86,23 +86,23 @@ This section repeats capabilities which aren't yet available from the table abov
 - Data Loss Prevention (DLP) rules are enforced on all Loop content, but **DLP policy tips** aren't yet displayed for **ANY Loop experiences.
 - **Sensitivity Labeling (MIP/CLP)** isn't yet supported for **ANY Loop content.
 
-**This applies to ALL Loop content, both content stored in OneDrive or SharePoint AND content stored in Microsoft Syntex repository services.
+**This applies to ALL Loop content, both content stored in OneDrive or SharePoint AND content stored in SharePoint Embedded.
 
 
 ## Admin Management of Loop workspaces
 
-This section provides expanded information on the subset of admin management capabilities dedicated to Loop workspaces stored in Microsoft Syntex. The Loop ApplicationID which can be used to identify Loop workspace containers is: `a187e399-0c36-4b98-8f04-1edc167a0996`  
+This section provides expanded information on the subset of admin management capabilities dedicated to Loop workspaces stored in SharePoint Embedded. The Loop ApplicationID which can be used to identify Loop workspace containers is: `a187e399-0c36-4b98-8f04-1edc167a0996`  
 
 ### Admin Management Capabilities Available
 
-Admins can perform the following tasks for Loop workspaces, which are containers in Microsoft Syntex repository service.
+Admins can perform the following tasks for Loop workspaces, which are containers in SharePoint Embedded.
 - PowerShell ability to
   - enumeration of list of Loop workspaces created
   - get container details including labels, storage, owners etc.
   - delete, recover and purge deleted Loop workspaces
   - set sharing settings at a tenant level
 
-See more about how to use PowerShell to perform these tasks in the [Microsoft Syntex admin management documentation](/microsoft-365/syntex/powershell-syntex-intro).
+See more about how to use PowerShell to perform these tasks in the [SharePoint Embedded admin management documentation](/microsoft-365/syntex/powershell-syntex-intro).
 
 ### Capabilities that aren't yet available
 
@@ -120,7 +120,7 @@ See more about how to use PowerShell to perform these tasks in the [Microsoft Sy
   - bulk export
   - edit sensitivity labels
   - above quota management of Loop workspaces
-  - Microsoft Syntex Repository admin role integration
+  - SharePoint Embedded Repository admin role integration
 - End user Recycle Bin for deleted content
 
 
@@ -148,4 +148,4 @@ By reviewing the above information, you can make an informed decision on whether
 - [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
 - [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration)
 - [Overview of Loop workspaces storage and permissions](/microsoft-365/loop/loop-workspaces-storage-permission)
-- [Manage Loop workspace experiences in Microsoft Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration)
+- [Manage Loop workspace experiences in SharePoint Embedded](/microsoft-365/loop/loop-workspaces-configuration)
