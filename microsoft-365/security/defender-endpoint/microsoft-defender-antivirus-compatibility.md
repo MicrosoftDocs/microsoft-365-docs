@@ -4,7 +4,7 @@ description: Learn about Microsoft Defender Antivirus with other security produc
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 11/28/2023
+ms.date: 11/29/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -40,8 +40,7 @@ Microsoft Defender Antivirus is available on endpoints running the following ver
 
 Microsoft Defender Antivirus is also available on:
 
-- Windows Server 2012 R2 when onboarded using the [modern, unified solution](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
-   - Note: Automatically installs Microsoft Defender Antivirus in **Active mode**
+- Windows Server 2012 R2 when onboarded using the [modern, unified solution](/microsoft-365/security/defender-endpoint/configure-server-endpoints). It automatically installs Microsoft Defender Antivirus in **Active mode**
 
 [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), enterprise-level endpoint antivirus protection is offered, which is managed through Microsoft Endpoint Configuration Manager on:
 
