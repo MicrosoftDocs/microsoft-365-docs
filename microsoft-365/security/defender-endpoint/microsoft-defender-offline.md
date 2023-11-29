@@ -127,7 +127,7 @@ You can run a Microsoft Defender Offline scan with the following:
 
 ### Use the Windows Defender Security app to run an offline scan
 
-Starting with Windows 10, version 1607 or newer, and Windows 11, Microsoft Defender Offline can be run with one click directly from the [Windows Security app](microsoft-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Microsoft Defender Offline Scan to bootable media, restart the endpoint, and load the bootable media.
+Starting with Windows 10, version 1607 or newer, and Windows 11, Microsoft Defender Offline Scan can be run with one click directly from the [Windows Security app](microsoft-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Microsoft Defender Offline Scan to bootable media, restart the endpoint, and load the bootable media.
 
 > [!NOTE]
 > In Windows 10, version 1607, the offline scan can be run from **Windows Settings > Update & security > Windows Defender** or from the Windows Defender client.
