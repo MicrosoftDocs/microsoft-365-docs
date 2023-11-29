@@ -53,7 +53,7 @@ If you prefer, you can also create other types of groups to use with Cloud Polic
 
 ## User experience expectations when admin settings are configured
 
-As described in this topic, you can control the ability for users in your environment to create new Loop content. You can configure this either via select groups or for your entire tenant. To prevent collaboration between certain groups in your organization, refer to Information Barriers.
+As described in this topic, you can control the ability for users in your environment to create new Loop content. You can configure this either via select groups or for your entire tenant. To prevent collaboration between certain groups in your organization, refer to [Information Barriers](/en-us/purview/information-barriers-sharepoint).
 
 ### Here's what you should expect when using the Loop IT admin controls configured to Disabled
 
