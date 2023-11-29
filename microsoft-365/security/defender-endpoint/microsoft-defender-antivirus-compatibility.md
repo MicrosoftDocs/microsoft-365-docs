@@ -38,18 +38,15 @@ Microsoft Defender Antivirus is available on endpoints running the following ver
 - Windows Server, version 1803, or newer
 - Windows Server 2016
 
-Microsoft Defender Antivirus is also available on:
+Microsoft Defender Antivirus is also available for older versions of Windows under certain conditions.
 
-- Windows Server 2012 R2 when onboarded using the [modern, unified solution](/microsoft-365/security/defender-endpoint/configure-server-endpoints). It automatically installs Microsoft Defender Antivirus in **Active mode**
+- On Windows Server 2012 R2, when onboarded using the [modern, unified solution](/microsoft-365/security/defender-endpoint/configure-server-endpoints), Microsoft Defender Antivirus is installed in **Active mode**.
 
-[System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), enterprise-level endpoint antivirus protection is offered, which is managed through Microsoft Endpoint Configuration Manager on:
+- On Windows 8.1, with [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), enterprise-level endpoint antivirus protection is offered and managed through Microsoft Endpoint Configuration Manager. 
 
-- Windows 8.1
-   - Note: Windows Defender is also offered for [consumer devices on Windows 8.1](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), although Windows Defender does not provide enterprise-level management.
+- On [consumer devices on Windows 8.1](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), Windows Defender is available (although it doesn't provide enterprise-level management).
 
-What happens when another non-Microsoft antivirus/antimalware solution is used? Can you run Microsoft Defender Antivirus alongside another antivirus product? The answers depend on several factors, such as your operating system and whether you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) together with your antivirus protection.
-
-This article describes what happens with Microsoft Defender Antivirus and a non-Microsoft antivirus/antimalware solution, with and without Defender for Endpoint.
+If you're using non-Microsoft antivirus/antimalware software, you might be able to run Microsoft Defender Antivirus alongside the other antivirus solution. This article describes what happens with Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware software, with and without [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
 ## Antivirus protection without Defender for Endpoint
 
@@ -62,7 +59,7 @@ The following table summarizes what to expect:
 |Windows version|Primary antivirus/antimalware solution|Microsoft Defender Antivirus state|
 |:---|:---|:---|
 |Windows 10 <br/>Windows 11|Microsoft Defender Antivirus|Active mode|
-|Windows 10 <br/>Windows 11|A non-Microsoft antivirus/antimalware solution|Disabled mode (happens automatically)  Note: In Windows 11, if SmartAppControl is enabled, Microsoft Defender Antivirus will go in Passive Mode.|
+|Windows 10 <br/>Windows 11|A non-Microsoft antivirus/antimalware solution|Disabled mode (happens automatically)  Note: In Windows 11, if SmartAppControl is enabled, Microsoft Defender Antivirus goes into Passive Mode.|
 |Windows Server 2022 <br/>Windows Server 2019<br/>Windows Server, version 1803, or newer <br/>Windows Server 2016 <br/>Windows Server 2012 R2 |Microsoft Defender Antivirus|Active mode|
 |Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, version 1803, or newer <br/>Windows Server 2016 |A non-Microsoft antivirus/antimalware solution|Disabled<br/>(set manually; see the note that follows this table) |
 
