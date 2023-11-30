@@ -29,7 +29,7 @@ To help protect your network and devices, Microsoft Defender for Business includ
 
 ## Standard protection ASR rules
 
-There are lots of attack surface reduction rules available. You don't have to set them all up at once. And, you can set up some rules in audit mode just to see how they'll work for your organization, and change them to work in block mode later. That said, we recommend enabling the following standard protection rules as soon as possible:
+There are lots of attack surface reduction rules available. You don't have to set them all up at once. And, you can set up some rules in audit mode just to see how they work for your organization, and change them to work in block mode later. That said, we recommend enabling the following standard protection rules as soon as possible:
 
 - [Block credential stealing from the Windows local security authority subsystem](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
 - [Block abuse of exploited vulnerable signed drivers](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
