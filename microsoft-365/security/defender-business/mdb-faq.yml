@@ -10,7 +10,7 @@ metadata:
   ms.topic: faq
   ms.service: defender-business
   ms.localizationpriority: medium
-  ms.date: 07/19/2023
+  ms.date: 11/30/2023
   ms.reviewer: efratka, nehabha
   f1.keywords: NOCSH 
   ms.collection: 
@@ -129,10 +129,7 @@ sections:
 
       - question: If I'm already using Microsoft 365 Business Premium, why do I need Defender for Business?
         answer: |
-          If you have Microsoft 365 Business Premium, then Defender for Business is included in your subscription. Defender for Business provides advanced threat protection for your organization's devices. To learn more, see the following articles:
-           
-          - [Overview of Defender for Business](mdb-overview.md)
-          - [Compare Defender for Business to Microsoft 365 Business Premium](mdb-overview.md)
+          If you have Microsoft 365 Business Premium, then Defender for Business is included in your subscription. Defender for Business provides advanced threat protection for your organization's devices. To learn more, see [Overview of Defender for Business](mdb-overview.md)
 
           Microsoft 365 Business Premium also includes [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/mdo-security-comparison#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which provides protection for your company's email and Office files.
 
@@ -142,7 +139,7 @@ sections:
 
           Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats.  
           
-          To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](compare-mdb-m365-plans.md#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
+          To learn more, see [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
       - question: What happens if I have a mix of Microsoft endpoint security subscriptions? 
         answer: |
@@ -164,8 +161,6 @@ sections:
           - [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/E3) (includes Defender for Endpoint Plan 1)
           - [Defender for Endpoint Plan 1 or 2](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)
 
-          For more information, see [Compare security plans for small and medium-sized businesses](compare-mdb-m365-plans.md).
-
           For details about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
        
       - question: How do I view my organization's Microsoft subscriptions and user licenses?
@@ -181,6 +176,4 @@ additionalContent: |
  - [Overview of Microsoft 365 Business Premium](/microsoft-365/business-premium/)
 
  - [Overview of Defender for Business](mdb-overview.md)
-
- - [Compare Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
  
