@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 11/20/2023
+ms.date: 11/30/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -40,7 +40,7 @@ You can also use a newly added license usage report to track status.
 ## Set your tenant to mixed mode and tag devices
 
 > [!IMPORTANT]
-> - **Mixed-mode settings apply to client endpoints only**. Tagging server devices won't change their subscription state. All server devices running Windows Server or Linux should have appropriate licenses, such as [Defender for Servers](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). See [Options for onboarding servers](defender-endpoint-plan-1-2.md#options-for-onboarding-servers).
+> - **Mixed-mode settings apply to client endpoints only**. Tagging server devices won't change their subscription state. All server devices running Windows Server or Linux should have appropriate licenses, such as [Defender for Servers](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). See [Options for onboarding servers](onboard).
 > - **Make sure to follow the procedures in this article to try mixed-license scenarios in your environment**. Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) doesn't set your tenant to mixed mode. 
 > - **You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2**. 
 > - To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
