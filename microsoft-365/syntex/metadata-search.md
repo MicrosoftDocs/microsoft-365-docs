@@ -26,21 +26,6 @@ Syntex content query lets you use the metadata associated with a document to hel
 
 You can now use content query to search for metadata in any of the queriable columns in your document library. Queriable columns include the following content types:
 
-
-|Content types  |
-|---------|
-|'Text':     |
-|Note':    |
-|Row3     |
-|Row4     |
-|Row5     |
-|Row6     |
-|Row7     |
-|Row8     |
-|Row9     |
-|Row10     |
-
-
 - 'Text':
 - 'Note':
 - 'DateTime':
