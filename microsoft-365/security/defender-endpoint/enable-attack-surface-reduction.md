@@ -1,7 +1,6 @@
 ---
 title: Enable attack surface reduction rules
 description: Enable attack surface reduction rules to protect your devices from attacks that use macros, scripts, and common injection techniques.
-keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 audience: ITPro
@@ -17,7 +16,7 @@ ms.collection:
 - mde-asr
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
-ms.date: 04/20/2023
+ms.date: 11/30/2023
 ---
 
 # Enable attack surface reduction rules
