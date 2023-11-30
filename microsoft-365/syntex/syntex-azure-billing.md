@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 ms.reviewer: kkamath
 ms.date: 05/15/2023
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

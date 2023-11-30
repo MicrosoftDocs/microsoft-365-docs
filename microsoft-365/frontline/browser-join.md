@@ -2,7 +2,7 @@
 title: Manage the join experience for Teams Virtual Appointments on browsers
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-frontline 

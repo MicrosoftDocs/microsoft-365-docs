@@ -23,7 +23,7 @@ metadata:
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  Last updated November 8, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
+  Last updated November 17, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
   If you can't find an answer to your question, let us know by leaving a comment and we'll add it to this article.
   
@@ -278,6 +278,10 @@ sections:
       - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
         answer: |
           Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
+
+      - question: How does Microsoft 365 Lighthouse affect activity reported by Microsoft Sentinel?
+        answer: |
+          Microsoft 365 Lighthouse sources and aggregates information from across your customer tenants through Microsoft Graph APIs. If Microsoft Sentinel is monitoring customer tenants that are managed by Lighthouse, it will detect such API activity and, depending on how Microsoft Sentinel is configured, report it as an incident. You can create an automation rule in Microsoft Sentinel to identify these incidents as false positives and close them automatically. For instructions on how to do this, see [Handle false positives in Microsoft Sentinel](/azure/sentinel/false-positives). To learn more about Microsoft Sentinel, review the [Microsoft Sentinel technical documentation](/azure/sentinel/).
 
       - question: What's the difference between Microsoft 365 Lighthouse and the multitenant organization capabilities in Microsoft Defender XDR? If I manage services for SMBs, which should I use?
         answer: |

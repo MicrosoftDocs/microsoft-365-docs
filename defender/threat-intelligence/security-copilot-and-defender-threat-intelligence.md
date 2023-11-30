@@ -12,7 +12,7 @@ audience: ITPro
 ms.collection: 
   - Tier1
 ms.topic: conceptual
-ms.date: 11/17/2023
+ms.date: 11/20/2023
 ---
 
 # Microsoft Security Copilot (preview) and Microsoft Defender Threat Intelligence
@@ -24,7 +24,7 @@ Microsoft Security Copilot is a cloud-based AI platform that provides natural la
 
 **Security Copilot integrates with Microsoft Defender Threat Intelligence**
 
-Security Copilot delivers from Microsoft Defender Threat Intelligence (Defender TI) information about threat activity groups, indicators of compromise (IOCs), and tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
+Security Copilot delivers from Microsoft Defender Threat Intelligence (Defender TI) information about threat activity groups, indicators of compromise (IOCs), and tools, as well as contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
 
 This article introduces you to Security Copilot and includes sample prompts that can help Defender TI users.
 
@@ -47,7 +47,7 @@ This article introduces you to Security Copilot and includes sample prompts that
 ## Open Security Copilot
 
 1.	Go to [Microsoft Security Copilot](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
-2.	Make sure that the Defender TI plugin is turned on. To do this, select the **Security Copilot plugin** icon in the lower-left corner of your screen. 
+2.	Make sure that the Defender TI plugin is turned on. Select the **Security Copilot plugin** icon in the lower-left corner of your screen. 
    
       ![Screenshot of the Microsoft Security Copilot home page with the plugin icon at the lower-left corner highlighted.](/defender/threat-intelligence/media/defender-ti-and-copilot//copilot-plugin-button.png)
 
