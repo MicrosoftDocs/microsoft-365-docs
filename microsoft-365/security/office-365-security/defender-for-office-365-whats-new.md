@@ -40,12 +40,12 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## November 2023
 
-- **Enhanced Action experience from Email Entity/ Summary Panel** As part of the change security admins can take multiple actions as part of FP/FN flows.[Learn more](mdo-email-entity-page.md)
--  [Tenant allow block list](tenant-allow-block-list.md)  can support more entries
-  -  Microsoft Defender for Office 365 plan 2 supports 10,000 block entries and 5,000 allow entries (via admin submissions) in the Tenant Allow Block List for each category (Domains & addresses, Files, and URLs).
-  -  Microsoft Defender for Office 365 plan 1 supports 1,000 block entries and 1,000 allow entries (via admin submissions) in the Tenant Allow Block List for each category (Domains & addresses, Files, and URLs).
-  -  Exchange Online Protection will remain at 500 block entries and 500 allow entries (via admin submissions) in Tenant Allow Block List for each category (Domains & addresses, Files, and URLs). 
-  
+- **Enhanced Action experience from Email Entity/ Summary Panel** As part of the change security admins can take multiple actions as part of FP/FN flows.[Learn more](mdo-email-entity-page.md).
+- The [Tenant Allow/Block List](tenant-allow-block-list.md) supports more entries in each category (Domains & email addresses, Files, and URLs:
+  - Microsoft Defender for Office 365 Plan 2 supports 10,000 block entries and 5,000 allow entries (via admin submissions) in each category.
+  - Microsoft Defender for Office 365 Plan 1 supports 1,000 block entries and 1,000 allow entries (via admin submissions) in each category.
+  - Exchange Online Protection remains at 500 block entries and 500 allow entries (via admin submissions) in each category.
+
 ## October 2023
 
 - **Create and manage simulations using the Graph API** in Attack simulation training. [Learn more](/graph/api/attacksimulationroot-post-simulation)
