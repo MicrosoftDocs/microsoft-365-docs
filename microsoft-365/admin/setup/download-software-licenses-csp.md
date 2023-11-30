@@ -31,7 +31,7 @@ This article explains how to download software and product license keys for perp
 
 ## Before you begin
 
-You must be a Global admin to do the steps in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+You must be a License admin to do the steps in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 
 ## Download software and product license keys
 
