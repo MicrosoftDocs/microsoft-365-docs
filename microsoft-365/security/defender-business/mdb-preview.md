@@ -3,7 +3,7 @@ title: Microsoft Defender for Business preview features
 description: Learn how to access Microsoft Defender for Business preview features.
 keywords: preview, preview experience, Microsoft Defender for Business, features, updates
 search.appverid: met150
-ms.service: defender-for-business
+ms.service: defender-business
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

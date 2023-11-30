@@ -6,7 +6,7 @@ ms.author: deniseb
 manager: dansimp 
 ms.date: 06/28/2023
 ms.topic: how-to
-ms.service: defender-for-business
+ms.service: defender-business
 ms.localizationpriority: medium 
 ms.reviewer: nehabha
 f1.keywords: NOCSH 

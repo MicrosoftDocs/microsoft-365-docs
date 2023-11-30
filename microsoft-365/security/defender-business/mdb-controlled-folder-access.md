@@ -6,7 +6,7 @@ ms.author: deniseb
 manager: dansimp 
 ms.date: 08/21/2023
 ms.topic: conceptual
-ms.service: defender-for-business
+ms.service: defender-business
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security

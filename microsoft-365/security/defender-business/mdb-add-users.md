@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: conceptual
-ms.service: defender-for-business
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 05/01/2023
 ms.collection: 

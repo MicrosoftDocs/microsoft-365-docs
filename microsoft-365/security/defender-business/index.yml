@@ -5,7 +5,7 @@ summary: Simple, comprehensive endpoint security to help you protect your small 
 metadata:
   title: Microsoft Defender for Business documentation
   description: Defender for Business is a cybersecurity solution for small and medium-sized businesses to protect devices, such as computers, tablets, and phones. Protect devices with enterprise-grade security at an affordable price. Try or by Defender for Business today!
-  ms.service: defender-for-business
+  ms.service: defender-business
   ms.topic: landing-page
   ms.date: 09/07/2023
   ms.collection: 

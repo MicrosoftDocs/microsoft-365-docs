@@ -12,7 +12,7 @@ ms.collection:
 - tier1
 ms.localizationpriority: high
 ms.date: 05/04/2023
-ms.service: defender-for-business
+ms.service: defender-business
 search.appverid: 
 - MOE150
 - MET150

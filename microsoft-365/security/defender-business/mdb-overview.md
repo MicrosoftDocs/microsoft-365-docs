@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: defender-for-business
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 07/19/2023
 ms.reviewer: yaelbenari, efratka, nehabha
