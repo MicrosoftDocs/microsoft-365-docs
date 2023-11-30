@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: reference
 ms.service: microsoft-365-business
-ms.date: 10/26/2023
+ms.date: 11/30/2023
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -83,13 +83,10 @@ The following table summarizes how to secure your data using Microsoft 365 for b
 - For more information about what each plan includes, see:
 
    - [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c)
+
    - [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
 - [What is Defender for Business?](../security/defender-business/mdb-overview.md)
 
 - [Microsoft 365 Business Premium—cybersecurity for small business](/microsoft-365/business-premium/)
-
-- For more information about Defender for Business and Microsoft 365 Business Premium, see  [How does Defender for Business compare to Microsoft 365 Business Premium?](../security/defender-business/mdb-overview.md#how-does-defender-for-business-compare-to-microsoft-365-business-premium)
-
-- [Compare Microsoft endpoint security plans](../security/defender-endpoint/defender-endpoint-plan-1-2.md) (for securing and managing devices)
 
