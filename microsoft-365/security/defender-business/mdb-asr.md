@@ -6,8 +6,7 @@ ms.author: deniseb
 manager: dansimp 
 ms.date: 05/04/2023
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security
@@ -104,3 +103,4 @@ Attack surface reduction rules are available in Defender for Business. The follo
 - [Use your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
 - [View and manage incidents](mdb-view-manage-incidents.md)
 - [View reports](mdb-reports.md)
+

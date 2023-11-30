@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 07/19/2023
 ms.reviewer: yaelbenari, efratka, nehabha
@@ -79,3 +78,4 @@ With Defender for Business, you can help protect the devices and data your busin
 - [Learn more about the simplified configuration process in Defender for Business](mdb-setup-configuration.md)
 - [Find out how to get Defender for Business](get-defender-business.md)
 - [Get an overview of Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
+
