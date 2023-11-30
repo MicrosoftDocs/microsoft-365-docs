@@ -3674,6 +3674,11 @@
       "source_path": "microsoft-365/security/defender-business/compare-mdb-m365-plans.md",
       "redirect_url": "/microsoft-365/security/defender-business/mdb-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint",
+      "redirect_document_id": false
     }
    ]
 }
