@@ -3,8 +3,7 @@ title: Alert grading for session cookie theft alert
 description: Review, manage and grade the session cookie theft alert as True Positive (TP) or False Positive (FP), and if there is TP, take recommended actions to remediate the attack and mitigate the security risks arising because of it.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, cookie theft, AiTM, Attacker-in-the-middle, Adversary-in-the-middle, session theft, aitm cookie theft, aitm session theft.
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -31,9 +30,9 @@ ms.date: 10/18/2022
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-This article contains information about alert grading for Session Cookie theft alerts in Microsoft 365 Defender:
+This article contains information about alert grading for Session Cookie theft alerts in Microsoft Defender XDR:
 
 - **Stolen session cookie was used**
 - **Authentication request from AiTM-related phishing page**
@@ -69,7 +68,7 @@ The results of using this playbook are:
         - Azure environments (for example, Azure portal subscription modifications, etc.)
         - SharePoint Online (accesses to multiple sites, or for files that have sensitive content like credential info, or financial statements), etc.)
     - Inspect operations observed in multiple platforms (EXO, SPO, Azure, etc.) within a short time span for the affected user.
-        - For example, timelines for audit events of mail read/send operations and Azure resource allocation/modifications (new machine provisioning or adding to AAD) shouldn't coincide with each other.
+        - For example, timelines for audit events of mail read/send operations and Azure resource allocation/modifications (new machine provisioning or adding to Microsoft Entra ID) shouldn't coincide with each other.
 
 3. Investigate possible follow-on attacks. AiTM attacks are usually a means-to-an-end and not the endgame, so inspect your environment for other attacks that follow for the affected accounts.
     - An example would be looking into BEC cases

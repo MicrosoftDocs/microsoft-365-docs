@@ -20,8 +20,8 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
@@ -121,7 +121,7 @@ The simplest way to verify a rules or custom forms attack is to run the [Get-All
 
 #### Prerequisites
 
-You need to be a member of the Global Administrator role in [Azure Active Directory](../../admin/add-users/about-admin-roles.md) or the Organization Management role group in [Exchange Online](/exchange/permissions-exo/permissions-exo), because the script connects to every mailbox in the organization to read rules and forms.
+You need to be a member of the Global Administrator role in [Microsoft Entra ID](/microsoft-365/admin/add-users/about-admin-roles) or the Organization Management role group in [Exchange Online](/exchange/permissions-exo/permissions-exo), because the script connects to every mailbox in the organization to read rules and forms.
 
 1. Use an account with local administrator rights to sign in to the computer where you intend to run the script.
 
@@ -164,7 +164,7 @@ If you find any evidence of either of these attacks, remediation is simple: just
 
 5. Once all offline copies of the mailbox have been removed, do the following steps:
    - Reset the user's password using a high quality value (length and complexity).
-   - If multi-factor authentication (MFA) isn't turned on for the user, follow the steps in [Setup multi-factor authentication for users](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)
+   - If multi-factor authentication (MFA) isn't turned on for the user, follow the steps in [Setup multi-factor authentication for users](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
 
    These steps ensure that the user's credentials aren't exposed via other means (for example, phishing or password reuse).
 
@@ -224,7 +224,7 @@ After you connect to the required Exchange PowerShell environment, you can take 
 
 The Rules and Forms exploits are only used by an attacker after they've stolen or breached a user's account. So, your first step to preventing the use of these exploits against your organization is to aggressively protect user accounts. Some of the most common ways that accounts are breached are through phishing or [password spray attacks](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/).
 
-The best way to protect user accounts (especially admin accounts) is to [set up MFA for users](../../admin/security-and-compliance/set-up-multi-factor-authentication.md). You should also:
+The best way to protect user accounts (especially admin accounts) is to [set up MFA for users](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication). You should also:
 
 - Monitor how user accounts are [accessed and used](/azure/active-directory/active-directory-view-access-usage-reports). You may not prevent the initial breach, but you can shorten the duration and the effects of the breach by detecting it sooner. You can use these [Office 365 Cloud App Security policies](/cloud-app-security/what-is-cloud-app-security) to monitor accounts and alert you to unusual activity:
 

@@ -3,8 +3,8 @@ title: Microsoft 365 for Financial Services
 description: Learn about the admin resources available to manage and get the most out of Teams for your frontline financial services workforce.
 ms.topic: conceptual
 author: lana-chin
-ms.author: heidip
-manager: serdars
+ms.author: v-chinlana
+manager: jtremper
 audience: admin
 f1.keywords:
 - NOCSH

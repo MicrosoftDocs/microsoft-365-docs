@@ -23,12 +23,12 @@ ms.custom: intro-overview
 
 # What is Microsoft Defender for Business?
 
-Defender for Business is an endpoint security solution that was designed especially for the small- and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. Defender for Business is available as a standalone subscription and is included in [Microsoft 365 Business Premium](../../business-premium/index.md).
+Defender for Business is an endpoint security solution that was designed especially for the small- and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. Defender for Business is available as a standalone subscription and is included in [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md).
 
 This article describes what's included in Defender for Business and provides links to learn more about these features and capabilities.
 
 > [!TIP]
-> To learn more about Microsoft 365 Business Premium, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md).
+> To learn more about Microsoft 365 Business Premium, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/m365bp-overview.md).
 
 ## Video: Enterprise-grade protection for small- and medium-sized businesses
 
@@ -64,8 +64,8 @@ With Defender for Business, you can help protect the devices and data your busin
    - [See the trial user guide: Defender for Business](trial-playbook-defender-business.md).
    - [See how to set up and configure Defender for Business](mdb-setup-configuration.md).
 
-- **Help you get started using Defender for Business**, starting with the Microsoft 365 Defender portal. 
-   - [Navigate the Microsoft 365 Defender portal](mdb-get-started.md).
+- **Help you get started using Defender for Business**, starting with the Microsoft Defender portal. 
+   - [Navigate the Microsoft Defender portal](mdb-get-started.md).
    - [Try scenarios, tutorials, and simulations](mdb-tutorials.md).
 
 - **Provide guidance on managing devices and security policies**.
@@ -78,4 +78,4 @@ With Defender for Business, you can help protect the devices and data your busin
 - [Try the interactive guide: Get started with Defender for Business](https://aka.ms/MDB-GetStartedGuide)
 - [Learn more about the simplified configuration process in Defender for Business](mdb-setup-configuration.md)
 - [Find out how to get Defender for Business](get-defender-business.md)
-- [Get an overview of Microsoft 365 Business Premium](../../business-premium/index.md)
+- [Get an overview of Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)

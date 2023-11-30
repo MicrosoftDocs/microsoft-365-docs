@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
+- essentials-manage
 description: "Learn how to configure SMS text notifications for clients, customers and partners in Microsoft Bookings."
 ---
 
@@ -48,7 +49,7 @@ You can track key data on SMS notifications usage in your organization in the Te
 
     :::image type="content" source="../media/analytics-reporting.png" alt-text="Screenshot: SMS text notifications Analytics and reporting page in the Teams admin center":::
 
-Related content
+## Related content
 
 [Microsoft Bookings](bookings-overview.md)\
 [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md)\

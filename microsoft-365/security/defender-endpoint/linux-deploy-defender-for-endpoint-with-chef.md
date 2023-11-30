@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -46,7 +47,7 @@ After the cookbook is created, create a files folder inside the cookbook folder 
 mkdir mdatp/files
 ```
 
-Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft 365 Defender portal to this new files folder.
+Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft Defender portal to this new files folder.
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 

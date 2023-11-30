@@ -2,7 +2,7 @@
 title: Create a content center in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 07/06/2023
 audience: admin
@@ -46,7 +46,7 @@ To create a new content center:
 
 1. On the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**SharePoint admin center** > **Active sites**</a>.
 
-2. On the **Active sites** page, select **Create**, and then select **Other options**.
+2. On the **Active sites** page, select **Create**, and then select **Browse more sites**.
 
 3. On the **Choose a template** menu, select **Content center**.
 

@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 07/14/2023
+ms.date: 11/10/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -29,7 +29,7 @@ Microsoft 365 Lighthouse is a portal that helps Managed Service Providers (MSPs)
 Lighthouse is available to partners enrolled in the Cloud Solution Provider (CSP) program, including both Direct-Bill and Indirect Resellers.  
 
 > [!NOTE]
-> Only MSPs are required to enroll in the CSP program; the customers they manage do not need to enroll in the CSP program.
+> Only MSPs are required to enroll in the CSP program; the customers they manage don't need to enroll in the CSP program.
 
 In addition, each MSP customer tenant must meet the following requirements to be actively monitored and managed in Lighthouse:
 
@@ -38,7 +38,7 @@ In addition, each MSP customer tenant must meet the following requirements to be
     > Either granular delegated admin privileges (GDAP) or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. An indirect reseller relationship is no longer required to onboard to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups.
     > [!NOTE]
     > To use Lighthouse to view opportunities in Sales advisor, you don’t need additional delegated access permissions from the customer.
-- Must have at least one license of Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business
+- Must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business
 - Must have no more than 2500 licensed users
 - Must reside in the same geographic region (Americas, European Union, or Asia plus Australia) as the partner organization that manages them
 
@@ -53,7 +53,7 @@ To view customer tenant devices on the device management pages, an MSP must:
 
 ## Requirements for enabling user management
 
-For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Azure Active Directory Premium P1 or later. Azure AD Premium P1 is included with Microsoft 365 Business Premium and Microsoft 365 E3. Azure AD Premium P2 is included with Microsoft 365 E5.
+For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Microsoft Entra ID P1 or later. Microsoft Entra ID P1 is included with Microsoft 365 Business Premium and Microsoft 365 E3. Microsoft Entra ID P2 is included with Microsoft 365 E5.
 
 ## Requirements for enabling threat management
 

@@ -1,11 +1,11 @@
 ---
-title: Create distribution groups
+title: Create distribution lists
 f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/19/2020
+ms.date: 09/13/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,12 +33,10 @@ description: "Create distribution groups or lists in the Microsoft 365 admin cen
 # Create distribution groups in the Microsoft 365 admin center
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
-  
-Used when you want to send email to group of people without having to type each individual recipient's name, distribution groups (distribution lists) are organized by a particular discussion subject (such as "Marketing") or by users who share common work that requires them to communicate frequently. They also provide a way for you to automatically forward email to multiple email addresses.
 
-Distribution groups are sometimes called distribution lists.
+Use distribution lists (sometimes called distribution groups) when you want to send email to group of people without having to type each individual recipient's name. Distribution lists can be organized by a particular discussion subject (such as "Marketing") or by users who share common work that requires them to communicate frequently. They also provide a way for you to automatically forward email to multiple email addresses.
   
-## Create a distribution group (list)
+## Create a distribution list (group)
 
 ::: moniker range="o365-worldwide"
 
@@ -52,23 +50,23 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 
 ::: moniker-end
 
-1. Select the app launcher icon and choose **Admin**.
-    
-    Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the apps available to you. From there, you can search for a specific app. 
-    
-2. Select **Groups** \> **Groups** in the left navigation pane, and then select **Add a group**. 
-      
-3. On the **Choose a group type** field, choose **Distribution**, and then choose **Next**.
+1. Select **Teams and groups** \> **Active teams and groups** \> **Distribution lists**.
+
+2. Select **Add a distribution list**.
+
+3. On the **Set up the basics** page, enter a name, description, and select **Next**.
+
+4. On the **Assign owners** page, select **Assign owners** and select a user and choose **Add**. Select **Next**.
+
+5. On the **Edit settings** page, create a group email address for your new group, and choose whether you want people outside your organization to send email to the group. Select **Next**.
+
+6. On the **Review and finish adding group** page, verify your group information and select **Create group**.
+
+To add users to your distribution list after you've created it, see [Add a user or contact to a distribution list](../email/add-user-or-contact-to-distribution-list.md).
+
+Check out how to use group in Outlook 2016 and Outlook on the web in [Use contact groups (formerly distribution lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39).
   
-4. Enter a name, description, and email alias for your new group, and choose whether you want people outside your organization to send email to the group. 
-    
-5. Press **Add** to create a group, and then review your group and choose **Close**. 
-    
-6. To add users to your distribution list, see [Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md).
-    
-Check out how to use group in Outlook 2016 and Outlook on the web in [Use contact groups (formerly distribution lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
-  
-Check out [Distribution group issues](/office365/troubleshoot/groups/distribution-list-issues) for help with distribution list issues. 
+Check out [Distribution list issues](/office365/troubleshoot/groups/distribution-list-issues) for help with distribution list issues.
 
 ## Related content
 

@@ -1,8 +1,8 @@
 ---
 title: Help your frontline workers track time and attendance
 author: lana-chin
-ms.author: heidip
-manager: serdars
+ms.author: v-chinlana
+manager: jtremper
 audience: ITPro
 ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 
