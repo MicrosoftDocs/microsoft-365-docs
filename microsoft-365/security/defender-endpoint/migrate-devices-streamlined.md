@@ -277,7 +277,7 @@ Make sure to run a couple of basic commands post-connection to confirm connectiv
 
 Ensure that Automated investigation and response is working on your test device: [Configure automated investigation and response capabilities](/microsoft-365/security/defender/m365d-configure-auto-investigation-response).
 
-For Auto-IR testing labs, navigate to  **Microsoft 365 Defender > Evaluations & Tutorials> Tutorials & Simulations > Tutorials>  Automated Investigation tutorials**.
+For Auto-IR testing labs, navigate to **Microsoft 365 Defender** \> **Evaluations & Tutorials** \> **Tutorials & Simulations** \> **Tutorials \> **Automated Investigation tutorials**.
 
 #### Cloud-delivered protection 
 
@@ -343,6 +343,6 @@ Follow the same instructions as for Windows.
 
 Download and run the client analyzer for macOS or Linux. For more information, see [Download and run the client analyzer](download-client-analyzer.md).
 
-1. Run `mdeclientanalyzer.cmd -o <path to cmd file>` from within the MDEClientAnalyzer folder. The command uses parameters from the onboarding package to test connectivity. 
+1. Run `mdeclientanalyzer.cmd -o <path to cmd file>` from within the MDEClientAnalyzer folder. The command uses parameters from the onboarding package to test connectivity.
 
 2.	Run `mdeclientanalyzer.cmd -g <GW_US, GW_UK, GW_EU>` (where parameter is of GW_US, GW_EU, GW_UK). GW refers to the streamlined option. Run with applicable tenant geo.

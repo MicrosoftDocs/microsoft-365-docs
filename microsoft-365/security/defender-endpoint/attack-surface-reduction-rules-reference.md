@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - mde-asr
-ms.date: 10/30/2023
+ms.date: 11/27/2023
 search.appverid: met150
 ---
 
@@ -94,7 +94,7 @@ The following table lists the supported operating systems for rules that are cur
 
 > [!NOTE]
 >
-> Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
+> Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version 1809 or later.
 >
 > Attack surface reduction rules in Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 are available for devices onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
@@ -114,7 +114,7 @@ The following table lists the supported operating systems for rules that are cur
 | [Block persistence through Windows Management Instrumentation (WMI) event subscription](#block-persistence-through-wmi-event-subscription) <br> \* _File and folder exclusions not supported._ | Y <br> version 1903 (build 18362) or later <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> version 1903 (build 18362) or later | N | N |
 | [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
-| [Block Webshell creation for Servers](#block-webshell-creation-for-servers)  |   |   |   |   |   |
+| [Block Webshell creation for Servers](#block-webshell-creation-for-servers)  | N | Y <br>Exchange Role Only | Y <br>Exchange Role Only | Y <br>Exchange Role Only | N |
 | [Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
 | [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 
@@ -144,7 +144,7 @@ Links to information about configuration management system versions referenced i
 |[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |Y  |  |Y   | Y  |
 |[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |   |  Y | Y  |
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |Y <br><br> CB 1802  | Y  | Y  |
-|[Block Webshell creation for Servers](#block-webshell-creation-for-servers) |   |   |   |   |
+|[Block Webshell creation for Servers](#block-webshell-creation-for-servers) | Y |   | Y | Y |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y |Y <br><br> CB 1710  | Y  |  Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y |Y <br><br> CB 1802 | Y  | Y  |
 
@@ -245,6 +245,8 @@ The **Block abuse of exploited vulnerable signed drivers** rule doesn't block a 
 
 Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
+GUID: `56a863a9-875e-4185-98a7-b882c64b5ce5`
+
 Advanced hunting action type:
 
 - AsrVulnerableSignedDriverAudited
@@ -318,7 +320,7 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block executable content from email client and webmail
 
-This rule blocks the following file types from launching from email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers:
+This rule blocks email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers from propagating the following file types:
 
 - Executable files (such as .exe, .dll, or .scr)
 - Script files (such as a PowerShell .ps1, Visual Basic .vbs, or JavaScript .js file)
@@ -372,7 +374,7 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 This rule detects suspicious properties within an obfuscated script.
   
 > [!IMPORTANT]
-> PowerShell scripts have been temporarily excluded from the "Block execution of potentially obfuscated scripts" rule due to a high number of false positives. We will provide an update when PowerShell scripts are included again in the scope of this rule.
+> PowerShell scripts are now supported for the "Block execution of potentially obfuscated scripts" rule. 
 
 Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which hampers close scrutiny by humans and security software.
 
@@ -536,27 +538,19 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block Webshell creation for Servers
 
-GUID: `a8f5898e-1dc8-49a9-9878-85004b8a61e6`
-
+This rule blocks web shell script creation on Microsoft Server, Exchange Role.
+ 
+A web shell script is a specifically crafted script that allows an attacker to control the compromise server. A web shell may include functionalities such as receiving and executing malicious commands, downloading and executing malicious files, stealing and exfiltrating credentials and sensitive information, identifying potential targets etc.
+ 
 Intune name: `Block Webshell creation for Servers`
-
-Supported operating systems:
-- [Windows 11](/windows/whats-new/whats-new-windows-11-version-22h2)
+ 
+GUID: `a8f5898e-1dc8-49a9-9878-85004b8a61e6`
 
 ### Block Win32 API calls from Office macros
 
 This rule prevents VBA macros from calling Win32 APIs.
 
 Office VBA enables Win32 API calls. Malware can abuse this capability, such as [calling Win32 APIs to launch malicious shellcode](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) without writing anything directly to disk. Most organizations don't rely on the ability to call Win32 APIs in their day-to-day functioning, even if they use macros in other ways.
-
-Supported operating systems:
-
-- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 11](/windows/whats-new/whats-new-windows-11-version-22h2)
-- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022)
-- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune name: `Win32 imports from Office macro code`
 

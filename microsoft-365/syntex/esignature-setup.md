@@ -8,12 +8,13 @@ ms.date: 11/15/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to set up and configure Microsoft Syntex eSignature. 
+description: Learn how to set up and manage sites in Microsoft Syntex eSignature. 
 ---
 
 # Set up Microsoft Syntex eSignature
@@ -63,7 +64,13 @@ By default, Syntex eSignature is turned on for libraries in all SharePoint sites
     c. Select **Save**.
 
 > [!NOTE]
-> The first eSignature request in a Microsoft 365 tenant might take a little longer to execute than usual. It can take a few seconds to a few minutes; however, subsequent requests are executed normally. We recommend that admins create the first eSignature request in a SharePoint site as the final setup step. 
+> The first eSignature request in a Microsoft 365 tenant might take a little longer to execute than usual. It can take a few seconds to a few minutes; however, subsequent requests are executed normally. We recommend that admins create the first eSignature request in a SharePoint site as the final setup step.
+
+### Turn off eSignature
+
+1. On the **Manage Microsoft Syntex** page, select **Syntex eSignature**.
+
+2. If Syntex eSignature is turned on, there will be a **Turn off** button visible. To turn off Syntex eSignature, select **Turn off**.
 
 ## Document storage and retention
 

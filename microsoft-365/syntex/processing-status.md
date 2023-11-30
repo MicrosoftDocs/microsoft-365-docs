@@ -2,7 +2,7 @@
 title: View the status of a file processed by Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 10/23/2023
 audience: admin
@@ -37,3 +37,6 @@ The **Processing status** column shows you whether the processing of a file is i
 The **Processing details** column provides more information about the processing status, such as if a file format isn't supported or if an image is too small.
 
 When a new model is applied to a library, the **Processing status** and the **Processing details** columns are automatically added. However, the columns won't be automatically added to libraries where a model has already been applied. You'll need to apply the model again to add the columns.
+
+> [!NOTE]
+> Libraries that run a document understanding model have a column named **Corrected**. The **Corrected** column is set to true when a user has manually changed the content type of a processed file. This excludes the file from future reprocessing.

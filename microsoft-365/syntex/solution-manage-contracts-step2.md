@@ -2,7 +2,7 @@
 title: Step 2. Use Microsoft Teams to create your contract management channel
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 audience: admin
 ms.topic: conceptual

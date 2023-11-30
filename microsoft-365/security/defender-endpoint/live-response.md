@@ -123,6 +123,9 @@ The dashboard also gives you access to:
 
 ## Initiate a live response session on a device
 
+> [!NOTE]
+> Live response actions initiated from the Device page are not available in the machineactions API.
+
 1. Sign in to Microsoft Defender portal.
 
 2. Navigate to **Endpoints > Device inventory** and select a device to investigate. The devices page opens.

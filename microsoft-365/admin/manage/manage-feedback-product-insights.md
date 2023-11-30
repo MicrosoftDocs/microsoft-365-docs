@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/26/2021
+ms.date: 11/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -15,10 +15,6 @@ ms.collection:
 - scotvorg
 - Adm_O365
 ms.custom: AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Use Net promoter scores (NPS) from your end users to see how they feel about Microsoft products and services."
 ---
 
