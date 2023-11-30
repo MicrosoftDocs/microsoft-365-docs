@@ -37,7 +37,7 @@ Email authentication (also known as _email validation_) is a group of standards 
 
 It's important to realize that these standards _work together_ to provide the best possible experience.
 
-SPF doesn't work on forwarded email messages. If an intermediate email server alters the `5321.MailFrom` address, the destination email server can identify the message as spoofed (false positive).
+SPF doesn't work on forwarded email messages. The destination email server will likely identify the forwarded message as spoofed (a false positive).
 
 ## Inbound email authentication for mail into Microsoft 365
 
@@ -45,7 +45,7 @@ SPF doesn't work on forwarded email messages. If an intermediate email server al
 
 Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes use those features to verify email coming into the service.
 
-An equally important element of email authentication is the configuration for domains you own (whether or not you use them to send email!) so other organizations correctly allow or block email that claims to come from senders in your domains (otbound mail from Microsoft 365).
+An equally important element of email authentication is the configuration for domains you own (whether or not you use them to send email!) so other organizations correctly allow or block email that claims to come from senders in your domains (outbound mail from Microsoft 365).
 
 Microsoft 365 uses the following standards to verify inbound email:
 
