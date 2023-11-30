@@ -6,8 +6,7 @@ ms.author: deniseb
 manager: dansimp 
 ms.date: 07/19/2023
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium 
 ms.collection: 
 - SMB
@@ -74,3 +73,4 @@ Mobile threat defense capabilities are now generally available to [Defender for 
 - [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
 - [View and edit security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - [What's new in Microsoft 365 Business Premium and Microsoft Defender for Business](../../business-premium/m365bp-mdb-whats-new.md)
+
