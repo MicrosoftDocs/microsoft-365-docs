@@ -22,8 +22,27 @@ Microsoft Syntex gives you the ability to quickly search through your document's
 
 Syntex content query lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
-> [!NOTE]
-> A new capability has been recently added that lets you query on any column in your document library. However, depending on when the library was last indexed, the results might include only items that have been recently updated. To ensure you get the complete results, you might want to [manually request a reindexing of your document library](https://learn.microsoft.com/sharepoint/crawl-site-content).
+## Columns you can query
+
+You can now use content query to search for metadata in any of the queriable columns in your document library.
+
+**New document libraries** — For new libraries, all of the columns will be available in content query.
+
+**Existing document libraries** — For existing libraries, all of the queriable columns won't be immediately available. You'll need to select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)) in the existing library. Then after five days, check the library again and all of the columns should be available.
+
+Queriable columns include the following content types:
+
+- 'Text':
+-  'Note':
+-  'DateTime':
+-  'Choice':
+-  'MultiChoice':
+-  'User':
+-  'Boolean':
+-  'Currency': 
+-  'Number':
+-  'TaxonomyFieldType':
+-  'TaxonomyFieldTypeMulti':
 
 > This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
