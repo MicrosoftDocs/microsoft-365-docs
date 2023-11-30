@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Learn how Microsoft Copilot for Microsoft 365 uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 11/15/2023
+ms.date: 11/30/2023
 ---
 
 # Data, Privacy, and Security for Microsoft Copilot for Microsoft 365
@@ -78,7 +78,7 @@ For Microsoft Teams chats with Copilot, admins can also use [Microsoft Teams Exp
 
 ### Deleting the history of user interactions with Microsoft Copilot for Microsoft 365
 
-To delete a user's history of interactions with Microsoft Copilot for Microsoft 365, which includes user prompts and the responses Copilot returns, Microsoft 365 admins can [submit an online support ticket](/microsoft-365/admin/get-help-support#online-support) in the Microsoft 365 admin center. In this ticket, admins should include their [Tenant ID](/entra/fundamentals/how-to-find-tenant) and the user’s principal name (their [primary email address](/microsoft-365/admin/add-users/change-a-user-name-and-email-address#set-the-primary-email-address)) for which they want data deleted. The ticket will mark the history for permanent, [hard-deletion](/compliance/regulatory/gdpr-dsr-Office365#deleting-personal-data). For any new requests, open a new ticket with support and avoid editing your existing requests.  
+To delete a user's history of interactions with Microsoft Copilot for Microsoft 365, which includes user prompts and the responses Copilot returns, Microsoft 365 admins can [submit an online support ticket](/microsoft-365/admin/get-help-support#online-support) in the Microsoft 365 admin center. In this ticket, admins should include their [Tenant ID](/entra/fundamentals/how-to-find-tenant) and the user’s [Object ID](/partner-center/marketplace/find-tenant-object-id#find-user-object-id) for which they want data deleted. The ticket will mark the history for permanent, [hard-deletion](/compliance/regulatory/gdpr-dsr-Office365#deleting-personal-data). For any new requests, open a new ticket with support and avoid editing your existing requests.  
 
 ### Microsoft Copilot for Microsoft 365 and public web content
 
