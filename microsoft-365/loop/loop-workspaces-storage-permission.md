@@ -32,7 +32,7 @@ Loop app workspaces are stored inside your tenant. Loop workspaces and pages cou
 
 ## Content permissions mechanism
 
-Each Loop app workspace uses storage for the workspace in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/). Additionally, the Loop app creates a roster for that workspace to govern access to the full workspace. When pages are shared from the workspace, we create a sharing link using your company's default sharing link type as configured for OneDrive and SharePoint.
+Each Loop app workspace uses storage for the workspace in [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428). Additionally, the Loop app creates a roster for that workspace to govern access to the full workspace. When pages are shared from the workspace, we create a sharing link using your company's default sharing link type as configured for OneDrive and SharePoint.
 
 Sharing the workspace in Loop adds the user to the workspace roster. All workspace roster members have access and "*editing*" permissions to all the Loop pages in that workspace.
 
@@ -50,9 +50,9 @@ Loop workspaces don't use Microsoft 365 groups for access management, instead th
 
 ## eDiscovery support for Loop content stored in Loop workspaces
 
-Loop content (pages and components) created in the Loop app are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. As mentioned above, these files are stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) and are available for search and collection for both eDiscovery (Standard) and eDiscovery (Premium). Render in review and the HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
+Loop content (pages and components) created in the Loop app are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. As mentioned above, these files are stored in SharePoint Embedded and are available for search and collection for both eDiscovery (Standard) and eDiscovery (Premium). Render in review and the HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
 
-A graph export API that can access Loop content stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) is not yet available.
+A graph export API that can access Loop content stored in [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428) is not yet available.
 
 ## Storage management after user departure
 
