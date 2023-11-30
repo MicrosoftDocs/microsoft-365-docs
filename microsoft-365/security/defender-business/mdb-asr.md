@@ -69,7 +69,7 @@ These rules help protect your network and devices but shouldn't cause disruption
 
 ## View your attack surface reduction report
 
-Defender for Business includes an attack surface reduction report that will show you how attack surface reduction rules are working for you.
+Defender for Business includes an attack surface reduction report that shows how attack surface reduction rules are working for you.
 
 1. As a global administrator, in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports**.
 
