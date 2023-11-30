@@ -18,18 +18,36 @@ ms.localizationpriority: high
 description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/20/2023
+ms.date: 11/29/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# Email authentication in EOP
+# Email authentication in Microsoft 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Email authentication (also known as _email validation_) is a group of standards that tries to stop email messages from forged senders (also known as _spoofing_). Microsoft 365 uses the following standards to verify inbound email:
+Email authentication (also known as _email validation_) is a group of standards to identify and prevent the delivery of email messages from forged senders (also known as _spoofing_) that can be used in business email compromise (BEC), phishing, and other email attacks. These standards include:
+
+- **Sender Policy Framework (SPF)**: Verifies that the source email server is authorized to send mail for the domain that's used in sender's email address during the SMTP transmission of the message (known as the `5321.MailFrom` address, **MAIL FROM** address, P1 sender, or envelope sender). For more information, see <xxx>.
+- **DomainKeys Identified Mail (DKIM)**: Uses a domain to digitally sign elements of the message (including the From: message header field that's shown as the sender's email address in email clients, which is also known as the `5322.From` address, From address, or P2 sender), and stores the signature in the message header to verify that the message wasn't altered in transit. For more information, see <xxx>.
+- **Domain-based Message Authentication, Reporting and Conformance (DMARC)**: Contains a policy that defines the action for messages that fail SPF and/or DMARC checks for senders in the domain. For more information, see <xxx>.
+
+It's important to realize that these standards _work together_ to provide the best possible experience.
+
+SPF doesn't work on forwarded email messages. If an intermediate email server alters the `5321.MailFrom` address, the destination email server can identify the message as spoofed (false positive).
+
+## Inbound email authentication for mail into Microsoft 365
+
+## Email authentication for mail sent from your domains
+
+Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes use those features to verify email coming into the service.
+
+An equally important element of email authentication is the configuration for domains you own (whether or not you use them to send email!) so other organizations correctly allow or block email that claims to come from senders in your domains (otbound mail from Microsoft 365).
+
+Microsoft 365 uses the following standards to verify inbound email:
 
 - [SPF](email-authentication-spf-configure.md)
 - [DKIM](email-authentication-dkim-configure.md)
