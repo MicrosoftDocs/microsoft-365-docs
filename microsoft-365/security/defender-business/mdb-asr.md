@@ -77,7 +77,7 @@ Defender for Business includes an attack surface reduction report that shows how
 
    - **Detections**, where you can view detections that occurred as a result of attack surface reduction rules
    - **Configuration**, where you can view data for standard protection rules or other attack surface reduction rules
-   - **Add exclusions**, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
+   - **Add exclusions**, where you can add items to be excluded from attack surface reduction rules (use exclusions sparingly; every exclusion reduces your level of security protection)
 
 To learn more about attack surface reduction rules, see the following articles:
 
