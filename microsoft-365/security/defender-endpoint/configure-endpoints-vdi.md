@@ -160,10 +160,9 @@ If you have onboarded the primary image of your VDI environment (SENSE service i
    sc query sense
    ```
 
-3. Run the following commands using PsExec.exe (which can be downloaded from [https://download.sysinternals.com/files/PSTools.zip](https://download.sysinternals.com/files/PSTools.zip)):
+3. Run the following commands in a CMD window::
 
    ```console
-   PsExec.exe -s cmd.exe
    del "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber\*.*" /f /s /q
    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
    exit
