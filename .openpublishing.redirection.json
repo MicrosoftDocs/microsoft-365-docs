@@ -6,11 +6,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security-and-compliance/index.md",
-      "redirect_url": "/microsoft-365/business-premium/secure-your-business-data",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/microsoft-365-client-support-modern-authentication.md",
       "redirect_url": "/microsoft-365/microsoft-365-client-support-multi-factor-authentication",
       "redirect_document_id": false
@@ -19,16 +14,6 @@
       "source_path": "submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md",
       "redirect_url": "/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft",
       "redirect_document_id": true
-     },
-    {
-      "source_path": "defender/threat-intelligence/index.md",
-      "redirect_url": "/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
-      "redirect_document_id": false
-    },
-      {
-         "source_path":"microsoft-365/scheduler/index.yml",
-         "redirect_url":"https://news.microsoft.com/reinventing-productivity",
-         "redirect_document_id":false
-      }
+     }
     ]
    }

@@ -1,0 +1,9 @@
+{
+    "redirections": [
+        {
+            "source_path":"microsoft-365/scheduler/index.yml",
+            "redirect_url":"https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id":false
+        }
+    ]
+}
