@@ -24,26 +24,25 @@ Syntex content query lets you use the metadata associated with a document to hel
 
 ## Columns you can query
 
-You can now use content query to search for metadata in any of the queriable columns in your document library.
+You can now use content query to search for metadata in any of the queriable columns in your document library. Queriable columns include the following content types:
+
+- 'Text':
+- 'Note':
+- 'DateTime':
+- 'Choice':
+- 'MultiChoice':
+- 'User':
+- 'Boolean':
+- 'Currency':
+- 'Number':
+- 'TaxonomyFieldType':
+- 'TaxonomyFieldTypeMulti':
 
 **New document libraries** — For new libraries, all of the columns will be available in content query.
 
 **Existing document libraries** — For existing libraries, all of the queriable columns won't be immediately available. You'll need to select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)) in the existing library. Then after five days, check the library again and all of the columns should be available.
 
-Queriable columns include the following content types:
-
-- 'Text':
--  'Note':
--  'DateTime':
--  'Choice':
--  'MultiChoice':
--  'User':
--  'Boolean':
--  'Currency': 
--  'Number':
--  'TaxonomyFieldType':
--  'TaxonomyFieldTypeMulti':
-
+> [!NOTE]
 > This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
 ## To use Syntex content query
