@@ -2,7 +2,7 @@
 title: machineAction resource type
 description: Learn about the methods and properties of the MachineAction resource type in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, get, machineaction, recent
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.custom: api
-ms.subservice: mde
+ms.subservice: reference
 search.appverid: met150
 ms.date: 12/18/2020
 ---

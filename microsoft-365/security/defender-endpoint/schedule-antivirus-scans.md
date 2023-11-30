@@ -2,7 +2,7 @@
 title: Schedule regular quick and full scans with Microsoft Defender Antivirus
 description: Set up recurring (scheduled) scans, including when they should run and whether they run as full or quick scans
 keywords: quick scan, full scan, quick vs full, schedule scan, daily, weekly, time, scheduled, recurring, regular
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ ms.custom: nextgen
 ms.date: 03/31/2023
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.topic: how-to
 ms.collection: 
 - m365-security

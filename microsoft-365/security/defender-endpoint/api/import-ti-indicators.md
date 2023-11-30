@@ -2,7 +2,7 @@
 title: Import Indicators API
 description: Learn how to use the Import batch of Indicator API in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, submit, ti, indicator, update
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
 - must-keep
 ms.topic: reference
 ms.custom: api
-ms.subservice: mde
+ms.subservice: reference
 search.appverid: met150
 ms.date: 02/02/2021
 ---
