@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 11/28/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,12 +17,6 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkEXCHANGE
-search.appverid:
-- MET150
-- MOE150
-- MED150
-- MBS150
-ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to choose which mobile apps people can use to access email, calendar, and contacts."
 ---
