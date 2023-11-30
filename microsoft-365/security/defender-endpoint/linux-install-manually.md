@@ -427,7 +427,7 @@ Download the onboarding package from Microsoft Defender portal.
    - Open a Terminal window and execute the following command:
 
      ``` bash
-     curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+     curl -o /tmp/eicar.com.txt https://secure.eicar.org/eicar.com.txt
      ```
 
    - The file should have been quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
