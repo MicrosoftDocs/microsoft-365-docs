@@ -20,10 +20,20 @@ ms.collection:
 
 # Manage Microsoft Defender for Endpoint subscription settings across client devices
 
-A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, you can manage your subscription settings to accommodate mixed licensing scenarios across client devices. These capabilities enable you to:
+In Defender for Endpoint, a mixed-licensing scenario is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. The following table describes examples of mixed-licensing scenarios: 
+
+| Scenario | Description |
+|:---|:---|
+| *Mixed tenant* | Use different sets of capabilities for groups of users and their devices. Examples include:<br/>- Defender for Endpoint Plan 1 and Defender for Endpoint Plan 2<br/>- Microsoft 365 E3 and Microsoft 365 E5  |
+| *Mixed trial* | Try a premium level subscription for some users. Examples include: <br/>- Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (a trial subscription has been started for some users)<br/>- Microsoft 365 E3 (purchased for all users), and Microsoft 365 E5 (a trial subscription has been started for some users) |
+| *Phased upgrades* | Upgrade user licenses in phases. Examples include:<br/>- Moving groups of users from Defender for Endpoint Plan 1 to Plan 2<br/>- Moving groups of users from Microsoft 365 E3 to E5  |
+
+ Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, you can manage your subscription settings to accommodate mixed licensing scenarios across client devices. These capabilities enable you to:
 
 - **Set your tenant to mixed mode and tag devices** to determine which client devices will receive features and capabilities from each plan (we call this option *mixed mode*); **OR**,
 - **Use the features and capabilities from one plan across all your client devices**. 
+
+You can also use a newly added license usage report to track status.
 
 ## [**Use mixed mode**](#tab/mixed)
 
@@ -143,7 +153,6 @@ To reduce management overhead, there's no requirement for device-to-user mapping
 
 ## More resources
 
-- [Compare Microsoft endpoint security plans](defender-endpoint-plan-1-2.md)
 - [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 - [How to contact support for Defender for Endpoint](contact-support.md).
 - [Get started with Microsoft Security (trial offers)](https://www.microsoft.com/security/business/get-started/start-free-trial)
