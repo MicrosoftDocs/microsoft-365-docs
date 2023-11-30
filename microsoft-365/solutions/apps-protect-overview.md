@@ -20,7 +20,7 @@ Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solu
 
 Managed apps are apps that you have assigned to users via a unified endpoint management provider, such as Intune. Managed apps support app protection policies, as well as app configuration policies. These apps use mobile application management (MAM) that is provided by the unified endpoint management provider. MAM enables organizations to manage and protect their data within an application. A managed app has either integrated the Intune App SDK or has been wrapped using the Intune Wrapping Tool to support App Protection Policies (APP) and/or app configuration policies. You use MAM policies to configure and protect apps on unmanaged devices, which are personal devices that are not enrolled in Intune.
 
-Using app protection policies provides the benefit of protecting your organization's data at the app level. For end-users, productivity isn't affected and app protection policies don't apply when end-users are using the app in a personal context. 
+Using app protection policies provides the benefit of protecting your organization's data at the app level. For end-users, productivity isn't affected and app protection policies don't apply when end-users are using the app in a personal context.
 
 There are several situations where you commonly should use app protection policies. For instance, if your end-users is using their personal device, you may want to use an app protection policy to control the access to the app by using a PIN. You may want to enforce data sharing restrictions that that your organization's data isn't shared with non-managed apps. Also, you may want to prevent end-users from saving organization data to personal locations.
 
@@ -161,7 +161,9 @@ The **Data Transfer** section of the **Data Protection** settings for an Windows
 
 ### Health checks
 
-**Wihdows**:
+Health checks allow you to configure conditional launch capabilities. To do this, you must set the health check conditions for your app protection policy. Select a **Setting** and enter the **Value** that users must meet to access your org data. Then select the **Action** you want to take if users do not meet your conditionals. In some cases, multiple actions can be configured for a single setting.
+
+**Windows**:
 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-14.png" alt-text="Health checks UI for Windows" border="false" :::
@@ -169,12 +171,19 @@ The **Data Transfer** section of the **Data Protection** settings for an Windows
 
 ## How app protection policies protect app data
 
+Your employees use mobile devices for both personal and work tasks. While making sure your employees can be productive, you want to prevent data loss, intentional and unintentional. You will also want to protect company data that is accessed from devices that are not managed by you. You can use Intune app protection policies independent of any mobile device management (MDM) solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution. By implementing app-level protection policies, you can restrict access to company resources and keep data within the purview of your IT department.
+
 ### With enrollment (MDM, devices channel)
 
 ### Without enrollment (MAM, app channel)
 
 
 ## Understand app protection framework
+
+Your organization's data protection needs may differ from other organizations. For this reason, you can tailor the app protection in Intune based on your organization's specific needs. The App protection policies (APP) data protection framework is organized into three distinct configuration levels, with each level building off the previous level.
+
+- 
+
 
 <!--
 https://learn.microsoft.com/mem/intune/apps/app-protection-policy#app-protection-policy-data-protection-framework
