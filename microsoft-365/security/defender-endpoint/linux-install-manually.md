@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 11/30/2023
+ms.date: 12/01/2023
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
