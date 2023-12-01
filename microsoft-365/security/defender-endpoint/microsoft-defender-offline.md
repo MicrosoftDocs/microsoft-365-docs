@@ -143,25 +143,25 @@ Starting with Windows 10, version 1607 or newer, and Windows 11, Microsoft Defen
    > The process starts from C:\ProgramData\Microsoft\Windows Defender\Offline Scanner.
 4. You'll get a prompt to save your work before continuing, similar to the following image:
    
-    :::image type="content" source="../../media/defender-offline-save-work.png" alt-text="Image that displays the screen prompt to save all work before continuing.":::
+    :::image type="content" source="../../media/defender-offline-save-work.png" alt-text="Screenshot of screen prompt to save all work before continuing.":::
    
     After you saved your work, select **Scan**.
 5. Once you clicked on **Scan**, you'll get another prompt requesting your permission to make changes to your device, similar to the following image:
 
-    :::image type="content" source="../../media/defender-offline-apply-change.png" alt-text="Image that displays a screen prompt requesting permission to apply.":::
+    :::image type="content" source="../../media/defender-offline-apply-change.png" alt-text="Screenshot of a screen prompt requesting permission to apply.":::
     
      Select **Yes**.
 6. Another prompt will appear informing you that you'll be signed out and windows will shut down in less than a minute, similar to the following image:
 
-    :::image type="content" source="../../media/defender-offline-sign-out-notification.png" alt-text="Image that displays a screen prompt informing about the sign out.":::
+    :::image type="content" source="../../media/defender-offline-sign-out-notification.png" alt-text="Screenshot of a screen prompt informing about the sign out.":::
 
 7. You'll see that the Microsoft Defender Antivirus scan (offline scan) is in progress.
     
-    :::image type="content" source="../../media/defender-offline-antivirus-run.png" alt-text="Image of the Microsoft Defender Antivirus scan.":::
+    :::image type="content" source="../../media/defender-offline-antivirus-run.png" alt-text="Screenshot of the Microsoft Defender Antivirus scan.":::
     
     You'll see the following image:
     
-    :::image type="content" source="../../media/defender-offline-scan-run-2.png" alt-text="Image that displays a dialogue when the run is ongoing.":::
+    :::image type="content" source="../../media/defender-offline-scan-run-2.png" alt-text="Screenshot of a dialogue when the run is ongoing.":::
 
 ### Use PowerShell cmdlets to run an offline scan
 
@@ -199,7 +199,7 @@ For more information, see [Windows Defender WMIv2 APIs](/previous-versions/windo
     > - Download Windows Defender Offline and create the CD, DVD, or USB flash drive on a PC that isn't infected with malware as the malware can interfere with the media creation.
     > - If you use a USB drive, the drive will be reformatted and any data on it will be erased. Ensure to back up any important data from the drive first.
 
-    :::image type="content" source="../../media/defender-offline-scan-pc-for-virus.png" alt-text="Image that displays a dialogue for scan in PC.":::
+    :::image type="content" source="../../media/defender-offline-scan-pc-for-virus.png" alt-text="Screenshot of a dialogue for scan in PC.":::
 
 3. Scan your PC for viruses and other malware.
 
