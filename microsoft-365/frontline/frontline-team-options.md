@@ -25,9 +25,6 @@ ms.date: 07/12/2023
 
 Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. When deploying your frontline teams you have different options for how you can manage team membership. You can choose between dynamic team membership, static team membership, or a combination of both.
 
->[!IMPORTANT]
->The ability to deploy frontline dynamic teams at scale will begin rolling out for public preview in July 2023.
-
 ### Licensing
 
 For dynamic groups, users need one of the following licenses: Microsoft 365 F1, F3, E1, E3, or E5. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to leverage dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
