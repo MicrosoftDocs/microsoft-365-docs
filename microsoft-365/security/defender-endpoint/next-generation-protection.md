@@ -36,7 +36,7 @@ Microsoft Defender for Endpoint includes next-generation protection to reinforce
 - [Cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md), which includes near-instant detection and blocking of new and emerging threats.
 - [Dedicated protection and product updates](microsoft-defender-antivirus-updates.md), which includes updates related to keeping Microsoft Defender Antivirus up to date.
 
-Next-generation protection is included in both [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md). Next-generation protection is also included in Microsoft Defender for Business and Microsoft 365 Business Premium (See [Security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md)).
+Next-generation protection is included in both [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md). Next-generation protection is also included in [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-overview). 
 
 To configure next-generation protection services, see [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md).
 
