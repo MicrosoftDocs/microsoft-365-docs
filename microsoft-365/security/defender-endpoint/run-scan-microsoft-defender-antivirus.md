@@ -77,10 +77,6 @@ To check on the detections, see [Review the results of Microsoft Defender Antivi
 > [!TIP]
 > For more information about using Microsoft Configuration Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
 
-## Use the Windows Security app to run a scan
-
-For instructions on running a scan on individual endpoints, see [Run a scan in the Windows Security app](microsoft-defender-security-center-antivirus.md).
-
 ### Use devices to run a scan on a single device
 
 1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign-in.
@@ -88,6 +84,10 @@ For instructions on running a scan on individual endpoints, see [Run a scan in t
 2. From the sidebar, select **Devices** \> **All Devices** and choose the device you want to scan.
 
 3. Select **...More** and select **Quick Scan** (recommended) or **Full Scan** from the options.
+
+## Use the Windows Security app to run a scan
+
+For instructions on running a scan on individual endpoints, see [Run a scan in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 ## Use PowerShell cmdlets to run a scan
 
