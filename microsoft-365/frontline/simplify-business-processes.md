@@ -4,7 +4,7 @@ description: Learn how your frontline workforce can simplify their business proc
 ms.topic: conceptual
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 f1.keywords:
 - NOCSH

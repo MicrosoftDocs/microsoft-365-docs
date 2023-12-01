@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 10/06/2023
 ms.reviewer: efratka
@@ -79,3 +78,4 @@ The following table describes settings you can view and  edit in Defender for Bu
 2. Select **Settings**, and then select a category (such as **Security center**, **Microsoft 365 Defender**, or **Endpoints**).
 
 3. In the list of settings, select an item to view or edit.
+
