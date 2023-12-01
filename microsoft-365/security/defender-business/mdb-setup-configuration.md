@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 05/11/2023
 ms.reviewer: efratka, nehabha
@@ -121,3 +120,4 @@ After you have set up and configured Defender for Business, your next steps are 
 - [Onboard more devices](mdb-onboard-devices.md)
 - [View and edit your security policies and settings](mdb-configure-security-settings.md)
 - [View your reports](mdb-reports.md)
+
