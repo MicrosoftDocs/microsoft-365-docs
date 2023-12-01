@@ -23,7 +23,7 @@ ms.date: 07/12/2023
 
 ## Overview
 
-Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. When deploying your frontline teams you have different options for how you can manage team membership. You can choose between dynamic team membership, static team membership, or a combination of both.
+Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. When deploying your frontline teams, you have different options for how you can manage team membership. You can choose between dynamic team membership, static team membership, or a combination of both.
 
 ### Licensing
 
@@ -36,7 +36,7 @@ For dynamic groups, users need one of the following licenses: Microsoft 365 F1, 
 
 ## When should I choose dynamic teams?
 
-Dynamic teams will ensure your team membership is always up to date based on attributes you define in Microsoft Entra ID. As frontline employees onboard, offboard, or change locations, team membership will reflect the updates from Microsoft Entra ID.  
+Dynamic teams ensure your team membership is always up to date based on attributes you define in Microsoft Entra ID. As frontline employees onboard, offboard, or change locations, team membership will reflect the updates from Microsoft Entra ID.  
 
 You should use dynamic frontline teams if:
 
@@ -44,7 +44,7 @@ You should use dynamic frontline teams if:
 - You have Microsoft Entra attributes that can define who is a frontline worker and what locations they work in.
 - You want to simplify the process of creating a team for each frontline location, including support for creating new teams when a new location opens.
 
-[Learn more about deploying dynamic frontline teams from your Teams admin center](deploy-dynamic-teams-at-scale.md).
+[Learn more about deploying dynamic frontline teams from the Teams admin center](deploy-dynamic-teams-at-scale.md).
 
 > [!NOTE]
 > You can't manually add members to dynamic teams. If you need to manually add or remove members, it's recommended that you use a [static team](#when-should-i-choose-static-teams).
