@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: magarlan, chrigreen
+ms.reviewer: taylorau
 ms.date: 06/23/2023
 audience: Admin
 ms.topic: article
