@@ -7,7 +7,6 @@ manager: dansimp
 ms.date: 07/25/2023
 ms.topic: how-to
 ms.service:  microsoft-365-security
-ms.subservice: mdb
 ms.localizationpriority: medium 
 ms.collection: 
 - SMB
@@ -130,3 +129,4 @@ Each blob contains multiple rows. Each row contains the event name, the time Def
 ## See also
 
 - [Raw Data Streaming API](../defender-endpoint/raw-data-export.md) in Defender for Endpoint
+
