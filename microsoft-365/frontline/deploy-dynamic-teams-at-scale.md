@@ -24,9 +24,6 @@ ms.date: 12/1/2023
 
 ## Overview
 
-> [!NOTE]
-> If you would like to provide feedback and improve this feature, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
-
 Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Microsoft Entra attributes. [Learn more about Microsoft Entra attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
 
 In the setup process, you define the following information with Microsoft Entra attributes:
@@ -39,6 +36,9 @@ You also determine team structure and team owners.
 Then, you can choose which locations you want to create dynamic frontline teams for.
 
 Team membership is automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams are updated accordingly.
+
+> [!NOTE]
+> If you would like to provide feedback and improve this feature, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
 
 ## Prerequisites
 
