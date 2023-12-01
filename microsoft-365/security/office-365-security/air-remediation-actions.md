@@ -22,8 +22,8 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Remediation actions in Microsoft Defender for Office 365
@@ -69,4 +69,4 @@ Microsoft Defender for Office 365 includes remediation actions to address variou
 ## Related articles
 
 - [Learn about automated investigation in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Learn about capabilities in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
+- [Learn about capabilities in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender)

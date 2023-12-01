@@ -2,7 +2,7 @@
 title: Run a trial of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: lauris; jaeccles
 ms.date: 09/12/2023
 audience: admin

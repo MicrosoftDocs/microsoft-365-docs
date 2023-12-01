@@ -3,7 +3,7 @@ title: "Configure teams with baseline protection"
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article

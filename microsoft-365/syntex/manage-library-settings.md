@@ -2,7 +2,7 @@
 title: Manage library settings in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 06/01/2023
 audience: admin

@@ -28,7 +28,7 @@ ms.date: 07/21/2023
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -42,8 +42,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
->
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
 
 ## Introduction
@@ -93,7 +91,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
 3. Set up a PowerShell script, `CopySignatures.ps1`
 
-   Copy-Item -Path “\\SourceServer\Sourcefolder”  -Destination “\\TargetServer\Targetfolder”
+   Copy-Item -Path "\\SourceServer\Sourcefolder"  -Destination "\\TargetServer\Targetfolder"
 
 4. Use the command line to set up the scheduled task.
 

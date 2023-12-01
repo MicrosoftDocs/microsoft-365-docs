@@ -1,6 +1,6 @@
 ---
 title: Configure Directory Services account in Microsoft Defender for Identity
-description: Learn how to configure the Microsoft Defender for Identity Directory Services account in Microsoft 365 Defender
+description: Learn how to configure the Microsoft Defender for Identity Directory Services account in Microsoft Defender XDR
 ms.date: 08/15/2021
 ms.topic: how-to
 author: batamig
@@ -12,23 +12,23 @@ ms.collection: m365-security
 search.appverid: met150
 ---
 
-# Microsoft Defender for Identity Directory Services account in Microsoft 365 Defender
+# Microsoft Defender for Identity Directory Services account in Microsoft Defender XDR
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Defender for Identity
 
-This article explains how to configure the [Microsoft Defender for Identity](/defender-for-identity) Directory Services account in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+This article explains how to configure the [Microsoft Defender for Identity](/defender-for-identity) Directory Services account in [Microsoft Defender XDR](/microsoft-365/security/defender/overview-security-center).
 
 > [!IMPORTANT]
-> As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
+> As part of the convergence with Microsoft Defender XDR, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## Configure Directory Services account
 
 To connect the [sensor](sensor-health.md#add-a-sensor) with your Active Directory domains, you'll need to configure Directory Services accounts.
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option in the Settings page" lightbox="../../media/defender-identity/settings-identities.png":::
 

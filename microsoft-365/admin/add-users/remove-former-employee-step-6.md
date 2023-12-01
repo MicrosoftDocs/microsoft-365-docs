@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/30/2023
+ms.date: 11/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -23,10 +23,6 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "You can remove a former employee's Microsoft 365 license, and then delete it from your subscription or assign the license to another user."
 ---
 

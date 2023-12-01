@@ -2,12 +2,13 @@
 title: Set up and manage optical character recognition in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: kkameth
 ms.date: 10/16/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 ms.custom: admindeeplinkMAC
 search.appverid: 
 ms.collection: 

@@ -25,7 +25,7 @@ ms.subservice: mde
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink).
@@ -45,7 +45,7 @@ All updates contain:
 
 - Performance improvements
 - Serviceability improvements
-- Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
+- Integration improvements (Cloud, [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804))
 
 ## May-2023 (Release version: 10.8295.22621.1023)
 
@@ -109,4 +109,3 @@ See also:
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-
