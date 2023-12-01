@@ -48,7 +48,7 @@ Connect-MgGraph
 
 $GroupName = "<GroupName>"
 $templateId = (Get-MgBetaDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}).Id
-$groupID = (Get-MgGroup -Filter "DisplayName eq '$GroupName'").Id
+$groupID = (Get-MgBetaGroup -Filter "DisplayName eq '$GroupName'").Id
 
 $params = @{
 	templateId = "$templateId"
@@ -81,7 +81,7 @@ Connect-MgGraph
 
 $GroupName = "<GroupName>"
 $templateId = (Get-MgBetaDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}).Id
-$groupID = (Get-MgGroup -Filter "DisplayName eq '$GroupName'").Id
+$groupID = (Get-MgBetaGroup -Filter "DisplayName eq '$GroupName'").Id
 
 $params = @{
 	templateId = "$templateId"
@@ -115,7 +115,7 @@ Get-MgBetaUser -All | ?{$_.CreationType -eq "Invitation"}
 Then run the following using the appropriate values for ObjectID, GivenName, Surname, DisplayName, and TelephoneNumber.
 
 ```PowerShell
-Update-MgUser -UserId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -mobilePhone '555-555-5555'
+Update-MgBetaUser -UserId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -mobilePhone '555-555-5555'
 ```
 
 ## Related topics
