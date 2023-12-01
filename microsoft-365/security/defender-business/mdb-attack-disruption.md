@@ -6,8 +6,7 @@ ms.author: deniseb
 manager: dansimp 
 ms.date: 10/12/2023
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security
@@ -82,3 +81,4 @@ For more information, see [Review remediation actions in the Action center](mdb-
 Automatic attack disruption is built into Defender for Business; you don't have to explicitly turn on these capabilities. It's important to [onboard all your organization's devices](mdb-onboard-devices.md) (computers, phones, and tablets) to Defender for Business so that they're protected as soon as possible. 
 
 Additionally, sign up to receive [preview features](mdb-preview.md) so that you get the latest and greatest capabilities as soon as they're available. 
+
