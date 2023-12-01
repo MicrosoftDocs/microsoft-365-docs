@@ -65,7 +65,9 @@ To complete this process, you must have admin privileges on the device.
 1. - Navigate to the downloaded *wdav.pkg* in **Finder** and open it.
     
      Or
-    - You can download the *wdav.pkg*- from **Terminal** *sudo installer -store -pkg /Users/admin/Downloads/wdav.pkg -target /*
+    - You can download the *wdav.pkg*- from **Terminal**
+    
+      *sudo installer -store -pkg /Users/admin/Downloads/wdav.pkg -target /*
 
    :::image type="content" source="images/monterey-install-1.png" alt-text="The installation process for the application" lightbox="images/monterey-install-1.png":::
 
