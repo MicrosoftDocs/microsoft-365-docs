@@ -41,7 +41,7 @@ Combined with always-on, real-time protection, which reviews files when they are
 
 ## Use Microsoft 365 Defender portal to run a scan
 
-1. Go to the Microsoft 365 Defender portal [https://security.microsoft.com](https://security.microsoft.com/) and sign-in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com/)) and sign-in.
 2. Go to the **device page** that you would like to run a remote scan.
 3. Click on the ellipses **(…)**.
 4. Click on **Run Antivirus Scan**.
@@ -64,7 +64,7 @@ To check on the detections, see [Review the results of Microsoft Defender Antivi
 
 ### Use endpoint security to run a scan on Windows devices
 
-1. Go to the Microsoft Intune admin center [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign-in.
+1. Go to the Microsoft Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign-in.
 
 2. Choose **Endpoint security** \> **Antivirus**.
 
