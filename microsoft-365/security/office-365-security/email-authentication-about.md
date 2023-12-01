@@ -15,10 +15,10 @@ ms.collection:
   - tier2
 ms.custom: TopSMBIssues
 ms.localizationpriority: high
-description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.
+description: Admins can learn how email authentication (SPF, DKIM, DMARC) works and how Microsoft 365 uses traditional email authentication and composite email authentication to identify messages as spoofing, or pass messages that would otherwise be identified as spoofing.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/29/2023
+ms.date: 11/30/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -29,49 +29,60 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Email authentication (also known as _email validation_) is a group of standards to identify and prevent the delivery of email messages from forged senders (also known as _spoofing_) that can be used in business email compromise (BEC), phishing, and other email attacks. These standards include:
+Email authentication (also known as _email validation_) is a group of standards to identify and prevent the delivery of email messages from forged senders (also known as _spoofing_). Spoofed senders are commonly used in business email compromise (BEC), phishing, and other email attacks. These standards include:
 
-- **Sender Policy Framework (SPF)**: Verifies that the source email server is authorized to send mail for the domain that's used in sender's email address during the SMTP transmission of the message (known as the `5321.MailFrom` address, **MAIL FROM** address, P1 sender, or envelope sender). For more information, see <xxx>.
-- **DomainKeys Identified Mail (DKIM)**: Uses a domain to digitally sign elements of the message (including the From: message header field that's shown as the sender's email address in email clients, which is also known as the `5322.From` address, From address, or P2 sender), and stores the signature in the message header to verify that the message wasn't altered in transit. For more information, see <xxx>.
-- **Domain-based Message Authentication, Reporting and Conformance (DMARC)**: Contains a policy that defines the action for messages that fail SPF and/or DMARC checks for senders in the domain. For more information, see <xxx>.
+- **Sender Policy Framework (SPF)**: Verifies that the source email server is authorized to send mail for the domain that's used in sender's email address during SMTP transmission (known as the `5321.MailFrom` address, **MAIL FROM** address, P1 sender, or envelope sender).
+- **DomainKeys Identified Mail (DKIM)**: Uses a domain to digitally sign elements of the message (including the From: message header field that's shown as the sender's email address in email clients, which is also known as the `5322.From` address, From address, or P2 sender), and stores the signature in the message header to verify that the message wasn't altered in transit.
+- **Domain-based Message Authentication, Reporting and Conformance (DMARC)**: Contains a policy that defines the action for messages that fail SPF and/or DKIM checks for senders in the domain.
+- **Authenticated Received Chain (ARC)**: Preserves original email authentication information by services that modify messages in transit. THe destination email server can use this information to authentication messages that would otherwise fail email authentication.
 
-It's important to realize that these standards _work together_ to provide the best possible experience.
+It's important to realize that these standards _work together_ to provide the best possible protection:
 
-SPF doesn't work on forwarded email messages. The destination email server will likely identify the forwarded message as spoofed (a false positive).
+- SPF validates the domain in the `5321.MailFrom` address only. The domain in the From address that's shown in email clients isn't considered.
+  - An attacker can register a domain (adatum.com), configure SPF for that domain, and then send email from a legitimate source for that domain using a different domain in the From address (proseware.com) as part of an attack that passes SPF authentication (a false negative).
+  - A legitimate email service might always have a mismatch between the `5321.MailFrom` address and the From address. If SPF is based on the From address, the messages always fail SPF authentication (a false positive).
+  - SPF doesn't work on forwarded email (server-based forwarding or server redirection). The message is sent by the forwarding server, which isn't authorized to send email from the original domain, so the message fails SPF authentication (a false positive).
 
-## Inbound email authentication for mail into Microsoft 365
+- The domain that DKIM uses to sign the message doesn't need to match the domain in the From address that's shown in email clients.
+  - DKIM can help in scenarios where the `5321.MailFrom` address and the From address are legitimately different by design. If the From address domain is used to sign the message, the message passes DKIM authentication.
+  - Like SPF, an attacker can register a domain (adatum.com), configure DKIM for that domain, and then send email using a different domain in the From address (proseware.com) as part of an attack that passes DKIM authentication (a false negative).
 
-## Email authentication for mail sent from your domains
+- DMARC closes the loop by verifying that the `5321.MailFrom` address and the From address match in email messages. You can set up DMARC in report only mode without configuring SPF or DKIM for your domain. To quarantine or reject messages based on DMARC authentication failures, you need to configure SPF and DMARC for your domain.
 
-Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes use those features to verify email coming into the service.
+- Services that modify message in transit can completely invalidate SPF, DKIM and DMARC checks. If the service is able to preserve the original email authentication information, and you identify the service as a trusted ARC sealer, ARC uses that information to validate the message.
 
-An equally important element of email authentication is the configuration for domains you own (whether or not you use them to send email!) so other organizations correctly allow or block email that claims to come from senders in your domains (outbound mail from Microsoft 365).
+To configure email authentication for mail **sent from** Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, see the following articles:
 
-Microsoft 365 uses the following standards to verify inbound email:
+- [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
+- [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md)
+- [Use DMARC to validate email](email-authentication-dmarc-configure.md)
+- [Configure trusted ARC sealers](email-authentication-arc-configure.md)
 
-- [SPF](email-authentication-spf-configure.md)
-- [DKIM](email-authentication-dkim-configure.md)
-- [DMARC](email-authentication-dmarc-configure.md)
+The rest of this article explains how Microsoft 365 uses email authentication to check inbound email **sent to** the service, and how companies who send mail to Microsoft 365 can avoid email authentication failures.
 
-Email authentication verifies that email messages from a sender (for example, laura@contoso.com) are legitimate and come from expected sources for that email domain (for example, contoso.com).
+> [!TIP]
+> Microsoft 365 customers can use the following methods to allow messages from senders that are identified as spoofing or authentication failures:
+>
+> - [Spoof intelligence insight](anti-spoofing-spoof-intelligence.md).
+> - [Allow entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders).
+> - [Safe sender lists](create-safe-sender-lists-in-office-365.md)
 
-The rest of this article explains how these technologies work, and how EOP uses them to check inbound email. For information about configuring SPF, DKIM, and DMARC records in DNS, see the previous links.
+## Inbound email authentication for mail sent to Microsoft 365
 
-## Use email authentication to help prevent spoofing
+Because of phishing concerns and the less than complete adoption of strong email authentication policies by email senders on the internet, Microsoft 365 uses _implicit email authentication_ to check inbound email. Implicit email authentication extends regular SPF, DKIM, and DMARC checks by using signals from other sources to evaluate inbound email. These sources include:
 
-DMARC prevents spoofing by examining the **From** address in messages. The **From** address is the sender's email address that users see in their email client. Destination email organizations can also verify that the email domain has passed SPF or DKIM. In other words, the source domain is a valid source for senders in the **From** address, so the sender's email address isn't spoofed.
+- Sender reputation.
+- Sender history.
+- Recipient history.
+- Behavioral analysis.
 
-However, DNS records for SPF, DKIM, and DMARC (collectively known as _email authentication policies_) are optional. Domains with strong email authentication policies are protected from spoofing. But domains with weaker email authentication policies or no policy at all are prime targets for being spoofed.
+To see Microsoft's original announcement about implicit authentication, see [A Sea of Phish Part 2 - Enhanced Anti-spoofing in Microsoft 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
 
-Lack of strong email authentication policies is a large problem. While organizations might not understand how email authentication works, attackers fully understand and they take advantage. Because of phishing concerns and the limited adoption of strong email authentication policies, Microsoft uses _implicit email authentication_ to check inbound email.
+Using these other signals, messages that would otherwise fail traditional email authentication checks can pass implicit authentication and be allowed into Microsoft 365.
 
-Implicit email authentication is an extension of regular email authentication policies. These extensions include: sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques. In the absence of other signals from these extensions, messages sent from domains that don't use email authentication policies are marked as spoofing.
+### Composite authentication
 
-To see Microsoft's general announcement, see [A Sea of Phish Part 2 - Enhanced Anti-spoofing in Microsoft 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
-
-## Composite authentication
-
-If a domain doesn't have traditional SPF, DKIM, and DMARC records, those record checks don't communicate enough authentication status information. Therefore, Microsoft has developed an algorithm for implicit email authentication. This algorithm combines multiple signals into a single value called _composite authentication_, or `compauth` for short. The `compauth` value is stamped into the **Authentication-Results** header in the message headers.
+The results of Microsoft 365's implicit authentication checks are combined and stored in a single value named _composite authentication_ or `compauth` for short. The `compauth` value is stamped into the **Authentication-Results** header in the message headers.
 
 ```text
 Authentication-Results:
@@ -80,136 +91,89 @@ Authentication-Results:
 
 These values are explained at [Authentication-results message header](message-headers-eop-mdo.md#authentication-results-message-header).
 
-By examining the message headers, admins and users can determine how Microsoft 365 determined that the sender is spoofed.
+Admins and users can examine the message headers to discover how Microsoft 365 identified the sender as spoofed.
 
-## Why email authentication isn't always enough to stop spoofing
+The following examples focus on the results of email authentication only (the `compauth` value and reason). Other Microsoft 365 protection technologies can identify messages that pass email authentication as spoofed, or identify messages that fail email authentication as legitimate. 
 
-Relying only on email authentication records to determine if an incoming message is spoofed has the following limitations:
+- **Scenario**: The fabrikam.com domain has no SPF, DKIM, or DMARC records.
+- **Result**: Messages from senders in the fabrikam.com domain can fail composite authentication:
 
-- The source domain might lack the required DNS records, or the records are incorrectly configured.
-- The source domain has correctly configured DNS records, but that domain doesn't match the domain in the From address. SPF and DKIM don't require the domain to be used in the From address. Attackers or legitimate services can register a domain, configure SPF and DKIM for the domain, and use a different domain in the From address. Messages from senders in this domain pass SPF and DKIM.
+  ```text
+  Authentication-Results: spf=none (sender IP is 10.2.3.4)
+    smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
+    (message not signed) header.d=none; contoso.com; dmarc=none
+    action=none header.from=fabrikam.com; compauth=fail reason=001
+  From: chris@fabrikam.com
+  To: michelle@contoso.com
+  ```
 
-Composite authentication can address these limitations by passing messages that would otherwise fail email authentication checks.
+- **Scenario**: The fabrikam.com domain has an SPF record and no DKIM record.
+- **Result**: The message can pass composite authentication, because the domain that passed SPF matches the domain in the From address:
 
-For simplicity, the following examples concentrate on email authentication results. Other back-end intelligence factors could identify messages that pass email authentication as spoofed, or messages that fail email authentication as legitimate.
+  ```text
+  Authentication-Results: spf=pass (sender IP is 10.2.3.4)
+    smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
+    (message not signed) header.d=none; contoso.com; dmarc=bestguesspass
+    action=none header.from=fabrikam.com; compauth=pass reason=109
+  From: chris@fabrikam.com
+  To: michelle@contoso.com
+  ```
 
-For example, the fabrikam.com domain has no SPF, DKIM, or DMARC records. Messages from senders in the fabrikam.com domain can fail composite authentication (note the `compauth` value and reason):
+- **Scenario**: The fabrikam.com domain has a DKIM record without an SPF record.
+- **Result**: The message can pass composite authentication, because the domain in the DKIM signature matches the domain in the From address:
 
-```text
-Authentication-Results: spf=none (sender IP is 10.2.3.4)
-  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
-  (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=fabrikam.com; compauth=fail reason=001
-From: chris@fabrikam.com
-To: michelle@contoso.com
-```
+  ```text
+  Authentication-Results: spf=none (sender IP is 10.2.3.4)
+    smtp.mailfrom=fabrikam.com; contoso.com; dkim=pass
+    (signature was verified) header.d=outbound.fabrikam.com;
+    contoso.com; dmarc=bestguesspass action=none
+    header.from=fabrikam.com; compauth=pass reason=109
+  From: chris@fabrikam.com
+  To: michelle@contoso.com
+  ```
 
-If fabrikam.com configures an SPF without a DKIM record, the message can pass composite authentication. The domain that passed SPF checks is aligned with the domain in the From address:
+- **Scenario**: The domain in the SPF record or the DKIM signature doesn't match the domain in the From address.
+- **Result**: The message can fail composite authentication:
 
-```text
-Authentication-Results: spf=pass (sender IP is 10.2.3.4)
-  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
-  (message not signed) header.d=none; contoso.com; dmarc=bestguesspass
-  action=none header.from=fabrikam.com; compauth=pass reason=109
-From: chris@fabrikam.com
-To: michelle@contoso.com
-```
+  ```text
+  Authentication-Results: spf=none (sender IP is 192.168.1.8)
+    smtp.mailfrom=maliciousdomain.com; contoso.com; dkim=pass
+    (signature was verified) header.d=maliciousdomain.com;
+    contoso.com; dmarc=none action=none header.from=contoso.com;
+    compauth=fail reason=001
+  From: chris@contoso.com
+  To: michelle@fabrikam.com
+  ```
 
-If fabrikam.com configures a DKIM record without an SPF record, the message can pass composite authentication. The domain in the DKIM signature is aligned with the domain in the From address:
+### How companies can avoid email authentication failures when sending mail to Microsoft 365
 
-```text
-Authentication-Results: spf=none (sender IP is 10.2.3.4)
-  smtp.mailfrom=fabrikam.com; contoso.com; dkim=pass
-  (signature was verified) header.d=outbound.fabrikam.com;
-  contoso.com; dmarc=bestguesspass action=none
-  header.from=fabrikam.com; compauth=pass reason=109
-From: chris@fabrikam.com
-To: michelle@contoso.com
-```
+- **Configure SPF, DKIM, and DMARC records for your domains**: Use the configuration information that's provided by your domain registrar or DNS hosting service. There are also third party companies dedicated to helping your organization set up email authentication records.
 
-If the domain in SPF or the DKIM signature doesn't align with the domain in the From address, the message can fail composite authentication:
+  Many companies don't publish SPF records because they don't know all of the email sources for messages in their domain.
 
-```text
-Authentication-Results: spf=none (sender IP is 192.168.1.8)
-  smtp.mailfrom=maliciousdomain.com; contoso.com; dkim=pass
-  (signature was verified) header.d=maliciousdomain.com;
-  contoso.com; dmarc=none action=none header.from=contoso.com;
-  compauth=fail reason=001
-From: chris@contoso.com
-To: michelle@fabrikam.com
-```
+  1. Start by publishing an SPF record that contains all email sources that you know about (especially where your corporate traffic is located), and use the enforcement rule value "soft fail" (`~all`). For example:
 
-## Solutions for legitimate senders who are sending unauthenticated email
+     ```text
+     fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ~all"
+     ```
 
-Microsoft 365 keeps track of who is sending unauthenticated email to your organization. If the service thinks the sender isn't legitimate, it marks messages from this sender as a composite authentication failure. To avoid this verdict, you can use the recommendations in this section.
+    If you create this SPF record, Microsoft 365 treats inbound email from your corporate infrastructure as authenticated, but email from unidentified sources might still be marked as spoof if it fails composite authentication. However, this behavior is still an improvement from all email being marked as spoof by Microsoft 365. Typically, other email servers and services also allow delivery of messages from senders in your domain from unidentified sources.
 
-### Configure email authentication for domains you own
+  2. Discover and include more email sources for your messages. For example:
+     - On-premises email servers.
+     - Email sent from a software-as-a-service (SaaS) provider.
+     - Email sent from a cloud-hosting service (Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services, etc.).
 
-You can use this method to resolve intra-org spoofing and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Microsoft 365 or third parties that are hosted by other providers.
+     After you've identified all email sources, you can update your SPF record to use the enforcement rule value "hard fail" (`-all`).
 
-- [Configure SPF records](email-authentication-spf-configure.md) for your domains.
-- [Configure DKIM records](email-authentication-dkim-configure.md) for your primary domains.
-- [Consider setting up DMARC records](email-authentication-dmarc-configure.md) for your domain to determine your legitimate senders.
+  3. Set up DKIM to digitally sign messages.
+  
+  4. Set up DMARC to validate that the `5321.MailFrom` address matches the From address, and to specify what to do with messages that fail DMARC checks (reject or quarantine).
 
-Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, that information is available online. There are also third party companies dedicated to helping your organization set up email authentication records.
+  5. If you use bulk senders to send email on your behalf, verify that the domain in the From address matches the domain that passes SPF or DMARC.
 
-#### You don't know all sources for your email
+- **You host a domain's email or provide hosting infrastructure that can send email**:
+  - Ensure your customers have documentation that explains how to configure their SPF records
+  - Consider signing DKIM-signatures on outbound email, even if the customer doesn't explicitly set it up (sign with a default domain). You can even double-sign the email with DKIM signatures (first with the customer's domain, and then with your company's DKIM signature).
 
-Many domains don't publish SPF records because they don't know all of the email sources for messages in their domain. Start by publishing an SPF record that contains all of the email sources you know about (especially where your corporate traffic is located), and publish the enforcement rule value "soft fail" (`~all`) in the SPF record. For example:
-
-```text
-fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ~all"
-```
-
-This example means that email from your corporate infrastructure passes email authentication, but email from unknown sources falls back to "soft fail". Typically, email servers are configured to deliver these messages.
-
-Microsoft 365 treats inbound email from your corporate infrastructure as authenticated. Email from unidentified sources might still be marked as spoof if it fails implicit authentication. However, this behavior is still an improvement from all email being marked as spoof by Microsoft 365.
-
-Once you've gotten started with an SPF fallback policy of `~all`, you can gradually discover and include more email sources for your messages, and then update your SPF record with a stricter policy.
-
-### Configure permitted senders of unauthenticated email
-
-You can also use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md#override-the-spoof-intelligence-verdict) and the [Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders) to permit senders to transmit unauthenticated messages to your organization.
-
-For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is one of the following values:
-
-- The source IP address (divided up into /24 CIDR ranges)
-- The organizational domain of the reverse DNS (PTR) record.
-- A verified DKIM domain.
-
-### Create an allow entry for the sender/recipient pair
-
-To bypass spam filtering for some senders, but not malware or high confidence phishing, see [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-office-365.md).
-
-### Ask the sender to configure email authentication for domains you don't own
-
-Because of the problem of spam and phishing, Microsoft recommends email authentication for all email organizations. Instead of configuring manual overrides in your organization, you can ask an admin in the source domain to configure their email authentication records.
-
-- Even if they didn't need to publish email authentication records in the past, they should do so if they send email to Microsoft.
-- Set up SPF to publish the domain's sending IP addresses, and set up DKIM (if available) to digitally sign messages. They should also consider setting up DMARC records.
-- If they use bulk senders to send email on their behalf, verify that the domain in the From address (if it belongs to them) aligns with the domain that passes SPF or DMARC.
-- Verify the following locations (if they use them) are included in the SPF record:
-  - On-premises email servers.
-  - Email sent from a software-as-a-service (SaaS) provider.
-  - Email sent from a cloud-hosting service (Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services, etc.).
-- For small domains that are hosted by an ISP, configure the SPF record according to the instructions from the ISP.
-
-While it might be difficult at first to get sending domains to authenticate, but successful email delivery compels them to do so as more email filters junk or even reject their email. Also, their participation can help in the fight against phishing, and can reduce the possibility of phishing in their organization or organizations that they send email to.
-
-#### Information for infrastructure providers (ISPs, ESPs, or cloud hosting services)
-
-If you host a domain's email or provide hosting infrastructure that can send email, you should do the following steps:
-
-- Ensure your customers have documentation that explains how your customers should configure their SPF records
-- Consider signing DKIM-signatures on outbound email, even if the customer doesn't explicitly set it up (sign with a default domain). You can even double-sign the email with DKIM signatures (once with the customer's domain if they have set it up, and a second time with your company's DKIM signature)
-
-Delivery to Microsoft isn't guaranteed, even if you authenticate email originating from your platform. But, the configuration ensures that Microsoft doesn't junk your email because it isn't authenticated.
-
-## Related links
-
-For more information about service providers best practices, see [M3AAWG Mobile Messaging Best Practices for Service Providers](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf).
-
-Learn how Office 365 uses SPF and supports DKIM validation:
-
-- [More about SPF](email-authentication-anti-spoofing.md)
-- [More about DKIM](email-authentication-dkim-support-about.md)
+  Delivery to Microsoft isn't guaranteed, even if you authenticate email originating from your platform. But, email authentication ensures that Microsoft doesn't junk your customers' email because it isn't authenticated.
