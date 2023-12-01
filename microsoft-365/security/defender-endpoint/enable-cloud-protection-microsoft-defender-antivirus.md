@@ -57,8 +57,6 @@ The following table summarizes the features and capabilities that depend on clou
 | **[Attack surface reduction rules](attack-surface-reduction.md)**. ASR rules are intelligent rules that you can configure to help stop malware. Certain rules require cloud protection to be turned on in order to function fully. These rules include: <br/>- Block executable files from running unless they meet a prevalence, age, or trusted list criteria <br/>- Use advanced protection against ransomware <br/>- Block untrusted programs from running from removable drives <br/><br/>To learn more, see [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md). | Microsoft Defender for Endpoint Plan 1 or Plan 2 (Standalone or included in a plan like Microsoft 365 E3 or E5) |   
 | **[Indicators of compromise (IoCs)](manage-indicators.md)**. In Defender for Endpoint, IoCs can be configured to define the detection, prevention, and exclusion of entities. Examples: <br/>"Allow" indicators can be used to define exceptions to antivirus scans and remediation actions.<br/>"Alert and block" indicators can be used to prevent files or processes from executing. <br/><br/>To learn more, see [Create indicators](manage-indicators.md). | Microsoft Defender for Endpoint Plan 2 (Standalone or included in a plan like Microsoft 365 E5) | 
 
-> [!TIP]
-> To learn more about Defender for Endpoint plans, see [Microsoft Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
 
 ## Methods to configure cloud protection
 
