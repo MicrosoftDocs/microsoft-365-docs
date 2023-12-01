@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 11/30/2023
+ms.date: 12/01/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -81,7 +81,7 @@ As described in [Tech Community blog: How to use tagging effectively](https://te
 
 - Display certain devices to individual users in the Microsoft Defender portal so that they see only the devices they're responsible for.
 - Include or exclude devices from specific security policies.
-- Determine which devices should receive Defender for Endpoint Plan 1 or Plan 2 capabilities. (*This capability is now in preview!*)
+- Determine which devices should receive Defender for Endpoint Plan 1 or Plan 2 capabilities.
 
 For example, suppose that you want to use a tag called `VIP` for all the devices that should receive Defender for Endpoint Plan 2 capabilities. Here's what you would do:
 
