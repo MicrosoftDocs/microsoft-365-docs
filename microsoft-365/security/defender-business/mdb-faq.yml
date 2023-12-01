@@ -70,7 +70,7 @@ sections:
           |:---|:---|
           | [Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers) is an add-on to Defender for Business and Microsoft 365 Business Premium only. <br/><br/>Provides a single endpoint security experience for both clients and servers within the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). <br/><br/>Designed for businesses with up to 300 employees. <br/><br/>Enables customers who don't necessarily have a security background to set up, configure, and protect company devices, including servers. | [Microsoft Defender for Servers Plan 1/Plan 2](/azure/defender-for-cloud/plan-defender-for-servers) is an enterprise-focused offering that can be purchased with any other Microsoft cloud plan. <br/><br/>Part of [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction). <br/><br/>Includes advanced threat hunting with six months of data retention and the Microsoft Threat Experts service.<br/><br/>The admin experience for Defender for Cloud resides within the Azure portal ([https://portal.azure.com](https://portal.azure.com)). |
 
-          Adding Defender for Cloud to a tenant that has Defender for Business won't change the simplified Defender for Business experience. The functionality in Microsoft Defender for Servers Plan 1 or Plan 2 will work with Defender for Business. See [What happens if I have a mix of Microsoft endpoint security subscriptions?](#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) for more details.
+          Adding Defender for Cloud to a tenant that has Defender for Business doesn't change the simplified Defender for Business experience. The functionality in Microsoft Defender for Servers Plan 1 or Plan 2 work2 with Defender for Business. See [What happens if I have a mix of Microsoft endpoint security subscriptions?](#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) for more details.
 
       - question: Can I configure more than one web content filtering policy in Defender for Business?
         answer: |
@@ -131,9 +131,7 @@ sections:
         answer: |
           Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's devices (also referred to as endpoints). Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-setup-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who don't necessarily have a security background to set up, configure, and use Defender for Business to protect company devices.  
 
-          Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats.  
-          
-          To learn more, see [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+          Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats. To learn more, see [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
       - question: What happens if I have a mix of Microsoft endpoint security subscriptions? 
         answer: |
