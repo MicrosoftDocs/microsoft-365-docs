@@ -10,8 +10,6 @@
       href: zero-trust-with-microsoft-defender-endpoint.md
     - name: Trial user guide - Microsoft Defender for Endpoint
       href: defender-endpoint-trial-user-guide.md
-    - name: Compare Microsoft endpoint security plans
-      href: defender-endpoint-plan-1-2.md
     - name: Minimum requirements
       href: minimum-requirements.md
     - name: Supported Microsoft Defender for Endpoint capabilities by platform
