@@ -3666,6 +3666,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/mac-support-kext.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/mac-support-sys-ext",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/linux-exclusions-v2.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/linux-exclusions",
       "redirect_document_id": true

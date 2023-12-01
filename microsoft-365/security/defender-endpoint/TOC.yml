@@ -1443,8 +1443,6 @@
         href: mac-support-perf.md
       - name: Troubleshoot cloud connectivity
         href: troubleshoot-cloud-connect-mdemac.md
-      - name: Troubleshoot kernel extension issues
-        href: mac-support-kext.md
       - name: Troubleshoot license issues
         href: mac-support-license.md
       - name: Troubleshoot system extention issues
