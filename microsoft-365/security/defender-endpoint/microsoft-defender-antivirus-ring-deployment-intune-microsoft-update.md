@@ -43,8 +43,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
->
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
 ## Setting up the pilot environment 
 
@@ -101,15 +99,15 @@ If you encounter problems with your deployment, change the source of the Microso
 
 #### What this change does
 
-It forces Microsoft Defender Antivirus to look for the **Security Intelligence Update**, **Engine Update** or **Platform Update** from a file share that doesn’t exist.
+It forces Microsoft Defender Antivirus to look for the **Security Intelligence Update**, **Engine Update** or **Platform Update** from a file share that doesn't exist.
 
 #### How long does it take for the Intune policy to refresh?
 
-If you update a policy, it’s within a few minutes (3-5 minutes) via WNS, as long the WNS URLs' are open.
+If you update a policy, it's within a few minutes (3-5 minutes) via WNS, as long the WNS URLs' are open.
 
 Reference:   [Intune actions that immediately send a notification to a device](/mem/intune/configuration/device-profile-troubleshoot#intune-actions-that-immediately-send-a-notification-to-a-device)
 
-After the issue is resolved, set the “Signature Update Fallback Order” back to the original setting"
+After the issue is resolved, set the "Signature Update Fallback Order" back to the original setting"
 
 `InternalDefinitionUpdateServder|MicrosoftUpdateServer|MMPC|FileShare`
 

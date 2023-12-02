@@ -37,7 +37,7 @@ There are some minimum requirements for onboarding devices to the Defender for E
 
 ## Licensing requirements
 
-- [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) (standalone or as part of other Microsoft 365 plans)
+- [Defender for Endpoint Plan 1 and Plan 2](microsoft-defender-endpoint.md) (standalone or as part of other Microsoft 365 plans)
 
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (for small and medium-sized businesses)
 
@@ -114,7 +114,7 @@ To add antimalware protection to these older operating systems, you can use [Sys
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 > - Virtual Machines running Windows 10 Enterprise 2016 LTSB can encounter performance issues when used on non-Microsoft virtualization platforms.
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
-> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](microsoft-defender-endpoint.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 > - If your organization is a small or medium-sized business, see [Microsoft Defender for Business requirements](../defender-business/mdb-requirements.md). 
 
 ### Hardware requirements
