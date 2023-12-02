@@ -4,7 +4,7 @@ description: A demonstration that shows how Block at First Sight detects and blo
 keywords: Microsoft Defender for Endpoint, cloud-delivered protection, detect malware, block malware, demonstration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +18,7 @@ ms.collection:
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
+ms.subservice: ngp
 ms.date: 10/21/2022
 ---
 

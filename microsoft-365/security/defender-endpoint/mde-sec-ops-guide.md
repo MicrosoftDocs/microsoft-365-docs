@@ -3,7 +3,7 @@ title: Security Operations Guide for Defender for Endpoint
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov
 manager: dansimp
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Endpoint.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 02/07/2023
 audience: ITPro
@@ -14,7 +14,7 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 - mde-ngp
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2

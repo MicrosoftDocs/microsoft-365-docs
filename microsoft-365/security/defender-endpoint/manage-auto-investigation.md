@@ -1,7 +1,7 @@
 ---
 title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ ms.collection:
 - mde-edr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 

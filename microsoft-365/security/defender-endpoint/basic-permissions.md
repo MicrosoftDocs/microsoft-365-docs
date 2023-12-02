@@ -5,8 +5,8 @@ keywords: assign user roles, assign read and write access, assign read only acce
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
