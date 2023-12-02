@@ -29,19 +29,21 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
+As a Microsoft 365 organization with mailboxes in Exchange Online, or a standalone Exchange Online Protection (EOP) organization without Exchange Online mailboxes, protecting the integrity of email messages from senders in your domains is important. Recipients should feel confident that messages from senders in your domain really came from those senders.
+
 Email authentication (also known as _email validation_) is a group of standards to identify and prevent the delivery of email messages from forged senders (also known as _spoofing_). Spoofed senders are commonly used in business email compromise (BEC), phishing, and other email attacks. These standards include:
 
-- **Sender Policy Framework (SPF)**: Verifies that the source email server is authorized to send mail for the domain that's used in sender's email address during SMTP transmission (known as the `5321.MailFrom` address, **MAIL FROM** address, P1 sender, or envelope sender).
-- **DomainKeys Identified Mail (DKIM)**: Uses a domain to digitally sign elements of the message (including the From: message header field that's shown as the sender's email address in email clients, which is also known as the `5322.From` address, From address, or P2 sender), and stores the signature in the message header to verify that the message wasn't altered in transit.
-- **Domain-based Message Authentication, Reporting and Conformance (DMARC)**: Contains a policy that defines the action for messages that fail SPF and/or DKIM checks for senders in the domain.
-- **Authenticated Received Chain (ARC)**: Preserves original email authentication information by services that modify messages in transit. THe destination email server can use this information to authentication messages that would otherwise fail email authentication.
+- **Sender Policy Framework (SPF)**: Identifies the source email servers that are authorized to send mail for the domain. The domain is used in sender's email address during SMTP transmission of the message (known as the `5321.MailFrom` address, **MAIL FROM** address, P1 sender, or envelope sender).
+- **DomainKeys Identified Mail (DKIM)**: Uses a domain to digitally sign important elements of the message, including the From: message header field that's shown as the sender's email address in email clients. This address is also known as the `5322.From` address, From address, or P2 sender. The signature is stored in the message header to verify that the signed elements of the message weren't altered in transit.
+- **Domain-based Message Authentication, Reporting and Conformance (DMARC)**: Contains a policy that defines the action for messages that fail SPF or DKIM checks for senders in the domain.
+- **Authenticated Received Chain (ARC)**: Preserves original email authentication information by services that modify messages in transit. The destination email server can use this information to authentication messages that would otherwise fail email authentication.
 
 It's important to realize that these standards _work together_ to provide the best possible protection:
 
 - SPF validates the domain in the `5321.MailFrom` address only. The domain in the From address that's shown in email clients isn't considered.
   - An attacker can register a domain (adatum.com), configure SPF for that domain, and then send email from a legitimate source for that domain using a different domain in the From address (proseware.com) as part of an attack that passes SPF authentication (a false negative).
   - A legitimate email service might always have a mismatch between the `5321.MailFrom` address and the From address. If SPF is based on the From address, the messages always fail SPF authentication (a false positive).
-  - SPF doesn't work on forwarded email (server-based forwarding or server redirection). The message is sent by the forwarding server, which isn't authorized to send email from the original domain, so the message fails SPF authentication (a false positive).
+  - SPF doesn't work on forwarded email that redirects or _relays_ the message so the message source becomes the forwarding server. The forwarding server isn't authorized to send email from the original domain, so the message fails SPF authentication (a false positive).
 
 - The domain that DKIM uses to sign the message doesn't need to match the domain in the From address that's shown in email clients.
   - DKIM can help in scenarios where the `5321.MailFrom` address and the From address are legitimately different by design. If the From address domain is used to sign the message, the message passes DKIM authentication.
@@ -49,7 +51,7 @@ It's important to realize that these standards _work together_ to provide the be
 
 - DMARC closes the loop by verifying that the `5321.MailFrom` address and the From address match in email messages. You can set up DMARC in report only mode without configuring SPF or DKIM for your domain. To quarantine or reject messages based on DMARC authentication failures, you need to configure SPF and DMARC for your domain.
 
-- Services that modify message in transit can completely invalidate SPF, DKIM and DMARC checks. If the service is able to preserve the original email authentication information, and you identify the service as a trusted ARC sealer, ARC uses that information to validate the message.
+- Legitimate services that modify message in transit break SPF, DKIM and DMARC. If the service is able to preserve the original email authentication information, and you identify the service as a trusted ARC sealer, ARC uses that information to validate the message.
 
 To configure email authentication for mail **sent from** Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, see the following articles:
 

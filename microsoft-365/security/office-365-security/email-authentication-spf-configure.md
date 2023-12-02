@@ -31,7 +31,20 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-This article describes how to update a Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF)  email authentication with your custom domain in Office 365.
+The Sender Policy Framework (SPF) is a method of [email authentication](email-authentication-about.md) that helps validate outbound email sent from your Microsoft 365 organization.
+
+Use the following table:
+
+|&nbsp;|My Microsoft 365 email domain is \*.onmicrosoft.com|I use one or more custom domains in Microsoft 365|
+|---|:---:|:---:|
+|**Manual configuration?**|No|Yes|
+|**Configure in Microsoft 365?**|n/a|No|
+
+
+> [!TIP]
+> SPF alone is not enough. For ideal protection, you also need to configure [DKIM](email-authentication-dkim-configure.md) and [DMARC](email-authentication-dmarc-configure.md) for outbound email sent from sent from your Microsoft 365 organization.
+
+This article describes how to update a Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF) email authentication with your custom domain in Office 365.
 
 SPF helps *validate* outbound email sent from your custom domain (is coming from who it says it is). It's a first step in setting up the full recommended email authentication methods of SPF, [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md).
 
