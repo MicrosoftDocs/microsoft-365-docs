@@ -1,7 +1,7 @@
 ---
 title: Enable controlled folder access
 description: Learn how to protect your important files by enabling Controlled folder access
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.topic: conceptual
 ms.localizationpriority: medium
 audience: ITPro
@@ -9,7 +9,7 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
-ms.subservice: mde
+ms.subservice: asr
 ms.collection: 
 - m365-security
 - tier3

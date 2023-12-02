@@ -5,8 +5,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 ms.reviewer: pahuijbr
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection: 

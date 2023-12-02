@@ -2,7 +2,7 @@
 title: Schedule antivirus scans using Group Policy
 description: Use Group Policy to set up antivirus scans
 keywords: quick scan, full scan, schedule, group policy, antivirus
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ ms.custom: nextgen
 ms.date: 03/06/2023
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.topic: how-to
 ms.collection: 
 - m365-security
