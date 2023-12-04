@@ -41,7 +41,7 @@ You can also get product updates and important notifications through the [messag
 
 ## December 2023
 
-- (GA) The Microsoft Defender XDR Unified role-based access control (RBAC) is now generally available. Unified RBAC provides a single permissions management experience that provides one central location for administrators to control user permissions across different security solutions.
+- (GA) The Microsoft Defender XDR Unified role-based access control (RBAC) is now generally available. Unified RBAC provides a single permissions management experience that provides one central location for administrators to control user permissions across different security solutions. [Learn more](/microsoft-365/security/defender/manage-rbac?view=o365-worldwide)
 
 ## November 2023
 
