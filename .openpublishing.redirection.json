@@ -1,16 +1,6 @@
 {
    "redirections":[
     {
-      "source_path": "microsoft-365/office365/SecurityCompliance/secure-sharepoint-online-sites-and-files.md",
-      "redirect_url": "/microsoft-365/community/sharepoint-security-a-team-effort",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/microsoft-365-client-support-modern-authentication.md",
-      "redirect_url": "/microsoft-365/microsoft-365-client-support-multi-factor-authentication",
-      "redirect_document_id": false
-    },
-     {
       "source_path": "submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md",
       "redirect_url": "/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft",
       "redirect_document_id": true

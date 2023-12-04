@@ -3734,6 +3734,11 @@
        "source_path": "microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2.md",
        "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint",
        "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files.md",
+      "redirect_url": "/microsoft-365/community/sharepoint-security-a-team-effort",
+      "redirect_document_id": false
      }
    ]
  }
