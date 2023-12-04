@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 10/24/2023
 ms.reviewer: nehabha
@@ -63,3 +62,4 @@ The following table lists the basic requirements you need to configure and use D
 - If you don't already have Defender for Business, see [Get and provision Microsoft Defender for Business](get-defender-business.md).
 - If you're starting a trial subscription, see the [Trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md).
 - If you're ready to set up Defender for Business for your organization, see [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
+

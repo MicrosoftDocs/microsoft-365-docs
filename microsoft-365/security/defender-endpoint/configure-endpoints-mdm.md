@@ -2,7 +2,7 @@
 title: Onboard Windows devices to Defender for Endpoint using Intune 
 description: Use Microsoft Intune to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
 keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 12/18/2020
 ---

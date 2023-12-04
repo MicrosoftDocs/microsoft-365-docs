@@ -5,8 +5,7 @@ keywords: migrate server, server, 2012r2, 2016, server migration onboard Microso
 search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
 ms.pagetype: security
 author: dansimp
 ms.author: macapara

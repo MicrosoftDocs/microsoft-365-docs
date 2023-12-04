@@ -116,7 +116,7 @@ If you see CNAME record doesn't exist error, it might be due to:
 1. Synchronization with DNS server, which might take few seconds to hours, if the problem persists repeat the steps again
 2. Check for any copy paste errors, like additional space or tabs etc.
 
-If you wish to disable DKIM, toggle back to disable mode
+If you wish to disable DKIM, toggle back to disable mode.
 
 ## Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys
 <a name="1024to2048DKIM"> </a>

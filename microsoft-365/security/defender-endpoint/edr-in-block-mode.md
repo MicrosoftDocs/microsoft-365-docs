@@ -7,7 +7,8 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: conceptual
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
+ms.subservice: edr
 ms.localizationpriority: medium
 ms.custom:
   - next-gen
@@ -18,7 +19,6 @@ ms.collection:
 - m365-security
 - tier2
 - mde-edr
-ms.subservice: mde
 search.appverid: met150
 ---
 
@@ -107,8 +107,6 @@ The following table lists requirements for EDR in block mode:
 > To get the best protection value, make sure your antivirus solution is configured to receive regular updates and essential features, and that your [exclusions are configured](configure-exclusions-microsoft-defender-antivirus.md). EDR in block mode respects exclusions that are defined for Microsoft Defender Antivirus, but not [indicators](manage-indicators.md) that are defined for Microsoft Defender for Endpoint.
 
 ## See also
-
-- [Tech Community blog: Introducing EDR in block mode: Stopping attacks in their tracks](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 
 - [Endpoint detection and response (EDR) in block mode frequently asked questions (FAQ)](edr-block-mode-faqs.yml)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

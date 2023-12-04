@@ -8,8 +8,8 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.date: 06/06/2023
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
 ms.collection: 
 - m365-security

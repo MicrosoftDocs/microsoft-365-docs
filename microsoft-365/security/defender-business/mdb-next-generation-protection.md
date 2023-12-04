@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 06/30/2023
 ms.reviewer: nehabha
@@ -124,3 +123,4 @@ The following table describes settings that are preconfigured for Defender for B
 - [Enable your attack surface reduction rules](mdb-asr.md).
 - [Review settings for advanced features and the Microsoft Defender portal](mdb-portal-advanced-feature-settings.md).
 - [Use your vulnerability management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
+

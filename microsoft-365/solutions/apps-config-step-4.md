@@ -94,6 +94,8 @@ Microsoft Edge provides several different configuration settings that allow you 
 | com.microsoft.intune.mam.managedbrowser.NTLMSSOURLs | You can choose a list of   internal (intranet) websites that enable NTLM credential caching. The   end-users must enter credentials and successfully authenticate when   attempting to access a URL in the list. NTLM is a Windows network   authentication protocol. For more information, see [Manage NTLM single   sign-on   sites](/mem/intune/apps/manage-microsoft-edge#manage-ntlm-single-sign-on-sites). |
 | com.microsoft.intune.mam.managedbrowser.durationOfNTLMSSO | You can enter the number of   hours to cache credentials when using NTLM credential caching. NTLM is a   Windows network authentication protocol. For more information, see [Manage   NTLM single sign-on   sites](/mem/intune/apps/manage-microsoft-edge#manage-ntlm-single-sign-on-sites). |
 | com.microsoft.intune.mam.managedbrowser.MicrosoftRootStoreEnabled | Microsoft Edge for Android verifies server certificates using the built-in certificate verifier and the Microsoft Root Store as the source of public trust. Organizations can switch to system certificate verifier and system root certificates. For more information, see [Manage   NTLM single sign-on   sites](/mem/intune/apps/manage-microsoft-edge#open-external-apps). |
+| com.microsoft.intune.mam.managedbrowser.SSLErrorOverrideAllowed | You can configure whether end-users can click through SSL warning pages. For more information, see [SSL warning page control](/mem/intune/apps/manage-microsoft-edge#ssl-warning-page-control). |
+
 
 For more information about configuring Microsoft Edge, see [Manage Microsoft Edge on iOS and Android with Intune](/mem/intune/apps/manage-microsoft-edge). 
 

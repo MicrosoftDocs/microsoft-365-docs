@@ -2,8 +2,8 @@
 title: Automation levels in automated investigation and remediation
 description: Get an overview of automation levels and how they work in Microsoft Defender for Endpoint
 author: dansimp
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: edr
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 07/27/2023
@@ -54,7 +54,7 @@ Automated investigation and remediation (AIR) capabilities in Microsoft Defender
 
 - New tenants (which include tenants that were created on or after August 16, 2020) with Defender for Endpoint are set to full automation by default.
 
-- [Defender for Business](../defender-business/compare-mdb-m365-plans.md) uses full automation by default. Defender for Business doesn't use device groups the same way as Defender for Endpoint. Thus, full automation is turned on and applied to all devices in Defender for Business.
+- [Defender for Business](../defender-business/mdb-overview.md) uses full automation by default. Defender for Business doesn't use device groups the same way as Defender for Endpoint. Thus, full automation is turned on and applied to all devices in Defender for Business.
 
 - If your security team has defined device groups with a level of automation, those settings aren't changed by the new default settings that are rolling out.
 
