@@ -8,7 +8,7 @@ ms.date: 12/04/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:

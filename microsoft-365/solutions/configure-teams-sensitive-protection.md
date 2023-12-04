@@ -8,7 +8,7 @@ ms.date: 03/29/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
