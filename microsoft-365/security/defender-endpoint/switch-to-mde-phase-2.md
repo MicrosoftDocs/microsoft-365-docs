@@ -1,8 +1,8 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint - Setup
 description: Move to Defender for Endpoint. Review the setup process, which includes installing Microsoft Defender Antivirus.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium

@@ -2,7 +2,7 @@
 title: Troubleshoot Microsoft Defender for Endpoint service issues
 description: Find solutions and workarounds to known issues such as server errors when trying to access the service.
 keywords: troubleshoot Microsoft Defender for Endpoint, server error, access denied, invalid credentials, no data, dashboard portal, allow, event viewer
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,6 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: troubleshooting
-ms.subservice: mde
 search.appverid: met150
 ms.date: 12/18/2020
 ---

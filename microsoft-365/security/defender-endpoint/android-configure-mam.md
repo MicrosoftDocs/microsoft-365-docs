@@ -4,7 +4,7 @@ description: Describes how to configure Microsoft Defender for Endpoint risk sig
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, configuration, MAM, App Protectection Policies, Managed app
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +18,7 @@ ms.collection:
 - tier3
 - mde-android
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: android
 ms.date: 01/13/2023
 ---
 

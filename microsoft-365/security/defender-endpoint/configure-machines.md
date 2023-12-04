@@ -2,7 +2,7 @@
 title: Ensure your devices are configured properly
 description: Properly configure devices to boost overall resilience against threats and enhance your capability to detect and respond to attacks.
 keywords: onboard, Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 12/18/2020
 ---
