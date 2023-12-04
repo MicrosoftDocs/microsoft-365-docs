@@ -39,6 +39,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## December 2023
+
+- (GA) The Microsoft Defender XDR Unified role-based access control (RBAC) is now generally available. Unified RBAC provides a single permissions management experience that provides one central location for administrators to control user permissions across different security solutions.
+
 ## November 2023
 
 - Microsoft Defender Experts for Hunting now lets you generate sample Defender Experts Notifications so you can start experiencing the service without having to wait for an actual critical activity to happen in your environment. [Learn more](onboarding-defender-experts-for-hunting.md#generate-sample-defender-experts-notifications)
@@ -234,6 +238,5 @@ The security operations team can view all actions pending approval, and the stip
 - [CloudAppEvents table](advanced-hunting-cloudappevents-table.md)
 
   Find information about events in various cloud apps and services covered by Microsoft Defender for Cloud Apps. This table also includes information previously available in the `AppFileEvents` table.
-
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
