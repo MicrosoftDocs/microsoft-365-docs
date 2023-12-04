@@ -24,14 +24,14 @@ ms.date:
 
 ## Overview
 
-The Shifts app in Microsoft Teams is a schedule management tool that helps you create, update, and manage schedules for your team to keep frontline workers connected and in sync.  
+The [Shifts app](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6) in Microsoft Teams is a schedule management tool that helps you create, update, and manage schedules for your team to keep frontline workers connected and in sync.  
 
 To start using Shifts, frontline managers are responsible for configuring Shifts settings like enabling requests for open shifts, swap shifts, and offer shifts, time off requests and time clock for their respective teams. Frontline managers must also create schedule groups to start creating and assigning shifts.
 
 As an admin, you can now standardize these Shifts settings across all your frontline teams and manage them centrally by deploying Shifts to your frontline teams at scale in the Teams admin center. You can select which capabilities to turn on or off and create schedule groups that will be set uniformly across all your frontline teams. Your frontline managers can start using Shifts straight out-of-the-box with minimal setup required.
 
 > [!IMPORTANT]
-> This feature will start rolling out for public preview in December 2023. Capabilities to edit Shifts settings configurations after first deployment will come soon.
+> This feature will start rolling out for public preview in December 2023. Capabilities to edit Shifts settings configurations after the first deployment will come soon.
 
 ## Prerequisites
 
@@ -115,7 +115,7 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
     When deployment is completed, the deployment status shows as **Deployed** in the table. On the **Shifts** card, you’ll see the number of frontline teams that Shifts is deployed to. You can also download a CSV file with a list of those teams.
 
-    You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed. Keep in mind that you can't redeploy Shifts to teams that already have Shifts enabled.
+    You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed. Keep in mind that you can't redeploy Shifts to teams that already have Shifts enabled. In the future, the capability to edit Shifts settings configurations for your teams after your first deployment will be supported.
 
 ## Troubleshoot errors
 
