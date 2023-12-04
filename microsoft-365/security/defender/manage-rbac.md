@@ -91,6 +91,8 @@ You must activate the workloads in Microsoft Defender XDR to use the Microsoft D
 
 When you activate some or all of your workloads to use the new permission model, the roles and permissions for these workloads will be fully controlled by the Microsoft Defender XDR Unified RBAC model in the Microsoft Defender portal.
 
+Note: Microsoft Defender for Cloud is by default active with Microsoft Defender XDR Unified RBAC model.
+
 <a name='start-using-microsoft-365-defender-unified-rbac-model'></a>
 
 ## Start using Microsoft Defender XDR Unified RBAC model
