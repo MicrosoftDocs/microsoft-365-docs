@@ -1,10 +1,6 @@
 {
     "redirections": [      
-        {
-            "source_path": "microsoft-365/compliance/retention-policies-yammer.md",
-            "redirect_url": "/purview/retention-policies-viva-engage",
-            "redirect_document_id": false
-        },
+
 
 
 
