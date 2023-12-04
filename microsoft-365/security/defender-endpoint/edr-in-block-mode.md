@@ -7,7 +7,8 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: conceptual
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
+ms.subservice: edr
 ms.localizationpriority: medium
 ms.custom:
   - next-gen
@@ -18,7 +19,6 @@ ms.collection:
 - m365-security
 - tier2
 - mde-edr
-ms.subservice: mde
 search.appverid: met150
 ---
 
