@@ -21,6 +21,14 @@ This article provides information about new features and important product updat
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## December 2023
+
+Microsoft Defender XDR Unified RBAC is now Globally Available with Microsoft commercial cloud as well as GCC-M.
+
+Supported workloads and other supported data sources are listed under the Overview page in this article.
+
+[Sinead - please verify if mentioning GCC-M as I mentioned is proper + see if you think we should add more text here]
+
 ## October 2023
 
 <a name='exchange-online-permission-management-for-microsoft-defender-for-office-365-is-now-supported-in-microsoft-365-defender-unified-role-based-access-control-rbac-providing-full-integration-of-defender-for-office-365-roles-and-permissions'></a>
