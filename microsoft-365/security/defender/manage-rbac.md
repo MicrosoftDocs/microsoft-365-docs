@@ -28,7 +28,6 @@ search.appverid: met150
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
-- Microsoft Defender for Cloud [Sinead to add the hyperlink]
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -49,8 +48,6 @@ Centralized permissions management is supported for the following solutions:
 |Microsoft Defender Vulnerability Management | Centralized permissions management for all  Defender Vulnerability Management capabilities.|
 |Microsoft Defender for Office 365| Full support for all email & collaboration data and actions scenarios that are controlled by Exchange Online Protection roles (EOP) as well as scenarios controlled by Exchange Online (EXO). </br></br> **Note:** The Microsoft Defender XDR RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses only. This capability is not available to users on trial licenses. </br></br>Granular delegated admin privileges (GDAP) is not supported. </br></br>Remote PowerShell is not supported. |
 |Microsoft Defender for Identity|Full support for all identity data and actions. </br></br> **Note:** Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://security.microsoft.com/cloudapps/permissions/roles). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).|
-|Microsoft Defender for Cloud|Support access management for all Defender for Cloud data that is available in Microsoft Defender XDR portal.|
-
 |Microsoft Secure Score|Full support for all Secure Score data from the [Products included in Secure Score](../defender/microsoft-secure-score.md#products-included-in-secure-score).|
 
 > [!NOTE]
@@ -90,8 +87,6 @@ All permissions listed within the Microsoft Defender XDR Unified RBAC model alig
 You must activate the workloads in Microsoft Defender XDR to use the Microsoft Defender XDR Unified RBAC model. Until activated, Microsoft Defender XDR will continue to respect the existing RBAC models. For more information, see [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md).
 
 When you activate some or all of your workloads to use the new permission model, the roles and permissions for these workloads will be fully controlled by the Microsoft Defender XDR Unified RBAC model in the Microsoft Defender portal.
-
-Note: Microsoft Defender for Cloud is by default active with Microsoft Defender XDR Unified RBAC model.
 
 <a name='start-using-microsoft-365-defender-unified-rbac-model'></a>
 
