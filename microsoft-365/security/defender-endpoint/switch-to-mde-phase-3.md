@@ -1,8 +1,8 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint - Onboard
 description: Move to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium

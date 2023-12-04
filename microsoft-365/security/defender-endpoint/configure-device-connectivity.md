@@ -5,8 +5,8 @@ author: mjcaparas
 ms.author: macapara 
 manager: dansimp 
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security

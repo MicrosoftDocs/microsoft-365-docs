@@ -1,8 +1,8 @@
 ---
 title: Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 description: Learn about exclusions for Defender for Endpoint and Microsoft Defender Antivirus. Suppress alerts, submit files for analysis, and define exclusions and indicators to reduce noise and risk for your organization.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
 ms.topic: how-to
 author: denisebmsft

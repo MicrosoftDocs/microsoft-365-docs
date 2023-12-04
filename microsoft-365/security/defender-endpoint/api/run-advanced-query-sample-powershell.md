@@ -3,7 +3,7 @@ title: Advanced Hunting with PowerShell API Basics
 ms.reviewer: 
 description: Learn the basics of querying the Microsoft Defender for Endpoint API, using PowerShell.
 keywords: apis, supported apis, advanced hunting, query
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020

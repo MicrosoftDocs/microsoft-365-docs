@@ -5,7 +5,7 @@ description: Understand emerging threats and attack techniques and how to stop t
 keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,7 +20,7 @@ ms.collection:
   - tier1
   - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 ms.date: 12/18/2020
 ---
 

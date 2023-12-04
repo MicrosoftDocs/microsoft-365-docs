@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Device Installation
 description: This topic provides a walk through about Microsoft Defender for Endpoint Device Control Device Installation
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - mde-asr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: asr
 search.appverid: met150
 ---
 
