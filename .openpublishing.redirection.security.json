@@ -3739,6 +3739,11 @@
       "source_path": "microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files.md",
       "redirect_url": "/microsoft-365/community/sharepoint-security-a-team-effort",
       "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft",
+      "redirect_document_id": true
      }
    ]
  }
