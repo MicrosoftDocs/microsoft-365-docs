@@ -397,6 +397,18 @@
       items: 
       - name: Overview
         href: apps-protect-overview.md
+      - name: Step 1. Apply minimum data protection
+        href: apps-protect-step-1.md
+      - name: Step 2. Apply enhanced data protection
+        href: apps-protect-step-2.md
+      - name: Step 3. Apply high data protection
+        href: apps-protect-step-3.md
+      - name: Step 4. Understand app protection delivery
+        href: apps-protect-step-4.md
+      - name: Step 5. Verify and monitor app protection
+        href: apps-protect-step-5.md  
+      - name: Step 6. Use app protection actions
+        href: apps-protect-step-6.md
 
 - name: Compliance
   items:
