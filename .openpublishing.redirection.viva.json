@@ -1,0 +1,14 @@
+{
+    "redirections": [
+        {
+            "source_path": "microsoft-365/viva/index.yml",
+            "redirect_url": "/viva/",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "microsoft-365/viva/setup-microsoft-viva.md",
+            "redirect_url": "/viva/setup-microsoft-viva",
+            "redirect_document_id": false
+          }
+    ]
+}
