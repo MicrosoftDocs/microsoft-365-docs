@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
 ms.date: 09/25/2023
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -43,8 +43,10 @@ Pay-as-you-go currently supports the following Syntex services:
 - Content assembly
 - Image tagging
 - Taxonomy tagging
+- Syntex eSignature
 - Optical character recognition
-<!---- Microsoft 365 Archive--->
+- Microsoft 365 Archive (Preview)
+- Microsoft 365 Backup (Preview)
 
 More Syntex services will be added as they become available.
 

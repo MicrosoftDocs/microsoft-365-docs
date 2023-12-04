@@ -4,7 +4,7 @@ ms.reviewer: rahulnayak
 ms.date: 12/02/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions

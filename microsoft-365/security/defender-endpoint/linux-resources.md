@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint on Linux resources
 ms.reviewer:
 description: Describes resources for Microsoft Defender for Endpoint on Linux, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ms.date: 10/30/2023
 ---
@@ -28,7 +28,7 @@ ms.date: 10/30/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -109,7 +109,7 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration|Turn on/off behavior monitoring|`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |Configuration|Turn on/off cloud protection|`mdatp config cloud --value [enabled\|disabled]`|
 |Configuration|Turn on/off product diagnostics|`mdatp config cloud-diagnostic --value [enabled\|disabled]`|
-|Configuration|Turn on/off automatic sample submission|`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`|
+|Configuration|Turn on/off automatic sample submission|`mdatp config cloud-automatic-sample-submission --value [enabled\|disabled]`|
 |Configuration|Turn on/off AV passive mode|`mdatp config passive-mode --value [enabled\|disabled]`|
 |Configuration|Add/remove an antivirus exclusion for a file extension|`mdatp exclusion extension [add\|remove] --name [extension]`|
 |Configuration|Add/remove an antivirus exclusion for a file|`mdatp exclusion file [add\|remove] --path [path-to-file]`|

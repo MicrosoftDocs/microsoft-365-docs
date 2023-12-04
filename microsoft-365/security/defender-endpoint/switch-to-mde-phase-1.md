@@ -1,8 +1,8 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint - Prepare
 description: Get ready to move to Microsoft Defender for Endpoint. Update your devices and configure your network connections.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -27,7 +27,7 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 | ![Phase 1: Prepare.](images/phase-diagrams/prepare.png#lightbox)<br/>Phase 1: Prepare | [![Phase 2: Set up](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Phase 2: Set up](switch-to-mde-phase-2.md) | [![Phase 3: Onboard](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Phase 3: Onboard](switch-to-mde-phase-3.md) |
 |--|--|--|
@@ -39,7 +39,7 @@ This migration phase includes the following steps:
 
 1. [Get and deploy updates across your organization's devices](#step-1-get-and-deploy-updates-across-your-organizations-devices).
 2. [Get Microsoft Defender for Endpoint Plan 1 or Plan 2](#step-2-get-microsoft-defender-for-endpoint-plan-1-or-plan-2).
-3. [Grant access to the Microsoft 365 Defender portal](#step-3-grant-access-to-the-microsoft-365-defender-portal).
+3. [Grant access to the Microsoft Defender portal](#step-3-grant-access-to-the-microsoft-365-defender-portal).
 4. [Review more information about device proxy and internet connectivity settings](#step-4-view-information-about-device-proxy-and-internet-connectivity-settings).
 5. [Capture performance baseline data from the endpoint](#step-5-capture-performance-baseline-data-from-the-endpoint) 
 
@@ -75,13 +75,15 @@ Now that you've updated your organization's devices, the next step is to get Def
 
 4. If any devices in your organization use a proxy to access the internet, follow the guidance in [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
 
-At this point, you're ready to grant access to your security administrators and security operators to use the [Microsoft 365 Defender portal](https://security.microsoft.com).
+At this point, you're ready to grant access to your security administrators and security operators to use the [Microsoft Defender portal](https://security.microsoft.com).
 
-## Step 3: Grant access to the Microsoft 365 Defender portal
+<a name='step-3-grant-access-to-the-microsoft-365-defender-portal'></a>
 
-The [Microsoft 365 Defender portal](https://security.microsoft.com) is where you and your security team access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
+## Step 3: Grant access to the Microsoft Defender portal
 
-Permissions to the Microsoft 365 Defender portal can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
+The [Microsoft Defender portal](https://security.microsoft.com) is where you and your security team access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft Defender portal](use.md).
+
+Permissions to the Microsoft Defender portal can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
 1. Plan the roles and permissions for your security administrators and security operators. See [Role-based access control](prepare-deployment.md#role-based-access-control).
 
@@ -93,7 +95,7 @@ Permissions to the Microsoft 365 Defender portal can be granted by using either 
     - [Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm)
     - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
-3. Grant your security team access to the Microsoft 365 Defender portal. (Need help? See [Manage portal access using RBAC](rbac.md).
+3. Grant your security team access to the Microsoft Defender portal. (Need help? See [Manage portal access using RBAC](rbac.md).
 
 ## Step 4: View information about device proxy and internet connectivity settings
 
@@ -127,4 +129,3 @@ One of the tools that you can use is the Performance Monitor (perfmon). You can 
 
 - [Proceed to set up Defender for Endpoint](switch-to-mde-phase-2.md).
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-

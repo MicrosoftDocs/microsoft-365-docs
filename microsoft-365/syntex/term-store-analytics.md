@@ -2,7 +2,8 @@
 title: Term store reports
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
+ms.reviewer: ssquires
 ms.date: 02/15/2023
 audience: admin
 ms.topic: conceptual

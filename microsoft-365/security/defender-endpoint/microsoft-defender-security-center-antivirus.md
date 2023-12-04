@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Antivirus in the Windows Security app
 description: With Microsoft Defender Antivirus now included in the Windows Security app, you can review, compare, and perform common tasks.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
@@ -9,7 +9,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2

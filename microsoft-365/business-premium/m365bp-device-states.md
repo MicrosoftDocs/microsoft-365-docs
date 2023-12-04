@@ -27,15 +27,15 @@ Microsoft Defender for Business is included with Microsoft 365 Business Premium,
 
 You can view and monitor device health state by using Defender for Business capabilities.
 
-:::image type="content" source="../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory in Defender for Business":::
+:::image type="content" source="../media/defender-business/mdb-deviceinventory.png" lightbox="../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory in Defender for Business":::
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, go to **Assets** > **Devices**. A list of devices that were onboarded to Defender for Business displays.
 
 3. Select a device to view more information and available actions.
 
-   :::image type="content" source="../media/defender-business/mdb-selected-device.png" alt-text="Screenshot showing a selected device with details and actions available":::
+   :::image type="content" source="../media/defender-business/mdb-selected-device.png" lightbox="../media/defender-business/mdb-selected-device.png" alt-text="Screenshot showing a selected device with details and actions available":::
   
 
 ## See also

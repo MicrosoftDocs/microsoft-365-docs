@@ -2,7 +2,7 @@
 title: Production ring deployment using Group Policy and Microsoft Update (MU)
 description: Microsoft Defender Antivirus is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides information about how to use a ring deployment method to update your Microsoft Defender Antivirus clients using Group Policy and Microsoft Update (MU).
 keywords: Deploy Microsoft Defender Antivirus updates, ring deployment Microsoft Defender Antivirus, Microsoft Defender Antivirus Group Policy, Microsoft Defender Antivirus Microsoft Update (MU), Microsoft Defender Antivirus Group Policy and Microsoft Update, threat intelligence, cybersecurity, cloud security,
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
 - mde-ngp
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 07/21/2023
 ---
@@ -29,7 +29,7 @@ ms.date: 07/21/2023
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -43,8 +43,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
->
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
 ## Prerequisites
 
@@ -56,7 +54,7 @@ Download the latest Windows Defender .admx and .adml
 - [WindowsDefender.admx](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.admx) 
 - [WindowsDefender.adml](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.adml)
 
-2)	Copy the latest .admx and .adml to the Domain Controller [Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store#the-central-store).
+Copy the latest .admx and .adml to the Domain Controller [Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store#the-central-store).
 
 ## Setting up the Pilot (UAT/Test/QA) environment
 

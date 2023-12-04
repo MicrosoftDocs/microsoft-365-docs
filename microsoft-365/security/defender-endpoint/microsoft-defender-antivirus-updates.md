@@ -1,9 +1,9 @@
 ---
 title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 11/03/2023
+ms.date: 11/07/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -11,7 +11,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska, tudobril
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
@@ -88,7 +88,8 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 
 - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
-- If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The `mde-urls` workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
+- If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx
+)**, and then select the **Microsoft Defender Processes** worksheet. The `mde-urls` workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
 
 - Platform updates can be temporarily postponed if other protection features (such as [Endpoint DLP](../../compliance/endpoint-dlp-getting-started.md) or [Device Control](device-control-report.md)) are actively monitoring running processes. Platform updates are retried after a reboot or when all monitored services are stopped.
 
@@ -100,13 +101,13 @@ All our updates contain
 
 - Performance improvements
 - Serviceability improvements
-- Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
+- Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
-### October-2023 (Platform: Platform: 4.18.23090.2008 | Engine: 1.1.23100.2009)
+### October-2023 (Platform: Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
 
 - Security intelligence update version: **1.401.3.0**
-- Release date:  **November 3, 2023 (Engine only) / (Platform pending)**
-- Platform: **4.18.23090.2008** (Update coming soon)
+- Release date:  **November 3, 2023 (Engine) / November 6, 2023 (Platform)**
+- Platform: **4.18.23100.2009**
 - Engine: **1.1.23100.2009**
 - Support phase: **Security and Critical Updates**
 
@@ -115,7 +116,11 @@ All our updates contain
 - Improved processing of environment variables in protected folders list for [controlled folder access](controlled-folders.md)
 - Improved performance of [on-access scanning](configure-advanced-scan-types-microsoft-defender-antivirus.md) of files with Mark of the Web (MoTW)
 - Added support for Active Directory device groups with [device control](device-control-removable-storage-protection.md)
-- [ASROnlyPerRuleExclusions](/windows/client-management/mdm/defender-csp#configurationasronlyperruleexclusions) don't apply during an engine reboot
+- Fixed an issue so that [ASROnlyPerRuleExclusions](/windows/client-management/mdm/defender-csp#configurationasronlyperruleexclusions) don't apply during an engine reboot
+- [Microsoft Defender Core service](microsoft-defender-antivirus-windows.md#microsoft-defender-core-service) is generally available for consumer devices and is coming soon for business customers.
+- Fixed an issue with device control so that device control policies remain enforced when a platform update requires a reboot
+- Improved performance of [device control for printing scenarios](printer-protection.md)
+- Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus.md) (processing Unicode characters)
 
 #### Known issues
 

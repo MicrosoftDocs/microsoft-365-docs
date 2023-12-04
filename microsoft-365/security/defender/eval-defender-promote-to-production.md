@@ -1,10 +1,9 @@
 ---
-title: Step 7. Promote your Microsoft 365 Defender evaluation environment to Production
-description: Use this article to promote your evals of MDI, MDO, MDE, and Defender for Cloud Apps to your live environment in Microsoft 365 Defender or M365D.
+title: Step 7. Promote your Microsoft Defender XDR evaluation environment to Production
+description: Use this article to promote your evals of MDI, MDO, MDE, and Defender for Cloud Apps to your live environment in Microsoft Defender XDR or M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -26,12 +25,12 @@ ms.topic: conceptual
 ms.date: 05/13/2021
 ---
 
-# Step 7. Promote your Microsoft 365 Defender evaluation environment to production
+# Step 7. Promote your Microsoft Defender XDR evaluation environment to production
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-To promote your Microsoft 365 Defender evaluation environment to production, first purchase the necessary license. Follow the steps in [Create the eval environment](eval-create-eval-environment.md) and purchase the Office 365 E5 license (instead of selecting Start free trial).
+To promote your Microsoft Defender XDR evaluation environment to production, first purchase the necessary license. Follow the steps in [Create the eval environment](eval-create-eval-environment.md) and purchase the Office 365 E5 license (instead of selecting Start free trial).
 
 Next, complete any other configuration and expand your pilot groups until these have reached full production.
 

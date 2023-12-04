@@ -3,7 +3,7 @@ title: Run live response commands on a device
 description: Learn how to run a sequence of live response commands on a device.
 keywords: apis, graph api, supported apis, upload to library
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,7 +19,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 ms.date: 04/18/2023
 ---
@@ -63,6 +63,9 @@ Runs a sequence of live response commands on a device
 7. Multiple live response commands can be run on a single API call. However, when a live response command fails all the subsequent actions won't be executed.
 
 8. Multiple live response sessions can't be executed on the same machine (if live response action is already running, subsequent requests are responded to with HTTP 400 - ActiveRequestAlreadyExists).
+
+> [!NOTE]
+> Live response actions initiated from the Device page are not available in the machineactions API.
 
 ## Minimum Requirements
 

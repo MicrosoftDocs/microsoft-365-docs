@@ -1,12 +1,12 @@
 ---
-title: Understand the analyst report section in threat analytics in Microsoft 365 Defender
+title: Understand the analyst report section in threat analytics in Microsoft Defender XDR
 ms.reviewer: 
 description: Learn about the analyst report section of each threat analytics report. Understand how it provides information about threats, mitigations, detections, advanced hunting queries, and more.
 keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -25,13 +25,13 @@ ms.custom: seo-marvel-apr2020
 ms.date: 02/16/2021
 ---
 
-# Understand the analyst report in threat analytics in Microsoft 365 Defender
+# Understand the analyst report in threat analytics in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
@@ -101,7 +101,7 @@ While detections allow you to identify and stop the tracked threat automatically
 Advanced hunting queries in the analyst reports have been vetted by Microsoft analysts and are ready for you to run in the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). You can also use the queries to create [custom detection rules](custom-detection-rules.md) that trigger alerts for future matches.
 
 > [!NOTE]
-> Threat analytics is also available in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). However, it does not have the data integration between Microsoft Defender for Office and Microsoft Defender for Endpoint.
+> Threat analytics is also available in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). However, it does not have the data integration between Microsoft Defender for Office 365 and Microsoft Defender for Endpoint.
 
 ## Related topics
 

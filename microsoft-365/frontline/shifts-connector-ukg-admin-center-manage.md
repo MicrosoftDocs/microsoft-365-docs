@@ -2,7 +2,7 @@
 title: Use the Microsoft 365 admin center to manage your Shifts connection to UKG Pro Workforce Management (Preview)
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: imarquesgil
 ms.topic: how-to
 audience: admin
