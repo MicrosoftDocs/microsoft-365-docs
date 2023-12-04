@@ -90,9 +90,9 @@ From the graph, you can:
 
 The *go hunt* option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you’re investigating. You can select any of the options to find relevant information about the entity:
 
-  - See all available queries – [definition/description needed]
-  - All Activity – this query returns all activities associated with an entity, providing you with a comprehensive view of the incident's context. 
-  - Related Alerts – this query searches for and returns all security alerts involving a specific entity, ensuring you don't miss any information.
+  - See all available queries – the option returns all available queries for the entity type you're investigating.
+  - All Activity – the query returns all activities associated with an entity, providing you with a comprehensive view of the incident's context.
+  - Related Alerts – the query searches for and returns all security alerts involving a specific entity, ensuring you don't miss any information.
 
 :::image type="content" source="../../media/investigate-incidents/fig1-gohunt-attackstory.png" alt-text="Selecting the go hunt option on a device in an attack story" lightbox="../../media/investigate-incidents/fig1-gohunt-attackstory.png":::
 
