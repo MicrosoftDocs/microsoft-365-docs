@@ -8,8 +8,8 @@ manager: dansimp
 audience: ITPro
 ms.topic: overview
 ms.date: 08/22/2023
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH

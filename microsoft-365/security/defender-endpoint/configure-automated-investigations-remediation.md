@@ -1,8 +1,8 @@
 ---
 title: Configure automated investigation and remediation capabilities
 description: Set up your automated investigation and remediation capabilities in Microsoft Defender for Endpoint.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: edr
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium

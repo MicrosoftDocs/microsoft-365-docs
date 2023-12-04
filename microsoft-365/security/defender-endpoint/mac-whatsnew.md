@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.reviewer: mavel
 ---

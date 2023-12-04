@@ -4,7 +4,7 @@ description: Enable Conditional Access to prevent applications from running if a
 keywords: conditional access, block applications, security level, intune,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,6 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.subservice: mde
 ms.date: 12/18/2020
 ---
 
