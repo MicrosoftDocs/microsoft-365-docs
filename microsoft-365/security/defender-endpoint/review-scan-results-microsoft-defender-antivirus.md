@@ -38,25 +38,25 @@ search.appverid: met150
 
 - Windows
 
-After a Microsoft Defender Antivirus scan completes, whether it is an [on-demand](run-scan-microsoft-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-microsoft-defender-antivirus.md), the results are recorded and you can view the results.
+After a Microsoft Defender Antivirus scan completes, whether it's an [on-demand](run-scan-microsoft-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-microsoft-defender-antivirus.md), the results are recorded and you can view the results.
 
 ## Use Microsoft 365 Defender to review scan results
 
 To view the scan results using Microsoft 365 Defender Endpoint, follow the below process.
 
-1. Log in to [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47).
+1. Sign in to [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47).
 2. Go to **Incidents & alerts** \> **Alerts**.
 
-   You can now view the scanned results.
+   You can view the scanned results under **Alerts**.
 
 ## Use Microsoft Intune to review scan results
 
 To view the scan results using Microsoft Intune admin center, follow the below process.
 
-1. Log in to [Microsoft Intune admin center](https://intune.microsoft.com/#home).
+1. Sign in to [Microsoft Intune admin center](https://intune.microsoft.com/#home).
 1. Go to **Reports**.
-1. Under **Endpoint security**, click on **Microsoft Defender Antivirus**.
-1. In the **Reports** tab, click on **Detected malware**.
+1. Under **Endpoint security**, select **Microsoft Defender Antivirus**.
+1. In the **Reports** tab, select **Detected malware**.
 1. Select the **Severity** level from the dropdown list.
 
    By default **All severity** option is selected.
@@ -68,14 +68,13 @@ To view the scan results using Microsoft Intune admin center, follow the below p
    By default **All Managed by** option is selected.
 1. Click on **Generate report**.
 
-
 ## Use Configuration Manager to review scan results
 
 See [How to monitor Endpoint Protection status](/configmgr/protect/deploy-use/monitor-endpoint-protection).
 
 ## Use PowerShell cmdlets to review scan results
 
-The following cmdlet will return each detection on the endpoint. If there are multiple detections of the same threat, each detection will be listed separately, based on the time of each detection:
+The following cmdlet returns each detection on the endpoint. If there are multiple detections of the same threat, each detection is listed separately, based on the time of each detection:
 
 ```PowerShell
 Get-MpThreatDetection
