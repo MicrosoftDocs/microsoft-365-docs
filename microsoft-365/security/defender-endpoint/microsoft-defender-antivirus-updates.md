@@ -103,11 +103,11 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
-### November-2023 (Platform: 4.18.23110.xxxx | Engine: 1.1.23110.xxxx)
+### November-2023 (Platform: 4.18.23110.3 | Engine: 1.1.23110.xxxx)
 
 - Security intelligence update version: **x.x.x.x** 
-- Release date:  **December 12, 2023 (Engine) / December 12, 2023 (Platform)** 
-- Platform: **4.18.23110.xxxx** 
+- Release date:  **December 5, 2023 (Platform and Engine)** 
+- Platform: **4.18.23110.3** 
 - Engine: **1.1.23110.xxxx** 
 - Support phase: **Security and Critical Updates** 
 
