@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: prlachhw, pablom
+ms.reviewer: prlachhw, socheng
 audience: Admin
 ms.topic: end-user-help
 ms.service: microsoft-365-business 
