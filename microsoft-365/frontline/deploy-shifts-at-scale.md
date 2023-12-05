@@ -133,9 +133,9 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
     This process can take a while depending on how many teams you're deploying Shifts to. Refresh the Manage frontline apps page to get the latest status.
 
-    :::image type="content" source="media/dsas-deploy-completed.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing a deployment status of Deployed. "lightbox="dsas-deploy-completed.png":::
-
     When deployment is completed, the deployment status shows as **Deployed** in the table. On the **Shifts** card, you’ll see the number of frontline teams that Shifts is deployed to. You can also download a CSV file with a list of those teams.
+
+    :::image type="content" source="media/dsas-deploy-completed.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing a deployment status of Deployed. "lightbox="dsas-deploy-completed.png":::
 
     You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed. Keep in mind that you can't redeploy Shifts to teams that already have Shifts enabled. The capability to edit Shifts settings configurations for your teams after the first deployment will be supported in the future.
 
