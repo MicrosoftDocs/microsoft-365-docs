@@ -55,7 +55,7 @@ Choose the Shifts capabilities that you want to be available to your frontline t
 > [!IMPORTANT]
 > The settings you choose are applied to every team that you deploy Shifts to. Your frontline managers won't be able to change these settings in Shifts.
 
-:::image type="content" source="media/dsas-shift-request-settings.png" alt-text="Screenshot of the Configure Shifts settings page, showing shift request and time-off settings. "lightbox="media/dsas-shift-request-setting.png":::
+:::image type="content" source="media/dsas-shift-request-settings.png" alt-text="Screenshot of the Configure Shifts settings page, showing shift request and time-off settings. "lightbox="media/dsas-shift-request-settings.png":::
 
 1. Under **Shift requests**, set the types of shift requests you want to allow:  
 
