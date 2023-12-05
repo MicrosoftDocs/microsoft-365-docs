@@ -26,12 +26,12 @@ ms.date:
 
 The [Shifts app](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6) in Microsoft Teams is a schedule management tool that helps you create, update, and manage schedules for your team to keep frontline workers connected and in sync.  
 
-To start using Shifts, frontline managers are responsible for configuring Shifts settings like enabling requests for open shifts, swap shifts, and offer shifts, time off requests and time clock for their respective teams. Frontline managers must also create schedule groups to start creating and assigning shifts.
+To start using Shifts, frontline managers are responsible for configuring Shifts settings like enabling requests for open shifts, swap shifts, and offer shifts, time off requests, and time clock for their respective teams. Frontline managers must also create schedule groups to start creating and assigning shifts.
 
 As an admin, you can now standardize these Shifts settings across all your frontline teams and manage them centrally by deploying Shifts to your frontline teams at scale in the Teams admin center. You can select which capabilities to turn on or off and create schedule groups that will be set uniformly across all your frontline teams. Your frontline managers can start using Shifts straight out-of-the-box with minimal setup required.
 
 > [!IMPORTANT]
-> This feature will start rolling out for public preview in December 2023. Capabilities to edit Shifts settings configurations after the first deployment will come soon.
+> This feature will begin rolling out for public preview in December 2023. Capabilities to edit Shifts settings configurations after the first deployment will come soon.
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ Choose the Shifts capabilities that you want to be available to your frontline t
     Under **Time-off reasons**, select **Add**, and then for each time-off reason that you create:
     1. Give it a name. It can’t be longer than 40 characters.  
     1. Choose an icon.
-    1. Enter a unique code. The code can be up to 100 alphanumeric characters long. For example, A01.  
+    1. Enter a unique code. The code can be up to 100 alphanumeric characters long. For example, A01. These codes can't be changed after Shifts is deployed.  
 
     Make sure the time-off reasons reflect what’s supported across your frontline organization. Frontline managers use these time-off reasons when they assign time off to frontline workers. And, if you turned on **Time-off requests**, your frontline workers choose from these time-off reasons from when they request time off.  
 1. Under **Time clock**, turn on or turn off **Clock in/clock out**. When this setting is on, frontline workers can clock in and out of their shifts and record breaks, and frontline managers can export their team’s time report.  
@@ -87,7 +87,11 @@ In this step, you identify the schedule owners in your organization and define h
 
 You can choose to allow schedule owners to create and manage schedule groups or you can do so centrally in the Teams admin center.  
 
-1. In the **Group ID** box, enter the group ID of the group that contains the schedule owners in your organization.  
+1. In the **Group ID** box, enter the Group ID of the group that contains the schedule owners in your organization.
+
+> [!NOTE]
+> To find the group ID of a group, sign in to the [Azure portal](https://portal.azure.com/), select **Microsoft Entra ID**, and then choose **Groups**. Select the group you want, and then copy the value in the **Object Id** field.
+
 1. Choose one of the following options to define how schedule groups are managed:
     - **Schedule groups are created and managed by schedule owners**
     - **Schedule groups are created and managed in the Teams admin center**
@@ -129,9 +133,9 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
     > Frontline managers can later change the time zone setting for their teams in Shifts. You might want to ask your frontline managers to verify the time zone and adjust it if needed, before they start using Shifts.
 1. When you’re done, select **Deploy**.
 
-    :::image type="content" source="media/dsas-time-zone-deploy.png" alt-text="Screenshot of the Select team time zones page, showing the Deploy button. "lightbox="dsas-time-zone-deploy.png":::
-
     This process can take a while depending on how many teams you're deploying Shifts to. Refresh the Manage frontline apps page to get the latest status.
+
+    :::image type="content" source="media/dsas-time-zone-deploy.png" alt-text="Screenshot of the Select team time zones page, showing the Deploy button. "lightbox="dsas-time-zone-deploy.png":::
 
     When deployment is completed, the deployment status shows as **Deployed** in the table. On the **Shifts** card, you’ll see the number of frontline teams that Shifts is deployed to. You can also download a CSV file with a list of those teams.
 
