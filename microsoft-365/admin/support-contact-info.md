@@ -4467,7 +4467,7 @@ Local call charges apply.
 English: Monday through Friday, 9 AM-6 PM
 
 **Technical support hours:**\
-English: 24 hours a day, 7 days a week
+English: Monday through Friday, 9 AM-6 PM
    :::column-end:::
 :::row-end:::
 
