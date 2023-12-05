@@ -40,7 +40,7 @@ Due to the deprecation of the Defender for Endpoint Threat protection report, yo
 ## Use Advanced hunting queries
 Due to the deprecation of the Defender for Endpoint Threat protection report, you can use Advanced hunting queries to find Defender for Endpoint threat protection information.  Note that currently there is no alert status in Advanced hunting elements that maps to resolve/unresolve. [Learn more about Advanced hunting in Defender XDR](../defender/advanced-hunting-overview.md). See below for a sample advanced hunting query that shows endpoint related threat protection details.
 
-### Alert Status  
+### Alert status  
 ```kusto
 // Severity 
 AlertInfo 
@@ -54,7 +54,7 @@ AlertInfo
 | summarize count() by Severity 
 | render columnchart      
 
-// Detection Category 
+// Detection category 
 AlertInfo 
 | where Timestamp > startofday(now()) // Today 
 | summarize count() by Category 
@@ -78,7 +78,7 @@ AlertInfo
 | summarize count() by DetectionSource , bin(Timestamp, 1d) 
 | render timechart     
 
-// Detection Category 
+// Detection category 
 AlertInfo 
 | where Timestamp > ago(30d) 
 | summarize count() by Category , bin(Timestamp, 1d) 
