@@ -46,7 +46,7 @@ The following steps guide you on how to edit roles in Microsoft Defender XDR Uni
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft Defender XDR to get to the Permissions and roles page.
 4. Select the role you want to edit. You can only edit one role at a time.
-5. Select the **Edit** button or select **Edit** from the action menu next to the role name. This opens a flyout pane where you can edit the role:
+5. Once selected, this opens a flyout pane where you can edit the role:
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-edit-roles.png" alt-text="Screenshot of the edit roles flyout page" lightbox="../../media/defender/m365-defender-rbac-edit-roles.png":::
 
