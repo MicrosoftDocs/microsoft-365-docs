@@ -132,12 +132,8 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
     :::image type="content" source="media/dsas-select-time-zone.png" alt-text="Screenshot of the Select team time zones page, showing a list of teams and time zones. "lightbox="media/dsas-select-time-zone.png":::
 
     > [!NOTE]
-    > Frontline managers can later change the time zone setting for their teams in Shifts. You might want to ask your frontline managers to verify the time zone and adjust it if needed, before they start using Shifts.
-1. When you’re done, select **Deploy**.
-
-    This process can take a while depending on how many teams you're deploying Shifts to. Refresh the Manage frontline apps page to get the latest status.
-
-    :::image type="content" source="media/dsas-time-zone-deploy.png" alt-text="Screenshot of the Select team time zones page, showing the Deploy button. "lightbox="media/dsas-time-zone-deploy.png":::
+    > Frontline managers can later change the time zone setting for their teams in Shifts. You might want to ask your frontline managers to verify the time zone and adjust it if needed before they start using Shifts.
+1. When you’re done, select **Deploy**. This process can take some time, depending on how many teams you're deploying Shifts to. Refresh the Manage frontline apps page to get the latest status.
 
     When deployment is completed, the deployment status shows as **Deployed** in the table. On the **Shifts** card, you’ll see the number of frontline teams that Shifts is deployed to. You can also download a CSV file with a list of those teams.
 
