@@ -1,8 +1,7 @@
 ---
 title: Manage Microsoft Defender for Endpoint using Intune
 description: Learn how to manage Microsoft Defender for Endpoint with Intune
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
