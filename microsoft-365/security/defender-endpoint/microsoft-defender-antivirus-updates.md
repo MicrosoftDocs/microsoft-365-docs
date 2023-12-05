@@ -105,7 +105,7 @@ All our updates contain
 
 ### November-2023 (Platform: 4.18.23110.3 | Engine: 1.1.23110.xxxx)
 
-- Security intelligence update version: **x.x.x.x** 
+- Security intelligence update version: **1.401.1729.0** 
 - Release date:  **December 5, 2023 (Platform and Engine)** 
 - Platform: **4.18.23110.3** 
 - Engine: **1.1.23110.xxxx** 
@@ -128,7 +128,6 @@ All our updates contain
 #### Known issues
 
 - None
-  
 
 ### October-2023 (Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
 
