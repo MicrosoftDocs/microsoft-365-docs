@@ -5,8 +5,8 @@ keywords: action, center, autoir, automated, investigation, response, remediatio
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: edr
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
@@ -91,5 +91,5 @@ To get to the unified Action center in the improved Microsoft Defender portal:
 ## See also
 
 - [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
-- [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

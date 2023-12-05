@@ -2,7 +2,7 @@
 title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.reviewer: kumasumit
@@ -15,7 +15,7 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ---
 
@@ -47,6 +47,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 - Updated default engine version to `1.1.23090.2008`, and default signatures version to `1.399.690.0`.
+- Updated libcurl library to version `8.4.0` to fix recently disclosed vulnerabilities with the older version.
+- Updated Openssl library to version `3.1.1` to fix recently disclosed vulnerabilities with the older version.
 - General stability and performance improvements.
 - Bug fixes.
 
