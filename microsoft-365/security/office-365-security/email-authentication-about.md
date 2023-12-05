@@ -29,11 +29,11 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-As a Microsoft 365 organization with mailboxes in Exchange Online, or a standalone Exchange Online Protection (EOP) organization without Exchange Online mailboxes, protecting the integrity of email messages from senders in your domains is important. Recipients should feel confident that messages from senders in your domain really came from those senders.
+As a Microsoft 365 organization with mailboxes in Exchange Online, or a standalone Exchange Online Protection (EOP) organization without Exchange Online mailboxes, protecting the integrity of email messages from senders in your domains is important. Recipients should feel confident that messages from senders in your domain really came from senders in your domain.
 
 Email authentication (also known as _email validation_) is a group of standards to identify and prevent the delivery of email messages from forged senders (also known as _spoofing_). Spoofed senders are commonly used in business email compromise (BEC), phishing, and other email attacks. These standards include:
 
-- **Sender Policy Framework (SPF)**: Identifies the source email servers that are authorized to send mail for the domain. The domain is used in sender's email address during SMTP transmission of the message (known as the `5321.MailFrom` address, **MAIL FROM** address, P1 sender, or envelope sender).
+- **Sender Policy Framework (SPF)**: Identifies the source email servers that are authorized to send mail for the domain. The domain is used in sender's email address during SMTP transmission of the message between email servers (known as the `5321.MailFrom` address, **MAIL FROM** address, P1 sender, or envelope sender).
 - **DomainKeys Identified Mail (DKIM)**: Uses a domain to digitally sign important elements of the message, including the From: message header field that's shown as the sender's email address in email clients. This address is also known as the `5322.From` address, From address, or P2 sender. The signature is stored in the message header to verify that the signed elements of the message weren't altered in transit.
 - **Domain-based Message Authentication, Reporting and Conformance (DMARC)**: Contains a policy that defines the action for messages that fail SPF or DKIM checks for senders in the domain.
 - **Authenticated Received Chain (ARC)**: Preserves original email authentication information by services that modify messages in transit. The destination email server can use this information to authentication messages that would otherwise fail email authentication.
