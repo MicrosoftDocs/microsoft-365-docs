@@ -3,7 +3,7 @@ title: "Microsoft Entra setup guides"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 12/13/2021
+ms.date: 12/05/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -84,13 +84,13 @@ The setup guides contain a checklist of the tasks you need to complete, and you 
 
 [Open the Microsoft Entra setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/azureadsetup).
 
-## Add or sync users to your Microsoft account  
+## Add or sync users to Microsoft Entra ID  
 
-This guide helps you set up user accounts setup in Azure and Microsoft 365. Based on your environment and needs, you can choose to add users individually, migrate your on-premises directory with Microsoft Entra Cloud Sync or Microsoft Entra Connect, or troubleshoot existing sync issues.
+This guide helps you set up user accounts setup in Microsoft Entra ID and Microsoft 365. Based on your environment and needs, you can choose to add users individually, migrate your on-premises directory with Microsoft Entra Connect Cloud Sync or Microsoft Entra Connect, or troubleshoot existing sync issues.
 
 ### Licensing
 
-Using Azure Active Directory Sync tools is free and included with all Microsoft 365 subscriptions.
+Using Microsoft Entra ID Sync tools is free and included with all Microsoft 365 subscriptions.
 
 [Open the Add or Sync users setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/identitywizard).
 
@@ -126,7 +126,7 @@ SSPR requires one of the following licenses:
 
 ## Configure multi-factor authentication (MFA)
 
-For customers with Microsoft Entra ID Governance,Azure P1, or Azure P2, we provide customizable Conditional Access templates that include the most common and least intrusive security standards. When Azure licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA.
+For customers with Microsoft Entra ID Governance, Microsoft Entra ID P1, or P2, we provide customizable Conditional Access templates that include the most common and least intrusive security standards. When Microsoft Entra ID licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA.
 
 ### Licensing
 
