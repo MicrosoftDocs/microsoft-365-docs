@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: aaroncz
 author: cdmm12
-manager: dougeby
+manager: aaroncz
 ms.reviewer: alainme
-ms.date: 05/11/2022
+ms.date: 12/05/2023
 ms.audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
