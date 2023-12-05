@@ -238,7 +238,7 @@ The following configuration settings are recommended:
 
 #### Attack surface reduction
 
-- Enable network protection: Audit mode
+- Enable network protection: Test mode
 - Require SmartScreen for Microsoft Edge: Yes
 - Block malicious site access: Yes
 - Block unverified file download: Yes
