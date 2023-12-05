@@ -1,6 +1,6 @@
 ---
 ms.date: 11/15/2021
-title: Learn about topics in Topics
+title: Learn about topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -19,7 +19,7 @@ ms.localizationpriority:  medium
 description: Learn about new ways to discover and explore information in Topics.
 ---
 
-# Learn about topics in Topics
+# Learn about topics
 
 How do you find the people and resources important to your work? When you share important files with others, are they able to find them again later, when they need them? Topics provides new ways to discover and explore information from your content in Microsoft 365.  
 
