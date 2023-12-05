@@ -160,10 +160,9 @@ If you have onboarded the primary image of your VDI environment (SENSE service i
    sc query sense
    ```
 
-3. Run the following commands using PsExec.exe (which can be downloaded from [https://download.sysinternals.com/files/PSTools.zip](https://download.sysinternals.com/files/PSTools.zip)):
+3. Run the following commands in a CMD window::
 
    ```console
-   PsExec.exe -s cmd.exe
    del "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber\*.*" /f /s /q
    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v 7DC0B629-D7F6-4DB3-9BF7-64D5AAF50F1A /f
@@ -239,7 +238,7 @@ The following configuration settings are recommended:
 
 #### Attack surface reduction
 
-- Enable network protection: Audit mode
+- Enable network protection: Test mode
 - Require SmartScreen for Microsoft Edge: Yes
 - Block malicious site access: Yes
 - Block unverified file download: Yes
