@@ -66,6 +66,9 @@ You can activate your workloads in two ways from the Permissions and roles page:
     > The **Activate workloads** button is only available when there is it at least one workload that's not active for Microsoft Defender XDR Unified RBAC.
 
     > [!NOTE]
+    > Microsoft Defender for Cloud is active by default with Microsoft Defender XDR Unified RBAC.
+
+    > [!NOTE]
     > To activate Exchange Online (EXO) permissions in Microsoft Defender XDR Unified RBAC, Exchange Online Protection (EOP) permissions must be active. 
 
 2. **Workload settings**
