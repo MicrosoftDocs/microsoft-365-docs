@@ -83,7 +83,7 @@ If an incident has not yet been assigned, you can select the **Assign to** box a
 You can get a list of incidents assigned to you by filtering the incident queue. 
 
 1. From the incident queue, select **Filters**.
-2. In the **Incident assignment** section, clear **Select all**. Select **Assigned to me**, **Assign to another user**, or **Assign to a user group**.
+2. In the **Incident assignment** section, clear **Select all**. Select **Assigned to me**, **Assigned to another user**, or **Assigned to a user group**.
 3. Select **Apply**, and then close the **Filters** pane.
 
 You can then save the resulting URL in your browser as a bookmark to quickly see the list of incidents assigned to you.
