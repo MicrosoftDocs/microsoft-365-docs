@@ -46,7 +46,7 @@ The Organization.Read.All permission scope is required to read the licenses avai
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
-To view the licensing plan information in your organization, see the following topics:
+To view the licensing plan information in your organization, see the following articles:
 
 - [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
 
@@ -138,7 +138,7 @@ if($userList.Count -ne 0) {
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
    
-To view the licensing plan (**AccountSkuID**) information in your organization, see the following topics:
+To view the licensing plan (**AccountSkuID**) information in your organization, see the following articles:
     
 - [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
     
