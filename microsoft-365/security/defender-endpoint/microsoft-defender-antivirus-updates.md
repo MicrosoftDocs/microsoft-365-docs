@@ -117,18 +117,17 @@ All our updates contain
 - Resolved deadock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
 - Added the `InitializationProgress` field to [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) output. 
 - Fixed installation failure on Windows Server 2016 due to existing Defender EventLog registry key 
-- Added the ability to have Quick Scan ignore Microsoft Defender Antivirus exclusions 
+- Added the ability to have [quick scans](schedule-antivirus-scans) ignore Microsoft Defender Antivirus exclusions 
 - Fixed remediation for long running [on-demand scans](run-scan-microsoft-defender-antivirus.md) where the service may have been restarted. 
-- Fixed allowing the execution of a blocked application by MDVM when the [warn option](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps#block-or-warn-mitigation-action) is selected. 
+- Fixed an issue with Microsoft Defender Vulnerability Management to allow the execution of a [blocked application](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps) when the [warn option](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps#block-or-warn-mitigation-action) is selected. 
+- Added support for managing schedule day/time for [signature updates in Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows#updates) and [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration). 
+- Fixed non standard signature path loading on Xplat devices 
+- Better handling of cached detectioroosns in ASR 
+- Performance improvement for enumerating virtual memory ranges 
 
-Added support for managing schedule day/time for Signature updates in Intune  and MDEAttach 
+#### Known issues
 
-Fixed non standard signature path loading on Xplat devices 
-
-Better handling of cached detections in ASR 
-
-Performance improvement for enumerating virtual memory ranges 
-
+- None
   
 
 ### October-2023 (Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
