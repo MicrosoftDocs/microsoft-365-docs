@@ -145,12 +145,12 @@ Azure Portal supports a similar inactivity feature, but is supported by Azure Po
 
 Update the policy:
 
-1. In the Microsoft 365 admin center, select **Org settings**, go to the **Security & Privacy** tab and select **Idle session timeout**.
+1. In the Microsoft 365 admin center, select **Settings** > **Org settings**, go to the **Security & Privacy** tab and select **Idle session timeout**.
 
 2. In the dropdown menu, select a different timeout value and then **Save**.  
 
 Delete the policy:
 
-1. In the Microsoft 365 admin center, select **Org settings**, go to the **Security & Privacy** tab and select **Idle session timeout**.
+1. In the Microsoft 365 admin center, select **Settings** > **Org settings**, go to the **Security & Privacy** tab and select **Idle session timeout**.
 
 2. Uncheck **Turn on to set the period of inactivity for users to be signed off of Microsoft 365 apps** and select **Save**.
