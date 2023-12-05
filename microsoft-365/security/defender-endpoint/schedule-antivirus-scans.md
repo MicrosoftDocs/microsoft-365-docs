@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/31/2023
+ms.date: 12/05/2023
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.subservice: ngp
@@ -80,6 +80,8 @@ Use the following table to choose a scan type.
 - When real-time protection detects malware and the extent of the affected files isn't determined initially, Microsoft Defender Antivirus initiates a full scan as part of the remediation process.
 
 - If a device is offline for an extended period of time, a full scan can take longer to complete.
+
+- You can configure quick scans to scan real-time protection exclusions by using PowerShell, Intune, or Group Policy.
 
 ## Scheduled quick scan performance optimization 
 
