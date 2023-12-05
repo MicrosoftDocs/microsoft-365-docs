@@ -3,7 +3,7 @@ title: "Remove Microsoft 365 licenses from user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/23/2020
+ms.date: 12/5/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
