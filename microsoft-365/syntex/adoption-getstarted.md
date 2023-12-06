@@ -109,7 +109,7 @@ When determining who in your organization will need to be involved in your Synte
 
 For example, if you are focused on document processing, then the SharePoint administrator role will be key in creating and managing content centers needed to manage models at scale. If you’re focused on features like OCR and compliance, then the Purview Compliance administrator will be needed. If taxonomy tagging will be pursued, it’s important to understand your corporate term store management or to determine if you’ll use a content center.
 
-|Admin role  |Designation  |Responsibilities  |
+|Administrator  |Requirement  |Responsibilities  |
 |---------|---------|---------|
 |Azure Subscriptions administrator     |Microsoft Entra role         |Configure Azure subscription settings, review Azure cost management data         |
 |Purview Compliance administrator     |Microsoft Entra role         |Plan for compliance settings, such as sensitivity labels and retention policies and OCR settings          |
