@@ -135,6 +135,7 @@ The following table lists the available third-party offer types. These offer typ
 | Dynamics 365 Business Central | DYNAMICSBC |
 
 
+
 ## View or set the status for AllowSelfServicePurchase
 
 You can set the **Value** parameter for **AllowSelfServicePurchase** to allow or prevent users from making a self-service purchase. You can also use the **OnlyTrialsWithoutPaymentMethod** value to allow users to try products that have no payment required trials. Refer to the product list above to see which products have these trials enabled. Users can only buy the product after the trial is over if **AllowSelfServicePurchase** is enabled.
@@ -208,6 +209,7 @@ If there are multiple values for the product, you can run the command individual
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType SaaS -Enabled False
 ```
 
 ## Troubleshooting
