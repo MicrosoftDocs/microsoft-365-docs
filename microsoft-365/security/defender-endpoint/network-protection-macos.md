@@ -2,7 +2,7 @@
 title: Use network protection to help prevent macOS connections to bad sites
 description: Protect your network by preventing macOS users from accessing known malicious and suspicious network addresses
 keywords: Network protection, MacOS exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.subservice: mde
+ms.subservice: macos
 ms.topic: overview
 ms.collection:
 - m365-security

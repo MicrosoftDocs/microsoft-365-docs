@@ -1,0 +1,14 @@
+{
+    "redirections": [
+        {
+            "source_path":"microsoft-365/test-base/testbase-for-m365-product-terms.md",
+            "redirect_url":"/legal/test-base/testbase-for-m365-product-terms",
+            "redirect_document_id":false
+        },
+        {
+            "source_path":"microsoft-365/test-base/testbase-for-m365-product-terms-changehistory.md",
+            "redirect_url":"/legal/test-base/testbase-for-m365-product-terms-changehistory",
+            "redirect_document_id":false
+        }
+    ]
+}

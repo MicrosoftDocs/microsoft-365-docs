@@ -28,6 +28,8 @@ search.appverid: met150
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
+- [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
+
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -62,6 +64,9 @@ You can activate your workloads in two ways from the Permissions and roles page:
 
     > [!NOTE]
     > The **Activate workloads** button is only available when there is it at least one workload that's not active for Microsoft Defender XDR Unified RBAC.
+
+    > [!NOTE]
+    > Microsoft Defender for Cloud is active by default with Microsoft Defender XDR Unified RBAC.
 
     > [!NOTE]
     > To activate Exchange Online (EXO) permissions in Microsoft Defender XDR Unified RBAC, Exchange Online Protection (EOP) permissions must be active. 

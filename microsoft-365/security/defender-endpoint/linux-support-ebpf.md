@@ -1,7 +1,7 @@
 ---
 title: Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on Linux.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ms.date: 11/17/2023
 ---

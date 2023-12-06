@@ -2,7 +2,7 @@
 title: Deploy frontline dynamic teams at scale
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: aaglick
 ms.topic: how-to
 audience: admin
@@ -16,16 +16,13 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 11/10/2023
+ms.date: 12/1/2023
 
 ---
 
 # Deploy frontline dynamic teams at scale
 
 ## Overview
-
->[!IMPORTANT]
->This feature will begin rolling out for public preview in July 2023. If you would like to provide feedback and improve this feature while in preview, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
 
 Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Microsoft Entra attributes. [Learn more about Microsoft Entra attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
 
@@ -39,6 +36,9 @@ You also determine team structure and team owners.
 Then, you can choose which locations you want to create dynamic frontline teams for.
 
 Team membership is automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams are updated accordingly.
+
+> [!NOTE]
+> If you would like to provide feedback and improve this feature, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
 
 ## Prerequisites
 
@@ -60,7 +60,7 @@ When evaluating the right solution for your organization, we recommend you do th
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
 2. In the table, choose **Setup**.
 
-    :::image type="content" source="media/dtas-manage-setup.png" alt-text="Screenshot of the manage frontline teams table in the Teams admin center." lightbox="media/dtas-manage-setup.png":::
+    :::image type="content" source="media/dtas-manage-setup.png" alt-text="Screenshot of the Manage frontline teams page, showing the Setup button." lightbox="media/dtas-manage-setup.png":::
 
 3. Review the prerequisites information.
 
@@ -98,7 +98,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
 1. After setup is completed, go to the **Manage frontline teams** page, and then select the **Deploy** button.
 
-    :::image type="content" source="media/dtas-deploy.png" alt-text="Screenshot of the Deploy button." lightbox="media/dtas-deploy.png":::
+    :::image type="content" source="media/dtas-deploy.png" alt-text="Screenshot of the Manage frontline teams page, showing the Deploy button." lightbox="media/dtas-deploy.png":::
 
 2. From here, you can review your settings and view the list of locations that don't yet have a frontline dynamic team created.
 
