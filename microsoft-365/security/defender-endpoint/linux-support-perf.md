@@ -198,10 +198,6 @@ These issues may occur on servers with many events flooding AuditD.
 > This will prevent AuditD logs accumulating in a single file and the rotated log files can be moved out to save disk space.
 >
 > To achieve this, you can set the value for **max_log_file_action** to **rotate** in the [auditd.conf](https://linux.die.net/man/8/auditd.conf) file.
-
-
-
-
  
 This can happen if there are multiple consumers for AuditD, or too many rules with the combination of Microsoft Defender for Endpoint and third party consumers, or high workload that generates a lot of events.
 
