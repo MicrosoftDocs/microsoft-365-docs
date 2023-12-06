@@ -2,7 +2,7 @@
 title: How to schedule scans with Microsoft Defender for Endpoint (Linux)
 description: Learn how to schedule an automatic scanning time for Microsoft Defender for Endpoint (Linux) to better protect your organization's assets.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint (linux)
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ms.date: 10/22/2021
 ---

@@ -21,8 +21,8 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Detect and Remediate Illicit Consent Grants
@@ -46,7 +46,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 ### Steps for finding signs of this attack
 
-1. Open the Microsoft 365 Defender portal at <https://security.microsoft.com> and then select **Audit**. Or, to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
+1. Open the Microsoft Defender portal at <https://security.microsoft.com> and then select **Audit**. Or, to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
 
 2. On the **Audit** page, verify that the **Search** tab is selected, and then configure the following settings:
    - **Date and time range**
@@ -135,7 +135,7 @@ The script produces one file named Permissions.csv. Follow these steps to look f
 
 ## Determine the scope of the attack
 
-After you have finished inventorying application access, review the **audit log** to determine the full scope of the breach. Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had. You can search the **audit log** in the [Microsoft 365 Defender portal](/purview/audit-log-search).
+After you have finished inventorying application access, review the **audit log** to determine the full scope of the breach. Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had. You can search the **audit log** in the [Microsoft Defender portal](audit-log-search-defender-portal.md).
 
 > [!IMPORTANT]
 > [Mailbox auditing](/purview/audit-mailboxes) and [Activity auditing for admins and users](/purview/audit-log-enable-disable) must have been enabled prior to the attack for you to get this information.
@@ -156,7 +156,7 @@ After you have identified an application with illicit permissions, you have seve
 
 - You can also disable sign-in for the affected account altogether, which will in turn disable app access to data in that account. This isn't ideal for the end user's productivity, of course, but if you are working to limit impact quickly, it can be a viable short-term remediation.
 
-- You can turn integrated applications off for your tenancy. This is a drastic step that disables the ability for end users to grant consent on a tenant-wide basis. This prevents your users from inadvertently granting access to a malicious application. This isn't strongly recommended as it severely impairs your users' ability to be productive with third party applications. You can do this by following the steps in [Turning Integrated Apps on or off](../../admin/misc/user-consent.md).
+- You can turn integrated applications off for your tenancy. This is a drastic step that disables the ability for end users to grant consent on a tenant-wide basis. This prevents your users from inadvertently granting access to a malicious application. This isn't strongly recommended as it severely impairs your users' ability to be productive with third party applications. You can do this by following the steps in [Turning Integrated Apps on or off](/microsoft-365/admin/misc/user-consent).
 
 ## See also
 

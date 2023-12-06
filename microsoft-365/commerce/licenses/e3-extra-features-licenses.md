@@ -23,7 +23,7 @@ ms.date: 10/20/2023
 > [!IMPORTANT]
 > This article only applies if you bought a Microsoft 365 E3 Original subscription through an Enterprise Agreement (EA). If this applies to you, you now see the Microsoft 365 E3 Extra Features product on the **Licenses** page in the Microsoft 365 admin center.
 
-If you have a Microsoft 365 E3 Original subscription that you bought through an Enterprise Agreement (EA), you now also have a subscription for Microsoft 365 E3 Extra Features. Microsoft 365 E3 Extra Features provides the following products and services added to Microsoft 365 E3 Original at no additional cost.
+If you have a Microsoft 365 E3 Original subscription that you bought through an Enterprise Agreement (EA), you now also have a subscription for Microsoft 365 E3 Extra Features. The Microsoft 365 E3 Original package includes the following products and services at no additional cost.
 
 - Office 365 E3
 - Enterprise Mobility and Security E3
@@ -36,7 +36,7 @@ The new Microsoft 365 E3 Extra Features product is now included in this list. To
 
 Microsoft 365 E3 Extra Features provides the following features for your users:
 
-- [Bing Chat Enterprise](https://blogs.microsoft.com/blog/2023/07/18/furthering-our-ai-ambitions-announcing-bing-chat-enterprise-and-microsoft-365-copilot-pricing/)&mdash;An AI-powered copilot for the web, with commercial data protection. It ensures user and business data are protected, won’t leak outside the organization and won’t be used to train the large language models.
+- [Copilot](https://www.microsoft.com/bing/chat/enterprise/?form=MA13FV)&mdash;An AI-powered copilot for the web, with commercial data protection. It ensures user and business data are protected, won’t leak outside the organization and won’t be used to train the large language models.
 - [Microsoft Clipchamp](https://www.microsoft.com/microsoft-365/blog/2023/07/31/introducing-microsoft-clipchamp-unlock-the-power-of-video-at-work/)&mdash;A video editing tool for anyone to create professional-looking videos, even with no prior experience.
 - [Microsoft Loop](https://www.microsoft.com/microsoft-365/blog/2023/03/22/new-microsoft-loop-app-is-built-for-modern-co-creation/)&mdash;A co-creation app that lets teams bring together all the parts of a project in one place and collaborate across the apps and devices they already use.
 - [Avatars for Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/avatars-for-microsoft-teams-in-public-preview/ba-p/3774421)&mdash;A service that lets users create personalized avatars for Teams meetings that express their appearance, style, or mood for the day. 

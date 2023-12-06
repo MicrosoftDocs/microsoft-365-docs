@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: magarlan, chrigreen
+ms.reviewer: taylorau
 ms.date: 06/09/2023
 audience: Admin
 ms.topic: article
@@ -33,6 +33,8 @@ During the GDAP setup process, you create GDAP templates by configuring what sup
 ## Watch: Set up GDAP
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5e61P]
+
+Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
 
 ## Before you begin
 

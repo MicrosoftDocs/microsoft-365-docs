@@ -289,9 +289,9 @@ For any mailbox moving from a source organization, you must provision a MailUser
 
 7. Other attributes may be included in Exchange hybrid write-back already. If not, they should be included.
 
-   1. `msExchBlockedSendersHash` – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
-   2. `msExchSafeRecipientsHash` – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
-   3. `msExchSafeSendersHash` – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
+   1. `msExchBlockedSendersHash` – Writes back online blocked sender data from clients to on-premises Active Directory.
+   2. `msExchSafeRecipientsHash` – Writes back online safe recipients data from clients to on-premises Active Directory.
+   3. `msExchSafeSendersHash` – Writes back online safe sender data from clients to on-premises Active Directory.
 
    Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization. You must also apply a Cross Tenant User Data Migration license; else, you may see a transient error reading **needs approval**, which will report a warning in the move report that a license hasn't been applied to the target user.
 

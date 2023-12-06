@@ -2,7 +2,7 @@
 title: Set up Microsoft 365 for frontline workers
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: samanro
 ms.topic: how-to
 audience: admin
@@ -115,7 +115,7 @@ You can add licenses to individual users or to groups of users in Microsoft Entr
 
 [Learn more about group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) and [assigning licenses to groups](/azure/active-directory/enterprise-users/licensing-groups-assign).
 
-You may need to [unassign licenses](/microsoft-365/admin/manage/remove-licenses-from-users) if you're changing some users from E to F licenses. [Learn more about how to switch specific users from E to F licenses](switch-from-enterprise-to-frontline.md#switch-users-to-a-microsoft-365-f-plan).
+You may need to [unassign licenses](../admin/manage/assign-licenses-to-users.md) if you're changing some users from E to F licenses. [Learn more about how to switch specific users from E to F licenses](switch-from-enterprise-to-frontline.md#switch-users-to-a-microsoft-365-f-plan).
 
 ## Step 4: Configure device enrollment
 

@@ -1,11 +1,7 @@
 ---
 title: Manual deployment for Microsoft Defender for Endpoint on macOS
 description: Install Microsoft Defender for Endpoint on macOS manually, from the command line.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, monterey, ventura, mde for mac
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -17,9 +13,9 @@ ms.collection:
 - mde-macos
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/20/2023
 ---
 
 # Manual deployment for Microsoft Defender for Endpoint on macOS
@@ -29,7 +25,7 @@ ms.date: 12/18/2020
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
 
@@ -45,11 +41,11 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 
 ## Download installation and onboarding packages
 
-Download the installation and onboarding packages from Microsoft 365 Defender portal.
+Download the installation and onboarding packages from Microsoft Defender portal.
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Settings > Endpoints > Device management > Onboarding**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
@@ -78,7 +74,7 @@ To complete this process, you must have admin privileges on the device.
 
 5. Repeat steps 3 & 4 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
 
-6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft 365 Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
+6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
    :::image type="content" source="images/monterey-install-4.png" alt-text="The system extension security preferences2" lightbox="images/monterey-install-4.png":::
 
@@ -117,25 +113,25 @@ To complete this process, you must have admin privileges on the device.
 
 1. To grant consent, open **System Preferences** \> **Security & Privacy** \> **Privacy** \> **Full Disk Access**. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
 
-2. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+1. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-    1. Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
+1. Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
 
-        ```bash
-        mdatp health --field real_time_protection_enabled
-        ```
+     ```bash
+     mdatp health --field real_time_protection_enabled
+     ```
 
-    1. Open a Terminal window. Copy and execute the following command:
+      1. Open a Terminal window. Copy and execute the following command:
 
-        ```bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
-        ```
+    ```bash
+    curl -o ~/Downloads/eicar.com.txt https://secure.eicar.org/eicar.com.txt 
+    ```
 
-    1. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
+1. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
 
-        ```bash
-        mdatp threat list
-        ```
+     ```bash
+     mdatp threat list
+     ```
 
 3. Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
@@ -159,7 +155,7 @@ To complete this process, you must have admin privileges on the device.
    >
    > > **"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.**<br/>
    > > macOS cannot verify that this app is free from malware.<br/>
-   > > **\[Move to Trash\]** **\[Cancel\]**
+   > > **[Move to Trash]** **[Cancel]**
 
 7. Click **Cancel**.
 
@@ -181,7 +177,7 @@ To complete this process, you must have admin privileges on the device.
 
     In a few minutes an alert named "macOS EDR Test Alert" should be raised.
 
-11. Go to Microsoft 365 Defender portal (https://security.microsoft.com/).
+11. Go to Microsoft Defender portal (https://security.microsoft.com/).
 
 12. Go to the Alert Queue.
 

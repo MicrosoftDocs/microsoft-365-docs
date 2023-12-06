@@ -2,7 +2,7 @@
 title:  Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer
 description: Troubleshoot sensor health on devices to identify potential configuration, environment, connectivity, or telemetry issue affecting sensor data or capability.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +18,7 @@ ms.collection:
 - tier3
 - mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 03/23/2021
 ---
@@ -52,7 +52,7 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
 
 ## Requirements
 
-- Before running the analyzer, we recommend ensuring your proxy or firewall configuration allows access to [Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+- Before running the analyzer, we recommend ensuring your proxy or firewall configuration allows access to [Microsoft Defender for Endpoint service URLs](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 - The analyzer can run on supported editions of [Windows](minimum-requirements.md#supported-windows-versions), [Linux](microsoft-defender-endpoint-linux.md#system-requirements), or [macOS](microsoft-defender-endpoint-mac.md#system-requirements) either before of after onboarding to Microsoft Defender for Endpoint.
 

@@ -2,7 +2,7 @@
 title: Get MachineAction object API
 description: Learn how to use the Get MachineAction API to retrieve a specific Machine Action by its ID in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, machineaction object
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020

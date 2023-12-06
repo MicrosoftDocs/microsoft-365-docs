@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
 description: Troubleshoot issues that might arise during the onboarding of devices using Security Management for Microsoft Defender for Endpoint.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -11,7 +11,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: troubleshooting
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 08/04/2023
 ---
@@ -24,7 +24,7 @@ ms.date: 08/04/2023
 
 - [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 

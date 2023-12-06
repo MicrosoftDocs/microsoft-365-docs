@@ -2,7 +2,7 @@
 title: View and organize the Microsoft Defender for Endpoint Alerts queue
 description: Learn about how the Microsoft Defender for Endpoint alerts queues work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
 - mde-edr
 ms.topic: conceptual
 ms.date: 03/27/2020
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 
@@ -93,7 +93,7 @@ You can filter the alerts based on the following Service sources:
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 - Microsoft Defender for Endpoint
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Defender for Office 365
 - App Governance
 - Microsoft Entra ID Protection
@@ -119,7 +119,7 @@ You can filter the alerts based on the following policies:
 |Custom detection|CustomDetection|
 |Custom TI|CustomerTI|
 |EDR|WindowsDefenderAtp|
-|Microsoft 365 Defender|MTP|
+|Microsoft Defender XDR|MTP|
 |Microsoft Defender for Office 365|OfficeATP|
 |Microsoft Defender Experts|ThreatExperts|
 |SmartScreen|WindowsDefenderSmartScreen|

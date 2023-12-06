@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.reviewer: mavel
 ---
@@ -26,7 +26,7 @@ ms.reviewer: mavel
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -54,9 +54,28 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **macOS Deprecation**
 
-Microsoft Defender for Endpoint no longer supports these macOS as Apple ended support for:
-- Big Sur (11) in December 2023.
-- Catalina (10.15) in December 2022.
+> [!NOTE]
+> Microsoft Defender for Endpoint no longer supports these macOS as Apple ended support for:
+> - Big Sur (11) in December 2023.
+> - Catalina (10.15) in December 2022.
+
+### Nov-2023 (Build: 101.23092.0007 | Release version: 20.123092.7.0)
+
+| Build:             | **101.23092.0007**         |
+|--------------------|----------------------------|
+| Release version:   | **20.123092.7.0**          |
+| Engine version:    | **1.1.23090.2005**         |
+| Signature version: | **1.399.1196.0**           |
+
+##### What's new
+
+- [[device control](mac-device-control-overview.md)] set policy for DCv2 via 'mdatp config'
+- Configuration loading - error logged to /Library/Logs/Microsoft/mdatp/microsoft_defender_core_err.log includes bad property name in JSON
+
+> [!NOTE]
+> If you use Device Control v1, consider migrating to v2 (that includes all v1 functionality and more).
+> Device Control v1 will be considered deprecated in the nearest future.
+> To check, run the [mdatp health --details device_control](mac-device-control-overview.md#status) command, and inspect the `active` property, it should not contain "v1".
 
 ### Oct-2023 (Build: 101.23082.0018  | Release version: 20.123082.18.0)
 
@@ -65,6 +84,8 @@ Microsoft Defender for Endpoint no longer supports these macOS as Apple ended su
 | Release version:   | **20.123082.18.0**         |
 | Engine version:    | **1.1.23070.1002**         |
 | Signature version: | **1.399.384.0**            |
+
+##### What's new
 
 - [[device control](mac-device-control-overview.md)] Detailed status with `mdatp health --details device_control`
 - [[device control](mac-device-control-overview.md)] `mdatp config device-control policy` to [set policy](mac-device-control-manual.md) on a non-managed machine

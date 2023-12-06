@@ -4,8 +4,8 @@ description: Learn about events from cloud apps and services in the CloudAppEven
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, CloudAppEvents, Defender for Cloud Apps
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -28,7 +28,7 @@ ms.date: 02/16/2021
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 The `CloudAppEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving accounts and objects in Office 365 and other [cloud apps and services](#apps-and-services-covered). Use this reference to construct queries that return information from this table.
 
@@ -41,7 +41,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | `datetime` | Date and time when the event was recorded |
 | `ActionType` | `string` | Type of activity that triggered the event |
 | `Application` | `string` | Application that performed the recorded action |
-| `ApplicationId` | `string` | Unique identifier for the application |
+| `ApplicationId` | `int` | Unique identifier for the application |
 | `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `AccountId` | `string` | An identifier for the account as found by Microsoft Defender for Cloud Apps. Could be Microsoft Entra ID, user principal name, or other identifiers. |
 | `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
@@ -89,7 +89,7 @@ The **CloudAppEvents** table contains enriched logs from all SaaS applications c
 - GitHub
 - Atlassian
 
-Connect supported cloud apps for instant, out-of-the-box protection, deep visibility into the app’s user and device activities, and more. For more information, see [Protect connected apps using cloud service provider APIs](/defender-cloud-apps/protect-connected-apps).
+Connect supported cloud apps for instant, out-of-the-box protection, deep visibility into the app’s user and device activities, and more. For more information, see [Protect connected apps using cloud service provider APIs](/defender-cloud-apps/protect-connected-apps).
 
 ## Related topics
 

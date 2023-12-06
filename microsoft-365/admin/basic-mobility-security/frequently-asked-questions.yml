@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 06/18/2021
+  ms.date: 10/25/2023
   title: "Basic Mobility and Security frequently-asked questions (FAQs)"
   f1.keywords:
   - NOCSH
@@ -17,6 +17,7 @@ metadata:
   - M365-subscription-management
   - Adm_O365
   - Adm_TOC
+  - basic-mobility-security
   ms.custom:
   - AdminSurgePortfolio
   - admindeeplinkEXCHANGE

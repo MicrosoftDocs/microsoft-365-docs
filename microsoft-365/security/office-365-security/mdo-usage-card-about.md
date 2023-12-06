@@ -16,20 +16,20 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom:
-description: Learn about your organization’s active usage of Microsoft Defender for Office 365 licenses versus the actual number of licenses purchased.
+description: Learn about your organization's active usage of Microsoft Defender for Office 365 licenses versus the actual number of licenses purchased.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 06/30/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Usage card in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In Microsoft Defender for Office 365, the usage card is available to help admins and Security Operations (SecOps) teams understand their organization’s active usage of Defender for Office 365 licenses in comparison to the actual number of licenses purchased.
+In Microsoft Defender for Office 365, the usage card is available to help admins and Security Operations (SecOps) teams understand their organization's active usage of Defender for Office 365 licenses in comparison to the actual number of licenses purchased.
 
 > [!NOTE]
 > The usage card is enabled for tenants with at least one paid Defender for Office 365 plan 1 (P1) or Defender for Office 365 plan 2 (P2) license.
@@ -44,9 +44,9 @@ Usage cards can help determine:
 
 ## View the usage card
 
-The usage card is available in the Microsoft 365 Defender portal at https://security.microsoft.com. Go to **Reports** > **Email & collaboration reports and insights**. You’ll find Defender for Office 365 usage under the **Email & collaboration insights** section. Or, to go directly to the **Email & collaboration reports and insights** page, use https://security.microsoft.com/emailandcollabreport.
+The usage card is available in the Microsoft Defender portal at https://security.microsoft.com. Go to **Reports** > **Email & collaboration reports and insights**. You'll find Defender for Office 365 usage under the **Email & collaboration insights** section. Or, to go directly to the **Email & collaboration reports and insights** page, use https://security.microsoft.com/emailandcollabreport.
 
-In the usage card for the global and billing admins, there’s a **Add more licenses** link at the bottom of the card, which takes you to the billing portal to purchase more licenses for your organization.
+In the usage card for the global and billing admins, there's a **Add more licenses** link at the bottom of the card, which takes you to the billing portal to purchase more licenses for your organization.
 
 :::image type="content" source="../../media/usage-card-mdo.png" alt-text="Screenshot of the usage card in Defender for Office 365." lightbox="../../media/usage-card-mdo.png":::
 

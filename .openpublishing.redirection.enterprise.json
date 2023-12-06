@@ -752,37 +752,37 @@
      },
      {
         "source_path":"microsoft-365/enterprise/microsoft-365-policies-configurations.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/microsoft-365-policies-configurations",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/identity-access-prerequisites.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/identity-access-prerequisites",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-prereq",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/identity-access-policies.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/identity-access-policies",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/identity-access-policies-guest-access.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/identity-access-policies-guest-access",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-guest-access",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/teams-access-policies.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/teams-access-policies",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-teams",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/secure-email-recommended-policies.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/secure-email-recommended-policies",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-exchange",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/enterprise/sharepoint-file-access-policies.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/sharepoint-file-access-policies",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-sharepoint",
         "redirect_document_id":false
      },
      {
@@ -1039,6 +1039,61 @@
         "source_path":"microsoft-365/enterprise/lang-service-health.md",
         "redirect_url":"/microsoft-365/enterprise/view-service-health",
         "redirect_document_id":true
-     }
+     },
+     {
+      "source_path":"microsoft-365/enterprise/moving-data-to-new-datacenter-geos.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-overview#migrationsmoves",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/request-your-data-move.md",
+      "redirect_url":"/microsoft-365/enterprise/plan-for-multi-geo",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/routing-with-expressroute.md",
+      "redirect_url":"/microsoft-365/eenterprise/azure-expressroute",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/managing-expressroute-for-connectivity.md",
+      "redirect_url":"/microsoft-365/eenterprise/azure-expressroute",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/bgp-communities-in-expressroute.md",
+      "redirect_url":"/microsoft-365/eenterprise/azure-expressroute",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/network-planning-with-expressroute.md",
+      "redirect_url":"/microsoft-365/eenterprise/azure-expressroute",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/EU-data-storage-locations.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-overview",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/m365-dr-placeholder.md",
+      "redirect_url":"/microsoft-365/enterprise/advanced-data-residency",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/data-move-faq.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-legacy-move-program#data-move-general-faq",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/during-and-after-your-data-move.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-legacy-move-program",
+      "redirect_document_id":false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-modern-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/microsoft-365-client-support-multi-factor-authentication",
+      "redirect_document_id": false
+   }
   ]
 }

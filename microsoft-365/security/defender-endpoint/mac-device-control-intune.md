@@ -2,7 +2,7 @@
 title: Deploy and manage Device Control using Intune 
 description: Learn how to deploy and manage device control policies using Intune.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, macOS, device, control, usb, removable, media, intune
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 03/31/2023
 ---
@@ -29,7 +29,7 @@ ms.date: 03/31/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 

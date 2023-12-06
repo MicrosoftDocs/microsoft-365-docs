@@ -2,7 +2,7 @@
 title: Collaborate with guests in a site (IT Admins)
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 07/19/2023
 audience: ITPro
 ms.topic: article
@@ -36,7 +36,7 @@ This video shows the configuration steps described in this document.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44Llg?autoplay=false]
 
-## Azure external collaboration settings
+## Microsoft Entra ID external collaboration settings
 
 Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Microsoft Entra ID](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Microsoft Entra ID, this setting overrides any sharing settings that you configure in Microsoft 365.
 
@@ -54,7 +54,7 @@ To set external collaboration settings
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
-If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
+If you work with guests from multiple organizations, you might want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
 
 ## Microsoft 365 Groups guest settings
 

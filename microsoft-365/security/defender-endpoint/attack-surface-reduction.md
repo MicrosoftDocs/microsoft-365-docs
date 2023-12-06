@@ -1,28 +1,22 @@
 ---
 title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect devices with malware.
-keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.service: microsoft-365-security
-ms.subservice: mde
-ms.pagetype: security
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
-ms.custom:
-- mde-asr
-- admindeeplinkDEFENDER
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 - mde-asr
 search.appverid: met150
-ms.date: 1/11/2023
+ms.date: 11/22/2023
 ---
 
 # Attack surface reduction rules overview
@@ -31,7 +25,7 @@ ms.date: 1/11/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -120,7 +114,7 @@ Whenever an attack surface reduction rule is triggered, a notification is displa
 
 Also, when certain attack surface reduction rules are triggered, alerts are generated.
 
-Notifications and any alerts that are generated can be viewed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+Notifications and any alerts that are generated can be viewed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 For specific details about notification and alert functionality, see: [Per rule alert and notification details](attack-surface-reduction-rules-reference.md#per-asr-rule-alert-and-notification-details), in the article **Attack surface reduction rules reference**.
 
@@ -139,6 +133,7 @@ You can set attack surface reduction rules for devices that are running any of t
 - Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
+- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022) 
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh801901(v=ws.11))
@@ -149,15 +144,17 @@ You can set attack surface reduction rules for devices that are running any of t
 Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), if you have Windows E5, you get advanced management capabilities. The advanced capabilities - available only in Windows E5 - include:
 
 - The monitoring, analytics, and workflows available in [Defender for Endpoint](microsoft-defender-endpoint.md)
-- The reporting and configuration capabilities in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+- The reporting and configuration capabilities in [Microsoft Defender XDR](/microsoft-365/security/defender/overview-security-center).
 
 These advanced capabilities aren't available with a Windows Professional or Windows E3 license. However, if you do have those licenses, you can use Event Viewer and Microsoft Defender Antivirus logs to review your attack surface reduction rule events.
 
-## Review attack surface reduction events in the Microsoft 365 Defender portal
+<a name='review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal'></a>
+
+## Review attack surface reduction events in the Microsoft Defender portal
 
 Defender for Endpoint provides detailed reporting for events and blocks as part of alert investigation scenarios.
 
-You can query Defender for Endpoint data in [Microsoft 365 Defender](microsoft-defender-endpoint.md) by using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-query-language).
+You can query Defender for Endpoint data in [Microsoft Defender XDR](microsoft-defender-endpoint.md) by using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-query-language).
 
 Here's an example query:
 

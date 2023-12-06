@@ -1,10 +1,9 @@
 ---
-title: Pilot Microsoft Defender for Cloud Apps with Microsoft 365 Defender
-description: Set up your Microsoft 365 Defender trial lab or pilot environment to test and experience the security solution designed to protect devices, identity, data, and applications.
+title: Pilot Microsoft Defender for Cloud Apps with Microsoft Defender XDR
+description: Set up your Microsoft Defender XDR trial lab or pilot environment to test and experience the security solution designed to protect devices, identity, data, and applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -26,11 +25,11 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Pilot Microsoft Defender for Cloud Apps with Microsoft 365 Defender
+# Pilot Microsoft Defender for Cloud Apps with Microsoft Defender XDR
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 This article is [Step 3 of 3](eval-defender-mcas-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Cloud Apps. For more information about this process, see the [overview article](eval-defender-mcas-overview.md).
 
@@ -60,7 +59,7 @@ You can begin to manage these apps by executing the following tasks:
 
 For more information, including supported apps and clients, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/proxy-intro-aad). 
 
-For example policies, see [Recommended Microsoft Defender for Cloud Apps policies for SaaS apps](../office-365-security/mcas-saas-access-policies.md). These policies build on a set of [common identity and device access policies](../office-365-security/microsoft-365-policies-configurations.md) that are recommended as a starting point for all customers. 
+For example policies, see [Recommended Microsoft Defender for Cloud Apps policies for SaaS apps](../office-365-security/zero-trust-identity-device-access-policies-mcas-saas.md). These policies build on a set of [common identity and device access policies](../office-365-security/zero-trust-identity-device-access-policies-overview.md) that are recommended as a starting point for all customers. 
 
 ## Step 3: Try out capabilities—Walk through tutorials for protecting your environment 
 
@@ -81,9 +80,9 @@ For more information on advanced hunting in Microsoft Defender for Cloud Apps da
 
 ## Next steps
 
-[Investigate and respond using Microsoft 365 Defender in a pilot environment](eval-defender-investigate-respond.md)
+[Investigate and respond using Microsoft Defender XDR in a pilot environment](eval-defender-investigate-respond.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

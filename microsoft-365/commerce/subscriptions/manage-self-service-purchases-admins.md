@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: prlachhw, pablom
+ms.reviewer: prlachhw, socheng
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business 
@@ -20,6 +20,7 @@ ms.custom:
   - AdminSurgePortfolio
   - okr_smb
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 search.appverid:
 - MET150
 description: "Learn how admins can use the Microsoft 365 admin center to manage self-service purchases and trials made by users in their organization."

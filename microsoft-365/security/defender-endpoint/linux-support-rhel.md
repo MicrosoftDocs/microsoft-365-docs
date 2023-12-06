@@ -4,7 +4,7 @@ ms.reviewer:
 description: Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, cloud, connectivity, communication
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +18,7 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 ms.date: 10/06/2021
 ---
 
@@ -30,7 +30,7 @@ ms.date: 10/06/2021
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

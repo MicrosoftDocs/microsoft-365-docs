@@ -1,11 +1,11 @@
 ---
-title: Upgrade your Office 2010 to Microsoft 365 - Microsoft 365 admin
+title: Upgrade your Microsoft 365 for business users to the latest Microsoft 365 apps - Microsoft 365 admin
 f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/19/2020
+ms.date: 11/21/2023
 audience: Admin
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
@@ -33,7 +33,7 @@ ms.topic: article
 
 ## Get ready to upgrade to Microsoft 365
 
-As an admin, you control what version of the Microsoft 365 apps people in your organization can install. We highly recommend that you help users in your organization running older versions such as [Office 2010](#office-2010-reaches-end-of-support), Office 2013, or Office 2016 upgrade to the latest version of the Microsoft 365 apps to take advantage of security and productivity improvements.
+As an admin, you control what version of the Microsoft 365 apps people in your organization can install. We highly recommend that you help users in your organization running older versions such as Office 2013 or Office 2016 upgrade to the latest version of the Microsoft 365 apps to take advantage of security and productivity improvements.
 
 ### Is this the right topic for you?
 

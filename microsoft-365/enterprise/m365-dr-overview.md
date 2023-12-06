@@ -28,11 +28,11 @@ In order to promote clarity in the capability descriptions on data residency fun
 | Term | Definition |
 |:-----|:-----|
 |Macro Region Geography  <br/> |Macro Region Geography 1 – EMEA, Macro Region Geography 2 – Asia Pacific, Macro Region Geography 3 - Americas  <br/> |
-|Macro Region Geography 1 - EMEA  <br/> |Data centers in Austria, Finland, France, Ireland, Italy, Netherlands, Poland, Sweden  <br/> |
-|Macro Region Geography 2 - Asia Pacific  <br/> |Data centers in Hong Kong Special Administrative Region, Japan, Malaysia, Singapore, South Korea  <br/> |
+|Macro Region Geography 1 - EMEA  <br/> |Data centers in Austria, Finland, France, Ireland, Israel, Italy, Netherlands, Poland, Sweden  <br/> |
+|Macro Region Geography 2 - Asia Pacific  <br/> |Data centers in Australia, Hong Kong Special Administrative Region, Japan, Malaysia, Singapore, South Korea  <br/> |
 |Macro Region Geography 3 - Americas  <br/> |Data centers in Brazil, Chile, United States  <br/> |
-|Local Region Geography  <br/> |Australia, Brazil, Canada, France, Germany, India, Italy, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom  <br/> |
-|Expanded Local Region Geography  <br/> | Future planned data center regions: Indonesia, Israel, Spain, Mexico, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan, Saudi Arabia  <br/> |
+|Local Region Geography  <br/> |Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom  <br/> |
+|Expanded Local Region Geography  <br/> | Future planned data center regions: Indonesia, Spain, Mexico, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan, Saudi Arabia  <br/> |
 |Geography  <br/> |_Local Region Geography, Expanded Local Region Geography_, or _Macro Region Geography_  <br/> |
 |Satellite Geography  <br/> |If a customer subscribes to the Multi Geo service, then they can cause defined user customer data to be stored in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_  <br/> |
 |Microsoft Entra ID  <br/> |Microsoft Entra ID  <br/> |
@@ -86,7 +86,7 @@ Some examples:
 
 ### Migrations/Moves
 
-Once a Microsoft 365 service provisions a _Tenant_ into a particular _Geography_, there are five ways that this data could move to another _Geography_:
+Once a Microsoft 365 service provisions a _Tenant_ into a particular _Geography_, there are three ways that this data could move to another _Geography_:
 
 1. The Microsoft 365 service decides to move the data to a new _Geography_ for service operations reasons, if there are no other policies in place to prevent the move.
 1. If a _Tenant_ subscribes to the _Multi-Geo_ service, then _Tenants_ user's data for Exchange Online, SharePoint Online and Microsoft Teams can be assigned to _Satellite Geographies_.
@@ -131,6 +131,7 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 | France  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
 | Germany  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
 | India  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
+| Israel  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
 | Italy  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
 | Japan  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
 | Poland  | M-A  | M-A  | M-A  | A  | A  | A  | A  | A  |
@@ -156,7 +157,7 @@ The following Regional Geographies can store data at rest.
 
 | Regional Geographies | Locations where customer data may be stored |
 |---------|---------|
-|Macro Region Geography 1 - EMEA (Europe, Middle East and Africa) |  Austria, Finland, France, Ireland, Italy, Netherlands, Poland, Sweden  |
+|Macro Region Geography 1 - EMEA (Europe, Middle East and Africa) |  Austria, Finland, France, Ireland, Israel, Italy, Netherlands, Poland, Sweden  |
 |Macro Region Geography 2 - Asia Pacific |  Hong Kong SAR, Japan, Malaysia, Singapore, South Korea  |
 |Macro Region Geography 3 - Americas | Brazil, Chile, United States  |
 
@@ -167,10 +168,11 @@ The following Regional Geographies can store data at rest.
 |Australia   |Sydney, Melbourne   |
 |Brazil   |Rio, Campinas   |
 |Canada      |Quebec City, Toronto    |
-|European Union      |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam), Poland (Warsaw), (Sweden (Gävle, Sandviken, Staffanstorp)     |
+|European Union      |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Italy (Milan), Netherlands (Amsterdam), Poland (Warsaw), Sweden (Gävle, Sandviken, Staffanstorp)     |
 |France      |Paris, Marseille     |
 |Germany     |Frankfurt, Berlin       |
 |India   |Chennai, Mumbai, Pune        |
+|Israel   |Tel Aviv        |
 |Italy   |Milan        |
 |Japan     |Osaka, Tokyo      |
 |South Korea   |Busan, Seoul        |

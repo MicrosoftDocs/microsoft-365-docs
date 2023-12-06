@@ -17,7 +17,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/19/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Remediate malicious email delivered in Office 365
@@ -27,11 +27,11 @@ appliesto:
 Remediation means to take a prescribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through zero-hour auto purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Microsoft Defender for Office 365 Plan 2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
 
 > [!NOTE]
-> To remediate malicious email, security teams need the *Search and Purge* role assigned to them. Role assignment is done through [permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+> To remediate malicious email, security teams need the *Search and Purge* role assigned to them. Role assignment is done through [permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
 
 ## What you need to know before you begin
 
-Admins can take required action on emails, but to get those actions approved, they must have the *Search and Purge* role assigned to them in the **Email & collaboration** permissions in the Microsoft 365 Defender portal. Without the *Search and purge"*role added to one of the role-groups, they won't be able to execute the action.
+Admins can take required action on emails, but to get those actions approved, they must have the *Search and Purge* role assigned to them in the **Email & collaboration** permissions in the Microsoft Defender portal. Without the *Search and purge"*role added to one of the role-groups, they won't be able to execute the action.
 
 Because email actions create automated investigations in the backend, you need to enable *Automated Investigation*. Go to **Settings** \> **Endpoints** \> **Advanced features** and turn on **Automated Investigation**.
 
@@ -60,8 +60,7 @@ Once emails are selected through Explorer, you can start remediation by taking d
 
 **Automated investigation and response** actions are triggered by alerts or by security operations teams from Explorer. These may include recommended remediation actions that must be approved by a security operations team. These actions are included on the **Action** tab in the automated investigation.
 
-> [!div class="mx-imgBorder"]
-> [![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+:::image type="content" source="../../media/tp-RemediationArticle3.png" alt-text="Email with malware on the Zapped page showing the time of ZAP execution." lightbox="../../media/tp-RemediationArticle3.png":::
 
 All remediation (direct approvals) created in Explorer, Advanced hunting, or through Automated investigation are displayed in the Action center at **Actions & Submissions** \> **Action center** \> **History** tab (<https://security.microsoft.com/action-center/history>).
 
