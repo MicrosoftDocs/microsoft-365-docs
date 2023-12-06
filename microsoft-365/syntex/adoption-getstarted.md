@@ -105,10 +105,9 @@ If you’re not sure where to start, consider checking out the [Syntex site temp
 
 ## Identify roles and responsibilities
 
-When determining who in your organization will need to be involved in your Syntex projects, it will help to map out the features required. The following roles might be involved, depending on the features you select to use.
+When determining who in your organization will need to be involved in your Syntex projects, it will help to map out the features required. The roles in the following table might be involved, depending on the features you select to use.
 
-For example, if you are focused on document processing, then the SharePoint administrator role will be key in creating and managing content centers needed to manage models at scale. If you’re focused on features like OCR and compliance, then Purview Compliance administrator.
-If taxonomy tagging will be pursued, it’s important to understand your corporate term store management or to determine if you’ll use a content center.
+For example, if you are focused on document processing, then the SharePoint administrator role will be key in creating and managing content centers needed to manage models at scale. If you’re focused on features like OCR and compliance, then the Purview Compliance administrator will be needed. If taxonomy tagging will be pursued, it’s important to understand your corporate term store management or to determine if you’ll use a content center.
 
 |Admin role  |Designation  |Responsibilities  |
 |---------|---------|---------|
