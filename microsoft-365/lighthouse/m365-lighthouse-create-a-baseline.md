@@ -52,16 +52,6 @@ To clone an existing baseline:
 > [!NOTE]
 > The new baseline will be the name of the baseline from which it was cloned with "(1)" added to the end.
 
-To import a baseline:
-
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
-
-2. Select **Import**.
-
-3. Select the desired baseline file.
-
-4. Select **Import**.
-
 To create a new baseline:
 
 1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
@@ -72,8 +62,26 @@ To create a new baseline:
 
 4. Select **Create**.
 
+To import a baseline:
+
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
+
+2. Select **Import**.
+
+3. Select the desired baseline file.
+
+4. Select **Import**.
+
 > [!NOTE]
 > Baselines can be edited, deleted, and exported from the page. The Default baseline can't be edited or deleted.
+>
+> All baselines, except for the default baseline, can be exported from Lighthouse as JSON files. Baselines can also be imported into Lighthouse by selecting a JSON file that has been:
+>
+>- Extracted from Lighthouse
+>- Extracted from Lighthouse and then edited
+>- Created outside of Lighthouse
+>
+>For more information, see [View formatted JSON](/microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer).
 
 ## Add deployment task to a baseline
 
