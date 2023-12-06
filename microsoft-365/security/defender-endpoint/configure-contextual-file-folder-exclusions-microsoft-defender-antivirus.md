@@ -84,6 +84,10 @@ The following string excludes "c:\documents\design.doc" only if it's scanned (on
 
 `c:\documents\design.doc\:{Process:"winword.exe"}`
 
+File and folder paths may contain wildcards, as in the following example:
+
+`c:\*\*.doc\:{PathType:file,ScanTrigger:OnDemand}`
+
 The process image path may contain wildcards, as in the following example:
 
 `c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
@@ -96,11 +100,14 @@ You can restrict exclusions to only apply if the target is a file or a folder by
 
 If you don't specify any other options, the file/folder is excluded from all types of scans, _and_ the exclusion applies regardless of whether the target is a file or a folder. For more information about customizing exclusions to only apply to a specific scan type, see [Scan type restriction](#scan-type-restriction).
 
+> [!NOTE]  
+> Wildcards are supported in file/folder exclusions.
+
 #### Folders
 
 To ensure an exclusion only applies if the target is a folder, not a file you can use the **PathType:folder** restriction. For example:
 
-`C:\documents\:{PathType:folder}`
+`C:\documents\*\:{PathType:folder}`
 
 #### Files
 
@@ -108,7 +115,7 @@ To make sure an exclusion only applies if the target is a file, not a folder you
 
 Example:
 
-`C:\documents\database.mdb\:{PathType:file}`
+`C:\documents\*.mdb\:{PathType:file}`
 
 ### Scan type restriction
 
@@ -153,9 +160,12 @@ This restriction allows you to define that an exclusion should only apply when a
 > Using a large amount of process exclusion restrictions on a machine may adversely affect performance.  
 > In addition, because you restricted the exclusion to a certain process or processes, other active processes (such as indexing, backup, updates) can still trigger file scans.
 
-To exclude a file or folder only when accessed by a specific process, create a normal file or folder exclusion and add the process to restrict the exclusion to:  
+> [!NOTE]  
+> Wildcards are supported in the process name/path.
 
-`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe"}`
+To exclude a file or folder only when accessed by a specific process, create a normal file or folder exclusion and add the process to restrict the exclusion to. For example:  
+
+`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe", Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
 
 ### How to configure
 
