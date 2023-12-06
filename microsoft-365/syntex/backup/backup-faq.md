@@ -36,7 +36,7 @@ Versions give individual users a way to restore files or sites to prior points i
 
 #### Why don’t legal holds solve the problem of keeping all versions of items for recovery?
 
-Legal holds retain data, but that feature is optimized for export (fr example, via eDiscovery), not for mass restore. Microsoft 365 Backup gives the right enhanced restore tooling for ransomware and accidental/malicious deletions at scale, plus optimized performance for those scenarios.
+Legal holds retain data, but that feature is optimized for export (for example, via eDiscovery), not for mass restore. Microsoft 365 Backup gives the right enhanced restore tooling for ransomware and accidental/malicious deletions at scale, plus optimized performance for those scenarios.
 
 #### What mailbox changes are “backed up”?
 
