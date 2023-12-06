@@ -27,7 +27,7 @@ ms.date: 06/14/2023
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
