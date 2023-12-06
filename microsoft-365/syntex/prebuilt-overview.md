@@ -2,13 +2,14 @@
 title: Overview of prebuilt document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 5/12/2023
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -20,6 +21,9 @@ description: Learn about prebuilt models in Microsoft Syntex.
 # Overview of prebuilt document processing in Microsoft Syntex
 
 In addition to [custom models](model-types-overview.md#custom-models), Microsoft Syntex provides *prebuilt models* to automate the extraction of information.
+
+> [!NOTE]
+> Microsoft respects the privacy and ownership of data you use to train and process models in Syntex. None of your organization's data is used or transferred by Microsoft to train AI models, large-language models, or any other models. Your data remains securely within your organization’s tenant. For more information, see [Microsoft data protection and privacy](https://www.microsoft.com/en-us/trust-center/privacy).
 
 ## Introduction to prebuilt models
 

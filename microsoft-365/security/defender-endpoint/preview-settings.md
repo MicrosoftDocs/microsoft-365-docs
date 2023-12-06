@@ -4,7 +4,7 @@ description: Turn on the preview experience in Microsoft Defender for Endpoint t
 keywords: advanced features, settings, block file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,6 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 ms.date: 12/18/2020
 ---
 

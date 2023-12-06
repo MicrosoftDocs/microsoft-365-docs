@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 11/14/2023
+ms.date: 12/04/2023
 ---
 # Configure the deception capability in Microsoft Defender XDR
 
@@ -68,7 +68,7 @@ To create a deception rule, perform the following steps:
 :::image type="content" source="../../media/deception/fig8-deception.png" alt-text="Screenshot of the deception rule decoy page" lightbox="../../media/deception/fig8-deception.png":::
 7. You can edit a decoy account name, host name, and the IP address where the lures are planted in the decoys section. When adding IP addresses, we recommend using a sandbox IP if it exists in the organization. Avoid using commonly used addresses, for example, *127.0.0.1*, *10.0.0.1*, and the like.
 :::image type="content" source="../../media/deception/fig9-deception.png" alt-text="Screenshot of editing a decoy host" lightbox="../../media/deception/fig9-deception.png":::
-:::image type="content" source="../../media/deception/fig10-deception.png" alt-text="Screenshot of editing a decoy account" lightbox="../../media/deception/fig10-deception.png":::
+:::image type="content" source="../../media/deception/fig10-2-deception.png" alt-text="Screenshot of editing a decoy account" lightbox="../../media/deception/fig10-2-deception.png":::
 > [!CAUTION]
 > To avoid false positive alerts, we highly recommend creating unique user accounts and host names when creating and editing decoy accounts and hosts. Ensure that created user accounts and hosts are unique for each deception rule and that these accounts and hosts do not exist in the organization's directory.
 

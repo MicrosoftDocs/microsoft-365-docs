@@ -2,7 +2,7 @@
 title: Network device discovery and vulnerability management
 description: Security recommendations and vulnerability detection are now available for operating systems of switches, routers, WLAN controllers, and firewalls.
 keywords: network devices, network devices vulnerability detection, operating systems of switches, routers, WLAN controllers, and firewalls
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,6 @@ ms.collection:
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 03/30/2021
 ---
@@ -61,10 +60,11 @@ Once the network devices are discovered and classified, security administrators 
 The following operating systems are currently supported:
 
 - Cisco IOS, IOS-XE, NX-OS
+- Fortinet FortiOS
 - Juniper JUNOS
+- HPE Aruba Networking ArubaOS, AOS-CX
 - HPE ArubaOS, Procurve Switch Software
 - Palo Alto Networks PAN-OS
-- Fortinet FortiOS
 
 More networking vendors and OS will be added over time, based on data gathered from customer usage. Therefore, you're encouraged to configure all your network devices, even if they're not specified in this list.
 

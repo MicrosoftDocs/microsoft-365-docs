@@ -1,11 +1,7 @@
 ---
 title: Manual deployment for Microsoft Defender for Endpoint on macOS
 description: Install Microsoft Defender for Endpoint on macOS manually, from the command line.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, monterey, ventura, mde for mac
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -17,9 +13,9 @@ ms.collection:
 - mde-macos
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/20/2023
 ---
 
 # Manual deployment for Microsoft Defender for Endpoint on macOS
@@ -117,25 +113,25 @@ To complete this process, you must have admin privileges on the device.
 
 1. To grant consent, open **System Preferences** \> **Security & Privacy** \> **Privacy** \> **Full Disk Access**. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
 
-2. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+1. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-    1. Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
+1. Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
 
-        ```bash
-        mdatp health --field real_time_protection_enabled
-        ```
+     ```bash
+     mdatp health --field real_time_protection_enabled
+     ```
 
-    1. Open a Terminal window. Copy and execute the following command:
+      1. Open a Terminal window. Copy and execute the following command:
 
-        ```bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
-        ```
+    ```bash
+    curl -o ~/Downloads/eicar.com.txt https://secure.eicar.org/eicar.com.txt 
+    ```
 
-    1. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
+1. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
 
-        ```bash
-        mdatp threat list
-        ```
+     ```bash
+     mdatp threat list
+     ```
 
 3. Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
@@ -159,7 +155,7 @@ To complete this process, you must have admin privileges on the device.
    >
    > > **"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.**<br/>
    > > macOS cannot verify that this app is free from malware.<br/>
-   > > **\[Move to Trash\]** **\[Cancel\]**
+   > > **[Move to Trash]** **[Cancel]**
 
 7. Click **Cancel**.
 

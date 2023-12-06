@@ -2,7 +2,7 @@
 title: Pay-as-you-go services and pricing for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires, kkameth
 ms.date: 08/01/2023
 audience: admin
