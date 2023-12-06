@@ -27,7 +27,7 @@ ms.date: 04/06/2023
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
 
-The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases.
+The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases of Microsoft or select third party offers.
 
 You can use the **MSCommerce** PowerShell module to:
 
@@ -117,6 +117,24 @@ The following table lists the available products and their **ProductId**. It als
 
 *These IDs have changed. If you previously blocked products using the old IDs, they're automatically blocked using the new IDs. No other work is required.
 
+## View a list of self-service purchase third party offer types and their status
+
+To view a list of all available self-service purchase third party offer types and the status of each, run the following command:
+
+```powershell
+Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase -Scope OfferType
+```
+
+The following table lists the available third-party offer types. These offer types can be enabled or disabled for self-service purchase.
+
+| Offer Type| Id |
+|-----------------------------|--------------|
+| Software as a Service | SaaS |
+| Power BI Visuals | POWERBIVISUALS |
+| Dynamics 365 Dataverse Apps | DYNAMICSCE |
+| Dynamics 365 Business Central | DYNAMICSBC |
+
+
 ## View or set the status for AllowSelfServicePurchase
 
 You can set the **Value** parameter for **AllowSelfServicePurchase** to allow or prevent users from making a self-service purchase. You can also use the **OnlyTrialsWithoutPaymentMethod** value to allow users to try products that have no payment required trials. Refer to the product list above to see which products have these trials enabled. Users can only buy the product after the trial is over if **AllowSelfServicePurchase** is enabled.
@@ -154,6 +172,24 @@ To allow users to try a specific product without a payment method, run the follo
 
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "OnlyTrialsWithoutPaymentMethod" 
+```
+
+To get the policy setting for a specific third-party offer type, run the following command:
+
+```powershell
+Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType <ID>
+```
+
+To enable the policy setting for a specific third-party offer type, run the following command:
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType <ID> -Enabled True
+```
+
+To disable the policy setting for a specific third-party offer type, run the following command:
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType <ID> -Enabled False
 ```
 
 ## Example script to disable AllowSelfServicePurchase
