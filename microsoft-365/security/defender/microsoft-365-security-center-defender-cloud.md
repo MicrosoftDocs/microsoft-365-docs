@@ -70,7 +70,7 @@ Microsoft Sentinel customers [integrating Microsoft Defender XDR incidents](/azu
 
 - Connect the **Tenant-based Microsoft Defender for Cloud (Preview)** connector to synchronize collection of alerts from all your subscriptions with tenant-based Defender for Cloud incidents that are streaming through the Microsoft Defender XDR Incidents connector.
 - Disconnect the **Subscription-based Microsoft Defender for Cloud (Legacy)** alerts connector to prevent alert duplicates.
-- Turn off any analytics rules used to create incidents from Defender for Cloud alerts. [These could be *Scheduled* (regular query-type) or *Microsoft security* (incident creation) rules](/azure/sentinel/detect-threats-built-in). Defender for Cloud Incidents are created automatically in the Defender portal and synchronized with Microsoft Sentinel.
+- Turn off any analytics rules&mdash;either [*Scheduled* (regular query-type) or *Microsoft security* (incident creation)](/azure/sentinel/detect-threats-built-in) rules&mdash;used to create incidents from Defender for Cloud alerts. Defender for Cloud Incidents are created automatically in the Defender portal and synchronized with Microsoft Sentinel.
 - If necessary, [use automation rules](/azure/sentinel/create-manage-use-automation-rules) to close noisy incidents, or use the [built-in tuning capabilities in the Defender portal](investigate-alerts.md#tune-an-alert) to suppress certain alerts.
 
 The following change should also be noted:
