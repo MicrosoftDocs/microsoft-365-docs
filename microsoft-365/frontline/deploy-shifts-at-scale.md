@@ -89,7 +89,7 @@ You can choose to allow schedule owners to create and manage schedule groups or 
 1. In the **Group ID** box, enter the Group ID of the group that contains the schedule owners in your organization.
 
     > [!NOTE]
-    > To find the group ID of a group, sign in to the [Azure portal](https://portal.azure.com/), select **Microsoft Entra ID**, and then choose **Groups**. Select the group you want, and then copy the value in the **Object Id** field.
+    > To find the Group ID of a group, sign in to the [Azure portal](https://portal.azure.com/), select **Microsoft Entra ID**, and then choose **Groups**. Select the group you want, and then copy the value in the **Object Id** field.
 
 1. Choose one of the following options to define how schedule groups are managed:
     - **Schedule groups are created and managed by schedule owners**: Your schedule owners create and manage schedule groups for their team. They can add, rename, and delete schedule groups in Shifts.
