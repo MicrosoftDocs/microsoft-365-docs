@@ -68,9 +68,7 @@ Annotation tools currently include pen and highlighter, where colors can be sele
 
 Using Syntex to automate the classification and data extraction from the content using [document processing](model-types-overview.md) and the [taxonomy tagging](taxonomy-tagging-overview.md) or [image tagging](image-tagging-overview.md) features can save time and money while minimizing risk of typos or missed information.
 
-Syntex can perform different types of tasks across your content including classification, extraction, and keywords. Classification identifies the type of content the file represents (for example, a report, an invoice, or a form). Extraction identifies information based on an entity from within a document. Keywords suggests information based on a property of or decision about a document using keywords.
-
-Syntex can perform different types of tasks across your content including classification, extraction, and keywords. The following table shows these tasks and features.
+Syntex can perform different types of tasks across your content including classification, extraction, and keywords. The following table shows these tasks and related features.
 
 |Task  |Description  |Syntex feature  |
 |---------|---------|---------|
@@ -78,27 +76,11 @@ Syntex can perform different types of tasks across your content including classi
 |Extraction         |Identifies information based on an entity from within a document     |[Structured document processing](form-processing-overview.md)<br>[Freeform document processing](form-processing-overview.md)<br>[Prebuilt document processing](prebuilt-overview.md)<br>[Optical character recognition](ocr-overview.md)    |
 |Keyword tagging    |Suggests information based on a property of or decision about a document using keywords         |[Taxonomy tagging](taxonomy-tagging-overview.md)<br>[Image tagging](image-tagging-overview.md)         |
 
-Examples of classification features:
-
-- Unstructured document processing
-
-Examples of extraction features:
-
-- Structured document processing
-- Freeform document processing
-- Prebuilt document processing
-- Optical character recognition
-
-Examples of keyword tagging features:
-
-- Taxonomy tagger
-- Image tagger
-
-The document processing models can also be used to add compliance by having them apply sensitivity labels and retention labels to content added to document libraries with models configured with them.
+The document processing models can also be used to add compliance by having them apply [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) and [retention labels](apply-a-retention-label-to-a-model.md) to content added to document libraries with models configured with them.
 
 Once the content type and metadata are available in a document library business users can perform a number of actions on the data including creating new views on the content, building reports, moving content based on certain information present using rules, and creating business process workflows for approvals, adding data to other systems, generating work orders and many other tasks that might have been done manually.
 
-[**TBD**: To learn more about how to plan for adoption of document processing, see this article.]
+[**TBD**: To learn more about how to plan for adoption of document processing, see *Manage document processing across your organization*.]
 
 ## Content discoverability through search findability and precision
 
@@ -128,8 +110,7 @@ When determining who in your organization will need to be involved in your Synte
 For example, if you are focused on document processing, then the SharePoint administrator role will be key in creating and managing content centers needed to manage models at scale. If you’re focused on features like OCR and compliance, then Purview Compliance administrator.
 If taxonomy tagging will be pursued, it’s important to understand your corporate term store management or to determine if you’ll use a content center.
 
-
-|Administrator  |Role  |Responsibilities  |
+|Admin role  |Designation  |Responsibilities  |
 |---------|---------|---------|
 |Azure Subscriptions administrator     |Microsoft Entra role         |Configure Azure subscription settings, review Azure cost management data         |
 |Purview Compliance administrator     |Microsoft Entra role         |Plan for compliance settings, such as sensitivity labels and retention policies and OCR settings          |
@@ -144,9 +125,9 @@ Planning for a deployment of Syntex involves determining which features you’ll
 
 ## Readiness checklist
 
-To get ready for implementing Syntex, you need to:
-
 ![Readiness for content understanding.](../media/content-understanding/cu-adoption-readinesschecklist.png)
+
+To get ready for implementing Syntex, you need to:
 
 1. Plan the end state
     - Plan for harnessing the value of Syntex features in areas like:
