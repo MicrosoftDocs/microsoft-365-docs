@@ -28,14 +28,13 @@ The [Shifts app](https://support.microsoft.com/office/get-started-in-shifts-5f3e
 
 To start using Shifts, frontline managers are responsible for configuring Shifts settings like enabling requests for open shifts, swap shifts, and offer shifts, time off requests, and time clock for their respective teams. Frontline managers must also create schedule groups to start creating and assigning shifts.
 
-As an admin, you can now standardize these Shifts settings across all your frontline teams and manage them centrally by deploying Shifts to your frontline teams at scale in the Teams admin center. You can select which capabilities to turn on or off and create schedule groups that will be set uniformly across all your frontline teams. Your frontline managers can start using Shifts straight out-of-the-box with minimal setup required.
+As an admin, you can now standardize these Shifts settings across all your frontline teams and manage them centrally by deploying Shifts to your frontline teams at scale in the Teams admin center. You can select which capabilities to turn on or off and create schedule groups and time-off reasons that will be set uniformly across all your frontline teams. Your frontline managers can start using Shifts straight out-of-the-box with minimal setup required.
 
 > [!IMPORTANT]
 > This feature will begin rolling out for public preview in December 2023. Capabilities to edit Shifts settings configurations after the first deployment will come soon.
 
 ## Prerequisites
 
-- Your frontline employees must have a Microsoft 365 F3, F1, E3, or E5 license. [Learn more about frontline licensing](flw-licensing-options.md).
 - You created your organization’s frontline teams through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
 - The admin running the deployment process is a Teams admin.  
 
@@ -93,14 +92,14 @@ You can choose to allow schedule owners to create and manage schedule groups or 
     > To find the group ID of a group, sign in to the [Azure portal](https://portal.azure.com/), select **Microsoft Entra ID**, and then choose **Groups**. Select the group you want, and then copy the value in the **Object Id** field.
 
 1. Choose one of the following options to define how schedule groups are managed:
-    - **Schedule groups are created and managed by schedule owners**
-    - **Schedule groups are created and managed in the Teams admin center**
+    - **Schedule groups are created and managed by schedule owners**: Your schedule owners create and manage schedule groups for their team. In Shifts, they can add, rename, and delete schedule groups.
+    - **Schedule groups are created and managed in the Teams admin center**: You create and manage the schedule group structure for Shifts. Your schedule owners won't be able to add, rename, or delete schedule groups. With this option, you can standardize schedule groups across teams, which allows for automating workflows in Shifts across different teams. 
 1. If you chose the option to create and manage schedule groups in the Teams admin center, select **Add** to add schedule groups.
 
     :::image type="content" source="media/dsas-add-schedule-group.png" alt-text="Screenshot of the Review and finish setup page, showing a summary of the selected settings. "lightbox="media/dsas-add-schedule-group.png":::
 
     For each schedule group that you create:
-    1. Give it a unique name. It can’t be longer than 40 characters. This is the name that frontline managers and workers see in the Shifts schedule.  
+    1. Give it a unique name. It can’t be longer than 40 characters. This name is what frontline managers and workers see in the Shifts schedule.  
     1. Choose an icon.
     1. Enter a unique code. The code can be up to 100 alphanumeric characters long.
 1. When you're done, select **Next**.
