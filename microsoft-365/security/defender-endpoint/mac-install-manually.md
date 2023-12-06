@@ -182,7 +182,7 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
   mdatp connectivity test 
   ```
 
- You can [troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/troubleshoot-cloud-connect-mdemac?view=o365-worldwide&branch=pr-en-us-22831).
+ You can [troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/troubleshoot-cloud-connect-mdemac?view=o365-worldwide&branch=pr-en-us-22831&preserve-view=true).
 
 ## Logging installation issues
 
