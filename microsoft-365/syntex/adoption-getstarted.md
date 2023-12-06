@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to use and implement Microsoft Syntex in your organization to help streamline your business processes.
 ---
 
-Getting started driving adoption of Microsoft Syntex
+# Get started driving adoption of Microsoft Syntex
 
 Microsoft Syntex is a cloud-based service that applies artificial intelligence (AI) to automate content processing and knowledge extraction. It helps you to transform your content into structured data that can be easily searched, analyzed, and reused.
 
