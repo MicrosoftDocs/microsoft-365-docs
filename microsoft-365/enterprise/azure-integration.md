@@ -3,7 +3,7 @@ title: "Azure integration with Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 11/30/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -30,7 +30,7 @@ description: Integrate Microsoft 365 with Microsoft Entra ID if you want passwor
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Microsoft 365 uses Microsoft Entra ID to manage user identities behind the scenes. Your Microsoft 365 subscription includes a free Microsoft Entra subscription so that you can integrate your on-premises Active Directory Domain Services (AD DS) to synchronize user accounts and passwords or set up single sign-on. You can also purchase advanced features to better manage your accounts.
+Microsoft 365 uses Microsoft Entra ID to manage user identities behind the scenes. Your Microsoft 365 subscription includes a free Microsoft Entra subscription. You can integrate your on-premises Active Directory Domain Services (AD DS) to synchronize user accounts and passwords or set up single sign-on. You can also purchase advanced features to better manage your accounts.
   
 Microsoft Entra ID also offers other functionality, like managing integrated apps, that you can use to extend and customize your Microsoft 365 subscriptions.
   
@@ -46,7 +46,7 @@ You can use the Microsoft Entra deployment advisors for a guided setup and confi
 
 If you have a paid subscription to Microsoft 365, you also have a free Microsoft Entra subscription. You can use Microsoft Entra ID to create and manage user and group accounts. To activate this subscription, you have to complete a one-time registration. Afterward, you can access Microsoft Entra ID from your Microsoft 365 admin center. 
 
-For instructions to register your free Microsoft Entra subscription, see [use your free Microsoft Entra subscription](../compliance/use-your-free-azure-ad-subscription-in-office-365.md). Don't go directly to azure.microsoft.com to sign up or you'll end up with a trial or paid subscription to Microsoft Azure that is separate from your free Microsoft Entra subscription with Microsoft 365. 
+For instructions to register your free Microsoft Entra subscription, see [use your free Microsoft Entra subscription](../compliance/use-your-free-azure-ad-subscription-in-office-365.md). Don't go directly to azure.microsoft.com to sign up because you'll get a trial or paid subscription to Microsoft Azure that is separate from your free Microsoft Entra subscription with Microsoft 365.
   
 With the free subscription you can synchronize with on-premises directories, set up single sign-on, and synchronize with many software as service applications, such as Salesforce, DropBox, and many more.
   

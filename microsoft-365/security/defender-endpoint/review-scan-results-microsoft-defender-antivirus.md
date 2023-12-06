@@ -2,7 +2,7 @@
 title: Review the results of Microsoft Defender Antivirus scans
 description: Review the results of scans using Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Windows Security app
 keywords: scan results, remediation, full scan, quick scan
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,7 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: 
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.topic: conceptual
 ms.collection: 
 - m365-security
@@ -26,17 +26,47 @@ search.appverid: met150
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender Antivirus
+- [Microsoft Defender for Business](https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-business)
+- [Microsoft Defender for Individuals](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals)
+- [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 
 **Platforms**
+
 - Windows
 
-After a Microsoft Defender Antivirus scan completes, whether it is an [on-demand](run-scan-microsoft-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-microsoft-defender-antivirus.md), the results are recorded and you can view the results. 
+After a Microsoft Defender Antivirus scan completes, whether it's an [on-demand](run-scan-microsoft-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-microsoft-defender-antivirus.md), the results are recorded and you can view the results.
 
+## Use Microsoft 365 Defender to review scan results
+
+To view the scan results using Microsoft 365 Defender Endpoint, follow the below process.
+
+1. Sign in to [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47).
+2. Go to **Incidents & alerts** \> **Alerts**.
+
+   You can view the scanned results under **Alerts**.
+
+## Use Microsoft Intune to review scan results
+
+To view the scan results using Microsoft Intune admin center, follow the below process.
+
+1. Sign in to [Microsoft Intune admin center](https://intune.microsoft.com/#home).
+1. Go to **Reports**.
+1. Under **Endpoint security**, select **Microsoft Defender Antivirus**.
+1. In the **Reports** tab, select **Detected malware**.
+1. Select the **Severity** level from the dropdown list.
+
+   By default **All severity** option is selected.
+1. Select **Execution state** from the dropdown list.
+
+   By default **All execution state** option is selected.
+1. Select **Managed by** from the dropdown list.
+
+   By default **All Managed by** option is selected.
+1. Click on **Generate report**.
 
 ## Use Configuration Manager to review scan results
 
@@ -44,7 +74,7 @@ See [How to monitor Endpoint Protection status](/configmgr/protect/deploy-use/mo
 
 ## Use PowerShell cmdlets to review scan results
 
-The following cmdlet will return each detection on the endpoint. If there are multiple detections of the same threat, each detection will be listed separately, based on the time of each detection:
+The following cmdlet returns each detection on the endpoint. If there are multiple detections of the same threat, each detection is listed separately, based on the time of each detection:
 
 ```PowerShell
 Get-MpThreatDetection
@@ -78,9 +108,9 @@ Use the [**Get** method of the **MSFT_MpThreat** and **MSFT_MpThreatDetection**]
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
-
 ## Related articles
 
 - [Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

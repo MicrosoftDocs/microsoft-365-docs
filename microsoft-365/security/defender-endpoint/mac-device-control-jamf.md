@@ -2,7 +2,7 @@
 title: Deploy and manage device control using JAMF 
 description: Learn how to use device control policies using JAMF.
 keywords: microsoft, defender, endpoint, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media, jamf
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 03/31/2023
 ---

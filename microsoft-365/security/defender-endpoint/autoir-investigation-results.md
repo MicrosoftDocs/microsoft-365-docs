@@ -10,8 +10,8 @@ f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: edr
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro

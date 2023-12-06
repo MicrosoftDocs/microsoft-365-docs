@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: shcallaw, kywirpel
+ms.reviewer: shcallaw
 ms.date: 08/11/2023
 audience: Admin
 ms.topic: article
@@ -66,7 +66,7 @@ The **Deployment Plan** tab also supports the following actions:
 
 - **Search:** Enter keywords to quickly locate a specific task in the list.
 
-When a tenant’s onboarding status becomes **Active** or when you access a tenant within Lighthouse, Lighthouse queries the tenant for existing configurations. The deployment status is assigned to each task based on the status of each setting included in the subtask and, where applicable, for each user to which the subtask is assigned.
+When a tenant's onboarding status becomes **Active** or when you access a tenant within Lighthouse, Lighthouse queries the tenant for existing configurations. The deployment status is assigned to each task based on the status of each setting included in the subtask and, where applicable, for each user to which the subtask is assigned.
 
 Deployment statuses are automatically determined by Lighthouse when detection is possible, and by user input when detection isn't possible.
 
