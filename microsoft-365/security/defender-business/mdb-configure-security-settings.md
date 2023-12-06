@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 05/05/2023
 ms.reviewer: efratka
@@ -78,3 +77,4 @@ In the preceding image, **Use Defender for Business configuration instead** refe
 4. [Set up your controlled folder access policy](mdb-controlled-folder-access.md) for ransomware protection.
 5. [Enable your attack surface reduction rules](mdb-asr.md).
 6. [Review settings for advanced features and the Microsoft Defender portal](mdb-portal-advanced-feature-settings.md).
+

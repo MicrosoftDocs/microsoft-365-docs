@@ -2,7 +2,7 @@
 title: Take response actions on a device in Microsoft Defender for Endpoint
 description: Take response actions on a device such as isolating devices, collecting an investigation package, managing tags, running an av scan, and restricting app execution.
 keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
 - tier2
 - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 
@@ -27,7 +27,7 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plans 1 and 2](defender-endpoint-plan-1-2.md)
+- [Microsoft Defender for Endpoint Plans 1 and 2](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
 [!INCLUDE [Prerelease information](../../includes/prerelease.md)]

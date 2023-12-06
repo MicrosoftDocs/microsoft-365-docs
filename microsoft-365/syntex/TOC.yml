@@ -55,6 +55,8 @@
                   href: discover-other-trained-models.md
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
+                - name: Apply a sensitivity label 
+                  href: apply-a-sensitivity-label-to-a-model.md
                 - name: Rename a model
                   href: rename-a-model.md
                 - name: Delete a model

@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint - Mobile Threat Defense
 ms.reviewer: 
 description: Overview of Mobile Threat Defense in Microsoft Defender for Endpoint
 keywords: mobile, defender, Microsoft Defender for Endpoint, ios, mtd, android, security
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,6 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ---
 

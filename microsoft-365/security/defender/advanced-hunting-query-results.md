@@ -69,6 +69,13 @@ AlertInfo
 
 When rendering the results, a column chart displays each severity value as a separate column:
 
+
+```kusto
+AlertInfo
+| summarize Total = count() by Severity
+| render columnchart
+```
+
 :::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="An example of a chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-column-chart-new.png":::
 *Query results for alerts by severity displayed as a column chart*
 
