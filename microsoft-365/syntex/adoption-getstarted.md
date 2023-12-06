@@ -52,6 +52,8 @@ Content is the lifeblood of the organization. Many business units in your organi
 
 Thinking about the typical content lifecycle where content is created and re-created, through to content understanding and processing and content discovery and search, there are many features within Syntex that can help your business.
 
+![Diagram showing the content lifecycle.](../media/content-understanding/content-lifecycle.png)
+
 ### Content creation and reuse
 
 Thinking about the lifecycle of content, there might be use cases for automating content creation, particularly content that is transactional or standardized and Syntex [content assembly](content-assembly.md) can be useful for this. Content assembly can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence.
@@ -75,6 +77,8 @@ Syntex can perform different types of tasks across your content including classi
 |Classification     |Identifies the type of content the file represents (for example, a report, an invoice, or a form)         |[Unstructured document processing](document-understanding-overview.md)         |
 |Extraction         |Identifies information based on an entity from within a document     |[Structured document processing](form-processing-overview.md)<br>[Freeform document processing](form-processing-overview.md)<br>[Prebuilt document processing](prebuilt-overview.md)<br>[Optical character recognition](ocr-overview.md)    |
 |Keyword tagging    |Suggests information based on a property of or decision about a document using keywords         |[Taxonomy tagging](taxonomy-tagging-overview.md)<br>[Image tagging](image-tagging-overview.md)         |
+
+#### Content compliance
 
 The document processing models can also be used to add compliance by having them apply [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) and [retention labels](apply-a-retention-label-to-a-model.md) to content added to document libraries with models configured with them.
 
