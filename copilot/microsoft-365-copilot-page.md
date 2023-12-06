@@ -24,6 +24,12 @@ description: "Learn about the Copilot page in the Microsoft 365 admin center."
 
 You can manage Microsoft Copilot for Microsoft 365 through the Microsoft 365 admin center by using the Copilot page. Use the Copilot page to review licensing, get the latest information, and to view additional resources. You can also manage how users in your organization interact with Microsoft Copilot for Microsoft 365, Security Copilot, and more.
 
+> [!NOTE]
+> Copilot licences must be present within your tenant for the Copilot page to appear in the Microsoft 365 admin center.
+> 
+> Only administrators with the Global Administrator role can access the Copilot page.
+> 
+
 ## How to get to the Copilot page
 
 1. Sign in to the Microsoft 365 admin center.
