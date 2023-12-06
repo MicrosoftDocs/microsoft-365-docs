@@ -167,11 +167,22 @@ After you create this configuration profile, assign it to the devices where you 
 ##### Configure the enforcement level using Intune
 
 > [!NOTE]
-> If you've already configured Microsoft Defender for Endpoint on Mac using the instructions listed here, then update the plist file you previously deployed with the content listed below and re-deploy it from Intune.
+> If you've already configured Microsoft Defender for Endpoint on Mac using the previous instructions (with an XML file), then remove the previous Custom configuration policy and replace it with the instructions below.
 
 1. Open **Manage** \> **Device configuration**. Select **Manage** \> **Profiles** \> **Create Profile**.
-2. Specify a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select **Configure**.
-3. Save the following payload as _com.microsoft.wdav.xml_
+2. Change **Platform** to **macOS** and **Profile type** to **Settings catalog**. Select **Create**.
+3. Specify a name for the profile. 
+4. On the **Configuration settings** screen, select **Add settings**. Select **Microsoft Defender** \> **Network protection**, and tick the **Enforcement level** checkbox.
+5. Set the enforcement level to **block**. Select **Next**
+6. Open the configuration profile and upload the com.microsoft.wdav.xml file. (This file was created in step 3.)
+7. Select **OK**
+8. Select **Manage** \> **Assignments**. In the **Include** tab, select the devices for which you want to enable network protection.
+
+#### mobileconfig deployment
+
+To deploy the configuration via a .mobileconfig file, which can be used with 3rd party MDM solutions or distributed to devices directly:
+
+1. Save the following payload as _com.microsoft.wdav.xml.mobileconfig_
    
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -228,16 +239,12 @@ After you create this configuration profile, assign it to the devices where you 
    </plist>
    ```
 
-4. Verify that the above file was copied correctly. From the Terminal, run the following command and verify that it outputs OK:
+2. Verify that the above file was copied correctly. From the Terminal, run the following command and verify that it outputs OK:
 
    ```bash
    plutil -lint com.microsoft.wdav.xml
    ```
 
-5. Enter _com.microsoft.wdav_ as the custom configuration profile name.
-6. Open the configuration profile and upload the com.microsoft.wdav.xml file. (This file was created in step 3.)
-7. Select **OK**
-8. Select **Manage** \> **Assignments**. In the **Include** tab, select the devices for which you want to enable network protection.
 
 ## How to explore the features
 
