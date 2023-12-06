@@ -41,6 +41,9 @@ Configure policies across your device groups to block certain categories. Blocki
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see the [prerequisites](#prerequisites) section.
 
+> [!NOTE]
+> Web Content Filtering is restricted to these browsers via process name. This means that WCF will also not work when there is a local proxy application in place (such as Fiddler, ZScaler), due to the process name being masked.
+
 ## Benefits of web content filtering
 
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away.
