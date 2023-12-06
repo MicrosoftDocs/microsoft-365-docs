@@ -2,7 +2,7 @@
 title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
 description: Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there's a critical incident
-keywords: XDR, protected assets, defender experts for xdr, set up microsoft xdr, managed threat hunting, managed detection and response (MDR) service, service delivery manager, readiness, threat hunting and analysis, actions needed xdr
+keywords: XDR, protected assets, defender experts for xdr, set up microsoft xdr, set up permissions in xdr, managed detection and response (MDR) service, service delivery manager, readiness, threat hunting and analysis, actions needed xdr
 ms.service: defender-experts
 ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/10/2023
+ms.date: 14/06/2023
 ---
 
 # Get started with Microsoft Defender Experts for XDR
@@ -42,22 +42,34 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 - **Investigate incidents and guide my responses** (default) – This option lets our experts proactively monitor and investigate incidents and guide you through any necessary response actions. (Access level: Security Reader)
 - **Respond directly to active threats** (recommended) – This option lets our experts contain and remediate active threats immediately while investigating, thus reducing the threat's impact, and improving your overall response efficiency. (Access level: Security Operator)
 
-[Learn more about access levels](/azure/active-directory/roles/permissions-reference)
-
 :::image type="content" source="../../media/xdr/grant-permissions-to-experts.png" alt-text="Screenshot of Permissions page in Defender for Experts XDR settings step-by-step guide." lightbox="../../media/xdr/grant-permissions-to-experts.png":::
+
+> [!IMPORTANT]
+> If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your organization. Even though our experts are granted these relatively powerful permissions, they will only have individual access to specific areas for a limited period. [Learn more about how Defender Experts for XDR permissions work](../defender/dex-xdr-permissions.md).
 
 **To grant our experts permissions:**
 
 1. In the same Defender Experts settings step-by-step guide, under **Permissions**, choose the access level(s) you want to grant our experts.
-2. Select **Next** to [add contact persons or teams](#tell-us-who-to-contact-for-important-matters).
+1. If you wish to exclude device and user groups in your organization from remediation actions, select **Manage exclusions**.
+1. Select **Next** to [add contact persons or groups](#tell-us-who-to-contact-for-important-matters).
 
-> [!IMPORTANT]
-> If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your organization.
+To edit or update permissions after the initial setup, go to **Settings** > **Defender Experts** > **Permissions**.
 
-To edit or update permissions after the initial setup, go to **Settings** > **Defender Experts** > **Permissions**. In this page, you could also turn **Access security data from all devices** on or off under the access levels.
+## Exclude devices and users from remediation
 
-> [!IMPORTANT]
-> If you turn off **Access security data from all devices**, our experts won't be able to investigate incidents involving devices that belong to Microsoft Defender for Endpoint device groups. [Learn more about device groups](../defender-endpoint/machine-groups.md).
+Defender Experts for XDR lets you exclude devices and users from remediation actions taken by our experts and instead get remediation guidance for those entities. These exclusions are based on identified [device groups](../defender-endpoint/machine-groups.md) in Microsoft Defender for Endpoint and identified [user groups](/entra/fundamentals/concept-learn-about-groups.md) in Microsoft Entra ID.
+
+**To exclude device groups:**
+
+1. In the same Defender Experts settings setup, under **Exclusions**, go to the **Device groups** tab.
+2. Select **+Add device groups**, then search for and choose the device group(s) that you wish to exclude.
+
+> [!NOTE]
+> This page only lists existing device groups. If you wish to create a new device group, you first need to go to the Defender for Endpoint settings in your Microsoft 365 Defender portal. Then, refresh this page to search for and choose the newly created group. [Learn more about creating device groups](../defender-endpoint/machine-groups.md).
+
+3. Select **Add device groups**.
+4. Back on the **Device groups** tab, review the list of excluded device groups. If you wish to remove a device group from the exclusion list, choose it then select **Remove device group**.
+5. Select **Next** to confirm your exclusion list and proceed to [adding contact persons or groups](#tell-us-who-to-contact-for-important-matters). Otherwise, select **Skip**, and all the exclusions you’ve added won’t be saved.
 
 ## Tell us who to contact for important matters
 
