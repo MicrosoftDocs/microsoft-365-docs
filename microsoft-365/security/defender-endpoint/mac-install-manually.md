@@ -52,7 +52,6 @@ Download the installation and onboarding packages from Microsoft Defender portal
    :::image type="content" source="images/onboarding-package-step4.png" alt-text="The options to download the installation and onboarding packages.":::
 
 5. From a command prompt, verify that you have the two files.
-    Terminal
     - Type *cd Downloads* and press **Enter**.
     - Type *ls* and press **Enter**.
      :::image type="content" source="images/Terminal-image-step5.png" alt-text="Screenshot that displays the two download files.":::
@@ -69,7 +68,7 @@ To complete this process, you must have admin privileges on the device.
     
       *sudo installer -store -pkg /Users/admin/Downloads/wdav.pkg -target /*
 
-   :::image type="content" source="images/monterey-install-1.png" alt-text="The installation process for the application" lightbox="images/monterey-install-1.png":::
+   :::image type="content" source="images/monterey-install-1.png" alt-text="The installation process for the application":::
 
 2. Select **Continue**.
 
@@ -97,7 +96,7 @@ To complete this process, you must have admin privileges on the device.
 
 3. At the end of the installation process, for macOS Big Sur (11.0) or latest version, you're prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
-   :::image type="content" source="images/monterey-install-2.png" alt-text="The system extension approval" lightbox="images/monterey-install-2.png":::
+   :::image type="content" source="images/monterey-install-2.png" alt-text="The system extension approval":::
 
 11. To enable system extention, select **Details**.
     :::image type="content" source="images/system-extention-image.png" alt-text="Screenshot that shows the system extention.":::
@@ -109,9 +108,9 @@ To complete this process, you must have admin privileges on the device.
 
 6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
-   :::image type="content" source="images/monterey-install-4.png" alt-text="The system extension security preferences2" lightbox="images/monterey-install-4.png":::
+   :::image type="content" source="images/monterey-install-4.png" alt-text="The system extension security preferences2":::
 
-    To troubleshoot System Extention issues, refer [Troubleshoot System Extention](mac-support-sys-ext.md).
+    To troubleshoot System Extension issues, refer [Troubleshoot System Extension](mac-support-sys-ext.md).
 
 ## How to Allow Full Disk Access
 
@@ -126,15 +125,15 @@ To grant full disk access:
 1. Grant **Full Disk Access** permission to **Microsoft Defender** and **Microsoft Defenders Endpoint Security Extension**.
 
    :::image type="content" source="images/full-disk-access-security-privacy.png" alt-text="The screenshot shows the full disk access's security and privacy.":::
-1. Select **General** \> **Restart** for the new system extentions to take effect.
+1. Select **General** \> **Restart** for the new system extensions to take effect.
 
-   :::image type="content" source="images/restart-fulldisk.png" alt-text="Screenshot that allows you to restart the system for new system extentions to be enabled.":::
+   :::image type="content" source="images/restart-fulldisk.png" alt-text="Screenshot that allows you to restart the system for new system extensions to be enabled.":::
 1. Enable *Potentially Unwanted Application* (PUA) in block mode.
 
    To enable PUA, refer [configure PUA protection](mac-pua.md).
 1. Enable *Network Protection*.
 
-   To enbale *Network protection*, refer [manual deployment](network-protection-macos.md).
+   To enable *Network protection*, refer [manual deployment](network-protection-macos.md).
 1. Enable *Device Control*.
 
    To enable *Device Control*, refer [device control for macOS](mac-device-control-overview.md).
@@ -172,7 +171,7 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
     After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The Microsoft Defender icon in status bar" lightbox="images/mdatp-icon-bar.png":::
+    > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The Microsoft Defender icon in status bar":::
 
    You can [troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md).
 

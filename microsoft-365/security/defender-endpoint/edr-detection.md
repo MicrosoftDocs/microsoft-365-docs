@@ -27,7 +27,7 @@ Endpoint detection and response for Endpoint provide advanced attack detections 
 
 Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-1. In your browser, Microsoft Edge for Mac or Safari, download *MDATP MacOS DIY.zip* from [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy)and extract.
+1. In your browser, Microsoft Edge for Mac or Safari, download *MDATP MacOS DIY.zip* from [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) and extract.
 
       The following prompt appears:
 
@@ -71,7 +71,7 @@ Run an EDR detection test to verify that the device is properly onboarded and re
 
 12. Go to the **Alert** Queue.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="An macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="An macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions":::
 
     The macOS EDR test alert shows severity, category, detection source, and a collapsed menu of actions.
 
