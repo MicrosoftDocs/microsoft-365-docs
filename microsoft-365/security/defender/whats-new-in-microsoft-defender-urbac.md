@@ -23,11 +23,9 @@ This article provides information about new features and important product updat
 
 ## December 2023
 
-Microsoft Defender XDR Unified RBAC is now Globally Available with Microsoft commercial cloud as well as GCC-M.
+### Microsoft Defender XDR Unified RBAC is now Generally Available.
 
-Supported workloads and other supported data sources are listed under the Overview page in this article.
-
-[Sinead - please verify if mentioning GCC-M as I mentioned is proper + see if you think we should add more text here]
+Microsoft Defender XDR Unified RBAC is now generally available. This offering is also available to GCC-M customers. To learn more about the supported workloads and supported data sources, see [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md) 
 
 ## October 2023
 
