@@ -390,7 +390,7 @@ You can visit **Apps** > **By platform** > **macOS** to see it on the list of al
 
    :::image type="content" source="images/mdatp-12-applications.png" alt-text="The application lists page" lightbox="images/mdatp-12-applications.png":::
 
-For more information, see [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](/mem/intune/apps/apps-advanced-threat-protection-macos).)
+For more information, see [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](/mem/intune/apps/apps-advanced-threat-protection-macos).
 
 > [!IMPORTANT]
 > You should create and deploy the configuration profiles in the above order (step 1-13) for a successful system configuration.
