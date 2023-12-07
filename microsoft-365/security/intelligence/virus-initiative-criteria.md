@@ -41,8 +41,8 @@ To be considered for the MVI program, your organization must meet all the follow
 |[AV-Test](https://www.av-test.org/en/about-the-institute/certification/) | Must pass tests for Windows. Certifications for Mac and Linux aren't accepted.|	•	AV-TEST Certified (home) <br> •	AV-TEST Approved (corporate) |
 |[SKD Labs](http://www.skdlabs.com/) | Certification Requirements Product: Anti-virus or Antimalware.	| Score >= 98.5% with On Demand, On Access and Total Detection tests |
 |[VB 100](https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/) | VB100 Certification Test V1.1	| VB100 Certification |
-|West Coast Labs | Checkmark Certified | Product validated minimum of grade A|
-|SE Labs | Protection, Small Business, or Enterprise EP Protection Test.	| •	Protection A rating <br> •	Small Business EP A rating <br>•	Enterprise EP Protection A rating |
+|[West Coast Labs](https://www.westcoastlabs.com/checkmark) | Checkmark Certified | Product validated minimum of grade A|
+|[SE Labs](https://selabs.uk/en/reports/consumers/) | Protection, Small Business, or Enterprise EP Protection Test.	| •	Protection A rating <br> •	Small Business EP A rating <br>•	Enterprise EP Protection A rating |
 
 
 ## Apply now
