@@ -20,7 +20,7 @@ description: Learn how to use and implement Microsoft Syntex in your organizatio
 
 Microsoft Syntex is a cloud-based service that applies artificial intelligence (AI) to automate content processing and knowledge extraction. It helps you to transform your content into structured data that can be easily searched, analyzed, and reused.
 
-Syntex offers a range of use cases to enhance content management within an enterprise. Here are some examples of how it can be leveraged:
+Syntex offers a range of use cases to enhance content management within an enterprise. Here are some examples of how it can be applied:
 
 - **Automatically generate routine documents** — Employ Syntex content assembly to create modern templates for files that need to be generated on a regular basis, such as routine maintenance reports.
 
@@ -28,7 +28,7 @@ Syntex offers a range of use cases to enhance content management within an enter
 
 - **Handle incoming documents** — Use Syntex to manage and process incoming business documents like insurance forms, business verifications, and rental contracts.
 
-- **Make information easier to find** — Leverage Syntex to enhance the discoverability and usability of business documents and employee information in document libraries, such as policies and procedures.
+- **Make information easier to find** — Use Syntex to enhance the discoverability and usability of business documents and employee information in document libraries, such as policies and procedures.
 
 - **Find content details** — Centralize, organize, and retrieve content using Syntex to make specific details easier to discover, such as patent information.
 
@@ -36,9 +36,9 @@ Syntex offers a range of use cases to enhance content management within an enter
 
 ## Identify business scenarios
 
-To prepare for using Syntex in your organization, you first need to understand the scenarios in which it will be useful. The "why" helps determine what features will be most beneficial and if document processing is required, which model type will be needed. To meet a business outcome, it may be useful to combine multiple Syntex features. Use the [example scenarios and use cases](adoption-scenarios.md) to prompt ideas about how you can use Syntex in your organization.
+To prepare for using Syntex in your organization, you first need to understand the scenarios in which it will be useful. The "why" helps determine what features will be most beneficial and if document processing is required, which model type will be needed. To meet a business outcome, it might be useful to combine multiple Syntex features. Use the [example scenarios and use cases](adoption-scenarios.md) to prompt ideas about how you can use Syntex in your organization.
 
-Content is the lifeblood of the organization. Many business units in your organization are responsible for processing data and may be doing so today with a mix of manual or semi-automated processes that involve multiple steps. Using Syntex features can help you improve your organization’s content management practices including:
+Content is the lifeblood of the organization. Many business units in your organization are responsible for processing data and might be doing so today with a mix of manual or semi-automated processes that involve multiple steps. Using Syntex features can help you improve your organization’s content management practices including:
 
 - Provide advanced search and filtering to improve search findability and retrieval.
 
@@ -66,15 +66,15 @@ Thinking about the typical content lifecycle where content is created and re-cre
 
 ### Content creation and reuse
 
-Thinking about the lifecycle of content, there might be use cases for automating content creation, particularly content that is transactional or standardized and Syntex [content assembly](content-assembly.md) can be useful for this. Content assembly can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence.
+Within the lifecycle of content, there might be use cases for automating content creation, particularly content that is transactional or standardized and Syntex [content assembly](content-assembly.md) can be useful for this. Content assembly can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence.
 
-Once you identify repetitive document types you’ll want to identify the data source that can be used as a source for the documents. Having a list or data source to populate the documents allows you to do this faster, more consistently, and with fewer errors by creating modern templates and using those templates to generate documents. To use this feature, an [Azure subscription](syntex-azure-billing.md) needs to be configured within the Syntex set up.
+Once you identify repetitive document types, you’ll want to identify the data source that can be used as a source for the documents. Having a list or data source to populate the documents allows you to do this faster, more consistently, and with fewer errors by creating modern templates and using those templates to generate documents. To use this feature, an [Azure subscription](syntex-azure-billing.md) needs to be configured within the Syntex set up.
 
 ### Content collaboration
 
 The [annotations](annotations.md) feature in Microsoft Syntex is used to add notes and comments to content in document libraries—either for yourself or for collaborating with others. The annotations feature can be used without modifying the original files, so the original records are preserved.
 
-Annotation tools currently include pen and highlighter, where colors can be selected along with an eraser for removing ink strokes and previous annotations. Once you configure an Azure subscription in your tenant for Syntex this feature will be enabled for your users. You may want to consider providing details to end users about the feature, particularly to business groups that may heavily markup or annotate documents.
+Annotation tools currently include pen and highlighter, where colors can be selected along with an eraser for removing ink strokes and previous annotations. Once you configure an Azure subscription in your tenant for Syntex, this feature will be enabled for your users. You might want to consider providing details to end users about the feature, particularly to business groups that might heavily markup or annotate documents.
 
 ### Content understanding and processing
 
@@ -92,19 +92,19 @@ Syntex can perform different types of tasks across your content including classi
 --->
 The document processing models can also be used to add compliance by having them apply [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) and [retention labels](apply-a-retention-label-to-a-model.md) to content added to document libraries with models configured with them.
 
-Once the content type and metadata are available in a document library business users can perform a number of actions on the data including creating new views on the content, building reports, moving content based on certain information present using rules, and creating business process workflows for approvals, adding data to other systems, generating work orders and many other tasks that might have been done manually.
+Once the content type and metadata are available in a document library, business users can perform many actions on the data including creating new views on the content, building reports, moving content based on certain information present using rules, and creating business process workflows for approvals, adding data to other systems, generating work orders and many other tasks that might have been done manually.
 
 [**TBD**: To learn more about how to plan for adoption of document processing, see *Manage document processing across your organization*.]
 
 ### Content discoverability through search findability and precision
 
-Using document processing features in Syntex can improve the search experience as each piece of metadata extracted from content will now be searchable. The Syntex [content query](metadata-search.md) feature lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
+Using document processing features in Syntex can improve the search experience as each piece of metadata extracted from content now will be searchable. The Syntex [content query](metadata-search.md) feature lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
 In addition to classifying and extracting data from content added to a SharePoint library, your organization might have content currently locked in images that is challenging to locate. The [optical character recognition](ocr-overview.md) (OCR) service in Syntex lets you extract printed or handwritten text from images and documents. Examples of images include posters, drawings, and product labels. Examples of documents include articles, reports, forms, and invoices. The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. The extracted information is indexed in search and can be made available for compliance features like [data loss prevention](../compliance/dlp-learn-about-dlp.md) (DLP).
 
 ## Plan for getting started
 
-When getting started with Syntex, you’ll want to assess the current state and needs of the organization regarding content management, processing, and analysis. It might help to identify specific key content repositories used by groups in your organization and to discuss with those teams their current business processes and scenarios. Are there cases where they are currently managing content manually that can be automated? These might include cases where they are handling intake of standard forms or documents like HR documents or purchase orders for processing or if they are generating repeated content at scale such as offer letters or proposals. Or areas where they are doing their annotations via pen and paper or a third-party application where you can now do this within your existing SharePoint environment.
+When getting started with Syntex, you’ll want to assess the current state and needs of the organization regarding content management, processing, and analysis. It might help to identify specific key content repositories used by groups in your organization and to discuss with those teams their current business processes and scenarios. Are there cases where they're currently managing content manually that can be automated? These might include cases where they're handling intake of standard forms or documents like HR documents or purchase orders for processing or if they're generating repeated content at scale such as offer letters or proposals. Or areas where they're doing their annotations via pen and paper or a third-party application where you can now do this within your existing SharePoint environment.
 
 When thinking about which business scenarios to consider, ask yourself the following questions:
 
@@ -121,14 +121,14 @@ If you’re not sure where to start, consider checking out the [Syntex site temp
 
 When determining who in your organization will need to be involved in your Syntex projects, it will help to map out the features required. The roles in the following table might be involved, depending on the features you select to use.
 
-For example, if you are focused on document processing, then the SharePoint administrator role will be key in creating and managing content centers needed to manage models at scale. If you’re focused on features like OCR and compliance, then the Purview Compliance administrator will be needed. If taxonomy tagging will be pursued, it’s important to understand your corporate term store management or to determine if you’ll use a content center.
+For example, if you're focused on document processing, then the SharePoint administrator role will be key in creating and managing content centers needed to manage models at scale. If you’re focused on features like OCR and compliance, then the Purview Compliance administrator will be needed. If taxonomy tagging will be pursued, it’s important to understand your corporate term store management or to determine if you’ll use a content center.
 
 |Administrator  |Requirement  |Responsibilities  |
 |---------|---------|---------|
-|Azure Subscriptions administrator     |Microsoft Entra role         |Configure Azure subscription settings, review Azure cost management data         |
+|Azure Subscriptions administrator     |Microsoft Entra role         |Configure Azure subscription settings, review Microsoft cost management in Azure data         |
 |Purview Compliance administrator     |Microsoft Entra role         |Plan for compliance settings, such as sensitivity labels and retention policies and OCR settings          |
 |SharePoint administrator     |Microsoft Entra role         |Gather business use cases, determine if features will be enabled across all sites or for selected sites<br>Manage content centers and permissions<br>Establish best practices and review model analytics       |
-|Power Platform administrator     |Microsoft Entra role         |Configure Dataverse environment (if required) for freeform and structured models      |
+|Power Platform administrator     |Microsoft Entra role         |Configure Dataverse environment (if necessary) for freeform and structured models      |
 |SharePoint Term Store administrator     |Configured by SharePoint admin in SharePoint admin center         |Manage enterprise term sets, determine if end users can modify certain term sets      |
 |Syntex business user (managing models, using content assembly)     |Permissions managed at the site level or on content centers<br>Content  enter edit permissions<br>SharePoint Manage Lists permissions where you want to publish models or use content assembly features    |Gather business use cases<br>Create, train, and apply models     |
 
