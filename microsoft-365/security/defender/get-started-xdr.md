@@ -127,9 +127,9 @@ Once identified, the individuals or groups will receive an email notifying them 
 2. Add a **Phone number** (optional) that Defender Experts can call for matters that require immediate attention.
 3. Under the **Contact for** dropdown box, choose **Incident notification** or **Service review**.
 4. Select **Add**.
-3.	Select **Next** to Review your settings 
-4.	Select **Submit**. The step-by-step guide then completes the initial setup.
-5.	Select **View readiness assessment** to complete the necessary actions required to [optimize your security posture](#prepare-your-environment-for-the-defender-experts-service). 
+3. Select **Next** to Review your settings 
+4. Select **Submit**. The step-by-step guide then completes the initial setup.
+5. Select **View readiness assessment** to complete the necessary actions required to [optimize your security posture](#prepare-your-environment-for-the-defender-experts-service). 
 
 
 To edit or update your notification contacts after the initial setup, go to **Settings** > **Defender Experts** > **Notification contacts**.
