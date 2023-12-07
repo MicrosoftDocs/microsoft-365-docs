@@ -53,6 +53,9 @@ Administrators should notify the site owners and end users before a site is arch
 
 ## Preview limitations
 
+> [!NOTE]
+> These limitations are temporary during the preview. Unless otherwise stated, these limitations will be resolved when the product is available for general release.
+
 - As a part of the preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the **Archived sites** page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
 
 - Currently, end user search results won't show any archived content. Columns such as Archived Date and Archived By aren't currently available, but are planned and will be rolled out when available.
@@ -61,6 +64,6 @@ Administrators should notify the site owners and end users before a site is arch
 
 - Currently, tenant rename isn't supported on archived sites. Sites will need to be reactivated before a tenant rename is triggered.
 
-- Sites that are backed up as part of the Microsoft 365 Backup shouldn't be archived.
+- Archiving a site that is currently enrolled in Microsoft 365 Backup will be blocked.
 
 - If you archive a site that has a library syncing to a device, that device's sync client will display errors after the site is archived. We recommend that you remove syncing libraries before archiving a site.

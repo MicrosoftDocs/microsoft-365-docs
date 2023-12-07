@@ -2,7 +2,7 @@
 title: Delete a model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: ssquires
 ms.date: 06/06/2023

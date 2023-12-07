@@ -3,7 +3,7 @@ metadata:
   title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
   description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
   keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration, microsoft defender antivirus 
-  ms.service: microsoft-365-security
+  ms.service: defender-endpoint
   ms.mktglfcycl: manage
   ms.sitesec: library
   ms.localizationpriority: medium
@@ -13,7 +13,7 @@ metadata:
   ms.custom: nextgen
   ms.reviewer:
   manager: dansimp
-  ms.subservice: mde
+  ms.subservice: ngp
   ms.collection: 
   - m365-security
   - tier1

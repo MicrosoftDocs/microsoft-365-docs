@@ -2,7 +2,7 @@
 title: Intune-based deployment for Microsoft Defender for Endpoint on Mac
 description: Install Microsoft Defender for Endpoint on Mac, using Microsoft Intune.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, monterey, ventura, mde for mac
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 12/18/2020
 ---
@@ -80,6 +80,7 @@ The next step is to create system configuration profiles that Microsoft Defender
 In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), open **Devices** \> **Configuration profiles**.
 
 ### Step 1: Approve system extensions
+1. In Microsoft Defender portal, go to **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
 
 This profile is needed for Big Sur (11) or later. It is ignored on older macOS since they use the kernel extension.
 
@@ -258,7 +259,7 @@ In this step, we'll go over the “Preferences," which enables you to configure 
 
 Go through [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure) before setting the security policies using Microsoft Defender,
 
-In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47),
+  In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47),
 
 1. Go to **Configuration management** > **Endpoint security policies** > **Mac policies** > **Create new policy**.
 1. Under **Select Platform**, select **macOS**.

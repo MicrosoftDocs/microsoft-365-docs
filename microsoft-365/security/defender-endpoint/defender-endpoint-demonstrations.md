@@ -4,7 +4,7 @@ description: Lists Microsoft Defender for Endpoint demonstration scenarios that 
 keywords: demonstration, Microsoft Defender for Endpoint demonstration, anti-Malware demonstration, Cloud-delivered protection, Block at First Sight (BAFS), Potentially unwanted applications (PUA)s, Microsoft security intelligence VDI, VDI security, attack surface reduction rules demonstration, Controlled folder access demonstration, Exploit Protection, Network Protection, Microsoft Defender SmartScreen, edge SmartScreen, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +18,7 @@ ms.collection:
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
+ms.subservice: ngp
 ms.date: 10/21/2022
 ---
 

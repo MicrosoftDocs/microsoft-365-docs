@@ -1,19 +1,19 @@
 ---
 title: Minimum requirements for Microsoft Defender for Endpoint
 description: Understand the licensing requirements and requirements for onboarding devices to the service
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.reviewer: pahuijbr
 ms.localizationpriority: medium
-ms.date: 10/27/2023
+ms.date: 11/15/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ---
 
@@ -23,7 +23,7 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
 
@@ -37,7 +37,7 @@ There are some minimum requirements for onboarding devices to the Defender for E
 
 ## Licensing requirements
 
-- [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) (standalone or as part of other Microsoft 365 plans)
+- [Defender for Endpoint Plan 1 and Plan 2](microsoft-defender-endpoint.md) (standalone or as part of other Microsoft 365 plans)
 
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (for small and medium-sized businesses)
 
@@ -104,6 +104,7 @@ To add antimalware protection to these older operating systems, you can use [Sys
 
 - [macOS](microsoft-defender-endpoint-mac.md)
 - [Linux](microsoft-defender-endpoint-linux.md)
+- [Windows Subsystem for Linux](mde-plugin-wsl.md)
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
 
@@ -113,7 +114,7 @@ To add antimalware protection to these older operating systems, you can use [Sys
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 > - Virtual Machines running Windows 10 Enterprise 2016 LTSB can encounter performance issues when used on non-Microsoft virtualization platforms.
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
-> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](microsoft-defender-endpoint.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 > - If your organization is a small or medium-sized business, see [Microsoft Defender for Business requirements](../defender-business/mdb-requirements.md). 
 
 ### Hardware requirements
@@ -171,4 +172,3 @@ If you're running a third-party antimalware client and use Mobile Device Managem
 - [Onboard devices](onboard-configure.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-

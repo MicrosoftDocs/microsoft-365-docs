@@ -22,8 +22,8 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Custom or third-party reporting solutions for Microsoft Defender for Office 365
@@ -44,4 +44,4 @@ With [Microsoft Defender for Office 365](defender-for-office-365.md), you get [d
 ## See also
 
 - [Microsoft Defender for Office 365](defender-for-office-365.md)
-- [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)
+- [Automated investigation and response in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-autoir)

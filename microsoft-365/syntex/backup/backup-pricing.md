@@ -54,7 +54,7 @@ The Microsoft 365 Backup pricing calculator, when calculating the storage requir
 
 To use the Microsoft 365 Backup pricing calculator, you'll need to perform the following steps. Information about how to collect data from each of these steps is detailed later in this article.
 
-1. Download the latest version of the Microsoft 365 Backup pricing calculator tool from [https://aka.ms/M365BackupCalculator](https://aka.ms/M365BackupCalculator) (*coming soon*).
+1. Download the latest version of the Microsoft 365 Backup pricing calculator tool from [https://aka.ms/M365BackupCalculator](https://aka.ms/M365BackupCalculator).
 
 2. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool.
 
@@ -70,7 +70,7 @@ To use the Microsoft 365 Backup pricing calculator, you'll need to perform the f
 
 This section describes how to use your [Microsoft 365 admin center usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to populate the Microsoft 365 Backup pricing calculator.
 
-The Microsoft 365 Backup Pricing Calculator uses the input data about your current usage to help determine heuristics such as your average growth and usage patterns. To get this information, go to [Usage - Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) and then review the [OneDrive - Usage](#onedrive---usage), [SharePoint - Site usage](#sharepoint---site-usage), or [Exchange - Mailbox usage](#exchange---mailbox-usage) reports.
+The Microsoft 365 Backup pricing calculator uses the input data about your current usage to help determine heuristics such as your average growth and usage patterns. To get this information, go to [Usage - Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) and then review the [OneDrive - Usage](#onedrive---usage), [SharePoint - Site usage](#sharepoint---site-usage), or [Exchange - Mailbox usage](#exchange---mailbox-usage) reports.
 
 You can change the period that the reports display data for by selecting the **Past *n* days** on the right-hand side and then selecting the period.
 

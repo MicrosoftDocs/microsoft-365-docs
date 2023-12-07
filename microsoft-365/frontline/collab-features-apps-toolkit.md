@@ -2,7 +2,7 @@
 title: Help your frontline workers use collaboration apps and features
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: ITPro
 ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 

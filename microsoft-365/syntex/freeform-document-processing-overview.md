@@ -2,7 +2,7 @@
 title: Overview of freeform document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 02/12/2023
 audience: admin
@@ -14,6 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to use AI Builder to create freeform document processing models in Microsoft Syntex.
 ---
 
