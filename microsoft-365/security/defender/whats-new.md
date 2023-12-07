@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 11/29/2023
+ms.date: 12/06/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -39,12 +39,16 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## December 2023
+
+- Microsoft Defender Experts for XDR now lets you [exclude devices and users](get-started-xdr.md#exclude-all-high-value-devices-or-users-automatically) from remediation actions taken by our experts and instead get remediation guidance for those entities.
+- The Microsoft Defender XDR portal's incident queue has updated filters, search, and added a new function where you can create your own filter sets. For details, see [Available filters](incident-queue.md#available-filters).
+- You can now assign incidents to a user group or another user. For details, see [Assign an incident](manage-incidents.md#assign-an-incident).
+
 ## November 2023
 
 - Microsoft Defender Experts for Hunting now lets you generate sample Defender Experts Notifications so you can start experiencing the service without having to wait for an actual critical activity to happen in your environment. [Learn more](onboarding-defender-experts-for-hunting.md#generate-sample-defender-experts-notifications)
-
 - (Preview) Microsoft Defender for Cloud alerts are now integrated in Microsoft Defender XDR. Defender for Cloud alerts are automatically correlated to incidents and alerts in the Microsoft Defender XDR portal and cloud resource assets can be viewed in the incidents and alerts queues. Learn more about the [Defender for Cloud integration](microsoft-365-security-center-defender-cloud.md) in Microsoft Defender XDR.
-
 - (Preview) Microsoft Defender XDR now has built in [deception technology](deception-overview.md) to protect your environment from high-impact attacks that use human-operated lateral movement. Learn more about the deception feature and how to [configure the deception feature](configure-deception.md).
 - Microsoft Defender Experts for XDR now lets you perform your own [readiness assessment](get-started-xdr.md#prepare-your-environment-for-the-defender-experts-service) when preparing the environment for the Defender Experts for XDR service.
 

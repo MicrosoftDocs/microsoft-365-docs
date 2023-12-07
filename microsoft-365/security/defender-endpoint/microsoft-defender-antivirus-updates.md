@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 11/07/2023
+ms.date: 12/06/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -103,7 +103,33 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
-### October-2023 (Platform: Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
+### November-2023 (Platform: 4.18.23110.3 | Engine: 1.1.23110.2)
+
+- Security intelligence update version: **1.403.7.0** 
+- Release date: **December 5, 2023 (Platform)** / **December 6, 2023 (Engine)**
+- Platform: **4.18.23110.3** 
+- Engine: **1.1.23110.2**
+- Support phase: **Security and Critical Updates** 
+
+#### What's new 
+
+- Fixed PowerShell cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to show the correct date/time for `AntivirusSignatureLastUpdated`
+- Resolved deadock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
+- Added the `InitializationProgress` field to [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) output 
+- Fixed installation failure on Windows Server 2016 due to existing Defender EventLog registry key 
+- Added the ability to have [quick scans](schedule-antivirus-scans.md) ignore Microsoft Defender Antivirus exclusions 
+- Fixed remediation for long running [on-demand scans](run-scan-microsoft-defender-antivirus.md) where the service may have been restarted 
+- Fixed an issue with Microsoft Defender Vulnerability Management to allow the execution of a [blocked application](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps) when the [warn option](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps#block-or-warn-mitigation-action) is selected 
+- Added support for managing schedule day/time for [signature updates in Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows#updates) and [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) 
+- Fixed non-standard signature path loading across platforms ([Windows](microsoft-defender-antivirus-windows.md), [Mac](microsoft-defender-endpoint-mac.md), [Linux](microsoft-defender-endpoint-linux.md), [Android](microsoft-defender-endpoint-android.md), and [iOS](microsoft-defender-endpoint-ios.md)) 
+- Improved handling of cached detections in [attack surface reduction](overview-attack-surface-reduction.md) capabilities 
+- Improved performance for enumerating virtual memory ranges 
+
+#### Known issues
+
+- None
+
+### October-2023 (Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
 
 - Security intelligence update version: **1.401.3.0**
 - Release date:  **November 3, 2023 (Engine) / November 6, 2023 (Platform)**
@@ -148,29 +174,6 @@ All our updates contain
 #### Known issues
 
 - None
-
-### August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
-
-- Security intelligence update version: **1.397.59.0**
-- Released:  **August 30, 2023 (Platform and Engine)**
-- Platform: **4.18.23080.2006**
-- Engine: **1.1.23080.2005**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Fixed an issue where Microsoft Defender Antivirus switched from [passive mode to active mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) following an update on Windows Server 2016 and Windows Server 2012 R2 [onboarded using the modern, unified client](configure-server-endpoints.md)
-- Fixed an issue where [exclusions](defender-endpoint-antivirus-exclusions.md) weren't applied correctly using [gpupdate](/windows-server/administration/windows-commands/gpupdate) when registry policy processing was set to process even if Group Policy Objects didn't change
-- Excluded IP addresses can now be configured using [Intune](/windows/client-management/mdm/defender-csp#configurationexcludedipaddresses)
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on Windows Server 2016
-- [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
-- Fixed an issue where [device control](device-control-removable-storage-protection.md) policies weren't applied correctly without a reboot following product updates
-- Fixed an issue in the attack surface reduction rule, [Block Win32 API calls from Office macros](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros), configured in warn mode where excluded files were incorrectly blocked until the next device reboot
-
-#### Known issues
-
-- None
-
 
 ### Previous version updates: Technical upgrade support only
 

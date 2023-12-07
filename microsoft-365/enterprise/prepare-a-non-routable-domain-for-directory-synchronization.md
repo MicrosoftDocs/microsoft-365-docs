@@ -1,9 +1,9 @@
 ---
-title: "Prepare a non-routable domain for directory synchronization"
+title: "Prepare a nonroutable domain for directory synchronization"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 12/5/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -23,20 +23,20 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: "Learn what to do if you have a non-routable domain associated with your on-premises user accounts before you synchronize them with your Microsoft 365 tenant."
+description: "Learn what to do if you have a nonroutable domain associated with your on-premises user accounts before you synchronize them with your Microsoft 365 tenant."
 ---
 
-# Prepare a non-routable domain for directory synchronization
+# Prepare a nonroutable domain for directory synchronization
 
-When you synchronize your on-premises directory with Microsoft 365, you have to have a verified domain in Microsoft Entra ID. Only the User Principal Names (UPNs) that are associated with the on-premises Active Directory Domain Services (AD DS) domain are synchronized. However, any UPN that contains a non-routable domain, such as ".local" (example: billa@contoso.local), will be synchronized to an .onmicrosoft.com domain (example: billa@contoso.onmicrosoft.com). 
+When you synchronize your on-premises directory with Microsoft 365, you have to have a verified domain in Microsoft Entra ID. Only the User Principal Names (UPNs) that are associated with the on-premises Active Directory Domain Services (AD DS) domain are synchronized. However, any UPN that contains a nonroutable domain, such as ".local" (example: billa@contoso.local), is synchronized to an .onmicrosoft.com domain (example: billa@contoso.onmicrosoft.com). 
 
-If you currently use a ".local" domain for your user accounts in AD DS, it's recommended that you change them to use a verified domain, such as billa@contoso.com, in order to properly synchronize with your Microsoft 365 domain.
+If you currently use a ".local" domain for your user accounts in AD DS, we recommend that you change them to use a verified domain. For example, billa@contoso.com, in order to properly synchronize with your Microsoft 365 domain.
   
 ## What if I only have a ".local" on-premises domain?
 
 You use Microsoft Entra Connect for synchronizing your AD DS to the Microsoft Entra tenant of your Microsoft 365 tenant. For more information, see [Integrating your on-premises identities with Microsoft Entra ID](/azure/architecture/reference-architectures/identity/azure-ad).
   
-Microsoft Entra Connect synchronizes your users' UPN and password so that users can sign in with the same credentials they use on-premises. However, Microsoft Entra Connect only synchronizes users to domains that are verified by Microsoft 365. This means that the domain also is verified by Microsoft Entra ID because Microsoft 365 identities are managed by Microsoft Entra ID. In other words, the domain has to be a valid Internet domain (such as, .com, .org, .net, .us). If your internal AD DS only uses a non-routable domain (for example, ".local"), this can't possibly match the verified domain you have for your Microsoft 365 tenant. You can fix this issue by either changing your primary domain in your on-premises AD DS, or by adding one or more UPN suffixes.
+Microsoft Entra Connect synchronizes your users' UPN and password so that users can sign in with the same credentials they use on-premises. However, Microsoft Entra Connect only synchronizes users to domains that are verified by Microsoft 365. Microsoft Entra ID verifies the domain, as it manages Microsoft 365 identities. In other words, the domain has to be a valid Internet domain (such as, .com, .org, .net, .us). If your internal AD DS only uses a nonroutable domain (for example, ".local"), this can't possibly match the verified domain you have for your Microsoft 365 tenant. You can fix this issue by either changing your primary domain in your on-premises AD DS, or by adding one or more UPN suffixes.
   
 ### Change your primary domain
 
@@ -46,7 +46,7 @@ Change your primary domain to a domain you've verified in Microsoft 365, for exa
 
 You can solve the ".local" problem by registering new UPN suffix or suffixes in AD DS to match the domain (or domains) you verified in Microsoft 365. After you register the new suffix, you update the user UPNs to replace the ".local" with the new domain name, for example, so that a user account looks like billa@contoso.com.
   
-After you've updated the UPNs to use the verified domain, you're ready to synchronize your on-premises AD DS with Microsoft 365.
+After you update the UPNs to use the verified domain, you're ready to synchronize your on-premises AD DS with Microsoft 365.
   
 #### Step 1: Add the new UPN suffix
   
@@ -74,7 +74,7 @@ After you've updated the UPNs to use the verified domain, you're ready to synchr
     
     **Or, if you don't have Windows Server 2012**
     
-    Press **Windows key + R** to open the **Run** dialog, and then type in Dsa.msc, and then click **OK**
+    Press **Windows key + R** to open the **Run** dialog, and then type in Dsa.msc, and then select **OK**
     
 2. Select a user, right-click, and then choose **Properties**.
     

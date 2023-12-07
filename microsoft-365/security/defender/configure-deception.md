@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 11/14/2023
+ms.date: 12/04/2023
 ---
 # Configure the deception capability in Microsoft Defender XDR
 
