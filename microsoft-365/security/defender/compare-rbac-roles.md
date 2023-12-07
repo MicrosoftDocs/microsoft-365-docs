@@ -32,6 +32,7 @@ This article describes how existing roles and permissions in Microsoft Defender 
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/p/?LinkID=2198108)
 - [Microsoft Defender for Office 365 Plan 2](https://go.microsoft.com/fwlink/p/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/p/?linkid=2229011)
+- [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

@@ -35,7 +35,7 @@ The following capabilities are included in this integration:
 - Automated onboarding - Defender for Endpoint sensor is automatically enabled on Windows Servers that are onboarded to Microsoft Defender for Cloud. For more information on Microsoft Defender for Cloud onboarding, see [Use the integrated Microsoft Defender for Endpoint license](/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
-    > The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support [Windows Server 2019 and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
+    > The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support [Windows Server 2019 and Azure Virtual Desktop (AVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
 
 - Windows servers monitored by Microsoft Defender for Cloud will also be available in Defender for Endpoint - Microsoft Defender for Cloud seamlessly connects to the Defender for Endpoint tenant, providing a single view across clients and servers.  In addition, Defender for Endpoint alerts will be available in the Microsoft Defender for Cloud console.
 - Server investigation - Microsoft Defender for Cloud customers can access the Microsoft Defender portal to perform detailed investigation to uncover the scope of a potential breach.

@@ -124,7 +124,7 @@ To complete this process, you must have admin privileges on the device.
       1. Open a Terminal window. Copy and execute the following command:
 
     ```bash
-    curl -o ~/Downloads/eicar.com.txt https://secure.eicar.org/eicar.com/txt 
+    curl -o ~/Downloads/eicar.com.txt https://secure.eicar.org/eicar.com.txt 
     ```
 
 1. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
