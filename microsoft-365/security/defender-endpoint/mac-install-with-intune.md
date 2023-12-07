@@ -287,7 +287,7 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
 1. Under **Select Platform**, select **macOS**.
 1. Under **Select Template**, select **Microsoft Defender Antivirus** and click **Create Policy**.
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/network protection1.jpg" alt-text="networkprotection":::
+    > :::image type="content" source="images/network-protection1.jpg" alt-text="networkprotection":::
 1. On the **Basics** tab, enter the **Name** and **Description** of the policy. Click **Next**.
     > [!div class="mx-imgBorder"]
     >:::image type="content" source="images/networkprotection2.png" alt-text="Basicstab":::
