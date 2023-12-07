@@ -72,6 +72,10 @@ To roll out Network Protection for macOS, we recommend the following:
 
 - Block/Warn UX isn't customizable and might require other look and feel changes
   - Customer feedback is being collected to drive further design improvements
+- There is a known application incompatibility issue with VMWare's "Per-App Tunnel" feature.
+  - This incompatibility might result in an inability to block traffic that goes through the "Per-App Tunnel."
+- There is a known application incompatibility issue with Blue Coat Proxy.
+  - This incompatibility might result in network layer crashes in unrelated applications when both Blue Coat Proxy and Network Protection are enabled.
 
 ### Important notes
 
