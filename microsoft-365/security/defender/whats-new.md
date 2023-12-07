@@ -41,7 +41,7 @@ You can also get product updates and important notifications through the [messag
 
 ## December 2023
 
-- Microsoft Defender XDR Unified role-based access control RBAC manage-rbac.md is now generally available. Unified (RBAC) allows administrators to manage user permissions across different security solutions from a single, centralized location. This offering is also available to GCC Moderate customers. To learn more, see [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md).
+- **Microsoft Defender XDR Unified role-based access control (RBAC)** is now generally available. Unified (RBAC) allows administrators to manage user permissions across different security solutions from a single, centralized location. This offering is also available to GCC Moderate customers. To learn more, see [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md).
 - Microsoft Defender Experts for XDR now lets you [exclude devices and users](get-started-xdr.md#exclude-all-high-value-devices-or-users-automatically) from remediation actions taken by our experts and instead get remediation guidance for those entities.
 - The Microsoft Defender XDR portal's incident queue has updated filters, search, and added a new function where you can create your own filter sets. For details, see [Available filters](incident-queue.md#available-filters).
 - You can now assign incidents to a user group or another user. For details, see [Assign an incident](manage-incidents.md#assign-an-incident).
