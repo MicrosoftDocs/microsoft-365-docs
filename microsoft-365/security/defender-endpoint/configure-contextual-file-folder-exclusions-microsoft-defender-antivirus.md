@@ -1,15 +1,11 @@
 ---
 title: Contextual file and folder exclusions
 description: Describes the contextual file and folder exclusions capability for Microsoft Defender Antivirus on Windows. This capability allows you to be more specific when you define under which context Microsoft Defender Antivirus shouldn't scan a file or folder, by applying restrictions
-keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: Dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/25/2022
+ms.date: 12/07/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
