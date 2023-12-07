@@ -110,7 +110,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 
 Download [netfilter.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-To configure network filter,
+To configure network filter:
 
 1. Under **Configuration profiles**, select **Create Profile**.
 1. Under **Platform**, select **macOS**.
@@ -134,7 +134,7 @@ To configure network filter,
 
 Download [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-To configure Full Disk Access,
+To configure Full Disk Access:
 1. Under **Configuration profiles**, select **Create Profile**.
 1. Under **Platform**, select **macOS**.
 1. Under **Profile type**, select **Templates**.
@@ -158,7 +158,7 @@ To configure Full Disk Access,
 
 Download [background_services.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/background_services.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-To configure background services,
+To configure background services:
 
 1. Under **Configuration profiles**, select **Create Profile**.
 1. Under **Platform**, select **macOS**.
@@ -185,7 +185,7 @@ To turn off notifications for the end users, you can change '**Show Notification
 
 ![Alt text](image.png)
 
-To configure notifications,
+To configure notifications:
 
 1. Under **Configuration profiles**, select **Create Profile**.
 1. Under **Platform**, select **macOS**.
@@ -259,7 +259,7 @@ In this step, we'll go over the “Preferences," which enables you to configure 
 
 Go through [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure) before setting the security policies using Microsoft Defender,
 
-  In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47),
+In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47):
 
 1. Go to **Configuration management** > **Endpoint security policies** > **Mac policies** > **Create new policy**.
 1. Under **Select Platform**, select **macOS**.
@@ -281,7 +281,7 @@ For more information, see [Set preferences for Microsoft Defender for Endpoint o
 
 ### Step 9: Network protection for Microsoft Defender for Endpoint on macOS
 
-In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47),
+In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47):
 
 1. Go to **Configuration management** > **Endpoint security policies** > **Mac policies** > **Create new policy**.
 1. Under **Select Platform**, select **macOS**.
@@ -336,9 +336,9 @@ A standard [Company Portal installation](/intune-user-help/enroll-your-device-in
 
    :::image type="content" source="images/mdatp-3-confirmdevicemgmt.png" alt-text="The Confirm device management page" lightbox="images/mdatp-3-confirmdevicemgmt.png":::
 
-    Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
+   Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
-    :::image type="content" source="images/mdatp-4-managementprofile.png" alt-text="The Management profile page" lightbox="images/mdatp-4-managementprofile.png":::
+   :::image type="content" source="images/mdatp-4-managementprofile.png" alt-text="The Management profile page" lightbox="images/mdatp-4-managementprofile.png":::
 
 2. Select **Continue** and complete the enrollment.
 
@@ -397,7 +397,7 @@ For more information, see [Add Microsoft Defender for Endpoint to macOS devices 
 
 #### Step 14: Download the onboarding package
 
-To download the onboarding packages from Microsoft 365 Defender portal,
+To download the onboarding packages from Microsoft 365 Defender portal:
 
 1. In the Microsoft 365 Defender portal, go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
@@ -428,7 +428,7 @@ To download the onboarding packages from Microsoft 365 Defender portal,
 
 This profile contains license information for Microsoft Defender for Endpoint, without which it is reported as not licensed.
 
-To deploy the onboarding package,
+To deploy the onboarding package:
 
 1. Under **Configuration profiles**, select **Create Profile**.
 1. Under **Platform**, select **macOS**.
