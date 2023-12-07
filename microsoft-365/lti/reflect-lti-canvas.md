@@ -2,9 +2,9 @@
 title: Integrate Microsoft Reflect LTI with Canvas
 ms.author: danismith
 author: DaniEASmith
-manager: serdars
+manager: pamgreen
 ms.reviewer: eladgr
-ms.date: 11/28/2023
+ms.date: 12/07/2023
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -41,23 +41,25 @@ Integrate Reflect into Canvas to create impactful check-ins, gain wellbeing insi
 1. Select the **OK** button to confirm your choice.
 1. In the Admin navigation, select the **Settings** link, and then choose the **Apps** tab.
 1. Select the **View App Configurations** button, and then select the **+ App** button.
-1. In the Add App screen, change the **Configuration Type** dropdown to **By Client ID**.
-1. In the Client ID textbox, enter the Microsoft Reflect LTI Client ID for Canvas: **170000000000823**, and then select **Submit**.
+1. In the **Add App** screen, change the **Configuration Type** dropdown to **By Client ID**.
+1. In the **Client ID** textbox, enter the Microsoft Reflect LTI Client ID for Canvas: **170000000000823**, and then select **Submit**.
 1. Select **Install** to complete the installation.
 
 Reflect is now installed and ready to use in any course in your Canvas account.
 
 > [!NOTE]
 > If you choose not to install the app for all courses as described in steps 6 to 10, then you or each course teacher must install the app for individual courses.
+> 
 > 1. To install the app for an individual course, select the **Settings** link in the course navigation, and then choose the **Apps** tab.
 > 1. Select the **View App Configurations** button, and then select the **+ App** button.
-> 1. In the Add App screen, change the **Configuration Type** dropdown to **By Client ID**.
-> 1. In the Client ID textbox, enter the Microsoft Reflect LTI Client ID for Canvas: **170000000000823**, and then select **Submit**.
+> 1. In the **Add App** screen, change the **Configuration Type** dropdown to **By Client ID**.
+> 1. In the **Client ID** textbox, enter the Microsoft Reflect LTI Client ID for Canvas: **170000000000823**, and then select **Submit**.
 > 1. Select **Install** to complete the installation.
 
 ## Ongoing use by course owners and members
 
-1. After the initial setup, course owners and members will find a tab of Reflect in every course.
+After the initial setup, course owners and members will find a tab of **Reflect** in every course.
+
 1. On their first access, they need to sign in using their Microsoft account to get started.
 1. Course owners can [create and share check-ins](https://support.microsoft.com/topic/c6cbbacc-5655-450e-bca9-988ddc506017).
 1. Once check-ins are created, course members can access and respond to them in their Reflect tab.
