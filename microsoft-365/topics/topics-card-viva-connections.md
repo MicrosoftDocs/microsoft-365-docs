@@ -48,7 +48,7 @@ The Discover card can be used to view topics and knowledge areas for people who 
 
 Topics cards can be added to the Viva Connections dashboard. The dashboard is one part of the Viva Connections experience that surfaces tools and content relevant to the viewer. [Learn more about how to add Topics cards to the Dashboard](/viva/connections/create-dashboard#create-a-dashboard-and-add-cards).
 
-![Topics cards in the Viva Connections toolbox.](../media/knowledge-management/viva-topics-cards-toolbox.png) 
+![Screenshot of Topics cards in the Viva Connections toolbox.](../media/knowledge-management/viva-topics-cards-toolbox.png) 
 
 1. Start by navigating to the [SharePoint home site](/sharepoint/home-site) and select **Manage Viva Connections** in the Settings panel.  
 2. Select **Create dashboard** or **View dashboard**.
