@@ -19,7 +19,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/17/2023
 ---
 
 # Update alert
@@ -91,8 +91,8 @@ Property|Type|Description|
 :---|:---|:---
 Status|String|Specifies the current status of the alert. The property values are: 'New', 'InProgress' and 'Resolved'.|
 assignedTo|String|Owner of the alert|
-Classification|String|Specifies the specification of the alert. The property values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.|
-Determination|String|Specifies the determination of the alert. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).|
+Classification|String|Specifies the specification of the alert. The property values are: `TruePositive`, `InformationalExpectedActivity`, and `FalsePositive`.|
+Determination|String|Specifies the determination of the alert. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (NotMalicious) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).|
 Comment|String|Comment to be added to the alert.|
 
 > [!NOTE]
