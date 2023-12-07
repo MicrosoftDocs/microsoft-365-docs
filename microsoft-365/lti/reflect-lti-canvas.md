@@ -34,8 +34,6 @@ Integrate Reflect into Canvas to create impactful check-ins, gain wellbeing insi
 > [!TIP]
 > Microsoft Reflect LTI Client ID for Canvas is **170000000000823**. You will use it when installing the app at the account level (for all courses in an account) or for individual courses.
 
-### One-time setup by administrator
-
 1. Sign into your Canvas instance as an administrator.
 1. Select the **Admin** link in the global navigation, and then select your account.
 1. In the Admin navigation, select the **Developer Keys** link, and then choose the **Inherited** tab.
