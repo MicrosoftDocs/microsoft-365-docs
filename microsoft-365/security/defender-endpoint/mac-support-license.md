@@ -153,7 +153,7 @@ Select **Switch to enterprise app** to switch to Enterprise experience.
 
 You can also suppress switching to experience for Individuals on MDM-enrolled machines by including **userInterface**/**consumerExperience** in the Defender's settings:
 
-```json
+```xml
 <key>userInterface</key>
 <dict>
     <key>consumerExperience</key>
