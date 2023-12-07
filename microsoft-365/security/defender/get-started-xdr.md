@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 06/14/2023
+ms.date: 12/07/2023
 ---
 
 # Get started with Microsoft Defender Experts for XDR
@@ -29,15 +29,15 @@ ms.date: 06/14/2023
 
 Once the Defender Experts for XDR team is ready to onboard your organization, you'll receive a welcome email to continue the setup and get you started.
 
-Select the link in the welcome email to directly launch the Defender Experts settings step-by-step guide in the Microsoft Defender portal. You can also open this guide by going to **Settings** > **Defender Experts** and selecting **Get started**.
+Select the link in the welcome email to directly launch the Defender Experts settings setup in the Microsoft Defender portal. You can also open this setup by going to **Settings** > **Defender Experts** and selecting **Get started**.
 
 :::image type="content" source="../../media/xdr/security-team-boost.png" alt-text="Screenshot of the Get started page in Defender for Experts XDR settings step-by-step guide." lightbox="../../media/xdr/security-team-boost.png":::
 
 ## Grant permissions to our experts
 
-By default, Defender Experts for XDR requires **Service provider access** that lets our experts sign into your tenant and deliver services based on assigned security roles. [Learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview).
+By default, Defender Experts for XDR requires **Service provider access** that lets our experts sign into your tenant and deliver services based on assigned security roles. [Learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview)
 
-You also need to grant our experts temporary, scoped access only as needed, depending on the type of work you'd like them to handle on your behalf:
+You also need to grant our experts one or both of the following permissions:
 
 - **Investigate incidents and guide my responses** (default) – This option lets our experts proactively monitor and investigate incidents and guide you through any necessary response actions. (Access level: Security Reader)
 - **Respond directly to active threats** (recommended) – This option lets our experts contain and remediate active threats immediately while investigating, thus reducing the threat's impact, and improving your overall response efficiency. (Access level: Security Operator)
@@ -45,12 +45,14 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 :::image type="content" source="../../media/xdr/managed-exclusions.png" alt-text="Screenshot of manage exclusions option while setting up Defender Experts for XDR." lightbox="../../media/xdr/managed-exclusions.png":::
 
 > [!IMPORTANT]
-> If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your organization. Even though our experts are granted these relatively powerful permissions, they will only have individual access to specific areas for a limited period. [Learn more about how Defender Experts for XDR permissions work](../defender/dex-xdr-permissions.md).
+> If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your organization.  
+>
+> Even though our experts are granted these relatively powerful permissions, they will only have individual access to specific areas for a limited period. [Learn more about how Defender Experts for XDR permissions work](../defender/dex-xdr-permissions.md)
 
 **To grant our experts permissions:**
 
-1. In the same Defender Experts settings step-by-step guide, under **Permissions**, choose the access level(s) you want to grant our experts.
-1. If you wish to exclude device and user groups in your organization from remediation actions, select **Manage exclusions**.
+1. In the same Defender Experts settings setup, under **Permissions**, choose the access level(s) you want to grant our experts.
+1. If you wish to [exclude device and user groups](#exclude-devices-and-users-from-remediation) in your organization from remediation actions, select **Manage exclusions**.
 1. Select **Next** to [add contact persons or groups](#tell-us-who-to-contact-for-important-matters).
 
 To edit or update permissions after the initial setup, go to **Settings** > **Defender Experts** > **Permissions**.
@@ -63,13 +65,12 @@ Defender Experts for XDR lets you exclude devices and users from remediation act
 
 1. In the same Defender Experts settings setup, under **Exclusions**, go to the **Device groups** tab.
 2. Select **+ Add device groups**, then search for and choose the device group(s) that you wish to exclude.
-
-> [!NOTE]
-> This page only lists existing device groups. If you wish to create a new device group, you first need to go to the Defender for Endpoint settings in your Microsoft 365 Defender portal. Then, refresh this page to search for and choose the newly created group. [Learn more about creating device groups](../defender-endpoint/machine-groups.md)
+   > [!NOTE]
+   > This page only lists existing device groups. If you wish to create a new device group, you first need to go to the Defender for Endpoint settings in your Microsoft 365 Defender portal. Then, refresh this page to search for and choose the newly created group. [Learn more about creating device groups](../defender-endpoint/machine-groups.md)
 
 3. Select **Add device groups**.
 4. Back on the **Device groups** tab, review the list of excluded device groups. If you wish to remove a device group from the exclusion list, choose it then select **Remove device group**.
-5. Select **Next** to confirm your exclusion list and proceed to [adding contact persons or groups](#tell-us-who-to-contact-for-important-matters). Otherwise, select **Skip**, and all the exclusions you’ve added won’t be saved.
+5. Select **Next** to confirm your exclusion list and proceed to [adding contact persons or groups](#tell-us-who-to-contact-for-important-matters). Otherwise, select **Skip**, and all your added exclusions are discarded.
 
 :::image type="content" source="../../media/xdr/exclude-device-groups.png" alt-text="Screenshot of option to exclude device groups." lightbox="../../media/xdr/exclude-device-groups.png":::
 
@@ -77,12 +78,12 @@ Defender Experts for XDR lets you exclude devices and users from remediation act
 
 1. In the same Defender Experts settings setup, under **Exclusions**, go to the **User groups** tab.
 2. Select **+ Add user groups**, then search for and choose the user group(s) that you wish to exclude.
-> [!NOTE]
-> This page only lists existing user groups. If you wish to create a new user group, you first need to sign into the Microsoft Entra ID admin center as a Global Administrator. Then, refresh this page to search for and choose the newly created group. [Learn more about creating user groups](/entra/fundamentals/groups-view-azure-portal.md)
+   > [!NOTE]
+   > This page only lists existing user groups. If you wish to create a new user group, you first need to sign into the Microsoft Entra ID admin center as a Global Administrator. Then, refresh this page to search for and choose the newly created group. [Learn more about creating user groups](/entra/fundamentals/groups-view-azure-portal.md)
 
 3. Select **Add user groups**.
 4. Back on the **User groups** tab, review the list of excluded user groups. If you wish to remove a user group from the exclusion list, choose it then select **Remove user group**.
-5. Select **Next** to confirm your exclusion list and proceed to [adding contact persons or groups](#tell-us-who-to-contact-for-important-matters). Otherwise, select **Skip**, and all the exclusions you’ve added won’t be saved.
+5. Select **Next** to confirm your exclusion list and proceed to [adding contact persons or groups](#tell-us-who-to-contact-for-important-matters). Otherwise, select **Skip**, and all your added exclusions are discarded.
 
 :::image type="content" source="../../media/xdr/exclude-user-groups.png" alt-text="Screenshot of option to exclude user groups in Defender Experts for XDR service." lightbox="../../media/xdr/exclude-user-groups.png":::
 
@@ -92,8 +93,8 @@ To edit or update exclusions after the initial setup, go to **Settings** > **Def
 
 Defender Experts for XDR also lets you exclude automatically identified high-value devices and users, such as key executives, or sensitive admins, from remediation actions by our experts:
 
-- **High-value devices** are those that your organization has [identified as such](../defender-vulnerability-management/tvm-assign-device-value.md) in Defender for Endpoint
-- **High-value users** are those that your organization has tagged with the Sensitive tag in Microsoft Defender for Identity and the priority account tag in Microsoft Defender for Office 365
+- **High-value devices** are devices in your organization that were [identified as such](../defender-vulnerability-management/tvm-assign-device-value.md) in Defender for Endpoint
+- **High-value users** are users in your organization that were tagged with the [Sensitive tag](/defender-for-identity/entity-tags#sensitive--tags) in Microsoft Defender for Identity and the [priority account tag](/microsoft-365/admin/setup/priority-accounts?view=o365-worldwide) in Microsoft Defender for Office 365
 
 Similar to the other excluded device or user groups, you instead get remediation guidance for these high-value entities when they’re excluded.
 > [!IMPORTANT]
@@ -111,21 +112,25 @@ Similar to the other excluded device or user groups, you instead get remediation
 
 ## Tell us who to contact for important matters
 
-Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there are critical incidents, service updates, occasional queries, and other recommendations.
+Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there are critical incidents, service updates, occasional queries, and other recommendations:
 
-- **Incident notification contacts** – These are contact persons or teams that we can notify for managed response actions or any communication that requires a prompt response. Given the urgent nature of the communications, it is recommended to have someone available at all times.
-- **Service review contacts** – These are contact persons or teams that we can engage with for ongoing security briefings done by our service delivery team.
+- **Incident notification contacts** – These contacts are persons or teams that we can notify for managed response actions or any communication that requires immediate response. Given the urgent nature of the communications, we recommended that these contacts are always available.
+- **Service review contacts** – These contacts are persons or teams that we can engage with for ongoing security briefings done by our service delivery team.
 
-Once identified, the individuals will receive an email notifying them that they have been chosen as a contact for incident notification or service review purposes.
+Once identified, the individuals or groups will receive an email notifying them that they were as a contact for incident notification or service review purposes.
 
 :::image type="content" source="../../media/xdr/who-to-contact-for-important-matters.png" alt-text="Screenshot of Incident contacts page in Defender for Experts XDR settings step-by-step guide." lightbox="../../media/xdr/who-to-contact-for-important-matters.png":::
 
 **To add notification contacts:**
 
-1. In the same Defender Experts settings step-by-step guide, under **Contacts**, search for and add your **Contact persons or team** that we can notify for managed response actions or any communication that requires a prompt response.
+1. In the same Defender Experts settings setup, under **Contacts**, search for and add your **Contact person or team** in the text field provided.
 2. Add a **Phone number** (optional) that Defender Experts can call for matters that require immediate attention.
 3. Under the **Contact for** dropdown box, choose **Incident notification** or **Service review**.
 4. Select **Add**.
+3.	Select **Next** to Review your settings 
+4.	Select **Submit**. The step-by-step guide then completes the initial setup.
+5.	Select **View readiness assessment** to complete the necessary actions required to [optimize your security posture](#prepare-your-environment-for-the-defender-experts-service). 
+
 
 To edit or update your notification contacts after the initial setup, go to **Settings** > **Defender Experts** > **Notification contacts**.
 
@@ -141,7 +146,7 @@ The readiness assessment is based on the number of protected devices and identit
 
 The readiness assessment has two parts:
 
-- **Actions needed** – This section shows the number of actions or security settings that you need to complete, are in progress, or have been completed. These are listed in a table at the bottom part of the page.
+- **Actions needed** – This section shows the number of actions or security settings that you need to complete, are in progress, or have been completed. These actions are listed in a table at the bottom part of the page.
 
   The list outlines the required steps you need to take before initiating the service. Prioritize the actions that have the **Complete now** status to get the Defender Experts for XDR service started sooner.
 
@@ -155,7 +160,7 @@ The readiness assessment has two parts:
 > [!IMPORTANT]
 > Defender Experts for XDR reviews your readiness assessment periodically, especially if there are any changes to your environment, such as the addition of new devices and identities. It’s important that you regularly monitor and run the readiness assessment beyond the initial onboarding to ensure that your environment has strong security posture to reduce risk.
 
-Once you’ve completed all the required tasks and met the onboarding targets in your readiness assessment, your service delivery manager (SDM) initiates the monitoring phase of the Defender Experts for XDR service, where, for a few days, our experts start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
+When you complete all the required tasks and meet the onboarding targets in your readiness assessment, your service delivery manager (SDM) initiates the monitoring phase of the Defender Experts for XDR service. For a few days, our experts start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
 
 ### Next step
 
