@@ -134,13 +134,8 @@ Once you turn on chat on Teams, a new team named Defender Experts team is create
 
 Conversations in the Teams chat about an incident are also synchronized with the incident’s **Chat** tab in the Microsoft Defender XDR portal so that you can see messages and updates about an investigation wherever you go.
 
-
-
 > [!IMPORTANT]
 > Defender Experts will have access to all messages posted on the team, in any channel.
-
-> [!NOTE]
-> The chat option is only available for incidents where we issued managed response.
 
 ## Get visibility to Defender Experts investigations in your SIEM or ITSM application
 
