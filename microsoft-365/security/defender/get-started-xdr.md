@@ -94,7 +94,7 @@ To edit or update exclusions after the initial setup, go to **Settings** > **Def
 Defender Experts for XDR also lets you exclude automatically identified high-value devices and users, such as key executives, or sensitive admins, from remediation actions by our experts:
 
 - **High-value devices** are devices in your organization that were [identified as such](../defender-vulnerability-management/tvm-assign-device-value.md) in Defender for Endpoint
-- **High-value users** are users in your organization that were tagged with the [Sensitive tag](/defender-for-identity/entity-tags#sensitive--tags) in Microsoft Defender for Identity and the [priority account tag](/microsoft-365/admin/setup/priority-accounts?view=o365-worldwide) in Microsoft Defender for Office 365
+- **High-value users** are users in your organization that were tagged with the [Sensitive tag](/defender-for-identity/entity-tags#sensitive--tags) in Microsoft Defender for Identity and the [priority account tag](/microsoft-365/admin/setup/priority-accounts) in Microsoft Defender for Office 365
 
 Similar to the other excluded device or user groups, you instead get remediation guidance for these high-value entities when they’re excluded.
 > [!IMPORTANT]
