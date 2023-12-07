@@ -352,7 +352,7 @@ A standard [Company Portal installation](/intune-user-help/enroll-your-device-in
 
 1. After the configuration profiles are deployed to your devices, open **System Preferences** > **Profiles** on your Mac device.
 
-   :::image type="content" source="images/mdatp-13-systempreferences.png" alt-text="The System preferences page" lightbox="images/mdatp-13-systempreferences.png":::
+   :::image type="content" source="images/mdatp-13-systempreferences.png" alt-text="The System preferences page":::
     
    :::image type="content" source="images/mdatp-14-systempreferencesprofiles.png" alt-text="The System Preferences Profiles page" lightbox="images/mdatp-14-systempreferencesprofiles.png":::
 
@@ -362,7 +362,7 @@ A standard [Company Portal installation](/intune-user-help/enroll-your-device-in
 
 3. You should also see the Microsoft Defender for Endpoint icon in the top-right corner.
 
-   :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The icon for Microsoft Defender for Endpoint in the status bar" lightbox="images/mdatp-icon-bar.png":::
+   :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The icon for Microsoft Defender for Endpoint in the status bar":::
 
 ### Step 13: Publish application
 

@@ -41,21 +41,21 @@ When [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.
 
 Select the **x** symbol.
 
-:::image type="content" source="images/error-mde-mac-deployment.png" alt-text="Screenshot that shows the menu bar containing the x symbol on the Microsoft Defender for Endpoint on macOS shield." lightbox="images/error-mde-mac-deployment.png":::
+:::image type="content" source="images/error-mde-mac-deployment.png" alt-text="Screenshot that shows the menu bar containing the x symbol on the Microsoft Defender for Endpoint on macOS shield.":::
 
 ### Message
 
 When you select the **x** symbol, you'll see options as shown in the following screenshot:
 
-:::image type="content" source="images/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that get listed on selecting the x symbol." lightbox="images/x-symbol-menu-items.png":::
+:::image type="content" source="images/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that get listed on selecting the x symbol.":::
 
 When you select **Action needed**, you'll get the error message as shown in the following screenshot:
 
-:::image type="content" source="images/license-not-found-message.png" alt-text="Screenshot of the page displaying the No license found message and its description." lightbox="images/license-not-found-message.png":::
+:::image type="content" source="images/license-not-found-message.png" alt-text="Screenshot of the page displaying the No license found message and its description.":::
 
 You'll encounter this message in a different way: If you're using the terminal to enter **mdatp health** without the double quotes, the message as shown in the following screenshot is displayed:
 
-:::image type="content" source="images/no-license-found-warning.png" alt-text="Screenshot of the product page on which the No license found warning message is displayed." lightbox="images/no-license-found-warning.png":::
+:::image type="content" source="images/no-license-found-warning.png" alt-text="Screenshot of the product page on which the No license found warning message is displayed.":::
 
 ### Cause
 
@@ -109,12 +109,12 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
 
     1. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying detail of the chosen license appears:
     
-      :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license." lightbox="images/resultant-screen-of-selecting-preferred-license.png":::
+      :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license.":::
 
     1. Select the **Assign licenses** link.
 
       
-      :::image type="content" source="images/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link." lightbox="images/assign-licenses-link.png":::
+      :::image type="content" source="images/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link.":::
 
       The following screen appears:
 
@@ -125,18 +125,18 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
     
        The following screen appears, displaying the details of the chosen license assignee and a list of options.
 
-       :::image type="content" source="images/assignee-details-and-options.png" alt-text="Screenshot of the page displaying the assignee's details and a list of options." lightbox="images/assignee-details-and-options.png":::
+       :::image type="content" source="images/assignee-details-and-options.png" alt-text="Screenshot of the page displaying the assignee's details and a list of options.":::
  
     1. Check the checkboxes for **Microsoft 365 Advanced Auditing**, **Microsoft 365 Defender**, and **Microsoft Defender for Endpoint**.
     1. Select **Save**.
 
 On implementing these solution-options (either of them), if the licensing issues have been resolved, and then you run **mdatp health**, you should see the following results:
 
-:::image type="content" source="images/results-after-license-issues-resolved.png" alt-text="Screenshot of the page containing the results displayed after running mdatp health." lightbox="images/results-after-license-issues-resolved.png":::
+:::image type="content" source="images/results-after-license-issues-resolved.png" alt-text="Screenshot of the page containing the results displayed after running mdatp health.":::
 
 ## Sign in with your Microsoft account
 
-:::image type="content" source="images/mac-consumer-login.png" alt-text="Screenshot of the page from which the users have to sign in with their Microsoft account's credentials to get started." lightbox="images/mac-consumer-login.png":::
+:::image type="content" source="images/mac-consumer-login.png" alt-text="Screenshot of the page from which the users have to sign in with their Microsoft account's credentials to get started.":::
 
 ### Message
 
