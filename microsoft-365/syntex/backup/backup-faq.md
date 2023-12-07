@@ -26,9 +26,9 @@ description: Read frequently asked questions about Microsoft 365 Backup.
 
 No, we still have the same point of view, but are now offering additional tools to help organizations achieve those goals and responsibilities.
 
-#### Why don’t DR copies suffice for my backup?
+#### Why don’t Disaster Recovery copies suffice for my backup?
 
-DR copies protect only the current state of content, not prior points in time. Microsoft 365 Backup provides additional benefit by giving you a way to restore data back to a healthy state in the past with fast RTO to with short RPO intervals.
+Disaster Recovery (DR) is the ability to recover from a situation in which the primary data center is unable to continue to operate. A DR copy with Microsoft 365 maintains the current state of content, not any historical versions from prior points in time. Microsoft 365 Backup provides additional benefit by giving you a way to restore data back to a healthy state in the past with fast RTO to with short RPO intervals.
 
 #### Why don’t versions already solve this point in time restore problem?
 
@@ -36,7 +36,7 @@ Versions give individual users a way to restore files or sites to prior points i
 
 #### Why don’t legal holds solve the problem of keeping all versions of items for recovery?
 
-Legal holds retain data, but that feature is optimized for export (fr example, via eDiscovery), not for mass restore. Microsoft 365 Backup gives the right enhanced restore tooling for ransomware and accidental/malicious deletions at scale, plus optimized performance for those scenarios.
+Legal holds retain data, but that feature is optimized for export (for example, via eDiscovery), not for mass restore. Microsoft 365 Backup gives the right enhanced restore tooling for ransomware and accidental/malicious deletions at scale, plus optimized performance for those scenarios.
 
 #### What mailbox changes are “backed up”?
 
