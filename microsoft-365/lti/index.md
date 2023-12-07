@@ -105,4 +105,5 @@ Integrate Reflect into your LMS to create impactful check-ins, gain wellbeing in
 
 For configuration steps, see:
 
+- [Microsoft Reflect with Canvas](reflect-lti-canvas.md).
 - [Microsoft Reflect with Schoology Learning](reflect-lti-schoology.md).

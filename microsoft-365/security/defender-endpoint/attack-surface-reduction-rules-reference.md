@@ -541,7 +541,7 @@ Dependencies: Microsoft Defender Antivirus
 
 This rule blocks web shell script creation on Microsoft Server, Exchange Role.
  
-A web shell script is a specifically crafted script that allows an attacker to control the compromise server. A web shell may include functionalities such as receiving and executing malicious commands, downloading and executing malicious files, stealing and exfiltrating credentials and sensitive information, identifying potential targets etc.
+A web shell script is a specifically crafted script that allows an attacker to control the compromised server. A web shell may include functionalities such as receiving and executing malicious commands, downloading and executing malicious files, stealing and exfiltrating credentials and sensitive information, identifying potential targets etc.
  
 Intune name: `Block Webshell creation for Servers`
  
