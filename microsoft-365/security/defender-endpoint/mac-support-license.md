@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 12/07/2023
 ---
 
 # Troubleshoot license issues for Microsoft Defender for Endpoint on macOS
