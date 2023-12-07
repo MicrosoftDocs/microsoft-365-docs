@@ -149,15 +149,11 @@ To exclude a file or folder and its contents from being scanned only when the fi
 
 ### Process restriction
 
-This restriction allows you to define that an exclusion should only apply when a file or folder is being accessed by a specific process. A common scenario is when you want to avoid excluding the process as that avoidance would cause Defender Antivirus to ignore other operations by that process.
+This restriction allows you to define that an exclusion should only apply when a file or folder is being accessed by a specific process. A common scenario is when you want to avoid excluding the process as that avoidance would cause Defender Antivirus to ignore other operations by that process. Wildcards are supported in the process name/path.
 
 > [!NOTE]  
 >
-> Using a large amount of process exclusion restrictions on a machine may adversely affect performance.  
-> In addition, because you restricted the exclusion to a certain process or processes, other active processes (such as indexing, backup, updates) can still trigger file scans.
-
-> [!NOTE]  
-> Wildcards are supported in the process name/path.
+> Using a large amount of process exclusion restrictions on a machine can adversely affect performance. In addition, if an exclusion is restricted to a certain process or processes, other active processes (such as indexing, backup, updates) can still trigger file scans.
 
 To exclude a file or folder only when accessed by a specific process, create a normal file or folder exclusion and add the process to restrict the exclusion to. For example:  
 
