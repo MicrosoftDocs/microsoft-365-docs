@@ -62,11 +62,11 @@ Different app protection settings are available for each supported platform. It 
 | Android | Data protection, Access requirements, Conditional launch |
 | Windows | Data protection, Health checks |
 
-When you create an app protection policy, you  choose the platform, the app to target,  
+When you create an app protection policy, you choose the platform, the app to target, as well as the specific settings from the app protection categories.
 
 ### Data protection
 
-The **Data Protection** settings determine how users interact with org data and context in policy-managed apps. As the admin, you can control the movement of data into and out of the context of org protection. The org context is defined by documents, services, and sites accessed by the specified org account. The app protection policy settings help control external data received into the org context and org data sent out of the org context.
+The **Data Protection** settings determine how users interact with org data and context in policy-managed apps. As the admin, you can control the movement of data into and out of the context of org protection. The org context is defined by documents, services, and sites accessed by the specified org account (Microsoft Entra ID) owned by the end-user. The app protection policy settings help control external data received into the org context and org data sent out of the org context.
 
 > [!NOTE]
 > The term *policy-managed apps* refers to apps that are configured with app protection policies.
@@ -83,49 +83,95 @@ Data protection has three primary categories:
 
 #### Data Transfer
 
-**iOS/iPadOS**:
-The **Data Transfer** section of the **Data Protection** settings for an iOS/iPadOS specific app protection policy has settings that are specific to the iOS/iPadOS platform. These settings include the Data Loss Prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. 
+**iOS/iPadOS app protection policy**:
+
+The **Data Transfer** section of the **Data Protection** settings for a iOS/iPadOS specific app protection policy has settings that are specific to the iOS/iPadOS platform. These settings determine how end-users interact with org data in the apps. You select settings to allow or block iTunes and iCloud backups, determine how apps can send and receive org data, restrict end-user initiated data movement between apps, and prevent third-party keyboards. 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-02.png" alt-text="Data Transfer UI for iOS/iPadOS" border="false" :::
 
-**Android**:
-The **Data Transfer** section of the **Data Protection** settings for an Android specific app protection policy has settings that are specific to the Android platform. These settings include the Data Loss Prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. 
+**Android app protection policy**:
+
+The **Data Transfer** section of the **Data Protection** settings for an Android specific app protection policy has settings that are also specific to the Android platform. In addition to the commonly offered app protection settings, Android app protection provides additional settings, such as allowing screen capture and Google Assistant.
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-03.png" alt-text="Data Transfer UI for Android" border="false" :::
 
-**Windows**:
-The **Data Transfer** section of the **Data Protection** settings for an Windows specific app protection policy has settings that are specific to the Windows platform. These settings include the Data Loss Prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. 
+**Windows app protection policy**:
+
+The **Data Transfer** section of the **Data Protection** settings for a Windows specific app protection policy has settings that are specific to the Windows platform. These DLP settings provide three main options for Android apps. These settings involve how data is received, sent, and moved between apps. 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-04.png" alt-text="Data Transfer UI for Windows" border="false" :::
 
 #### Encryption
 
-**iOS/iPadOS**:
+Encryption is available for iOS/iPadOS and Android as part of an app protection policy. The **Encryption** section under the **Data Transfer** section, is also part of the **Data Protection** settings.
 
+Choose **Require** to enable encryption of work or school data in an app.
 
+**iOS/iPadOS app protection policy**:
+
+ Intune enforces iOS/iPadOS device encryption to protect app data while the device is locked. Applications may optionally encrypt app data using Intune APP SDK encryption. Intune APP SDK uses iOS/iPadOS cryptography methods to apply 128-bit AES encryption to app data.
+
+When you enable this setting, the user may be required to set up and use a PIN to access their device. If there's no device PIN and encryption is required, the user is prompted to set a PIN with the message "Your organization has required you to first enable a device PIN to access this app."
+
+> [!NOTE]
+> Go to the official Apple documentation to see which iOS encryption modules are FIPS 140-2 compliant or pending FIPS 140-2 compliance.
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-05.png" alt-text="Encryption UI for iOS/iPadOS" border="false" :::
 
-**Android**:
+**Android app protection policy**:
 
+Intune uses a wolfSSL, 256-bit AES encryption scheme along with the Android Keystore system to securely encrypt app data. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted. New files will be encrypted with 256-bit keys. Existing 128-bit encrypted files will undergo a migration attempt to 256-bit keys, but the process is not guaranteed. Files encrypted with 128-bit keys will remain readable.
+
+> [!NOTE]
+> The encryption method is FIPS 140-2 compliant.
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-06.png" alt-text="Encryption UI for Android" border="false" :::
 
-
 #### Functionality
 
-**iOS/iPadOS**:
+The **Functionality** section is the last section in the **Data Protection** settings of an app protection policy. This section provides additional data protection settings. 
 
+**iOS/iPadOS app protection policy**:
 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-07.png" alt-text="Functionality UI for iOS/iPadOS" border="false" :::
 
-**Android**:
+**Android app protection policy**:
 
+For Android app protection settings, you can choose to block policy managed apps from saving data to the end-user's device's native apps (like Contacts, Calendar and widgets), or to prevent the use of add-ins within the policy managed apps. If you choose Allow, the policy managed app can save data to the native apps or use add-ins, if those features are supported and enabled within the policy managed app.
+
+Apps may provide additional configuration capability with app configuration policies. For more information, see the app developer's documentation.
+
+Select one of the following options to specify the apps that this app can open web content in:
+
+Microsoft Edge: Allow web content to open only in Microsoft Edge. Learn how Microsoft Edge protects your data.
+
+Unmanaged browser: Allow web content to open only in the unmanaged browser defined by "Unmanaged browser ID" setting
+
+Any app: Allow web links in any app
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-08.png" alt-text="Functionality UI for Android" border="false" :::
 
-**Windows**:
+
+
+Select one of the following options to specify how notifications for org accounts are shown for this app and any connected devices such as wearables:
+
+Block: Do not share notifications.
+
+Block org Data: Do not share org data in notifications. If not supported by the application, notifications are blocked.
+
+Allow: Share all notifications.
+
+Android only: Note: This setting does not apply to all applications. For more information see
+https://docs.microsoft.com/en-us/intune/app-protection-policy-settings-android#data-protection
+ 
+
+iOS only: Note: This setting does not apply to all applications. For more information see
+https://docs.microsoft.com/en-us/intune/app-protection-policy-settings-ios#data-protection
+
+In addition, you can select to allow a connection to Microsoft Tunnel VPN when the app is launched.
+
+**Windows app protection policy**:
 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-09.png" alt-text="Functionality UI for Windows" border="false" :::
@@ -134,24 +180,24 @@ The **Data Transfer** section of the **Data Protection** settings for an Windows
 
 ### Access requirements
 
-**iOS/iPadOS**:
+**iOS/iPadOS app protection policy**:
 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-10.png" alt-text="Access requirements UI for iOS/iPadOS" border="false" :::
 
-**Android**:
+**Android app protection policy**:
 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-11.png" alt-text="Access requirements UI for Android" border="false" :::
 
 ### Conditional launch
 
-**iOS/iPadOS**:
+**iOS/iPadOS app protection policy**:
 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-12.png" alt-text="Conditional launch UI for iOS/iPadOS" border="false" :::
 
-**Android**:
+**Android app protection policy**:
 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-13.png" alt-text="Conditional launch UI for Android" border="false" :::
@@ -161,7 +207,7 @@ The **Data Transfer** section of the **Data Protection** settings for an Windows
 
 Health checks allow you to configure conditional launch capabilities. To do this, you must set the health check conditions for your app protection policy. Select a **Setting** and enter the **Value** that users must meet to access your org data. Then select the **Action** you want to take if users do not meet your conditionals. In some cases, multiple actions can be configured for a single setting.
 
-**Windows**:
+**Windows app protection policy**:
 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-14.png" alt-text="Health checks UI for Windows" border="false" :::
@@ -178,9 +224,17 @@ Your employees use mobile devices for both personal and work tasks. While making
 
 ## Understand app protection framework
 
-Your organization's data protection needs may differ from other organizations. For this reason, you can tailor the app protection in Intune based on your organization's specific needs. The App protection policies (APP) data protection framework is organized into three distinct configuration levels, with each level building off the previous level.
+Your organization's data protection requirements may differ from other organizations. For this reason, you can tailor the app protection that you deploy from Intune based on your organization's specific needs. You can use the App protection policy (APP) data protection framework to apply app protection across your organization. The APP data protection framework is organized into three distinct configuration levels, with each consecutive level building off the previous level.
 
-- 
+| Protection   level | Description |
+|---|---|
+| Enterprise basic data protection (Level 1) | This is an entry level configuration that provides similar data protection control in Exchange Online mailbox policies and introduces you and your IT admins APP. Microsoft recommends this configuration as the minimum data protection configuration for an enterprise device. |
+| Enterprise enhanced data protection (Level 2)  | This protection level, which builds on the previous level, is applicable to most mobile users accessing work or school data. Microsoft recommends this configuration for devices where users access sensitive or confidential information.  |
+| Enterprise high data protection (Level 3) | This protection level, which also builds on the previous level, is desirable for users that are accessing high risk data.  Microsoft recommends this configuration for devices run by an organization with a larger or more sophisticated security team, or for specific users or groups who are at uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). An organization likely to be targeted by well-funded and sophisticated adversaries should aspire to this configuration. |
+
+> [!IMPORTANT]
+> Because each protection level builds on the previous, you should consider implementing them in order.
+
 
 
 <!--
