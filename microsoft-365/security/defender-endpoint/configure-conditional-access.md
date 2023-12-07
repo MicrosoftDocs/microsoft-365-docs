@@ -71,8 +71,8 @@ Take the following steps to enable Conditional Access:
 
 ### Step 2: Turn on the Defender for Endpoint integration in Intune
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **Device compliance** \> **Microsoft Defender ATP**.
+1. Sign in to the [Intune portal](https://intune.microsoft.com)
+2. Select **Endpoint Security** \> **Microsoft Defender for Endpoint**.
 3. Set **Connect Windows 10.0.15063+ devices to Microsoft Defender Advanced Threat Protection** to **On**.
 4. Click **Save**.
 
