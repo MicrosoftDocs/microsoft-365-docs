@@ -1,7 +1,7 @@
 ---
 title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 09/13/2023
 audience: ITPro
@@ -10,7 +10,7 @@ ms.author: deniseb
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.subservice: mde
+ms.subservice: asr
 ms.topic: overview
 ms.collection: 
 - m365-security

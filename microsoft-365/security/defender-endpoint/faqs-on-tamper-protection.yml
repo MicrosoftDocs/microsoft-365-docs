@@ -2,19 +2,17 @@
 metadata:
   title: Frequently asked questions (FAQs) about tamper protection 
   description: Find answers to frequently asked questions
-  ms.service: microsoft-365-security
-  ms.subservice: mde
+  ms.service: defender-endpoint
+  ms.subservice: ngp
   ms.localizationpriority: medium
   audience: ITPro
   author: denisebmsft
   ms.author: deniseb
   ms.reviewer: joshbregman, sugamar 
   manager: dansimp
-  ms.custom: asr
   ms.topic: faq
   ms.collection: 
   - m365-security
-  - mde-ngp
   ms.date: 10/27/2023
 title: Frequently asked questions (FAQs) about tamper protection 
 summary: | 

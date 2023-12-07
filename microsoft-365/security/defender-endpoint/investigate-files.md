@@ -2,7 +2,7 @@
 title: Investigate Microsoft Defender for Endpoint files
 description: Use the investigation options to get details on files associated with alerts, behaviors, or events.
 keywords: investigate, investigation, file, malicious activity, attack motivation, deep analysis, deep analysis report
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
 - mde-edr
 ms.topic: conceptual
 ms.date: 07/10/2023
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 

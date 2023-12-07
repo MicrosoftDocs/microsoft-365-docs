@@ -4,7 +4,7 @@ description: This topic describes the changes that are must be made in order to 
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, big sur, monterey, ventura, mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -19,7 +19,7 @@ ms.collection:
 - mde-macos
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
-ms.subservice: mde
+ms.subservice: macos
 ms.date: 12/18/2020
 ---
 

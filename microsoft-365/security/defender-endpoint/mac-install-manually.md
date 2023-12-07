@@ -1,7 +1,7 @@
 ---
 title: Manual deployment for Microsoft Defender for Endpoint on macOS
 description: Install Microsoft Defender for Endpoint on macOS manually, from the command line.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ ms.collection:
 - mde-macos
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 11/20/2023
 ---
@@ -124,7 +124,7 @@ To complete this process, you must have admin privileges on the device.
       1. Open a Terminal window. Copy and execute the following command:
 
     ```bash
-    curl -o ~/Downloads/eicar.com.txt https://secure.eicar.org/eicar.com/txt 
+    curl -o ~/Downloads/eicar.com.txt https://secure.eicar.org/eicar.com.txt 
     ```
 
 1. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:

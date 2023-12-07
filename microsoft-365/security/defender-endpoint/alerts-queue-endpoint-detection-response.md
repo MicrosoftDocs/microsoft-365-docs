@@ -3,7 +3,7 @@ title: Alerts queue in Microsoft Defender XDR
 ms.reviewer:
 description: View and manage the alerts surfaced in Microsoft Defender XDR
 keywords:
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +18,7 @@ ms.collection:
 - mde-edr
 ms.topic: conceptual
 ms.date: 09/03/2018
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 

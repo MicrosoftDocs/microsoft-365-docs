@@ -2,7 +2,7 @@
 title: Configure alert notifications that are sent to MSSPs
 description: Configure alert notifications that are sent to MSSPs
 keywords: managed security service provider, mssp, configure, integration
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,6 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 12/18/2020
 ---
