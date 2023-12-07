@@ -80,9 +80,10 @@ The next step is to create system configuration profiles that Microsoft Defender
 In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), open **Devices** \> **Configuration profiles**.
 
 ### Step 1: Approve system extensions
+
 1. In Microsoft Defender portal, go to **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
 
-This profile is needed for Big Sur (11) or later. It is ignored on older macOS since they use the kernel extension.
+   This profile is needed for Big Sur (11) or later. It is ignored on older macOS since they use the kernel extension.
 
 1. Under **Configuration profiles**, select **Create Profile**.
 1. Under **Platform**, select **macOS**.
