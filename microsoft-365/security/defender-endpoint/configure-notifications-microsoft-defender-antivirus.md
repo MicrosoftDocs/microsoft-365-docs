@@ -2,8 +2,8 @@
 title: Configure Microsoft Defender Antivirus notifications
 description: Learn how to configure and customize both standard and other Microsoft Defender Antivirus notifications on endpoints.
 keywords: notifications, defender, antivirus, endpoint, management, admin
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security

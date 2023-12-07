@@ -2,7 +2,7 @@
 title: Machine resource type
 description: Learn about the methods and properties of the Machine resource type in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, get, machines
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020

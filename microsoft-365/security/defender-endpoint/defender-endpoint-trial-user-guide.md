@@ -11,8 +11,8 @@ ms.date: 07/07/2022
 ms.collection: 
 - m365-security
 - tier2
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium
 ms.reviewer: 
 f1.keywords: NOCSH

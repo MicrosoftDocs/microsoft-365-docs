@@ -1,7 +1,7 @@
 ---
 title: Manual deployment for Microsoft Defender for Endpoint on macOS
 description: Install Microsoft Defender for Endpoint on macOS manually, from the command line.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ ms.collection:
 - mde-macos
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 11/20/2023
 ---
@@ -183,6 +183,76 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
   ```
 
  You can [troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/troubleshoot-cloud-connect-mdemac?view=o365-worldwide&branch=pr-en-us-22831&preserve-view=true).
+
+1. Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
+
+     ```bash
+     mdatp health --field real_time_protection_enabled
+     ```
+
+      1. Open a Terminal window. Copy and execute the following command:
+
+    ```bash
+    curl -o ~/Downloads/eicar.com.txt https://secure.eicar.org/eicar.com.txt 
+    ```
+
+1. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
+
+     ```bash
+     mdatp threat list
+     ```
+
+3. Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+
+   1. In your browser such as Microsoft Edge for Mac or Safari.
+
+   1. Download MDATP MacOS DIY.zip from https://aka.ms/mdatpmacosdiy and extract.
+
+      You may be prompted:
+
+      > Do you want to allow downloads on "mdatpclientanalyzer.blob.core.windows.net"?<br/>
+      > You can change which websites can download files in Websites Preferences.
+
+4. Click **Allow**.
+
+5. Open **Downloads**.
+
+6. You should see **MDATP MacOS DIY**.
+
+   > [!TIP]
+   > If you double-click, you will get the following message:
+   >
+   > > **"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.**<br/>
+   > > macOS cannot verify that this app is free from malware.<br/>
+   > > **[Move to Trash]** **[Cancel]**
+
+7. Click **Cancel**.
+
+8. Right-click **MDATP MacOS DIY**, and then click **Open**.
+
+    The system should display the following message:
+
+    > **macOS cannot verify the developer of MDATP MacOS DIY. Are you sure you want to open it?**<br/>
+    > By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
+
+9. Click **Open**.
+
+    The system should display the following message:
+
+    > Microsoft Defender for Endpoint - macOS EDR DIY test file<br/>
+    > Corresponding alert will be available in the MDATP portal.
+
+10. Click **Open**.
+
+    In a few minutes an alert named "macOS EDR Test Alert" should be raised.
+
+11. Go to Microsoft Defender portal (https://security.microsoft.com/).
+
+12. Go to the Alert Queue.
+
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="An macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
+
+    Look at the alert details and the device timeline, and perform the regular investigation steps.
 
 ## Logging installation issues
 
