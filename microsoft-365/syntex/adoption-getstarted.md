@@ -52,6 +52,17 @@ Content is the lifeblood of the organization. Many business units in your organi
 
 Thinking about the typical content lifecycle where content is created and re-created, through to content understanding and processing and content discovery and search, there are many features within Syntex that can help your business.
 
+
+:::row:::
+   :::column span="2":::
+      Thinking about the typical content lifecycle where content is created and re-created, through to content understanding and processing and content discovery and search, there are many features within Syntex that can help your business.
+   :::column-end:::
+   :::column span="":::
+      ![Diagram showing the content lifecycle.](../media/content-understanding/content-lifecycle.png)
+   :::column-end:::
+:::row-end:::
+
+
 ![Diagram showing the content lifecycle.](../media/content-understanding/content-lifecycle.png)
 
 ### Content creation and reuse
