@@ -35,23 +35,29 @@ Email authentication (also known as _email validation_) is a group of standards 
 
 - **Sender Policy Framework (SPF)**: Identifies the source email servers that are authorized to send mail for the domain. The domain is used in sender's email address during SMTP transmission of the message between email servers (known as the `5321.MailFrom` address, **MAIL FROM** address, P1 sender, or envelope sender).
 - **DomainKeys Identified Mail (DKIM)**: Uses a domain to digitally sign important elements of the message, including the From: message header field that's shown as the sender's email address in email clients. This address is also known as the `5322.From` address, From address, or P2 sender. The signature is stored in the message header to verify that the signed elements of the message weren't altered in transit.
-- **Domain-based Message Authentication, Reporting and Conformance (DMARC)**: Contains a policy that defines the action for messages that fail SPF or DKIM checks for senders in the domain.
-- **Authenticated Received Chain (ARC)**: Preserves original email authentication information by services that modify messages in transit. The destination email server can use this information to authentication messages that would otherwise fail email authentication.
+- **Domain-based Message Authentication, Reporting and Conformance (DMARC)**: Contains a policy that defines the action for messages that fail SPF and/or DKIM checks for senders in the domain, and identifies reporting services to send DMARC results to.
+- **Authenticated Received Chain (ARC)**: Preserves original email authentication information by known services that modify messages in transit. The destination email server can use this information to authentication messages that would otherwise fail email authentication.
 
 It's important to realize that these standards _work together_ to provide the best possible protection:
 
 - SPF validates the domain in the `5321.MailFrom` address only. The domain in the From address that's shown in email clients isn't considered.
-  - An attacker can register a domain (adatum.com), configure SPF for that domain, and then send email from a legitimate source for that domain using a different domain in the From address (proseware.com) as part of an attack that passes SPF authentication (a false negative).
-  - A legitimate email service might always have a mismatch between the `5321.MailFrom` address and the From address. If SPF is based on the From address, the messages always fail SPF authentication (a false positive).
-  - SPF doesn't work on forwarded email that redirects or _relays_ the message so the message source becomes the forwarding server. The forwarding server isn't authorized to send email from the original domain, so the message fails SPF authentication (a false positive).
+  - An attacker can send email that passes SPF authentication (a false negative) by:
+    - Registering a domain (for example, adatum.com) and configuring SPF for the domain.
+    - Sending email from valid sources for that domain, but using a different domain in the From address (for example, proseware.com).
+  - Similarly, a legitimate email service might always have a mismatch between the `5321.MailFrom` domain and the From address domain. If SPF is based on the From address domain, the messages fail SPF authentication (a false positive).
+  - SPF doesn't work on server-based email forwarding that redirects or _relays_ messages because:
+    - The act of forwarding causes the forwarding server to appear as the source of the messages.
+    - The forwarding server isn't authorized to send email for the original domain, so the message fails SPF authentication (a false positive).
 
-- The domain that DKIM uses to sign the message doesn't need to match the domain in the From address that's shown in email clients.
-  - DKIM can help in scenarios where the `5321.MailFrom` address and the From address are legitimately different by design. If the From address domain is used to sign the message, the message passes DKIM authentication.
-  - Like SPF, an attacker can register a domain (adatum.com), configure DKIM for that domain, and then send email using a different domain in the From address (proseware.com) as part of an attack that passes DKIM authentication (a false negative).
+- The domain that DKIM uses to sign the message doesn't need to match the domain in the From address that's shown in email clients. This behavior is both good and bad:
+  - DKIM can help in scenarios where the domains in the `5321.MailFrom` address and the From address are legitimately different by design (a false positive). DKIM configured in the domain of the From address signs the messages, and the messages pass DKIM authentication.
+  - Like SPF, an attacker can send email that passes DKIM authentication (a false negative) by:
+    - Registering a domain (for example, adatum.com) and configuring DKIM for the domain.
+    - Sending email using a different domain in the From address (for example, proseware.com).
 
-- DMARC closes the loop by verifying that the `5321.MailFrom` address and the From address match in email messages. You can set up DMARC in report only mode without configuring SPF or DKIM for your domain. To quarantine or reject messages based on DMARC authentication failures, you need to configure SPF and DMARC for your domain.
+- DMARC closes the loop by verifying that the domains in the `5321.MailFrom` address and the From address match in email messages. DMARC uses SPF and DKIM authentication failures to quarantine or reject messages based on DMARC authentication failures, you need to configure SPF and DMARC for your domain.
 
-- Legitimate services that modify message in transit break SPF, DKIM and DMARC. If the service is able to preserve the original email authentication information, and you identify the service as a trusted ARC sealer, ARC uses that information to validate the message.
+- Legitimate services that modify messages in transit break SPF, DKIM and DMARC. If the service is able to preserve the original email authentication information, and you identify the service as a trusted ARC sealer, ARC can use that information to validate the message so it can pass DMARC.
 
 To configure email authentication for mail **sent from** Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, see the following articles:
 
@@ -77,6 +83,7 @@ Because of phishing concerns and the less than complete adoption of strong email
 - Sender history.
 - Recipient history.
 - Behavioral analysis.
+- Other advanced techniques.
 
 To see Microsoft's original announcement about implicit authentication, see [A Sea of Phish Part 2 - Enhanced Anti-spoofing in Microsoft 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
 
@@ -84,7 +91,7 @@ Using these other signals, messages that would otherwise fail traditional email 
 
 ### Composite authentication
 
-The results of Microsoft 365's implicit authentication checks are combined and stored in a single value named _composite authentication_ or `compauth` for short. The `compauth` value is stamped into the **Authentication-Results** header in the message headers.
+The results of Microsoft 365's implicit authentication checks are combined and stored in a single value named _composite authentication_ or `compauth` for short. The `compauth` value is stamped into the **Authentication-Results** header in the message headers. The **Authentication-Results** header uses the following syntax:
 
 ```text
 Authentication-Results:
@@ -149,7 +156,7 @@ The following examples focus on the results of email authentication only (the `c
 
 ### How companies can avoid email authentication failures when sending mail to Microsoft 365
 
-- **Configure SPF, DKIM, and DMARC records for your domains**: Use the configuration information that's provided by your domain registrar or DNS hosting service. There are also third party companies dedicated to helping your organization set up email authentication records.
+- **Configure SPF, DKIM, and DMARC records for your domains**: Use the configuration information that's provided by your domain registrar or DNS hosting service. There are also third party companies dedicated to helping set up email authentication records.
 
   Many companies don't publish SPF records because they don't know all of the email sources for messages in their domain.
 
@@ -159,7 +166,7 @@ The following examples focus on the results of email authentication only (the `c
      fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ~all"
      ```
 
-    If you create this SPF record, Microsoft 365 treats inbound email from your corporate infrastructure as authenticated, but email from unidentified sources might still be marked as spoof if it fails composite authentication. However, this behavior is still an improvement from all email being marked as spoof by Microsoft 365. Typically, other email servers and services also allow delivery of messages from senders in your domain from unidentified sources.
+    If you create this SPF record, Microsoft 365 treats inbound email from your corporate infrastructure as authenticated, but email from unidentified sources might still be marked as spoof if it fails composite authentication. However, this behavior is still an improvement from all email senders in the domain being marked as spoof by Microsoft 365. Typically, other email servers and services also allow delivery of messages from senders in your domain from unidentified sources when SPF is configured with a soft fail enforcement rule.
 
   2. Discover and include more email sources for your messages. For example:
      - On-premises email servers.
@@ -170,12 +177,12 @@ The following examples focus on the results of email authentication only (the `c
 
   3. Set up DKIM to digitally sign messages.
   
-  4. Set up DMARC to validate that the `5321.MailFrom` address matches the From address, and to specify what to do with messages that fail DMARC checks (reject or quarantine).
+  4. Set up DMARC to validate that the `5321.MailFrom` address matches the From address, and to specify what to do with messages that fail DMARC checks (reject or quarantine), and to identify reporting services to monitor DMARC results.
 
   5. If you use bulk senders to send email on your behalf, verify that the domain in the From address matches the domain that passes SPF or DMARC.
 
 - **You host a domain's email or provide hosting infrastructure that can send email**:
-  - Ensure your customers have documentation that explains how to configure their SPF records
-  - Consider signing DKIM-signatures on outbound email, even if the customer doesn't explicitly set it up (sign with a default domain). You can even double-sign the email with DKIM signatures (first with the customer's domain, and then with your company's DKIM signature).
+  - Ensure your customers have documentation that explains how to configure SPF for their domains.
+  - Consider signing DKIM-signatures on outbound email, even if the customer doesn't explicitly set it up (sign with a default domain). You can even double-sign the email with DKIM signatures (with your company domain and the customer's domain if/when it's available).
 
-  Delivery to Microsoft isn't guaranteed, even if you authenticate email originating from your platform. But, email authentication ensures that Microsoft doesn't junk your customers' email because it isn't authenticated.
+  Delivery to Microsoft isn't guaranteed, even if you authenticate email originating from your platform. But, email authentication ensures that Microsoft doesn't automatically junk email from your customer domains simply because it isn't authenticated.
