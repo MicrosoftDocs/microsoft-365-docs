@@ -413,7 +413,7 @@ To download the onboarding packages from Microsoft 365 Defender portal:
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
 
-    ```Output
+    ```console
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     warning:  WindowsDefenderATPOnboardingPackage.zip appears to use backslashes as path separators
       inflating: intune/kext.xml
