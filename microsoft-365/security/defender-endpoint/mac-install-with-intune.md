@@ -287,7 +287,7 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
 1. Under **Select Platform**, select **macOS**.
 1. Under **Select Template**, select **Microsoft Defender Antivirus** and click **Create Policy**.
 
-   :::image type="content" source="images/network-protection1.jpg" alt-text="networkprotection":::
+   :::image type="content" alt-text="networkprotection" source="images/network-protection1.jpg" lightbox="images/network-protection1.jpg":::
 
 1. On the **Basics** tab, enter the **Name** and **Description** of the policy. Click **Next**.
 
@@ -421,7 +421,7 @@ To download the onboarding packages from Microsoft 365 Defender portal:
       inflating: jamf/WindowsDefenderATPOnboarding.plist
     ```
 
-    :::image type="content" source="media/deploy-onboarding-package.png" alt-text="Sample description":::
+    :::image type="content" alt-text="Sample description" source="media/deploy-onboarding-package.png" lghtbox="media/deploy-onboarding-package.png":::
 
 
 ### Step 15: Deploy the onboarding package
@@ -436,22 +436,22 @@ To deploy the onboarding package:
 1. Under **Template name**, select **Custom**.
 1. Click **Create**.
 
-   :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-1.png" alt-text="Deploy onboarding package":::
+   :::image type="content" alt-text="Deploy onboarding package" source="images/mdatp-6-systemconfigurationprofiles-1.png" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
 
 1. On the **Basics** tab, **Name** the profile. For example, 'Autoupdate-prod-macOS-Default-MDE'. Click **Next**.
 
-   :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="click next":::
+   :::image type="content" alt-text="click next" source="images/mdatp-6-systemconfigurationprofiles-2.png" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
 
 1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Autoupdate.mobileconfig'.
 1. Choose a **Deployment channel**.
 1. Click **Next**.
 1. Select a **Configuration profile file**.
 
-   :::image type="content" source="images/mdatp-6-systemconfigurationprofiles.png" alt-text="configuration profile":::
+   :::image type="content" alt-text="configuration profile" source="images/mdatp-6-systemconfigurationprofiles.png" lightbox="images/mdatp-6-systemconfigurationprofiles.png":::
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
-   :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="assign users":::
+   :::image type="content" alt-text="assign users" source="images/mdatp-6-systemconfigurationprofiles-3.png" lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 1. Review the configuration profile. Click **Create**.
 1. Open **Devices** > **Configuration profiles** to see the created profile.
@@ -504,7 +504,7 @@ See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove M
 <br>Describes how to configure Microsoft Defender for Endpoint on Android
 
 [Manage Defender for Endpoint on Android devices in Intune - Azure](/mem/intune/protect/advanced-threat-protection-manage-android?source=recommendations)
-<br>Configure Microsoft Defender for Endpoint web protection on Android devices managed by Microsoft Intune.
+<br>Configure Microsoft Defender for Endpoint web protection on Android devices managed by Microsoft Intune
 
 
 
