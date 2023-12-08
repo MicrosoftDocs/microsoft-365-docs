@@ -422,7 +422,7 @@ To download the onboarding packages from Microsoft 365 Defender portal:
       inflating: jamf/WindowsDefenderATPOnboarding.plist
     ```
 
-    :::image type="content" alt-text="Sample description" source="media/deploy-onboarding-package.png" lghtbox="media/deploy-onboarding-package.png":::
+    :::image type="content" alt-text="Sample description" source="media/deploy-onboarding-package.png" lightbox="media/deploy-onboarding-package.png":::
 
 
 ### Step 15: Deploy the onboarding package
