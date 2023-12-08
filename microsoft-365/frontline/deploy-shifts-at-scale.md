@@ -2,7 +2,7 @@
 title: Deploy Shifts to your frontline teams at scale
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: arnavgupta, imarquesgil
 ms.topic: how-to
 audience: admin
