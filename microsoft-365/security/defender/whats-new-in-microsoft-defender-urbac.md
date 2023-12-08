@@ -23,7 +23,7 @@ This article provides information about new features and important product updat
 
 ### Microsoft Defender XDR Unified RBAC is now generally available
 
-Microsoft Defender XDR Unified RBAC is now generally available. This offering is also available to GCC-M customers. To learn more about the supported workloads and supported data sources, see [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md).
+Microsoft Defender XDR Unified RBAC is now generally available. This offering is also available to GCC Moderate customers. To learn more about the supported workloads and supported data sources, see [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md).
 
 ## October 2023
 
