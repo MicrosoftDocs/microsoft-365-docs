@@ -79,7 +79,7 @@ For example:
 v=spf1 ip4:192.168.0.10 ip4:192.168.0.12 include:spf.protection.outlook.com -all
 ```
 
-- `v=spf1` to identify the TXT record as an SPF TXT record.
+- `v=spf1` identifies the TXT record as an SPF TXT record.
 
 - Valid mail sources for the domain using **Domains**, **IP addresses**, or both:
   - **Domains**: `include:`values specify other services as valid sources of email from the domain.
