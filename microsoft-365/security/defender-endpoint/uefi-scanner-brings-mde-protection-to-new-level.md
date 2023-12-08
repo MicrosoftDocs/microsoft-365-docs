@@ -1,6 +1,6 @@
 ---
 title: UEFI scanner brings Microsoft Defender for Endpoint protection to a new level
-description: Learn how Microsoft Defender for Endpoint (MDE) is extending its protection capabilities to the firmware level with a new Unified Extensible Firmware Interface (UEFI) scanner.
+description: Learn how Microsoft Defender for Endpoint is extending its protection capabilities to the firmware level with a new Unified Extensible Firmware Interface (UEFI) scanner.
 keywords: Microsoft Defender for Endpoint, EDR in block mode, passive mode blocking
 ms.pagetype: security
 author: v-jmathew
@@ -9,40 +9,39 @@ manager: dansimp
 ms.reviewer: yongrhee
 audience: ITPro
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
 ms.custom:
-  - mde-ngp
   - admindeeplinkDEFENDER
 ms.collection: 
 - m365-security
 - tier2
 search.appverid: met150
-ms.date: 11/10/2023
+ms.date: 12/10/2023
 ---
 
 # UEFI scanner brings Microsoft Defender for Endpoint protection to a new level
 
-Beginning June 17 2020, Microsoft Defender for Endpoint ([MDE](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)) extended its protection capabilities to the firmware level with a new [Unified Extensible Firmware Interface (UEFI)](/windows-hardware/drivers/bringup/unified-extensible-firmware-interface) scanner.
+Beginning June 17 2020, [Microsoft Defender for Endpoint extended its protection capabilities to the firmware level with a new [Unified Extensible Firmware Interface (UEFI)](/windows-hardware/drivers/bringup/unified-extensible-firmware-interface) scanner.
 
 Hardware and firmware-level attacks have continued to rise in recent years, as modern security solutions made persistence and detection evasion on the operating system more difficult. Attackers compromise the boot flow to achieve low-level malware behavior that’s hard to detect, posing a significant risk to an organization’s security posture.
 
-[Windows Defender System Guard](/windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows) helps defend against firmware attacks by providing guarantees for secure boot through hardware-backed security features like [hypervisor-level attestation](https://www.microsoft.com/security/blog/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation/) and [Secure Launch](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows), also known as Dynamic Root of Trust (DRTM), which are enabled by default in [Secured-core PCs](https://www.microsoft.com/en-us/windowsforbusiness/windows10-secured-core-computers). The new UEFI scan engine in MDE expands on these protections by making firmware scanning broadly available.
+[Windows Defender System Guard](/windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows) helps defend against firmware attacks by providing guarantees for secure boot through hardware-backed security features like [hypervisor-level attestation](https://www.microsoft.com/security/blog/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation/) and [Secure Launch](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows), also known as Dynamic Root of Trust (DRTM), which are enabled by default in [Secured-core PCs](https://www.microsoft.com/en-us/windowsforbusiness/windows10-secured-core-computers). The new UEFI scan engine in Defender for Endpoint expands on these protections by making firmware scanning broadly available.
 
-The UEFI scanner is a new component of the [built-in antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) solution on Windows 10 and newer versions, and gives MDE the unique ability to scan inside of the firmware filesystem and perform security assessment. It integrates insights from our partner chipset manufacturers and further expands the comprehensive endpoint protection provided by MDE.
+The UEFI scanner is a new component of the [built-in antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) solution on Windows 10 and newer versions, and gives Defender for Endpoint the unique ability to scan inside of the firmware filesystem and perform security assessment. It integrates insights from our partner chipset manufacturers and further expands the comprehensive endpoint protection provided by Defender for Endpoint.
 
 ## Prerequisites
 
-- Microsoft Defender Antivirus (MDAV) as the primary antivirus product
+- Microsoft Defender Antivirus as the primary antivirus product
 
   > [!NOTE]
-  > UEFI scanner does not work with Endpoint detection and response (EDR) in block mode, since MDAV would be operating in passive mode.
+  > UEFI scanner does not work with Endpoint detection and response (EDR) in block mode, since Microsoft Defender Antivirus would be operating in passive mode.
 
 - Real-Time Protection should be ON
 - Behavior Monitoring should be ON
-- Supported version of MDAV Platform Update (N-2)
-- Windows 10, Windows 11 and newer versions, [Windows Server 2012 R2 and Windows Server 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292) running the unified MDE client, Windows Server 2019, Windows Server 2022 and newer versions
+- Supported version of Microsoft Defender Antivirus Platform Update (N-2)
+- Windows 10, Windows 11 and newer versions, [Windows Server 2012 R2 and Windows Server 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292) running the unified Defender for Endpoint client, Windows Server 2019, Windows Server 2022 and newer versions
 
 ## How did we build the UEFI scanner?
 
@@ -62,7 +61,7 @@ Technically, the firmware is not stored and is not accessible from main memory. 
 
 :::image type="content" source="media/uefi-scanner-internals-overview.png" alt-text="UEFI scanner internals overview":::
 
-The UEFI scanner performs dynamic analysis on the firmware it gets from the hardware flash storage. By obtaining the firmware, the scanner is able to parse the firmware, enabling MDE to inspect firmware content at runtime.
+The UEFI scanner performs dynamic analysis on the firmware it gets from the hardware flash storage. By obtaining the firmware, the scanner is able to parse the firmware, enabling Defender for Endpoint to inspect firmware content at runtime.
 
 ## How do you turn on UEFI scanner?
 
@@ -72,7 +71,7 @@ The new UEFI scanner is a component of Microsoft Defender Antivirus, thus, as lo
 
 It’s a built-in functionality of Microsoft Defender Antivirus, thus, there is no additional management.
 
-## How does the UEFI scanner in MDE work?
+## How does the UEFI scanner in Defender for Endpoint work?
 
 The new UEFI scanner reads the firmware file system at runtime by interacting with the motherboard chipset. To detect threats, it performs dynamic analysis using multiple new solution components that include:
 
@@ -84,11 +83,11 @@ Firmware scanning is orchestrated by runtime events like suspicious driver load 
 
 :::image type="content" source="media/windows-security-detecting-malicious-content-in-nvram.png" alt-text="Windows Security notification for malicious content in NVRAM":::
 
-MDE customers will also see these detections raised as alerts in [Microsoft Defender Security Center](https://security.microsoft.com/), empowering security operations teams to investigate and respond to firmware attacks and suspicious activities at the firmware level in their environments.
+Defender for Endpoint customers will also see these detections raised as alerts in [Microsoft Defender Security Center](https://security.microsoft.com/), empowering security operations teams to investigate and respond to firmware attacks and suspicious activities at the firmware level in their environments.
 
-:::image type="content" source="media/mde-alert-detecting-malicious-code-in-firmware.png" alt-text="MDE alert detecting malicious code":::
+:::image type="content" source="media/mde-alert-detecting-malicious-code-in-firmware.png" alt-text="Defender for Endpoint alert detecting malicious code":::
 
-Security operations teams can also use the [advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) capabilities in MDE to hunt for these threats:
+Security operations teams can also use the [advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) capabilities in Defender for Endpoint to hunt for these threats:
 
 ```powershell
 DeviceEvents
@@ -110,7 +109,7 @@ DeviceEvents
 
 To detect unknown threats in SPI flash, signals from the UEFI scanner are analyzed to identify anomalies and where they have been executed. Anomalies are reported to the Microsoft Defender Security Center for investigation.
 
-:::image type="content" source="media/mde-alert-malware-implant-in-uefi-file-system.png" alt-text="MDE alert for malware implant in UEFI":::
+:::image type="content" source="media/mde-alert-malware-implant-in-uefi-file-system.png" alt-text="Defender for Endpoint alert for malware implant in UEFI":::
 
 These events can likewise be queried through Advanced Hunting as shown:
 
@@ -128,8 +127,8 @@ DeviceAlertEvents
 
 The new UEFI scanner adds to a rich set of Microsoft technologies that integrate to deliver chip-to-cloud security, from a strong hardware root of trust to cloud-powered security solutions at the OS level.
 
-Hardware backed security features like Secure Launch and device attestation help stop firmware attacks. These features, which are enabled by default in [Secured-core PCs](https://www.microsoft.com/en-us/windowsforbusiness/windows10-secured-core-computers), seamlessly integrate with MDE to provide comprehensive endpoint protection.
+Hardware backed security features like Secure Launch and device attestation help stop firmware attacks. These features, which are enabled by default in [Secured-core PCs](https://www.microsoft.com/en-us/windowsforbusiness/windows10-secured-core-computers), seamlessly integrate with Defender for Endpoint to provide comprehensive endpoint protection.
 
-With its UEFI scanner, [MDE](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) gets even richer visibility into threats at the firmware level, where attackers have been increasingly focusing their efforts on. Security operations teams can use this new level of visibility, along with the rich set of detection and response capabilities in MDE, to investigate and contain such advanced attacks.
+With its UEFI scanner, [Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) gets even richer visibility into threats at the firmware level, where attackers have been increasingly focusing their efforts on. Security operations teams can use this new level of visibility, along with the rich set of detection and response capabilities in Defender for Endpoint, to investigate and contain such advanced attacks.
 
 This level of visibility is also available in [Microsoft 365 Defender (M365D)](https://www.microsoft.com/security/technology/threat-protection), which delivers an even broader cross-domain defense that coordinates protection across endpoints, identities, email, and apps.
