@@ -246,7 +246,7 @@ For this scenario, you need to create two groups: one removable storage group fo
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Unauthorized%20File%20Group.xml). See step 3 from the [Deploy Removable Storage Access Control](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri) section to deploy the configuration.
 
       > [!TIP]
-      > explicitly mark the Type attribute on the group as **File**
+      > Explicitly mark the Type attribute on the group as **File**
 
    3. Policy 2: Deny read and execute access to any file under the allowed file extension group for defined removable storage group.
 
