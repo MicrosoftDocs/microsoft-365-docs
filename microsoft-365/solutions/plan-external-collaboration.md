@@ -62,7 +62,7 @@ Guests in a team have similar capabilities to regular team members.
 
 External participants access shared resources in your organization by using their own Microsoft Entra ID or Microsoft 365 identity. This is enabled by Microsoft Entra B2B direct connect through an organizational relationship configured by both organizations. Guest accounts are not used in this relationship.
 
-The primary advantage of external participants in shared channels versus guest sharing is that people outside your organization can collaborate with your users in Teams without having to change their user context. When using guest accounts, users must sign out of Teams with their work or school account and sign in again using the guest account. Alternatively, they can have a separate copy of Teams running in a private browser session. This switching between organizations takes time and can cause users to miss important communications while signed out of a given organization.
+The primary advantage of external participants in shared channels versus guest sharing is that people outside your organization can collaborate with your users in Teams without having to change their user context. When using guest accounts, users must add those accounts separately in Teams and switch to those accounts in order to interact with people in your organization.
 
 With shared channels, users can remain signed in to their organization and access channels shared with them from other organizations. Shared channels from other organizations are available in Teams alongside the teams and channels in your organization. There is no need to switch organizations.
 
@@ -84,8 +84,6 @@ The following table describes the experiences available depending on the type of
 
 Most organizations will use both guest sharing and shared channels with external participants.
 
-Guest sharing is enabled by default in Microsoft Entra ID and in Microsoft 365 (Teams, Microsoft 365 Groups, and SharePoint). This allows users to invite guests to teams and sites and to share files with them without having to request assistance from IT.
-
 You must use guest sharing if:
 
 - You want to invite people from outside your organization to the team rather than individual channels
@@ -105,36 +103,36 @@ Shared channels are integrated with Microsoft Purview features.
 
 ### Communications compliance
 
-Admins can set policies to monitor content for all users in the channel. All messages content in channels, including shared channels, is covered by [communication compliance policies](/microsoft-365/compliance/communication-compliance). Shared channels inherit the policy of the host organization.
+Admins can set policies to monitor content for all users in the channel. All messages content in channels, including shared channels, is covered by [communication compliance policies](/purview/communication-compliance). Shared channels inherit the policy of the host organization.
 
 ### Conditional access
 
-Supported [conditional access policies](/azure/active-directory/conditional-access/overview) from the host organization can be applied to B2B direct connect users. (The external organization's policies are not used.) The following types of conditional access policies are supported with shared channels:
+Supported [conditional access policies](/entra/identity/conditional-access/overview) from the host organization can be applied to B2B direct connect users. (The external organization's policies are not used.) The following types of conditional access policies are supported with shared channels:
 
 - Policies that are scoped to **All guest and external users**, and the **Office 365 SharePoint Online** cloud app.
 - Grant Access controls that require MFA, a compliant device, or a Microsoft Entra hybrid joined device.
 
 IP-based policies are supported at the SharePoint file level. So an external participant could access shared channel from a restricted location, but be blocked when trying to open a file.
 
-For more information about conditional access for external identities, see [Authentication and Conditional Access for External Identities](/azure/active-directory/external-identities/authentication-conditional-access).
+For more information about conditional access for external identities, see [Authentication and Conditional Access for External Identities](/entra/external-id/authentication-conditional-access).
 
 ### Data loss prevention (DLP)
 
-Admins can apply [Microsoft Purview DLP policies](/microsoft-365/compliance/dlp-policy-design) to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
+Admins can apply [Microsoft Purview DLP policies](/purview/dlp-policy-design) to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
 
 ### Retention policy
 
-Admins can apply a [retention policy](/microsoft-365/compliance/retention) on a team where all channels, including shared channels, inherit the retention policy. Shared channels inherit the policy of the parent team.
+Admins can apply a [retention policy](/purview/retention) on a team where all channels, including shared channels, inherit the retention policy. Shared channels inherit the policy of the parent team.
 
 ### Sensitivity labels
 
-[Sensitivity labels](/microsoft-365/compliance/sensitivity-labels) available in the host organization are the only labels that can be applied to the documents in a shared channel site. A file that is encrypted by a sensitivity label cannot be opened by external participants unless permissions are granted. Automatic labeling is not used.
+[Sensitivity labels](/purview/sensitivity-labels) available in the host organization are the only labels that can be applied to the documents in a shared channel site. A file that is encrypted by a sensitivity label cannot be opened by external participants unless permissions are granted. Automatic labeling is not used.
 
 Shared channels and their associated SharePoint sites inherit the label from the parent team.
 
 ### Information barriers
 
-Users who are not allowed to communicate per [information barrier](/microsoftteams/information-barriers-in-teams) policies can't be part of shared channel. Information barrier policies are only effective for users in the host organization. If users are external participants in another organization's shared channel, information barrier policies don't apply.
+Users who are not allowed to communicate per [information barrier](/purview/information-barriers-teams) policies can't be part of a shared channel. Information barrier policies are only effective for users in the host organization. If users are external participants in another organization's shared channel, information barrier policies don't apply.
 
 ### eDiscovery
 
@@ -142,11 +140,11 @@ Admins can perform searches for all users in the channel. All channels, includin
 
 ### Legal hold
 
-Admins can place channel-only members from the host organization who are not a part of the team on hold. They can also [place the entire team on hold](/MicrosoftTeams/legal-hold). Admins cannot place an external participant on hold.
+Admins can place channel-only members (who are not part of the team) from the host organization on hold. They can also [place the entire team on hold](/purview/ediscovery-teams-legal-hold). Admins cannot place an external participant on hold.
 
 ### Audit logs
 
-All the actions performed for [existing audit events](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log) are audited in shared channels.
+All the actions performed for [existing audit events](/purview/audit-log-detailed-properties) are audited in shared channels.
 
 ## Related topics
 
