@@ -92,7 +92,7 @@ The alert details contain:
 - The decoy device or user account where the alert originated
 - The type of attack like sign in attempts or lateral movement attempts
 
-:::image type="content" source="../../media/deception/fig2-deception.png" alt-text="Screenshot of an deception alert highlighting the tag and the attempt" lightbox="../../media/deception/fig2-deception.png":::
+:::image type="content" source="../../media/deception/fig2-deception.png" alt-text="Screenshot of a deception alert highlighting the tag and the attempt" lightbox="../../media/deception/fig2-deception.png":::
 *Figure 2. Details of a deception-related alert*
 
 ## Next step

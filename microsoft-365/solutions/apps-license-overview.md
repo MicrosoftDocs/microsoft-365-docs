@@ -67,7 +67,7 @@ When you purchase a plan that includes Microsoft Intune, there are [Microsoft ap
 | **Threat protection** | Microsoft Defender Antimalware, Microsoft Defender Firewall, Application Guard for Office 365, and more |
 | **Access and security** | Microsoft Defender for Cloud Apps Discovery, Microsoft Developer for Cloud Apps, Office 365 Cloud App Security |
 | **Identity and access management** | Microsoft Entra ID P1 or P2, Multi Factor Authentication, Microsoft Advanced Threat Analytics, and more |
-| **Data lifecycle management** | Rules-based Retention Policies, Machine Learning-bsaed Retention, and more |
+| **Data lifecycle management** | Rules-based Retention Policies, Machine Learning-based Retention, and more |
 | **eDiscovery and auditing** | Content Search, eDiscovery, and more |
 | **Risk management** | Communication Compliance, Privileged Access Management, and more |
 | **Windows** | Windows 11 Edition, Azure Virtual Desktop, and Universal Print |
