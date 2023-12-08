@@ -160,7 +160,7 @@
         "syntex/**/*.md": ["Microsoft Syntex"],
         "syntex/**/*.yml": ["Microsoft Syntex"],
         "topics/**/*.md": ["Microsoft Topics"],
-        "topics/**/*.yml": ["Microsoft Topics"]
+        "topics/**/*.yml": ["Microsoft Topics"],
         "syntex/archive/**/*.md": ["Microsoft 365 Archive"],
         "syntex/archive/**/*.yml": ["Microsoft 365 Archive"]
       }
