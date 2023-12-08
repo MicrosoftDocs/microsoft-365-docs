@@ -268,7 +268,7 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
 1. Click **Next**.
 1. On the **Assignments** tab,assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
-For more information about managing security settings, see
+For more information about managing security settings, see:
 <br>[Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration?pivots=mdssc-ga)
 <br>[Manage security settings for Windows, macOS, and Linux natively in Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/manage-security-settings-for-windows-macos-and-linux-natively-in/ba-p/3870617)
 
@@ -277,7 +277,7 @@ For more information about managing security settings, see
 
 You can manage the security settings for Microsoft Defender for Endpoint on macOS under **Setting Preferences** in Microsoft Intune.
 
-For more information, see [Set preferences for Microsoft Defender for Endpoint on Mac](mac-preferences.md)
+For more information, see [Set preferences for Microsoft Defender for Endpoint on Mac](mac-preferences.md).
 
 ### Step 9: Network protection for Microsoft Defender for Endpoint on macOS
 
@@ -316,7 +316,7 @@ To set Device Control for Microsoft Defender for Endpoint on macOS, follow the s
 
 ### Step 11: Data Loss Prevention (DLP) for Endpoint
 
-To set Purview’s Data Loss Prevention (DLP) for endpoint on macOS, follow the steps in [Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune](/purview/device-onboarding-offboarding-macos-intune-mde)
+To set Purview’s Data Loss Prevention (DLP) for endpoint on macOS, follow the steps in [Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune](/purview/device-onboarding-offboarding-macos-intune-mde).
 
 ### Step 12: Check status of PList(.mobileconfig)
 
@@ -498,13 +498,13 @@ See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove M
 <br>Describes connecting to Defender for Endpoint, onboarding devices, assigning compliance for risk levels, and conditional access policies.
 
 [Troubleshoot issues and find answers on FAQs related to Microsoft Defender for Endpoint on iOS](ios-troubleshoot.md)
-<br>Troubleshooting and FAQ - Microsoft Defender for Endpoint on iOS
+<br>Troubleshooting and FAQ - Microsoft Defender for Endpoint on iOS.
 
 [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
-<br>Describes how to configure Microsoft Defender for Endpoint on Android
+<br>Describes how to configure Microsoft Defender for Endpoint on Android.
 
 [Manage Defender for Endpoint on Android devices in Intune - Azure](/mem/intune/protect/advanced-threat-protection-manage-android?source=recommendations)
-<br>Configure Microsoft Defender for Endpoint web protection on Android devices managed by Microsoft Intune
+<br>Configure Microsoft Defender for Endpoint web protection on Android devices managed by Microsoft Intune.
 
 
 
