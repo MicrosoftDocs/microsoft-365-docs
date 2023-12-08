@@ -162,7 +162,7 @@ Unauthenticated sender indicators are part of the [Spoof settings](#spoof-settin
 To prevent the question mark or "via" tag from being added to messages from specific senders, you have the following options:
 
 - Allow the spoofed sender in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Allowing the spoofed sender prevents the "via" tag from appearing in messages from the sender, even if the **Show "via" tag** setting is turned on in the policy.
-- [Configure email authentication](email-authentication-about.md#configure-email-authentication-for-domains-you-own) for the sender domain.
+- [Configure email authentication](email-authentication-about.md) for the sender domain.
   - For the question mark in the sender's photo, SPF or DKIM are the most important.
   - For the "via" tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
 
