@@ -23,7 +23,7 @@ ms.date: 03/24/2023
 
 # Protect macOS security settings with tamper protection
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

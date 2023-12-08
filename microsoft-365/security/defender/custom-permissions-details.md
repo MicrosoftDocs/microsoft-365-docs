@@ -21,7 +21,7 @@ search.appverid: met150
 
 In Microsoft Defender XDR Unified role-based access control (RBAC) you can select permissions from each permission group to customize a role.
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -94,4 +94,4 @@ Permissions to manages the security and system settings and to create and assign
 
 - [Create custom roles](create-custom-rbac-roles.md)
 - [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

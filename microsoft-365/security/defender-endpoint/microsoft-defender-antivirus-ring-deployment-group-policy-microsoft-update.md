@@ -24,7 +24,7 @@ ms.date: 07/21/2023
 
 # Microsoft Defender Antivirus production ring deployment using Group Policy and Microsoft Updates
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

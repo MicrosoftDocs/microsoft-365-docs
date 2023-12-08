@@ -19,7 +19,7 @@ f1.keywords:               NOCSH
 ---
 # Responding to ransomware attacks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender-for-office.md)]
 
 When you suspect you were or are currently under a ransomware attack, establish secure communications with your incident response team immediately. They can perform the following response phases to disrupt the attack and mitigate the damage:
 
@@ -257,4 +257,4 @@ Recover deleted email.
 ### Step 9: Re-enable Exchange ActiveSync and OneDrive sync
 
 * After you've cleaned your computers and devices and recovered the data, you can re-enable Exchange ActiveSync and OneDrive sync that you previously disabled in step 3 of containment.
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

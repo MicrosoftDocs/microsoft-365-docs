@@ -23,7 +23,7 @@ ms.date: 03/23/2021
 
 # Device discovery frequently asked questions
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

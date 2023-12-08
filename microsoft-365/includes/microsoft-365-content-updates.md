@@ -1,5 +1,6 @@
 <!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
-
+
+
 
 
 ## Week of November 27, 2023
@@ -124,7 +125,7 @@
 | 11/14/2023 | [Review and sign a signature request using Microsoft Syntex eSignature](/microsoft-365/syntex/esignature-review-sign-requests) | added |
 | 11/14/2023 | [Create a signature request using Microsoft Syntex eSignature](/microsoft-365/syntex/esignature-send-requests) | modified |
 | 11/14/2023 | [Set up Microsoft Syntex eSignature](/microsoft-365/syntex/esignature-setup) | modified |
-| 11/14/2023 | [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services) | modified |
+| 11/14/2023 | [Pay-as-you-go services and pricingMicrosoft Defender XDR(/microsoft-365/syntex/syntex-pay-as-you-go-services) | modified |
 | 11/14/2023 | [Investigate data loss alerts with Microsoft 365 Defender](/microsoft-365/security/defender/dlp-investigate-alerts-defender?view=o365-worldwide) | modified |
 | 11/15/2023 | [Vulnerability support in Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/fixed-reported-inaccuracies?view=o365-worldwide) | modified |
 | 11/15/2023 | Microsoft 365 solutions for the Contoso Corporation | removed |
@@ -488,7 +489,7 @@
 | 11/8/2023 | [Test Base FAQ](/microsoft-365/test-base/faq?view=o365-worldwide) | modified |
 | 11/8/2023 | [Microsoft 365 Lighthouse frequently asked questions (FAQs)](/microsoft-365/lighthouse/m365-lighthouse-faq?view=o365-worldwide) | modified |
 | 11/8/2023 | [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint?view=o365-worldwide) | modified |
-| 11/9/2023 | [Manage Apps with Plugins for Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps?view=o365-worldwide) | modified |
+| 11/9/2023 | [ManaMicrosoft Defender XDRor Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps?view=o365-worldwide) | modified |
 | 11/9/2023 | [Map Microsoft 365 Defender Unified role-based access control (RBAC) permissions](/microsoft-365/security/defender/compare-rbac-roles?view=o365-worldwide) | modified |
 | 11/9/2023 | [Report phishing and suspicious emails in Outlook for admins](/microsoft-365/security/office-365-security/submissions-outlook-report-messages?view=o365-worldwide) | modified |
 | 11/10/2023 | [Multi-Geo Capabilities in Microsoft Teams](/microsoft-365/enterprise/multi-geo-capabilities-in-teams-in-microsoft-365?view=o365-worldwide) | modified |

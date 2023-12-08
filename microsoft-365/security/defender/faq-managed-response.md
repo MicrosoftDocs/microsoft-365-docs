@@ -42,4 +42,4 @@ The following section lists down questions you or your SOC team might have regar
 
 [Start using Defender Experts for XDR service](start-using-mdex-xdr.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
