@@ -183,7 +183,7 @@ Download [notif.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-
 To turn off notifications for the end users, you can change '**Show NotificationCenter**' from 'true' to 'false' in 
 [notif.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig).
 
-![Alt text](image.png)
+![Screen shot of notif.mobileconfig that shows "ShowNotificationCenter" set to "true".](image.png)
 
 To configure notifications:
 
@@ -257,7 +257,7 @@ In this step, we'll go over the “Preferences," which enables you to configure 
 
 #### Set policies using Microsoft Defender portal
 
-Go through [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure) before setting the security policies using Microsoft Defender,
+Go through [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure) before setting the security policies using Microsoft Defender.
 
 In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47):
 
