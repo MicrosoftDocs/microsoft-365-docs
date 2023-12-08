@@ -58,36 +58,38 @@ When evaluating the right solution for your organization, we recommend you do th
 ## Set up your frontline dynamic teams
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
-2. In the table, choose **Setup**.
+1. In the table, choose **Set up**.
 
     :::image type="content" source="media/dtas-manage-setup.png" alt-text="Screenshot of the Manage frontline teams page, showing the Setup button." lightbox="media/dtas-manage-setup.png":::
 
-3. Review the prerequisites information.
+1. Review the prerequisites information.
 
-4. Select the Microsoft Entra attribute that defines your frontline workers. You can only choose one Microsoft Entra attribute, but you can define multiple values by separating them with commas.
+1. Select the Microsoft Entra attribute that defines your frontline workers. You can only choose one Microsoft Entra attribute, but you can define multiple values by separating them with commas.
 
     :::image type="content" source="media/dtas-frontline-attribute.png" alt-text="Screenshot of where to enter your Microsoft Entra attribute and values for frontline workers." lightbox="media/dtas-frontline-attribute.png":::
 
-5. Select the Microsoft Entra attribute that defines the location your frontline employees work in. You can only choose one location attribute.
+1. Select the Microsoft Entra attribute that defines the location your frontline employees work in. You can only choose one location attribute.
 
     :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot of where to enter your Microsoft Entra attribute for frontline locations." lightbox="media/dtas-location-attribute.png":::
 
-6. Define your team structure by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
+1. Define your team structure by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
 
     :::image type="content" source="media/dtas-prefix.png" alt-text="Screenshot of the prefix, team template, and team owner account fields." lightbox="media/dtas-prefix.png":::
 
-7. Optionally, choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more about team templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
+1. Optionally, choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more about team templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
 
     > [!NOTE]
     > Currently, only team templates that are set to the English (United States) locale are supported. Keep in mind that the locale doesn't affect translation of the template or data residency. The locale setting is used only to distinguish between templates that have the same name that are created in different languages.
 
-8. Enter a user account object ID to be the team owner. This account will be the owner for all frontline teams. It's recommended to choose a shared account rather than an individual person.
+1. Enter a user account object ID to be the team owner. This account will be the owner for all frontline teams. It's recommended to choose a shared account rather than an individual person.
     1. To get a user's object ID, go to the [Azure portal](https://portal.azure.com).
     1. Select **Microsoft Entra ID**.
     1. Select **Users**, and then choose your user.
     1. Copy the user's object ID.
 
-9. Review the settings, and then choose **Finish setup.**
+1. Select the attributes that represent departments and job titles in your organization.
+
+1. Review the settings, and then choose **Finish setup.**
 
     >[!NOTE]
     >Setup can take several hours to run. You can refresh the **Manage frontline teams** page to get the latest status of your setup.
@@ -106,7 +108,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-deploy-locations.png" alt-text="Screenshot of the table of locations." lightbox="media/dtas-deploy-locations.png":::
 
-4. Select **Deploy**. This process can take several hours depending on how many teams you're creating. After deployment is completed, you'll see the number updated in the **Frontline teams** tile. On this tile, you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the **Last deployment health** tile.
+4. Select **Deploy**. This process can take several hours depending on how many teams you're creating. After deployment is completed, you'll see the number of teams updated in the **Frontline teams** card. On this card, you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the **Last deployment health** card.
 
     :::image type="content" source="media/dtas-view-errors.png" alt-text="Screenshot of where you can get the CSV file on the Manage frontline teams page." lightbox="media/dtas-view-errors.png":::
 
