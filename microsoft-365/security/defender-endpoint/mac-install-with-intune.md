@@ -269,8 +269,9 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
 1. On the **Assignments** tab,assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
 For more information about managing security settings, see:
-<br>[Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration?pivots=mdssc-ga)
-<br>[Manage security settings for Windows, macOS, and Linux natively in Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/manage-security-settings-for-windows-macos-and-linux-natively-in/ba-p/3870617)
+
+- [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration?pivots=mdssc-ga)
+- [Manage security settings for Windows, macOS, and Linux natively in Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/manage-security-settings-for-windows-macos-and-linux-natively-in/ba-p/3870617)
 
 
 #### Set policies using Microsoft Intune
