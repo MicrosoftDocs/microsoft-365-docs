@@ -1,5 +1,5 @@
 ---
-title: "Plan external collaboration with channel conversations, file collaboration, and shared apps"
+title: Plan external collaboration with channel conversations, file collaboration, and shared apps
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -17,7 +17,7 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-localization_priority: Normal
+localization_priority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Learn the difference between guest collaboration and shared channels in Teams and how to choose which one to use.
