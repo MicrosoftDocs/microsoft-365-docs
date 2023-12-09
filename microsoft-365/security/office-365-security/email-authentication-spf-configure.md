@@ -111,7 +111,7 @@ Important points to remember:
 
 - Each defined domain or subdomain in DNS requires an SPF TXT record, and only one SPF record is allowed per domain or subdomain. Email authentication protection for _undefined_ subdomains is covered by DMARC.
 - You can't create or modify the SPF text record for the \*.onmicrosoft.com domain.
-- If checking the valid email sources in the SPF record requires more than 10 additional DNS lookups (not necessarily 10 DNS queries), SPF validation fails. For more information, see xxx.
+- When the destination email system checks the valid email sources in the SPF record, SPF validation fails if the check requires more than 10 additional DNS lookups (not necessarily 10 DNS queries). For more information, see xxx.
 
 ## SPF TXT records for domain in Microsoft 365
 

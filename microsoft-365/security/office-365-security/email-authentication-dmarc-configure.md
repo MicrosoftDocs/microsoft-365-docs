@@ -40,7 +40,7 @@ DMARC ensures the destination email systems trust messages sent from your domain
 
 ## How do SPF and DMARC work together to protect email in Microsoft 365?
 
- An email message may contain multiple originator or sender addresses. These addresses are used for different purposes. For example, consider these addresses:
+An email message may contain multiple originator or sender addresses. These addresses are used for different purposes. For example, consider these addresses:
 
 - **"Mail From" address**: Identifies the sender and says where to send return notices if any problems occur with the delivery of the message (such as non-delivery notices). *Mail From address* appears in the envelope portion of an email message and isn't displayed by your email application, and is sometimes called the *5321.MailFrom address* or the *reverse-path address*.
 
