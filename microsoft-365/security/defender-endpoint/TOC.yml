@@ -822,7 +822,6 @@
         - name: Feedback-loop blocking
           href: feedback-loop-blocking.md
 
-
       - name: UEFI scanning in Defender for Endpoint
         href: uefi-scanning-in-defender-for-endpoint.md
 
