@@ -65,7 +65,7 @@ The password reset details table provides a detailed view of SSPR enabled and re
 |Registration progress     | The number of total users that have registered for SSPR.         |
 
 > [!NOTE]
-> Enabled users and registration progress data will be unavailable for tenants that do not have an Microsoft Entra premium license.
+> Enabled users and registration progress data will be unavailable for tenants that do not have a Microsoft Entra premium license.
 
 Selecting any tenant from the password reset details table opens the tenant details pane, which provides additional details around the tenant’s enablement and user registration status.
 

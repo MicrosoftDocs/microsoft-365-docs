@@ -81,6 +81,6 @@ Empty
 
 ## Response
 
-If successful, this method returns 200, Ok response code with a [Investigations](investigation.md) entity.
+If successful, this method returns 200, Ok response code with an [Investigations](investigation.md) entity.
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]
