@@ -54,9 +54,9 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 |--------------------|----------------------|----------------|
 | Ubuntu             | 16.04                | 4.15.0         |
 | Fedora             | 33                   | 5.8.15         |
-| CentOS             | 7.6                  | 3.10.0-957     |
+| CentOS             | 7.6                  | 3.10.0-957.12  |
 | SLES               | 15                   | 5.3.18-18.47   |
-| RHEL               | 7.6                  | 3.10.0-957     |
+| RHEL               | 7.6                  | 3.10.0-957.12  |
 | Debian             | 9.0                  | 4.19.0         |
 | Oracle Linux RHCK  | 7.9                  | 3.10.0-1160    |
 | Oracle Linux UEK   | 7.9                  | 5.4            |
