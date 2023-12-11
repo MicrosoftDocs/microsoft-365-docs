@@ -59,7 +59,7 @@ When you purchase a plan that includes Microsoft Intune, there are [Microsoft ap
 | **Meetings, calling, and chat** | Includes Microsoft Teams |
 | **Social, intranet, and storage** | Includes SharePoint, Viva Engage, and Viva Connections |
 | **Content services** | Includes Microsoft Graph API, Microsoft Search, Microsoft Stream, and more |
-| **Project and task management** | Includes Microsoft Planning and Microsoft To-Do |
+| **Project and task management** | Includes Microsoft Planning and Microsoft To-do |
 | **Analytics** | Includes Productivity Score, Secure Score, Compliance Management, and Power BI Pro |
 | **Viva Insights and Viva Learning** | Includes Personal insights in Teams, Viva Learning in Teams, and more |
 | **Automation, app building, and chatbots** | Power Apps for Microsoft 365, Power Automate for Microsoft 365, and more |
