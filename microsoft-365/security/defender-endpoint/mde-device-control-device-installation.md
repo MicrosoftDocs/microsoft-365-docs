@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Device Installation
 description: This topic provides a walk through about Microsoft Defender for Endpoint Device Control Device Installation
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - mde-asr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: asr
 search.appverid: met150
 ---
 
@@ -256,7 +256,7 @@ See [Manage Device Installation with Group Policy (Windows 10) - Windows Client]
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
-The [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage) shows removable storage blocked by the Device Control Device Installation.
+The [Microsoft Defender portal](https://sip.security.microsoft.com/homepage) shows removable storage blocked by the Device Control Device Installation.
 
 ```kusto
 //events triggered by Device Installation policies
@@ -276,7 +276,7 @@ DeviceEvents
 
 ### How do I confirm that a device gets a deployed policy?
 
-You can use following query to get antimalware client version on the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)):
+You can use following query to get antimalware client version on the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)):
 
 ```kusto
 //check whether the Device installation policy has been deployed to the target machine, event only when modification happens

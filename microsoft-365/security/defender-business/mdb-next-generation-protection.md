@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 06/30/2023
 ms.reviewer: nehabha
@@ -25,12 +24,14 @@ In Defender for Business, next-generation protection includes robust antivirus a
 
 You can choose from several options for managing your next-generation protection policies:
 
-- Use the Microsoft 365 Defender portal at [https://security.microsoft.com](https://security.microsoft.com) (recommended if you're using the standalone version of Defender for Business without Intune); or 
+- Use the Microsoft Defender portal at [https://security.microsoft.com](https://security.microsoft.com) (recommended if you're using the standalone version of Defender for Business without Intune); or 
 - Use the Microsoft Intune admin center at [https://intune.microsoft.com](https://intune.microsoft.com) (available if your subscription includes Intune)
 
-## [**Microsoft 365 Defender portal**](#tab/M365D)
+<a name='microsoft-365-defender-portal'></a>
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+## [**Microsoft Defender portal**](#tab/M365D)
+
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
 2. In the navigation pane, go to **Configuration management** > **Device configuration**. Policies are organized by operating system and policy type.
 
@@ -120,5 +121,6 @@ The following table describes settings that are preconfigured for Defender for B
 - [Set up your web content filtering policy](mdb-web-content-filtering.md) and enable web protection automatically.
 - [Set up your controlled folder access policy](mdb-controlled-folder-access.md) for ransomware protection.
 - [Enable your attack surface reduction rules](mdb-asr.md).
-- [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
+- [Review settings for advanced features and the Microsoft Defender portal](mdb-portal-advanced-feature-settings.md).
 - [Use your vulnerability management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
+

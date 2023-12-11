@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Identity VPN integration in Microsoft 365 Defender 
-description: Learn how to collect accounting information by integrating a VPN for Microsoft Defender for Identity in Microsoft 365 Defender 
+title: Microsoft Defender for Identity VPN integration in Microsoft Defender XDR 
+description: Learn how to collect accounting information by integrating a VPN for Microsoft Defender for Identity in Microsoft Defender XDR 
 ms.date: 06/07/2021
 ms.topic: how-to
 author: batamig
@@ -12,17 +12,17 @@ ms.collection: m365-security
 search.appverid: met150
 ---
 
-# Defender for Identity VPN integration in Microsoft 365 Defender
+# Defender for Identity VPN integration in Microsoft Defender XDR
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Defender for Identity
 
-This article explains how to integrate a VPN with [Microsoft Defender for Identity](/defender-for-identity) in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+This article explains how to integrate a VPN with [Microsoft Defender for Identity](/defender-for-identity) in [Microsoft Defender XDR](/microsoft-365/security/defender/overview-security-center).
 
 > [!IMPORTANT]
-> As part of the convergence with <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
+> As part of the convergence with <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 [!INCLUDE [Product long](includes/product-long.md)] can collect accounting information from VPN solutions. When configured, the user's profile page includes information from the VPN connections, such as the IP addresses and locations where connections originated. This complements the investigation process by providing additional information on user activity as well as a new detection for abnormal VPN connections. The call to resolve an external IP address to a location is anonymous. No personal identifier is sent in this call.
 
@@ -66,9 +66,9 @@ Perform the following steps on your RRAS server.
 
 [!INCLUDE [Product short](includes/product-short.md)] collects VPN data that helps profile the locations from which computers connect to the network and to be able to detect suspicious VPN connections.
 
-To configure VPN data in [!INCLUDE [Product short](includes/product-short.md)] in Microsoft 365 Defender:
+To configure VPN data in [!INCLUDE [Product short](includes/product-short.md)] in Microsoft Defender XDR:
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option under the settings menu item" lightbox="../../media/defender-identity/settings-identities.png":::
 
@@ -83,4 +83,4 @@ After the Defender for Identity sensor receives the VPN events and sends them to
 
 ## See also
 
-- [Investigate alerts in Microsoft 365 Defender](../defender/investigate-alerts.md)
+- [Investigate alerts in Microsoft Defender XDR](../defender/investigate-alerts.md)

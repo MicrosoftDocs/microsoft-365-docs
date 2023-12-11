@@ -96,11 +96,7 @@
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
         - name: Manage multiple tenants
-          href: multi-tenant/manage.md
-    - name: Office 365 operated by 21Vianet
-      items: 
-        - name: Azure Information Protection support
-          href: services-in-china/parity-between-azure-information-protection.md      
+          href: multi-tenant/manage.md   
     - name: Manage users, groups, and passwords
       items: 
         - name: Users
@@ -347,6 +343,8 @@
               href: adoption/teamwork.md
             - name: Meetings
               href: adoption/meetings-new.md
+            - name: AI assistance
+              href: adoption/ai-assistance.md
             - name: Organizational Messages
               href: adoption/organizational-messages.md
             - name: Group Level Aggregates

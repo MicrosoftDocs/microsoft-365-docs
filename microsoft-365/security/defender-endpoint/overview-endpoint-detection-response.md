@@ -3,7 +3,7 @@ title: Overview of endpoint detection and response capabilities
 ms.reviewer: 
 description: Learn about the endpoint detection and response capabilities in Microsoft Defender for Endpoint
 keywords: Microsoft Defender for Endpoint, endpoint detection and response, response, detection, cybersecurity, protection
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ ms.collection:
 - tier2
 - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ms.date: 10/09/2023
 ---
@@ -22,8 +22,8 @@ ms.date: 10/09/2023
 # Overview of endpoint detection and response
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plans 1 and 2](defender-endpoint-plan-1-2.md)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plans 1 and 2](microsoft-defender-endpoint.md)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: kywirpel
+ms.reviewer: shcallaw
 ms.date: 08/11/2023
 audience: Admin
 ms.topic: article
@@ -52,7 +52,7 @@ You can also select **More actions** (ellipsis icon) option directly from the ta
 
 ## Next steps
 
-If you want to investigate why a task was dismissed, you can audit the exception using Lighthouse insights. For more information, see [Manage tenants using insights](m365-lighthouse-manage-tenants-using-deployment-insights.md).
+If you want to investigate why a task was dismissed, you can audit the exception by using deployment insights. For more information, see [Manage tenants by using deployment insights in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenants-using-deployment-insights.md).
 
 ## Related content
 

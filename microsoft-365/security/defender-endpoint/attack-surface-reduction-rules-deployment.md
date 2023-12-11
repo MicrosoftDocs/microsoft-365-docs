@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint attack surface reduction rules deployment overview
 description: Provides overview and prerequisite guidance about deploying Microsoft Defender for Endpoint attack surface reduction rules. Links to articles that show how to plan and ASR deployment, test ASR rules, configure ASR rules, and enable ASR rules.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
@@ -104,7 +104,7 @@ Although multiple methods of implementing attack surface reduction rules are pos
 - Windows 10 and Windows 11 devices
 - Microsoft Defender for Endpoint E5 or Windows E5 licenses
 
-To take full advantage of attack surface reduction rules and reporting, we recommend using a Microsoft 365 Defender E5 or Windows E5 license, and A5. Learn more at [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
+To take full advantage of attack surface reduction rules and reporting, we recommend using a Microsoft Defender XDR E5 or Windows E5 license, and A5. Learn more at [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
 
 > [!NOTE]
 > There are multiple methods to configure attack surface reduction rules. Attack surface reduction rules can be configured using: Microsoft Intune, PowerShell, Group Policy, Microsoft Configuration Manager (ConfigMgr), Intune OMA-URI.

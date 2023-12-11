@@ -1,12 +1,12 @@
 ---
 title: Microsoft Defender Antivirus updates - Previous versions for technical upgrade support
 description: Understand the type of technical support offered for previous versions of Microsoft Defender Antivirus
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 10/31/2023
+ms.date: 12/05/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -14,7 +14,7 @@ ms.collection:
 - tier1
 - mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ---
 
@@ -26,6 +26,28 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
+
+- Security intelligence update version: **1.397.59.0**
+- Released:  **August 30, 2023 (Platform and Engine)**
+- Platform: **4.18.23080.2006**
+- Engine: **1.1.23080.2005**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+
+- Fixed an issue where Microsoft Defender Antivirus switched from [passive mode to active mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) following an update on Windows Server 2016 and Windows Server 2012 R2 [onboarded using the modern, unified client](configure-server-endpoints.md)
+- Fixed an issue where [exclusions](defender-endpoint-antivirus-exclusions.md) weren't applied correctly using [gpupdate](/windows-server/administration/windows-commands/gpupdate) when registry policy processing was set to process even if Group Policy Objects didn't change
+- Excluded IP addresses can now be configured using [Intune](/windows/client-management/mdm/defender-csp#configurationexcludedipaddresses)
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on Windows Server 2016
+- [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
+- Fixed an issue where [device control](device-control-removable-storage-protection.md) policies weren't applied correctly without a reboot following product updates
+- Fixed an issue in the attack surface reduction rule, [Block Win32 API calls from Office macros](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros), configured in warn mode where excluded files were incorrectly blocked until the next device reboot
+
+### Known issues
+
+- None
 
 ## July-2023 (Platform: 4.18.23070.1004 | Engine: 1.1.23070.1005)
  
@@ -44,7 +66,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Fixed an issue pertaining to showing the exclusions list with PowerShell [Get-MpPreference](/powershell/module/defender/get-mppreference) on systems managed by Intune
 - Fixed warn notifications for two attack surface reduction rules ([Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
 - Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a nonelevated PowerShell console (see [Update-MpSignature](/powershell/module/defender/update-mpsignature))
-- Fixed an issue with [ASR rules deployed via Intune](enable-attack-surface-reduction.md#intune) to display accurately in the Microsoft 365 Defender portal
+- Fixed an issue with [ASR rules deployed via Intune](enable-attack-surface-reduction.md#intune) to display accurately in the Microsoft Defender portal
 - Fixed [tamper protection management](prevent-changes-to-security-settings-with-tamper-protection.md) for customers who have Microsoft 365 E3 or [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
 - Improved installation and uninstallation logic on Server SKUs using the modern, unified agent (see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md))
 - Fixed an issue where `AntivirusSignatureLastUpdated` was incorrect when executing [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
@@ -83,7 +105,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
    
 ### What's new  
 
-- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
+- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft Defender portal
 - Fixed a performance issue when building and validating the Microsoft Defender Antivirus cache
 - Improved performance by removing redundant exclusion checks
  

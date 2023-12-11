@@ -1,8 +1,8 @@
 ---
 title: Operationalize attack surface reduction rules
 description: Provides guidance to operationalize your attack surface reduction rules deployment.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.localizationpriority: medium
 audience: ITPro
 author: Dansimp
@@ -40,15 +40,15 @@ Consistent, regular review of reports is an essential aspect of maintaining your
 
 ## ASR rules Advanced Hunting
 
-One of the most powerful features of [Microsoft 365 Defender](https://security.microsoft.com) is advanced hunting. If you're not familiar with advanced hunting, see: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
+One of the most powerful features of [Microsoft Defender XDR](https://security.microsoft.com) is advanced hunting. If you're not familiar with advanced hunting, see: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
-> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="The Advanced Hunting page in the Microsoft 365 Defender portal. Microsoft Defender for Endpoint attack surface reduction rules used in advanced hunting" lightbox="images/asr-defender365-advanced-hunting2.png":::
+> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="The Advanced Hunting page in the Microsoft Defender portal. Microsoft Defender for Endpoint attack surface reduction rules used in advanced hunting" lightbox="images/asr-defender365-advanced-hunting2.png":::
 
 Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool that lets you explore up to 30 days of the captured data. Through advanced hunting, you can proactively inspect events in order to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
 Through advanced hunting, it's possible to extract attack surface reduction rules information, create reports, and get in-depth information on the context of a given attack surface reduction rule audit or block event.
 
- You can query attack surface reduction rule events from the DeviceEvents table in the advanced hunting section of the Microsoft 365 Defender portal. For example, the following query shows how to report all the events that have attack surface reduction rules as data source, for the last 30 days. The query then summarizes by the ActionType count with the name of the attack surface reduction rule.
+ You can query attack surface reduction rule events from the DeviceEvents table in the advanced hunting section of the Microsoft Defender portal. For example, the following query shows how to report all the events that have attack surface reduction rules as data source, for the last 30 days. The query then summarizes by the ActionType count with the name of the attack surface reduction rule.
 
 Attack surface reduction events shown in the advancing hunting portal are throttled to unique processes seen every hour. The time of the attack surface reduction event is the first time the event is seen within that hour.
 
@@ -60,7 +60,7 @@ DeviceEvents
 ```
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="The Advanced hunting query results in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting4.png":::
+> :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="The Advanced hunting query results in the Microsoft Defender portal" lightbox="images/asr-defender365-advanced-hunting4.png":::
 
 The above shows that 187 events were registered for AsrLsassCredentialTheft:
 
@@ -79,7 +79,7 @@ DeviceEvents
 ```
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="The Advanced hunting query focused results in the Microsoft 365 Defender portal" lightbox="images/asr-defender365-advanced-hunting5b.png":::
+> :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="The Advanced hunting query focused results in the Microsoft Defender portal" lightbox="images/asr-defender365-advanced-hunting5b.png":::
 
 The true benefit of advanced hunting is that you can shape the queries to your liking. By shaping your query you can see the exact story of what was happening, regardless of whether you want to pinpoint something on an individual machine, or you want to extract insights from your entire environment.
 

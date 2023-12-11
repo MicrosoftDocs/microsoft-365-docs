@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media
 description: A walk-through about Microsoft Defender for Endpoint
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ ms.collection:
 - mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: asr
 ms.date: 04/25/2023
 ms.reviewer: tewchen, kurtsarens
 search.appverid: met150
@@ -132,7 +132,7 @@ For specific guidance, see:
 
 ## View data in Microsoft Defender for Endpoint
 
-The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
+The [Microsoft Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
 
 - Microsoft 365 E5
 - Microsoft Defender for Endpoint Plan 2

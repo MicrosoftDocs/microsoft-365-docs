@@ -45,9 +45,11 @@ When you view details about specific threats or devices, you see recommendations
 | Update antivirus | Requires the device to get [security intelligence updates](https://go.microsoft.com/fwlink/?linkid=2149926) for antivirus and antimalware protection. |
 | Restart device | Forces a Windows device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
 
-## View and manage threat detections in the Microsoft 365 Defender portal
+<a name='view-and-manage-threat-detections-in-the-microsoft-365-defender-portal'></a>
 
-1. Go to the ([Microsoft 365 Defender portal](https://security.microsoft.com)) and sign in.
+## View and manage threat detections in the Microsoft Defender portal
+
+1. Go to the ([Microsoft Defender portal](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Threat Analytics** to see all the current threats. Threads are categorized by threat severity and type.
 
