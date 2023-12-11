@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 09/20/2022
-ms.reviewer: deanw
+ms.reviewer: deanw, brianday
 ms.custom:
   - it-pro
   - has-azure-ad-ps-ref

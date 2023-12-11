@@ -1,7 +1,7 @@
 ---
 title: "Delete a satellite location"
 ms.reviewer: anfra
-ms.date: 12/07/2023
+ms.date: 12/11/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
