@@ -47,7 +47,7 @@ The UEFI scanner is a new component of the [built-in antivirus](/windows/securit
 
 The Unified Extensible Firmware Interface (UEFI) is a replacement for [legacy BIOS](/windows-hardware/drivers/bringup/smbios). If the chipset is configured correctly ([UEFI](https://uefi.org/sites/default/files/resources/UEFI%20Spec%202_6.pdf) & chipset configuration itself) and [secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) is enabled, the firmware is reasonably secure. To perform a hardware-based attack, attackers exploit a vulnerable firmware or a misconfigured machine to deploy a [rootkit](https://www.microsoft.com/en-us/microsoft-365-life-hacks/privacy-and-safety/what-is-a-rootkit), which allows attackers to gain foothold on the machine.
 
-:::image type="content" source="media/expected-vs-attacker-boot-flow.jpg" alt-text="Expected boot flow vs compromised boot flow ":::
+:::image type="content" source="media/expected-vs-attacker-boot-flow.jpg" alt-text="Screenshot that shows expected boot flow vs compromised boot flow ":::
 
 As the figure shows, for devices that are [configured correctly](/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview), the boot path from power-on to OS initialization is reliable. If secure boot is disabled or if the motherboard chipset is misconfigured, attackers can change the contents of UEFI drivers that are unsigned or tampered with in the firmware. This could allow attackers to take over control of devices and give them the capability to deprivilege the operating system kernel or antivirus to reconfigure the security of the firmware.
 
@@ -59,7 +59,7 @@ Once an implant is deployed, it’s hard to detect. To catch threats at this lev
 
 Technically, the firmware is not stored and is not accessible from main memory. As opposed to other software, it is stored in SPI flash storage, so the new UEFI scanner must follow the hardware protocol provided by hardware manufacturers. To be compatible and be up to date with all platforms, it needs to take into consideration protocol differences.
 
-:::image type="content" source="media/uefi-scanner-internals-overview.png" alt-text="UEFI scanner internals overview":::
+:::image type="content" source="media/uefi-scanner-internals-overview.png" alt-text="Screenshot that shows UEFI scanner internals overview":::
 
 The UEFI scanner performs dynamic analysis on the firmware it gets from the hardware flash storage. By obtaining the firmware, the scanner is able to parse the firmware, enabling Defender for Endpoint to inspect firmware content at runtime.
 
@@ -81,11 +81,11 @@ The new UEFI scanner reads the firmware file system at runtime by interacting wi
 
 Firmware scanning is orchestrated by runtime events like suspicious driver load and through periodic system scans. Detections are reported in Windows Security, under Protection history.
 
-:::image type="content" source="media/windows-security-detecting-malicious-content-in-nvram.png" alt-text="Windows Security notification for malicious content in NVRAM":::
+:::image type="content" source="media/windows-security-detecting-malicious-content-in-nvram.png" alt-text="Screenshot that shows Windows Security notification for malicious content in NVRAM":::
 
 Defender for Endpoint customers will also see these detections raised as alerts in [Microsoft Defender Security Center](https://security.microsoft.com/), empowering security operations teams to investigate and respond to firmware attacks and suspicious activities at the firmware level in their environments.
 
-:::image type="content" source="media/mde-alert-detecting-malicious-code-in-firmware.png" alt-text="Defender for Endpoint alert detecting malicious code":::
+:::image type="content" source="media/mde-alert-detecting-malicious-code-in-firmware.png" alt-text="Screenshot that shows Defender for Endpoint alert detecting malicious code":::
 
 Security operations teams can also use the [advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) capabilities in Defender for Endpoint to hunt for these threats:
 
@@ -109,7 +109,7 @@ DeviceEvents
 
 To detect unknown threats in SPI flash, signals from the UEFI scanner are analyzed to identify anomalies and where they have been executed. Anomalies are reported to the Microsoft Defender Security Center for investigation.
 
-:::image type="content" source="media/mde-alert-malware-implant-in-uefi-file-system.png" alt-text="Defender for Endpoint alert for malware implant in UEFI":::
+:::image type="content" source="media/mde-alert-malware-implant-in-uefi-file-system.png" alt-text="Screenshot that shows Defender for Endpoint alert for malware implant in UEFI":::
 
 These events can likewise be queried through Advanced Hunting as shown:
 
