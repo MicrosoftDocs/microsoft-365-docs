@@ -27,7 +27,7 @@ Integrate Reflect into Schoology to create impactful check-ins, gain wellbeing i
 > [!NOTE]
 > This guide provides IT admins steps for registering the Reflect LTI app for PowerSchool Unified Classroom® Schoology Learning.
 > 
-> The person who performs this integration should be an administrator of Schoology Learning and an administrator of the Microsoft 365 tenant.
+> The person who performs this integration should be an administrator of Schoology Learning.
 
 ## One-time setup by administrator
 
