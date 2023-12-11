@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 11/17/2023
+ms.date: 12/11/2023
 ---
 
 # Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
