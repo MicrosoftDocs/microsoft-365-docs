@@ -32,9 +32,6 @@ In Microsoft Defender XDR Unified role-based access control (RBAC) you can selec
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
-
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 <a name='microsoft-365-defender-unified-rbac-permission-details'></a>
 
 ## Microsoft Defender XDR Unified RBAC permission details
