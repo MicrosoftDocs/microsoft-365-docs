@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 
+ms.date: 12/12/23
 
 ---
 
@@ -36,7 +36,7 @@ As an admin, you can now standardize these Shifts settings across all your front
 ## Prerequisites
 
 - You created your organization’s frontline teams through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
-- The admin running the deployment process is a Teams admin.  
+- The admin running the deployment process must be a global or Teams admin.  
 
 ## Set up Shifts for your frontline teams
 
@@ -61,7 +61,7 @@ Choose the Shifts capabilities that you want to be available to your frontline t
     - **Open shifts**: Turn on to allow frontline managers to publish unfilled shifts and frontline workers to view and request those shifts.
     - **Swap shift requests**: Turn on to allow frontline workers to swap shifts with other employees and frontline managers to approve or reject the requests.
     - **Offer shift requests**: Turn on to allow frontline workers to offer shifts to other employees and frontline managers to approve or reject the requests.
-1. Choose whether to allow **Time off-requests**. When this setting is on, frontline workers can request time off, and frontline managers can approve or reject the requests.  
+1. Choose whether to allow **Time-off requests**. When this setting is on, frontline workers can request time off, and frontline managers can approve or reject the requests.  
 
     Keep in mind that if you turn off this setting, frontline managers can still assign time off to employees.  
 1. Add time-off reasons.
@@ -71,7 +71,7 @@ Choose the Shifts capabilities that you want to be available to your frontline t
     Under **Time-off reasons**, select **Add**, and then for each time-off reason that you create:
     1. Give it a name. It can’t be longer than 40 characters.  
     1. Choose an icon.
-    1. Enter a unique code. The code can be up to 100 alphanumeric characters long. For example, A01. These codes can't be changed after Shifts is deployed.  
+    1. Enter a unique code. The code is a mandatory field and can be up to 100 alphanumeric characters long. For example, A01. These codes can't be changed after Shifts is deployed. Codes ensure uniformity across all your HR systems and streamlined experiences across your frontline teams and apps.
 
     Make sure the time-off reasons reflect what’s supported across your frontline organization. Frontline managers use these time-off reasons when they assign time off to frontline workers. And, if you turned on **Time-off requests**, your frontline workers choose from these time-off reasons from when they request time off.  
 1. Under **Time clock**, turn on or turn off **Clock in/clock out**. When this setting is on, frontline workers can clock in and out of their shifts and record breaks, and frontline managers can export their team’s time report.  
@@ -101,7 +101,7 @@ You can choose to allow schedule owners to create and manage schedule groups or 
     For each schedule group that you create:
     1. Give it a unique name. It can’t be longer than 40 characters. This name is what frontline managers and workers see in the Shifts schedule.  
     1. Choose an icon.
-    1. Enter a unique code. The code can be up to 100 alphanumeric characters long. These codes can't be changed after Shifts is deployed.
+    1. Enter a unique code. The code is a mandatory field and can be up to 100 alphanumeric characters long. These codes can't be changed after Shifts is deployed. Codes ensure uniformity across all your HR systems and streamlined experiences across your frontline teams and apps.
 1. When you're done, select **Next**.
 
 ### Review and finish setup
