@@ -95,7 +95,7 @@ For more information on the settings that need to be configured to deploy organi
 
 ### Configuration process for managed devices
 
-When you create an app configuration policy to be apply to a managed device in Intune, you specifically choose **Managed devices**. Managed devices are those devices that are managed by Intune or other unified endpoint management provider. The app, in this case Microsoft Outlook, must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices. 
+When you create an app configuration policy to be applied to a managed device in Intune, you specifically choose **Managed devices**. Managed devices are those devices that are managed by Intune or other unified endpoint management provider. The app, in this case Microsoft Outlook, must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices. 
 
 For more information about creating an app configuration policy in Intune, see [Create an app configuration policy](/mem/intune/apps/app-configuration-policies-use-ios#create-an-app-configuration-policy) for iOS/iPadOS devices and [Create an app configuration policy](/mem/intune/apps/app-configuration-policies-use-android#create-an-app-configuration-policy) for Android Enterprise devices. In addition, see [Email apps](/mem/intune/apps/app-configuration-policies-use-android#email-apps) for Android Enterprise devices.
 
