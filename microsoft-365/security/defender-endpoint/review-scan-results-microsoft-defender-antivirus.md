@@ -44,7 +44,7 @@ After a Microsoft Defender Antivirus scan completes, whether it's an [on-demand]
 
 To view the scan results using Microsoft 365 Defender Endpoint, follow the below process.
 
-1. Sign in to [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47).
+1. Sign in to [Microsoft 365 Defender portal](https://security.microsoft.com)
 2. Go to **Incidents & alerts** \> **Alerts**.
 
    You can view the scanned results under **Alerts**.
