@@ -112,7 +112,9 @@
         "syntex/**/*.md": "Microsoft Syntex",
         "frontline/**/*.md": "Microsoft 365 for frontline workers",
         "whiteboard/**/*.md": "Microsoft Whiteboard",
-        "topics/**/*.md": "Microsoft Topics"
+        "topics/**/*.md": "Microsoft Topics",
+        "syntex/archive/**/*.md": "Microsoft 365 Archive",
+        "syntex/archive/**/*.yml": "Microsoft 365 Archive"
       },
       "feedback_product_url": {
         "compliance/**/*.md":"https://feedbackportal.microsoft.com/feedback/",
@@ -158,7 +160,9 @@
         "syntex/**/*.md": ["Microsoft Syntex"],
         "syntex/**/*.yml": ["Microsoft Syntex"],
         "topics/**/*.md": ["Microsoft Topics"],
-        "topics/**/*.yml": ["Microsoft Topics"]
+        "topics/**/*.yml": ["Microsoft Topics"],
+        "syntex/archive/**/*.md": ["Microsoft 365 Archive"],
+        "syntex/archive/**/*.yml": ["Microsoft 365 Archive"]
       }
     },
     "template": [],
