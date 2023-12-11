@@ -1,6 +1,41 @@
 <!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
 
+## Week of December 04, 2023
 
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/4/2023 | [Prevent guests from being added to a specific group](/microsoft-365/solutions/per-group-guest-access?view=o365-worldwide) | modified |
+| 12/4/2023 | [Apply a retention label to a model in Microsoft Syntex](/microsoft-365/syntex/apply-a-retention-label-to-a-model) | modified |
+| 12/4/2023 | [Investigate incidents in Microsoft Defender XDR](/microsoft-365/security/defender/investigate-incidents?view=o365-worldwide) | modified |
+| 12/4/2023 | [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide) | modified |
+| 12/5/2023 | [Windows and Office 365 deployment lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-worldwide) | modified |
+| 12/5/2023 | [AI assistance category in Adoption Score](/microsoft-365/admin/adoption/ai-assistance?view=o365-worldwide) | modified |
+| 12/5/2023 | [Microsoft Entra setup guides](/microsoft-365/admin/misc/azure-ad-setup-guides?view=o365-worldwide) | modified |
+| 12/5/2023 | [Microsoft Defender XDR prerequisites](/microsoft-365/security/defender/prerequisites?view=o365-worldwide) | modified |
+| 12/5/2023 | [Create a baseline in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-create-a-baseline?view=o365-worldwide) | modified |
+| 12/5/2023 | [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates?view=o365-worldwide) | modified |
+| 12/5/2023 | [Microsoft Defender Antivirus updates - Previous versions for technical upgrade support](/microsoft-365/security/defender-endpoint/msda-updates-previous-versions-technical-upgrade-support?view=o365-worldwide) | modified |
+| 12/6/2023 | [Microsoft 365 Experience insights dashboard](/microsoft-365/admin/misc/experience-insights-dashboard?view=o365-worldwide) | modified |
+| 12/6/2023 | [Review the results of Microsoft Defender Antivirus scans](/microsoft-365/security/defender-endpoint/review-scan-results-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 12/6/2023 | [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates?view=o365-worldwide) | modified |
+| 12/6/2023 | [Vulnerability support in Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/fixed-reported-inaccuracies?view=o365-worldwide) | modified |
+| 12/6/2023 | [Prioritize incidents in Microsoft Defender XDR](/microsoft-365/security/defender/incident-queue?view=o365-worldwide) | modified |
+| 12/6/2023 | [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell?view=o365-worldwide) | modified |
+| 12/6/2023 | [Onboard Windows devices using Configuration Manager](/microsoft-365/security/defender-endpoint/configure-endpoints-sccm?view=o365-worldwide) | modified |
+| 12/6/2023 | [Use network protection to help prevent macOS connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection-macos?view=o365-worldwide) | modified |
+| 12/6/2023 | [Threat protection report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/threat-protection-reports?view=o365-worldwide) | modified |
+| 12/6/2023 | [What's new in Microsoft Defender for Endpoint on Windows](/microsoft-365/security/defender-endpoint/windows-whatsnew?view=o365-worldwide) | modified |
+| 12/7/2023 | [Get started with Microsoft Defender Experts for XDR](/microsoft-365/security/defender/get-started-xdr?view=o365-worldwide) | modified |
+| 12/7/2023 | [Integrate Microsoft Reflect LTI with Canvas](/microsoft-365/lti/reflect-lti-canvas?view=o365-worldwide) | added |
+| 12/7/2023 | [Prepare a nonroutable domain for directory synchronization](/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?view=o365-worldwide) | modified |
+| 12/7/2023 | [Contextual file and folder exclusions](/microsoft-365/security/defender-endpoint/configure-contextual-file-folder-exclusions-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 12/7/2023 | [Use Topics cards in the Viva Connections dashboard](/microsoft-365/topics/topics-card-viva-connections?view=o365-worldwide) | modified |
+| 12/7/2023 | [Run and customize on-demand scans in Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/run-scan-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 12/7/2023 | [IdentityInfo table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-identityinfo-table?view=o365-worldwide) | modified |
+| 12/7/2023 | [Get started driving adoption of Microsoft Syntex](/microsoft-365/syntex/adoption-getstarted) | modified |
+| 12/8/2023 | [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune?view=o365-worldwide) | modified |
+| 12/8/2023 | [Troubleshoot license issues for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-support-license?view=o365-worldwide) | modified |
 
 
 ## Week of November 27, 2023
@@ -125,7 +160,7 @@
 | 11/14/2023 | [Review and sign a signature request using Microsoft Syntex eSignature](/microsoft-365/syntex/esignature-review-sign-requests) | added |
 | 11/14/2023 | [Create a signature request using Microsoft Syntex eSignature](/microsoft-365/syntex/esignature-send-requests) | modified |
 | 11/14/2023 | [Set up Microsoft Syntex eSignature](/microsoft-365/syntex/esignature-setup) | modified |
-| 11/14/2023 | [Pay-as-you-go services and pricingMicrosoft Defender XDR(/microsoft-365/syntex/syntex-pay-as-you-go-services) | modified |
+| 11/14/2023 | [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services) | modified |
 | 11/14/2023 | [Investigate data loss alerts with Microsoft 365 Defender](/microsoft-365/security/defender/dlp-investigate-alerts-defender?view=o365-worldwide) | modified |
 | 11/15/2023 | [Vulnerability support in Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/fixed-reported-inaccuracies?view=o365-worldwide) | modified |
 | 11/15/2023 | Microsoft 365 solutions for the Contoso Corporation | removed |
@@ -489,11 +524,10 @@
 | 11/8/2023 | [Test Base FAQ](/microsoft-365/test-base/faq?view=o365-worldwide) | modified |
 | 11/8/2023 | [Microsoft 365 Lighthouse frequently asked questions (FAQs)](/microsoft-365/lighthouse/m365-lighthouse-faq?view=o365-worldwide) | modified |
 | 11/8/2023 | [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint?view=o365-worldwide) | modified |
-| 11/9/2023 | [ManaMicrosoft Defender XDRor Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps?view=o365-worldwide) | modified |
+| 11/9/2023 | [Manage Apps with Plugins for Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps?view=o365-worldwide) | modified |
 | 11/9/2023 | [Map Microsoft 365 Defender Unified role-based access control (RBAC) permissions](/microsoft-365/security/defender/compare-rbac-roles?view=o365-worldwide) | modified |
 | 11/9/2023 | [Report phishing and suspicious emails in Outlook for admins](/microsoft-365/security/office-365-security/submissions-outlook-report-messages?view=o365-worldwide) | modified |
 | 11/10/2023 | [Multi-Geo Capabilities in Microsoft Teams](/microsoft-365/enterprise/multi-geo-capabilities-in-teams-in-microsoft-365?view=o365-worldwide) | modified |
 | 11/10/2023 | [Key infrastructure requirements before enrolling in the Microsoft Defender Experts for Hunting service](/microsoft-365/security/defender/before-you-begin-defender-experts?view=o365-worldwide) | modified |
 | 11/10/2023 | [Before you begin using Defender Experts for XDR](/microsoft-365/security/defender/before-you-begin-xdr?view=o365-worldwide) | modified |
 | 11/10/2023 | [Microsoft Defender for Office 365 email entity page](/microsoft-365/security/office-365-security/mdo-email-entity-page?view=o365-worldwide) | modified |
-| 11/10/2023 | [Deploy frontline dynamic teams at scale](/microsoft-365/frontline/deploy-dynamic-teams-at-scale?view=o365-worldwide) | modified |

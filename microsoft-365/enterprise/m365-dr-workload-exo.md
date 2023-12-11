@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 09/20/2022
-ms.reviewer: deanw
+ms.reviewer: deanw, brianday
 ms.custom:
   - it-pro
   - has-azure-ad-ps-ref
@@ -53,7 +53,7 @@ Required Conditions:
 
 1. Tenants have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_.
 1. Customer must have an active Enterprise Agreement.
-1. Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the tenant.
+1. Total purchased Multi-Geo units must be greater than 5% of the total eligible users in the tenant.
 
 **Commitment:**
 
@@ -84,7 +84,7 @@ Exchange Online synchronizes the PreferredDataLocation property from Microsoft E
 
 ### Feature limitations for Multi-Geo in Exchange Online
 
-- Security and compliance features (for example, auditing and eDiscovery) that are available in the Exchange admin center (EAC) aren't available in Multi-Geo organizations. Instead, you need to use the Microsoft 365 Security & Compliance Center to configure security and compliance features.
+- Security and compliance features (for example, auditing and eDiscovery) that are available in the Exchange admin center (EAC) aren't available in Multi-Geo organizations. Instead, you need to use Microsoft Defender and Microsoft Purview to configure security and compliance features.
 - Outlook for Mac users may experience a temporary loss of access to their Online Archive folder while you move their mailbox to a new _Geography_ location. This condition occurs when the user's the primary and archive mailboxes are in different _Geography_ locations, because cross-geo mailbox moves may complete at different times.
 - Users can't share mailbox folders across _Geography_ locations in Outlook on the web (formerly known as Outlook Web App or OWA). For example, a user in the European Union can't use Outlook on the web to open a shared folder in a mailbox that's located in the United States. However, Outlook on the Web users can open other mailboxes in different _Geography_ locations by using a separate browser window as described in Open another person's mailbox in a separate browser window in Outlook Web App.
 
@@ -184,7 +184,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 
 #### Move an existing cloud-only mailbox to a specific geo location
 
-A cloud-only user is a user not synchronized to the tenant via AAD Connect. This user was created directly in Microsoft Entra ID. Use the **Get-MsolUser** and **Set-MsolUser** cmdlets in the Azure AD Module for Windows PowerShell to view or specify the _Geography_ location where a cloud-only user's mailbox will be stored.
+A cloud-only user is a user not synchronized to the tenant via Microsoft Entra Connect. This user was created directly in Microsoft Entra ID. Use the **Get-MsolUser** and **Set-MsolUser** cmdlets in the Azure AD Module for Windows PowerShell to view or specify the _Geography_ location where a cloud-only user's mailbox will be stored.
 
 To view the **PreferredDataLocation** value for a user, use this syntax in Azure AD PowerShell:
 
@@ -212,7 +212,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 > [!NOTE]
 >
-> - As mentioned previously, you cannot use this procedure for synchronized user objects from on-premises Active Directory. You need to change the **PreferredDataLocation** value in Active Directory and synchronize it using AAD Connect. For more information, see [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> - As mentioned previously, you cannot use this procedure for synchronized user objects from on-premises Active Directory. You need to change the **PreferredDataLocation** value in Active Directory and synchronize it using Microsoft Entra Connect. For more information, see [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 >
 > - How long it takes to relocate a mailbox to a new geo location depends on several factors:
 >
@@ -256,7 +256,7 @@ To create a new mailbox in a specific _Geographic_ location, you need to do eith
 
 - Assign a license at the same time you set the **PreferredDataLocation** value.
 
-To create a new cloud-only licensed user (not AAD Connect synchronized) in a specific _Geographic_ location, use the following syntax in Azure AD PowerShell:
+To create a new cloud-only licensed user (not Microsoft Entra Connect synchronized) in a specific _Geographic_ location, use the following syntax in Azure AD PowerShell:
 
 ```powershell
 New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>" [-FirstName <FirstName>] [-LastName <LastName>] [-Password <Password>] [-LicenseAssignment <AccountSkuId>] -PreferredDataLocation <GeoLocationCode>
