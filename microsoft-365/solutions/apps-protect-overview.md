@@ -56,11 +56,10 @@ In addition to the above list, you can also choose scope tags and app assignment
 
 Different app protection settings are available for each supported platform. It's important to recognize that the iOS/iPadOS and Android platform have the same app protection categories. However, Windows is different. The Windows platform protects organization data by managing the flow of data through Microsoft Edge to your organization's storage locations.
 
-| Platform  | App protection categories |
-|---|---|
-| iOS/iPadOS  | Data protection, Access requirements, Conditional launch |
-| Android | Data protection, Access requirements, Conditional launch |
-| Windows | Data protection, Health checks |
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-15.png" alt-text="App data protection categories" border="false" :::
+
+> [!TIP]
+> To see where app protection adn compliance policies fit into the overall Intune architecture, see [High-level architecture for Microsoft Intune](/mem/intune/fundamentals/high-level-architecture).
 
 When you create an app protection policy, you choose the platform, the app to target, as well as the specific settings from the app protection categories.
 

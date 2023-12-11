@@ -31,8 +31,6 @@ App data protection has three primary categories:
 | Android | Data Transfer, Encryption, Functionality |
 | Windows | Data Transfer, Functionality |
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-15.png" alt-text="App data protection categories" border="false" :::
-
 ## Data Transfer
 
 ### iOS/iPadOS app protection policy
