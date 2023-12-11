@@ -97,7 +97,9 @@ Once the content type and metadata are available in a document library, business
 <!---
 [**TBD**: To learn more about how to plan for adoption of document processing, see *Manage document processing across your organization*.]--->
 
-#### Content discoverability <!--- through search findability and precision--->
+#### Content discoverability
+
+ <!--- through search findability and precision--->
 
 Using document processing features in Microsoft Syntex can improve the search experience as each piece of metadata extracted from content now will be searchable. The [content query](metadata-search.md) feature lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
