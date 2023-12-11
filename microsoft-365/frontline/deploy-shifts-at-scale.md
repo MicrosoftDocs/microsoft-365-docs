@@ -4,7 +4,7 @@ author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
 ms.reviewer: arnavgupta, imarquesgil
-ms.topic: how-to
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
