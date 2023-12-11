@@ -147,7 +147,7 @@ Done! You have successfully registered an application!
 
   :::image type="content" source="../images/api-jwt-ms.png" alt-text="The Decoded Token pane for jwt.ms" lightbox="../images/api-jwt-ms.png":::
 
-### Lets get the Alerts!
+### Let's get the Alerts!
 
 - The script below will use **Get-Token.ps1** to access the API and will get the past 48 hours Alerts.
 - Save this script in the same folder you saved the previous script **Get-Token.ps1**.
