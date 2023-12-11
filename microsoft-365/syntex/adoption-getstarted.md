@@ -51,7 +51,7 @@ Content is the lifeblood of the organization. Many business units in your organi
 - Ensure compliance via the application of retention and sensitivity labels.
 
 Thinking about the typical content lifecycle where content is created and re-created, through to content understanding and processing and content discovery and search, there are many features within Microsoft Syntex that can help your business.
-<!---
+
 :::row:::
    :::column span="2":::
       Thinking about the typical content lifecycle where content is created and re-created, through to content understanding and processing and content discovery and search, there are many features within Syntex that can help your business.
@@ -62,7 +62,6 @@ Thinking about the typical content lifecycle where content is created and re-cre
 :::row-end:::
 
 ![Diagram showing the content lifecycle.](../media/content-understanding/content-lifecycle.png)
---->
 
 ### Content creation and reuse
 
@@ -87,9 +86,9 @@ Microsoft Syntex can perform different types of tasks across your content includ
 |Classification     |Identifies the type of content the file represents (for example, a report, an invoice, or a form)         |[Unstructured document processing](document-understanding-overview.md)         |
 |Extraction         |Identifies information based on an entity from within a document     |[Structured document processing](form-processing-overview.md)<br>[Freeform document processing](form-processing-overview.md)<br>[Prebuilt document processing](prebuilt-overview.md)<br>[Optical character recognition](ocr-overview.md)    |
 |Keyword tagging    |Suggests information based on a property of or decision about a document using keywords         |[Taxonomy tagging](taxonomy-tagging-overview.md)<br>[Image tagging](image-tagging-overview.md)         |
-<!---
+
 #### Content compliance
---->
+
 The document processing models can also be used to add compliance by having them apply [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) and [retention labels](apply-a-retention-label-to-a-model.md) to content added to document libraries with models configured with them.
 
 Once the content type and metadata are available in a document library, business users can perform many actions on the data including creating new views on the content, building reports, moving content based on certain information present using rules, and creating business process workflows for approvals, adding data to other systems, generating work orders and many other tasks that might have been done manually.
