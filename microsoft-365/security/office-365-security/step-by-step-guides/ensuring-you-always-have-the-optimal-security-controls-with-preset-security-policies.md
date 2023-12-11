@@ -1,6 +1,6 @@
 ---
 title: Steps to set up the Standard or Strict preset security policies for Microsoft Defender for Office 365
-description: Step to setup preset security policies in Microsoft Defender for Office 365 so you have the security recommended by the product. Preset policies set a security profile of either *Standard* or *Strict*. Set these and Microsoft Defender for Office 365 will manage and maintain these security controls for you.
+description: Step to set up preset security policies in Microsoft Defender for Office 365 so you have the security recommended by the product. Preset policies set a security profile of either *Standard* or *Strict*. Set these and Microsoft Defender for Office 365 will manage and maintain these security controls for you.
 search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -57,13 +57,13 @@ Our Strict preset security policy has more aggressive limits and settings for se
 Once you've chosen between the Standard and Strict security preset policies for your users, it takes a few further steps to assign users to each preset.
 
 1. Identify the users, groups, or domains you would like to include in Standard and Strict security presets.
-1. Login to the Microsoft Security portal at <https://security.microsoft.com>.
+1. Log in to the Microsoft Security portal at <https://security.microsoft.com>.
 1. On the left nav, under **Email & collaboration**, select **Policies & rules**.
 1. Select **Threat policies**.
 1. Select **Preset Security Policies** underneath the **Templated policies** heading
 1. Select **Manage** underneath the Standard protection preset.
 1. Select **All Recipients** to apply Exchange Online Protection tenant wide, or select **Specific recipients** to manually add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
-1. Select **All Recipients** to apply Defender for Office 365 Protection tenant wide, or select **Specific recipients** to manually add add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
+1. Select **All Recipients** to apply Defender for Office 365 Protection tenant wide, or select **Specific recipients** to manually add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
 1. On the **Impersonation Protection** section, add email addresses & domains to protect from impersonation attacks, then add any trusted senders and domains you don't want the impersonation protection to apply to, then press **Next**.
 1. Click on the **Confirm** button.
 1. Select the **Manage protection settings** link in the Strict protection preset.
