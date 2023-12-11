@@ -823,8 +823,8 @@
           href: feedback-loop-blocking.md
 
 
-      - name: UEFI scanner brings Microsoft Defender for Endpoint protection to a new level
-        href: uefi-scanner-brings-mde-protection-to-new-level.md
+      - name: UEFI scanning in Defender for Endpoint
+        href: uefi-scanning-in-defender-for-endpoint.md
 
     - name: Address false positives/negatives in Microsoft Defender for Endpoint
       href: defender-endpoint-false-positives-negatives.md

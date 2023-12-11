@@ -1,5 +1,5 @@
 ---
-title: UEFI scanner brings Microsoft Defender for Endpoint protection to a new level
+title: UEFI scanning in Defender for Endpoint
 description: Learn how Microsoft Defender for Endpoint is extending its protection capabilities to the firmware level with a new Unified Extensible Firmware Interface (UEFI) scanner.
 keywords: Microsoft Defender for Endpoint, EDR in block mode, passive mode blocking
 ms.pagetype: security
@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 12/10/2023
 ---
 
-# UEFI scanner brings Microsoft Defender for Endpoint protection to a new level
+# UEFI scanning in Defender for Endpoint
 
 Beginning June 17 2020, Microsoft Defender for Endpoint extended its protection capabilities to the firmware level with a new [Unified Extensible Firmware Interface (UEFI)](/windows-hardware/drivers/bringup/unified-extensible-firmware-interface) scanner.
 
