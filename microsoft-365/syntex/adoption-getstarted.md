@@ -56,7 +56,7 @@ Thinking about the typical content lifecycle where content is created and re-cre
    :::column span="2":::
       Thinking about the typical content lifecycle where content is created and re-created, through to content understanding and processing and content discovery and search, there are many features within Syntex that can help your business.
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       ![Diagram showing the content lifecycle.](../media/content-understanding/content-lifecycle.png)
    :::column-end:::
 :::row-end:::
