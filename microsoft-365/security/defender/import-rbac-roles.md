@@ -30,8 +30,6 @@ search.appverid: met150
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 <a name='import-roles-to-microsoft-365-defender-unified-rbac-from-individual-rbac-models'></a>
 
 ## Import roles to Microsoft Defender XDR Unified RBAC from individual RBAC models
