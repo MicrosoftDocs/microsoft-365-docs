@@ -171,7 +171,7 @@ Near real-time detections are supported for the following tables:
 - `DeviceProcessEvents`
 - `DeviceRegistryEvents`
 - `EmailAttachmentInfo`
-- `EmailEvents`
+- `EmailEvents` (except `LatestDeliveryLocation` and `LatestDeliveryAction`)
 - `EmailPostDeliveryEvents`
 - `EmailUrlInfo`
 - `IdentityDirectoryEvents`
