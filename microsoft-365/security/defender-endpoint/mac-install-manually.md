@@ -49,7 +49,7 @@ Download the installation and onboarding packages from Microsoft Defender portal
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
-   :::image type="content" source="images/onboarding-package-step4.png" alt-text="The options to download the installation and onboarding packages.":::
+   :::image type="content" source="images/onboarding-package-step4.png" alt-text="Screenshot that shows the options to download the installation and onboarding packages.":::
 
 5. From a command prompt, verify that you have the two files.
     - Type *cd Downloads* and press **Enter**.
@@ -68,7 +68,7 @@ To complete this process, you must have admin privileges on the device.
     
       *sudo installer -store -pkg /Users/admin/Downloads/wdav.pkg -target /*
 
-   :::image type="content" source="images/monterey-install-1.png" alt-text="The installation process for the application":::
+   :::image type="content" source="images/monterey-install-1.png" alt-text="Screenshot that shows the installation process for the application":::
 
 2. Select **Continue**.
 
@@ -96,7 +96,7 @@ To complete this process, you must have admin privileges on the device.
 
 3. At the end of the installation process, for macOS Big Sur (11.0) or latest version, you're prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
-   :::image type="content" source="images/monterey-install-2.png" alt-text="The system extension approval":::
+   :::image type="content" source="images/monterey-install-2.png" alt-text="Screenshot that shows the system extension approval":::
 
 11. To enable system extention, select **Details**.
     :::image type="content" source="images/system-extention-image.png" alt-text="Screenshot that shows the system extention.":::
@@ -108,7 +108,7 @@ To complete this process, you must have admin privileges on the device.
 
 6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
-   :::image type="content" source="images/monterey-install-4.png" alt-text="The system extension security preferences2":::
+   :::image type="content" source="images/monterey-install-4.png" alt-text="Screenshot that shows the system extension security preferences2":::
 
     To troubleshoot System Extension issues, refer [Troubleshoot System Extension](mac-support-sys-ext.md).
 
@@ -171,7 +171,7 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
     After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The Microsoft Defender icon in status bar":::
+    > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="Screenshot that shows the Microsoft Defender icon in status bar":::
 
    You can [troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md).
 
@@ -249,7 +249,7 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
 
 12. Go to the Alert Queue.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="An macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Screenshot that shows a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
     Look at the alert details and the device timeline, and perform the regular investigation steps.
 
