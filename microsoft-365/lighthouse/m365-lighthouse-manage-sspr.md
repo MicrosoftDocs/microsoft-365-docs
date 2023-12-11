@@ -39,7 +39,7 @@ The following condition must be met before a tenant appears in the list:
 
 ## View SSPR tenant status
 
-- In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Self-service password reset**.
+In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Self-service password reset**.
 
 The SSPR tenant status module reports enablement status across all customer tenants that have an Azure AD premium license, reporting how many tenants are:
 
@@ -49,7 +49,7 @@ The SSPR tenant status module reports enablement status across all customer tena
 
 ## View SSPR user registration status
 
-- In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Self-service password reset**.
+In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Self-service password reset**.
 
 The Self-service password reset page provides an overview of the tenants that have enabled SSPR through the recommended settings, the number of users who haven't registered for SSPR, and a detailed breakdown by tenant of the SSPR deployment progress across the organizations that you manage.
 
