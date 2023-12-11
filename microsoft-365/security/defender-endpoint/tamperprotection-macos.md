@@ -415,7 +415,7 @@ and permit tampering operations from them.
 At the same time, Tamper Protection will block the same script from restarting Microsoft Defender, if it is started from a Terminal locally.
 
 However, those policy running processes are vendor specific.
-While Microsoft Defender provides built in exclusions for JAMF and Intune, it can't provide those exclusions for all possible MDM vendors.
+While Microsoft Defender provides built-in exclusions for JAMF and Intune, it can't provide those exclusions for all possible MDM vendors.
 Instead, a global administrator can add their own exclusions to Tamper Protection.
 Exclusions can be done only through MDM profile, not local configuration.
 
