@@ -45,7 +45,7 @@ Use these instructions to get set up to run the commands (skip the steps you hav
     
 ## Manage user account policies
 
-Many Skype for Business Online user account properties are configured by using policies. Policies are simply collections of settings that can be applied to one or more users. To take a look at how the a policy has been configured, you can run this example command for the FederationAndPICDefault policy:
+Many Skype for Business Online user account properties are configured by using policies. Policies are simply collections of settings that can be applied to one or more users. To take a look at how a policy has been configured, you can run this example command for the FederationAndPICDefault policy:
   
 ```powershell
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"

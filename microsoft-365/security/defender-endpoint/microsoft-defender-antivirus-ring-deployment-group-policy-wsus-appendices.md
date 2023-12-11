@@ -64,7 +64,7 @@ Platform Updates, are the .exe’s, dll’s, and .sys’s for the Microsoft Defe
 
 | Channel: | Version: | Revision: | &nbsp; | Remarks |
 |:---|:---|:---|:---|:---|
-| **Beta Channel - Prerelease** | 4.18.2304.4 | ‘23 April, minor rev 4 | n/a | This channel is the one you want to test for app compatibility, reability and performance. |
+| **Beta Channel - Prerelease** | 4.18.2304.4 | ‘23 April, minor rev 4 | n/a | This channel is the one you want to test for app compatibility, reliability and performance. |
 | **Current Channel (Preview)** | 4.18.2303.8 | ‘23 Mar, minor rev 8 | n/a | Same as for _Beta Channel - Prerelease_ |
 | **Current Channel (Staged)** | 4.18.2303.7 | ‘23 Mar, minor rev 7 | n/a | Same as for _Beta Channel - Prerelease_  |
 | **Current Channel (Broad)** | 4.18.2302.7 <br> see note | ‘23 Feb, minor rev 7 | ’23 Mar | This channel is the one you want to push out to 90%-100% of your production systems. |

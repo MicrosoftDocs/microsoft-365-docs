@@ -63,7 +63,7 @@ Once you've chosen between the Standard and Strict security preset policies for 
 1. Select **Preset Security Policies** underneath the **Templated policies** heading
 1. Select **Manage** underneath the Standard protection preset.
 1. Select **All Recipients** to apply Exchange Online Protection tenant wide, or select **Specific recipients** to manually add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
-1. Select **All Recipients** to apply Defender for Office 365 Protection tenant wide, or select **Specific recipients** to manually add add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
+1. Select **All Recipients** to apply Defender for Office 365 Protection tenant wide, or select **Specific recipients** to manually add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
 1. On the **Impersonation Protection** section, add email addresses & domains to protect from impersonation attacks, then add any trusted senders and domains you don't want the impersonation protection to apply to, then press **Next**.
 1. Click on the **Confirm** button.
 1. Select the **Manage protection settings** link in the Strict protection preset.

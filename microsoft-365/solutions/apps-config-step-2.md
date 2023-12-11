@@ -29,7 +29,7 @@ Outlook app configuration can be delivered by selecting either of the following 
 1. **Managed devices** - Select the mobile device management (MDM) OS channel.
     - **iOS**: Use an App Configuration Policy for iOS. For related information, see the [Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS.
     - **Android**: Use an App Configuration Policy for Android Enterprise. For related information, see the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android.
-2. **Unmanaged devices**: Select an Intune App Protection Policy (APP) channel (also know as the **MAM channel**).
+2. **Unmanaged devices**: Select an Intune App Protection Policy (APP) channel (also known as the **MAM channel**).
     - **iOS**: Use an App Protection Policy for iOS.
     - **Android**: Use an App Protection Policy for Android.
 
