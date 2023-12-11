@@ -26,7 +26,7 @@ ms.date: 12/12/23
 
 The [Shifts app](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6) in Microsoft Teams is a schedule management tool that helps you create, update, and manage schedules for your team to keep frontline workers connected and in sync.  
 
-To start using Shifts, frontline managers are responsible for configuring Shifts settings like enabling requests for open shifts, swap shifts, and offer shifts, time off requests, and time clock for their respective teams. Frontline managers must also create schedule groups to start creating and assigning shifts.
+To start using Shifts, frontline managers are responsible for configuring Shifts settings like enabling requests for open shifts, swap shifts, and offer shifts, time-off requests, and time clock for their respective teams. Frontline managers must also create schedule groups to start creating and assigning shifts.
 
 As an admin, you can now standardize these Shifts settings across all your frontline teams and manage them centrally by deploying Shifts to your frontline teams at scale in the Teams admin center. You can select which capabilities to turn on or off and create schedule groups and time-off reasons that will be set uniformly across all your frontline teams. Your frontline managers can start using Shifts straight out-of-the-box with minimal setup required.
 
@@ -49,7 +49,7 @@ As an admin, you can now standardize these Shifts settings across all your front
 
 ### Configure Shifts settings
 
-Choose the Shifts capabilities that you want to be available to your frontline teams. Capabilities include the ability to create and request open shifts, swap shifts and offer shifts, time-off requests, and time clock. [Learn more about Shifts settings](https://support.microsoft.com/office/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b).
+Choose the Shifts capabilities that you want enabled for your frontline teams. Capabilities include the ability to create and request open shifts, swap shifts and offer shifts, time-off requests, and time clock. [Learn more about Shifts settings](https://support.microsoft.com/office/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b).
 
 > [!IMPORTANT]
 > The settings you choose are applied to every team that you deploy Shifts to. Your frontline managers won't be able to change these settings in Shifts.
@@ -144,7 +144,7 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
 If an error occurred during the deployment process, the status in the table shows as **Error** after you refresh the Manage frontline apps page.
 
-Select the link to download an error CSV file and use the information in it help resolve the errors. Then, rerun the [deployment experience](#deploy-shifts-to-your-frontline-teams).  
+Select the link to download an error CSV file and use the information in it to help resolve the errors. Then, rerun the [deployment experience](#deploy-shifts-to-your-frontline-teams).  
 
 ## Related articles
 
