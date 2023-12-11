@@ -188,8 +188,6 @@
              href: anti-spoofing-spoof-intelligence.md
            - name: Impersonation insight
              href: anti-phishing-mdo-impersonation-insight.md
-           - name: How Microsoft 365 uses SPF to prevent spoofing
-             href: email-authentication-anti-spoofing.md
          - name: Safe Attachments in Defender for Office 365
            items:
            - name: Safe Attachments in Defender for Office 365

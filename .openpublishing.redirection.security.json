@@ -2272,8 +2272,8 @@
      },
      {
        "source_path": "microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md",
-       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-anti-spoofing",
-       "redirect_document_id": true
+       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-spf-configure",
+       "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email.md",
@@ -3744,6 +3744,11 @@
       "source_path": "microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md",
       "redirect_url": "/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft",
       "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/email-authentication-anti-spoofing.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-spf-configure",
+      "redirect_document_id": false
      }
    ]
  }

@@ -42,15 +42,14 @@ Before we get started, here's what you need to know about SPF in Microsoft 365 b
 - **You use only the Microsoft Online Email Routing Address (MOERA) domain for email (for example, contoso.onmicrosoft.com)**: You don't need to do anything. The SPF TXT record is already configured for you. Microsoft owns the onmicrosoft.com domain and all subdomains, so we're responsible for creating and maintaining the SPF records in all \*.onmicrosoft.com domains.
 
 - **You use one or more custom domains for email (for example, contoso.com)**: As part of the Microsoft 365 enrollment process, you were already required to create or modify the SPF TXT record in DNS for your custom domain to identify Microsoft 365 as an authorized source for email from your domain. But, you still have more work to do for maximum email protection:
-    - **Subdomains**:
-      - If you use email services that aren't under your direct control (for example, to send bulk email or to add email signatures to outbound mail), you should use a subdomain (for example, marketing.contoso.com) for those services instead of your main email domain (for example, contoso.com). You don't want any issues with mail coming the email services to affect the reputation of mail coming from employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq?view=o365-worldwide#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
-      - Each subdomain that you use to send email from Microsoft 365 requires its own SPF TXT record. For example, the SPF TX record for contoso.com doesn't cover marketing.contoso.com; marketing.contoso.com needs its own SPF TXT record.
+  - **Subdomains**:
+    - If you use email services that aren't under your direct control (for example, to send bulk email or to add email signatures to outbound mail), you should use a subdomain (for example, marketing.contoso.com) for those services instead of your main email domain (for example, contoso.com). You don't want issues with mail coming the email services to affect the reputation of mail coming from employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq?view=o365-worldwide#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
+    - Each subdomain that you use to send email from Microsoft 365 requires its own SPF TXT record. For example, the SPF TX record for contoso.com doesn't cover marketing.contoso.com; marketing.contoso.com needs its own SPF TXT record.
 
-        > [!TIP]
-        > Email authentication protection for _undefined_ subdomains is covered by DMARC. Any subdomains (defined or not) inherit the DMARC settings of the parent domain (which can be overridden per subdomain).
+      > [!TIP]
+      > Email authentication protection for _undefined_ subdomains is covered by DMARC. Any subdomains (defined or not) inherit the DMARC settings of the parent domain (which can be overridden per subdomain).
 
-    - **Registered but unused domains**:
-      - If you have registered domains that you aren't using for email or aren't using at all (also known as _parked domains_), configure SPF TXT records in those domains to specify that no email should ever come from those domains.
+  - **Registered but unused domains**: If you have registered domains that you aren't using for email or aren't using at all (also known as _parked domains_), configure SPF TXT records in those domains to specify that no email should ever come from those domains.
 
 - **SPF alone is not enough**. For the best level of email protection for your custom domains, you also need to configure DKIM and DMARC as part of your overall [email authentication](email-authentication-about.md) strategy. For more information, see the [Next Steps: DKIM and DMARC](#next-steps-dkim-and-dmarc) section at the end of this article.
 
@@ -65,9 +64,9 @@ The rest of this article describes the SPF TXT records that you need to create f
 
 ## Syntax for SPF TXT records
 
-SPF TXT record syntax in Microsoft 365 is described at [External DNS records required for SPF](/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf) and exhaustively described in [RFC 7208](https://datatracker.ietf.org/doc/html/rfc7208).
+SPF TXT records are exhaustively described in [RFC 7208](https://datatracker.ietf.org/doc/html/rfc7208).
 
-The basic syntax of the SPF record is:
+The basic syntax of the SPF TX record for a custom domain in Microsoft 365:
 
 ```text
 v=spf1 [<ip4>|<ip6>:<PublicIPAddress1> <ip4>|<ip6>:<PublicIPAddress2>... <ip4>|<ip6>:<PublicIPAddressN>] [include:<DomainName1> include:<DomainName1>... include:<DomainNameN>] <enforcement rule>
@@ -82,7 +81,7 @@ v=spf1 ip4:192.168.0.10 ip4:192.168.0.12 include:spf.protection.outlook.com -all
 - `v=spf1` identifies the TXT record as an SPF TXT record.
 
 - Valid mail sources for the domain using **Domains**, **IP addresses**, or both:
-  - **Domains**: `include:`values specify other services as valid sources of email from the domain.
+  - **Domains**: `include:`values specify other domains or services as valid sources of mail from the domain, which ultimately lead to a valid IP address source for mail from the domain.
 
     Most Microsoft 365 organizations require `include:spf.protection.outlook.com` in the SPF TXT record for the domain. Other third-party email services require another `include:` value in the SPF TXT record so the service is also valid source of email from the Microsoft 365 organization.
 
@@ -92,31 +91,31 @@ v=spf1 ip4:192.168.0.10 ip4:192.168.0.12 include:spf.protection.outlook.com -all
       - An individual IP address (for example, 192.168.0.10).
       - An IP address range using Classless Inter-Domain Routing (CIDR) notation (for example 192.168.0.1/26). Be sure that the range isn't too big or too small.
 
-    In Microsoft 365, you typically use IP addresses in the SPF TXT record only if you have on-premises email servers that send mail from the domain that's used in Microsoft 365 (for example, [Exchange Server hybrid deployments](/exchange/exchange-hybrid)). Some third-party email services might also suggest an IP address range instead of an `include:` value in the SPF TXT record.
+    In Microsoft 365, you typically use IP addresses in the SPF TXT record only if you have on-premises email servers that send mail from the domain that's also used in Microsoft 365 (for example, [Exchange Server hybrid deployments](/exchange/exchange-hybrid)). Some third-party email services might also suggest an IP address range instead of an `include:` value in the SPF TXT record.
 
 - The enforcement rule is one of the following values:
-  - `-all` (hard fail): Tells the destination email system domain that messages from sources not specified in the SPF TXT record aren't authorized to send mail from the domain, so the messages should be rejected. What actually happens to the message depends on the destination email system, but the messages are likely discarded.
+  - `-all` (hard fail): Tells the destination email system that messages from sources not specified in the SPF TXT record aren't authorized to send mail from the domain, so the messages should be rejected. What actually happens to the message depends on the destination email system, but the messages are typically discarded.
   
-     In Microsoft 365, we recommend `-all` (hard fail) because we also recommend DKIM and DMARC for the domain. The DMARC policy (`p=quarantine` or `p=reject`) specifies what to do to messages that fail SPF or DKIM.
+     For Microsoft 365 domains, we recommend `-all` (hard fail) because we also recommend DKIM and DMARC for the domain. The DMARC policy (`p=quarantine` or `p=reject`) specifies what to do to messages that fail SPF or DKIM, and the DMARC reporting services allow you to validate the results.
 
-     If SPF was the only email authentication method for the domain (no DKIM or DMARC), you would need to be quite confident that all possible sources of email from the domain are identified in the SPF record. Otherwise, the destination email system might discard valid messages from senders in the domain that come from unidentified sources (bulk mailing services, reporting servers, etc.).
+     If SPF was the only email authentication method for the domain (no DKIM or DMARC), you would need to be confident that all possible sources of email from the domain are identified in the SPF record. Otherwise, the destination email system might discard valid messages from senders that come from unidentified sources (bulk mailing services, reporting servers, etc.).
 
   - `~all` (soft fail): Tells the destination email system that messages from sources not specified in the SPF TXT record _probably_ aren't authorized to send mail from the domain, so the messages should be accepted and marked. What actually happens to the message depends on the destination email system. For example, the message might be marked as spam and quarantined or delivered to the Junk Email folder, or delivered to the Inbox with an identifier added to the Subject or message body.
 
-     Because we also recommend DKIM and DMARC for domains in Microsoft 365, the differences between `-all` (hard fail) and `~all` (soft fail) are largely eliminated (DMARC treats them both as SPF failures). After an SPF failure, DMARC also checks DKIM to see if the domains in the `5321.MailFrom` and From addresses match, and the the DMARC policy (`p=quarantine` or `p=reject`) specifies what to do to messages that fail DMARC.
+     Because we also recommend DKIM and DMARC for Microsoft 365 domains, the differences between `-all` (hard fail) and `~all` (soft fail) are largely eliminated (DMARC treats them both as SPF failures). After an SPF failure, DMARC also checks DKIM to see if the domains in the MAIL FROM and From addresses match, and the the DMARC policy (`p=quarantine` or `p=reject`) specifies what to do to messages that fail DMARC.
 
   - `?all` (neutral): Tells the destination email system domain to do nothing to messages from sources that aren't specified in the SPF TXT record. This value is used for testing, and we don't recommend this value in production environments.
 
 Important points to remember:
 
-- Each defined domain or subdomain in DNS requires an SPF TXT record, and only one SPF record is allowed per domain or subdomain. Email authentication protection for _undefined_ subdomains is covered by DMARC.
+- Each defined domain or subdomain in DNS requires an SPF TXT record, and only one SPF record is allowed per domain or subdomain. Email authentication protection for _undefined_ subdomains is best handled by DMARC.
 - You can't create or modify the SPF text record for the \*.onmicrosoft.com domain.
-- When the destination email system checks the valid email sources in the SPF record, SPF validation fails if the check requires more than 10 additional DNS lookups (not necessarily 10 DNS queries). For more information, see xxx.
+- When the destination email system checks the valid email sources in the SPF record, SPF validation fails if the check requires too many DNS lookups. For more information, see the [Troubleshooting SPF TXT records](#troubleshooting-spf-txt-records) section later in this article.
 
 ## SPF TXT records for domain in Microsoft 365
 
 > [!TIP]
-> Remember, we also recommend configuring SPF and DMARC in addition to SPF. If, for some reason, you were only able to configure SPF without DKIM or DMARC, the recommended SPF TXT records might be different.
+> We also recommend configuring SPF and DMARC, not just SPF. If, for some reason, you were able to configure only SPF without DKIM or DMARC, the recommended SPF TXT records (in particular, the enforcement rule values) might be different.
 
 - **Scenario**: You use contoso.com for email in Microsoft 365, and Microsoft 365 is the only source of email from contoso.com.
 
@@ -146,16 +145,6 @@ Important points to remember:
   v=spf1 -all
   ```
 
-- **Scenario**: You use contoso.com for email in Microsoft 365. Mail from contoso.com senders also comes from the following sources:
-  - The Adatum bulk mailing service: According to the Adatum service documentation, you need to add `include:servers.adatum.com` to the SPF TXT record for your domain.
-  - An on-premises email server with the external email address of 192.168.0.10.
-
-  **SPF TXT record for contoso.com**:
-
-  ```text
-  v=spf1 ipv4:192.168.0.10 include:spf.protection.outlook.com include:servers.adatum.com -all
-  ```
-
 - **Scenario**: You use contoso.com for email in Microsoft 365. You plan on sending mail from the following sources:
   - An on-premises email server with the external email address of 192.168.0.10. Because you have direct control over this email source, we consider it OK to use the server for senders in the contoso.com domain.
   - The Adatum bulk mailing service. Because you don't have direct control over this email source, we recommend creating a subdomain to use, so you create marketing.contoso.com for that purpose. According to the Adatum service documentation, you need to add `include:servers.adatum.com` to the SPF TXT record for your domain.
@@ -168,24 +157,30 @@ Important points to remember:
 
   **SPF TXT record for marketing.contoso.com**:
 
-## Troubleshooting
+  ```text
+  v=spf1 include:servers.adatum.com include:spf.protection.outlook.com -all
+  ```
 
-Having trouble with your SPF TXT record? See [Troubleshooting: Best practices for SPF in Microsoft 365](email-authentication-anti-spoofing.md#troubleshooting-best-practices-for-spf-in-microsoft-365).
+## Troubleshooting SPF TXT records
 
-## More information about SPF
+- **One SPF record per domain or subdomain**: Multiple SPF TXT records for the same domain or subdomain cause a DNS lookup loop that makes SPF fail, so use only one SPF record per domain or subdomain.
 
-For advanced examples, a more detailed discussion about supported SPF syntax, spoofing, troubleshooting, and how Microsoft 365 supports SPF, see [How SPF works to prevent spoofing and phishing in Microsoft 365](email-authentication-anti-spoofing.md#how-spf-works-to-prevent-spoofing-and-phishing-in-microsoft-365).
+- **Less than 10 DNS lookups**: When the destination email system queries the SPF TXT record for valid sources for mail from the MAIL FROM address domain, the query scans through all of the IP addresses and `include:` statements in the record until the message source (IP address) matches one of the specified sources. If the number of DNS lookups (which can be different than the number of DNS _queries_) is greater than 10, the message fails SPF with a permanent error (also called a  _permerror_). The destination email system rejects the message in a non-delivery report (also known as an NDR or _bounce message_) with one of the following errors:
+  - The message exceeded the hop count.
+  - The message required too many lookups.
+
+  In the SPF TXT record, individual IP addresses or IP address ranges don't cause DNS lookups. Each `include:` statement requires at least one DNS lookup, and more lookups might be required if values in the `include:` statement point to nested resources. In other words, having less than 10 `include:` statements doesn't guarantee less than 10 DNS lookups.
+
+  Also keep in mind: the destination email system evaluates the sources in the SPF TXT record from left to right. Evaluation stops when the message source matches. Therefore, it's possible that an SPF TXT record for a domain contains enough sources that can cause more than 10 lookups, but some email from specific sources doesn't require the destination email systems to go that deep into the record to match the message source.
+
+  In addition to preserving the reputation of your main email domain, not exceeding the number of DNS lookups is another reason to use subdomains for other email services that you don't control.
+
+You can use free online tools to view your SPF TXT record and other DNS records for your domain. Some tools even calculate the number of DNS record lookups that your SPF TXT record requires.
 
 ## Next Steps: DKIM and DMARC
 
- SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF can't protect against. To defend against these, once you've set up SPF, you should configure DKIM and DMARC for Office 365.
+As described in [How SPF, DKIM, and DMARC work together to authenticate email message senders](email-authentication-about.md#how-spf-dkim-and-dmarc-work-together-to-authenticate-email-message-senders), SPF alone is not enough to prevent spoofing of your Microsoft 365 domain. You also need to configure DKIM and DMARC for the best protection. For instructions, see:
 
-[**DKIM**](email-authentication-dkim-configure.md) email authentication's goal is to prove the contents of the mail haven't been tampered with.
-
-[**DMARC**](email-authentication-dmarc-configure.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
-
- For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](email-authentication-anti-spoofing.md#how-spf-works-to-prevent-spoofing-and-phishing-in-microsoft-365).
-
-[Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure)
-
-*Select 'This page' under 'Feedback' if you have feedback on this documentation.*
+- [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md)
+- [Use DMARC to validate email](email-authentication-dmarc-configure.md)
+- [Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure)
