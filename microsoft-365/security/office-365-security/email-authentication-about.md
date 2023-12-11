@@ -79,10 +79,10 @@ S: To: "Andrew Stobes" <astobes@tailspintoys.com>
 S: From: "Woodgrove Bank Security" <security@woodgrovebank.com>
 S: Subject: Woodgrove Bank - Action required
 S:
-S: Greetings User,
+S: Greetings,
 S:
 S: We need to verify your banking details.
-S: Please click the following link to verify that Microsoft has the right information for your account.
+S: Please click the following link to verify that we have the right information for your account.
 S:
 S: https://short.url/woodgrovebank/updateaccount/12-121.aspx
 S:
@@ -98,7 +98,7 @@ In this example:
 - The MAIL FROM address that's used in the message envelope is dubious@proseware.com.
 - The From address that's shown in the recipient's email client is security@woodgrovebank.com.
 
-Although this message is valid according to SMTP, the domain of the **MAIL FROM** address (proseware.com) doesn't match the domain in the From address (woodgrovebank.com). This is a classic example of spoofing, where the intent is likely to deceive the recipient by masking the true source of the message to use in a phishing attack.
+Although this message is valid according to SMTP, the domain of the MAIL FROM address (proseware.com) doesn't match the domain in the From address (woodgrovebank.com). This message is a classic example of spoofing, where the intent is likely to deceive the recipient by masking the true source of the message to use in a phishing attack.
 
 Clearly, SMTP email needs help to verify that message senders are who they claim to be!
 
@@ -114,11 +114,11 @@ This section describes why you need SPF, DKIM, and DMARC for domains on the inte
     - An attacker can send email that passes SPF authentication (a false negative) by following these steps:
       - Register a domain (for example, proseware.com) and configure SPF for the domain.
       - Send email from a valid source for the registered domain, with the From email addresses in a different domain (for example, woodgrovebank.com).
-    - A legitimate email service might demand control of the MAIL FROM address that's used to send mail from other domains. The other domains can configure SPF records in their own domains that are used in the From addresses, but those domains don't match the domain MAIL FROM address, so the messages can't pass SPF authentication (a false positive).
+    - A legitimate email service that sends mail on behalf of other domains might control the MAIL FROM address. SPF records in the other domains don't matter. The other domains and the MAIL FROM domain don't match, so the messages can't pass SPF authentication (a false positive).
 
-  - SPF breaks after messages encounter server-based email forwarding that redirects or _relays_ messages because:
+  - SPF breaks after messages encounter server-based email forwarding that redirects or _relays_ messages.
     - Server-based email forwarding changes the message source from the original server to the forwarding server.
-    - The forwarding server isn't authorized to send mail from the original MAIL FROM address domain, so the message can't pass SPF authentication (a false positive).
+    - The forwarding server isn't authorized to send mail from the original MAIL FROM domain, so the message can't pass SPF authentication (a false positive).
 
   - Each domain and any subdomains require their own individual SPF records. Subdomains don't inherit the SPF record of the parent domain. This behavior becomes problematic if you want allow email from defined and used subdomains, but prevent email from undefined and unused subdomains.
 
@@ -126,21 +126,21 @@ This section describes why you need SPF, DKIM, and DMARC for domains on the inte
 
   **How DKIM helps SPF**: DKIM can validate messages that fail SPF. For example:
 
-  - Messages from an email hosting service where the same MAIL FROM address is used for mail many different domains.
+  - Messages from an email hosting service where the same MAIL FROM address is used for mail from other domains.
   - Messages that encounter server-based email forwarding.
 
-  Because the DKIM signature in the message header isn't affected or altered by these scenarios, messages that fail SPF in these scenarios can pass DKIM.
+  Because the DKIM signature in the message header isn't affected or altered by these scenarios, these message are able to pass DKIM.
 
-  **DKIM issues**: The domain that DKIM uses to sign the message doesn't need to match the domain in the From address that's shown in email clients.
+  **DKIM issues**: The domain that DKIM uses to sign a message doesn't need to match the domain in the From address that's shown in email clients.
 
   Like SPF, an attacker can send email that passes DKIM authentication (a false negative) by following these steps:
 
-  - Register a domain (for example, proseware.com) and configuring DKIM for the domain.
+  - Register a domain (for example, proseware.com) and configure DKIM for the domain.
   - Send email with the From email addresses in a different domain (for example, woodgrovebank.com).
 
-- **DMARC**: As explained in xxx, DMARC uses SPF and DMARC to check for alignment between the domains in the MAIL FROM and From addresses. DMARC also specifies the action that the destination email system should take on messages that fail DMARC, and identifies the reporting services to send DMARC the results to.
+- **DMARC**: As explained in xxx, DMARC uses SPF and DMARC to check for alignment between the domains in the MAIL FROM and From addresses. DMARC also specifies the action that the destination email system should take on messages that fail DMARC, and identifies the reporting services to send DMARC results to.
 
-  **How DMARC helps SPF and DKIM**: As previously described, SPF makes no attempt to match the domain in MAIL FROM domain and From addresses. DKIM doesn't care if the domain that was used to sign the message matches the domain in the From address.
+  **How DMARC helps SPF and DKIM**: As previously described, SPF makes no attempt to match the domain in MAIL FROM domain and From addresses. DKIM doesn't care if the domain that signed the message matches the domain in the From address.
 
   DMARC addresses these deficiencies by using SPF and DKIM to confirm that the domains in the MAIL FROM and From addresses match.
 
@@ -152,7 +152,7 @@ This section describes why you need SPF, DKIM, and DMARC for domains on the inte
 
 ## Inbound email authentication for mail sent to Microsoft 365
 
-Because of phishing concerns and the less than complete adoption of strong email authentication policies by email senders on the internet, Microsoft 365 uses _implicit email authentication_ to check inbound email. Implicit email authentication extends regular SPF, DKIM, and DMARC checks by using signals from other sources to evaluate inbound email. These sources include:
+Because of phishing concerns and less than complete adoption of strong email authentication policies by email senders on the internet, Microsoft 365 uses _implicit email authentication_ to check inbound email. Implicit email authentication extends regular SPF, DKIM, and DMARC checks by using signals from other sources to evaluate inbound email. These sources include:
 
 - Sender reputation.
 - Sender history.
@@ -248,23 +248,23 @@ The following examples focus on the results of email authentication only (the `c
      fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ~all"
      ```
 
-    If you create this SPF record, Microsoft 365 treats inbound email from your corporate infrastructure as authenticated, but email from unidentified sources might still be marked as spoof if it fails composite authentication. However, this behavior is still an improvement from all email senders in the domain being marked as spoof by Microsoft 365. Typically, other email servers and services also allow delivery of messages from senders in your domain from unidentified sources when SPF is configured with a soft fail enforcement rule.
+    If you create this SPF record, Microsoft 365 treats inbound email from your corporate infrastructure as authenticated, but email from unidentified sources might still be marked as spoof if it fails composite authentication. However, this behavior is still an improvement from all email from senders in the domain being marked as spoof by Microsoft 365. Typically, destination email system accept messages from senders in the domain from unidentified sources when SPF is configured with a soft fail enforcement rule.
 
   2. Discover and include more email sources for your messages. For example:
      - On-premises email servers.
      - Email sent from a software-as-a-service (SaaS) provider.
      - Email sent from a cloud-hosting service (Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services, etc.).
 
-     After you've identified all email sources, you can update your SPF record to use the enforcement rule value "hard fail" (`-all`).
+     After you've identified all email sources for your domain, you can update your SPF record to use the enforcement rule value "hard fail" (`-all`).
 
   3. Set up DKIM to digitally sign messages.
   
-  4. Set up DMARC to validate that the `5321.MailFrom` address matches the From address, and to specify what to do with messages that fail DMARC checks (reject or quarantine), and to identify reporting services to monitor DMARC results.
+  4. Set up DMARC to validate that the domains in the MAIL FROM and From addresses match, to specify what to do with messages that fail DMARC checks (reject or quarantine), and to identify reporting services to monitor DMARC results.
 
   5. If you use bulk senders to send email on your behalf, verify that the domain in the From address matches the domain that passes SPF or DMARC.
 
 - **You host a domain's email or provide hosting infrastructure that can send email**:
   - Ensure your customers have documentation that explains how to configure SPF for their domains.
-  - Consider signing DKIM-signatures on outbound email, even if the customer doesn't explicitly set it up (sign with a default domain). You can even double-sign the email with DKIM signatures (with your company domain and the customer's domain if/when it's available).
+  - Consider DKIM signing DKIM outbound mail, even if the customer doesn't explicitly set up DKIM in their domain (sign with a default domain). You can even double-sign the email with DKIM signatures (with your company domain and the customer's domain if/when it's available).
 
   Delivery to Microsoft isn't guaranteed, even if you authenticate email originating from your platform. But, email authentication ensures that Microsoft doesn't automatically junk email from your customer domains simply because it isn't authenticated.
