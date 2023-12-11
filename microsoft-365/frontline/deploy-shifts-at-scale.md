@@ -99,8 +99,7 @@ You can choose to allow schedule owners to create and manage schedule groups or 
     :::image type="content" source="media/dsas-add-schedule-group.png" alt-text="Screenshot of the Review and finish setup page, showing a summary of the selected settings. "lightbox="media/dsas-add-schedule-group.png":::
 
     For each schedule group that you create:
-    1. Give it a unique name. It can’t be longer than 40 characters. This name is what frontline managers and workers see in the Shifts schedule.  
-    1. Choose an icon.
+    1. Give it a unique name. It can’t be longer than 40 characters. This name is what frontline managers and workers see in the Shifts schedule.
     1. Enter a unique code. The code is a mandatory field and can be up to 100 alphanumeric characters long. These codes can't be changed after Shifts is deployed. Codes ensure uniformity across all your HR systems and streamlined experiences across your frontline teams and apps.
 1. When you're done, select **Next**.
 
