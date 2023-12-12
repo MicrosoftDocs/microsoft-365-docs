@@ -3,13 +3,13 @@
 # For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
 # For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
 
-title:       # Automatic end user feedback response
-description: # How to automatically response to end user submissions of phish using MDO automated investigations.
+title:       Automatic end user feedback response # 
+description: How to automatically response to end user submissions of phish using MDO automated investigations. #
 author:      KCrider14 # GitHub alias
 ms.author:   kellycrider # Microsoft alias
-ms.service:  # ms.service
+ms.service:  Microsoft Defender for Office 365 (MDO) # ms.service
 # ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # AIR
+ms.topic:    AIR, Automated investigations, User submissions # AIR
 ms.date:     12/08/2023
 ---
 
