@@ -3,7 +3,7 @@ title: Onboard Windows devices using a local script
 description: Use a local script to deploy the configuration package on devices to enable onboarding of the devices to the service.
 keywords: configure devices using a local script, device management, configure Microsoft Defender for Endpoint devices
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -14,13 +14,13 @@ ms.collection:
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 ms.date: 08/31/2023
 ---
 
 # Onboard Windows devices using a local script
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)

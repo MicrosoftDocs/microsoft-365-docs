@@ -11,8 +11,8 @@ ms.date: 07/07/2022
 ms.collection: 
 - m365-security
 - tier2
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium
 ms.reviewer: 
 f1.keywords: NOCSH
@@ -49,7 +49,7 @@ This playbook is a simple guide to help you make the most of your free trial. Us
 <a href="microsoft-defender-endpoint.md#apis"><center><b>Centralized configuration and administration, APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="microsoft-defender-endpoint.md#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
+<td colspan="7"><a href="microsoft-defender-endpoint.md#mtp"><center><b>Microsoft Defender XDR</a></center></b></td>
 </tr>
 </table>
 <br>

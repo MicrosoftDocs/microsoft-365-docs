@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Identity in Microsoft Defender XDR
 description: Learn about changes from the Microsoft Defender for Identity to Microsoft Defender XDR
-keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Identity, MDI
+keywords: Getting started with Microsoft Defender XDR, Microsoft Defender for Identity, MDI
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -24,7 +24,7 @@ ms.custom: admindeeplinkDEFENDER, defender-for-identity
 
 # Microsoft Defender for Identity in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -86,7 +86,7 @@ The following sections describe enhanced Defender for Identity features found in
 
 The table below lists the changes in navigation between Microsoft Defender for Identity and Microsoft Defender XDR.
 
-| **Defender for** Identity  | **Microsoft 365 Defender**                                   |
+| **Defender for** Identity  | **Microsoft Defender XDR**                                   |
 | -------------------------- | ------------------------------------------------------------ |
 | **Timeline**                   |- Microsoft Defender XDR Alerts/Incidents queue                |
 | **Reports**                    |The following types of reports are available from the **Reports** > **Identities** > **Report management** page in Microsoft Defender XDR, either for immediate download or scheduled for a periodic email delivery: <br><br>- A summary report of alerts and health issues you should take care of. <br>- A list of each time a modification is made to sensitive groups. <br>- A list of source computer and account passwords that are detected as being sent in clear text.<br>- A list of the sensitive accounts exposed in lateral movement paths. <br><br>For more information, see [Report management](/defender-for-identity/reports).  |
@@ -111,4 +111,4 @@ For more information, see:
 - [Related videos for Microsoft Defender for Identity](https://www.microsoft.com/videoplayer/embed/RE4HcEU)
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender for Identity](/defender-for-identity/)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

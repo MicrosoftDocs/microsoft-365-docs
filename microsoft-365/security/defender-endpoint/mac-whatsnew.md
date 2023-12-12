@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -13,14 +13,14 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.reviewer: mavel
 ---
 
 # What's new in Microsoft Defender for Endpoint on Mac
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -796,7 +796,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 **What's new**
 
 > [!IMPORTANT]
-> We are working on a new and enhanced syntax for the `mdatp` command-line tool. The new syntax is currently the default in the Insider Fast and Insider Slow update channels. We encourage you to famliliarize yourself with this new syntax.
+> We are working on a new and enhanced syntax for the `mdatp` command-line tool. The new syntax is currently the default in the Insider Fast and Insider Slow update channels. We encourage you to familiarize yourself with this new syntax.
 > We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months.
 - Addressed a kernel panic that occurred sometimes when accessing SMB file shares.
 - Performance improvements & bug fixes

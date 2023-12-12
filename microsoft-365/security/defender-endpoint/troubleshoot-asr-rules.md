@@ -1,7 +1,7 @@
 ---
 title: Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
 description: This topic describes how to report and troubleshoot Microsoft Defender for Endpoint ASR Rules
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
@@ -12,7 +12,7 @@ ms.custom:
 - mde-asr
 - admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: asr
 ms.collection: 
 - m365-security
 - tier3
@@ -22,7 +22,7 @@ ms.date: 07/18/2023
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

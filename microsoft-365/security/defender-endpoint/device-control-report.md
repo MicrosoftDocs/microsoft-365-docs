@@ -1,7 +1,7 @@
 ---
 title: Protect your organization's data with device control
 description: Monitor your organization's data security through device control reports.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 06/26/2023
 ms.author: deniseb
@@ -10,7 +10,7 @@ ms.reviewer: dansimp
 ms.topic: conceptual
 manager: dansimp
 audience: ITPro
-ms.subservice: mde
+ms.subservice: asr
 ms.collection: 
 - m365-security
 - tier3

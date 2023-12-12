@@ -82,7 +82,7 @@ The following are limitations of the multitenant organizations in Microsoft 365 
 
 - A maximum of five tenants in the multitenant organization is supported.
 - A maximum of 100,000 users per tenant is supported.
-- Teams on the web, macOS, Microsoft Teams Rooms (MTR), and VDI/AVD aren't supported.
+- Teams on the web, Microsoft Teams Rooms (MTR), and VDI/AVD aren't supported.
 - The ability to grant or revoke permission to receive notifications from other tenants and to switch between tenants isn't supported on mobile.
 - *People in your organization* links may not work for users from another tenant if their account had originally been a guest and they had previously accessed SharePoint resources.
 - It might take up to seven days for a user to appear in search once they've been synchronized. Contact Microsoft support if users aren't searchable after seven days.

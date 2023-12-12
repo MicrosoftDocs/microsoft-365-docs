@@ -2,7 +2,7 @@
 title: Troubleshoot onboarding issues and error messages
 description: Troubleshoot onboarding issues and error message while completing setup of Microsoft Defender for Endpoint.
 keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, microsoft defender for endpoint
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: troubleshooting
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Troubleshoot subscription and portal access issues
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

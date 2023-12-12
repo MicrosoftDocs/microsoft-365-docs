@@ -5,7 +5,7 @@ description: Understand emerging threats and attack techniques and how to stop t
 keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +20,13 @@ ms.collection:
   - tier1
   - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 ms.date: 12/18/2020
 ---
 
 # Track and respond to emerging threats through threat analytics
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -57,7 +57,7 @@ Watch this short video to learn more about how threat analytics can help you tra
 ## Required roles and permissions
 The following table outlines the roles and permissions required to access Threat Analytics. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Microsoft Entra ID, even if similarly named.
 
-| **One of the following roles are required for Microsoft 365 Defender**  | **One of the following roles are required for Defender for Endpoint**  | **One of the following roles are required for Defender for Office 365** | **One of the following roles are required for Defender for Cloud Apps** | 
+| **One of the following roles are required for Microsoft Defender XDR**  | **One of the following roles are required for Defender for Endpoint**  | **One of the following roles are required for Defender for Office 365** | **One of the following roles are required for Defender for Cloud Apps** | 
 |---------|---------|---------|---------|
 | Threat Analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>Defender Vulnerability Management mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | Not available for Defender for Cloud Apps or MDI users |
 

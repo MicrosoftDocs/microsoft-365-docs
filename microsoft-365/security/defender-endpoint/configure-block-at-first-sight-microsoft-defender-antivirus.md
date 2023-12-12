@@ -2,7 +2,7 @@
 title: Enable block at first sight to detect malware in seconds
 description: Turn on the block at first sight feature to detect and block malware within seconds.
 keywords: scan, block at first sight, malware, first sight, cloud, defender, antivirus
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -12,7 +12,7 @@ ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
 ms.date: 04/10/2023
-ms.subservice: mde
+ms.subservice: ngp
 ms.topic: conceptual
 ms.collection: 
 - m365-security

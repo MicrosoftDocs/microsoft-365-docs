@@ -25,7 +25,7 @@ ms.date: 05/31/2023
 
 # Automatic attack disruption in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -107,4 +107,4 @@ For more information, see [view attack disruption details and results](autoad-re
 - [Get email notifications for response actions](m365d-response-actions-notifications.md)
 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

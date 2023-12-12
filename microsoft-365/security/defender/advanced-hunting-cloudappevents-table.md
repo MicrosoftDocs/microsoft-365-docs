@@ -1,7 +1,7 @@
 ---
 title: CloudAppEvents table in the advanced hunting schema
 description: Learn about events from cloud apps and services in the CloudAppEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, CloudAppEvents, Defender for Cloud Apps
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, CloudAppEvents, Defender for Cloud Apps
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -25,7 +25,7 @@ ms.date: 02/16/2021
 
 # CloudAppEvents
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -99,4 +99,4 @@ Connect supported cloud apps for instant, out-of-the-box protection, deep visibi
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
