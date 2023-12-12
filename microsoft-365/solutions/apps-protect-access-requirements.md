@@ -16,16 +16,23 @@ keywords:
 
 # Understand app protection access requirements
 
-The **Access requirements** settings allow you to configure the PIN and credential requirements that users must meet to access apps in a work context. As the admin, you can control the 
+The **Access requirements** settings allow you to configure the PIN and credential requirements that users must meet to access apps in a work context. As the admin, you can control whether to use a PIN for app access, require work or school account credentials for access, and how often to recheck access requirements.
 
-## Access requirements for iOS/iPadOS and Android app protection policies
+> [!NOTE]
+> The **Access requirement** settings only apply to iOS/iPadOS and Android app protection policies.
+
+## Access requirements for app protection policies
 
 For iOS/iPadOS and Android app protection policies, the available app access settings are similar between iOS/iPadOS and Android. Differences include details for biometrics and PIN reset.
 
-You'll see that iOS/iPadOS offer slightly different app protection functionality:
+### iOS access requirement settings
+
+You'll see that iOS/iPadOS offer slightly different app protection functionality.
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-10.png" alt-text="Access requirements UI for iOS/iPadOS" border="false" :::
 
-Android offers similar functionality to iOS/iPadOS functionality:
+### Android access requirement settings
+
+Android offers similar functionality to iOS/iPadOS functionality.
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-11.png" alt-text="Access requirements UI for Android" border="false" :::

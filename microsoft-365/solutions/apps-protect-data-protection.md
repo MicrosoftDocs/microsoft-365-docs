@@ -23,29 +23,29 @@ The **Data Protection** settings determine how users interact with org data and 
 
 Data protection is available for policy-managed apps that support the [iOS/iPadOS](/mem/intune/apps/app-protection-policy-settings-ios#data-protection), [Android](/mem/intune/apps/app-protection-policy-settings-android#data-protection), and [Windows](/mem/intune/apps/app-protection-policy-settings-windows#data-protection) platforms. Each platform offers a different set of settings related to data protection.
 
-App data protection has three primary categories:
+The data protection section of app protection policies has has the following categories for each platform:
 
 | Data Protection  | Categories |
 |---|---|
-| iOS/iPadOS  | Data Transfer, Encryption, Functionality  |
-| Android | Data Transfer, Encryption, Functionality |
-| Windows | Data Transfer, Functionality |
+| iOS/iPadOS  | [Data Transfer](#data-transfer-for-iosipados-app-protection-policy), [Encryption](#encryption-for-iosipados-app-protection-policy), [Functionality](#functionality-for-iosipados-and-android-app-protection-policy)  |
+| Android | [Data Transfer](#data-transfer-for-android-app-protection-policy), [Encryption](#encryption-for-android-app-protection-policy), [Functionality](#functionality-for-iosipados-and-android-app-protection-policy) |
+| Windows | [Data Transfer](#data-transfer-for-windows-app-protection-policy), [Functionality](#functionality-for-windows-app-protection-policy) |
 
 ## Data Transfer
 
-### iOS/iPadOS app protection policy
+### Data Transfer for iOS/iPadOS app protection policy
 
 The **Data Transfer** section of the **Data Protection** settings for a iOS/iPadOS specific app protection policy has settings that are specific to the iOS/iPadOS platform. These settings determine how end-users interact with org data in the apps. You select settings to allow or block iTunes and iCloud backups, determine how apps can send and receive org data, restrict end-user initiated data movement between apps, and prevent third-party keyboards. 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-02.png" alt-text="Data Transfer UI for iOS/iPadOS" border="false" :::
 
-### Android app protection policy
+### Data Transfer for Android app protection policy
 
 The **Data Transfer** section of the **Data Protection** settings for an Android specific app protection policy has settings that are also specific to the Android platform. In addition to the commonly offered app protection settings, Android app protection provides additional settings, such as allowing screen capture and Google Assistant.
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-03.png" alt-text="Data Transfer UI for Android" border="false" :::
 
-### Windows app protection policy
+### Data Transfer for Windows app protection policy
 
 The **Data Transfer** section of the **Data Protection** settings for a Windows specific app protection policy has settings that are specific to the Windows platform. These DLP settings provide three main options for Android apps. These settings involve how data is received, sent, and moved between apps. 
 
@@ -57,7 +57,7 @@ Encryption is available for iOS/iPadOS and Android as part of an app protection 
 
 Choose **Require** to enable encryption of work or school data in an app.
 
-### iOS/iPadOS app protection policy
+### Encryption for iOS/iPadOS app protection policy
 
  Intune enforces iOS/iPadOS device encryption to protect app data while the device is locked. Applications may optionally encrypt app data using Intune APP SDK encryption. Intune APP SDK uses iOS/iPadOS cryptography methods to apply 128-bit AES encryption to app data.
 
@@ -68,7 +68,7 @@ When you enable this setting, the user may be required to set up and use a PIN t
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-05.png" alt-text="Encryption UI for iOS/iPadOS" border="false" :::
 
-### Android app protection policy
+### Encryption for Android app protection policy
 
 Intune uses a wolfSSL, 256-bit AES encryption scheme along with the Android Keystore system to securely encrypt app data. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted. New files will be encrypted with 256-bit keys. Existing 128-bit encrypted files will undergo a migration attempt to 256-bit keys, but the process is not guaranteed. Files encrypted with 128-bit keys will remain readable.
 

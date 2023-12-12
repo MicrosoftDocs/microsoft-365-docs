@@ -59,15 +59,21 @@ Different app protection settings are available for each supported platform. It'
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-15.png" alt-text="App data protection categories" border="false" :::
 
 > [!TIP]
-> To see where app protection adn compliance policies fit into the overall Intune architecture, see [High-level architecture for Microsoft Intune](/mem/intune/fundamentals/high-level-architecture).
+> To see where app protection and compliance policies fit into the overall Intune architecture, see [High-level architecture for Microsoft Intune](/mem/intune/fundamentals/high-level-architecture).
 
 When you create an app protection policy, you choose the platform, the app to target, as well as the specific settings from the app protection categories.
 
 ### How app protection policies protect app data
 
-Your employees use mobile devices for both personal and work tasks. While making sure your employees can be productive, you want to prevent data loss, intentional and unintentional. You'll also want to protect company data that is accessed from devices that aren't managed by you. You can use Intune app protection policies independent of any mobile device management (MDM) solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution. By implementing app-level protection policies, you can restrict access to company resources and keep data within the purview of your IT department.
+Your employees use mobile devices for both personal and work tasks. While making sure your employees can be productive, you want to prevent your organization's data from moving to locations where it you cannot secure it, for both intentional and unintentional situations. You'll also want to protect company data that is accessed from devices that aren't managed by you. You can use Intune app protection policies independent of any mobile device management (MDM) solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution. By implementing app-level protection policies, you can restrict access to company resources and keep data within the purview of your IT department.
 
-#### With enrollment (MDM, devices channel)
+When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data loss. The following table provides details about data, device and app protection.
 
-#### Without enrollment (MAM, app channel)
+| Data,   device, and app protection | Description |
+|:---:|:---:|
+| Apps   without app protection policies | When apps are used without   restrictions, company and personal data can get intermingled. Company data   can end up in locations like personal storage or transferred to apps beyond   your purview and result in data loss.  |
+| Data   protection with app protection policies | You can use App protection   policies to prevent company data from saving to the local storage of the   device. You can also restrict data movement to other apps that aren't   protected by App protection policies.  |
+| Data   protection with app protection policies on managed devices | Provides both app and device   management and protection. |
+| Data   protection with APP for devices without enrollment | App protection policies can help   protect company data at the app level. However, there are limitations related   to deploying apps, provisioning device certificate profiles, and provisioning   device organization settings. |
 
+For more information, see [How app protection policies protect app data](/mem/intune/apps/app-protection-policy#how-app-protection-policies-protect-app-data).
