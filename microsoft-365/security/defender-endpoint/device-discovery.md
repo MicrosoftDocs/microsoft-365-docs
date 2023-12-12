@@ -9,7 +9,7 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: mjcaparas
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
