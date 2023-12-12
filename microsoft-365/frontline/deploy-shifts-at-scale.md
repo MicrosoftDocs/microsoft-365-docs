@@ -69,7 +69,7 @@ Choose the Shifts capabilities that you want enabled for your frontline teams. C
     :::image type="content" source="media/dsas-time-off-reasons.png" alt-text="Screenshot of the Configure Shifts settings page, showing settings for time-off reasons and time clock. "lightbox="media/dsas-time-off-reasons.png":::
 
     Under **Time-off reasons**, select **Add**, and then for each time-off reason that you create:
-    1. Give it a name. It can’t be longer than 40 characters.  
+    1. Give it a unique name. It can’t be longer than 40 characters.  
     1. Choose an icon.
     1. Enter a unique code. The code is a mandatory field and can be up to 100 alphanumeric characters long. For example, A01. These codes can't be changed after Shifts is deployed. Codes ensure uniformity across all your HR systems and streamlined experiences across your frontline teams and apps.
 
