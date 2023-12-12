@@ -62,6 +62,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 ### Dec-2023 (Build: 101.23102.0020 | Release version: 20.123102.20.0)
 
 | Build:             | **101.23102.0020** |
+|--------------------|----------------------------|
 | Release version:   | **20.123102.20.0** |
 | Engine version:    | **1.1.23090.2005** |
 | Signature version: | **1.401.1729.0**   |
