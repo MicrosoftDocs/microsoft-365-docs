@@ -33,7 +33,7 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 ## Set up translation
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), translation will be automatically set up and enabled for all SharePoint sites.
+After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), translation is automatically set up and turned on for all SharePoint sites.
 
 ## Manage sites
 
@@ -47,9 +47,9 @@ Follow these steps to manage on which SharePoint sites users can use translation
 
 4. On the **Document translation** panel:
 
-    a. By default, translation is turned on for libraries in all SharePoint sites.  Choose which site or sites this service should be enabled for.
+    a. By default, document translation is turned on for libraries in all SharePoint sites. Choose which site or sites this service should be enabled for.
 
-    b. To restrict user access to this service, under **Sites where files can be translated**, select **Edit**. Select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+    b. To restrict user access to this service, under **Sites where document translation can be used when it's turned on**, select **Edit**. On the **Where can document translation be used?** panel, select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
 
