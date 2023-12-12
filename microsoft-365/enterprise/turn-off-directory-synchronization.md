@@ -34,13 +34,19 @@ You can use PowerShell to turn off directory synchronization and convert your sy
 ## Turn off directory synchronization  
 To turn off Directory synchronization:
   
-1. First, install the required software and connect to your Microsoft 365 subscription. For instructions, see [Connect with the Microsoft Azure Active Directory module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. First, install the Microsoft Graph PowerShell SDK. For instructions, see [Install the Microsoft Graph PowerShell SDK](https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0).
     
-2. Use [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) to disable directory synchronization: 
+2. Use [Update-MgBetaOrganization](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization?view=graph-powershell-beta) to disable directory synchronization: 
     
   ```powershell
-  Set-MsolDirSyncEnabled -EnableDirSync $false
+$OrgID = (Get-MgOrganization).id
+$params = @{
+	onPremisesSyncEnabled = $null
+}
+Update-MgBetaOrganization -OrganizationId $OrgID -BodyParameter $params
   ```
+
+Reference: [Daniel Bradleys Blog (Microsoft MVP)](https://ourcloudnetwork.com/turn-off-directory-synchronization-with-microsoft-graph-powershell/)
 
 >[!Note]
 >If you use this command, you must wait 72 hours before you can turn directory synchronization back on.
