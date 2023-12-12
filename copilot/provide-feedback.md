@@ -20,7 +20,7 @@ ms.collection:
 description: "Learn how to provide Copilot for Microsoft 365 feedback to Microsoft on behalf of their users who encounter issues"
 ---
 
-# Provide user feedback to Microsoft for Microsoft Copilot for Microsoft 365
+# Provide user feedback for Microsoft Copilot for Microsoft 365
 
 Microsoft Copilot for Microsoft 365 is a product that helps users boost their productivity with large-language models (LLM). Given Copilot’s strengths and limitations, which may produce errors or unexpected outcomes, feedback is essential to improve the product and make it more dependable. Copilot for Microsoft 365 currently allows user-initiated feedback. As an admin, you can give feedback to supplement the user-initiated process. This helps Microsoft receive user feedback in case users are unable to do so and provides comprehensive diagnostic data to aid in debugging. By providing feedback on behalf of your users, you can help enhance the overall experience of Copilot for your organization by improving the quality and relevance of its responses.
 
@@ -32,7 +32,7 @@ Before you begin, you must have the following:
 
 - A Microsoft 365 subscription with Microsoft Copilot for Microsoft 365 license
 
-- Global Admin role to complete the task in this article. For more information, see [About admin roles in the Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles).
+- Global Admin role to complete the task in this article. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 - An email address of the user who experienced an issue with Copilot for Microsoft 365.
 
@@ -67,14 +67,14 @@ To provide feedback to Microsoft on behalf of a user who encountered a problem w
 
 For more information on how Microsoft protects your data, refer to the Microsoft Privacy Statement and the Microsoft Copilot Terms of Use: [My Account - Settings & Privacy](https://myaccount.microsoft.com/settingsandprivacy/privacy).
 
-For more information about privacy with Microsoft Copilot for Microsoft 365, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365.](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-privacy)
+For more information about privacy with Microsoft Copilot for Microsoft 365, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365.](microsoft-365-copilot-privacy.md)
 
 ## Additional resources
 
-- Microsoft Copilot for Microsoft 365 help and learning: [Microsoft 365 Copilot](https://support.microsoft.com/en-us/copilot?preview=true)
+- [Microsoft Copilot for Microsoft 365 help and learning](https://support.microsoft.com/copilot)
 
-- Get started with Microsoft 365 Copilot for admins: <https://learn.microsoft.com/microsoft-365/admin/copilot/m365-copilot-setup>
+- [Get started with Microsoft 365 Copilot for admins](microsoft-365-copilot-setup.md)
 
-- Data, Privacy, and Security for Microsoft 365 Copilot: <https://learn.microsoft.com/DeployOffice/privacy/microsoft-365-copilot>
+- [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)
 
-- Microsoft 365 Copilot documentation: [Microsoft Copilot for Microsoft 365 documentation \| Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365-copilot/)
+- [Microsoft Copilot for Microsoft 365 documentation](/microsoft-365-copilot/)
