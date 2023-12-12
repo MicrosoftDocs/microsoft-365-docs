@@ -2,12 +2,12 @@
 title: Device inventory
 description: Learn about the available features that you can use from the Devices list such as sorting, filtering, and exporting the list to enhance investigations.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -15,22 +15,20 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Device inventory
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
@@ -39,7 +37,7 @@ The **Device inventory** shows a list of the devices in your network where alert
 At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
 > [!NOTE]
-> The device inventory is available in different Microsoft 365 Defender services. The information available to you will differ depending on your license. You'll get the most complete set of capabilities when using [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
+> The device inventory is available in different Microsoft Defender XDR services. The information available to you will differ depending on your license. You'll get the most complete set of capabilities when using [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
 
 > [!NOTE]
 > Risk Level which can influence enforcement of conditional access and other security policies on Microsoft Intune, is available in Windows today.  
@@ -72,7 +70,7 @@ During the Microsoft Defender for Endpoint onboarding process, devices onboarded
 
 ## Navigate to the Device inventory page
 
-Access the device inventory page by selecting **Device inventory** from the **Endpoints** navigation menu in the [Microsoft 365 Defender portal](/microsoft-365/security/defender-business/mdb-get-started).
+Access the device inventory page by selecting **Devices** from the **Assets** navigation menu in the [Microsoft Defender portal](/microsoft-365/security/defender-business/mdb-get-started).
 
 ## Device inventory overview
 
@@ -80,11 +78,11 @@ The device inventory opens on the **Computers and Mobile** tab. At a glance you'
 
 Use the **Onboarding Status** column to sort and filter by discovered devices, and those already onboarded to Microsoft Defender for Endpoint.
 
-![Image of devices list with list of devices.](images/device-inventory.png)
+:::image type="content" alt-text="Image of devices list with list of devices." source="images/device-inventory.png" lightbox="images/device-inventory.png":::
 
 From the **Network devices** and **IoT devices** tabs, you'll also see information such as vendor, model and device type:
 
-![Image of network devices list.](images/device-inventory-networkdevices.png)
+:::image type="content" alt-text="Image of network devices list." source="images/device-inventory-networkdevices.png" lightbox="images/device-inventory-networkdevices.png":::
 
 > [!NOTE]
 > Device discovery Integration with [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) is available to help locate, identify, and secure your complete OT/IOT asset inventory. Devices discovered with this integration will appear on the **IoT devices** tab. For more information, see [Device discovery integration](device-discovery.md#device-discovery-integration).
@@ -95,7 +93,7 @@ At the top of each device inventory tab, you can see the total number of devices
 
 The **Newly discovered** device count for network devices and IoT devices tabs, shows the number of new devices discovered, in the last 7 days, listed in the current view.
 
-![Image of new discovered device count.](images/new-discovered-devices.png)
+:::image type="content" alt-text="Image of new discovered device count." source="images/new-discovered-devices.png":::
 
 ## Explore the device inventory
 
@@ -141,15 +139,15 @@ You can add or remove columns from the view and sort the entries by clicking on 
 
 On the **Computer and Mobiles** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
 
-![Image of computers and mobiles](images/computerandmobilescolumns.png)
+:::image type="content" alt-text="Image of computers and mobiles" source="images/computerandmobilescolumns.png":::
 
 On the **Network devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
 
-![Image of network device columns](images/networkdevicescolumns.png)
+:::image type="content" alt-text="Image of network device columns" source="images/networkdevicescolumns.png":::
 
 On the **IoT devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
 
-![Image of IoT device columns](images/iotdevicescolumns.png)
+:::image type="content" alt-text="Image of IoT device columns" source="images/iotdevicescolumns.png":::
 
 ## Related articles
 

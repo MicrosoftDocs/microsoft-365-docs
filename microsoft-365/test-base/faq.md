@@ -24,7 +24,7 @@ f1.keywords: NOCSH
 
 To submit your application package, navigate to the [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") and upload a zipped folder containing your application's binaries, dependencies, and test scripts via the self-serve Test Base portal dashboard.
 
-See the onboarding user guide for more information or contact our team at <testbasepreview@microsoft.com> for assistance and more information.
+For assistance and more information, see the onboarding user guide or contact our team at <testbasepreview@microsoft.com>.
 
 **Q: What are Out-of-box (OOB) tests?**
 
@@ -51,7 +51,7 @@ The Out-of-box (OOB) tests provide you with standardized telemetry on your appli
 
 To submit your application package for functional testing, upload the zipped folder containing your application's binaries, dependencies, and test scripts via our self-serve portal dashboard.
 
-See the onboarding user guide for more information or contact our team at <testbasepreview@microsoft.com> for assistance and more information.
+For assistance and more information, see the onboarding user guide or contact our team at <testbasepreview@microsoft.com>.
 
 **Q: How does Test Base handle our test data?**
 
@@ -59,7 +59,7 @@ See the onboarding user guide for more information or contact our team at <testb
 
 **Q: Can Test Base support our automated tests?**
 
-**A:** Yes, Test Base supports automated tests, however, we do not support manual tests at this time due to service capabilities.
+**A:** Yes, Test Base supports automated tests, however, we don't support manual tests at this time due to service capabilities.
 
 **Q: What languages and frameworks of automated tests do you support?**
 
@@ -69,7 +69,7 @@ You also need to provide (upload) the dependent binaries of the required framewo
 
 **Q: How soon does Test Base provide test results?**
 
-**A:** For each test that we run against the pre-release builds, we provide results within 48 hours on your [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
+**A:** For each test that we run against the pre-release builds, we provide results within 24 hours on your [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
 
 **Q: Can you reboot after installation?**
 
@@ -85,7 +85,7 @@ While for functional tests, you can specify whether a reboot is required for eac
 
 **Q: What Windows versions do you support?**
 
-**A:** We currently support Windows 10 clients, Windows Server 2016, Windows Server 2016 Core version, Windows Server 2019, and Windows Server 2019 Core version.
+**A:** We currently support Windows 11 clients, Windows 10 clients, Windows Server 2016, Windows Server 2016 Core version, Windows Server 2019, and Windows Server 2019 Core version.
 
 **Q: What is the difference between Security Update tests and Feature Update tests?**
 
@@ -122,13 +122,13 @@ We always work closely with our customers in joint remediation to resolve any is
 
 **Q: Does Microsoft hold the release of the security patch until the issue is resolved? What alternate resolutions are available?**
 
-**A:** The goal of Test Base is to ensure our joint end customers do not face any issues. We work hard with Software Vendors to address any issues before the release, but in case the fix is not feasible we have other resolutions such as shims and blocks.
+**A:** The goal of Test Base is to ensure our joint end customers don't face any issues. We work hard with Software Vendors to address any issues before the release, but in case the fix is not feasible we have other resolutions such as shims and blocks.
 
 ## Security
 
 **Q: Where are my packages and binaries stored and what security precautions do you take to keep my data safe?**
 
-**A:** Packages are uploaded and stored in Microsoft-managed Azure cloud storage. The data is encrypted in transit and at rest. When the system gets notified that one of your packages needs to be tested, a dedicated and isolated Microsoft-managed Azure Guest VM is provisioned with the OS image you selected. This VM lives within our Microsoft tenant and is provisioned within its own VNet/private subnet to prevent any lateral moves from any other Azure VM in our VM pool. The VM is configured to disallow any inbound traffic to protect the integrity of the Guest VM. In addition to these guardrails, your Test Base account and packages are uploaded as Azure resources and benefit from Azure RBAC. You can use Azure AD plus Azure RBAC to control access to your account and packages.
+**A:** Packages are uploaded and stored in Microsoft-managed Azure cloud storage. The data is encrypted in transit and at rest. When the system gets notified that one of your packages needs to be tested, a dedicated and isolated Microsoft-managed Azure Guest VM is provisioned with the OS image you selected. This VM lives within our Microsoft tenant and is provisioned within its own VNet/private subnet to prevent any lateral moves from any other Azure VM in our VM pool. The VM is configured to disallow any inbound traffic to protect the integrity of the Guest VM. In addition to these guardrails, your Test Base account and packages are uploaded as Azure resources and benefit from Azure RBAC. You can use Microsoft Entra ID plus Azure RBAC to control access to your account and packages.
 
 **Q: Who has access to the VM?**
 
@@ -138,7 +138,7 @@ We always work closely with our customers in joint remediation to resolve any is
 
 **Q: How will the service work with an on-prem server?**
 
-**A:** We currently do not provide support for on-prem servers. However, if the server is exposing HTTP endpoint, we can connect to it over the internet.
+**A:** We currently don't provide support for on-prem servers. However, if the server is exposing HTTP endpoint, we can connect to it over the internet.
 
 **Q: Who hosts the VMs?**
 
@@ -146,7 +146,7 @@ We always work closely with our customers in joint remediation to resolve any is
 
 **Q: Does this service support web, mobile, or desktop applications?**
 
-**A:** Currently, our focus is on desktop applications, however, we have plans to onboard web applications in the future, but we do not support mobile applications at this time.
+**A:** Currently, our focus is on desktop applications, however, we have plans to onboard web applications in the future, but we don't support mobile applications at this time.
 
 **Q: What is the difference between Test Base and SUVP?**
 
@@ -156,7 +156,10 @@ In addition to pre-release security updates testing, we support pre-release feat
 
 **Q: Is there a cost associated with the service?**
 
-**A:** Effective 1 March 2022, you'll be provided with 100 free hours (valued at $800) expiring in 6 months under your subscription for your validation needs. After the free hours get consumed (or expired before used), you'll automatically be metered at $8 per hour against your usage.
+**A:** The cost of the service depends on when you sign up and how much you use it. Here are the details:
+- If you signed up before November 15, 2023, you'll receive 100 free hours (valued at $800) of Test Base usage under your subscription. These hours will expire in 6 months from the date of sign up. After the free hours are consumed or expired, you'll be charged $8 per hour for your usage.
+- If you sign up on or after November 15, 2023, you'll receive 100 free hours (valued at $800) of Test Base usage under your tenant. These hours will expire in 6 months from the date of sign up. After the free hours are consumed or expired, you'll be charged $8 per hour for your usage.
+- Starting from November 15, 2023, if you are a Windows E3/E5 or Microsoft 365 E3/E5 customer, you'll receive an additional 500 hours (equivalent to $4,000) of Test Base usage under your tenant. These hours don't have an expiration date and can be used anytime. Note: Don't disable the service principal "Test Base for M365 - Billing", otherwise you may lose the possibility of getting the additional hours.
 
 **Q: How can I provide feedback about Test Base?**
 

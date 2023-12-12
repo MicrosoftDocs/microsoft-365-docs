@@ -9,12 +9,12 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: conceptual
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.custom: 
   - next-gen
   - mde-edr
-ms.subservice: mde
+ms.subservice: edr
 ms.collection: 
 - m365-security
 - tier2
@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # Feedback-loop blocking
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

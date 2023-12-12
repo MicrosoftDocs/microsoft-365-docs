@@ -2,7 +2,7 @@
 title: Troubleshoot system extension issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,28 +16,28 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 06/07/2023
 ---
 
 # Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1-2.md)
-- [Microsoft Defender for Endpoint Plan 2](defender-endpoint-plan-1-2.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
+- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
+- [Microsoft Defender XDR](../defender/microsoft-365-defender.md)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/get-started/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https%3a%2f%2faka.ms%2fMDEp2OpenTrial%3focid%3ddocs-wdatp-exposedapis-abovefoldlink&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9&ali=1&bac=1)
 
 You can submit feedback by opening Microsoft Defender for Endpoint on Mac on your device and by navigating to **Help > Send feedback**.
 
-Another option is to submit feedback via the Microsoft 365 Defender by launching **security.microsoft.com** and selecting the **Give feedback** tab.
+Another option is to submit feedback via the Microsoft Defender XDR by launching **security.microsoft.com** and selecting the **Give feedback** tab.
 
 This article provides information on how to troubleshoot issues with the system extension that's installed as part of Microsoft Defender for Endpoint on macOS.
 
@@ -282,4 +282,3 @@ The output will show all potential issues with profiles.
 - [Set up device groups in Jamf Pro](mac-jamfpro-device-groups.md): 
 Learn how to set up device groups in Jamf Pro for Microsoft Defender for Endpoint on macOS.
 - [Log in to Jamf Pro](mac-install-jamfpro-login.md)
-

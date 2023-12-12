@@ -1,14 +1,13 @@
 ---
 title: Review remediation actions in Microsoft Defender for Business
-description: View remediations that were taken on detected threats with Defender for Business. You can view actions in the Action center in the Microsoft 365 Defender portal.
+description: View remediations that were taken on detected threats or suspected attacks with Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 12/02/2022
 ms.reviewer: efratka
@@ -36,7 +35,7 @@ All remediation actions are tracked in the Action center.
 
 ## How to use the Action center
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Action center**.
 
@@ -52,6 +51,7 @@ The following table lists remediation actions that are available.
 
 | Source  | Actions  |
 |---------|---------|
+| [Automatic attack disruption](mdb-attack-disruption.md) | - Contain a device <br/>- Contain a user <br/>- Disable a user account |
 | [Automated investigations](../defender-endpoint/automated-investigations.md)      |- Quarantine a file<br/> - Remove a registry key<br/> - Kill a process<br/> - Stop a service<br/> - Disable a driver<br/> - Remove a scheduled task  |
 | [Manual response actions](../defender-endpoint/respond-machine-alerts.md)   |- Run antivirus scan<br/> - Isolate a device<br/> - Add an indicator to block or allow a file |
 | [Live response](../defender-endpoint/live-response.md)   |- Collect forensic data<br/> - Analyze a file<br/> - Run a script<br/> - Send a suspicious entity to Microsoft for analysis<br/> - Remediate a file <br/> - Proactively hunt for threats|
@@ -60,3 +60,4 @@ The following table lists remediation actions that are available.
 
 - [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Manage devices in Defender for Business](mdb-manage-devices.md)
+

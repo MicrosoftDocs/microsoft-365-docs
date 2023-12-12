@@ -11,8 +11,8 @@ ms.date: 07/07/2022
 ms.collection: 
 - m365-security
 - tier2
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium
 ms.reviewer: 
 f1.keywords: NOCSH
@@ -49,7 +49,7 @@ This playbook is a simple guide to help you make the most of your free trial. Us
 <a href="microsoft-defender-endpoint.md#apis"><center><b>Centralized configuration and administration, APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="microsoft-defender-endpoint.md#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
+<td colspan="7"><a href="microsoft-defender-endpoint.md#mtp"><center><b>Microsoft Defender XDR</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -60,7 +60,7 @@ This playbook is a simple guide to help you make the most of your free trial. Us
 
 1. [Confirm your license state](#step-1-confirm-your-license-state).
 2. [Set up role-based access control and grant permissions to your security team](#step-2-set-up-role-based-access-control-and-grant-permissions-to-your-security-team).
-3. [Visit the Microsoft 365 Defender portal](#step-3-visit-the-microsoft-365-defender-portal).
+3. [Visit the Microsoft Defender portal](#step-3-visit-the-microsoft-365-defender-portal).
 4. [Onboard endpoints using any of the supported management tools](#step-4-onboard-endpoints-using-any-of-the-supported-management-tools).
 5. [Configure capabilities](#step-5-configure-capabilities).
 6. [Experience Microsoft Defender for Endpoint through simulated attacks](#step-6-experience-microsoft-defender-for-endpoint-through-simulated-attacks).
@@ -68,29 +68,31 @@ This playbook is a simple guide to help you make the most of your free trial. Us
 
 ## Step 1: Confirm your license state
 
-To make sure your Defender for Endpoint subscription is properly provisioned, you can check your license state in either the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) or Azure Active Directory ([https://portal.azure.com](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)).
+To make sure your Defender for Endpoint subscription is properly provisioned, you can check your license state in either the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) or Microsoft Entra ID ([https://portal.azure.com](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)).
 
 [Check your license state](production-deployment.md#check-license-state).
 
 ## Step 2: Set up role-based access control and grant permissions to your security team
 
-Microsoft recommends using the concept of least privileges. Defender for Endpoint uses built-in roles within Azure Active Directory. [Review the different roles that are available](/azure/active-directory/roles/permissions-reference) and choose appropriate roles for your security team. Some roles may need to be applied temporarily and removed after the trial has been completed.
+Microsoft recommends using the concept of least privileges. Defender for Endpoint uses built-in roles within Microsoft Entra ID. [Review the different roles that are available](/azure/active-directory/roles/permissions-reference) and choose appropriate roles for your security team. Some roles may need to be applied temporarily and removed after the trial has been completed.
 
 Use [Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure) to manage your roles to provide extra auditing, control, and access review for users with directory permissions.
 
 Defender for Endpoint supports two ways to manage permissions:
 
-- Basic permissions management: Set permissions to either full access or read-only. Users with Global Administrator or Security Administrator roles in Azure Active Directory have full access. The Security reader role has read-only access and doesn't grant access to view machines/device inventory.
-- Role-based access control (RBAC): Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information, see [Manage portal access using role-based access control](rbac.md).
+- Basic permissions management: Set permissions to either full access or read-only. Users with Global Administrator or Security Administrator roles in Microsoft Entra ID have full access. The Security reader role has read-only access and doesn't grant access to view machines/device inventory.
+- Role-based access control (RBAC): Set granular permissions by defining roles, assigning Microsoft Entra user groups to the roles, and granting the user groups access to device groups. For more information, see [Manage portal access using role-based access control](rbac.md).
 
     > [!NOTE]
     > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
-## Step 3: Visit the Microsoft 365 Defender portal
+<a name='step-3-visit-the-microsoft-365-defender-portal'></a>
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you can access your Defender for Endpoint capabilities.
+## Step 3: Visit the Microsoft Defender portal
 
-1. [Review what to expect](../defender/microsoft-365-defender-portal.md) in the Microsoft 365 Defender portal.
+The Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you can access your Defender for Endpoint capabilities.
+
+1. [Review what to expect](../defender/microsoft-365-defender-portal.md) in the Microsoft Defender portal.
 
 2. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in.
 
@@ -116,7 +118,7 @@ You might want to experience Defender for Endpoint before you onboard more than 
 
 To run any of the provided simulations, you need at least [one onboarded device](onboard-configure.md).
 
-1. Access the tutorials. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, under **Endpoints**, choose **Tutorials**.
+1. Access the tutorials. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, under **Endpoints**, choose **Tutorials**.
 
 2. Read the walkthrough document provided with each attack scenario. Each document includes OS and application requirements and detailed instructions that are specific to an attack scenario.
 

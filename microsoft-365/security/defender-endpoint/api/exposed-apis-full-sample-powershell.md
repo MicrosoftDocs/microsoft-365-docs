@@ -4,7 +4,7 @@ ms.reviewer:
 description: Use these code samples, querying several Microsoft Defender for Endpoint APIs.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - must-keep
 ms.topic: reference
 ms.date: 01/25/2023
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint APIs using PowerShell
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:** 
 
@@ -35,7 +35,7 @@ search.appverid: met150
 - [Microsoft Defender for Business](../../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../../defender-business/compare-mdb-m365-plans.md#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
+> Advanced hunting capabilities are not included in Defender for Business.
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -69,8 +69,8 @@ For more information, see [PowerShell documentation](/powershell/module/microsof
 Run the below:
 
 - $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query is run on the data of this tenant)
-- $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
-- $appSecret: Secret of your Azure AD app
+- $appId: ID of your Microsoft Entra app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
+- $appSecret: Secret of your Microsoft Entra app
 
 - $suspiciousUrl: The URL
 

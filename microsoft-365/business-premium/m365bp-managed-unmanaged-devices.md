@@ -4,10 +4,9 @@ description: Identify personal, unmanaged devices and company-owned devices, and
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 05/08/2023
+ms.date: 10/26/2023
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.localizationpriority: medium 
 ms.collection: 
 - M365-Campaigns
@@ -23,19 +22,20 @@ audience: Admin
 
 # Secure managed and unmanaged devices
 
-An important part of your security strategy is protecting the devices your employees use to access company data. Such devices include computers, tablets, and phones. Your organization's IT or security team, along with device users, can take steps to protect data and managed or unmanaged devices. 
+An important part of your security strategy is protecting the devices your employees use to access company data. Such devices include computers, tablets, and phones. Your organization's IT or security team, together with device users, can take steps to protect data and managed or unmanaged devices. 
 
 - **Managed devices** are typically company-owned devices that are usually set up and configured by your company's IT or security team. 
-- **Unmanaged devices**, also referred to as bring-your-own devices, or *BYOD*, tend to be personally owned devices that employees set up and use. Unmanaged devices can be onboarded and protected just like managed devices. Or, if you prefer, users can take steps to protect their BYOD devices themselves. 
+- **Unmanaged devices**, also referred to as bring-your-own devices, or *BYOD*, tend to be personally owned devices that employees set up and use. Unmanaged devices can be onboarded and protected just like managed devices. Or, if you prefer, users can take steps to protect their BYOD devices themselves.
+
 
 ##  [**Managed devices**](#tab/Managed)
  
 To protect managed devices, your organization's IT or security team can: 
 
-- **Use Windows Autopilot to get a user's Windows device ready for first use**. With Autopilot you can install business critical apps, apply policies, and enable features like BitLocker before the device is given to a user. You can also use Autopilot to reset reset, repurpose, and recover Windows devices. To learn more, see [Windows Autopilot](/mem/autopilot/windows-autopilot).
+- **Use Windows Autopilot to get a user's Windows device ready for first use**. With Autopilot you can install business critical apps, apply policies, and enable features like BitLocker before the device is given to a user. You can also use Autopilot to reset, repurpose, and recover Windows devices. To learn more, see [Windows Autopilot](/mem/autopilot/windows-autopilot).
 - **Upgrade Windows devices from previous versions of Windows to Windows 10 Pro or Windows 11 Pro**. Before onboarding, Windows client devices should be running Windows 10 Pro or Enterprise, or Windows 11 Pro or Enterprise. If your organization has Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you to upgrade those devices at no additional cost. To learn more, see [Upgrade Windows devices to Windows 10 or 11 Pro](m365bp-upgrade-windows-pro.md).  
 - **Onboard devices and protect them with [mobile threat defense](../security/defender-business/mdb-mtd.md) capabilities**. Microsoft Defender for Business is included with Microsoft 365 Business Premium. It includes advanced protection from ransomware, malware, phishing, and other threats. If you prefer to use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) instead, you can use Intune to enroll and manage devices. To learn more, see [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md).
-- **View and monitor device health in the Microsoft 365 Defender portal** ([https://security.microsoft.com](https://security.microsoft.com)). You can view details, such as health state and exposure level for all onboarded devices. You can also take actions, such as running an antivirus scan or starting an automated investigation on a device that has detected threats or vulnerabilities. To learn more, see [Monitor onboarded devices](m365bp-device-states.md) and [Review detected threats](m365bp-review-threats-take-action.md). 
+- **View and monitor device health in the Microsoft Defender portal** ([https://security.microsoft.com](https://security.microsoft.com)). You can view details, such as health state and exposure level for all onboarded devices. You can also take actions, such as running an antivirus scan or starting an automated investigation on a device that has detected threats or vulnerabilities. To learn more, see [Monitor onboarded devices](m365bp-device-states.md) and [Review detected threats](m365bp-review-threats-take-action.md). 
 
 For their part in protecting managed devices, users can:
 
@@ -51,7 +51,7 @@ To protect unmanaged devices, such as BYOD devices, your organization's IT or se
 
 - **Encourage users to keep their antivirus protection turned on and up to date**. Devices should have the latest technology and features needed to protect against new malware and attack techniques. Microsoft regularly releases security intelligence updates and product updates. To learn more, see [Microsoft Defender Antivirus security intelligence and product updates](../security/defender-endpoint/microsoft-defender-antivirus-updates.md).
 - **Consider onboarding unmanaged devices and protecting them with [mobile threat defense](../security/defender-business/mdb-mtd.md) capabilities**. Or, if you prefer to use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can use Intune to enroll and manage devices. To learn more, see [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md).
-- **View and monitor device health in the Microsoft 365 Defender portal** ([https://security.microsoft.com](https://security.microsoft.com)). After devices are onboarded to Defender for Business (or Intune), you can view details, such as health state and exposure level for onboarded devices. You can also take actions, such as running an antivirus scan or starting an automated investigation on a device that has detected threats or vulnerabilities. To learn more, see [Monitor onboarded devices](m365bp-device-states.md) and [Review detected threats](m365bp-review-threats-take-action.md). 
+- **View and monitor device health in the Microsoft Defender portal** ([https://security.microsoft.com](https://security.microsoft.com)). After devices are onboarded to Defender for Business (or Intune), you can view details, such as health state and exposure level for onboarded devices. You can also take actions, such as running an antivirus scan or starting an automated investigation on a device that has detected threats or vulnerabilities. To learn more, see [Monitor onboarded devices](m365bp-device-states.md) and [Review detected threats](m365bp-review-threats-take-action.md). 
 
 For their part in protecting unmanaged devices, users can:
 

@@ -1,11 +1,11 @@
 ---
 title: "Microsoft 365 group expiration policy"
-ms.reviewer: arvaradh
+ms.reviewer: rahulnayak
 ms.date: 08/12/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
@@ -45,7 +45,7 @@ Groups that are actively in use are renewed automatically around 35 days before 
 It's important to know that expiration is turned off by default. Administrators have to enable it for their organization if they want to use it.
 
 > [!NOTE]
-> Configuring and using the expiration policy for Microsoft 365 groups requires you to possess but not necessarily assign Azure AD Premium licenses for the members of all groups to which the expiration policy is applied. For more information, see [Getting started with Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
+> Configuring and using the expiration policy for Microsoft 365 groups requires you to possess but not necessarily assign Microsoft Entra ID P1 or P2 licenses for the members of all groups to which the expiration policy is applied. For more information, see [Getting started with Microsoft Entra ID P1 or P2](/azure/active-directory/active-directory-get-started-premium).
 
 ## Who can configure and use the Microsoft 365 groups expiration policy?
 
@@ -56,7 +56,7 @@ It's important to know that expiration is turned off by default. Administrators 
 
 ## How to set the expiration policy
 
-As noted above, expiry is turned off by default. An administrator will have to enable the expiration policy and set the properties for it to take effect. To enable it, go to **Azure Active Directory** > **Groups** > **Expiration**. Here you can set the default group lifetime.
+As noted above, expiry is turned off by default. An administrator will have to enable the expiration policy and set the properties for it to take effect. To enable it, go to **Microsoft Entra ID** > **Groups** > **Expiration**. Here you can set the default group lifetime.
 
 The group lifetime is specified in days and can be set to 180, 365 or to a custom value that you specify. The custom value has to be at least 30 days.
 
@@ -66,7 +66,7 @@ You can set the policy for all of your groups, only selected groups (up to 500),
 
 Note that currently you can't have different policies for different groups.
 
-![Screenshot of Groups expiration settings in Azure Active Directory.](../media/azure-groups-expiration-settings.png)
+![Screenshot of Groups expiration settings in Microsoft Entra ID.](../media/azure-groups-expiration-settings.png)
 
 ## How expiry works with the retention policy
 

@@ -1,11 +1,11 @@
 ---
-title: Work with advanced hunting query results in Microsoft 365 Defender
-description: Make the most of the query results returned by advanced hunting in Microsoft 365 Defender
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
+title: Work with advanced hunting query results in Microsoft Defender XDR
+description: Make the most of the query results returned by advanced hunting in Microsoft Defender XDR
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -25,10 +25,10 @@ ms.date: 02/16/2021
 
 # Work with advanced hunting query results
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -69,7 +69,14 @@ AlertInfo
 
 When rendering the results, a column chart displays each severity value as a separate column:
 
-:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="An example of a chart that displays advanced hunting results in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-column-chart-new.png":::
+
+```kusto
+AlertInfo
+| summarize Total = count() by Severity
+| render columnchart
+```
+
+:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="An example of a chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-column-chart-new.png":::
 *Query results for alerts by severity displayed as a column chart*
 
 #### Phishing emails across top ten sender domains
@@ -85,7 +92,7 @@ EmailEvents
 
 Use the pie chart view to effectively show distribution across the top domains:
 
-:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="The pie chart that displays advanced hunting results in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
+:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="The pie chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
 *Pie chart that shows distribution of phishing emails across top sender domains*
 
 #### File activities over time
@@ -100,7 +107,7 @@ CloudAppEvents
 
 The line chart below clearly highlights time periods with more activity involving `invoice.doc`:
 
-:::image type="content" source="../../media/line-chart-a.png" alt-text="The line chart that displays advanced hunting results in the Microsoft 365 Defender portal" lightbox="../../media/line-chart-a.png":::
+:::image type="content" source="../../media/line-chart-a.png" alt-text="The line chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/line-chart-a.png":::
 *Line chart showing the number of events involving a file over time*
 
 ## Export tables and charts
@@ -117,7 +124,7 @@ To quickly inspect a record in your query results, select the corresponding row 
 - **Assets**—Summarized view of the main assets (mailboxes, devices, and users) found in the record, enriched with available information, such as risk and exposure levels
 - **All details**—All the values from the columns in the record
 
-:::image type="content" source="../../media/results-inspect-record.png" alt-text="The selected record with panel for inspecting the record in the Microsoft 365 Defender portal" lightbox="../../media/results-inspect-record.png":::
+:::image type="content" source="../../media/results-inspect-record.png" alt-text="The selected record with panel for inspecting the record in the Microsoft Defender portal" lightbox="../../media/results-inspect-record.png":::
 
 To view more information about a specific entity in your query results, such as a machine, file, user, IP address, or URL, select the entity identifier to open a detailed profile page for that entity.
 
@@ -129,10 +136,10 @@ Select the three dots to the right of any column in the **Inspect record** panel
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with`, and `ends with`
 
-:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="The Action Type pane on the Inspect record page in the Microsoft 365 Defender portal " lightbox="../../media/work-with-query-tweak-query.png":::
+:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="The Action Type pane on the Inspect record page in the Microsoft Defender portal " lightbox="../../media/work-with-query-tweak-query.png":::
 
 > [!NOTE]
-> Some tables in this article might not be available at Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
+> Some tables in this article might not be available at Microsoft Defender for Endpoint. [Turn on Microsoft Defender XDR](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft Defender XDR by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 
@@ -143,4 +150,4 @@ Select the three dots to the right of any column in the **Inspect record** panel
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Custom detections overview](custom-detections-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

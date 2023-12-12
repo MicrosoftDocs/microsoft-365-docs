@@ -79,37 +79,37 @@ Post deployment, admins can also manage user access to add-ins.
 
 4. Save the changes.
 
-## Prevent add-in downloads by turning off the Office Store across all apps (Except Outlook)
+## Manage add-in downloads by turning on/off the Office store across all apps (Except Outlook) 
 
 > [!NOTE]
 > Outlook add-in installation is managed by a [different process](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins).
 
-As an organization you may wish to prevent the download of new Office Add-ins from the Office Store. This can be used in conjunction with Centralized Deployment to ensure that only organization-approved add-ins are deployed to users within your organization.
+As an organization you may wish to manage the download of Office add-ins from the Office store. This could be used to ensure that users within your organization can get the benefits from all the Office add-ins, or only the organization-approved add-ins can be deployed with Centralized Deployment.
   
-**To turn off add-in acquisition**
+**To turn on/off add-in acquisition**
   
 1. In the admin center, go to the **Settings** \> [Org settings](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.
 
 2. Select **User owned apps and services**.
     
-3. Clear the option to let users access the Office store.
+3. Check or clear the option to allow or prevent users access the Office store.
+    
+    ![Let user access office store settings](../../media/user-owned-apps-and-services.png)
+   
+This will control all users' ability to acquire the following add-ins from the store.
 
-    This will prevent all users from acquiring the following add-ins from the store.
-      
-    - Add-ins for Word, Excel, and PowerPoint 2016 from:
-        
-      - Windows
-      - Mac
-      - Office
-        
-    - Add-ins within Microsoft 365
-        
-    A user who tries to access the store will see the following message: **Office store not available. Unfortunately, your organization has disabled access to the Office Store. Please contact your administrator to get access to the store.**
+- Add-ins for Word, Excel, and PowerPoint 2016:
+    - Windows
+    - Mac
+    - Office
+- Add-ins within Microsoft 365
+
+ When you disable the access to the Office store, a user who tries to access the store will see the following message: **Office store not available. Unfortunately, your organization has disabled access to the Office Store. Please contact your administrator to get access to the store.**
 
 > [!NOTE]
-> Acquisitions may still be possible from AppSource, but the user will not be able to launch or use the add-in in the client.
+> Acquisitions may still be possible from AppSource, but the user will not be able to launch or use the add-in in the client. This does not prevent an administrator from using Centralized Deployment to assign an add-in from the Office Store.
   
-Support for turning off the Office Store is available in the following versions:
+Support for turning on/off the Office Store is available in the following versions:
   
 - Windows: 16.0.9001 - Currently available.
     
@@ -119,7 +119,6 @@ Support for turning off the Office Store is available in the following versions:
     
 - The web - Currently available.
     
-This does not prevent an administrator from using Centralized Deployment to assign an add-in from the Office Store.
 
 > [!NOTE] 
 > Add-ins such as Visio Data Visualizer, Bing Maps, and People Graph will still show up in the ribbon, even if an admin has disabled the Store. To remove these links, administrators must disable the Store through Group Policy Object (GPO).

@@ -56,17 +56,19 @@ The **Exchange Online priority account monitoring** and **Premium mail flow moni
 
 When you apply priority account protection to a mailbox, you should also apply priority account protection to users who have access to the mailbox (for example, the CEO and the CEO's executive assistant who manages the CEO's calendar).
 
-### Add priority accounts from the Microsoft 365 Defender page
+<a name='add-priority-accounts-from-the-microsoft-365-defender-page'></a>
 
-Add priority accounts from the **Microsoft 365 Defender page**.
+### Add priority accounts from the Microsoft Defender XDR page
 
-1. Go to  Microsoft 365 Defender at <a href="https://security.microsoft.com/" target="_blank">https://security.microsoft.com/</a>.
+Add priority accounts from the **Microsoft Defender XDR page**.
+
+1. Go to  Microsoft Defender XDR at <a href="https://security.microsoft.com/" target="_blank">https://security.microsoft.com/</a>.
 
 2. Go to **Settings** > **Email and Collaboration** > **User Tags** > **Create**.
 
 3. The priority account tag is already created for you by default. By selecting **Edit** you can add users to the priority tag. Then, **Add members** > **Add** to add members to the priority account.
 
-5. Select **Next** and  **Submit**.
+4. Select **Next** and  **Submit**.
 
 You can also add priority accounts from the Active users page.
 

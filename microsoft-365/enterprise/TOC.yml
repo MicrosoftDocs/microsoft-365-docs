@@ -105,7 +105,7 @@
           href: setup-guides-for-microsoft-365.md
         - name: Integration
           items: 
-            - name: Integrated Apps and Azure AD
+            - name: Integrated Apps and Microsoft Entra ID
               href: integrated-apps-and-azure-ads.md
             - name: Integration with on-premises
               href: microsoft-365-integration.md
@@ -126,7 +126,7 @@
         - name: Tenant isolation in Microsoft 365
           href: /compliance/assurance/assurance-microsoft-365-isolation-controls
           items: 
-            - name: Isolation and Access Control in Azure Active Directory
+            - name: Isolation and Access Control in Microsoft Entra ID
               href: microsoft-365-isolation-in-azure-active-directory.md
             - name: Monitoring and Testing Tenant Boundaries
               href: /compliance/assurance/assurance-monitoring-and-testing
@@ -331,7 +331,7 @@
             items: 
               - name: Overview
                 href: hybrid-solutions.md
-              - name: Use Azure Active Directory for SharePoint Server 2016 authentication
+              - name: Use Microsoft Entra ID for SharePoint Server 2016 authentication
                 href: /azure/active-directory/saas-apps/sharepoint-on-premises-tutorial
               - name: Connect an on-premises network to an Azure virtual network
                 href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
@@ -651,7 +651,7 @@
           href: pass-through-auth-m365-ent-test-environment.md
         - name: Federated authentication
           href: federated-identity-for-your-microsoft-365-dev-test-environment.md
-        - name: Azure AD Seamless Single Sign-on
+        - name: Microsoft Entra seamless single sign-on
           href: single-sign-on-m365-ent-test-environment.md
         - name: Multifactor authentication
           href: multi-factor-authentication-microsoft-365-test-environment.md
@@ -663,7 +663,7 @@
           href: password-reset-m365-ent-test-environment.md
         - name: Automatic licensing and group membership
           href: automate-licenses-group-membership-microsoft-365-test-environment.md
-        - name: Azure AD Identity Protection
+        - name: Microsoft Entra ID Protection
           href: azure-ad-identity-protection-microsoft-365-test-environment.md
         - name: Identity and device access
           href: identity-device-access-m365-test-environment.md
