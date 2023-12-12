@@ -31,15 +31,15 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-The Sender Policy Framework (SPF) is a method of [email authentication](email-authentication-about.md) that helps validate outbound email sent from your Microsoft 365 organization to help prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
+Sender Policy Framework (SPF) is a method of [email authentication](email-authentication-about.md) that helps validate outbound email sent from your Microsoft 365 organization to help prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
 
-SPF uses a TXT record in DNS to identify valid sources for the domain of the sender's email address that's used during the SMTP transmission of mail between email servers (known as the `5321.MailFrom` address, **MAIL FROM** address, P1 sender, or envelope sender).
+SPF uses a TXT record in DNS to identify valid sources of mail for the domain. Specific SPF verifies that sender's email address that's used during the SMTP transmission of the message (known as the MAIL FROM address, `5321.MailFrom` address, P1 sender, or envelope sender) came from a known, designated source of mail for that domain.
 
 For example, if your email domain in Microsoft 365 is contoso.com, you create an SPF TXT record in DNS for the contoso.com domain to identify Microsoft 365 as an authorized source of mail from contoso.com. Destination email systems check the SPF TXT record in contoso.com to determine whether the message came from an authorized source for contoso.com email.
 
 Before we get started, here's what you need to know about SPF in Microsoft 365 based on your email domain:
 
-- **You use only the Microsoft Online Email Routing Address (MOERA) domain for email (for example, contoso.onmicrosoft.com)**: You don't need to do anything. The SPF TXT record is already configured for you. Microsoft owns the onmicrosoft.com domain and all subdomains, so we're responsible for creating and maintaining the SPF records in all \*.onmicrosoft.com domains.
+- **You use only the Microsoft Online Email Routing Address (MOERA) domain for email (for example, contoso.onmicrosoft.com)**: You don't need to do anything. The SPF TXT record is already configured for you. Microsoft owns the onmicrosoft.com domain and all subdomains, so we're responsible for creating and maintaining the DNS records in all \*.onmicrosoft.com domains. For more information about \*.onmicrosoft.com domains, see [Why do I have an "onmicrosoft.com" domain?](/microsoft-365/admin/setup/domains-faq#why-do-i-have-an--onmicrosoft-com--domain).
 
 - **You use one or more custom domains for email (for example, contoso.com)**: As part of the Microsoft 365 enrollment process, you were already required to create or modify the SPF TXT record in DNS for your custom domain to identify Microsoft 365 as an authorized source for email from your domain. But, you still have more work to do for maximum email protection:
   - **Subdomains**:
