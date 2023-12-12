@@ -41,7 +41,7 @@ Take advantage of rich security information events management (SIEM) combined wi
 
 1. [Login to the Azure Portal](https://portal.azure.com) and navigate to **Microsoft Sentinel** \> Pick the relevant workspace to integrate with Microsoft Defender XDR.
     1. On the left-hand navigation menu underneath the heading **Configuration** \> choose **Data connectors**.
-1. When the page loads, **search for** Microsoft Defender XDR **and select the Microsoft 365 Defender connector**.
+1. When the page loads, **search for** Microsoft Defender XDR **and select the Microsoft Defender XDR connector**.
 3. On the right-hand flyout, select **Open Connector Page**.
 4. Under the **Configuration** section of the page that loads, select **Connect incidents & alerts**, leaving Turn off all Microsoft incident creation rules for these products ticked.
 5. Scroll to **Microsoft Defender for Office 365** in the **Connect events** section of the page. Select **EmailEvents, EmailUrlInfo, EmailAttachmentInfo & EmailPostDeliveryEvents** then  **Apply Changes** at the bottom of the page. (Choose tables from other Defender products if helpful and applicable, during this step.)

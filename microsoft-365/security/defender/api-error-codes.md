@@ -1,7 +1,7 @@
 ---
 title: Common Microsoft Defender XDR REST API error codes
 description: Learn about the common Microsoft Defender XDR REST API error codes
-keywords: api, error, codes, common errors, Microsoft 365 Defender, api error codes
+keywords: api, error, codes, common errors, Microsoft Defender XDR, api error codes
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -28,7 +28,7 @@ ms.date: 02/08/2023
 
 # Common Microsoft Defender XDR REST API error codes
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -107,4 +107,4 @@ Each error response contains a unique ID parameter for tracking. The property na
 - [Supported Microsoft Defender XDR APIs](api-supported.md)
 - [Access the Microsoft Defender XDR APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -18,7 +18,7 @@ ms.date: 08/04/2023
 
 # Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

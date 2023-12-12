@@ -1,7 +1,7 @@
 ---
 title: Get email notifications for response actions in Microsoft Defender XDR
 description: Set up email notifications to get notified of manual and automated response actions in Microsoft Defender XDR.
-keywords: email, notifications, automatic attack disruption, manual response, incident response, response actions, email notifications, response action notifications, Microsoft 365 Defender notifications
+keywords: email, notifications, automatic attack disruption, manual response, incident response, response actions, email notifications, response action notifications, Microsoft Defender XDR notifications
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +25,7 @@ ms.date: 09/18/2023
 
 # Get email notifications for response actions in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -49,7 +49,7 @@ You can set up Microsoft Defender XDR to notify you through email about manual o
 
 To create a rule for email notifications, perform the following steps:
 
-1. In the navigation pane of Microsoft Defender XDR, select **Settings > Microsoft 365 Defender**.  Under **General**, select **Email notifications**. Go to the **Actions** tab.
+1. In the navigation pane of Microsoft Defender XDR, select **Settings > Microsoft Defender XDR**.  Under **General**, select **Email notifications**. Go to the **Actions** tab.
 :::image type="content" source="../../media/m35d-response-actions-notifications/fig1-response-notifications.png" alt-text="Actions tab in the Microsoft Defender XDR Settings page" lightbox="../../media/m35d-response-actions-notifications/fig1-response-notifications.png":::
 2. Select **Add notification rule**. Add a rule name and description under Basics. Both Name and Description fields accept letters, numbers, and spaces only.
 :::image type="content" source="../../media/m35d-response-actions-notifications/fig2-response-notifications.png" alt-text="Basics section of the add notification rule" lightbox="../../media/m35d-response-actions-notifications/fig2-response-notifications.png":::
@@ -84,4 +84,4 @@ Once you get the notification, you can go directly to the action and review or r
 - [Configure automatic attack disruption capabilities](configure-attack-disruption.md)
 - [Configure automated investigation and response](m365d-configure-auto-investigation-response.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

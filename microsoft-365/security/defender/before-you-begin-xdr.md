@@ -103,4 +103,4 @@ This service is currently delivered in English language only.
 
 [General information on Defender Experts for XDR service](frequently-asked-questions.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
