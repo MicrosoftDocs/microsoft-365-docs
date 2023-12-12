@@ -1,10 +1,10 @@
 ---
-title: Use the streaming API (preview) with Microsoft Defender for Business            
+title: Use the streaming API with Microsoft Defender for Business            
 description:  The Defender for Endpoint streaming API is now in preview for Defender for Business and Microsoft 365 Business Premium. Stream of device file, registry, network, sign-in events, and other data to Azure Event Hub, Azure Storage, and Microsoft Sentinel to support advanced hunting and attack detection.       
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 07/25/2023
+ms.date: 12/12/2023
 ms.topic: how-to
 ms.service:  microsoft-365-security
 ms.localizationpriority: medium 
