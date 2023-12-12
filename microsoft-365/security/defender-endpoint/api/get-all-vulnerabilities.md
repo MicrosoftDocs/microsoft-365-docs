@@ -46,7 +46,7 @@ Retrieves a list of all vulnerabilities.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
 <br>```$filter``` on:  ```id```, ```name```, ```description```, ```cvssV3```, ```publishedOn```, ```severity```, and ```updatedOn``` properties.
-<br>```$top``` with max value of 10,000.
+<br>```$top``` with max value of 8,000.
 <br>```$skip```.
 <br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
