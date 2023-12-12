@@ -7,7 +7,7 @@ title:       Automatic end user feedback response #
 description: How to automatically response to end user submissions of phish using MDO automated investigations. #
 author:      KCrider14 # GitHub alias
 ms.author:   kellycrider # Microsoft alias
-ms.service:  Microsoft Defender for Office 365 (MDO) # ms.service
+ms.service:  ms.service # ms.service
 # ms.prod:   # To use ms.prod, uncomment it and delete ms.service
 ms.topic:    AIR, Automated investigations, User submissions # AIR
 ms.date:     12/08/2023
