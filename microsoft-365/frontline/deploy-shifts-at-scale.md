@@ -36,7 +36,7 @@ As an admin, you can now standardize these Shifts settings across all your front
 ## Prerequisites
 
 - You created your organization’s frontline teams through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
-- The admin running the deployment process must be a global or Teams admin.  
+- The admin running the deployment process must be a Global admin.  
 
 ## Set up Shifts for your frontline teams
 
