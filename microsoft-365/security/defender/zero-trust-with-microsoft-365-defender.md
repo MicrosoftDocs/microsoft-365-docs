@@ -1,7 +1,7 @@
 ---
 title: Zero Trust with Microsoft Defender XDR
 description: Microsoft Defender XDR contributes to a strong Zero Trust strategy and architecture
-keywords: Zero Trust, Microsoft 365 Defender, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+keywords: Zero Trust, Microsoft Defender XDR, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -26,7 +26,7 @@ ms.date: 04/24/2023
 
 # Zero Trust with Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -71,4 +71,4 @@ Learn more about Zero Trust for Microsoft Defender XDR services:
 Learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with the [Zero Trust deployment plan with Microsoft 365](../Microsoft-365-zero-trust.md).
 
 Learn more about Zero Trust and how to build an enterprise-scale strategy and architecture with the [Zero Trust Guidance Center](/security/zero-trust).
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

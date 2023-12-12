@@ -1,7 +1,7 @@
 ---
 title: Device profile in Microsoft 365 security portal
 description: View risk and exposure levels for a device in your organization. Analyze past and present threats, and protect the device with the latest updates.
-keywords: security, malware, Microsoft 365, M365, Microsoft 365 Defender, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, device page, device profile,  machine page, machine profile
+keywords: security, malware, Microsoft 365, M365, Microsoft Defender XDR, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, device page, device profile,  machine page, machine profile
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -19,7 +19,7 @@ ms.date: 02/16/2021
 
 # Device profile page
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 The Microsoft 365 security portal provides you with device profile pages, so you can quickly assess the health and status of devices on your network.
@@ -181,4 +181,4 @@ Selecting an item opens a flyout that links to the update.
 * [Turn on Microsoft Defender XDR](m365d-enable.md)
 * [Investigate entities on devices, using live response](../defender-endpoint/live-response.md)
 * [Automated investigation and response (AIR) in Office 365](../office-365-security/air-about.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

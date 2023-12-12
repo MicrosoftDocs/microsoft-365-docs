@@ -28,7 +28,7 @@ ms.date: 08/21/2023
 
 # Analyze your first incident in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -193,4 +193,4 @@ Collaborate with Microsoft's experts for incident response and threat hunting to
 - [Investigate alerts](investigate-alerts.md)
 - Learn the portal's features and functions through the [Microsoft Defender XDR Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
