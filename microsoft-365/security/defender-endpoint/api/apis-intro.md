@@ -25,7 +25,7 @@ search.appverid: met150
 
 # Access the Microsoft Defender for Endpoint APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -46,7 +46,7 @@ Watch this video for a quick overview of Defender for Endpoint's APIs.
 
 In general, you'll need to take the following steps to use the APIs:
 
-- Create an [Microsoft Entra application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
+- Create a [Microsoft Entra application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - Get an access token using this application
 - Use the token to access Defender for Endpoint API
 

@@ -24,7 +24,7 @@ ms.date: 06/01/2022
 
 # Export browser extensions assessment per device
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

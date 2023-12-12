@@ -23,7 +23,7 @@ ms.date: 02/08/2023
 
 # Configure Microsoft Defender XDR to stream Advanced Hunting events to your Storage account
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -51,7 +51,7 @@ Once the Storage account is created you will need to:
 
 1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to **Settings** \> **Microsoft 365 Defender** \> **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
+2. Go to **Settings** \> **Microsoft Defender XDR** \> **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
 
 3. Click **Add**.
 
@@ -78,10 +78,10 @@ Once the Storage account is created you will need to:
 
   ```JSON
   {
-          "time": "<The time Microsoft 365 Defender received the event>"
+          "time": "<The time Microsoft Defender XDR received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+          "properties": { <Microsoft Defender XDR Advanced Hunting event as Json> }
   }
   ```
 
@@ -122,4 +122,4 @@ For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs
 - [Microsoft Defender XDR Streaming API](streaming-api.md)
 - [Stream Microsoft Defender XDR events to your Azure storage account](streaming-api-storage.md)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

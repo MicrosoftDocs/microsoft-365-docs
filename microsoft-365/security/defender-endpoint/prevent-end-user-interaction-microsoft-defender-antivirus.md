@@ -20,7 +20,7 @@ search.appverid: met150
 
 # Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

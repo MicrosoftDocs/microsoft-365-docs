@@ -27,7 +27,7 @@ ms.date: 05/30/2023
 
 # Investigate alerts in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -116,7 +116,7 @@ Microsoft Defender XDR alerts may come from solutions like Microsoft Defender fo
 
 ### Configure Microsoft Entra IP alert service
 
-1. Go to the Microsoft Defender portal ([security.microsoft.com](https://security.microsoft.com)), select **Settings** > **Microsoft 365 Defender**.
+1. Go to the Microsoft Defender portal ([security.microsoft.com](https://security.microsoft.com)), select **Settings** > **Microsoft Defender XDR**.
 
 2. From the list, select **Alert service settings**, and then configure your **Microsoft Entra ID Protection** alert service.
 
@@ -307,7 +307,7 @@ To tune an alert from the **Alerts** page:
 
 9. The new alert tuning functionality is available by default.
 
-   However, you can switch back to the previous experience in Microsoft Defender portal by navigating to **Settings > Microsoft 365 Defender > Rules > Alert tuning**, then switch off the **New tuning rules creation enabled** toggle.
+   However, you can switch back to the previous experience in Microsoft Defender portal by navigating to **Settings > Microsoft Defender XDR > Rules > Alert tuning**, then switch off the **New tuning rules creation enabled** toggle.
 
    > [!NOTE]
    > Soon, only the new alert tuning experience will be available. You will not be able to go back to the previous experience.
@@ -361,4 +361,4 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Investigate data loss prevention alerts in Defender](dlp-investigate-alerts-defender.md)
 - [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

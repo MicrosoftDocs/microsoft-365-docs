@@ -9,7 +9,7 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: mjcaparas
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -26,7 +26,7 @@ ms.date: 05/11/2023
 
 # Device discovery overview
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
