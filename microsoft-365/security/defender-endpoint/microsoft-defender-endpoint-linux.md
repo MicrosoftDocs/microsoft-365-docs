@@ -71,16 +71,13 @@ In general you need to take the following steps:
       - [Deploy using Saltstack configuration management tool](linux-install-with-saltack.md)
       If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
-      > [!NOTE]
+> [!NOTE]
 > It is not supported to install Microsoft Defender for Endpoint in any other location other than the default install path.
 >
 > Microsoft Defender for Endpoint on Linux creates an "mdatp" user with random UID and GID. If you want to control the UID and GID, create an "mdatp" user prior to installation using the  "/usr/sbin/nologin" shell option.
 > For example: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
 
-      ### System requirements
-
-      > [!NOTE]
-
+### System requirements
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
   - Red Hat Enterprise Linux 6.7 or higher (In preview)
