@@ -43,9 +43,9 @@ Follow these steps to manage on which SharePoint sites users can use translation
 
 2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
 
-3. On the **Microsoft Syntex** panel, select **Translation**.
+3. On the **Microsoft Syntex** panel, select **Document translation**.
 
-4. On the **Translation** panel:
+4. On the **Document translation** panel:
 
     a. By default, translation is turned on for libraries in all SharePoint sites.  Choose which site or sites this service should be enabled for.
 
