@@ -276,7 +276,7 @@
            href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
    - name: Investigate and Respond
      items:
-     - name: Manage incidents and alerts in Microsoft 365 Defender
+     - name: Manage incidents and alerts in Microsoft Defender XDR
        href: mdo-sec-ops-manage-incidents-and-alerts.md
      - name: How threat investigation and response works
        href: office-365-ti.md
@@ -426,7 +426,7 @@
           href: step-by-step-guides/track-and-respond-to-emerging-threats-with-campaigns.md
         - name: Set up a digest notification of changes to Microsoft Defender for Office 365 from the message center
           href: step-by-step-guides/stay-informed-with-message-center.md
-        - name: How to prioritize, Manage, Investigate & Respond to Incidents in Microsoft 365 Defender
+        - name: How to prioritize, Manage, Investigate & Respond to Incidents in Microsoft Defender XDR
           href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
         - name: How to run attack simulations for your team
           href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
@@ -436,7 +436,7 @@
           href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
         - name: Protect your c-suite with priority account protection
           href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
-        - name: Search for emails and remediate threats using Threat Explorer in Microsoft 365 Defender
+        - name: Search for emails and remediate threats using Threat Explorer in Microsoft Defender XDR
           href: step-by-step-guides/search-for-emails-and-remediate-threats.md
         - name: How to prioritize and manage Automated Investigations and Response (AIR)
           href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
@@ -498,9 +498,9 @@
          href: eop-faq.yml
        - name: EOP queued, deferred, and bounced messages FAQ
          href: mail-flow-delivery-faq.yml
-   - name: Microsoft 365 Defender docs
+   - name: Microsoft Defender XDR docs
      items:
-       - name: Microsoft 365 Defender
+       - name: Microsoft Defender XDR
          href: ../defender/index.yml
        - name: Defender for Endpoint
          href: ../defender-endpoint/index.yml

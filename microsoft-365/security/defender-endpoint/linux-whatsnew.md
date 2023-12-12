@@ -21,7 +21,7 @@ search.appverid: met150
 
 # What's new in Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -312,7 +312,7 @@ sudo systemctl disable mdatp
 	- With this release we provided two options in mdatp diagnostic hot-event-sources:
         1. Files
         2. Executables
-	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users are now correctly reported to Microsoft 365 Defender
+	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users are now correctly reported to Microsoft Defender XDR
 	- Improved logging in Network Protection block and audit events for debugging
 - Other fixes and improvements
     - From this version, enforcementLevel are in passive mode by default giving admins more control over where they want 'RTP on' within their estate

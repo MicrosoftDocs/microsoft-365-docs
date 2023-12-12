@@ -23,7 +23,7 @@ search.appverid: met150
 
 # Investigate an IP address associated with a Microsoft Defender for Endpoint alert
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

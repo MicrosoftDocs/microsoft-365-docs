@@ -28,7 +28,7 @@ ms.date: 02/08/2023
 
 # Microsoft Defender XDR incidents API and the incidents resource type
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -93,4 +93,4 @@ alerts | alert list | List of related alerts. See examples at [List incidents](a
 - [Incidents overview](incidents-overview.md)
 - [List incidents API](api-list-incidents.md)
 - [Update incident API](api-update-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
