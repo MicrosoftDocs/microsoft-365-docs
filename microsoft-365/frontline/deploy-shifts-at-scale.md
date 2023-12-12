@@ -73,7 +73,7 @@ Choose the Shifts capabilities that you want enabled for your frontline teams. C
     1. Choose an icon.
     1. Enter a unique code. The code is a mandatory field and can be up to 100 alphanumeric characters long. For example, A01. These codes can't be changed after Shifts is deployed. Codes ensure uniformity across all your HR systems and streamlined experiences across your frontline teams and apps.
 
-    Make sure the time-off reasons reflect what’s supported across your frontline organization. Frontline managers use these time-off reasons when they assign time off to frontline workers. And, if you turned on **Time-off requests**, your frontline workers choose from these time-off reasons from when they request time off.  
+    Make sure the time-off reasons reflect what’s supported across your frontline organization. Frontline managers use these time-off reasons when they assign time off to frontline workers. And, if you turned on **Time-off requests**, your frontline workers choose from these time-off reasons when they request time off.  
 1. Under **Time clock**, turn on or turn off **Clock in/clock out**. When this setting is on, frontline workers can clock in and out of their shifts and record breaks, and frontline managers can export their team’s time report.  
 1. When you’re done choosing your settings, select **Next**.
 
