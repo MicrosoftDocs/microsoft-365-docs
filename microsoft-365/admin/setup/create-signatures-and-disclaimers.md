@@ -48,7 +48,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select **Exchange**.
+1. In the <a href="https://admin.exchange.microsoft.com/" target="_blank">Microsoft exchange admin center</a>.
 1. Select **Mail flow**.
 1. Select **Rules**.
 1. Select **Add a rule +**, and then select **Apply disclaimers**.
