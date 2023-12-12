@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/12/23
+ms.date: 12/12/2023
 
 ---
 
@@ -96,7 +96,7 @@ You can choose to allow schedule owners to create and manage schedule groups or 
     - **Schedule groups are created and managed in the Teams admin center**: You create and manage the schedule group structure for Shifts. Your schedule owners won't be able to add, rename, or delete schedule groups in Shifts. With this option, you can standardize schedule groups across teams, which allows for automating workflows in Shifts across different teams.
 1. If you chose the option to create and manage schedule groups in the Teams admin center, select **Add** to add schedule groups.
 
-    :::image type="content" source="media/dsas-add-schedule-group.png" alt-text="Screenshot of the Review and finish setup page, showing a summary of the selected settings. "lightbox="media/dsas-add-schedule-group.png":::
+    :::image type="content" source="media/dsas-add-schedule-group.png" alt-text="Screenshot of the Add schedule group pane for adding schedule groups. "lightbox="media/dsas-add-schedule-group.png":::
 
     For each schedule group that you create:
     1. Give it a unique name. It can’t be longer than 40 characters. This name is what frontline managers and workers see in the Shifts schedule.
