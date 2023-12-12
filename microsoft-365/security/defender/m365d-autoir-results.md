@@ -27,7 +27,7 @@ ms.reviewer: evaldm, isco
 
 # Details and results of an automated investigation
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -166,4 +166,4 @@ To provide more context about how investigation states show up, the following ta
 
 - [View and manage remediation actions](m365d-autoir-actions.md)
 - [Learn more about remediation actions](m365d-remediation-actions.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

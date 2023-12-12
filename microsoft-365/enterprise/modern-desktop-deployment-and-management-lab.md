@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: aaroncz
 author: cdmm12
-manager: dougeby
+manager: aaroncz
 ms.reviewer: alainme
-ms.date: 05/11/2022
+ms.date: 12/05/2023
 ms.audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
@@ -22,20 +22,18 @@ description: Learn about where to access the Windows and Office Deployment Lab K
 
 The Windows and Office 365 deployment lab kits are designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps. The labs in the kit cover using Microsoft Intune and Microsoft Configuration Manager. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation. The following lab kits are available for free download:  
 
-[**Windows 10 lab**](https://info.microsoft.com/ww-landing-lab-kit.html)  
-
 [**Windows 11 lab**](https://info.microsoft.com/ww-landing-windows-11-office-365-lab-kit.html)  
 
 ## A complete lab environment
 
 The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, a domain controller, an internet gateway, and a fully configured Configuration Manager instance. The labs include evaluation versions of the following products:
 
-|Windows 10 Lab|Windows 11 Lab|
-|---|---|
-|Windows 10 Enterprise, Version 21H2|Windows 11 Enterprise, Version 22H2|
-|Microsoft Configuration Manager, Version 2103|Microsoft Configuration Manager, Version 2303|
-|Windows Assessment and Deployment Kit for Windows 10|Windows Assessment and Deployment Kit for Windows 11|
-|Windows Server 2019|Windows Server 2022|
+|Windows 11 Lab|
+|---|
+|Windows 11 Enterprise, Version 23H2|
+|Microsoft Configuration Manager, Version 2303|
+|Windows Assessment and Deployment Kit for Windows 11|
+|Windows Server 2022|
 
 The labs are also designed to be connected to trials for:
 
@@ -104,7 +102,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 
 > [!NOTE]
-> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before August 25, 2023. 
+> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before February 20, 2024. 
 
 ## Additional guidance
 

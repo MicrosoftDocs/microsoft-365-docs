@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Microsoft Defender XDR service issues
 description: Find solutions and workarounds to known Microsoft Defender XDR issues
-keywords: troubleshoot Microsoft 365 Defender, troubleshoot, Microsoft Defender for Identity, issues, add-on, settings page
+keywords: troubleshoot Microsoft Defender XDR, troubleshoot, Microsoft Defender for Identity, issues, add-on, settings page
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -26,7 +26,7 @@ ms.date: 02/16/2021
 
 # Troubleshoot Microsoft Defender XDR service issues
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -57,4 +57,4 @@ To turn on Microsoft Defender XDR, access **Settings** from the navigation pane 
 ## How do I create an exception for my file/URL?
 
 A false positive is a file or URL that is detected as malicious but is not a threat. You can create indicators and define exclusions to unblock and allow certain files/URLs. See [Address false positives/negatives in Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

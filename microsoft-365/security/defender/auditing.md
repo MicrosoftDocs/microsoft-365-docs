@@ -69,4 +69,4 @@ In addition to using Audit New Search in the Microsoft Purview compliance portal
 ### See also
 
 [Additional information](additional-information-xdr.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

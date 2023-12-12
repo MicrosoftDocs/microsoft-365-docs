@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/31/2023
+ms.date: 12/05/2023
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.subservice: ngp
@@ -46,7 +46,7 @@ The following table describes the different types of scans you can configure.
 
 | Scan type | Description |
 |:---|:---|
-| Quick scan <br/>(*recommended*) | A quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. <br/><br/>A quick scan helps provide strong protection against malware that starts with the system and kernel-level malware, together with [always-on real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), which reviews files when they're opened and closed, and whenever a user navigates to a folder.<br/><br/>In most cases, a quick scan is sufficient and is the recommended option for scheduled scans. |
+| Quick scan <br/>(*recommended*) | A quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. <br/><br/>A quick scan helps provide strong protection against malware that starts with the system and kernel-level malware, together with [always-on real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), which reviews files when they're opened and closed, and whenever a user navigates to a folder.<br/><br/>In most cases, a quick scan is sufficient and is the recommended option for scheduled scans.  Starting with the December 2023 (4.18.2312.x.x) release of Platform Update, you have the option to scan all files and directories that are excluded from real-time protection using contextual exclusions are scanned during a quick scan.|
 | Full scan | A full scan starts by running a quick scan and then continues with a sequential file scan of all mounted fixed disks and removable/network drives (if the full scan is configured to do so).<br/><br/>A full scan can take a few hours or days to complete, depending on the amount and type of data that needs to be scanned.<br/><br/>When a full scan begins, it uses the security intelligence definitions installed at the time the scan starts. If new security intelligence updates are made available during the full scan, another full scan is required in order to scan for new threat detections contained in the latest update.<br/><br/>Because of the time and resources involved in a full scan, in general, we don't recommend scheduling full scans.|
 | Custom scan | A custom scan runs on files and folders that you specify. For example, you can choose to scan a USB drive or a specific folder on your device's local drive.|
 
@@ -80,6 +80,8 @@ Use the following table to choose a scan type.
 - When real-time protection detects malware and the extent of the affected files isn't determined initially, Microsoft Defender Antivirus initiates a full scan as part of the remediation process.
 
 - If a device is offline for an extended period of time, a full scan can take longer to complete.
+
+- You can configure quick scans to scan real-time protection exclusions by using PowerShell, Intune, or Group Policy.
 
 ## Scheduled quick scan performance optimization 
 
