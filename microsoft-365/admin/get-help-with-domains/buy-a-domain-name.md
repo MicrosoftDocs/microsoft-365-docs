@@ -79,7 +79,8 @@ We offer a free Domain Privacy Subscription with the purchase of a domain. This 
   
 ## Buy a domain from another domain registrar
 If you want to buy a domain from a domain registrar other than [GoDaddy](https://www.godaddy.com), we recommend you use one below that supports automatic setup (Domain Connect). 
-  
+
+- [Aruba](https://hosting.aruba.it/en/home.aspx)  
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
