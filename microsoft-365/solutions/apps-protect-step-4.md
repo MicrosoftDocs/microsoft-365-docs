@@ -17,6 +17,10 @@ keywords:
 # Step 4. Understand app protection delivery
 
 
+> [!IMPORTANT]
+> You can require that an Intune app protection policy is present on the client app before access is available to the selected applications. For more information, see [Require app protection policy](/entra/identity/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
+
+
 ## Protecting app extensions
 
 

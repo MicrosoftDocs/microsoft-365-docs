@@ -30,15 +30,33 @@ There are three primary platforms that are supported when creating an app protec
 
 | Platform | Description |
 |---|---|
-| iOS/iPadOS | You can apply app protection policies to iOS/iPadOS apps that have been   developed to support Intune app protection capabilities. For more   information, see [iOS app protection policy settings in Microsoft   Intune](/mem/intune/apps/app-protection-policy-settings-ios). |
-| Android | You can apply app protection policies to Android apps that have   been developed to support Intune app protection capabilities. For more   information, see [Android app protection policy settings   in Microsoft Intune](/mem/intune/apps/app-protection-policy-settings-android). |
-| Windows | Currently, you can apply app protection policies to Microsoft Edge for   Windows devices. Using Microsoft Edge, you can control how your   organization's data is access. You can apply app protection to Windows   devices based on data protection and health checks settings. Data protection   settings allow you to control how the movement of data into and out of your   organization (org) context. The org context is defined by documents,   services, and sites accessed by the specified org account. You can use app   protection policy settings to help control external data received into the   org context and org data sent out of the org context. These settings include   receiving and sending org data. Also, you can implement Data Loss Prevention   (DLP) controls, like cut, copy, paste, and save-as restrictions.   Additionally, you can allow or block printing of org data. For more   information, see [App protection policy settings for   Windows](/mem/intune/apps/app-protection-policy-settings-windows). |
+| iOS/iPadOS | You can apply app protection policies to iOS/iPadOS apps that have been developed to support Intune app protection capabilities. You can apply app protection to groups of users that sign into iOS/iPadOS devices. Specifically, you can apply app protection based on data protection, access requirements, and conditional launch settings within an app protection policy for iOS/iPadOS. For more information, see [iOS app protection policy settings in Microsoft Intune](/mem/intune/apps/app-protection-policy-settings-ios). |
+| Android | You can apply app protection policies to Android apps that have been developed to support Intune app protection capabilities. You can apply app protection to groups of users that sign into Android devices. Specifically, you can apply app protection based on data protection, access requirements, and conditional launch settings within an app protection policy for Android. For more information, see [Android app protection policy settings   in Microsoft Intune](/mem/intune/apps/app-protection-policy-settings-android). |
+| Windows | Currently, you can apply app protection policies to Microsoft Edge for Windows devices. Using Microsoft Edge, you can control how your organization's data is accessed. You can apply app protection to groups of users that sign in to Windows devices. Specifically, you can apply app protection based on data protection and health checks settings within an app protection policy for Windows. Data protection settings allow you to control how the movement of data into and out of your organization (org) context. The org context is defined by documents, services, and sites accessed by the specified org account. You can use app protection policy settings to help control external data received into the org context and org data sent out of the org context. These settings include receiving and sending org data. Also, you can implement Data Loss Prevention (DLP) controls, like cut, copy, paste, and save-as restrictions.   Additionally, you can allow or block printing of org data. For more information, see [App protection policy settings for   Windows](/mem/intune/apps/app-protection-policy-settings-windows). |
 
 For a more information about supported platforms, see [App management capabilities by platform](/mem/intune/apps/app-management#app-management-capabilities-by-platform). 
 
 ## Supported apps
 
 For iOS/iPadOS and Android platforms, you can apply app protection policies to any managed app that has been developed to support Intune app protection capabilities. The managed app has either integrated the [Intune App SDK](/mem/intune/developer/app-sdk) or has been wrapped using the [Intune App Wrapping Tool](/mem/intune/developer/apps-prepare-mobile-application-management#intune-app-wrapping-tool). For the Windows platform, you can enable data protection of corporate data on personal Windows devices using [Windows MAM](/mem/intune/apps/protect-mam-windows). Windows MAM is where you apply app protection policies to Microsoft Edge for Windows. Microsoft Edge, as well as most Microsoft applications, have been integrated to support Intune by using the Intune App SDK.
+
+## Prerequisites
+
+Before you can protect apps with Microsoft Intune, you must follow a few prerequisites to set up Intune, as well as understand key app management configurations.
+
+> [!NOTE]
+> If you're new to Intune, start with the [Microsoft Intune free trial](/mem/intune/fundamentals/free-trial-sign-up). Trying out Intune is free for 30 days. When you complete the sign-up process, you'll have a new tenant that you can use to evaluate Intune. A tenant is a dedicated instance of [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) (Microsoft Entra ID) where your subscription to Intune is hosted. You can then configure the tenant, which involves many capabilities that you can use to protect your organization. One of those involves adding and configuring apps for Intune.
+
+Follow these steps if you haven't already set up Intune and added the apps you need to manage and protect:
+1. Set up and [deploy Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune&preserve-view=true)
+2. Understand [application protection](/microsoft-365/solutions/apps-protect-overview#app-protection&preserve-view=true)
+3. [Understand app types](/microsoft-365/solutions/apps-guide-overview#understand-app-types&preserve-view=true)
+4. [Add apps to Intune](/microsoft-365/solutions/apps-add-overview)
+
+> [!IMPORTANT]
+> To use Microsoft Intune beyond the free trial, you'll need to acquire a license from Microsoft. For more information about licenses that include Microsoft Intune, see [Microsoft Intune licensing](/mem/intune/fundamentals/licenses).
+> 
+> Although many apps that you can deploy to the members of your organization are free, some apps may require either a license, subscription, or account for each user to use the app. For more information about app licenses, see [Understand app licenses used in Intune](/microsoft-365/solutions/apps-license-overview). 
 
 ## App protection
 
@@ -70,10 +88,26 @@ Your employees use mobile devices for both personal and work tasks. While making
 When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data loss. The following table provides details about data, device and app protection.
 
 | Data,   device, and app protection | Description |
-|:---:|:---:|
+|---|---|
 | Apps   without app protection policies | When apps are used without   restrictions, company and personal data can get intermingled. Company data   can end up in locations like personal storage or transferred to apps beyond   your purview and result in data loss.  |
 | Data   protection with app protection policies | You can use App protection   policies to prevent company data from saving to the local storage of the   device. You can also restrict data movement to other apps that aren't   protected by App protection policies.  |
 | Data   protection with app protection policies on managed devices | Provides both app and device   management and protection. |
 | Data   protection with APP for devices without enrollment | App protection policies can help   protect company data at the app level. However, there are limitations related   to deploying apps, provisioning device certificate profiles, and provisioning   device organization settings. |
 
 For more information, see [How app protection policies protect app data](/mem/intune/apps/app-protection-policy#how-app-protection-policies-protect-app-data).
+
+## What's in this solution
+
+This solution steps you through the process of creating app protection policies in Microsoft Intune for specific apps and assigning those policies to members of your organization. Once you've completed the above [prerequisites](#prerequisites), you're ready to create app protection policies for your organization in Intune. Using configuration and protection policies as part of your app management efforts allows members of your organization to safely use apps. By managing apps at your organization, you help to protect and secure your organization’s data.
+
+Follow these steps to add apps to Intune:
+1. [Apply minimum data protection](apps-protect-step-1.md)
+2. [Apply enhanced data protection](apps-protect-step-2.md)
+3. [Apply high data protection](apps-protect-step-3.md)
+4. [Understand app protection delivery](apps-protect-step-4.md)
+5. [Verify and monitor app protection](apps-protect-step-5.md)
+6. [Use app protection actions](apps-protect-step-6.md)
+
+[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-01.png" alt-text="Step 1. Apply minimum data protection" border="false" :::](apps-protect-step-1.md)
+
+After you completed the above steps, you are ready to deploy, manage, and monitor the managed apps your organization uses.
