@@ -20,7 +20,7 @@ search.appverid: met150
 
 # Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

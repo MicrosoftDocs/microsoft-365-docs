@@ -26,7 +26,11 @@
       - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
       - name: Deploy your frontline operational hierarchy
-        href: deploy-frontline-operational-hierarchy.md 
+        href: deploy-frontline-operational-hierarchy.md
+    - name: Set up and configure experiences for your frontline
+      items: 
+      - name: Deploy Shifts at scale
+        href: deploy-shifts-at-scale.md 
     - name: Manage devices
       items:
       - name: Manage shared and personal devices
