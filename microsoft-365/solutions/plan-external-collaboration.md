@@ -40,7 +40,7 @@ This article covers the fourth option, group collaboration with channel conversa
 - **Microsoft Entra B2B collaboration** – A feature that allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
 - **Microsoft Entra B2B direct connect** – A feature that allows users to share resources in your organization with people from other Microsoft Entra organizations. These people access the shared resources by using their own work or school account. No guest account is created in your organization.
 - **External participant** – A person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.
-- **External organization** – Another organization that you are sharing resources with.
+- **External organization** – Another organization that you're sharing resources with.
 - **Guest** – A person from outside your organization who accesses shared resources by signing in to a guest account in your directory.
 - **Host organization** – The organization that is hosting a shared resource, such as a shared channel.
 - **Shared channel** – A Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Microsoft Entra organizations.
@@ -61,11 +61,11 @@ Guests in a team have similar capabilities to regular team members.
 
 ### External participants in shared channels
 
-External participants access shared resources in your organization by using their own Microsoft Entra ID or Microsoft 365 identity. This is enabled by Microsoft Entra B2B direct connect through an organizational relationship configured by both organizations. Guest accounts are not used in this relationship.
+External participants access shared resources in your organization by using their own Microsoft Entra ID or Microsoft 365 identity. This is enabled by Microsoft Entra B2B direct connect through an organizational relationship configured by both organizations. Guest accounts aren't used in this relationship.
 
 The primary advantage of external participants in shared channels versus guest sharing is that people outside your organization can collaborate with your users in Teams without having to change their user context. When using guest accounts, users must sign out of Teams with their work or school account and sign in again using the guest account. Alternatively, they can have a separate copy of Teams running in a private browser session. This switching between organizations takes time and can cause users to miss important communications while signed out of a given organization.
 
-With shared channels, users can remain signed in to their organization and access channels shared with them from other organizations. Shared channels from other organizations are available in Teams alongside the teams and channels in your organization. There is no need to switch organizations.
+With shared channels, users can remain signed in to their organization and access channels shared with them from other organizations. Shared channels from other organizations are available in Teams alongside the teams and channels in your organization. There's no need to switch organizations.
 
 ## Feature comparison
 
@@ -90,8 +90,8 @@ Guest sharing is enabled by default in Microsoft Entra ID and in Microsoft 365 (
 You must use guest sharing if:
 
 - You want to invite people from outside your organization to the team rather than individual channels
-- You want to share files or folders in a channel with people outside your organization who are not in the channel
-- You want to collaborate with people outside your organization who do not have a work or school account.
+- You want to share files or folders in a channel with people outside your organization who aren't in the channel
+- You want to collaborate with people outside your organization who don't have a work or school account.
 
 While shared channels is turned on by default in Teams, external collaboration with shared channels requires that a Microsoft Entra administrator set up cross-tenant access between your organization and each other organization with which you want to share. Each other organization must set up cross-tenant access on their end as well.
 
