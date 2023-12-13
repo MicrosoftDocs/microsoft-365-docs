@@ -179,6 +179,9 @@ To disable the **Standard protection** or **Strict protection** preset security 
 
 ## Use the Microsoft Defender portal to add exclusions to the Built-in protection preset security policy
 
+ > [!IMPORTANT]
+   > Built-in Protection is applied for all users in tenants with MDO paid licenses. This is in the spirit of securing the broadest set of users by default, till the admins explicitly configure the users to apply MDO protections for. Since this is enabled by default, customers need not worry about breaching product license terms. However, we recommend purchasing enough licenses to ensure Built-in protection continues for all in future. 
+
 > [!TIP]
 > The **Built-in protection** preset security policy is assigned to all recipients, and doesn't affect recipients who are defined in the **Standard** or **Strict** preset security policies, or in custom Safe Links or Safe Attachments policies. Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
 
