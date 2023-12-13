@@ -27,7 +27,7 @@ Device control capabilities in Microsoft Defender for Endpoint enable your secur
 - Prevent users from installing and using certain devices (like USB drives)
 - Prevent users from installing and using any external devices with specific exceptions
 - Allow users to install and use specific devices
-- Allow users to install and use only BitLocker-encrypted devices with Windows computers
+- Allow users to install and use only [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/)-encrypted devices with Windows computers
 
 This list is intended to provide some examples. It’s not an exhaustive list; there are other examples to consider (see the use cases section in this article). 
 
