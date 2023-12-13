@@ -40,7 +40,7 @@ Before you begin, you must have the following:
 
 To provide feedback to Microsoft on behalf of a user who encountered a problem with Copilot for Microsoft 365, follow these steps:
 
-1. Go to [admin.microsoft.com](http://admin.microsoft.com) and sign in with **Global Admin** credentials. Select on **Copilot** in the left navigation pane to enter the Copilot home page.
+1. Go to [admin.microsoft.com](https://admin.microsoft.com) and sign in with **Global Admin** credentials. Select on **Copilot** in the left navigation pane to enter the Copilot home page.
 
 2. Find **Copilot diagnostic logs** and select it to open the Copilot feedback diagnostic logs pane. Review the information and then select **Get started**.
 
