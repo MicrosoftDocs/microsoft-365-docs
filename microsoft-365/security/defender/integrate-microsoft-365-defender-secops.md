@@ -27,7 +27,7 @@ ms.date: 07/15/2021
 
 # Integrating Microsoft Defender XDR into your security operations
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -71,4 +71,4 @@ Use these steps to integrate Microsoft Defender XDR into your SOC.
 
 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

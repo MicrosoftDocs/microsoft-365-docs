@@ -1,7 +1,7 @@
 ---
 title: Advanced hunting example for Microsoft Defender for Office 365
 description: Get started searching for email threats using advanced hunting
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -24,7 +24,7 @@ ms.date: 9/13/2023
 
 # Advanced hunting example for Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -64,4 +64,4 @@ The data from this query appears in the **Results** panel below the query itself
 ## Related information
 - [Advanced hunting best practices](advanced-hunting-best-practices.md)
 - [Overview - Advanced hunting](advanced-hunting-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

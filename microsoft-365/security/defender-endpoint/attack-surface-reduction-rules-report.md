@@ -35,7 +35,7 @@ search.appverid: met150
 
 - Windows
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -87,7 +87,7 @@ For more information about user role management, see [Create and manage roles fo
 
 To navigate to the summary cards for the attack surface reduction rules report
 
-1. Open **Microsoft 365 Defender**  portal.
+1. Open **Microsoft Defender XDR**  portal.
 1. In the left panel, click**Reports**, and in the main section, under **Reports** select **Security report**.
 1. Scroll down to **Devices** to find the **Attack surface reduction rules** summary cards.
 

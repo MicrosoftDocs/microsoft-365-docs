@@ -1,7 +1,7 @@
 ---
 title: Configure the deception capability in Microsoft Defender XDR
 description: Learn how to create, edit, and delete deception rules in Microsoft Defender XDR.
-keywords:  deception, defender for endpoint, Microsoft 365 Defender, Microsoft defender for endpoint, lures, fake hosts, fake users, fake network, honeypot, honeytoken, decoy, fake host, fake user, deception technology, create deception rule, modify deception rule, edit deception rule, delete deception rule
+keywords:  deception, defender for endpoint, Microsoft Defender XDR, Microsoft defender for endpoint, lures, fake hosts, fake users, fake network, honeypot, honeytoken, decoy, fake host, fake user, deception technology, create deception rule, modify deception rule, edit deception rule, delete deception rule
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +24,7 @@ ms.date: 12/04/2023
 ---
 # Configure the deception capability in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -89,4 +89,4 @@ To modify a deception rule, perform the following steps:
 3. To turn off the rule, select **Turn off** in the editing pane.  
 4. To delete a deception rule, select **Delete** in the editing pane.
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

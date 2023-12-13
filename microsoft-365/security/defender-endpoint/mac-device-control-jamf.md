@@ -23,7 +23,7 @@ ms.date: 03/31/2023
 
 # Deploy and manage Device Control using JAMF
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

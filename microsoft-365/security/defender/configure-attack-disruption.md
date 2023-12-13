@@ -22,7 +22,7 @@ f1.keywords: CSH
 
 # Configure automatic attack disruption capabilities in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 Microsoft Defender XDR includes powerful [automated attack disruption](automatic-attack-disruption.md) capabilities that can protect your environment from sophisticated, high-impact attacks.
 
@@ -76,4 +76,4 @@ Excluding user accounts is not recommended, and accounts added to this list won'
 
 - [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
