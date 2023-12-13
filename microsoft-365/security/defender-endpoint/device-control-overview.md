@@ -47,3 +47,17 @@ This article focuses on device control capabilities that are available in Defend
 - **Endpoint data loss prevention** (Endpoint DLP). Endpoint DLP monitors sensitive information on devices that are onboarded to Microsoft Purview solutions. DLP policies can enforce protective actions on sensitive information and where it’s stored or used. [Learn about Endpoint DLP](/purview/endpoint-dlp-learn-about).
 - **BitLocker and Intune**. [BitLocker](/windows/security/operating-system-security/data-protection/encrypted-hard-drive) is a Windows security feature that provides encryption for entire volumes. Together with Intune, policies can be configured to enforce encryption on devices using BitLocker for Windows and FileVault for Mac. For more information, see [Disk encryption policy settings for endpoint security in Intune](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 - **Administrative Templates (ADMX) and Intune**. You can use ADMX templates to create policies that restrict or allow specific types of USB devices to be used with computers. For more information, see [Restrict USB devices and allow specific USB devices using ADMX templates in Intune](/mem/intune/configuration/administrative-templates-restrict-usb).
+
+## Supported devices
+
+Device control organizes supported devices into types by their `primary_id`. On a Windows, based on the driver, some devices are marked as removable. For example, USB drives, Windows Portable Devices (WPD), CD/ROMs, Bluetooth devices, and printers are all removable. The following table lists examples of devices that device control supports:
+
+| Device type | PrimaryId in Windows | primary_id in macOS | 
+|---|---|---|
+| Bluetooth devices |  | `bluetoothDevice` |
+| CD/ROMS, DVDs | `CdRomDevices` |  |
+| iOS devices |  | `appleDevice` |
+| Portable devices (such as cameras) |   | `portableDevice` |
+| Printers |
+| USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` |
+| Windows Portable Devices | 
