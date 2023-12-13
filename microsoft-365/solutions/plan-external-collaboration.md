@@ -3,7 +3,8 @@ title: "Plan external collaboration with channel conversations, file collaborati
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 03/10/2020
+ms.reviewer: jasonlewis
+ms.date: 12/13/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,7 +18,7 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-localization_priority: Normal
+localization_priority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Learn the difference between guest collaboration and shared channels in Teams and how to choose which one to use.
@@ -101,54 +102,9 @@ If you plan to use shared channels with other organizations, you can choose betw
 
 ## Compliance in shared channels
 
-Shared channels are integrated with Microsoft Purview features.
+Shared channels are integrated with Microsoft Entra and Microsoft Purview features. For details, see [Shared channels in Microsoft Teams](/MicrosoftTeams/shared-channels#compliance-in-shared-channels).
 
-### Communications compliance
-
-Admins can set policies to monitor content for all users in the channel. All messages content in channels, including shared channels, is covered by [communication compliance policies](/microsoft-365/compliance/communication-compliance). Shared channels inherit the policy of the host organization.
-
-### Conditional access
-
-Supported [conditional access policies](/azure/active-directory/conditional-access/overview) from the host organization can be applied to B2B direct connect users. (The external organization's policies are not used.) The following types of conditional access policies are supported with shared channels:
-
-- Policies that are scoped to **All guest and external users**, and the **Office 365 SharePoint Online** cloud app.
-- Grant Access controls that require MFA, a compliant device, or a Microsoft Entra hybrid joined device.
-
-IP-based policies are supported at the SharePoint file level. So an external participant could access shared channel from a restricted location, but be blocked when trying to open a file.
-
-For more information about conditional access for external identities, see [Authentication and Conditional Access for External Identities](/azure/active-directory/external-identities/authentication-conditional-access).
-
-### Data loss prevention (DLP)
-
-Admins can apply [Microsoft Purview DLP policies](/microsoft-365/compliance/dlp-policy-design) to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
-
-### Retention policy
-
-Admins can apply a [retention policy](/microsoft-365/compliance/retention) on a team where all channels, including shared channels, inherit the retention policy. Shared channels inherit the policy of the parent team.
-
-### Sensitivity labels
-
-[Sensitivity labels](/microsoft-365/compliance/sensitivity-labels) available in the host organization are the only labels that can be applied to the documents in a shared channel site. A file that is encrypted by a sensitivity label cannot be opened by external participants unless permissions are granted. Automatic labeling is not used.
-
-Shared channels and their associated SharePoint sites inherit the label from the parent team.
-
-### Information barriers
-
-Users who are not allowed to communicate per [information barrier](/microsoftteams/information-barriers-in-teams) policies can't be part of shared channel. Information barrier policies are only effective for users in the host organization. If users are external participants in another organization's shared channel, information barrier policies don't apply.
-
-### eDiscovery
-
-Admins can perform searches for all users in the channel. All channels, including the shared channel, are discoverable. All message data in the channel regardless of who added the data is discoverable by the compliance admin.
-
-### Legal hold
-
-Admins can place channel-only members from the host organization who are not a part of the team on hold. They can also [place the entire team on hold](/MicrosoftTeams/legal-hold). Admins cannot place an external participant on hold.
-
-### Audit logs
-
-All the actions performed for [existing audit events](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log) are audited in shared channels.
-
-## Related topics
+## Related articles
 
 [Intro to file collaboration in Microsoft 365](/sharepoint/intro-to-file-collaboration)
 
