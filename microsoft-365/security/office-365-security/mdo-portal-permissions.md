@@ -161,7 +161,7 @@ The following actions are available for Email & collaboration role groups in the
 
    Back on the **Choose members** page, the members are shown in the **Selected members** section.
 
-   When you're finished on the **Choose page** page, select **Next**.
+   When you're finished on the **Choose members** page, select **Next**.
 
 6. On the **Review your settings** page, review your settings. You can select **Edit** in each section to modify the settings within the section. Or you can select **Back** or the specific page in the wizard.
 

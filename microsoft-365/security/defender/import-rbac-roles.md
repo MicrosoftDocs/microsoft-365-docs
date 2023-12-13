@@ -19,7 +19,7 @@ search.appverid: met150
 
 # Import roles to Microsoft Defender XDR Unified role-based access control (RBAC)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -29,8 +29,6 @@ search.appverid: met150
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 <a name='import-roles-to-microsoft-365-defender-unified-rbac-from-individual-rbac-models'></a>
 
@@ -73,4 +71,4 @@ Imported roles appear in the **Permissions and roles** list together with any cu
 
 - [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
 - [Edit or delete roles](edit-delete-rbac-roles.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

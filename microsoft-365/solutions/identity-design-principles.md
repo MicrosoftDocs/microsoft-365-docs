@@ -267,7 +267,7 @@ As stated earlier, many customers are looking to achieve a more granular delegat
 
 - **Intune** - (/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender for Endpoint** - (/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365 Defender** - (../security/defender/m365d-permissions.md)
+- **Microsoft Defender XDR** - (../security/defender/m365d-permissions.md)
 - **Microsoft Defender for Cloud Apps** - (/cloud-app-security/manage-admins)
 - **Stream** - (/stream/assign-administrator-user-role)
 - **Information barriers** - (../compliance/information-barriers.md)

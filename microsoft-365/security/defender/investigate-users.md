@@ -22,7 +22,7 @@ ms.date: 08/04/2023
 
 # Investigate users in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -204,4 +204,4 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 
 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
