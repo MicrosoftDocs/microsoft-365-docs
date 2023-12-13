@@ -2,7 +2,7 @@
 title: Threat analytics in Microsoft Defender XDR
 ms.reviewer: 
 description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
-keywords: threat analytics, risk evaluation, Microsoft 365 Defender, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics data integration, integrated Microsoft 365 Defender threat analytics   
+keywords: threat analytics, risk evaluation, Microsoft Defender XDR, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics data integration, integrated Microsoft Defender XDR threat analytics   
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -26,7 +26,7 @@ ms.date: 09/18/2023
 
 # Threat analytics in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -46,7 +46,7 @@ Watch this short video to learn more about how threat analytics can help you tra
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwJfU]
 
-You can access threat analytics either from the upper left-hand side of Microsoft 365 Defender's navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of known impact, and in terms of your exposure.
+You can access threat analytics either from the upper left-hand side of Microsoft Defender XDR's navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of known impact, and in terms of your exposure.
 
 :::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="Screenshot of the threat analytics landing page" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
@@ -218,4 +218,4 @@ When looking at the threat analytics data, remember the following factors:
 - [Proactively find threats with advanced hunting](advanced-hunting-overview.md)
 - [Understand the analyst report section](threat-analytics-analyst-reports.md)
 - [Assess and resolve security weaknesses and exposures](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

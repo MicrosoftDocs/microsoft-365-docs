@@ -25,7 +25,7 @@ search.appverid: met150
 
 # Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

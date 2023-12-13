@@ -26,7 +26,7 @@ ms.date: 10/10/2023
 
 # Better together: Microsoft Defender Antivirus and Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

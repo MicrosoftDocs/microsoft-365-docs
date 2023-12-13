@@ -24,7 +24,7 @@ ms.collection:
 # Troubleshoot performance issues related to real-time protection
 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

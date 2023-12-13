@@ -1,7 +1,7 @@
 ---
 title: Get incident notifications by email in Microsoft Defender XDR
 description: Set up email notifications to get notified of new incidents or updates to incidents in Microsoft Defender XDR.
-keywords: email, notifications, incident response, incident response notifications, incident notifications, email notifications, Microsoft 365 Defender notifications
+keywords: email, notifications, incident response, incident response notifications, incident notifications, email notifications, Microsoft Defender XDR notifications
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +25,7 @@ ms.date: 09/18/2023
 
 # Get incident notifications by email in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -60,7 +60,7 @@ Likewise, if your organization is using role-based access control (RBAC), you ca
 
 Follow these steps to create a new rule and customize email notification settings.
 
-1. Go to [Microsoft Defender XDR](https://security.microsoft.com) in the navigation pane, select **Settings > Microsoft 365 Defender > Incident email notifications**.
+1. Go to [Microsoft Defender XDR](https://security.microsoft.com) in the navigation pane, select **Settings > Microsoft Defender XDR > Incident email notifications**.
 2. Select **Add item**.
 3. On the **Basics** page, type the rule name and a description, and then select **Next**.
 4. On the **Notification settings** page, configure:
