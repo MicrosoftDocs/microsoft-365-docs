@@ -3,7 +3,7 @@ title: "Limit sharing in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 03/10/2020
+ms.date: 12/13/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -76,7 +76,7 @@ To turn off guest sharing in Microsoft 365 Groups
     ![Screenshot of Microsoft 365 Groups sharing settings in the Microsoft 365 admin center.](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> If you want to prevent guest sharing for a particular group or team, you can do so by using [Microsoft PowerShell](per-group-guest-access.md) or [sensitivity labels](../compliance/sensitivity-labels-teams-groups-sites.md).
+> If you want to prevent guest sharing for a particular group or team, you can do so by using [Microsoft PowerShell](per-group-guest-access.md) or [sensitivity labels](/purview/sensitivity-labels-teams-groups-sites).
 
 ### Limit guest sharing to specified domains
 
@@ -101,7 +101,7 @@ You can limit SharePoint site sharing to site owners only. This prevents site me
 
 To limit site sharing to owners
 1. In the site, select the gear icon, and then select **Site permissions**.
-2. Under **Sharing settings**, select **Change sharing settings**.
+2. Under **Sharing settings**, select **Change how members can share**.
 3. Select **Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.
 4. Select **Save**.
 
@@ -111,7 +111,7 @@ You can prevent users who are not members of the site from requesting access by 
 
 To turn off access requests
 1. In the site, select the gear icon, and then select **Site permissions**.
-2. Under **Sharing settings**, select **Change sharing settings**.
+2. Under **Sharing settings**, select **Change how members can share**.
 3. Turn off **Allow access requests**, and then select **Save**.
 
 You can limit site sharing to specific domains by allowing or blocking domains for the site.
@@ -120,12 +120,16 @@ To limit site sharing by domain
 
 1. In the SharePoint admin center, under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
 2. Select the site that you want to configure.
-3. On the **Policies** tab, under **External sharing** select **Edit**.
+3. On the **Settings** tab, under **External file sharing** select **More sharing settings**.
 4. Under **Advanced settings for external sharing**, select the **Limit sharing by domain**.
 5. Add the domains that you want to allow or block, and then select **Save**.
 6. Select **Save**.
 
     ![Screenshot of allowed domains site-level setting.](../media/limit-site-sharing-by-domain.png)
+
+### Restrict access to members of a security group
+
+You can restrict access to a SharePoint site and its contents to members of a security group. Users outside the group won't have access to site content even if they have a sharing link. For more information, see [Restrict SharePoint site access to members of a group](/sharepoint/restricted-access-control).
 
 ### Block access to a site
 
@@ -141,7 +145,7 @@ if you want to limit the sharing of a site or its contents, you can configure th
 
 To limit site, file, and folder sharing to owners
 1. In the site, select the gear icon, and then select **Site permissions**.
-2. Under **Sharing settings**, select **Change sharing settings**.
+2. Under **Sharing settings**, select **Change how members can share**.
 3. Select **Only site owners can share files, folders, and the site**.
 4. Select **Save**.
 
@@ -151,7 +155,9 @@ To limit site, file, and folder sharing to owners
 
 Admins can limit access to OneDrive overall to people in a security group or limit access to shared files and folders in a specific OneDrive to people in a security group.
 
+You can restrict access and sharing of OneDrive content throughout your organization to users in a security group. Even if other users outside of these security groups are licensed for OneDrive, they won’t have access to their own OneDrive or any shared OneDrive content when this policy is in effect. For more information, see [Restrict OneDrive access by security group](sharepoint/limit-access).
 
+You can restrict access to an individual user's OneDrive content to users in a security group by using a OneDrive access restriction policy. Users not in the specified group can't access the content, even if they had prior permissions or shared link. For more information, see [Restrict access to a user's OneDrive content to people in a group](/sharepoint/onedrive-site-access-restriction).
 
 ## SharePoint and OneDrive guest sharing
 
@@ -160,7 +166,7 @@ If you want to prevent sharing SharePoint or OneDrive files and folders with peo
 To turn off SharePoint guest sharing for your organization
 
 1. In the SharePoint admin center, under **Policies**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
-2. Under **External sharing**, drag the SharePoint slider down to **Only people in your organization**.
+2. Under **External sharing**, drag the SharePoint slider down to **Only people in your organization**. (The OneDrive slider is dependent on SharePoint and will also be set to **Only people in your organization**.)
 3. Select **Save**.
 
     ![Screenshot of SharePoint organization-level sharing settings set to Anyone.](../media/sharepoint-tenant-sharing-off.png)
@@ -169,19 +175,19 @@ To turn off SharePoint guest sharing for your organization
 To turn off guest sharing for a site
 1. In the SharePoint admin center, under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
 2. Select the site that you want to configure.
-3. On the **Policies** tab, under **External sharing** select **Edit**.
-4. Under **External sharing**, choose **Only people in your organization**, and then select **Save**.
+3. On the **Settings** tab, under **External file sharing**, choose **Only people in your organization** from the dropdown list.
+1. Select **Save**.
 
     ![Screenshot of SharePoint site-level sharing settings set to Only people in your organization.](../media/sharepoint-site-external-sharing-settings-off.png)
 
-You can turn off guest sharing for an individual OneDrive by clicking the user in the Microsoft 365 admin center and selecting **Manage external sharing** on the **OneDrive** tab.
+You can turn off guest sharing for an individual OneDrive by selecting the user in the Microsoft 365 admin center and selecting **Manage external sharing** on the **OneDrive** tab.
 
 If you would like to allow sharing with people outside your organization but you want to make sure that everyone authenticates, you can disable *Anyone* (anonymous sharing) links for the entire organization or for an individual site.
 
 To turn off *Anyone* links at the organization level
 
 1. In the SharePoint admin center, under **Policies**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
-2. Under **External sharing**, drag the SharePoint slider down to **New and existing guests**.
+2. Under **External sharing**, drag the SharePoint slider down to **New and existing guests**. (The OneDrive slider is dependent on SharePoint and will also be set to **New and existing guests**.)
 3. Select **Save**.
 
     ![Screenshot of SharePoint organization-level sharing settings set to New and existing guests.](../media/sharepoint-guest-sharing-new-existing-guests.png)
@@ -190,8 +196,7 @@ To turn off *Anyone* links for a site
 
 1. In the SharePoint admin center, under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
 2. Select the site that you want to configure.
-3. On the **Policies** tab, under **External sharing** select **Edit**.
-4. Under **External sharing**, choose **New and existing guests**, and then select **Save**.
+3. On the **Settings** tab, under **External file sharing**, choose **New and existing guests** from the dropdown list.
 
     ![Screenshot of SharePoint site-level sharing settings set to New and existing settings.](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 
@@ -223,19 +228,19 @@ By default, users can create new sites, groups, and teams from which they may be
 
 ## Email
 
-You can prevent unwanted sharing of emails by using encryption. This prevents emails being forwarded or otherwise shared with unauthorized users. Email encryption can be enabled by using sensitivity labels. See [Restrict access to content by using encryption in sensitivity labels](../compliance/encryption-sensitivity-labels.md) for details.
+You can prevent unwanted sharing of emails by using encryption. This prevents emails being forwarded or otherwise shared with unauthorized users. Email encryption can be enabled by using sensitivity labels. See [Restrict access to content by using sensitivity labels to apply encryption](/purview/encryption-sensitivity-labels) for details.
 
 ## Download or file copy
 
-Users who have access to files and folders in Microsoft 365 can download files and copy them to external media. To reduce the risk of unwanted file sharing, you can encrypt the content by using sensitivity labels.
+Users who have access to files and folders in Microsoft 365 can download files and copy them to external media. To reduce the risk of unwanted file sharing, you can encrypt the content by using sensitivity labels. Users can also [block file download when they share files](https://support.microsoft.com/office/6051184b-62ac-4149-b874-13dcd40ef91e)
 
 ## Conditional access
 
-Microsoft Entra Conditional Access provides options to limit or prevent sharing with people based on network location, device health, sign-in risk, and other factors. See [What is Conditional Access?](/azure/active-directory/conditional-access/overview).
+Microsoft Entra Conditional Access provides options to limit or prevent sharing with people based on network location, device health, sign-in risk, and other factors. See [What is Conditional Access?](/entra/identity/conditional-access/overview).
 
 SharePoint provides direct integration with Microsoft Entra Conditional Access for both unmanaged devices and network location. See the following references for details:
 
-- [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices)
+- [SharePoint and OneDrive unmanaged device access controls](/sharepoint/control-access-from-unmanaged-devices)
 - [Control access to SharePoint and OneDrive data based on network location](/sharepoint/control-access-based-on-network-location)
 
 ## Related articles
