@@ -60,4 +60,4 @@ Device control organizes supported devices into types by their `primary_id`. On 
 | Portable devices (such as cameras) |   | `portableDevice` |
 | Printers | `PrinterDevices` |  |
 | USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` |
-| Windows Portable Devices | 
+| Windows Portable Devices | `WpdDevices` |  |
