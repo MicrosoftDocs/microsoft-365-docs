@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 07/03/2023
+ms.date: 12/13/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -50,7 +50,7 @@ If you're experiencing an issue that isn't listed in any of these resources, the
 
 ## Access help and support
 
-1. In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane, and then do one of the following:
+1. In Lighthouse, select the **?** icon at the top of the portal or the **Help & support** widget in the lower-right corner of the portal to open the **Help** pane, and then do one of the following:
   
    - If you're on the page of the portal where the issue occurred, select **Show diagnostics**.
 
