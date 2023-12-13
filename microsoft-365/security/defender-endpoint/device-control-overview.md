@@ -58,6 +58,6 @@ Device control organizes supported devices into types by their `primary_id`. On 
 | CD/ROMS, DVDs | `CdRomDevices` |  |
 | iOS devices |  | `appleDevice` |
 | Portable devices (such as cameras) |   | `portableDevice` |
-| Printers |
+| Printers | `PrinterDevices` |  |
 | USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` |
 | Windows Portable Devices | 
