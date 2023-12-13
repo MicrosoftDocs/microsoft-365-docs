@@ -46,7 +46,7 @@ That means there will be no further updates, patches, or fixes for the product (
 As the end of support of SharePoint Server 2010 approaches, delete data you no longer need before you upgrade the product and migrate your important data.
 
 > [!NOTE]
-> A software lifecycle typically lasts for ten years from the initial release. [Microsoft solution providers](https://go.microsoft.com/fwlink/?linkid=841249) can can help you upgrade to the next version of the software or migrate to Microsoft 365 migration (or both). Make sure you're aware of end-of-support dates for critical underlying technologies as well, particularly for the version of Microsoft SQL Server you're using with SharePoint. For more information, see [Fixed Lifecycle Policy](https://support.microsoft.com/help/14085).
+> A software lifecycle typically lasts for ten years from the initial release. [Microsoft solution providers](https://go.microsoft.com/fwlink/?linkid=841249) can help you upgrade to the next version of the software or migrate to Microsoft 365 migration (or both). Make sure you're aware of end-of-support dates for critical underlying technologies as well, particularly for the version of Microsoft SQL Server you're using with SharePoint. For more information, see [Fixed Lifecycle Policy](https://support.microsoft.com/help/14085).
 
 ## Plan ahead
 
