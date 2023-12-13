@@ -12,7 +12,7 @@ ms.collection:
 - m365-security
 - tier2
 audience: ITPro
-ms.date: 11/21/2023
+ms.date: 12/13/2023
 search.appverid: MET150
 
 ---
