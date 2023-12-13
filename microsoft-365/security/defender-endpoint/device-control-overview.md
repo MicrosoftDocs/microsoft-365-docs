@@ -33,4 +33,10 @@ This list is intended to provide some examples. It’s not an exhaustive list; t
 
 Device control helps protect your organization from potential data loss, malware, or other cyberthreats by allowing or preventing certain devices to be connected to users’ computers. With device control, your security team can determine whether and what peripheral devices users can install and use on their computers. 
 
+## Device installation and removable storage access control
+
+Device control capabilities in Defender for Endpoint can be organized into two main categories:
+
+- **Device installation**. You can configure device installation settings to prevent (or allow) users from installing certain devices on their computers. Policies are applied at the device level, and use various device properties to make the determination as to whether the user can install/use the device or not.
+- **Removable storage access control** (RSAC). You can configure RSAC settings to prevent (or allow) users to have Read, Write, or Execute access to content on removable storage devices. You can define exceptions, and you can choose to employ audit policies that detect but do not block users from accessing their removable storage devices. Policies are applied at the device level, user level, or both.
 
