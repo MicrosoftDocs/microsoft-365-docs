@@ -544,6 +544,8 @@
           href: customize-controlled-folders.md
       - name: Device Control
         items:
+        - name: Overview of device control
+          href: device-control-overview.md
         - name: Removable Storage Protection
           href: device-control-removable-storage-protection.md
         - name: Removable Storage Access Control
