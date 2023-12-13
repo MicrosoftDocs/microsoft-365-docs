@@ -30,6 +30,7 @@ In the setup process, you define the following information with Microsoft Entra 
 
 - Who your frontline workers are
 - What locations they work at
+- Department and job titles of your frontline workers
 
 You also determine team structure and team owners.
 
@@ -47,6 +48,7 @@ Team membership is automatically managed over time through the power of dynamic 
 
 - Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
 - Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale.
+- If you want to enable targeted communications features, ensure you can map the attributes of your frontline workers through data available in Microsoft Entra ID. If user profile information doesn’t yet include job title or department, you can add it. [Learn more about how to add or update a user’s profile information in Microsoft Entra ID](entra/fundamentals/how-to-manage-user-profile-info).  
 
 When evaluating the right solution for your organization, we recommend you do the following:
 
@@ -62,17 +64,17 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-manage-setup.png" alt-text="Screenshot of the Manage frontline teams page, showing the Setup button." lightbox="media/dtas-manage-setup.png":::
 
-1. Review the prerequisites information.
+1. Review the setup and prerequisites information.
 
-1. Select the Microsoft Entra attribute that defines your frontline workers. You can only choose one Microsoft Entra attribute, but you can define multiple values by separating them with commas.
+1. On the Identify your frontline workers page, select the Microsoft Entra attribute that defines your frontline workers. You can only choose one Microsoft Entra attribute, but you can define multiple values by separating them with commas.
 
     :::image type="content" source="media/dtas-frontline-attribute.png" alt-text="Screenshot of where to enter your Microsoft Entra attribute and values for frontline workers." lightbox="media/dtas-frontline-attribute.png":::
 
-1. Select the Microsoft Entra attribute that defines the location your frontline employees work in. You can only choose one location attribute.
+1. On the Location page, select the Microsoft Entra attribute that defines the location your frontline employees work in. You can only choose one location attribute.
 
     :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot of where to enter your Microsoft Entra attribute for frontline locations." lightbox="media/dtas-location-attribute.png":::
 
-1. Define your team structure by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
+1. On the Team settings page, define your team structure by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
 
     :::image type="content" source="media/dtas-prefix.png" alt-text="Screenshot of the prefix, team template, and team owner account fields." lightbox="media/dtas-prefix.png":::
 
@@ -87,12 +89,17 @@ When evaluating the right solution for your organization, we recommend you do th
     1. Select **Users**, and then choose your user.
     1. Copy the user's object ID.
 
-1. Select the attributes that represent departments and job titles in your organization.
+1. On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
-1. Review the settings, and then choose **Finish setup.**
+    These attributes map departments and job titles in your organization, which allows you to deliver targeted communications features, such as automatic tags, to your frontline. Your frontline workers can quickly and easily reach the right group of people through tags that are automatically created based on these attributes. [Learn more about attribute mapping for targeted communications]().
 
-    >[!NOTE]
-    >Setup can take several hours to run. You can refresh the **Manage frontline teams** page to get the latest status of your setup.
+    > [!NOTE]
+    > This step is optional. If you choose to not map frontline attributes, leave the values as **None**. You can always come back and map them later.
+
+1. Review your settings, and then choose **Finish setup.**
+
+    > [!NOTE]
+    > Setup can take several hours to run. Refresh the Manage frontline teams page to get the latest status.
 
     :::image type="content" source="media/dtas-setup-submitted.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup was submitted." lightbox="media/dtas-setup-submitted.png":::
 
@@ -168,7 +175,7 @@ It can take time for channels to propagate in Teams. The General channel is crea
 
 You can delete a team by using the [Teams client](https://support.microsoft.com/office/delete-a-team-in-microsoft-teams-c386f91b-f7e6-400b-aac7-8025f74f8b41), [Teams admin center](/microsoftteams/archive-or-delete-a-team), [PowerShell](/powershell/module/teams/remove-team), or [Graph](/graph/api/group-delete).
 
-Keep in mind that it can take up to 24 hours for a team and the Microsoft 365 group that's associated with the team to be fully deleted.
+Keep in mind that it can take up to 24 hours for a team and the Microsoft 365 group associated with the team to be fully deleted.
 
 If you need to redeploy a frontline location team that was deleted, follow these steps:
 
