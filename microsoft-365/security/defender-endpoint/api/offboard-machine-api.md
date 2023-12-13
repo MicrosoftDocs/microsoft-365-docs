@@ -48,8 +48,8 @@ Offboard device from Defender for Endpoint.
   [!include[Machine actions note](../../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> This API is supported on Windows 11, Windows 10, version 1703 and later; on Windows Server 2019 and later; and on Windows Server 2012 R2 and Windows Server 2016 when using the [new, unified agent for Defender for Endpoint](../update-agent-mma-windows.md#upgrade-to-the-new-unified-agent-for-defender-for-endpoint).
-> This API is not supported on macOS or Linux devices.
+> This API is supported on Windows 11, Windows 10, version 1703 and later; on Windows Server 2019 and later; and on Windows Server 2012 R2 and Windows Server 2016 when using the [new, unified agent for Defender for Endpoint](../update-agent-mma-windows.md#upgrade-to-the-new-unified-agent-for-defender-for-endpoint).<br>
+> This API is not supported on macOS or Linux devices.<br>
 > Note that running the offboarding API only stops the sensor service from running, but it does not remove the onboarding information from the registry like an offboarding script does.
 
 ## Permissions
