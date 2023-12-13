@@ -22,7 +22,7 @@ search.appverid: met150
 
 # Microsoft Defender for Cloud Apps in Defender for Endpoint overview
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

@@ -19,7 +19,7 @@ search.appverid: met150
 
 # Create custom roles with Microsoft Defender XDR Unified RBAC
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -111,4 +111,4 @@ To access and manage roles and permissions, without being a Global Administrator
 
 - [Import existing RBAC roles](import-rbac-roles.md)
 - [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

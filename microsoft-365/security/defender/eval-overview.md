@@ -114,8 +114,8 @@ In this illustration:
 
 Additional optional architecture components not included in this illustration:
 
-- **Detailed signal data from all Microsoft 365 Defender components can be integrated into Microsoft Sentinel** and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.
-- **For more reading on using Microsoft Sentinel, an Azure SIEM, with Microsoft 365 Defender** as an XDR, take a look at this [Overview article](/azure/sentinel/microsoft-365-defender-sentinel-integration) and the Microsoft Sentinel and Microsoft Defender XDR [integration steps](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
+- **Detailed signal data from all Microsoft Defender XDR components can be integrated into Microsoft Sentinel** and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.
+- **For more reading on using Microsoft Sentinel, an Azure SIEM, with Microsoft Defender XDR** as an XDR, take a look at this [Overview article](/azure/sentinel/microsoft-365-defender-sentinel-integration) and the Microsoft Sentinel and Microsoft Defender XDR [integration steps](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
 - For more on SOAR in Microsoft Sentinel (including links to playbooks in the Microsoft Sentinel GitHub Repository), please read [this article](/azure/sentinel/automate-responses-with-playbooks).
 
 <a name='the-evaluation-process-for-microsoft-365-defender-cyber-security'></a>
@@ -143,4 +143,4 @@ This order is commonly recommended and designed to leverage the value of the cap
 ## Go to the Next Step
 
 [Learn about and/or create the Microsoft Defender XDR Evaluation Environment](eval-create-eval-environment.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
