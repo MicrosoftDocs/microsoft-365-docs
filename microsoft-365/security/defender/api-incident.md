@@ -40,7 +40,7 @@ ms.date: 02/08/2023
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-An [incident](incidents-overview.md) is a collection of related alerts that help describe an attack. Events from different entities in your organization are automatically aggregated by Microsoft Defender XDR. You can use the incidents API to programatically access your organization's incidents and related alerts.
+An [incident](incidents-overview.md) is a collection of related alerts that help describe an attack. Events from different entities in your organization are automatically aggregated by Microsoft Defender XDR. You can use the incidents API to programmatically access your organization's incidents and related alerts.
 
 ## Quotas and resource allocation
 
