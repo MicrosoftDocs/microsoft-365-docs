@@ -550,7 +550,7 @@
           href: device-control-policies-entries.md
         - name: Deploy RSAC policies
           href: device-control-deploy-rsac.md
-        - name: Removable Storage Protection
+        - name: Removable storage protection
           href: device-control-removable-storage-protection.md
         - name: Removable Storage Access Control
           items:
@@ -564,18 +564,18 @@
             href: device-control-removable-storage-access-control-faq.md
         - name: Device Installation
           href: mde-device-control-device-installation.md
-        - name: Device Control Printer Protection
+        - name: Device control printer protection
           href: printer-protection.md
           items:
-          - name: Printer Protection Overview
+          - name: Printer protection overview
             href: printer-protection-overview.md
           - name: Deploy and manage using group policy
             href: deploy-and-manage-using-group-policy.md
           - name: Deploy and manage using Intune
             href: deploy-and-manage-using-intune.md
-          - name: Printer Protection frequently asked questions
+          - name: Printer protection frequently asked questions
             href: printer-protection-frequently-asked-questions.md
-        - name: Device Control Reports
+        - name: Device control reports
           href: device-control-report.md
       - name: Exploit protection
         items:
