@@ -62,6 +62,10 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
+### Example 2: Removable storage file event
+
+When a RemovableStorageFileEvent action occurs, information about the evidence file is available for both printer protection and removable storage. Here’s an example query you can use with advanced hunting:
+
 ```kusto
 //information of the evidence file
 DeviceEvents
@@ -89,7 +93,6 @@ DeviceEvents
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business)
-
 
 With the device control report, you can view events that relate to media usage. Such events include:
 
