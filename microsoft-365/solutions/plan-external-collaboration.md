@@ -1,5 +1,5 @@
 ---
-title: "Plan external collaboration with channel conversations, file collaboration, and shared apps"
+title: Plan external collaboration with channel conversations, file collaboration, and shared apps
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -63,7 +63,7 @@ Guests in a team have similar capabilities to regular team members.
 
 External participants access shared resources in your organization by using their own Microsoft Entra ID or Microsoft 365 identity. This is enabled by Microsoft Entra B2B direct connect through an organizational relationship configured by both organizations. Guest accounts aren't used in this relationship.
 
-The primary advantage of external participants in shared channels versus guest sharing is that people outside your organization can collaborate with your users in Teams without having to change their user context. When using guest accounts, users must sign out of Teams with their work or school account and sign in again using the guest account. Alternatively, they can have a separate copy of Teams running in a private browser session. This switching between organizations takes time and can cause users to miss important communications while signed out of a given organization.
+The primary advantage of external participants in shared channels versus guest sharing is that people outside your organization can collaborate with your users in Teams without having to change their user context. When using guest accounts, users must add those accounts separately in Teams and switch to those accounts in order to interact with people in your organization.
 
 With shared channels, users can remain signed in to their organization and access channels shared with them from other organizations. Shared channels from other organizations are available in Teams alongside the teams and channels in your organization. There's no need to switch organizations.
 
@@ -84,8 +84,6 @@ The following table describes the experiences available depending on the type of
 ## Planning considerations
 
 Most organizations will use both guest sharing and shared channels with external participants.
-
-Guest sharing is enabled by default in Microsoft Entra ID and in Microsoft 365 (Teams, Microsoft 365 Groups, and SharePoint). This allows users to invite guests to teams and sites and to share files with them without having to request assistance from IT.
 
 You must use guest sharing if:
 
