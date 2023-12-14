@@ -141,7 +141,7 @@ Note that if you add private or shared channels to the team, each creates a new 
 
 ### Site sharing settings
 
-To help ensure that the SharePoint site does not get shared with people who are not members of the team, we limit such sharing to owners. This is only necessary for the SharePoint site that was created with the team. Additional sites created as part of private or shared channels can't be shared outside the team or channel.
+To help ensure that the SharePoint site doesn't get shared with people who aren't members of the team, we limit such sharing to owners. This is only necessary for the SharePoint site that was created with the team. Additional sites created as part of private or shared channels can't be shared outside the team or channel.
 
 You need to be a team owner to do this task.
 

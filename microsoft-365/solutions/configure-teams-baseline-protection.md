@@ -46,7 +46,7 @@ We also recommend turning on basic Defender for Office 365 features to guard aga
 
 In each of the tiers, we have the option of [sharing with people outside your organization](collaborate-with-people-outside-your-organization.md). For the sensitive and highly sensitive tiers, we have the option to turn guest sharing off at the team level by using sensitivity labels. But the organization-level guest sharing setting must be turned on for guest sharing to work at all in Teams.
 
-Guest sharing is turned on by default for commercial organizations. However if you have previously changed any of the guest sharing settings for your organization, we recommend that you review [Collaborate with guests in a team](collaborate-as-team.md) to ensure that guest sharing will be available in Teams.
+Guest sharing is turned on by default for commercial organizations. However if you have previously changed any of the guest sharing settings for your organization, we recommend that you review [Collaborate with guests in a team](collaborate-as-team.md) to ensure that guest sharing is available in Teams.
 
 ## Site and file sharing
 

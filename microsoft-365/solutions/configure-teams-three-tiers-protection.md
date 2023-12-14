@@ -68,7 +68,7 @@ Teams for sensitive and highly sensitive protection are private teams in which s
 
 The sensitive and highly sensitive tiers use sensitivity labels to help secure the team and its files. To implement these tiers, you must enable [sensitivity labels to protect content in Microsoft Teams, Microsoft 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-While the baseline tier does not require sensitivity labels, consider creating a "general" label and then requiring that all teams be labeled. This will help ensure that users make a conscious choice about sensitivity when they create a team. If you plan to deploy the sensitive or highly sensitive tiers, we do recommend creating a "general" label that you can use for baseline teams and for files that are not sensitive. For the highly sensitive tier, we'll also specify a default sensitivity label for document libraries so that Office files and other compatible files will have that label automatically applied when they're uploaded.
+While the baseline tier doesn't require sensitivity labels, consider creating a "general" label and then requiring that all teams be labeled. This helps ensure that users make a conscious choice about sensitivity when they create a team. If you plan to deploy the sensitive or highly sensitive tiers, we do recommend creating a "general" label that you can use for baseline teams and for files that aren't sensitive. For the highly sensitive tier, we'll also specify a default sensitivity label for document libraries so that Office files and other compatible files will have that label automatically applied when they're uploaded.
 
 If you're new to using sensitivity labels, we recommend reading [Get started with sensitivity labels](../compliance/get-started-with-sensitivity-labels.md) to get started.
 
@@ -83,11 +83,11 @@ The resulting permissions allow:
 - Team owners to administer the site and have full control over the site contents.
 - Team members to create and edit files on the site.
 
-By default, team owners and members can share the site itself with people outside the team without actually adding them to the team. We recommend against this as it complicates user management and can lead to people who are not team members having access to team files without team owners realizing it. To help prevent this, starting in the baseline level of protection, we recommend that only owners be allowed to share the site directly.
+By default, team owners and members can share the site itself with people outside the team without actually adding them to the team. We recommend against this as it complicates user management and can lead to people who aren't team members having access to team files without team owners realizing it. To help prevent this, starting in the baseline level of protection, we recommend that only owners be allowed to share the site directly.
 
-While teams do not have a read-only permission option, the SharePoint site does. If you have stakeholders or partner groups who need to be able to view team files but not edit them, consider adding them directly to the SharePoint site with View permissions.
+While teams don't have a read-only permission option, the SharePoint site does. If you have stakeholders or partner groups who need to be able to view team files but not edit them, consider adding them directly to the SharePoint site with View permissions.
 
-For the highly sensitive tier, we restrict access to the site to members of the team only. This restriction will also prevent sharing files with people outside the team.
+For the highly sensitive tier, we restrict access to the site to members of the team only. This restriction also prevents sharing files with people outside the team.
 
 ## Sharing files and folders
 
@@ -106,7 +106,7 @@ If you plan to use guest sharing, we recommend configuring [SharePoint and OneDr
 
 You can prevent Teams guest sharing if needed in the sensitive and highly sensitive tiers by using a sensitivity label. Shared channels are on by default, but require setting up cross-organizational relationships for each organization you want to collaborate with. See [Collaborate with external participants in a channel](collaborate-teams-direct-connect.md) for details.
 
-In the highly sensitive tier, we configure the default library sensitivity label to encrypt files to which it is applied. If you need guests to have access to these files, you must give them permissions when you create the label. External participants in shared channels can't be given permissions to sensitivity labels and can't access content encrypted by a sensitivity label.
+In the highly sensitive tier, we configure the default library sensitivity label to encrypt files to which it's applied. If you need guests to have access to these files, you must give them permissions when you create the label. External participants in shared channels can't be given permissions to sensitivity labels and can't access content encrypted by a sensitivity label.
 
 We highly recommend that you leave guest sharing on for the baseline tier and for the sensitive or highly sensitive tiers if you need to collaborate with people outside your organization. The guest sharing features in Microsoft 365 provide a much more secure and governable sharing experience than sending files as attachments in email messages. It also reduces the risk of shadow IT where users use ungoverned consumer products to share with legitimate external collaborators.
 

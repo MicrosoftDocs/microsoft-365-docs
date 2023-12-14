@@ -33,7 +33,7 @@ When using Microsoft Entra B2B direct connect - such as with shared channels in 
 
 ## Planning considerations for conditional access
 
-Multifactor authentication can be used with any external account. If your organization doesn't trust multifactor authentication from other Microsoft Entra organizations, users from those organizations will have to perform multifactor authentication when accessing resources in your organization. People with email addresses not hosted by Microsoft will always be prompted for multifactor authentication.
+Multifactor authentication can be used with any external account. If your organization doesn't trust multifactor authentication from other Microsoft Entra organizations, users from those organizations must perform multifactor authentication when accessing resources in your organization. People with email addresses not hosted by Microsoft are always prompted for multifactor authentication.
 
 The options **Trust compliant devices** and **Trust Microsoft Entra hybrid joined device** require devices that are managed in Microsoft Entra ID. If you choose to enable these options, people outside your organization must be using devices that are managed by your organization or by an organization that you trust. People without managed devices will be blocked, including:
 
@@ -41,7 +41,7 @@ The options **Trust compliant devices** and **Trust Microsoft Entra hybrid joine
 - People from Microsoft 365 or Microsoft Entra organizations that don't manage devices
 - People from Microsoft 365 or Microsoft Entra organizations that require managed devices where your organization doesn't trust their conditional access settings.
 
-We recommend using caution when requiring compliant or Microsoft Entra hybrid joined devices because this will block many external collaboration scenarios. Be sure all of your partner organizations manage their devices and that your organization trusts their settings.
+We recommend using caution when requiring compliant or Microsoft Entra hybrid joined devices because this blocks many external collaboration scenarios. Be sure all of your partner organizations manage their devices and that your organization trusts their settings.
 
 ## Set up conditional access requirements for people outside your organization
 

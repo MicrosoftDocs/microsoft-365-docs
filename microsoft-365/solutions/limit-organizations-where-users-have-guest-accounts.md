@@ -62,7 +62,7 @@ At this point, all access settings for this organization are inherited from your
 
 ## Configure the organization's outbound setting to allow all users
 
-Once you have added the organization, you need to update the organization's outbound settings to allow B2B collaboration users to be added as guests. Do this for each organization where you want to allow your users to be added as guests.
+Once you've added the organization, you need to update the organization's outbound settings to allow B2B collaboration users to be added as guests. Do this for each organization where you want to allow your users to be added as guests.
 
 To allow users to B2B collaboration guests in an organization
 1. In the [Microsoft Entra admin center](https://entra.microsoft.com), under **External Identities**, select **Cross-tenant access settings**.

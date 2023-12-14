@@ -33,9 +33,9 @@ This guidance includes components to help you:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
-If versatile and easy-to-use file collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing files too difficult, they could revert to using consumer products that are not governed by IT. This can pose an even greater risk.
+If versatile and easy-to-use file collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing files too difficult, they could revert to using consumer products that aren't governed by IT. This can pose an even greater risk.
 
-With Microsoft 365, you can deploy Teams with a variety of configurations that help:
+With Microsoft 365, you can deploy Teams with various configurations that help:
 
 - Protect your intellectual property
 - Enable easy collaboration with documents and other files
@@ -97,7 +97,7 @@ Configuring these tiers involves:
 - Configuring settings in Teams for guest access and private and shared channels
 - Configuring settings in a team's associated SharePoint site for internal and guest sharing, site access, and sharing links
 - For the *sensitive* and *highly sensitive* tiers, configuring sensitivity labels to classify the teams, and control guest sharing and access from unmanaged devices
-- For the *highly sensitive* tier, configuring a sensitivity label to encrypt the documents to which it is applied
+- For the *highly sensitive* tier, configuring a sensitivity label to encrypt the documents to which it's applied
 
 Start with the baseline tier, and then add teams that use the *sensitive* and *highly sensitive* tiers as needed to help protect the information in your organization. See these resources to get started:
 
@@ -109,14 +109,14 @@ Start with the baseline tier, and then add teams that use the *sensitive* and *h
 
 You may need to [share information of any sensitivity with people outside your organization](collaborate-with-people-outside-your-organization.md). This could range from sharing a single document with a single person to collaborating on a major project with a large partner organization or freelancers from around the world. In Microsoft 365, this range of external sharing can be done easily and with the appropriate safeguards to help protect your sensitive information.
 
-These resources will help you get started with setting up your environment for collaborating with people outside your organization:
+Read these articles to help you get started with setting up your environment for collaborating with people outside your organization:
 
 - [Collaborate on documents](collaborate-on-documents.md) for sharing individual files of folders.
 - [Collaborate in a site](collaborate-in-site.md) for collaborating with guests in a SharePoint site.
 - [Collaborate as a team](collaborate-as-team.md) for collaborating with guests in a team.
 - [Collaborate with external participants in a channel](/microsoft-365/solutions/collaborate-teams-direct-connect) for collaborating with people outside the organization in a shared channel.
 
-Depending on the sensitivity of the information being shared, you can add safeguards to help prevent oversharing. These resources will help you set up the protections that you need for your organization:
+Depending on the sensitivity of the information being shared, you can add safeguards to help prevent oversharing. Read these articles to help you set up the protections that you need for your organization:
 
 - [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)
 - [Limit accidental exposure to files when sharing with people outside your organization](share-limit-accidental-exposure.md)
@@ -151,7 +151,7 @@ These training modules can help your users use Teams, groups, and SharePoint for
 
 ## Illustrations
 
-These illustrations will help you understand how groups and teams interact with other services in Microsoft 365 and what governance and compliance features are available to help you manage these services in your organization.
+These illustrations show how groups and teams interact with other services in Microsoft 365 and what governance and compliance features are available to help you manage these services in your organization.
 
 ### Groups in Microsoft 365 for IT Architects
 

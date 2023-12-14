@@ -30,9 +30,9 @@ description: "Learn about the options to limit or disable sharing in Microsoft 3
 
 # Limit sharing in Microsoft 365
 
-While you can't disable internal sharing entirely or remove the Share button from sites, there are a variety of ways that you can limit sharing in Microsoft 365 to meet the needs of your organization.
+While you can't disable internal sharing entirely or remove the Share button from sites, there are various ways that you can limit sharing in Microsoft 365 to meet the needs of your organization.
 
-The methods of sharing files are listed in the table below. Select the link in the **Sharing method** column for detailed information.
+The methods of sharing files are listed in the following table. Select the link in the **Sharing method** column for detailed information.
 
 |Sharing method|Description|Limiting options|
 |:-------------|:----------|:-------------|
@@ -80,7 +80,7 @@ To turn off guest sharing in Microsoft 365 Groups
 
 ### Limit guest sharing to specified domains
 
-You can limit guest sharing to users from specific domains by allowing or blocking domains in Microsoft Entra ID. This will also affect guest sharing in SharePoint if you have enabled [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
+You can limit guest sharing to users from specific domains by allowing or blocking domains in Microsoft Entra ID. This also affects guest sharing in SharePoint if you have enabled [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 To allow sharing invitations only from specified domains
 1. In the [Microsoft Entra admin center](http://entra.microsoft.com), expand **External identities**, and then choose **External collaboration settings**.
@@ -107,7 +107,7 @@ To limit site sharing to owners
 
     ![Screenshot of sharing permissions settings in a SharePoint site.](../media/sharepoint-site-sharing-permissions-level-two.png)
 
-You can prevent users who are not members of the site from requesting access by turning off access requests.
+You can prevent users who aren't members of the site from requesting access by turning off access requests.
 
 To turn off access requests
 1. In the site, select the gear icon, and then select **Site permissions**.
@@ -141,7 +141,7 @@ While not recommended, you can use [SharePoint permissions inheritance](/sharepo
 
 ## Sharing with specific people
 
-if you want to limit the sharing of a site or its contents, you can configure the site to only allow site owners to share files, folders, and the site. When this is configured, site members' attempts to share files or folders by using *Specific people* links will go to the site owner for approval.
+if you want to limit the sharing of a site or its contents, you can configure the site to only allow site owners to share files, folders, and the site. When this is configured, site members' attempts to share files or folders by using *Specific people* links go to the site owner for approval.
 
 To limit site, file, and folder sharing to owners
 1. In the site, select the gear icon, and then select **Site permissions**.
@@ -214,7 +214,7 @@ For example:
 Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks Disabled
 ```
 
-Note that if you disable *People in your organization* links, people sharing files in the site may need to use *Specific people* links which can be shared with a maximum of 50 people.
+Note that if you disable *People in your organization* links, people sharing files in the site may need to use *Specific people* links, which can be shared with a maximum of 50 people.
 
 ## Create sites, groups, and teams
 

@@ -34,9 +34,9 @@ If people in your organization need to do unauthenticated sharing, but you're co
 
 We recommend leaving *Anyone* links enabled for appropriate content because it's the easiest way to share and can help reduce the risk of users seeking other solutions that are outside the control of your IT department. *Anyone* links can be forwarded to others, but file access is only available to those who have the link.
 
-If you always want people outside your organization to authenticate when accessing content in SharePoint, Groups, or Teams, you can turn off *Anyone* sharing. This will prevent users from unauthenticated sharing of content.
+If you always want people outside your organization to authenticate when accessing content in SharePoint, Groups, or Teams, you can turn off *Anyone* sharing. This prevents users from unauthenticated sharing of content.
 
-If you disable *Anyone* links, users can still easily share with guests using *Specific people* links. In this case, all people outside your organization will be required to authenticate before they can access the shared content.
+If you disable *Anyone* links, users can still easily share with guests using *Specific people* links. In this case, all people outside your organization are required to authenticate before they can access the shared content.
 
 Depending on your needs, you can disable *Anyone* links for specific sites, or for your whole organization.
 
@@ -62,15 +62,15 @@ To turn off *Anyone* links for a site
 
 ## Domain filtering
 
-You can use domain allow or deny lists to specify which domains your users can use when sharing with people outside your organization.
+You can use domain allow or denylists to specify which domains your users can use when sharing with people outside your organization.
 
-With an allow list, you can specify a list of domains where users in your organization can share with people outside your organization. Sharing with other domains is blocked. If your organization only collaborates with people from a list of specific domains, you can use this feature to prevent sharing with other domains.
+With an allowlist, you can specify a list of domains where users in your organization can share with people outside your organization. Sharing with other domains is blocked. If your organization only collaborates with people from a list of specific domains, you can use this feature to prevent sharing with other domains.
 
-With a deny list, you can specify a list of domains to which users in your organization cannot share with people outside your organization. Sharing with the listed domains is blocked. This can be useful if you have competitors, for example, who you want to prevent from accessing content in your organization.
+With a denylist, you can specify a list of domains to which users in your organization can't share with people outside your organization. Sharing with the listed domains is blocked. This can be useful if you have competitors, for example, who you want to prevent from accessing content in your organization.
 
-The allow and deny lists only affect sharing with guests. Users can still share with people from prohibited domains by using *Anyone* links if you haven't disabled them. For best results with domain allow and deny lists, consider disabling *Anyone* links as described above.
+The allow and denylists only affect sharing with guests. Users can still share with people from prohibited domains by using *Anyone* links if you haven't disabled them. For best results with domain allow and denylists, consider disabling *Anyone* links as described above.
 
-To set up a domain allow or deny list
+To set up a domain allow or denylist
 
 1. In the SharePoint admin center, under **Policies**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>
 1. Under **More external sharing settings**, select the **Limit external sharing by domain** check box.
