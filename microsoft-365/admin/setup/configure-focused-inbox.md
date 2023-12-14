@@ -115,16 +115,9 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
-2. Navigate to **mail flow** \> **Rules**. Select ![EAC Add icon.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) and then select **Create a new rule...**. 
+2. Navigate to **Mail flow** \> **Rules**. Select **Add a rule** and then select **Create a new rule...**.
 
 3. After you're done creating the new rule, select **Save** to start the rule.
-
-    The following image shows an example where all messages From "Payroll Department" are to be delivered to the Focused Inbox.
-
-    ![focusedinbox payroll.](../../media/focusedinbox-transport-rule.PNG)
-
-    > [!NOTE]
-    > The message header value text in this example is, **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
 ## Use PowerShell to create a transport rule to direct email messages to the Focused view for all your users
 
