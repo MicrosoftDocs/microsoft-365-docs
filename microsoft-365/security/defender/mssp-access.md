@@ -23,7 +23,7 @@ ms.date: 02/16/2021
 
 # Provide managed security service provider (MSSP) access 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
@@ -127,4 +127,4 @@ To implement a multi-tenant delegated access solution, take the following steps:
      At this point, analyst access has been provisioned, and each analyst should be able to access the customer's Microsoft Defender portal:
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` with the permissions and roles they were assigned.
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

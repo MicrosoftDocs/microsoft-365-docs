@@ -39,9 +39,9 @@ Combined with always-on, real-time protection, which reviews files when they are
 > [!IMPORTANT]
 > Microsoft Defender Antivirus runs in the context of the [LocalSystem](/windows/win32/services/localsystem-account) account when performing a local scan. For network scans, it uses the context of the device account. If the domain device account doesn't have appropriate permissions to access the share, the scan won't work. Ensure that the device has permissions to access the network share.
 
-## Use Microsoft 365 Defender portal to run a scan
+## Use Microsoft Defender portal to run a scan
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com/)) and sign-in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com/)) and sign-in.
 2. Go to the **device page** that you would like to run a remote scan.
 3. Click on the ellipses **(…)**.
 4. Click on **Run Antivirus Scan**.

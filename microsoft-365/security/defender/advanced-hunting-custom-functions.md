@@ -1,7 +1,7 @@
 ---
 title: Custom functions in the advanced hunting schema
 description: Learn about writing your own custom functions for hunting 
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, functions
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, functions
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -25,7 +25,7 @@ ms.date: 05/16/2023
 
 # Use custom functions
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -100,4 +100,4 @@ If the function code is already loaded to the editor, you can also select **Save
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Get more query examples](advanced-hunting-shared-queries.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

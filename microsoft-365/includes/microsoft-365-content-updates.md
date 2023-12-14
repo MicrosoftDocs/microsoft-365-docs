@@ -1,6 +1,4 @@
 <!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
-
-
 
 ## Week of December 04, 2023
 
@@ -533,4 +531,3 @@
 | 11/10/2023 | [Key infrastructure requirements before enrolling in the Microsoft Defender Experts for Hunting service](/microsoft-365/security/defender/before-you-begin-defender-experts?view=o365-worldwide) | modified |
 | 11/10/2023 | [Before you begin using Defender Experts for XDR](/microsoft-365/security/defender/before-you-begin-xdr?view=o365-worldwide) | modified |
 | 11/10/2023 | [Microsoft Defender for Office 365 email entity page](/microsoft-365/security/office-365-security/mdo-email-entity-page?view=o365-worldwide) | modified |
-| 11/10/2023 | [Deploy frontline dynamic teams at scale](/microsoft-365/frontline/deploy-dynamic-teams-at-scale?view=o365-worldwide) | modified |

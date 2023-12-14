@@ -127,7 +127,7 @@ This quick-reference helps you understand what capabilities come with each Defen
 - Defender for Office 365 Plan 1 and Defender for Office 365 Plan 2 are each available as an add-on for certain subscriptions. To learn more, see [Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 - [Safe Documents](safe-documents-in-e5-plus-security-about.md) is available to users with the Microsoft 365 A5 or Microsoft 365 E5 Security licenses (not included in Defender for Office 365 plans).
 - If your current subscription doesn't include Defender for Office 365 Plan 2, you can [try Defender for Office 365](try-microsoft-defender-for-office-365.md) free for 90 days. Or, [contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
-- Defender for Office 365 P2 customers have access to **Microsoft 365 Defender integration** to efficiently detect, review, and respond to incidents and alerts.
+- Defender for Office 365 P2 customers have access to **Microsoft Defender XDR integration** to efficiently detect, review, and respond to incidents and alerts.
 
 > [!TIP]
 > ***Insider tip***. You can use the Microsoft Learn table of contents to learn about EOP and Defender for Office 365. Navigate back to this page, [Microsoft 365 Security overview](index.yml), and you'll notice that table of contents organization in the side-bar. It begins with Deployment (including migration) and then continues into prevention, detection, investigation, and response.

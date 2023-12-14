@@ -23,7 +23,7 @@ ms.date: 02/16/2021
 
 # Track your Microsoft Secure Score history and meet goals
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 [Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft Defender portal](microsoft-365-defender-portal.md).
 
@@ -81,4 +81,4 @@ If you have any issues, let us know by posting in the [Security, Privacy & Compl
 - [Assess your security posture](microsoft-secure-score-improvement-actions.md)
 - [What's coming](microsoft-secure-score-whats-coming.md)
 - [What's new](microsoft-secure-score-whats-new.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

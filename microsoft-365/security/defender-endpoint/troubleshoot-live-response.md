@@ -23,7 +23,7 @@ ms.date: 12/18/2020
 
 # Troubleshoot Microsoft Defender for Endpoint live response issues
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -45,11 +45,11 @@ If while trying to take an action during a live response session, you encounter 
     $action=Copy-Item $copied_file_path -Destination $env:TEMP -PassThru -ErrorAction silentlyContinue
 
     if ($action){
-         Write-Host "You copied the file specified in $copied_file_path to $env:TEMP Succesfully"
+         Write-Host "You copied the file specified in $copied_file_path to $env:TEMP Successfully"
     }
 
     else{
-        Write-Output "Error occoured while trying to copy a file, details:"
+        Write-Output "Error occurred while trying to copy a file, details:"
         Write-Output  $error[0].exception.message
 
     }

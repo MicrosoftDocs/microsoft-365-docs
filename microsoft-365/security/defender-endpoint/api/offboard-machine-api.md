@@ -3,9 +3,6 @@ title: Offboard machine API
 description: Learn how to use an API to offboard a device from Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, collect investigation package
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -19,12 +16,12 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 12/13/2023
 ---
 
 # Offboard machine API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -48,8 +45,9 @@ Offboard device from Defender for Endpoint.
   [!include[Machine actions note](../../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> This API is supported on Windows 11, Windows 10, version 1703 and later; on Windows Server 2019 and later; and on Windows Server 2012 R2 and Windows Server 2016 when using the [new, unified agent for Defender for Endpoint](../update-agent-mma-windows.md#upgrade-to-the-new-unified-agent-for-defender-for-endpoint).
-> This API is not supported on macOS or Linux devices.
+> - This API is supported on Windows 11, Windows 10, version 1703 and later; on Windows Server 2019 and later; and on Windows Server 2012 R2 and Windows Server 2016 when using the [new, unified agent for Defender for Endpoint](../update-agent-mma-windows.md#upgrade-to-the-new-unified-agent-for-defender-for-endpoint).
+> - This API is not supported on macOS or Linux devices.
+> - Running the offboarding API only stops the sensor service from running, but it does not remove the onboarding information from the registry like an offboarding script does.
 
 ## Permissions
 
