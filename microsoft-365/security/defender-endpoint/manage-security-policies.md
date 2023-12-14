@@ -12,7 +12,7 @@ ms.collection:
 - tier2
 ms.topic: how-to
 search.appverid: met150
-ms.date: 09/14/2023
+ms.date: 12/14/2023
 ---
 
 # Manage endpoint security policies in Microsoft Defender for Endpoint
@@ -24,10 +24,6 @@ ms.date: 09/14/2023
 - [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-
->[!NOTE]
->The following capability is only available to customers who turn on preview features. For more information, see [Turn on preview features](preview.md#turn-on-preview-features). 
 
 
 Use security policies to manage security settings on devices. As a security administrator, you can configure security policy settings in Microsoft Defender XDR. 
