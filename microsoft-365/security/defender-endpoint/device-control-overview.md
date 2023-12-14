@@ -62,3 +62,17 @@ Device control organizes supported devices into types by their `primary_id`. On 
 | USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` |
 | Windows Portable Devices | `WpdDevices` |  |
 
+## Use cases
+
+This section lists scenarios and use cases for device control. Select a tab, review the scenarios, and then identify the type of device control policy to create.
+
+## [**Removable storage**](#tab/Removable)
+
+| Scenario | Device control policy |
+|---|---|
+|  |
+
+## [**Printers**](#tab/Printers)
+
+
+## [**Bluetooth**](#tab/Bluetooth)
