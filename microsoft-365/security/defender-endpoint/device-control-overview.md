@@ -4,7 +4,7 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 12/13/2023
+ms.date: 12/14/2023
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -50,12 +50,12 @@ This article focuses on device control capabilities that are available in Defend
 
 ## Supported devices
 
-Device control organizes supported devices into types by their `primary_id`. On a Windows, based on the driver, some devices are marked as removable. For example, USB drives, Windows Portable Devices (WPD), CD/ROMs, Bluetooth devices, and printers are all removable. The following table lists examples of devices that device control supports with their `primary_id` values:
+Device control organizes supported devices into types by their `primary_id`. On a Windows device, based on the driver, some peripheral devices are marked as removable. For example, USB drives, Windows Portable Devices (WPD), CD/ROMs, Bluetooth devices, and printers are all removable. The following table lists examples of devices that device control supports with their `primary_id` values:
 
 | Device type | `PrimaryId` in Windows | `primary_id` in macOS | 
 |---|---|---|
 | Bluetooth devices |  | `bluetoothDevice` |
-| CD/ROMS, DVDs | `CdRomDevices` |  |
+| CD/ROMs, DVDs | `CdRomDevices` |  |
 | iOS devices |  | `appleDevice` |
 | Portable devices (such as cameras) |   | `portableDevice` |
 | Printers | `PrinterDevices` |  |
