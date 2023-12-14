@@ -50,7 +50,7 @@ This article focuses on device control capabilities that are available in Defend
 
 ## Supported devices
 
-Device control organizes supported devices into types by their `primary_id`. On a Windows device, based on the driver, some peripheral devices are marked as removable. For example, USB drives, Windows Portable Devices (WPD), CD/ROMs, Bluetooth devices, and printers are all removable. The following table lists examples of devices that device control supports with their `primary_id` values:
+Device control organizes supported devices into types by their `primary_id`. On a Windows device, based on the driver, some peripheral devices are marked as removable. For example, USB drives, Windows Portable Devices (WPD), CD/ROMs, Bluetooth devices, and printers are all considered to be removable devices. The following table lists examples of devices that device control supports with their `primary_id` values:
 
 | Device type | `PrimaryId` in Windows | `primary_id` in macOS | 
 |---|---|---|
@@ -70,9 +70,32 @@ This section lists scenarios and use cases for device control. Select a tab, rev
 
 | Scenario | Device control policy |
 |---|---|
-|  |
+| Prevent installation of a specific USB device | Device Installation |
+| Prevent installation of all USB devices while allowing an installation of only an authorized USB | Device Installation |
+| Prevent copying of sensitive files to USB | Endpoint DLP |
+| Block write access to removable data drives not protected by BitLocker | BitLocker |
+| Block write access to devices configured in another organization | BitLocker |
+| Prevent Write and Execute access to all but allow specific approved USBs | Removable Storage Access Control |
+| Audit Write and Execute access for all but block specific blocked USBs | Removable Storage Access Control |
+| Block read and execute access to specific file extension | Removable Storage Access Control |
+| Block people from access removable storage when the machine isn't connecting corporate network | Removable Storage Access Control |
 
 ## [**Printers**](#tab/Printers)
 
+| Scenario | Device control policy |
+|---|---|
+| Block people from printing via non-corporate printer | Device Control Printer Protection |
+| Only Allow specific USB printer(s) by VID/PID | Device Control Printer Protection |
+| Block printing of sensitive documents to any printer | Endpoint DLP |
+| Prevent installation of all printers | Device Installation |
+| Prevent installation of a specific printer | Device Installation |
+| Prevent installation of all printers while allowing a specific printer to be installed | Device Installation |
 
 ## [**Bluetooth**](#tab/Bluetooth)
+
+| Scenario | Device control policy |
+|---|---|
+| Block copying of sensitive document to any Bluetooth Device | Endpoint DLP |
+
+---
+
