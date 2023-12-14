@@ -87,7 +87,7 @@ The procedures in this section apply to [custom domains](/exchange/mail-flow-bes
 
 3. On the **DKIM** tab, select the domain to configure by clicking anywhere in the row other than the check box next to the name.
 
-   :::image type="content" source="../../media/email-auth-dkim-domain-list.png" alt-text="The DKIM tab of the Email authentication page in the Microsoft Defender portal." lightbox="../../media/email-auth-dkim-list.png":::
+   :::image type="content" source="../../media/email-auth-dkim-domain-list.png" alt-text="The DKIM tab of the Email authentication page in the Microsoft Defender portal." lightbox="../../media/email-auth-dkim-domain-list.png":::
 
 4. In the domain details flyout that opens, verify the following settings:
    - The **Sign messages for this domain with DKIM signatures** toggle is set to **Disabled** :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::.
@@ -95,7 +95,7 @@ The procedures in this section apply to [custom domains](/exchange/mail-flow-bes
    - **Create DKIM keys** isn't present. **Rotate DKIM keys** is visible, but is grayed out.
    - **Last checked date**: Note the date and time.
 
-   :::image type="content" source="../../media/email-auth-dkim-domain-properties-create-dkim unavailable.png" alt-text="The domain details tab with DKIM signing disable and no DKIM signatures configured for the domain." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim unavailable.png":::
+   :::image type="content" source="../../media/email-auth-dkim-domain-properties-create-dkim-unavailable.png" alt-text="The domain details tab with DKIM signing disable and no DKIM signatures configured for the domain." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim-unavailable.png":::
 
 5. Click on the **Sign messages for this domain with DKIM signatures** toggle.
 
@@ -150,7 +150,7 @@ The procedures in this section apply to [custom domains](/exchange/mail-flow-bes
 
 3. On the **DKIM** tab, select the domain to configure by clicking anywhere in the row other than the check box next to the name.
 
-   :::image type="content" source="../../media/email-auth-dkim-domain-list.png" alt-text="The DKIM tab of the Email authentication page in the Microsoft Defender portal." lightbox="../../media/email-auth-dkim-list.png":::
+   :::image type="content" source="../../media/email-auth-dkim-domain-list.png" alt-text="The DKIM tab of the Email authentication page in the Microsoft Defender portal." lightbox="../../media/email-auth-dkim-domain-list.png":::
 
    > [!TIP]
    > All [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the Microsoft 365 organization are available on the **DKIM** tab. If the domain isn't available, add the domain as an accepted domain as described in the article.
