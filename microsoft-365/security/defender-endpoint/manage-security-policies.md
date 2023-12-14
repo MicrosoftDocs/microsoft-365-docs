@@ -12,7 +12,7 @@ ms.collection:
 - tier2
 ms.topic: how-to
 search.appverid: met150
-ms.date: 09/14/2023
+ms.date: 12/14/2023
 ---
 
 # Manage endpoint security policies in Microsoft Defender for Endpoint
