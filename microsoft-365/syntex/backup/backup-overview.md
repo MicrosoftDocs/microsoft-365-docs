@@ -19,6 +19,9 @@ description: Learn about the backup and recovery capabilities for SharePoint, Ex
 
 # Overview of Microsoft 365 Backup (Preview)
 
+
+![Banner announcing worldwide availability of Microsoft 365 Backup.](../../media/content-understanding/backup-preview-banner.png)
+
 > [!NOTE]
 > This feature is currently in preview and subject to change and [limitations as defined](backup-limitations.md). Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
 
