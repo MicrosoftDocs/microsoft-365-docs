@@ -548,6 +548,8 @@
           href: device-control-overview.md
         - name: Device control policies and entries
           href: device-control-policies-entries.md
+        - name: Deploy RSAC policies
+          href: device-control-deploy-rsac.md
         - name: Removable Storage Protection
           href: device-control-removable-storage-protection.md
         - name: Removable Storage Access Control
