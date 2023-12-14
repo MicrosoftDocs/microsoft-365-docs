@@ -83,7 +83,7 @@ To turn off guest sharing in Microsoft 365 Groups
 You can limit guest sharing to users from specific domains by allowing or blocking domains in Microsoft Entra ID. This also affects guest sharing in SharePoint if you have enabled [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 To allow sharing invitations only from specified domains
-1. In the [Microsoft Entra admin center](http://entra.microsoft.com), expand **External identities**, and then choose **External collaboration settings**.
+1. In the [Microsoft Entra admin center](https://entra.microsoft.com), expand **External identities**, and then choose **External collaboration settings**.
 1. Under **Collaboration restrictions**, select **Deny invitations to the specified domains** or **Allow invitations only to the specified domains**, and then type the domains that you want to use.
 1. Select **Save**.
 
@@ -155,7 +155,7 @@ To limit site, file, and folder sharing to owners
 
 Admins can limit access to OneDrive overall to people in a security group or limit access to shared files and folders in a specific OneDrive to people in a security group.
 
-You can restrict access and sharing of OneDrive content throughout your organization to users in a security group. Even if other users outside of these security groups are licensed for OneDrive, they won’t have access to their own OneDrive or any shared OneDrive content when this policy is in effect. For more information, see [Restrict OneDrive access by security group](sharepoint/limit-access).
+You can restrict access and sharing of OneDrive content throughout your organization to users in a security group. Even if other users outside of these security groups are licensed for OneDrive, they won’t have access to their own OneDrive or any shared OneDrive content when this policy is in effect. For more information, see [Restrict OneDrive access by security group](/sharepoint/limit-access).
 
 You can restrict access to an individual user's OneDrive content to users in a security group by using a OneDrive access restriction policy. Users not in the specified group can't access the content, even if they had prior permissions or shared link. For more information, see [Restrict access to a user's OneDrive content to people in a group](/sharepoint/onedrive-site-access-restriction).
 

@@ -54,7 +54,7 @@ Note that Global Administrators can always invite guests regardless of this sett
 > Changes to cross-tenant access settings may take two hours to take effect.
 
 To configure Microsoft Entra ID to limit guest invites to the Guest inviter role
-1. In the [Microsoft Entra admin center](entra.microsoft.com), expand **External identities**, and then select **External collaboration settings**.
+1. In the [Microsoft Entra admin center](https://entra.microsoft.com), expand **External identities**, and then select **External collaboration settings**.
 1. Under **Guest invite settings**, choose **Only users assigned to specific admin roles can invite guests**.
 1. Select **Save**.
 
