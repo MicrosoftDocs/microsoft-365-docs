@@ -3,7 +3,7 @@ title: "Turn off directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 11/30/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -27,7 +27,7 @@ description: In this article, find information about using PowerShell to turn of
 ---
 
 # Turn off directory synchronization for Microsoft 365
-You can use PowerShell to turn off directory synchronization and convert your synchronized users to cloud-only. However, it is not recommended that you turn off directory synchronization as a troubleshooting step. If you need assistance with troubleshooting directory synchronization, see the [Fixing problems with directory synchronization for Microsoft 365](fix-problems-with-directory-synchronization.md) article. 
+You can use PowerShell to turn off directory synchronization and convert your synchronized users to cloud-only. However, it isn't recommended that you turn off directory synchronization as a troubleshooting step. If you need assistance with troubleshooting directory synchronization, see the [Fixing problems with directory synchronization for Microsoft 365](fix-problems-with-directory-synchronization.md) article. 
   
 [Contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) for business products if needed.
   

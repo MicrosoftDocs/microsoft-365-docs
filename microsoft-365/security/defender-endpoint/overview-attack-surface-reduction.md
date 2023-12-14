@@ -3,7 +3,7 @@ title: Understand and use attack surface reduction
 ms.reviewer: 
 description: Learn about the attack surface reduction capabilities of Microsoft Defender for Endpoint.
 keywords: asr, attack surface reduction, attack surface reduction rules, Microsoft Defender for Endpoint, microsoft defender, antivirus, av, windows defender
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: asr
 ms.collection: 
 - m365-security
 - tier2
@@ -25,7 +25,7 @@ search.appverid: met150
 
 # Understand and use attack surface reduction capabilities
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

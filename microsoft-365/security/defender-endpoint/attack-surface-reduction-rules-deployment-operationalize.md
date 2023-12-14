@@ -1,8 +1,8 @@
 ---
 title: Operationalize attack surface reduction rules
 description: Provides guidance to operationalize your attack surface reduction rules deployment.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.localizationpriority: medium
 audience: ITPro
 author: Dansimp

@@ -2,7 +2,7 @@
 title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.reviewer: kumasumit
@@ -15,13 +15,13 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -47,6 +47,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 - Updated default engine version to `1.1.23090.2008`, and default signatures version to `1.399.690.0`.
+- Updated libcurl library to version `8.4.0` to fix recently disclosed vulnerabilities with the older version.
+- Updated Openssl library to version `3.1.1` to fix recently disclosed vulnerabilities with the older version.
 - General stability and performance improvements.
 - Bug fixes.
 
@@ -310,7 +312,7 @@ sudo systemctl disable mdatp
 	- With this release we provided two options in mdatp diagnostic hot-event-sources:
         1. Files
         2. Executables
-	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users are now correctly reported to Microsoft 365 Defender
+	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users are now correctly reported to Microsoft Defender XDR
 	- Improved logging in Network Protection block and audit events for debugging
 - Other fixes and improvements
     - From this version, enforcementLevel are in passive mode by default giving admins more control over where they want 'RTP on' within their estate

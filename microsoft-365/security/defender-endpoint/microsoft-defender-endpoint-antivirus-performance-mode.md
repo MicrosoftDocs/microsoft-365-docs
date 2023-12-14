@@ -1,7 +1,7 @@
 ---
 title: Protect Dev Drive using performance mode
 description: Learn how to manage, configure, Microsoft Defender Antivirus performance mode for developers who use Dev Drive.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: high
 ms.topic: conceptual
 author: denisebmsft
@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.reviewer: pricci
 manager: dansimp
 ms.custom: nextgen02
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2

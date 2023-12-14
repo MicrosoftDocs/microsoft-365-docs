@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender portal
 description: Learn about the Microsoft Defender portal as the central location for protection, detection, investigation, and response to email, collaboration, identity, device, and app threats,.
-keywords: introduction to MMicrosoft 365 Defender, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+keywords: introduction to MMicrosoft Defender XDR, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -184,4 +184,4 @@ With this learning path from Microsoft Learn, you can understand Microsoft Defen
 - [Microsoft Defender for Office 365 in Microsoft Defender XDR](microsoft-365-security-center-mdo.md)
 - [Microsoft Defender for Endpoint in Microsoft Defender XDR](microsoft-365-security-center-mde.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

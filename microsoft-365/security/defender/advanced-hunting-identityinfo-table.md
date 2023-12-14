@@ -1,7 +1,7 @@
 ---
 title: IdentityInfo table in the advanced hunting schema
 description: Learn about user account information in the IdentityInfo table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AccountInfo, IdentityInfo, account
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AccountInfo, IdentityInfo, account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -25,7 +25,7 @@ ms.date: 02/16/2021
 
 # IdentityInfo
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -41,14 +41,14 @@ For information on other tables in the advanced hunting schema, [see the advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` [*](#mdi-only) | `datetime` | The date and time that the line was written to the database. <br><br>This is used when there are multiple lines for each identity, such as when a change is detected, or if 24 hours have passed since the last database line was added. |
-| `ReportId` | `string` | Unique identifier for the event |
+| `ReportId` [*](#mdi-only) | `string` | Unique identifier for the event |
 | `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `OnPremSid` | `string` | On-premises security identifier (SID) of the account |
 | `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `AccountName` | `string` | User name of the account |
-| `AccountDomain` | `string` | Domain of the account |
-| `Type` | `string` | Type of record |
+| `AccountDomain` [*](#mdi-only) | `string` | Domain of the account |
+| `Type` [*](#mdi-only) | `string` | Type of record |
 | `DistinguishedName` [*](#mdi-only) | string | The user's [distinguished name](/windows/desktop/ldap/distinguished-names) |
 | `CloudSid` | `string` | Cloud security identifier of the account |
 | `GivenName` | `string` | Given name or first name of the account user |
@@ -69,10 +69,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Tags` [*](#mdi-only)  | `dynamic` | Tags assigned to the account user by Defender for Identity |
 | `AssignedRoles` [*](#mdi-only) | `dynamic` | For identities from Microsoft Entra-only, the roles assigned to the account user|
 | `TenantId` | `string` | Unique identifier representing your organization's instance of Microsoft Entra ID |
-| `SourceSystem` | `string` | The source system for the record|
-| `TimeGenerated` | `datetime` | Date and time of record creation |
+| `SourceSystem` [*](#mdi-only) | `string` | The source system for the record|
 
-<a name="mdi-only"></a>* Available only for tenants with [Microsoft Defender for Identity](microsoft-365-security-center-mdi.md) deployed.
+<a name="mdi-only"></a>* Available only for tenants with Microsoft Defender for Identity, Microsoft Defender for Cloud Apps or Microsoft Defender for Endpoint P2 licensing.
 
 ## Related topics
 
@@ -82,4 +81,4 @@ For information on other tables in the advanced hunting schema, [see the advance
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

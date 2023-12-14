@@ -2,7 +2,7 @@
 title: Get all vulnerabilities
 description: Retrieves a list of all the vulnerabilities affecting the organization
 keywords: apis, graph api, supported apis, get, vulnerability information, Microsoft Defender for Endpoint tvm api
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # List vulnerabilities
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -46,7 +46,7 @@ Retrieves a list of all vulnerabilities.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
 <br>```$filter``` on:  ```id```, ```name```, ```description```, ```cvssV3```, ```publishedOn```, ```severity```, and ```updatedOn``` properties.
-<br>```$top``` with max value of 10,000.
+<br>```$top``` with max value of 8,000.
 <br>```$skip```.
 <br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
