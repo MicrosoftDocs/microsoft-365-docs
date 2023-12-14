@@ -17,10 +17,7 @@ ms.localizationpriority:  medium
 description: Learn about the backup and recovery capabilities for SharePoint, Exchange Online, and OneDrive for Business using Microsoft 365 Backup.
 ---
 
-![Banner announcing worldwide availability of Microsoft 365 Backup.](../../media/content-understanding/backup-preview-banner.png)
-
 # Overview of Microsoft 365 Backup (Preview)
-
 
 ![Banner announcing worldwide availability of Microsoft 365 Backup.](../../media/content-understanding/backup-preview-banner.png)
 
