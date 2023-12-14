@@ -19,7 +19,7 @@ description: Learn about Microsoft SharePoint eSignature and how to send electro
 
 # Overview of Microsoft SharePoint eSignature
 
-Microsoft SharePoint eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
+SharePoint eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
 
 With SharePoint eSignature, you can quickly and securely send documents for signature to people both inside and outside of your organization. You also have a digital audit trail, which can be used to verify the authenticity of documents and transactions.
 
