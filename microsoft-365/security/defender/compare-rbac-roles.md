@@ -34,8 +34,6 @@ This article describes how existing roles and permissions in Microsoft Defender 
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/p/?linkid=2229011)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 <a name='map-microsoft-365-defender-unified-rbac-permissions-to-existing-rbac-permissions'></a>
 
 ## Map Microsoft Defender XDR Unified RBAC permissions to existing RBAC permissions
@@ -153,4 +151,4 @@ Use this table to learn about the permissions assigned by default for each workl
 
 - [Import existing RBAC roles](import-rbac-roles.md)
 - [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

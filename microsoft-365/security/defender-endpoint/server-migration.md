@@ -24,7 +24,7 @@ ms.subservice: onboard
 
 # Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Windows Server 2012 R2

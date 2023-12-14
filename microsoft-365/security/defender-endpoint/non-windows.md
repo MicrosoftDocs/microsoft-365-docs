@@ -25,7 +25,7 @@ ms.date: 12/18/2020
 
 # Microsoft Defender for Endpoint on other platforms
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1 and Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -35,7 +35,7 @@ ms.date: 12/18/2020
 
 Microsoft has been on a journey to extend its industry leading endpoint security capabilities beyond Windows and Windows Server to macOS, Linux, Android, and iOS.
 
-Organizations face threats across a variety of platforms and devices. Our teams have committed to building security solutions not just *for* Microsoft, but also *from* Microsoft to enable our customers to protect and secure their heterogenous environments. We're listening to customer feedback and partnering closely with our customers to build solutions that meet their needs.
+Organizations face threats across a variety of platforms and devices. Our teams have committed to building security solutions not just *for* Microsoft, but also *from* Microsoft to enable our customers to protect and secure their heterogeneous environments. We're listening to customer feedback and partnering closely with our customers to build solutions that meet their needs.
 
 With Microsoft Defender for Endpoint, customers benefit from a unified view of all threats and alerts in the Microsoft Defender portal, across Windows and non-Windows platforms, enabling them to get a full picture of what's happening in their environment, which empowers them to more quickly assess and respond to threats.
 

@@ -24,7 +24,7 @@ ms.date: 04/24/2021
 
 # Remediation activity methods and properties
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
