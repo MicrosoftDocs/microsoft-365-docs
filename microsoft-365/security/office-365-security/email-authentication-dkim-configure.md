@@ -38,7 +38,7 @@ Specifically:
    - The From, To, Subject, MIME-Version, Content-Type, Date, and other message header fields (depending on the source email system).
    - The message body.
 1. The digital signature is stored in the **DKIM-Signature** header field in the message header and remains valid as long as intermediate email systems don't modify the signed parts of the message. The signing domain is identified by the the **d=** value in the **DKIM-Signature** header field.
-1. The corresponding public keys are stored in DNS records for the signing domain (CNAME or TXT records).
+1. The corresponding public keys are stored in DNS records for the signing domain (CNAME records in Microsoft 365).
 1. Destination email systems use the **d=** value in the **DKIM-Signature** header field to:
    - Identify the signing domain.
    - Look up the public key in the DKIM DNS record for the domain.
@@ -47,47 +47,133 @@ Specifically:
 Important facts about DKIM:
 
 - The domain that's used to DKIM sign the message isn't required to match the domain in the MAIL FROM or From addresses in the message. For more information about these addresses, see [Why internet email needs authentication](email-authentication-about.md#why-internet-email-needs-authentication).
-- It's OK to double DKIM sign messages. In fact, many hosted email services do this. For example, Microsoft 365 automatically signs all outbound mail with your initial \*.onmicrosoft.com domain. After you add custom email domains to Microsoft 365, you can configure DKIM to sign outbound messages using your custom domains.
+- It's OK to double DKIM sign messages. In fact, many hosted email services do this. For example, Microsoft 365 automatically signs all outbound mail with your initial \*.onmicrosoft.com domain. After you add custom email domains to Microsoft 365, you can configure DKIM to also sign outbound messages using your custom domains.
 
 Before we get started, here's what you need to know about DKIM in Microsoft 365 based on your email domain:
 
-- **You use only the Microsoft Online Email Routing Address (MOERA) domain for email (for example, contoso.onmicrosoft.com)**: You don't need to do anything. DKIM is already configured for you. Microsoft owns the onmicrosoft.com domain and all subdomains, so we're responsible for creating and maintaining the DNS records in all \*.onmicrosoft.com domains. For more information about \*.onmicrosoft.com domains, see [Why do I have an "onmicrosoft.com" domain?](/microsoft-365/admin/setup/domains-faq#why-do-i-have-an--onmicrosoft-com--domain).
+- **You use only the Microsoft Online Email Routing Address (MOERA) domain for email (for example, contoso.onmicrosoft.com)**: You don't need to do anything. Microsoft automatically creates a 2048-bit public-private key pair from your initial \*.onmicrosoft.com domain, and uses that key to DKIM sign outbound email from your domain. To verify this fact, see the [Verify DKIM signing of outbound mail from Microsoft 365](#verify-dkim-signing-of-outbound-mail-from-microsoft-365) section later in this article.
 
-- **You use one or more custom domains for email (for example, contoso.com)**: By default, Microsoft 365 uses your initial \*.onmicrosoft.com domain to create the public-private key pair to use for DKIM signing outbound mail from Microsoft 365 from any of your custom domains. But, you still have more work to do for maximum email protection:
-  - **DKIM signing using your \*.onmicrosoft.com domain vs. the custom domain in the From address**: Because we recommend also configuring [DMARC](email-authentication-dmarc-configure.md) for your domain, DMARC can validate that the domains in the MAIL FROM and From addresses match. For more information about these 
+  Microsoft owns the onmicrosoft.com domain, so we're responsible for creating and maintaining the DNS records in that domain and its subdomains. For more information about \*.onmicrosoft.com domains, see [Why do I have an "onmicrosoft.com" domain?](/microsoft-365/admin/setup/domains-faq#why-do-i-have-an--onmicrosoft-com--domain).
+
+
+- **You use one or more custom domains for email (for example, contoso.com)**: By default, Microsoft 365 uses the default public-private key from your initial \*.onmicrosoft.com domain to DKIM sign outbound mail from Microsoft 365 from any of your custom domains. But, you still have more work to do for maximum email protection:
+  - **DKIM signing using your \*.onmicrosoft.com domain vs. the custom domain in the From address**: We recommend configuring [DMARC](email-authentication-dmarc-configure.md), because DMARC verifies that the domains in the MAIL FROM and From addresses match. DKIM is more effective if the domain that was used to DKIM sign the message and the domain in the From address match. Therefore, you need to configure DKIM for any custom domains that you use to send email.
   - **Subdomains**:
     - If you use email services that aren't under your direct control (for example, to send bulk email or to add email signatures to outbound mail), we recommend using a subdomain (for example, marketing.contoso.com) for those services instead of your main email domain (for example, contoso.com). You don't want issues with mail sent from those email services to affect the reputation of mail sent by employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq?view=o365-worldwide#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
-    - Each subdomain that you use to send email from Microsoft 365 requires its own SPF TXT record. For example, the SPF TX record for contoso.com doesn't cover marketing.contoso.com; marketing.contoso.com needs its own SPF TXT record.
+    - Each subdomain that you use to send email from Microsoft 365 requires its own DKIM CNAME record.
+    - Unlike SPF and DMARC, you use the Microsoft Defender portal or Exchange Online PowerShell to enable and configure DKIM signing using custom domains, in addition. The procedures are described in this article.
 
       > [!TIP]
       > Email authentication protection for _undefined_ subdomains is covered by DMARC. Any subdomains (defined or not) inherit the DMARC settings of the parent domain (which can be overridden per subdomain).
 
-  - **Registered but unused domains**: If you have registered domains that you aren't using for email or aren't using at all (also known as _parked domains_), don't publish DKIM records for those domains. The lack of a DKIM record (hence, the lack of a public key in DNS) prevents DKIM validation for forged domains.
+  - **Registered but unused domains**: If you have registered domains that you aren't using for email or aren't using at all (also known as _parked domains_), don't publish DKIM records for those domains. The lack of a DKIM record (hence, the lack of a public key in DNS) prevents DKIM validation of forged domains.
 
-- **DKIM alone is not enough**. For the best level of email protection for your custom domains, you also need to configure SPF and DMARC as part of your overall [email authentication](email-authentication-about.md) strategy. For more information, see the [Next Steps: SPF and DMARC](#next-steps-spf-and-dmarc) section at the end of this article.
+- **DKIM alone is not enough**. For the best level of email protection for your custom domains, you also need to configure SPF and DMARC as part of your overall [email authentication](email-authentication-about.md) strategy. For more information, see the [Next Steps](#next-steps) section at the end of this article.
 
-The rest of this article describes the DKIM CNAME records that you need to create for custom domains in Microsoft 365.
+The rest of this article describes the DKIM CNAME records that you need to create for custom domains in Microsoft 365, and configuration procedures for DKIM using custom domains.
 
 > [!TIP]
+> Configuring DKIM signing using a custom domain is a mixture of procedures in Microsoft 365 interfaces, and procedures at the domain registrar of the custom domain.
+>
 > We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these steps to begin creating the CNAME records, and then use the values in this article for DKIM CNAME records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 >
 > If you're unfamiliar with DNS configuration, contact your domain registrar and ask for help.
 
 ## Syntax for DKIM CNAME records
 
+> [!TIP]
+> You use the Defender portal or Exchange Online PowerShell to view the required CNAME values for DKIM signing Enable DKIM signing of outbound messages using a custom domain. The information presented here is for educational purposes only. To get the values that are required for your custom domains or subdomains, use the procedures later in this article.
+
 DKIM is exhaustively described in [RFC 6376](https://datatracker.ietf.org/doc/html/rfc6376).
 
-## Use the Microsoft Defender portal to create DKIM keys and enable DKIM for a custom domain
+Microsoft 365 uses CNAME records for DKIM signing of mail from custom domains. The basic syntax of DKIM CNAME records is:
 
-The procedures in this section apply to [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) that you've added to the Microsoft 365 organization **and** that don't have DKIM CNAME records for Microsoft 365 configured in DNS. What you see in the Defender portal confirms these conditions.
+```text
+Hostname: selector1._domainkey
+Points to address or value: selector1-<CustomDomain>._domainkey.<InitialDomain>
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Threat policies** \> **Email authentication settings** page. Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
+Hostname: selector2._domainkey
+Points to address or value: selector2-<CustomDomain>._domainkey.<InitialDomain>
+```
+
+For example:
+
+```text
+Hostname: selector1._domainkey
+Points to address or value: selector1-contoso-com._domainkey.contoso.onmicrosoft.com
+
+Hostname: selector2._domainkey
+Points to address or value: selector2-contoso-com._domainkey.contoso.onmicrosoft.com
+```
+
+- Each custom domain or subdomain needs two CNAME records for DKIM as described. Only one active selector is published with the public key when DKIM signing using the custom domain is enabled. The second selector is published with the private key after any future key rotation when it becomes active.
+
+- **Hostname**: The values are the same for all Microsoft 365 organizations: `selector1._domainkey` and `selector2._domainkey`.
+
+- **\<CustomDomain\>**: The custom domain or subdomain with periods replaced by dashes. For example, `contoso.com` becomes `contoso-com`, or `marketing.contoso.com` becomes `marketing-contoso-com`.
+
+- **\<InitialDomain\>**: The \*.onmicrosoft.com that you created and used when you enrolled in Microsoft 365 (for example, contoso.onmicrosoft.com).
+
+## Enable DKIM signing of outbound messages using a custom domain
+
+> [!TIP]
+> As previously described in this article, outbound mail from custom domains in Microsoft 365 is automatically signed by DKIM using the initial \*.onmicrosoft.com domain for the organization. Enabling DKIM signing of outbound messages using a custom domain effectively switches DKIM signing from using the \*.onmicrosoft.com domain to using the custom domain.
+
+You can only use a custom domain or subdomain to DKIM sign outbound mail only after the domain has been successfully added to Microsoft 365. For instructions, see [Add a domain](/microsoft-365/admin/setup/add-domain#add-a-domain).
+
+The procedures you use to configuring DKIM signing using the custom domain depends on what you see in the properties of the domain on the **DKIM** tab at <https://security.microsoft.com/authentication?viewid=DKIM> or in the output of the **Get-DkimSigningConfig** command:
+
+- **Scenario 1**:
+  - The custom domain or subdomain appears on the **DKIM** tab at <https://security.microsoft.com/authentication?viewid=DKIM>. The properties of the domain in the details flyout contain the following values:
+
+    :::image type="content" source="../../media/email-auth-dkim-domain-properties-create-dkim-unavailable.png" alt-text="The domain details tab with DKIM signing disable and no DKIM signatures configured for the domain." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim-unavailable.png":::
+
+    - The **Sign messages for this domain with DKIM signatures** toggle is set to **Disabled** :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::.
+    - The **Status** value is **Not signing DKIM signatures for the domain**.
+    - **Create DKIM keys** isn't present. **Rotate DKIM keys** is visible, but is grayed out.
+
+  OR  
+
+  - In Exchange Online PowerShell, the output of the following command contains the custom domain that you want to use, and contains the following property values for the domain:
+
+    ```powershell
+    Get-DkimSigningStatus | Format-List Name,Enabled,Status,Selector1CNAME,Selector2CNAME
+    ```
+
+   - **Enabled**: False
+   - **Status**: `CnameMissing`
+
+  **Solution**: Use Option 1 to configure DKIM signing using the custom domain in the [Defender portal](#option-1-use-the-defender-portal-to-enable-dkim-signing-of-outbound-messages-using-a-custom-domain) or in [PowerShell](#option-1-use-exchange-online-powershell-to-enable-dkim-signing-of-outbound-messages-using-a-custom-domain).
+
+- **Scenario 2**:
+  - The custom domain or subdomain appears on the **DKIM** tab at <https://security.microsoft.com/authentication?viewid=DKIM>. The properties of the domain in the details flyout contain the following values:
+
+  :::image type="content" source="../../media/email-auth-dkim-domain-properties-create-dkim.png" alt-text="The domain details flyout with the Create DKIM keys button." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim.png":::
+
+  - The **Sign messages for this domain with DKIM signatures** toggle isn't available.
+  - The **Status** value is **No DKIM keys saved for this domain**.
+  - **Create DKIM keys** is present.
+
+  OR
+
+  - In Exchange Online PowerShell, the output of the following command doesn't contain the custom domain that you want to use:
+
+    ```powershell
+    Get-DkimSigningStatus | Format-List Name,Enabled,Status,Selector1CNAME,Selector2CNAME
+    ```
+
+### Option 1: Use the Defender portal to enable DKIM signing of outbound messages using a custom domain
+
+> [!TIP]
+> If you don't see what's described in these procedures, use [Option 2: Use the Defender portal to enable DKIM signing of outbound messages using a custom domain](#option-2-use-the-defender-portal-to-enable-dkim-signing-of-outbound-messages-using-a-custom-domain) instead.
+
+1. In the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Threat policies** \> **Email authentication settings** page. Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
 
 2. On the **Email authentication settings** page, select the **DKIM** tab.
 
-3. On the **DKIM** tab, select the domain to configure by clicking anywhere in the row other than the check box next to the name.
+3. On the **DKIM** tab, select the custom domain to configure by clicking anywhere in the row other than the check box next to the name.
 
-   :::image type="content" source="../../media/email-auth-dkim-domain-list.png" alt-text="The DKIM tab of the Email authentication page in the Microsoft Defender portal." lightbox="../../media/email-auth-dkim-domain-list.png":::
+   :::image type="content" source="../../media/email-auth-dkim-domain-list.png" alt-text="The DKIM tab of the Email authentication page in the Defender portal." lightbox="../../media/email-auth-dkim-domain-list.png":::
 
 4. In the domain details flyout that opens, verify the following settings:
    - The **Sign messages for this domain with DKIM signatures** toggle is set to **Disabled** :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::.
@@ -97,11 +183,11 @@ The procedures in this section apply to [custom domains](/exchange/mail-flow-bes
 
    :::image type="content" source="../../media/email-auth-dkim-domain-properties-create-dkim-unavailable.png" alt-text="The domain details tab with DKIM signing disable and no DKIM signatures configured for the domain." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim-unavailable.png":::
 
-5. Click on the **Sign messages for this domain with DKIM signatures** toggle.
+5. Select the **Sign messages for this domain with DKIM signatures** toggle that's currently .
 
-6. A **Client error** dialog opens. The error contains the values that you need for the two CNAME record to create at the DNS hosting service for the domain.
+6. A **Client error** dialog opens. The error contains the values to use in the two CNAME records that you create at the domain registrar for the domain.
 
-   In this example, the custom domain that you're enabling DKIM for is contoso.com and the initial domain for the Microsoft 365 organization is contoso.onmicrosoft.com. The error message looks like this:
+   In this example, the custom domain is contoso.com and the initial domain for the Microsoft 365 organization is contoso.onmicrosoft.com. The error message looks like this:
 
    ```text
    |Microsoft.Exchange.ManagementTasks.ValidationException|CNAME record does not
@@ -119,38 +205,105 @@ The procedures in this section apply to [custom domains](/exchange/mail-flow-bes
    **Points to address or value**: `selector1-contoso-com._domainkey.contoso.onmicrosoft.com`
 
    **Hostname**: `selector2._domainkey`<br>
-   **Points to address or value**: selector2-contoso-com._domainkey.contoso.onmicrosoft.com
+   **Points to address or value**: `selector2-contoso-com._domainkey.contoso.onmicrosoft.com`
 
-   Copy the information from the error dialog, and then select **OK**.
+   Copy the information from the error dialog (select the text and press CTRL+C), and then select **OK**.
 
-   Close the domain details flyout by selecting **Close**.
+   Leave the domain details flyout open.
 
-7. Go to the DNS hosting service for the domain, and then create the two CNAME records using the copied information.
+7. In another browser tab or window, go to the domain registrar for the domain, and then create the two CNAME records using the information from the previous step.
 
    We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these steps to begin creating the CNAME records, and then use the values in this step for the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
-8. Return to the details flyout for the domain by repeating the first 3 steps.
+   It will take several minutes or longer for Microsoft 365 to detect the new CNAME records that you created.
 
-   If we were able to detect the required CNAME records for the domain, the settings on the details flyout are:
+8. After a while, return to the domain properties flout that you left open in Step 6, and select the **Sign messages for this domain with DKIM signatures** toggle.
+
+9. After a few seconds, the following dialog opens:
+
+   :::image type="content" source="../../media/email-auth-dkim-cname-detected.png" alt-text="The dialog that opens when you try to enable DKIM signing by the custom domain for the first time." lightbox="../../media/email-auth-dkim-cname-detected.png":::
+
+   After you select **OK** to close the dialog, verify the following settings on the details flyout:
 
    - The **Sign messages for this domain with DKIM signatures** toggle is set to **Enabled** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
    - The **Status** value is **Signing DKIM signatures for this domain**.
    - **Rotate DKIM keys** is available.
-   - **Last checked date**: The date and time should be more recent than the original values in Step 4.
+   - **Last checked date**: The date and time should be more recent than the original value in Step 4.
 
-   As described in the error message in Step 6, it could take several minutes to several days for Microsoft to detect the required CNAME records for the domain.
+#### Option 1: Use Exchange Online PowerShell to enable DKIM signing of outbound messages using a custom domain
 
-   If the CNAME records aren't detected, check the properties of the domain and note the **Last checked date** value.
+> [!TIP]
+> If you don't see what's described in these procedures, use [Option 2: Use Exchange Online PowerShell to enable DKIM signing of outbound messages using a custom domain](#option-2-use-exchange-online-powershell-to-enable-dkim-signing-of-outbound-messages-using-a-custom-domain) instead.
 
-## Use the Microsoft Defender portal to create DKIM keys and enable DKIM for a domain
+If you'd rather use PowerShell to enable DKIM signing of outbound messages using a custom domain, connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to run the following commands.
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Threat policies** \> **Email authentication settings** page. Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
+1. Run the following command to verify the availability and DKIM status of all domains in the organization:
+
+   ```powershell
+   Get-DkimSigningStatus | Format-List Name,Enabled,Status,Selector1CNAME,Selector2CNAME
+   ```
+
+   - By default, if your organization has no custom domains, the command returns no output. But as described earlier, your \*.onmicrosoft.com domain is already signing outbound email from that \*.onmicrosoft.com domain.
+
+     Before you can configure DKIM signing using the custom domain, you need to add the domain to Microsoft 365. For instructions, see [Add a domain](/microsoft-365/admin/setup/add-domain#add-a-domain).
+
+   - Any custom domain that you can enable DKIM signing for has the following property values:
+     - **Enabled**: False
+     - **Status**: `CnameMissing`
+
+   - Custom domains that are already configured to DKIM sign messages have the following property values:
+     - **Enabled**: True
+     - **Status**: `Valid`
+
+2. For the domain that you want to use, copy the **Selector1CNAME** and **Selector2CNAME** values. The CNAME records that you need to create at the domain registrar for the domain look like this:
+
+   **Hostname**: `selector1._domainkey`<br>
+   **Points to address or value**: `<Selector1CNAME value>`
+
+   **Hostname**: `selector2._domainkey`<br>
+   **Points to address or value**: `<Selector2CNAME value>`
+
+   For example:
+
+   **Hostname**: `selector1._domainkey`<br>
+   **Points to address or value**: `selector1-contoso-com._domainkey.contoso.onmicrosoft.com`
+
+   **Hostname**: `selector2._domainkey`<br>
+   **Points to address or value**: `selector2-contoso-com._domainkey.contoso.onmicrosoft.com`
+
+3. At the domain registrar for the domain, create the two CNAME records using the information from the previous step.
+
+   We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these steps to begin creating the CNAME records, and then use the values in the previous step for the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+
+   It will take several minutes or longer for Microsoft 365 to detect the new CNAME records that you created.
+
+8. After a while, return to Exchange Online PowerShell, replace \<CustomDomain\> with the domain that you configured, and run the following command:
+
+   ```powerShell
+   Set-DkimConfig -Identity \<CustomDomain\> -Enabled $true
+   ```
+
+   If Microsoft 365 was able to detect the CNAME records for the domain at the domain registrar, the command runs without error, and the domain is now used to DKIM sign outbound messages from the domain.
+
+   If the CNAME records aren't detected, you an error stating that fact, and a description of the CNAME record values to use. Check for typos in the values at the domain registrar, wait a while longer, and then run the command again.
+
+For detailed syntax and parameter information, see the following articles:
+
+- [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig)
+- [Set-DkimSigningConfig](/powershell/module/exchange/set-dkimsigningconfig)
+
+### Option 2: Use the Defender portal to enable DKIM signing of outbound messages using a custom domain
+
+> [!TIP]
+> If you don't see what's described in these procedures, use [Option 1: Use the Microsoft portal to enable DKIM signing of outbound messages using a custom domain](#option-1-use-the-defender-portal-to-enable-dkim-signing-of-outbound-messages-using-a-custom-domain) instead.
+
+1. In the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Threat policies** \> **Email authentication settings** page. Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
 
 2. On the **Email authentication settings** page, select the **DKIM** tab.
 
 3. On the **DKIM** tab, select the domain to configure by clicking anywhere in the row other than the check box next to the name.
 
-   :::image type="content" source="../../media/email-auth-dkim-domain-list.png" alt-text="The DKIM tab of the Email authentication page in the Microsoft Defender portal." lightbox="../../media/email-auth-dkim-domain-list.png":::
+   :::image type="content" source="../../media/email-auth-dkim-domain-list.png" alt-text="The DKIM tab of the Email authentication page in the Defender portal." lightbox="../../media/email-auth-dkim-domain-list.png":::
 
    > [!TIP]
    > All [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the Microsoft 365 organization are available on the **DKIM** tab. If the domain isn't available, add the domain as an accepted domain as described in the article.
@@ -179,7 +332,7 @@ The procedures in this section apply to [custom domains](/exchange/mail-flow-bes
 
    :::image type="content" source="../../media/email-auth-dkim-created-disabled.png" alt-text="The domain DKIM properties flyout with DKIM message signing disabled." lightbox="../../media/email-auth-dkim-created-disabled.png":::
 
-7. In a new browser window or tab, go to the DNS hosting service for the domain, and then create the two DKIM CNAME records using the copied information.
+7. In a new browser window or tab, go to the domain registrar for the domain, and then create the two DKIM CNAME records using the copied information.
 
    We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these steps to begin creating the CNAME records, and then use the values in this step for the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
@@ -190,9 +343,23 @@ The procedures in this section apply to [custom domains](/exchange/mail-flow-bes
 
    When you're finished in the domain DKIM details flyout, select **Close**.
 
-### Use Exchange Online PowerShell to create the DKIM keys and enable DKIM for a domain
+#### Option 2: Use Exchange Online PowerShell to enable DKIM signing of outbound messages using a custom domain
 
-If you'd rather use PowerShell to create the DKIM keys and enable DKIM for a domain, connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to run the following commands.
+> [!TIP]
+> If you don't see what's described in these procedures, use [Option 1: Use Exchange Online PowerShell to enable DKIM signing of outbound messages using a custom domain](#option-1-use-exchange-online-powershell-to-enable-dkim-signing-of-outbound-messages-using-a-custom-domain) instead.
+
+Run the following commands in Exchange Online PowerShell to create the selector records:
+
+```powershell
+New-DkimSigningConfig -DomainName <domain> -Enabled $false
+
+Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
+```
+
+For detailed syntax and parameter information, see the following articles:
+
+- [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig)
+- [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig)
 
 ## Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys
 
@@ -337,7 +504,7 @@ If you're configuring DKIM for the first time and see the error 'No DKIM keys sa
 
 For detailed syntax and parameter information, see  [Set-DkimSigningConfig](/powershell/module/exchange/set-dkimsigningconfig).
 
-#### To Confirm DKIM signing is configured properly for Microsoft 365
+#### Verify DKIM signing of outbound mail from Microsoft 365
 
 Wait a few minutes before you follow these steps to confirm that you have properly configured DKIM. This allows time for the DKIM information about the domain to be spread throughout the network.
 
@@ -370,6 +537,15 @@ Wait a few minutes before you follow these steps to confirm that you have proper
 >   Authentication-Results: dkim=none (message not signed) header.d=none;
 >     dmarc=none action=none header.from=<sender_domain>;
 > ```
+
+**This test will validate** that the DKIM signing configuration has been configured correctly, and that the proper DNS entries have been published.
+
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+
+<div class="nextstepaction">
+<p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">Run Tests: DKIM</a></p>
+</div>
 
 ## To configure DKIM for more than one custom domain
 <a name="DKIMMultiDomain"> </a>
@@ -459,38 +635,10 @@ In this example, in order to achieve this result:
 
    > d=**contoso.com**
 
-## Identify domains that do not send email
+## Next steps
 
-Organizations should explicitly state if a domain does not send email by specifying `v=DKIM1; p=` in the DKIM record for those domains. This advises receiving email servers that there are no valid public keys for the domain, and any email claiming to be from that domain should be rejected. You should do this for each domain and subdomain using a wildcard DKIM.
+As described in [How SPF, DKIM, and DMARC work together to authenticate email message senders](email-authentication-about.md#how-spf-dkim-and-dmarc-work-together-to-authenticate-email-message-senders), DKIM alone is not enough to prevent spoofing of your Microsoft 365 domain. You also need to configure SPF and DMARC for the best protection. For instructions, see:
 
-For example, the DKIM record would look like this:
-
-```console
-*._domainkey.SubDomainThatShouldntSendMail.contoso.com. TXT "v=DKIM1; p="
-```
-
-## Next steps: After you set up DKIM for Microsoft 365
-<a name="DKIMNextSteps"> </a>
-
-**Although DKIM is designed to help prevent spoofing, DKIM works better with SPF and DMARC.**
-
-Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [**Set up SPF in Microsoft 365 to help prevent spoofing**](email-authentication-spf-configure.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
-
-Next, see [**Use DMARC to validate email**](email-authentication-dmarc-configure.md). [Anti-spam message headers](message-headers-eop-mdo.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
-
-**This test will validate** that the DKIM signing configuration has been configured correctly, and that the proper DNS entries have been published.
-
-> [!NOTE]
-> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
-
-<div class="nextstepaction">
-<p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">Run Tests: DKIM</a></p>
-</div>
-
-## More information
-
-Key rotation via PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
-
-[Use DMARC to validate email](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure)
-
-[Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure)
+- [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
+- [Use DMARC to validate email](email-authentication-dmarc-configure.md)
+- [Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure)
