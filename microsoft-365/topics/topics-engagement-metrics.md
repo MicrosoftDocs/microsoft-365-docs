@@ -1,5 +1,5 @@
 ---
-ms.date: 11/07/2023
+ms.date: 12/12/2023
 title: Usage and engagement metrics in Topics
 ms.author: daisyfeller
 author: daisyfell
@@ -15,9 +15,6 @@ ROBOTS: NOINDEX,NOFOLLOW
 ---
 
 # Usage and engagement metrics in Topics
-
->[!NOTE]
->Usage and engagement metrics are currently only available to users in the Early Adopter Program.
 
 Usage and engagement metrics demonstrate how users are engaging with Topics in your organization.
 

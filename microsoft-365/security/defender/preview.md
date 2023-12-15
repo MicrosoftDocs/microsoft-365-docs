@@ -26,7 +26,7 @@ ms.date: 09/21/2023
 
 # Microsoft Defender XDR preview features
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -65,7 +65,7 @@ You'll have access to upcoming features that you can provide feedback on to help
 Turn on the preview experience setting to be among the first to try upcoming features.
 
 1. In the navigation pane, select **Settings**.
-2. Select **Microsoft 365 Defender**.
+2. Select **Microsoft Defender XDR**.
 3. Select **Preview features** > **Turn on preview features**. 
 4. Select **Save**.
 
@@ -75,4 +75,4 @@ You'll know you have preview features turned on when you see that the **Turn on 
 
 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # List vulnerabilities by recommendation
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:** 
 

@@ -1,7 +1,7 @@
 ---
 title: Hello World for Microsoft Defender XDR REST API
 description: Learn how to create an app and use a token to access the Microsoft Defender XDR APIs
-keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, microsoft 365 defender
+keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, Microsoft Defender XDR
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -28,7 +28,7 @@ ms.date: 02/16/2021
 
 # Hello World for Microsoft Defender XDR REST API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -181,4 +181,4 @@ You're all done! You've successfully:
 - [Create an app with multi-tenant partner access to Microsoft Defender XDR APIs](api-partner-access.md)
 - [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 Authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

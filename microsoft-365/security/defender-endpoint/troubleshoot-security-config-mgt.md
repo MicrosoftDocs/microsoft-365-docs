@@ -13,12 +13,12 @@ ms.collection:
 ms.topic: troubleshooting
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 08/04/2023
+ms.date: 12/14/2023
 ---
 
 # Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -30,63 +30,17 @@ ms.date: 08/04/2023
 
 
 
->[!NOTE]
->Customers who have turned on [preview features](preview.md#turn-on-preview-features) will have early access to the endpoint security policies management that does not require Microsoft Entra registration for device management scenarios. The sections below that refer to Microsoft Entra registration do not apply for customers enrolled in the public preview.
-
-Security Management for Microsoft Defender for Endpoint is a capability for devices that aren't managed by Microsoft Intune or Microsoft Configuration Manager to receive security configurations for Microsoft Defender for Endpoint directly from Intune.
+Security Management for Microsoft Defender for Endpoint is a capability for devices that aren't managed by Microsoft Intune to receive security configurations.
 For more information on Security Management for Microsoft Defender for Endpoint, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration).
 
 For Security Management for Microsoft Defender for Endpoint onboarding instructions, see [Microsoft Defender for Endpoint Security Configuration Management](security-config-management.md)
 
-This end-to-end onboarding is designed to be frictionless and doesn't require user input. However, if you encounter issues during onboarding, you can view and troubleshoot errors within the Microsoft Defender for Endpoint platform.
-
-> [!NOTE]
-> If you are having issues with the onboarding flow for new devices, review the [Microsoft Defender for Endpoint prerequisites](/mem/intune/protect/mde-security-integration#prerequisites) and make sure the onboarding instructions are followed.
 
 For more information about the client analyzer, see [Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer](/microsoft-365/security/defender-endpoint/overview-client-analyzer).
 
 <a name='registering-domain-joined-computers-with-azure-active-directory'></a>
 
-## Registering domain joined computers with Microsoft Entra ID
 
-To successfully register devices to Microsoft Entra ID, you need to ensure the following:
-
-- Computers can authenticate with the domain controller
-- Computers have access to the following Microsoft resources from inside your organization's network:
-  - /windows/iot/iot-enterprise/commercialization/licensing
-  - <https://login.microsoftonline.com>
-  - <https://device.login.microsoftonline.com>
-- Microsoft Entra Connect is configured to sync the computer objects. By default, computer OUs are in Microsoft Entra Connect Sync scope. If the computer objects belong to specific organizational units (OUs), configure the OUs to sync in Microsoft Entra Connect. To learn more about how to sync computer objects by using Microsoft Entra Connect, see [Organizational unit–based filtering](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
-
-> [!IMPORTANT]
-> Microsoft Entra Connect does not sync Windows Server 2012 R2 computer objects. If you need to register them with Microsoft Entra ID for Security Management for Microsoft Defender for Endpoint, then you'll need to customize Microsoft Entra Connect Sync rule to include those computer objects in sync scope. See [Instructions for applying Computer Join rule in Microsoft Entra Connect](#instructions-for-applying-computer-join-rule-in-aad-connect).
-
-> [!NOTE]
-> To successfully complete the onboarding flow, and independent of a device's Operating System, the Microsoft Entra ID state of a device can change, based on the devices' initial state:
->
->
-> |Starting Device State|New Device State|
-> |---|---|
-> |Already AADJ or HAADJ|Remains as is|
-> |Not AADJ or Microsoft Entra hybrid join (HAADJ) + Domain joined|Device is HAADJ'd|
-> |Not AADJ or HAADJ + Not domain joined|Device is AADJ'd|
->
-> Where AADJ represents Microsoft Entra joined and HAADJ represents Microsoft Entra hybrid joined.
-
-## Troubleshoot errors from the Microsoft Defender for Endpoint portal
-
-Through the Microsoft Defender for Endpoint portal, security administrators can now troubleshoot Security Management for Microsoft Defender for Endpoint onboarding.
-
-In **Configuration management** the **Onboarded via MDE security management** widget has been added to present the enrollment status breakdown of Microsoft Defender for Endpoint-managed devices.
-
-To see a list of all devices managed by Microsoft Defender for Endpoint, select **View all devices managed by MDE**.
-
-In the list, if a device's enrollment status isn't "Success", select the device to see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
-
-:::image type="content" source="./images/secconfig-mde-error.png" alt-text="The filter criteria applied on the device inventory page" lightbox="./images/secconfig-mde-error.png":::
-
-> [!NOTE]
-> We are aware of an issue impacting the accurate detection of third-party MDMs when trying to use the security management feature and are working on a fix.
 
 ## Run Microsoft Defender for Endpoint Client Analyzer on Windows
 
@@ -95,7 +49,7 @@ Consider running the Client Analyzer on endpoints that are failing to complete t
 The Client Analyzer output file (MDE Client Analyzer Results.htm) can provide key troubleshooting information:
 
 - Verify that the device OS is in scope for Security Management for Microsoft Defender for Endpoint onboarding flow in **General Device Details** section
-- Verify that the device has successfully registered to Microsoft Entra ID in **Device Configuration Management Details**
+- Verify that the device appears in Microsoft Entra ID in **Device Configuration Management Details**
 
   :::image type="content" source="images/client-analyzer-results.png" alt-text="The client analyzer results" lightbox="images/client-analyzer-results.png":::
 
@@ -103,10 +57,6 @@ In the **Detailed Results** section of the report, the Client Analyzer also prov
 
 > [!TIP]
 > Make sure the Detailed Results section of the report does not include any "Errors", and make sure to review all "Warning" messages.
-
-For example, as part of the Security Management onboarding flow, it's required for the Microsoft Entra tenant ID in your Microsoft Defender for Endpoint Tenant to match the SCP Tenant ID that appears in the reports' **Device Configuration Management Details** section. If relevant, the report output recommends performing this verification.
-
-:::image type="content" source="images/detailed-results.png" alt-text="The page displaying the detailed results" lightbox="images/detailed-results.png":::
 
 ## General troubleshooting
 
@@ -132,79 +82,6 @@ The following table lists errors and directions on what to try/check in order to
 
 <a name='azure-active-directory-runtime-troubleshooting'></a>
 
-## Microsoft Entra Runtime troubleshooting
-
-The main mechanism to troubleshoot Microsoft Entra Runtime (AADRT) is to collect debug traces. Microsoft Entra Runtime on Windows uses **ETW provider with ID bd67e65c-9cc2-51d8-7399-0bb9899e75c1**. ETW traces need to be captured with the reproduction of the failure (for example if join failure occurs, the traces need to be enabled for the duration of time covering calls to AADRT APIs to perform join).
-
-See below for a typical error in AADRT log and how to read it:
-
-:::image type="content" source="images/event-properties.png" alt-text="The event properties page" lightbox="images/event-properties.png":::
-
-From the information in the message, it's possible in most cases to understand what error was encountered, what Win32 API returned the error (if applicable), what URL (if applicable) was used and what Microsoft Entra Runtime API error was encountered.
-
-<a name='instructions-for-applying-computer-join-rule-in-aad-connect'></a>
-
-## Instructions for applying Computer Join rule in Microsoft Entra Connect
-
-For Security Management for Microsoft Defender for Endpoint on Windows Server 2012 R2 domain joined computers, an update to Microsoft Entra Connect Sync rule "In from AD-Computer Join" is needed. This can be achieved by cloning and modifying the rule, which disables the original "In from AD - Computer Join" rule. Microsoft Entra Connect by default offers this experience for making changes to built-in rules.
-
-> [!NOTE]
-> These changes need to be applied on the server where Microsoft Entra Connect is running. If you have multiple instances of Microsoft Entra Connect deployed, these changes must be applied to all instances.
-
-1. Open the Synchronization Rules Editor application from the start menu. In the rule list, locate the rule named **In from AD – Computer Join**. **Take note of the value in the 'Precedence' column for this rule.**
-
-   :::image type="content" source="images/57ea94e2913562abaf93749d306dd6cf.png" alt-text="The synchronization rules editor" lightbox="images/57ea94e2913562abaf93749d306dd6cf.png":::
-
-2. With the **In from AD – Computer Join** rule highlighted, select **Edit**. In the **Edit Reserved Rule Confirmation** dialog box, select **Yes**.
-
-   :::image type="content" source="images/8854440d6180a5580efda24110551c68.png" alt-text="The edit reserved rule confirmation page" lightbox="images/8854440d6180a5580efda24110551c68.png":::
-
-3. The **Edit inbound synchronization rule** window will be shown. Update the rule description to note that Windows Server 2012R2 will be synchronized using this rule. Leave all other options unchanged except for the Precedence value. Enter a value for Precedence that is higher than the value from the original rule (as seen in the rule list).
-
-   :::image type="content" source="images/ee0f29162bc3f2fbe666c22f14614c45.png" alt-text="The Edit inbound synchronization rule page in which you enter values" lightbox="images/ee0f29162bc3f2fbe666c22f14614c45.png":::
-
-4. Select **Next** three times. This navigates to the 'Transformations' section of the rule. Don't make any changes to the 'Scoping filter' and 'Join rules' sections of the rule. The 'Transformations' section should now be shown.
-
-   :::image type="content" source="images/296f2c2a705e41233631c3784373bc23.png" alt-text="The inbound synchronization rule" lightbox="images/296f2c2a705e41233631c3784373bc23.png":::
-
-5. Scroll to the bottom of the list of transformations. Find the transformation for the **cloudFiltered** attribute. In the textbox in the **Source** column, select all of the text (Control-A) and delete it. The textbox should now be empty.
-
-6. Paste the content for the new rule into the textbox.
-
-    ```command
-    IIF(
-      IsNullOrEmpty([userCertificate])
-      ||
-      (
-        (InStr(UCase([operatingSystem]),"WINDOWS") > 0)
-        &&
-        (Left([operatingSystemVersion],2) = "6.")
-        &&
-        (Left([operatingSystemVersion],3) <> "6.3")
-      )
-      ||
-      (
-        (Left([operatingSystemVersion],3) = "6.3")
-        &&
-        (InStr(UCase([operatingSystem]),"WINDOWS") > 0)
-        &&
-        With(
-          $validCerts,
-          Where(
-            $c,
-            [userCertificate],
-            IsCert($c) && CertNotAfter($c) > Now() && RegexIsMatch(CertSubject($c), "CN=[{]*" & StringFromGuid([objectGUID]) & "[}]*", "IgnoreCase")),
-          Count($validCerts) = 0)
-      ),
-      True,
-      NULL
-    )
-    ```
-
-7. Select **Save** to save the new rule.
-
-> [!NOTE]
-> After this rule change is performed, a full synchronization of your Active Directory is required. For large environments, it is recommended to schedule this rule change and full sync during on-premises Active Directory quiet periods.
 
 ## Related topic
 

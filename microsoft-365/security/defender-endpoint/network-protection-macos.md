@@ -3,15 +3,12 @@ title: Use network protection to help prevent macOS connections to bad sites
 description: Protect your network by preventing macOS users from accessing known malicious and suspicious network addresses
 keywords: Network protection, MacOS exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 03/24/2023
+ms.date: 12/08/2023
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: oogunrinde
+ms.reviewer: 
 manager: dansimp
 ms.custom: asr
 ms.subservice: macos
@@ -25,7 +22,7 @@ search.appverid: met150
 
 # Network protection for macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -72,6 +69,10 @@ To roll out Network Protection for macOS, we recommend the following:
 
 - Block/Warn UX isn't customizable and might require other look and feel changes
   - Customer feedback is being collected to drive further design improvements
+- There is a known application incompatibility issue with VMWare's "Per-App Tunnel" feature.
+  - This incompatibility might result in an inability to block traffic that goes through the "Per-App Tunnel."
+- There is a known application incompatibility issue with Blue Coat Proxy.
+  - This incompatibility might result in network layer crashes in unrelated applications when both Blue Coat Proxy and Network Protection are enabled.
 
 ### Important notes
 

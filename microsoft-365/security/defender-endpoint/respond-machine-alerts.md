@@ -19,7 +19,7 @@ search.appverid: met150
 
 # Take response actions on a device
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -315,9 +315,6 @@ You'll be able to stop containing a device at any time.
 2. Select **Release from containment** from the action menu. This action will restore this device's connection to the network.
 
 ## Contain user from the network
-
-> [!NOTE]
-> Contain user capability is currently available in public preview. To learn more about new preview features in Microsoft Defender XDR preview, see [Preview features in Microsoft Defender XDR](../defender/preview.md).
 
 When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can “contain” an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP) while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
 
