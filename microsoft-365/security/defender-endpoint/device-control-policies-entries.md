@@ -4,7 +4,7 @@ description: Learn about device control policies and entries in Defender for End
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 12/14/2023
+ms.date: 12/15/2023
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -22,7 +22,18 @@ audience: ITPro
 
 # Device control policies and entries in Microsoft Defender for Endpoint
 
-Device control policies define access for a set of devices. The devices that are in scope are defined by a list of included device groups and a list of excluded device groups. A policy applies if the device is in ALL of the included device groups and none of the excluded device groups. 
+Device control policies define access for a set of devices. The devices that are in scope are determined by a list of included device groups and a list of excluded device groups. A policy applies if the device is in all of the included device groups and none of the excluded device groups. If no policies apply, then the default enforcement is applied. 
+
+The following table lists examples of device groups that you can use:
+
+
+|Device group name  |Description  |
+|---------|---------|
+| All Removable Storage Devices   | Removable storage devices |
+| Writeable USBs     | List of USBs where write access is permitted  |
+| Other Devices     | Non-removable storage devices   |
+
+
 
 If no policies apply, then the default enforcement is applied. 
 
