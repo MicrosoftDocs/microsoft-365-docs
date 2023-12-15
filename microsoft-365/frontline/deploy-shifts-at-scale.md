@@ -121,6 +121,9 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
 1. Select the teams that you want to deploy Shifts to, and then choose **Next**.
 
+    > [!NOTE]
+    > If you haven't deployed your teams through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center, no teams will show up. You can only deploy Shifts at scale to frontline dynamic teams.
+
     :::image type="content" source="media/dsas-select-teams.png" alt-text="Screenshot of the Select teams page, showing a list of teams. "lightbox="media/dsas-select-teams.png":::
 
 1. For each team that you selected, set the time zone for the team’s schedule in Shifts. The time zone should reflect the team's location.
