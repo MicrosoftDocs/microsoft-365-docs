@@ -180,7 +180,9 @@ To disable the **Standard protection** or **Strict protection** preset security 
 ## Use the Microsoft Defender portal to add exclusions to the Built-in protection preset security policy
 
 > [!TIP]
-> The **Built-in protection** preset security policy is assigned to all recipients, and doesn't affect recipients who are defined in the **Standard** or **Strict** preset security policies, or in custom Safe Links or Safe Attachments policies. Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
+> The **Built-in protection** preset security policy is applied to all users in organizations with any amount of licenses for Defender for Microsoft 365. This application is in the spirit of securing the broadest set of users until admins specifically configure Defender for Office 365 protections. Because **Built-in protection** is enabled by default, customers don't need to worry about violating product licensing terms. However, we recommend purchasing enough Defender for Office 365 licenses to ensure **Built-in protection** continues for all users.
+>
+> The **Built-in protection** preset security policy doesn't affect recipients who are defined in the **Standard** or **Strict** preset security policies, or in custom Safe Links or Safe Attachments policies. Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. Or, to go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 

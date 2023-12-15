@@ -36,7 +36,7 @@ By setting up PIM to work with Defender for Office 365, admins create a process 
 In this example we configure "Alex", a member of our security team who has zero-standing access within Microsoft 365, but can elevate to both a role required for normal day-to-day operations, such as [Threat Hunting](threat-explorer-threat-hunting.md) and then also to a higher level of privilege when less frequent but sensitive operations, such as [remediating malicious delivered email](remediate-malicious-email-delivered-office-365.md) is required.
 
 > [!NOTE]
-> This will walk you through the steps required to setup PIM for a Security Analyst who requires the ability to purge emails using Threat Explorer in Microsoft Defender for Office 365, but the same steps can be used for other RBAC roles within the Security, and Compliance portal. For example this process could be used for a information worker who requires day-to-day access in eDiscovery to perform searches and case work, but only occasionally needs the elevated right to export data from the tenant.
+> This will walk you through the steps required to setup PIM for a Security Analyst who requires the ability to purge emails using Threat Explorer in Microsoft Defender for Office 365, but the same steps can be used for other RBAC roles within the Security, and Compliance portal. For example this process could be used for an information worker who requires day-to-day access in eDiscovery to perform searches and case work, but only occasionally needs the elevated right to export data from the tenant.
 
 ***Step 1***. In the Azure PIM console for your subscription, add the user (Alex) to the Azure Security Reader role and configure the security settings related to activation.
 

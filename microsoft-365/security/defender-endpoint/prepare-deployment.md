@@ -25,7 +25,7 @@ ms.date: 12/18/2020
 
 # Assign roles and permissions for Microsoft Defender for Endpoint deployment
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

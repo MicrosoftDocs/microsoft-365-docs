@@ -1,16 +1,12 @@
 ---
 title: Review the results of Microsoft Defender Antivirus scans
 description: Review the results of scans using Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Windows Security app
-keywords: scan results, remediation, full scan, quick scan
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/11/2023
 ms.reviewer: 
 manager: dansimp
 ms.subservice: ngp
@@ -24,7 +20,7 @@ search.appverid: met150
 
 # Review Microsoft Defender Antivirus scan results
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -40,11 +36,12 @@ search.appverid: met150
 
 After a Microsoft Defender Antivirus scan completes, whether it's an [on-demand](run-scan-microsoft-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-microsoft-defender-antivirus.md), the results are recorded and you can view the results.
 
-## Use Microsoft 365 Defender to review scan results
+## Use Microsoft Defender XDR to review scan results
 
-To view the scan results using Microsoft 365 Defender Endpoint, follow the below process.
+To view the scan results using Microsoft Defender XDR Endpoint, follow the below process.
 
-1. Sign in to [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47).
+1. Sign in to [Microsoft Defender portal](https://security.microsoft.com)
+
 2. Go to **Incidents & alerts** \> **Alerts**.
 
    You can view the scanned results under **Alerts**.
