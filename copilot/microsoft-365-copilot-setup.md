@@ -74,6 +74,6 @@ Review your privacy settings for Microsoft 365 Apps for enterprise because those
 
 ## More resources
 
-- [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoft365appssetup)
+- [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide)
 - [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot)
 - [Microsoft Copilot for Microsoft 365 - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/ct-p/Microsoft365Copilot)
