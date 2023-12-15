@@ -223,7 +223,7 @@ For information on troubleshooting procedures, see:
 
 ## Uninstallation
 
-See [Uninstalling](mac-resources.md#uninstalling.md) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
+See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
 
   > [!Tip]
   > - Do you want to learn more? Engage with the Microsoft Security community in our Tech Community: [Microsoft Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bd-p/MicrosoftDefenderATP).  
