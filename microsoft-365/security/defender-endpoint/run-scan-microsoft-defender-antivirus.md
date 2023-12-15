@@ -94,25 +94,21 @@ Use the following cmdlet:
 Start-MpScan
 ```
 
-## Use PowerShell cmdlets to run a quick scan without excluding the antivirus exclusions.
+## Use PowerShell cmdlets to run a quick scan without excluding antivirus exclusions
 
 Use the following cmdlet:
-
 
 ```PowerShell
 Set-MpPreference -QuickScanIncludeExclusions 1
 ```
 
-Note: 1 enables the inclusion of the antivirus excluded processes, folders, files, and extensions.
-
-0 (default) disables the inclusion of the antivirus excluded processes, folders, files, and extensions.
+> [!NOTE] A value of `1` enables the inclusion of the antivirus excluded processes, folders, files, and extensions. A value of `0` (default) disables the inclusion of the antivirus excluded processes, folders, files, and extensions.
 
 For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 
 ## Use the mpcmdrun.exe command-line utility to run a scan
 
 Use the following `-scan` parameter:
-
 
 ```console
 mpcmdrun.exe -scan -scantype 1
