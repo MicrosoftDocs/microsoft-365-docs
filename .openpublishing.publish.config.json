@@ -64,7 +64,7 @@
     },
     {
       "path_to_root": "_memdocs",
-      "url": "https://github.com/MicrosoftDocs/memdocs-pr",
+      "url": "https://github.com/MicrosoftDocs/memdocs-pr/",
       "branch": "main",
       "branch_mapping": {}
     },    
