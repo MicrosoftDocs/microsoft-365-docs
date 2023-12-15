@@ -1,5 +1,5 @@
 ---
-title: Create a signature request using Microsoft Syntex eSignature
+title: Create a signature request using Microsoft SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,22 +14,22 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use Microsoft Syntex eSignature to create and send electronic signature requests to people inside and outside of your organization. 
+description: Learn how to use Microsoft SharePoint eSignature to create and send electronic signature requests to people inside and outside of your organization. 
 ---
 
-# Create a signature request using Microsoft Syntex eSignature
+# Create a signature request using Microsoft SharePoint eSignature
 
 ## Create a signature request
 
-Use the following steps to start the Syntex eSignature process.
+Use the following steps to start the SharePoint eSignature process.
 
-1. From a SharePoint document library, open the document for which you want to start the Syntex eSignature process.
+1. From a SharePoint document library, open the document for which you want to start the eSignature process.
 
 2. In the document viewer, select **More options** (...), and then select **Get signatures**.
 
     ![Screenshot of a document showing the Get signatures option.](../media/content-understanding/esignature-get-signatures-option.png)
 
-3. On the **Syntex eSignature** panel, add up to 10 internal or external recipients you want to sign the document, and then select **Next**.
+3. On the **SharePoint eSignature** panel, add up to 10 internal or external recipients you want to sign the document, and then select **Next**.
 
     ![Screenshot of the Add recipients panel.](../media/content-understanding/esignature-add-recipients-panel.png)
 
@@ -73,7 +73,7 @@ The PDF viewer is opened by selecting a PDF file from SharePoint Online. The abi
 
 #### Collaboration settings
 
-Syntex eSignature is an extension of SharePoint document storage and management service. Therefore, all existing access, sharing, and data loss prevention policies that are already applied at the tenant level, SharePoint site and library level, or folder and file level might affect whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
+SharePoint eSignature is an extension of SharePoint document storage and management service. Therefore, all existing access, sharing, and data loss prevention policies that are already applied at the tenant level, SharePoint site and library level, or folder and file level might affect whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
 
 - If encryption is applied (for example, sensitivity labeling applied to the file), the ability to view the document wouldn't be available from SharePoint Online and therefore can't start a Signature request from there. Read more about [sensitivity labels](/purview/sensitivity-labels).
 
@@ -82,6 +82,7 @@ Syntex eSignature is an extension of SharePoint document storage and management 
 - Microsoft Entra collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
 
 #### Conditional access policies
+
 Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation will be unsuccessful. One common way to resolve this is to contact your IT admin who will be able to add the eSignature app to the list of approved apps via the  Microsoft Entra admin center.
 
 <br>
