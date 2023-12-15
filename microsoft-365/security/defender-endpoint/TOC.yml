@@ -551,11 +551,12 @@
         - name: Device installation
           href: mde-device-control-device-installation.md
         - name: Removable storage access control
-          href: device-control-deploy-rsac.md
         - name: Removable Storage Access Control
           items:
           - name: Overview
             href: device-control-removable-storage-access-control.md
+          - name: Deploy RSAC
+            name: device-control-deploy-rsac.md
           - name: Deploy and manage using Intune
             href: deploy-manage-removable-storage-intune.md
           - name: Deploy and manage using group policy
