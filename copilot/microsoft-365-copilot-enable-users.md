@@ -30,17 +30,17 @@ There are three main steps to deploy Microsoft Copilot for Microsoft 365 in your
 
 3. Send an email to your users announcing Microsoft Copilot for Microsoft 365 and its features.
 
-You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://setup.microsoft.com/microsoft-365/copilot-setup-guide) in the Microsoft 365 admin center to perform all three steps, or use the steps described in this article.
+You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to perform all three steps, or use the steps described in this article.
 
 ## Assign licenses
 
-This article assumes that you have already provisioned users in your tenant. If you haven't already done so, follow the steps in the [Microsoft Copilot for Microsoft 365 setup guide](https://setup.microsoft.com/microsoft-365/copilot-setup-guide) or those documented in [Add users and assign licenses in Microsoft 365](/microsoft-365/admin/add-users/add-users). If you use either of these resources, you can create users and assign the necessary licenses at the same time. To learn more about assigning Microsoft 365 licenses with PowerShell, see [Assign licenses to user accounts](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+This article assumes that you have already provisioned users in your tenant. If you haven't already done so, follow the steps in the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) or those documented in [Add users and assign licenses in Microsoft 365](/microsoft-365/admin/add-users/add-users). If you use either of these resources, you can create users and assign the necessary licenses at the same time. To learn more about assigning Microsoft 365 licenses with PowerShell, see [Assign licenses to user accounts](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
 After a user has been assigned a license for Microsoft Copilot for Microsoft 365, the Copilot experience will automatically appear for them in the Microsoft 365 Apps. In some experiences, like Word, for example, a Copilot dialog will appear when creating a new document. In other experiences, Copilot is quickly accessible on the Ribbon. To use Copilot in Teams, users must [add the Copilot app](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
 
 ## Send welcome email
 
-After licensing your users for Microsoft Copilot for Microsoft 365, we recommend sending them a welcome email to introduce them to Microsoft Copilot for Microsoft 365 and help them understand what it can do for them. The easiest way to do this is to use the [Microsoft Copilot for Microsoft 365 setup guide](https://setup.microsoft.com/microsoft-365/copilot-setup-guide), which includes an option for sending a welcome email to your Copilot users. Here’s an example of this email:
+After licensing your users for Microsoft Copilot for Microsoft 365, we recommend sending them a welcome email to introduce them to Microsoft Copilot for Microsoft 365 and help them understand what it can do for them. The easiest way to do this is to use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide), which includes an option for sending a welcome email to your Copilot users. Here’s an example of this email:
 
 :::image type="content" source="media/eap-welcome-email.png" alt-text="A preview image of an email template for introducing Microsoft Copilot for Microsoft 365 and its capabilities that an admin can provide to users.":::
 
