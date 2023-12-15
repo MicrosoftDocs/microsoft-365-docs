@@ -33,12 +33,10 @@ The following table lists examples of device groups that you can use:
 | Writeable USBs     | List of USBs where write access is permitted  |
 | Other Devices     | Non-removable storage devices   |
 
+Access is determined by a list of entries. Each entry specifies:
 
+- Access: Read, Write, or Execute; and 
+- An action: Prevent, Deny, or Audit. 
 
-If no policies apply, then the default enforcement is applied. 
+For example, to have write access for some USB devices, and read access for other USB devices, you can use the following groups and policies, with default enforcement set to deny.
 
-The access is defined in a list of entries. An entry contains the Access (Read,Write, Execute) and Action (Prevent, Deny, Audit). 
-
-For example, to have write access for some USB devices, and read access for the other USB device, use following groups and policies with default enforcement set to deny.
-
-MORE TO COME!
