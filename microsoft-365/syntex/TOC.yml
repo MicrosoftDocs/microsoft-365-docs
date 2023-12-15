@@ -336,7 +336,7 @@
         - name: Microsoft Syntex REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
-    - name: Syntex-SharePoint Advanced Management
+    - name: SharePoint Advanced Management
       href: /sharepoint/advanced-management
 
 
