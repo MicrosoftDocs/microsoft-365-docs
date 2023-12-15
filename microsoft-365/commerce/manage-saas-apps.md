@@ -57,7 +57,7 @@ App providers sell their apps either at a flat rate, or by buying licenses for u
 
 ## Activate third-party apps
 
-As as admin, you must activate third-party apps before you can assign them to users. These apps are activated in the third-party publisher's portal.
+As an admin, you must activate third-party apps before you can assign them to users. These apps are activated in the third-party publisher's portal.
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. Find and select the app that you want to manage.

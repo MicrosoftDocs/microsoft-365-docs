@@ -475,7 +475,7 @@ This example creates the report submission policy with the following settings:
   - **Send reported messages to** \> **Microsoft only**: `-EnableReportToMicrosoft $true` is the default value, so you don't need to use the parameter. `-ReportJunkToCustomizedAddress $false`, `-ReportNotJunkToCustomizedAddress $false`, and `-ReportPhishToCustomizedAddress $false` are required.
 
   > [!TIP]
-  > The default value of the parameters that identify the the reporting mailbox is blank, which means the default reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets until _after_ the first user in the organization reports a message from Outlook.
+  > The default value of the parameters that identify the reporting mailbox is blank, which means the default reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets until _after_ the first user in the organization reports a message from Outlook.
 
 The remaining settings are the default values in "Other settings" as described in the [Use PowerShell to configure reporting in Outlook with report messages to Microsoft and the reporting mailbox](#use-powershell-to-configure-reporting-in-outlook-with-report-messages-to-microsoft-and-the-reporting-mailbox) section.
 
