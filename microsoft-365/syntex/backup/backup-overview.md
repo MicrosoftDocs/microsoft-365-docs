@@ -19,11 +19,12 @@ description: Learn about the backup and recovery capabilities for SharePoint, Ex
 
 # Overview of Microsoft 365 Backup (Preview)
 
-![Banner announcing worldwide availability of Microsoft 365 Backup.](../../media/content-understanding/backup-preview-banner.png)
-
+> [!NOTE]
+> Microsoft 365 Backup (Preview) is rolling out. When it is available worldwide, this message will be updated and you will be able to see and enable the feature in the Syntex billing setup flow in the Microsoft 365 admin center.
+<!---
 > [!NOTE]
 > This feature is currently in preview and subject to change and [limitations as defined](backup-limitations.md). Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
-
+--->
 ## About the preview
 
 Microsoft 365 Backup is currently in preview and will begin rolling out to organizations in early 2024. You can set up billing for the product as described in [Set up Microsoft 365 Backup](backup-setup.md). Once Microsoft 365 Backup has been deployed and is available for use in your tenant, you'll see it in the Microsoft 365 admin center page under **Settings**.
