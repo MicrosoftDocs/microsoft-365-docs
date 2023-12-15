@@ -3744,6 +3744,11 @@
       "source_path": "microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md",
       "redirect_url": "/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft",
       "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
+      "redirect_document_id": true
      }
    ]
  }

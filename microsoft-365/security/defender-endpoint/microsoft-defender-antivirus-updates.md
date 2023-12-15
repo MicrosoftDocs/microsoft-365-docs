@@ -141,7 +141,7 @@ All our updates contain
 
 - Improved processing of environment variables in protected folders list for [controlled folder access](controlled-folders.md)
 - Improved performance of [on-access scanning](configure-advanced-scan-types-microsoft-defender-antivirus.md) of files with Mark of the Web (MoTW)
-- Added support for Active Directory device groups with [device control](device-control-removable-storage-protection.md)
+- Added support for Active Directory device groups with [device control](device-control-overview.md)
 - Fixed an issue so that [ASROnlyPerRuleExclusions](/windows/client-management/mdm/defender-csp#configurationasronlyperruleexclusions) don't apply during an engine reboot
 - [Microsoft Defender Core service](microsoft-defender-antivirus-windows.md#microsoft-defender-core-service) is generally available for consumer devices and is coming soon for business customers.
 - Fixed an issue with device control so that device control policies remain enforced when a platform update requires a reboot

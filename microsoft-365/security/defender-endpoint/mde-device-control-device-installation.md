@@ -37,7 +37,7 @@ Microsoft Defender for Endpoint Device Control Device Installation enables you t
 - Allow people to install specific devices but prevent other devices.
 
 > [!NOTE]
-> To find the difference between Device Installation and Removable storage access control, see [Microsoft Defender for Endpoint Device Control Removable Storage Protection](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
+> To find the difference between Device Installation and Removable storage access control, see [Microsoft Defender for Endpoint Device Control Removable Storage Protection](/microsoft-365/security/defender-endpoint/device-control-overview#device-installation-and-removable-storage-access-control?view=o365-worldwide&preserve-view=true).
 
 |Privilege|Permission|
 |:---|:---|

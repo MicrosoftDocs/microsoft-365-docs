@@ -60,7 +60,7 @@ To configure attack surface reduction in your environment, follow these steps:
 
 4. [Enable controlled folder access](enable-controlled-folders.md).
 
-5. Enable [removable storage protection](device-control-removable-storage-protection.md)
+5. Enable [removable storage protection](device-control-overview.md)
 
 6. [Turn on network protection](enable-network-protection.md).
 
