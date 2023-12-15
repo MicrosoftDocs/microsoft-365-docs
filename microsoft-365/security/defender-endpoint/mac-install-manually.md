@@ -185,15 +185,10 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
 
 ## Verifying anti-malware detection
 
-To test that there is an anti-malware detection review:
-
-[AV detection test for verifying device's onboarding and reporting services](/microsoft-365/security/defender-endpoint/validate-antimalware)
+See the following article to test for anti-malware detection review: [Antivirus detection test to verify device onboarding and reporting services](validate-antimalware.md)
 
 ## Verifying EDR detection
-
-To test that there is an EDR detection review:
-
-[EDR detection test for verifying device's onboarding and reporting services](/microsoft-365/security/defender-endpoint/edr-detection)
+See the following article to test for an EDR detection review: [EDR detection test to verify device onboarding and reporting services](/microsoft-365/security/defender-endpoint/edr-detection.md)
 
 ## Logging installation issues
 
