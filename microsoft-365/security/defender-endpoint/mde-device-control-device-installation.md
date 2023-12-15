@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/18/2022
+ms.date: 12/15/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -29,15 +29,12 @@ search.appverid: met150
 
 
 > [!NOTE]
-> If you want to manage removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
+> Device installation is one type of device control policies. If you want to manage removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 
-Microsoft Defender for Endpoint Device Control Device Installation enables you to do the following task:
+Microsoft Defender for Endpoint Device Control Device Installation enables you to:
 
 - Prevent people from installing specific devices.
 - Allow people to install specific devices but prevent other devices.
-
-> [!NOTE]
-> To find the difference between Device Installation and Removable storage access control, see [Microsoft Defender for Endpoint Device Control Removable Storage Protection](/microsoft-365/security/defender-endpoint/device-control-overview#device-installation-and-removable-storage-access-control?view=o365-worldwide&preserve-view=true).
 
 |Privilege|Permission|
 |:---|:---|
@@ -48,9 +45,7 @@ Microsoft Defender for Endpoint Device Control Device Installation enables you t
 |User-based Support|No|
 |Machine-based Support|Yes|
 
-## Prepare your endpoints
-
-Deploy Device Installation on Windows 10, Windows 11 devices, Windows Server 2022.
+Device installation policies can be applied to devices running Windows 10, Windows 11, and Windows Server 2022.
 
 ## Device properties
 
@@ -248,29 +243,8 @@ In the Microsoft Intune admin center [https://endpoint.microsoft.com/](https://e
 
 #### Deploying and managing policy via Group Policy
 
-The Device installation feature allows you to apply policy through Group Policy.
+The Device installation feature allows you to apply policy through Group Policy. See [Manage Device Installation with Group Policy (Windows 10) - Windows Client](/windows/client-management/manage-device-installation-with-group-policy).
 
-#### Deploying policy
-
-See [Manage Device Installation with Group Policy (Windows 10) - Windows Client](/windows/client-management/manage-device-installation-with-group-policy).
-
-## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
-
-The [Microsoft Defender portal](https://sip.security.microsoft.com/homepage) shows removable storage blocked by the Device Control Device Installation.
-
-```kusto
-//events triggered by Device Installation policies
-DeviceEvents
-| where ActionType == "PnpDeviceBlocked" or ActionType == "PnpDeviceAllowed"
-| extend parsed=parse_json(AdditionalFields)
-| extend MediaClassGuid = tostring(parsed.ClassGuid)
-| extend MediaInstanceId = tostring(parsed.DeviceInstanceId)
-| extend MediaDeviceId = tostring(parsed.MatchingDeviceId)
-| project Timestamp , DeviceId, DeviceName, ActionType, MediaClassGuid, MediaDeviceId, MediaInstanceId, AdditionalFields
-| order by Timestamp desc
-```
-
-:::image type="content" source="../../media/block-removable-storage2.png" alt-text="The Block storage" lightbox="../../media/block-removable-storage2.png":::
 
 ## Frequently asked questions
 
@@ -290,4 +264,5 @@ DeviceRegistryEvents
 It is not enough to enable only a single hardware ID to enable a single USB thumb-drive. Ensure that all the USB devices that precede the target one aren't blocked (allowed) as well.
 
 :::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="The Device install faq" lightbox="../../media/devicemgrscrnshot.png":::
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
