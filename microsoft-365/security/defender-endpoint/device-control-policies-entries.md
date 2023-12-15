@@ -35,8 +35,8 @@ The following table lists examples of device groups that you can use:
 
 Access is determined by a list of entries. Each entry specifies:
 
-- Access: Read, Write, or Execute; and 
-- An action: Prevent, Deny, or Audit. 
+- **Access**: Read, Write, or Execute; and 
+- **Action**: Prevent, Deny, or Audit. 
 
 For example, to have write access for some USB devices, and read access for other USB devices, you can use the following groups and policies, with default enforcement set to deny.
 
