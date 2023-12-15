@@ -34,6 +34,8 @@ This article describes how to deploy Microsoft Defender for Endpoint on macOS ma
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
 - [Onboarding Package](#onboarding-package)
+- [Grant Full Disk Access](#allow-full-disk-access)
+- [Ensure Background Execution](#background-execution)
 
 ## Prerequisites and system requirements
 
@@ -112,7 +114,7 @@ To complete this process, you must have admin privileges on the device.
 
     To troubleshoot System Extension issues, refer [Troubleshoot System Extension](mac-support-sys-ext.md).
 
-## How to Allow Full Disk Access
+## Allow Full Disk Access
 
 The macOS Catalina (10.15) and newer versions require full disk access to be granted to **Microsoft Defender for Endpoint** in order to be able to protect and monitor.
 
@@ -142,6 +144,19 @@ To grant full disk access:
    To enable *Tamper Protection*, refer [Protect MacOS security settings with tamper protection](tamperprotection-macos.md).
 1. If you have the *Microsoft Purview – Endpoint data loss prevention license*,  you can review [Get started with Microsoft Purview - Endpoint data loss prevention](/purview/endpoint-dlp-getting-started).
 
+## Background execution
+
+Starting with macOS 13, a user must explicitly allow an application to run in background.
+macOS will pop a prompt up, telling the user that Microsoft Defender can run in background.
+
+:::image type="content" source="images/background-items-notification.png" alt-text="Background items notification":::
+
+You can view applications permitted to run in background in System Settings => Login Items => Allow in the Background at any time:
+
+:::image type="content" source="images/background-items.png" alt-text="Background items":::
+
+Make sure all Microsoft Defender and Microsoft Corporation items are enabled. If they are disabled then macOS will not start Microsoft Defender after a machine restart.
+
 ## Onboarding Package
 
 Once you have installed the MDE on macOS client, you must now onboard the package, which registers to your Microsoft Defender for Endpoint tenant and licenses it.
@@ -159,7 +174,7 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
 2. Run the Bash script to install the onboarding package:
 
     ```bash
-    Sudo bash -x MicrosoftDefenderATPOnboardingMacOs.sh
+    sudo bash -x MicrosoftDefenderATPOnboardingMacOs.sh
     ```
 
 3. Verify that the device is now associated with your organization and reports a valid org ID:
