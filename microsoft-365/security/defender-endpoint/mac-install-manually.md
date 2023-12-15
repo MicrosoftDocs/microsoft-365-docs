@@ -15,7 +15,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 12/13/2023
+ms.date: 12/15/2023
 ---
 
 # Manual deployment for Microsoft Defender for Endpoint on macOS
@@ -181,7 +181,7 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
   mdatp connectivity test 
   ```
 
- You can [troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/troubleshoot-cloud-connect-mdemac?view=o365-worldwide&branch=pr-en-us-22831&preserve-view=true).
+ You can [troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](troubleshoot-cloud-connect-mdemac.md).
 
 ## Verifying anti-malware detection
 
@@ -201,19 +201,19 @@ For more information on how to find the automatically generated log that's creat
 
 For information on troubleshooting procedures, see:
 
-- [Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-support-sys-ext?view=o365-worldwide)
+- [Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS](mac-support-sys-ext.md)
 
-- [Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-support-install?view=o365-worldwide)
+- [Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS](mac-support-install.md)
 
-- [Troubleshoot license issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-support-license?view=o365-worldwide)
+- [Troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md)
 
-- [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/troubleshoot-cloud-connect-mdemac?view=o365-worldwide)
+- [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](troubleshoot-cloud-connect-mdemac.md)
 
-- [Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-support-perf?view=o365-worldwide)
+- [Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](mac-support-perf.md)
 
 ## Uninstallation
 
-See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
+See [Uninstalling](mac-resources.md#uninstalling.md) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
 
   > [!Tip]
   > - Do you want to learn more? Engage with the Microsoft Security community in our Tech Community: [Microsoft Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bd-p/MicrosoftDefenderATP).  
