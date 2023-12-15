@@ -44,5 +44,5 @@ For example, to have write access for some USB devices, and read access for othe
 | Policy  | Included Device Groups | Excluded Device Groups  | Entry  |
 |---------|---------|---------|---------|
 | Write access for USBs  | Writeable USBs   |         | Write access  |
-| Read-only access for USBs  | All removable storage devices  | Writeable USBs  | Read-only access        |
-|Row3     |         |         |         |
+| Read-only access for USBs  | All removable storage devices  | Writeable USBs  | Read-only access  |
+| Full access for other devices   | Other devices   |         | Full access        |
