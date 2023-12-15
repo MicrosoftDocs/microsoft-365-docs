@@ -60,7 +60,9 @@ Follow these steps if you haven't already set up Intune and added the apps you n
 
 ## App protection
 
-App protection can be applied to supported managed apps on supported platform devices that are either enrolled with Microsoft Intune, enrolled in a third-party Mobile device management (MDM) solution, or aren't enrolled in any mobile device management solution. When creating an app protection policy, you choose the following details in the following order:
+App protection can be applied to supported managed apps on supported platform devices that are either enrolled with Microsoft Intune, enrolled in a third-party Mobile device management (MDM) solution, or aren't enrolled in any mobile device management solution. 
+
+When creating an app protection policy, you choose the following details in the following order:
 
 1. The platform
 2. The app you want to protect
@@ -69,6 +71,9 @@ App protection can be applied to supported managed apps on supported platform de
 5. The conditional launch settings for the app
 
 In addition to the above list, you can also choose scope tags and app assignments.
+
+> [!IMPORTANT]
+> The Intune Company Portal app is required on devices because it enables device users to receive app protection policies. For more information, see [How to configure the Intune Company Portal apps, Company Portal website, and Intune app](/mem/intune/apps/company-portal-app) and [Customize and configure the Company Portal](/microsoft-365/solutions/apps-config-step-1).
 
 ### App protection categories by platform
 

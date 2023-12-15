@@ -19,6 +19,11 @@ keywords:
 
 
 
+## Recommended app protection settings
+
+Use the following recommended app protection settings when creating and applying Intune app protection for Level 3 enterprise high data protection.
+
+[!INCLUDE [app-protection-framework-level3](/mem/intune/includes/app-protection-framework-level3)]
 
 ## Next step
 

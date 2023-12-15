@@ -20,31 +20,11 @@ Level 1 is the minimum data protection configuration for an enterprise mobile de
 
 The policies in level 1 enforce a reasonable data access level while minimizing the impact to users and mirror the default data protection and access requirements settings when creating an App Protection Policy within Microsoft Intune.
 
-## Recommended iOS/iPadOS Level 1 app protection settings
+## Recommended app protection settings
 
+Use the following recommended app protection settings when creating and applying Intune app protection for Level 2 enterprise enhanced data protection.
 
-### iOS/iPadOS data protection
-
-App protection policies divide iOS/iPadOS data protection into three categories:
-- Data transfer
-- Encryption
-- Functionality
-
-#### Data transfer
-
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-17.png" alt-text="iOS/iPadOS level 1 app protection - Data transfer settings" border="false" :::
-
-#### Encryption and functionality
-
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-18.png" alt-text="iOS/iPadOS level 1 app protection - Encryption and functionality settings" border="false" :::
-
-### iOS/iPadOS access requirements
-
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-19.png" alt-text="iOS/iPadOS level 1 app protection - Access requirements settings" border="false" :::
-
-
-
-
+[!INCLUDE [app-protection-framework-level2](/mem/intune/includes/app-protection-framework-level2)]
 
 ## Next step
 
