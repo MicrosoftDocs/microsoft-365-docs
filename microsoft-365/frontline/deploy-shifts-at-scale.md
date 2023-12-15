@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/12/2023
+ms.date: 12/15/2023
 
 ---
 
@@ -120,6 +120,9 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
     :::image type="content" source="media/dsas-deploy.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing the Deploy button for deploying Shifts. "lightbox="media/dsas-deploy.png":::
 
 1. Select the teams that you want to deploy Shifts to, and then choose **Next**.
+
+    > [!NOTE]
+    > If you haven't deployed your teams through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center, no teams will show up. You can only deploy Shifts at scale to frontline dynamic teams.
 
     :::image type="content" source="media/dsas-select-teams.png" alt-text="Screenshot of the Select teams page, showing a list of teams. "lightbox="media/dsas-select-teams.png":::
 
