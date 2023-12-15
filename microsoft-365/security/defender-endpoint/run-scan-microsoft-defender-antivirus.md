@@ -102,7 +102,8 @@ Use the following cmdlet:
 Set-MpPreference -QuickScanIncludeExclusions 1
 ```
 
-> [!NOTE] A value of `1` enables the inclusion of the antivirus excluded processes, folders, files, and extensions. A value of `0` (default) disables the inclusion of the antivirus excluded processes, folders, files, and extensions.
+> [!NOTE]
+> A value of `1` enables the inclusion of the antivirus excluded processes, folders, files, and extensions. A value of `0` (default) disables the inclusion of the antivirus excluded processes, folders, files, and extensions.
 
 For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 
