@@ -41,8 +41,8 @@ Access is determined by a list of entries. Each entry specifies:
 For example, to have write access for some USB devices, and read access for other USB devices, you can use the groups and policies that are listed in the following table, with default enforcement set to deny.
 
 
-|Column1  |Column2  |Column3  |Column4  |
+| Policy  | Included Device Groups | Excluded Device Groups  | Entry  |
 |---------|---------|---------|---------|
-|Row1     |         |         |         |
-|Row2     |         |         |         |
+| Write access for USBs  | Writeable USBs   |         | Write access  |
+| Read-only access for USBs  | All removable storage devices  | Writeable USBs  | Read-only access        |
 |Row3     |         |         |         |
