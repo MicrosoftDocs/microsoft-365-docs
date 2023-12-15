@@ -455,17 +455,13 @@ To deploy the onboarding package:
 1. Review the configuration profile. Click **Create**.
 1. Open **Devices** > **Configuration profiles** to see the created profile.
 
-## Step 16: Verifying anti-malware detection
+## Step 16: Verify anti-malware detection
 
-To test that there is an anti-malware detection review:
-
-[AV detection test for verifying device's onboarding and reporting services](/microsoft-365/security/defender-endpoint/validate-antimalware)
+See the following article to test for an anti-malware detection review: [AV detection test for verifying device's onboarding and reporting services](validate-antimalware.md)
 
 ## Step 17: Verifying EDR detection
 
-To test that there is an EDR detection review:
-
-[EDR detection test for verifying device's onboarding and reporting services](/microsoft-365/security/defender-endpoint/edr-detection)
+See the following article to test for an EDR detection review: [EDR detection test for verifying device onboarding and reporting services](edr-detection.md)
 
 ## Troubleshooting
 
