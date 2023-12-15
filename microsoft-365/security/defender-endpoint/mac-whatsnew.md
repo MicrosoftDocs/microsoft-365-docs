@@ -982,7 +982,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 >
 > The mechanism for granting this consent depends on how you deployed Microsoft Defender for Endpoint:
 >
-> - For manual deployments, see the updated instructions in the [Manual deployment topic](mac-install-manually.md#how-to-allow-full-disk-access).
+> - For manual deployments, see the updated instructions in the [Manual deployment topic](mac-install-manually.md#allow-full-disk-access).
 > - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
 
 - Performance improvements & bug fixes
