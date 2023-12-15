@@ -67,4 +67,4 @@ Here are some examples of device group definitions:
 
 ## Next steps
 
-
+- [View device control reports](device-control-report.md)
