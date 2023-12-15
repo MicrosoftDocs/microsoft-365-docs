@@ -60,7 +60,7 @@ To allow or block guest sharing, we use controls available in sensitivity labels
 
 ## Authentication context
 
-We use an [Microsoft Entra authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) to enforce more stringent access conditions when users access SharePoint sites.
+We use a [Microsoft Entra authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) to enforce more stringent access conditions when users access SharePoint sites.
 
 First, add an authentication context in Microsoft Entra ID.
 
