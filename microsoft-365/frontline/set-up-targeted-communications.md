@@ -35,7 +35,7 @@ Streamline and simplify communications for your frontline. After you map your at
 Your frontline teams must be created through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
 
 > [!NOTE]
-> Mapping frontline attributes is part of the setup process when you deploy frontlinet dynamice teams. It's an optional step. You decide whether to map attributes for targeted communications when you deploy your frontline dynamic teams.
+> Mapping frontline attributes is part of the setup process when you deploy frontline dynamic teams. It's an optional step. You decide whether to map attributes for targeted communications when you deploy your frontline dynamic teams.
 >
 > If you already deployed your frontline dynamic teams and you want to enable targeted communications, rerun the experience, and map your attributes.
 
