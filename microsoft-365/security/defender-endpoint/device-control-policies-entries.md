@@ -38,5 +38,11 @@ Access is determined by a list of entries. Each entry specifies:
 - **Access**: Read, Write, or Execute; and 
 - **Action**: Prevent, Deny, or Audit. 
 
-For example, to have write access for some USB devices, and read access for other USB devices, you can use the following groups and policies, with default enforcement set to deny.
+For example, to have write access for some USB devices, and read access for other USB devices, you can use the groups and policies that are listed in the following table, with default enforcement set to deny.
 
+
+|Column1  |Column2  |Column3  |Column4  |
+|---------|---------|---------|---------|
+|Row1     |         |         |         |
+|Row2     |         |         |         |
+|Row3     |         |         |         |
