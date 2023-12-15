@@ -57,3 +57,12 @@ This allows further refinement of the access control model.  The most common sce
 
 :::image type="content" source="media/rsac-default-enforce-deny2.png" alt-text="Diagram depicting allowed USBs by VID PID properties.":::
 
+Device groups appear as reusable settings in Intune. By editing an entry, the set of devices that are included can be controlled by using device properties.
+
+Here are some examples of device group definitions:
+
+- [Group of devices by Instance Path Id](https://github.com/microsoft/mdatp-devicecontrol/blob/c43f0ee80702f0a24f48b1d0f8302dd30a230586/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Approved%20USBs%20Group.xml#L2)
+- [Group of devices by VID_PID](https://github.com/microsoft/mdatp-devicecontrol/blob/c43f0ee80702f0a24f48b1d0f8302dd30a230586/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Unapproved%20USBs%20Group.xml#L2)
+- [Group of devices by Primary Id](https://github.com/microsoft/mdatp-devicecontrol/blob/c43f0ee80702f0a24f48b1d0f8302dd30a230586/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml)
+
+
