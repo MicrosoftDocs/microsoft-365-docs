@@ -32,7 +32,7 @@ Streamline and simplify communications for your frontline. By mapping frontline 
 
 Mapping frontline attributes is part of the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center. It’s an optional step. You decide whether to map attributes when you deploy your frontline dynamic teams.
 
-If you’ve already deployed your frontline dynamic teams and you want to enable targeted communications, rerun the experience, and map your attributes.
+If you already deployed your frontline dynamic teams and you want to enable targeted communications, rerun the experience, and map your attributes.
 
 ## Set up targeted communications
 
@@ -42,7 +42,7 @@ You map attributes on the Map frontline attributes page of the [deploy frontline
 
 ### View your mapped attribute values
 
-After you’ve mapped your attributes, you can view your list of mapped values. These values are enabled for targeted communications and represent the unique departments and job titles in your organization.
+After you mapped your attributes, you can view your list of mapped values. These values are enabled for targeted communications and represent the unique departments and job titles in your organization.
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline apps**.
 1. In the table, next to **Targeted communications**, choose **Review**.
