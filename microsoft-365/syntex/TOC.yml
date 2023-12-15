@@ -191,7 +191,7 @@
         - name: Find and manage terms 
           href: taxonomy-tagging.md
 
-    - name: Syntex eSignature 
+    - name: SharePoint eSignature 
       items: 
         - name: Overview 
           href: esignature-overview.md
