@@ -22,7 +22,9 @@ description: "Learn how to provide Copilot for Microsoft 365 feedback to Microso
 
 # Provide user feedback for Microsoft Copilot for Microsoft 365
 
-Microsoft Copilot for Microsoft 365 is a product that helps users boost their productivity with large-language models (LLM). Given Copilot’s strengths and limitations, which may produce errors or unexpected outcomes, feedback is essential to improve the product and make it more dependable. Copilot for Microsoft 365 currently allows user-initiated feedback. As an admin, you can give feedback to supplement the user-initiated process. This helps Microsoft receive user feedback in case users are unable to do so and provides comprehensive diagnostic data to aid in debugging. By providing feedback on behalf of your users, you can help enhance the overall experience of Copilot for your organization by improving the quality and relevance of its responses.
+Microsoft Copilot for Microsoft 365 is a product that helps users boost their productivity with large-language models (LLM). While Copilot is designed to provide accurate and informative responses based on the knowledge and data available in the Microsoft Graph, it's important to note that answers may not always be completely accurate. This is because Copilot generates responses based on patterns and probabilities in language data. Providing feedback is essential to improve the product and make it more dependable for users.
+
+Copilot for Microsoft 365 currently allows user-initiated feedback. As an admin, you can give feedback to supplement the user-initiated process. This helps Microsoft receive comprehensive diagnostic data to aid in debugging, especially in cases where users may not be able to provide feedback themselves. By providing feedback on behalf of your users, you can help enhance the overall experience of Copilot for your organization by improving the quality and relevance of its responses.
 
 This article explains how you can initiate feedback on behalf of your users.
 
