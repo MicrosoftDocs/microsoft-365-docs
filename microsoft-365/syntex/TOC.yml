@@ -225,6 +225,8 @@
           href: archive/archive-compliance.md
         - name: End user experience 
           href: archive/archive-end-user.md
+        - name: FAQs
+          href: archive/archive-faq.md
 
     - name: Microsoft 365 Backup (Preview)
       items: 
