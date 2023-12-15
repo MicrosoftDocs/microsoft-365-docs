@@ -4,7 +4,7 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 12/14/2023
+ms.date: 12/15/2023
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -29,9 +29,9 @@ Device control capabilities in Microsoft Defender for Endpoint enable your secur
 - Allow users to install and use specific devices
 - Allow users to install and use only [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/)-encrypted devices with Windows computers
 
-This list is intended to provide some examples. It’s not an exhaustive list; there are other examples to consider (see the use cases section in this article). 
+This list is intended to provide some examples. It's not an exhaustive list; there are other examples to consider (see the use cases section in this article). 
 
-Device control helps protect your organization from potential data loss, malware, or other cyberthreats by allowing or preventing certain devices to be connected to users’ computers. With device control, your security team can determine whether and what peripheral devices users can install and use on their computers. 
+Device control helps protect your organization from potential data loss, malware, or other cyberthreats by allowing or preventing certain devices to be connected to users' computers. With device control, your security team can determine whether and what peripheral devices users can install and use on their computers. 
 
 ## Device installation and removable storage access control
 
@@ -44,7 +44,7 @@ Device control capabilities in Defender for Endpoint can be organized into two m
 
 This article focuses on device control capabilities that are available in Defender for Endpoint. However, there are other capabilities to govern the use of peripheral devices that might be available to you, depending on what your subscription includes. These capabilities include:
 
-- **Endpoint data loss prevention** (Endpoint DLP). Endpoint DLP monitors sensitive information on devices that are onboarded to Microsoft Purview solutions. DLP policies can enforce protective actions on sensitive information and where it’s stored or used. [Learn about Endpoint DLP](/purview/endpoint-dlp-learn-about).
+- **Endpoint data loss prevention** (Endpoint DLP). Endpoint DLP monitors sensitive information on devices that are onboarded to Microsoft Purview solutions. DLP policies can enforce protective actions on sensitive information and where it's stored or used. [Learn about Endpoint DLP](/purview/endpoint-dlp-learn-about).
 - **BitLocker and Intune**. [BitLocker](/windows/security/operating-system-security/data-protection/encrypted-hard-drive) is a Windows security feature that provides encryption for entire volumes. Together with Intune, policies can be configured to enforce encryption on devices using BitLocker for Windows and FileVault for Mac. For more information, see [Disk encryption policy settings for endpoint security in Intune](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 - **Administrative Templates (ADMX) and Intune**. You can use ADMX templates to create policies that restrict or allow specific types of USB devices to be used with computers. For more information, see [Restrict USB devices and allow specific USB devices using ADMX templates in Intune](/mem/intune/configuration/administrative-templates-restrict-usb).
 
@@ -70,8 +70,8 @@ This section lists scenarios and use cases for device control. Select a tab, rev
 
 | Scenario | Device control policy |
 |---|---|
-| Prevent installation of a specific USB device | Device Installation |
-| Prevent installation of all USB devices while allowing an installation of only an authorized USB | Device Installation |
+| Prevent installation of a specific USB device | [Device Installation](mde-device-control-device-installation.md) |
+| Prevent installation of all USB devices while allowing an installation of only an authorized USB | [Device Installation](mde-device-control-device-installation.md) |
 | Prevent copying of sensitive files to USB | Endpoint DLP |
 | Block write access to removable data drives not protected by BitLocker | BitLocker |
 | Block write access to devices configured in another organization | BitLocker |
@@ -87,9 +87,9 @@ This section lists scenarios and use cases for device control. Select a tab, rev
 | Block people from printing via non-corporate printer | Device Control Printer Protection |
 | Only Allow specific USB printer(s) by VID/PID | Device Control Printer Protection |
 | Block printing of sensitive documents to any printer | Endpoint DLP |
-| Prevent installation of all printers | Device Installation |
-| Prevent installation of a specific printer | Device Installation |
-| Prevent installation of all printers while allowing a specific printer to be installed | Device Installation |
+| Prevent installation of all printers | [Device Installation](mde-device-control-device-installation.md) |
+| Prevent installation of a specific printer | [Device Installation](mde-device-control-device-installation.md) |
+| Prevent installation of all printers while allowing a specific printer to be installed | [Device Installation](mde-device-control-device-installation.md) |
 
 ## [**Bluetooth**](#tab/Bluetooth)
 

@@ -546,7 +546,7 @@
         items:
         - name: Overview of device control
           href: device-control-overview.md
-        - name: Device control policies and entries
+        - name: Device control policies
           href: device-control-policies-entries.md
         - name: Device installation
           href: mde-device-control-device-installation.md
