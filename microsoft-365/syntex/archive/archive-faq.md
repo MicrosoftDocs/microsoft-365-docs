@@ -27,7 +27,7 @@ description: Read frequently asked questions about Microsoft 365 Archive.
 
 - Storage for archived sites is metered and charged at a $0.05/GB/month rate vs. the normal standard storage rate of $0.20/GB/month. For more information, see [Pricing model for Microsoft 365 Archive (Preview)](archive-pricing.md).
 
-- The site lifecycle management feature in SharePoint Advanced Management is a separate licensed offering that helps automate and orchestrate the movement of sites into the archive tier via admin-defined policies to remove manual operations. In other words, SharePoint Advanced Management site lifecycle management operates in conjunction with SharePoint Advanced Management site lifecycle management.
+- The site lifecycle management feature in SharePoint Advanced Management is a separate licensed offering that helps automate and orchestrate the movement of sites into the archive tier via admin-defined policies to remove manual operations. In other words, the site lifecycle management in SharePoint Advanced Management operates in conjunction with Microsoft 365 Archive.
 
 #### How does Azure Blob compare to Microsoft 365 Archive?
 
@@ -35,7 +35,7 @@ Microsoft 365 Archive allows you to keep your data in place in SharePoint, provi
 
 - Archiving happens very quickly, usually withing minutes, regardless of the amount or size of content being archived.
 
-- No need to manage data in a separate security and compliance domain, thereby allowing your security and compliance tooling to operate seamlessly—including eDiscovery, retention policies, and so on. For more information, see the product documentation.
+- No need to manage data in a separate security and compliance domain, thereby allowing your security and compliance tooling to operate seamlessly—including eDiscovery, retention policies, and more.
 
 - Admin search indexes remain intact.
 
