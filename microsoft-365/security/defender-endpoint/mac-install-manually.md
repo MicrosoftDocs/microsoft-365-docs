@@ -15,7 +15,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 11/20/2023
+ms.date: 12/13/2023
 ---
 
 # Manual deployment for Microsoft Defender for Endpoint on macOS
