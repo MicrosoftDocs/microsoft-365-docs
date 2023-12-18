@@ -99,10 +99,10 @@ Admins can perform the following tasks for Loop workspaces, which are containers
 - PowerShell ability to
   - enumeration of list of Loop workspaces created
   - get container details including labels, storage, owners etc.
-  - delete, recover and purge deleted Loop workspaces
+  - delete Loop workspaces
   - set sharing settings at a tenant level
 
-See more about how to use PowerShell to perform these tasks in the [SharePoint Embedded admin management documentation](/microsoft-365/syntex/powershell-syntex-intro).
+See more about how to use PowerShell to perform these tasks in the [Consuming Tenant admin](/sharepoint/dev/embedded/concepts/admin-exp/cta).
 
 ### Capabilities that aren't yet available
 
@@ -111,7 +111,7 @@ See more about how to use PowerShell to perform these tasks in the [SharePoint E
   - add storage to enumeration list of Loop workspace
   - control external sharing of a Loop workspace
   - **Multi-Geo capabilities**, including creation of .loop files in a user's Loop workspaces in the geo that matches the user's preferred data location, and **Multi-Geo rehome** of Loop workspaces and .loop files as needed
-  - delete and restore Loop workspaces
+  - recover and purge deleted Loop workspaces
   - get and set sensitivity labels, conditional access policy, block download policy
 - SharePoint Admin Center
   - Loop workspaces page for active and deleted workspaces, restore, permanently delete, sort, filter, storage information
