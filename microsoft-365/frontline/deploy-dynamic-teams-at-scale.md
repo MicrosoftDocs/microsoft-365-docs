@@ -48,7 +48,7 @@ Team membership is automatically managed over time through the power of dynamic 
 
 - Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
 - Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale.
-- If you want to enable targeted communication features for your frontline, ensure you can map the attributes of your frontline workers through data available in Microsoft Entra ID. If user profile information doesn’t yet include job title or department, you can add it. [Learn more about how to add or update a user’s profile information in Microsoft Entra ID](/entra/fundamentals/how-to-manage-user-profile-info).  
+- To enable [targeted communications](set-up-targeted-communications.md), ensure you can map the attributes of your frontline workers through data available in Microsoft Entra ID. If user profile information doesn’t yet include job title or department, you can add it. [Learn more about how to add or update a user’s profile information in Microsoft Entra ID](/entra/fundamentals/how-to-manage-user-profile-info).  
 
 When evaluating the right solution for your organization, we recommend you do the following:
 
@@ -91,7 +91,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
 1. On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
-    These attributes map departments and job titles in your organization, which allows you to deliver targeted communications features, such as automatic tags, to your frontline. Your frontline workers can quickly and easily reach the right group of people through tags that are automatically created based on the attribute mappings. [Learn more about attribute mapping for targeted communications]().
+    These attributes map departments and job titles in your organization, which allows you to deliver targeted communications features, such as automatic tags, to your frontline. Your frontline workers can quickly and easily reach the right group of people through tags that are automatically created based on the attribute mappings. [Learn more about attribute mapping for targeted communications](set-up-targeted-communications.md).
 
     > [!NOTE]
     > This step is optional. If you choose to not map frontline attributes, leave the values as **None**. You can always come back and map them later.
