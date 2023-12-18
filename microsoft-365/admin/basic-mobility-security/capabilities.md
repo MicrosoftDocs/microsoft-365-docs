@@ -101,9 +101,12 @@ The following sections list the policy settings you can use to help secure and m
 |Require an alphanumeric password|Yes|No|No|
 |Minimum password length|Yes|Yes|Yes|
 |Number of sign-in failures before device is wiped|Yes|Yes|Yes|
-|Minutes of inactivity before device is locked|Yes|Yes|Yes|
+|Minutes of inactivity before device is locked|Yes|No|No|
 |Password expiration (days)|Yes|Yes|Yes|
 |Remember password history and prevent reuse|Yes|Yes|Yes|
+
+> [!IMPORTANT]
+> **Lock devices if they are inactive for this many minutes** is no longer supported for Android and Samsung Knox.
 
 ## Encryption settings
 
