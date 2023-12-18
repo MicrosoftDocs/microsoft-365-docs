@@ -26,7 +26,7 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
 # Manage Office Scripts settings
 
-[Office Scripts](/office/dev/scripts) allows users to automate tasks by recording, editing, and running scripts in Excel on the web. Office Scripts works with Power Automate, and users run scripts on workbooks by using the Excel Online (Business) connector. Microsoft 365 admins can manage Office Scripts settings from the Microsoft 365 admin center.
+[Office Scripts](/office/dev/scripts) allows users to automate tasks by recording, editing, and running scripts in Excel. Office Scripts works with Power Automate, and users run scripts on workbooks by using the Excel Online (Business) connector. Microsoft 365 admins can manage Office Scripts settings from the Microsoft 365 admin center.
 
 ## Before you begin
 
@@ -48,9 +48,9 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
 2. Select **Office Scripts**.
 
-3. Office Scripts is turned on by default, and everyone in your organization can access and use the feature and share scripts. To turn off Office Scripts for your organization, clear the **Let users automate their tasks in Excel on the web** check box.
+3. Office Scripts is turned on by default, and everyone in your organization can access and use the feature and share scripts. To turn off Office Scripts for your organization, clear the **Let users automate their tasks in Excel** check box.
 
-4. If you previously turned off Office Scripts for your organization and you want to turn it back on, select **Let users automate their tasks in Excel on the web**, and then specify who can access and use the feature:
+4. If you previously turned off Office Scripts for your organization and you want to turn it back on, select **Let users automate their tasks in Excel**, and then specify who can access and use the feature:
 
     - To allow all users in your organization to access and use Office Scripts, leave **Everyone** (the default) selected.
 
@@ -115,5 +115,5 @@ Because Office Scripts works with Power Automate, we recommend that you review y
 
 [Office Scripts technical documentation](/office/dev/scripts/) (link page)\
 [Introduction to Office Scripts in Excel](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a) (article)\
-[Sharing Office Scripts in Excel for the Web](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b) (article)\
-[Record, edit, and create Office Scripts in Excel on the web](/office/dev/scripts/tutorials/excel-tutorial) (article)
+[Sharing Office Scripts in Excel](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b) (article)\
+[Record, edit, and create Office Scripts in Excel](/office/dev/scripts/tutorials/excel-tutorial) (article)
