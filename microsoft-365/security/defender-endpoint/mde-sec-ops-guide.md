@@ -48,7 +48,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
    - Device management 
    - Configure Microsoft Defender Security Center time zone settings 
 
-- **Set up Microsoft 365 Defender incident notifications** <p> To get email notifications on defined Microsoft Defender XDR incidents, it's recommended that you configure email notifications. See [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email).
+- **Set up Microsoft Defender XDR incident notifications** <p> To get email notifications on defined Microsoft Defender XDR incidents, it's recommended that you configure email notifications. See [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email).
 
 - **Connect to SIEM (Sentinel)** <p> If you have existing security information and event management (SIEM) tools, you can integrate them with Microsoft Defender XDR. See [Integrate your SIEM tools with Microsoft Defender XDR](../defender/configure-siem-defender.md) and [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 
@@ -64,7 +64,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 ### Security operations team  
 
-- **Monitor the Microsoft 365 Defender Incidents queue**
+- **Monitor the Microsoft Defender XDR Incidents queue**
 
     When Microsoft Defender for Endpoint identifies Indicators of compromise (IOCs) or Indicators of attack (IOAs) and generates an alert, the alert is included in an incident and displayed in the **Incidents** queue in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
     

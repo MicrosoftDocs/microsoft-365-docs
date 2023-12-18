@@ -21,15 +21,16 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 05/18/2023
+ms.date: 12/04/2023
 ---
 
 # Manage incidents in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
+
 - Microsoft Defender XDR
 
 Incident management is critical to ensuring that incidents are named, assigned, and tagged to optimize time in your incident workflow and more quickly contain and address threats.
@@ -82,7 +83,7 @@ If an incident has not yet been assigned, you can select the **Assign to** box a
 You can get a list of incidents assigned to you by filtering the incident queue. 
 
 1. From the incident queue, select **Filters**.
-2. in the **Incident assignment** section, clear **Select all** and select **Assigned to me**.
+2. In the **Incident assignment** section, clear **Select all**. Select **Assigned to me**, **Assigned to another user**, or **Assigned to a user group**.
 3. Select **Apply**, and then close the **Filters** pane.
 
 You can then save the resulting URL in your browser as a bookmark to quickly see the list of incidents assigned to you.
@@ -121,4 +122,4 @@ For resolved incidents, perform a [post-incident review](first-incident-post.md)
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Investigate incidents](investigate-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

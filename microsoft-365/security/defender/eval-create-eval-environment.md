@@ -67,4 +67,4 @@ The second is to  [Set up your Microsoft Defender XDR trial lab environment](set
 [Learn how to enable Microsoft 365 for Identity](eval-defender-identity-overview.md)
 
 Or return to the Overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

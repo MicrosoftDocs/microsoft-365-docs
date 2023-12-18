@@ -21,7 +21,7 @@ ms.date: 12/18/2020
 
 # Contact Microsoft Defender for Endpoint support
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -44,7 +44,7 @@ It's important to know the specific roles that have permission to open support c
 
 At a minimum, you must have a Service Support Administrator **OR** Helpdesk Administrator role.
 
-For more information on which roles have permission, see, [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
+For more information on which roles have permission, see [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). 
 
 For general information on admin roles, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 

@@ -6,8 +6,8 @@ ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,7 +23,7 @@ ms.date: 02/27/2023
 
 # Create and manage device tags
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
