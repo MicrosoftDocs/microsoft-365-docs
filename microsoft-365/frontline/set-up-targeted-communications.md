@@ -53,6 +53,8 @@ After you mapped your attributes, you can view your list of mapped values. These
 1. In the table, next to **Targeted communications**, choose **Review**.
 1. Your mapped values are listed under **Values status**.
 
+    :::image type="content" source="media/targeted-comms-view-values.png" alt-text="Screenshot of the option in team settings to @mention groups based on job title or department" lightbox="media/targeted-comms-view-values.png"::
+
     If your organization has new departments or job titles that aren’t in the list, choose **Refresh values** to update the list. Keep in mind that this process can take several hours to complete. 
 
     > [!NOTE]
@@ -71,6 +73,8 @@ Automatic tags are created and available after you map your attributes. To allow
 - **Admins**: Make sure tags is turned on for your organization. In the Teams admin center, go to **Teams** > **Teams settings**.  Under **Tagging**, check that the **Who can manage tags** setting is set to an option other than **Not enabled**.
 
 - **Team owners**: In Teams, team owners must select the **Show members the option to @mention groups based on job title or department. This will notify everyone in that group.** check box in team settings for each of their respective teams.
+
+    :::image type="content" source="media/targeted-comms-automatic-tags-setting.png" alt-text="Screenshot of the option in team settings to @mention groups based on job title or department" lightbox="media/targeted-comms-automatic-tags-setting.png":::
 
 ## Related articles
 
