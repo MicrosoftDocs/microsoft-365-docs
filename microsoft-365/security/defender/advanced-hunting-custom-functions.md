@@ -100,7 +100,7 @@ You can delete functions from **My functions** and functions you created in **Sh
 
 To delete a function, select the three dots to the right of the function and select **Delete**.
 
-![Delete function](../../media/advanced-hunting-custom-fxns/delete-function.png)
+![Screenshot that shows how to delete a custom function.](../../media/advanced-hunting-custom-fxns/delete-function.png)
 ## See also
 
 - [Advanced hunting overview](advanced-hunting-overview.md)
