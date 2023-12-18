@@ -53,7 +53,7 @@ After you mapped your attributes, you can view your list of mapped values. These
 1. In the table, next to **Targeted communications**, choose **Review**.
 1. Your mapped values are listed under **Values status**.
 
-    :::image type="content" source="media/targeted-comms-view-values.png" alt-text="Screenshot of the option in team settings to @mention groups based on job title or department" lightbox="media/targeted-comms-view-values.png"::
+    :::image type="content" source="media/targeted-comms-view-values.png" alt-text="Screenshot of the Targeted communications page in the Teams admin center, showing list of mapped attribute values." lightbox="media/targeted-comms-view-values.png":::
 
     If your organization has new departments or job titles that aren’t in the list, choose **Refresh values** to update the list. Keep in mind that this process can take several hours to complete. 
 
