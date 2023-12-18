@@ -1,5 +1,5 @@
 ---
-title: Map frontline attributes for targeted communications
+title: Set up targeted communications for your frontline
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
@@ -8,7 +8,7 @@ ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Map your frontline attributes to enable targeted communications for your frontline teams. 
+description: Learn how to your frontline attributes to enable targeted communications features, such as automatic tags, for your frontline teams. 
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
@@ -20,7 +20,7 @@ ms.date:
 
 ---
 
-# Map frontline attributes for targeted communications
+# Set up for targeted communications for your frontline
 
 ## Overview
 
