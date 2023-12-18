@@ -96,7 +96,7 @@ If the function code is already loaded to the editor, you can also select **Save
 
 ## Delete a custom function
 
-You can delete functions from **My functions** and functions you created in **Shared functions**. You cannot delete functions that you have not created, unless you have the necessary permissions.
+You can delete functions from **My functions** and functions you created in **Shared functions**. You cannot delete functions that you have not created, unless you have security data manage permissions.
 
 To delete a function, select the three dots to the right of the function and select **Delete**.
 
