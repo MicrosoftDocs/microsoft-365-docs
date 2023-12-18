@@ -46,12 +46,12 @@ To provide feedback to Microsoft on behalf of a user who encountered a problem w
 
 2. Find **Copilot diagnostic logs** and select it to open the Copilot feedback diagnostic logs pane. Review the information and then select **Get started**.
 
-:::image type="content" source="media/copilot-feedback-get-started.png" alt-text="Screenshot showing the side pane to get started with submitting user feedback for Copilot." lightbox="media/copilot-feedback-get-started.png":::
+   :::image type="content" source="media/copilot-feedback-get-started.png" alt-text="Screenshot showing the side pane to get started with submitting user feedback for Copilot." lightbox="media/copilot-feedback-get-started.png":::
 
 3. Enter the email address of the user who reported the issue. Then, choose the number of rounds of conversations that you’d like to share with Microsoft, and then select **Review**.
 
-> [!NOTE]
-> The maximum number of conversations you can share is 30.
+   > [!NOTE]
+   > The maximum number of conversations you can share is 30.
 
 4. After a short wait, you’ll receive a JSON file containing the user's conversations with Copilot for the past X interactions (utterance/response pairs) that you select, along with their feedback logs. The file will be redacted to protect Microsoft IP, if any. You can use any JSON viewer tool to inspect the data and include additional comments for the feedback. The file will be available for download once it's generated.
 
@@ -61,7 +61,7 @@ To provide feedback to Microsoft on behalf of a user who encountered a problem w
 
 7. Once you select **Submit**, the user who you submitted feedback on behalf of receives an automatic email from Microsoft to inform them about the feedback submission.
 
-:::image type="content" source="media/copilot-user-feedback-email.jpg" alt-text="Screenshot showing the email users receive when their feedback has been submitted by an admin." lightbox="media/copilot-user-feedback-email.jpg":::
+   :::image type="content" source="media/copilot-user-feedback-email.jpg" alt-text="Screenshot showing the email users receive when their feedback has been submitted by an admin." lightbox="media/copilot-user-feedback-email.jpg":::
 
 8.  The Microsoft product team will use the data in the zip file to troubleshoot and resolve the issue by correlating it with other backend systems.
 
@@ -69,7 +69,7 @@ To provide feedback to Microsoft on behalf of a user who encountered a problem w
 
 For more information on how Microsoft protects your data, refer to the Microsoft Privacy Statement and the Microsoft Copilot Terms of Use: [My Account - Settings & Privacy](https://myaccount.microsoft.com/settingsandprivacy/privacy).
 
-For more information about privacy with Microsoft Copilot for Microsoft 365, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365.](microsoft-365-copilot-privacy.md)
+For more information about privacy with Microsoft Copilot for Microsoft 365, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md).
 
 ## Additional resources
 
