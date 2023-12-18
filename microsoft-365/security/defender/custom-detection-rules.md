@@ -1,11 +1,11 @@
 ---
-title: Create and manage custom detection rules in Microsoft 365 Defender
+title: Create and manage custom detection rules in Microsoft Defender XDR
 description: Learn how to create and manage custom detections rules based on advanced hunting queries
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, rules, schema, kusto, RBAC, permissions, Microsoft Defender for Endpoint
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, rules, schema, kusto, RBAC, permissions, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -26,10 +26,10 @@ ms.date: 02/16/2021
 
 # Create and manage custom detections rules
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Custom detection rules are rules you can design and tweak using [advanced hunting](advanced-hunting-overview.md) queries. These rules let you proactively monitor various events and system states, including suspected breach activity and misconfigured endpoints. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
@@ -37,12 +37,12 @@ Custom detection rules are rules you can design and tweak using [advanced huntin
 
 To manage custom detections, you need to be assigned one of these roles:
 
-- **Security settings (manage)**—Users with this [Microsoft 365 Defender permission](/microsoft-365/security/defender/manage-rbac) can manage security settings in the Microsoft 365 Defender portal.
-- **Security administrator**—Users with this [Azure Active Directory role](/azure/active-directory/roles/permissions-reference#security-administrator) can manage security settings in the Microsoft 365 Defender portal and other portals and services.
+- **Security settings (manage)**—Users with this [Microsoft Defender XDR permission](/microsoft-365/security/defender/manage-rbac) can manage security settings in the Microsoft Defender portal.
+- **Security administrator**—Users with this [Microsoft Entra role](/azure/active-directory/roles/permissions-reference#security-administrator) can manage security settings in the Microsoft Defender portal and other portals and services.
 
-- **Security operator**—Users with this [Azure Active Directory role](/azure/active-directory/roles/permissions-reference#security-operator) can manage alerts and have global read-only access to security-related features, including all information in the Microsoft 365 Defender portal. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender for Endpoint. If you have RBAC configured, you also need the **manage security settings** permission for Defender for Endpoint.
+- **Security operator**—Users with this [Microsoft Entra role](/azure/active-directory/roles/permissions-reference#security-operator) can manage alerts and have global read-only access to security-related features, including all information in the Microsoft Defender portal. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender for Endpoint. If you have RBAC configured, you also need the **manage security settings** permission for Defender for Endpoint.
 
-You can also manage custom detections that apply to data from specific Microsoft 365 Defender solutions if you have permissions for them. If you only have manage permissions for Microsoft Defender for Office 365, for instance, you can create custom detections using `Email` tables but not `Identity` tables.
+You can also manage custom detections that apply to data from specific Microsoft Defender XDR solutions if you have permissions for them. If you only have manage permissions for Microsoft Defender for Office 365, for instance, you can create custom detections using `Email` tables but not `Identity` tables.
 
 
 > [!NOTE]
@@ -51,7 +51,7 @@ You can also manage custom detections that apply to data from specific Microsoft
 To manage required permissions, a **global administrator** can:
 
 - Assign the **security administrator** or **security operator** role in [Microsoft 365 admin center](https://admin.microsoft.com/) under **Roles** \> **Security admin**.
-- Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft 365 Defender](https://security.microsoft.com/) under **Settings** \> **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
+- Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft Defender XDR](https://security.microsoft.com/) under **Settings** \> **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
 
 > [!NOTE]
 > A user also needs to have the appropriate permissions for the devices in the [device scope](#5-set-the-rule-scope) of a custom detection rule that they are creating or editing before they can proceed. A user can't edit a custom detection rule that is scoped to run on all devices, if the same user does not permissions for all devices. 
@@ -62,7 +62,7 @@ To manage required permissions, a **global administrator** can:
 
 ### 1. Prepare the query
 
-In the Microsoft 365 Defender portal, go to **Advanced hunting** and select an existing query or create a new query. When using a new query, run the query to identify errors and understand possible results.
+In the Microsoft Defender portal, go to **Advanced hunting** and select an existing query or create a new query. When using a new query, run the query to identify errors and understand possible results.
 
 > [!IMPORTANT]
 > To prevent the service from returning too many alerts, each rule is limited to generating only 100 alerts whenever it runs. Before creating a rule, tweak your query to avoid alerting for normal, day-to-day activity.
@@ -171,7 +171,7 @@ Near real-time detections are supported for the following tables:
 - `DeviceProcessEvents`
 - `DeviceRegistryEvents`
 - `EmailAttachmentInfo`
-- `EmailEvents`
+- `EmailEvents` (except `LatestDeliveryLocation` and `LatestDeliveryAction` columns)
 - `EmailPostDeliveryEvents`
 - `EmailUrlInfo`
 - `IdentityDirectoryEvents`
@@ -195,7 +195,7 @@ You can select only one column for each entity type (mailbox, user, or device). 
 
 Your custom detection rule can automatically take actions on devices, files, users, or emails that are returned by the query.
 
-:::image type="content" source="../../media/ah-custom-actions.png" alt-text="Screenshot that shows actions for custom detections in the Microsoft 365 Defender portal." lightbox="../../media/ah-custom-actions.png":::
+:::image type="content" source="../../media/ah-custom-actions.png" alt-text="Screenshot that shows actions for custom detections in the Microsoft Defender portal." lightbox="../../media/ah-custom-actions.png":::
 
 #### Actions on devices
 
@@ -215,7 +215,7 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 
 #### Actions on users
 
-- When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. This action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](/azure/active-directory/identity-protection/overview-identity-protection).
+- When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. This action sets the users risk level to "high" in Microsoft Entra ID, triggering corresponding [identity protection policies](/azure/active-directory/identity-protection/overview-identity-protection).
 
 - Select **Disable user** to temporarily prevent a user from logging in.
 - Select **Force password reset** to prompt the user to change their password on the next sign in session.
@@ -264,7 +264,7 @@ After reviewing the rule, select **Create** to save it. The custom detection rul
 You can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
 
 > [!TIP]
-> Alerts raised by custom detections are available over alerts and incident APIs. For more information, see [Supported Microsoft 365 Defender APIs](api-supported.md).
+> Alerts raised by custom detections are available over alerts and incident APIs. For more information, see [Supported Microsoft Defender XDR APIs](api-supported.md).
 
 ### View existing rules
 
@@ -279,7 +279,7 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detection rules** and then select the name of rule. You can then view general information about the rule, including information, its run status, and scope. The page also provides the list of triggered alerts and actions.
 
-:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="The Custom detection rule details page in the Microsoft 365 Defender portal" lightbox="../../media/custom-detect-rules-view.png":::
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="The Custom detection rule details page in the Microsoft Defender portal" lightbox="../../media/custom-detect-rules-view.png":::
 
 You can also take the following actions on the rule from this page:
 
@@ -306,7 +306,7 @@ In the rule details screen (**Hunting** \> **Custom detections** \> **[Rule name
 > To quickly view information and take action on an item in a table, use the selection column [&#10003;] at the left of the table.
 
 > [!NOTE]
-> Some columns in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
+> Some columns in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft Defender XDR](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft Defender XDR by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## See also
 
@@ -314,4 +314,4 @@ In the rule details screen (**Hunting** \> **Custom detections** \> **[Rule name
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the advanced hunting query language](advanced-hunting-query-language.md)
 - [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

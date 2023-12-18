@@ -2,7 +2,7 @@
 title: Set preferences for Microsoft Defender for Endpoint on Mac
 description: Configure Microsoft Defender for Endpoint on Mac in enterprise organizations.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos,  big sur, monterey, ventura, mde for mac
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -13,14 +13,14 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 06/22/2023
 ---
 
 # Set preferences for Microsoft Defender for Endpoint on macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
@@ -616,7 +616,7 @@ Manage the preferences of the endpoint detection and response (EDR) component of
 
 Specify a tag name and its value.
 
-- The GROUP tag, tags the device with the specified value. The tag is reflected in the portal under the device page and can be used for filtering and grouping devices.
+- The GROUP tag marks the device with the specified value. The tag is reflected in the portal under the device page and can be used for filtering and grouping devices.
 
 <br>
 
@@ -1269,7 +1269,7 @@ The property list must be a valid *.plist* file. This can be checked by executin
 plutil -lint com.microsoft.wdav.plist
 ```
 
-```Output
+```console
 com.microsoft.wdav.plist: OK
 ```
 
@@ -1288,9 +1288,9 @@ From the JAMF console, open **Computers** \> **Configuration Profiles**, navigat
 
 ### Intune deployment
 
-1. Open **Manage** \> **Device configuration**. Select **Manage** \> **Profiles** \> **Create Profile**.
+1. Open **Devices** \> **Configuration Profiles**. Select **Create Profile**.
 
-2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select Configure.
+2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Templates** and choose **Custom** in the template name section. Select **Configure**.
 
 3. Save the .plist produced earlier as `com.microsoft.wdav.xml`.
 

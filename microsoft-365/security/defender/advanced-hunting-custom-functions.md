@@ -1,11 +1,11 @@
 ---
 title: Custom functions in the advanced hunting schema
 description: Learn about writing your own custom functions for hunting 
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, functions
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, functions
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -25,11 +25,11 @@ ms.date: 05/16/2023
 
 # Use custom functions
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -41,7 +41,7 @@ There are three different types of functions in advanced hunting:
 
 ![Function types](../../media/advanced-hunting-custom-fxns/function-types.png)
 
-- **Built-in functions** – Prebuilt functions included with Microsoft 365 Defender advanced hunting. These are available in all advanced hunting instances and can't be modified.
+- **Built-in functions** – Prebuilt functions included with Microsoft Defender XDR advanced hunting. These are available in all advanced hunting instances and can't be modified.
 - **Shared functions** – Custom functions created by users, which are available for all users in a specific tenant and can be modified and controlled by users.
 - **My functions** – Custom functions created by a user, which can be viewed and modified only by the user who created it.
 
@@ -85,7 +85,7 @@ You can view the code of a function either to gain insight into how it works or 
 
 ## Edit a custom function
 
-Edit the properties of a function by selecting the three dots to the right of the function and selecting **Edit function**. Make any modifications that you want to the properties and parameters of the function then select **Save**.
+Edit the properties of a function by selecting the three dots to the right of the function and selecting **Edit details**. Make any modifications that you want to the properties and parameters of the function then select **Save**.
 
 ![Edit function code](../../media/advanced-hunting-custom-fxns/edit-function.png)
 
@@ -94,10 +94,17 @@ If the function code is already loaded to the editor, you can also select **Save
 > [!NOTE]
 > Once a function is in use in a saved query or a detection rule, you can't edit the function to expand its scope. For example, if you saved a function that queries identity tables, and this function is used in a detection rule, you can't edit the function to include a device table after the fact. To do that, you can save a new function. Product scoping can be narrowed for the same function but not extended.
 
+## Delete a custom function
+
+You can delete functions from **My functions** and functions you created in **Shared functions**. You cannot delete functions that you have not created, unless you have security data manage permissions.
+
+To delete a function, select the three dots to the right of the function and select **Delete**.
+
+![Screenshot that shows how to delete a custom function.](../../media/advanced-hunting-custom-fxns/delete-function.png)
 ## See also
 
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Get more query examples](advanced-hunting-shared-queries.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

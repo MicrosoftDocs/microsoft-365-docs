@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 10/10/2023
 ms.reviewer: nehabha
@@ -22,7 +21,7 @@ ms.collection:
 
 # View and manage incidents in Microsoft Defender for Business
 
-As threats are detected and alerts are triggered, incidents are created. Your company's security team can view and manage incidents in the Microsoft 365 Defender portal. You must have appropriate permissions assigned to perform the tasks in this article. See [Security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
+As threats are detected and alerts are triggered, incidents are created. Your company's security team can view and manage incidents in the Microsoft Defender portal. You must have appropriate permissions assigned to perform the tasks in this article. See [Security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
 
 **This article includes**:
 
@@ -33,7 +32,7 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 
 ## Monitor your incidents & alerts
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Incidents & alerts**, and then select **Incidents**. Any incidents that were created are listed on the page.
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Incidents & alerts**, and then select **Incidents**. Any incidents that were created are listed on the page.
 
    > [!IMPORTANT]
    > If you see an incident tagged with `Attack disruption`, it means an advanced attack has been detected. See [Automatic attack disruption](mdb-attack-disruption.md).
@@ -52,7 +51,7 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 When a threat is detected, a severity level is assigned to each alert that is generated. 
 
 - Microsoft Defender Antivirus assigns an alert severity based on the absolute severity of a detected threat (such as malware) and the potential risk to an individual device (if infected). 
-- Defender for Business assigns an alert severity based on the severity of the detected behavior, the actual risk to an device, and more importantly, the potential risk to your company. 
+- Defender for Business assigns an alert severity based on the severity of the detected behavior, the actual risk to a device, and more importantly, the potential risk to your company. 
 
 The following table lists a few examples of alerts and their severity levels:
 
@@ -70,3 +69,4 @@ The following table lists a few examples of alerts and their severity levels:
 - [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 - [View or edit device policies in Defender for Business](mdb-view-edit-policies.md)
+

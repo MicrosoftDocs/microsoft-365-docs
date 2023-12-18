@@ -2,7 +2,7 @@
 title: Create and manage device groups in Microsoft Defender for Endpoint
 description: Create device groups and set automated remediation levels on them by confirming the rules that apply on the group
 keywords: device groups, groups, remediation, level, rules, aad group, role, assign, rank
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -12,18 +12,18 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 09/12/2023
 ---
 
 # Create and manage device groups
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Azure Active Directory
+- Microsoft Entra ID
 - Office 365
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -37,7 +37,7 @@ In an enterprise scenario, security operation teams are typically assigned a set
 
 In Microsoft Defender for Endpoint, you can create device groups and use them to:
 
-- Limit access to related alerts and data to specific Azure AD user groups with [assigned RBAC roles](rbac.md)
+- Limit access to related alerts and data to specific Microsoft Entra user groups with [assigned RBAC roles](rbac.md)
 - Configure different auto-remediation settings for different sets of devices
 - Assign specific remediation levels to apply during automated investigations
 - In an investigation, filter the **Devices list** to specific device groups by using the **Group** filter.
@@ -51,11 +51,11 @@ As part of the process of creating a device group, you'll:
 
 - Set the automated remediation level for that group. For more information on remediation levels, see [Use Automated investigation to investigate and remediate threats](automated-investigations.md).
 - Specify the matching rule that determines which device group belongs to the group based on the device name, domain, tags, and OS platform. If a device is also matched to other groups, it's added only to the highest ranked device group.
-- Select the Azure AD user group that should have access to the device group.
+- Select the Microsoft Entra user group that should have access to the device group.
 - Rank the device group relative to other groups after it's created.
 
 > [!NOTE]
-> A device group is accessible to all users if you don't assign any Azure AD groups to it.
+> A device group is accessible to all users if you don't assign any Microsoft Entra groups to it.
 
 ## Create a device group
 
@@ -73,7 +73,7 @@ As part of the process of creating a device group, you'll:
 5. Assign the user groups that can access the device group you created.
 
     > [!NOTE]
-    > You can only grant access to Azure AD user groups that have been assigned to RBAC roles.
+    > You can only grant access to Microsoft Entra user groups that have been assigned to RBAC roles.
 
 6. Click **Close**. The configuration changes are applied.
 
@@ -87,9 +87,9 @@ You can promote or demote the rank of a device group so that it's given higher o
 > [!WARNING]
 > Deleting a device group may affect email notification rules. If a device group is configured under an email notification rule, it will be removed from that rule. If the device group is the only group configured for an email notification, that email notification rule will be deleted along with the device group.
 
-By default, device groups are accessible to all users with portal access. You can change the default behavior by assigning Azure AD user groups to the device group.
+By default, device groups are accessible to all users with portal access. You can change the default behavior by assigning Microsoft Entra user groups to the device group.
 
-Devices that aren't matched to any groups are added to Ungrouped devices (default) group. You cannot change the rank of this group or delete it. However, you can change the remediation level of this group, and define the Azure AD user groups that can access this group.
+Devices that aren't matched to any groups are added to Ungrouped devices (default) group. You cannot change the rank of this group or delete it. However, you can change the remediation level of this group, and define the Microsoft Entra user groups that can access this group.
 
 > [!NOTE]
 > Applying changes to device group configuration may take up to several minutes.

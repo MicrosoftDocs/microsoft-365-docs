@@ -2,7 +2,7 @@
 title: Stream Microsoft Defender for Endpoint event
 description: Learn how to configure Microsoft Defender for Endpoint to stream Advanced Hunting events to Event Hubs or Azure storage account
 keywords: raw data export, streaming API, API, Event hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -24,17 +24,18 @@ ms.date: 12/18/2020
 
 # Raw Data Streaming API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 
-> [!NOTE]
-> For the full data streaming experience available, please visit [Stream Microsoft 365 Defender events | Microsoft Learn](/microsoft-365/security/defender/streaming-api).
-> If you're using Microsoft Defender for Business, see [Use the streaming API (preview) with Microsoft Defender for Business](../../defender-business/mdb-streaming-api.md).
+> [!TIP]
+> For the full data streaming experience available, see [Stream Microsoft Defender XDR events](/microsoft-365/security/defender/streaming-api).
+> If you're using Microsoft Defender for Business, see [Use the streaming API with Microsoft Defender for Business](../../defender-business/mdb-streaming-api.md).
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -53,7 +54,7 @@ Topic|Description
 
 ## Related topics
 
-- [Stream Microsoft 365 Defender events | Microsoft Learn](/microsoft-365/security/defender/streaming-api)
+- [Stream Microsoft Defender XDR events | Microsoft Learn](/microsoft-365/security/defender/streaming-api)
 
 - [Overview of Advanced Hunting](../advanced-hunting-overview.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)

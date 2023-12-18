@@ -1,11 +1,11 @@
 ---
-title: Naming changes in the Microsoft 365 Defender advanced hunting schema
+title: Naming changes in the Microsoft Defender XDR advanced hunting schema
 description: Track and review naming changes tables and columns in the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -25,19 +25,19 @@ ms.date: 02/16/2021
 
 # Advanced hunting schema - Naming changes
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 The [advanced hunting schema](advanced-hunting-schema-tables.md) is updated regularly to add new tables and columns. In some cases, existing columns names are renamed or replaced to improve the user experience. Refer to this article to review naming changes that could impact your queries.
 
-Naming changes are automatically applied to queries that are saved in Microsoft 365 Defender, including queries used by custom detection rules. You don't need to update these queries manually. However, you will need to update the following queries:
+Naming changes are automatically applied to queries that are saved in Microsoft Defender XDR, including queries used by custom detection rules. You don't need to update these queries manually. However, you will need to update the following queries:
 - Queries that are run using the API
-- Queries that are saved elsewhere outside Microsoft 365 Defender
+- Queries that are saved elsewhere outside Microsoft Defender XDR
 
 ## December 2020
 
@@ -57,14 +57,14 @@ Naming changes are automatically applied to queries that are saved in Microsoft 
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Rebranding |
 | `DetectionSource` | CustomerTI | Custom TI | Rebranding |
 | `DetectionSource` | OfficeATP | Microsoft Defender for Office 365 | Rebranding |
-| `DetectionSource` | MTP | Microsoft 365 Defender | Rebranding |
+| `DetectionSource` | MTP | Microsoft Defender XDR | Rebranding |
 | `DetectionSource` | AzureATP | Microsoft Defender for Identity | Rebranding |
 | `DetectionSource` | CustomDetection | Custom detection | Rebranding |
 | `DetectionSource` | AutomatedInvestigation |Automated investigation | Rebranding |
 | `DetectionSource` | ThreatExperts | Microsoft Threat Experts | Rebranding |
 | `DetectionSource` | 3rd party TI | 3rd Party sensors | Rebranding |
 | `ServiceSource` | Microsoft Defender ATP| Microsoft Defender for Endpoint | Rebranding |
-|`ServiceSource` |Microsoft Threat Protection | Microsoft 365 Defender | Rebranding |
+|`ServiceSource` |Microsoft Threat Protection | Microsoft Defender XDR | Rebranding |
 | `ServiceSource` | Office 365 ATP |Microsoft Defender for Office 365 | Rebranding |
 | `ServiceSource` |Azure ATP |Microsoft Defender for Identity | Rebranding |
 
@@ -106,4 +106,4 @@ The `AppFileEvents` table has been deprecated. The `CloudAppEvents` table includ
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

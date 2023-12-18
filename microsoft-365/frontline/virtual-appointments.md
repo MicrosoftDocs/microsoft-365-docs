@@ -2,7 +2,7 @@
 title: Virtual Appointments with Microsoft Teams
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: megano
 ms.topic: conceptual
 audience: admin
@@ -22,7 +22,7 @@ f1.keywords:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 09/18/2023
+ms.date: 10/26/2023
 ---
 
 # Virtual Appointments with Microsoft Teams
@@ -73,11 +73,11 @@ Currently, the Teams EHR connector supports integration with the Oracle Health E
 
 ## Virtual appointment meeting template
 
-The Virtual appointment template is a default meeting template in Teams that your users can use to schedule virtual appointments with customers, clients and other people outside your organization.
+The Virtual appointment template is a default meeting template in Teams that your users can use to schedule virtual appointments with external guests, such as customers, clients and other people outside your organization.
 
 With this template, you can enable a consistent experience across your organization for virtual appointments scheduled directly within Teams.
 
-To learn more, see [Virtual appointment meeting template in Teams](/microsoftteams/virtual-appointment-meeting-template).
+To learn more, see [Manage the Virtual appointment meeting template in Teams](/microsoftteams/virtual-appointment-meeting-template).
 
 ## Virtual Appointment Graph API
 

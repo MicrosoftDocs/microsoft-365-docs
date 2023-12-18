@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: zainzaigham, pablom
+ms.reviewer: zainzaigham, socheng
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -88,7 +88,7 @@ If you start with a free trial, you can [buy it later](../../commerce/try-or-buy
   
 You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
 
-## Watch: Sign up for Microsoft 365 Business Premium
+## Watch: Sign up for Microsoft 365 Business Standard
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
@@ -118,7 +118,7 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
     > [!IMPORTANT]
     >  When you sign up, be sure to choose the best payment option for your organization. Changing payment options involves calling billing support.
 
-## Watch: Set up Microsoft 365 Business Premium
+## Watch: Set up Microsoft 365 Business Standard
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 

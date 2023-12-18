@@ -23,8 +23,8 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Automated investigation and response (AIR) in Microsoft Defender for Office 365
@@ -50,6 +50,7 @@ An alert is triggered, and a security playbook starts an automated investigation
 1. An automated investigation is initiated in one of the following ways:
    - Either [an alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins; or
    - A security analyst [starts an automated investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Explorer](threat-explorer-about.md).
+
 2. While an automated investigation runs, it gathers data about the email in question and _entities_ related to that email (for example, files, URLs, and recipients). The investigation's scope can increase as new and related alerts are triggered.
 
 3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results might include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any existing threats that were found.
@@ -58,7 +59,8 @@ An alert is triggered, and a security playbook starts an automated investigation
 
 5. As pending remediation actions are approved (or rejected), the automated investigation completes.
 
-Note: If the investigation does not result in recommended actions the automated investigation will close and the details of what was reviewed as part of the automated investigation will still be available on the investigation page.
+> [!NOTE]
+> If the investigation does not result in recommended actions the automated investigation will close and the details of what was reviewed as part of the automated investigation will still be available on the investigation page.
 
 In Microsoft Defender for Office 365, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team. AIR capabilities save your security operations team time by identifying remediation actions and providing the details needed to make an informed decision.
 
@@ -73,19 +75,13 @@ During and after each automated investigation, your security operations team can
 
 ## How to get AIR
 
-AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. Need some help? Follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
+AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2), as long as [audit logging is turned on](/purview/audit-log-enable-disable) (it's on by default).
 
-- [Verify audit logging is turned on](/purview/audit-log-enable-disable)
-- [Anti-malware protection](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-- [Anti-phishing protection](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
-- [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [Safe Links and Safe Attachments](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-
-In addition, make sure to [review your organization's alert policies](/purview/alert-policies), especially the [default policies in the Threat management category](/purview/alert-policies#default-alert-policies).
+In addition, make sure to review your organization's [alert policies](alert-policies-defender-portal.md), especially the [default policies in the Threat management category](/purview/alert-policies#default-alert-policies).
 
 ## Which alert policies trigger automated investigations?
 
-Microsoft 365 provides many built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Several of the [default alert policies](/purview/alert-policies#default-alert-policies) can trigger automated investigations. The following table describes the alerts that trigger automated investigations, their severity in the Microsoft 365 Defender portal, and how they're generated:
+Microsoft 365 provides many built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Several of the [default alert policies](/purview/alert-policies#default-alert-policies) can trigger automated investigations. The following table describes the alerts that trigger automated investigations, their severity in the Microsoft Defender portal, and how they're generated:
 
 |Alert|Severity|How the alert is generated|
 |---|---|---|
@@ -96,12 +92,12 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 |Email messages containing malicious URL removed after delivery|**Informational**|This alert is generated when any messages containing a malicious URL are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).|
 |Email messages containing phish URLs are removed after delivery|**Informational**|This alert is generated when any messages containing phish are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [ZAP](zero-hour-auto-purge.md).|
 |Suspicious email sending patterns are detected|**Medium**|This alert is generated when someone in your organization has sent suspicious email and is at risk of being restricted from sending email. The alert is an early warning for behavior that might indicate that the account is compromised, but not severe enough to restrict the user. <p> Although it's rare, an alert generated by this policy may be an anomaly. However, it's a good idea to [check whether the user account is compromised](responding-to-a-compromised-email-account.md).|
-|A user is restricted from sending email|**High**|This alert is generated when someone in your organization is restricted from sending outbound mail. This alert typically results when an [email account is compromised](responding-to-a-compromised-email-account.md). <p> For more information about restricted users, see [Remove blocked users from the Restricted entities page](removing-user-from-restricted-users-portal-after-spam.md).|
+|A user is restricted from sending email|**High**|This alert is generated when someone in your organization is restricted from sending outbound mail. This alert typically results when an [email account is compromised](responding-to-a-compromised-email-account.md). <p> For more information about restricted users, see [Remove blocked users from the Restricted entities page](outbound-spam-restore-restricted-users.md).|
 |Admin triggered manual investigation of email|**Informational**|This alert is generated when an admin triggers the manual investigation of an email from Threat Explorer. This alert notifies your organization that the investigation was started.|
 |Admin triggered user compromise investigation|**Medium**|This alert is generated when an admin triggers the manual user compromise investigation of either an email sender or recipient from Threat Explorer.  This alert notifies your organization that the user compromise investigation was started.|
 
 > [!TIP]
-> To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft Purview compliance portal](/purview/alert-policies).
+> To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft Defender portal](alert-policies-defender-portal.md).
 
 ## Required permissions to use AIR capabilities
 
@@ -109,8 +105,8 @@ Permissions are granted through certain roles, such as those that are described 
 
 |Task|Role(s) required|
 |---|---|
-|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <br/> These roles can be assigned in [Azure Active Directory](/azure/active-directory/roles/permissions-reference) or in the [Microsoft 365 Defender portal](mdo-portal-permissions.md).|
-|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](/azure/active-directory/roles/permissions-reference) or in the [Microsoft 365 Defender portal](mdo-portal-permissions.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft 365 Defender portal](mdo-portal-permissions.md). You might need to create a new **Email & collaboration** role group there and add the Search and Purge role to that new role group.</li></ul>|
+|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <br/> These roles can be assigned in [Microsoft Entra ID](/azure/active-directory/roles/permissions-reference) or in the [Microsoft Defender portal](mdo-portal-permissions.md).|
+|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Microsoft Entra ID](/azure/active-directory/roles/permissions-reference) or in the [Microsoft Defender portal](mdo-portal-permissions.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Global Reader</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft Defender portal](mdo-portal-permissions.md). You might need to create a new **Email & collaboration** role group there and add the Search and Purge role to that new role group.</li></ul>|
 
 ## Required licenses
 

@@ -2,7 +2,7 @@
 title: Contact Microsoft Defender for Endpoint support
 description: Learn how to contact Microsoft Defender for Endpoint support
 keywords: support, contact, premier support, solutions, problems, case
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,20 +15,19 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Contact Microsoft Defender for Endpoint support
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -45,7 +44,7 @@ It's important to know the specific roles that have permission to open support c
 
 At a minimum, you must have a Service Support Administrator **OR** Helpdesk Administrator role.
 
-For more information on which roles have permission, see, [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
+For more information on which roles have permission, see [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). 
 
 For general information on admin roles, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
@@ -55,9 +54,9 @@ Accessing the new support widget can be done in one of two ways:
 
 1. Clicking on the question mark on the top right of the portal and then clicking on "Microsoft support":
 
-   :::image type="content" source="../../media/contactsupport.png" alt-text="The Microsoft support icon in the Microsoft 365 Defender portal" lightbox="../../media/contactsupport.png":::
+   :::image type="content" source="../../media/contactsupport.png" alt-text="The Microsoft support icon in the Microsoft Defender portal" lightbox="../../media/contactsupport.png":::
 
-2. Clicking on the **Need help?**  button in the bottom right of the Microsoft 365 Defender portal:
+2. Clicking on the **Need help?**  button in the bottom right of the Microsoft Defender portal:
 
    :::image type="content" source="images/need-help-option.png" alt-text="The Need help button" lightbox="images/need-help-option.png":::
 

@@ -2,7 +2,7 @@
 title: Device control for macOS
 description: Learn how to configure Microsoft Defender for Endpoint on Mac to reduce threats from removable storage such as USB devices.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, macOS, device, control, usb, removable, media
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -16,20 +16,20 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 04/03/2023
 ---
 
 # Device Control for macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint Device Control feature enables you to:
 
 Example 1: JAMF using [schema.json](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema)
 
-:::image type="content" source="images/macos-device-control-jamf-json.png" alt-text="Screenshot that shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features." lightbox="images/macos-device-control-jamf-json.png":::
+:::image type="content" source="images/macos-device-control-jamf-json.png" alt-text="Screenshot that shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features.":::
 
 Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/mobileconfig/demo.mobileconfig)
 
@@ -88,7 +88,7 @@ Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/
 - Minimum product version: 101.91.92 or higher
 - Run _mdatp version_ through Terminal to see the product version on your client machine:
 
-:::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Screenshot that shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
+  :::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Screenshot that shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
 
 ## Device Control for macOS properties
 
@@ -101,9 +101,14 @@ The Device Control for macOS includes global setting, group creation and access 
 Here are the properties you can use when you create the group and policy.
 
 > [!NOTE]
-> We recommend you use the examples on the GitHub to understand the properties: [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy). You can also use the scripts at [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy/scripts at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/scripts) to translate Windows Device Control policy to macOS Device Control policy or translate macOS Device Control V1 policy to this V2 policy.
+> We recommend you use the examples on the GitHub to understand the properties: [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy). 
+> 
+> You can also use the scripts at [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy/scripts at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/scripts) to translate Windows Device Control policy to macOS Device Control policy or translate macOS Device Control V1 policy to this V2 policy.
 
 ### Settings
+
+> [!NOTE]
+> Both Android (portableDevice) and iOS (appleDevice) are in public preview and not in general availability at the moment.
 
 | Property name | Description | Options |
 |:---|:---|:---|
@@ -230,7 +235,7 @@ Once Deny happens and the notification is enabled in the policy, the end user se
 
 Use `mdatp health --details device_control` to inspect the Device Control status:
 
-```
+```console
 active                                      : ["v2"]
 v1_configured                               : false
 v1_enforcement_level                        : unavailable

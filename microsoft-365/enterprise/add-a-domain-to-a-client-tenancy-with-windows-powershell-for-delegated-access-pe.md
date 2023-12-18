@@ -43,7 +43,7 @@ You also need the following information:
 
 - You need the customer's **TenantId**.
 
-- The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publically register a domain name, see [How to buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md).
+- The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publicly register a domain name, see [How to buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md).
 
 - You need to know how to add a TXT record to the registered DNS zone for your DNS registrar. For more information on how to add a TXT record, see [Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). If those procedures don't work for you, you will need to find the procedures for your DNS registrar.
 
@@ -54,16 +54,18 @@ You also need the following information:
 > [!NOTE]
 > To perform some of these operations, the partner administrator account you sign in with must be set to **Full administration** for the **Assign administrative access to companies you support** setting found in the details of the admin account in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. For more information on managing partner administrator roles, see [Partners: Offer delegated administration](https://go.microsoft.com/fwlink/p/?LinkId=532435).
 
-### Create the domain in Azure Active Directory
+<a name='create-the-domain-in-azure-active-directory'></a>
 
-This command creates the domain in Azure Active Directory but does not associate it with the publicly registered domain. That comes when you prove that you own the publicly registered domain to Microsoft 365 for enterprises.
+### Create the domain in Microsoft Entra ID
+
+This command creates the domain in Microsoft Entra ID but does not associate it with the publicly registered domain. That comes when you prove that you own the publicly registered domain to Microsoft 365 for enterprises.
 
 ```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
 
 > [!NOTE]
-> PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+> PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
 
 ### Get the data for the DNS TXT verification record
 

@@ -32,7 +32,7 @@ This article has links to the step-by-step instructions for deploying high avail
     
 - Two replica domain controllers
     
-- One directory synchronization server running Azure AD Connect
+- One directory synchronization server running Microsoft Entra Connect
     
 Here is the configuration, with placeholder names for each server.
   
@@ -72,7 +72,7 @@ Here are the virtual machines and their default sizes for this configuration.
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |First domain controller  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |2.  <br/> |Second domain controller  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
-|3.  <br/> |Azure AD Connect server  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|3.  <br/> |Microsoft Entra Connect server  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |4.  <br/> |First AD FS server  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |5.  <br/> |Second AD FS server  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |6.  <br/> |First web application proxy server  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |

@@ -3,8 +3,7 @@ title: Example of an identity-based attack
 description: Step through an example analysis of an identity-based attack.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,16 +28,16 @@ ms.date: 04/20/2021
 
 # Example of an identity-based attack
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-Microsoft Defender for Identity can help detect malicious attempts to compromise identities in your organization. Because Defender for Identity integrates with Microsoft 365 Defender, security analysts can have visibility on threats coming in from Defender for Identity, such as suspected Netlogon privilege elevation attempts.
+Microsoft Defender for Identity can help detect malicious attempts to compromise identities in your organization. Because Defender for Identity integrates with Microsoft Defender XDR, security analysts can have visibility on threats coming in from Defender for Identity, such as suspected Netlogon privilege elevation attempts.
 
 ## Analyzing the attack in Microsoft Defender for Identity
 
-Microsoft 365 Defender allows analysts to filter alerts by detection source on the **Alerts** tab of the incidents page. In the following example, the detection source is filtered to **Defender for Identity**. 
+Microsoft Defender XDR allows analysts to filter alerts by detection source on the **Alerts** tab of the incidents page. In the following example, the detection source is filtered to **Defender for Identity**. 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Filtering the detection source in Microsoft Defender for Identity" lightbox="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png":::
 
@@ -94,4 +93,4 @@ See the [phishing](first-incident-path-phishing.md) investigation path.
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

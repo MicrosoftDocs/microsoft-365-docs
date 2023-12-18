@@ -7,8 +7,7 @@ metadata:
   title: Microsoft Defender for Endpoint documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about Microsoft Defender for Endpoint and maximize the built-in security capabilities to protect devices, detect malicious activity, and remediate threats# Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
-  ms.service: microsoft-365-security
-  ms.subservice: mde
+  ms.service: defender-endpoint
   ms.topic: landing-page # Required
   ms.collection: m365-security
   ms.custom: intro-hub-or-landing
@@ -31,8 +30,6 @@ landingContent:
           url:  microsoft-defender-endpoint.md
         - text: What is Defender for Endpoint plan 1?
           url: defender-endpoint-plan-1.md
-        - text: Compare Defender for Endpoint plans
-          url: defender-endpoint-plan-1-2.md
       - linkListType: whats-new
         links:
           - text: What's new in Microsoft Defender for Endpoint

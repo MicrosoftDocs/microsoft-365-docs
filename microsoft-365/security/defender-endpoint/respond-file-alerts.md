@@ -1,7 +1,7 @@
 ---
 title: Take response actions on a file in Microsoft Defender for Endpoint
 description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
@@ -12,14 +12,14 @@ ms.collection:
 - tier2
 - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ms.date: 08/07/2023
 ---
 
 # Take response actions on a file
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -154,9 +154,9 @@ The **Download file** button can have the following states:
 
   The following permissions are required:
 
-  For Microsoft 365 Defender Unified role-based access control (RBAC):
+  For Microsoft Defender XDR Unified role-based access control (RBAC):
 
-     - Add file collection permission in Microsoft 365 Defender Unified (RBAC)
+     - Add file collection permission in Microsoft Defender XDR Unified (RBAC)
  
   For Microsoft Defender for Endpoint role-based access control (RBAC):
 
@@ -255,7 +255,7 @@ You can also edit indicators from  the **Settings** page, under **Rules** \> **I
 
 ## Consult a threat expert
 
-Select Ask Defender Experts to get more insights from Microsoft experts on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
+Select Ask Defender Experts to get more insights from Microsoft experts on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
 
 See [Ask Defender Experts](experts-on-demand.md) for details.
 
@@ -297,10 +297,10 @@ Learn about deep analysis in the following video:
 > [!NOTE]
 > Only files from Windows 10, Windows 11, and Windows Server 2012 R2+ can be automatically collected.
 
-You can also submit a sample through the [Microsoft 365 Defender Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11 or Windows Server 2012 R2+), and wait for **Submit for deep analysis** button to become available.
+You can also submit a sample through the [Microsoft Defender portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11 or Windows Server 2012 R2+), and wait for **Submit for deep analysis** button to become available.
 
 > [!NOTE]
-> Due to backend processing flows in the Microsoft 365 Defender Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
+> Due to backend processing flows in the Microsoft Defender portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
 
 ### Submit files for deep analysis
 

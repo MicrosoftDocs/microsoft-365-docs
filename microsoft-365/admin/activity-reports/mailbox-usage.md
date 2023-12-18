@@ -1,9 +1,9 @@
 ---
 title: "Microsoft 365 admin center mailbox usage reports"
-ms.author: kwekua
-author: kwekuako
+ms.author: efrene
+author: efrene
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 11/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -27,7 +27,7 @@ description: "Learn how to get the Mailbox usage report to find out about activi
 # Microsoft 365 Reports in the admin center - Mailbox usage
 
 The **Mailbox usage report** provides information about users with a user mailbox and the level of activity by each based on the email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity. It also provides information about how much storage has been consumed by each user mailbox, and how many of them are approaching storage quotas. The mailbox usage report also contains information on mailboxes shared amongst users, providing storage and quota data on shared mailboxes.
- 
+
 ## How to get to the mailbox usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
@@ -103,6 +103,7 @@ This table shows you a breakdown of mailbox usage at the per mailbox level. You 
 |Prohibit send quota (MB)|The storage limit when the mailbox can no longer send emails. |
 |Prohibit send receive quota (MB)|The storage limit when the mailbox can no longer send or receive emails. |
 |Recoverable Item Quota (MB)|The storage limit for recoverable (deleted) items in the mailbox when the mailbox can no longer delete emails. |
+|Report Period| The period for which the report is available.|
 |Has Archive|Shows if the mailbox has an online archive enabled. |
 
 

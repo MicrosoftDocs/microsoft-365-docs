@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to install and use Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -14,20 +14,20 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
-ms.date: 09/14/2023
+ms.date: 11/29/2023
 ---
 
 # Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint for Linux includes antimalware and endpoint dete
 
 ### Prerequisites
 
-- Access to the Microsoft 365 Defender portal
+- Access to the Microsoft Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
 
   > [!NOTE]
@@ -64,12 +64,12 @@ In general you need to take the following steps:
 - Deploy Microsoft Defender for Endpoint on Linux using one of the following deployment methods:
   - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
-  - Third-party management tools:
+   - Third-party management tools:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
     - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
-    - [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
-
-If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
+      - [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
+      - [Deploy using Saltstack configuration management tool](linux-install-with-saltack.md)
+      If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 > [!NOTE]
 > It is not supported to install Microsoft Defender for Endpoint in any other location other than the default install path.
@@ -79,27 +79,26 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 ### System requirements
 
-> [!NOTE]
-> Support of Red Hat Enterprise Linux and CentOS 6.7+ to 6.10+ are in preview.
-
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
-
-  - Red Hat Enterprise Linux 6.7 or higher (Preview)
+  - Red Hat Enterprise Linux 6.7 or higher (In preview)
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
   - Red Hat Enterprise Linux 9.x
-  - CentOS 6.7 or higher (Preview)
+  - CentOS 6.7 or higher (In preview)
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
-  - Debian 9 or higher
+   - Debian 9 - 12
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
   - Oracle Linux 8.x
   - Amazon Linux 2
+  - Amazon Linux 2023
   - Fedora 33 or higher
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
+    > With RHEL 6 support for 'extended end of life' coming to an end by June 30, 2024; MDE Linux support for RHEL 6 will also be deprecated by June 30, 2024
+    > MDE Linux version 101.23082.0011 is the last MDE Linux release supporting RHEL 6.7 or higher versions (does not expire before June 30, 2024). Customers are advised to plan upgrades to their RHEL 6 infrastructure aligned with guidance from Red Hat. 
 
 - List of supported kernel versions
   > [!NOTE]
@@ -111,7 +110,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
     - For 6.7: 2.6.32-573.* (except 2.6.32-573.el6.x86_64)
     - For 6.8: 2.6.32-642.*
     - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
-    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.48.1:
+    - For 6.10: 
       - 2.6.32-754.10.1.el6.x86_64
       - 2.6.32-754.11.1.el6.x86_64
       - 2.6.32-754.12.1.el6.x86_64
@@ -162,26 +161,29 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > [!NOTE]
     > Please make sure that you have free disk space in /var.
 
-- The solution currently provides real-time protection for the following file system types:
+- Below is the list of supported filesystems for RTP, Quick, Full and Custom Scan.
+  
+  |RTP, Quick, Full Scan| Custom Scan|
+  |---|---|
+  |btrfs|All filesystems supported for RTP, Quick, Full Scan|
+  |ecryptfs|Efs|
+  |ext2|S3fs|
+  |ext3|Blobfuse|
+  |ext4|Lustr|
+  |fuse|glustrefs|
+  |fuseblk|Afs|
+  |jfs|sshfs|
+  |nfs (v3 only)|cifs|
+  |overlay|smb|
+  |ramfs|gcsfuse|
+  |reiserfs|sysfs|
+  |tmpfs|
+  |udf|
+  |vfat|
+  |xfs|
 
-  - `btrfs`
-  - `ecryptfs`
-  - `ext2`
-  - `ext3`
-  - `ext4`
-  - `fuse`
-  - `fuseblk`
-  - `jfs`
-  - `nfs (v3 only)`
-  - `overlay`
-  - `ramfs`
-  - `reiserfs`
-  - `tmpfs`
-  - `udf`
-  - `vfat`
-  - `xfs`
 
-After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
+After you've enabled the service, you m need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 - Audit framework (`auditd`) must be enabled.
 
@@ -206,12 +208,13 @@ When adding exclusions to Microsoft Defender Antivirus, you should be mindful of
 
 ### Network connections
 
-The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you might need to create an *allow* rule specifically for them.
 
-|Spreadsheet of domains list| Description|
-|---|---|
-|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx)|
-| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)|
+| Spreadsheet of domains list  | Description  |
+|---------|---------|
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <br/><br/> [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx). |
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <br/><br/> [Download the spreadsheet here](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx). |
+
 
 > [!NOTE]
 > For a more specific URL list, see [Configure proxy and internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
@@ -252,3 +255,4 @@ High I/O workloads from certain applications can experience performance issues w
 - [Connect your non-Azure machines to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
 - [Turn on network protection for Linux](network-protection-linux.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

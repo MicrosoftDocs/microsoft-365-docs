@@ -50,7 +50,7 @@
       href: m365-lighthouse-dismiss-task.md
     - name: Reinstate a task
       href: m365-lighthouse-reinstate-task.md
-    - name: Manage tenants using deployment insights
+    - name: Manage tenants by using deployment insights
       href: m365-lighthouse-manage-tenants-using-deployment-insights.md
 - name: Manage alerts
   items: 
@@ -62,7 +62,7 @@
   items: 
     - name: Overview of the Tenants page
       href: m365-lighthouse-tenants-page-overview.md
-    - name: View your Azure AD roles across tenants
+    - name: View your Microsoft Entra roles across tenants
       href: m365-lighthouse-view-your-roles.md
     - name: Manage your tenant list
       href: m365-lighthouse-manage-tenant-list.md
@@ -91,15 +91,15 @@
     - name: View and manage risky users
       href: m365-lighthouse-view-manage-risky-users.md
 - name: Manage devices
-  items: 
+  items:
+    - name: Overview of the Device health page
+      href: m365-lighthouse-device-health-overview.md
     - name: Overview of the Device compliance page
       href: m365-lighthouse-device-compliance-page-overview.md
     - name: Compare device compliance policy settings
       href: m365-lighthouse-compare-compliance-policies.md
     - name: Overview of the Windows 365 (Cloud PCs) page
       href: m365-lighthouse-win365-page-overview.md
-    - name: Overview of the Device health page
-      href: m365-lighthouse-device-health-overview.md
     - name: Reprovision a Windows 365 Cloud PC
       href: m365-lighthouse-reprovision-cloudpc.md
     - name: Change a Windows 365 Cloud PC account type
@@ -116,7 +116,7 @@
       href: m365-lighthouse-device-security-overview.md
     - name: Overview of the Vulnerability management page
       href: m365-lighthouse-vulnerability-management-page-overview.md
-    - name: Overview of quarantined messages
+    - name: Overview of the Quarantined messages page
       href: m365-lighthouse-quarantine-messages-overview.md
     - name: Overview of the Apps page
       href: m365-lighthouse-apps-page-overview.md
@@ -140,3 +140,7 @@
       href: m365-lighthouse-troubleshoot.md
     - name: Frequently asked questions (FAQs)
       href: m365-lighthouse-faq.yml
+- name: Privacy and compliance
+  items:
+    - name: Data collection for Microsoft 365 Lighthouse
+      href: m365-lighthouse-data-collection.md

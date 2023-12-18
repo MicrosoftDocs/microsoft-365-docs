@@ -1,10 +1,9 @@
 ---
 title: Enable Microsoft Defender for Endpoint evaluation
-description: Enable your Microsoft 365 Defender trial lab or pilot environment, including checking license state, and onboarding endpoints
+description: Enable your Microsoft Defender XDR trial lab or pilot environment, including checking license state, and onboarding endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -43,14 +42,14 @@ Use the following steps to enable the evaluation for Microsoft Defender for Endp
 - [Step 2. Onboard endpoints](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
 
 
-## Step 1. Check license state
+## Step 1: Check license state
 
 You'll first need to check the license state to verify that it was properly provisioned. You can do this through the admin center or through the **Microsoft Azure portal**.
 
 
 1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="The Azure Licensing page in the Microsoft 365 Defender portal" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
+   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="The Azure Licensing page in the Microsoft Defender portal" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
 1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
@@ -59,7 +58,7 @@ You'll first need to check the license state to verify that it was properly prov
     :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="The Billing licenses page in the Microsoft Azure portal" lightbox="../../media/defender/atp-billing-subscriptions.png":::
     
 
-## Step 2. Onboard endpoints using any of the supported management tools
+## Step 2: Onboard endpoints using any of the supported management tools
 
 After verifying that the license state has been provisioned properly, you can start onboarding devices to the service. 
 
@@ -91,5 +90,5 @@ The following table lists the available tools based on the endpoint that you nee
  
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
