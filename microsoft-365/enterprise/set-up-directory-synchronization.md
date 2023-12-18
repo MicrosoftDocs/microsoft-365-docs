@@ -3,7 +3,7 @@ title: "Set up directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/30/2020
+ms.date: 12/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -29,7 +29,7 @@ description: "Learn how to set up directory synchronization between Microsoft 36
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Microsoft 365 uses a Microsoft Entra tenant to store and manage identities for authentication and permissions to access cloud-based resources. 
+Microsoft 365 uses a Microsoft Entra tenant to store and manage identities for authentication and permissions to access cloud-based resources.
 
 If you have an on-premises Active Directory Domain Services (AD DS) domain or forest, you can synchronize your AD DS user accounts, groups, and contacts with the Microsoft Entra tenant of your Microsoft 365 subscription. This is hybrid identity for Microsoft 365. Here are its components.
 
@@ -89,8 +89,7 @@ Follow these steps:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) (https://admin.microsoft.com) and choose **Users** \> **Active Users** on the left navigation.
 2. On the **Active users** page, choose **More** (three dots) \> **Directory synchronization**.
-  
-3. On the **Microsoft Entra preparation** page, select the **Go to the Download center to get the Microsoft Entra Connect tool** link to get started. 
+3. On the **Microsoft Entra preparation** page, select the **Go to the Download center to get the Microsoft Entra Connect tool** link to get started.
 4. Follow the steps in [Microsoft Entra Connect and Microsoft Entra Connect Health installation roadmap](/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
 ## 3. Finish setting up domains
