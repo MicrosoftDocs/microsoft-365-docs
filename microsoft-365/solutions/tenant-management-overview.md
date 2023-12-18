@@ -3,7 +3,7 @@ title: Tenant management for Microsoft 365 for enterprise
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/01/2020
+ms.date: 12/18/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -68,7 +68,7 @@ Here are the elements:
   - You are requiring secure user sign-in with passwordless or multi-factor authentication (MFA).
   - You have Conditional Access policies that enforce sign-in requirements and restrictions for higher levels of security.
 - On-premises Office servers and their data have been migrated to cloud apps or are being used in a hybrid configuration.
-- You are doing device management with Intune or Basic Mobility and Security built into Microsoft 365.
+- You are managing devices with Intune or Basic Mobility and Security built into Microsoft 365.
   - Your organization-owned devices are enrolled and managed.
   - The apps for personal devices are managed.
 
