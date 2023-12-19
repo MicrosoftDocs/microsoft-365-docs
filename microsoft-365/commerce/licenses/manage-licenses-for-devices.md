@@ -43,7 +43,7 @@ You must be a global admin to perform the tasks in this article. For more inform
 
 When you assign licenses to a group, you assign licenses to all devices within the group. You can only assign one subscription to any single group.
 
-[!INCLUDE [O365 21Vianet admin center link]([../../includes/office-365-operated-by-21vianet-admin-center-link.md])]
+[!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. On the **Licenses** page, choose **Microsoft 365 Apps for Education (device)** or **Microsoft 365 Apps for enterprise (device)**.
@@ -55,7 +55,7 @@ When you assign licenses to a group, you assign licenses to all devices within t
 
 When you unassign licenses from a group, you remove the licenses from all devices within the group. All apps and their associated data are then read-only.
 
-[!INCLUDE [O365 21Vianet admin center link]([../../includes/office-365-operated-by-21vianet-admin-center-link.md])]
+[!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. On the **Licenses** page, choose **Microsoft 365 Apps for Education (device)** or **Microsoft 365 Apps for enterprise (device)**.

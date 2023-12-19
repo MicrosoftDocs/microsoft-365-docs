@@ -39,7 +39,7 @@ You must be a global or billing admin to perform the tasks in this article. For 
 
 ## View a list of self-service sign-up subscriptions
 
-[!INCLUDE [O365 21Vianet admin center link]([../../includes/office-365-operated-by-21vianet-admin-center-link.md])]
+[!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Free**. A list of all self-service sign-up subscriptions is displayed.
@@ -57,7 +57,7 @@ You use the [**Update-MgPolicyAuthorizationPolicy**](/powershell/module/msonline
 > [!IMPORTANT]
 > When you delete a self-service sign-up subscription, you block all users from accessing their data and email and delete all data and email.
 
-[!INCLUDE [O365 21Vianet admin center link]([../../includes/office-365-operated-by-21vianet-admin-center-link.md])]
+[!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Free**.

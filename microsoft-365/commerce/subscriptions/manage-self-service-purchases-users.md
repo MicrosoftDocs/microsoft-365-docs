@@ -27,7 +27,7 @@ ms.date: 12/19/2023
 
 As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You're responsible for paying for any self-service purchases you make. You can manage your subscriptions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-[!INCLUDE [O365 21Vianet admin center link]([../../includes/office-365-operated-by-21vianet-admin-center-link.md])]
+[!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 Your admin has a read-only view into any subscriptions that you buy. They can see the product, purchaser name, subscriptions purchased, expiry date, purchase price, and assigned users for each subscription that you buy.
 
