@@ -37,7 +37,7 @@ If you want to try some of these features for free, you can do so from January 1
 
 ## Monthly usage limits for free offering
 
-The following table shows the units of service up to the capacity limits you can use at no charge each month during the offering period.
+The following table shows the units of service and capacity limits you can use at no charge each month during the offering period.
 
 |Service  |Unit  |Maximum monthly usage at no charge  |
 |---------|---------|---------|
