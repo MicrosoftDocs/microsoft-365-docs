@@ -8,7 +8,7 @@ ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to your frontline attributes to enable targeted communications features, such as automatic tags, for your frontline teams. 
+description: Learn how to your map frontline attributes to enable targeted communications features, such as automatic tags, for your frontline teams. 
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
@@ -26,7 +26,7 @@ ms.date:
 
 Setting up targeted communications enables you to deliver personalized communications experiences, such as [automatic tags](#automatic-tags), to your frontline teams.
 
-To set up targeted communications, you identify and map your frontline attributes by choosing a Microsoft Entra attribute for Department and Job title that represents the departments and job titles in your organization. The mapped attribute values, which are pulled from user profile data stored in Microsoft Entra ID, are used to identify, and target communications to specific groups of people based on their department or job title.
+To set up targeted communications, you identify and map your frontline attributes by choosing a Microsoft Entra attribute for **Department** and **Job title** that represents the departments and job titles in your organization. The mapped attribute values, which are pulled from user profile data stored in Microsoft Entra ID, are used to identify, and target communications to specific groups of people based on their department or job title.
 
 Streamline and simplify communications for your frontline. After you map your attributes, your frontline teams can use targeted communication features, like automatic tags in Teams channel conversations, and additional frontline capabilities that are coming soon.
 
@@ -66,15 +66,19 @@ With automatic tags, your frontline workers can reach each other by department o
 
 Your frontline can quickly and easily reach the right groups of people. And because the tags are automatically created based on your mapped attribute values, team owners don’t have to manually create and assign tags or manage them locally.
 
-For example, a regional store manager who oversees all Northwind Trader stores in their region needs to notify all store associates and supervisors about a potentially harmful product that must be immediately removed from all stores. The manager @mentions the Store Associate and Store Supervisor tag in their channel post to notify all store associates and supervisors.
+For example, a regional store manager who oversees all Northwind Trader stores in their region needs to notify all store associates and supervisors about a potentially harmful product that must be immediately removed from all stores. The manager @mentions the **Store Associate** and **Store Supervisor** tag in their channel post to notify all store associates and supervisors.
 
 Automatic tags are created and available after you map your attributes. To allow frontline teams to use the tags in Teams, admins and team owners need to do the following:
 
 - **Admins**: Make sure tags is turned on for your organization. In the Teams admin center, go to **Teams** > **Teams settings**.  Under **Tagging**, check that the **Who can manage tags** setting is set to an option other than **Not enabled**.
 
+    [Learn more about how to turn on tags for your organization](/microsoftteams/manage-tags). 
+
 - **Team owners**: In Teams, team owners must select the **Show members the option to @mention groups based on job title or department. This will notify everyone in that group.** check box in team settings for each of their respective teams.
 
     :::image type="content" source="media/targeted-comms-automatic-tags-setting.png" alt-text="Screenshot of the option in team settings to @mention groups based on job title or department" lightbox="media/targeted-comms-automatic-tags-setting.png":::
+
+    [Learn more about using tags in Teams](https://support.microsoft.com/office/using-tags-in-microsoft-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
 
 ## Related articles
 
