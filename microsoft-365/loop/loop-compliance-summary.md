@@ -102,7 +102,7 @@ Admins can perform the following tasks for Loop workspaces, which are containers
   - delete Loop workspaces
   - set sharing settings at a tenant level
 
-See more about how to use PowerShell to perform these tasks in the [Consuming Tenant admin](/sharepoint/dev/embedded/concepts/admin-exp/cta).
+See more about how to use PowerShell to perform these tasks on Loop application containers in the [Consuming Tenant admin](/sharepoint/dev/embedded/concepts/admin-exp/cta) article.
 
 ### Capabilities that aren't yet available
 
