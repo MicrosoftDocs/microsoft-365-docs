@@ -99,7 +99,7 @@ Points to address or value: selector2-<CustomDomain>._domainkey.<InitialDomain>
   - Only one active selector is published with the public key when DKIM signing using the custom domain is enabled.
   - The second selector is published and used after any future [DKIM key rotation](#rotate-dkim-keys-for-custom-domains) when it becomes active.
 
-    The selector that DKIM used to sign the message is stored in the **s=** value in the **DKIM-Signature** header field. For example, `s=selector1-contoso-com`.
+    The selector that DKIM used to verify the message signature is stored in the **s=** value in the **DKIM-Signature** header field (for example, `s=selector1-contoso-com`). By association, the selector also identifies the private key that was used to DKIM sign the message, but you can't see or access the corresponding private key.
 
 - **Hostname**: The values are the same for all Microsoft 365 organizations: `selector1._domainkey` and `selector2._domainkey`.
 
@@ -303,7 +303,7 @@ If you'd rather use PowerShell to enable DKIM signing of outbound messages using
 
    If Microsoft 365 was able to detect the CNAME records for the domain at the domain registrar, the command runs without error, and the domain is now used to DKIM sign outbound messages from the domain.
 
-   If the CNAME records aren't detected, you an error that contains the values to use in the CNAME records. Check for typos in the values at the domain registrar (easy to do with the dashes, periods, and underlines!), wait a while longer, and then run the command again.
+   If the CNAME records aren't detected, you get an error that contains the values to use in the CNAME records. Check for typos in the values at the domain registrar (easy to do with the dashes, periods, and underlines!), wait a while longer, and then run the command again.
 
 For detailed syntax and parameter information, see the following articles:
 
@@ -400,7 +400,7 @@ If you'd rather use PowerShell to enable DKIM signing of outbound messages using
 
    We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these steps to begin creating the CNAME records, and then use the values in the previous step for the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
-   It will take several minutes or longer for Microsoft 365 to detect the new CNAME records that you created.
+   It takes several minutes or longer for Microsoft 365 to detect the new CNAME records that you created.
 
 6. After a while, return to Exchange Online PowerShell, replace \<CustomDomain\> with the domain that you configured, and run the following command:
 
@@ -410,7 +410,7 @@ If you'd rather use PowerShell to enable DKIM signing of outbound messages using
 
    If Microsoft 365 is able to detect the CNAME records for the domain at the domain registrar, the command runs without error, and the domain is now used to DKIM sign outbound messages from the domain.
 
-   If the CNAME records aren't detected, you an error that contains the values to use in the CNAME records. Check for typos in the values at the domain registrar (easy to do with the dashes, periods, and underlines!), wait a while longer, and then run the command again.
+   If the CNAME records aren't detected, you get an error that contains the values to use in the CNAME records. Check for typos in the values at the domain registrar (easy to do with the dashes, periods, and underlines!), wait a while longer, and then run the command again.
 
 For detailed syntax and parameter information, see the following articles:
 
@@ -435,7 +435,7 @@ Get-DkimSigningConfig -Identity <CustomDomain> | Format-List
 
 When you do a DKIM key rotation on a custom domain as described in this section, the change isn't immediate. It takes four days (96 hours) for the new key to be used to DKIM sign messages (the **RotateOnDate** date/time and the **SelectorAfterRotateOnDate** value). Until then, the existing key is used (the **SelectorBeforeRotateOnDate** value).
 
-To confirm the private key that DKIM used to sign a message, and the corresponding public key that's used to verify the DKIM signature (the selector), check the **s=** value in the **DKIM-Signature** header field. For example `s=selector1-contoso-com`.
+To confirm the corresponding public key that's used to verify the DKIM signature (the selector) in a message, check the **s=** value in the **DKIM-Signature** header field (for example `s=selector1-contoso-com`).
 
 > [!TIP]
 > You can rotate DKIM keys only on custom domains that are enabled for DKIM (the **Status** value is Enabled).
@@ -460,11 +460,11 @@ To confirm the private key that DKIM used to sign a message, and the correspondi
    - **Status**: Rotating keys for this domain and signing DKIM signatures.
    - **Rotate DKIM keys** is grayed out.
 
-6. After four days (96 hours) the new DKIM key is used to sign outbound messages for the custom domain. Until then, the current DKIM key is used.
+6. After four days (96 hours), the new DKIM key begins to sign outbound messages for the custom domain. Until then, the current DKIM key is used.
 
    You can tell when the new DKIM key is being used when the **Status** value changes from **Rotating keys for this domain and signing DKIM signatures** to **Signing DKIM signatures for this domain**.
 
-  You can confirm the key (selector) that DKIM used to sign a message by checking the **s=** value in the **DKIM-Signature** header field. For example `s=selector1-contoso-com`.
+  To confirm the corresponding public key that's used to verify the DKIM signature (the selector) in a message, check the **s=** value in the **DKIM-Signature** header field (for example `s=selector1-contoso-com`).
 
 #### Use Exchange Online PowerShell to rotate the DKIM keys for a domain and change the bit depth
 
@@ -505,7 +505,7 @@ If you'd rather use PowerShell to enable DKIM signing of outbound messages using
 
    DKIM uses the key identified by the **SelectorBeforeRotateOnDate** property to sign messages until the **RotateOnDate** date/time. After that, the key identified by the **SelectorAfterRotateOnDate** property.
 
-   You can confirm the key (selector) that DKIM used to sign a message by checking the **s=** value in the **DKIM-Signature** header field. For example `s=selector1-contoso-com`.
+   To confirm the corresponding public key that's used to verify the DKIM signature (the selector) in a message, check the **s=** value in the **DKIM-Signature** header field (for example `s=selector1-contoso-com`).
 
 For detailed syntax and parameter information, see the following articles:
 
