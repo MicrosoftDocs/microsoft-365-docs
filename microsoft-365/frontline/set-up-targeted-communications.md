@@ -45,6 +45,8 @@ Your frontline teams must be created through the [deploy frontline dynamic teams
 
 Map your attributes on the Map frontline attributes page of the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience. Select the Microsoft Entra attribute for **Department** and **Job title** that best represents the departments and job titles in your organization. You can map one or both attributes.
 
+:::image type="content" source="media/targeted-comms-map-attributes.png" alt-text="Screenshot of the Map frontline attributes page of the deploy frontline dynamic teams experience in the Teams admin center." lightbox="media/targeted-comms-map-attributes.png":::
+
 ### View your mapped attribute values
 
 After you mapped your attributes, you can view your list of mapped values. These values are used for targeted communications and represent the unique departments and job titles in your organization.
