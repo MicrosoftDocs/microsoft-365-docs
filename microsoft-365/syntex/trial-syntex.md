@@ -1,10 +1,10 @@
 ---
-title: Run a trial of Microsoft Syntex
+title: Try out Microsoft Syntex for free and explore its features
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: lauris; jaeccles
-ms.date: 09/12/2023
+ms.date: 12/20/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 description: Learn how to plan, sign up, and run a trial pilot program for Microsoft Syntex in your organization.
 ---
 
-# Try out Microsoft Syntex for free and experience its features
+# Try out Microsoft Syntex for free and explore its features
 
 Microsoft Syntex (evolving to be SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, analyze, create, sign, translate, manage, and enhance them with ease. And now, you can try some of these features at no charge.
 
