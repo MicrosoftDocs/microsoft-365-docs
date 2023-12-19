@@ -21,6 +21,9 @@ description: Learn about pay-as-you-go services and pricing for Microsoft Syntex
 
 When you use Microsoft Syntex [pay-as-you-go](syntex-azure-billing.md), services are billed using Syntex meters in the Azure subscription that you specified when you set up Microsoft Syntex. The following table describes each meter, its pricing, and how it measures usage. When you connect your Azure subscription to Microsoft Syntex, users in your organization are able to take advantage of Syntex services right away. Your tenant is billed according to the details shown in this article.
 
+> [!NOTE]
+> From January 1 to June 30, 2024, if you have set up [pay-as-you-go billing](syntex-azure-billing.md) you can try these services up to a limited amount at no cost. For more information, see [Try out Microsoft Syntex for free and explore its features](trial-syntex.md).
+
 |Service|What's counted?|What's billed? (USD)|
 |:----|:--------------|:-------------|
 |Prebuilt document processing|The number of pages processed for PDF or image files. Each of these counts as one transaction. You won't be charged for model training. You're charged for processing whether or not there's a positive classification, or any entities extracted.<br><br>Processing occurs on document upload and on subsequent updates. Processing is counted for each model applied. For example, if you have two models applied to a library and you upload or update a five-page document in that library, the total pages processed is 10.|$0.01/transaction|
