@@ -21,7 +21,7 @@ description: Learn how to plan, sign up, and run a trial pilot program for Micro
 
 # Try out Microsoft Syntex for free and experience its features
 
-Microsoft Syntex (evolving to be known as SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, sign, translate, manage, and enhance them with ease. And now, you can try some of these features at no charge.
+Microsoft Syntex (evolving to be known as SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, analyze, create, sign, translate, manage, and enhance them with ease. And now, you can try some of these features at no charge.
 
 From January 1, 2024 to June 30, 2024, you can try out Microsoft Syntex services at no cost when you set up [pay-as-you-go billing](syntex-azure-billing.md).
 
