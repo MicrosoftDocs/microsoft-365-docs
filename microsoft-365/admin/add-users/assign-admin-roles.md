@@ -97,7 +97,7 @@ Use the following instructions to assign roles to tens of users.
 
 You can export the admin list as well as search and filter by role.
 
-![Filter or import admin roles.](../../media/admin-role-page-options.png)
+:::image type="content" source="../../media/export-search-filter-roles.jpg" alt-text="Screenshot: Export your list of admin roles, search for roles and filter by role ":::
 
 - Use Export admin list to get a full list of all the admin users in your organization. The list is stored in an Excel .csv file.
 
