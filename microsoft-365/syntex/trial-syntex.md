@@ -19,10 +19,30 @@ ms.localizationpriority: medium
 description: Learn how to plan, sign up, and run a trial pilot program for Microsoft Syntex in your organization.
 ---
 
-# Run a trial of Microsoft Syntex
+# Try a Microsoft Syntex service
 
-> [!NOTE]
-> This article is currently being updated because Microsoft Syntex per-user licenses and trials are no longer available. Once updated, this article will describe how to set up and run a proof of concept for Syntex using pay-as-you-go licensing.
+You can try out Microsoft Syntex services at no cost when you set up [pay-as-you-go billing](syntex-azure-billing.md).
+
+With this opportunity, you get a limited usage amount each month at no charge. It's a great way to try out select Syntex capabilities, such as document processing, tagging, and translation, to see how you can use them to streamline processes in your organization.
+
+Once you set up pay-as-you-go billing, you get the units of service up to the capacity shown in the following table.
+
+|Service  |Unit  |Maximum monthly usage at no charge  |
+|---------|---------|---------|
+|Prebuilt document processing     | Page        | 100        |
+|Structured document processing   | Page        | 100        |
+|Unstructured document processing | Page        | 100        |
+|Content assembly                 | Document    | 50         |
+|Image tagging                    | Image       | 2,500      |
+|Taxonomy tagging                 | Document    | 50         |
+|eSignature                       | Envelope    | 5          |
+|Translation                      | Character   | 1 million  |
+|Optical character recognition    | Page        | 2,500      |
+
+For ideas about how you might use Syntex services in your organization, see [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md) and [Get started driving adoption of Microsoft Syntex]().
+
+This opportunity is now available for you to try through June 2024.
+ 
 
 <!---
 This article describes how to set up and run a trial pilot program to deploy Microsoft Syntex in your organization. It also recommends best practices for the trial.
