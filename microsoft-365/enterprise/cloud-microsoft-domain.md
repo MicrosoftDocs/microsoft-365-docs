@@ -34,7 +34,7 @@ Consolidating authenticated user-facing Microsoft 365 experiences to a single do
 
 ## Requirements for admins
 
-Organizations currently following standard [Microsoft network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges.md) shouldn't see an impact to the Microsoft 365 experience. End users can access the same apps and features as before, but now with a different URL.
+Organizations currently following standard [Microsoft network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges) shouldn't see an impact to the Microsoft 365 experience. End users can access the same apps and features as before, but now with a different URL.
 
 Admins should note that *.cloud.microsoft is already added to the official list of Office 365 URLs and IP address ranges. For more information.
 
@@ -44,4 +44,4 @@ link to SMC?
 ## See also
 
 - [Introducing cloud.microsoft: a unified domain for Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961)
-- [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges.md)
+- [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
