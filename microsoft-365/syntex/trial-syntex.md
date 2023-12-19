@@ -16,16 +16,14 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 ms.localizationpriority: medium
-description: Learn how to plan, sign up, and run a trial pilot program for Microsoft Syntex in your organization.
+description: Learn how to try Microsoft Syntex services for free during a limited offering.
 ---
 
 # Try out Microsoft Syntex for free and explore its features
 
-Microsoft Syntex (evolving to be SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, analyze, create, sign, translate, manage, and enhance them with ease. And now, you can try some of these features at no charge.
+Microsoft Syntex (evolving to be SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, analyze, create, sign, translate, manage, and enhance them with ease. And now, you can try some of these features at no cost when you set up [pay-as-you-go billing](syntex-azure-billing.md).
 
-From January 1, 2024 to June 30, 2024, you can try out Microsoft Syntex services at no cost when you set up [pay-as-you-go billing](syntex-azure-billing.md).
-
-With this offering, you get a limited usage amount each month at no charge. It's a great way to try out select Syntex capabilities, such as document processing, tagging, and translation, to see how you can use them to streamline processes in your organization.
+From January 1, 2024 to June 30, 2024, you get a limited amount of usage each month at no charge. It's a great way to try out select Syntex capabilities, such as document processing, tagging, and translation, to see how you can use them to streamline processes in your organization.
 
 If you want to try some of these features for free, you can do so from January 1, 2024 to June 30, 2024. Here are the steps to follow:
 
