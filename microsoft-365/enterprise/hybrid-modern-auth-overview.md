@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/03/2021
+ms.date: 12/19/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -32,6 +32,7 @@ _Modern Authentication_ is a method of identity management that offers more secu
 - [What else do I need to know before I begin?](hybrid-modern-auth-overview.md#BKMK_Whatelse)
 
 ## What is modern authentication?
+
 <a name="BKMK_WhatisModAuth"> </a>
 
 Modern authentication is an umbrella term for a combination of authentication and authorization methods between a client (for example, your laptop or your phone) and a server, as well as some security measures that rely on access policies that you may already be familiar with. It includes:
@@ -49,8 +50,9 @@ For more information about modern authentication in Office 365, see [Office 365 
 > [!IMPORTANT]
 > As of August of 2017, all new Office 365 tenants that include Skype for Business online and Exchange online will have modern authentication enabled by default. Pre-existing tenants won't have a change in their default MA state, but all new tenants automatically support the expanded set of identity features you see listed above. To check your MA status, see the [Check the modern authentication status of your on-premises environment](hybrid-modern-auth-overview.md#BKMK_CheckStatus) section.
 
-## What changes when I use modern authentication?
 <a name="BKMK_WhatChanges"> </a>
+
+## What changes when I use modern authentication?
 
 When using modern authentication with on-premises Skype for Business or Exchange server, you're still *authenticating* users on-premises, but the story of *authorizing* their access to resources (like files or emails) changes. This is why, though modern authentication is about client and server communication, the steps taken during configuring MA result in evoSTS (a Security Token Service used by Microsoft Entra ID) being set as Auth Server for Skype for Business and Exchange server on-premises.
 
@@ -66,6 +68,7 @@ What doesn't change? Whether you're in a split-domain hybrid or using Skype for 
 > If you need to know the specific Skype for Business topologies supported with MA, that's [documented right here](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported).
 
 ## Check the modern authentication status of your on-premises environment
+
 <a name="BKMK_CheckStatus"> </a>
 
 Because modern authentication changes the authorization server used when services apply OAuth/S2S, you need to know if modern authentication is enabled or disabled for your on-premises Skype for Business and Exchange environments. You can check the status on your Exchange servers by running the following PowerShell command:
@@ -76,7 +79,7 @@ Get-OrganizationConfig | ft OAuth*
 
 If the value of the _OAuth2ClientProfileEnabled_ property is **False**, then modern authentication is disabled.
 
-For more information about the Get-OrganizationConfig cmdlet, see [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
+For more information about the `Get-OrganizationConfig` cmdlet, see [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
 
 You can check your Skype for Business servers by running the following PowerShell command:
 
@@ -86,7 +89,7 @@ Get-CSOAuthConfiguration
 
 If the command returns an empty _OAuthServers_ property, or if the value of the _ClientADALAuthOverride_ property is not **Allowed**, then modern authentication is disabled.
 
-For more information about the Get-CsOAuthConfiguration cmdlet, see [Get-CsOAuthConfiguration](/powershell/module/skype/get-csoauthconfiguration).
+For more information about the `Get-CsOAuthConfiguration` cmdlet, see [Get-CsOAuthConfiguration](/powershell/module/skype/get-csoauthconfiguration).
 
 ## Do you meet modern authentication prerequisites?
 
@@ -169,12 +172,14 @@ Verify and check these items off your list before you continue:
   - Make sure the SignInOptions setting in Microsoft Office is not configured to its most restrictive setting. For more information, see [How to allow Office to connect to the internet](/office365/troubleshoot/access-management/office-feature-disabled).
 
 ## What else do I need to know before I begin?
+
 <a name="BKMK_Whatelse"> </a>
 
 - All the scenarios for on-premises servers involve setting up modern authentication on-premises (in fact, for Skype for Business there is a list of supported topologies) so that the server responsible for authentication and authorization is in the Microsoft Cloud (Microsoft Entra ID's security token service, called 'evoSTS'), and updating Microsoft Entra ID about the URLs or namespaces used by your on-premises installation of either Skype for Business or Exchange. Therefore, on-premises servers take on a Microsoft Cloud dependency. Taking this action could be considered configuring 'hybrid auth'.
 - This article links out to others that will help you choose supported modern authentication topologies (necessary only for Skype for Business), and how-to articles that outline the setup steps, or steps to disable modern authentication, for Exchange on-premises and Skype for Business on-premises. Favorite this page in your browser if you're going to need a home-base for using modern authentication in your server environment.
 
 ## Related Topics
+
 <a name="BKMK_URLListforMA"> </a>
 
 - [How to configure Exchange Server on-premises to use Modern Authentication](configure-exchange-server-for-hybrid-modern-authentication.md)
