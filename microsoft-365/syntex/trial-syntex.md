@@ -29,15 +29,15 @@ And now for a limited time, you can try some of these features at no cost when y
 
 If you want to try some of these features for free, you can do so from January 1 to June 30, 2024. Here are the steps to follow:
 
-1. To try Microsoft Syntex, you need to set up [pay-as-you-go billing](syntex-azure-billing.md). You'll get a limited amount of usage for free each month during the offering period.
+1. If you haven't done already, [set up pay-as-you-go billing](syntex-azure-billing.md). You'll get a limited amount of usage for free each month during the offering period.
 
-2. Once you have set up pay-as-you-go billing, you need to [turn on the services you want to try](set-up-microsoft-syntex.md).
+2. [Turn on the Syntex services you want to try](set-up-microsoft-syntex.md).
 
-3. After you have enabled Microsoft Syntex, you can start using its features.
+3. [Start using the Syntex features](syntex-overview.md).
 
 ## Monthly usage limits for free offering
 
-The following table shows the units of service up to the capacity limits you can you use at no charge each during the offering period.
+The following table shows the units of service up to the capacity limits you can use at no charge each month during the offering period.
 
 |Service  |Unit  |Maximum monthly usage at no charge  |
 |---------|---------|---------|
