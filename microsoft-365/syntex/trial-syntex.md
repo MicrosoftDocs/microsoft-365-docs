@@ -19,13 +19,15 @@ ms.localizationpriority: medium
 description: Learn how to plan, sign up, and run a trial pilot program for Microsoft Syntex in your organization.
 ---
 
-# Try a Microsoft Syntex service
+# Try out Microsoft Syntex for free and experience its features
 
-You can try out Microsoft Syntex services at no cost when you set up [pay-as-you-go billing](syntex-azure-billing.md).
+Microsoft Syntex (evolving to be known as SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, sign, translate, manage, and enhance them with ease. And now, you can try some of these features at no charge.
 
-With this opportunity, you get a limited usage amount each month at no charge. It's a great way to try out select Syntex capabilities, such as document processing, tagging, and translation, to see how you can use them to streamline processes in your organization.
+From January 1, 2024 to June 30, 2024, you can try out Microsoft Syntex services at no cost when you set up [pay-as-you-go billing](syntex-azure-billing.md).
 
-Once you set up pay-as-you-go billing, you get the units of service up to the capacity shown in the following table.
+With this offering, you get a limited usage amount each month at no charge. It's a great way to try out select Syntex capabilities, such as document processing, tagging, and translation, to see how you can use them to streamline processes in your organization.
+
+If you have pay-as-you-go billing set up, you get the units of service up to the capacity shown in the following table.
 
 |Service  |Unit  |Maximum monthly usage at no charge  |
 |---------|---------|---------|
@@ -39,10 +41,8 @@ Once you set up pay-as-you-go billing, you get the units of service up to the ca
 |Translation                      | Character   | 1 million  |
 |Optical character recognition    | Page        | 2,500      |
 
-For ideas about how you might use Syntex services in your organization, see [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md) and [Get started driving adoption of Microsoft Syntex]().
+Don’t miss this chance to boost your productivity and creativity with Microsoft Syntex. For ideas about how you might use Syntex services in your organization, see [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md) and [Get started driving adoption of Microsoft Syntex](adoption-getstarted.md).
 
-This opportunity is now available for you to try through June 2024.
- 
 
 <!---
 This article describes how to set up and run a trial pilot program to deploy Microsoft Syntex in your organization. It also recommends best practices for the trial.
