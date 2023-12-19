@@ -29,7 +29,7 @@ And now for a limited time, you can try some of these features at no cost when y
 
 If you want to try some of these features for free, you can do so from January 1 to June 30, 2024. Here are the steps to follow:
 
-1. [Set up pay-as-you-go billing](syntex-azure-billing.md). You'll get a limited amount of usage for free each month during the offering period.
+1. [Set up pay-as-you-go billing](syntex-azure-billing.md).
 
 2. [Turn on the Syntex services you want to try](set-up-microsoft-syntex.md).
 
@@ -37,7 +37,7 @@ If you want to try some of these features for free, you can do so from January 1
 
 ## Monthly usage limits for free offering
 
-The following table shows the units of service and capacity limits you can use at no charge for each month during the offering period.
+You'll get a limited amount of usage for free each month during the offering period. The following table shows the units of service and capacity limits you can use at no charge for each month.
 
 |Service  |Unit  |Maximum monthly usage at no charge  |
 |---------|---------|---------|
