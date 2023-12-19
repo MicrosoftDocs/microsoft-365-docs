@@ -90,7 +90,7 @@ The following table describes useful fields in the **X-Microsoft-Antispam** mess
 
 ## Authentication-results message header
 
-The results of email authentication checks for SPF, DKIM, and DMARC are recorded (stamped) in the **Authentication-results** message header in inbound messages.
+The results of email authentication checks for SPF, DKIM, and DMARC are recorded (stamped) in the **Authentication-results** message header in inbound messages. The **Authentication-results** header is defined in [RFC 7001](https://datatracker.ietf.org/doc/html/rfc7001).
 
 The following list describes the text that's added to the **Authentication-Results** header for each type of email authentication check:
 

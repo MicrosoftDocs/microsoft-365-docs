@@ -420,7 +420,7 @@ For detailed syntax and parameter information, see the following articles:
 
 ## Rotate DKIM keys for custom domains
 
-For the same reasons that you should periodically change your passwords, you should periodically create new DKIM keys to use for DKIM signing. Replacing/updating the DKIM keys for a domain is known as _DKIM key rotation_.
+For the same reasons that you should periodically change passwords, you should periodically create new DKIM keys to use for DKIM signing. Replacing the DKIM key for a domain is known as _DKIM key rotation_.
 
 The relevant information about DKIM key rotation for a custom domain Microsoft 365 is shown in the output of the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
@@ -433,7 +433,9 @@ Get-DkimSigningConfig -Identity <CustomDomain> | Format-List
 - **SelectorBeforeRotateOnDate**: Remember, DKIM signing using a custom domain in Microsoft 365 requires two CNAME records in the domain. This property shows the CNAME record that DKIM uses before the **RotateOnDate** date-time (also known as a _selector_). The value is `selector1` or `selector2` and is different than the **SelectorAfterRotateOnDate** value.
 - **SelectorAfterRotateOnDate**: Shows the CNAME record that DKIM uses after the **RotateOnDate** date-time. The value is `selector1` or `selector2` and is different than the **SelectorBeforeRotateOnDate** value.
 
-When you do a DKIM key rotation on a custom domain as described in this section, it takes four days (96 hours) for the new key to be used to DKIM sign messages (the value of the **RotateOnDate** date/time). The selector that DKIM used to sign a message is stored in the **s=** value in the **DKIM-Signature** header field. For example `s=selector1-contoso-com`.
+When you do a DKIM key rotation on a custom domain as described in this section, the change isn't immediate. It takes four days (96 hours) for the new key to be used to DKIM sign messages (the **RotateOnDate** date/time and the **SelectorAfterRotateOnDate** value). Until then, the existing key is used (the **SelectorBeforeRotateOnDate** value).
+
+To confirm the private key that DKIM used to sign a message, and the corresponding public key that's used to verify the DKIM signature (the selector), check the **s=** value in the **DKIM-Signature** header field. For example `s=selector1-contoso-com`.
 
 > [!TIP]
 > You can rotate DKIM keys only on custom domains that are enabled for DKIM (the **Status** value is Enabled).
@@ -622,9 +624,9 @@ Use any of the following methods to verify DKIM signing of outbound email from M
 
   :::image type="content" source="../../media/email-auth-dkim-m365-test.png" alt-text="The DKIM diagnostics test in Microsoft 365 help." lightbox="../../media/email-auth-dkim-m365-test.png":::
 
-## Set up DKIM for third-party services to send mail from custom domains
+## Set up DKIM signing of mail from third-party services
 
-Some email service providers, or software-as-a-service providers, let you set up DKIM keys for email that originates from their service. This action requires coordination between yourself and the third-party in order to set up the necessary DNS records. Some third-party email systems can have their own CNAME records with different selectors. No two organizations do it exactly the same way; the process depends entirely on the organization.
+Some email service providers or software-as-a-service providers let you enable DKIM signing for your mail that originates from their service. Configuring DKIM using requires coordination between yourself and the third-party in order to set up the necessary DNS records. Some third-party email systems can have their own CNAME records with different selectors. No two organizations do it exactly the same way; the process depends entirely on the organization.
 
 > [!TIP]
 > As mentioned earlier in this article, we recommend using subdomains for email systems or services that you don't directly control.
@@ -640,9 +642,9 @@ Return-Path: <communication@adatum.com>
 
 In this example, the following steps are required:
 
-1. The Adatum bulk mailing service gives Contoso a public key to use for DKIM signing of outbound messages from their service.
+1. The Adatum bulk mailing service gives Contoso a public key to use for DKIM signing of outbound Contoso mail from their service.
 2. Contoso publishes the public DKIM key in DNS at the domain registrar for the marketing.contoso.com subdomain (a TXT record or a CNAME record).
-3. When the Adatum bulk mailing service sends email from senders in the marketing.contoso.com domain, the messages are DKIM signed using the private key that corresponds to the public key given to Contoso to use in the in the marketing.contoso.com subdomain in the first step.
+3. When the Adatum bulk mailing service sends email from senders in the marketing.contoso.com domain, the messages are DKIM signed using the private key that corresponds to the public key they gave to Contoso in the first step.
 4. Destination email systems can use DMARC in received messages to compare the domain in the DKIM signature (the **d=** value in the **DKIM-Signature** header field) and the domain in the From address that's shown in email clients. In this example, the domain values match, so the messages that already pass DKIM can also pass DMARC:
 
    **From**: sender@marketing.contoso.com<br>
