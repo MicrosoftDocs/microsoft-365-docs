@@ -55,7 +55,7 @@ After you mapped your attributes, you can view your list of mapped values. These
 
     :::image type="content" source="media/targeted-comms-view-values.png" alt-text="Screenshot of the Targeted communications page in the Teams admin center, showing list of mapped attribute values." lightbox="media/targeted-comms-view-values.png":::
 
-    If your organization has new departments or job titles that aren’t in the list, choose **Refresh values** to update the list. Keep in mind that this process can take several hours to complete. 
+    If your organization has new departments or job titles that aren’t in the list, choose **Refresh values** to update the list. Keep in mind that this process can take several hours to complete.
 
     > [!NOTE]
     > If you want to change or remove the **Department** or **Job title** attribute, rerun the deploy frontline dynamic teams experience, make your changes, and then come back here to view the updated values.
@@ -67,6 +67,8 @@ With automatic tags, your frontline workers can reach each other by department o
 Your frontline can quickly and easily reach the right groups of people. And because the tags are automatically created based on your mapped attribute values, team owners don’t have to manually create and assign tags or manage them locally.
 
 For example, a regional store manager who oversees all Northwind Trader stores in their region needs to notify all store associates and supervisors about a potentially harmful product that must be immediately removed from all stores. The manager @mentions the **Store Associate** and **Store Supervisor** tag in their channel post to notify all store associates and supervisors.
+
+:::image type="content" source="media/targeted-comms-automatic-tags.png" alt-text="Screenshot of automatic tags used in a  Teams channel conversation." lightbox="media/targeted-comms-automatic-tags.png":::
 
 Automatic tags are created and available after you map your attributes. To allow frontline teams to use the tags in Teams, admins and team owners need to do the following:
 
