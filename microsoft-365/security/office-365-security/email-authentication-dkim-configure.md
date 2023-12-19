@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.custom:
   - seo-marvel-apr2020
-description: Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems.
+description: Learn how Microsoft 365 uses DomainKeys Identified Mail (DKIM) to sign outbound mail, and how to configure DKIM signing of outbound mail using custom domains.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
@@ -26,28 +26,28 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# Use DKIM to validate outbound email sent from your custom domain
+# Use DKIM to validate outbound mail from your custom domain
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-DomainKeys Identified Mail (DKIM) is a method of [email authentication](email-authentication-about.md) that helps validate outbound email sent from your Microsoft 365 organization to help prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
+DomainKeys Identified Mail (DKIM) is a method of [email authentication](email-authentication-about.md) that helps validate mail sent from your Microsoft 365 organization to help prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
 
 Specifically:
 
 1. One or more private keys are generated for a domain and are used by the source email system to digitally sign important parts of outbound messages. These parts include:
    - The From, To, Subject, MIME-Version, Content-Type, Date, and other message header fields (depending on the source email system).
    - The message body.
-1. The digital signature is stored in the **DKIM-Signature** header field in the message header and remains valid as long as intermediate email systems don't modify the signed parts of the message. The signing domain is identified by the the **d=** value in the **DKIM-Signature** header field.
-1. The corresponding public keys are stored in DNS records for the signing domain (CNAME records in Microsoft 365).
-1. Destination email systems use the **d=** value in the **DKIM-Signature** header field to:
+2. The digital signature is stored in the **DKIM-Signature** header field in the message header and remains valid as long as intermediate email systems don't modify the signed parts of the message. The signing domain is identified by the **d=** value in the **DKIM-Signature** header field.
+31. The corresponding public keys are stored in DNS records for the signing domain (CNAME records in Microsoft 365).
+4. Destination email systems use the **d=** value in the **DKIM-Signature** header field to:
    - Identify the signing domain.
    - Look up the public key in the DKIM DNS record for the domain.
-   - Use the public key in the DKIM DNS record for the domain to decrypt and verify the message signature.
+   - Use the public key in the DKIM DNS record for the domain to verify the message signature.
 
 Important facts about DKIM:
 
 - The domain that's used to DKIM sign the message isn't required to match the domain in the MAIL FROM or From addresses in the message. For more information about these addresses, see [Why internet email needs authentication](email-authentication-about.md#why-internet-email-needs-authentication).
-- It's OK to double DKIM sign messages. In fact, many hosted email services do this (sign the message using the parent domain and sign the message again using the customer domain after they configure DKIM themselves).
+- It's OK to double DKIM sign messages. In fact, many hosted email services sign the message using the service domain and sign the message again using the customer domain after they configure DKIM for themselves.
 
 Before we get started, here's what you need to know about DKIM in Microsoft 365 based on your email domain:
 
@@ -55,10 +55,10 @@ Before we get started, here's what you need to know about DKIM in Microsoft 365 
 
   Microsoft owns the onmicrosoft.com domain, so we're responsible for creating and maintaining the DNS records in that domain and its subdomains. For more information about \*.onmicrosoft.com domains, see [Why do I have an "onmicrosoft.com" domain?](/microsoft-365/admin/setup/domains-faq#why-do-i-have-an--onmicrosoft-com--domain).
 
-- **You use one or more custom domains for email (for example, contoso.com)**: By default, Microsoft 365 uses the default public-private key from your initial \*.onmicrosoft.com domain to DKIM sign outbound mail from Microsoft 365 from senders in any of your custom domains. But, you still have more work to do for maximum email protection:
-  - **Configure DKIM signing using custom domains sor subdomains**: We recommend configuring [DMARC](email-authentication-dmarc-configure.md), because DMARC verifies that the domains in the MAIL FROM and From addresses match. DMARC is more effective if the domain that was used to DKIM sign the message and the domain in the From address match. Therefore, you need to configure DKIM for any custom domains that you use to send email.
+- **You use one or more custom domains for email (for example, contoso.com)**: By default, Microsoft 365 uses the default public-private key from your initial \*.onmicrosoft.com domain to DKIM sign and validate outbound mail from Microsoft 365 from senders in any of your custom domains. But, you still have more work to do for maximum email protection:
+  - **Configure DKIM signing using custom domains for subdomains**: We recommend configuring [DMARC](email-authentication-dmarc-configure.md), because DMARC verifies that the domains in the MAIL FROM and From addresses match. DMARC is more effective if the domain that was used to DKIM sign the message and the domain in the From address match. Therefore, you need to configure DKIM for any custom domains that you use to send email.
   - **Subdomains**:
-    - If you use email services that aren't under your direct control (for example, to send bulk email or to add email signatures to outbound mail), we recommend using a subdomain (for example, marketing.contoso.com) for those services instead of your main email domain (for example, contoso.com). You don't want issues with mail sent from those email services to affect the reputation of mail sent by employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
+    - For email services that aren't under your direct control (for example, bulk email services or services that add email signatures to outbound mail), we recommend using a subdomain (for example, marketing.contoso.com) instead of your main email domain (for example, contoso.com). You don't want issues with mail sent from those email services to affect the reputation of mail sent by employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
     - Each subdomain that you use to send email from Microsoft 365 requires its own DKIM configuration.
     - Unlike SPF and DMARC, you use the Microsoft Defender portal or Exchange Online PowerShell to enable and configure DKIM signing using custom domains. The procedures are described in this article.
 
@@ -99,7 +99,7 @@ Points to address or value: selector2-<CustomDomain>._domainkey.<InitialDomain>
   - Only one active selector is published with the public key when DKIM signing using the custom domain is enabled.
   - The second selector is published and used after any future [DKIM key rotation](#rotate-dkim-keys-for-custom-domains) when it becomes active.
 
-    The selector that DKIM used to sign the message is stored in the **s=** value in the **DKIM-Signature** header field. For example `s=selector1-contoso-com`.
+    The selector that DKIM used to sign the message is stored in the **s=** value in the **DKIM-Signature** header field. For example, `s=selector1-contoso-com`.
 
 - **Hostname**: The values are the same for all Microsoft 365 organizations: `selector1._domainkey` and `selector2._domainkey`.
 
@@ -201,7 +201,7 @@ How you configure DKIM signing using the custom or subdomain domain depends on w
 
    :::image type="content" source="../../media/email-auth-dkim-domain-properties-create-dkim-unavailable.png" alt-text="The domain details tab with DKIM signing disable and no DKIM signatures configured for the domain." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim-unavailable.png":::
 
-5. Select the **Sign messages for this domain with DKIM signatures** toggle that's currently .
+5. Select the **Sign messages for this domain with DKIM signatures** toggle that's currently set to **Disabled** :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::.
 
 6. A **Client error** dialog opens. The error contains the values to use in the two CNAME records that you create at the domain registrar for the domain.
 
@@ -233,7 +233,7 @@ How you configure DKIM signing using the custom or subdomain domain depends on w
 
    We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these steps to begin creating the CNAME records, and then use the values in this step for the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
-   It will take several minutes or longer for Microsoft 365 to detect the new CNAME records that you created.
+   It takes several minutes or longer for Microsoft 365 to detect the new CNAME records that you created.
 
 8. After a while, return to the domain properties flout that you left open in Step 6, and select the **Sign messages for this domain with DKIM signatures** toggle.
 
@@ -293,7 +293,7 @@ If you'd rather use PowerShell to enable DKIM signing of outbound messages using
 
    We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these steps to begin creating the CNAME records, and then use the values in the previous step for the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
-   It will take several minutes or longer for Microsoft 365 to detect the new CNAME records that you created.
+   It takes several minutes or longer for Microsoft 365 to detect the new CNAME records that you created.
 
 4. After a while, return to Exchange Online PowerShell, replace \<CustomDomain\> with the domain that you configured, and run the following command:
 
@@ -303,7 +303,7 @@ If you'd rather use PowerShell to enable DKIM signing of outbound messages using
 
    If Microsoft 365 was able to detect the CNAME records for the domain at the domain registrar, the command runs without error, and the domain is now used to DKIM sign outbound messages from the domain.
 
-   If the CNAME records aren't detected, you an error stating that fact, and a description of the CNAME record values to use. Check for typos in the values at the domain registrar (easy to do with the dashes, periods, and underlines!), wait a while longer, and then run the command again.
+   If the CNAME records aren't detected, you an error that contains the values to use in the CNAME records. Check for typos in the values at the domain registrar (easy to do with the dashes, periods, and underlines!), wait a while longer, and then run the command again.
 
 For detailed syntax and parameter information, see the following articles:
 
@@ -624,16 +624,16 @@ Use any of the following methods to verify DKIM signing of outbound email from M
 
   :::image type="content" source="../../media/email-auth-dkim-m365-test.png" alt-text="The DKIM diagnostics test in Microsoft 365 help." lightbox="../../media/email-auth-dkim-m365-test.png":::
 
-## Set up DKIM signing of mail from third-party services
+## DKIM signing of mail from your custom domain at other email services
 
-Some email service providers or software-as-a-service providers let you enable DKIM signing for your mail that originates from their service. Configuring DKIM using requires coordination between yourself and the third-party in order to set up the necessary DNS records. Some third-party email systems can have their own CNAME records with different selectors. No two organizations do it exactly the same way; the process depends entirely on the organization.
+Some email service providers or software-as-a-service providers let you enable DKIM signing for your mail that originates from their service. But, the methods depend entirely on the email service.
 
 > [!TIP]
 > As mentioned earlier in this article, we recommend using subdomains for email systems or services that you don't directly control.
 
-An example message showing a properly-configured DKIM for marketing.contoso.com and the Adatum bulk mailing service might contain the following elements:
+For example, your email domain in Microsoft 365 is contoso.com, and you use the Adatum bulk mailing service for marketing email. If Adatum supports DKIM signing of messages from senders in your domain at their service, the messages might contain the following elements:
 
-```console
+```text
 Return-Path: <communication@adatum.com>
  From: <sender@marketing.contoso.com>
  DKIM-Signature: s=s1024; d=marketing.contoso.com
@@ -642,17 +642,18 @@ Return-Path: <communication@adatum.com>
 
 In this example, the following steps are required:
 
-1. The Adatum bulk mailing service gives Contoso a public key to use for DKIM signing of outbound Contoso mail from their service.
+1. Adatum gives Contoso a public key to use for DKIM signing of outbound Contoso mail from their service.
 2. Contoso publishes the public DKIM key in DNS at the domain registrar for the marketing.contoso.com subdomain (a TXT record or a CNAME record).
-3. When the Adatum bulk mailing service sends email from senders in the marketing.contoso.com domain, the messages are DKIM signed using the private key that corresponds to the public key they gave to Contoso in the first step.
-4. Destination email systems can use DMARC in received messages to compare the domain in the DKIM signature (the **d=** value in the **DKIM-Signature** header field) and the domain in the From address that's shown in email clients. In this example, the domain values match, so the messages that already pass DKIM can also pass DMARC:
+3. When Adatum sends mail from senders in the marketing.contoso.com domain, the messages are DKIM signed using the private key that corresponds to the public key they gave to Contoso in the first step.
+4. If the destination email system checks DKIM on inbound messages, the messages pass DKIM because they're DKIM signed.
+5. If the destination email system checks DMARC on inbound messages, the domain in the DKIM signature (the **d=** value in the **DKIM-Signature** header field) matches the domain in the From address that's shown in email clients, so the messages can also pass DMARC:
 
    **From**: sender@marketing.contoso.com<br>
    **d=**: marketing.contoso.com
 
 ## Next steps
 
-As described in [How SPF, DKIM, and DMARC work together to authenticate email message senders](email-authentication-about.md#how-spf-dkim-and-dmarc-work-together-to-authenticate-email-message-senders), DKIM alone is not enough to prevent spoofing of your Microsoft 365 domain. You also need to configure SPF and DMARC for the best protection. For instructions, see:
+As described in [How SPF, DKIM, and DMARC work together to authenticate email message senders](email-authentication-about.md#how-spf-dkim-and-dmarc-work-together-to-authenticate-email-message-senders), DKIM alone isn't enough to prevent spoofing of your Microsoft 365 domain. You also need to configure SPF, DMARC, and possibly ARC for the best possible protection. For instructions, see:
 
 - [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
 - [Use DMARC to validate email](email-authentication-dmarc-configure.md)

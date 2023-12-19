@@ -31,9 +31,9 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Sender Policy Framework (SPF) is a method of [email authentication](email-authentication-about.md) that helps validate outbound email sent from your Microsoft 365 organization to help prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
+Sender Policy Framework (SPF) is a method of [email authentication](email-authentication-about.md) that helps validate mail sent from your Microsoft 365 organization to help prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
 
-SPF uses a TXT record in DNS to identify valid sources of mail for the domain. Specific SPF verifies that sender's email address that's used during the SMTP transmission of the message (known as the MAIL FROM address, `5321.MailFrom` address, P1 sender, or envelope sender) came from a known, designated source of mail for that domain.
+SPF uses a TXT record in DNS to identify valid sources of mail for the domain. Specifically, SPF verifies that email from the sender address used during the SMTP transmission of the message (known as the MAIL FROM address, `5321.MailFrom` address, P1 sender, or envelope sender) is from a known, designated source of mail for that domain.
 
 For example, if your email domain in Microsoft 365 is contoso.com, you create an SPF TXT record in DNS for the contoso.com domain to identify Microsoft 365 as an authorized source of mail from contoso.com. Destination email systems check the SPF TXT record in contoso.com to determine whether the message came from an authorized source for contoso.com email.
 
@@ -43,7 +43,7 @@ Before we get started, here's what you need to know about SPF in Microsoft 365 b
 
 - **You use one or more custom domains for email (for example, contoso.com)**: As part of the Microsoft 365 enrollment process, you were already required to create or modify the SPF TXT record in DNS for your custom domain to identify Microsoft 365 as an authorized source for email from your domain. But, you still have more work to do for maximum email protection:
   - **Subdomains**:
-    - If you use email services that aren't under your direct control (for example, to send bulk email or to add email signatures to outbound mail), we recommend using a subdomain (for example, marketing.contoso.com) for those services instead of your main email domain (for example, contoso.com). You don't want issues with mail sent from those email services to affect the reputation of mail sent by employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq?view=o365-worldwide#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
+    - For email services that aren't under your direct control (for example, bulk email services or services that add email signatures to outbound mail), we recommend using a subdomain (for example, marketing.contoso.com) instead of your main email domain (for example, contoso.com). You don't want issues with mail sent from those email services to affect the reputation of mail sent by employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq?view=o365-worldwide#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
     - Each subdomain that you use to send email from Microsoft 365 requires its own DKIM CNAME record. For example, the DKIM CNAME record for contoso.com doesn't cover marketing.contoso.com; marketing.contoso.com needs its own DKIM CNAME record.
 
       > [!TIP]
@@ -192,7 +192,7 @@ You can use free online tools to view your SPF TXT record and other DNS records 
 
 ## Next Steps
 
-As described in [How SPF, DKIM, and DMARC work together to authenticate email message senders](email-authentication-about.md#how-spf-dkim-and-dmarc-work-together-to-authenticate-email-message-senders), SPF alone is not enough to prevent spoofing of your Microsoft 365 domain. You also need to configure DKIM and DMARC for the best protection. For instructions, see:
+As described in [How SPF, DKIM, and DMARC work together to authenticate email message senders](email-authentication-about.md#how-spf-dkim-and-dmarc-work-together-to-authenticate-email-message-senders), SPF alone isn't enough to prevent spoofing of your Microsoft 365 domain. You also need to configure DKIM, DMARC, and possibly ARC for the best possible protection. For instructions, see:
 
 - [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md)
 - [Use DMARC to validate email](email-authentication-dmarc-configure.md)
