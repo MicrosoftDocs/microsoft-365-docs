@@ -29,17 +29,11 @@ From January 1, 2024 to June 30, 2024, you get a limited amount of usage each mo
 
 If you want to try some of these features for free, you can do so from January 1, 2024 to June 30, 2024. Here are the steps to follow:
 
-### Step 1: Set up pay-as-you-go billing.
+1. To try Microsoft Syntex, you need to set up [pay-as-you-go billing](syntex-azure-billing.md). You'll get a limited amount of usage for free each month during the offering period.
 
-To try Microsoft Syntex, you need to set up [pay-as-you-go billing](syntex-azure-billing.md). You'll get a limited amount of usage for free each month during the offering period.
+2. Once you have set up pay-as-you-go billing, you need to [turn on the services you want to try](set-up-microsoft-syntex.md).
 
-### Step 2: Enable Microsoft Syntex services.
-
-Once you have set up pay-as-you-go billing, you need to [turn on the services you want to try](set-up-microsoft-syntex.md).
-
-### Step 3: Try out Microsoft Syntex features
-
-After you have enabled Microsoft Syntex, you can start using its features. 
+3. After you have enabled Microsoft Syntex, you can start using its features.
 
 ## Monthly usage limits for free offering
 
@@ -57,7 +51,7 @@ The following table shows the units of service up to the capacity limits you can
 |Translation                      | Character   | 1 million  |
 |Optical character recognition    | Page        | 2,500      |
 
-Monthly usage over the limitations shown will be billed as described in [Pay-as-you-go services and pricing](syntex-pay-as-you-go-services.md).
+Monthly usage over the limitations will be billed as described in [Pay-as-you-go services and pricing](syntex-pay-as-you-go-services.md).
 
 For ideas about how you might use Syntex services in your organization, see [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md) and [Get started driving adoption of Microsoft Syntex](adoption-getstarted.md).
 
