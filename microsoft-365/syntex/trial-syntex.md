@@ -21,11 +21,28 @@ description: Learn how to plan, sign up, and run a trial pilot program for Micro
 
 # Try out Microsoft Syntex for free and experience its features
 
-Microsoft Syntex (evolving to be known as SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, analyze, create, sign, translate, manage, and enhance them with ease. And now, you can try some of these features at no charge.
+Microsoft Syntex (evolving to be SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, analyze, create, sign, translate, manage, and enhance them with ease. And now, you can try some of these features at no charge.
 
 From January 1, 2024 to June 30, 2024, you can try out Microsoft Syntex services at no cost when you set up [pay-as-you-go billing](syntex-azure-billing.md).
 
 With this offering, you get a limited usage amount each month at no charge. It's a great way to try out select Syntex capabilities, such as document processing, tagging, and translation, to see how you can use them to streamline processes in your organization.
+
+If you want to try some of these features for free, you can do so from January 1, 2024 to June 30, 2024. Here are the steps to follow:
+
+### Step 1: Set up pay-as-you-go billing.
+
+To use Microsoft Syntex, you need to have an Azure account and a subscription. If you don’t have one, you can [create one](syntex-azure-billing.md).
+
+To try Microsoft Syntex for free, you need to set up [pay-as-you-go billing](syntex-azure-billing.md) for your subscription. This means that you will only pay for what you use, and you will get a limited amount of usage for free each month during the offering period.
+
+### Step 2: Enable Microsoft Syntex services.
+
+Once you have set up pay-as-you-go billing, you need to [enable the services you want to try](set-up-microsoft-syntex.md).
+
+### Step 3: Try out Microsoft Syntex features
+
+After you have enabled Microsoft Syntex, you can start using its features. You can access them from the SharePoint portal or from the Microsoft 365 apps.
+
 
 If you have pay-as-you-go billing set up, you get the units of service up to the capacity shown in the following table.
 
