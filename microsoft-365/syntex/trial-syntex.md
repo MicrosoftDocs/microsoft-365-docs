@@ -25,24 +25,25 @@ Microsoft Syntex (evolving to be SharePoint Premium) is a powerful tool that let
 
 From January 1, 2024 to June 30, 2024, you get a limited amount of usage each month at no charge. It's a great way to try out select Syntex capabilities, such as document processing, tagging, and translation, to see how you can use them to streamline processes in your organization.
 
+## Get started
+
 If you want to try some of these features for free, you can do so from January 1, 2024 to June 30, 2024. Here are the steps to follow:
 
 ### Step 1: Set up pay-as-you-go billing.
 
-To use Microsoft Syntex, you need to have an Azure account and a subscription. If you don’t have one, you can [create one](syntex-azure-billing.md).
-
-To try Microsoft Syntex for free, you need to set up [pay-as-you-go billing](syntex-azure-billing.md) for your subscription. This means that you will only pay for what you use, and you will get a limited amount of usage for free each month during the offering period.
+To try Microsoft Syntex, you need to set up [pay-as-you-go billing](syntex-azure-billing.md). You'll get a limited amount of usage for free each month during the offering period.
 
 ### Step 2: Enable Microsoft Syntex services.
 
-Once you have set up pay-as-you-go billing, you need to [enable the services you want to try](set-up-microsoft-syntex.md).
+Once you have set up pay-as-you-go billing, you need to [turn on the services you want to try](set-up-microsoft-syntex.md).
 
 ### Step 3: Try out Microsoft Syntex features
 
-After you have enabled Microsoft Syntex, you can start using its features. You can access them from the SharePoint portal or from the Microsoft 365 apps.
+After you have enabled Microsoft Syntex, you can start using its features. 
 
+## Monthly usage limits for free offering
 
-If you have pay-as-you-go billing set up, you get the units of service up to the capacity shown in the following table.
+The following table shows the units of service up to the capacity limits you can you use at no charge each during the offering period.
 
 |Service  |Unit  |Maximum monthly usage at no charge  |
 |---------|---------|---------|
@@ -56,7 +57,9 @@ If you have pay-as-you-go billing set up, you get the units of service up to the
 |Translation                      | Character   | 1 million  |
 |Optical character recognition    | Page        | 2,500      |
 
-Don’t miss this chance to boost your productivity and creativity with Microsoft Syntex. For ideas about how you might use Syntex services in your organization, see [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md) and [Get started driving adoption of Microsoft Syntex](adoption-getstarted.md).
+Monthly usage over the limitations shown will be billed as described in [Pay-as-you-go services and pricing](syntex-pay-as-you-go-services.md).
+
+For ideas about how you might use Syntex services in your organization, see [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md) and [Get started driving adoption of Microsoft Syntex](adoption-getstarted.md).
 
 
 <!---
