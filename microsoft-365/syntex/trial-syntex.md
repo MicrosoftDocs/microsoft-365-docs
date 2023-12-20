@@ -39,7 +39,7 @@ If you want to try some of these features, you can do so from January 1 to June 
 
 You'll get a limited amount of usage each month during the offering period. The following table shows the units of service and capacity limits you can use at no charge for each month.
 
-|Service  |Units  |Monthly included capacity  |
+|Service  |Units  |Monthly included capacity at no charge  |
 |---------|---------|---------|
 |Prebuilt document processing     | Pages        | 100        |
 |Structured document processing   | Pages        | 100        |
