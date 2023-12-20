@@ -38,7 +38,7 @@ Before you can assign Copilot licenses, you need to make sure that you've alread
 
 To assign and manage Copilot licenses, you can use the Microsoft 365 admin center. Here are the steps:
 
-1. Go to **Billing** > **Licenses** in the admin center.
+1. Sign in to the Microsoft 365 admin center and go to **Billing** > **Licenses**.
 2. Select **Copilot for Microsoft 365**.
 3. In the product details page, assign licenses to users and manage their access to Copilot and other apps and services.
 4. To check if a user has been added, go to **Users** and then **Active Users**. The user will be displayed along with their active license.
@@ -53,7 +53,7 @@ After licensing your users for Microsoft Copilot for Microsoft 365, we recommend
 
 :::image type="content" source="media/eap-welcome-email.png" alt-text="A preview image of an email template for introducing Microsoft Copilot for Microsoft 365 and its capabilities that an admin can provide to users.":::
 
-The welcome email also includes a link to an interactive website for [Microsoft Copilot for Microsoft 365](https://support.microsoft.com/copilot).
+The welcome email also includes a link to [Microsoft Copilot help and learning](https://support.microsoft.com/copilot).
 
 ## Enable feedback
 
@@ -61,4 +61,4 @@ We recommend that you enable all feedback settings for the Microsoft 365 Apps. T
 
 ## Microsoft Copilot for Microsoft 365 usage activity report
 
-After your users have had a chance to use Copilot, we recommend running and reviewing the [Microsoft Copilot for Microsoft 365 usage report](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage) (which is in continuous enhancement) to get a summary of user adoption, retention, and engagement with Microsoft Copilot for Microsoft 365. The report can be found in the Microsoft 365 admin center under **Reports** > **Usage**.
+After your users have had a chance to use Copilot, we recommend running and reviewing the [Microsoft Copilot for Microsoft 365 usage report](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage) to get a summary of user adoption, retention, and engagement with Microsoft Copilot for Microsoft 365. The report can be found in the Microsoft 365 admin center under **Reports** > **Usage**.
