@@ -1,5 +1,5 @@
 ---
-title: Try out Microsoft Syntex for free and explore its features
+title: Try out Microsoft Syntex and explore its features
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -16,18 +16,18 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 ms.localizationpriority: medium
-description: Learn how to try Microsoft Syntex services for free during a limited offering.
+description: Learn how to try Microsoft Syntex services during a limited offering.
 ---
 
-# Try out Microsoft Syntex for free and explore its features
+# Try out Microsoft Syntex and explore its features
 
-Microsoft Syntex (evolving to be SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, analyze, create, sign, translate, manage, and enhance them with ease.
+Microsoft Syntex (evolving to be SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, analyze, create, sign, manage, and enhance them with ease.
 
-And now for a limited time, you can try some of these features at no cost when you set up [pay-as-you-go billing](syntex-azure-billing.md). It's a great way to try out Syntex capabilities, such as document processing, tagging, and translation, to see how you can use them to streamline processes in your organization.
+For a limited time, you can use included monthly capacity for some of these features when you set up [pay-as-you-go billing](syntex-azure-billing.md). It's a great way to try out Syntex capabilities, such as document processing, document tagging, and content assembly, to see how you can use them to streamline processes in your organization.
 
 ## Get started
 
-If you want to try some of these features for free, you can do so from January 1 to June 30, 2024. Here are the steps to follow:
+If you want to try some of these features, you can do so from January 1 to June 30, 2024. Here are the steps to follow:
 
 1. [Set up pay-as-you-go billing](syntex-azure-billing.md).
 
@@ -35,21 +35,21 @@ If you want to try some of these features for free, you can do so from January 1
 
 3. [Start using the Syntex features](syntex-overview.md).
 
-## Monthly usage limits for free offering
+## Monthly included capacity
 
-You'll get a limited amount of usage for free each month during the offering period. The following table shows the units of service and capacity limits you can use at no charge for each month.
+You'll get a limited amount of usage each month during the offering period. The following table shows the units of service and capacity limits you can use at no charge for each month.
 
-|Service  |Unit  |Maximum monthly usage at no charge  |
+|Service  |Units  |Monthly included capacity  |
 |---------|---------|---------|
-|Prebuilt document processing     | Page        | 100        |
-|Structured document processing   | Page        | 100        |
-|Unstructured document processing | Page        | 100        |
-|Content assembly                 | Document    | 50         |
-|Image tagging                    | Image       | 2,500      |
-|Taxonomy tagging                 | Document    | 50         |
-|eSignature                       | Envelope    | 5          |
-|Translation                      | Character   | 1 million  |
-|Optical character recognition    | Page        | 2,500      |
+|Prebuilt document processing     | Pages        | 100        |
+|Structured document processing   | Pages        | 100        |
+|Unstructured document processing | Pages        | 100        |
+|Content assembly                 | Documents    | 50         |
+|Image tagging                    | Images       | 2,500      |
+|Taxonomy tagging                 | Documents    | 50         |
+|eSignature                       | Envelopes    | 5          |
+|Translation                      | Characters   | 1 million  |
+|Optical character recognition    | Pages        | 2,500      |
 
 Monthly usage over the limitations will be billed as described in [Pay-as-you-go services and pricing](syntex-pay-as-you-go-services.md).
 
