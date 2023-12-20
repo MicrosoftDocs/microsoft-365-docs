@@ -43,7 +43,7 @@ Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and m
 |-----------------------|--------------------------------|---------------------------------------------------------|
 | Word                  | Draft with Copilot             | Generate text with and without formatting in new or existing documents. Word files can also be used for grounding data |
 |                       | Chat                           | Create content, summarize, ask questions about your document, and do light commanding via Chat. |
-| PowerPoint            | Draft with Copilot             | Create a new presentation from a prompt or Word file, leveraging enterprise templates. Powerpoint files can also be used for grounding data |
+| PowerPoint            | Draft with Copilot             | Create a new presentation from a prompt or Word file, leveraging enterprise templates. PowerPoint files can also be used for grounding data |
 |                       | Chat                           | Summary and Q&A |
 |                       | Light commanding               | Add slides, pictures, or make deck-wide formatting changes. |
 | Loop                  | Collaborative content creation | Create content that can be collaboratively improved through direct editing or refinement by Copilot. |
