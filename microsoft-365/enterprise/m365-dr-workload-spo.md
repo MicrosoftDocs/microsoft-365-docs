@@ -29,7 +29,7 @@ Required Conditions:
 
 **Commitment:**
 
-_For current language please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services"._
+_For current language, refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services."_
 
 ### Advanced Data Residency add-on
 
@@ -41,7 +41,7 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#sharepoint-onlineonedrive-for-business) for the specific customer data at rest commitment for SharePoint Online and OneDrive for Business.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#sharepoint-onlineonedrive-for-business) for the specific customer data at rest commitment for SharePoint Online and OneDrive for Business.
 
 ### Multi-Geo add-on
 
@@ -76,7 +76,7 @@ After we've completed moving your SharePoint Online data, you might see some of 
 
 ### Search
 
-In the course of moving your SharePoint Online data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint Online data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint Online data. From this point and onwards we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint Online data, but some customers might experience reduced freshness in the first 24-48 hours.
+In the course of moving your SharePoint Online data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint Online data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint Online data. From this point and onwards, we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint Online data, but some customers might experience reduced freshness in the first 24-48 hours.
   
 The following search features are affected:
   
@@ -87,7 +87,7 @@ The following search features are affected:
 - eDiscovery: Items that changed during the migration aren't shown until crawling picks up the changes.
 - Data Loss Protection (DLP): Policies aren't enforced on items that change until crawling picks up the changes.
 
-As part of the migration, the _Primary Provisioned Geography_ will change and all new content will be stored at rest in the new _Primary Provisioned Geography_. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint Online data location in the admin center.
+As part of the migration, the _Primary Provisioned Geography_ changes and all new content will be stored at rest in the new _Primary Provisioned Geography_. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint Online data location in the admin center.
 
 ## **Multi-Geo Capabilities in SharePoint Online / OneDrive for Business**
 
@@ -110,7 +110,7 @@ Management of the Multi-Geo feature is available through the SharePoint admin ce
 
 When a user creates a SharePoint group-connected site in a multi-geo environment, their PDL is used to determine the _Macro Region Geography_ or _Local Region Geography_ location where the site and its associated Group mailbox are created. (If the user's PDL value hasn't been set, or has been set to _Macro Region Geography_ or _Local Region Geography_ location that hasn't been configured as a _Satellite Geography_ location, then the site and mailbox are created in the _Primary Provisioned Geography_.)
 
-Microsoft 365 services other than Exchange, OneDrive, SharePoint, and Teams are not available with Multi-Geo. However, Microsoft 365 Groups that are created by these services will be configured with the PDL of the creator and their Exchange Group mailbox, SharePoint site are provisioned in the corresponding _Macro Region Geography_ or _Local Region Geography_.
+Microsoft 365 services other than Exchange, OneDrive, SharePoint, and Teams aren't available with Multi-Geo. However, Microsoft 365 Groups that are created by these services will be configured with the PDL of the creator and their Exchange Group mailbox, SharePoint site are provisioned in the corresponding _Macro Region Geography_ or _Local Region Geography_.
 
 ### **Managing the Multi-Geo environment**
 

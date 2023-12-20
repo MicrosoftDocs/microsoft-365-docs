@@ -25,7 +25,7 @@ description: "Overview of VPN split tunneling with Microsoft 365 to optimize con
 
 >[!NOTE]
 >This article is part of a set of articles that address Microsoft 365 optimization for remote users.
-
+>
 >- For detailed guidance on implementing VPN split tunneling, see [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
 >- For a detailed list of VPN split tunneling scenarios, see [Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md).
 >- For guidance on securing Teams media traffic in VPN split tunneling environments, see [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).

@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 09/13/2018
+ms.date: 12/19/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -30,7 +30,7 @@ Figure 1 shows the headquarters office in Paris and regional hub and satellite o
 ![Contoso offices around the world.](../media/contoso-overview/contoso-overview-fig1.png)
 
 **Figure 1: Contoso offices around the world**
- 
+
 Contoso has three tiers of offices:
 
 - Headquarters

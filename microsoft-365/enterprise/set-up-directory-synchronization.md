@@ -55,7 +55,7 @@ See [Hybrid identities](plan-for-directory-synchronization.md) for more informat
 
 ## 1. Review prerequisites for Microsoft Entra Connect
 
-You get a free Microsoft Entra subscription with your Microsoft 365 subscription. When you set up directory synchronization, you will install Microsoft Entra Connect on one of your on-premises servers.
+You get a free Microsoft Entra subscription with your Microsoft 365 subscription. When you set up directory synchronization, you'll install Microsoft Entra Connect on one of your on-premises servers.
   
 For Microsoft 365 you'll need to:
   
@@ -66,9 +66,9 @@ For your on-premises server on which you install Microsoft Entra Connect, you'll
   
 |**Server OS**|**Other software**|
 |:-----|:-----|
-|Windows Server 2012 R2 and later | - PowerShell is installed by default, no action is required.  <br> - Net 4.5.1 and later releases are offered through Windows Update. Make sure you have installed the latest updates to Windows Server in the Control Panel. |
-|Windows Server 2008 R2 with Service Pack 1 (SP1)** or Windows Server 2012 | - The latest version of PowerShell is available in Windows Management Framework 4.0. Search for it on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> - .Net 4.5.1 and later releases are available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
-|Windows Server 2008 | - The latest supported version of PowerShell is available in Windows Management Framework 3.0, available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> - .Net 4.5.1 and later releases are available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
+|Windows Server 2012 R2 and later | - PowerShell is installed by default, no action is required.  <br> - Net 4.5.1 and later releases are offered through Windows Update. Make sure you've installed the latest updates to Windows Server in the Control Panel. |
+|Windows Server 2008 R2 with Service Pack 1 (SP1)** or Windows Server 2012 | - The latest version of PowerShell is available in Windows Management Framework 4.0. Search for it on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> - .NET 4.5.1 and later releases are available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
+|Windows Server 2008 | - The latest supported version of PowerShell is available in Windows Management Framework 3.0, available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> - .NET 4.5.1 and later releases are available on [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 
 See [Prerequisites for Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites) for the details of hardware, software, account and permissions requirements, SSL certificate requirements, and object limits for Microsoft Entra Connect.
   
