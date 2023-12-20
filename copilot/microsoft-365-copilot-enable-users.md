@@ -34,9 +34,18 @@ You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.
 
 ## Assign licenses
 
-This article assumes that you have already provisioned users in your tenant. If you haven't already done so, follow the steps in the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) or those documented in [Add users and assign licenses in Microsoft 365](/microsoft-365/admin/add-users/add-users). If you use either of these resources, you can create users and assign the necessary licenses at the same time. To learn more about assigning Microsoft 365 licenses with PowerShell, see [Assign licenses to user accounts](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+Before you can assign Copilot licenses, you need to make sure that you've already provisioned users in your tenant. If you haven't done so yet, you can follow the steps in the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) or [Add users and assign licenses in Microsoft 365](/microsoft-365/admin/add-users/add-users). These resources will guide you through the process of creating users and assigning licenses. To learn more about assigning Microsoft 365 licenses with PowerShell, see [Assign licenses to user accounts](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
-After a user has been assigned a license for Microsoft Copilot for Microsoft 365, the Copilot experience will automatically appear for them in the Microsoft 365 Apps. In some experiences, like Word, for example, a Copilot dialog will appear when creating a new document. In other experiences, Copilot is quickly accessible on the Ribbon. To use Copilot in Teams, users must [add the Copilot app](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
+To assign and manage Copilot licenses, you can use the Microsoft 365 admin center. Here are the steps:
+
+1. Go to **Billing** > **Licenses** in the admin center.
+2. Select **Copilot for Microsoft 365**.
+3. In the product details page, assign licenses to users and manage their access to Copilot and other apps and services.
+4. To check if a user has been added, go to **Users** and then **Active Users**. The user will be displayed along with their active license.
+
+You can also manage licenses from the Copilot page in the Microsoft 365 admin center. To learn more, see [Copilot page in the Microsoft 365 admin center](microsoft-365-copilot-page.md).
+
+Once you've assigned licenses, the Copilot experience will automatically appear for users in Microsoft 365 Apps. In some experiences, like Word, a Copilot dialog will appear when creating a new document. In other experiences, Copilot is quickly accessible on the Ribbon. To use Copilot in Teams, users must [add the Copilot app](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
 
 ## Send welcome email
 
