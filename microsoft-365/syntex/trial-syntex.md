@@ -41,16 +41,18 @@ You'll get a limited amount of usage each month during the offering period. The 
 
 |Service  |Units  |Monthly included capacity at no charge  |
 |---------|---------|---------|
+|Content assembly                 | Documents    | 50         |
+|eSignature                       | Envelopes    | 5          |
+|Image tagging                    | Images       | 2,500      |
+|Optical character recognition    | Pages        | 2,500      |
 |Prebuilt document processing     | Pages        | 100        |
 |Structured document processing   | Pages        | 100        |
-|Unstructured document processing | Pages        | 100        |
-|Content assembly                 | Documents    | 50         |
-|Image tagging                    | Images       | 2,500      |
 |Taxonomy tagging                 | Documents    | 50         |
-|eSignature                       | Envelopes    | 5          |
-|Translation                      | Characters   | 1 million  |
-|Optical character recognition    | Pages        | 2,500      |
+|Unstructured document processing | Pages        | 100        |
 
+<!---
+|Document translation             | Characters   | 1 million  |
+--->
 Monthly usage over the limitations will be billed as described in [Pay-as-you-go services and pricing](syntex-pay-as-you-go-services.md).
 
 For ideas about how you might use Syntex services in your organization, see [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md) and [Get started driving adoption of Microsoft Syntex](adoption-getstarted.md).
