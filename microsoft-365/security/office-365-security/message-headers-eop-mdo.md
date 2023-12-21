@@ -104,6 +104,7 @@ The following list describes the text that's added to the **Authentication-Resul
 
   ```text
   spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
+
   spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
   ```
 
@@ -117,6 +118,7 @@ The following list describes the text that's added to the **Authentication-Resul
 
   ```text
   dkim=pass (signature was verified) header.d=contoso.com
+
   dkim=fail (body hash did not verify) header.d=contoso.com
   ```
 
@@ -130,8 +132,11 @@ The following list describes the text that's added to the **Authentication-Resul
 
   ```text
   dmarc=pass action=none header.from=contoso.com
+
   dmarc=bestguesspass action=none header.from=contoso.com
+
   dmarc=fail action=none header.from=contoso.com
+
   dmarc=fail action=oreject header.from=contoso.com
   ```
 

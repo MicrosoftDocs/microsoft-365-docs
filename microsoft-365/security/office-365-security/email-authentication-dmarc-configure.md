@@ -117,6 +117,12 @@ v=DMARC1; p=reject; pct=100; rua=mailto:d@rua.contoso.com; ruf=mailto:d@ruf.cont
   > [!TIP]
   > Visit the [Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog) catalog to view third-party vendors offering DMARC reporting for Microsoft 365.
 
+ For more information about DMARC, you can use the following resources:
+
+- The [DMARC Training Series](https://www.m3aawg.org/activities/training/dmarc-training-series) from M<sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group).
+- The checklist at [dmarcian](https://space.dmarcian.com/deployment/).
+- Information at [DMARC.org](https://dmarc.org).
+
 ## DMARC TXT records for custom domains in Microsoft 365
 
 > [!TIP]
@@ -254,6 +260,8 @@ When anti-phishing policies are configured to not honor `p=quarantine` or `p=rej
 
 For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
+[Anti-spam message headers](message-headers-eop-mdo.md) includes the syntax and header fields used by Microsoft 365 for DMARC checks.
+
 ## How Microsoft 365 utilizes Authenticated Received Chain (ARC)
 
 All hosted mailboxes in Microsoft 365 will now gain the benefit of ARC with improved deliverability of messages and enhanced anti-spoofing protection. ARC preserves the email authentication results from all participating intermediaries, or hops, when an email is routed from the originating server to the recipient mailbox. Before ARC, modifications performed by intermediaries in email routing, like forwarding rules or automatic signatures, could cause DMARC failures by the time the email reached the recipient mailbox. With ARC, the cryptographic preservation of the authentication results allows Microsoft 365 to verify the authenticity of an email's sender.
@@ -275,24 +283,7 @@ All, or most, email will first be routed to mail.contoso.com since it's the prim
 
 :::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="A troubleshooting graphic for DMARC" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
-## For more information
 
-Want more information about DMARC? These resources can help.
+## Next steps
 
-- [Anti-spam message headers](message-headers-eop-mdo.md) includes the syntax and header fields used by Microsoft 365 for DMARC checks.
-
-- Take the [DMARC Training Series](https://www.m3aawg.org/activities/training/dmarc-training-series) from M<sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group).
-
-- Use the checklist at [dmarcian](https://space.dmarcian.com/deployment/).
-
-- Go directly to the source at [DMARC.org](https://dmarc.org).
-
-## See also
-
-[How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md)
-
-[**Set up SPF in Microsoft 365 to help prevent spoofing**](email-authentication-spf-configure.md)
-
-[**Use DKIM to validate outbound email sent from your custom domain in Microsoft 365**](email-authentication-dkim-configure.md)
-
-[Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure)
+If you use a service that modifies messages sent from your Microsoft 365 organization, you might be able to identify the service as a trusted Authenticated Received Chain (ARC) sealer so the messages can pass DMARC. For more information, see [Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure).

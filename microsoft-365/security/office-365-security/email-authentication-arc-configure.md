@@ -164,8 +164,8 @@ This diagram demonstrates the result *with* a trusted ARC sealer:
 
 :::image type="content" source="../../media/m365d-indirect-traffic-flow-with-trusted-arc-sealer.PNG" alt-text="Contoso publishes SPF, DKIM, and DMARC, but also configures the required trusted ARC sealers. A sender using SPF sends email from inside contoso.com to fabrikam.com, and this message passes through a legitimate third party service that modifies the sending IP address in the email header. The service uses ARC sealing, and because the service is defined as a trusted ARC sealer in Microsoft 365, the modification is accepted. SPF fails for the new IP address. DKIM fails because of the content modification. DMARC fails because of the earlier failures. But ARC recognizes the modifications, issues a Pass, and accepts the changes. Spoof also receives a pass. The message is delivered to the Inbox.":::
 
-## Next steps: After you set up ARC for Defender for Office 365
+## Next steps
 
-After setup, check your ARC Headers with Message Header Analyzer at <https://mha.azurewebsites.net>.
+Check your ARC Headers with Message Header Analyzer at <https://mha.azurewebsites.net>.
 
 Review the [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), [DMARC](email-authentication-dmarc-configure.md), configuration steps.
