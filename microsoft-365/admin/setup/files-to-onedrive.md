@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 12/1/2023
+ms.date: 12/15/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -43,8 +43,8 @@ In this video, we'll show you how to move your OneDrive files from Microsoft 365
 ## Steps
 
 1. Select the white or blue OneDrive cloud icon in the Windows taskbar notification area.
-1. Select **Settings** > **Account** > **Add an account**.
-1. Enter your email address and select  **Sign in**.
+1. Select the **Help and settings** icon, then **Settings** > **Account** > **Add an account**.
+1. Enter your email address, select  **Sign in**, and enter your password.  Select **Next**.
 1. Go through the short tutorial, and then select  **Open my OneDrive folder**. If you also use the personal version of OneDrive, you'll see it here.
 1. In **File Explorer**, go to the files you want to copy.
 1. Select the files, and then drag and drop them into your OneDrive folder. Blue circular arrows beside your files mean that they're syncing to the cloud. When they're done syncing, green check marks are displayed.

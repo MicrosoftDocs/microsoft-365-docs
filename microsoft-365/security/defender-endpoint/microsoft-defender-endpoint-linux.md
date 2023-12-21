@@ -21,7 +21,7 @@ ms.date: 11/29/2023
 
 # Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -64,12 +64,12 @@ In general you need to take the following steps:
 - Deploy Microsoft Defender for Endpoint on Linux using one of the following deployment methods:
   - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
-  - Third-party management tools:
+   - Third-party management tools:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
     - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
-    - [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
-
-If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
+      - [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
+      - [Deploy using Saltstack configuration management tool](linux-install-with-saltack.md)
+      If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 > [!NOTE]
 > It is not supported to install Microsoft Defender for Endpoint in any other location other than the default install path.
@@ -78,9 +78,6 @@ If you experience any installation failures, refer to [Troubleshooting installat
 > For example: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
 
 ### System requirements
-
-> [!NOTE]
-
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
   - Red Hat Enterprise Linux 6.7 or higher (In preview)

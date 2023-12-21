@@ -2,6 +2,69 @@
 
 
 
+## Week of December 11, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/10/2023 | [EDR detection test for verifying device's onboarding and reporting service](/microsoft-365/security/defender-endpoint/edr-detection?view=o365-worldwide) | added |
+| 12/10/2023 | [AV detection test for verifying device's onboarding and reporting services](/microsoft-365/security/defender-endpoint/validate-antimalware?view=o365-worldwide) | added |
+| 12/11/2023 | Azure Information Protection support for Office 365 operated by 21Vianet | removed |
+| 12/11/2023 | [Manual deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-worldwide) | modified |
+| 12/11/2023 | [Manage self-service purchases and organizational trials for Microsoft Project](/microsoft-365/admin/manage/manage-self-service-purchases-org-trials-for-msproject?view=o365-worldwide) | added |
+| 12/11/2023 | [UEFI scanning in Defender for Endpoint](/microsoft-365/security/defender-endpoint/uefi-scanning-in-defender-for-endpoint?view=o365-worldwide) | added |
+| 12/11/2023 | [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide) | modified |
+| 12/11/2023 | [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide) | modified |
+| 12/11/2023 | [User experience in a multi-geo environment](/microsoft-365/enterprise/multi-geo-user-experience?view=o365-worldwide) | modified |
+| 12/11/2023 | [Use network protection to help prevent macOS connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection-macos?view=o365-worldwide) | modified |
+| 12/11/2023 | [Manage self-service password reset in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-manage-sspr?view=o365-worldwide) | modified |
+| 12/11/2023 | [Get started driving adoption of Microsoft Syntex](/microsoft-365/syntex/adoption-getstarted) | modified |
+| 12/12/2023 | [Deploy Shifts to your frontline teams at scale](/microsoft-365/frontline/deploy-shifts-at-scale?view=o365-worldwide) | added |
+| 12/12/2023 | [Microsoft 365 integration with on-premises environments](/microsoft-365/enterprise/microsoft-365-integration?view=o365-worldwide) | modified |
+| 12/12/2023 | [Use the streaming API with Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-streaming-api?view=o365-worldwide) | modified |
+| 12/12/2023 | [Access the Microsoft Defender XDR APIs](/microsoft-365/security/defender/api-access?view=o365-worldwide) | modified |
+| 12/12/2023 | [FAQs related to Microsoft Defender Experts for XDR incident notifications](/microsoft-365/security/defender/faq-incident-notifications-xdr?view=o365-worldwide) | modified |
+| 12/12/2023 | [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps?view=o365-worldwide) | modified |
+| 12/12/2023 | [Microsoft Defender for Cloud in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud?view=o365-worldwide) | modified |
+| 12/12/2023 | [How to subscribe to Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-worldwide) | modified |
+| 12/12/2023 | [Stream Microsoft Defender XDR events to your Storage account](/microsoft-365/security/defender/streaming-api-storage?view=o365-worldwide) | modified |
+| 12/12/2023 | [How to configure Exchange Server on-premises to use Hybrid Modern Authentication](/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication?view=o365-worldwide) | modified |
+| 12/12/2023 | [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide) | modified |
+| 12/12/2023 | [What's new in Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-whatsnew?view=o365-worldwide) | modified |
+| 12/12/2023 | [Set up multifactor authentication for users](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
+| 12/12/2023 | [Turn on MFA by using security defaults or Conditional Access](/microsoft-365/business-premium/m365bp-turn-on-mfa?view=o365-worldwide) | modified |
+| 12/12/2023 | [Attack surface reduction rules reference](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference?view=o365-worldwide) | modified |
+| 12/12/2023 | [Exploit protection reference](/microsoft-365/security/defender-endpoint/exploit-protection-reference?view=o365-worldwide) | modified |
+| 12/12/2023 | [Usage and engagement metrics in Topics](/microsoft-365/topics/topics-engagement-metrics?view=o365-worldwide) | modified |
+| 12/13/2023 | [Offboard machine API](/microsoft-365/security/defender-endpoint/api/offboard-machine-api?view=o365-worldwide) | modified |
+| 12/13/2023 | [Plan external collaboration with channel conversations, file collaboration, and shared apps](/microsoft-365/solutions/plan-external-collaboration?view=o365-worldwide) | modified |
+| 12/14/2023 | [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations?view=o365-worldwide) | modified |
+| 12/14/2023 | [Configure teams with baseline protection](/microsoft-365/solutions/configure-teams-baseline-protection?view=o365-worldwide) | modified |
+| 12/14/2023 | [Configure teams with protection for highly sensitive data](/microsoft-365/solutions/configure-teams-highly-sensitive-protection?view=o365-worldwide) | modified |
+| 12/14/2023 | [Configure teams with protection for sensitive data](/microsoft-365/solutions/configure-teams-sensitive-protection?view=o365-worldwide) | modified |
+| 12/14/2023 | [Configure Teams with three tiers of file sharing security](/microsoft-365/solutions/configure-teams-three-tiers-protection?view=o365-worldwide) | modified |
+| 12/14/2023 | [Limit who can be invited by an organization](/microsoft-365/solutions/limit-invitations-from-specific-organization?view=o365-worldwide) | modified |
+| 12/14/2023 | [Limit organizations where users can have guest accounts](/microsoft-365/solutions/limit-organizations-where-users-have-guest-accounts?view=o365-worldwide) | modified |
+| 12/14/2023 | [Limit who can invite guests](/microsoft-365/solutions/limit-who-can-invite-guests?view=o365-worldwide) | modified |
+| 12/14/2023 | [Limit sharing in Microsoft 365](/microsoft-365/solutions/microsoft-365-limit-sharing?view=o365-worldwide) | modified |
+| 12/14/2023 | [Set up secure file and document sharing and collaboration with Teams in Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams?view=o365-worldwide) | modified |
+| 12/14/2023 | [Limit accidental exposure to files when sharing with people outside your organization](/microsoft-365/solutions/share-limit-accidental-exposure?view=o365-worldwide) | modified |
+| 12/14/2023 | [Require conditional access for people outside your organization](/microsoft-365/solutions/trust-conditional-access-from-other-organizations?view=o365-worldwide) | modified |
+| 12/14/2023 | [Overview of Microsoft SharePoint eSignature](/microsoft-365/syntex/esignature-overview) | modified |
+| 12/14/2023 | [Review and sign a signature request using Microsoft SharePoint eSignature](/microsoft-365/syntex/esignature-review-sign-requests) | modified |
+| 12/14/2023 | [Create a signature request using Microsoft SharePoint eSignature](/microsoft-365/syntex/esignature-send-requests) | modified |
+| 12/14/2023 | [Set up Microsoft SharePoint eSignature](/microsoft-365/syntex/esignature-setup) | modified |
+| 12/15/2023 | [Idle session timeout for Microsoft 365](/microsoft-365/admin/manage/idle-session-timeout-web-apps?view=o365-worldwide) | modified |
+| 12/15/2023 | [Manual deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-worldwide) | modified |
+| 12/15/2023 | [Run and customize on-demand scans in Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/run-scan-microsoft-defender-antivirus?view=o365-worldwide) | modified |
+| 12/15/2023 | [Microsoft Virus Initiative](/microsoft-365/security/intelligence/virus-initiative-criteria?view=o365-worldwide) | modified |
+| 12/15/2023 | [Frequently asked questions about Microsoft 365 Archive (Preview)](/microsoft-365/syntex/archive/archive-faq) | added |
+| 12/15/2023 | [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune?view=o365-worldwide) | modified |
+| 12/15/2023 | [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide) | modified |
+| 12/15/2023 | [Microsoft Defender for Office 365 permissions in the Microsoft Defender portal](/microsoft-365/security/office-365-security/mdo-portal-permissions?view=o365-worldwide) | modified |
+| 12/15/2023 | [Overview of Microsoft 365 Backup (Preview)](/microsoft-365/syntex/backup/backup-overview) | modified |
+
+
 ## Week of December 04, 2023
 
 
@@ -451,86 +514,3 @@
 | 11/17/2023 | [Zero Trust with Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/zero-trust-with-microsoft-defender-endpoint?view=o365-worldwide) | modified |
 | 11/17/2023 | [Identity and device access policies for allowing guest and external user B2B access - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-guest-access?view=o365-worldwide) | modified |
 | 11/17/2023 | [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-ebpf?view=o365-worldwide) | modified |
-
-
-## Week of November 06, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/6/2023 | [How modern authentication works for Office 2013 and Office 2016 client apps](/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016?view=o365-worldwide) | modified |
-| 11/6/2023 | [Deploy frontline dynamic teams at scale](/microsoft-365/frontline/deploy-dynamic-teams-at-scale?view=o365-worldwide) | modified |
-| 11/6/2023 | [What's new in Microsoft Defender for Endpoint on Windows](/microsoft-365/security/defender-endpoint/windows-whatsnew?view=o365-worldwide) | modified |
-| 11/6/2023 | [Collaborating with people outside your organization](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?view=o365-worldwide) | modified |
-| 11/6/2023 | [Summary of governance, lifecycle and compliance capabilities for Loop experiences](/microsoft-365/loop/loop-compliance-summary?view=o365-worldwide) | modified |
-| 11/6/2023 | [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates?view=o365-worldwide) | modified |
-| 11/6/2023 | [Deploy and manage Removable Storage Access Control using group policy](/microsoft-365/security/defender-endpoint/deploy-manage-removable-storage-group-policy?view=o365-worldwide) | modified |
-| 11/6/2023 | [Microsoft Defender for Endpoint device timeline](/microsoft-365/security/defender-endpoint/device-timeline-event-flag?view=o365-worldwide) | modified |
-| 11/6/2023 | [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates?view=o365-worldwide) | modified |
-| 11/6/2023 | [Microsoft Defender Antivirus in Windows](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide) | modified |
-| 11/6/2023 | [Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance](/microsoft-365/security/office-365-security/scc-permissions?view=o365-worldwide) | modified |
-| 11/6/2023 | [Add the Topics app in the Teams Admin Center](/microsoft-365/topics/add-topics-app?view=o365-worldwide) | added |
-| 11/6/2023 | [Adoption resources for Topics](/microsoft-365/topics/adoption-resources?view=o365-worldwide) | added |
-| 11/6/2023 | [Create a new topic in Topics](/microsoft-365/topics/create-a-topic?view=o365-worldwide) | added |
-| 11/6/2023 | [Curate Multilingual topics in Topics](/microsoft-365/topics/curate-a-topic-in-multilingual?view=o365-worldwide) | added |
-| 11/6/2023 | [Edit an existing topic in Topics](/microsoft-365/topics/edit-a-topic?view=o365-worldwide) | added |
-| 11/6/2023 | [Export topics created in Viva Engage with PowerShell](/microsoft-365/topics/export-topics-powershell?view=o365-worldwide) | added |
-| 11/6/2023 | [Frequently asked questions about Topics](/microsoft-365/topics/faq-topics?view=o365-worldwide) | added |
-| 11/6/2023 | [Learn about topics in Topics](/microsoft-365/topics/get-started-with-viva-topics?view=o365-worldwide) | added |
-| 11/6/2023 | [Manage topic discovery in Topics](/microsoft-365/topics/manage-topic-discovery?view=o365-worldwide) | added |
-| 11/6/2023 | [Manage topic visibility in Topics](/microsoft-365/topics/manage-topic-visibility?view=o365-worldwide) | added |
-| 11/6/2023 | [Manage topics in the topic center in Topics](/microsoft-365/topics/manage-topics?view=o365-worldwide) | added |
-| 11/6/2023 | [Merge topics in Topics](/microsoft-365/topics/merge-topics?view=o365-worldwide) | added |
-| 11/6/2023 | [Plan for Topics](/microsoft-365/topics/plan-topic-experiences?view=o365-worldwide) | added |
-| 11/6/2023 | [Change the name of the topic center in Topics](/microsoft-365/topics/rename-topic-center?view=o365-worldwide) | added |
-| 11/6/2023 | [Restrict access to topics in Topics](/microsoft-365/topics/restrict-access-to-topics?view=o365-worldwide) | added |
-| 11/6/2023 | [Save a topic as a draft in Topics](/microsoft-365/topics/save-topic-as-draft?view=o365-worldwide) | added |
-| 11/6/2023 | [Manage topics at scale in Topics](/microsoft-365/topics/scale-topics?view=o365-worldwide) | added |
-| 11/6/2023 | [Use Microsoft Search to find topics in Topics](/microsoft-365/topics/search?view=o365-worldwide) | added |
-| 11/6/2023 | [Set up and manage Topics](/microsoft-365/topics/set-up-topic-experiences?view=o365-worldwide) | added |
-| 11/6/2023 | [Use SharePoint taxonomy terms to create topics in Topics](/microsoft-365/topics/sharepoint-taxonomy?view=o365-worldwide) | added |
-| 11/6/2023 | [Topic center overview in Topics](/microsoft-365/topics/topic-center-overview?view=o365-worldwide) | added |
-| 11/6/2023 | [Topic discovery and curation in Topics](/microsoft-365/topics/topic-experiences-discovery-curation?view=o365-worldwide) | added |
-| 11/6/2023 | [Get your environment ready for Topics](/microsoft-365/topics/topic-experiences-get-ready?view=o365-worldwide) | added |
-| 11/6/2023 | [Knowledge managers—Build and manage a knowledge base in Topics](/microsoft-365/topics/topic-experiences-knowledge-managers?view=o365-worldwide) | added |
-| 11/6/2023 | [Topics overview](/microsoft-365/topics/topic-experiences-overview?view=o365-worldwide) | added |
-| 11/6/2023 | [Roles in Topics](/microsoft-365/topics/topic-experiences-roles?view=o365-worldwide) | added |
-| 11/6/2023 | [Security and privacy in Topics](/microsoft-365/topics/topic-experiences-security-privacy?view=o365-worldwide) | added |
-| 11/6/2023 | [Security trimming in Topics](/microsoft-365/topics/topic-experiences-security-trimming?view=o365-worldwide) | added |
-| 11/6/2023 | [Topic Contributors—Share knowledge and expertise in Topics](/microsoft-365/topics/topic-experiences-topic-contributors?view=o365-worldwide) | added |
-| 11/6/2023 | [Manage topic permissions in Topics](/microsoft-365/topics/topic-experiences-user-permissions?view=o365-worldwide) | added |
-| 11/6/2023 | [Topics in Viva Engage](/microsoft-365/topics/topic-experiences-viva-engage?view=o365-worldwide) | added |
-| 11/6/2023 | [Get started driving adoption of Topics](/microsoft-365/topics/topics-adoption-getstarted?view=o365-worldwide) | added |
-| 11/6/2023 | [Analytics for Topics](/microsoft-365/topics/topics-analytics?view=o365-worldwide) | added |
-| 11/6/2023 | [Use Topics cards in the Viva Connections dashboard](/microsoft-365/topics/topics-card-viva-connections?view=o365-worldwide) | added |
-| 11/6/2023 | [Usage and engagement metrics in Topics](/microsoft-365/topics/topics-engagement-metrics?view=o365-worldwide) | added |
-| 11/6/2023 | [Supported languages in Topics](/microsoft-365/topics/topics-language-support?view=o365-worldwide) | added |
-| 11/6/2023 | [Topics lightweight management in Viva Engage](/microsoft-365/topics/topics-lightweight-management?view=o365-worldwide) | added |
-| 11/6/2023 | [Run a trial of Topics](/microsoft-365/topics/trial-topics?view=o365-worldwide) | added |
-| 11/6/2023 | [Microsoft Viva language support](/microsoft-365/topics/viva-language-support?view=o365-worldwide) | added |
-| 11/6/2023 | [Where to find topics](/microsoft-365/topics/where-to-find-topics?view=o365-worldwide) | added |
-| 11/7/2023 | [Configure Exclusions for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-exclusions-v2?view=o365-worldwide) | added |
-| 11/7/2023 | Upgrade from Microsoft Teams Free to Microsoft 365 for business | removed |
-| 11/7/2023 | [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-exclusions?view=o365-worldwide) | modified |
-| 11/7/2023 | [Deploy Microsoft Defender for Endpoint on Linux manually](/microsoft-365/security/defender-endpoint/linux-install-manually?view=o365-worldwide) | modified |
-| 11/7/2023 | [Device control for macOS](/microsoft-365/security/defender-endpoint/mac-device-control-overview?view=o365-worldwide) | modified |
-| 11/7/2023 | [Get started with Microsoft Defender Experts for XDR](/microsoft-365/security/defender/get-started-xdr?view=o365-worldwide) | modified |
-| 11/7/2023 | [Set up multifactor authentication for users](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
-| 11/7/2023 | Apply for a Fapiao for Office 365 operated by 21Vianet | removed |
-| 11/7/2023 | [Turn on MFA by using security defaults or Conditional Access](/microsoft-365/business-premium/m365bp-turn-on-mfa?view=o365-worldwide) | modified |
-| 11/7/2023 | [Attack surface reduction rules reference](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference?view=o365-worldwide) | modified |
-| 11/7/2023 | [Exploit protection reference](/microsoft-365/security/defender-endpoint/exploit-protection-reference?view=o365-worldwide) | modified |
-| 11/7/2023 | [Usage and engagement metrics in Topics](/microsoft-365/topics/topics-engagement-metrics?view=o365-worldwide) | modified |
-| 11/7/2023 | Configure Exclusions for Microsoft Defender for Endpoint on Linux | removed |
-| 11/8/2023 | [Microsoft 365 guest sharing settings reference](/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide) | modified |
-| 11/8/2023 | [Test Base FAQ](/microsoft-365/test-base/faq?view=o365-worldwide) | modified |
-| 11/8/2023 | [Microsoft 365 Lighthouse frequently asked questions (FAQs)](/microsoft-365/lighthouse/m365-lighthouse-faq?view=o365-worldwide) | modified |
-| 11/8/2023 | [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint?view=o365-worldwide) | modified |
-| 11/9/2023 | [Manage Apps with Plugins for Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps?view=o365-worldwide) | modified |
-| 11/9/2023 | [Map Microsoft 365 Defender Unified role-based access control (RBAC) permissions](/microsoft-365/security/defender/compare-rbac-roles?view=o365-worldwide) | modified |
-| 11/9/2023 | [Report phishing and suspicious emails in Outlook for admins](/microsoft-365/security/office-365-security/submissions-outlook-report-messages?view=o365-worldwide) | modified |
-| 11/10/2023 | [Multi-Geo Capabilities in Microsoft Teams](/microsoft-365/enterprise/multi-geo-capabilities-in-teams-in-microsoft-365?view=o365-worldwide) | modified |
-| 11/10/2023 | [Key infrastructure requirements before enrolling in the Microsoft Defender Experts for Hunting service](/microsoft-365/security/defender/before-you-begin-defender-experts?view=o365-worldwide) | modified |
-| 11/10/2023 | [Before you begin using Defender Experts for XDR](/microsoft-365/security/defender/before-you-begin-xdr?view=o365-worldwide) | modified |
-| 11/10/2023 | [Microsoft Defender for Office 365 email entity page](/microsoft-365/security/office-365-security/mdo-email-entity-page?view=o365-worldwide) | modified |
-| 11/10/2023 | [Deploy frontline dynamic teams at scale](/microsoft-365/frontline/deploy-dynamic-teams-at-scale?view=o365-worldwide) | modified |

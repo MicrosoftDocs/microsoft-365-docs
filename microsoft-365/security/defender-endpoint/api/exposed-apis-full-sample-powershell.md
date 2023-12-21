@@ -26,7 +26,7 @@ search.appverid: met150
 
 # Microsoft Defender for Endpoint APIs using PowerShell
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:** 
 

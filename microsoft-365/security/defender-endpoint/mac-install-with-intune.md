@@ -23,7 +23,7 @@ ms.date: 12/18/2020
 
 # Deploy Microsoft Defender for Endpoint on macOS with Microsoft Intune
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -63,7 +63,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 |Approve system extension|sysext.mobileconfig|N/A|
 |Network extension policy|netfilter.mobileconfig|N/A|
 |Full Disk Access|fulldisk.mobileconfig|com.microsoft.wdav.epsext|
-|Microsoft Defender for Endpoint configuration settings <p> **Note:** If you're planning to run a third-party AV for macOS, set passiveMode to true.|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
+|Microsoft Defender for Endpoint configuration settings <p> **Note:** If you're planning to run a third-party AV for macOS, set passiveMode to true.|MDE_MDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
 |Background services|background_services.mobileconfig|N/A|
 |Configure Microsoft Defender for Endpoint notifications|notif.mobileconfig|com.microsoft.wdav.tray|
 |Accessibility settings|accessibility.mobileconfig|com.microsoft.dlp.daemon|
@@ -72,7 +72,6 @@ The following table summarizes the steps you would need to take to deploy and ma
 |Data Loss Prevention|DataLossPrevention.mobileconfig|N/A|
 |Download the onboarding package|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
 |Deploy the Microsoft Defender for Endpoint on macOS application|Wdav.pkg|N/A|
-
 
 ## Create system configuration profiles
 
@@ -424,7 +423,6 @@ To download the onboarding packages from Microsoft 365 Defender portal:
 
     :::image type="content" alt-text="Sample description" source="media/deploy-onboarding-package.png" lightbox="media/deploy-onboarding-package.png":::
 
-
 ### Step 15: Deploy the onboarding package
 
 This profile contains license information for Microsoft Defender for Endpoint, without which it is reported as not licensed.
@@ -457,6 +455,14 @@ To deploy the onboarding package:
 1. Review the configuration profile. Click **Create**.
 1. Open **Devices** > **Configuration profiles** to see the created profile.
 
+## Step 16: Verify anti-malware detection
+
+See the following article to test for an anti-malware detection review: [AV detection test for verifying device's onboarding and reporting services](validate-antimalware.md)
+
+## Step 17: Verifying EDR detection
+
+See the following article to test for an EDR detection review: [EDR detection test for verifying device onboarding and reporting services](edr-detection.md)
+
 ## Troubleshooting
 
 Issue: No license found.
@@ -475,10 +481,10 @@ For information on troubleshooting procedures, see:
 - [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](troubleshoot-cloud-connect-mdemac.md)
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](mac-support-perf.md)
 
-
 ## Uninstallation
 
 See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
+
 
 
 ## Recommended content
@@ -506,6 +512,8 @@ See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove M
 
 [Manage Defender for Endpoint on Android devices in Intune - Azure](/mem/intune/protect/advanced-threat-protection-manage-android?source=recommendations)
 <br>Configure Microsoft Defender for Endpoint web protection on Android devices managed by Microsoft Intune.
+
+
 
 
 

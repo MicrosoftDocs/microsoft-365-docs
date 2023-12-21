@@ -22,7 +22,7 @@ ms.date: 01/31/2023
 
 # Configure Microsoft Defender for Endpoint capabilities
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
