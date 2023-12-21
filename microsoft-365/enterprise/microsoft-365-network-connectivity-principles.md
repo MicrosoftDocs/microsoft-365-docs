@@ -88,7 +88,7 @@ Because Microsoft 365 runs on the Microsoft Global Network, which includes front
   
 ![WAN network model with regional egress points.](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
   
-Shortening the network path to Microsoft 365 entry points in this way can improve connectivity performance and the end-user experience in Microsoft 365. It can also help to reduce the affect of future changes to the network architecture on Microsoft 365 performance and reliability.
+Shortening the network path to Microsoft 365 entry points in this way can improve connectivity performance and the end-user experience in Microsoft 365. It can also help to reduce the effect of future changes to the network architecture on Microsoft 365 performance and reliability.
   
 Also, DNS requests can introduce latency if the responding DNS server is distant or busy. You can minimize name resolution latency by provisioning local DNS servers in branch locations and making sure they're configured to cache DNS records appropriately.
   

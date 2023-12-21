@@ -3,9 +3,6 @@ title: Deploy and manage Removable Storage Access Control using Intune
 description: Use Intune OMA-URI and Intune user interface to deploy and manage removable storage access control.
 ms.service: defender-endpoint
 ms.subservice: asr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -17,7 +14,7 @@ ms.collection:
 - mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 06/06/2023
+ms.date: 12/14/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -231,7 +228,7 @@ For this scenario, you need to create two groups: one group for any removable st
 
 ### Scenario 3: Block read and execute access to specific file extension
 
-For this scenario, you need to create two groups: one removable storage group for any removable storage and another group for unallowed file extensions. You also need to create one policy: deny read and execute access to any file under the allowed file extension group for defined removable storage group.
+For this scenario, you need to create two groups: one removable storage group for any removable storage and another group for unallowed file extensions. You also need to create one policy: deny read and execute access to any file under the unallowed file extension group for a defined removable storage group.
 
 1. Create groups.
 

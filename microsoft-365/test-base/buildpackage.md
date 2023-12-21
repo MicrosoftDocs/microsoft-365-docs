@@ -94,7 +94,7 @@ Please refer to the following examples. You can simply copy them to your files a
         pop-location
 
         if ($installer.exitcode -eq 0) {
-            log("Installation succesful as $($installer.exitcode)")
+            log("Installation successful as $($installer.exitcode)")
         }
         else {
             log("Error: Installation failed as $($installer.exitcode)")
