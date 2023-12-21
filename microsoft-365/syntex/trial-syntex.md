@@ -37,7 +37,7 @@ If you want to try some of these features, here are the steps to follow:
 
 ## Monthly included capacity
 
-You'll get a limited amount of usage each month during the offering period. The following table shows the units of service and capacity limits you can use at no charge for each month.
+You'll get a limited amount of usage each month during the offering period. The following table shows the units of service and capacity limits your organization can use at no charge for each month. Capacity limits shown are per tenant, not per user.
 
 |Service  |Units  |Monthly included capacity at no charge  |
 |---------|---------|---------|
