@@ -32,56 +32,58 @@ Domain-based Message Authentication, Reporting and Conformance (DMARC) is a meth
 
 You enable DMARC for a domain by creating a TXT record in DNS. DMARC validation of an email message involves the following elements:
 
-- **Verify the domains in the MAIL FROM and FROM addresses match**: [SPF](email-authentication-spf-configure.md) and [DKIM](email-authentication-dkim-configure.md) don't require the domains in the following email addresses to "align" (match):
+- **Verify the domains in the MAIL FROM and FROM addresses align**: [SPF](email-authentication-spf-configure.md) and [DKIM](email-authentication-dkim-configure.md) don't require the domains in the following email addresses to "align" (match):
   - **The MAIL FROM address**: The email address that's used in the transmission of the message between SMTP email servers. This address is also known as the `5321.MailFrom` address, P1 sender, or envelope sender.
   - **The From address**: The email address in the **From** header field that's shown as the message sender in email clients. This address is also known as the `5322.From` address or P2 sender.
 
-   For more information about these email addresses and how they can be in different domains and used for spoofing, see [Why internet email needs authentication](email-authentication-about.md#why-internet-email-needs-authentication).
+   For more information about these email addresses can be in different domains and used for spoofing, see [Why internet email needs authentication](email-authentication-about.md#why-internet-email-needs-authentication).
 
-  - DMARC uses the SPF result to verify both of the following conditions:
+  - DMARC uses the result from SPF to verify both of the following conditions:
     - The message came from an authorized source for the domain that's used in the MAIL FROM address (the basic requirement of SPF). 
-    - The domains in the MAIL FROM and From addresses in the message are aligned.
+    - The domains in the MAIL FROM and From addresses in the message are aligned. This result effectively requires that valid sources for the message must be in the From address domain.
 
-  - DMARC uses the DKIM result to verify that at least one domain that signed the message (the **d=** value in a **DKIM-Signature** header field as validated by the **s=** selector value) aligns with the domain in the From address.
+  - DMARC uses the result from DKIM to verify that the domain that signed the message (the **d=** value in a **DKIM-Signature** header field as validated by the **s=** selector value) aligns with the domain in the From address.
 
-  A message passes DMARC if either of the described SPF or DKIM checks pass (one or the other).
+  A message passes DMARC if either of the described SPF or DKIM checks pass (one or the other). A message fails DMARC if both of the described SPF or DKIM checks fail.
 
-- **DMARC policy**: Specifies what to do with messages where the DMARC check of SPF or DKIM fails (reject, quarantine, or do nothing).
+- **DMARC policy**: Specifies what to do with messages that fail DMARC (reject, quarantine, or do nothing).
 
-- **DMARC reports**: Specifies where to send Aggregate reports (a periodic summary of positive and negative DMARC results) and Forensic reports (also known as _Failure reports_).
+- **DMARC reports**: Specifies where to send Aggregate reports (a periodic summary of positive and negative DMARC results) and Forensic reports (also known as _Failure reports_; nearly immediate DMARC failure result).
 
 Before we get started, here's what you need to know about DMARC in Microsoft 365 based on your email domain:
 
-- **You use only the Microsoft Online Email Routing Address (MOERA) domain for email (for example, contoso.onmicrosoft.com)**: Although SPF and DKIM are already configured for your \*.onmicrosoft.com domain, you need to enable DMARC for your \*.onmicrosoft.com domain. For instructions, see the XXX section later in this article. For more information about \*.onmicrosoft.com domains, see [Why do I have an "onmicrosoft.com" domain?](/microsoft-365/admin/setup/domains-faq#why-do-i-have-an--onmicrosoft-com--domain).
+- **You use only the Microsoft Online Email Routing Address (MOERA) domain for email (for example, contoso.onmicrosoft.com)**: Although SPF and DKIM are already configured for your \*.onmicrosoft.com domain, you need to create the DMARC TXT record for the \*.onmicrosoft.com domain in the Microsoft 365 admin center. For instructions, see the [this section](#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365) section later in this article. For more information about \*.onmicrosoft.com domains, see [Why do I have an "onmicrosoft.com" domain?](/microsoft-365/admin/setup/domains-faq#why-do-i-have-an--onmicrosoft-com--domain).
 
-- **You use one or more custom domains for email (for example, contoso.com)**: If you haven't already, you need to configure SPF for all custom domains and subdomains that you use for email. You also need to configure DKIM signing using the custom domains or subdomains (replace the default DKIM signing of messages that was using using the initial \*.onmicrosoft.com domain) so the domain that's used to sign the message matches the domain in the From address. For instructions, see the following articles:
+- **You use one or more custom domains for email (for example, contoso.com)**: If you haven't already, you need to configure SPF for all custom domains and subdomains that you use for email. You also need to configure DKIM signing using the custom domain or subdomain (replace the default DKIM signing of messages that was using using the initial \*.onmicrosoft.com domain) so the domain that's used to sign the message aligns with the domain in the From address. For instructions, see the following articles:
   - [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
   - [Use DKIM to validate outbound mail from your custom domain](email-authentication-dkim-configure.md)
 
-  After that, you also need to configure the DMARC TXT record for your custom domains as described in this article. You also have the following considerations:
+  After that, you also need to configure the DMARC TXT records for your custom domains as described in this article. You also have the following considerations:
 
-  - **Subdomains**: Unlike SPF and DKIM, the DMARC TXT record for a domain automatically covers all subdomains (including nonexistent subdomains) that don't have their own DMARC TXT record configured. In other words, you can disrupt the inheritance of DMARC on a subdomain by creating a DMARC TXT record in that subdomain. But, each subdomain requires an SPF and DKIM record so DMARC can validate MAIL FROM and From domain alignment.
+  - **Subdomains**:
+    - For email services that aren't under your direct control (for example, bulk email services or services that add email signatures to outbound mail), we recommend using a subdomain (for example, marketing.contoso.com) instead of your main email domain (for example, contoso.com). You don't want issues with mail sent from those email services to affect the reputation of mail sent by employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
+    - Unlike SPF and DKIM, the DMARC TXT record for a domain automatically covers all subdomains (including nonexistent subdomains) that don't have their own DMARC TXT record. In other words, you can disrupt the inheritance of DMARC on a subdomain by creating a DMARC TXT record in that subdomain. But, each subdomain requires an SPF and DKIM record for DMARC.
 
-  - **Registered but unused domains**: If you have registered domains that you aren't using for email or aren't using at all (also known as _parked domains_), configure DMARC TXT records in those domains to specify that no email should ever come from those domains. **This directive also includes the \*.onmicrosoft.com domain if you aren't using it for email**.
+  - **Registered but unused domains**: If you have registered domains that you aren't using for email or aren't using at all (also known as _parked domains_), configure the DMARC TXT records in those domains to specify that no email should ever come from those domains. This directive also includes the \*.onmicrosoft.com domain if you aren't using it for email.
 
 - **DMARC might need help**: Legitimate email services might modify messages in transit, which breaks SPF, DKIM, and therefore DMARC checks. If the email services supports it, you can identify the service as a trusted ARC sealer so the modified message can pass DMARC checks. For more information, see the [Next Steps](#next-steps) section at the end of this article.
 
-
-
-The rest of this article describes the DMARC TXT records that you need to create for domains in Microsoft 365, how to configure DMARC reporting.
+The rest of this article describes the DMARC TXT record that you need to create for domains in Microsoft 365, how to configure DMARC reporting, and information about how Microsoft 365 uses DMARC on _inbound_ mail.
 
 > [!TIP]
-> Configuring DKIM signing using a custom domain is a mixture of procedures in Microsoft 365 and procedures at the domain registrar of the custom domain.
+> There are no admin portals or PowerShell cmdlets in Microsoft 365 for you to manage DMARC TXT records in your **custom** domains. Instead, you create the DMARC TXT record at your domain registrar or DNS hosting service (often the same company).
 >
 > We provide instructions to create the proof of domain ownership TXT record for Microsoft 365 at many domain registrars. You can use these steps to begin creating the TXT record, and then use the information in this article for the SPF TXT record value. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 >
 > If you're unfamiliar with DNS configuration, contact your domain registrar and ask for help.
+>
+> To create the DMARC TXT record for your **\*.onmicrosoft.com domain** in the Microsoft 365 admin center, see [this section](#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365) later in this article.
 
 ## Syntax for DMARC TXT records
 
 DMARC TXT records are exhaustively described in [RFC 7489](https://datatracker.ietf.org/doc/html/rfc7489).
 
-The basic syntax of the DMARC TX record for a custom domain in Microsoft 365 is:
+The basic syntax of the DMARC TXT record for a domain in Microsoft 365 is:
 
 ```text
 v=DMARC1; <DMARC policy>; <Percentage of mail subject to filtering>; <DMARC reports>
@@ -101,74 +103,45 @@ v=DMARC1; p=reject; pct=100; rua=mailto:d@rua.contoso.com; ruf=mailto:d@ruf.cont
 
 - `v=DMARC1;` identifies the TXT record as a DMARC TXT record.
 
-- **DMARC policy**: Specifies what to with messages that fail both SPF and DKIM checks by DMARC (the domains in the MAIL FROM and From domains don't match):
-  - `p=reject`: The messages should be rejected. What actually happens to the message depends on the destination email system, but the messages are typically discarded. For Microsoft 365 domains, we recommend this value.
+- **DMARC policy**: Specifies what to with messages that fail DMARC as described earlier in this article:
+  - `p=reject`: The messages should be rejected. What actually happens to the message depends on the destination email system, but the messages are typically discarded.
   - `p=quarantine`: The messages should be accepted but marked. What actually happens to the message depends on the destination email system. For example, the message might be quarantined as spam or delivered to the Junk Email folder, or delivered to the Inbox with an identifier added to the Subject or message body.
   - `p=none`: Do nothing with the messages.
 
-- **Percentage of mail subject to filtering**: The value `pct=100` indicates the DMARC policy is used on 100% of mail.
+- **Percentage of mail subject to filtering**: The `pct=` value specifies the percentage of messages that fail DMARC that get the DMARC policy applied to them. For example, `pct=100` means all messages that fail DMARC get the DMARC policy applied to them. You use values less than 100 for [testing and tuning of the DMARC policy](#best-practices-for-implementing-dmarc-in-microsoft-365) as described later in this article.
 
 - **DMARC reports**:
-  - **DMARC Aggregate report URI**: The `rua=` value identifies the `mailto:` URI for the DMARC Aggregate report.
+  - **DMARC Aggregate report URI**: The `rua=` value identifies the `mailto:` URI for the DMARC Aggregate report. The Aggregate report is a periodic summary of DMARC pass and failure results from the destination email system. For example, .
   - **DMARC Forensic report URI**: Also known as the DMARC Failure report URI. The `ruf=` value identifies the `mailto:` URI for the DMARC Forensic report.
 
   > [!TIP]
   > Visit the [Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog) catalog to view third-party vendors offering DMARC reporting for Microsoft 365.
 
-## What is a DMARC TXT record?
+## DMARC TXT records for custom domains in Microsoft 365
 
-Like the DNS records for SPF, the record for DMARC is a DNS text (TXT) record that helps prevent spoofing and phishing. You publish DMARC TXT records in DNS. DMARC TXT records validate the origin of email messages by verifying the IP address of an email's author against the alleged owner of the sending domain. The DMARC TXT record identifies authorized outbound email servers. Destination email systems can then verify that messages they receive originate from authorized outbound email servers.
+> [!TIP]
+> As mentioned previously in this article, you need to [create SPF TXT records](email-authentication-spf-configure.md#spf-txt-records-for-custom-domains-in-microsoft-365) and [configure DKIM signing](email-authentication-dkim-configure.md#enable-dkim-signing-of-outbound-messages-using-a-custom-domain) for all custom domains and subdomains that you use to send email in Microsoft 365 _before_ you configure DMARC for the domains or subdomains.
 
-Microsoft's DMARC TXT record looks something like this:
+## Use the Microsoft 365 admin center to add DMARC TXT records for \*.onmicrosoft.com domains in Microsoft 365
 
-```console
-_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.contoso.com; ruf=mailto:d@ruf.contoso.com; fo=1"
-```
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, select **Show all** \> **Settings** \> **Domains**. Or, to go directly to the **Domains** page, use <https://admin.microsoft.com/Adminportal/Home#/Domains>.
 
-For more third-party vendors who offer DMARC reporting for Microsoft 365, visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365).
+2. On the **Domains** page, select the \*.onmicrosoft.com domain from the list by clicking anywhere in the row other than the check box next to the domain name.
 
+3. On the domain details page that opens, select the **DNS records** tab.
 
-## Set up DMARC for outbound mail from Microsoft 365
+4. On the **DNS records** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add record**.
 
-If you use Microsoft 365 but you aren't using a custom domain (you use onmicrosoft.com), SPF is already set up for you and Microsoft 365 automatically generates a DKIM signature for your outgoing mail using your \*.onmicrosoft.com domain. To set up DMARC for your organization, you need to [Form the DMARC TXT record](#step-4-form-the-dmarc-txt-record-for-your-domain) for the onmicrosoft.com domain and publish it to DNS via [Office 365 Admin Center](https://admin.microsoft.com) > Settings > Domains > click on onmicrosoft.com domain > Add record.
+5. On the **Add a custom DNS record** flyout that opens, configure the following settings:
+   - **Type**: Verify that **TXT (Text)** is selected.
+   - **TXT name**: Enter `_dmarc`.
+   - **TXT value**: Enter `v=DMARC1; p=reject`.
+   - **TTL**: Verify that **1 hour** is selected.
 
- If you have a custom domain or are using on-premises Exchange servers along with Microsoft 365, you need to manually set up DMARC for your outbound mail. Setting up DMARC for your custom domain includes these steps:
+   When you're finished on the **Add a custom DNS record** flyout, select **Save**
 
-- [Step 1: Identify valid sources of mail for your domain](#step-1-identify-valid-sources-of-mail-for-your-domain)
+## Enable DKIM signing of outbound messages using a \*.onmicrosoft
 
-- [Step 2: Set up SPF for your domain](#step-2-set-up-spf-for-your-domain)
-
-- [Step 3: Set up DKIM for your custom domain](#step-3-set-up-dkim-for-your-custom-domain)
-
-- [Step 4: Form the DMARC TXT record for your domain](#step-4-form-the-dmarc-txt-record-for-your-domain)
-
-### Step 1: Identify valid sources of mail for your domain
-
-If you have already set up SPF, then you've already gone through this exercise. There are some further considerations for DMARC. When identifying sources of mail for your domain, answer these two questions:
-
-- What IP addresses send messages from my domain?
-
-- For mail sent from third parties on my behalf, will the 5321.MailFrom and 5322.From domains match?
-
-### Step 2: Set up SPF for your domain
-
-Now that you have a list of all your valid senders you can follow the steps to [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
-
-For example, assuming contoso.com sends mail from Exchange Online, an on-premises Exchange server whose IP address is 192.168.0.1, and a web application whose IP address is 192.168.100.100, the SPF TXT record would look like this:
-
-```console
-contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.protection.outlook.com -all"
-```
-
-As a best practice, ensure that your SPF TXT record takes into account third-party senders.
-
-### Step 3: Set up DKIM for your custom domain
-
-Once you've set up SPF, you need to set up DKIM. DKIM lets you add a digital signature to email messages in the message header. If you don't set up DKIM and instead allow Microsoft 365 to use the default DKIM configuration for your domain, DMARC may fail. This failure can happen because the default DKIM configuration uses your original *onmicrosoft.com* domain as the *5321.MailFrom* address, not your *custom* domain. This creates a mismatch between the *5321.MailFrom* and the *5322.From addresses* in all the email sent from your domain.
-
-If you have third-party senders that send mail on your behalf and the mail they send has mismatched 5321.MailFrom and 5322.From addresses, DMARC will fail for that email. To avoid this, you need to set up DKIM for your domain specifically with that third-party sender. This allows Microsoft 365 to authenticate email from this 3rd-party service. However, it also allows others, for example, Yahoo, Gmail, and Comcast, to verify email sent to them by the third-party as if it was email sent by you. This is beneficial because it allows your customers to build trust with your domain no matter where their mailbox is located, and at the same time Microsoft 365 won't mark a message as spam due to spoofing because it passes authentication checks for your domain.
-
-For instructions on setting up DKIM for your domain, including how to set up DKIM for third-party senders so they can spoof your domain, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 
 ### Step 4: Form the DMARC TXT record for your domain
 

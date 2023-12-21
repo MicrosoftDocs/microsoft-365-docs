@@ -108,7 +108,7 @@ v=spf1 ip4:192.168.0.10 ip4:192.168.0.12 include:spf.protection.outlook.com -all
 
   - `~all` (soft fail): Tells the destination email system that messages from sources not specified in the SPF TXT record _probably_ aren't authorized to send mail from the domain, so the messages should be accepted but marked. What actually happens to the message depends on the destination email system. For example, the message might be quarantined as spam, delivered to the Junk Email folder, or delivered to the Inbox with an identifier added to the Subject or message body.
 
-     Because we also recommend DKIM and DMARC for Microsoft 365 domains, the differences between `-all` (hard fail) and `~all` (soft fail) are largely eliminated (DMARC treats them both as SPF failures). After an SPF failure, DMARC also checks DKIM to see if the domains in the MAIL FROM and From addresses match, and the the DMARC policy (`p=quarantine` or `p=reject`) specifies what to do to messages that fail DMARC.
+     Because we also recommend DKIM and DMARC for Microsoft 365 domains, the differences between `-all` (hard fail) and `~all` (soft fail) are largely eliminated (DMARC treats either result as an SPF failure). DMARC uses SPF to confirm the domains in the MAIL FROM and From addresses align _and_ the message came from a valid source for the From domain. DMARC uses DKIM to confirm the domain that signed the message and the domain in the From addresses are aligned. The message passes DMARC if the SPF _or_ DKIM checks pass (not both).
 
   > [!TIP]
   > `?all` (neutral) is also available to tell the destination email system domain to do nothing to messages from sources that aren't specified in the SPF TXT record. This value is used for testing, and we don't recommend this value in production environments.
@@ -119,10 +119,12 @@ Important points to remember:
 - You can't modify the existing SPF text record for the \*.onmicrosoft.com domain.
 - When the destination email system checks the valid email sources in the SPF record, SPF validation fails if the check requires too many DNS lookups. For more information, see the [Troubleshooting SPF TXT records](#troubleshooting-spf-txt-records) section later in this article.
 
-## SPF TXT records for domain in Microsoft 365
+## SPF TXT records for custom domains in Microsoft 365
 
 > [!TIP]
 > We also recommend configuring SPF and DMARC, not just SPF. If, for some reason, you were able to configure only SPF without DKIM or DMARC, the recommended enforcement rule values might be different.
+>
+> As previously mentioned in this article, you create the SPF TXT record for a domain or subdomain at the domain registrar for the domain. No SPF TXT record configuration is available in Microsoft 365.
 
 - **Scenario**: You use contoso.com for email in Microsoft 365, and Microsoft 365 is the only source of email from contoso.com.
 
