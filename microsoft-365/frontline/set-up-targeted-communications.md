@@ -35,7 +35,7 @@ Streamline and simplify communications for your frontline. After you map your at
 Your frontline teams must be created through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
 
 > [!NOTE]
-> Mapping frontline attributes is part of the setup process when you deploy frontline dynamic teams. It's an optional step. You decide whether to map attributes for targeted communications when you deploy your frontline dynamic teams.
+> Mapping frontline attributes is part of the setup process when you deploy frontline dynamic teams. It's an optional step. If you want to allow your frontline to easily reach each other by department or job title, map your attributes.
 >
 > If you already deployed your frontline dynamic teams and you want to enable targeted communications, rerun the experience, and map your attributes.
 
@@ -76,7 +76,7 @@ Automatic tags are created and available after you map your attributes. To allow
 
 - **Admins**: Make sure tags is turned on for your organization. In the Teams admin center, go to **Teams** > **Teams settings**.  Under **Tagging**, check that the **Who can manage tags** setting is set to an option other than **Not enabled**.
 
-    [Learn more about how to turn on tags for your organization](/microsoftteams/manage-tags). 
+    [Learn more about how to turn on tags for your organization](/microsoftteams/manage-tags).
 
 - **Team owners**: In Teams, team owners must select the **Show members the option to @mention groups based on job title or department. This will notify everyone in that group.** check box in team settings for each of their respective teams.
 
