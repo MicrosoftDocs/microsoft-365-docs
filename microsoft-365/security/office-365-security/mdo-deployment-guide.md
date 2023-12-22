@@ -69,7 +69,7 @@ Create the following email authentication DNS records at your DNS registrar or D
 
 - **DomainKeys Identified Mail (DKIM)**: DKIM encrypts a signature within the message header that survives message forwarding. For instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 
-- **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: DMARC helps destination email servers decide what to do with messages from the custom domain that fail SPF and DKIM checks. Be sure to include `p=reject` or `p=quarantine` policies in the DMARC records. for instructions, see [Set up DMARC for outbound mail from Microsoft 365](email-authentication-dmarc-configure.md#set-up-dmarc-for-outbound-mail-from-microsoft-365).
+- **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: DMARC helps destination email servers decide what to do with messages from the custom domain that fail SPF and DKIM checks. Be sure to include `p=reject` or `p=quarantine` policies in the DMARC records. for instructions, see [Use DMARC to validate email](email-authentication-dmarc-configure.md).
 
 - **Authenticated Received Chain (ARC)**: If you use third-party services that modify message in transit, you can configure the services as _trusted ARC sealers_ so the modified messages can still pass email authentication checks (if the service supports it). For instructions, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).
 
