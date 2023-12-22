@@ -1,4 +1,4 @@
----
+![image](https://github.com/meghapriyams/microsoft-365-docs/assets/107922071/74d83365-3509-438a-9dfd-dbb1366aa940)---
 title: Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on Linux.
 ms.service: microsoft-365-security
@@ -39,7 +39,7 @@ Key benefits include:
 
 ## How eBPF works
 
-With eBPF, events previously obtained from the auditd event provider now flow from the eBPF sensor. This helps with system stability, improves CPU and memory utilization, and reduces disk usage. Also, when eBPF is enabled, all auditd-related custom rules are eliminated, which helps reduce the possibility of conflicts between applications.
+With eBPF, events previously obtained from the auditd event provider now flow from the eBPF sensor. This helps with system stability, improves CPU and memory utilization, and reduces disk usage. Also, when eBPF is enabled, all auditd-related custom rules are eliminated, which helps reduce the possibility of conflicts between applications. Data related to eBPF gets logged into the /var/log/microsoft/mdatp/microsoft_defender_core.log file.
 
 In addition, the eBPF sensor uses capabilities of the Linux kernel without requiring the use of a kernel module that helps increase system stability.
 
@@ -75,6 +75,14 @@ In case you want to manually disable eBPF then you can run the following command
 ```bash
 sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 ```
+You can also update the managed config file:
+```JSON
+{
+    "features": {
+        "ebpfSupplementaryEventProvider": "disabled"
+    }
+}
+```
 > [!IMPORTANT]
 > If you disable eBPF, the supplementary event provider switches back to auditd.
 > In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. 
@@ -97,9 +105,10 @@ You can check the agent health status by running the **mdatp** health command. M
 ```bash
 uname -a
 ```
+Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result into kernel hang issues. 
 
-Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result into kernel hang issues. Following steps can be taken to mitigate this issue:    
- 
+Following steps can be taken to mitigate this issue:     
+
 1. Use a kernal version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Please note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
 2. Switch to auditd mode if customer needs to use the same kernel version
 ```bash
@@ -111,6 +120,40 @@ The following two sets of data help analyze potential issues and determine the m
 
 2. Collect a debug diagnostic package when Defender for Endpoint is utilizing high resources by using the following instructions: [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information).
 
+## Troubleshooting performance issues
+
+If you see a hike in CPU utilization,it is important to identify the process/mount-point/files that is consuming most CPU cycles and then apply necessary exclusions. eBPF sensor being highly efficient sensor might not be the root cause. After applying possible AV exclusions, if wdavdaemon (parent process) is still consuming the resources, then use the ebpf-statistics command to obtain the top system call count:
+
+```bash
+sudo mdatp diagnostic  ebpf-statistics
+```
+```Output
+Monitor 20 seconds
+Top file paths:
+/var/log/microsoft/mdatp/microsoft_defender.log : 10
+/var/log/microsoft/mdatp/rotated/microsoft_defender.log00001 : 2
+/var/log/microsoft/mdatp/rotated/microsoft_defender.log : 1
+/home/gargank/tmp-stress-ng-rename-13550-31/stress-ng-rename-13550-31-374993 : 1
+/home/gargank/tmp-stress-ng-rename-13550-31/stress-ng-rename-13550-31-374991 : 1
+/home/gargank/tmp-stress-ng-rename-13550-31/stress-ng-rename-13550-31-374989 : 1
+/home/gargank/tmp-stress-ng-rename-13550-31/stress-ng-rename-13550-31-374987 : 1
+/home/gargank/tmp-stress-ng-rename-13550-31/stress-ng-rename-13550-31-374985 : 1
+/home/gargank/tmp-stress-ng-rename-13550-31/stress-ng-rename-13550-31-374983 : 1
+/home/gargank/tmp-stress-ng-rename-13550-31/stress-ng-rename-13550-31-374981 : 1
+
+Top initiator paths:
+/usr/bin/stress-ng : 50000
+/opt/microsoft/mdatp/sbin/wdavdaemon : 13
+
+Top syscall ids:
+82 : 1699333
+90 : 10
+87 : 3
+
+``` 
+In the above output,it can be seen that the system call with ID 82 is generating the most syscalls. You can create a ticket with Microsoft to get this excluded. In future as part of upcoming enhancements, you will have more control to apply such exclusions at your end.
+
+Exclusions applied to auditd can not be migrated or copied to eBPF. Common concerns such as noisy logs, kernel panic, noisy syscalls are already taken care of by eBPF internally. In case you want to add any further exclusions, then reach out to Microsoft to get the necessary exclusions applied. 
 
 ## See also
 
