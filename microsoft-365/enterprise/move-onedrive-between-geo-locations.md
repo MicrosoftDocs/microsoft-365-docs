@@ -132,6 +132,7 @@ The move statuses are described in the following table.
 |Status|Description|
 |---|---|
 |NotStarted|The move has not started|
+|ReadyToTrigger|The move is ready to be initiated by an administrator|
 |InProgress (*n*/4)|The move is in progress in one of the following states: <ul><li>Validation (1/4)</li><li>Backup (2/4)</li><li>Restore (3/4)</li><li>Cleanup (4/4)</li></ul>|
 |Success|The move has completed successfully.|
 |Failed|The move failed.|
