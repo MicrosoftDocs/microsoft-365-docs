@@ -1,4 +1,4 @@
-![image](https://github.com/meghapriyams/microsoft-365-docs/assets/107922071/74d83365-3509-438a-9dfd-dbb1366aa940)---
+---
 title: Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on Linux.
 ms.service: microsoft-365-security
@@ -75,7 +75,7 @@ In case you want to manually disable eBPF then you can run the following command
 ```bash
 sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 ```
-You can also update the managed config file:
+You can also update the mdatp_managed.json file:
 ```JSON
 {
     "features": {
@@ -120,9 +120,9 @@ The following two sets of data help analyze potential issues and determine the m
 
 2. Collect a debug diagnostic package when Defender for Endpoint is utilizing high resources by using the following instructions: [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information).
 
-## Troubleshooting performance issues
+#### Troubleshooting performance issues
 
-If you see a hike in CPU utilization,it is important to identify the process/mount-point/files that is consuming most CPU cycles and then apply necessary exclusions. eBPF sensor being highly efficient sensor might not be the root cause. After applying possible AV exclusions, if wdavdaemon (parent process) is still consuming the resources, then use the ebpf-statistics command to obtain the top system call count:
+If you see a hike in resource consumption by Microsoft Defender on your endpoints, it is important to identify the process/mount-point/files that is consuming most CPU/Memory utilization and then apply necessary exclusions. After applying possible AV exclusions, if wdavdaemon (parent process) is still consuming the resources, then use the ebpf-statistics command to obtain the top system call count:
 
 ```bash
 sudo mdatp diagnostic  ebpf-statistics
@@ -151,7 +151,7 @@ Top syscall ids:
 87 : 3
 
 ``` 
-In the above output,it can be seen that the system call with ID 82 is generating the most syscalls. You can create a ticket with Microsoft to get this excluded. In future as part of upcoming enhancements, you will have more control to apply such exclusions at your end.
+In the above output,it can be seen that stress-ng is the top process generating large number of events and might result into performance issues. Most likely stress-ng is generating the system call with ID 82. You can create a ticket with Microsoft to get this process excluded. In future as part of upcoming enhancements, you will have more control to apply such exclusions at your end.
 
 Exclusions applied to auditd can not be migrated or copied to eBPF. Common concerns such as noisy logs, kernel panic, noisy syscalls are already taken care of by eBPF internally. In case you want to add any further exclusions, then reach out to Microsoft to get the necessary exclusions applied. 
 
