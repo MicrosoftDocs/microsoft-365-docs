@@ -83,6 +83,7 @@ You can also update the mdatp_managed.json file:
     }
 }
 ```
+Refere to the link for detailed sample json file - [Set preferences for Microsoft Defender for Endpoint on Linux](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide)
 > [!IMPORTANT]
 > If you disable eBPF, the supplementary event provider switches back to auditd.
 > In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. 
@@ -124,10 +125,12 @@ The following two sets of data help analyze potential issues and determine the m
 
 If you see a hike in resource consumption by Microsoft Defender on your endpoints, it is important to identify the process/mount-point/files that is consuming most CPU/Memory utilization and then apply necessary exclusions. After applying possible AV exclusions, if wdavdaemon (parent process) is still consuming the resources, then use the ebpf-statistics command to obtain the top system call count:
 
-```bash
+```Bash
 sudo mdatp diagnostic  ebpf-statistics
 ```
 ```Output
+Output
+
 Monitor 20 seconds
 Top file paths:
 /var/log/microsoft/mdatp/microsoft_defender.log : 10
@@ -149,7 +152,6 @@ Top syscall ids:
 82 : 1699333
 90 : 10
 87 : 3
-
 ``` 
 In the above output,it can be seen that stress-ng is the top process generating large number of events and might result into performance issues. Most likely stress-ng is generating the system call with ID 82. You can create a ticket with Microsoft to get this process excluded. In future as part of upcoming enhancements, you will have more control to apply such exclusions at your end.
 
