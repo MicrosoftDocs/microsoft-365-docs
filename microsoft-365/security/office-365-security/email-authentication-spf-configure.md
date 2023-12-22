@@ -111,7 +111,7 @@ v=spf1 ip4:192.168.0.10 ip4:192.168.0.12 include:spf.protection.outlook.com -all
      Because we also recommend DKIM and DMARC for Microsoft 365 domains, the differences between `-all` (hard fail) and `~all` (soft fail) are largely eliminated (DMARC treats either result as an SPF failure). DMARC uses SPF to confirm the domains in the MAIL FROM and From addresses align _and_ the message came from a valid source for the From domain. DMARC uses DKIM to confirm the domain that signed the message and the domain in the From addresses are aligned. The message passes DMARC if the SPF _or_ DKIM checks pass (not both).
 
   > [!TIP]
-  > `?all` (neutral) is also available to tell the destination email system domain to do nothing to messages from sources that aren't specified in the SPF TXT record. This value is used for testing, and we don't recommend this value in production environments.
+  > `?all` (neutral) is also available to suggest no specific action on messages from unidentified sources. This value is used for testing, and we don't recommend this value in production environments.
 
 Important points to remember:
 

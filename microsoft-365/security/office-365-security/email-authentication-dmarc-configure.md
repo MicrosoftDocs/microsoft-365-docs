@@ -42,13 +42,13 @@ You enable DMARC for a domain by creating a TXT record in DNS. DMARC validation 
     - The message came from an authorized source for the domain that's used in the MAIL FROM address (the basic requirement of SPF). 
     - The domains in the MAIL FROM and From addresses in the message are aligned. This result effectively requires that valid sources for the message must be in the From address domain.
 
-  - DMARC uses the result from DKIM to verify that the domain that signed the message (the **d=** value in a **DKIM-Signature** header field as validated by the **s=** selector value) aligns with the domain in the From address.
+  - DMARC uses the result from DKIM to verify the domain that signed the message (the **d=** value in a **DKIM-Signature** header field as validated by the **s=** selector value) aligns with the domain in the From address.
 
-  A message passes DMARC if either of the described SPF or DKIM checks pass (one or the other). A message fails DMARC if both of the described SPF or DKIM checks fail.
+  A message passes DMARC if one or both of the described SPF or DKIM checks pass. A message fails DMARC if both of the described SPF or DKIM checks fail.
 
-- **DMARC policy**: Specifies what to do with messages that fail DMARC (reject, quarantine, or do nothing).
+- **DMARC policy**: Specifies what to do with messages that fail DMARC (reject, quarantine, or no instruction).
 
-- **DMARC reports**: Specifies where to send Aggregate reports (a periodic summary of positive and negative DMARC results) and Forensic reports (also known as _Failure reports_; nearly immediate DMARC failure result).
+- **DMARC reports**: Specifies where to send Aggregate reports (a periodic summary of positive and negative DMARC results) and Forensic reports (also known as _Failure reports_; nearly immediate DMARC failure results).
 
 Before we get started, here's what you need to know about DMARC in Microsoft 365 based on your email domain:
 
@@ -64,20 +64,20 @@ Before we get started, here's what you need to know about DMARC in Microsoft 365
     - For email services that aren't under your direct control (for example, bulk email services or services that add email signatures to outbound mail), we recommend using a subdomain (for example, marketing.contoso.com) instead of your main email domain (for example, contoso.com). You don't want issues with mail sent from those email services to affect the reputation of mail sent by employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
     - Unlike SPF and DKIM, the DMARC TXT record for a domain automatically covers all subdomains (including nonexistent subdomains) that don't have their own DMARC TXT record. In other words, you can disrupt the inheritance of DMARC on a subdomain by creating a DMARC TXT record in that subdomain. But, each subdomain requires an SPF and DKIM record for DMARC.
 
-  - **Registered but unused domains**: If you have registered domains that you aren't using for email or aren't using at all (also known as _parked domains_), configure the DMARC TXT records in those domains to specify that no email should ever come from those domains. This directive also includes the \*.onmicrosoft.com domain if you aren't using it for email.
+  - **Registered but unused domains**: If you have registered domains that you aren't using for email or aren't using at all (also known as _parked domains_), configure the DMARC TXT records in those domains to specify that no email should ever come from those domains. **This directive includes the \*.onmicrosoft.com domain if you aren't using it for email**.
 
 - **DMARC might need help**: Legitimate email services might modify messages in transit, which breaks SPF, DKIM, and therefore DMARC checks. If the email services supports it, you can identify the service as a trusted ARC sealer so the modified message can pass DMARC checks. For more information, see the [Next Steps](#next-steps) section at the end of this article.
 
 The rest of this article describes the DMARC TXT record that you need to create for domains in Microsoft 365, how to configure DMARC reporting, and information about how Microsoft 365 uses DMARC on _inbound_ mail.
 
 > [!TIP]
+> To create the DMARC TXT record for your **\*.onmicrosoft.com domain** in the Microsoft 365 admin center, see [this section](#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365) later in this article.
+>
 > There are no admin portals or PowerShell cmdlets in Microsoft 365 for you to manage DMARC TXT records in your **custom** domains. Instead, you create the DMARC TXT record at your domain registrar or DNS hosting service (often the same company).
 >
 > We provide instructions to create the proof of domain ownership TXT record for Microsoft 365 at many domain registrars. You can use these steps to begin creating the TXT record, and then use the information in this article for the SPF TXT record value. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 >
 > If you're unfamiliar with DNS configuration, contact your domain registrar and ask for help.
->
-> To create the DMARC TXT record for your **\*.onmicrosoft.com domain** in the Microsoft 365 admin center, see [this section](#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365) later in this article.
 
 ## Syntax for DMARC TXT records
 
@@ -86,7 +86,7 @@ DMARC TXT records are exhaustively described in [RFC 7489](https://datatracker.i
 The basic syntax of the DMARC TXT record for a domain in Microsoft 365 is:
 
 ```text
-v=DMARC1; <DMARC policy>; <Percentage of mail subject to filtering>; <DMARC reports>
+v=DMARC1; <DMARC policy>; <Percentage of failed DMARC mail subject to DMARC policy>; <DMARC reports>
 ```
 
 Or
@@ -98,26 +98,71 @@ v=DMARC1; p=<reject | quarantine | none>; pct=<0-100>; rua=mailto:<DMARCAggregat
 For example:
 
 ```text
-v=DMARC1; p=reject; pct=100; rua=mailto:d@rua.contoso.com; ruf=mailto:d@ruf.contoso.com
+v=DMARC1; p=reject; pct=100; rua=mailto:rua@contoso.com; ruf=mailto:ruf@contoso.com
 ```
 
 - `v=DMARC1;` identifies the TXT record as a DMARC TXT record.
 
-- **DMARC policy**: Specifies what to with messages that fail DMARC as described earlier in this article:
+- **DMARC policy**: Tells the destination email system what to with messages that fail DMARC as described earlier in this article:
   - `p=reject`: The messages should be rejected. What actually happens to the message depends on the destination email system, but the messages are typically discarded.
   - `p=quarantine`: The messages should be accepted but marked. What actually happens to the message depends on the destination email system. For example, the message might be quarantined as spam or delivered to the Junk Email folder, or delivered to the Inbox with an identifier added to the Subject or message body.
-  - `p=none`: Do nothing with the messages.
+  - `p=none`: No suggested action for messages that fail DMARC. What happens to the message depends on the email protection features in the destination email system.
 
-- **Percentage of mail subject to filtering**: The `pct=` value specifies the percentage of messages that fail DMARC that get the DMARC policy applied to them. For example, `pct=100` means all messages that fail DMARC get the DMARC policy applied to them. You use values less than 100 for [testing and tuning of the DMARC policy](#best-practices-for-implementing-dmarc-in-microsoft-365) as described later in this article.
+- **Percentage of failed DMARC mail subject to DMARC policy**: Tells the destination email system how many messages that fail DMARC (percentage) get the DMARC policy applied to them. For example, `pct=100` means all messages that fail DMARC get the DMARC policy applied to them. You use values less than 100 for [testing and tuning of the DMARC policy](#best-practices-for-implementing-dmarc-in-microsoft-365) as described later in this article.
 
 - **DMARC reports**:
-  - **DMARC Aggregate report URI**: The `rua=` value identifies the `mailto:` URI for the DMARC Aggregate report. The Aggregate report is a periodic summary of DMARC pass and failure results from the destination email system. For example, .
-  - **DMARC Forensic report URI**: Also known as the DMARC Failure report URI. The `ruf=` value identifies the `mailto:` URI for the DMARC Forensic report.
+  - **DMARC Aggregate report URI**: The `rua=mailto:` value identifies where to send the DMARC Aggregate report. The Aggregate report has the following properties:
+    - The email messages that contain the Aggregate report are typically sent once per day (the report contains the DMARC results from the previous day). The Subject line contains the destination domain that sent the report (Submitter) and the source domain for the DMARC results (Report Domain).
+    - The DMARC data is in an XML email attachment that's likely GZIP compressed. The XML schema is defined in [Appendix C of RFC 7489](https://datatracker.ietf.org/doc/html/rfc7489#appendix-C).
 
-  > [!TIP]
-  > Visit the [Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog) catalog to view third-party vendors offering DMARC reporting for Microsoft 365.
+    The information in the Aggregate report can be vast and difficult to parse. To help make sense of the data, you can use the following options for DMARC reporting:
 
- For more information about DMARC, you can use the following resources:
+    - Create automation using PowerShell or Microsoft Power BI.
+    - Use an external service. For a list of services, search for DMARC in the Microsoft Intelligent Security Association (MISA) Catalog at <https://www.microsoft.com/misapartnercatalog>.
+
+  - **DMARC Forensic report URI**: The `ruf=mailto:` value identifies where to send the DMARC Forensic report (also known as the DMARC Failure report). The report is generated and sent immediately after a DMARC failure like a non-delivery report (also known as an NDR or bounce message).
+
+
+
+<!--- It's recommended that admins set up and regularly review DMARC Reporting in their domain.
+
+Admins should regularly read and monitor the daily DMARC reports sent in email. The reports outline what messages from the domain pass one of email authentication methods **Sender Policy Framework (SPF)**, or **DomainKeys Identified Mail (DKIM)**, and the verdict of **DMARC** authentication.
+
+**DMARC Reports outline:**
+
+- The servers or services sending email from your domain.
+- The servers or services that pass or fail DMARC authentication.
+    - Note that email must also pass one of SPF or DKIM to pass DMARC.
+- The actions that DMARC takes on a server that gets unauthenticated mail from your domain. The options are:
+    - None
+    - Quarantine
+    - Reject
+
+DMARC reports let you know who is sending mail on your domain, and can alert you to potential spammers. Another advantage is that once most messages pass DMARC, admins can change enforcement by creating a stricter DMARC policy. This makes the environment increasingly unfriendly to spoofing and phishing.
+
+Reviewing DMARC reports can verify that messages are sent by authorized servers, and determine whether they pass authentication checks. Over time, this will allow admins to fine tune their response, choosing from amongst reject, quarantine, or no response (none).
+
+## Reading your DMARC Reports
+
+When DMARC is turned on, reports are sent daily to the email address or addresses specified in your DMARC record (reports using the rua tag in the DMARC record contain the email information).
+
+Every server that gets mail from your domain also sends back an XML DMARC report, including whether messages coming out of your domain pass or fail DMARC. You'll also see:
+
+- Any results for SPF, DKIM, and DMARC email authentication.
+- How many messages came from each IP address that day.
+
+## Interpreting your DMARC data
+
+> [!IMPORTANT]
+> The numbers of DMARC emails varies in the same way the amount of email your domain sends does. For example, there may be lulls during holidays, and peaks during an organization's events. This can add up to a lot of reporting, so it's best to dedicate a group and mailbox to the practice of getting and analyzing these reports.
+
+DMARC Reports can be difficult to read and interpret. Using a third-party service that specializes in DMARC, from receiving and storing this data, to analyzing and even aggregating reports, may be the answer.
+
+Ultimately the value of your DMARC investment, how effectively it's working, and whether or not it's meeting goals comes down to analyzing the data. If your DMARC Reports are handled by a 3rd party have a discussion about your key DMARC objectives. --->
+
+
+
+For more information about DMARC, use the following resources:
 
 - The [DMARC Training Series](https://www.m3aawg.org/activities/training/dmarc-training-series) from M<sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group).
 - The checklist at [dmarcian](https://space.dmarcian.com/deployment/).
@@ -191,16 +236,6 @@ Examples:
 
 Once you've formed your record, you need to update the record at your domain registrar.
 
-## DMARC Mail
-
-> [!CAUTION]
-> Mails may not be sent out daily.
-
-In this example DMARC TXT record: `dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.example.com; ruf=mailto:d@ruf.example.com; fo=1"`, you can see the *rua* address. This address is used to send 'aggregate feedback' for analysis, which is used to generate a report.
-
-> [!TIP]
-> Visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog) to view more third-party vendors offering DMARC reporting for Microsoft 365. See [IETF.org's 'Domain-based Message Authentication, Reporting, and Conformance (DMARC)'](https://datatracker.ietf.org/doc/html/rfc7489) for more information on DMARC 'rua' addresses.
-
 ## Best practices for implementing DMARC in Microsoft 365
 
 You can implement DMARC gradually without impacting the rest of your mail flow. Create and implement a roll-out plan that follows these steps. Do each of these steps first with a sub-domain, then other sub-domains, and finally with the top-level domain in your organization before moving on to the next step.
@@ -229,44 +264,30 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
    _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
    ```
 
-## DMARC Reject
-
-DMARC `p=reject` is a policy that's set in the DMARC TXT record by domain owners to notify service providers to *reject* email that fails DMARC.
-
-It came about because when OReject is set as the default, rejected email was sent to quarantine in Enterprise, and to the Junk Email folder in Consumer (due to lack of quarantine in Consumer). However, with DMARC `p=reject`, the email is rejected.
-
-Configuration can be done in the Microsoft Defender portal, or by the [New-AntiPhishPolicy](/powershell/module/exchange/new-antiphishpolicy) or [Set-AntiPhishPolicy](/powershell/module/exchange/set-antiphishpolicy) cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). For more information, see the following articles:
-
-- [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies)
-- [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
-- [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
-
 ## How Microsoft 365 handles outbound email that fails DMARC
 
 If a message is outbound from Microsoft 365 and fails DMARC, and you have set the policy to p=quarantine or p=reject, the message is routed through the [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md). There's no override for outbound email.
 
 If you publish a DMARC reject policy (p=reject), no other customer in Microsoft 365 can spoof your domain because messages won't be able to pass SPF or DKIM for your domain when relaying a message outbound through the service. However, if you do publish a DMARC reject policy but don't have all of your email authenticated through Microsoft 365, some of it may be marked as spam for inbound email (as described above), or it will be rejected if you don't publish SPF and try to relay it outbound through the service. This happens, for example, if you forget to include some of the IP addresses for servers and apps that send mail on behalf of your domain when you form your DMARC TXT record.
 
-## How Microsoft 365 handles inbound email that fails DMARC
+## DMARC for inbound mail into Microsoft 365
 
-If the DMARC policy of the sending domain is `p=reject`, [Exchange Online Protection](eop-about.md) (EOP) rejects the message by default. You can configure anti-phishing policies to honor or not honor `p=quarantine` and `p=reject` in sender DMARC policies, and specify separate actions for `p=quarantine` and `p=reject`. For more information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
+- DMARC checks on mail coming into Microsoft 365 are affected by the following features in Exchange Online Protection (EOP):
+  - Whether [spoof intelligence](anti-phishing-policies-about.md#spoof-settings) is enabled or disabled in the anti-phishing policy that checked the message. Disabling spoof intelligence disables _implicit_ spoofing protection from [composite authentication](email-authentication-about.md#composite-authentication) checks only.
+  - Whether the **Honor DMARC record policy when the message is detected as spoof** setting is enabled or disabled in the anti-phishing policy that checked the message, and the specified actions based on the source domain's DMARC policy (`p=none`, `p=quarantine`, or `p=reject` in the DMARC TXT record).
 
-When anti-phishing policies are configured to not honor `p=quarantine` or `p=reject` in DMARC policies, messages that fail DMARC are marked as spam and aren't rejected. Users can still get these messages in their inbox through these methods:
+  For complete information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
 
-- Users add safe senders individually by using their email client.
-- Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md#override-the-spoof-intelligence-verdict) or the [Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders) to allow messages from the spoofed sender.
-- Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
-- Admins create an Exchange mail flow rule for all users for rejected email that fails the organization's DMARC policy.
+  To see the default values for these settings in anti-phishing policies, check the setting values in the table at [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
-For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
+- Microsoft 365 sends DMARC Aggregate reports to all domains with a valid `rua=mailto:` address in the DMARC TXT records, as long as the MX record for the Microsoft 365 domain points directly to Microsoft 365.
 
-[Anti-spam message headers](message-headers-eop-mdo.md) includes the syntax and header fields used by Microsoft 365 for DMARC checks.
+  If mail from the internet is routed through a third-party service or device before delivery to recipients in Microsoft 365, Microsoft 365 doesn't send DMARC Aggregate reports to valid `rua=mailto:` addresses.
 
-## How Microsoft 365 utilizes Authenticated Received Chain (ARC)
+  > [!TIP]
+  > When a third-party service or device sits in front of email flowing into Microsoft 365, [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as _skip listing_) correctly identifies the source of internet messages for SPF, DKIM (if the service modifies messages), and DMARC validation.
 
-All hosted mailboxes in Microsoft 365 will now gain the benefit of ARC with improved deliverability of messages and enhanced anti-spoofing protection. ARC preserves the email authentication results from all participating intermediaries, or hops, when an email is routed from the originating server to the recipient mailbox. Before ARC, modifications performed by intermediaries in email routing, like forwarding rules or automatic signatures, could cause DMARC failures by the time the email reached the recipient mailbox. With ARC, the cryptographic preservation of the authentication results allows Microsoft 365 to verify the authenticity of an email's sender.
-
-Microsoft 365 currently utilizes ARC to verify authentication results when Microsoft is the ARC Sealer, but plan to add support for third-party ARC sealers in the future.
+- Microsoft doesn't send DMARC Forensic reports (also known as DMARC Failure reports), even if a valid `ruf=mailto:` address exists in the source domain's DMARC TXT record.
 
 ## Troubleshooting your DMARC implementation
 
