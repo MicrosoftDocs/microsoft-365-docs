@@ -11,8 +11,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: v-sgoyagoy
-author: samanthagy
+ms.author: maccruz
+author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -53,8 +53,8 @@ Use this reference to construct queries that return information from the table. 
 |`AccountDisplayName`|`string`|Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user.|
 |`AccountObjectId`|`string`|Unique identifier for the account in Microsoft Entra ID|
 |`AccountUpn`|`string`|User principal name (UPN) of the account|
-|`IsExternalUser`|`int`|Indicates whether a user inside the network does not belong to the organization's domain|
-|`IsGuestUser`|`bool`|Indicates whether the user that signed in is a guest in the tenant|
+|`IsExternalUser`|`int`|Indicates if the user that signed in is external. Possible values: -1 (not set), 0 (not external), 1 (external).|
+|`IsGuestUser`|`boolean`|Indicates whether the user that signed in is a guest in the tenant|
 |`AlternateSignInName`|`string`|On-premises user principal name (UPN) of the user signing in to Microsoft Entra ID|
 |`LastPasswordChangeTimestamp`|`datetime`|Date and time when the user that signed in last changed their password|
 |`ResourceDisplayName`|`string`|Display name of the resource accessed. The display name can contain any character.|
@@ -62,10 +62,10 @@ Use this reference to construct queries that return information from the table. 
 |`ResourceTenantId`|`string`|Unique identifier of the tenant of the resource accessed|
 |`DeviceName`|`string`|Fully qualified domain name (FQDN) of the device|
 |`AadDeviceId`|`string`|Unique identifier for the device in Microsoft Entra ID|
-|`OSPlatform`|`string`|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7|
+|`OSPlatform`|`string`|Platform of the operating system running on the machine. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.|
 |`DeviceTrustType`|`string`|Indicates the trust type of the device that signed in. For managed device scenarios only. Possible values are Workplace, AzureAd, and ServerAd.|
-|`IsManaged`|`int`|Indicates whether the endpoint has been onboarded to and is managed by Microsoft Defender for Endpoint|
-|`IsCompliant`|`int`|Indicates whether the device that initiated the event is compliant or not|
+|`IsManaged`|`int`|Indicates whether the device that initiated the sign-in is a managed device (1) or not a managed device (0)|
+|`IsCompliant`|`int`|Indicates whether the device that initiated the sign-in is compliant (1) or non-compliant (0)|
 |`AuthenticationProcessingDetails`|`string`|Details about the authentication processor|
 |`AuthenticationRequirement`|`string`|Type of authentication required for the sign-in. Possible values: multiFactorAuthentication (MFA was required) and singleFactorAuthentication (no MFA was required).|
 |`TokenIssuerType`|`int`|Indicates if the token issuer is Microsoft Entra ID (0) or Active Directory Federation Services (1)|
@@ -79,9 +79,9 @@ Use this reference to construct queries that return information from the table. 
 |`ConditionalAccessPolicies`|`string`|Details of the conditional access policies applied to the sign-in event|
 |`ConditionalAccessStatus`|`int`|Status of the conditional access policies applied to the sign-in. Possible values are 0 (policies applied), 1 (attempt to apply policies failed), or 2 (policies not applied).|
 |`IPAddress`|`string`|IP address assigned to the device during communication|
-|`Country`|`string`|Country/Region where the account user is located|
+|`Country`|`string`|Two-letter code indicating the country/region where the client IP address is geolocated|
 |`State`|`string`|State where the sign-in occurred, if available|
-|`City`|`string`|City where the client IP address is geolocated|
+|`City`|`string`|City where the account user is located|
 |`Latitude`|`string`|The north to south coordinates of the sign-in location|
 |`Longitude`|`string`|The east to west coordinates of the sign-in location|
 |`NetworkLocationDetails`|`string`|Network location details of the authentication processor of the sign-in event|
