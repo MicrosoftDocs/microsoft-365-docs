@@ -122,8 +122,6 @@ v=DMARC1; p=reject; pct=100; rua=mailto:rua@contoso.com; ruf=mailto:ruf@contoso.
 
   - **DMARC Forensic report URI**: The `ruf=mailto:` value identifies where to send the DMARC Forensic report (also known as the DMARC Failure report). The report is generated and sent immediately after a DMARC failure like a non-delivery report (also known as an NDR or bounce message).
 
-
-
 <!--- It's recommended that admins set up and regularly review DMARC Reporting in their domain.
 
 Admins should regularly read and monitor the daily DMARC reports sent in email. The reports outline what messages from the domain pass one of email authentication methods **Sender Policy Framework (SPF)**, or **DomainKeys Identified Mail (DKIM)**, and the verdict of **DMARC** authentication.
@@ -160,8 +158,6 @@ DMARC Reports can be difficult to read and interpret. Using a third-party servic
 
 Ultimately the value of your DMARC investment, how effectively it's working, and whether or not it's meeting goals comes down to analyzing the data. If your DMARC Reports are handled by a 3rd party have a discussion about your key DMARC objectives. --->
 
-
-
 For more information about DMARC, use the following resources:
 
 - The [DMARC Training Series](https://www.m3aawg.org/activities/training/dmarc-training-series) from M<sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group).
@@ -191,26 +187,7 @@ For more information about DMARC, use the following resources:
 
    When you're finished on the **Add a custom DNS record** flyout, select **Save**
 
-## Enable DKIM signing of outbound messages using a \*.onmicrosoft
-
-
 ### Step 4: Form the DMARC TXT record for your domain
-
-Although there are other syntax options that aren't mentioned here, these are the most commonly used options for Microsoft 365. Form the DMARC TXT record for your domain in the format:
-
-```console
-_dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
-```
-
-Where:
-
-- *domain* is the domain you want to protect. By default, the record protects mail from the domain and all subdomains. For example, if you specify \_dmarc.contoso.com, then DMARC protects mail from the domain and all subdomains, such as housewares.contoso.com or plumbing.contoso.com.
-
-- *TTL* should always be the equivalent of one hour. The unit used for TTL, either hours (1 hour), minutes (60 minutes), or seconds (3600 seconds), will vary depending on the registrar for your domain.
-
-- *pct=100* indicates that this rule should be used for 100% of email.
-
-- *policy* specifies what policy you want the receiving server to follow if DMARC fails. You can set the policy to none, quarantine, or reject.
 
 For information about which options to use, become familiar with the concepts in [Best practices for implementing DMARC in Microsoft 365](#best-practices-for-implementing-dmarc-in-microsoft-365).
 
@@ -268,8 +245,6 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
 
 If a message is outbound from Microsoft 365 and fails DMARC, and you have set the policy to p=quarantine or p=reject, the message is routed through the [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md). There's no override for outbound email.
 
-If you publish a DMARC reject policy (p=reject), no other customer in Microsoft 365 can spoof your domain because messages won't be able to pass SPF or DKIM for your domain when relaying a message outbound through the service. However, if you do publish a DMARC reject policy but don't have all of your email authenticated through Microsoft 365, some of it may be marked as spam for inbound email (as described above), or it will be rejected if you don't publish SPF and try to relay it outbound through the service. This happens, for example, if you forget to include some of the IP addresses for servers and apps that send mail on behalf of your domain when you form your DMARC TXT record.
-
 ## DMARC for inbound mail into Microsoft 365
 
 - DMARC checks on mail coming into Microsoft 365 are affected by the following features in Exchange Online Protection (EOP):
@@ -282,25 +257,14 @@ If you publish a DMARC reject policy (p=reject), no other customer in Microsoft 
 
 - Microsoft 365 sends DMARC Aggregate reports to all domains with a valid `rua=mailto:` address in the DMARC TXT records, as long as the MX record for the Microsoft 365 domain points directly to Microsoft 365.
 
-  If mail from the internet is routed through a third-party service or device before delivery to recipients in Microsoft 365, Microsoft 365 doesn't send DMARC Aggregate reports to valid `rua=mailto:` addresses.
+  If mail from the internet is routed through a third-party service or device before delivery to Microsoft 365 (the MX record points somewhere other than Microsoft 365), the DMARC Aggregate reports aren't sent. This limitation includes hybrid or standalone EOP scenarios where mail is delivered to the on-premises environment before being routed to Microsoft 365 using a connector.
 
   > [!TIP]
-  > When a third-party service or device sits in front of email flowing into Microsoft 365, [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as _skip listing_) correctly identifies the source of internet messages for SPF, DKIM (if the service modifies messages), and DMARC validation.
+  > When a third-party service or device sits in front of mail flowing into Microsoft 365, [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as _skip listing_) correctly identifies the source of internet messages for SPF, DKIM (if the service modifies messages), and DMARC validation.
 
-- Microsoft doesn't send DMARC Forensic reports (also known as DMARC Failure reports), even if a valid `ruf=mailto:` address exists in the source domain's DMARC TXT record.
+- Microsoft 365 doesn't send DMARC Forensic reports (also known as DMARC Failure reports), even if a valid `ruf=mailto:` address exists in the source domain's DMARC TXT record.
 
 ## Troubleshooting your DMARC implementation
-
-If you've configured your domain's MX records where EOP isn't the first entry, DMARC failures won't be enforced for your domain.
-
-If you're a customer, and your domain's primary MX record doesn't point to EOP, you won't get the benefits of DMARC. For example, DMARC won't work if you point the MX record to your on-premises mail server and then route email to EOP by using a connector. In this scenario, the receiving domain is one of your Accepted-Domains but EOP isn't the primary MX. For example, suppose contoso.com points its MX at itself and uses EOP as a secondary MX record, contoso.com's MX record looks like the following:
-
-```console
-contoso.com     3600   IN  MX  0  mail.contoso.com
-contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
-```
-
-All, or most, email will first be routed to mail.contoso.com since it's the primary MX, and then mail will get routed to EOP. In some cases, you might not even list EOP as an MX record at all and simply hook up connectors to route your email. EOP doesn't have to be the first entry for DMARC validation to be done. It just ensures the validation, to be certain that all on-premise/non-O365 servers will do DMARC checks.  DMARC is eligible to be enforced for a customer's domain (not server) when you set up the DMARC TXT record, but it's up to the receiving server to actually do the enforcement.  If you set up EOP as the receiving server, then EOP does the DMARC enforcement.
 
 :::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="A troubleshooting graphic for DMARC" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
