@@ -39,10 +39,11 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 1. Select **Add new registration**.
 1. Select **Microsoft Reflect** and then select **Next**.
 1. Enter a friendly **Registration** name like *Reflect for D2L Brightspace* and select **D2L Brightspace** as the LMS platform. Select **Next**.
-1. You are given a list of keys that need to be added to your Brightspace LMS site.
+1. You're given a list of keys that need to be added to your Brightspace LMS site.
 1. Open your D2L Brightspace environment in another tab. ***Don't*** close the Microsoft LTI portal tab.
 1. On D2L Brightspace, navigate to **Admin Tools** > **Manage Extensibility** and select **LTI Advantage** then **Register Tool**.
 1. Select **Standard** registration and enter the values listed in the table:
+
     | Field on Brightspace form              | Value                                |
     | -------------------------------------- | ------------------------------------ |
     | Name                                   | Microsoft Reflect                    |   
@@ -52,7 +53,8 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
     | Target Link URI                        | https://reflect.microsoft.com/app   |
 1. Select the **Register** button.
 1. A modal with Brightspace registration details appears. Add these values on the Microsoft LTI portal.
-1. On the **Microsoft LTI portal** tab, click next to navigate to **LMS provided registration keys**. Enter the values listed in the table:
+1. On the **Microsoft LTI portal** tab, select **Next** to navigate to **LMS provided registration keys**. Enter the values listed in the table:
+
     | Field on Microsoft LTI registration portal | Value                            |
     | -------------------------------------- | ------------------------------------ |
     | Issuer ID URL                          | Copy the **Issuer** value from Brightspace Registration Details.                                   |
