@@ -30,35 +30,37 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 > The person who performs this integration should be an administrator of Brightspace and Microsoft 365 tenant.
 
 ## One-time setup by administrator
-
+### Register Microsoft Reflect LTI for use in D2L Brightspace
 1. Sign in with a *Microsoft 365 administrator account* to the [Microsoft LTI Registration Portal](https://lti.microsoft.com/registration). 
 1. Select **Add new registration**.
 1. Select **Microsoft Reflect** and then select **Next**.
 1. Enter a friendly **Registration** name like *"Reflect for D2L Brightspace"* and select **D2L Brightspace** as the LMS platform. Select **Next**.
 1. You'll be given a list of keys that need to be added to your Brightspace LMS site.
 1. Open the Brightspace site in another tab. ***Don't*** close the Microsoft LTI portal tab.
-1. On the Brightspace site, navigate to **Admin** > **Manage Extensibility** and select **LTI Advantage** then **Register Tool**.
-1. Select **Standard registration** and copy the keys from **Microsoft LTI keys** to the corresponding tool inputs.
-    1. Microsoft's **Target link URL** (https://reflect.microsoft.com/app) key goes into Brightspace's **Target Link URI** field.
-    1. Microsoft's **Open ID connection URL** key goes into Brightspace's **OpenID Connect Login URL** field.
-    1. Microsoft's **Redirect URL** key goes into Brightspace's **Redirect URLs** field.
-1. In the **Domain** field, enter 'https://reflect.microsoft.com'.
+1. On the Brightspace site, navigate to **Admin Tools** > **Manage Extensibility** and select **LTI Advantage** then **Register Tool**.
+1. Select **Standard** registration and enter the values listed in the table:
+   
+    | Field on Brightspace form              | Value                                |
+    | -------------------------------------- | ------------------------------------ |
+    | Name                                   | Microsoft Reflect                    |   
+    | Domain                                 | https://reflect.microsoft.com        |
+    | Redirect URLs                          | Copy the **Redirect URL** value from Microsoft LTI keys.|
+    | OpenID Connect Login URL               | Copy the **Open ID connection URL** value from Microsoft LTI keys.                           |
+    | Target Link URI                        | https://reflect.microsoft.com/app   |
 1. Select the **Register** button.
 1. A modal will display the Brightspace registration details. These values need to be added on Microsoft LTI portal.
-1. On the **Microsoft LTI portal** tab, click next to navigate to **LMS provided registration keys**.
-1. Copy and paste the values from Brightspace's configuration details to Microsoft's **LMS provided registration keys** step.
-    Paste the values as follows:
-
-    | On Brightspace                         | On Microsoft LTI registration portal |
+1. On the **Microsoft LTI portal** tab, click next to navigate to **LMS provided registration keys**. Enter the values listed in the table:
+   
+    | Field on Microsoft LTI registration portal | Value                            |
     | -------------------------------------- | ------------------------------------ |
-    | Issuer                                 | Issuer ID URL                        |
-    | Client ID                              | Client ID                            |
-    | Brightspace Keyset URL                 | Keyset URL                           |
-    | OpenID Connect Authentication Endpoint | Platform authentication URL          |
+    | Issuer ID URL                          | Copy the **Issuer** value from Brightspace Registration Details.                                   |
+    | Client ID                              | Copy the **Client Id** value from Brightspace Registration Details.                                |
+    | Keyset URL                             | Copy the **Brightspace Keyset URL** value from Brightspace Registration Details.                   |
+    | Platform authentication URL            | Copy the **OpenID Connect Authentication Endpoint** value from Brightspace Registration Details.   |
+1. Select **Done** in Brightspace Registration Details tab, and **Next** in the Microsoft LTI registration portal tab.
+1. In the Microsoft LTI registration portal tab, review the **Review and save** page. If there are no errors, select **Save and exit**. You should see a message indicating successful registration.
 
-    Select **Next**.
-
-1. Review the **Review and add** page. If there are no errors, select **Save and exit**. You should see a message indicating successful registration.
+### Register Microsoft Reflect LTI for use in D2L Brightspace
 
 Reflect is now installed and ready to use in any course in your Schoology instance.
 
