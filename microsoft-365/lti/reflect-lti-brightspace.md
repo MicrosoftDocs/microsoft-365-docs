@@ -30,14 +30,14 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 > The person who performs this integration should be an administrator of Brightspace and Microsoft 365 tenant.
 
 ## One-time setup by administrator
-### Register Microsoft Reflect LTI for use in D2L Brightspace
+### Register Microsoft Reflect LTI for use in your D2L Brightspace
 1. Sign in with a *Microsoft 365 administrator account* to the [Microsoft LTI Registration Portal](https://lti.microsoft.com/registration). 
 1. Select **Add new registration**.
 1. Select **Microsoft Reflect** and then select **Next**.
-1. Enter a friendly **Registration** name like *"Reflect for D2L Brightspace"* and select **D2L Brightspace** as the LMS platform. Select **Next**.
+1. Enter a friendly **Registration** name like *Reflect for D2L Brightspace* and select **D2L Brightspace** as the LMS platform. Select **Next**.
 1. You'll be given a list of keys that need to be added to your Brightspace LMS site.
-1. Open the Brightspace site in another tab. ***Don't*** close the Microsoft LTI portal tab.
-1. On the Brightspace site, navigate to **Admin Tools** > **Manage Extensibility** and select **LTI Advantage** then **Register Tool**.
+1. Open your D2L Brightspace environment in another tab. ***Don't*** close the Microsoft LTI portal tab.
+1. On D2L Brightspace, navigate to **Admin Tools** > **Manage Extensibility** and select **LTI Advantage** then **Register Tool**.
 1. Select **Standard** registration and enter the values listed in the table:
    
     | Field on Brightspace form              | Value                                |
@@ -60,7 +60,23 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 1. Select **Done** in Brightspace Registration Details tab, and **Next** in the Microsoft LTI registration portal tab.
 1. In the Microsoft LTI registration portal tab, review the **Review and save** page. If there are no errors, select **Save and exit**. You should see a message indicating successful registration.
 
-### Register Microsoft Reflect LTI for use in D2L Brightspace
+### Deploy Microsoft Reflect LTI to your D2L Brightspace
+1. On D2L Brightspace, navigate to **Admin Tools** > **External Learning Tools**.
+1. Select **New Deployment**.
+1. Select **Microsoft Reflect** as the **Tool**, and enter **Microsoft Reflect** as the **Name** as well.
+1. Select ***all*** security settings ***except*** **Anonymous** and **Classlist** (including Org Unit information, User Information, Link Information).
+1. Don't set configuration settings.
+1. Select **Create Deployment** and confirm the deployment.
+
+### Add a link to Microsoft Reflect in your D2L Brightspace courses
+1. On D2L Brightspace, navigate to **Admin Tools** > **External Learning Tools**.
+1. Select **Microsoft Reflect**.
+1. Scroll down to select **View Links**.
+1. Select **New Link**.
+1. Enter **Microsoft Reflect** as the **Name**.
+1. For the **URL**, access the [Microsoft LTI Registration Portal](https://lti.microsoft.com/registration) and copy the **Redirect URL** from your *Reflect for D2L Brightspace* registration.
+1. Select **Save and Close** to create the link.
+
 
 Reflect is now installed and ready to use in any course in your Schoology instance.
 
