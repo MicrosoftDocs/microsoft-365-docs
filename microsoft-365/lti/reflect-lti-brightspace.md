@@ -34,7 +34,7 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 > [!IMPORTANT]
 > To access the Reflect LTI app in your D2L Brightspace environment, you should complete **all** three steps detailed in this section: register Microsoft Reflect LTI for use in your D2L Brightspace, then deploy it, and finally add a link to it in your course navigation.
 
-### Register Microsoft Reflect LTI for use in your D2L Brightspace
+### 1. Register Microsoft Reflect LTI for use in your D2L Brightspace
 1. Sign in with a *Microsoft 365 administrator account* to the [Microsoft LTI Registration Portal](https://lti.microsoft.com/registration). 
 1. Select **Add new registration**.
 1. Select **Microsoft Reflect** and then select **Next**.
@@ -64,7 +64,7 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 1. Select **Done** in Brightspace Registration Details tab, and **Next** in the Microsoft LTI registration portal tab.
 1. In the Microsoft LTI registration portal tab, review the **Review and save** page. If there are no errors, select **Save and exit**. You should see a message indicating successful registration.
 
-### Deploy Microsoft Reflect LTI to your D2L Brightspace
+### 2. Deploy Microsoft Reflect LTI to your D2L Brightspace
 1. On D2L Brightspace, navigate to **Admin Tools** > **External Learning Tools**.
 1. Select **New Deployment**.
 1. Select **Microsoft Reflect** as the **Tool**, and enter **Microsoft Reflect** as the **Name** as well.
@@ -79,7 +79,7 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 1. Scroll down to **Deployment ID** and paste the value you copied from the **Brightspace Deployment Details**.
 1. Select **Next**, review the **Review and save** page, and then select **Save and exit** to complete the update.
 
-### Add a link to Microsoft Reflect in your D2L Brightspace courses
+### 3. Add a link to Microsoft Reflect in your D2L Brightspace courses
 1. On D2L Brightspace, navigate to **Admin Tools** > **External Learning Tools**.
 1. Select **Microsoft Reflect**.
 1. Scroll down to select **View Links**.
