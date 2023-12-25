@@ -13,7 +13,7 @@ ms.collection:
 - m365initiative-edu
 - tier2
 ms.localizationpriority: medium
-description: Create impactful check-ins to gain wellbeing insights and build a happier, healthier learning community with the Microsoft Reflect Learning Tools Interoperability App for PowerSchool Unified Classroom® Schoology Learning.
+description: Create impactful check-ins to gain wellbeing insights and build a happier, healthier learning community with the Microsoft Reflect Learning Tools Interoperability App for D2L Brightspace.
 ---
 
 # Integrate Microsoft Reflect LTI with D2L Brightspace
@@ -30,6 +30,10 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 > The person who performs this integration should be an administrator of Brightspace and Microsoft 365 tenant.
 
 ## One-time setup by administrator
+
+> [!IMPORTANT]
+> To access the Reflect LTI app in your D2L Brightspace environment, you should complete **all** three steps detailed in this section: register Microsoft Reflect LTI for use in your D2L Brightspace, then deploy it, and finally add a link to it in your course navigation.
+
 ### Register Microsoft Reflect LTI for use in your D2L Brightspace
 1. Sign in with a *Microsoft 365 administrator account* to the [Microsoft LTI Registration Portal](https://lti.microsoft.com/registration). 
 1. Select **Add new registration**.
@@ -66,7 +70,14 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 1. Select **Microsoft Reflect** as the **Tool**, and enter **Microsoft Reflect** as the **Name** as well.
 1. Select ***all*** security settings ***except*** **Anonymous** and **Classlist** (including Org Unit information, User Information, Link Information).
 1. Don't set configuration settings.
+1. Select **Add Org Units**, and then the **root org** or **all** units to deploy Microsoft Reflect for them.
 1. Select **Create Deployment** and confirm the deployment.
+1. Select **Microsoft Reflect** deployment, scroll down to **Deployment Id**, and copy its value.
+1. Open the [Microsoft LTI Registration Portal](https://lti.microsoft.com/registration).
+1. Select **edit** in the actions column of your *Reflect for D2L Brightspace* registration.
+1. Select **Connect LTI credentials**, and then **LMS provided registration keys**.
+1. Scroll down to **Deployment ID** and paste the value you copied from the **Brightspace Deployment Details**.
+1. Select **Next**, review the **Review and save** page, and then select **Save and exit** to complete the update.
 
 ### Add a link to Microsoft Reflect in your D2L Brightspace courses
 1. On D2L Brightspace, navigate to **Admin Tools** > **External Learning Tools**.
@@ -87,17 +98,11 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 1. Drag the Microsoft Reflect link to your preferred location in the course navigation.
 1. Select **Save and Close**. 
 
-Reflect is now installed and ready to use in any course in your Schoology instance.
-
-> [!NOTE]
-> If you choose not to install the app for all courses, then *Course Admins* must install the app for themselves by either:
->
-> 1. Going to the [Organization Apps list](https://app.schoology.com/apps/school_apps), selecting the **Install/Remove** button, and choosing the courses in which to install the app.
-> 1. Or, they can select the **Install Your App(s)** link at the bottom of the course left rail navigation menu, and then select the **Microsoft Reflect** app to install.
+Reflect is now installed and ready to use in any course in your D2L Brightspace environment.
 
 ## Ongoing use by course owners and members
 
-1. After the initial setup, course owners and members will find a tab of Reflect in every course.
+1. After the initial setup, course owners and members will find a link to Reflect in every course navigation.
 1. On their first access, they need to sign in using their Microsoft account to get started.
 1. Course owners can [create and share check-ins](https://support.microsoft.com/topic/c6cbbacc-5655-450e-bca9-988ddc506017).
 1. Once check-ins are created, course members can access and respond to them in their Reflect tab.
