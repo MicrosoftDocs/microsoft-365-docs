@@ -76,7 +76,16 @@ Integrate Reflect into D2L Brightspace to create impactful check-ins, gain wellb
 1. Enter **Microsoft Reflect** as the **Name**.
 1. For the **URL**, access the [Microsoft LTI Registration Portal](https://lti.microsoft.com/registration) and copy the **Redirect URL** from your *Reflect for D2L Brightspace* registration.
 1. Select **Save and Close** to create the link.
-
+1. Navigate to **Admin Tools** > **Navigation & Themes**.
+1. Select **Standard Course Navigation**, and then **Add Links**.
+1. Select **Create Custom Link**.
+1. Enter **Microsoft Reflect** as the **Name**.
+1. For the **URL**, select **Insert Quicklink**, and then **Microsoft Reflect**.
+1. Select **Same window** for **Behavior**.
+1. Select **Create**.
+1. Ensure that the **Microsoft Reflect** checkbox is selected, and then select **Add**.
+1. Drag the Microsoft Reflect link to your preferred location in the course navigation.
+1. Select **Save and Close**. 
 
 Reflect is now installed and ready to use in any course in your Schoology instance.
 
