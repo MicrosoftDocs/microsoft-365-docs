@@ -76,7 +76,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
 1. On the Team settings page, define your team structure by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
 
-    :::image type="content" source="media/team-settings.png" alt-text="Screenshot of team settings options showing the prefix, team template, and team owner fields." lightbox="media/team-settings.png":::
+    :::image type="content" source="media/dtas-team-settings.png" alt-text="Screenshot of team settings options showing the prefix, team template, and team owner fields." lightbox="media/dtas-team-settings.png":::
 
 1. Optionally, choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more about team templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
 
@@ -91,7 +91,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
 1. On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
-    :::image type="content" source="media/frontine-attributes.png" alt-text="Screenshot showing where to map your Microsoft Entra attributes for Job title and Department." lightbox="media/frontline-attributes.png":::
+    :::image type="content" source="media/dtas-frontine-attributes.png" alt-text="Screenshot showing where to map your Microsoft Entra attributes for Job title and Department." lightbox="media/dtas-frontline-attributes.png":::
 
     These attributes map departments and job titles in your organization, which allows you to deliver targeted communications features, such as automatic tags, to your frontline. Your frontline workers can quickly and easily reach the right group of people through tags that are automatically created based on the attribute mappings. [Learn more about attribute mapping and targeted communications](set-up-targeted-communications.md).
 
