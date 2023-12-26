@@ -75,7 +75,7 @@ Reflect is now installed and ready to use on your Moodle site after teachers add
 1. Navigate back to the course, ensure you are in **Edit mode**, and select **Add an activity or resource** in the **General** section.
 1. Search for **Microsoft Reflect** and select it.
 1. Enter **Microsoft Reflect** as the **Activity name**.
-1. Select **Save and return to course**..
+1. Select **Save and return to course**.
 
 Reflect is now installed and ready to use in your course by both teachers and students.
 
