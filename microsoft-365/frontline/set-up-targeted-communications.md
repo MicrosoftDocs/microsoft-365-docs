@@ -24,7 +24,7 @@ ms.date:
 
 ## Overview
 
-Setting up targeted communications enables you to deliver personalized communications experiences, such as [automatic tags](#automatic-tags), to your frontline teams.
+Setting up targeted communications in Microsoft Teams enables you to deliver personalized communications experiences, such as [automatic tags](#automatic-tags), to your frontline teams.
 
 To set up targeted communications, you identify and map your frontline attributes by choosing a Microsoft Entra attribute for **Department** and **Job title** that represents the departments and job titles in your organization. The mapped attribute values, which are pulled from user profile data stored in Microsoft Entra ID, are used to identify, and target communications to specific groups of people based on their department or job title.
 
@@ -35,7 +35,7 @@ Streamline and simplify communications for your frontline. After you map your at
 Your frontline teams must be created through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
 
 > [!NOTE]
-> Mapping frontline attributes is part of the setup process when you deploy frontline dynamic teams. It's an optional step. If you want to allow your frontline to easily reach each other by department or job title, map your attributes.
+> Mapping frontline attributes is part of the setup process when you deploy frontline dynamic teams. It's an optional step. If you want to allow your frontline to easily reach each other by department or job title, map your attributes to enable targeted communications.
 >
 > If you already deployed your frontline dynamic teams and you want to enable targeted communications, rerun the experience, and map your attributes.
 
