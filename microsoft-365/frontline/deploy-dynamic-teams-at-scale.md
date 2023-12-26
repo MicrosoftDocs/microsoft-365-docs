@@ -68,15 +68,15 @@ When evaluating the right solution for your organization, we recommend you do th
 
 1. On the Identify your frontline workers page, select the Microsoft Entra attribute that defines your frontline workers. You can only choose one Microsoft Entra attribute, but you can define multiple values by separating them with commas.
 
-    :::image type="content" source="media/dtas-frontline-attribute.png" alt-text="Screenshot of where to enter your Microsoft Entra attribute and values for frontline workers." lightbox="media/dtas-frontline-attribute.png":::
+    :::image type="content" source="media/dtas-identify-frontline-workers.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute and values to identify your frontline workforce." lightbox="media/dtas-identify-frontline-workers.png":::
 
 1. On the Location page, select the Microsoft Entra attribute that defines the location your frontline employees work in. You can only choose one location attribute.
 
-    :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot of where to enter your Microsoft Entra attribute for frontline locations." lightbox="media/dtas-location-attribute.png":::
+    :::image type="content" source="media/dtas-location.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/dtas-location.png":::
 
 1. On the Team settings page, define your team structure by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
 
-    :::image type="content" source="media/dtas-prefix.png" alt-text="Screenshot of the prefix, team template, and team owner account fields." lightbox="media/dtas-prefix.png":::
+    :::image type="content" source="media/team-settings.png" alt-text="Screenshot of team settings options showing the prefix, team template, and team owner fields." lightbox="media/team-settings.png":::
 
 1. Optionally, choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more about team templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
 
@@ -91,6 +91,8 @@ When evaluating the right solution for your organization, we recommend you do th
 
 1. On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
+    :::image type="content" source="media/frontine-attributes.png" alt-text="Screenshot showing where to map your Microsoft Entra attributes for Job title and Department." lightbox="media/frontline-attributes.png":::
+
     These attributes map departments and job titles in your organization, which allows you to deliver targeted communications features, such as automatic tags, to your frontline. Your frontline workers can quickly and easily reach the right group of people through tags that are automatically created based on the attribute mappings. [Learn more about attribute mapping and targeted communications](set-up-targeted-communications.md).
 
     > [!NOTE]
@@ -101,7 +103,7 @@ When evaluating the right solution for your organization, we recommend you do th
     > [!NOTE]
     > Setup can take several hours to run. Refresh the Manage frontline teams page to get the latest status.
 
-    :::image type="content" source="media/dtas-setup-submitted.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup was submitted." lightbox="media/dtas-setup-submitted.png":::
+    :::image type="content" source="media/dtas-setup-in-progress.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup is in progress." lightbox="media/dtas-setup-in-progress.png":::
 
 ## Deploy your frontline dynamic teams
 
