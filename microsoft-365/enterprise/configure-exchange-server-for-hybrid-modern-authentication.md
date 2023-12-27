@@ -14,6 +14,7 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - scotvorg
 - M365-security-compliance
+- must-keep
 f1.keywords:
 - NOCSH
 description: Learn how to configure an Exchange Server on-premises to use Hybrid Modern Authentication (HMA), offering you more secure user authentication and authorization.

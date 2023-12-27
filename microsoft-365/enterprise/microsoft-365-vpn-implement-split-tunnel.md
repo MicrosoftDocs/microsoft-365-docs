@@ -15,6 +15,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
+- must-keep
 f1.keywords:
 - NOCSH
 description: "How to implement VPN split tunneling for Microsoft 365"

@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
+- must-keep
 ms.custom:
 
 description: Understand the Contoso Corporation as a business and the tiered structure of its worldwide offices.

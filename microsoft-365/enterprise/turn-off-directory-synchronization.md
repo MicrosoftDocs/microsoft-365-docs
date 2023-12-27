@@ -18,6 +18,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-identity-device-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150

@@ -15,6 +15,7 @@ ms.custom:
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Data Residency for SharePoint Online and OneDrive for Business

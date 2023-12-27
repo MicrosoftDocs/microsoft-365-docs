@@ -15,6 +15,7 @@ ms.custom:
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Overview and Definitions

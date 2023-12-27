@@ -12,6 +12,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-identity-device-management
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

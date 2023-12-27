@@ -16,6 +16,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
+- must-keep
 f1.keywords:
 - NOCSH
 description: "Special considerations for Stream and Teams events in VPN environments"

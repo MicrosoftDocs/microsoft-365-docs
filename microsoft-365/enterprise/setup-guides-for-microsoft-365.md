@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - SPO_Content
 - m365initiative-coredeploy
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365_Setup

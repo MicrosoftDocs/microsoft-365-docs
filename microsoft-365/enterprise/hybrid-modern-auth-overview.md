@@ -13,6 +13,7 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - scotvorg
 - M365-security-compliance
+- must-keep
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020

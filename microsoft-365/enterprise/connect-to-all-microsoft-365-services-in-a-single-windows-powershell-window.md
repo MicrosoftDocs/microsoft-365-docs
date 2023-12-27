@@ -11,6 +11,7 @@ ms.localizationpriority: high
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:

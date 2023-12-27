@@ -13,6 +13,7 @@ search.appverid:
 ms.collection:
 - scotvorg 
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:

@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-tenantmanagement
 - m365solution-overview
 - tenant-management
+- must-keep
 ms.custom:
 - Ent_Solutions
 description: "An overview of the planning, deployment, and ongoing operation of your Microsoft 365 tenants."

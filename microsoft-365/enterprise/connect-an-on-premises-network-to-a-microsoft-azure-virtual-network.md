@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

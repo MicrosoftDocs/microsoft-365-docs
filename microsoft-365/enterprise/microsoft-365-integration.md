@@ -16,6 +16,7 @@ ms.custom:
 ms.collection:
 - scotvorg
 - Ent_O365
+- must-keep
 search.appverid:
 - MET150
 - LYN150
