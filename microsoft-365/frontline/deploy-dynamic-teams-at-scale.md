@@ -74,7 +74,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-location.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/dtas-location.png":::
 
-1. On the Team settings page, define your team structure by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
+1. On the Team settings page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
 
     :::image type="content" source="media/dtas-team-settings.png" alt-text="Screenshot of team settings options showing the prefix, team template, and team owner fields." lightbox="media/dtas-team-settings.png":::
 
@@ -83,7 +83,7 @@ When evaluating the right solution for your organization, we recommend you do th
     > [!NOTE]
     > Currently, only team templates that are set to the English (United States) locale are supported. Keep in mind that the locale doesn't affect translation of the template or data residency. The locale setting is used only to distinguish between templates that have the same name that are created in different languages.
 
-1. Enter a user account object ID to be the team owner. This account will be the owner for all frontline teams. It's recommended to choose a shared account rather than an individual person.
+1. Enter the object ID of the user account who you want as the team owner. This account will be the owner of all frontline teams. We recommend you choose a shared account rather than an individual person.
     1. To get a user's object ID, go to the [Azure portal](https://portal.azure.com).
     1. Select **Microsoft Entra ID**.
     1. Select **Users**, and then choose your user.
@@ -96,7 +96,7 @@ When evaluating the right solution for your organization, we recommend you do th
     These attributes map departments and job titles in your organization, which allows you to deliver targeted communications features, such as automatic tags, to your frontline. Your frontline workers can quickly and easily reach the right group of people through tags that are automatically created based on the attribute mappings. [Learn more about attribute mapping and targeted communications](set-up-targeted-communications.md).
 
     > [!NOTE]
-    > This step is optional. If you choose to not map frontline attributes, leave the values as **None**. You can always come back and map them later.
+    > This step is optional. If you choose not to map frontline attributes, leave the values as **None**. You can always come back and map them later.
 
 1. Review your settings, and then choose **Finish setup.**
 
