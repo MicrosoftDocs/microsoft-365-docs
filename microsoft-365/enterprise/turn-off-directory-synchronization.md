@@ -3,7 +3,7 @@ title: "Turn off directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/18/2023
+ms.date: 12/28/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -48,4 +48,4 @@ To turn off Directory synchronization:
 >[!Note]
 >If you use this command, you must wait 72 hours before you can turn directory synchronization back on.
 
-Visit [Set-MsolDirSyncEnabled](https://learn.microsoft.com/en-us/powershell/module/msonline/set-msoldirsyncenabled) for more detailed information on cmdlet usage and switches.
+Visit [Set-MsolDirSyncEnabled](https://learn.microsoft.com/powershell/module/msonline/set-msoldirsyncenabled) for more detailed information on cmdlet usage and switches.
