@@ -48,5 +48,5 @@ By default, image tagging is available for libraries on all SharePoint sites. To
 
 3. On the **Manage Microsoft Syntex** page, select **Image tagging**.
 
-4. On the **Image tagging** page, select **No libraries**, and then select **Save**.
+4. On the **Image tagging** page, select **No sites**, and then select **Save**.
 
