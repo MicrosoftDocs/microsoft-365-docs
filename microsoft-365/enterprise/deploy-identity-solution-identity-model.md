@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
-ms.date: 12/27/2023
+ms.date: 12/28/2023
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
@@ -123,7 +123,7 @@ There are two types of managed authentication:
 
 ##### Password hash synchronization (PHS)
 
-With PHS, you synchronize your AD DS user accounts with Microsoft 365 and manage your users on-premises. Hashes of user passwords are synchronized from your AD DS to Microsoft Entra ID so that the users have the same password on-premises and in the cloud. This is the simplest way to enable authentication for AD DS identities in Microsoft Entra ID. 
+With PHS, you synchronize your AD DS user accounts with Microsoft 365 and manage your users on-premises. Hashes of user passwords are synchronized from your AD DS to Microsoft Entra ID so that the users have the same password on-premises and in the cloud. This is the simplest way to enable authentication for AD DS identities in Microsoft Entra ID.
 
 ![Password hash synchronization (PHS).](../media/plan-for-directory-synchronization/phs-authentication.png)
 
