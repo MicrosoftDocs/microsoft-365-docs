@@ -86,7 +86,7 @@ In this diagram:
     
 ## Add cross-premises connectivity
 
-The next deployment step is to create the cross-premises connection (if this applies to your solution). For cross-premises connections, a Azure gateway resides in a separate gateway subnet, which you must create and assign an address space. 
+The next deployment step is to create the cross-premises connection (if this applies to your solution). For cross-premises connections, an Azure gateway resides in a separate gateway subnet, which you must create and assign an address space. 
   
 When you plan for a cross-premises connection, you define and create an Azure gateway and connection to an on-premises gateway device.
   
