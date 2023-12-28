@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: bagol
 author: batamig
 manager: raynew
-ms.date: 08/29/2023
+ms.date: 12/28/2023
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -65,6 +65,7 @@ The following sections describe enhanced Defender for Identity features found in
 
 |Area |Description  |
 |---------|---------|
+| **Identities** area| In Microsoft Defender XDR, expand the **Identities** area to view a dashboard of graphs and widgets with commonly used data, all health issues for your Defender for Identity deployment, and links to commonly used tools and documentation. For more information, see [View the ITDR dashboard](/defender-for-identity/dashboard) and [Defender for Identity health issues](/defender-for-identity/health-alerts). |
 |**Identity page**     |  The Microsoft Defender XDR identity details page provides inclusive data about each identity, such as: <br><br>- Any associated alerts <br>- Active Directory account control<br>- Risky lateral movement paths<br>- A timeline of activities and alerts<br>- Details about observed locations, devices and groups. <br><br>For more information, see [Investigate users in Microsoft Defender XDR](investigate-users.md). |
 |**Device page**     | Microsoft Defender XDR alert evidence lists all devices and users connected to each suspicious activity.  Investigate further by selecting a specific device in an alert to access a device details page.  <br><br>For more information, see [Investigate devices in the Microsoft Defender for Endpoint Devices list](../defender-endpoint/investigate-machines.md). |
 |**Advanced hunting**     |  Microsoft Defender XDR helps you proactively search for threats and malicious activity by using advanced hunting queries. These powerful queries can be used to locate and review threat indicators and entities for both known and potential threats. <br><br>Build custom detection rules from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices. <br><br>For more information, see [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](advanced-hunting-overview.md).    |
@@ -95,7 +96,7 @@ The table below lists the changes in navigation between Microsoft Defender for I
 | **Group page**                 | Microsoft Defender XDR groups side pane                      |
 | **Alert page**                 | Microsoft Defender XDR alert details page <br><br>**Tip**: Use [alert tuning](investigate-alerts.md#tune-an-alert) to optimize the alerts you see in Microsoft Defender XDR.                        |
 | **Search**                     | Microsoft Defender XDR global search                                |
-| **Health center**              | **Settings** -> **Identities** -> **Health issues** -> **Global / Sensor health issues**                            |
+| **Health issues**              | Microsoft Defender XDR **Identities > Health issues**                          |
 | **Entity activities**          | - **Advanced hunting** <br>- Device page > **Timeline** <br>- Identity page > **Timeline** tab                                             |
 | **Settings**                   | **Settings** -> **Identities**                                       |
 | **Users and accounts**         | **Assets** -> **Identities**                                         |
