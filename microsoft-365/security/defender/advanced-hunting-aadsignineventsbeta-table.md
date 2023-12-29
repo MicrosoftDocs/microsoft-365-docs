@@ -46,7 +46,6 @@ Use this reference to construct queries that return information from the table. 
 |`Application`|`string`|Application that performed the recorded action|
 |`ApplicationId`|`string`|Unique identifier for the application|
 |`LogonType`|`string`|Type of logon session, specifically interactive, remote interactive (RDP), network, batch, and service|
-|`EndpointCall`|`string`|Information about the Microsoft Entra ID endpoint that the request was sent to and the type of request sent during sign in|
 |`ErrorCode`|`int`|Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit <https://aka.ms/AADsigninsErrorCodes>.|
 |`CorrelationId`|`string`|Unique identifier of the sign-in event|
 |`SessionId`|`string`|Unique number assigned to a user by a website's server for the duration of the visit or session|
@@ -70,8 +69,7 @@ Use this reference to construct queries that return information from the table. 
 |`AuthenticationRequirement`|`string`|Type of authentication required for the sign-in. Possible values: multiFactorAuthentication (MFA was required) and singleFactorAuthentication (no MFA was required).|
 |`TokenIssuerType`|`int`|Indicates if the token issuer is Microsoft Entra ID (0) or Active Directory Federation Services (1)|
 |`RiskLevelAggregated`|`int`|Aggregated risk level during sign-in. Possible values: 0 (aggregated risk level not set), 1 (none), 10 (low), 50 (medium), or 100 (high).|
-|`RiskLevelDuringSignIn`|`int`|User risk level at sign-in|
-|`RiskEventTypes`|`string`|Array of risk event types applicable to the event|
+|`RiskDetails`|`int`|Details about the risky state of the user that signed in|
 |`RiskState`|`int`|Indicates risky user state. Possible values: 0 (none), 1 (confirmed safe), 2 (remediated), 3 (dismissed), 4 (at risk), or 5 (confirmed compromised).|
 |`UserAgent`|`string`|User agent information from the web browser or other client application|
 |`ClientAppUsed`|`string`|Indicates the client app used|
