@@ -41,12 +41,12 @@ For information on other tables in the advanced hunting schema, see [the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Date and time when the event was recorded |
+| `Timestamp` | `datetime` | Date and time when the record was generated |
 | `LastSeenTime` | `datetime` | Date and time when the service last saw the device |
 | `DeviceId` | `string` | Unique identifier for the device in the service |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
 | `OSPlatform` | `string` | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
-| `AdditionalFields` | `string` | Additional information about the event  |
+| `AdditionalFields` | `dynamic` | Additional information about the entity or event |
 
 For example, to view devices affected by the [Log4Shell vulnerability](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) where the workaround mitigation hasn't been applied yet, or has been applied and is pending reboot, you can use the following query.
 
