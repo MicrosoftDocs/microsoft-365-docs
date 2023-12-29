@@ -3,7 +3,7 @@ title: "Microsoft 365 endpoints"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/30/2020
+ms.date: 12/19/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg 
 - M365-subscription-management
 - Strat_O365_Enterprise
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -27,7 +28,7 @@ description: For destination IP addresses and URLs for Microsoft 365 traffic, us
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Endpoints are the set of destination IP addresses, DNS domain names, and URLs for Microsoft 365 traffic on the Internet. 
+Endpoints are the set of destination IP addresses, DNS domain names, and URLs for Microsoft 365 traffic on the Internet.
 
 To optimize performance to Microsoft 365 cloud-based services, these endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, TLS Break and Inspect and packet inspection devices, and  data loss prevention systems.
 
@@ -50,4 +51,8 @@ For more endpoints, see these articles:
 - [Additional endpoints not included in the Web service](additional-office365-ip-addresses-and-urls.md)
 - [Network requests in Office 2016 for Mac](network-requests-in-office-2016-for-mac.md)
 
-If you're a network equipment vendor, join the [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). Enroll in the program to build Microsoft 365 network connectivity principles into your products and solutions. 
+If you're a network equipment vendor, join the [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). Enroll in the program to build Microsoft 365 network connectivity principles into your products and solutions.
+
+## See also
+
+[Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
