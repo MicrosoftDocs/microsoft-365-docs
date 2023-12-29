@@ -45,7 +45,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Date and time when the event was recorded |
+| `Timestamp` | `datetime` | Date and time when the record was generated |
 | `AlertId` | `string` | Unique identifier for the alert |
 | `Title` | `string` | Title of the alert |
 | `Category` | `string` | Type of threat indicator or breach activity identified by the alert |
