@@ -55,7 +55,9 @@ The following steps guide you on how to import roles into Microsoft Defender XDR
     :::image type="content" source="../../media/defender/m365-defender-import-workloads.png" alt-text="Screenshot of the import workloads page" lightbox="../../media/defender/m365-defender-import-workloads.png":::
 
 6. Select **Next** to choose the roles to import. You can choose all roles or select specific roles from the list. You can always repeat the import action and import other roles at a later date.
-7. Review the roles you want to import and select **Submit**.
+1. Review the roles you want to import by pressing the role name. The role details will appear - permissions and assigned users or user groups.
+1. A role that includes an assignment that was removed from Entra ID, will not be eligible for import and will be displayed separately from other eligible roles for import.
+1. Select the roles you want to import and press **Submit**.
 8. A confirmation message appears and at this point you select **Done**.
 
 Now that you have imported your roles you will be able to [View and edit roles](edit-delete-rbac-roles.md) and activate the workloads.
@@ -72,3 +74,4 @@ Imported roles appear in the **Permissions and roles** list together with any cu
 - [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
 - [Edit or delete roles](edit-delete-rbac-roles.md)
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
+
