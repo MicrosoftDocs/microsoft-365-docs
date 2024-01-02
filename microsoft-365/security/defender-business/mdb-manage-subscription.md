@@ -1,6 +1,6 @@
 ---
-title: Manage your Microsoft Defender for Endpoint subscription settings across client devices
-description: Learn about your options for managing your Defender for Endpoint subscription settings. Choose Plan 1, Plan 2, or mixed mode.
+title: Manage your endpoint subscription settings across client devices
+description: Learn about your options for managing your Defender for Business or Defender for Endpoint subscription settings. Choose between Defender for Endpoint or Defender for Business.
 search.appverid: MET150  
 author: denisebmsft
 ms.author: deniseb
