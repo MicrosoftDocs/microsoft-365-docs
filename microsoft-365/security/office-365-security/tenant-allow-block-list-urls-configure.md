@@ -52,7 +52,7 @@ This article describes how admins can manage entries for URLs in the Microsoft D
 - An entry should be active within 5 minutes.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - Public Preview: [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**.
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - *Add and remove entries from the Tenant Allow/Block List*: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).
