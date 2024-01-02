@@ -269,9 +269,7 @@
                  - name: Refine your query in guided mode
                    href: advanced-hunting-query-builder-details.md
                  - name: Work with query results in guided mode
-                   href: advanced-hunting-query-builder-results.md
-                 - name: Rerun queries in query history
-                   href: advanced-hunting-query-history.md                                       
+                   href: advanced-hunting-query-builder-results.md                                   
              - name: Create queries using advanced mode
                items:
                  - name: Learn, train, & get examples
@@ -292,6 +290,8 @@
                        href: advanced-hunting-migrate-from-mde.md                
                  - name: Work with query results
                    href: advanced-hunting-query-results.md
+                 - name: Rerun queries in query history
+                   href: advanced-hunting-query-history.md                    
                  - name: Quickly investigate with go hunt
                    href: advanced-hunting-go-hunt.md
                  - name: Create custom functions 
