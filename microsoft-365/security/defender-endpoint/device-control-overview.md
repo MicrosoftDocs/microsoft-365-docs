@@ -28,7 +28,7 @@ Device control capabilities in Microsoft Defender for Endpoint enable your secur
 - Allow users to install and use specific devices
 - Allow users to install and use only [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/)-encrypted devices with Windows computers
 
-This list is intended to provide some examples. It's not an exhaustive list; there are other examples to consider (see the [use cases](#use-cases) section in this article). 
+This list is intended to provide some examples. It's not an exhaustive list; there are other examples to consider (see the [Microsoft device control scenarios](#microsoft-device-control-scenarios) section in this article). 
 
 Device control helps protect your organization from potential data loss, malware, or other cyberthreats by allowing or preventing certain devices to be connected to users' computers. With device control, your security team can determine whether and what peripheral devices users can install and use on their computers. 
 
@@ -62,7 +62,7 @@ Device control organizes supported devices into types by their `primary_id`. On 
 | USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` |
 | Windows Portable Devices | `WpdDevices` |  |
 
-## Use cases
+## Microsoft device control scenarios
 
 This section lists scenarios and use cases for device control. Select a tab, review the scenarios, and then identify the type of device control policy to create.
 
