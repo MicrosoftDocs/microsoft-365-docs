@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/08/2022
+ms.date: 12/27/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
 - scotvorg
 - M365-subscription-management
+- must-keep
 ms.custom: 
 - it-pro
 - intro-overview
@@ -32,7 +33,7 @@ Microsoft 365 for enterprise consists of:
 |Services|Description|
 |---|---|
 |Local apps and cloud-based apps and productivity services|Includes both Microsoft 365 Apps for enterprise, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more.|
-|Windows 10 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
+|Windows 11 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
 |Device management and advanced security services|Includes Microsoft Intune, which is a cloud-based enterprise mobility management service that helps enable your workforce to be productive while protecting your organization data.|
 
 ## Plans

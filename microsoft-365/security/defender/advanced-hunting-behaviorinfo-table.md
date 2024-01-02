@@ -45,16 +45,16 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Date and time when the event was recorded |
+| `Timestamp` | `datetime` | Date and time when the record was generated |
 | `BehaviorId` | `string` | Unique identifier for the behavior|
 | `ActionType` | `string` | Type of behavior |
 | `Description` | `string` | Description of the behavior |
-| `Categories` | `list` | Type of threat indicator or  breach activity identified by the behavior|
-| `AttackTechniques` | `string` | MITRE ATT&CK techniques associated with the activity that triggered the alert |
+| `Categories` | `string` | Type of threat indicator or  breach activity identified by the behavior|
+| `AttackTechniques` | `string` | MITRE ATT&CK techniques associated with the activity that triggered the behavior |
 | `ServiceSource` | `string` | Product or service that identified the behavior |
 | `DetectionSource` | `string` | Detection technology or sensor that identified the notable component or activity |
-| `DataSources` | `list` | Products or services that provided information for the behavior |
-| `DeviceId` | `string` | Unique identifier for the machine in the service |
+| `DataSources` | `string` | Products or services that provided information for the behavior |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `StartTime` | `datetime` | Date and time of the first activity related to the behavior|

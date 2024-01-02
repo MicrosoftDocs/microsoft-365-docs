@@ -3,7 +3,7 @@ title: "Configure Microsoft 365 user account properties with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 12/19/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -78,7 +79,7 @@ For additional parameters, see [Set-AzureADUser](/powershell/module/azuread/set-
 > [!NOTE]
 > Before you can assign licenses to a user account, you must assign a usage location.
 
-To display the User Principal Name for your user accounts, run the following command.
+To display the User Principal Name (UPN) for your user accounts, run the following command.
   
 ```powershell
 Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName | More
@@ -88,27 +89,27 @@ This command instructs PowerShell to:
   
 1. Get all the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
 
-1. Sort the list of User Principal Names alphabetically (**Sort UserPrincipalName**) and send it to the next command (**|**).
+1. Sort the list of UPNs alphabetically (**Sort UserPrincipalName**) and send it to the next command (**|**).
 
-1. Display just the User Principal Name property for each account (**Select UserPrincipalName**).
+1. Display just the UPN property for each account (**Select UserPrincipalName**).
 
 1. Display them one screen at a time (**More**).
 
-To display the User Principal Name for an account based on its display name (first and last name), run the following commands. Fill in the *$userName* variable, and remove the \< and > characters:
+To display the UPN for an account based on its display name (first and last name), run the following commands. Fill in the *$userName* variable, and remove the \< and > characters:
   
 ```powershell
 $userName="<Display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-This example displays the User Principal Name for the user account that has the display name *Caleb Sills*.
+This example displays the UPN for the user account that has the display name *Caleb Sills*.
   
 ```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-By using a *$upn* variable, you can make changes to individual accounts based on their display name. Here's an example that sets *Belinda Newman*'s usage location to France. But it specifies her display name rather than her User Principal Name:
+By using a *$upn* variable, you can make changes to individual accounts based on their display name. Here's an example that sets *Belinda Newman*'s usage location to France. But it specifies her display name rather than her UPN:
   
 ```powershell
 $userName="Belinda Newman"
@@ -142,7 +143,7 @@ This command instructs PowerShell to:
   
 1. Get all the information on the user accounts (**Get-AzureADUser**), and send it to the next command (**|**).
 
-1.  Find all the user accounts that have their *Department* property set to "Accounting" (**Where {$_.Department -eq "Accounting"}**), and send the resulting information to the next command (**|**).
+1. Find all the user accounts that have their *Department* property set to "Accounting" (**Where {$_.Department -eq "Accounting"}**), and send the resulting information to the next command (**|**).
 
 1. Set the user location to France (**Set-AzureADUser -UsageLocation FR**).
 
@@ -157,7 +158,7 @@ First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershel
 
 ### Change properties for a specific user account
 
-To configure properties for a specific user account, use the [**Set-MsolUser**](/previous-versions/azure/dn194136(v=azure.100)) cmdlet and specify the properties to set or change. 
+To configure properties for a specific user account, use the [**Set-MsolUser**](/previous-versions/azure/dn194136(v=azure.100)) cmdlet and specify the properties to set or change.
 
 You identify the account with the *-UserPrincipalName* parameter and set or change specific properties by using additional parameters. Here's a list of the most common parameters.
   
@@ -197,7 +198,7 @@ You identify the account with the *-UserPrincipalName* parameter and set or chan
 
 For additional parameters, see [Set-MsolUser](/previous-versions/azure/dn194136(v=azure.100)).
 
-To see the User Principal Names of all your users, run the following command:
+To see the UPNs of all your users, run the following command:
   
 ```powershell
 Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName | More
@@ -207,27 +208,27 @@ This command instructs PowerShell to:
   
 1. Get all of information for the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
 
-1. Sort the list of User Principal Names alphabetically (**Sort UserPrincipalName**) and send it to the next command (**|**).
+1. Sort the list of UPNs alphabetically (**Sort UserPrincipalName**) and send it to the next command (**|**).
 
-1. Display just the User Principal Name property for each account (**Select UserPrincipalName**).
+1. Display just the UPN property for each account (**Select UserPrincipalName**).
 
 1. Display them one screen at a time (**More**).
 
-To display the User Principal Name for an account based on its display name (first and last name), run the following commands. Fill in the *$userName* variable, and remove the \< and > characters.
+To display the UPN for an account based on its display name (first and last name), run the following commands. Fill in the *$userName* variable, and remove the \< and > characters.
   
 ```powershell
 $userName="<Display name>"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-This example displays the User Principal Name for the user named Caleb Sills:
+This example displays the UPN for the user named Caleb Sills:
   
 ```powershell
 $userName="Caleb Sills"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-By using a *$upn* variable, you can make changes to individual accounts based on their display name. Here's an example that sets *Belinda Newman*'s usage location to *France*, but specifies her display name rather than her User Principal Name:
+By using a *$upn* variable, you can make changes to individual accounts based on their display name. Here's an example that sets *Belinda Newman*'s usage location to *France*, but specifies her display name rather than her UPN:
   
 ```powershell
 $userName="<display name>"
