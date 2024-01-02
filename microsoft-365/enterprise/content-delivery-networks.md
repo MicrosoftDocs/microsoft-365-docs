@@ -3,7 +3,7 @@ title: "Content delivery networks"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 12/27/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -12,6 +12,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365

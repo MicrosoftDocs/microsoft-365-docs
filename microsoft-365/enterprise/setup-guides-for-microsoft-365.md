@@ -3,7 +3,7 @@ title: "Advanced deployment guides for Microsoft 365 and Office 365 products"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 12/19/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - SPO_Content
 - m365initiative-coredeploy
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365_Setup
