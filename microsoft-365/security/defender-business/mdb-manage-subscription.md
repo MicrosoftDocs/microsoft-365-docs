@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 01/02/2023
+ms.date: 01/02/2024
 ms.service: defender-business
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav, efratka
