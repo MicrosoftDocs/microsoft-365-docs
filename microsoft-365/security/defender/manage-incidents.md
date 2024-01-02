@@ -64,7 +64,7 @@ In cases where you want to move alerts from one incident to another, you can als
 
 ## Edit the incident name
 
-Microsoft Defender XDR automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+Microsoft Defender XDR automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. The incident name allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
 You can edit the incident name from the **Incident name** field on the **Manage incident** pane.
 
@@ -75,11 +75,11 @@ You can edit the incident name from the **Incident name** field on the **Manage 
 
 You can add custom tags to an incident, for example to flag a group of incidents with a common characteristic. You can later filter the incident queue for all incidents that contain a specific tag.
 
-When you start typing, you have the option to select from a list of previously-used and selected tags.
+The option to select from a list of previously-used and selected tags appear after you start typing.
 
 ## Assign an incident
 
-If an incident has not yet been assigned, you can select the **Assign to** box and specify the user account. To re-assign an incident, remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. Assigning ownership of an incident assigns the same ownership to all the alerts associated with it.
+You can select the **Assign to** box and specify the user account to assign an incident. To reassign an incident, remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. Assigning ownership of an incident assigns the same ownership to all the alerts associated with it.
 
 You can get a list of incidents assigned to you by filtering the incident queue. 
 
@@ -91,9 +91,9 @@ You can then save the resulting URL in your browser as a bookmark to quickly see
 
 ## Resolve an incident
 
-If the incident has been remediated, select **Resolve incident** to move the toggle to the right. Note that resolving an incident also resolves all the linked and active alerts related to the incident.
+Select **Resolve incident** to move the toggle to the right when an incident is remediated. Resolving an incident also resolves all the linked and active alerts related to the incident.
 
-An incident that is not resolved displays as **Active**.
+An incident that isn't resolved displays as **Active**.
 
 ## Specify the classification
 
@@ -102,7 +102,7 @@ From the **Classification** field, you specify whether the incident is:
 - **Not set** (the default).
 - **True positive** with a type of threat. Use this classification for incidents that accurately indicate a real threat. Specifying the threat type helps your security team see threat patterns and act to defend your organization from them.
 - **Informational, expected activity** with a type of activity. Use the options in this category to classify incidents for security tests, red team activity, and expected unusual behavior from trusted apps and users.
-- **False positive** for types of incidents that you determine can be ignored because they are technically inaccurate or misleading.
+- **False positive** for types of incidents that you determine can be ignored because they're technically inaccurate or misleading.
 
 Classifying incidents and specifying their status and type helps tune Microsoft Defender XDR to provide better detection determination over time.
 
@@ -118,7 +118,7 @@ The **Activity log** displays a list of all the comments and actions performed o
 
 :::image type="content" source="../../media/incidents-queue/fig3-manageincidents.png" alt-text="Highlighting the activity log option from the incident page in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig3-manageincidents.png":::
 
-You can filter the activities within the log by comments and actions. To do this, click the **Content: Audits, Comments** then select the content type.
+You can filter the activities within the log by comments and actions. Click the **Content: Audits, Comments** then select the content type to filter activities. Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/fig4-manageincidents.png" alt-text="Highlighting the filter options within the activity log pane from the incident page in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig4-manageincidents.png":::
 
