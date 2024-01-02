@@ -19,13 +19,13 @@ ms.collection:
 
 # Change your endpoint security subscription
 
-Microsoft Defender for Business and Microsoft Defender for Endpoint are endpoint security subscriptions that your organization can use to protect devices, such as computers, tablets, and phones. As your organization grows, you might have a mix of subscriptions and licenses. For example, you might have some Defender for Business licenses, and some Defender for Endpoint licenses. 
+[Microsoft Defender for Business](mdb-overview.md) and [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) are endpoint security subscriptions that your organization can use to protect devices, such as computers, tablets, and phones. As your organization grows, you might have a mix of subscriptions and licenses. For example, you might have some Defender for Business licenses, and some Defender for Endpoint licenses. 
 
 This article describes how apply either Defender for Business or Defender for Endpoint Plan 2 features and capabilities across all your organization's devices. (To learn more about mixed-licensing scenarios with Defender for Endpoint Plan 1 and Plan 2, see [Manage Microsoft Defender for Endpoint subscription settings across client devices](../defender-endpoint/defender-endpoint-subscription-settings.md).)
 
 ## Before you begin
 
-- You should have active trial or paid licenses for both Defender for Business and Defender for Endpoint Plan 2. If you're using Defender for Business only, you can continue using it.[Configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md)
+- You should have active trial or paid licenses for both Defender for Business and Defender for Endpoint Plan 2. If you're using Defender for Business only, you can continue using it. This article applies to customers who are considering switching to Defender for Endpoint Plan 2.
 
 - To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
    
