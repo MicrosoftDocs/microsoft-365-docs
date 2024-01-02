@@ -3,7 +3,7 @@ title: "View Microsoft 365 user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/17/2020
+ms.date: 12/19/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection:
 - scotvorg 
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -84,8 +85,8 @@ Get-AzureADUser | Select DisplayName,Department,UsageLocation
 This command instructs PowerShell to:
   
 1. Get all the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
-    
-1.  Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
+
+1. Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
   
 To see all the properties for a specific user account, use the **Select** cmdlet and the wildcard character (*). Here's an example:
   
@@ -101,13 +102,13 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 
 ### View account synchronization status
 
-User accounts have two sources: 
+User accounts have two sources:
 
 - Windows Server Active Directory (AD), which are accounts that sync from on-premises AD to the cloud.
 
 - Microsoft Entra accounts, which are created directly in the cloud.
 
-You can use the following command to find accounts that are synchronizing from **on-premise** AD. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*. 
+You can use the following command to find accounts that are synchronizing from **on-premise** AD. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*.
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
@@ -131,9 +132,9 @@ Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 This command instructs Azure Active Directory PowerShell for Graph to:
   
 1. Get all the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
-    
+
 1. Find all the user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**). Inside the braces, the command instructs PowerShell to only find the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
-    
+
 The **UsageLocation** property is only one of many properties associated with a user account. To display all the properties for a specific user account, use the **Select** cmdlet and the wildcard character (*). Here's an example:
   
 ```powershell
@@ -213,9 +214,9 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null}
 This command instructs PowerShell to:
   
 1. Get all the information on the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
-    
+
 1. Find all user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**). Inside the braces, the command instructs PowerShell to find only the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
-    
+
 You should get information similar to this:
   
 ```powershell
@@ -266,9 +267,9 @@ Get-MsolUser | Select DisplayName, Department, UsageLocation
 This command instructs PowerShell to:
   
 1. Get all the information about the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
-    
+
 1. Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
-    
+
 You should get information similar to this:
   
 ```powershell
@@ -297,11 +298,11 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Departme
 This command instructs PowerShell to:
   
 1. Get all the information about the user accounts (**Get-MsolUser**) and send it to the next command (**|**).
-    
+
 1. Find all user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**), and send the resulting information to the next command (**|**). Inside the braces, the command instructs PowerShell to only find the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
-    
+
 1. Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
-    
+
 You should get information similar to this:
   
 ```powershell
