@@ -290,6 +290,8 @@
                        href: advanced-hunting-migrate-from-mde.md                
                  - name: Work with query results
                    href: advanced-hunting-query-results.md
+                 - name: Rerun query in query history
+                   href: advanced-hunting-query-history.md                   
                  - name: Quickly investigate with go hunt
                    href: advanced-hunting-go-hunt.md
                  - name: Create custom functions 
