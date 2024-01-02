@@ -26,7 +26,7 @@ description: Learn about available options to create a more secure guest sharing
 
 # Create a more secure guest sharing environment
 
-In this article, we walk through a variety of options for creating a more secure guest sharing environment in Microsoft 365. These are examples to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
+In this article, we walk through various options for creating a more secure guest sharing environment in Microsoft 365. These are examples to give you an idea of the options available. You can use these procedures in different combinations to meet the security and compliance needs of your organization.
 
 This article includes:
 
@@ -66,7 +66,7 @@ To set up multifactor authentication for guests
 1. On the **Grant** blade, select the **Require multifactor authentication** check box, and then click **Select**.
 1. Under **Enable policy**, select **On**, and then select **Create**.
 
-Now, guest will be required to enroll in multifactor authentication before they can access shared content, sites, or teams.
+Now, guests are required to enroll in multifactor authentication before they can access shared content, sites, or teams.
 
 ### More information
 
@@ -74,7 +74,7 @@ Now, guest will be required to enroll in multifactor authentication before they 
 
 ## Set up a terms of use for guests
 
-In some situations guests may not have signed non-disclosure agreements or other legal agreements with your organization. You can require guests to agree to a terms of use before accessing files that are shared with them. The terms of use can be displayed the first time they attempt to access a shared file or site.
+In some situations, guests may not have signed non-disclosure agreements or other legal agreements with your organization. You can require guests to agree to a terms of use before accessing files that are shared with them. The terms of use can be displayed the first time they attempt to access a shared file or site.
 
 To create a terms of use, you first need to create the document in Word or another authoring program, and then save it as a .pdf file. This file can then be uploaded to Microsoft Entra ID.
 
@@ -112,7 +112,7 @@ To create a conditional access policy
 1. On the **Grant** blade, select the check box for the terms of use that you created, and then click **Select**.
 1. Under **Enable policy**, select **On**, and then select **Create**.
 
-Now, the first time a guest attempts to access content or a team or site in your organization, they will be required to accept the terms of use.
+Now, the first time a guest attempts to access content or a team or site in your organization, they'll be required to accept the terms of use.
 
 ### More information
 
@@ -122,7 +122,7 @@ Now, the first time a guest attempts to access content or a team or site in your
 
 ## Set up guest access reviews
 
-With access reviews in Microsoft Entra ID, you can automate a periodic review of user access to various teams and groups. By requiring an access review for guests specifically, you can help ensure guests do not retain access to your organization's sensitive information for longer than is necessary.
+With access reviews in Microsoft Entra ID, you can automate a periodic review of user access to various teams and groups. By requiring an access review for guests specifically, you can help ensure guests don't retain access to your organization's sensitive information for longer than is necessary.
 
 To set up a guest access review
 
@@ -157,7 +157,7 @@ To set up a guest access review
 
 ## Set up web-only access for guests with unmanaged devices
 
-If your guests use devices that are not managed by your organization or another organization that you have a trust relationship with, you can require them to access your teams, sites, and files by using a web browser only. This reduces the chance that they might download sensitive files and leave them on an unmanaged device. This is also useful when sharing with environments that use shared devices.
+If your guests use devices that aren't managed by your organization or another organization that you have a trust relationship with, you can require them to access your teams, sites, and files by using a web browser only. This reduces the chance that they might download sensitive files and leave them on an unmanaged device. This is also useful when sharing with environments that use shared devices.
 
 For Microsoft 365 Groups and Teams, this is done with a Microsoft Entra Conditional Access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](/purview/sensitivity-labels-teams-groups-sites).)
 
@@ -214,7 +214,7 @@ To configure a guest session timeout policy
 
 Sensitive information types are predefined strings that can be used in policy workflows to enforce compliance requirements. The Microsoft Purview compliance portal comes with over one hundred sensitive information types, including driver's license numbers, credit card numbers, bank account numbers, etc.
 
-You can create custom sensitive information types to help manage content specific to your organization. In this example, we'll create a custom sensitive information type for a highly sensitive project. We can then use this sensitive information type to automatically apply a sensitivity label.
+You can create custom sensitive information types to help manage content specific to your organization. In this example, we create a custom sensitive information type for a highly sensitive project. We can then use this sensitive information type to automatically apply a sensitivity label.
 
 To create a sensitive information type
 
@@ -235,7 +235,7 @@ For more information, see [Learn about sensitive information types](/purview/sen
 
 ## Create an auto-labeling policy to assign a sensitivity label based on a sensitive information type
 
-If you are using sensitivity labels in your organization, you can automatically apply a label to files that contain defined sensitive information types.
+If you're using sensitivity labels in your organization, you can automatically apply a label to files that contain defined sensitive information types.
 
 To create an auto-labeling policy
 
@@ -280,7 +280,7 @@ To create a DLP rule
 1. Select **Next**.
 1. Type a name for the policy and select **Next**.
 1. On the **Assign admin units** page, select **Next**.
-1. On the **Locations to apply the policy** page turn off all settings except **SharePoint sites** and **OneDrive accounts**, and then select **Next**.
+1. On the **Locations to apply the policy** page, turn off all settings except **SharePoint sites** and **OneDrive accounts**, and then select **Next**.
 1. On the **Define policy settings** page, select **Next**.
 1. On the **Customize advanced DLP rules** page, select **Create rule** and type a name for the rule.
 1. Under **Conditions**, select **Add condition**, and choose **Content is shared from Microsoft 365**.
