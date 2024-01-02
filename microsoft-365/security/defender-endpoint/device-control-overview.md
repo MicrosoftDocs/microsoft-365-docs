@@ -13,7 +13,6 @@ ms.collection:
 - m365-security
 - tier3
 - mde-asr
-ms.custom:     # Useful for querying on a specific set of articles.
 ms.reviewer: joshbregman
 search.appverid: MET150
 f1.keywords: NOCSH 
