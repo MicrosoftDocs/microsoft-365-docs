@@ -119,9 +119,6 @@ To create a DLP rule:
 7. On the **Customize advanced DLP rules** page, click **Create rule** and type a name for the rule.
 8. Under **Conditions**, click **Add condition**, and choose **Content contains**.
 9. Click **Add** and choose the type of information for which you want to prevent unauthenticated sharing.
-
-   ![Screenshot of conditions options, sensitive info types, sensitivity labels, and retention labels.](../media/limit-accidental-exposure-dlp-conditions.png)
-
 10. Under **Actions** click **Add an action** and choose **Restrict access or encrypt the content in Microsoft 365 locations**.
 11. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Only people who were given access to the content through the "Anyone with the link" options** option.
 
