@@ -1,7 +1,7 @@
 ---
 title: Take response actions on a file in Microsoft Defender for Endpoint
 description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
@@ -12,14 +12,14 @@ ms.collection:
 - tier2
 - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ms.date: 08/07/2023
 ---
 
 # Take response actions on a file
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

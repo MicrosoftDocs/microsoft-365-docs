@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: magarlan, chrigreen
+ms.reviewer: taylorau
 ms.date: 06/23/2023
 audience: Admin
 ms.topic: article
@@ -75,7 +75,7 @@ For certain actions in Lighthouse, role assignments in the partner tenant are re
 
 | Partner tenant roles | Permissions |
 |--|--|
-| Global Administrator of partner tenant | <ul><li>Sign up for Lighthouse in the Microsoft 365 admin center.</li><li>Accept partner contract amendments during the first-run experience.</li><li>Activate and inactivate a tenant.</li><li>Create, update, and delete tags.</li><li>Assign and remove tags from a customer tenant.</li><li>Review audit logs</li></ul> |
+| Global Administrator of partner tenant | <ul><li>Sign up for Lighthouse in the Microsoft 365 admin center.</li><li>Accept partner contract amendments during the first-run experience.</li><li>Activate and inactivate a tenant.</li><li>Create, update, and delete tags.</li><li>Assign and remove tags from a customer tenant.</li><li>Review audit logs.</li><li>Create, edit, and view alert rules.</li></ul> |
 | Partner tenant member with at least one Microsoft Entra role assigned with the following property set:<br>**microsoft.office365.supportTickets/allEntities/allTasks**<br>(For a complete list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).) | Create Lighthouse service requests. |
 | Partner tenant member who meets *both* of the following requirements: <ul><li>Has at least one Microsoft Entra role assigned with the following property set:<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(For a complete list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).)</li><li>Has at least one DAP role assigned (Admin Agent or Helpdesk Agent)</li></ul> | View service health information. |
 

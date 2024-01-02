@@ -2,7 +2,7 @@
 title: Investigate a user account in Microsoft Defender for Endpoint
 description: Investigate a user account for potential compromised credentials or pivot on the associated user account during an investigation.
 keywords: investigate, account, user, user entity, alert, Microsoft Defender for Endpoint
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - mde-edr
 ms.topic: conceptual
 ms.date: 04/24/2018
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 
 # Investigate a user account in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)

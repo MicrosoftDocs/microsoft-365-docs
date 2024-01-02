@@ -2,7 +2,7 @@
 title: Manage automation file uploads
 description: Enable content analysis and configure the file extension and email attachment extensions that will be submitted for analysis
 keywords: automation, file, uploads, content, analysis, file, extension, email, attachment
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,13 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 05/08/2023
 ---
 
 # Manage automation file uploads
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)

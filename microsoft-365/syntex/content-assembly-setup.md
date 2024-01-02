@@ -8,6 +8,7 @@ ms.reviewer: anrasto, shrganguly
 ms.date: 08/01/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid:
 ms.collection:
     - enabler-strategic
@@ -44,4 +45,4 @@ By default, content assembly is available for libraries on all SharePoint sites.
 
 3. On the **Manage Microsoft Syntex** page, select **Content assembly**.
 
-4. On the **Content assembly** page, select **No libraries**, and then select **Save**.
+4. On the **Content assembly** page, select **No sites**, and then select **Save**.

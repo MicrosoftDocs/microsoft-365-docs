@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint evaluation lab
 description: Learn about Microsoft Defender for Endpoint capabilities, run attack simulations, and see how it prevents, detects, and remediates threats.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -13,14 +13,13 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 11/02/2023
 ---
 
 # Microsoft Defender for Endpoint evaluation lab
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

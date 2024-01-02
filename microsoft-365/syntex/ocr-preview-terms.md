@@ -12,6 +12,7 @@ ms.custom:
 search.appverid: 
 ms.collection: 
 ms.localizationpriority: medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Read the Microsoft Syntex Optical Character Recognition (“OCR”) Feature Preview Agreement.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Create and manage custom detection rules in Microsoft Defender XDR
 description: Learn how to create and manage custom detections rules based on advanced hunting queries
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, rules, schema, kusto, RBAC, permissions, Microsoft Defender for Endpoint
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, rules, schema, kusto, RBAC, permissions, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -26,7 +26,7 @@ ms.date: 02/16/2021
 
 # Create and manage custom detections rules
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -171,7 +171,7 @@ Near real-time detections are supported for the following tables:
 - `DeviceProcessEvents`
 - `DeviceRegistryEvents`
 - `EmailAttachmentInfo`
-- `EmailEvents`
+- `EmailEvents` (except `LatestDeliveryLocation` and `LatestDeliveryAction` columns)
 - `EmailPostDeliveryEvents`
 - `EmailUrlInfo`
 - `IdentityDirectoryEvents`
@@ -314,4 +314,4 @@ In the rule details screen (**Hunting** \> **Custom detections** \> **[Rule name
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the advanced hunting query language](advanced-hunting-query-language.md)
 - [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

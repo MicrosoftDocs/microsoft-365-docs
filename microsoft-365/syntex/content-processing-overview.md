@@ -26,7 +26,7 @@ You'll choose a condition that triggers the rule and the action that the rule wi
 For example, you can create a rule to move files tagged with a specific customer to a specific library or folder. These rules help you structure your content architecture with the power of AI-driven processing.
 
 > [!NOTE]
-> This feature is available only for users who are licensed for Syntex.
+> This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
 ## Syntex processing rules
 

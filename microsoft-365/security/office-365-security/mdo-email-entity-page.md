@@ -26,7 +26,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Admins of Microsoft 365 E5, and Microsoft Defender for Office 365 Plan 1 and and Plan 2 have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered throughout Microsoft Defender for Office 365 and Microsoft Defender XDR.
+Admins of Microsoft 365 E5, and Microsoft Defender for Office 365 Plan 1 and Plan 2 have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered throughout Microsoft Defender for Office 365 and Microsoft Defender XDR.
 
 See email details in the experiences below, including [previewing and downloading the email](#email-preview-and-download-for-cloud-mailboxes), the email headers *with the option to copy*, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert ID, Network Message ID and more.
 

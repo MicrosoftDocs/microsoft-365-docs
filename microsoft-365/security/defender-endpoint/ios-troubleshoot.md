@@ -2,7 +2,7 @@
 title: Troubleshoot issues and find answers on FAQs related to Microsoft Defender for Endpoint on iOS
 description: Troubleshooting and FAQ - Microsoft Defender for Endpoint on iOS
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, troubleshoot, faq, how to
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,14 @@ ms.collection:
 - tier3
 - mde-ios
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ios
 search.appverid: met150
 ms.date: 05/15/2021
 ---
 
 # Troubleshoot issues and find answers to FAQs on Microsoft Defender for Endpoint on iOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)

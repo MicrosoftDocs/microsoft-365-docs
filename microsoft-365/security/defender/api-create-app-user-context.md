@@ -28,7 +28,7 @@ ms.date: 02/16/2021
 
 # Create an app to access Microsoft Defender XDR APIs on behalf of a user
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -164,4 +164,4 @@ The following example shows how to send a request to get a list of incidents **u
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
 - [OAuth 2.0 authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

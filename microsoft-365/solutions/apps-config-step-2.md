@@ -29,7 +29,7 @@ Outlook app configuration can be delivered by selecting either of the following 
 1. **Managed devices** - Select the mobile device management (MDM) OS channel.
     - **iOS**: Use an App Configuration Policy for iOS. For related information, see the [Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS.
     - **Android**: Use an App Configuration Policy for Android Enterprise. For related information, see the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android.
-2. **Unmanaged devices**: Select an Intune App Protection Policy (APP) channel (also know as the **MAM channel**).
+2. **Unmanaged devices**: Select an Intune App Protection Policy (APP) channel (also known as the **MAM channel**).
     - **iOS**: Use an App Protection Policy for iOS.
     - **Android**: Use an App Protection Policy for Android.
 
@@ -95,7 +95,7 @@ For more information on the settings that need to be configured to deploy organi
 
 ### Configuration process for managed devices
 
-When you create an app configuration policy to be apply to a managed device in Intune, you specifically choose **Managed devices**. Managed devices are those devices that are managed by Intune or other unified endpoint management provider. The app, in this case Microsoft Outlook, must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices. 
+When you create an app configuration policy to be applied to a managed device in Intune, you specifically choose **Managed devices**. Managed devices are those devices that are managed by Intune or other unified endpoint management provider. The app, in this case Microsoft Outlook, must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices. 
 
 For more information about creating an app configuration policy in Intune, see [Create an app configuration policy](/mem/intune/apps/app-configuration-policies-use-ios#create-an-app-configuration-policy) for iOS/iPadOS devices and [Create an app configuration policy](/mem/intune/apps/app-configuration-policies-use-android#create-an-app-configuration-policy) for Android Enterprise devices. In addition, see [Email apps](/mem/intune/apps/app-configuration-policies-use-android#email-apps) for Android Enterprise devices.
 

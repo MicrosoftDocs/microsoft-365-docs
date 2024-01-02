@@ -7,10 +7,10 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium
-ms.date: 06/29/2023
+ms.date: 11/30/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
@@ -32,18 +32,14 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 The green boxes in the following image depict what's included in Defender for Endpoint Plan 1:
 
-:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="What's inculded with Defender for Endpoint Plan 1" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
+:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="A diagram showing what's included with Defender for Endpoint Plan 1" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
 
 Use this guide to:
 
 - [Get an overview of what's included in Defender for Endpoint Plan 1](#defender-for-endpoint-plan-1-capabilities)
-- [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 - [Learn how to set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Get started using the Microsoft Defender portal, where you can view incidents and alerts, manage devices, and use reports about detected threats](mde-plan1-getting-started.md)
 - [Get an overview of maintenance and operations](manage-mde-post-migration.md)
-
-> [!TIP]
-> [Learn more about the differences between Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
 
 ## Defender for Endpoint Plan 1 capabilities
 
@@ -202,7 +198,6 @@ See [Microsoft licensing and product terms](https://www.microsoft.com/en-us/lice
 
 ## Next steps
 
-- [Compare Microsoft Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 - [Set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Get started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
 - [Manage Defender for Endpoint Plan 1](manage-mde-post-migration.md)

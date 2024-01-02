@@ -67,7 +67,7 @@ Users can't release their own messages that were quarantined as malware, regardl
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Protection settings**|||||
-|**Enable the common attachments filter** (_EnableFileFilter_)|Selected (`$true`)<sup>\*</sup>|Selected (`$true`)|Selected (`$true`)|For the list of file types in the common attachments filter, see [Common attachments filter in anti-malware policies](anti-malware-protection-about.md#common-attachments-filter-in-anti-malware-policies). <br><br> <sup>\*</sup> The common attachments filter is on by default in new anti-malware policies that you create in the Defender portal. The common attachments filter is off by default in the default anti-malware policy and in new policies that you create in PowerShell.|
+|**Enable the common attachments filter** (_EnableFileFilter_)|Selected (`$true`)<sup>\*</sup>|Selected (`$true`)|Selected (`$true`)|For the list of file types in the common attachments filter, see [Common attachments filter in anti-malware policies](anti-malware-protection-about.md#common-attachments-filter-in-anti-malware-policies). <br><br> <sup>\*</sup> The common attachments filter is **on** by default in new anti-malware policies that you create in the Defender portal or in PowerShell, and in the default anti-malware policy in organizations created after December 1, 2023.|
 |Common attachment filter notifications: **When these file types are found** (_FileTypeAction_)|**Reject the message with a non-delivery report (NDR)** (`Reject`)|**Reject the message with a non-delivery report (NDR)** (`Reject`)|**Reject the message with a non-delivery report (NDR)** (`Reject`)||
 |**Enable zero-hour auto purge for malware** (_ZapEnabled_)|Selected (`$true`)|Selected (`$true`)|Selected (`$true`)||
 |**Quarantine policy** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy||
@@ -320,7 +320,7 @@ For more information about Safe Links protection, see [Safe Links in Defender fo
 
 Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients who aren't defined in the Standard preset security policy, the Strict preset security policy or in custom Safe Links policies. For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
-To configure Sae Links policy settings, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
+To configure Safe Links policy settings, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
 
 In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) cmdlets for Safe Links policy settings.
 

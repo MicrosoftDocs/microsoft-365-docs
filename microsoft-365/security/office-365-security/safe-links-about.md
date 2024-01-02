@@ -103,7 +103,7 @@ You can only use a condition or exception once, but the condition or exception c
 
 Safe Links scans incoming email for known malicious hyperlinks. Scanned URLs are rewritten or _wrapped_ using the Microsoft standard URL prefix: `https://nam01.safelinks.protection..com`. After the link is rewritten, it's analyzed for potentially malicious content.
 
-After Safe Links rewrites a URL, the URL remains rewritten even if the message is _manually_ forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message aren't rewritten.
+After Safe Links rewrites a URL, the URL is rewritten even if the message is _manually_ forwarded or replied to. Wrapping is done per message recipient (both internal and external recipients). Additional links that are added to the forwarded or replied-to message are also rewritten.
 
 For _automatic_ forwarding by Inbox rules or SMTP forwarding, the URL isn't rewritten in the message that's intended for the final recipient _unless_ one of the following statements is true:
 

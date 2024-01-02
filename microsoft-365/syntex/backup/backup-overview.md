@@ -20,19 +20,22 @@ description: Learn about the backup and recovery capabilities for SharePoint, Ex
 # Overview of Microsoft 365 Backup (Preview)
 
 > [!NOTE]
+> Microsoft 365 Backup (Preview) is rolling out. When it is available worldwide, this message will be updated and you will be able to see and enable the feature in the Syntex billing setup flow in the Microsoft 365 admin center.
+<!---
+> [!NOTE]
 > This feature is currently in preview and subject to change and [limitations as defined](backup-limitations.md). Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
-
+--->
 ## About the preview
 
-Microsoft 365 Backup is currently in preview and will be rolling out to tenants in late 2023 or early 2024. You can set up billing for the product as described in [Set up Microsoft 365 Backup](backup-setup.md). Once Microsoft 365 Backup has been deployed and is available for use in your tenant, you'll see it in the Microsoft 365 admin center page under **Settings**.
+Microsoft 365 Backup is currently in preview and will begin rolling out to organizations in early 2024. You can set up billing for the product as described in [Set up Microsoft 365 Backup](backup-setup.md). Once Microsoft 365 Backup has been deployed and is available for use in your tenant, you'll see it in the Microsoft 365 admin center page under **Settings**.
 
 During the preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system.
 
-## Microsoft and third-party offerings
+## Microsoft and partner offerings
 
 This documentation outlines the Microsoft 365 Backup offering available in the Microsoft 365 admin center. We're partnering with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
 
-In the case of a third-party application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the third party's application. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences or workflows.
+In the case of a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner's application. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences or workflows.
 
 ## Scenarios and value proposition
 

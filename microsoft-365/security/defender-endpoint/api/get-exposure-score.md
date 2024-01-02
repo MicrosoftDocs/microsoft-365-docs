@@ -2,7 +2,7 @@
 title: Get exposure score
 description: Retrieves the organizational exposure score.
 keywords: apis, graph api, supported apis, get, exposure score, organizational exposure score
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # Get exposure score
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

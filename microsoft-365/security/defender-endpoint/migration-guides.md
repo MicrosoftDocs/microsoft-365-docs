@@ -6,7 +6,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.collection: 
 - m365-security
@@ -15,7 +15,7 @@ ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 01/27/2023
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ---
 
