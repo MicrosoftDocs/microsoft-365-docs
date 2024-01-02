@@ -1,5 +1,5 @@
 ---
-title: Manage your endpoint subscription settings across client devices
+title: Manage your endpoint security subscription settings across client devices
 description: Learn about your options for managing your Defender for Business or Defender for Endpoint subscription settings. Choose between Defender for Endpoint or Defender for Business.
 search.appverid: MET150  
 author: denisebmsft
@@ -18,7 +18,11 @@ ms.collection:
 - m365initiative-defender-business
 ---
 
-# Manage Microsoft Defender for Endpoint subscription settings across client devices
+# Manage your endpoint security subscription settings across client devices
+
+Microsoft Defender for Business and Microsoft Defender for Endpoint are endpoint security subscriptions that your organization can use to protect devices, such as computers, tablets, and phones. As your organization grows, you might have a mix of subscriptions and licenses. This article describes how to manage your endpoint security subscriptions, such as by choosing to use Defender for Business or Defender for Endpoint Plan 2 features and capabilities across devices. 
+
+ 
 
 In Defender for Endpoint, a mixed-licensing scenario is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. The following table describes examples of mixed-licensing scenarios: 
 
