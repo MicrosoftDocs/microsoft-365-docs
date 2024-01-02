@@ -20,22 +20,21 @@ ms.collection:
 
 # Manage your endpoint security subscription settings across client devices
 
-Microsoft Defender for Business and Microsoft Defender for Endpoint are endpoint security subscriptions that your organization can use to protect devices, such as computers, tablets, and phones. As your organization grows, you might have a mix of subscriptions and licenses. This article describes how to manage your endpoint security subscriptions, such as by choosing to use Defender for Business or Defender for Endpoint Plan 2 features and capabilities across devices. 
+Microsoft Defender for Business and Microsoft Defender for Endpoint are endpoint security subscriptions that your organization can use to protect devices, such as computers, tablets, and phones. As your organization grows, you might have a mix of subscriptions and licenses. This article describes how to manage your endpoint security subscriptions, such as by choosing to use Defender for Business or Defender for Endpoint Plan 2 features and capabilities across devices. (To learn more about mixed-licensing scenarios with Defender for Endpoint Plan 1 and Plan 2, see [Manage Microsoft Defender for Endpoint subscription settings across client devices](../defender-endpoint/defender-endpoint-subscription-settings.md).)
 
- 
+## Before you begin
 
-In Defender for Endpoint, a mixed-licensing scenario is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. The following table describes examples of mixed-licensing scenarios: 
+- You should have active trial or paid licenses for Defender for Business and Defender for Endpoint Plan 2. 
 
-| Scenario | Description |
-|:---|:---|
-| *Mixed tenant* | Use different sets of capabilities for groups of users and their devices. Examples include:<br/>- Defender for Endpoint Plan 1 and Defender for Endpoint Plan 2<br/>- Microsoft 365 E3 and Microsoft 365 E5  |
-| *Mixed trial* | Try a premium level subscription for some users. Examples include: <br/>- Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (a trial subscription has been started for some users)<br/>- Microsoft 365 E3 (purchased for all users), and Microsoft 365 E5 (a trial subscription has been started for some users) |
-| *Phased upgrades* | Upgrade user licenses in phases. Examples include:<br/>- Moving groups of users from Defender for Endpoint Plan 1 to Plan 2<br/>- Moving groups of users from Microsoft 365 E3 to E5  |
+- To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
+   
+   - Global Admin
+   - Security Admin
 
- Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, you can manage your subscription settings to accommodate mixed licensing scenarios across client devices. These capabilities enable you to:
+## View and manage your endpoint security subscription settings
 
-- **Set your tenant to mixed mode and tag devices** to determine which client devices will receive features and capabilities from each plan (we call this option *mixed mode*); **OR**,
-- **Use the features and capabilities from one plan across all your client devices**. 
+
+
 
 You can also use a newly added license usage report to track status.
 
