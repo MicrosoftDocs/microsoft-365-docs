@@ -65,6 +65,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 > For information on availability and support for each response action, please refer to the supported/minimum operating system requirements found under each feature.
+
 ## Manage tags
 
 Add or manage tags to create a logical group affiliation. Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident.
