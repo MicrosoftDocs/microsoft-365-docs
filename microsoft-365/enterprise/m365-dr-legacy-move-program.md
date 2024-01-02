@@ -8,21 +8,20 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 12/27/2023
 ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Data Residency Legacy Move Program
 
 > [!NOTE]
 > Coinciding with the launch of the Microsoft 365 Advanced Data Residency add-on, the Move Program will no longer be offered during the launch of new local datacenter regions.  Our most recent local datacenter region launch in Qatar (August 2022) is the final region to receive Move Program benefits. The following information is still valid for regions that were part of Move Program and all customers currently opted-in for migration will be processed.  For more information, see [the ADR page](advanced-data-residency.md).
-
-
 
 ## When Can I Request a Move (final opt-in opportunity)
 
@@ -54,8 +53,6 @@ ms.collection:
 | Brazil | June 1, 2023  | May 1, 2025  |
 | Sweden | June 1, 2024  | May 1, 2025  |
 | Qatar | March 1, 2025  | Not Applicable  |
-
-
 
 ### Data Residency Option Moving Forward
 
@@ -165,7 +162,6 @@ Watch the Microsoft 365 Message Center for confirmation that the move of each se
 
 </details>
 
-
 ### What happens if we are in process of email data migration to Microsoft 365 during the Exchange Online move?
 <details><summary>Select to expand</summary>
 
@@ -195,7 +191,6 @@ No, this isn't possible. Customers who have been moved to new geo datacenters ca
 Yes. Microsoft maintains a large global network with public Internet connections in more than 130 locations in 35 countries/regions around the world with peering agreements with more than 2,700 Internet Service Providers (ISPs). Users will be able to access the datacenters from wherever they are on the Internet.
 
 </details>
-
 
 ### I have public folders deployed in my _Tenant_. What will be the impact on public folder access during or after the move?
 <details><summary>Select to expand</summary>

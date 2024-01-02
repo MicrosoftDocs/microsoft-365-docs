@@ -3,7 +3,7 @@ title: "Microsoft 365 integration with on-premises environments"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/12/2023
+ms.date: 12/19/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -16,6 +16,7 @@ ms.custom:
 ms.collection:
 - scotvorg
 - Ent_O365
+- must-keep
 search.appverid:
 - MET150
 - LYN150
@@ -32,20 +33,20 @@ description: In this article, learn how to integrate Microsoft 365 with your exi
 
 You can integrate Microsoft 365 with your existing on-premises Active Directory Domain Services (AD DS) and with on-premises installations of Exchange Server, Skype for Business Server 2015, or SharePoint Server.
   
- - When you integrate AD DS, you can synchronize and manage user accounts for both environments. You can also add password hash synchronization (PHS) or single sign-on (SSO) so users can sign in both environments with their on-premises credentials.
- - When you integrate with on-premises server products, you create a hybrid environment. A hybrid environment can help as you migrate users or information to Microsoft 365, or you can continue to have some users or some information on-premises and some in the cloud. For more information about hybrid environments, see [hybrid cloud](../solutions/cloud-architecture-models.md#hybrid).
+- When you integrate AD DS, you can synchronize and manage user accounts for both environments. You can also add _password hash synchronization_ (PHS) or _single sign-on_ (SSO) so users can sign in both environments with their on-premises credentials.
+- When you integrate with on-premises server products, you create a hybrid environment. A hybrid environment can help as you migrate users or information to Microsoft 365, or you can continue to have some users or some information on-premises and some in the cloud. For more information about hybrid environments, see [hybrid cloud](../solutions/cloud-architecture-models.md#hybrid).
 
 You can also use the Microsoft Entra advisors for customized setup guidance in the Microsoft 365 admin center (you must be signed in to Microsoft 365):
 
 - [Microsoft Entra setup guide](https://aka.ms/aadpguidance)
 - [Sync users from your org's directory](https://aka.ms/aadconnectpwsync)
 - [Active Directory Federation Services (AD FS) deployment advisor](https://aka.ms/adfsguidance)
-   
+
 ## Before you begin
 
-Before you integrate Microsoft 365 and an on-premises environment, you also need to do [network planning and performance tuning](network-planning-and-performance.md). You want to understand the available [identity models](deploy-identity-solution-identity-model.md). 
+Before you integrate Microsoft 365 and an on-premises environment, you also need to do [network planning and performance tuning](network-planning-and-performance.md). You want to understand the available [identity models](deploy-identity-solution-identity-model.md).
 
-See [manage Microsoft 365 accounts](manage-microsoft-365-accounts.md) for a list of tools you can use to manage Microsoft 365 user accounts. 
+See [manage Microsoft 365 accounts](manage-microsoft-365-accounts.md) for a list of tools you can use to manage Microsoft 365 user accounts.
   
 ## Integrate Microsoft 365 with AD DS
 
@@ -53,7 +54,7 @@ If you have existing user accounts in AD DS, you don't want to re-create all of 
   
 ![Use directory synchronization to keep on-premises and online user account information synchronized.](../media/microsoft-365-integration/directory-synchronization.png)
   
-If you want users to be able to sign in Microsoft 365 with their on-premises credentials, you can also configure SSO. With SSO, Microsoft 365 is configured to trust the on-premises environment for user authentication.
+If you want users to be able to sign in to Microsoft 365 with their on-premises credentials, you can also configure SSO. With SSO, Microsoft 365 is configured to trust the on-premises environment for user authentication.
   
 ![With single sign-on, the same account is available in both the on-premises and online environments.](../media/microsoft-365-integration/single-sign-on.png)
 

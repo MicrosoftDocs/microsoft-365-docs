@@ -64,10 +64,7 @@ Response actions run along the top of a specific device page and include:
 - **Search box** - Select Device from the drop-down menu and enter the device name.
 
 > [!IMPORTANT]
->
-> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022.
-> - For non-Windows platforms, response capabilities (such as isolate device) are dependent on the third-party capabilities.
-> - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
+> For information on availability and support for each response action, please refer to the supported/minimum operating system requirements found under each feature.
 
 ## Manage tags
 
@@ -381,3 +378,4 @@ All other related details are also shown, for example, submission date/time, sub
 - [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
 - [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

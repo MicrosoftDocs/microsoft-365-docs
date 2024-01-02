@@ -41,18 +41,18 @@ Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and m
 
 | Microsoft 365 App | Feature | Description |
 |-----------------------|--------------------------------|---------------------------------------------------------|
-| Word                  | Draft with Copilot             | Generate text with and without formatting in new or existing documents |
+| Word                  | Draft with Copilot             | Generate text with and without formatting in new or existing documents. Word files can also be used for grounding data |
 |                       | Chat                           | Create content, summarize, ask questions about your document, and do light commanding via Chat. |
-| PowerPoint            | Draft with Copilot             | Create from Prompt or File, leveraging enterprise templates. Integration with DALL-E, OpenAI’s image generator, also allows users to ask Copilot to create custom images. |
-|                       | Chat                           | Summary, Q&A, ChatGPT integration. |
-|                       | Light commanding               | Add slides, pictures, or make deck-wide text changes. |
+| PowerPoint            | Draft with Copilot             | Create a new presentation from a prompt or Word file, leveraging enterprise templates. PowerPoint files can also be used for grounding data |
+|                       | Chat                           | Summary and Q&A |
+|                       | Light commanding               | Add slides, pictures, or make deck-wide formatting changes. |
 | Loop                  | Collaborative content creation | Create content that can be collaboratively improved through direct editing or refinement by Copilot. |
 | Outlook               | Coaching tips                  | Get coaching tips and suggestions on clarity, sentiment, and tone, along with an overall message assessment and suggestions for improvement. |
-|                       | Summarize                      | Summarize an email thread to help the user quickly understand the discussion. It can draft and suggest replies to email. |
-|                       | Leverage content               | Pull from other emails or content across Microsoft 365 that user already has access to. |
-| Teams                 | Chat                           | Users can invoke Copilot in any chat. Copilot can summarize up to 30 days of the chat content prior to the last message in a given chat. Copilot uses only the single chat thread as source content for responses and can't reference other chats or data types (for example, meeting transcripts, emails, and files). Users can interact with Copilot by selecting prewritten prompts or writing their own questions. Responses include clickable citations that direct users to the relevant source content that was used. Conversations with Copilot take place in a side panel that allows users to copy and paste. Copilot conversations are ephemeral and will disappear after the side panel is closed. |
-|                       | Meetings                       | Users can invoke Copilot in meetings or calls within the same tenant. Copilot will use the transcript in real-time to answer questions from the user. It only uses the transcript and knows the name of the user typing the question. The user can type any question or use pre-determined prompts; however, Copilot will only answer questions related to the meeting conversation from the transcript. The user can copy/paste an answer and access Copilot after the meeting ends on the Recap page. Copilot interaction history with the user is kept for 24 hrs. |
-|                       | Business Chat                  | Allows users to access data across their Microsoft 365 Graph and leverage LLM functionality. Business chat can be accessed in Teams and when signed-in to Bing with an active directory account. |
+|                       | Summarize                      | Summarize an email thread to help the user quickly understand the discussion. |
+|                       | Draft with Copilot             | Pull from other emails or content across Microsoft 365 that the user already has access to. |
+| Teams                 | Chat                           | Users can invoke Copilot in any chat. Copilot can summarize up to 30 days of the chat content prior to the last message in a given chat. Copilot uses only the single chat thread as source content for responses and can't reference other chats or data types (for example, meeting transcripts, emails, and files). Users can interact with Copilot by selecting pre-written prompts or writing their own questions. Responses include clickable citations that direct users to the relevant source content that was used. Conversations with Copilot take place in a side panel that allows users to copy and paste. Copilot conversations will disappear after the side panel is closed. |
+|                       | Meetings                       | Users can invoke Copilot in meetings or calls within the same tenant. Copilot will use the transcript in real-time to answer questions from the user. It only uses the transcript and knows the name of the user typing the question. The user can type any question or use pre-determined prompts; however, Copilot will only answer questions related to the meeting conversation from the transcript. The user can copy/paste an answer and access Copilot after the meeting ends on the Recap page. |
+|                       | Copilot                  | Allows users to access data across their Microsoft 365 Graph and leverage LLM functionality. Copilot can be accessed in Teams and when signed-in to Bing with an active directory account. |
 |                       | Whiteboard                     | Makes meetings and brainstorm sessions more creative and effective. Use natural language to ask Copilot to generate ideas, organize ideas into themes, create designs that bring ideas to life and summarize whiteboard content. |
 | OneNote               | Draft with Copilot             | Use prompts to draft plans, generate ideas, create lists, and organize information to help you easily find what you need.  |
 
@@ -94,8 +94,6 @@ The semantic index does more than enhance search results; it works to help you u
 
 :::image type="content" source="media/microsoft-365-chat-search-index.png" alt-text="Diagram that shows the relationship between Microsoft 365 Chat and Microsoft Search." lightbox="media/microsoft-365-chat-search-index.png":::
 
-Microsoft Copilot for Microsoft 365 and Microsoft 365 E3, E5, Business Standard and Business Premium customers will receive the features as part of a phased rollout, with status updates shared via the [Microsoft 365 admin center](https://admin.microsoft.com/) and [Microsoft 365 public roadmap](https://www.microsoft.com/microsoft-365/roadmap).
-
 We are in the early stages of rolling out the semantic index to all organizations with Microsoft Copilot for Microsoft 365 and an eligible Microsoft 365 license, without any administrative involvement. Microsoft automatically manages the enablement of the semantic index, with prioritization given for organizations that purchase more than 300 licenses for Microsoft Copilot for Microsoft 365. When user indexing is complete, administrators will see a ‘Semantic indexing is complete’ status in the Microsoft 365 admin center for enabled users. When tenant level indexing starts in an organization, admins will see ‘Semantic index is enabled for your organization’ on the Search and Intelligence page in the Microsoft 365 admin center.
 
 :::image type="content" source="media/enable-semantic-index.png" alt-text="Screenshot that shows the semantic index enabled.":::
@@ -111,7 +109,7 @@ To learn more about Semantic Index for Copilot, check out these resources:
 
 ## Availability
 
-Microsoft Copilot for Microsoft 365 is generally available as an add-on to customers with Microsoft E3 or E5. Contact your Microsoft account team to start the purchase process.
+Microsoft Copilot for Microsoft 365 is generally available as an add-on to customers with Microsoft E3, E5, A3, or A5 faculty. Contact your Microsoft account team to start the purchase process.
 
 ## Additional resources
 
