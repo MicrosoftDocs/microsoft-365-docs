@@ -8,13 +8,14 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 12/27/2023
 ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Data Residency for Microsoft Teams
@@ -111,12 +112,13 @@ After the migration is complete the Files tab may take additional time (up to 7 
 Teams chat services moves each thread individually. The thread is locked in a read-only state during the move, which lasts a few seconds per thread. Threads remain accessible during the migration.
 
 **In-scope for Migration**
-In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Microsoft will migrate Teams data to the local datacenter.
+In addition to Exchange Online, SharePoint, and OneDrive; Microsoft will migrate Teams data to the local datacenter.
 
 - Teams chat messages, including private messages and channel messages.
 - Teams images used in chats.
 
-Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter _Geography_ and are also part of the Microsoft 365 migration program for eligible customer countries/regions.
+Teams files are stored in SharePoint and Teams chat files are stored in OneDrive. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint, and OneDrive are already used by the customer in the local datacenter _Geography_ and are also part of the Microsoft 365 migration program for eligible customer countries/regions.
 
 ### How can I determine customer data location?
+
 You can find the actual data location in _Tenant_ Admin Center. As a _Tenant_ administrator you can find the actual data location, for committed data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location.

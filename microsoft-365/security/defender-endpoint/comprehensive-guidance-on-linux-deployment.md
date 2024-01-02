@@ -1,7 +1,7 @@
 ---
 title: Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
 description: Learn how to deploy Defender for Endpoint on Linux and address issues such as high cpu utilization
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ms.date: 11/29/2023
 ---
@@ -62,7 +62,7 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 
 10. [Configure Microsoft Defender for Endpoint on Linux antimalware settings](#10-configure-microsoft-defender-for-endpoint-on-linux-antimalware-settings).
 
-11. [Download the Microsoft Defender for Endpoint on Linux onboarding package from the Microsoft 365 Defender portal](#11-download-the-microsoft-defender-for-endpoint-on-linux-onboarding-package).
+11. [Download the Microsoft Defender for Endpoint on Linux onboarding package from the Microsoft Defender portal](#11-download-the-microsoft-defender-for-endpoint-on-linux-onboarding-package).
 
 12. [Use Ansible, Puppet, or Chef to manage Microsoft Defender for Endpoint on Linux](#12-ansible-puppet-and-chef-examples-to-manage-microsoft-defender-for-endpoint-on-linux).
 

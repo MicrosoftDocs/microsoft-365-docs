@@ -1,7 +1,7 @@
 ---
 title: DeviceEvents table in the advanced hunting schema
 description: Learn about antivirus, firewall, and other event types in the miscellaneous device events (DeviceEvents) table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, DeviceEvents
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -25,7 +25,7 @@ ms.date: 02/16/2021
 
 # DeviceEvents
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -42,8 +42,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Date and time when the event was recorded |
-| `DeviceId` | `string` | Unique identifier for the machine in the service |
-| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the machine |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
+| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
 | `ActionType` | `string` | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
 | `FileName` | `string` | Name of the file that the recorded action was applied to |
 | `FolderPath` | `string` | Folder containing the file that the recorded action was applied to |
@@ -55,12 +55,12 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountName` | `string` | User name of the account |
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
 | `RemoteUrl` | `string` | URL or fully qualified domain name (FQDN) that was being connected to |
-| `RemoteDeviceName` | `string` | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information |
-| `ProcessId` | `int` | Process ID (PID) of the newly created process |
+| `RemoteDeviceName` | `string` | Name of the device that performed a remote operation on the affected device. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information |
+| `ProcessId` | `long` | Process ID (PID) of the newly created process |
 | `ProcessCommandLine` | `string` | Command line used to create the new process |
 | `ProcessCreationTime` | `datetime` | Date and time the process was created |
-| `ProcessTokenElevation` | `string` | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the newly created process |
-| `LogonId` | `string` | Identifier for a logon session. This identifier is unique on the same machine only between restarts |
+| `ProcessTokenElevation` | `string` | Indicates the type of token elevation applied to the newly created process. Possible values: TokenElevationTypeLimited (restricted), TokenElevationTypeDefault (standard), and TokenElevationTypeFull (elevated) |
+| `LogonId` | `string` | Identifier for a logon session. This identifier is unique on the same device only between restarts |
 | `RegistryKey` | `string` | Registry key that the recorded action was applied to |
 | `RegistryValueName` | `string` | Name of the registry value that the recorded action was applied to |
 | `RegistryValueData` | `string` | Data of the registry value that the recorded action was applied to |
@@ -76,7 +76,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessFileName` | `string` | Name of the process that initiated the event |
 | `InitiatingProcessFileSize` | `long` | Size of the file that ran the process responsible for the event |
 | `InitiatingProcessFolderPath` | `string` | Folder containing the process (image file) that initiated the event |
-| `InitiatingProcessId` | `int` | Process ID (PID) of the process that initiated the event |
+| `InitiatingProcessId` | `long` | Process ID (PID) of the process that initiated the event |
 | `InitiatingProcessCommandLine` | `string` | Command line used to run the process that initiated the event |
 | `InitiatingProcessCreationTime` | `datetime` | Date and time when the process that initiated the event was started |
 | `InitiatingProcessAccountDomain` | `string` | Domain of the account that ran the process responsible for the event |
@@ -90,11 +90,11 @@ For information on other tables in the advanced hunting schema, [see the advance
 |` InitiatingProcessVersionInfoInternalFileName` | `string` | Internal file name from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessVersionInfoOriginalFileName` | `string` | Original file name from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessVersionInfoFileDescription` | `string` | Description from the version information of the process (image file) responsible for the event |
-| `InitiatingProcessParentId` | `int` | Process ID (PID) of the parent process that spawned the process responsible for the event |
+| `InitiatingProcessParentId` | `long` | Process ID (PID) of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentFileName` | `string` | Name or full path of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentCreationTime` | `datetime` | Date and time when the parent of the process responsible for the event was started |
-| `InitiatingProcessLogonId` | `string` | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts |
-| `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
+| `InitiatingProcessLogonId` | `long` | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same device only between restarts |
+| `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `AppGuardContainerId` | `string` | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `AdditionalFields` | `string` | Additional information about the event in JSON array format |
 
@@ -105,4 +105,4 @@ For information on other tables in the advanced hunting schema, [see the advance
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

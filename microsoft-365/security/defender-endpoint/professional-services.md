@@ -2,7 +2,7 @@
 title: Professional services supported by Microsoft Defender XDR
 description: See the list of professional services that Microsoft Defender XDR can integrate with.
 keywords: professional service, managed security services, m365 defender, m365 defender services, mssp, configure, integration, protect, evolve, educate, defender for endpoint, detection 
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,6 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 08/18/2023
 ---

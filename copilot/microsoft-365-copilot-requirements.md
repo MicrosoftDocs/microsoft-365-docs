@@ -26,11 +26,11 @@ The integration of Microsoft Copilot for Microsoft 365 and Microsoft 365 Apps fo
 
 ## Prerequisites
 
-The following are the prerequisites for using Microsoft Copilot for Microsoft 365. If your organization uses Microsoft 365 E3 or E5 today, then you likely already meet most of these prerequisites.
+The following are the prerequisites for using Microsoft Copilot for Microsoft 365. If your organization uses Microsoft 365 E3 or E5, A3, or A5 today, then you likely already meet most of these prerequisites.
 
 ### Microsoft 365 Apps for enterprise
 
-[Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoft365appssetup) in the Microsoft 365 admin center to deploy to your users.
+[Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to deploy to your users.
 
 > [!NOTE]
 > For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
@@ -73,11 +73,11 @@ Once generally available on 11/1, Copilot will be in Current Channel, and starti
 
 Copilot services connect to endpoints contained within the [Microsoft 365 endpoint taxonomy](https://aka.ms/o365ip). As with all Microsoft 365 services, we recommend that customers align their network with the [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles). This helps provide the best experience with Copilot through minimization of latency and increased network quality of service for critical network flows.
 
-There are many Copilot experiences, including some core experiences like Excel, Word, PowerPoint, Teams, and Loop, that use WebSocket connections (wss://) from the device running the Microsoft 365 app to a Microsoft service. So, to use these Copilot experiences, WebSocket connections must be allowed from user endpoints to the endpoints listed in our endpoint taxonomy, specifically in ID number 46 in the section for [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+There are many Copilot experiences, including some core experiences like Excel, Word, PowerPoint, Teams, and Loop, that use WebSocket connections (wss://) from the device running the Microsoft 365 app to a Microsoft service. So, to use these Copilot experiences, WebSocket connections must be allowed from user endpoints to the endpoints listed in our endpoint taxonomy, specifically in ID number 147 in the section for [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ## License requirements
 
-Microsoft Copilot for Microsoft 365 users require a license for Microsoft 365 E3 or Microsoft 365 E5, and a license for Microsoft Copilot for Microsoft 365. You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://setup.microsoft.com/microsoft-365/copilot-setup-guide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
+Microsoft Copilot for Microsoft 365 users require a license for Microsoft 365 E3, E5, A3, or A5 faculty, and a license for Microsoft Copilot for Microsoft 365. You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Conditional Access
 

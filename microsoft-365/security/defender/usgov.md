@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender XDR for US Government customers
 description: Learn about the Microsoft Defender XDR for US Government customers requirements and capabilities available
-keywords: government, gcc, high, requirements, capabilities, defender, Microsoft 365 Defender, xdr, dod
+keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender XDR, xdr, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -121,4 +121,4 @@ For more information, see the individual workloads US Gov pages:
 - [Microsoft Defender for Cloud Apps](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description).
 - [Microsoft Defender for Identity](/enterprise-mobility-security/solutions/ems-mdi-govt-service-description).
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/gov).
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

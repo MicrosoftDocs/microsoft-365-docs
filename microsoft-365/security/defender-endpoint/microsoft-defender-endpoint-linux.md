@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to install and use Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -14,14 +14,14 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ms.date: 11/29/2023
 ---
 
 # Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -64,12 +64,12 @@ In general you need to take the following steps:
 - Deploy Microsoft Defender for Endpoint on Linux using one of the following deployment methods:
   - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
-  - Third-party management tools:
+   - Third-party management tools:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
     - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
-    - [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
-
-If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
+      - [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
+      - [Deploy using Saltstack configuration management tool](linux-install-with-saltack.md)
+      If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 > [!NOTE]
 > It is not supported to install Microsoft Defender for Endpoint in any other location other than the default install path.
@@ -79,11 +79,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 ### System requirements
 
-> [!NOTE]
-
-
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
-
   - Red Hat Enterprise Linux 6.7 or higher (In preview)
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
@@ -91,7 +87,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - CentOS 6.7 or higher (In preview)
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
-  - Debian 9 - 11
+   - Debian 9 - 12
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
   - Oracle Linux 8.x
@@ -259,3 +255,4 @@ High I/O workloads from certain applications can experience performance issues w
 - [Connect your non-Azure machines to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
 - [Turn on network protection for Linux](network-protection-linux.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

@@ -236,7 +236,7 @@ Key information from Microsoft:
 - [Human-operated ransomware](/security/compass/human-operated-ransomware)
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
-- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) analytics report in the Microsoft Defender portal
 - Microsoft's Detection and Response Team (DART) ransomware [approach and best practices](/security/compass/incident-response-playbook-dart-ransomware-approach) and [case study](/security/compass/dart-ransomware-case-study)
 
 Microsoft 365:

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Learn how Microsoft Copilot for Microsoft 365 uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 11/15/2023
+ms.date: 12/15/2023
 ---
 
 # Data, Privacy, and Security for Microsoft Copilot for Microsoft 365
@@ -32,6 +32,7 @@ The information in this article is intended to help provide answers to the follo
 - [How does Microsoft Copilot for Microsoft 365 use your proprietary organizational data?](#how-does-microsoft-copilot-for-microsoft-365-use-your-proprietary-organizational-data)
 - [How does Microsoft Copilot for Microsoft 365 protect organizational information and data?](#how-does-microsoft-copilot-for-microsoft-365-protect-organizational-data)
 - [What data is stored about user interactions with Microsoft Copilot for Microsoft 365?](#data-stored-about-user-interactions-with-microsoft-copilot-for-microsoft-365)
+- [What data residency commitments does Microsoft Copilot make?](#microsoft-copilot-for-microsoft-365-and-data-residency)
 - [Can Microsoft Copilot for Microsoft 365 use public web content in its responses?](#microsoft-copilot-for-microsoft-365-and-public-web-content)
 - [What extensibility options are available for Microsoft Copilot for Microsoft 365](#extensibility-of-microsoft-copilot-for-microsoft-365)
 - [How does Microsoft Copilot for Microsoft 365 meet regulatory compliance requirements?](#meeting-regulatory-compliance-requirements)
@@ -64,7 +65,7 @@ Abuse monitoring for Microsoft Copilot for Microsoft 365 occurs in real-time, wi
 > [!NOTE]
 > We may use customer feedback, which is optional, to improve Microsoft Copilot for Microsoft 365, just like we use customer feedback to improve other Microsoft 365 services and Microsoft 365 apps. We don't use this feedback to train the foundation LLMs used by Microsoft Copilot for Microsoft 365. Customers can manage feedback through admin controls. For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org) and [Providing feedback about Microsoft Copilot for Microsoft 365](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
 
-### Data stored about user interactions with Microsoft Copilot for Microsoft 365
+## Data stored about user interactions with Microsoft Copilot for Microsoft 365
 
 When a user interacts with Microsoft Copilot for Microsoft 365 apps (such as Word, PowerPoint, Excel, OneNote, Loop, or Whiteboard), we store data about these interactions. The stored data includes the user's prompt, how Copilot responded, and information used to ground Copilot's response. For example, this stored data provides users with Copilot interaction history in [Microsoft 365 Chat](https://support.microsoft.com/topic/5b00a52d-7296-48ee-b938-b95b7209f737) and [meetings in Microsoft Teams](https://support.microsoft.com/office/0bf9dd3c-96f7-44e2-8bb8-790bedf066b1). This data is processed and stored in alignment with contractual commitments with your organization’s other content in Microsoft 365. The data is encrypted while it's stored and isn't used to train foundation LLMs, including those used by Microsoft Copilot for Microsoft 365.
 
@@ -78,22 +79,43 @@ For Microsoft Teams chats with Copilot, admins can also use [Microsoft Teams Exp
 
 ### Deleting the history of user interactions with Microsoft Copilot for Microsoft 365
 
-To delete a user's history of interactions with Microsoft Copilot for Microsoft 365, which includes user prompts and the responses Copilot returns, Microsoft 365 admins can [submit an online support ticket](/microsoft-365/admin/get-help-support#online-support) in the Microsoft 365 admin center. In this ticket, admins should include their [Tenant ID](/entra/fundamentals/how-to-find-tenant) and the user’s principal name (their [primary email address](/microsoft-365/admin/add-users/change-a-user-name-and-email-address#set-the-primary-email-address)) for which they want data deleted. The ticket will mark the history for permanent, [hard-deletion](/compliance/regulatory/gdpr-dsr-Office365#deleting-personal-data). For any new requests, open a new ticket with support and avoid editing your existing requests.  
+To delete a user's history of interactions with Microsoft Copilot for Microsoft 365, which includes user prompts and the responses Copilot returns, Microsoft 365 admins can [submit an online support ticket](/microsoft-365/admin/get-help-support#online-support) in the Microsoft 365 admin center. In this ticket, admins should include their [Tenant ID](/entra/fundamentals/how-to-find-tenant) and the user’s [Object ID](/partner-center/marketplace/find-tenant-object-id#find-user-object-id) for which they want data deleted. The ticket will mark the history for permanent, [hard-deletion](/compliance/regulatory/gdpr-dsr-Office365#deleting-personal-data). For any new requests, open a new ticket with support and avoid editing your existing requests.  
 
-### Microsoft Copilot for Microsoft 365 and public web content
+## Microsoft Copilot for Microsoft 365 and the EU Data Boundary
 
-Microsoft Copilot for Microsoft 365 chat experiences can reference public web content when responding to a user’s prompt. Based on the user’s prompt, Microsoft Copilot for Microsoft 365 determines whether it needs to use Bing to query public web content to help provide a relevant response to the user.
+Microsoft Copilot for Microsoft 365 calls to the LLM are routed to the closest data centers in the region, but also can call into other regions where capacity is available during high utilization periods.
 
-If Microsoft Copilot for Microsoft 365 determines web content can help provide a more relevant response, it generates a search query to send to Bing. That search query is based on the user’s prompt, Copilot interaction history, and data the user has access to in Microsoft 365. This query might include your organization’s data, but the user’s account and their tenant ID aren't included in the search query sent to Bing.
+For European Union (EU) users, we have additional safeguards to comply with the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn). EU traffic stays within the EU Data Boundary while worldwide traffic can be sent to the EU and other countries or regions for LLM processing.
+
+## Microsoft Copilot for Microsoft 365 and data residency
+
+Customers with [Advanced Data Residency (ADR) in Microsoft 365](/microsoft-365/enterprise/advanced-data-residency) or [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) can purchase and enable Microsoft Copilot for Microsoft 365. At this time, Microsoft doesn't provide data residency commitments for Microsoft Copilot for Microsoft 365, beyond EU Data Boundary. When customers store data generated by Copilot in Microsoft 365 products that have data residency commitments under the Product Terms, the applicable commitments will be upheld.
+
+## Microsoft Copilot for Microsoft 365 and public web content
+
+Microsoft Copilot Graph-grounding chat experiences can reference public web content from the Bing search index to ground user prompts and responses. Based on the user’s prompt, Copilot for Microsoft 365 determines whether it needs to use Bing to query public web content to help provide a relevant response to the user. There are [controls available to manage the use of public web content](#controls-available-to-manage-the-use-of-public-web-content) for both admins and users.
+
+> [!NOTE]
+> Public web content grounding in Copilot uses only the Bing Search service. Copilot with commercial data protection (previously named Bing Chat Enterprise) is a separate offering and not involved with public web content grounding.
+
+### Details on how public web content grounding works
+
+When public web grounding is enabled, Copilot for Microsoft 365 may automatically generate a web search query, if Copilot for Microsoft 365 determines that web data can improve the quality of the response. The search query is based on the user’s prompt, Copilot interaction history, and relevant data the user has access to in Microsoft 365. This web search query might be displayed to the user after the prompt is entered. For example, the user might see the phrase "searching for..." followed by the search query. The query is passed to the [Bing Search API](/bing/search-apis/bing-web-search/overview), which is part of the Bing Search service, to retrieve information from the web to ground a response.
+
+Web search queries might not contain all the words from a user's prompt. They're generally based off a few terms used to find relevant information on the web. However, they may still include some confidential data, depending on what the user included in the prompt. Queries sent to the Bing Search API by Copilot for Microsoft 365 are disassociated from the user ID or tenant ID.
+
+Once web data is received, Copilot for Microsoft 365 passes the web data to the LLM to generate a richer response by including the latest information from the web and any relevant citations. In this process, the user's prompts and Copilot's responses remain within the Microsoft 365 service boundary. Only the search query, which is abstracted from the user's prompt and grounding data, goes to the Bing Search API outside the boundary.
 
 Microsoft Bing is a separate business from Microsoft 365 and data is managed independently of Microsoft 365. The use of Bing is covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). The [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) doesn’t apply to the use of Bing.
+
+### Controls available to manage the use of public web content
 
 Admins can prevent their users from referencing public web content in their requests. For more information, see [Manage access to public web content in Microsoft Copilot for Microsoft 365 responses](/microsoft-365-copilot/manage-public-web-access). Even when allowed by the admin, users still have the option whether or not they want to reference public web content in their requests. For more information, see [Use additional data sources with Microsoft 365 Copilot](https://support.microsoft.com/topic/b41e679a-ee19-4a8d-ab5c-ebd00ff46d71).
 
 > [!NOTE]
 > The policy settings that control the use of optional connected experiences in Microsoft 365 Apps don’t apply to Microsoft Copilot for Microsoft 365 and public web content.
 
-### Extensibility of Microsoft Copilot for Microsoft 365
+## Extensibility of Microsoft Copilot for Microsoft 365
 
 While Microsoft Copilot for Microsoft 365 is already able to use the apps and data within the Microsoft 365 ecosystem, many organizations still depend on various external tools and services for work management and collaboration. Microsoft Copilot for Microsoft 365 experiences can reference third-party tools and services when responding to a user’s request by using [Microsoft Graph connectors](/graph/connecting-external-content-connectors-overview) or plugins. Data from Graph connectors can be returned in Microsoft Copilot for Microsoft 365 responses if the user has permission to access that information.
 
@@ -109,16 +131,6 @@ For more information, see the following articles:
 - [Manage Plugins for Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps)
 - [Extend Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/extensibility/)
 - [How Microsoft Copilot for Microsoft 365 can work with your external data](https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-microsoft-365-copilot-can-work-with-your-external-data/ba-p/3937645)
-
-## Microsoft Copilot for Microsoft 365 and the EU Data Boundary
-
-Microsoft Copilot for Microsoft 365 calls to the LLM are routed to the closest data centers in the region, but also can call into other regions where capacity is available during high utilization periods.
-
-For European Union (EU) users, we have additional safeguards to comply with the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn). EU traffic stays within the EU Data Boundary while worldwide traffic can be sent to the EU and other countries or regions for LLM processing.
-
-## Microsoft Copilot for Microsoft 365 and data residency
-
-Customers with [Advanced Data Residency (ADR) in Microsoft 365](/microsoft-365/enterprise/advanced-data-residency) or [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) can purchase and enable Microsoft Copilot for Microsoft 365. At this time, Microsoft doesn't provide data residency commitments for Microsoft Copilot for Microsoft 365, beyond EU Data Boundary. When customers store data generated by Copilot in Microsoft 365 products that have data residency commitments under the Product Terms, the applicable commitments will be upheld.
 
 ## How does Microsoft Copilot for Microsoft 365 protect organizational data?
 
@@ -155,7 +167,6 @@ If you turn off connected experiences that analyze content for Microsoft 365 App
 - Excel
 - PowerPoint
 - OneNote
-- Outlook (classic)
 - Word
 
 Similarly, Microsoft Copilot for Microsoft 365 features in those apps on Windows or Mac devices won’t be available if you turn off the use of connected experiences for Microsoft 365 Apps.
