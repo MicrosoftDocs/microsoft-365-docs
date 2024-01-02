@@ -2,7 +2,7 @@
 title: Set up Microsoft 365 for frontline workers
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: samanro
 ms.topic: how-to
 audience: admin
@@ -202,7 +202,7 @@ You can use all of these apps within Microsoft Teams. For more information about
 
 After provisioning users, enrolling your devices, and configuring your applications, you’re now ready to create policies to secure your organization’s infrastructure resources.
 
-- **Conditional access:** Plan an [Microsoft Entra Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access).
+- **Conditional access:** Plan a [Microsoft Entra Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access).
 - **App protection policies:** [Learn about app management in Microsoft Intune](/mem/intune/apps/app-management).
 - **Multi-factor authentication:** Require [multi-factor authentication for Intune device enrollment](/mem/intune/enrollment/multi-factor-authentication).
 

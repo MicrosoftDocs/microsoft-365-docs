@@ -1,9 +1,9 @@
 ---
 title: Overview - Advanced hunting
 description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
-ms.service: microsoft-365-security
-ms.subservice: m365d
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -24,19 +24,19 @@ search.appverid: met150
 ms.date: 02/16/2021
 ---
 
-# Proactively hunt for threats with advanced hunting in Microsoft 365 Defender
+# Proactively hunt for threats with advanced hunting in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
 
 Advanced hunting supports two modes, guided and advanced. Use [guided mode](advanced-hunting-query-builder.md) if you are not yet familiar with Kusto Query Language (KQL) or prefer the convenience of a query builder. Use [advanced mode](advanced-hunting-query-language.md) if you are comfortable using KQL to create queries from scratch. 
 
-**To start hunting, read [Choose between guided and advanced modes to hunt in Microsoft 365 Defender](advanced-hunting-modes.md).**
+**To start hunting, read [Choose between guided and advanced modes to hunt in Microsoft Defender XDR](advanced-hunting-modes.md).**
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4G6DO]
 
@@ -49,7 +49,7 @@ Advanced hunting supports queries that check a broader data set coming from:
 - Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 
-To use advanced hunting, [turn on Microsoft 365 Defender](m365d-enable.md).
+To use advanced hunting, [turn on Microsoft Defender XDR](m365d-enable.md).
 
 
 For more information on advanced hunting in Microsoft Defender for Cloud Apps data, see the [video](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa). 
@@ -57,9 +57,9 @@ For more information on advanced hunting in Microsoft Defender for Cloud Apps da
 
 
 ## Get access
-To use advanced hunting or other [Microsoft 365 Defender](microsoft-365-defender.md) capabilities, you need an appropriate role in Microsoft Entra ID. [Read about required roles and permissions for advanced hunting](custom-roles.md).
+To use advanced hunting or other [Microsoft Defender XDR](microsoft-365-defender.md) capabilities, you need an appropriate role in Microsoft Entra ID. [Read about required roles and permissions for advanced hunting](custom-roles.md).
 
-Also, your access to endpoint data is determined by role-based access control (RBAC) settings in Microsoft Defender for Endpoint. [Read about managing access to Microsoft 365 Defender](m365d-permissions.md).
+Also, your access to endpoint data is determined by role-based access control (RBAC) settings in Microsoft Defender for Endpoint. [Read about managing access to Microsoft Defender XDR](m365d-permissions.md).
 
 
 ## Data freshness and update frequency
@@ -77,7 +77,7 @@ Advanced hunting data uses the UTC (Universal Time Coordinated) timezone.
 Queries should be created in UTC.
 
 ### Results
-Advanced hunting results are converted to the [timezone](m365d-time-zone.md) set in Microsoft 365 Defender. 
+Advanced hunting results are converted to the [timezone](m365d-time-zone.md) set in Microsoft Defender XDR. 
 
 
 
@@ -89,4 +89,4 @@ Advanced hunting results are converted to the [timezone](m365d-time-zone.md) set
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Microsoft Graph security API](/graph/api/resources/security-api-overview#advanced-hunting)
 - [Custom detections overview](custom-detections-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

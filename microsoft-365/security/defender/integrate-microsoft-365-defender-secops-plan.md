@@ -1,10 +1,9 @@
 ---
-title: Step 1. Plan for Microsoft 365 Defender operations readiness
-description: The basics of planning for Microsoft 365 Defender operations readiness when integrating Microsoft 365 Defender into your security operations.
+title: Step 1. Plan for Microsoft Defender XDR operations readiness
+description: The basics of planning for Microsoft Defender XDR operations readiness when integrating Microsoft Defender XDR into your security operations.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -26,12 +25,12 @@ search.appverid:
 ms.date: 07/15/2021
 ---
 
-# Step 1. Plan for Microsoft 365 Defender operations readiness
+# Step 1. Plan for Microsoft Defender XDR operations readiness
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Whatever the current maturity of your security operations, it's important for you to align with your Security Operations Center (SOC). While there's no single model that fits every organization, there are certain aspects that are more common than others.
 
@@ -56,4 +55,4 @@ Every SOC team should test its preparedness in responding to a cyber incident. T
 ## Next step
 
 [Step 2. Perform a SOC integration readiness assessment using the Zero Trust Framework](integrate-microsoft-365-defender-secops-readiness.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

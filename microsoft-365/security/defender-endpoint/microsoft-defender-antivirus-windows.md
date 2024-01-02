@@ -2,16 +2,16 @@
 title: Microsoft Defender Antivirus in Windows
 description: Learn how to manage, configure, and use Microsoft Defender Antivirus, built-in antimalware and antivirus protection.
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 11/06/2023
+ms.date: 12/05/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska, yonghree, pahuijbr
 manager: dansimp
 ms.custom: nextgen
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
@@ -61,7 +61,7 @@ For [Microsoft Endpoint Data Loss Prevention](/purview/endpoint-dlp-getting-star
 
 To enhance your endpoint security experience, Microsoft is releasing the Microsoft Defender Core service to help with the stability and performance of Microsoft Defender Antivirus. For customers who are using Microsoft Endpoint Data Loss Prevention in the small, medium, and enterprise business sectors, Microsoft is splitting the codebase to its own service.  
 
-The Microsoft Defender Core service is releasing with [Microsoft Defender Antivirus platform version 4.18.23110.2009](microsoft-defender-antivirus-updates.md#october-2023-platform-platform-418231002009--engine-11231002009).
+The Microsoft Defender Core service is releasing with [Microsoft Defender Antivirus platform version 4.18.23110.2009](microsoft-defender-antivirus-updates.md#october-2023-platform-418231002009--engine-11231002009).
 
 - Rollout begins in November 2023 to prerelease customers, with plans to release to all enterprise customers in the coming months.
 

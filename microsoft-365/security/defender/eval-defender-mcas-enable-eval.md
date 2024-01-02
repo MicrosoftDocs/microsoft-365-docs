@@ -1,10 +1,9 @@
 ---
 title: Enable the evaluation environment for Microsoft Defender for Cloud Apps
-description: Learn the architecture of Defender for Cloud Apps within Microsoft Defender for Office 365 and understand interactions between the Microsoft 365 Defender products.
+description: Learn the architecture of Defender for Cloud Apps within Microsoft Defender for Office 365 and understand interactions between the Microsoft Defender XDR products.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -30,7 +29,7 @@ ms.date: 05/14/2021
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 This article is [Step 2 of 2](eval-defender-mcas-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Cloud Apps. For more information about this process, see the [overview article](eval-defender-mcas-overview.md).
 
@@ -68,7 +67,7 @@ If you're still having trouble, review [Network requirements](/cloud-app-securit
 
 Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Endpoint natively. The integration simplifies roll out of Cloud Discovery, extends Cloud Discovery capabilities beyond your corporate network, and enables device-based investigation. This integration reveals cloud apps and services being accessed from IT-managed Windows 10 and Windows 11 devices.
 
-If you've already set up Microsoft Defender for Endpoint, configuring integration with Defender for Cloud Apps is a toggle in Microsoft 365 Defender. After integration is turned on, you can return to the Defender for Cloud Apps portal and view rich data in the Cloud Discovery Dashboard.
+If you've already set up Microsoft Defender for Endpoint, configuring integration with Defender for Cloud Apps is a toggle in Microsoft Defender XDR. After integration is turned on, you can return to the Defender for Cloud Apps portal and view rich data in the Cloud Discovery Dashboard.
 
 To accomplish these tasks, see [Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud Apps](/cloud-app-security/mde-integration).
 
@@ -101,5 +100,5 @@ Step 3 of 3: [Pilot Microsoft Defender for Cloud Apps](eval-defender-mcas-pilot.
 
 Return to the overview for [Evaluate Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -3,9 +3,8 @@ title: Additional information and important considerations related to Defender E
 ms.reviewer:
 description: Additional information and important considerations related to Defender Experts for XDR
 keywords: XDR, managed response, incident response, managed threat hunting, managed detection and response (MDR) service, readiness assessment, real-time visibility with XDR experts, Additional information related to XDR, benefits of microsoft xdr
-search.product: Windows 10
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-experts
+ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +18,14 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/07/2023
+ms.date: 11/10/2023
 ---
 
 # Additional information
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Important considerations for you
 
@@ -45,5 +44,6 @@ If you don't have your own security IR team, [Microsoft Incident Response](https
 
 ### See also
 
-[Frequently asked questions](frequently-asked-questions.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[General information on Defender Experts for XDR service](frequently-asked-questions.md)
+
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -62,7 +62,7 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you’re using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you’re using the **Dashboard view**, go to the Billing > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+   - If you’re using the **Dashboard view**, go to the Billing > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. On the **Bills & payments** page, select the **Billing profile** tab.
 3. Select a billing profile.
 4. On the billing profile details page, under **Bill-to address**, select **Edit**.
@@ -72,7 +72,7 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.admin center.
    - If you’re using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+   - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. On the **Bills & payments** page, select the **Payment methods** tab.
 3. Select a payment method.
 4. In the payment methods details pane, select **Edit**.

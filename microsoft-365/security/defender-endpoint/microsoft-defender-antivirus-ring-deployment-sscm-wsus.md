@@ -2,7 +2,7 @@
 title: Ring deployment using System Center Configuration Manager and Windows Server Update Services
 description: Microsoft Defender Antivirus is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides information about how to use a ring deployment method to update your Microsoft Defender Antivirus clients using System Center Configuration Manager (SCCM) and Windows Server Update Services (WSUS).
 keywords: deploy Microsoft Defender Antivirus updates, ring deployment Microsoft Defender Antivirus, Microsoft Defender Antivirus SCCM, Microsoft Defender Antivirus WSUS, Microsoft Defender Antivirus SCCM and WSUS, threat intelligence, cybersecurity, cloud security,
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,19 +17,19 @@ ms.collection:
 - mde-ngp
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 07/21/2023
 ---
 
 # Microsoft Defender Antivirus ring deployment using System Center Configuration Manager and Windows Server Update Services
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -43,8 +43,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
->
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
 ## Setting up the pilot environment 
 
@@ -53,12 +51,12 @@ This section describes the process for setting up the pilot UAT / Test / QA envi
 :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-wsus-schedule.png" alt-text="Shows an example Microsoft Defender for Endpoint ring deployment schedule using System Center Configuration Manager and Windows Server Update Services." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-wsus-schedule.png":::
 
 > [!NOTE]
-> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+> Security intelligence update (SIU) is equivalent to signature updates, which is the same as definition updates.
 
 On about 10-500 Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
 > [!NOTE]
-> If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
+> If you have a Citrix environment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
 
 1. In **System Center Configuration Manager** > **Create Automatic Deployment Rule Wizard** > **General** page,  in **Specify the setting for this automatic deployment rule**, make the following settings:
    
@@ -91,14 +89,14 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-wizard-software-updates.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings for the Software Updates page." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-wizard-software-updates.png":::
    
    > [!TIP]
-   > Click **Preview** - to make sure “Security Intelligence Update for Windows Defender Antivirus” is listed. You should see **KB2267602**.
+   > Click **Preview** - to make sure "Security Intelligence Update for Windows Defender Antivirus" is listed. You should see **KB2267602**.
    
    > [!NOTE]
-   > **Date Released or Revised: Last 1 month** - If your WSUS/SUP have been healthy, you may want to set this to “Last 1 week”.
+   > **Date Released or Revised: Last 1 month** - If your WSUS/SUP have been healthy, you may want to set this to "Last 1 week".
    >
-   > **Product: “Windows Defender”** -  We are removing “System Center Endpoint Protection”, because we want to target this to only the operating systems that have Microsoft Defender Antivirus.
+   > **Product: "Windows Defender"** -  We are removing "System Center Endpoint Protection", because we want to target this to only the operating systems that have Microsoft Defender Antivirus.
    >
-   > **Update Classification**: “Critical Updates” and “Definition Updates”
+   > **Update Classification**: "Critical Updates" and "Definition Updates"
    
 1. Select **Next**. On the **Evaluation Schedule** page, under **Specify the recurring schedule for this rule**, select **Run the rule on a schedule**, and then select **Customize**.
 
@@ -128,7 +126,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Name** | Type a name for your new deployment package. For example, type _MDE-MDAV Security Intelligence Update_. |
    | **Description** | Type a brief description for your new deployment package |
    | **Package Source (Example): \\_server_name_\_folder path_** | Type the path to your package source. For example, type _\\sccm\deployment\MDE-MDAV_Security_Intelligence_Updates_Pilot_ <br> or select **Browse** to navigate to - and select - your package source. |
-   | **Sending piroity:** | Select **High** and select **Enable binary differential replication** |
+   | **Sending priority:** | Select **High** and select **Enable binary differential replication** |
    
 1. Select **Next**. On the **Distribution point** page, under **Specify the distribution points or distribution point groups to host the content**,  select **Add** and then specify your distribution point or distribution point groups.
    
@@ -181,14 +179,14 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Search Criteria** | Enter the following product and update classifications: <br> **Article ID** = _2267602_  <br> **Date Released or Revised** = _Last 1 month_ <br> **Product** = _Windows Defender_ <br> **Superseded** = _No_ <br> **Update Classification** = _Critical Updates_ OR _Definition Updates_ |
      
    > [!TIP]
-   > Click **Preview** - to make sure “Security Intelligence Update for Windows Defender Antivirus” is listed. You should see **KB2267602**.
+   > Click **Preview** - to make sure "Security Intelligence Update for Windows Defender Antivirus" is listed. You should see **KB2267602**.
    
    > [!NOTE]
    > **Date Released or Revised: Last 1 month** - If your WSUS/SUP have been healthy, you may want to set this to **Last 1 week**.
    >
-   > **Product: “Windows Defender”** -  We are removing “System Center Endpoint Protection”, because we want to target this to only the operating systems that have Microsoft Defender Antivirus.
+   > **Product: "Windows Defender"** -  We are removing "System Center Endpoint Protection", because we want to target this to only the operating systems that have Microsoft Defender Antivirus.
    >
-   > **Update Classification**: “Critical Updates” and “Definition Updates”
+   > **Update Classification**: "Critical Updates" and "Definition Updates"
    
 1. Select **Next**. On the **Evaluation Schedule** page, under **Specify the recurring schedule for this rule**, select **Run the rule on a schedule**, and then select **Customize**.
 

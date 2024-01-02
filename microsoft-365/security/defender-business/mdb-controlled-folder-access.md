@@ -6,8 +6,7 @@ ms.author: deniseb
 manager: dansimp 
 ms.date: 08/21/2023
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security
@@ -48,4 +47,5 @@ To learn more about controlled folder access, see [Protect important folders wit
 ## Next steps
 
 - [Enable your attack surface reduction rules](mdb-asr.md)
-- [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
+- [Review settings for advanced features and the Microsoft Defender portal](mdb-portal-advanced-feature-settings.md).
+

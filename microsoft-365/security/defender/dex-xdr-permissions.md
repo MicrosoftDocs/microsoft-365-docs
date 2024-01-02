@@ -3,9 +3,8 @@ title: How Microsoft Defender Experts for XDR permissions work
 ms.reviewer:
 description: Configuring permissions in customer's XDR tenants
 keywords: XDR, Xtended detection and response, defender experts for xdr, configuring permissions in xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts
-search.product: Windows 10
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-experts
+ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -26,7 +25,7 @@ ms.date: 05/29/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft Defender XDR](microsoft-365-defender.md)
 
 For Microsoft Defender Experts for XDR incident investigations, when our experts need access to your tenants, we follow the just-in-time and least privilege principles to provide the right level of access at the right time. To deliver on these requirements, we built the Microsoft Defender Experts permissions platform using the following capabilities in Microsoft Entra ID:
 
@@ -49,4 +48,4 @@ These policies are configured during the onboarding process and require the rele
 ### See also
 
 [Additional information](additional-information-xdr.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

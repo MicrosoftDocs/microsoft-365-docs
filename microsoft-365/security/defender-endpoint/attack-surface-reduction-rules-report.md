@@ -4,8 +4,8 @@ description: Provides information about attack surface reduction rules detection
 keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
@@ -29,13 +29,13 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platforms:**
 
 - Windows
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -59,7 +59,7 @@ For more information about individual attack surface reduction rules, see [Attac
 ## Prerequisites
 
 > [!IMPORTANT]
-> To access the **Attack surface reduction rules report**, read permissions are required for the Microsoft 365 Defender portal. Access to this report granted by Microsoft Entra roles, such as Security Global Admin or Security role, is being deprecated and will be removed in April 2023.
+> To access the **Attack surface reduction rules report**, read permissions are required for the Microsoft Defender portal. Access to this report granted by Microsoft Entra roles, such as Security Global Admin or Security role, is being deprecated and will be removed in April 2023.
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in the **Attack surface reduction rules report**, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 ## Report access permissions
@@ -73,7 +73,7 @@ To access the **Attack surface reduction rules report** in the Microsoft 365 Sec
 
 To assign these permissions:
 
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> using account with Security administrator or Global administrator role assigned.
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> using account with Security administrator or Global administrator role assigned.
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Roles** (under **Permissions**).
 1. Select the role you'd like to edit.
 1. Select **Edit**.
@@ -87,7 +87,7 @@ For more information about user role management, see [Create and manage roles fo
 
 To navigate to the summary cards for the attack surface reduction rules report
 
-1. Open **Microsoft 365 Defender**  portal.
+1. Open **Microsoft Defender XDR**  portal.
 1. In the left panel, click**Reports**, and in the main section, under **Reports** select **Security report**.
 1. Scroll down to **Devices** to find the **Attack surface reduction rules** summary cards.
 
@@ -225,7 +225,7 @@ The following image illustrates how the Advanced Hunting query page opens from t
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png" alt-text="Shows the attack surface reduction rules report main detections tab flyout link opening Advanced Hunting" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png":::
 
-For more information about Advanced hunting, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
+For more information about Advanced hunting, see [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](advanced-hunting-overview.md)
 
 ### Attack surface reduction rules main Configuration tab
 

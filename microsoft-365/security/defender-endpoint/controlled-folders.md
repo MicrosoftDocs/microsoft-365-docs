@@ -2,7 +2,7 @@
 title: Protect important folders from ransomware from encrypting your files with controlled folder access
 description: Files in default folders can be protected from being changed by malicious apps. Prevent ransomware from encrypting your files.
 keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ audience: ITPro
 ms.reviewer: oogunrinde, sugamar 
 manager: dansimp
 ms.custom: asr
-ms.subservice: mde
+ms.subservice: asr
 ms.topic: how-to
 ms.collection: 
 - m365-security
@@ -25,13 +25,13 @@ search.appverid: met150
 
 # Protect important folders with controlled folder access
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Applies to**
@@ -60,7 +60,7 @@ Controlled folder access works with a list of trusted apps. Apps that are includ
 
 Apps are added to the list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization and that have never displayed any behavior deemed malicious are considered trustworthy. Those apps are added to the list automatically.
 
-Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions can be performed from the Microsoft 365 Defender portal.
+Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions can be performed from the Microsoft Defender portal.
 
 ## Why controlled folder access is important
 
@@ -106,9 +106,11 @@ Default folders appear in the user's profile, under **This PC**.
 
 Controlled folder access requires enabling [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-## Review controlled folder access events in the Microsoft 365 Defender portal
+<a name='review-controlled-folder-access-events-in-the-microsoft-365-defender-portal'></a>
 
-Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md) in the Microsoft 365 Defender portal; see [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
+## Review controlled folder access events in the Microsoft Defender portal
+
+Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md) in the Microsoft Defender portal; see [Microsoft Defender for Endpoint in Microsoft Defender XDR](../defender/microsoft-365-security-center-mde.md).
 
 You can query Microsoft Defender for Endpoint data by using [Advanced hunting](advanced-hunting-overview.md). If you're using [audit mode](audit-windows-defender.md), you can use [advanced hunting](advanced-hunting-overview.md) to see how controlled folder access settings would affect your environment if they were enabled.
 

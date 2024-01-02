@@ -2,7 +2,7 @@
 title: Onboard trusted vendors to collaborate in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 08/14/2023
 audience: ITPro
 ms.topic: article
@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: 
-localization_priority: medium
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Learn how to onboard trusted vendors to collaborate in Microsoft 365.

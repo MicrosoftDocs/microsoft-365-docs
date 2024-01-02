@@ -2,7 +2,7 @@
 title: Make information easier to find with Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: lauris
 ms.date: 05/01/2023
 audience: admin

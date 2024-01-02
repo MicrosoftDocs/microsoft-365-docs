@@ -1,8 +1,8 @@
 ---
 title: Deploy and manage printer protection using Intune
 description: Use Intune OMA-URI and Intune user interface to deploy and manage on printer protection.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.author: dansimp
 author: nimishasatapathy
 ms.localizationpriority: medium
@@ -144,7 +144,7 @@ You can download the files here, [Printer Protection Samples](https://github.com
 
    1. Group 1: Any printer group
 
-      :::image type="content" source="media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png" alt-text="A screenshot showing removable storage." lightbox= "media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png":::
+      :::image type="content" source="./media/any-printer-group-xml1.png" alt-text="A screenshot of Any printer group." lightbox= "./media/any-printer-group-xml1.png":::
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Printer%20Protection%20Samples/Intune%20OMA-URI/Any%20printer%20group.xml). See step 3 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 

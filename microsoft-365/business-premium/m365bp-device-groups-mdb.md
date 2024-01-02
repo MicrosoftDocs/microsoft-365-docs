@@ -30,11 +30,13 @@ With Microsoft 365 Business Premium, you have default device groups that you can
 
 All device groups, including your default device groups and any custom device groups that you define, are stored in [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis).
 
-## Create a device group in the Microsoft 365 Defender portal
+<a name='create-a-device-group-in-the-microsoft-365-defender-portal'></a>
+
+## Create a device group in the Microsoft Defender portal
 
 You can create a new device group while you are in the process of creating or editing a device protection policy.
 
-1. Go to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in.
+1. Go to the [Microsoft Defender portal](https://security.microsoft.com) and sign in.
 
 2. In the navigation pane, choose **Device configuration**.
 

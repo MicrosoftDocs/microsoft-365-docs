@@ -1,11 +1,10 @@
 ---
 title: Advanced hunting example for Microsoft Defender for Office 365
 description: Get started searching for email threats using advanced hunting
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -25,11 +24,11 @@ ms.date: 9/13/2023
 
 # Advanced hunting example for Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Want to get started searching for email threats using advanced hunting? Try these steps:
 
@@ -37,7 +36,7 @@ The [Microsoft Defender for Office 365 deployment guide](../office-365-security/
 
 Depending on your [preset security policy vs. custom policy choices](../office-365-security/mdo-deployment-guide.md#determine-your-protection-policy-strategy), **Zero-Hour auto purge** (ZAP) settings are important to know if a malicious message was removed from a mailbox after delivery.
 
-Quickly navigating to Kusto query language to hunt for issues is an advantage of converging these two security centers. Security teams can monitor ZAP misses by taking their next steps in the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Hunting** \> **Advanced Hunting**.
+Quickly navigating to Kusto query language to hunt for issues is an advantage of converging these two security centers. Security teams can monitor ZAP misses by taking their next steps in the Microsoft Defender portal at <https://security.microsoft.com> \> **Hunting** \> **Advanced Hunting**.
 
 1. On the **Advanced Hunting page** at <https://security.microsoft.com/v2/advanced-hunting>, verify the **New Query** tab is selected.
 1. Copy the following query into the **Query** box:
@@ -65,4 +64,4 @@ The data from this query appears in the **Results** panel below the query itself
 ## Related information
 - [Advanced hunting best practices](advanced-hunting-best-practices.md)
 - [Overview - Advanced hunting](advanced-hunting-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

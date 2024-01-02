@@ -1,11 +1,10 @@
 ---
-title: Stream Microsoft 365 Defender events to your Storage account
-description: Learn how to configure Microsoft 365 Defender to stream Advanced Hunting events to your Storage account.
+title: Stream Microsoft Defender XDR events to your Storage account
+description: Learn how to configure Microsoft Defender XDR to stream Advanced Hunting events to your Storage account.
 keywords: raw data export, streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,12 +21,12 @@ ms.topic: conceptual
 ms.date: 02/08/2023
 ---
 
-# Configure Microsoft 365 Defender to stream Advanced Hunting events to your Storage account
+# Configure Microsoft Defender XDR to stream Advanced Hunting events to your Storage account
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -44,15 +43,15 @@ ms.date: 02/08/2023
 
 Once the Storage account is created you will need to:
 
-1. Define the user who will be logging into Microsoft 365 Defender as Contributor.
+1. Define the user who will be logging into Microsoft Defender XDR as Contributor.
 
     Go to **Storage Account > Access control (IAM) > Add** and verify under **Role assignments**.
 
 ## Enable raw data streaming
 
-1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a ***Global Administrator*** or ***Security Administrator***.
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to **Settings** \> **Microsoft 365 Defender** \> **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
+2. Go to **Settings** \> **Microsoft Defender XDR** \> **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
 
 3. Click **Add**.
 
@@ -79,10 +78,10 @@ Once the Storage account is created you will need to:
 
   ```JSON
   {
-          "time": "<The time Microsoft 365 Defender received the event>"
+          "time": "<The time Microsoft Defender XDR received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+          "properties": { <Microsoft Defender XDR Advanced Hunting event as Json> }
   }
   ```
 
@@ -90,13 +89,13 @@ Once the Storage account is created you will need to:
 
 - Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
 
-- For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](../defender/advanced-hunting-overview.md).
+- For more information about the schema of Microsoft Defender XDR events, see [Advanced Hunting overview](../defender/advanced-hunting-overview.md).
 
 ## Data types mapping
 
 In order to get the data types for our events properties do the following:
 
-1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and go to **Hunting** \> **Advanced hunting**. To go directly to the **Advanced hunting** page, use <security.microsoft.com/advanced-hunting>.
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> and go to **Hunting** \> **Advanced hunting**. To go directly to the **Advanced hunting** page, use <security.microsoft.com/advanced-hunting>.
 
 2. On the **Query** tab, run the following query to get the data types mapping for each event:
 
@@ -120,7 +119,7 @@ For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Overview of Advanced Hunting](../defender/advanced-hunting-overview.md)
-- [Microsoft 365 Defender Streaming API](streaming-api.md)
-- [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)
+- [Microsoft Defender XDR Streaming API](streaming-api.md)
+- [Stream Microsoft Defender XDR events to your Azure storage account](streaming-api-storage.md)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

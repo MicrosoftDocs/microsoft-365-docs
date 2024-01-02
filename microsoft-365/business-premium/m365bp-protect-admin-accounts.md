@@ -27,7 +27,7 @@ description: "Learn how to set up and protect your administrator accounts in Mic
 
 Because admin accounts come with elevated privileges, they're valuable targets for cyberattackers. This article describes:
 
-- [How to set up an another administrator account for emergencies](#create-other-admin-accounts).
+- [How to set up another administrator account for emergencies](#create-other-admin-accounts).
 - [How to create an emergency admin account](#create-an-emergency-admin-account).
 - [How to create a user account for yourself](#create-a-user-account-for-yourself).
 - [How to protect admin accounts](#protect-admin-accounts).
