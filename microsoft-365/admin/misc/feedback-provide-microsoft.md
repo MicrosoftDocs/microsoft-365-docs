@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/25/2021
+ms.date: 11/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -25,7 +25,7 @@ Microsoft values your feedback, and every day we look at feedback from users acr
 Whether you’re providing feedback directly in an application or website, through the Feedback portal, or in the [Windows Feedback Hub](https://aka.ms/WIPFeedbackHub), there are some simple steps you can take to make your feedback as strong as possible.
 
 - If you're using a community feedback experience, Microsoft will prioritize feedback that high volumes of our users are experiencing or requesting.  You can see if feedback you want to provide already exists by searching to browse existing feedback to see if your feedback has already been mentioned by someone in the community.  It’s possible that you have the same feedback as someone else, and you can add your voice to the existing feedback rather than creating a copy of it.  If you can’t find feedback like yours, it’s time to add new feedback
-- When providing feedback to Microsoft, it’s important that you keep your comments specific to a single topic at a time.  Product teams are continuously reading feedback, and when we see similar feedback from different users, we try to combine it to see the full impact to our userbase.  Providing feedback about a single topic at a time helps us to link similar feedback together.
+- When providing feedback to Microsoft, it’s important that you keep your comments specific to a single topic at a time.  Product teams are continuously reading feedback, and when we see similar feedback from different users, we try to combine it to see the full impact to our user base. Providing feedback about a single topic at a time helps us to link similar feedback together.
 - If you’re experiencing an issue, try to describe the steps you took that caused that issue to occur.  It’s great to know if the problem is intermittent or happens every time, so our product teams can take a look at it and try to reproduce the problem.  If you're using Windows Feedback Hub and your diagnostic settings allow it, you can use the “Recreate my problem” feature to attach screenshots and diagnostic logs as you reproduce the issue you’re facing.  Typically, more details are better.  If you're using an app and it tends to crash every time an action is performed, include that in your description in addition to telling us that the application is crashing.
 - Whenever you provide feedback, remember not to provide any identifiable information such as phone numbers or email addresses, and make sure to avoid leaving personal information in any screenshots you attach.  Feedback submitted on community platforms can be seen by other users, and you wouldn't want to expose personal data.
 - When you're finished submitting your feedback, you can log into the Feedback portal to view feedback you previously sent to Microsoft and see the status of that feedback.  If you provided feedback on Windows Feedback Hub, you can open the app and view your My Feedback section to see the status of your feedback.
@@ -93,7 +93,7 @@ Your feedback will move to this status when it’s in the process of being addre
 Your feedback will move to this status when we can’t take any next steps with it because it was irrelevant to our products or violates our code of conduct. Typically the Microsoft response will clarify why it was closed.
 
 **Already supported**  We believe this already exists in the product.
-Your feedback would move to this status when the product team has reviewed your feedback and determined that there's either a workaround to the issue you're facing or your ask is already implemented in the product. Typically the Microsoft response will contain more information on what you can do to self-help.
+Your feedback would move to this status when the product team has reviewed your feedback and determined that there's either a workaround to the issue you're facing or your request is already implemented in the product. Typically the Microsoft response will contain more information on what you can do to self-help.
 
 **Great News! We’ve added this**  This suggestion has been added.
 When the product team has implemented and has released or is releasing a new build with the improvement, your feedback would move to this status. Typically the Microsoft response would contain relevant instructions on how to access new features or fixes.

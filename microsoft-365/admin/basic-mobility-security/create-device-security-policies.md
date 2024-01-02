@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/01/2020
+ms.date: 09/22/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,12 +16,11 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
-search.appverid:
-- MET150
 description: "Use Basic Mobility and Security to create device policies that protect your organization information."
 ---
 
@@ -32,11 +31,11 @@ You can use Basic Mobility and Security to create device policies that help prot
 ## Before you begin
 
 > [!IMPORTANT]
-> Before you can create a mobile device policy, you must activate and set up Basic Mobility and Security. For more info, see Overview of Basic Mobility and Security.
+> Before you can create a mobile device policy, you must activate and set up Basic Mobility and Security. For more info, see [Overview of Basic Mobility and Security for Microsoft 365](overview.md).
 
 - Learn about the devices, mobile device apps, and security settings that Basic Mobility and Security supports. See [Capabilities of Basic Mobility and Security](capabilities.md).
 - Create security groups that include Microsoft 365 users that you want to deploy policies to and for users that you might want to exclude from being blocked access to Microsoft 365. We recommend that before you deploy a new policy to your organization, you test the policy by deploying it to a small number of users. You can create and use a security group that includes just yourself or a small number Microsoft 365 users that can test the policy for you. To learn more about security groups, see [Create, edit, or delete a security group](../email/create-edit-or-delete-a-security-group.md).
-- To create and deploy Basic Mobility and Security policies in Microsoft 365, you need to be a Microsoft 365 global admin. For more info, see [Permissions in the Security & Compliance Center](../../security/office-365-security/scc-permissions.md).
+- To create and deploy Basic Mobility and Security policies in Microsoft 365, you need to be a Microsoft 365 global admin. For more info, see [Roles and role groups in Microsoft Defender and Microsoft Purview compliance](../../security/office-365-security/scc-permissions.md).
 - Before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, noncompliant devices can be blocked from accessing Microsoft 365 and data, including installed applications, photos, and personal information on an enrolled device, and data can be deleted.
 
 > [!NOTE]
@@ -46,19 +45,19 @@ You can use Basic Mobility and Security to create device policies that help prot
 
 Before you can start, make sure you have activated and set up Basic Mobility and Security. For instructions, see [Overview of Basic Mobility and Security](overview.md).
 
-1. From your browser, type <https://compliance.microsoft.com/basicmobilityandsecurity>.
+1. From your browser, go to <https://compliance.microsoft.com/basicmobilityandsecurity>.
 
-2. Select **Create a policy**.
+2. On the **Policies** tab, select **Create**.
 
-   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Mobility and Security policy settings.":::
+3. On the **Policy name** page, add and name and a description and select **Next**.
 
-3. On the **Policy settings** page, specify the requirements you want applied to mobile devices in your organization.
+4. On the **Access requirements** page, specify the requirements you want applied to mobile devices in your organization and select **Next**.
 
-4. **Require managing email profile**: When enabled, devices that don't have an email profile managed by Basic Mobility and Security are considered not compliant. A device can't have a managed email profile when it's not correctly targeted, or if the user manually set up the email account on the device. When you leave it **Not Enabled** (default), this setting isn't evaluated for compliance or non-compliance. For instructions on how users can get compliant when this option is selected, see [An existing email account was found](/intune-user-help/existing-company-email-account-found).
+5. On the **Configurations** page, select configuration requirements for your organization and select **Next**.
 
-5. On the **Do you want to apply this policy now?** page, choose the groups that you want to apply this policy to.
+6. On the **Deployment** page, choose a security group to apply this policy to.
 
-6. Select **Create this policy**.
+7. On the **Review** page, verify your selections and choose **Submit**.
 
 The policy is pushed to the device of each user the policy applies to the next time they sign in to Microsoft 365 using their mobile device. If users haven't had a policy applied to their mobile device before, after you deploy the policy, they get a notification on their device that includes the steps to enroll and activate Basic Mobility and Security. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md). Until they complete enrollment in Basic Mobility and Security hosted by the Intune Service, access to email, OneDrive, and other services is restricted. After they complete enrollment by using the Intune Company Portal app, they can use the services and the policy is applied to their device.
 
@@ -66,10 +65,10 @@ The policy is pushed to the device of each user the policy applies to the next t
 
 After you’ve created a device policy, check that the policy works as you expect before you deploy it to your organization.
 
-1. From your browser, type [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
+1. From your browser, go to [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 2. Select **View the list of managed devices**.
 3. Check the status of user devices that have the policy applied. You want the **State** of devices to be **Managed.**
-4. You can also do a full or selective wipe on a device by clicking on **Factory reset** or **Remove company data** from **Manage** button after selecting a device. For instructions, see [Wipe a mobile device in Microsoft 365.
+4. You can also do a full or selective wipe on a device by clicking on **Factory reset** or **Remove company data** from **Manage** button after selecting a device. For instructions, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
 
 ## Step 3: Deploy a policy to your organization
 

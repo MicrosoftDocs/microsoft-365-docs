@@ -1,9 +1,8 @@
 ---
-title: Manage incidents in Microsoft 365 Defender
+title: Manage incidents in Microsoft Defender XDR
 description: Learn how to assign, update the status,
 keywords: incident, incidents, attack story, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,22 +21,23 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 05/18/2023
+ms.date: 12/18/2023
 ---
 
-# Manage incidents in Microsoft 365 Defender
+# Manage incidents in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+
+- Microsoft Defender XDR
 
 Incident management is critical to ensuring that incidents are named, assigned, and tagged to optimize time in your incident workflow and more quickly contain and address threats.
 
-You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
+You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents2.png" alt-text="The Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents2.png":::
+:::image type="content" source="../../media/incidents-queue/fig1-manageincident.png" alt-text="The Incidents page shown with the management options pane in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig1-manageincident.png":::
 
 Here are the ways you can manage your incidents:
 
@@ -50,7 +50,7 @@ Here are the ways you can manage your incidents:
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage2.png" alt-text="The Manage incident pane in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage2.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage2.png" alt-text="The Manage incident pane in the Microsoft Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage2.png":::
 
 You can display this pane from the **Manage incident** link on the:
 
@@ -63,7 +63,7 @@ In cases where you want to move alerts from one incident to another, you can als
 
 ## Edit the incident name
 
-Microsoft 365 Defender automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+Microsoft Defender XDR automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
 You can edit the incident name from the **Incident name** field on the **Manage incident** pane.
 
@@ -83,7 +83,7 @@ If an incident has not yet been assigned, you can select the **Assign to** box a
 You can get a list of incidents assigned to you by filtering the incident queue. 
 
 1. From the incident queue, select **Filters**.
-2. in the **Incident assignment** section, clear **Select all** and select **Assigned to me**.
+2. In the **Incident assignment** section, clear **Select all**. Select **Assigned to me**, **Assigned to another user**, or **Assigned to a user group**.
 3. Select **Apply**, and then close the **Filters** pane.
 
 You can then save the resulting URL in your browser as a bookmark to quickly see the list of incidents assigned to you.
@@ -103,11 +103,13 @@ From the **Classification** field, you specify whether the incident is:
 - **Informational, expected activity** with a type of activity. Use the options in this category to classify incidents for security tests, red team activity, and expected unusual behavior from trusted apps and users.
 - **False positive** for types of incidents that you determine can be ignored because they are technically inaccurate or misleading.
 
-Classifying incidents and specifying their status and type helps tune Microsoft 365 Defender to provide better detection determination over time.
+Classifying incidents and specifying their status and type helps tune Microsoft Defender XDR to provide better detection determination over time.
 
 ## Add comments
 
-You can add multiple comments to an incident with the **Comment** field. Each comment gets added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
+You can add multiple comments to an incident with the **Comment** field. The comment field supports text and formatting, links, and images. Each comment is limited to 30,000 characters.
+
+All comments are added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
 
 ## Next steps
 
@@ -122,4 +124,4 @@ For resolved incidents, perform a [post-incident review](first-incident-post.md)
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Investigate incidents](investigate-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -1,10 +1,9 @@
 ---
-title: Deploy services supported by Microsoft 365 Defender
-description: Learn about the Microsoft security services that can be integrated by Microsoft 365 Defender, their licensing requirements, and deployment procedures
-keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, MCAS, E5, A5, EMS
+title: Deploy services supported by Microsoft Defender XDR
+description: Learn about the Microsoft security services that can be integrated by Microsoft Defender XDR, their licensing requirements, and deployment procedures
+keywords: deploy, licenses, supported services, provisioning, configuration Microsoft Defender XDR, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,19 +28,19 @@ ms.date: 02/16/2021
 
 # Deploy supported services
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[Microsoft 365 Defender](microsoft-365-defender.md) integrates various Microsoft security services to provide centralized detection, prevention, and investigation capabilities against sophisticated attacks. This article describes the supported services, their licensing requirements, the advantages and limitations associated with deploying one or more services, and links to how you can fully deploy them individually.
+[Microsoft Defender XDR](microsoft-365-defender.md) integrates various Microsoft security services to provide centralized detection, prevention, and investigation capabilities against sophisticated attacks. This article describes the supported services, their licensing requirements, the advantages and limitations associated with deploying one or more services, and links to how you can fully deploy them individually.
 
 ## Supported services
 
-A Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses provides access to the following supported services and entitles you to use Microsoft 365 Defender. [See licensing requirements](prerequisites.md#licensing-requirements)
+A Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses provides access to the following supported services and entitles you to use Microsoft Defender XDR. [See licensing requirements](prerequisites.md#licensing-requirements)
 
 | Supported service | Description |
 | ------ | ------ |
@@ -52,11 +51,11 @@ A Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combinati
 
 ## Deployed services and functionality
 
-Microsoft 365 Defender provides better visibility, correlation, and remediation as you deploy more supported services.
+Microsoft Defender XDR provides better visibility, correlation, and remediation as you deploy more supported services.
 
 ### Benefits of full deployment
 
-To get the complete benefits of Microsoft 365 Defender, we recommend deploying all supported services. Here are some of the key benefits of full deployment:
+To get the complete benefits of Microsoft Defender XDR, we recommend deploying all supported services. Here are some of the key benefits of full deployment:
 
 - Incidents are identified and correlated based on alerts and event signals from all available sensors and service-specific analysis capabilities
 - Automated investigation and remediation (AIR) playbooks apply across various entity types, including devices, mailboxes, and user accounts
@@ -64,7 +63,7 @@ To get the complete benefits of Microsoft 365 Defender, we recommend deploying a
 
 ### Limited deployment scenarios
 
-Each supported service that you deploy provides an extremely rich set of raw signals as well as correlated information. While limited deployment doesn't cause Microsoft 365 Defender functionality to turn off, its ability to provide comprehensive visibility across your endpoints, apps, data, and identities is affected. At the same time, any remediation capabilities only apply to entities that can be managed by the services you've deployed.
+Each supported service that you deploy provides an extremely rich set of raw signals as well as correlated information. While limited deployment doesn't cause Microsoft Defender XDR functionality to turn off, its ability to provide comprehensive visibility across your endpoints, apps, data, and identities is affected. At the same time, any remediation capabilities only apply to entities that can be managed by the services you've deployed.
 
 The table below lists how each supported service provides additional data, opportunities to obtain additional insight by correlating the data, and better remediation and response capabilities.
 
@@ -86,15 +85,15 @@ Deploying each service typically requires provisioning to your tenant and some i
 | Microsoft Defender for Identity | [Quickstart: Create your Microsoft Defender for Identity instance](/azure-advanced-threat-protection/install-atp-step1) | *See provisioning instructions* |
 | Microsoft Defender for Cloud Apps | *None* | [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security) |
 
-Once you've deployed the supported services, [turn on Microsoft 365 Defender](m365d-enable.md).
+Once you've deployed the supported services, [turn on Microsoft Defender XDR](m365d-enable.md).
 
 ## Related topics
 
-- [Microsoft 365 Defender overview](microsoft-365-defender.md)
-- [Turn on Microsoft 365 Defender](m365d-enable.md)
-- [Setup guides for Microsoft 365 Defender](deploy-configure-m365-defender.md)
+- [Microsoft Defender XDR overview](microsoft-365-defender.md)
+- [Turn on Microsoft Defender XDR](m365d-enable.md)
+- [Setup guides for Microsoft Defender XDR](deploy-configure-m365-defender.md)
 - [Microsoft Defender for Endpoint overview](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Microsoft Defender for Office 365 overview](../office-365-security/defender-for-office-365.md)
 - [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity overview](/azure-advanced-threat-protection/what-is-atp)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

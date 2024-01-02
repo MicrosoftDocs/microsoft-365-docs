@@ -62,7 +62,7 @@ International credit cards aren't accepted. You can pay for your subscription by
 - Invoice
 - Online payment using Alipay or China UnionPay
 
-Proof of payment is provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid. For more information, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+Proof of payment is provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid.
 
 ::: moniker-end
 
@@ -212,7 +212,7 @@ If you have a new account and are setting up your first subscription, you can us
 
 - [Set up Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)
 - [Set up Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)
-- [Set up Microsoft 365 Business Premium](../business-premium/index.md)
+- [Set up Microsoft 365 Business Premium](../business-premium/m365bp-overview.md)
 - [Set up Microsoft Defender for Business](../security/defender-business/mdb-setup-configuration.md)
 - [Set up Microsoft 365 Apps for business](../admin/setup/setup-apps-for-business.md)
 

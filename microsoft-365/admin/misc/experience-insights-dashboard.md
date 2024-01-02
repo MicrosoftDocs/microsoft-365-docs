@@ -3,7 +3,7 @@ title: "Microsoft 365 Experience insights dashboard"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 12/05/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - Tier1
 - scotvorg
-description: "Get a periodic report about how people in your organization use Microsoft 365 services and drill into each chart for more insights."
+description: "Get a report about how people in your organization use Microsoft 365 services and drill into each chart for more insights."
 ---
 
 # Microsoft 365 Experience insights dashboard
@@ -25,15 +25,15 @@ Experience insights is optimized for organizations with 2000 plus seats. We are 
 
 ## Go to the Experience insights dashboard
 
-There are a couple of ways to get the Experience insights dashboard page. If you’re a member of the global admin or global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting **Experience insights (preview)** from the admin home page.
+From the Microsoft 365 admin center, you can access it at any time by selecting **Experience insights (preview)** from the admin home page.
 
-:::image type="content" source="../../media/experience-insights-fre.png" alt-text="Screenshot: Image showing how to get to the experience insights dashboard":::
-
-If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
-
-:::image type="content" source="../../media/experience-insights-dashboard2.png" alt-text="Screenshot: Image showing an overview of the experience insights dashboard":::
+If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting the dropdown option next to **Experience insights (preview)**.
 
 To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
+
+## Overview
+
+The Overview page shows you data and information on feedback and help article views in your organization.
 
 ## Suggested training
 
@@ -90,7 +90,7 @@ In the user feedback section, you can see the actual comments your users submitt
 
 ### Teams Net Promoter Score (NPS) example
 
-NPS details allow you see promoters, passives, and detractors so that you can get a pulse on the sentiment in your organization. Similar to product feedback, you can also view the specific comments your users submitted. In some cases where there is enough volume, you may also see Top topics that categorizes some of the comments into bucketed categories for easier parsing of the data.
+NPS details allows you to see promoters, passives, and detractors so that you can get a pulse on the sentiment in your organization. Similar to product feedback, you can also view the specific comments your users submitted. In some cases where there is enough volume, you may also see Top topics that categorizes some of the comments into bucketed categories for easier parsing of the data.
 
 :::image type="content" source="../../media/experience-insights-teams-nps2.png" alt-text="Screenshot: Image showing Teams NPS insights":::
 

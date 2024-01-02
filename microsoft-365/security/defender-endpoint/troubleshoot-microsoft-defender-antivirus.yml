@@ -4,16 +4,17 @@ metadata:
   description: Look up the causes and solutions for Microsoft Defender Antivirus event IDs and errors.
   author: denisebmsft
   ms.author: deniseb
-  ms.service: microsoft-365-security
+  ms.service: defender-endpoint
   ms.topic: conceptual
   ms.date: 03/27/2023
   ms.localizationpriority: medium
   ms.custom: nextgen
   manager: dansimp
-  ms.subservice: mde
+  ms.subservice: ngp
   ms.collection: 
   - m365-security
   - tier3
+  - mde-ngp
   search.appverid: met150
   
 title: Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus

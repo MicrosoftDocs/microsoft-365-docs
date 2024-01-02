@@ -26,11 +26,11 @@ description: Use Windows Intune as an MDA and MAM provider and Windows 10 securi
 To help protect devices (endpoints) against the initial access part of a ransomware attack:
 
 - Deploy [Intune](/mem/intune/fundamentals/what-is-intune) as a mobile device management (MDM) and mobile application management (MAM) provider for your devices and enroll your organization-owned devices.
-- Implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) to validate the user account credentials and enforce device health and compliance requirements.
-- Enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection) in Microsoft Defender for Endpoint and Microsoft 365 Defender.
+- Implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common) to validate the user account credentials and enforce device health and compliance requirements.
+- Enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection) in Microsoft Defender for Endpoint and Microsoft Defender XDR.
 - Configure [site and download checking](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) and [app and file checking](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) in Microsoft Defender SmartScreen to block or warn.
 - Enable [Microsoft Defender Antivirus scanning](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus) of downloaded files and attachments.
-- Set **Remote Desktop security level** to **TLS** in Microsoft Defender for Endpoint and Microsoft 365 Defender.
+- Set **Remote Desktop security level** to **TLS** in Microsoft Defender for Endpoint and Microsoft Defender XDR.
 
 ## Windows 11 or 10 devices
 
@@ -62,7 +62,7 @@ To help protect against an attacker executing code as part of an attack:
 
 As you implement these protections, perform change management for the following:
 
-- The [common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) can deny access to users who have non-compliant devices.
+- The [common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common) can deny access to users who have non-compliant devices.
 - Downloading files might warn users before the download or it might be blocked.
 - Some Office, Excel 4.0, XLM, or VBA macros might no longer run.
 

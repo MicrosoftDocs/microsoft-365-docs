@@ -3,8 +3,8 @@ title: Integrate Microsoft Defender for Endpoint with other Microsoft solutions
 description: Learn how Microsoft Defender for Endpoint integrates with other Microsoft solutions, including Microsoft Defender for Identity and Microsoft Defender for Cloud.
 author: mjcaparas
 ms.author: macapara
-ms.service: microsoft-365-security
-keywords: microsoft 365 defender, conditional access, office, Microsoft Defender for Endpoint, microsoft defender for identity, microsoft defender for office, Microsoft Defender for Cloud, microsoft cloud app security, azure sentinel
+ms.service: defender-endpoint
+keywords: Microsoft Defender XDR, conditional access, office, Microsoft Defender for Endpoint, microsoft defender for identity, microsoft defender for office, Microsoft Defender for Cloud, microsoft cloud app security, azure sentinel
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,21 +15,20 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Microsoft Defender for Endpoint and other Microsoft solutions
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -72,16 +71,18 @@ Suspicious activities are processes running under a user context. The integratio
 
 The Skype for Business integration provides a way for analysts to communicate with a potentially compromised user or device owner through a simple button from the portal.
 
-## Microsoft 365 Defender
+<a name='microsoft-365-defender'></a>
 
-With Microsoft 365 Defender, Microsoft Defender for Endpoint, and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.
+## Microsoft Defender XDR
 
-[Learn more about Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
+With Microsoft Defender XDR, Microsoft Defender for Endpoint, and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.
+
+[Learn more about Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender)
 
 ## Related topics
 
 - [Configure integration and other advanced features](advanced-features.md)
-- [Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-365-defender)
-- [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)
+- [Microsoft Defender XDR overview](/microsoft-365/security/defender/microsoft-365-defender)
+- [Turn on Microsoft Defender XDR](/microsoft-365/security/defender/m365d-enable)
 - [Protect users, data, and devices with Conditional Access](conditional-access.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

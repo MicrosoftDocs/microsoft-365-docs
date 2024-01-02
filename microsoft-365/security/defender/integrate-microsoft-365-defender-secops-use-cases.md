@@ -1,10 +1,9 @@
 ---
 title: Step 5. Develop and test use cases
-description: The basics of developing and testing use cases when integrating Microsoft 365 Defender into your security operations.
+description: The basics of developing and testing use cases when integrating Microsoft Defender XDR into your security operations.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -28,12 +27,12 @@ ms.date: 07/15/2021
 
 # Step 5. Develop and test use cases
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-The recommended methods to deploy Microsoft 365 Defender in your Security Operations Center (SOC) depends on the SOC team's current set of tools, processes, and skill set. Maintaining cyber hygiene across platforms can be challenging because of the vast amount of data coming from dozens if not hundreds of security sources.
+The recommended methods to deploy Microsoft Defender XDR in your Security Operations Center (SOC) depends on the SOC team's current set of tools, processes, and skill set. Maintaining cyber hygiene across platforms can be challenging because of the vast amount of data coming from dozens if not hundreds of security sources.
 
 Security tools are interrelated. Turning on one feature in a security technology or changing a process may in turn break another. For this reason, Microsoft recommends that your SOC team formalize a method for defining and prioritizing use cases. Use cases help define requirements and test processes for SOC operations across various teams. It creates a methodology for capturing metrics to determine if the right roles and mix of tasks are aligned to the right team with the right skill set.
 
@@ -85,15 +84,15 @@ Here's an example process for threat and vulnerability scanning.
 
 ### Analyze the use case output and lessons learned
 
-After a use case has been approved and tested, gaps among your security teams should be identified, along with people, processes, and the Microsoft 365 Defender technologies involved. Microsoft 365 Defender technologies should be analyzed to determine if they're capable of achieving desired outcomes. These can be tracked via a checklist or a matrix.
+After a use case has been approved and tested, gaps among your security teams should be identified, along with people, processes, and the Microsoft Defender XDR technologies involved. Microsoft Defender XDR technologies should be analyzed to determine if they're capable of achieving desired outcomes. These can be tracked via a checklist or a matrix.
 
 For example, in the anti-phishing scenario example, the SOC teams could have made the discoveries in this table.
 
 |SOC team|Requirement|People to meet requirement|Process to meet requirement|Relevant technology|Gap identified|Use case change log|Exempt (Y/N)|
 |---|---|---|---|---|---|---|---|
-|Threat Intelligence and Analytics team|Data sources are properly feeding the threat intelligence engines.|Threat Intelligence Analyst/Engineer|Data feed requirements established, threat intelligence triggers from approved sources|Microsoft Defender for Identity, Microsoft Defender for Endpoint|Threat Intelligence team didn't use automation script to link Microsoft 365 Defender API with threat intel engines|Add Microsoft 365 Defender as data sources to threat engines <p> Update use case run book|N|
-|Monitoring team|Data sources are properly feeding the monitoring dashboards|Tier 1,2 SOC Analyst–Monitoring & Alerts|Workflow for reporting Security & Compliance Center Secure Score|[Investigate alerts in Microsoft 365 Defender](investigate-alerts.md) <p> Secure Score monitoring|No mechanism for SOC analysts to report successful new phishing variant detection to improve Secure Score <p> [View email security reports in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/reports-email-security)|Add a process for tracking Secure Score improvement to Reporting workflows|N|
-|Engineering and SecOps Team|Change control updates are made in the SOC team runbooks|Tier 2 SOC Engineer|Change Control notification procedure for SOC team runbooks|Approved changes to security devices|Changes to Microsoft 365 Defender connectivity to SOC security technology requires approval|Add Microsoft Defender for Cloud Apps, Defender for Identity, Defender for Endpoint, Security & Compliance Center to SOC runbooks|Y|
+|Threat Intelligence and Analytics team|Data sources are properly feeding the threat intelligence engines.|Threat Intelligence Analyst/Engineer|Data feed requirements established, threat intelligence triggers from approved sources|Microsoft Defender for Identity, Microsoft Defender for Endpoint|Threat Intelligence team didn't use automation script to link Microsoft Defender XDR API with threat intel engines|Add Microsoft Defender XDR as data sources to threat engines <p> Update use case run book|N|
+|Monitoring team|Data sources are properly feeding the monitoring dashboards|Tier 1,2 SOC Analyst–Monitoring & Alerts|Workflow for reporting Security & Compliance Center Secure Score|[Investigate alerts in Microsoft Defender XDR](investigate-alerts.md) <p> Secure Score monitoring|No mechanism for SOC analysts to report successful new phishing variant detection to improve Secure Score <p> [View email security reports in the Microsoft Defender portal](/microsoft-365/security/office-365-security/reports-email-security)|Add a process for tracking Secure Score improvement to Reporting workflows|N|
+|Engineering and SecOps Team|Change control updates are made in the SOC team runbooks|Tier 2 SOC Engineer|Change Control notification procedure for SOC team runbooks|Approved changes to security devices|Changes to Microsoft Defender XDR connectivity to SOC security technology requires approval|Add Microsoft Defender for Cloud Apps, Defender for Identity, Defender for Endpoint, Security & Compliance Center to SOC runbooks|Y|
 
 
 
@@ -102,11 +101,11 @@ Additionally, the SOC teams could have made the discoveries outlined in the tabl
 
 |SOC team|Requirement|People to meet requirement|Process to meet requirement|Relevant technology|Gap identified|Use case change log|Exempt (Y/N)|
 |---|---|---|---|---|---|---|---|
-|SOC Oversight|All assets connected to approved networks are identified and categorized|SOC Oversight, BU owners, application owners, IT asset owners, etc.|Centralized asset management system to discover and list asset category and attributes based on risk.|ServiceNow or other assets. <br><br>[Microsoft 365 Device Inventory](/microsoft-365/security/defender-endpoint/device-discovery)|Only 70% of assets have been discovered. Microsoft 365 Defender remediation tracking only effective for known assets|Mature asset lifecycle management services to ensure Microsoft 365 Defender has 100% coverage|N|
+|SOC Oversight|All assets connected to approved networks are identified and categorized|SOC Oversight, BU owners, application owners, IT asset owners, etc.|Centralized asset management system to discover and list asset category and attributes based on risk.|ServiceNow or other assets. <br><br>[Microsoft 365 Device Inventory](/microsoft-365/security/defender-endpoint/device-discovery)|Only 70% of assets have been discovered. Microsoft Defender XDR remediation tracking only effective for known assets|Mature asset lifecycle management services to ensure Microsoft Defender XDR has 100% coverage|N|
 |Engineering & SecOps Teams|High impact and critical vulnerabilities in assets are remediated according to policy|SecOps engineers, SOC analysts: Vulnerability & Compliance, Security Engineering|Defined process for categorizing High Risk and Critical Vulnerabilities|[Microsoft Defender Vulnerability Management Dashboards](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)|Defender for Endpoint has identified high impact, high alert devices with no remediation plan or implementation of Microsoft recommended activity|Add a workflow for notifying asset owners when remediation activity is required within 30 days per policy; Implement a ticketing system to notify asset owners of remediation steps.|N|
-|Monitoring Teams|Threat and vulnerability status is reported via company intranet portal|Tier 2 SOC analyst|Auto-generated reports from Microsoft 365 Defender showing remediation progress of assets|[Investigate alerts in Microsoft 365 Defender](investigate-alerts.md) <p> Secure Score monitoring|No views or dashboard reports being communicated to asset owners regarding threat and vulnerability status of assets.|Create automation script to populate status of high risk and critical asset vulnerability remediation to the organization.|N|
+|Monitoring Teams|Threat and vulnerability status is reported via company intranet portal|Tier 2 SOC analyst|Auto-generated reports from Microsoft Defender XDR showing remediation progress of assets|[Investigate alerts in Microsoft Defender XDR](investigate-alerts.md) <p> Secure Score monitoring|No views or dashboard reports being communicated to asset owners regarding threat and vulnerability status of assets.|Create automation script to populate status of high risk and critical asset vulnerability remediation to the organization.|N|
 
-In these example use cases, the testing revealed several gaps in the SOC team's requirements that were established as baselines for the responsibilities of each team. The use case checklist can be as comprehensive as needed to ensure that the SOC team is prepared for the Microsoft 365 Defender integration with new or existing SOC requirements. Since this is an iterative process, the use case development process and the use case output content naturally serve to update and mature the SOC's runbooks with lessons learned.
+In these example use cases, the testing revealed several gaps in the SOC team's requirements that were established as baselines for the responsibilities of each team. The use case checklist can be as comprehensive as needed to ensure that the SOC team is prepared for the Microsoft Defender XDR integration with new or existing SOC requirements. Since this is an iterative process, the use case development process and the use case output content naturally serve to update and mature the SOC's runbooks with lessons learned.
 
 ## Update production runbooks and playbooks
 
@@ -146,4 +145,4 @@ After executing the Preparation phase, organizations should invoke the remaining
 ## Next step
 
 [Step 6. Identify SOC maintenance tasks](integrate-microsoft-365-defender-secops-tasks.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

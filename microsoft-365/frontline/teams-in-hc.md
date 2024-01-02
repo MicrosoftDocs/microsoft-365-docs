@@ -1,8 +1,8 @@
 ---
 title: Get started with Microsoft 365 for healthcare organizations
 author: lana-chin
-ms.author: heidip
-manager: serdars
+ms.author: v-chinlana
+manager: jtremper
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline

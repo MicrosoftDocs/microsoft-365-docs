@@ -2,9 +2,9 @@
 title: Overview of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 07/13/2023
+ms.date: 09/13/2023
 audience: admin
 ms.topic: overview
 ms.custom: intro-overview
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+    - essentials-overview
 ms.localizationpriority:  medium
 description: Learn about the capabilities, services, and features in Microsoft Syntex.
 ---
@@ -31,7 +32,7 @@ With Syntex, you can automate your content-based processes—capturing the infor
 
 You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
 
-## Explore scenarios and use cases
+## Scenarios and use cases
 
 :::row:::
    :::column span="":::
@@ -52,7 +53,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 :::row:::
    :::column span="3":::
-      With Syntex, you can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+      With Syntex, you can use content assembly to automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
    :::column-end:::
    :::column span="":::
       ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png)
@@ -132,23 +133,67 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about taxonomy tagging in Microsoft Syntex.](taxonomy-tagging-overview.md)
 
-### Optical character recognition
+### Syntex eSignature
 
 :::row:::
    :::column span="3":::
-      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
+      Send electronic requests using Syntex eSignature, keeping your content in Microsoft 365 while it’s being reviewed and signed. Use Syntex eSignature to quickly and securely send documents for signature to people both inside and outside of your organization.
    :::column-end:::
    :::column span="":::
+      ![Image of generic esignature icon.](../media/content-understanding/esignature-image.png)
+   :::column-end:::
+:::row-end:::
+
+[Learn more about using Microsoft Syntex eSignature.](esignature-overview.md)
+
+### Optical character recognition
+
+:::row:::
+   :::column span="":::
       ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
+   :::column-end:::
+   :::column span="3":::
+      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
    :::column-end:::
 :::row-end:::
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
 
+### Microsoft 365 Archive (Preview)
+
+:::row:::
+   :::column span="":::
+      ![Image of generic archive icon.](../media/content-understanding/archive-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Microsoft 365 Archive is a cost-effective, long-term storage solution for inactive or historical data in SharePoint. Because the data is archived in place, the content retains Microsoft 365 security, compliance, search, and rich metadata.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about Microsoft 365 Archive (Preview).](archive/archive-overview.md)
+
+### Microsoft 365 Backup (Preview)
+
+:::row:::
+   :::column span="3":::
+      Microsoft 365 Backup provides modern backup and recovery capabilities for SharePoint, Exchange Online, and OneDrive for Business, keeping the data all within the Microsoft 365 security boundary. With Microsoft 365 Backup, your organization knows that your content is securely and efficiently backed up and restorable within hours rather than months.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic backup icon.](../media/content-understanding/backup-image.png)
+   :::column-end:::
+:::row-end:::
+
+[Learn more about Microsoft 365 Backup (Preview).](backup/backup-overview.md)
+
 ## Other features
 
 ### Annotations
 
+Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+
+[Learn more about using annotations in Microsoft Syntex.](annotations.md)
+
+<!---
 :::row:::
    :::column span="":::
       ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
@@ -157,11 +202,16 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
       Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
    :::column-end:::
 :::row-end:::
+--->
 
-[Learn more about using annotations in Microsoft Syntex.](annotations.md)
 
 ### Content query
 
+The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
+
+[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
+
+<!---
 :::row:::
    :::column span="3":::
       The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
@@ -174,11 +224,21 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 :::row-end:::
 
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+--->
 
-[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
+### Merge and extract PDFs
 
-### Content processing
+Quickly combine multiple PDF files into a single PDF file, or split a larger PDF file into multiple smaller PDF files to better organize the information you want to view or share with others.
 
+[Learn more about merging and extracting PDF files in Microsoft Syntex.](merge-extract-pdf.md)
+
+### Processing rules
+
+Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
+
+[Learn more about content processing rules in Microsoft Syntex.](content-processing-overview.md)
+
+<!---
 :::row:::
    :::column span="":::
       ![Image of generic content processing icon.](../media/content-understanding/content-processing-image.png)
@@ -187,11 +247,21 @@ This feature is useful when you have a specific piece of information you want to
       Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
    :::column-end:::
 :::row-end:::
+--->
 
-[Learn more about content processing rules in Microsoft Syntex.](content-processing-overview.md)
+### Solution accelerators
+
+SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, and customizable. Use these templates to jumpstart a professional site to manage, process, and track the status of business documents in your organization.
+
+[Learn more about the contracts management and accounts payable accelerators.](site-templates.md)
 
 ### Content compliance
 
+Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+
+Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
+
+<!---
 :::row:::
    :::column span="3":::
       Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
@@ -200,11 +270,19 @@ This feature is useful when you have a specific piece of information you want to
       ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
    :::column-end:::
 :::row-end:::
+--->
 
-Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
+### Premium taxonomy features
 
-### Premium taxonomy services
+Benefit from the following additional term store features for admins:
 
+- [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.
+
+- [Pushing enterprise content types to a hub site](push-content-type-to-hub.md), which also adds them to the associated sites and any newly created lists or libraries.
+
+- [Term store reports](term-store-analytics.md), which provides you with insights into published term sets and their use across your organization.
+
+<!---
 :::row:::
    :::column span="":::
       ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
@@ -213,12 +291,7 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
       Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
    :::column-end:::
 :::row-end:::
-
-- [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.
-
-- [Pushing enterprise content types to a hub site](push-content-type-to-hub.md), which also adds them to the associated sites and any newly created lists or libraries.
-
-- [Term store reports](term-store-analytics.md), which provides you with insights into published term sets and their use across your organization.
+--->
 
 <!---<br><br>
 > [!div class="nextstepaction"]

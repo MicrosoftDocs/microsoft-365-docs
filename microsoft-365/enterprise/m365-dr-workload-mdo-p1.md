@@ -8,13 +8,14 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
-ms.reviewer: dmwmsft
+ms.date: 12/27/2023
+ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Data Residency for Microsoft Defender for Office P1
@@ -71,4 +72,4 @@ EOP customer data migrates after ADR migration is initated. MDO P1 does not have
 
 ## How can I determine customer data location?
 
-You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.
+You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to **Admin->Settings->Org Settings->Organization Profile->Data Location**.

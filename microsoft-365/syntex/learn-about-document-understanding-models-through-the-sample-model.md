@@ -2,9 +2,9 @@
 title: Import a sample model for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 09/23/2022
+ms.date: 01/23/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

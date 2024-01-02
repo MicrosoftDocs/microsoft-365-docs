@@ -1,10 +1,9 @@
 ---
-title: Setup guides for Microsoft 365 Defender 
-description: Learn how to deploy and configure Microsoft 365 Defender by using online setup guides 
-keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps
+title: Setup guides for Microsoft Defender XDR 
+description: Learn how to deploy and configure Microsoft Defender XDR by using online setup guides 
+keywords: deploy, licenses, supported services, provisioning, configuration Microsoft Defender XDR, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -25,14 +24,14 @@ search.appverid:
 ms.date: 03/31/2023
 ---
 
-# Setup guides for Microsoft 365 Defender
+# Setup guides for Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-Setup guides for Microsoft 365 Defender deployment give you tailored guidance and resources for planning and deploying security controls for your tenant, apps, and services. 
+Setup guides for Microsoft Defender XDR deployment give you tailored guidance and resources for planning and deploying security controls for your tenant, apps, and services. 
 
 All deployment guides are available in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2224913) and in the [Microsoft 365 Setup portal](https://go.microsoft.com/fwlink/?linkid=2230646).
 
@@ -49,10 +48,10 @@ Deployment guides in the admin center require authentication to a Microsoft 365 
 
 ## Related topics
 
-- [Microsoft 365 Defender overview](microsoft-365-defender.md)
-- [Turn on Microsoft 365 Defender](m365d-enable.md)
+- [Microsoft Defender XDR overview](microsoft-365-defender.md)
+- [Turn on Microsoft Defender XDR](m365d-enable.md)
 - [Deploy supported services](deploy-supported-services.md)
 - [Microsoft Defender for Endpoint overview](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Microsoft Defender for Office 365 overview](../office-365-security/defender-for-office-365.md)
 - [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

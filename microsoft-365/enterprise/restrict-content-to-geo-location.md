@@ -1,10 +1,10 @@
 ---
 title: "Restrict SharePoint site content to a geo location"
-ms.reviewer: adwood
-ms.date: 08/10/2020
+ms.reviewer: anfra
+ms.date: 12/11/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -25,8 +25,8 @@ You can do this task by using the [Set-SPOSite](/powershell/module/sharepoint-on
 |Restriction|Description|
 |:----------|:----------|
 |NoRestriction|The site can be moved to another _Geography_ location.|
-|BlockMoveOnly|Site cannot be moved to another _Geography_ location, but site content can be cached in other _Geography_ locations.|
-|BlockFull|Site cannot be moved to another _Geography_ location, and full file content is not cached in other _Geography_ locations. Files' title (harvested from the content), file name, and other properties of the file can still be cached in other _Geography_ locations.<br>Content stored in the site before it was configured to BlockFull, may continue to be cached in other _Geography_ locations.|
+|BlockMoveOnly|Site can't be moved to another _Geography_ location, but site content can be cached in other _Geography_ locations.|
+|BlockFull|Site can't be moved to another _Geography_ location, and full file content isn't cached in other _Geography_ locations. Files' title (harvested from the content), file name, and other properties of the file can still be cached in other _Geography_ locations.<br>Content stored in the site before it was configured to BlockFull, may continue to be cached in other _Geography_ locations.|
 
 Use the following syntax:
 

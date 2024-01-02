@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
-ms.date: 01/07/2021
+ms.date: 10/31/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,7 +32,7 @@ description: "Learn how to migrate email, contacts, and calendar from Google Wor
 # Migrate business email and calendar from Google Workspace
 
 > [!NOTE]
-> The videos and content in this article are meant to give customers a high-level overview of the process of how to use an automated batch migration in the Exchange admin center to migrate your users email, contacts, and calenders from Google Workspace.
+> The videos and content in this article are meant to give customers a high-level overview of the process of how to use an automated batch migration in the Exchange admin center to migrate your users email, contacts, and calendars from Google Workspace.
 >
 > Please refer to the resource links provided in this article for additional detailed information needed to use the batch migration tool successfully.
 
@@ -166,5 +166,5 @@ After successfully completing all the prerequisites, you can now use the batch m
 1. Select **Save**.  When the migration batch runs successfully, select **Done**.
 1. In the Exchange admin center, select **Migration**. On the **Migration batches** page, you can see the status of your batch migration.
 1. When the batch shows a status of **Synced**, select **Complete migration batch**, then select **Confirm**.
-1. Next, assign Exchange licenses to your migrated users, and have them check to see if their email, contacts, and calenders had migrated successfully.
+1. Next, assign Exchange licenses to your migrated users, and have them check to see if their email, contacts, and calendars had migrated successfully.
 

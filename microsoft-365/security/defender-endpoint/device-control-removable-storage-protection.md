@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Removable Storage Protection
 description: Understand capabilities that help prevent user or machine or both from using unauthorized removable storage media
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -11,8 +11,9 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-asr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: asr
 search.appverid: met150
 ---
 

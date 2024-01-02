@@ -1,9 +1,9 @@
 ---
-title: Choose between guided and advanced modes for hunting in Microsoft 365 Defender
-description: Guided hunting in Microsoft 365 Defender does not require KQL knowledge while advanced hunting allows you to write a query from scratch.
-keywords: guided mode, advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
-ms.service: microsoft-365-security
-ms.subservice: m365d
+title: Choose between guided and advanced modes for hunting in Microsoft Defender XDR
+description: Guided hunting in Microsoft Defender XDR does not require KQL knowledge while advanced hunting allows you to write a query from scratch.
+keywords: guided mode, advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -24,14 +24,14 @@ search.appverid: met150
 ms.date: 08/04/2022
 ---
 
-# Choose between guided and advanced modes to hunt in Microsoft 365 Defender
+# Choose between guided and advanced modes to hunt in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-You can find the **advanced hunting** page by going to the left navigation bar in Microsoft 365 Defender and selecting **Hunting** > **Advanced hunting**. If the navigation bar is collapsed, select the hunting icon ![hunting icon](../../media/guided-hunting/hunting-icon.png).
+You can find the **advanced hunting** page by going to the left navigation bar in Microsoft Defender XDR and selecting **Hunting** > **Advanced hunting**. If the navigation bar is collapsed, select the hunting icon ![hunting icon](../../media/guided-hunting/hunting-icon.png).
 
 In the **advanced hunting** page, two modes are supported:
 
@@ -88,4 +88,4 @@ We recommend going through these steps to quickly get started with advanced hunt
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Build hunting queries using guided mode](advanced-hunting-query-builder.md)
 - [Learn the query language](advanced-hunting-query-language.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

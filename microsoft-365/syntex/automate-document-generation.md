@@ -2,10 +2,10 @@
 title: Automate document generation with Microsoft Syntex and Power Automate (Preview)
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 08/08/2022
+ms.date: 08/08/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid:

@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Removable Storage frequently asked questions
 description: Answers frequently asked questions on MDE device control removable storage. 
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -11,6 +11,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 05/11/2023
@@ -99,9 +100,11 @@ DeviceFileEvents
  
 Another way is to deploy an Audit policy to the organization, and see the events in advanced hunting or the device control report.
  
-## How do I find Sid for Azure AD group?
+<a name='how-do-i-find-sid-for-azure-ad-group'></a>
 
-Different from Azure AD groups, the Sid is using Object Id for Azure AD group. You can find the Object Id from Azure portal.
+## How do I find Sid for Microsoft Entra group?
+
+Different from Microsoft Entra groups, the Sid is using Object Id for Microsoft Entra group. You can find the Object Id from Azure portal.
 
 ![image](https://user-images.githubusercontent.com/81826151/200895994-cc395452-472f-472e-8d56-351165d341a7.png)
 

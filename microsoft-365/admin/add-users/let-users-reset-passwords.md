@@ -49,7 +49,7 @@ To complete these steps, you must be a [global admin or password administrator](
 
 - It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset.
 
-- **If you're using an on-premises Active Directory**, you can set this up but **it requires a paid subscription to Azure AD Premium**.
+- **If you're using an on-premises Active Directory**, you can set this up but **it requires a paid subscription to Microsoft Entra ID P1 or P2**.
 
 ## Watch: Let users reset their own passwords
 
