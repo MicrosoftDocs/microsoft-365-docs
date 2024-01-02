@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 11/22/2023
+ms.date: 01/02/2024
 ---
 
 # Microsoft Defender for Endpoint on Mac
