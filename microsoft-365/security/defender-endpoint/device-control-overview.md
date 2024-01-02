@@ -28,7 +28,7 @@ Device control capabilities in Microsoft Defender for Endpoint enable your secur
 - Allow users to install and use specific devices
 - Allow users to install and use only [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/)-encrypted devices with Windows computers
 
-This list is intended to provide some examples. It's not an exhaustive list; there are other examples to consider (see the [Microsoft device control scenarios](#microsoft-device-control-scenarios) section in this article). 
+This list is intended to provide some examples. It's not an exhaustive list; there are other examples to consider (see the [device control scenarios](#device-control-scenarios) section in this article). 
 
 Device control helps protect your organization from potential data loss, malware, or other cyberthreats by allowing or preventing certain devices to be connected to users' computers. With device control, your security team can determine whether and what peripheral devices users can install and use on their computers. 
 
@@ -62,7 +62,7 @@ Device control organizes supported devices into types by their `primary_id`. On 
 | USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` |
 | Windows Portable Devices | `WpdDevices` |  |
 
-## Microsoft device control scenarios
+## Device control scenarios
 
 This section lists scenarios and use cases for device control. Select a tab, review the scenarios, and then identify the type of device control policy to create.
 
@@ -70,37 +70,37 @@ This section lists scenarios and use cases for device control. Select a tab, rev
 
 | Scenario | Device control policy |
 |---|---|
-| Prevent installation of a specific USB device | [Device Installation](mde-device-control-device-installation.md) |
-| Prevent installation of all USB devices while allowing an installation of only an authorized USB | [Device Installation](mde-device-control-device-installation.md) |
-| Prevent copying of sensitive files to USB | Endpoint DLP |
-| Block write access to removable data drives not protected by BitLocker | BitLocker |
-| Block write access to devices configured in another organization | BitLocker |
-| Prevent Write and Execute access to all but allow specific approved USBs | Removable Storage Access Control |
-| Audit Write and Execute access for all but block specific blocked USBs | Removable Storage Access Control |
-| Block read and execute access to specific file extension | Removable Storage Access Control |
-| Block people from access removable storage when the machine isn't connecting corporate network | Removable Storage Access Control |
+| Prevent installation of a specific USB device | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
+| Prevent installation of all USB devices while allowing an installation of only an authorized USB | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md). |
+| Prevent copying of sensitive files to USB | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
+| Block write access to removable data drives not protected by BitLocker | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
+| Block write access to devices configured in another organization | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
+| Prevent Write and Execute access to all but allow specific approved USBs | Device control in Microsoft Defender. See . |
+| Audit Write and Execute access for all but block specific blocked USBs | Device control in Microsoft Defender. See . |
+| Block read and execute access to specific file extension | Device control in Microsoft Defender. See . |
+| Block people from access removable storage when the machine isn't connecting corporate network | Device control in Microsoft Defender. See . |
 
 ## [**Printers**](#tab/Printers)
 
 | Scenario | Device control policy |
 |---|---|
-| Block people from printing via non-corporate printer | Device Control Printer Protection |
-| Only Allow specific USB printer(s) by VID/PID | Device Control Printer Protection |
-| Block printing of sensitive documents to any printer | Endpoint DLP |
-| Prevent installation of all printers | [Device Installation](mde-device-control-device-installation.md) |
-| Prevent installation of a specific printer | [Device Installation](mde-device-control-device-installation.md) |
-| Prevent installation of all printers while allowing a specific printer to be installed | [Device Installation](mde-device-control-device-installation.md) |
+| Block people from printing via non-corporate printer | Device control in Microsoft Defender. See . |
+| Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See . |
+| Block printing of sensitive documents to any printer | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
+| Prevent installation of all printers | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
+| Prevent installation of a specific printer | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
+| Prevent installation of all printers while allowing a specific printer to be installed | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
 
 ## [**Bluetooth**](#tab/Bluetooth)
 
 | Scenario | Device control policy |
 |---|---|
-| Block copying of sensitive document to any Bluetooth Device | Endpoint DLP |
+| Block copying of sensitive document to any Bluetooth Device | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
 
 ---
 
 ## Next steps
 
 - [Learn about device control policies and entries](device-control-policies-entries.md)
-- [Learn how to deploy RSAC policies](device-control-deploy-rsac.md)
+- [Learn how to deploy RSAC policies](defender-endpoint\device-control-mde-deploy.md)
 - [View device control reports](device-control-report.md)
