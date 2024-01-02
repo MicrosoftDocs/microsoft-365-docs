@@ -9,7 +9,6 @@ audience: ITPro
 ms.topic: overview
 ms.date: 01/02/2023
 ms.service: defender-business
-ms.subservice: onboard
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav, efratka
 f1.keywords: NOCSH  
