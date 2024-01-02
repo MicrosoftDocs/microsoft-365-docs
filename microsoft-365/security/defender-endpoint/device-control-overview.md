@@ -64,7 +64,7 @@ Device control organizes supported devices into types by their `primary_id`. On 
 
 ## Device control scenarios
 
-This section lists scenarios and use cases for device control. Select a tab, review the scenarios, and then identify the type of device control policy to create.
+This section lists scenarios for device control. Select a tab, review the scenarios, and then identify the type of device control policy to create.
 
 ## [**Removable storage**](#tab/Removable)
 
@@ -98,6 +98,10 @@ This section lists scenarios and use cases for device control. Select a tab, rev
 | Block copying of sensitive document to any Bluetooth Device | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
 
 ---
+
+## Device control in Microsoft Defender scenarios
+
+Device control capabilities in Defender for Endpoint provide more advanced capabilities than what's built into the Windows operating system. Device control in Defender for Endpoint supports a robust access control model (See Understanding Device Control) which supports a wide range of scenarios.  The following examples are helpful in understanding how defender for device control can accomplish common scenarios. 
 
 ## Next steps
 
