@@ -4,7 +4,7 @@ description: Learn how to deploy device control RSAC policies in Defender for En
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 12/14/2023
+ms.date: 01/02/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
