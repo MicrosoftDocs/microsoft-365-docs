@@ -15,7 +15,7 @@ ms.reviewer: shlomiakirav, efratka
 f1.keywords: NOCSH  
 ms.collection: 
 - M365-security-compliance
-- m365initiative-defender-endpoint
+- m365initiative-defender-business
 ---
 
 # Manage Microsoft Defender for Endpoint subscription settings across client devices
