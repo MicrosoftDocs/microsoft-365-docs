@@ -43,7 +43,7 @@ This article describes how apply either Defender for Business or Defender for En
    > [!NOTE]
    > If you don't see **Change subscription settings**, at least one of the following conditions is true:
    > - You have Defender for Business or Defender for Endpoint (but not both); or 
-   > - The ability to change your subscription settings hasn't rolled out to your tenant yet.
+   > - The ability to change your subscription settings hasn't rolled out to your organization yet.
 
 4. On the **Subscription settings** flyout, choose whether to use only Defender for Business or Defender for Endpoint Plan 2 across your organization's devices. 
 
