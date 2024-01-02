@@ -65,7 +65,6 @@ To reduce management overhead, there's no requirement for device-to-user mapping
 > To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
 > - Security Admin
 > - Global Admin
-> - License Admin + MDE Admin
 
 1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
