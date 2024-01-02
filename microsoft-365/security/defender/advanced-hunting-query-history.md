@@ -27,7 +27,6 @@ ms.date: 01/02/2024
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - Microsoft Defender XDR
 
