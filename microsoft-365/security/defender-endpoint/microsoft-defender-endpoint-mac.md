@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 11/22/2023
+ms.date: 01/02/2024
 ---
 
 # Microsoft Defender for Endpoint on Mac
@@ -92,7 +92,7 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 - Microsoft 365 Business Premium
 - Windows 11 Enterprise E5
 - Microsoft Defender for Endpoint P2
-- Microsoft Defender for Endpoint P1 (which includes [Microsoft 365 E3 (M365 E3)](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3/ba-p/3060639)) - Antimalware only.
+- Microsoft Defender for Endpoint P1 (which includes [Microsoft 365 E3 (M365 E3)](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3/ba-p/3060639))
 
 > [!NOTE]
 > Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
