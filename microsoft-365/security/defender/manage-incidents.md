@@ -21,7 +21,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 12/18/2023
+ms.date: 01/02/2024
 ---
 
 # Manage incidents in Microsoft Defender XDR
@@ -37,7 +37,7 @@ Incident management is critical to ensuring that incidents are named, assigned, 
 
 You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/fig1-manageincident.png" alt-text="The Incidents page shown with the management options pane in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig1-manageincident.png":::
+:::image type="content" source="../../media/incidents-queue/fig1-manageincidents.png" alt-text="Highlighting the manage incident option within the incident queue and quick launch pane in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig1-manageincidents.png":::
 
 Here are the ways you can manage your incidents:
 
@@ -47,10 +47,11 @@ Here are the ways you can manage your incidents:
 - [Resolve them](#resolve-an-incident)
 - [Specify its classification](#specify-the-classification)
 - [Add comments](#add-comments)
+- Assess the activity audit and add comments in the [Activity log](#activity-log)
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage2.png" alt-text="The Manage incident pane in the Microsoft Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage2.png":::
+:::image type="content" source="../../media/incidents-queue/fig2-manageincidents.png" alt-text="The Manage incident pane in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig2-manageincidents.png":::
 
 You can display this pane from the **Manage incident** link on the:
 
@@ -111,6 +112,20 @@ You can add multiple comments to an incident with the **Comment** field. The com
 
 All comments are added to the historical events of the incident. You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
 
+## Activity log
+
+The **Activity log** displays a list of all the comments and actions performed on the incident, known as *Audits and comments*. All changes made to the incident, whether by a user or by the system, are recorded in the activity log. The activity log is available from the **Activity log** option on the incident page or on the incident side pane.
+
+:::image type="content" source="../../media/incidents-queue/fig3-manageincidents.png" alt-text="Highlighting the activity log option from the incident page in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig3-manageincidents.png":::
+
+You can filter the activities within the log by comments and actions. To do this, click the **Content: Audits, Comments** then select the content type.
+
+:::image type="content" source="../../media/incidents-queue/fig4-manageincidents.png" alt-text="Highlighting the filter options within the activity log pane from the incident page in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig4-manageincidents.png":::
+
+You can also add your own comments using the comment box available within the activity log. The comment box accepts text and formatting, links, and images.
+
+:::image type="content" source="../../media/incidents-queue/fig5-res-manageincidents.png" alt-text="Highlighting the comment box from the incident page in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig5-manageincidents.png":::
+
 ## Next steps
 
 For new incidents, begin your [investigation](investigate-incidents.md).
@@ -124,4 +139,5 @@ For resolved incidents, perform a [post-incident review](first-incident-post.md)
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Investigate incidents](investigate-incidents.md)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
