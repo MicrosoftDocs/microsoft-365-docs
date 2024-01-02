@@ -30,7 +30,7 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 ## January 2024
 
-- **Ability to manage endpoint security subscription settings**. Defender for Business customers who have a mix of subscriptions (such as Defender for Business and Defender for Endpoint Plan 2 licenses) can now change their subscription settings to apply Defender for Endpoint Plan 2 features and capabilities across devices.
+- **Ability to manage endpoint security subscription settings**. Defender for Business customers who have a mix of subscriptions (such as Defender for Business and Defender for Endpoint Plan 2 licenses) can now change their subscription settings to apply Defender for Endpoint Plan 2 features and capabilities across devices. See [Manage your endpoint security subscription settings across client devices](../security/defender-business/mdb-manage-subscription.md).
 
 ## December 2023
 
