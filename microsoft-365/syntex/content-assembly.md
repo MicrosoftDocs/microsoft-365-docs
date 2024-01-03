@@ -20,7 +20,7 @@ description: Learn about how to create documents and other content using a moder
 # Overview of content assembly in Microsoft Syntex
 
 > [!NOTE]
-> Through June 2024, you can try out content assembly and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For more information, see [Try out Microsoft Syntex and explore its features](trial-syntex.md).
+> Through June 2024, you can try out content assembly and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its features](trial-syntex.md).
 
 You can use the content assembly capabilities in Microsoft Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all these actions quicker, more consistently, and with fewer errors by creating modern templates and using those templates to generate documents.
 

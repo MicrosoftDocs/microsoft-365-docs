@@ -21,7 +21,7 @@ description: Learn how to set up and manage optical character recognition in Mic
 # Set up and manage optical character recognition in Microsoft Syntex
 
 > [!NOTE]
-> Through June 2024, you can try out optical character recognition and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For more information, see [Try out Microsoft Syntex and explore its features](trial-syntex.md).
+> Through June 2024, you can try out optical character recognition and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its features](trial-syntex.md).
 
 The optical character recognition (OCR) service for Microsoft Syntex is set up in the Microsoft 365 admin center.
 

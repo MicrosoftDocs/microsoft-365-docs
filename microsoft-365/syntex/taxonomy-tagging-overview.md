@@ -20,6 +20,9 @@ description: Learn about taxonomy tagging in Microsoft Syntex.
 
 # Overview of taxonomy tagging in Microsoft Syntex
 
+> [!NOTE]
+> Through June 2024, you can try out taxonomy tagging and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For more information, see [Try out Microsoft Syntex and explore its features](trial-syntex.md).
+
 Microsoft Syntex gives you the ability to automatically tag documents in SharePoint libraries with terms configured in your term store using AI. These terms are stored in a managed metadata column (also known as a taxonomy column) on the item, making the documents easier to search, sort, filter, and manage.
 
 The taxonomy tagging feature offers an automated tagging solution for documents stored in document libraries. This straightforward, no-training option eliminates the need for users to manually tag documents or build and train sophisticated AI models to tag basic terms. This feature is beneficial if you want to quickly search for and locate documents in your libraries or set up any subsequent processes based on the tags attached to files.
