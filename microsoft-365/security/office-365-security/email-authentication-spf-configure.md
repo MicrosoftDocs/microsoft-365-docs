@@ -1,5 +1,5 @@
 ---
-title: Set up SPF to help prevent spoofing
+title: Set up SPF identify valid email sources for your Microsoft 365 domain
 f1.keywords:
   - CSH
 ms.author: chrisda
@@ -27,11 +27,11 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# Set up SPF to help prevent spoofing
+# Set up SPF identify valid email sources for your Microsoft 365 domain
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Sender Policy Framework (SPF) is a method of [email authentication](email-authentication-about.md) that helps validate mail sent from your Microsoft 365 organization to help prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
+Sender Policy Framework (SPF) is a method of [email authentication](email-authentication-about.md) that helps validate mail sent from your Microsoft 365 organization to prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
 
 SPF uses a TXT record in DNS to identify valid sources of mail for the domain. Specifically, SPF verifies that email from the sender address used during the SMTP transmission of the message (known as the MAIL FROM address, `5321.MailFrom` address, P1 sender, or envelope sender) is from a known, designated source of mail for that domain.
 
@@ -44,12 +44,12 @@ Before we get started, here's what you need to know about SPF in Microsoft 365 b
 - **You use one or more custom domains for email (for example, contoso.com)**: As part of the Microsoft 365 enrollment process, you were already required to create or modify the SPF TXT record in DNS for your custom domain to identify Microsoft 365 as an authorized source for email from your domain. But, you still have more work to do for maximum email protection:
   - **Subdomains**:
     - For email services that aren't under your direct control (for example, bulk email services or services that add email signatures to outbound mail), we recommend using a subdomain (for example, marketing.contoso.com) instead of your main email domain (for example, contoso.com). You don't want issues with mail sent from those email services to affect the reputation of mail sent by employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq?view=o365-worldwide#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
-    - Each subdomain that you use to send email from Microsoft 365 requires its own DKIM CNAME record. For example, the DKIM CNAME record for contoso.com doesn't cover marketing.contoso.com; marketing.contoso.com needs its own DKIM CNAME record.
+    - Each subdomain that you use to send email from Microsoft 365 requires its own SPF TXT record. For example, the SPF TXT record for contoso.com doesn't cover marketing.contoso.com; marketing.contoso.com needs its own SPF TXT record.
 
       > [!TIP]
       > Email authentication protection for _undefined_ subdomains is covered by DMARC. Any subdomains (defined or not) inherit the DMARC settings of the parent domain (which can be overridden per subdomain).
 
-  - **Registered but unused domains**: If you have registered domains that you aren't using for email or aren't using at all (also known as _parked domains_), configure DKIM records in those domains to specify that no email should ever come from those domains.
+  - **Registered but unused domains**: If you have registered domains that you aren't using for email or aren't using at all (also known as _parked domains_), configure SPF records in those domains to specify that no email should ever come from those domains.
 
 - **SPF alone is not enough**. For the best level of email protection for your custom domains, you also need to configure DKIM and DMARC as part of your overall [email authentication](email-authentication-about.md) strategy. For more information, see the [Next Steps](#next-steps) section at the end of this article.
 

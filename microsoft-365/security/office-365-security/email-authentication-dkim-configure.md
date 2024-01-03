@@ -26,11 +26,11 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# Use DKIM to validate outbound mail from your custom domain
+# Set up DKIM to sign mail from your Microsoft 365 domain
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-DomainKeys Identified Mail (DKIM) is a method of [email authentication](email-authentication-about.md) that helps validate mail sent from your Microsoft 365 organization to help prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
+DomainKeys Identified Mail (DKIM) is a method of [email authentication](email-authentication-about.md) that helps validate mail sent from your Microsoft 365 organization to prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
 
 Specifically:
 
@@ -38,7 +38,7 @@ Specifically:
    - The From, To, Subject, MIME-Version, Content-Type, Date, and other message header fields (depending on the source email system).
    - The message body.
 2. The digital signature is stored in the **DKIM-Signature** header field in the message header and remains valid as long as intermediate email systems don't modify the signed parts of the message. The signing domain is identified by the **d=** value in the **DKIM-Signature** header field.
-31. The corresponding public keys are stored in DNS records for the signing domain (CNAME records in Microsoft 365).
+3. The corresponding public keys are stored in DNS records for the signing domain (CNAME records in Microsoft 365).
 4. Destination email systems use the **d=** value in the **DKIM-Signature** header field to:
    - Identify the signing domain.
    - Look up the public key in the DKIM DNS record for the domain.
@@ -502,7 +502,7 @@ If you'd rather use PowerShell to enable DKIM signing of outbound messages using
    - **SelectorBeforeRotateOnDate**
    - **SelectorAfterRotateOnDate**:
 
-   Destination email systems use the public key in the CNAME record that's identified by the **SelectorBeforeRotateOnDate** property to verify the DKIM signature in messages (which infers the public key that was used to DKIM sign the message).
+   Destination email systems use the public key in the CNAME record that's identified by the **SelectorBeforeRotateOnDate** property to verify the DKIM signature in messages (which infers the private key that was used to DKIM sign the message).
 
    After the **RotateOnDate** date/time, DKIM uses the new private key to sign messages, and destination email systems use the corresponding public key in the CNAME record that's identified by the **SelectorAfterRotateOnDate** property to verify the DKIM signature in messages.
 

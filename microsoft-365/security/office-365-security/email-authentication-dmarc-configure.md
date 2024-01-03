@@ -24,11 +24,11 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# Use DMARC to validate email
+# Set up DMARC to validate the From address domain for senders in Microsoft 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Domain-based Message Authentication, Reporting and Conformance (DMARC) is a method of [email authentication](email-authentication-about.md) that helps validate mail sent from your Microsoft 365 organization to help prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
+Domain-based Message Authentication, Reporting and Conformance (DMARC) is a method of [email authentication](email-authentication-about.md) that helps validate mail sent from your Microsoft 365 organization to prevent spoofed senders that are used in business email compromise (BEC), ransomware, and other phishing attacks.
 
 You enable DMARC for a domain by creating a TXT record in DNS. DMARC validation of an email message involves the following elements:
 
@@ -185,7 +185,7 @@ For more information about DMARC, use the following resources:
    - **TXT value**: Enter `v=DMARC1; p=reject`.
    - **TTL**: Verify that **1 hour** is selected.
 
-   When you're finished on the **Add a custom DNS record** flyout, select **Save**
+   When you're finished on the **Add a custom DNS record** flyout, select **Save**.
 
 ### Step 4: Form the DMARC TXT record for your domain
 
@@ -249,7 +249,7 @@ If a message is outbound from Microsoft 365 and fails DMARC, and you have set th
 
 - DMARC checks on mail coming into Microsoft 365 are affected by the following features in Exchange Online Protection (EOP):
   - Whether [spoof intelligence](anti-phishing-policies-about.md#spoof-settings) is enabled or disabled in the anti-phishing policy that checked the message. Disabling spoof intelligence disables _implicit_ spoofing protection from [composite authentication](email-authentication-about.md#composite-authentication) checks only.
-  - Whether the **Honor DMARC record policy when the message is detected as spoof** setting is enabled or disabled in the anti-phishing policy that checked the message, and the specified actions based on the source domain's DMARC policy (`p=none`, `p=quarantine`, or `p=reject` in the DMARC TXT record).
+  - Whether the **Honor DMARC record policy when the message is detected as spoof** setting is enabled or disabled in the anti-phishing policy that checked the message, and the specified actions based on the source domain's DMARC policy (`p=quarantine`, or `p=reject` in the DMARC TXT record).
 
   For complete information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
 
@@ -257,7 +257,7 @@ If a message is outbound from Microsoft 365 and fails DMARC, and you have set th
 
 - Microsoft 365 sends DMARC Aggregate reports to all domains with a valid `rua=mailto:` address in the DMARC TXT records, as long as the MX record for the Microsoft 365 domain points directly to Microsoft 365.
 
-  If mail from the internet is routed through a third-party service or device before delivery to Microsoft 365 (the MX record points somewhere other than Microsoft 365), the DMARC Aggregate reports aren't sent. This limitation includes hybrid or standalone EOP scenarios where mail is delivered to the on-premises environment before being routed to Microsoft 365 using a connector.
+  If mail from the internet is routed through a third-party service or device before delivery to Microsoft 365 (the MX record points somewhere other than Microsoft 365), DMARC Aggregate reports aren't sent. This limitation includes hybrid or standalone EOP scenarios where mail is delivered to the on-premises environment before being routed to Microsoft 365 using a connector.
 
   > [!TIP]
   > When a third-party service or device sits in front of mail flowing into Microsoft 365, [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as _skip listing_) correctly identifies the source of internet messages for SPF, DKIM (if the service modifies messages), and DMARC validation.
