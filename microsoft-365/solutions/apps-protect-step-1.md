@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Step 1. Apply enterprise basic data protection (Level 1)
+# Step 1. Apply enterprise basic data protection
 
 Once you have followed the [prerequisites](apps-protect-overview.md#prerequisites), determined which platforms you must support at your organization, understood the different [app data protection categories available for each support platform](/microsoft-365/solutions/apps-protect-overview#app-protection-categories-by-platform), and completed the [steps needed before applying the app protection framework](apps-protect-framework.md#steps-before-applying-the-app-protection-framework), you are ready to add app protection policies. 
 
