@@ -3,7 +3,7 @@ title: "Common VPN split tunneling scenarios for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 3/3/2022
+ms.date: 12/20/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
+- must-keep
 f1.keywords:
 - NOCSH
 description: "Common VPN split tunneling scenarios for Microsoft 365"
@@ -24,7 +25,7 @@ description: "Common VPN split tunneling scenarios for Microsoft 365"
 
 >[!NOTE]
 >This article is part of a set of articles that address Microsoft 365 optimization for remote users.
-
+>
 >- For an overview of using VPN split tunneling to optimize Microsoft 365 connectivity for remote users, see [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
 >- For detailed guidance on implementing VPN split tunneling, see [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
 >- For guidance on securing Teams media traffic in VPN split tunneling environments, see [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
