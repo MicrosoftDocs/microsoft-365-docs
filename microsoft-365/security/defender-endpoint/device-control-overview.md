@@ -42,7 +42,7 @@ Device control capabilities in Defender for Endpoint can be organized into three
 
    - **Administrative Templates (ADMX) and Intune**. You can use ADMX templates to create policies that restrict or allow specific types of USB devices to be used with computers. For more information, see [Restrict USB devices and allow specific USB devices using ADMX templates in Intune](/mem/intune/configuration/administrative-templates-restrict-usb).
 
-- **Device control in Microsoft Defender**. Device control in Defender for Endpoint provides more advanced capabilities and is cross platform. You can configure device control settings to prevent (or allow) users to have Read, Write, or Execute access to content on removable storage devices. You can define exceptions, and you can choose to employ audit policies that detect but do not block users from accessing their removable storage devices. Policies are applied at the device level, user level, or both. 
+- **Device control in Microsoft Defender**. Device control in Defender for Endpoint provides more advanced capabilities and is cross platform. You can configure device control settings to prevent (or allow) users to have Read, Write, or Execute access to content on removable storage devices. You can define exceptions, and you can choose to employ audit policies that detect but don't block users from accessing their removable storage devices. Policies are applied at the device level, user level, or both. 
 
    - **Device control in Microsoft Defender and Intune**. Intune provides a rich experience for managing complex device control policies for organizations. You can configure and deploy device restriction settings, for example. See [Configure device restriction settings in Microsoft Intune](/mem/intune/configuration/device-restrictions-configure).
 
@@ -84,7 +84,7 @@ This section lists scenarios for device control. Select a tab, review the scenar
 
 | Scenario | Device control policy |
 |---|---|
-| Block people from printing via non-corporate printer | Device control in Microsoft Defender. See . |
+| Block people from printing via noncorporate printer | Device control in Microsoft Defender. See . |
 | Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See . |
 | Block printing of sensitive documents to any printer | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
 | Prevent installation of all printers | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
@@ -101,7 +101,18 @@ This section lists scenarios for device control. Select a tab, review the scenar
 
 ## Device control in Microsoft Defender scenarios
 
-Device control capabilities in Defender for Endpoint provide more advanced capabilities than what's built into the Windows operating system. Device control in Defender for Endpoint supports a robust access control model (See Understanding Device Control) which supports a wide range of scenarios.  The following examples are helpful in understanding how defender for device control can accomplish common scenarios. 
+Device control capabilities in Defender for Endpoint provide more advanced capabilities than what's built into the Windows operating system. With device control in Defender for Endpoint, you have a robust access control model that enables a wide range of scenarios.  
+
+The following examples are helpful in understanding how device control in Defender for Endpoint can accomplish common scenarios:
+
+- **Removable Storage Access Control** (see [mdatp-devicecontrol/Removable Storage Access Control Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples))
+
+   - Scenario 1:  Prevent Write and Execute access to all but allow specific approved USBs
+   - Scenario 2: Audit Write and Execute access for all but block specific blocked USBs
+
+- **Printer protection** (see [mdatp-devicecontrol/Printer Protection Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Printer%20Protection%20Samples))
+
+   - Scenario 1: Prevent print to all but allow print through specific approved USB printer when the machine is Corporate Network OR VPN connected or print through PDF/XPS file
 
 ## Next steps
 
