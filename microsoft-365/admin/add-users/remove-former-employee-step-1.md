@@ -64,7 +64,7 @@ For more information about how long it takes to get someone out of email, see [W
 
 If you have email as part of your Microsoft 365 subscription, sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> and follow these steps to block your former employee from accessing their email.
   
-1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">Mailboxes</a>.
+1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2183135" target="_blank">Mailboxes</a>.
 2. Select the former employee's mailbox and then under **Email apps & mobile devices**, select **Manage email apps settings**.
 3. On the **Manage email apps settings** page, turn **Off** the slider for all the options:
 

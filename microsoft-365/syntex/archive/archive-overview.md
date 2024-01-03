@@ -33,7 +33,7 @@ Some additional advantages of using Microsoft 365 Archive are:
 
 - **Cost savings** – A lower list price on storage consumption beyond your license-allocated Microsoft 365 storage quota.
 
-- **Lossless Metadata** – A site will retain all of its metadata and permissions upon reactivation.
+- **Lossless metadata** – A site will retain all of its metadata and permissions upon reactivation.
 
 - **Decluttering** – Explicit separation between active and inactive content to help you manage your site's lifecycle.
 
