@@ -5,7 +5,7 @@ author: chvukosw
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 02/06/2023
+ms.date: 01/03/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -51,8 +51,9 @@ The steps in this solution are:
 
 ## Resources
 
+- [Microsoft Priva](/privacy/priva/priva-overview)
+- [Microsoft Purview](/purview/purview)
 - [Microsoft Privacy](/privacy)
-- [Microsoft Purview risk and compliance solutions](../compliance/purview-compliance.md)
 - [Microsoft compliance offerings](/compliance/regulatory/offering-home)
 - [Data privacy thought paper: From privacy vulnerability to privacy resilience](https://aka.ms/dataprivacyresearch)
 - [Priva Privacy Risk Management eBook](https://aka.ms/privaPRMeBook)
