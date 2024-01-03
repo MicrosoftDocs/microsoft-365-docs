@@ -58,7 +58,11 @@ Administrators should notify the site owners and end users before a site is arch
 
 - As a part of the preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the **Archived sites** page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
 
-- Currently, end user search results won't show any archived content. Columns such as Archived Date and Archived By aren't currently available, but are planned and will be rolled out when available.
+- Currently, archived content exported via eDiscovery doesn't require site reactivation for exporting, but will require it before general release.
+
+- Currently, end user search results won't show any archived content.
+
+- Columns such as Archived Date and Archived By aren't currently available but are planned and will be rolled out when available.
 
 - For multi-geo tenants, while data residency requirements are honored, site moves aren't supported. Archived sites will need to be reactivated prior to any move.
 
