@@ -29,13 +29,13 @@ Data privacy and data protection go hand in hand. You can't have data privacy wi
 
 ## How Microsoft Priva and Microsoft Purview work together
 
-Microsoft Purview and Microsoft Priva provide a unified platform to help you comply with data privacy regulations. The complementary features in Purview risk and compliance solutions and Priva privacy management solutions help you assess the personal data within your organization, and provide automation and scalability to help reduce the complexity in adequately safeguarding the data.
+[Microsoft Priva](/privacy/priva/priva-overview) and [Microsoft Purview](/purview/purview) provide a unified platform to help you comply with data privacy regulations. The complementary features in [Purview risk and compliance solutions](purview/purview-compliance) and [Priva privacy management solutions](/privacy/priva/risk-management) help you assess the personal data within your organization, and provide automation and scalability to help reduce the complexity in adequately safeguarding the data.
 
 ![How Microsoft Purview and Microsoft Priva work together](../media/data-privacy-protection/purview-priva-together.png)
 
 ## How to use this guide
 
-Use the guidance in these articles to help you assess risks and take appropriate action to protect personal data in your Microsoft 365 environment. This guide comprises four overarching steps to help you understand how and when to use the appropriate Microsoft solution for meeting your organization's data privacy obligations.
+Use the guidance in these articles to help you assess risks and take appropriate action to protect personal data in your organization's environment. This guide comprises four overarching steps to help you understand how and when to use the appropriate Microsoft solution for meeting your organization's data privacy obligations.
 
 The steps in this solution are:
 
