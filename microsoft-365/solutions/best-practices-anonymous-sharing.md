@@ -57,7 +57,7 @@ To set an expiration date for Anyone links on a specific site
 1. Select the **These links must expire within this many days** option, and type a number of days in the box.
 1. Select **Save**.
 
-Note that once an *Anyone* link expires, the file or folder can be re-shared with a new *Anyone* link.
+Note that once an *Anyone* link expires, the file or folder can be reshared with a new *Anyone* link.
 
 You can set *Anyone* link expiration for a specific site by using [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite). 
 
@@ -106,7 +106,7 @@ To set the default file and folder sharing link for a specific site:
 
 ## Prevent unauthenticated sharing of sensitive content
 
-You can use [Microsoft Purview data loss prevention (DLP)](/purview/dlp-learn-about-dlp) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
+You can use [Microsoft Purview Data Loss Prevention (DLP)](/purview/dlp-learn-about-dlp) to prevent unauthenticated sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label, retention label, or sensitive information in the file itself.
 
 To create a DLP rule:
 
