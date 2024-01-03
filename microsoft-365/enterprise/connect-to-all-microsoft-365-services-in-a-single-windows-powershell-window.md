@@ -3,7 +3,7 @@ title: "Connect to all Microsoft 365 services in a single PowerShell window"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/23/2021
+ms.date: 12/19/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -11,6 +11,7 @@ ms.localizationpriority: high
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -29,7 +30,7 @@ When you use PowerShell to manage Microsoft 365, you can have multiple PowerShel
 
 This scenario isn't optimal for managing Microsoft 365, because you can't exchange data among those windows for cross-service management. This article describes how to use a single instance of PowerShell to manage Microsoft 365 accounts, Exchange Online, SharePoint Online, Microsoft Teams, and features in Defender for Office 365 Microsoft Purview compliance.
 
->[!Note]
+> [!NOTE]
 >This article currently only contains the commands to connect to the Worldwide (+GCC) cloud. Notes provide links to articles about connecting to the other Microsoft 365 clouds.
 
 ## Before you begin

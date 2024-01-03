@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 12/12/2023
+ms.date: 12/19/2023
 ms.reviewer: deanw, brianday
 ms.custom:
   - it-pro
@@ -16,6 +16,7 @@ ms.custom:
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Data Residency for Exchange Online
@@ -101,7 +102,6 @@ Exchange Online synchronizes the PreferredDataLocation property from Microsoft E
 Exchange Online PowerShell is required to view and configure Multi-Geo properties in your Microsoft 365 environment. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 You need the [Microsoft Azure Active Directory PowerShell Module](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 or later in v1.x to see the **PreferredDataLocation** property on user objects. User objects synchronized via Microsoft Entra Connect into Microsoft Entra ID can't have their **PreferredDataLocation** value directly modified via Azure AD PowerShell. Cloud-only user objects can be modified via Azure AD PowerShell. To connect to Azure AD PowerShell, see [Connect to PowerShell](connect-to-microsoft-365-powershell.md).
-
 
 In Exchange Online Multi-Geo environments, you don't need to do any manual steps to add Geographies to your tenant. After you receive the Message Center post that says multi-geo is ready for Exchange Online, all available Geographies will be ready and configured for you to use.
 
@@ -327,10 +327,10 @@ Some users open a shared mail folder from another mailbox (that the user has rea
 | Configuration | Description |
 |:-----|:-----|
 |User has mailbox folder permission to another mailbox  <br/> |Potentially limited.  <br/> If User A and Mailbox B aren't in the same _Geography_ during the tenant move, User A can't open Mailbox B's folder in Outlook Web Access if User A only has permission to a specific folder in Mailbox B.  <br/> To add a shared folder, right-click the user name in the left navigation panel and select **Add shared folder**.  <br/> |
-|User with full mailbox permission to another mailbox  <br/> |Fully supported.  <br/> If User A has "Full Access" permission to Mailbox B, then User A can select the shared folder in the left navigation panel in Outlook Web Access to open a window showing Mailbox B.  A user can open a shared mailbox using Outlook Web Access during the move without any adverse affect. The limitation only applies to folder-level sharing in a mailbox.
+|User with full mailbox permission to another mailbox  <br/> |Fully supported.  <br/> If User A has _Full Access_ permission to Mailbox B, then User A can select the shared folder in the left navigation panel in Outlook Web Access to open a window showing Mailbox B.  A user can open a shared mailbox using Outlook Web Access during the move without any adverse affect. The limitation only applies to folder-level sharing in a mailbox.
 
 The process of email data migration to Microsoft 365 during the Exchange Online is a common scenario and is supported. Cloud migration between datacenter geos doesn't interfere with any on-premises to cloud mailbox migrations.
 
 ### How can I determine customer data location?
 
-You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.
+You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to **Admin->Settings->Org Settings->Organization Profile->Data Location**.
