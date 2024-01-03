@@ -4,7 +4,7 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
