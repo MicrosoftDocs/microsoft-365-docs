@@ -23,15 +23,15 @@ keywords:
 Before an app protection policy can be used to protect an app on a device, the policy must be delivered and applied to the user at your organization. There are several timing reasons and remedies that will impact app protection policy delivery. 
 
 Common user state issues that impact the delivery of app protection policies:
-- **Issue**: Tenant not on-boarded.
+- **Issue**: Tenant not on-boarded.<br>
   **Solution**: You must setup your tenant for Intune.
-- **Issue**: User not licensed.
+- **Issue**: User is not licensed.<br>
   **Solution**: You must assign an Intune license to the user.
-- **Issue**: User not assigned app protection policies.
+- **Issue**: User is not assigned app protection policies.<br>
   **Solution**: You must assign app protection policy settings to the user.
-- **Issue**: User is assigned an app protection policies, but the related app isn't defined in the policy.
+- **Issue**: User is assigned an app protection policy, but the related app isn't included in the policy.<br>
   **Solution**: You must include the app that you want to protect in the app protection policy.
-- **Issue**: User successfully registered for Intune MAM, however they haven't had the app protection policy applied yet.
+- **Issue**: User successfully registered for Intune MAM, however they haven't had the app protection policy applied yet.<br>
   **Solution**: Intune typically takes 30 minutes to register users.
 
 For specific timing for each of the above issues, see [Delivery timing summary](/mem/intune/apps/app-protection-policy-delivery#delivery-timing-summary).

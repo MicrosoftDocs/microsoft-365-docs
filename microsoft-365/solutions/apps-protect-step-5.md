@@ -37,6 +37,21 @@ For more information, see [How to validate your app protection policy setup in M
 
 You can enable and collect app protection logs by enabling Intune Diagnostics on the end-user's device. Each platform has a different process to enable and collect app logs. For more information, see [Review client app protection logs](/mem/intune/apps/app-protection-policy-settings-log).  
 
+## Intune diagnostics
+
+The Intune Company Portal app has multiple options for gathering diagnostic information.
+The Company Portal includes UI that:
+- Enables end users to gather Company Portal logs.
+- Displays device and account metadata.
+- Includes per-app information about the current MAM policy.
+
+:::image type="content" source="../media/protect-managed-apps/intunediagnostics01.png" alt-text="Intune diagnostics" border="false" ::: :::image type="content" source="../media/protect-managed-apps/intuneappinfo01.png" alt-text="Intune app information" border="false" :::
+
+End users can also launch the Company Portal's diagnostic console through Microsoft Edge, by entering `about:intunehelp` in the address bar to assist in debugging.
+
+> [!IMPORTANT]
+> Diagnostics information for the device is only available when the Company Portal is installed on device.
+
 ## Next step
 
 [:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-01.png" alt-text="Step 6. Use app protection actions" border="false" :::](apps-protect-step-6.md)
