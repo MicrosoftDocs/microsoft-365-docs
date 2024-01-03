@@ -35,7 +35,7 @@ Use your [corporate communications strategy](flw-corp-comms.md) to share these r
 
 ## Tags in Microsoft Teams
 
-Using tags to start chats and in channel conversations helps your frontline workers reach the right people faster. You can manually create custom tags to categorize people by attribute such as role or project. Tags can also be automatically assigned based on schedule information in the Shifts app, or based on department or job title.
+Using tags to start chats and in channel conversations helps your frontline workers reach the right people faster. Tags categorize people by attribute, such as role or project. Tags can be manually created, automatically assigned based on schedule information in the Shifts app or based on department or job title.
 
 [End user training for tags](https://support.microsoft.com/office/using-tags-in-microsoft-teams-667bd56f-32b8-4118-9a0b-56807c96d91e). <br>
 [View the Tags in Microsoft Teams video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202727)
@@ -52,6 +52,12 @@ End user training for Walkie Talkie:
 
 [View the Walkie Talkie video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202710)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE546Fv]
+
+## Shifts
+
+With Shifts, frontline managers and workers can seamlessly view and manage their schedules and keep in touch.
+
+[End-user training for Shifts](https://support.microsoft.com/en-us/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821)
 
 ## Approvals
 
@@ -77,8 +83,3 @@ See how Updates helps frontline workers create, submit and review all updates in
 [View the Updates video on YouTube](https://go.microsoft.com/fwlink/?linkid=2202831)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5443c]
 
-## Shifts
-
-With Shifts, frontline managers and workers can seamlessly view and manage their schedules and keep in touch.
-
-[End-user training for Shifts](https://support.microsoft.com/en-us/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821)
