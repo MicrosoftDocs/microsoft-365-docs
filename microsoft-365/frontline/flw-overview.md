@@ -42,7 +42,7 @@ The following image shows the employee experiences that are key to frontline wor
 
 [Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization.
 
-Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses or Office 365 F3 license, but you can also use an Enterprise license (E1, E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
+Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses or Office 365 F3 license, but you can also use an Enterprise license (E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
 
 Some features are available for F3 licenses, but not F1, such as Power Apps and Power Automate. For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
 
@@ -119,7 +119,7 @@ You can implement many helpful scenarios for frontline workers quickly, using ou
 
 However, it also pays to spend time thinking through exactly what you want to achieve organizationally and setting the appropriate groundwork. Particularly if you need to enhance out-of-the-box scenarios with integrated or custom solutions from solution providers or partners, you'll want to spend time planning and envisioning before you dive in.
 
-The principles below are based on information from the [Frontline Worker Solutions Success Kit](https://aka.ms/TeamsFLWSuccessKit). Find more adoption resources on the [frontline worker section of the Microsoft Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
+The following principles are based on information from the [Frontline Solutions Success Kit](https://aka.ms/TeamsFLWSuccessKit). Find more adoption resources on the [frontline worker section of the Microsoft Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
 
 | Start | Discover | Envision | Build | Grow |
 |-----|-----|-----|-----|-----|
@@ -146,7 +146,7 @@ The principles below are based on information from the [Frontline Worker Solutio
 >
 > * Evaluate what you need technically to enable the scenarios.
 > * Map apps and capabilities to light up key scenarios and user stories.
-> * Think through questions about device management, such as: how will workers access Teams (install themselves? pushed to them?), how will they log in and how will you manage their identities? What's your approach to bring-your-own, corporate shared, or assigned devices?
+> * Think through questions about device management, such as: how will workers access Teams (install themselves? pushed to them?), how will they sign in and how will you manage their identities? What's your approach to bring-your-own, corporate shared, or assigned devices?
 > * Identify relevant roles and responsibilities for the execution phase.
 
 **Build**
@@ -167,7 +167,7 @@ The principles below are based on information from the [Frontline Worker Solutio
 
 Get started by following these steps:
 
-:::image type="content" source="media/m365-flw-get-started.png" alt-text="5 steps to get started with Microsoft 365 for frontline workers.":::
+:::image type="content" source="media/m365-flw-get-started.png" alt-text="Five steps to get started with Microsoft 365 for frontline workers.":::
 
 1. **[Choose your scenarios](flw-choose-scenarios.md):** Discover the ways you can use Microsoft 365 for frontline workers to connect and engage your workforce, manage your workforce, and streamline operations.
 1. **[Set up Microsoft 365](flw-deploy-overview.md):** Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.

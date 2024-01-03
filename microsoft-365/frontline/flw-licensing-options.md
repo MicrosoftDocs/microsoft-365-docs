@@ -8,7 +8,7 @@ ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn about the F1 and F3 licenses for the Microsoft 365 for frontline workers SKU and what they include.
+description: Learn about the F1 and F3 licenses for the Microsoft 365 for frontline workers and what they include.
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
@@ -44,8 +44,8 @@ With this example, you can mix license types for the two types of workers in you
 | Frontline workers communicate on the go with Teams chat, schedule work with Shifts, check off to-do items with Tasks, and track items in Lists, along with other Teams functionality.  | Information workers communicate over Teams with chat, meet, and call, and use other Teams apps (depending on the specific license). |
 | Frontline workers can find organization-wide resources, communications, or training with SharePoint, OneDrive, Viva Engage, and Stream. | Information workers create or consume team or organization-wide resources and communications with included Microsoft 365 services (depending on the specific license). |
 
-For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-## Related topics
+## Related articles
 
 [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams)
