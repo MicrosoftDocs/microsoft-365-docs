@@ -30,7 +30,7 @@ In the setup process, you define the following information with Microsoft Entra 
 
 - Who your frontline workers are
 - What locations they work at
-- Department and job titles of your frontline workers
+- Department and job titles of your frontline workers (optional)
 
 You also determine team structure and team owners.
 
@@ -96,7 +96,7 @@ When evaluating the right solution for your organization, we recommend you do th
     These attributes map departments and job titles in your organization, which allows you to deliver targeted communications features, such as [automatic tags](set-up-targeted-communications.md#automatic-tags), to your frontline. Your frontline workers can quickly and easily reach the right group of people through tags that are automatically created based on the attribute mappings. [Learn more about attribute mapping and targeted communications](set-up-targeted-communications.md).
 
     > [!NOTE]
-    > This step is optional. If you choose not to map frontline attributes, leave the values as **None**. You can always come back and map them later.
+    > This step is optional. If you choose not to map frontline attributes, leave the values as **None**. You can always come back and map them later on the [Dynamic teams settings page](#edit-your-frontline-team-settings).
 
 1. Review your settings, and then choose **Finish setup.**
 
@@ -143,12 +143,13 @@ You can manage your teams when changes happen in your organization.
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
 2. In the **Deploy settings** column, choose **Deploy frontline teams** .
-3. Edit your settings on this page, and then select **Save**. Your settings might take several hours to update. See the following table for the effects of updating your settings.
+3. On the Dynamic teams settings page, edit your settings, and then select **Save**. Your settings might take several hours to update. See the following table for the effects of updating your settings.
 
     |Setting |Effect on existing frontline teams |Effect on new frontline teams |
     |--------|-----------------------------------|------------------------------|
-    |Define your frontline Microsoft Entra attribute. |All existing frontline teams will be members that have the new Microsoft Entra attribute defined. |All new frontline teams members will have the new Microsoft Entra attribute defined. |
-    |Choose the values applicable to your frontline Microsoft Entra attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated Microsoft Entra attributes that you defined. |
+    |Define your frontline worker attribute. |All existing frontline teams will be members that have the new Microsoft Entra attribute defined. |All new frontline teams members will have the new Microsoft Entra attribute defined. |
+    |Choose the values applicable to your frontline Microsoft Entra attribute. |All existing frontline team members will reflect your updated values. |All new teams will be populated with members who have the updated Microsoft Entra attributes that you defined. |
+    |Map your frontline attributes for department and job title. |All existing frontline team members will reflect the Microsoft Entra attribute you defined for department and job title. |All new frontline team members will use the Microsoft Entra attribute you defined for department and job title.|
     |Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Microsoft Entra attribute. |
     |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
     |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |

@@ -3,7 +3,7 @@ title: Set up targeted communications for your frontline
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: yingchang
+ms.reviewer: yingchang, aaglick
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -37,7 +37,7 @@ Your frontline teams must be created through the [deploy frontline dynamic teams
 > [!NOTE]
 > Mapping frontline attributes is part of the setup process when you deploy frontline dynamic teams. It's an optional step. If you want to allow your frontline to easily reach each other by department or job title, map your attributes to enable targeted communications.
 >
-> If you already deployed your frontline dynamic teams and you want to enable targeted communications, rerun the experience, and map your attributes.
+> If you've already deployed your frontline dynamic teams and you want to enable targeted communications for those teams, go to the [Dynamic teams settings page](deploy-dynamic-teams-at-scale.md#edit-your-frontline-team-settings), and map your attributes.
 
 ## Set up targeted communications
 
@@ -60,7 +60,7 @@ After you mapped your attributes, you can view your list of mapped values. These
     If your organization has new departments or job titles that aren’t in the list, choose **Refresh values** to update the list. Keep in mind that this process can take several hours to complete.
 
     > [!NOTE]
-    > If you want to change or remove the **Department** or **Job title** attribute, rerun the deploy frontline dynamic teams experience, make your changes, and then come back here to view the updated values.
+    > If you want to change or remove the **Department** or **Job title** attribute, go to the [Dynamic teams settings page](deploy-dynamic-teams-at-scale.md#edit-your-frontline-team-settings), edit your attributes, and then come back here to view the updated values.
 
 ## Automatic tags
 
