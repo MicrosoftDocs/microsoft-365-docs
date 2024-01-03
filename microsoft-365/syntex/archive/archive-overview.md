@@ -62,7 +62,7 @@ Administrators should notify the site owners and end users before a site is arch
 
 - Currently, end user search results won't show any archived content.
 
-- Currently, columns such as Archived Date and Archived By aren't currently available. However these columns are planned and will be rolled out when available.
+- Columns such as Archived Date and Archived By aren't currently available but are planned and will be rolled out when available.
 
 - For multi-geo tenants, while data residency requirements are honored, site moves aren't supported. Archived sites will need to be reactivated prior to any move.
 
