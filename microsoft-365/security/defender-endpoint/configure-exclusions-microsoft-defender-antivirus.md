@@ -50,7 +50,6 @@ If you're using another tool, such as Configuration Manager or Group Policy, or 
 
 - [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configure contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md) to configure restrictions for your exclusions.
 
 #### Manage antivirus exclusions in Intune (for existing policies)
 
