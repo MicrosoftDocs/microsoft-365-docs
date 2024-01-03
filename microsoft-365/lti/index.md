@@ -107,3 +107,5 @@ For configuration steps, see:
 
 - [Microsoft Reflect with Canvas](reflect-lti-canvas.md).
 - [Microsoft Reflect with Schoology Learning](reflect-lti-schoology.md).
+- [Microsoft Reflect with Moodle](reflect-lti-moodle.md).
+- [Microsoft Reflect with D2L Brightspace](reflect-lti-brightspace.md).
