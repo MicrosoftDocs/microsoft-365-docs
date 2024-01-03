@@ -24,7 +24,7 @@ ms.date: 01/19/2023
 
 # Deploy Microsoft Defender for Endpoint on Linux with Saltstack
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

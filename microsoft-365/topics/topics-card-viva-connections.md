@@ -1,5 +1,5 @@
 ---
-ms.date: 08/29/2022
+ms.date: 12/07/2023
 title: Use Topics cards in the Viva Connections dashboard
 ms.author: daisyfeller
 author: daisyfell
@@ -55,9 +55,9 @@ Topics cards can be added to the Viva Connections dashboard. The dashboard is on
 3. Select **Add card** and then select one of the Topics cards.
 4. Select the **Edit** (pencil icon) to open the settings panel where you can choose the card size and add audience to target. 
 
-|Contribute card editing panel  |Discover card editing panel  | 
-| :---------------------- | :------------------- |
-|![Screenshot of the Topics Contribute card's edit panel.](../media/knowledge-management/contribute-card-edit.png)|![Screenshot of the Topics Discover card's edit panel.](../media/knowledge-management/discover-card-edit.png)  | 
+   |Contribute card editing panel  |Discover card editing panel  | 
+   | :---------------------- | :------------------- |
+   |![Screenshot of the Topics Contribute card's edit panel.](../media/knowledge-management/contribute-card-edit.png)|![Screenshot of the Topics Discover card's edit panel.](../media/knowledge-management/discover-card-edit.png)  | 
 
 5. Plan to [apply audience targeting for cards](/viva/connections/use-audience-targeting-in-viva-connections#apply-audience-targeting-to-cards-in-the-dashboard) to make sure relevant content is displayed to the appropriate audiences. 
 6. [Preview the experience](/viva/connections/create-dashboard#preview-your-dashboard-to-see-how-it-will-display-for-different-audiences) for different audiences and devices by selecting **Preview** in the top-right corner before sharing with others.

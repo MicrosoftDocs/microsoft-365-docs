@@ -24,7 +24,7 @@ ms.date: 07/21/2023
 
 # Microsoft Defender Antivirus ring deployment using System Center Configuration Manager and Windows Server Update Services
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -51,12 +51,12 @@ This section describes the process for setting up the pilot UAT / Test / QA envi
 :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-sccm-wsus-schedule.png" alt-text="Shows an example Microsoft Defender for Endpoint ring deployment schedule using System Center Configuration Manager and Windows Server Update Services." lightbox="images/microsoft-defender-antivirus-deploy-ring-sccm-wsus-schedule.png":::
 
 > [!NOTE]
-> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+> Security intelligence update (SIU) is equivalent to signature updates, which is the same as definition updates.
 
 On about 10-500 Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
 > [!NOTE]
-> If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
+> If you have a Citrix environment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
 
 1. In **System Center Configuration Manager** > **Create Automatic Deployment Rule Wizard** > **General** page,  in **Specify the setting for this automatic deployment rule**, make the following settings:
    
@@ -126,7 +126,7 @@ On about 10-500 Windows and/or Windows Server systems, depending on how many tot
    | **Name** | Type a name for your new deployment package. For example, type _MDE-MDAV Security Intelligence Update_. |
    | **Description** | Type a brief description for your new deployment package |
    | **Package Source (Example): \\_server_name_\_folder path_** | Type the path to your package source. For example, type _\\sccm\deployment\MDE-MDAV_Security_Intelligence_Updates_Pilot_ <br> or select **Browse** to navigate to - and select - your package source. |
-   | **Sending piroity:** | Select **High** and select **Enable binary differential replication** |
+   | **Sending priority:** | Select **High** and select **Enable binary differential replication** |
    
 1. Select **Next**. On the **Distribution point** page, under **Specify the distribution points or distribution point groups to host the content**,  select **Add** and then specify your distribution point or distribution point groups.
    

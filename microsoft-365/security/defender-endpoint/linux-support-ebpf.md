@@ -14,12 +14,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 11/17/2023
+ms.date: 12/11/2023
 ---
 
 # Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -54,9 +54,9 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 |--------------------|----------------------|----------------|
 | Ubuntu             | 16.04                | 4.15.0         |
 | Fedora             | 33                   | 5.8.15         |
-| CentOS             | 7.6                  | 3.10.0-957     |
+| CentOS             | 7.6                  | 3.10.0-957.12  |
 | SLES               | 15                   | 5.3.18-18.47   |
-| RHEL               | 7.6                  | 3.10.0-957     |
+| RHEL               | 7.6                  | 3.10.0-957.12  |
 | Debian             | 9.0                  | 4.19.0         |
 | Oracle Linux RHCK  | 7.9                  | 3.10.0-1160    |
 | Oracle Linux UEK   | 7.9                  | 5.4            |
@@ -100,7 +100,7 @@ uname -a
 
 Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result into kernel hang issues. Following steps can be taken to mitigate this issue:    
  
-1. Use a kernal version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Please note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
+1. Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Please note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
 2. Switch to auditd mode if customer needs to use the same kernel version
 ```bash
 sudo mdatp config  ebpf-supplementary-event-provider  --value disabled

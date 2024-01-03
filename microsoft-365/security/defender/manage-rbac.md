@@ -19,7 +19,7 @@ search.appverid: met150
 
 # Microsoft Defender XDR Unified role-based access control (RBAC)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -29,8 +29,6 @@ search.appverid: met150
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 Microsoft Defender XDR provides integrated threat protection, detection, and response across endpoints, email, identities, applications, and data within a single portal. Controlling a user's permissions around their access to view data or complete tasks is essential for organizations to minimize the risks associated with unauthorized access.
 
@@ -49,7 +47,7 @@ Centralized permissions management is supported for the following solutions:
 |Microsoft Defender Vulnerability Management | Centralized permissions management for all  Defender Vulnerability Management capabilities.|
 |Microsoft Defender for Office 365| Full support for all email & collaboration data and actions scenarios that are controlled by Exchange Online Protection roles (EOP) as well as scenarios controlled by Exchange Online (EXO). </br></br> **Note:** The Microsoft Defender XDR RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses only. This capability is not available to users on trial licenses. </br></br>Granular delegated admin privileges (GDAP) is not supported. </br></br>Remote PowerShell is not supported. |
 |Microsoft Defender for Identity|Full support for all identity data and actions. </br></br> **Note:** Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://security.microsoft.com/cloudapps/permissions/roles). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).|
-|Microsoft Defender for Cloud|	Support access management for all Defender for Cloud data that is available in Microsoft Defender XDR portal.|
+|Microsoft Defender for Cloud|	Support access management for all Defender for Cloud data that is available in Microsoft Defender portal.|
 |Microsoft Secure Score|Full support for all Secure Score data from the [Products included in Secure Score](../defender/microsoft-secure-score.md#products-included-in-secure-score).|
 
 > [!NOTE]
@@ -112,4 +110,4 @@ Watch the following video to see the steps above in action:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW12hyh]
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

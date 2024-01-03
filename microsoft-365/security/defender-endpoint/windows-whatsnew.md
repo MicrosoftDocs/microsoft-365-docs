@@ -18,7 +18,7 @@ ms.topic: reference
 
 # What's new in Microsoft Defender for Endpoint on Windows
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

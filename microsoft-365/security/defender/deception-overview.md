@@ -1,7 +1,7 @@
 ---
 title: Manage the deception capability in Microsoft Defender XDR
 description: Detect human-operated attacks with lateral movement in the early stages using high confidence signals from the deception feature in Microsoft Defender XDR.
-keywords:  deception, defender for endpoint, Microsoft 365 Defender, Microsoft defender for endpoint, lures, fake hosts, fake users, fake network, honeypot, honeytoken, decoy, fake host, fake user, deception technology
+keywords:  deception, defender for endpoint, Microsoft Defender XDR, Microsoft defender for endpoint, lures, fake hosts, fake users, fake network, honeypot, honeytoken, decoy, fake host, fake user, deception technology
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +25,7 @@ ms.date: 11/14/2023
 
 # Manage the deception capability in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -60,7 +60,7 @@ Attackers interacting with the fake network assets set up by the deception capab
 
 ### How does the Microsoft Defender XDR deception capability work?
 
-The built-in deception capability in the Microsoft Defender XDR portal uses rules to make decoys and lures that match your environment. The feature applies machine learning to suggest decoys and lures that are tailored to your network. You can also use the deception feature to manually create the decoys and lures. These decoys and lures are then automatically deployed to your network and planted to devices you specify using PowerShell.
+The built-in deception capability in the Microsoft Defender portal uses rules to make decoys and lures that match your environment. The feature applies machine learning to suggest decoys and lures that are tailored to your network. You can also use the deception feature to manually create the decoys and lures. These decoys and lures are then automatically deployed to your network and planted to devices you specify using PowerShell.
 
 :::image type="content" source="../../media/deception/fig1-deception.png" alt-text="Screenshot of an attack with lateral movement and where deception intercepts the attack" lightbox="../../media/deception/fig1-deception.png":::
 *Figure 1. Deception technology, through high confidence detections of human-operated lateral movement, alerts security teams when an attacker interacts with fake hosts or lures*
@@ -92,11 +92,11 @@ The alert details contain:
 - The decoy device or user account where the alert originated
 - The type of attack like sign in attempts or lateral movement attempts
 
-:::image type="content" source="../../media/deception/fig2-deception.png" alt-text="Screenshot of an deception alert highlighting the tag and the attempt" lightbox="../../media/deception/fig2-deception.png":::
+:::image type="content" source="../../media/deception/fig2-deception.png" alt-text="Screenshot of a deception alert highlighting the tag and the attempt" lightbox="../../media/deception/fig2-deception.png":::
 *Figure 2. Details of a deception-related alert*
 
 ## Next step
 
 - [Configure the deception capability in Microsoft Defender XDR](configure-deception.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

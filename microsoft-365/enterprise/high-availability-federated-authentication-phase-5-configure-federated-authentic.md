@@ -54,7 +54,7 @@ You should now be ready to configure Microsoft Entra Connect and federated authe
     
 - A private DNS A record for your federation service FQDN points to the private IP address of the internal Azure load balancer for the AD FS servers.
     
-- A public certification authority-isssued digital certificate suitable for SSL connections with the SAN set to your federation service FQDN is a PFX file stored on your directory synchronization server.
+- A public certification authority-issued digital certificate suitable for SSL connections with the SAN set to your federation service FQDN is a PFX file stored on your directory synchronization server.
     
 - The root certificate for the public certification authority is installed in the Trusted Root Certification Authorities store on your computers and devices.
     

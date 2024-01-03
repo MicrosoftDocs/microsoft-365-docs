@@ -22,7 +22,7 @@ ms.date: 05/19/2022
 
 # Defender for Endpoint onboarding Windows Server
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

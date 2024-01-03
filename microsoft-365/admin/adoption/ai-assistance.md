@@ -97,7 +97,7 @@ Use this feature to provide your organizational leaders with a centralized locat
 
 :::image type="content" source="../../media/as-upload-survey.png" alt-text="Screenshot showing the dashboard to upload survey data for Copilot sentiment" lightbox="../../media/as-upload-survey.png":::
 
-:::image type="content" source="../../media/as-survey-results.png" alt-text="Screenshot showing the pop-up pane for survey results for Copilot sentiment" lightbox="../../media/as-survey-results.png":::
+:::image type="content" source="../../media/as-survey-results.png" alt-text="Screenshot showing the pop-up pane for survey results for Copilot sentiment":::
 
 ### Update results over time
 

@@ -45,7 +45,7 @@ Follow the steps below to make that helpful digest email happen.
 1. On the page that loads, select **Preferences**.
 1. A flyout will appear on the right, select the **Email** tab.
 1. Ensure the email notification settings are as expected, you can select **Other e-mail addresses** if required to setup the digest to be sent to different users or a shared mailbox for example.
-1. Select the **Send me a weekly digest about services I select** box, and select the services you wish to receive information about, as a minimum you should select **Exchange Online** & **Microsoft 365 Defender**.
+1. Select the **Send me a weekly digest about services I select** box, and select the services you wish to receive information about, as a minimum you should select **Exchange Online** & **Microsoft Defender XDR**.
 1. Press **Save**.
 
 You're done.

@@ -24,7 +24,7 @@ ms.date: 04/08/2021
 
 # Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

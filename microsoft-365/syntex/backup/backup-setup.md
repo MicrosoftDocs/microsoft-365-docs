@@ -20,7 +20,7 @@ description: Learn how to set up and configure Microsoft 365 Backup and backup p
 # Set up Microsoft 365 Backup (Preview)
 
 > [!NOTE]
-> This feature is currently in preview and subject to change.
+> Microsoft 365 Backup (Preview) is rolling out. When it is available worldwide, this message will be updated and you will be able to see and enable the feature in the Syntex billing setup flow in the Microsoft 365 admin center.
 
 Get started with Microsoft 365 Backup by following the simple three steps in the Microsoft 365 admin center.
 

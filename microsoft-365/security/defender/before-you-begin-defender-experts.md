@@ -23,7 +23,7 @@ ms.date: 11/10/2023
 
 # Before you begin using Defender Experts for Hunting
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -107,4 +107,4 @@ If you haven't done so yet, you can complete the customer interest form for Defe
 ### Next step
 
 - [Start using Defender Experts for Hunting](onboarding-defender-experts-for-hunting.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

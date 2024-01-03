@@ -12,7 +12,7 @@ ms.collection:
 - m365-security
 - tier2
 audience: ITPro
-ms.date: 11/21/2023
+ms.date: 12/13/2023
 search.appverid: MET150
 
 ---
@@ -215,7 +215,7 @@ wsl_endpoints
 Get WSL device ids and their corresponding host device ids 
 DeviceInfo  
 | where OSPlatform == "Linux" and isempty(HostDeviceId) != true
-| distinct WSLDeviceId=DeviceId, HostDeviceId;
+| distinct WSLDeviceId=DeviceId, HostDeviceId
 ```
 
 #### Get a list of WSL device IDs where curl or wget was run
@@ -264,7 +264,7 @@ DeviceProcessEvents
 5. In case you face any other challenges or issues, open the terminal and run the following commands to generate the support bundle: 
 
    ```powershell
-   cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools
+   cd "C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools"
    ```
 
    ```powershell

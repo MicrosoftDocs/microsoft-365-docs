@@ -15,12 +15,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 10/30/2023
+ms.date: 12/11/2023
 ---
 
 # Resources for Microsoft Defender for Endpoint on macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -97,7 +97,7 @@ Supports table and JSON format output types. For each command, there's a default
 
 ### From the command line
 
-- `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
+- `sudo '/Library/Application Support/Microsoft/Defender/uninstall/install_helper execute --path '/Library/Application Support/Microsoft/Defender/uninstall/uninstall' --args --post-uninstall-hook`
 
 ## Configuring from the command line
 

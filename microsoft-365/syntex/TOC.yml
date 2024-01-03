@@ -191,7 +191,7 @@
         - name: Find and manage terms 
           href: taxonomy-tagging.md
 
-    - name: Syntex eSignature 
+    - name: eSignature 
       items: 
         - name: Overview 
           href: esignature-overview.md
@@ -225,6 +225,8 @@
           href: archive/archive-compliance.md
         - name: End user experience 
           href: archive/archive-end-user.md
+        - name: FAQs
+          href: archive/archive-faq.md
 
     - name: Microsoft 365 Backup (Preview)
       items: 
@@ -334,7 +336,7 @@
         - name: Microsoft Syntex REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
-    - name: Syntex-SharePoint Advanced Management
+    - name: SharePoint Advanced Management
       href: /sharepoint/advanced-management
 
 

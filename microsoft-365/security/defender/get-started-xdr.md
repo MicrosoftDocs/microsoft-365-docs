@@ -66,7 +66,7 @@ Defender Experts for XDR lets you exclude devices and users from remediation act
 1. In the same Defender Experts settings setup, under **Exclusions**, go to the **Device groups** tab.
 2. Select **+ Add device groups**, then search for and choose the device group(s) that you wish to exclude.
    > [!NOTE]
-   > This page only lists existing device groups. If you wish to create a new device group, you first need to go to the Defender for Endpoint settings in your Microsoft 365 Defender portal. Then, refresh this page to search for and choose the newly created group. [Learn more about creating device groups](../defender-endpoint/machine-groups.md)
+   > This page only lists existing device groups. If you wish to create a new device group, you first need to go to the Defender for Endpoint settings in your Microsoft Defender portal. Then, refresh this page to search for and choose the newly created group. [Learn more about creating device groups](../defender-endpoint/machine-groups.md)
 
 3. Select **Add device groups**.
 4. Back on the **Device groups** tab, review the list of excluded device groups. If you wish to remove a device group from the exclusion list, choose it then select **Remove device group**.
@@ -171,4 +171,4 @@ When you complete all the required tasks and meet the onboarding targets in your
 - [General information on Defender Experts for XDR service](frequently-asked-questions.md)
 - [How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

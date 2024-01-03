@@ -28,7 +28,7 @@ ms.date: 08/21/2023
 
 # Responding to your first incident in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -39,7 +39,7 @@ This guide lists Microsoft resources for new Microsoft Defender XDR users to con
 - You'll quickly learn to use Microsoft Defender XDR to respond to incidents and alerts.
 - You’ll discover the portal's features to aid incident investigation and remediation through the videos and tutorials.
 
-Microsoft Defender XDR enables you to see relevant threat events across all assets (devices, identities, mailboxes, cloud apps, and more). The portal consolidates signals from the [Defender protection suite](microsoft-365-defender.md#microsoft-365-defender-protection), [Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md), and other [integrated security information and event management (SIEM) solutions](configure-siem-defender.md). Correlated attack information with full context in a single pane of glass enables you to successfully defend and protect your organization.
+Microsoft Defender XDR enables you to see relevant threat events across all assets (devices, identities, mailboxes, cloud apps, and more). The portal consolidates signals from the [Defender protection suite](microsoft-365-defender.md#microsoft-defender-xdr-protection), [Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md), and other [integrated security information and event management (SIEM) solutions](configure-siem-defender.md). Correlated attack information with full context in a single pane of glass enables you to successfully defend and protect your organization.
 
 This guide has three main sections:
 
@@ -59,7 +59,7 @@ Microsoft Defender XDR has many features that you can use to respond to an incid
 :::image type="content" source="../../media/first-incident/m365d-incidents.png" alt-text="Incident queue in Microsoft Defender XDR" lightbox="../../media/first-incident/m365d-incidents.png":::
 *Figure 2. Incident queue*
 
-Each incident contains automatically correlated [alerts](investigate-alerts.md) from [different detection sources](microsoft-365-defender.md#microsoft-365-defender-protection) and might involve various endpoints, identities, or cloud apps.
+Each incident contains automatically correlated [alerts](investigate-alerts.md) from [different detection sources](microsoft-365-defender.md#microsoft-defender-xdr-protection) and might involve various endpoints, identities, or cloud apps.
 
 ## Incident triage
 
@@ -106,4 +106,4 @@ Learn how to classify incidents and alerts through this video:
 - [Respond to common attacks using incident response playbooks](/security/operations/incident-response-playbooks)
 - Learn the portal's features and functions through the [Microsoft Defender XDR Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

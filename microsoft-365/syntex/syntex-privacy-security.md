@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-accountability
     - m365initiative-syntex
 ms.localizationpriority:  medium
 description: Learn about privacy, security, and compliance in Microsoft Syntex.

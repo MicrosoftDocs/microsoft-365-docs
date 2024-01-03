@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Office 365 in Microsoft Defender XDR
 description: Learn about changes from the Security & Compliance Center to Microsoft Defender XDR.
-keywords: Microsoft 365 security, Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, new defender security portal
+keywords: Microsoft 365 security, Getting started with Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, new defender security portal
 ms.date: 11/22/2022
 ms.author: tracyp
 author: msfttracyp
@@ -21,7 +21,7 @@ ms.service: defender-xdr
 
 # Microsoft Defender for Office 365 in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender XDR](microsoft-365-defender.md)
@@ -171,4 +171,4 @@ Also included is a link to the Security & Compliance Center for comparison. The 
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
 - [Custom detection rules](/microsoft-365/security/defender-endpoint/custom-detection-rules)
 - [Create a phishing attack simulation](../office-365-security/attack-simulation-training-simulations.md) and [create a payload for training your people](../office-365-security/attack-simulation-training-payloads.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

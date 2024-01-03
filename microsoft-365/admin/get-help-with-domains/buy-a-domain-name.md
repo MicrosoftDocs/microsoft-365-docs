@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 11/07/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -79,7 +79,8 @@ We offer a free Domain Privacy Subscription with the purchase of a domain. This 
   
 ## Buy a domain from another domain registrar
 If you want to buy a domain from a domain registrar other than [GoDaddy](https://www.godaddy.com), we recommend you use one below that supports automatic setup (Domain Connect). 
-  
+
+- [Aruba](https://hosting.aruba.it/en/home.aspx)  
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)

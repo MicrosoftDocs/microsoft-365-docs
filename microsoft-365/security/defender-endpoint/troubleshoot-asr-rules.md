@@ -22,7 +22,7 @@ ms.date: 07/18/2023
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

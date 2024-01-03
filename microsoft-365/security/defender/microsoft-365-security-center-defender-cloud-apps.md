@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Cloud Apps in Microsoft Defender XDR
 description: Learn about changes from the Microsoft Defender for Cloud Apps to Microsoft Defender XDR
-keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Cloud Apps
+keywords: Getting started with Microsoft Defender XDR, Microsoft Defender for Cloud Apps
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -24,7 +24,7 @@ ms.custom: admindeeplinkDEFENDER
 
 # Microsoft Defender for Cloud Apps in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -147,7 +147,7 @@ Customers still using the classic Microsoft Defender for Cloud Apps portal are n
 
 1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a Global administrator, Security administrator, or Cloud App Security administrator in Azure Active directory, or a local global admin in Microsoft Defender for Cloud Apps.
 
-1. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go directly to the Redirection setting](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
+1. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft Defender XDR** or [go directly to the Redirection setting](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
 
 1. Toggle the **Automatic redirection** setting to **Off**.
 
@@ -179,19 +179,19 @@ For more information, see [Microsoft Defender for Cloud Apps preview features](/
 
 Learn how to protect your cloud apps in Microsoft Defender XDR:
 
-**Protecting cloud apps in Microsoft 365 Defender**:<br>
+**Protecting cloud apps in Microsoft Defender XDR**:<br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU title="Protecting cloud apps in Microsoft 365 Defender"]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU title="Protecting cloud apps in Microsoft Defender XDR"]
 
 <br>
 
-**Defender for Cloud Apps in Microsoft 365 Defender for customers migrating from the classic portal**<br>
+**Defender for Cloud Apps in Microsoft Defender XDR for customers migrating from the classic portal**<br>
 
-> [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=2105e5c9-23bf-41fb-a61d-0f0fae8ef05f title="Defender for Cloud Apps in Microsoft 365 Defender for customers migrating from the classic portal"]
+> [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=2105e5c9-23bf-41fb-a61d-0f0fae8ef05f title="Defender for Cloud Apps in Microsoft Defender XDR for customers migrating from the classic portal"]
 
 
 ## Related information
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Contact support](/defender-cloud-apps/support-and-ts)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -23,7 +23,7 @@ ms.date: 12/18/2020
 
 # Troubleshooting issues on Microsoft Defender for Endpoint on Android
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -42,7 +42,7 @@ This article provides solutions to help address the sign-on issues.
 
 **Sign in failed:** *Unexpected error, try later*
 
-:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="An sign-in failed error Unexpected error in the sign-in page of the Microsoft Defender 365 portal." lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
+:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="A screenshot showing a sign-in failed error Unexpected error in the sign-in page of the Microsoft Defender 365 portal." lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **Message:**
 

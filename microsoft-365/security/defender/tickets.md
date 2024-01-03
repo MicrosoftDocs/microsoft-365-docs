@@ -25,7 +25,7 @@ ms.date: 02/16/2021
 
 # Integrate ServiceNow tickets into the Microsoft Defender portal and compliance center
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 > [!CAUTION]
 > **The preview period for the ServiceNow connector has ended**
@@ -33,4 +33,4 @@ ms.date: 02/16/2021
 > This capability is no longer available. Thank you for your feedback and continued support while we determine next steps.
 
 ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows.
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

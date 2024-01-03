@@ -27,7 +27,7 @@ ms.date: 07/15/2021
 
 # Step 5. Develop and test use cases
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -145,4 +145,4 @@ After executing the Preparation phase, organizations should invoke the remaining
 ## Next step
 
 [Step 6. Identify SOC maintenance tasks](integrate-microsoft-365-defender-secops-tasks.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

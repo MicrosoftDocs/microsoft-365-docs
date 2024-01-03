@@ -32,7 +32,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 The green boxes in the following image depict what's included in Defender for Endpoint Plan 1:
 
-:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="What's inculded with Defender for Endpoint Plan 1" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
+:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="A diagram showing what's included with Defender for Endpoint Plan 1" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
 
 Use this guide to:
 
