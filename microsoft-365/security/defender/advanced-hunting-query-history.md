@@ -44,10 +44,10 @@ To view your query history, select the **Query history** tab.
 Your recent queries appear in descending order of when you last ran them. The query history contains up to 30 queries from the last 28 days.
 
 By default, **Query history** contains following columns:
-- Time - 
-- Query  
+- Time - when the query was started
+- Query   
 - Query time - how long the query ran
-- State - whether the query ran successfully (Completed), 
+- State - whether the query was completed, failed, or was throttled
 
 Select **Customize columns** to hide any of the columns in your view.
 

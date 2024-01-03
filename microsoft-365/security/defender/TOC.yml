@@ -287,11 +287,7 @@
                      - name: Advanced hunting example
                        href: advanced-hunting-example.md
                      - name: Transition from Defender for Endpoint 
-                       href: advanced-hunting-migrate-from-mde.md                
-                 - name: Work with query results
-                   href: advanced-hunting-query-results.md
-                 - name: Rerun query in query history
-                   href: advanced-hunting-query-history.md                   
+                       href: advanced-hunting-migrate-from-mde.md 
                  - name: Quickly investigate with go hunt
                    href: advanced-hunting-go-hunt.md
                  - name: Create custom functions 
@@ -312,6 +308,10 @@
                       href: advanced-hunting-best-practices.md
                     - name: Handle errors
                       href: advanced-hunting-errors.md
+             - name: Work with query results
+               href: advanced-hunting-query-results.md
+             - name: Rerun query in query history
+               href: advanced-hunting-query-history.md                       
              - name: Data schema
                items: 
                 - name: Understand the schema
