@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/17/2023
+ms.date: 01/03/2024
 ---
 
 # Start using Microsoft Defender Experts for Hunting
@@ -91,9 +91,9 @@ A sample Defender Experts Notification shows up in your **Incidents** page with 
 
 **To generate a sample notification:**
 
-1. In your Microsoft Defender XDR navigation pane, go to **Settings** > **Defender Experts** and then select **Sample DEN**.
-2. Select **Generate a sample DEN**. A green status message appears, confirming that your sample notification is ready for review.
-3. Under **Recently generated Defender Experts Notifications**, select a link from the list to view its corresponding generated sample notification. The most recent sample appears on the top of the list. Selecting a link redirects you to the **Incidents** page.
+1. In your Microsoft Defender XDR navigation pane, go to **Settings** > **Defender Experts** and then select **Sample notifications**.
+2. Select **Generate a sample notification**. A green status message appears, confirming that your sample notification is ready for review.
+3. Under **Recently generated Defender Experts Notification**, select a link from the list to view its corresponding generated sample notification. The most recent sample appears on the top of the list. Selecting a link redirects you to the **Incidents** page.
 
 :::image type="content" source="../../media/mte/defenderexperts/sample-den-links-dexh.png" alt-text="Screenshot of Sample DEN links." lightbox="../../media/mte/defenderexperts/sample-den-links-dexh.png":::
 

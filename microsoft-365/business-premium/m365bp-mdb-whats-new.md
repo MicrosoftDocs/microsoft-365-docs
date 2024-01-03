@@ -9,7 +9,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/12/2023
+ms.date: 01/02/2024
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -27,6 +27,10 @@ f1.keywords: NOCSH
 - [Microsoft Defender for Business](../security/defender-business/mdb-overview.md)
 
 This article lists new features in the latest release of [Microsoft 365 Business Premium](m365bp-overview.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
+
+## January 2024
+
+- **Ability to manage endpoint security subscription settings**. Defender for Business customers who have a mix of subscriptions (such as Defender for Business and Defender for Endpoint Plan 2 licenses) can now change their subscription settings to apply Defender for Endpoint Plan 2 features and capabilities across devices. See [Manage your endpoint security subscription settings across client devices](../security/defender-business/mdb-manage-subscription.md).
 
 ## December 2023
 
