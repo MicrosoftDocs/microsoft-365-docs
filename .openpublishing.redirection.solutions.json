@@ -138,7 +138,7 @@
    {
       "source_path":"microsoft-365/solutions/b2b-extranet.md",
       "redirect_url":"/entra/id-governance/entitlement-management-onboard-external-user",
-      "redirect_document_id":true
+      "redirect_document_id":false
    },
    {
       "source_path":"microsoft-365/solutions/team-security-isolation-dev-test.md",
