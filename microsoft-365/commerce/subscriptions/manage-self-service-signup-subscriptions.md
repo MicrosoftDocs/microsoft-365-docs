@@ -22,7 +22,7 @@ ms.custom:
   - azure-ad-ref-level-one-done
 search.appverid: MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization in the Microsoft 365 admin center."
-ms.date: 12/19/2023
+ms.date: 01/02/2024
 ---
 # Manage self-service sign-up subscriptions in the Microsoft 365 admin center
 
@@ -46,7 +46,7 @@ You must be a global or billing admin to perform the tasks in this article. For 
 
 ## How are these subscriptions different from self-service purchase subscriptions?
 
-Self-service sign-up subscriptions are free and are available for a larger list of products than self-service purchase subscriptions. When a user signs up for a self-service purchase subscription, they're responsible for paying for it. Self-service purchase subscriptions are only available for Power Platform products (Power BI, Power Apps, and Power Automate), Project, and Visio. For more information, see [Self-service purchase FAQ](self-service-purchase-faq.yml).
+Self-service sign-up subscriptions are free and are available for a larger list of products than self-service purchase subscriptions. When a user signs up for a self-service purchase subscription, they're responsible for paying for it. For more information, see [Self-service purchase FAQ](self-service-purchase-faq.yml).
 
 ## Block users from signing up
 
