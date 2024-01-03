@@ -27,8 +27,7 @@ This article describes how to apply either Defender for Business or Defender for
 
 - You should have active trial or paid licenses for both Defender for Business and Defender for Endpoint Plan 2. 
 
-- If you're using Defender for Business only, you can continue using it. This article applies to customers who are considering switching to Defender for Endpoint Plan 2.
-
+- If you're using Defender for Business only, you can continue using it. In this case, no changes are needed. But if you're considering switching to Defender for Endpoint Plan 2, follow the guidance in this article.
 - To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
    
    - Global Admin
