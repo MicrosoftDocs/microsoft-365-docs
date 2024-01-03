@@ -17,7 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/08/2024
+ms.date: 01/03/2024
 ---
 
 # How Microsoft names threat actors
