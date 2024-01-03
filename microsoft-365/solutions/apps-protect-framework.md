@@ -42,6 +42,18 @@ Process to add app data protection:
 > [!TIP]
 > For more information about protected apps, suppported platforms, app store links, supported app configuration, and supported protection, see [Microsoft apps](/intune/apps/apps-supported-intune-apps#microsoft-apps).
 
-<!--
-https://learn.microsoft.com/mem/intune/apps/app-protection-policy#app-protection-policy-data-protection-framework
--->
+## This solution
+
+This solution steps you through the process of creating app protection policies in Microsoft Intune for specific apps and assigning those policies to members of your organization. Once you've completed the above [prerequisites](#prerequisites), you're ready to create app protection policies for your organization in Intune. Using configuration and protection policies as part of your app management efforts allows members of your organization to safely use apps. By managing apps at your organization, you help to protect and secure your organization’s data.
+
+Follow these steps to add apps to Intune:
+1. [Apply minimum data protection](apps-protect-step-1.md)
+2. [Apply enhanced data protection](apps-protect-step-2.md)
+3. [Apply high data protection](apps-protect-step-3.md)
+4. [Understand app protection delivery](apps-protect-step-4.md)
+5. [Verify and monitor app protection](apps-protect-step-5.md)
+6. [Use app protection actions](apps-protect-step-6.md)
+
+[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-01.png" alt-text="Step 1. Apply minimum data protection" border="false" :::](apps-protect-step-1.md)
+
+After you completed the above steps, you are ready to deploy, manage, and monitor the managed apps your organization uses.
