@@ -46,24 +46,26 @@ In this section we'll go through the steps required to get Microsoft Defender XD
 2.	Select **Get Data > Blank Query**.
 3.	Select **Advanced Editor**.
 
-![Create a new data query in PowerBI.](../../../microsoft-365/media/defender/power-bi/manage-parameters.png)
+  	:::image type="content" source="../../../microsoft-365/media/defender/power-bi/manage-parameters.png" alt-text="Screenshot that shows how to create a new data query in PowerBI Desktop.." lightbox="../../../microsoft-365/media/defender/power-bi/manage-parameters.png":::
 
-4.	Paste in Query:
-```
-let
-    Source = OData.Feed("https://graph.microsoft.com/v1.0/security/alerts_v2", null, [Implementation="2.0"])
-in
-    Source
-```
+5.	Paste in Query:
+    ```
+    let
+        Source = OData.Feed("https://graph.microsoft.com/v1.0/security/alerts_v2", null, [Implementation="2.0"])
+    in
+        Source
+    ```
 6.	Select **Done**.
 7.	You'll be prompted for credentials, select **Edit Credentials**:
-![Edit credentials for API connection.](../../../microsoft-365/media/defender/power-bi/edit-credentials-api.png)
+   
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/edit-credentials-api.png" alt-text="Screenshot of how to edit credentials for API connection." lightbox="../../../microsoft-365/media/defender/power-bi/edit-credentials-api.png":::
 
-8.	Select **Organizational account > Sign in**.
-![Organizational account authentication window.](../../../microsoft-365/media/defender/power-bi/sign-in-org-account.png)
+9.	Select **Organizational account > Sign in**.
+    
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/sign-in-org-account.png" alt-text="Screenshot of the organizational account authentication window." lightbox="../../../microsoft-365/media/defender/power-bi/sign-in-org-account.png":::
 
-9.	Enter credentials for account with access to Microsoft Defender XDR incidents data.
-10.	Select **Connect**.
+11.	Enter credentials for account with access to Microsoft Defender XDR incidents data.
+12.	Select **Connect**.
 
 Now the results of your query appears as a table, and you can start building visualizations on top of it.
 
@@ -79,34 +81,35 @@ Microsoft Graph API supports [query parameters](/graph/filter-query-parameter), 
 
 - The query below will return the list of alerts generated over the past three days. Note that using this query in environments with high volumes of data may result in hundreds of megabytes of data that could take a moment to load. By using this hardcoded approach, you'll be able to quickly see your most recent alerts over the last three days as soon as you open the report.
 
-```
-let
-    AlertDays = "3",
-    TIME = "" & Date.ToText(Date.AddDays(Date.From(DateTime.LocalNow()), -AlertDays), "yyyy-MM-dd") & "",
-    Source = OData.Feed("https://graph.microsoft.com/v1.0/security/alerts_v2?$filter=createdDateTime ge " & TIME & "", null, [Implementation="2.0"])
-in
-    Source
-```
+  ```
+  let
+      AlertDays = "3",
+      TIME = "" & Date.ToText(Date.AddDays(Date.From(DateTime.LocalNow()), -AlertDays), "yyyy-MM-dd") & "",
+      Source = OData.Feed("https://graph.microsoft.com/v1.0/security/alerts_v2?$filter=createdDateTime ge " & TIME & "", null, [Implementation="2.0"])
+  in
+      Source
+  ```
 
 - Instead of collecting data across a date range, we can gather alerts across more precise dates by inputting a date using the YYYY-MM-DD format.
 
-```
-let
-    StartDate = "YYYY-MM-DD",
-    EndDate = "YYYY-MM-DD",
-    Source = OData.Feed("https://graph.microsoft.com/v1.0/security/ alerts_v2?$filter=createdDateTime ge " & StartDate & " and createdDateTime lt " & EndDate & "", null, [Implementation="2.0"])
-in
-    Source
-```
+  ```
+  let
+      StartDate = "YYYY-MM-DD",
+      EndDate = "YYYY-MM-DD",
+      Source = OData.Feed("https://graph.microsoft.com/v1.0/security/ alerts_v2?$filter=createdDateTime ge " & StartDate & " and createdDateTime lt " & EndDate & "", null, [Implementation="2.0"])
+  in
+      Source
+  ```
 
 - When historical data is required (for example, comparing the number of incidents per month), filtering by date isn't an option (since we want to go as far back as possible). In this case we need to pull a few selected fields shown below:
 
-```
-let
-    Source = OData.Feed("https://graph.microsoft.com/v1.0/security/alerts_v2?$filter=createdDateTime ge " & StartLookbackDate & " and createdDateTime lt " & EndLookbackDate & "&$select=id,title,severity,createdDateTime", null, [Implementation="2.0"])
-in
-    Source
-```
+  ```
+  let
+      Source = OData.Feed("https://graph.microsoft.com/v1.0/security/alerts_v2?$filter=createdDateTime ge " & StartLookbackDate & " and createdDateTime lt " & EndLookbackDate & 
+  "&$select=id,title,severity,createdDateTime", null, [Implementation="2.0"])
+  in
+      Source
+  ```
 
 ## Introducing parameters
 
@@ -117,32 +120,35 @@ Instead of constantly querying the code to adjust the timeframe, use parameters 
 3.	Set desired parameters.
 
 In the example below, we use two different time frames, Start and End dates.
-![Manage Parameters in PowerBI.](../../../microsoft-365/media/defender/power-bi/manage-parameters.png)
+
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/manage-parameters.png" alt-text="Screenshot of how to manage Parameters in PowerBI." lightbox="../../../microsoft-365/media/defender/power-bi/manage-parameters.png":::
 
 4.	Remove hardcoded values from the queries and make sure that StartDate and EndDate variable names correspond to parameter names:
 
-```
-let
-    Source = OData.Feed("https://graph.microsoft.com/v1.0/security/incidents?$filter=createdDateTime ge " & StartDate & " and createdDateTime lt " & EndDate & "", null, [Implementation="2.0"])
-in
-    Source
-```
+    ```
+    let
+        Source = OData.Feed("https://graph.microsoft.com/v1.0/security/incidents?$filter=createdDateTime ge " & StartDate & " and createdDateTime lt " & EndDate & "", null, [Implementation="2.0"])
+    in
+        Source
+    ```
 
 ## Reviewing the report
 
 Once the data has been queried and the parameters are set, now we can review the report. During the first launch of the .PBIT report file you'll be prompted to provide the parameters that we specified earlier:
 
-![PowerBI template parameter prompt window.](../../../microsoft-365/media/defender/power-bi/soc-overview-dashboard.png)
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/soc-overview-dashboard.png" alt-text="Screenshot of the PowerBI template parameter prompt window." lightbox="../../../microsoft-365/media/defender/power-bi/soc-overview-dashboard.png":::
 
 
 The dashboard offers three tabs intended to provide SOC insights. The first tab provides a summary of all recent alerts (depending on the selected timeframe). This helps analysts clearly understand the security state over their environment using alert details broken down by detection source, severity, total number of alerts and mean-time-to-resolution.
 
-![Alerts tab of resulting PowerBI report.](../../../microsoft-365/media/defender/power-bi/alert-tab-powerbi.png)
+
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/alert-tab-powerbi.png" alt-text="Screenshot of the alerts tab of resulting PowerBI report." lightbox="../../../microsoft-365/media/defender/power-bi/alert-tab-powerbi.png":::
 
 
 The second tab offers more insight into the attack data collected across the incidents and alerts. This view can provide analysts with greater perspective into the types of attacks executed and how they map to the MITRE ATT&CK framework.
 
-![Insights tab of resulting PowerBI report.](../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png)
+![Screenshot of the insights tab of resulting PowerBI report.](../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png)
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png" alt-text="Screenshot of the insights tab of resulting PowerBI report." lightbox="../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png":::
 
 ## Power BI dashboard samples
 
