@@ -77,17 +77,17 @@ This section lists scenarios for device control. Select a tab, review the scenar
 | Prevent copying of sensitive files to USB | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
 | Block write access to removable data drives not protected by BitLocker | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
 | Block write access to devices configured in another organization | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
-| Prevent Write and Execute access to all but allow specific approved USBs | Device control in Microsoft Defender. See LINK NEEDED. |
-| Audit Write and Execute access for all but block specific blocked USBs | Device control in Microsoft Defender. See LINK NEEDED. |
-| Block read and execute access to specific file extension | Device control in Microsoft Defender. See LINK NEEDED. |
-| Block people from access removable storage when the machine isn't connecting corporate network | Device control in Microsoft Defender. See LINK NEEDED. |
+| Prevent Write and Execute access to all but allow specific approved USBs | Device control in Microsoft Defender. See *LINK NEEDED*. |
+| Audit Write and Execute access for all but block specific blocked USBs | Device control in Microsoft Defender. See *LINK NEEDED*. |
+| Block read and execute access to specific file extension | Device control in Microsoft Defender. See *LINK NEEDED*. |
+| Block people from access removable storage when the machine isn't connecting corporate network | Device control in Microsoft Defender. See *LINK NEEDED*. |
 
 ## [**Printers**](#tab/Printers)
 
 | Scenario | Device control policy |
 |---|---|
-| Block people from printing via noncorporate printer | Device control in Microsoft Defender. See LINK NEEDED. |
-| Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See LINK NEEDED. |
+| Block people from printing via noncorporate printer | Device control in Microsoft Defender. See *LINK NEEDED*. |
+| Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See *LINK NEEDED*. |
 | Block printing of sensitive documents to any printer | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
 | Prevent installation of all printers | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
 | Prevent installation of a specific printer | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
