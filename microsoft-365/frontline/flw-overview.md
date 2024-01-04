@@ -99,7 +99,10 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 |Capability |License availability |
 |-----------|---------------------|
-|[Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md) |Enterprise, F1, F3 |
+|[Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) |Enterprise, F1, F3 |
+|[Deploy frontline static teams at scale](deploy-teams-at-scale.md) |Enterprise, F1, F3 |
+|[Deploy your frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) |Enterprise, F1, F3 |
+|[Deploy Shifts to your frontline teams at scale](deploy-shifts-at-scale.md) |Enterprise, F1, F3 |
 |[Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) |Enterprise, F1, F3 |
 
 ### Secure endpoints and apps across device types and operating systems
