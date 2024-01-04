@@ -13,7 +13,6 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: 
 - Adopt
-- admindeeplinkMAC
 search.appverid:
 ms.localizationpriority: medium
 description: Learn how to try Microsoft Syntex services during a limited offering.
@@ -53,7 +52,7 @@ You'll get a limited amount of usage each month during the offering period. The 
 <!---
 |Document translation             | Characters   | 1 million  |
 --->
-Monthly usage over the limitations will be billed as described in [Pay-as-you-go services and pricing](syntex-pay-as-you-go-services.md). This offering does not include capacity for Microsoft 365 Archive and Microsoft 365 Backup.
+Monthly usage over the limitations will be billed as described in [Pay-as-you-go services and pricing](syntex-pay-as-you-go-services.md). This offering doesn't include capacity for Microsoft 365 Archive and Microsoft 365 Backup.
 
 For ideas about how you might use Syntex services in your organization, see [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md) and [Get started driving adoption of Microsoft Syntex](adoption-getstarted.md).
 
