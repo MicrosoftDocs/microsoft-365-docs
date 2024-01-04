@@ -152,6 +152,8 @@
             href: ../defender-identity/notifications.md
       - name: Protect your Office 365 workloads
         href: ../office-365-security/index.yml
+      - name: Create Custom Defender XDR reports
+        href: defender-xdr-custom-reports.md
     - name: Investigate and respond to threats
       items: 
        - name: Overview
