@@ -121,7 +121,7 @@ Instead of constantly querying the code to adjust the timeframe, use parameters 
 
 In the example below, we use two different time frames, Start and End dates.
 
-    :::image type="content" source="../../../microsoft-365/media/defender/power-bi/manage-parameters.png" alt-text="Screenshot of how to manage Parameters in PowerBI." lightbox="../../../microsoft-365/media/defender/power-bi/manage-parameters.png":::
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/manage-parameters.png" alt-text="Screenshot of how to manage Parameters in PowerBI." lightbox="../../../microsoft-365/media/defender/power-bi/manage-parameters.png":::
 
 4.	Remove hardcoded values from the queries and make sure that StartDate and EndDate variable names correspond to parameter names:
 
