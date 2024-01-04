@@ -144,12 +144,10 @@ The second tab offers more insight into the attack data collected across the inc
 
 ![Insights tab of resulting PowerBI report.](../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png)
 
+## Power BI dashboard samples
 
-## Power BI dashboard samples in GitHub
-
-For more information, see the Power BI report templates.
-
-https://github.com/alzams/defender/tree/main/Reports
+For more information, see the 
+[Power BI report templates sample file](https:download.microsoft.com/download/0/1/6/01686830-b4e4-4cc1-af5b-7e07eab3ff55/defender-xdr-soc-overview.zip).
 
 ## Related articles
 
