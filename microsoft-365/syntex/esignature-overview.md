@@ -19,6 +19,9 @@ description: Learn about Microsoft SharePoint eSignature and how to send electro
 
 # Overview of Microsoft SharePoint eSignature
 
+> [!NOTE]
+> Through June 2024, you can try out eSignature and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its features](trial-syntex.md).
+
 SharePoint eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
 
 With SharePoint eSignature, you can quickly and securely send documents for signature to people both inside and outside of your organization. You also have a digital audit trail, which can be used to verify the authenticity of documents and transactions.
