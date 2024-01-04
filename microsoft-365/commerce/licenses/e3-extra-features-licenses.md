@@ -21,7 +21,7 @@ ms.date: 10/20/2023
 # Understand the Microsoft 365 E3 and E5 Extra Features license
 
 > [!IMPORTANT]
-> This article only applies if you bought a Microsoft 365 E3 Original subscription and/or Microsoft 365 E5 original subscription through an Enterprise Agreement (EA). If this applies to you, you now see the Microsoft 365 E3 Extra Features and/or Microsoft 365 E5 Extra Features product on the **Licenses** page in the Microsoft 365 admin center.
+> This article only applies if you bought a Microsoft 365 E3 or E5 Original subscription through an Enterprise Agreement (EA). If this applies to you, you now see the Microsoft 365 E3 Extra Features or Microsoft 365 E5 Extra Features product on the **Licenses** page in the Microsoft 365 admin center.
 
 If you have a Microsoft 365 E3 Original subscription and/or Microsoft 365 E5 Original subscription that you bought through an Enterprise Agreement (EA), you now also have a subscription for Microsoft 365 E3 Extra Features and/or Microsoft 365 E5 Extra Features. The Microsoft 365 E3 Original package and/or Microsoft 365 E5 Original package includes the following products and services at no additional cost.
 
