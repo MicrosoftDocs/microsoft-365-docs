@@ -67,7 +67,7 @@ In this section we'll go through the steps required to get Microsoft Defender XD
 11.	Enter credentials for account with access to Microsoft Defender XDR incidents data.
 12.	Select **Connect**.
 
-Now the results of your query appears as a table, and you can start building visualizations on top of it.
+Now the results of your query appear as a table, and you can start building visualizations on top of it.
 
 > [!TIP]
 > If you are looking to visualize other forms of Microsoft Graph security data like Incidents, Advanced Hunting, Secure Score, etc., see [Microsoft Graph security API Overview](/graph/api/resources/security-api-overview).
