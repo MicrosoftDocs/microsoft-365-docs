@@ -39,7 +39,7 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: Try Syntex services promotion
+          - text: Syntex services promotion
             url: promo-syntex.md
 
 # Card 2
