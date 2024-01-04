@@ -128,7 +128,7 @@ Device control in Defender for Endpoint can be applied to Windows 10 and Windows
 
 ## Getting started
 
-By default, device control is disabled and there are no restrictions on which devices can be added. The auditing of basic device control events is enabled for devices that are onboarded to Defender for Endpoint. This activity can be seen in the [device control report](device-control-report.md).  Filtering on the built in “PnP Audit Policy” shows devices that are connected to the endpoints in the environment.
+By default, device control is disabled and there are no restrictions on which devices can be added. The auditing of basic device control events is enabled for devices that are onboarded to Defender for Endpoint. This activity can be seen in the [device control report](device-control-report.md). Filtering on the built in **PnP Audit Policy** shows devices that are connected to the endpoints in the environment.
 
 SCREENSHOT
 
@@ -139,7 +139,7 @@ SCREENSHOT
 The device ID, vendor ID (VID), serial number, Bus type can all be used to identify a device (See List of device properties for the complete list)
 The data is also available in Advanced Hunting, by searching for the Plug and Play Device Connected action (PnPDeviceConnected)
 
-```Kusto
+```kusto
 
 DeviceEvents
 | where ActionType == "PnpDeviceConnected"
@@ -152,6 +152,18 @@ DeviceEvents
 | order by Timestamp desc
 
 ```
+
+SCREENSHOT
+
+The status of device control (enabled/disabled, default enforcement, and last policy update) is available on a device via Get-MpComputerStatus
+
+SCREENSHOT
+
+To get started, changing the device control state to enabled on a test device.  Make sure the policy has been applied by checking Get-MpComputerStatus
+
+SCREENSHOT
+
+
 
 
 ## Next steps
