@@ -77,7 +77,7 @@ Now the results of your query appear as a table, and you can start building visu
 
 Microsoft Graph API supports OData protocol so that users don't have to worry about pagination - or requesting the next set of data. However, filtering data is essential to improving load times in a busy environment.
 
-Microsoft Graph API supports [query parameters](/graph/filter-query-parameter), below are few examples of filters used in the report:
+Microsoft Graph API supports [query parameters](/graph/filter-query-parameter). Below are few examples of filters used in the report:
 
 - The query below will return the list of alerts generated over the past three days. Note that using this query in environments with high volumes of data may result in hundreds of megabytes of data that could take a moment to load. By using this hardcoded approach, you'll be able to quickly see your most recent alerts over the last three days as soon as you open the report.
 
@@ -121,7 +121,7 @@ Instead of constantly querying the code to adjust the timeframe, use parameters 
 
 In the example below, we use two different time frames, Start and End dates.
 
-:::image type="content" source="../../../microsoft-365/media/defender/power-bi/manage-parameters.png" alt-text="Screenshot of how to manage Parameters in PowerBI." lightbox="../../../microsoft-365/media/defender/power-bi/manage-parameters.png":::
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/manage-parameters.png" alt-text="Screenshot of how to manage Parameters in Power BI." lightbox="../../../microsoft-365/media/defender/power-bi/manage-parameters.png":::
 
 4.	Remove hardcoded values from the queries and make sure that StartDate and EndDate variable names correspond to parameter names:
 
@@ -136,18 +136,18 @@ In the example below, we use two different time frames, Start and End dates.
 
 Once the data has been queried and the parameters are set, now we can review the report. During the first launch of the .PBIT report file you'll be prompted to provide the parameters that we specified earlier:
 
-:::image type="content" source="../../../microsoft-365/media/defender/power-bi/soc-overview-dashboard.png" alt-text="Screenshot of the PowerBI template parameter prompt window." lightbox="../../../microsoft-365/media/defender/power-bi/soc-overview-dashboard.png":::
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/soc-overview-dashboard.png" alt-text="Screenshot of the Power BI template parameter prompt window." lightbox="../../../microsoft-365/media/defender/power-bi/soc-overview-dashboard.png":::
 
 
 The dashboard offers three tabs intended to provide SOC insights. The first tab provides a summary of all recent alerts (depending on the selected timeframe). This helps analysts clearly understand the security state over their environment using alert details broken down by detection source, severity, total number of alerts and mean-time-to-resolution.
 
 
-:::image type="content" source="../../../microsoft-365/media/defender/power-bi/alert-tab-powerbi.png" alt-text="Screenshot of the alerts tab of resulting PowerBI report." lightbox="../../../microsoft-365/media/defender/power-bi/alert-tab-powerbi.png":::
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/alert-tab-powerbi.png" alt-text="Screenshot of the alerts tab of resulting Power BI report." lightbox="../../../microsoft-365/media/defender/power-bi/alert-tab-powerbi.png":::
 
 
 The second tab offers more insight into the attack data collected across the incidents and alerts. This view can provide analysts with greater perspective into the types of attacks executed and how they map to the MITRE ATT&CK framework.
 
-:::image type="content" source="../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png" alt-text="Screenshot of the insights tab of resulting PowerBI report." lightbox="../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png":::
+:::image type="content" source="../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png" alt-text="Screenshot of the insights tab of resulting Power BI report." lightbox="../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png":::
 
 ## Power BI dashboard samples
 
