@@ -120,7 +120,7 @@ After running a query, select **Export** to save the results to local file. Your
 
 You can also explore the results in-line with the following features:
 - Expand a result by selecting the dropdown arrow at the left of each result
-- Where applicable, expand details for results that are in JSON array format by selecting the dropdown arrow at the left of applicable column names for added readability
+- Where applicable, expand details for results that are in JSON and array formats by selecting the dropdown arrow at the left of applicable column names for added readability
 - Open the side pane to see a record’s details (concurrent with expanded rows)
 
 
