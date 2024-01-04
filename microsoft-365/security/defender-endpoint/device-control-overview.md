@@ -120,9 +120,9 @@ The following examples are helpful in understanding how device control in Defend
 
 Device control in Defender for Endpoint can be applied to Windows 10 and Windows 11 devices that have the anti-malware client version `4.18.2103.3` or later.
 
-- 4.18.2104 or later: Add SerialNumberId, VID_PID, filepath-based GPO support, and ComputerSid
-- 4.18.2105 or later: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
-- 4.18.2107 or later: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets); add AccountName into [advanced hunting](device-control-removable-storage-access-control.md#view-data-in-microsoft-defender-for-endpoint)
+- `4.18.2104` or later: Add `SerialNumberId`, `VID_PID`, filepath-based GPO support, and `ComputerSid`
+- `4.18.2105` or later: Add Wildcard support for `HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId`, the combination of specific user on specific machine, removable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
+- `4.18.2107` or later: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets); add AccountName into [advanced hunting](device-control-removable-storage-access-control.md#view-data-in-microsoft-defender-for-endpoint)
 - 4.18.2205 or later: Expand the default enforcement to Printer. If you set it to Deny, it will block Printer as well, so if you only want to manage storage, make sure to create a custom policy to allow Printer
 - 4.18.2207 or later: Add File support, the common use case can be: block people from Read/Write/Execute access specific file on removable storage; add Network and VPN Connection support, the common use case can be: block people from access removable storage when the machine isn't connecting corporate network.
 
