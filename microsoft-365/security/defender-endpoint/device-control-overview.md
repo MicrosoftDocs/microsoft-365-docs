@@ -109,7 +109,7 @@ The following examples are helpful in understanding how device control in Defend
 
 - **Removable Storage Access Control** (see [mdatp-devicecontrol/Removable Storage Access Control Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples))
 
-   - Scenario 1:  Prevent Write and Execute access to all but allow specific approved USBs
+   - Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
    - Scenario 2: Audit Write and Execute access for all but block specific blocked USBs
 
 - **Printer protection** (see [mdatp-devicecontrol/Printer Protection Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Printer%20Protection%20Samples))
