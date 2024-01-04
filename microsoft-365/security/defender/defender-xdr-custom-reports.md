@@ -58,11 +58,11 @@ In this section we'll go through the steps required to get Microsoft Defender XD
 6.	Select **Done**.
 7.	You'll be prompted for credentials, select **Edit Credentials**:
    
-:::image type="content" source="../../../microsoft-365/media/defender/power-bi/edit-credentials-api.png" alt-text="Screenshot of how to edit credentials for API connection." lightbox="../../../microsoft-365/media/defender/power-bi/edit-credentials-api.png":::
+    :::image type="content" source="../../../microsoft-365/media/defender/power-bi/edit-credentials-api.png" alt-text="Screenshot of how to edit credentials for API connection." lightbox="../../../microsoft-365/media/defender/power-bi/edit-credentials-api.png":::
 
 9.	Select **Organizational account > Sign in**.
     
-:::image type="content" source="../../../microsoft-365/media/defender/power-bi/sign-in-org-account.png" alt-text="Screenshot of the organizational account authentication window." lightbox="../../../microsoft-365/media/defender/power-bi/sign-in-org-account.png":::
+    :::image type="content" source="../../../microsoft-365/media/defender/power-bi/sign-in-org-account.png" alt-text="Screenshot of the organizational account authentication window." lightbox="../../../microsoft-365/media/defender/power-bi/sign-in-org-account.png":::
 
 11.	Enter credentials for account with access to Microsoft Defender XDR incidents data.
 12.	Select **Connect**.
@@ -147,7 +147,6 @@ The dashboard offers three tabs intended to provide SOC insights. The first tab 
 
 The second tab offers more insight into the attack data collected across the incidents and alerts. This view can provide analysts with greater perspective into the types of attacks executed and how they map to the MITRE ATT&CK framework.
 
-![Screenshot of the insights tab of resulting PowerBI report.](../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png)
 :::image type="content" source="../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png" alt-text="Screenshot of the insights tab of resulting PowerBI report." lightbox="../../../microsoft-365/media/defender/power-bi/insights-tab-powerbi.png":::
 
 ## Power BI dashboard samples
