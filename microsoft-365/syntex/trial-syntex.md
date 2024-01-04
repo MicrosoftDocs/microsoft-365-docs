@@ -33,7 +33,7 @@ If you want to try some of these features, here are the steps to follow:
 
 2. [Turn on the Syntex services you want to try](set-up-microsoft-syntex.md).
 
-3. [Start using the Syntex features](syntex-overview.md#syntex-services).
+3. [Start using the Syntex services](syntex-overview.md#syntex-services).
 
 ## Monthly included capacity
 
