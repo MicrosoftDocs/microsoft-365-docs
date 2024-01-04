@@ -30,7 +30,7 @@ If you have a Microsoft 365 E3 Original subscription and/or Microsoft 365 E5 Ori
 - Windows E3 and/or Windows E5
 - Microsoft Defender for Endpoint Plan 1
 
-The new Microsoft 365 E3 Extra Features and/or Microsoft 365 E5 Extra Features product is now included in this list. To provide the features for your users, [assign them licenses for Microsoft 365 E3 and/or E5 Extra Features](#assign-the-microsoft-365-e3-and/or-e5-extra-features-license-to-users).
+The new Microsoft 365 E3 Extra Features and/or Microsoft 365 E5 Extra Features product is now included in this list. To provide the features for your users, [assign them licenses for Microsoft 365 E3 and/or E5 Extra Features](#assign-the-microsoft-365-e3-andor-e5-extra-features-license-to-users).
 
 ## What’s provided by Microsoft 365 E3 Extra Features?
 
