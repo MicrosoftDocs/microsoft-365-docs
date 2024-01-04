@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 12/11/2023
+ms.date: 1/3/2024
 audience: ITPro
 ms.topic: conceptual
 
@@ -38,7 +38,7 @@ Specifically:
    - The From, To, Subject, MIME-Version, Content-Type, Date, and other message header fields (depending on the source email system).
    - The message body.
 2. The digital signature is stored in the **DKIM-Signature** header field in the message header and remains valid as long as intermediate email systems don't modify the signed parts of the message. The signing domain is identified by the **d=** value in the **DKIM-Signature** header field.
-3. The corresponding public keys are stored in DNS records for the signing domain (CNAME records in Microsoft 365).
+3. The corresponding public keys are stored in DNS records for the signing domain (CNAME records in Microsoft 365; other email systems might use TXT records).
 4. Destination email systems use the **d=** value in the **DKIM-Signature** header field to:
    - Identify the signing domain.
    - Look up the public key in the DKIM DNS record for the domain.
@@ -53,9 +53,9 @@ Before we get started, here's what you need to know about DKIM in Microsoft 365 
 
 - **You use only the Microsoft Online Email Routing Address (MOERA) domain for email (for example, contoso.onmicrosoft.com)**: You don't need to do anything. Microsoft automatically creates a 2048-bit public-private key pair from your initial \*.onmicrosoft.com domain, and uses that key to DKIM sign outbound email from your domain. To verify this fact, see the [Verify DKIM signing of outbound mail from Microsoft 365](#verify-dkim-signing-of-outbound-mail-from-microsoft-365) section later in this article.
 
-  Microsoft owns the onmicrosoft.com domain, so we're responsible for creating and maintaining the DNS records in that domain and its subdomains. For more information about \*.onmicrosoft.com domains, see [Why do I have an "onmicrosoft.com" domain?](/microsoft-365/admin/setup/domains-faq#why-do-i-have-an--onmicrosoft-com--domain).
+  For more information about \*.onmicrosoft.com domains, see [Why do I have an "onmicrosoft.com" domain?](/microsoft-365/admin/setup/domains-faq#why-do-i-have-an--onmicrosoft-com--domain).
 
-- **You use one or more custom domains for email (for example, contoso.com)**: By default, Microsoft 365 uses the default public-private key pair from your initial \*.onmicrosoft.com domain to DKIM sign and validate outbound mail from Microsoft 365 from senders in any of your custom domains or subdomains. But, you still have more work to do for maximum email protection:
+- **You use one or more custom domains for email (for example, contoso.com)**: By default, Microsoft 365 uses the public-private key pair from your initial \*.onmicrosoft.com domain to DKIM sign and validate outbound mail from Microsoft 365 from senders in any of your custom domains or subdomains. But, you still have more work to do for maximum email protection:
   - **Configure DKIM signing using custom domains or subdomains**: We recommend configuring [DMARC](email-authentication-dmarc-configure.md), because DMARC uses SPF and DKIM to verify that the domains in the MAIL FROM and From addresses align. DKIM passes DMARC validation only if the domain that was used to DKIM sign the message and the domain in the From address match. Therefore, you need to configure DKIM to sign messages with any custom domains that you use to send email.
   - **Subdomains**:
     - For email services that aren't under your direct control (for example, bulk email services or services that add email signatures to outbound mail), we recommend using a subdomain (for example, marketing.contoso.com) instead of your main email domain (for example, contoso.com). You don't want issues with mail sent from those email services to affect the reputation of mail sent by employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
@@ -94,9 +94,9 @@ Hostname: selector2._domainkey
 Points to address or value: selector2-<CustomDomain>._domainkey.<InitialDomain>
 ```
 
-- In Microsoft 365, two public-private key pairs are generated when DKIM signing using a custom domain or subdomain is enabled. The private keys that are used to sign the message are inaccessible. The corresponding public keys that are stored in the CNAME records and are used to verify the DKIM signature are known as _selectors_.
+- In Microsoft 365, two public-private key pairs are generated when DKIM signing using a custom domain or subdomain is enabled. The private keys that are used to sign the message are inaccessible. The corresponding public keys that are stored in the CNAME records and used to verify the DKIM signature are known as _selectors_.
   - Only one selector is active and used when DKIM signing using a custom domain is enabled.
-  - The second selector is inactive. It's activated and used only after any future [DKIM key rotation](#rotate-dkim-keys-for-custom-domains), and then the original selector is deactivated.
+  - The second selector is inactive. It's activated and used only after any future [DKIM key rotation](#rotate-dkim-keys-for-custom-domains), and then only after the original selector is deactivated.
 
   The selector that's used to verify the DKIM signature (which infers the private key that was used to sign the message) is stored in the **s=** value in the **DKIM-Signature** header field (for example, `s=selector1-contoso-com`).
 
@@ -132,7 +132,7 @@ You need to create two CNAME records in each custom domain, for a total of four 
 ## Enable DKIM signing of outbound messages using a custom domain
 
 > [!TIP]
-> As previously described in this article, outbound mail from custom domains in Microsoft 365 is automatically signed by DKIM using the initial \*.onmicrosoft.com domain for the organization. Enabling DKIM signing of outbound messages using a custom domain effectively switches DKIM signing from using the \*.onmicrosoft.com domain to using the custom domain.
+> As previously described in this article, outbound mail from custom domains in Microsoft 365 is automatically signed by DKIM using the initial \*.onmicrosoft.com domain for the organization. Enabling DKIM signing of outbound messages using a custom domain effectively switches DKIM signing to use the custom domain.
 
 You can use a custom domain or subdomain to DKIM sign outbound mail only after the domain has been successfully added to Microsoft 365. For instructions, see [Add a domain](/microsoft-365/admin/setup/add-domain#add-a-domain).
 
@@ -236,7 +236,7 @@ How you configure DKIM signing using the custom or subdomain domain depends on w
 
 8. After a while, return to the domain properties flout that you left open in Step 6, and select the **Sign messages for this domain with DKIM signatures** toggle.
 
-9. After a few seconds, the following dialog opens:
+   After a few seconds, the following dialog opens:
 
    :::image type="content" source="../../media/email-auth-dkim-cname-detected.png" alt-text="The dialog that opens when you try to enable DKIM signing by the custom domain for the first time." lightbox="../../media/email-auth-dkim-cname-detected.png":::
 
@@ -432,7 +432,7 @@ Get-DkimSigningConfig -Identity <CustomDomain> | Format-List
 - **SelectorBeforeRotateOnDate**: Remember, DKIM signing using a custom domain in Microsoft 365 requires two CNAME records in the domain. This property shows the CNAME record that DKIM uses before the **RotateOnDate** date-time (also known as a _selector_). The value is `selector1` or `selector2` and is different than the **SelectorAfterRotateOnDate** value.
 - **SelectorAfterRotateOnDate**: Shows the CNAME record that DKIM uses after the **RotateOnDate** date-time. The value is `selector1` or `selector2` and is different than the **SelectorBeforeRotateOnDate** value.
 
-When you do a DKIM key rotation on a custom domain as described in this section, the change isn't immediate. It takes four days (96 hours) for the new public key to start signing messages (the **RotateOnDate** date/time and the corresponding **SelectorAfterRotateOnDate** value). Until then, the existing public key is used (the corresponding **SelectorBeforeRotateOnDate** value).
+When you do a DKIM key rotation on a custom domain as described in this section, the change isn't immediate. It takes four days (96 hours) for the new private key to start signing messages (the **RotateOnDate** date/time and the corresponding **SelectorAfterRotateOnDate** value). Until then, the existing private key is used (the corresponding **SelectorBeforeRotateOnDate** value).
 
 To confirm the corresponding public key that's used to verify the DKIM signature (which infers the private key that was used to sign the message), check the **s=** value in the **DKIM-Signature** header field (the selector; for example, `s=selector1-contoso-com`).
 

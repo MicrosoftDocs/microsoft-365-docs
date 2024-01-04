@@ -18,7 +18,7 @@ ms.custom:
 description: Learn how to get started with the initial deployment and configuration of Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/7/2023
+ms.date: 1/3/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
@@ -55,29 +55,29 @@ To configure EOP and Defender for Office 365 features, you need permissions. The
 
 ## Step 1: Configure email authentication for your Microsoft 365 domains
 
-**Summary**: Configure [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md) records (in that order) for all custom Microsoft 365 domains (including parked domains and all subdomains). If necessary, configure any [trusted ARC sealers](email-authentication-arc-configure.md).
+**Summary**: Configure [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md) records (in that order) for all custom Microsoft 365 domains (including parked domains and subdomains). If necessary, configure any [trusted ARC sealers](email-authentication-arc-configure.md).
 
 **Details**:
 
 Email authentication (also known as _email validation_) is a group of standards to verify that email messages are legitimate, unaltered, and come from expected sources for the sender's email domain. For more information, see [Email authentication in EOP](email-authentication-about.md).
 
-We'll proceed with the assumption that you're using one or more [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) (for example @contoso.com) in Microsoft 365 for email, so you need to create specific email authentication DNS records for each custom domain that you're using for email.
+We'll proceed with the assumption that you're using one or more [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365 for email (for example @contoso.com) , so you need to create specific email authentication DNS records for each custom domain that you're using for email.
 
 Create the following email authentication DNS records at your DNS registrar or DNS hosting service for each custom domain that you use for email in Microsoft 365:
 
-- **Sender Policy Framework (SPF)**: The SPF TXT record identifies valid sources for email from senders in the domain. For instructions, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
+- **Sender Policy Framework (SPF)**: The SPF TXT record identifies valid sources of email from senders in the domain. For instructions, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
 
-- **DomainKeys Identified Mail (DKIM)**: DKIM encrypts a signature within the message header that survives message forwarding. For instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
+- **DomainKeys Identified Mail (DKIM)**: DKIM signs outbound messages and stores the signature in the message header that survives message forwarding. For instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 
-- **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: DMARC helps destination email servers decide what to do with messages from the custom domain that fail SPF and DKIM checks. Be sure to include `p=reject` or `p=quarantine` policies in the DMARC records. for instructions, see [Use DMARC to validate email](email-authentication-dmarc-configure.md).
+- **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: DMARC helps destination email servers decide what to do with messages from the custom domain that fail SPF and DKIM checks. Be sure to include the DMARC policy (`p=reject` or `p=quarantine`) and DMARC report destinations (aggregate and forensic reports) in the DMARC records. for instructions, see [Use DMARC to validate email](email-authentication-dmarc-configure.md).
 
 - **Authenticated Received Chain (ARC)**: If you use third-party services that modify message in transit, you can configure the services as _trusted ARC sealers_ so the modified messages can still pass email authentication checks (if the service supports it). For instructions, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).
 
 If you're using the @\*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do:
 
 - **SPF**: An SPF record is already configured for the \<domain\>.onmicrosoft.com domain.
-- **DKIM**: A DKIM record is already configured for the \<domain\>.onmicrosoft.com domain.
-- **DMARC**: You need to manually set up the DMARC record for the \<domain\>.onmicrosoft.com domain in the Microsoft 365 admin center at <https://admin.microsoft.com/Adminportal/Home#/Domains> as described in [Activate DMARC for a MOERA domain](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md#activate-dmarc-for-moera-domain).
+- **DKIM**: DKIM signing is is already configured for outbound mail using the \<domain\>.onmicrosoft.com domain.
+- **DMARC**: You need to manually set up the DMARC record for the \<domain\>.onmicrosoft.com domain as described in [Use the Microsoft 365 admin center to add DMARC TXT records for \*.onmicrosoft.com domains in Microsoft 365](email-authentication-dmarc-configure.md#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365).
 
 ## Step 2: Configure protection policies
 
@@ -178,7 +178,7 @@ Remember, default policies (and Built-in protection in Defender for Office 365) 
 
 It's also important to realize that you aren't locked into your initial decision forever. The information in the [recommended settings tables](recommended-settings-for-eop-and-office365.md) and the [comparison table for Standard and Strict](preset-security-policies.md#policy-settings-in-preset-security-policies) should allow you to make an informed decision. But if needs, results, or circumstances change, it's not difficult to switch to a different strategy later.
 
-**Without a compelling business need that indicates otherwise, we recommend starting with the Standard preset security policy for all users in your organization**. Preset security policies are configured with settings based years of observations in the Microsoft 365 datacenters, and should be the right choice for the majority of organizations. And, the policies are automatically updated to match the threats of the security landscape.
+**Without a compelling business need that indicates otherwise, we recommend starting with the Standard preset security policy for all users in your organization**. Preset security policies are configured with settings based on years of observations in the Microsoft 365 datacenters, and should be the right choice for the majority of organizations. And, the policies are automatically updated to match the threats of the security landscape.
 
 In preset security policies, you can select the **All recipients** option to easily apply protection to all recipients in the organization.
 

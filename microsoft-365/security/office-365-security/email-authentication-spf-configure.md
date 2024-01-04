@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 12/4/2023
+ms.date: 1/3/2024
 audience: ITPro
 ms.topic: how-to
 
@@ -27,7 +27,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# Set up SPF identify valid email sources for your Microsoft 365 domain
+# Set up SPF to identify valid email sources for your Microsoft 365 domain
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -102,13 +102,13 @@ v=spf1 ip4:192.168.0.10 ip4:192.168.0.12 include:spf.protection.outlook.com -all
 - The enforcement rule is one of the following values:
   - `-all` (hard fail): Tells the destination email system that messages from sources not specified in the SPF TXT record aren't authorized to send mail from the domain, so the messages should be rejected. What actually happens to the message depends on the destination email system, but the messages are typically discarded.
   
-     For Microsoft 365 domains, we recommend `-all` (hard fail) because we also recommend DKIM and DMARC for the domain. The DMARC policy (`p=quarantine` or `p=reject`) specifies what to do to messages that fail SPF or DKIM, and the DMARC reporting services allow you to validate the results.
+     For Microsoft 365 domains, we recommend `-all` (hard fail) because we also recommend DKIM and DMARC for the domain. The DMARC policy specifies what to do to messages that fail SPF or DKIM, and the DMARC reports (aggregate and forensic) allow you to validate the results.
 
      If SPF was the only email authentication method for the domain (no DKIM or DMARC), you would need to be confident that all possible sources of email from the domain are identified in the SPF record. Otherwise, the destination email system might discard valid messages from senders that came from legitimate but unidentified sources (bulk mailing services, on-premises reporting servers, etc.).
 
   - `~all` (soft fail): Tells the destination email system that messages from sources not specified in the SPF TXT record _probably_ aren't authorized to send mail from the domain, so the messages should be accepted but marked. What actually happens to the message depends on the destination email system. For example, the message might be quarantined as spam, delivered to the Junk Email folder, or delivered to the Inbox with an identifier added to the Subject or message body.
 
-     Because we also recommend DKIM and DMARC for Microsoft 365 domains, the differences between `-all` (hard fail) and `~all` (soft fail) are largely eliminated (DMARC treats either result as an SPF failure). DMARC uses SPF to confirm the domains in the MAIL FROM and From addresses align _and_ the message came from a valid source for the From domain. DMARC uses DKIM to confirm the domain that signed the message and the domain in the From addresses are aligned. The message passes DMARC if the SPF _or_ DKIM checks pass (not both).
+     Because we also recommend DKIM and DMARC for Microsoft 365 domains, the differences between `-all` (hard fail) and `~all` (soft fail) are largely eliminated (DMARC treats either result as an SPF failure). DMARC uses SPF to confirm the domains in the MAIL FROM and From addresses align _and_ the message came from a valid source for the From domain. DMARC uses DKIM to confirm the domain that signed the message and the domain in the From addresses are aligned. By default, the message passes DMARC if the SPF _or_ DKIM checks pass.
 
   > [!TIP]
   > `?all` (neutral) is also available to suggest no specific action on messages from unidentified sources. This value is used for testing, and we don't recommend this value in production environments.
