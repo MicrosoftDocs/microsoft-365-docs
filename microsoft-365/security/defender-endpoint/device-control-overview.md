@@ -48,19 +48,21 @@ Device control capabilities in Defender for Endpoint can be organized into three
 
 - **Endpoint data loss prevention** (Endpoint DLP). Endpoint DLP monitors sensitive information on devices that are onboarded to Microsoft Purview solutions. DLP policies can enforce protective actions on sensitive information and where it's stored or used. [Learn about Endpoint DLP](/purview/endpoint-dlp-learn-about).
 
+See the [device control scenarios](#device-control-scenarios) section (in this article) for more details about these capabilities.
+
 ## Supported devices
 
 Device control organizes supported devices into types by their `primary_id`. On a Windows device, based on the driver, some peripheral devices are marked as removable. For example, USB drives, Windows Portable Devices (WPD), CD/ROMs, Bluetooth devices, and printers are all considered to be removable devices. The following table lists examples of devices that device control supports with their `primary_id` values:
 
-| Device type | `PrimaryId` in Windows | `primary_id` in macOS | 
+| Device type | `PrimaryId` in Windows | `primary_id` in macOS | Media Class Name |
 |---|---|---|
-| Bluetooth devices |  | `bluetoothDevice` |
-| CD/ROMs, DVDs | `CdRomDevices` |  |
-| iOS devices |  | `appleDevice` |
-| Portable devices (such as cameras) |   | `portableDevice` |
-| Printers | `PrinterDevices` |  |
-| USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` |
-| Windows Portable Devices | `WpdDevices` |  |
+| Bluetooth devices |  | `bluetoothDevice` | `Bluetooth Devices` |
+| CD/ROMs, DVDs | `CdRomDevices` |  |  `CD-Roms` |
+| iOS devices |  | `appleDevice` | | 
+| Portable devices (such as cameras) |   | `portableDevice` | | 
+| Printers | `PrinterDevices` |  | `Printers` | 
+| USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` | `USB` | 
+| Windows Portable Devices | `WpdDevices` |  | `Windows Portable Devices (WPD)` | 
 
 ## Device control scenarios
 
