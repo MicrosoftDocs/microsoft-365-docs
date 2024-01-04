@@ -35,7 +35,7 @@ There are multiple ways to visualize Microsoft Defender security data:
 In this article we'll create a sample Security Operations Center (SOC) efficiency dashboard in Power BI using Microsoft Graph security API. We'll access it in user context, therefore user must have [corresponding permissions](manage-rbac.md) to be able to view alerts and incidents data.
 
 > [!NOTE]
-> **Example below is based on our new MS Graph security API**. Find out more at: [Use the Microsoft Graph security API](/graph/api/resources/security-api-overview?view=graph-rest-1.0).
+> **Example below is based on our new MS Graph security API**. Find out more at: [Use the Microsoft Graph security API](/graph/api/resources/security-api-overview).
 
 
 ## Importing data into Power BI
@@ -147,7 +147,7 @@ The second tab offers more insight into the attack data collected across the inc
 ## Power BI dashboard samples
 
 For more information, see the 
-[Power BI report templates sample file](https:download.microsoft.com/download/0/1/6/01686830-b4e4-4cc1-af5b-7e07eab3ff55/defender-xdr-soc-overview.zip).
+[Power BI report templates sample file](https://download.microsoft.com/download/0/1/6/01686830-b4e4-4cc1-af5b-7e07eab3ff55/defender-xdr-soc-overview.zip).
 
 ## Related articles
 
