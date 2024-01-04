@@ -111,17 +111,21 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-deploy.png" alt-text="Screenshot of the Manage frontline teams page, showing the Deploy button." lightbox="media/dtas-deploy.png":::
 
-2. From here, you can review your settings and view the list of locations that don't yet have a frontline dynamic team created.
+1. From here, you can review your settings and view the list of locations that don't yet have a frontline dynamic team created.
 
-3. In the table, select the locations that you want to create teams for.
+1. In the table, select the locations that you want to create teams for.
 
     :::image type="content" source="media/dtas-deploy-locations.png" alt-text="Screenshot of the table of locations." lightbox="media/dtas-deploy-locations.png":::
 
-4. Select **Deploy**. This process can take several hours depending on how many teams you're creating. After deployment is completed, you'll see the number of teams updated in the **Frontline teams** card. On this card, you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the **Last deployment health** card.
+1. Select **Deploy**. This process can take several hours depending on how many teams you're creating. 
+
+    After deployment is completed, you'll see the number of deployed frontline teams in the **Frontline teams** card. You can also download a CSV file with a list of those teams.
 
     :::image type="content" source="media/dtas-view-errors.png" alt-text="Screenshot of where you can get the CSV file on the Manage frontline teams page." lightbox="media/dtas-view-errors.png":::
 
-5. You can repeat this process for any frontline locations that don't have a team.
+    If an error occurred during the deployment process, you can download the error CSV file on the **Last deployment health** card. Use the information in it to help resolve the errors, and then rerun the deployment experience
+
+1. You can repeat this process for any frontline locations that don't have a team.
 
 ## Managing your frontline dynamic teams
 
@@ -131,19 +135,19 @@ You can manage your teams when changes happen in your organization.
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
 
-2. In the table, choose **Deploy**.
+1. In the table, choose **Deploy**.
 
-3. Select the **Refresh location** button, and proceed when prompted by the dialog box. This process can take several hours depending on your number of new locations.
+1. Select the **Refresh location** button, and then proceed when prompted by the dialog box. This process can take several hours depending on your number of new locations.
 
     :::image type="content" source="media/dtas-refresh-locations.png" alt-text="Screenshot of the Refresh location button." lightbox="media/dtas-refresh-locations.png":::
 
-4. After the refresh is completed, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
+1. After the refresh is completed, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
 
 ### Edit your frontline team settings
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
-2. In the **Deploy settings** column, choose **Deploy frontline teams** .
-3. On the Dynamic teams settings page, edit your settings, and then select **Save**. Your settings might take several hours to update. See the following table for the effects of updating your settings.
+1. In the **Deployment settings** column, choose **Deploy teams with dynamic membership**.
+1. On the Dynamic teams settings page, edit your settings, and then select **Save**. Your settings might take several hours to update. See the following table for the effects of updating your settings.
 
     |Setting |Effect on existing frontline teams |Effect on new frontline teams |
     |--------|-----------------------------------|------------------------------|
@@ -160,10 +164,10 @@ You can manage your teams when changes happen in your organization.
 The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-usage-activity) in  Teams admin center gives you an overview of usage activity in Teams. You can use the report to view usage details for your frontline teams, including active users, active channels, total organized meetings, last activity date, and other information.
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), **choose Analytics & reports** > **Usage reports**.
-2. On the **View reports** tab, under **Report**, select **Teams usage**.
-3. Under **Date range**, select a date range of 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
-4. In the upper-right corner, select **Export to Excel** > **Export table as CSV**.
-5. Filter the spreadsheet based on your frontline team IDs. 
+1. On the **View reports** tab, under **Report**, select **Teams usage**.
+1. Under **Date range**, select a date range of 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
+1. In the upper-right corner, select **Export to Excel** > **Export table as CSV**.
+1. Filter the spreadsheet based on your frontline team IDs. 
 
     > [!NOTE]
     > To get a list of your frontline team IDs, in the Teams admin center, go to **Teams** > **Manage frontline teams**, and then in the **Frontline teams** section, select **Download CSV**.
