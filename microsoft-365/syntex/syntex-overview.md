@@ -11,7 +11,7 @@ ms.custom: intro-overview
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-get-started
     - m365initiative-syntex
     - essentials-overview
 ms.localizationpriority:  medium
