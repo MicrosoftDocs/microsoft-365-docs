@@ -40,6 +40,8 @@ If your organization has Defender for Office 365 Plan 2 (included in your subscr
 > Your organization can tag a maximum of 250 users using the Priority account system tag.
 >
 > Each custom tag has a maximum of 10,000 users per tag and your organization can create up to 500 custom tags.
+>
+> Currently, the Recipient tag selection in the Quarantine filter page supports only Priority account system tag. 
 
 This article explains how to configure user tags in the Microsoft Defender portal. You can also apply or remove the Priority account tag using the _VIP_ parameter on the [Set-User](/powershell/module/exchange/set-user) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). No PowerShell cmdlets are available to manage custom user tags.
 
@@ -199,7 +201,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
   - [Payloads](attack-simulation-training-payloads.md)
   - [Training campaigns](attack-simulation-training-training-campaigns.md)
   - [Training modules](attack-simulation-training-training-modules.md)
-- [Quarantine](quarantine-admin-manage-messages-files.md)
+- [Quarantine](quarantine-admin-manage-messages-files.md) filters supports only Priority account system tag at the moment.
 - [Admin submissions and user reported messages](submissions-admin.md)
 - In organizations above a certain size, the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) is available in the Exchange admin center (EAC).
 
