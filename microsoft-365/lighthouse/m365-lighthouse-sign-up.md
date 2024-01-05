@@ -40,7 +40,7 @@ Microsoft 365 Lighthouse is deployed in the partner tenant only&mdash;not in the
     > [!NOTE]
     > If you see the message, "You must be an indirect reseller or direct-bill partner to use this service," see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) for eligibility details.
 
-2. If you see the error message, "You need to sign up for Microsoft 365 Lighthouse in the Microsoft 365 admin center," then follow these steps:     
+2. If you see the message, "You need to sign up for Microsoft 365 Lighthouse in the Microsoft 365 admin center," then follow these steps:     
 
     1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials. 
 
