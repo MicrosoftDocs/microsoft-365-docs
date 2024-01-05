@@ -193,7 +193,11 @@ The previous screenshot lists these settings for Intune:
 -	Set `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` to `2` 
 -	Set `./Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration` to `RemovableMediaDevices`
 
-Deploy your policy to the test device. Using [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), the default enforcement should now be Deny
+Deploy your policy to the test device. Using [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), the default enforcement should now be Deny, as shown in the following screenshot:
+
+:::image type="content" source="media/device-control-status-defaultdeny.png" alt-text="Screenshot showing device control is set to DefaultDeny.":::
+
+Remove, and re-insert the USB device in the test machine.  Try to open the drive.  The drive won’t be accessible.  A message will appear that “Access is Denied”.
 
 
 ## Next steps
