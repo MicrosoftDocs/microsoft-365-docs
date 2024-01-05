@@ -1,8 +1,8 @@
 ---
 title: Allow cookies for LMS URLs in your browser
-ms.author: danismith
-author: DaniEASmith
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 08/28/2023
 audience: admin
