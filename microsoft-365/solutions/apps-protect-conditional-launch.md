@@ -54,7 +54,7 @@ In addition, Android device condition settings offers several more setting confi
 | Require device lock | ✖ | ✔ |
 | Min Company Portal version | ✖ | ✔ |
 | Max Company Portal version age   (days) | ✖ | ✔ |
-| Samsung K✖x device   attestation | ✖ | ✔ |
+| Samsung Knox device   attestation | ✖ | ✔ |
 | Max allowed device threat   level | ✔ | ✔ |
 | Primary MTD service | ✔ | ✔ |
 

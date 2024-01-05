@@ -407,7 +407,7 @@
         items: 
         - name: App protection framework overview      
           href: apps-protect-framework.md     
-        - name: Step 1. Apply minimum data protection
+        - name: Step 1. Apply basic data protection
           href: apps-protect-step-1.md
         - name: Step 2. Apply enhanced data protection
           href: apps-protect-step-2.md

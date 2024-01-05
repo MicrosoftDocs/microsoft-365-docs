@@ -16,9 +16,11 @@ keywords:
 
 # Secure and protect apps using Microsoft Intune
 
-Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune), [added the apps you want to manage to Intune](/microsoft-365/solutions/apps-add-overview), and [configured the apps that you manage in Intune](/microsoft-365/solutions/apps-config-overview), you can begin the process of creating app protection policies. App protection policies (APP) are rules that ensure your organization's data remains safe and contained in a managed app. These policies enforce how your end-users access or move "corporate" data and control actions that are prohibited or monitored when the user is using the app. This enforcement and control allow you to control how data is accessed and shared by apps on mobile devices. 
+Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune), [added the apps you want to manage to Intune](/microsoft-365/solutions/apps-add-overview), and [configured the apps that you manage in Intune](/microsoft-365/solutions/apps-config-overview), you can begin the process of creating app protection policies. App protection policies (APP) are rules that ensure your organization's data remains safe and contained in a managed app. These policies enforce how your end-users access and move "corporate" data, as well as how you control actions that are prohibited or monitored when end-users are using the app. This enforcement allows you to control how data is accessed and shared by apps on mobile devices at your organization.
 
-Managed apps are apps that you have assigned to users via a unified endpoint management provider, such as Intune. Managed apps support app protection policies, as well as app configuration policies. These apps use mobile application management (MAM) that is provided by the unified endpoint management provider. MAM enables organizations to manage and protect their data within an application. A managed app in Intune is a [protected app](/mem/intune/apps/apps-supported-intune-apps) that has Intune app protection policies applied to it and is assigned and managed by Intune. A managed app has either integrated the Intune App SDK or has been wrapped using the Intune Wrapping Tool to support App Protection Policies (APP) and/or app configuration policies. You can use MAM policies to configure and protect apps on unmanaged devices, which are your end-user's personal devices that aren't enrolled in Intune. 
+The content provided in this solution will help you understand the different aspects of app protection for each of the supported platforms. In addition, this solution will step you through creating your app protection policies based on our recommended settings for basic, enhanced, and high level app protection.
+
+Managed apps are apps that you have assigned to users via a unified endpoint management provider, such as Intune. Managed apps support app protection policies, as well as app configuration policies. These apps use mobile application management (MAM) that is provided by the unified endpoint management provider. MAM enables organizations to manage and protect their data within an application. A managed app in Intune is a [protected app](/mem/intune/apps/apps-supported-intune-apps) that has Intune app protection policies applied to it and is assigned and managed by Intune. A managed app has either integrated the Intune App SDK or has been wrapped using the Intune Wrapping Tool to support App Protection Policies (APP) and/or app configuration policies. You can use MAM policies to configure and protect apps on unmanaged devices, which are your end-user's personal devices that aren't enrolled in Intune.
 
 Using app protection policies provides the benefit of protecting your organization's data at the app level. For end-users, productivity isn't affected and app protection policies don't apply when end-users are using the app in a personal context. There are several situations where you commonly should use app protection policies. For instance, if your end-users are using their personal device, you may want to use an app protection policy to control the access to the app by using a PIN. You may want to enforce data sharing restrictions that your organization's data isn't shared with nonmanaged apps. Also, you may want to prevent end-users from saving organization data to personal locations.
 
@@ -60,7 +62,7 @@ Follow these steps if you haven't already set up Intune and added the apps you n
 
 ## App protection
 
-App protection can be applied to supported managed apps on supported platform devices that are either enrolled with Microsoft Intune, enrolled in a third-party Mobile device management (MDM) solution, or aren't enrolled in any mobile device management solution. 
+App protection can be applied to supported managed apps on supported device platforms that are either enrolled with Microsoft Intune, enrolled in a third-party Mobile device management (MDM) solution, or aren't enrolled in any mobile device management solution.
 
 When creating an app protection policy, you choose the following details in the following order:
 
@@ -70,7 +72,7 @@ When creating an app protection policy, you choose the following details in the 
 4. The access requirements for the app
 5. The conditional launch settings for the app
 
-In addition to the above list, you can also choose scope tags and app assignments.
+In addition to the above list, you can also choose [scope tags](/mem/intune/fundamentals/scope-tags) and [app assignments](/mem/intune/apps/apps-deploy).
 
 > [!IMPORTANT]
 > The Intune Company Portal app is required on devices because it enables device users to receive app protection policies. For more information, see [How to configure the Intune Company Portal apps, Company Portal website, and Intune app](/mem/intune/apps/company-portal-app) and [Customize and configure the Company Portal](/microsoft-365/solutions/apps-config-step-1).
@@ -88,7 +90,7 @@ When you create an app protection policy, you choose the platform, the app to ta
 
 ### How app protection policies protect app data
 
-Your employees use mobile devices for both personal and work tasks. While making sure your employees can be productive, you want to prevent your organization's data from moving to locations where it you cannot secure it, for both intentional and unintentional situations. You'll also want to protect company data that is accessed from devices that aren't managed by you. You can use Intune app protection policies independent of any mobile device management (MDM) solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution. By implementing app-level protection policies, you can restrict access to company resources and keep data within the purview of your IT department.
+Your employees use mobile devices for both personal and work tasks. While making sure your employees can be productive, you want to prevent your organization's data from moving to locations where you cannot secure it, for both intentional and unintentional situations. You'll also want to protect company data that is accessed from devices that aren't managed by you. You can use Intune app protection policies independent of any mobile device management (MDM) solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution. By implementing app-level protection policies, you can restrict access to company resources and keep data within the purview of your IT department.
 
 When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data loss. The following table provides details about data, device and app protection.
 
@@ -115,4 +117,4 @@ Follow these steps to add apps to Intune:
 
 [:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps.png" alt-text="Step 1. Apply minimum data protection" border="false" :::](apps-protect-step-1.md)
 
-After you completed the above steps, you are ready to deploy, manage, and monitor the managed apps your organization uses.
+After you completed the above steps, you're ready to deploy, manage, and monitor the managed apps your organization uses.
