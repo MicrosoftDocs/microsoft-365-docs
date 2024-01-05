@@ -3,7 +3,7 @@ title: Set up targeted communications for your frontline
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: yingchang, aaglick
+ms.reviewer: yingchang, aaglick, vakorlep
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -73,18 +73,13 @@ For example, a regional store manager who oversees all Northwind Trader stores i
 
 :::image type="content" source="media/targeted-comms-automatic-tags.png" alt-text="Screenshot of automatic tags used in a  Teams channel conversation." lightbox="media/targeted-comms-automatic-tags.png":::
 
-Automatic tags are created and available after you map your attributes. To allow frontline teams to use the tags in Teams, admins and team owners need to do the following:
+Automatic tags are created and available after you map your attributes. To allow frontline teams to use the tags in Teams, team owners must select the **Show members the option to @mention groups based on job title or department. This will notify everyone in that group.** check box in team settings for each of their respective teams.
 
-- **Admins**: Make sure tags is turned on for your organization. In the Teams admin center, go to **Teams** > **Teams settings**.  Under **Tagging**, check that the **Who can manage tags** setting is set to an option other than **Not enabled**.
+:::image type="content" source="media/targeted-comms-automatic-tags-setting.png" alt-text="Screenshot of the option in team settings to @mention groups based on job title or department" lightbox="media/targeted-comms-automatic-tags-setting.png":::
 
-    [Learn more about how to turn on tags for your organization](/microsoftteams/manage-tags).
-
-- **Team owners**: In Teams, team owners must select the **Show members the option to @mention groups based on job title or department. This will notify everyone in that group.** check box in team settings for each of their respective teams.
-
-    :::image type="content" source="media/targeted-comms-automatic-tags-setting.png" alt-text="Screenshot of the option in team settings to @mention groups based on job title or department" lightbox="media/targeted-comms-automatic-tags-setting.png":::
-
-    [Learn more about using tags in Teams](https://support.microsoft.com/office/using-tags-in-microsoft-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
+[Learn more about using tags in Teams](https://support.microsoft.com/office/using-tags-in-microsoft-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
 
 ## Related articles
 
 - [Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)
+- [Manage tags in Teams](/microsoftteams/manage-tags)
