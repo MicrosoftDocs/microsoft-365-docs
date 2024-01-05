@@ -281,7 +281,7 @@
         - name: Get started with adoption
           href: adoption-getstarted.md
         - name: Try out Syntex services
-          href: trial-syntex.md
+          href: promo-syntex.md
         - name: Scenarios and use cases
           items:
             - name: Overview

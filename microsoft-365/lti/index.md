@@ -1,8 +1,8 @@
 ---
 title: An overview of Microsoft LTI apps
-ms.author: danismith
-author: DaniEASmith
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
