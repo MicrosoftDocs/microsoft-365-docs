@@ -132,14 +132,11 @@ By default, device control is disabled and there are no restrictions on which de
 
 :::image type="content" source="media/device-control-report-filterpnp.png" alt-text="Screenshot of device control report with PnP filter applied." lightbox="media/device-control-report-filterpnp.png":::
 
-SCREENSHOT
+Device control in Defender for Endpoint identifies a device based on its properties. The device properties are visible by selecting an entry in the report. The following image depicts device properties:
 
-Defender device control identifies a device based on its properties.  The device properties are visible by selecting an entry in the report
+:::image type="content" source="media/device-control-deviceproperties.png" alt-text="Screenshot showing device properties.":::
 
-SCREENSHOT
-
-The device ID, vendor ID (VID), serial number, Bus type can all be used to identify a device (See List of device properties for the complete list)
-The data is also available in Advanced Hunting, by searching for the Plug and Play Device Connected action (PnPDeviceConnected)
+The **Device ID**, **Vendor ID** (VID), **Serial number**, and **Bus type** can all be used to identify a device (see *LINK NEEDED* List of device properties for the complete list). The data is also available in [advanced hunting](../defender/advanced-hunting-overview.md), by searching for the `Plug and Play Device Connected action` (`PnPDeviceConnected`), as shown in the following example query:
 
 ```kusto
 
@@ -155,7 +152,9 @@ DeviceEvents
 
 ```
 
-SCREENSHOT
+The previous example query could return results like what's shown in the following screenshot:
+
+:::image type="content" source="media/device-control-ahqueryresults.png" alt-text="Screenshot showing results from advanced hunting query for device control." lightbox="media/device-control-ahqueryresults.png":::
 
 The status of device control (enabled/disabled, default enforcement, and last policy update) is available on a device via Get-MpComputerStatus
 
