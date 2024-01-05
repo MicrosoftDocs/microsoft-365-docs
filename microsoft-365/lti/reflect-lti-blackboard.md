@@ -35,7 +35,7 @@ Integrate Reflect into Blackboard Learn to create impactful check-ins, gain well
 1. Select the **Admin** link in the global navigation.
 1. In the Administrator Panel, select the **LTI Tool Providers** link, and then select **Register LTI 1.3/Advantage Tool**.
 1. In the *Client ID* field, type or copy and paste this ID: `f432c937-03fb-47e5-a8f8-fa55a85bc7bc`.
-1. Review the pre-populated settings and **Tool Status**, and then select **Submit** to complete the registration.
+1. Review the prepopulated settings and **Tool Status**, and then select **Submit** to complete the registration.
 
 Reflect is now installed and ready to be used as a tool in any course in your Blackboard Learn environment.
 
