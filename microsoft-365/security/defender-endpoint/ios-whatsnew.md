@@ -34,11 +34,11 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 ## Device Tagging
 
-Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. For more information, read [Configure Device Tagging](/microsoft-365/security/defender-endpoint/ios-configure-features#device-tagging).
+Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. For more information, read [Configure Device Tagging](/microsoft-365/security/defender-endpoint/ios-configure-features#device-tagging).
 
 ## Vulnerability assessment of apps
 
-Vulnerability assessment of apps on Microsoft Defender for Endpoint for iOS is now generally available. Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices. For more details, see [Configure vulnerability assessment of apps](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-vulnerability-assessment-of-apps). 
+Vulnerability assessment of apps on Microsoft Defender for Endpoint for iOS is now generally available. Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices. For more details, see [Configure vulnerability assessment of apps](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-vulnerability-assessment-of-apps).
 
 ## Network protection
 
@@ -90,7 +90,7 @@ On January 25, 2022, we announced the general availability of Vulnerability mana
 
 ## 1.1.23010101
 
-- Bug fixes and performance improvements 
+- Bug fixes and performance improvements
   - Performance optimizations were made in this release. Test battery performance with this version and let us know your feedback.
 
 ## 1.1.20240103
