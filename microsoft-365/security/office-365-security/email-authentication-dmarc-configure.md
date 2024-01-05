@@ -68,7 +68,7 @@ Before we get started, here's what you need to know about DMARC in Microsoft 365
 
 - **DMARC might need help**: Legitimate email services might modify messages in transit, which breaks SPF, DKIM, and therefore DMARC checks. If the email services supports it, you can identify the service as a trusted ARC sealer so the modified message can pass DMARC checks. For more information, see the [Next Steps](#next-steps) section at the end of this article.
 
-The rest of this article describes the DMARC TXT record that you need to create for domains in Microsoft 365, how to configure DMARC reporting, and information about how Microsoft 365 uses DMARC on _inbound_ mail.
+The rest of this article describes the DMARC TXT record that you need to create for domains in Microsoft 365, the best way to gradually and safely implement DMARC for custom domains in Microsoft 365, and how Microsoft 365 uses DMARC on _inbound_ mail.
 
 > [!TIP]
 > To create the DMARC TXT record for your **\*.onmicrosoft.com domain** in the Microsoft 365 admin center, see [this section](#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365) later in this article.
@@ -85,28 +85,27 @@ DMARC TXT records are exhaustively described in [RFC 7489](https://datatracker.i
 
 The basic syntax of the DMARC TXT record for a domain in Microsoft 365 is:
 
-```text
-v=DMARC1; <DMARC policy>; <Percentage of failed DMARC mail subject to DMARC policy>; <DMARC reports>
-```
+**Hostname**: `_dmarc`<br/>
+**TXT value**: `v=DMARC1; <DMARC policy>; <Percentage of DMARC failed mail subject to DMARC policy>; <DMARC reports>`
 
 Or
 
-```text
-v=DMARC1; p=<reject | quarantine | none>; pct=<0-100>; rua=mailto:<DMARCAggregateReportURI>; ruf=mailto:<DMARCForensicReportURI>
-```
+**Hostname**: `_dmarc`<br/>
+**TXT value**: `v=DMARC1; p=<reject | quarantine | none>; pct=<0-100>; rua=mailto:<DMARCAggregateReportURI>; ruf=mailto:<DMARCForensicReportURI>`
 
 For example:
 
-```text
-v=DMARC1; p=reject; pct=100; rua=mailto:rua@contoso.com; ruf=mailto:ruf@contoso.com
-```
+**Hostname**: `_dmarc`<br/>
+**TXT value**: `v=DMARC1; p=reject; pct=100; rua=mailto:rua@contoso.com; ruf=mailto:ruf@contoso.com`
+
+- The hostname value `_dmarc` is required.
 
 - `v=DMARC1;` identifies the TXT record as a DMARC TXT record.
 
 - **DMARC policy**: Tells the destination email system what to with messages that fail DMARC as described earlier in this article:
   - `p=reject`: The messages should be rejected. What actually happens to the message depends on the destination email system, but the messages are typically discarded.
   - `p=quarantine`: The messages should be accepted but marked. What actually happens to the message depends on the destination email system. For example, the message might be quarantined as spam or delivered to the Junk Email folder, or delivered to the Inbox with an identifier added to the Subject or message body.
-  - `p=none`: No suggested action for messages that fail DMARC. What happens to the message depends on the email protection features in the destination email system.
+  - `p=none`: No suggested action for messages that fail DMARC. What happens to the message depends on the email protection features in the destination email system. You use this value for [testing and tuning of the DMARC policy](#best-practices-for-implementing-dmarc-in-microsoft-365) as described later in this article.
 
 - **Percentage of failed DMARC mail subject to DMARC policy**: Tells the destination email system how many messages that fail DMARC (percentage) get the DMARC policy applied to them. For example, `pct=100` means all messages that fail DMARC get the DMARC policy applied to them. You use values less than 100 for [testing and tuning of the DMARC policy](#best-practices-for-implementing-dmarc-in-microsoft-365) as described later in this article.
 
@@ -118,7 +117,7 @@ v=DMARC1; p=reject; pct=100; rua=mailto:rua@contoso.com; ruf=mailto:ruf@contoso.
     The information in the Aggregate report can be vast and difficult to parse. To help make sense of the data, you can use the following options for DMARC reporting:
 
     - Create automation using PowerShell or Microsoft Power BI.
-    - Use an external service. For a list of services, search for DMARC in the Microsoft Intelligent Security Association (MISA) Catalog at <https://www.microsoft.com/misapartnercatalog>.
+    - Use an external service. For a list of services, search for DMARC in the Microsoft Intelligent Security Association (MISA) Catalog at <https://www.microsoft.com/misapartnercatalog>. The DMARC reporting services describe any custom values that are required in the DMARC TXT record.
 
   - **DMARC Forensic report URI**: The `ruf=mailto:` value identifies where to send the DMARC Forensic report (also known as the DMARC Failure report). The report is generated and sent immediately after a DMARC failure like a non-delivery report (also known as an NDR or bounce message).
 
@@ -164,11 +163,6 @@ For more information about DMARC, use the following resources:
 - The checklist at [dmarcian](https://space.dmarcian.com/deployment/).
 - Information at [DMARC.org](https://dmarc.org).
 
-## DMARC TXT records for custom domains in Microsoft 365
-
-> [!TIP]
-> As mentioned previously in this article, you need to [create SPF TXT records](email-authentication-spf-configure.md#spf-txt-records-for-custom-domains-in-microsoft-365) and [configure DKIM signing](email-authentication-dkim-configure.md#enable-dkim-signing-of-outbound-messages-using-a-custom-domain) for all custom domains and subdomains that you use to send email in Microsoft 365 _before_ you configure DMARC for the domains or subdomains.
-
 ## Use the Microsoft 365 admin center to add DMARC TXT records for \*.onmicrosoft.com domains in Microsoft 365
 
 1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, select **Show all** \> **Settings** \> **Domains**. Or, to go directly to the **Domains** page, use <https://admin.microsoft.com/Adminportal/Home#/Domains>.
@@ -183,63 +177,85 @@ For more information about DMARC, use the following resources:
    - **Type**: Verify that **TXT (Text)** is selected.
    - **TXT name**: Enter `_dmarc`.
    - **TXT value**: Enter `v=DMARC1; p=reject`.
+
+     > [!TIP]
+     > To specify destinations for the DMARC Aggregate and DMARC Forensic reports, use the syntax `v=DMARC1; p=reject rua=mailto:<emailaddress>; ruf=mailto:<emailaddress>`. For example, `v=DMARC1; p=reject rua=mailto:rua@contoso.onmicrosoft.com; ruf=mailto:ruf@contoso.onmicrosoft.com`.
+     >
+     > DMARC reporting vendors in the MISA Catalog at <https://www.microsoft.com/misapartnercatalog> make it easier to view and interpret the DMARC results.
+
    - **TTL**: Verify that **1 hour** is selected.
 
    When you're finished on the **Add a custom DNS record** flyout, select **Save**.
 
-### Step 4: Form the DMARC TXT record for your domain
+## Implement DMARC for active custom domains in Microsoft 365
 
-For information about which options to use, become familiar with the concepts in [Best practices for implementing DMARC in Microsoft 365](#best-practices-for-implementing-dmarc-in-microsoft-365).
+> [!TIP]
+> As mentioned previously in this article, you need to [create SPF TXT records](email-authentication-spf-configure.md#spf-txt-records-for-custom-domains-in-microsoft-365) and [configure DKIM signing](email-authentication-dkim-configure.md#enable-dkim-signing-of-outbound-messages-using-a-custom-domain) for all custom domains and subdomains that you use to send email in Microsoft 365 _before_ you configure DMARC for custom domains or subdomains.
 
-Examples:
+We recommend a gradual approach to implementing DMARC for your Microsoft 365 domains. The goal is to get to a `p=reject` DMARC policy for all of your custom domains and domains, but you need to test and verify along the way to prevent destination email systems from rejecting good mail because of unintentional DMARC failures.
 
-- Policy set to none
+Create and implement a roll-out plan that uses the following steps.
 
-    ```console
-    _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
-    ```
+Start with a domain or subdomain with low mail volume and/or fewer potential email sources (less chance of legitimate mail from unknown sources being blocked):
 
-- Policy set to quarantine
+1. Start with a DMARC policy of `p=none` and monitor the results for the domain. For example:
 
-    ```console
-    _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
-    ```
+   **DMARC TXT record for marketing.contoso.com**:
 
-- Policy set to reject
+   **Hostname**: `_dmarc`<br/>
+   **TXT value**: `v=DMARC1; p=none; pct=100; rua=mailto:rua@marketing.contoso.com; ruf=mailto:ruf@marketing.contoso.com`
 
-    ```console
-    _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
-    ```
+   The DMARC Aggregate and DMARC Forensic reports give the numbers and sources of messages that pass and fail DMARC checks. You can see how much of your legitimate mail traffic is or isn't covered by DMARC, and troubleshoot any problems. You can also begin see how many fraudulent messages are being sent, and where they're sent from.
 
-Once you've formed your record, you need to update the record at your domain registrar.
+2. Increase the DMARC policy to `p=quarantine` and monitor the results for the domain.
 
-## Best practices for implementing DMARC in Microsoft 365
+   After enough time monitoring the effects of `p=none`, you can increase the DMARC policy to `p=quarantine` for the domain. For example:
 
-You can implement DMARC gradually without impacting the rest of your mail flow. Create and implement a roll-out plan that follows these steps. Do each of these steps first with a sub-domain, then other sub-domains, and finally with the top-level domain in your organization before moving on to the next step.
+   **DMARC TXT record for marketing.contoso.com**:
 
-1. Monitor the impact of implementing DMARC
+   **Hostname**: `_dmarc`<br/>
+   **TXT value**: `v=DMARC1; p=quarantine; pct=100; rua=mailto:rua@marketing.contoso.com; ruf=mailto:ruf@marketing.contoso.com`
 
-    Start with a simple monitoring-mode record for a sub-domain or domain that requests that DMARC receivers send you statistics about messages that they see using that domain. A monitoring-mode record is a DMARC TXT record that has its policy set to none (p=none). Many companies publish a DMARC TXT record with p=none because they're unsure about how much email they may lose by publishing a more restrictive DMARC policy.
+   You can also use the `pct=` value to gradually affect more messages and verify the results. For example, you can move in the following increments:
 
-    You can do this even before you've implemented SPF or DKIM in your messaging infrastructure. However, you won't be able to effectively quarantine or reject mail by using DMARC until you also implement SPF and DKIM. As you introduce SPF and DKIM, the reports generated through DMARC will give the numbers and sources of messages that pass these checks, versus those that don't. You can easily see how much of your legitimate traffic is or isn't covered by them, and troubleshoot any problems. You'll also begin to see how many fraudulent messages are being sent, and where they're sent from.
+   - `pct=10`
+   - `pct=25`
+   - `pct=50`
+   - `pct=75`
+   - `pct=100`
 
-2. Request that external mail systems quarantine mail that fails DMARC
+3. Increase the DMARC policy to `p=reject` and monitor the results for the domain.
 
-    When you believe that all or most of your legitimate traffic is protected by SPF and DKIM, and you understand the impact of implementing DMARC, you can implement a quarantine policy. A quarantine policy is a DMARC TXT record that has its policy set to quarantine (p=quarantine). By doing this, you're asking DMARC receivers to put messages from your domain that fail DMARC into the local equivalent of a spam folder instead of your customers' inboxes.
+   After enough time monitoring the effects of `p=quarantine`, you can increase the DMARC policy to `p=reject` for the domain. For example:
 
-3. Request that external mail systems not accept messages that fail DMARC
+   **DMARC TXT record for marketing.contoso.com**:
 
-    The final step is implementing a reject policy. A reject policy is a DMARC TXT record that has its policy set to reject (p=reject). When you do this, you're asking DMARC receivers not to accept messages that fail the DMARC checks.
+   **Hostname**: `_dmarc`<br/>
+   **TXT value**: `v=DMARC1; p=reject; pct=100; rua=mailto:rua@marketing.contoso.com; ruf=mailto:ruf@marketing.contoso.com`
 
-4. How to set up DMARC for subdomain?
+   You can also use the `pct=` value to gradually affect more messages and verify the results.
 
-   DMARC is implemented by publishing a policy as a TXT record in DNS and is hierarchical (for example, a policy published for contoso.com will apply to sub.domain.contoso.com unless a different policy is explicitly defined for the subdomain). This is useful as organizations may be able to specify a smaller number of high-level DMARC records for wider coverage. Care should be taken to configure explicit subdomain DMARC records where you don't want the subdomains to inherit the top-level domain's DMARC record.
+4. Repeat the previous steps for other subdomains of increasing volume and/or complexity, saving the parent domain for last.
 
-   Also, you can add a wildcard-type policy for DMARC when subdomains shouldn't be sending email, by adding the `sp=reject` value. For example:
+   > [!TIP]
+   > Blocking legitimate email in any significant volume is unacceptable to users. But, it's almost inevitable that you're going to get some false positives. Go slowly and methodically deal with issues that are revealed in DMARC reporting. DMARC reporting vendors in the MISA Catalog at <https://www.microsoft.com/misapartnercatalog> make it easier to view and interpret the DMARC results.
 
-   ```text
-   _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
-   ```
+5. As described earlier, subdomains inherit the DMARC TXT record of the parent domain, which can be overridden by a separate DMARC TXT record in the subdomain. When you're finished implementing DMARC in a domain and all subdomains, and the DMARC settings are effectively identical, you can eliminate the DMARC TXT records in the subdomains and rely on the single DMARC TXT record in the parent domain.
+
+## DMARC TXT records for parked domains in Microsoft 365
+
+> [!TIP]
+> The recommended SPF TXT record for parked domains that don't send mail is described in [SPF TXT records for custom domains in Microsoft 365](email-authentication-spf-configure.md#spf-txt-records-for-custom-domains-in-microsoft-365). As described in [Set up DKIM to sign mail from your Microsoft 365 domain](email-authentication-dkim-configure.md), we don't recommend DKIM CNAME records for parked domains.
+
+1. If you have registered domains that no one on the internet should expect to received mail from, create the following DMARC TXT record at the domain registrar for the domain:
+
+   **Hostname**: `_dmarc`<br/>
+   **TXT value**: `v=DMARC1; p=reject;`
+
+   - The `pct=` value isn't included, because the default value is `pct=100`.
+   - The `rua=mailto:` and `ruf=mailto:` values are arguably not needed in this scenario, because no valid mail should ever come from senders in the domain.
+
+2. If you don't use the \*.onmicrosoft.com domain to send mail, you also need to [add the DMARC TXT record for your \*.onmicrosoft.com domain](#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365).
 
 ## How Microsoft 365 handles outbound email that fails DMARC
 
@@ -255,14 +271,14 @@ If a message is outbound from Microsoft 365 and fails DMARC, and you have set th
 
   To see the default values for these settings in anti-phishing policies, check the setting values in the table at [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
+- Microsoft 365 doesn't send DMARC Forensic reports (also known as DMARC Failure reports), even if a valid `ruf=mailto:` address exists in the source domain's DMARC TXT record.
+
 - Microsoft 365 sends DMARC Aggregate reports to all domains with a valid `rua=mailto:` address in the DMARC TXT records, as long as the MX record for the Microsoft 365 domain points directly to Microsoft 365.
 
   If mail from the internet is routed through a third-party service or device before delivery to Microsoft 365 (the MX record points somewhere other than Microsoft 365), DMARC Aggregate reports aren't sent. This limitation includes hybrid or standalone EOP scenarios where mail is delivered to the on-premises environment before being routed to Microsoft 365 using a connector.
 
   > [!TIP]
   > When a third-party service or device sits in front of mail flowing into Microsoft 365, [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as _skip listing_) correctly identifies the source of internet messages for SPF, DKIM (if the service modifies messages), and DMARC validation.
-
-- Microsoft 365 doesn't send DMARC Forensic reports (also known as DMARC Failure reports), even if a valid `ruf=mailto:` address exists in the source domain's DMARC TXT record.
 
 ## Troubleshooting your DMARC implementation
 
