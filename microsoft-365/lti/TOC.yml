@@ -22,6 +22,8 @@
         href: teams-meetings-with-blackboard-learn.md
       - name: Use Microsoft Teams classes with Blackboard Learn Ultra 
         href: teams-classes-with-blackboard.md
+      - name: Use Microsoft Reflect LTI with Blackboard Learn
+        href: reflect-lti-blackboard.md        
     - name: Moodle integrations
       items:
       - name: Set up and configure the Moodle plugin
