@@ -23,9 +23,9 @@ metadata:
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  Last updated December 13, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
+  Last updated January 8, 2024. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
-  If you can't find an answer to your question, let us know by leaving a comment and we'll add it to this article.
+  If you can't find an answer to your question, let us know by providing feedback and we'll add it to this article.
   
 
 sections:
@@ -33,7 +33,7 @@ sections:
     questions:
       - question: What is Microsoft 365 Lighthouse?
         answer: |
-          Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale from a single portal. With Lighthouse, you can standardize configurations, manage risk, identify artificial intelligence (AI)-driven sales opportunities, and engage with customers in an unprecedented manner, allowing you to anticipate customers needs and maximize their investment in Microsoft 365.  
+          Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale through proactive account management, simplified onboarding, efficient tenant configuration, device protection, and alerts. Lighthouse provides insights into customer acquisition, retention, and growth opportunities, as well as multi-tenant views across customer devices, data, and users to help you anticipate customer needs and maximize their investment in Microsoft 365.  
           
           For MSP service technicians with delegated access, Lighthouse helps you secure and manage devices, data, and users at scale for small and medium business (SMB) customers. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments.
           
@@ -72,7 +72,7 @@ sections:
           
       - question: Why do I see data for some customer tenants but not others?
         answer: |
-          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
+          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
 
           If GDAP is established with the customer, an MSP technician must be in a GDAP-enabled security group that is assigned the appropriate roles to be able to manage that customer's data in Lighthouse. GDAP roles assigned to that security group impact which customer data can be managed within Lighthouse. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for details on which delegated and partner tenant roles are recommended to use Lighthouse. For instructions on how to view which GDAP roles have been assigned to you for different customer tenants in Lighthouse, see [View your Microsoft Entra roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   
          
