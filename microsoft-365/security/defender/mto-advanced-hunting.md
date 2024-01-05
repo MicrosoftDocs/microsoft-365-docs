@@ -13,7 +13,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
-ms.date: 09/01/2023
+ms.date: 1/5/2024
 ---
 
 # Advanced hunting in multi-tenant management in Microsoft Defender XDR
@@ -24,25 +24,23 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Advanced hunting
-
-Advanced hunting in multi-tenant management in Microsoft Defender XDR allows you to proactively hunt for intrusion attempts and breach activity affecting your email, data, devices, and accounts over multiple tenants at the same time.
+Advanced hunting in multi-tenant management in Microsoft Defender XDR allows you to proactively hunt for intrusion attempts and breach activity in email, data, devices, and accounts across multiple tenants at the same time.
 
 ## Run cross-tenant queries
 
-In multi-tenant management, you can use any of the queries you currently have access to. They're filtered by tenant in the **Queries** tab. Select a tenant to view the queries available under each one. 
+In multi-tenant management, you can use any of the queries you currently have access to. They're filtered by tenant in the **Queries** tab. Select a tenant to view the queries available under each one.
 
-Once you have loaded the query in the query editor, you can then specify the scope of the query by tenant by selecting **Tenant scope**:
+Once you load the query in the query editor, you can then specify the scope of the query by tenant by selecting **Tenant scope**:
 
    :::image type="content" source="../../media/defender/mto-cross-tenants-query.png" alt-text="Screenshot of the Microsoft Defender XDR cross tenants advanced hunting query page" lightbox="../../media/defender/mto-cross-tenants-query.png":::
 
-This opens a side pane from which you can specify the tenants to include in the query:
+This action opens a side pane from which you can specify the tenants to include in the query:
 
    :::image type="content" source="../../media/defender/mto-cross-tenants-sidepane.png" alt-text="Screenshot of the Microsoft Defender XDR cross tenants advanced hunting query side pane scope" lightbox="../../media/defender/mto-cross-tenants-sidepane.png":::
 
 Select the tenants you want to include in your query. Select **Apply**, then **Run query**.
 
->[!NOTE]
+> [!NOTE]
 > Queries that use the `join` operator are currently not supported in multi-tenant management advanced hunting.
 
 The query results contain the tenant ID:
