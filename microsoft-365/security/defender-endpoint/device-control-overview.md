@@ -123,12 +123,12 @@ Device control in Defender for Endpoint can be applied to Windows 10 and Windows
 - `4.18.2104` or later: Add `SerialNumberId`, `VID_PID`, filepath-based GPO support, and `ComputerSid`
 - `4.18.2105` or later: Add Wildcard support for `HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId`, the combination of specific user on specific machine, removable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
 - `4.18.2107` or later: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets); add `AccountName` into [advanced hunting](device-control-removable-storage-access-control.md#view-data-in-microsoft-defender-for-endpoint)
-- `4.18.2205` or later: Expand the default enforcement to Printer. If you set it to Deny, it will block Printer as well, so if you only want to manage storage, make sure to create a custom policy to allow Printer
+- `4.18.2205` or later: Expand the default enforcement to Printer. If you set it to Deny, it blocks Printer as well, so if you only want to manage storage, make sure to create a custom policy to allow Printer
 - `4.18.2207` or later: Add File support; the common use case can be: block people from Read/Write/Execute access specific file on removable storage. Add Network and VPN Connection support; the common use case can be: block people from access removable storage when the machine isn't connecting corporate network.
 
 ## Getting started
 
-By default, device control is disabled and there are no restrictions on which devices can be added. The auditing of basic device control events is enabled for devices that are onboarded to Defender for Endpoint. This activity can be seen in the [device control report](device-control-report.md). Filtering on the built in **PnP Audit Policy** shows devices that are connected to the endpoints in the environment, as shown in the following screenshot:
+By default, device control is disabled and there are no restrictions on which devices can be added. The auditing of basic device control events is enabled for devices that are onboarded to Defender for Endpoint. This activity can be seen in the [device control report](device-control-report.md). Filtering on the built-in **PnP Audit Policy** shows devices that are connected to the endpoints in the environment, as shown in the following screenshot:
 
 :::image type="content" source="media/device-control-report-filterpnp.png" alt-text="Screenshot of device control report with PnP filter applied." lightbox="media/device-control-report-filterpnp.png":::
 
@@ -152,7 +152,7 @@ DeviceEvents
 
 ```
 
-The previous example query could return results like what's shown in the following screenshot:
+The previous example query could return results like the following screenshot:
 
 :::image type="content" source="media/device-control-ahqueryresults.png" alt-text="Screenshot showing results from advanced hunting query for device control." lightbox="media/device-control-ahqueryresults.png":::
 
@@ -197,8 +197,10 @@ Deploy your policy to the test device. Using [Get-MpComputerStatus](/powershell/
 
 :::image type="content" source="media/device-control-status-defaultdeny.png" alt-text="Screenshot showing device control is set to DefaultDeny.":::
 
-Remove, and re-insert the USB device in the test machine.  Try to open the drive.  The drive won’t be accessible.  A message will appear that “Access is Denied”.
+Remove, and reinsert the USB device in the test machine.  Try to open the drive.  The drive isn't accessible.  A message appears that “Access is Denied”.
 
+
+MORE TO COME
 
 ## Next steps
 
