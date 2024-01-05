@@ -62,7 +62,7 @@ Likewise, you can manage custom detection rules from multiple tenants in the cus
 
    :::image type="content" source="../../media/defender/mto-custom-detection-tenant-name.png" alt-text="Screenshot of the Microsoft Defender XDR multi-tenant custom detection page" lightbox="../../media/defender/mto-custom-detection-tenant-name.png":::
 
-To view only a specific tenant’s custom detection rules, select **Filter**, choose the tenant or tenants and select **Apply**.
+To view only a specific tenant's custom detection rules, select **Filter**, choose the tenant or tenants and select **Apply**.
 
 To read more about custom detection rules, read [Custom detections overview](custom-detections-overview.md).
 
