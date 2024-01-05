@@ -156,11 +156,11 @@ The previous example query could return results like what's shown in the followi
 
 :::image type="content" source="media/device-control-ahqueryresults.png" alt-text="Screenshot showing results from advanced hunting query for device control." lightbox="media/device-control-ahqueryresults.png":::
 
-The status of device control (enabled/disabled, default enforcement, and last policy update) is available on a device via Get-MpComputerStatus, as shown in the following screenshot:
+The status of device control (enabled/disabled, default enforcement, and last policy update) is available on a device via [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
 
 :::image type="content" source="media/device-control-status.png" alt-text="Screenshot showing device control status." lightbox="media/device-control-status.png":::
 
-To get started, change the device control state to *enabled* on a test device.  Make sure the policy has been applied by checking Get-MpComputerStatus, as shown in the following screenshot:
+To get started, change the device control state to *enabled* on a test device.  Make sure the policy has been applied by checking [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
 
 :::image type="content" source="media/device-control-statusenabled.png" alt-text="Screenshot showing device control is enabled on a device.":::
 
@@ -187,6 +187,13 @@ For Intune, use a custom profile to set the device control settings, as shown in
 
 :::image type="content" source="media/device-control-intuneentries.png" alt-text="Screenshot showing Intune settings for device control." lightbox="media/device-control-intuneentries.png":::
 
+The previous screenshot lists these settings for Intune:
+
+-	Set `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled` to `1`
+-	Set `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` to `2` 
+-	Set `./Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration` to `RemovableMediaDevices`
+
+Deploy your policy to the test device. Using [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), the default enforcement should now be Deny
 
 
 ## Next steps
