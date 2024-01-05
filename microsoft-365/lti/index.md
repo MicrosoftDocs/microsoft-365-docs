@@ -109,3 +109,4 @@ For configuration steps, see:
 - [Microsoft Reflect with Schoology Learning](reflect-lti-schoology.md).
 - [Microsoft Reflect with Moodle](reflect-lti-moodle.md).
 - [Microsoft Reflect with D2L Brightspace](reflect-lti-brightspace.md).
+- [Microsoft Reflect with Blackboard Learn](reflect-lti-blackboard.md).
