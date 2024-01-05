@@ -88,7 +88,7 @@ From the graph, you can:
 
 - Hunt for entity information of a device, file, IP address, or URL.
 
-The *go hunt* option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you’re investigating. You can select any of the options to find relevant information about the entity:
+The *go hunt* option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you're investigating. You can select any of the options to find relevant information about the entity:
 
   - See all available queries – the option returns all available queries for the entity type you're investigating.
   - All Activity – the query returns all activities associated with an entity, providing you with a comprehensive view of the incident's context.
