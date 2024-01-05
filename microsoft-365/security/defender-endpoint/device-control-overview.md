@@ -156,14 +156,36 @@ The previous example query could return results like what's shown in the followi
 
 :::image type="content" source="media/device-control-ahqueryresults.png" alt-text="Screenshot showing results from advanced hunting query for device control." lightbox="media/device-control-ahqueryresults.png":::
 
-The status of device control (enabled/disabled, default enforcement, and last policy update) is available on a device via Get-MpComputerStatus
+The status of device control (enabled/disabled, default enforcement, and last policy update) is available on a device via Get-MpComputerStatus, as shown in the following screenshot:
 
-SCREENSHOT
+:::image type="content" source="media/device-control-status.png" alt-text="Screenshot showing device control status." lightbox="media/device-control-status.png":::
 
-To get started, changing the device control state to enabled on a test device.  Make sure the policy has been applied by checking Get-MpComputerStatus
+To get started, change the device control state to *enabled* on a test device.  Make sure the policy has been applied by checking Get-MpComputerStatus, as shown in the following screenshot:
 
-SCREENSHOT
+:::image type="content" source="media/device-control-statusenabled.png" alt-text="Screenshot showing device control is enabled on a device.":::
 
+In the test device, insert a USB drive. There are no restrictions; all types of access (read, write, execute, and print) are allowed. A record is created to show that a USB device was connected. You can use the following example advanced hunting query to see it:
+
+```kusto
+
+DeviceEvents
+| where ActionType == "PnpDeviceConnected"
+| extend parsed=parse_json(AdditionalFields)
+| extend MediaClass = tostring(parsed.ClassName)
+| extend MediaDeviceId = tostring(parsed.DeviceId)
+| extend MediaDescription = tostring(parsed.DeviceDescription)
+| extend MediaSerialNumber = tostring(parsed.SerialNumber)
+| where MediaClass == "USB"
+| project Timestamp, DeviceId, DeviceName, AccountName, AccountDomain, MediaClass, MediaDeviceId, MediaDescription, MediaSerialNumber, parsed
+| order by Timestamp desc
+
+```
+
+This example query filters the events by `MediaClass`. The default behavior can be changed to deny all devices, or to exclude families of devices from device control. Change the default behavior to deny, and then set device control only to apply to removable storage.
+
+For Intune, use a custom profile to set the device control settings, as shown in the following screenshot:
+
+:::image type="content" source="media/device-control-intuneentries.png" alt-text="Screenshot showing Intune settings for device control." lightbox="media/device-control-intuneentries.png":::
 
 
 
