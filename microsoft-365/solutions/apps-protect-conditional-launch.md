@@ -16,9 +16,7 @@ keywords:
 
 # Understand app protection conditional launch
 
-The **Conditional launch** settings allow you to select the sign-in security requirements for your access protection policy. 
-
-App protection policies offer both app and device conditions.
+The **Conditional launch** settings allow you to select the sign-in security requirements for your access protection policy. App protection policies offer both app and device conditions.
 
 You must select a setting and enter the value that users must meet to sign in to your company app. Then select the Action you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting. Learn more about conditional launch actions.
 

@@ -16,14 +16,14 @@ keywords:
 
 # Understand app data protection
 
-The **Data Protection** settings determine how users interact with org data and context in policy-managed apps. As the admin, you can control the movement of data into and out of the context of org protection. The org context is defined by documents, services, and sites accessed by the specified org account (Microsoft Entra ID) owned by the end-user. The app protection policy settings help control external data received into the org context and org data sent out of the org context.
+The **Data Protection** settings in Intune determine how users interact with org data and context in policy-managed apps. As the admin, you can control the movement of data into and out of the context of org protection. The org context is defined by documents, services, and sites accessed by the specified org account (Microsoft Entra ID) owned by the end-user. The app protection policy settings help control external data received into the org context and org data sent out of the org context.
 
 > [!NOTE]
 > The term *policy-managed apps* refers to apps that are configured with app protection policies.
 
 Data protection is available for policy-managed apps that support the [iOS/iPadOS](/mem/intune/apps/app-protection-policy-settings-ios#data-protection), [Android](/mem/intune/apps/app-protection-policy-settings-android#data-protection), and [Windows](/mem/intune/apps/app-protection-policy-settings-windows#data-protection) platforms. Each platform offers a different set of settings related to data protection.
 
-The data protection section of app protection policies has has the following categories for each platform:
+The **Data Protection** settings within app protection policies provides the following categories for each platform:
 
 | Data Protection  | Categories |
 |---|---|
@@ -35,7 +35,7 @@ The data protection section of app protection policies has has the following cat
 
 ### Data Transfer for iOS/iPadOS app protection policy
 
-The **Data Transfer** section of the **Data Protection** settings for a iOS/iPadOS specific app protection policy has settings that are specific to the iOS/iPadOS platform. These settings determine how end-users interact with org data in the apps. You select settings to allow or block iTunes and iCloud backups, determine how apps can send and receive org data, restrict end-user initiated data movement between apps, and prevent third-party keyboards. 
+The **Data Transfer** section of the **Data Protection** settings for a iOS/iPadOS specific app protection policy has settings that are specific to the iOS/iPadOS platform. These settings determine how end-users interact with org data in the iOS/iPadOS apps on a device. You select settings to allow or block iTunes and iCloud backups, determine how apps can send and receive org data, restrict end-user initiated data movement between apps, and prevent third-party keyboards. 
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-02.png" alt-text="Data Transfer UI for iOS/iPadOS" border="false" :::
 
@@ -55,7 +55,8 @@ The **Data Transfer** section of the **Data Protection** settings for a Windows 
 
 Encryption is available for iOS/iPadOS and Android as part of an app protection policy. The **Encryption** section under the **Data Transfer** section, is also part of the **Data Protection** settings.
 
-Choose **Require** to enable encryption of work or school data in an app.
+> [!IMPORTANT]
+> You must choose **Require** to enable encryption of work or school data in an app.
 
 ### Encryption for iOS/iPadOS app protection policy
 
@@ -91,7 +92,7 @@ For iOS/iPadOS and Android app protection policies, you can choose to block poli
 Additionally, you can allow or block printing org data, restrict web content transfer with other apps, and determine how org data notifications are handled. When you restrict transferring web content, consider allowing web content to open only in Microsoft Edge. 
 
 > [!NOTE]
-> Android and iOS/iPadOS offer sightly different options when restricting transferring web content using pp protection policies. For iOS/iPadOS, you can enter a specific protocol for a single unmanaged browser. For Android, You can enter an unmanaged browser ID, or an unmanaged browser name.
+> Android and iOS/iPadOS offer sightly different options when restricting transferring web content using app protection policies. For iOS/iPadOS, you can enter a specific protocol for a single unmanaged browser. For Android, You can enter an unmanaged browser ID, or an unmanaged browser name.
 
 You'll see that iOS/iPadOS offer slightly different app protection functionality:
 
