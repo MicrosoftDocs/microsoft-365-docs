@@ -58,7 +58,7 @@ To view this report, in Explorer, select **All email** in the top navigation pan
 > [!NOTE] 
 > If you get a **Too much data to display** error, add a filter and, if necessary, narrow the date range you're viewing. 
 
-To apply a filter, select the filter dropdown, select an item in the list, and then select **Refresh**. You can view information by sender, sender's domain, recipients, subject, attachment filename, malware family, detection technology (how the malware was detected), and more. 
+To apply a filter, select the filter dropdown, select an item in the list, and then select **Refresh**. You can view information by sender, sender's domain, recipients, subject, attachment filename, malware family, detection technology (how the malware was detected), and more. 
 
 You can view more details about specific email messages, such as subject line, recipient, sender, status, and so on below the chart. 
 
@@ -84,7 +84,7 @@ To view this report, in Explorer (or real-time detections), select **Phish** in 
 
 Your list of viewing options include data by sender, recipients, sender domain, sender IP, URL domain, click verdict, and more. 
 
-For example, to see what actions were taken when people clicked on URLs that were identified as phishing attempts, select **Click verdict**, select one or more options, and then select **Refresh**.
+For example, to see what actions were taken when people clicked on URLs that were identified as phishing attempts, select **Click verdict**, select one or more options, and then select **Refresh**.
 
 Below the chart, view more details about specific emails, **URL clicks**, **Top URLs**, **Top clicks**, and more. 
 
@@ -102,7 +102,7 @@ For more information on campaigns, see [Campaigns in Microsoft Defender for Offi
 
 ## Content Malware
 
-To view this report, in Explorer (or real-time detections), select **Content Malware** in the top navigation pane. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
+To view this report, in Explorer (or real-time detections), select **Content Malware** in the top navigation pane. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 
 :::image type="content" source="../../media/threat-explorer-content-malware-new.png" alt-text="Screenshot of the view data about content malware." lightbox="../../media/threat-explorer-content-malware-new.png":::
 
