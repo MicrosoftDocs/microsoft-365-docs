@@ -108,7 +108,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Next 2 days**
   - **Next 7 days**
   - **Custom**: Enter a **Start time** and **End time** (date).
-- **Recipient tag**
+- **Recipient tag**: Currently, the only selectable [user tag](user-tags-about.md) is Priority account.
 - **Quarantine reason**:
   - **Transport rule** (mail flow rule)
   - **Bulk**
