@@ -22,7 +22,8 @@ ms.date:
 
 # Set up for targeted communications for your frontline
 
- > This article describes a Microsoft Teams feature that hasn't yet been released. It's been announced, and it's coming soon. If you're an admin, you can find out when this feature will be released in the Message Center in the [Microsoft 365 admin center](https://portal.office.com/adminportal/home). To stay on top of upcoming Teams features, check out the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Teams).
+> [!IMPORTANT]
+> This article describes a Microsoft Teams feature that hasn't yet been released. It's been announced, and it's coming soon. If you're an admin, you can find out when this feature will be released in the Message Center in the [Microsoft 365 admin center](https://portal.office.com/adminportal/home). To stay on top of upcoming Teams features, check out the [Microsoft 365 roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Teams).
 
 ## Overview
 
