@@ -32,7 +32,7 @@ To no longer use the Microsoft 365 Backup tool, you must offboard usage. This ac
 
 ## Offboarding recovery undo period
 
-If offboarding from Microsoft 365 Backup has begun due to either an explicit request from you or due to an unhealthy billing state, the following grace period initiates:
+If offboarding from Microsoft 365 Backup has begun due to either an explicit request from you or due to an unhealthy billing state, the following grace periods initiate:
 
 ![Screenshot of a data table showing the offboarding undo periods.](../../media/content-understanding/backup-offboarding-time.png)
 
