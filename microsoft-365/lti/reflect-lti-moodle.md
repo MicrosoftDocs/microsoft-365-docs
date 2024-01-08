@@ -1,8 +1,8 @@
 ---
 title: Integrate Microsoft Reflect LTI with Moodle
-ms.author: danismith
-author: DaniEASmith
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: eladgr
 ms.date: 11/28/2023
 audience: admin
@@ -83,8 +83,8 @@ Reflect is now installed and ready to use in your course by both teachers and st
 
 1. After the initial course setup, teachers and students will find a link to Reflect in the **General** section.
 1. On their first access, they need to sign in using their Microsoft account to get started.
-1. Course owners can [create and share check-ins](https://support.microsoft.com/topic/c6cbbacc-5655-450e-bca9-988ddc506017).
-1. Once check-ins are created, course members can access and respond to them in their Reflect tab.
+1. Course teachers can [create and share check-ins](https://support.microsoft.com/topic/c6cbbacc-5655-450e-bca9-988ddc506017).
+1. Once check-ins are created, course students can access and respond to them by navigating to their Reflect link.
 
 > [!TIP]
 > [Explore the Educator Toolkit](https://reflect.microsoft.com/home/resources) for resources that can help educators bring the magic of Reflect to students and share it with peers. 
