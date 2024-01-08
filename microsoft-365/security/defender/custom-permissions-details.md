@@ -49,7 +49,7 @@ Permissions for managing day-to-day operations and responding to incidents and a
 |---|---|---|
 |Security data basic|Read|View info about incidents, alerts, investigations, advanced hunting, devices, submissions, evaluation lab, and reports.|
 |Alerts|Manage|Manage alerts, start automated investigations, run scans, collect investigation packages, and manage device tags.|
-|Response|Manage|Take response actions on a device, approve or dismiss pending remediation actions, and manage blocked and allowed lists for automation.|
+|Response|Manage|Take response actions, approve or dismiss pending remediation actions, and manage blocked and allowed lists for automation.|
 |Basic live response|Manage|Initiate a live response session, download files, and perform read-only actions on devices remotely.|
 |Advanced live response|Manage|Create live response sessions and perform advanced actions, including uploading files and running scripts on devices remotely.|
 |File collection|Manage|Collect or download relevant files for analysis, including executable files.|
