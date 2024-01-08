@@ -21,14 +21,29 @@ description: "Microsoft 365 network connectivity test tool"
 
 The Microsoft 365 network connectivity test tool is located at <https://connectivity.office.com>. It's an adjunct tool to the network assessment and network insights available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
 
+||Global service|US Government L4| US Government L5 (DOD) | China operated by 21Vianet|
+|:--|:--|:--|:--|:--|
+|Avalibility|✅|✖️|✖️|✅(In preview)|
+|Url|<https://connectivity.office.com>|✖️|✖️|<https://connectivity.sovcloud.cn>|
+|Anonymous test|✅|✖️|✖️|✅|
+|Print report | ✅|✖️|✖️|✅|
+|Login| ✅|✖️|✖️|✖️|
+|Save report |  ✅|✖️|✖️|✖️|
+|View report |  ✅|✖️|✖️|✖️|
+|Share report in tenant | ✅|✖️|✖️|✖️|
+|Share report to public |  ✅|✖️|✖️|✖️|
+|Network health status | ✅|✖️|✖️|✅|
+|Multi-languages support: English,Chinese Simplified,Chinese Tranditional,Japanese| ✅|✖️|✖️|✅|
+|Testing from the command line|  ✅|✖️|✖️|✖️|
+|FAQ|  ✅|✖️|✖️|✅|
+|Community forum|  ✅|✖️|✖️|✅|
+
+
 > [!IMPORTANT]
 > It's important to sign in to your Microsoft 365 tenant as all test reports are shared with your administrator and uploaded to the tenant while you are signed in.
 
 > [!div class="mx-imgBorder"]
 > ![Connectivity test tool.](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
-
->[!NOTE]
->The network connectivity test tool supports tenants in WW Commercial but not GCC Moderate, GCC High, DoD or China.
 
 Network insights in the Microsoft 365 Admin Center are based on regular in-product measurements for your Microsoft 365 tenant, aggregated each day. In comparison, network insights from the Microsoft 365 network connectivity test are run locally in the tool.
 
@@ -232,6 +247,9 @@ Where an TLS/SSL certificate is found that isn't provided by Microsoft, we show 
 #### Network path
 
 This section shows the results of an ICMP traceroute to the Exchange Online service front door, the SharePoint Online service front door, and the Microsoft Teams service front door. It's provided for information only and there's no associated network insight. There are three traceroutes provided. A traceroute to _outlook.office365.com_, a traceroute to the customers SharePoint front end or to _microsoft.sharepoint.com_ if one wasn't provided, and a traceroute to _world.tr.teams.microsoft.com_.
+
+> [！NOTES]
+> In reports generated in different versions, the addresses you see above may also vary slightly.
 
 ## Connectivity reports
 
