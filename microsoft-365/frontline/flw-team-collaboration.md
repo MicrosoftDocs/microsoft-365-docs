@@ -95,7 +95,7 @@ Share this [Shifts video training](https://support.microsoft.com/office/what-is-
 
 ### Keep in touch with Walkie Talkie
 
-The Walkie Talkie app in Teams provides a push-to-talk (PTT) experience that enables clear, instant, and secure voice communications. For example, if a customer at one side of the store asks an employee if an item is in stock on the other side of the store, the employee can use Walkie Talkie to contact someone who works near the item. Because Walkie Talkie works over Wi-Fi or cellular data, your frontline can communicate from anywhere they have an internet connection. Employees can easily consult with experts in other stores or corporate offices.
+The Walkie Talkie app in Teams provides a push-to-talk (PTT) experience that enables clear, instant, and secure voice communications. For example, if a customer at one side of the store asks an employee if an item is in stock on the other side of the store, the employee can use Walkie Talkie to contact someone who works near the item. Employees can also easily consult with experts in other stores or corporate offices. Because Walkie Talkie works over Wi-Fi or cellular data, your frontline can communicate from anywhere they have an internet connection.
 
 |Industry |Example |
 |:--------|:-------|
@@ -106,7 +106,10 @@ The Walkie Talkie app in Teams provides a push-to-talk (PTT) experience that ena
 
 Learn how to [manage Walkie Talkie for your organization](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
-Share this [Walkie Talkie video training](https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69) with your users.
+Share these Walkie Talkie resources with your users:
+
+- [Get started with Teams Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c)
+- [Communicate with your team in Walkie Talkie](https://support.microsoft.com/office/communicate-with-your-team-in-walkie-talkie-e4342550-5516-4451-b9ec-93166b60f8a4)
 
 <!--Watch the [Walkie Talkie featurette video](https://go.microsoft.com/fwlink/?linkid=2202710).-->
 
@@ -207,7 +210,7 @@ You can also set up shared mailboxes to allow for incoming mail from customers (
 
 Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-overview) and enables you to create a personalized landing experience in Teams.
 
-![Screenshot of the Viva Connections Dashboard on a mobile device.](media/flw-shifts-praise-tasks-approvals.png)
+![Screenshot of the Viva Connections dashboard on a mobile device.](media/flw-shifts-praise-tasks-approvals.png)
 
 Use the Viva Connections Dashboard and add the Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user.
 
