@@ -34,9 +34,7 @@ To no longer use the Microsoft 365 Backup tool, you must offboard usage. This ac
 
 If offboarding from Microsoft 365 Backup has begun due to either an explicit request from you or due to an unhealthy billing state, the following grace period initiates:
 
-- In the first 14 days, your policy is automatically paused, meaning new backups won't be taken. However, you'll still be able to continue to use the tool to restore existing backups.
-
-- During days 15-29, usage of the tool will be blocked.
+![Screenshot showing the offboarding periods.](../../media/content-understanding/backup-offboarding-time.png)
 
 By bringing your billing back to a healthy state or by asking support to reverse the offboarding, the tool becomes usable again and no backups are lost.
 
