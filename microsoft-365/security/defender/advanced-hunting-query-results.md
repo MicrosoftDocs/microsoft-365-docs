@@ -77,7 +77,6 @@ AlertInfo
 ```
 
 :::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="An example of a chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-column-chart-new.png":::
-*Query results for alerts by severity displayed as a column chart*
 
 #### Phishing emails across top ten sender domains
 
@@ -93,7 +92,7 @@ EmailEvents
 Use the pie chart view to effectively show distribution across the top domains:
 
 :::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="The pie chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
-*Pie chart that shows distribution of phishing emails across top sender domains*
+
 
 #### File activities over time
 Using the `summarize` operator with the `bin()` function, you can check for events involving a particular indicator over time. The query below counts events involving the file `invoice.doc` at 30-minute intervals to show spikes in activity related to that file:
@@ -108,7 +107,7 @@ CloudAppEvents
 The line chart below clearly highlights time periods with more activity involving `invoice.doc`:
 
 :::image type="content" source="../../media/line-chart-a.png" alt-text="The line chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/line-chart-a.png":::
-*Line chart showing the number of events involving a file over time*
+
 
 ## Export tables and charts
 
@@ -118,6 +117,20 @@ After running a query, select **Export** to save the results to local file. Your
 - **Any chart**—The query results are exported as a JPEG image of the rendered chart
 
 ## Drill down from query results
+
+You can also explore the results in-line with the following features:
+- Expand a result by selecting the dropdown arrow at the left of each result
+- Where applicable, expand details for results that are in JSON and array formats by selecting the dropdown arrow at the left of applicable column names for added readability
+- Open the side pane to see a record’s details (concurrent with expanded rows)
+
+
+:::image type="content" source="../../media/advanced-hunting-query-results-expand.png" alt-text="Screenshot of expanding results to drill down" lightbox="../../media/advanced-hunting-query-results-expand.png":::
+
+You can also right-click on any result value in a row so that you can use it to add more filters to the existing query or copy the value for use in further investigation.
+
+:::image type="content" source="../../media/advanced-hunting-query-results-rightclick.png" alt-text="Screenshot of options upon right-clicking an option" lightbox="../../media/advanced-hunting-query-results-rightclick.png":::
+
+
 
 To quickly inspect a record in your query results, select the corresponding row to open the **Inspect record** panel. The panel provides the following information based on the selected record:
 
