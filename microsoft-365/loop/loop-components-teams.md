@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
   - M365-collaboration
+  - essentials-overview
 description: Learn how to manage Loop components in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH

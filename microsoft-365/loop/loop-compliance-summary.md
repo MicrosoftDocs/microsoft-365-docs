@@ -16,6 +16,7 @@ ms.collection:
 - Strat_SP_admin
 - Microsoft 365-collaboration
 - Tier3
+- essentials-compliance
 search.appverid:
 - SPO160
 - MET150
