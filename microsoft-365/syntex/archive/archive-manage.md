@@ -81,7 +81,7 @@ Other than these two exceptions, you can expect the site to be unchanged.
 
 ## Change the archive status of site via PowerShell
 
-You can also change the status of an archived site by using the PowerShell cmdlet [Set-SPOSiteArchiveState](/powershell/module/sharepoint-online/set-spositearchivestate?view=sharepoint-ps).
+You can also change the status of an archived site by using the PowerShell cmdlet [**Set-SPOSiteArchiveState**](/powershell/module/sharepoint-online/set-spositearchivestate?view=sharepoint-ps).
 
 ## Site templates supported
 
