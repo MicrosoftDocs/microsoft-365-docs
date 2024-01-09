@@ -1,5 +1,5 @@
 ---
-ms.date: 12/12/2023
+ms.date: 1/9/2024
 title: Usage and engagement metrics in Topics
 ms.author: daisyfeller
 author: daisyfell
