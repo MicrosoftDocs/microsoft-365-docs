@@ -48,7 +48,7 @@ There's currently only one Lighthouse RBAC role: Lighthouse Account Manager. The
 The following table describes the actions that Lighthouse Account Managers can perform in Lighthouse.
 
 | Area | Actions | Lighthouse&nbsp;Account&nbsp;Manager |
-|--|--|--|
+|--|--|:--:|
 | Tenants | View the Tenants page | &check; |
 |  | Manage tags |  |
 |  | Activate and inactivate a tenant |  |
