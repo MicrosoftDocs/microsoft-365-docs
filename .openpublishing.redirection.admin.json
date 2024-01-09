@@ -2067,7 +2067,7 @@
      },
      {
        "source_path": "microsoft-365/admin/misc/device-list.md",
-       "redirect_url": "https://learn.microsoft.com/autopilot/add-devices",
+       "redirect_url": "/autopilot/add-devices",
        "redirect_document_id": false
      },
      {
@@ -2107,7 +2107,7 @@
      },
      {
        "source_path": "microsoft-365/admin/email/manage-email-app-access.md",
-       "redirect_url": "https://learn.microsoft.com/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies",
+       "redirect_url": "/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/mobile-device-mailbox-policies",
        "redirect_document_id": false
      },
      {
@@ -2138,6 +2138,16 @@
       {
       "source_path": "microsoft-365/admin/services-in-china/parity-between-azure-information-protection.md",
       "redirect_url": "/azure/information-protection/parity-between-azure-information-protection",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/admin/email/access-email-from-a-mobile-device.md",
+      "redirect_url": "/microsoft-365/admin/setup/set-up-mobile-devices",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/admin/add-users/admin-roles-page.md",
+      "redirect_url": "/microsoft-365/admin/add-users/assign-admin-roles",
       "redirect_document_id": false
       }      
    ]

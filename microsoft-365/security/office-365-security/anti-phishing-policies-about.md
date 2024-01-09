@@ -316,9 +316,11 @@ Impersonation safety tips appear to users when messages are identified as impers
 
   This safety tip is controlled by the value 9.19 of the `SFTY` field in the **X-Forefront-Antispam-Report** header of the message. The text says:
 
-    > This sender might be impersonating a domain that's associated with your organization.
+  > This sender might be impersonating a domain that's associated with your organization.
 
-- **Show user impersonation unusual characters safety tip**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a sender specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured.
+- **Show user impersonation unusual characters safety tip**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a sender specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured. The text says:
+
+  > The email address `<email address>` includes unexpected letters or numbers. We recommend you don't interact with this message. 
 
 > [!NOTE]
 > Safety tips are not stamped in the following messages:

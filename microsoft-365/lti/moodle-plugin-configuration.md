@@ -1,8 +1,8 @@
 ---
 title: Set up and configure the Moodle LMS plugins
-ms.author: danismith
-author: DaniEASmith
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 04/06/2022
 audience: admin

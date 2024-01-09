@@ -1,5 +1,5 @@
 ---
-title: Review and sign a signature request using Microsoft Syntex eSignature
+title: Review and sign a signature request using Microsoft SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,12 +14,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to review and sign electronic signature requests using Microsoft Syntex eSignature. 
+description: Learn how to review and sign electronic signature requests using Microsoft SharePoint eSignature. 
 ---
 
-# Review and sign a signature request using Microsoft Syntex eSignature
+# Review and sign a signature request using Microsoft SharePoint eSignature
 
-When a signature request is created, an email notification is sent to the recipients. The notification contains details of the request, including all recipients who are required to sign, and any signing instructions. A recipient doesn't need to have a Syntex license or a Microsoft account to sign the request.
+When a signature request is created, an email notification is sent to the recipients. The notification contains details of the request, including all recipients who are required to sign, and any signing instructions. A recipient doesn't need to have a SharePoint license or a Microsoft account to sign the request.
 
 ## Access the document to be signed
 
@@ -119,7 +119,7 @@ Whether you're a requester or a recipient, you can select **View request** from 
 
 ## Monitor the status of a request
 
-When you create a signature request with Syntex eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning.
+When you create a signature request with SharePoint eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning.
 
 |Status  |Description  |
 |---------|---------|

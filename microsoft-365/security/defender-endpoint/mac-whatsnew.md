@@ -59,6 +59,18 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 > - Big Sur (11) in December 2023.
 > - Catalina (10.15) in December 2022.
 
+### Dec-2023 (Build: 101.23102.0020 | Release version: 20.123102.20.0)
+
+| Build:             | **101.23102.0020** |
+|--------------------|----------------------------|
+| Release version:   | **20.123102.20.0** |
+| Engine version:    | **1.1.23090.2005** |
+| Signature version: | **1.401.1729.0**   |
+
+##### What's new
+
+- Bug and performance fixes
+
 ### Nov-2023 (Build: 101.23092.0007 | Release version: 20.123092.7.0)
 
 | Build:             | **101.23092.0007**         |
@@ -970,7 +982,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 >
 > The mechanism for granting this consent depends on how you deployed Microsoft Defender for Endpoint:
 >
-> - For manual deployments, see the updated instructions in the [Manual deployment topic](mac-install-manually.md#how-to-allow-full-disk-access).
+> - For manual deployments, see the updated instructions in the [Manual deployment topic](mac-install-manually.md#allow-full-disk-access).
 > - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
 
 - Performance improvements & bug fixes

@@ -66,7 +66,7 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 
 ## Use eBPF
 
-The eBPF sensor will be automatically enabled for all customers by default for agent versions “101.23082.0006” and above. Customers need to update to the above-mentioned supported versions to experience the feature. When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux updates supplementary_events_subsystem to ebpf.
+The eBPF sensor will be automatically enabled for all customers by default for agent versions "101.23082.0006" and above. Customers need to update to the above-mentioned supported versions to experience the feature. When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux updates supplementary_events_subsystem to ebpf.
 
 :::image type="content" source="../../media/defender-endpoint/ebpf-subsystem-linux.png" alt-text="ebpf subsystem highlight in the mdatp health command" lightbox="../../media/defender-endpoint/ebpf-subsystem-linux.png":::
 
@@ -100,7 +100,7 @@ uname -a
 
 Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result into kernel hang issues. Following steps can be taken to mitigate this issue:    
  
-1. Use a kernal version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Please note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
+1. Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Please note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
 2. Switch to auditd mode if customer needs to use the same kernel version
 ```bash
 sudo mdatp config  ebpf-supplementary-event-provider  --value disabled
