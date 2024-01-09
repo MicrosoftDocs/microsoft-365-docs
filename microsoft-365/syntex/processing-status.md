@@ -28,7 +28,7 @@ The **Processing status** column shows you whether the processing of a file is i
 
 | Processing status | Description |
 | ------- | -------
-| In progress | The file has been queued for processing and is processing. |
+| In progress | The file has been queued for processing or is processing. |
 | Finished | The file has been processed. |
 | Failed | The file has been queued, but can't be processed (for example, the file type isn't supported or there's an issue with an image or text). |
 
