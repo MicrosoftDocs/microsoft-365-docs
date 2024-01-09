@@ -37,7 +37,7 @@ This section shows how unique users in your organization are engaging with topic
 
 This section shows unique user counts by type of engagement, including sharing, consuming, and contributing to topics.
 
-- **Sharing** measures all scenarios related to sharing topics by using the topic picker (# tags). Tagging on Viva Engage and Answers aren't currently counted.
+- **Sharing** measures all scenarios related to sharing topics by using the topic picker (# tags).
 - **Contributing** measures all scenarios where a topic is improved, including topic page edits, publication, and adding or confirming files, people, sites. Contributing also includes other feedback to improve topics.
 - **Consumption** measures top-level activity, such as selecting a card or page, but doesn't measure activity within topic cards or pages.
 
