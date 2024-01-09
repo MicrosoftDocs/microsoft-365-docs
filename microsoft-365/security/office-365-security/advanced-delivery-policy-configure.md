@@ -144,7 +144,7 @@ If your MX record doesn't point to Microsoft 365, the IP address in the `Authent
 >
 > Adding phishing simulation URLs to the **Do not rewrite the following URLs in email** section in Safe Links policies might result in unwanted alerts for URL clicks. Phishing simulation URLs in email messages are automatically allowed both during mail flow and at time of click.
 >
-> Currently, the advanced delivery policy for SecOps mailboxes doesn't support intra-organizational messages (`DIR:INT`), and these messages will be quarantined. As a workaround, add the SecOps mailbox as an exception in the appropriate anti-spam policies. 
+> Currently, the advanced delivery policy for SecOps mailboxes doesn't support intra-organizational messages (`DIR:INT`), and these messages will be quarantined. As a workaround, you can create or use an separate anti-spam policy to cover the SecOps mailboxes that does not quarantine intra-organizational messages since we do not recommend disabling intra-org protection for all mailboxes.
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
