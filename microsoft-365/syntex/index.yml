@@ -39,13 +39,8 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: SharePoint eSignature
-            url: esignature-overview.md
-          - text: Microsoft 365 Archive (Preview)
-            url: archive/archive-overview.md
-          - text: Microsoft Backup (Preview)
-            url: backup/backup-overview.md
-
+          - text: Syntex services promotion
+            url: promo-syntex.md
 
 # Card 2
   - title: Get started

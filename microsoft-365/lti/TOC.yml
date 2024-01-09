@@ -22,24 +22,30 @@
         href: teams-meetings-with-blackboard-learn.md
       - name: Use Microsoft Teams classes with Blackboard Learn Ultra 
         href: teams-classes-with-blackboard.md
+      - name: Use Microsoft Reflect LTI with Blackboard Learn
+        href: reflect-lti-blackboard.md        
     - name: Moodle integrations
       items:
       - name: Set up and configure the Moodle plugin
         href: moodle-plugin-configuration.md
       - name: Use Microsoft Teams classes and meetings with Moodle
         href: teams-classes-meetings-with-moodle.md
+      - name: Use Microsoft Reflect LTI with Moodle
+        href: reflect-lti-moodle.md        
     - name: Open LMS integrations
       items:
       - name: Set up and configure the Moodle plugin for Open LMS
         href: open-lms-plugin-configuration.md
       - name: Use Microsoft Teams classes and meetings with Open LMS
         href: open-lms-teams-classes-and-meetings.md
-    - name: Desire2Learn Brightspace integrations
+    - name: D2L Brightspace integrations
       items:
       - name: Use Microsoft Teams classes and meetings with Brightspace
         href: teams-classes-meetings-with-brightspace.md
       - name: Use Microsoft OneDrive LTI with Brightspace
         href: onedrive-lti-brightspace.md
+      - name: Use Microsoft Reflect LTI with D2L Brightspace
+        href: reflect-lti-brightspace.md        
     - name: Schoology Learning integrations
       items:
       - name: Use Microsoft OneDrive LTI with Schoology Learning

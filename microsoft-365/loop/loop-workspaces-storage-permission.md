@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
   - M365-collaboration
+  - essentials-compliance
 description: Learn about Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
