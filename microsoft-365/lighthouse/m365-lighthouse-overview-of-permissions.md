@@ -26,7 +26,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse permissions are primarily managed by the following:
 
-- Lighthouse Role-Based-Access Control (RBAC) in the partner tenant
+- Lighthouse role-based access control (RBAC) in the partner tenant
 - Granular Delegated Admin Privileges (GDAP) in the customer tenant
 
 To use Lighthouse, you need a combination of roles assigned via RBAC and GDAP.
@@ -46,7 +46,6 @@ There's currently only one Lighthouse RBAC role: Lighthouse Account Manager. The
 ## Lighthouse RBAC roles and capabilities
 
 The following table describes the actions that Lighthouse Account Managers can perform in Lighthouse.
-
 
 | Area | Actions | Lighthouse&nbsp;Account&nbsp;Manager |
 |--|--|--|
