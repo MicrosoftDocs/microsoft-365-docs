@@ -49,25 +49,25 @@ The following table describes the actions that Lighthouse Account Managers can p
 
 | Area | Actions | Lighthouse&nbsp;Account&nbsp;Manager |
 |---|---|:---:|
-| Tenants | View the Tenants page | &check; |
+| **Tenants** | View the Tenants page | &check; |
 |  | Manage tags |  |
 |  | Activate and inactivate a tenant |  |
 |  | View delegated status | &check; |
 |  | View baseline assignment |  |
 |  | View deployment status | &check; |
 |  | View and edit customer contact information and website | &check; |
-| Baselines | View baselines (default, custom) |  |
+| **Baselines** | View baselines (default, custom) |  |
 |  | Create, edit, and assign baselines |  |
-| Alerts | View alerts | &check; |
+| **Alerts** | View alerts | &check; |
 |  | Manage alerts (change severity, status, or assignment) |  |
 |  | Create, edit, and delete alert rules |  |
-| Permissions | Set up and manage Lighthouse permissions |  |
+| **Permissions** | Set up and manage Lighthouse permissions |  |
 |  | Set up and manage GDAP |  |
 |  | View GDAP status detail |  |
-| Audit logs | View audit logs |  |
-| Sales Advisor | View Sales Advisor reports and manage data | &check; |
-| Support | Open and manage service requests |  |
-| Service&nbsp;health | Monitor service health |  |
+| **Audit logs** | View audit logs |  |
+| **Sales Advisor** | View Sales Advisor reports and manage data | &check; |
+| **Support** | Open and manage service requests |  |
+| **Service&nbsp;health** | Monitor service health |  |
 
 ## Managing GDAP in the customer tenant
 
