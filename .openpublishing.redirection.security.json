@@ -2282,8 +2282,8 @@
      },
      {
        "source_path": "microsoft-365/security/office-365-security/support-for-validation-of-dkim-signed-messages.md",
-       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dkim-support-about",
-       "redirect_document_id": true
+       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dkim-configure",
+       "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/office-365-security/use-dmarc-to-validate-email.md",
@@ -3749,6 +3749,11 @@
       "source_path": "microsoft-365/security/office-365-security/email-authentication-anti-spoofing.md",
       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-spf-configure",
       "redirect_document_id": false
-     }
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/email-authentication-dkim-support-about.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dkim-configure",
+      "redirect_document_id": false
+    }
    ]
  }

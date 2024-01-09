@@ -49,8 +49,6 @@
          href: email-authentication-spf-configure.md
        - name: Set up DKIM
          href: email-authentication-dkim-configure.md
-       - name: Support for DKIM-signed messages
-         href: email-authentication-dkim-support-about.md
        - name: Set up DMARC
          href: email-authentication-dmarc-configure.md
        - name: Configure trusted ARC sealers

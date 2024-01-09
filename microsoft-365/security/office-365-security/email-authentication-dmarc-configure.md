@@ -107,6 +107,9 @@ For example:
   - `p=quarantine`: The messages should be accepted but marked. What actually happens to the message depends on the destination email system. For example, the message might be quarantined as spam, delivered to the Junk Email folder, or delivered to the Inbox with an identifier added to the Subject or message body.
   - `p=none`: No suggested action for messages that fail DMARC. What happens to the message depends on the email protection features in the destination email system. You use this value for [testing and tuning of the DMARC policy](#implement-dmarc-for-active-custom-domains-in-microsoft-365) as described later in this article.
 
+  > [!TIP]
+  > Outbound mail from domains in Microsoft 365 that fail DMARC is routed through the [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md) if the DMARC policy for the domain is `p=reject` or `p=quarantine`. There's no override for this behavior.
+
 - **Percentage of failed DMARC mail subject to DMARC policy**: Tells the destination email system how many messages that fail DMARC (percentage) get the DMARC policy applied to them. For example, `pct=100` means all messages that fail DMARC get the DMARC policy applied to them. You use values less than 100 for [testing and tuning of the DMARC policy](#implement-dmarc-for-active-custom-domains-in-microsoft-365) as described later in this article.
 
 - **DMARC reports**:
@@ -257,10 +260,6 @@ Start with a domain or subdomain with low mail volume and/or fewer potential ema
 
 2. If you don't use the \*.onmicrosoft.com domain to send mail, you also need to [add the DMARC TXT record for your \*.onmicrosoft.com domain](#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365).
 
-## How Microsoft 365 handles outbound email that fails DMARC
-
-If a message is outbound from Microsoft 365 and fails DMARC, and you have set the policy to p=quarantine or p=reject, the message is routed through the [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md). There's no override for outbound email.
-
 ## DMARC for inbound mail into Microsoft 365
 
 - DMARC checks on mail coming into Microsoft 365 are affected by the following features in Exchange Online Protection (EOP):
@@ -283,7 +282,6 @@ If a message is outbound from Microsoft 365 and fails DMARC, and you have set th
 ## Troubleshooting your DMARC implementation
 
 :::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="A troubleshooting graphic for DMARC" lightbox="../../media/Tp_DMARCTroublehoot.png":::
-
 
 ## Next steps
 
