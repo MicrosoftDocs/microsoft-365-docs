@@ -8,13 +8,14 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 10/27/2022
+ms.date: 12/27/2023
 ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Advanced Data Residency Commitments
@@ -28,7 +29,7 @@ Microsoft makes commitments to store certain customer data at rest in the applic
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
-- Exchange Online mailbox content, (e-mail body, calendar entries, and the content of e-mail attachments stored in the related _Local Region Geography_.
+- Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments stored in the related _Local Region Geography_).
 
 ## SharePoint Online/OneDrive for Business
 

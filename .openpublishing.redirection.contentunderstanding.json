@@ -313,7 +313,7 @@
        {
          "source_path": "microsoft-365/contentunderstanding/trial-syntex.md",
          "redirect_url": "/microsoft-365/syntex/trial-syntex",
-         "redirect_document_id": true
+         "redirect_document_id": false
        },
        {
          "source_path": "microsoft-365/contentunderstanding/use-content-center-site.md",
