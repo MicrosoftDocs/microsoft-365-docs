@@ -21,6 +21,9 @@ description: "Microsoft 365 network connectivity test tool"
 
 The Microsoft 365 network connectivity test tool is located at <https://connectivity.office.com>. It's an adjunct tool to the network assessment and network insights available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
 
+> [!NOTE]
+> This document mentions the URL (<https://connectivity.office.com>) for the Global version of this tool. For other versions, please refer to the table below for the corresponding URLs.
+
 
 |Feature|Global service <https://connectivity.office.com>|US Government L4| US Government L5 (DOD) | China operated by 21Vianet <https://connectivity.sovcloud.cn>|
 |:--|:--|:--|:--|:--|
