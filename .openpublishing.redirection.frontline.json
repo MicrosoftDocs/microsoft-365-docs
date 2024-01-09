@@ -16,6 +16,11 @@
          "redirect_document_id":true
       },
       {
+         "source_path":"microsoft-365/frontline/collab-features-apps-toolkit.md",
+         "redirect_url":"/microsoft-365/frontline/flw-team-collaboration",
+         "redirect_document_id":true
+      },
+      {
          "source_path":"microsoft-365/frontline/flw-trial.md",
          "redirect_url":"/microsoft-365/frontline/flw-overview",
          "redirect_document_id":true
