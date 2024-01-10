@@ -25,9 +25,9 @@ ms.date: 01/10/2024
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-This article provides deployment guidance for Microsoft Defender for Endpoint on Linux for SAP. You'll learn about recommended SAP oss notes, the system requirements, prerequisites, important configuration settings, recommended antivirus exclusions and guidance on scheduling antivirus scans and other useful commands and links.
+This article provides deployment guidance for Microsoft Defender for Endpoint on Linux for SAP. You'll learn about recommended SAP OSS(Online Services System) notes, the system requirements, prerequisites, important configuration settings, recommended antivirus exclusions, and guidance on scheduling antivirus scans.
 
-Conventional security defenses that have been commonly used to protect SAP systems such as isolating infrastructure behind firewalls and limiting interactive Operating System logons are no longer considered sufficient to mitigate modern sophisticated threats. It's essential to deploy modern defenses to detect and contain threats in real-time. SAP applications unlike most other workloads require basic assessment and validation before deploying Defender for Endpoint. The Enterprise Security administrators should contact the SAP Basis team prior to deploying Defender. The SAP Basis Team should be cross trained with a basic level of knowledge about Defender.  
+Conventional security defenses that have been commonly used to protect SAP systems such as isolating infrastructure behind firewalls and limiting interactive Operating System logons are no longer considered sufficient to mitigate modern sophisticated threats. It's essential to deploy modern defenses to detect and contain threats in real-time. SAP applications unlike most other workloads require basic assessment and validation before deploying Microsoft Defender for Endpoint. The Enterprise Security administrators should contact the SAP Basis Team prior to deploying Defender for Endpoint. The SAP Basis Team should be cross trained with a basic level of knowledge about Defender for Endpoint.
 
 ## Recommended SAP OSS Notes
 
@@ -39,49 +39,49 @@ Conventional security defenses that have been commonly used to protect SAP syste
 
 ## SAP Applications on Linux
 
-- SAP only supports Suse, Redhat and Oracle Linux.  Other distributions aren't supported for SAP S4 or NetWeaver applications.
+- SAP only supports Suse, Redhat and Oracle Linux. Other distributions aren't supported for SAP S4 or NetWeaver applications.
 - Suse 15.x, Redhat 8.x or 9.x and Oracle Linux 8.x are strongly recommended.
 - Suse 12.x, Redhat 7.x and Oracle Linux 7.x are technically supported but haven't been extensively tested.
 - Suse 11.x, Redhat 6.x and Oracle Linux 6.x might not be supported and haven't been tested.
 - Suse and Redhat offer tailored distributions for SAP.  These “for SAP” versions of Suse and Redhat might have different packages preinstalled and possibly different kernels.
-- SAP only supports certain Linux File systems. In general, XFS and EXT3 are used. Oracle ASM filesystem is sometimes used for Oracle DBMS and can't be read by Microsoft Defender for Endpoint.
-- Some SAP applications use “standalone engines” such as TREX, Adobe Document Server, Content Server and LiveCache.  These engines require specific configuration and file exclusions.
-- SAP applications often have Transport and Interface directories with many thousands of small files.  If the number of files is larger than 100,000, it might and affect performance. It's recommended to archive files.
-- It's strongly recommended to deploy Microsoft Defender for Endpoint to non-productive SAP landscapes for several weeks before deploying to production. The SAP Basis team should use tools such as sysstat, KSAR and nmon to verify if CPU and other performance parameters are impacted.
+- SAP only supports certain Linux File systems. In general, XFS and EXT3 are used. Oracle Automatic Storage Management (ASM) filesystem is sometimes used for Oracle DBMS and can't be read by Defender for Endpoint.
+- Some SAP applications use “standalone engines” such as TREX, Adobe Document Server, Content Server and LiveCache. These engines require specific configuration and file exclusions.
+- SAP applications often have Transport and Interface directories with many thousands of small files. If the number of files is larger than 100,000, it might and affect performance. It's recommended to archive files.
+- It's strongly recommended to deploy Defender for Endpoint to non-productive SAP landscapes for several weeks before deploying to production. The SAP Basis Team should use tools such as sysstat, KSAR and nmon to verify if CPU and other performance parameters are impacted.
 
 ## Prerequisites for deploying Microsoft Defender for Endpoint for Linux on SAP VMs
 
-- Microsoft Defender for Endpoint [version](./linux-whatsnew.md) >= 101.23082.0009 | Release version: 30.123082.0009 or higher must be deployed. Do not use lower releases.
+- Microsoft Defender for Endpoint [version](./linux-whatsnew.md) >= 101.23082.0009 | Release version: 30.123082.0009 or higher must be deployed.
 - Microsoft Defender for Endpoint for Linux supports all the [Linux releases](microsoft-defender-endpoint-linux.md#system-requirements) used by SAP applications.
 - Microsoft Defender for Endpoint for Linux requires connectivity to [specific Internet endpoints](microsoft-defender-endpoint-linux.md#network-connections) from VMs to update AV Definitions.
-- Microsoft Defender for Endpoint for Linux requires some crontab (or other task scheduler) entries to schedule scans, log rotation and Microsoft Defender for Endpoint updates. Enterprise Security team will normally manage these entries. Refer- [How to schedule an update of the Microsoft Defender for Endpoint (Linux) | Microsoft Learn](linux-update-mde-linux.md)
+- Microsoft Defender for Endpoint for Linux requires some crontab (or other task scheduler) entries to schedule scans, log rotation, and Microsoft Defender for Endpoint updates. Enterprise Security team will normally manage these entries. Refer to [How to schedule an update of the Microsoft Defender for Endpoint (Linux) | Microsoft Learn](linux-update-mde-linux.md).
 
 The default configuration option for deployment as an Azure Extension for AntiVirus (AV) will be Passive Mode. This means that the AV component of Microsoft Defender for Endpoint won't intercept IO calls. It's recommended to run Microsoft Defender for Endpoint in Passive Mode on all SAP applications and to schedule a scan once per day. In this mode:
 
-- Real-time protection is turned off: Threats are not remediated by Microsoft Defender Antivirus.
-- On-demand scanning is turned on: Still use the scan capabilities on the endpoint.
-- Automatic threat remediation is turned off: No files will be moved and security admin is expected to take required action.
-- Security intelligence updates are turned on: Alerts will be available on security admins tenant.
+- **Real-time protection is turned off**: Threats are not remediated by Microsoft Defender Antivirus.
+- **On-demand scanning is turned on**: Still use the scan capabilities on the endpoint.
+- **Automatic threat remediation is turned off**: No files will be moved and the security administrator is expected to take required action.
+- **Security intelligence updates are turned on**: Alerts will be available on security administrator's tenant.
 
 The Linux crontab is typically used to schedule Microsoft Defender for Endpoint AV scan and log rotation tasks:
 [How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Learn](linux-schedule-scan-mde.md)
 
-EDR functionality is active whenever Microsoft Defender for Endpoint for Linux is installed. There is no simple way to disable EDR functionality through command line or configuration. See the section “Checklist for Troubleshooting Problems on SAP VMs Running Microsoft Defender for Endpoint on Linux” for more information on troubleshooting EDR.
+Endpoint Detection and Response (EDR) functionality is active whenever Microsoft Defender for Endpoint for Linux is installed. There is no simple way to disable EDR functionality through command line or configuration. See the section “Checklist for Troubleshooting Problems on SAP VMs Running Microsoft Defender for Endpoint on Linux” for more information on troubleshooting EDR.
 
 ## Important Configuration Settings for Microsoft Defender for Endpoint on SAP on Linux  
 
-It's recommended to check the installation and configuration of Microsoft Defender for Endpoint with the command mdatp health.
+It's recommended to check the installation and configuration of Defender for Endpoint with the command mdatp health.
 
 The key parameters recommended for SAP applications are:
 
 - healthy = true
-- release_ring = Production. Pre-release and insider rings shouldn't be used with SAP Applications
-- real_time_protection_enabled = false. Real time protection is off in passive mode which is the default mode and will prevent real time IO interception
+- release_ring = Production. Pre-release and insider rings shouldn't be used with SAP Applications.
+- real_time_protection_enabled = false. Real-time protection is off in passive mode which is the default mode and will prevent real-time IO interception.
 - automatic_definition_update_enabled = true
-- definition_status = “up_to_date”.  Run a manual update if another value is seen
-- edr_early_preview_enabled = “disabled”.  Do not enable on SAP systems as it might lead to system instability
-- conflicting_applications = [ ].  Other AV or security software installed on a VM such as Clam
-- supplementary_events_subsystem = "ebpf".  Do not proceed if ebpf is not displayed. Contact the security admin team
+- definition_status = “up_to_date”.  Run a manual update if a new value is identified.
+- edr_early_preview_enabled = “disabled”. If enabled on SAP systems it might lead to system instability.
+- conflicting_applications = [ ]. Other AV or security software installed on a VM such as Clam.
+- supplementary_events_subsystem = "ebpf".  Do not proceed if ebpf is not displayed. Contact the security admin team.
 
 This article has some useful hints on troubleshooting installation issues for Microsoft Defender for Endpoint:
 [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux | Microsoft Docs](linux-support-install.md#installation-failed)
@@ -133,31 +133,29 @@ sudo service azsecd restart
 sudo azsecd status 
 ```
 
-The following articles details how to configure AV exclusions for processes, files and folders per individual VM:
+The following articles details how to configure AV exclusions for processes, files, and folders per individual VM:
 
 - [Set up exclusions for Microsoft Defender Antivirus scans | Microsoft Learn](configure-exclusions-microsoft-defender-antivirus.md)
 - [Common mistakes to avoid when defining exclusions | Microsoft Learn](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 ## Scheduling a Daily AV Scan
 
-The recommended configuration for SAP applications disables real-time interception of IO calls for AV scanning.  The recommended setting is passive mode in which real_time_protection_enabled = false
+The recommended configuration for SAP applications disables real-time interception of IO calls for AV scanning. The recommended setting is passive mode in which real_time_protection_enabled = false.
 
-The following link details how to schedule a scan: [How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Learn](linux-schedule-scan-mde.md)
+The following link details how to schedule a scan: [How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Learn](linux-schedule-scan-mde.md).
 
 Large SAP systems might have more than 20 SAP application servers each with a connection to the SAPMNT NFS share. Twenty or more application servers simultaneously scanning the same NFS server will likely overload the NFS server. By default Microsoft Defender for Endpoint for Linux won't scan NFS sources.
 
 If there's a requirement to scan SAPMNT then this scan should be configured on one or two VMs only.
 
-Scheduled scans for SAP ECC, BW, CRM, SCM, Solution Manager and other components should be staggered at different times to avoid all SAP components from overloading a shared NFS storage source shared by all SAP components.
+Scheduled scans for SAP ECC, BW, CRM, SCM, Solution Manager, and other components should be staggered at different times to avoid all SAP components from overloading a shared NFS storage source shared by all SAP components.
 
 ## Useful Commands & Links
 
 If, during manual zypper installation on Suse an error “Nothing provides ‘policycoreutils’” occurs, refer to:
 [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md)
 
-There are several command-line commands that can control the operation of mdatp.
-
-To enable the passive mode you can use the following command:
+There are several command-line commands that can control the operation of mdatp. To enable the passive mode you can use the following command:
 
 ```bash
 mdatp config passive-mode --value enabled
