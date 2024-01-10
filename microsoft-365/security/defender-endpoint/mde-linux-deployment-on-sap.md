@@ -1,12 +1,8 @@
 ---
-title: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
-ms.reviewer:
-description: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation
+title: Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP 
+description: Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP 
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, SAp
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -19,10 +15,10 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 01/10/2024
 ---
 
-# Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP  
+# Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP
 
 **Applies to:**
 
