@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 11/07/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -38,7 +38,7 @@ Check out all of our small business content on [Small business help & learning](
 > [!NOTE]
 > If your organization uses Office 365 operated by 21Vianet in China, see [How to buy a domain for Office 365 operated by 21Vianet in China](#how-to-buy-a-domain-for-office-365-operated-by-21vianet).
 
- *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators*, or *regular users* won't be able to make these changes.*  
+ *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant. *Customized administrators* or *regular users* won't be able to make these changes.*  
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
@@ -79,7 +79,8 @@ We offer a free Domain Privacy Subscription with the purchase of a domain. This 
   
 ## Buy a domain from another domain registrar
 If you want to buy a domain from a domain registrar other than [GoDaddy](https://www.godaddy.com), we recommend you use one below that supports automatic setup (Domain Connect). 
-  
+
+- [Aruba](https://hosting.aruba.it/en/home.aspx)  
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)

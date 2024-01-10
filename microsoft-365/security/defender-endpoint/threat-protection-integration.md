@@ -4,7 +4,7 @@ description: Learn how Microsoft Defender for Endpoint integrates with other Mic
 author: mjcaparas
 ms.author: macapara
 ms.service: defender-endpoint
-keywords: microsoft 365 defender, conditional access, office, Microsoft Defender for Endpoint, microsoft defender for identity, microsoft defender for office, Microsoft Defender for Cloud, microsoft cloud app security, azure sentinel
+keywords: Microsoft Defender XDR, conditional access, office, Microsoft Defender for Endpoint, microsoft defender for identity, microsoft defender for office, Microsoft Defender for Cloud, microsoft cloud app security, azure sentinel
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,7 +21,7 @@ ms.date: 12/18/2020
 
 # Microsoft Defender for Endpoint and other Microsoft solutions
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

@@ -1,7 +1,7 @@
 ---
 title: "Plan for Microsoft 365 Multi-Geo"
 ms.reviewer:
-ms.date: 08/10/2020
+ms.date: 12/11/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -35,9 +35,9 @@ Enabling Multi-Geo requires four key steps:
 
 2. Configure any workloads that require customer specific settings for Multi-Geo.
 
-3. Set your users' Preferred Data Location (PDL) to the desired _Satellite Geography_ location. A new user’s OneDrive for Business site, Exchange Online mailbox, and Teams chat store is provisioned in the _Geography_ defined by their PDL value if the value is configured prior to assigning them a Microsoft 365 license. When an existing user's PDL value is set to a new value, then their existing Exchange Online mailbox and Teams chat store will automatically be migrated to the new geography.
+3. Set your users' Preferred Data Location (PDL) to the desired _Satellite Geography_ location. A new user’s OneDrive site, Exchange Online mailbox, and Teams chat store is provisioned in the _Geography_ defined by their PDL value if the value is configured prior to assigning them a Microsoft 365 license. When an existing user's PDL value is set to a new value, then their existing Exchange Online mailbox and Teams chat store will automatically be migrated to the new geography.
 
-4. Migrate your users' existing OneDrive for Business sites from the _Primary Provisioned Geography_ location to their _Satellite Geography_ data location as needed. OneDrive for Business sites don't migrate automatically like Exchange Online mailboxes or Teams chat stores.
+4. Migrate your users' existing OneDrive sites from the _Primary Provisioned Geography_ location to their _Satellite Geography_ data location as needed. OneDrive sites don't migrate automatically like Exchange Online mailboxes or Teams chat stores.
 
 See [Configure Microsoft 365 Multi-Geo](multi-geo-tenant-configuration.md) for details on each of these steps.
 
@@ -55,7 +55,7 @@ Create a list of your users and include their user principal name (UPN) and the 
 
 If your users are synchronized from an on-premises Active Directory system to Microsoft Entra ID, then you must set the preferred data location as an Active Directory attribute and synchronize it by using Microsoft Entra Connect. You can't directly configure the preferred data location for synchronized users using [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview). The steps to set up PDL in Active Directory and Synchronize it are covered in [Microsoft Entra Connect Sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
-The administration of a Multi-Geo _Tenant_ can differ from a non-multi-geo _Tenant_ in some scenarios. For example, many SharePoint Online and OneDrive for Business settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
+The administration of a Multi-Geo _Tenant_ can differ from a non-multi-geo _Tenant_ in some scenarios. For example, many SharePoint and OneDrive settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
 
 Read [User experience in a multi-geo environment](multi-geo-user-experience.md) for details about your end users' experience in a Multi-Geo environment.
 

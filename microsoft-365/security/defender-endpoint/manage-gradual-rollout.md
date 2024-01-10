@@ -24,7 +24,7 @@ ms.date: 06/23/2021
 
 # Manage the gradual rollout process for Microsoft Defender updates
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

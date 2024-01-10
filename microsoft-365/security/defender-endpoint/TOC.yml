@@ -68,6 +68,8 @@
         href: defender-endpoint-demonstrations.md
       - name: App reputation demonstration
         href: defender-endpoint-demonstration-app-reputation.md
+      - name: Validate antimalware
+        href: validate-antimalware.md
       - name: Attack surface reduction rules demonstrations
         href: defender-endpoint-demonstration-attack-surface-reduction-rules.md
       - name: Block at First Sight (BAFS) demonstration
@@ -78,6 +80,8 @@
         href: defender-endpoint-demonstration-controlled-folder-access-test-tool.md
       - name: Controlled folder access (CFA) demonstrations (block ransomware)
         href: defender-endpoint-demonstration-controlled-folder-access.md
+      - name: EDR detections
+        href: edr-detection.md
       - name: Exploit protection (EP) demonstrations
         href: defender-endpoint-demonstration-exploit-protection.md
       - name: Network protection demonstrations
@@ -821,6 +825,9 @@
           href: client-behavioral-blocking.md
         - name: Feedback-loop blocking
           href: feedback-loop-blocking.md
+
+      - name: UEFI scanning in Defender for Endpoint
+        href: uefi-scanning-in-defender-for-endpoint.md
 
     - name: Address false positives/negatives in Microsoft Defender for Endpoint
       href: defender-endpoint-false-positives-negatives.md

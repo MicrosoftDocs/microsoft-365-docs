@@ -48,4 +48,4 @@ These policies are configured during the onboarding process and require the rele
 ### See also
 
 [Additional information](additional-information-xdr.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

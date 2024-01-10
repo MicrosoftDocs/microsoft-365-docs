@@ -381,7 +381,7 @@ New-TenantAllowBlockListSpoofItems -Identity Default -Action Block -SpoofedUser 
 This example creates a block entry for the sender laura@adatum.com from the source 172.17.17.17/24.
 
 ```powershell
-New-TenantAllowBlockListSpoofItems -Identity Default -Action Allow -SendingInfrastructure 172.17.17.17/24 -SpoofedUser laura@adatum.com -SpoofType External
+New-TenantAllowBlockListSpoofItems -Identity Default -Action Block -SendingInfrastructure 172.17.17.17/24 -SpoofedUser laura@adatum.com -SpoofType External
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).

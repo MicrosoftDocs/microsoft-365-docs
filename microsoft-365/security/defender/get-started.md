@@ -2,7 +2,7 @@
 title: Get started with Microsoft Defender XDR
 ms.reviewer: 
 description: Learn what steps you need to take to get started with Microsoft Defender XDR
-keywords: get started, microsoft 365 defender, turn on, onboard, deploy
+keywords: get started, Microsoft Defender XDR, turn on, onboard, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -26,7 +26,7 @@ ms.date: 09/21/2023
 
 # Get started with Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -42,7 +42,7 @@ Whether you're new to the Microsoft suite of security products or familiar with 
 
 In general, you'll need to take the following steps to get started:
 
-- **[Step 1: Turn on Microsoft 365 Defender](m365d-enable.md)** <br>
+- **[Step 1: Turn on Microsoft Defender XDR](m365d-enable.md)** <br>
     You'll first need to turn on the service by making sure you have the right license in place and roles are assigned so that you can access the portal. 
 
     You'll then go through some simple settings and then you can confirm that the service is on.
@@ -62,4 +62,4 @@ Turning on Microsoft Defender XDR and deploying services will give you access to
 |Microsoft Defender for Office 365 | Advanced protection for your apps and data in Office 365, including email and other collaboration tools |
 | Microsoft Defender for Identity | Defend against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
 | Microsoft Defender for Cloud Apps | Identify and combat cyberthreats across your Microsoft and third-party cloud services |
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

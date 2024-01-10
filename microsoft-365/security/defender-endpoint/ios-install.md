@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # Deploy Microsoft Defender for Endpoint on iOS with Microsoft Intune
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -251,10 +251,10 @@ Microsoft Defender iOS app can be deployed on the Intune User Enrolled devices u
      - Additional configuration: Key - **device_registration** ; Type - **String** ; Value- **{{DEVICEREGISTRATION}}**
 
  1. Set up the MDM Key for User Enrollment.
-    - In Intune, go to Go to Apps > App configuration policies > Add > Managed devices
-    - Give the policy a name, select Platform > iOS/iPadOS, 
-    - Select Microsoft Defender for Endpoint as the target app. 
-    - In Settings page, select Use configuration designer and add **UserEnrolmentEnabled** as the key, value type as **String**, value as **True**.
+    - In Intune, go to Go to Apps \> App configuration policies \> Add \> Managed devices
+    - Give the policy a name, select Platform \> iOS/iPadOS, 
+    - Select Microsoft Defender for Endpoint as the target app. 
+    - In Settings page, select Use configuration designer and add **UserEnrolmentEnabled** as the key, value type as **String**, value as **True**.
 
  1. Admin can push Defender as a required VPP app from Intune. 
 

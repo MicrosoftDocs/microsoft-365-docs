@@ -26,7 +26,7 @@ ms.date: 08/11/2023
 
 # Alert classification for password spray attacks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -206,4 +206,4 @@ Once you determine that the activities associated with this alert are malicious,
 
 - [Overview of alert classification](alert-grading-playbooks.md)
 - [Investigate alerts](investigate-alerts.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -10,8 +10,10 @@ ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-privacy
     - m365initiative-syntex
+    - essentials-security
+    - essentials-compliance
 ms.localizationpriority:  medium
 description: Learn about privacy, security, and compliance in Microsoft Syntex.
 ---

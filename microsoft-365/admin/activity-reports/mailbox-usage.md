@@ -103,6 +103,7 @@ This table shows you a breakdown of mailbox usage at the per mailbox level. You 
 |Prohibit send quota (MB)|The storage limit when the mailbox can no longer send emails. |
 |Prohibit send receive quota (MB)|The storage limit when the mailbox can no longer send or receive emails. |
 |Recoverable Item Quota (MB)|The storage limit for recoverable (deleted) items in the mailbox when the mailbox can no longer delete emails. |
+|Report Period| The period for which the report is available.|
 |Has Archive|Shows if the mailbox has an online archive enabled. |
 
 

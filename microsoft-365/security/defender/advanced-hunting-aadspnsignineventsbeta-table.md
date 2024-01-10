@@ -45,12 +45,12 @@ For information on other tables in the advanced hunting schema, see [the advance
 |`Timestamp`|`datetime`|Date and time when the record was generated|
 |`Application`|`string`|Application that performed the recorded action|
 |`ApplicationId`|`string`|Unique identifier for the application|
-|`IsManagedIdentity`|`boolean`|Indicates whether the sign-in was started by a managed identity|
+|`IsManagedIdentity`|`boolean`|Indicates whether the sign-in was initiated by a managed identity|
 |`ErrorCode`|`int`|Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit <https://aka.ms/AADsigninsErrorCodes>.|
 |`CorrelationId`|`string`|Unique identifier of the sign-in event|
-|`ServicePrincipalName`|`string`|Name of the service principal that started the sign-in|
-|`ServicePrincipalId`|`string`|Unique identifier of the service principal that started the sign-in|
-|`ResourceDisplayName`|`string`|Display name of the resource accessed|
+|`ServicePrincipalName`|`string`|Name of the service principal that initiated the sign-in|
+|`ServicePrincipalId`|`string`|Unique identifier of the service principal that initiated the sign-in|
+|`ResourceDisplayName`|`string`|Display name of the resource accessed. The display name can contain any character.|
 |`ResourceId`|`string`|Unique identifier of the resource accessed|
 |`ResourceTenantId`|`string`|Unique identifier of the tenant of the resource accessed|
 |`IPAddress`|`string`|IP address assigned to the endpoint and used during related network communications|

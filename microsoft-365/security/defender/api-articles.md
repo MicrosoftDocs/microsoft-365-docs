@@ -28,7 +28,7 @@ ms.date: 02/08/2023
 
 # Other security and threat protection APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -45,4 +45,4 @@ The following resources provide more information about APIs available for other 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
 - [Microsoft Defender for Office 365](/office/office-365-management-api/)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/api-introduction)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -28,7 +28,7 @@ ms.date: 08/21/2023
 
 # Remediate your first incident in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -46,7 +46,7 @@ Learn how automatic attack disruption helps in incident response:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10OoF]
 
-Meanwhile, Microsoft Defender XDR’s [automated investigation and response](m365d-autoir.md) capabilities can automatically investigate and apply remediation actions to malicious and suspicious items. These capabilities scale investigation and resolution to threats, freeing incident responders to focus their efforts on high-impact attacks.
+Meanwhile, Microsoft Defender XDR's [automated investigation and response](m365d-autoir.md) capabilities can automatically investigate and apply remediation actions to malicious and suspicious items. These capabilities scale investigation and resolution to threats, freeing incident responders to focus their efforts on high-impact attacks.
 
 You can [configure](m365d-configure-auto-investigation-response.md) and [manage](m365d-autoir-actions.md) automated investigation and response capabilities. You can also view all past and pending actions through the [Action center](m365d-action-center.md).
 
@@ -117,4 +117,4 @@ The following tutorials enumerate steps and actions that you can apply when inve
 - [Investigate incidents](investigate-incidents.md)
 - Learn the portal's features and functions through the [Microsoft Defender XDR Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

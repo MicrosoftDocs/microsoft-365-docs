@@ -23,7 +23,7 @@ ms.date: 12/18/2020
 
 # Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

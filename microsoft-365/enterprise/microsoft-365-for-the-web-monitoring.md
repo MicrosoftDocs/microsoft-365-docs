@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: 
 f1.keywords:
 - NOCSH
-description: "Use Microsoft 365 monitoring for information about incidents or advisories in Microsoft 365."
+description: "Monitor the health of your organization's Microsoft 365 subscription by using monitoring in Microsoft 365 for the web."
 ---
 
 # Microsoft 365 for the web monitoring

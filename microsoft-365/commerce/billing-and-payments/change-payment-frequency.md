@@ -27,7 +27,7 @@ ms.date: 10/13/2023
 
 # Change your Microsoft 365 subscription billing frequency
 
-When you buy a Microoft 365 for business subscription, you select a billing frequency. You can change how often you're billed for your subscription in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+When you buy a Microsoft 365 for business subscription, you select a billing frequency. You can change how often you're billed for your subscription in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 ## Before you begin
 

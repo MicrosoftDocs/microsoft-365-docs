@@ -1,7 +1,7 @@
 ---
 title: Microsoft Security Copilot in Microsoft Defender XDR
 description: Learn about Security Copilot capabilities embedded in Microsoft Defender XDR.
-keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response automated, automatic incident response, summarize incidents, summarize incident report, plugins, Microsoft plugins
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response automated, automatic incident response, summarize incidents, summarize incident report, plugins, Microsoft plugins
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +25,7 @@ ms.date: 10/10/2023
 
 # Microsoft Security Copilot in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -110,4 +110,4 @@ You can learn more about plugins implemented in the Security Copilot portal in [
 - [Privacy and data security in Security Copilot](/security-copilot/privacy-data-security)
 - [Responsible AI FAQs](/security-copilot/responsible-ai-overview-security-copilot)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
