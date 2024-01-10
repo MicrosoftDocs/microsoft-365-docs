@@ -76,8 +76,6 @@ Your team can use apps in Teams to coordinate and collaborate with each other on
 - [Streamline approvals with Approvals](#streamline-approvals-with-approvals)
 - [Check in on progress with Updates](#check-in-on-progress-with-updates)
 
-Financial services organizations can also use [Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) to seamlessly collaborate on the lending process.
-
 > [!TIP]
 > Examples are given for the financial services, healthcare, nonprofit, and retail industries, but you can use these apps for an organization in any sector.
 
@@ -99,8 +97,8 @@ The Walkie Talkie app in Teams provides a push-to-talk (PTT) experience that ena
 
 |Industry |Example |
 |:--------|:-------|
-|Retail | If a customer asks a store associate a question they don't know the answer to, the associate can use Walkie Talkie to call a manager or another expert without having to leave the customer. |
-|Healthcare |A medical staff member who has a question about a patient's treatment can use Walkie Talkie to call another staff member who works with the patient. |
+|Retail | If a customer asks a store associate a question they don't know the answer to, the associate can use Walkie Talkie to communicate with a manager or another expert without having to leave the customer. |
+|Healthcare |A medical staff member who has a question about a patient's treatment can use Walkie Talkie to communicate with another staff member who works with the patient. |
 |Financial services |A bank employee discussing loan options with a customer can use Walkie Talkie to consult a loan expert to determine the best option for the customer. |
 |Manufacturing |A technician can use Walkie Talkie to consult with an expert in another location while performing equipment maintenance or repairs. |
 
