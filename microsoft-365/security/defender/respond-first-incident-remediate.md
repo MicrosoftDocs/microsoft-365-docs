@@ -46,7 +46,7 @@ Learn how automatic attack disruption helps in incident response:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10OoF]
 
-Meanwhile, Microsoft Defender XDR’s [automated investigation and response](m365d-autoir.md) capabilities can automatically investigate and apply remediation actions to malicious and suspicious items. These capabilities scale investigation and resolution to threats, freeing incident responders to focus their efforts on high-impact attacks.
+Meanwhile, Microsoft Defender XDR's [automated investigation and response](m365d-autoir.md) capabilities can automatically investigate and apply remediation actions to malicious and suspicious items. These capabilities scale investigation and resolution to threats, freeing incident responders to focus their efforts on high-impact attacks.
 
 You can [configure](m365d-configure-auto-investigation-response.md) and [manage](m365d-autoir-actions.md) automated investigation and response capabilities. You can also view all past and pending actions through the [Action center](m365d-action-center.md).
 

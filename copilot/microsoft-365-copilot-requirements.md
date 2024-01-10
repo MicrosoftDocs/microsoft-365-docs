@@ -26,14 +26,15 @@ The integration of Microsoft Copilot for Microsoft 365 and Microsoft 365 Apps fo
 
 ## Prerequisites
 
-The following are the prerequisites for using Microsoft Copilot for Microsoft 365. If your organization uses Microsoft 365 E3 or E5 today, then you likely already meet most of these prerequisites.
+The following are the prerequisites for using Microsoft Copilot for Microsoft 365. If your organization uses Microsoft 365 E3 or E5, A3, or A5 today, then you likely already meet most of these prerequisites.
 
 ### Microsoft 365 Apps for enterprise
 
 [Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to deploy to your users.
 
 > [!NOTE]
-> For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
+> - For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
+> - Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft Copilot for Microsoft 365 features. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
 
 ### Microsoft Entra ID
 
@@ -77,7 +78,7 @@ There are many Copilot experiences, including some core experiences like Excel, 
 
 ## License requirements
 
-Microsoft Copilot for Microsoft 365 users require a license for Microsoft 365 E3 or Microsoft 365 E5, and a license for Microsoft Copilot for Microsoft 365. You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
+Microsoft Copilot for Microsoft 365 users require a license for Microsoft 365 E3, E5, A3, or A5 faculty, and a license for Microsoft Copilot for Microsoft 365. You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Conditional Access
 
@@ -86,7 +87,3 @@ While Copilot supports Conditional Access Policies in SharePoint Online configur
 ## Restricted Access Control
 
 Microsoft 365 Chat does not currently support Restricted Access Control and Microsoft 365 Information Barriers (Implicit and Owner moderated mode) on sites. Support for both policies is intended.  We anticipate deploying a change in coming weeks.
-
-## Privacy settings for Microsoft 365 Apps for enterprise
-
-Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft Copilot for Microsoft 365 features. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
