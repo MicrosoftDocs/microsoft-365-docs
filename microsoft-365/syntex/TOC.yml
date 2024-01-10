@@ -191,7 +191,7 @@
         - name: Find and manage terms 
           href: taxonomy-tagging.md
 
-    - name: Document translation
+    - name: Translation
       items: 
         - name: Overview 
           href: translation-overview.md
