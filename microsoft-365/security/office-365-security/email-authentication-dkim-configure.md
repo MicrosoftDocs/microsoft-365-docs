@@ -574,12 +574,12 @@ Use any of the following methods to verify DKIM signing of outbound email from M
 
 - **Send test messages and view the related header fields from the message header in the destination email system**:
 
-  1. Send a message from an account within your Microsoft 365 DKIM-enabled domain to another email account such as outlook.com or Hotmail.com.
+  1. Send a message from an account within your Microsoft 365 DKIM-enabled domain to a recipient in another email system (for example, outlook.com or gmail.com).
 
      > [!TIP]
      > Don't send mail to AOL for DKIM testing. AOL might skip the DKIM check if the SPF check passes.
 
-  2. View the message header. For example:
+  2. In the destination mailbox, view the message header. For example:
      - [View internet message headers in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
      - Use the Message Header Analyzer at <https://mha.azurewebsites.net>.
 
@@ -627,7 +627,7 @@ Use any of the following methods to verify DKIM signing of outbound email from M
 
 ## DKIM signing of mail from your custom domain at other email services
 
-Some email service providers or software-as-a-service providers let you enable DKIM signing for your mail that originates from their service. But, the methods depend entirely on the email service.
+Some email service providers or software-as-a-service providers let you enable DKIM signing for your mail that originates from the service. But, the methods depend entirely on the email service.
 
 > [!TIP]
 > As mentioned earlier in this article, we recommend using subdomains for email systems or services that you don't directly control.
