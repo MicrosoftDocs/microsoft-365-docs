@@ -62,7 +62,7 @@ Distribution groups can be created and defined directly in Exchange Online or sy
 
    :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text=" The Choose a group type section." lightbox="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png":::
 
-5. Give the group a **Name** and and optional **Description**, and then click Next.
+5. Give the group a **Name** and optional **Description**, and then click Next.
 
    :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="The Set up the basics section." lightbox="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png":::
 

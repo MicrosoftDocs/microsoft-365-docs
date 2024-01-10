@@ -1,5 +1,5 @@
 ---
-title: Pricing for Microsoft 365 Backup (Preview)
+title: Pricing model for Microsoft 365 Backup (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn about the charge model and pricing calculator for Microsoft 365 Backup.
 ---
 
-# Pricing for Microsoft 365 Backup (Preview)
+# Pricing model for Microsoft 365 Backup (Preview)
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.
@@ -38,7 +38,7 @@ As an example, if you have a site under protection that is currently 1 GB for th
 The Microsoft 365 Backup pricing calculator is a tool that helps you estimate the amount of backup storage and the costs that you'll incur to protect and back up your Microsoft 365 data.
 
 > [!NOTE]
-> The tool is not intended to provide an exact prediction of your backup consumption, but rather to give you a estimate based on your current usage reports that are forecasted for the next 24 months based on historical trends.
+> The tool is not intended to provide an exact prediction of your backup consumption, but rather to give you an estimate based on your current usage reports that are forecasted for the next 24 months based on historical trends.
 
 ### Pricing calculator overview
 

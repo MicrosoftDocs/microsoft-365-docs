@@ -9,7 +9,7 @@ audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
-    - enabler-strategic
+    - essentials-get-started
     - m365initiative-syntex
     - Tier1
 search.appverid: MET150

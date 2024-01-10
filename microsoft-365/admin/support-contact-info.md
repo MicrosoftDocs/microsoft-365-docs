@@ -1721,9 +1721,6 @@ English: 24 hours a day, 7 days a week
 **Phone number:**\
 800 917 919
 
-Alternative Phone Number: 02 6943 0746\
-Local call charges apply.
-
 **Billing support hours:**\
 Italian: Monday through Friday, 9 AM-5 PM\
 English: Monday through Friday, 9 AM-5 PM

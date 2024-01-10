@@ -1,17 +1,13 @@
 ---
 title: Run and customize on-demand scans in Microsoft Defender Antivirus
 description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Security app
-keywords: scan, on-demand, dos, intune, instant scan
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/01/2023
+ms.date: 12/15/2023
 ms.reviewer:
 manager: dansimp
 ms.subservice: ngp
@@ -93,9 +89,21 @@ For instructions on running a scan on individual endpoints, see [Run a scan in t
 
 Use the following cmdlet:
 
+
 ```PowerShell
 Start-MpScan
 ```
+
+## Use PowerShell cmdlets to run a quick scan without excluding antivirus exclusions
+
+Use the following cmdlet:
+
+```PowerShell
+Set-MpPreference -QuickScanIncludeExclusions 1
+```
+
+> [!NOTE]
+> A value of `1` enables the inclusion of the antivirus excluded processes, folders, files, and extensions. A value of `0` (default) disables the inclusion of the antivirus excluded processes, folders, files, and extensions.
 
 For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 

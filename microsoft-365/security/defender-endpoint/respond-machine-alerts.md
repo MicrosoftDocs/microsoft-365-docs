@@ -1,15 +1,11 @@
 ---
 title: Take response actions on a device in Microsoft Defender for Endpoint
 description: Take response actions on a device such as isolating devices, collecting an investigation package, managing tags, running an av scan, and restricting app execution.
-keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 05/29/2023
+ms.date: 12/15/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -68,10 +64,7 @@ Response actions run along the top of a specific device page and include:
 - **Search box** - Select Device from the drop-down menu and enter the device name.
 
 > [!IMPORTANT]
->
-> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022.
-> - For non-Windows platforms, response capabilities (such as isolate device) are dependent on the third-party capabilities.
-> - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
+> For information on availability and support for each response action, please refer to the supported/minimum operating system requirements found under each feature.
 
 ## Manage tags
 
@@ -320,14 +313,14 @@ You'll be able to stop containing a device at any time.
 
 ## Contain user from the network
 
-When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can “contain” an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP) while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
+When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can "contain" an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP) while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
 
 > [!NOTE]
-> Blocking incoming communication with a “contained” user is supported on onboarded Microsoft Defender for Endpoint Windows 10 and 11 devices (Sense version 8740 and higher), Windows Server 2019+ devices, and Windows Servers 2012R2 and 2016 with the modern agent.
+> Blocking incoming communication with a "contained" user is supported on onboarded Microsoft Defender for Endpoint Windows 10 and 11 devices (Sense version 8740 and higher), Windows Server 2019+ devices, and Windows Servers 2012R2 and 2016 with the modern agent.
 
 ### How to contain a user
 
-Currently, containing users is only available automatically by using automatic attack disruption. When Microsoft detects a user as being compromised a “Contain User” policy is automatically set.
+Currently, containing users is only available automatically by using automatic attack disruption. When Microsoft detects a user as being compromised a "Contain User" policy is automatically set.
 
 ### View the contain user actions
 
@@ -335,7 +328,7 @@ After a user is contained, you can view the action in this History view of the A
 
 :::image type="content" source="../../media/defender-endpoint/user-contain-action-center.png" alt-text="View the user contain action in the action center" lightbox="../../media/defender-endpoint/user-contain-action-center.png":::
 
-Furthermore, after an identity is considered “contained", that user will be blocked by Defender for Endpoint and cannot perform any malicious lateral movement or remote encryption on or to any supported Defender for Endpoint onboarded device. These blocks will show up as alerts to help you quickly see the devices the compromised user attempted access and potential attack techniques:
+Furthermore, after an identity is considered "contained", that user will be blocked by Defender for Endpoint and cannot perform any malicious lateral movement or remote encryption on or to any supported Defender for Endpoint onboarded device. These blocks will show up as alerts to help you quickly see the devices the compromised user attempted access and potential attack techniques:
 
 :::image type="content" source="../../media/defender-endpoint/user-contain-lateral-move-block.png" alt-text="Shows a user contain lateral movement block event" lightbox="../../media/defender-endpoint/user-contain-lateral-move-block.png":::
 
@@ -346,7 +339,7 @@ You can release the blocks and containment on a user at any time:
 1. Select the **Contain User** action in the **Action Center**. In the side pane select **Undo**
 2. Select the user from either the user inventory, Incident page side pane or alert side pane and select **Undo**
 
-This action will restore this user’s connection to the network.
+This action will restore this user's connection to the network.
 
 :::image type="content" source="../../media/defender-endpoint/undo-user-contain-action.png" alt-text="Shows user contain undo option in the action center" lightbox="../../media/defender-endpoint/undo-user-contain-action.png":::
 
@@ -356,7 +349,7 @@ After a user is contained, you can investigate the potential threat by viewing t
 
 :::image type="content" source="../../media/defender-endpoint/event-blocked by-contained-user.png" alt-text="Shows blocked event details for a contained users" lightbox="../../media/defender-endpoint/event-blocked by-contained-user.png":::
 
-In addition, you can expand the investigation by using Advanced Hunting. Look for any “Action Type” starting with “Contain” in the “DeviceEvents” table. Then, you can view all the different singular blocking events in relation to Contain User in your tenant, dive deeper into the context of each block, and extract the different entities and techniques associated with those events.
+In addition, you can expand the investigation by using Advanced Hunting. Look for any "Action Type" starting with "Contain" in the "DeviceEvents" table. Then, you can view all the different singular blocking events in relation to Contain User in your tenant, dive deeper into the context of each block, and extract the different entities and techniques associated with those events.
 
 :::image type="content" source="../../media/defender-endpoint/user-contain-advanced-hunting.png" alt-text="Shows advanced hunting for user contain events" lightbox="../../media/defender-endpoint/user-contain-advanced-hunting.png":::
 
@@ -385,3 +378,4 @@ All other related details are also shown, for example, submission date/time, sub
 - [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
 - [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
