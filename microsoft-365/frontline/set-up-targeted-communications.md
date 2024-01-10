@@ -23,7 +23,7 @@ ms.date:
 # Set up for targeted communications for your frontline
 
 > [!IMPORTANT]
-> This article describes a Microsoft Teams feature that hasn't yet been released.
+> This article describes a Microsoft Teams feature that hasn't yet been released. This feature is coming soon.
 
 ## Overview
 
