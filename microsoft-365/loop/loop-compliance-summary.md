@@ -16,6 +16,7 @@ ms.collection:
 - Strat_SP_admin
 - Microsoft 365-collaboration
 - Tier3
+- essentials-compliance
 search.appverid:
 - SPO160
 - MET150
@@ -52,7 +53,7 @@ Where the loop content was originally created determines its storage location:
 |Admin Management: Multi-Geo  |**[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities, including creation of .loop files in a user's OneDrive in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices) and ability to move the user's OneDrive when their preferred data location changes.|**Not Yet Available**:  <br>**[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities, including creation of .loop files in a user's Loop workspaces in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices).  <br>**[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** rehome of Loop workspaces and contained .loop files as needed.|
 |Admin Management: User leaves organization  |When a user leaves an organization, [OneDrive retention policies](/sharepoint/retention-and-deletion) apply to the .loop files just as they do to other content created by the user.|Manage the lifetime of shared Loop workspaces like you would other collaboration artifacts, like SharePoint sites or Teams channels.|
 |Admin Management: Loop workspaces  |n/a|See [Admin Management of Loop workspaces](#admin-management-of-loop-workspaces) for a list of capabilities that are available and also not yet available.|
-|Admin Management: Recycle bin  |**Not Yet Available**:  <br>End user Recycle bin for deleted content.|**Not Yet Available**:  <br>End user Recycle bin for deleted content.  <br>End user Recycle bin for deleted Loop workspaces.|
+|Admin Management: Recycle bin  |End user Recycle bin for deleted content.|End user Recycle bin for deleted content.  <br><br>**Not Yet Available**:  <br>End user Recycle bin for deleted Loop workspaces.|
 |Audit: Version history  |**Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format).|**Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export).  <br><br>**Not Yet Available**:  <br>API access to Loop workspace containers - this impacts third party export and eDiscovery tools.|
 |Audit: logs and events  |**Audit** logs for all events: search and export Microsoft 365 service events for security and compliance investigations  <ol><li>use the [compliance admin center](https://compliance.microsoft.com/auditlogsearch)<li>search audit logs for "loop" or "fluid"<li>further filter exported results by "SourceFileExtension":"loop" or "SourceFileExtension":"fluid"|**Audit** logs for all events: search and export Microsoft 365 service events for security and compliance investigations  <ol><li>use the [compliance admin center](https://compliance.microsoft.com/auditlogsearch)<li>search audit logs for Loop ApplicationID `a187e399-0c36-4b98-8f04-1edc167a0996`|
 |Audit: log access  |**Audit** logs are retained, can be exported, and can be streamed to third party tools|**Audit** logs are retained, can be exported, and can be streamed to third party tools|
@@ -75,7 +76,7 @@ This section repeats capabilities which aren't yet available from the table abov
 ### Admin Management
 - **Programmatic APIs for Loop workspace content**: API access to Loop workspace containers isn't yet available. These APIs are required in order to use third party tools for export and eDiscovery, migration, communicate in bulk to end-users about their content such as compliance requirements, and developer APIs.
 - **Multi-Geo** rehome of Loop workspaces and all contained .loop files isn't yet available.
-- When users delete an entire Loop workspace, or when they delete pages or components stored in a Loop workspace, these aren't yet available in an **end-user visible Recycle bin**.
+- When users delete an entire Loop workspace, these aren't yet available in an **end-user visible Recycle bin**.
 - See [Admin Management of Loop workspaces](#admin-management-of-loop-workspaces) for a more detailed list of specific admin capabilities using PowerShell and the SharePoint Admin Center.
 
 ### Data Lifecycle Management
@@ -120,7 +121,7 @@ See more about how to use PowerShell to perform these tasks on Loop application 
   - edit sensitivity labels
   - above quota management of Loop workspaces
   - SharePoint Embedded Repository admin role integration
-- End user Recycle Bin for deleted content
+- End user Recycle Bin for deleted workspaces
 
 
 

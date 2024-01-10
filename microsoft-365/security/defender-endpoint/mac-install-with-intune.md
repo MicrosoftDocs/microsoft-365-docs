@@ -252,7 +252,7 @@ Download [AutoUpdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blo
 
 ### Step 8: Microsoft Defender for Endpoint configuration settings
 
-In this step, we'll go over the “Preferences," which enables you to configure anti-malware and edr policies using Microsoft Defender portal and Microsoft Intune.
+In this step, we'll go over the "Preferences," which enables you to configure anti-malware and edr policies using Microsoft Defender portal and Microsoft Intune.
 
 #### Set policies using Microsoft Defender portal
 
@@ -316,7 +316,7 @@ To set Device Control for Microsoft Defender for Endpoint on macOS, follow the s
 
 ### Step 11: Data Loss Prevention (DLP) for Endpoint
 
-To set Purview’s Data Loss Prevention (DLP) for endpoint on macOS, follow the steps in [Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune](/purview/device-onboarding-offboarding-macos-intune-mde).
+To set Purview's Data Loss Prevention (DLP) for endpoint on macOS, follow the steps in [Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune](/purview/device-onboarding-offboarding-macos-intune-mde).
 
 ### Step 12: Check status of PList(.mobileconfig)
 

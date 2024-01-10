@@ -17,7 +17,7 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/2/2023
+ms.date: 1/2/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -367,7 +367,7 @@ Creating an anti-spam policy in PowerShell is a two-step process:
 
 #### Step 1: Use PowerShell to create a spam filter policy
 
-To create a spam filter policy, use this syntax:
+To create a spam filter policy, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and use this syntax:
 
 ```PowerShell
 New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Additional Settings>
@@ -389,7 +389,7 @@ For detailed syntax and parameter information, see [New-HostedContentFilterPolic
 
 #### Step 2: Use PowerShell to create a spam filter rule
 
-To create a spam filter rule, use this syntax:
+To create a spam filter rule, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and use this syntax:
 
 ```PowerShell
 New-HostedContentFilterRule -Name "<RuleName>" -HostedContentFilterPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
@@ -408,7 +408,7 @@ For detailed syntax and parameter information, see [New-HostedContentFilterRule]
 
 ### Use PowerShell to view spam filter policies
 
-To return a summary list of all spam filter policies, run this command:
+To return a summary list of all spam filter policies, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run this command:
 
 ```PowerShell
 Get-HostedContentFilterPolicy
@@ -430,7 +430,7 @@ For detailed syntax and parameter information, see [Get-HostedContentFilterPolic
 
 ### Use PowerShell to view spam filter rules
 
-To view existing spam filter rules, use the following syntax:
+To view existing spam filter rules, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and use the following syntax:
 
 ```PowerShell
 Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
@@ -473,7 +473,7 @@ Other than the following items, the same settings are available when you modify 
 - The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is only available when you modify a spam filter policy in PowerShell.
 - You can't rename a spam filter policy (the **Set-HostedContentFilterPolicy** cmdlet has no _Name_ parameter). When you rename an anti-spam policy in the Microsoft Defender portal, you're only renaming the spam filter _rule_.
 
-To modify a spam filter policy, use this syntax:
+To modify a spam filter policy, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and use this syntax:
 
 ```PowerShell
 Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
@@ -490,7 +490,7 @@ The only setting that isn't available when you modify a spam filter rule in Powe
 
 Otherwise, no additional settings are available when you modify a spam filter rule in PowerShell. The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create a spam filter rule](#step-2-use-powershell-to-create-a-spam-filter-rule) section earlier in this article.
 
-To modify a spam filter rule, use this syntax:
+To modify a spam filter rule, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and use this syntax:
 
 ```PowerShell
 Set-HostedContentFilterRule -Identity "<RuleName>" <Settings>
@@ -508,7 +508,7 @@ For detailed syntax and parameter information, see [Set-HostedContentFilterRule]
 
 Enabling or disabling a spam filter rule in PowerShell enables or disables the whole anti-spam policy (the spam filter rule and the assigned spam filter policy). You can't enable or disable the default anti-spam policy (it's always applied to all recipients).
 
-To enable or disable a spam filter rule in PowerShell, use this syntax:
+To enable or disable a spam filter rule, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and use this syntax:
 
 ```PowerShell
 <Enable-HostedContentFilterRule | Disable-HostedContentFilterRule> -Identity "<RuleName>"
@@ -532,7 +532,7 @@ For detailed syntax and parameter information, see [Enable-HostedContentFilterRu
 
 The highest priority value you can set on a rule is 0. The lowest value you can set depends on the number of rules. For example, if you have five rules, you can use the priority values 0 through 4. Changing the priority of an existing rule can have a cascading effect on other rules. For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.
 
-To set the priority of a spam filter rule in PowerShell, use the following syntax:
+To set the priority of a spam filter rule, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and use the following syntax:
 
 ```PowerShell
 Set-HostedContentFilterRule -Identity "<RuleName>" -Priority <Number>
@@ -553,7 +553,7 @@ Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
 
 When you use PowerShell to remove a spam filter policy, the corresponding spam filter rule isn't removed.
 
-To remove a spam filter policy in PowerShell, use this syntax:
+To remove a spam filter policy, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and use this syntax:
 
 ```PowerShell
 Remove-HostedContentFilterPolicy -Identity "<PolicyName>"
@@ -571,7 +571,7 @@ For detailed syntax and parameter information, see [Remove-HostedContentFilterPo
 
 When you use PowerShell to remove a spam filter rule, the corresponding spam filter policy isn't removed.
 
-To remove a spam filter rule in PowerShell, use this syntax:
+To remove a spam filter rule, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and use this syntax:
 
 ```PowerShell
 Remove-HostedContentFilterRule -Identity "<PolicyName>"
