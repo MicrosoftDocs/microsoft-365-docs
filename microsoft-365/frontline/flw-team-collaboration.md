@@ -218,4 +218,4 @@ Learn more about [how to get Viva Connections](/viva/connections/viva-connection
 
 - [Teams for Retail](teams-for-retail-landing-page.md)
 - [Teams for Healthcare](teams-in-hc.md)
-- [Collaboration Manager for Loans for Financial Services](/industry/financial-services/collaboration-manager/overview)
+- [Teams for Manufacturing](teams-for-manufacturing.md)
