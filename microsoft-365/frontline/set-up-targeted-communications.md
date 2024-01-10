@@ -23,7 +23,7 @@ ms.date:
 # Set up for targeted communications for your frontline
 
 > [!IMPORTANT]
-> This article describes a Microsoft Teams feature that hasn't yet been released. It's been announced, and it's coming soon. If you're an admin, you can find out when this feature will be released in the Message Center in the [Microsoft 365 admin center](https://portal.office.com/adminportal/home). To stay on top of upcoming Teams features, check out the [Microsoft 365 roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Teams).
+> This article describes a Microsoft Teams feature that hasn't yet been released. This feature is coming soon.
 
 ## Overview
 
@@ -76,7 +76,11 @@ For example, a regional store manager who oversees all Northwind Trader stores i
 
 :::image type="content" source="media/targeted-comms-automatic-tags.png" alt-text="Screenshot of automatic tags used in a  Teams channel conversation." lightbox="media/targeted-comms-automatic-tags.png":::
 
-Automatic tags are created and available after you map your attributes. To allow frontline teams to use the tags in Teams, team owners must select the **Show members the option to @mention groups based on job title or department. This will notify everyone in that group.** check box in team settings for each of their respective teams.
+Automatic tags are created and available after you map your attributes.
+
+### Team owners
+
+To allow frontline teams to use automatic tags in Teams, team owners must select the **Show members the option to @mention groups based on job title or department. This will notify everyone in that group.** check box in team settings for each of their respective teams.
 
 :::image type="content" source="media/targeted-comms-automatic-tags-setting.png" alt-text="Screenshot of the option in team settings to @mention groups based on job title or department" lightbox="media/targeted-comms-automatic-tags-setting.png":::
 
