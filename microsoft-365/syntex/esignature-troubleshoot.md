@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 11/15/2023
+ms.date: 01/11/2024
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -18,8 +18,6 @@ description: Learn how to use Microsoft SharePoint eSignature to create and send
 ---
 
 # Troubleshoot a signature request in Microsoft SharePoint eSignature
-
-## Troubleshoot a signature request
 
 ## Unable to create a request
 
@@ -43,3 +41,15 @@ SharePoint eSignature is an extension of SharePoint document storage and managem
 
 Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation will be unsuccessful. One common way to resolve this is to contact your IT admin who will be able to add the eSignature app to the list of approved apps via the  Microsoft Entra admin center.
 
+### Unable to access a signed document
+
+Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permissions to write to the document and the originating folder because the final signed document is saved in this folder. If the sender loses access to this folder at any point before signing is complete, they might not be able to access the signed document permanently. In this scenario, the sender will be provided temporary access of 30 days to the signed document through the completion email. To access the folder and document, the sender should ensure that they have read permission to the originating folder or request access from the owner.
+
+Additionally, the eSignature service might not be able to save a copy of the signed document to the originating folder if the folder was accidentally deleted before the signature request was completed.
+
+To avoid potential issues, you should check the status and settings of the documents and folders before starting a signature request. Ensure that there are sufficient permissions and roles to access and share the documents with their intended recipients.
+
+- Data loss prevention (DLP) policies
+- Microsoft Entra ID collaboration settings
+- SharePoint sharing settings and policies
+- User permissions and document access
