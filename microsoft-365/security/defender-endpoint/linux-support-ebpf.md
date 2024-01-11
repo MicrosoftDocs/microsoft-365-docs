@@ -1,7 +1,7 @@
 ---
 title: Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on Linux.
-ms.service: defender-endpoint
+ms.service: microsoft-365-security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -12,14 +12,14 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: linux
+ms.subservice: mde
 search.appverid: met150
-ms.date: 12/11/2023
+ms.date: 01/11/2024
 ---
 
 # Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -54,10 +54,8 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 |--------------------|----------------------|----------------|
 | Ubuntu             | 16.04                | 4.15.0         |
 | Fedora             | 33                   | 5.8.15         |
-| CentOS             | 7.6                  | 3.10.0-957.12  |
 | CentOS             | 7.6                  | 3.10.0-957.10  |
 | SLES               | 15                   | 5.3.18-18.47   |
-| RHEL               | 7.6                  | 3.10.0-957.12  |
 | RHEL               | 7.6                  | 3.10.0-957.10  |
 | Debian             | 9.0                  | 4.19.0         |
 | Oracle Linux RHCK  | 7.9                  | 3.10.0-1160    |
@@ -79,7 +77,9 @@ In case you want to manually disable eBPF then you can run the following command
 ```bash
 sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 ```
+
 You can also update the mdatp_managed.json file:
+
 ```JSON
 {
     "features": {
@@ -88,7 +88,7 @@ You can also update the mdatp_managed.json file:
 }
 ```
 
-Refer to the link for detailed sample json file - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+Refer to [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md) for detailed sample json file.
 
 > [!IMPORTANT]
 > If you disable eBPF, the supplementary event provider switches back to auditd.
@@ -119,7 +119,7 @@ uname -a
 
 Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result into kernel hang issues.
 
-Following steps can be taken to mitigate this issue:
+The following steps can be taken to mitigate this issue:
 
 1. Use a kernal version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Note the min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4.
 2. Switch to auditd mode if customer needs to use the same kernel version
