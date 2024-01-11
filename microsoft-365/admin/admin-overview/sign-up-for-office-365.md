@@ -62,7 +62,7 @@ Ready to sign up? [Select a Plan](https://products.office.com/zh-cn/business/com
 
 Before you start a new subscription, put some thought into the plan you sign up for. Which plan you choose depends on your specific needs. If you don’t know which plan is right for your organization, the [Microsoft 365 plan chooser](https://www.microsoft.com/microsoft-365/business/microsoft-365-plan-chooser?ocid=cmmsz2r87j2&rtc=1) can help you decide. The plan chooser makes recommendations based on your answers to questions like the size of your business, your field of work, the devices you use, and what kind of features, IT support, and security you're looking for.
 
-If you need help with deciding which plan is right for you, sales consultants are available to answer your questions. Go to the [Plans and pricing](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products?tab=2&rtc=1) page and select one of the contact support options listed on the side of the page.
+If you need extra help with deciding which plan is right for you, sales consultants are available to answer your questions. Go to the [Plans and pricing](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products?tab=2&rtc=1) page and select one of the contact support options listed on the side of the page.
 
 ### Watch: Choose a Microsoft 365 subscription
 
@@ -72,11 +72,11 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 If you found this video helpful, check out the [complete Microsoft 365 training series for small businesses](../../business-video/index.yml).
 
-## Step 2. Sign up for a free trial subscription
+## Step 2. Sign up for a free trial
 
 When you’re ready to sign up, go to the [Plans and pricing](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products?tab=2&rtc=1) page to choose the plan that you want to try. After your one month free trial ends, your paid subscription begins and you’re automatically charged the applicable subscription fee.
 
-You can cancel your free trial at any time to stop future charges. To cancel a free trial, [turn off recurring billing](../../commerce/subscriptions/renew-your-subscription.md). If you don't turn off recurring billing, your payment method is automatically charged after your free trial ends.
+You can cancel your free trial at any time to stop future charges. To cancel a free trial, [turn off recurring billing](../../commerce/subscriptions/renew-your-subscription.md). You can continue using Microsoft 365 until the end of the free trial. If you don't turn off recurring billing, your payment method is automatically charged after your free trial ends.
 
 ### Watch: Sign up for Microsoft 365 Business Standard
 
@@ -92,7 +92,7 @@ When you sign up for a new subscription, we ask you for the following informatio
 
   - **Country**&mdash;The country/region where you plan to use the services. You can’t change the country/region later, even during the sign-up process. If you enter the wrong country/region, you must restart the sign-up wizard.
 
-  - **Email** and **phone number**&mdash;We ask for your contact information so we can contact you about your subscription. For example, if you forget your password, we use this information to send you a temporary one. We also send your billing information to the email address you specify.
+  - **Email** and **phone number**&mdash;We ask for your contact information so we can contact you about your subscription. For example, if you forget your password, we use this information to you reset it. We also send your billing information to this email address.
 
     > [!NOTE]
     > The email address you enter here is different from your Microsoft 365 email address (your sign-in name). Because this is where we also send your billing information, we recommend that you use an e-mail address that's appropriate for receiving business email.
@@ -103,7 +103,7 @@ When you sign up for a new subscription, we ask you for the following informatio
 
 - **Payment information**&mdash;You can pay for your subscription with a credit card.
 
-### Step 3. Set up your new subscription
+## Step 3. Set up your new subscription
 
 The steps to set up your new subscription vary depending on the Microsoft 365 for business plan that you signed up for. To learn how to set up your new subscription, see one of the following articles:
 
