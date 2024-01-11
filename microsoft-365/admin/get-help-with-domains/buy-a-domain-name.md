@@ -36,7 +36,7 @@ description: "Learn how to buy a domain name in Microsoft 365."
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 > [!NOTE]
-> If your organization uses Office 365 operated by 21Vianet in China, see [How to buy a domain for Office 365 operated by 21Vianet in China](#how-to-buy-a-domain-for-office-365-operated-by-21vianet).
+> If your organization uses Microsoft 365 operated by 21Vianet in China, see [How to buy a domain for Microsoft 365 operated by 21Vianet in China](#how-to-buy-a-domain-for-office-365-operated-by-21vianet).
 
  *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant. *Customized administrators* or *regular users* won't be able to make these changes.*  
 
@@ -101,9 +101,9 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 ::: moniker range="o365-21vianet"
 
-## How to buy a domain for Office 365 operated by 21Vianet
+## How to buy a domain for Microsoft 365 operated by 21Vianet
 
-If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
+If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Microsoft 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
   
 To set up a domain in Microsoft 365, you must own a domain and change some of the DNS records for your domain.
   
