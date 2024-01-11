@@ -32,7 +32,7 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Some of the information in this article might not apply to Office 365 operated by 21Vianet.
+> Some of the information in this article might not apply to Microsoft 365 operated by 21Vianet.
 
 ::: moniker-end
 

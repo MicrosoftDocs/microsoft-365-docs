@@ -22,7 +22,7 @@ description: "This article provides guidance for optimizing network performance 
 # Microsoft 365 global tenant performance optimization for China users
 
 > [!IMPORTANT]
-> This guidance is specific to usage scenarios in which **enterprise Microsoft 365 users located in China** connect to a **global Microsoft 365 tenant**. This guidance does **not** apply to tenants in Office 365 operated by 21Vianet.
+> This guidance is specific to usage scenarios in which **enterprise Microsoft 365 users located in China** connect to a **global Microsoft 365 tenant**. This guidance does **not** apply to tenants in Microsoft 365 operated by 21Vianet.
 
 >[!NOTE]
 >This article is part of a set of articles that address Microsoft 365 optimization for remote users.
