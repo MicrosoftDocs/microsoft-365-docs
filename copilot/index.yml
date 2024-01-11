@@ -76,7 +76,7 @@ additionalContent:
               url: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
             - text: Related Microsoft 365 admin controls
               url: /microsoft-365/solutions/tenant-management-overview
-            - text: Manage Copilot with commercial data protections
+            - text: Manage Copilot with commercial data protection
               url: /copilot/overview
 
         # Card
