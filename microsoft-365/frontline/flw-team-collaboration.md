@@ -41,9 +41,9 @@ Here are some of the ways that your frontline can use Teams to communicate and s
 
 |Task |Description |Manage this capability |End-user training |
 |-----|------------|-----------------------|------------------|
-|Chat, post messages, and communicate |Your frontline workers can seamlessly communicate within and across locations through chats and channel conversations. Teams provides a great out-of-the-box collaboration experience for your organization, and most organizations find that the default settings work for them. |[Manage chat, teams, channels, and apps](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). |Chats:<ul><li>[Chats in Teams](https://support.microsoft.com/en-us/office/chat-in-microsoft-teams-f3a917cb-1a83-42b2-a097-0678298703bb)</li><li>[Start chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) (video)</li></ul> Channel conversations: <ul><li>[Send a message to a channel](https://support.microsoft.com/office/send-a-message-to-a-channel-in-microsoft-teams-5c8131ce-eaad-4798-bc73-e33f4652a9c4)</li><li>[Work with posts and messages](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885) (video training)</li></ul>[Using tags in Teams](https://support.microsoft.com/office/using-tags-in-microsoft-teams-667bd56f-32b8-4118-9a0b-56807c96d91e)|
-|Call and meet with team members |Managers can set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features. You'll need to configure settings for meetings and conferencing, and enable a voice solution to use calling. |[Manage calling and meeting in Teams](/microsoftteams/deploy-meetings-microsoft-teams-landing-page) and [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page) |Calls: <ul><li>[Make calls](https://support.microsoft.com/en-us/office/start-a-call-from-a-chat-in-microsoft-teams-f5138c9d-df4c-43d8-9cf6-53400c1a7798)</li><li>[Overview of Teams calls](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f) (video training)</li></ul> Meetings:<ul><li>[Join a meeting in Teams](https://support.microsoft.com/en-us/office/join-a-meeting-in-microsoft-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9)</li><li>[Join a meeting](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4) (video training)</li></ul>|
-|Store and share files and documents |Sharing files allows in-store staff to easily access information such as merchandising diagrams without having to leave the sales floor or get help from a manager. Every team automatically comes with a Files tab that you can use to store and share documents. This tab actually represents a folder within the default team site document library in SharePoint that is automatically created when the team is created. |[Overview of Teams and SharePoint integration](/sharepoint/teams-connected-sites) |[Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) (video training) |
+|Chat, post messages, and communicate |Your frontline workers can seamlessly communicate within and across locations through chats and channel conversations. Teams provides a great out-of-the-box collaboration experience for your organization, and most organizations find that the default settings work for them. |[Manage chat, teams, channels, and apps](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). |Chats:<ul><li>[Chat in Teams](https://support.microsoft.com/en-us/office/chat-in-microsoft-teams-f3a917cb-1a83-42b2-a097-0678298703bb)</li><li>[Start chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) (video)</li></ul> Channel conversations: <ul><li>[Send a message to a channel](https://support.microsoft.com/office/send-a-message-to-a-channel-in-microsoft-teams-5c8131ce-eaad-4798-bc73-e33f4652a9c4)</li><li>[Work with posts and messages](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885) (video training)</li></ul>[Using tags in Teams](https://support.microsoft.com/office/using-tags-in-microsoft-teams-667bd56f-32b8-4118-9a0b-56807c96d91e)|
+|Call and meet with team members |Managers can set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features. You'll need to configure settings for meetings and conferencing, and enable a voice solution to use calling. |[Overview of meetings, webinars, and town halls in Teams](/microsoftteams/deploy-meetings-microsoft-teams-landing-page) and [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page) |Calls: <ul><li>[Make calls](https://support.microsoft.com/en-us/office/start-a-call-from-a-chat-in-microsoft-teams-f5138c9d-df4c-43d8-9cf6-53400c1a7798)</li><li>[Overview of Teams calls](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f) (video training)</li></ul> Meetings:<ul><li>[Join a meeting in Teams](https://support.microsoft.com/en-us/office/join-a-meeting-in-microsoft-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9)</li><li>[Join a meeting](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4) (video training)</li></ul>|
+|Store and share files and documents |Sharing files allows in-store staff to easily access information such as merchandising diagrams without having to leave the sales floor or get help from a manager. Every team automatically comes with a **Files** tab that you can use to store and share documents. This tab actually represents a folder within the default team site document library in SharePoint that's' automatically created when the team is created. |[Overview of Teams and SharePoint integration](/sharepoint/teams-connected-sites) |[Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) (video training) |
 
 ### See examples of how different industries can use communication capabilities in Teams
 
@@ -81,15 +81,11 @@ Your team can use apps in Teams to coordinate and collaborate with each other on
 
 ### Create, manage, and share schedules with Shifts
 
-Use Shifts to seamlessly manage and share schedules. Managers can create custom groups such as cashiers, nurses, or mortgage specialists, assign shifts to employees, add breaks, and add open shifts that employees can request to take. Employees can use Shifts to set their availability, view their schedules, swap shifts with coworkers, clock in and out, and more. Managers can also create open shifts that employees can request. For example, a volunteer coordinator at a nonprofit could create open shifts that volunteers can request to take.
+Use Shifts to seamlessly manage and share schedules. Managers can create custom groups such as cashiers, nurses, or mortgage specialists, assign shifts to employees, add breaks, and add open shifts that employees can request to take. Employees can use Shifts to set their availability, view their schedules, swap shifts with coworkers, clock in and out, and more. For example, a volunteer coordinator at a nonprofit could create open shifts that volunteers can request to take.
 
 Learn how to [manage Shifts for your organization](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
-<!--Learn how to [help your employees track time and attendance with Shifts](shifts-toolkit.md).-->
-
 Share this [Shifts video training](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) with your users.
-
-<!--[View videos and resources](shifts-toolkit.md) to share with your team to help them use features in Shifts.-->
 
 ### Keep in touch with Walkie Talkie
 
@@ -108,8 +104,6 @@ Share these Walkie Talkie resources with your users:
 
 - [Get started with Teams Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c)
 - [Communicate with your team in Walkie Talkie](https://support.microsoft.com/office/communicate-with-your-team-in-walkie-talkie-e4342550-5516-4451-b9ec-93166b60f8a4)
-
-<!--Watch the [Walkie Talkie featurette video](https://go.microsoft.com/fwlink/?linkid=2202710).-->
 
 ### Boost morale with Praise
 
@@ -141,8 +135,6 @@ Learn how to [manage the Tasks app for your organization](/microsoftteams/manage
 
 Share this [Tasks video training](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) with your users.
 
-<!--Watch the [Tasks featurette video](https://go.microsoft.com/fwlink/?linkid=2202616).-->
-
 ### Streamline approvals with Approvals
 
 Use Approvals to streamline requests and processes with your team. Create, manage, and share approvals directly from your hub for teamwork. Start an approval flow from the same place you send a chat, in a channel conversation, or from the Approvals app itself. Just select an approval type, add details, attach files, and choose approvers. Once submitted, approvers are notified and can review and act on the request. You can allow the Approvals app for your organization and add it to Teams.
@@ -157,8 +149,6 @@ Use Approvals to streamline requests and processes with your team. Create, manag
 Learn how to [manage the Approvals app for your organization](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Approvals video training](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) with your users.
-
-<!--Watch the [Approvals featurette video](https://go.microsoft.com/fwlink/?linkid=2202800).-->
 
 ### Check in on progress with Updates
 
@@ -175,11 +165,9 @@ Learn how to [manage the Updates app for your organization](/microsoftteams/mana
 
 Share this [Updates video training](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) with your users.
 
-<!--Watch the [Updates featurette video](https://go.microsoft.com/fwlink/?linkid=2202831).-->
+<!--## Set up your teams, channels, and apps
 
-## Set up your teams, channels, and apps
-
-When you're ready to connect your retail associates in Teams, you can set up teams and channels for your store teams and managers with pre-built or custom templates. The easiest way is to start with a template. The **Organize a store** and **Retail for managers** [templates](/microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) are pre-made templates that include channels and apps designed for retail. You can also create a template based off an existing team. Even when you start with a template, you can customize the team and channels, and add more apps to suit your team's needs.
+Set up teams and channels for your frontline from scratch or from pre-built or custom templates. The easiest way is to start with a template. The **Organize a store** and **Retail for managers** [templates](/microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) are pre-made templates that include channels and apps designed for retail. You can also create a template based off an existing team. Even when you start with a template, you can customize the team and channels, and add more apps to suit your team's needs.
 
 - Use channels with tabs to share news, keep employees in touch across shifts, and build community.
 - Use teams templates to set up teams with similar structures (such as channels and tabs) across stores or regions.
@@ -190,9 +178,9 @@ When you're ready to connect your retail associates in Teams, you can set up tea
 
 2. Choose **Create a team** and then scroll down to see available templates.
 
-More information: [Create a team with templates](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)
+More information: [Create a team with templates](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)-->
 
-### Manage apps
+## Manage apps
 
 Refine what's in your team with apps. You can allow or block apps for your organization, or configure settings for apps, in the Teams admin center. To learn more, see [Manage apps in the Microsoft Teams admin center](/microsoftteams/manage-apps).
 
@@ -208,11 +196,9 @@ You can also set up shared mailboxes to allow for incoming mail from customers (
 
 Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-overview) and enables you to create a personalized landing experience in Teams.
 
-![Screenshot of the Viva Connections dashboard on a mobile device.](media/flw-shifts-praise-tasks-approvals.png)
+Use the Viva Connections dashboard and add Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user.
 
-Use the Viva Connections Dashboard and add the Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user.
-
-Learn more about [how to get Viva Connections](/viva/connections/viva-connections-overview) and [how to create a Viva Connections dashboard](/viva/connections/create-dashboard).
+Learn more about [Viva Connections](/viva/connections/viva-connections-overview) and [how to create a Viva Connections dashboard](/viva/connections/create-dashboard).
 
 ## Learn more about Teams capabilities for specific industries
 
