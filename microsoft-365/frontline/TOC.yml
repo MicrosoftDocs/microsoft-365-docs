@@ -29,6 +29,8 @@
         href: deploy-frontline-operational-hierarchy.md
     - name: Set up and configure experiences for your frontline
       items: 
+      - name: Set up targeted communications
+        href: set-up-targeted-communications.md 
       - name: Deploy Shifts at scale
         href: deploy-shifts-at-scale.md 
     - name: Manage devices
