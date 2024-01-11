@@ -55,7 +55,7 @@ For all other procedures in this article, the following items are required:
 
 ::: moniker range="o365-21vianet"
 
-## Payment options for Office 365 operated by 21Vianet in China
+## Payment options for Microsoft 365 operated by 21Vianet in China
 
 International credit cards aren't accepted. You can pay for your subscription by:
 

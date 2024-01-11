@@ -40,7 +40,7 @@ Although you enable pay-as-you-go billing for image tagging, you'll be charged o
 
 ## Manage sites
 
-By default, image tagging is available for libraries on all SharePoint sites. Follow these steps to manage which SharePoint sites users can use image tagging.
+By default, image tagging is available for libraries on all SharePoint sites. Follow these steps to limit which sites users can apply image tagging.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
