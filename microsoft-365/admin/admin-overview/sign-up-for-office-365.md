@@ -37,42 +37,39 @@ ms.date: 01/11/2024
 
 # How to sign up for a Microsoft 365 for business plan - Admin Help
 
+::: moniker range="o365-worldwide"
 When you sign up for a Microsoft 365 for business plan, your team can begin using the latest versions of Word, Excel, PowerPoint, and other Microsoft 365 apps. You can sign up and get started with a Microsoft 365 for business plan in three easy steps.
 
-::: moniker range="o365-worldwide"
-Check out our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+Check out our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/p/?linkid=2224585).
+
+For video tutorials, visit [Microsoft 365 small business help](https://go.microsoft.com/fwlink/p/?linkid=2197659) on YouTube.
 ::: moniker-end
 
-For video tutorials, visit [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
-
 ::: moniker range="o365-21vianet"
-
-If you're in China, Office 365 operated by 21Vianet is designed to meet the needs for secure, reliable, and scalable cloud services in China. This service is powered by technology that Microsoft has licensed to 21Vianet. Microsoft doesn't operate the service itself. 21Vianet operates, provides, and manages delivery of the service. 21Vianet is the largest carrier-neutral Internet data center services provider in China, providing hosting, managed network services, and cloud computing infrastructure services. By licensing Microsoft technologies, 21Vianet operates local Microsoft datacenters to provide you the ability to use Microsoft services while keeping your data within China. 21Vianet also provides your subscription and billing services, and support.
+If you're in China, Microsoft 365 operated by 21Vianet is designed to meet the needs for secure, reliable, and scalable cloud services in China. This service is powered by technology that Microsoft has licensed to 21Vianet. Microsoft doesn't operate the service itself. 21Vianet operates, provides, and manages delivery of the service. 21Vianet is the largest carrier-neutral Internet data center services provider in China, providing hosting, managed network services, and cloud computing infrastructure services. By licensing Microsoft technologies, 21Vianet operates local Microsoft datacenters to provide you the ability to use Microsoft services while keeping your data within China. 21Vianet also provides your subscription and billing services, and support.
   
 > [!NOTE]
 > These services are subject to Chinese laws.
   
-Sign up for Office 365 operated by 21Vianet so that your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs.
+Sign up for Microsoft 365 operated by 21Vianet so that your team can begin using the latest versions of Word, Excel, PowerPoint, and other Microsoft 365 apps.
   
-Ready to sign up? [Select a Plan](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans).
-  
+Ready to sign up? [Select a Plan](https://www.21vbluecloud.com/microsoft365/pricing/business/).
 ::: moniker-end
 
+::: moniker range="o365-worldwide"
 ## Step 1. Choose a Microsoft 365 for business plan
 
 Before you start a new subscription, put some thought into the plan you sign up for. Which plan you choose depends on your specific needs. If you don’t know which plan is right for your organization, the [Microsoft 365 plan chooser](https://www.microsoft.com/microsoft-365/business/microsoft-365-plan-chooser?ocid=cmmsz2r87j2&rtc=1) can help you decide. The plan chooser makes recommendations based on your answers to questions like the size of your business, your field of work, the devices you use, and what kind of features, IT support, and security you're looking for.
 
 If you need extra help with deciding which plan is right for you, sales consultants are available to answer your questions. Go to the [Plans and pricing](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products?tab=2&rtc=1) page and select one of the contact support options listed on the side of the page.
 
-::: moniker range="o365-worldwide"
 ### Watch: Choose a Microsoft 365 subscription
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198032).
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p?linkid=2198032).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
 If you found this video helpful, check out the [complete Microsoft 365 training series for small businesses](../../business-video/index.yml).
-::: moniker-end
 
 ## Step 2. Sign up for a free trial
 
@@ -80,13 +77,12 @@ When you’re ready to sign up, go to the [Plans and pricing](https://www.micros
 
 You can cancel your free trial at any time to stop future charges. To cancel a free trial, [turn off recurring billing](../../commerce/subscriptions/renew-your-subscription.md). You can continue using Microsoft 365 until the end of the free trial. If you don't turn off recurring billing, your payment method is automatically charged after your free trial ends.
 
-::: moniker range="o365-worldwide"
 ### Watch: Sign up for Microsoft 365 Business Standard
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
-::: moniker-end
 
 ### Information we ask for when you sign up
+::: moniker-end
 
 When you sign up for a new subscription, we ask you for the following information.
 
@@ -105,7 +101,13 @@ When you sign up for a new subscription, we ask you for the following informatio
 
 - **Payment information**&mdash;You can pay for your subscription with a credit card.
 
+::: moniker range="o365-worldwide"
 ## Step 3. Set up your new subscription
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+## Set up your new subscription
+::: moniker-end
 
 The steps to set up your new subscription vary depending on the Microsoft 365 for business plan that you signed up for. To learn how to set up your new subscription, see one of the following articles:
 
