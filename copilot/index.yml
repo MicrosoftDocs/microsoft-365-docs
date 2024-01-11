@@ -59,8 +59,6 @@ additionalContent:
           links:
             - text: Data, Privacy, and Security
               url: microsoft-365-copilot-privacy.md
-            - text: Apply principles of Zero Trust to Microsoft 365 Copilot
-              url: /security/zero-trust/zero-trust-microsoft-365-copilot
             - text: Zero trust illustrations
               url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot
             - text: Microsoft Purview data security and compliance protections for Microsoft Copilot
