@@ -56,14 +56,13 @@ Ready to sign up? [Select a Plan](https://products.office.com/zh-cn/business/com
   
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-
 ## Step 1. Choose a Microsoft 365 for business plan
 
 Before you start a new subscription, put some thought into the plan you sign up for. Which plan you choose depends on your specific needs. If you don’t know which plan is right for your organization, the [Microsoft 365 plan chooser](https://www.microsoft.com/microsoft-365/business/microsoft-365-plan-chooser?ocid=cmmsz2r87j2&rtc=1) can help you decide. The plan chooser makes recommendations based on your answers to questions like the size of your business, your field of work, the devices you use, and what kind of features, IT support, and security you're looking for.
 
 If you need extra help with deciding which plan is right for you, sales consultants are available to answer your questions. Go to the [Plans and pricing](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products?tab=2&rtc=1) page and select one of the contact support options listed on the side of the page.
 
+::: moniker range="o365-worldwide"
 ### Watch: Choose a Microsoft 365 subscription
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198032).
@@ -71,6 +70,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
 If you found this video helpful, check out the [complete Microsoft 365 training series for small businesses](../../business-video/index.yml).
+::: moniker-end
 
 ## Step 2. Sign up for a free trial
 
@@ -78,10 +78,10 @@ When you’re ready to sign up, go to the [Plans and pricing](https://www.micros
 
 You can cancel your free trial at any time to stop future charges. To cancel a free trial, [turn off recurring billing](../../commerce/subscriptions/renew-your-subscription.md). You can continue using Microsoft 365 until the end of the free trial. If you don't turn off recurring billing, your payment method is automatically charged after your free trial ends.
 
+::: moniker range="o365-worldwide"
 ### Watch: Sign up for Microsoft 365 Business Standard
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
-
 ::: moniker-end
 
 ### Information we ask for when you sign up
