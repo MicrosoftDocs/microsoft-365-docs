@@ -29,6 +29,8 @@
         href: deploy-frontline-operational-hierarchy.md
     - name: Set up and configure experiences for your frontline
       items: 
+      - name: Set up targeted communications
+        href: set-up-targeted-communications.md 
       - name: Deploy Shifts at scale
         href: deploy-shifts-at-scale.md 
     - name: Manage devices
@@ -63,8 +65,6 @@
       href: flw-team-collaboration.md
     - name: Corporate communications with frontline workers
       href: flw-corp-comms.md
-    - name: Help your employees use collaboration apps and features
-      href: collab-features-apps-toolkit.md
   - name: Wellbeing & engagement
     items: 
     - name: Engage your employees and focus on wellbeing

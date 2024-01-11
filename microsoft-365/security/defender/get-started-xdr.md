@@ -96,7 +96,7 @@ Defender Experts for XDR also lets you exclude automatically identified high-val
 - **High-value devices** are devices in your organization that were [identified as such](../defender-vulnerability-management/tvm-assign-device-value.md) in Defender for Endpoint
 - **High-value users** are users in your organization that were tagged with the [Sensitive tag](/defender-for-identity/entity-tags#sensitive--tags) in Microsoft Defender for Identity and the [priority account tag](/microsoft-365/admin/setup/priority-accounts) in Microsoft Defender for Office 365
 
-Similar to the other excluded device or user groups, you instead get remediation guidance for these high-value entities when they’re excluded.
+Similar to the other excluded device or user groups, you instead get remediation guidance for these high-value entities when they're excluded.
 > [!IMPORTANT]
 > By using this feature, you will also exclude automatically all devices and users that will be tagged as high-value in the future.
 
@@ -108,7 +108,7 @@ Similar to the other excluded device or user groups, you instead get remediation
 :::image type="content" source="../../media/xdr/managed-remediation-exclusions.png" alt-text="Screenshot of managed remediation exclusions option." lightbox="../../media/xdr/managed-remediation-exclusions.png":::
 
 > [!NOTE]
-> Unlike the other excluded device and user groups, excluded high-value entities aren’t listed in the **Device groups** or **User groups** tab.
+> Unlike the other excluded device and user groups, excluded high-value entities aren't listed in the **Device groups** or **User groups** tab.
 
 ## Tell us who to contact for important matters
 
@@ -158,7 +158,7 @@ The readiness assessment has two parts:
   The figures are based on your Defender for Endpoint and Defender for Identity licenses; to achieve these target number of protected assets, [onboard more devices](/microsoft-365/security/defender-endpoint/onboarding) to Defender for Endpoint or [install more Defender for Identity sensors](/defender-for-identity/install-sensor).
 
 > [!IMPORTANT]
-> Defender Experts for XDR reviews your readiness assessment periodically, especially if there are any changes to your environment, such as the addition of new devices and identities. It’s important that you regularly monitor and run the readiness assessment beyond the initial onboarding to ensure that your environment has strong security posture to reduce risk.
+> Defender Experts for XDR reviews your readiness assessment periodically, especially if there are any changes to your environment, such as the addition of new devices and identities. It's important that you regularly monitor and run the readiness assessment beyond the initial onboarding to ensure that your environment has strong security posture to reduce risk.
 
 When you complete all the required tasks and meet the onboarding targets in your readiness assessment, your service delivery manager (SDM) initiates the monitoring phase of the Defender Experts for XDR service. For a few days, our experts start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
 

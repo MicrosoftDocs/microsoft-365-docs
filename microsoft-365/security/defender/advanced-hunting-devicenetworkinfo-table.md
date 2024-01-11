@@ -44,8 +44,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Date and time when the event was recorded |
-| `DeviceId` | `string` | Unique identifier for the machine in the service |
-| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the machine |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
+| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
 | `NetworkAdapterName` | `string` | Name of the network adapter |
 | `MacAddress` | `string` | MAC address of the network adapter |
 | `NetworkAdapterType` | `string` | Network adapter type. For the possible values, refer to [this enumeration](/dotnet/api/system.net.networkinformation.networkinterfacetype) |

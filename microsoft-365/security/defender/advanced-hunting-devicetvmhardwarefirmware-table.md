@@ -47,7 +47,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `ComponentName` | `string` | Name of hardware or firmware component |
 | `ComponentFamily` | `string` | Component family or class, a grouping of components that have similar features or characteristics as determined by the manufacturer |
 | `ComponentVersion` | `string` | Component version (for example, BIOS version) |
-| `AdditionalFields` | `string` | Additional information about the components in JSON array format|
+| `AdditionalFields` | `dynamic` | Additional information about the components in JSON array format |
 
 You can try the following sample queries to use the information available in the `DeviceTvmHardwareFirmware` table:
 
