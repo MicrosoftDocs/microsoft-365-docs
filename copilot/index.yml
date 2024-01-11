@@ -47,7 +47,7 @@ additionalContent:
             - text: Get started
               url: microsoft-365-copilot-setup.md
             - text: Wizard-based setup guide
-              url: https://setup.microsoft.com/copilot/setup-guide
+              url: https://go.microsoft.com/fwlink/?linkid=2249661
             - text: Change update channel of Microsoft 365 Apps to enable Copilot
               url: /deployoffice/updates/change-channel-for-copilot
             - text: Enable users
