@@ -11,12 +11,12 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 12/06/2023
+ms.date: 01/15/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - tier1
+- M365-security-compliance
+- tier1
 ms.topic: conceptual
 ---
 
