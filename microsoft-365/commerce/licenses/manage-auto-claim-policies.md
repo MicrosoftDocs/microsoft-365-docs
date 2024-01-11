@@ -41,6 +41,9 @@ You must be a Global admin to create and manage auto-claim policies. For more in
 
 By default, the auto-claim policy feature is turned off. Before you can use the feature, you must first turn it on in the Microsoft 365 admin center. After you turn on the feature, you can create an auto-claim policy.
 
+> [!NOTE]
+> In some cases, the auto-claim feature is turned on by default, and the auto-claim policies for certain apps and services are preconfigured.
+
 ### Turn on auto-claim policies
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.

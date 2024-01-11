@@ -37,7 +37,7 @@ ms.date: 08/21/2023
 This guide lists Microsoft resources for new Microsoft Defender XDR users to confidently perform [day-to-day incident response tasks](integrate-microsoft-365-defender-secops-services.md) while using the portal. The intended results of using this guide are:
 
 - You'll quickly learn to use Microsoft Defender XDR to respond to incidents and alerts.
-- You’ll discover the portal's features to aid incident investigation and remediation through the videos and tutorials.
+- You'll discover the portal's features to aid incident investigation and remediation through the videos and tutorials.
 
 Microsoft Defender XDR enables you to see relevant threat events across all assets (devices, identities, mailboxes, cloud apps, and more). The portal consolidates signals from the [Defender protection suite](microsoft-365-defender.md#microsoft-defender-xdr-protection), [Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md), and other [integrated security information and event management (SIEM) solutions](configure-siem-defender.md). Correlated attack information with full context in a single pane of glass enables you to successfully defend and protect your organization.
 
@@ -49,7 +49,7 @@ This guide has three main sections:
 
 ## Understanding incidents
 
-An [incident](incidents-overview.md) is a chain of processes created, commands, and actions that might not have coincided. An incident provides a holistic picture and context of suspicious or malicious activity. A single incident gives you an attack’s complete context instead of triaging hundreds of alerts from multiple services. 
+An [incident](incidents-overview.md) is a chain of processes created, commands, and actions that might not have coincided. An incident provides a holistic picture and context of suspicious or malicious activity. A single incident gives you an attack's complete context instead of triaging hundreds of alerts from multiple services. 
 
 Microsoft Defender XDR has many features that you can use to respond to an incident. You can navigate the incidents by selecting **View all incidents** in the Active incidents card on the Home page or through **Incidents & alerts** on the left navigation pane.
 
@@ -78,7 +78,7 @@ An example of determining incident priority is combining the following factors f
 You might assign a high priority to the incident using the information above. You can begin your incident investigation once a priority is determined.
 
 > [!NOTE]
-> Microsoft Defender XDR automatically determines filters like severity, investigation states, impacted assets, and incident statuses. The information is based on your organization’s network activities contextualized with threat intelligence feeds and the automated remediation actions applied.
+> Microsoft Defender XDR automatically determines filters like severity, investigation states, impacted assets, and incident statuses. The information is based on your organization's network activities contextualized with threat intelligence feeds and the automated remediation actions applied.
 
 ## Manage incidents
 
