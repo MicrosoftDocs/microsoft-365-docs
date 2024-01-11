@@ -22,11 +22,6 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - business_assist
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: "Email forwarding lets you forward email messages sent to a Microsoft 365 user mailbox to another mailbox inside or outside of your organization."
 ---
 
@@ -48,7 +43,7 @@ Before you set up email forwarding, note the following:
 
 - Once you set up email forwarding, only **new** emails sent to the  **from**  mailbox will be forwarded.
 
-- Email forwarding requires that the  *from*  account has a license. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50GB.
+- Email forwarding requires that the  *from*  account has a license unless it is a shared mailbox. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50 GB.
 
 - You must be an Exchange administrator or Global administrator in Microsoft 365 to do these steps. For more information, see the topic [About admin roles](../add-users/about-admin-roles.md).
 
@@ -91,6 +86,7 @@ Before you set up email forwarding, note the following:
 ## Related content
 
 [Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)\
+[Forward emails that are sent to a shared mailbox](/microsoft-365/admin/email/configure-a-shared-mailbox#forward-emails-that-are-sent-to-a-shared-mailbox) (article)\
 [Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)\
 [Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding) (article)

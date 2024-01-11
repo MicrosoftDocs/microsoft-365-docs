@@ -1,12 +1,11 @@
 ---
 title: Submit files in Microsoft Defender for Endpoint
-description: Learn how to use the unified submissions feature in Microsoft 365 Defender to submit suspicious emails, URLs, email attachments, and files to Microsoft for scanning.
+description: Learn how to use the unified submissions feature in Microsoft Defender XDR to submit suspicious emails, URLs, email attachments, and files to Microsoft for scanning.
 keywords: antivirus, spam, phish, file, alert, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url, submission, submit, report
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.date: 06/5/2023
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.date: 10/02/2023
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -24,32 +23,35 @@ ms.custom: FPFN
 
 # Submit files in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink).
 
-In Microsoft Defender for Endpoint, admins can use the unified submissions feature to submit files and file hashes (SHAs) to Microsoft for review. The unified submissions experience is a one-stop shop for submitting emails, URLs, email attachments, and files in one, easy-to-use submission experience. Admins can use the Microsoft 365 Defender portal or the Microsoft Defender for Endpoint Alert page to submit suspicious files.
+In Microsoft Defender for Endpoint, admins can use the unified submissions feature to submit files and file hashes (SHAs) to Microsoft for review. The unified submissions experience is a one-stop shop for submitting emails, URLs, email attachments, and files in one, easy-to-use submission experience. Admins can use the Microsoft Defender portal or the Microsoft Defender for Endpoint Alert page to submit suspicious files.
 
 ## What do you need to know before you begin?
 
-- The new unified submissions experience is available only in subscriptions that include Microsoft 365 Defender or Microsoft Defender for Endpoint Plan 2.
+The new unified submissions experience is available only in subscriptions that include Microsoft Defender for Endpoint Plan 2.
+You need to assign permissions before you can perform the procedures in this article. Use one of the following options:
 
-- To submit files to Microsoft, you need to be a member of one of the following groups:
-  - **Organization Management** or **Security Administrator** role groups in [Email & collaboration permissions in the Microsoft 365 Defender portal](../office-365-security/mdo-portal-permissions.md).
-  - **Global Administrator** or **Security Administrator** roles in [Azure AD permissions](../../admin/add-users/about-admin-roles.md). Membership in these roles give the required permissions _and_ permissions for other features in Microsoft 365.
-
-- For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](../office-365-security/submissions-admin.md).
-
-- To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
+**Microsoft Defender for Endpoint** permissions:
+ - Submit files / file hashes: _"Alerts investigation" or "Manage security settings in Security Center"_
+ - View submissions: "_View Data - Security operations"_
+                  
+**Microsoft Defender XDR** unified RBAC permissions:
+ - Submit files / file hashes: *"Alerts (Manage)" or "Core security settings (manage)"*
+ - View submissions: _"Security data basics (read)"_
+                        
+For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](../office-365-security/submissions-admin.md).
 
 ## Submit a file or file hash to Microsoft from the Defender portal
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 2. On the **Submissions** page, select the **Files** tab.
 
@@ -95,7 +97,7 @@ To view the details of the submission, select the submission by clicking anywher
 
 ## Report items to Microsoft from the Alerts page in the Defender portal
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Incidents & alerts** \> **Alerts**. Or, to go directly to the **Alerts** page, use <https://security.microsoft.com/alerts>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Incidents & alerts** \> **Alerts**. Or, to go directly to the **Alerts** page, use <https://security.microsoft.com/alerts>.
 
 2. On the **Alerts** page, find the alert that contains the file you want to report. For example, you can select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**, and then select **Service sources** \> **Microsoft Defender for Endpoint**.
 
@@ -118,6 +120,7 @@ The submission is available on the **Files** tab of the **Submissions** page at 
 ## Related information
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
-- [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
+- [Microsoft Defender for Endpoint in Microsoft Defender XDR](../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
 - [View and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

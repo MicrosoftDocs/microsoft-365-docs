@@ -46,7 +46,7 @@ That means there will be no further updates, patches, or fixes for the product (
 As the end of support of SharePoint Server 2010 approaches, delete data you no longer need before you upgrade the product and migrate your important data.
 
 > [!NOTE]
-> A software lifecycle typically lasts for ten years from the initial release. [Microsoft solution providers](https://go.microsoft.com/fwlink/?linkid=841249) can can help you upgrade to the next version of the software or migrate to Microsoft 365 migration (or both). Make sure you're aware of end-of-support dates for critical underlying technologies as well, particularly for the version of Microsoft SQL Server you're using with SharePoint. For more information, see [Fixed Lifecycle Policy](https://support.microsoft.com/help/14085).
+> A software lifecycle typically lasts for ten years from the initial release. [Microsoft solution providers](https://go.microsoft.com/fwlink/?linkid=841249) can help you upgrade to the next version of the software or migrate to Microsoft 365 migration (or both). Make sure you're aware of end-of-support dates for critical underlying technologies as well, particularly for the version of Microsoft SQL Server you're using with SharePoint. For more information, see [Fixed Lifecycle Policy](https://support.microsoft.com/help/14085).
 
 ## Plan ahead
 
@@ -253,13 +253,13 @@ You may want to create a Microsoft 365 dev/test environment, which you can set u
 
 ## Summary of options for Office 2010 client and servers and Windows 7
 
-For a visual summary of the upgrade, migrate, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
+For a visual summary of the upgrade, migrate, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf).
 
-[![End of support for Office 2010 clients and servers and Windows 7 poster.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![End of support for Office 2010 clients and servers and Windows 7 poster.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf)
 
 This poster illustrates the various paths you can take to avoid Office 2010 client and server products and Windows 7 end of support, with preferred paths and option supports in Microsoft 365 Enterprise highlighted.
 
-You can also [download](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) this poster and print it in letter, legal, or tabloid (11 x 17) format.
+You can also [download](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf) this poster and print it in letter, legal, or tabloid (11 x 17) format.
 
 ## Related articles
 

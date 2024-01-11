@@ -1,11 +1,10 @@
 ---
-title: Fetch Microsoft 365 Defender incidents 
-description: Learn how to fetch Microsoft 365 Defender incidents from a customer tenant
+title: Fetch Microsoft Defender XDR incidents 
+description: Learn how to fetch Microsoft Defender XDR incidents from a customer tenant
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,18 +16,19 @@ audience: ITPro
 ms.collection: 
 - m65-security-compliance
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.custom: api
 ms.date: 10/25/2021
 ---
 
-# Fetch Microsoft 365 Defender incidents 
+# Fetch Microsoft Defender XDR incidents 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -47,15 +47,17 @@ To fetch incidents into your SIEM system, you'll need to take the following step
 
 - Step 1: Create a third-party application
 - Step 2: Get access and refresh tokens from your customer's tenant
-- Step 3: allow your application on Microsoft 365 Defender
+- Step 3: allow your application on Microsoft Defender XDR
 
-### Step 1: Create an application in Azure Active Directory (Azure AD)
+<a name='step-1-create-an-application-in-azure-active-directory-azure-ad'></a>
 
-You'll need to create an application and grant it permissions to fetch alerts from your customer's Microsoft 365 Defender tenant.
+### Step 1: Create an application in Microsoft Entra ID
 
-1. Sign in to the [Azure AD portal](https://aad.portal.azure.com/).
+You'll need to create an application and grant it permissions to fetch alerts from your customer's Microsoft Defender XDR tenant.
 
-2. Select **Azure Active Directory** \> **App registrations**.
+1. Sign in to the [Microsoft Entra admin center](https://aad.portal.azure.com/).
+
+2. Select **Microsoft Entra ID** \> **App registrations**.
 
 3. Click **New registration**.
 
@@ -157,9 +159,11 @@ After providing your credentials, you'll need to grant consent to the applicatio
 
 8. In the PowerShell window, you'll receive an access token and a refresh token. Save the refresh token to configure your SIEM connector.
 
-### Step 3: Allow your application on Microsoft 365 Defender
+<a name='step-3-allow-your-application-on-microsoft-365-defender'></a>
 
-You'll need to allow the application you created in Microsoft 365 Defender.
+### Step 3: Allow your application on Microsoft Defender XDR
+
+You'll need to allow the application you created in Microsoft Defender XDR.
 
 You'll need to have **Manage portal system settings** permission to allow the application. Otherwise, you'll need to request your customer to allow the application for you.
 
@@ -173,7 +177,7 @@ You'll need to have **Manage portal system settings** permission to allow the ap
 
 5. Click **Authorize application**.
 
-You can now download the relevant configuration file for your SIEM and connect to the Microsoft 365 Defender API. For more information, see, [Pull alerts to your SIEM tools](../defender-endpoint/configure-siem.md).
+You can now download the relevant configuration file for your SIEM and connect to the Microsoft Defender XDR API. For more information, see, [Pull alerts to your SIEM tools](../defender-endpoint/configure-siem.md).
 
 - In the ArcSight configuration file / Splunk Authentication Properties file, write your application key manually by setting the secret value.
 - Instead of acquiring a refresh token in the portal, use the script from the previous step to acquire a refresh token (or acquire it by other means).
@@ -185,3 +189,4 @@ For information on how to fetch alerts using REST API, see [Pull alerts using RE
 ## Related topics
 
 [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

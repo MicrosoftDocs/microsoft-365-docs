@@ -7,8 +7,6 @@
       href: mdb-overview.md
     - name: Requirements
       href: mdb-requirements.md
-    - name: Compare plans for small and medium-sized businesses
-      href: compare-mdb-m365-plans.md
     - name: What's new in Defender for Business?
       href: ../../business-premium/m365bp-mdb-whats-new.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
     - name: Preview features
@@ -19,11 +17,13 @@
       href: mdb-partners.md
     - name: Integration with Microsoft 365 Lighthouse
       href: mdb-lighthouse-integration.md
+    - name: Streaming API
+      href: mdb-streaming-api.md
   - name: Get started
     items:
     - name: Trial user guide - Defender for Business
       href: trial-playbook-defender-business.md
-    - name: Visit the Microsoft 365 Defender portal
+    - name: Visit the Microsoft Defender portal
       href: mdb-get-started.md
     - name: Try tutorials and simulations
       href: mdb-tutorials.md
@@ -57,6 +57,8 @@
         href: mdb-asr.md
       - name: Portal and feature settings
         href: mdb-portal-advanced-feature-settings.md
+      - name: Change your endpoint security subscription
+        href: mdb-manage-subscription.md
   - name: Monitor or manage devices
     items: 
     - name: Get an overview of mobile threat defense
@@ -69,16 +71,18 @@
       href: mdb-offboard-devices.md
   - name: View and respond to detected threats
     items: 
-    - name: View and use reports
-      href: mdb-reports.md
     - name: Use your vulnerability management dashboard
       href: mdb-view-tvm-dashboard.md
     - name: View and manage incidents
       href: mdb-view-manage-incidents.md
+    - name: Use attack disruption capabilities
+      href: mdb-attack-disruption.md
     - name: Respond to and mitigate threats
       href: mdb-respond-mitigate-threats.md
     - name: Review remediation actions
       href: mdb-review-remediation-actions.md
+    - name: View and use reports
+      href: mdb-reports.md
   - name: Create, view, or edit security policies
     items:
     - name: View, edit, and create policies
@@ -86,21 +90,13 @@
     - name: Understand policy order
       href: mdb-policy-order.md
   - name: Maintain your environment
-    items:
-    - name: Overview
-      href: mdb-maintain-environment.md
-    - name: Tenant administration guide
-      href: mdb-admin-guide.md
-    - name: Security administration guide
-      href: mdb-security-admin-guide.md
-    - name: Security operations guide
-      href: mdb-security-operations-guide.md
+    href: ../../business-premium/m365bp-mdb-maintain-environment.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
   - name: Reference information
     items: 
     - name: Top 10 ways to secure your business data
       href: ../../business-premium/secure-your-business-data.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
     - name: How to get help or contact support
-      href: mdb-get-help.md
+      href: /microsoft-365/admin/get-help-support.md
     - name: Frequently asked questions
       href: mdb-faq.yml
     - name: Troubleshooting

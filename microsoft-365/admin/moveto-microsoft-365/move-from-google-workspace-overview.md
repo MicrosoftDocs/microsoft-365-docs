@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
-ms.date: 01/05/2021
+ms.date: 10/31/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -37,7 +37,7 @@ You can use the following steps to move your data, email, and users from Google 
 
 | Step  |Description  |
 |---------|---------|
-|Step 1 | [Sign up](../admin-overview/sign-up-for-office-365.md) for Microsoft 365 Business Premium       |
+|Step 1 | [Sign up](../admin-overview/sign-up-for-office-365.md) for Microsoft 365 for Business |
 |Step 2 | [Set up Microsoft 365 for Google Workspace migration](set-up-microsoft-365-forgoogle.md). </br> In this step you will validate you own the domain you use in Google Workspace, add users, and set up basic security for devices. |
 |Step 3 | [Set up security policies for Windows devices.](../setup/secure-win-10-pcs.md)</br> Windows security is set up separately in the Setup page of Microsoft 365 admin center. |
 |Step 4 | [Add your Google Workspace domain to Microsoft 365](add-google-domain.md) </br> After you verify you own the domain you are using for email, you and all the other users can start using your old email to sign in to Microsoft 365 Business premium. |

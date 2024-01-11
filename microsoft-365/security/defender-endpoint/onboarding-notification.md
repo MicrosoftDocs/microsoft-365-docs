@@ -3,7 +3,7 @@ title: Create an onboarding or offboarding notification rule
 description: Get a notification when a local onboarding or offboarding script is used.
 keywords: onboarding, offboarding, local, script, notification, rule
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,19 +16,19 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 ms.date: 12/18/2020
 ---
 
 # Create a notification rule when a local onboarding or offboarding script is used
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -71,11 +71,11 @@ You'll need to have access to:
    - Method: "GET" as a value to get the list of devices.
    - URI: Enter `https://api.securitycenter.microsoft.com/api/machines`.
    - Authentication: Select "Active Directory OAuth".
-   - Tenant: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
+   - Tenant: Sign-in to https://portal.azure.com and navigate to **Microsoft Entra ID > App Registrations** and get the Tenant ID value.
    - Audience: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - Client ID: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and  get the Client ID value.
+   - Client ID: Sign-in to https://portal.azure.com and navigate to **Microsoft Entra ID > App Registrations** and  get the Client ID value.
    - Credential Type: Select "Secret".
-   - Secret: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
+   - Secret: Sign-in to https://portal.azure.com and navigate to **Microsoft Entra ID > App Registrations** and get the Tenant ID value.
 
     :::image type="content" source="images/http-conditions.png" alt-text="The HTTP conditions" lightbox="images/http-conditions.png":::
 
@@ -213,3 +213,4 @@ You can split it to two queries:
 
 1. For offboarding take only this interval using the OData $filter and only notify if the conditions are met.
 2. Take all devices last seen in the past hour and check first seen property for them (if the first seen property is on the past hour, the last seen must be there too).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

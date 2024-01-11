@@ -29,7 +29,7 @@ summary: |
   **Applies to**
   - [Exchange Online Protection](eop-about.md)
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-  - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+  - [Microsoft Defender XDR](../defender/microsoft-365-defender.md)
 
   This article provides frequently asked questions and answers about anti-spam protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 
@@ -74,7 +74,7 @@ sections:
           As an admin, you can use the following methods to further refine anti-spam protection:
 
           - Add users to the Standard and Strict preset security policies.
-          - Edit the default spam filtering settings in the default anti-spam policy.<
+          - Edit the default spam filtering settings in the default anti-spam policy.
           - Create anti-spam policies that are applied to specified users, groups, or domains in your organization.
 
           For more information, see the following articles:
@@ -98,7 +98,7 @@ sections:
         answer: |
           Yes, the service has a URL filter that checks for URLs within messages. If URLs associated with known spam or malicious content are detected, the message is marked as spam.
 
-          Customers with Microsoft 365 Defender for Office licenses also get Safe Links protection. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
+          Customers with Microsoft Defender XDR for Office 365 licenses also get Safe Links protection. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
 
       - question: |
           How can Microsoft 365 customers send false positive (bad) and false negative (good) messages to Microsoft?
@@ -148,7 +148,7 @@ sections:
       - question: |
           What are the best practices for outbound mail that help to ensure my mail is delivered?
         answer: |
-          The guidelines at [Best practices for bulk emailing to Microsoft 365 users](mail-flow-troubleshooting.md#best-practices-for-bulk-emailing-to-microsoft-365-users) and following guidelines are best practices for sending outbound email messages:
+          The guidelines at [External senders - Troubleshoot email sent to Microsoft 365](external-senders-mail-flow-troubleshooting.md#best-practices-for-bulk-emailing-to-microsoft-365-users) and following guidelines are best practices for sending outbound email messages:
 
           - **The source email domain should resolve in DNS**: For example, if the sender is user@fabrikam, the domain fabrikam resolves to the IP address 192.168.43.10.
 
@@ -160,7 +160,7 @@ sections:
 
           - **Ensure that proper SPF records are set up in DNS**: SPF records are a mechanism for validating that mail sent from a domain really is coming from that domain and isn't spoofed. For more information about SPF records, see the following links:
             - [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
-            - [Domains FAQ](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
+            - [Domains FAQ](/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
           - **Signing email with DKIM, sign with relaxed canonicalization**: If a sender wants to sign their messages using Domain Keys Identified Mail (DKIM) and they want to send outbound mail through the service, they should sign using the relaxed header canonicalization algorithm. Signing with strict header canonicalization may invalidate the signature when it passes through the service.
 
@@ -179,4 +179,4 @@ sections:
 
           If you use a third-party protection service or device to scan email before it's delivered to Microsoft 365, you should also enable Enhanced Filtering for Connectors (also known as *skip listing*) so detection, reporting, and investigation features in Microsoft 365 are able to correctly identify messages sources. For more information, see [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-          If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+          If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).

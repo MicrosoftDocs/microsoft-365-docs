@@ -11,12 +11,14 @@ ms.date: 05/24/2023
 |France                                  |FRA     |Europe datacenters                |
 |Germany                                 |DEU     |Europe datacenters                |
 |India                                   |IND     |Southeast or East Asia datacenters|
+|Israel                                  |ISR     |(eDiscovery data location coming soon)|
+|Italy                                   |ITA     |(eDiscovery data location coming soon)|
 |Japan                                   |JPN     |Southeast or East Asia datacenters|
 |Korea                                   |KOR     |Southeast or East Asia datacenters|
 |Macro Region Geography 3 - Americas     |NAM     |US datacenters                    |
 |Norway                                  |NOR     |(eDiscovery data location coming soon)|
-|Qatar                                   |QAT     |(eDiscovery data location coming soon)|
 |Poland                                  |POL     |(eDiscovery data location coming soon)|
+|Qatar                                   |QAT     |(eDiscovery data location coming soon)|
 |South Africa                            |ZAF     |Europe datacenters                |
 |Sweden                                  |SWE     |Europe datacenters                |
 |Switzerland                             |CHE     |Europe datacenters                |

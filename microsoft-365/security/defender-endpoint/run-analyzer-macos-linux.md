@@ -2,7 +2,7 @@
 title:  Run the client analyzer on macOS or Linux
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux
 keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, macos, linux, mdeanalyzer
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,8 +17,9 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
+- mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ---
 
@@ -45,13 +46,13 @@ If using a terminal download using the command:
     wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
     ```
 
-2. Verify the download
+2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: 'C94E3D630730E5A2B605FD295BD81D93997888F4CB2B2694076FCFDE85876C13'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '9743C02442B2E0C3396E7E659AB7F8A0B925AD388E10970D8E427B03CE3BD7F8'
 
     ```console
-    echo 'C94E3D630730E5A2B605FD295BD81D93997888F4CB2B2694076FCFDE85876C13  XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '9743C02442B2E0C3396E7E659AB7F8A0B925AD388E10970D8E427B03CE3BD7F8 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
@@ -70,29 +71,29 @@ If using a terminal download using the command:
 
 5. Three new zip files will be produced:
       1. **SupportToolLinuxBinary.zip** : For all Linux devices
-      2. **SupportToolmacOSBinary.zip** : For Intel based Mac devices
-      3. **SupportToolmacOS-armBinary.zip** : For Arm based Mac devices
+      2. **SupportToolmacOSBinary.zip** : For Intel-based Mac devices
+      3. **SupportToolmacOS-armBinary.zip** : For Arm-based Mac devices
 
 6. Unzip one of the above 3 zip files based on the machine you need to investigate.\
 When using a terminal, unzip the file using one of the following commands based on machine type:
 
    - Linux
 
-   ```console
-   unzip -q SupportToolLinuxBinary.zip
-   ```
+     ```console
+     unzip -q SupportToolLinuxBinary.zip
+     ```
 
-   - Intel based Mac
+   - Intel-based Mac
 
-   ```console
-   unzip -q SupportToolmacOSBinary.zip
-   ```
+     ```console
+     unzip -q SupportToolmacOSBinary.zip
+     ```
 
-   - For Arm based Mac devices
+   - For Arm-based Mac devices
 
-   ```console
-   unzip -q SupportToolmacOS-armBinary.zip
-   ```
+     ```console
+     unzip -q SupportToolmacOS-armBinary.zip
+     ```
 
 7. Run the tool as <i>root</i> to generate diagnostic package:
 
@@ -112,8 +113,8 @@ When using a terminal, unzip the file using one of the following commands based 
 >
 > - The analyzer depends on few extra PIP packages (sh, distro, lxml, pandas) which are installed in the OS when in root to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml).
 >
-> >[!WARNING]
-> >Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
+>   >[!WARNING]
+>   >Running the Python-based client analyzer requires the installation of PIP packages which may cause some issues in your environment. To avoid issues from occurring, it is recommended that you install the packages into a user PIP environment.
 >
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
@@ -132,7 +133,7 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo '1A8004C89E8B75FF892AAC66F1B1D07F3C7030720070A1A1E677A099A9ADC32E  XMDEClientAnalyzer.zip' | sha256sum -c
+    echo 'B2B0452416AAA308668693601C0A540D7BAB1F13D1E42503B7292B00DE18DAFE XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
@@ -192,7 +193,7 @@ Usage example: `sudo ./MDESupportTool -d`
 
 #### Collect performance info
 
-Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand
+Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand.
 
 ```console
 -h, --help            show this help message and exit
@@ -218,7 +219,7 @@ Use OS tracing facilities to record Defender for Endpoint performance traces.
 
 On running this command for the first time, it will install a Profile configuration.
 
-Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/mh35561/mac#:~:text=Choose%20Apple%20menu%20%3E%20System%20Settings,%2C%20double%2Dclick%20the%20profile.)
+Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/configuration-profiles-standardize-settings-mh35561/mac#:~:text=Install%20a%20configuration%20profile%20you%E2%80%99ve%20received).
 
 Usage example `./mde_support_tool.sh trace --length 5`
 
@@ -227,7 +228,7 @@ Usage example `./mde_support_tool.sh trace --length 5`
 Add exclusions for audit-d monitoring.
 
 > [!NOTE]
-> This functionality exists for Linux only
+> This functionality exists for Linux only.
 
 ```console
   -h, --help            show this help message and exit
@@ -249,7 +250,7 @@ Add exclusions for audit-d monitoring.
                         exclude all process of the given syscall
 ```
 
-Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
+Usage example: `sudo ./MDESupportTool exclude -d /var/foo/bar`
 
 ### AuditD Rate Limiter
 
@@ -263,7 +264,7 @@ Syntax that can be used to limit the number of events being reported by the audi
 -e <true/false>, --enable <true/false>      enable/disable the rate limit with default values
 ```
 
-Usage example `sudo ./mde_support_tool.sh ratelimit -e true`
+Usage example: `sudo ./mde_support_tool.sh ratelimit -e true`
 
 > [!NOTE]
 > This functionality should be carefully used as limits the number of events being reported by the auditd subsystem as a whole. This could reduces the number of events for other subscribers as well.
@@ -276,13 +277,11 @@ This option enables you to skip the faulty rules added in the auditd rules file 
 > This functionality is only available on Linux.
 
 ```console
-
-```console
 -h, --help                                  show this help message and exit
 -e <true/false>, --enable <true/false>      enable/disable the option to skip the faulty rules. In case no argumanet is passed, the option will be true by default.
 ```
 
-Usage example `sudo ./mde_support_tool.sh skipfaultyrules -e true`
+Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 
 > [!NOTE]
 > This functionality will be skipping the faulty rules. The faulty rule then needs to be further identified and fixed.
@@ -295,7 +294,7 @@ Usage example `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 
 - mde_diagnostic.zip
 
-  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](mac-resources.md#collecting-diagnostic-information) or [Linux](linux-resources.md#collect-diagnostic-information)
+  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](mac-resources.md#collecting-diagnostic-information) or [Linux](linux-resources.md#collect-diagnostic-information).
 
 - mde.xml
 
@@ -324,3 +323,4 @@ Usage example `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 - perf_benchmark.tar.gz
 
   Description: The performance test reports. You will see this only if you are using the performance parameter.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

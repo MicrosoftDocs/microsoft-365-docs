@@ -1,10 +1,12 @@
 ---
-author: LanaChin
-ms.author: v-lanachin
-ms.date: 08/29/2022
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
+ms.date: 10/17/2023
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
+ms.collection: m365-frontline 
 ---
 Account authorization errors may occur if the WFM service account or Microsoft 365 system account credentials are incorrect or don't have the required permissions.
 

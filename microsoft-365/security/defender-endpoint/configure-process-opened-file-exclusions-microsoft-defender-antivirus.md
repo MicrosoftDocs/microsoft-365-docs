@@ -1,9 +1,8 @@
 ---
 title: Configure exclusions for files opened by specific processes
 description: You can exclude files from scans if they've been opened by a specific process.
-keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -14,8 +13,9 @@ manager: dansimp
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
-ms.date: 04/14/2023
+ms.date: 07/18/2023
 ---
 
 # Configure exclusions for files opened by processes
@@ -30,7 +30,9 @@ ms.date: 04/14/2023
 **Platforms**
 - Windows 
 
-You can exclude files that are opened by specific processes from Microsoft Defender Antivirus scans. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
+You can exclude files that are opened by specific processes from Microsoft Defender Antivirus scans. Note that these types of exclusions are for files that are opened by processes and not the processes themselves. To exclude a process, add a file exclusion (see [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)).
+
+See [Important points about exclusions](configure-exclusions-microsoft-defender-antivirus.md#important-points-about-exclusions) and review the information in [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md) before defining your exclusion lists.
 
 This article describes how to configure exclusion lists.
 
@@ -57,7 +59,7 @@ By default, local changes made to the lists (by users with administrator privile
 You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) to allow local changes to override managed deployment settings.
     
 > [!NOTE]
-> **Network Protection** and **Attack Surface Reduction (ASR) Rules** are directly impacted by process exclusions on all platforms, meaning that a process exclusion on any OS (Windows, MacOS, Linux) will result in Network Protection or ASR being unable to inspect traffic or enforce rules for that specific process.
+> **Network Protection** and **Attack surface reduction rules** are directly impacted by process exclusions on all platforms, meaning that a process exclusion on any OS (Windows, MacOS, Linux) will result in Network Protection or ASR being unable to inspect traffic or enforce rules for that specific process.
 
 ## Configure the list of exclusions for files opened by specified processes
 
@@ -201,3 +203,5 @@ For more information on how to use PowerShell with Microsoft Defender Antivirus,
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

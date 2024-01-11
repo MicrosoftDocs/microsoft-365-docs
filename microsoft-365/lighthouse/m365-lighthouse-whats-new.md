@@ -4,8 +4,8 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: crimora
-ms.date: 06/09/2023
+ms.reviewer: sharonchoi
+ms.date: 11/17/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -27,7 +27,119 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighthouse-overview.md), fixing issues we learn about, and making changes based on your feedback. Review this article to discover what we've been working on.
 
 > [!NOTE]
-> Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+> Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+>
+> To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## October 2023
+
+### Data availability insights
+
+With the expansion of tenants that are eligible for management in Microsoft 365 Lighthouse, we've added data availability insights to our management pages so you know whether you're seeing complete data, partial data, or no data. Lighthouse also helps you understand why data may be missing or incomplete for some of your customer tenants and what steps you can take to get full visibility.
+
+These insights prevent the assumption that tenants that aren't reported are healthy and secure when that data is actually unavailable to Lighthouse.
+
+Data availability insights have been added to the following pages:
+
+- Multifactor authentication
+- Risky users
+- Password reset
+- Data protection
+- Device compliance
+- Device health
+- Device security
+- Threat management
+- Vulnerability management
+
+To see the insights, go to any of these pages in Lighthouse.
+
+### Assign GDAP template settings automatically after customer approval of GDAP relationships
+
+You can now set up granular delegated admin privileges (GDAP) for any customer tenant&mdash;regardless of which delegated relationship has already been set up&mdash;without the need for extra steps after a GDAP relationship is activated. Assign a GDAP template to any customer tenant in Microsoft 365 Lighthouse and, once the customer approves the relationship, the security groups and support roles are automatically applied. There's no need to re-run GDAP Setup or take extra steps after a relationship is activated to apply all GDAP template settings.
+
+To assign a GDAP template, go to the **Home** page of Lighthouse and select **Set up GDAP** on the **GDAP Setup** card.
+
+[Go to GDAP Setup now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/SetupGdap.ReactView)
+
+To learn more, see [Set up GDAP for your customers in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md).
+
+## September 2023
+
+### Windows event logs
+
+The **Windows event logs** page in Microsoft 365 Lighthouse uses artificial intelligence (AI) to generate suggestions for mitigating issues found in Windows event logs. The "Collect Windows event logs" baseline enables collection of managed device event logs. After records have been ingested, you can view them by selecting **Devices** > **Windows event logs** in the left navigation pane in Lighthouse. To see additional details, select any log entry.
+
+[Go to the Windows event logs page now](https://lighthouse.microsoft.com/view/Microsoft_Intune_MTM/WindowsEventLogs.ReactView)
+
+## August 2023
+
+### Microsoft Secure Score
+
+Microsoft Secure Score, which is a representation of an organization's security posture, is now integrated into Microsoft 365 Lighthouse. Lighthouse provides an aggregate view of the Secure Score across all your managed tenants, as well as Secure Score details for each individual tenant. You can access Secure Score via a new card on the **Home** page or by selecting a tenant on the **Tenants** page. Once you select a tenant, select the **Scores** tab to see historical Secure Score data for the tenant.
+
+To learn more, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
+
+### Alerts in Microsoft 365 Lighthouse
+
+Microsoft 365 Lighthouse now provides a consolidated view of prioritized alerts so you can quickly view the top alerts you should act on across your managed tenants. You can also configure alert rules based on the data within Lighthouse, which allows you to prioritize items that need immediate attention.
+
+Lighthouse also now supports the ability to configure customized push-alerts to allow integration with your existing ticketing and support systems.
+
+To access this functionality, in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Alerts**.
+
+To learn more, see [Overview of the Alerts page in Microsoft 365 Lighthouse](m365-lighthouse-alerts-overview.md).
+
+## July 2023
+
+### Sales Advisor is now part of Microsoft 365 Lighthouse
+
+Sales Advisor, formerly known as Project Orland in Partner Center Insights, is now integrated into Microsoft 365 Lighthouse.
+
+Sales Advisor helps you harness the power of AI-driven insights to fuel business growth and deliver scalable managed services to your customers. With Sales Advisor, you can discover proactive, actionable, and personalized recommendations for acquiring new customers, boosting customer retention, and expanding your business with premium offers.
+
+To view Sales Advisor in Lighthouse, in the left navigation pane, select **Sales Advisor** > **Opportunities**. To learn more, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).
+
+## June 2023
+
+### Deployment task for managing Windows updates
+
+You can now deploy Windows update deployment policies to ensure customer tenant devices have the latest security patches, bug fixes, and performance improvements. You'll also gain insight into which tenants are missing the Windows update deployment policies, which tenants are in the process of implementing the policies, and which ones have successfully implemented the policies.
+
+To learn more, see [Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md).
+
+### Access to admin centers from Lighthouse
+
+We've added admin center links to Microsoft 365 Lighthouse so you can more efficiently manage your customers. The admin center links let you to go directly from Lighthouse to the applicable admin center for the selected customer tenant.
+
+You can access the admin center links from the **Tenants** page or by using the **Tenants** filter that's available throughout Lighthouse. On the **Tenants** page, select the three dots (more actions) next to the customer tenant whose services you want to manage, and then select **Manage services** to open the list of admin center links. To use the **Tenants** filter, open the filter, search for the customer tenant whose services you want to manage, and then select the **>** symbol next to the tenant name to open the list of admin center links. 
+
+To learn more, see [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
+
+### "What's new" is now customized for your tenant
+
+Since new features are rolled out gradually across Microsoft 365 Lighthouse partners, we've changed our "What's new" notifications to let you know when new features are available in your partner tenant.
+
+To see which new features are available in your partner tenant, go to the **Home** page of Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+For a complete list of the latest features in Lighthouse, which may or may not yet be available in your partner tenant, refer to the list in this article.
+
+### Risky users for all tenants
+
+The **Risky users** page has been updated to show risky user information for all your onboarded customer tenants, even if the customer tenants don't have Azure Active Directory Premium P1 or above. For example, if a tenant only has a license for Microsoft Defender for Business or Windows 365 Business, you'll still be able to view the user accounts that have been flagged for risky behavior in that tenant.
+
+To see this updated functionality, in the left navigation pane in Microsoft 365 Lighthouse, select **Users** > **Risky users**. 
+
+[Go to the Risky users page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/RiskyUsers.ReactView) 
+
+To learn more, see [View and manage risky users in Microsoft 365 Lighthouse](m365-lighthouse-view-manage-risky-users.md).
+
+### Detailed user metrics
+
+You can now view detailed metrics of all your managed user accounts by going to **Users** > **Account management** > **User metrics**. You can see how many users, licensed users, guest users, Global Administrators, inactive users, and unblocked shared mailboxes you have across your customer tenants. This data can help you more efficiently and more effectively manage user accounts to maintain the health of your customer tenants.
+
+From the **User metrics** page, you can also quickly access the Microsoft 365 admin center, where you can view comprehensive user information and take additional actions.
+
+To learn more, see [Overview of the Users page in Microsoft 365 Lighthouse](m365-lighthouse-users-page-overview.md).
 
 ## May 2023
 
@@ -357,7 +469,9 @@ These insights can help inform your customer engagements and deliver more value 
 
 For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 services usage section](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
 
-### Exchange Online Protection and Microsoft 365 Defender for Office 365 default baseline step
+<a name='exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step'></a>
+
+### Exchange Online Protection and Microsoft Defender XDR for Office 365 default baseline step
 
 We've added a new step to the default baseline to include guidance for enabling Security Policies for Exchange Online Protection (EOP) and Microsoft Defender for Office 365 (MDO). EOP and MDO help protect users from spam, phishing, and malware emails by sending the emails to the user's quarantine or junk mail folder (coming soon). The deployment plan guides you in setting up EOP and MDO, further expanding your security stance during your next customer tenant deployment plan review.
 
@@ -377,7 +491,7 @@ We've added the capability to assign baseline configurations to specific Azure A
 
 ### Improvements to Risky users page
 
-You can now easily view and understand the reasons for a user's risk from within Microsoft 365 Lighthouse. In the left navigation pane of Microsoft 365 Lighthouse, select **Users**, and then select the **Risky users** tab. Select **View risk detections** in the **Details** column for any user. From here, you can review the details of the risk and then select **Confirm user compromised** or **Dismiss user risk**. You can also confirm or dismiss a risk for multiple users at the same time from the **Risky users** page. The ability to dismiss a user's risk can be useful when password reset isn't an option or if you believe the affected user is no longer at risk.
+You can now easily view and understand the reasons for a user's risk from within Microsoft 365 Lighthouse. In the left navigation pane of Microsoft 365 Lighthouse, select **Users**, and then select the **Risky users** tab. Select **View risk detections** in the **Details** column for any user. From here, you can review the details of the risk and then select **Confirm user compromised** or **Dismiss user risk**. You can also confirm or dismiss a risk for multiple users at the same time from the **Risky users** page. The ability to dismiss a user's risk can be useful when self-service password reset (SSPR) isn't an option or if you believe the affected user is no longer at risk.
 
 ### Capability to provide feedback on Microsoft 365 Lighthouse
 

@@ -2,11 +2,11 @@
 title: Manage contracts using a Microsoft 365 solution
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 audience: admin
 ms.topic: conceptual
-ms.date: 10/28/2022
+ms.date: 12/15/2023
 ms.service: microsoft-syntex
 ms.collection:
 - m365solution-managecontracts

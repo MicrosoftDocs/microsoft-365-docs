@@ -2,7 +2,7 @@
 title: Onboarding using Microsoft Intune
 description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Intune
 keywords: onboarding, configuration, deploy, deployment, endpoint manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft intune
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,24 +18,24 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Onboarding using Microsoft Intune
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This article is part of the Deployment guide and acts as an example onboarding method.
+This article acts as an example onboarding method.
 
 In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the cloud-native architecture.
 
@@ -54,7 +54,7 @@ This topic guides users in:
 This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Intune:
 
 - [Identifying target devices or users](#identify-target-devices-or-users)
-  - Creating an Azure Active Directory group (User or Device)
+  - Creating a Microsoft Entra group (User or Device)
 - [Creating a Configuration Profile](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
   - In Microsoft Intune, we'll guide you in creating a separate policy for each capability.
 
@@ -63,7 +63,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 Here are the links you'll need for the rest of the process:
 
 - [Intune admin center](https://aka.ms/memac)
-- [Microsoft 365 Defender](https://security.microsoft.com)
+- [Microsoft Defender XDR](https://security.microsoft.com)
 - [Intune Security baselines](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 For more information about Microsoft Intune, go to [Microsoft Intune securely manages identities, manages apps, and manages devices](/mem/intune/fundamentals/what-is-intune).
@@ -75,7 +75,7 @@ For more information about Microsoft Intune, go to [Microsoft Intune securely ma
 In this section, we will create a test group to assign your configurations on.
 
 > [!NOTE]
-> Intune uses Azure Active Directory (Azure AD) groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs.
+> Intune uses Microsoft Entra groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs.
 >
 > For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
 
@@ -123,12 +123,12 @@ Then you will continue by creating several different types of endpoint security 
 
 1. Open the Intune admin center.
 
-2. Navigate to **Endpoint security > Endpoint detection and response**. Click on **Create Profile**.
+2. Navigate to **Endpoint security > Endpoint detection and response**. Click on **Create Policy**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/58dcd48811147feb4ddc17212b7fe840.png" alt-text="The Microsoft Intune admin center4" lightbox="images/58dcd48811147feb4ddc17212b7fe840.png":::
 
-3. Under **Platform, select Windows 10 and Later, Profile - Endpoint detection
+3. Under **Platform, select Windows 10, Windows 11, and Windows Server, Profile - Endpoint detection
     and response > Create**.
 
 4. Enter a name and description, then select  **Next**.
@@ -359,10 +359,10 @@ To confirm that the configuration policy has been applied to your test device, f
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. After the services are running on the device, the device appears in Microsoft 365 Defender portal.
+3. After the services are running on the device, the device appears in Microsoft Defender portal.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Microsoft 365 Defender portal.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Image of Microsoft Defender portal.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### Confirm next-generation protection
 
@@ -417,3 +417,4 @@ To confirm that the configuration policy has been applied to your test device, f
 4. This should respond with a 1 as shown below.
 
    :::image type="content" source="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="The command line-4" lightbox="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -163,7 +163,7 @@ For outbound traffic, the people access Microsoft 365 in one of three ways:
   
 1. Through a meet-me location in North America for the people in California.
 
-2. Through a meet-me location in Hong Kong for the people in Hong Kong.
+2. Through a meet-me location in Hong Kong Special Administrative Region for the people in Hong Kong SAR.
 
 3. Through the internet in Bangladesh where there are fewer people and no ExpressRoute circuit provisioned.
 
@@ -173,7 +173,7 @@ Similarly, the inbound network traffic from Microsoft 365 returns in one of thre
   
 1. Through a meet-me location in North America for the people in California.
 
-2. Through a meet-me location in Hong Kong for the people in Hong Kong.
+2. Through a meet-me location in Hong Kong Special Administrative Region for the people in Hong Kong SAR.
 
 3. Through the internet in Bangladesh where there are fewer people and no ExpressRoute circuit provisioned.
 
@@ -661,7 +661,7 @@ Asymmetric routing is the most common implementation problem. Here are some comm
 ## Deploying ExpressRoute connectivity through your network
 <a name="testing"> </a>
 
-Stage your deployment to one segment of the network at a time, progressively rolling out the connectivity to different parts of the network with a plan to roll back for each new network segment. If your deployment is aligned with an Microsoft 365 deployment, deploy to your Microsoft 365 pilot users first and extend from there.
+Stage your deployment to one segment of the network at a time, progressively rolling out the connectivity to different parts of the network with a plan to roll back for each new network segment. If your deployment is aligned with a Microsoft 365 deployment, deploy to your Microsoft 365 pilot users first and extend from there.
   
 First for your test and then for production:
   

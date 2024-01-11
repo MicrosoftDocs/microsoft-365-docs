@@ -1,12 +1,9 @@
 ---
-title: Deploy and manage using Intune
+title: Deploy and manage printer protection using Intune
 description: Use Intune OMA-URI and Intune user interface to deploy and manage on printer protection.
-ms.service: microsoft-365-security
-ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: v-nsatapathy
+ms.service: defender-endpoint
+ms.subservice: asr
+ms.author: dansimp
 author: nimishasatapathy
 ms.localizationpriority: medium
 manager: dansimp
@@ -14,14 +11,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 09/25/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
 
-# Deploy and manage using Intune
+# Deploy and manage printer protection using Intune
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -127,7 +125,7 @@ Go to the Microsoft Intune admin center (<https://endpoint.microsoft.com/>) > **
 
    - In the **Add Row** pane, enter:
      - **Name** as **Evidence folder location**
-     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+     - **OMA-URI** as `./Device/Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
      - **Data Type** as **String**
 
        :::image type="content" source="media/device-control-oma-uri-edit-row.png" alt-text="Set location for file evidence." lightbox="media/device-control-oma-uri-edit-row.png":::
@@ -146,7 +144,7 @@ You can download the files here, [Printer Protection Samples](https://github.com
 
    1. Group 1: Any printer group
 
-      :::image type="content" source="media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png" alt-text="A screenshot showing removable storage." lightbox= "media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png":::
+      :::image type="content" source="./media/any-printer-group-xml1.png" alt-text="A screenshot of Any printer group." lightbox= "./media/any-printer-group-xml1.png":::
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Printer%20Protection%20Samples/Intune%20OMA-URI/Any%20printer%20group.xml). See step 3 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 
@@ -184,3 +182,4 @@ You can download the files here, [Printer Protection Samples](https://github.com
       :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2." lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Printer%20Protection%20Samples/Intune%20OMA-URI/Default%20Deny%20-%20custom%20policy.xml). See step 4 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

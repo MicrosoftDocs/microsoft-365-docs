@@ -24,8 +24,8 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/15/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Email analysis in investigations for Microsoft Defender for Office 365
@@ -36,7 +36,7 @@ During the automated investigation of alerts, Microsoft Defender for Office 365 
 
 The automated investigation's email analysis identifies email clusters using attributes from the original email to query for emails sent and received by your organization. This is similar to a security operations analyst would hunt for the related emails in Explorer or Advanced Hunting. Several queries are used to identify matching emails because attackers typically morph the email parameters to avoid security detection. The clustering analysis performs these checks to determine how to handle emails involved in the investigation:
 
-- The email analysis creates queries (clusters) of emails using attributes from the original email – sender values (IP address, sender domain) and contents (subject, cluster ID) in order to find emails that might be related.
+- The email analysis creates queries (clusters) of emails using attributes from the original email: sender values (IP address, sender domain) and contents (subject, cluster ID) in order to find emails that might be related.
 - If analysis of the original email's URLs and files identifies that some are malicious (that is, malware or phish), then it will also create queries or clusters of emails containing the malicious URL or file.
 - Email clustering analysis counts the threats associated with the similar emails in the cluster to determine whether the emails are malicious, suspicious, or have no clear threats. If the cluster of emails matching the query has a sufficient amount of spam, normal phish, high confidence phish or malware threats, the email cluster gets that threat type applied to it.
 - The email clustering analysis also checks the latest delivery location of the original email and emails in the email clusters to help identify if the emails potentially still need removal or have already been remediated or prevented. This analysis is important because attackers morph malicious content plus security policies and protection may vary between mailboxes. This capability leads to situations where malicious content may still sit in mailboxes, even though one or more malicious emails have been prevented or detected and removed by zero-hour auto purge (ZAP).
@@ -53,7 +53,7 @@ Here are additional enhancements to email analysis in investigations.
 During the email clustering analysis, all clustering queries will ignore security mailboxes set up as Security Operations mailboxes in the Advanced Delivery policy. Similarly, the email clustering queries will ignore phish simulation (education) messages that are configured in the Advanced Delivery policy. Neither the SecOps nor the PhishEdu exclusion values are shown in the query to keep the clustering attributes simple and easy to read. This exclusion ensures that threat intelligence and operational mailboxes (SecOps mailboxes) and the phish simulations (PhishEdu) are ignored during threat analysis and do not get removed during any remediation.
 
 > [!NOTE]
-> When opening an email cluster to view it in Explorer from the email cluster details, the PhishEdu and SecOps mailbox filters will be applied in Explorer but will not be shown. If you change the Explorer filters, dates, or refresh the query within the page – then the PhishEdu/SecOps filter exclusions will get removed and emails that match these will be shown once again. If you refresh the Explorer page using the browser refresh function, the original query filters will get re-loaded, including the PhishEdu/SecOps filters – but removing any subsequent changes you had made.
+> When opening an email cluster to view it in Explorer from the email cluster details, the PhishEdu and SecOps mailbox filters will be applied in Explorer but will not be shown. If you change the Explorer filters, dates, or refresh the query within the page, then the PhishEdu/SecOps filter exclusions will get removed and emails that match these will be shown once again. If you refresh the Explorer page using the browser refresh function, the original query filters will get re-loaded, including the PhishEdu/SecOps filters, but removing any subsequent changes you had made.
 
 ## AIR updates pending email action status
 

@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Android - Privacy information
 description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Android.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, android, privacy, diagnostic
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-android
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: android
 search.appverid: met150
 ms.date: 12/18/2020
 ---
@@ -25,15 +26,15 @@ ms.date: 12/18/2020
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Defender for Endpoint on Android collects information from your configured Android devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint for Android secure, up-to-date, performing as expected, and to support the service.
+Defender for Endpoint on Android collects information from your configured Android devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint for Android secure, up to date, performing as expected, and to support the service.
 
 For more information about data storage, see [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 
-Information is collected to help keep Defender for Endpoint for Android secure, up-to-date, performing as expected and to support the service.
+Information is collected to help keep Defender for Endpoint for Android secure, up to date, performing as expected and to support the service.
 
 For more information on most common privacy questions about Microsoft Defender for Endpoint on Android and iOS mobile devices, see [Microsoft Defender for Endpoint and your privacy on Android and iOS mobile devices](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a).
 
@@ -79,8 +80,8 @@ For Android Enterprise with a work profile - Information about Android applicati
   - Randomly generated globally unique identifier (GUID).
 
 - Tenant, Device and User information
-  - Azure Active Directory (AD) Device ID and Azure User ID: Uniquely identifies the device, User respectively at Azure Active directory.
-  - Azure tenant ID: GUID that identifies your organization within Azure Active Directory.
+  - Microsoft Entra Device ID and Azure User ID: Uniquely identifies the device, User respectively at Microsoft Entra ID.
+  - Azure tenant ID: GUID that identifies your organization within Microsoft Entra ID.
   - Microsoft Defender for Endpoint org ID: Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify whether issues are impacting a select set of enterprises and how many enterprises are impacted.
   - User Principal Name: Email ID of the user
 
@@ -106,3 +107,4 @@ Optional data includes diagnostic data and feedback data. Optional diagnostic da
 
 - The user's email address, if they choose to provide it.
 - Feedback type (smile, frown, idea) and any feedback comments submitted by the user.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

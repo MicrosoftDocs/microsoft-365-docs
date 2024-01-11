@@ -1,11 +1,11 @@
 ---
 title: Get relevant info about an entity with go hunt
 description: Learn how to use the go hunt tool on to quickly query for relevant information about an entity or event using advanced hunting.
-keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
+keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Defender XDR
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,31 +20,31 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 08/31/2023
 ---
 
 # Quickly hunt for entity or event information with go hunt
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.
 
-The *go hunt* action is available in various sections of Microsoft 365 Defender. This action is available to view once event or entity details are displayed. For example, you can use the *go hunt* option from the following sections:
+The *go hunt* action is available in various sections of Microsoft Defender XDR. This action is available to view once event or entity details are displayed. For example, you can use the *go hunt* option from the following sections:
 
 - In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information and the various actions you could take on that entity. In the example below, a mailbox is selected, showing details about the mailbox and the option to hunt for more information about the mailbox.
 
-    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="The Mailboxes page with the Go hunt option in the Microsoft 365 Defender portal " lightbox="../../media/go-hunt-1-incident.png":::
+    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="The Mailboxes page with the Go hunt option in the Microsoft Defender portal " lightbox="../../media/go-hunt-1-incident.png":::
 
 - In the incident page, you can also access a list of entities under the **Evidence** tab. Selecting one of those entities provides an option to quickly hunt for information about that entity.
 
-    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="The Go hunt option for a piece of evidence in the Incident page in Microsoft 365 Defender portal" lightbox="../../media/go-hunt-2-entity.png":::
+    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="The Go hunt option for a piece of evidence in the Incident page in Microsoft Defender portal" lightbox="../../media/go-hunt-2-entity.png":::
 
 - When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for other relevant events in advanced hunting.
 
-    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="The Hunt for related events option on an event's page in the Timelines tab in Microsoft 365 Defender portal" lightbox="../../media/go-hunt-3-event.png":::
+    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="The Hunt for related events option on an event's page in the Timelines tab in Microsoft Defender portal" lightbox="../../media/go-hunt-3-event.png":::
 
 Selecting **Go hunt** or **Hunt for related events** passes different queries, depending on whether you've selected an entity or an event.
 
@@ -73,13 +73,14 @@ and DeviceName == deviceName
 
 You can use the *go hunt* option after selecting any of these entity types:
 
-- Files
-- Emails
+- Devices
 - Email clusters
+- Emails
+- Files
+- Groups
+- IP addresses
 - Mailboxes
 - Users
-- Devices
-- IP addresses
 - URLs
 
 ## Query for event information
@@ -111,7 +112,7 @@ In addition to modifying the query to get more relevant results, you can also:
 - [Create a custom detection rule](custom-detection-rules.md)
 
 > [!NOTE]
-> Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
+> Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft Defender XDR](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft Defender XDR by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 
@@ -119,3 +120,4 @@ In addition to modifying the query to get more relevant results, you can also:
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Work with query results](advanced-hunting-query-results.md)
 - [Custom detection rules](custom-detection-rules.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

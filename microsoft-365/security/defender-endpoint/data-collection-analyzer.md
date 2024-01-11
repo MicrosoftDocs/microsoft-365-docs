@@ -2,7 +2,7 @@
 title:  Data collection for advanced troubleshooting on Windows
 description: Learn how to use the client analyzer to collect data for complex troubleshooting scenarios
 keywords: analzyer, collect data, troubleshooting mdeclientanalyzer, advanced troubleshooting
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,8 +16,9 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 03/23/2021
 ---
@@ -91,3 +92,4 @@ The analyzer and all the above scenario flags can be initiated remotely by runni
 >   - **-m** \# - The number of minutes to run (5 minutes in the above example)
 >   
 >  - When using MDEClientAnalyzer.cmd the script checks for privileges using "net session" which requires the service "Server" to be running. If it is not, you will get the error message _Script is running with insufficient privileges_. Run it with administrator privileges if ECHO is off.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

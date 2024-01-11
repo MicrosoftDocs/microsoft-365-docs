@@ -7,11 +7,10 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 03/23/2023
-ms.reviewer: efratka, jomaun
+ms.reviewer: efratka, nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -21,7 +20,7 @@ ms.collection:
 
 # Reports in Microsoft Defender for Business
 
-Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). These reports enable your security team to view information about detected threats, device status, and more.
+Several reports are available in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). These reports enable your security team to view information about detected threats, device status, and more.
 
 This article describes these reports, how you can use them, and how to find them.
 
@@ -54,7 +53,7 @@ The security report provides information about your company's identities, device
 To access this report, in the navigation pane, choose **Reports** > **General** > **Security report**. 
 
 > [!TIP]
-> You can view similar information on the home page of your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+> You can view similar information on the home page of your Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
 ## Threat protection report
 
@@ -151,3 +150,4 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 - [Get started using Defender for Business](mdb-get-started.md)
 - [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
 - [Manage devices in Defender for Business](mdb-manage-devices.md)
+

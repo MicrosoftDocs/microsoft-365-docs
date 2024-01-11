@@ -38,6 +38,10 @@
       href: m365-lighthouse-deployment-insights-overview.md
     - name: View task details
       href: m365-lighthouse-view-task-details.md
+    - name: Assign a baseline
+      href: m365-lighthouse-assign-a-baseline.md    
+    - name: Create a baseline
+      href: m365-lighthouse-create-a-baseline.md
     - name: Deploy a task manually
       href: m365-lighthouse-deploy-task-manually.md
     - name: Deploy a task automatically
@@ -46,13 +50,19 @@
       href: m365-lighthouse-dismiss-task.md
     - name: Reinstate a task
       href: m365-lighthouse-reinstate-task.md
-    - name: Manage tenants using deployment insights
+    - name: Manage tenants by using deployment insights
       href: m365-lighthouse-manage-tenants-using-deployment-insights.md
+- name: Manage alerts
+  items: 
+    - name: Overview of the Alerts page
+      href: m365-lighthouse-alerts-overview.md
+    - name: Create and manage alert rules
+      href: m365-lighthouse-create-manage-alert-rules.md
 - name: Manage tenants
   items: 
     - name: Overview of the Tenants page
       href: m365-lighthouse-tenants-page-overview.md
-    - name: View your Azure AD roles across tenants
+    - name: View your Microsoft Entra roles across tenants
       href: m365-lighthouse-view-your-roles.md
     - name: Manage your tenant list
       href: m365-lighthouse-manage-tenant-list.md
@@ -62,6 +72,8 @@
   items:
     - name: Overview of the Users page
       href: m365-lighthouse-users-page-overview.md
+    - name: Overview of the Multifactor authentication page
+      href: m365-lighthouse-mfa-overview.md
     - name: Block user sign-in
       href: m365-lighthouse-block-user-signin.md
     - name: Block sign-in for shared mailbox accounts
@@ -79,15 +91,15 @@
     - name: View and manage risky users
       href: m365-lighthouse-view-manage-risky-users.md
 - name: Manage devices
-  items: 
+  items:
+    - name: Overview of the Device health page
+      href: m365-lighthouse-device-health-overview.md
     - name: Overview of the Device compliance page
       href: m365-lighthouse-device-compliance-page-overview.md
     - name: Compare device compliance policy settings
       href: m365-lighthouse-compare-compliance-policies.md
     - name: Overview of the Windows 365 (Cloud PCs) page
       href: m365-lighthouse-win365-page-overview.md
-    - name: Overview of the Device health page
-      href: m365-lighthouse-device-health-overview.md
     - name: Reprovision a Windows 365 Cloud PC
       href: m365-lighthouse-reprovision-cloudpc.md
     - name: Change a Windows 365 Cloud PC account type
@@ -104,10 +116,20 @@
       href: m365-lighthouse-device-security-overview.md
     - name: Overview of the Vulnerability management page
       href: m365-lighthouse-vulnerability-management-page-overview.md
-    - name: Overview of quarantined messages
+    - name: Overview of the Quarantined messages page
       href: m365-lighthouse-quarantine-messages-overview.md
     - name: Overview of the Apps page
       href: m365-lighthouse-apps-page-overview.md
+- name: Manage opportunities with Sales Advisor
+  items:
+    - name: Overview of Sales Advisor
+      href: m365-lighthouse-sales-advisor-overview.md
+    - name: Get access to Sales Advisor
+      href: m365-lighthouse-get-access-to-sales-advisor.md
+    - name: Understanding opportunities and data
+      href: m365-lighthouse-understanding-opportunities-and-data.md
+    - name: View opportunities in Sales Advisor
+      href: m365-lighthouse-view-opportunities.md
 - name: Get help and support
   items: 
     - name: Get help and support
@@ -118,3 +140,7 @@
       href: m365-lighthouse-troubleshoot.md
     - name: Frequently asked questions (FAQs)
       href: m365-lighthouse-faq.yml
+- name: Privacy and compliance
+  items:
+    - name: Data collection for Microsoft 365 Lighthouse
+      href: m365-lighthouse-data-collection.md

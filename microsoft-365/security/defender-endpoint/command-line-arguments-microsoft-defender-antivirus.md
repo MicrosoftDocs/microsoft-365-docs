@@ -1,7 +1,7 @@
 ---
 title: Use the command line to manage Microsoft Defender Antivirus
 description: Run Microsoft Defender Antivirus scans and configure next-generation protection with a dedicated command-line utility.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -9,11 +9,12 @@ ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
 ms.date: 06/06/2023
-ms.subservice: mde
+ms.subservice: ngp
 ms.topic: how-to
 ms.collection: 
 - m365-security
 - tier3
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -97,3 +98,4 @@ The following table lists common errors that can occur while using the MpCmdRun 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 - [Configure Defender for Endpoint on Android features](android-configure.md)
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

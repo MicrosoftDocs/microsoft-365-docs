@@ -40,7 +40,7 @@ In this how-to article, you’ll also learn how to download indicators/artifacts
 
 ## Prerequisites
 
-- An Azure Active Directory or personal Microsoft account. [Login or create an account](https://signup.microsoft.com/)
+- A Microsoft Entra ID or personal Microsoft account. [Login or create an account](https://signup.microsoft.com/)
 - A Microsoft Defender Threat Intelligence (Defender TI) Premium license.
     > [!NOTE]
     > Users without a Defender TI Premium license will still be able to log into the Defender Threat Intelligence Portal and access our free Defender TI offering.
@@ -158,7 +158,7 @@ The following headers are exported as a result of downloading Resolutions, DNS, 
 | &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **Resolve**                | A record associated with the domain searched (resolving IP Address) or domain that has resolved to an IP address when an IP address is searched |
-| **Location**               | Country the IP address is hosted in |
+| **Location**               | Country/region the IP address is hosted in |
 | **Network**                | Netblock or subnet |
 | **autonomousSystemNumber** | Autonomous System Number |
 | **firstSeen**              | Date / Time when Microsoft first observed the resolution (format: mm/dd/yyyy hh:mm) |

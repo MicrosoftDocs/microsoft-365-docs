@@ -1,12 +1,8 @@
 ---
 title: Create indicators for IPs and URLs/domains
-ms.reviewer:
+ms.reviewer: thdoucet
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
-keywords: ip, url, domain, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain, IoC precedence, IoC conflict,
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -15,20 +11,21 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- -asr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: 
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 10/06/2023
 ---
 
 # Create indicators for IPs and URLs/domains
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
@@ -65,7 +62,10 @@ URL/IP allow and block requires that the Microsoft Defender for Endpoint compone
 - Windows Server 2012 R2
 - Windows Server 2019
 - Windows Server 2022
-- Android and iOS devices
+- macOS
+- Linux
+- iOS 
+- Android
 
 ### Windows Server 2016 and Windows Server 2012 R2 requirements
 
@@ -77,7 +77,7 @@ The _Antimalware client version_ must be 4.18.1906.x or later.
 
 ### Custom network indicators requirements
 
-Ensure that **Custom network indicators** is enabled in **Microsoft 365 Defender** \> **Settings** \> **Advanced features**. For more information, see [Advanced features](advanced-features.md).
+Ensure that **Custom network indicators** is enabled in **Microsoft Defender XDR** \> **Settings** \> **Advanced features**. For more information, see [Advanced features](advanced-features.md).
 
 For support of indicators on iOS, see [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
@@ -97,6 +97,18 @@ For processes other than Microsoft Edge and Internet Explorer, web protection sc
 - Encrypted URLs (FQDN only) can be blocked in third party browsers (that is, other than Internet Explorer, Edge)
 - Full URL path blocks can be applied for unencrypted URLs
 - If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
+
+## Network protection and the TCP three-way handshake
+
+With network protection, the determination of whether to allow or block access to a site is made after the completion of the [three-way handshake via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Thus, when a site is blocked by network protection, you might see an action type of `ConnectionSuccess` under `NetworkConnectionEvents` in the Microsoft Defender portal, even though the site was blocked. `NetworkConnectionEvents` are reported from the TCP layer, and not from network protection. After the three-way handshake has completed, access to the site is allowed or blocked by network protection.
+
+Here's an example of how that works:
+
+1. Suppose that a user attempts to access a website on their device. The site happens to be hosted on a dangerous domain, and it should be blocked by network protection.  
+
+2. The three-way handshake via TCP/IP commences. Before it completes, a `NetworkConnectionEvents` action is logged, and its `ActionType` is listed as `ConnectionSuccess`. However, as soon as the three-way handshake process completes, network protection blocks access to the site. All of this happens quickly. A similar process occurs with [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); it's when the three-way handshake completes that a determination is made, and access to a site is either blocked or allowed.
+
+3. In the Microsoft Defender portal, an alert is listed in the [alerts queue](alerts-queue.md). Details of that alert include both `NetworkConnectionEvents` and `AlertEvents`. You can see that the site was blocked, even though you also have a `NetworkConnectionEvents` item with the ActionType of `ConnectionSuccess`.
 
 ### Warn mode controls
 
@@ -127,18 +139,9 @@ In the case where multiple different action types are set on the same indicator 
 
 _Allow_ overrides _warn_ which overrides _block_: Allow > Warn > Block. Therefore, in the above example, Microsoft.com would be allowed.
 
-### Policy conflict handling follows the order below
+### Defender for Cloud Apps Indicators
 
-- Defender for Cloud Apps creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
-- If the IP, URL/Domain is allowed
-- If the IP, URL/Domain is not allowed
-- If the IP, URL/Domain is allowed
-- If the IP, URL/Domain is not allowed
-- If the IP, URL/Domain is allowed
-
-Threat and vulnerability management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
-
-If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure will be applied.
+If your organization has enabled integration between Defender for Endpoint and Defender for Cloud Apps, block indicators will be created in Defender for Endpoint for all unsanctioned cloud applications. If an application is put in monitor mode, warn indicators (bypassable block) will be created for the URLs associated with the application. Allow indicators cannot be created for sanctioned applications at this time. Indicators created by Defender for Cloud Apps follow the same policy conflict handling described in the previous section.
 
 ## Policy precedence
 
@@ -180,3 +183,5 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

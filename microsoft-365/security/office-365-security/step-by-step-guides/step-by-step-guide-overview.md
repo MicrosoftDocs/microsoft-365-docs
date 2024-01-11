@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Office 365 step-by-step guides and how to use them
-description: What are the step-by-step-guides for Microsoft 365 Defender for Office 365? See *only the steps needed to complete a task* and set up features. Information for use in trial subscriptions and production. Guidance designed to minimise information overload and speed up your configuration and use.
+description: What are the step-by-step-guides for Microsoft Defender XDR for Office 365? See *only the steps needed to complete a task* and set up features. Information for use in trial subscriptions and production. Guidance designed to minimise information overload and speed up your configuration and use.
 search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -30,6 +30,9 @@ Microsoft Defender for Office 365 is a powerful product with a lot of capabiliti
 These step-by-step guides help administrators configure and use Microsoft Defender for Office 365 by reducing distracting information like how a feature might work, and other details not *directly linked to completing a process*. The guides maximize on specific steps and clicks needed to do a thing, and reduce the time taken for admins to test a feature and secure an organization.
 
 ***If you learn Microsoft products best by doing***, the step-by-step guides will jumpstart configuration and testing. They are as useful for set up in a *trial subscription* as they are in *production*.
+
+> [!NOTE]
+> Try the [Defender for Office 365 setup guide](https://go.microsoft.com/fwlink/?linkid=2224785) for step-by-step instructions that are tenant-aware and customized to your organization's needs. This setup guide helps you implement anti-malware policies, anti-phishing policies, safe attachments, and more. 
 
 ## Why use Microsoft Defender for Office 365 step-by-step guides
 

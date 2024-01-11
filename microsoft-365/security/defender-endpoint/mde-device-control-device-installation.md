@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Device Installation
 description: This topic provides a walk through about Microsoft Defender for Endpoint Device Control Device Installation
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +14,9 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-asr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: asr
 search.appverid: met150
 ---
 
@@ -164,7 +165,7 @@ If you disable or don't configure this policy setting, Windows can install and u
 This policy setting allows you to prevent Windows from installing removable devices. A device is considered removable when the driver for the device to which it's connected indicates that the device is removable. For example, a Universal Serial Bus (USB) device is reported to be removable by the drivers for the USB hub to which the device is connected. By default, this policy setting takes precedence over any other policy setting that allows Windows to install a device.
 
 > [!NOTE]
-> To enable the **Allow installation of devices using drivers that match these device setup classes**, **Allow installation of devices that match any of these device IDs**, and **Allow installation of devices that match any of these device instance IDs** policy settings to supersede this policy setting for applicable devices, enable the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting. Also, the allow policy won’t take precedence if the **Block Removable Storage** option is selected in Device Control.
+> To enable the **Allow installation of devices using drivers that match these device setup classes**, **Allow installation of devices that match any of these device IDs**, and **Allow installation of devices that match any of these device instance IDs** policy settings to supersede this policy setting for applicable devices, enable the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting. Also, the allow policy won't take precedence if the **Block Removable Storage** option is selected in Device Control.
 
 If you enable this policy setting, Windows is prevented from installing removable devices and existing removable devices cannot have their drivers updated. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of removable devices from a remote desktop client to the remote desktop server.
 
@@ -255,7 +256,7 @@ See [Manage Device Installation with Group Policy (Windows 10) - Windows Client]
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
-The [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage) shows removable storage blocked by the Device Control Device Installation.
+The [Microsoft Defender portal](https://sip.security.microsoft.com/homepage) shows removable storage blocked by the Device Control Device Installation.
 
 ```kusto
 //events triggered by Device Installation policies
@@ -275,7 +276,7 @@ DeviceEvents
 
 ### How do I confirm that a device gets a deployed policy?
 
-You can use following query to get antimalware client version on the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)):
+You can use following query to get antimalware client version on the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)):
 
 ```kusto
 //check whether the Device installation policy has been deployed to the target machine, event only when modification happens
@@ -289,3 +290,4 @@ DeviceRegistryEvents
 It is not enough to enable only a single hardware ID to enable a single USB thumb-drive. Ensure that all the USB devices that precede the target one aren't blocked (allowed) as well.
 
 :::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="The Device install faq" lightbox="../../media/devicemgrscrnshot.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

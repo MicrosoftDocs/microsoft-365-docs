@@ -4,7 +4,7 @@ description: Read this article to get an overview of how to migrate your servers
 keywords: migrate server, server, 2012r2, 2016, server migration, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,13 +18,13 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 ---
 
 
 # Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Windows Server 2012 R2
@@ -54,7 +54,7 @@ To facilitate upgrades when Microsoft Endpoint Configuration Manager is not yet 
 3. Download and install [prerequisites](configure-server-endpoints.md#prerequisites) if required.
 4. Enable and update the Defender Antivirus feature on Windows Server 2016
 5. Install Microsoft Defender for Endpoint.
-6. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com).
+6. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender XDR](https://security.microsoft.com).
 
 To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md)).
 
@@ -75,7 +75,7 @@ For instructions on how to migrate using Microsoft Endpoint Configuration Manage
 2. Ensure third-party antivirus management no longer pushes antivirus agents to these machines.*
 3. Author your policies for the protection capabilities in Microsoft Defender for Endpoint and target those to the machine in the tool of your choice.
 4. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
-   a. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com).
+   a. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender XDR](https://security.microsoft.com).
 5. Apply updates.
 6. Remove your non-Microsoft antivirus software by either using the non-Microsoft antivirus console or by using Microsoft Endpoint Configuration Manager as
 appropriate. Make sure to remove passive mode configuration.*
@@ -98,7 +98,7 @@ Value: 0
 2. Create and apply policies using Group Policy, PowerShell, or a 3rd party management solution.
 3. Uninstall System Center Endpoint Protection (Windows Server 2012 R2).
 4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md).)
-5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com).
+5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender XDR](https://security.microsoft.com).
 6. Apply updates.
 
 > [!TIP]
@@ -113,3 +113,4 @@ If you're using Microsoft Defender for Cloud, you can leverage the automated upg
 ## Group Policy configuration
 
 For configuration using Group Policy, ensure you're using the latest ADMX files in your central store to access the correct Defender for Endpoint policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

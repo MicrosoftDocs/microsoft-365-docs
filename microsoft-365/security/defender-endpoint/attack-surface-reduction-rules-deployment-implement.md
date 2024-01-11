@@ -1,12 +1,12 @@
 ---
-title: Enable attack surface reduction (ASR) rules
+title: Implement attack surface reduction rules
 description: Provides guidance to implement your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
@@ -21,26 +21,27 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
+ - mde-asr
 ms.date: 12/19/2022
 search.appverid: met150
 ---
 
-# Enable attack surface reduction (ASR) rules
+# Implement attack surface reduction rules
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Implementing attack surface reduction (ASR) rules move the first test ring into an enabled, functional state.
+Implementing attack surface reduction rules move the first test ring into an enabled, functional state.
 
-> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement ASR rules" lightbox="images/asr-rules-implementation-steps.png":::
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement attack surface reduction rules" lightbox="images/asr-rules-implementation-steps.png":::
   
 
-## Step 1: Transition ASR Rules from Audit to Block
+## Step 1: Transition attack surface reduction rules from Audit to Block
 
-1. After all exclusions are determined while in audit mode, start setting some ASR rules to "block" mode, starting with the rule that has the fewest triggered events. See [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
-2. Review the reporting page in the Microsoft 365 Defender portal; see [Threat protection report in Microsoft Defender for Endpoint](threat-protection-reports.md). Also review feedback from your ASR champions.
+1. After all exclusions are determined while in audit mode, start setting some attack surface reduction rules to "block" mode, starting with the rule that has the fewest triggered events. See [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
+2. Review the reporting page in the Microsoft Defender portal; see [Threat protection report in Microsoft Defender for Endpoint](threat-protection-reports.md). Also review feedback from your champions.
 3. Refine exclusions or create new exclusions as determined necessary.
 4. Switch problematic rules back to Audit.
 
@@ -48,7 +49,7 @@ Implementing attack surface reduction (ASR) rules move the first test ring into 
   > For problematic rules (rules creating too much noise), it is better to create exclusions than to turn rules off or switching back to Audit. You will have to determine what is best for your environment.
 
   > [!TIP]
-  > When available, take advantage of the Warn mode setting in rules to limit disruptions. Enabling ASR rules in Warn mode enables you to capture triggered events and view their potential disruptions, without actually blocking end-user access. Learn more: [Warn mode for users](attack-surface-reduction.md#warn-mode-for-users).
+  > When available, take advantage of the Warn mode setting in rules to limit disruptions. Enabling attack surface reduction rules in Warn mode enables you to capture triggered events and view their potential disruptions, without actually blocking end-user access. Learn more: [Warn mode for users](attack-surface-reduction.md#warn-mode-for-users).
 
 ### How does Warn mode work?
 
@@ -56,16 +57,16 @@ Warn mode is effectively a Block instruction, but with the option for the user t
 
 ### Step 2: Expand deployment to ring n + 1
 
-When you're confident that you've correctly configured the ASR rules for ring 1, you can widen the scope of your deployment to the next ring (ring n + 1).
+When you're confident that you've correctly configured the attack surface reduction rules for ring 1, you can widen the scope of your deployment to the next ring (ring n + 1).
 
 The deployment process, steps 1 – 3,  is essentially the same for each subsequent ring:
 
 1. Test rules in Audit
-2. Review ASR-triggered audit events in the Microsoft 365 Defender portal
+2. Review attack surface reduction-triggered audit events in the Microsoft Defender portal
 3. Create exclusions
 4. Review: refine, add, or remove exclusions as necessary
 5. Set rules to "block"
-6. Review the reporting page in the Microsoft 365 Defender portal.
+6. Review the reporting page in the Microsoft Defender portal.
 7. Create exclusions.
 8. Disable problematic rules or switch them back to Audit.
 
@@ -86,7 +87,7 @@ In cases in which blocks aren't self resolved in a timely manner, customers can 
 > [!WARNING]
 > Excluding or unblocking files or folders could potentially allow unsafe files to run and infect your devices. Excluding files or folders can severely reduce the protection provided by attack surface reduction rules. Files that would have been blocked by a rule will be allowed to run, and there will be no report or event recorded.
 
-An exclusion can apply to all rules that allow exclusions or apply to specific rules using [per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-rules-per-rule-exclusions). You can specify an individual file, folder path, or the fully qualified domain name for a resource.
+An exclusion can apply to all rules that allow exclusions or apply to specific rules using [per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-per-rule-exclusions). You can specify an individual file, folder path, or the fully qualified domain name for a resource.
 
 An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service continues to trigger events until the service is stopped and restarted.
 
@@ -133,16 +134,17 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 ## Additional articles in this deployment collection
 
-[Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+[Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+[Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+[Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
+[Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
 ## See also
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

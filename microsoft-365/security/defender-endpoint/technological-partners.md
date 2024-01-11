@@ -1,14 +1,10 @@
 ---
-title: Technological partners of Microsoft 365 Defender
+title: Technological partners of Microsoft Defender XDR
 ms.reviewer:
 description: View technological partners of M365 Defender to enhance detection, investigation, and threat intelligence capabilities of the platform.
-keywords: partners, technological partner, applications, third-party, SIEM, threat intelligence, sentinel, SOAR, cross platform, m365 integrations, dns security, network protection
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: v-aljupudi
-author: alekyaj
+ms.service: defender-endpoint
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -16,16 +12,15 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
-ms.date: 09/28/2022
+ms.date: 08/03/2023
 ---
 
-# Technological partners of Microsoft 365 Defender
+# Technological partners of Microsoft Defender XDR
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Vulnerability Management
 - Microsoft Defender for Office 365
@@ -37,7 +32,7 @@ ms.date: 09/28/2022
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
-Microsoft 365 Defender supports third-party integrations to help secure users with effective threat protection, detection, investigation, and response, in various security fields of endpoints, vulnerability management, email, identities, cloud apps.
+Microsoft Defender XDR supports third-party integrations to help secure users with effective threat protection, detection, investigation, and response, in various security fields of endpoints, vulnerability management, email, identities, cloud apps.
 
 The following are the solution's categories:
 
@@ -108,14 +103,13 @@ The following are the solution's categories:
 |[HYAS Protect](https://www.hyas.com/hyas-protect)|HYAS|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect MDE endpoints from cyber attacks.|
 |[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing and Privacy Protection and Simulation.|
 |[Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201965)|Skybox security|Global security posture management leader with solutions for vulnerability management and network security policy management.|
-|[Open NDR](https://go.microsoft.com/fwlink/?linkid=2201964)|Corelight|Augment device inventory in Microsoft 365 Defender with network evidence for complete visibility.|
 
 ### Identity security
 
 |Product name|Vendor|Description|
 |---|---|---|
 |[Illusive Platform](https://go.microsoft.com/fwlink/?linkid=2201778)|Illusive Networks|Illusive continuously discovers and automatically remediates identity vulnerabilities, and it detects attacks using deceptive controls.|
-|[Silverfort](https://go.microsoft.com/fwlink/?linkid=2201873)|Silverfort|Enforces Azure AD Conditional Access and MFA across any user system and environment on-prem and in the cloud.|
+|[Silverfort](https://go.microsoft.com/fwlink/?linkid=2201873)|Silverfort|Enforces Microsoft Entra Conditional Access and MFA across any user system and environment on-prem and in the cloud.|
 
 ### Cross platform
 
@@ -164,6 +158,7 @@ The following are the solution's categories:
 |[Vulcan Cyber risk management platform](https://go.microsoft.com/fwlink/?linkid=2201770)|Vulcan Cyber|Vulcan Cyber gives you the tools to effectively manage the vulnerability and risk lifecycle for all your cyber assets, including application, cloud, and infrastructure.|
 |[Extended Security Posture Management (XSPM)](https://go.microsoft.com/fwlink/?linkid=2201771)|Cymulate|Cymulate's Extended Security Posture Management enables companies to challenge, assess, and optimize their cybersecurity posture.|
 |[Illusive Platform](https://go.microsoft.com/fwlink/?linkid=2201778)|Illusive Networks|Illusive continuously discovers and automatically remediates identity vulnerabilities, and it detects attacks using deceptive controls.|
+|[ServiceNow vulnerability response](https://go.microsoft.com/fwlink/?linkid=2243580)| ServiceNow |  Use the Microsoft Threat and vulnerability management integration to import third-party scanner data about your assets and vulnerabilities. You can then view reports about vulnerabilities and vulnerable items on the Vulnerability Response dashboards.
 
 ### Secure service edge
 
@@ -175,7 +170,7 @@ The following are the solution's categories:
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2201966)|Morphisec|Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into Microsoft 365 Defender dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information.|
+|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2201966)|Morphisec|Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into Microsoft Defender XDR dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information.|
 |[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=2201875)|Nextron systems|Provides on-demand live forensics scans using a signature base focused on persistent threats.|
 
 ## Recommended content
@@ -184,3 +179,4 @@ The following are the solution's categories:
 
 - [Connect apps to get visibility and control|Microsoft Docs](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
 - [Partner applications in Microsoft Defender for Endpoint|Microsoft Docs](partner-applications.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

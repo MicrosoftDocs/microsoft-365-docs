@@ -1,22 +1,19 @@
 ---
 title: Contextual file and folder exclusions
 description: Describes the contextual file and folder exclusions capability for Microsoft Defender Antivirus on Windows. This capability allows you to be more specific when you define under which context Microsoft Defender Antivirus shouldn't scan a file or folder, by applying restrictions
-keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 author: Dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/25/2022
+ms.date: 12/07/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ---
 
@@ -31,7 +28,7 @@ This article/section describes the contextual file and folder exclusions capabil
 
 ## Overview
 
-Exclusions are primarily intended to mitigate affects on performance. They come at the penalty of reduced protection value. These restrictions allow you to limit this protection reduction by specifying circumstances under which the exclusion should apply. Contextual exclusions aren't suitable for addressing false positives in a reliable way. If you encounter a false positive, you can submit files for analysis through the [Microsoft 365 Defender](https://security.microsoft.com/) portal (subscription required) or through the [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) website. For a temporary suppression method, consider creating a custom _allow_ indicator in [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/indicator-file).
+Exclusions are primarily intended to mitigate affects on performance. They come at the penalty of reduced protection value. These restrictions allow you to limit this protection reduction by specifying circumstances under which the exclusion should apply. Contextual exclusions aren't suitable for addressing false positives in a reliable way. If you encounter a false positive, you can submit files for analysis through the [Microsoft Defender XDR](https://security.microsoft.com/) portal (subscription required) or through the [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) website. For a temporary suppression method, consider creating a custom _allow_ indicator in [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/indicator-file).
 
 There are four restrictions you can apply to limit the applicability of an exclusion:
 
@@ -83,6 +80,10 @@ The following string excludes "c:\documents\design.doc" only if it's scanned (on
 
 `c:\documents\design.doc\:{Process:"winword.exe"}`
 
+File and folder paths may contain wildcards, as in the following example:
+
+`c:\*\*.doc\:{PathType:file,ScanTrigger:OnDemand}`
+
 The process image path may contain wildcards, as in the following example:
 
 `c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
@@ -95,11 +96,14 @@ You can restrict exclusions to only apply if the target is a file or a folder by
 
 If you don't specify any other options, the file/folder is excluded from all types of scans, _and_ the exclusion applies regardless of whether the target is a file or a folder. For more information about customizing exclusions to only apply to a specific scan type, see [Scan type restriction](#scan-type-restriction).
 
+> [!NOTE]  
+> Wildcards are supported in file/folder exclusions.
+
 #### Folders
 
 To ensure an exclusion only applies if the target is a folder, not a file you can use the **PathType:folder** restriction. For example:
 
-`C:\documents\:{PathType:folder}`
+`C:\documents\*\:{PathType:folder}`
 
 #### Files
 
@@ -107,7 +111,7 @@ To make sure an exclusion only applies if the target is a file, not a folder you
 
 Example:
 
-`C:\documents\database.mdb\:{PathType:file}`
+`C:\documents\*.mdb\:{PathType:file}`
 
 ### Scan type restriction
 
@@ -145,19 +149,19 @@ To exclude a file or folder and its contents from being scanned only when the fi
 
 ### Process restriction
 
-This restriction allows you to define that an exclusion should only apply when a file or folder is being accessed by a specific process. A common scenario is when you want to avoid excluding the process as that avoidance would cause Defender Antivirus to ignore other operations by that process.
+This restriction allows you to define that an exclusion should only apply when a file or folder is being accessed by a specific process. A common scenario is when you want to avoid excluding the process as that avoidance would cause Defender Antivirus to ignore other operations by that process. Wildcards are supported in the process name/path.
 
 > [!NOTE]  
 >
-> Using a large amount of process exclusion restrictions on a machine may adversely affect performance.  
-> In addition, because you restricted the exclusion to a certain process or processes, other active processes (such as indexing, backup, updates) can still trigger file scans.
+> Using a large amount of process exclusion restrictions on a machine can adversely affect performance. In addition, if an exclusion is restricted to a certain process or processes, other active processes (such as indexing, backup, updates) can still trigger file scans.
 
-To exclude a file or folder only when accessed by a specific process, create a normal file or folder exclusion and add the process to restrict the exclusion to:  
+To exclude a file or folder only when accessed by a specific process, create a normal file or folder exclusion and add the process to restrict the exclusion to. For example:  
 
-`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe"}`
+`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe", Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
 
 ### How to configure
 
 After constructing your desired contextual exclusions, you can use your existing management tool to configure file and folder exclusions using the string you created.
 
 See: [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

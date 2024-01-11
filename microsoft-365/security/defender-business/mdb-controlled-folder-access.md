@@ -4,10 +4,9 @@ description: Get an overview of attack surface reduction capabilities in Microso
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 05/04/2023
+ms.date: 08/21/2023
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security
@@ -20,14 +19,11 @@ audience: Admin
 
 # Set up or edit your controlled folder access policy in Microsoft Defender for Business
 
-Controlled folder access allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. You can set up or edit your controlled folder access policy in Microsoft Intune. 
-
-> [!NOTE]
-> Intune is not included in the standalone version of Defender for Business, but it can be added on.
+Controlled folder access allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. You can set up or edit your controlled folder access policy using Microsoft Intune. 
 
 ## Set up controlled folder access
 
-1. As a global administrator, in the Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
+1. As a global administrator, in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** > **Attack surface reduction**.
 
 2. Select an existing policy, or choose **Create policy** to create a new policy.
 
@@ -51,4 +47,5 @@ To learn more about controlled folder access, see [Protect important folders wit
 ## Next steps
 
 - [Enable your attack surface reduction rules](mdb-asr.md)
-- [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
+- [Review settings for advanced features and the Microsoft Defender portal](mdb-portal-advanced-feature-settings.md).
+

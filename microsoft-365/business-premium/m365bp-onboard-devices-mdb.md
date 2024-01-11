@@ -7,9 +7,8 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 03/23/2023
+ms.service: microsoft-365-business
+ms.date: 07/19/2023
 ms.localizationpriority: medium
 ms.reviewer: efratka
 f1.keywords: NOCSH 
@@ -27,7 +26,7 @@ To onboard devices to Defender for Business, you can choose from several options
 
 - [Automatic onboarding for Windows devices that are already enrolled in Microsoft Intune](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
 - [A local script to onboard Windows and Mac devices to Defender for Business](#use-a-local-script-to-onboard-windows-and-mac-devices-to-defender-for-business) (for devices that are not already enrolled in Intune)
-- [Onboard mobile devices using the Microsoft Defender app](#onboard-mobile-devices-using-the-microsoft-defender-app) (Mobile threat defense capabilities are currently in preview!)
+- [Onboard mobile devices using the Microsoft Defender app](#onboard-mobile-devices-using-the-microsoft-defender-app) (Mobile threat defense capabilities are now generally available!)
 - [Intune for enrolling new devices, including mobile devices](#use-intune-to-enroll-devices) (Windows, Mac, iOS, and Android) and then apply Defender for Business policies to those devices
 
 This article also includes:
@@ -57,13 +56,13 @@ To learn more about automatic onboarding, see [Use the wizard to set up Microsof
 
 ## Use a local script to onboard Windows and Mac devices to Defender for Business
 
-You can use a local script to onboard Windows and Mac devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Intune (if it isn't already enrolled), and then onboards the device to Defender for Business. You can onboard up to 10 devices at a time using the local script.
+You can use a local script to onboard Windows and Mac devices. When you run the onboarding script on a device, it creates a trust with Microsoft Entra ID (if that trust doesn't already exist), enrolls the device in Intune (if it isn't already enrolled), and then onboards the device to Defender for Business. You can onboard up to 10 devices at a time using the local script.
 
 See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md) for detailed instructions.
 
 ## Onboard mobile devices using the Microsoft Defender app
 
-If you have opted in to receive preview features, you can now onboard Android and iOS devices using the Microsoft Defender app. With [mobile threat defense capabilities in Defender for Business](../security/defender-business/mdb-mtd.md), users download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps. 
+You can now onboard Android and iOS devices using the Microsoft Defender app. With [mobile threat defense capabilities in Defender for Business](../security/defender-business/mdb-mtd.md), users download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps. 
 
 For detailed instructions, see the **Mobile devices** tab in [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
 
@@ -95,7 +94,7 @@ After you've onboarded Windows devices to Defender for Business, you can run a d
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-After the command has run, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about ten minutes.
+After the command has run, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about ten minutes.
 
 ## Onboard devices gradually
 
@@ -103,7 +102,7 @@ If you prefer to onboard devices in phases, which we call *gradual device onboar
 
 1. Identify a set of devices to onboard.
 
-2. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+2. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
 3. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
 
@@ -136,6 +135,6 @@ If you want to offboard a device, use one of the following procedures:
 > [!IMPORTANT]
 > Offboarding a device causes the devices to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
 
-## Next objective
+## Next step
 
 [Set up protection for your Windows devices](m365bp-protection-settings-for-windows-10-devices.md).

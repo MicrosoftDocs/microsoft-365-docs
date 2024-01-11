@@ -1,8 +1,8 @@
 ---
 title: Help your clients and customers use virtual appointments scheduled with the Bookings app in Teams
-author: daisyfell
-ms.author: daisyfeller
-manager: pamgreen
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
 audience: ITPro
 ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 
@@ -19,7 +19,7 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier1
+  - m365-virtual-appointments 
 ms.reviewer: 
 description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments that have been scheduled in Bookings with your organization. 
 appliesto: 

@@ -1,6 +1,6 @@
 ---
 title: "Exchange 2007 end of support roadmap"
-ms.author: v-aiyengar
+ms.author: serdars
 author: dstrome
 manager: serdars
 ms.date: 1/31/2018
@@ -180,9 +180,9 @@ If you're thinking about doing a full hybrid migration, here are things to consi
 
 - Microsoft 365 will need to connect to the "hybrid server" using Outlook Anywhere over TCP port 443.
 
-- You'll need to set up directory synchronization using Azure Active Directory (Azure AD) Connect between your on-premises Active Directory servers and Microsoft 365.
+- You'll need to set up directory synchronization using Microsoft Entra Connect between your on-premises Active Directory servers and Microsoft 365.
 
-- Users will be able to sign in to their Microsoft 365 mailbox using the same user name and password as when they sign in to the local network. (This functionality requires Azure AD Connect with password synchronization and/or Active Directory Federation Services.)
+- Users will be able to sign in to their Microsoft 365 mailbox using the same user name and password as when they sign in to the local network. (This functionality requires Microsoft Entra Connect with password synchronization and/or Active Directory Federation Services.)
 
 - You'll need a Microsoft 365 license that includes Exchange Online for each user mailbox you migrate.
 
@@ -202,7 +202,7 @@ If full hybrid migration sounds right for you, see the following resources to he
 
 ### Migrate to a newer version of Exchange Server
 
-We strongly believe that you can achieve the best value and user experience by migrating to Microsoft 365. But we also understand that some organizations need to keep their email on-premises. This could be because of regulatory requirements, to guarantee data isn't stored in a datacenter located in another country, or similar. If you choose to keep your email on-premises, you can migrate your Exchange 2007 environment to Exchange 2010, Exchange 2013, or Exchange 2016.
+We strongly believe that you can achieve the best value and user experience by migrating to Microsoft 365. But we also understand that some organizations need to keep their email on-premises. This could be because of regulatory requirements, to guarantee data isn't stored in a datacenter located in another country/region, or similar. If you choose to keep your email on-premises, you can migrate your Exchange 2007 environment to Exchange 2010, Exchange 2013, or Exchange 2016.
 
 If you can't migrate to Microsoft 365, we recommend that you migrate to Exchange 2016. Exchange 2016 includes all the features of previous releases of Exchange. It also most closely matches the experience available with Microsoft 365, although some features are available only in Microsoft 365. Check out just a few of the things you've been missing:
 

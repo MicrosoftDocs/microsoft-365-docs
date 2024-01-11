@@ -7,11 +7,10 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 05/05/2023
-ms.reviewer: jomaun
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -64,11 +63,13 @@ In addition to next-generation protection and firewall policies, there are three
 
 ## View your existing policies
 
-You can view your existing policies in either Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) (if you're using Intune).
+You can view your existing policies in either Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) (if you're using Intune).
 
-## [**Microsoft 365 Defender portal**](#tab/M365D)
+<a name='microsoft-365-defender-portal'></a>
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
+## [**Microsoft Defender portal**](#tab/M365D)
+
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
 2. In the navigation pane, choose **Configuration management** > **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
@@ -88,11 +89,13 @@ You can view your existing policies in either Microsoft 365 Defender portal ([ht
 
 ## Edit an existing policy
 
-You can view your existing policies in either Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) (if you're using Intune).
+You can view your existing policies in either Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) (if you're using Intune).
 
-## [**Microsoft 365 Defender portal**](#tab/M365D)
+<a name='microsoft-365-defender-portal'></a>
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
+## [**Microsoft Defender portal**](#tab/M365D)
+
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
 2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
@@ -139,9 +142,11 @@ You can view your existing policies in either Microsoft 365 Defender portal ([ht
 
 ## Create a new policy
 
-## [**Microsoft 365 Defender portal**](#tab/M365D)
+<a name='microsoft-365-defender-portal'></a>
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
+## [**Microsoft Defender portal**](#tab/M365D)
+
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
 2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
@@ -160,7 +165,7 @@ You can view your existing policies in either Microsoft 365 Defender portal ([ht
    - Initially, you might only have your default device group, which includes the devices people in your company are using to access company data and email. You can keep and use your default device group.
    - Create a new device group to apply a policy with specific settings that are different from the default policy. 
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
-   - All device groups, including the default and custom device groups that you define, are stored in Azure Active Directory (Azure AD).
+   - All device groups, including the default and custom device groups that you define, are stored in Microsoft Entra ID.
 
    To learn more about device groups, see [Device groups](mdb-create-edit-device-groups.md).
 
@@ -204,3 +209,4 @@ You can view your existing policies in either Microsoft 365 Defender portal ([ht
 
 - [Understand policy order](mdb-policy-order.md)
 - [Set up your security policies and settings](mdb-configure-security-settings.md)
+

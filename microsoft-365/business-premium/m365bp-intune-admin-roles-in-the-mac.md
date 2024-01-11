@@ -7,8 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.date: 09/15/2022
 ms.localizationpriority: medium
 ms.collection: 
@@ -20,7 +19,7 @@ description: "The Microsoft 365 admin center lets you manage some Microsoft Intu
 
 Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to any users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. Given this, these roles are only a subset of all the roles available in the Intune admin center, which includes additional roles specific to Intune itself.
 
-Before adding specific Intune roles, roles must be assigned in Azure AD. To see these roles, sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > Tenant administration > Roles > All roles >**. You can manage the role on the following pages:
+Before adding specific Intune roles, roles must be assigned in Microsoft Entra ID. To see these roles, sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > Tenant administration > Roles > All roles >**. You can manage the role on the following pages:
 
 - Properties: The name, description, permissions, and scope tags for the role.
 - Assignments: A list of role assignments defining which users have access to which users or devices. A role can have multiple assignments, and a user can be in multiple assignments.
@@ -29,12 +28,12 @@ Before adding specific Intune roles, roles must be assigned in Azure AD. To see 
 
 Roles-based access control (RBAC) helps you manage who has access to your organization's resources and what they can do with those resources. By assigning roles to your Intune users, you can limit what they can see and change. There are both built-in and custom roles, and each role has a set of permissions that determine what users with that role can access, or change within your organization. The following information will cover both types of roles in Intune.
 
-To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
+To create, edit, or assign roles, your account must have one of the following permissions in Microsoft Entra ID:
 
 - **Global Administrator**
 - **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
 
-Find more information on [Azure Active Directory roles and RBAC](/azure/active-directory/roles/permissions-reference).
+Find more information on [Microsoft Entra roles and RBAC](/azure/active-directory/roles/permissions-reference).
 
 ## Microsoft Intune built-in roles
 
@@ -57,7 +56,7 @@ Here are the built-in roles that you can assign:
 
 You can create custom roles in Intune that include any permissions required for a specific job function. For example, if an IT department group manages applications, policies, and configuration profiles, you can add all those permissions together in one custom role. After creating a custom role, you can assign it to any users that need those permissions.
 
-As with built-in roles, in order to create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
+As with built-in roles, in order to create, edit, or assign roles, your account must have one of the following permissions in Microsoft Entra ID:
 
 - **Global Administrator**
 - **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
@@ -89,30 +88,30 @@ To copy a role:
 
 ## How to assign a role
 
-You can assign a built-in or custom role to an Intune user. To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
+You can assign a built-in or custom role to an Intune user. To create, edit, or assign roles, your account must have one of the following permissions in Microsoft Entra ID:
 
 - **Global Administrator**
 - **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
 
 1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles**.
 
-1. Choose the built-in role you want to assign > Assignments > + Assign.
+2. Choose the built-in role you want to assign > Assignments > + Assign.
 
-1. On the **Basics** page, enter an Assignment name and optional Assignment description, and then choose **Next**.
+3. On the **Basics** page, enter an Assignment name and optional Assignment description, and then choose **Next**.
 
-1. On the **Admin Groups** page, select the group that contains the user you want to give the permissions to. Choose **Next**.
+4. On the **Admin Groups** page, select the group that contains the user you want to give the permissions to. Choose **Next**.
 
-1. On the **Scope (Groups)** page, choose a group containing the users and devices that the member above will be allowed to manage. You also have the option to choose all users or all devices. Choose **Next**.
+5. On the **Scope (Groups)** page, choose a group containing the users and devices that the member above will be allowed to manage. You also have the option to choose all users or all devices. Choose **Next**.
 
-> [!Note]
-> The **All users** and **All devices** are **Intune virtual groups** and not Azure Active Directory (Azure AD) security groups. As a result, for **Scope (Groups)** assignment purposes you cannot use them as parents of Azure AD security groups. If you need both **All users** and **All devices** and specific Azure AD security groups for **Scope (Groups)** assignments, you must add them separately with separate assignments. Otherwise, even if the Scope (Groups) assignment for a role is set to **All Users** the admin in this role won't have access to specific Azure AD user groups. For Azure AD security groups, nesting is supported.
+   > [!NOTE]
+   > The **All users** and **All devices** are **Intune virtual groups** and not Microsoft Entra security groups. As a result, for **Scope (Groups)** assignment purposes you cannot use them as parents of Microsoft Entra security groups. If you need both **All users** and **All devices** and specific Microsoft Entra security groups for **Scope (Groups)** assignments, you must add them separately with separate assignments. Otherwise, even if the Scope (Groups) assignment for a role is set to **All Users** the admin in this role won't have access to specific Microsoft Entra user groups. For Microsoft Entra security groups, nesting is supported.
 
 6. On the **Scope (Tags)** page, choose tags where this role assignment will be applied. Choose **Next**.
 
 7. On the **Review + Create** page, when you're done, choose **Create**. The new assignment is displayed in the list of assignments.
 
-> [!Note]
-> When you create scope groups and assign a scope tag, you can only target groups that are listed in the Scope (Groups) of your role assignment.
+   > [!NOTE]
+   > When you create scope groups and assign a scope tag, you can only target groups that are listed in the Scope (Groups) of your role assignment.
 
 ## Delegated administration for Microsoft Partners
 
@@ -126,8 +125,6 @@ A partner can assign these roles:
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../admin/misc/add-partner.md).
   
-## Related content
+## See also
 
-[About Microsoft 365 admin roles](../admin/add-users/about-admin-roles.md) (article)\
-[Assign admin roles](../admin/add-users/assign-admin-roles.md) (article)\
-[Activity reports in the Microsoft 365 admin center](../admin/activity-reports/activity-reports.md) (article)
+[Resources for Microsoft partners working with small and medium-sized businesses](../security/defender-business/mdb-partners.md)

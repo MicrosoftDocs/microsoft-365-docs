@@ -3,7 +3,7 @@ title: Privacy information - Microsoft Defender for Endpoint on iOS
 ms.reviewer:
 description: Describes privacy information for Microsoft Defender for Endpoint on iOS
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, policy, overview
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,8 +15,9 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-ios
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ios
 search.appverid: met150
 ms.date: 12/18/2020
 ---
@@ -26,14 +27,14 @@ ms.date: 12/18/2020
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
 > Defender for Endpoint on iOS uses a VPN to provide the Web Protection feature. This is not a regular VPN and is a local or self-looping VPN that does not take traffic outside the device. **Microsoft or your organization, does not see your browsing activity.**
 
-Defender for Endpoint on iOS collects information from your configured iOS devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint on iOS secure, up-to-date, performing as expected, and to support the service.
+Defender for Endpoint on iOS collects information from your configured iOS devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint on iOS secure, up to date, performing as expected, and to support the service.
 
 For more information about data storage, see [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 
@@ -55,8 +56,8 @@ Here is a list of the types of data being collected:
   - Wi-Fi adapter MAC address
   - Randomly generated globally unique identifier (GUID)
 - Tenant, Device, and User information
-  - Azure Active Directory (AD) Device ID and Azure User ID - Uniquely identifies the device, User respectively at Azure Active directory.
-  - Azure tenant ID - GUID that identifies your organization within Azure Active Directory.
+  - Microsoft Entra Device ID and Azure User ID - Uniquely identifies the device, User respectively at Microsoft Entra ID.
+  - Azure tenant ID - GUID that identifies your organization within Microsoft Entra ID.
   - Microsoft Defender for Endpoint org ID - Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify if there are issues affecting a select set of enterprises and the number of enterprises impacted.
   - User Principal Name - Email ID of the user.
 
@@ -84,3 +85,4 @@ Feedback Data is collected through in-app feedback provided by the user.
 - Feedback type (smile, frown, idea) and any feedback comments submitted by the user.
 
 For more information, see [More on Privacy](https://aka.ms/mdatpiosprivacystatement).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

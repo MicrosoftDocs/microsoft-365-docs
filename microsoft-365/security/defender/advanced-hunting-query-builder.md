@@ -1,11 +1,11 @@
 ---
-title: Build queries using guided mode in Microsoft 365 Defender advanced hunting
+title: Build queries using guided mode in Microsoft Defender XDR advanced hunting
 description: Learn how to build queries in guided mode by combining different available filters and conditions.
-keywords: guided mode, advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
+keywords: guided mode, advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -23,13 +23,13 @@ ms.topic: conceptual
 ms.date: 08/11/2022
 ---
 
-# Build hunting queries using guided mode in Microsoft 365 Defender
+# Build hunting queries using guided mode in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -38,6 +38,9 @@ The query builder in guided mode allows analysts to craft meaningful hunting que
 
 The analyst can choose which data set to look at and which filters and conditions to use to narrow the data down to what they need. 
 
+You can watch this video to get an overview of guided hunting:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW12cm6]
 
 ## Open Query in builder
 In the **Advanced hunting** page, select **Create new** to open a new query tab and select **Query in builder**. 
@@ -189,3 +192,4 @@ Then, add another condition, this time specifying the folder or **DeliveryLocati
 - [Refine your query in guided mode](advanced-hunting-query-builder-details.md)
 - [Work with query results in guided mode](advanced-hunting-query-builder-results.md)
  - [Understand the schema](advanced-hunting-schema-tables.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

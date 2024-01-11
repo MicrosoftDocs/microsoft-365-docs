@@ -7,11 +7,12 @@ audience: Admin
 ms.topic: conceptual
 ms.service: loop
 ms.reviewer: michalbr
-ms.date: 07/16/2021
+ms.date: 08/21/2023
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
   - M365-collaboration
+  - essentials-overview
 description: Learn how to manage Loop components in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
@@ -45,7 +46,7 @@ For information on admin settings for Loop components in Teams, see [Settings ma
 
 ## Loop components and .loop files
 
-Loop components created in Teams, Outlook are backed by a .loop (earlier versions of Loop-created .fluid) file stored in the creator's OneDrive. A file being in OneDrive means that users can create, discover, and manage Loop components (.loop files) as easily as any Office document.
+Loop components created in Teams and Outlook are backed by a .loop (earlier versions of Loop-created .fluid) file stored in the creator's OneDrive. A file being in OneDrive means that users can create, discover, and manage Loop components (.loop files) as easily as any Office document.
 
 ## How are .loop files stored?
 
@@ -55,7 +56,7 @@ Moving a .loop file from OneDrive to a SharePoint site will result in the Live c
 
 ## What happens if the owner of the file leaves the company?
 
-OneDrive retention policies apply to the .loop files just as they do to other content created by the user.
+[OneDrive retention policies](/sharepoint/retention-and-deletion) apply to the .loop files just as they do to other content created by the user.
 
 ## How are .loop files shared?
 
@@ -73,9 +74,9 @@ The .loop files can only be opened as links in your browser, such as Office.com,
 
 ## Do .loop (and .fluid) files support eDiscovery?
 
-Loop components created in Teams, Outlook, and Word for the web, are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. Currently, these files are stored in the creator’s OneDrive and are available for search and collection, and render in review for both eDiscovery (Standard) and eDiscovery (Premium). The HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
+Loop components created in Teams, Outlook, and Word for the web, are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. Currently, these files are stored in the creator’s OneDrive and are available for search and collection in both eDiscovery (Standard) and eDiscovery (Premium). Render in review and HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
 
-Microsoft is currently working on a third-party graph export API solution for Loop components.
+A [graph export API](/graph/api/driveitem-get-content-format) solution is also available for Loop components that supports both raw export and an HTML offline format.
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 

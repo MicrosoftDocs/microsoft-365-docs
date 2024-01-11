@@ -7,11 +7,10 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
-ms.date: 03/29/2023
-ms.reviewer: jomaun
+ms.date: 07/19/2023
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -21,9 +20,12 @@ ms.collection:
 
 # Resources for Microsoft partners working with small and medium-sized businesses
 
+> [!TIP]
+> **Read all about exciting, new capabilities releasing in July 2023 in the [Tech Community blog: New SMB security innovations from Microsoft Inspire 2023](https://aka.ms/SMBSecurityJulyBlog)**.
+
 Small and medium-sized businesses recognize that security is important, but they often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with setup and configuration, managing security for their devices and network, and addressing alerts or detected threats. Microsoft partners can help!
 
-If you're a Microsoft partner, and you're working with customers who have or need [Microsoft Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), or [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md), this article is for you!
+If you're a Microsoft partner, and you're working with customers who have or need [Microsoft Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md), [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), or [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md), this article is for you!
 
 - [Download our security guide and checklist](#download-our-security-guide-and-checklist-new) (NEW!)
 - [Learn how you can integrate Microsoft endpoint security with your RMM tools and PSA software](#integrate-microsoft-endpoint-security-with-your-rmm-tools-and-psa-software).
@@ -46,14 +48,14 @@ Use the links in the following table to access the guide and summary checklist:
 
 | Resource | Description |
 |:---|:---|
-| [Practical guide to security using Microsoft 365 Business (Basic, Standard, and Premium)](https://aka.ms/smbsecurityguide) | This Word document summarizes Microsoft’s recommendations for enabling employees at small and medium-sized businesses to securely work from anywhere- whether from home, in the office or on the go, using the features included in Microsoft 365 Business Premium.  |
+| [Practical guide to security using Microsoft 365 Business (Basic, Standard, and Premium)](https://aka.ms/smbsecurityguide) | This Word document summarizes Microsoft's recommendations for enabling employees at small and medium-sized businesses to securely work from anywhere- whether from home, in the office or on the go, using the features included in Microsoft 365 Business Premium.  |
 | [Checklist for security with Microsoft 365 Business Premium](https://aka.ms/smbsecuritychecklist) | This checklist includes all the planning and configuration steps covered in the guide, from getting started to configuring security and compliance capabilities, and provides general recommendations for each step. |
 
 ## Integrate Microsoft endpoint security with your RMM tools and PSA software
 
 If you're a Microsoft Managed Service Provider (MSP), you can integrate Microsoft endpoint security with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software so that you can: 
 
-- Get access to your customers' Microsoft 365 Defender portal to [address detected threats and incidents](mdb-respond-mitigate-threats.md).
+- Get access to your customers' Microsoft Defender portal to [address detected threats and incidents](mdb-respond-mitigate-threats.md).
 - Get [email notifications](mdb-email-notifications.md) about new alerts or vulnerabilities across your customers' tenants.
 - Fetch and view [incidents and alerts](mdb-view-manage-incidents.md) with your security information and event management (SIEM) tools.
 - Orchestrate [remediation actions](mdb-review-remediation-actions.md), such as approving actions following automated investigations, or taking manual response actions on a device.

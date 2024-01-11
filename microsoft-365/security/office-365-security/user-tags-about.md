@@ -19,8 +19,8 @@ description: Admins can learn how to identify specific groups of users with user
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # User tags in Microsoft Defender for Office 365
@@ -29,7 +29,7 @@ appliesto:
 
 _User tags_ are identifiers for specific groups of users in [Microsoft Defender for Office 365](defender-for-office-365.md). There are two types of user tags:
 
-- **System tags**: Currently, [Priority account](../../admin/setup/priority-accounts.md) is the only type of system tag.
+- **System tags**: Currently, [Priority account](/microsoft-365/admin/setup/priority-accounts) is the only type of system tag.
 - **Custom tags**: You create these types of tags.
 
 If your organization has Defender for Office 365 Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the Priority account tag.
@@ -41,31 +41,33 @@ If your organization has Defender for Office 365 Plan 2 (included in your subscr
 >
 > Each custom tag has a maximum of 10,000 users per tag and your organization can create up to 500 custom tags.
 
-This article explains how to configure user tags in the Microsoft 365 Defender portal. You can also apply or remove the Priority account tag using the _VIP_ parameter on the [Set-User](/powershell/module/exchange/set-user) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). No PowerShell cmdlets are available to manage custom user tags.
+This article explains how to configure user tags in the Microsoft Defender portal. You can also apply or remove the Priority account tag using the _VIP_ parameter on the [Set-User](/powershell/module/exchange/set-user) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). No PowerShell cmdlets are available to manage custom user tags.
 
 To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](priority-accounts-security-recommendations.md).
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
+- You open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md):
+  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
     - _Create, modify, and delete custom user tags_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Apply and remove the Priority account tag from users_: Membership in the **Security Administrator** and **Exchange Admin** role groups.
     - _Apply and remove existing custom user tags from users_: Membership in the **Organization Management** or **Security Administrator** role groups.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator** and **Security Administrator** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** and **Security Administrator** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
   > [!NOTE]
   > User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
 
-- You can also manage and monitor the Priority account tag in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
+- You can also manage and monitor the Priority account tag in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
 - For information about securing _privileged accounts_ (admin accounts), see [this article](/security/compass/critical-impact-accounts).
 
-## Use the Microsoft 365 Defender portal to create user tags
+<a name='use-the-microsoft-365-defender-portal-to-create-user-tags'></a>
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
+## Use the Microsoft Defender portal to create user tags
+
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
 2. On the **User tags** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create** to start the new tag wizard.
 
@@ -105,9 +107,11 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
    Back on the **User tags** page, the new tag is listed.
 
-## Use the Microsoft 365 Defender portal to view user tags
+<a name='use-the-microsoft-365-defender-portal-to-view-user-tags'></a>
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
+## Use the Microsoft Defender portal to view user tags
+
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
 On the **User tags** page, you can sort the entries by clicking on an available column header. The following columns are available:
 
@@ -133,9 +137,11 @@ The details flyout of the user tag contains the following information, based on 
 
 To take action on user tags, see the next section.
 
-## Use the Microsoft 365 Defender portal to take action on user tags
+<a name='use-the-microsoft-365-defender-portal-to-take-action-on-user-tags'></a>
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
+## Use the Microsoft Defender portal to take action on user tags
+
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
 2. On the **User tags** page, select the user tag by using either of the following methods:
    - Select the tag from the list by selecting the check box next to the name. The available actions appear on the page.
@@ -143,19 +149,23 @@ To take action on user tags, see the next section.
 
 After you select the user tag, the available actions are described in the following subsections.
 
-### Use the Microsoft 365 Defender portal to modify user tags
+<a name='use-the-microsoft-365-defender-portal-to-modify-user-tags'></a>
+
+### Use the Microsoft Defender portal to modify user tags
 
 After you select the user tag, use either of the following methods to modify it:
 
 - **On the User tags page**: Select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** action that appears.
 - **In the details flyout of the selected user tag**: Select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** action at the top of the flyout.
 
-The same wizard and most of the same settings are available as described in the [Use the Microsoft 365 Defender portal to create user tags](#use-the-microsoft-365-defender-portal-to-create-user-tags) section earlier in this article, with the following exceptions:
+The same wizard and most of the same settings are available as described in the [Use the Microsoft Defender portal to create user tags](#use-the-microsoft-365-defender-portal-to-create-user-tags) section earlier in this article, with the following exceptions:
 
 - You can't rename or change the description of the Priority account tag, so the **Define tag** page isn't available for the Priority account tag.
 - The **Define tag** page is available for custom tags, but you can't rename the tag; you can only change the description.
 
-## Use the Microsoft 365 Defender portal to remove user tags
+<a name='use-the-microsoft-365-defender-portal-to-remove-user-tags'></a>
+
+## Use the Microsoft Defender portal to remove user tags
 
 You can't remove the built-in Priority account tag.
 
@@ -174,7 +184,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 
 - [Alerts](../defender/investigate-alerts.md)
 - [Incidents](mdo-sec-ops-manage-incidents-and-alerts.md)
-- [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
+- [Custom alert policies](/purview/alert-policies#view-alerts)
 - [Threat Explorer](threat-explorer-about.md)
 - [Campaign Views](campaigns.md)
 - [Email entity page](mdo-email-entity-page.md)
@@ -189,7 +199,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
   - [Payloads](attack-simulation-training-payloads.md)
   - [Training campaigns](attack-simulation-training-training-campaigns.md)
   - [Training modules](attack-simulation-training-training-modules.md)
-- [Quarantine](quarantine-admin-manage-messages-files.md)
+- [Quarantine](quarantine-admin-manage-messages-files.md) Currently, tag selection on the Quarantine filter page supports only the Priority account tag.
 - [Admin submissions and user reported messages](submissions-admin.md)
 - In organizations above a certain size, the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) is available in the Exchange admin center (EAC).
 
@@ -198,4 +208,4 @@ For information about where the effects of priority account protection are visib
 ## More information
 
 - [Configure and review priority account protection](priority-accounts-turn-on-priority-account-protection.md)
-- [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)
+- [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts)

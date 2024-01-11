@@ -3,11 +3,11 @@ title: SharePoint Cross-tenant SharePoint migration Step 5 (preview)
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.subservice: sharepoint-migration
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection:
 - SPMigration
@@ -72,10 +72,24 @@ Users and groups are included in the same file. Depending on whether it's a user
 |5|TargetUserEmail|GroupName|M365GroupAlias|
 |6|UserType|GroupType|GroupType|
 
+
+>[!Important]
+>When creating your Identity Mapping for Group Connected sites, the Target site URL **must** align with the alias of the new Group created on the Target tenant.
+>
+>**Example:**  
+>Source site: https://contoso.sharepoint.com/teams/O365SourceGroup
+>New Target Group Alias = O365TargetGroup
+>
+>In your Identity Mapping file the Target site needs to be:
+> -  https://fabrikam.sharepoint.com/teams/**O365TargetGroup**
+>
+>If the Target Alias and Target URL don't align, the migration will fail.
+
+
 > [!IMPORTANT]
 > **Do NOT include column headings in your CSV file.**  In the examples below we include them for illustrative purposes only.
 
-**Users**. Enter your values as shown in this example for guests:
+**Users**. Enter your values as shown in this example for Users:
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
 
@@ -112,7 +126,7 @@ Users and groups are included in the same file. Depending on whether it's a user
 To obtain Source Tenant Company ID:
 
 1. Sign in as Admin to your [Azure portal](https://ms.portal.azure.com/)
-2. Select or Search for **Azure Active Directory**.
+2. Select or Search for **Microsoft Entra ID**.
 3. Scroll down on the left-hand panel and select **Properties**.
 4. Locate the **Tenant ID Field**. The required Tenant ID will be in that box.
 
@@ -188,7 +202,7 @@ Get-SPOCrossTenantCompatibilityStatus -PartnerCrossTenantHostURL https://m365x12
 |Incompatible|No|
 
 > [!NOTE]
-> We recommend waiting a period of 24 hours. If your tenants are still reporting as *incompatible*, contact support.
+> We recommend waiting a period of **48 hours**. If your tenants are still reporting as *incompatible*, contact support.
 >
 > We recommend performing the compatibility status check on a frequent basis and prior to starting ANY instances of cross tenant migrations. If the tenants are not compatible, this can result in cross-tenant migrations failing.
 

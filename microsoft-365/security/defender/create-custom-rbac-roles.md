@@ -1,10 +1,7 @@
 ---
-title: Create custom roles with Microsoft 365 Defender role-based access control (RBAC)
-description: Create custom roles in Microsoft 365 Defender Security portal role-based access control (RBAC)
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+title: Create custom roles with Microsoft Defender XDR Unified role-based access control (RBAC)
+description: Create custom roles in Microsoft Defender XDR Security portal role-based access control (RBAC)
+ms.service: defender-xdr
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -15,35 +12,34 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: how-to
-ms.subservice: mde
-ms.date: 11/10/2022
+ms.date: 08/03/2023
 ms.reviewer: 
 search.appverid: met150
 ---
 
-# Create custom roles with Microsoft 365 Defender RBAC
+# Create custom roles with Microsoft Defender XDR Unified RBAC
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
+- [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
+- [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 ## Create a custom role
 
-The following steps guide you on how to create custom roles in Microsoft 365 Defender RBAC.
+The following steps guide you on how to create custom roles in Microsoft Defender XDR Unified RBAC.
 
 > [!IMPORTANT]
-> You must be a Global Administrator or Security Administrator in Azure Active Directory, or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+> You must be a Global Administrator or Security Administrator in Microsoft Entra ID, or have all the **Authorization** permissions assigned in Microsoft Defender XDR Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.
-3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
+3. Select **Roles** under Microsoft Defender XDR to get to the Permissions and roles page.
 4. Select **Create custom role**.
 5. Enter the Role name and description.
 6. Select **Next** to choose the permissions you want to assign. Permissions are organized in three different categories:
@@ -73,22 +69,22 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
     If a user selects all read-only permissions for a single data source, for example, Microsoft Defender for Endpoint, they will not be able to read alerts for Microsoft Defender for Office 365 or Microsoft Defender for Identity.
 
     > [!NOTE]
-    > By selecting **Choose all data sources** all supported data sources within Microsoft 365 Defender RBAC and any future data sources that are added will be automatically assigned to this assignment.
+    > By selecting **Choose all data sources** all supported data sources within Microsoft Defender XDR Unified RBAC and any future data sources that are added will be automatically assigned to this assignment.
 
-11. In **Assigned users and groups** choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
+11. In **Assigned users and groups** choose the Microsoft Entra security groups or individual users to assign the role to, and select **Add**.
 
     > [!NOTE]
-    > In Microsoft 365 Defender RBAC, you can create as many assignments as needed under the same role with same permissions. For example, you can have an assignment within a role that has access to all data sources and then a separate assignment for a team that only needs access to Endpoint alerts from the Defender for Endpoint data source. This enables maintaining the minimum number of roles.
+    > In Microsoft Defender XDR Unified RBAC, you can create as many assignments as needed under the same role with same permissions. For example, you can have an assignment within a role that has access to all data sources and then a separate assignment for a team that only needs access to Endpoint alerts from the Defender for Endpoint data source. This enables maintaining the minimum number of roles.
 
 12. Select **Next** to review and finish creating the role and then select **Submit**.
 
 ## Create a role to access and manage roles and permissions
 
-To access and manage roles and permissions, without being a Global Administrator or Security Administrator in Azure Active Directory, you need to create a role with **Authorization** permissions. To create this role:
+To access and manage roles and permissions, without being a Global Administrator or Security Administrator in Microsoft Entra ID, you need to create a role with **Authorization** permissions. To create this role:
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as Global Administrator or Security Administrator.
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com) as Global Administrator or Security Administrator.
 2. In the navigation pane, select **Permissions**.
-3. Select **Roles** under Microsoft 365 Defender.
+3. Select **Roles** under Microsoft Defender XDR.
 4. Select **Create custom role**.
 5. Enter the Role name and description.
 6. Select **Next** and choose the **Authorization and settings** option.
@@ -96,7 +92,7 @@ To access and manage roles and permissions, without being a Global Administrator
     - Select all permissions - users will be able to create and manage roles and permissions.
     - Read-only - uses will be able to access and view roles and permissions in a read-only mode.
 
-    :::image type="content" source="../../media/defender/m365-defender-rbac-authorization-role.png" alt-text="Screenshot of the Permissions and roles page" lightbox="../../media/defender/m365-defender-rbac-authorization-role.png":::
+    :::image type="content" source="../../media/defender/m365-defender-rbac-authorization-role.png" alt-text="Screenshot of the permissions and roles page" lightbox="../../media/defender/m365-defender-rbac-authorization-role.png":::
 
 8. Select **Apply** and then **Next** to assign users and data sources.
 9. Select **Add assignments** and enter the Assignment name.
@@ -105,13 +101,14 @@ To access and manage roles and permissions, without being a Global Administrator
     - Select **Choose all data sources** to grant users permissions to create new roles and manage roles for all data sources.
     - Select **Select specific data sources** to grant users permissions to create new roles and manage roles for a specific data source. For example, select Microsoft Defender for Endpoint from the dropdown to grant users the Authorization permission for the Microsoft Defender for Endpoint data source only.
 
-11. In **Assigned users and groups** – choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
+11. In **Assigned users and groups** – choose the Microsoft Entra security groups or individual users to assign the role to, and select **Add**.
 12. Select **Next** to review and finish creating the role and then select **Submit**.
 
 > [!NOTE]
-> For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new or imported roles, you'll need to activate the new Microsoft 365 Defender RBAC model. For more information, see [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md).
+> For the Microsoft Defender XDR security portal to start enforcing the permissions and assignments configured in your new or imported roles, you'll need to activate the new Microsoft Defender XDR Unified RBAC model. For more information, see [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md).
 
 ## Next steps
 
 - [Import existing RBAC roles](import-rbac-roles.md)
-- [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+- [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

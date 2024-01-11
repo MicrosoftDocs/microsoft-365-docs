@@ -1,10 +1,9 @@
 ---
 title: Update incident API
-description: Learn how to update incidents using Microsoft 365 Defender API
+description: Learn how to update incidents using Microsoft Defender XDR API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +17,8 @@ audience: ITPro
 ms.collection: 
  - m365-security
  - tier3
-ms.topic: conceptual
+ - must-keep
+ms.topic: reference
 search.appverid:
   - MOE150
   - MET150
@@ -28,11 +28,11 @@ ms.date: 02/08/2023
 
 # Update incidents API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview). For information about the new _update incident_ API using MS Graph security API, see [Update incident](/graph/api/resources/security-incident-update).
@@ -53,7 +53,7 @@ If your request is throttled, it will return a `429` response code. The response
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender APIs](api-access.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft Defender XDR APIs](api-access.md).
 
 Permission type|Permission|Permission display name
 ---|---|---
@@ -82,7 +82,7 @@ In the request body, supply the values for the fields that should be updated. Ex
 
 Property|Type|Description
 ---|---|---
-status|Enum|Specifies the current status of the incident. Possible values are: `Active`, `Resolved`, and `Redirected`.
+status|Enum|Specifies the current status of the incident. Possible values are: `Active`, `Resolved`, `InProgress`, and `Redirected`.
 assignedTo|string|Owner of the incident.
 classification|Enum|Specification of the incident. Possible values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.
 determination|Enum|Specifies the determination of the incident. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).
@@ -135,9 +135,10 @@ Here's an example of the request.
 
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
-- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Access the Microsoft Defender XDR APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
 - [Incident APIs](api-incident.md)
 - [List incidents](api-list-incidents.md)
 - [Incidents overview](incidents-overview.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

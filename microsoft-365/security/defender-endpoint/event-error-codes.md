@@ -2,7 +2,7 @@
 title: Review events and errors using Event Viewer
 description: Get descriptions and further troubleshooting steps (if necessary) for all events reported by the Microsoft Defender for Endpoint service.
 keywords: troubleshoot, event viewer, log summary, failure code, failed, Microsoft Defender for Endpoint service, can't start, broken, can't start
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,22 +14,22 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-ngp
 ms.topic: conceptual
-ms.date: 05/21/2018
-ms.subservice: mde
+ms.date: 10/27/2023
+ms.subservice: ngp
 search.appverid: met150
 ---
 
-
 # Review events and errors using Event Viewer
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
@@ -82,7 +82,7 @@ See the following table for a list of events recorded by the service.
    |32|Microsoft Defender for Endpoint service failed to request to stop itself after offboarding process. Failure code: %1|An error occurred during offboarding.|Reboot the device.|
    |33|Microsoft Defender for Endpoint service failed to persist SENSE GUID. Failure code: `variable`.|A unique identifier is used to represent each device that is reporting to the portal. <p> If the identifier doesn't persist, the same device might appear twice in the portal.|Check registry permissions on the device to ensure the service can update the registry.|
    |34|Microsoft Defender for Endpoint service failed to add itself as a dependency on the Connected User Experiences and Telemetry service, causing onboarding process to fail. Failure code: `variable`.|An error occurred with the Windows telemetry service.|[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy). <p> Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows client devices](configure-endpoints.md).|
-   |35|Microsoft Defender for Endpoint service failed to remove itself as a dependency on the Connected User Experiences and Telemetry service. Failure code: `variable`.|An error occurred with the Windows telemetry service during offboarding. The offboarding process continues.|Check for errors with the Windows diagnostic data service.|
+   |35| Communication quotas are updated. Disk quota in MB: `variable`, daily upload quota in MB: `variable`| Variable = disk quota in MB. |Normal operating notification; no action required.|
    |36|Microsoft Defender for Endpoint Connected User Experiences and Telemetry service registration succeeded. Completion code: `variable`.|Registering Defender for Endpoint with the Connected User Experiences and Telemetry service completed successfully.|Normal operating notification; no action required.|
    |37|Microsoft Defender for Endpoint A module is about to exceed its quota. Module: %1, Quota: {%2} {%3}, Percentage of quota utilization: %4.|The device has almost used its allocated quota of the current 24-hour window. It's about to be throttled.|Normal operating notification; no action required.|
    |38|Network connection is identified as low. Microsoft Defender for Endpoint will contact the server every %1 minutes. Metered connection: %2, internet available: %3, free network available: %4.|The device is using a metered/paid network and will be contacting the server less frequently.|Normal operating notification; no action required.|
@@ -227,3 +227,4 @@ You can use this table for more information on the Defender for Endpoint events 
 - [Client analyzer overview](overview-client-analyzer.md)
 - [Download and run the client analyzer](download-client-analyzer.md)
 - [Understand the analyzer HTML report](analyzer-report.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

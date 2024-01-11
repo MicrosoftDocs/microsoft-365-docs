@@ -1,10 +1,12 @@
 ---
-author: LanaChin
-ms.author: v-lanachin
-ms.date: 08/29/2022
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
+ms.date: 10/17/2023
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
+ms.collection: m365-frontline 
 ---
 > [!IMPORTANT]
 > Follow these steps only if you chose to disable open shifts, open shift requests, swap requests, or time off requests using the script in the [Change connection settings](#change-connection-settings) section earlier in this article or by using the [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) cmdlet. Completing this step hides the capability in Shifts. Without this second step, users will still see the capability in Shifts, and will get an "unsupported operation" error message if they try to use it.

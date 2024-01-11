@@ -1,8 +1,8 @@
 ---
 title: Microsoft Teams Virtual Appointments Call Quality Dashboard
-author: daisyfell
-ms.author: daisyfeller
-manager: pamgreen
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-frontline
@@ -15,7 +15,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - m365initiative-meetings
-  - tier1
+  - m365-virtual-appointments 
 description: Learn how to use the Call Quality Dashboard for Virtual Appointments in Microsoft Teams to troubleshoot issues and analyze call quality.
 appliesto: 
   - Microsoft Teams

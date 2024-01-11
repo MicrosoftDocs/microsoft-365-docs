@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Removable Storage frequently asked questions
 description: Answers frequently asked questions on MDE device control removable storage. 
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -11,6 +11,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 05/11/2023
@@ -58,7 +59,7 @@ If the policy still isn't working, contact support, and share your support cab. 
 
 ## Why is there no configuration UX for some policy groups? 
 
-There is no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related `.adml` and `.admx` files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
+There is no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related `.adml` and `.admx` files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/WindowsDefender.admx) files.
 
 ## How do I confirm that the latest policy has been deployed to the target machine?
 
@@ -99,9 +100,11 @@ DeviceFileEvents
  
 Another way is to deploy an Audit policy to the organization, and see the events in advanced hunting or the device control report.
  
-## How do I find Sid for Azure AD group?
+<a name='how-do-i-find-sid-for-azure-ad-group'></a>
 
-Different from Azure AD groups, the Sid is using Object Id for Azure AD group. You can find the Object Id from Azure portal.
+## How do I find Sid for Microsoft Entra group?
+
+Different from Microsoft Entra groups, the Sid is using Object Id for Microsoft Entra group. You can find the Object Id from Azure portal.
 
 ![image](https://user-images.githubusercontent.com/81826151/200895994-cc395452-472f-472e-8d56-351165d341a7.png)
 
@@ -130,3 +133,4 @@ Yes, for Windows and Mac.
 To set up device control on Windows, use [attack surface reduction rules in Defender for Business](/microsoft-365/security/defender-business/mdb-asr). You'll need [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). The standalone version of Defender for Business does not include Intune, but it can be added on. [Microsoft 365 Business Premium](/microsoft-365/business-premium) does include Intune. See [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
 
 To set up device control on Mac, use Intune or Jamf. See [Device Control for macOS](mac-device-control-overview.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

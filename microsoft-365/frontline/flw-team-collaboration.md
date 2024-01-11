@@ -2,10 +2,10 @@
 title: Frontline team collaboration
 description: Learn how your frontline teams can communicate and collaborate effectively within or across locations.
 ms.topic: conceptual
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
 audience: admin
-manager: pamgreen
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
@@ -15,7 +15,6 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - tier1
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -81,8 +80,6 @@ Financial services organizations can also use the [Collaboration Manager for Loa
 
 > [!TIP]
 > Examples are given for the financial services, healthcare, nonprofit, and retail industries, but you can use these apps for an organization in any sector.
-
-[View videos and resources](collab-features-apps-toolkit.md) to share with your team to help them use collaboration apps and features in Teams.
 
 ### Create, manage, and share schedules with Shifts
 

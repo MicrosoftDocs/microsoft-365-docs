@@ -17,7 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 04/18/2023
+ms.date: 01/03/2024
 ---
 
 # How Microsoft names threat actors
@@ -25,25 +25,27 @@ ms.date: 04/18/2023
 > [!IMPORTANT]
 > Learn about how [Volt Typhoon targets US critical infrastructure with living-off-the-land techniques](https://www.microsoft.com/en-us/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques/#:~:text=Volt%20Typhoon%20has%20been%20active%20since%20mid-2021%20and,construction%2C%20maritime%2C%20government%2C%20information%20technology%2C%20and%20education%20sectors)
 
-Microsoft has shifted to a new naming taxonomy for threat actors aligned with the theme of weather. With the new taxonomy, we intend to bring better clarity to customers and other security researchers already confronted with an overwhelming amount of threat intelligence data and offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves.
+Microsoft shifted to a new naming taxonomy for threat actors aligned with the theme of weather. We intend to bring better clarity to customers and other security researchers with the nex taxonomy. We offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves and aid security researchers already confronted with an overwhelming amount of threat intelligence data.
 
-:::image type="content" source="../../media/threat-actor-naming/threat-actor-naming-categories.png" alt-text="Nation-state actors based on Microsoft naming" lightbox="../../media/threat-actor-naming/threat-actor-naming-categories2.png":::
+:::image type="content" source="../../media/threat-actor-naming/threat-actor-categories.png" alt-text="Nation-state actors based on Microsoft naming" lightbox="../../media/threat-actor-naming/threat-actor-categories-lg.png":::
 
 Microsoft categorizes threat actors into five key groups:
 
-**Nation-state actors:** cyber operators acting on behalf of or directed by a nation/state-aligned program, irrespective of whether for espionage, financial gain, or retribution. Microsoft has observed that most nation state actors continue to focus operations and attacks on government agencies, intergovernmental organizations, non-governmental organizations, and think tanks for traditional espionage or surveillance objectives.
+**Nation-state actors:** cyber operators acting on behalf of or directed by a nation/state-aligned program, irrespective of whether for espionage, financial gain, or retribution. Microsoft observed that most nation state actors continue to focus operations and attacks on government agencies, intergovernmental organizations, nongovernmental organizations, and think tanks for traditional espionage or surveillance objectives.
 
-**Financially motivated actors:** cyber campaigns/groups directed by a criminal organization/person with motivations of financial gain and haven't been associated with high confidence to a known non-nation state or commercial entity. This category includes ransomware operators, business email compromise, phishing, and other groups with purely financial or extortion motivations.
+**Financially motivated actors:** cyber campaigns/groups directed by a criminal organization/person with motivations of financial gain and are not associated with high confidence to a known non-nation state or commercial entity. This category includes ransomware operators, business email compromise, phishing, and other groups with purely financial or extortion motivations.
 
-**Private sector offensive actors (PSOAs):** cyber activity led by commercial actors that are known/legitimate legal entities, that create and sell cyberweapons to customers who then select targets and operate the cyberweapons. These tools threaten many global human rights efforts, as they have been observed targeting and surveilling dissidents, human rights defenders, journalists, civil society advocates, and other private citizens.
+**Private sector offensive actors (PSOAs):** cyber activity led by commercial actors that are known/legitimate legal entities, that create and sell cyberweapons to customers who then select targets and operate the cyberweapons. These tools were observed targeting and surveilling dissidents, human rights defenders, journalists, civil society advocates, and other private citizens, threatening many global human rights efforts.
 
-**Influence operations:** information campaigns communicated online or offline in a manipulative fashion to shift perceptions, behaviors, or decisions by target audiences to further a group or a nation’s interests and objectives.
+**Influence operations:** information campaigns communicated online or offline in a manipulative fashion to shift perceptions, behaviors, or decisions by target audiences to further a group or a nation's interests and objectives.
 
-**Groups in development:** a temporary designation given to an unknown, emerging, or developing threat activity that allows Microsoft to track it as a discrete set of information until we can reach high confidence about the origin or identity of the actor behind the operation. Once criteria are met, a group in development is converted to a named actor or merged into existing names.
+**Groups in development:** a temporary designation given to an unknown, emerging, or developing threat activity. This designation allows Microsoft to track a group as a discrete set of information until we can reach high confidence about the origin or identity of the actor behind the operation. Once criteria are met, a group in development is converted to a named actor or merged into existing names.
 
-In our new taxonomy, a weather event or *family name* represents one of the above categories. In the case of nation-state actors, we have assigned a family name to a country of origin tied to attribution, like Typhoon indicates origin or attribution to China. For other actors, the family name represents a motivation. For example, Tempest indicates financially motivated actors. Threat actors within the same weather family are given an adjective to distinguish actor groups with distinct tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, where there is a newly discovered, unknown, emerging, or developing cluster of threat activity, we use a temporary designation of Storm and a four-digit number, allowing us to track it as a unique set of information until we can reach high confidence about the origin or identity of the actor behind the operation.
+In our new taxonomy, a weather event or *family name* represents one of the above categories. For nation-state actors, we have assigned a family name to a country/region of origin tied to attribution, like Typhoon indicates origin or attribution to China. For other actors, the family name represents a motivation. For example, Tempest indicates financially motivated actors.
 
-The table below shows how the new family names map to a sampling of the threat actors that we track.
+Threat actors within the same weather family are given an adjective to distinguish actor groups with distinct tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, we use a temporary designation of Storm and a four-digit number where there is a newly discovered, unknown, emerging, or developing cluster of threat activity.
+
+The table shows how the new family names map to the threat actors that we track.
 
 |Actor category|Type|Family name|
 |---|:---:|:---:|
@@ -53,7 +55,7 @@ The table below shows how the new family names map to a sampling of the threat a
 |Influence operations|Influence operations|Flood|
 |Groups in development|Groups in development|Storm|
 
-Use the following reference table below to understand how our previously publicly disclosed old threat actor names translate to our new taxonomy.
+Use the following reference table to understand how our previously publicly disclosed old threat actor names translate to our new taxonomy.
 
 |Previous name|New name|Origin/Threat|Other names|
 |---|:---:|:---:|:---:|
@@ -92,7 +94,7 @@ Use the following reference table below to understand how our previously publicl
 |RADIUM|Raspberry Typhoon|China|APT30, LotusBlossom|
 |RUBIDIUM|Lemon Sandstorm|Iran|Fox Kitten, UNC757, PioneerKitten|
 |SEABORGIUM|Star Blizzard|Russia|Callisto, Reuse Team|
-|SILICON|Marbled Dust|Turkey|Sea Turtle|
+|SILICON|Marbled Dust|Türkiye|Sea Turtle|
 |SOURGUM|Caramel Tsunami|Private sector offensive actor|Candiru|
 |SPURR|Tomato Tempest|Financially motivated|Vatet|
 |STRONTIUM|Forest Blizzard|Russia|APT28, Fancy Bear|
@@ -135,13 +137,13 @@ Read our announcement about the new taxonomy for more information: [https://aka.
 
 ## Putting intelligence into the hands of security professionals
 
-[Intel profiles in Microsoft Defender Threat Intelligence](../defender/defender-threat-intelligence.md) bring crucial threat actor insights directly into defenders' hands so that they can get the context they need as they prepare for and respond to threats.
+[Intel profiles in Microsoft Defender Threat Intelligence](../defender/defender-threat-intelligence.md) bring crucial insights about threat actors. These insights enable security teams to get the context they need as they prepare for and respond to threats.
 
-Additionally, to further operationalize the threat intelligence you get from Microsoft, the Microsoft Defender Threat Intelligence Intel Profiles API provides the most up-to-date threat actor infrastructure visibility in the industry today, enabling threat intelligence and security operations (SecOps) teams to streamline their advanced threat hunting and analysis workflows. Learn more about this API in the documentation: [Use the threat intelligence APIs in Microsoft Graph (preview)](/graph/api/resources/security-threatintelligence-overview).
+Additionally, the Microsoft Defender Threat Intelligence Intel Profiles API provides the most up-to-date threat actor infrastructure visibility in the industry today. Updated information is crucial in enabling threat intelligence and security operations (SecOps) teams to streamline their advanced threat hunting and analysis workflows. Learn more about this API in the documentation: [Use the threat intelligence APIs in Microsoft Graph (preview)](/graph/api/resources/security-threatintelligence-overview).
 
 ## Resources
 
-Use the following query on Microsoft 365 Defender and other Microsoft security products supporting the Kusto query language (KQL) to get information about a threat actor using the old name, new name, or industry name:
+Use the following query on Microsoft Defender XDR and other Microsoft security products supporting the Kusto query language (KQL) to get information about a threat actor using the old name, new name, or industry name:
 
 ```kusto
 let TANames = externaldata(PreviousName: string, NewName: string, Origin: string, OtherNames: dynamic)[@"https://raw.githubusercontent.com/microsoft/mstic/master/PublicFeeds/ThreatActorNaming/MicrosoftMapping.json"] with(format="multijson", ingestionMapping='[{"Column":"PreviousName","Properties":{"Path":"$.Previous name"}},{"Column":"NewName","Properties":{"Path":"$.New name"}},{"Column":"Origin","Properties":{"Path":"$.Origin/Threat"}},{"Column":"OtherNames","Properties":{"Path":"$.Other names"}}]'); 

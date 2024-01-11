@@ -1,10 +1,10 @@
 ---
-title: Configure and manage Microsoft Threat Experts capabilities
+title: Configure and manage Microsoft Defender Experts capabilities
 ms.reviewer:
 description: Register to Microsoft Threats Experts to configure, manage, and use it in your daily security operations and security administration work.
 keywords: Microsoft Threat Experts, managed threat hunting service, MTE, Microsoft managed hunting service
 search.product: Windows 10
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,19 +17,18 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Configure and manage Microsoft Defender Experts capabilities
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -44,7 +43,7 @@ If you're a Defender for Endpoint customer, you need to apply for **Endpoint Att
 
 ## Apply for Endpoint Attack Notifications service
 
-If you're already a Defender for Endpoint customer, you can apply through the Microsoft 365 Defender portal.
+If you're already a Defender for Endpoint customer, you can apply through the Microsoft Defender portal.
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Endpoint Attack Notifications**.
 
@@ -102,12 +101,12 @@ This is available as a subscription service. If you're already a Defender for En
 
 ## Ask Defender Experts about suspicious cybersecurity activities in your organization
 
-You can partner with Microsoft Defender Experts who can be engaged directly from within the Microsoft 365 Defender portal for their response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
+You can partner with Microsoft Defender Experts who can be engaged directly from within the Microsoft Defender portal for their response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
 
 > [!NOTE]
 >
 > - Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
-> - You need to have the **Manage security settings** permission in the Microsoft 365 Defender portal to be able to submit the **Ask Defender Experts** inquiry.
+> - You need to have the **Manage security settings** permission in the Microsoft Defender portal to be able to submit the **Ask Defender Experts** inquiry.
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or device is in view before you send an investigation request.
 
@@ -174,3 +173,4 @@ It's crucial to respond in quickly to keep the investigation moving.
 #### To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to
 
 - [Microsoft Defender Experts in Microsoft 365 Overview](../defender/defender-experts-for-hunting.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

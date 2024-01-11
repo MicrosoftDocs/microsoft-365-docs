@@ -3,8 +3,7 @@ title: Pilot Microsoft Defender for Identity
 description: Pilot Microsoft Defender for Identity, set benchmarks, take tutorials on reconnaissance, compromised credential, lateral movement, domain dominance, and exfiltration alerts, among others.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,7 +28,7 @@ ms.topic: conceptual
 # Pilot Microsoft Defender for Identity
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 This article is [Step 3 of 3](eval-defender-identity-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Identity. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
 
@@ -42,13 +41,13 @@ The following table describes the steps in the illustration.
 - [Step 1: Configure benchmark recommendations for your identity environment](#step-1-configure-benchmark-recommendations-for-your-identity-environment)
 - [Step 2: Try out capabilities — Walk through tutorials for identifying and remediating different attack types](#step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types)
 
-## Step 1. Configure benchmark recommendations for your identity environment
+## Step 1: Configure benchmark recommendations for your identity environment
 
 Microsoft provides security benchmark recommendations for customers using Microsoft Cloud services. The [Azure Security Benchmark](/security/benchmark/azure/overview) (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure.
 
 These benchmark recommendations include [Azure security baseline for Microsoft Defender for Identity](/security/benchmark/azure/baselines/defender-for-identity-security-baseline). Implementing these recommendations can take some time to plan and implement. While these will greatly increase the security of your identity environment, they shouldn't prevent you from continuing to evaluate and implement Microsoft Defender for Identity. These are provided here for your awareness.
 
-## Step 2. Try out capabilities — Walk through tutorials for identifying and remediating different attack types
+## Step 2: Try out capabilities — Walk through tutorials for identifying and remediating different attack types
 
 The Microsoft Defender for Identity documentation includes a series of tutorials that walk through the process of identifying and remediating various attack types.
 
@@ -70,4 +69,5 @@ Try out Defender for Identity tutorials:
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -166,7 +166,7 @@ For larger organizations or if you're starting from Skype for Business, on-premi
   
 ## Plan for integration with Active Directory or other software
 
-- **Do you want to integrate with your on-premises Active Directory?** You can integrate your on-premises Active Directory with Microsoft 365 by using Azure Active Directory Connect. For instructions, see [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md).
+- **Do you want to integrate with your on-premises Active Directory?** You can integrate your on-premises Active Directory with Microsoft 365 by using Microsoft Entra Connect. For instructions, see [Set up directory synchronization for Microsoft 365](../../enterprise/set-up-directory-synchronization.md).
   
 - **Do you want to integrate Microsoft 365 with software made by other companies?** If you need to integrate Microsoft 365 with other software in your organization, we recommend you consider [hiring a partner](https://go.microsoft.com/fwlink/?linkid=391089) to help you with your deployment.
   

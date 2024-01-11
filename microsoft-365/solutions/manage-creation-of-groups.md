@@ -1,15 +1,18 @@
 ---
-title: "Manage who can create Microsoft 365 Groups"
+title: Manage who can create Microsoft 365 Groups
 f1.keywords: NOCSH
 ms.author: mikeplum
-ms.reviewer: arvaradh
-ms.date: 02/18/2020
+ms.reviewer: rahulnayak
+ms.date: 11/22/2023
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
+ms.custom:
+  - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.collection: 
 - highpri
 - M365-subscription-management
@@ -19,7 +22,7 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
-description: "Learn how to control which users can create Microsoft 365 Groups."
+description: Learn how to control which users can create Microsoft 365 Groups.
 ---
 
 # Manage who can create Microsoft 365 Groups
@@ -34,36 +37,36 @@ When you limit who can create a group, it affects all services that rely on grou
 
 - Outlook
 - SharePoint
-- Yammer
+- Viva Engage
 - Microsoft Teams
-- Microsoft Stream
 - Planner
 - Power BI (classic)
 - Project for the web / Roadmap
 
 The steps in this article won't prevent members of certain roles from creating Groups. Microsoft 365 global admins can create groups via the Microsoft 365 admin center, Planner, Exchange, and SharePoint, but not other locations such as Teams. Other roles can create Microsoft 365 Groups via limited means, listed below.
 
-- Exchange Administrator: Exchange admin center, Azure AD
-- Partner Tier 1 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
-- Partner Tier 2 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
-- Directory Writers: Azure AD
-- SharePoint Administrator: SharePoint admin center, Azure AD
-- Teams Service Administrator: Teams admin center, Azure AD
-- User Administrator: Microsoft 365 admin center, Azure AD
+- Exchange Administrator: Exchange admin center, Microsoft Entra ID
+- Partner Tier 1 Support: Microsoft 365 admin center, Exchange admin center, Microsoft Entra ID
+- Partner Tier 2 Support: Microsoft 365 admin center, Exchange admin center, Microsoft Entra ID
+- Directory Writers: Microsoft Entra ID
+- Groups Administrator: Microsoft Entra ID
+- SharePoint Administrator: SharePoint admin center, Microsoft Entra ID
+- Teams Service Administrator: Teams admin center, Microsoft Entra ID
+- User Administrator: Microsoft 365 admin center, Microsoft Entra ID
 
 If you're a member of one of these roles, you can create Microsoft 365 Groups for restricted users, and then assign the user as the owner of the group.
 
 ## Licensing requirements
 
-To manage who creates groups, the following people need Azure AD Premium licenses or Azure AD Basic EDU licenses assigned to them:
+To manage who creates groups, the following people need Microsoft Entra ID P1 or P2 licenses or Microsoft Entra Basic EDU licenses assigned to them:
 
 - The admin who configures these group creation settings
 - The members of the group who are allowed to create groups
 
 > [!NOTE]
-> See [Assign or remove licenses in the Azure Active Directory portal](/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
+> See [Assign or remove licenses in the Microsoft Entra admin center](/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
 
-The following people don't need Azure AD Premium or Azure AD Basic EDU licenses assigned to them:
+The following people don't need Microsoft Entra ID P1 or P2 or Microsoft Entra Basic EDU licenses assigned to them:
 
 - People who are members of Microsoft 365 groups and who don't have the ability to create other groups.
 
@@ -85,13 +88,9 @@ For detailed instructions, see [Create, edit, or delete a security group in the 
 
 ## Step 2: Run PowerShell commands
 
-You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
+You will use the [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation) **Beta** module to change the group-level guest access setting:
 
-- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) and follow the instructions to install the public preview release.
-
-- If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.
-
-- If you have already installed the preview version, run `Update-Module AzureADPreview` to make sure it's the latest version of this module.
+- If you have already installed the Beta version, run `Update-Module Microsoft.Graph.Beta` to make sure it's the latest version of this module.
 
 Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
@@ -110,32 +109,54 @@ Run the script by typing:
 and [sign in with your administrator account](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) when prompted.
 
 ```PowerShell
-$GroupName = "<GroupName>"
-$AllowGroupCreation = $False
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Groups
 
-Connect-AzureAD
+Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Group.Read.All"
 
-$settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+$GroupName = ""
+$AllowGroupCreation = "False"
+
+$settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+
 if(!$settingsObjectID)
 {
-    $template = Get-AzureADDirectorySettingTemplate | Where-object {$_.displayname -eq "group.unified"}
-    $settingsCopy = $template.CreateDirectorySetting()
-    New-AzureADDirectorySetting -DirectorySetting $settingsCopy
-    $settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+    $params = @{
+	  templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
+	  values = @(
+		    @{
+			       name = "EnableMSStandardBlockedWords"
+			       value = "true"
+		     }
+	 	     )
+	     }
+	
+    New-MgBetaDirectorySetting -BodyParameter $params
+	
+    $settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).Id
 }
 
-$settingsCopy = Get-AzureADDirectorySetting -Id $settingsObjectID
-$settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
+ 
+$groupId = (Get-MgBetaGroup | Where-object {$_.displayname -eq $GroupName}).Id
 
-if($GroupName)
-{
-  $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
-} else {
-$settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
+$params = @{
+	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
+	values = @(
+		@{
+			name = "EnableGroupCreation"
+			value = $AllowGroupCreation
+		}
+		@{
+			name = "GroupCreationAllowedGroupId"
+			value = $groupId
+		}
+	)
 }
-Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCopy
 
-(Get-AzureADDirectorySetting -Id $settingsObjectID).Values
+Update-MgBetaDirectorySetting -DirectorySettingId $settingsObjectID -BodyParameter $params
+
+(Get-MgBetaDirectorySetting -DirectorySettingId $settingsObjectID).Values
+
 ```
 
 The last line of the script will display the updated settings:
@@ -144,7 +165,7 @@ The last line of the script will display the updated settings:
 
 If in the future you want to change which group is used, you can rerun the script with the name of the new group.
 
-If you want to turn off the group creation restriction and again allow all users to create groups, set $GroupName to "" and $AllowGroupCreation to "True" and rerun the script.
+If you want to turn off the group creation restriction and again allow all users to create groups, set $GroupName to "" and $AllowGroupCreation to "$true" and rerun the script.
 
 ## Step 3: Verify that it works
 
@@ -171,8 +192,8 @@ Try the same procedure again with a member of the group.
 
 [Getting started with Office 365 PowerShell](../enterprise/getting-started-with-microsoft-365-powershell.md)
 
-[Set up self-service group management in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-self-service-management)
+[Set up self-service group management in Microsoft Entra ID](/azure/active-directory/users-groups-roles/groups-self-service-management)
 
 [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[Microsoft Entra cmdlets for configuring group settings](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)

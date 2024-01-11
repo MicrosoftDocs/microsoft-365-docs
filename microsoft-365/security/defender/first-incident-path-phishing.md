@@ -3,8 +3,7 @@ title: Example of a phishing email attack
 description: Step through an example analysis of a phishing attack.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,12 +28,12 @@ ms.date: 04/20/2021
 
 # Example of a phishing email attack
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-Microsoft 365 Defender can help detect malicious attachments delivered via email and security analysts can have visibility on threats coming in from Office 365, such as through email attachments.
+Microsoft Defender XDR can help detect malicious attachments delivered via email and security analysts can have visibility on threats coming in from Office 365, such as through email attachments.
 
 For example, an analyst was assigned a multi-stage incident.
  
@@ -67,3 +66,4 @@ See the [identity-based attack](first-incident-path-identity.md) investigation p
 - [Incidents overview](incidents-overview.md)
 - [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -34,7 +34,7 @@ Microsoft Azure provides a compelling option for hosting Internet sites based on
 
 - Pay only for the resources that you need and use.
 
-- Take advantage of Azure Active Directory for customer accounts.
+- Take advantage of Microsoft Entra ID for customer accounts.
 
 - Add features that are not currently available in Microsoft 365, such as deep reporting and analytics.
 

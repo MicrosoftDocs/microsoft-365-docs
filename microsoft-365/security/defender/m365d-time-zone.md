@@ -1,10 +1,9 @@
 ---
-title: Set the time zone for Microsoft 365 Defender features
+title: Set the time zone for Microsoft Defender XDR features
 description: Learn how to choose the time zone for date and time information associated with incidents, automated investigation and remediation, and advanced hunting
-keywords: time zone, date, time, Microsoft 365 Defender, M365, security, incidents, automated investigation and response, AIR, advanced hunting
+keywords: time zone, date, time, Microsoft Defender XDR, M365, security, incidents, automated investigation and response, AIR, advanced hunting
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -25,23 +24,24 @@ search.appverid:
 ms.date: 02/17/2021
 ---
 
-# Set the time zone for Microsoft 365 Defender
+# Set the time zone for Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 
 
-Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 Defender portal:
+Microsoft Defender XDR can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the following features in the Microsoft Defender portal:
 - Incidents
 - Automated investigation and remediation, including the action center
 - Advanced hunting results
 - Identity timeline
 
-To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.
+To set the time zone for these features, go to **Settings** > **Security center** > **Time zone**
 
 > [!NOTE]
 > The custom time range filter in advanced hunting remains in UTC regardless of the time zone setting. 
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -1,10 +1,7 @@
 ---
-title: Import roles to Microsoft 365 Defender RBAC
-description: Create custom Microsoft 365 Defender Security portal role-based access control (RBAC)
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+title: Import roles to Microsoft Defender XDR Unified role-based access control (RBAC)
+description: Create custom Microsoft Defender XDR Security portal role-based access control (RBAC)
+ms.service: defender-xdr
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -15,54 +12,62 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: how-to
-ms.subservice: mde
-ms.date: 11/10/2022
+ms.date: 08/03/2023
 ms.reviewer: 
 search.appverid: met150
 ---
 
-# Import roles to Microsoft 365 Defender RBAC
+# Import roles to Microsoft Defender XDR Unified role-based access control (RBAC)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
+- [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
+- [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+<a name='import-roles-to-microsoft-365-defender-unified-rbac-from-individual-rbac-models'></a>
 
-## Import roles to Microsoft 365 Defender RBAC from individual RBAC models
+## Import roles to Microsoft Defender XDR Unified RBAC from individual RBAC models
 
-You can import existing roles that are maintained as part of individual supported products in Microsoft 365 Defender (for example, Microsoft Defender for Endpoint) to the Microsoft 365 Defender RBAC model.
+You can import existing roles that are maintained as part of individual supported products in Microsoft Defender XDR (for example, Microsoft Defender for Endpoint) to the Microsoft Defender XDR Unified RBAC model.
 
-Importing roles will migrate and maintain the roles with full parity in relation to their permissions and user assignments in the Microsoft 365 Defender RBAC model.
+Importing roles will migrate and maintain the roles with full parity in relation to their permissions and user assignments in the Microsoft Defender XDR Unified RBAC model.
 
 > [!NOTE]
 > Once roles are migrated, you can modify the imported roles and change the level of permissions as needed.
 
-The following steps guide you on how to import roles into Microsoft 365 Defender RBAC:
+The following steps guide you on how to import roles into Microsoft Defender XDR Unified RBAC:
 
 > [!IMPORTANT]
-> You must be a Global Administrator or Security Administrator in Azure Active Directory, or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+> You must be a Global Administrator or Security Administrator in Microsoft Entra ID, or have all the **Authorization** permissions assigned in Microsoft Defender XDR Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.
-3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
+3. Select **Roles** under Microsoft Defender XDR to get to the Permissions and roles page.
 4. Select **Import role**.
 5. Select the products you want to import roles from.
 
     :::image type="content" source="../../media/defender/m365-defender-import-workloads.png" alt-text="Screenshot of the import workloads page" lightbox="../../media/defender/m365-defender-import-workloads.png":::
 
-6. Select **Next** to choose the roles to import. You can choose all roles or select specific roles from the list. You can always repeat the import action and import other roles at a later date.
-7. Review the roles you want to import and select **Submit**.
-8. A confirmation message appears and at this point you select **Done**.
+6. Select **Next** to choose the roles to import. You can choose all roles or select specific roles from the list. Select the role name to review the permissions and assigned users or groups for that specific role.
+7. Select the roles you want to import and select **Next**.
+
+> [!NOTE]
+> If the role you want to import appears in the **Roles not eligible for import** list, it contains assignments for users or user groups that no longer exist in Entra ID.
+>
+> To import this role to Unified RBAC, remove the user or user group from the role in the original RBAC model. Select the role to view the list of users that still exist for that role to determine which user or group to remove.
+
+8. Select **Submit**.
+9. Select **Done** on the confirmation page.
 
 Now that you have imported your roles you will be able to [View and edit roles](edit-delete-rbac-roles.md) and activate the workloads.
 
-For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new or imported roles, you'll need to activate the new Microsoft 365 Defender RBAC model. For more information, see [Activate the workloads](activate-defender-rbac.md).
+For the Microsoft Defender XDR security portal to start enforcing the permissions and assignments configured in your new or imported roles, you'll need to activate the new Microsoft Defender XDR Unified RBAC model. For more information, see [Activate the workloads](activate-defender-rbac.md).
 
 Imported roles appear in the **Permissions and roles** list together with any custom roles you might have created. All imported roles will be marked as **Imported** in the description. Once you edit an imported role it will no longer be marked as **Imported**.
 
@@ -71,5 +76,7 @@ Imported roles appear in the **Permissions and roles** list together with any cu
 
 ## Next steps
 
-- [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+- [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
 - [Edit or delete roles](edit-delete-rbac-roles.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
+

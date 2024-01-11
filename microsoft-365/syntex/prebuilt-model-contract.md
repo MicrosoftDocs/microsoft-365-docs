@@ -2,11 +2,13 @@
 title: Use a prebuilt model to extract information from contracts in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
+ms.date: 08/05/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -108,8 +110,4 @@ To rename an extractor from the **Extractors** panel:
 - To save changes and return to the model home page, on the **Extractors** panel, select **Save and exit**.
 
 - If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
-
-## Change the view in a document library
-
-For information about how to set the default view and how to change the view of a document library, see [Choose the view in a document library](choose-library-view.md).
 

@@ -40,7 +40,7 @@ This is built into Microsoft 365 and helps you secure and manage your users' mob
 
 ## Choose between the two options
 
-To help you better assess which device management option is best for you, see [Choose between Basic Mobility Security and Intune](/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intunee).
+To help you better assess which device management option is best for you, see [Choose between Basic Mobility Security and Intune](/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune).
 
 Based on your assessment, get started managing your devices with:
 
@@ -49,10 +49,10 @@ Based on your assessment, get started managing your devices with:
  
 ## Identity and device access recommendations
 
-Microsoft provides a set of recommendations for [identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For device access, use the recommendations and settings in these articles:
+Microsoft provides a set of recommendations for [identity and device access](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md) to ensure a secure and productive workforce. For device access, use the recommendations and settings in these articles:
 
-- [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
-- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
+- [Prerequisites](../security/office-365-security/zero-trust-identity-device-access-policies-prereq.md)
+- [Common identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-common.md)
 
 ## How Contoso did device management for Microsoft 365
 

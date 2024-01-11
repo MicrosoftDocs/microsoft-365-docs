@@ -2,9 +2,9 @@
 title: Leverage term store taxonomy when creating an extractor in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 09/26/2022
+ms.date: 05/26/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

@@ -4,7 +4,7 @@ description: Demonstrates how Controlled Folder Access protects valuable data fr
 keywords: Microsoft Defender for Endpoint, Controlled folder access protection, Controlled folder access demonstration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +18,7 @@ ms.collection:
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
+ms.subservice: asr
 ms.date: 10/21/2022
 ---
 
@@ -128,3 +128,4 @@ Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.micros
 
 ## See also
 [Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

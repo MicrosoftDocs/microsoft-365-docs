@@ -19,7 +19,7 @@ f1.keywords:               NOCSH
 ---
 # Responding to ransomware attacks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender-for-office.md)]
 
 When you suspect you were or are currently under a ransomware attack, establish secure communications with your incident response team immediately. They can perform the following response phases to disrupt the attack and mitigate the damage:
 
@@ -35,7 +35,7 @@ Containment and investigation should occur as simultaneously as possible; howeve
 
 ### Step 1: Assess the scope of the incident
 
-Run through this list of questions and tasks to discover the extent of the attack. Microsoft 365 Defender can provide a consolidated view of all impacted or at-risk assets to aid in your incident response assessment. See [Incident response with Microsoft 365 Defender](incidents-overview.md). You can use the alerts and the evidence list in the incident to determine:
+Run through this list of questions and tasks to discover the extent of the attack. Microsoft Defender XDR can provide a consolidated view of all impacted or at-risk assets to aid in your incident response assessment. See [Incident response with Microsoft Defender XDR](incidents-overview.md). You can use the alerts and the evidence list in the incident to determine:
 
 * Which user accounts might be compromised?
   * Which accounts were used to deliver the payload?
@@ -56,7 +56,7 @@ Run through this list of tasks and questions to protect existing systems from at
 
 * If you have online backups, consider disconnecting the backup system from the network until you're confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](/security/compass/backup-plan-to-protect-against-ransomware).
 * If you're experiencing or expect an imminent and active ransomware deployment:
-  * [Suspend privileged and local accounts](./investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft 365 Defender portal.
+  * [Suspend privileged and local accounts](./investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft Defender portal.
   * Stop all [remote logon sessions](/defender-for-identity/playbook-domain-dominance).
   * Reset the compromised user account passwords and require the users of compromised user accounts to sign in again.
   * Do the same for user accounts that might be compromised.
@@ -97,8 +97,8 @@ DeviceLogonEvents
 * Quarantine and add indicators for files that are infected.
 * Ensure that your antivirus solution is configurable in its optimal protection state. For Microsoft Defender Antivirus, this includes:
   * [Real time protection](../defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
-  * [Tamper protection](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) is enabled. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Advanced features > Tamper protection**.
-  * [Attack surface reduction (ASR)](../defender-endpoint/enable-attack-surface-reduction.md) rules are enabled.
+  * [Tamper protection](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) is enabled. In the Microsoft Defender portal, select **Settings > Endpoints > Advanced features > Tamper protection**.
+  * [Attack surface reduction](../defender-endpoint/enable-attack-surface-reduction.md) rules are enabled.
   * [Cloud protection](../defender-endpoint/enable-attack-surface-reduction.md) is enabled.
 * Disable Exchange ActiveSync and OneDrive sync.
   * To disable Exchange ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync).
@@ -130,7 +130,7 @@ Use this section to investigate the attack and plan your response.
 
 ### Identify the ransomware process
 
-* Using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
+* Using [advanced hunting](advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
 
 ### Look for exposed credentials in the infected devices
 
@@ -257,3 +257,4 @@ Recover deleted email.
 ### Step 9: Re-enable Exchange ActiveSync and OneDrive sync
 
 * After you've cleaned your computers and devices and recovered the data, you can re-enable Exchange ActiveSync and OneDrive sync that you previously disabled in step 3 of containment.
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

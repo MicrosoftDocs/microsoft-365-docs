@@ -2,7 +2,7 @@
 title: Schedule antivirus scans using PowerShell
 description: Schedule antivirus scans using PowerShell
 keywords: quick scan, full scan, antivirus, schedule, PowerShell
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,12 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.topic: how-to
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -90,3 +91,4 @@ For more information about how to use PowerShell with Microsoft Defender Antivir
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

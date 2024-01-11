@@ -25,7 +25,7 @@ description: "Summary: Configure and test password reset for your Microsoft 365 
 
 *This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-Azure Active Directory (Azure AD) self-service password reset (SSPR) allows users to reset or unlock their passwords or accounts.
+Microsoft Entra self-service password reset (SSPR) allows users to reset or unlock their passwords or accounts.
 
 This article describes how to configure and test password resets in your Microsoft 365 test environment.
 
@@ -37,7 +37,7 @@ Setting up SSPR involves three phases:
 ![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf).
 
 ## Phase 1: Configure password hash synchronization for your Microsoft 365 test environment
 
@@ -51,7 +51,7 @@ This configuration consists of:
   
 - A Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.
-- Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Microsoft 365 subscription.
+- Microsoft Entra Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Microsoft Entra tenant of your Microsoft 365 subscription.
 
 ## Phase 2: Enable password writeback
 
@@ -61,16 +61,16 @@ You must have password writeback enabled to use password reset.
   
 ## Phase 3: Configure and test password reset
 
-In this phase, configure password reset in the Azure AD tenant through group membership, and then verify that it works.
+In this phase, configure password reset in the Microsoft Entra tenant through group membership, and then verify that it works.
 
-First, enable password reset for the accounts in a specific Azure AD group.
+First, enable password reset for the accounts in a specific Microsoft Entra group.
 
 1. From a private instance of your browser, open [https://portal.azure.com](https://portal.azure.com), and then sign in with the credentials of your global administrator account.
-2. In the Azure portal, select **Azure Active Directory** > **Groups** > **New group**.
+2. In the Azure portal, select **Microsoft Entra ID** > **Groups** > **New group**.
 3. Set the **Group type** to **Security**, **Group name** to **PWReset**, and the **Membership type** to **Assigned**.
 4. Select **Members**, find and select **User 3**, select **Select**, and then select **Create**.
 5. Close the **Groups** pane.
-6. In the Azure Active Directory pane, select **Password reset** in the left navigation.
+6. In the Microsoft Entra pane, select **Password reset** in the left navigation.
 7. In the **Password reset-Properties** pane, under the option **Self Service Password Reset Enabled**, choose **Selected**.
 8. Select **Select group**, select the **PWReset** group, and then select **Select** > **Save**.
 9. Close the private browser instance.

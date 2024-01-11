@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 security # < 60 chars
-summary: Protect your Microsoft 365 environment with Microsoft 365 Defender # < 160 chars
+summary: Protect your Microsoft 365 environment with Microsoft Defender XDR # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -14,7 +14,7 @@ metadata:
   ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/22/2022 #Required; mm/dd/yyyy format.
+  ms.date: 07/28/2023 #Required; mm/dd/yyyy format.
   ms.custom: intro-hub-or-landing
 
 # highlightedContent section (optional)
@@ -23,7 +23,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Zero Trust and Microsoft 365 Defender
+    - title: Zero Trust and Microsoft Defender XDR
       itemType: get-started
       url: /microsoft-365/security/microsoft-365-zero-trust
     # Card
@@ -31,7 +31,7 @@ highlightedContent:
       itemType: overview
       url: /microsoft-365/solutions/ransomware-protection-microsoft-365
     # Card
-    - title: Microsoft 365 Defender Tech Community
+    - title: Microsoft Defender XDR Tech Community
       itemType: whats-new
       url: https://techcommunity.microsoft.com/t5/microsoft-365-defender/bd-p/MicrosoftThreatProtection
     # Card
@@ -67,7 +67,7 @@ conceptualContent:
         links:
          - url: /microsoft-365/security/defender/incidents-overview
            itemType: overview
-           text: Incident response with Microsoft 365 Defender
+           text: Incident response with Microsoft Defender XDR
          - url: /microsoft-365/security/defender/manage-incidents
            itemType: how-to-guide
            text: Manage incidents
@@ -84,14 +84,14 @@ conceptualContent:
          - url: /microsoft-365/security/office-365-security/attack-simulation-training-insights
            itemType: overview
            text: Insights and reporting for attack simulation
-         - url: /microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes
+         - url: /microsoft-365/security/office-365-security/advanced-delivery-policy-configure
            itemType: how-to-guide
            text: Configure 3rd party phishing simulation
 
         # Card
       - title: Enable safe email messages
         links:
-         - url: /microsoft-365/security/office-365-security/protect-against-threats
+         - url: /microsoft-365/security/office-365-security/mdo-security-comparison
            itemType: overview
            text: Get Started with Defender for Office 365
          - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
@@ -126,10 +126,10 @@ conceptualContent:
 additionalContent:
   # Supports up to 4 subsections
   sections:
-  - title: Microsoft 365 Defender products and services # < 60 chars (optional)
+  - title: Microsoft Defender XDR products and services # < 60 chars (optional)
     items:
     # Card
-    - title: Microsoft 365 Defender
+    - title: Microsoft Defender XDR
       links:
       - url: /microsoft-365/security/defender/microsoft-365-defender
         text: Overview
@@ -179,18 +179,15 @@ additionalContent:
     summary: Explore topics in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
     items:
         # Card
-        - title: Microsoft 365 Defender Ninja training
-          summary: Enhance your cybersecurity skills with the Microsoft 365 Defender Ninja training.
+        - title: Microsoft Defender XDR Ninja training
+          summary: Enhance your cybersecurity skills with the Microsoft Defender XDR Ninja training.
           url: https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376
                   # Card
         - title: Recommended Learning Paths
-          summary: Start your Microsoft 365 Defender learning journey with our recommended learning paths.
+          summary: Start your Microsoft Defender XDR learning journey with our recommended learning paths.
           url: https://learn.microsoft.com/en-us/training/m365/defender
         # Card
         - title: Security Operations Analyst Certification & Exams
           summary: Prepare yourself for Microsoft Security certifications.
           url: https://learn.microsoft.com/en-us/certifications/browse/
           
-
-
-

@@ -3,7 +3,7 @@ title: "View licensed and unlicensed Microsoft 365 users with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/21/2020
+ms.date: 12/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,13 +13,15 @@ search.appverid:
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
-ms.custom: 
-- O365ITProTrain
-- Ent_Office_Other
-- PowerShell
-- seo-marvel-apr2020
+ms.custom:
+  - O365ITProTrain
+  - Ent_Office_Other
+  - PowerShell
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: This article explains how to use PowerShell to view licensed and unlicensed Microsoft 365 user accounts.
 ---
@@ -91,7 +93,7 @@ Write-Host "Found $e5licensedUserCount E5 licensed users."
 ## Use the Azure Active Directory PowerShell for Graph module
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
- 
+
 To view the list of all user accounts in your organization that have NOT been assigned any of your licensing plans (unlicensed users), run the following command:
   
 ```powershell
@@ -106,9 +108,8 @@ Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLic
 
 >[!Note]
 >To list all of the users in your subscription, use the `Get-AzureAdUser -All $true` command.
->
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -119,8 +120,7 @@ Get-MsolUser -All
 ```
 
 >[!Note]
->PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
->
+>PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
 
 To view the list of all unlicensed user accounts in your organization, run the following command:
   

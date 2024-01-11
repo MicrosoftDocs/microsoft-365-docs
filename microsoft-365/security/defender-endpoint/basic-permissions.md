@@ -5,11 +5,13 @@ keywords: assign user roles, assign read and write access, assign read only acce
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.custom:
+  - has-azure-ad-ps-ref
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -22,13 +24,13 @@ ms.date: 12/18/2020
 
 # Use basic permissions to access the portal
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Azure Active Directory
+- Microsoft Entra ID
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-basicaccess-abovefoldlink)
 
@@ -55,14 +57,14 @@ You can assign users with one of the following levels of permissions:
   > [!NOTE]
   > You need to run the PowerShell cmdlets in an elevated command-line.
 
-- Connect to your Azure Active Directory. For more information, see [Connect-MsolService](/powershell/module/msonline/connect-msolservice).
+- Connect to your Microsoft Entra ID. For more information, see [Connect-MsolService](/powershell/module/msonline/connect-msolservice).
 
-  - **Full access**: Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" AAD built-in roles.
+  - **Full access**: Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package. Assigning full access rights requires adding the users to the "Security Administrator" or "Global Administrator" Microsoft Entra built-in roles.
   - **Read-only access**: Users with read-only access can log in, view all alerts, and related information.
 
     They will not be able to change alert states, submit files for deep analysis or perform any state changing operations.
 
-    Assigning read-only access rights requires adding the users to the "Security Reader" Azure AD built-in role.
+    Assigning read-only access rights requires adding the users to the "Security Reader" Microsoft Entra built-in role.
 
 Use the following steps to assign security roles:
 
@@ -78,12 +80,13 @@ Use the following steps to assign security roles:
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-For more information, see [Add or remove group members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
+For more information, see [Add or remove group members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
 
 ## Assign user access using the Azure portal
 
-For more information, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+For more information, see [Assign administrator and non-administrator roles to users with Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 ## Related topic
 
 - [Manage portal access using RBAC](rbac.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

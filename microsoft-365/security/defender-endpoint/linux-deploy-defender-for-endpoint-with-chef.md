@@ -2,20 +2,21 @@
 title: How to Deploy Defender for Endpoint on Linux with Chef
 description: Learn how to deploy Defender for Endpoint on Linux with Chef
 keywords: microsoft, defender, atp, linux, scans, antivirus, microsoft defender for endpoint (linux)
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
-author: lovina-saldanha
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ms.date: 04/07/2021
 ---
@@ -46,7 +47,7 @@ After the cookbook is created, create a files folder inside the cookbook folder 
 mkdir mdatp/files
 ```
 
-Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft 365 Defender portal to this new files folder.
+Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft Defender portal to this new files folder.
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
@@ -160,3 +161,4 @@ then
  end
 end
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

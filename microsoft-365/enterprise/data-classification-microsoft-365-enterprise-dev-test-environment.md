@@ -35,7 +35,7 @@ Classifying data in your test environment involves three phases:
 ![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf).
   
 ## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
@@ -50,7 +50,7 @@ If you want to configure retention labels in a simulated enterprise, follow the 
 
 In this phase, create the retention labels for the different levels of retention for SharePoint Online documents folders:
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> with your global admin account.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> with your global admin account.
 1. From the **Home - Microsoft 365 security** tab of your browser, select **Classification** > **Retention labels**.
 1. Select **Create a label**.
 1. In the **Name your label** pane, enter **Internal Public** in **Name your label**, and then select **Next**.

@@ -15,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- PowerShell
-- Ent_Office_Other
-- O365ITProTrain
-- seo-marvel-apr2020
+ms.custom:
+  - PowerShell
+  - Ent_Office_Other
+  - O365ITProTrain
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: How to use PowerShell to create individual or multiple Microsoft 365 user accounts.
 ---
@@ -40,7 +41,7 @@ When you create user accounts in PowerShell, certain account properties are alwa
 |**LastName** <br/> |No  <br/> ||
 |**LicenseAssignment** <br/> |No  <br/> |This is the licensing plan (also known as the [license plan or SKU](/azure/active-directory/enterprise-users/licensing-service-plan-reference)) from which an available license is assigned to the user account. The license defines the Microsoft 365 services that are available to the account. You don't have to assign a license to a user when you create the account, but the account must have a license to access Microsoft 365 services. You have 30 days to license the user account after you create it. |
 |**Password** <br/> |No  <br/> | If you don't specify a password, a random password is assigned to the user account, and the password is visible in the results of the command. If you specify a password, it needs to be 8 to 16 ASCII text characters of the following types: lowercase letters, uppercase letters, numbers, and symbols.<br/> |
-|**UsageLocation** <br/> |No  <br/> |This is a valid ISO 3166-1 alpha-2 country code. For example, *US* for the United States, and *FR* for France. It's important to provide this value, because some Microsoft 365 services aren't available in certain countries. You can't assign a license to a user account unless the account has this value configured. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
+|**UsageLocation** <br/> |No  <br/> |This is a valid ISO 3166-1 alpha-2 country code. For example, *US* for the United States, and *FR* for France. It's important to provide this value, because some Microsoft 365 services aren't available in certain countries/regions. You can't assign a license to a user account unless the account has this value configured. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
 
 >[!Note]
 >[Learn how to create user accounts](../admin/add-users/add-users.md) by using the Microsoft 365 admin center.
@@ -68,7 +69,7 @@ $PasswordProfile.Password="3Rv0y1q39/chsy"
 New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -MailNickName calebs -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -81,7 +82,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets that have *Msol* in their name. Run these cmdlets from Windows PowerShell.
+>PowerShell Core doesn't support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets that have *Msol* in their name. Run these cmdlets from Windows PowerShell.
 >
 
 To list the available [licensing plan names](/azure/active-directory/enterprise-users/licensing-service-plan-reference), use this command:

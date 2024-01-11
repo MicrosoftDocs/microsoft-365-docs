@@ -2,9 +2,9 @@
 title: Create a content center in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 07/01/2022
+ms.date: 07/06/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -46,18 +46,15 @@ To create a new content center:
 
 1. On the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**SharePoint admin center** > **Active sites**</a>.
 
-2. On the **Active sites** page, select **Create**, and then select **Other options**.
+2. On the **Active sites** page, select **Create**, and then select **Browse more sites**.
 
 3. On the **Choose a template** menu, select **Content center**.
 
-4. For the new site, provide a **Site name**, **Primary administrator**, and a **Language**.</br>
-
-   > [!NOTE] 
-   > You can select a content center site to render in any of the available languages, but note that currently models can only be created for English files. Also note that like other site templates, the default site language isn't editable after the site is created.
+4. For the new site, provide a **Site name**, **Primary administrator**, and a **Language**.
 
 5. Select **Finished**.
  
-After you create a content center site, you'll see it listed on <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the SharePoint admin center. 
+After you create a content center site, you'll see it listed on <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the SharePoint admin center.
 
 ### Give access to additional users
  

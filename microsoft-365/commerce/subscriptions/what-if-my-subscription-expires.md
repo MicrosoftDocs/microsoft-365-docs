@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sgautam, jmueller
+ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -44,7 +44,7 @@ The following table explains what you can expect when a paid Microsoft 365 for b
 
 | Active | Expired <br/>(30 days\*) | Disabled <br/>(90 days\*) | Deleted |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *Data accessible to all*                                               | *Data accessible to all*                                                     | *Data accessible to admins only*                                             | **Data deleted<br/>Azure Active Directory is removed, if not in use by other services** |
+| *Data accessible to all*                                               | *Data accessible to all*                                                     | *Data accessible to admins only*                                             | **Data deleted<br/>Microsoft Entra ID is removed, if not in use by other services** |
 | Users have normal access to Microsoft 365, files, and Microsoft 365 apps   | Users have normal access to Microsoft 365, files, and Microsoft 365 apps              | Users can't access Microsoft 365 apps                        | Users can't access Microsoft 365, files, or Microsoft 365 apps                                     |
 | Admins have normal access to Microsoft 365, data, and Microsoft 365 apps | Admins can access the admin center                                           | Admins can access the admin center, but can't assign licenses to users       | Admins can access the admin center to buy and manage other subscriptions             |
 |                                                                        | Global or billing admins can reactivate the subscription in the admin center | Global or billing admins can reactivate the subscription in the admin center |                                                                                           |

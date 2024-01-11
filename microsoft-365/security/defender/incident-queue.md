@@ -1,10 +1,9 @@
 ---
-title: Prioritize incidents in Microsoft 365 Defender
-description: Learn how to filter incidents from the incident queue in Microsoft 365 Defender
+title: Prioritize incidents in Microsoft Defender XDR
+description: Learn how to filter incidents from the incident queue in Microsoft Defender XDR
 keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response, triage
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -23,27 +22,28 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 05/18/2023
+ms.date: 12/05/2023
 ---
 
-# Prioritize incidents in Microsoft 365 Defender
+# Prioritize incidents in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
 
-Microsoft 365 Defender applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility in Microsoft 365 Defender has across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
+- Microsoft Defender XDR
+
+Microsoft Defender XDR applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft Defender XDR also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility in Microsoft Defender XDR has across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
 
 The **Incident queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision, a process known as incident triage.
 
-You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's an example.
+You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incident section showing the incident queue in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incident section showing the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 The **Most recent incidents and alerts** section shows a graph of the number of alerts received and incidents created in the last 24 hours.
 
-By default, the incident queue in the Microsoft 365 Defender portal displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first.
+By default, the incident queue in the Microsoft Defender portal displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first.
 
 The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This filtering helps you make an informed decision regarding the prioritization of incidents for analysis.
 
@@ -62,7 +62,7 @@ The **Filters** list above the list of incidents shows the currently applied fil
 
 From the default incident queue, you can select **Filter** to see a **Filter** pane, from which you specify a filtered set of incidents. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="The Filters pane for the incident queue in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
+:::image type="content" source="../../media/incidents-queue/fig1-newfilters.png" alt-text="The Filters pane for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/fig1-newfilters.png":::
 
 You can also see the **Filter** pane by selecting any of the filters in the **Filters** list above the list of incidents.
 
@@ -74,7 +74,7 @@ This table lists the filter names that are available.
 | Severity | The severity of an incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention. Select **High**, **Medium**, **Low**, or **Informational**. |
 | Incident assignment | Select the assigned user or users. |
 | Multiple service sources  | Specify whether the filter is for more than one service source. |
-| Service sources  | Specify incidents that contain alerts from: App Governance, Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
+| Service sources  | Specify incidents that contain alerts from: App Governance, Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
 | Tags | Select one or multiple tag names from the list. |
 | Multiple categories  | Specify whether the filter is for more than one category. |
 | Categories | Choose categories to focus on specific tactics, techniques, or attack components seen. |
@@ -90,7 +90,11 @@ This table lists the filter names that are available.
 
 The default filter is to show all alerts and incidents with a status of **New** and **In progress** and with a severity of **Low**, **Medium**, or **High**.
 
-You can quickly remove a filter by selecting the **X** in the name of a filter in the **Filters** list. 
+You can quickly remove a filter by selecting the **X** in the name of a filter in the **Filters** list.
+
+You can also create filter sets within the incidents page by selecting the **create filter sets**.
+
+:::image type="content" source="../../media/incidents-queue/fig2-newfilters.png" alt-text="The create filter sets option for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/fig2-newfilters.png":::
 
 ## Save custom filters as URLs
 
@@ -111,7 +115,7 @@ Once you have compiled and stored your list of useful filter views as URLs, use 
 
 ## Search for incidents
 
-From the **Search for name or ID** box above the list of incidents, you can type the incident ID or the incident name. When you select an incident from the list of search results, the Microsoft 365 Defender portal opens a new tab with the properties of the incident, from which you can start your [investigation](investigate-incidents.md).
+From the **Search for name or ID** box above the list of incidents, you can type the incident ID or the incident name. When you select an incident from the list of search results, the Microsoft Defender portal opens a new tab with the properties of the incident, from which you can start your [investigation](investigate-incidents.md).
 
 ## Search for impacted assets
 
@@ -140,3 +144,4 @@ After you've determined which incident requires the highest priority, select it 
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

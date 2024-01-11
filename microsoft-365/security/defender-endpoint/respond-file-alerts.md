@@ -1,11 +1,7 @@
 ---
 title: Take response actions on a file in Microsoft Defender for Endpoint
 description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
-keywords: respond, stop and quarantine, block file, deep analysis
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
@@ -14,15 +10,16 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
-ms.date: 05/29/2023
+ms.date: 08/07/2023
 ---
 
 # Take response actions on a file
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -40,14 +37,16 @@ Response actions are available on a file's detailed profile page. Once on this p
 
 Response actions run along the top of the file page, and include:
 
-- Stop and Quarantine File
-- Add Indicator
+- Stop and quarantine file
+- Manage indicator
 - Download file 
 - Collect file
 - Ask Defender Experts
-- Action center
+- Manual actions
+- Go hunt
+- Deep analysis
 
-You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** tab. It's located below the file information cards.
+You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** action.
 
 Some actions require certain permissions. The following table describes what action certain permissions can take on portable executable (PE) and non-PE files:
 
@@ -153,14 +152,20 @@ The **Download file** button can have the following states:
 
 - **Disabled** - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files.
 
-  The following permissions are required: 
+  The following permissions are required:
+
+  For Microsoft Defender XDR Unified role-based access control (RBAC):
+
+     - Add file collection permission in Microsoft Defender XDR Unified (RBAC)
+ 
+  For Microsoft Defender for Endpoint role-based access control (RBAC):
 
     For Portable Executable file (.exe, .sys, .dll, and others)
     - Global admin or Advanced live response or Alerts 
 
     Non-Portable Executable file (.txt, .docx, and others) 
     - Global admin or Advanced live response
-    - Tenants with [role-based access (RBAC) permissions](/microsoft-365/security/defender/manage-rbac.md) enabled
+    - Tenants with [role-based access (RBAC) permissions](../defender/manage-rbac.md) enabled
 
 
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
@@ -250,7 +255,7 @@ You can also edit indicators from  the **Settings** page, under **Rules** \> **I
 
 ## Consult a threat expert
 
-Select Ask Defender Experts to get more insights from Microsoft experts on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
+Select Ask Defender Experts to get more insights from Microsoft experts on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
 
 See [Ask Defender Experts](experts-on-demand.md) for details.
 
@@ -280,8 +285,11 @@ The deep analysis summary includes a list of observed *behaviors*, some of which
 
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
-Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
+Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available at the top of the file's page. Select the three dots to access the **Deep analysis** action.
 
+:::image type="content" source="../../media/defender-endpoint/deep-analysis.png" alt-text="Screenshot of the Deep analysis action" lightbox="../../media/defender-endpoint/deep-analysis.png":::
+
+Learn about deep analysis in the following video:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
 **Submit for deep analysis** is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.
@@ -289,10 +297,10 @@ Use the deep analysis feature to investigate the details of any file, usually du
 > [!NOTE]
 > Only files from Windows 10, Windows 11, and Windows Server 2012 R2+ can be automatically collected.
 
-You can also submit a sample through the [Microsoft 365 Defender Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11 or Windows Server 2012 R2+), and wait for **Submit for deep analysis** button to become available.
+You can also submit a sample through the [Microsoft Defender portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11 or Windows Server 2012 R2+), and wait for **Submit for deep analysis** button to become available.
 
 > [!NOTE]
-> Due to backend processing flows in the Microsoft 365 Defender Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
+> Due to backend processing flows in the Microsoft Defender portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
 
 ### Submit files for deep analysis
 
@@ -360,3 +368,4 @@ If you come across a problem when trying to submit a file, try each of the follo
 - [Take response actions on a device](respond-machine-alerts.md)
 - [Investigate files](investigate-files.md)
 - [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -4,12 +4,11 @@ description: Learn how to set up, view, and edit your web content filtering poli
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 06/20/2023
+ms.date: 06/28/2023
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium 
-ms.reviewer: jomaun
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -30,7 +29,7 @@ In Defender for Business, you can have one web content filtering policy and it's
 
 ## Set up web content filtering
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Web content filtering** > **+ Add policy**.
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **Rules** > **Web content filtering**, and then select **+ Add policy**.
 
 2. Specify a name and description for your policy.
 
@@ -66,4 +65,5 @@ The following table describes web content categories you can choose for your web
 
 - [Set up controlled folder access](mdb-controlled-folder-access.md)
 - [Enable your attack surface reduction rules](mdb-asr.md).
-- [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
+- [Review settings for advanced features and the Microsoft Defender portal](mdb-portal-advanced-feature-settings.md).
+

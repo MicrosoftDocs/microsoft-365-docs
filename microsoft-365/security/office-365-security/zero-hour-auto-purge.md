@@ -22,13 +22,13 @@ ms.custom:
 description: Zero-hour auto purge (ZAP) moves delivered messages in Microsoft 365 mailboxes to the Junk Email folder or quarantine if those messages are retroactively found to be spam, phishing, or contain malware.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/23/2023
+ms.date: 11/16/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
-# Zero-hour auto purge (ZAP) in Microsoft 365
+# Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -44,7 +44,7 @@ Spam and malware signatures in the service are updated in real-time on a daily b
 - Zero-day malware that was undetectable during mail flow.
 - Content that's weaponized after being delivered to users.
 
-ZAP addresses these issues by continually monitoring spam and malware signature updates in the service. ZAP can find and take automated actions on messages that are already in a user's mailbox up to 48 hours after delivery. ZAP is seamless for users. Users aren't notified if a message is detected and moved.
+ZAP addresses these issues by continually monitoring spam and malware signature updates in the service, and is seamless for users. ZAP finds and takes automated action on messages that are already in a user's mailbox. ZAP's search is limited to the last 48 hours of delivered email. Users aren't notified if ZAP detects and moves a message.
 
 Watch this short video to learn how ZAP in Microsoft Defender for Office 365 automatically detects and neutralizes threats in email.
 
@@ -54,7 +54,7 @@ Watch this short video to learn how ZAP in Microsoft Defender for Office 365 aut
 
 ### Zero-hour auto purge (ZAP) for malware
 
-For *read or unread messages* that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. By default, only admins can view and manage quarantined malware messages. But, admins can create and use _quarantine policies_ to define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+For _read or unread messages_ that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. By default, only admins can view and manage quarantined malware messages. But, admins can create and use _quarantine policies_ to define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 > [!NOTE]
 > Users can't release their own messages that were quarantined as malware, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
@@ -63,22 +63,24 @@ ZAP for malware is enabled by default in anti-malware policies. For more informa
 
 ### Zero-hour auto purge (ZAP) for phishing
 
-For *read or unread messages* that are identified as phishing (not high confidence phishing) after delivery, the ZAP outcome depends on the action that's configured for a **Phishing email** verdict in the applicable anti-spam policy. The available actions for a **Phishing email** verdict and the possible ZAP outcomes are described in the following list:
+For _read or unread messages_ that are identified as _phishing_ (not _high confidence phishing_) after delivery, the ZAP outcome depends on the action that's configured for a **Phishing** verdict in the applicable anti-spam policy. The available actions and the possible ZAP outcomes are described in the following list:
 
 - **Add X-Header**, **Prepend subject line with text**, **Redirect message to email address**, **Delete message**: ZAP takes no action on the message.
-- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder.
+
+  This is the default action for a **Phishing** verdict in the default anti-spam policy and custom anti-spam policies that you create in PowerShell.
+
 - **Quarantine message**: ZAP quarantines the message.
 
-By default, ZAP for phishing is enabled in anti-spam policies, and the default action for the **Phishing email** filtering verdict is described in the following list:
+  This is the default action for a **Phishing** verdict in the [Standard and Strict preset security policies](preset-security-policies.md#profiles-in-preset-security-policies), and in custom anti-spam policies that you create in the Defender portal.
 
-- **Move message to Junk Email folder** in the default anti-spam policy, and custom anti-spam policies that you create in PowerShell.
-- **Quarantine message** in the [Standard and Strict preset security policies](preset-security-policies.md#profiles-in-preset-security-policies), and in custom anti-spam policies that you create in the Defender portal.
+By default, ZAP for phishing is enabled in anti-spam policies.
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](anti-spam-policies-configure.md).
 
 ### Zero-hour auto purge (ZAP) for high confidence phishing
 
-For *read or unread messages* that are identified as high confidence phishing after delivery, ZAP quarantines the message. By default, only admins can view and manage quarantined high confidence phishing messages. But, admins can create and use _quarantine policies_ to define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+For _read or unread messages_ that are identified as _high confidence phishing_ after delivery, ZAP quarantines the message. By default, only admins can view and manage quarantined high confidence phishing messages. But, admins can create and use _quarantine policies_ to define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 > [!NOTE]
 > Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.
@@ -87,16 +89,24 @@ ZAP for high confidence phishing is enabled by default. For more information, se
 
 ### Zero-hour auto purge (ZAP) for spam
 
-For *unread messages* that are identified as spam after delivery, the ZAP outcome depends on the action that's configured for the **Spam** verdict in the applicable anti-spam policy. The available actions for a **Spam** verdict and the possible ZAP outcomes are described in the following list:
+For _unread messages_ that are identified as _spam_ or _high confidence spam_ after delivery, the ZAP outcome depends on the action that's configured for a **Spam** or **High confidence spam** verdict in the applicable anti-spam policy. The available actions and the possible ZAP outcomes are described in the following list:
 
 - **Add X-Header**, **Prepend subject line with text**, **Redirect message to email address**, **Delete message**: ZAP takes no action on the message.
-- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
-- **Quarantine message**: ZAP quarantines the message. By default, end-users can view and manage spam quarantined messages where they're a recipient. But, admins can create and use _quarantine policies_ to define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder.
 
-By default, ZAP for spam is enabled in anti-spam policies, and the default action for the **Spam** filtering verdict is described in the following list:
+  For the **Spam** verdict, this is the default action in the default anti-spam policy, new custom anti-spam policies, and the [Standard preset security policy](preset-security-policies.md#profiles-in-preset-security-policies).
 
-- **Move message to Junk Email folder** in the default anti-spam policy, new custom anti-spam policies and the [Standard preset security policy](preset-security-policies.md#profiles-in-preset-security-policies).
-- **Quarantine message** in the [Strict preset security policy](preset-security-policies.md#profiles-in-preset-security-policies).
+  For the **High confidence spam** verdict, this is the default action in the default anti-spam policy and new custom anti-spam policies.
+
+- **Quarantine message**: ZAP quarantines the message.
+
+  For the **Spam** verdict, this is the default action in the [Strict preset security policy](preset-security-policies.md#profiles-in-preset-security-policies).
+
+  For the **High confidence spam** verdict, this is the default action in the [Standard and Strict preset security policies](preset-security-policies.md#profiles-in-preset-security-policies).
+
+By default, users can view and manage messages that were quarantined as spam or high confidence spam where they're a recipient. But, admins can create and use _quarantine policies_ to define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+
+By default, ZAP for spam is enabled in anti-spam policies.
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](anti-spam-policies-configure.md).
 
@@ -105,45 +115,72 @@ For more information about configuring spam filtering verdicts, see [Configure a
 To determine if ZAP moved your message, you have the following options:
 
 - **Number of messages**: Use the [Mailflow view in the Mailflow status report](reports-email-security.md#mailflow-view-for-the-mailflow-status-report) to see the number of ZAP-affected messages for the specified date range.
-- **Message details**: Use [Threat Explorer (and real-time detections)](threat-explorer-about.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
+- **Message details**: Use [Threat Explorer (or real-time detections)](threat-explorer-about.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
 
 > [!NOTE]
 > ZAP is not logged in the Exchange mailbox audit logs as a system action.
 
-### Zero-hour auto purge (ZAP) considerations for Microsoft Defender for Office 365
+### Zero-hour auto purge (ZAP) considerations for Safe Attachments in Microsoft Defender for Office 365
 
 ZAP doesn't quarantine messages that are in the process of [Dynamic Delivery](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies) in Safe Attachments policy scanning. If a phishing or spam signal is received for messages in this state, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, or Quarantine), ZAP reverts to the 'Move to Junk' action.
 
 ## Zero-hour auto purge (ZAP) in Microsoft Teams
 
-> [!NOTE]
-> ZAP for Microsoft Teams is currently in Preview, and is available only to customers with Microsoft Defender for Office 365 E5 and Defender for Office P2 subscriptions.
->
-> Currently, ZAP is available only for messages that are identified as malware or high confidence phishing.
+> [!TIP]
+> ZAP for Microsoft Teams is available only to customers with Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 subscriptions. To configure ZAP for Teams protection, see [Microsoft Defender for Office 365 Plan 2 support for Microsoft Teams](mdo-support-teams-about.md).
 
-When a chat message is identified as potentially phishing or malicious in Microsoft Teams, ZAP blocks the message and quarantines it. This message is blocked for both the recipient and the sender. This protection feature applies only to messages in a chat or in a meeting within the organization.
+### ZAP in Teams chats
+
+ZAP is available for internal messages in Teams chats that are identified as malware or high confidence phishing. Currently, external messages aren't supported.
+
+Teams is different than email, because everyone in a Teams chat receives the same copy of the message at the same time (there's no message bifurcation). When ZAP for Teams protection blocks a message, the message is blocked for everyone in the chat. The initial block happens right after delivery, but ZAP occurs up to 48 hours after delivery.
+
+Exclusions for ZAP for Teams protection in Teams chats matter for message _recipients_, not message _senders_. To configure exceptions for Teams chats, see [Configure ZAP for Teams protection in Defender for Office 365 Plan 2](mdo-support-teams-about.md#configure-zap-for-teams-protection-in-defender-for-office-365-plan-2).
+
+ZAP for Teams protection is able to take action on messages for _all_ recipients in a chat if _any_ recipients in the chat aren't excluded from ZAP for Teams protection. Only when _all_ recipients in a chat are excluded from ZAP for Teams protection will ZAP not take action on a message. These scenarios are illustrated in the following table:
+
+|Scenario|Result|
+|---|---|
+|Group chat with Recipients A, B, C, and D. <br/><br/> Recipients A, B, C, and D are excluded from ZAP for Teams protection.|ZAP won't block messages sent to the group chat.|
+|Group chat with Recipients A, B, C, and D. <br/><br/> Only recipients A, B, and C are excluded from ZAP for Teams protection.|ZAP is able to block messages sent to the group chat for all recipients.|
+|Group chat with Recipients A, B, C, and D. <br/><br/> Recipients A, B, C, and D aren't excluded from ZAP for Teams protection. <br/><br/> Sender X is excluded from ZAP for Teams protection and sends a message to the group chat.|ZAP is able to block messages sent to the group chat for all recipients.|
 
 **Sender view**:
 
-:::image type="content" source="../../media/zero-hour-auto-purge-sender.png" alt-text="Image showing how zero-hour auto purge works for the sender." lightbox="../../media/zero-hour-auto-purge-sender.png":::
+:::image type="content" source="../../media/zero-hour-auto-purge-sender.png" alt-text="Image showing how ZAP for Teams protection works for the sender." lightbox="../../media/zero-hour-auto-purge-sender.png":::
 
 **Recipient view**:
 
-:::image type="content" source="../../media/zero-hour-auto-purge-recipient.png" alt-text="Image showing how zero-hour auto purge works for the recipient." lightbox="../../media/zero-hour-auto-purge-recipient.png":::
+:::image type="content" source="../../media/zero-hour-auto-purge-recipient.png" alt-text="Image showing how ZAP for Teams protection works for the recipient." lightbox="../../media/zero-hour-auto-purge-recipient.png":::
 
-Admins can view and manage these quarantined messages in Microsoft Teams. For more information, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams). Currently, you can't view or manage quarantined Teams messages unless you're an admin.
+### ZAP in Teams channels
+
+ZAP for Teams protection supports the following types of Teams channels:
+
+- **Standard channels**: ZAP is available for internal messages. Currently, external messages aren't supported.
+- **Shared channels**: ZAP is available for internal and external messages.
+
+Currently, ZAP isn't available in private channels.
+
+To configure exceptions for ZAP protection for Teams channels, you need the recipient email address. This address is different than the channel email address in the Teams client.
+
+To get the recipient email address to use for exceptions for Teams channel protection, use the **Name and email** value from the **Channel details** section of the Teams Message Entity Panel. For more information, see [The Teams Message Entity Panel in Microsoft Defender for Office 365](teams-message-entity-panel.md).
+
+:::image type="content" source="../../media/teams-message-entity-panel-channel-address.png" alt-text="The correct Teams channel email address from the Teams message entity panel." lightbox="../../media/teams-message-entity-panel-channel-address.png":::
+
+To configure exceptions for Teams channels, see [Configure ZAP for Teams protection in Defender for Office 365 Plan 2](mdo-support-teams-about.md#configure-zap-for-teams-protection-in-defender-for-office-365-plan-2).
 
 ### Zero-hour auto purge (ZAP) for high confidence phishing messages in Teams
 
-For Teams messages that are identified as high confidence phishing after delivery, ZAP blocks and quarantines the message. By default, only admins can view and manage quarantined high confidence phishing messages.
+For messages that are identified as high confidence phishing after delivery, ZAP for Teams protection blocks and quarantines the message. To set the quarantine policy that's used for high confidence phishing detections in ZAP for Teams, see [Microsoft Defender for Office 365 Plan 2 support for Microsoft Teams](mdo-support-teams-about.md).
 
 ### Zero-hour auto purge (ZAP) for malware in Teams messages
 
-For Teams messages that are identified as malware, ZAP blocks and quarantines the message. By default, only admins can view and manage quarantined malware messages.
+For messages that are identified as malware, ZAP for Teams protection blocks and quarantines the message. To set the quarantine policy that's used for malware detections in ZAP for Teams, see [Microsoft Defender for Office 365 Plan 2 support for Microsoft Teams](mdo-support-teams-about.md).
 
-### How to see if ZAP blocked your Teams message
+### How to see if ZAP blocked a Teams message
 
-To find out if ZAP blocked your Teams message, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-messages-in-microsoft-teams).
+Currently, only admins can view and manage messages that were quarantined by ZAP for Teams protection. For more information, see [Use the Microsoft Defender portal to manage Microsoft Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages).
 
 ## Zero-hour auto purge (ZAP) FAQ
 
@@ -161,7 +198,9 @@ ZAP takes action on a message based on the configuration of anti-spam policies a
 
 ### What are the licensing requirements for ZAP?
 
-There are no special licensing requirements for ZAP. ZAP works on all mailboxes hosted in Exchange Online. ZAP doesn't work in on-premises mailboxes that are protected by standalone EOP.
+There are no special licensing requirements for ZAP for malware, spam, and phishing. ZAP works on all mailboxes hosted in Exchange Online. ZAP doesn't work in on-premises mailboxes that are protected by standalone EOP.
+
+ZAP for Teams protection requires Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 licenses.
 
 ### Does ZAP work on messages in other folders in the mailbox (for example, messages moved by Inbox rules)?
 

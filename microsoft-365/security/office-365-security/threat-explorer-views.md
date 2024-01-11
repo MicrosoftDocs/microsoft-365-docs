@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier1
-description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft 365 Defender portal.
+description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft Defender portal.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Views in Threat Explorer and real-time detections
@@ -29,7 +29,7 @@ appliesto:
 
 :::image type="content" source="../../media/explorer-new.png" alt-text="Screenshot of the Threat Explorer page." lightbox="../../media/explorer.png":::
 
-[Threat Explorer](threat-explorer-about.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Microsoft 365 Defender portal. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
+[Threat Explorer](threat-explorer-about.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Microsoft Defender portal. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
 
 - If you have [Microsoft Defender for Office 365](defender-for-office-365.md) Plan 2, then you have Explorer.
 - If you have Microsoft Defender for Office 365 Plan 1, then you have real-time detections.
@@ -58,7 +58,7 @@ To view this report, in Explorer, select **All email** in the top navigation pan
 > [!NOTE] 
 > If you get a **Too much data to display** error, add a filter and, if necessary, narrow the date range you're viewing. 
 
-To apply a filter, select the filter dropdown, select an item in the list, and then select **Refresh**. You can view information by sender, sender's domain, recipients, subject, attachment filename, malware family, detection technology (how the malware was detected), and more. 
+To apply a filter, select the filter dropdown, select an item in the list, and then select **Refresh**. You can view information by sender, sender's domain, recipients, subject, attachment filename, malware family, detection technology (how the malware was detected), and more. 
 
 You can view more details about specific email messages, such as subject line, recipient, sender, status, and so on below the chart. 
 
@@ -84,7 +84,7 @@ To view this report, in Explorer (or real-time detections), select **Phish** in 
 
 Your list of viewing options include data by sender, recipients, sender domain, sender IP, URL domain, click verdict, and more. 
 
-For example, to see what actions were taken when people clicked on URLs that were identified as phishing attempts, select **Click verdict**, select one or more options, and then select **Refresh**.
+For example, to see what actions were taken when people clicked on URLs that were identified as phishing attempts, select **Click verdict**, select one or more options, and then select **Refresh**.
 
 Below the chart, view more details about specific emails, **URL clicks**, **Top URLs**, **Top clicks**, and more. 
 
@@ -102,7 +102,7 @@ For more information on campaigns, see [Campaigns in Microsoft Defender for Offi
 
 ## Content Malware
 
-To view this report, in Explorer (or real-time detections), select **Content Malware** in the top navigation pane. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
+To view this report, in Explorer (or real-time detections), select **Content Malware** in the top navigation pane. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 
 :::image type="content" source="../../media/threat-explorer-content-malware-new.png" alt-text="Screenshot of the view data about content malware." lightbox="../../media/threat-explorer-content-malware-new.png":::
 

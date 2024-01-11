@@ -17,7 +17,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
-  ms.date: 12/12/2022 #Required; mm/dd/yyyy format.
+  ms.date: 07/25/2023 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -58,12 +58,9 @@ conceptualContent:
             - url: frontline/index.yml
               itemType: get-started
               text: Microsoft 365 for frontline workers
-            - url: business/index.yml
+            - url: business-premium/index.yml
               itemType: get-started
               text: Microsoft 365 Business Premium
-            - url: compliance/index.yml
-              itemType: overview
-              text: Microsoft Purview
             - url: security/index.yml
               itemType: overview
               text: Microsoft 365 security
@@ -79,10 +76,13 @@ conceptualContent:
             - url: /sharepoint/introduction
               itemType: overview
               text: SharePoint and OneDrive
+            - url: /purview/
+              itemType: overview
+              text: Microsoft Purview
             - url: /microsoft-365/contentunderstanding/
               itemType: overview
               text: Microsoft Syntex
-            - url: /viva
+            - url: /viva/
               itemType: overview
               text: Microsoft Viva
             - url: /Exchange/exchange-online
@@ -94,9 +94,6 @@ conceptualContent:
             - url: /office365/planner
               itemType: overview
               text: Planner
-            - url: /yammer/yammer-landing-page
-              itemType: overview
-              text: Yammer
         # Card
         - title: Microsoft 365 Apps and Office
           links:
@@ -128,7 +125,7 @@ conceptualContent:
             - url: solutions/data-privacy-protection.md
               itemType: how-to-guide
               text: Manage data privacy and data protection
-            - url: business-premium/index.md
+            - url: business-premium/m365bp-overview.md
               itemType: how-to-guide
               text: Microsoft 365 for smaller businesses and campaigns
             - url: solutions/productivity-illustrations.md

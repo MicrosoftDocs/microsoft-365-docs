@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 09/28/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -148,7 +148,7 @@ To change your domain's nameservers at your domain registrar's website yourself,
 3. Save your changes.
 
 > [!CAUTION]
-> When you change your domain's NS records to point to the Office 365 operated by 21Vianet nameservers, all the services that are currently associated with your domain are affected. If you skipped any steps of the wizard, such as adding email addresses, or if you're using your domain for blogs, shopping carts, or other services, there are additional steps that are required. Otherwise this change could result in service downtime, such as lack of email access or your current website being inaccessible.
+> When you change your domain's NS records to point to the Microsoft 365 operated by 21Vianet nameservers, all the services that are currently associated with your domain are affected. If you skipped any steps of the wizard, such as adding email addresses, or if you're using your domain for blogs, shopping carts, or other services, there are additional steps that are required. Otherwise this change could result in service downtime, such as lack of email access or your current website being inaccessible.
 
 ::: moniker-end
 

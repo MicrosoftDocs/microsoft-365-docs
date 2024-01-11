@@ -3,25 +3,26 @@ metadata:
   title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
   description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
   keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration, microsoft defender antivirus 
-  ms.service: microsoft-365-security
+  ms.service: defender-endpoint
   ms.mktglfcycl: manage
   ms.sitesec: library
   ms.localizationpriority: medium
   ms.topic: faq
-  author: martyav
+  author: dansimp
   ms.author: deniseb
   ms.custom: nextgen
   ms.reviewer:
   manager: dansimp
-  ms.subservice: mde
+  ms.subservice: ngp
   ms.collection: 
   - m365-security
   - tier1
+  - mde-ngp
   search.appverid: met150
   ms.date: 03/24/2023
 title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
 summary: |
-  [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+  [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
   **Applies to:**
   - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)

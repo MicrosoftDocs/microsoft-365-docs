@@ -24,17 +24,17 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # View tenant service health in Microsoft 365 Lighthouse
 
-You can view service health for the tenants you manage in Microsoft 365 Lighthouse. Service health includes incidents and advisories for several services, including Microsoft Intune, Azure Active Directory (Azure AD) identity services, and mobile device management (MDM) cloud services. You can also see how many of your managed tenants are affected by incidents. For example, if one of your tenants is experiencing problems, you can check the Service health page to determine whether it's a known issue with a resolution in progress or whether a recent change may be impacting them. This could save you time troubleshooting and reduce support calls.
+You can view service health for the tenants you manage in Microsoft 365 Lighthouse. Service health includes incidents and advisories for several services, including Microsoft Intune, Microsoft Entra identity services, and mobile device management (MDM) cloud services. You can also see how many of your managed tenants are affected by incidents. For example, if one of your tenants is experiencing problems, you can check the Service health page to determine whether it's a known issue with a resolution in progress or whether a recent change may be impacting them. This could save you time troubleshooting and reduce support calls.
 
 If you can't sign in to Lighthouse, you can use the [Microsoft 365 service health status page](https://status.office365.com/) to check for known issues preventing you from logging in to your partner tenant. Also, sign up to follow [@MSFT365status](https://twitter.com/MSFT365Status) on Twitter to see information on specific service incidents.
 
 ## Before you begin
 
-To view service health, you'll need an Azure AD role in the partner tenant with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**. For a list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+To view service health, you'll need a Microsoft Entra role in the partner tenant with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**. For a list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## View service health status for all tenants
 
-1. In the left navigation pane in Lighthouse, select **Service health**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Service health**.
 
 2. On the **Service health** page, review the current service health status, including:
 
@@ -48,7 +48,7 @@ To view service health, you'll need an Azure AD role in the partner tenant with 
 
 ## Review issue details
 
-1. In the left navigation pane in Lighthouse, select **Service health**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Service health**.
 
 2. On the **Service health** page, select the **All services** or **All issues** tab.
 
@@ -62,4 +62,4 @@ On the **Tenants affected** tab, you can export a list of affected tenants to a 
 
 [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health) (article)\
 [Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
-[View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)
+[View your Microsoft Entra roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)

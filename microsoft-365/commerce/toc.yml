@@ -14,7 +14,7 @@
       href: add-storage-space.md
 - name: Manage subscriptions
   items: 
-    - name: Upgrade subscriptions
+    - name: Upgrade your subscription
       href: subscriptions/upgrade-to-different-plan.md
     - name: Renew your subscription
       href: subscriptions/renew-your-subscription.md
@@ -34,24 +34,42 @@
   items:
     - name: Buy or remove subscription licenses
       href: licenses/buy-licenses.md
-    - name: Assign licenses to users
+    - name: Assign or unassign licenses for users
       href: ../admin/manage/assign-licenses-to-users.md
-    - name: Unassign licenses from users
-      href: ../admin/manage/remove-licenses-from-users.md
     - name: Move users to a different subscription
       href: subscriptions/move-users-different-subscription.md
     - name: Manage ISV app licenses
       href: licenses/manage-third-party-app-licenses.md
     - name: Manage auto-claim policies
       href: licenses/manage-auto-claim-policies.md
+    - name: Understand Microsoft 365 E3 and E5 Extra Features licenses
+      href: licenses/e3-extra-features-licenses.md
     - name: Understand subscriptions and licenses
       href: licenses/subscriptions-and-licenses.md
+- name: Manage volume licensing
+  items:
+    - name: Contracts FAQs
+      href: licenses/contracts-faq.yml
+    - name: User roles FAQs
+      href: licenses/user-roles-faq.yml
+    - name: Downloads FAQs
+      href: licenses/downloads-faq.yml
+    - name: Product keys FAQ
+      href: licenses/product-keys-faq.yml
+    - name: License Reservations FAQ
+      href: licenses/manage-license-requests-faq.yml
+    - name: Online service activation FAQ
+      href: licenses/online-service-activation-faq.yml
+    - name: Volume licensing invoices
+      href: licenses/volume-licensing-invoices.md
 - name: Bills and payments
   items: 
-    - name: View your bill or invoice
+    - name: View your invoice
       href: billing-and-payments/view-your-bill-or-invoice.md
-    - name: Understand your bill or invoice
+    - name: Understand your invoice (MOSA)
       href: billing-and-payments/understand-your-invoice2.md
+    - name: Understand your invoice (MCA)
+      href: billing-and-payments/understand-your-invoice.md
     - name: Pay for your subscription
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Manage payment methods

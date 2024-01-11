@@ -4,7 +4,7 @@ description: Learn how to use the live response library methods and properties.
 keywords: apis, graph api, supported apis, get, devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,14 +18,15 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-edr
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: edr
 ms.date: 06/03/2021
 ---
 
 #  Live response library methods and properties
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
@@ -52,3 +53,4 @@ ms.date: 06/03/2021
 |--------------|----------------------------------|--------------------------------------------------------|
 | Commands     | Live Response command collection | Array of Command objects. See [live response commands](live-response.md#live-response-commands). |
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

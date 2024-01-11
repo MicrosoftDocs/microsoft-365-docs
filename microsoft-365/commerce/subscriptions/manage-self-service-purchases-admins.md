@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: prlachhw, pablom
+ms.reviewer: prlachhw, socheng
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business 
@@ -15,10 +15,12 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
-- commerce_ssp
-- AdminSurgePortfolio
-- okr_smb
+ms.custom:
+  - commerce_ssp
+  - AdminSurgePortfolio
+  - okr_smb
+  - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 search.appverid:
 - MET150
 description: "Learn how admins can use the Microsoft 365 admin center to manage self-service purchases and trials made by users in their organization."
@@ -100,9 +102,11 @@ You can use the **MSCommerce** PowerShell module to:
 
 For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
-## Use PowerShell and Azure AD to enable or disable all self-service sign-ups
+<a name='use-powershell-and-azure-ad-to-enable-or-disable-all-self-service-sign-ups'></a>
 
-You can use PowerShell commands to change the settings that control self-service sign-ups. To turn off all self-service sign-ups, use the **MSOnline** PowerShell module to change the **MsolCompanySettings** setting for **AllowAdHocSubscriptions** in Azure Active Directory. For the steps to turn off self-service sign-ups, see [Set MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings).
+## Use PowerShell and Microsoft Entra ID to enable or disable all self-service sign-ups
+
+You can use PowerShell commands to change the settings that control self-service sign-ups. To turn off all self-service sign-ups, use the **MSOnline** PowerShell module to change the **MsolCompanySettings** setting for **AllowAdHocSubscriptions** in Microsoft Entra ID. For the steps to turn off self-service sign-ups, see [Set MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings).
 
 ## Centralize licenses under a single subscription
 

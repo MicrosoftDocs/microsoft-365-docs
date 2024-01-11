@@ -2,7 +2,7 @@
 title: Device control for macOS
 description: Learn how to configure Microsoft Defender for Endpoint on Mac to reduce threats from removable storage such as USB devices.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, macOS, device, control, usb, removable, media
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,21 +14,22 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 04/03/2023
 ---
 
 # Device Control for macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -65,11 +66,11 @@ Microsoft Defender for Endpoint Device Control feature enables you to:
 
 Example 1: JAMF using [schema.json](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema)
 
-:::image type="content" source="images/macos-device-control-jamf-json.png" alt-text="Shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features." lightbox="images/macos-device-control-jamf-json.png":::
+:::image type="content" source="images/macos-device-control-jamf-json.png" alt-text="Screenshot that shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features.":::
 
-Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macos/mobileconfig)
+Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/mobileconfig/demo.mobileconfig)
 
-```json
+```xml
    <key>dlp</key>
     <dict> 
       <key>features</key>
@@ -87,22 +88,27 @@ Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/
 - Minimum product version: 101.91.92 or higher
 - Run _mdatp version_ through Terminal to see the product version on your client machine:
 
-:::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
+  :::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Screenshot that shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
 
 ## Device Control for macOS properties
 
 The Device Control for macOS includes global setting, group creation and access policy rule creation:
 
-- Global setting called ‘settings’ allows you to define the global environment.
-- Group called ‘groups’ allows you to create media groups. For example, authorized USB group or encrypted USB group.
-- Access policy rule called ‘rules’ allows you to create policy to restrict each group. For example, only allow authorized user to Write access-authorized USB group.
+- Global setting called 'settings' allows you to define the global environment.
+- Group called 'groups' allows you to create media groups. For example, authorized USB group or encrypted USB group.
+- Access policy rule called 'rules' allows you to create policy to restrict each group. For example, only allow authorized user to Write access-authorized USB group.
 
 Here are the properties you can use when you create the group and policy.
 
 > [!NOTE]
-> We recommend you use the examples on the GitHub to understand the properties: [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy). You can also use the scripts at [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy/scripts at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/scripts) to translate Windows Device Control policy to macOS Device Control policy or translate macOS Device Control V1 policy to this V2 policy.
+> We recommend you use the examples on the GitHub to understand the properties: [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy). 
+> 
+> You can also use the scripts at [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy/scripts at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/scripts) to translate Windows Device Control policy to macOS Device Control policy or translate macOS Device Control V1 policy to this V2 policy.
 
 ### Settings
+
+> [!NOTE]
+> Both Android (portableDevice) and iOS (appleDevice) are in public preview and not in general availability at the moment.
 
 | Property name | Description | Options |
 |:---|:---|:---|
@@ -114,7 +120,7 @@ Here are the properties you can use when you create the group and policy.
 
 | Property name | Description | Options |
 |:---|:---|:---|
-| `$type` | The kind of group | “device” |
+| `$type` | The kind of group | "device" |
 | `id` | GUID, a unique ID, represents the group and will be used in the policy. | You can generate the ID through [New-Guid (Microsoft.PowerShell.Utility) - PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-7.2&preserve-view=true) or the uuidgen command on macOS |
 | `name` | Friendly name for the group. | string |
 | `query` | The media coverage under this group | See the **query** properties tables below for details. |
@@ -151,9 +157,9 @@ Query type 2 is as follows:
 | clause $type | value | Description |
 |:---|:---|:---|
 | `primaryId` | One of: <br>- `apple_devices`<br>- `removable_media_devices` <br>- `portable_devices` <br>- `bluetooth_devices` | |
-| `vendorId` | 4 digit hexadecimal string | Matches a device’s vendor ID |
-| `productId` | 4 digit hexadecimal string | Matches a device’s product ID |
-| `serialNumber` | string | Matches a device’s serial number. Doesn't match if the device doesn't have a serial number. |
+| `vendorId` | 4 digit hexadecimal string | Matches a device's vendor ID |
+| `productId` | 4 digit hexadecimal string | Matches a device's product ID |
+| `serialNumber` | string | Matches a device's serial number. Doesn't match if the device doesn't have a serial number. |
 | `encryption` | apfs | Match if a device is apfs-encrypted. |
 | `groupId` | UUID string | Match if a device is a member of another group. The value represents the UUID of the group to match against. <br> The group must be defined within the policy prior to the clause. |
 
@@ -167,7 +173,7 @@ Query type 2 is as follows:
 | `excludeGroups` | The group(s) that the policy doesn't apply to. | The **id** value inside the group must be used in this instance. If multiple groups are in the excludeGroups, it's _OR_. |
 | `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| See entry properties table later in this article to get the details. |
 
-The following table lists the properties you can use in your entry:
+The following table lists the properties you can use in your entry:
 
 | Property name | Description | Options |
 |:---|:---|:---|
@@ -176,7 +182,7 @@ The following table lists the properties you can use in your entry:
 | `access`| |Specify one or more access rights for this rule. These may include either device specific granular permissions, or broader generic permissions. See table below for more details on the valid access types for a given entry $type. |
 | `id`| UUID| |
 
-The following table lists the properties you can use in entry:
+The following table lists the properties you can use in entry:
 
 ### Enforcement
 
@@ -199,7 +205,7 @@ The following table lists the properties you can use in entry:
 
 ### Access types
 
-|entry $type | ‘access’ values [string]  | Generic Access | Description |
+|entry $type | 'access' values [string]  | Generic Access | Description |
 |:---|:---|:---|:---|
 | **appleDevice** | backup_device | generic_read | |
 | appleDevice | update_device | generic_write | |
@@ -223,7 +229,32 @@ The following table lists the properties you can use in entry:
 
 Once Deny happens and the notification is enabled in the policy, the end user sees a dialog:
 
-:::image type="content" source="images/macos-device-control-enduser-experience-dialog.png" alt-text="Shows a Device Control Dialog that indicates the USB device is restricted" lightbox="images/macos-device-control-enduser-experience-dialog.png":::
+:::image type="content" source="images/macos-device-control-enduser-experience-dialog.png" alt-text="Screenshot that shows a Device Control Dialog that indicates the USB device is restricted" lightbox="images/macos-device-control-enduser-experience-dialog.png":::
+
+## Status
+
+Use `mdatp health --details device_control` to inspect the Device Control status:
+
+```console
+active                                      : ["v2"]
+v1_configured                               : false
+v1_enforcement_level                        : unavailable
+v2_configured                               : true
+v2_state                                    : "enabled"
+v2_sensor_connection                        : "created_ok"
+v2_full_disk_access                         : "approved"
+```
+
+- `active` - feature version, you should see ["v2"]. (Device Control is enabled, but not configured.)
+    - [] - Device Control is not configured on this machine
+    - ["v1"] - You are on a preview version of Device Control. Please migrate to version 2 using this guide. v1 is considered obsolete and not described in this documentation.
+    - ["v1","v2"] - You have both v1 and v2 enabled. Please offboard from v1.
+- `v1_configured` - v1 configuration is applied
+- `v1_enforcement_level` - when v1 is enabled
+- `v2_configured` - v2 configuration is applied
+- `v2_state` - v2 status, `enabled` if fully working
+- `v2_sensor_connection` - if `created_ok`, then Device Control established connection to the system extension
+- `v2_full_disk_access` - if not `approved`, then Device Control cannot prevent some or all operations
 
 ## Reporting
 
@@ -271,7 +302,7 @@ In this scenario, you need to create two groups: one group for any removable med
 
 -1. Create a group to cover any removable media devices
 -1. Create a group for approved USBs
--1. Combine those groups into one ‘groups’
+-1. Combine those groups into one 'groups'
 
 ```json
 "groups": [ 
@@ -337,7 +368,7 @@ In this scenario, you need to create two groups: one group for any removable med
 
 #### Step 3: Rules: Create Deny policy for unallowed USBs
 
-Create access policy rule and put into ‘rules’:
+Create access policy rule and put into 'rules':
 
 ```json
    "rules": [ 
@@ -425,10 +456,12 @@ Create access policy rule and put into ‘rules’:
     ] 
 ```
 
-In this case, only have one access rule policy, but if you have multiple, make sure to add all into ‘rules’.
+In this case, only have one access rule policy, but if you have multiple, make sure to add all into 'rules'.
 
 ## See also
 
 - [Deploy Device Control by using Intune](mac-device-control-intune.md)
 - [Deploy Device Control by using JAMF](mac-device-control-jamf.md)
+- [Deploy Device Control manually](mac-device-control-manual.md)
 - [macOS Device Control frequently asked questions (FAQ)](mac-device-control-faq.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

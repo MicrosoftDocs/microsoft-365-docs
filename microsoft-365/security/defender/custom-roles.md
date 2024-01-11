@@ -1,10 +1,9 @@
 ---
 title: Custom roles for role-based access control
-description: Learn how to manage custom roles in the Microsoft 365 Defender portal
-keywords: access, permissions, Microsoft 365 Defender, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC, roles-based access, custom roles-based access, roles-based auth, RBAC in MDO, roles, rolegroups, permissions inheritance, fine-grained permissions
+description: Learn how to manage custom roles in the Microsoft Defender portal
+keywords: access, permissions, Microsoft Defender XDR, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC, roles-based access, custom roles-based access, roles-based auth, RBAC in MDO, roles, rolegroups, permissions inheritance, fine-grained permissions
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -24,31 +23,31 @@ search.appverid:
   - MOE150
   - MET150
 ---
-# Custom roles in role-based access control for Microsoft 365 Defender
+# Custom roles in role-based access control for Microsoft Defender XDR
 
 > [!NOTE]
-> If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
+> If you are running the Microsoft Defender XDR preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)] 
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)] 
 
-There are two types of roles that can be used to access to Microsoft 365 Defender:
+There are two types of roles that can be used to access to Microsoft Defender XDR:
 
-- **Global Azure Active Directory (AD) roles**
+- **Global Microsoft Entra roles**
 - **Custom roles**
 
-Access to Microsoft 365 Defender can be managed collectively by using [Global roles in Azure Active Directory (AAD)](m365d-permissions.md)
+Access to Microsoft Defender XDR can be managed collectively by using [Global roles in Microsoft Entra ID](m365d-permissions.md)
 
-If you need greater flexibility and control over access to specific product data, Microsoft 365 Defender access can also be managed with the creation of Custom roles through each respective security portal.
+If you need greater flexibility and control over access to specific product data, Microsoft Defender XDR access can also be managed with the creation of Custom roles through each respective security portal.
 
-For example, a Custom role created through Microsoft Defender for Endpoint would allow access to the relevant product data, including Endpoint data within the Microsoft 365 Defender portal. Similarly, a Custom role created through Microsoft Defender for Office 365 would allow access to the relevant product data, including Email & collaboration data within the Microsoft 365 Defender portal.
+For example, a Custom role created through Microsoft Defender for Endpoint would allow access to the relevant product data, including Endpoint data within the Microsoft Defender portal. Similarly, a Custom role created through Microsoft Defender for Office 365 would allow access to the relevant product data, including Email & collaboration data within the Microsoft Defender portal.
 
-Users with existing Custom roles may access data in the Microsoft 365 Defender portal according to their existing workload permissions with no additional configuration required.
+Users with existing Custom roles may access data in the Microsoft Defender portal according to their existing workload permissions with no additional configuration required.
 
 ## Create and manage custom roles
 
@@ -61,16 +60,18 @@ Custom roles and permissions can be created and individually managed through eac
 Each custom role created through an individual portal allows access to the data of the relevant product portal. For example, a custom role created through Microsoft Defender for Endpoint will only allow access to Defender for Endpoint data.
 
 > [!TIP]
-> Permissions and roles can also be accessed through the Microsoft 365 Defender portal by selecting Permissions & roles from the navigation pane. Access to Microsoft Defender for Cloud Apps is managed through the Defender for Cloud Apps portal and controls access to Microsoft Defender for Identity as well.  See [Microsoft Defender for Cloud Apps](/cloud-app-security/manage-admins)
+> Permissions and roles can also be accessed through the Microsoft Defender portal by selecting Permissions & roles from the navigation pane. Access to Microsoft Defender for Cloud Apps is managed through the Defender for Cloud Apps portal and controls access to Microsoft Defender for Identity as well.  See [Microsoft Defender for Cloud Apps](/cloud-app-security/manage-admins)
 
 > [!NOTE]
-> Custom roles created in Microsoft Defender for Cloud Apps have access to Microsoft Defender for Identity data as well. Users with User group admin, or App/instance admin Microsoft Defender for Cloud Apps roles are not able to access Microsoft Defender for Cloud Apps data through the Microsoft 365 Defender portal.
+> Custom roles created in Microsoft Defender for Cloud Apps have access to Microsoft Defender for Identity data as well. Users with User group admin, or App/instance admin Microsoft Defender for Cloud Apps roles are not able to access Microsoft Defender for Cloud Apps data through the Microsoft Defender portal.
 
-## Manage permissions and roles in the Microsoft 365 Defender portal
+<a name='manage-permissions-and-roles-in-the-microsoft-365-defender-portal'></a>
 
-Permissions and roles can also be managed in the Microsoft 365 Defender portal:
+## Manage permissions and roles in the Microsoft Defender portal
 
-1. Sign in to the Microsoft 365 Defender portal at security.microsoft.com.
+Permissions and roles can also be managed in the Microsoft Defender portal:
+
+1. Sign in to the Microsoft Defender portal at security.microsoft.com.
 2. In the navigation pane, select **Permissions & roles**.
 3. Under the **Permissions** header, select **Roles**.
 
@@ -79,15 +80,15 @@ Permissions and roles can also be managed in the Microsoft 365 Defender portal:
 
 ## Required roles and permissions
 
-The following table outlines the roles and permissions required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.
+The following table outlines the roles and permissions required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Microsoft Entra ID, even if similarly named.
 
 > [!NOTE]
 > Incident management requires management permissions for all products that are part of the incident.
 
-|Microsoft 365 Defender workload|One of the following roles is required for Defender for Endpoint|One of the following roles is required for Defender for Office 365|One of the following roles is required for Defender for Cloud Apps|
+|Microsoft Defender XDR workload|One of the following roles is required for Defender for Endpoint|One of the following roles is required for Defender for Office 365|One of the following roles is required for Defender for Cloud Apps|
 |---|---|---|---|
 |Viewing investigation data: <ul><li>Alert page</li> <li>Alerts queue</li> <li>Incidents</li>  <li>Incident queue</li> <li>Action center</li></ul>|View data- security operations|<ul><li>View-only Manage alerts </li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li> <li>Security reader</li> <li>Security admin</li><li>View-only recipients</li></ul>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
-|Viewing hunting data|View data- security operations|<ul><li>Security reader</li> <li>Security admin</li> <li>View-only recipients</li>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
+|Viewing hunting data, saving, editing, and deleting hunting queries and functions|View data- security operations|<ul><li>Security reader</li> <li>Security admin</li> <li>View-only recipients</li>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
 |Managing alerts and incidents|Alerts investigation|<ul><li>Manage alerts</li> <li>Security admin</li>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li></ul>|
 |Action center remediation|Active remediation actions – security operations|Search and purge||
 |Setting custom detections|Manage security settings|<ul><li>Manage alerts</li> <li>Security admin</li></ul>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
@@ -105,5 +106,6 @@ Similarly, to view hunting data from Microsoft Defender for Office 365, users wo
 ## Related topics
 
 - [RBAC roles](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
-- [Manage access to Microsoft 365 Defender](m365d-permissions.md)
+- [Manage access to Microsoft Defender XDR](m365d-permissions.md)
 - [Manage admin access for Defender for Cloud Apps](/cloud-app-security/manage-admins)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

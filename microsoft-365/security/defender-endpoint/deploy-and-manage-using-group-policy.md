@@ -1,13 +1,10 @@
 ---
 title: Deploy and manage using group policy
 description: Use group policy to deploy and manage on printer protection.
-ms.service: microsoft-365-security
-ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: v-nsatapathy
-author: nimishasatapathy
+ms.service: defender-endpoint
+ms.subservice: asr
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -16,7 +13,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 11/16/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -47,7 +44,7 @@ Before you get started with Printer protection, you must confirm your [Microsoft
    The purpose of this configuration is to temporarily disable device control on specific machine.
 
    > [!NOTE]
-   > If you don't see this group policy objects, you need to add the group policy administrative template. You can download administrative template (WindowsDefender.admx and WindowsDefender.admx) from [samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
+   > If you don't see this group policy objects, you need to add the group policy administrative template. You can download administrative template (WindowsDefender.admx and WindowsDefender.admx) from [samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main).
    >
    > This configuration controls both Removable storage access control [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md) and Printer protection.
 
@@ -57,9 +54,9 @@ Before you get started with Printer protection, you must confirm your [Microsoft
 
    For example, you can have either a Deny or an Allow policy for RemovableMediaDevices, but not for CdRomDevices or WpdDevices. You set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
 
-   - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Features** > **Device Control** > **Select Device Control Default Enforcement**
+   - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Device Control** > **Select Device Control Default Enforcement Policy**
 
-   - In the **Select Device Control Default Enforcement** pane, select **Default Deny**:
+   - In the **Select Device Control Default Enforcement Policy** pane, select **Default Deny**:
 
    :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Screenshot of setting Default Enforcement = Deny using Group Policy." lightbox="images/set-default-enforcement-deny-gp.png":::
 
@@ -150,3 +147,4 @@ You can download the files here, [Printer Protection Samples](https://github.com
       :::image type="content" source="images/create-default.png" alt-text="This is create default screenshot." lightbox="images/create-default.png":::
 
    Combine these two policy rules into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Printer%20Protection%20Samples/Group%20Policy/Printer_Policies.xml). See step 4 from the [Deploy using group policy](deploy-and-manage-using-group-policy.md) section to deploy this configuration.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

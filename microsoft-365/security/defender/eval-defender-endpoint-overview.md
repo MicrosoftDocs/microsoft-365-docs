@@ -1,10 +1,9 @@
 ---
 title: Step 4. Evaluate Microsoft Defender for Endpoint overview, including reviewing the architecture
-description: Steps for the setup of a Microsoft 365 Defender trial lab or pilot environment. Test and experience how the security solution is designed to protect devices, identity, data, and apps in your organization.
+description: Steps for the setup of a Microsoft Defender XDR trial lab or pilot environment. Test and experience how the security solution is designed to protect devices, identity, data, and apps in your organization.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -30,9 +29,9 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-This article outlines the process to enable and pilot Microsoft Defender for Endpoint. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft 365 Defender](eval-overview.md), and you've [created the Microsoft 365 Defender evaluation environment](eval-create-eval-environment.md).
+This article outlines the process to enable and pilot Microsoft Defender for Endpoint. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft Defender XDR](eval-overview.md), and you've [created the Microsoft Defender XDR evaluation environment](eval-create-eval-environment.md).
 
 Use the following steps to enable and pilot Microsoft Defender for Endpoint.
 
@@ -45,3 +44,4 @@ The following table describes the steps in the illustration.
 |[Step 1. Review architecture requirements and key concepts](eval-defender-endpoint-architecture.md)|Understand the Defender for Endpoint architecture and the capabilities available to you.|
 |[Step 2. Enable the evaluation environment](eval-defender-endpoint-enable-eval.md)|Follow the steps to set up the evaluation environment.|
 |[Step 3. Set up the pilot](eval-defender-endpoint-pilot.md)|Verify your pilot group, run simulations, and become familiar with key features and dashboards.|
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

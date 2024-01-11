@@ -16,15 +16,15 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
   - m365-security
   - tier1
-description: Use Explorer and Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
+description: Use Explorer and Real-time detections in the Microsoft Defender portal to investigate and respond to threats efficiently.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/20/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Improvements to Threat Hunting in Threat Explorer
@@ -52,7 +52,7 @@ We are making this integration more relevant by introducing the alert ID (see an
 
 ### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days
 
-As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office P1 and P2 trial tenants.
+As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office 365 P1 and P2 trial tenants.
 This does not impact any production tenants for both P1 and P2/E5 customers, which already have the 30 day data retention and search capabilities.
 
 ### Updated limits for Export of records for Threat Explorer
@@ -79,7 +79,7 @@ The **Tags** column in the email grid contains all the tags that have been appli
 
 You can use tags as a filter. Hunt just across priority accounts or specific user tags scenarios. You can also exclude results that have certain tags. Combine this functionality with other filters to narrow your scope of investigation.
 
-[![Filter tags.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
+:::image type="content" source="../../media/tags-filter-normal.png" alt-text="Filter tags." lightbox="../../media/tags-filter-normal.png":::
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/tags-filter-not.png" alt-text="Screenshot of tags that are not filtered." lightbox="../../media/tags-filter-not.png":::
@@ -179,7 +179,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 
 - File extension blocked by org policy: An organization's security team blocks a file name extension through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also use the rich-filtering capability to filter on blocked file extensions.
 
-[![System Overrides in Explorer.](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+:::image type="content" source="../../media/System_Overrides.png" alt-text="System Overrides in Explorer." lightbox="../../media/System_Overrides.png":::
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/System_Overrides_Grid.png" alt-text="Screenshot of the System Overrides Grid in Explorer." lightbox="../../media/System_Overrides_Grid.png":::
@@ -199,7 +199,7 @@ The improvements include:
 
 Phish confidence level helps identify the degree of confidence with which an email was categorized as "phish." The two possible values are *High* and *Normal*. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
-[![Phish Confidence Level in Explorer.](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+:::image type="content" source="../../media/Phish_Confidence_Level.png" alt-text="Phish Confidence Level in Explorer." lightbox="../../media/Phish_Confidence_Level.png":::
 
 ### ZAP URL signal
 
@@ -274,8 +274,8 @@ You'll be able to see both the GUID and the name of the transport rules that wer
 >
 > - EXO Only - data loss prevention: All
 > - EXO Only - O365SupportViewConfig: All
-> - Microsoft Azure Active Directory or EXO - Security Admin: All
-> - AAD or EXO - Security Reader: All
+> - Microsoft Entra ID or EXO - Security Admin: All
+> - Microsoft Entra ID or EXO - Security Reader: All
 > - EXO Only - Transport Rules: All
 > - EXO Only - View-Only Configuration: All
 >
@@ -308,7 +308,7 @@ To review phish messages and search for impersonated users or domains, use the [
 
 This example uses Threat Explorer.
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** > **Explorer** (or **Real-time detections**).
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** > **Explorer** (or **Real-time detections**).
 
 2. In the View menu, choose **Phish**.
 
@@ -402,7 +402,7 @@ Follow this path to get to the same location in the Real-time detections report:
 
 Suppose you want to see malware detected in email sorted by Microsoft 365 technology. To do this, use the [Malware](threat-explorer-views.md#malware) view of Explorer (or Real-time detections).
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
 2. In the **View** menu, choose **Malware**.
 
@@ -429,7 +429,7 @@ Suppose that you want to see phishing attempts through URLs in email, including 
 
 To review phish URLs in messages and clicks on URLs in phish messages, use the [**Phish**](threat-explorer-views.md#phish) view of Explorer or Real-time detections.
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
 2. In the **View** menu, choose **Email** \> **Phish**.
 
@@ -476,7 +476,7 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 
 Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md), use the [**All email**](threat-explorer-views.md#all-email) view of Explorer (or Real-time detections).
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
 2. In the **View** menu, choose **Email** \> **Submissions**.
 
@@ -507,7 +507,7 @@ In addition to the scenarios outlined in this article, you have many more report
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](./safe-attachments-for-spo-odfb-teams-about.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
-- [Automated investigation and response in Microsoft 365 Defender](../defender/m365d-autoir.md)
+- [Automated investigation and response in Microsoft Defender XDR](../defender/m365d-autoir.md)
 
 ## Required licenses and permissions
 
@@ -519,10 +519,10 @@ You must have [Microsoft Defender for Office 365](defender-for-office-365.md) to
 
 To view and use Explorer or Real-time detections, you must have appropriate permissions, such as those granted to a security administrator or security reader.
 
-- For the Microsoft 365 Defender portal, you must have one of the following roles assigned:
+- For the Microsoft Defender portal, you must have one of the following roles assigned:
 
   - Organization Management
-  - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
+  - Security Administrator (this can be assigned in the Microsoft Entra admin center (<https://aad.portal.azure.com>)
   - Security Reader
 
 - For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (EAC) or [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
@@ -534,7 +534,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
+- [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md)
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## Differences between Threat Explorer and Real-time detections

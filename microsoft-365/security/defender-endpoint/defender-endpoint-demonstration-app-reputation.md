@@ -4,7 +4,7 @@ description: Test how Microsoft Defender for Endpoint SmartScreen helps you iden
 keywords: Microsoft Defender for Endpoint, phishing website, malware website, app reputation, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +18,6 @@ ms.collection:
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
 ms.date: 10/21/2022
 ---
 
@@ -76,3 +75,4 @@ This download is known malware; SmartScreen should block this program from runni
 ## See also
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

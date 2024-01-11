@@ -1,7 +1,7 @@
 ---
 title: Configure advanced features in Microsoft Defender for Endpoint
 description: Turn on advanced features such as block file in Microsoft Defender for Endpoint.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -11,18 +11,18 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
-ms.date: 06/06/2023
+ms.date: 08/15/2023
 ---
 
 # Configure advanced features in Defender for Endpoint
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)
@@ -31,7 +31,7 @@ Depending on the Microsoft security products that you use, some advanced feature
 
 ## Enable advanced features
 
-1. Log in to [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) using an account with the Security administrator or Global administrator role assigned.
+1. Log in to [Microsoft Defender XDR](https://go.microsoft.com/fwlink/p/?linkid=2077139) using an account with the Security administrator or Global administrator role assigned.
 
 2. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
 
@@ -42,9 +42,6 @@ Depending on the Microsoft security products that you use, some advanced feature
 Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations.
 
 ## Live response
-
-> [!NOTE]
-> Live response requires **Automated investigation** to be turned on before you can enable it in the advanced settings section in the Microsoft Defender for Endpoint portal.
 
 Turn on this feature so that users with the appropriate permissions can start a live response session on devices.
 
@@ -112,6 +109,14 @@ To turn **Allow or block** files on:
 
 After turning on this feature, you can [block files](respond-file-alerts.md#allow-or-block-file) via the **Add Indicator** tab on a file's profile page.
 
+## Hide potential duplicate device records
+
+By enabling this feature, you can ensure that you're seeing the most accurate information about your devices by hiding potential duplicate device records. There are different reasons duplicate device records might occur, for example, the device discovery capability in Microsoft Defender for Endpoint might scan your network and discover a device that's already onboarded or has recently been offboarded.
+
+This feature will identify potential duplicate devices based on their hostname and last seen time. The duplicate devices will be hidden from multiple experiences in the portal, such as, the Device Inventory, Microsoft Defender Vulnerability Management pages, and Public APIs for machine data, leaving the most accurate device record visible. However, the duplicates will still be visible in global search, advanced hunting, alerts, and incidents pages.
+
+This setting is turned on by default and is applied tenant wide. If you don't want to hide potential duplicate device records, you'll need to manually turn off the feature.
+
 ## Custom network indicators
 
 Turning on this feature allows you to create indicators for IP addresses, domains, or URLs, which determine whether they'll be allowed or blocked based on your custom indicator list.
@@ -125,13 +130,13 @@ For more information, see [Manage indicators](manage-indicators.md).
 
 ## Tamper protection
 
-During some kinds of cyber attacks, bad actors try to disable security features, such as anti-virus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices. Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
+During some kinds of cyber attacks, bad actors try to disable security features, such as antivirus protection, on your machines. Bad actors like to disable your security features to get easier access to your data, to install malware, or to otherwise exploit your data, identity, and devices. Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
 
 For more information, including how to configure tamper protection, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
 
 ## Show user details
 
-Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
+Turn on this feature so that you can see user details stored in Microsoft Entra ID. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
 
 - Alert queue
 - Device details page
@@ -148,11 +153,11 @@ Enabling the Skype for Business integration gives you the ability to communicate
 ## Office 365 Threat Intelligence connection
 
 > [!IMPORTANT]
-> This setting was used when Microsoft Defender for Office 365 and Microsoft Defender for Endpoint were in different portals previously. After the convergence of security experiences into a unified portal that is now called Microsoft 365 Defender, these settings are irrelevant and don't have any functionality associated with them. You can safely ignore the status of the control until it is removed from the portal.
+> This setting was used when Microsoft Defender for Office 365 and Microsoft Defender for Endpoint were in different portals previously. After the convergence of security experiences into a unified portal that is now called Microsoft Defender XDR, these settings are irrelevant and don't have any functionality associated with them. You can safely ignore the status of the control until it is removed from the portal.
 
 This feature is only available if you have an active subscription for Office 365 E5 or the Threat Intelligence add-on. For more information, see the [Office 365 E5 product page](https://www.microsoft.com/en-us/microsoft-365/enterprise/office-365-e5?activetab=pivot:overviewtab).
 
-This feature enables you to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+This feature enables you to incorporate data from Microsoft Defender for Office 365 into Microsoft Defender XDR to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.
@@ -161,9 +166,9 @@ To receive contextual device integration in Office 365 Threat Intelligence, you'
 
 ## Endpoint Attack Notifications
 
-Endpoint Attack Notifications enable Microsoft to actively hunt for critical threats to be prioritized based on urgency and impact over your endpoint data. 
+[Endpoint Attack Notifications](/security/defender-endpoint/endpoint-attack-notifications) enable Microsoft to actively hunt for critical threats to be prioritized based on urgency and impact over your endpoint data. 
 
-For proactive hunting across the full scope of Microsoft 365 Defender—including threats that span email, collaboration, identity, cloud applications, as and endpoints—[learn more](https://aka.ms/DefenderExpertsForHuntingGetStarted) about Microsoft Defender Experts.
+For proactive hunting across the full scope of Microsoft Defender XDR, including threats that span email, collaboration, identity, cloud applications, and endpoints, [learn more](https://aka.ms/DefenderExpertsForHuntingGetStarted) about Microsoft Defender Experts.
 
 ## Microsoft Defender for Cloud Apps
 
@@ -208,7 +213,7 @@ Defender for Endpoint can be integrated with [Microsoft Intune](/intune/what-is-
 This feature is only available if you've the following prerequisites:
 
 - A licensed tenant for Enterprise Mobility + Security E3, and Windows E5 (or Microsoft 365 Enterprise E5)
-- An active Microsoft Intune environment, with Intune-managed Windows devices [Azure AD-joined](/azure/active-directory/devices/concept-azure-ad-join/).
+- An active Microsoft Intune environment, with Intune-managed Windows devices [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join/).
 
 ### Conditional Access policy
 
@@ -234,7 +239,16 @@ You'll have access to upcoming features, which you can provide feedback on to he
 
 Backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. The **Download file** button will always be available in the file page. This setting is turned on by default. [Learn more about requirements](respond-file-alerts.md#download-quarantined-files)
 
+
+## Streamlined connectivity during device onboarding (Preview)
+
+This setting will set the default onboarding package to 'streamlined' for applicable operating systems.
+
+You will still have the option to use the standard onboarding package within the onboarding page but you will need to specifically select it in the drop-down.
+
+
 ## Related topics
 
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications](configure-email-notifications.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

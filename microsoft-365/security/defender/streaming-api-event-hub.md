@@ -1,11 +1,10 @@
 ---
-title: Stream Microsoft 365 Defender events to Azure Event Hubs
-description: Learn how to configure Microsoft 365 Defender to stream Advanced Hunting events to your Event Hubs.
+title: Stream Microsoft Defender XDR events to Azure Event Hubs
+description: Learn how to configure Microsoft Defender XDR to stream Advanced Hunting events to your Event Hubs.
 keywords: raw data export, streaming API, API, Azure Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,12 +21,12 @@ ms.topic: conceptual
 ms.date: 02/08/2023
 ---
 
-# Configure Microsoft 365 Defender to stream Advanced Hunting events to your Azure Event Hub
+# Configure Microsoft Defender XDR to stream Advanced Hunting events to your Azure Event Hub
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -36,7 +35,7 @@ ms.date: 02/08/2023
 
 ## Prerequisites
 
-Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure the following prerequisites are fulfilled:
+Prior to configuring Microsoft Defender XDR to stream data to Event Hubs, ensure the following prerequisites are fulfilled:
 
 1. Create an Event Hubs (for information, see [Set up Event Hubs](configure-event-hub.md#set-up-event-hubs)).
 
@@ -49,7 +48,7 @@ Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure
 
 ## Enable raw data streaming
 
-1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
+1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to the [Streaming API settings page](https://sip.security.microsoft.com/settings/mtp_settings/raw_data_export).
 
@@ -67,7 +66,7 @@ Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure
 
    :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="An Event Hub resource ID" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
-8. Go to the [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md) to review the support status of event types in the Microsoft 365 Streaming API.
+8. Go to the [Supported Microsoft Defender XDR event types in event streaming API](supported-event-types.md) to review the support status of event types in the Microsoft 365 Streaming API.
 
 9. Choose the events you want to stream and click **Save**.
 
@@ -77,10 +76,10 @@ Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure
 {
    "records": [
                {
-                  "time": "<The time Microsoft 365 Defender received the event>"
+                  "time": "<The time Microsoft Defender XDR received the event>"
                   "tenantId": "<The Id of the tenant that the event belongs to>"
                   "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                  "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+                  "properties": { <Microsoft Defender XDR Advanced Hunting event as Json> }
                }
                ...
             ]
@@ -89,9 +88,9 @@ Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure
 
 - Each Event Hubs message in Azure Event Hubs contains list of records.
 
-- Each record contains the event name, the time Microsoft 365 Defender received the event, the tenant it belongs (you'll only get events from your tenant), and the event in JSON format in a property called "**properties**".
+- Each record contains the event name, the time Microsoft Defender XDR received the event, the tenant it belongs (you'll only get events from your tenant), and the event in JSON format in a property called "**properties**".
 
-- For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](advanced-hunting-overview.md).
+- For more information about the schema of Microsoft Defender XDR events, see [Advanced Hunting overview](advanced-hunting-overview.md).
 
 - In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well.
 
@@ -99,7 +98,7 @@ Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure
 
 To get the data types for event properties, do the following steps:
 
-1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
+1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
 
@@ -118,7 +117,7 @@ The following Advanced Hunting query can help provide a rough estimate of data v
  
 ```kusto 
 let bytes_ = 500;
-union withsource=MDTables*
+union withsource=MDTables *
 | where Timestamp > startofday(ago(6h))
 | summarize count() by bin(Timestamp, 1m), MDTables
 | extend EPS = count_ /60
@@ -136,8 +135,9 @@ For more information, see [Log Analytics workspace data export in Azure Monitor]
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
-- [Microsoft 365 Defender streaming API](streaming-api.md)
-- [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md)
-- [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)
+- [Microsoft Defender XDR streaming API](streaming-api.md)
+- [Supported Microsoft Defender XDR event types in event streaming API](supported-event-types.md)
+- [Stream Microsoft Defender XDR events to your Azure storage account](streaming-api-storage.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Troubleshoot connectivity issues - Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

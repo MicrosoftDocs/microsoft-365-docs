@@ -2,7 +2,7 @@
 title: Manage the gradual rollout process for Microsoft Defender updates
 description: Learn about the gradual update process and controls
 keywords: update, update process, controls, release
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 06/23/2021
 ---
 
 # Manage the gradual rollout process for Microsoft Defender updates
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -36,7 +36,7 @@ ms.date: 06/23/2021
 **Platforms**
 - Windows
 
-It is important to ensure that client components are up-to-date to deliver critical protection capabilities and prevent attacks.
+It is important to ensure that client components are up to date to deliver critical protection capabilities and prevent attacks.
 
 Capabilities are provided through several components:
 
@@ -147,3 +147,4 @@ For details on how to use these tools, see [Create a custom gradual rollout proc
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

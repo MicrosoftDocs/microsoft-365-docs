@@ -2,7 +2,7 @@
 title: View and organize the Microsoft Defender for Endpoint Alerts queue
 description: Learn about how the Microsoft Defender for Endpoint alerts queues work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,22 +14,23 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
+- mde-edr
 ms.topic: conceptual
 ms.date: 03/27/2020
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 
 # View and organize the Microsoft Defender for Endpoint Alerts queue
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)
 
-The **Alerts queue** shows a list of alerts that were flagged from devices in your network. By default, the queue displays alerts seen in the last 30 days in a grouped view. The most recent alerts are shown at the top of the list helping you see the most recent alerts first.
+The **Alerts queue** shows a list of alerts that were flagged from devices in your network. By default, the queue displays alerts seen in the last 7 days in a grouped view. The most recent alerts are shown at the top of the list helping you see the most recent alerts first.
 
 > [!NOTE]
 > The alerts are significantly reduced with automated investigation and remediation, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. When an alert contains a supported entity for automated investigation (for example, a file) in a device that has a supported operating system for it, an automated investigation and remediation can start. For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
@@ -92,10 +93,10 @@ You can filter the alerts based on the following Service sources:
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 - Microsoft Defender for Endpoint
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Defender for Office 365
 - App Governance
-- AAD Identity Protection
+- Microsoft Entra ID Protection
 
 Microsoft Endpoint Notification customers can now filter and see detections from the service by filtering by _Microsoft Defender Experts_ nested under the _Microsoft Defender for Endpoint_ service source.
 
@@ -118,7 +119,7 @@ You can filter the alerts based on the following policies:
 |Custom detection|CustomDetection|
 |Custom TI|CustomerTI|
 |EDR|WindowsDefenderAtp|
-|Microsoft 365 Defender|MTP|
+|Microsoft Defender XDR|MTP|
 |Microsoft Defender for Office 365|OfficeATP|
 |Microsoft Defender Experts|ThreatExperts|
 |SmartScreen|WindowsDefenderSmartScreen|
@@ -142,3 +143,4 @@ You can choose to filter the alerts based on their Automated investigation state
 - [Investigate an IP address associated with a Microsoft Defender for Endpoint alert](investigate-ip.md)
 - [Investigate a domain associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
 - [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
