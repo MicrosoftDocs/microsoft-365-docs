@@ -40,7 +40,7 @@ Although you enable pay-as-you-go billing for image tagging, you'll be charged o
 
 ## Manage sites
 
-By default, image tagging is available for libraries on all SharePoint sites. To turn off image tagging on all sites, follow these steps.
+By default, image tagging is available for libraries on all SharePoint sites. Follow these steps to manage which SharePoint sites users can use image tagging.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
@@ -48,5 +48,10 @@ By default, image tagging is available for libraries on all SharePoint sites. To
 
 3. On the **Manage Microsoft Syntex** page, select **Image tagging**.
 
-4. On the **Image tagging** page, select **No sites**, and then select **Save**.
+4. On the **Image tagging** page:
 
+    a. Choose which site or sites this service should be enabled for.
+
+    b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
+
+    c. Select **Save**.
