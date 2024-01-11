@@ -39,7 +39,9 @@ ms.date: 01/11/2024
 
 When you sign up for a Microsoft 365 for business plan, your team can begin using the latest versions of Word, Excel, PowerPoint, and other Microsoft 365 apps. You can sign up and get started with a Microsoft 365 for business plan in three easy steps.
 
+::: moniker range="o365-worldwide"
 Check out our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+::: moniker-end
 
 For video tutorials, visit [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
