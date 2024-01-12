@@ -41,7 +41,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ActionType` | `string` | Type of activity that triggered the event |
 | `Application` | `string` | Application that performed the recorded action |
 | `ApplicationId` | `int` | Unique identifier for the application |
-| `AppInstanceId` | `int` | Unique identifier for the instance of an application |
+| `AppInstanceId` | `int` | Unique identifier for the instance of an application. To convert this to Microsoft Defender for Cloud Apps App-connector-ID use `CloudAppEvents|distinct ApplicationId,AppInstanceId,binary_or(binary_shift_left(AppInstanceId,20),ApplicationId)|order by ApplicationId,AppInstanceId` |
 | `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `AccountId` | `string` | An identifier for the account as found by Microsoft Defender for Cloud Apps. Could be Microsoft Entra ID, user principal name, or other identifiers. |
 | `AccountDisplayName` | `string` | Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user. |
