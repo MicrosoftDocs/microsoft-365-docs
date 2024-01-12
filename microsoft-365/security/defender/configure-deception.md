@@ -7,20 +7,20 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - tier1
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid: 
-  - MOE150
-  - MET150
-ms.date: 12/20/2023
+- MOE150
+- MET150
+ms.date: 01/12/2024
 ---
 
 # Configure the deception capability in Microsoft Defender XDR
