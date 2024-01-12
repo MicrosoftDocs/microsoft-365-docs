@@ -1,11 +1,11 @@
 ---
 ms.date: 01/05/2023
 title: Topics in Viva Engage
-ms.author: daisyfeller
+ms.author: ergradel
 author: daisyfell
-manager: pamgreen
+manager: elizapo
 audience: admin
-ms.reviewer: cjtan
+ms.reviewer: daisyfeller
 ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
