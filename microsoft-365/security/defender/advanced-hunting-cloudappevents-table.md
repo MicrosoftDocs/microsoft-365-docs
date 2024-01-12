@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 10/16/2023
 ---
 
 # CloudAppEvents
@@ -31,7 +31,6 @@ ms.date: 02/16/2021
 - Microsoft Defender XDR
 
 The `CloudAppEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving accounts and objects in Office 365 and other [cloud apps and services](#apps-and-services-covered). Use this reference to construct queries that return information from this table.
-
 
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
@@ -72,23 +71,20 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 ## Apps and services covered
 
-The **CloudAppEvents** table contains enriched logs from all SaaS applications connected to Microsoft Defender for Cloud Apps. In your organization, this might include apps such as the following, and more:
-
-- Office 365 and Microsoft applications, such as:
-
-  - Exchange Online
-  - SharePoint Online
-  - Microsoft Teams
-  - Dynamics 365
-  - Skype for Business
-  - Viva Engage
-  - Power Automate
-  - Power BI
-
-- Dropbox
-- Salesforce
-- GitHub
-- Atlassian
+The __CloudAppEvents__ table contains enriched logs from all SaaS applications connected to Microsoft Defender for Cloud Apps, such as:
+- Office 365 and Microsoft Applications, including:
+   - Exchange Online
+   - SharePoint Online
+   - Microsoft Teams
+   - Dynamics 365
+   - Skype for Business
+   - Viva Engage
+   - Power Automate
+   - Power BI
+   - Dropbox
+   - Salesforce
+   - GitHub
+   - Atlassian
 
 Connect supported cloud apps for instant, out-of-the-box protection, deep visibility into the app's user and device activities, and more. For more information, see [Protect connected apps using cloud service provider APIs](/defender-cloud-apps/protect-connected-apps).
 
@@ -100,4 +96,4 @@ Connect supported cloud apps for instant, out-of-the-box protection, deep visibi
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
+
