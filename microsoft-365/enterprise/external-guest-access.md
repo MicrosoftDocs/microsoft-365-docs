@@ -3,7 +3,7 @@ title: IT Admins - Overview of external collaboration options in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 04/07/2022
+ms.date: 01/12/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -102,7 +102,7 @@ People from outside your organization can join meetings in the following ways:
 
 - If they're logged in to your organization with a guest account, they join meetings as a guest.
 
-- If they're logged in to a different organization with a work or school account, and both organizations trust each other in [external access](/microsoftteams/manage-external-access), they join meetings as an external participant.
+- If they're logged in to a different organization with a work or school account, and both organizations trust each other in [external access](/microsoftteams/manage-external-access) or are part of [cross-cloud meeting connection](/microsoftteams/cross-cloud-meetings#add-a-new-cross-cloud-meeting-connection), they join meetings as an external participant.
 
 - If they're not a guest or external participant, they must join meetings anonymously.
 
@@ -128,11 +128,11 @@ For information about working with anonymous file and folder sharing, see the fo
 
 ## Cross-cloud sharing and meetings
 
-You can collaborate with users in other Microsoft 365 cloud environments (such as between Microsoft Azure Commercial and Microsoft Azure Government) in the following ways:
+You can collaborate with users in other Microsoft Azure cloud environments (such as between Microsoft Azure Commercial and Microsoft Azure Government) in the following ways:
 
-- Cross-cloud guest access - You can share documents, sites, and teams with organizations that are in other Microsoft 365 cloud environments.
+- **Cross-cloud guest access** - You can share documents, sites, and teams with organizations that are in other Microsoft Azure cloud environments.
 
-- Cross-cloud meetings - You can meet with people in other Microsoft 365 cloud environments with an authenticated meeting experience that doesn't require guest accounts.
+- **Cross-cloud meetings** - You can meet with people in other Microsoft Azure cloud environments with an authenticated meeting experience that doesn't require guest accounts.
 
 Both options require that you enable connections to the other cloud environment and set up an organizational relationship with the specific organization with which you want to collaborate.
 
@@ -142,7 +142,7 @@ For information about setting up cross-cloud meetings, see [Meet with people in 
 
 ## Multitenant organizations
 
-If your organization manages multiple Microsoft 365 tenants, you can set up a multitenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Multitenant organizations synchronize users between tenants using Microsoft Entra B2B collaboration users, but with a user type of member rather than guest.
+If your organization manages multiple Microsoft 365 tenants, you can set up a multitenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Multitenant organizations synchronize users between tenants using Microsoft Entra B2B collaboration users. With the new Microsoft Teams desktop client, users can receive real-time notifications from all the tenants in the multitenant organization, participate in chats, meetings, and calls across all of the tenants without dropping from a call or meeting to switch tenants, and set their status for each account and organization individually.
 
 For information about how to set up a multitenant organization, see [Plan for multitenant organizations in Microsoft 365](/microsoft-365/enterprise/plan-multi-tenant-org-overview) and [Set up a multitenant org in Microsoft 365](/microsoft-365/enterprise/set-up-multi-tenant-org).
 
