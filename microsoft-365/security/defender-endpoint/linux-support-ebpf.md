@@ -83,7 +83,7 @@ You can also update the mdatp_managed.json file:
     }
 }
 ```
-Refere to the link for detailed sample json file - [Set preferences for Microsoft Defender for Endpoint on Linux](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide)
+Refere to the link for detailed sample json file - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
 > [!IMPORTANT]
 > If you disable eBPF, the supplementary event provider switches back to auditd.
 > In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. 
