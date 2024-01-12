@@ -30,7 +30,7 @@ ms.date: 01/08/2024
 
 You can use Teams apps, Power Apps, and Power BI to simplify business processes for your frontline teams.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+<!-->> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]-->
 
 > [!NOTE]
 > Additional capabilities for [financial services](/industry/financial-services), [healthcare](/industry/healthcare), [nonprofit](/industry/nonprofit), and [retail](/industry/retail) environments are available with the Microsoft industry clouds, which include capabilities from Dynamics 365 and Microsoft Azure as well as the Microsoft 365 features.
