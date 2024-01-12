@@ -71,15 +71,23 @@ To create a rule to translate documents automatically when data in a column chan
 
 1. From a SharePoint document library, select **Automate** > **Rules** > **Create a rule**.
 
+   ![Screenshot of the document library showing the Automate > Rules > Create a rule option.](../media/content-understanding/content-processing-create-rule.png)
+
 2. On the **Create a rule** page, select **Data in a column changes**.
+
+   ![Screenshot of the Create a rule page showing the A new file is added option highlighted.](../media/content-understanding/content-processing-create-a-rule-page.png)
 
 3. Under **When data in a column changes**, complete the rule statement:
 
-    a. Select **Choose a column**, and then select **Create a translated copy in**.
+    a. Select **Choose a column**, and then select the appropriate column for which to translate the file.
 
-    b. Select **Choose  condition**, and then select the appropriate condition under which to translate the file.
+    b. Select **Choose condition**, and then select the appropriate condition under which to translate the file.
 
-    c. Select **Enter a language**, and then select the language into which you want to translate the file.
+    c. Select **Choose action**, and then select **create a translated copy in**.
+
+    d. Select **enter a language**, and then select the language into which you want to translate the file.
+
+     ![Screenshot of the Create a rule page showing the A new file is added option highlighted.](../media/content-understanding/translation-column-enter-language.png)
 
 4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
 
