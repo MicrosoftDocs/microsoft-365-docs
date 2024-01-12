@@ -15,7 +15,7 @@ metadata:
   manager: jtremper
 
   audience: Admin
-  ms.date: 04/07/2022 #Required; mm/dd/yyyy format.
+  ms.date: 01/12/2024 #Required; mm/dd/yyyy format.
   ms.collection:
     - m365-frontline
     - highpri
@@ -35,9 +35,9 @@ highlightedContent:
       itemType: get-started
       url: flw-choose-scenarios.md
     # Card
-    - title: Technical planning guide for deploying frontline solutions
+    - title: How to find the best frontline team solution for your organization
       itemType: whats-new
-      url: flw-technical-planning-guide-deployment.md
+      url: frontline-team-options.md
 
 # productDirectory section (optional)
 productDirectory:
