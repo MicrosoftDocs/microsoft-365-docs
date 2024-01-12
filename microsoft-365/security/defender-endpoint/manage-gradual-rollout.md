@@ -77,8 +77,8 @@ You can assign a machine to an update channel to define the cadence in which a m
 For more information on how to configure updates, see [Create a custom gradual rollout process for Microsoft Defender updates](configure-updates.md).
 
 The following update channels are available:
-
 <br>
+
 
 ****
 
@@ -95,8 +95,8 @@ The following update channels are available:
 ### Update channels for daily updates
 
 You can also assign a machine to a channel to define the cadence in which it receives daily updates. Note that unlike the monthly process, there is no Beta channel and this gradual release cycle occurs multiple times a day.
-
 <br>
+
 
 ****
 
@@ -133,7 +133,7 @@ Adopting this model:
 To create your own custom gradual rollout process for monthly updates, you can use the following tools:
 
 - Group policy
-- Microsoft Configuration Manager
+- Microsoft Intune
 - PowerShell
 
 For details on how to use these tools, see [Create a custom gradual rollout process for Microsoft Defender updates](configure-updates.md).
@@ -147,4 +147,5 @@ For details on how to use these tools, see [Create a custom gradual rollout proc
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
