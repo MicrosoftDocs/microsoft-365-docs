@@ -56,7 +56,7 @@ When you enter prompts using Microsoft Copilot for Microsoft 365, the informatio
 > [!NOTE]
 > When using Microsoft Copilot for Microsoft 365, your organization’s data might leave the Microsoft 365 service boundary under the following circumstances:
 >
-> - When you allow Microsoft Copilot for Microsoft 365 chat experiences to reference public web content. The query sent to Bing might include your organization’s data. For more information, see [Microsoft Copilot for Microsoft 365 and public web content](#microsoft-copilot-for-microsoft-365-and-public-web-content).
+> - When you allow Microsoft Copilot with Graph-grounded chat to reference public web content. The query sent to Bing might include your organization’s data. For more information, see [Microsoft Copilot for Microsoft 365 and public web content](#microsoft-copilot-for-microsoft-365-and-public-web-content).
 > - When you’re using plugins to help Microsoft Copilot for Microsoft 365 to provide more relevant information. Check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For information, see [Extensibility of Microsoft Copilot for Microsoft 365](#extensibility-of-microsoft-copilot-for-microsoft-365).
 
 Abuse monitoring for Microsoft Copilot for Microsoft 365 occurs in real-time, without providing Microsoft any standing access to customer data, either for human or for automated review. While abuse moderation, which includes human review of content, is available in Azure OpenAI, Microsoft Copilot for Microsoft 365 services have opted out of it. Microsoft 365 data isn’t collected or stored by Azure OpenAI.
@@ -66,7 +66,7 @@ Abuse monitoring for Microsoft Copilot for Microsoft 365 occurs in real-time, wi
 
 ## Data stored about user interactions with Microsoft Copilot for Microsoft 365
 
-When a user interacts with Microsoft Copilot for Microsoft 365 apps (such as Word, PowerPoint, Excel, OneNote, Loop, or Whiteboard), we store data about these interactions. The stored data includes the user's prompt, how Copilot responded, and information used to ground Copilot's response. For example, this stored data provides users with Copilot interaction history in [Microsoft 365 Chat](https://support.microsoft.com/topic/5b00a52d-7296-48ee-b938-b95b7209f737) and [meetings in Microsoft Teams](https://support.microsoft.com/office/0bf9dd3c-96f7-44e2-8bb8-790bedf066b1). This data is processed and stored in alignment with contractual commitments with your organization’s other content in Microsoft 365. The data is encrypted while it's stored and isn't used to train foundation LLMs, including those used by Microsoft Copilot for Microsoft 365.
+When a user interacts with Microsoft Copilot for Microsoft 365 apps (such as Word, PowerPoint, Excel, OneNote, Loop, or Whiteboard), we store data about these interactions. The stored data includes the user's prompt, how Copilot responded, and information used to ground Copilot's response. For example, this stored data provides users with Copilot interaction history in [Microsoft Copilot with Graph-grounded chat](https://support.microsoft.com/topic/5b00a52d-7296-48ee-b938-b95b7209f737) and [meetings in Microsoft Teams](https://support.microsoft.com/office/0bf9dd3c-96f7-44e2-8bb8-790bedf066b1). This data is processed and stored in alignment with contractual commitments with your organization’s other content in Microsoft 365. The data is encrypted while it's stored and isn't used to train foundation LLMs, including those used by Microsoft Copilot for Microsoft 365.
 
 To view and manage this stored data, admins can use Content search or Microsoft Purview. Admins can also use Microsoft Purview to set retention policies for the data related to chat interactions with Copilot. For more information, see the following articles:
 
@@ -94,7 +94,7 @@ Microsoft [Advanced Data Residency (ADR)](/microsoft-365/enterprise/advanced-dat
 
 ## Microsoft Copilot for Microsoft 365 and public web content
 
-Microsoft Copilot Graph-grounding chat experiences can reference public web content from the Bing search index to ground user prompts and responses. Based on the user’s prompt, Copilot for Microsoft 365 determines whether it needs to use Bing to query public web content to help provide a relevant response to the user. There are [controls available to manage the use of public web content](#controls-available-to-manage-the-use-of-public-web-content) for both admins and users.
+Microsoft Copilot with Graph-grounded chat can reference public web content from the Bing search index to ground user prompts and responses. Based on the user’s prompt, Copilot for Microsoft 365 determines whether it needs to use Bing to query public web content to help provide a relevant response to the user. There are [controls available to manage the use of public web content](#controls-available-to-manage-the-use-of-public-web-content) for both admins and users.
 
 > [!NOTE]
 > Public web content grounding in Copilot uses only the Bing Search service. Copilot with commercial data protection (previously named Bing Chat Enterprise) is a separate offering and not involved with public web content grounding.
