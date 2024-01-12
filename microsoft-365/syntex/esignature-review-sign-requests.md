@@ -130,9 +130,6 @@ When you create a signature request with SharePoint eSignature, it goes through 
 
 When the status of a request is **Completed**, **Canceled**, or **Declined**, the request can no longer be acted on by either the sender or the recipients. As an example, if a recipient declines a request, the sender would need to send a new request after the reason for declining has been addressed. The original declined request can't be edited.
 
-## Unable to sign a document as an external recipient
-When you receive a document for signing from someone outside of your organization, you might be able to access and read the document but the signing operation fails when you attempt to sign it. Other times, you might not be able to access and read the document. If you're experiencing any issues with signing a document sent from someone outside your organization, contact the sender who will be able to resolve the issue.
-
 ## Access the signed document
 
 All parties involved in the request receive an email notification saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View signed document** to access the signed document and the request history. Signers can continue to access and download the signed document from the email notification for 30 days after receiving the email. Additionally, request senders will be able to access the originating folder in which the signed document was saved directly from the email.  
