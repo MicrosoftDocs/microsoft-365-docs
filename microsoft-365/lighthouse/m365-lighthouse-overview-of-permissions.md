@@ -35,7 +35,7 @@ To use Lighthouse, you need a combination of roles assigned via RBAC and GDAP.
 
 Lighthouse permissions in the partner tenant are managed by assigning RBAC roles. Each role has a set of permissions that determines which data users can access and change within the partner tenant.  
 
-RBAC roles are managed from the Lighthouse permissions page in Lighthouse. To access the Lighthouse permissions page and manage permissions, you must be a Global Administrator in Microsoft Entra ID.  
+RBAC roles are managed from the Lighthouse permissions page in Lighthouse. To access the Lighthouse permissions page and manage permissions, you must be a Global Administrator in Microsoft Entra ID. To learn more, see [Manage Lighthouse RBAC permissions in Microsoft 365 Lighthouse](m365-lighthouse-manage-lighthouse-rbac-permissions.md).
 
 There's currently only one Lighthouse RBAC role: Lighthouse Account Manager. The following table describes the Lighthouse Account Manager role.
 
