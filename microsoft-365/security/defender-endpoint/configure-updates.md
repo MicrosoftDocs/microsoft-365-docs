@@ -15,7 +15,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/06/2023
+ms.date: 01/12/2024
 ---
 
 # Create a custom gradual rollout process for Microsoft Defender updates
