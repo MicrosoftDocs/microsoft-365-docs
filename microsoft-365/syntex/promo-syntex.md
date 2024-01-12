@@ -1,10 +1,10 @@
 ---
-title: Try out Microsoft Syntex and explore its features
+title: Try out Microsoft Syntex and explore its services
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: lauris; jaeccles
-ms.date: 12/20/2023
+ms.date: 01/04/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -18,15 +18,15 @@ ms.localizationpriority: medium
 description: Learn how to try Microsoft Syntex services during a limited offering.
 ---
 
-# Try out Microsoft Syntex and explore its features
+# Try out Microsoft Syntex and explore its services
 
 Microsoft Syntex (evolving to be SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, analyze, create, sign, manage, and enhance them with ease.
 
-Through June 2024, your organization can use included monthly capacity for some of these features when you set up [pay-as-you-go billing](syntex-azure-billing.md). It's a great way to try out Syntex capabilities, such as document processing, document tagging, and content assembly, to see how you can use them to streamline processes in your organization.
+Through June 2024, your organization can use included monthly capacity for some of these services when you set up [pay-as-you-go billing](syntex-azure-billing.md). It's a great way to try out Syntex capabilities, such as document processing, document tagging, and content assembly, to see how you can use them to streamline processes in your organization.
 
 ## Get started
 
-If you want to try some of these features, here are the steps to follow:
+If you want to try some of these services, here are the steps to follow:
 
 1. [Set up pay-as-you-go billing](syntex-azure-billing.md).
 
@@ -41,7 +41,7 @@ You'll get a limited amount of usage each month during the offering period. The 
 |Service  |Units  |Monthly included capacity at no charge  |
 |---------|---------|---------|
 |Content assembly                 | Documents    | 50         |
-|eSignature                       | Envelopes    | 5          |
+|eSignature                       | Requests     | 5          |
 |Image tagging                    | Images       | 2,500      |
 |Optical character recognition    | Pages        | 2,500      |
 |Prebuilt document processing     | Pages        | 100        |
