@@ -37,7 +37,7 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 ## Manage sites
 
-Follow these steps to manage on which SharePoint sites users can use translation.
+By default, document translation is turned on for libraries in all SharePoint sites. Follow these steps to limit which sites users can use document translation.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
@@ -47,7 +47,7 @@ Follow these steps to manage on which SharePoint sites users can use translation
 
 4. On the **Document translation** panel:
 
-    a. By default, document translation is turned on for libraries in all SharePoint sites. Choose which site or sites this service should be enabled for.
+    a. Choose which site or sites this service should be enabled for.
 
     b. To restrict user access to this service, under **Sites where document translation can be used when it's turned on**, select **Edit**. On the **Where can document translation be used?** panel, select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
 
