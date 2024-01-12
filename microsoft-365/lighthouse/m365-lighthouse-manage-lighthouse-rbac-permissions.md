@@ -24,13 +24,10 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage Lighthouse RBAC permissions in Microsoft 365 Lighthouse
 
-The Lighthouse permissions page allows administrators in Microsoft 365 Lighthouse to manage user role-based access control (RBAC) permissions in the partner tenant. Administrators can view and manage membership for each Lighthouse RBAC role to ensure that users in the partner tenant have right-sized permissions. Administrators can also view the associated security group for each Lighthouse RBAC role.
+The Lighthouse permissions page allows administrators in Microsoft 365 Lighthouse to manage user role-based access control (RBAC) permissions in the partner tenant. Administrators can view and manage membership for each Lighthouse RBAC role to ensure that users in the partner tenant have right-sized permissions. Administrators can also view the associated security group for each Lighthouse RBAC role. If there's no security group assigned to a Lighthouse RBAC role, a security group will be automatically created when you assign the role to a user in the partner tenant.
 
 > [!NOTE]
 > To view security group membership for Lighthouse users with the Lighthouse Operator role, go to the Delegated access page in Lighthouse. The Delegated access page provides security group membership details for all delegated access relationships.
-
-> [!NOTE]
-> If there's no security group assigned to a Lighthouse RBAC role, a security group will automatically be created when you assign the role to a user in the partner tenant.
 
 ## Before you begin
 
@@ -73,6 +70,15 @@ To access the Lighthouse permissions page and manage permissions, you must have 
     - To remove multiple users from the Lighthouse RBAC role, select the users you want to remove, and then select **Remove users**.
 
 4. In the confirmation window, select **Remove users** to confirm removal.
+
+## Next steps
+
+After you've added users to, or removed users from, the available Lighthouse RBAC roles, go to the Lighthouse permissions page to view the latest group membership for each role.
+
+> [!NOTE]
+> Once you've added a user to, or removed a user from, a Lighthouse RBAC role, it may take up to an hour for group membership changes to appear in Lighthouse.
+
+To learn more about each Lighthouse RBAC role to determine which roles users in your partner tenant should have, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 ## Related content
 
