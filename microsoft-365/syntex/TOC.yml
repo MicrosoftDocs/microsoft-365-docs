@@ -210,6 +210,8 @@
           href: esignature-send-requests.md
         - name: Review and sign a request 
           href: esignature-review-sign-requests.md
+        - name: Troubleshoot a request 
+          href: esignature-troubleshoot.md
 
     - name: Optical character recognition 
       items: 
