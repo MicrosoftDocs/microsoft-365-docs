@@ -60,17 +60,20 @@ On the topic center home page, you can see the topics in your organization to wh
 
 Once a user confirms their connection to a topic, the user can make edits to the topic page to curate their connection. For example, they can provide more information about their connection to the topic.
 
+>[!NOTE]
+>Users need to have edit permissions to make edits to topic pages.
+
 ## Manage topics page
 
-To work on the **Manage topics** page of topic center, you need to have the required Manage topics permissions needed for the knowledge manager role. Your admin can assign these permissions to users during [Topics setup](set-up-topic-experiences.md), or new users can be [added afterwards](manage-topic-visibility.md) by an admin through the Microsoft 365 admin center.
+To work on the **Manage topics** page of the topic center, you need to have permissions to manage topics. Your admin can assign these permissions to users during [Topics setup](set-up-topic-experiences.md), or new users can be [added afterwards](manage-topic-visibility.md) by an admin through the Microsoft 365 admin center.
 
-On the **Manage topics** page, the topic dashboard shows all the topics, you have access to, that were identified from your specified source locations. Each topic will show the date the topic was discovered. A user who was assigned Manage topics permissions can review the unconfirmed topics and choose to:
+On the **Manage topics** page, the topic dashboard shows all the topics, you have access to that were identified from the source locations specified when you set up Topics. Each topic will show the date the topic was discovered. A user who was assigned Manage topics permissions can review the unconfirmed topics and choose to:
 
-- Confirm the topic: Indicates to users that an AI-suggested topic has been validated by a human curator.
+- Confirm the topic: Indicates to users that an AI-suggested topic has been validated by a human as a relevant topic for the organization.
 
-- Publish the topic: Edit the topic information to improve the quality of the topic that was initially identified, and highlights the topic to all users who have view access to topics.
+- Publish the topic: Edit the topic information to improve the quality of the topic that was initially identified, and enable all Topics users in the organization to access the topic. Note that users will only see content on the topic that their permissions give them access to.
 
-- Remove the topic: Makes the topic undiscoverable to end users. The topic is moved to the **Removed** tab and can be confirmed later if needed.
+- Remove the topic: Makes the topic undiscoverable to end users. The topic is moved to the **Removed** tab and can be confirmed later if needed. Note that removing a topic doesn't delete it.
 
 For more information about how to manage topics on the **Manage topics** page, see [Manage topics](manage-topics.md).
 
@@ -78,7 +81,7 @@ For more information about how to manage topics on the **Manage topics** page, s
 
 If you have Create and edit topics permissions, you can:
 
-- [Edit existing topics](edit-a-topic.md): You can make changes to existing topic pages that were created through discovery.
+- [Edit existing topics](edit-a-topic.md): You can make changes to existing topic pages that were created through discovery or created by other users.
 
 - [Create new topics](create-a-topic.md): You can create new topics for ones that weren't found through discovery, or if AI tools didn't find enough evidence to create a topic.
 

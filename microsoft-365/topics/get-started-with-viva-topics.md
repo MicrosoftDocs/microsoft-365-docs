@@ -33,7 +33,10 @@ Topics empowers you to:
 
 ## Discover important topics highlighted in related content
 
-As you read content stored in Microsoft 365, topics will be highlighted inline. When you hover over the topic name, you’ll see more information shown in a topic card. You might see a prompt to provide feedback on topic cards and topic pages. When you give feedback on topics, you improve the experience for yourself and others.
+As you read content stored in select Microsoft 365 experiences, such as SharePoint, topics will be highlighted inline. When you hover over the topic name, you’ll see more information shown in a topic card. You might see a prompt to provide feedback on topic cards and topic pages. When you give feedback on topics, you improve the experience for yourself and others.
+
+>[!NOTE]
+>Inline highlights aren't available for all Microsoft 365 experiences. You won't currently see inline highlights in Teams.
 
 Topics will introduce topic highlights gradually across the service. At first, you’ll see highlights in SharePoint news and pages.
 
