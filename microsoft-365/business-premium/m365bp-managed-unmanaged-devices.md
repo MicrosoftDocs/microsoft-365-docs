@@ -1,8 +1,8 @@
 ---
 title: Secure managed and unmanaged devices            
 description: Identify personal, unmanaged devices and company-owned devices, and learn how to secure them.            
-author: denisebmsft
-ms.author: deniseb
+ms.author: siosulli
+author: siosulli
 manager: dansimp 
 ms.date: 10/26/2023
 ms.topic: conceptual
