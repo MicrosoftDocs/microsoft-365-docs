@@ -45,7 +45,7 @@ When you [start a trial or purchase Microsoft 365 Business Premium](get-microsof
 
 ## Add a domain
 
-When you try or buy Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the sign-up process.
+When you try or buy Microsoft 365 Business Premium, you can use your own domain, or purchase one during the sign-up process.
 
 > [!NOTE]
 > If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center([https://admin.microsoft.com](https://admin.microsoft.com)).
