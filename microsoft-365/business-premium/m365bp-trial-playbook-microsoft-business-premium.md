@@ -22,7 +22,7 @@ description: "Make the most of your Microsoft 365 Business Premium trial. Try ou
 
 # Trial user guide: Microsoft 365 Business Premium
 
-Welcome to the Microsoft Business Premium trial user guide! This guide will help you make the most of your free trial. You can see firsthand how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with advanced security capabilities. Use this guide to set up your threat protection features, analyze detected threats, and respond to cyberattacks.
+Welcome to the Microsoft Business Premium trial user guide! This guide helps you make the most of your free trial. You can see firsthand how Microsoft 365 Business Premium increases productivity and helps safeguard your organization with advanced security capabilities. Use this guide to set up your threat protection features, analyze detected threats, and respond to cyberattacks.
 
 ## Set up the Microsoft 365 Business Premium trial
 
@@ -33,7 +33,7 @@ When you [start a trial or purchase Microsoft 365 Business Premium](get-microsof
 
 1. [Set up your trial](../business-premium/m365-business-premium-setup.md)!
 
-   After you've initiated the trial and completed the setup process, it can take up to two hours for changes to take effect.
+   After you start your trial and complete the setup process, it can take up to two hours for changes to take effect.
 
 2. [Turn on Multi-Factor Authentication](m365bp-turn-on-mfa.md) (MFA). You can use security defaults to get set up right away, or use Conditional Access policies to meet more stringent requirements.
 
