@@ -21,7 +21,7 @@ description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
 Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, create a calendar, and allow other people to book time with them. This article is for owners and administrators who manage Bookings for their organizations.
 
 > [!NOTE]
-> The admin controls described in these sections aren't available for Office 365 Operated by 21Vianet (China) customers.
+> The admin controls described in these sections aren't available for Microsoft 365 Operated by 21Vianet (China) customers.
 
 ## Turn Bookings on or off for your organization using the Microsoft 365 admin center
 

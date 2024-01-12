@@ -35,7 +35,7 @@ The feature is currently available for the following file types: .ai, .dwg, .epu
 More annotation tools and file types will be added in future releases.
 
 > [!NOTE]
-> This feature is available only for licensed Syntex users. 
+> This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
 ## To use annotations
 

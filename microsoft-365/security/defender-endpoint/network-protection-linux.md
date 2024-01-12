@@ -2,7 +2,7 @@
 title: Use network protection to help prevent Linux connections to bad sites
 description: Protect your network by preventing Linux users from accessing known malicious and suspicious network addresses
 keywords: Network protection, Linux exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,8 +12,7 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
-ms.custom: asr
-ms.subservice: mde
+ms.subservice: linux
 ms.topic: overview
 ms.collection: 
 - m365-security
@@ -25,7 +24,7 @@ ms.date: 02/17/2023
 
 # Network protection for Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

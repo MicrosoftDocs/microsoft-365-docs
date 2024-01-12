@@ -39,7 +39,7 @@ Using Intune, you can view the licenses in-use, the available licenses, and the 
 
 ## Manage apps
 
-You can view a list of all apps that have been added to Intune. This list provides details about each apps, such as the type, status, and verision. Also, the list shows whether the app has been assigned to members of your organization.
+You can view a list of all apps that have been added to Intune. This list provides details about each app, such as the type, status, and version. Also, the list shows whether the app has been assigned to members of your organization.
 
 :::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-17.png" alt-text="App licenses in Intune" border="false" :::
 

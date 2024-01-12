@@ -2,7 +2,7 @@
 title: Deploy your frontline operational hierarchy
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: arnavgupta
 ms.topic: conceptual
 audience: admin
@@ -10,14 +10,13 @@ ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to set up and deploy your frontline operational hierarchy to map your organization's structure of frontline teams and locations to a hierarchy in the Teams admin center.
 ms.localizationpriority: high
-ROBOTS: NOINDEX, NOFOLLOW 
 ms.collection: 
   - M365-collaboration
   - m365-frontline
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 11/14/2023
+ms.date: 12/04/2023
 ---
 
 # Deploy your frontline operational hierarchy

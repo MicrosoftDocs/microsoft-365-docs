@@ -2,7 +2,7 @@
 title: Onboard non-persistent virtual desktop infrastructure (VDI) devices
 description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to Microsoft Defender for Endpoint service.
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.reviewer: pahuijbr
@@ -15,7 +15,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 09/21/2023
-ms.subservice: mde
+ms.subservice: onboard
 ---
 
 # Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR
@@ -25,7 +25,7 @@ Virtual desktop infrastructure (VDI) is an IT infrastructure concept that lets e
 Like any other system in an IT environment, these too should have an Endpoint Detection and Response (EDR) and Antivirus solution to protect against advanced threats and attacks.
 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -160,12 +160,13 @@ If you have onboarded the primary image of your VDI environment (SENSE service i
    sc query sense
    ```
 
-3. Run the following commands using PsExec.exe (which can be downloaded from [https://download.sysinternals.com/files/PSTools.zip](https://download.sysinternals.com/files/PSTools.zip)):
+3. Run the following commands in a CMD window::
 
    ```console
-   PsExec.exe -s cmd.exe
    del "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber\*.*" /f /s /q
    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+   REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v 7DC0B629-D7F6-4DB3-9BF7-64D5AAF50F1A /f
+   REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\48A68F11-7A16-4180-B32C-7F974C7BD783" /f
    exit
    ```
 
@@ -237,7 +238,7 @@ The following configuration settings are recommended:
 
 #### Attack surface reduction
 
-- Enable network protection: Audit mode
+- Enable network protection: Test mode
 - Require SmartScreen for Microsoft Edge: Yes
 - Block malicious site access: Yes
 - Block unverified file download: Yes

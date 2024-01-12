@@ -19,7 +19,7 @@ search.appverid: met150
 
 # Edit, delete and export roles in Microsoft Defender XDR Unified role-based access control (RBAC)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -28,8 +28,7 @@ search.appverid: met150
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
+- [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 In Microsoft Defender XDR Unified role-based access control (RBAC), you can edit and delete custom roles or roles that were imported from Defender for Endpoint, Defender for Identity, or Defender for Office 365.
 
@@ -44,7 +43,7 @@ The following steps guide you on how to edit roles in Microsoft Defender XDR Uni
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft Defender XDR to get to the Permissions and roles page.
 4. Select the role you want to edit. You can only edit one role at a time.
-5. Select the **Edit** button or select **Edit** from the action menu next to the role name. This opens a flyout pane where you can edit the role:
+5. Once selected, this opens a flyout pane where you can edit the role:
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-edit-roles.png" alt-text="Screenshot of the edit roles flyout page" lightbox="../../media/defender/m365-defender-rbac-edit-roles.png":::
 
@@ -95,4 +94,4 @@ A CSV file containing all the roles data will be generated and downloaded to the
 
 - [Learn about RBAC permissions](custom-permissions-details.md)
 - [Map existing RBAC roles to Microsoft Defender XDR Unified RBAC roles](compare-rbac-roles.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

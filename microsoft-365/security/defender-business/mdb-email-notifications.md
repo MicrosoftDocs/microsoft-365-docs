@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 ms.date: 05/01/2023
@@ -75,3 +74,4 @@ Proceed to:
 
 - [Step 5: Onboard devices to Defender for Business](mdb-onboard-devices.md)
 - [Step 6: Set up, review, and edit your security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)
+

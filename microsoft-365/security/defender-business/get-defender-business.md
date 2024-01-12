@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 09/07/2023
 ms.reviewer: efratka
@@ -136,3 +135,4 @@ If your subscription also includes Microsoft Intune, you use the Intune admin ce
 ## Next step
 
 - Proceed to [Step 2: Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
+

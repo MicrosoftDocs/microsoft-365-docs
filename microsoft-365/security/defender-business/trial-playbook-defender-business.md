@@ -12,8 +12,7 @@ ms.collection:
 - tier1
 ms.localizationpriority: high
 ms.date: 05/04/2023
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 search.appverid: 
 - MOE150
 - MET150
@@ -187,3 +186,4 @@ To access the tutorial, do the following:
 - [Tutorials and simulations in Defender for Business](mdb-tutorials.md)
 - [Video: Enterprise-Grade Protection for Small & Medium Sized Businesses](https://youtu.be/umhUNzMqZto)
 - [Get Defender for Business](get-defender-business.md)
+

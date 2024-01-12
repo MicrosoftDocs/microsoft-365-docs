@@ -1,10 +1,10 @@
 ---
-ms.date: 12/16/2021
+ms.date: 11/21/2023
 title: Analytics for Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
-ms.reviewer: cjtan
+ms.reviewer: mithunas
 audience: admin
 ms.topic: article
 ms.service: viva
@@ -59,3 +59,20 @@ The **Sites processed for topic discovery** section shows the number of sites th
 |Sites processed|The number of sites that have been indexed by AI for topic discovery and updates in your organization. The site count might not update immediately in the event of deleted sites.|
 
 ![Screenshot of analytics for sites processed.](../media/topics/topics-sites-processed.png)
+
+## Total unique Topics users
+
+>[!NOTE]
+>Total unique Topics users metrics are currently only available to users in the Early Adopter Program.
+
+This chart measures how unique users in your organization are engaging with Topics.
+
+- **Search results** measures the number of times a Topic answer is shown.
+- **Topic card views** measures the number of times a topic card was viewed.
+- **Topic page views** measures the number of times a topic page was viewed.
+- **Editing and publishing** measures how many times a topic has been updated and published. Each time a topic is republished counts as an edit. However, draft edits aren't counted. If a user edits two or more things on a topic before publishing or republishing, it will count as one update per publish.
+- **Sharing** measures all scenarios related to sharing topics by using the topic picker (# tags). Tagging on Viva Engage and Answers aren't currently counted.
+- **Feedback** measures how many times users have responded to feedback questions to improve topics.
+
+>[!NOTE]
+>If data isn't available for a certain time period, a dotted line will connect the available data points.

@@ -1,15 +1,14 @@
 ---
 title: Enable attack surface reduction rules
 description: Enable attack surface reduction rules to protect your devices from attacks that use macros, scripts, and common injection techniques.
-keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
 author: Dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
-ms.subservice: mde
+ms.subservice: asr
 ms.topic: how-to
 ms.collection: 
 - m365-security
@@ -17,7 +16,7 @@ ms.collection:
 - mde-asr
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
-ms.date: 04/20/2023
+ms.date: 11/30/2023
 ---
 
 # Enable attack surface reduction rules
@@ -102,7 +101,7 @@ When adding exclusions, keep in mind:
 
 ## Policy Conflict
 
-1. If a conflicting policy is applied via MDM and GP, the setting applied from MDM takes precedence.
+1. If a conflicting policy is applied via MDM and GP, the setting applied from GP takes precedence.
 
 2. Attack surface reduction rules for managed devices now support behavior for merger of settings from different policies, to create a superset of policy for each device. Only the settings that aren't in conflict are merged, while those that are in conflict aren't added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either profile would be deployed. Attack surface reduction rule merge behavior is as follows:
    - Attack surface reduction rules from the following profiles are evaluated for each device to which the rules apply:

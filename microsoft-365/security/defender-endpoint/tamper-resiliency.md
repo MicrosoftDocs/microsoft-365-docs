@@ -5,8 +5,8 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 ms.reviewer: joshbregman
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.date: 07/04/2023
 ms.topic: overview
 ms.collection:

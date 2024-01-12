@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 07/06/2023
+ms.date: 11/28/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -23,11 +23,6 @@ ms.custom:
 - admindeeplinkMAC
 - adminvideo
 - business_assist
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: "Learn about admin roles, such as the global admin role, or the service admin role. Roles map to specific business functions and give permissions to do specific tasks in the Microsoft 365 admin center."
 ---
 
@@ -77,7 +72,7 @@ If you get a message in the admin center that you don't have permissions to edit
 
 In the Microsoft 365 admin center, you can go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**Role assignments**</a>, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permissions to do. Select the **Assigned** or **Assigned admins** tab to add users to roles.
 
-You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **Show all by Category**. (For detailed information, including the cmdlets associated with a role, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).)
+You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **Show all by Category**. For detailed information, including the cmdlets associated with a role, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 |Admin role     |Who should be assigned this role?  |
 |---------|---------|

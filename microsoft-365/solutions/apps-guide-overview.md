@@ -61,7 +61,7 @@ MAM in Intune is designed to protect organization data at the application level,
 If you choose to use MAM without device enrollment, there are some limitations to be aware of, such as:
 - You can't specifically deploy apps directly to the device. The end user (member of your organization) retrieves the apps from the store.
 - You can't provision [certificate profiles](/mem/intune/protect/certificates-configure) on these unmanaged devices.
-- You can't provision company [Wi-Fi](/mem/intune/configuration/wi-fi-settings-configure) and [VPN](/mem/intune/configuration/vpn-settings-configure) settings on these unmanged devices.
+- You can't provision company [Wi-Fi](/mem/intune/configuration/wi-fi-settings-configure) and [VPN](/mem/intune/configuration/vpn-settings-configure) settings on these unmanaged devices.
 
 > [!NOTE]
 > The MAM configuration includes managing apps with Intune on devices enrolled with third-party enterprise mobility management (EMM) providers. You can use Intune app configuration and protection policies independent of any MDM solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution. By implementing app-level policies, you can restrict access to company resources and keep data within the purview of your IT department.

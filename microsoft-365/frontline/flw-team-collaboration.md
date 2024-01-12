@@ -4,7 +4,7 @@ description: Learn how your frontline teams can communicate and collaborate effe
 ms.topic: conceptual
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 f1.keywords:
 - NOCSH
@@ -80,8 +80,6 @@ Financial services organizations can also use the [Collaboration Manager for Loa
 
 > [!TIP]
 > Examples are given for the financial services, healthcare, nonprofit, and retail industries, but you can use these apps for an organization in any sector.
-
-[View videos and resources](collab-features-apps-toolkit.md) to share with your team to help them use collaboration apps and features in Teams.
 
 ### Create, manage, and share schedules with Shifts
 

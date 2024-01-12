@@ -9,12 +9,10 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: edr
 ms.localizationpriority: medium
-ms.custom:
-  - mde-ngp
-  - admindeeplinkDEFENDER
+ms.custom: admindeeplinkDEFENDER
 ms.collection: 
 - m365-security
 - tier2

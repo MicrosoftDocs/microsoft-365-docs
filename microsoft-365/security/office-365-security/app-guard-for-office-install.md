@@ -18,12 +18,15 @@ ms.collection:
 description: Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 10/9/2023
+ms.date: 11/27/2023
 ---
 
 # Application Guard for Office for admins
 
 **Applies to:** Word, Excel, and PowerPoint for Microsoft 365 Apps, Windows 10 Enterprise, Windows 11 Enterprise
+
+> [!IMPORTANT]
+> Microsoft Defender Application Guard for Office is being deprecated and is no longer being updated. This deprecation also includes the [Windows.Security.Isolation APIs](/uwp/api/windows.security.isolation) that are used for Microsoft Defender Application Guard for Office. We recommend transitioning to Microsoft Defender for Endpoint [attack surface reduction rules](../defender-endpoint/overview-attack-surface-reduction.md) along with [Protected View](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-attachments) and [Windows Defender Application Control](/windows/security/application-security/application-control/windows-defender-application-control/wdac).
 
 Microsoft Defender Application Guard for Office (Application Guard for Office) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up supported devices for Application Guard for Office.
 

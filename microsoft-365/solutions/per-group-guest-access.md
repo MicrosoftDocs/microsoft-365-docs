@@ -1,7 +1,7 @@
 ---
 title: "Prevent guests from being added to a specific group"
 ms.reviewer: rahulnayak
-ms.date: 08/12/2020
+ms.date: 12/02/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
   - M365solutions
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 f1.keywords: NOCSH
 recommendations: false
 description: "Learn how to prevent guests from being added to a specific group"
@@ -27,17 +28,15 @@ If you want to allow guest access to most groups and teams, but have somewhere y
 
 If you use sensitivity labels in your organization, we recommend using them to control guest access on a per-group basis. For information about how to do this, [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md). This is the recommended approach.
 
-## Change group settings using Microsoft PowerShell
+## Change group settings using Microsoft Graph PowerShell
 
 You can also prevent the addition of new guests to individual groups by using PowerShell. (Remember that the team's associated SharePoint site has [separate guest sharing controls](/sharepoint/change-external-sharing-site).)
 
-You must use the preview version of [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
+You must use the `beta` version of [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) to change the group-level guest access setting:
 
-- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD module](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) and follow the instructions to install the public preview release.
+- If you haven't installed the module before, see [Installing the Microsoft Graph PowerShell module](/powershell/microsoftgraph/installation) and follow the instructions.
 
-- If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.
-
-- If you have already installed the preview version, run `Install-Module AzureADPreview` to make sure it's the latest version of this module.
+- If you have already installed the `beta` version, run `Update-Module Microsoft.Graph.Beta` to make sure it's the latest version of this module.
 
 > [!NOTE]
 > You must have global admin rights to run these commands. 
@@ -45,40 +44,56 @@ You must use the preview version of [Azure Active Directory PowerShell for Graph
 Run the following script, changing *\<GroupName\>* to the name of the group where you want to block guest access.
 
 ```PowerShell
+Connect-MgGraph
+
 $GroupName = "<GroupName>"
+$templateId = (Get-MgBetaDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}).Id
+$groupID = (Get-MgBetaGroup -Filter "DisplayName eq '$GroupName'").Id
 
-Connect-AzureAD
+$params = @{
+	templateId = "$templateId"
+	values = @(
+		@{
+			name = "AllowToAddGuests"
+			value = "false"
+		}
+	)
+}
 
-$template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
-$settingsCopy = $template.CreateDirectorySetting()
-$settingsCopy["AllowToAddGuests"]=$False
-$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
-New-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy
+New-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params
+
 ```
 
 To verify your settings, run this command:
 
 ```PowerShell
-Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
+(Invoke-GraphRequest -Uri https://graph.microsoft.com/beta/Groups/$groupId/settings -Method GET) | ConvertTo-Json | ConvertFrom-Json | fl Value
 ```
 
 The verification looks like this:
-    
+
 ![Screenshot of PowerShell window showing that guest group access has been set to false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
 
 If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing ```<GroupName>``` to the name of the group where you want to allow guest access.
 
 ```PowerShell
+Connect-MgGraph
+
 $GroupName = "<GroupName>"
+$templateId = (Get-MgBetaDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}).Id
+$groupID = (Get-MgBetaGroup -Filter "DisplayName eq '$GroupName'").Id
 
-Connect-AzureAD
+$params = @{
+	templateId = "$templateId"
+	values = @(
+		@{
+			name = "AllowToAddGuests"
+			value = "true"
+		}
+	)
+}
 
-$template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
-$settingsCopy = $template.CreateDirectorySetting()
-$settingsCopy["AllowToAddGuests"]=$True
-$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
-$id = (get-AzureADObjectSetting -TargetType groups -TargetObjectId $groupID).id
-Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy -id $id
+New-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params
 ```
 
 ## Allow or block guest access based on their domain
@@ -94,13 +109,13 @@ By default, guests aren't visible in the Exchange Global Address List. Use the s
 Find the guest's ObjectID by running:
 
 ```PowerShell
-get-AzureADUser -all $true | ?{$_.CreationType -eq "Invitation"}
+Get-MgBetaUser -All | ?{$_.CreationType -eq "Invitation"}
 ```
 
 Then run the following using the appropriate values for ObjectID, GivenName, Surname, DisplayName, and TelephoneNumber.
 
 ```PowerShell
-Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
+Update-MgBetaUser -UserId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -mobilePhone '555-555-5555'
 ```
 
 ## Related topics
@@ -113,4 +128,4 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
   
 [Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
-[Set-AzureADUser](/powershell/module/azuread/set-azureaduser)
+[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser)

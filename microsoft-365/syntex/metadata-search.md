@@ -23,7 +23,7 @@ Microsoft Syntex gives you the ability to quickly search through your document's
 Syntex content query lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 > [!NOTE]
-> This feature is available only for licensed Syntex users. 
+> This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
 ## To use Syntex content query
 

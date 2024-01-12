@@ -4,7 +4,7 @@ description: Understanding the device timeline in Microsoft Defender for Endpoin
 keywords: device timeline, endpoint, MITRE, MITRE ATT&CK, techniques, tactics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +18,7 @@ ms.collection:
 - tier2
 - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 ms.date: 03/15/2021
 ---
 

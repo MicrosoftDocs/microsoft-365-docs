@@ -84,7 +84,7 @@ On the right pane, you'll see the **Alert details**. Here you can see more detai
     :::image type="content" source="../../media/defender-identity/manage-alert.png" alt-text="The Manage alert option" lightbox="../../media/defender-identity/manage-alert.png":::
 
     > [!NOTE]
-    > In the Excel file, you now have two links available: **View in Microsoft Defender for Identity** and **View in Microsoft 365 Defender**. Each link will bring you to the relevant portal, and provide information about the alert there.
+    > In the Excel file, you now have two links available: **View in Microsoft Defender for Identity** and **View in Microsoft Defender XDR**. Each link will bring you to the relevant portal, and provide information about the alert there.
 
 ## See also
 

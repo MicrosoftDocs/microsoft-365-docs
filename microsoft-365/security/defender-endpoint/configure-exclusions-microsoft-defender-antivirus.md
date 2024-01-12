@@ -1,15 +1,15 @@
 ---
 title: Configure custom exclusions for Microsoft Defender Antivirus
 description: You can exclude files (including files modified by specified processes) and folders from Microsoft Defender Antivirus scans.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 07/18/2023
+ms.date: 01/02/2024
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.audience: ITPro
 ms.topic: how-to
 ms.collection: 
@@ -50,7 +50,6 @@ If you're using another tool, such as Configuration Manager or Group Policy, or 
 
 - [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configure contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md) to configure restrictions for your exclusions.
 
 #### Manage antivirus exclusions in Intune (for existing policies)
 

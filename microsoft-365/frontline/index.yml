@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: lana-chin #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-chinlana #Required; microsoft alias of author; optional team alias.
-  manager: serdars
+  manager: jtremper
 
   audience: Admin
   ms.date: 04/07/2022 #Required; mm/dd/yyyy format.
@@ -89,7 +89,7 @@ productDirectory:
     # Card
     - title: Set up and configure Microsoft 365 for frontline workers
       imageSrc: /office/media/icons/settings.svg
-      summary: Set up a trial team, start with a pilot deployment, or deploy at scale with this guidance.
+      summary: Start with a pilot deployment or deploy at scale with this guidance.
       url: flw-deploy-overview.md
     # Card
     - title: Adoption resources

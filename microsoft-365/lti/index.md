@@ -1,8 +1,8 @@
 ---
 title: An overview of Microsoft LTI apps
-ms.author: danismith
-author: DaniEASmith
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
@@ -27,6 +27,7 @@ These tools include:
 - [OneDrive LTI](#onedrive-lti-apps)
 - [Teams Meetings LTI](#teams-meetings-lti)
 - [Teams Classes LTI](#teams-classes-lti)
+- [Microsoft Reflect LTI](#microsoft-reflect-lti)
 
 For general information on managing Microsoft LTI apps, see [Manage Microsoft LTI apps for any LMS](manage-microsoft-one-lti.md).
 
@@ -95,3 +96,17 @@ For configuration steps, see:
 - [Microsoft Teams Classes with Moodle](teams-classes-meetings-with-moodle.md).
 - [Microsoft Teams Classes with Open LMS](open-lms-teams-classes-and-meetings.md).
 - [Microsoft Teams Classes with Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).
+
+## Microsoft Reflect LTI
+
+[Microsoft Reflect](https://reflect.microsoft.com) is a wellbeing app designed to foster connection, expression, and learning by promoting self-awareness, empathy, and emotional growth.
+
+Integrate Reflect into your LMS to create impactful check-ins, gain wellbeing insights, and build a happier, healthier learning community.
+
+For configuration steps, see:
+
+- [Microsoft Reflect with Canvas](reflect-lti-canvas.md).
+- [Microsoft Reflect with Schoology Learning](reflect-lti-schoology.md).
+- [Microsoft Reflect with Moodle](reflect-lti-moodle.md).
+- [Microsoft Reflect with D2L Brightspace](reflect-lti-brightspace.md).
+- [Microsoft Reflect with Blackboard Learn](reflect-lti-blackboard.md).

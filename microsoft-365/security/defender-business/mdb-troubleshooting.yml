@@ -8,8 +8,7 @@ metadata:
   manager: dansimp 
   audience: Admin3
   ms.topic: faq
-  ms.service: microsoft-365-security
-  ms.subservice: mdb
+  ms.service: defender-business
   ms.localizationpriority: medium
   ms.date: 05/05/2023
   ms.reviewer: efratka

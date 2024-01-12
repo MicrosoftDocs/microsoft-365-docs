@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 11/17/2023
+ms.date: 01/11/2024
 ---
 
 # Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
@@ -60,13 +60,15 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 | Debian             | 9.0                  | 4.19.0         |
 | Oracle Linux RHCK  | 7.9                  | 3.10.0-1160    |
 | Oracle Linux UEK   | 7.9                  | 5.4            |
+| Amazon Linux 2     | 2                    | 5.4.261-174.360|
+
 
 > [!NOTE]
 > Oracle Linux 8.8 with kernel version 5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64 will result in kernel hang when eBPF is enabled as supplementary subsystem    provider. This kernel version should not be used for eBPF mode. Refer to Troubleshooting and Diagnostics section for mitigation steps.
 
 ## Use eBPF
 
-The eBPF sensor will be automatically enabled for all customers by default for agent versions “101.23082.0006” and above. Customers need to update to the above-mentioned supported versions to experience the feature. When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux updates supplementary_events_subsystem to ebpf.
+The eBPF sensor is automatically enabled for all customers by default for agent versions "101.23082.0006" and above. Customers need to update to the above-mentioned supported versions to experience the feature. When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux updates supplementary_events_subsystem to ebpf.
 
 :::image type="content" source="../../media/defender-endpoint/ebpf-subsystem-linux.png" alt-text="ebpf subsystem highlight in the mdatp health command" lightbox="../../media/defender-endpoint/ebpf-subsystem-linux.png":::
 
@@ -76,6 +78,7 @@ In case you want to manually disable eBPF then you can run the following command
 sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 ```
 You can also update the mdatp_managed.json file:
+
 ```JSON
 {
     "features": {
@@ -89,12 +92,16 @@ Refere to the link for detailed sample json file - [Set preferences for Microsof
 > In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. 
 
 ## Immutable mode of Auditd
+
 For customers using auditd in immutable mode, a reboot is required post enablement of eBPF in order to clear the audit rules added by Microsoft Defender for Endpoint. This is a limitation in immutable mode of auditd which freezes the rules file and prohibits editing/overwriting. This is resolved with the reboot.
 Post reboot, run the below command to check if audit rules got cleared.
+
 ```bash
 % sudo auditctl -l
 ```
+
 The output of above command should show no rules or any user added rules. In case the rules did not get removed, then perform the following steps to clear the audit rules file
+
   1. Switch to ebpf mode
   2. Remove the file /etc/audit/rules.d/mdatp.rules
   3. Reboot the machine
@@ -111,10 +118,13 @@ Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.
 Following steps can be taken to mitigate this issue:     
 
 1. Use a kernal version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Please note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
+
 2. Switch to auditd mode if customer needs to use the same kernel version
+
 ```bash
 sudo mdatp config  ebpf-supplementary-event-provider  --value disabled
 ```
+
 The following two sets of data help analyze potential issues and determine the most effective resolution options.
 
 1. Collect a diagnostic package from the client analyzer tool by using the following instructions: [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
@@ -130,7 +140,6 @@ sudo mdatp diagnostic  ebpf-statistics
 ```
 ```Output
 Output
-
 Monitor 20 seconds
 Top file paths:
 /var/log/microsoft/mdatp/microsoft_defender.log : 10
@@ -161,4 +170,3 @@ Exclusions applied to auditd can not be migrated or copied to eBPF. Common conce
 
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md)
 - [Microsoft Defender for Endpoint on Linux resources](linux-resources.md#collect-diagnostic-information)
-

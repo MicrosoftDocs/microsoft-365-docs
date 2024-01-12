@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 08/08/2023
 ms.reviewer: efratka, nehabha, muktaagarwal
@@ -380,3 +379,4 @@ After you've onboarded a device, you can run a quick phishing test to make sure 
 
 - If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
 - If you're done onboarding devices, proceed to [Step 6: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
+

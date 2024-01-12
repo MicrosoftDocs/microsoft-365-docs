@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: kywirpel
+ms.reviewer: shcallaw
 ms.date: 06/05/2023
 audience: Admin
 ms.topic: article
@@ -203,7 +203,7 @@ Select any task from the list to open the deployment insights details pane for t
 
 ## Next steps
 
-For information on how to manage tenants by using deployment insights, see [Manage deployments using insights in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenants-using-deployment-insights.md).
+For information on how to manage tenants by using deployment insights, see [Manage tenants by using deployment insights in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenants-using-deployment-insights.md).
 
 ## Related content
 

@@ -45,7 +45,10 @@ This article describes how admins can manage entries for files in the Microsoft 
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values aren't supported.
 
-- For files, the maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 file entries in total).
+- Entry limits for files:
+  - **Exchange Online Protection**: The maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 file entries in total).
+  - **Defender for Office 365 Plan 1**: The maximum number of allow entries is 1000, and the maximum number of block entries is 1000 (2000 file entries in total).
+  - **Defender for Office 365 Plan 2**: The maximum number of allow entries is 5000, and the maximum number of block entries is 10000 (15000 file entries in total).
 
 - You can enter a maximum of 64 characters in a file entry.
 

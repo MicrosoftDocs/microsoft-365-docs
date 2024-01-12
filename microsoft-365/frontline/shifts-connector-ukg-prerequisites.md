@@ -2,7 +2,7 @@
 title: Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management (Preview)
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: imarquesgil
 ms.topic: how-to
 audience: admin

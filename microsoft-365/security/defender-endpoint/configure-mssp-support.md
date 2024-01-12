@@ -2,7 +2,7 @@
 title: Configure managed security service provider support
 description: Take the necessary steps to configure the MSSP integration with the Microsoft Defender for Endpoint
 keywords: managed security service provider, mssp, configure, integration
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,15 +15,13 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.subservice: mde
-
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Configure managed security service provider integration
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -54,7 +52,7 @@ Typically, MSSP customers take the initial configuration steps to grant MSSPs ac
 
 In general, the following configuration steps need to be taken:
 
-- **Grant the MSSP access to Microsoft 365 Defender**
+- **Grant the MSSP access to Microsoft Defender XDR**
 
   This action needs to be done by the MSSP customer. It grants the MSSP access to the MSSP customer's Defender for Endpoint tenant.
 

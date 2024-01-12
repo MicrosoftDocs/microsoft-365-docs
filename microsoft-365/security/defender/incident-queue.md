@@ -22,14 +22,15 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 05/18/2023
+ms.date: 12/05/2023
 ---
 
 # Prioritize incidents in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - Microsoft Defender XDR
 
 Microsoft Defender XDR applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft Defender XDR also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility in Microsoft Defender XDR has across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
@@ -61,7 +62,7 @@ The **Filters** list above the list of incidents shows the currently applied fil
 
 From the default incident queue, you can select **Filter** to see a **Filter** pane, from which you specify a filtered set of incidents. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="The Filters pane for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
+:::image type="content" source="../../media/incidents-queue/fig1-newfilters.png" alt-text="The Filters pane for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/fig1-newfilters.png":::
 
 You can also see the **Filter** pane by selecting any of the filters in the **Filters** list above the list of incidents.
 
@@ -89,7 +90,11 @@ This table lists the filter names that are available.
 
 The default filter is to show all alerts and incidents with a status of **New** and **In progress** and with a severity of **Low**, **Medium**, or **High**.
 
-You can quickly remove a filter by selecting the **X** in the name of a filter in the **Filters** list. 
+You can quickly remove a filter by selecting the **X** in the name of a filter in the **Filters** list.
+
+You can also create filter sets within the incidents page by selecting the **create filter sets**.
+
+:::image type="content" source="../../media/incidents-queue/fig2-newfilters.png" alt-text="The create filter sets option for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/fig2-newfilters.png":::
 
 ## Save custom filters as URLs
 
@@ -139,4 +144,4 @@ After you've determined which incident requires the highest priority, select it 
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

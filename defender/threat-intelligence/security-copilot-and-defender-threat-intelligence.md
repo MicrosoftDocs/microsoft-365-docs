@@ -12,7 +12,7 @@ audience: ITPro
 ms.collection: 
   - Tier1
 ms.topic: conceptual
-ms.date: 11/20/2023
+ms.date: 12/04/2023
 ---
 
 # Microsoft Security Copilot (preview) and Microsoft Defender Threat Intelligence
@@ -24,13 +24,13 @@ Microsoft Security Copilot is a cloud-based AI platform that provides natural la
 
 **Security Copilot integrates with Microsoft Defender Threat Intelligence**
 
-Security Copilot delivers from Microsoft Defender Threat Intelligence (Defender TI) information about threat activity groups, indicators of compromise (IOCs), and tools, as well as contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
+Security Copilot delivers from Microsoft Defender Threat Intelligence (Defender TI) information about threat actors, indicators of compromise (IOCs), and tools, as well as contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
 
 This article introduces you to Security Copilot and includes sample prompts that can help Defender TI users.
 
 ## Know before you begin
 
-- Be clear and specific with your prompts. You might get better results if you include specific activity group names or IOCs in your prompts. It might also help if you add **threat intelligence** to your prompt, like:
+- Be clear and specific with your prompts. You might get better results if you include specific threat actor names or IOCs in your prompts. It might also help if you add **threat intelligence** to your prompt, like:
   - Show me threat intelligence data for Aqua Blizzard.
   - Summarize threat intelligence data for "malicious.com."
 - Be specific when referencing an incident (for example, “incident ID 15324”).
@@ -71,7 +71,7 @@ To view the list of built-in system capabilities for Defender TI:
 
 Security Copilot also has the following promptbooks that also deliver information from Defender TI:
 - **Vulnerability impact assessment** - Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
-- **Threat actor profile** - Generates a report profiling a known activity group, including suggestions to defend against their common tools and tactics.
+- **Threat actor profile** - Generates a report profiling a known threat actor, including suggestions to defend against their common tools and tactics.
 
 To view these promptbooks, in the prompt bar, enter __*__. 
 
@@ -80,7 +80,7 @@ To view these promptbooks, in the prompt bar, enter __*__.
 You can use many prompts to get information from Defender TI. This section lists some ideas and examples.
 
 ### General information about threat intelligence trends
-Get threat intelligence from threat articles and activity groups. 
+Get threat intelligence from threat articles and threat actors. 
 
 **Sample prompts** 
 - Summarize the recent threat intelligence.
@@ -96,14 +96,14 @@ Get information on datasets associated with IP addresses and hosts, such as port
 - Get open ports for IP address _\<IP address\>_.
 - Get the SSL certificates for the IP address _\<IP address\>_.
 
-### Activity group mapping and infrastructure
-Get information on activity groups and the tactics, techniques, and procedures (TTPs), sponsored states, industries, and IOCs associated with them.
+### Threat actor mapping and infrastructure
+Get information on threat actors and the tactics, techniques, and procedures (TTPs), sponsored states, industries, and IOCs associated with them.
 
 **Sample prompts** 
 - Tell me more about Silk Typhoon.
 - Share the IOCs associated with Silk Typhoon.
 - Share the TTPs associated with Silk Typhoon.
-- Share activity groups associated with Russia.
+- Share threat actors associated with Russia.
 
 ### CVE vulnerability data 
 Get contextual information and threat intelligence on Common Vulnerabilities and Exposures (CVEs).
@@ -112,7 +112,7 @@ Get contextual information and threat intelligence on Common Vulnerabilities and
 - Share the technologies that are susceptible to the vulnerability CVE-2021-44228.
 - Summarize the vulnerability CVE-2021-44228.
 - Show me the latest CVEs.
-- Show me activity groups associated with CVE-2021-44228.
+- Show me threat actors associated with CVE-2021-44228.
 - Show me the threat articles associated with CVE-2021-44228.
 
 ## Provide feedback

@@ -4,7 +4,7 @@ ms.reviewer:
 description: You can partner with Microsoft Defender Experts who can be engaged directly from within the Microsoft Defender portal for their response
 keywords: Ask Defender Experts, experts on demand, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification
 search.product: Windows 10
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,14 +18,13 @@ ms.collection:
   - m365-initiative-defender-endpoint
   - tier1
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 09/26/2022
 ---
 
 # Ask Defender Experts
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)

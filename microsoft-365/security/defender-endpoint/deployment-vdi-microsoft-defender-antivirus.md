@@ -9,8 +9,8 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: jesquive
 manager: dansimp
-ms.subservice: mde
-ms.service: microsoft-365-security
+ms.subservice: ngp
+ms.service: defender-endpoint
 ms.collection:
 - m365-security
 - tier2

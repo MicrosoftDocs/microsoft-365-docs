@@ -3,7 +3,7 @@ title: Hello World for Microsoft Defender for Endpoint API
 ms.reviewer:
 description: Create a practice 'Hello world'-style API call to the Microsoft Defender for Endpoint API.
 keywords: apis, supported apis, advanced hunting, query, microsoft defender atp, microsoft defender for endpoint
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -25,7 +25,7 @@ ms.date: 12/18/2020
 
 # Microsoft Defender for Endpoint API - Hello World
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -147,7 +147,7 @@ Done! You have successfully registered an application!
 
   :::image type="content" source="../images/api-jwt-ms.png" alt-text="The Decoded Token pane for jwt.ms" lightbox="../images/api-jwt-ms.png":::
 
-### Lets get the Alerts!
+### Let's get the Alerts!
 
 - The script below will use **Get-Token.ps1** to access the API and will get the past 48 hours Alerts.
 - Save this script in the same folder you saved the previous script **Get-Token.ps1**.

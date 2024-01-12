@@ -2,7 +2,7 @@
 title: Verify client connectivity to Microsoft Defender for Endpoint service URLs
 description: Learn how to verify client connectivity to Defender for Endpoint service URLs
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: how-to
-ms.subservice: mde
+ms.subservice: onboard
 ms.date: 09/19/2023
 ---
 

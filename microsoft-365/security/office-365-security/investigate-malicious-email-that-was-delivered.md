@@ -107,20 +107,20 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
     *Delivery action* is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
 
-    - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
-    - **Junked** (Delivered to junk)– email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-    - **Blocked** – any email messages that are quarantined, that failed, or were dropped.
-    - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious
+    - **Delivered**: Email was delivered to inbox or folder of a user and the user can directly access it.
+    - **Junked**: Email was sent to either user's Junk Email folder or Deleted Items folder, and the user has access to messages in those folders.
+    - **Blocked**: Any email messages that are quarantined, that failed, or were dropped.
+    - **Replaced**: Any email where malicious attachments are replaced by .txt files that state the attachment was malicious
 
     **Delivery location**: The Delivery location filter is available in order to help admins understand where suspected malicious mail ended-up and what actions were taken on it. The resulting data can be exported to spreadsheet. Possible delivery locations are:
 
-    - **Inbox or folder** – The email is in the Inbox or a specific folder, according to your email rules.
-    - **On-prem or external** – The mailbox doesn't exist in the Cloud but is on-premises.
-    - **Junk folder** – The email is in a user's Junk mail folder.
-    - **Deleted items folder** – The email is in a user's Deleted items folder.
-    - **Quarantine** – The email in quarantine, and not in a user's mailbox.
-    - **Failed** – The email failed to reach the mailbox.
-    - **Dropped** – The email was lost somewhere in the mail flow.
+    - **Inbox or folder**: The email is in the Inbox or a specific folder, according to your email rules.
+    - **On-prem or external**: The mailbox doesn't exist in the Cloud but is on-premises.
+    - **Junk folder**: The email is in a user's Junk mail folder.
+    - **Deleted items folder**: The email is in a user's Deleted items folder.
+    - **Quarantine**: The email in quarantine, and not in a user's mailbox.
+    - **Failed**: The email failed to reach the mailbox.
+    - **Dropped**: The email was lost somewhere in the mail flow.
 
     **Directionality**: This option allows your security operations team to filter by the 'direction' a mail comes from, or is going. Directionality values are *Inbound*, *Outbound*, and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). This information can help security operations teams spot spoofing and impersonation, because a mismatch between the Directionality value (ex. *Inbound*), and the domain of the sender (which *appears* to be an internal domain) will be evident! The Directionality value is separate, and can differ from, the Message Trace. Results can be exported to spreadsheet.
 
@@ -157,20 +157,20 @@ Delivery Status is now broken out into two columns:
 
 Delivery action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
 
-- **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
-- **Junked** – email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-- **Blocked** – any email messages that are quarantined, that failed, or were dropped.
-- **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
+- **Delivered**: Email was delivered to inbox or folder of a user and the user can directly access it.
+- **Junked**: Email was sent to either user's Junk Email folder or Deleted Items folder, and the user has access to messages in those folders.
+- **Blocked**: Any email messages that are quarantined, that failed, or were dropped.
+- **Replaced**: Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
 
 Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
 
-- **Inbox or folder** – The email is in the inbox or a folder (according to your email rules).
-- **On-prem or external** – The mailbox doesn't exist on cloud but is on-premises.
-- **Junk folder** – The email is in a user's Junk folder.
-- **Deleted items folder** – The email is in a user's Deleted items folder.
-- **Quarantine** – The email in quarantine, and not in a user's mailbox.
-- **Failed** – The email failed to reach the mailbox.
-- **Dropped** – The email gets lost somewhere in the mail flow.
+- **Inbox or folder**: The email is in the inbox or a folder (according to your email rules).
+- **On-prem or external**: The mailbox doesn't exist on cloud but is on-premises.
+- **Junk folder**: The email is in a user's Junk Email folder.
+- **Deleted items folder**: The email is in a user's Deleted Items folder.
+- **Quarantine**: The email in quarantine, and not in a user's mailbox.
+- **Failed**: The email failed to reach the mailbox.
+- **Dropped**: The email gets lost somewhere in the mail flow.
 
 ### View the timeline of your email
 

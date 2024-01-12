@@ -4,7 +4,7 @@ description: This topic describes the changes that are must be made in order to 
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, big sur, monterey, ventura, mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +19,13 @@ ms.collection:
 - mde-macos
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
-ms.subservice: mde
+ms.subservice: macos
 ms.date: 12/18/2020
 ---
 
 # New configuration profiles for macOS Big Sur and newer versions of macOS 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)

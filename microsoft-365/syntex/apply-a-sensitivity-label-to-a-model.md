@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-manage
     - m365initiative-syntex
 ms.localizationpriority:  medium
 description: Learn how to apply a sensitivity label to a model in Microsoft Syntex.
@@ -18,7 +18,7 @@ description: Learn how to apply a sensitivity label to a model in Microsoft Synt
 
 # Apply a sensitivity label to a model in Microsoft Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to unstructured document processing models in Microsoft Syntex. 
 

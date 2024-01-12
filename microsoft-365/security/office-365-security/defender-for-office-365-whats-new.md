@@ -7,7 +7,7 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 11/13/2023
+ms.date: 1/2/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -38,13 +38,25 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## December 2023
+
+- **Microsoft Defender XDR Unified RBAC is now generally available**: Defender XDR Unified RBAC supports all Defender for Office 365 scenarios that were previously controlled by [Email & collaboration permissions](mdo-portal-permissions.md) and [Exchange Online permissions](/exchange/permissions-exo/permissions-exo). To learn more about the supported workloads and data resources, see [Microsoft Defender XDR Unified role-based access control (RBAC)](/microsoft-365/security/defender/manage-rbac).
+
+  > [!TIP]
+  > Defender XDR Unified RBAC isn't generally available in Microsoft 365 Government Community Cloud High (GCC High) or Department of Defense (DoD).
+
 ## November 2023
 
-- **Enhanced Action experience from Email Entity/ Summary Panel** As part of the change security admins can take multiple actions as part of FP/FN flows.[Learn more](mdo-email-entity-page.md)
-  
+- **Enhanced Action experience from Email Entity/ Summary Panel**: As part of the change security admins can take multiple actions as part of FP/FN flows. [Learn more](mdo-email-entity-page.md).
+- The [Tenant Allow/Block List](tenant-allow-block-list.md) supports more entries in each category (Domains & email addresses, Files, and URLs:
+  - Microsoft Defender for Office 365 Plan 2 supports 10,000 block entries and 5,000 allow entries (via admin submissions) in each category.
+  - Microsoft Defender for Office 365 Plan 1 supports 1,000 block entries and 1,000 allow entries (via admin submissions) in each category.
+  - Exchange Online Protection remains at 500 block entries and 500 allow entries (via admin submissions) in each category.
+
 ## October 2023
 
 - **Create and manage simulations using the Graph API** in Attack simulation training. [Learn more](/graph/api/attacksimulationroot-post-simulation)
+- **Exchange Online permission management in Defender for Office 365 is now supported in Microsoft Defender XDR Unified role-based access control (RBAC)**: In addition to the existing support for [Email & collaboration permissions](mdo-portal-permissions.md), Defender XDR Unified RBAC now also supports protection-related [Exchange Online permissions](/exchange/permissions-exo/permissions-exo). To learn more about the supported Exchange Online permissions, see [Exchange Online permissions mapping](/microsoft-365/security/defender/compare-rbac-roles#exchange-online-permissions-mapping).
 
 ## September 2023
 

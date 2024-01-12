@@ -2,7 +2,7 @@
 title: Team Shifts connector for UKG Pro Workforce Management known issues (Preview)
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: imarquesgil
 ms.topic: troubleshooting
 audience: admin

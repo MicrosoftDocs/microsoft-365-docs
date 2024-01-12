@@ -33,6 +33,7 @@ The table below represents which apps and services are currently connected to th
 |**Apps & Services**|**In-product feedback** <br> |**In-product surveys** <br> |**Metadata collection** <br> |**Customer engagement** <br> |
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**|Yes|Yes|Yes|Yes|
+|**Clipchamp**|Yes|Yes|Yes|No|
 |**Excel**|Yes|Yes|Yes|Yes|
 |**Forms**|Yes|Yes|Yes|Yes|
 |**Intune Company Portal (Android)**|Yes|Yes|Yes|Yes|

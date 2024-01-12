@@ -2,8 +2,7 @@
 title: Create a custom gradual rollout process for Microsoft Defender updates
 description: Learn how to use supported tools to create a custom gradual rollout process for updates
 keywords: update tools, gpo, intune, mdm, microsoft endpoint manager, policy, powershell
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
 ms.author: macapara
@@ -16,12 +15,12 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/06/2023
+ms.date: 01/12/2024
 ---
 
 # Create a custom gradual rollout process for Microsoft Defender updates
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -96,6 +95,9 @@ Use `Set-MpPreference -PlatformUpdatesChannel Beta` to configure platform update
 
 For more information on the parameters and how to configure them, see [Set-MpPreference](/powershell/module/defender/set-mppreference) (Microsoft Defender Antivirus).
 
+> [!NOTE]
+> You can also use a management tool such as Microsoft Configuration Manager to run PowerShell scripts. See [Create and run PowerShell scripts from the Configuration Manager console](/mem/configmgr/apps/deploy-use/create-deploy-scripts) for guidance on this topic.
+
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
@@ -105,4 +107,5 @@ For more information on the parameters and how to configure them, see [Set-MpPre
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

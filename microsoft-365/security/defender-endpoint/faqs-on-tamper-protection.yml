@@ -2,19 +2,17 @@
 metadata:
   title: Frequently asked questions (FAQs) about tamper protection 
   description: Find answers to frequently asked questions
-  ms.service: microsoft-365-security
-  ms.subservice: mde
+  ms.service: defender-endpoint
+  ms.subservice: ngp
   ms.localizationpriority: medium
   audience: ITPro
   author: denisebmsft
   ms.author: deniseb
   ms.reviewer: joshbregman, sugamar 
   manager: dansimp
-  ms.custom: asr
   ms.topic: faq
   ms.collection: 
   - m365-security
-  - mde-ngp
   ms.date: 10/27/2023
 title: Frequently asked questions (FAQs) about tamper protection 
 summary: | 
@@ -44,7 +42,7 @@ sections:
           - Devices must be using anti-malware platform version `4.18.2010.7` (or later) and anti-malware engine version `1.1.17600.5` (or later). ([Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).)
           - [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be turned on.
 
-          To manage tamper protection in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), you must have appropriate permissions assigned through roles, such as Global Administrator or Security Administrator. (See [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).)
+          To manage tamper protection in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), you must have appropriate permissions assigned through roles, such as Global Administrator or Security Administrator. (See [Microsoft Defender XDR role-based access control (RBAC)](../defender/manage-rbac.md).)
 
       - question: |
           On which versions of Windows can I configure tamper protection?

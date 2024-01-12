@@ -1,7 +1,7 @@
 ---
 title: Link query results to an incident
 description: Link query results to an incident
-keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
+keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Defender XDR
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -26,7 +26,7 @@ ms.date: 06/25/2021
 
 # Link query results to an incident
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -86,4 +86,4 @@ You can also select the event to open the **Inspect record** pane.
 You can view which alerts were generated from advanced hunting by filtering the Incidents queue and Alerts queue by **Manual** detection source.
 
 :::image type="content" source="../../media/link-to-incident-8-filter.png" alt-text="The manual filtering of Incidents and Alerts queue in the Filters page in the Microsoft Defender portal " lightbox="../../media/link-to-incident-8-filter.png":::
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -101,6 +101,12 @@ You should also make sure Conditional Access policies configured in the customer
 
 **Resolution:** You must complete each step of GDAP Setup in order for all settings to apply, and make sure you select **Finish** when done. On the last page of GDAP Setup, customers with an *Active* status will have security groups assigned. If you don't have consent to administer services for any of your customers, you'll need to send them an admin relationship request. Once they approve the request, re-run GDAP Setup to assign the security groups to the GDAP relationship created for those customers.
 
+### Some users in my partner tenant are missing when configuring alerts or assigning users to security groups in GDAP Setup
+
+**Cause:** The **User type** field in your Microsoft Entra ID account is either blank or set to *Guest*.
+
+**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has set **User type** to *Member* in your Microsoft Entra ID account.
+
 ## Customer tenant management  
 
 ### Customer tenant has no data showing in Lighthouse

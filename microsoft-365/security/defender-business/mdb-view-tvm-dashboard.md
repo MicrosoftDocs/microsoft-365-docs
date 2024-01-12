@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 08/02/2022
 ms.reviewer: nehabha
@@ -57,3 +56,4 @@ Vulnerability management features and capabilities in Microsoft Defender for Bus
 - [Try tutorials and simulations in Defender for Business](mdb-tutorials.md)
 - [Onboard devices to Defender for Business](mdb-onboard-devices.md)
 - [View or edit policies in Defender for Business](mdb-view-edit-create-policies.md)
+

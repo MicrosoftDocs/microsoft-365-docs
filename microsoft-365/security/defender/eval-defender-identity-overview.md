@@ -34,7 +34,7 @@ ms.topic: conceptual
 > [!NOTE]
 > This article is also part of the Microsoft Defender XDR XDR solution we talk about in this [Overview](eval-overview.md).
 
- Before starting the process that enables and pilots Microsoft Defender for Identity, if you intend to evaluate *Microsoft 365 Defender as an eXtended Detection and Response (XDR) solution*, make sure you've reviewed the process from the beginning: [evaluating Microsoft Defender XDR](eval-overview.md) including [created the Microsoft Defender XDR evaluation environment](eval-create-eval-environment.md).
+ Before starting the process that enables and pilots Microsoft Defender for Identity, if you intend to evaluate *Microsoft Defender XDR as an eXtended Detection and Response (XDR) solution*, make sure you've reviewed the process from the beginning: [evaluating Microsoft Defender XDR](eval-overview.md) including [created the Microsoft Defender XDR evaluation environment](eval-create-eval-environment.md).
 <br>
 
 Use the steps below to enable and pilot Microsoft Defender for Identity.
@@ -48,4 +48,4 @@ This table describes the steps in the illustration.
 |1|[Review architecture requirements and key concepts](eval-defender-identity-architecture.md)    | Understand the Defender for Identity architecture and be sure your environment meets the architecture prerequisites.       |
 |2|[Enable the evaluation environment](eval-defender-identity-enable-eval.md)     |   Follow the steps to set up the evaluation environment.      |
 |3|[Set up the pilot](eval-defender-identity-pilot.md)     |   Learn about benchmark settings for your identity environment and try out Defender for Identity tutorials.     |
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
