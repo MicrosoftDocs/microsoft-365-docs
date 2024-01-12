@@ -51,7 +51,7 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 ### Manage sites
 
-By default, SharePoint eSignature is turned on for libraries in all SharePoint sites. Follow these steps to manage which SharePoint sites users can use eSignature.
+By default, SharePoint eSignature is turned on for libraries in all SharePoint sites. Follow these steps to limit which sites users can use eSignature.
 
 1. On the **Manage Microsoft Syntex** page, select **eSignature**.
 

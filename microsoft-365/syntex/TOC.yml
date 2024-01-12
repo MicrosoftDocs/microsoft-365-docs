@@ -201,6 +201,8 @@
           href: esignature-send-requests.md
         - name: Review and sign a request 
           href: esignature-review-sign-requests.md
+        - name: Troubleshoot a request 
+          href: esignature-troubleshoot.md
 
     - name: Optical character recognition 
       items: 
@@ -280,6 +282,8 @@
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
+        - name: Try out Syntex services
+          href: promo-syntex.md
         - name: Scenarios and use cases
           items:
             - name: Overview
