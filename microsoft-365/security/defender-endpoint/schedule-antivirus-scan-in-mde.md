@@ -58,7 +58,7 @@ Use the following steps to schedule scans:
    vi /etc/anacron
    ```
 
-   :::image type="content" source="images/vi_etc_anacron.png" alt-text="anacron file":::
+    :::image type="content" source="images/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="images/vi_etc_anacron.png" link="images/vi_etc_anacron.png":::
 
    ```shell
    # /etc/anacrontab: configuration file for anacron
