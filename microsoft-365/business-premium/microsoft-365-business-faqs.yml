@@ -2,10 +2,10 @@
 metadata:
   title: Microsoft 365 Business Premium frequently asked questions 
   description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small, and midsize businesses (SMB). 
-  author: denisebmsft
+  author: chrisda
   f1.keywords:
   - NOCSH
-  ms.author: deniseb
+  ms.author: chrisda
   manager: deniseb
   ms.topic: how-to
   ms.service: microsoft-365-business
