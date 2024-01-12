@@ -95,6 +95,8 @@ Use `Set-MpPreference -PlatformUpdatesChannel Beta` to configure platform update
 
 For more information on the parameters and how to configure them, see [Set-MpPreference](/powershell/module/defender/set-mppreference) (Microsoft Defender Antivirus).
 
+> [!NOTE]
+> You can also use a management tool such as Microsoft Configuration Manager to run PowerShell scripts. Refer to [https://learn.microsoft.com/en-us/mem/configmgr/apps/deploy-use/create-deploy-scripts](/mem/configmgr/apps/deploy-use/create-deploy-scripts) for guidance on this topic.
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
@@ -104,4 +106,5 @@ For more information on the parameters and how to configure them, see [Set-MpPre
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
