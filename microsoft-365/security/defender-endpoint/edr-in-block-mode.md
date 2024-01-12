@@ -14,7 +14,7 @@ ms.custom:
   - next-gen
   - mde-edr
   - admindeeplinkDEFENDER
-ms.date: 11/29/2023
+ms.date: 01/12/2024
 ms.collection: 
 - m365-security
 - tier2
@@ -46,14 +46,12 @@ This recommendation is primarily for devices using an active non-Microsoft antiv
 > EDR in block mode cannot provide all available protection when Microsoft Defender Antivirus real-time protection is in passive mode. Some capabilities that depend on Microsoft Defender Antivirus to be the active antivirus solution will not work, such as the following examples:
 > 
 > - Real-time protection, including on-access scanning, and scheduled scan is not available when Microsoft Defender Antivirus is in passive mode. To learn more about real-time protection policy settings, see **[Enable and configure Microsoft Defender Antivirus always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md)**.
-> 
-> 
->    - Features like **[network protection](network-protection.md)** and **[attack surface reduction rules](attack-surface-reduction.md)** and indicators (file hash, ip address, URL, and certificates) are only available when Microsoft Defender Antivirus is running in active mode.
->    >    It is expected that your non-Microsoft antivirus solution includes these capabilities.
->    
+> - Features like **[network protection](network-protection.md)** and **[attack surface reduction rules](attack-surface-reduction.md)** and indicators (file hash, ip address, URL, and certificates) are only available when Microsoft Defender Antivirus is running in active mode.
+> It is expected that your non-Microsoft antivirus solution includes these capabilities.
+   
 EDR in block mode works behind the scenes to remediate malicious artifacts that were detected by EDR capabilities. Such artifacts might have been missed by the primary, non-Microsoft antivirus product. EDR in block mode allows Microsoft Defender Antivirus to take actions on post-breach, behavioral EDR detections.
 
-EDR in block mode is integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md) capabilities. Your organization's security team will get a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled. 
+EDR in block mode is integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md) capabilities. Your organization's security team gets a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled. 
 
 :::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="The recommendation to turn on EDR in block mode" lightbox="images/edrblockmode-TVMrecommendation.png":::
 
@@ -65,18 +63,16 @@ Watch this video to learn why and how to turn on endpoint detection and response
 
 ## What happens when something is detected?
 
-When EDR in block mode is turned on, and a malicious artifact is detected, Defender for Endpoint remediates that artifact. Your security operations team will see detection status as **Blocked** or **Prevented** in the [Action center](respond-machine-alerts.md#check-activity-details-in-action-center), listed as completed actions. The following image shows an instance of unwanted software that was detected and remediated through EDR in block mode:
+When EDR in block mode is turned on, and a malicious artifact is detected, Defender for Endpoint remediates that artifact. Your security operations team see the detection status as **Blocked** or **Prevented** in the [Action center](respond-machine-alerts.md#check-activity-details-in-action-center), listed as completed actions. The following image shows an instance of unwanted software that was detected and remediated through EDR in block mode:
 
 :::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="The detection by EDR in block mode" lightbox="images/edr-in-block-mode-detection.png":::
 
 ## Enable EDR in block mode
 
 > [!IMPORTANT]
-> Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
-> 
-> Starting with [platform version 4.18.2202.X](microsoft-defender-antivirus-updates.md), you can now set EDR in block mode to target specific device groups using Intune CSPs. You can  continue to set EDR in block mode tenant-wide in the [Microsoft Defender portal](https://security.microsoft.com).
-> 
-> EDR in block mode is primarily recommended for devices that are running Microsoft Defender Antivirus in passive mode (a non-Microsoft antivirus solution is installed and active on the device).
+> Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode. 
+> Starting with [platform version 4.18.2202.X](microsoft-defender-antivirus-updates.md), you can now set EDR in block mode to target specific device groups using Intune CSPs. You can  continue to set EDR in block mode tenant-wide in the [Microsoft Defender portal](https://security.microsoft.com). 
+> EDR in block mode is primarily recommended for devices that are running Microsoft Defender Antivirus in passive mode (a non-Microsoft antivirus solution is installed and active on the device). 
 
 <a name='microsoft-365-defender'></a>
 
