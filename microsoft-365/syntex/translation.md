@@ -59,7 +59,9 @@ To create a rule to translate documents automatically when a document is created
 
        ![Screenshot of the rule statement page showing the translation option highlighted.](../media/content-understanding/translation-rule-create-copy.png)
 
-    b. Select **Enter a language**, and then select the language into which you want to translate the file.
+    b. Select **enter a language**, and then enter a language or use the drop-down menu to choose a language into which you want to translate the file.
+
+       ![Screenshot of the rule statement page showing the enter language option.](../media/content-understanding/translation-rule-enter-language.png)
 
 4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
 
