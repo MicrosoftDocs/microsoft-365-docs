@@ -47,11 +47,17 @@ To create a rule to translate documents automatically when a document is created
 
 1. From a SharePoint document library, select **Automate** > **Rules** > **Create a rule**.
 
+   ![Screenshot of the document library showing the Automate > Rules > Create a rule option.](../media/content-understanding/content-processing-create-rule.png)
+
 2. On the **Create a rule** page, select **A new file is added**.
+
+   ![Screenshot of the Create a rule page showing the A new file is added option highlighted.](../media/content-understanding/content-processing-create-a-rule-page.png)
 
 3. Under **When a new file is added**, complete the rule statement:
 
-    a. Select **Choose action**, and then select **Create a translated copy in**.
+    a. Select **Choose action**, and then select **create a translated copy in**.
+
+       ![Screenshot of the rule statement page showing the translation option highlighted.](../media/content-understanding/translation-rule-create-copy.png)
 
     b. Select **Enter a language**, and then select the language into which you want to translate the file.
 
