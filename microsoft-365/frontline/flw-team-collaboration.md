@@ -182,7 +182,7 @@ More information: [Create a team with templates](https://support.microsoft.com/o
 
 ## Manage apps
 
-Refine what's in your team with apps. You can allow or block apps for your organization, or configure settings for apps, in the Teams admin center. To learn more, see [Manage apps in the Microsoft Teams admin center](/microsoftteams/manage-apps).
+Manage apps for your organization in the Teams admin center. To learn more, see [Overview of app management and governance in Teams admin center](/microsoftteams/manage-apps).
 
 Your users can add any apps that you have allowed to their teams. Share this training with your users to show them how: [Find and use apps](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
 

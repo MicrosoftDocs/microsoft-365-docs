@@ -67,6 +67,6 @@ More information: [Power Apps and Microsoft Teams integration](/powerapps/teams/
 
 ## Track key performance indicators (KPIs) with Power BI reports
 
-Share and collaborate on interactive Power BI content in Microsoft Teams channels and chats. You can add a [Power BI tab](/microsoftteams/platform/tabs/what-are-tabs) to Teams to embed interactive reports and chat in Teams about your reports, and get notified when important things happen in Power BI right in your Teams activity feed.
+Share and collaborate on interactive Power BI content in Microsoft Teams channels and chats. You can add the Power BI app to Teams to embed interactive reports and chat in Teams about your reports.
 
 More information: [Collaborate with Power BI in Microsoft Teams, Outlook, and Office](/power-bi/collaborate-share/service-collaborate-microsoft-teams).
