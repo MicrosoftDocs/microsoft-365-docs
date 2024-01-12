@@ -2,7 +2,7 @@
 title: Overview of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 09/13/2023
 audience: admin
@@ -11,7 +11,7 @@ ms.custom: intro-overview
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-get-started
     - m365initiative-syntex
     - essentials-overview
 ms.localizationpriority:  medium
@@ -32,7 +32,7 @@ With Syntex, you can automate your content-based processes—capturing the infor
 
 You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
 
-## Explore scenarios and use cases
+## Scenarios and use cases
 
 :::row:::
    :::column span="":::
@@ -53,7 +53,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 :::row:::
    :::column span="3":::
-      With Syntex, you can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+      With Syntex, you can use content assembly to automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
    :::column-end:::
    :::column span="":::
       ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png)
@@ -133,18 +133,57 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about taxonomy tagging in Microsoft Syntex.](taxonomy-tagging-overview.md)
 
-### Optical character recognition
+### Syntex eSignature
 
 :::row:::
    :::column span="3":::
-      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
+      Send electronic requests using Syntex eSignature, keeping your content in Microsoft 365 while it’s being reviewed and signed. Use Syntex eSignature to quickly and securely send documents for signature to people both inside and outside of your organization.
    :::column-end:::
    :::column span="":::
+      ![Image of generic esignature icon.](../media/content-understanding/esignature-image.png)
+   :::column-end:::
+:::row-end:::
+
+[Learn more about using Microsoft Syntex eSignature.](esignature-overview.md)
+
+### Optical character recognition
+
+:::row:::
+   :::column span="":::
       ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
+   :::column-end:::
+   :::column span="3":::
+      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
    :::column-end:::
 :::row-end:::
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
+
+### Microsoft 365 Archive (Preview)
+
+:::row:::
+   :::column span="":::
+      ![Image of generic archive icon.](../media/content-understanding/archive-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Microsoft 365 Archive is a cost-effective, long-term storage solution for inactive or historical data in SharePoint. Because the data is archived in place, the content retains Microsoft 365 security, compliance, search, and rich metadata.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about Microsoft 365 Archive (Preview).](archive/archive-overview.md)
+
+### Microsoft 365 Backup (Preview)
+
+:::row:::
+   :::column span="3":::
+      Microsoft 365 Backup provides modern backup and recovery capabilities for SharePoint, Exchange Online, and OneDrive for Business, keeping the data all within the Microsoft 365 security boundary. With Microsoft 365 Backup, your organization knows that your content is securely and efficiently backed up and restorable within hours rather than months.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic backup icon.](../media/content-understanding/backup-image.png)
+   :::column-end:::
+:::row-end:::
+
+[Learn more about Microsoft 365 Backup (Preview).](backup/backup-overview.md)
 
 ## Other features
 
@@ -187,7 +226,13 @@ The content query feature in Syntex lets you perform specific metadata-based que
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 --->
 
-### Content processing
+### Merge and extract PDFs
+
+Quickly combine multiple PDF files into a single PDF file, or split a larger PDF file into multiple smaller PDF files to better organize the information you want to view or share with others.
+
+[Learn more about merging and extracting PDF files in Microsoft Syntex.](merge-extract-pdf.md)
+
+### Processing rules
 
 Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
 

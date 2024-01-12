@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/17/2021
+ms.date: 10/11/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -23,10 +23,6 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Forward a former employee's email to another employee or convert it to a shared mailbox where several people will be able to access it instead of one person."
 ---
 

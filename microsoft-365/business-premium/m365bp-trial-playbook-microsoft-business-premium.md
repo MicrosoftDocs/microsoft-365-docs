@@ -67,7 +67,7 @@ When you try or buy Microsoft 365 Business Premium, you have the option of using
 
 Microsoft 365 Business Premium includes Defender for Business, a new security solution to protect devices. See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Assets** > **Devices**. If Defender for Business isn't already set up, you will be prompted to run the [setup wizard](../security/defender-business/mdb-use-wizard.md).
 
@@ -85,9 +85,11 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 4. [Share a document](https://support.microsoft.com/office/share-your-documents-651e1cb9-9a51-46dc-8d32-bdb7d928eedd) with a team member.
 
-## Start using the Microsoft 365 Defender portal 
+<a name='start-using-the-microsoft-365-defender-portal-'></a>
 
-1. Access the Microsoft 365 Defender portal at [https://security.microsoft.com](https://security.microsoft.com).
+## Start using the Microsoft Defender portal 
+
+1. Access the Microsoft Defender portal at [https://security.microsoft.com](https://security.microsoft.com).
 
 2. Take some time to [familiarize yourself with the portal](../security/defender-business/mdb-get-started.md).
 

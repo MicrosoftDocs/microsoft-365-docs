@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Mac
 ms.reviewer: yongrhee
 description: Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Mac.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -13,19 +13,21 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
-ms.date: 09/27/2023
+ms.date: 01/02/2024
 ---
 
 # Microsoft Defender for Endpoint on Mac
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Individuals](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -43,13 +45,13 @@ This topic describes how to install, configure, update, and use Defender for End
 > [!TIP]
 > If you have any feedback that you would like to share, submit it by opening Microsoft Defender for Endpoint on Mac on your device and navigating to **Help** \> **Send feedback**.
 
-To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender for Endpoint to be an "Insider" device.
+To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac devices), configure your macOS device running Microsoft Defender for Endpoint to be a Beta channel (formerly Insider-Fast) device.
 
 ## How to install Microsoft Defender for Endpoint on Mac
 
 ### Prerequisites
 
-- A Defender for Endpoint subscription and access to the Microsoft 365 Defender portal
+- A Defender for Endpoint subscription and access to the Microsoft Defender portal
 - Beginner-level experience in macOS and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
@@ -68,12 +70,11 @@ There are several methods and deployment tools that you can use to install and c
 ### System requirements
 
 The three most recent major releases of macOS are supported.
-- 14 (Sonoma), 13 (Ventura), 12 (Monterey)
-
+- 14 (Sonoma), 13 (Ventura), 12 (Monterey), 11 (Big Sur)
   > [!IMPORTANT]
   > On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Big Sur and newer versions of macOS](mac-sysext-policies.md).
 
-- Supported processors: x64 and ARM64 (M1 and M2).
+- Supported processors: x64 and ARM64.
 - Disk space: 1GB
 
 Beta versions of macOS aren't supported.
@@ -90,7 +91,8 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 - Windows 10 Enterprise E5
 - Microsoft 365 Business Premium
 - Windows 11 Enterprise E5
-- Microsoft Defender for Endpoint
+- Microsoft Defender for Endpoint P2
+- Microsoft Defender for Endpoint P1 (which includes [Microsoft 365 E3 (M365 E3)](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3/ba-p/3060639))
 
 > [!NOTE]
 > Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
@@ -105,10 +107,10 @@ When adding exclusions, be mindful of [common exclusion mistakes for Microsoft D
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
 
-|Spreadsheet of domains list| Description|
-|---|---|
-|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx)
-| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+| Spreadsheet of domains list  | Description  |
+|---------|---------|
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <br/><br/> [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx). |
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <br/><br/> [Download the spreadsheet here](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx). |
 
 Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:
 
@@ -163,4 +165,5 @@ Starting with macOS 11 (Big Sur), Microsoft Defender for Endpoint has been fully
 - For more information about logging, uninstalling, or other topics, see [Resources for Microsoft Defender for Endpoint on Mac](mac-resources.md).
 - [Privacy for Microsoft Defender for Endpoint on Mac](mac-privacy.md).
 - [Turn on Network protection for macOS](network-protection-macos.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

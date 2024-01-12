@@ -8,7 +8,7 @@ metadata:
   description: Schedule and manage appointments with Microsoft Bookings. Includes integration with Outlook and automated notifications. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: bookings #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: dmaguire #Required; your GitHub user alias, with correct capitalization.
+  author: camillepack #Required; your GitHub user alias, with correct capitalization.
   ms.author: camillepack #Required; microsoft alias of author; optional team alias.
   manager: scotv
   audience: Admin

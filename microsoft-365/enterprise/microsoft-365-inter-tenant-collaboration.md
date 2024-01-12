@@ -25,7 +25,7 @@ ms.custom: seo-marvel-apr2020
 
 # Microsoft 365 inter-tenant collaboration
 
-Suppose that two organizations, Fabrikam and Contoso, each have a Microsoft 365 for business tenant. They want to work together on several projects; some of which run for a limited time and some of which are ongoing. How can Fabrikam and Contoso enable their people and teams to collaborate more effectively across their different Microsoft 365 tenants in a secure manner? Microsoft 365, with Azure Active Directory (Azure AD) B2B collaboration, provides several options. This article describes several key scenarios that Fabrikam and Contoso can consider.
+Suppose that two organizations, Fabrikam and Contoso, each have a Microsoft 365 for business tenant. They want to work together on several projects; some of which run for a limited time and some of which are ongoing. How can Fabrikam and Contoso enable their people and teams to collaborate more effectively across their different Microsoft 365 tenants in a secure manner? Microsoft 365, with Microsoft Entra B2B collaboration, provides several options. This article describes several key scenarios that Fabrikam and Contoso can consider.
 
 Microsoft 365 inter-tenant collaboration options include using a central location for files and conversations, sharing calendars, using IM, audio/video calls for communication, and securing access to resources and applications. Use the following tables to select solutions and learn more.
 
@@ -51,11 +51,13 @@ Microsoft 365 inter-tenant collaboration options include using a central locatio
 |Skype for Business Online - IM, calls, and presence with other Skype for Business users | Administrators can enable their Skype for Business Online users to IM, make audio/video calls, and see presence with users in another Microsoft 365 tenant. | [Allow users to contact external Skype for Business users](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)|
 |Skype for Business Online - IM, calls, and presence with Skype (consumer) users | Administrators can enable their Skype for Business Online users to IM, make calls, and see presence with Skype (consumer) users. | [Let Skype for Business users add Skype contacts](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)|
 
-## Azure AD B2B Collaboration options
+<a name='azure-ad-b2b-collaboration-options'></a>
+
+## Microsoft Entra B2B Collaboration options
 
 | Sharing goal | Administrative action | How-to information |
 |:-----|:-----|:-----|
-|Azure AD B2B collaboration - Content sharing by adding external users to a group in an organization's directory | A **Azure AD DC admin**, **Security Admin**, **User Admin**, **Cloud Application Admin**, or **Global admin** for one Microsoft 365 tenant can invite people in another Microsoft 365 tenant to join their directory, add those external users to a group, and grant access to content, such as SharePoint sites and libraries for the group. |  <ul><li> [What is Azure AD B2B collaboration preview?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) </li><li> [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) </li><li> [External sharing and Azure Active Directory B2B collaboration](/azure/active-directory/external-identities/external-collaboration-settings-configure) </li><li> [Azure Active Directory B2B collaboration API and customization](/azure/active-directory/active-directory-b2b-api) </li><li> [Azure AD and Identity Show: Azure AD B2B Collaboration (Business to Business](/azure/active-directory/external-identities/user-properties) </li></ul> |
+|Microsoft Entra B2B collaboration - Content sharing by adding external users to a group in an organization's directory | A **Microsoft Entra DC admin**, **Security Admin**, **User Admin**, **Cloud Application Admin**, or **Global admin** for one Microsoft 365 tenant can invite people in another Microsoft 365 tenant to join their directory, add those external users to a group, and grant access to content, such as SharePoint sites and libraries for the group. |  <ul><li> [What is Microsoft Entra B2B collaboration preview?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) </li><li> [Microsoft Entra B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) </li><li> [External sharing and Microsoft Entra B2B collaboration](/azure/active-directory/external-identities/external-collaboration-settings-configure) </li><li> [Microsoft Entra B2B collaboration API and customization](/azure/active-directory/active-directory-b2b-api) </li><li> [Microsoft Entra ID and Identity Show: Microsoft Entra B2B Collaboration (Business to Business](/azure/active-directory/external-identities/user-properties) </li></ul> |
 
 ## Microsoft 365 collaboration options
 
@@ -81,7 +83,7 @@ Microsoft 365 inter-tenant collaboration options include using a central locatio
 
 | Sharing goal | Administrative action | How-to information |
 |:-----|:-----|:-----|
-|Power BI enables external guest users to consume content shared to them through links. This enables users in the organization to distribute content in a secure way across organizations.<br/> | The Power BI Admin can control whether users can invite external users to view content within the organization.| [Distribute Power BI content to external guest users with Azure AD B2B](/power-bi/service-admin-azure-ad-b2b) |
+|Power BI enables external guest users to consume content shared to them through links. This enables users in the organization to distribute content in a secure way across organizations.<br/> | The Power BI Admin can control whether users can invite external users to view content within the organization.| [Distribute Power BI content to external guest users with Microsoft Entra B2B](/power-bi/service-admin-azure-ad-b2b) |
 
 ## Points to be aware of about Microsoft 365 inter-tenant collaboration
 
@@ -101,4 +103,4 @@ No. Organization domain names, such as fabrikam.com or tailspintoys.com, can onl
 
 ### What about hybrid components and Microsoft 365 inter-tenant collaboration?
 
-On-premises hybrid components, such as an Exchange organization and Azure AD Connect, can't be split across multiple tenants.
+On-premises hybrid components, such as an Exchange organization and Microsoft Entra Connect, can't be split across multiple tenants.

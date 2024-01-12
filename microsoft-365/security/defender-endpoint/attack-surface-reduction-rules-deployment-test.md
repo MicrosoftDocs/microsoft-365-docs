@@ -1,8 +1,8 @@
 ---
 title: Test attack surface reduction rules
 description: Provides guidance to test your attack surface reduction rules deployment. Microsoft Defender for Endpoint ASR test includes, audit Defender rules, configure ASR rules using Intune, Microsoft ASR rules reporting, ASR rules exclusions, ASR rules event viewer.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
@@ -87,9 +87,11 @@ Your new attack surface reduction policy for ASR rules is listed in **Endpoint s
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/asr-mem-my-asr-rules.png" alt-text=" The Attack surface reduction page" lightbox="images/asr-mem-my-asr-rules.png":::
 
-## Step 2: Understand the ASR rules reporting page in the Microsoft 365 Defender portal
+<a name='step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal'></a>
 
-The ASR rules reporting page is found in **Microsoft 365 Defender portal** > **Reports** > **Attack surface reduction rules**. This page has three tabs:
+## Step 2: Understand the ASR rules reporting page in the Microsoft Defender portal
+
+The ASR rules reporting page is found in **Microsoft Defender portal** > **Reports** > **Attack surface reduction rules**. This page has three tabs:
 
 - Detections
 - Configuration
@@ -225,7 +227,9 @@ To enable all the added attack surface reduction rules in audit mode, use the fo
 
 You can also use Group Policy, Intune, or mobile device management (MDM) configuration service providers (CSPs) to configure and deploy the setting. Learn more in the main [Attack surface reduction rules](attack-surface-reduction.md) article.
 
-## Use Windows Event Viewer Review as an alternative to the attack surface reduction rules reporting page in the Microsoft 365 Defender portal
+<a name='use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal'></a>
+
+## Use Windows Event Viewer Review as an alternative to the attack surface reduction rules reporting page in the Microsoft Defender portal
 
 To review apps that would have been blocked, open Event Viewer and filter for Event ID 1121 in the Microsoft-Windows-Windows Defender/Operational log. The following table lists all network protection events.
 

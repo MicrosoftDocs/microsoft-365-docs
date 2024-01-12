@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/27/2023
+ms.date: 12/15/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -58,7 +58,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ### Assign admin roles to users using Roles
 
-1. In the admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank"> **Roles** -> **Role assignments**</a>. Choose the **Azure AD**, **Exchange**, **Intune** or **Billing** tab to view the admin roles available for your organization.
+1. In the admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank"> **Roles** -> **Role assignments**</a>. Choose the **Microsoft Entra ID**, **Exchange**, **Intune** or **Billing** tab to view the admin roles available for your organization.
 
     > [!NOTE]
     > You might not see all the tabs depending on your Microsoft 365 subscription.
@@ -93,6 +93,19 @@ If you know PowerShell, see [Assign roles to user accounts with PowerShell](../.
   
 Use the following instructions to assign roles to tens of users.
 
+## Export, search and filter
+
+You can export the admin list as well as search and filter by role.
+
+:::image type="content" source="../../media/export-search-filter-roles.jpg" alt-text="Screenshot: Export your list of admin roles, search for roles and filter by role ":::
+
+- Use Export admin list to get a full list of all the admin users in your organization. The list is stored in an Excel .csv file.
+
+- Use Search to search for an admin role and see your users who are assigned to that role.
+
+- Use Filter to change your view of displayed admin roles.
+
+
 ## Check admin roles in your organization
 
 You might not have the correct permissions to assign admin roles to other users. Check to make sure you have the correct permissions or ask another admin to assign roles for you.
@@ -102,9 +115,19 @@ You can check admin role permissions in 2 different ways:
 - You can go to the user's details and look under **Roles** on the **Account** page.
 - Or you can go to **Roles** and select the admin role, and select assigned admins to see which users are assigned.
 
+## Compare roles
+
+You can now compare permissions for up to 3 roles at a time so you can find the least permissive role to assign.
+
+In the admin center:
+
+- Select up to 3 roles and choose **Compare roles** to see the permissions each role has.
+
+![A figure that shows a comparison of admin roles.](../../media/compare-roles-list.png)
+
 ## Related content
 
 [About Microsoft 365 admin roles](about-admin-roles.md) (article)\
-[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
+[Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
 [Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)\
 [Add, change, or remove partner relationships](../misc/add-partner.md) (article)

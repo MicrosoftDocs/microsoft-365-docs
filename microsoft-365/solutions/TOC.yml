@@ -84,8 +84,6 @@
             href: collaborate-guests-cross-cloud.md
           - name: Onboard trusted vendors
             href: trusted-vendor-onboarding.md
-          - name: Create a B2B extranet
-            href: b2b-extranet.md
           - name: Trust conditional access from other organizations
             href: trust-conditional-access-from-other-organizations.md
         - name: Limit sharing
@@ -375,6 +373,24 @@
           href: apps-add-step-4.md
         - name: Step 5. Manage apps and licenses
           href: apps-add-step-5.md                  
+    - name: Configure apps using Microsoft Intune
+      items: 
+      - name: Overview
+        href: apps-config-overview.md
+      - name: Step 1. Configure the Company Portal
+        href: apps-config-step-1.md
+      - name: Step 2. Configure Microsoft Outlook
+        href: apps-config-step-2.md
+      - name: Step 3. Configure Microsoft 365
+        href: apps-config-step-3.md
+      - name: Step 4. Configure Microsoft Edge
+        href: apps-config-step-4.md
+      - name: Step 5. Configure Microsoft Teams
+        href: apps-config-step-5.md  
+      - name: Step 6. Configure other apps
+        href: apps-config-step-6.md
+      - name: Step 7. Verify app configuration
+        href: apps-config-step-7.md        
 
 - name: Compliance
   items:
@@ -400,8 +416,8 @@
   - name: Top tasks for security teams to support working from home
     href: ../security/top-security-tasks-for-remote-work.md
   - name: Identity and device access configurations
-    href: ../security/office-365-security/microsoft-365-policies-configurations.md
-  - name: Evaluate and pilot Microsoft 365 Defender
+    href: ../security/office-365-security/zero-trust-identity-device-access-policies-overview.md
+  - name: Evaluate and pilot Microsoft Defender XDR
     href: ../security/defender/eval-overview.md
   - name: Respond to your first incident
     href: ../security/defender/first-incident-overview.md
@@ -415,19 +431,6 @@
     href: ../security/office-365-security/priority-accounts-security-recommendations.md
   - name: Remove a former employee and secure data
     href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-
-- name: Contoso case studies
-  items:
-  - name: Microsoft 365 solutions for the Contoso Corporation
-    href: contoso-case-study-solutions.md
-  - name: COVID-19 response and support for hybrid work
-    href: contoso-remote-onsite-work.md
-  - name: Isolated Team for a top-secret project
-    href: contoso-team-for-top-secret-project.md
-  - name: Teams voice migration
-    href: /MicrosoftTeams/voice-case-study-overview
-  - name: Contoso compliance case study
-    href: ../compliance/communication-compliance-case-study.md
 
 - name: Industry-specific guidance
   items: 

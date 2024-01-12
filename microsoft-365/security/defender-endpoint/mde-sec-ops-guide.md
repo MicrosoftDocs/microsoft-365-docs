@@ -3,7 +3,7 @@ title: Security Operations Guide for Defender for Endpoint
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov
 manager: dansimp
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Endpoint.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 02/07/2023
 audience: ITPro
@@ -14,7 +14,7 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 - mde-ngp
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
@@ -48,9 +48,9 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
    - Device management 
    - Configure Microsoft Defender Security Center time zone settings 
 
-- **Set up Microsoft 365 Defender incident notifications** <p> To get email notifications on defined Microsoft 365 Defender incidents, it's recommended that you configure email notifications. See [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email).
+- **Set up Microsoft Defender XDR incident notifications** <p> To get email notifications on defined Microsoft Defender XDR incidents, it's recommended that you configure email notifications. See [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email).
 
-- **Connect to SIEM (Sentinel)** <p> If you have existing security information and event management (SIEM) tools, you can integrate them with Microsoft 365 Defender. See [Integrate your SIEM tools with Microsoft 365 Defender](../defender/configure-siem-defender.md) and [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
+- **Connect to SIEM (Sentinel)** <p> If you have existing security information and event management (SIEM) tools, you can integrate them with Microsoft Defender XDR. See [Integrate your SIEM tools with Microsoft Defender XDR](../defender/configure-siem-defender.md) and [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 
 - **Review data discovery configuration** <p> Review the Microsoft Defender for Endpoint device discovery configuration to ensure it's configured as required. See [Device discovery overview](device-discovery.md).
 
@@ -64,9 +64,9 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 ### Security operations team  
 
-- **Monitor the Microsoft 365 Defender Incidents queue**
+- **Monitor the Microsoft Defender XDR Incidents queue**
 
-    When Microsoft Defender for Endpoint identifies Indicators of compromise (IOCs) or Indicators of attack (IOAs) and generates an alert, the alert is included in an incident and displayed in the **Incidents** queue in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+    When Microsoft Defender for Endpoint identifies Indicators of compromise (IOCs) or Indicators of attack (IOAs) and generates an alert, the alert is included in an incident and displayed in the **Incidents** queue in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
     
     Review these incidents to respond to any Microsoft Defender for Endpoint alerts and resolve once the incident has been remediated. See [Get incident notifications by email](../defender/incidents-overview.md#get-incident-notifications-by-email) and [View and organize the Microsoft Defender for Endpoint Incidents queue](view-incidents-queue.md).
 
@@ -101,7 +101,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 - **Message Center** 
 
-    Microsoft 365 Defender uses the Microsoft 365 Message center to notify you of upcoming changes, such as new and changed features, planned maintenance, or other important announcements. 
+    Microsoft Defender XDR uses the Microsoft 365 Message center to notify you of upcoming changes, such as new and changed features, planned maintenance, or other important announcements. 
       
     Review the Message center messages to understand any upcoming changes that impact your environment. 
      

@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: sharonchoi
+ms.reviewer: stutisingh
 ms.date: 07/17/2023
 audience: Admin
 ms.topic: article
@@ -103,7 +103,7 @@ Below are the data models currently available in Sales Advisor as recommendation
 | Churn Risk                           | Customer retention   | Machine Learning | Core Apps, Teams, SMB Tenants                                          |
 | SMB Tenant Engagement                | Customer retention   | Business rule    | Email, Core Apps, Teams, SharePoint, OneDrive for Business             |
 | MDO Growth Recommendation            | Customer growth      | Decision Tree    | Microsoft 365 Business Premium or Microsoft Defender for Office 365 P2 |
-| MFA Engagement Recommendation        | Customer engagement  | Decision Tree    | Multi-Factor Authentication in Azure AD                                |
+| MFA Engagement Recommendation        | Customer engagement  | Decision Tree    | Multi-Factor Authentication in Microsoft Entra ID                                |
 | MDB Growth Recommendation            | Customer growth      | Decision Tree    | Microsoft Defender for Business (MDB)                                  |
 | Trials                               | Customer acquisition | Business rule    | Teams Exploratory                                                      |
 

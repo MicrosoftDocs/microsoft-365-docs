@@ -15,24 +15,24 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
   - m365-security
   - tier2
-description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
+description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft Defender portal.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/21/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# View Defender for Office 365 reports in the Microsoft 365 Defender portal
+# View Defender for Office 365 reports in the Microsoft Defender portal
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In organizations with Microsoft Defender for Office 365 Plan 1 or Plan 2 (for example, Microsoft 365 E5 or Microsoft Business Premium) a variety of security-related reports are available. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view and download these reports in the Microsoft 365 Defender portal.
+In organizations with Microsoft Defender for Office 365 Plan 1 or Plan 2 (for example, Microsoft 365 E5 or Microsoft Business Premium) a variety of security-related reports are available. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view and download these reports in the Microsoft Defender portal.
 
-The reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> on the **Email & collaboration reports** page at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. Or, to go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
+The reports are available in the Microsoft Defender portal at <https://security.microsoft.com> on the **Email & collaboration reports** page at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. Or, to go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
 
 Summary information for each report is available on the page. Identify the report you want to view, and then select **View details** for that report.
 
@@ -40,9 +40,9 @@ The rest of this article describes the reports that are exclusive to Defender fo
 
 > [!NOTE]
 >
-> Email security reports that don't require Defender for Office 365 are described in [View email security reports in the Microsoft 365 Defender portal](reports-email-security.md).
+> Email security reports that don't require Defender for Office 365 are described in [View email security reports in the Microsoft Defender portal](reports-email-security.md).
 >
-> For reports that have been deprecated or replaced, see the table in [Email security report changes in the Microsoft 365 Defender portal](reports-email-security.md#email-security-report-changes-in-the-microsoft-365-defender-portal).
+> For reports that have been deprecated or replaced, see the table in [Email security report changes in the Microsoft Defender portal](reports-email-security.md#email-security-report-changes-in-the-microsoft-365-defender-portal).
 >
 > Reports that are related to mail flow are now in the Exchange admin center (EAC). For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
@@ -207,7 +207,7 @@ In addition to the reports described in this article, the following tables descr
 |Report|Article|
 |---|---|
 |**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer-about.md)|
-|Email security reports that don't require Defender for Office 365|[View email security reports in the Microsoft 365 Defender portal](reports-email-security.md)|
+|Email security reports that don't require Defender for Office 365|[View email security reports in the Microsoft Defender portal](reports-email-security.md)|
 |Mail flow reports in the Exchange admin center (EAC)|[Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 
 PowerShell reporting cmdlets:

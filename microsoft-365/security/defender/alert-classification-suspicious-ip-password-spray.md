@@ -2,8 +2,7 @@
 title: Alert classification for suspicious IP address related to password spraying activity
 description: Alert classification for suspicious IP address related to password spraying activity to review the alerts and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, devices, users, 365, microsoft, m365, password, spray, alert classification, alert grading, cloud apps, suspicious IP, classify alert
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -27,10 +26,10 @@ ms.date: 08/11/2022
 
 # Alert classification for suspicious IP addresses related to password spray attacks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Threat actors use password guessing techniques to gain access to user accounts. In a password spray attack, the threat actor might resort to a few of the most used passwords against many different accounts. Attackers successfully compromise accounts using password spraying since many users still utilize default and weak passwords.
 
@@ -68,7 +67,7 @@ This means there's suspicious user activity originating from an IP address that 
 
     :::image type="content" source="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png" alt-text="Screenshot of Microsoft Defender 365 interface showing the Device type." lightbox="../../media/alert-grading-playbook-password-spray/fig2-password-spray-alert.png":::
 
-    _Figure 1. The Device type field shows `Unknown(BAV2ROPC)` user agent in Microsoft 365 Defender._
+    _Figure 1. The Device type field shows `Unknown(BAV2ROPC)` user agent in Microsoft Defender XDR._
 
   - **Check the use of anonymous proxies or the Tor network.** Threat actors often use these alternative proxies to hide their information, making them difficult to trace. However, not all use of said proxies correlate with malicious activities. You must investigate other suspicious activities that might provide better attack indicators.
   - Is the IP address coming from a virtual private network (VPN)? Is the VPN trustworthy? **Check if the IP originated from a VPN and review the organization behind it by using tools** like [RiskIQ](https://community.riskiq.com/learn-more/enterprise). 
@@ -201,4 +200,4 @@ AlertInfo
 - [Overview of alert classification](alert-grading-playbooks.md)
 - [Classifying password spray attacks](alert-grading-password-spray-attack.md)
 - [Investigate alerts](investigate-alerts.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -4,7 +4,7 @@ description: Demonstration to show how the Potentially Unwanted Applications (PU
 keywords: Microsoft Defender for Endpoint, potentially unwanted applications, (PUA), harmful application protection, demonstration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
@@ -18,8 +18,8 @@ ms.collection:
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
-ms.date: 10/21/2022
+ms.subservice: asr
+ms.date: 11/20/2023
 ---
 
 # Potentially unwanted applications (PUA) demonstration

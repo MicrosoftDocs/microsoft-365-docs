@@ -62,7 +62,7 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you’re using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you’re using the **Dashboard view**, go to the Billing > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+   - If you’re using the **Dashboard view**, go to the Billing > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. On the **Bills & payments** page, select the **Billing profile** tab.
 3. Select a billing profile.
 4. On the billing profile details page, under **Bill-to address**, select **Edit**.
@@ -72,7 +72,7 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.admin center.
    - If you’re using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+   - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. On the **Bills & payments** page, select the **Payment methods** tab.
 3. Select a payment method.
 4. In the payment methods details pane, select **Edit**.
@@ -91,8 +91,7 @@ If you have an MOSA billing account type, you can change the service usage addre
 
 ## Related content
 
-[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md)\
-[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md)\
-[Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md)\
-[Payment options for your Microsoft business subscription](pay-for-your-subscription.md)\
-[How to pay for your Microsoft business subscription with a billing profile](pay-for-subscription-billing-profile.md)
+[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
+[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)\
+[Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)\
+[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)\

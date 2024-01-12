@@ -63,9 +63,9 @@ To demonstrate identity-related features and capabilities, see:
   
    Enable and test federated authentication to an AD DS domain controller.
 
-- [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
+- [Microsoft Entra seamless single sign-on](single-sign-on-m365-ent-test-environment.md)
   
-   Enable and test Azure AD Seamless Single Sign-on (Seamless SSO) with an AD DS domain controller.
+   Enable and test Microsoft Entra seamless single sign-on (Seamless SSO) with an AD DS domain controller.
 
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -77,7 +77,7 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Password writeback](password-writeback-m365-ent-test-environment.md)
 
-   Use password writeback to change the password on your AD DS user account from Azure AD.
+   Use password writeback to change the password on your AD DS user account from Microsoft Entra ID.
 
 - [Password reset](password-reset-m365-ent-test-environment.md)
 
@@ -87,7 +87,7 @@ To demonstrate identity-related features and capabilities, see:
 
    Make administering new accounts easier than ever with automatic licensing and dynamic group membership.
 
-- [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
+- [Microsoft Entra ID Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 
    Scan your current user accounts for vulnerabilities.
 

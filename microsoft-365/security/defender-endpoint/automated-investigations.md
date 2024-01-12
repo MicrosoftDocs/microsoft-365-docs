@@ -5,8 +5,8 @@ keywords: automated, investigation, detection, Microsoft Defender for Endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: edr
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
@@ -24,10 +24,10 @@ search.appverid: met150
 
 # Overview of automated investigations
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
@@ -75,7 +75,7 @@ Depending on the [level of automation](automation-levels.md) set for your organi
 All remediation actions, whether pending or completed, are tracked in the [Action center](auto-investigation-action-center.md). If necessary, your security operations team can undo a remediation action. To learn more, see [Review and approve remediation actions following an automated investigation](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Check out the new, unified investigation page in the Microsoft 365 Defender portal. To learn more, see [Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Check out the new, unified investigation page in the Microsoft Defender portal. To learn more, see [Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 ## Requirements for AIR
 
@@ -108,5 +108,5 @@ Currently, AIR only supports the following OS versions:
 
 - [PUA protection](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-about)
-- [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)
+- [Automated investigation and response in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-autoir)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

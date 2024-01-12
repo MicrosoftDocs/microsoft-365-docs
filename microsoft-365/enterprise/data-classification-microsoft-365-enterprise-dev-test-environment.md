@@ -50,7 +50,7 @@ If you want to configure retention labels in a simulated enterprise, follow the 
 
 In this phase, create the retention labels for the different levels of retention for SharePoint Online documents folders:
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> with your global admin account.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> with your global admin account.
 1. From the **Home - Microsoft 365 security** tab of your browser, select **Classification** > **Retention labels**.
 1. Select **Create a label**.
 1. In the **Name your label** pane, enter **Internal Public** in **Name your label**, and then select **Next**.

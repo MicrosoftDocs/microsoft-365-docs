@@ -45,7 +45,7 @@ As automated investigations on *Email & collaboration* content results in verdic
 
 ## Steps to analyze and approve AIR actions directly from the Action Center
 
-1. Navigate to [Microsoft 365 Defender portal](https://security.microsoft.com/action-center) and sign in.
+1. Navigate to [Microsoft Defender portal](https://security.microsoft.com/action-center) and sign in.
 2. When the Action center loads, filter and prioritize by clicking columns to sort the actions, or press **Filters** to apply a filter such as *entity type* (for a particular URL) or action type (such as soft delete email).
 3. A flyout will open once an action is clicked. It will appear on right-hand side of the screen for review.
 4. For more information about why an action is requested, select **Open investigation page** in the flyout to learn more about the investigation or alerts linked to this action. (Admins can also approve actions seen on the investigation page by selecting the *Pending Actions* tab.)
@@ -54,7 +54,7 @@ As automated investigations on *Email & collaboration* content results in verdic
 
 ## Check AIR history
 
-1. Navigate to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in.
+1. Navigate to the [Microsoft Defender portal](https://security.microsoft.com) and sign in.
 2. In the left-hand navigation pane, expand **Action & submissions** then click **Action Center**.
 3. When the Action Center loads press the **History** tab.
 4. View the history of AIR, including decisions made, source of action, and admin who made the decision, if appropriate.

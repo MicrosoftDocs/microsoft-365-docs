@@ -46,7 +46,7 @@ Each measurement is typically associated with additional information, which may 
 
 | Item | Description |
 | --- | --- |
-| Tenant ID | Unique identifier for the customer's Azure Active Directory tenant associated with the end-user device. |
+| Tenant ID | Unique identifier for the customer's Microsoft Entra tenant associated with the end-user device. |
 | Monitor ID | Identifier for the application generating the request (such as Outlook, OneDrive, etc.), provided by the client application that is performing the measurement. |
 | Request ID | Identifier for the measurement request, specified in the measurement configuration provided by Microsoft. |
 | Remote IP | Masked source IP associated with the request from client to service endpoint, provided by the server that received the measurement request and computed based upon the client source IP address that is visible to Microsoft. IP addresses are masked to a /24 subnet for IPv4 addresses or a /48 subnet for IPv6 addresses to ensure that Microsoft cannot identify individual devices or users. |

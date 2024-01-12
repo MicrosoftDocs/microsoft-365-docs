@@ -1,10 +1,9 @@
 ---
-title: Top scoring in industry tests - Microsoft 365 Defender
+title: Top scoring in industry tests - Microsoft Defender XDR
 ms.reviewer:
-description: View the latest scores and analysis of Microsoft 365 Defender. It consistently achieves high scores in independent tests (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). View the latest scores and analysis.
-keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows 10, Windows 11 Microsoft Defender Antivirus, WDAV, Microsoft Defender for Endpoint, Microsoft 365 Defender, security, malware, av, antivirus, scores, scoring, next generation protection, ranking, success
-ms.service: microsoft-365-security
-ms.subservice: m365d
+description: View the latest scores and analysis of Microsoft Defender XDR. It consistently achieves high scores in independent tests (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). View the latest scores and analysis.
+keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows 10, Windows 11 Microsoft Defender Antivirus, WDAV, Microsoft Defender for Endpoint, Microsoft Defender XDR, security, malware, av, antivirus, scores, scoring, next generation protection, ranking, success
+ms.service: defender-xdr
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: high
@@ -22,25 +21,27 @@ ms.date: 02/16/2021
 
 # Top scoring in industry tests
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes the results and provides analysis.
+[Microsoft Defender XDR](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes the results and provides analysis.
 
-## Microsoft 365 Defender
+<a name='microsoft-365-defender'></a>
 
-[Microsoft 365 Defender](microsoft-365-defender.md) is a unified pre- and post-breach enterprise defense suite. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+## Microsoft Defender XDR
 
-Microsoft 365 Defender combines the capabilities of [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection), and [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) into a single solution.
+[Microsoft Defender XDR](microsoft-365-defender.md) is a unified pre- and post-breach enterprise defense suite. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+
+Microsoft Defender XDR combines the capabilities of [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection), and [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) into a single solution.
 
 ### MITRE: Demonstrated real-world detection, response, and protection from advanced attacks
 
-Core to MITRE's testing approach is emulating real-world attacks to understand whether solutions can adequately detect and respond to them. While the test focused on endpoint detection and response, MITRE's simulated APT29 attack spans multiple attack domains, creating opportunities to empower defenders beyond just endpoint protection. Microsoft expanded visibility beyond the endpoint with Microsoft 365 Defender.
+Core to MITRE's testing approach is emulating real-world attacks to understand whether solutions can adequately detect and respond to them. While the test focused on endpoint detection and response, MITRE's simulated APT29 attack spans multiple attack domains, creating opportunities to empower defenders beyond just endpoint protection. Microsoft expanded visibility beyond the endpoint with Microsoft Defender XDR.
 
-- ATT&CK-based evaluation of Microsoft 365 Defender - April 2022: [Microsoft 365 Defender demonstrates industry-leading protection in the 2022 MITRE Engenuity ATT&CK® Evaluations]([Microsoft Security Blog: Microsoft 365 Defender demonstrates industry-leading protection in the 2022 MITRE Engenuity ATT&CK® Evaluations](https://www.microsoft.com/en-us/security/blog/2022/04/05/microsoft-365-defender-demonstrates-industry-leading-protection-in-the-2022-mitre-engenuity-attck-evaluations/))
+- ATT&CK-based evaluation of Microsoft Defender XDR - April 2022: [Microsoft Defender XDR demonstrates industry-leading protection in the 2022 MITRE Engenuity ATT&CK® Evaluations]([Microsoft Security Blog: Microsoft Defender XDR demonstrates industry-leading protection in the 2022 MITRE Engenuity ATT&CK® Evaluations](https://www.microsoft.com/en-us/security/blog/2022/04/05/microsoft-365-defender-demonstrates-industry-leading-protection-in-the-2022-mitre-engenuity-attck-evaluations/))
 
-- ATT&CK-based evaluation of Microsoft 365 Defender - April 2021: [Evaluation proves Microsoft Defender for Endpoint stops advanced attacks across platforms](https://www.microsoft.com/security/blog/2021/04/21/)
+- ATT&CK-based evaluation of Microsoft Defender XDR - April 2021: [Evaluation proves Microsoft Defender for Endpoint stops advanced attacks across platforms](https://www.microsoft.com/security/blog/2021/04/21/)
 
- Microsoft 365 Defender provided nearly 100 percent coverage across the attack chain stages. It delivered leading out-of-box visibility into attacker activities. The visibility dramatically reduces manual work for the security operations center and vendor solutions that relied on specific configuration changes. Microsoft 365 Defender also had the fewest gaps in visibility, diminishing attacker ability to operate undetected.
+ Microsoft Defender XDR provided nearly 100 percent coverage across the attack chain stages. It delivered leading out-of-box visibility into attacker activities. The visibility dramatically reduces manual work for the security operations center and vendor solutions that relied on specific configuration changes. Microsoft Defender XDR also had the fewest gaps in visibility, diminishing attacker ability to operate undetected.
 
 ## Next generation protection
 
@@ -120,5 +121,5 @@ The capabilities within Microsoft Defender for Endpoint provide [additional laye
 
 [Learn more about Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and evaluate it in your own network by signing up for a [90-day trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), or [enabling Preview features on existing tenants](/windows/security/threat-protection/microsoft-defender-atp/preview).
 
-[Learn more about Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](m365d-enable.md).
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[Learn more about Microsoft Defender XDR](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](m365d-enable.md).
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

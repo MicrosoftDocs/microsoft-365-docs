@@ -3,7 +3,7 @@ title: Overview of management and APIs
 ms.reviewer:
 description: Learn about the management tools and API categories in Microsoft Defender for Endpoint
 keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -25,12 +25,12 @@ ms.date: 12/18/2020
 
 # Overview of management and APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mgt-apis-abovefoldlink)
 
@@ -83,12 +83,12 @@ The Defender for Endpoint event information is pushed directly to Azure storage 
 
 For more information, see [Raw data streaming API](raw-data-export.md).
 
-The new Microsoft 365 Defender Streaming API includes email and alert events in addition to device events.
-For more information, see [Microsoft 365 Defender Streaming API](../../defender/streaming-api.md).
+The new Microsoft Defender XDR Streaming API includes email and alert events in addition to device events.
+For more information, see [Microsoft Defender XDR Streaming API](../../defender/streaming-api.md).
 
 ## SIEM API
 
-When you enable security information and event management (SIEM) integration, it allows you to pull detections from Microsoft 365 Defender using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant. 
+When you enable security information and event management (SIEM) integration, it allows you to pull detections from Microsoft Defender XDR using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under your Microsoft Entra tenant. 
 
 ## Related topics
 

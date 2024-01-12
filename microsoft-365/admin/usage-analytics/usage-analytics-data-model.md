@@ -57,7 +57,7 @@ Expand the following sections to see the detailed information for each data tabl
   
 ### Data table - User State
 
-This table provides user level details for all users that have a license assigned to them during the last complete month. It brings in data from the Azure Active Directory.
+This table provides user level details for all users that have a license assigned to them during the last complete month. It brings in data from the Microsoft Entra ID.
   
 |**Column name**|**Column description**|
 |:-----|:-----|
@@ -72,13 +72,13 @@ This table provides user level details for all users that have a license assigne
 |HasLicenseYAM  <br/> |Set to true if user is assigned a license and enabled to use Viva Engage on the last day of the month.  <br/> |
 |HasLicenseSFB  <br/> |Set to true if user is assigned a license and enabled to use Skype For Business on the last day of the month.  <br/> |
 |HasLicenseTeams  <br/> |Set to true if user is assigned a license and enable to use Microsoft Teams on the last day of the month.  <br/> |
-|Company  <br/> |Company data represented in Azure Active Directory for this user.  <br/> |
-|Department  <br/> |Department data represented in Azure Active Directory for this user.  <br/> |
-|LocationCity  <br/> |City data represented in Azure Active Directory for this user.  <br/> |
-|LocationCountry  <br/> |Country/region data represented in Azure Active Directory for this user.  <br/> |
-|LocationState  <br/> |State data represented in Azure Active Directory for this user.  <br/> |
+|Company  <br/> |Company data represented in Microsoft Entra ID for this user.  <br/> |
+|Department  <br/> |Department data represented in Microsoft Entra ID for this user.  <br/> |
+|LocationCity  <br/> |City data represented in Microsoft Entra ID for this user.  <br/> |
+|LocationCountry  <br/> |Country/region data represented in Microsoft Entra ID for this user.  <br/> |
+|LocationState  <br/> |State data represented in Microsoft Entra ID for this user.  <br/> |
 |LocationOffice  <br/> |User's office.  <br/> |
-|Title  <br/> |Title data represented in Azure Active Directory for this user.  <br/> |
+|Title  <br/> |Title data represented in Microsoft Entra ID for this user.  <br/> |
 |Deleted  <br/> |True if the user has been deleted from Microsoft 365 in that last complete month.  <br/> |
 |DeletedDate  <br/> |Date when the user was deleted from Microsoft 365.  <br/> |
 |YAM_State  <br/> |States of the user in the Viva Engage system, can be active, deleted, or suspended.  <br/> |

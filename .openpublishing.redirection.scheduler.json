@@ -1,0 +1,44 @@
+{
+    "redirections": [
+        {
+            "source_path":"microsoft-365/scheduler/index.yml",
+            "redirect_url":"https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id":false
+        },
+        {
+            "source_path": "microsoft-365/scheduler/scheduler-overview.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoft-365/scheduler/scheduler-faqs.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoft-365/scheduler/scheduler-preferences.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoft-365/scheduler/scheduler-recurring-meetings.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoft-365/scheduler/scheduler-setup.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoft-365/scheduler/scheduler-trust-privacy.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoft-365/scheduler/scheduler-using.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        }
+    ]
+}

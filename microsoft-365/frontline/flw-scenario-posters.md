@@ -4,7 +4,7 @@ description: Download these PDF posters to learn about scenarios you can easily 
 search.appverid: MET150
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-365-frontline

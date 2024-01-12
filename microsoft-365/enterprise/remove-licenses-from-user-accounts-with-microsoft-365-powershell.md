@@ -3,7 +3,7 @@ title: "Remove Microsoft 365 licenses from user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/23/2020
+ms.date: 12/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -31,7 +32,7 @@ description: "Explains how to use PowerShell to remove Microsoft 365 licenses th
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
 >[!Note]
->[Learn how to remove licenses from user accounts](../admin/manage/remove-licenses-from-users.md) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](/admin).
+>[Learn how to remove licenses from user accounts](../admin/manage/assign-licenses-to-users.md) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](/admin).
 >
 
 ## Use the Microsoft Graph PowerShell SDK
@@ -46,7 +47,7 @@ The Organization.Read.All permission scope is required to read the licenses avai
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
-To view the licensing plan information in your organization, see the following topics:
+To view the licensing plan information in your organization, see the following articles:
 
 - [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
 
@@ -76,8 +77,8 @@ $licensedUsers = Get-MgUser -Filter 'assignedLicenses/$count ne 0' `
 
 foreach($user in $licensedUsers)
 {
-    $licencesToRemove = $user.AssignedLicenses | Select -ExpandProperty SkuId
-    $user = Set-MgUserLicense -UserId $user.UserPrincipalName -RemoveLicenses $licencesToRemove -AddLicenses @{} 
+    $licensesToRemove = $user.AssignedLicenses | Select -ExpandProperty SkuId
+    $user = Set-MgUserLicense -UserId $user.UserPrincipalName -RemoveLicenses $licensesToRemove -AddLicenses @{} 
 }
 ```
 
@@ -130,22 +131,22 @@ if($userList.Count -ne 0) {
 }
 ```
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
 >[!Note]
 >The Set-MsolUserLicense and New-MsolUser (-LicenseAssignment) cmdlets are scheduled to be retired. Please migrate your scripts to the Microsoft Graph SDK's Set-MgUserLicense cmdlet as described above. For more information, see [Migrate your apps to access the license managements APIs from Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
 >
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
-   
-To view the licensing plan (**AccountSkuID**) information in your organization, see the following topics:
-    
-  - [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
-    
-  - [View account license and service details with PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
-    
+
+To view the licensing plan (**AccountSkuID**) information in your organization, see the following articles:
+
+- [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
+
+- [View account license and service details with PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+
 If you use the **Get-MsolUser** cmdlet without using the _-All_ parameter, only the first 500 accounts are returned.
-    
+
 ### Removing licenses from user accounts
 
 To remove licenses from an existing user account, use the following syntax:
@@ -155,7 +156,7 @@ Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1
 ```
 
 >[!Note]
->PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+>PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
 >
 
 This example removes the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) license from the user account BelindaN@litwareinc.com.
@@ -171,63 +172,64 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 To remove all licenses from a group of existing licensed users, use either of the following methods:
   
 - **Filter the accounts based on an existing account attribute** To do this, use the following syntax:
-    
-```powershell
-$userArray = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
-for ($i=0; $i -lt $userArray.Count; $i++)
-{
-Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
-}
-```
 
-This example removes all licenses from all user accounts in the Sales department in the United States.
-    
-```powershell
-$userArray = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
-for ($i=0; $i -lt $userArray.Count; $i++)
-{
-Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
-}
-```
+  ```powershell
+  $userArray = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
+  for ($i=0; $i -lt $userArray.Count; $i++)
+  {
+  Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
+  }
+  ```
+
+  This example removes all licenses from all user accounts in the Sales department in the United States.
+
+  ```powershell
+  $userArray = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
+  for ($i=0; $i -lt $userArray.Count; $i++)
+  {
+  Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
+  }
+  ```
 
 - **Use a list of specific accounts for a specific license** To do this, perform the following steps:
-    
-1. Create and save a text file that contains one account on each line like this:
-    
-  ```powershell
-akol@contoso.com
-tjohnston@contoso.com
-kakers@contoso.com
-  ```
 
-2. Use the following syntax:
-    
-  ```powershell
-  $x=Get-Content "<FileNameAndPath>"
-  for ($i=0; $i -lt $x.Count; $i++)
-  {
-  Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
-  }
-  ```
-This example removes the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) license from the user accounts defined in the text file C:\My Documents\Accounts.txt.
-    
-  ```powershell
-  $x=Get-Content "C:\My Documents\Accounts.txt"
-  for ($i=0; $i -lt $x.Count; $i++)
-  {
-  Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "litwareinc:ENTERPRISEPACK"
-  }
-  ```
+  1. Create and save a text file that contains one account on each line like this:
 
-To remove all licenses from all existing user accounts, use the following syntax:
+     ```powershell
+     akol@contoso.com
+     tjohnston@contoso.com
+     kakers@contoso.com
+     ```
+
+  2. Use the following syntax:
+
+     ```powershell
+     $x=Get-Content "<FileNameAndPath>"
+     for ($i=0; $i -lt $x.Count; $i++)
+     {
+     Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
+     }
+     ```
+
+     This example removes the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) license from the user accounts defined in the text file C:\My Documents\Accounts.txt.
+
+     ```powershell
+     $x=Get-Content "C:\My Documents\Accounts.txt"
+     for ($i=0; $i -lt $x.Count; $i++)
+     {
+     Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "litwareinc:ENTERPRISEPACK"
+     }
+     ```
+
+     To remove all licenses from all existing user accounts, use the following syntax:
   
-```powershell
-$userArray = Get-MsolUser -All | where {$_.isLicensed -eq $true}
-for ($i=0; $i -lt $userArray.Count; $i++)
-{
-Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
-}
-```
+     ```powershell
+     $userArray = Get-MsolUser -All | where {$_.isLicensed -eq $true}
+     for ($i=0; $i -lt $userArray.Count; $i++)
+     {
+     Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
+     }
+     ```
 
 Another way to free up a license is by deleting the user account. For more information, see [Delete and restore user accounts with PowerShell](delete-and-restore-user-accounts-with-microsoft-365-powershell.md).
   

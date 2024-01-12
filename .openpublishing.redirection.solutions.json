@@ -47,7 +47,7 @@
      },
      {
         "source_path":"microsoft-365/solutions/configure-secure-access.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/microsoft-365-policies-configurations",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview",
         "redirect_document_id":true
      },
      {
@@ -106,9 +106,44 @@
       "redirect_document_id":false
      },
      {
+      "source_path":"microsoft-365/solutions/contoso-team-for-top-secret-project.md",
+      "redirect_url":"/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
+      "redirect_document_id":false
+     },
+     {
+      "source_path":"microsoft-365/solutions/contoso-remote-onsite-work.md",
+      "redirect_url":"/microsoft-365/solutions",
+      "redirect_document_id":false
+     },
+     {
+      "source_path":"microsoft-365/solutions/contoso-case-study-solutions.md",
+      "redirect_url":"/microsoft-365/solutions",
+      "redirect_document_id":false
+     },
+     {
         "source_path":"microsoft-365/solutions/information-protection-deploy-monitor-respond.md",
         "redirect_url":"/microsoft-365/solutions/data-privacy-protection",
         "redirect_document_id":false
-     }
+     },
+     {
+      "source_path":"microsoft-365/solutions/secure-teams-security-isolation.md",
+      "redirect_url":"/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/solutions/test-lab-guides-overview-solutions.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+      "redirect_document_id":true
+   },
+   {
+      "source_path":"microsoft-365/solutions/b2b-extranet.md",
+      "redirect_url":"/entra/id-governance/entitlement-management-onboard-external-user",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/solutions/team-security-isolation-dev-test.md",
+      "redirect_url":"/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
+      "redirect_document_id":true
+   }
   ]
 }

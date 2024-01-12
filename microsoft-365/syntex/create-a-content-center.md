@@ -2,7 +2,7 @@
 title: Create a content center in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 07/06/2023
 audience: admin
@@ -13,7 +13,6 @@ ms.custom: admindeeplinkSPO
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-    - essentials-how-to
 ms.localizationpriority:  medium
 description: Learn how to create a content center in Microsoft Syntex.
 ---

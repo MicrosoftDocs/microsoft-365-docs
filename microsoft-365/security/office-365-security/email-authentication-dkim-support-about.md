@@ -21,8 +21,8 @@ ms.service: microsoft-365-security
 ms.date: 6/15/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Support for validation of DKIM signed messages
@@ -31,7 +31,7 @@ appliesto:
 
 Exchange Online Protection (EOP) and Exchange Online both support inbound validation of Domain Keys Identified Mail ([DKIM](https://www.rfc-editor.org/rfc/rfc6376.txt)) messages.
 
-DKIM validates that an email message wasn't *spoofed* by someone else, and was sent from the domain it *says* it came from. It ties an email message to the organization that sent it. DKIM verification is used automatically for all messages sent with IPv6. Microsoft 365 also supports DKIM when mail is sent over IPv4. (For more information about IPv6 support, see [Support for anonymous inbound email messages over IPv6](mail-flow-inbound-ipv6-support-about.md).)
+DKIM validates that an email message wasn't *spoofed* by someone else, and was sent from the domain it *says* it came from. It ties an email message to the organization that sent it. DKIM verification is used automatically for all messages sent with IPv6. Microsoft 365 also supports DKIM when mail is sent over IPv4. For more information about IPv6 support, see [Support for anonymous inbound email over IPv6](mail-flow-about.md#support-for-anonymous-inbound-email-over-ipv6).
 
 DKIM validates a digitally signed message that appears in the DKIM-Signature header of the message headers. The results of a DKIM-Signature validation are stamped in the Authentication-Results header. The message header text appears similar to the following (where contoso.com is the sender):
 

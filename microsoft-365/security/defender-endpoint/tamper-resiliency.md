@@ -5,8 +5,8 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 ms.reviewer: joshbregman
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.date: 07/04/2023
 ms.topic: overview
 ms.collection:
@@ -25,7 +25,7 @@ Tampering is the general term used to describe attackers attempts to impair the 
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
+- [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
 ## Organization wide tamper resiliency is built on Zero Trust
@@ -101,7 +101,9 @@ For more information, see [Tamper protection for antivirus exclusions](/microsof
 
 Attackers can be preventing from discovering existing antivirus exclusions by enabling [HideExclusionsFromLocalAdmin](/windows/client-management/mdm/defender-csp#configurationhideexclusionsfromlocaladmins).
 
-## Detecting potential tampering activity in the Microsoft 365 Defender portal
+<a name='detecting-potential-tampering-activity-in-the-microsoft-365-defender-portal'></a>
+
+## Detecting potential tampering activity in the Microsoft Defender portal
 
 When tampering is detected, an alert is raised. Some of the alert titles for tampering are:
 

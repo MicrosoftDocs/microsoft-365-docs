@@ -2,7 +2,7 @@
 title: Evaluate network protection
 description: See how network protection works by testing common scenarios that it protects against.
 keywords: Network protection, exploits, malicious website, ip, domain, domains, evaluate, test, demo
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
-ms.subservice: mde
+ms.subservice: asr
 ms.collection: 
 - m365-security
 - tier2
@@ -23,12 +23,12 @@ ms.date: 12/18/2020
 
 # Evaluate network protection
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [Network protection](network-protection.md) helps prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
 

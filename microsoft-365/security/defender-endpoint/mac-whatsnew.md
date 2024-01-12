@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -13,20 +13,20 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.reviewer: mavel
 ---
 
 # What's new in Microsoft Defender for Endpoint on Mac
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -54,9 +54,40 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **macOS Deprecation**
 
-Microsoft Defender for Endpoint no longer supports these macOS as Apple ended support for:
-- Big Sur (11) in December 2023.
-- Catalina (10.15) in December 2022.
+> [!NOTE]
+> Microsoft Defender for Endpoint no longer supports these macOS as Apple ended support for:
+> - Big Sur (11) in December 2023.
+> - Catalina (10.15) in December 2022.
+
+### Dec-2023 (Build: 101.23102.0020 | Release version: 20.123102.20.0)
+
+| Build:             | **101.23102.0020** |
+|--------------------|----------------------------|
+| Release version:   | **20.123102.20.0** |
+| Engine version:    | **1.1.23090.2005** |
+| Signature version: | **1.401.1729.0**   |
+
+##### What's new
+
+- Bug and performance fixes
+
+### Nov-2023 (Build: 101.23092.0007 | Release version: 20.123092.7.0)
+
+| Build:             | **101.23092.0007**         |
+|--------------------|----------------------------|
+| Release version:   | **20.123092.7.0**          |
+| Engine version:    | **1.1.23090.2005**         |
+| Signature version: | **1.399.1196.0**           |
+
+##### What's new
+
+- [[device control](mac-device-control-overview.md)] set policy for DCv2 via 'mdatp config'
+- Configuration loading - error logged to /Library/Logs/Microsoft/mdatp/microsoft_defender_core_err.log includes bad property name in JSON
+
+> [!NOTE]
+> If you use Device Control v1, consider migrating to v2 (that includes all v1 functionality and more).
+> Device Control v1 will be considered deprecated in the nearest future.
+> To check, run the [mdatp health --details device_control](mac-device-control-overview.md#status) command, and inspect the `active` property, it should not contain "v1".
 
 ### Oct-2023 (Build: 101.23082.0018  | Release version: 20.123082.18.0)
 
@@ -65,6 +96,8 @@ Microsoft Defender for Endpoint no longer supports these macOS as Apple ended su
 | Release version:   | **20.123082.18.0**         |
 | Engine version:    | **1.1.23070.1002**         |
 | Signature version: | **1.399.384.0**            |
+
+##### What's new
 
 - [[device control](mac-device-control-overview.md)] Detailed status with `mdatp health --details device_control`
 - [[device control](mac-device-control-overview.md)] `mdatp config device-control policy` to [set policy](mac-device-control-manual.md) on a non-managed machine
@@ -775,7 +808,7 @@ Microsoft Defender for Endpoint no longer supports these macOS as Apple ended su
 **What's new**
 
 > [!IMPORTANT]
-> We are working on a new and enhanced syntax for the `mdatp` command-line tool. The new syntax is currently the default in the Insider Fast and Insider Slow update channels. We encourage you to famliliarize yourself with this new syntax.
+> We are working on a new and enhanced syntax for the `mdatp` command-line tool. The new syntax is currently the default in the Insider Fast and Insider Slow update channels. We encourage you to familiarize yourself with this new syntax.
 > We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months.
 - Addressed a kernel panic that occurred sometimes when accessing SMB file shares.
 - Performance improvements & bug fixes
@@ -949,7 +982,7 @@ Microsoft Defender for Endpoint no longer supports these macOS as Apple ended su
 >
 > The mechanism for granting this consent depends on how you deployed Microsoft Defender for Endpoint:
 >
-> - For manual deployments, see the updated instructions in the [Manual deployment topic](mac-install-manually.md#how-to-allow-full-disk-access).
+> - For manual deployments, see the updated instructions in the [Manual deployment topic](mac-install-manually.md#allow-full-disk-access).
 > - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
 
 - Performance improvements & bug fixes

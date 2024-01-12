@@ -17,11 +17,11 @@ description: Admins can learn how to apply Standard and Strict policy settings a
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 9/19/2023
+ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
@@ -30,7 +30,7 @@ appliesto:
 
 _Preset security policies_ allow you to apply protection features to users based on our recommended settings. Unlike custom policies that are infinitely configurable, virtually all of the settings in preset security policies aren't configurable, and are based on our observations in the datacenters. The settings in preset security policies provide a balance between keeping harmful content away from users while avoiding unnecessary disruptions.
 
-Depending on your organization, preset security policies provide many of the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](microsoft-defender-for-office-365-product-overview.md).
+Depending on your organization, preset security policies provide many of the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](mdo-security-comparison.md).
 
 The following preset security policies are available:
 
@@ -44,19 +44,21 @@ The rest of this article how to configure preset security policies.
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
+- You open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Configure preset security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to preset security policies_: Membership in the **Global Reader** role group.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-role): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-## Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users
+<a name='use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users'></a>
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. Or, to go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
+## Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users
+
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. Or, to go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 2. If this is your first time on the **Preset security policies** page, it's likely that **Standard protection** and **Strict protection** are turned off :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::.
 
@@ -165,18 +167,24 @@ The rest of this article how to configure preset security policies.
 
 10. On the **Standard protection updated** or **Strict protection updated** page, select **Done**.
 
-## Use the Microsoft 365 Defender portal to modify the assignments of Standard and Strict preset security policies
+<a name='use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies'></a>
+
+## Use the Microsoft Defender portal to modify the assignments of Standard and Strict preset security policies
 
 The steps to modify the assignment of the **Standard protection** or **Strict protection** preset security policy are the same as when you initially [assigned the preset security policies to users](#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 To disable the **Standard protection** or **Strict protection** preset security policies while still preserving the existing conditions and exceptions, slide the toggle to :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::. To enable the policies, slide the toggle to :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
 
-## Use the Microsoft 365 Defender portal to add exclusions to the Built-in protection preset security policy
+<a name='use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy'></a>
+
+## Use the Microsoft Defender portal to add exclusions to the Built-in protection preset security policy
 
 > [!TIP]
-> The **Built-in protection** preset security policy is assigned to all recipients, and doesn't affect recipients who are defined in the **Standard** or **Strict** preset security policies, or in custom Safe Links or Safe Attachments policies. Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
+> The **Built-in protection** preset security policy is applied to all users in organizations with any amount of licenses for Defender for Microsoft 365. This application is in the spirit of securing the broadest set of users until admins specifically configure Defender for Office 365 protections. Because **Built-in protection** is enabled by default, customers don't need to worry about violating product licensing terms. However, we recommend purchasing enough Defender for Office 365 licenses to ensure **Built-in protection** continues for all users.
+>
+> The **Built-in protection** preset security policy doesn't affect recipients who are defined in the **Standard** or **Strict** preset security policies, or in custom Safe Links or Safe Attachments policies. Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. Or, to go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. Or, to go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 2. On the **Preset security policies** page, select **Add exclusions (not recommended)** in the **Built-in protection** section.
 
@@ -207,7 +215,7 @@ To verify that you've successfully assigned the **Standard protection** or **Str
 
 For example, for email that's detected as spam (not high confidence spam) verify that the message is delivered to the Junk Email folder for **Standard protection** users, and quarantined for **Strict protection** users.
 
-Or, for [bulk mail](anti-spam-bulk-complaint-level-bcl-about.md), verify that the BCL value 6 or higher delivers the message to the Junk Email folder for **Standard protection** users, and the BCL value 4 or higher quarantines the message for **Strict protection** users.
+Or, for [bulk mail](anti-spam-bulk-complaint-level-bcl-about.md), verify that the BCL value 6 or higher delivers the message to the Junk Email folder for **Standard protection** users, and the BCL value 5 or higher quarantines the message for **Strict protection** users.
 
 ## Preset security policies in Exchange Online PowerShell
 
@@ -223,7 +231,7 @@ In PowerShell, preset security policies consist of the following elements:
      - **[Get-SafeLinksPolicy](/powershell/module/exchange/get-safelinkspolicy)**
 
   > [!WARNING]
-  > Do not attempt to create, modify, or remove the individual security policies that are associated with preset security policies. The only supported method for creating the individual security policies for Standard or Strict preset security policies is to turn on the preset security policy in the Microsoft 365 Defender portal for the first time.
+  > Do not attempt to create, modify, or remove the individual security policies that are associated with preset security policies. The only supported method for creating the individual security policies for Standard or Strict preset security policies is to turn on the preset security policy in the Microsoft Defender portal for the first time.
 
 - **Rules**: Separate rules are used for the Standard preset security policy, the Strict preset security policy, and the Built-in protection preset security policy. The rules define the recipient conditions and exceptions for the policies (who the policies apply to). You manage these rules using the following cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
   - <u>Rules for Exchange Online Protection (EOP) protections</u>:
@@ -243,7 +251,7 @@ In PowerShell, preset security policies consist of the following elements:
     - **[New-ATPBuiltInProtectionRule](/powershell/module/exchange/new-atpbuiltinprotectionrule)**
     - **[Set-ATPBuiltInProtectionRule](/powershell/module/exchange/set-atpbuiltinprotectionrule)**
 
-  For the Standard and Strict preset security policies, these rules are created the first time you turn on the preset security policy in the Microsoft 365 Defender portal. If you never turned on the preset security policy, the associated rules don't exist. Turning off the preset security policy doesn't delete the associated rules.
+  For the Standard and Strict preset security policies, these rules are created the first time you turn on the preset security policy in the Microsoft Defender portal. If you never turned on the preset security policy, the associated rules don't exist. Turning off the preset security policy doesn't delete the associated rules.
 
 The following sections describe how to use these cmdlets in **supported scenarios**.
 
@@ -251,7 +259,7 @@ To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerS
 
 ### Use PowerShell to view individual security policies for preset security policies
 
-Remember, if you never turned on the Standard preset security policy or the Strict preset security policy in the Microsoft 365 Defender portal, the associated security policies for the preset security policy don't exist.
+Remember, if you never turned on the Standard preset security policy or the Strict preset security policy in the Microsoft Defender portal, the associated security policies for the preset security policy don't exist.
 
 - **Built-in protection preset security policy**: The associated policies are named Built-In Protection Policy. The IsBuiltInProtection property value is True for these policies.
 
@@ -290,7 +298,7 @@ Remember, if you never turned on the Standard preset security policy or the Stri
     ```
 ### Use PowerShell to view rules for preset security policies
 
-Remember, if you never turned on the Standard preset security policy or the Strict preset security policy in the Microsoft 365 Defender portal, the associated rules for those policies don't exist.
+Remember, if you never turned on the Standard preset security policy or the Strict preset security policy in the Microsoft Defender portal, the associated rules for those policies don't exist.
 
 - **Built-in protection preset security policy**: There's only one rule named ATP Built-In Protection Rule.
 
@@ -539,10 +547,11 @@ The differences in meaningful policy settings in the Standard preset security po
 |**Anti-malware policy**|No difference|No difference|
 |**Anti-spam policy**|||
 |&nbsp;&nbsp;**Bulk compliant level (BCL) met or exceeded** detection action (_BulkSpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
-|&nbsp;&nbsp;**Bulk email threshold** (_BulkThreshold_)|7|6|
+|&nbsp;&nbsp;**Bulk email threshold** (_BulkThreshold_)|6|5|
 |&nbsp;&nbsp;**Spam** detection action (_SpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |**Anti-phishing policy**|||
 |&nbsp;&nbsp;**If the message is detected as spoof by spoof intelligence** (_AuthenticationFailAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
+|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Not selected (`$false`)|
 |&nbsp;&nbsp;**If mailbox intelligence detects an impersonated user** (_MailboxIntelligenceProtectionAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |&nbsp;&nbsp;**Phishing email threshold** (_PhishThresholdLevel_)|**3 - More aggressive** (`3`)|**4 - Most aggressive** (`4`)|
 |**Safe Attachments policy**|No difference|No difference|

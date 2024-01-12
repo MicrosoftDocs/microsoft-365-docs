@@ -83,7 +83,7 @@ If you can't select the **View upgrades recommended for your org** link, it mean
 
 |Issue  |Resolution  |
 |---------|---------|
-|You have more users than licenses.     |To change plans automatically, all users must have valid licenses. [Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) until you have the same or fewer users as your number of licenses.        |
+|You have more users than licenses.     |To change plans automatically, all users must have valid licenses. [Unassign licenses from users](../../admin/manage/assign-licenses-to-users.md) until you have the same or fewer users as your number of licenses.        |
 |The current subscription isn't fully set up or the service isn't available.     |For example, if a service in your existing plan has an incident, you can't change plans until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page. </br></br>If you find that a service isn't fully provisioned, or there's a service health issue, wait a few hours for the service to become available and try again. If you still have a problem, [contact support](../../admin/get-help-support.md).         |
 |Another plan is in the process of being changed or a credit check is pending.    |Wait until the credit check is complete before you change plans. Credit checks can take up to two working days.         |
 |The subscription isn't currently eligible to change plans.     |You can [change plans manually](#change-plans-manually).         |

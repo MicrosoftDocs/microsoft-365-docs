@@ -19,7 +19,7 @@ description: Admins can learn how long Defender for Office 365 features retain d
 search.appverid: met150
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Data retention information for Microsoft Defender for Office 365
@@ -35,7 +35,7 @@ By default, data across different features is retained for a maximum of 30 days.
 
 |Feature|Retention period|
 |---|---|
-|Alert metadata details (Microsoft Defender for Office alerts)|90 days.|
+|Alert metadata details (Defender for Office 365 alerts)|90 days.|
 |Entity metadata details (Email)|30 days.|
 |Activity alert details (audit logs)|7 days.|
 |Email entity page|30 days.|

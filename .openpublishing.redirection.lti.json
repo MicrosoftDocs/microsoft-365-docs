@@ -1,0 +1,14 @@
+{
+    "redirections": [
+        {
+            "source_path": "microsoft-365/lti/teams-classes-lms.md",
+            "redirect_url": "/MicrosoftTeams/Teams-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoft-365/lti/use-onedrive-with-lms.md",
+            "redirect_url": "/lti/onedrive-lti",
+            "redirect_document_id": false
+        }
+    ]
+}

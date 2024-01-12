@@ -8,14 +8,14 @@ manager: dansimp
 audience: Admin
 ms.topic: reference
 ms.service: microsoft-365-business
-ms.date: 07/10/2023
+ms.date: 11/30/2023
 ms.localizationpriority: medium
 ms.collection:
 - highpri
 - m365-security
 - tier2
 - ContentEnagagementFY23
-- essentials-required-compliance
+- essentials-accountability
 search.appverid:
 - BCS160
 - MET150
@@ -46,20 +46,20 @@ The following table summarizes how to secure your data using Microsoft 365 for b
 
 | Best practices and capabilities | Microsoft 365 Business Premium | Microsoft 365 Business Standard | Microsoft 365 Business Basic |
 |---|---|---|---|
-| **1. Use multi-factor authentication** (MFA), also known as two-step verification. See [Turn on multi-factor authentication](m365bp-turn-on-mfa.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |  :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
+| **1. Use multi-factor authentication** (MFA), also known as two-step verification. See [Turn on multifactor authentication](m365bp-turn-on-mfa.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |  :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 | - [Security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults) (suitable for most organizations) | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 | - [Conditional Access](m365bp-turn-on-mfa.md) (for more stringent requirements)  | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | |
 | **2. Set up and protect your administrator accounts**. See [Protect your admin accounts](m365bp-protect-admin-accounts.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
 | **3. Use preset security policies to protect email and collaboration content**. See [Review and apply preset security policies](/microsoft-365/business-premium/m365bp-protect-against-malware-cyberthreats#1-review-and-apply-preset-security-policies-for-email-and-collaboration).  | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 | - [Anti-spam, anti-malware, and anti-phishing protection](../security/office-365-security/eop-about.md) for email | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
-| - [Advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments](../security/office-365-security/microsoft-defender-for-office-365-product-overview.md) for email and Office documents | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | |
+| - [Advanced anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments](../security/office-365-security/mdo-security-comparison.md) for email and Office documents | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | |
 | **4. Protect all devices**, including personal and company devices. See [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | |
 | - [Microsoft 365 Apps](m365bp-users-install-m365-apps.md) (Word, Excel, PowerPoint, and more) installed on users' computers, phones, and tablets | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | 
 | - [Windows 10 or 11 Pro Upgrade](m365bp-upgrade-windows-pro.md) from Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | |
 | - [Advanced threat protection](m365bp-onboard-devices-mdb.md) for users' computers, phones, and tablets | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | | 
 | **5. Train everyone on email best practices**. See [Protect yourself against phishing and other attacks](m365bp-avoid-phishing-and-attacks.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 | - [Anti-spam, anti-malware, and anti-phishing protection](../security/office-365-security/eop-about.md) for email | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
-| - [Advanced threat protection](../security/office-365-security/microsoft-defender-for-office-365-product-overview.md) for email and Office documents | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | |
+| - [Advanced threat protection](../security/office-365-security/mdo-security-comparison.md) for email and Office documents | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | |
 | **6. Use Microsoft Teams for collaboration and sharing**. | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 | - [Microsoft Teams](create-teams-for-collaboration.md)  for communication, collaboration, and sharing | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 | - [Safe Links & Safe Attachments](/microsoft-365/security/office-365-security/mdo-support-teams-about)  with Microsoft Teams | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | |
@@ -78,18 +78,5 @@ The following table summarizes how to secure your data using Microsoft 365 for b
 | - [Data Loss Prevention](/microsoft-365/compliance/get-started-with-the-default-dlp-policy) to safeguard company data | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | | 
 | **10. Maintain your environment** by performing tasks, such asl adding or removing users and devices. See [Maintain your environment](m365bp-mdb-maintain-environment.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 
-## More information about Microsoft 365 for business
-
-- For more information about what each plan includes, see:
-
-   - [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c)
-   - [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
-
-- [What is Defender for Business?](../security/defender-business/mdb-overview.md)
-
-- [Microsoft 365 Business Premium—cybersecurity for small business](/microsoft-365/business-premium/)
-
-- For more details about Defender for Business and Microsoft 365 Business Premium, see [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md)
-
-- [Compare Microsoft endpoint security plans](../security/defender-endpoint/defender-endpoint-plan-1-2.md) (for securing and managing devices)
+For more information about what each plan includes, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 

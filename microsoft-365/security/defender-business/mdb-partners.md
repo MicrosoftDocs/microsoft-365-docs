@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 07/19/2023
 ms.reviewer: nehabha
@@ -56,7 +55,7 @@ Use the links in the following table to access the guide and summary checklist:
 
 If you're a Microsoft Managed Service Provider (MSP), you can integrate Microsoft endpoint security with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software so that you can: 
 
-- Get access to your customers' Microsoft 365 Defender portal to [address detected threats and incidents](mdb-respond-mitigate-threats.md).
+- Get access to your customers' Microsoft Defender portal to [address detected threats and incidents](mdb-respond-mitigate-threats.md).
 - Get [email notifications](mdb-email-notifications.md) about new alerts or vulnerabilities across your customers' tenants.
 - Fetch and view [incidents and alerts](mdb-view-manage-incidents.md) with your security information and event management (SIEM) tools.
 - Orchestrate [remediation actions](mdb-review-remediation-actions.md), such as approving actions following automated investigations, or taking manual response actions on a device.

@@ -2,7 +2,7 @@
 title: Team Shifts connector for UKG Pro Workforce Management known issues (Preview)
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: imarquesgil
 ms.topic: troubleshooting
 audience: admin
@@ -17,7 +17,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/2/2023
+ms.date: 10/23/2023
 ---
 
 # Known issues: Team Shifts connector for UKG Pro Workforce Management (Preview)
@@ -36,9 +36,12 @@ The time zone setting of schedules in Shifts is synced from UKG Pro Workforce Ma
 
 To work around this issue, keep the time zone setting as is.
 
-## Nothing happens when users select the "Start a break" and "End break" buttons in Shifts to start or end a break
+## Nothing happens when users try to start a break or manage their time sheet in Shifts
 
-The start and end break capability of the time clock feature isn't supported in an integration with UKG Pro WFM. Users are unable to clock out or clock in to a break, even though the buttons are displayed in Shifts.
+The following time clock capabilities aren't supported in an integration with UKG Pro WFM:
+
+- Start and end a break. Users are unable to clock out or clock in to a break even though the **Start a break** and **End break** buttons are displayed in Shifts.
+- Edit and confirm time sheet records. Users are unable to edit and confirm their clock ins and clock outs through their time sheet even though the button is displayed in Shifts.
 
 ## Availability settings of users don't apply to the current week
 
@@ -54,7 +57,7 @@ The correct, expected behavior is a green check mark to indicate that the cowork
 
 This issue can occur if multiple users use the same device to connect to the Teams Shifts app and require a single sign-on (SSO) in UKG Pro WFM.
 
-For example, user A signs in to Teams, submits a time off request, and signs out. To make the request, user A had to enter their Azure AD credentials for SSO. On the same device, user B signs in to Teams and tries to perform another action in Shifts that requires SSO.
+For example, user A signs in to Teams, submits a time off request, and signs out. To make the request, user A had to enter their Microsoft Entra credentials for SSO. On the same device, user B signs in to Teams and tries to perform another action in Shifts that requires SSO.
 
 In this scenario, an issue occurs in which user B is signed in to Teams and Shifts and user A is still signed in to UKG Pro WFM.
 

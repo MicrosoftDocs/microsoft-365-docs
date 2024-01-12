@@ -1,5 +1,5 @@
 ---
-title: Review remediation actions in Microsoft 365 Defender
+title: Review remediation actions in Microsoft Defender XDR
 description: See how to view remediations that were taken automatically or that are awaiting approval in the Action center.
 search.appverid: MET150
 author: denisebmsft
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.date: 12/05/2022
+ms.date: 10/26/2023
 ms.localizationpriority: medium
 ms.reviewer: efratka
 f1.keywords: NOCSH 
@@ -19,7 +19,7 @@ ms.collection:
 - tier1
 ---
 
-# Review remediation actions in the Microsoft 365 Defender portal
+# Review remediation actions in the Microsoft Defender portal
 
 Okay, you've discovered a security breach, but what do you do? It depends on the nature of it.
 
@@ -37,7 +37,7 @@ Examples of remediation actions include sending a file to quarantine, stopping a
 
 ## How to use your Action center
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
 2. In the navigation pane, choose **Action center**.
 
@@ -53,6 +53,7 @@ The following table lists remediation actions that are available:
 
 | Source  | Actions  |
 |---------|---------|
+| [Automated attack disruption](../security/defender-business/mdb-attack-disruption.md) (NEW!) | - Contain a device<br/>- Contain a user account on a device |
 | [Automated investigations](../security/defender-endpoint/automated-investigations.md)      | - Quarantine a file <br/>- Remove a registry key <br/>- Kill a process <br/>- Stop a service <br/>- Disable a driver <br/>- Remove a scheduled task        |
 | [Manual response actions](../security/defender-endpoint/respond-machine-alerts.md)   | - Run antivirus scan <br/>- Isolate device <br/>- Add an indicator to block or allow a file       |
 | [Live response](../security/defender-endpoint/live-response.md)   | - Collect forensic data <br/>- Analyze a file <br/>- Run a script <br/>- Send a suspicious entity to Microsoft for analysis <br/>- Remediate a file <br/>- Proactively hunt for threats         |

@@ -2,7 +2,7 @@
 title: Ring deployment using Intune and Microsoft Update (MU)
 description: Microsoft Defender Antivirus is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides information about how to use a ring deployment method to update your Microsoft Defender Antivirus clients using Intune and Microsoft Update (MU).
 keywords: deploy Microsoft Defender Antivirus updates, ring deployment Microsoft Defender Antivirus, Microsoft Defender Antivirus Intune Microsoft Defender Antivirus Microsoft Update, Microsoft Defender Antivirus Intune MU, threat intelligence, cybersecurity, cloud security,
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,19 +17,19 @@ ms.collection:
 - mde-ngp
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 07/21/2023
 ---
 
 # Microsoft Defender Antivirus ring deployment using Intune and direct internet access for Microsoft Update
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -43,8 +43,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
->
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
 ## Setting up the pilot environment 
 
@@ -60,7 +58,7 @@ For example, your pilot policy named _MDAV_Settings_Pilot_. If you have a Citrix
 :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-intune-microsoft-defender-antivirus-pilot-policy-settings.png" alt-text="Shows recommended Intune Microsoft Defender Antivirus pilot policy settings." lightbox="images/microsoft-defender-antivirus-deploy-ring-intune-microsoft-defender-antivirus-pilot-policy-settings.png":::
 
 > [!NOTE]
-> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+> Security intelligence update (SIU) is equivalent to signature updates, which is the same as definition updates.
 
 Recommended settings are as follows:
 
@@ -101,15 +99,15 @@ If you encounter problems with your deployment, change the source of the Microso
 
 #### What this change does
 
-It forces Microsoft Defender Antivirus to look for the **Security Intelligence Update**, **Engine Update** or **Platform Update** from a file share that doesn’t exist.
+It forces Microsoft Defender Antivirus to look for the **Security Intelligence Update**, **Engine Update** or **Platform Update** from a file share that doesn't exist.
 
 #### How long does it take for the Intune policy to refresh?
 
-If you update a policy, it’s within a few minutes (3-5 minutes) via WNS, as long the WNS URLs' are open.
+If you update a policy, it's within a few minutes (3-5 minutes) via WNS, as long the WNS URLs' are open.
 
 Reference:   [Intune actions that immediately send a notification to a device](/mem/intune/configuration/device-profile-troubleshoot#intune-actions-that-immediately-send-a-notification-to-a-device)
 
-After the issue is resolved, set the “Signature Update Fallback Order” back to the original setting"
+After the issue is resolved, set the "Signature Update Fallback Order" back to the original setting"
 
 `InternalDefinitionUpdateServder|MicrosoftUpdateServer|MMPC|FileShare`
 

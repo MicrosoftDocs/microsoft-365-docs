@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Antivirus in the Windows Security app
 description: With Microsoft Defender Antivirus now included in the Windows Security app, you can review, compare, and perform common tasks.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
@@ -9,7 +9,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
@@ -101,7 +101,7 @@ To learn more, see the following resources:
 - [Configure and validate exclusions based on file extension and folder location](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## Review threat detection history in the Windows Defender for Cloud app
+## Review threat detection history in the Windows Defender app
 
 1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
@@ -126,3 +126,5 @@ To learn more, see the following resources:
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+

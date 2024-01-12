@@ -49,7 +49,13 @@ Admin can enable the feature with the help of cmdlet `Set-OrganizationConfig -Is
   > 
   > - Message level actions Copy/Move will be blocked.
 
-Once the feature is enabled, by default only owner of the group has the permission to create folder, rename folder, move and copy messages across folders.
+To enable the **Folders and Rules** feature for Microsoft 365 Groups in Outlook, you can use the following cmdlet:
+
+```powershell
+Set-OrganizationConfig -IsGroupFoldersAndRulesEnabled $true
+```
+
+Once the feature is enabled, by default, only the group owner has permission to create folders, rename folders, and move and copy messages across folders.
   
 ## Enable member permission option
 
@@ -67,7 +73,13 @@ Admin can enable the member permission to the tenant using the cmdlet `IsGroupMe
 
    Default value: false
 
-Once this is enabled, group owners can provide group members with the ability to create folders, rename folders, copy, move, and delete messages by navigating to the group from Outlook > **Settings** > **Edit Group** > and selecting the option **All members will be able to create, edit, move, copy, and delete mail folders and rules within the group**. Group level member permission is handled by group owners.
+To enable the **Enable member permission** option, you can use the following cmdlet:
+
+```powershell
+Set-OrganizationConfig -IsGroupMemberAllowedToEditContent $true
+```
+
+Once this option is enabled, group owners can provide group members with the ability to create folders, rename folders, and copy, move, and delete messages by navigating to the group from Outlook > **Settings** > **Edit Group** > and selecting the option **All members will be able to create, edit, move, copy, and delete mail folders and rules within the group**. Group-level member permission is handled by group owners.
 
 > [!NOTE]
 > Admins can see the current value of the settings using `Get-OrganizationConfig` cmdlet.
@@ -84,8 +96,14 @@ Admins can block the **Move** message option for all Microsoft 365 groups within
 
    Default value: false
 
+To block the **Move message** capability, you can use the following cmdlet:
+
+```powershell
+Set-OrganizationConfig -BlockMoveMessagesForGroupFolders $true
+```
+
 > [!NOTE]
-> Creation of **Move** rule is also disabled when `BlockMoveMessagesForGroupFolders` is enabled.
+> Creation of the **Move** rule is also disabled when `BlockMoveMessagesForGroupFolders` is enabled.
 
 > [!NOTE]
 > This is useful if there are mixed set of users using Outlook on Web and Outlook Desktop App. For users on Outlook Desktop App where folders are not available, they can get the messages from group inbox. 

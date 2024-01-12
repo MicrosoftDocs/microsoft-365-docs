@@ -2,19 +2,16 @@
 title: Microsoft Defender Antivirus in Windows
 description: Learn how to manage, configure, and use Microsoft Defender Antivirus, built-in antimalware and antivirus protection.
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
-ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 10/03/2022
+ms.date: 12/05/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: mkaminska
+ms.reviewer: mkaminska, yonghree, pahuijbr
 manager: dansimp
 ms.custom: nextgen
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
@@ -40,6 +37,42 @@ Microsoft Defender Antivirus is a major component of your next-generation protec
 ## Compatibility with other antivirus products
 
 If you're using a non-Microsoft antivirus/antimalware product on your device, you might be able to run Microsoft Defender Antivirus in passive mode alongside the non-Microsoft antivirus solution. It depends on the operating system used and whether your device is onboarded to Defender for Endpoint. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+
+## Microsoft Defender Antivirus processes and services
+
+The following table summarizes Microsoft Defender Antivirus processes and services. You can view them in Task Manager in Windows.
+
+| Process or service | Where to view its status |
+|--|--|
+| **Microsoft Defender Antivirus Core service** <br/>(`MdCoreSvc`) | - **Processes** tab: `Antimalware Core Service` <br/>- **Details** tab: `MpDefenderCoreService.exe` <br/>- **Services** tab: `Microsoft Defender Core Service` | 
+| **Microsoft Defender Antivirus service** <br/>(`WinDefend`) | - **Processes** tab: `Antimalware Service Executable` <br/>- **Details** tab: `MsMpEng.exe` <br/>- **Services** tab: `Microsoft Defender Antivirus` | 
+| **Microsoft Defender Antivirus Network Realtime Inspection service** <br/>(`WdNisSvc`) |  - **Processes** tab: `Microsoft Network Realtime Inspection Service` <br/>- **Details** tab: `NisSrv.exe` <br/>- **Services** tab: `Microsoft Defender Antivirus Network Inspection Service` | 
+| **Microsoft Defender Antivirus command-line utility** | - **Processes** tab: N/A <br/>- **Details** tab: `MpCmdRun.exe` <br/>- **Services** tab: N/A  | 
+| **Microsoft Security Client Policy Configuration Tool** | - **Processes** tab: N/A <br/>- **Details** tab: `ConfigSecurityPolicy.exe` <br/>- **Services** tab: N/A | 
+
+For [Microsoft Endpoint Data Loss Prevention](/purview/endpoint-dlp-getting-started) (Endpoint DLP), the following table summarizes processes and services. You can view them in Task Manager in Windows.
+
+| Process or service | Where to view its status |
+|--|--|
+| **Microsoft Endpoint DLP service** <br/>(`MDDlpSvc`) | - **Processes** tab: `MpDlpService.exe` <br/>- **Details** tab: `MpDlpService.exe` <br/>- **Services** tab: `Microsoft Data Loss Prevention Service` |
+| **Microsoft Endpoint DLP command-line utility**  | - **Processes** tab: N/A <br/>- **Details** tab: `MpDlpCmd.exe` <br/>- **Services** tab: N/A |
+
+## Microsoft Defender Core service
+
+To enhance your endpoint security experience, Microsoft is releasing the Microsoft Defender Core service to help with the stability and performance of Microsoft Defender Antivirus. For customers who are using Microsoft Endpoint Data Loss Prevention in the small, medium, and enterprise business sectors, Microsoft is splitting the codebase to its own service.  
+
+The Microsoft Defender Core service is releasing with [Microsoft Defender Antivirus platform version 4.18.23110.2009](microsoft-defender-antivirus-updates.md#october-2023-platform-418231002009--engine-11231002009).
+
+- Rollout begins in November 2023 to prerelease customers, with plans to release to all enterprise customers in the coming months.
+
+- Enterprise customers should allow the following URLs:
+   - `*.events.data.microsoft.com`
+   - `*.endpoint.security.microsoft.com`
+   - `*.ecs.office.com` 
+
+- If you're using [Application Control for Windows](/windows/security/application-security/application-control/windows-defender-application-control/wdac), or you're running non-Microsoft antivirus or endpoint detection and response software, make sure to add the processes mentioned earlier to your allow list. 
+
+- Consumers need not take any actions to prepare. 
 
 ## Comparing active mode, passive mode, and disabled mode
 

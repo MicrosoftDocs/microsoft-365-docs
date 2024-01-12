@@ -63,5 +63,4 @@ Depending on the ISV app that you bought, your next step might be to install the
 
 ## Related content
 
-[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article) \
-[Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)
+[Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md) (article)

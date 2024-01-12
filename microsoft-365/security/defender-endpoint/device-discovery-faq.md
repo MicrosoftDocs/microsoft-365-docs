@@ -2,14 +2,14 @@
 title: Device discovery frequently asked questions
 description: Find answers to frequently asked questions (FAQs) about device discovery
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,20 +17,19 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 03/23/2021
 ---
 
 # Device discovery frequently asked questions
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -69,12 +68,13 @@ The discovery engine distinguishes between network events that are received in t
 ## What protocols are you capturing and analyzing?
 
 By default, all onboarded devices running on Windows 10 version 1809 or later, Windows 11, Windows Server 2019, or Windows Server 2022 are capturing and analyzing the following protocols:
-ARP, CDP, DHCP, DHCPv6, IP (headers), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (SYN headers), UDP (headers), WSD
+ARP, CDP, DHCP, DHCPv6, IP (headers), LLDP, LLMNR, mDNS, MNDP, MSSQL, NBNS, SSDP, TCP (SYN headers), UDP (headers), WSD
 
 ## Which protocols do you use for active probing in Standard discovery?
 When a device is configured to run Standard discovery, exposed services are being probed by using the following protocols:
 ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP, LDAP
 
+In addition, device discovery might also scan other commonly used ports to improve classification accuracy & coverage.
 
 ## How can I exclude targets from being probed with Standard discovery?
 
@@ -130,7 +130,7 @@ Unmanaged devices would typically get probed no more than once in a three-week p
 
 Active discovery capabilities have always been embedded in the Windows operating system, to find nearby devices, endpoints, and printers, for easier "plug and play" experiences and file sharing between endpoints in the network. Similar functionality is implemented in mobile devices, network equipment and inventory applications just to name a few.  
 
-Standard discovery uses the same discovery methods to identify devices and to have a unified visibility for all the devices in your network in the Microsoft 365 Defender Device Inventory. For example – Standard discovery identifies nearby endpoints in the network the same way Windows lists available printers in the network. 
+Standard discovery uses the same discovery methods to identify devices and to have a unified visibility for all the devices in your network in the Microsoft Defender XDR Device Inventory. For example – Standard discovery identifies nearby endpoints in the network the same way Windows lists available printers in the network. 
 
 Network security and monitoring tools are indifferent to such activities performed by devices on the network. 
 

@@ -5,7 +5,7 @@ ms.date: 07/18/2023
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions

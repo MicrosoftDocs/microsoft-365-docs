@@ -3,7 +3,7 @@ title: Assign Microsoft 365 licenses to user accounts with PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/19/2022
+ms.date: 10/16/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -35,7 +35,7 @@ Users can't use any Microsoft 365 services until their account has been assigned
 
 User accounts must first be assigned a location. Specifying a location is a required part of creating a new user account in the [Microsoft 365 admin center](../admin/add-users/add-users.md). 
 
-Accounts synchronized from your on-premises Active Directory Domain Services do not by default have a location specified. You can configure a location for these accounts from:
+Accounts synchronized from your on-premises Active Directory Domain Services don't by default have a location specified. You can configure a location for these accounts from:
 
 - The Microsoft 365 admin center
 - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
@@ -263,7 +263,7 @@ Next, ensure that the user account has a usage location assigned.
 Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
 ```
 
-If there is no usage location assigned, you can assign one with these commands:
+If there's no usage location assigned, you can assign one with these commands:
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -283,7 +283,7 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
 >[!Note]
 >The Set-MsolUserLicense and New-MsolUser (-LicenseAssignment) cmdlets are scheduled to be retired. Please migrate your scripts to the Microsoft Graph SDK's Set-MgUserLicense cmdlet as described above. For more information, see [Migrate your apps to access the license managements APIs from Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
@@ -294,7 +294,7 @@ First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershel
 Run the `Get-MsolAccountSku` command to view the available licensing plans and the number of available licenses in each plan in your organization. The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. For more information about licensing plans, licenses, and services, see [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 >[!Note]
->PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+>PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
 >
 
 To find the unlicensed accounts in your organization, run this command.

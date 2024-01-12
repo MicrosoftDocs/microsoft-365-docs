@@ -4,7 +4,7 @@ description: Learn how you can use Viva Connections and Viva Engage to connect y
 ms.topic: conceptual
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 f1.keywords:
 - NOCSH

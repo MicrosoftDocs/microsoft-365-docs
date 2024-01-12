@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse audit logs record actions that generate a change in Lig
 
 To view audit logs, you must have one of the following permissions:
 
-- Azure Active Directory (Azure AD) role - Global Administrator of partner tenant
+- Microsoft Entra role - Global Administrator of partner tenant
 
 - Microsoft Partner Center role - Admin Agent
 
@@ -58,7 +58,7 @@ The following table lists activities captured within Lighthouse audit logs. The 
 
 | Activity name | Area in Lighthouse | Action initiated | Service impacted |
 |--|--|--|--|
-| **apply** or **deploy** | Tenants | Apply a deployment plan | Azure AD, Microsoft Intune |
+| **apply** or **deploy** | Tenants | Apply a deployment plan | Microsoft Entra ID, Microsoft Intune |
 | **assignTag** | Tenants | Apply a tag from a customer | Lighthouse |
 | **changeDeploymentStatus** or **assign** | Tenants | Update action plan status for deployment plan | Lighthouse |
 | **offboardTenant** | Tenants | Inactivate a customer | Lighthouse |
@@ -66,12 +66,12 @@ The following table lists activities captured within Lighthouse audit logs. The 
 | **tenantTags** | Tenants | Create or delete a tag | Lighthouse |
 | **tenantCustomizedInformation** | Tenants | Create, update, or delete a customer website or contact information | Lighthouse |
 | **unassignTag** | Tenants | Remove a tag from a customer | Lighthouse |
-| **validate** | Tenants | Test a deployment plan | Azure AD |
-| **blockUserSignin** | Users | Block sign-in | Azure AD |
-| **confirmUsersCompromised** | Users | Confirm a user is compromised | Azure AD |
-| **dismissUsersRisk** | Users | Dismiss user risk | Azure AD |
-| **resetUserPassword** | Users | Reset password | Azure AD |
-| **setCustomerSecurityDefaultsEnabledStatus** | Users | Enable multifactor authentication (MFA) with security defaults | Azure AD |
+| **validate** | Tenants | Test a deployment plan | Microsoft Entra ID |
+| **blockUserSignin** | Users | Block sign-in | Microsoft Entra ID |
+| **confirmUsersCompromised** | Users | Confirm a user is compromised | Microsoft Entra ID |
+| **dismissUsersRisk** | Users | Dismiss user risk | Microsoft Entra ID |
+| **resetUserPassword** | Users | Reset password | Microsoft Entra ID |
+| **setCustomerSecurityDefaultsEnabledStatus** | Users | Enable multifactor authentication (MFA) with security defaults | Microsoft Entra ID |
 | **restartDevice** | Devices | Restart | Microsoft Intune |
 | **syncDevice** | Devices | Sync | Microsoft Intune |
 | **rebootNow** | Threat management | Reboot | Microsoft Intune |
@@ -88,4 +88,4 @@ Use Microsoft Graph API to access more audit events, if needed. For more informa
 
 [Overview of the Alerts page](m365-lighthouse-alerts-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
-[View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)
+[View your Microsoft Entra roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)

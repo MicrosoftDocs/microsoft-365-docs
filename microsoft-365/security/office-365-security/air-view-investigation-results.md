@@ -20,17 +20,17 @@ ms.date: 06/09/2023
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Details and results of an automated investigation in Microsoft 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-When an [automated investigation](air-about.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
+When an [automated investigation](air-about.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
 
 > [!TIP]
-> Check out the new, unified investigation page in the Microsoft 365 Defender portal. To learn more, see [(NEW!) Unified investigation page](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Check out the new, unified investigation page in the Microsoft Defender portal. To learn more, see [(NEW!) Unified investigation page](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## Investigation status
 
@@ -52,7 +52,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 ## View details of an investigation
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Go to the Microsoft Defender portal (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Actions & submissions** \> **Action center**.
 3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
 4. In the flyout pane, select **Open investigation page**.
@@ -62,7 +62,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [alert policies that trigger automated investigations](air-about.md#which-alert-policies-trigger-automated-investigations).
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Go to the Microsoft Defender portal (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Action center**.
 3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
 4. In the flyout pane, select **Open investigation page**.

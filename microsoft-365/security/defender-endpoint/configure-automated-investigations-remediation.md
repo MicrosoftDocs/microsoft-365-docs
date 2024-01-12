@@ -1,8 +1,8 @@
 ---
 title: Configure automated investigation and remediation capabilities
 description: Set up your automated investigation and remediation capabilities in Microsoft Defender for Endpoint.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: edr
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
@@ -21,7 +21,7 @@ ms.date: 07/14/2023
 # Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint
 
 **Applies to:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 If your organization is using [Defender for Endpoint](/windows/security/threat-protection/) (or [Defender for Business](../defender-business/mdb-overview.md)), [automated investigation and remediation capabilities](/microsoft-365/security/defender-endpoint/automated-investigations) can save your security operations team time and effort. As outlined in [this blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946), these capabilities mimic the ideal steps that a security analyst takes to investigate and remediate threats. [Learn more about automated investigation and remediation](/microsoft-365/security/defender-endpoint/automated-investigations).
@@ -33,7 +33,7 @@ If you're using Defender for Endpoint, you can specify an automation level so th
 
 ## Set up device groups
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), on the **Settings** page, under **Permissions**, select **Device groups**.
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), on the **Settings** page, under **Permissions**, select **Device groups**.
 
 2. Select **+ Add device group**.
 

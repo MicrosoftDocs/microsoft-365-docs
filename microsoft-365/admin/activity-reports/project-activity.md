@@ -55,7 +55,7 @@ The **Project activity** report can be viewed for trends over the last 7 days, 3
 
 ### Privacy settings impact on the dashboard
 
-If users or admins have their privacy settings set to **Neither**, we do not have accurate metrics for the **Project activity** chart for the Project Online desktop client. The numbers shown will be undercounted. For more information on privacy settings, see [Use policy settings to manage privacy controls for for Microsoft 365 Apps for enterprise](/deployoffice/privacy/manage-privacy-controls).
+If users or admins have their privacy settings set to **Neither**, we do not have accurate metrics for the **Project activity** chart for the Project Online desktop client. The numbers shown will be undercounted. For more information on privacy settings, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/manage-privacy-controls).
 
 ## User activity table
 
@@ -68,7 +68,7 @@ The following are definitions for each metric in the user activity table.
 |Display name|The full name of the user.|
 |Last activity date|The latest date the user in that row had activity in Project, including any of the activities in the summary reports.|
 |Projects visited (Desktop)|The number of projects opened by the user in the Project Online desktop client during the time range selected in the top right of the page.|
-|Projects visited (Web)| The number of tasks created by the user in Project for the Web during the time range selected in the top right of the page.|
+|Projects visited (Web)| The number of projects visited by the user in Project for the Web during the time range selected in the top right of the page.|
 |Tasks created (Web)|The number of tasks created by the user in Project for the Web during the time range selected in the top right of the page.|
 |Tasks edited (Web)|The number of tasks edited by the user in Project for the Web during the time range selected in the top right of the page.|
 |Other|This value is true if the user has performed an activity in Project Online desktop client or in Project for the Web (that is not covered by the other columns) in the time range selected in the top right of the page. If the user has not, this value is false.|

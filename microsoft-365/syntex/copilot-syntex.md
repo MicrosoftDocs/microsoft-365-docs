@@ -2,7 +2,7 @@
 title: Overview of Syntex File Q&A for Copilot (Preview)
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: ssquires
 ms.date: 07/24/2023

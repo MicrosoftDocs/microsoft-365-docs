@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: shcallaw, kywirpel
+ms.reviewer: shcallaw
 ms.date: 08/16/2023
 audience: Admin
 ms.topic: article
@@ -22,7 +22,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to create a custom baseline."
 ---
 
-# Create baselines in Microsoft 365 Lighthouse
+# Create a baseline in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse empowers you to create your own baselines to deploy to customer tenants. Create your own baselines to accommodate customers with varying degrees of tenant maturity, customers from different industries, customers that have subscribed to different managed services from your company, or customers with varying licensing models.
 
@@ -52,16 +52,6 @@ To clone an existing baseline:
 > [!NOTE]
 > The new baseline will be the name of the baseline from which it was cloned with "(1)" added to the end.
 
-To import a baseline:
-
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
-
-2. Select **Import**.
-
-3. Select the desired baseline file.
-
-4. Select **Import**.
-
 To create a new baseline:
 
 1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
@@ -72,8 +62,26 @@ To create a new baseline:
 
 4. Select **Create**.
 
+To import a baseline:
+
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
+
+2. Select **Import**.
+
+3. Select the desired baseline file.
+
+4. Select **Import**.
+
 > [!NOTE]
 > Baselines can be edited, deleted, and exported from the page. The Default baseline can't be edited or deleted.
+>
+> All baselines, except for the default baseline, can be exported from Lighthouse as JSON files. Baselines can also be imported into Lighthouse by selecting a JSON file that has been:
+>
+>- Extracted from Lighthouse
+>- Extracted from Lighthouse and then edited
+>- Created outside of Lighthouse
+>
+>For more information, see [View formatted JSON](/microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer).
 
 ## Add deployment task to a baseline
 

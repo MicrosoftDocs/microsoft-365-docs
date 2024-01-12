@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint tech community
-description: Microsoft 365 Defender tech community engagement.
+description: Microsoft Defender XDR tech community engagement.
 ms.date: 07/21/2023
 ms.reviewer: 
 manager: dansimp

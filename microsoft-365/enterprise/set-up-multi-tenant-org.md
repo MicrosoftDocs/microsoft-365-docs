@@ -22,7 +22,7 @@ description: Learn how to set up a multitenant org in Microsoft 365.
 
 You can set up a multitenant organization or add tenants to an existing one in the Microsoft 365 admin center.
 
-When each external tenant accepts the invitation to join the multitenant organization, the following settings are configured in Azure AD:
+When each external tenant accepts the invitation to join the multitenant organization, the following settings are configured in Microsoft Entra ID:
 
 - A cross-tenant synchronization configuration is added with the name *MTO_Sync_\<TenantID\>*, but no sync jobs are created yet. (If you already have a cross-tenant synchronization configuration, it remains unchanged.)
 - An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the [multitenant organization templates](/azure/active-directory/multi-tenant-organizations/templates) for cross-tenant access and identity synchronization. (If an organizational relationship already exists, the existing one is used.)
@@ -33,8 +33,8 @@ When each external tenant accepts the invitation to join the multitenant organiz
 
 To set up a new multitenant org in Microsoft 365
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Get started**.
 1. Select **Create a new multitenant organization**, and then select **Next**.
@@ -52,8 +52,8 @@ The next step after each external tenant accepts the invitation to join the mult
 
 To add a tenant to your multitenant organization
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Add new tenants**.
 1. Enter the tenant IDs of the tenants you want to add, and then select **Add tenant**.
@@ -71,4 +71,3 @@ The next step after each external tenant accepts the invitation to join the mult
 [Join or leave a multitenant organization in Microsoft 365](join-leave-multi-tenant-org.md)
 
 [Synchronize users in multitenant organizations in Microsoft 365](sync-users-multi-tenant-orgs.md)
-

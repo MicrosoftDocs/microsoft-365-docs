@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/17/2021
+ms.date: 11/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -23,10 +23,6 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "You can remove a former employee's Microsoft 365 license, and then delete it from your subscription or assign the license to another user."
 ---
 
@@ -38,11 +34,15 @@ If the mailbox needs to be accessed by authorized people who have been granted e
   
 When you remove the license, all that user's data is held for 30 days. You can [access](get-access-to-and-back-up-a-former-user-s-data.md) the data, or [restore](restore-user.md) the account if the user comes back. After 30 days, all the user's data (except for documents stored on SharePoint Online) is permanently deleted from Microsoft 365 and can't be recovered.
 
+## Remove licenses
+
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the name of the employee that you want to block, and then select the **Licenses and Apps** tab.
 3. Clear the check boxes for the license(s) you want to remove, and then select **Save changes**.
 
-**To reduce the number of licenses you're paying for** until you hire another person, do the following steps:
+### Reduce the number of licenses
+
+To reduce the number of licenses you're paying for until you hire another person, do the following steps:
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, and select the **Products** tab.
 2. Select the subscription from which you want to remove licenses.
@@ -52,9 +52,9 @@ When you remove the license, all that user's data is held for 30 days. You can [
 
 When you [add another person](add-users.md) to your business, you'll be prompted to buy a license at the same time, with just one step!
 
-For more information about managing user licenses for Microsoft 365 for business, see [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md), and [Unassign licenses from users in Microsoft 365 for business](../manage/remove-licenses-from-users.md).
+For more information about managing user licenses for Microsoft 365 for business, see [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md), and [Assign or unassign licenses for users in the Microsoft 365 admin center](../manage/assign-licenses-to-users.md).
   
-## How the deleted employee account affects Skype for Business
+## How the deleted employee account affects their PTSN number
 
 When you remove a user's license from Microsoft 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
@@ -62,4 +62,4 @@ If the user belongs to a queue group, they will no longer be a viable target of 
 
 ## Set up call forwarding to people in your organization
 
-If you need to set up call forwarding for the terminated employee's phone number, the call forwarding setting under calling policies can set up forwarding where incoming calls can be forwarded to other users or can ring another person at the same time. For more information, see [Calling policies in Microsoft Teams](/microsoftteams/teams-calling-policy).
+If you need to set up call forwarding for the terminated employee's phone number, the call forwarding setting under calling policies can be set up forwarding. Incoming calls can be forwarded to other users or can ring another person at the same time. For more information, see [Calling policies in Microsoft Teams](/microsoftteams/teams-calling-policy).

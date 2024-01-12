@@ -1,15 +1,15 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Printer Protection
 description: Microsoft Defender for Endpoint Device Control Printer Protection blocks people from printing via non-corporate printers or non-approved USB printer.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 07/11/2023
+ms.date: 10/25/2023
 ms.author: dansimp
 author: dansimp
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
-ms.subservice: mde
+ms.subservice: asr
 ms.topic: conceptual
 ms.collection: 
 - m365-security
@@ -135,7 +135,7 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
 ## View Device Control Printer Protection data in Microsoft Defender for Endpoint portal
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> shows printing blocked by the Device Control Printer Protection policy above.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> shows printing blocked by the Device Control Printer Protection policy above.
 
 ```kusto
 DeviceEvents

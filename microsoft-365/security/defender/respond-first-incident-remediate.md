@@ -1,10 +1,9 @@
 ---
-title: Remediate your first incident in Microsoft 365 Defender
-description: How to get started in remediating your first incident in Microsoft 365 Defender.
+title: Remediate your first incident in Microsoft Defender XDR
+description: How to get started in remediating your first incident in Microsoft Defender XDR.
 keywords: incidents, alerts, attack story, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, incident response, remediation, remediate attack, remediate incident
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -27,27 +26,27 @@ search.appverid:
 ms.date: 08/21/2023
 ---
 
-# Remediate your first incident in Microsoft 365 Defender
+# Remediate your first incident in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-Microsoft 365 Defender provides detection and analysis capabilities to ensure containment and eradication of threats. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network.
+Microsoft Defender XDR provides detection and analysis capabilities to ensure containment and eradication of threats. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network.
 
-Remediation in Microsoft 365 Defender can be automated or through manual actions taken by incident responders. Remediation actions can be taken on devices, files, and identities.
+Remediation in Microsoft Defender XDR can be automated or through manual actions taken by incident responders. Remediation actions can be taken on devices, files, and identities.
 
 ## Automatic remediation
 
-Microsoft 365 Defender leverages its threat intelligence and the signals within your network to combat the most disruptive attacks. Ransomware, business email compromise (BEC), and adversary-in-the-middle (AiTM) phishing are some of the most complex attacks that can be contained immediately through [automatic attack disruption](automatic-attack-disruption.md) capability. Once an attack has been disrupted, incident responders can take over and fully investigate an attack and apply the required remediation.
+Microsoft Defender XDR leverages its threat intelligence and the signals within your network to combat the most disruptive attacks. Ransomware, business email compromise (BEC), and adversary-in-the-middle (AiTM) phishing are some of the most complex attacks that can be contained immediately through [automatic attack disruption](automatic-attack-disruption.md) capability. Once an attack has been disrupted, incident responders can take over and fully investigate an attack and apply the required remediation.
 
 Learn how automatic attack disruption helps in incident response:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10OoF]
 
-Meanwhile, Microsoft 365 Defender’s [automated investigation and response](m365d-autoir.md) capabilities can automatically investigate and apply remediation actions to malicious and suspicious items. These capabilities scale investigation and resolution to threats, freeing incident responders to focus their efforts on high-impact attacks.
+Meanwhile, Microsoft Defender XDR's [automated investigation and response](m365d-autoir.md) capabilities can automatically investigate and apply remediation actions to malicious and suspicious items. These capabilities scale investigation and resolution to threats, freeing incident responders to focus their efforts on high-impact attacks.
 
 You can [configure](m365d-configure-auto-investigation-response.md) and [manage](m365d-autoir-actions.md) automated investigation and response capabilities. You can also view all past and pending actions through the [Action center](m365d-action-center.md).
 
@@ -111,11 +110,11 @@ The following tutorials enumerate steps and actions that you can apply when inve
 ## Next steps
 
 -	[Simulate attacks through the attack simulation training](eval-defender-investigate-respond-simulate-attack.md)
-- Explore Microsoft 365 Defender through the [Virtual Ninja training](https://adoption.microsoft.com/ninja-show/)
+- Explore Microsoft Defender XDR through the [Virtual Ninja training](https://adoption.microsoft.com/ninja-show/)
 
 ## See also
 
 - [Investigate incidents](investigate-incidents.md)
-- Learn the portal's features and functions through the [Microsoft 365 Defender Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
+- Learn the portal's features and functions through the [Microsoft Defender XDR Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -2,7 +2,7 @@
 title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint on Mac
 description: Install Microsoft Defender for Endpoint on Mac on other management solutions.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, macos,  big sur, monterey, ventura, mde or mac
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,20 +16,20 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint on macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
  
@@ -65,7 +65,7 @@ Most MDM solutions use the same model for managing macOS devices, with similar t
 ### Package
 
 Configure deployment of a [required application package](mac-install-with-jamf.md), 
-with the installation package (wdav.pkg) downloaded from [Microsoft 365 Defender portal](mac-install-with-jamf.md).
+with the installation package (wdav.pkg) downloaded from [Microsoft Defender portal](mac-install-with-jamf.md).
 
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
@@ -79,7 +79,7 @@ Set up [a system configuration profile](mac-install-with-jamf.md).
 
 Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender for Endpoint on macOS isn't part of macOS.
 
-Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft 365 Defender portal](mac-install-with-jamf.md).
+Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender portal](mac-install-with-jamf.md).
 Your system may support an arbitrary property list in XML format. You can upload the jamf/WindowsDefenderATPOnboarding.plist file as-is in that case.
 Alternatively, it may require you to convert the property list to a different format first.
 

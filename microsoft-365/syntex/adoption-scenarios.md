@@ -2,7 +2,7 @@
 title: Scenarios and use cases for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: lauris
 ms.date: 06/09/2023
 audience: admin

@@ -21,7 +21,7 @@ description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
 Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, create a calendar, and allow other people to book time with them. This article is for owners and administrators who manage Bookings for their organizations.
 
 > [!NOTE]
-> The admin controls described in these sections aren't available for Office 365 Operated by 21Vianet (China) customers.
+> The admin controls described in these sections aren't available for Microsoft 365 Operated by 21Vianet (China) customers.
 
 ## Turn Bookings on or off for your organization using the Microsoft 365 admin center
 
@@ -51,7 +51,7 @@ Use the settings below to control who can use Bookings, decide on what Bookings 
 :::image type="content" source="../media/bookings-granular-controls.png" alt-text="Screenshot of settings that allow you to control who can use Bookings, decide what Bookings info is shared, staff approval, and naming policy.":::
 
 >[!NOTE]
-> Changes to all tenant settings, such as "block bookings from outside the organization" or "require staff approvals," may take up to 30 minutes to apply.
+> Changes to all tenant settings, such as "block bookings from outside the organization" or "require staff approvals," may take up to four hours to apply.
 
 ### Block bookings from outside your organization
 

@@ -41,7 +41,7 @@ It's a great time to explore your options and prepare a migration plan. You can:
 - Upgrade Exchange 2013. Move to Exchange 2019 for your on-premises servers.
 
 > [!IMPORTANT]
-> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep using Azure AD Connect to manage user accounts in Active Directory, you need to keep at least one Microsoft Exchange server on-premises. If you remove all Exchange servers, you won't be able to make changes to Exchange recipients in Exchange Online because the source of authority is your on-premises Active Directory. In this scenario, you have the following options:
+> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep using Microsoft Entra Connect to manage user accounts in Active Directory, you need to keep at least one Microsoft Exchange server on-premises. If you remove all Exchange servers, you won't be able to make changes to Exchange recipients in Exchange Online because the source of authority is your on-premises Active Directory. In this scenario, you have the following options:
 >
 >- *Recommended:* Migrate your mailboxes to Microsoft 365 and upgrade your environment to Exchange 2019 by April 11, 2023. Use Exchange 2013 to connect to Microsoft 365 and migrate mailboxes. Next, upgrade from Exchange 2013 to Exchange 2019, and decommission servers running Exchange 2013.
 >- If you can't complete a migration to Exchange Online and upgrade your on-premises servers by April 11, 2023, upgrade from Exchange 2013 to Exchange 2019 first and then use  Exchange 2019 to migrate mailboxes to Microsoft 365.
@@ -144,13 +144,13 @@ Full hybrid migrations are best for organizations that expect to stay in a hybri
 Things to consider about full-hybrid migration:
 
 - They aren't suited to all organizations. Due to the complexity of full hybrid migrations, organizations with less than a few hundred mailboxes don't typically see benefits that justify the effort and cost involved. In such cases, we recommend that you consider cutover or minimal hybrid migration instead.
-- You need to set up directory synchronization using Azure Active Directory (Azure AD) Connect between your on-premises Active Directory servers and Microsoft 365.
-- Users will be able to sign in to their Microsoft 365 mailbox with same user name and password they use when they sign in to the local network. (This functionality requires Azure AD Connect with password synchronization and/or Active Directory Federation Services).
+- You need to set up directory synchronization using Microsoft Entra Connect between your on-premises Active Directory servers and Microsoft 365.
+- Users will be able to sign in to their Microsoft 365 mailbox with same user name and password they use when they sign in to the local network. (This functionality requires Microsoft Entra Connect with password synchronization and/or Active Directory Federation Services).
 - You need a Microsoft 365 license that includes Exchange Online for each user mailbox you migrate.
 - Users don't need to set up a new Outlook profile on most of their devices, although some older Android phones might need a new profile. Users won't need to redownload their email.
 
 > [!IMPORTANT]
-> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep Azure AD Connect to manage user accounts in Active Directory, you need to keep at least one Exchange server on-premises. If all Exchange servers are removed, you won't be able to make changes to Exchange recipients. This is because the source of authority is  Active Directory and changes need to be made there.
+> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep Microsoft Entra Connect to manage user accounts in Active Directory, you need to keep at least one Exchange server on-premises. If all Exchange servers are removed, you won't be able to make changes to Exchange recipients. This is because the source of authority is  Active Directory and changes need to be made there.
 
 If a full hybrid migration sounds right for you, see the following helpful resources:
 

@@ -2,7 +2,7 @@
 title: Compare custom models in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: lauris
 ms.date: 06/12/2023
 audience: admin
@@ -29,9 +29,9 @@ Use the following table to see differences in custom models to help identify the
 | Locations | Can be applied to multiple libraries. | Can be applied to multiple libraries. | Can be applied to multiple libraries. |
 | Supported file types | Train on 5-10 .pdf, Office, or email files, including negative examples.<br>Files are truncated at 64,000 characters. OCR-scanned files are limited to 20 pages. Supports more than 20 file types. See [supported file types](requirements-and-limitations.md#unstructured-document-processing).  | Train on .pdf, .jpg, or .png format, total 50 MB and 500 pages. | Train on .pdf, .jpg, or .png format, total 50 MB and 500 pages. |
 | Integrate with managed metadata | Yes, by training entity extractor referencing a configured managed metadata field. | No | No |
-| Compliance feature integration with Microsoft Purview Information Protection | Set published retention labels.<br>Set published sensitivity labels. | Set retention labels is coming. <br>Set sensitivity labels is coming. | Set published retention labels. <br>Set sensitivity labels is coming. |
+| Compliance feature integration with Microsoft Purview Information Protection | Set published retention labels.<br>Set published sensitivity labels. | Set published retention labels. <br>Set published sensitivity labels. | Set published retention labels. <br>Set published sensitivity labels. |
 | Supported regions| Available in all regions. | Relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). |
-| Transactional cost | Not applicable | For per-user licensing, uses AI Builder credits. 3,500 credits are included for each Syntex license per month. One million credits will allow processing of 10,000 file pages.<br>For pay-as-you-go licensing, not applicable. | For per-user licensing, uses AI Builder credits. 3,500 credits are included for each Syntex license per month. One million credits will allow processing of 10,000 file pages.<br>For pay-as-you-go licensing, not applicable. |
+| Transactional cost | Not applicable | For pay-as-you-go licensing, not applicable. <br>If you still have per-user licensing, uses AI Builder credits. 3,500 credits are included for each Syntex license per month. One million credits allow processing of 10,000 file pages. | For pay-as-you-go licensing, not applicable. <br>If you still have per-user licensing, uses AI Builder credits. 3,500 credits are included for each Syntex license per month. One million credits allow processing of 10,000 file pages.|
 | Capacity | No capacity restrictions. | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Uses the default Power Platform environment (custom environments with Dataverse database supported). |
 | Supported languages| Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. | Current language support is for English. | Language support for [more than 100 languages](/ai-builder/form-processing-model-requirements#languages-supported). |
 

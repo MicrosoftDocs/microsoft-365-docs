@@ -34,22 +34,24 @@
   items:
     - name: Buy or remove subscription licenses
       href: licenses/buy-licenses.md
-    - name: Assign licenses to users
+    - name: Assign or unassign licenses for users
       href: ../admin/manage/assign-licenses-to-users.md
-    - name: Unassign licenses from users
-      href: ../admin/manage/remove-licenses-from-users.md
     - name: Move users to a different subscription
       href: subscriptions/move-users-different-subscription.md
     - name: Manage ISV app licenses
       href: licenses/manage-third-party-app-licenses.md
     - name: Manage auto-claim policies
       href: licenses/manage-auto-claim-policies.md
+    - name: Understand Microsoft 365 E3 and E5 Extra Features licenses
+      href: licenses/e3-extra-features-licenses.md
     - name: Understand subscriptions and licenses
       href: licenses/subscriptions-and-licenses.md
 - name: Manage volume licensing
   items:
     - name: Contracts FAQs
       href: licenses/contracts-faq.yml
+    - name: User roles FAQs
+      href: licenses/user-roles-faq.yml
     - name: Downloads FAQs
       href: licenses/downloads-faq.yml
     - name: Product keys FAQ

@@ -3,7 +3,7 @@ title: Partner access through Microsoft Defender for Endpoint APIs
 ms.reviewer:
 description: Learn how to design a web app to get programmatic access to  Microsoft Defender for Endpoint on behalf of your users.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,14 +18,14 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ---
 
 # Partner access through Microsoft Defender for Endpoint APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 
 **Applies to:** 
@@ -35,7 +35,7 @@ search.appverid: met150
 - [Microsoft Defender for Business](../../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../../defender-business/compare-mdb-m365-plans.md#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
+> Advanced hunting capabilities are not included in Defender for Business.
 
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,24 +44,24 @@ search.appverid: met150
 
 [!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
-This page describes how to create an Azure Active Directory (Azure AD) application to get programmatic access to Microsoft Defender for Endpoint on behalf of your customers.
+This page describes how to create a Microsoft Entra application to get programmatic access to Microsoft Defender for Endpoint on behalf of your customers.
 
 Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you'll need to take the following steps to use the APIs:
 
-- Create a **multi-tenant** Azure AD application.
+- Create a **multi-tenant** Microsoft Entra application.
 - Get authorized(consent) by your customer administrator for your application to access Defender for Endpoint resources it needs.
 - Get an access token using this application.
 - Use the token to access Microsoft Defender for Endpoint API.
 
-The following steps will guide you how to create an Azure AD application, get an access token to Microsoft Defender for Endpoint and validate the token.
+The following steps will guide you how to create a Microsoft Entra application, get an access token to Microsoft Defender for Endpoint and validate the token.
 
 ## Create the multi-tenant app
 
 1. Sign in to your [Azure tenant](https://portal.azure.com) with user that has **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
+2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**.
 
    :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The navigation to application registration pane" lightbox="../images/atp-azure-new-app2.png":::
 
@@ -142,7 +142,7 @@ In the following example we will use **'Read all alerts'** permission:
 
 **Note:** To get access token on behalf of your customer, use the customer's tenant ID on the following token acquisitions.
 
-For more information on AAD token, see [AAD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more information on Microsoft Entra token, see [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### Using PowerShell
 

@@ -65,7 +65,7 @@ Apps and workflows let hybrid workers be more productive in Teams, by collecting
 
 With Outlook, hybrid workers can stay connected and organized with email, calendars, contacts, tasks, and more—together in one place. Outlook helps you stay on track and prioritize your day based on what’s relevant to you. Outlook enables you to share attachments right from OneDrive, plan and join Teams meetings, view and share calendars, and provide delegate permissions to others. Knowing what’s coming up next across both work and personal commitments and what needs attention can help hybrid workers focus on what matters. Outlook provides helpful ways for hybrid workers to manage their time and to find what they need easily, including files, people in the organization, and more. 
 
-See [this article](../security/office-365-security/secure-email-recommended-policies.md) for the recommended identity and device access policies to protect organizational email and email clients that support modern authentication and Conditional Access.
+See [this article](../security/office-365-security/zero-trust-identity-device-access-policies-exchange.md) for the recommended identity and device access policies to protect organizational email and email clients that support modern authentication and Conditional Access.
 
 ## Store and collaborate on files with SharePoint and OneDrive
 
@@ -78,7 +78,7 @@ You might have to migrate your documents to SharePoint or OneDrive from:
 - [File shares](/sharepointmigration/fileshare-to-odsp-migration-guide)
 - [Box](/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
-To protect SharePoint and OneDrive, see [this article](../security/office-365-security/sharepoint-file-access-policies.md) for the recommended identity and device access policies.
+To protect SharePoint and OneDrive, see [this article](../security/office-365-security/zero-trust-identity-device-access-policies-sharepoint.md) for the recommended identity and device access policies.
 
 ## Create and collaborate on content with Microsoft 365 Apps
 

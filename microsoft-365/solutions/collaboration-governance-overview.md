@@ -4,7 +4,7 @@ ms.reviewer: rahulnayak
 ms.date: 07/27/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
@@ -131,7 +131,7 @@ This helps avoid confusion if users are unfamiliar with how groups relate to the
 
 ## Key collaboration governance capabilities and licensing requirements
 
-Governance capabilities for collaboration in Microsoft 365 include features in Microsoft 365, Teams, SharePoint, and Azure Active Directory.
+Governance capabilities for collaboration in Microsoft 365 include features in Microsoft 365, Teams, SharePoint, and Microsoft Entra ID.
 
 | Capability or feature | Description | Licensing |
 |:----------------------|:------------|:----------|
@@ -139,9 +139,9 @@ Governance capabilities for collaboration in Microsoft 365 include features in M
 |Domain allow/block|Restrict sharing with people outside your organization to people from specific domains.|Microsoft 365 E5 or E3|
 |Self-service site creation|Allow or prevent users from creating their own SharePoint sites.|Microsoft 365 E5 or E3|
 |Restricted site and file sharing|Restrict site, file, and folder sharing to members of a specific security group.|Microsoft 365 E5 or E3|
-|Restricted group creation|Restrict team and group creation to members of a specific security group.|Microsoft 365 E5 or E3 with Azure AD Premium or Azure AD Basic EDU licenses|
-|Group naming policy|Enforce prefixes or suffixes on group and team names.|Microsoft 365 E5 or E3 with Azure AD Premium or Azure AD Basic EDU licenses|
-|Group expiration policy|Set inactive groups and teams to expire and be deleted after a specified period of time.|Microsoft 365 E5 or E3 with Azure AD Premium licenses|
+|Restricted group creation|Restrict team and group creation to members of a specific security group.|Microsoft 365 E5 or E3 with Microsoft Entra ID P1 or P2 or Microsoft Entra Basic EDU licenses|
+|Group naming policy|Enforce prefixes or suffixes on group and team names.|Microsoft 365 E5 or E3 with Microsoft Entra ID P1 or P2 or Microsoft Entra Basic EDU licenses|
+|Group expiration policy|Set inactive groups and teams to expire and be deleted after a specified period of time.|Microsoft 365 E5 or E3 with Microsoft Entra ID P1 or P2 licenses|
 |Per-group guest access|Allow or prevent team and group sharing with people outside your organization on a per-group basis.|Microsoft 365 E5 or E3|
 
 Additionally, these add-on licenses provide enhanced governance capabilities:
@@ -202,3 +202,5 @@ This set of illustrations uses one of the most regulated industries, financial s
 [Microsoft 365 security documentation](../security/index.yml)
 
 [Microsoft Purview documentation](../compliance/index.yml)
+
+[Governance & Security Practices for Microsoft 365 - Microsoft Ignite](https://ignite.microsoft.com/sessions/bd7aa4f7-f9a6-4dc0-a900-bd06254e1281)

@@ -1,8 +1,8 @@
 ---
 title: Microsoft Secure score data storage and privacy
 description: Learn about how Microsoft Secure score handles privacy and data that it collects.
-keywords: microsoft secure score, secure score,  Microsoft 365 Defender portal, Secure score, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
-ms.service: microsoft-365-security
+keywords: microsoft secure score, secure score,  Microsoft Defender portal, Secure score, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,13 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 11/17/2022
 ---
 
 # Microsoft Secure Score data storage and privacy
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 This section covers frequently asked questions regarding privacy and data handling for Secure Score.
 
@@ -43,4 +42,4 @@ By default, data is retained for 90 days based on your active licenses.
 ### At contract termination or expiration
 
 Your data is kept and is available to you while the license is under grace period or suspended mode. At the end of this period, data that is associated to expired or terminated license is erased from Microsoft's systems to make it unrecoverable, no later than 90 days from the associated contract termination or expiration.
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

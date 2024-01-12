@@ -61,11 +61,11 @@ The following list describes other changes we’ve made to the billing experienc
 - **More subscription lengths**&mdash;Depending on the product or service you buy, you can choose a subscription length of one month, one year, or three years.
 - **New cancellation policy**&mdash;You can now only cancel and receive a prorated credit or refund if you cancel within seven days after the start or renewal of your subscription. If you cancel during this limited time window, the prorated amount is either credited towards your next invoice or returned to you in the next billing cycle. For more information, see [Cancel your Microsoft business subscription](subscriptions/cancel-your-subscription.md).
 - **New scheduling for license changes**&mdash;You can now choose to increase or decrease the number of licenses you have for a subscription on the next subscription renewal date.
-- **New billing account selector**&mdash;If you have more than one billing account, you can select **Change billing accoun**t on the **Purchase services** page to use a different billing account to buy new products and services.
+- **New billing account selector**&mdash;If you have more than one billing account, you can select **Change billing account** on the **Purchase services** page to use a different billing account to buy new products and services.
 
 ## Related articles
 
 [Understand your Microsoft business billing account](manage-billing-accounts.md) (article)\
 [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md) (article)\
 [Understand your bill or invoice](billing-and-payments/understand-your-invoice.md) (article)\
-[How to pay for your Microsoft business subscription with a billing profile](billing-and-payments/pay-for-subscription-billing-profile.md) (article)
+[Payment options for Microsoft business subscriptions](billing-and-payments/pay-for-your-subscription.md) (article)

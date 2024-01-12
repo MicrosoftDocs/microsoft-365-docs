@@ -1,10 +1,9 @@
 ---
-title: Responding to your first incident in Microsoft 365 Defender
-description: The basics of responding to your first incident in Microsoft 365 Defender.
+title: Responding to your first incident in Microsoft Defender XDR
+description: The basics of responding to your first incident in Microsoft Defender XDR.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, self-study, ramp up, ramp-up, onboard, incident responder
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -27,20 +26,20 @@ search.appverid:
 ms.date: 08/21/2023
 ---
 
-# Responding to your first incident in Microsoft 365 Defender
+# Responding to your first incident in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-This guide lists Microsoft resources for new Microsoft 365 Defender users to confidently perform [day-to-day incident response tasks](integrate-microsoft-365-defender-secops-services.md) while using the portal. The intended results of using this guide are:
+This guide lists Microsoft resources for new Microsoft Defender XDR users to confidently perform [day-to-day incident response tasks](integrate-microsoft-365-defender-secops-services.md) while using the portal. The intended results of using this guide are:
 
-- You'll quickly learn to use Microsoft 365 Defender to respond to incidents and alerts.
-- You’ll discover the portal's features to aid incident investigation and remediation through the videos and tutorials.
+- You'll quickly learn to use Microsoft Defender XDR to respond to incidents and alerts.
+- You'll discover the portal's features to aid incident investigation and remediation through the videos and tutorials.
 
-Microsoft 365 Defender enables you to see relevant threat events across all assets (devices, identities, mailboxes, cloud apps, and more). The portal consolidates signals from the [Defender protection suite](microsoft-365-defender.md#microsoft-365-defender-protection), [Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md), and other [integrated security information and event management (SIEM) solutions](configure-siem-defender.md). Correlated attack information with full context in a single pane of glass enables you to successfully defend and protect your organization.
+Microsoft Defender XDR enables you to see relevant threat events across all assets (devices, identities, mailboxes, cloud apps, and more). The portal consolidates signals from the [Defender protection suite](microsoft-365-defender.md#microsoft-defender-xdr-protection), [Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md), and other [integrated security information and event management (SIEM) solutions](configure-siem-defender.md). Correlated attack information with full context in a single pane of glass enables you to successfully defend and protect your organization.
 
 This guide has three main sections:
 
@@ -50,23 +49,23 @@ This guide has three main sections:
 
 ## Understanding incidents
 
-An [incident](incidents-overview.md) is a chain of processes created, commands, and actions that might not have coincided. An incident provides a holistic picture and context of suspicious or malicious activity. A single incident gives you an attack’s complete context instead of triaging hundreds of alerts from multiple services. 
+An [incident](incidents-overview.md) is a chain of processes created, commands, and actions that might not have coincided. An incident provides a holistic picture and context of suspicious or malicious activity. A single incident gives you an attack's complete context instead of triaging hundreds of alerts from multiple services. 
 
-Microsoft 365 Defender has many features that you can use to respond to an incident. You can navigate the incidents by selecting **View all incidents** in the Active incidents card on the Home page or through **Incidents & alerts** on the left navigation pane.
+Microsoft Defender XDR has many features that you can use to respond to an incident. You can navigate the incidents by selecting **View all incidents** in the Active incidents card on the Home page or through **Incidents & alerts** on the left navigation pane.
 
-:::image type="content" source="../../media/first-incident/m365d-viewincidents-home.png" alt-text="View all incidents shown in Microsoft 365 Defender home page" lightbox="../../media/first-incident/m365d-viewincidents-home.png":::
-*Figure 1. Active incidents card on the Microsoft 365 Defender home page*
+:::image type="content" source="../../media/first-incident/m365d-viewincidents-home.png" alt-text="View all incidents shown in Microsoft Defender XDR home page" lightbox="../../media/first-incident/m365d-viewincidents-home.png":::
+*Figure 1. Active incidents card on the Microsoft Defender XDR home page*
 
-:::image type="content" source="../../media/first-incident/m365d-incidents.png" alt-text="Incident queue in Microsoft 365 Defender" lightbox="../../media/first-incident/m365d-incidents.png":::
+:::image type="content" source="../../media/first-incident/m365d-incidents.png" alt-text="Incident queue in Microsoft Defender XDR" lightbox="../../media/first-incident/m365d-incidents.png":::
 *Figure 2. Incident queue*
 
-Each incident contains automatically correlated [alerts](investigate-alerts.md) from [different detection sources](microsoft-365-defender.md#microsoft-365-defender-protection) and might involve various endpoints, identities, or cloud apps.
+Each incident contains automatically correlated [alerts](investigate-alerts.md) from [different detection sources](microsoft-365-defender.md#microsoft-defender-xdr-protection) and might involve various endpoints, identities, or cloud apps.
 
 ## Incident triage
 
 Incident prioritization varies per responder, security team, and organization. [Incident response plans](/security/operations/incident-response-planning) and security teams' direction can mandate incident priority. 
 
-Microsoft 365 Defender has various indicators like incident severity, types of users, or threat types to triage and prioritize incidents. You can use any combination of these indicators readily available through the [incident queue](incident-queue.md) filters.
+Microsoft Defender XDR has various indicators like incident severity, types of users, or threat types to triage and prioritize incidents. You can use any combination of these indicators readily available through the [incident queue](incident-queue.md) filters.
 
 An example of determining incident priority is combining the following factors for an incident:
 
@@ -79,7 +78,7 @@ An example of determining incident priority is combining the following factors f
 You might assign a high priority to the incident using the information above. You can begin your incident investigation once a priority is determined.
 
 > [!NOTE]
-> Microsoft 365 Defender automatically determines filters like severity, investigation states, impacted assets, and incident statuses. The information is based on your organization’s network activities contextualized with threat intelligence feeds and the automated remediation actions applied.
+> Microsoft Defender XDR automatically determines filters like severity, investigation states, impacted assets, and incident statuses. The information is based on your organization's network activities contextualized with threat intelligence feeds and the automated remediation actions applied.
 
 ## Manage incidents
 
@@ -99,12 +98,12 @@ Learn how to classify incidents and alerts through this video:
 
 -	[Analyze your first incident](respond-first-incident-analyze.md)
 - [Remediate your first incident](respond-first-incident-remediate.md)
-- Watch demos and the portal's new developments in action in the [Microsoft 365 Defender Virtual Ninja Training](https://adoption.microsoft.com/en-us/ninja-show/)
+- Watch demos and the portal's new developments in action in the [Microsoft Defender XDR Virtual Ninja Training](https://adoption.microsoft.com/en-us/ninja-show/)
 
 ## See also
 
-- [Integrate Microsoft 365 Defender into your security operations](integrate-microsoft-365-defender-secops-plan.md)
+- [Integrate Microsoft Defender XDR into your security operations](integrate-microsoft-365-defender-secops-plan.md)
 - [Respond to common attacks using incident response playbooks](/security/operations/incident-response-playbooks)
-- Learn the portal's features and functions through the [Microsoft 365 Defender Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
+- Learn the portal's features and functions through the [Microsoft Defender XDR Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

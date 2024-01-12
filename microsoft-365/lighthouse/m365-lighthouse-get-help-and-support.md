@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 07/03/2023
+ms.date: 12/13/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -44,13 +44,13 @@ If you're experiencing an issue that isn't listed in any of these resources, the
 
 ## Before you begin
 
-- To create and manage service requests, you must have at least one Azure Active Directory (Azure AD) role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). For information on how to assign roles, see [Assign Azure AD roles to users](/azure/active-directory/roles/manage-roles-portal).
+- To create and manage service requests, you must have at least one Microsoft Entra role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference). For information on how to assign roles, see [Assign Microsoft Entra roles to users](/azure/active-directory/roles/manage-roles-portal).
 
 - If you need to create a service request, gather as many details as possible about your issue, such as diagnostic logs, tenant ID, and user IDs (if specific users are affected).
 
 ## Access help and support
 
-1. In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane, and then do one of the following:
+1. In Lighthouse, select the **?** icon at the top of the portal or the **Help & support** widget in the lower-right corner of the portal to open the **Help** pane, and then do one of the following:
   
    - If you're on the page of the portal where the issue occurred, select **Show diagnostics**.
 

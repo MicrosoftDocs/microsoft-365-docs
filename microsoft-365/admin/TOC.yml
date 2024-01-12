@@ -61,8 +61,8 @@
           href: setup/files-to-onedrive.md
         - name: Move files to SharePoint (video)
           href: setup/files-to-sharepoint.md
-        - name: Migrate your data to Microsoft 365
-          href: setup/migrate-email-and-contacts-admin.md
+        - name: Migrate your email from Gmail to Microsoft 365
+          href: https://support.microsoft.com/office/move-your-old-email-calendars-and-contacts-to-microsoft-365-2c37f0b7-2915-423c-b35e-9e03267f23dc
         - name: Roll out Teams
           href: /microsoftteams/how-to-roll-out-teams?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
         - name: App training for everyone
@@ -77,7 +77,7 @@
           items:
             - name: Synchronize domain users to Microsoft 365
               href: setup/manage-domain-users.md
-            - name: Access resources from an Azure AD-joined device
+            - name: Access resources from a Microsoft Entra joined device
               href: setup/access-resources.md
     - name: Overview of the Microsoft 365 admin center
       items:
@@ -96,17 +96,7 @@
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
         - name: Manage multiple tenants
-          href: multi-tenant/manage.md
-    - name: Office 365 operated by 21Vianet
-      items: 
-        - name: Download the Office app for Android for Office 365 operated by 21Vianet
-          href: services-in-china/download-office-app-for-Android.md
-        - name: Download the Office app for iOS for Office 365 operated by 21Vianet
-          href: services-in-china/download-office-app-for-iOS.md
-        - name: Apply for a Fapiao
-          href: services-in-china/apply-for-a-fapiao.md
-        - name: Azure Information Protection support
-          href: services-in-china/parity-between-azure-information-protection.md      
+          href: multi-tenant/manage.md   
     - name: Manage users, groups, and passwords
       items: 
         - name: Users
@@ -115,12 +105,10 @@
              href: add-users/add-users.md
            - name: Add a new employee
              href: add-users/add-new-employee.md
-           - name: Assign licenses to users
+           - name: Assign or unassign licenses for users
              href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
              href: add-users/assign-admin-roles.md
-           - name: Unassign licenses from users
-             href: manage/remove-licenses-from-users.md
            - name: Turn pronouns on or off
              href: add-users/turn-pronouns-on-or-off.md
            - name: Guest users
@@ -221,8 +209,6 @@
               href: email/convert-user-mailbox-to-shared-mailbox.md
             - name: Remove a license from a shared mailbox
               href: email/remove-license-from-shared-mailbox.md
-            - name: Resolve issues with shared mailboxes
-              href: email/resolve-issues-with-shared-mailboxes.md
         - name: Set up Focused Inbox
           href: setup/configure-focused-inbox.md
         - name: Add user or contact to distribution group
@@ -279,6 +265,12 @@
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
       items:
+         - name: Microsoft 365 Copilot extensibility
+           items:
+            - name: Manage plugins for Copilot
+              href: manage/manage-plugins-for-copilot-in-integrated-apps.md
+            - name: Microsoft Graph connectors for Microsoft Search
+              href: /microsoftsearch/connectors-overview
          - name: Monitor Microsoft 365 activity by using reports
            items:
             - name: Microsoft 365 Reports in the admin center - overview
@@ -351,6 +343,8 @@
               href: adoption/teamwork.md
             - name: Meetings
               href: adoption/meetings-new.md
+            - name: AI assistance
+              href: adoption/ai-assistance.md
             - name: Organizational Messages
               href: adoption/organizational-messages.md
             - name: Group Level Aggregates
@@ -382,7 +376,9 @@
             - name: Teams apps that only work on Teams
               href: manage/teams-apps-work-only-on-teams.md  
             - name: SaaS Linked Apps
-              href: manage/saas-linked-apps.md               
+              href: manage/saas-linked-apps.md       
+            - name: Manage plugins for Copilot
+              href: manage/manage-plugins-for-copilot-in-integrated-apps.md             
          - name: Centralized deployment of add-ins
            items:
             - name: Requirements for centralized deployment of add-ins
@@ -443,7 +439,7 @@
                 href: manage/servicenow-overview-v1.md
               - name: Configure basic authentication
                 href: manage/servicenow-basic-authentication-v1.md
-              - name: Configure Microsoft 365 support integration with Azure AD Auth Token
+              - name: Configure Microsoft 365 support integration with Microsoft Entra auth Token
                 href: manage/servicenow-aad-oauth-token-v1.md
               - name: Testing the configuration
                 href: manage/servicenow-testing-the-configuration-v1.md
@@ -453,6 +449,10 @@
                 href: manage/servicenow-virtual-agent-integration-v1.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
+    - name: Manage self-service purchases, trials, and licenses
+      items: 
+       - name: Manage self-service purchases, trials, and licenses
+         href: manage/manage-self-service-purchases-org-trials-for-msproject.md   
     - name: Secure your organization
       items: 
         - name: Multi-factor authentication for Microsoft 365

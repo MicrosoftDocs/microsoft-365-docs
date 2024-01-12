@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Defender for Endpoint sensitivity labels to protect your data and prioritize security incident response
 description: Learn how to use Defender for Endpoint sensitivity labels to protect, prioritize, and investigate incidents that involve data loos, dlp, security incidents.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,19 +16,19 @@ ms.collection:
 - tier2
  - EngageScoreSep2022
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Microsoft Defender for Endpoint sensitivity labels protect and prioritize incident response
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -45,7 +45,7 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 > [!NOTE]
 > Labels are detected for Windows 10, version 1809 or later, and Windows 11.
 
-1. In Microsoft 365 Defender portal, select **Incidents & alerts** \> **Incidents**.
+1. In Microsoft Defender portal, select **Incidents & alerts** \> **Incidents**.
 
 2. Scroll to the right to see the **Data sensitivity** column. This column reflects sensitivity labels that have been observed on devices related to the incidents providing an indication of whether sensitive files may be impacted by the incident.
 

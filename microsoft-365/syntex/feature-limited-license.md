@@ -2,7 +2,7 @@
 title: Microsoft Syntex features limited time license
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: karlha
 ms.date: 09/21/2023
 audience: admin

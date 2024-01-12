@@ -2,7 +2,7 @@
 title:  Run the client analyzer on macOS or Linux
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux
 keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, macos, linux, mdeanalyzer
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,7 +19,7 @@ ms.collection:
 - tier2
 - mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ---
 
@@ -49,10 +49,10 @@ If using a terminal download using the command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '87452324ADADBB2F7B75E6B0B295ADD89B787C5D7AF7F30ED0EBDBD8F0CF4E39'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '9743C02442B2E0C3396E7E659AB7F8A0B925AD388E10970D8E427B03CE3BD7F8'
 
     ```console
-    echo '87452324ADADBB2F7B75E6B0B295ADD89B787C5D7AF7F30ED0EBDBD8F0CF4E39 XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '9743C02442B2E0C3396E7E659AB7F8A0B925AD388E10970D8E427B03CE3BD7F8 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
@@ -133,7 +133,7 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo 'F51A565A083A5B12AF8D9A16D6AE16FCACDCE4D5CABD48883EC0EEA10D33E19D XMDEClientAnalyzer.zip' | sha256sum -c
+    echo 'B2B0452416AAA308668693601C0A540D7BAB1F13D1E42503B7292B00DE18DAFE XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\

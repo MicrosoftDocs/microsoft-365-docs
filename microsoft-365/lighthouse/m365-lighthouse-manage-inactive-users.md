@@ -52,4 +52,4 @@ Lighthouse uses sign-in activity to detect inactive users accounts. The **Inacti
 
 ## Related content
 
-[How to manage inactive user accounts in Azure AD](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts) (article)
+[How to manage inactive user accounts in Microsoft Entra ID](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts) (article)

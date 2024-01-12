@@ -28,11 +28,11 @@ Enrolling devices to Intune gives you the ability to achieve even greater securi
 
 ![Steps managing devices](../media/devices/intune-mdm-step-2.png#lightbox)
 
-You want to be sure devices that are accessing your apps and data meet minimum requirements. For example, they’re password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. Intune uses these compliance policies to mark a device as compliant or non-compliant. This binary status is passed to Azure AD which can use this status in conditional access rules to allow or prevent a device from accessing resources. 
+You want to be sure devices that are accessing your apps and data meet minimum requirements. For example, they’re password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. Intune uses these compliance policies to mark a device as compliant or non-compliant. This binary status is passed to Microsoft Entra which can use this status in conditional access rules to allow or prevent a device from accessing resources. 
 
 ## Configuring device compliance policies
 
-This guidance is tightly coordinated with the recommended [Zero Trust identity and device access policies](../security/office-365-security/microsoft-365-policies-configurations.md).
+This guidance is tightly coordinated with the recommended [Zero Trust identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md).
 
 This illustration highlights where the work of defining compliance policies fits into the overall Zero Trust recommended policy set. 
 
@@ -40,14 +40,14 @@ This illustration highlights where the work of defining compliance policies fits
 
 In this illustration, defining device compliance policies is a dependency for achieving the recommended level of protection within the Zero Trust framework. 
 
-To configure device compliance policies, use the recommended guidance and settings prescribed in [Zero Trust identity and device access policies](../security/office-365-security/microsoft-365-policies-configurations.md). The table below links directly to the instructions for configuring these policies in Intune, including the recommended settings for each platform.
+To configure device compliance policies, use the recommended guidance and settings prescribed in [Zero Trust identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md). The table below links directly to the instructions for configuring these policies in Intune, including the recommended settings for each platform.
 
 
 |Policies |More information  |Licensing |
 |---------|---------|---------|
-|[Define device compliance policies ](../security/office-365-security/identity-access-policies.md#create-device-compliance-policies)   |  One policy for each platform       |  Microsoft 365 E3 or E5       |
+|[Define device compliance policies ](../security/office-365-security/zero-trust-identity-device-access-policies-common.md#create-device-compliance-policies)   |  One policy for each platform       |  Microsoft 365 E3 or E5       |
 |  |         |         |
 
 ## Next steps
 
-Go to [Step 4. Require healthy and compliant devices](manage-devices-with-intune-require-compliance.md) for instructions on how to create the conditional access rule in Azure AD.
+Go to [Step 4. Require healthy and compliant devices](manage-devices-with-intune-require-compliance.md) for instructions on how to create the conditional access rule in Microsoft Entra ID.

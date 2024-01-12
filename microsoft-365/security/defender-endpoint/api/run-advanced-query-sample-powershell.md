@@ -3,7 +3,7 @@ title: Advanced Hunting with PowerShell API Basics
 ms.reviewer: 
 description: Learn the basics of querying the Microsoft Defender for Endpoint API, using PowerShell.
 keywords: apis, supported apis, advanced hunting, query
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +17,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -25,7 +25,7 @@ ms.date: 12/18/2020
 
 # Advanced Hunting using PowerShell
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:** 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -64,7 +64,7 @@ $tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID he
 $appId = '11111111-1111-1111-1111-111111111111' # Paste your own app ID here
 $appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret here
 
-$resourceAppIdUri = 'https://api.security.microsoft.com'
+$resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
 $oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $body = [Ordered] @{
     resource = "$resourceAppIdUri"
@@ -78,8 +78,8 @@ $aadToken = $response.access_token
 
 where
 - $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
-- $appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
-- $appSecret: Secret of your Azure AD app
+- $appId: ID of your Microsoft Entra app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
+- $appSecret: Secret of your Microsoft Entra app
 
 ## Run query
 
@@ -89,7 +89,7 @@ Run the following query:
 $token = $aadToken
 $query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
-$url = "https://api.security.microsoft.com/api/advancedhunting/run"
+$url = "https://api.securitycenter.microsoft.com/api/advancedhunting/run"
 $headers = @{ 
     'Content-Type' = 'application/json'
     Accept = 'application/json'

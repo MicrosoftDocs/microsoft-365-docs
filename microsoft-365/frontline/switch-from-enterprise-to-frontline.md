@@ -2,7 +2,7 @@
 title: Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -158,7 +158,7 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |---------|---------|---------|---------|
 |Windows 11 Enterprise|Yes|Yes&sup1;|No|
 
-&sup1;No Long-Term Servicing Channel (LTSC) or Microsoft Desktop Optimization Pack (MDOP). Virtual desktop infrastructure (VDI) only for licensed users of a shared device with a Quality of Service (QoS), (except for Azure Virtual Desktop).
+&sup1;No Long-Term Servicing Channel (LTSC) or Microsoft Desktop Optimization Pack (MDOP). Virtual desktop infrastructure (VDI) is only for licensed users of a shared device with a Qualifying Operating System (except for Azure Virtual Desktop).
 
 ## What to expect
 
@@ -211,7 +211,7 @@ For more information, see [Back up data before switching plans](/microsoft-365/c
 
 You can use the Microsoft 365 admin center to manually change plans or a scripted approach through PowerShell cmdlets. Whichever method you choose, it's important to complete the license change assignment in one operation. In other words, remove an existing E license and replace it by assigning an F license in the same operation.
 
-Avoid removing an existing license for a user and then reassigning a new one at a later point in time. Doing this can impact a user's data. To learn more, see [What happens to a user's data when you remove their license?](/microsoft-365/admin/manage/remove-licenses-from-users#what-happens-to-a-users-data-when-you-remove-their-license).
+Avoid removing an existing license for a user and then reassigning a new one at a later point in time. Doing this can impact a user's data. To learn more, see [What happens to a user's data when you remove their license?](../admin/manage/assign-licenses-to-users.md#what-happens-to-a-users-data-when-you-remove-their-license).
 
 For step-by-step guidance on how to change plans in the Microsoft admin center, see [Manually change Microsoft plans](/microsoft-365/commerce/subscriptions/upgrade-to-different-plan#change-plans-manually)
 

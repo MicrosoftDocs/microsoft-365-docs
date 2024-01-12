@@ -2,7 +2,7 @@
 title: Use the Virtual Appointments app in Microsoft Teams
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline 
@@ -24,7 +24,6 @@ ms.collection:
   - m365initiative-meetings
   - m365-virtual-appointments
   - teams-1p-app-admin 
-  - essentials-how-to
 ms.reviewer: megano
 description: Get an overview of how to use the Virtual Appointments app in Teams to schedule, manage, conduct and view analytics on virtual appointments in your organization. 
 appliesto: 
