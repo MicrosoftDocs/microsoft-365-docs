@@ -1,11 +1,7 @@
 ---
 title: Manage the gradual rollout process for Microsoft Defender updates
 description: Learn about the gradual update process and controls
-keywords: update, update process, controls, release
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: macapara
@@ -19,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: ngp
 search.appverid: met150
-ms.date: 06/23/2021
+ms.date: 01/12/2024
 ---
 
 # Manage the gradual rollout process for Microsoft Defender updates
