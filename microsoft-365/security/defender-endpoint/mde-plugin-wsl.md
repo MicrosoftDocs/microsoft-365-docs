@@ -233,7 +233,7 @@ DeviceProcessEvents
 
 ## Troubleshooting
 
-1. The command `healthcheck.exe` shows the output, "Launch WSL distro with ‘bash’ command and retry in 5 minutes."
+1. The command `healthcheck.exe` shows the output, "Launch WSL distro with 'bash' command and retry in 5 minutes."
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check.png":::
 
