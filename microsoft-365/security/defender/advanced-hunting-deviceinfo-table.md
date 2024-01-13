@@ -44,18 +44,18 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | `datetime` | Date and time when the event was recorded |
 | `DeviceId` | `string` | Unique identifier for the device in the service |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
-| `ClientVersion` | `string` | Version of the endpoint agent or sensor running on the machine |
-| `PublicIP` | `string` | Public IP address used by the onboarded machine to connect to the Microsoft  Defender for Endpoint service. This could be the IP address of the machine itself, a NAT device, or a proxy |
-| `OSArchitecture` | `string` | Architecture of the operating system running on the machine |
+| `ClientVersion` | `string` | Version of the endpoint agent or sensor running on the device |
+| `PublicIP` | `string` | Public IP address used by the onboarded device to connect to the Microsoft  Defender for Endpoint service. This could be the IP address of the device itself, a NAT device, or a proxy. |
+| `OSArchitecture` | `string` | Architecture of the operating system running on the device |
 | `OSPlatform` | `string` | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
-| `OSBuild` | `long` | Build version of the operating system running on the machine |
-| `IsAzureADJoined` | `boolean` | Boolean indicator of whether machine is joined to the Microsoft Entra ID |
+| `OSBuild` | `long` | Build version of the operating system running on the device |
+| `IsAzureADJoined` | `boolean` | Boolean indicator of whether device is joined to the Microsoft Entra ID |
 | `JoinType` | `string` | The device's Microsoft Entra ID join type |
 | `AadDeviceId` | `string` | Unique identifier for the device in Microsoft Entra ID |
-| `LoggedOnUsers` | `string` | List of all users that are logged on the machine at the time of the event in JSON array format |
+| `LoggedOnUsers` | `string` | List of all users that are logged on the device at the time of the event in JSON array format |
 | `RegistryDeviceTag` | `string` | Device tag added through the registry |
-| `OSVersion` | `string` | Version of the operating system running on the machine |
-| `MachineGroup` | `string` | Machine group of the machine. This group is used by role-based access control to determine access to the machine |
+| `OSVersion` | `string` | Version of the operating system running on the device |
+| `MachineGroup` | `string` | Machine group of the device. This group is used by role-based access control to determine access to the device. |
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `OnboardingStatus` | `string` | Indicates whether the device is currently onboarded or not to  Microsoft Defender For Endpoint or if the device is not supported |
 | `AdditionalFields` | `string` | Additional information about the event in JSON array format |

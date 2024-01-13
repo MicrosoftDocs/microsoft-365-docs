@@ -47,7 +47,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `SoftwareVersion` | `string` | Version number of the software product |
 | `RegistryPaths` | `dynamic` | Registry paths where evidence indicating the existence of the software on a device was detected |
 | `DiskPaths` | `dynamic` | Disk paths where file-level evidence indicating the existence of the software on a device was detected |
-| `LastSeenTime` | `string` | Date and time when the device last seen by this service |
+| `LastSeenTime` | `string` | Date and time when the device was last seen by this service |
 
 ## Related topics
 

@@ -46,7 +46,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | `datetime` | Date and time when the event was recorded |
 | `DeviceId` | `string` | Unique identifier for the device in the service |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
-| `ActionType` | `string` | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
+| `ActionType` | `string` | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details. |
 | `FileName` | `string` | Name of the file that the recorded action was applied to |
 | `FolderPath` | `string` | Folder containing the file that the recorded action was applied to |
 | `SHA1` | `string` | SHA-1 of the file that the recorded action was applied to |
@@ -69,14 +69,14 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
-| `LogonId` | `long` | Identifier for a logon session. This identifier is unique on the same machine only between restarts |
+| `LogonId` | `long` | Identifier for a logon session. This identifier is unique on the same device only between restarts. |
 | `InitiatingProcessAccountDomain` | `string` | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
-| `InitiatingProcessLogonId` | `long` | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts. |
-| `InitiatingProcessIntegrityLevel` | `string` | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
+| `InitiatingProcessLogonId` | `long` | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same device only between restarts. |
+| `InitiatingProcessIntegrityLevel` | `string` | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources. |
 | `InitiatingProcessTokenElevation` | `string` | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
 | `InitiatingProcessSHA1` | `string` | SHA-1 hash of the process (image file) that initiated the event |
 | `InitiatingProcessSHA256` | `string` | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
@@ -98,7 +98,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessParentCreationTime` | `datetime` | Date and time when the parent of the process responsible for the event was started |
 | `InitiatingProcessSignerType` | `string` | Type of file signer of the process (image file) that initiated the event |
 | `InitiatingProcessSignatureStatus` | `string` | Information about the signature status of the process (image file) that initiated the event |
-| `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
+| `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `AppGuardContainerId` | `string` | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `AdditionalFields` | `string` | Additional information about the event in JSON array format |
 

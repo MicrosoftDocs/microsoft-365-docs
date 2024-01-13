@@ -44,7 +44,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | `datetime` | Date and time when the event was recorded |
 | `DeviceId` | `string` | Unique identifier for the device in the service |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
-| `ActionType` | `string` | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
+| `ActionType` | `string` | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details. |
 | `RegistryKey` | `string` | Registry key that the recorded action was applied to |
 | `RegistryValueType` | `string` | Data type, such as binary or string, of the registry value that the recorded action was applied to |
 | `RegistryValueName` | `string` | Name of the registry value that the recorded action was applied to |
@@ -77,7 +77,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessParentCreationTime` | `datetime` | Date and time when the parent of the process responsible for the event was started |
 | `InitiatingProcessIntegrityLevel` | `string` | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources. |
 | `InitiatingProcessTokenElevation` | `string` | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
-| `ReportId` | `long` | Event identifier based on a repeating counter.To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `AppGuardContainerId` | `string` | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics

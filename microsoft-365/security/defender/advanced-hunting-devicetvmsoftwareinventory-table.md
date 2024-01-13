@@ -45,18 +45,17 @@ For information on other tables in the advanced hunting schema, see [the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | `string` | Unique identifier for the machine in the service |
-| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the machine |
-| `OSPlatform` | `string` | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
-| `OSVersion` | `string` | Version of the operating system running on the machine |
-| `OSArchitecture` | `string` | Architecture of the operating system running on the machine |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
+| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
+| `OSPlatform` | `string` | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
+| `OSVersion` | `string` | Version of the operating system running on the device |
+| `OSArchitecture` | `string` | Architecture of the operating system running on the device |
 | `SoftwareVendor` | `string` | Name of the software vendor |
 | `SoftwareName` | `string` | Name of the software product |
 | `SoftwareVersion` | `string` | Version number of the software product |
 | `EndOfSupportStatus` | `string` | Indicates the lifecycle stage of the software product relative to its specified end-of-support (EOS) or end-of-life (EOL) date |
-| `EndOfSupportDate` | `string` | End-of-support (EOS) or end-of-life (EOL) date of the software product |
-| `ProductCodeCpe` | `string` | CPE of the software product or 'not available' where there's no CPE |
-| `CveTags` | `string` | An array of the tags relevant to the CVE. Tags that are currently supported are "ZeroDay" and "NoSecurityUpdate".
+| `EndOfSupportDate` | `datetime` | End-of-support (EOS) or end-of-life (EOL) date of the software product |
+| `ProductCodeCpe` | `string` | The standard Common Platform Enumeration (CPE) name of the software product version or 'not available' where there's no CPE |
 
 ## Related topics
 

@@ -43,14 +43,14 @@ For information on other tables in the advanced hunting schema, see [the advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `ConfigurationId` | `string` | Unique identifier for a specific configuration |
-| `ConfigurationImpact` | `string` | Rated impact of the configuration to the overall configuration score (1-10) |
+| `ConfigurationImpact` | `real` | Rated impact of the configuration to the overall configuration score (1-10) |
 | `ConfigurationName` | `string` | Display name of the configuration |
 | `ConfigurationDescription` | `string` | Description of the configuration |
 | `RiskDescription` | `string` | Description of the associated risk |
 | `ConfigurationCategory` | `string` | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls|
 | `ConfigurationSubcategory` | `string` |Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
-| `ConfigurationBenchmarks` | `string` | List of industry benchmarks recommending the same or similar configuration |
-| `Tags` | `string` | Labels representing various attributes used to identify or categorize a security configuration |
+| `ConfigurationBenchmarks` | `dynamic` | List of industry benchmarks recommending the same or similar configuration |
+| `Tags` | `dynamic` | Labels representing various attributes used to identify or categorize a security configuration |
 | `RemediationOptions` | `string` | Recommended actions to reduce or address any associated risks |
 
 You can try this example query to return relevant configuration metadata along with information on devices with non-compliant antivirus configurations from the `DeviceTvmSecureConfigurationAssessment` table:

@@ -44,7 +44,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `IgId` | `string` | Unique identifier for the piece of information gathered |
 | `FieldName` | `string` | Name of the field where this information appears in the AdditionalFields column of the DeviceTvmInfoGathering table |
 | `Description` | `string` | Description of the information gathered |
-| `Categories` | `string` | List of categories that the information belongs to, in JSON array format  |
+| `Categories` | `dynamic` | List of categories that the information belongs to, in JSON array format  |
 | `DataStructure` | `string` | The data structure of the information gathered  |
 
 You can use this table to explore the kinds of information available in `DeviceTvmInfoGathering` so you can later fine-tune your hunting query.

@@ -44,11 +44,11 @@ For information on other tables in the advanced hunting schema, see [the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | `string` | Unique identifier for the machine in the service |
-| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the machine |
-| `OSPlatform` | `string` | Platform of the operating system running on the machine. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7. |
-| `OSVersion` | `string` | Version of the operating system running on the machine |
-| `OSArchitecture` | `string` | Architecture of the operating system running on the machine |
+| `DeviceId` | `string` | Unique identifier for the device in the service |
+| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
+| `OSPlatform` | `string` | Platform of the operating system running on the device. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7. |
+| `OSVersion` | `string` | Version of the operating system running on the device |
+| `OSArchitecture` | `string` | Architecture of the operating system running on the device |
 | `SoftwareVendor` | `string` | Name of the software publisher |
 | `SoftwareName` | `string` | Name of the software product |
 | `SoftwareVersion` | `string` | Version number of the software product |
@@ -56,7 +56,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `VulnerabilitySeverityLevel` | `string` | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape |
 | `RecommendedSecurityUpdate` | `string` | Name or description of the security update provided by the software publisher to address the vulnerability |
 | `RecommendedSecurityUpdateId` | `string` | Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles |
-
+| `CveTags` | `dynamic` | Array of tags relevant to the CVE; example: ZeroDay, NoSecurityUpdate |
 
 
 ## Related topics

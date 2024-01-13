@@ -47,10 +47,10 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `ConfigurationId` | `string` | Unique identifier for a specific configuration |
 | `ConfigurationCategory` | `string` | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls |
 | `ConfigurationSubcategory` | `string` | Subcategory or subgrouping to which the configuration belongs. In many cases,  string describes specific capabilities or features. |
-| `ConfigurationImpact` | `string` | Rated impact of the configuration to the overall configuration score (1-10) |
+| `ConfigurationImpact` | `real` | Rated impact of the configuration to the overall configuration score (1-10) |
 | `IsCompliant` | `boolean` | Indicates whether the configuration or policy is properly configured |
 | `IsApplicable` | `boolean` | Indicates whether the configuration or policy applies to the device |
-| `Context` | `string` | Additional contextual information about the configuration or policy |
+| `Context` | `dynamic` | Additional contextual information about the configuration or policy |
 | `IsExpectedUserImpact` | `boolean` | Indicates whether there will be user impact if the configuration or policy is applied |
 
 You can try this example query to return information on devices with non-compliant antivirus configurations along with the relevant configuration metadata from the `DeviceTvmSecureConfigurationAssessmentKB` table:

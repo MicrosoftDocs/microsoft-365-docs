@@ -45,7 +45,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | `datetime` | Date and time when the event was recorded |
 | `ActionType` | `string` | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
 | `Application` | `string` | Application that performed the recorded action |
-| `LogonType` | `string` | Type of logon session, specifically:<br><br> - **Interactive** - User physically interacts with the machine using the local keyboard and screen<br><br> - **Remote interactive (RDP) logons** - User interacts with the machine remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients<br><br> - **Network** - Session initiated when the machine is accessed using PsExec or when shared resources on the machine, such as printers and shared folders, are accessed<br><br> - **Batch** - Session initiated by scheduled tasks<br><br> - **Service** - Session initiated by services as they start |
+| `LogonType` | `string` | Type of logon session, specifically:<br><br> - **Interactive** - User physically interacts with the device using the local keyboard and screen<br><br> - **Remote interactive (RDP) logons** - User interacts with the device remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients<br><br> - **Network** - Session initiated when the device is accessed using PsExec or when shared resources on the device, such as printers and shared folders, are accessed<br><br> - **Batch** - Session initiated by scheduled tasks<br><br> - **Service** - Session initiated by services as they start |
 | `Protocol` | `string` | Network protocol used |
 | `FailureReason` | `string` | Information explaining why the recorded action failed |
 | `AccountName` | `string` | User name of the account |
@@ -53,21 +53,21 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
 | `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
-| `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
+| `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname. |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
-| `DeviceType` | `string` | Type of device |
-| `OSPlatform` | `string` | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
+| `DeviceType` | `string` | Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer |
+| `OSPlatform` | `string` | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
 | `IPAddress` | `string` | IP address assigned to the endpoint and used during related network communications |
-| `Port` | `string` | TCP port used during communication |
+| `Port` | `int` | TCP port used during communication |
 | `DestinationDeviceName` | `string` | Name of the device running the server application that processed the recorded action |
 | `DestinationIPAddress` | `string` | IP address of the device running the server application that processed the recorded action |
-| `DestinationPort` | `string` | Destination port of related network communications |
+| `DestinationPort` | `int` | Destination port of related network communications |
 | `TargetDeviceName` | `string` | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | `TargetAccountDisplayName` | `string` | Display name of the account that the recorded action was applied to |
 | `Location` | `string` | City, country/region, or other geographic location associated with the event |
 | `Isp` | `string` | Internet service provider (ISP) associated with the endpoint IP address |
-| `ReportId` | `long` | Unique identifier for the event |
-| `AdditionalFields` | `string` | Additional information about the entity or event |
+| `ReportId` | `string` | Unique identifier for the event |
+| `AdditionalFields` | `dynamic` | Additional information about the entity or event |
 
 ## Related topics
 

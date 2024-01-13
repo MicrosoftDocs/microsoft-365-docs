@@ -45,7 +45,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `OnPremSid` | `string` | On-premises security identifier (SID) of the account |
-| `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
+| `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname. |
 | `AccountName` | `string` | User name of the account |
 | `AccountDomain` [*](#mdi-only) | `string` | Domain of the account |
 | `Type` [*](#mdi-only) | `string` | Type of record |
@@ -63,7 +63,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `IsAccountEnabled` | `boolean` | Indicates whether the account is enabled or not |
 | `Manager` [*](#mdi-only)  | `string` | The listed manager of the account user |
 | `Phone` [*](#mdi-only)  | `string` | The listed phone number of the account user|
-| `AccountCreationTime` [*](#mdi-only)  | `datetime` | The date and time that the user was created|
+| `CreatedDateTime` [*](#mdi-only)  | `datetime` | Date and time when the account user was created |
 | `SourceProvider` [*](#mdi-only)  | `string` |The identity's source, such as Microsoft Entra ID, Active Directory, or a [hybrid identity](/azure/active-directory/hybrid/what-is-provisioning) synchronized from Active Directory to Azure Active Directory |
 | `ChangeSource` [*](#mdi-only)  | `string` |Identifies which identity provider or process triggered the addition of the new row. For example, the `System-UserPersistence` value is used for any rows added by an automated process.|
 | `Tags` [*](#mdi-only)  | `dynamic` | Tags assigned to the account user by Defender for Identity |
