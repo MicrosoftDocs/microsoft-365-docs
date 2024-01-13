@@ -22,15 +22,15 @@ description: "Learn about the requirements for Microsoft Copilot for Microsoft 3
 
 # Microsoft Copilot for Microsoft 365 requirements
 
-The integration of Microsoft Copilot for Microsoft 365 and Microsoft 365 Apps for enterprise enables Copilot experiences to take place inside individual apps, such as Word, PowerPoint, Teams, Excel, Outlook, and more. As a result of this integration, the requirements for using Microsoft Copilot for Microsoft 365 are nearly identical to the requirements for using Microsoft 365 Apps for enterprise.
+The integration of Microsoft Copilot for Microsoft 365 and Microsoft 365 Apps enables Copilot experiences to take place inside individual apps, such as Word, PowerPoint, Teams, Excel, Outlook, and more. As a result of this integration, the requirements for using Microsoft Copilot for Microsoft 365 are nearly identical to the requirements for using Microsoft 365 Apps.
 
 ## Prerequisites
 
-The following are the prerequisites for using Microsoft Copilot for Microsoft 365. If your organization uses Microsoft 365 E3 or E5, A3, or A5 today, then you likely already meet most of these prerequisites.
+The following are the prerequisites for using Microsoft Copilot for Microsoft 365. Copilot for Microsoft 365 requires the user to have a prerequisite base license assigned. You can find the list of eligible base licenses [here]().
 
-### Microsoft 365 Apps for enterprise
+### Microsoft 365 Apps
 
-[Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to deploy to your users.
+[Microsoft 365 Apps](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to deploy to your users.
 
 > [!NOTE]
 > - For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
@@ -55,6 +55,8 @@ Microsoft Copilot for Microsoft 365 will be supported on classic Outlook for Win
 ### Microsoft Teams
 
 You can use the [Microsoft Teams setup guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoftteamssetupguide) in the Microsoft 365 admin center to configure popular Teams settings, including external access, guest access, team creation permissions, and more.  Copilot in Teams is available on Windows, Mac, web, Android, and iOS.
+
+To enable Copilot in Teams to reference meeting content after the meeting has ended, transcription or meeting recording must be enabled. If the meeting is not recorded or transcribed, Copilot can only reference meeting content during the call. To learn more about configuring transcription and recording, see [Configure transcription and captions for Teams meetings](/microsoftteams/meeting-transcription-captions) and [Teams meeting recording](/microsoftteams/meeting-recording).
 
 ### Microsoft Loop
 
@@ -82,8 +84,8 @@ Microsoft Copilot for Microsoft 365 users require a license for Microsoft 365 E3
 
 ## Conditional Access
 
-While Copilot supports Conditional Access Policies in SharePoint Online configured to target "all cloud apps" or "Office 365 group," Microsoft 365 Chat does not currently support Conditional Access policies configured to the SharePoint Online app directly. We anticipate deploying a change in coming weeks.
+While Copilot supports Conditional Access Policies in SharePoint Online configured to target "all cloud apps" or "Office 365 group," Microsoft Copilot does not currently support Conditional Access policies configured to the SharePoint Online app directly. We anticipate deploying a change in coming weeks.
 
 ## Restricted Access Control
 
-Microsoft 365 Chat does not currently support Restricted Access Control and Microsoft 365 Information Barriers (Implicit and Owner moderated mode) on sites. Support for both policies is intended.  We anticipate deploying a change in coming weeks.
+Microsoft Copilot does not currently support Restricted Access Control and Microsoft 365 Information Barriers (Implicit and Owner moderated mode) on sites. Support for both policies is intended.  We anticipate deploying a change in coming weeks.
