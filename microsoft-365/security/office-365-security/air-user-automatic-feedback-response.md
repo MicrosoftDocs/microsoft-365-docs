@@ -14,6 +14,9 @@ appliesto:
 
 # Automatic user notifications for user reported phishing results in AIR
 
+> [!NOTE]
+> The features described in this article are currently in Private Preview, aren't available in all organizations, and are subject to change.
+
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can configure the backend for messages that users report as malicious or not malicious in Outlook (send to Microsoft, send to a reporting mailbox, or both), and configure the various notification options for user reported messages. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 In Microsoft 365 organizations with Microsoft Defender for Office 365 Plan 2, when a user reports a message as phishing, an investigation is automatically created in [automated investigation and response (AIR)](air-about.md). Admins can configure the user reported message settings to send an email notification to the user who reported the message based on the verdict from AIR. This notification is also known as _automatic feedback response_.
