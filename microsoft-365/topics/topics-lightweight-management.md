@@ -1,10 +1,10 @@
 ---
 ms.date: 09/11/2023
 title: Topics lightweight management in Viva Engage
-ms.author: daisyfeller
+ms.author: ergradel
 author: daisyfell
-manager: pamgreen
-ms.reviewer: yihan1
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:

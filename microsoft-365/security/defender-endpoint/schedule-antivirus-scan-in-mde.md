@@ -53,12 +53,11 @@ Use the following steps to schedule scans:
 
 1. Connect to the RedHat server using PuTTY.
 1. Edit the anacron file:
-
    ```shell
    vi /etc/anacron
    ```
 
-   :::image type="content" source="images/vi_etc_anacron.png" alt-text="anacron file":::
+1.  :::image type="content" source="images/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="images/vi_etc_anacron.png" link="images/vi_etc_anacron.png":::
 
    ```shell
    # /etc/anacrontab: configuration file for anacron
@@ -83,7 +82,7 @@ Use the following steps to schedule scans:
    ls -lh /etc/cron*
    ```
 
-   :::image type="content" source="images/ls_lh_etc_cron.png" alt-text="anacron jobs":::
+    :::image type="content" source="images/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="images/vi_etc_anacron.png" link="images/vi_etc_anacron.png":::
 
    ```shell
    [root@redhat7 /] # ls -lh /etc/cron*
@@ -197,3 +196,4 @@ Use the following steps to schedule scans:
     [root@redhat7 cron.weekly] #
     ```
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

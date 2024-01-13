@@ -2,8 +2,8 @@
 title: Resources for Microsoft partners working with small and medium-sized businesses
 description: Download our new security guide or integrate your remote monitoring and management (RMM) tools and professional service automation (PSA) software with Defender for Business, Microsoft 365 Business Premium, Defender for Endpoint, and Microsoft 365 Lighthouse.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
