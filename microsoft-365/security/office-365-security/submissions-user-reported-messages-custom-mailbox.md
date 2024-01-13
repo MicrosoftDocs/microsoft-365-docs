@@ -198,6 +198,9 @@ When **Monitor reported messages in Outlook** is selected and you also select **
 
   - **Automatically email users the results of the investigation**: This feature is available only in Defender for Office 365 Plan 2 organizations with [automated investigation and response (AIR)](air-about.md).
 
+    > [!NOTE]
+    > This feature is currently in Private Preview, isn't available in all organizations, and is subject to change.
+
     If a user reports a message as phishing, an investigation in AIR is automatically created. The following options send notification email to the user who reported the message based on the results from AIR (select one or more options):
 
     - **Phishing or malware**: An email notification is sent to the user who reported the message as phishing when AIR identifies the threat as phishing, high confidence phishing, or malware.
