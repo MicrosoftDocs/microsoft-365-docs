@@ -2,8 +2,8 @@
 title: View your Microsoft Defender Vulnerability Management dashboard in Microsoft Defender for Business
 description: Use your Microsoft Defender Vulnerability Management dashboard to see important items to address in Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: conceptual

@@ -85,7 +85,6 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
    Detailed changes and limitations are in the documentation shared with you as part of this private preview.
 
 1. Select **Connect**.
-1. You might need to wait up to 6 hours until all experiences are fully connected.
 
 After your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready.  You'll also see the **Overview** page updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
 

@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 10/16/2023
 ---
 
 # CloudAppEvents
@@ -33,7 +33,6 @@ ms.date: 02/16/2021
 The `CloudAppEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving accounts and objects in Office 365 and other [cloud apps and services](#apps-and-services-covered). Use this reference to construct queries that return information from this table.
 
 
-
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
@@ -42,7 +41,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ActionType` | `string` | Type of activity that triggered the event |
 | `Application` | `string` | Application that performed the recorded action |
 | `ApplicationId` | `int` | Unique identifier for the application |
-| `AppInstanceId` | `int` | Unique identifier for the instance of an application |
+| `AppInstanceId` | `int` | Unique identifier for the instance of an application. To convert this to Microsoft Defender for Cloud Apps App-connector-ID use `CloudAppEvents|distinct ApplicationId,AppInstanceId,binary_or(binary_shift_left(AppInstanceId,20),ApplicationId)|order by ApplicationId,AppInstanceId` |
 | `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `AccountId` | `string` | An identifier for the account as found by Microsoft Defender for Cloud Apps. Could be Microsoft Entra ID, user principal name, or other identifiers. |
 | `AccountDisplayName` | `string` | Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user. |
@@ -72,23 +71,20 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 ## Apps and services covered
 
-The **CloudAppEvents** table contains enriched logs from all SaaS applications connected to Microsoft Defender for Cloud Apps. In your organization, this might include apps such as the following, and more:
-
-- Office 365 and Microsoft applications, such as:
-
-  - Exchange Online
-  - SharePoint Online
-  - Microsoft Teams
-  - Dynamics 365
-  - Skype for Business
-  - Viva Engage
-  - Power Automate
-  - Power BI
-
-- Dropbox
-- Salesforce
-- GitHub
-- Atlassian
+The __CloudAppEvents__ table contains enriched logs from all SaaS applications connected to Microsoft Defender for Cloud Apps, such as:
+- Office 365 and Microsoft Applications, including:
+   - Exchange Online
+   - SharePoint Online
+   - Microsoft Teams
+   - Dynamics 365
+   - Skype for Business
+   - Viva Engage
+   - Power Automate
+   - Power BI
+   - Dropbox
+   - Salesforce
+   - GitHub
+   - Atlassian
 
 Connect supported cloud apps for instant, out-of-the-box protection, deep visibility into the app's user and device activities, and more. For more information, see [Protect connected apps using cloud service provider APIs](/defender-cloud-apps/protect-connected-apps).
 
@@ -100,4 +96,4 @@ Connect supported cloud apps for instant, out-of-the-box protection, deep visibi
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
+
