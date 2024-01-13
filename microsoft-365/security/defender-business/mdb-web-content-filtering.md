@@ -1,8 +1,8 @@
 ---
 title: Set up web content filtering in Microsoft Defender for Business            
 description: Learn how to set up, view, and edit your web content filtering policy in Microsoft Defender for Business.            
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 ms.date: 06/28/2023
 ms.topic: how-to
