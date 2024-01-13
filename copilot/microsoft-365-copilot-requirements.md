@@ -26,7 +26,7 @@ The integration of Microsoft Copilot for Microsoft 365 and Microsoft 365 Apps en
 
 ## Prerequisites
 
-The following are the prerequisites for using Microsoft Copilot for Microsoft 365. Copilot for Microsoft 365 requires the user to have a prerequisite base license assigned. You can find the list of eligible base licenses [here]().
+The following are the prerequisites for using Microsoft Copilot for Microsoft 365. Copilot for Microsoft 365 requires the user to have a prerequisite base license assigned. You can find the list of eligible base licenses in the [Microsoft Copilot for Microsoft 365 service description guide](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot).
 
 ### Microsoft 365 Apps
 
@@ -88,4 +88,4 @@ While Copilot supports Conditional Access Policies in SharePoint Online configur
 
 ## Restricted Access Control
 
-Microsoft Copilot does not currently support Restricted Access Control and Microsoft 365 Information Barriers (Implicit and Owner moderated mode) on sites. Support for both policies is intended.  We anticipate deploying a change in coming weeks.
+Microsoft Copilot does not currently support Restricted Access Control and Microsoft Purview Information Barriers (Implicit and Owner moderated mode) on sites. Support for both policies is intended.  We anticipate deploying a change in coming weeks.
