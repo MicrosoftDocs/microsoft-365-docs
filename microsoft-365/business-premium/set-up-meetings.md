@@ -2,8 +2,8 @@
 title: "Set up online meetings in Microsoft Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual

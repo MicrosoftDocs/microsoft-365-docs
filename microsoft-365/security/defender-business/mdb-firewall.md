@@ -2,8 +2,8 @@
 title: Firewall in Microsoft Defender for Business
 description: Learn about Windows Defender Firewall settings in Defender for Business. Firewall can help prevent unwanted network traffic from flowing to your company devices.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
