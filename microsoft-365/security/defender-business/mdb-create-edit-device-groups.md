@@ -2,8 +2,8 @@
 title: Device groups in Microsoft Defender for Business
 description: Security policies are applied to devices through device groups in Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: how-to

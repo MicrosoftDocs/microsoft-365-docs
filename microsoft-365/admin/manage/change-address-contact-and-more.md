@@ -23,7 +23,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to make changes to your organization's profile, including the organization name, address, phone number, and technical contact."
-ms.date: 10/06/2023
+ms.date: 01/1/2024
 ---
 
 # Change your organization's address and technical contact in the Microsoft 365 admin center
@@ -44,9 +44,9 @@ You can change most of your organization’s profile information in the Microsof
 
 The steps to change your organization’s name depend on the type of billing account that you have. [Find out what type of billing account you have](../../commerce/manage-billing-accounts.md#view-my-billing-accounts).
 
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you can change your organization’s name in the Microsoft 365 admin center. To change your organization’s name, follow the steps in [Edit organization information](#edit-organization-information).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you can’t change your organization’s name without assistance. [Complete this form](https://www.microsoft.com/download/details.aspx?id=102732), then contact support to get help with changing your organization’s name.
 
-- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you can’t change your organization’s name without assistance. Contact support to get help with changing your organization’s name.
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you can change your organization’s name in the Microsoft 365 admin center. To change your organization’s name, follow the steps in [Edit organization information](#edit-organization-information).
 
 ### Change your country/region
 
@@ -54,7 +54,7 @@ You can't change the country/region for your subscription. The country/region wh
 
 ### Edit organization information
 
-To change information on your organization's profile page, use the following steps.0
+To change information on your organization's profile page, use the following steps.
   
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 2. In the **Navigation menu**, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
