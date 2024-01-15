@@ -196,10 +196,18 @@ When **Monitor reported messages in Outlook** is selected and you also select **
 
        When you're finished in the **Customize admin review email notifications** flyout, select **Confirm** to return to the **User reported settings** page.
 
-  - **Automatically email users the results of the investigation**: If you select this option, select one or more of the following values that appear:
-    - **Phishing or malware**
-    - **Spam**
-    - **No threats found**
+  - **Automatically email users the results of the investigation**: This feature is available only in Defender for Office 365 Plan 2 organizations with [automated investigation and response (AIR)](air-about.md).
+
+    > [!NOTE]
+    > This feature is currently in Private Preview, isn't available in all organizations, and is subject to change.
+
+    If a user reports a message as phishing, an investigation in AIR is automatically created. The following options send notification email to the user who reported the message based on the results from AIR (select one or more options):
+
+    - **Phishing or malware**: An email notification is sent to the user who reported the message as phishing when AIR identifies the threat as phishing, high confidence phishing, or malware.
+    - **Spam**: An email notification is sent to the user who reported the message as phishing when AIR identifies the threat as spam.
+    - **No threats found**: An email notification is sent to the user who reported the message as phishing when AIR identifies no threat.
+
+    For more information, see [Automatic user notifications for user reported phishing results in AIR](air-user-automatic-feedback-response.md).
 
   - **Customize sender and branding** section:
     - **Specify a Microsoft 365 mailbox to use ads the From address of email notifications**: Select this option and enter the sender's email address in the box that appears. If you don't select this option, the default sender is submissions@messaging.microsoft.com.

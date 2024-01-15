@@ -2,8 +2,8 @@
 title: View or edit device protection policies
 description: View, edit, create, and delete device protection policies in Microsoft 365 Business Premium
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+ms.author: siosulli
+author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
