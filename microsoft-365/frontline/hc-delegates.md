@@ -23,7 +23,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-description: Learn how a user with Away status or Do Not Disturb status can set another user as a delegate in their Teams status message.
+description: Learn how a user with Away status or Do not disturb status can set another user as a delegate in their Teams status message.
 ms.custom: seo-marvel-mar2020
 ms.date: 11/03/2022
 ---
@@ -43,4 +43,4 @@ Users can initiate this process themselves. No admin involvement is required to 
 
 ## Example scenario
 
-Dr. Ravi Costa is on call at the radiology department. Dr. Costa receives an urgent personal call and has to step away for the next couple of hours. They ask a peer in the radiology department, Dr. Robin Becker to cover for them while they're away. They change their status in Teams to Away and set a status message that says "I'm unavailable for the next few hours. Please contact @DrBecker for any emergencies." Dr. Becker is notified in Teams, and team members who try to contact Dr. Costa see the status message and know to contact Dr. Becker in the meantime.
+Ravi Costa is a doctor on call at the radiology department. Ravi receives an urgent personal call and has to step away for the next couple of hours. Ravi asks a peer in the radiology department, Max Morin, to cover for them while they're away. They change their status in Teams to Away and set a status message that says "I'm unavailable for the next few hours. Contact @MaxMorin for any emergencies." Max is notified in Teams, and team members who try to contact Ravi see the status message and know to contact Max in the meantime.

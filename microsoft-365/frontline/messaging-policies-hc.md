@@ -34,7 +34,7 @@ Messaging policies are used to control which chat and channel messaging features
 
 You can use the global (Org-wide default) policy that's automatically created or create and assign custom messaging policies. Users in your organization automatically get the global policy unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the features that you want.
 
-For example, you might choose to only allow certain job roles to use certain features (perhaps doctors and nurses only) and other workers (like the janitorial or food services staff) to get a more limited set of features. Decide for yourself what needs your organization has, the guidance here is at most a suggestion.
+For example, you might choose to only allow certain job roles to use certain features (perhaps doctors and nurses only) and other workers (like food services staff) to get a more limited set of features. Decide for yourself what needs your organization has, the guidance here is at most a suggestion.
 
 You manage messaging policies in the Teams admin center. To learn more, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams).
 
@@ -42,9 +42,9 @@ The following messaging policy settings are of special interest for healthcare o
 
 ## Read receipts
 
-Read receipts allows the sender of a chat message to know when their message was read by the recipient in 1:1 chats and in group chats of 20 people or less. Use this setting to specify whether read receipts are user controlled, on for everyone, or off for everyone. Message read receipts are important in healthcare organizations because they remove uncertainly about whether a message was read.
+[Read receipts](https://support.microsoft.com/office/use-read-receipts-for-messages-in-microsoft-teams-533f2334-32ef-424b-8d56-ed30e019f856) allows the sender of a chat message to know when their message was read by the recipient in 1:1 chats and in group chats of 20 people or less. Use this setting to specify whether read receipts are user controlled, on for everyone, or off for everyone. Message read receipts are important in healthcare organizations because they remove uncertainly about whether a message was read.
 
-For healthcare applications, choose either **User controlled** or **On for everyone**. Keep in mind that when using the **On for everyone** setting, the only way to set receipts for the whole tenant is either to have only one messaging policy for the whole tenant (the default policy named "Global (Org-wide Default)") or to have all messaging policies in the tenant use the same settings for receipts. The read receipts feature is most effective when set to **On for everyone**.
+For healthcare applications, choose either **User controlled** or **On for everyone**. Keep in mind that when using the **On for everyone** setting, the only way to set receipts for the whole tenant is either to have only one messaging policy for the whole tenant (the default global policy) or to have all messaging policies in the tenant use the same settings for receipts. The read receipts feature is most effective when set to **On for everyone**.
 
 <!--*Usage example without read receipts:* Jakob Roth, a high risk patient, is admitted to the hospital. Sofia Krause is a nurse working as part of the inter-disciplinary team (IDT) of medical workers, including different specialists, is assigned as the primary care coordinator in charge of this patient. Sofia sends emails and other instant messages to a group of nurses and doctors who use various messaging clients and apps, and often gets no response or indication whether a message was read by team members. Due to tangled communication processes, Jakob's medication is misapplied and his hospital stay is extended.-->
 
@@ -54,13 +54,13 @@ Remy Morris, a high-risk patient, is admitted to the hospital. Sofia Krause is a
 
 ## Send urgent messages using priority notifications
 
-A user can mark a message as *urgent* when sending chat messages to other users. This feature helps hospital staff alert one another when a critical incident requires their attention. [Urgent messages using priority notifications](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) notify users every two minutes for up to 20 minutes or until the message is read by the recipient, maximizing the likelihood that the message is acted upon in a timely manner.
+A user can mark a message as *urgent* when sending chat messages to other users. This feature helps hospital staff alert one another when a critical incident requires their attention. [Urgent messages using priority notifications](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) notify users every two minutes for up to 20 minutes or until the recipient reads the message, maximizing the likelihood that the message is acted upon in a timely manner.
 
 An admin can enable or disable the ability for users assigned this policy to send priority notifications. This feature is on by default. The recipient of the priority message might not have the same messaging policy, and won't be able to disable receiving priority messages. For healthcare applications, we recommend enabling the feature for at least some users, but you'll need to determine which ones.
 
 ### Example scenario
 
-Sofia Krause is readmitting a patient, Jakob Roth. Manuela Carstens, a physician, is the primary care doctor for this patient. Sofia sends an urgent message to Manuela using priority notifications asking for immediate help with triage of Jakob. Manuela's phone receives the message but Manuela didn't feel the phone vibration and doesn't reply. Teams renotifies Manuela and continues to repeatedly renotify until Manuela reads the message. If read receipts are also enabled, Sofia can be aware that the message was read by Manuela, even before Manuela decides how to respond.
+Sofia Krause is readmitting a patient, Jakob Roth. Manuela Carstens, a physician, is the primary care doctor for this patient. Sofia sends an urgent message to Manuela using priority notifications asking for immediate help with triage of Jakob. Manuela's phone receives the message but Manuela didn't feel the phone vibration and doesn't reply. Teams renotifies Manuela and continues to repeatedly notify until Manuela reads the message. If read receipts are also enabled, Sofia is aware that the message was read by Manuela, even before Manuela decides how to respond.
 
 ## Related articles
 
