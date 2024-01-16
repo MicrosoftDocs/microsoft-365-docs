@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 12/01/2023
+ms.date: 01/16/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -29,7 +29,7 @@ You can also use the translation feature for translating video transcripts and c
 
 ### Supported file types
 
-Document translation is available for the following file types: .doc, .docx, .pdf, .xls, .xlsx, .rtf, and .txt.
+Document translation is available for the following file types: .csv, .docx, .htm, .html, .markdown, .md, .msg, .pdf, .pptx, .txt, and .xlsx. For legacy file types .doc, .rtf, .xls, .ods.ppt, and .odp, the translated copy will be created in the modern equivalent (.docx, .xlsx, or .pptx).
 
 ### Supported languages
 

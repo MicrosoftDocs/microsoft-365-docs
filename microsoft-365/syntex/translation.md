@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 12/01/2023
+ms.date: 01/16/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -35,7 +35,7 @@ To create a translated version of a document, follow these steps:
 
    ![Screenshot showing the Translate documents screen with language options.](../media/content-understanding/translation-translate-documents.png)
 
-3. You'll receive a confirmation message that the file has been translated.
+3. You'll receive a confirmation message that the request to translate has been translated.
 
    ![Screenshot showing the translation confirmation screen.](../media/content-understanding/translation-confirmation.png)
 
@@ -90,7 +90,7 @@ To create a rule to translate documents automatically when data in a column chan
      ![Screenshot of the Create a rule page showing the A new file is added option highlighted.](../media/content-understanding/translation-column-enter-language.png)
 
 4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
-
+<!--->
 ### View the translation activity feed of a document library
 
 When a file is translated, you'll see an update in the source library activity feed. The updates occur in both the source library and the target library.
@@ -98,7 +98,7 @@ When a file is translated, you'll see an update in the source library activity f
 In the document library, in the upper-right corner of the page, select the details pane icon (![Screenshot of the details pane icon.](../media/content-understanding/details-pane-icon.png)) to view the recent history, activity, and rules that have been applied to the library.
 
    ![Screenshot of a document library showing the details pane highlighted.](../media/content-understanding/content-processing-details-pane.png)
-
+--->
 ## Translate a video transcript
 
 To create a translated version of a video transcript or closed captioning, see [How to translate transcripts in Stream for SharePoint](https://prod.support.services.microsoft.com/office/microsoft-syntex-pay-as-you-go-transcript-translations-in-stream-for-sharepoint-2e34ad1b-e213-47ed-a806-5cc0d88751de#bkmk_howtotranslate).
