@@ -56,7 +56,7 @@ You create and assign quarantine policies in the Microsoft Defender portal or in
 - How long messages that were quarantined by anti-spam and anti-phishing protection are held before they expire is controlled by the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) in anti-spam policies. For more information, see the table in [Quarantine retention](quarantine-about.md#quarantine-retention).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)**.
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
     - **Organization Management**
     - **Security Administrator**

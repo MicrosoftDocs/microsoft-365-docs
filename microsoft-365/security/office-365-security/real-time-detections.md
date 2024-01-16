@@ -146,7 +146,7 @@ Security Operations teams need to assign licenses for all users who should be pr
 
 To view and use Explorer or Real-time detections, you need to be assigned permissions. You have the following options:
 
-- [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Defender portal only, not PowerShell):
+- [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell):
   - _Read access for email and Teams message headers_: **Security operations/Raw data (email & collaboration)/Email message headers (read)**.
   - _Preview and download email messages_: **Security operations/Raw data (email & collaboration)/Email content (read)**.
   - _Remediate malicious email_: **Security operations/Security data/Email advanced actions (manage)**.

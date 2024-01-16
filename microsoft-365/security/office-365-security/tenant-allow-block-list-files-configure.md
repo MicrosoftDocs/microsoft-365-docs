@@ -55,7 +55,7 @@ This article describes how admins can manage entries for files in the Microsoft 
 - An entry should be active within 5 minutes.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Defender portal only, not PowerShell): **Authorization and settings/Security settings/Detection tuning (manage)** or **Authorization and settings/Security settings/Core security settings (read)**.
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Detection tuning (manage)** or **Authorization and settings/Security settings/Core security settings (read)**.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Add and remove entries from the Tenant Allow/Block List_: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).

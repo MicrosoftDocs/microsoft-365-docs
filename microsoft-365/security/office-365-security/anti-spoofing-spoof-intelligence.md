@@ -68,7 +68,7 @@ The rest of this article explains how to use the spoof intelligence insight in t
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Allow or block spoofed senders or turn on or turn off spoof intelligence_: Membership in one of the following role groups:
       - **Organization Management**

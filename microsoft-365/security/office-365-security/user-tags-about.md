@@ -50,7 +50,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 - You open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Defender portal only, not PowerShell): **Authorization and settings/System settings/manage** or **Authorization and settings/System settings/Read-only**.
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/System settings/manage** or **Authorization and settings/System settings/Read-only**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
     - _Create, modify, and delete custom user tags_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Apply and remove the Priority account tag from users_: Membership in the **Security Administrator** and **Exchange Admin** role groups.
