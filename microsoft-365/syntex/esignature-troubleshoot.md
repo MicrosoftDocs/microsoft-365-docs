@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use Microsoft SharePoint eSignature to create and send electronic signature requests to people inside and outside of your organization. 
+description: Learn how to troubleshoot issues with sending, receiving, or viewing requests in Microsoft SharePoint eSignature. 
 ---
 
 # Troubleshoot a signature request for Microsoft SharePoint eSignature
