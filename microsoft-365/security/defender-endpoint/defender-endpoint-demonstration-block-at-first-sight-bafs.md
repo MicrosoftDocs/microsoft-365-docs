@@ -37,7 +37,7 @@ Block at First Sight, is a feature of Microsoft Defender Antivirus cloud-deliver
 ## Scenario requirements and setup
 
 - Windows 11, Windows 10 Anniversary update (1607) or later
-- Windows Server 2022, Windows Server 2019, Windows Server 2016, and Windows Server 2012 R2 with the new unified MDE client. 
+- Windows Server 2022, Windows Server 2019, Windows Server 2016, and Windows Server 2012 R2 with the new unified Defender for Endpoint client. 
 
 - Cloud protection is enabled
 - You can [download and use the Powershell script](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others
