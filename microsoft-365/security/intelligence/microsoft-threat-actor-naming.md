@@ -17,13 +17,10 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/03/2024
+ms.date: 01/15/2024
 ---
 
 # How Microsoft names threat actors
-
-> [!IMPORTANT]
-> Learn about how [Volt Typhoon targets US critical infrastructure with living-off-the-land techniques](https://www.microsoft.com/en-us/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques/#:~:text=Volt%20Typhoon%20has%20been%20active%20since%20mid-2021%20and,construction%2C%20maritime%2C%20government%2C%20information%20technology%2C%20and%20education%20sectors)
 
 Microsoft shifted to a new naming taxonomy for threat actors aligned with the theme of weather. We intend to bring better clarity to customers and other security researchers with the nex taxonomy. We offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves and aid security researchers already confronted with an overwhelming amount of threat intelligence data.
 
@@ -57,81 +54,109 @@ The table shows how the new family names map to the threat actors that we track.
 
 Use the following reference table to understand how our previously publicly disclosed old threat actor names translate to our new taxonomy.
 
-|Previous name|New name|Origin/Threat|Other names|
+|Threat actor name|Previous name|Origin/Threat|Other names|
 |---|:---:|:---:|:---:|
-|ACTINIUM|Aqua Blizzard|Russia|UNC530, Primitive Bear, Gamaredon|
-|AMERICIUM|Pink Sandstorm|Iran|Agrius, Deadwood, BlackShadow, SharpBoys|
-|BARIUM|Brass Typhoon|China|APT41|
-|BISMUTH|Canvas Cyclone|Vietnam|APT32, OceanLotus|
-|BOHRIUM|Smoke Sandstorm|Iran||
-|BROMINE|Ghost Blizzard|Russia|Energetic Bear, Crouching Yeti|
-|CERIUM|Ruby Sleet|North Korea||
-|CHIMBORAZO|Spandex Tempest|Financially motivated|TA505|
-|CHROMIUM|Charcoal Typhoon|China|ControlX|
-|COPERNICIUM|Sapphire Sleet|North Korea|Genie Spider, BlueNoroff|
-|CURIUM|Crimson Sandstorm|Iran|TA456, Tortoise Shell|
-|DUBNIUM|Zigzag Hail|South Korea|Dark Hotel, Tapaoux|
-|ELBRUS|Sangria Tempest|Financially motivated|Carbon Spider, FIN7|
-|EUROPIUM|Hazel Sandstorm|Iran|Cobalt Gypsy, APT34, OilRig|
-|GADOLINIUM|Gingham Typhoon|China|APT40, Leviathan, TEMP.Periscope, Kryptonite Panda|
-|GALLIUM|Granite Typhoon|China||
-|HAFNIUM|Silk Typhoon|China||
-|HOLMIUM|Peach Sandstorm|Iran|APT33, Refined Kitten|
-|IRIDIUM|Seashell Blizzard|Russia|Sandworm|
-|KNOTWEED|Denim Tsunami|Private sector offensive actor|DSIRF|
-|KRYPTON|Secret Blizzard|Russia|Venomous Bear, Turla, Snake|
-|LAWRENCIUM|Pearl Sleet|North Korea||
-|MANGANESE|Mulberry Typhoon|China|APT5, Keyhole Panda, TABCTENG|
-|MERCURY|Mango Sandstorm|Iran|MuddyWater, SeedWorm, Static Kitten, TEMP.Zagros|
-|NEPTUNIUM|Cotton Sandstorm|Iran|Vice Leaker|
-|NICKEL|Nylon Typhoon|China|ke3chang, APT15, Vixen Panda|
-|NOBELIUM|Midnight Blizzard|Russia|APT29, Cozy Bear|
-|OSMIUM|Opal Sleet|North Korea|Konni|
-|PARINACOTA|Wine Tempest|Financially motivated|Wadhrama|
-|PHOSPHORUS|Mint Sandstorm|Iran|APT35, Charming Kitten|
-|PLUTONIUM|Onyx Sleet|North Korea|Silent Chollima, Andariel, DarkSeoul|
-|POLONIUM|Plaid Rain|Lebanon||
-|RADIUM|Raspberry Typhoon|China|APT30, LotusBlossom|
-|RUBIDIUM|Lemon Sandstorm|Iran|Fox Kitten, UNC757, PioneerKitten|
-|SEABORGIUM|Star Blizzard|Russia|Callisto, Reuse Team|
-|SILICON|Marbled Dust|Türkiye|Sea Turtle|
-|SOURGUM|Caramel Tsunami|Private sector offensive actor|Candiru|
-|SPURR|Tomato Tempest|Financially motivated|Vatet|
-|STRONTIUM|Forest Blizzard|Russia|APT28, Fancy Bear|
-|TAAL|Camouflage Tempest|Financially motivated|FIN6, Skeleton Spider|
-|THALLIUM|Emerald Sleet|North Korea|Kimsuky, Velvet Chollima|
-|ZINC|Diamond Sleet|North Korea|Labyrinth Chollima, Lazarus|
-|ZIRCONIUM|Violet Typhoon|China|APT31|
-
-|Previous name|New name|Origin/Threat|Other names|
-|---|:---:|:---:|:---:|
-|DEV-0146|Pumpkin Sandstorm|Iran|ZeroCleare|
-|DEV-0193|Periwinkle Tempest|Financially motivated|Wizard Spider, UNC2053|
-|DEV-0196|Carmine Tsunami|Private sector offensive actor|QuaDream|
-|DEV-0198 (NEPTUNIUM)|Cotton Sandstorm|Iran|Vice Leaker|
-|DEV-0206|Mustard Tempest|Financially motivated|Purple Vallhund|
-|DEV-0215 (LAWRENCIUM)|Pearl Sleet|North Korea||
-|DEV-0227 (AMERICIUM)|Pink Sandstorm|Iran|Agrius, Deadwood, BlackShadow, SharpBoys|
-|DEV-0228|Cuboid Sandstorm|Iran||
-|DEV-0234|Lilac Typhoon|China||
-|DEV-0237|Pistachio Tempest|Financially motivated|FIN12|
-|DEV-0243|Manatee Tempest|Financially motivated|EvilCorp, UNC2165, Indrik Spider|
-|DEV-0257|Storm-0257|Group in development|UNC1151|
-|DEV-0322|Circle Typhoon|China||
-|DEV-0336|Night Tsunami|Private sector offensive actor|NSO Group|
-|DEV-0343|Gray Sandstorm|Iran||
-|DEV-0401|Cinnamon Tempest|Financially motivated|Emperor Dragonfly, Bronze Starlight|
-|DEV-0500|Marigold Sandstorm|Iran|Moses Staff|
-|DEV-0504|Velvet Tempest|Financially motivated||
-|DEV-0530|Storm-0530|North Korea|H0lyGh0st|
-|DEV-0537|Strawberry Tempest|Financially motivated|LAPSUS$|
-|DEV-0586|Cadet Blizzard|Russia||
-|DEV-0605|Wisteria Tsunami|Private sector offensive actor|CyberRoot|
-|DEV-0665|Sunglow Blizzard|Russia||
-|DEV-0796|Phlox Tempest|Financially motivated|ClickPirate, Chrome Loader, Choziosi loader|
-|DEV-0832|Vanilla Tempest|Financially motivated||
-|DEV-0950|Lace Tempest|Financially motivated|FIN11, TA505|
-|DEV-XXXX|[Volt Typhoon](https://www.microsoft.com/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques) |China|BRONZE SILHOUETTE|
+|Aqua Blizzard|ACTINIUM|Russia|UNC530, Primitive Bear, Gamaredon|
+|Blue Tsunami||Private sector offensive actor|Black Cube|
+|Brass Typhoon|BARIUM|China|APT41|
+|Cadet Blizzard|DEV-0586|Russia||
+|Camouflage Tempest|TAAL|Financially motivated|FIN6, Skeleton Spider|
+|Canvas Cyclone|BISMUTH|Vietnam|APT32, OceanLotus|
+|Caramel Tsunami|SOURGUM|Private sector offensive actor|Candiru|
+|Carmine Tsunami|DEV-0196|Private sector offensive actor|QuaDream|
+|Charcoal Typhoon|CHROMIUM|China|ControlX|
+|Cinnamon Tempest|DEV-0401|Financially motivated|Emperor Dragonfly, Bronze Starlight|
+|Circle Typhoon|DEV-0322|China||
+|Citrine Sleet|DEV-0139, DEV-1222|North Korea|AppleJeus, Labyrinth Chollima, UNC4736|
+|Cotton Sandstorm|DEV-0198 (NEPTUNIUM)|Iran|Vice Leaker|
+|Crimson Sandstorm|CURIUM|Iran|TA456, Tortoise Shell|
+|Cuboid Sandstorm|DEV-0228|Iran||
+|Denim Tsunami|KNOTWEED|Private sector offensive actor|DSIRF|
+|Diamond Sleet|ZINC|North Korea|Labyrinth Chollima, Lazarus|
+|Emerald Sleet|THALLIUM|North Korea|Kimsuky, Velvet Chollima|
+|Flax Typhoon|Storm-0919|China|Ethereal Panda|
+|Forest Blizzard|STRONTIUM|Russia|APT28, Fancy Bear|
+|Ghost Blizzard|BROMINE|Russia|Energetic Bear, Crouching Yeti|
+|Gingham Typhoon|GADOLINIUM|China|APT40, Leviathan, TEMP.Periscope, Kryptonite Panda|
+|Granite Typhoon|GALLIUM|China||
+|Gray Sandstorm|DEV-0343|Iran||
+|Hazel Sandstorm|EUROPIUM|Iran|Cobalt Gypsy, APT34, OilRig|
+|Jade Sleet|Storm-0954|North Korea|TraderTraitor, UNC4899|
+|Lace Tempest|DEV-0950|Financially motivated|FIN11, TA505|
+|Lemon Sandstorm|RUBIDIUM|Iran|Fox Kitten, UNC757, PioneerKitten|
+|Lilac Typhoon|DEV-0234|China||
+|Manatee Tempest|DEV-0243|Financially motivated|EvilCorp, UNC2165, Indrik Spider|
+|Mango Sandstorm|MERCURY|Iran|MuddyWater, SeedWorm, Static Kitten, TEMP.Zagros|
+|Marbled Dust|SILICON|Türkiye|Sea Turtle|
+|Marigold Sandstorm|DEV-0500|Iran|Moses Staff|
+|Midnight Blizzard|NOBELIUM|Russia|APT29, Cozy Bear|
+|Mint Sandstorm|PHOSPHORUS|Iran|APT35, Charming Kitten|
+|Mulberry Typhoon|MANGANESE|China|APT5, Keyhole Panda, TABCTENG|
+|Mustard Tempest|DEV-0206|Financially motivated|Purple Vallhund|
+|Night Tsunami|DEV-0336|Private sector offensive actor|NSO Group|
+|Nylon Typhoon|NICKEL|China|ke3chang, APT15, Vixen Panda|
+|Octo Tempest|Storm-0875|Financially motivated|0ktapus, Scattered Spider, UNC3944|
+|Onyx Sleet|PLUTONIUM|North Korea|Silent Chollima, Andariel, DarkSeoul|
+|Opal Sleet|OSMIUM|North Korea|Konni|
+|Peach Sandstorm|HOLMIUM|Iran|APT33, Refined Kitten|
+|Pearl Sleet|DEV-0215 (LAWRENCIUM)|North Korea||
+|Periwinkle Tempest|DEV-0193|Financially motivated|Wizard Spider, UNC2053|
+|Phlox Tempest|DEV-0796|Financially motivated|ClickPirate, Chrome Loader, Choziosi loader|
+|Pink Sandstorm|AMERICIUM|Iran|Agrius, Deadwood, BlackShadow, SharpBoys|
+|Pistachio Tempest|DEV-0237|Financially motivated|FIN12|
+|Plaid Rain|POLONIUM|Lebanon||
+|Pumpkin Sandstorm|DEV-0146|Iran|ZeroCleare|
+|Raspberry Typhoon|RADIUM|China|APT30, LotusBlossom|
+|Ruby Sleet|CERIUM|North Korea||
+|Sangria Tempest|ELBRUS|Financially motivated|Carbon Spider, FIN7|
+|Sapphire Sleet|COPERNICIUM|North Korea|Genie Spider, BlueNoroff|
+|Seashell Blizzard|IRIDIUM|Russia|Sandworm|
+|Secret Blizzard|KRYPTON|Russia|Venomous Bear, Turla, Snake|
+|Silk Typhoon|HAFNIUM|China||
+|Smoke Sandstorm|BOHRIUM|Iran||
+|Spandex Tempest|CHIMBORAZO|Financially motivated|TA505|
+|Star Blizzard|SEABORGIUM|Russia|Callisto, Reuse Team|
+|Storm-0062|DEV-0062|China|DarkShadow, Oro0lxy|
+|Storm-0133|DEV-0133|Iran|LYCEUM, HEXANE|
+|Storm-0216|DEV-0216|Financially motivated|Twisted Spider, UNC2198|
+|Storm-0257|DEV-0257|Group in development|UNC1151|
+|Storm-0324|DEV-0324|Financially motivated|TA543, Sagrid|
+|Storm-0381|DEV-0381|Financially motivated||
+|Storm-0530|DEV-0530|North Korea|H0lyGh0st|
+|Storm-0539||Financially motivated||
+|Storm-0558||China||
+|Storm-0569|DEV-0569|Financially motivated||
+|Storm-0587|DEV-0587|Russia|SaintBot, Saint Bear, TA471|
+|Storm-0744|DEV-0744|Financially motivated||
+|Storm-0829|DEV-0829|Group in development|Nwgen Team|
+|Storm-0835||Group in development|EvilProxy|
+|Storm-0867|DEV-0867|Egypt|Caffeine|
+|Storm-0971|DEV-0971|Financially motivated|(Merged into Octo Tempest)|
+|Storm-0978|DEV-0978|Group in development|RomCom, Underground Team|
+|Storm-1044|DEV-1044|Financially motivated|Danabot|
+|Storm-1084|DEV-1084|Iran|DarkBit|
+|Storm-1099||Russia||
+|Storm-1101|DEV-1101|Group in development|NakedPages|
+|Storm-1113|DEV-1113|Financially motivated||
+|Storm-1133||Palestinian Authority||
+|Storm-1152||Financially motivated||
+|Storm-1167|DEV-1167|Indonesia||
+|Storm-1283||Group in development||
+|Storm-1286||Group in development||
+|Storm-1295|DEV-1295|Group in development|Greatness|
+|Storm-1567||Financially motivated|Akira|
+|Storm-1575||Group in development|Dadsec|
+|Storm-1674||Financially motivated||
+|Strawberry Tempest|DEV-0537|Financially motivated|LAPSUS$|
+|Sunglow Blizzard|DEV-0665|Russia||
+|Tomato Tempest|SPURR|Financially motivated|Vatet|
+|Vanilla Tempest|DEV-0832|Financially motivated||
+|Velvet Tempest|DEV-0504|Financially motivated||
+|Violet Typhoon|ZIRCONIUM|China|APT31|
+|[Volt Typhoon](https://www.microsoft.com/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques)||China|BRONZE SILHOUETTE, VANGUARD PANDA|
+|Wine Tempest|PARINACOTA|Financially motivated|Wadhrama|
+|Wisteria Tsunami|DEV-0605|Private sector offensive actor|CyberRoot|
+|Zigzag Hail|DUBNIUM|South Korea|Dark Hotel, Tapaoux|
 
 Read our announcement about the new taxonomy for more information: [https://aka.ms/threatactorsblog](https://aka.ms/threatactorsblog)
 
