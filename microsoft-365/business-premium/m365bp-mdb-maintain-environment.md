@@ -2,13 +2,13 @@
 title: "Monitor and maintain Microsoft 365 Business Premium and Defender for Business"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
-ms.date: 11/30/2023
+ms.date: 01/12/2024
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns

@@ -1,10 +1,10 @@
 ---
 ms.date: 11/29/2021
 title: Save a topic as a draft in Topics
-ms.author: daisyfeller
+ms.author: cjtan
 author: daisyfell
-manager: pamgreen
-ms.reviewer: hoanth
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:

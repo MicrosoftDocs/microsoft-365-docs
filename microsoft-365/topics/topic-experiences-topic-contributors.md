@@ -1,11 +1,11 @@
 ---
 ms.date: 05/10/2022
 title: Topic Contributors—Share knowledge and expertise in Topics
-ms.author: daisyfeller
+ms.author: cjtan
 author: daisyfell
-manager: pamgreen
+manager: elizapo
 audience: admin
-ms.reviewer: cjtan
+ms.reviewer: daisyfeller
 ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
