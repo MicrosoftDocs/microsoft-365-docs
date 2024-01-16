@@ -24,7 +24,7 @@ Microsoft is unifying user-facing Microsoft 365 apps and services to a single an
 
 The growth of Microsoft cloud services led to the expansion of the domain space they occupy, resulting in hundreds of domains. This fragmentation is a challenge for end user navigation, administrative simplicity, and the development of cross-app experiences.
 
-The ```.microsoft``` top-level domain is exclusive to Microsoft, allowing for extra security and protection against spoofing. You can trust that any website or app that ends with ```cloud.microsoft``` is an official Microsoft service.
+The ```.microsoft``` top-level domain is exclusive to Microsoft. the new domain doesn’t have traditional suffixes such as .com or .net in the end. This is by design. ```cloud.microsoft``` resides under the ```.microsoft``` top-level domain, for which Microsoft is a registry operator and the sole registrant. This allows for extra security, privacy, and protection against spoofing when you interact with apps within that domain. You can trust that any website or app that ends with ```cloud.microsoft``` is an official Microsoft product or service.
 
 ## Benefits of a unified domain
 
@@ -34,7 +34,7 @@ Consolidating authenticated user-facing Microsoft 365 experiences to a single do
 
 ## Requirements for admins
 
-Organizations currently following standard [Microsoft network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges) shouldn't see an impact to the Microsoft 365 experience. Note that *.cloud.microsoft is already added to the official list of Office 365 URLs and IP address ranges. End users can access the same apps and features as before, but now with a different URL.
+Organizations currently following standard [Microsoft network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges) shouldn't see an impact to the Microsoft 365 experience. The *.cloud.microsoft domain is already added to the official list of Office 365 URLs and IP address ranges. 
 
 ## See also
 
