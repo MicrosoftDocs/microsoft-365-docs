@@ -31,6 +31,8 @@ To create a translated version of a document, follow these steps:
 
    ![Screenshot showing the Translate option from the ribbon.](../media/content-understanding/translation-ribbon-option.png)
 
+   ![Screenshot showing the Translate option next to the document.](../media/content-understanding/translation-show-more-actions.png)
+
 2. On the **Translate documents** screen, enter a language or use the drop-down menu to choose a language you want to translate the file, and then select **Translate**.
 
    ![Screenshot showing the Translate documents screen with language options.](../media/content-understanding/translation-translate-documents.png)
