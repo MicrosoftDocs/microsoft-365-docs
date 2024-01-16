@@ -40,6 +40,6 @@ Knowledge admins can also [select who can view topics in your organization](./ma
 
 ## Remove topics from being viewed
 
-Knowledge managers can choose to [remove topics](./manage-topics.md) so that users can no longer see them. On the **Manage topics** page in the topic center, knowledge managers can choose to reject specific topics to prevent them from being viewed. Topics can be removed regardless if they are in a suggested or confirmed state.
+Knowledge managers can choose to [remove topics](./manage-topics.md) so that users can no longer see them. On the **Manage topics** page in the topic center, knowledge managers can choose to remove specific topics to prevent them from being viewed. Topics can be removed regardless of if they are in a suggested, confirmed, or published state.
 
 Removed topics can later be added back as viewable topics if needed.
