@@ -44,7 +44,7 @@ sections:
           Select **Download all product keys** to download the keys displayed for a license to a local drive.
 
       - question: |
-          How tp find SQL Server product keys
+          How to find SQL Server product keys
         answer: |
           The SQL license key is embedded in the software's activation wizard rather than displayed in the admin center and is detected automatically during installation. For more information, see [The SQL Server Installation Guide](/sql/database-engine/install-windows/install-sql-server).
 
