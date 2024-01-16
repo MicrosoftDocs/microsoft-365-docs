@@ -18,7 +18,7 @@ ms.collection:
 - tier2
 - demo
 ms.topic: article
-ms.date: 10/21/2022
+ms.date: 01/15/2024
 ---
 
 # SmartScreen app reputation demonstration
