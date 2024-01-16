@@ -88,12 +88,11 @@ Microsoft Copilot for Microsoft 365 iteratively processes and orchestrates these
 
 ## Semantic Index
 
+The semantic index brings a whole new world of understanding to your data in Microsoft 365. Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft Copilot, it's always in the security context of the user, and only content that a user has access to is returned.
 
-To learn more about Semantic Index for Copilot, check out these resources:
+To learn more, see [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot).
 
-- [Semantic Index for Copilot: Explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU)
-
-- [Semantic Index for Copilot whitepaper](https://aka.ms/SemanticIndex/Whitepaper)
+## Availability
 
 Copilot for Microsoft 365 is an add-on plan with the following licensing prerequisites:
 
@@ -108,9 +107,7 @@ Copilot for Microsoft 365 is an add-on plan with the following licensing prerequ
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
 
-
-You can review current availability of Copilot for Microsoft 365 in the [Microsoft Copilot for Microsoft 365 service description guide](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot). Contact your Microsoft account team or Microsoft IT partner to start the purchase process.
-
+You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) and [Microsoft Copilot for Microsoft 365 requirements](microsoft-365-copilot-requirements.md).
 
 ## Additional resources
 
