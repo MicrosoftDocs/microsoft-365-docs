@@ -90,26 +90,24 @@ Microsoft Copilot for Microsoft 365 iteratively processes and orchestrates these
 
 The semantic index brings a whole new world of understanding to your data in Microsoft 365. Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft 365 chat via Copilot, it's always in the security context of the user, and only content that a user has access to is returned.
 
-The semantic index does more than enhance search results; it works to help you understand your data, find information quicker and improve productivity. Users can interact with the semantic index initially through Microsoft 365 Chat integration, and then over time, Microsoft will improve the search experience in SharePoint Online, Microsoft Teams, and the Microsoft 365 app:
-
-:::image type="content" source="media/microsoft-365-chat-search-index.png" alt-text="Diagram that shows the relationship between Microsoft 365 Chat and Microsoft Search." lightbox="media/microsoft-365-chat-search-index.png":::
-
-We are in the early stages of rolling out the semantic index to all organizations with Microsoft Copilot for Microsoft 365 and an eligible Microsoft 365 license, without any administrative involvement. Microsoft automatically manages the enablement of the semantic index, with prioritization given for organizations that purchase more than 300 licenses for Microsoft Copilot for Microsoft 365. When user indexing is complete, administrators will see a ‘Semantic indexing is complete’ status in the Microsoft 365 admin center for enabled users. When tenant level indexing starts in an organization, admins will see ‘Semantic index is enabled for your organization’ on the Search and Intelligence page in the Microsoft 365 admin center.
-
-:::image type="content" source="media/enable-semantic-index.png" alt-text="Screenshot that shows the semantic index enabled.":::
-
-> [!IMPORTANT]
-> Microsoft will not provide timelines or status of semantic indexing of user and tenant level indexing for individual tenants. Organizations are advised to use the process above to check on indexing status for their tenants.
-
-To learn more about Semantic Index for Copilot, check out these resources:
-
-- [Semantic Index for Copilot: Explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU)
-
-- [Semantic Index for Copilot whitepaper](https://aka.ms/SemanticIndex/Whitepaper)
+To learn more, see [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot).
 
 ## Availability
 
-Microsoft Copilot for Microsoft 365 is generally available as an add-on to customers with Microsoft E3, E5, A3, or A5 faculty. Contact your Microsoft account team to start the purchase process.
+Copilot for Microsoft 365 is an add-on plan with the following licensing prerequisites:
+
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Office 365 E3  
+- Office 365 E5
+- Microsoft 365 A5 for faculty
+- Microsoft 365 A3 for faculty
+- Office 365 A5 for faculty
+- Office 365 A3 for faculty
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Premium
+
+You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) and [Microsoft Copilot for Microsoft 365 requirements](microsoft-365-copilot-requirements.md).
 
 ## Additional resources
 

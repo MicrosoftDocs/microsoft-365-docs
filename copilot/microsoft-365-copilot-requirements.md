@@ -78,7 +78,20 @@ There are many Copilot experiences, including some core experiences like Excel, 
 
 ## License requirements
 
-Microsoft Copilot for Microsoft 365 users require a license for Microsoft 365 E3, E5, A3, or A5 faculty, and a license for Microsoft Copilot for Microsoft 365. You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
+Copilot for Microsoft 365 is an add-on plan with the following licensing prerequisites:
+
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Office 365 E3  
+- Office 365 E5
+- Microsoft 365 A5 for faculty
+- Microsoft 365 A3 for faculty
+- Office 365 A5 for faculty
+- Office 365 A3 for faculty
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Premium
+
+You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Conditional Access
 
