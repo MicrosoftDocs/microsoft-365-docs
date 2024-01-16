@@ -88,15 +88,29 @@ Microsoft Copilot for Microsoft 365 iteratively processes and orchestrates these
 
 ## Semantic Index
 
+
 To learn more about Semantic Index for Copilot, check out these resources:
 
 - [Semantic Index for Copilot: Explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU)
 
 - [Semantic Index for Copilot whitepaper](https://aka.ms/SemanticIndex/Whitepaper)
 
-## Availability
+Copilot for Microsoft 365 is an add-on plan with the following licensing prerequisites:
+
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Office 365 E3  
+- Office 365 E5
+- Microsoft 365 A5 for faculty
+- Microsoft 365 A3 for faculty
+- Office 365 A5 for faculty
+- Office 365 A3 for faculty
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Premium
+
 
 You can review current availability of Copilot for Microsoft 365 in the [Microsoft Copilot for Microsoft 365 service description guide](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot). Contact your Microsoft account team or Microsoft IT partner to start the purchase process.
+
 
 ## Additional resources
 
