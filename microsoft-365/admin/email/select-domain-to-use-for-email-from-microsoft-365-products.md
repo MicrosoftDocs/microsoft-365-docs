@@ -83,8 +83,11 @@ Please note that the following products currently support this feature:
 - Planner
 - Project
 - Viva Connections
+- Viva Glint
+- Viva Pulse
 - Viva Topics
 - Viva Amplify
+- Teams (Pending production rollout - Updates via Message Center Post MC705761 and Roadmap ID 375694)
 
 > [!NOTE]
 > The supported products list will be updated as each product migrates to support the setting and no action will be required as these products onboard to the centralized setting. 
