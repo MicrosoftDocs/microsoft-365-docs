@@ -20,7 +20,7 @@ ms.collection:
 - tier3
 - m365-security
 ms.topic: reference
-ms.date: 03/07/2023
+ms.date: 01/16/2024
 ---
 
 # DeviceInfo

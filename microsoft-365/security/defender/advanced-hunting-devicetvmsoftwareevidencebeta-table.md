@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 12/27/2021
+ms.date: 01/16/2024
 ---
 
 # DeviceTvmSoftwareEvidenceBeta
