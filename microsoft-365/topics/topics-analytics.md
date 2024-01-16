@@ -1,10 +1,10 @@
 ---
 ms.date: 11/21/2023
 title: Analytics for Topics
-ms.author: daisyfeller
+ms.author: mithunas
 author: daisyfell
-manager: pamgreen
-ms.reviewer: mithunas
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.service: viva
