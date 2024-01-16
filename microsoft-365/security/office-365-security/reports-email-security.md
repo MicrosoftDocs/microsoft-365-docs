@@ -217,7 +217,7 @@ The diagram is organized into the following horizontal bands:
   - **Edge block**: Messages that were filtered at the edge and identified as Edge Protection.
   - **Processed**: Messages that were handled by the filtering stack.
 - Outcomes band:
-  - **Rule Block**: Messages that were blocked by Exchange mail flow rules (transport rules).
+  - **Rule Block**: Messages that were quarantined by Exchange mail flow rules (transport rules).
   - **Malware block**: Messages that were identified as malware.<sup>\*</sup>
   - **Phishing block**: Messages that were identified as phishing.<sup>\*</sup>
   - **Spam block**: Messages that were identified as spam.<sup>\*</sup>

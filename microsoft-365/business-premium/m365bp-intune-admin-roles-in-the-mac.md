@@ -2,13 +2,13 @@
 title: "Admin roles for Intune in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.date: 09/15/2022
+ms.date: 01/12/2024
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
