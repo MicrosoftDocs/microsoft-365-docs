@@ -85,7 +85,7 @@ Set-MpPreference -EnableNetworkProtection Disabled
 
 ## macOS/Linux
 
-To configure the enforcement level, run the following command from the Terminal:
+To configure the Network Protection enforcement level, run the following command from the Terminal:
 
 
 ```bash
@@ -109,6 +109,22 @@ mdatp health --field network_protection_status
 To test Network Protection on macOS/Linux
 
 1. Using the browser of your choice (not Microsoft Edge*), navigate to the [Network Protection website test](https://smartscreentestratings2.net/). Microsoft Edge has other security measures in place to protect from this vulnerability (SmartScreen).
+1. or from terminal 
+
+```bash
+curl -o ~/Downloads/smartscreentestratings2.net https://smartscreentestratings2.net/ 
+```
+
+Expected results
+
+Navigation to the website should be blocked and you should see a **Connection blocked** notification.
+
+Clean-up
+
+
+```bash
+mdatp config network-protection enforcement-level --value audit
+```
 
 ## See also
 
