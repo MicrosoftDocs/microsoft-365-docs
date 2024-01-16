@@ -1,10 +1,10 @@
 ---
 ms.date: 06/12/2023
 title: Adoption resources for Topics
-ms.author: daisyfeller
+ms.author: jobadach
 author: daisyfell
-manager: pamgreen
-ms.reviewer: mattw
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:
