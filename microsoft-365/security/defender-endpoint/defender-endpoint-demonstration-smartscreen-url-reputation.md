@@ -26,13 +26,15 @@ ms.date: 10/21/2022
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Test how Microsoft Defender SmartScreen helps you identify phishing and malware websites based on URL reputation.
 Scenario requirements and setup
 
-- Windows 10 or 11
+- Windows 11 or Windows
+- Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 and Windows Server 2008 R2 SP1.
 - Microsoft Edge browser required
 - For more information, see [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
