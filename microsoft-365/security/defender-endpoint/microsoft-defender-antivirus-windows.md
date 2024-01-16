@@ -70,6 +70,13 @@ The Microsoft Defender Core service is releasing with [Microsoft Defender Antivi
    - `*.endpoint.security.microsoft.com`
    - `*.ecs.office.com` 
 
+- Enterprise U.S. Government customers should allow the following URLs:
+   - `*.events.data.microsoft.com`
+   - `*.endpoint.security.microsoft.us (GCC-H & DoD)`
+   - `*.gccmod.ecs.office.com (GCC-M)`
+   - `*.config.ecs.gov.teams.microsoft.us (GCC-H)`
+   - `*.config.ecs.dod.teams.microsoft.us (DoD)`
+     
 - If you're using [Application Control for Windows](/windows/security/application-security/application-control/windows-defender-application-control/wdac), or you're running non-Microsoft antivirus or endpoint detection and response software, make sure to add the processes mentioned earlier to your allow list. 
 
 - Consumers need not take any actions to prepare. 
