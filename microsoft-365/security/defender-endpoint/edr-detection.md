@@ -21,11 +21,67 @@ ms.subservice: mde
 search.appverid: met150
 ms.date: 11/17/2023
 ---
+
 # EDR detection test for verifying device's onboarding and reporting services
+
+#### Applies to:
+
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
+
+## Scenario requirements and setup
+
+- Windows 11, Windows 10 version 1709 build 16273 or newer, Windows 8.1, or Windows 7 SP1.
+- Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2008 R2 SP1.
+- Linux
+- macOS
+- Microsoft Defender for Endpoint
+- Microsoft Defender for Endpoint on Linux
+- Microsoft Defender for Endpoint on macOS
 
 Endpoint detection and response for Endpoint provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats.
 
 Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+
+### Windows
+
+1. Open a Command Prompt window
+
+2. At the prompt, copy and run the command below. The Command Prompt window will close automatically.
+
+
+```powershell
+powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference= 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-WDATP-test\\invoice.exe');Start-Process 'C:\\test-WDATP-test\\invoice.exe'
+```
+
+3. If successful, the detection test will be marked as completed and a new alert will appear in few minutes.
+
+### Linux
+
+1. Download [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server 
+
+
+```bash
+curl -o ~/Downloads/MDE Linux DIY.zip https://aka.ms/LinuxDIY
+```
+
+1. Extract the zip 
+
+```bash
+unzip ~/Downloads/MDE Linux DIY.zip
+```
+
+1. And run the following command: 
+
+```bash
+./mde_linux_edr_diy.sh
+```
+
+After a few minutes, a detection should be raised in Microsoft Defender XDR.
+
+3. Look at the alert details, machine timeline, and perform your typical investigation steps.
+
+### macOS
 
 1. In your browser, Microsoft Edge for Mac or Safari, download *MDATP MacOS DIY.zip* from [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) and extract.
 
@@ -45,7 +101,7 @@ Run an EDR detection test to verify that the device is properly onboarded and re
    >
    > > **"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.**<br/>
    > > macOS cannot verify that this app is free from malware.<br/>
-   > > **\[Move to Trash\]** **\[Cancel\]**
+   > > **[Move to Trash]** **[Cancel]**
 
 7. Click **Cancel**.
 
