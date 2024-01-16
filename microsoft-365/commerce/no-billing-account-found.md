@@ -21,14 +21,14 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to assign yourself or others the billing account roles needed to buy and edit products in the Microsoft 365 admin center."
-ms.date: 05/24/2022
+ms.date: 01/05/2024
 ---
 
 # No billing account found for buying products
 
-If you recently became a Global admin for your organization but aren't able to buy or edit anything in the Billing pages of the Microsoft 365 admin center, you might be missing the Billing account owner role needed to do those tasks. For example, if you try to buy a new subscription on the **Purchase services** page, you might see a notification that says, "You don't have any billing accounts for buying products." If this happens, you can give yourself the Billing account owner role needed to buy and edit products.
+If you recently became a Global admin for your organization but aren't able to buy or edit anything in the Billing pages of the Microsoft 365 admin center, you might be missing the Billing account owner role needed to do those tasks. For example, if you try to buy a new subscription on the **Purchase services** page, you might see a notification that says, "You don't have any billing accounts for buying products." If you're missing the Billing account owner role, you can give yourself the role needed to buy and edit products.
 
-If you're a Billing admin and can't buy or edit products, or if you're a Global Reader who can't view the billing account, ask your Global admin to assign you the role you need.
+If you're a Billing admin and can't buy or edit products, or if you're a Global Reader who can't view the billing account, ask your Global admin to assign you the role that you need.
 
 ## Before you begin
 
@@ -52,4 +52,4 @@ If you're not the first Global admin on the account, use the following steps to 
 
 [Understand billing accounts](manage-billing-accounts.md) (article)\
 [About admin roles](../admin/add-users/about-admin-roles.md) (article)\
-[Assign admin roles](../admin/add-users/assign-admin-roles.md) (article) 
+[Assign admin roles](../admin/add-users/assign-admin-roles.md) (article)

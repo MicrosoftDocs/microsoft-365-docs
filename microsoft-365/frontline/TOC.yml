@@ -29,6 +29,8 @@
         href: deploy-frontline-operational-hierarchy.md
     - name: Set up and configure experiences for your frontline
       items: 
+      - name: Set up targeted communications
+        href: set-up-targeted-communications.md 
       - name: Deploy Shifts at scale
         href: deploy-shifts-at-scale.md 
     - name: Manage devices
@@ -63,8 +65,6 @@
       href: flw-team-collaboration.md
     - name: Corporate communications with frontline workers
       href: flw-corp-comms.md
-    - name: Help your employees use collaboration apps and features
-      href: collab-features-apps-toolkit.md
   - name: Wellbeing & engagement
     items: 
     - name: Engage your employees and focus on wellbeing
@@ -168,7 +168,7 @@
   - name: Apps for frontline workers
     items:
     - name: About apps in Microsoft Teams
-      href: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: /microsoftteams/apps-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Overview of app management in Microsoft Teams
       href: /microsoftteams/manage-apps?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json 
     - name: Manage the Approvals app

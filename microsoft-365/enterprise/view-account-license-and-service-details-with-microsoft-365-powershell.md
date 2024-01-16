@@ -3,7 +3,7 @@ title: "View Microsoft 365 account license and service details with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/17/2020
+ms.date: 12/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection:
 - scotvorg 
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -37,7 +38,7 @@ For more information about licensing plans, license, and services, see [View lic
 
 First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
 
-Reading user properties including license details requires the User.Read.All permission scope or one of the other permissions listed in the ['Get a user' Graph API reference page](/graph/api/user-get).
+Reading user properties including license details requires the **User.Read.All** permission scope or one of the other permissions listed in the ['Get a user' Graph API reference page](/graph/api/user-get).
 
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
@@ -142,7 +143,7 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-Next, run this command to list the licensing plans that are available in your organization. 
+Next, run this command to list the licensing plans that are available in your organization.
 
 ```powershell
 Get-MsolAccountSku
