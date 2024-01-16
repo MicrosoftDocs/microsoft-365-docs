@@ -196,7 +196,7 @@ You can also set up shared mailboxes to allow for incoming mail from customers (
 
 Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-overview) and enables you to create a personalized landing experience in Teams.
 
-Use the Viva Connections dashboard and add Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user.
+The Viva Connections dashboard provides fast and easy access to information and job-related tasks. For example, add the Shifts card to show information about the next or current shift from the Shifts app. Content in the cards is dynamic and personalized to the user.
 
 Learn more about [Viva Connections](/viva/connections/viva-connections-overview) and [how to create a Viva Connections dashboard](/viva/connections/create-dashboard).
 
