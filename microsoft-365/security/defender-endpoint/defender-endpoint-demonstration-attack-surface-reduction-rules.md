@@ -39,7 +39,7 @@ Attack surface reduction rules target specific behaviors that are typically used
 
 ## Scenario requirements and setup
 
-- Windows 11, Windows 10 1709 build 16273 or newer
+- Windows 11, Windows 10 1709 build 16273 or later
 - Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2 with the unified MDE client.
 - Microsoft Defender AV
 - Microsoft Office (required for Office rules and sample)
@@ -134,7 +134,7 @@ You should immediately see an "Action blocked" notification.
 
 You should immediately see an "Action blocked" notification.
 
-### Scenario 3 (Windows 10 version 1803 or newer): ASR rule blocks unsigned USB content from executing
+### Scenario 3 (Windows 10 version 1803 or later): ASR rule blocks unsigned USB content from executing
 
 1. Configure the rule for USB protection (B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4).
 
