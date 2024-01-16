@@ -61,11 +61,7 @@ This section provides useful information on what you need to know before you sta
 
 ### Permissions pre-requisites
 
-> [!NOTE]
-> Unified RBAC - Preview experience is currently not available for US Government customers using GCC and GCC High.
-
 - You must be a Global Administrator or Security Administrator in Microsoft Entra ID to:
-
   - Gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft Defender portal.
 
   - Manage roles and permissions in Microsoft Defender XDR Unified RBAC.
