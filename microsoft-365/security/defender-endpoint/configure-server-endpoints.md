@@ -156,9 +156,8 @@ You'll need to download both the **installation** and **onboarding** packages fr
 
 The **installation package** contains an MSI file that installs the Microsoft Defender for Endpoint agent.
 
-The **onboarding package** contains the following files:
+The **onboarding package** contains the following file:
 
-- `OptionalParamsPolicy` - contains the setting that enables sample collection
 - `WindowsDefenderATPOnboardingScript.cmd` - contains the onboarding script
 
 Follow these steps to download the packages:
