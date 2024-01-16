@@ -27,7 +27,7 @@ description: "Learn how to get the Microsoft 365 Copilot usage report and gain i
 
 The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
 
-The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section. In this section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and we will update the documentation once there is improved latency.
+The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section and Usage section. In the Readiness section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and we will update the documentation once there is improved latency.
 
 ## How do I get to the Copilot for Microsoft 365 report?
 
@@ -43,7 +43,18 @@ You can see the following summary charts in this report
 
 :::image type="content" alt-text="Screenshot showing how you can ensure users are eligible for Copilot for Microsoft 365." source="../../media/copilot-usage-ensure-readiness.png":::
 
-**Total Prerequisite Licenses** This number is the sum of all users who have a Microsoft 365 E3 or E5 license assigned in your organization and could be assigned with a Copilot license.
+**Total Prerequisite Licenses** The number is the sum of all users who have at least one license assigned to them or who could be assigned a license. The following license types are eligible for Copilot:
+
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Office 365 E3
+- Office 365 E5
+- Microsoft 365 A5 for faculty
+- Microsoft 365 A3 for faculty
+- Office 365 A5 for faculty
+- Office 365 A3 for faculty
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Premium
 
 **Users on an eligible update channel** This number is the sum of all users who are enrolled in Current Channel or Monthly Enterprise Channel for app updates in your organization and could be assigned with a Copilot license.
 
@@ -56,6 +67,8 @@ You can see the following summary charts in this report
 :::image type="content" alt-text="Screenshot showing recommendation cards for Copilot for Microsoft 365 usage report." source="../../media/copilot-usage-recommend-cards.png" lightbox="../../media/copilot-usage-recommend-cards.png":::
 
 Recommended action cards highlight important actions to take to prepare your organization for Copilot, such as moving users to a monthly app update channel and assigning available Copilot licenses.
+
+The last recommended action card promotes [Microsoft Copilot Dashboard](/viva/insights/org-team-insights/copilot-dashboard), where you can deliver insights to your IT leaders to explore Copilot readiness, adoption, and impact in Viva Insights.
 
 :::image type="content" alt-text="Screenshot showing chart for Copilot active users in an organization." source="../../media/copilot-usage-enable-active-users.png" lightbox="../../media/copilot-usage-enable-active-users.png":::
 
@@ -97,6 +110,8 @@ You can view several numbers for Copilot for Microsoft 365 usage, which highligh
 
 **Active users rate** shows you the number of active users in your organization divided by the number of enabled users.
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
+
+In Recommendations, the recommended action card highlights [Microsoft Copilot Dashboard](/viva/insights/org-team-insights/copilot-dashboard), where you can deliver insights to your IT leaders to explore Copilot readiness, adoption, and impact in Viva Insights.  
 
 You can see the following summary charts in this report as default view:
 
