@@ -11,6 +11,8 @@
           href: microsoft-365-copilot-requirements.md
         - name: Data, Privacy, and Security for Copilot for Microsoft 365
           href: microsoft-365-copilot-privacy.md
+        - name: Zero Trust principles for Microsoft Copilot for Microsoft 365
+          href: /security/zero-trust/zero-trust-microsoft-365-copilot
         - name: Extend Microsoft Copilot for Microsoft 365
           href: /microsoftteams/platform/copilot/how-to-extend-copilot
     - name: Deploy
