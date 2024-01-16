@@ -27,12 +27,25 @@ When a file is translated, the file name of the translated copy is appended to s
 
 To create a translated version of a document, follow these steps:
 
+1. From a SharePoint document library, select the file or files you want to translate. Then use either of the following methods to start the translation process.
+
+   - From the ribbon, select **More options** (**...**), and then select **Translate**.
+
+   ![Screenshot showing the Translate option from the ribbon.](../media/content-understanding/translation-ribbon-option2.png)
+
+   - Next to the file name in the list of documents, select **Show more actions for this item**, and then select **Translate**.
+
+   ![Screenshot showing the Translate option next to the document.](../media/content-understanding/translation-show-more-actions.png)
+
+<!---
 1. From a SharePoint document library, select the file or files you want to translate. By using either the **More options** (**...**) button on the ribbon or the **Show more actions for this item** button next to the file name, select **Translate**.
+
+
 
    ![Screenshot showing the Translate option from the ribbon.](../media/content-understanding/translation-ribbon-option2.png)
 
    ![Screenshot showing the Translate option next to the document.](../media/content-understanding/translation-show-more-actions.png)
-
+--->
 2. On the **Translate documents** screen, enter a language or use the drop-down menu to choose a language you want to translate the file, and then select **Translate**.
 
    ![Screenshot showing the Translate documents screen with language options.](../media/content-understanding/translation-translate-documents.png)
