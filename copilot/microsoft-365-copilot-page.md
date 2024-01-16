@@ -48,7 +48,7 @@ You can manage Copilot licenses, including assigning and unassigning licenses, f
 
 ### Manage how your organization interacts with Copilot in Bing, Edge, and Windows
 
-Copilot with commercial data protection provides enhanced security for users accessing the generative AI capabilities of Copilot. This experience is on by default for users when they are signed in and using a Microsoft 365 E3, E5, A3, or A5 license assigned by your organization.
+Copilot with commercial data protection provides enhanced security for users accessing the generative AI capabilities of Copilot. This experience is on by default for users when they are signed in and using a Microsoft 365 E3, E5, A3, A5, Business Standard, or Business Premium license assigned by your organization.
 
 Copilot in Bing, Edge and Windows is the public version of Copilot and doesn’t require users to be signed in. You can reroute to the documentation available on the panel to turn off the public experience and still have access to the Copilot with commercial data protection experience.
 

@@ -2,8 +2,8 @@
 title: "Multifactor authentication for users"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual

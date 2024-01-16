@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: diannegali
 author: diannegali
 manager: dansimp
-ms.date: 11/15/2023
+ms.date: 01/15/2024
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -30,9 +30,6 @@ ms.custom: admindeeplinkDEFENDER
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender for Cloud](/defender-for-cloud/)
-
-> [!IMPORTANT]
-> The integration of Microsoft Defender for Cloud in Microsoft Defender XDR is now in preview. Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here.
 
 [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) is now part of Microsoft Defender XDR. Security teams can now access Defender for Cloud alerts and incidents within the Microsoft Defender portal, providing richer context to investigations that span cloud resources, devices, and identities. In addition, security teams can get the complete picture of an attack, including suspicious and malicious events that happen in their cloud environment, through immediate correlations of alerts and incidents.
 
