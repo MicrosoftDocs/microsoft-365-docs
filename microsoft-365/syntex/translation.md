@@ -35,7 +35,7 @@ To create a translated version of a document, follow these steps:
 
    ![Screenshot showing the Translate documents screen with language options.](../media/content-understanding/translation-translate-documents.png)
 
-3. You'll receive a confirmation message that the request to translate has been translated.
+3. You'll receive a confirmation message saying that the request to translate has been submitted.
 
    ![Screenshot showing the translation confirmation screen.](../media/content-understanding/translation-confirmation.png)
 
