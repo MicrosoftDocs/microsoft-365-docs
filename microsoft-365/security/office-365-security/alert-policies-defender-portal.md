@@ -36,7 +36,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, alert policies
 ## What do you need to know before you begin?
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **Security operations\Security data\Alerts (manage)** and **Security operations\Security data\ Security data basics (read)**.
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Defender portal only, not PowerShell): **Security operations\Security data\Alerts (manage)** and **Security operations\Security data\ Security data basics (read)**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
     - _Create and manage alert policies in the Threat management category_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _View alerts in the Threat management_ category: Membership in the **Security Reader** role group.
