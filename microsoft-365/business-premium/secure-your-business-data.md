@@ -2,8 +2,8 @@
 title: Microsoft 365 for business security best practices
 f1.keywords:
 - CSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: reference

@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 06/22/2022
+ms.date: 12/29/2023
 ---
 
 # DeviceTvmInfoGathering
