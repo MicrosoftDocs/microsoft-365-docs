@@ -3,7 +3,7 @@ title: IT Admins - Overview of external collaboration options in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 01/12/2024
+ms.date: 01/16/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -35,13 +35,13 @@ The following table shows the primary ways people from outside your organization
 |Anonymous meeting join|None|Enabled|
 |Unauthenticated file and folder sharing|None|Enabled|
 
-People outside your organization do not have access unless a user in your organization initiates one of these activities. You can disable any of these settings if you don't want to allow that activity in your organization.
+People outside your organization don't have access unless a user in your organization initiates one of these activities. You can disable any of these settings if you don't want to allow that activity in your organization.
 
 If you have business processes or requirements around allowing collaboration with external organizations, see [Onboard trusted vendors to collaborate in Microsoft 365](/microsoft-365/solutions/trusted-vendor-onboarding).
 
 ## Document, site, and team sharing with guest accounts
 
-Sharing documents, sites, and teams with people outside your organization uses *guest accounts*. Guest accounts are a type of account in Microsoft Entra ID that is managed through [Microsoft Entra B2B collaboration](/entra/external-id/what-is-b2b). They can be used to share resources in your organization with anyone who has an email address, including people in [other Microsoft 365 cloud environments](#cross-cloud-sharing-and-meetings). You can manage guest accounts the same way you manage users in your organization. Guests do not require a license for most features of collaboration.
+Sharing documents, sites, and teams with people outside your organization uses *guest accounts*. Guest accounts are a type of account in Microsoft Entra ID that is managed through [Microsoft Entra B2B collaboration](/entra/external-id/what-is-b2b). They can be used to share resources in your organization with anyone who has an email address, including people in [other Microsoft 365 cloud environments](#cross-cloud-sharing-and-meetings). You can manage guest accounts the same way you manage users in your organization. Guests don't require a license for most features of collaboration.
 
 Guests can only access resources that you specifically share with them.
 
@@ -70,7 +70,7 @@ For information about how to set up Microsoft 365 for collaboration with guests,
 
 Shared channels are a type of Teams channel that allows you to share with people outside the team, including people in other Microsoft 365 organizations. While shared channels is turned on by default in Teams, external collaboration with shared channels is disabled by default. External collaboration with shared channels uses [Microsoft Entra B2B direct connect](/entra/external-id/b2b-direct-connect-overview) which allows you to add people from other Microsoft 365 organizations to Teams channels without the need for creating a guest account.
 
-Shared channels have a particular advantage over guest accounts in that they do not require external participants to switch accounts in the Teams desktop client or log into your organization. They can remain logged in to their organization and access the channel directly.
+Shared channels have a particular advantage over guest accounts in that they don't require external participants to switch accounts in the Teams desktop client or log into your organization. They can remain logged in to their organization and access the channel directly.
 
 Sharing channels with people outside your organization requires that your organization and the external organization both configure an organizational relationship in Microsoft Entra B2B Direct Connect.
 
@@ -86,9 +86,9 @@ For information about how to set up Microsoft 365 for external collaboration wit
 
 Users in your organization can chat, add users to meetings, and use audio or video conferencing in Teams with users in external Microsoft 365 organizations. By default, users in your organization can communicate in these ways with all other Microsoft 365 domains. People in other organizations can communicate in these ways with your users if they know the user's email address. You can allow or block specific domains or block all domains if you want to disable the feature.
 
-You can also allow users in your organization to communicate with people from outside your organization who are using Teams accounts that are not managed by an organization, as well as Skype for Business (online and on-premises) and Skype users.
+You can also allow users in your organization to communicate with people from outside your organization who are using Teams accounts that aren't managed by an organization, as well as Skype for Business (online and on-premises) and Skype users.
 
-Guest accounts are not used as part of external chat and meetings. External participants remain signed in to their organization or to Skype and can communicate directly with people in your organization. They do not have access to your teams or channels.
+Guest accounts aren't used as part of external chat and meetings. External participants remain signed in to their organization or to Skype and can communicate directly with people in your organization. They don't have access to your teams or channels.
 
 For information about how to set up Microsoft 365 for external chat and meetings, see the following references:
 
@@ -106,7 +106,7 @@ People from outside your organization can join meetings in the following ways:
 
 - If they're not a guest or external participant, they must join meetings anonymously.
 
-If the anonymous join setting is enabled for your organization, anonymous users can join a meeting using a meeting link that has been shared with them (such as a link in the meeting invitation). They are prompted to enter a display name of their choosing when joining the meeting anonymously. Depending on the lobby settings, the anonymous user may be automatically admitted to the meeting, or be added to a lobby where the meeting organizer (or meeting participants with the presenter role) can allow or deny access to the meeting. 
+If the anonymous join setting is enabled for your organization, anonymous users can join a meeting using a meeting link that has been shared with them (such as a link in the meeting invitation). They're prompted to enter a display name of their choosing when joining the meeting anonymously. Depending on the lobby settings, the anonymous user may be automatically admitted to the meeting, or be added to a lobby where the meeting organizer (or meeting participants with the presenter role) can allow or deny access to the meeting. 
 
 It is not possible to verify the identity of anonymous users before, during or after the meeting.
 
@@ -116,7 +116,7 @@ You can control anonymous users' ability to join meetings at the organization le
 
 In Microsoft 365, files and folders in Teams, SharePoint, and OneDrive can be shared using unauthenticated - or *Anyone* - links. Anyone links give access to the shared item to anyone who has the link. Anyone links can be shared with others, giving those people access to the file or folder.
 
-People using an Anyone link do not have to authenticate, and their access cannot be audited. File and folder owners can revoke access at any time by deleting the link.
+People using an Anyone link don't have to authenticate, and their access can't be audited. File and folder owners can revoke access at any time by deleting the link.
 
 Anyone links can't be used with files in a Teams shared channel site.
 
