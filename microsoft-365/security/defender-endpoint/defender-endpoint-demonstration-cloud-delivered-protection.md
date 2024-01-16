@@ -37,7 +37,7 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
 ## Scenario requirements and setup
 
-- Windows 11, Windows 10, Windows 8.1, Windows 7
+- Windows 11, Windows 10, Windows 8.1, and Windows 7 SP1
 - Microsoft Defender Real-time protection is enabled
 - Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies. For more information, see [Enable cloud-delivered protection in Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
 - You can also download and use the [PowerShell script](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others on Windows 10 and Windows 11.
