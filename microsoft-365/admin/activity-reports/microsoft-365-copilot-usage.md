@@ -29,8 +29,6 @@ The Microsoft 365 Usage dashboard shows you the activity overview across the Mic
 
 The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section and Usage section. In the Readiness section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and we will update the documentation once there is improved latency.
 
-For more information on Copilot, see [Get started with Copilot for Microsoft 365](/copilot/microsoft-365-copilot-setup).
-
 ## How do I get to the Copilot for Microsoft 365 report?
 
 1. In the admin center, go to **Reports** > **Usage**.
