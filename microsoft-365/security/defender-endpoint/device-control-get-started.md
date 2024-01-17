@@ -4,7 +4,7 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/05/2024
+ms.date: 01/16/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -29,7 +29,7 @@ Device control in Defender for Endpoint identifies a device based on its propert
 
 :::image type="content" source="media/device-control-deviceproperties.png" alt-text="Screenshot showing device properties.":::
 
-The **Device ID**, **Vendor ID** (VID), **Serial number**, and **Bus type** can all be used to identify a device (see *LINK NEEDED* List of device properties for the complete list). The data is also available in [advanced hunting](../defender/advanced-hunting-overview.md), by searching for the `Plug and Play Device Connected action` (`PnPDeviceConnected`), as shown in the following example query:
+The **Device ID**, **Vendor ID** (VID), **Serial number**, and **Bus type** can all be used to identify a device (see [Device control policies and entries in Microsoft Defender for Endpoint](device-control-policies-entries.md)). The data is also available in [advanced hunting](../defender/advanced-hunting-overview.md), by searching for the `Plug and Play Device Connected action` (`PnPDeviceConnected`), as shown in the following example query:
 
 ```kusto
 
@@ -45,7 +45,7 @@ DeviceEvents
 
 ```
 
-The previous example query could return results like the following screenshot:
+The previous example query could return results similar to what's shown in the following screenshot:
 
 :::image type="content" source="media/device-control-ahqueryresults.png" alt-text="Screenshot showing results from advanced hunting query for device control." lightbox="media/device-control-ahqueryresults.png":::
 
