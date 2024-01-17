@@ -4,7 +4,7 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/05/2024
+ms.date: 01/16/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -34,15 +34,15 @@ Device control helps protect your organization from potential data loss, malware
 
 ## Microsoft device control capabilities
 
-Device control capabilities in Defender for Endpoint can be organized into three main categories:
+Device control capabilities from Microsoft can be organized into three main categories: device control in Windows, device control in Defender for Endpoint, and Endpoint Data Loss Prevention (Endpoint DLP).
 
-- **Device control in Windows**. The Windows operating system has built-in device control capabilities. You can configure device installation settings to prevent (or allow) users from installing certain devices on their computers. Policies are applied at the device level, and use various device properties to determine whether or not a user can install/use a device. For more information, see [Microsoft Defender for Endpoint Device Control Device Installation](mde-device-control-device-installation.md). Device control in Windows works with BitLocker and ADMX templates, and can be managed using Intune.
+- **Device control in Windows**. The Windows operating system has built-in device control capabilities. Your security team can configure device installation settings to prevent (or allow) users from installing certain devices on their computers. Policies are applied at the device level, and use various device properties to determine whether or not a user can install/use a device. For more information, see [Microsoft Defender for Endpoint Device Control Device Installation](mde-device-control-device-installation.md). Device control in Windows works with BitLocker and ADMX templates, and can be managed using Intune.
 
    - **BitLocker and Intune**. [BitLocker](/windows/security/operating-system-security/data-protection/encrypted-hard-drive) is a Windows security feature that provides encryption for entire volumes. Together with Intune, policies can be configured to enforce encryption on devices using BitLocker for Windows and FileVault for Mac. For more information, see [Disk encryption policy settings for endpoint security in Intune](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
    - **Administrative Templates (ADMX) and Intune**. You can use ADMX templates to create policies that restrict or allow specific types of USB devices to be used with computers. For more information, see [Restrict USB devices and allow specific USB devices using ADMX templates in Intune](/mem/intune/configuration/administrative-templates-restrict-usb).
 
-- **Device control in Microsoft Defender**. Device control in Defender for Endpoint provides more advanced capabilities and is cross platform. You can configure device control settings to prevent (or allow) users to have Read, Write, or Execute access to content on removable storage devices. You can define exceptions, and you can choose to employ audit policies that detect but don't block users from accessing their removable storage devices. Policies are applied at the device level, user level, or both. Device control in Microsoft Defender can be managed using Intune.
+- **Device control in Defender for Endpoint**. Device control in Defender for Endpoint provides more advanced capabilities and is cross platform. You can configure device control settings to prevent (or allow) users to have Read, Write, or Execute access to content on removable storage devices. You can define exceptions, and you can choose to employ audit policies that detect but don't block users from accessing their removable storage devices. Policies are applied at the device level, user level, or both. Device control in Microsoft Defender can be managed using Intune.
 
    - **Device control in Microsoft Defender and Intune**. Intune provides a rich experience for managing complex device control policies for organizations. You can configure and deploy device restriction settings, for example. See [Configure device restriction settings in Microsoft Intune](/mem/intune/configuration/device-restrictions-configure).
 
