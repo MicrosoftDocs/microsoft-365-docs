@@ -132,7 +132,7 @@ For customers with Microsoft Entra ID Governance, Microsoft Entra ID P1, or P2, 
 
 Conditional Access requires Microsoft Entra ID Governance or a Microsoft Entra ID P1 or P2 license. Security defaults and per-user MFA are included with all Microsoft 365 subscriptions.
 
-[Open the multi-factor authentication (MFA) guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/mfasetupguide)
+[Open the multi-factor authentication (MFA) guide](https://admin.microsoft.com/adminportal/home?Q=AzureDocs#/featureexplorer/security/ConditionalAccess)
 
 ## Plan your passwordless setup guide
 
