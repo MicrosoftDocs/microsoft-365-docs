@@ -55,12 +55,6 @@ Ownerless workspaces can be found by querying Loop workspace containers in Share
 
 There are other types of groups and membership lists in the Microsoft ecosystem such as Microsoft 365 groups and Security groups. Loop workspace membership cannot currently be managed by or associated with these groups or lists.
 
-## eDiscovery support for Loop content stored in Loop workspaces
-
-Loop content (pages and components) created in the Loop app are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. As mentioned above, these files are stored in SharePoint Embedded and are available for search and collection for both eDiscovery (Standard) and eDiscovery (Premium). Render in review and the HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
-
-A graph export API that can access Loop content stored in [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428) is not yet available.
-
 ## Storage management after user departure
 
 ### In the Loop app
