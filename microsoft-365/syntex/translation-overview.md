@@ -33,6 +33,10 @@ You can also use the translation feature for translating video transcripts and c
 
 Document translation is available for the following file types: .csv, .docx, .htm, .html, .markdown, .md, .msg, .pdf, .pptx, .txt, and .xlsx. For legacy file types .doc, .rtf, .xls, .ods.ppt, and .odp, the translated copy will be created in the modern equivalent (.docx, .xlsx, or .pptx).
 
+### Supported file size
+
+The maximum file size for documents to be translated is limited to 40 MB.
+
 ### Supported languages
 
 Translation in Syntex is available for [all supported languages and dialects](/azure/ai-services/translator/language-support?source=recommendations#translation).
