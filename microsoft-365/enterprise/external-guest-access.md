@@ -70,7 +70,7 @@ For information about how to set up Microsoft 365 for collaboration with guests,
 
 Shared channels are a type of Teams channel that allows you to share with people outside the team, including people in other Microsoft 365 organizations. While shared channels is turned on by default in Teams, external collaboration with shared channels is disabled by default. External collaboration with shared channels uses [Microsoft Entra B2B direct connect](/entra/external-id/b2b-direct-connect-overview) which allows you to add people from other Microsoft 365 organizations to Teams channels without the need for creating a guest account.
 
-Shared channels have a particular advantage over guest accounts in that they don't require external participants to switch accounts in the Teams desktop client or log into your organization. They can remain logged in to their organization and access the channel directly.
+Shared channels have a particular advantage over guest accounts in that they don't require external participants to switch accounts in the Teams desktop client or log into your organization. They can use their regular work or school account and access the channel directly.
 
 Sharing channels with people outside your organization requires that your organization and the external organization both configure an organizational relationship in Microsoft Entra B2B Direct Connect.
 
@@ -142,7 +142,7 @@ For information about setting up cross-cloud meetings, see [Meet with people in 
 
 ## Multitenant organizations
 
-If your organization manages multiple Microsoft 365 tenants, you can set up a multitenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Multitenant organizations synchronize users between tenants using Microsoft Entra B2B collaboration users. With the new Microsoft Teams desktop client, users can receive real-time notifications from all the tenants in the multitenant organization, participate in chats, meetings, and calls across all of the tenants without dropping from a call or meeting to switch tenants, and set their status for each account and organization individually.
+If your organization manages multiple Microsoft 365 tenants, you can set up a multitenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Multitenant organizations synchronize users between tenants using Microsoft Entra B2B collaboration users. With the new Microsoft Teams desktop client, users can search for users in other tenants, receive real-time notifications from all the tenants in the multitenant organization, and participate in chats, meetings, and calls across all of the tenants without dropping from a call or meeting to switch tenants.
 
 For information about how to set up a multitenant organization, see [Plan for multitenant organizations in Microsoft 365](/microsoft-365/enterprise/plan-multi-tenant-org-overview) and [Set up a multitenant org in Microsoft 365](/microsoft-365/enterprise/set-up-multi-tenant-org).
 
