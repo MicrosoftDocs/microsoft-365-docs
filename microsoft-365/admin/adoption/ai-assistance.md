@@ -30,7 +30,7 @@ With AI rapidly entering the day-to-day experience of people in your organizatio
 
 First, it offers a score, on a 100-point scale, to quickly assess how well people in your organization are adopting Microsoft Copilot for Microsoft 365.
 
-You can dive deeper into what makes up your AI assistance score by looking at the specific features and activities that drive impact, like how well your organization is using Copilot to summarize and create content in your organization, including Teams meetings, Chat, email in Outlook, documents in Word or PowerPoint, and more. To learn more about Copilot, see [Get started with Copilot for Microsoft 365](/copilot/microsoft-365-copilot-setup.md).
+You can dive deeper into what makes up your AI assistance score by looking at the specific features and activities that drive impact, like how well your organization is using Copilot to summarize and create content in your organization, including Teams meetings, Chat, email in Outlook, documents in Word or PowerPoint, and more. To learn more about Copilot, see [Get started with Copilot for Microsoft 365](/copilot/microsoft-365-copilot-setup).
 
 ## Prerequisites
 
