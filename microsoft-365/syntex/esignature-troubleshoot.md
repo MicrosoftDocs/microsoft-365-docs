@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use Microsoft SharePoint eSignature to create and send electronic signature requests to people inside and outside of your organization. 
+description: Learn how to troubleshoot issues with sending, receiving, or viewing requests in Microsoft SharePoint eSignature. 
 ---
 
 # Troubleshoot a signature request for Microsoft SharePoint eSignature
@@ -23,9 +23,9 @@ description: Learn how to use Microsoft SharePoint eSignature to create and send
 
 If you aren't able to create a signature request, check the PDF viewer settings, the collaboration settings, or the access policies.
 
-### PDF settings from the PDF viewer
+### Default program for PDF viewing
 
-The PDF viewer is opened by selecting a PDF file from SharePoint Online. The ability to request signatures won't be available if the PDF is viewed in any other way (for example, in Microsoft Edge). If  PDF files are opened in any other way, the **Get signatures** option isn't available.
+The PDF viewer is opened by selecting a PDF file from SharePoint Online. The ability to use the **Get signatures** option won't be available if the PDF is viewed in any other way, for example, in Microsoft Edge or Adobe Reader.
 
 ### Collaboration settings
 
