@@ -51,7 +51,7 @@ Once you've assigned licenses, the Copilot experience will automatically appear 
 
 After licensing your users for Microsoft Copilot for Microsoft 365, we recommend sending them a welcome email to introduce them to Microsoft Copilot for Microsoft 365 and help them understand what it can do for them. The easiest way to do this is to use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide), which includes an option for sending a welcome email to your Copilot users. Here’s an example of this email:
 
-:::image type="content" source="media/eap-welcome-email.png" alt-text="A preview image of an email template for introducing Microsoft Copilot for Microsoft 365 and its capabilities that an admin can provide to users.":::
+:::image type="content" source="media/copilot-ga-welcome-email.png" alt-text="An image of an email introducing Microsoft Copilot for Microsoft 365 and its capabilities that an admin can provide to users.":::
 
 The welcome email also includes a link to [Microsoft Copilot help and learning](https://support.microsoft.com/copilot).
 

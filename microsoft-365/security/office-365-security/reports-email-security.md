@@ -20,7 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/30/2023
+ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -217,7 +217,7 @@ The diagram is organized into the following horizontal bands:
   - **Edge block**: Messages that were filtered at the edge and identified as Edge Protection.
   - **Processed**: Messages that were handled by the filtering stack.
 - Outcomes band:
-  - **Rule Block**: Messages that were blocked by Exchange mail flow rules (transport rules).
+  - **Rule Block**: Messages that were quarantined by Exchange mail flow rules (transport rules).
   - **Malware block**: Messages that were identified as malware.<sup>\*</sup>
   - **Phishing block**: Messages that were identified as phishing.<sup>\*</sup>
   - **Spam block**: Messages that were identified as spam.<sup>\*</sup>
@@ -1051,6 +1051,7 @@ On the **User reported messages** page, the :::image type="icon" source="../../m
 
 You need to be assigned permissions before you can view and use the reports that are described in this article. You have the following options:
 
+- [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/System settings/manage** or **Security operations/Security data/Read-only**.
 - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
   - **Organization Management**<sup>\*</sup>
   - **Security Administrator**

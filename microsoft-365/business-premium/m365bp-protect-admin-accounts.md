@@ -2,8 +2,8 @@
 title: "Protect your administrator accounts with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to

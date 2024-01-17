@@ -2,8 +2,8 @@
 title: Set up email notifications for your security team
 description: Set up email notifications to tell your security team about alerts and vulnerabilities in Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
