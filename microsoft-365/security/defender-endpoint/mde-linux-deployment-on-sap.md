@@ -27,7 +27,7 @@ ms.date: 01/10/2024
 
 This article provides deployment guidance for Microsoft Defender for Endpoint on Linux for SAP. You'll learn about recommended SAP OSS(Online Services System) notes, the system requirements, prerequisites, important configuration settings, recommended antivirus exclusions, and guidance on scheduling antivirus scans.
 
-Conventional security defenses that have been commonly used to protect SAP systems such as isolating infrastructure behind firewalls and limiting interactive Operating System logons are no longer considered sufficient to mitigate modern sophisticated threats. It's essential to deploy modern defenses to detect and contain threats in real-time. SAP applications unlike most other workloads require basic assessment and validation before deploying Microsoft Defender for Endpoint. The Enterprise Security administrators should contact the SAP Basis Team prior to deploying Defender for Endpoint. The SAP Basis Team should be cross trained with a basic level of knowledge about Defender for Endpoint.
+Conventional security defenses that have been commonly used to protect SAP systems such as isolating infrastructure behind firewalls and limiting interactive operating system logons are no longer considered sufficient to mitigate modern sophisticated threats. It's essential to deploy modern defenses to detect and contain threats in real-time. SAP applications unlike most other workloads require basic assessment and validation before deploying Microsoft Defender for Endpoint. The Enterprise Security administrators should contact the SAP Basis Team prior to deploying Defender for Endpoint. The SAP Basis Team should be cross trained with a basic level of knowledge about Defender for Endpoint.
 
 ## Recommended SAP OSS Notes
 
@@ -133,7 +133,7 @@ sudo service azsecd restart
 sudo azsecd status 
 ```
 
-The following articles details how to configure AV exclusions for processes, files, and folders per individual VM:
+The following articles detail how to configure AV exclusions for processes, files, and folders per individual VM:
 
 - [Set up exclusions for Microsoft Defender Antivirus scans | Microsoft Learn](configure-exclusions-microsoft-defender-antivirus.md)
 - [Common mistakes to avoid when defining exclusions | Microsoft Learn](common-exclusion-mistakes-microsoft-defender-antivirus.md)
@@ -153,7 +153,7 @@ Scheduled scans for SAP ECC, BW, CRM, SCM, Solution Manager, and other component
 ## Useful Commands & Links
 
 If, during manual zypper installation on Suse an error “Nothing provides ‘policycoreutils’” occurs, refer to:
-[Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md)
+[Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 There are several command-line commands that can control the operation of mdatp. To enable the passive mode you can use the following command:
 
