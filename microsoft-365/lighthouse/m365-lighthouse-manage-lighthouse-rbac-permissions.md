@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 01/15/2024
+ms.date: 01/17/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -24,17 +24,13 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage Lighthouse RBAC permissions in Microsoft 365 Lighthouse
 
-The Lighthouse permissions page allows administrators in Microsoft 365 Lighthouse to manage user role-based access control (RBAC) permissions in the partner tenant. Administrators can view and manage membership for each Lighthouse RBAC role to ensure that users in the partner tenant have right-sized permissions. Administrators can also view the associated security group for each Lighthouse RBAC role. If there's no security group assigned to a Lighthouse RBAC role, a security group will be automatically created when you assign the role to a user in the partner tenant.
+The Lighthouse permissions page allows administrators in Microsoft 365 Lighthouse to manage user role-based access control (RBAC) permissions in the partner tenant. Administrators can view and manage membership for each Lighthouse RBAC role to ensure that users in the partner tenant have right-sized permissions. Each Lighthouse RBAC role is associated with a security group instead of an Entra ID role, so when users are assigned a Lighthouse RBAC role, they'll be automatically associated with a specific Lighthouse RBAC security group.
 
-> [!NOTE]
-> To view security group membership for Lighthouse users with the Lighthouse Operator role, go to the Delegated access page in Lighthouse. The Delegated access page provides security group membership details for all delegated access relationships.
+When administrators assign a Lighthouse RBAC role to a user in the partner tenant for the first time, a security group will be automatically created. Administrators can view the associated security group for each Lighthouse RBAC role on the Lighthouse permissions page and in the Microsoft Entra admin center. All security group membership changes are reflected in both Lighthouse and the Microsoft Entra admin center.
 
 ## Before you begin
 
-To access the Lighthouse permissions page and manage permissions, you must have one of the following roles:
-
-- Global Administrator in Microsoft Entra ID
-- Lighthouse Administrator in Lighthouse
+To access the Lighthouse permissions page and manage permissions, you must be a Global Administrator in Microsoft Entra ID.
 
 ## View Lighthouse RBAC role membership and associated security group
 
