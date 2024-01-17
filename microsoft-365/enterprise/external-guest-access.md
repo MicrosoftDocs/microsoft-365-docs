@@ -142,7 +142,7 @@ For information about setting up cross-cloud meetings, see [Meet with people in 
 
 ## Multitenant organizations
 
-If your organization manages multiple Microsoft 365 tenants, you can set up a multitenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Multitenant organizations synchronize users between tenants using Microsoft Entra B2B collaboration users. With the new Microsoft Teams desktop client, users can search for users in other tenants, receive real-time notifications from all the tenants in the multitenant organization, and participate in chats, meetings, and calls across all of the tenants without dropping from a call or meeting to switch tenants.
+If your organization manages multiple Microsoft 365 tenants, you can set up a multitenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Multitenant organizations synchronize users between tenants using Microsoft Entra B2B collaboration users. With the new Microsoft Teams desktop client, users can search for users in other tenants, receive real-time notifications from all the tenants in the multitenant organization, and participate in chats, meetings, and calls across all of the tenants without needing to switch tenants.
 
 For information about how to set up a multitenant organization, see [Plan for multitenant organizations in Microsoft 365](/microsoft-365/enterprise/plan-multi-tenant-org-overview) and [Set up a multitenant org in Microsoft 365](/microsoft-365/enterprise/set-up-multi-tenant-org).
 
