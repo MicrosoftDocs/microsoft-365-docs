@@ -19,7 +19,7 @@ ms.collection:
 - demo
 ms.topic: article
 ms.subservice: ngp
-ms.date: 10/21/2022
+ms.date: 01/15/2024
 ---
 
 # Microsoft Defender for Endpoint - demonstration scenarios
