@@ -30,7 +30,7 @@ With AI rapidly entering the day-to-day experience of people in your organizatio
 
 First, it offers a score, on a 100-point scale, to quickly assess how well people in your organization are adopting Microsoft Copilot for Microsoft 365.
 
-You can dive deeper into what makes up your AI assistance score by looking at the specific features and activities that drive impact, like how well your organization is using Copilot to summarize and create content in your organization, including Teams meetings, Chat, email in Outlook, documents in Word or PowerPoint, and more.
+You can dive deeper into what makes up your AI assistance score by looking at the specific features and activities that drive impact, like how well your organization is using Copilot to summarize and create content in your organization, including Teams meetings, Chat, email in Outlook, documents in Word or PowerPoint, and more. To learn more about Copilot, see [Get started with Copilot for Microsoft 365](/copilot/microsoft-365-copilot-setup.md).
 
 ## Prerequisites
 
@@ -68,11 +68,11 @@ Each insight captures the number of Copilot-enabled users in your organization p
 
 ### Summarize
 
-- **Summarize a Teams meeting:** This represents the number of users who summarize meetings using Copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a meeting in the Copilot chat box.
-- **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using Copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a conversation in the Copilot chat box.
-- **Summarize an email thread:** This represents the number of users who summarize email threads using Copilot in Outlook. This doesn't include the instances when the user types to summarize an Outlook thread in the Copilot chat box.
-- **Summarize a Word document:** This represents the number of users who summarize Word documents using Copilot in Microsoft Word. This doesn't include the instances when the user types to summarize a document in the Copilot chat box.
-- **Summarize a presentation:** This represents the number of users who summarize a presentation using Copilot in Microsoft PowerPoint. This doesn't include the instances when the user types to summarize a presentation in the Copilot chat box.
+- **Summarize a Teams meeting:** This represents the number of users who summarize meetings using Copilot in Microsoft Teams.
+- **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using Copilot in Microsoft Teams.
+- **Summarize an email thread:** This represents the number of users who summarize email threads using Copilot in Outlook.
+- **Summarize a Word document:** This represents the number of users who summarize Word documents using Copilot in Microsoft Word.
+- **Summarize a presentation:** This represents the number of users who summarize a presentation using Copilot in Microsoft PowerPoint.
 
 ### Create
 
