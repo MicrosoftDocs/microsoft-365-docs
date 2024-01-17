@@ -37,20 +37,11 @@ To create a translated version of a document, follow these steps:
 
        ![Screenshot showing the Translate option next to the document.](../media/content-understanding/translation-show-more-actions.png)
 
-<!---
-1. From a SharePoint document library, select the file or files you want to translate. By using either the **More options** (**...**) button on the ribbon or the **Show more actions for this item** button next to the file name, select **Translate**.
-
-
-
-   ![Screenshot showing the Translate option from the ribbon.](../media/content-understanding/translation-ribbon-option2.png)
-
-   ![Screenshot showing the Translate option next to the document.](../media/content-understanding/translation-show-more-actions.png)
---->
 2. On the **Translate documents** screen, enter a language or use the drop-down menu to choose a language you want to translate the file, and then select **Translate**.
 
    ![Screenshot showing the Translate documents screen with language options.](../media/content-understanding/translation-translate-documents.png)
 
-3. You'll receive a confirmation message saying that the request to translate has been submitted.
+3. You'll receive a confirmation message saying that the request to translate the file has been submitted.
 
    ![Screenshot showing the translation confirmation screen.](../media/content-understanding/translation-confirmation.png)
 
@@ -96,13 +87,15 @@ To create a rule to translate documents automatically when data in a column chan
 
     a. Select **Choose a column**, and then select the appropriate column for which to translate the file.
 
-    b. Select **Choose condition**, and then select the appropriate condition under which to translate the file.
+     ![Screenshot of the Create a rule page showing the beginning rule statement.](../media/content-understanding/translation-beginning-rule.png)
+
+    b. Select **Choose a condition**, and then select the appropriate condition under which to translate the file.
 
     c. Select **Choose action**, and then select **create a translated copy in**.
 
     d. Select **enter a language**, and then select the language into which you want to translate the file.
 
-     ![Screenshot of the Create a rule page showing the A new file is added option highlighted.](../media/content-understanding/translation-column-enter-language.png)
+     ![Screenshot of the Create a rule page showing the enter a language option.](../media/content-understanding/translation-column-enter-language.png)
 
 4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
 <!---
