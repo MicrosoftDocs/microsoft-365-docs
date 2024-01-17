@@ -45,9 +45,15 @@ When you invite a user to a workspace, that user has access to all the pages in 
 
 When you share only a Loop page, you're giving users access to that specific page exclusively (not the whole workspace). The user can choose to use a company share link or people-specific share link; unless their tenant admin has disabled some of the share link types. When sharing a page, you can choose to grant the user "*edit*" or "*read only*" access.
 
-## Loop workspaces and Microsoft 365 groups
+## Loop workspace membership, Microsoft 365 groups, Security Groups
 
-Loop workspaces don't use Microsoft 365 groups for access management, instead they create a roster for access management.
+There is currently one type of Loop workspace. The roster/membership of the workspace is visible within the Loop app and can be updated by the owner of the workspace.
+
+Owners cannot yet assign new members to become owners of Loop workspaces. If the owner of a workspace leaves the company, the Loop workspace will become ownerless. There is not yet a way for an administrator to assign a new owner to an ownerless group.
+
+Ownerless workspaces can be found by querying Loop workspace containers in SharePoint Embedded. For more information on querying SharePoint Embedded containers, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application ID is listed in [Summary of governance, lifecycle and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
+
+There are other types of groups and membership lists in the Microsoft ecosystem such as Microsoft 365 groups and Security groups. Loop workspace membership cannot currently be managed by or associated with these groups or lists.
 
 ## eDiscovery support for Loop content stored in Loop workspaces
 
