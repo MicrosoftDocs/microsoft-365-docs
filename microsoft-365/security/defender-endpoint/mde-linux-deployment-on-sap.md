@@ -66,7 +66,7 @@ The default configuration option for deployment as an Azure Extension for AntiVi
 The Linux crontab is typically used to schedule Microsoft Defender for Endpoint AV scan and log rotation tasks:
 [How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Learn](linux-schedule-scan-mde.md)
 
-Endpoint Detection and Response (EDR) functionality is active whenever Microsoft Defender for Endpoint for Linux is installed. There is no simple way to disable EDR functionality through command line or configuration. See the section “Checklist for Troubleshooting Problems on SAP VMs Running Microsoft Defender for Endpoint on Linux” for more information on troubleshooting EDR.
+Endpoint Detection and Response (EDR) functionality is active whenever Microsoft Defender for Endpoint for Linux is installed. There is no simple way to disable EDR functionality through command line or configuration. For more information on troubleshooting EDR, see the sections [Useful Commands](#useful-commands) and [Useful Links](#useful-links).
 
 ## Important Configuration Settings for Microsoft Defender for Endpoint on SAP on Linux  
 
@@ -150,7 +150,7 @@ If there's a requirement to scan SAPMNT then this scan should be configured on o
 
 Scheduled scans for SAP ECC, BW, CRM, SCM, Solution Manager, and other components should be staggered at different times to avoid all SAP components from overloading a shared NFS storage source shared by all SAP components.
 
-## Useful Commands & Links
+## Useful Commands
 
 If, during manual zypper installation on Suse an error “Nothing provides ‘policycoreutils’” occurs, refer to:
 [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
