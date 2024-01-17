@@ -184,30 +184,63 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 
 #### Move an existing cloud-only mailbox to a specific geo location
 
-A cloud-only user is a user not synchronized to the tenant via Microsoft Entra Connect. This user was created directly in Microsoft Entra ID. Use the **Get-MsolUser** and **Set-MsolUser** cmdlets in the Azure AD Module for Windows PowerShell to view or specify the _Geography_ location where a cloud-only user's mailbox will be stored.
+> [!NOTE]
+> The Azure Active Directory (AzureAD) PowerShell module is being deprecated and replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+>
+> Also see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) and [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps) for information on how to install and upgrade to Microsoft Graph PowerShell, respectively.
 
-To view the **PreferredDataLocation** value for a user, use this syntax in Azure AD PowerShell:
+A cloud-only user is a user not synchronized to the tenant via Microsoft Entra Connect. This user was created directly in Microsoft Entra ID. Use the **Get-MgUser** and **Set-MgUser** cmdlets in the Microsoft Graph PowerShell SDK to view or specify the _Geography_ location where a cloud-only user's mailbox will be stored.
+
+First, you must connect to Microsoft Graph using the required permission scopes for the actions you will take in your Microsoft Graph PowerShell session.
+
+The Microsoft Graph PowerShell SDK supports two types of authentication: delegated access, and app-only access. In this guide, you'll use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call the Microsoft Graph.
+
+For details on using app-only access for unattended scenarios, see Use app-only authentication with the Microsoft Graph PowerShell SDK.
+
+**Determine required permission scopes**
+
+Each API in the Microsoft Graph is protected by one or more permission scopes. The user logging in must consent to one of the required scopes for the APIs you plan to use. In this example, we'll use the following APIs.
+
+List users to find the user ID of the logged-in user.
+Modify the **PreferredDataLocation** value for a user.
+
+The *User.Read.All* permission scope enables the first call, and the *User.ReadWrite.All* scope enables the second. These permissions require an admin account.
+
+For more information about how to determine what permission scopes you'll need, see [Using Find-MgGraphCommand cmdlet](/powershell/microsoftgraph/find-mg-graph-command).
+
+To connect to your Microsoft 365 Organization, run the following command:
 
 ```powershell
-Get-MsolUser -UserPrincipalName <UserPrincipalName> | Format-List UserPrincipalName,PreferredDataLocation
+Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
+```  
+
+The command prompts you to go to a web page to sign in with your credentials. Once you've done that, the command indicates success with a Welcome To Microsoft Graph! message. You only need to sign in once per session.
+
+> [!TIP]
+> You can accretively add permissions by repeating the Connect-MgGraph command with the new permission scopes.
+
+To view the **PreferredDataLocation** value for a user, use this syntax in Microsoft Graph PowerShell:
+
+```powershell
+Get-MgUser -ConsistencyLevel eventual -Count userCount -Search '"UserPrincipalName:<UserPrincipalName>"' | Format-List UserPrincipalName,PreferredDataLocation
 ```
 
 For example, to see the **PreferredDataLocation** value for the user michelle@contoso.onmicrosoft.com, run the following command:
 
 ```powershell
-Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
+Get-MgUser -ConsistencyLevel eventual -Count userCount -Search '"UserPrincipalName:michelle@contoso.onmicrosoft.com"' | Format-List
 ```
 
-To modify the **PreferredDataLocation** value for a cloud-only user object, use the following syntax in Azure AD PowerShell:
+To modify the **PreferredDataLocation** value for a cloud-only user object, use the following syntax in Microsoft Graph PowerShell:
 
 ```powershell
-Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoLocationCode>
+Set-MgUser -UserID <UserID> -PreferredDataLocation <GeoLocationCode>
 ```
 
-For example, to set the **PreferredDataLocation** value to the European Union (EUR) geo for the user michelle@contoso.onmicrosoft.com, run the following command:
+For example, to set the **PreferredDataLocation** value to the European Union (EUR) geo for the user michelle@contoso.onmicrosoft.com, get the UserID value from the last command output and run the following command:
 
 ```powershell
-Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
+Set-MgUser -UserID "916a6a08-b9d0-44b6-870f-562d8358a314" -PreferredDataLocation EUR
 ```
 
 > [!NOTE]
@@ -259,7 +292,7 @@ To create a new mailbox in a specific _Geographic_ location, you need to do eith
 To create a new cloud-only licensed user (not Microsoft Entra Connect synchronized) in a specific _Geographic_ location, use the following syntax in Azure AD PowerShell:
 
 ```powershell
-New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>" [-FirstName <FirstName>] [-LastName <LastName>] [-Password <Password>] [-LicenseAssignment <AccountSkuId>] -PreferredDataLocation <GeoLocationCode>
+New-MgUser -UserPrincipalName <UserPrincipalName> -AccountEnabled -DisplayName "<Display Name>" [-GivenName <FirstName>] [-Surname <LastName>] [-LicenseAssignment <AccountSkuId>] -PreferredDataLocation <GeoLocationCode> -PasswordProfile <hashtable>
 ```
 
 This example creates a new user account for Elizabeth Brunner with the following values:
@@ -268,12 +301,18 @@ This example creates a new user account for Elizabeth Brunner with the following
 - First name: Elizabeth
 - Last name: Brunner
 - Display name: Elizabeth Brunner
-- Password: randomly generated and shown in the results of the command (because we're not using the _Password_ parameter)
+- Password: Manually add password in the form of a hashtable, pass to $PasswordProfile
 - License: `contoso:ENTERPRISEPREMIUM` (E5)
 - Location: Australia (AUS)
 
 ```powershell
-New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "Elizabeth Brunner" -FirstName Elizabeth -LastName Brunner -LicenseAssignment contoso:ENTERPRISEPREMIUM -PreferredDataLocation AUS
+$LicenseDetails = @{
+    "SkuPartNumber" = "contoso:ENTERPRISEPREMIUM"
+}
+$PasswordProfile = @{
+    Password = '98sdfoi4&#r)'
+}
+New-MgUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -AccountEnabled -DisplayName "Elizabeth Brunner" -GivenName Elizabeth -Surname Brunner -LicenseDetails $LicenseDetails -PreferredDataLocation AUS -PasswordProfile $PasswordProfile
 ```
 
 For more information about creating new user accounts and finding LicenseAssignment values in Azure AD PowerShell, see [Create user accounts with PowerShell](create-user-accounts-with-microsoft-365-powershell.md) and [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
