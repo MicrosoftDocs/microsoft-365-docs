@@ -13,6 +13,7 @@ ms.reviewer: deanw, brianday
 ms.custom:
   - it-pro
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
