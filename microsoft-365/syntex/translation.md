@@ -47,6 +47,8 @@ To create a translated version of a document, follow these steps:
 
 ## Translate a document automatically
 
+You can create a rule to automatically translate a document [when a new file is added](#translate-a-video-transcript) or [when data in a column changes](#when-data-in-a-column-changes).
+
 ### When a new file is added
 
 To create a rule to translate documents automatically when a document is created, follow these steps:
