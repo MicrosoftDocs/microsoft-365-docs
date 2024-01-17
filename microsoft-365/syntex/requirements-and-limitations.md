@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-manage
     - m365initiative-syntex
 ms.localizationpriority:  medium
 description: Learn about file limitations, file types, supported languages, and other requirements for models in Microsoft Syntex.

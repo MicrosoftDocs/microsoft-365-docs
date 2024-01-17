@@ -97,7 +97,7 @@ Supports table and JSON format output types. For each command, there's a default
 
 ### From the command line
 
-- `sudo '/Library/Application Support/Microsoft/Defender/uninstall/install_helper execute --path '/Library/Application Support/Microsoft/Defender/uninstall/uninstall' --args --post-uninstall-hook`
+- `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
 
 ## Configuring from the command line
 

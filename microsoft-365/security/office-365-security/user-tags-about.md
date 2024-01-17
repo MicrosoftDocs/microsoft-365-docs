@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 6/20/2023
+ms.date: 11/2/2023
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -50,6 +50,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 - You open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/System settings/manage** or **Authorization and settings/System settings/Read-only**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
     - _Create, modify, and delete custom user tags_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Apply and remove the Priority account tag from users_: Membership in the **Security Administrator** and **Exchange Admin** role groups.
@@ -199,7 +200,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
   - [Payloads](attack-simulation-training-payloads.md)
   - [Training campaigns](attack-simulation-training-training-campaigns.md)
   - [Training modules](attack-simulation-training-training-modules.md)
-- [Quarantine](quarantine-admin-manage-messages-files.md)
+- [Quarantine](quarantine-admin-manage-messages-files.md) Currently, tag selection on the Quarantine filter page supports only the Priority account tag.
 - [Admin submissions and user reported messages](submissions-admin.md)
 - In organizations above a certain size, the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) is available in the Exchange admin center (EAC).
 
