@@ -111,8 +111,6 @@ You can view several numbers for Copilot for Microsoft 365 usage, which highligh
 **Active users rate** shows you the number of active users in your organization divided by the number of enabled users.
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
-:::image type="content" alt-text="Screenshot showing the recommendation card for the Copilot dashboard using Viva Insights." source="../../media/cfr-copilot-viva.png":::
-
 In Recommendations, the recommended action card highlights [Microsoft Copilot Dashboard](/viva/insights/org-team-insights/copilot-dashboard), where you can deliver insights to your IT leaders to explore Copilot readiness, adoption, and impact in Viva Insights.  
 
 You can see the following summary charts in this report as default view:
