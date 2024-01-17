@@ -52,7 +52,7 @@ See the [device control scenarios](#device-control-scenarios) section (in this a
 
 ## Supported devices
 
-Device control organizes supported devices into types by their `primary_id`. On a Windows device, based on the driver, some peripheral devices are marked as removable. For example, USB drives, Windows Portable Devices (WPD), CD/ROMs, Bluetooth devices, and printers are all considered to be removable devices. The following table lists examples of devices that device control supports with their `primary_id` values:
+Device control supports Bluetooth devices, CD/ROMs and DVD devices, printers, USB devices, and other types of portable devices. On a Windows device, based on the driver, some peripheral devices are marked as removable. The following table lists examples of devices that device control supports with their `primary_id` values and media class names:
 
 | Device type | `PrimaryId` in Windows | `primary_id` in macOS | Media Class Name |
 |---|---|---|
@@ -77,17 +77,17 @@ This section lists scenarios for device control. Select a tab, review the scenar
 | Prevent copying of sensitive files to USB | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
 | Block write access to removable data drives not protected by BitLocker | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
 | Block write access to devices configured in another organization | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
-| Prevent Write and Execute access to all but allow specific approved USBs | Device control in Microsoft Defender. See *LINK NEEDED*. |
-| Audit Write and Execute access for all but block specific blocked USBs | Device control in Microsoft Defender. See *LINK NEEDED*. |
-| Block read and execute access to specific file extension | Device control in Microsoft Defender. See *LINK NEEDED*. |
-| Block people from access removable storage when the machine isn't connecting corporate network | Device control in Microsoft Defender. See *LINK NEEDED*. |
+| Prevent Write and Execute access to all but allow specific approved USBs | Device control in Defender for Endpoint. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
+| Audit Write and Execute access for all but block specific blocked USBs | Device control in Defender for Endpoint. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
+| Block read and execute access to specific file extension | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
+| Block people from access removable storage when the machine isn't connecting corporate network | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
 
 ## [**Printers**](#tab/Printers)
 
 | Scenario | Device control policy |
 |---|---|
-| Block people from printing via noncorporate printer | Device control in Microsoft Defender. See *LINK NEEDED*. |
-| Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See *LINK NEEDED*. |
+| Block people from printing via noncorporate printer | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
+| Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
 | Block printing of sensitive documents to any printer | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
 | Prevent installation of all printers | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
 | Prevent installation of a specific printer | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
@@ -101,24 +101,21 @@ This section lists scenarios for device control. Select a tab, review the scenar
 
 ---
 
-## Device control in Microsoft Defender scenarios
+## Device control in Defender for Endpoint sample scenarios
 
-Device control capabilities in Defender for Endpoint provide more advanced capabilities than what's built into the Windows operating system. With device control in Defender for Endpoint, you have a robust access control model that enables a wide range of scenarios.  
+Device control capabilities in Defender for Endpoint provide more advanced capabilities than what's built into the Windows operating system. With device control in Defender for Endpoint, you have a robust access control model that enables a wide range of scenarios (see [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md)).  
 
-The following examples are helpful in understanding how device control in Defender for Endpoint can accomplish common scenarios:
+If you're interested in sample queries and configuration methods, see the following examples:
 
-- **Removable Storage Access Control** (see [mdatp-devicecontrol/Removable Storage Access Control Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples))
+- **Removable Storage Access Control**. See [mdatp-devicecontrol/Removable Storage Access Control Samples](https://github.com/j0shbregman/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
 
-   - Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
-   - Scenario 2: Audit Write and Execute access for all but block specific blocked USBs
+- **Printer protection**. See [mdatp-devicecontrol/Printer Protection Samples](https://github.com/j0shbregman/mdatp-devicecontrol/tree/main/Printer%20Protection%20Samples).
 
-- **Printer protection** (see [mdatp-devicecontrol/Printer Protection Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Printer%20Protection%20Samples))
-
-   - Scenario 1: Prevent print to all but allow print through specific approved USB printer when the machine is Corporate Network OR VPN connected or print through PDF/XPS file
+If you're new to device control, see [Get started with device control in Microsoft Defender for Endpoint](device-control-get-started.md).
 
 ## Prerequisites
 
-Device control in Defender for Endpoint can be applied to Windows 10 and Windows 11 devices that have the anti-malware client version `4.18.2103.3` or later.
+Device control in Defender for Endpoint can be applied to devices running Windows 10 or Windows 11 that have the anti-malware client version `4.18.2103.3` or later.
 
 - `4.18.2104` or later: Add `SerialNumberId`, `VID_PID`, filepath-based GPO support, and `ComputerSid`
 - `4.18.2105` or later: Add Wildcard support for `HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId`, the combination of specific user on specific machine, removable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
@@ -126,6 +123,7 @@ Device control in Defender for Endpoint can be applied to Windows 10 and Windows
 - `4.18.2205` or later: Expand the default enforcement to Printer. If you set it to Deny, it blocks Printer as well, so if you only want to manage storage, make sure to create a custom policy to allow Printer
 - `4.18.2207` or later: Add File support; the common use case can be: block people from Read/Write/Execute access specific file on removable storage. Add Network and VPN Connection support; the common use case can be: block people from access removable storage when the machine isn't connecting corporate network.
 
+For Mac, see [Device Control for macOS](mac-device-control-overview.md).
 
 ## Next steps
 
