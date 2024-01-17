@@ -20,6 +20,7 @@ ms.custom:
   - O365ITProTrain
   - httpsfix
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Summary: Connect to all Microsoft 365 services in a single PowerShell window."
 ---
