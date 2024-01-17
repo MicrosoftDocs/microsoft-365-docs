@@ -41,7 +41,7 @@ You'll get a limited amount of usage each month during the offering period. The 
 |Service  |Units  |Monthly included capacity at no charge  |
 |---------|---------|---------|
 |Content assembly                 | Documents    | 50         |
-|eSignature                       | Envelopes    | 5          |
+|eSignature                       | Requests     | 5          |
 |Image tagging                    | Images       | 2,500      |
 |Optical character recognition    | Pages        | 2,500      |
 |Prebuilt document processing     | Pages        | 100        |

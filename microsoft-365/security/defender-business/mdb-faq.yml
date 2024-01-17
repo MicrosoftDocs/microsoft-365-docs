@@ -3,8 +3,8 @@ metadata:
   title: Microsoft Defender for Business frequently asked questions
   description: Get answers to questions about Defender for Business, a cybersecurity solution for small and medium sized businesses.
   search.appverid: MET150
-  author: denisebmsft
-  ms.author: deniseb
+  author: siosulli
+  ms.author: siosulli
   manager: dansimp 
   audience: Admin
   ms.topic: faq

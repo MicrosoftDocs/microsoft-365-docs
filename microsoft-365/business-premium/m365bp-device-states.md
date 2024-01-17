@@ -2,8 +2,8 @@
 title: "View device status with Microsoft Defender for Business"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: conceptual

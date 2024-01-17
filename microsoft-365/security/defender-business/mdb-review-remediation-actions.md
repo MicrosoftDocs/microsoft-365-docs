@@ -2,8 +2,8 @@
 title: Review remediation actions in Microsoft Defender for Business
 description: View remediations that were taken on detected threats or suspected attacks with Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
