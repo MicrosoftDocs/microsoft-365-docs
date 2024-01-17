@@ -49,6 +49,7 @@ The rest of this article how to configure preset security policies.
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Configure preset security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to preset security policies_: Membership in the **Global Reader** role group.
@@ -394,7 +395,7 @@ If your organization has Defender for Office 365, you enable or disable the rule
 
 - **Organizations with Defender for Office 365**:
 
-  - Run the following command to determine whether the rules for the Standard and Strict preset security policies are currently enabled or disabled:    
+  - Run the following command to determine whether the rules for the Standard and Strict preset security policies are currently enabled or disabled:
 
     ```powershell
     Write-Output -InputObject ("`r`n"*3),"EOP protection rule",("-"*50);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 protection rule",("-"*50);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject ("`r`n"*3),"EOP protection rule",("-"*50);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 protection rule",("-"*50);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State

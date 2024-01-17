@@ -40,6 +40,7 @@ This article describes how to confirm that priority account protection is turned
 - You open the Microsoft Defender portal at <https://security.microsoft.com>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/System settings/Read and manage** or **Authorization and settings/System settings/Read-only**.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** or **Security Administrator** role groups.
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
@@ -91,7 +92,7 @@ The effects of priority account protection are visible in the following reportin
 - [Threat Explorer and real-time detections](threat-explorer-about.md)
 - [Email entity page](mdo-email-entity-page.md)
 
-For information about where the Priority account tag and other user tags are available as filters, see [User tags in reports and features](user-tags-about.md#user-tags-in-reports-and-features). 
+For information about where the Priority account tag and other user tags are available as filters, see [User tags in reports and features](user-tags-about.md#user-tags-in-reports-and-features).
 
 ### Threat protection status report
 
