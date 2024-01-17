@@ -143,7 +143,7 @@ You should immediately see an "Action blocked" notification.
 
 You should immediately see an "Action blocked" notification.
 
-### Scenario 3 (Windows 10 version 1803 or later): ASR rule blocks unsigned USB content from executing
+### Scenario 3 (Windows 10 or later): ASR rule blocks unsigned USB content from executing
 
 1. Configure the rule for USB protection (B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4).
 
@@ -172,6 +172,8 @@ You should immediately see an "Action blocked" notification.
 Download and run this [clean-up script](https://demo.wd.microsoft.com/Content/ASR_CFA_CleanupScript.zip)
 
 Alternately, you can perform these manual steps:
+
+
 
 
 
