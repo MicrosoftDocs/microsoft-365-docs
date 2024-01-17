@@ -263,7 +263,6 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 
 Back on the **Domains & addresses** tab, the entry is no longer listed.
 
-
 #### Use PowerShell to remove entries for domains and email addresses from the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
@@ -490,7 +489,6 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoo
    > You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Spoofed user** column header.
 
 4. In the warning dialog that opens, select **Delete**.
-
 
 #### Use PowerShell to remove entries for spoofed senders from the Tenant Allow/Block List
 
