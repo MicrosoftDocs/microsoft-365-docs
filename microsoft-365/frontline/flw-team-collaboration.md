@@ -23,7 +23,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 
+ms.date: 1/17/2024
 ---
 
 # Frontline team collaboration
@@ -164,21 +164,6 @@ The Updates in Microsoft Teams app provides a centralized place for members of y
 Learn how to [manage the Updates app for your organization](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Updates video training](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) with your users.
-
-<!--## Set up your teams, channels, and apps
-
-Set up teams and channels for your frontline from scratch or from pre-built or custom templates. The easiest way is to start with a template. The **Organize a store** and **Retail for managers** [templates](/microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) are pre-made templates that include channels and apps designed for retail. You can also create a template based off an existing team. Even when you start with a template, you can customize the team and channels, and add more apps to suit your team's needs.
-
-- Use channels with tabs to share news, keep employees in touch across shifts, and build community.
-- Use teams templates to set up teams with similar structures (such as channels and tabs) across stores or regions.
-
-### Create a team based on a template
-
-1. In Teams, select **Join or create a team**.
-
-2. Choose **Create a team** and then scroll down to see available templates.
-
-More information: [Create a team with templates](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)-->
 
 ## Manage apps
 

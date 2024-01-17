@@ -23,7 +23,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 01/08/2024
+ms.date: 01/17/2024
 ---
 
 # Simplify business processes for frontline teams

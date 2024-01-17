@@ -1,5 +1,5 @@
 ---
-title: Secure Messaging for healthcare organizations using Microsoft Teams
+title: Messaging policy settings for healthcare organizations using Microsoft Teams
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
@@ -25,12 +25,12 @@ appliesto:
 ms.reviewer: 
 description: Learn how to customize a messaging policy for Microsoft Teams that can include read receipts and priority notifications.
 ms.custom: seo-marvel-mar2020
-ms.date: 10/28/2022
+ms.date: 1/17/2024
 ---
 
-# Secure Messaging for healthcare organizations
+# Messaging policies for healthcare organizations
 
-Messaging policies are used to control which chat and channel messaging features are available to users in Microsoft Teams. They're part of the overall deployment of Secure Messaging for healthcare organizations like hospitals, clinics, or doctor's offices, where having a message picked up and acted upon in a timely manner is crucial, as is knowing when messages are read.
+Messaging policies are used to control which chat and channel messaging features are available to users in Microsoft Teams. They're part of the overall messaging deployment for healthcare organizations like hospitals, clinics, or doctor's offices, where having a message picked up and acted upon in a timely manner is crucial, as is knowing when messages are read.
 
 You can use the global (Org-wide default) policy that's automatically created or create and assign custom messaging policies. Users in your organization automatically get the global policy unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the features that you want.
 
@@ -46,11 +46,9 @@ The following messaging policy settings are of special interest for healthcare o
 
 For healthcare applications, choose either **User controlled** or **On for everyone**. Keep in mind that when using the **On for everyone** setting, the only way to set receipts for the whole tenant is either to have only one messaging policy for the whole tenant (the default global policy) or to have all messaging policies in the tenant use the same settings for receipts. The read receipts feature is most effective when set to **On for everyone**.
 
-<!--*Usage example without read receipts:* Jakob Roth, a high risk patient, is admitted to the hospital. Sofia Krause is a nurse working as part of the inter-disciplinary team (IDT) of medical workers, including different specialists, is assigned as the primary care coordinator in charge of this patient. Sofia sends emails and other instant messages to a group of nurses and doctors who use various messaging clients and apps, and often gets no response or indication whether a message was read by team members. Due to tangled communication processes, Jakob's medication is misapplied and his hospital stay is extended.-->
-
 ### Example scenario
 
-Remy Morris, a high-risk patient, is admitted to the hospital. Sofia Krause is a nurse who is assigned as the primary care coordinator of this patient. Sofia starts a group chat with a set of doctors and other nurses who are working with the patient and starts an emergency triage. The doctors and nurses communicate and collaborate over the patient's care plan. Important and urgent messages are sent through 1:1 and group chat conversations. Sofia uses read receipts to determine whether messages sent requesting support are delivered and read by the care team. Remy's patient outcomes are near-optimal and goes home sooner because the care team communicates smoothly.
+Remy Morris, a high-risk patient, is admitted to the hospital. Sofia Krause is a nurse who is assigned as the primary care coordinator of this patient. Sofia starts a group chat with a set of doctors and other nurses who are working with the patient and starts an emergency triage. The doctors and nurses communicate and collaborate over the patient's care plan. Important and urgent messages are sent through 1:1 and group chat conversations. Sofia uses read receipts to determine whether messages sent requesting support are delivered and read by the care team.
 
 ## Send urgent messages using priority notifications
 
