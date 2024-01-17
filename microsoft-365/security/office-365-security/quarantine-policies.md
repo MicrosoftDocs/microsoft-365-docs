@@ -113,7 +113,7 @@ Back on the **Quarantine policy** page, the policy that you created is now liste
 ### Create quarantine policies in PowerShell
 
 > [!TIP]
-> The PermissionToAllowSender permission in quarantine policies in PowerShell isn't used. 
+> The PermissionToAllowSender permission in quarantine policies in PowerShell isn't used.
 
 If you'd rather use PowerShell to create quarantine policies, connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [standalone Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) and use the following syntax:
 

@@ -532,9 +532,9 @@ In the details table below the chart, the following information is available:
 
 To see all columns, you likely need to do one or more of the following steps:
 
-  - Horizontally scroll in your web browser.
-  - Narrow the width of appropriate columns.
-  - Zoom out in your web browser.
+- Horizontally scroll in your web browser.
+- Narrow the width of appropriate columns.
+- Zoom out in your web browser.
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report by selecting one or more of the following values in the flyout that opens:
 
@@ -592,9 +592,9 @@ In the details table below the chart, the following information is available:
 
 To see all columns, you likely need to do one or more of the following steps:
 
-  - Horizontally scroll in your web browser.
-  - Narrow the width of appropriate columns.
-  - Zoom out in your web browser.
+- Horizontally scroll in your web browser.
+- Narrow the width of appropriate columns.
+- Zoom out in your web browser.
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report by selecting one or more of the following values in the flyout that opens:
 
@@ -1057,7 +1057,7 @@ You need to be assigned permissions before you can view and use the reports that
   - **Security Reader**
   - **Global Reader**
 - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Security Reader**, or **Global Reader** roles in Microsoft Entra ID gives users the required permissions _and_ permissions for other features in Microsoft 365.
-the 
+
 <sup>\*</sup> Membership in the **Organization Management** role group or in the **Global Administrator** role is required to use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** or :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)** actions in reports (where available).
 
 ## What if the reports aren't showing data?
@@ -1132,8 +1132,8 @@ Depending on the report and possibly the specific view in the report, one or mor
    When you're finished on the **Select filters** page, select **Next**.
 
 5. On the **Recipients** page, choose recipients for the report in the **Send email to** box. The default value is your email address, but you can add others by doing either of the following steps:
-  - Click in the box, wait for the list of users to resolve, and then select the user from the list below the box.
-  - Click in the box, start typing a value, and then select the user from the list below the box.
+   - Click in the box, wait for the list of users to resolve, and then select the user from the list below the box.
+   - Click in the box, start typing a value, and then select the user from the list below the box.
 
    To remove an entry from the list, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the entry.
 
@@ -1149,7 +1149,7 @@ Depending on the report and possibly the specific view in the report, one or mor
 
 The reports are emailed to the specified recipients based on the schedule you configured
 
-The scheduled report entry is available on the **Managed schedules** page as described in the next subsection. 
+The scheduled report entry is available on the **Managed schedules** page as described in the next subsection.
 
 #### Manage existing scheduled reports
 
@@ -1206,8 +1206,8 @@ Back on the **Manage schedules** page, the deleted scheduled report entry is no 
    When you're finished on the **Name on-demand report** page, select **Next**.
 
 4. On the **Recipients** page, choose recipients for the report in the **Send email to** box. The default value is your email address, but you can add others by doing either of the following steps:
-  - Click in the box, wait for the list of users to resolve, and then select the user from the list below the box.
-  - Click in the box, start typing a value, and then select the user from the list below the box.
+   - Click in the box, wait for the list of users to resolve, and then select the user from the list below the box.
+   - Click in the box, start typing a value, and then select the user from the list below the box.
 
    To remove an entry from the list, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the entry.
 
@@ -1221,7 +1221,7 @@ Back on the **Manage schedules** page, the deleted scheduled report entry is no 
 
    When you're finished on the **New on-demand report created** page, select **Done**.
 
-The report creation task (and eventually the finished report) is available on the **Reports for download** page as described in the next subsection. 
+The report creation task (and eventually the finished report) is available on the **Reports for download** page as described in the next subsection.
 
 #### Download reports
 
@@ -1233,14 +1233,15 @@ After you request an on-demand report as described in the previous section, you 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> select **Reports for download**. Or, to go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload>.
 
 On the **Reports for download** page, the following information is shown for each available report:
-   - **Start date**
-   - **Name**
-   - **Report type**
-   - **Last sent**
-   - **Status**:
-     - **Pending**: The report is still being created, and it isn't available to download yet.
-     - **Complete - Ready for download**: Report generation is complete, and the report is available to download.
-     - **Complete - No results found**: Report generation is complete, but the report contains no data, so you can't download it.
+
+- **Start date**
+- **Name**
+- **Report type**
+- **Last sent**
+- **Status**:
+  - **Pending**: The report is still being created, and it isn't available to download yet.
+  - **Complete - Ready for download**: Report generation is complete, and the report is available to download.
+  - **Complete - No results found**: Report generation is complete, but the report contains no data, so you can't download it.
 
 To download the report, select the check box next in the start date of the report, and then select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download report** action that appears.
 

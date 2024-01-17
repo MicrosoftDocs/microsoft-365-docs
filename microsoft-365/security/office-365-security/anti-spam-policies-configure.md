@@ -129,14 +129,14 @@ You can configure anti-spam policies in the Microsoft Defender portal or in Powe
      >
      > Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.
 
-  - **Intra-Organizational messages to take action on**: Controls whether spam filtering and the corresponding verdict actions are applied to internal messages (messages sent between users within the organization). The available values are:
-    - **Default**: This is the default value. This value is the same as selecting **High confidence phishing messages**.
-    - **None**
-    - **High confidence phishing messages**
-    - **Phishing and high confidence phishing messages**
-    - **All phishing and high confidence spam messages**
-    - **All phishing and spam messages**
-   
+   - **Intra-Organizational messages to take action on**: Controls whether spam filtering and the corresponding verdict actions are applied to internal messages (messages sent between users within the organization). The available values are:
+     - **Default**: This is the default value. This value is the same as selecting **High confidence phishing messages**.
+     - **None**
+     - **High confidence phishing messages**
+     - **Phishing and high confidence phishing messages**
+     - **All phishing and high confidence spam messages**
+     - **All phishing and spam messages**
+
    - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted, and isn't recoverable. A valid value is from 1 to 30 days.
 
      > [!TIP]
