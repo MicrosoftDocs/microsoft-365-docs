@@ -85,7 +85,7 @@ You can view the code of a function either to gain insight into how it works or 
 
 ## Edit a custom function
 
-Edit the properties of a function by selecting the three dots to the right of the function and selecting **Edit function**. Make any modifications that you want to the properties and parameters of the function then select **Save**.
+Edit the properties of a function by selecting the three dots to the right of the function and selecting **Edit details**. Make any modifications that you want to the properties and parameters of the function then select **Save**.
 
 ![Edit function code](../../media/advanced-hunting-custom-fxns/edit-function.png)
 
@@ -94,6 +94,13 @@ If the function code is already loaded to the editor, you can also select **Save
 > [!NOTE]
 > Once a function is in use in a saved query or a detection rule, you can't edit the function to expand its scope. For example, if you saved a function that queries identity tables, and this function is used in a detection rule, you can't edit the function to include a device table after the fact. To do that, you can save a new function. Product scoping can be narrowed for the same function but not extended.
 
+## Delete a custom function
+
+You can delete functions from **My functions** and functions you created in **Shared functions**. You cannot delete functions that you have not created, unless you have security data manage permissions.
+
+To delete a function, select the three dots to the right of the function and select **Delete**.
+
+![Screenshot that shows how to delete a custom function.](../../media/advanced-hunting-custom-fxns/delete-function.png)
 ## See also
 
 - [Advanced hunting overview](advanced-hunting-overview.md)

@@ -1,8 +1,9 @@
 ---
 title: Get started driving adoption of Topics
-ms.author: daisyfeller
+ms.author: jobadach
 author: daisyfell
-manager: pamgreen
+manager: elizapo
+ms.reviewer: daisyfeller
 ms.date: 07/13/2023 
 audience: admin
 ms.topic: article
@@ -121,7 +122,7 @@ When you automate this scenario with Topics, you can ensure that:
 
 After you identify your scenarios, you can prioritize the scenarios:
 
-One way to prioritize them is to plot out your scenarios in a grid showing impact vs. ease of implementation. Look for scenarios that have both high impact and are easy to implement and make those ones your top priority. Low impact and hard-to-implement scenarios are your lowest priority. When you have a quick win with a high impact, easy-to-implement scenario, it helps people get excited and see the possibilities of using topics.
+One way to prioritize them is to plot out your scenarios in a grid showing impact vs. ease of implementation. Look for scenarios that have both high impact and are easy to implement and make those your top priority. Low impact and hard-to-implement scenarios are your lowest priority. When you have a quick win with a high impact, easy-to-implement scenario, it helps people get excited and see the possibilities of using topics.
 
 ![High impact, easy to implement scenarios are high priority.](../media/knowledge-management/topics-prioritize-scenarios.png)
 

@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 05/30/2023
+ms.date: 12/18/2023
 ---
 
 # Investigate alerts in Microsoft Defender XDR
@@ -120,7 +120,7 @@ Microsoft Defender XDR alerts may come from solutions like Microsoft Defender fo
 
 2. From the list, select **Alert service settings**, and then configure your **Microsoft Entra ID Protection** alert service.
 
-   :::image type="content" source="../../media/investigate-alerts/alerts-ss-aadip-alert.png" alt-text="Screenshot of Microsoft Entra ID Protection alerts setting in the Microsoft Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-aadip-alert.png":::
+   :::image type="content" source="../../media/investigate-alerts/alerts-ss-entra-alert.png" alt-text="Screenshot of Microsoft Entra ID Protection alerts setting in the Microsoft Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-entra-alert.png":::
 
 By default, only the most relevant alerts for the security operation center are enabled. If you want to get all Microsoft Entra IP risk detections, you can change it in the **Alert service settings** section.
 

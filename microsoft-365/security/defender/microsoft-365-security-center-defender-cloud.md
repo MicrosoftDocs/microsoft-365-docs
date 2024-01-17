@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: diannegali
 author: diannegali
 manager: dansimp
-ms.date: 11/15/2023
+ms.date: 01/15/2024
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -31,12 +31,9 @@ ms.custom: admindeeplinkDEFENDER
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender for Cloud](/defender-for-cloud/)
 
-> [!IMPORTANT]
-> The integration of Microsoft Defender for Cloud in Microsoft Defender XDR is now in preview. Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here.
-
 [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) is now part of Microsoft Defender XDR. Security teams can now access Defender for Cloud alerts and incidents within the Microsoft Defender portal, providing richer context to investigations that span cloud resources, devices, and identities. In addition, security teams can get the complete picture of an attack, including suspicious and malicious events that happen in their cloud environment, through immediate correlations of alerts and incidents.
 
-Microsoft Defender XDR combines protection, detection, investigation, and response capabilities to protect attacks on device, email, collaboration, identity, and cloud apps. The portal’s detection and investigation capabilities are now extended to cloud entities, offering security operations teams a single pane of glass to significantly improve their operational efficiency.
+Microsoft Defender XDR combines protection, detection, investigation, and response capabilities to protect attacks on device, email, collaboration, identity, and cloud apps. The portal's detection and investigation capabilities are now extended to cloud entities, offering security operations teams a single pane of glass to significantly improve their operational efficiency.
 
 Moreover, the Defender for Cloud incidents and alerts are now part of [Microsoft Defender XDR's public API](api-overview.md). This integration allows exporting of security alerts data to any system using a single API.
 
@@ -66,16 +63,18 @@ The following section describes the detection and investigation experience in Mi
 
 ## Impact to Microsoft Sentinel users
 
-Microsoft Sentinel customers integrating Defender for Cloud alerts are required to do the following configuration changes to ensure duplicate incidents aren't created:
+Microsoft Sentinel customers [integrating Microsoft Defender XDR incidents](/azure/sentinel/microsoft-365-defender-sentinel-integration) *and* ingesting Defender for Cloud alerts are required to make the following configuration changes to ensure that duplicate alerts and incidents aren't created:
 
-- Connect the **Tenant-based Microsoft Defender for Cloud (Preview)** connector to synchronize all your collection of subscriptions with tenant-based Defender for Cloud incidents that are streaming through the Microsoft Defender XDR Incidents connector.
-- Disconnect the legacy subscription-based Defender for Cloud alerts connector to prevent incident duplicates.
-- Turn off Analytics rules used to create incidents from Defender for Cloud alerts, including rules created through the Microsoft incident creation rules. Incidents are created automatically in the Defender portal.
-- Use Automation rules or use the [built-in tuning capabilities in the Defender portal](investigate-alerts.md#tune-an-alert) to suppress certain alerts.
+- Connect the **Tenant-based Microsoft Defender for Cloud (Preview)** connector to synchronize collection of alerts from all your subscriptions with tenant-based Defender for Cloud incidents that are streaming through the Microsoft Defender XDR Incidents connector.
+- Disconnect the **Subscription-based Microsoft Defender for Cloud (Legacy)** alerts connector to prevent alert duplicates.
+- Turn off any analytics rules&mdash;either [*Scheduled* (regular query-type) or *Microsoft security* (incident creation)](/azure/sentinel/detect-threats-built-in) rules&mdash;used to create incidents from Defender for Cloud alerts. Defender for Cloud Incidents are created automatically in the Defender portal and synchronized with Microsoft Sentinel.
+- If necessary, [use automation rules](/azure/sentinel/create-manage-use-automation-rules) to close noisy incidents, or use the [built-in tuning capabilities in the Defender portal](investigate-alerts.md#tune-an-alert) to suppress certain alerts.
 
 The following change should also be noted:
 
 - The action to relate alerts to Microsoft Defender XDR incidents is removed.
+
+Learn more at [Ingest Microsoft Defender for Cloud incidents with Microsoft Defender XDR integration](/azure/sentinel/ingest-defender-for-cloud-incidents).
 
 ### Turn off Defender for Cloud alerts
 

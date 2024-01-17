@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/12/2023
+ms.date: 01/11/2024
 
 ---
 
@@ -107,6 +107,9 @@ You can choose to allow schedule owners to create and manage schedule groups or 
 
 Review your settings. If you need to make changes, select **Back**, and edit the settings that you want. When you're ready, select **Finish setup**.
 
+> [!NOTE]
+> If you haven’t deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center, there may be an error after you finish the setup wizard. If an error occurs, wait 15 minutes and try again.
+
 :::image type="content" source="media/dsas-finish-setup.png" alt-text="Screenshot of the Review and finish setup page, showing a summary of the selected settings. "lightbox="media/dsas-finish-setup.png":::
 
 The setup status in the table changes to **Completed** when setup is finished.  
@@ -120,6 +123,9 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
     :::image type="content" source="media/dsas-deploy.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing the Deploy button for deploying Shifts. "lightbox="media/dsas-deploy.png":::
 
 1. Select the teams that you want to deploy Shifts to, and then choose **Next**.
+
+    > [!NOTE]
+    > If you haven't deployed your teams through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center, no teams will show up. You can only deploy Shifts at scale to frontline dynamic teams.
 
     :::image type="content" source="media/dsas-select-teams.png" alt-text="Screenshot of the Select teams page, showing a list of teams. "lightbox="media/dsas-select-teams.png":::
 

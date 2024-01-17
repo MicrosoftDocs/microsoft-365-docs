@@ -84,7 +84,7 @@ You might see the prompt that's shown in the following screenshot:
 
    :::image type="content" source="images/popup-after-checking-both-md-checkboxes.png" alt-text="The popup that appears on checking both the checkboxes." lightbox="images/popup-after-checking-both-md-checkboxes.png":::
 
-1. On the **“Microsoft Defender” Would like to Filter Network Content** pop-up screen, click **Allow**.
+1. On the **"Microsoft Defender" Would like to Filter Network Content** pop-up screen, click **Allow**.
 
 1. On the **Microsoft Defender wants to make changes** pop-up screen, enter your password and select **OK**.
 

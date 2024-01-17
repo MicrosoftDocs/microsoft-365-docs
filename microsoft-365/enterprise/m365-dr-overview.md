@@ -8,13 +8,14 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
+ms.date: 12/19/2023
 ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Overview and Definitions
@@ -23,7 +24,7 @@ ms.collection:
 
 In order to promote clarity in the capability descriptions on data residency functionality in this document, refer to these terms.
 
-**Table 1: Definitions and Terms**
+### **Table 1: Definitions and Terms**
 
 | Term | Definition |
 |:-----|:-----|
@@ -47,7 +48,6 @@ In order to promote clarity in the capability descriptions on data residency fun
 |Advanced Data Residency (ADR)  <br/> |A new Microsoft 365 add-on service that guarantees customer data residency for a defined set of services. See section 3  <br/> |
 |Privacy and Security Product Terms  <br/> |Privacy and Security Terms for Microsoft 365 services provides some customer data location related commitments.  The document can be found <a href="https://www.microsoft.com/licensing/terms/en-US/product/PrivacyandSecurityTerms/EAEAS" target="_blank">here</a>. The extract of the relevant section (on November 1, 2022) is:<br>**Office 365 Services.** If Customer provisions its _Tenant_ in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft stores the following Customer Data at rest only within that Geo: (1) Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments), (2) SharePoint Online site content and the files stored within that site,  (3) files uploaded to OneDrive for Business, and (4) Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings.
 |Workloads  <br/> |Often used to refer to a Microsoft 365 service such as but not limited to Exchange Online, SharePoint Online, Microsoft Teams, etc.|
-
 
 ## Overview of Data Residency
 
@@ -99,8 +99,7 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 1. Product Terms: Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams provisioned in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States have a commitment for customer data residency expressed in the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).  For more information, see the [Product Terms Data Residency page](m365-dr-product-terms-dr.md).
 1. _Multi Geo_ subscription: allows customers to assign data location for Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams to any supported _Geography_.  For more information, see [Multi Geo Data Residency](microsoft-365-multi-geo.md).
 1. _Advanced Data Residency_ subscription guarantees data residency for an expanded set of Microsoft 365 services in any _Local Region Geography_.  For more information, see the [Advanced Data Residency page](advanced-data-residency.md).
-
-**Table 2: Available Data Residency by Workload**
+#### **Table 2: Available Data Residency by Workload**
 
 | Service Name | Product Terms | Multi-Geo | ADR |
 |:-----|:-----|:-----|:-----|
@@ -117,10 +116,10 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 1. Available in _Local Region Geography_, _Expanded Local Region Geography_ (when the future data center is launched) and _Regional Geography countries/regions_
 1. Only available for _Local Region Geography_ and _Expanded Local Region Geography_ (when the future data center is launched) countries/regions. [Learn about supported Microsoft Purview services and solutions](m365-dr-workload-purview.md).
 
->[!NOTE]
->See the [Workload Data Residency Capabilities section](m365-dr-workload-exo.md) for more details on these topics.
+> [!NOTE]
+> See the [Workload Data Residency Capabilities section](m365-dr-workload-exo.md) for more details on these topics.
 
-**Table 3: Available Data Residency by Country/Region**
+#### **Table 3: Available Data Residency by Country/Region**
 
 | Country/Region    | Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -153,7 +152,7 @@ A: Advanced Data Residency
 
 The following Regional Geographies can store data at rest.
 
-**Table 4: Regional Geographies**
+#### **Table 4: Regional Geographies**
 
 | Regional Geographies | Locations where customer data may be stored |
 |---------|---------|
@@ -161,7 +160,7 @@ The following Regional Geographies can store data at rest.
 |Macro Region Geography 2 - Asia Pacific |  Hong Kong SAR, Japan, Malaysia, Singapore, South Korea  |
 |Macro Region Geography 3 - Americas | Brazil, Chile, United States  |
 
-**Table 5: Current Local Geographies and Region specific Datacenter locations**
+#### **Table 5: Current Local Geographies and Region specific Datacenter locations**
 
 |Country/Region |Datacenter Location  |
 |---------|---------|
@@ -189,6 +188,7 @@ The following Regional Geographies can store data at rest.
 ### FAQ
 
 #### How does Microsoft define data?
+
 <details><summary>Select to expand</summary>
 
 Review our [definitions for different types of customer data](https://go.microsoft.com/fwlink/p/?linkid=864390) on the Microsoft Trust Center. In the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), Microsoft makes contractual commitments regarding customer data/your _Tenant_ and user data. We refer to customer data as the customer data that is committed to be stored at rest only within a _Tenant's_ region according to the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
@@ -204,6 +204,7 @@ Microsoft doesn't disclose the exact addresses of its data centers. We establish
 </details>
 
 #### Does the location of your customer data have a direct impact on your end users' experience?
+
 <details><summary>Select to expand</summary>
 
 The performance of Microsoft 365 isn't simply proportional to a _Tenant_ user's distance to data center locations. Microsoft's continued investments in its global cloud network, global cloud infrastructure, and the Microsoft 365 services architecture help provide users with a singular, consistent experience independent of where customer data is stored at rest. If your users are experiencing performance issues, you should troubleshoot those in depth. Microsoft has published guidance for Microsoft 365 customers to plan for and optimize end-user performance on the [Office Support web site](network-planning-and-performance.md).
@@ -211,6 +212,7 @@ The performance of Microsoft 365 isn't simply proportional to a _Tenant_ user's 
 </details>
 
 #### How does Microsoft help me comply with my national, regional, and industry-specific regulations?
+
 <details><summary>Select to expand</summary>
 
 To help a _Tenant_ comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Review [our compliance offerings](/compliance/regulatory/offering-home) and more details in the [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help a _Tenant_ manage their data, comply with legal and regulatory requirements, and monitor actions taken on their data.
@@ -218,6 +220,7 @@ To help a _Tenant_ comply with national, regional, and industry-specific require
 </details>
 
 #### Who can access your data and according to what rules?
+
 <details><summary>Click to expand</summary>
 
  Microsoft implements strong measures to help protect a _Tenant's_ customer data from inappropriate access or use by unauthorized persons. This includes restricting access by Microsoft personnel and subcontractors, and carefully defining requirements for responding to government requests for customer data. However, you can access your _Tenant's_ customer data at any time and for any reason. More details are available on the [Microsoft Trust Center](https://go.microsoft.com/fwlink/p/?linkid=864392).
@@ -225,6 +228,7 @@ To help a _Tenant_ comply with national, regional, and industry-specific require
 </details>
 
 #### Does Microsoft access your data?
+
 <details><summary>Select to expand</summary>
 
 Microsoft automates most Microsoft 365 operations while intentionally limiting its own access to customer data. This helps us manage Microsoft 365 at scale and address the risks of internal threats to customer data. By default, Microsoft engineers have no standing administrative privileges and no standing access to customer data in Microsoft 365. A Microsoft engineer may have limited and logged access to customer data for a limited amount of time, but only when necessary for normal service operations and only when approved by a member of senior management at Microsoft (and, for customers who are licensed for the Customer Lockbox feature, by the customer).
@@ -232,6 +236,7 @@ Microsoft automates most Microsoft 365 operations while intentionally limiting i
 </details>
 
 #### How does Microsoft secure your data?
+
 <details><summary>Select to expand</summary>
 
 Microsoft has robust policies, controls, and systems built into Microsoft 365 to help keep your information safe. Review the [Microsoft 365 security section](https://go.microsoft.com/fwlink/p/?linkid=864393) on the Microsoft Trust Center to learn more.
@@ -239,6 +244,7 @@ Microsoft has robust policies, controls, and systems built into Microsoft 365 to
 </details>
 
 #### Does Microsoft 365 encrypt your data?
+
 <details><summary>Select to expand</summary>
 
 Microsoft 365 uses service-side technologies that encrypt customer data at rest and in transit. For customer data at rest, Microsoft 365 uses volume-level and file-level encryption. For customer data in transit, Microsoft 365 uses multiple encryption technologies for communications between data centers and between clients and servers, such as Transport Layer Security (TLS) and Internet Protocol Security (IPsec). Microsoft 365 also includes customer-managed encryption features.
@@ -246,6 +252,7 @@ Microsoft 365 uses service-side technologies that encrypt customer data at rest 
 </details>
 
 #### Where can I find data residency information for Microsoft Azure?
+
 <details><summary>Select to expand</summary>
 
 Review the [Products available by region](https://go.microsoft.com/fwlink/p/?linkid=2093451) page to find data residency information for Microsoft Azure.
@@ -253,6 +260,7 @@ Review the [Products available by region](https://go.microsoft.com/fwlink/p/?lin
 </details>
 
 #### Why do I see my Microsoft 365 service requests for my data at rest connecting to servers in countries outside of my region?
+
 <details><summary>Click to expand</summary>
 
 On occasion, a customer request may be handled by servers in a different region than the location where a _Tenant's_ customer data is stored at rest. This may happen where network routing decisions choose a different server for the request processing, but in these cases such _Tenant's_ customer data is not moved to a new at rest location.

@@ -30,11 +30,12 @@ ms.date: 12/18/2020
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 
-> [!NOTE]
-> For the full data streaming experience available, please visit [Stream Microsoft Defender XDR events | Microsoft Learn](/microsoft-365/security/defender/streaming-api).
-> If you're using Microsoft Defender for Business, see [Use the streaming API (preview) with Microsoft Defender for Business](../../defender-business/mdb-streaming-api.md).
+> [!TIP]
+> For the full data streaming experience available, see [Stream Microsoft Defender XDR events](/microsoft-365/security/defender/streaming-api).
+> If you're using Microsoft Defender for Business, see [Use the streaming API with Microsoft Defender for Business](../../defender-business/mdb-streaming-api.md).
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
