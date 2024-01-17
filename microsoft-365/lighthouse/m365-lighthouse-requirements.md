@@ -26,7 +26,7 @@ description: "For Managed Service Providers (MSPs), get a list of requirements t
 
 Microsoft 365 Lighthouse is an admin portal that provides advanced capabilities for Managed Service Providers (MSPs) to manage customers at scale through proactive account management, simplified onboarding, efficient tenant configuration, device protection, and alerts. Lighthouse provides insights into customer acquisition, retention, and growth opportunities, as well as multi-tenant views across customer devices, data, and users to help customers get the most value from Microsoft 365.  
 
-Lighthouse is available to partners enrolled in the Cloud Solution Provider (CSP) program, including both Direct-Bill and Indirect Resellers.  
+Lighthouse is available to partners enrolled in the Cloud Solution Provider (CSP) program, including both indirect resellers and direct-bill partners.  
 
 > [!NOTE]
 > Only partners are required to enroll in the CSP program; the customers they manage don't need to enroll in the CSP program.
