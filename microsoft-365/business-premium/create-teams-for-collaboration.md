@@ -2,8 +2,8 @@
 title: "Use Microsoft Teams for collaboration"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to

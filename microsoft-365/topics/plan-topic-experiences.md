@@ -1,10 +1,10 @@
 ---
 ms.date: 11/15/2021
 title: Plan for Topics
-ms.author: daisyfeller
+ms.author: jobadach
 author: daisyfell
-manager: pamgreen
-ms.reviewer: cjtan
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:
