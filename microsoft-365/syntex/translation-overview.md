@@ -42,3 +42,7 @@ Translation in Syntex is available for [all supported languages and dialects](/a
 - Password-protected files aren't translated.
 
 - On-demand translation on folders will be available in a future release.
+
+## Frequenly asked questions
+
+For answers to frequently asked questions about document translation, see [Document Translation: FAQ](/azure/ai-services/translator/document-translation/faq#document-translation-faq).
