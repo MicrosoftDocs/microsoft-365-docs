@@ -80,7 +80,7 @@ Here are the common components within these experiences:
   - You can use commas to add multiple values for the same filter.
 
     :::image type="content" source="../../media/explorer-new-experience-filters.png" alt-text="Screenshot showing filters in Explorer." lightbox="../../media/explorer-new-experience-filters.png":::
-  
+
 - Charts
 
   - Charts provide a visual, aggregate view of data based on filters. You can use different filters to view the data by different dimensions.
@@ -89,7 +89,7 @@ Here are the common components within these experiences:
     > You may see no results in chart view even if you are seeing an entry in the list view. This happens if the filter does not produce any data. For example, if you have applied the filter malware family, but the underlying data does not have any malicious emails, then you may see the message no data available for this scenario.
 
     :::image type="content" source="../../media/explorer-new-experience-export-chart-data.png" alt-text="Screenshot showing exporting chart data." lightbox="../../media/explorer-new-experience-export-chart-data.png":::
-  
+
 - Results grid
 
   - Results grid shows the email results based on the filters you've applied.
@@ -104,7 +104,7 @@ Here are the common components within these experiences:
   > You can toggle between the **Chart view** and the **List view** to maximize your result set.
 
     :::image type="content" source="../../media/explorer-new-experience-list-chart-view.png" alt-text="Screenshot showing viewing chart data." lightbox="../../media/explorer-new-experience-list-chart-view.png":::
-  
+
 - Detailed flyout
 
   - You can click on hyperlinks to get to the email summary panel (entries in Subject column), recipient, or IP flyout.
