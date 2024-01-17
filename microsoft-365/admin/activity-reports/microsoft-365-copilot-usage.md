@@ -66,7 +66,7 @@ You can see the following summary charts in this report
 
 **Available Licenses** This number is the sum of all users who do not have a Copilot license assigned, and should be prioritized first.
 
-:::image type="content" alt-text="Screenshot showing recommendation cards for Copilot for Microsoft 365 usage report." source="../../media/copilot-usage-recommend-cards.png" lightbox="../../media/copilot-usage-recommend-cards.png":::
+:::image type="content" alt-text="Screenshot showing recommendation cards for Copilot for Microsoft 365 usage report." source="../../media/cfr-copilot-rec-cards.png" lightbox="../../media/copilot-usage-recommend-cards.png":::
 
 Recommended action cards highlight important actions to take to prepare your organization for Copilot, such as moving users to a monthly app update channel and assigning available Copilot licenses.
 
@@ -112,6 +112,8 @@ You can view several numbers for Copilot for Microsoft 365 usage, which highligh
 
 **Active users rate** shows you the number of active users in your organization divided by the number of enabled users.
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
+
+:::image type="content" alt-text="Screenshot showing the recommendation card for the Copilot dashboard using Viva Insights." source="../../media/cfr-copilot-viva.png":::
 
 In Recommendations, the recommended action card highlights [Microsoft Copilot Dashboard](/viva/insights/org-team-insights/copilot-dashboard), where you can deliver insights to your IT leaders to explore Copilot readiness, adoption, and impact in Viva Insights.  
 
