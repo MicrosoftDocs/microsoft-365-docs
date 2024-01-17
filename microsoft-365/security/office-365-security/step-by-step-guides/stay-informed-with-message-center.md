@@ -50,10 +50,6 @@ Follow the steps below to make that helpful digest email happen.
 
 You're done.
 
-## Watch: Track your message center tasks in Planner
-
-[Video](https://www.microsoft.com/en-us/videoplayer/embed/RE4C7Ne)
-
 ## Learn More
 
 [Track new and changed features in the Microsoft 365 Message center](../../../admin/manage/message-center.md)
