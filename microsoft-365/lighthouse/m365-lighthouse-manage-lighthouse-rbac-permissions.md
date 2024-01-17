@@ -24,9 +24,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage Lighthouse RBAC permissions in Microsoft 365 Lighthouse
 
-The Lighthouse permissions page allows administrators in Microsoft 365 Lighthouse to manage user role-based access control (RBAC) permissions in the partner tenant. Administrators can view and manage membership for each Lighthouse RBAC role to ensure that users in the partner tenant have right-sized permissions. Each Lighthouse RBAC role is associated with a security group instead of an Entra ID role, so when users are assigned a Lighthouse RBAC role, they'll be automatically associated with a specific Lighthouse RBAC security group.
+The Lighthouse permissions page allows administrators in Microsoft 365 Lighthouse to manage user role-based access control (RBAC) permissions in the partner tenant. Administrators can view and manage membership for each Lighthouse RBAC role to ensure that users in the partner tenant have right-sized permissions. Each Lighthouse RBAC role is associated with a security group instead of an Entra ID role, so when users are assigned a Lighthouse RBAC role, they're automatically associated with a specific Lighthouse RBAC security group.
 
-When administrators assign a Lighthouse RBAC role to a user in the partner tenant for the first time, a security group will be automatically created. Administrators can view the associated security group for each Lighthouse RBAC role on the Lighthouse permissions page and in the Microsoft Entra admin center. All security group membership changes are reflected in both Lighthouse and the Microsoft Entra admin center.
+When administrators assign a Lighthouse RBAC role to a user in the partner tenant for the first time, a security group is automatically created. Administrators can view the associated security group for each Lighthouse RBAC role on the Lighthouse permissions page and in the Microsoft Entra admin center. All security group membership changes are reflected in both Lighthouse and the Microsoft Entra admin center.
 
 ## Before you begin
 
