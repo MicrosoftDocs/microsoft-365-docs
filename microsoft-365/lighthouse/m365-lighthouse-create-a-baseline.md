@@ -43,7 +43,7 @@ There are three ways to create a baseline in Lighthouse. You can clone an existi
 
 To clone an existing baseline:
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Baselines**.
 
 2. From the baseline list, select the baseline you want to clone.
 
@@ -54,7 +54,7 @@ To clone an existing baseline:
 
 To create a new baseline:
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Baselines**.
 
 2. Select **Create**.
 
@@ -64,7 +64,7 @@ To create a new baseline:
 
 To import a baseline:
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Baselines**.
 
 2. Select **Import**.
 
@@ -89,7 +89,7 @@ Baselines are composed of deployment tasks. You can add as many deployment tasks
 
 To clone a deployment task from an existing baseline:
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Baselines**.
 2. Select a baseline from the list.
 3. Select **New task**.
 4. From the list, select **Clone**.
@@ -106,7 +106,7 @@ Lighthouse will, where possible, detect configurations and policies that contain
 
 Lighthouse admins must review the extracted configuration and remove any tenant-specific setting values that shouldn't be applied to other managed tenants.
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Baselines**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Baselines**.
 2. Select a baseline from the list.
 3. Select **New task**.
 4. From the list, select the desired configuration.

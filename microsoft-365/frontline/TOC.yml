@@ -47,8 +47,6 @@
         href: pin-teams-apps-based-on-license.md
       - name: Teams policy packages for frontline managers and workers
         href: /microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-      - name: Secure messaging
-        href: messaging-policies-hc.md
       - name: Message delegation
         href: hc-delegates.md
     - name: Switch from enterprise to frontline worker
@@ -157,6 +155,8 @@
         href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
       - name: Teams policy packages for healthcare
         href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      - name: Messaging policies
+        href: messaging-policies-hc.md    
     - name: Retail
       items:
       - name: Overview

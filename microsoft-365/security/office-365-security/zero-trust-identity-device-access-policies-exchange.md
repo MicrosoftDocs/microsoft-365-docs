@@ -82,7 +82,7 @@ Here are the steps:
    ```powershell
    Get-OwaMailboxPolicy | Format-Table Name,ConditionalAccessPolicy
    ```
-   
+
 3. To allow viewing attachments but no downloading, run the following command on the affected policies:
 
    ```powershell
