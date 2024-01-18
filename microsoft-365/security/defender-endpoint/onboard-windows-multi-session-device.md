@@ -124,7 +124,7 @@ As part of your onboarding, you may want to consider setting a machine tag to di
 
 When building your golden image, you may want to configure initial protection settings as well. For more information, see [Other recommended configuration settings](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
-Also, if you're using FSlogix user profiles, we recommend you follow the guidance described in [FSLogix anti-malware exclusions](/fslogix/overview-prerequisites#configure-antivirus-file-and-folder-exclusions). 
+Also, if you're using FSlogix user profiles, we recommend you follow the guidance described in [FSLogix antivirus exclusions](/fslogix/overview-prerequisites#configure-antivirus-file-and-folder-exclusions). 
 
 #### Licensing requirements
 
