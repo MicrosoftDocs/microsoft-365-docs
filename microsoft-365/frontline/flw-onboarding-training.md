@@ -4,7 +4,7 @@ description: Learn how you can plan, build, and launch your frontline worker onb
 ms.topic: conceptual
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 f1.keywords:
 - NOCSH

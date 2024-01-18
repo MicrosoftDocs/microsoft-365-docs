@@ -163,7 +163,7 @@ To unblock a mailbox from sending email, follow the procedures in [Remove blocke
 1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, do the following steps:
    1. Go to **Users** \> **Active users**. Or, to go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
    2. On the **Active users** page, find and select the user account from the list by doing one of the following steps:
-      - Select the user by clicking anywhere in the row other than the check box next to the name. In the details flyout that opens, verify the **Account** tab is selected, and then select **Manage roles** in the **Roles** section. 
+      - Select the user by clicking anywhere in the row other than the check box next to the name. In the details flyout that opens, verify the **Account** tab is selected, and then select **Manage roles** in the **Roles** section.
       - Select the user by selecting the check box next to the name. Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> :::image type="icon" source="../../media/m365-cc-sc-manage-roles-icon.png" border="false"::: **Manage roles**.
    3. In the **Manage admin roles** flyout that opens, do the following steps:
       - Record any information that you want to restore later.
@@ -194,7 +194,7 @@ To unblock a mailbox from sending email, follow the procedures in [Remove blocke
 
 ### Step 7 Optional: Additional precautionary steps
 
-1. Verify the contents of the **Sent items** folder of the account in Outlook or Outlook on the web. 
+1. Verify the contents of the **Sent items** folder of the account in Outlook or Outlook on the web.
 
    You might need to inform people in your contacts list that your account was compromised. For example, the attacker might have sent messages asking your contacts for money, or the attacker might have sent a virus to hijack their computers.
 

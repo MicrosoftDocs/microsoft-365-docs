@@ -84,4 +84,4 @@ Step 2 of 3: [Enable the evaluation environment Defender for Identity](eval-defe
 Return to the overview for [Evaluate Microsoft Defender for Identity](eval-defender-identity-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

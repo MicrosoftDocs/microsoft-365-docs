@@ -3,7 +3,7 @@ title: Set up Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
-manager: pamgreen
+manager: jtremper
 ms.date: 08/01/2023
 audience: admin
 ms.topic: conceptual

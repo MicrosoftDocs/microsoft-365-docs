@@ -69,7 +69,7 @@ You also need to provide (upload) the dependent binaries of the required framewo
 
 **Q: How soon does Test Base provide test results?**
 
-**A:** For each test that we run against the pre-release builds, we provide results within 48 hours on your [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
+**A:** For each test that we run against the pre-release builds, we provide results within 24 hours on your [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
 
 **Q: Can you reboot after installation?**
 
@@ -105,6 +105,15 @@ While for functional tests, you can specify whether a reboot is required for eac
 3. Fix code issue continue testing.  
 4. If test running indeed exceeds 60 mins, split into multiple scripts below 60 mins. 
     1. Run all testing job in one central script which doesn’t have time limit, monitor the status from multiple Test Base artifact scripts. 
+
+**Q: How can I pause my active packages?**
+
+**A:** To pause your active packages, follow these steps:
+1. Go to the ‘Manage packages’ page by clicking the link in the navigation bar.
+2. Select the packages that you want to pause by checking the boxes next to package names.
+3. Click the ‘Disable future tests’ button at the top of the page.
+
+Note: The selected packages will be disabled for execution on all future OS updates that you have chosen. To resume the tests, you need to re-enable the packages by clicking the ‘Enable future tests’ button.
 
 ## Debugging options
 

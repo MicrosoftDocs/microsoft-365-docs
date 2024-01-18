@@ -1,8 +1,8 @@
 ---
 title: Printer Protection frequently asked questions
 description: Answers frequently asked questions on MDE Printer Protection. 
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

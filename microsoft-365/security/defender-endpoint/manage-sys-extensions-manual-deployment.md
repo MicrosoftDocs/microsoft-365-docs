@@ -2,7 +2,7 @@
 title: Manage system extensions using the manual methods of deployment
 description: Manage system extensions using the manual methods of deployment.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 08/28/2023
 ---
@@ -84,7 +84,7 @@ You might see the prompt that's shown in the following screenshot:
 
    :::image type="content" source="images/popup-after-checking-both-md-checkboxes.png" alt-text="The popup that appears on checking both the checkboxes." lightbox="images/popup-after-checking-both-md-checkboxes.png":::
 
-1. On the **“Microsoft Defender” Would like to Filter Network Content** pop-up screen, click **Allow**.
+1. On the **"Microsoft Defender" Would like to Filter Network Content** pop-up screen, click **Allow**.
 
 1. On the **Microsoft Defender wants to make changes** pop-up screen, enter your password and select **OK**.
 

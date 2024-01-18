@@ -2,7 +2,7 @@
 title: Create indicators
 description: Create indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
 keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
@@ -14,14 +14,14 @@ ms.collection:
 - tier2
 - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ms.date: 07/20/2023
 ---
 
 # Create indicators
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

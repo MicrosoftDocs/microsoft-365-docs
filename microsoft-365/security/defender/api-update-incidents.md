@@ -28,7 +28,7 @@ ms.date: 02/08/2023
 
 # Update incidents API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -141,4 +141,4 @@ Here's an example of the request.
 - [Incident APIs](api-incident.md)
 - [List incidents](api-list-incidents.md)
 - [Incidents overview](incidents-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

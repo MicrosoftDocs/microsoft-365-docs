@@ -18,7 +18,7 @@ description: Learn how to plan for multitenant organizations in Microsoft 365.
 # Plan for multitenant organizations in Microsoft 365 (Preview)
 
 > [!NOTE]
-> Multitenant organizations in Microsoft 365 is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
+> Multitenant organizations in Microsoft 365 is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365) in Microsoft 365 commercial cloud environments. Multitenant organizations is not available in Microsoft 365 GCC, GCC High, DoD, or Microsoft 365 China (operated by 21Vianet).
 
 If your organization manages multiple Microsoft 365 tenants, you can set up a multitenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Creating a multitenant organization and synchronizing users between tenants provides a more seamless collaboration experience between the users in different tenants when [searching for each other](/microsoft-365/enterprise/multi-tenant-people-search), using Microsoft Teams and meetings, and collaborating on files.
 
@@ -82,7 +82,7 @@ The following are limitations of the multitenant organizations in Microsoft 365 
 
 - A maximum of five tenants in the multitenant organization is supported.
 - A maximum of 100,000 users per tenant is supported.
-- Teams on the web, macOS, Microsoft Teams Rooms (MTR), and VDI/AVD aren't supported.
+- Teams on the web, Microsoft Teams Rooms (MTR), and VDI/AVD aren't supported.
 - The ability to grant or revoke permission to receive notifications from other tenants and to switch between tenants isn't supported on mobile.
 - *People in your organization* links may not work for users from another tenant if their account had originally been a guest and they had previously accessed SharePoint resources.
 - It might take up to seven days for a user to appear in search once they've been synchronized. Contact Microsoft support if users aren't searchable after seven days.

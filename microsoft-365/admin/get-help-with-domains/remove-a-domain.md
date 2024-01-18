@@ -22,6 +22,7 @@ ms.custom:
   - AdminTemplateSet
   - business_assist
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 search.appverid:
 - BCS160
 - MET150
@@ -88,7 +89,7 @@ You'll need to do this for yourself, too, if you're on the domain that you want 
 
 5. Sign in with the new domain and your same password.
 
-You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain).
+You can also use PowerShell to move users to another domain. See [Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser) for more information. To set the default domain, use [Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain).
 
 ### Step 2: Move groups to another domain
 
@@ -166,7 +167,7 @@ To change your NS records, see [Change nameservers to set up Microsoft 365 with 
 
 It can take as little as five minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, aliases, shared mailboxes, resource mailboxes, and Microsoft 365 groups. If there are many references that use the domain it can take several hours (a day) for the domain to be removed.
 
-If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain).
+If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser) for more information. To set the default domain, use [Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain).
 
 ## Still need help?
 

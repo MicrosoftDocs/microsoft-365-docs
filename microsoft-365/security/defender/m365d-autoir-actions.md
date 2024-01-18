@@ -101,4 +101,4 @@ If you've determined that a device or a file is not a threat, you can undo remed
 
 - [View the details and results of an automated investigation](m365d-autoir-results.md)
 - [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

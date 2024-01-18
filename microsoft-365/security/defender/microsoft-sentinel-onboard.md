@@ -50,15 +50,15 @@ The Microsoft Defender portal supports a single Microsoft Entra tenant and the c
 
 To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must have the following resources and access:
 
-- A Microsoft Entra tenant that’s allow-listed by Microsoft to connect a workspace through the Defender portal
+- A Microsoft Entra tenant that's allow-listed by Microsoft to connect a workspace through the Defender portal
 - A Log Analytics workspace that has Microsoft Sentinel enabled
-- The data connector for Microsoft Defender XDR (formerly named Microsoft 365 Defender) enabled in Microsoft Sentinel for incidents and alerts
+- The data connector for Microsoft Defender XDR (formerly named Microsoft Defender XDR) enabled in Microsoft Sentinel for incidents and alerts
 - Microsoft Defender XDR onboarded to the Microsoft Entra tenant
 - An Azure account with the appropriate roles to onboard and use Microsoft Sentinel in the Defender portal. The following table highlights some of the key roles needed.
 
   |Azure built-in role |Scope  |Reason |
   |---------|---------|---------|
-  |[Owner](/azure/role-based-access-control/built-in-roles#owner) or [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) and [Microsoft Sentinel Contributor](/azure/role-based-access-control/built-in-roles#microsoft-sentinel-contributor) |- Subscription</br>- Subscription, resource group, or workspace resource for Microsoft Sentinel Contributor |To connect or disconnect a workspace with Microsoft Sentinel enabled|
+  |[Owner](/azure/role-based-access-control/built-in-roles#owner) or </br>[User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) and [Microsoft Sentinel Contributor](/azure/role-based-access-control/built-in-roles#microsoft-sentinel-contributor) |- Subscription for Owner or User Access Administrator roles </br></br>- Subscription, resource group, or workspace resource for Microsoft Sentinel Contributor |To connect or disconnect a workspace with Microsoft Sentinel enabled|
   |[Microsoft Sentinel Reader](/azure/role-based-access-control/built-in-roles#microsoft-sentinel-reader) or a role with the following actions:</br>- Microsoft.OperationalInsights/workspaces/read</br>- Microsoft.OperationalInsights/workspaces/query/read</br>- Microsoft.SecurityInsights/Incidents/read</br>- Microsoft.SecurityInsights/incidents/comments/read</br>- Microsoft.SecurityInsights/incidents/relations/read</br>- Microsoft.SecurityInsights/incidents/tasks/read|Subscription, resource group, or workspace resource       |Query Sentinel data tables or view incidents        |
   |[Microsoft Sentinel Contributor](/azure/role-based-access-control/built-in-roles#microsoft-sentinel-contributor) or a role with the following actions:</br>- Microsoft.OperationalInsights/workspaces/read</br>- Microsoft.OperationalInsights/workspaces/query/read</br>- Microsoft.SecurityInsights/incidents/read</br>- Microsoft.SecurityInsights/incidents/write</br>- Microsoft.SecurityInsights/incidents/delete</br>- Microsoft.SecurityInsights/incidents/comments/read</br>- Microsoft.SecurityInsights/incidents/comments/write</br>- Microsoft.SecurityInsights/incidents/comments/delete</br>- Microsoft.SecurityInsights/incidents/relations/read</br>- Microsoft.SecurityInsights/incidents/relations/write</br>- Microsoft.SecurityInsights/incidents/relations/delete</br>- Microsoft.SecurityInsights/incidents/tasks/read</br>- Microsoft.SecurityInsights/incidents/tasks/write</br>- Microsoft.SecurityInsights/incidents/tasks/delete    |Subscription, resource group, or workspace resource  |Take investigative actions on incidents     |
 
@@ -71,7 +71,7 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
 1. Go to the [Microsoft Defender portal](https://security.microsoft.com/) and sign in.
 1. In Microsoft Defender XDR, select **Overview**.
 
-   If you're invited to participate in the preview, you’ll see a banner with an option to connect a workspace.
+   If you're invited to participate in the preview, you'll see a banner with an option to connect a workspace.
 
 1. Select **Connect a workspace**.
 1. Choose the workspace you want to connect and select **Next**.
@@ -85,15 +85,14 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
    Detailed changes and limitations are in the documentation shared with you as part of this private preview.
 
 1. Select **Connect**.
-1. You might need to wait up to 6 hours until all experiences are fully connected.
 
-After your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready.  You’ll also see the **Overview** page updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
+After your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready.  You'll also see the **Overview** page updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
 
 ## Explore Microsoft Sentinel features in the Defender portal
 
-After you connect your workspace to the Defender portal, you’ll see **Microsoft Sentinel** on the left-hand side navigation pane. Pages like  **Overview**, **Incidents**, and **Advanced Hunting** have unified data from Microsoft Sentinel and Defender XDR.
+After you connect your workspace to the Defender portal, you'll see **Microsoft Sentinel** on the left-hand side navigation pane. Pages like  **Overview**, **Incidents**, and **Advanced Hunting** have unified data from Microsoft Sentinel and Defender XDR.
 
-You’ll also see many of the existing Microsoft Sentinel features are integrated into the Defender portal. For these features, you'll notice that the experience between Microsoft Sentinel in the Azure portal and Defender portal are similar. Use the following articles to help you start working with Microsoft Sentinel in the Defender portal. When using these articles, keep in mind that your starting point in this context is the [Defender portal](https://security.microsoft.com/) instead of the Azure portal.
+You'll also see many of the existing Microsoft Sentinel features are integrated into the Defender portal. For these features, you'll notice that the experience between Microsoft Sentinel in the Azure portal and Defender portal are similar. Use the following articles to help you start working with Microsoft Sentinel in the Defender portal. When using these articles, keep in mind that your starting point in this context is the [Defender portal](https://security.microsoft.com/) instead of the Azure portal.
 
 - Search
   - [Search across long time spans in large datasets](/sentinel/search-jobs)

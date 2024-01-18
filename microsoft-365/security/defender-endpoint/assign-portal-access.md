@@ -6,8 +6,8 @@ search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
@@ -23,7 +23,7 @@ ms.date: 3/30/2023
 
 # Assign user access 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

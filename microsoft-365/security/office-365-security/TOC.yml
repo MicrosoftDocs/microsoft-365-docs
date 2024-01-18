@@ -451,6 +451,8 @@
            href: air-report-false-positives-negatives.md
          - name: View details and results of an automated investigation
            href: air-view-investigation-results.md
+         - name: Automatic user notifications for user reported phishing results
+           href: air-user-automatic-feedback-response.md
          - name: Remediation in AIR
            items:
             - name: Remediation actions

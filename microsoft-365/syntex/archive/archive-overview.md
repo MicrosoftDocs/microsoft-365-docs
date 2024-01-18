@@ -33,7 +33,7 @@ Some additional advantages of using Microsoft 365 Archive are:
 
 - **Cost savings** – A lower list price on storage consumption beyond your license-allocated Microsoft 365 storage quota.
 
-- **Lossless Metadata** – A site will retain all of its metadata and permissions upon reactivation.
+- **Lossless metadata** – A site will retain all of its metadata and permissions upon reactivation.
 
 - **Decluttering** – Explicit separation between active and inactive content to help you manage your site's lifecycle.
 
@@ -53,14 +53,21 @@ Administrators should notify the site owners and end users before a site is arch
 
 ## Preview limitations
 
+> [!NOTE]
+> These limitations are temporary during the preview. Unless otherwise stated, these limitations will be resolved when the product is available for general release.
+
 - As a part of the preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the **Archived sites** page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
 
-- Currently, end user search results won't show any archived content. Columns such as Archived Date and Archived By aren't currently available, but are planned and will be rolled out when available.
+- Currently, archived content exported via eDiscovery doesn't require site reactivation for exporting, but will require it before general release.
+
+- Currently, end user search results won't show any archived content.
+
+- Columns such as Archived Date and Archived By aren't currently available but are planned and will be rolled out when available.
 
 - For multi-geo tenants, while data residency requirements are honored, site moves aren't supported. Archived sites will need to be reactivated prior to any move.
 
 - Currently, tenant rename isn't supported on archived sites. Sites will need to be reactivated before a tenant rename is triggered.
 
-- Sites that are backed up as part of the Microsoft 365 Backup shouldn't be archived.
+- Archiving a site that is currently enrolled in Microsoft 365 Backup will be blocked.
 
 - If you archive a site that has a library syncing to a device, that device's sync client will display errors after the site is archived. We recommend that you remove syncing libraries before archiving a site.

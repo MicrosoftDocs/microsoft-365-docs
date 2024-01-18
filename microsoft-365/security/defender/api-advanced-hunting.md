@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender XDR advanced hunting API
 description: Learn how to run advanced hunting queries using Microsoft Defender XDR's advanced hunting API
-keywords: Advanced Hunting, APIs, api, M365 Defender, Microsoft 365 Defender
+keywords: Advanced Hunting, APIs, api, M365 Defender, Microsoft Defender XDR
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -28,7 +28,7 @@ ms.date: 02/08/2023
 
 # Microsoft Defender XDR Advanced hunting API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -185,4 +185,4 @@ In the following example, a user sends the query below and receives an API respo
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

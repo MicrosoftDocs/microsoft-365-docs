@@ -1,7 +1,7 @@
 ---
 title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 09/13/2023
 audience: ITPro
@@ -10,7 +10,7 @@ ms.author: deniseb
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.subservice: mde
+ms.subservice: asr
 ms.topic: overview
 ms.collection: 
 - m365-security
@@ -296,15 +296,15 @@ This procedure creates a custom view that filters to only show the following eve
 
 ## Network protection and the TCP three-way handshake
 
-With network protection, the determination of whether to allow or block access to a site is made after the completion of the [three-way handshake via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Thus, when a site is blocked by network protection, you might see an action type of `ConnectionSuccess` under `NetworkConnectionEvents` in the Microsoft Defender portal, even though the site was blocked. `NetworkConnectionEvents` are reported from the TCP layer, and not from network protection. After the three-way handshake has completed, access to the site is allowed or blocked by network protection.
+With network protection, the determination of whether to allow or block access to a site is made after the completion of the [three-way handshake via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Thus, when a site is blocked by network protection, you might see an action type of `ConnectionSuccess` under [`DeviceNetworkEvents`](../defender/advanced-hunting-devicenetworkevents-table.md) in the Microsoft Defender portal, even though the site was blocked. `DeviceNetworkEvents` are reported from the TCP layer, and not from network protection. After the three-way handshake has completed, access to the site is allowed or blocked by network protection.
 
 Here's an example of how that works:
 
 1. Suppose that a user attempts to access a website on their device. The site happens to be hosted on a dangerous domain, and it should be blocked by network protection.  
 
-2. The three-way handshake via TCP/IP commences. Before it completes, a `NetworkConnectionEvents` action is logged, and its `ActionType` is listed as `ConnectionSuccess`. However, as soon as the three-way handshake process completes, network protection blocks access to the site. All of this happens quickly. A similar process occurs with [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); it's when the three-way handshake completes that a determination is made, and access to a site is either blocked or allowed.
+2. The three-way handshake via TCP/IP commences. Before it completes, a `DeviceNetworkEvents` action is logged, and its `ActionType` is listed as `ConnectionSuccess`. However, as soon as the three-way handshake process completes, network protection blocks access to the site. All of this happens quickly. A similar process occurs with [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); it's when the three-way handshake completes that a determination is made, and access to a site is either blocked or allowed.
 
-3. In the Microsoft Defender portal, an alert is listed in the [alerts queue](alerts-queue.md). Details of that alert include both `NetworkConnectionEvents` and `AlertEvents`. You can see that the site was blocked, even though you also have a `NetworkConnectionEvents` item with the ActionType of `ConnectionSuccess`.
+3. In the Microsoft Defender portal, an alert is listed in the [alerts queue](alerts-queue.md). Details of that alert include both `DeviceNetworkEvents` and [`AlertEvidence`](../defender/advanced-hunting-alertevidence-table.md). You can see that the site was blocked, even though you also have a `DeviceNetworkEvents` item with the ActionType of `ConnectionSuccess`.
 
 ## Considerations for Windows virtual desktop running Windows 10 Enterprise Multi-Session
 

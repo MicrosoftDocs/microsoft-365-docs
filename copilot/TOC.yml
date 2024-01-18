@@ -1,29 +1,35 @@
-- name: Microsoft 365 Copilot documentation
+- name: Microsoft Copilot for Microsoft 365 documentation
   href: index.yml
   items:
-    - name: Get started with Microsoft 365 Copilot
+    - name: Get started with Microsoft Copilot for Microsoft 365
       href: microsoft-365-copilot-setup.md
     - name: Plan
       items: 
-        - name: Overview of Microsoft 365 Copilot
+        - name: Overview of Microsoft Copilot for Microsoft 365
           href: microsoft-365-copilot-overview.md
-        - name: Requirements for Microsoft 365 Copilot
+        - name: Requirements for Microsoft Copilot for Microsoft 365
           href: microsoft-365-copilot-requirements.md
         - name: Data, Privacy, and Security for Copilot for Microsoft 365
           href: microsoft-365-copilot-privacy.md
-        - name: Extend Microsoft 365 Copilot
+        - name: Zero Trust principles for Microsoft Copilot for Microsoft 365
+          href: /security/zero-trust/zero-trust-microsoft-365-copilot
+        - name: Extend Microsoft Copilot for Microsoft 365
           href: /microsoftteams/platform/copilot/how-to-extend-copilot
     - name: Deploy
       items: 
-        - name: Enable users for Microsoft 365 Copilot
+        - name: Enable users for Microsoft Copilot for Microsoft 365
           href: microsoft-365-copilot-enable-users.md
     - name: Manage
       items:
-        - name: Microsoft 365 Copilot usage report
+        - name: Microsoft Copilot for Microsoft 365 usage report
           href: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage
-        - name: Manage Plugins for Copilot in Integrated Apps
+        - name: Plugins for Copilot in Integrated Apps
           href: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
-        - name: Manage Microsoft 365 Copilot with the Copilot page
+        - name: Copilot page in the Microsoft 365 admin center
           href: microsoft-365-copilot-page.md
-        - name: Manage public web access for Microsoft 365 Copilot
+        - name: Manage public web access for Microsoft Copilot for Microsoft 365
           href: manage-public-web-access.md
+        - name: Manage Copilot for Microsoft Teams meetings and events
+          href: /MicrosoftTeams/copilot-teams-transcription
+        - name: Provide Copilot feedback to Microsoft
+          href: provide-feedback.md

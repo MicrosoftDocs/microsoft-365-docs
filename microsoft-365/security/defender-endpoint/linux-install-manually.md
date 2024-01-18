@@ -2,8 +2,7 @@
 title: Deploy Microsoft Defender for Endpoint on Linux manually
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -14,14 +13,14 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
-ms.date: 10/30/2023
+ms.date: 12/01/2023
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -427,7 +426,7 @@ Download the onboarding package from Microsoft Defender portal.
    - Open a Terminal window and execute the following command:
 
      ``` bash
-     curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+     curl -o /tmp/eicar.com.txt https://secure.eicar.org/eicar.com.txt
      ```
 
    - The file should have been quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:

@@ -5,8 +5,8 @@ author: mjcaparas
 ms.author: macapara 
 manager: dansimp 
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security
@@ -19,7 +19,7 @@ ms.date: 09/19/2023
 
 # Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

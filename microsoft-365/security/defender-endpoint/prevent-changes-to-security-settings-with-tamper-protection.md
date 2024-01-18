@@ -3,7 +3,7 @@ title: Protect security settings with tamper protection
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, gberecz
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 10/24/2023
 audience: ITPro
@@ -13,7 +13,7 @@ ms.author: deniseb
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2

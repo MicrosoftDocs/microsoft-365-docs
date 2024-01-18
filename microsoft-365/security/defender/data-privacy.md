@@ -26,7 +26,7 @@ ms.date: 02/16/2021
 
 # Microsoft Defender XDR data security and privacy
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -41,4 +41,4 @@ For more information on the data storage and privacy information of the specific
 - [Microsoft Defender for Cloud Apps data security and privacy](/cloud-app-security/cas-compliance-trust)
 - [Microsoft Defender for Identity data security and privacy](/defender-for-identity/privacy-compliance)
 - [Microsoft 365 privacy, security, and transparency](/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

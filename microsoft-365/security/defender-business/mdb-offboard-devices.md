@@ -2,13 +2,12 @@
 title: Offboard a device from Microsoft Defender for Business
 description: Learn about how to remove or offboard a device from Microsoft Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 01/26/2023
 ms.reviewer: nehabha
@@ -124,3 +123,4 @@ See [Microsoft Intune device management](/mem/intune/remote-actions/device-manag
 - [Use your Microsoft Defender Vulnerability Management dashboard in Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
 - [View or edit policies in Microsoft Defender for Business](mdb-view-edit-create-policies.md)
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
+

@@ -1,8 +1,8 @@
 ---
 title: Appendices for ring deployment using Group Policy and Windows Server Update Services (WSUS)
-description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides supplemental information to the Microsoft Defender Antiviurs Gropu Policy WSUS ring deployment guide.
+description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides supplemental information to the Microsoft Defender Antivirus Group Policy WSUS ring deployment guide.
 keywords: deploy Microsoft Defender Antivirus updates, ring deployment Microsoft Defender Antivirus, Microsoft Defender Antivirus Intune Microsoft Defender Antivirus Microsoft Update, Microsoft Defender Antivirus Intune MU, threat intelligence, cybersecurity, cloud security,
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,14 +17,14 @@ ms.collection:
 - mde-ngp
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 07/21/2023
 ---
 
 # Appendices for Microsoft Defender Antivirus ring deployment using Group Policy and Windows Server Update Services (WSUS)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -56,18 +56,18 @@ Microsoft continually updates security intelligence in antimalware products to c
 
 ## Appendix B - Engine Updates
 
-Engine updates are the updates for the scan engine, which is used by the “Security Intelligence Updates”. First released on July 15, 2010.
+Engine updates are the updates for the scan engine, which is used by the "Security Intelligence Updates". First released on July 15, 2010.
 
 ## Appendix C - Platform Updates
 
-Platform Updates, are the .exe’s, dll’s, and .sys’s for the Microsoft Defender Antivirus service.
+Platform Updates, are the .exe's, dll's, and .sys's for the Microsoft Defender Antivirus service.
 
 | Channel: | Version: | Revision: | &nbsp; | Remarks |
 |:---|:---|:---|:---|:---|
-| **Beta Channel - Prerelease** | 4.18.2304.4 | ‘23 April, minor rev 4 | n/a | This channel is the one you want to test for app compatibility, reability and performance. |
-| **Current Channel (Preview)** | 4.18.2303.8 | ‘23 Mar, minor rev 8 | n/a | Same as for _Beta Channel - Prerelease_ |
-| **Current Channel (Staged)** | 4.18.2303.7 | ‘23 Mar, minor rev 7 | n/a | Same as for _Beta Channel - Prerelease_  |
-| **Current Channel (Broad)** | 4.18.2302.7 <br> see note | ‘23 Feb, minor rev 7 | ’23 Mar | This channel is the one you want to push out to 90%-100% of your production systems. |
+| **Beta Channel - Prerelease** | 4.18.2304.4 | '23 April, minor rev 4 | n/a | This channel is the one you want to test for app compatibility, reliability and performance. |
+| **Current Channel (Preview)** | 4.18.2303.8 | '23 Mar, minor rev 8 | n/a | Same as for _Beta Channel - Prerelease_ |
+| **Current Channel (Staged)** | 4.18.2303.7 | '23 Mar, minor rev 7 | n/a | Same as for _Beta Channel - Prerelease_  |
+| **Current Channel (Broad)** | 4.18.2302.7 <br> see note | '23 Feb, minor rev 7 | '23 Mar | This channel is the one you want to push out to 90%-100% of your production systems. |
 
 > [!NOTE]
 > Where **23** == _2023_, **02** == _February_, and **.7** is the _minor revision_.

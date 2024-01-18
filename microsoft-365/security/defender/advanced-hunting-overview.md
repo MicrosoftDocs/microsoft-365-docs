@@ -1,7 +1,7 @@
 ---
 title: Overview - Advanced hunting
 description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 ms.service: defender-xdr
 ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
@@ -26,7 +26,7 @@ ms.date: 02/16/2021
 
 # Proactively hunt for threats with advanced hunting in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -36,7 +36,7 @@ Advanced hunting is a query-based threat hunting tool that lets you explore up t
 
 Advanced hunting supports two modes, guided and advanced. Use [guided mode](advanced-hunting-query-builder.md) if you are not yet familiar with Kusto Query Language (KQL) or prefer the convenience of a query builder. Use [advanced mode](advanced-hunting-query-language.md) if you are comfortable using KQL to create queries from scratch. 
 
-**To start hunting, read [Choose between guided and advanced modes to hunt in Microsoft 365 Defender](advanced-hunting-modes.md).**
+**To start hunting, read [Choose between guided and advanced modes to hunt in Microsoft Defender XDR](advanced-hunting-modes.md).**
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4G6DO]
 
@@ -89,4 +89,4 @@ Advanced hunting results are converted to the [timezone](m365d-time-zone.md) set
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Microsoft Graph security API](/graph/api/resources/security-api-overview#advanced-hunting)
 - [Custom detections overview](custom-detections-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

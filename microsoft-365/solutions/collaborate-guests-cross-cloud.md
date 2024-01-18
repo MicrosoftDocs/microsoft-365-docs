@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: 
-localization_priority: medium
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Learn how to enable guest invitations between Microsoft 365 cloud environments (such as commercial and DoD).

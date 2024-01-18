@@ -22,7 +22,7 @@ f1.keywords: CSH
 
 # Configure automatic attack disruption capabilities in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 Microsoft Defender XDR includes powerful [automated attack disruption](automatic-attack-disruption.md) capabilities that can protect your environment from sophisticated, high-impact attacks.
 
@@ -60,8 +60,10 @@ Automatic attack disruption enables the exclusion of specific user accounts from
 
 1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Settings** \> **Identities** \> **Automated response exclusions**. Check the user list to exclude accounts.
-:::image type="content" source="../../media/automatic-attack-disruption/Fig2-exclude-specific-users.png" alt-text="Selecting user accounts for automated response exclusion" lightbox="../../media/automatic-attack-disruption/Fig2-exclude-specific-users.png":::
+2. Go to **Settings** \> **Microsoft Defender XDR** \> **Identity automated response**. Check the user list to exclude accounts.
+:::image type="content" source="../../media/automatic-attack-disruption/Fig3-exclude-specific-users.png" alt-text="Selecting user accounts for automated response exclusion" lightbox="../../media/automatic-attack-disruption/Fig3-exclude-specific-users.png":::
+
+3. To exclude a new user account, select **Add user exclusion**.
 
 Excluding user accounts is not recommended, and accounts added to this list won't be suspended in all supported attack types like business email compromise (BEC) and human-operated ransomware.
 
@@ -74,4 +76,4 @@ Excluding user accounts is not recommended, and accounts added to this list won'
 
 - [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

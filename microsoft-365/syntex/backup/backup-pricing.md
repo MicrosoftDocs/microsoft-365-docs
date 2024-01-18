@@ -1,11 +1,11 @@
 ---
-title: Pricing for Microsoft 365 Backup (Preview)
+title: Pricing model for Microsoft 365 Backup (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 11/15/2023
+ms.date: 01/17/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: backup
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn about the charge model and pricing calculator for Microsoft 365 Backup.
 ---
 
-# Pricing for Microsoft 365 Backup (Preview)
+# Pricing model for Microsoft 365 Backup (Preview)
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.
@@ -38,7 +38,7 @@ As an example, if you have a site under protection that is currently 1 GB for th
 The Microsoft 365 Backup pricing calculator is a tool that helps you estimate the amount of backup storage and the costs that you'll incur to protect and back up your Microsoft 365 data.
 
 > [!NOTE]
-> The tool is not intended to provide an exact prediction of your backup consumption, but rather to give you a estimate based on your current usage reports that are forecasted for the next 24 months based on historical trends.
+> The tool is not intended to provide an exact prediction of your backup consumption, but rather to give you an estimate based on your current usage reports that are forecasted for the next 24 months based on historical trends.
 
 ### Pricing calculator overview
 
@@ -54,7 +54,7 @@ The Microsoft 365 Backup pricing calculator, when calculating the storage requir
 
 To use the Microsoft 365 Backup pricing calculator, you'll need to perform the following steps. Information about how to collect data from each of these steps is detailed later in this article.
 
-1. Download the latest version of the Microsoft 365 Backup pricing calculator tool from [https://aka.ms/M365BackupCalculator](https://aka.ms/M365BackupCalculator) (*coming soon*).
+1. Download the latest version of the Microsoft 365 Backup pricing calculator tool from [https://aka.ms/M365BackupCalculator](https://aka.ms/M365BackupCalculator).
 
 2. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool.
 

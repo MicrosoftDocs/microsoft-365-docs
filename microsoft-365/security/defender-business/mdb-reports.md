@@ -2,13 +2,12 @@
 title: Reports in Microsoft Defender for Business
 description: Get an overview of security reports in Defender for Business. Reports will show detected threats, alerts, vulnerabilities, and device status.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 03/23/2023
 ms.reviewer: efratka, nehabha
@@ -151,3 +150,4 @@ To access this report, in the navigation pane, choose **Reports** > **Endpoints*
 - [Get started using Defender for Business](mdb-get-started.md)
 - [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
 - [Manage devices in Defender for Business](mdb-manage-devices.md)
+

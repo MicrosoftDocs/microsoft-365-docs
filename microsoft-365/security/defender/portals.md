@@ -1,7 +1,7 @@
 ---
 title: Microsoft security portals and admin centers
 description: Find the right Microsoft admin center or portal for managing various services related to Microsoft 365 security
-keywords: security, portals, Microsoft 365, M365, security center, admin center, URL, link, Microsoft 365 Defender, Microsoft Defender for Endpoint, Microsoft Defender Security Center, Microsoft Defender for Identity, Microsoft Defender for Office 365, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, Cloud App Security , Azure AD, security & compliance center
+keywords: security, portals, Microsoft 365, M365, security center, admin center, URL, link, Microsoft Defender XDR, Microsoft Defender for Endpoint, Microsoft Defender Security Center, Microsoft Defender for Identity, Microsoft Defender for Office 365, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, Cloud App Security , Azure AD, security & compliance center
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -21,7 +21,7 @@ ms.date: 05/09/2023
 
 # Microsoft security portals and admin centers
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 While [Microsoft Defender portal](microsoft-365-defender-portal.md) is the new home for monitoring and managing security across your identities, data, devices, and apps, you will need to access various portals for certain specialized tasks.
 
@@ -57,4 +57,4 @@ While these portals are not specifically for managing security, they support var
 | Microsoft 365 admin center | Configure Microsoft 365 services; manage roles, licenses, and track updates to your Microsoft 365 services | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
 | Microsoft Intune admin center | Use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to manage and secure devices. Can also combine Intune and Configuration Manager capabilities. | [endpoint.microsoft.com](https://endpoint.microsoft.com/) |
 | Microsoft Intune portal | Use [Microsoft Intune](/intune/fundamentals/what-is-intune) to deploy device policies and monitor devices for compliance | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

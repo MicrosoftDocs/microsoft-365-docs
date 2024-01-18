@@ -72,7 +72,7 @@ landingContent:
           - text: Use DMARC to validate email
             url: email-authentication-dmarc-configure.md
           - text: Configure trusted ARC sealers
-            url: email-authentication-arc-configure.md            
+            url: email-authentication-arc-configure.md
 
    # Card
   - title: Investigate and respond

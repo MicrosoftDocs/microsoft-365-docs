@@ -1,8 +1,8 @@
 ---
 title: Use Microsoft Teams meetings with Canvas
-ms.author: danismith
-author: DaniEASmith
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: sovaish
 ms.date: 05/26/2021
 audience: admin
@@ -72,25 +72,31 @@ As a Canvas Admin, you'll need to add the Microsoft Teams meetings LTI app withi
 
 - Microsoft Teams meetings - 170000000000703
 
-1. Access **Admin settings** > **Apps**.
+1. Sign in to Canvas as an administrator.
 
-2. Select **+ App** to add the Teams LTI apps.
+2. Select the Admin link in the global navigation, and then select your account.
+
+3. In the admin navigation, select the Developer Keys link, and then select the Inherited tab.
+
+4. Enable the LTI apps you are going to deploy by selecting the ON state for each of the appropriate apps.
+
+5. Access **Admin settings** > **Apps**.
+
+6. Select **+ App** to add the Teams LTI apps.
 
    ![external-apps.](media/external-apps.png)
 
-3. Select **By Client ID** for configuration type.
+7. Select **By Client ID** for configuration type.
 
    ![add app.](media/add-app.png)
 
-4. Enter the Client ID provided, and then select **Submit**.
+8. Enter the Client ID provided, and then select **Submit**.
 
    You'll notice the Microsoft Teams meetings LTI app name for the Client ID for confirmation.
 
-5. Select **Install**.
+9. Select **Install**.
 
    The Microsoft Teams meetings LTI app will be added to the list of external apps.
-
-6. Enable the app by navigating to the developer keys in the Canvas admin account, selecting inherited, and turning the toggle "on" for Microsoft Teams Meetings.
 
 ## Enable for Canvas Courses
 

@@ -2,7 +2,7 @@
 title: Production ring deployment using Group Policy and network share
 description: Microsoft Defender Antivirus is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides information about how to use a ring deployment method to update your Microsoft Defender Antivirus clients using Group Policy over a network share.
 keywords: Deploy Microsoft Defender Antivirus updates, ring deployment Microsoft Defender Antivirus, Microsoft Defender Antivirus Group Policy, Microsoft Defender Antivirus network share, Microsoft Defender Antivirus Group Policy network share, threat intelligence, cybersecurity, cloud security,
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,14 @@ ms.collection:
 - tier1
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 07/21/2023
 ---
 
 # Microsoft Defender Antivirus production ring deployment using Group Policy and network share
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -42,8 +42,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
->
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
 
 ## Introduction
@@ -71,7 +69,7 @@ This section describes the process for setting up the pilot UAT / Test / QA envi
 :::image type="content" source="images/microsoft-defender-antivirus-gp-network-schedule.png" alt-text="Screenshot that shows an example Microsoft Defender Antivirus ring deployment schedule for Group Policy and network share environments." lightbox="images/microsoft-defender-antivirus-gp-network-schedule.png":::
 
 > [!NOTE]
-> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+> Security intelligence update (SIU) is equivalent to signature updates, which is the same as definition updates.
 
 ### Create a UNC share for security intelligence and platform updates
 
@@ -93,7 +91,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
 3. Set up a PowerShell script, `CopySignatures.ps1`
 
-   Copy-Item -Path “\\SourceServer\Sourcefolder”  -Destination “\\TargetServer\Targetfolder”
+   Copy-Item -Path "\\SourceServer\Sourcefolder"  -Destination "\\TargetServer\Targetfolder"
 
 4. Use the command line to set up the scheduled task.
 
@@ -179,7 +177,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 This section describes the process for setting up the pilot UAT / Test / QA environment, on about 10-500 Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
 > [!NOTE]
-> If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
+> If you have a Citrix environment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
 
 In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265969(v=ws.11)) (GPMC, GPMC.msc), create or append to your Microsoft Defender Antivirus  policy.
 

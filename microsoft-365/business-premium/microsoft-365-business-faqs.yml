@@ -2,10 +2,10 @@
 metadata:
   title: Microsoft 365 Business Premium frequently asked questions 
   description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small, and midsize businesses (SMB). 
-  author: denisebmsft
+  author: chrisda
   f1.keywords:
   - NOCSH
-  ms.author: deniseb
+  ms.author: chrisda
   manager: deniseb
   ms.topic: how-to
   ms.service: microsoft-365-business
@@ -94,7 +94,7 @@ sections:
           To learn more, see the following resources:
 
           - [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=67386da73ec61354e1550985269d2a17:G:s&OCID=AIDcmmwf9kwzdj_SEM_67386da73ec61354e1550985269d2a17:G:s&lnkd=Bing_O365SMB_Brand&msclkid=67386da73ec61354e1550985269d2a17)
-          - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](/microsoft-365/security/defender-business/compare-mdb-m365-plans)
+          - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](/microsoft-365/security/defender-business/mdb-overview)
           - [Microsoft 365 for enterprise overview](/microsoft-365/enterprise/microsoft-365-overview)
           
       - question: Can I switch my Microsoft 365 plan to Microsoft 365 Business Premium?

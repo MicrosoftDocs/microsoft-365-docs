@@ -1,13 +1,12 @@
 ---
 title: Enable your attack surface reduction rules in Microsoft Defender for Business           
 description: Get an overview of attack surface reduction capabilities, including attack surface reduction rules, in Microsoft Defender for Business            
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
-ms.date: 05/04/2023
+ms.date: 11/30/2023
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security
@@ -20,7 +19,7 @@ audience: Admin
 
 # Enable your attack surface reduction rules in Microsoft Defender for Business
 
-Your attack surfaces as all the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Unsecured devices, unrestricted access to any URL on a company device, and allowing any type of app or script to run on company devices are all examples of attack surfaces. They leave your company vulnerable to cyberattacks. 
+Your attack surfaces are all the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Unsecured devices, unrestricted access to any URL on a company device, and allowing any type of app or script to run on company devices are all examples of attack surfaces. They leave your company vulnerable to cyberattacks. 
 
 To help protect your network and devices, Microsoft Defender for Business includes several attack surface reduction capabilities, including attack surface reduction rules. This article describes how to set up your attack surface reduction rules and describes attack surface reduction capabilities.
 
@@ -29,7 +28,7 @@ To help protect your network and devices, Microsoft Defender for Business includ
 
 ## Standard protection ASR rules
 
-There are lots of attack surface reduction rules available. You don't have to set them all up at once. And, you can set up some rules in audit mode just to see how they'll work for your organization, and change them to work in block mode later. That said, we recommend enabling the following standard protection rules as soon as possible:
+There are lots of attack surface reduction rules available. You don't have to set them all up at once. And, you can set up some rules in audit mode just to see how they work for your organization, and change them to work in block mode later. That said, we recommend enabling the following standard protection rules as soon as possible:
 
 - [Block credential stealing from the Windows local security authority subsystem](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
 - [Block abuse of exploited vulnerable signed drivers](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
@@ -69,7 +68,7 @@ These rules help protect your network and devices but shouldn't cause disruption
 
 ## View your attack surface reduction report
 
-Defender for Business includes an attack surface reduction report that will show you how attack surface reduction rules are working for you.
+Defender for Business includes an attack surface reduction report that shows how attack surface reduction rules are working for you.
 
 1. As a global administrator, in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports**.
 
@@ -77,7 +76,7 @@ Defender for Business includes an attack surface reduction report that will show
 
    - **Detections**, where you can view detections that occurred as a result of attack surface reduction rules
    - **Configuration**, where you can view data for standard protection rules or other attack surface reduction rules
-   - **Add exclusions**, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
+   - **Add exclusions**, where you can add items to be excluded from attack surface reduction rules (use exclusions sparingly; every exclusion reduces your level of security protection)
 
 To learn more about attack surface reduction rules, see the following articles:
 
@@ -104,3 +103,4 @@ Attack surface reduction rules are available in Defender for Business. The follo
 - [Use your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
 - [View and manage incidents](mdb-view-manage-incidents.md)
 - [View reports](mdb-reports.md)
+

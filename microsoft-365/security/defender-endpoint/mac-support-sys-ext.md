@@ -2,7 +2,7 @@
 title: Troubleshoot system extension issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,21 +16,21 @@ ms.collection:
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 06/07/2023
 ---
 
 # Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1-2.md)
-- [Microsoft Defender for Endpoint Plan 2](defender-endpoint-plan-1-2.md)
+- [Microsoft Defender for Endpoint Plan 1](microsoft-defender-endpoint.md)
+- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)
 - [Microsoft Defender XDR](../defender/microsoft-365-defender.md)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/get-started/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https%3a%2f%2faka.ms%2fMDEp2OpenTrial%3focid%3ddocs-wdatp-exposedapis-abovefoldlink&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9&ali=1&bac=1)
@@ -41,7 +41,7 @@ Another option is to submit feedback via the Microsoft Defender XDR by launching
 
 This article provides information on how to troubleshoot issues with the system extension that's installed as part of Microsoft Defender for Endpoint on macOS.
 
-Starting with macOS BigSur (11), Apple’s macOS requires all system extensions to be explicitly approved before they're allowed to run on the device.
+Starting with macOS BigSur (11), Apple's macOS requires all system extensions to be explicitly approved before they're allowed to run on the device.
 
 ## Symptom
 
@@ -68,7 +68,7 @@ The output on running **mdatp health** is:
 
 ```Output
 healthy				            : false
-health_issues		            : [“no active event provider”, “network event provider not running”, “full disk access has not been granted”]
+health_issues		            : ["no active event provider", "network event provider not running", "full disk access has not been granted"]
 ...
 real_time_protection_enabled	: unavailable
 real_time_protection_available: unavailable
@@ -116,13 +116,13 @@ This output is shown in the following screenshot:
 
 The following files might be missing if you're managing it via Intune, JamF, or another MDM solution:
 
-|MobileConfig (Plist)  |“mdatp health” console command output  |macOS setting needed for MDE on macOS to function properly  |
+|MobileConfig (Plist)  |"mdatp health" console command output  |macOS setting needed for MDE on macOS to function properly  |
 |---------|---------|---------|
 |"/Library/Managed Preferences/com.apple.system-extension-policy.plist"    |  real_time_protection_subsystem       |   System extension      |
 |"/Library/Managed Preferences/com.apple.webcontent-filter.plist"    |   network_events_subsystem      |     Network Filter extension    |
 |"/Library/Managed Preferences/com.apple.TCC.configuration-profile-policy.plist"   |     full_disk_access_enabled    |    Privacy Preference Policy Controls (PPPC, aka TCC (Transparency, Consent & Control), Full Disk Access (FDA))     |
 |"/Library/Managed Preferences/com.apple.notificationsettings.plist"    |   n/a      |     End-user notifications    |
-|"/Library/Managed Preferences/servicemanagement.plist”     |   n/a      | Background services        |
+|"/Library/Managed Preferences/servicemanagement.plist"     |   n/a      | Background services        |
 |"/Library/Managed Preferences/com.apple.TCC.configuration-profile-policy.plist"     |    full_disk_access_enabled (for DLP)     |   Accessibility      |
 
 To troubleshoot the issue of missing files to make Microsoft Defender for Endpoint on macOS work properly, see [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md#microsoft-defender-for-endpoint-on-mac).
@@ -241,7 +241,7 @@ For example,
        - **Other MDM**: Yes
        - **Manual**: Not applicable
 
-#### Step 3: Test the installed profiles using macOS built-in ‘profile’ tool.  It compares your profiles with what we have published in GitHub, reporting inconsistent profiles or profiles missing altogether
+#### Step 3: Test the installed profiles using macOS built-in 'profile' tool.  It compares your profiles with what we have published in GitHub, reporting inconsistent profiles or profiles missing altogether
 
 1. Download the script from https://github.com/microsoft/mdatp-xplat/tree/master/macos/mdm.
 1. Click **Raw**. The new URL will be https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mdm/analyze_profiles.py.

@@ -15,6 +15,8 @@
               href: set-up-content-understanding.md
             - name: Set up Microsoft Syntex
               href: set-up-microsoft-syntex.md
+            - name: Privacy, security, & compliance
+              href: syntex-privacy-security.md
             - name: Set up a content center 
               href: create-a-content-center.md
 
@@ -53,6 +55,8 @@
                   href: discover-other-trained-models.md
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
+                - name: Apply a sensitivity label 
+                  href: apply-a-sensitivity-label-to-a-model.md
                 - name: Rename a model
                   href: rename-a-model.md
                 - name: Delete a model
@@ -187,7 +191,7 @@
         - name: Find and manage terms 
           href: taxonomy-tagging.md
 
-    - name: Syntex eSignature 
+    - name: eSignature 
       items: 
         - name: Overview 
           href: esignature-overview.md
@@ -197,6 +201,8 @@
           href: esignature-send-requests.md
         - name: Review and sign a request 
           href: esignature-review-sign-requests.md
+        - name: Troubleshoot a request 
+          href: esignature-troubleshoot.md
 
     - name: Optical character recognition 
       items: 
@@ -221,6 +227,8 @@
           href: archive/archive-compliance.md
         - name: End user experience 
           href: archive/archive-end-user.md
+        - name: FAQs
+          href: archive/archive-faq.md
 
     - name: Microsoft 365 Backup (Preview)
       items: 
@@ -274,6 +282,8 @@
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
+        - name: Try out Syntex services
+          href: promo-syntex.md
         - name: Scenarios and use cases
           items:
             - name: Overview
@@ -330,7 +340,7 @@
         - name: Microsoft Syntex REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
-    - name: Syntex-SharePoint Advanced Management
+    - name: SharePoint Advanced Management
       href: /sharepoint/advanced-management
 
 

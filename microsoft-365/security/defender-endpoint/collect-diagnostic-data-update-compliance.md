@@ -1,7 +1,7 @@
 ---
 title: Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Update Compliance issues when using the Microsoft Defender Antivirus Assessment add-in.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -9,7 +9,7 @@ ms.custom: nextgen
 ms.date: 08/22/2023
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.topic: conceptual
 ms.collection: 
 - m365-security

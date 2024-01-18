@@ -2,8 +2,8 @@
 title: Batch Delete Indicators API
 description: Learn how to use the Batch Delete Indicators API to delete indicator entities by ID in Microsoft Defender for Endpoint.
 keywords: apis, public api, supported apis, delete, ti indicator, entity, id
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: reference
 author: itsela-ms
 ms.author: itsela
 ms.localizationpriority: medium
@@ -20,7 +20,7 @@ ms.date: 07/31/2023
 
 # Batch Delete Indicators
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)

@@ -1,7 +1,7 @@
 ---
 title: Setup guides for Microsoft Defender XDR 
 description: Learn how to deploy and configure Microsoft Defender XDR by using online setup guides 
-keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps
+keywords: deploy, licenses, supported services, provisioning, configuration Microsoft Defender XDR, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -26,7 +26,7 @@ ms.date: 03/31/2023
 
 # Setup guides for Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -54,4 +54,4 @@ Deployment guides in the admin center require authentication to a Microsoft 365 
 - [Microsoft Defender for Endpoint overview](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Microsoft Defender for Office 365 overview](../office-365-security/defender-for-office-365.md)
 - [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

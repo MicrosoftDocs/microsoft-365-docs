@@ -289,9 +289,9 @@ For any mailbox moving from a source organization, you must provision a MailUser
 
 7. Other attributes may be included in Exchange hybrid write-back already. If not, they should be included.
 
-   1. `msExchBlockedSendersHash` – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
-   2. `msExchSafeRecipientsHash` – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
-   3. `msExchSafeSendersHash` – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
+   1. `msExchBlockedSendersHash` – Writes back online blocked sender data from clients to on-premises Active Directory.
+   2. `msExchSafeRecipientsHash` – Writes back online safe recipients data from clients to on-premises Active Directory.
+   3. `msExchSafeSendersHash` – Writes back online safe sender data from clients to on-premises Active Directory.
 
    Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization. You must also apply a Cross Tenant User Data Migration license; else, you may see a transient error reading **needs approval**, which will report a warning in the move report that a license hasn't been applied to the target user.
 
@@ -586,7 +586,7 @@ Yes. However, we only keep the store permissions as described in these articles:
 
 ### Do you have any recommendations for batches?
 
-Don't exceed 2,000 mailboxes per batch. We strongly recommend submitting batches two weeks prior to the cut-over date as there's no impact on the end users during synchronization. If you need guidance for mailboxes quantities over 50,000, you can reach out to the Engineering Feedback Distribution List at crosstenantmigrationpreview@service.microsoft.com.
+To ensure a smooth migration process, we recommend limiting the number of mailboxes per batch to 2,000 and submitting batches at least two weeks prior to the cut-over date. This will not impact end users during synchronization. For guidance on migrating quantities exceeding 50,000 mailboxes, please contact your account team for assistance.
 
 ### What if I use Service encryption with Microsoft Purview Customer Key?
 

@@ -2,13 +2,12 @@
 title: Resources for Microsoft partners working with small and medium-sized businesses
 description: Download our new security guide or integrate your remote monitoring and management (RMM) tools and professional service automation (PSA) software with Defender for Business, Microsoft 365 Business Premium, Defender for Endpoint, and Microsoft 365 Lighthouse.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 07/19/2023
 ms.reviewer: nehabha
@@ -89,3 +88,4 @@ If you're a Microsoft Cloud Solution Provider (CSP) or MSP, you can use Microsof
 | [Microsoft 365 Business Premium and Defender for Business partner webinar series](https://aka.ms/M365MDBseries) | This webinar series provides: <br/>- Practical guidance about how to have conversations with your customers about security and drive upsell to Microsoft 365 Business Premium. <br/>- Demos and deep dive walkthroughs for Microsoft 365 Lighthouse and Defender for Business. <br/>- A panel of experts to help answer your questions.   |
 | [Microsoft 365 Business Premium partner playbook and readiness series](https://aka.ms/M365BPPartnerPlaybook) |  Practical guidance on building a profitable managed services practice, with: <br/>- Examples of successful managed service offerings from industry experts and peers. <br/>- Technical enablement and checklists from Microsoft experts. <br/>- Sales enablement and customer conversation aids to help you market your solution.  |
 | [Defender for Business partner kit](https://aka.ms/MDBPartnerKit) | The Defender for Business partner kit provides you with practical guidance, technical information, and customer-ready resources to market and sell Defender for Business to small and medium-sized businesses.  |
+

@@ -2,7 +2,7 @@
 title:  Run the client analyzer on macOS or Linux
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux
 keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, macos, linux, mdeanalyzer
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,7 +19,7 @@ ms.collection:
 - tier2
 - mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ---
 
@@ -49,10 +49,10 @@ If using a terminal download using the command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '87452324ADADBB2F7B75E6B0B295ADD89B787C5D7AF7F30ED0EBDBD8F0CF4E39'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '708C2257109D200C2862637363BEC0C073ACD66CBD5120EB1DDE28F7AA9C9C1E'
 
     ```console
-    echo '87452324ADADBB2F7B75E6B0B295ADD89B787C5D7AF7F30ED0EBDBD8F0CF4E39 XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '708C2257109D200C2862637363BEC0C073ACD66CBD5120EB1DDE28F7AA9C9C1E XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
@@ -101,12 +101,6 @@ When using a terminal, unzip the file using one of the following commands based 
    sudo ./MDESupportTool -d
    ```
 
-   > [!NOTE]
-   > The binary is currently unsigned. To allow the package run on MacOS, you will need to use the command
-   >
-   > `spctl --add /Path/To/MDESupportTool`
-   >
-
 ## Running the Python-based client analyzer
 
 > [!NOTE]
@@ -133,7 +127,7 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo 'F51A565A083A5B12AF8D9A16D6AE16FCACDCE4D5CABD48883EC0EEA10D33E19D XMDEClientAnalyzer.zip' | sha256sum -c
+    echo 'A13C262EDD1C657EC056DD03E9F0487B4FD897964F1ABF968445E19035ABFD6D XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\

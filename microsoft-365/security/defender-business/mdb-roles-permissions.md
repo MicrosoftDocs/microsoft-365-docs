@@ -2,13 +2,12 @@
 title: Assign security roles and permissions in Microsoft Defender for Business
 description: Assign roles to your cybersecurity team. Learn about these roles and permissions in Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 06/28/2023
 ms.reviewer: efratka, nehabha
@@ -99,3 +98,4 @@ You can use the Microsoft 365 admin center or the Microsoft Entra admin center t
 
 - Proceed to [Step 4: Set up email notifications for your security team](mdb-email-notifications.md).
 - [Step 5: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
+

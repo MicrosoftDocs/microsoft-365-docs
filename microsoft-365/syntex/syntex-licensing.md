@@ -4,12 +4,12 @@ ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
 ms.date: 09/25/2023
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
-    - enabler-strategic
+    - essentials-get-started
     - m365initiative-syntex
     - Tier1
 search.appverid: MET150

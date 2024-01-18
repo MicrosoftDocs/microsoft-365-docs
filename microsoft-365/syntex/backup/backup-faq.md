@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 11/15/2023
+ms.date: 01/17/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: backup
@@ -26,9 +26,9 @@ description: Read frequently asked questions about Microsoft 365 Backup.
 
 No, we still have the same point of view, but are now offering additional tools to help organizations achieve those goals and responsibilities.
 
-#### Why don’t DR copies suffice for my backup?
+#### Why don’t Disaster Recovery copies suffice for my backup?
 
-DR copies protect only the current state of content, not prior points in time. Microsoft 365 Backup provides additional benefit by giving you a way to restore data back to a healthy state in the past with fast RTO to with short RPO intervals.
+Disaster Recovery (DR) is the ability to recover from a situation in which the primary data center is unable to continue to operate. A DR copy with Microsoft 365 maintains the current state of content, not any historical versions from prior points in time. Microsoft 365 Backup provides additional benefit by giving you a way to restore data back to a healthy state in the past with fast RTO to with short RPO intervals.
 
 #### Why don’t versions already solve this point in time restore problem?
 
@@ -36,7 +36,7 @@ Versions give individual users a way to restore files or sites to prior points i
 
 #### Why don’t legal holds solve the problem of keeping all versions of items for recovery?
 
-Legal holds retain data, but that feature is optimized for export (fr example, via eDiscovery), not for mass restore. Microsoft 365 Backup gives the right enhanced restore tooling for ransomware and accidental/malicious deletions at scale, plus optimized performance for those scenarios.
+Legal holds retain data, but that feature is optimized for export (for example, via eDiscovery), not for mass restore. Microsoft 365 Backup gives the right enhanced restore tooling for ransomware and accidental/malicious deletions at scale, plus optimized performance for those scenarios.
 
 #### What mailbox changes are “backed up”?
 
@@ -73,7 +73,7 @@ Example events that aren't versioned or recoverable via backup:
 
 The recovery point objective (RPO) is the maximum amount of time between the most recent backup and a data destruction event. Stated another way, it’s the amount data lost due to a data destruction event not recoverable via the backups. In the case of Microsoft 365 Backup, the RPOs are:
 
-For OneDrive and SharePoint, the RPO for the first two weeks is 10 mins, then one week beyond that. This means for the first two weeks, the most amount of data that can be lost due to a data destruction event is roughly 10 minute’s worth of the most recent data. Likewise, after two weeks, the most amount of data that can be lost is a week’s worth of data.
+For OneDrive and SharePoint, the RPO for the first two weeks is 15 mins, then one week beyond that. This means for the first two weeks, the most amount of data that can be lost due to a data destruction event is roughly 10 minute’s worth of the most recent data. Likewise, after two weeks, the most amount of data that can be lost is a week’s worth of data.
 
 For Exchange Online, the RPO is 10 seconds, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 second’s worth of data.
 

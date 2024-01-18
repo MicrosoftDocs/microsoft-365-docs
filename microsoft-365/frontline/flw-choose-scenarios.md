@@ -4,7 +4,7 @@ description: Learn about scenarios you can easily implement for the frontline wo
 search.appverid: MET150
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -107,16 +107,6 @@ Watch the following video for an overview of the virtual appointments experience
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
 More information: [Virtual Appointments with Microsoft Teams](virtual-appointments.md)
-
-## Help your team, clients, and customers
-
-Find resources to share with your team to help them get comfortable using Teams apps and features. Get customizable infographics and web content to help your clients and customers use Virtual Appointments with your organization.
-
-| Scenario | Description |
-| --- | --- |
-|[Help your clients and customers use virtual appointments scheduled with Bookings](virtual-appointments-toolkit.md) |Customizable infographics and FAQ that you can add to your website to make it easy for your clients to use virtual appointments with your organization. |
-|[Help your frontline workers track time and attendance](shifts-toolkit.md) |Videos to help your frontline managers and employees learn about how to use Shifts in Microsoft Teams. |
-|[Help your frontline workers use collaboration apps and features](collab-features-apps-toolkit.md) |Videos to help your frontline team use Microsoft Teams apps and features. |
 
 ## More scenarios and solutions with the digital ecosystem
 

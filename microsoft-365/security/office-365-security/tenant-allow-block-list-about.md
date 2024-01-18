@@ -55,7 +55,7 @@ These articles contain procedures in the Microsoft Defender portal and in PowerS
 Use the **Submissions** page (also known as *admin submission*) at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a> to create block entries for the following types of items as you report them as false negatives to Microsoft:
 
 - **Domains and email addresses**:
-  - Email messages from these senders are marked as *phishing* and then moved to quarantine. 
+  - Email messages from these senders are marked as *phishing* and then moved to quarantine.
   - Users in the organization can't send email to these blocked domains and addresses. They receive the following non-delivery report (also known as an NDR or bounce message): `550 5.7.703 Your message can't be delivered because messages to XXX, YYY are blocked by your organization using Tenant Allow Block List.` The entire message is blocked for all internal and external recipients of the message, even if only one recipient email address or domain is defined in a block entry.
 
   > [!TIP]
@@ -87,7 +87,7 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 
 - **Email attachments** and **URLs**: An allow entry is created and the entry appears on the **Files** or **URLs** tab in the Tenant Allow/Block List respectively.
 
-   For URLs reported as false positives, we'll allow subsequent messages that contain variations of the original URL. For example, you use the **Submissions** page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `*.contoso.com/abc`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
+   For URLs reported as false positives, we'll allow subsequent messages that contain variations of the original URL. For example, you use the **Submissions** page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `www.contoso.com/abc/whatever`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
 
 - **Email**: If a message was blocked by the EOP or Defender for Office 365 filtering stack, an allow entry might be created in the Tenant Allow/Block List:
   - If the message was blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md), an allow entry for the sender is created, and the entry appears on the **Spoofed senders** tab in the Tenant Allow/Block List.

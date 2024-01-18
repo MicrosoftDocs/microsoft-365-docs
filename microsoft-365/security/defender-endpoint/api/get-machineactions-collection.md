@@ -2,7 +2,7 @@
 title: List machineActions API
 description: Learn how to use the List MachineActions API to retrieve a collection of Machine Actions in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, machineaction collection
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # List MachineActions API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 
 **Applies to:** 

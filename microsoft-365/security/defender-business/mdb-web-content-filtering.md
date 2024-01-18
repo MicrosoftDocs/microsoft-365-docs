@@ -1,13 +1,12 @@
 ---
 title: Set up web content filtering in Microsoft Defender for Business            
 description: Learn how to set up, view, and edit your web content filtering policy in Microsoft Defender for Business.            
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 ms.date: 06/28/2023
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium 
 ms.reviewer: nehabha
 f1.keywords: NOCSH 
@@ -67,3 +66,4 @@ The following table describes web content categories you can choose for your web
 - [Set up controlled folder access](mdb-controlled-folder-access.md)
 - [Enable your attack surface reduction rules](mdb-asr.md).
 - [Review settings for advanced features and the Microsoft Defender portal](mdb-portal-advanced-feature-settings.md).
+

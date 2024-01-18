@@ -2,10 +2,10 @@
 title: Share an enterprise model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 01/12/2023
+ms.date: 01/16/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 

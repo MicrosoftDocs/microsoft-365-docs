@@ -1,7 +1,7 @@
 ---
 title: Custom roles for role-based access control
 description: Learn how to manage custom roles in the Microsoft Defender portal
-keywords: access, permissions, Microsoft 365 Defender, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC, roles-based access, custom roles-based access, roles-based auth, RBAC in MDO, roles, rolegroups, permissions inheritance, fine-grained permissions
+keywords: access, permissions, Microsoft Defender XDR, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC, roles-based access, custom roles-based access, roles-based auth, RBAC in MDO, roles, rolegroups, permissions inheritance, fine-grained permissions
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -34,7 +34,7 @@ search.appverid:
 
 - Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)] 
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)] 
 
 There are two types of roles that can be used to access to Microsoft Defender XDR:
 
@@ -108,4 +108,4 @@ Similarly, to view hunting data from Microsoft Defender for Office 365, users wo
 - [RBAC roles](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Manage access to Microsoft Defender XDR](m365d-permissions.md)
 - [Manage admin access for Defender for Cloud Apps](/cloud-app-security/manage-admins)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

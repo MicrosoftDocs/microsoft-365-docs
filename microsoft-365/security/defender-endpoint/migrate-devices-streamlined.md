@@ -2,7 +2,7 @@
 title: Migrate devices to use the streamlined onboarding method
 description: Learn how to migrate devices to Defender for Endpoint using the streamlined connectivity method.
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -12,13 +12,13 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: how-to
-ms.subservice: mde
+ms.subservice: onboard
 ms.date: 09/21/2023
 ---
 
 # Migrate devices to use the streamlined connectivity method
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -215,22 +215,22 @@ Ensure connectivity is established with the appropriate URLs.
 
 You can use advanced hunting in Microsoft Defender portal to view the connectivity type status. 
 
-This information is found in the DeviceInfo table under the “ConnectivityType” column:
+This information is found in the DeviceInfo table under the "ConnectivityType" column:
 - Column Name: ConnectivityType
 - Possible Values: `<blank>`, Streamlined, Standard
 - Data type: String
 - Description: Type of connectivity from the device to the cloud
 
-Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as “Streamlined”.
+Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as "Streamlined".
 
-If you move the device back to the regular method, the value will be “standard”.
+If you move the device back to the regular method, the value will be "standard".
 
 For devices that have not yet attempted reonboard, the value will remain blank. 
 
 
 ### Tracking locally on a device through Windows Event Viewer
 
-You can use Windows Event Viewer’s SENSE operational log to locally validate connections with the new streamlined approach. SENSE Event ID 4 tracks successful EDR connections.
+You can use Windows Event Viewer's SENSE operational log to locally validate connections with the new streamlined approach. SENSE Event ID 4 tracks successful EDR connections.
 
 Open the Defender for Endpoint service event log using the following steps:
 
@@ -277,7 +277,7 @@ Make sure to run a couple of basic commands post-connection to confirm connectiv
 
 Ensure that Automated investigation and response is working on your test device: [Configure automated investigation and response capabilities](/microsoft-365/security/defender/m365d-configure-auto-investigation-response).
 
-For Auto-IR testing labs, navigate to **Microsoft 365 Defender** \> **Evaluations & Tutorials** \> **Tutorials & Simulations** \> **Tutorials \> **Automated Investigation tutorials**.
+For Auto-IR testing labs, navigate to **Microsoft Defender XDR** \> **Evaluations & Tutorials** \> **Tutorials & Simulations** \> **Tutorials \> **Automated Investigation tutorials**.
 
 #### Cloud-delivered protection 
 
@@ -325,9 +325,9 @@ For macOS and Linux, you can use the following methods:
 
 ### MDATP connectivity test (macOS and Linux)
 
-Run `mdatp health –details` to confirm simplified_connectivity: "enabled".
+Run `mdatp health -details` to confirm simplified_connectivity: "enabled".
 
-Run `mdatp health –details edr` to confirm `edr_partner_geo_location` is available. The value should be `GW_<geo>` where 'geo' is your tenant’s geo-location.
+Run `mdatp health -details edr` to confirm `edr_partner_geo_location` is available. The value should be `GW_<geo>` where 'geo' is your tenant's geo-location.
 
 Run mdatp connectivity test. Ensure the streamlined URL pattern is present. You should expect two for '\storage', one for '\mdav', one for '\xplat', and one for '/packages'.
 
