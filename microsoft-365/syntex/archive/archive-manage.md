@@ -87,6 +87,17 @@ You can also change the status of an archived site by using the PowerShell cmdle
 
 |Template ID  |Template  |
 |---------|---------|
+|1     |Document Workspace  |
+|4     |Wiki Site           |
+|9     |Blog                |
+|32    |News Site           |
+|64    |Team Site           |
+|68    |Communication Site  |
+
+ 
+<!---
+|Template ID  |Template  |
+|---------|---------|
 |0     |Global         |
 |1     |Team Site         |
 |2     |Meeting Workspace         |
@@ -103,3 +114,4 @@ You can also change the status of an archived site by using the PowerShell cmdle
 |6115     |Project Site         |
 |6215     |Microsoft Project Site         |
 |14483     |Records Center         |
+--->
