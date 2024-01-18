@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 12/07/2023
+ms.date: 01/18/2024
 ---
 
 # Start using Defender Experts for XDR service
@@ -114,6 +114,9 @@ Apart from these one-click actions, you can also receive managed responses from 
 
 ### Chat with Defender Experts
 
+> [!NOTE]
+> The chat option is only available for incidents where we issued managed response.
+
 #### In-portal chat
 
 The **Chat** tab within the Microsoft Defender XDR portal provides you with a space to engage with our experts and further understand the incident, our investigation, and the recommended actions we provided. You could ask about a malicious executable, malicious attachment, information about activity groups, advanced hunting queries, or any other information that would assist you with the incident resolution.
@@ -128,14 +131,14 @@ Once you turn on chat on Teams, a new team named Defender Experts team is create
 
 **Important reminders when using the Teams chat:**
 
-- Only reply to posts (incidents) created by Defender Experts. When you create a new post, our experts might not be able to see it.
-- Tag or mention our experts by typing @Defender Experts in your replies.
-- Don’t attach any attachments (for example, files for analysis) in the chat. Instead, send them to appropriate submissions channels or provide links where they can be found in Microsoft Defender XDR portal.
+- Only reply to posts (announcing managed response is published on an incident) created by Defender Experts. When you create a new post, our experts might not be able to see it.
+- Tag or mention our experts by typing @Defender Experts in your replies, so they are notified to join the chat conversation.
+- Don’t attach any attachments (for example, files for analysis) in the chat. For security reasons, Defender Experts won't be able to view the attachments. Instead, send them to appropriate submissions channels or provide links where they can be found in Microsoft Defender XDR portal.
 
 Conversations in the Teams chat about an incident are also synchronized with the incident’s **Chat** tab in the Microsoft Defender XDR portal so that you can see messages and updates about an investigation wherever you go.
 
 > [!IMPORTANT]
-> Defender Experts will have access to all messages posted on the team, in any channel.
+> Defender Experts will have access to all messages in any channel in this team.
 
 ## Get visibility to Defender Experts investigations in your SIEM or ITSM application
 

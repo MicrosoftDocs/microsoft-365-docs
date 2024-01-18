@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 12/07/2023
+ms.date: 01/18/2024
 ---
 
 # Get started with Microsoft Defender Experts for XDR
@@ -141,7 +141,7 @@ To edit or update your notification contacts after the initial setup, go to **Se
 Apart from email and in-portal chat, you also have to option to use Microsoft Teams to receive updates about managed responses and communicate with our experts in real time. When this setting is turned on, a new team named **Defender Experts team** is created, where managed response notifications related to ongoing incidents are sent as new posts in the **Managed response** channel. Learn more about using Teams chat
 
 > [!IMPORTANT]
-> Defender Experts will have access to all messages posted on any channel in the created **Defender Experts team**. Once this setting is turned on, it cannot be turned off.
+> Defender Experts will have access to all messages posted on any channel in the created **Defender Experts team**. To prevent Defender Experts from accessing messages in this team, select **Apps** in Teams > **Manage your apps** > **Defender Experts** > **Remove**. This removal action cannot be reversed.
 
 **To turn on Teams notifications and chat:**
 
@@ -153,6 +153,8 @@ Apart from email and in-portal chat, you also have to option to use Microsoft Te
 To turn on Teams notifications and chat after the initial setup, go to **Settings** > **Defender Experts** > **Teams**.
 
 :::image type="content" source="../../media/xdr/Teams-managed-response.png" alt-text="Screenshot of option to activate Teams for receiving managed response." lightbox="../../media/xdr/Teams-managed-response.png":::
+
+You can add new members to the channel by navigating to **Defender Experts team** > More options (…) >  **Manage team** > **Add member**.
 
 ## Prepare your environment for the Defender Experts service
 
