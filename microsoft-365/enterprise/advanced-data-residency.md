@@ -86,14 +86,21 @@ When a customer has a mix of commercial and education license types including bo
 
 ## Data Migration Management
 
-If all of a customer's tenant data covered by the Advanced Data Residency feature isn't already stored at rest within their eligible _Local Region Geography_, then a data migration to the _Local Region Geography_ is required.  If customer tenant data covered by the Advanced Data Residency feature is already stored at rest within their eligible _Local Region Geography_, then no data migration to the _Local Region Geography_ is required.
+If any customer's tenant data covered by the Advanced Data Residency feature isn't stored at rest within their eligible _Local Region Geography_, then a data migration to their _Local Region Geography_ is required.  If all customer tenant data covered by the Advanced Data Residency feature is already stored at rest within their eligible _Local Region Geography_, then no data migration to the _Local Region Geography_ is required.
 
 ### Starting Data Migration
 
-After a customer receives their Advanced Data Residency licenses,  the customer needs to signal that they're ready to schedule data migration, if one is necessary. To signal your tenant is ready for its data migration, the customer administrator visits the Data Location section of the Microsoft 365 Admin Console within the **Settings -> Org Settings -> Organization Profile** area. From here the customer administrator is able to see the current location of their data-at-rest and what _Local Region Geography_ their customer data is migrated to.
+After a customer receives their Advanced Data Residency licenses,  the customer needs to signal that they're ready to schedule data migration, if one is necessary. To signal your tenant is ready for its data migration, the customer administrator visits the Data Location section of the Microsoft 365 Admin Console within the **Settings -> Org Settings -> Organization Profile** area. From here the customer administrator is able to see the current location of their data-at-rest and what _Local Region Geography_ their customer data is migrated is eligible to select for their migration.
+
+:::image type="content" source="media\data-residency\1-adr-microsoft-365-admin-center.png" alt-text="<Screenshot of...>":::
 
 > [!NOTE]
 > Data migration won't be scheduled until the customer administrator has completed this task. The migration expectation discussed elsewhere in this documentation won't start being tracked until this task has been completed.
+
+Following is an example Admin view that ADR-eligible customers should see prior to opting for migration to their Local Region Geography.
+
+
+:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move.png" alt-text="<Screenshot of...>":::
 
 Once the customer signal is received, they're provided with their opt-in date and the target date of completion.
 
