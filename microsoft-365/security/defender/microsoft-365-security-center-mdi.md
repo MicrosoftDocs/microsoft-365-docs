@@ -97,7 +97,7 @@ The table below lists the changes in navigation between Microsoft Defender for I
 | **Alert page**                 | Microsoft Defender XDR alert details page <br><br>**Tip**: Use [alert tuning](investigate-alerts.md#tune-an-alert) to optimize the alerts you see in Microsoft Defender XDR.                        |
 | **Search**                     | Microsoft Defender XDR global search                                |
 | **Health issues**              | Microsoft Defender XDR **Identities > Health issues**                          |
-| **Entity activities**          | - **Advanced hunting** <br>- Device page > **Timeline** <br>- Identity page > **Timeline** tab                                             |
+| **Entity activities**          | - **Advanced hunting** <br>- Device page > **Timeline** <br>- Identity page > **Timeline** tab  <br>- **Group** pane > **Timeline** tab                                           |
 | **Settings**                   | **Settings** -> **Identities**                                       |
 | **Users and accounts**         | **Assets** -> **Identities**                                         |
 | **Identity security posture**  | [Microsoft Defender for Identity's security posture assessments](/defender-for-identity/security-assessment) |
