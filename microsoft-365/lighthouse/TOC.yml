@@ -12,10 +12,12 @@
       href: m365-lighthouse-sign-up.md
 - name: Secure Microsoft 365 Lighthouse
   items: 
-    - name: Configure portal security
-      href: m365-lighthouse-configure-portal-security.md
     - name: Overview of permissions
       href: m365-lighthouse-overview-of-permissions.md
+    - name: Manage Lighthouse RBAC permissions
+      href: m365-lighthouse-manage-lighthouse-rbac-permissions.md
+    - name: Configure portal security
+      href: m365-lighthouse-configure-portal-security.md 
     - name: Review audit logs
       href: m365-lighthouse-review-audit-logs.md
     - name: Set up and manage GDAP
