@@ -60,7 +60,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## September 2023
 
-- URL top-level domain blocking is available in the **Tenant allow block list**. [Learn more](tenant-allow-block-list-urls-configure.md) 
+- URL top-level domain blocking is available in the **Tenant allow block list**. [Learn more](tenant-allow-block-list-urls-configure.md).
 
 ## August 2023
 
