@@ -45,15 +45,15 @@ When you invite a user to a workspace, that user has access to all the pages in 
 
 When you share only a Loop page, you're giving users access to that specific page exclusively (not the whole workspace). The user can choose to use a company share link or people-specific share link; unless their tenant admin has disabled some of the share link types. When sharing a page, you can choose to grant the user "*edit*" or "*read only*" access.
 
-## Loop workspace membership, Microsoft 365 groups, Security Groups
+## Loop workspace membership and Microsoft 365 groups
 
-There is currently one type of Loop workspace. The roster/membership of the workspace is visible within the Loop app and can be updated by the owner of the workspace.
+Loop workspaces currently have one type, with membership visible and manageable within the Loop app by the workspace owner. However, there is no integration with Microsoft 365 groups or Security groups.
 
-Owners cannot yet assign new members to become owners of Loop workspaces. If the owner of a workspace leaves the company, the Loop workspace will become ownerless. There is not yet a way for an administrator to assign a new owner to an ownerless group.
+At present, owners cannot assign new members as owners. If the owner leaves the company, the workspace becomes ownerless. Administrators cannot assign new owners to ownerless workspaces.
 
-Ownerless workspaces can be found by querying Loop workspace containers in SharePoint Embedded. For more information on querying SharePoint Embedded containers, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application ID is listed in [Summary of governance, lifecycle and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
+To find ownerless workspaces, query Loop workspace containers in SharePoint Embedded. For more information, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application ID is listed in [Summary of governance, lifecycle and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
-There are other types of groups and membership lists in the Microsoft ecosystem such as Microsoft 365 groups and Security groups. Loop workspace membership cannot currently be managed by or associated with these groups or lists.
+Note that there are other types of groups and membership lists in the Microsoft ecosystem, such as Microsoft 365 groups and Security groups. Currently, Loop workspace membership cannot be managed by or associated with these groups or lists.
 
 ## Storage management after user departure
 
