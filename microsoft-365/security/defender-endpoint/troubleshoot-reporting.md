@@ -24,7 +24,7 @@ ms.date: 04/08/2021
 
 # Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

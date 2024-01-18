@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # Configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Storage account
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

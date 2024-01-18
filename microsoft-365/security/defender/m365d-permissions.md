@@ -1,7 +1,7 @@
 ---
 title: Manage access to Microsoft Defender XDR data in the Microsoft Defender portal
 description: Learn how to manage permissions to data in Microsoft Defender XDR
-keywords: access, permissions, Microsoft 365 Defender, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC
+keywords: access, permissions, Microsoft Defender XDR, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -33,7 +33,7 @@ ms.date: 09/21/2023
 
 - Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 There are two ways to manage access to Microsoft Defender XDR:
 
@@ -79,4 +79,4 @@ During the preview, Microsoft Defender XDR does not enforce access controls base
 - [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)
 - [Microsoft Defender for Endpoint RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Defender for Cloud Apps roles](/cloud-app-security/manage-admins)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

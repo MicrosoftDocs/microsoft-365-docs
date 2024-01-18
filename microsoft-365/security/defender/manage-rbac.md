@@ -12,14 +12,14 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: overview
-ms.date: 10/30/2023
+ms.date: 1/16/2024
 ms.reviewer: 
 search.appverid: met150
 ---
 
 # Microsoft Defender XDR Unified role-based access control (RBAC)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -29,8 +29,6 @@ search.appverid: met150
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 Microsoft Defender XDR provides integrated threat protection, detection, and response across endpoints, email, identities, applications, and data within a single portal. Controlling a user's permissions around their access to view data or complete tasks is essential for organizations to minimize the risks associated with unauthorized access.
 
@@ -46,10 +44,10 @@ Centralized permissions management is supported for the following solutions:
 |---|---|
 |Microsoft Defender XDR|Centralized permissions management for Microsoft Defender XDR experiences.|
 |Microsoft Defender for Endpoint|Full support for all endpoint data and actions. All roles are compatible with the device group's scope as defined on the device groups page.|
-|Microsoft Defender Vulnerability Management | Centralized permissions management for all  Defender Vulnerability Management capabilities.|
-|Microsoft Defender for Office 365| Full support for all email & collaboration data and actions scenarios that are controlled by Exchange Online Protection roles (EOP) as well as scenarios controlled by Exchange Online (EXO). </br></br> **Note:** The Microsoft Defender XDR RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses only. This capability is not available to users on trial licenses. </br></br>Granular delegated admin privileges (GDAP) is not supported. </br></br>Remote PowerShell is not supported. |
+|Microsoft Defender Vulnerability Management|Centralized permissions management for all  Defender Vulnerability Management capabilities.|
+|Microsoft Defender for Office 365|Full support for all data and actions scenarios that are controlled by [Email & Collaboration roles](../office-365-security/mdo-portal-permissions.md) and scenarios controlled by [Exchange Online permissions](/exchange/permissions-exo/permissions-exo). </br></br> **Note:** <ul><li>The Microsoft Defender XDR RBAC model is initially available for organizations with Microsoft Defender for Office 365 Plan 2 licenses only. This capability isn't available to users on trial licenses.</li><li>Granular delegated admin privileges (GDAP) isn't supported.</li><li>Cmdlets in Exchange Online PowerShell and Security & Compliance PowerShell continue to use the old RBAC models and aren't affected by Microsoft Defender XDR Unified RBAC.</ul><li>|
 |Microsoft Defender for Identity|Full support for all identity data and actions. </br></br> **Note:** Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://security.microsoft.com/cloudapps/permissions/roles). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).|
-|Microsoft Defender for Cloud|	Support access management for all Defender for Cloud data that is available in Microsoft Defender XDR portal.|
+|Microsoft Defender for Cloud|Support access management for all Defender for Cloud data that is available in Microsoft Defender portal.|
 |Microsoft Secure Score|Full support for all Secure Score data from the [Products included in Secure Score](../defender/microsoft-secure-score.md#products-included-in-secure-score).|
 
 > [!NOTE]
@@ -63,11 +61,7 @@ This section provides useful information on what you need to know before you sta
 
 ### Permissions pre-requisites
 
-> [!NOTE]
-> Unified RBAC - Preview experience is currently not available for US Government customers using GCC and GCC High.
-
 - You must be a Global Administrator or Security Administrator in Microsoft Entra ID to:
-
   - Gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft Defender portal.
 
   - Manage roles and permissions in Microsoft Defender XDR Unified RBAC.
@@ -112,4 +106,4 @@ Watch the following video to see the steps above in action:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW12hyh]
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

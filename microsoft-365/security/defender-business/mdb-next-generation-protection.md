@@ -2,8 +2,8 @@
 title: Review or edit your next-generation protection policies Microsoft Defender for Business
 description: Learn how to view and edit your next-generation protection policies in Defender for Business. These policies pertain to antivirus and anti-malware protection.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
@@ -48,7 +48,7 @@ You can choose from several options for managing your next-generation protection
    | Task | Procedure |
    |---|---|
    | Edit your default policy | 1. In the **Next-generation protection** section, select your default policy, and then choose **Edit**.<br/><br/>2. On the **General information** step, review the information. If necessary, edit the description, and then select **Next**.<br/><br/>3. On the **Device groups** step, either use an existing group, or set up a new group. Then choose **Next**.<br/><br/>4. On the **Configuration settings** step, review and if necessary, edit your security settings, and then choose **Next**. For more information about the settings, see [Next-generation protection settings and options](#next-generation-protection-settings-and-options) (in this article).<br/><br/>5. On the **Review your policy** step, review your current settings. Select **Edit** to make any needed changes. Then select **Update policy**. |
-   | Create a new policy | 1. In the **Next-generation protection** section, select **Add**.<br/><br/>2. On the **General information** step, specify a name and description for your policy. You can also keep or change the a policy order (see [Understand policy order in Microsoft Defender for Business](mdb-policy-order.md)). Then select **Next**.<br/><br/>3. On the **Device groups** step, you can either use an existing group, or create up a new group (see [Device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md)). Then choose **Next**.<br/><br/>4. On the **Configuration settings** step, review and edit your security settings, and then choose **Next**. For more information about the settings, see [Next-generation protection settings and options](#next-generation-protection-settings-and-options) (in this article).<br/><br/>5. On the **Review your policy** step, review your current settings. Select **Edit** to make any needed changes. Then select **Create policy**. |
+   | Create a new policy | 1. In the **Next-generation protection** section, select **Add**.<br/><br/>2. On the **General information** step, specify a name and description for your policy. You can also keep or change a policy order (see [Understand policy order in Microsoft Defender for Business](mdb-policy-order.md)). Then select **Next**.<br/><br/>3. On the **Device groups** step, you can either use an existing group, or create up a new group (see [Device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md)). Then choose **Next**.<br/><br/>4. On the **Configuration settings** step, review and edit your security settings, and then choose **Next**. For more information about the settings, see [Next-generation protection settings and options](#next-generation-protection-settings-and-options) (in this article).<br/><br/>5. On the **Review your policy** step, review your current settings. Select **Edit** to make any needed changes. Then select **Create policy**. |
 
 
 ## [**Intune admin center**](#tab/Intune)

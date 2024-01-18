@@ -1721,9 +1721,6 @@ English: 24 hours a day, 7 days a week
 **Phone number:**\
 800 917 919
 
-Alternative Phone Number: 02 6943 0746\
-Local call charges apply.
-
 **Billing support hours:**\
 Italian: Monday through Friday, 9 AM-5 PM\
 English: Monday through Friday, 9 AM-5 PM
@@ -3865,7 +3862,7 @@ English: 24 hours a day, 7 days a week
 
 ![WeChat QR code.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
-#### Contact support for Office 365 operated by 21Vianet only
+#### Contact support for Microsoft 365 operated by 21Vianet only
 
 :::row:::
    :::column:::

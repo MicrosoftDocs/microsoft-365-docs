@@ -23,7 +23,7 @@ ms.date: 03/25/2021
 
 # Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)

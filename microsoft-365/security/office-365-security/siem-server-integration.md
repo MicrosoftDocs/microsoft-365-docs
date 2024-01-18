@@ -72,7 +72,7 @@ Be sure that your current plan allows for Microsoft Sentinel integration (for ex
 
 1. Navigate to Microsoft Sentinel.
 1. On the navigation to the left of the screen **Configuration** > **Data connectors**.
-1. **Search for** Microsoft Defender XDR and select the **Microsoft 365 Defender (preview) connector**.
+1. **Search for** Microsoft Defender XDR and select the **Microsoft Defender XDR (preview) connector**.
 1. On the right of your screen select **Open Connector Page**.
 1. Under **Configuration** > select **Connect incidents & alerts**
     1. Turn off all Microsoft incident creation rules for the products currently selected.

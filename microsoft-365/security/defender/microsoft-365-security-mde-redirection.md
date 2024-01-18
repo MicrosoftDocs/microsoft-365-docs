@@ -1,7 +1,7 @@
 ---
 title: Redirecting accounts from Microsoft Defender for Endpoint to Microsoft Defender XDR
 description: How to redirect accounts and sessions from the Defender for Endpoint to Microsoft Defender XDR.
-keywords: Microsoft 365 Defender, Getting started with Microsoft 365 Defender, security center redirection
+keywords: Microsoft Defender XDR, Getting started with Microsoft Defender XDR, security center redirection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -25,7 +25,7 @@ ms.date: 02/16/2021
 
 # Redirecting accounts from Microsoft Defender for Endpoint to Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -116,4 +116,4 @@ Once disabled, accounts will no longer be routed to security.microsoft.com, and 
 - [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813)
 - [About Microsoft Defender XDR](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

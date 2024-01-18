@@ -1,8 +1,8 @@
 ---
 title: "Threats detected by Microsoft Defender Antivirus"
 f1.keywords: CSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: conceptual 

@@ -11,7 +11,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
@@ -21,7 +21,7 @@ ms.date: 11/29/2023
 
 # Threat protection report in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -33,56 +33,54 @@ ms.date: 11/29/2023
 > [!IMPORTANT]
 > The Microsoft Defender for Endpoint Threat Protection report page is deprecated and will no longer be available after January 31st, 2024. Microsoft recommends that you transition to either the Defender XDR Incidents page or Advanced hunting to understand endpoint threat protection details. See the following sections for more information.
 
-## Use the Alert queue filter in Defender XDR 
+## Use the Alert queue filter in Defender XDR
 Due to the deprecation of the Defender for Endpoint Threat protection report, you can use the Defender XDR Incidents view, filtered against Defender for Endpoint, to see the current status of alerts for protected devices. For alert status, such as unresolved, you can filter against New and In progress. [Learn more about Defender XDR Incidents](../defender/incident-queue.md#available-filters)
 
 ## Use Advanced hunting queries
 Due to the deprecation of the Defender for Endpoint Threat protection report, you can use Advanced hunting queries to find Defender for Endpoint threat protection information.  Note that currently there is no alert status in Advanced hunting elements that maps to resolve/unresolve. [Learn more about Advanced hunting in Defender XDR](../defender/advanced-hunting-overview.md). See below for a sample advanced hunting query that shows endpoint related threat protection details.
 
-### Alert status  
+### Alert status
 ```kusto
-// Severity 
-AlertInfo 
-| where Timestamp > startofday(now()) // Today 
-| summarize count() by Severity 
-| render columnchart      
+// Severity
+AlertInfo
+| where Timestamp > startofday(now()) // Today
+| summarize count() by Severity
+| render columnchart
 
-// Detection source  
-AlertInfo 
-| where Timestamp > startofday(now()) // Today 
-| summarize count() by Severity 
-| render columnchart      
+// Detection source
+AlertInfo
+| where Timestamp > startofday(now()) // Today
+| summarize count() by Severity
+| render columnchart
 
-// Detection category 
-AlertInfo 
-| where Timestamp > startofday(now()) // Today 
-| summarize count() by Category 
-| render columnchart    
-   
+// Detection category
+AlertInfo
+| where Timestamp > startofday(now()) // Today
+| summarize count() by Category
+| render columnchart
 ```
 
 
-### Alert trend  
+### Alert trend
 
 ```kusto
-// Severity  
-AlertInfo 
-| where Timestamp > ago(30d)  
-| summarize count() by DetectionSource , bin(Timestamp, 1d) 
-| render timechart       
-
-// Detection source  
-AlertInfo 
-| where Timestamp > ago(30d) 
-| summarize count() by DetectionSource , bin(Timestamp, 1d) 
-| render timechart     
-
-// Detection category 
-AlertInfo 
-| where Timestamp > ago(30d) 
-| summarize count() by Category , bin(Timestamp, 1d) 
+// Severity
+AlertInfo
+| where Timestamp > ago(30d)
+| summarize count() by DetectionSource , bin(Timestamp, 1d)
 | render timechart
 
+// Detection source
+AlertInfo
+| where Timestamp > ago(30d)
+| summarize count() by DetectionSource , bin(Timestamp, 1d)
+| render timechart
+
+// Detection category
+AlertInfo
+| where Timestamp > ago(30d)
+| summarize count() by Category , bin(Timestamp, 1d)
+| render timechart
 ```
 
 ## Threat protection reports overview

@@ -1,7 +1,7 @@
 ---
 title: Migrate advanced hunting queries from Microsoft Defender for Endpoint
 description: Learn how to adjust your Microsoft Defender for Endpoint queries so you can use them in Microsoft Defender XDR
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, Microsoft Defender for Endpoint, search, query, telemetry, custom detections, schema, kusto, mapping
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, Microsoft Defender for Endpoint, search, query, telemetry, custom detections, schema, kusto, mapping
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -26,7 +26,7 @@ ms.date: 02/17/2021
 
 # Migrate advanced hunting queries from Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -188,4 +188,4 @@ AlertInfo
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -31,7 +31,7 @@ Monthly archive usage is calculated as the sum of the usage of all currently arc
 
 To see the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing for Microsoft Syntex](../syntex-pay-as-you-go-services.md).
 
-### Savings in COGS if you archive with Microsoft 365 Archive
+### Cost savings if you archive with Microsoft 365 Archive
 
 The following table helps visualize the savings you'll realize by archiving content based on the frequency and percent of all archived content you're restoring. The key takeaway is that if you are not reactivating more than 30% of your data more than twice a year, you'll achieve most of the savings offered by the product.
 

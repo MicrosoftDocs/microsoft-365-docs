@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-manage
     - m365initiative-syntex
 ms.localizationpriority:  medium
 description: Learn about file limitations, file types, supported languages, and other requirements for models in Microsoft Syntex.
@@ -51,7 +51,7 @@ Prebuilt models:
 | Icon          | Description   |
 | ------------- | ------------- |
 | ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This model supports the following file types: see [file type requirements](/ai-builder/form-processing-model-requirements#requirements). |
-| ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This model supports the following language: English. |
+| ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This model supports the following languages: see [supported languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents). |
 | ![Paragraph symbol.](/office/media/icons/paragraph-writing-blue.png) | **OCR considerations** <br>This model uses optical character recognition (OCR) technology to scan .pdf files, image files, and .tiff files. OCR processing works best on documents that meet [these requirements](/ai-builder/form-processing-model-requirements#requirements). |
 | ![Bandwidth/efficiency symbol.](/office/media/icons/bandwidth-efficiency-blue.png)  | **Optimization tips** <br>If your model isn't performing as you want it to, try [these steps to improve the performance of your model](/ai-builder/improve-form-processing-performance). |
 | ![Globe symbol.](/office/media/icons/globe-internet.png)  | **Multi-Geo environments** <br>When setting up Syntex in a [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) environment, you can only configure it to use the model type in the central location. If you want to use this model type in a satellite location, contact Microsoft support. |
@@ -63,7 +63,7 @@ Prebuilt models:
 | Icon          | Description   |
 | ------------- | ------------- |
 | ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This model supports the following file types: see [file type requirements](/ai-builder/form-processing-model-requirements#requirements). |
-| ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This model supports 73 languages: see [supported languages](/ai-builder/form-processing-model-requirements#languages-supported). |
+| ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This model supports the following languages: see [supported languages](/ai-builder/form-processing-model-requirements#languages-supported). |
 | ![Paragraph symbol.](/office/media/icons/paragraph-writing-blue.png) | **OCR considerations** <br>This model uses optical character recognition (OCR) technology to scan .pdf files, image files, and .tiff files. OCR processing works best on documents that meet [these requirements](/ai-builder/form-processing-model-requirements#requirements). |
 | ![Bandwidth/efficiency symbol.](/office/media/icons/bandwidth-efficiency-blue.png)  | **Optimization tips** <br>If your model isn't performing as you want it to, try [these steps to improve the performance of your model](/ai-builder/improve-form-processing-performance). |
 | ![Globe symbol.](/office/media/icons/globe-internet.png)  | **Multi-Geo environments** <br>When setting up Syntex in a [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) environment, you can only configure it to use the model type in the central location. If you want to use this model type in a satellite location, contact Microsoft support. |

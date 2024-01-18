@@ -2,8 +2,8 @@
 title: View and manage incidents in Microsoft Defender for Business
 description: View and manage alerts, respond to threats, manage devices, and review remediation actions on detected threats in Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
@@ -51,7 +51,7 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 When a threat is detected, a severity level is assigned to each alert that is generated. 
 
 - Microsoft Defender Antivirus assigns an alert severity based on the absolute severity of a detected threat (such as malware) and the potential risk to an individual device (if infected). 
-- Defender for Business assigns an alert severity based on the severity of the detected behavior, the actual risk to an device, and more importantly, the potential risk to your company. 
+- Defender for Business assigns an alert severity based on the severity of the detected behavior, the actual risk to a device, and more importantly, the potential risk to your company. 
 
 The following table lists a few examples of alerts and their severity levels:
 

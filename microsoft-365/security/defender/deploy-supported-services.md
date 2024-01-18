@@ -1,7 +1,7 @@
 ---
 title: Deploy services supported by Microsoft Defender XDR
 description: Learn about the Microsoft security services that can be integrated by Microsoft Defender XDR, their licensing requirements, and deployment procedures
-keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, MCAS, E5, A5, EMS
+keywords: deploy, licenses, supported services, provisioning, configuration Microsoft Defender XDR, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -28,7 +28,7 @@ ms.date: 02/16/2021
 
 # Deploy supported services
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -96,4 +96,4 @@ Once you've deployed the supported services, [turn on Microsoft Defender XDR](m3
 - [Microsoft Defender for Office 365 overview](../office-365-security/defender-for-office-365.md)
 - [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity overview](/azure-advanced-threat-protection/what-is-atp)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

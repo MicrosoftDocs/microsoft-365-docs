@@ -29,7 +29,7 @@ summary: |
   **Applies to**
   - [Exchange Online Protection](eop-about.md)
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-  - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+  - [Microsoft Defender XDR](../defender/microsoft-365-defender.md)
 
   This article provides frequently asked questions and answers about anti-spam protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 
@@ -46,11 +46,11 @@ sections:
           By default, what happens to a message that's detected as spam?
         answer: |
           - **Inbound messages:** Most spam is deleted via connection filtering at the edge of the service, which is based on the IP address of the source email server. Anti-spam policies (also known as spam filter policies or content filter policies) inspect and classify messages as bulk, spam, high confidence spam, phishing, or high confidence phishing.
-          
+
             Anti-spam policies are used in the Standard and Strict preset security policies. You can create custom anti-spam policies that apply to specific groups of users. There's also a default anti-spam policy that applies to all recipients who aren't specified in the Standard and Strict preset security policies or in custom policies.
-          
+
             By default, messages that are identified as spam are moved to the Junk Email folder by the Standard preset security policy, custom anti-spam policies (configurable), and the default anti-spam policy (configurable). In the Strict preset security policy, spam messages are quarantined.
-          
+
             For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md) and [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
             > [!IMPORTANT]
@@ -70,7 +70,7 @@ sections:
           Do I need to configure the service to provide anti-spam protection?
         answer: |
           No. The default anti-spam policy protects all current and future recipients in your Microsoft 365 organization after you sign up for the service and add your domain. The only exception is the previously described requirement for standalone EOP standalone customers in hybrid environments
-          
+
           As an admin, you can use the following methods to further refine anti-spam protection:
 
           - Add users to the Standard and Strict preset security policies.
@@ -98,7 +98,7 @@ sections:
         answer: |
           Yes, the service has a URL filter that checks for URLs within messages. If URLs associated with known spam or malicious content are detected, the message is marked as spam.
 
-          Customers with Microsoft 365 Defender for Office 365 licenses also get Safe Links protection. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
+          Customers with Microsoft Defender XDR for Office 365 licenses also get Safe Links protection. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
 
       - question: |
           How can Microsoft 365 customers send false positive (bad) and false negative (good) messages to Microsoft?
@@ -109,12 +109,12 @@ sections:
           Can I get spam reports?
         answer: |
           Yes. The following reports are available:
-          
+
           - [Spam detections report](reports-email-security.md#spam-detections-report)
           - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
           - [Submissions report (admins)](reports-email-security.md#submissions-report)
           - [User reported messages report](reports-email-security.md#user-reported-messages-report)
-          
+
       - question: |
           Someone sent me a message and I can't find it. I suspect that it may have been detected as spam. Is there a tool that I can use to find out?
         answer: |

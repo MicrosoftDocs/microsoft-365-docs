@@ -24,7 +24,7 @@ ms.date: 07/21/2023
 
 # Microsoft Defender Antivirus production ring deployment using Group Policy and Windows Server Update Services
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -58,7 +58,7 @@ This section provides information about setting up the production environment us
 :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Screenshot that shows an example ring deployment schedule for Group Policy with WSUS environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
 
 > [!NOTE]
-> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+> Security intelligence update (SIU) is equivalent to signature updates, which is the same as definition updates.
 
 1. On the left pane of **Server Manager**, select **Dashboard** > **Tools** > **Windows Server Update Services**.
 
@@ -167,7 +167,7 @@ If you encounter problems with your deployment, create or append your Microsoft 
 
      :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png" alt-text="Screenshot that shows a screen capture of the Group Policy Management console, initiating a forced update." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png"::: 
 
-1. After the issue is resolved, set the **Signature Update Fallback Order** back to the original setting. `InternalDefinitionUpdateServder|MicrosoftUpdateServer|MMPC|FileShare`.
+1. After the issue is resolved, set the **Signature Update Fallback Order** back to the original setting. `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC|FileShare`.
 
  See also:
 

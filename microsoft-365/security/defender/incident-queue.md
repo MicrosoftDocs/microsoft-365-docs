@@ -27,7 +27,7 @@ ms.date: 12/05/2023
 
 # Prioritize incidents in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -144,4 +144,4 @@ After you've determined which incident requires the highest priority, select it 
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

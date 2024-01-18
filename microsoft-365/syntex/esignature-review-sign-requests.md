@@ -1,5 +1,5 @@
 ---
-title: Review and sign a signature request using Microsoft Syntex eSignature
+title: Review and sign a signature request using Microsoft SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,12 +14,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to review and sign electronic signature requests using Microsoft Syntex eSignature. 
+description: Learn how to review and sign electronic signature requests using Microsoft SharePoint eSignature. 
 ---
 
-# Review and sign a signature request using Microsoft Syntex eSignature
+# Review and sign a signature request using Microsoft SharePoint eSignature
 
-When a signature request is created, an email notification is sent to the recipients. The notification contains details of the request, including all recipients who are required to sign, and any signing instructions. A recipient doesn't need to have a Syntex license or a Microsoft account to sign the request.
+When a signature request is created, an email notification is sent to the recipients. The notification contains details of the request, including all recipients who are required to sign, and any signing instructions. A recipient doesn't need to have a SharePoint license or a Microsoft account to sign the request.
 
 ## Access the document to be signed
 
@@ -119,7 +119,7 @@ Whether you're a requester or a recipient, you can select **View request** from 
 
 ## Monitor the status of a request
 
-When you create a signature request with Syntex eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning.
+When you create a signature request with SharePoint eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning.
 
 |Status  |Description  |
 |---------|---------|
@@ -130,28 +130,12 @@ When you create a signature request with Syntex eSignature, it goes through diff
 
 When the status of a request is **Completed**, **Canceled**, or **Declined**, the request can no longer be acted on by either the sender or the recipients. As an example, if a recipient declines a request, the sender would need to send a new request after the reason for declining has been addressed. The original declined request can't be edited.
 
-## Unable to sign a document as an external recipient
-When you receive a document for signing from someone outside of your organization, you might be able to access and read the document but the signing operation fails when you attempt to sign it. Other times, you might not be able to access and read the document. If you're experiencing any issues with signing a document sent from someone outside your organization, contact the sender who will be able to resolve the issue.
-
 ## Access the signed document
 
 All parties involved in the request receive an email notification saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View signed document** to access the signed document and the request history. Signers can continue to access and download the signed document from the email notification for 30 days after receiving the email. Additionally, request senders will be able to access the originating folder in which the signed document was saved directly from the email.  
 
 > [!NOTE]
 > When you open a PDF document on a SharePoint site, you won't see the details of the request if your default PDF viewer is set to Adobe. You'll need to set PDF viewer as your default viewer.
-
-### Unable to access the signed document
-
-Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permissions to write to the document and the originating folder because the final signed document is saved in this folder. If the sender loses access to this folder at any point before signing is complete, they might not be able to access the signed document permanently. In this scenario, the sender will be provided temporary access of 30 days to the signed document through the completion email. To access the folder and document, the sender should ensure that they have read permission to the originating folder or request access from the owner.
-
-Additionally, the eSignature service might not be able to save a copy of the signed document to the originating folder if the folder was accidentally deleted before the signature request was completed.
-
-To avoid potential issues, you should check the status and settings of the documents and folders before starting a signature request. Ensure that there are sufficient permissions and roles to access and share the documents with their intended recipients.
-
-- Data loss prevention (DLP) policies
-- Microsoft Entra ID collaboration settings
-- SharePoint sharing settings and policies
-- User permissions and document access
 
 ## Security of the signed document
 

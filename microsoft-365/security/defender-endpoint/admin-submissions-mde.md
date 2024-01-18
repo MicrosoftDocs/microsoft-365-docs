@@ -23,7 +23,7 @@ ms.custom: FPFN
 
 # Submit files in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to**
 
@@ -43,7 +43,7 @@ You need to assign permissions before you can perform the procedures in this art
  - Submit files / file hashes: _"Alerts investigation" or "Manage security settings in Security Center"_
  - View submissions: "_View Data - Security operations"_
                   
-**Microsoft 365 Defender** unified RBAC permissions:
+**Microsoft Defender XDR** unified RBAC permissions:
  - Submit files / file hashes: *"Alerts (Manage)" or "Core security settings (manage)"*
  - View submissions: _"Security data basics (read)"_
                         

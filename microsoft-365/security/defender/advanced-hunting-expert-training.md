@@ -1,7 +1,7 @@
 ---
 title: Get expert training on advanced hunting
 description: Free training and guidance from advanced hunting experts
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, language, training, scenarios, basic to advanced, videos, step-by-step
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, language, training, scenarios, basic to advanced, videos, step-by-step
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -25,7 +25,7 @@ ms.date: 02/16/2021
 
 # Get expert training on advanced hunting
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -40,7 +40,7 @@ Boost your knowledge of advanced hunting quickly with _Tracking the adversary_, 
 | Episode 3: Summarizing, pivoting, and visualizing data | Now that you've learned to filter, manipulate, and join data, it's time to summarize, quantify, pivot, and visualize. This episode discusses the `summarize` operator and various calculations, while introducing additional tables in the schema. You'll also learn to turn datasets into charts that can help you extract insight. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [Text file](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.txt) |
 | Episode 4: Let's hunt! Applying KQL to incident tracking | In this episode, you learn to track some attacker activity. We use our improved understanding of Kusto and advanced hunting to track an attack. Learn actual tricks used in the field, including the ABCs of cybersecurity and how to apply them to incident response. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Text file](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt)
 
-Get more expert training with *L33TSP3AK: Advanced hunting in Microsoft 365 Defender*, a webcast series for analysts looking to expand their technical knowledge and practical skills in conducting security investigations using advanced hunting in Microsoft Defender XDR.
+Get more expert training with *L33TSP3AK: Advanced hunting in Microsoft Defender XDR*, a webcast series for analysts looking to expand their technical knowledge and practical skills in conducting security investigations using advanced hunting in Microsoft Defender XDR.
 
 | Title | Description | Watch | Queries |
 |---|---|---|---|
@@ -102,4 +102,4 @@ CloudAppEvents
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

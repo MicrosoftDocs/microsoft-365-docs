@@ -23,7 +23,7 @@ ms.date: 04/08/2021
 
 # Manage updates for mobile devices and virtual machines (VMs)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

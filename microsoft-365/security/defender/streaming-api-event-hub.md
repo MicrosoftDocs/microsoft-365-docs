@@ -23,7 +23,7 @@ ms.date: 02/08/2023
 
 # Configure Microsoft Defender XDR to stream Advanced Hunting events to your Azure Event Hub
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -76,10 +76,10 @@ Prior to configuring Microsoft Defender XDR to stream data to Event Hubs, ensure
 {
    "records": [
                {
-                  "time": "<The time Microsoft 365 Defender received the event>"
+                  "time": "<The time Microsoft Defender XDR received the event>"
                   "tenantId": "<The Id of the tenant that the event belongs to>"
                   "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                  "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+                  "properties": { <Microsoft Defender XDR Advanced Hunting event as Json> }
                }
                ...
             ]
@@ -140,4 +140,4 @@ For more information, see [Log Analytics workspace data export in Azure Monitor]
 - [Stream Microsoft Defender XDR events to your Azure storage account](streaming-api-storage.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Troubleshoot connectivity issues - Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

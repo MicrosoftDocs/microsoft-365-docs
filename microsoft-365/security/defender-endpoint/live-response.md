@@ -23,7 +23,7 @@ ms.date: 05/02/2023
 
 # Investigate entities on devices using live response
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -56,7 +56,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   - **Windows 10 & 11**
     - [Version 1909](/windows/whats-new/whats-new-windows-10-version-1909) or later
     - [Version 1903](/windows/whats-new/whats-new-windows-10-version-1903) with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) with [with KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
@@ -101,7 +101,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md).
 
   > [!IMPORTANT]
-  > The option to upload a file to the library is only available to users with with "Manage Security Settings" permission.
+  > The option to upload a file to the library is only available to users with "Manage Security Settings" permission.
   > The button is greyed out for users with only delegated permissions.
 
   Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users permissions are controlled by RBAC custom role.
