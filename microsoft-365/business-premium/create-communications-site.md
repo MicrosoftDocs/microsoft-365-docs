@@ -2,8 +2,8 @@
 title: "Create a SharePoint communications site in Teams with Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
