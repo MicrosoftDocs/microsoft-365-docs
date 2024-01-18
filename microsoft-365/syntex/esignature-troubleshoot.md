@@ -42,7 +42,7 @@ SharePoint eSignature is an extension of SharePoint document storage and managem
 Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation will be unsuccessful. One common way to resolve this is to contact your IT admin who will be able to add the eSignature app to the list of approved apps via the  Microsoft Entra admin center.
 
 ## Unable to  find the request emails
-If you were sent an eSignature request and can not find it in your email inbox, you should check your spam or junk folder. It is also good practice to mark the sender as non-spam so that future emails from the same sender go directly into your inbox. 
+If you were sent an eSignature request and cannot find it in your email inbox, you should check your spam or junk folder. It is also good practice to mark the sender as non-spam so that future emails from the same sender go directly into your inbox. 
 
 ## Unable to sign a document as an external recipient
 
