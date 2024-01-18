@@ -358,7 +358,7 @@ To create block entries for *spoofed senders*, use any of the following methods:
 >
 > Email from these senders is marked as *phishing*. What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. For more information, see the **Phishing** detection action in [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 >
-> When you configure a block entry for a domain pair, the spoofed sender becomes a manual allow entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
+> When you configure a block entry for a domain pair, the spoofed sender becomes a manual block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
 >
 > Block entries for spoofed senders never expire.
 
