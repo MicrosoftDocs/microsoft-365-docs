@@ -80,7 +80,7 @@ sections:
         answer: |
           If you don't want to see certain tenants and their data in Lighthouse, you can inactivate those tenants. To inactivate a tenant, follow these steps:
           
-          1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants** to open the **Tenants** page.
+          1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants** to open the **Tenants** page.
           2. Find the tenant that you want to inactivate, select the three dots (more actions) next to the tenant name, and then select **Inactivate tenant**.
           3. In the confirmation dialog, select **Confirm** to inactivate the tenant.
               > [!NOTE]
@@ -171,7 +171,7 @@ sections:
             3. Select **Next** to review the detected configurations, and then proceed to confirm and deploy.
 
           - Enable deployment by assigning licenses for the required services to the applicable users.
-            1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Account management**, and then search for the unlicensed user.
+            1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management**, and then search for the unlicensed user.
             2. Select the appropriate user to open the user details pane, and then select **Licenses and apps**.
             3. Select the licenses that are required by the deployment task, and then select **Save changes**.
             4. Repeat these steps for each applicable user.
