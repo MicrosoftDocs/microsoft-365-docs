@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 01/08/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -14,12 +14,6 @@ ms.custom: AdminSurgePortfolio
 ms.collection: 
 - Tier3
 - scotvorg
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- GEA150
-ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: "Update your organization's contact information and choose the Microsoft 365 product-related communications you want to receive."
 ---
 

@@ -21,7 +21,7 @@ ms.subservice: onboard
 
 # Run a detection test on a newly onboarded Microsoft Defender for Endpoint device
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

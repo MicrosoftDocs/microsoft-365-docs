@@ -25,7 +25,7 @@ ms.date: 12/04/2023
 
 # Investigate incidents in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -88,7 +88,7 @@ From the graph, you can:
 
 - Hunt for entity information of a device, file, IP address, or URL.
 
-The *go hunt* option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you’re investigating. You can select any of the options to find relevant information about the entity:
+The *go hunt* option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you're investigating. You can select any of the options to find relevant information about the entity:
 
   - See all available queries – the option returns all available queries for the entity type you're investigating.
   - All Activity – the query returns all activities associated with an entity, providing you with a comprehensive view of the incident's context.
@@ -247,4 +247,4 @@ As needed:
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

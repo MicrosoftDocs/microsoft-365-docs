@@ -1,7 +1,7 @@
 ---
 title: DeviceTvmInfoGathering table in the advanced hunting schema
 description: Learn about the assessment events including the status of various configurations and attack surface area states of devices in the DeviceTvmInfoGathering table of the advanced hunting schema.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities, Microsoft Defender Vulnerability Management
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities, Microsoft Defender Vulnerability Management
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 06/22/2022
+ms.date: 12/29/2023
 ---
 
 # DeviceTvmInfoGathering
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -41,12 +41,12 @@ For information on other tables in the advanced hunting schema, see [the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Date and time when the event was recorded |
+| `Timestamp` | `datetime` | Date and time when the record was generated |
 | `LastSeenTime` | `datetime` | Date and time when the service last saw the device |
 | `DeviceId` | `string` | Unique identifier for the device in the service |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
 | `OSPlatform` | `string` | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
-| `AdditionalFields` | `string` | Additional information about the event  |
+| `AdditionalFields` | `dynamic` | Additional information about the entity or event |
 
 For example, to view devices affected by the [Log4Shell vulnerability](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) where the workaround mitigation hasn't been applied yet, or has been applied and is pending reboot, you can use the following query.
 
@@ -66,4 +66,4 @@ DeviceTvmInfoGathering
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Overview of Defender Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 - [Learn how to manage the Log4Shell vulnerability in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/tvm-manage-log4shell-guidance)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

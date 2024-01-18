@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender XDR
 description: Lists the new features and functionality in Microsoft Defender XDR
-keywords: what's new in Microsoft 365 Defender, ga, generally available, capabilities, available, new
+keywords: what's new in Microsoft Defender XDR, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -15,8 +15,8 @@ ms.date: 01/18/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - tier1
+- M365-security-compliance
+- tier1
 ms.topic: conceptual
 ---
 
@@ -41,18 +41,23 @@ You can also get product updates and important notifications through the [messag
 
 ## January 2024
 
-- Defender Experts for XDR now lets you receive managed response notifications and updates using Teams. You can also chat with Defender Experts about incidents in which we issued managed response.
+- Defender Experts for XDR now lets you receive managed response notifications and updates using Teams. You can also chat with Defender Experts regarding incidents where managed response is issued.
+- (GA) Microsoft Defender for Cloud alerts integration with Microsoft Defender XDR is now generally available. Learn more about the integration in [Microsoft Defender for Cloud in Microsoft Defender XDR](microsoft-365-security-center-defender-cloud.md).
+- **Activity log** is now available within an incident page. Use the activity log to view all audits and comments, and add comments to the log of an incident. For details, see [Activity log](manage-incidents.md#activity-log). 
+- (Preview) **[Query history](advanced-hunting-query-history.md) in advanced hunting** is now available. You can now rerun or refine queries you have run recently. Up to 30 queries in the past 28 days can be loaded in the query history pane.
+- (Preview) Additional features you can use to **[drill down](/advanced-hunting-query-results#drill-down-from-query-results)** further from your query results in advanced hunting are now available.
 
 ## December 2023
 
+- **Microsoft Defender XDR Unified role-based access control (RBAC)** is now generally available. Unified (RBAC) allows administrators to manage user permissions across different security solutions from a single, centralized location. This offering is also available to GCC Moderate customers. To learn more, see [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md).
 - Microsoft Defender Experts for XDR now lets you [exclude devices and users](get-started-xdr.md#exclude-all-high-value-devices-or-users-automatically) from remediation actions taken by our experts and instead get remediation guidance for those entities.
-- The Microsoft Defender XDR portal's incident queue has updated filters, search, and added a new function where you can create your own filter sets. For details, see [Available filters](incident-queue.md#available-filters).
+- The Microsoft Defender portal's incident queue has updated filters, search, and added a new function where you can create your own filter sets. For details, see [Available filters](incident-queue.md#available-filters).
 - You can now assign incidents to a user group or another user. For details, see [Assign an incident](manage-incidents.md#assign-an-incident).
 
 ## November 2023
 
 - Microsoft Defender Experts for Hunting now lets you generate sample Defender Experts Notifications so you can start experiencing the service without having to wait for an actual critical activity to happen in your environment. [Learn more](onboarding-defender-experts-for-hunting.md#generate-sample-defender-experts-notifications)
-- (Preview) Microsoft Defender for Cloud alerts are now integrated in Microsoft Defender XDR. Defender for Cloud alerts are automatically correlated to incidents and alerts in the Microsoft Defender XDR portal and cloud resource assets can be viewed in the incidents and alerts queues. Learn more about the [Defender for Cloud integration](microsoft-365-security-center-defender-cloud.md) in Microsoft Defender XDR.
+- (Preview) Microsoft Defender for Cloud alerts are now integrated in Microsoft Defender XDR. Defender for Cloud alerts are automatically correlated to incidents and alerts in the Microsoft Defender portal and cloud resource assets can be viewed in the incidents and alerts queues. Learn more about the [Defender for Cloud integration](microsoft-365-security-center-defender-cloud.md) in Microsoft Defender XDR.
 - (Preview) Microsoft Defender XDR now has built in [deception technology](deception-overview.md) to protect your environment from high-impact attacks that use human-operated lateral movement. Learn more about the deception feature and how to [configure the deception feature](configure-deception.md).
 - Microsoft Defender Experts for XDR now lets you perform your own [readiness assessment](get-started-xdr.md#prepare-your-environment-for-the-defender-experts-service) when preparing the environment for the Defender Experts for XDR service.
 
@@ -243,5 +248,5 @@ The security operations team can view all actions pending approval, and the stip
 
   Find information about events in various cloud apps and services covered by Microsoft Defender for Cloud Apps. This table also includes information previously available in the `AppFileEvents` table.
 
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

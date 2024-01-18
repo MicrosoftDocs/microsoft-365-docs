@@ -27,7 +27,7 @@ ms.date: 07/15/2021
 
 # Step 6. Identify SOC maintenance tasks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -50,4 +50,4 @@ Integrate these tasks into your current SOC processes.
 ## Next steps
 
 You should review the guides referred to in this content and in the [Microsoft Defender XDR library](/microsoft-365/security/defender) to determine how your own implementation of Microsoft Defender XDR should be structured and integrated.
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -1,7 +1,7 @@
 ---
 title: Use guided responses with Security Copilot in Microsoft Defender XDR
 description: Use guided responses with Security Copilot in Microsoft Defender XDR to respond to incidents.
-keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident response playbooks, remediate incident, remediation actions, incident solution, resolve incidents
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident response playbooks, remediate incident, remediation actions, incident solution, resolve incidents
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +25,7 @@ ms.date: 10/10/2023
 
 # Use guided responses with Microsoft Security Copilot in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -90,4 +90,4 @@ Each response card has an option for providing feedback. [Follow these steps to 
 - [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
 - [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

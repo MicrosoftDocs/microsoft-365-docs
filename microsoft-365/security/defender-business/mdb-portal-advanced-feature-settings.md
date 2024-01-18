@@ -2,8 +2,8 @@
 title: Review and edit settings in Microsoft Defender for Business
 description: View and edit settings for the Microsoft Defender portal and advanced features in Defender for Business
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
@@ -63,8 +63,8 @@ The following table describes settings you can view and  edit in Defender for Bu
 | Category | Setting | Description |
 |:---|:---|:---|
 | **Security center** | **Time zone** | Select the time zone to use for the dates and times displayed in incidents, detected threats, and automated investigation and remediation. You can either use UTC or your local time zone (*recommended*).  |
-| **Microsoft 365 Defender** | **Account** | View details such where your data is stored, your tenant ID, and your organization (org) ID. |
-| **Microsoft 365 Defender**  | **Preview features**  | Turn on preview features to try upcoming features and new capabilities. You can be among the first to preview new features and provide feedback. |
+| **Microsoft Defender XDR** | **Account** | View details such where your data is stored, your tenant ID, and your organization (org) ID. |
+| **Microsoft Defender XDR**  | **Preview features**  | Turn on preview features to try upcoming features and new capabilities. You can be among the first to preview new features and provide feedback. |
 | **Endpoints**  | **Email notifications** | Set up or edit your email notification rules. When vulnerabilities are detected or an alert is created, the recipients specified in your email notification rules will receive an email. [Learn more about email notifications](mdb-email-notifications.md). |
 | **Endpoints**   | **Device management** > **Onboarding** | Onboard devices to Defender for Business by using a downloadable script. To learn more, see [Onboard devices to Defender for Business](mdb-onboard-devices.md).   |  
 | **Endpoints**  |  **Device management** > **Offboarding** | Offboard (remove) devices from Defender for Business. When you offboard a device, it no longer sends data to Defender for Business, but data received prior to offboarding is retained. To learn more, see [Offboarding a device](mdb-offboard-devices.md).  |
@@ -75,7 +75,7 @@ The following table describes settings you can view and  edit in Defender for Bu
 
 1. Go to the Microsoft Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), and sign in.
 
-2. Select **Settings**, and then select a category (such as **Security center**, **Microsoft 365 Defender**, or **Endpoints**).
+2. Select **Settings**, and then select a category (such as **Security center**, **Microsoft Defender XDR**, or **Endpoints**).
 
 3. In the list of settings, select an item to view or edit.
 

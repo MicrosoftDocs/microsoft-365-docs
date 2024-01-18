@@ -27,7 +27,7 @@ ms.date: 02/16/2021
 
 # Understand the analyst report in threat analytics in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -108,4 +108,4 @@ Advanced hunting queries in the analyst reports have been vetted by Microsoft an
 - [Threat analytics overview](threat-analytics.md)
 - [Proactively find threats with advanced hunting](advanced-hunting-overview.md)
 - [Custom detection rules](custom-detection-rules.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

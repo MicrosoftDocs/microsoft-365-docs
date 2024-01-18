@@ -24,7 +24,7 @@ ms.date: 05/02/2022
 
 # List configurations in active baseline profiles
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

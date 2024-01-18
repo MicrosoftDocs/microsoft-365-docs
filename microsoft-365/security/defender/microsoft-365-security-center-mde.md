@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint in Microsoft Defender XDR
 description: Learn about changes from the Microsoft Defender Security Center to Microsoft Defender XDR
-keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, security portal, defender security portal
+keywords: Getting started with Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, security portal, defender security portal
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -24,7 +24,7 @@ ms.custom: admindeeplinkDEFENDER
 
 # Microsoft Defender for Endpoint in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -182,4 +182,4 @@ Logging in to multiple tenants simultaneously in the same browsing session is cu
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft Defender XDR](microsoft-365-security-center-mde.md)
 - [Redirecting accounts from Microsoft Defender for Endpoint to Microsoft Defender XDR](microsoft-365-security-mde-redirection.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

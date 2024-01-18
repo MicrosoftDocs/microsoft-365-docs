@@ -21,7 +21,7 @@ ms.date: 10/25/2023
 
 # Configure Conditional Access in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -48,7 +48,7 @@ There are steps you'll need to take in Microsoft Defender XDR, the Intune portal
 
 It's important to note the required roles to access these portals and implement Conditional access:
 
-- **Microsoft 365 Defender** - You'll need to sign into the portal with a global administrator role to turn on the integration.
+- **Microsoft Defender XDR** - You'll need to sign into the portal with a global administrator role to turn on the integration.
 - **Intune** - You'll need to sign in to the portal with security administrator rights with management permissions.
 - **Microsoft Entra admin center** - You'll need to sign in as a global administrator, security administrator, or Conditional Access administrator.
 

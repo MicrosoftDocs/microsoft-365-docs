@@ -59,7 +59,7 @@ The following are the hardware requirements for Microsoft Defender Offline Scan 
 >
 > - ARM Windows 11 
 > - ARM Windows 10 
-> - Windows Server Stock Keeping Units (SKU’s)
+> - Windows Server Stock Keeping Units (SKU's)
 
 For more information about Windows 10 and Windows 11 requirements, see the following topics: 
 
@@ -75,8 +75,8 @@ To receive Microsoft Defender Offline Scan updates:
   - [Platform Update](https://www.microsoft.com/security/portal/definitions/adl.aspx)
   - [Engine Update](microsoft-defender-antivirus-updates.md)
   - Security Intelligence Update
-    - You can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx) 
-    - See the [Manage Microsoft Defender Antivirus Security intelligence updates](manage-protection-updates-microsoft-defender-antivirus.md) topic for more information.
+    - You can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx) 
+    - See the [Manage Microsoft Defender Antivirus Security intelligence updates](manage-protection-updates-microsoft-defender-antivirus.md) topic for more information.
 - User must be logged in with local administrator privileges.
 - Windows Recovery Environment (WinRE) needs to be enabled. 
 
@@ -100,7 +100,7 @@ If Microsoft Defender Antivirus determines that need to run:
 
      The user will also be notified within the Microsoft Defender Antivirus client or it can be revealed in Microsoft Intune, if you're using it to manage your Windows endpoints.
 
-- You can manually force an offline scan which is built-in Windows 10, version 1607 or newer, and Windows 11. Or, you can scan through a bootable media for the older Windows OS’es as described [here](#use-the-windows-defender-security-app-to-run-an-offline-scan).
+- You can manually force an offline scan which is built-in Windows 10, version 1607 or newer, and Windows 11. Or, you can scan through a bootable media for the older Windows OS'es as described [here](#use-the-windows-defender-security-app-to-run-an-offline-scan).
 
 In Configuration Manager, you can identify the status of endpoints by navigating to **Monitoring > Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**.
 

@@ -25,7 +25,7 @@ search.appverid: met150
 
 # Create an app to access Microsoft Defender for Endpoint without a user
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 
 **Applies to:** 

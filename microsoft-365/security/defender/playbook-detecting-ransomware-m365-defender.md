@@ -20,7 +20,7 @@ f1.keywords:               NOCSH
 
 # Detecting human-operated ransomware attacks with Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender-for-office.md)]
 
 Ransomware is a type of extortion attack that destroys or encrypts files and folders, preventing access to critical data or disrupting critical business systems. There are two types of ransomware:
 
@@ -324,4 +324,4 @@ As part of your SecOps team's ongoing tool and process best practices and securi
 - Update the set of operational tasks for ransomware detection.
 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

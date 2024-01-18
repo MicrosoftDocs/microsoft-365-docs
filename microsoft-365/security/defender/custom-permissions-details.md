@@ -21,7 +21,7 @@ search.appverid: met150
 
 In Microsoft Defender XDR Unified role-based access control (RBAC) you can select permissions from each permission group to customize a role.
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -31,9 +31,6 @@ In Microsoft Defender XDR Unified role-based access control (RBAC) you can selec
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
-
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 <a name='microsoft-365-defender-unified-rbac-permission-details'></a>
 
@@ -52,7 +49,7 @@ Permissions for managing day-to-day operations and responding to incidents and a
 |---|---|---|
 |Security data basic|Read|View info about incidents, alerts, investigations, advanced hunting, devices, submissions, evaluation lab, and reports.|
 |Alerts|Manage|Manage alerts, start automated investigations, run scans, collect investigation packages, and manage device tags.|
-|Response|Manage|Take response actions on a device, approve or dismiss pending remediation actions, and manage blocked and allowed lists for automation.|
+|Response|Manage|Take response actions, approve or dismiss pending remediation actions, and manage blocked and allowed lists for automation.|
 |Basic live response|Manage|Initiate a live response session, download files, and perform read-only actions on devices remotely.|
 |Advanced live response|Manage|Create live response sessions and perform advanced actions, including uploading files and running scripts on devices remotely.|
 |File collection|Manage|Collect or download relevant files for analysis, including executable files.|
@@ -94,4 +91,4 @@ Permissions to manages the security and system settings and to create and assign
 
 - [Create custom roles](create-custom-rbac-roles.md)
 - [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -1,7 +1,7 @@
 ---
 title: Frequently asked questions when turning on Microsoft Defender XDR
 description: Get answers to the most commonly asked questions about licensing, permissions, initial settings, and other products and services related to enabling Microsoft Defender XDR
-keywords: frequently asked questions, FAQ, GCC, get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
+keywords: frequently asked questions, FAQ, GCC, get started, enable Microsoft Defender XDR, Microsoft Defender XDR, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ ms.date: 02/17/2021
 
 # Frequently asked questions when turning on Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -122,4 +122,4 @@ Get the latest publicly available experiences by turning on [preview features](p
 - [Deploy supported services](deploy-supported-services.md)
 - [Setup guides for Microsoft Defender XDR](deploy-configure-m365-defender.md)
 - [Turn on preview features](preview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

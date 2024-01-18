@@ -23,9 +23,9 @@ metadata:
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  Last updated November 17, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
+  Last updated January 17, 2024. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
-  If you can't find an answer to your question, let us know by leaving a comment and we'll add it to this article.
+  If you can't find an answer to your question, let us know by providing feedback and we'll add it to this article.
   
 
 sections:
@@ -33,7 +33,7 @@ sections:
     questions:
       - question: What is Microsoft 365 Lighthouse?
         answer: |
-          Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale from a single portal. With Lighthouse, you can standardize configurations, manage risk, identify artificial intelligence (AI)-driven sales opportunities, and engage with customers in an unprecedented manner, allowing you to anticipate customers needs and maximize their investment in Microsoft 365.  
+          Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale through proactive account management, simplified onboarding, efficient tenant configuration, device protection, and alerts. Lighthouse provides insights into customer acquisition, retention, and growth opportunities, as well as multi-tenant views across customer devices, data, and users to help you anticipate customer needs and maximize their investment in Microsoft 365.  
           
           For MSP service technicians with delegated access, Lighthouse helps you secure and manage devices, data, and users at scale for small and medium business (SMB) customers. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments.
           
@@ -72,7 +72,7 @@ sections:
           
       - question: Why do I see data for some customer tenants but not others?
         answer: |
-          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
+          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Enterprise, Business, Frontline, or Education subscription of Microsoft 365, Office 365, Exchange Online, Windows 365 Business, or Microsoft Defender for Business and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
 
           If GDAP is established with the customer, an MSP technician must be in a GDAP-enabled security group that is assigned the appropriate roles to be able to manage that customer's data in Lighthouse. GDAP roles assigned to that security group impact which customer data can be managed within Lighthouse. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for details on which delegated and partner tenant roles are recommended to use Lighthouse. For instructions on how to view which GDAP roles have been assigned to you for different customer tenants in Lighthouse, see [View your Microsoft Entra roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   
          
@@ -80,7 +80,7 @@ sections:
         answer: |
           If you don't want to see certain tenants and their data in Lighthouse, you can inactivate those tenants. To inactivate a tenant, follow these steps:
           
-          1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants** to open the **Tenants** page.
+          1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants** to open the **Tenants** page.
           2. Find the tenant that you want to inactivate, select the three dots (more actions) next to the tenant name, and then select **Inactivate tenant**.
           3. In the confirmation dialog, select **Confirm** to inactivate the tenant.
               > [!NOTE]
@@ -171,7 +171,7 @@ sections:
             3. Select **Next** to review the detected configurations, and then proceed to confirm and deploy.
 
           - Enable deployment by assigning licenses for the required services to the applicable users.
-            1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Account management**, and then search for the unlicensed user.
+            1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management**, and then search for the unlicensed user.
             2. Select the appropriate user to open the user details pane, and then select **Licenses and apps**.
             3. Select the licenses that are required by the deployment task, and then select **Save changes**.
             4. Repeat these steps for each applicable user.
@@ -297,7 +297,7 @@ sections:
           |**Eligibility**|MSPs must be enrolled in the CSP program<br><br>Requires a delegated access relationship with the customer<br><br>[See full list of requirements](m365-lighthouse-requirements.md)  |Requires a [GDAP relationship](/partner-center/gdap-introduction) with the customer<br><br>Customers who use [Microsoft Entra B2B collaboration](/azure/active-directory/external-identities/what-is-b2b) |
           |**Seat cap**|Up to 2500 seats per managed tenant  |Unlimited |
           |**Tenant cap**|Unlimited  |Up to 50 tenants per customer or partner |
-          |**Tenant provisioning to Defender for Business or Defender for Endpoint**|Initiated via one-click provisioning in the default baseline in Lighthouse  |Initiated by selecting **Assets** > **Devices** in the customer's Microsoft Defender XDR portal |
+          |**Tenant provisioning to Defender for Business or Defender for Endpoint**|Initiated via one-click provisioning in the default baseline in Lighthouse  |Initiated by selecting **Assets** > **Devices** in the customer's Microsoft Defender portal |
           |**Onboarding to Defender for Business or Defender for Endpoint**|Done via the default baseline in Lighthouse for devices enrolled in Intune  |Devices can be onboarded in each customer's Microsoft  Defender portal or by using Intune |
           |**Ability to view the licensing state**|Visible through the default baseline in Lighthouse  |Visible in each customer's Microsoft Defender portal |
           |**Device inventory**|View all devices (all platforms) enrolled in Intune, or Windows devices onboarded to Defender for Business or Defender for Endpoint  |View a list of tenants and information about devices (Windows, iOS, Android, Mac, Linux) onboarded to Defender for Business or Defender for Endpoint |
@@ -316,13 +316,13 @@ sections:
     questions:          
       - question: How do I get help and support?
         answer: |
-          In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane. From here, select **Help + support** to access self-help articles or contact support. For more information about help and support options, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+          In Lighthouse, select the **?** icon at the top of the portal or the **Help & support** widget in the lower-right corner of the portal to open the **Help** pane. From here, select **Help + support** to access self-help articles or contact support. For more information about help and support options, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
       - question: Where can I submit feedback and ideas?
         answer: |
           Your feedback matters and is important to us! There are a few different ways for you to submit feedback:
 
+          - In Lighthouse, select the **Give feedback** widget in the lower-right corner of the portal.
           - Go to the [Microsoft 365 Lighthouse Feedback page](https://aka.ms/m365lighthouseuservoice). You can start conversations about Lighthouse and Windows 365 features, post questions for other MSPs or Microsoft employees, provide feedback and feature ideas, and more.
-          - Select the Feedback icon in the upper-right corner of Lighthouse.
           - Respond to the occasional (not more than once a month) pop-up window in Lighthouse that asks you to provide feedback.
           

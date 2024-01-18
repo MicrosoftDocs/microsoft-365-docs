@@ -334,4 +334,4 @@ Step 2 of 2: [Try Microsoft Defender XDR incident response capabilities](eval-de
 ### Navigation you may need
 
 [Create the Microsoft Defender XDR Evaluation Environment](eval-create-eval-environment.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

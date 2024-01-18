@@ -197,7 +197,7 @@ For this scenario, you need to create two groups: one removable storage group fo
        Combine these two groups into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Block%20Read%20and%20Write%20access%20to%20specific%20file%20_Groups.xml). See step 3 from the [Deploy using group policy](deploy-manage-removable-storage-group-policy.md#deploy-using-group-policy) section to deploy this configuration.
 
        > [!TIP]
-       > Explicily mark the Type attribute on the group as **File**
+       > Explicitly mark the Type attribute on the group as **File**
 
     2. Policy 2: Deny read and execute access to any file under the allowed file extension group for defined removable storage group.
 

@@ -21,7 +21,7 @@ ms.date: 11/17/2022
 
 # Microsoft Secure Score data storage and privacy
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 This section covers frequently asked questions regarding privacy and data handling for Secure Score.
 
@@ -42,4 +42,4 @@ By default, data is retained for 90 days based on your active licenses.
 ### At contract termination or expiration
 
 Your data is kept and is available to you while the license is under grace period or suspended mode. At the end of this period, data that is associated to expired or terminated license is erased from Microsoft's systems to make it unrecoverable, no later than 90 days from the associated contract termination or expiration.
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
