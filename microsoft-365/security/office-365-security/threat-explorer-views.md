@@ -51,16 +51,16 @@ Select the **View** menu using the navigation bar. Once you have selected a view
 
 ## All email
 
-To view this report, in Explorer, select **All email** in the top navigation pane. This view shows emails identified as malicious due to phishing or malware, as well all other non-malicious emails like regular email, spam, and bulk mail. 
+To view this report, in Explorer, select **All email** in the top navigation pane. This view shows emails identified as malicious due to phishing or malware, as well all other non-malicious emails like regular email, spam, and bulk mail.
 
 :::image type="content" source="../../media/all-email-new.png" alt-text="Screenshot of the Threat Explorer View menu." lightbox="../../media/all-email-new.png":::
 
-> [!NOTE] 
-> If you get a **Too much data to display** error, add a filter and, if necessary, narrow the date range you're viewing. 
+> [!NOTE]
+> If you get a **Too much data to display** error, add a filter and, if necessary, narrow the date range you're viewing.
 
-To apply a filter, select the filter dropdown, select an item in the list, and then select **Refresh**. You can view information by sender, sender's domain, recipients, subject, attachment filename, malware family, detection technology (how the malware was detected), and more. 
+To apply a filter, select the filter dropdown, select an item in the list, and then select **Refresh**. You can view information by sender, sender's domain, recipients, subject, attachment filename, malware family, detection technology (how the malware was detected), and more.
 
-You can view more details about specific email messages, such as subject line, recipient, sender, status, and so on below the chart. 
+You can view more details about specific email messages, such as subject line, recipient, sender, status, and so on below the chart.
 
 ## Malware
 
@@ -68,9 +68,9 @@ To view this report, in Explorer, select **Malware** in the top navigation pane.
 
 :::image type="content" source="../../media/threat-explorer-malware-new.png" alt-text="Screenshot of the View data about email identified as malware." lightbox="../../media/threat-explorer-malware-new.png":::
 
-Use this list to view data by sender, recipients, sender domain, subject, detection technology, and more. 
+Use this list to view data by sender, recipients, sender domain, subject, detection technology, and more.
 
-You can also use the **Top malware families** section to identify the malware families used most frequently to attack the users and the number of times it is used in last 30 days. 
+You can also use the **Top malware families** section to identify the malware families used most frequently to attack the users and the number of times it is used in last 30 days.
 
 Below the chart, view more details about specific messages. When you select an item in the list, a fly-out pane opens, where you can learn more about the item you selected.
 
@@ -82,13 +82,13 @@ To view this report, in Explorer (or real-time detections), select **Phish** in 
 
 :::image type="content" source="../../media/phish-new.png" alt-text="Screenshot of the View data about email identified as phishing attempts." lightbox="../../media/phish-new.png":::
 
-Your list of viewing options include data by sender, recipients, sender domain, sender IP, URL domain, click verdict, and more. 
+Your list of viewing options include data by sender, recipients, sender domain, sender IP, URL domain, click verdict, and more.
 
 For example, to see what actions were taken when people clicked on URLs that were identified as phishing attempts, select **Click verdict**, select one or more options, and then select **Refresh**.
 
-Below the chart, view more details about specific emails, **URL clicks**, **Top URLs**, **Top clicks**, and more. 
+Below the chart, view more details about specific emails, **URL clicks**, **Top URLs**, **Top clicks**, and more.
 
-When you select an item in the list, such as a URL that was detected, a fly-out pane opens, where you can learn more about the item you selected. 
+When you select an item in the list, such as a URL that was detected, a fly-out pane opens, where you can learn more about the item you selected.
 
 :::image type="content" source="../../media/threat-explorer-email-phish-details-new.png" alt-text="Screenshot of the Details about a detected URL." lightbox="../../media/threat-explorer-email-phish-details-new.png":::
 
@@ -116,11 +116,11 @@ To view this report, in Explorer, select **URL clicks** in the top navigation pa
 
 :::image type="content" source="../../media/threat-explorer-url-clicks-new.png" alt-text="Screenshot of the view data about url clicks." lightbox="../../media/threat-explorer-url-clicks-new.png":::
 
-You can view information by recipient, detection technology (how the malware was detected), and workload (Email, Office, Teams). 
+You can view information by recipient, detection technology (how the malware was detected), and workload (Email, Office, Teams).
 
 You can also use the **Top clicks** and **Top targeted users** options to get more information on user click patterns and know which users are more vulnerable to external attacks.
 
-:::image type="content" source="../../media/threat-explorer-top-clicks.png" alt-text="Screenshot of view data filtered by top clicks." lightbox="../../media/threat-explorer-top-clicks.png"::: 
+:::image type="content" source="../../media/threat-explorer-top-clicks.png" alt-text="Screenshot of view data filtered by top clicks." lightbox="../../media/threat-explorer-top-clicks.png":::
 
 ## Queries and filters
 
