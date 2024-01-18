@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 01/16/2024
+ms.date: 01/19/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -41,7 +41,7 @@ To create a translated version of a document, follow these steps:
 
    ![Screenshot showing the Translate documents screen with language options.](../media/content-understanding/translation-translate-documents.png)
 
-3. You'll receive a confirmation message saying that the request to translate the file has been submitted.
+3. You receive a confirmation message saying that the request to translate the file has been submitted.
 
    ![Screenshot showing the translation confirmation screen.](../media/content-understanding/translation-confirmation.png)
 
