@@ -395,7 +395,7 @@ If your organization has Defender for Office 365, you enable or disable the rule
 
 - **Organizations with Defender for Office 365**:
 
-  - Run the following command to determine whether the rules for the Standard and Strict preset security policies are currently enabled or disabled:    
+  - Run the following command to determine whether the rules for the Standard and Strict preset security policies are currently enabled or disabled:
 
     ```powershell
     Write-Output -InputObject ("`r`n"*3),"EOP protection rule",("-"*50);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 protection rule",("-"*50);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject ("`r`n"*3),"EOP protection rule",("-"*50);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 protection rule",("-"*50);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State
