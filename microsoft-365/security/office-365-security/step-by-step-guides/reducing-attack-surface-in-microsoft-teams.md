@@ -112,7 +112,7 @@ You can reduce the risk of unwanted or inappropriate content being shared during
 1. **Login** to the Teams admin center at: <https://admin.teams.microsoft.com/>.
 2. On the left-hand navigation, expand **Meetings** and then choose **Meeting Policies**.
 3. If you've assigned any custom or built-in policies to users, you'll need to do these steps for each of them if appropriate, otherwise select **Global (Org-wide default)**.
-4. Under the **Content sharing** heading, set **Who can present** to **Only organizers and co-organizers**. 
+4. Under the **Content sharing** heading, set **Who can present** to **Only organizers and co-organizers**.
 5. Select **Save**.
 6. You need to change this setting for each policy.
 

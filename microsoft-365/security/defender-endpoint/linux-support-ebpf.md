@@ -77,7 +77,6 @@ In case you want to manually disable eBPF then you can run the following command
 ```bash
 sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 ```
-
 You can also update the mdatp_managed.json file:
 
 ```JSON
@@ -87,9 +86,7 @@ You can also update the mdatp_managed.json file:
     }
 }
 ```
-
-Refer to [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md) for detailed sample json file.
-
+Refer to the link for detailed sample json file - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
 > [!IMPORTANT]
 > If you disable eBPF, the supplementary event provider switches back to auditd.
 > In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. 
@@ -116,12 +113,12 @@ You can check the agent health status by running the **mdatp** health command. M
 ```bash
 uname -a
 ```
+Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result into kernel hang issues. 
 
-Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result into kernel hang issues.
+Following steps can be taken to mitigate this issue:     
 
-The following steps can be taken to mitigate this issue:
+1. Use a kernal version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Please note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
 
-1. Use a kernal version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Note the min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4.
 2. Switch to auditd mode if customer needs to use the same kernel version
 
 ```bash
@@ -136,12 +133,11 @@ The following two sets of data help analyze potential issues and determine the m
 
 #### Troubleshooting performance issues
 
-If you see a hike in resource consumption by Microsoft Defender on your endpoints, it's important to identify the process/mount-point/files that is consuming most CPU/Memory utilization and then apply necessary exclusions. After applying possible AV exclusions, if wdavdaemon (parent process) is still consuming the resources, then use the ebpf-statistics command to obtain the top system call count:
+If you see a hike in resource consumption by Microsoft Defender on your endpoints, it is important to identify the process/mount-point/files that is consuming most CPU/Memory utilization and then apply necessary exclusions. After applying possible AV exclusions, if wdavdaemon (parent process) is still consuming the resources, then use the ebpf-statistics command to obtain the top system call count:
 
 ```Bash
 sudo mdatp diagnostic  ebpf-statistics
 ```
-
 ```Output
 Output
 Monitor 20 seconds
@@ -156,18 +152,19 @@ Top file paths:
 /home/gargank/tmp-stress-ng-rename-13550-31/stress-ng-rename-13550-31-374985 : 1
 /home/gargank/tmp-stress-ng-rename-13550-31/stress-ng-rename-13550-31-374983 : 1
 /home/gargank/tmp-stress-ng-rename-13550-31/stress-ng-rename-13550-31-374981 : 1
+
 Top initiator paths:
 /usr/bin/stress-ng : 50000
 /opt/microsoft/mdatp/sbin/wdavdaemon : 13
+
 Top syscall ids:
 82 : 1699333
 90 : 10
 87 : 3
-```
+``` 
+In the above output, it can be seen that stress-ng is the top process generating large number of events and might result into performance issues. Most likely stress-ng is generating the system call with ID 82. You can create a ticket with Microsoft to get this process excluded. In future as part of upcoming enhancements, you will have more control to apply such exclusions at your end.
 
-In the above output, it can be seen that stress-ng is the top process, generating large number of events, and might result in performance issues. Most likely stress-ng is generating the system call with ID 82. You can create a ticket with Microsoft to get this process excluded. In future, as part of upcoming enhancements, you will have more control to apply such exclusions yourself.
-
-Exclusions applied to auditd can not be migrated or copied to eBPF. Common concerns such as noisy logs, kernel panic, and noisy syscalls are already taken care of by eBPF internally. In case you want to add any further exclusions, then reach out to Microsoft to get the necessary exclusions applied.
+Exclusions applied to auditd cannot be migrated or copied to eBPF. Common concerns such as noisy logs, kernel panic, noisy syscalls are already taken care of by eBPF internally. In case you want to add any further exclusions, then reach out to Microsoft to get the necessary exclusions applied. 
 
 ## See also
 

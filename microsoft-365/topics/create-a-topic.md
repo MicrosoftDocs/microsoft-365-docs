@@ -1,10 +1,10 @@
 ---
 ms.date: 09/27/2023
 title: Create a new topic in Topics
-ms.author: daisyfeller
+ms.author: ergradel
 author: daisyfell
-manager: pamgreen
-ms.reviewer: cjtan
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:
