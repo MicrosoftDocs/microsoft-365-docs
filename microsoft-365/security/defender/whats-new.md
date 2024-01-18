@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 12/06/2023
+ms.date: 01/18/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -38,6 +38,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
+
+## January 2024
+
+- Defender Experts for XDR now lets you receive managed response notifications and updates using Teams. You can also chat with Defender Experts about incidents in which we issued managed response.
 
 ## December 2023
 
