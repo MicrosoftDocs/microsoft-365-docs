@@ -41,7 +41,7 @@ You can also get product updates and important notifications through the [messag
 
 ## January 2024
 
-- Defender Experts for XDR now lets you receive managed response notifications and updates using Teams. You can also chat with Defender Experts regarding incidents where managed response is issued.
+- Defender Experts for XDR now lets you [receive managed response notifications and updates using Teams](get-started-xdr.md#receive-managed-response-notifications-and-updates-in-microsoft-teams). You can also chat with Defender Experts regarding incidents where managed response is issued.
 - (GA) Microsoft Defender for Cloud alerts integration with Microsoft Defender XDR is now generally available. Learn more about the integration in [Microsoft Defender for Cloud in Microsoft Defender XDR](microsoft-365-security-center-defender-cloud.md).
 - **Activity log** is now available within an incident page. Use the activity log to view all audits and comments, and add comments to the log of an incident. For details, see [Activity log](manage-incidents.md#activity-log). 
 - (Preview) **[Query history](advanced-hunting-query-history.md) in advanced hunting** is now available. You can now rerun or refine queries you have run recently. Up to 30 queries in the past 28 days can be loaded in the query history pane.
