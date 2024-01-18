@@ -41,7 +41,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## Deploy a task manually
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 
@@ -59,7 +59,7 @@ The task status will be updated to **Compliant**, and the Task Details pane will
 
 If the task status changes and is no longer compliant, you can reset the status to **Not compliant**. To do this:
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 

@@ -441,7 +441,6 @@
              href: air-about.md
            - name: How automated investigation and response works
              href: air-about-office.md
-           - name: How to automatically response to end user submissions of phish
          - name: Review and approve (or reject) pending actions
            href: air-review-approve-pending-completed-actions.md
          - name: Manage false positives and false negatives in AIR
