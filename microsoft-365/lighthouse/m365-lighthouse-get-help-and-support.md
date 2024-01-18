@@ -28,7 +28,7 @@ Several options are available if you need help. First, check to see if there are
 
 - Review the current health of customer tenant services:
 
-    1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Service health**. 
+    1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Service health**. 
     2. View detailed information about current and past issues.
 
 - Review the current health of the Lighthouse tenant services:
