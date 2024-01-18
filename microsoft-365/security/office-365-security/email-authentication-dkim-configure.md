@@ -135,47 +135,6 @@ You need to create two CNAME records in each custom domain, for a total of four 
   **Hostname**: `selector2._domainkey`<br>
   **Points to address or value**: `selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com`
 
-## Enable DKIM signing of outbound messages using a custom domain
-
-
-
-
-
-How you configure DKIM signing using the custom or subdomain domain depends on what you see in the domain properties flyout on the **DKIM** tab of the **Email authentication settings** page in the Defender portal at <https://security.microsoft.com/authentication?viewid=DKIM> or in the output of the **Get-DkimSigningConfig** command in Exchange Online PowerShell:
-
-- **Scenario 1**:
-
-
-  OR  
-
-  - In Exchange Online PowerShell, the output of the following command returns the custom domain that you want to use, and the domain contains the following property values:
-
-    ```powershell
-    Get-DkimSigningConfig | Format-List Name,Enabled,Status,Selector1CNAME,Selector2CNAME,RotateOnDate
-    ```
-
-    - **Enabled**: False
-    - **Status**: `CnameMissing`
-
-  **Solution**: Use Option 1 to configure DKIM signing using the custom domain in the [Defender portal](#option-1-use-the-defender-portal-to-enable-dkim-signing-of-outbound-messages-using-a-custom-domain) or in [PowerShell](#option-1-use-exchange-online-powershell-to-enable-dkim-signing-of-outbound-messages-using-a-custom-domain).
-
-- **Scenario 2**:
-  - The custom domain or subdomain appears on the **DKIM** tab of the **Email authentication settings** page at <https://security.microsoft.com/authentication?viewid=DKIM>. The properties of the domain in the details flyout contain the following values:
-
-  :::image type="content" source="../../media/email-auth-dkim-domain-properties-create-dkim.png" alt-text="The domain details flyout with the Create DKIM keys button." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim.png":::
-
-  - The **Sign messages for this domain with DKIM signatures** toggle isn't available.
-  - The **Status** value is **No DKIM keys saved for this domain**.
-  - **Create DKIM keys** is present.
-
-  OR
-
-  - In Exchange Online PowerShell, the output of the following command doesn't return the custom domain that you want to use:
-
-    ```powershell
-    Get-DkimSigningConfig | Format-List Name,Enabled,Status,Selector1CNAME,Selector2CNAME
-    ```
-
 ## Configure DKIM signing of outbound messages in Microsoft 365
 
 ### Use the Defender portal to enable DKIM signing of outbound messages using a custom domain
