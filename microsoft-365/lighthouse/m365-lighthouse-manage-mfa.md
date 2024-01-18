@@ -107,7 +107,7 @@ Blocking a user prevents anyone from signing in as this user and is a good idea 
 
 ## Next steps
 
-Once MFA is enabled, you can enable Microsoft Entra self-service password reset (SSPR). SSPR allows users to change or reset passwords without administrator or help desk involvement. For more information, see Manage self-service password reset in Microsoft 365 Lighthouse. For more information, see [Manage self-service password reset in Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
+Once MFA is enabled, you can enable Microsoft Entra self-service password reset (SSPR). SSPR allows users to change or reset passwords without administrator or help desk involvement. For more information, see [Manage self-service password reset in Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
 
 ## Related content
 
