@@ -29,7 +29,7 @@ Before you commit to a full rollout of Microsoft 365 for frontline workers acros
 
 For example, a pilot can help you determine:
 
-- Whether the scenarios you've identified match the business needs of your organization.
+- Whether the scenarios you identified match the business needs of your organization.
 - What elements need to be modified or further customized for your organization.
 - What training and orientation information you'll need to provide to users before, during, and after they start working with these new tools.
 
@@ -61,10 +61,10 @@ Next, identify your phase 1 pilot community and make sure it includes actual fro
 
 #### Best practice
 
-It's important to include all roles within that smallest logical grouping, from managers to part time or seasonal workers, to uncover valuable insights and enable modern communication scenarios. Your most junior staff surprises you! Some key delightful and unintended valuable scenarios uncovered during pilots with sample customers include:
-
+It's important to include all roles within that smallest logical grouping, from managers to part time or seasonal workers, to uncover valuable insights and enable modern communication scenarios.<!-- Your most junior staff surprises you! Some key delightful and unintended valuable scenarios uncovered during pilots with sample customers include:-->
+<!--
 - Standardized Expectations and Training: Taking a picture of a clean stove to illustrate to kitchen staff what clean means. “If it doesn’t look like this, then it isn’t clean!”
-- Reducing shrinkage: Taking a picture of a known shoplifter and notifying other employees immediately. Teams on future shifts will also see this picture to mitigate future risk.
+- Reducing shrinkage: Taking a picture of a known shoplifter and notifying other employees immediately. Teams on future shifts will also see this picture to mitigate future risk.-->
 
 #### Decision points
 
@@ -78,21 +78,23 @@ At the end of this phase, you should be able to answer these questions:
 Here's some tips for a successful pilot.
 
 - Set start and end dates and define clear goals for measuring success. These goals can help you plan your rollout after the pilot is completed.
-    - Create a test plan and process for gathering feedback, plus a communication plan.
+- Create a test plan and process for gathering feedback, plus a communication plan.
 - Allow enough time to run the pilot and assess its impact. A minimum of 30 days is recommended.
 - Include the right stakeholders and participants, knowing you can add more users throughout the pilot, if necessary. For Microsoft 365 for frontline workers, make sure your stakeholders and participants include not only the business leaders and IT staff, but your frontline managers and workers, so you can:
     - Ensure you understand their challenges while planning the implementation.
     - Check to make sure your implementation is having a positive impact on those challenges.
 - Start small and take time to pause, assess results, and adjust the pilot.
 
-For a successful pilot for frontline workers, simplicity is key! For most organizations, this community typically isn’t provided any company-supported communication or collaboration technology, but are likely already using unsupported consumer tools to accomplish some basic needs. A recommended best practice is to begin where your users are and mimic the capabilities they’re using in consumer tools today. As your pilot progresses and the iteration process begins, you can grow the experience.
+For a successful pilot for frontline workers, simplicity is key! For most organizations, this community typically isn’t provided any company-supported communication or collaboration technology, but are likely already using unsupported consumer tools to accomplish some basic needs.
+
+A recommended best practice is to begin where your users are and mimic the capabilities they’re using in consumer tools today. As your pilot progresses and the iteration process begins, you can grow the experience.
 
 #### Decision points
 
-- Which capabilities will you include in Phase 1 of your pilot for frontline workers?
+- Which capabilities will you include in Phase 1 of your pilot?
 - Do your frontline workers need Shifts for schedule management?
-- Do your frontline workers need Walkie Talkie for instant communications?
-- Which chat configuration will you use?
+- Do your frontline workers need Walkie Talkie for push-to-talk (PTT) communications?
+<!--- Which chat configuration will you use?-->
 
 #### Not sure what consumer tools these users are currently using?
 
@@ -120,19 +122,20 @@ Configure Phase 1 of the frontline Teams experience to mimic the consumer tools 
 
 #### Decision points
 
-- How many channels/conversation topics do you want for your pilot?
+- How many Teams channels do you want for your pilot?
 - Which topics feel right for your scenarios?
 
 #### Best practice
 
-**Keep the channels simple**. We recommend resisting the urge to create a channel for every possible topic of conversation and instead keep things simple. It’s okay if channels are created over time as needed.
+Keep the channels simple. We recommend resisting the urge to create a channel for every possible area of conversation and instead keep things simple. It’s okay if channels are created over time as needed.
 
-<!-->:::image type="content" source="media/firstline-worker-channels-tab.png" alt-text="Screenshot of Channels tab":::-->
+<!-- :::image type="content" source="media/firstline-worker-channels-tab.png" alt-text="Screenshot of Channels tab":::-->
 
-After you have Teams set up and created your teams and channels, configure any additional frontline apps that you want to use in the pilot, including:
+After you create your teams and channels, configure any additional frontline apps that you want to use in the pilot, including:
 
-- The [Virtual Appointments](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) app to schedule appointments with clients or customers.
 - [Shifts](shifts-for-teams-landing-page.md) to schedule your frontline workforce.
+- [Walkie Talkie](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) for instant voice communications.
+- The [Virtual Appointments](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) app to schedule appointments with clients or customers.
 - [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees) to build learning and training experiences for employees.
 
 ### Communicate
@@ -141,7 +144,7 @@ Inform your frontline workers of their participation in the pilot, the pilot goa
 
 #### Best practice
 
-Don’t forget to train your managers on Shifts! If you’re going to include Shifts in your pilot, then make sure to conduct a separate training session with your managers on how to create, manage, and publish schedules to their team.
+Don’t forget to train your managers on Shifts! If you’re going to include Shifts in your pilot, consider holdindg a training session with your managers on how to create, manage, and publish schedules to their team.
 
 ### Measure
 
@@ -156,9 +159,9 @@ Empowering your frontline workers is more about people than technology. To under
 Now that you successfully completed your first pilot with an initial group of frontline workers, it’s time to expand! Consider one of the following expansion options:
 
 - Expand the number of teams.
-    - Instead of one location, can you do one region? 
+    - Instead of one location, can you do one region?
     - Would you want one team for the whole region or individual teams for each location?
-- Expand the features and capabilities.
+- Expand features and capabilities.
     - Was there a key feature that your frontline workers suggested I your feedback forms that you didn’t include in your initial feature set?
 
 We recommend working through this process as many times as needed to arrive at a solution, set of best practices, and training documentation for your frontline workers.
