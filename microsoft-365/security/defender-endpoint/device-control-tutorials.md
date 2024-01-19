@@ -62,7 +62,7 @@ The status of device control (enabled/disabled, default enforcement, and last po
 
 :::image type="content" source="media/device-control-status.png" alt-text="Screenshot showing device control status." lightbox="media/device-control-status.png":::
 
-To get started, change the device control state to be enabled* on a test device. Make sure the policy is applied by checking [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
+Change the device control state to be enabled* on a test device. Make sure the policy is applied by checking [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
 
 :::image type="content" source="media/device-control-statusenabled.png" alt-text="Screenshot showing device control is enabled on a device.":::
 
