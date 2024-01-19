@@ -1,5 +1,5 @@
 ---
-title: Device control tutorials            
+title: Device control walkthroughs            
 description: Learn how to work with device control in Defender for Endpoint. 
 author: denisebmsft
 ms.author: deniseb
@@ -19,9 +19,9 @@ f1.keywords: NOCSH
 audience: ITPro
 ---
 
-# Device control tutorials
+# Device control walkthroughs
 
-This article includes four tutorials you can use to learn how device control works. Beginning with default settings, each tutorial describes how to configure device control to achieve the following objectives:
+This article describes different ways to see how device control works. Beginning with default settings, each tutorial describes how to configure device control to achieve the following objectives:
 
 - Deny all removable media
 - Allow access for authorized USB devices
