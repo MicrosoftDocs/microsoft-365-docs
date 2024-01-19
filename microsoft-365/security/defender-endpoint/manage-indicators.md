@@ -145,10 +145,10 @@ The table below shows exactly which actions are available per indicator (IoC) ty
 
 The functionality of pre-existing IoCs won't change. However, the indicators were renamed to match the current supported response actions:
 
-- The "alert only" response action was renamed to "audit" with the generate alert setting enabled.
+- The "alert only" response action was renamed to "audit" with the generated alert setting enabled.
 - The "alert and block" response was renamed to "block and remediate" with the optional generate alert setting.
 
-The IoC API schema and the threat ids in advance hunting have been updated to align with the renaming of the IoC response actions. The API scheme changes apply to all IoC Types.
+The IoC API schema and the threat IDs in advance hunting are updated to align with the renaming of the IoC response actions. The API scheme changes apply to all IoC Types.
 
 > [!NOTE]
 >
