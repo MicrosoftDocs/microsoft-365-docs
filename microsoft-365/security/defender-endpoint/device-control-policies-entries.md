@@ -57,3 +57,22 @@ To further refine access to devices, device control uses policies.  A policy is 
 Rules and groups are identified by Global Unique ID (GUIDs).  If device control policies are deployed using a management tool other than the Intune – Device Control Policy, the GUIDs will need to be generated. This can be done easily via [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).
 
 For schema details, see [JSON schema for Mac](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/device_control_policy_schema.json).
+
+## Rules
+
+A rule defines the list of included groups and a list of excluded groups. For the rule to apply, the device must be in all of the included groups and none of the excluded groups.  If the device matches the rule, then the entries for that rule are evaluated.  An entry defines the action and notification options applied, if the request matches the conditions. If no rules apply or no entries match the request then the default enforcement is applied. 
+
+For example, to allow write access for some USB devices, and read access for all other USB devices, use the following policies, groups, and entries with default enforcement set to deny.
+
+| Group | Description |
+|---|---|
+| All Removable Storage Devices | Removable Storage Devices |
+| Writeable USBs | List of USBs where write access is permitted |
+
+|Rule | Included Device Groups | Excluded Device Groups | Entry |
+|---|---|---|---|
+| Read only access for USBs | All Removable storage devices | Writeable USBs | Read Only Access |
+| Write access for USBs |  Writeable USBs |  | Write Access |
+
+The name of the rule appears in the portal for reporting and in the toast notification to users, so make sure to give the rules descriptive names.
+
