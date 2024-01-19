@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: onboard
-ms.date: 12/18/2020
+ms.date: 01/18/2024
 ---
 
 # Onboard non-Windows devices
