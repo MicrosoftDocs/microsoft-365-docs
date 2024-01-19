@@ -90,7 +90,7 @@ Because each version of an application has a different file hash, using indicato
 
 #### Certificate indicators
 
-In some cases, there may be a specific certificate that has been used to sign a file or application that your organization would like to allow / block. Certificate indicators are supported in MDE, provided they are of the .CER or .PEM file format. See [Create indicators based on certificates](indicator-certificates.md) for more details.
+In some cases, a specific certificate that's used to sign a file or application that your organization is set to allow or block. Certificate indicators are supported in Defender for Endpoint, provided that they use the .CER or .PEM file format. See [Create indicators based on certificates](indicator-certificates.md) for more details.
 
 ## IoC detection engines
 
