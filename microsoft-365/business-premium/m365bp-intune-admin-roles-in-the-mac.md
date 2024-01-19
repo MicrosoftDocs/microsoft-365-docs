@@ -4,13 +4,13 @@ f1.keywords:
 - CSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.date: 01/12/2024
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - tier1
 description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
 ---
@@ -19,7 +19,7 @@ description: "The Microsoft 365 admin center lets you manage some Microsoft Intu
 
 Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to any users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. Given this, these roles are only a subset of all the roles available in the Intune admin center, which includes additional roles specific to Intune itself.
 
-Before adding specific Intune roles, roles must be assigned in Microsoft Entra ID. To see these roles, sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > Tenant administration > Roles > All roles >**. You can manage the role on the following pages:
+Before adding specific Intune roles, roles must be assigned in Microsoft Entra ID. To see these roles, sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) \> **Tenant administration** \> **Roles** \> **All roles**. You can manage the role on the following pages:
 
 - Properties: The name, description, permissions, and scope tags for the role.
 - Assignments: A list of role assignments defining which users have access to which users or devices. A role can have multiple assignments, and a user can be in multiple assignments.

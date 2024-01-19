@@ -3,11 +3,11 @@ title: "Threats detected by Microsoft Defender Antivirus"
 f1.keywords: CSH
 ms.author: siosulli
 author: siosulli
-manager: dansimp
+manager: deniseb
 audience: Admin
-ms.topic: conceptual 
+ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.collection: 
+ms.collection:
 - m365-security
 - tier1
 ms.date: 09/15/2022
