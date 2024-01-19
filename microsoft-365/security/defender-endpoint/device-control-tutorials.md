@@ -1,10 +1,10 @@
 ---
-title: Get started with device control in Microsoft Defender for Endpoint            
-description: Get an overview of device control, including removable storage access control and device installation policies in Defender for Endpoint           
+title: Device control tutorials            
+description: Learn how to work with device control in Defender for Endpoint.           
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/16/2024
+ms.date: 01/19/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -19,7 +19,14 @@ f1.keywords: NOCSH
 audience: ITPro
 ---
 
-# Get started with device control in Microsoft Defender for Endpoint
+# Device control tutorials
+
+This article includes four tutorials you can use to learn how device control works. Beginning with default settings, each tutorial describes how to configure device control to achieve the following objectives:
+
+- Deny all removable media
+- Allow access for authorized USB devices
+- Allow different levels of access to different devices
+- Allow different levels of access to devices for specific users or groups
 
 By default, [device control](device-control-overview.md) is disabled and there are no restrictions on which devices can be added. The auditing of basic device control events is enabled for devices that are onboarded to Defender for Endpoint. This activity can be seen in the [device control report](device-control-report.md). Filtering on the built-in **PnP Audit Policy** shows devices that are connected to the endpoints in the environment, as shown in the following screenshot:
 
