@@ -37,27 +37,21 @@ When device control is enabled, it is enabled for all device types by default. T
 | Yes | Deny | - CD/DVD drives <br/>- Printers <br/>- Removable media devices <br/>- Windows portable devices |
 | Yes | Deny removable media devices and printers | - Printers and removable media devices (blocked) <br/>- CD/DVD drives and Windows portable devices (allowed) | 
 
+When device types are configured, device control in Defender for Endpoint ignores requests to other device families.
 
+- See LINK NEEDED Defining Settings with OMA-URI for information on changing default behavior using Intune
+- See LINK NEEDED Deploy Using Device GPO (Windows) for information on changing default behavior using Group Policy
 
-The following table lists examples of device groups that you can use:
+## Policies
 
+To further refine access to devices, device control uses policies.  A policy is a set of rules and groups. How rules and groups are defined varies slightly among management experiences and operating systems, as described in the following table.
 
-|Device group name  |Description  |
-|---------|---------|
-| All Removable Storage Devices   | Removable storage devices |
-| Writeable USBs     | List of USBs where write access is permitted  |
-| Other Devices     | Non-removable storage devices   |
+| Management tool	| Operating system | How rules and groups are managed |
+|---|---|---|
+| Intune – Device Control Policy |	Windows | Device and printer groups can be managed as re-usable settings and included in rules.   NOTE:  Not all features are available in the Device Control Policy (See Managing Device Control in Intune (Windows) for details) |
+| Intune – Custom	| Windows | Each group/rule is stored as an XML string in custom configuration policy. The OMA-URI contains the GUID of the group/rule.  The GUID needs to be generated. |
+| Group Policy | Windows | The groups and rules are defined in separate XML settings in the GPO – Define device control policy groups, and Define device control policy rules. |
+| Intune | Mac | The rules and policies are combined into a single JSON and included in the mobileconfig file that is deployed via Intune |
+| JAMF | Mac | The rules and policies are combined into a single JSON and configured via JAMF as the Device Control Policy |
 
-Access is determined by a list of entries. Each entry specifies:
-
-- **Access**: Read, Write, or Execute; and 
-- **Action**: Prevent, Deny, or Audit. 
-
-For example, to have write access for some USB devices, and read access for other USB devices, you can use the groups and policies that are listed in the following table, with default enforcement set to deny.
-
-
-| Policy  | Included Device Groups | Excluded Device Groups  | Entry  |
-|---------|---------|---------|---------|
-| Write access for USBs  | Writeable USBs   |         | Write access  |
-| Read-only access for USBs  | All removable storage devices  | Writeable USBs  | Read-only access  |
-| Full access for other devices   | Other devices   |         | Full access        |
+Rules and groups are identified by Global Unique ID (GUIDs).  If device control policies are deployed using a management tool other than the Intune – Device Control Policy, the GUIDs will need to be generated. This can be done easily via [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).
