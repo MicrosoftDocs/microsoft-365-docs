@@ -1,6 +1,6 @@
 ---
 title: Device control tutorials            
-description: Learn how to work with device control in Defender for Endpoint.        
+description: Learn how to work with device control in Defender for Endpoint. 
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
@@ -110,9 +110,9 @@ In order to customize the behavior, device control uses policies that are a comb
 
 :::image type="content" source="media/deny-all-removable-media-settings.png" alt-text="Image depicting settings for device control to deny all removable media." lightbox="media/deny-all-removable-media-settings.png":::
 
-For the purposes of controlling access, devices are organized into Groups.  This policy uses a group called “All removable media devices”. Once this policy is deployed to the test device, re-insert the USB. A notification appears, indicating that device access is restricted. 
+For the purposes of controlling access, devices are organized into Groups. This policy uses a group called `All removable media devices`. Once this policy is deployed to the test device, re-insert the USB. A notification appears, indicating that device access is restricted. 
 
-The event also appears within 15 minutes in Advanced Hunting. You can use the following example query to view the results:
+The event also appears within 15 minutes in advanced hunting. You can use the following example query to view the results:
 
 ```kusto
 
@@ -137,7 +137,7 @@ DeviceEvents
 ```
 
 > [!NOTE]
-> There is a limit of 300 events per device per day.
+> You can view up to 300 events per device per day.
 > 
 
 Selecting the event to view information about the policy and the device, as shown in the following screenshot:
@@ -146,35 +146,35 @@ Selecting the event to view information about the policy and the device, as show
 
 ## Allow access for authorized USB devices
 
-To grant access to set of authorized USBs, set up a group to identify those devices. We call our group Authorized USBs, and used the settings depicted in the following image:
+To grant access to set of authorized USBs devices, set up a group to identify those devices. We call our group `Authorized USBs`, and used the settings depicted in the following image:
 
 :::image type="content" source="media/device-control-authorized-usb-settings.png" alt-text="Screenshot depicting settings for a group of authorized devices." lightbox="media/device-control-authorized-usb-settings.png":::  
 
-In the sample, the authorized USBs group contains a single device identified by its InstancePathId.  Before deploying the sample, change the value to the InstancePathId for a test device.  
-See Using Windows Device Manager to determine device properties and Using reports and advanced hunting to determine properties of devices for details on how to find the correct value.
-Notice that the Authorized USB group is Excluded from the Deny all policy.  This ensures that those devices will still be evaluated for the other policies.    
-Policies are not evaluated in order, so each policy should be correct if evaluated independently.  
-Once the policy is deployed, re-insert the approved USB device – there is full access to the device.  Insert another USB, and that access is still blocked.
-Device control has lots of ways to group devices based on properties.  See List of device properties for the full list.
+In our example, the authorized USBs group contains a single device identified by its `InstancePathId`. Before deploying the sample, you can change the value to the `InstancePathId` for a test device. See LINK NEEDED Using Windows Device Manager to determine device properties and LINK NEEDED Using reports and advanced hunting to determine properties of devices for details on how to find the correct value.
+
+Notice that the authorized USB group is excluded from the deny-all policy. This ensures that those devices will still be evaluated for the other policies. 
+Policies are not evaluated in order, so each policy should be correct if evaluated independently. 
+Once the policy is deployed, re-insert the approved USB device – there is full access to the device. Insert another USB, and that access is still blocked.
+Device control has lots of ways to group devices based on properties. See List of device properties for the full list.
 
 ## Allow different levels of access to different types of devices
 
-To create different behaviors for different devices, place them into separate groups.  In this example there is an additional group “Read Only USBs”.   
+To create different behaviors for different devices, place them into separate groups. In this example there is an additional group “Read Only USBs”. 
 
-In the sample, the Read Only USB group contains a single device identified by its VID_PID.  Before deploying the sample, change the value to the VID_PID to that of a 2nd test device.  
-Once the policy is deployed, insert test device 1 (Authorized USBs).  Full access is allowed from this device.  
-Insert the 2nd test device (Read Only USB).  The device is allowed, but is read only.  Attempt to create a new file, or make changes to a file.  Device control blocks it.  
+In the sample, the Read Only USB group contains a single device identified by its VID_PID. Before deploying the sample, change the value to the VID_PID to that of a 2nd test device. 
+Once the policy is deployed, insert test device 1 (Authorized USBs). Full access is allowed from this device. 
+Insert the 2nd test device (Read Only USB). The device is allowed, but is read only. Attempt to create a new file, or make changes to a file. Device control blocks it. 
 Inserting any other USB device will result in the “Deny all other USBs” policy being triggered and the access being denied.
 
 ## Allow different levels of access to different types of devices by user or user group
 
-Device control allows to further restrict access using conditions.  The simplest condition is a User condition.   In device control, users and groups are identified by their Security Identified (SID).
+Device control allows to further restrict access using conditions. The simplest condition is a User condition. In device control, users and groups are identified by their Security Identified (SID).
 
-By default, the sample uses the Global SID of S-1-1-0.  Before deploying the policy, change the SID associated with the authorized USBs (writeable USBs) to User1 and change the SID associated with the Read Only USBs to User2. 
+By default, the sample uses the Global SID of S-1-1-0. Before deploying the policy, change the SID associated with the authorized USBs (writeable USBs) to User1 and change the SID associated with the Read Only USBs to User2. 
 
 Once the policy is deployed – Only User1 will be able to write to the Authorized USBs, and only User2 will be able to read from the ReadOnly USBs. 
 
-Device control also supports group SIDs.  Change the SID in the ReadOnly policy to a group that contains User2.  Once the policy is re-deployed, the rules will be the same for User2 or any other user in that group.
+Device control also supports group SIDs. Change the SID in the ReadOnly policy to a group that contains User2. Once the policy is re-deployed, the rules will be the same for User2 or any other user in that group.
 
 NOTE:  For groups that are stored in Entra, use the object id instead of the SID to identify groups of users.
 
