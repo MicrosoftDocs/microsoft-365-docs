@@ -3,12 +3,12 @@ title: Secure managed and unmanaged devices
 description: Identify personal, unmanaged devices and company-owned devices, and learn how to secure them.
 ms.author: siosulli
 author: siosulli
-manager: dansimp
+manager: deniseb
 ms.date: 10/26/2023
 ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - highpri

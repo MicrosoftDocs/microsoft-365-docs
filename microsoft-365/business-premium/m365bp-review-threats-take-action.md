@@ -3,9 +3,9 @@ title: "Review detected threats on devices and take action"
 f1.keywords: NOCSH
 ms.author: siosulli
 author: siosulli
-manager: dansimp
+manager: deniseb
 audience: Admin
-ms.topic: conceptual 
+ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.date: 10/26/2023
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ ms.collection:
 - m365-security
 - tier1
 search.appverid: MET150
-description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows devices." 
+description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows devices."
 ---
 
 # Review detected threats
