@@ -44,6 +44,8 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - Backup and restore of tenants that have the multi-geo feature enabled for OneDrive and SharePoint might not work properly. We recommend not using the preview version of Backup until multi-geo support is fully enabled.
 
+- When you remove a OneDrive for Business account or a SharePoint site from a backup policy, you'll continue to be billed for the existing backups for the next one year of their retention. Additionally, the price of that backup will be proportional to the size of the site or account throughout that remaining year.
+
 ### Restore
 
 - Site search is case-sensitive and is a prefix-type search.
