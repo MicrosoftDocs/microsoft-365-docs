@@ -12,13 +12,14 @@ metadata:
   ms.topic: hub-page # Required
   ms.collection: 
   - tier2
+  - essentials-navigation
   ms.custom: 
   - AdminSurgePortfolio
   - intro-hub-or-landing
   author: chrisda #Required; your GitHub user alias, with correct capitalization.
   ms.author: chrisda #Required; microsoft alias of author; optional team alias.
   ms.reviewer: nehabha
-  ms.date: 10/27/2023
+  ms.date: 01/19/2024
 
 # productDirectory section (optional)
 productDirectory:
