@@ -62,7 +62,7 @@ The status of device control (enabled/disabled, default enforcement, and last po
 
 :::image type="content" source="media/device-control-status.png" alt-text="Screenshot showing device control status." lightbox="media/device-control-status.png":::
 
-To get started, change the device control state to *enabled* on a test device. Make sure the policy is applied by checking [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
+To get started, change the device control state to be enabled* on a test device. Make sure the policy is applied by checking [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
 
 :::image type="content" source="media/device-control-statusenabled.png" alt-text="Screenshot showing device control is enabled on a device.":::
 
@@ -99,7 +99,7 @@ Deploy your policy to the test device. Use [Get-MpComputerStatus](/powershell/mo
 
 :::image type="content" source="media/device-control-status-defaultdeny.png" alt-text="Screenshot showing device control is set to DefaultDeny.":::
 
-Remove, and reinsert the USB device in the test machine. Try to open the drive. The drive isn't accessible, and a message appears indicating that access is denied.
+Remove, and reinsert the USB device in the test machine. Try to open the drive. The drive isn't accessible, and a message appears which indicates that access is denied.
 
 > [!NOTE]
 > Detailed instructions and examples are available [here](https://github.com/j0shbregman/mdatp-devicecontrol/tree/main/Getting%20Started).
@@ -110,7 +110,7 @@ In order to customize the behavior, device control uses policies that are a comb
 
 :::image type="content" source="media/deny-all-removable-media-settings.png" alt-text="Image depicting settings for device control to deny all removable media." lightbox="media/deny-all-removable-media-settings.png":::
 
-For the purposes of controlling access, devices are organized into Groups. This policy uses a group called `All removable media devices`. Once this policy is deployed to the test device, re-insert the USB. A notification appears, indicating that device access is restricted. 
+For the purposes of controlling access, devices are organized into Groups. This policy uses a group called `All removable media devices`. Once this policy is deployed to the test device, reinsert the USB. A notification appears, indicating that device access is restricted. 
 
 The event also appears within 15 minutes in advanced hunting. You can use the following example query to view the results:
 
@@ -152,7 +152,7 @@ To grant access to set of authorized USBs devices, set up a group to identify th
 
 In our example, the authorized USBs group contains a single device identified by its `InstancePathId`. Before deploying the sample, you can change the value to the `InstancePathId` for a test device. See LINK NEEDED Using Windows Device Manager to determine device properties and LINK NEEDED Using reports and advanced hunting to determine properties of devices for details on how to find the correct value.
 
-Notice that the authorized USB group is excluded from the deny-all policy. This ensures that those devices are evaluated for the other policies. Policies are not evaluated in order, so each policy should be correct if evaluated independently. Once the policy is deployed, re-insert the approved USB device. You should see that there is full access to the device. Insert another USB, and confirm that access is blocked for that device.
+Notice that the authorized USB group is excluded from the deny-all policy. This ensures that those devices are evaluated for the other policies. Policies aren't evaluated in order, so each policy should be correct if evaluated independently. Once the policy is deployed, reinsert the approved USB device. You should see that there's full access to the device. Insert another USB, and confirm that access is blocked for that device.
 
 Device control has lots of ways to group devices based on properties. See LINK NEEDED List of device properties for the full list.
 
@@ -178,9 +178,9 @@ The following screenshot shows the settings we used for our example:
 
 By default, the sample uses the Global SID of `S-1-1-0`. Before deploying the policy, you can change the SID associated with the authorized USBs (writeable USBs) to `User1` and change the SID associated with the Read Only USBs to `User2`. 
 
-Once the policy is deployed, only User1 has write access to the Authorized USBs, and only User2 has read access to the ReadOnly USBs. 
+Once the policy is deployed, only User 1 has write access to the Authorized USBs, and only User 2 has read access to the ReadOnly USBs. 
 
-Device control also supports group SIDs. Change the SID in the read-only policy to a group that contains `User2`. Once the policy is re-deployed, the rules are the same for User2 or any other user in that group.
+Device control also supports group SIDs. Change the SID in the read-only policy to a group that contains `User2`. Once the policy is redeployed, the rules are the same for User 2 or any other user in that group.
 
 > [!NOTE]
 > For groups that are stored in Microsoft Entra, use the object id instead of the SID to identify groups of users.
