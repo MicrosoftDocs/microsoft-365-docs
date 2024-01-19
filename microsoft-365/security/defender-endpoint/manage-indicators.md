@@ -16,7 +16,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 07/20/2023
+ms.date: 01/18/2024
 ---
 
 # Create indicators
@@ -165,6 +165,8 @@ Customers may experience issues with alerts for Indicators of Compromise. The fo
 - **Allow** – No alerts are generated (by design).
 - **Audit** - Alerts will be generated based on the severity provided by the customer.
 - In some cases, alerts coming from EDR detections may take precedence over those stemming from AV blocks, in which case an information alert will be generated.
+
+Microsoft Store apps cannot be blocked by Defender because they are signed by Microsoft.
 
 ## Related articles
 
