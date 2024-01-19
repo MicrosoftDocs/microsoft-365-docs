@@ -142,7 +142,7 @@ DeviceEvents
 
 Selecting the event to view information about the policy and the device, as shown in the following screenshot:
 
-
+:::image type="content" source="media/deny-removable-devices-advhuntingresults.png" alt-text="Screenshot showing deny event in advanced hunting." lightbox="media/deny-removable-devices-advhuntingresults.png":::
 
 
 
