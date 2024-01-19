@@ -152,10 +152,9 @@ To grant access to set of authorized USBs devices, set up a group to identify th
 
 In our example, the authorized USBs group contains a single device identified by its `InstancePathId`. Before deploying the sample, you can change the value to the `InstancePathId` for a test device. See LINK NEEDED Using Windows Device Manager to determine device properties and LINK NEEDED Using reports and advanced hunting to determine properties of devices for details on how to find the correct value.
 
-Notice that the authorized USB group is excluded from the deny-all policy. This ensures that those devices will still be evaluated for the other policies. 
-Policies are not evaluated in order, so each policy should be correct if evaluated independently. 
-Once the policy is deployed, re-insert the approved USB device – there is full access to the device. Insert another USB, and that access is still blocked.
-Device control has lots of ways to group devices based on properties. See List of device properties for the full list.
+Notice that the authorized USB group is excluded from the deny-all policy. This ensures that those devices are evaluated for the other policies. Policies are not evaluated in order, so each policy should be correct if evaluated independently. Once the policy is deployed, re-insert the approved USB device. You should see that there is full access to the device. Insert another USB, and confirm that access is blocked for that device.
+
+Device control has lots of ways to group devices based on properties. See LINK NEEDED List of device properties for the full list.
 
 ## Allow different levels of access to different types of devices
 
