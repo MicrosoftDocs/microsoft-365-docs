@@ -158,7 +158,7 @@ The IoC API schema and the threat IDs in advance hunting are updated to align wi
 
 ## Known issues and limitations
 
-Customers might experience issues with alerts for Indicators of Compromise. The following scenarios are situations where alerts aren't created or are created with inaccurate information. Each of these issues are being investigated by our engineering team and will be resolved in an upcoming update.
+Customers might experience issues with alerts for Indicators of Compromise. The following scenarios are situations where alerts aren't created or are created with inaccurate information. Each issue is investigated by our engineering team.
 
 - **Block indicators** – Generic alerts with informational severity only will be fired. Custom alerts (i.e. custom title and severity) will not be fired in these cases.
 - **Warn indicators** – Generic alerts and custom alerts are possible in this scenario, however, the results are not deterministic due to an issue with the alert detection logic. In some cases, customers might see a generic alert, whereas a custom alert might show in other cases.
