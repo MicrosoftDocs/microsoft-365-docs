@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
