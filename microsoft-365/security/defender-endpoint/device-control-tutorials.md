@@ -144,10 +144,11 @@ Selecting the event to view information about the policy and the device, as show
 
 :::image type="content" source="media/deny-removable-devices-advhuntingresults.png" alt-text="Screenshot showing deny event in advanced hunting." lightbox="media/deny-removable-devices-advhuntingresults.png":::
 
-
 ## Allow access for authorized USB devices
 
-To grant access to set of authorized USBs, there needs to be a group that identifies those devices.  In the example, this is called the Authorized USBs.  
+To grant access to set of authorized USBs, set up a group to identify those devices. We call our group Authorized USBs, and used the settings depicted in the following image:
+
+:::image type="content" source="media/device-control-authorized-usb-settings.png" alt-text="Screenshot depicting settings for a group of authorized devices." lightbox="media/device-control-authorized-usb-settings.png":::  
 
 In the sample, the authorized USBs group contains a single device identified by its InstancePathId.  Before deploying the sample, change the value to the InstancePathId for a test device.  
 See Using Windows Device Manager to determine device properties and Using reports and advanced hunting to determine properties of devices for details on how to find the correct value.
