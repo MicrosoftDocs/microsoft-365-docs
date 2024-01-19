@@ -37,20 +37,20 @@ Find more information on [Microsoft Entra roles and RBAC](/azure/active-director
 
 ## Microsoft Intune built-in roles
 
-Built-in roles use pre-defined rules based on common Intune scenarios. Alternatively, custom roles are built upon rules that are strictly defined by you. 
+Built-in roles use pre-defined rules based on common Intune scenarios. Alternatively, custom roles are built upon rules that are strictly defined by you.
 
 Here are the built-in roles that you can assign:
 
-|Admin role     |Who should be assigned this role?  |
-|---------|---------|
-|**Application manager**     |   Assign the Application manager role to users who manage the application lifecycle for mobile apps, configure policy-managed apps, and view device info and configuration profiles.  |
-|**Help desk operator**     |   Assign the help desk operator role to users who assign apps and policies to users and devices. |
-|**Intune role administrator**    |   Assign the Intune role administrator to users who can assign Intune permissions to other admins and can manage custom and built in Intune roles.   |
-|**Policy and profile manager**     |   Assign the policy and profile manager role to users manage compliance policy, configuration profiles and Apple enrollment.   |
-|**Read only operator**     |   Assign the read only operator role to users who can only view users, devices, enrollment details and configurations.   |
-|**School administrator**     |   Assign the school administrator role to users for full access to manage Windows 10-11 and iOS devices, apps, and configurations in Intune for Education.   |
-|**Cloud PC Administrator**     |   A Cloud PC Administrator has read and write access to all Cloud PC features located within the Cloud PC blade.   |
-|**Cloud PC Reader**     |   A Cloud PC Reader has read access to all Cloud PC features located within the Cloud PC blade.   |
+|Admin role|Who should be assigned this role?|
+|---|---|
+|**Application manager**|Assign the Application manager role to users who manage the application lifecycle for mobile apps, configure policy-managed apps, and view device info and configuration profiles.|
+|**Help desk operator**|Assign the help desk operator role to users who assign apps and policies to users and devices.|
+|**Intune role administrator**|Assign the Intune role administrator to users who can assign Intune permissions to other admins and can manage custom and built in Intune roles.|
+|**Policy and profile manager**|Assign the policy and profile manager role to users manage compliance policy, configuration profiles and Apple enrollment.|
+|**Read only operator**|Assign the read only operator role to users who can only view users, devices, enrollment details and configurations.|
+|**School administrator**|Assign the school administrator role to users for full access to manage Windows 10-11 and iOS devices, apps, and configurations in Intune for Education.|
+|**Cloud PC Administrator**|A Cloud PC Administrator has read and write access to all Cloud PC features located within the Cloud PC blade.|
+|**Cloud PC Reader**|A Cloud PC Reader has read access to all Cloud PC features located within the Cloud PC blade.|
 
 ## Microsoft Intune custom roles
 
@@ -83,8 +83,8 @@ To copy a role:
 
 1. After you've made all the changes that you want, choose Next to get to the Review + create page. Select **Create**.
 
-> [!Note]
->To be able to administer Intune you must have an Intune license assigned. Alternatively, you can allow non-licensed users to administer Intune by setting **Allow access to unlicensed admins** to **Yes**.
+   > [!NOTE]
+   > To be able to administer Intune you must have an Intune license assigned. Alternatively, you can allow non-licensed users to administer Intune by setting **Allow access to unlicensed admins** to **Yes**.
 
 ## How to assign a role
 
@@ -116,15 +116,15 @@ You can assign a built-in or custom role to an Intune user. To create, edit, or 
 ## Delegated administration for Microsoft Partners
 
 If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company - or their company - admin roles. You might want them to do this, for example, if they're setting up and managing your online organization for you.
-  
+
 A partner can assign these roles:
-  
+
 - Full administration, which has privileges equivalent to a global admin, except for managing multi-factor authentication through the Partner Center.
 
 - Limited administration, which has privileges equivalent to a helpdesk admin.
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../admin/misc/add-partner.md).
-  
+
 ## See also
 
 [Resources for Microsoft partners working with small and medium-sized businesses](../security/defender-business/mdb-partners.md)

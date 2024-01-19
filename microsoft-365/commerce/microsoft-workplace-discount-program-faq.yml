@@ -4,7 +4,7 @@ metadata:
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: souchak, jobailey
+  ms.reviewer: mijeffers, nicholak
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
@@ -20,7 +20,7 @@ metadata:
   - AdminSurgePortfolio
   search.appverid: MET150 
   description: "Frequently-asked questions (FAQ) about the Microsoft Workplace Discount Program."
-  ms.date: 10/10/2023
+  ms.date: 01/18/2024
 title: Microsoft Workplace Discount Program frequently-asked questions (FAQ)
 summary: |
   Volume Licensing customers use the Microsoft Workplace Discount Program (formerly known as the Home Use Program, or HUP) in the [Microsoft Store for Business website](https://go.microsoft.com/fwlink/?linkid=2139192) or in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
