@@ -60,7 +60,7 @@ You can also help drive improvements to Microsoft's security intelligence by sub
 
 #### IP/URL indicators
 
-There several reasons for using IP/URL indicators, such as unblocking users from a SmartScreen false positive (FP) or overriding a Web Content Filtering (WFC) block.
+You can use IP/URL indicators to unblock users from a SmartScreen false positive (FP) or to override a Web Content Filtering (WFC) block.
 
 You can use URL and IP indicators to manage site access. You can create interim IP and URL indicators to temporarily unblock users from a SmartScreen block. You might also have indicators that you keep for a long period of time to selectively bypass web content filtering blocks.
 
