@@ -55,3 +55,5 @@ To further refine access to devices, device control uses policies.  A policy is 
 | JAMF | Mac | The rules and policies are combined into a single JSON and configured via JAMF as the Device Control Policy |
 
 Rules and groups are identified by Global Unique ID (GUIDs).  If device control policies are deployed using a management tool other than the Intune – Device Control Policy, the GUIDs will need to be generated. This can be done easily via [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).
+
+For schema details, see [JSON schema for Mac](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/device_control_policy_schema.json).
