@@ -170,7 +170,11 @@ If you insert any other USB device, it should be blocked due to the “Deny all 
 
 ## Allow different levels of access to devices for specific users or groups
 
-Device control allows to further restrict access using conditions. The simplest condition is a User condition. In device control, users and groups are identified by their Security Identified (SID).
+Device control allows you to further restrict access using conditions. The simplest condition is a user condition. In device control, users and groups are identified by their Security Identified (SID).
+
+The following screenshot shows the settings we used for our example:
+
+:::image type="content" source="media/device-control-different-access-users.png" alt-text="Screenshot showing settings for device control to allow different levels of access to specific users." lightbox="media/device-control-different-access-users.png":::
 
 By default, the sample uses the Global SID of S-1-1-0. Before deploying the policy, change the SID associated with the authorized USBs (writeable USBs) to User1 and change the SID associated with the Read Only USBs to User2. 
 
