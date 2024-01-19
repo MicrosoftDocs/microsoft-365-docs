@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 01/15/2024
+ms.date: 01/18/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -24,12 +24,6 @@ ms.topic: conceptual
 
 Lists the new features and functionality in Microsoft Defender XDR.
 
-RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
-
-```http
-https://learn.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
-```
-
 For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft Defender for Office 365](../office-365-security/defender-for-office-365-whats-new.md)
@@ -41,6 +35,7 @@ You can also get product updates and important notifications through the [messag
 
 ## January 2024
 
+- Defender Experts for XDR now lets you [receive managed response notifications and updates using Teams](get-started-xdr.md#receive-managed-response-notifications-and-updates-in-microsoft-teams). You can also chat with Defender Experts regarding incidents where managed response is issued.
 - (GA) Microsoft Defender for Cloud alerts integration with Microsoft Defender XDR is now generally available. Learn more about the integration in [Microsoft Defender for Cloud in Microsoft Defender XDR](microsoft-365-security-center-defender-cloud.md).
 - **Activity log** is now available within an incident page. Use the activity log to view all audits and comments, and add comments to the log of an incident. For details, see [Activity log](manage-incidents.md#activity-log). 
 - (Preview) **[Query history](advanced-hunting-query-history.md) in advanced hunting** is now available. You can now rerun or refine queries you have run recently. Up to 30 queries in the past 28 days can be loaded in the query history pane.
