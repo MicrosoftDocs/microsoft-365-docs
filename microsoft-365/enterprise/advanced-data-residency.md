@@ -104,6 +104,8 @@ Following is an example Admin view that ADR-eligible customers should see prior 
 
 Once the customer signal is received, they're provided with their opt-in date and the target date of completion.
 
+:::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated.png" alt-text="<Screenshot of data location before migration.>":::
+
 In addition to a notification posted to the Message Center, the Data Location section in the Microsoft 365 admin center updates as each workload requiring a data migration is complete.
 
 ### Migration Expectations
