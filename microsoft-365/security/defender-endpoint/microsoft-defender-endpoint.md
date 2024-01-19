@@ -1,11 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats.
-keywords: introduction to Microsoft Defender for Endpoint, introduction to Microsoft Defender for Endpoint, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft Defender XDR, cyber threat hunting
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: high
