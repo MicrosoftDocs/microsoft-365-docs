@@ -54,7 +54,7 @@ This video shows a walkthrough of creating and adding indicators:
 
 As a general rule, you should only create indicators for known bad IoCs, or for any files / websites that should be explicitly allowed in your organization. For more information on the types of sites that Defender for Endpoint can block by default, see [Microsoft Defender SmartScreen overview](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview).
 
-False Positive (FP) refers to a SmartScreen false positive, Microsoft says it's malware / phish but it's actually a safe site, so customer wants to create an allow policy for this.
+False Positive (FP) refers to a SmartScreen false positive, such that it's considered to be malware or phish, but actually is not a threat, so you want to create an allow policy for it.
 
 You can also help drive improvements to Microsoft's security intelligence by submitting false positives, and suspicious or known-bad IoCs for analysis. If you believe a warning or block was incorrectly shown for a file or application, or if you believe an undetected file is malware, you can submit a file to Microsoft for review. For more information, see [Submit files for analysis](https://www.microsoft.com/en-us/wdsi/filesubmission/).
 
