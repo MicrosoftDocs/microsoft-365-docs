@@ -23,6 +23,7 @@ audience: ITPro
 
 This article describes different ways to see how device control works. Beginning with default settings, each tutorial describes how to configure device control to achieve the following objectives:
 
+- Explore what happens with the default state of device control
 - Deny all removable media
 - Allow access for authorized USB devices
 - Allow different levels of access to different devices
