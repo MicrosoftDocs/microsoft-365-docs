@@ -112,11 +112,11 @@ The same list of indicators is honored by the prevention agent. Meaning, if Micr
 
 The automated investigation and remediation behave similarly to the endpoint prevention engine. If an indicator is set to "Allow", automated investigation and remediation ignores a "bad" verdict for it. If set to "Block", automated investigation and remediation treats it as "bad".
 
-The `EnableFileHashComputation` setting computes the file hash for the cert and file IoC during file scans. It supports IoC enforcement of hashes and certs belong to trusted applications. It is concurrently enabled with the allow or block file setting. `EnableFileHashComputation` is enabled manually through Group Policy, and is disabled by default.
+The `EnableFileHashComputation` setting computes the file hash for the cert and file IoC during file scans. It supports IoC enforcement of hashes and certs belong to trusted applications. It's concurrently enabled with the allow or block file setting. `EnableFileHashComputation` is enabled manually through Group Policy, and is disabled by default.
 
 ## Enforcement types for Indicators 
 
-When creating a new indicator (IoC), one or more of the following actions are available:
+When your security team creates a new indicator (IoC), the following actions are available:
 
 - **Allow** – the IoC is allowed to run on your devices.
 - **Audit** – an alert is triggered when the IoC runs.
