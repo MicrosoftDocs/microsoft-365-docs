@@ -23,7 +23,7 @@ Microsoft Syntex lets you easily create a translated copy of a selected file or 
 
 ![Screenshot showing a document library with translated documents.](../media/content-understanding/translation-sample-library.png)
 
-This feature lets you translate files of different types either manually or automatically by creating a rule. You can also use custom glossaries and models to improve the quality and consistency of your translations.
+This feature lets you translate files of different types either manually or automatically by creating a rule. You can use custom glossaries and models to improve the quality and consistency of your translations.
 
 You can also use the translation feature for translating video transcripts and closed captioning files. For more information, see [Transcript translations in Stream for SharePoint](https://prod.support.services.microsoft.com/office/microsoft-syntex-pay-as-you-go-transcript-translations-in-stream-for-sharepoint-2e34ad1b-e213-47ed-a806-5cc0d88751de).
 
