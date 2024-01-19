@@ -47,21 +47,22 @@ Specifically:
 Important facts about DKIM:
 
 - The domain that's used to DKIM sign the message isn't required to match the domain in the MAIL FROM or From addresses in the message. For more information about these addresses, see [Why internet email needs authentication](email-authentication-about.md#why-internet-email-needs-authentication).
-- It's OK for different domains to DKIM sign the same message. In fact, many hosted email services sign the message using the service domain, and then sign the message again using the customer domain after they configure DKIM for themselves.
+- A message can have multiple DKIM signatures by different domains. In fact, many hosted email services sign the message using the service domain, and then sign the message again using the customer domain after they configure DKIM for themselves.
 
 Before we get started, here's what you need to know about DKIM in Microsoft 365 based on your email domain:
 
-- **You use only the Microsoft Online Email Routing Address (MOERA) domain for email (for example, contoso.onmicrosoft.com)**: You don't need to do anything. Microsoft automatically creates a 2048-bit public-private key pair from your initial \*.onmicrosoft.com domain. Outbound messages are automatically DKIM signed using the private key. The public key is published in a DNS record so destination email systems can verify the DKIM signature of messages. To verify the fact that outbound messages are automatically DKIM signed, see the [Verify DKIM signing of outbound mail from Microsoft 365](#verify-dkim-signing-of-outbound-mail-from-microsoft-365) section later in this article.
+- **You use only the Microsoft Online Email Routing Address (MOERA) domain for email (for example, contoso.onmicrosoft.com)**: You don't need to do anything. Microsoft automatically creates a 2048-bit public-private key pair from your initial \*.onmicrosoft.com domain. Outbound messages are automatically DKIM signed using the private key. The public key is published in a DNS record so destination email systems can verify the DKIM signature of messages.
+
+  But, you can also manually configure DKIM signing using the \*.onmicrosoft.com domain. For instructions, see the [Use the Defender portal to customize DKIM signing of outbound messages using the \*.onmicrosoft.com domain](#use-the-defender-portal-to-customize-dkim-signing-of-outbound-messages-using-the-onmicrosoftcom-domain) section later in this article.
+
+  To verify the fact that outbound messages are automatically DKIM signed, see the [Verify DKIM signing of outbound mail from Microsoft 365](#verify-dkim-signing-of-outbound-mail-from-microsoft-365) section later in this article.
 
   For more information about \*.onmicrosoft.com domains, see [Why do I have an "onmicrosoft.com" domain?](/microsoft-365/admin/setup/domains-faq#why-do-i-have-an--onmicrosoft-com--domain).
 
 - **You use one or more custom domains for email (for example, contoso.com)**: By default, Microsoft 365 uses the public-private key pair from your initial \*.onmicrosoft.com domain to DKIM sign and provide the ability to validate outbound mail from senders in your custom domains. But, you still have more work to do for maximum email protection:
-  - **Configure DKIM signing using custom domains or subdomains**: We recommend configuring [DMARC](email-authentication-dmarc-configure.md) because:
-    - DMARC uses SPF to verify that the domains in the MAIL FROM and From addresses align.
-    - DKIM passes DMARC validation only if the domain that was used to DKIM sign the message and the domain in the From address match.
+  - **Configure DKIM signing using custom domains or subdomains**: We recommend configuring [DMARC](email-authentication-dmarc-configure.md) on all custom domains used to send email from Microsoft 365 because:
+    - DKIM passes DMARC validation only if the domain that was used to DKIM sign the message and the domain in the From address align.
     - DMARC provides reporting for messages that pass or fail DMARC based on SPF and DKIM results.
-
-    Therefore, you need to configure DKIM to sign messages using any custom domains or subdomains that you use to send email.
 
   - **Subdomains**:
     - For email services that aren't under your direct control (for example, bulk email services), we recommend using a subdomain (for example, marketing.contoso.com) instead of your main email domain (for example, contoso.com). You don't want issues with mail sent from those email services to affect the reputation of mail sent by employees in your main email domain. For more information about adding subdomains, see [Can I add custom subdomains or multiple domains to Microsoft 365?](/microsoft-365/admin/setup/domains-faq#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365).
@@ -90,7 +91,7 @@ The rest of this article describes the DKIM CNAME records that you need to creat
 
 DKIM is exhaustively described in [RFC 6376](https://datatracker.ietf.org/doc/html/rfc6376).
 
-Microsoft 365 uses CNAME records when you configure a custom domain to DKIM outbound mail. The basic syntax of DKIM CNAME records is:
+The basic syntax of the DKIM CNAME records for custom domains that send mail from Microsoft 365 is:
 
 ```text
 Hostname: selector1._domainkey
@@ -100,7 +101,7 @@ Hostname: selector2._domainkey
 Points to address or value: selector2-<CustomDomain>._domainkey.<InitialDomain>
 ```
 
-- In Microsoft 365, two public-private key pairs are generated when DKIM signing using a custom domain or subdomain is enabled. The private keys that are used to sign the message are inaccessible. The corresponding public keys that are stored in the CNAME records and used to verify the DKIM signature are known as _selectors_.
+- In Microsoft 365, two public-private key pairs are generated when DKIM signing using a custom domain or subdomain is enabled. The private keys that are used to sign the message are inaccessible. The CNAME records point to the corresponding public keys that are used to verify the DKIM signature. These records are known as _selectors_.
   - Only one selector is active and used when DKIM signing using a custom domain is enabled.
   - The second selector is inactive. It's activated and used only after any future [DKIM key rotation](#rotate-dkim-keys-for-custom-domains), and then only after the original selector is deactivated.
 
