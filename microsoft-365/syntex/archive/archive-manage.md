@@ -79,8 +79,23 @@ When you reactivate a site, its permissions, lists, pages, files, folder-structu
 
 Other than these two exceptions, you can expect the site to be unchanged.  
 
+## Change the archive status of site via PowerShell
+
+You can also change the status of an archived site by using the PowerShell cmdlet [**Set-SPOSiteArchiveState**](/powershell/module/sharepoint-online/set-spositearchivestate?view=sharepoint-ps).
+
 ## Site templates supported
 
+|Template ID  |Template  |
+|---------|---------|
+|1     |Document Workspace  |
+|4     |Wiki Site           |
+|9     |Blog                |
+|32    |News Site           |
+|64    |Team Site           |
+|68    |Communication Site  |
+
+ 
+<!---
 |Template ID  |Template  |
 |---------|---------|
 |0     |Global         |
@@ -99,3 +114,4 @@ Other than these two exceptions, you can expect the site to be unchanged.
 |6115     |Project Site         |
 |6215     |Microsoft Project Site         |
 |14483     |Records Center         |
+--->
