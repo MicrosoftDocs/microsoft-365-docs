@@ -4,12 +4,12 @@ description: Describes the new cloud.microsoft domain for Microsoft 365 apps
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.date: 12/19/2023
+ms.date: 01/16/2023
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
-ms.custom: QuickDraft
+ms.custom: 
 ms.reviewer: dansimp
 search.appverid: MET150
 f1.keywords:
