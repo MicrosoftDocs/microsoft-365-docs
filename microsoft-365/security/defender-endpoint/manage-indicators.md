@@ -106,11 +106,11 @@ The cloud detection engine of Defender for Endpoint regularly scans collected da
 
 ## Endpoint prevention engine
 
-The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender Antivirus is the primary Antivirus configured, the matched indicators are treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender Antivirus prevents file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Microsoft Defender Antivirus won't detect nor block the file from being run.
+The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender Antivirus is the primary antivirus configured, the matched indicators are treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender Antivirus prevents file executions (block and remediate) and a corresponding alert appears. On the other hand, if the Action is set to "Allow", Microsoft Defender Antivirus doesn't detect or block the file.
 
 ## Automated investigation and remediation engine
 
-The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation treat it as "bad".
+The automated investigation and remediation behave similarly to the endpoint prevention engine. If an indicator is set to "Allow", automated investigation and remediation ignores a "bad" verdict for it. If set to "Block", automated investigation and remediation treats it as "bad".
 
 The `EnableFileHashComputation` setting computes the file hash for the cert and file IoC during file scans. It supports IoC enforcement of hashes and certs belong to trusted applications. It is concurrently enabled with the allow or block file setting. `EnableFileHashComputation` is enabled manually through Group Policy, and is disabled by default.
 
