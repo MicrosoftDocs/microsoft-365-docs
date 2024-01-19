@@ -161,10 +161,10 @@ The IoC API schema and the threat IDs in advance hunting are updated to align wi
 Customers might experience issues with alerts for Indicators of Compromise. The following scenarios are situations where alerts aren't created or are created with inaccurate information. Each issue is investigated by our engineering team.
 
 - **Block indicators** – Generic alerts with informational severity only will be fired. Custom alerts (that is, custom title and severity) aren't fired in these cases.
-- **Warn indicators** – Generic alerts and custom alerts are possible in this scenario, however, the results are not deterministic due to an issue with the alert detection logic. In some cases, customers might see a generic alert, whereas a custom alert might show in other cases.
+- **Warn indicators** – Generic alerts and custom alerts are possible in this scenario, however, the results aren't deterministic due to an issue with the alert detection logic. In some cases, customers might see a generic alert, whereas a custom alert might show in other cases.
 - **Allow** – No alerts are generated (by design).
-- **Audit** - Alerts will be generated based on the severity provided by the customer.
-- In some cases, alerts coming from EDR detections might take precedence over those stemming from antivirus blocks, in which case an information alert will be generated.
+- **Audit** - Alerts are generated based on the severity provided by the customer.
+- In some cases, alerts coming from EDR detections might take precedence over alerts stemming from antivirus blocks, in which case an information alert will be generated.
 
 Microsoft Store apps cannot be blocked by Defender because they are signed by Microsoft.
 
