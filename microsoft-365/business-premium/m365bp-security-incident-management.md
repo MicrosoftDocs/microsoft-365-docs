@@ -25,7 +25,7 @@ description: "An overview of security incident management"
 
 # Security incident management
 
-After you have set up and configured your security capabilities in Microsoft 365 Business Premium, your security team can monitor and address any detected threats. As threats are detected, alerts are generated and incidents are created. Remediation actions can come into play to help mitigate threats. 
+After you have set up and configured your security capabilities in Microsoft 365 Business Premium, your security team can monitor and address any detected threats. As threats are detected, alerts are generated and incidents are created. Remediation actions can come into play to help mitigate threats.
 
 Want to see how it works? Watch this short video on a typical incident response.
 
