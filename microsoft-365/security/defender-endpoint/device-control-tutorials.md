@@ -136,6 +136,14 @@ DeviceEvents
 
 ```
 
+> [!NOTE]
+> There is a limit of 300 events per device per day.
+> 
+
+Selecting the event to view information about the policy and the device, as shown in the following screenshot:
+
+
+
 
 
 ## Next steps
