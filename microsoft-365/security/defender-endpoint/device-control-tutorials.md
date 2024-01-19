@@ -3,7 +3,7 @@ title: Device control tutorials
 description: Learn how to work with device control in Defender for Endpoint. 
 author: denisebmsft
 ms.author: deniseb
-manager: dansimp 
+manager: dansimp
 ms.date: 01/19/2024
 ms.topic: overview
 ms.service: defender-endpoint
@@ -156,7 +156,7 @@ Notice that the authorized USB group is excluded from the deny-all policy. This 
 
 Device control has lots of ways to group devices based on properties. See LINK NEEDED List of device properties for the full list.
 
-## Allow different levels of access to different types of devices
+## Allow different levels of access for different types of devices
 
 To create different behaviors for different devices, place them into separate groups. In our example, we use a group called `Read Only USBs`. The following image shows the settings we used:
 
@@ -164,11 +164,11 @@ To create different behaviors for different devices, place them into separate gr
 
 In our example, the Read Only USB group contains a single device identified by its `VID_PID`. Before deploying the sample, you can change the value of `VID_PID` to that of a second test device. 
 
-Once the policy is deployed, insert an authorized USB. You should see that full access is allowed. Now insert the second test device (Read Only USB). You can access the device with read-only permissions. Attempt to create a new file, or make changes to a file, and you should see device control blocks it. 
+Once the policy is deployed, insert an authorized USB. You should see that full access is allowed. Now insert the second test device (Read Only USB). You can access the device with read-only permissions. Attempt to create a new file, or make changes to a file, and you should see that device control blocks it. 
 
 If you insert any other USB device, it should be blocked due to the “Deny all other USBs” policy.
 
-## Allow different levels of access to different types of devices by user or user group
+## Allow different levels of access to devices for specific users or groups
 
 Device control allows to further restrict access using conditions. The simplest condition is a User condition. In device control, users and groups are identified by their Security Identified (SID).
 
