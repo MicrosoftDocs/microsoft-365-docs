@@ -9,11 +9,13 @@ metadata:
   services: office-365-security-compliance
   ms.service: defender-endpoint
   ms.topic: landing-page # Required
-  ms.collection: m365-security
+  ms.collection: 
+  - m365-security
+  - essentials-accountability
   ms.custom: intro-hub-or-landing
-  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
-  ms.author: macapara #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/14/2023
+  author: denisebmsft #Required; your GitHub user alias, with correct capitalization.
+  ms.author: deniseb #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/19/2024
   ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
