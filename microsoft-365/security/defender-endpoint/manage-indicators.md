@@ -62,7 +62,7 @@ You can also help drive improvements to Microsoft's security intelligence by sub
 
 There several reasons for using IP/URL indicators, such as unblocking users from a SmartScreen false positive (FP) or overriding a Web Content Filtering (WFC) block.
 
-You can use URL and IP indicators to manage site access. You can create interim IP and URL indicators to temporarily unblock users from a SmartScreen block. You may also have indicators that you keep for a long period of time to selectively bypass web content filtering blocks.
+You can use URL and IP indicators to manage site access. You can create interim IP and URL indicators to temporarily unblock users from a SmartScreen block. You might also have indicators that you keep for a long period of time to selectively bypass web content filtering blocks.
 
 Consider the case where you have a web content filtering categorization for a particular site that is correct. In this example, you have web content filtering set to block all social media, which is correct for your overall organizational goals. However, the marketing team has a real need to use a specific social media site for advertising and announcements. In that case, you can unblock the specific social media site using IP or URL indicators for the specific group (or groups) to use.
 
