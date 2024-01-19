@@ -92,7 +92,7 @@ If any customer's tenant data covered by the Advanced Data Residency feature isn
 
 After a customer receives their Advanced Data Residency licenses,  the customer needs to signal that they're ready to schedule data migration, if one is necessary. To signal your tenant is ready for its data migration, the customer administrator visits the Data Location section of the Microsoft 365 Admin Console within the **Settings -> Org Settings -> Organization Profile** area. From here the customer administrator is able to see the current location of their data-at-rest and what _Local Region Geography_ their customer data is migrated is eligible to select for their migration.
 
-:::image type="content" source="media\data-residency\1-adr-microsoft-365-admin-center.png" alt-text="<Screenshot of...>":::
+:::image type="content" source="media\data-residency\1-adr-microsoft-365-admin-center.png" alt-text="<Screenshot of M365 Admin Center.>":::
 
 > [!NOTE]
 > Data migration won't be scheduled until the customer administrator has completed this task. The migration expectation discussed elsewhere in this documentation won't start being tracked until this task has been completed.
@@ -100,11 +100,11 @@ After a customer receives their Advanced Data Residency licenses,  the customer 
 Following is an example Admin view that ADR-eligible customers should see prior to opting for migration to their Local Region Geography.
 
 
-:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move.png" alt-text="<Screenshot of...>":::
+:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move.png" alt-text="<Screenshot of Data Location Card Before Migration.>":::
 
 Once the customer signal is received, they're provided with their opt-in date and the target date of completion.
 
-:::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated.png" alt-text="<Screenshot of data location before migration.>":::
+:::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated.png" alt-text="<Screenshot of Data Location Card Migration Requested.>"lightbox="media/article-folder-name/3-adr-microsoft-365-data-location-card-move-initiated-expanded.png":::
 
 In addition to a notification posted to the Message Center, the Data Location section in the Microsoft 365 admin center updates as each workload requiring a data migration is complete.
 
@@ -119,6 +119,12 @@ Data moves are a back-end service operation with minimal effect on end users. We
 No action is required while Microsoft moves each service and associated customer data for your tenant to the applicable geography.
 
 Watch the Microsoft 365 Message Center for confirmation when moves for each workload service are complete.
+
+Below are screenshots of what you can expect during and after your migration, respectively:
+
+:::image type="content" source="media\data-residency\4-adr-microsoft-365-data-location-card-move-in-progress.png" alt-text="<Screenshot of Data Location Card Migration in Progress.>":::
+
+:::image type="content" source="media\data-residency\5-adr-microsoft-365-data-location-card-move-completed.png" alt-text="<Screenshot of Data Location Card Migration Completed.>":::
 
 ### Affect on End Users and Workloads
 
