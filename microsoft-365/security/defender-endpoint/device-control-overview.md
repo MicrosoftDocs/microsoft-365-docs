@@ -111,7 +111,7 @@ If you're interested in sample queries and configuration methods, see the follow
 
 - **Printer protection**. See [mdatp-devicecontrol/Printer Protection Samples](https://github.com/j0shbregman/mdatp-devicecontrol/tree/main/Printer%20Protection%20Samples).
 
-If you're new to device control, see [Get started with device control in Microsoft Defender for Endpoint](device-control-tutorials.md).
+If you're new to device control, see [Device control walkthroughs](device-control-walkthroughs.md).
 
 ## Prerequisites
 
