@@ -1,6 +1,6 @@
 ---
 title: Device control tutorials            
-description: Learn how to work with device control in Defender for Endpoint.           
+description: Learn how to work with device control in Defender for Endpoint.          
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
@@ -27,6 +27,8 @@ This article includes four tutorials you can use to learn how device control wor
 - Allow access for authorized USB devices
 - Allow different levels of access to different devices
 - Allow different levels of access to devices for specific users or groups
+
+## Explore the default state of device control
 
 By default, [device control](device-control-overview.md) is disabled and there are no restrictions on which devices can be added. The auditing of basic device control events is enabled for devices that are onboarded to Defender for Endpoint. This activity can be seen in the [device control report](device-control-report.md). Filtering on the built-in **PnP Audit Policy** shows devices that are connected to the endpoints in the environment, as shown in the following screenshot:
 
@@ -60,7 +62,7 @@ The status of device control (enabled/disabled, default enforcement, and last po
 
 :::image type="content" source="media/device-control-status.png" alt-text="Screenshot showing device control status." lightbox="media/device-control-status.png":::
 
-To get started, change the device control state to *enabled* on a test device.  Make sure the policy has been applied by checking [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
+To get started, change the device control state to *enabled* on a test device. Make sure the policy has been applied by checking [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
 
 :::image type="content" source="media/device-control-statusenabled.png" alt-text="Screenshot showing device control is enabled on a device.":::
 
@@ -89,18 +91,25 @@ For Intune, use a custom profile to set the device control settings, as shown in
 
 The previous screenshot lists these settings for Intune:
 
--	Set `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled` to `1`
--	Set `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` to `2` 
--	Set `./Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration` to `RemovableMediaDevices`
+- Set `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled` to `1`
+- Set `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` to `2` 
+- Set `./Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration` to `RemovableMediaDevices`
 
 Deploy your policy to the test device. Using [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), the default enforcement should now be Deny, as shown in the following screenshot:
 
 :::image type="content" source="media/device-control-status-defaultdeny.png" alt-text="Screenshot showing device control is set to DefaultDeny.":::
 
-Remove, and reinsert the USB device in the test machine.  Try to open the drive.  The drive isn't accessible.  A message appears that “Access is Denied”.
+Remove, and reinsert the USB device in the test machine. Try to open the drive. The drive isn't accessible, and a message appears indicating that access is denied.
 
+> [!NOTE]
+> Detailed instructions and examples are available [here](https://github.com/j0shbregman/mdatp-devicecontrol/tree/main/Getting%20Started).
 
-MORE TO COME
+## Deny all removable media
+
+In order to customize the behavior, device control uses policies that are a combination of groups and rules.  Start by deploying a policy that denies all access to all removable storage devices, and audits the event by sending a notification to the portal and the user.   The following image summarizes these settings:
+
+:::image type="content" source="media/deny-all-removable-media-settings.png" alt-text="Image depicting settings for device control to deny all removable media.":::
+
 
 ## Next steps
 
