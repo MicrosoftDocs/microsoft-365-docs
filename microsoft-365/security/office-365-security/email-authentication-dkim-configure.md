@@ -4,8 +4,8 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
-ms.date: 1/3/2024
+manager: deniseb
+ms.date: 1/19/2024
 audience: ITPro
 ms.topic: conceptual
 
@@ -211,7 +211,7 @@ Proceed if the domain satisfies these requirements.
    - **Rotate DKIM keys** is available.
    - **Last checked date**: The date and time should be more recent than the original value in Step 4.
 
-   :::image type="content" source="../../media/email-auth-dkim-rotate-keys.png" alt-text="The domain details flyout after DKIM is enabled for the domain." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim.png":::
+   :::image type="content" source="../../media/email-auth-dkim-domain-properties-rotate-keys.png" alt-text="The domain details flyout after DKIM is enabled for the domain." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim.png":::
 
 ### Use the Defender portal to customize DKIM signing of outbound messages using the \*.onmicrosoft.com domain
 
@@ -477,7 +477,7 @@ When you disable DKIM signing using a custom domain, you aren't completely disab
 
 4. In the domain details flyout that opens, slide the **Sign messages for this domain with DKIM signatures** toggle to **Disabled** :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::.
 
-   :::image type="content" source="../../media/email-auth-dkim-rotate-keys.png" alt-text="The domain details flyout with the Rotate DKIM keys button." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim.png":::
+   :::image type="content" source="../../media/email-auth-dkim-domain-properties-rotate-keys.png" alt-text="The domain details flyout with the Rotate DKIM keys button." lightbox="../../media/email-auth-dkim-domain-properties-create-dkim.png":::
 
 #### Use Exchange Online PowerShell to disable DKIM signing of outbound messages using a custom domain
 
