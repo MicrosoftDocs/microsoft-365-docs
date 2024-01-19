@@ -41,7 +41,7 @@ An Indicator of compromise (IoC) is a forensic artifact, observed on the network
 - signatures of malicious network traffic
 - URLs or domains that are known malware distributors
 
-To halt additional compromise or prevent breaches of known IoCs, successful IoC tools should be able to detect all malicious data that is enumerated by the tool's rule set. 
+To halt other compromise or prevent breaches of known IoCs, successful IoC tools should be able to detect all malicious data that is enumerated by the tool's rule set. 
 IoC matching is an essential feature in every endpoint protection solution. This capability gives SecOps the ability to set a list of indicators for detection and for blocking (prevention and response).
 
 Organizations can create indicators that define the detection, prevention, and exclusion of IoC entities. You can define the action to be taken as well as the duration for when to apply the action, and the scope of the device group to apply it to.
@@ -52,7 +52,7 @@ This video shows a walkthrough of creating and adding indicators:
 
 ### About Microsoft indicators
 
-As a general rule, you should only create indicators for known bad IoCs, or for any files / websites that should be explicitly allowed in your organization. For more information on the types of sites that MDE may block by default, see [Microsoft Defender SmartScreen overview](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview).
+As a general rule, you should only create indicators for known bad IoCs, or for any files / websites that should be explicitly allowed in your organization. For more information on the types of sites that Defender for Endpoint can block by default, see [Microsoft Defender SmartScreen overview](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview).
 
 False Positive (FP) refers to a SmartScreen false positive, Microsoft says it's malware / phish but it's actually a safe site, so customer wants to create an allow policy for this.
 
