@@ -158,12 +158,15 @@ Device control has lots of ways to group devices based on properties. See LINK N
 
 ## Allow different levels of access to different types of devices
 
-To create different behaviors for different devices, place them into separate groups. In our example, we use a group called `Read Only USBs`. 
+To create different behaviors for different devices, place them into separate groups. In our example, we use a group called `Read Only USBs`. The following image shows the settings we used:
 
-In the sample, the Read Only USB group contains a single device identified by its VID_PID. Before deploying the sample, change the value to the VID_PID to that of a 2nd test device. 
-Once the policy is deployed, insert test device 1 (Authorized USBs). Full access is allowed from this device. 
-Insert the 2nd test device (Read Only USB). The device is allowed, but is read only. Attempt to create a new file, or make changes to a file. Device control blocks it. 
-Inserting any other USB device will result in the “Deny all other USBs” policy being triggered and the access being denied.
+:::image type="content" source="media/device-control-read-only-usb.png" alt-text="Screenshot showing settings for different levels of access to different devices." lightbox="media/device-control-read-only-usb.png":::
+
+In our example, the Read Only USB group contains a single device identified by its `VID_PID`. Before deploying the sample, you can change the value of `VID_PID` to that of a second test device. 
+
+Once the policy is deployed, insert an authorized USB. You should see that full access is allowed. Now insert the second test device (Read Only USB). You can access the device with read-only permissions. Attempt to create a new file, or make changes to a file, and you should see device control blocks it. 
+
+If you insert any other USB device, it should be blocked due to the “Deny all other USBs” policy.
 
 ## Allow different levels of access to different types of devices by user or user group
 
