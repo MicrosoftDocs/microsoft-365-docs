@@ -90,7 +90,7 @@ Because each version of an application has a different file hash, using indicato
 
 #### Certificate indicators
 
-In some cases, a specific certificate that's used to sign a file or application that your organization is set to allow or block. Certificate indicators are supported in Defender for Endpoint, provided that they use the .CER or .PEM file format. See [Create indicators based on certificates](indicator-certificates.md) for more details.
+In some cases, a specific certificate that's used to sign a file or application that your organization is set to allow or block. Certificate indicators are supported in Defender for Endpoint, if they use the .CER or .PEM file format. See [Create indicators based on certificates](indicator-certificates.md) for more details.
 
 ## IoC detection engines
 
@@ -166,7 +166,7 @@ Customers might experience issues with alerts for Indicators of Compromise. The 
 - **Audit** - Alerts are generated based on the severity provided by the customer.
 - In some cases, alerts coming from EDR detections might take precedence over alerts stemming from antivirus blocks, in which case an information alert will be generated.
 
-Microsoft Store apps cannot be blocked by Defender because they are signed by Microsoft.
+Microsoft Store apps cannot be blocked by Defender because they're signed by Microsoft.
 
 ## Related articles
 
