@@ -548,6 +548,8 @@
         items:
         - name: Overview of device control
           href: device-control-overview.md
+        - name: Device control tutorials
+          href: device-control-tutorials.md
         - name: Device control policies
           href: device-control-policies-entries.md
         - name: Device installation
