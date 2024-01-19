@@ -55,7 +55,7 @@ MFA is an important first step in securing your company, and security defaults m
 ### To enable security defaults (or confirm they're already enabled)
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as least a [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator).
-1. Browse to **Identity** > **Overview** > **Properties**.
+1. Browse to **Identity** \> **Overview** \> **Properties**.
 1. Select **Manage security defaults**.
 1. Set **Security defaults** to **Enabled**.
 1. Select **Save**.
