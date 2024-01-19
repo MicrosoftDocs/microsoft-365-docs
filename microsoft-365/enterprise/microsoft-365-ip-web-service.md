@@ -612,8 +612,6 @@ You can use a few different methods to get email notifications when changes to t
 [Microsoft 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
 
 [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md)
-  
-[Office 365 endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
 [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
 
