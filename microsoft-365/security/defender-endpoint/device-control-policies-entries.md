@@ -4,7 +4,7 @@ description: Learn about device control policies and entries in Defender for End
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 12/15/2023
+ms.date: 01/19/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -22,7 +22,22 @@ audience: ITPro
 
 # Device control policies and entries in Microsoft Defender for Endpoint
 
-Device control policies define access for a set of devices. The devices that are in scope are determined by a list of included device groups and a list of excluded device groups. A policy applies if the device is in all of the included device groups and none of the excluded device groups. If no policies apply, then the default enforcement is applied. 
+This article describes device control policies, rules, entries, groups, and advanced conditions. Essentially, device control policies define access for a set of devices. The devices that are in scope are determined by a list of included device groups and a list of excluded device groups. A policy applies if the device is in all of the included device groups and none of the excluded device groups. If no policies apply, then the default enforcement is applied. 
+
+By default device control is disabled, so access to all types of devices is allowed. To learn more about device control, see [Device control in Microsoft Defender for Endpoint](device-control-overview.md).
+
+## Controlling default behavior
+
+When device control is enabled, it is enabled for all device types by default. The default enforcement can also be changed from *Allow* to *Deny*. Your security team can also configure the types of devices that device control protects. The following table below illustrates how various combinations of settings change the access control decision. 
+
+| Is device control enabled? | Default behavior | Device types |
+|---|---|---|
+| No | Access is allowed | - CD/DVD drives <br/>- Printers <br/>- Removable media devices <br/>- Windows portable devices |
+| Yes | (Not specified) <br/>Access is allowed | - CD/DVD drives <br/>- Printers <br/>- Removable media devices <br/>- Windows portable devices |
+| Yes | Deny | - CD/DVD drives <br/>- Printers <br/>- Removable media devices <br/>- Windows portable devices |
+| Yes | Deny removable media devices and printers | - Printers and removable media devices (blocked) <br/>- CD/DVD drives and Windows portable devices (allowed) | 
+
+
 
 The following table lists examples of device groups that you can use:
 
