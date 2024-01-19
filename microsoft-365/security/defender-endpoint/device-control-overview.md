@@ -4,7 +4,7 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/16/2024
+ms.date: 01/19/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -111,7 +111,7 @@ If you're interested in sample queries and configuration methods, see the follow
 
 - **Printer protection**. See [mdatp-devicecontrol/Printer Protection Samples](https://github.com/j0shbregman/mdatp-devicecontrol/tree/main/Printer%20Protection%20Samples).
 
-If you're new to device control, see [Get started with device control in Microsoft Defender for Endpoint](device-control-get-started.md).
+If you're new to device control, see [Get started with device control in Microsoft Defender for Endpoint](device-control-tutorials.md).
 
 ## Prerequisites
 
