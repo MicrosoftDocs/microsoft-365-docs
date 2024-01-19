@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 01/16/2024
 ---
 
 # AADSignInEventsBeta
@@ -61,7 +61,7 @@ Use this reference to construct queries that return information from the table. 
 |`ResourceTenantId`|`string`|Unique identifier of the tenant of the resource accessed|
 |`DeviceName`|`string`|Fully qualified domain name (FQDN) of the device|
 |`AadDeviceId`|`string`|Unique identifier for the device in Microsoft Entra ID|
-|`OSPlatform`|`string`|Platform of the operating system running on the machine. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.|
+|`OSPlatform`|`string`|Platform of the operating system running on the device. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.|
 |`DeviceTrustType`|`string`|Indicates the trust type of the device that signed in. For managed device scenarios only. Possible values are Workplace, AzureAd, and ServerAd.|
 |`IsManaged`|`int`|Indicates whether the device that initiated the sign-in is a managed device (1) or not a managed device (0)|
 |`IsCompliant`|`int`|Indicates whether the device that initiated the sign-in is compliant (1) or non-compliant (0)|

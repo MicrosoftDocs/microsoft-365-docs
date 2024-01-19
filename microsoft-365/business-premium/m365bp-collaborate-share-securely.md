@@ -2,13 +2,13 @@
 title: "Collaborate and share securely with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.date: 11/01/2023
+ms.date: 01/12/2024
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
