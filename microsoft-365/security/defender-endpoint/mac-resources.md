@@ -78,6 +78,8 @@ For further troubleshooting installation issues, please review [Troubleshoot ins
 
 ## Uninstalling
 
+There are several ways to uninstall Microsoft Defender for Endpoint on macOS. 
+
 > [!NOTE]
 > Before uninstalling Microsoft Defender for Endpoint on macOS, please grab the offboarding package per [Offboard non-Windows devices](configure-endpoints-non-windows.md).
 In your MDM solution such as Intune or JamF:
@@ -99,8 +101,6 @@ In your MDM solution such as Intune or JamF:
 > [!NOTE]
 > Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 > 
-There are several ways to uninstall Microsoft Defender for Endpoint on macOS. 
-
 ### Interactive uninstallation
 
 - Open **Finder > Applications**. Right click on **Microsoft Defender for Endpoint > Move to Trash**.
