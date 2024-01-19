@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: siosulli
 author: siosulli
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business

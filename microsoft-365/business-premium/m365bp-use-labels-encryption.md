@@ -4,13 +4,13 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.date: 11/01/2023
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - tier1
