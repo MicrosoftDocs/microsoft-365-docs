@@ -158,7 +158,7 @@ Device control has lots of ways to group devices based on properties. See LINK N
 
 ## Allow different levels of access to different types of devices
 
-To create different behaviors for different devices, place them into separate groups. In this example there is an additional group “Read Only USBs”. 
+To create different behaviors for different devices, place them into separate groups. In our example, we use a group called `Read Only USBs`. 
 
 In the sample, the Read Only USB group contains a single device identified by its VID_PID. Before deploying the sample, change the value to the VID_PID to that of a 2nd test device. 
 Once the policy is deployed, insert test device 1 (Authorized USBs). Full access is allowed from this device. 
