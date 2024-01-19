@@ -1,12 +1,8 @@
 ---
 title: Onboard non-Windows devices to the Microsoft Defender for Endpoint service
 description: Configure non-Windows devices so that they can send sensor data to the Microsoft Defender for Endpoint service.
-keywords: onboard non-Windows devices, macos, linux, device management, configure Microsoft Defender for Endpoint devices
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: security
 ms.author: siosulli
 author: siosulli
@@ -67,7 +63,7 @@ You'll need to take the following steps:
 
 For macOS and Linux devices, you can choose to offboard through Microsoft Defender for Endpoint. In the navigation pane, select **Settings** > **Offboard** > **Select Operating System to start the offboarding Process**.
 
-For details on offboarding Microsoft Defender on macOS, please review [Uninstalling Microsoft Defender for macOS](/microsoft-365/security/defender-endpoint/mac-resources?view=o365-worldwide).
+For details on offboarding Microsoft Defender on macOS, see [Uninstalling Microsoft Defender for macOS](/microsoft-365/security/defender-endpoint/mac-resources).
 
 You can also offboard non-Windows devices by disabling the third-party integration. Enable coverage for devices running non-Windows platforms by [integrating third-party solutions](https://security.microsoft.com/interoperability/partners).
 
