@@ -1,6 +1,6 @@
 ---
 title: Device control tutorials            
-description: Learn how to work with device control in Defender for Endpoint.          
+description: Learn how to work with device control in Defender for Endpoint.        
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
@@ -106,9 +106,9 @@ Remove, and reinsert the USB device in the test machine. Try to open the drive. 
 
 ## Deny all removable media
 
-In order to customize the behavior, device control uses policies that are a combination of groups and rules.  Start by deploying a policy that denies all access to all removable storage devices, and audits the event by sending a notification to the portal and the user.   The following image summarizes these settings:
+In order to customize the behavior, device control uses policies that are a combination of groups and rules. Start by deploying a policy that denies all access to all removable storage devices, and audits the event by sending a notification to the portal and the user. The following image summarizes these settings:
 
-:::image type="content" source="media/deny-all-removable-media-settings.png" alt-text="Image depicting settings for device control to deny all removable media.":::
+:::image type="content" source="media/deny-all-removable-media-settings.png" alt-text="Image depicting settings for device control to deny all removable media." lightbox="media/deny-all-removable-media-settings.png":::
 
 
 ## Next steps
