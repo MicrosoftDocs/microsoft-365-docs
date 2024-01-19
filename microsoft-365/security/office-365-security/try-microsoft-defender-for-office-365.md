@@ -297,7 +297,7 @@ In the **Manage MDO evaluation settings** flyout that opens, the following infor
   - **Safe Attachments**
   - **Anti-phishing**
 
-- **Users, groups, and domains** section: Select **Edit users, groups, and domains** to change who the evaluation or trial applies to as described earlier in [Set up an evaluation or trial in audit mode](#set-up-an-evaluation-or-trial-in-audit-mode). 
+- **Users, groups, and domains** section: Select **Edit users, groups, and domains** to change who the evaluation or trial applies to as described earlier in [Set up an evaluation or trial in audit mode](#set-up-an-evaluation-or-trial-in-audit-mode).
 
 - **Impersonation settings** section:
   - If impersonation protection isn't configured in the anti-phishing evaluation policy, select **Apply impersonation protection** to configure impersonation protection:
@@ -353,7 +353,7 @@ No special reports are created for **blocking mode**, so use the standard report
   You can filter many of the views in the Threat protection status report by the **Protected by** value **MDO** to see the effects of Defender for Office 365.
 
   - [View data by Overview](reports-email-security.md#view-data-by-overview)
-  
+
   - [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
     - Messages detected by [campaigns](campaigns.md) appear in **Campaign**.
     - Messages detected by Safe Attachments appear in **File detonation** and **File detonation reputation**.
@@ -408,7 +408,7 @@ In **audit mode**, you're looking for reports that show detections by the evalua
     - **Email links**:
       - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
       - **Detection** filters: **URL detonation reputation** and **URL detonation**.
-    - **Attachments in email**: 
+    - **Attachments in email**:
       - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
       - **Detection** filters: **File detonation** and **File detonation reputation**.
     - **Impersonation**
@@ -420,9 +420,9 @@ In **audit mode**, you're looking for reports that show detections by the evalua
     - **Embedded malware**
       - Report view: [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
       - **Detection** filters: **File detonation** and **File detonation reputation**.
-    - **Spoofed senders**: 
+    - **Spoofed senders**:
       - Report view: [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
-     - **Detection** filters: **Spoof intra-org**, **Spoof external domain**, and **Spoof DMARC**.
+      - **Detection** filters: **Spoof intra-org**, **Spoof external domain**, and **Spoof DMARC**.
 
   - **Real-time URL click protection** uses the [View data by URL click protection action in the URL protection report](reports-defender-for-office-365.md#view-data-by-url-click-protection-action-in-the-url-protection-report) that's filtered by **Evaluation: Yes**.
 

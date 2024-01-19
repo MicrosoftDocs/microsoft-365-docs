@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 11/15/2023
+ms.date: 01/17/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: backup
@@ -34,7 +34,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - You can create only one active backup policy per underlying service (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange online users). You can add or remove as many artifacts (sites or user accounts) to or from each active policy.
 
-- Once the sites or mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore. Backups will begin as soon as the policy is in effect, even if the restore points aren't yet available. This limitation will be completely removed shortly.
+- Once the sites or mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore. Backups begin as soon as the policy is in effect, even if the restore points aren't yet available. This limitation will be removed shortly.
 
 - The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 3,000 entries per CSV file.
 
@@ -43,6 +43,8 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 - The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy and won't be dynamically updated in the system if users are added or removed from the original security group, for example.
 
 - Backup and restore of tenants that have the multi-geo feature enabled for OneDrive and SharePoint might not work properly. We recommend not using the preview version of Backup until multi-geo support is fully enabled.
+
+- When you remove a OneDrive for Business account or a SharePoint site from a backup policy, you continue to be billed for the existing backups for the next one year of their retention. Additionally, the price of that backup will be proportional to the size of the site or account throughout that remaining year.
 
 ### Restore
 
