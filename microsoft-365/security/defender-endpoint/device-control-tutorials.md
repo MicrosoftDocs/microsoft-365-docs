@@ -176,13 +176,14 @@ The following screenshot shows the settings we used for our example:
 
 :::image type="content" source="media/device-control-different-access-users.png" alt-text="Screenshot showing settings for device control to allow different levels of access to specific users." lightbox="media/device-control-different-access-users.png":::
 
-By default, the sample uses the Global SID of S-1-1-0. Before deploying the policy, change the SID associated with the authorized USBs (writeable USBs) to User1 and change the SID associated with the Read Only USBs to User2. 
+By default, the sample uses the Global SID of `S-1-1-0`. Before deploying the policy, you can change the SID associated with the authorized USBs (writeable USBs) to `User1` and change the SID associated with the Read Only USBs to `User2`. 
 
-Once the policy is deployed – Only User1 will be able to write to the Authorized USBs, and only User2 will be able to read from the ReadOnly USBs. 
+Once the policy is deployed, only User1 has write access to the Authorized USBs, and only User2 has read access to the ReadOnly USBs. 
 
-Device control also supports group SIDs. Change the SID in the ReadOnly policy to a group that contains User2. Once the policy is re-deployed, the rules will be the same for User2 or any other user in that group.
+Device control also supports group SIDs. Change the SID in the read-only policy to a group that contains `User2`. Once the policy is re-deployed, the rules are the same for User2 or any other user in that group.
 
-NOTE:  For groups that are stored in Entra, use the object id instead of the SID to identify groups of users.
+> [!NOTE]
+> For groups that are stored in Microsoft Entra, use the object id instead of the SID to identify groups of users.
 
 ## Next steps
 
