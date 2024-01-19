@@ -6,18 +6,19 @@ ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
+- essentials-overview
 ms.custom: intro-overview
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 06/14/2023
+ms.date: 01/19/2024
 ---
 
 # Microsoft Defender for Endpoint
