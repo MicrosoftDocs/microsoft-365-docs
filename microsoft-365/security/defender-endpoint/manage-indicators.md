@@ -82,7 +82,7 @@ Here's an example of how that works:
 
 #### File hash indicators
 
-In some cases, creating a new indicator for a newly identified file IoC - as an immediate stop-gap measure - might be appropriate to block files or even applications. However, using indicators to attempt to block an application may not provide the expected results as applications are typically composed of many different files. The preferred methods of blocking applications are to use [Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview) or AppLocker.
+In some cases, creating a new indicator for a newly identified file IoC - as an immediate stop-gap measure - might be appropriate to block files or even applications. However, using indicators to attempt to block an application might not provide the expected results as applications are typically composed of many different files. The preferred methods of blocking applications are to use [Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview) or AppLocker.
 
 Because each version of an application has a different file hash, using indicators to block hashes isn't recommended.  
 
