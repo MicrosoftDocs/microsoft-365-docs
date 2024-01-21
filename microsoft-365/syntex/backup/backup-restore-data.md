@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 11/15/2023
+ms.date: 01/17/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: backup
@@ -48,7 +48,7 @@ The restore point frequency, also known as the [recovery point objective](backup
 |Type  |RPO for 0-14 days in the past  |RPO for 15-365 days in the past  |
 |---------|---------|---------|
 |Full OneDrive account and full SharePoint site restore    |15 minutes     |One week     |
-|Exchange Online   |10 seconds         |10 seconds         |
+|Exchange Online   |10 minutes         |10 minutes         |
 
 ## Restore data from backup for OneDrive, SharePoint, and Exchange
 

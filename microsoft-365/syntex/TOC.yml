@@ -191,6 +191,15 @@
         - name: Find and manage terms 
           href: taxonomy-tagging.md
 
+    - name: Document translation
+      items: 
+        - name: Overview 
+          href: translation-overview.md
+        - name: Admin setup 
+          href: translation-setup.md
+        - name: Translate documents 
+          href: translation.md
+
     - name: eSignature 
       items: 
         - name: Overview 
@@ -201,6 +210,8 @@
           href: esignature-send-requests.md
         - name: Review and sign a request 
           href: esignature-review-sign-requests.md
+        - name: Troubleshoot a request 
+          href: esignature-troubleshoot.md
 
     - name: Optical character recognition 
       items: 
