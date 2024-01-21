@@ -50,7 +50,7 @@ The following recommendations have been added as Microsoft Secure Score improvem
 
 - Ensure that SharePoint guest users cannot share items they don't own.
 
-**Defender for Cloud Apps support for multiple instances of an app**
+### Defender for Cloud Apps support for multiple instances of an app
 
 Microsoft Defender for Cloud Apps now supports Secure Score recommendations across multiple instances of the same app. For example, if you have multiple instances of AWS, you can configure and filter for Secure Score recommendations for each instance individually. For more information, see [Turn on and manage SaaS security posture management (SSPM)](/defender-cloud-apps/security-saas).
 
