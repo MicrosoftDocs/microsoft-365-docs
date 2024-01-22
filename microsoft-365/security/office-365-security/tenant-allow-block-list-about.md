@@ -55,7 +55,7 @@ These articles contain procedures in the Microsoft Defender portal and in PowerS
 Use the **Submissions** page (also known as *admin submission*) at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a> to create block entries for the following types of items as you report them as false negatives to Microsoft:
 
 - **Domains and email addresses**:
-  - Email messages from these senders are marked as *phishing* and then moved to quarantine.
+  - Email messages from these senders are marked as *high confidence phishing* and then moved to quarantine.
   - Users in the organization can't send email to these blocked domains and addresses. They receive the following non-delivery report (also known as an NDR or bounce message): `550 5.7.703 Your message can't be delivered because messages to XXX, YYY are blocked by your organization using Tenant Allow Block List.` The entire message is blocked for all internal and external recipients of the message, even if only one recipient email address or domain is defined in a block entry.
 
   > [!TIP]
