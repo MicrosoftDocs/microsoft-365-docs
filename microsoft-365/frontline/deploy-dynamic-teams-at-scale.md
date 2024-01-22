@@ -37,7 +37,7 @@ Then, you can choose which locations you want to create dynamic frontline teams 
 
 Team membership is automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams are updated accordingly.
 
-Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTnPdIRS4&t=461s) for an overview of the deploy frontline dynamic teams experience.
+Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTnPdIRS4&t=461s) for an overview of how to set up and deploy your frontline dynamic teams.
 
 > [!NOTE]
 > If you would like to provide feedback and improve this feature, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
