@@ -52,7 +52,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## January 2024
 
-- **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Celebrate your improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. To access Defender Boxed, in the Microsoft Defender portal, select **Your Defender Boxed**. For more information, see LINK.
+- **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Celebrate your improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. To access Defender Boxed, in the Microsoft Defender portal, select **Your Defender Boxed**. Act quickly! Defender Boxed is available for a short period of time. For more information, see LINK.
 
 
 ## November 2023
