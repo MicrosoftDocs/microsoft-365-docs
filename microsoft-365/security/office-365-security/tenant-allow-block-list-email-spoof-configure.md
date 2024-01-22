@@ -90,7 +90,7 @@ To create block entries for *domains and email addresses*, use either of the fol
 
 To create block entries for *spoofed senders*, see [this section](#create-block-entries-for-spoofed-senders) later in this article.
 
-Email from these blocked senders is marked as *phishing* and quarantined.
+Email from these blocked senders is marked as *high confidence phishing* and quarantined.
 
 > [!NOTE]
 > Currently, subdomains of the specified domain aren't blocked. For example, if you create a block entry for email from contoso.com, mail from marketing.contoso.com isn't also blocked. You need to create a separate block entry for marketing.contoso.com.
@@ -356,7 +356,7 @@ To create block entries for *spoofed senders*, use any of the following methods:
 >
 > Only the combination of the spoofed user *and* the sending infrastructure defined in the [domain pair](#domain-pair-syntax-for-spoofed-sender-entries) is blocked from spoofing.
 >
-> Email from these senders is marked as *phishing*. What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. For more information, see the **Phishing** detection action in [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+> Email from these senders is marked as *high confidence phishing*. What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. For more information, see the **Phishing** detection action in [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 >
 > When you configure a block entry for a domain pair, the spoofed sender becomes a manual block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
 >
