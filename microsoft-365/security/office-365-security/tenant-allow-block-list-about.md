@@ -52,7 +52,7 @@ These articles contain procedures in the Microsoft Defender portal and in PowerS
 > [!NOTE]
 > In the Tenant Allow/Block List, block entries take precedence over allow entries.
 
-Use the **Submissions** page (also known as *admin submission*) at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a> to create block entries for the following types of items as you report them as false negatives to Microsoft:
+Use the **Submissions** page (also known as *admin submission*) at <https://security.microsoft.com/reportsubmission> to create block entries for the following types of items as you report them as false negatives to Microsoft:
 
 - **Domains and email addresses**:
   - Email messages from these senders are marked as *high confidence phishing* and then moved to quarantine.
@@ -77,10 +77,10 @@ By default, block entries for **domains and email addresses**, **files** and **U
 
 In most cases, you can't directly create allow entries in the Tenant Allow/Block List:
 
-- **Domains and email addresses**, **files**, and **URLs**: You can't create allow entries directly in the Tenant Allow/Block List. Instead you use the **Submissions** page at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a> to report the **email**, **email attachment**, or **URL** to Microsoft as **Should not have been blocked (False positive)**.
+- **Domains and email addresses**, **files**, and **URLs**: You can't create allow entries directly in the Tenant Allow/Block List. Instead you use the **Submissions** page at <https://security.microsoft.com/reportsubmission> to report the **email**, **email attachment**, or **URL** to Microsoft as **Should not have been blocked (False positive)**.
 
 - **Spoofed senders**:
-  - If spoof intelligence has already blocked the message as spoofing, use the **Submissions** page at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a> to report the **email** to Microsoft as **Should not have been blocked (False positive)**.
+  - If spoof intelligence has already blocked the message as spoofing, use the **Submissions** page at <https://security.microsoft.com/reportsubmission> to report the **email** to Microsoft as **Should not have been blocked (False positive)**.
   - You can proactively create an allow entry for a spoofed sender on the **Spoofed sender** tab in the Tenant Allow/Block List before [spoof intelligence](anti-spoofing-spoof-intelligence.md) identifies and blocks the message as spoofing.
 
 The following list describes what happens in the Tenant Allow/Block List when you report something to Microsoft as a false positive on the **Submissions** page:
@@ -102,7 +102,7 @@ By default, allow entries for domains and email addresses, files, and URLs exist
 > [!IMPORTANT]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the creation of allow entries from the **Submissions** page at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a>. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
+> Microsoft manages the creation of allow entries from the **Submissions** page at <https://security.microsoft.com/reportsubmission>. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
 >
 > When the entity is encountered again (during mail flow or time of click), all filters associated with that entity are skipped.
 >
