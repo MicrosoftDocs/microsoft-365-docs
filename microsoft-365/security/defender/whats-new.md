@@ -34,7 +34,7 @@ You can also get product updates and important notifications through the [messag
 - **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Take a moment to celebrate your organization's improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. 
 
    - Defender Boxed opens automatically when you go to the **Incidents** page in the Microsoft Defender portal. 
-   - To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
+   - If you close Defender Boxed and you want to reopen it, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
    - Act quickly! Defender Boxed is available only for a short period of time.
 
 - Defender Experts for XDR now lets you [receive managed response notifications and updates using Teams](get-started-xdr.md#receive-managed-response-notifications-and-updates-in-microsoft-teams). You can also chat with Defender Experts regarding incidents where managed response is issued.
