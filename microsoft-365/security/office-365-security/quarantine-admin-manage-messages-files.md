@@ -361,7 +361,7 @@ In the **Submit to Microsoft for analysis** flyout that opens, configure the fol
 
 - **Select a reason for submitting to Microsoft**: Choose one of the following options:
 
-  - **I've confirmed it's clean** (default): Select this option if you are sure that it is clean and select **Next**. Then the following settings are available:
+  - **I've confirmed it's clean** (default): Select this option if you're sure that the message is clean, and then select **Next**. Then the following settings are available:
     - **Allow this email**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
    - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
     - **Allow entry note**: Enter an optional note that contains additional information.
