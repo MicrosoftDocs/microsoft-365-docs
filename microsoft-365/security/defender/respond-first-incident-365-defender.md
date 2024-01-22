@@ -1,12 +1,7 @@
 ---
 title: Responding to your first incident in Microsoft Defender XDR
 description: The basics of responding to your first incident in Microsoft Defender XDR.
-keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, self-study, ramp up, ramp-up, onboard, incident responder
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: diannegali
@@ -23,7 +18,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 08/21/2023
+ms.date: 01/22/2024
 ---
 
 # Responding to your first incident in Microsoft Defender XDR
