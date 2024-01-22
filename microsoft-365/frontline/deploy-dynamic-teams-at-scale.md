@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/1/2023
+ms.date: 01/29/2024
 
 ---
 
@@ -36,6 +36,8 @@ You also determine team structure and team owners.
 Then, you can choose which locations you want to create dynamic frontline teams for.
 
 Team membership is automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams are updated accordingly.
+
+Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTnPdIRS4&t=461s) for an overview of the deploy frontline dynamic teams experience.
 
 > [!NOTE]
 > If you would like to provide feedback and improve this feature, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
@@ -57,7 +59,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
 ## Set up your frontline dynamic teams
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
 2. In the table, choose **Setup**.
 
     :::image type="content" source="media/dtas-manage-setup.png" alt-text="Screenshot of the Manage frontline teams page, showing the Setup button." lightbox="media/dtas-manage-setup.png":::
@@ -118,7 +120,7 @@ You can manage your teams when changes happen in your organization.
 
 ### Create new teams for newly opened locations
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
 
 2. In the table, choose **Deploy**.
 
