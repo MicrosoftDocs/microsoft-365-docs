@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-accountability
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse

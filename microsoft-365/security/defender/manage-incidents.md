@@ -21,7 +21,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 01/02/2024
+ms.date: 01/22/2024
 ---
 
 # Manage incidents in Microsoft Defender XDR
@@ -42,6 +42,7 @@ You can manage incidents from **Incidents & alerts > Incidents** on the quick la
 Here are the ways you can manage your incidents:
 
 - [Edit the incident name](#edit-the-incident-name)
+- [Assign or change severity](#assign-or-change-incident-severity)
 - [Add incident tags](#add-incident-tags)
 - [Assign the incident to a user account](#assign-an-incident)
 - [Resolve them](#resolve-an-incident)
@@ -51,7 +52,7 @@ Here are the ways you can manage your incidents:
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/fig2-manageincidents.png" alt-text="The Manage incident pane in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig2-manageincidents.png":::
+:::image type="content" source="../../media/incidents-queue/fig2-new-manageincidents.png" alt-text="The Manage incident pane in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig2-new-manageincidents.png":::
 
 You can display this pane from the **Manage incident** link on the:
 
@@ -70,6 +71,10 @@ You can edit the incident name from the **Incident name** field on the **Manage 
 
 > [!NOTE]
 > Incidents that existed before the rollout of the automatic incident naming feature will retain their name.
+
+## Assign or change incident severity
+
+You can assign or change the severity of an incident from the **Severity** field on the **Manage incident** pane. The severity of an incident is determined by the highest severity of the alerts associated with it. The severity of an incident can be set to high, medium, low, or informational.
 
 ## Add incident tags
 
