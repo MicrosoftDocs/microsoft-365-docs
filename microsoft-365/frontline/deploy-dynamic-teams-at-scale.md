@@ -132,8 +132,8 @@ You can manage your teams when changes happen in your organization.
 
 ### Edit your frontline team settings
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
-2. In the **Deploy settings** column, choose **Deploy frontline teams** .
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
+2. In the **Deployment settings** column, choose **Deploy teams with dynamic membership** .
 3. Edit your settings on this page, and then select **Save**. Your settings might take several hours to update. See the following table for the effects of updating your settings.
 
     |Setting |Effect on existing frontline teams |Effect on new frontline teams |
