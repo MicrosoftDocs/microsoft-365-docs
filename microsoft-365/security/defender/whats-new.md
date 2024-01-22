@@ -35,7 +35,7 @@ You can also get product updates and important notifications through the [messag
 
 ## January 2024
 
-- **Defender Boxed is available for a limited period of time**. Celebrate your organization's improvements in security posture, response to detected threats (manual and automatic), blocked emails, and more. See LINK.
+- **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Celebrate your improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. To access Defender Boxed, in the Microsoft Defender portal, select **Your Defender Boxed**. For more information, see LINK.
 - Defender Experts for XDR now lets you [receive managed response notifications and updates using Teams](get-started-xdr.md#receive-managed-response-notifications-and-updates-in-microsoft-teams). You can also chat with Defender Experts regarding incidents where managed response is issued.
 - (GA) Microsoft Defender for Cloud alerts integration with Microsoft Defender XDR is now generally available. Learn more about the integration in [Microsoft Defender for Cloud in Microsoft Defender XDR](microsoft-365-security-center-defender-cloud.md).
 - **Activity log** is now available within an incident page. Use the activity log to view all audits and comments, and add comments to the log of an incident. For details, see [Activity log](manage-incidents.md#activity-log). 
