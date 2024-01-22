@@ -447,7 +447,7 @@ You can't remove Training campaigns with the **Status** value **In progress** or
 
 To remove an existing Training campaign from the **Training** tab, select the Training campaign by selecting the check box next to the name, select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears, and then select **Confirm** in the confirmation dialog.
 
-After you remove the Training campaign, it's no longer listed on the **Training** tab. 
+After you remove the Training campaign, it's no longer listed on the **Training** tab.
 
 ## Set the training threshold
 

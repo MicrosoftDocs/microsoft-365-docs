@@ -1,11 +1,11 @@
 ---
 ms.date: 07/11/2023
 title: Knowledge managers—Build and manage a knowledge base in Topics
-ms.author: daisyfeller
+ms.author: ergradel
 author: daisyfell
-manager: pamgreen
+manager: elizapo
 audience: admin
-ms.reviewer: cjtan
+ms.reviewer: daisyfeller
 ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
