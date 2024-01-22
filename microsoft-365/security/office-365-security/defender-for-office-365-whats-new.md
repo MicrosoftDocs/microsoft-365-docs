@@ -38,9 +38,6 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
-## January 2024
-
-- **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Celebrate your improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. To access Defender Boxed, in the Microsoft Defender portal, select **Your Defender Boxed**. Act quickly! Defender Boxed is available for a short period of time. For more information, see LINK.
 
 ## December 2023
 

@@ -50,15 +50,6 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on Android](android-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
-## January 2024
-
-- **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Take a moment to celebrate your organization's improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. 
-
-   - Defender Boxed opens automatically when you go to the **Incidents** page in the Microsoft Defender portal. 
-   - To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
-   - Act quickly! Defender Boxed is available only for a short period of time.
-
-
 ## November 2023
 
 - [Microsoft Defender Core service](microsoft-defender-antivirus-windows.md#microsoft-defender-core-service) is now available for consumers and is planned to begin rolling out to enterprise customers in early 2024.
