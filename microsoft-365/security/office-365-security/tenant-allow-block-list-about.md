@@ -55,7 +55,7 @@ These articles contain procedures in the Microsoft Defender portal and in PowerS
 Use the **Submissions** page (also known as *admin submission*) at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a> to create block entries for the following types of items as you report them as false negatives to Microsoft:
 
 - **Domains and email addresses**:
-  - Email messages from these senders are marked as *phishing* and then moved to quarantine.
+  - Email messages from these senders are marked as *high confidence phishing* and then moved to quarantine.
   - Users in the organization can't send email to these blocked domains and addresses. They receive the following non-delivery report (also known as an NDR or bounce message): `550 5.7.703 Your message can't be delivered because messages to XXX, YYY are blocked by your organization using Tenant Allow Block List.` The entire message is blocked for all internal and external recipients of the message, even if only one recipient email address or domain is defined in a block entry.
 
   > [!TIP]
@@ -91,7 +91,7 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 
 - **Email**: If a message was blocked by the EOP or Defender for Office 365 filtering stack, an allow entry might be created in the Tenant Allow/Block List:
   - If the message was blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md), an allow entry for the sender is created, and the entry appears on the **Spoofed senders** tab in the Tenant Allow/Block List.
-  - If the message was blocked by [user (or graph) impersonation protection in Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), an allow entry isn't created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
+  - If the message was blocked by [user (or graph) impersonation protection in Defender for Office 365](anti--policies-about.md#impersonation-settings-in-anti--policies-in-microsoft-defender-for-office-365), an allow entry isn't created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti- policy](anti--policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti--policies) that detected the message.
   - If the message was blocked due to file-based filers, an allow entry for the file is created, and the entry appears on the **Files** tab in the Tenant Allow/Block List.
   - If the message was blocked due to URL-based filters, an allow entry for the URL is created, and the entry appears on the **URL** tab in the Tenant Allow/Block List.
   - If the message was blocked for any other reason, an allow entry for the sender email address or domain is created, and the entry appears on the **Domains & addresses** tab in the Tenant Allow/Block List.
