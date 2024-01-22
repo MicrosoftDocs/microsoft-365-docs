@@ -24,12 +24,6 @@ ms.topic: conceptual
 
 Lists the new features and functionality in Microsoft Defender XDR.
 
-RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
-
-```http
-https://learn.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
-```
-
 For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft Defender for Office 365](../office-365-security/defender-for-office-365-whats-new.md)
