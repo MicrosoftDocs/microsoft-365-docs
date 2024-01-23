@@ -99,6 +99,8 @@ Network providers will additionally not be shown in a tenant or location view if
 
 The NPI Chart shows the network providers with the highest performance for Office 365 applications for customers who are in the same country/region and state as your office. We show availability and performance data related to these providers. This chart also has a target baseline that shows the best performance observed in the same country/region and state.
 
+Note: NPI Chart is currently available only for United States of America, the chart will be expanded soon to all locations globally.
+
 ## Related topics
 
 [Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md)
