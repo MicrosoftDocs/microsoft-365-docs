@@ -40,7 +40,7 @@ A smooth onboarding and initial training process is essential for new members of
 
 ## Ongoing training
 
-Use [Viva Learning](/viva/learning/overview-viva-learning) to streamline ongoing training for your frontline teams. Viva Learning pulls content from your chosen sources into Teams, making it easy for your frontline team to access. You can use Viva Learning to manage types of ongoing training including:
+Use [Viva Learning](/viva/learning/overview-viva-learning) to streamline ongoing training for your frontline teams. Viva Learning pulls content from your chosen sources into Teams, making it easy for your frontline teams to access. You can use Viva Learning to manage types of ongoing training including:
 
 - Maintaining and refreshing necessary skills such as customer service or procedures for regular tasks
 - Learning new skills such as management responsibilities or using new equipment
