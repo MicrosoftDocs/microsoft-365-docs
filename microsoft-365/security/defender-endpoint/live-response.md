@@ -68,7 +68,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   - **Windows Server 2016** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
     > [!NOTE]
-    > For Windows Server 2012R2 or 2016 you must have the [Unified Agent](update-agent-mma-windows.md#update-mma-on-your-devices) installed, and it is recommended to patch to latest sesnor version with the above KB.
+    > For Windows Server 2012R2 or 2016 you must have the [Unified Agent](update-agent-mma-windows.md#update-mma-on-your-devices) installed, and it is recommended to patch to latest sensor version with KB5005292.
     
   - **Windows Server 2019**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
