@@ -63,7 +63,7 @@ You'll need to take the following steps:
 
 For macOS and Linux devices, you can choose to offboard through Microsoft Defender for Endpoint. In the navigation pane, select **Settings** > **Offboard** > **Select Operating System to start the offboarding Process**.
 
-For details on offboarding Microsoft Defender on macOS, see [Uninstalling Microsoft Defender for macOS](/microsoft-365/security/defender-endpoint/mac-resources).
+For details on offboarding Microsoft Defender on macOS, see [Uninstalling Microsoft Defender for macOS](mac-resources.md).
 
 You can also offboard non-Windows devices by disabling the third-party integration. Enable coverage for devices running non-Windows platforms by [integrating third-party solutions](https://security.microsoft.com/interoperability/partners).
 
