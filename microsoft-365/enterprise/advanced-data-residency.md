@@ -86,23 +86,25 @@ When a customer has a mix of commercial and education license types including bo
 
 ## Data Migration Management
 
-If any customer's tenant data covered by the Advanced Data Residency feature isn't stored at rest within their eligible _Local Region Geography_, then a data migration to their _Local Region Geography_ is required.  If all customer tenant data covered by the Advanced Data Residency feature is already stored at rest within their eligible _Local Region Geography_, then no data migration to the _Local Region Geography_ is required.
+If any customer tenant data covered by the Advanced Data Residency feature is not stored at rest within the customer's eligible _Local Region Geography_, then a data migration to their _Local Region Geography_ is required.  If all customer tenant data covered by the Advanced Data Residency feature is already stored at rest within their eligible _Local Region Geography_, then no data migration to their _Local Region Geography_ is required.
 
 ### Starting Data Migration
 
-After a customer receives their Advanced Data Residency licenses,  the customer needs to signal that they're ready to schedule data migration, if one is necessary. To signal your tenant is ready for its data migration, the customer administrator visits the Data Location section of the Microsoft 365 Admin Console within the **Settings -> Org Settings -> Organization Profile** area. From here the customer administrator is able to see the current location of their data-at-rest and what _Local Region Geography_ their customer data is migrated is eligible to select for their migration.
+After a customer receives their Advanced Data Residency licenses,  the customer needs to signal that they're ready to schedule data migration, if one is necessary. To signal your tenant is ready for data migration, the customer administrator should visit the Data Location section of the Microsoft 365 Admin Console within the **Settings -> Org Settings -> Organization Profile** area. From here, the customer administrator is able to see the current location of the customer's data-at-rest and what _Local Region Geography_ their customer data is migrated to or is eligible to be migrated upon selection.
 
 :::image type="content" source="media\data-residency\1-adr-microsoft-365-admin-center.png" alt-text="<Screenshot of M365 Admin Center.>":::
 
 > [!NOTE]
-> Data migration won't be scheduled until the customer administrator has completed this task. The migration expectation discussed elsewhere in this documentation won't start being tracked until this task has been completed.
+> Data migration won't be scheduled until the customer administrator has completed this task. The migration process referenced later in this documentation won't start being tracked until this task has been completed.
 
-Following is an example Admin view that ADR-eligible customers should see prior to opting for migration to their Local Region Geography.
+Below is an example Admin view that ADR-eligible customers should see prior to opting for migration to their Local Region Geography.
 
 
 :::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move.png" alt-text="<Screenshot of Data Location Card Before Migration.>":::
 
 Once the customer signal is received, they're provided with their opt-in date and the target date of completion.
+
+Here is what you can expect to see once your migration has been initiated:
 
 :::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated.png" alt-text="<Screenshot of Data Location Card Migration Requested.>":::
 
@@ -110,7 +112,7 @@ In addition to a notification posted to the Message Center, the Data Location se
 
 ### Migration Expectations
 
-Microsoft uses reasonable efforts to try to complete an Advanced Data Residency add-on customer migration within 12 months from the time the customer administrator signals they're ready for migration. However, Microsoft might not be able to complete the migration within this timeframe for all customers. For example, larger or more complex customers or situations outside of Microsoft's control might require extra time to complete the migration. Advanced Data Residency add-on customers also receive prioritized migration services for their tenants over the legacy Move Program migration option. These migration expectations also apply to all ADR EDU customers as well. Customers utilizing the legacy Move Program for a data migration who don't have the Advanced Data Residency feature, should follow [Legacy Move Program Migration Expectations](m365-dr-legacy-move-program.md#migration-expectations).
+Microsoft uses reasonable efforts to try to complete an Advanced Data Residency add-on customer migration within 12 months from the time the customer administrator signals they're ready for migration. However, Microsoft might not be able to complete the migration within this timeframe for all customers. For example, larger or more complex customers or situations outside of Microsoft's control might require extra time to complete the migration. Advanced Data Residency add-on customers also receive prioritized migration services for their tenants over the legacy Move Program migration option. These migration expectations also apply to all ADR EDU customers as well.
 
 Data moves are a back-end service operation with minimal effect on end users. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there's nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is sent if needed.
 
@@ -126,9 +128,9 @@ Below are screenshots of what you can expect during and after your migration, re
 
 :::image type="content" source="media\data-residency\5-adr-microsoft-365-data-location-card-move-completed.png" alt-text="<Screenshot of Data Location Card Migration Completed.>":::
 
-### Affect on End Users and Workloads
+### Effect on End Users and Workloads
 
-As mentioned, data moves are a back-end operation with minimal if any effect on end users. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there's nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
+Data moves are a back-end service operation with minimal, if any, effect on end users. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there's nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
 
 ### Features Affected
 
@@ -136,9 +138,11 @@ Because of the complex nature of services that are available within the workload
 
 ### Status Notification
 
-Customers requiring a data migration can monitor the Message Center for updates. You can also check the Data Location section in the Microsoft 365 Admin console to see if a workload completes its migration.
+Customers requiring a data migration can monitor the Message Center for updates. You can also check the Data Location section in the Microsoft 365 Admin console to see if a workload has completed its migration.
 
-Due to the nature of how migrations work, there's no granular status provided to indicate just how close to completion a migration might be.
+Due to the nature of how migrations work, there's no granular status provided to indicate how close to completion a migration might be.
+
+For more information on Migration, please refer to [Legacy Move Program](m365-dr-legacy-move-program.md).
 
 ## Related articles
 
