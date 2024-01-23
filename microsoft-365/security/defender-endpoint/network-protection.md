@@ -358,15 +358,15 @@ Verify whether network protection is enabled on a local device by using Registry
 
 For additional information, see: [Turn on network protection](enable-network-protection.md)
 
-##### Network protection suggestion
+#### Network protection suggestion
 
 For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up (used in Windows Virtual Desktop on Azure), there are additional registry keys that must be enabled:
 
-**HKEY_LOCAL_MACHINE**\**SOFTWARE**\**Policies**\**Microsoft**\**Windows Defender**\**Windows Defender Exploit Guard**\**Network Protection**
+**HKEY_LOCAL_MACHINE**\\**SOFTWARE**\\**Microsoft**\\**Windows Defender**\\**Windows Defender Exploit Guard**\\**Network Protection**
 
-**AllowNetworkProtectionDownLevel** (dword) 1 (hex)
-**AllowNetworkProtectionOnWinServer** (dword) 1 (hex)
-**EnableNetworkProtection** (dword) 1 (hex)
+- **AllowNetworkProtectionOnWinServer** (dword) 1 (hex)
+- **EnableNetworkProtection** (dword) 1 (hex)
+- **AllowNetworkProtectionDownLevel** (dword) 1 (hex) - Windows Server 2012R2 and Windows Server 2016 only
 
 > [!NOTE]
 > Depending on your infrastructure, volume of traffic, and other conditions, **HKEY_LOCAL_MACHINE**\\**SOFTWARE**\\**Policies**\\**Microsoft**\\**Windows Defender** \\**NIS**\\**Consumers**\\**IPS** - **AllowDatagramProcessingOnWinServer (dword) 1 (hex)** can have an effect on network performance.
