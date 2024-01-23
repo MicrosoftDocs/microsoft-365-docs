@@ -4,7 +4,7 @@ description: Learn how to work with device control in Defender for Endpoint.
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
-ms.date: 01/19/2024
+ms.date: 01/22/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -21,13 +21,7 @@ audience: ITPro
 
 # Device control walkthroughs
 
-This article describes different ways to see how device control works. Beginning with default settings, each tutorial describes how to configure device control to achieve the following objectives:
-
-- Explore what happens with the default state of device control
-- Deny all removable media
-- Allow access for authorized USB devices
-- Allow different levels of access to different devices
-- Allow different levels of access to devices for specific users or groups
+This article describes different ways to see how device control works. Beginning with default settings, each section describes how to configure device control to achieve certain objectives.
 
 ## Step 1: Explore the default state of device control
 
