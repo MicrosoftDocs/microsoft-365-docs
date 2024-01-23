@@ -86,7 +86,7 @@ The following image depicts configuration settings for a device control policy i
 
 In the screenshot, the Included ID and Excluded ID are the references to included and excluded reusable settings groups. A policy can have multiple rules.
 
-The ordering of the rules is not honored by Intune. The rules can be evaluated in any order, so make sure to explicitly exclude groups of devices that are not in scope for the rule.
+The ordering of the rules isn't honored by Intune. The rules can be evaluated in any order, so make sure to explicitly exclude groups of devices that aren't in scope for the rule.
 
 ### [**XML (Windows)**](#tab/XML)
 
@@ -116,7 +116,7 @@ The following table provides more context for the XML code snippet:
 
 | Property Name | Description | Options |
 |---------|---------|---------|
-| `PolicyRule Id`  | GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting. | You can generate the ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid). |
+| `PolicyRule Id`  | GUID, a unique ID, represents the policy and is used in reporting and troubleshooting. | You can generate the ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid). |
 | `Name` | String, the name of the policy and will display on the toast based on the policy setting. | |
 | `IncludedIdList` | The group(s) that the policy will be applied to. If multiple groups are added, the media must be a member of each group in the list to be included. | The Group ID/GUID must be used at this instance. <br/><br/>The following example shows the usage of GroupID: `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | `ExcludedIDList` | The group(s) that the policy won't be applied to. If multiple groups are added, the media must be a member of a group in the list to be excluded. | The Group ID/GUID must be used at this instance. |
