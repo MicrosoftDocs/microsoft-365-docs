@@ -308,15 +308,15 @@ The following table describes the device type specific access and how they map t
 
 ## Groups
 
-Groups define criteria for filtering objects by their properties.  The object is assigned to the group if its properties match the properties defined for the group.   
+Groups define criteria for filtering objects by their properties. The object is assigned to the group if its properties match the properties defined for the group.   
 
 For example:
 
-- Allowed USBs = devices that match any of these manufacturers
-- Lost USBs = devices that match any of these serial numbers
-- Allowed Printers = devices that match any of these VID/PID 
+- Allowed USBs are all the devices that match any of these manufacturers
+- Lost USBs are all the devices that match any of these serial numbers
+- Allowed printers are all the devices that match any of these VID/PID 
 
-The properties can be matched in four ways:  MatchAll, MatchAny, MatchExcludeAll, MatchExcludeAny
+The properties can be matched in four ways:  `MatchAll`, `MatchAny`, `MatchExcludeAll`, and `MatchExcludeAny`
 
 - `MatchAll`: The properties are an "And" relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, the system checks to see whether the USB meets both values.
 - `MatchAny`: The properties are an "Or" relationship; for example, if administrator puts DeviceID and `InstancePathID`, for every connected USB, the system enforces as long as the USB has either an identical `DeviceID` or `InstanceID` value.
