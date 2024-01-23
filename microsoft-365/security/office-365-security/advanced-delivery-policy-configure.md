@@ -258,7 +258,7 @@ In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-
 New-ExoSecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
-Regardless of the Name value you specify, the rule name is _SecOpsOverrideRule_\<GUID\> where \<GUID\> is a unique GUID value (for example, 6fed4b63-3563-495d-a481-b24a311f8329).
+Regardless of the Name value you specify, the rule name will be `_Exe:SecOpsOverrid:<GUID\>` \[sic\] where \<GUID\> is a unique GUID value (for example, 312c23cf-0377-4162-b93d-6548a9977efb9).
 
 For detailed syntax and parameter information, see [New-ExoSecOpsOverrideRule](/powershell/module/exchange/new-ExoSecOpsOverrideRule).
 
@@ -280,7 +280,7 @@ In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-
 Get-ExoSecOpsOverrideRule
 ```
 
-Although the previous command should return only one rule, any rules that are pending deletion might also be included in the results.
+Although the previous command should return only one rule, a rule that's pending deletion might also be included in the results.
 
 This example identifies the valid rule (one) and any invalid rules.
 
@@ -290,7 +290,7 @@ Get-ExoSecOpsOverrideRule | Format-Table Name,Mode
 
 After you identify the invalid rules, you can remove them by using the **Remove-ExoSecOpsOverrideRule** cmdlet as described [later in this article](#use-powershell-to-remove-secops-override-rules).
 
-For detailed syntax and parameter information, see [Get-ExoSecOpsOverrideRule](/powershell/module/exchange/get-ExoSecOpsOverrideRule).
+For detailed syntax and parameter information, see [Get-ExoSecOpsOverrideRule](/powershell/module/exchange/get-exosecopsoverriderule).
 
 ### Use PowerShell to modify the SecOps override policy
 
@@ -315,7 +315,7 @@ For detailed syntax and parameter information, see [Set-SecOpsOverridePolicy](/p
 
 The **Set-ExoSecOpsOverrideRule** cmdlet doesn't modify the email addresses in the SecOps override rule. To modify the email addresses in the SecOps override rule, use the **Set-SecOpsOverridePolicy** cmdlet.
 
-For detailed syntax and parameter information, see [Set-ExoSecOpsOverrideRule](/powershell/module/exchange/set-ExoSecOpsOverrideRule).
+For detailed syntax and parameter information, see [Set-ExoSecOpsOverrideRule](/powershell/module/exchange/set-exosecopsoverriderule).
 
 ### Use PowerShell to remove the SecOps override policy
 
@@ -329,19 +329,21 @@ For detailed syntax and parameter information, see [Remove-SecOpsOverridePolicy]
 
 ### Use PowerShell to remove SecOps override rules
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following commands:
 
-```powershell
-Remove-ExoSecOpsOverrideRule -Identity <RuleIdentity>
-```
+- Remove any SecOps override rules:
 
-This example removes the specified SecOps override rule.
+  ```powershell
+  Get-ExoSecOpsOverridePolicy | Remove-ExoSecOpsOverrideRule
+  ```
 
-```powershell
-Remove-ExoSecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b24a311f8329
-```
+- Remove the specified SecOps override rule:
 
-For detailed syntax and parameter information, see [Remove-ExoSecOpsOverrideRule](/powershell/module/exchange/remove-ExoSecOpsOverrideRule).
+  ```powershell
+  Remove-ExoSecOpsOverrideRule -Identity "_Exe:SecOpsOverrid:312c23cf-0377-4162-b93d-6548a9977efb"
+  ```
+
+For detailed syntax and parameter information, see [Remove-ExoSecOpsOverrideRule](/powershell/module/exchange/remove-exosecopsoverriderule).
 
 ## PowerShell procedures for third-party phishing simulations in the advanced delivery policy
 
@@ -373,7 +375,7 @@ Configuring a third-party phishing simulation in PowerShell is a multi-step proc
 
 #### Step 1: Use PowerShell to create the phishing simulation override policy
 
-In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), this example creates the phishing simulation override policy.
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), this example creates the phishing simulation override policy.
 
 ```powershell
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
@@ -385,13 +387,13 @@ For detailed syntax and parameter information, see [New-PhishSimOverridePolicy](
 
 #### Step 2: Use PowerShell to create the phishing simulation override rule
 
-In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
-New-ExoPhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
+New-ExoPhishSimOverrideRule -Name <ArbitraryTextValue> -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
 ```
 
-Regardless of the Name value you specify, the rule name is _PhishSimOverrideRule_\<GUID\> where \<GUID\> is a unique GUID value (for example, a0eae53e-d755-4a42-9320-b9c6b55c5011).
+Regardless of the Name value you specify, the rule name will be `_Exe:PhishSimOverr:<GUID\>` \[sic\] where \<GUID\> is a unique GUID value (for example, 6fed4b63-3563-495d-a481-b24a311f8329).
 
 A valid IP address entry is one of the following values:
 
@@ -402,10 +404,10 @@ A valid IP address entry is one of the following values:
 This example creates the phishing simulation override rule with the specified settings.
 
 ```powershell
-New-ExoPhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
+New-ExoPhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
 ```
 
-For detailed syntax and parameter information, see [New-ExoPhishSimOverrideRule](/powershell/module/exchange/new-ExoPhishSimOverrideRule).
+For detailed syntax and parameter information, see [New-ExoPhishSimOverrideRule](/powershell/module/exchange/new-exophishsimoverriderule).
 
 #### Step 3: (Optional) Use PowerShell to identify the phishing simulation URLs to allow
 
@@ -427,7 +429,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 ### Use PowerShell to view the phishing simulation override policy
 
-In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), this example returns detailed information about the one and only phishing simulation override policy.
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), this example returns detailed information about the one and only phishing simulation override policy.
 
 ```powershell
 Get-PhishSimOverridePolicy
@@ -437,7 +439,7 @@ For detailed syntax and parameter information, see [Get-PhishSimOverridePolicy](
 
 ### Use PowerShell to view phishing simulation override rules
 
-In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), this example returns detailed information about phishing simulation override rules.
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)), this example returns detailed information about phishing simulation override rules.
 
 ```powershell
 Get-ExoPhishSimOverrideRule
@@ -453,7 +455,7 @@ Get-ExoPhishSimOverrideRule | Format-Table Name,Mode
 
 After you identify the invalid rules, you can remove them by using the **Remove-ExoPhishSimOverrideRule** cmdlet as described [later in this article](#use-powershell-to-remove-phishing-simulation-override-rules).
 
-For detailed syntax and parameter information, see [Get-ExoPhishSimOverrideRule](/powershell/module/exchange/get-ExoPhishSimOverrideRule).
+For detailed syntax and parameter information, see [Get-ExoPhishSimOverrideRule](/powershell/module/exchange/get-exophishsimoverriderule).
 
 ### Use PowerShell to view the allowed phishing simulation URL entries
 
@@ -467,7 +469,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ### Use PowerShell to modify the phishing simulation override policy
 
-In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
@@ -483,24 +485,32 @@ For detailed syntax and parameter information, see [Set-PhishSimOverridePolicy](
 
 ### Use PowerShell to modify phishing simulation override rules
 
-In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
-Set-ExoPhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
+Get-ExoPhishSimOverrideRule| Set-ExoPhishSimOverrideRule [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
 ```
 
-This example modifies the specified phishing simulation override rule with the following settings:
+or
+
+```powershell
+Set-ExoPhishSimOverrideRule -Identity <PhishSimOverrideRuleIdentity> [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
+```
+
+Use the **Get-ExoPhishSimOverrideRule** cmdlet to find the \<PhishSimOverrideRuleIdentity\> values. The name of the rule uses the following syntax: `_Exe:PhishSimOverr:<GUID\>` \[sic\] where \<GUID\> is a unique GUID value (for example, 6fed4b63-3563-495d-a481-b24a311f8329).
+
+This example modifies the (presumably only) phishing simulation override rule with the following settings:
 
 - Add the domain entry blueyonderairlines.com.
 - Remove the IP address entry 192.168.1.55.
 
-These changes don't affect existing entries.
+These changes don't affect existing entries in the rule.
 
 ```powershell
-Set-ExoPhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 -AddSenderDomainIs blueyonderairlines.com -RemoveSenderIpRanges 192.168.1.55
+Get-ExoPhishSimOverrideRule| Set-ExoPhishSimOverrideRule| Set-ExoPhishSimOverrideRule -AddSenderDomainIs blueyonderairlines.com -RemoveSenderIpRanges 192.168.1.55
 ```
 
-For detailed syntax and parameter information, see [Set-ExoPhishSimOverrideRule](/powershell/module/exchange/set-ExoPhishSimOverrideRule).
+For detailed syntax and parameter information, see [Set-ExoPhishSimOverrideRule](/powershell/module/exchange/set-exophishsimoverriderule).
 
 ### Use PowerShell to modify the allowed phishing simulation URL entries
 
@@ -509,7 +519,7 @@ You can't modify the URL values directly. You can [remove existing URL entries](
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), to modify other properties of an allowed phishing simulation URL entry (for example, the expiration date or comments), use the following syntax:
 
 ```powershell
-Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
+Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
 ```
 
 You identify the entry to modify by its URL values (the _Entries_ parameter) or the Identity value from the output of the **Get-TenantAllowBlockListItems** cmdlet (the _Ids_ parameter).
@@ -524,7 +534,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 
 ### Use PowerShell to remove a phishing simulation override policy
 
-In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), this example removes the phishing simulation override policy and the corresponding rule.
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), this example removes the phishing simulation override policy and the corresponding rule.
 
 ```powershell
 Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
@@ -534,26 +544,28 @@ For detailed syntax and parameter information, see [Remove-PhishSimOverridePolic
 
 ### Use PowerShell to remove phishing simulation override rules
 
-In [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), use the following syntax:
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following commands:
 
-```powershell
-Remove-ExoPhishSimOverrideRule -Identity <RuleIdentity>
-```
+- Remove any phishing simulation override rules:
 
-This example removes the specified phishing simulation override rule.
+  ```powershell
+  Get-ExoPhishSimOverridePolicy | Remove-ExoPhishSimOverrideRule
+  ```
 
-```powershell
-Remove-ExoPhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011
-```
+- Remove the specified phishing simulation override rule:
 
-For detailed syntax and parameter information, see [Remove-ExoPhishSimOverrideRule](/powershell/module/exchange/remove-ExoPhishSimOverrideRule).
+  ```powershell
+  Remove-ExoSPhishSimOverrideRule -Identity "_Exe:PhishSimOverr:6fed4b63-3563-495d-a481-b24a311f8329"
+  ```
+
+For detailed syntax and parameter information, see [Remove-ExoPhishSimOverrideRule](/powershell/module/exchange/remove-exophishsimoverriderule).
 
 ### Use PowerShell to remove the allowed phishing simulation URL entries
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
-Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery
+Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity> -ListType URL -ListSubType AdvancedDelivery
 ```
 
 You identify the entry to modify by its URL values (the _Entries_ parameter) or the Identity value from the output of the **Get-TenantAllowBlockListItems** cmdlet (the _Ids_ parameter).
