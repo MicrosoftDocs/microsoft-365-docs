@@ -328,8 +328,8 @@ Groups are used two way:  to select devices for inclusion/exclusion in rules, an
 | Type | Description | O/S | Include/Exclude Rules | Advanced conditions |
 |---|---|---|---|---|
 | Device (default) | Filter devices and printers | Windows/Mac | X |  |    
-Network    Filter network conditions    Windows        X
-VPN Connection    Filter VPN conditions    Windows        X
+| Network | Filter network conditions | Windows |  | X |
+| VPN Connection | Filter VPN conditions | Windows |  | X |
 File    Filter file properties    Windows        X
 Print Job    Filter properties of the file being printed    Windows        X
 
