@@ -7,7 +7,7 @@ ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/01/2023
+ms.date: 01/22/2024
 manager: dansimp
 audience: ITPro
 ms.collection: 
