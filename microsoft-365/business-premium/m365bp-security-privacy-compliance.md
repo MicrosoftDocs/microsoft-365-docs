@@ -8,7 +8,7 @@ manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.date: 1/19/2024
+ms.date: 1/22/2024
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH
@@ -18,20 +18,31 @@ ms.custom:
 
 # Security, privacy, and compliance in Microsoft 365 Business Premium
 
+At Microsoft, we're committed to security, privacy and compliance in Microsoft 365 Business Premium. Admins and compliance professionals can use the information in this article to see the steps we take to keep your organization and data secure.
+
 ## Security
+
+Microsoft 365 Business Premium uses the following security best practices and procedures for service-level security:
+
+- Defense in-depth.
+- Customer controls within the service.
+- Security hardening.
+- Operational best practices for Microsoft 365.
+
+For more information, see the [Microsoft Trust Center - Security](https://www.microsoft.com/security).
 
 ## Privacy
 
-<https://www.microsoft.com/trust-center/privacy>
+For information about privacy in Microsoft 365 Business Premium, see:
 
-<https://privacy.microsoft.com/>
-
-[Privacy & data management overview](/compliance/assurance/assurance-privacy)
+- [Microsoft Trust Center - Data protection and privacy](https://www.microsoft.com/trust-center/privacy).
+- [Privacy at Microsoft](https://privacy.microsoft.com/)
 
 ## Compliance
 
-## Related
+For information about compliance in Microsoft 365 Business Premium, see the [Microsoft Trust Center - Compliance](https://www.microsoft.com/trust-center/compliance/compliance-overview).
 
 ## Related resources
 
-[Small business Zero Trust guidance - Additional threat protection for Microsoft 365 Business Premium](/security/zero-trust/guidance-smb-partner#additional-threat-protection)
+- [Small business Zero Trust guidance - Additional threat protection for Microsoft 365 Business Premium](/security/zero-trust/guidance-smb-partner#additional-threat-protection)
+- [Privacy & data management overview](/compliance/assurance/assurance-privacy)
