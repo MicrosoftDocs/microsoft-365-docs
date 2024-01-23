@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 01/18/2024
+ms.date: 12/11/2023
 ---
 
 # Resources for Microsoft Defender for Endpoint on macOS
@@ -78,29 +78,11 @@ For further troubleshooting installation issues, please review [Troubleshoot ins
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender for Endpoint on macOS. 
-
 > [!NOTE]
-> Before uninstalling Microsoft Defender for Endpoint on macOS, please grab the offboarding package per [Offboard non-Windows devices](configure-endpoints-non-windows.md).
-In your MDM solution such as Intune or JamF:
+> Before uninstalling Microsoft Defender for Endpoint on macOS, please offboard per [Offboard non-Windows devices](configure-endpoints-non-windows.md).
 
-1. Create a new Group for the macOS'es that will be offboarded.  
+There are several ways to uninstall Microsoft Defender for Endpoint on macOS. Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
-1. Move the macOS machine to be offboarded into this new Group.
-
-1. Assign the new Group to the **excluded** policy for the "Tamper Protection" which should be in your Set Preferences, .plist.
-
-1. Assign the new Group to the **excluded** policy for the "Onboarding script" so that it's not re-onboarded.
-
-1. Create a new policy for the "Offboarding script" and then assign the new Group to be **included**.
-
-1. Assign the new Group to the **excluded** policy for the "Installation of the Microsoft Defender for macOS" so that it's not re-installed.
-
-1. Create a new policy for the "Uninstallation of Microsoft Defender for macOS app", and then assign the new Group to be **included**.
-
-> [!NOTE]
-> Note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
-> 
 ### Interactive uninstallation
 
 - Open **Finder > Applications**. Right click on **Microsoft Defender for Endpoint > Move to Trash**.
