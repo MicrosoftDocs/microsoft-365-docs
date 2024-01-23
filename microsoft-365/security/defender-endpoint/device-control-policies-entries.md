@@ -330,8 +330,8 @@ Groups are used two way:  to select devices for inclusion/exclusion in rules, an
 | Device (default) | Filter devices and printers | Windows/Mac | X |  |    
 | Network | Filter network conditions | Windows |  | X |
 | VPN Connection | Filter VPN conditions | Windows |  | X |
-File    Filter file properties    Windows        X
-Print Job    Filter properties of the file being printed    Windows        X
+| File | Filter file properties | Windows |  | X |
+| Print Job | Filter properties of the file being printed | Windows |  | X |
 
 The devices that are in scope for the policy determined by a list of included groups and a list of excluded groups.  A rule applies if the device is in all of the included groups and none of the excluded groups.  Groups can be composed from the properties of devices.  The following properties can be used:
 Property    Description    Windows devices    Mac devices    Printers
