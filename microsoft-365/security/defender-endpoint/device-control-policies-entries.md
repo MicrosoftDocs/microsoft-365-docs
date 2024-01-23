@@ -390,7 +390,10 @@ Device properties have slightly different labels in adavcned hunting. The table 
 | Serial Number | `SerialNumberId` |
 
 
-Note:  Make sure that the object selected has the correct Media Class for the policy.  In general, for removable storage use Class Name == USB. 
+> [!NOTE]
+> Make sure that the object selected has the correct Media Class for the policy. In general, for removable storage, use `Class Name == USB`.
+
+ 
 
 
 
