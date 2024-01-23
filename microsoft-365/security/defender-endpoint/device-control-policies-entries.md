@@ -186,3 +186,9 @@ All of the conditions in the entry must be true for the action to be applied.
 
 Entries can include user, group, or device restrictions based on Security ID (SID).  The SID of the user who's signed in can be retrieved by running the PowerShell command `whoami /user`.
 
+You can configure entries using Intune, an XML file in Windows, or a JSON file on Mac. Select each tab for more details.
+
+### [**Intune**](#tab/Removable)
+
+The following screenshot shows how you can manage entries in Intune. The **Access mask** field has options, such as **Read** (Disk Level Read = 1), **Write** (Disk Level Write = 2), **Execute** (Disk Level Execute = 4) and **Print** (Print = 64). Not all features are shown in the Intune user interface. For more details, see LINK NEEDED Managing Device Control in Intune (Windows).
+
