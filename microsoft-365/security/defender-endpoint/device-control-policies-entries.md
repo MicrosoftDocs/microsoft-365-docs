@@ -289,20 +289,20 @@ The following table describes the device type specific access and how they map t
 
 | Device Type ($type) | Device Type Specific Access | Description | Read | Write | Execute |
 |---|---|---|---|---|---|
-| appleDevice | backup_device |  | X |  |  |      
-| appleDevice | update_device |  |  | X |   |   
-| appleDevice | download_photos_from_device | download photo(s) from the specific iOS device to local machine | X  |  |  |         
-| appleDevice | download_files_from_device | download file(s) from the specific iOS device to local machine | X  |  |  |        
-| appleDevice | sync_content_to_device | sync content from local machine to specific iOS device |  | X |  |
-| portableDevice | download_files_from_device | X  |  |  |        
-| portableDevice | send_files_to_device  |  |  | X |  |     
-| portableDevice | download_photos_from_device |  | X |  |  |        
-| portableDevice | debug | ADB tool control |  |  | X |
-| removableMedia | read |  | X |  |  |        
-| removableMedia | write |  |  | X  |  |    
-| removableMedia | execute |  |  |  | X |
-| bluetoothDevice | download_files_from_device |  | X  |  |  |
-| bluetoothDevice | send_files_to_device |  |  | X |  |    
+| `appleDevice` | backup_device |  | X |  |  |      
+| `appleDevice` | update_device |  |  | X |   |   
+| `appleDevice` | download_photos_from_device | download photo(s) from the specific iOS device to local machine | X  |  |  |         
+| `appleDevice` | download_files_from_device | download file(s) from the specific iOS device to local machine | X  |  |  |        
+| `appleDevice` | sync_content_to_device | sync content from local machine to specific iOS device |  | X |  |
+| `portableDevice` | download_files_from_device | X  |  |  |        
+| `portableDevice` | send_files_to_device  |  |  | X |  |     
+| `portableDevice` | download_photos_from_device |  | X |  |  |        
+| `portableDevice` | debug | ADB tool control |  |  | X |
+| `removableMedia` | read |  | X |  |  |        
+| `removableMedia` | write |  |  | X  |  |    
+| `removableMedia` | execute |  |  |  | X |
+| `bluetoothDevice` | download_files_from_device |  | X  |  |  |
+| `bluetoothDevice` | send_files_to_device |  |  | X |  |    
 
 ---
 
@@ -334,8 +334,10 @@ Groups are used two way:  to select devices for inclusion/exclusion in rules, an
 | Print Job | Filter properties of the file being printed | Windows |  | X |
 
 The devices that are in scope for the policy determined by a list of included groups and a list of excluded groups.  A rule applies if the device is in all of the included groups and none of the excluded groups.  Groups can be composed from the properties of devices.  The following properties can be used:
-Property    Description    Windows devices    Mac devices    Printers
-FriendlyNameId    The friendly name in Windows Device Manager    Y    N    Y
+
+| Property | Description | Windows devices | Mac devices | Printers |
+|---|---|---|---|---|
+| FriendlyNameId    The friendly name in Windows Device Manager    Y    N    Y
 PrimaryId    The type of the device    Y    Y    Y
 VID_PID    Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device; Support wildcard. For example. 0751_55E0    Y    N    Y
 PrinterConnectionId    The type of printer connection: USB, Corporate, Network, Universal, File, Custom, Local    N    N    Y
