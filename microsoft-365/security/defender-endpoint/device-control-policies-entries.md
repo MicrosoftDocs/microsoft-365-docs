@@ -174,3 +174,11 @@ An entry supports the following optional conditions:
 - Parameters Condition:  Applies the action only if the parameters match (See Advanced Conditions)
 
 Entries can be further scoped to specific users and machines.  For example, allow read access to these USBs for this user only on this device.
+
+| Policy | Included Device Groups | Excluded Device Groups | Entry(ies) |
+|---|---|---|---|
+| Read only access for USBs | All Removable storage devices | Writeable USBs | Read Only Access |
+| Write access for USBs | Writeable USBs |  | Write Access for User 1<br/><br/>Write Access for User 2 on Machine Group A |
+
+All of the conditions in the entry must be true for the action to be applied.
+
