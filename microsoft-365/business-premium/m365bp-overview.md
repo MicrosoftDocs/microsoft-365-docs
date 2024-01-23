@@ -4,14 +4,14 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.reviewer: nehabha
 ms.audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.date: 11/02/2023
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-overview
 - m365solution-smb
@@ -38,7 +38,7 @@ You are your organization's first and best defense against hackers and cyberatta
 :::image type="content" source="media/sixmissions.png" alt-text="Diagram listing your six goals.":::
 
 |What to do|How to do it|
-|:---|:---|
+|---|---|
 |**Fortify your environment** <br/> (Tasks your admin completes.)|[**1. Sign in and set up your environment**](m365-business-premium-setup.md). Complete the basic setup process for Microsoft 365 Business Premium (or [Microsoft 365 for Campaigns](m365-campaigns-setup.md)). Add users, assign licenses, and configure your domain to work with Microsoft 365. Get a quick setup guide to share with employees.<br/><br/>[**2. Configure your security protection**](m365bp-security-overview.md). Set up critical front-line security measures to prevent cyberattacks. Set up multi-factor authentication (MFA), protect your admin accounts, and protect against malware and other threats. Get an overview of how to secure unmanaged and managed devices, and set up your information protection capabilities.|
 |**Train your team**.<br/>(Tasks everyone does.)|[**3. Set up unmanaged (BYOD) devices**](m365bp-set-up-unmanaged-devices.md). Set up all the unmanaged ("bring your own device," also referred to as BYOD) devices so they're used more safely as part of your ecosystem.<br/><br/>[**4. Use email securely**](m365bp-use-email-securely.md). Know what to watch for in your email, and train everyone on the necessary steps to protect yourself and others from attacks.<br/><br/>[**5. Collaborate and share securely**](m365bp-collaborate-share-securely.md). Share files with others and collaborate more securely by using Microsoft Teams, SharePoint, and OneDrive.|
 |**Safeguard managed devices**. <br/>(Tasks your admin or security team does.)|[**6. Set up and secure managed devices**](m365bp-protect-managed-devices.md). Enroll and secure computers, tablets, and phones so they can be protected from threats.|

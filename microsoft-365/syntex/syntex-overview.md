@@ -135,7 +135,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about taxonomy tagging in Microsoft Syntex.](taxonomy-tagging-overview.md)
 
-### Translation
+### Dpcument translation
 
 :::row:::
    :::column span="3":::

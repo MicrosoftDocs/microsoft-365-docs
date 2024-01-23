@@ -4,7 +4,7 @@ description: View, edit, create, and delete device protection policies in Micros
 search.appverid: MET150
 ms.author: siosulli
 author: siosulli
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -12,7 +12,7 @@ ms.date: 07/19/2023
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH
-ms.collection: 
+ms.collection:
 - SMB
 - m365-security
 - tier1
