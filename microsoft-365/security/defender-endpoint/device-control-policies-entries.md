@@ -402,16 +402,16 @@ Reusable settings in Intune map to device groups. You can configure reusable set
 
 There are two types of groups: Printer Device and Removable Storage.  Reusable settings support matching properties by either matching any or matching all or the settings. A removable storage setting has the following properties: 
 
-- BusId
-- DeviceId
-- FriendlyNameId
-- HardwareId
-- InstancePathId
-- PID
-- PrimaryId
-- SerialNumberId
-- VID
-- VID_PID
+- `BusId`
+- `DeviceId`
+- `FriendlyNameId`
+- `HardwareId`
+- `InstancePathId`
+- `PID`
+- `PrimaryId`
+- `SerialNumberId`
+- `VID`
+- `VID_PID`
 
 
 
