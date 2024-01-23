@@ -28,7 +28,7 @@ By default device control is disabled, so access to all types of devices is allo
 
 ## Controlling default behavior
 
-When device control is enabled, it is enabled for all device types by default. The default enforcement can also be changed from *Allow* to *Deny*. Your security team can also configure the types of devices that device control protects. The following table below illustrates how various combinations of settings change the access control decision. 
+When device control is enabled, it's enabled for all device types by default. The default enforcement can also be changed from *Allow* to *Deny*. Your security team can also configure the types of devices that device control protects. The following table below illustrates how various combinations of settings change the access control decision. 
 
 | Is device control enabled? | Default behavior | Device types |
 |---|---|---|
@@ -48,13 +48,13 @@ To further refine access to devices, device control uses policies.  A policy is 
 
 | Management tool    | Operating system | How rules and groups are managed |
 |---|---|---|
-| Intune – Device control policy |  Windows | Device and printer groups can be managed as re-usable settings and included in rules. Not all features are available in the device control policy (See LINK NEEDED Managing Device Control in Intune (Windows) for details) |
+| Intune – Device control policy |  Windows | Device and printer groups can be managed as reusable settings and included in rules. Not all features are available in the device control policy (See LINK NEEDED Managing Device Control in Intune (Windows) for details) |
 | Intune – Custom    | Windows | Each group/rule is stored as an XML string in custom configuration policy. The OMA-URI contains the GUID of the group/rule.  The GUID needs to be generated. |
 | Group Policy | Windows | The groups and rules are defined in separate XML settings in the GPO – Define device control policy groups, and Define device control policy rules. |
 | Intune | Mac | The rules and policies are combined into a single JSON and included in the mobileconfig file that is deployed via Intune |
 | JAMF | Mac | The rules and policies are combined into a single JSON and configured via JAMF as the Device Control Policy |
 
-Rules and groups are identified by Global Unique ID (GUIDs).  If device control policies are deployed using a management tool other than the Intune – Device Control Policy, the GUIDs will need to be generated. This can be done easily via [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).
+Rules and groups are identified by Global Unique ID (GUIDs).  If device control policies are deployed using a management tool other than the Intune – Device Control Policy, the GUIDs must be generated. This can be done easily via [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).
 
 For schema details, see [JSON schema for Mac](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/device_control_policy_schema.json).
 
@@ -220,3 +220,4 @@ The following table provides more context for the XML code snippet:
 | `Sid` | Local user SID or user SID group or the SID of the Microsoft Entra object or the Object ID. It defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the device. | SID | 
 | `ComputerSid` | Local computer SID or computer SID group or the SID of the Microsoft Entra object or the Object Id. It defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the device. If you want to apply an Entry to a specific user and specific device, add both SID and ComputerSID into the same Entry. | SID | 
 | Parameters | Condition for an entry, such as network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See LINK NEEDED Advanced Conditions  |
+
