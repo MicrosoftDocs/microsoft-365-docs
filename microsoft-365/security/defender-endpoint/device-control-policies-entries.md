@@ -88,4 +88,70 @@ In the screenshot, the Included ID and Excluded ID are the references to include
 
 The ordering of the rules is not honored by Intune. The rules can be evaluated in any order, so make sure to explicitly exclude groups of devices that are not in scope for the rule.
 
-### [**Intune**](#tab/Removable)
+### [**XML (Windows)**](#tab/XML)
+
+The following code snippet shows the syntax for a device control policy rule in XML:
+
+```xml
+
+<PolicyRule Id="{75a4e33a-5268-4552-bef2-e34dd0c39cb1}">
+  <Name>Read Only Access for USBs</Name>
+  <IncludedIdList>
+      <GroupId>{3f5253e4-0e73-4587-bb9e-bb29a2171694}</GroupId>
+  </IncludedIdList>
+  <ExcludedIdList>
+      <GroupId>{3f5253e4-0e73-4587-bb9e-bb29a2171695}</GroupId>
+  <ExcludedIdList>
+  <Entry Id="{e3837e60-5e56-43ce-8095-043ccd793eac}">
+   …
+  </Entry>
+  <Entry Id="{34413b98-8198-4e16-accf-c95c3c775ba3}">
+    …
+  </Entry>
+</PolicyRule>
+
+```
+
+The following table provides more context for the XML code snippet:
+
+| Property Name | Description | Options |
+|---------|---------|---------|
+| `PolicyRule Id`  | GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting. | You can generate the ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid). |
+| `Name` | String, the name of the policy and will display on the toast based on the policy setting. | |
+| `IncludedIdList` | The group(s) that the policy will be applied to. If multiple groups are added, the media must be a member of each group in the list to be included. | The Group ID/GUID must be used at this instance. <br/><br/>The following example shows the usage of GroupID: `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
+| `ExcludedIDList` | The group(s) that the policy won't be applied to. If multiple groups are added, the media must be a member of a group in the list to be excluded. | The Group ID/GUID must be used at this instance. |
+| `Entry` | One PolicyRule can have multiple entries; each entry with a unique GUID tells device control one restriction. | See Entry properties table below to get details. |
+
+### [**JSON (Mac)**](#tab/JSON)
+
+The following code snippet shows the syntax for a device control policy rule in JSON for macOS:
+
+```json
+{
+      "id": "75a4e33a-5268-4552-bef2-e34dd0c39cb1",
+      "name": "Read Only Access for USBs",
+      "includeGroups": [
+        "3f5253e4-0e73-4587-bb9e-bb29a2171694"
+      ],
+      “includedGroups”:[
+         "3f5253e4-0e73-4587-bb9e-bb29a2171695"
+      ]
+      "entries": [
+        …
+      ]
+    }
+
+```
+
+The following table provides more context for the XML code snippet:
+
+| Property name | Description | Options |
+|---|---|---|
+| `id` | GUID, a unique ID, represents the rule and will be used in the policy. | `New-Guid (Microsoft.PowerShell.Utility) - PowerShell<br/>uuidgen` |
+| `name` | String, the name of the policy and will display on the toast based on the policy setting. |  |
+| `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy applies to any media in all those groups. If not specified, the rule applies to all devices. | The id value inside the group must be used in this instance. If multiple groups are in the includeGroups, it's `AND`. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
+| `excludeGroups` | The group(s) that the policy doesn't apply to. | The `id` value inside the group must be used in this instance. If multiple groups are in the excludeGroups, it's `OR`. |
+| `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction. | See entry properties table later in this article to get the details. |
+
+---
+
