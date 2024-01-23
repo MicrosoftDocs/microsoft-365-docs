@@ -378,6 +378,19 @@ The properties in the device manager map to device control as shown in the follo
 | DeviceInstancePath | `InstancePathId` |
 
 
+### Using reports and advanced hunting to determine properties of devices
+
+Device properties have slightly different labels in adavcned hunting. The table below maps the labels in the portal to the `propertyId` in a device control policy.
+
+| Microsoft Defender Portal property | Device control property Id |
+|---|---|
+| Media name | `FriendlyNameId` |
+| Vendor Id | `HardwareId` |
+| DeviceId | `InstancePathId` |
+| Serial Number | `SerialNumberId` |
+
+
+Note:  Make sure that the object selected has the correct Media Class for the policy.  In general, for removable storage use Class Name == USB. 
 
 
 
