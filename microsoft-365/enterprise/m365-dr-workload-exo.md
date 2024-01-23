@@ -308,6 +308,10 @@ This example creates a new user account for Elizabeth Brunner with the following
 - License: `contoso:ENTERPRISEPREMIUM` (E5)
 - Location: Australia (AUS)
 
+First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md) using Microsoft Graph Powershell.
+
+After you connect, use the following syntax to create an individual account:
+
 ```powershell
 $user = New-MgUser -DisplayName "Elizabeth Brunner" -GivenName "Elizabeth" -Surname "Brunner" -UserPrincipalName "elizabethb@contoso.onmicrosoft.com" -AccountEnabled -MailNickname "ElizabethB" -PasswordProfile @{ ForceChangePasswordNextSignIn = $true; Password = "TempPassword123" } -UsageLocation "AUS"
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'ENTERPRISEPREMIUM'
