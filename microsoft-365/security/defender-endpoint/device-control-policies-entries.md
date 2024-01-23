@@ -296,8 +296,8 @@ The following table describes the device type specific access and how they map t
 | appleDevice | sync_content_to_device | sync content from local machine to specific iOS device |  | X |  |
 | portableDevice | download_files_from_device | X  |  |  |        
 | portableDevice | send_files_to_device  |  |  | X |  |     
-| portableDevice | download_photos_from_device        X        
-portableDevice    debug    ADB tool control            X
+| portableDevice | download_photos_from_device |  | X |  |  |        
+| portableDevice | debug | ADB tool control |  |  | X |
 removableMedia    read        X        
 removableMedia    write            X    
 removableMedia    execute                X
