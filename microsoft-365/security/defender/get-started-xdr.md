@@ -148,7 +148,7 @@ Apart from email and in-portal chat, you also have to option to use Microsoft Te
 4. Select **View readiness assessment** to complete the necessary actions required to [optimize your security posture](#prepare-your-environment-for-the-defender-experts-service).
 
 > [!NOTE]
-> To set up the Teams application, you must have either the Global Admin or Security Admin role assigned, and a Microsoft Teams license.
+> To set up the Defender Experts Teams application, you must have either the **Global administrator** or **Security administrator** role assigned, and a Microsoft Teams license.
 
 To turn on Teams notifications and chat after the initial setup, go to **Settings** > **Defender Experts** > **Teams**.
 
