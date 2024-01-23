@@ -413,7 +413,12 @@ There are two types of groups: Printer Device and Removable Storage.  Reusable s
 - `VID`
 - `VID_PID`
 
+A printer device setting has the following properties: 
 
+- `FriendlyNameId`
+- `PrimaryId`
+- `PrinterConnectionId`
+- `VID_PID`
 
 
 
