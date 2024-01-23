@@ -2,7 +2,7 @@
 title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
 description: Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there's a critical incident
-keywords: XDR, protected assets, defender experts for xdr, set up microsoft xdr, set up permissions in xdr, managed detection and response (MDR) service, service delivery manager, readiness, threat hunting and analysis, actions needed xdr
+keywords: XDR, protected assets, defender experts for xdr, set up microsoft xdr, set up permissions in xdr, managed detection and response (MDR) service, service delivery manager, managed response in Teams, readiness, threat hunting and analysis, actions needed xdr
 ms.service: defender-experts
 ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/18/2024
+ms.date: 01/23/2024
 ---
 
 # Get started with Microsoft Defender Experts for XDR
@@ -146,6 +146,9 @@ Apart from email and in-portal chat, you also have to option to use Microsoft Te
 2. Select **Next** to review your settings.
 3. Select **Submit**. The step-by-step guide then completes the initial setup.
 4. Select **View readiness assessment** to complete the necessary actions required to [optimize your security posture](#prepare-your-environment-for-the-defender-experts-service).
+
+> [!NOTE]
+> To set up the Teams application, you must have either the Global Admin or Security Admin role assigned, and a Microsoft Teams license.
 
 To turn on Teams notifications and chat after the initial setup, go to **Settings** > **Defender Experts** > **Teams**.
 
