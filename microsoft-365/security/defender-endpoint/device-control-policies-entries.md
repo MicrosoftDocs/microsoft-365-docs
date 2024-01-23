@@ -221,3 +221,26 @@ The following table provides more context for the XML code snippet:
 | `ComputerSid` | Local computer SID or computer SID group or the SID of the Microsoft Entra object or the Object Id. It defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the device. If you want to apply an Entry to a specific user and specific device, add both SID and ComputerSID into the same Entry. | SID | 
 | Parameters | Condition for an entry, such as network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See LINK NEEDED Advanced Conditions  |
 
+
+### [**JSON (Mac)**](#tab/JSON)
+
+The following code snippet shows the syntax for a device control entry in JSON for macOS:
+
+```json
+
+{
+          "$type": "generic",
+          "id": "e3837e60-5e56-43ce-8095-043ccd793eac",
+          "enforcement": {
+            "$type": "allow"
+          },
+          "access": [
+            "generic_read"
+          ]
+}
+
+```
+
+The following table provides more context for the JSON code snippet:
+
+
