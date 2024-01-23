@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.collection: privacy-microsoft365
 description: "Learn how Microsoft Copilot for Microsoft 365 uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 01/16/2024
+ms.date: 01/23/2024
 ---
 
 # Data, Privacy, and Security for Microsoft Copilot for Microsoft 365
@@ -32,7 +32,7 @@ The information in this article is intended to help provide answers to the follo
 - [How does Microsoft Copilot for Microsoft 365 protect organizational information and data?](#how-does-microsoft-copilot-for-microsoft-365-protect-organizational-data)
 - [What data is stored about user interactions with Microsoft Copilot for Microsoft 365?](#data-stored-about-user-interactions-with-microsoft-copilot-for-microsoft-365)
 - [What data residency commitments does Microsoft Copilot make?](#microsoft-copilot-for-microsoft-365-and-data-residency)
-- [Can Microsoft Copilot for Microsoft 365 use public web content in its responses?](#microsoft-copilot-for-microsoft-365-and-public-web-content)
+- [Can Microsoft Copilot for Microsoft 365 use web content in its responses?](#microsoft-copilot-for-microsoft-365-and-web-content)
 - [What extensibility options are available for Microsoft Copilot for Microsoft 365](#extensibility-of-microsoft-copilot-for-microsoft-365)
 - [How does Microsoft Copilot for Microsoft 365 meet regulatory compliance requirements?](#meeting-regulatory-compliance-requirements)
 - [Do controls for connected experiences in Microsoft 365 Apps apply to Microsoft Copilot for Microsoft 365?](#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences)
@@ -56,7 +56,7 @@ When you enter prompts using Microsoft Copilot for Microsoft 365, the informatio
 > [!NOTE]
 > When using Microsoft Copilot for Microsoft 365, your organization’s data might leave the Microsoft 365 service boundary under the following circumstances:
 >
-> - When you allow Microsoft Copilot with Graph-grounded chat to reference public web content. The query sent to Bing might include your organization’s data. For more information, see [Microsoft Copilot for Microsoft 365 and public web content](#microsoft-copilot-for-microsoft-365-and-public-web-content).
+> - When you allow Microsoft Copilot with Graph-grounded chat to reference web content. The query sent to Bing might include your organization’s data. For more information, see [Microsoft Copilot for Microsoft 365 and web content](#microsoft-copilot-for-microsoft-365-and-web-content).
 > - When you’re using plugins to help Microsoft Copilot for Microsoft 365 to provide more relevant information. Check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For information, see [Extensibility of Microsoft Copilot for Microsoft 365](#extensibility-of-microsoft-copilot-for-microsoft-365).
 
 Abuse monitoring for Microsoft Copilot for Microsoft 365 occurs in real-time, without providing Microsoft any standing access to customer data, either for human or for automated review. While abuse moderation, which includes human review of content, is available in Azure OpenAI, Microsoft Copilot for Microsoft 365 services have opted out of it. Microsoft 365 data isn’t collected or stored by Azure OpenAI.
@@ -92,29 +92,27 @@ Copilot for Microsoft 365 is upholding data residency commitments as outlined in
 
 Microsoft [Advanced Data Residency (ADR)](/microsoft-365/enterprise/advanced-data-residency) and [Multi-Geo Capabilities](/microsoft-365/enterprise/microsoft-365-multi-geo) offerings will include data residency commitments for Copilot for Microsoft 365 customers later in 2024. For EU customers, Copilot for Microsoft 365 is an EU Data Boundary service. Customers outside the EU may have their queries processed in the US, EU, or other regions.
 
-## Microsoft Copilot for Microsoft 365 and public web content
+## Microsoft Copilot for Microsoft 365 and web content
 
-Microsoft Copilot with Graph-grounded chat can reference public web content from the Bing search index to ground user prompts and responses. Based on the user’s prompt, Copilot for Microsoft 365 determines whether it needs to use Bing to query public web content to help provide a relevant response to the user. There are [controls available to manage the use of public web content](#controls-available-to-manage-the-use-of-public-web-content) for both admins and users.
+Microsoft Copilot with Graph-grounded chat can reference web content from the Bing search index to ground user prompts and responses. Based on the user’s prompt, Copilot for Microsoft 365 determines whether it needs to use Bing to query web content to help provide a relevant response to the user. There are [controls available to manage the use of web content](#controls-available-to-manage-the-use-of-web-content) for both admins and users.
 
 > [!NOTE]
-> Public web content grounding in Copilot uses only the Bing Search service. Copilot with commercial data protection (previously named Bing Chat Enterprise) is a separate offering and not involved with public web content grounding.
+> Web grounding in Copilot uses only the Bing Search service. Copilot with commercial data protection (previously named Bing Chat Enterprise) is a separate offering and not involved with web grounding.
 
-### Details on how public web content grounding works
+### Details on how web grounding works
 
-When public web grounding is enabled, Copilot for Microsoft 365 may automatically generate a web search query, if Copilot for Microsoft 365 determines that web data can improve the quality of the response. The search query is based on the user’s prompt, Copilot interaction history, and relevant data the user has access to in Microsoft 365. This web search query might be displayed to the user after the prompt is entered. For example, the user might see the phrase "searching for..." followed by the search query. The query is passed to the [Bing Search API](/bing/search-apis/bing-web-search/overview), which is part of the Bing Search service, to retrieve information from the web to ground a response.
+When web grounding is enabled, Copilot for Microsoft 365 may automatically generate a web search query, if Copilot for Microsoft 365 determines that web data can improve the quality of the response. The search query is based on the user’s prompt, Copilot interaction history, and relevant data the user has access to in Microsoft 365. This web search query might be displayed to the user after the prompt is entered. For example, the user might see the phrase "searching for..." followed by the search query. The query is passed to the [Bing Search API](/bing/search-apis/bing-web-search/overview), which is part of the Bing Search service, to retrieve information from the web to ground a response.
 
-Web search queries might not contain all the words from a user's prompt. They're generally based off a few terms used to find relevant information on the web. However, they may still include some confidential data, depending on what the user included in the prompt. Queries sent to the Bing Search API by Copilot for Microsoft 365 are disassociated from the user ID or tenant ID.
-
-Once web data is received, Copilot for Microsoft 365 passes the web data to the LLM to generate a richer response by including the latest information from the web and any relevant citations. In this process, the user's prompts and Copilot's responses remain within the Microsoft 365 service boundary. Only the search query, which is abstracted from the user's prompt and grounding data, goes to the Bing Search API outside the boundary.
+Once web data is received, Copilot for Microsoft 365 passes the web data to the LLM to generate a richer response by including the latest information from the web and any relevant citations. In this process, the user's prompts and Copilot's responses remain within the Microsoft 365 service boundary. Only the search query, which is abstracted from the user's prompt and grounding data, goes to the Bing Search API outside the boundary. Queries sent to the Bing Search API by Copilot for Microsoft 365 are disassociated from the user ID or tenant ID. Web search queries might not contain all the words from a user's prompt. They're generally based off a few terms used to find relevant information on the web. However, they may still include some confidential data, depending on what the user included in the prompt.
 
 Microsoft Bing is a separate business from Microsoft 365 and data is managed independently of Microsoft 365. The use of Bing is covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). The [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) doesn’t apply to the use of Bing.
 
-### Controls available to manage the use of public web content
+### Controls available to manage the use of web content
 
-Admins can prevent their users from referencing public web content in their requests. For more information, see [Manage access to public web content in Microsoft Copilot for Microsoft 365 responses](/microsoft-365-copilot/manage-public-web-access). Even when allowed by the admin, users still have the option whether or not they want to reference public web content in their requests. For more information, see [Use additional data sources with Microsoft 365 Copilot](https://support.microsoft.com/topic/b41e679a-ee19-4a8d-ab5c-ebd00ff46d71).
+Admins can prevent their users from referencing web content in their requests. For more information, see [Manage access to web content in Microsoft Copilot for Microsoft 365 responses](/microsoft-365-copilot/manage-public-web-access). Even when allowed by the admin, users still have the option whether or not they want to reference web content in their requests. For more information, see [Use additional data sources with Microsoft 365 Copilot](https://support.microsoft.com/topic/b41e679a-ee19-4a8d-ab5c-ebd00ff46d71).
 
 > [!NOTE]
-> The policy settings that control the use of optional connected experiences in Microsoft 365 Apps don’t apply to Microsoft Copilot for Microsoft 365 and public web content.
+> The policy settings that control the use of optional connected experiences in Microsoft 365 Apps don’t apply to Microsoft Copilot for Microsoft 365 and web content.
 
 ## Extensibility of Microsoft Copilot for Microsoft 365
 
