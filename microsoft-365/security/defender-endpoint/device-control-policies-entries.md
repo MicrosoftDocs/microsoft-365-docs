@@ -169,7 +169,7 @@ If device control is configured, and a user attempts to use a device that's not 
 An entry supports the following optional conditions:
 
 - Access Condition: Applies the action only to the access defined in the access mask
-- User Condition : Applies the action only to the user/group identified by the SID
+- User Condition: Applies the action only to the user/group identified by the SID
 - Machine Condition:  Applies the action only to the machine/group identified by the SID
 - Parameters Condition:  Applies the action only if the parameters match (See Advanced Conditions)
 
@@ -212,7 +212,7 @@ The following table provides more context for the XML code snippet:
 |---|---|---|
 | Entry Id | GUID, a unique ID, represents the entry and is used in reporting and troubleshooting. | You can generate the GUID by using PowerShell. |
 | Type | Defines the action for the removable storage groups in `IncludedIDList`. <br/>- Allow <br/>- Deny <br/>- AuditAllowed: Defines notification and event when access is allowed <br/>- AuditDenied: Defines notification and event when access is denied; works together with a Deny entry. <br/><br/>When there are conflict types for the same media, the system applies the first one in the policy. An example of a conflict type is Allow and Deny. | - Allow <br/>- Deny <br/>- AuditAllowed <br/>- AuditDenied |
-| Option | If type is `Allow` | - 0: nothing <br/>- 4: disable AuditAllowed and AuditDenied for this entry. If Allow occurs and the AuditAllowed is setting is configured, events are not generated.<br/>- 8: create a copy of the file as evidence, and generate a `RemovableStorageFileEvent` event. This setting must be used together with the **Set location for a copy of the file** setting in Intune or Group Policy. <br/> For more details, see LINK NEEDED Feature evidence. |
+| Option | If type is `Allow` | - 0: nothing <br/>- 4: disable AuditAllowed and AuditDenied for this entry. If Allow occurs and the AuditAllowed setting is configured, events are not generated.<br/>- 8: create a copy of the file as evidence, and generate a `RemovableStorageFileEvent` event. This setting must be used together with the **Set location for a copy of the file** setting in Intune or Group Policy. <br/> For more details, see LINK NEEDED Feature evidence. |
 | Option | If type is `Deny` | If type is Deny | - 0: nothing <br/>- 4: disable AuditDenied for this Entry. Even if Block happens and the AuditDenied is setting configured, the system won't show notification. |
 | Option | If type is `AuditAllowed` | - 0: nothing<br/>- 1: nothing <br/>- 2: send event |
 | Option | If type is `AuditDenied` | - 0: nothing <br/>- 1: show notification <br/>- 2: send event <br/>- 3: show notification and send event |
