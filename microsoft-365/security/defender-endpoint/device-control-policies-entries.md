@@ -243,4 +243,15 @@ The following code snippet shows the syntax for a device control entry in JSON f
 
 The following table provides more context for the JSON code snippet:
 
+| Property name | Description | Options |
+|---|---|---|
+| `id` | GUID, a unique ID, represents the entry and is used in reporting and troubleshooting. | You can generate the ID by using PowerShell. |
+| `enforcement $type`  | Defines the action for the removable storage groups in `includedGroups`. <br/>- `allow` <br/>- `deny` <br/>- `auditAllow`: Defines notification and event when access is allowed <br/>- `AuditDeny`: Defines notification and event when access is denied; has to work together with the Deny entry. <br/><br/>When there are conflict types for the same media, the system applies the first one in the policy. An example of a conflict type is Allow and Deny. | The `enforcement $type` attribute can be one of the following values:<br/>- `allow`<br/>- `deny`<br/>- `auditAllow`<br/>- `auditDeny` | 
+| `enforcement $options` | If enforcement $type is allow | `disable_audit_allow`: If Allow occurs and the auditAllow is setting configured, the system doesn't send events. |
+| `enforcement $options` | If enforcement $type is deny | `disable_audit_deny`: If Block happens and the auditDeny is setting configured, the system doesn't show notifications or send events. |
+| `enforcement $options` | If enforcement $type is auditAllow | `send_event`: Sends telemetry |
+| `enforcement $options` | If enforcement $type is auditDeny | <br/>- `send_event`: Sends telemetry <br/>- `show_notification`: Displays block message to user |
+
+
+
 
