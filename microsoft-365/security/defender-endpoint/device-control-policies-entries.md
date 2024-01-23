@@ -4,7 +4,7 @@ description: Learn about device control policies and entries in Defender for End
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/19/2024
+ms.date: 01/22/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -76,3 +76,16 @@ For example, to allow write access for some USB devices, and read access for all
 
 The name of the rule appears in the portal for reporting and in the toast notification to users, so make sure to give the rules descriptive names.
 
+You can configure rules by editing policies in Intune, using an XML file in Windows, or using a JSON file on Mac. Select each tab for more details.
+
+### [**Intune**](#tab/Removable)
+
+The following image depicts configuration settings for a device control policy in Intune:
+
+:::image type="content" source="media/device-control-rule-intune.png" alt-text="Screenshot of device control configuration in Intune." lightbox="media/device-control-rule-intune.png":::
+
+In the screenshot, the Included ID and Excluded ID are the references to included and excluded reusable settings groups. A policy can have multiple rules.
+
+The ordering of the rules is not honored by Intune. The rules can be evaluated in any order, so make sure to explicitly exclude groups of devices that are not in scope for the rule.
+
+### [**Intune**](#tab/Removable)
