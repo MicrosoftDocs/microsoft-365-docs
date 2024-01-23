@@ -420,6 +420,10 @@ A printer device setting has the following properties:
 - `PrinterConnectionId`
 - `VID_PID`
 
+### Groups used for rules in XML (Windows)
+
+The following XML snippet shows the syntax for matching groups:
+
 
 
 MORE TO COME
