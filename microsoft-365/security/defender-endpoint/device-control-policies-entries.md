@@ -337,9 +337,9 @@ The devices that are in scope for the policy determined by a list of included gr
 
 | Property | Description | Windows devices | Mac devices | Printers |
 |---|---|---|---|---|
-| FriendlyNameId  | The friendly name in Windows Device Manager | Y | N | Y |
-PrimaryId    The type of the device    Y    Y    Y
-VID_PID    Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device; Support wildcard. For example. 0751_55E0    Y    N    Y
+| `FriendlyNameId`  | The friendly name in Windows Device Manager | Y | N | Y |
+| `PrimaryId` | The type of the device | Y | Y | Y |
+| `VID_PID` | Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device. Wildcards are supported. For example, `0751_55E0` | Y | N | Y |
 PrinterConnectionId    The type of printer connection: USB, Corporate, Network, Universal, File, Custom, Local    N    N    Y
 BusId    Information about the device – See below for details    Y    N    N
 DeviceId        Y    N    N
