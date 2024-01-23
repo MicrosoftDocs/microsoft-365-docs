@@ -102,7 +102,7 @@ On the **User reported settings** page, the available settings for reporting mes
 
 When **Monitor reported messages in Outlook** is selected and you also select **Use the built-in Report button in Outlook**, the following options are available on the **User reported settings** page:
 
-- **Outlook** section \> **Select an Outlook report button configuration** section \> **When the user reports an email** section: 
+- **Outlook** section \> **Select an Outlook report button configuration** section \> **When the user reports an email** section:
 
   - **Ask the user to confirm before reporting**: A pre-reporting pop-up is shown in supported versions of Outlook for the following user actions:
     - **Report phishing**
@@ -305,7 +305,7 @@ Remember, the report submission policy doesn't exist if any of the following sta
 
 Likewise, the report submission rule doesn't exist if either of the following statements are true:
 
-- No one ever specified a reporting mailbox on the **User reported settings** page (but remember, the global admin's Exchange Online mailbox is used by default). 
+- No one ever specified a reporting mailbox on the **User reported settings** page (but remember, the global admin's Exchange Online mailbox is used by default).
 - No one ever manually created the report submission rule in PowerShell.
 - Someone manually deleted the report submission rule in PowerShell.
 
@@ -330,7 +330,7 @@ This example creates the report submission policy with the default settings:
   - **Select an Outlook report button configuration** section: **Use the built-in Report button in Outlook** selected.
 
 - **Reported message destinations** section:
-  - **Send reported messages to**: **Microsoft and my reporting mailbox** is selected: `-EnableReportToMicrosoft $true`, `-ReportJunkToCustomizedAddress $true`, `-ReportNotJunkToCustomizedAddress $true`, and `-ReportPhishToCustomizedAddress $true` are the default values, so you don't need to use those parameters. 
+  - **Send reported messages to**: **Microsoft and my reporting mailbox** is selected: `-EnableReportToMicrosoft $true`, `-ReportJunkToCustomizedAddress $true`, `-ReportNotJunkToCustomizedAddress $true`, and `-ReportPhishToCustomizedAddress $true` are the default values, so you don't need to use those parameters.
 
     To populate **Add an Exchange Online mailbox to send reported messages to** with the email address of the reporting mailbox, use the following cmdlets and parameters:
 
@@ -370,8 +370,8 @@ Other settings:
       [-MultiLanguagePreSubmitMessageButtonLinkForPhishing "Language1 Before Phishing Info Button URL","Language2 Before Phishing Info Button URL",..."Language7 Before Phishing Info Button URL"] `
       -MultiLanguagePreSubmitMessageTitleForJunk "Language1 Before Junk Title Text","Language2 Before Junk Title Text",..."Language7 Before Junk Title Text" `
       -MultiLanguagePreSubmitMessageForJunk "Language1 Before Junk Description Text","Language2 Before Junk Description Text",..."Language7 Before Junk Description Text" `
-      [-MultiLanguagePreSubmitMessageButtonTextForJunk "Language1 Before Junk Info Button Text","Language2 Before Junk Info Button Text",..."Language7 Before Junk Info Button Text"] `  
-      [-MultiLanguagePreSubmitMessageButtonLinkForJunk "Language1 Before Junk Info Button URL","Language2 Before Junk Info Button URL",..."Language7 Before Junk Info Button URL"]  
+      [-MultiLanguagePreSubmitMessageButtonTextForJunk "Language1 Before Junk Info Button Text","Language2 Before Junk Info Button Text",..."Language7 Before Junk Info Button Text"] `
+      [-MultiLanguagePreSubmitMessageButtonLinkForJunk "Language1 Before Junk Info Button URL","Language2 Before Junk Info Button URL",..."Language7 Before Junk Info Button URL"]
       -MultiLanguagePreSubmitMessageTitleForNotJunk "Language1 Before Not Junk Title Text","Language2 Before Not Junk Title Text",..."Language7 Before Not Junk Title Text" `
       -MultiLanguagePreSubmitMessageForNotJunk "Language1 Before Not Junk Description Text","Language2 Before Not Junk Description Text",..."Language7 Before Not Junk Description Text" `
       [-MultiLanguagePreSubmitMessageButtonTextForNotJunk "Language1 Before Not Junk Info Button Text","Language2 Before Not Junk Info Button Text",..."Language7 Before Not Junk Info Button Text"] `

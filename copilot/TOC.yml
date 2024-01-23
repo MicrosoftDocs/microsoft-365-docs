@@ -29,5 +29,7 @@
           href: microsoft-365-copilot-page.md
         - name: Manage public web access for Microsoft Copilot for Microsoft 365
           href: manage-public-web-access.md
+        - name: Manage Copilot for Microsoft Teams meetings and events
+          href: /MicrosoftTeams/copilot-teams-transcription
         - name: Provide Copilot feedback to Microsoft
           href: provide-feedback.md

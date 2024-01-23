@@ -7,7 +7,7 @@ ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 12/01/2023
+ms.date: 01/22/2024
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -31,13 +31,6 @@ ms.topic: conceptual
 The following features are in preview or generally available (GA) in the latest release of Microsoft Defender for Endpoint.
 
 For more information on preview features, see [Preview features](preview.md).
-
-> [!TIP]
-> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
->
-> ```https
-> https://learn.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
-> ```
 
 For more information on what's new with Microsoft Defender for Endpoint on Windows, see:
 [What's new in Microsoft Defender for Endpoint on Windows](windows-whatsnew.md)

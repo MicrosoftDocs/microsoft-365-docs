@@ -41,7 +41,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## Dismiss a task
 
-1. In the left navigation in Lighthouse, select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. Select the appropriate tenant from the list.
 
