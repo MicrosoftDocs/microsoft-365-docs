@@ -18,6 +18,7 @@ description: Learn how to recognize and remediate the illicit consent grants att
 ms.custom:
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
@@ -115,7 +116,7 @@ The simplest way to verify the Illicit Consent Grant attack is to run [Get-Azure
 
 3. Open a PowerShell session as an administrator and open to the folder where you saved the script to.
 
-4. Connect to your directory using the [Connect-AzureAD](/powershell/module/azuread/connect-azuread) cmdlet.
+4. Connect to your directory using the [Connect-MgGraph](/powershell/microsoftgraph/authentication-commands#using-connect-mggraph) cmdlet.
 
 5. Run this PowerShell command:
 
@@ -150,9 +151,9 @@ After you have identified an application with illicit permissions, you have seve
   3. Select the illicit application.
   4. Click **Remove** in the drill down.
 
-- You can revoke the OAuth consent grant with PowerShell by following the steps in [Remove-AzureADOAuth2PermissionGrant](/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant).
+- You can revoke the OAuth consent grant with PowerShell by following the steps in [Remove-MgOauth2PermissionGrant](/powershell/module/microsoft.graph.identity.signins/remove-mgoauth2permissiongrant)
 
-- You can revoke the Service App Role Assignment with PowerShell by following the steps in [Remove-AzureADServiceAppRoleAssignment](/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment).
+- You can revoke the Service App Role Assignment with PowerShell by following the steps in [Remove-MgServicePrincipalAppRoleAssignment](/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalapproleassignment).
 
 - You can also disable sign-in for the affected account altogether, which will in turn disable app access to data in that account. This isn't ideal for the end user's productivity, of course, but if you are working to limit impact quickly, it can be a viable short-term remediation.
 
