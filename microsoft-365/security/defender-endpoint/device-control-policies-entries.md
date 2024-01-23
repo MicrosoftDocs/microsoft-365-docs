@@ -216,10 +216,34 @@ The following table provides more context for the XML code snippet:
 | Option | If type is `Deny` | If type is Deny | - 0: nothing <br/>- 4: disable AuditDenied for this Entry. If Block occurs and the AuditDenied is setting configured, the system doesn't show notifications. |
 | Option | If type is `AuditAllowed` | - 0: nothing<br/>- 1: nothing <br/>- 2: send event |
 | Option | If type is `AuditDenied` | - 0: nothing <br/>- 1: show notification <br/>- 2: send event <br/>- 3: show notification and send event |
-| AccessMask | Defines the access | See LINK NEEDED Understand the access mask in Windows |
+| AccessMask | Defines the access | See the following section [Understand mask access](#understand-mask-access-windows) |
 | `Sid` | Local user SID or user SID group or the SID of the Microsoft Entra object or the Object ID. It defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the device. | SID | 
 | `ComputerSid` | Local computer SID or computer SID group or the SID of the Microsoft Entra object or the Object Id. It defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the device. If you want to apply an Entry to a specific user and specific device, add both SID and ComputerSID into the same Entry. | SID | 
 | Parameters | Condition for an entry, such as network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See LINK NEEDED Advanced Conditions  |
+
+
+#### Understand mask access (Windows)
+
+Device control applies an access mask to determine if the request matches the entry.  The following actions are available on CdRomDevices,RemovableMediaDevices and WpdDevices: 
+
+| Access | Mask |
+|--|--|
+| Disk level read | 1 |
+| Disk level write | 2 |
+| Disk level execute | 4 |
+| File system read | 8 |
+| File system write | 16 |
+| File system execute | 32 |
+
+The following actions are available on PrinterDevices:
+
+- Access: Print
+- Mask: 64
+
+You can have multiple access settings by performing a binary OR operation. Here's an example: 
+
+- The AccessMask for Read and Write and Execute is 7
+- The AccessMask for Read and Write is 3
 
 
 ### [**JSON (Mac)**](#tab/JSON)
@@ -251,6 +275,12 @@ The following table provides more context for the JSON code snippet:
 | `enforcement $options` | If enforcement $type is deny | `disable_audit_deny`: If Block happens and the auditDeny is setting configured, the system doesn't show notifications or send events. |
 | `enforcement $options` | If enforcement $type is auditAllow | `send_event`: Sends telemetry |
 | `enforcement $options` | If enforcement $type is auditDeny | <br/>- `send_event`: Sends telemetry <br/>- `show_notification`: Displays block message to user |
+| `$type` | The type of entry.  The type determines the operations that can be protected by device control | The `$type` attributes can be any of the following values:<br/>- `removableMedia`<br/>- `appleDevice`<br/>- `PortableDevice`<br/>- `bluetoothDevice` | 
+| `access` | A list of operations that this entry grants | See LINK NEEDED Understand access on Mac | 
+
+#### Understand access (Mac)
+
+
 
 
 
