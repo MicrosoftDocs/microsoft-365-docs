@@ -424,7 +424,16 @@ A printer device setting has the following properties:
 
 The following XML snippet shows the syntax for matching groups:
 
+```xml
 
+<Group Id="{3f5253e4-0e73-4587-bb9e-bb29a2171694}">
+  <MatchType>MatchAny</MatchType>
+  <DescriptorIdList>
+   …
+  </DescriptorIdList>
+</Group>
+
+```
 
 MORE TO COME
 
