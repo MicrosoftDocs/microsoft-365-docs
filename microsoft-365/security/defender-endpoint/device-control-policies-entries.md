@@ -302,7 +302,7 @@ The following table describes the device type specific access and how they map t
 | removableMedia | write |  |  | X  |  |    
 | removableMedia | execute |  |  |  | X |
 | bluetoothDevice | download_files_from_device |  | X  |  |  |
-bluetoothDevice    send_files_to_device            X    
+| bluetoothDevice | send_files_to_device |  |  | X |  |    
 
 
 
