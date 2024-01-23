@@ -118,8 +118,8 @@ The following table provides more context for the XML code snippet:
 |---------|---------|---------|
 | `PolicyRule Id`  | GUID, a unique ID, represents the policy and is used in reporting and troubleshooting. | You can generate the ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid). |
 | `Name` | String, the name of the policy and displays on the toast based on the policy setting. | |
-| `IncludedIdList` | The group(s) that the policy will be applied to. If multiple groups are added, the media must be a member of each group in the list to be included. | The Group ID/GUID must be used at this instance. <br/><br/>The following example shows the usage of GroupID: `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
-| `ExcludedIDList` | The group(s) that the policy won't be applied to. If multiple groups are added, the media must be a member of a group in the list to be excluded. | The Group ID/GUID must be used at this instance. |
+| `IncludedIdList` | The group(s) that the policy applies to. If multiple groups are added, the media must be a member of each group in the list to be included. | The Group ID/GUID must be used at this instance. <br/><br/>The following example shows the usage of GroupID: `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
+| `ExcludedIDList` | The group(s) that the policy doesn't apply to. If multiple groups are added, the media must be a member of a group in the list to be excluded. | The Group ID/GUID must be used at this instance. |
 | `Entry` | One PolicyRule can have multiple entries; each entry with a unique GUID tells device control one restriction. | See Entry properties table below to get details. |
 
 ### [**JSON (Mac)**](#tab/JSON)
@@ -149,7 +149,7 @@ The following table provides more context for the XML code snippet:
 |---|---|---|
 | `id` | GUID, a unique ID, represents the rule and will be used in the policy. | `New-Guid (Microsoft.PowerShell.Utility) - PowerShell<br/>uuidgen` |
 | `name` | String, the name of the policy and will display on the toast based on the policy setting. |  |
-| `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy applies to any media in all those groups. If not specified, the rule applies to all devices. | The id value inside the group must be used in this instance. If multiple groups are in the includeGroups, it's `AND`. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
+| `includeGroups` | The group(s) that the policy will be applied to. If multiple groups are specified, the policy applies to any media in all those groups. If not specified, the rule applies to all devices. | The ID value inside the group must be used in this instance. If multiple groups are in the includeGroups, it's `AND`. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
 | `excludeGroups` | The group(s) that the policy doesn't apply to. | The `id` value inside the group must be used in this instance. If multiple groups are in the excludeGroups, it's `OR`. |
 | `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction. | See entry properties table later in this article to get the details. |
 
