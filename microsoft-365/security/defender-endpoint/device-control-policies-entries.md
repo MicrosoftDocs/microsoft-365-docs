@@ -213,16 +213,10 @@ The following table provides more context for the XML code snippet:
 | Entry Id | GUID, a unique ID, represents the entry and is used in reporting and troubleshooting. | You can generate the ID through PowerShell. |
 | Type | Defines the action for the removable storage groups in IncludedIDList. <br/>- Allow <br/>- Deny <br/>- AuditAllowed: Defines notification and event when access is allowed <br/>- AuditDenied: Defines notification and event when access is denied; works together with a Deny entry. <br/><br/>When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is Allow and Deny. | - Allow <br/>- Deny <br/>- AuditAllowed <br/>- AuditDenied |
 | Option | If type is Allow | - 0: nothing <br/>- 4: disable AuditAllowed and AuditDenied for this entry. If Allow occurs and the AuditAllowed is setting is configured, events are not generated.<br/>- 8: create a copy of the file as evidence, and generate a `RemovableStorageFileEvent` event. This setting must be used together with the **Set location for a copy of the file** setting in Intune or Group Policy. <br/> For more details, see LINK NEEDED Feature evidence. |
-| Option | If type is Deny |     If type is Deny    0: nothing
-4: disable AuditDenied for this Entry. Even if Block happens and the AuditDenied is setting configured, the system won't show notification.
-    If type is AuditAllowed    0: nothing
-1: nothing
-2: send event
-    If type is AuditDenied    0: nothing
-1: show notification
-2: send event
-3: show notification and send event
-AccessMask    Defines the access    See below
-Sid    Local user SID or user SID group or the SID of the AD object or the Object ID of the Microsoft Entra object, defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the machine.    SID
-ComputerSid    Local computer SID or computer SID group or the SID of the AD object or the Object Id of the Microsoft Entra object, defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both SID and ComputerSID into the same Entry.    SID
-Parameters    Condition for this Entry, for example Network condition.    Can add groups (non Devices type) or even put Parameters into Parameters. See Advanced Conditions  
+| Option | If type is Deny | If type is Deny | - 0: nothing <br/>- 4: disable AuditDenied for this Entry. Even if Block happens and the AuditDenied is setting configured, the system won't show notification. |
+| Option | If type is AuditAllowed | - 0: nothing<br/>- 1: nothing <br/>- 2: send event |
+| Option | If type is AuditDenied | - 0: nothing <br/>- 1: show notification <br/>- 2: send event <br/>- 3: show notification and send event |
+| AccessMask | Defines the access | See LINK NEEDED Understand the access mask in Windows |
+| Sid | Local user SID or user SID group or the SID of the AD object or the Object ID of the Microsoft Entra object, defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the machine. | SID | 
+| ComputerSid | Local computer SID or computer SID group or the SID of the AD object or the Object Id of the Microsoft Entra object, defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both SID and ComputerSID into the same Entry. | SID | 
+| Parameters | Condition for this Entry, for example Network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See LINK NEEDED Advanced Conditions  |
