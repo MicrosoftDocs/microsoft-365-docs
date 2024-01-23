@@ -340,15 +340,15 @@ The devices that are in scope for the policy determined by a list of included gr
 | `FriendlyNameId`  | The friendly name in Windows Device Manager | Y | N | Y |
 | `PrimaryId` | The type of the device | Y | Y | Y |
 | `VID_PID` | Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device. Wildcards are supported. For example, `0751_55E0` | Y | N | Y |
-PrinterConnectionId    The type of printer connection: USB, Corporate, Network, Universal, File, Custom, Local    N    N    Y
-BusId    Information about the device – See below for details    Y    N    N
-DeviceId        Y    N    N
-HardwareId        Y    N    N
-InstancePathId        Y    N    N
-SerialNumberId        Y    Y    N
-PID     Product ID is the four-digit product code that the vendor assigns to the device;    Y    Y    N
-VID     Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor.    Y    Y    N
-APFS Encrypted    If the device is APFS encrypted    N    Y    N
+`PrinterConnectionId` | The type of printer connection: <br/>- USB<br/>- Corporate<br/>- Network<br/>- Universal<br/>- File<br/>- Custom<br/>- Local | N | N | Y |
+| `BusId` | Information about the device (for more information, see the sections that follow this table) | Y | N | N |
+| `DeviceId` | Information about the device (for more information, see the sections that follow this table) | Y | N | N |
+| `HardwareId` | Information about the device (for more information, see the sections that follow this table) | Y | N | N |
+| `InstancePathId` | Information about the device (for more information, see the sections that follow this table) | Y | N | N |
+| `SerialNumberId` | Information about the device (for more information, see the sections that follow this table) | Y | Y | N |
+| `PID` | Product ID is the four-digit product code that the vendor assigns to the device | Y | Y | N |
+| `VID` | Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. | Y | Y | N |
+| `APFS Encrypted` | If the device is APFS encrypted | N | Y | N |
 
 
 
