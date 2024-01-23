@@ -173,12 +173,16 @@ An entry supports the following optional conditions:
 - Machine Condition:  Applies the action only to the machine/group identified by the SID
 - Parameters Condition:  Applies the action only if the parameters match (See Advanced Conditions)
 
-Entries can be further scoped to specific users and machines.  For example, allow read access to these USBs for this user only on this device.
+Entries can be further scoped to specific users and devices.  For example, allow read access to these USBs for this user only on this device.
 
 | Policy | Included Device Groups | Excluded Device Groups | Entry(ies) |
 |---|---|---|---|
 | Read only access for USBs | All Removable storage devices | Writeable USBs | Read Only Access |
-| Write access for USBs | Writeable USBs |  | Write Access for User 1<br/><br/>Write Access for User 2 on Machine Group A |
+| Write access for USBs | Writeable USBs |  | Write Access for User 1<br/><br/>Write Access for User 2 on Device Group A |
 
 All of the conditions in the entry must be true for the action to be applied.
+
+### Determine the Security ID of a User, Group, or Device
+
+Entries can include user, group, or device restrictions based on Security ID (SID).  The SID of the user who's signed in can be retrieved by running the PowerShell command `whoami /user`.
 
