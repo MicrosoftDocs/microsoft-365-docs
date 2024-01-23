@@ -78,7 +78,7 @@ For Microsoft Teams chats with Copilot, admins can also use [Microsoft Teams Exp
 
 ### Deleting the history of user interactions with Microsoft Copilot for Microsoft 365
 
-To delete a user's history of interactions with Microsoft Copilot for Microsoft 365, which includes user prompts and the responses Copilot returns, Microsoft 365 admins can [submit an online support ticket](/microsoft-365/admin/get-help-support#online-support) in the Microsoft 365 admin center. In this ticket, admins should include their [Tenant ID](/entra/fundamentals/how-to-find-tenant) and the user’s [Object ID](/partner-center/marketplace/find-tenant-object-id#find-user-object-id) for which they want data deleted. The ticket will mark the history for permanent, [hard-deletion](/compliance/regulatory/gdpr-dsr-Office365#deleting-personal-data). For any new requests, open a new ticket with support and avoid editing your existing requests.  
+Your users can delete their Copilot interaction history, which includes their prompts and the responses Copilot returns, by going to the [My Account portal](https://myaccount.microsoft.com/). For more information, see [Delete your Microsoft Copilot interaction history](https://support.microsoft.com/office/76de8afa-5eaf-43b0-bda8-0076d6e0390f).
 
 ## Microsoft Copilot for Microsoft 365 and the EU Data Boundary
 
