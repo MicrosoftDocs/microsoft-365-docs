@@ -309,17 +309,24 @@ The following table describes the device type specific access and how they map t
 ## Groups
 
 Groups define criteria for filtering objects by their properties.  The object is assigned to the group if its properties match the properties defined for the group.   
+
 For example:
--    Allowed USBs = devices that match any of these manufacturers
--    Lost USBs = devices that match any of these serial numbers
--    Allowed Printers = devices that match any of these VID/PID 
-The properties can be matched 4 ways:  MatchAll, MatchAny, MatchExcludeAll, MatchExcludeAny
-*    MatchAll: The properties are an "And" relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system checks to see whether the USB meets both values.
-*    MatchAny: The properties are an "Or" relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, the system enforces as long as the USB has either an identical DeviceID or InstanceID value.
-*    MatchExcludeAll: The properties are an "And" relationship, any items that do NOT meet are covered. For example, if administrator puts DeviceID and InstancePathID and uses MatchExcludeAll, for every connected USB, system enforces as long as the USB doesn't have both identical DeviceID and InstanceID value.
-*    MatchExcludeAny: The properties are an "Or" relationship, any items that do NOT meet are covered. For example, if administrator puts DeviceID and InstancePathID and uses MatchExcludeAny, for every connected USB, system enforces as long as the USB doesn't have either an identical DeviceID or InstanceID value.
+
+- Allowed USBs = devices that match any of these manufacturers
+- Lost USBs = devices that match any of these serial numbers
+- Allowed Printers = devices that match any of these VID/PID 
+
+The properties can be matched in four ways:  MatchAll, MatchAny, MatchExcludeAll, MatchExcludeAny
+
+- MatchAll: The properties are an "And" relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system checks to see whether the USB meets both values.
+- MatchAny: The properties are an "Or" relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, the system enforces as long as the USB has either an identical DeviceID or InstanceID value.
+- MatchExcludeAll: The properties are an "And" relationship, any items that do NOT meet are covered. For example, if administrator puts DeviceID and InstancePathID and uses MatchExcludeAll, for every connected USB, system enforces as long as the USB doesn't have both identical DeviceID and InstanceID value.
+- MatchExcludeAny: The properties are an "Or" relationship, any items that do NOT meet are covered. For example, if administrator puts DeviceID and InstancePathID and uses MatchExcludeAny, for every connected USB, system enforces as long as the USB doesn't have either an identical DeviceID or InstanceID value.
+
 Groups are used two way:  to select devices for inclusion/exclusion in rules, and to filter access for advanced conditions.  This table summarizes the group types and how they are used.
-Type    Description    O/S    Include/Exclude Rules    Advanced conditions
+
+| Type | Description | O/S | Include/Exclude Rules | Advanced conditions |
+|---|---|---|---|---|
 Device (default)    Filter devices and printers    Windows/Mac    X    
 Network    Filter network conditions    Windows        X
 VPN Connection    Filter VPN conditions    Windows        X
