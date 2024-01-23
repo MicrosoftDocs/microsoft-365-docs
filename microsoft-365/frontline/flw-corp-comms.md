@@ -31,7 +31,7 @@ Keep your frontline teams connected with your broader organization by using Viva
 
 ## Connect information from across the organization with Viva Connections
 
-Engage and inform workers with Viva Connections. Viva Connections is an employee experience app in Teams that connects employees with tools, news, and resources.
+Viva Connections is an employee experience app in Teams that connects employees with tools, news, and resources.
 
 Your frontline teams can view a tailored news feed from your organization and a personalized dashboard with resources they need. Surface key information, personalized news, tasks, announcements, and other resources on the Viva Connections dashboard. For example, a retailer could share new product and promotion announcements with their store associates, or a fundraising coordinator for a nonprofit could share quarterly goals with volunteers.
 
