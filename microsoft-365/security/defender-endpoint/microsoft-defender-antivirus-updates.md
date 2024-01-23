@@ -28,14 +28,6 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-
-> [!NOTE]
-> You can use RSS to be notified when this page is updated. To get notified when this page is updated, copy and paste the following URL into your RSS feed reader:
->
-> ```https
-> https://learn.microsoft.com/api/search/rss?search=%22Microsoft+Defender+Antivirus+security+intelligence+and+product+updates%22&locale=en-us
-> ```
-
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). This article includes information about the two types of updates for keeping Microsoft Defender Antivirus current:
 
 - [Security intelligence updates](#security-intelligence-updates)

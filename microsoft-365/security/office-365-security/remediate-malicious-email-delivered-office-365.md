@@ -92,14 +92,14 @@ Open any remediation item to view details about it, including its remediation na
     - On-premises/external
     - Failed/dropped
     - Unknown
-   
+
   - **Types of Move and Delete actions supported**:
     - **Move to junk folder**: Moves messages to the user's Junk Email folder.
     - **Move to inbox**: Moves messages to the users Inbox folder.
     - **Move to deleted items**: Moves messages to the user's Deleted Items folder.
     - **Soft delete**: Moves messages to a deleted folder in the cloud.
     - **Hard delete**: Permanently deletes the messages.
- 
+
   Suspicious messages are categorized as either remediable or nonremediable. In most cases, remediable and nonremediable messages combine equals total messages submitted. But in rare cases this may not be true. This can happen because of system delays, timeouts, or expired messages. Messages expire based on the Explorer retention period for your organization.
 
   Unless you're remediating old messages after your organization's Explorer retention period, it's advisable to retry remediating items if you see number inconsistencies. For system delays, remediation updates are typically refreshed within a few hours.

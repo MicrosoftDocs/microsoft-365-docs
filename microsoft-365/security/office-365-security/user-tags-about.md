@@ -134,7 +134,7 @@ The details flyout of the user tag contains the following information, based on 
   - **Description**
   - A link to <https://security.microsoft.com/securitysettings/priorityAccountProtection> to turn on or turn off [priority account protection](priority-accounts-turn-on-priority-account-protection.md)
   - **Applied to**
-- **Custom tags**: The details flyout for a custom tag contains the same information as the **User tags** page, plus the list of users and groups that the tag applies to. 
+- **Custom tags**: The details flyout for a custom tag contains the same information as the **User tags** page, plus the list of users and groups that the tag applies to.
 
 To take action on user tags, see the next section.
 
@@ -204,7 +204,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Admin submissions and user reported messages](submissions-admin.md)
 - In organizations above a certain size, the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) is available in the Exchange admin center (EAC).
 
-For information about where the effects of priority account protection are visible, see [Review differentiated protection from priority account protection](priority-accounts-turn-on-priority-account-protection.md#review-differentiated-protection-from-priority-account-protection). 
+For information about where the effects of priority account protection are visible, see [Review differentiated protection from priority account protection](priority-accounts-turn-on-priority-account-protection.md#review-differentiated-protection-from-priority-account-protection).
 
 ## More information
 

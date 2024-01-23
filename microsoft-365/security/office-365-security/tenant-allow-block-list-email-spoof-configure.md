@@ -53,15 +53,15 @@ This article describes how admins can manage entries for email senders in the Mi
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Detection tuning (manage)** or **Authorization and settings/Security settings/Core security settings (read)**.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
-    - _Add and remove entries from the Tenant Allow/Block List_: Membership in one of the following role groups:
+    - *Add and remove entries from the Tenant Allow/Block List*: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).
       - **Security Operator** (Tenant AllowBlockList Manager).
-    - _Read-only access to the Tenant Allow/Block List_: Membership in one of the following role groups:
+    - *Read-only access to the Tenant Allow/Block List*: Membership in one of the following role groups:
       - **Global Reader**
       - **Security Reader**
       - **View-Only Configuration**
       - **View-Only Organization Management**
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
 ## Domains and email addresses in the Tenant Allow/Block List
 
@@ -90,7 +90,7 @@ To create block entries for *domains and email addresses*, use either of the fol
 
 To create block entries for *spoofed senders*, see [this section](#create-block-entries-for-spoofed-senders) later in this article.
 
-Email from these blocked senders is marked as *phishing* and quarantined.
+Email from these blocked senders is marked as *high confidence phishing* and quarantined.
 
 > [!NOTE]
 > Currently, subdomains of the specified domain aren't blocked. For example, if you create a block entry for email from contoso.com, mail from marketing.contoso.com isn't also blocked. You need to create a separate block entry for marketing.contoso.com.
@@ -263,7 +263,6 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
 
 Back on the **Domains & addresses** tab, the entry is no longer listed.
 
-
 #### Use PowerShell to remove entries for domains and email addresses from the Tenant Allow/Block List
 
 In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use the following syntax:
@@ -359,7 +358,7 @@ To create block entries for *spoofed senders*, use any of the following methods:
 >
 > Email from these senders is marked as *phishing*. What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. For more information, see the **Phishing** detection action in [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 >
-> When you configure a block entry for a domain pair, the spoofed sender becomes a manual allow entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
+> When you configure a block entry for a domain pair, the spoofed sender becomes a manual block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List.
 >
 > Block entries for spoofed senders never expire.
 
@@ -490,7 +489,6 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoo
    > You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Spoofed user** column header.
 
 4. In the warning dialog that opens, select **Delete**.
-
 
 #### Use PowerShell to remove entries for spoofed senders from the Tenant Allow/Block List
 
