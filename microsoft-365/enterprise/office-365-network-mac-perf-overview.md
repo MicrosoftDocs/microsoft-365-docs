@@ -240,6 +240,9 @@ If you've uploaded building data to your Call Quality Dashboard, you can add tho
 
 ## FAQ
 
+### What role is needed to access Network Connectivity in Microsoft 365 Admin Center? 
+You will need Network Administrator or Global Administrator role. 
+
 ### What is a Microsoft 365 service front door?
 
 The Microsoft 365 service front door is an entry point on Microsoft's global network where Office clients and services terminate their network connection. For an optimal network connection to Microsoft 365, it is recommended that your network connection is terminated into the closest Microsoft 365 front door.
