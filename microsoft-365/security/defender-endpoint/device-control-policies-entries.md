@@ -361,17 +361,21 @@ For Windows devices, you can use Device Manager to understand the properties of 
 
 2. In the Property list, select **Device instance path**. 
 
-   
+   :::image type="content" source="media/device-control-groups-windows-deviceinstancepath.png" alt-text="Screenshot showing the device instance path in Device Manager on a Windows device.":::
 
-This value is the InstancePathId but it also contains other properties
-USB\VID_090C&PID_1000\FBH1111183300721
-{BusId}\{DeviceId}\{SerialNumberId}
-The properties in the device manager map as follows:
-Device Manager    Device Control
-Hardware Ids    HardwareId
-Friendly name    FriendlyNameId
-Parent    VID_PID
-DeviceInstancePath    InstancePathId
+The value shown for device instance path is the InstancePathId, but it also contains other properties.
+
+- `USB\VID_090C&PID_1000\FBH1111183300721`
+- `{BusId}\{DeviceId}\{SerialNumberId}`
+
+The properties in the device manager map to device control as shown in the following table:
+
+| Device Manager | Device Control |
+|---|---|
+| Hardware Ids | `HardwareId` |
+| Friendly name | `FriendlyNameId` |
+| Parent | `VID_PID` |
+| DeviceInstancePath | `InstancePathId` |
 
 
 
