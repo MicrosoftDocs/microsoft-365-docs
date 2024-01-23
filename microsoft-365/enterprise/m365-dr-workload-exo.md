@@ -293,7 +293,9 @@ To create a new mailbox in a specific _Geographic_ location, you need to do eith
 To create a new cloud-only licensed user (not Microsoft Entra Connect synchronized) in a specific _Geographic_ location, use the following syntax in Azure AD PowerShell:
 
 ```powershell
-New-MgUser -UserPrincipalName <UserPrincipalName> -AccountEnabled -DisplayName "<Display Name>" [-GivenName <FirstName>] [-Surname <LastName>] [-LicenseAssignment <AccountSkuId>] -PreferredDataLocation <GeoLocationCode> -PasswordProfile <hashtable>
+$user = New-MgUser -DisplayName "<display name>" -GivenName "<first name>" -SurName "<last name>" -UserPrincipalName <sign-in name> -AccountEnabled -MailNickName <mailbox name> -PasswordProfile @{ ForceChangePasswordNextSignIn = $true; Password = "<temp password>" } -UsageLocation <ISO 3166-1 alpha-2 country code> 
+$EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq '<license SKU ID>'
+Set-MgUserLicense -UserId $user.Id -AddLicenses @{SkuId = $EmsSku.SkuId} -RemoveLicenses @()
 ```
 
 This example creates a new user account for Elizabeth Brunner with the following values:
@@ -302,18 +304,14 @@ This example creates a new user account for Elizabeth Brunner with the following
 - First name: Elizabeth
 - Last name: Brunner
 - Display name: Elizabeth Brunner
-- Password: Manually add password in the form of a hashtable, pass to $PasswordProfile
+- Password: Manually add password in the form of a hashtable
 - License: `contoso:ENTERPRISEPREMIUM` (E5)
 - Location: Australia (AUS)
 
 ```powershell
-$LicenseDetails = @{
-    "SkuPartNumber" = "contoso:ENTERPRISEPREMIUM"
-}
-$PasswordProfile = @{
-    Password = '98sdfoi4&#r)'
-}
-New-MgUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -AccountEnabled -DisplayName "Elizabeth Brunner" -GivenName Elizabeth -Surname Brunner -LicenseDetails $LicenseDetails -PreferredDataLocation AUS -PasswordProfile $PasswordProfile
+$user = New-MgUser -DisplayName "Elizabeth Brunner" -GivenName "Elizabeth" -Surname "Brunner" -UserPrincipalName "elizabethb@contoso.onmicrosoft.com" -AccountEnabled -MailNickname "ElizabethB" -PasswordProfile @{ ForceChangePasswordNextSignIn = $true; Password = "TempPassword123" } -UsageLocation "AUS"
+$EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'ENTERPRISEPREMIUM'
+Set-MgUserLicense -UserId $user.Id -AddLicenses @{SkuId = $EmsSku.SkuId} -RemoveLicenses @()
 ```
 
 For more information about creating new user accounts and finding LicenseAssignment values in Azure AD PowerShell, see [Create user accounts with PowerShell](create-user-accounts-with-microsoft-365-powershell.md) and [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
