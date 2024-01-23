@@ -67,7 +67,9 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   - **Windows Server 2012 R2** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2016** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
-
+  > [!NOTE]
+  > For Windows Server 2012R2 or 2016 you must have the [Unified Agent](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/update-agent-mma-windows?view=o365-worldwide#upgrade-to-the-new-unified-agent-for-defender-for-endpoint) installed and it is recommended to patch to latest sesnor version with the above KB.
+  
   - **Windows Server 2019**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
     - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
