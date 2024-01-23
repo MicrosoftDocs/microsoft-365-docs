@@ -10,11 +10,13 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdo
   ms.topic: landing-page # Required
-  ms.collection: m365-security
+  ms.collection: 
+  - m365-security
+  - essentials-navigation
   ms.custom: intro-hub-or-landing
   author: chrisda #Required; your GitHub user alias, with correct capitalization.
   ms.author: chrisda #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/17/2023
+  ms.date: 01/19/2024
   ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -72,7 +74,7 @@ landingContent:
           - text: Use DMARC to validate email
             url: email-authentication-dmarc-configure.md
           - text: Configure trusted ARC sealers
-            url: email-authentication-arc-configure.md            
+            url: email-authentication-arc-configure.md
 
    # Card
   - title: Investigate and respond

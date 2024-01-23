@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use Microsoft SharePoint eSignature to create and send electronic signature requests to people inside and outside of your organization. 
+description: Learn how to troubleshoot issues with sending, receiving, or viewing requests in Microsoft SharePoint eSignature. 
 ---
 
 # Troubleshoot a signature request for Microsoft SharePoint eSignature
@@ -23,9 +23,9 @@ description: Learn how to use Microsoft SharePoint eSignature to create and send
 
 If you aren't able to create a signature request, check the PDF viewer settings, the collaboration settings, or the access policies.
 
-### PDF settings from the PDF viewer
+### Default program for PDF viewing
 
-The PDF viewer is opened by selecting a PDF file from SharePoint Online. The ability to request signatures won't be available if the PDF is viewed in any other way (for example, in Microsoft Edge). If  PDF files are opened in any other way, the **Get signatures** option isn't available.
+The PDF viewer is opened by selecting a PDF file from SharePoint Online. The ability to use the **Get signatures** option won't be available if the PDF is viewed in any other way, for example, in Microsoft Edge or Adobe Reader.
 
 ### Collaboration settings
 
@@ -40,6 +40,9 @@ SharePoint eSignature is an extension of SharePoint document storage and managem
 ### Conditional access policies
 
 Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation will be unsuccessful. One common way to resolve this is to contact your IT admin who will be able to add the eSignature app to the list of approved apps via the  Microsoft Entra admin center.
+
+## Unable to  find the request emails
+If you were sent an eSignature request and cannot find it in your email inbox, you should check your spam or junk folder. It is also good practice to mark the sender as non-spam so that future emails from the same sender go directly into your inbox. 
 
 ## Unable to sign a document as an external recipient
 
