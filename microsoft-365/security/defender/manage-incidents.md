@@ -35,6 +35,9 @@ ms.date: 01/22/2024
 
 Incident management is critical to ensuring that incidents are named, assigned, and tagged to optimize time in your incident workflow and more quickly contain and address threats.
 
+> [!TIP]
+> For a limited time during January 2024, when you visit the **Incidents** page, Defender Boxed appears. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
+
 You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/fig1-manageincidents.png" alt-text="Highlighting the manage incident option within the incident queue and quick launch pane in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig1-manageincidents.png":::
