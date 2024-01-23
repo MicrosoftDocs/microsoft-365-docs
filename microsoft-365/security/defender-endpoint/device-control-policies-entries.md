@@ -4,7 +4,7 @@ description: Learn about device control policies and entries in Defender for End
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/22/2024
+ms.date: 01/23/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -46,10 +46,10 @@ When device types are configured, device control in Defender for Endpoint ignore
 
 To further refine access to devices, device control uses policies.  A policy is a set of rules and groups. How rules and groups are defined varies slightly among management experiences and operating systems, as described in the following table.
 
-| Management tool	| Operating system | How rules and groups are managed |
+| Management tool    | Operating system | How rules and groups are managed |
 |---|---|---|
-| Intune – Device Control Policy |	Windows | Device and printer groups can be managed as re-usable settings and included in rules.   NOTE:  Not all features are available in the Device Control Policy (See Managing Device Control in Intune (Windows) for details) |
-| Intune – Custom	| Windows | Each group/rule is stored as an XML string in custom configuration policy. The OMA-URI contains the GUID of the group/rule.  The GUID needs to be generated. |
+| Intune – Device control policy |  Windows | Device and printer groups can be managed as re-usable settings and included in rules. Not all features are available in the device control policy (See LINK NEEDED Managing Device Control in Intune (Windows) for details) |
+| Intune – Custom    | Windows | Each group/rule is stored as an XML string in custom configuration policy. The OMA-URI contains the GUID of the group/rule.  The GUID needs to be generated. |
 | Group Policy | Windows | The groups and rules are defined in separate XML settings in the GPO – Define device control policy groups, and Define device control policy rules. |
 | Intune | Mac | The rules and policies are combined into a single JSON and included in the mobileconfig file that is deployed via Intune |
 | JAMF | Mac | The rules and policies are combined into a single JSON and configured via JAMF as the Device Control Policy |
@@ -133,7 +133,7 @@ The following code snippet shows the syntax for a device control policy rule in 
       "includeGroups": [
         "3f5253e4-0e73-4587-bb9e-bb29a2171694"
       ],
-      “includedGroups”:[
+      "includedGroups":[
          "3f5253e4-0e73-4587-bb9e-bb29a2171695"
       ]
       "entries": [
@@ -159,10 +159,10 @@ The following table provides more context for the XML code snippet:
 
 Device control policies define access (called an entry) for a set of devices. Entries define the action and notification options for devices that match the policy and the conditions defined in the entry.  
 
-- Actions include: Allow, Deny, AuditAllow, AuditDeny
-- Notification options include:   
-   - No notification (default setting), but an event is generated
-   - The user receives a notification and file evidence can be captured
+| Entry setting | Options |
+|---|---|
+| Action | Allow <br/> Deny <br/> AuditAllow <br/> AuditDeny |
+| Notification | None (default) <br/> An event is generated <br/> The user receives notification <br/> File evidence is captured |
 
 If device control is configured, and a user attempts to use a device that's not allowed, the user gets a notification that contains the name of the device control policy and the name of the device. The notification appears once every hour after initial access is denied.
 
