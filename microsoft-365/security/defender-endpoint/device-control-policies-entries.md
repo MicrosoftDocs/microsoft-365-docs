@@ -289,20 +289,20 @@ The following table describes the device type specific access and how they map t
 
 | Device Type ($type) | Device Type Specific Access | Description | Read | Write | Execute |
 |---|---|---|---|---|---|
-| `appleDevice` | backup_device |  | X |  |  |      
-| `appleDevice` | update_device |  |  | X |   |   
-| `appleDevice` | download_photos_from_device | download photo(s) from the specific iOS device to local machine | X  |  |  |         
-| `appleDevice` | download_files_from_device | download file(s) from the specific iOS device to local machine | X  |  |  |        
-| `appleDevice` | sync_content_to_device | sync content from local machine to specific iOS device |  | X |  |
-| `portableDevice` | download_files_from_device | X  |  |  |        
-| `portableDevice` | send_files_to_device  |  |  | X |  |     
-| `portableDevice` | download_photos_from_device |  | X |  |  |        
-| `portableDevice` | debug | ADB tool control |  |  | X |
-| `removableMedia` | read |  | X |  |  |        
-| `removableMedia` | write |  |  | X  |  |    
-| `removableMedia` | execute |  |  |  | X |
-| `bluetoothDevice` | download_files_from_device |  | X  |  |  |
-| `bluetoothDevice` | send_files_to_device |  |  | X |  |    
+| `appleDevice` | `backup_device` |  | X |  |  |      
+| `appleDevice` | `update_device` |  |  | X |   |   
+| `appleDevice` | `download_photos_from_device` | download photo(s) from the specific iOS device to local machine | X  |  |  |         
+| `appleDevice` | `download_files_from_device` | download file(s) from the specific iOS device to local machine | X  |  |  |        
+| `appleDevice` | `sync_content_to_device` | sync content from local machine to specific iOS device |  | X |  |
+| `portableDevice` | `download_files_from_device` | X  |  |  |        
+| `portableDevice` | `send_files_to_device`  |  |  | X |  |     
+| `portableDevice` | `download_photos_from_device` |  | X |  |  |        
+| `portableDevice` | `debug` | ADB tool control |  |  | X |
+| `removableMedia` | `read` |  | X |  |  |        
+| `removableMedia` | `write` |  |  | X  |  |    
+| `removableMedia` | `execute` |  |  |  | X |
+| `bluetoothDevice` | `download_files_from_device` |  | X  |  |  |
+| `bluetoothDevice` | `send_files_to_device` |  |  | X |  |    
 
 ---
 
