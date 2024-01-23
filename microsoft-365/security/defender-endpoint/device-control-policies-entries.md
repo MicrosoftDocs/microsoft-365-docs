@@ -155,3 +155,22 @@ The following table provides more context for the XML code snippet:
 
 ---
 
+## Entries
+
+Device control policies define access (called an entry) for a set of devices. Entries define the action and notification options for devices that match the policy and the conditions defined in the entry.  
+
+- Actions include: Allow, Deny, AuditAllow, AuditDeny
+- Notification options include:   
+   - No notification (default setting), but an event is generated
+   - The user receives a notification and file evidence can be captured
+
+If device control is configured, and a user attempts to use a device that's not allowed, the user gets a notification that contains the name of the device control policy and the name of the device. The notification appears once every hour after initial access is denied.
+
+An entry supports the following optional conditions:
+
+- Access Condition: Applies the action only to the access defined in the access mask
+- User Condition : Applies the action only to the user/group identified by the SID
+- Machine Condition:  Applies the action only to the machine/group identified by the SID
+- Parameters Condition:  Applies the action only if the parameters match (See Advanced Conditions)
+
+Entries can be further scoped to specific users and machines.  For example, allow read access to these USBs for this user only on this device.
