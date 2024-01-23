@@ -1,6 +1,6 @@
 ---
 title: Provide initial and ongoing training to help onboard your frontline workers
-description: Learn how you can plan, build, and launch your frontline worker onboarding experience.
+description: Get an overview of how to plan, build, and launch your frontline worker onboarding experience.
 ms.topic: conceptual
 author: lana-chin
 ms.author: v-chinlana
@@ -22,31 +22,33 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 09/27/2022
+ms.date: 
 ---
 
 # Provide initial and ongoing training to help onboard your frontline workers
 
-Get your employees ready to start and succeed in their roles on your frontline team with a custom onboarding and training process. You can use initial onboarding to welcome new team members, familiarize them with roles and duties, and teach them about how your organization operates. Then, use ongoing training to help your team maintain and grow their skills.
+Get your employees ready to start and succeed in their roles on your frontline team with a custom onboarding and training process. You can use initial onboarding to welcome new team members, familiarize them with roles and duties, and teach them about how your organization operates. Then, use ongoing training to help your teams maintain and grow their skills.
 
 ## Initial training and onboarding
 
-A smooth onboarding and initial training process is essential for new members of your frontline team to get up and running quickly. If your team tends to have low turnover, your workers may benefit from a longer and more in-depth onboarding process. If you employ a lot of seasonal or temporary workers on your frontline team, you may need a lighter onboarding experience. You can also customize your onboarding process for different teams that require different levels of initial training.
+A smooth onboarding and initial training process is essential for new members of your frontline teams to get up and running quickly. If your teams tend to have low turnover, your workers might benefit from a longer and more in-depth onboarding process. If you employ a lot of seasonal or temporary workers on your frontline teams, you might need a lighter onboarding experience. You can also customize your onboarding process for different teams that require different levels of initial training.
 
 [Learn how to plan, build, and launch your employee onboarding experience](/sharepoint/onboard-employees).
 
 > [!TIP]
-> If your frontline team will primarily be using Teams on mobile devices to communicate and collaborate, you can use [Viva Connections](/viva/connections/viva-connections-overview) and [Viva Learning](/viva/learning/overview-viva-learning) to make SharePoint content easily visible in Teams.
+> If your frontline teams will be primarily using Teams on mobile devices to communicate and collaborate, you can use [Viva Connections](/viva/connections/viva-connections-overview) and [Viva Learning](/viva/learning/overview-viva-learning) to make SharePoint content easily visible in Teams.
 
 ## Ongoing training
 
-This article will show you how Viva Learning can help you streamline ongoing training for your frontline team. Viva Learning pulls content from your chosen sources into Teams, making it easy for your frontline team to access. You can use Viva Learning to manage types of ongoing training including:
+Use [Viva Learning](/viva/learning/overview-viva-learning) to streamline ongoing training for your frontline teams. Viva Learning pulls content from your chosen sources into Teams, making it easy for your frontline team to access. You can use Viva Learning to manage types of ongoing training including:
 
 - Maintaining and refreshing necessary skills such as customer service or procedures for regular tasks
 - Learning new skills such as management responsibilities or using new equipment
 - Company policy training such as diversity and inclusion or security
 
-These are the steps to get Viva Learning up and running for your frontline workers:
+To learn more, see [Incorporate learning into your organization with Viva Learning](/viva/solutions/incorporate-learning).
+
+<!--These are the steps to get Viva Learning up and running for your frontline workers:
 
 1. [Get and set up Viva Learning](#get-and-set-up-viva-learning)
 2. [Choose and manage your content](#choose-and-manage-your-content)
@@ -62,7 +64,7 @@ Viva Learning is automatically enabled for Teams users, so your admin won't need
 
 ### Choose and manage your content
 
-Content from Microsoft, as well as select content from LinkedIn Learning, is available by default in Viva Learning. Your IT admin can also [integrate SharePoint with Viva Learning](/viva/learning/configure-sharepoint-content-source) to bring in custom content created by your organization. Using SharePoint allows you to create and distribute learning content created by and for your organization, so you can choose to share exactly what your workforce needs.
+Content from Microsoft and select content from LinkedIn Learning, is available by default in Viva Learning. Your IT admin can also [integrate SharePoint with Viva Learning](/viva/learning/configure-sharepoint-content-source) to bring in custom content created by your organization. Using SharePoint allows you to create and distribute learning content created by and for your organization, so you can choose to share exactly what your workforce needs.
 
 Managers can also bring in content from SharePoint that they can share with their teams by using the [Bring your own content](https://support.microsoft.com/office/bring-your-own-content-to-viva-learning-692bfe1a-0e8d-467c-b5a7-4e17c132ae93) feature.
 
@@ -83,8 +85,8 @@ Managers can [recommend learning content](https://support.microsoft.com/office/r
 
 Corporate communications specialists can use [Viva Connections](/viva/connections/viva-connections-overview) to distribute a SharePoint news post that highlights new learning opportunities or required trainings.
 
-[Learn how different roles in your organization can promote learning and training](/viva/solutions/incorporate-learning#step-4-distribute-and-promote-learning-content).
+[Learn how different roles in your organization can promote learning and training](/viva/solutions/incorporate-learning#step-4-distribute-and-promote-learning-content).-->
 
-### End-user training
+<!--### End-user training-->
 
-Make sure your workforce knows how to use Viva Learning. Share [the Viva Learning user training content set](https://support.microsoft.com/office/viva-learning-01bfed12-c327-41e0-a68f-7fa527dcc98a) to help your frontline team get comfortable using Viva Learning.
+Make sure your workforce knows how to use Viva Learning. Share the [Viva Learning user training content set](https://support.microsoft.com/office/viva-learning-01bfed12-c327-41e0-a68f-7fa527dcc98a) to help your frontline teams get comfortable using Viva Learning.
