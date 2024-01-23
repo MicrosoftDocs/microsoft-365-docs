@@ -394,6 +394,25 @@ Device properties have slightly different labels in adavcned hunting. The table 
 > Make sure that the object selected has the correct Media Class for the policy. In general, for removable storage, use `Class Name == USB`.
 
  
+### Groups used for Rules in Intune
+
+Reusable settings in Intune map to device groups. You can configure reusable settings in Intune.
+
+:::image type="content" source="media/device-control-groups-reusablesettings.png" alt-text="Screenshot of configuring reusable settings in Intune." lightbox="media/device-control-groups-reusablesettings.png":::
+
+There are two types of groups: Printer Device and Removable Storage.  Reusable settings support matching properties by either matching any or matching all or the settings. A removable storage setting has the following properties: 
+
+- BusId
+- DeviceId
+- FriendlyNameId
+- HardwareId
+- InstancePathId
+- PID
+- PrimaryId
+- SerialNumberId
+- VID
+- VID_PID
+
 
 
 
