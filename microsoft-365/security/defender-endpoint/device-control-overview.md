@@ -4,7 +4,7 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/19/2024
+ms.date: 01/23/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -127,6 +127,6 @@ For Mac, see [Device Control for macOS](mac-device-control-overview.md).
 
 ## Next steps
 
+- [Device control walkthroughs](device-control-walkthroughs.md)
 - [Learn about device control policies and entries](device-control-policies-entries.md)
-- [Learn how to deploy RSAC policies](defender-endpoint\device-control-mde-deploy.md)
 - [View device control reports](device-control-report.md)
