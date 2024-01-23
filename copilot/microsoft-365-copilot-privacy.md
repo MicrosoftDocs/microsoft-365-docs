@@ -97,9 +97,9 @@ Microsoft [Advanced Data Residency (ADR)](/microsoft-365/enterprise/advanced-dat
 Microsoft Copilot with Graph-grounded chat can reference web content from the Bing search index to ground user prompts and responses. Based on the user’s prompt, Copilot for Microsoft 365 determines whether it needs to use Bing to query web content to help provide a relevant response to the user. There are [controls available to manage the use of web content](#controls-available-to-manage-the-use-of-web-content) for both admins and users.
 
 > [!NOTE]
-> Web content grounding in Copilot uses only the Bing Search service. Copilot with commercial data protection (previously named Bing Chat Enterprise) is a separate offering and not involved with web content grounding.
+> Web grounding in Copilot uses only the Bing Search service. Copilot with commercial data protection (previously named Bing Chat Enterprise) is a separate offering and not involved with web grounding.
 
-### Details on how web content grounding works
+### Details on how web grounding works
 
 When web grounding is enabled, Copilot for Microsoft 365 may automatically generate a web search query, if Copilot for Microsoft 365 determines that web data can improve the quality of the response. The search query is based on the user’s prompt, Copilot interaction history, and relevant data the user has access to in Microsoft 365. This web search query might be displayed to the user after the prompt is entered. For example, the user might see the phrase "searching for..." followed by the search query. The query is passed to the [Bing Search API](/bing/search-apis/bing-web-search/overview), which is part of the Bing Search service, to retrieve information from the web to ground a response.
 
