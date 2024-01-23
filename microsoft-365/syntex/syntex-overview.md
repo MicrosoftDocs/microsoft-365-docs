@@ -135,7 +135,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about taxonomy tagging in Microsoft Syntex.](taxonomy-tagging-overview.md)
 
-### Dpcument translation
+### Document translation
 
 :::row:::
    :::column span="3":::
@@ -149,18 +149,18 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 [Learn more about translation in Microsoft Syntex.](translation-overview.md)
 
 
-### Syntex eSignature
+### SharePoint eSignature
 
 :::row:::
    :::column span="":::
       ![Image of generic esignature icon.](../media/content-understanding/esignature-image.png)
    :::column-end:::
    :::column span="3":::
-      Send electronic requests using Syntex eSignature, keeping your content in Microsoft 365 while it’s being reviewed and signed. Use Syntex eSignature to quickly and securely send documents for signature to people both inside and outside of your organization.
+      Send electronic requests using SharePoint eSignature, keeping your content in Microsoft 365 while it’s being reviewed and signed. Use eSignature to quickly and securely send documents for signature to people both inside and outside of your organization.
    :::column-end:::
 :::row-end:::
 
-[Learn more about using Microsoft Syntex eSignature.](esignature-overview.md)
+[Learn more about using SharePoint eSignature.](esignature-overview.md)
 
 ### Optical character recognition
 

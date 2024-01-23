@@ -276,7 +276,7 @@ In the **Release email to recipient inboxes** flyout that opens, configure the f
 
   Selecting this option reveals the following options:
 
-  - **Allow email with similar attributes**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
+  - **Allow this message**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
     - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
     - **Allow entry note**: Enter an optional note that contains additional information.
 
@@ -353,8 +353,6 @@ After you select the message, use either of the following methods to report the 
 
 In the **Submit to Microsoft for analysis** flyout that opens, configure the following options:
 
-- **Select the submission type**: Select **Email** (default), **URL**, or **File**.
-
 - **Add the network message ID or upload the email file**: Select one of the following options:
   - **Add the email network message ID**: This value is selected by default, with the corresponding value in the box.
   - **Upload the email file (.msg or eml)**: After you select this option, select the :::image type="icon" source="../../media/m365-cc-sc-import-icon.png" border="false":::**Browse files** button that appears to find and select the .msg or .eml message file to submit.
@@ -363,16 +361,12 @@ In the **Submit to Microsoft for analysis** flyout that opens, configure the fol
 
 - **Select a reason for submitting to Microsoft**: Choose one of the following options:
 
-  - **Should not have been blocked (false positive)** (default): If you select this option, the following settings are available:
-    - **Allow email with similar attributes**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
+  - **I've confirmed it's clean** (default): Select this option if you're sure that the message is clean, and then select **Next**. Then the following settings are available:
+    - **Allow this email**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
    - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
     - **Allow entry note**: Enter an optional note that contains additional information.
 
-  - **Should have been blocked (false negative)**: If you select this option, the following settings appear:
-    - **The email should have been categorized as**: Select **Phish**, **Spam**, or **Spam**.
-    - **Block all email from this sender or domain**: If you select this option, block entries for the **Sender** or **Domain** (you choose) are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md).
-      - **Remove block entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, **90 days**, **Never expire**, or a **Specific date**.
-    - **Block entry note**: Enter an optional note that contains additional information.
+  - **It appears clean**: Select this option if you want to get a second opinion from Microsoft.
 
 When you're finished on the **Submit to Microsoft for analysis** flyout, select **Submit**.
 
