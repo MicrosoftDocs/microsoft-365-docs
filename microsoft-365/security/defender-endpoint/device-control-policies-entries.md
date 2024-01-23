@@ -351,6 +351,30 @@ The devices that are in scope for the policy determined by a list of included gr
 | `APFS Encrypted` | If the device is APFS encrypted | N | Y | N |
 
 
+### Using Windows Device Manager to determine device properties
+
+For Windows devices, you can use Device Manager to understand the properties of devices. 
+
+1. Open Device Manager, locate the device, right-click on **Properties**, and then select the **Details** tab.
+
+   :::image type="content" source="media/device-control-groups-windowsproperties.png" alt-text="Screenshot of device properties using Device Manager in Windows.":::
+
+2. In the Property list, select **Device instance path**. 
+
+   
+
+This value is the InstancePathId but it also contains other properties
+USB\VID_090C&PID_1000\FBH1111183300721
+{BusId}\{DeviceId}\{SerialNumberId}
+The properties in the device manager map as follows:
+Device Manager    Device Control
+Hardware Ids    HardwareId
+Friendly name    FriendlyNameId
+Parent    VID_PID
+DeviceInstancePath    InstancePathId
+
+
+
 
 
 MORE TO COME
