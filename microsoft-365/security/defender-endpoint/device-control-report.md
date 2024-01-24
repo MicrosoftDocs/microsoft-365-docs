@@ -13,7 +13,7 @@ audience: ITPro
 ms.subservice: asr
 ms.collection: 
 - m365-security
-- tier3
+- tier2
 - mde-asr
 search.appverid: met150
 ---
