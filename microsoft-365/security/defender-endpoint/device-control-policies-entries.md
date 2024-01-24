@@ -591,11 +591,15 @@ The following table describes VPN connection conditions:
 
 | Name | Description |
 |---|---|
-| NameId | The name of the VPN Connection. Wildcards are supported |
-| VPNConnectionStatusId | Valid values are Connected, or Disconnected. |
-| VPNServerAddressId | The string value of VPNServerAddress, Wildcards are supported
--    VPNDnsSuffixId: The string, value of VPNDnsSuffix, Wildcards are supported
-These properties are added to the DescriptorIdList of a group of type VPNConnection
+| `NameId` | The name of the VPN Connection. Wildcards are supported |
+| `VPNConnectionStatusId` | Valid values are `Connected` or `Disconnected`. |
+| `VPNServerAddressId` | The string value of `VPNServerAddress`. Wildcards are supported. |
+| `VPNDnsSuffixId` | The string value of `VPNDnsSuffix`. Wildcards are supported. |
+
+These properties are added to the DescriptorIdList of a group of type VPNConnection, as shown in the following snippet:
+
+```xml
+
     <Group Id="{d633d17d-d1d1-4c73-aa27-c545c343b6d7}" Type="VPNConnection">
         <Name>Corporate VPN</Name>
         <MatchType>MatchAll</MatchType>
@@ -607,7 +611,11 @@ These properties are added to the DescriptorIdList of a group of type VPNConnect
         </DescriptorIdList>
     </Group>
 
-Then the group is referenced as parameters in an entry
+```
+
+Then the group is then referenced as parameters in an entry, as illustrated in the following snippet:
+
+```xml
 
        <Entry Id="{27c79875-25d2-4765-aec2-cb2d1000613f}">
           <Type>Allow</Type>
@@ -619,7 +627,11 @@ Then the group is referenced as parameters in an entry
         </Parameters>
        </Entry>
 
-File Conditions
+```
+
+
+### File Conditions
+
 The file group has the following properties:
 -    PathId: string, value of file path or name, Wildcards are supported and only applicable for File type Group.
 These properties are added to the DescriptorIdList of a group of type File  
