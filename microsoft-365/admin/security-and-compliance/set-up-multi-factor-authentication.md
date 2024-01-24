@@ -61,6 +61,8 @@ If you purchased your subscription or trial after October 21, 2019, and you're p
 1. Set **Security defaults** to **Enabled**.
 1. Select **Save**.
 
+For more information, see [What are security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)?
+
 ## Turn off per-user MFA
 
 If you've previously turned on per-user MFA, you must turn it off before enabling Security defaults.  You should also turn off per-user MFA after you've configure your policies and settings in Conditional Access.
@@ -70,8 +72,6 @@ If you've previously turned on per-user MFA, you must turn it off before enablin
 1. On the multifactor authentication page, select each user and set their multifactor authentication status to **Disabled**.
 
 ## Turn Security default MFA off
-
-For most organizations, Security defaults offer a good level of additional sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 > [!IMPORTANT]
 > It's not recommended to turn off MFA.
