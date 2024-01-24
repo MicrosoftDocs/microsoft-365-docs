@@ -435,5 +435,15 @@ The following XML snippet shows the syntax for matching groups:
 
 ```
 
+The following table describes properties for groups.
+
+| Property Name | Description | Options |
+|---|---|---|
+| `Group Id` | GUID, a unique ID, represents the group and to used in the policy. | You can generate the ID through PowerShell. |
+| `Type` | The type of the group | Device (Default) <br/><br/>The other types of groups (`File`, `VPNConnection`, `PrintJob`, `Network`) can be used for advanced conditions. The type for groups used with rules is `Device`, which is the default. |
+`MatchType`    The matching algorithm used    MatchAny, MatchAll,MatchExcludeAll,MatchExcludeAny
+`DescriptionIdList`    The list of properties evaluated for inclusion in the group    See the list below
+
+
 MORE TO COME
 
