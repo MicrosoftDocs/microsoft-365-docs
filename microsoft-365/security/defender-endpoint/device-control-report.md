@@ -69,6 +69,7 @@ DeviceEvents
 When a RemovableStorageFileEvent action occurs, information about the evidence file is available for both printer protection and removable storage. Here's an example query you can use with advanced hunting:
 
 ```kusto
+
 //information of the evidence file
 DeviceEvents
 | where ActionType contains "RemovableStorageFileEvent"
@@ -85,6 +86,7 @@ DeviceEvents
 | extend FileEvidenceLocation = tostring(parsed.TargetFileLocation)
 | project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, Policy, PolicyRuleId, FileInformationOperation, MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber, FileName, FolderPath, FileSize, FileEvidenceLocation, AdditionalFields
 | order by Timestamp desc
+
 ```
 
 ## [**Device control report**](#tab/report)
