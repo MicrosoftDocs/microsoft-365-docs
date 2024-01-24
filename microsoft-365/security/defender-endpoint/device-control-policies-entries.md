@@ -400,25 +400,12 @@ Reusable settings in Intune map to device groups. You can configure reusable set
 
 :::image type="content" source="media/device-control-groups-reusablesettings.png" alt-text="Screenshot of configuring reusable settings in Intune." lightbox="media/device-control-groups-reusablesettings.png":::
 
-There are two types of groups: Printer Device and Removable Storage.  Reusable settings support matching properties by either matching any or matching all or the settings. A removable storage setting has the following properties: 
+There are two types of groups: Printer Device and Removable Storage. The following table lists the properties for these groups. 
 
-- `BusId`
-- `DeviceId`
-- `FriendlyNameId`
-- `HardwareId`
-- `InstancePathId`
-- `PID`
-- `PrimaryId`
-- `SerialNumberId`
-- `VID`
-- `VID_PID`
-
-A printer device setting has the following properties: 
-
-- `FriendlyNameId`
-- `PrimaryId`
-- `PrinterConnectionId`
-- `VID_PID`
+| Group type | Properties |
+|---|---|
+| Printer device | - `FriendlyNameId`<br/>- `PrimaryId`<br/>- `PrinterConnectionId`<br/>- `VID_PID` |
+| Removable storage | - `BusId` <br/>- `DeviceId`<br/>- `FriendlyNameId`<br/>- `HardwareId`<br/>- `InstancePathId`<br/>- `PID`<br/>- `PrimaryId`<br/>- `SerialNumberId`<br/>- `VID`<br/>- `VID_PID` |
 
 ### Groups used for rules in XML (Windows)
 
@@ -441,8 +428,8 @@ The following table describes properties for groups.
 |---|---|---|
 | `Group Id` | GUID, a unique ID, represents the group and to used in the policy. | You can generate the ID through PowerShell. |
 | `Type` | The type of the group | Device (Default) <br/><br/>The other types of groups (`File`, `VPNConnection`, `PrintJob`, `Network`) can be used for advanced conditions. The type for groups used with rules is `Device`, which is the default. |
-`MatchType`    The matching algorithm used    MatchAny, MatchAll,MatchExcludeAll,MatchExcludeAny
-`DescriptionIdList`    The list of properties evaluated for inclusion in the group    See the list below
+| `MatchType` | The matching algorithm used | - `MatchAny`<br/>- `MatchAll`<br/>- `MatchExcludeAll`<br/>- `MatchExcludeAny` |
+| `DescriptionIdList` | The list of properties evaluated for inclusion in the group | See the list below |
 
 
 MORE TO COME
