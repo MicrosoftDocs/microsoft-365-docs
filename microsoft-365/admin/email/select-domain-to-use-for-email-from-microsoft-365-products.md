@@ -37,7 +37,7 @@ description: "Let Microsoft send notification messages from an email address wit
 - [Supported Products](#supported-products)
 - [Excluded Scenarios](#excluded-scenarios)
 
-Emails sent out to users as they interact with each other and across various products within Microsoft 365 are designed to provide insights and information about their organization. These emails are typically sent out between users based on those interactions, which means that they are often sent from the user’s email address. Those emails will remain unchanged and will continue to work as they do today.
+Emails sent out to users as they interact with each other and across various products within Microsoft 365 are designed to provide insights and information about their organization. These emails are typically sent out between users based on those interactions, which means that they're often sent from the user’s email address. Those emails will remain unchanged and will continue to work as they do today.
 
 There are several scenarios where emails are sent from a “no-reply” system-based product account. For example, batched comments, news, digests, and system notification emails are currently sent from a no-reply product address. These include addresses such no-reply@sharepointonline.com, no-reply@planner.com, no-reply@project.com.
 
