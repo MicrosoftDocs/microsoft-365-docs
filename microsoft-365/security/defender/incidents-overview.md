@@ -1,12 +1,7 @@
 ---
 title: Incident response with Microsoft Defender XDR
 description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft Defender portal.
-keywords: incidents, alerts, attack story, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: diannegali
@@ -54,6 +49,9 @@ If [enabled](m365d-enable.md), Microsoft Defender XDR can [automatically investi
 <a name='incidents-and-alerts-in-the-microsoft-365-defender-portal'></a>
 
 ## Incidents and alerts in the Microsoft Defender portal
+
+> [!TIP]
+> For a limited time during January 2024, when you visit the **Incidents** page, Defender Boxed appears. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
 
 You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target=" blank">Microsoft Defender portal</a>. Here's an example.
 
