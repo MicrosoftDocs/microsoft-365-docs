@@ -551,7 +551,7 @@ The following table describes network group properties:
 
 | Property | Description |
 |---|---|
-| `NameId` | The name of the Network support wildcard |
+| `NameId` | The name of the Network Wildcards are supported |
 | `NetworkCategoryId` | Valid options are `Public`, `Private`, or `DomainAuthenticated`. |
 | `NetworkDomainId` | Valid options are `NonDomain`, `Domain`, `DomainAuthenticated`. |
 
@@ -585,15 +585,16 @@ The group is then referenced as parameters in the entry, as illustrated in the f
 
 ```
 
+### VPN Connection Conditions
 
+The following table describes VPN connection conditions:
 
-VPN Connection Conditions
-
-The VPNConnection group has the following properties:
--    NameId: The name of the VPN Connection, support wildcard
--    VPNConnectionStatusId: Valid values are Connected, Disconnected.
--    VPNServerAddressId: The string value of VPNServerAddress, support wildcard
--    VPNDnsSuffixId: The string, value of VPNDnsSuffix, support wildcard
+| Name | Description |
+|---|---|
+| NameId | The name of the VPN Connection. Wildcards are supported |
+| VPNConnectionStatusId | Valid values are Connected, or Disconnected. |
+| VPNServerAddressId | The string value of VPNServerAddress, Wildcards are supported
+-    VPNDnsSuffixId: The string, value of VPNDnsSuffix, Wildcards are supported
 These properties are added to the DescriptorIdList of a group of type VPNConnection
     <Group Id="{d633d17d-d1d1-4c73-aa27-c545c343b6d7}" Type="VPNConnection">
         <Name>Corporate VPN</Name>
@@ -620,7 +621,7 @@ Then the group is referenced as parameters in an entry
 
 File Conditions
 The file group has the following properties:
--    PathId: string, value of file path or name, support wildcard and only applicable for File type Group.
+-    PathId: string, value of file path or name, Wildcards are supported and only applicable for File type Group.
 These properties are added to the DescriptorIdList of a group of type File  
 <Group Id="{e5f619a7-5c58-4927-90cd-75da2348a30f}" Type="File" MatchType="MatchAny">
     <DescriptorIdList>
