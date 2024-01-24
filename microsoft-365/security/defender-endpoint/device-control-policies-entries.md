@@ -495,3 +495,38 @@ The following values are supported as clauses:
 | `encryption` | apfs | Match if a device is apfs-encrypted. |
 | `groupId` | UUID string | Match if a device is a member of another group. The value represents the UUID of the group to match against. The group must be defined within the policy prior to the clause. |
 
+Here's an example query:
+
+```JSON
+
+"query": {
+        "$type": "or",
+        "clauses": [
+          {
+            "$type": "serialNumber",
+            "value": "FBH1111183300731"
+          }
+        ]
+      }
+
+```
+
+Our example query can be edited to get behavior equivalent to the ExcludedMatchAll and ExcludedMatchAny by using the "not" type, as follows:
+
+```json
+
+"query": {
+    "$type":"not",
+        "query": {
+                    "$type": "or",
+                    "clauses": [
+                          {
+                            "$type": "serialNumber",
+                            "value": "FBH1111183300731"
+                          }
+                    ]
+              }
+
+}
+
+```
