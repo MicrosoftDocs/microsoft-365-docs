@@ -47,7 +47,7 @@ You can also get product updates and important notifications through the [messag
 
 - (Preview) **[Query history](advanced-hunting-query-history.md) in advanced hunting** is now available. You can now rerun or refine queries you have run recently. Up to 30 queries in the past 28 days can be loaded in the query history pane.
 
-- (Preview) Additional features you can use to **[drill down](advanced-hunting-query-results#drill-down-from-query-results)** further from your query results in advanced hunting are now available.
+- (Preview) Additional features you can use to **[drill down](advanced-hunting-query-results.md#drill-down-from-query-results)** further from your query results in advanced hunting are now available.
 
 ## December 2023
 
