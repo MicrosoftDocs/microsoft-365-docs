@@ -49,10 +49,10 @@ If using a terminal download using the command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '708C2257109D200C2862637363BEC0C073ACD66CBD5120EB1DDE28F7AA9C9C1E'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '0A8E32B618F278BED60AB6763E9458BA2CD02C99D718E50DCCE51A7DBAC69863'
 
     ```console
-    echo '708C2257109D200C2862637363BEC0C073ACD66CBD5120EB1DDE28F7AA9C9C1E XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '0A8E32B618F278BED60AB6763E9458BA2CD02C99D718E50DCCE51A7DBAC69863 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
@@ -127,7 +127,7 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo 'A13C262EDD1C657EC056DD03E9F0487B4FD897964F1ABF968445E19035ABFD6D XMDEClientAnalyzer.zip' | sha256sum -c
+    echo '926DEF4C6857641E205E7978126F7C2CE541D52AEA1C0E194DDB85F7BCFDE3D9 XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
@@ -171,11 +171,13 @@ Use this for getting machine diagnostic
 -h, --help            show this help message and exit
 --output OUTPUT, -o OUTPUT
                       Output path to export report
---no-zip, -nz         If set a directory will be created instead of an archive file
+--outdir OUTDIR       Directory where diagnostics file will be generated
+--no-zip, -nz         If set a directory will be created instead of an
+                      archive file
 --force, -f           Will overwrite if output directory exists
 --diagnostic, -d      Collect extensive machine diagnostic information
 --bypass-disclaimer   Do not display disclaimer banner
---mdatp-log {info,trace,error,warning,debug,verbose}
+--mdatp-log {info,debug,verbose,error,trace,warning}
                       Set MDATP log level
 --max-log-size MAX_LOG_SIZE
                       Maximum log file size in MB before rotating(Will restart mdatp)
