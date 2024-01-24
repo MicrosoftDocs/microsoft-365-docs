@@ -58,6 +58,8 @@ Safe Links protection by Safe Links policies is available in the following locat
   > [!NOTE]
   > Safe Links does not work on mail-enabled public folders.
   >
+  > Safe Links does not provide protection for URLs in Rich Text Format (RTF) emails.
+  >
   > Safe Links supports only HTTP(S) and FTP formats.
   >
   > Using another service to wrap links before Defender for Office 365 might prevent Safe Links from process links, including wrapping, detonating, or otherwise validating the "maliciousness" of the link.
