@@ -43,7 +43,7 @@ You can also access CQD from Teams Admin Center:
 1. Then, choose **Call Quality Dashboard**.
 
 
-One you've logged into CQD, you can begin to analyze data from the existing dashboards. You can find these in the dropdown menu at the top of the page. You can also use [Power BI desktop](https://www.microsoft.com/p/power-bi-desktop/9ntxr16hnw1t#activetab=pivot:overviewtab) to create highly customizable reports. Use the [CQD Power BI template files](/microsoftteams/cqd-data-and-reports#import-the-cqd-report-templates) to get started. These template files contain many of the most frequently requested call quality metrics and charts.
+One you've logged into CQD, you can begin to analyze data from the existing dashboards. You can find these in the dropdown menu at the top of the page. You can also use [Power BI desktop](/p/power-bi-desktop/9ntxr16hnw1t#activetab=pivot:overviewtab) to create highly customizable reports. Use the [CQD Power BI template files](/microsoftteams/cqd-data-and-reports#import-the-cqd-report-templates) to get started. These template files contain many of the most frequently requested call quality metrics and charts.
 
 ## Working with CQD data in Power BI
 
