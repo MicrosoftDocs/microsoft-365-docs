@@ -225,7 +225,7 @@ The following table provides more context for the XML code snippet:
 
 #### Understand mask access (Windows)
 
-Device control applies an access mask to determine if the request matches the entry.  The following actions are available on CdRomDevices,RemovableMediaDevices and WpdDevices: 
+Device control applies an access mask to determine if the request matches the entry.  The following actions are available on CdRomDevices, RemovableMediaDevices and WpdDevices: 
 
 | Access | Mask |
 |--|--|
@@ -324,7 +324,7 @@ The properties can be matched in four ways:  `MatchAll`, `MatchAny`, `MatchExclu
 - `MatchExcludeAll`: The properties are an "And" relationship, any items that do NOT meet are covered. For example, if administrator puts `DeviceID` and `InstancePathID` and uses `MatchExcludeAll`, for every connected USB, system enforces as long as the USB doesn't have both identical `DeviceID` and `InstanceID` value.
 - `MatchExcludeAny`: The properties are an "Or" relationship, any items that do NOT meet are covered. For example, if administrator puts `DeviceID` and `InstancePathID` and uses `MatchExcludeAny`, for every connected USB, system enforces as long as the USB doesn't have either an identical `DeviceID` or `InstanceID` value.
 
-Groups are used two way:  to select devices for inclusion/exclusion in rules, and to filter access for advanced conditions.  This table summarizes the group types and how they are used.
+Groups are used two ways:  to select devices for inclusion/exclusion in rules, and to filter access for advanced conditions.  This table summarizes the group types and how they're used.
 
 | Type | Description | O/S | Include/Exclude Rules | Advanced conditions |
 |---|---|---|---|---|
@@ -381,7 +381,7 @@ The properties in the device manager map to device control as shown in the follo
 
 ### Using reports and advanced hunting to determine properties of devices
 
-Device properties have slightly different labels in adavcned hunting. The table below maps the labels in the portal to the `propertyId` in a device control policy.
+Device properties have slightly different labels in advanced hunting. The table below maps the labels in the portal to the `propertyId` in a device control policy.
 
 | Microsoft Defender Portal property | Device control property Id |
 |---|---|
@@ -430,7 +430,7 @@ The following table describes properties for groups.
 
 | Property Name | Description | Options |
 |---|---|---|
-| `Group Id` | GUID, a unique ID, represents the group and to used in the policy. | You can generate the ID through PowerShell. |
+| `Group Id` | GUID, a unique ID, represents the group and to be used in the policy. | You can generate the ID through PowerShell. |
 | `Type` | The type of the group | Device (Default) <br/><br/>The other types of groups (`File`, `VPNConnection`, `PrintJob`, `Network`) can be used for advanced conditions. The type for groups used with rules is `Device`, which is the default. |
 | `MatchType` | The matching algorithm used | - `MatchAny`<br/>- `MatchAll`<br/>- `MatchExcludeAll`<br/>- `MatchExcludeAny` |
 | `DescriptionIdList` | The list of properties evaluated for inclusion in the group | See [DescriptionIdList properties](#descriptionidlist-properties) (section after this table)  |
@@ -443,7 +443,7 @@ The properties described in the following table can be included in the `Descript
 | Property | Description |
 |---|---|
 | `PrimaryId` | Includes `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, and `PrinterDevices`.|
-| `InstancePathId` | String that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. It's corresponds to the device instance path in Device Manager in Windows. The number at the end (for example `&0`) represents the available slot and might change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. |
+| `InstancePathId` | String that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. It corresponds to the device instance path in Device Manager in Windows. The number at the end (for example `&0`) represents the available slot and might change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. |
 | `DeviceId` | To transform Device instance path to Device ID format, use Standard USB Identifiers, such as this example: `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` |
 | `HardwareId` | String that identifies the device in the system, like `USBSTOR\DiskGeneric_Flash_Disk___8.07`. It corresponds to the hardware ID in Device Manager in Windows. Keep in mind that `HardwareId` isn't unique; different devices might share the same value. |
 | `FriendlyNameId` | String attached to the device, like `Generic Flash Disk USB Device`. It's corresponds to the friendly name in Device Manager in Windows.  |
@@ -481,7 +481,7 @@ The following table describes properties for groups:
 | Property | Description | Options |
 |---|---|---|
 | `$type` | The kind of group | device |
-| `id` | GUID, a unique ID, represents the group and will be used in the policy. | You can generate the ID by using the Windows PowerShell [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) cmdlet or the `uuidgen` command on macOS |
+| `id` | GUID, a unique ID, represents the group to be used in the policy. | You can generate the ID by using the Windows PowerShell [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) cmdlet or the `uuidgen` command on macOS |
 | `name` | Friendly name for the group. | string |
 | `query` | The media coverage under this group | See the query properties tables below for details. |
 
