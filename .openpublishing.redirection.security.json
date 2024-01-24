@@ -3749,6 +3749,51 @@
       "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
       "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/deploy-and-manage-using-group-policy.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-deploy-manage-gpo",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/deploy-and-manage-using-intune.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-deploy-manage-intune",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/deploy-manage-removable-storage-group-policy.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-deploy-manage-gpo",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/deploy-manage-removable-storage-intune.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-deploy-manage-intune",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
+      "redirect_document_id": true
      }
    ]
  }
