@@ -3,7 +3,7 @@ title: "Get started with PowerShell for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/29/2023
+ms.date: 01/24/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -34,7 +34,7 @@ Select from these topics:
 
     Start here if you're new to PowerShell for Microsoft 365. Learn why you should use PowerShell for Microsoft 365.
 
-- [**Connect to Microsoft 365 with PowerShell**](connect-to-microsoft-365-powershell.md)
+- [**Connect to Microsoft 365 with Microsoft Graph PowerShell**](connect-to-microsoft-365-powershell.md)
 
     Start here to connect to your Microsoft 365 subscription by using PowerShell for Microsoft 365 and do administrative tasks from the command line.
 
