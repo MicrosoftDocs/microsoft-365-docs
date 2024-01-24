@@ -671,14 +671,14 @@ The group is then referenced as parameters in an entry, as illustrated in the fo
 
 ### Print Job Conditions
 
-The following table describes PrintJob group properties:
+The following table describes `PrintJob` group properties:
 
 | Name | Description |
 |---|---|
 | `PrintOutputFileNameId` | The output destination file path for print to file. Wildcards are supported. For example, `C:\*\Test.pdf` |
 | `PrintDocumentNameId` | The source file path. Wildcards are supported. This path might not exist. For example, add text to a new file in Notepad, and then print without saving the file. |
 
-These properties are added to the DescriptorIdList of a group of type PrintJob, as illustrated in the following snippet:
+These properties are added to the `DescriptorIdList` of a group of type `PrintJob`, as illustrated in the following snippet:
 
 ```xml
 
@@ -709,4 +709,17 @@ The group is then referenced as parameters in an entry, as illustrated in the fo
 
 ```
 
+## File evidence
+
+With device control, you can store evidence of files that were copied to removablee devices or were printed. When file evidence is enabled, a `RemovableStorageFileEvent` is created. The behavior of file evidence is controlled by options on the Allow action, as described in the following table:
+
+| Option | Description |
+|---|---|
+| `8` | Create a `RemovableStorageFileEvent` event with `FileEvidenceLocation` |
+| `16` | Create a `RemovableStorageFileEvent` without `FileEvidenceLocation` |
+
+The `FileEvidenceLocation` field of has the location of the evidence file, if one is created. The evidence file has a name which ends in `.dup`, and its location is controlled by the `DataDuplicationFolder` setting.
+
+
+## Next steps
 
