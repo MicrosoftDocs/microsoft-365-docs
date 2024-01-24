@@ -397,8 +397,8 @@ Device properties have slightly different labels in adavcned hunting. The table 
 ### Configure groups in Intune, XML in Windows, or JSON on Mac
 
 You can configure groups in Intune, by using an XML file for Windows, or by using a JSON file on Mac. Select each tab for more details.
- 
-### Groups used for Rules in Intune
+
+### [**Intune**](#tab/Removable)
 
 Reusable settings in Intune map to device groups. You can configure reusable settings in Intune.
 
@@ -411,7 +411,7 @@ There are two types of groups: Printer Device and Removable Storage. The followi
 | Printer device | - `FriendlyNameId`<br/>- `PrimaryId`<br/>- `PrinterConnectionId`<br/>- `VID_PID` |
 | Removable storage | - `BusId` <br/>- `DeviceId`<br/>- `FriendlyNameId`<br/>- `HardwareId`<br/>- `InstancePathId`<br/>- `PID`<br/>- `PrimaryId`<br/>- `SerialNumberId`<br/>- `VID`<br/>- `VID_PID` |
 
-### Groups used for rules in XML (Windows)
+### [**XML (Windows)**](#tab/XML)
 
 The following XML snippet shows the syntax for matching groups:
 
@@ -457,7 +457,7 @@ Here are some examples of device group definitions in the device control samples
 - [Group of devices by VID_PID](https://github.com/microsoft/mdatp-devicecontrol/blob/c43f0ee80702f0a24f48b1d0f8302dd30a230586/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Unapproved%20USBs%20Group.xml#L2)
 - [Group of devices by Primary Id](https://github.com/microsoft/mdatp-devicecontrol/blob/c43f0ee80702f0a24f48b1d0f8302dd30a230586/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml)
 
-### Groups used for Rules on Mac (JSON)
+### [**JSON (Mac)**](#tab/JSON)
 
 The following JSON snippet shows the syntax for defining groups on Mac:
 
@@ -535,4 +535,8 @@ Our example query can be edited to get behavior equivalent to the ExcludedMatchA
 ```
 
 This query matches all devices that don't have the specified serial number.
+
+---
+
+## Advanced conditions
 
