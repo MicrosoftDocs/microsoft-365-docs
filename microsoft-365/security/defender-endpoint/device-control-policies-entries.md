@@ -439,14 +439,14 @@ The properties described in the following table can be included in the Descripti
 
 | Property | Description |
 |---|---|
-| PrimaryId | The Primary ID includes RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices.|
-| InstancePathId | InstancePathId is a string that uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. It's the Device instance path in the Device Manager. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*. |
-| DeviceId | To transform Device instance path to Device ID format, see Standard USB Identifiers, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07 |
-| HardwareId | A string that identifies the device in the system, for example, USBSTOR\DiskGeneric_Flash_Disk___8.07. It's Hardware Ids in the Device Manager. Note: Hardware ID isn't unique; different devices might share the same value. |
-| FriendlyNameId | It's a string attached to the device, for example, Generic Flash Disk USB Device. It's the Friendly name in the Device Manager.  |
-| BusId | For example, USB, SCSI |
-| SerialNumberId | You can find SerialNumberId from Device instance path in the Device Manager, for example, 03003324080520232521 is SerialNumberId in USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\03003324080520232521&0 |
-| VID_PID | Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device. It supports wildcard. To transform Device instance path to Vendor ID and Product ID format, see Standard USB Identifiers. For example: 0751_55E0: match this exact VID/PID pair <br/>_55E0: match any media with PID=55E0 <br/>0751_: match any media with VID=0751 |
+| `PrimaryId` | Includes `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, and `PrinterDevices`.|
+| `InstancePathId` | String that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. It's corresponds to the device instance path in Device Manager on Windows. The number at the end (for example `&0`) represents the available slot and might change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. |
+| `DeviceId` | To transform Device instance path to Device ID format, use Standard USB Identifiers, such as this example: `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` |
+| `HardwareId` | String that identifies the device in the system, like `USBSTOR\DiskGeneric_Flash_Disk___8.07`. It corresponds to the hardware ID in Device Manager on Windows. Keep in mind taht HardwareId isn't unique; different devices might share the same value. |
+| `FriendlyNameId` | String attached to the device, like `Generic Flash Disk USB Device`. It's corresponds to the friendly name in Device Manager on Windows.  |
+| `BusId` | For example, USB, SCSI |
+| `SerialNumberId` | You can find SerialNumberId from Device instance path in the Device Manager, for example, 03003324080520232521 is SerialNumberId in USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\03003324080520232521&0 |
+| `VID_PID` | Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device. It supports wildcard. To transform Device instance path to Vendor ID and Product ID format, see Standard USB Identifiers. For example: 0751_55E0: match this exact VID/PID pair <br/>_55E0: match any media with PID=55E0 <br/>0751_: match any media with VID=0751 |
 
 Here are some examples of device group definitions in the device control samples repository:
 
@@ -454,9 +454,29 @@ Here are some examples of device group definitions in the device control samples
 - [Group of devices by VID_PID](https://github.com/microsoft/mdatp-devicecontrol/blob/c43f0ee80702f0a24f48b1d0f8302dd30a230586/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Unapproved%20USBs%20Group.xml#L2)
 - [Group of devices by Primary Id](https://github.com/microsoft/mdatp-devicecontrol/blob/c43f0ee80702f0a24f48b1d0f8302dd30a230586/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml)
 
+### Groups used for Rules on Mac (JSON)
 
+The following JSON snippet shows the syntax for defining groups on Mac:
 
+```json
 
+    {
+      "$type": "device",
+      "id": "3f5253e4-0e73-4587-bb9e-bb29a2171694",
+      "query": {
+        "$type": "or",
+        "clauses": [
+    …
+        ]
+      }
+    }
+
+```
+
+The following table describes properties for groups:
+
+| Property | Description | Options |
+|---|---|---|
 
 MORE TO COME
 
