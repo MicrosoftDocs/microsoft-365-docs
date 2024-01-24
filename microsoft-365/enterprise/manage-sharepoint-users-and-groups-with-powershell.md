@@ -1,5 +1,5 @@
 ---
-title: "Manage SharePoint Online users and groups with PowerShell"
+title: "Manage SharePoint users and groups with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -22,16 +22,16 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: In this article, learn how to use PowerShell for Microsoft 365 to manage SharePoint Online users, groups, and sites.
+description: In this article, learn how to use PowerShell for Microsoft 365 to manage SharePoint users, groups, and sites.
 ---
 
-# Manage SharePoint Online users and groups with PowerShell
+# Manage SharePoint users and groups with PowerShell
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-If you're a SharePoint Online administrator who works with large lists of user accounts or groups and wants an easier way to manage them, you can use PowerShell for Microsoft 365.
+If you're a SharePoint administrator who works with large lists of user accounts or groups and wants an easier way to manage them, you can use PowerShell for Microsoft 365.
 
-Before you begin, the procedures in this article require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+Before you begin, the procedures in this article require you to connect to SharePoint. For instructions, see [Connect to SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## Get a list of sites, groups, and users
 
@@ -57,7 +57,7 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 ## Add a user to the Site Collection Administrators group
 
-You use the `Set-SPOUser` cmdlet to add a user to the list of Site Collection Administrators on a site collection.
+You use the `Set-SPOUser` cmdlet to add a user to the list of site admins on a site collection.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -77,7 +77,7 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
-You can copy and paste these commands into Notepad, change the variable values for $tenant, $site, and $user to actual values from your environment, and then paste this into your SharePoint Online Management Shell window to run them.
+You can copy and paste these commands into Notepad, change the variable values for $tenant, $site, and $user to actual values from your environment, and then paste this into your SharePoint Management Shell window to run them.
 
 ## Add a user to other site collection groups
 
@@ -130,7 +130,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 Sometimes you have to remove a user from a site or even all sites. Perhaps the employee moves from one division to another or leaves the company. You can do this for one employee easily in the UI, but this isn't easily done when you have to move a complete division from one site to another.
 
-However by using the SharePoint Online Management Shell and CSV files, this is fast and easy. In this task, you'll use Windows PowerShell to remove a user from a site collection security group. Then you'll use a CSV file and remove lots of users from different sites.
+However by using the SharePoint Management Shell and CSV files, this is fast and easy. In this task, you'll use Windows PowerShell to remove a user from a site collection security group. Then you'll use a CSV file and remove lots of users from different sites.
 
 We'll be using the 'Remove-SPOUser' cmdlet to remove a single Microsoft 365 user from a site collection group so we can see the command syntax. Here's how the syntax looks:
 
@@ -274,13 +274,13 @@ However, what if you wanted to do this for every site? You can do this without h
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-This report is fairly simple, and you can add more code to create more specific reports or reports that include more detailed information. But this should give you an idea of how to use the SharePoint Online Management Shell to manage users in the SharePoint Online environment.
+This report is fairly simple, and you can add more code to create more specific reports or reports that include more detailed information. But this should give you an idea of how to use the SharePoint Management Shell to manage users in the SharePoint environment.
 
 ## See also
 
-[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+[Connect to SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
-[Manage SharePoint Online with PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+[Manage SharePoint with PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
 
