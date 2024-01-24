@@ -3781,17 +3781,7 @@
       "redirect_document_id": false
      },
      {
-      "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
-      "redirect_document_id": true
-     },
-     {
-      "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
-      "redirect_document_id": true
-     },
-     {
-      "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
+      "source_path": "microsoft-365/security/defender-endpoint/printer-protection-overview.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
       "redirect_document_id": true
      }
