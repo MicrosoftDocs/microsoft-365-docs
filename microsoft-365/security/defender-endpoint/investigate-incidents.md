@@ -44,6 +44,9 @@ When you investigate an incident, you'll see:
 
 ## Analyze incident details
 
+> [!TIP]
+> For a limited time during January 2024, when you visit the **Incidents** page, Defender Boxed appears. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
+
 Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, devices, investigations, evidence, graph).
 
 :::image type="content" source="images/atp-incident-details.png" alt-text="The details of an incident" lightbox="images/atp-incident-details.png":::
