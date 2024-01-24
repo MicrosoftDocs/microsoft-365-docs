@@ -172,8 +172,7 @@ Use this for getting machine diagnostic
 --output OUTPUT, -o OUTPUT
                       Output path to export report
 --outdir OUTDIR       Directory where diagnostics file will be generated
---no-zip, -nz         If set a directory will be created instead of an
-                      archive file
+--no-zip, -nz         If set a directory will be created instead of an archive file
 --force, -f           Will overwrite if output directory exists
 --diagnostic, -d      Collect extensive machine diagnostic information
 --bypass-disclaimer   Do not display disclaimer banner
