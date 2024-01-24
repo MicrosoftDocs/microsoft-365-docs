@@ -40,7 +40,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## January 2024
 
-- **Providing intent while submitting is now generally available**: Admins can convey whether they are submitting for a second opinion from Microsoft or they are submitting because a true malicious message was missed by Microsoft. With this change, Microsoft analysis of admin submitted messages (email and Microsoft Teams), URLs, and email attachments will be further streamlined and will result in more accurate analysis. [Learn more](submissions-admin.md).
+- **Providing intent while submitting is now generally available**: Admins can identify if they're submitting an item to Microsoft for a second opinion or they're submitting the message because it's malicious and was missed by Microsoft. With this change, Microsoft analysis of admin submitted messages (email and Microsoft Teams), URLs, and email attachments is further streamlined and results in a more accurate analysis. [Learn more](submissions-admin.md).
 
 ## December 2023
 

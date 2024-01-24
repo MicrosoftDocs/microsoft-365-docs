@@ -89,7 +89,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 
 3. On the **Emails** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis**.
 
-4. In the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
+4. On the first page of the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
 
    - **Select the submission type**: Verify the value **Email** is selected.
 
@@ -97,26 +97,45 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
      - **Add the email network message ID**: The GUID value is available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
      - **Upload the email file (.msg or .eml)**: Select **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then select **Open**.
 
-   - **Choose a recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email bypassed scanning due to user or organization policies or override.
+   - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email bypassed scanning due to user or organization policies or override.
 
-   - **Select a reason for submitting to Microsoft**: 
-       - If you want to get a second opinion from Microsoft then select **It appears suspicious**. 
-       - If you are sure that it is malicious, select **I've confirmed it's a threat**. You need to further categorize it by selecting **Phish**, **Malware**, or **Spam**. Once yout select **Next**, the following settings are available:
-           - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender domain or email address in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md). 
-           After you select this option, the following settings are available:
-               - By default, **Sender** is selected but you can select **Domain** instead.
-               - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
-                   - **1 day**
-                   - **7 days**
-                   - **30 days**
-                   - **90 days**
-                   - **Never expire**
-                   - **Specific date**: The maximum value is 90 days from today.
-               - **Block entry note**: Enter optional information about why you're blocking this email.
+   - **Why are you submitting this message to Microsoft?**: Select one of the following values:
+     - **It appears suspicious**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
 
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+     or
 
-:::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-block.png":::
+     - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+       - **Phish**
+       - **Malware**
+       - **Spam**
+
+       Select **Next**.
+
+       :::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-block.png":::
+
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
+
+   or
+
+   - Select **Block all emails from this sender or domain**: This option creates a block entry for the sender domain or email address in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - By default, **Sender** is selected but you can select **Domain** instead.
+     - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Never expire**
+       - **Specific date**: The maximum value is 90 days from today.
+     - **Block entry note (optional)**: Enter optional information about why you're blocking this item.
+
+     When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+     :::image type="content" source="../../media/admin-submission-email-block-page-2.png" alt-text="Choose whether to create a corresponding block entry for the sender domain or email address in the Tenant Allow/Block List." lightbox="../../media/admin-submission-email-block-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the block entry is available on the **Domains & addresses** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Sender>.
 
@@ -128,29 +147,47 @@ After a few moments, the block entry is available on the **Domains & addresses**
 
 3. On the **Email attachments** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis**.
 
-4. On the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
+4. On the first page of the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
 
    - **Select the submission type**: Verify the value **Email attachment** is selected.
 
    - **File**: Select :::image type="icon" source="../../media/m365-cc-sc-import-icon.png" border="false"::: **Browse files** to find and select the file to submit.
 
-   - **Select a reason for submitting to Microsoft**: 
-       - If you want to get a second opinion from Microsoft then select **It appears suspicious**. 
-       - If you are sure that it is malicious, select **I've confirmed it's a threat**. You need to further categorize it by selecting **Phish** or **Malware**. Once yout select **Next**, the following settings are available:
-       - **Block this file**: Select this option to create a block entry for the file in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
-        After you select this option, the following settings are available:
-           - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
-               - **1 day**
-               - **7 days**
-               - **30 days**
-               - **90 days**
-               - **Never expire**
-               - **Specific date**: The maximum value is 90 days from today.
-           - **Block entry note**: Enter optional information about why you're blocking this file.
+   - **Why are you submitting this email attachment to Microsoft?**: Select one of the following values:
+     - **It appears suspicious**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
 
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+     or
 
-:::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Submit a false negative (bad) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-file-block.png":::
+     - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+       - **Phish**
+       - **Malware**
+
+       Select **Next**.
+
+       :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Submit a false negative (bad) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-file-block.png":::
+
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
+
+   or
+
+   - Select **Block this file**: This option creates a block entry for the file in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Never expire**
+       - **Specific date**: The maximum value is 30 days from today.
+     - **Block entry note (optional)**: Enter optional information about why you're blocking this item.
+
+     When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+   :::image type="content" source="../../media/admin-submission-file-block-page-2.png" alt-text="Choose whether to create a corresponding block entry for the file in the Tenant Allow/Block List." lightbox="../../media/admin-submission-file-block-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the block entry is available on the **Files** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=FileHash>.
 
@@ -168,23 +205,41 @@ After a few moments, the block entry is available on the **Files** tab on the **
 
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can enter up to 50 URLs at once.
 
-   - **Select a reason for submitting to Microsoft**:  
-       - If you want to get a second opinion from Microsoft then select **It appears suspicious**. 
-       - If you are sure that it is malicious, select **I've confirmed it's a threat**. You need to further categorize it by selecting **Phish** or **Malware**. Once yout select **Next**, the following settings are available:
-         - **Block this URL**: Select this option to create a block entry for the URL in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
-         After you select this option, the following settings are available:
-           - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
-               - **1 day**
-               - **7 days**
-               - **30 days**
-               - **90 days**
-               - **Never expire**
-               - **Specific date**: The maximum value is 90 days from today.
-            - **Block entry note**: Enter optional information about why you're blocking this URL.
+   - **Why are you submitting this URL to Microsoft?**: Select one of the following values:
+     - **It appears suspicious**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
 
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+     or
 
-:::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Submit a false negative (bad) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-block.png":::
+     - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+       - **Phish**
+       - **Malware**
+
+       Select **Next**.
+
+       :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Submit a false negative (bad) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-block.png":::
+
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
+
+   or
+
+   - Select **Block this URL**: This option creates a block entry for the URL in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Never expire**
+       - **Specific date**: The maximum value is 30 days from today.
+     - **Block entry note (optional)**: Enter optional information about why you're blocking this itme.
+
+     When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+   :::image type="content" source="../../media/admin-submission-url-block-page-2.png" alt-text="Choose whether to create a corresponding block entry for the URL in the Tenant Allow/Block List." lightbox="../../media/admin-submission-url-block-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the block entry is available on the **URL** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Url>.
 
@@ -196,7 +251,7 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
 
 3. On the **Emails** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis**.
 
-4. In the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
+4. In the first page of the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
 
    - **Select the submission type**: Verify the value **Email** is selected.
 
@@ -204,24 +259,41 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
      - **Add the email network message ID**: The GUID value is available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
      - **Upload the email file (.msg or .eml)**: Select **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then select **Open**.
 
-   - **Choose a recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
+   - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
 
-   - **Select a reason for submitting to Microsoft**: 
-       - If you want to get a second opinion from Microsoft then select **It appears clean**. 
-       - If you are sure that it is clean, select **I've confirmed it's clean**. Once yout select **Next**, the following settings are available:
-           -  **Allow this message**: Select this option if you want to allow this message. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md)
-             - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
-               - **1 day**
-               - **7 days**
-               - **30 days**
-               - **Specific date**: The maximum value is 30 days from today.
-               For spoofed senders, this value is meaningless, because entries for spoofed senders never expire.
-             - **Allow entry note**: Enter optional information about why you're allowing and submitting this email message.
-           For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
+   - **Why are you submitting this message to Microsoft?**: Select one of the following values:
+     - **It appears clean**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
 
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+     or
+
+     - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**
 
    :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Submit a false positive (good) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-allow.png":::
+
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
+
+   or
+
+   - Select **Allow this message**: This option creates an allow entry for the elements of the message in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Specific date**: The maximum value is 90 days from today.
+
+       For spoofed senders, this value is meaningless, because entries for spoofed senders never expire.
+
+     - **Allow entry note (optional)**: Enter optional information about why you're allowing this item. For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
+
+     When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+     :::image type="content" source="../../media/admin-submission-email-allow-page-2.png" alt-text="Choose whether to create a corresponding allow entry for the elements of the message in the Tenant Allow/Block List." lightbox="../../media/admin-submission-email-block-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the associated allow entries appear on the **Domains & addresses**, **Spoofed senders**, **URLs**, or **Files** tabs on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -249,20 +321,36 @@ After a few moments, the associated allow entries appear on the **Domains & addr
 
    - **File**: Select **Browse files** to find and select the file to submit.
 
-   - **Select a reason for submitting to Microsoft**: 
-       - If you want to get a second opinion from Microsoft then select **It appears clean**. 
-       - If you are sure that it is malicious, select **I've confirmed it's clean**. Once yout select **Next**, the following settings are available:
-         - **Allow this file**: Select this option to create an allow entry for the file in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md)
-         - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
-           - **1 day**
-           - **7 days**
-           - **30 days**
-           - **Specific date**: The maximum value is 30 days from today.
-         - **Allow entry note**: Enter optional information about why you're allowing and submitting this file.
+   - **Why are you submitting the message to Microsoft?**: Select one of the following values:
+     - **It appears clean**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
 
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+     or
+
+     - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**.
 
    :::image type="content" source="../../media/admin-submission-file-allow.png" alt-text="Submit a false positive (good) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-file-allow.png":::
+
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
+
+   or
+
+   - Select **Allow this file**: This option creates a allow entry for the file in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Specific date**: The maximum value is 30 days from today.
+     - **Block entry note (optional)**: Enter optional information about why you're blocking this item.
+
+     When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+   :::image type="content" source="../../media/admin-submission-file-allow-page-2.png" alt-text="Choose whether to create a corresponding block entry for the file in the Tenant Allow/Block List." lightbox="../../media/admin-submission-file-allow-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the allow entry is available on the **Files** tab on the **Tenant Allow/Block List** page. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
@@ -288,20 +376,36 @@ For URLs reported as false positives, we allow subsequent messages that contain 
 
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can also provide a top level domain (for example, `https://www.fabrikam.com/*`), and then select it in the box that appears. You can enter up to 50 URL at once.
 
-   - **Select a reason for submitting to Microsoft**: 
-       - If you want to get a second opinion from Microsoft then select **It appears clean**. 
-       - If you are sure that it is malicious, select **I've confirmed its clean**. Once yout select **Next**, the following settings are available
-         - **Allow this URL**: Select this option to create an allow entry for the URL in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md)
-         - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
-           - **1 day**
-           - **7 days**
-           - **30 days**
-           - **Specific date**: The maximum value is 30 days from today.
-         - **Allow entry note**: Enter optional information about why you're allowing and submitting this URL.
+   - **Why are you submitting this URL to Microsoft?**: Select one of the following values:
+     - **It appears clean**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
 
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+     or
 
-   :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Submit a false positive (good) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-allow.png":::
+     - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**.
+
+       :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Submit a false positive (good) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-allow.png":::
+
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
+
+   or
+
+   - Select **Allow this URL**: This option creates an allow entry for the URL in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Specific date**: The maximum value is 30 days from today.
+     - **Allow entry note (optional)**: Enter optional information about why you're allow this item.
+
+     When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+   :::image type="content" source="../../media/admin-submission-url-allow-page-2.png" alt-text="Choose whether to create a corresponding allow entry for the URL in the Tenant Allow/Block List." lightbox="../../media/admin-submission-url-allow-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the allow entry is available on the **URL** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Url>.
 
@@ -701,14 +805,15 @@ These actions are described in the following subsections.
 
 After you select the message on the **User reported** tab, use either of the following methods to submit the message to Microsoft:
 
-- **On the User reported tab**: Select **Submit to Microsoft for analysis***.
+- **On the User reported tab**: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis***.
 
 - **In the details flyout of the selected message**: Select **Submit to Microsoft for analysis** or :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** \> **Submit to Microsoft for analysis** at the top of the flyout.
 
-In the flyout that opens, select one of the following values:
+In the **Submit to Microsoft for analysis** flyout that opens, do the following steps based on whether the message from email or Teams:
 
-- **Available values for email messages**:
-
+- Email messages:
+  - **Why are you submitting this message to Microsoft**? Select one of the following values:
+    - **It appears clean**:
   - If you want to get a second opinion from Microsoft then select **It appears clean** or **It appears suspicious**.
   - If you are sure that it is clean, select **I've confirmed it's clean**. Once yout select **Next**, the following settings are available:
       - **Allow this message**: Select this option to add corresponding allow entries in Tenant Allow/Block List. The following settings are available:
