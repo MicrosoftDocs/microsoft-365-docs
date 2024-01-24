@@ -435,17 +435,17 @@ The following table describes properties for groups.
 
 #### DescriptionIdList properties
 
-The properties described in the following table can be included in the DescriptionIdList:
+The properties described in the following table can be included in the `DescriptionIdList`:
 
 | Property | Description |
 |---|---|
 | `PrimaryId` | Includes `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, and `PrinterDevices`.|
-| `InstancePathId` | String that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. It's corresponds to the device instance path in Device Manager on Windows. The number at the end (for example `&0`) represents the available slot and might change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. |
+| `InstancePathId` | String that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. It's corresponds to the device instance path in Device Manager in Windows. The number at the end (for example `&0`) represents the available slot and might change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. |
 | `DeviceId` | To transform Device instance path to Device ID format, use Standard USB Identifiers, such as this example: `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` |
-| `HardwareId` | String that identifies the device in the system, like `USBSTOR\DiskGeneric_Flash_Disk___8.07`. It corresponds to the hardware ID in Device Manager on Windows. Keep in mind taht HardwareId isn't unique; different devices might share the same value. |
-| `FriendlyNameId` | String attached to the device, like `Generic Flash Disk USB Device`. It's corresponds to the friendly name in Device Manager on Windows.  |
+| `HardwareId` | String that identifies the device in the system, like `USBSTOR\DiskGeneric_Flash_Disk___8.07`. It corresponds to the hardware ID in Device Manager in Windows. Keep in mind that `HardwareId` isn't unique; different devices might share the same value. |
+| `FriendlyNameId` | String attached to the device, like `Generic Flash Disk USB Device`. It's corresponds to the friendly name in Device Manager in Windows.  |
 | `BusId` | For example, `USB`, `SCSI` |
-| `SerialNumberId` | You can find `SerialNumberId` from Device instance path in Device Manager on Windows. For example, `03003324080520232521` is `SerialNumberId` in `USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\03003324080520232521&0` |
+| `SerialNumberId` | You can find `SerialNumberId` from Device instance path in Device Manager in Windows. For example, `03003324080520232521` is `SerialNumberId` in `USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\03003324080520232521&0` |
 | `VID_PID` | Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. <br/>Product ID is the four-digit product code that the vendor assigns to the device. It supports wildcards.<br/>To transform Device instance path to Vendor ID and Product ID format, use Standard USB Identifiers. Here are some examples: <br/>`0751_55E0`: match this exact VID/PID pair <br/>`_55E0`: match any media with `PID=55E0` <br/>`0751_`: match any media with `VID=0751` |
 
 Here are some examples of device group definitions in the device control samples repository:
