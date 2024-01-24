@@ -13,6 +13,8 @@ ms.collection:
 - m365-security
 - tier3
 - mde-asr
+ms.custom: 
+- partner-contribution
 ms.reviewer: joshbregman
 search.appverid: MET150
 f1.keywords: NOCSH 

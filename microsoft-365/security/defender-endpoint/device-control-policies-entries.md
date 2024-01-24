@@ -4,7 +4,7 @@ description: Learn about device control policies and entries in Defender for End
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/23/2024
+ms.date: 01/24/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
