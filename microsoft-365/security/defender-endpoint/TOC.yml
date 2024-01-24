@@ -563,8 +563,6 @@
           items:
           - name: Overview
             href: device-control-removable-storage-access-control.md
-          - name: Deploy RSAC
-            name: defender-endpoint\device-control-mde-deploy.md
           - name: Frequently asked questions
             href: device-control-removable-storage-access-control-faq.md
         - name: Device control reports
