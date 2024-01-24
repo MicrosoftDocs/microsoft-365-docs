@@ -2,7 +2,7 @@
 title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
 description: Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there's a critical incident
-keywords: XDR, protected assets, defender experts for xdr, set up microsoft xdr, set up permissions in xdr, managed detection and response (MDR) service, service delivery manager, readiness, threat hunting and analysis, actions needed xdr
+keywords: XDR, protected assets, defender experts for xdr, set up microsoft xdr, set up permissions in xdr, managed detection and response (MDR) service, service delivery manager, managed response in Teams, readiness, threat hunting and analysis, actions needed xdr
 ms.service: defender-experts
 ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/18/2024
+ms.date: 01/23/2024
 ---
 
 # Get started with Microsoft Defender Experts for XDR
@@ -135,7 +135,7 @@ To edit or update your notification contacts after the initial setup, go to **Se
 
 ## Receive managed response notifications and updates in Microsoft Teams
 
-Apart from email and in-portal chat, you also have to option to use Microsoft Teams to receive updates about managed responses and communicate with our experts in real time. When this setting is turned on, a new team named **Defender Experts team** is created, where managed response notifications related to ongoing incidents are sent as new posts in the **Managed response** channel. [Learn more about using Teams chat](../defender/start-using-mdex-xdr.md#teams-chat)
+Apart from email and [in-portal chat](start-using-mdex-xdr.md#in-portal-chat), you also have to option to use Microsoft Teams to receive updates about managed responses and communicate with our experts in real time. When this setting is turned on, a new team named **Defender Experts team** is created, where managed response notifications related to ongoing incidents are sent as new posts in the **Managed response** channel. [Learn more about using Teams chat](../defender/start-using-mdex-xdr.md#teams-chat)
 
 > [!IMPORTANT]
 > Defender Experts will have access to all messages posted on any channel in the created **Defender Experts team**. To prevent Defender Experts from accessing messages in this team, go to **Apps** in Teams then navigate to **Manage your apps** > **Defender Experts** > **Remove**. This removal action cannot be reversed.
@@ -146,6 +146,9 @@ Apart from email and in-portal chat, you also have to option to use Microsoft Te
 2. Select **Next** to review your settings.
 3. Select **Submit**. The step-by-step guide then completes the initial setup.
 4. Select **View readiness assessment** to complete the necessary actions required to [optimize your security posture](#prepare-your-environment-for-the-defender-experts-service).
+
+> [!NOTE]
+> To set up the Defender Experts Teams application, you must have either the **Global administrator** or **Security administrator** role assigned, and a Microsoft Teams license.
 
 To turn on Teams notifications and chat after the initial setup, go to **Settings** > **Defender Experts** > **Teams**.
 
