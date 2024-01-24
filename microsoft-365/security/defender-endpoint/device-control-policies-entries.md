@@ -651,7 +651,6 @@ The following table illustrates how properties are added to the `DescriptorIdLis
 
 ```
 
-
 The group is then referenced as parameters in an entry, as illustrated in the following snippet:
 
 ```xml
@@ -673,9 +672,13 @@ The group is then referenced as parameters in an entry, as illustrated in the fo
 ### Print Job Conditions
 
 The following table describes PrintJob group properties:
-*    PrintOutputFileNameId: The output destination file path for print to file. Wildcards are supported. For example, C:\*\Test.pdf
-*    PrintDocumentNameId: The source file path. Wildcards are supported. This path might not exist. For example, add text to a new file in Notepad, and then print without saving the file.
-These properties are added to the DescriptorIdList of a group of type PrintJob
+
+| Name | Description |
+|---|---|
+| `PrintOutputFileNameId` | The output destination file path for print to file. Wildcards are supported. For example, `C:\*\Test.pdf` |
+| `PrintDocumentNameId` | The source file path. Wildcards are supported. This path might not exist. For example, add text to a new file in Notepad, and then print without saving the file. |
+
+These properties are added to the DescriptorIdList of a group of type PrintJob, as illustrated in the following snippet:
 
 ```xml
 
@@ -689,8 +692,10 @@ These properties are added to the DescriptorIdList of a group of type PrintJob
 
 ```
 
+The group is then referenced as parameters in an entry, as illustrated in the following snippet:
 
-And then the group is referenced as parameters in the entry:
+```xml
+
    <Entry Id="{1ecfdafb-9b7f-4b66-b3c5-f1d872b0961d}">
       <Type>Deny</Type>
       <Options>0</Options>
@@ -701,4 +706,7 @@ And then the group is referenced as parameters in the entry:
             </PrintJob>
       </Parameters>
    </Entry>
+
+```
+
 
