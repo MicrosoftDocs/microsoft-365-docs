@@ -225,7 +225,7 @@ The following table provides more context for the XML code snippet:
 
 #### Understand mask access (Windows)
 
-Device control applies an access mask to determine if the request matches the entry.  The following actions are available on CdRomDevices, RemovableMediaDevices and WpdDevices: 
+Device control applies an access mask to determine if the request matches the entry.  The following actions are available on `CdRomDevices`, `RemovableMediaDevices`, and `WpdDevices`: 
 
 | Access | Mask |
 |--|--|
@@ -283,7 +283,7 @@ The following table provides more context for the JSON code snippet:
 
 There are two kinds of access for an entry:  generic and device type specific. 
 
-- Generic access options include generic_read, generic_write, and generic_execute.
+- Generic access options include `generic_read`, `generic_write`, and `generic_execute`.
 - Device type specific access provides a finer granularity of control, because the device type specific access values are included in the generic access types.
 
 The following table describes the device type specific access and how they map to the generic access types.
@@ -334,7 +334,7 @@ Groups are used two ways:  to select devices for inclusion/exclusion in rules, a
 | File | Filter file properties | Windows |  | X |
 | Print Job | Filter properties of the file being printed | Windows |  | X |
 
-The devices that are in scope for the policy determined by a list of included groups and a list of excluded groups.  A rule applies if the device is in all of the included groups and none of the excluded groups.  Groups can be composed from the properties of devices.  The following properties can be used:
+The devices that are in scope for the policy determined by a list of included groups and a list of excluded groups. A rule applies if the device is in all of the included groups and none of the excluded groups.  Groups can be composed from the properties of devices. The following properties can be used:
 
 | Property | Description | Windows devices | Mac devices | Printers |
 |---|---|---|---|---|
@@ -364,7 +364,7 @@ For Windows devices, you can use Device Manager to understand the properties of 
 
    :::image type="content" source="media/device-control-groups-windows-deviceinstancepath.png" alt-text="Screenshot showing the device instance path in Device Manager on a Windows device.":::
 
-The value shown for device instance path is the InstancePathId, but it also contains other properties.
+The value shown for device instance path is the `InstancePathId`, but it also contains other properties.
 
 - `USB\VID_090C&PID_1000\FBH1111183300721`
 - `{BusId}\{DeviceId}\{SerialNumberId}`
