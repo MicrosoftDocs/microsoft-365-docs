@@ -540,3 +540,129 @@ This query matches all devices that don't have the specified serial number.
 
 ## Advanced conditions
 
+Entries can be further restricted based on parameters. Parameters apply advanced conditions that go beyond the device. Advanced conditions allow for fine-grained control based on Network, VPN Connection, File or Print Job being evaluated.
+
+> [!NOTE]
+> Advanced conditions are only supported in the XML format.
+
+### Network Conditions
+
+The following table describes network group properties:
+
+| Property | Description |
+|---|---|
+| `NameId` | The name of the Network support wildcard |
+| `NetworkCategoryId` | Valid options are `Public`, `Private`, or `DomainAuthenticated`. |
+| `NetworkDomainId` | Valid options are `NonDomain`, `Domain`, `DomainAuthenticated`. |
+
+These properties are added to the DescriptorIdList of a group of type Network. Here's an example snippet:
+
+```xml
+
+<Group Id="{e5f619a7-5c58-4927-90cd-75da2348a30a}" Type="Network" MatchType="MatchAll">
+    <DescriptorIdList>
+        <NetworkCategoryId>Public</PathId>
+        <NetworkDomainId>NonDomain</PathId>
+    </DescriptorIdList>
+</Group>
+
+```
+
+The group is then referenced as parameters in the entry, as illustrated in the following snippet:
+
+```xml
+
+   <Entry Id="{1ecfdafb-9b7f-4b66-b3c5-f1d872b0961d}">
+      <Type>Deny</Type>
+      <Options>0</Options>
+      <AccessMask>40</AccessMask>
+      <Parameters MatchType="MatchAll">
+             <Network MatchType="MatchAny">
+                   <GroupId>{ e5f619a7-5c58-4927-90cd-75da2348a30a }</GroupId>
+            </Network>
+      </Parameters>
+   </Entry>
+
+```
+
+
+
+VPN Connection Conditions
+
+The VPNConnection group has the following properties:
+-    NameId: The name of the VPN Connection, support wildcard
+-    VPNConnectionStatusId: Valid values are Connected, Disconnected.
+-    VPNServerAddressId: The string value of VPNServerAddress, support wildcard
+-    VPNDnsSuffixId: The string, value of VPNDnsSuffix, support wildcard
+These properties are added to the DescriptorIdList of a group of type VPNConnection
+    <Group Id="{d633d17d-d1d1-4c73-aa27-c545c343b6d7}" Type="VPNConnection">
+        <Name>Corporate VPN</Name>
+        <MatchType>MatchAll</MatchType>
+        <DescriptorIdList>
+            <NameId>ContosoVPN</NameId>
+            <VPNServerAddressId>contosovpn.*.contoso.com</VPNServerAddressId>
+            <VPNDnsSuffixId>corp.contoso.com</VPNDnsSuffixId>
+            <VPNConnectionStatusId>Connected</VPNConnectionStatusId>
+        </DescriptorIdList>
+    </Group>
+
+Then the group is referenced as parameters in an entry
+
+       <Entry Id="{27c79875-25d2-4765-aec2-cb2d1000613f}">
+          <Type>Allow</Type>
+          <Options>0</Options>
+          <AccessMask>64</AccessMask>
+          <Parameters MatchType="MatchAny">
+                    <GroupId>{d633d17d-d1d1-4c73-aa27-c545c343b6d7}</GroupId>
+            </VPNConnection>
+        </Parameters>
+       </Entry>
+
+File Conditions
+The file group has the following properties:
+-    PathId: string, value of file path or name, support wildcard and only applicable for File type Group.
+These properties are added to the DescriptorIdList of a group of type File  
+<Group Id="{e5f619a7-5c58-4927-90cd-75da2348a30f}" Type="File" MatchType="MatchAny">
+    <DescriptorIdList>
+        <PathId>*.exe</PathId>
+        <PathId>*.dll</PathId>
+    </DescriptorIdList>
+</Group>
+
+And then the group is referenced as parameters in the entry
+   <Entry Id="{1ecfdafb-9b7f-4b66-b3c5-f1d872b0961d}">
+      <Type>Deny</Type>
+      <Options>0</Options>
+      <AccessMask>40</AccessMask>
+      <Parameters MatchType="MatchAll">
+             <File MatchType="MatchAny">
+                   <GroupId>{ e5f619a7-5c58-4927-90cd-75da2348a30f }</GroupId>
+            </File>
+      </Parameters>
+   </Entry>
+
+Print Job Conditions
+The  PrintJob group has the following properties:
+*    PrintOutputFileNameId: The output destination file path for print to file. Wildcards are supported. For example, C:\*\Test.pdf
+*    PrintDocumentNameId: The source file path. Wildcards are supported. This path might not exist. For example, add text to a new file in Notepad, and then print without saving the file.
+These properties are added to the DescriptorIdList of a group of type PrintJob
+<Group Id="{e5f619a7-5c58-4927-90cd-75da2348a30b}" Type="PrintJob" MatchType="MatchAny">
+    <DescriptorIdList>
+        <PrintOutputFileNameId>C:\Documents\*.pdf</PrintOutputFileNameId >
+        <PrintDocumentNameId>*.xlsx</PrintDocumentNameId>
+<PrintDocumentNameId>*.docx</PrintDocumentNameId>
+    </DescriptorIdList>
+</Group>
+
+And then the group is referenced as parameters in the entry:
+   <Entry Id="{1ecfdafb-9b7f-4b66-b3c5-f1d872b0961d}">
+      <Type>Deny</Type>
+      <Options>0</Options>
+      <AccessMask>40</AccessMask>
+      <Parameters MatchType="MatchAll">
+             <PrintJob MatchType="MatchAny">
+                   <GroupId>{e5f619a7-5c58-4927-90cd-75da2348a30b}</GroupId>
+            </PrintJob>
+      </Parameters>
+   </Entry>
+
