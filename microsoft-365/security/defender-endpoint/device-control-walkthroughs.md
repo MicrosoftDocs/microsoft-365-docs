@@ -4,7 +4,7 @@ description: Learn how to work with device control in Defender for Endpoint.
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
-ms.date: 01/22/2024
+ms.date: 01/24/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -184,5 +184,6 @@ Device control also supports group SIDs. Change the SID in the read-only policy 
 ## Next steps
 
 - [Learn about device control policies and entries](device-control-policies-entries.md)
-- [Learn how to deploy RSAC policies](defender-endpoint\device-control-mde-deploy.md)
+- [Deploy and manage device control in Microsoft Defender for Endpoint with Microsoft Intune](device-control-deploy-manage-intune.md)
+- [Deploy and manage device control in Microsoft Defender for Endpoint with Group Policy](device-control-deploy-manage-gpo.md)
 - [View device control reports](device-control-report.md)
