@@ -9,7 +9,7 @@ audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
-    - enabler-strategic
+    - essentials-get-started
     - m365initiative-syntex
     - Tier1
 search.appverid: MET150
@@ -43,6 +43,7 @@ Pay-as-you-go currently supports the following Syntex services:
 - Content assembly
 - Image tagging
 - Taxonomy tagging
+- Translation
 - Syntex eSignature
 - Optical character recognition
 - Microsoft 365 Archive (Preview)

@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 12/29/2023
 ---
 
 # AlertInfo
@@ -45,7 +45,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Date and time when the event was recorded |
+| `Timestamp` | `datetime` | Date and time when the record was generated |
 | `AlertId` | `string` | Unique identifier for the alert |
 | `Title` | `string` | Title of the alert |
 | `Category` | `string` | Type of threat indicator or breach activity identified by the alert |

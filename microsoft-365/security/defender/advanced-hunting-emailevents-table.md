@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 01/16/2024
 ---
 
 # EmailEvents
@@ -58,7 +58,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RecipientEmailAddress` | `string` | Email address of the recipient, or email address of the recipient after distribution list expansion |
 | `RecipientObjectId` | `string` | Unique identifier for the email recipient in Microsoft Entra ID |
 | `Subject` | `string` | Subject of the email |
-| `EmailClusterId` | `string` | Identifier for the group of similar emails clustered based on heuristic analysis of their contents |
+| `EmailClusterId` | `long` | Identifier for the group of similar emails clustered based on heuristic analysis of their contents |
 | `EmailDirection` | `string` | Direction of the email relative to your network:  Inbound, Outbound, Intra-org |
 | `DeliveryAction` | `string` | Delivery action of the email: Delivered, Junked, Blocked, or Replaced |
 | `DeliveryLocation` | `string` | Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed, Dropped, Deleted items |
@@ -79,7 +79,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `OrgLevelPolicy` | `string` | Organizational policy that triggered the action taken on the email |
 | `UserLevelAction` | `string` | Action taken on the email in response to matches to a mailbox policy defined by the recipient |
 | `UserLevelPolicy` | `string` | End-user mailbox policy that triggered the action taken on the email |
-| `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `ReportId` | `string` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `AdditionalFields` | `string` | Additional information about the entity or event |
 | `LatestDeliveryLocation`* | `string` | Last known location of the email |
 |`LatestDeliveryAction`* | `string` | Last known action attempted on an email by the service or by an admin through manual remediation |
