@@ -56,9 +56,9 @@ Safe Links protection by Safe Links policies is available in the following locat
   For more information about Safe Links protection for email messages, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.
 
   > [!NOTE]
-  > Safe Links does not work on mail-enabled public folders.
+  > Safe Links doesn't work on mail-enabled public folders.
   >
-  > Safe Links does not provide protection for URLs in Rich Text Format (RTF) emails.
+  > Safe Links doesn't provide protection for URLs in Rich Text Format (RTF) email messages.
   >
   > Safe Links supports only HTTP(S) and FTP formats.
   >
