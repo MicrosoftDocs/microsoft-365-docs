@@ -550,8 +550,12 @@
           href: device-control-overview.md
         - name: Device control walkthroughs
           href: device-control-walkthroughs.md
-        - name: Device control policies
+        - name: Understand device control policies and entries
           href: device-control-policies-entries.md
+        - name: Deploy and manage device control with Intune
+          href: device-control-deploy-manage-intune.md
+        - name: Deploy and manage device control with Group Policy
+          href: device-contro-deploy-manage-group-policy.md
         - name: Device installation
           href: mde-device-control-device-installation.md
         - name: Removable storage access control
@@ -561,23 +565,8 @@
             href: device-control-removable-storage-access-control.md
           - name: Deploy RSAC
             name: defender-endpoint\device-control-mde-deploy.md
-          - name: Deploy and manage using Intune
-            href: deploy-manage-removable-storage-intune.md
-          - name: Deploy and manage using group policy
-            href: deploy-manage-removable-storage-group-policy.md
           - name: Frequently asked questions
             href: device-control-removable-storage-access-control-faq.md
-        - name: Device control printer protection
-          href: printer-protection.md
-          items:
-          - name: Printer protection overview
-            href: printer-protection-overview.md
-          - name: Deploy and manage using group policy
-            href: deploy-and-manage-using-group-policy.md
-          - name: Deploy and manage using Intune
-            href: deploy-and-manage-using-intune.md
-          - name: Printer protection frequently asked questions
-            href: printer-protection-frequently-asked-questions.md
         - name: Device control reports
           href: device-control-report.md
       - name: Exploit protection

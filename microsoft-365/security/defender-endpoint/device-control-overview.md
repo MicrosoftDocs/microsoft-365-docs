@@ -4,19 +4,20 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/19/2024
+ms.date: 01/23/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier3
+- tier2
 - mde-asr
+ms.custom: 
+- partner-contribution
 ms.reviewer: joshbregman
 search.appverid: MET150
 f1.keywords: NOCSH 
-audience: ITPro
 ---
 
 # Device control in Microsoft Defender for Endpoint
@@ -127,6 +128,6 @@ For Mac, see [Device Control for macOS](mac-device-control-overview.md).
 
 ## Next steps
 
+- [Device control walkthroughs](device-control-walkthroughs.md)
 - [Learn about device control policies and entries](device-control-policies-entries.md)
-- [Learn how to deploy RSAC policies](defender-endpoint\device-control-mde-deploy.md)
 - [View device control reports](device-control-report.md)

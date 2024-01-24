@@ -11,12 +11,13 @@ ms.subservice: asr
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier3
+- tier2
 - mde-asr
+ms.custom: 
+- partner-contribution
 ms.reviewer: joshbregman
 search.appverid: MET150
 f1.keywords: NOCSH 
-audience: ITPro
 ---
 
 # Device control walkthroughs
@@ -161,7 +162,7 @@ In our example, the Read Only USB group contains a single device identified by i
 
 Once the policy is deployed, insert an authorized USB. You should see that full access is allowed. Now insert the second test device (Read Only USB). You can access the device with read-only permissions. Attempt to create a new file, or make changes to a file, and you should see that device control blocks it. 
 
-If you insert any other USB device, it should be blocked due to the “Deny all other USBs” policy.
+If you insert any other USB device, it should be blocked due to the "Deny all other USBs" policy.
 
 ## Step 5: Allow different levels of access to devices for specific users or groups
 
