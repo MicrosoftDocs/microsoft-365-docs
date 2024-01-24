@@ -394,6 +394,9 @@ Device properties have slightly different labels in adavcned hunting. The table 
 > [!NOTE]
 > Make sure that the object selected has the correct Media Class for the policy. In general, for removable storage, use `Class Name == USB`.
 
+### Configure groups in Intune, XML in Windows, or JSON on Mac
+
+You can configure groups in Intune, by using an XML file for Windows, or by using a JSON file on Mac. Select each tab for more details.
  
 ### Groups used for Rules in Intune
 
@@ -530,3 +533,6 @@ Our example query can be edited to get behavior equivalent to the ExcludedMatchA
 }
 
 ```
+
+This query matches all devices that don't have the specified serial number.
+
