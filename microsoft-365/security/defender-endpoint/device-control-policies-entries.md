@@ -482,3 +482,16 @@ The following table describes properties for groups:
 | `name` | Friendly name for the group. | string |
 | `query` | The media coverage under this group | See the query properties tables below for details. |
 
+The query supports all, and (same as all), any, or (same as any) types. This is the logic used to combine the properties in the clauses.
+
+The following values are supported as clauses:
+
+| Clause `$type` | Value | Description |
+|---|---|---|
+| `primaryId` | One of: <br/>- `apple_devices`<br/>- `removable_media_devices`<br/>- `portable_devices`<br/>- `bluetooth_devices` |
+| `vendorId` | four-digit hexadecimal string | Matches a device's vendor ID |
+| `productId` | four-digit hexadecimal string | Matches a device's product ID |
+| `serialNumber` | string | Matches a device's serial number. Doesn't match if the device doesn't have a serial number. |
+| `encryption` | apfs | Match if a device is apfs-encrypted. |
+| `groupId` | UUID string | Match if a device is a member of another group. The value represents the UUID of the group to match against. The group must be defined within the policy prior to the clause. |
+
