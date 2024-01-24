@@ -29,7 +29,12 @@ Microsoft 365 Business Premium uses the following security best practices and pr
 - Security hardening.
 - Operational best practices for Microsoft 365.
 
-For more information, see the [Microsoft Trust Center - Security](https://www.microsoft.com/security).
+For information, see the [Microsoft Trust Center - Security](https://www.microsoft.com/security).
+
+For related configuration information, see the following articles:
+
+- [Configure your security protection in Microsoft 365 Business Premium](m365bp-security-overview.md)
+- [Microsoft 365 for business security best practices](secure-your-business-data.md)
 
 ## Privacy
 
@@ -41,6 +46,8 @@ For information about privacy in Microsoft 365 Business Premium, see:
 ## Compliance
 
 For information about compliance in Microsoft 365 Business Premium, see the [Microsoft Trust Center - Compliance](https://www.microsoft.com/trust-center/compliance/compliance-overview).
+
+For related configuration information, see [Set up information protection capabilities](m365bp-set-up-compliance.md).
 
 ## Related resources
 
