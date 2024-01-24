@@ -69,7 +69,7 @@ Data controls supported today:
 - Quota
 - Legal hold
 - DLP
-- Basic eDiscovery – The .whiteboard files are stored as files in the creator's OneDrive for Business. They're indexed for keyword and file type search, but aren't available to preview or review. Upon export, an admin needs to upload the file back to OneDrive for Business to view the content. More support is planned for the future.
+- Basic eDiscovery – The .whiteboard files are stored as files in the creator's OneDrive for Business. They're indexed for keyword and file type search, but aren't available to preview or review. Upon export, an admin needs to upload the file back to OneDrive for Business to view the content. More support is planned for the future. Text within comments are not currently supported in basic eDiscovery.
 
 Data controls planned for future releases:
 
