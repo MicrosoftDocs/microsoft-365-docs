@@ -2,7 +2,7 @@
 title: Translate a document in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/19/2024
 audience: admin
