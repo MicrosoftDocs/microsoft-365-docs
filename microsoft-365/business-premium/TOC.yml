@@ -118,3 +118,5 @@
       href: m365bp-intune-admin-roles-in-the-mac.md
     - name: Windows Autopilot scenarios and capabilities
       href: /mem/autopilot/windows-autopilot-scenarios
+    - name: Security, privacy, and compliance
+      href: m365bp-security-privacy-compliance.md
