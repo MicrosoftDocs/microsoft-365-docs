@@ -446,7 +446,7 @@ The properties described in the following table can be included in the `Descript
 | `FriendlyNameId` | String attached to the device, like `Generic Flash Disk USB Device`. It's corresponds to the friendly name in Device Manager in Windows.  |
 | `BusId` | For example, `USB`, `SCSI` |
 | `SerialNumberId` | You can find `SerialNumberId` from Device instance path in Device Manager in Windows. For example, `03003324080520232521` is `SerialNumberId` in `USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\03003324080520232521&0` |
-| `VID_PID` | Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. <br/>Product ID is the four-digit product code that the vendor assigns to the device. It supports wildcards.<br/>To transform Device instance path to Vendor ID and Product ID format, use Standard USB Identifiers. Here are some examples: <br/>`0751_55E0`: match this exact VID/PID pair <br/>`_55E0`: match any media with `PID=55E0` <br/>`0751_`: match any media with `VID=0751` |
+| `VID_PID` | - Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. <br/>- Product ID is the four-digit product code that the vendor assigns to the device. It supports wildcards.<br/>- To transform Device instance path to Vendor ID and Product ID format, use Standard USB Identifiers. Here are some examples: <br/>`0751_55E0`: match this exact VID/PID pair <br/>`_55E0`: match any media with `PID=55E0` <br/>`0751_`: match any media with `VID=0751` |
 
 Here are some examples of device group definitions in the device control samples repository:
 
@@ -477,6 +477,8 @@ The following table describes properties for groups:
 
 | Property | Description | Options |
 |---|---|---|
-
-MORE TO COME
+| `$type` | The kind of group | device |
+| `id` | GUID, a unique ID, represents the group and will be used in the policy. | You can generate the ID by using the Windows PowerShell [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) cmdlet or the `uuidgen` command on macOS |
+| `name` | Friendly name for the group. | string |
+| `query` | The media coverage under this group | See the query properties tables below for details. |
 
