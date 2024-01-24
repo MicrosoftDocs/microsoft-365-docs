@@ -551,7 +551,7 @@ The following table describes network group properties:
 
 | Property | Description |
 |---|---|
-| `NameId` | The name of the Network Wildcards are supported |
+| `NameId` | The name of the network. Wildcards are supported. |
 | `NetworkCategoryId` | Valid options are `Public`, `Private`, or `DomainAuthenticated`. |
 | `NetworkDomainId` | Valid options are `NonDomain`, `Domain`, `DomainAuthenticated`. |
 
@@ -591,7 +591,7 @@ The following table describes VPN connection conditions:
 
 | Name | Description |
 |---|---|
-| `NameId` | The name of the VPN Connection. Wildcards are supported |
+| `NameId` | The name of the VPN Connection. Wildcards are supported. |
 | `VPNConnectionStatusId` | Valid values are `Connected` or `Disconnected`. |
 | `VPNServerAddressId` | The string value of `VPNServerAddress`. Wildcards are supported. |
 | `VPNDnsSuffixId` | The string value of `VPNDnsSuffix`. Wildcards are supported. |
@@ -632,9 +632,16 @@ Then the group is then referenced as parameters in an entry, as illustrated in t
 
 ### File Conditions
 
-The file group has the following properties:
--    PathId: string, value of file path or name, Wildcards are supported and only applicable for File type Group.
-These properties are added to the DescriptorIdList of a group of type File  
+The following table describes file group properties:
+
+| Name | Description |
+|---|---|
+| `PathId` | String, value of file path or name. <br/>Wildcards are supported. <br/>Only applicable for file type groups. |
+
+The following table illustrates how properties are added to the `DescriptorIdList` of a file group:
+
+```xml
+  
 <Group Id="{e5f619a7-5c58-4927-90cd-75da2348a30f}" Type="File" MatchType="MatchAny">
     <DescriptorIdList>
         <PathId>*.exe</PathId>
@@ -642,7 +649,13 @@ These properties are added to the DescriptorIdList of a group of type File
     </DescriptorIdList>
 </Group>
 
-And then the group is referenced as parameters in the entry
+```
+
+
+The group is then referenced as parameters in an entry, as illustrated in the following snippet:
+
+```xml
+
    <Entry Id="{1ecfdafb-9b7f-4b66-b3c5-f1d872b0961d}">
       <Type>Deny</Type>
       <Options>0</Options>
@@ -654,11 +667,18 @@ And then the group is referenced as parameters in the entry
       </Parameters>
    </Entry>
 
-Print Job Conditions
-The  PrintJob group has the following properties:
+```
+
+
+### Print Job Conditions
+
+The following table describes PrintJob group properties:
 *    PrintOutputFileNameId: The output destination file path for print to file. Wildcards are supported. For example, C:\*\Test.pdf
 *    PrintDocumentNameId: The source file path. Wildcards are supported. This path might not exist. For example, add text to a new file in Notepad, and then print without saving the file.
 These properties are added to the DescriptorIdList of a group of type PrintJob
+
+```xml
+
 <Group Id="{e5f619a7-5c58-4927-90cd-75da2348a30b}" Type="PrintJob" MatchType="MatchAny">
     <DescriptorIdList>
         <PrintOutputFileNameId>C:\Documents\*.pdf</PrintOutputFileNameId >
@@ -666,6 +686,9 @@ These properties are added to the DescriptorIdList of a group of type PrintJob
 <PrintDocumentNameId>*.docx</PrintDocumentNameId>
     </DescriptorIdList>
 </Group>
+
+```
+
 
 And then the group is referenced as parameters in the entry:
    <Entry Id="{1ecfdafb-9b7f-4b66-b3c5-f1d872b0961d}">
