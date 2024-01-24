@@ -27,7 +27,7 @@ ms.date:
 
 # Corporate communications with frontline workers
 
-Keep your frontline teams connected with your broader organization by using Viva Connections and Viva Engage.
+Keep your frontline teams connected with your broader organization by using Viva Connections and Viva Engage. 
 
 ## Connect information from across the organization with Viva Connections
 
@@ -35,11 +35,7 @@ Viva Connections is an employee experience app in Teams that connects employees 
 
 Your frontline teams can view a tailored news feed from your organization and a personalized dashboard with resources they need. Surface key information, personalized news, tasks, announcements, and other resources on the Viva Connections dashboard. For example, a retailer could share new product and promotion announcements with their store associates, or a fundraising coordinator for a nonprofit could share quarterly goals with volunteers.
 
-Learn about [Viva Connections](/sharepoint/viva-connections-overview) including how to set it up and deploy it in your organization.
-
-Help your employees and associates [get started with Viva Connections in Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b).
-
-Learn more about [how to drive communication in your organization](/sharepoint/corporate-communications-overview).
+Learn more about [Viva Connections](/sharepoint/viva-connections-overview) and help your employees [get started with Viva Connections in Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b).
 
 <!--Engage and inform workers with Viva Connections. Viva Connections creates a hub in Teams where your frontline team can view a tailored news feed from your organization and a personalized dashboard with resources they need. When employees use Viva Connections, they’re able to get important information faster, meaning that managers don’t have to spend valuable time relaying updates. Surface key information, personalized news, tasks, announcements, and other resources on the Viva Connections Dashboard. For example, a retailer could share new product and promotion announcements with their store associates, or a fundraising coordinator for a nonprofit could share quarterly goals with volunteers.
 
@@ -63,9 +59,7 @@ Viva Engage brings people together across the organization to connect with leade
 
 Viva Engage communities provide a central place for conversations, files, events, and updates, where people can connect to ask and answer questions, provide feedback, stay informed, and more.
 
-Learn about [Viva Engage](/viva/engage/overview) including how to set it up and use it in your organization.
-
-Help your employees [get started with Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284).
+Learn more about [Viva Engage](/viva/engage/overview) and help your employees [get started with Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284).
 
 <!--Engage with communities in Viva Engage, which brings the power of Viva Engage into Teams. Communities in Viva Engage serve the needs of knowledge-sharing, employee experience, company-wide communications, and leadership engagement by providing a central place for your conversations, files, events, and updates. Associates can raise issues, provide feedback, and ask and answer questions in Viva Engage Communities. Hold live events and town halls to keep everyone in your organization in the loop.
 
@@ -82,3 +76,4 @@ More information about Viva Engage:
 
 Email is a core communication tool for most workplaces. [Set up email with Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) and create mailboxes for your frontline workers and managers so you can send broadcast communications over email. Users must have an F3 license to have an email mailbox.
 
+Learn more about how [to drive communication in your organization](/sharepoint/corporate-communications-overview).
