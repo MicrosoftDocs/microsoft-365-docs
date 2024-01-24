@@ -554,6 +554,8 @@
           href: device-control-policies-entries.md
         - name: Deploy and manage device control with Intune
           href: device-control-deploy-manage-intune.md
+        - name: Deploy and manage device control with Group Policy
+          href: device-contro-deploy-manage-group-policy.md
         - name: Device installation
           href: mde-device-control-device-installation.md
         - name: Removable storage access control
