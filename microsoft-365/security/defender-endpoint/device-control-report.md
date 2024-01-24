@@ -1,5 +1,5 @@
 ---
-title: Protect your organization's data with device control
+title: View device control events and information in Microsoft Defender for Endpoint
 description: Monitor your organization's data security through device control reports.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Device control report
+# View device control events and information in Microsoft Defender for Endpoint
 
 Microsoft Defender for Endpoint device control protects against data loss by monitoring and controlling media used by peripheral devices (like removable storage or printers) in your organization. You can view device control events events that are triggered by either Device Control Removable Storage Access Control or Printer Protection policies by using advanced hunting or the device control report.
 
@@ -42,6 +42,7 @@ When a device control policy is triggered, an event is visible with advanced hun
 When a RemovableStoragePolicyTriggered action occurs, event information about the disk and file system level enforcement is available. 
 
 ```kusto
+
 //RemovableStoragePolicyTriggered: event triggered by Disk and file system level enforcement for both Printer and Removable storage based on your policy
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
@@ -60,11 +61,12 @@ DeviceEvents
 | extend MediaSerialNumber = tostring(parsed.SerialNumber)
 |project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, FolderPath, FileSize
 | order by Timestamp desc
+
 ```
 
 ### Example 2: Removable storage file event
 
-When a RemovableStorageFileEvent action occurs, information about the evidence file is available for both printer protection and removable storage. Here’s an example query you can use with advanced hunting:
+When a RemovableStorageFileEvent action occurs, information about the evidence file is available for both printer protection and removable storage. Here's an example query you can use with advanced hunting:
 
 ```kusto
 //information of the evidence file
