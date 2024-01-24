@@ -63,7 +63,7 @@ With Microsoft Teams, Viva Connections, and SharePoint, you can enable these sce
 
 ## Connect people across your organization with Viva Engage
 
-Viva Engage is an app in Teams that brings people together across the organization to connect with leaders, coworkers, and communities. It provides an experience where people can crowdsource ideas, share knowledge, and find belonging at work.
+Viva Engage brings people together across the organization to connect with leaders, coworkers, and communities. It provides an experience where people can crowdsource ideas, share knowledge, and find belonging at work.
 
 Viva Engage communities provide a central place for conversations, files, events, and updates, where people can connect to ask and answer questions, provide feedback, stay informed, and more.
 
