@@ -781,6 +781,7 @@ On the **User reported** tab, actions for user reported messages are available o
 - Select the message from the list by selecting the check box next to the first column. The following actions are available on the **User reported** tab:
   - :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **[Submit to Microsoft for analysis](#submit-user-reported-messages-to-microsoft-for-analysis)**
   - :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **[Mark as and notify](#notify-users-about-admin-submitted-messages-to-microsoft)**
+  - **[Trigger investigation](#trigger-an-investigation-in-defender-for-office-365-plan-2)** (Defender for Office 365 Plan 2 only)
 
 - Select the message from the list by clicking anywhere in the row other than the check box. The following actions are available in the details flyout that opens<sup>\*</sup>:
   - :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **[Submit to Microsoft for analysis](#submit-user-reported-messages-to-microsoft-for-analysis)**
@@ -809,45 +810,88 @@ After you select the message on the **User reported** tab, use either of the fol
 
 - **In the details flyout of the selected message**: Select **Submit to Microsoft for analysis** or :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** \> **Submit to Microsoft for analysis** at the top of the flyout.
 
-In the **Submit to Microsoft for analysis** flyout that opens, do the following steps based on whether the message from email or Teams:
+In the **Submit to Microsoft for analysis** flyout that opens, do the following steps based on whether the message an email message or a Teams message:
 
-- Email messages:
-  - **Why are you submitting this message to Microsoft**? Select one of the following values:
-    - **It appears clean**:
-  - If you want to get a second opinion from Microsoft then select **It appears clean** or **It appears suspicious**.
-  - If you are sure that it is clean, select **I've confirmed it's clean**. Once yout select **Next**, the following settings are available:
-      - **Allow this message**: Select this option to add corresponding allow entries in Tenant Allow/Block List. The following settings are available:
+- **Email messages**:
+  - **Why are you submitting this message to Microsoft?**: Select one of the following values:
+    - **It appears clean** or **It appears suspicious**: Select one of these values to get a second opinion from Microsoft.
+
+      Select **Submit**, and then select **Done**.
+
+    - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**.
+
+      On the next page of the flyout, do one of the following steps:
+
+      - Select **Submit**, and then select **Done**.
+
+      or
+
+      - Select **Allow this message**: This option creates an allow entry for the elements of the message in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+      After you select this option, the following settings are available:
+
       - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
-            - **1 day**
-            - **7 days**
-            - **30 days**
-            - **Specific date**: The maximum value is 30 days from today.
-      - **Allow entry note**: Enter optional information about why you're allowing this message.
+        - **1 day**
+        - **7 days**
+        - **30 days**
+        - **Specific date**: The maximum value is 30 days from today.
 
-  - If you are sure that it is malicious, select **I've confirmed it's a threat**. You need to further categorize it by selecting **Phish** or **Malware**. Once yout select **Next**, the following settings are available
-      - **Block all email from this sender or domain**: Select this option to add a sender or domain block entry in Tenant Allow/Block List. The following settings are available:
-        - Select **Sender** or **Domain**.
-        - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
-          - **1 day**
-          - **7 days**
-          - **30 days**
-          - **Never Expire**
-          - **Specific date**: The maximum value is 90 days from today.
-        - **Block entry note**: Enter optional information about why you're blocking this message.
+      - **Allow entry note (optional)**: Enter optional information about why you're allowing this item. For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
 
-    When you're finished in the **Submit to Microsoft for analysis** dialog, select **Submit**.
+      When you're finished in the flyout, select **Submit**, and then select **Done**.
 
-  - **Trigger investigation**: Defender for Office 365 Plan 2 only. For more information, see [Trigger an investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+    - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+      - **Phish**
+      - **Malware**
+      - **Spam**
+
+      Select **Next**.
+
+      On the next page of the flyout, do one of the following steps:
+
+      - Select **Submit**, and then select **Done**.
+
+      or
+
+      - Select **Block all emails from this sender or domain**: This option creates a block entry for the sender domain or email address in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+      After you select this option, the following settings are available:
+
+      - By default, **Sender** is selected but you can select **Domain** instead.
+      - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+        - **1 day**
+        - **7 days**
+        - **30 days**
+        - **Never expire**
+        - **Specific date**: The maximum value is 30 days from today.
+      - **Block entry note (optional)**: Enter optional information about why you're blocking this item.
+
+      When you're finished in the flyout, select **Submit**, and then select **Done**.
 
   :::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The available actions in the Submit to Microsoft for analysis dropdown list." lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
 
-- **Available values for Teams messages**: No other options are available when you select one of the following values:
+- **Teams messages**: Select one of the following values:
   - **I've confirmed its clean**
   - **It appears clean**
   - **It appears suspicious**
-  - **I've confirmed it's a threat**. You need to further categorize it by selecting **Phish** or **Malware**.
+
+  After you select one of these values, select **Submit**, and then select **Done**.
+
+  - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+  - **Phish**
+  - **Malware**
+
+    Select **Submit**, and then select **Done**.
 
 After you submit a user reported message to Microsoft from the **User reported** tab, the value of **Converted to admin submission** turns from **No** to **Yes**, and a corresponding admin submission entry is created on the appropriate tab on the **Submissions** page (for example, the **Emails** tab).
+
+#### Trigger an investigation in Defender for Office 365 Plan 2
+
+- **On the User reported tab**, select **Trigger investigation** in the dropdown list on :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis***.
+
+:::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The Trigger investigation action in the Submit to Microsoft for analysis dropdown list." lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
+
+For more information, see [Trigger an investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 #### Notify users about admin submitted messages to Microsoft
 
