@@ -348,7 +348,7 @@ After a few moments, the associated allow entries appear on the **Domains & addr
 
      When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
 
-   :::image type="content" source="../../media/admin-submission-file-allow-page-2.png" alt-text="Choose whether to create a corresponding block entry for the file in the Tenant Allow/Block List." lightbox="../../media/admin-submission-file-allow-page-2.png":::
+   :::image type="content" source="../../media/admin-submission-file-allow-page-2.png" alt-text="Choose whether to create a corresponding allow entry for the file in the Tenant Allow/Block List." lightbox="../../media/admin-submission-file-allow-page-2.png":::
 
 6. Select **Done**.
 
