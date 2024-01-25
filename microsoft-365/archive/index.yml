@@ -1,0 +1,70 @@
+### YamlMime:Landing
+
+title: Microsoft 365 Archive documentation # < 60 chars
+summary: Microsoft 365 Archive Microsoft 365 Archive is a cost-effective storage solution for your organization. Retain your inactive data by moving it into a cold storage tier (archive) within SharePoint and the Microsoft 365 trust boundary. 
+metadata:
+  title: Microsoft 365 Archive documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important topics related to Microsoft 365 Archive features. Start here to learn about how to set up and use Microsoft 365 Archive in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  services: 
+  ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: m365initiative-syntex, essentials-hub-or-landing, essentials-navigation
+  ms.custom: intro-hub-or-landing
+  author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
+  ms.author: chucked #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/01/2024 #Required; mm/dd/yyyy format
+  ms.localizationpriority: medium
+  titleSuffix: Microsoft 365 Archive
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 1
+  - title: About Microsoft 365 Archive
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft 365 Archive?
+            url: /syntex/archive/archive-overview.md
+
+# Card 2
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Set up Microsoft 365 Archive
+            url: /syntex/archive/archive-setup.md
+          - text: Pricing model
+            url: /syntex/archive/archive-pricing.md
+
+# Card 3
+  - title: Manage Microsoft 365 Archive
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage Microsoft 365 Archive
+            url: /syntex/archive/archive-manage.md
+          - text: Archive states
+            url: /syntex/archive/archive-states.md
+          - text: Compliance features
+            url: /syntex/archive/archive-compliance.md.md
+          - text: End user experience
+            url: /syntex/archive/archive-end-user.md
+          - text: FAQs
+            url: /syntex/archive/archive-faq.md
+
+# Card 4
+  - title: More solutions
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Microsoft Syntex
+            url: /syntex/index.yml
+          - text: SharePoint Advanced Management
+            url: /sharepoint/advanced-management
+          - text: Microsoft 365 Backup (Preview)
+            url: /syntex/backup/backup-overview.md
+
