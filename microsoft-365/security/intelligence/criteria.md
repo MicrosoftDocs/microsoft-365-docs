@@ -164,6 +164,20 @@ Advertisements shown to you must:
 
 Microsoft maintains a worldwide network of analysts and intelligence systems where you can [submit software for analysis](https://www.microsoft.com/wdsi/filesubmission). Your participation helps Microsoft identify new malware quickly. After analysis, Microsoft creates Security intelligence for software that meets the described criteria. This Security intelligence identifies the software as malware and are available to all users through Microsoft Defender Antivirus and other Microsoft antimalware solutions.
 
+#### Tampering software
+
+Tampering software encompasses a broad spectrum of threats that directly or indirectly lower the overall level of security of devices. Examples of common tampering actions include:
+
+* **Disabling or uninstalling security software**: Tools and threats that attempt to evade defense mechanisms by disabling or uninstalling security software, such as antivirus, EDR, or network protection systems. These actions leave the system vulnerable to further attacks. 
+ 
+* **Abusing operating system features and settings**: Tools and threats that exploit features and settings within the operating system to compromise security. Examples include: 
+
+   - **Firewall abuse**: Attackers using firewall components to indirectly tamper with security software or block legitimate network connections, potentially enabling unauthorized access or data exfiltration. 
+
+   - **DNS manipulation**: Tampering with DNS settings to redirect traffic or block security updates, leaving the system exposed to malicious activities. 
+
+   - **Safe mode exploitation**: Leveraging the legitimate `Safe Mode` setting to put the device in a state where security solutions may be bypassed, allowing for unauthorized access or malware execution. 
+
 ## Potentially unwanted application (PUA)
 
 Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This protection helps deliver more productive, performant, and delightful Windows experiences. For instruction on how to enable PUA protection in Chromium-based Microsoft Edge and Microsoft Defender Antivirus, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
