@@ -35,9 +35,9 @@ The new Microsoft 365 E3 or E5 Extra Features product is now included in this li
 
 ## What’s provided by Microsoft 365 E3 or E5 Extra Features?
 
-Microsoft 365 E3 or E5 Extra Features provides addtional features for your users. Some features are only available for E5 subscriptions. The following table indicates which features are available in Microsoft 365 E3 and Microsoft 365 E5 subscriptions.
+Microsoft 365 E3 or E5 Extra Features provides addtional features for your users. Some features are only available for E5 subscriptions. The following table indicates which features are available in Microsoft 365 E3 Extra Features and Microsoft 365 E5 Extra Features subscriptions.
 
-|Feature  |Microsoft 365 E3  |Microsoft 365 E5  |
+|Feature  |Microsoft 365 E3 Extra Features  |Microsoft 365 E5 Extra Features  |
 |---------|---------|---------|
 |Avatars for Teams    | Yes       | Yes         |
 |Avatars for Teams (additional)     | Yes       | Yes         |
