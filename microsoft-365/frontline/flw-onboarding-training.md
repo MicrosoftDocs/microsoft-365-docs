@@ -48,4 +48,4 @@ Use [Viva Learning](/viva/learning/overview-viva-learning) to streamline ongoing
 
 Learn how to [incorporate learning into your organization with Viva Learning](/viva/solutions/incorporate-learning).
 
-Make sure your workforce knows how to use Viva Learning. Share the [Viva Learning user training content set](https://support.microsoft.com/office/viva-learning-01bfed12-c327-41e0-a68f-7fa527dcc98a) to help your frontline teams get comfortable using Viva Learning.
+Make sure your workforce knows how to use Viva Learning. Share the [Viva Learning help for end users](https://support.microsoft.com/office/viva-learning-01bfed12-c327-41e0-a68f-7fa527dcc98a) to help your frontline teams get comfortable using Viva Learning.
