@@ -4,7 +4,7 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/24/2024
+ms.date: 01/25/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -37,7 +37,7 @@ Device control helps protect your organization from potential data loss, malware
 
 Device control capabilities from Microsoft can be organized into three main categories: device control in Windows, device control in Defender for Endpoint, and Endpoint Data Loss Prevention (Endpoint DLP).
 
-- **Device control in Windows**. The Windows operating system has built-in device control capabilities. Your security team can configure device installation settings to prevent (or allow) users from installing certain devices on their computers. Policies are applied at the device level, and use various device properties to determine whether or not a user can install/use a device. For more information, see [Microsoft Defender for Endpoint Device Control Device Installation](mde-device-control-device-installation.md). Device control in Windows works with BitLocker and ADMX templates, and can be managed using Intune.
+- **Device control in Windows**. The Windows operating system has built-in device control capabilities. Your security team can configure device installation settings to prevent (or allow) users from installing certain devices on their computers. Policies are applied at the device level, and use various device properties to determine whether or not a user can install/use a device. Device control in Windows works with BitLocker and ADMX templates, and can be managed using Intune.
 
    - **BitLocker and Intune**. [BitLocker](/windows/security/operating-system-security/data-protection/encrypted-hard-drive) is a Windows security feature that provides encryption for entire volumes. Together with [Intune](/mem/intune/fundamentals/what-is-intune), policies can be configured to enforce encryption on devices using BitLocker for Windows (and FileVault for Mac). For more information, see [Disk encryption policy settings for endpoint security in Intune](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
@@ -73,8 +73,8 @@ This section lists scenarios for device control. Select a tab, review the scenar
 
 | Scenario | Device control policy |
 |---|---|
-| Prevent installation of a specific USB device | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
-| Prevent installation of all USB devices while allowing an installation of only an authorized USB | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md). |
+| Prevent installation of a specific USB device | Device control in Windows. See [Device control policies and entries](device-control-policies-entries.md). |
+| Prevent installation of all USB devices while allowing an installation of only an authorized USB | Device control in Windows. See [Device control policies and entries](device-control-policies-entries.md). |
 | Prevent copying of sensitive files to USB | [Endpoint DLP](/purview/endpoint-dlp-learn-about) |
 | Block write access to removable data drives not protected by BitLocker | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
 | Block write access to devices configured in another organization | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
@@ -90,9 +90,9 @@ This section lists scenarios for device control. Select a tab, review the scenar
 | Block people from printing via noncorporate printer | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
 | Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
 | Block printing of sensitive documents to any printer | [Endpoint DLP](/purview/endpoint-dlp-learn-about) |
-| Prevent installation of all printers | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
-| Prevent installation of a specific printer | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
-| Prevent installation of all printers while allowing a specific printer to be installed | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
+| Prevent installation of all printers | Device control in Windows. See [Device control policies and entries](device-control-policies-entries.md). |
+| Prevent installation of a specific printer | Device control in Windows. See [Device control policies and entries](device-control-policies-entries.md). |
+| Prevent installation of all printers while allowing a specific printer to be installed | Device control in Windows. See [Device control policies and entries](device-control-policies-entries.md). |
 
 ## [**Bluetooth**](#tab/Bluetooth)
 
