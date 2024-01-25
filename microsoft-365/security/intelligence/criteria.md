@@ -182,9 +182,9 @@ Tampering software encompasses a broad spectrum of threats that directly or indi
  
 * **Privilege escalation**: Techniques aimed at elevating user privileges to gain control over the system's resources and potentially manipulate security settings. 
  
-	Interfering with Security Updates: Attempts to block or manipulate security updates, leaving the system vulnerable to known vulnerabilities. 
+* **Interfering with security updates**: Attempts to block or manipulate security updates, leaving the system vulnerable to known vulnerabilities. 
  
-	Disrupting Critical Services: Actions that disrupt essential system services or processes, potentially causing system instability and opening the door for additional attacks. 
+* **Disrupting critical services**: Actions that disrupt essential system services or processes, potentially causing system instability and opening the door for additional attacks. 
  
 	Unauthorized Registry Changes: Modifications to the Windows Registry or system settings that impact the security posture of the device. 
  
