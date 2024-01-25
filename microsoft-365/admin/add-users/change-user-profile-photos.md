@@ -115,7 +115,7 @@ After you [install the Microsoft Graph PowerShell SDK](/powershell/microsoftgrap
   Set-MgGroupPhotoContent -GroupId 173cd812-5563-439c-9da4-bc2715fa2aee -InFile "C:\Upload\Sales Department.png"
   ```
 
-  For detailed syntax and parameter information, see [Set-MgGroupPhotoContent](/powershell/module/microsoft.graph.users/set-mggroupphotocontent).
+  For detailed syntax and parameter information, see [Set-MgGroupPhotoContent](/powershell/module/microsoft.graph.groups/set-mggroupphotocontent).
 
 ### Get information about user photos in Microsoft Graph PowerShell
 
@@ -155,7 +155,7 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   Get-MgGroupPhoto -GroupId 173cd812-5563-439c-9da4-bc2715fa2aee
   ```
 
-  For detailed syntax and parameter information, see [Get-MgGroupPhoto](/powershell/module/microsoft.graph.users/get-mggroupphoto).
+  For detailed syntax and parameter information, see [Get-MgGroupPhoto](/powershell/module/microsoft.graph.groups/get-mggroupphoto).
 
 ### Download user photos in Microsoft Graph PowerShell
 
@@ -187,7 +187,7 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   Get-MgGroupPhotoContent -GroupId 173cd812-5563-439c-9da4-bc2715fa2aee -OutFile "C:\Download\Sales Department.png"
   ```
 
-  For detailed syntax and parameter information, see [Get-MgGroupPhotoContent](/powershell/module/microsoft.graph.users/get-mggroupphotocontent).
+  For detailed syntax and parameter information, see [Get-MgGroupPhotoContent](/powershell/module/microsoft.graph.groups/get-mggroupphotocontent).
 
 ### Remove user photos in Microsoft Graph PowerShell
 
@@ -219,4 +219,4 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   Remove-MgGroupPhoto -GroupId 173cd812-5563-439c-9da4-bc2715fa2aee
   ```
 
-  For detailed syntax and parameter information, see [Remove-MgGroupPhoto](/powershell/module/microsoft.graph.users/get-mggroupphoto).
+  For detailed syntax and parameter information, see [Remove-MgGroupPhoto](/powershell/module/microsoft.graph.groups/remove-mggroupphoto).
