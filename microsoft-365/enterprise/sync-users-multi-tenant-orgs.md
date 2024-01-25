@@ -64,7 +64,7 @@ When you set up user synchronization with another tenant in a multitenant organi
 
 You can change the properties that are synchronized after the synchronization has been configured. For more information, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure#step-9-review-attribute-mappings).
 
-#### People card experience
+#### Profile card experience
 
 The [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) is a feature that allows users to view information about another user, such as email, phone number, and office location. It's available in most Microsoft 365 apps like Teams, Outlook, SharePoint and Viva Engage. Users in multitenant organizations can see information about users in other tenants that are part of the multitenant organization. What users can see depends on what data is being synchronized between the tenants. (Note that some properties [require additional configuration](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#attributes) to be displayed.)
 
@@ -72,7 +72,7 @@ The [new Teams desktop client](/microsoftteams/new-teams-desktop-admin) fetches 
 
 The profile picture is always available regardless of sync settings and is retrieved from the user's home tenant.
 
-For the most consistent people card experience, keep in mind the following:
+For the most consistent profile card experience, keep in mind the following:
 
 - Don't change property values as they're synced, or users will see different values in different tenants.
 - [LinkedIn account connections](/entra/identity/users/linkedin-integration) configurations may vary across tenants.
