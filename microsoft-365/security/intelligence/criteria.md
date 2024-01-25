@@ -191,7 +191,6 @@ Tampering software encompasses a broad spectrum of threats that directly or indi
 * **Tampering with boot processes**: Efforts to manipulate the boot process, which can result in the loading of malicious code during startup. 
 
 
-
 ## Potentially unwanted application (PUA)
 
 Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This protection helps deliver more productive, performant, and delightful Windows experiences. For instruction on how to enable PUA protection in Chromium-based Microsoft Edge and Microsoft Defender Antivirus, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
@@ -214,3 +213,10 @@ Microsoft uses specific categories and the category definitions to classify soft
 
 * **Poor industry reputation:** Software that trusted security providers detect with their security products. The security industry is dedicated to protecting customers and improving their experiences. Microsoft and other organizations in the security industry continuously exchange knowledge about files we have analyzed to provide users with the best possible protection.
 
+## Vulnerable software
+
+Vulnerable software is an application or code that can be exploited by attackers to perform various malicious and potentially destructive actions.
+
+### Vulnerable drivers
+
+Vulnerable drivers are typically benign and not a threat, devoid of malicious intent. However, they might possess vulnerabilities that can be exploited by attackers to facilitate malicious actions, such as terminating critical processes on a device.
