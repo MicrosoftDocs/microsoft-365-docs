@@ -186,9 +186,9 @@ Tampering software encompasses a broad spectrum of threats that directly or indi
  
 * **Disrupting critical services**: Actions that disrupt essential system services or processes, potentially causing system instability and opening the door for additional attacks. 
  
-	Unauthorized Registry Changes: Modifications to the Windows Registry or system settings that impact the security posture of the device. 
+* **Unauthorized registry changes**: Modifications to the Windows Registry or system settings that impact the security posture of the device. 
  
-	Tampering with Boot Processes: Efforts to manipulate the boot process, which can result in the loading of malicious code during startup. 
+* **Tampering with boot processes**: Efforts to manipulate the boot process, which can result in the loading of malicious code during startup. 
 
 
 
