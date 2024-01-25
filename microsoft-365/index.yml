@@ -29,6 +29,7 @@ highlightedContent:
     - title: Set up your infrastructure for hybrid work
       itemType: how-to-guide
       url: solutions/empower-people-to-work-remotely.md
+    # Card
     - title: Remote learning with Microsoft Teams
       itemType: get-started
       url: /MicrosoftTeams/remote-learning-edu
@@ -36,9 +37,14 @@ highlightedContent:
     - title: Build your skills with Microsoft Learn training
       itemType: learn
       url: /training/m365/
+    # Card
     - title: Get your small business started with Microsoft 365
       itemType: quickstart
       url: business-video/index.yml
+    # Card
+    - title: Join us at the Microsoft 365 Conference April 30 - May 2
+      itemType: whats-new
+      url: https://www.m365conf.com/#!/
 
 # conceptualContent section (optional)
 conceptualContent:
