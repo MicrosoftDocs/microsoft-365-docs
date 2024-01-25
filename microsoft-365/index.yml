@@ -26,9 +26,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Set up your infrastructure for hybrid work
-      itemType: how-to-guide
-      url: solutions/empower-people-to-work-remotely.md
+    - title: Join us at the Microsoft 365 Conference April 30 - May 2
+      itemType: whats-new
+      url: https://www.m365conf.com/#!/
     # Card
     - title: Remote learning with Microsoft Teams
       itemType: get-started
@@ -42,9 +42,9 @@ highlightedContent:
       itemType: quickstart
       url: business-video/index.yml
     # Card
-    - title: Join us at the Microsoft 365 Conference April 30 - May 2
-      itemType: whats-new
-      url: https://www.m365conf.com/#!/
+    - title: Set up your infrastructure for hybrid work
+      itemType: how-to-guide
+      url: solutions/empower-people-to-work-remotely.md
 
 # conceptualContent section (optional)
 conceptualContent:
