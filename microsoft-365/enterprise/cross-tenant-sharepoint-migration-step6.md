@@ -55,9 +55,9 @@ Start-SPOCrossTenantGroupContentMove  -SourceSiteUrl <…> -TargetSiteUrl <�
 |TargetCrossTenantHostUrl|The Cross-tenant host URL of the target tenant. The target tenant Admin can determine the TargetCrossTenantHostUrl by running *Get-SPOCrossTenantHostUrl* on their tenant.|
 |
 
-### Start a SharePoint M365 Group connected site cross-tenant migration
+### Start a SharePoint Microsoft 365 Group connected site cross-tenant migration
 
-1. Ensure you have verified the compatibility status. If you see a status of either **Compatible** or **Warning**  on your source tenant, you may continue. Run:
+1. Ensure to verify the compatibility status. If you see a status of either **Compatible** or **Warning**  on your source tenant, you may continue. Run:
 
    ```powershell
    Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
@@ -89,7 +89,7 @@ Start-SPOCrossTenantGroupContentMove  -SourceGroupAlias <…> -TargetGroupAli
 ```
 
 
-These commands can be useful when planning bulk batches of site migrations.  You can queue and migrate up to 4,000 migrations per batch.  If your count exceeds 4,000 then separate batches can be created and scheduled to run once the current batch is close to completion.
+These commands can be useful when planning bulk batches of site migrations.  You can queue and migrate up to 4,000 migrations per batch.  If your count exceeds 4,000, then separate batches can be created and scheduled to run once the current batch is close to completion.
 
 |Parameter|Description|
 |---|---|
@@ -98,7 +98,7 @@ These commands can be useful when planning bulk batches of site migrations.  Yo
 
 ## SharePoint status pre-migration
 
-Before starting the migration, the users current source SharePoint status will be similar to the example below.  This example is from the users source tenant, showing their current files and folders.
+Before you begin the migration, the users current source SharePoint status will be similar to the example below.  This example is from the users source tenant, showing their current files and folders.
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="pre-migration status":::
 
@@ -183,6 +183,6 @@ Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL https://ttestt
 
 **Target tenant**: After the migration has successfully completed, check the status of the user on the target tenant by logging into their new SharePoint account.
 
-**Source tenant**: Since the user has successfully migrated to the target tenant, they no longer have an active SharePoint account on the source.
+**Source tenant**: Once the user has successfully migrated to the target tenant, they no longer have an active SharePoint account on the source.
 
 ## Step 7: [Post migration steps](cross-tenant-SharePoint-migration-step7.md)
