@@ -24,7 +24,7 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-To see the available landing pages, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+To see the available landing pages, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **Landing pages** in the **Content library** tab has two tabs:
 
@@ -78,7 +78,7 @@ In custom landing pages only, an **Edit landing page** link is available at the 
 
 ## Create landing pages
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Phish landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Phish landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 2. On the **Tenant landing pages** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new** to start the new landing page wizard.
 

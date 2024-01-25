@@ -1,11 +1,11 @@
 ---
 title: Microsoft Security Copilot in advanced hunting
 description: Create Microsoft Security Copilot advanced hunting (NL2KQL) plugin generate a KQL query for you.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Security Copilot, AI, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
+keywords: advanced hunting, threat hunting, cyber threat hunting, Security Copilot, AI, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -28,14 +28,14 @@ ms.date: 10/09/2023
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!IMPORTANT]
 > The information in this article only applies to the Microsoft Security Copilot Early Access Program, an invite-only paid preview program for commercial customers. Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Security Copilot in advanced hunting
 
-[Microsoft Security Copilot in Microsoft 365 Defender](security-copilot-in-microsoft-365-defender.md) comes with a query assistant capability in advanced hunting. 
+[Microsoft Security Copilot in Microsoft Defender XDR](security-copilot-in-microsoft-365-defender.md) comes with a query assistant capability in advanced hunting. 
 
 Threat hunters or security analysts who are not yet familiar with or have yet to learn KQL can make a request or ask a question in natural language (for instance, *Get all alerts involving user admin123*). Security Copilot then generates a KQL query that corresponds to the request using the advanced hunting data schema.
 
@@ -44,7 +44,7 @@ This feature reduces the time  it takes to write a hunting query from scratch so
 Users with access to Security Copilot have access to this capability in advanced hunting. 
 
 ## Try your first request
-1. Open the **advanced hunting** page from the navigation bar in Microsoft 365 Defender. The Security Copilot side pane for advanced hunting appears at the right hand side.
+1. Open the **advanced hunting** page from the navigation bar in Microsoft Defender XDR. The Security Copilot side pane for advanced hunting appears at the right hand side.
 
     :::image type="content" source="../../media/advanced-hunting-security-copilot-pane.png" alt-text="Screenshot of Security Copilot pane in advanced hunting." lightbox="../../media/advanced-hunting-security-copilot-pane.png":::
     
@@ -93,5 +93,3 @@ Select the gear icon in the Security Copilot side pane to choose whether or not 
 :::image type="content" source="../../media/advanced-hunting-security-copilot-settings.png" alt-text="Screenshot of Security Copilot in advanced hunting showing the settings gear icon." lightbox="../../media/advanced-hunting-security-copilot-settings.png"::: 
 
 Deselecting the **Run generated query automatically** setting gives you the option of running the generated query automatically (**Add and run**) or adding the generated query to the query editor for further modification (**Add to editor**). 
-
-

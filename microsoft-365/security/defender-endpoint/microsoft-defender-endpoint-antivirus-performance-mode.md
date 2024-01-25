@@ -1,7 +1,7 @@
 ---
 title: Protect Dev Drive using performance mode
 description: Learn how to manage, configure, Microsoft Defender Antivirus performance mode for developers who use Dev Drive.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: high
 ms.topic: conceptual
 author: denisebmsft
@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.reviewer: pricci
 manager: dansimp
 ms.custom: nextgen02
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
@@ -20,7 +20,7 @@ ms.date: 11/02/2023
 # Protect Dev Drive using performance mode
 
 > [!NOTE]
-> Want to experience Microsoft 365 Defender? Learn more about how you can [evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview?ocid=cx-docs-MTPtriallab).
+> Want to experience Microsoft Defender XDR? Learn more about how you can [evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview?ocid=cx-docs-MTPtriallab).
 
 **Applies to:**
 
@@ -131,4 +131,3 @@ To verify that Dev Drive and Defender Performance Mode is enabled, follow these 
 [Set up a Dev Drive on Windows 11](/windows/dev-drive)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-

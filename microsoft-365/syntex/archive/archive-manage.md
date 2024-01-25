@@ -2,31 +2,30 @@
 title: Manage Microsoft 365 Archive (Preview)
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 10/17/2023
+ms.date: 11/15/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
-ms.custom: CSH, archive
+ms.custom: archive
 search.appverid:
 ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to archive, reactivate, and manage sites in Microsoft 365 Archive.
 ---
 
 # Manage Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change.
+> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
 
-## Archive sites
+## Archive a site
 
 Global admins and SharePoint admins can archive both non-group connected sites and group-connected sites from the SharePoint admin center. Archiving group-connected sites will archive only the site, and the rest of the group will continue being active. As soon as a site is archived, it stops consuming storage from active storage quota, and the storage starts being counted towards Microsoft 365 Archive storage. (There might be a delay in the change in storage being reflected in the admin center.)
 
-To learn more about different archived states, see [Archived states in Microsoft 365 Archive (Preview)](archive-states.md).
+To learn more about different archive states, see [Archive states in Microsoft 365 Archive (Preview)](archive-states.md).
 
 When a site is archived, compliance features such as eDiscovery and retention labels continue to be applied to the site.
 
@@ -43,8 +42,8 @@ When a site is archived, compliance features such as eDiscovery and retention la
 
     ![Screenshot of the Archived sites page in the SharePoint admin center.](../../media/content-understanding/archived-sites-page.png)
 
-> [!NOTE]
-> To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites with private or shared channel sites is not supported. Teams sites with standard channels are supported.
+    > [!NOTE]
+    > To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites with private or shared channel sites is not supported. Teams sites with standard channels are supported.
 
 ## Manage archived sites
 
@@ -80,7 +79,39 @@ When you reactivate a site, its permissions, lists, pages, files, folder-structu
 
 Other than these two exceptions, you can expect the site to be unchanged.  
 
-<br>
+## Change the archive status of site via PowerShell
 
-> [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview.md#preview-documentation)
+You can also change the status of an archived site by using the PowerShell cmdlet [**Set-SPOSiteArchiveState**](/powershell/module/sharepoint-online/set-spositearchivestate?view=sharepoint-ps).
+
+## Site templates supported
+
+|Template ID  |Template  |
+|---------|---------|
+|1     |Document Workspace  |
+|4     |Wiki Site           |
+|9     |Blog                |
+|32    |News Site           |
+|64    |Team Site           |
+|68    |Communication Site  |
+
+ 
+<!---
+|Template ID  |Template  |
+|---------|---------|
+|0     |Global         |
+|1     |Team Site         |
+|2     |Meeting Workspace         |
+|4     |Wiki Site         |
+|7     |Document Center         |
+|53     |Publishing Site         |
+|60     |         |
+|61     |Visio Process Repository         |
+|64     |Group         |
+|68     |Site Page Publishing / Comms Site         |
+|95     |Developer Site         |
+|2009     |Team Site – SharePoint Online configuration         |
+|6001     |Content Center         |
+|6115     |Project Site         |
+|6215     |Microsoft Project Site         |
+|14483     |Records Center         |
+--->

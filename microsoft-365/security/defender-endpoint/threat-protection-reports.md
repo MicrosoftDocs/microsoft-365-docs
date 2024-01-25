@@ -2,36 +2,88 @@
 title: Threat protection report in Microsoft Defender for Endpoint
 description: Track alert detections, categories, and severity using the threat protection report
 keywords: alert detection, source, alert by category, alert severity, alert classification, determination
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/29/2023
 ---
 
 # Threat protection report in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> [!IMPORTANT]
+> The Microsoft Defender for Endpoint Threat Protection report page is deprecated and will no longer be available after January 31st, 2024. Microsoft recommends that you transition to either the Defender XDR Incidents page or Advanced hunting to understand endpoint threat protection details. See the following sections for more information.
+
+## Use the Alert queue filter in Defender XDR
+Due to the deprecation of the Defender for Endpoint Threat protection report, you can use the Defender XDR Incidents view, filtered against Defender for Endpoint, to see the current status of alerts for protected devices. For alert status, such as unresolved, you can filter against New and In progress. [Learn more about Defender XDR Incidents](../defender/incident-queue.md#available-filters)
+
+## Use Advanced hunting queries
+Due to the deprecation of the Defender for Endpoint Threat protection report, you can use Advanced hunting queries to find Defender for Endpoint threat protection information.  Note that currently there is no alert status in Advanced hunting elements that maps to resolve/unresolve. [Learn more about Advanced hunting in Defender XDR](../defender/advanced-hunting-overview.md). See below for a sample advanced hunting query that shows endpoint related threat protection details.
+
+### Alert status
+```kusto
+// Severity
+AlertInfo
+| where Timestamp > startofday(now()) // Today
+| summarize count() by Severity
+| render columnchart
+
+// Detection source
+AlertInfo
+| where Timestamp > startofday(now()) // Today
+| summarize count() by Severity
+| render columnchart
+
+// Detection category
+AlertInfo
+| where Timestamp > startofday(now()) // Today
+| summarize count() by Category
+| render columnchart
+```
+
+
+### Alert trend
+
+```kusto
+// Severity
+AlertInfo
+| where Timestamp > ago(30d)
+| summarize count() by DetectionSource , bin(Timestamp, 1d)
+| render timechart
+
+// Detection source
+AlertInfo
+| where Timestamp > ago(30d)
+| summarize count() by DetectionSource , bin(Timestamp, 1d)
+| render timechart
+
+// Detection category
+AlertInfo
+| where Timestamp > ago(30d)
+| summarize count() by Category , bin(Timestamp, 1d)
+| render timechart
+```
+
+## Threat protection reports overview
 
 The threat protection report provides high-level information about alerts generated in your organization. The report includes trending information showing the detection sources, categories, severities, statuses, classifications, and determinations of alerts across time.
 

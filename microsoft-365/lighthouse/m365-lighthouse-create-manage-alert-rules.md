@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: algreer
+ms.reviewer: shcallaw
 ms.date: 06/30/2023
 audience: Admin
 ms.topic: article
@@ -39,7 +39,7 @@ You must be a Global Administrator to create and manage alert rules.
 
 ## Create a new alert rule
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Alerts**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Alerts**.
 2. On the **Alerts** page, select **Alerts rules** tab.
 3. Select **Create alert rule**. The alert rules wizard opens.
 4. From the **Set up the basics** page, configure the following basic information:
@@ -55,7 +55,7 @@ You must be a Global Administrator to create and manage alert rules.
 
 ## Edit an existing alert rule
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Alerts**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Alerts**.
 2. On the **Alerts** page, select **Alerts rules** tab.
 3. From the list, select an alert rule you want to edit.
 4. Select **Edit alert rule**. The alert rules wizard opens.
@@ -64,7 +64,7 @@ You must be a Global Administrator to create and manage alert rules.
 
 ## Delete an alert rule
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Alerts**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Alerts**.
 2. On the **Alerts** page, select **Alerts rules** tab.
 3. From the list, select an alert rule you want to delete.
 4. Select **Delete**.

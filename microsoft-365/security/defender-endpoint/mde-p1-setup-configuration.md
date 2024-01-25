@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium
 ms.date: 09/13/2023
 ms.reviewer: shlomiakirav
@@ -39,7 +39,7 @@ The general setup and configuration process for Defender for Endpoint Plan 1 is 
 | 1 | [Review the requirements](#review-the-requirements)  | Lists licensing, browser, operating system, and datacenter requirements   |
 | 2 | [Plan your deployment](#plan-your-deployment) | Lists several deployment methods to consider and includes links to more resources to help you decide which method to use  |
 | 3 | [Set up your tenant environment](#set-up-your-tenant-environment) | Lists tasks for setting up your tenant environment |
-| 4 | [Assign roles and permissions](#assign-roles-and-permissions) | Lists roles and permissions to consider for your security team <br/><br/>**TIP**: As soon as roles and permissions are assigned, your security team can get started using the Microsoft 365 Defender portal. To learn more, see [Getting started](mde-plan1-getting-started.md). |
+| 4 | [Assign roles and permissions](#assign-roles-and-permissions) | Lists roles and permissions to consider for your security team <br/><br/>**TIP**: As soon as roles and permissions are assigned, your security team can get started using the Microsoft Defender portal. To learn more, see [Getting started](mde-plan1-getting-started.md). |
 | 5 | [Onboard to Defender for Endpoint](#onboard-to-defender-for-endpoint) | Lists several methods by operating system to onboard to Defender for Endpoint Plan 1 and includes links to more detailed information for each method  |
 | 6 | [Configure next-generation protection](#configure-next-generation-protection) | Describes how to configure your next-generation protection settings in Microsoft Intune  |
 | 7 | [Configure your attack surface reduction capabilities](#configure-your-attack-surface-reduction-capabilities)        | Lists the types of attack surface reduction capabilities you can configure and includes procedures with links to more resources  |
@@ -74,7 +74,7 @@ When you plan your deployment, you can choose from several different architectur
 | [Intune](/mem/intune/fundamentals/what-is-intune)  | Use Intune to manage endpoints in a cloud native environment |
 | [Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction)  | Use Intune and Configuration Manager to manage endpoints and workloads that span an on-premises and cloud environment |
 | [Configuration Manager](/mem/configmgr/core/understand/introduction) | Use Configuration Manager to protect on-premises endpoints with the cloud-based power of Defender for Endpoint |
-| Local script downloaded from the Microsoft 365 Defender Portal | Use local scripts on endpoints to run a pilot or onboard just a few devices |
+| Local script downloaded from the Microsoft Defender portal | Use local scripts on endpoints to run a pilot or onboard just a few devices |
 
 To learn more about your deployment options, see [Plan your Defender for Endpoint deployment](deployment-strategy.md). And, download the following poster: 
 
@@ -98,7 +98,7 @@ These tasks are included in the setup phase for Defender for Endpoint. See [Set 
 
 ## Assign roles and permissions
 
-In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or perform tasks, such as taking response actions on detected threats, appropriate permissions must be assigned. Defender for Endpoint uses [built-in roles within Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). 
+In order to access the Microsoft Defender portal, configure settings for Defender for Endpoint, or perform tasks, such as taking response actions on detected threats, appropriate permissions must be assigned. Defender for Endpoint uses [built-in roles within Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). 
 
 Microsoft recommends assigning users only the level of permission they need to perform their tasks. You can assign permissions by using basic permissions management, or by using [role-based access control](rbac.md) (RBAC). 
 
@@ -110,7 +110,7 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 | Role | Description |
 |:---|:---|
-| Global administrators (also referred to as global admins) <br/><br/> *As a best practice, limit the number of global administrators.* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Endpoint Plan 1 is a global administrator by default. <br/><br/> Global admins are able to access/change settings across all Microsoft 365 portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| Global administrators (also referred to as global admins) <br/><br/> *As a best practice, limit the number of global administrators.* | Global admins can perform all kinds of tasks. The person who signed up your company for Microsoft 365 or for Microsoft Defender for Endpoint Plan 1 is a global administrator by default. <br/><br/> Global admins are able to access/change settings across all Microsoft 365 portals, such as: <br/>- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
 | Security administrators (also referred to as security admins) | Security admins can perform security operator tasks plus the following tasks: <br/>- Monitor security-related policies <br/>- Manage security threats and alerts <br/>- View reports |
 | Security operator | Security operators can perform security reader tasks plus the following tasks: <br/>- View information about detected threats <br/>- Investigate and respond to detected threats  |
 | Security reader | Security readers can perform the following tasks: <br/>- View security-related policies across Microsoft 365 services <br/>- View security threats and alerts <br/>- View reports  |
@@ -338,7 +338,7 @@ With web protection, you can protect your organization's devices from web threat
 
 #### Configure web content filtering
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 
 2. Choose **Settings** > **Endpoints**.
 

@@ -22,7 +22,7 @@ ms.date: 10/9/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Anti-phishing policies in Microsoft 365
@@ -63,7 +63,7 @@ The rest of this article describes the settings that are available in anti-phish
 
 The following policy settings are available in anti-phishing policies in EOP and Defender for Office 365:
 
-- **Name**: You can't rename the default anti-phishing policy. After you create a custom anti-phishing policy, you can't rename the policy in the Microsoft 365 Defender portal.
+- **Name**: You can't rename the default anti-phishing policy. After you create a custom anti-phishing policy, you can't rename the policy in the Microsoft Defender portal.
 
 - **Description** You can't add a description to the default anti-phishing policy, but you can add and change the description for custom policies that you create.
 
@@ -167,7 +167,6 @@ To prevent the question mark or "via" tag from being added to messages from spec
   - For the "via" tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
 
 For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
-
 
 ## First contact safety tip
 
@@ -316,9 +315,11 @@ Impersonation safety tips appear to users when messages are identified as impers
 
   This safety tip is controlled by the value 9.19 of the `SFTY` field in the **X-Forefront-Antispam-Report** header of the message. The text says:
 
-    > This sender might be impersonating a domain that's associated with your organization.
+  > This sender might be impersonating a domain that's associated with your organization.
 
-- **Show user impersonation unusual characters safety tip**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a sender specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured.
+- **Show user impersonation unusual characters safety tip**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a sender specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured. The text says:
+
+  > The email address `<email address>` includes unexpected letters or numbers. We recommend you don't interact with this message.
 
 > [!NOTE]
 > Safety tips are not stamped in the following messages:

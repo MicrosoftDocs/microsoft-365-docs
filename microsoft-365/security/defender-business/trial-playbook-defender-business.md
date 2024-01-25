@@ -2,8 +2,8 @@
 title: "Microsoft Defender for Business trial user guide"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -12,8 +12,7 @@ ms.collection:
 - tier1
 ms.localizationpriority: high
 ms.date: 05/04/2023
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 search.appverid: 
 - MOE150
 - MET150
@@ -40,7 +39,7 @@ Defender for Business is a new endpoint security solution designed especially fo
 Here's how to set up your trial subscription:
 
 1. [Add users and assign licenses](#step-1-add-users-and-assign-licenses).
-2. [Visit the Microsoft 365 Defender portal](#step-2-visit-the-microsoft-365-defender-portal).
+2. [Visit the Microsoft Defender portal](#step-2-visit-the-microsoft-365-defender-portal).
 3. [Use the setup wizard](#step-3-use-the-setup-wizard-in-defender-for-business-recommended).
 4. [Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
 
@@ -51,11 +50,13 @@ After you sign up for Defender for Business, the first step is to **[add users a
 > [!NOTE]
 > You must be a global administrator to perform this task. The person who signed your company up for Microsoft 365 or Defender for Business is the global administrator by default. [Learn more about roles and permissions](mdb-roles-permissions.md).
 
-### Step 2: Visit the Microsoft 365 Defender portal
+<a name='step-2-visit-the-microsoft-365-defender-portal'></a>
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is the one-stop shop where you use and manage Defender for Business. It includes callouts to help you get started, cards that surface relevant information, and a navigation bar that provides easy access to the various features and capabilities.
+### Step 2: Visit the Microsoft Defender portal
 
-- **[Visit the Microsoft 365 Defender portal](mdb-get-started.md)**.
+The Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is the one-stop shop where you use and manage Defender for Business. It includes callouts to help you get started, cards that surface relevant information, and a navigation bar that provides easy access to the various features and capabilities.
+
+- **[Visit the Microsoft Defender portal](mdb-get-started.md)**.
 - **[Explore the navigation bar](mdb-get-started.md#the-navigation-bar)** on the left side of the screen to access your incidents, view reports, and manage your security policies and settings.
 
 ### Step 3: Use the setup wizard in Defender for Business (recommended)
@@ -70,7 +71,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 > [!TIP]
 > **Using the setup wizard is optional.** If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Step 4: Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
 
-1. **[Assign user permissions](mdb-roles-permissions.md#view-and-edit-role-assignments)**. Grant your security team access to the Microsoft 365 Defender portal.
+1. **[Assign user permissions](mdb-roles-permissions.md#view-and-edit-role-assignments)**. Grant your security team access to the Microsoft Defender portal.
 
 2. **[Set up email notifications](mdb-email-notifications.md#view-and-edit-email-notifications)** for your security team.
 
@@ -93,7 +94,7 @@ If you used the setup wizard but you need to onboard more devices, such as non-W
 
 1. **[Review the requirements](mdb-requirements.md)** to configure and use Defender for Business.
 
-2. **[Assign roles and permissions](mdb-roles-permissions.md)** in the Microsoft 365 Defender portal.
+2. **[Assign roles and permissions](mdb-roles-permissions.md)** in the Microsoft Defender portal.
 
    - [Learn about roles in Defender for Business](mdb-roles-permissions.md#roles-in-defender-for-business). 
    - [View or edit role assignments for your security team](mdb-roles-permissions.md#view-and-edit-role-assignments).
@@ -140,7 +141,7 @@ Defender for Business includes a Defender Vulnerability Management dashboard tha
 
 ### 2. View and respond to detected threats
 
-As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft 365 Defender portal. Learn how to [view and respond to detected threats](mdb-view-manage-incidents.md). 
+As threats are detected and alerts are triggered, incidents are created. Your organization's security team can view and manage incidents in the Microsoft Defender portal. Learn how to [view and respond to detected threats](mdb-view-manage-incidents.md). 
 
 - [View and manage incidents](mdb-view-manage-incidents.md).
 - [Respond to and mitigate threats](mdb-respond-mitigate-threats.md).
@@ -166,14 +167,14 @@ New security events, such as threat detection on a device, adding new devices, a
 
 Quickly see how Defender for Business works by trying a tutorial.
 
-Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to use the simulation file and what to watch for in the Microsoft 365 Defender portal.
+Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to use the simulation file and what to watch for in the Microsoft Defender portal.
 
 > [!NOTE]
 > This tutorial requires Microsoft Word to be installed on your test device.
 
 To access the tutorial, do the following:
 
-1. Go to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in.
+1. Go to the [Microsoft Defender portal](https://security.microsoft.com) and sign in.
 
 2. In the navigation pane, under **Endpoints**, choose **Tutorials**.
 
@@ -185,3 +186,4 @@ To access the tutorial, do the following:
 - [Tutorials and simulations in Defender for Business](mdb-tutorials.md)
 - [Video: Enterprise-Grade Protection for Small & Medium Sized Businesses](https://youtu.be/umhUNzMqZto)
 - [Get Defender for Business](get-defender-business.md)
+

@@ -2,7 +2,7 @@
 title: Fix unhealthy sensors in Microsoft Defender for Endpoint
 description: Fix device sensors that are reporting as misconfigured or inactive so that the service receives data from the device.
 keywords: misconfigured, inactive, fix sensor, sensor health,  no sensor data, sensor data, impaired communications, communication
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,18 +17,18 @@ ms.collection:
 - ngp
 ms.topic: conceptual
 ms.date: 11/23/2020
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ---
 
 # Fix unhealthy sensors in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
@@ -49,7 +49,7 @@ An inactive device isn't necessarily flagged because of an issue. The following 
 Any device that isn't in use for more than seven days retains 'Inactive' status in the portal.
 
 ### Device was reinstalled or renamed
-A new device entity is generated in Microsoft 365 Defender for reinstalled or renamed devices. The previous device entity remains, with an 'Inactive' status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
+A new device entity is generated in Microsoft Defender XDR for reinstalled or renamed devices. The previous device entity remains, with an 'Inactive' status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
 
 ### Device was offboarded
 If the device was offboarded, it still appears in devices list. After seven days, the device health state should change to inactive.

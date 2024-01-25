@@ -66,7 +66,7 @@ If your security response team collects and analyzes unfiltered messages, you ca
 
 For more information about integrating with your SIEM/SOAR, see the following articles:
 
-- [Overview of Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-overview)
+- [Overview of Microsoft Defender XDR APIs](/microsoft-365/security/defender/api-overview)
 - [Streaming API](/microsoft-365/security/defender/streaming-api)
 - [Advanced Hunting API](/microsoft-365/security/defender/api-advanced-hunting)
 - [Incidents APIs](/microsoft-365/security/defender/api-incident)
@@ -75,12 +75,12 @@ If your organization doesn't have a security response team or existing process f
 
 ### RBAC roles
 
-Permissions in Defender for Office 365 are based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft 365 Defender portal](mdo-portal-permissions.md). Here are the important points to keep in mind:
+Permissions in Defender for Office 365 are based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft Defender portal](mdo-portal-permissions.md). Here are the important points to keep in mind:
 
 - Microsoft Entra roles give permissions to **all** workloads in Microsoft 365. For example, if you add a user to the Security Administrator in the Azure portal, they have Security Administrator permissions everywhere.
-- Email & collaboration roles in the Microsoft 365 Defender portal give permissions to the Microsoft 365 Defender Portal and the Microsoft Purview compliance portal. For example, if you add a user to Security Administrator in the Microsoft 365 Defender portal, they have Security Administrator access **only** in the Microsoft 365 Defender Portal and the Microsoft Purview compliance portal.
-- Many features in the Microsoft 365 Defender portal are based on Exchange Online PowerShell cmdlets and therefore require role group membership in the corresponding roles (technically, role groups) in Exchange Online (in particular, for access to the corresponding Exchange Online PowerShell cmdlets).
-- There are Email & collaboration roles in the Microsoft 365 Defender portal that have no equivalent to Microsoft Entra roles, and are important for security operations (for example the Preview role and the Search and Purge role).
+- Email & collaboration roles in the Microsoft Defender portal give permissions to the Microsoft Defender portal and the Microsoft Purview compliance portal. For example, if you add a user to Security Administrator in the Microsoft Defender portal, they have Security Administrator access **only** in the Microsoft Defender portal and the Microsoft Purview compliance portal.
+- Many features in the Microsoft Defender portal are based on Exchange Online PowerShell cmdlets and therefore require role group membership in the corresponding roles (technically, role groups) in Exchange Online (in particular, for access to the corresponding Exchange Online PowerShell cmdlets).
+- There are Email & collaboration roles in the Microsoft Defender portal that have no equivalent to Microsoft Entra roles, and are important for security operations (for example the Preview role and the Search and Purge role).
 
 Typically, only a subset of security personnel needs additional rights to download messages directly from user mailboxes. This need requires an additional permission that Security Reader doesn't have by default.
 
@@ -152,7 +152,7 @@ Observe the results and make any adjustments as necessary.
 
 ## Step 5: Use data from user reported messages to measure and adjust
 
-As your pilot users report false positives and false negatives, the messages appear on the **User reported** tab of the [Submissions page in the Microsoft 365 Defender portal](submissions-admin.md). You can report the misidentified messages to Microsoft for analysis and use the information to adjust the settings and exceptions in your pilot policies as necessary.
+As your pilot users report false positives and false negatives, the messages appear on the **User reported** tab of the [Submissions page in the Microsoft Defender portal](submissions-admin.md). You can report the misidentified messages to Microsoft for analysis and use the information to adjust the settings and exceptions in your pilot policies as necessary.
 
 Use the following features to monitor and iterate on the protection settings in Defender for Office 365:
 

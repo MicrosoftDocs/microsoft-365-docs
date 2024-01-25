@@ -2,10 +2,10 @@
 title: Secure by default in Office 365
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/20/2023
+ms.date: 01/19/2024
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -15,13 +15,14 @@ search.appverid:
 ms.collection:
   - m365-security
   - tier2
+  - essentials-accountability
 description: Learn more about the secure by default setting in Exchange Online Protection (EOP)
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Secure by default in Office 365
@@ -75,5 +76,5 @@ You should only consider using overrides in the following scenarios:
 
 - Phishing simulations: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization. To prevent phishing simulation messages from being filtered, see [Configure third-party phishing simulations in the advanced delivery policy](/microsoft-365/security/office-365-security/advanced-delivery-policy-configure#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 - Security/SecOps mailboxes: Dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content. For more information, see [Configure SecOps mailboxes in the advanced delivery policy](/microsoft-365/security/office-365-security/advanced-delivery-policy-configure#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
-- Third-party filters: Secure by default only applies when the MX record for your domain is set to Exchange Online Protection (contoso.mail.protection.outlook.com). If it's set to another service or device, it's possible to override Secure by default with a [Transport Rule](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) to bypass all spam filtering. When Microsoft detects messages as High Confidence Phish with this rule in place, they still deliver to the Inbox.
+- Third-party filters: Secure by default applies only when the MX record for your domain points to Microsoft 365 (contoso.mail.protection.outlook.com). If the MX record for your domain points to another service or device, it's possible to override Secure by default with an Exchange mail flow rule to [bypass spam filtering](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl). When your MX record points to another service or device and you use a bypass spam filtering mail flow rule, messages detected as high confidence phishing by Microsoft 365 anti-spam filtering are delivered to the Inbox.
 - False positives: To temporarily allow certain messages that are still being blocked by Microsoft, use [admin submissions](submissions-admin.md#report-good-email-to-microsoft). By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft learns from the allow entries and [removes them or automatically extends them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.

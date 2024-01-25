@@ -1,13 +1,12 @@
 ---
 title: Automatic attack disruption in Microsoft Defender for Business           
 description: Learn about automatic attack disruption in Microsoft Defender for Business            
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 ms.date: 10/12/2023
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security
@@ -22,7 +21,7 @@ audience: Admin
 
 A human-operated attack is an active attack by cybercriminals who infiltrate an organization, elevate their privileges, navigate the network, and deploy ransomware or steal information. These types of attacks can be catastrophic to business operations, tend to be difficult to address, and sometimes continue to threaten business operations after the initial encounter. For more information, see [Human-operated ransomware attacks](/security/ransomware/human-operated-ransomware#human-operated-ransomware-attacks).
 
-To help protect against human-operated or other advanced attacks, Microsoft 365 Defender added [automatic attack disruption](../defender/automatic-attack-disruption.md) in November 2022 for enterprise customers. Now, these capabilities are coming to Defender for Business! This article describes how automatic attack disruption works, how to view details about an attack, and how to get these capabilities.
+To help protect against human-operated or other advanced attacks, Microsoft Defender XDR added [automatic attack disruption](../defender/automatic-attack-disruption.md) in November 2022 for enterprise customers. Now, these capabilities are coming to Defender for Business! This article describes how automatic attack disruption works, how to view details about an attack, and how to get these capabilities.
 
 ## How automatic attack disruption works
 
@@ -34,7 +33,7 @@ Automatic attack disruption is designed to:
 
 Automatic attack disruption uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. It limits a threat actor's progress early on and dramatically reduces the overall impact of an attack, from associated costs to loss of productivity. See some examples at the [Microsoft Security Blog](https://aka.ms/ContainUserSecBlog).
 
-With automatic attack disruption, as soon as a human-operated attack is detected on a device, steps are taken immediately to contain the affected device and user accounts on the device. An incident is created in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). There, your IT/security team can view details about the risk and containment status of compromised assets during and after the process. An **Incident** page provides details about the attack and up-to-date status of affected assets. 
+With automatic attack disruption, as soon as a human-operated attack is detected on a device, steps are taken immediately to contain the affected device and user accounts on the device. An incident is created in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). There, your IT/security team can view details about the risk and containment status of compromised assets during and after the process. An **Incident** page provides details about the attack and up-to-date status of affected assets. 
 
 Automated response actions include:
 
@@ -46,9 +45,11 @@ Automated response actions include:
 > - To take remediation actions, release a contained device/user, or re-enable a user account, you must have either the Security Administrator or Global Administrator role assigned.
 > - See [Security roles and permissions in Defender for Business](mdb-roles-permissions.md).
 
-## View details about an attack in the Microsoft 365 Defender portal
+<a name='view-details-about-an-attack-in-the-microsoft-365-defender-portal'></a>
 
-1. In the Microsoft 365 Defender portal, go to **Incidents**.
+## View details about an attack in the Microsoft Defender portal
+
+1. In the Microsoft Defender portal, go to **Incidents**.
 
 2. Select an incident that is tagged with *Attack Disruption*.
 
@@ -67,7 +68,7 @@ When an incident is disrupted, highlighted text appears below the incident title
 
 The [Action center](mdb-review-remediation-actions.md) brings together all remediation and response actions, whether those actions were taken automatically or manually. You can view all automatic attack disruption actions in the Action center. And, after your IT/security team has mitigated the risk and completed the investigation of an incident, they can release contained assets.
 
-1. In the Microsoft 365 Defender portal, go to **Actions & submissions** > **Action center**.
+1. In the Microsoft Defender portal, go to **Actions & submissions** > **Action center**.
 
 2. Select the **History** tab.
 

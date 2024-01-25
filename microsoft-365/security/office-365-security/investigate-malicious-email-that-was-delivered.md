@@ -25,7 +25,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Investigate malicious email that was delivered in Microsoft 365
@@ -45,7 +45,7 @@ Make sure that the following requirements are met:
 
 - [Audit logging](/purview/audit-log-enable-disable) is turned on for your organization (it's on by default).
 
-- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in **Email & Collaboration permissions** the Microsoft 365 Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md). For some actions, you must also have the Preview role assigned.
+- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in **Email & Collaboration permissions** the Microsoft Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md). For some actions, you must also have the Preview role assigned.
 
 ### Preview role permissions
 
@@ -58,11 +58,11 @@ To perform certain actions, such as viewing message headers or downloading email
 |Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <br/><br/> Security Administrator <br/><br/> Security Reader <br/><br/> Preview|Yes|
 
 > [!NOTE]
-> **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in **Email & Collaboration permissions** the Microsoft 365 Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+> **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in **Email & Collaboration permissions** the Microsoft Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
 >
-> The Global Administrator role is assigned the Microsoft 365 admin center at <https://admin.microsoft.com>. The Security Administrator and Security Reader roles are assigned in Microsoft 365 Defender portal at <https://security.microsoft.com/emailandcollabpermissions>.
+> The Global Administrator role is assigned the Microsoft 365 admin center at <https://admin.microsoft.com>. The Security Administrator and Security Reader roles are assigned in Microsoft Defender portal at <https://security.microsoft.com/emailandcollabpermissions>.
 
-We understand previewing and downloading email are sensitive activities, so auditing is enabled for these activities. Once an admin performs these activities on email, audit log entries are generated. To see these entries, go to the **Audit** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/auditlogsearch>. Filter on the admin name in the **Users** box. The filtered results will show activity for **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
+We understand previewing and downloading email are sensitive activities, so auditing is enabled for these activities. Once an admin performs these activities on email, audit log entries are generated. To see these entries, go to the **Audit** page in the Microsoft Defender portal at <https://security.microsoft.com/auditlogsearch>. Filter on the admin name in the **Users** box. The filtered results will show activity for **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
 
 ## Find suspicious email that was delivered
 
@@ -71,7 +71,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 > [!NOTE]
 > Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto purge (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** . To go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** . To go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
    On the **Explorer** page, the **Additional actions** column shows admins the outcome of processing an email. The **Additional actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
 
@@ -107,20 +107,20 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
     *Delivery action* is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
 
-    - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
-    - **Junked** (Delivered to junk)– email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-    - **Blocked** – any email messages that are quarantined, that failed, or were dropped.
-    - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious
+    - **Delivered**: Email was delivered to inbox or folder of a user and the user can directly access it.
+    - **Junked**: Email was sent to either user's Junk Email folder or Deleted Items folder, and the user has access to messages in those folders.
+    - **Blocked**: Any email messages that are quarantined, that failed, or were dropped.
+    - **Replaced**: Any email where malicious attachments are replaced by .txt files that state the attachment was malicious
 
     **Delivery location**: The Delivery location filter is available in order to help admins understand where suspected malicious mail ended-up and what actions were taken on it. The resulting data can be exported to spreadsheet. Possible delivery locations are:
 
-    - **Inbox or folder** – The email is in the Inbox or a specific folder, according to your email rules.
-    - **On-prem or external** – The mailbox doesn't exist in the Cloud but is on-premises.
-    - **Junk folder** – The email is in a user's Junk mail folder.
-    - **Deleted items folder** – The email is in a user's Deleted items folder.
-    - **Quarantine** – The email in quarantine, and not in a user's mailbox.
-    - **Failed** – The email failed to reach the mailbox.
-    - **Dropped** – The email was lost somewhere in the mail flow.
+    - **Inbox or folder**: The email is in the Inbox or a specific folder, according to your email rules.
+    - **On-prem or external**: The mailbox doesn't exist in the Cloud but is on-premises.
+    - **Junk folder**: The email is in a user's Junk mail folder.
+    - **Deleted items folder**: The email is in a user's Deleted items folder.
+    - **Quarantine**: The email in quarantine, and not in a user's mailbox.
+    - **Failed**: The email failed to reach the mailbox.
+    - **Dropped**: The email was lost somewhere in the mail flow.
 
     **Directionality**: This option allows your security operations team to filter by the 'direction' a mail comes from, or is going. Directionality values are *Inbound*, *Outbound*, and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). This information can help security operations teams spot spoofing and impersonation, because a mismatch between the Directionality value (ex. *Inbound*), and the domain of the sender (which *appears* to be an internal domain) will be evident! The Directionality value is separate, and can differ from, the Message Trace. Results can be exported to spreadsheet.
 
@@ -157,20 +157,20 @@ Delivery Status is now broken out into two columns:
 
 Delivery action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
 
-- **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
-- **Junked** – email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-- **Blocked** – any email messages that are quarantined, that failed, or were dropped.
-- **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
+- **Delivered**: Email was delivered to inbox or folder of a user and the user can directly access it.
+- **Junked**: Email was sent to either user's Junk Email folder or Deleted Items folder, and the user has access to messages in those folders.
+- **Blocked**: Any email messages that are quarantined, that failed, or were dropped.
+- **Replaced**: Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
 
 Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
 
-- **Inbox or folder** – The email is in the inbox or a folder (according to your email rules).
-- **On-prem or external** – The mailbox doesn't exist on cloud but is on-premises.
-- **Junk folder** – The email is in a user's Junk folder.
-- **Deleted items folder** – The email is in a user's Deleted items folder.
-- **Quarantine** – The email in quarantine, and not in a user's mailbox.
-- **Failed** – The email failed to reach the mailbox.
-- **Dropped** – The email gets lost somewhere in the mail flow.
+- **Inbox or folder**: The email is in the inbox or a folder (according to your email rules).
+- **On-prem or external**: The mailbox doesn't exist on cloud but is on-premises.
+- **Junk folder**: The email is in a user's Junk Email folder.
+- **Deleted items folder**: The email is in a user's Deleted Items folder.
+- **Quarantine**: The email in quarantine, and not in a user's mailbox.
+- **Failed**: The email failed to reach the mailbox.
+- **Dropped**: The email gets lost somewhere in the mail flow.
 
 ### View the timeline of your email
 

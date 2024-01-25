@@ -2,8 +2,7 @@
 title: Manage Microsoft Defender for Endpoint using Group Policy Objects
 description: Learn how to manage Microsoft Defender for Endpoint with Group Policy Objects
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, Microsoft Defender for Endpoint, edr
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -26,7 +25,7 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -52,12 +51,14 @@ The following table lists various tasks you can perform to configure Microsoft D
 |**Configure encryption and BitLocker** to protect information on your organization's devices running Windows|[BitLocker Group Policy settings](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
 |**Configure Microsoft Defender Credential Guard** to protect against credential theft attacks|[Enable Windows Defender Credential Guard by using Group Policy](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
 
-## Configure your Microsoft 365 Defender portal
+<a name='configure-your-microsoft-365-defender-portal'></a>
 
-If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
+## Configure your Microsoft Defender portal
 
-- [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
-- [Endpoint protection: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+If you haven't already done so, configure your Microsoft Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender). You can also configure whether and what features end users can see in the Microsoft Defender portal.
+
+- [Overview of Microsoft Defender XDR](/microsoft-365/security/defender-endpoint/use)
+- [Endpoint protection: Microsoft Defender XDR](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 

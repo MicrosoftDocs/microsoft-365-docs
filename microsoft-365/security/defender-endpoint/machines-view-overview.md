@@ -2,12 +2,12 @@
 title: Device inventory
 description: Learn about the available features that you can use from the Devices list such as sorting, filtering, and exporting the list to enhance investigations.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -15,22 +15,20 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Device inventory
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
@@ -39,7 +37,7 @@ The **Device inventory** shows a list of the devices in your network where alert
 At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
 > [!NOTE]
-> The device inventory is available in different Microsoft 365 Defender services. The information available to you will differ depending on your license. You'll get the most complete set of capabilities when using [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
+> The device inventory is available in different Microsoft Defender XDR services. The information available to you will differ depending on your license. You'll get the most complete set of capabilities when using [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
 
 > [!NOTE]
 > Risk Level which can influence enforcement of conditional access and other security policies on Microsoft Intune, is available in Windows today.  
@@ -72,7 +70,7 @@ During the Microsoft Defender for Endpoint onboarding process, devices onboarded
 
 ## Navigate to the Device inventory page
 
-Access the device inventory page by selecting **Devices** from the **Assets** navigation menu in the [Microsoft 365 Defender portal](/microsoft-365/security/defender-business/mdb-get-started).
+Access the device inventory page by selecting **Devices** from the **Assets** navigation menu in the [Microsoft Defender portal](/microsoft-365/security/defender-business/mdb-get-started).
 
 ## Device inventory overview
 

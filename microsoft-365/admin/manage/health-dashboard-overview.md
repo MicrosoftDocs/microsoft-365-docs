@@ -3,7 +3,7 @@ title: "Microsoft 365 Health Dashboard"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/15/2022
+ms.date: 11/16/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -25,7 +25,7 @@ As the admin of your organization, you’re charged with keeping many apps and s
 The Health dashboard is designed to give you a snapshot of the overall health of your environment. You can see how well your organization is keeping desktop software up to date, following best practices for security, and using the products and services you’ve paid for.
 
 > [!NOTE]
-> Microsoft 365 Health dashboard is in public preview and may not be available to all customers. 
+> Microsoft 365 Health dashboard is in public preview and may not be available to all customers.
 
 ## Watch
 

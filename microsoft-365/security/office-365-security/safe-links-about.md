@@ -30,7 +30,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Safe Links in Microsoft Defender for Office 365
@@ -56,7 +56,9 @@ Safe Links protection by Safe Links policies is available in the following locat
   For more information about Safe Links protection for email messages, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.
 
   > [!NOTE]
-  > Safe Links does not work on mail-enabled public folders.
+  > Safe Links doesn't work on mail-enabled public folders.
+  >
+  > Safe Links doesn't provide protection for URLs in Rich Text Format (RTF) email messages.
   >
   > Safe Links supports only HTTP(S) and FTP formats.
   >
@@ -103,7 +105,7 @@ You can only use a condition or exception once, but the condition or exception c
 
 Safe Links scans incoming email for known malicious hyperlinks. Scanned URLs are rewritten or _wrapped_ using the Microsoft standard URL prefix: `https://nam01.safelinks.protection..com`. After the link is rewritten, it's analyzed for potentially malicious content.
 
-After Safe Links rewrites a URL, the URL remains rewritten even if the message is _manually_ forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message aren't rewritten.
+After Safe Links rewrites a URL, the URL is rewritten even if the message is _manually_ forwarded or replied to. Wrapping is done per message recipient (both internal and external recipients). Additional links that are added to the forwarded or replied-to message are also rewritten.
 
 For _automatic_ forwarding by Inbox rules or SMTP forwarding, the URL isn't rewritten in the message that's intended for the final recipient _unless_ one of the following statements is true:
 
@@ -157,7 +159,7 @@ You turn on or turn off Safe Links protection for Microsoft Teams in Safe Links 
 > [!NOTE]
 > When you turn on or turn off Safe Links protection for Teams, it might take up to 24 hours for the change to take effect.
 >
-> Safe Links protection for Teams is supported in Teams desktop and web instances.  
+> Safe Links protection for Teams is supported in Teams desktop and web instances.
 
 URLs in Teams are checked against a list of known malicious links when the protected user clicks the link (time-of-click protection). URLs aren't rewritten. If a link is found to be malicious, users have the following experiences:
 

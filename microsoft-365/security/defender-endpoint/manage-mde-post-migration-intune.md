@@ -1,8 +1,7 @@
 ---
 title: Manage Microsoft Defender for Endpoint using Intune
 description: Learn how to manage Microsoft Defender for Endpoint with Intune
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -22,7 +21,7 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -65,12 +64,14 @@ The following table lists various tasks you can perform to configure Microsoft D
 |**Configure Microsoft Defender Application Control** to choose whether to audit or trust apps on your organization's devices <br/><br/> *Microsoft Defender Application Control is also referred to as [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).*|[Deploy Microsoft Defender Application Control policies by using Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <br/><br/> [Endpoint protection: Microsoft Defender Application Control](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <br/><br/> [AppLocker CSP](/windows/client-management/mdm/applocker-csp)|
 |**Configure device control and USB peripherals access** to help prevent threats in unauthorized peripherals from compromising your devices|[Control USB devices and other removable media using Microsoft Defender for Endpoint and Intune](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)|
 
-## Configure your Microsoft 365 Defender portal
+<a name='configure-your-microsoft-365-defender-portal'></a>
 
-If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
+## Configure your Microsoft Defender portal
 
-- [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
-- [Endpoint protection: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+If you haven't already done so, configure your Microsoft Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender). You can also configure whether and what features end users can see in the Microsoft Defender portal.
+
+- [Overview of Microsoft Defender XDR](/microsoft-365/security/defender-endpoint/use)
+- [Endpoint protection: Microsoft Defender XDR](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## Next steps
 

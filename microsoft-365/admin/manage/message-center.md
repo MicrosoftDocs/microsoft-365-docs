@@ -244,7 +244,7 @@ If a Message Center post is not relevant for your organization, please provide u
 :::image type="content" source="../../media/message-center-feedbacksection.jpg" alt-text="Message center view of feedback section.":::
 
 > [!NOTE]
-> If you're using Microsoft 365 for Government - GCC, Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.
+> If you're using Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.
 
 ## Share a message
 

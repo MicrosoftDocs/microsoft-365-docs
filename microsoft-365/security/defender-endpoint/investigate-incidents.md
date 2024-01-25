@@ -1,13 +1,8 @@
 ---
 title: Investigate incidents in Microsoft Defender for Endpoint
 description: See associated alerts, manage the incident, and see alert metadata to help you investigate an incident
-keywords: investigate, incident, alerts, metadata, risk, detection source, affected devices, patterns, correlation
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -18,18 +13,18 @@ ms.collection:
 - tier1
 - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
-ms.date: 12/18/2020
+ms.subservice: edr
+ms.date: 01/24/2024
 ---
 
 # Investigate incidents in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them.
@@ -43,6 +38,9 @@ When you investigate an incident, you'll see:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUV]
 
 ## Analyze incident details
+
+> [!TIP]
+> For a limited time during January 2024, when you visit the **Incidents** page, Defender Boxed appears. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
 
 Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, devices, investigations, evidence, graph).
 

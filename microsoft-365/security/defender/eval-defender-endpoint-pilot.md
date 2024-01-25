@@ -3,8 +3,7 @@ title: Pilot Microsoft Defender for Endpoint
 description: Learn how to run a pilot for Microsoft Defender for Endpoint, including verifying the pilot group and trying out capabilities.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -86,5 +85,5 @@ To run any of the provided simulations, you need at least [one onboarded device]
 
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

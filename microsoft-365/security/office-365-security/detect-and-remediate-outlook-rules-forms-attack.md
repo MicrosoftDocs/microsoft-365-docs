@@ -21,7 +21,7 @@ ms.service: microsoft-365-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
@@ -50,7 +50,7 @@ The attacks typically follow these patterns:
 3. The attacker creates a forwarding Inbox rule in the mailbox. The forwarding rule is triggered when the mailbox receives a specific message from the attacker that matches the conditions of the rule. The rule conditions and message format are tailor-made for each other.
 4. The attacker sends the trigger email to the compromised mailbox, which is still being used as normal by the unsuspecting user.
 5. When the mailbox receives a message that matches the conditions of rule, the action of the rule is applied. Typically, the rule action is to launch an application on a remote (WebDAV) server.
-6. Typically, the application installs malware on the user's machine (for example, [PowerShell Empire](https://www.powershellempire.com/)).
+6. Typically, the application installs malware on the user's machine (for example, [PowerShell Empire](https://github.com/EmpireProject/Empire/)).
 7. The malware allows the attacker to steal (or steal again) the user's username and password or other credentials from local machine and perform other malicious activities.
 
 **The Forms Exploit**:
@@ -60,7 +60,7 @@ The attacks typically follow these patterns:
 3. The attacker inserts a custom mail form template into the user's mailbox. The custom form is triggered when the mailbox receives a specific message from the attacker that requires the mailbox to load the custom form. The custom form and the message format are tailor-made for each other.
 4. The attacker sends the trigger email to the compromised mailbox, which is still being used as normal by the unsuspecting user.
 5. When the mailbox receives the message, the mailbox loads the required form. The form launches an application on a remote (WebDAV) server.
-6. Typically, the application installs malware on the user's machine (for example, [PowerShell Empire](https://www.powershellempire.com/)).
+6. Typically, the application installs malware on the user's machine (for example, [PowerShell Empire](https://github.com/EmpireProject/Empire)).
 7. The malware allows the attacker to steal (or steal again) the user's username and password or other credentials from local machine and perform other malicious activities.
 
 ## What a Rules and Custom Forms Injection attack might look like Office 365?

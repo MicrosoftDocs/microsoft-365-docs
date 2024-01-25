@@ -24,7 +24,7 @@ ms.date: 10/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Anti-spam protection in EOP
@@ -54,6 +54,7 @@ To configure the default anti-spam policy, and to create, modify, and remove cus
 
 > [!TIP]
 > If you disagree with the spam filtering verdict, you can report the message to Microsoft as a false positive (good mail marked as bad) or a false negative (bad email allowed). For more information, see:
+>
 > - [How do I report a suspicious email or file to Microsoft?](submissions-report-messages-files-to-microsoft.md).
 > - [How to handle legitimate emails getting blocked (false positive), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md)
 > - [How to handle malicious emails that are delivered to recipients (false negatives), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md)
@@ -61,6 +62,7 @@ To configure the default anti-spam policy, and to create, modify, and remove cus
 > The anti-spam message headers can tell you why a message was marked as spam, or why it skipped spam filtering. For more information, see [Anti-spam message headers](message-headers-eop-mdo.md).
 >
 > You can't completely turn off spam filtering in Microsoft 365, but you can use Exchange mail flow rules (also known as transport rules) to bypass most spam filtering on incoming messages (for example, if you route email through a third-party protection service or device before delivery to Microsoft 365). For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+>
 > - High confidence phishing messages are still filtered. Other features in EOP aren't affected (for example, messages are always scanned for malware).
 > - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
 >
@@ -191,7 +193,7 @@ The functionality of these lists has been largely replaced by:
 
   The main reason to use the blocked senders list or the blocked domains list in anti-spam policies: block entries in the Tenant Allow/Block List also prevent users in the organization from _sending_ email to those email addresses or domains.
 
-- Reporting good email to Microsoft [from the Submissions page in the Microsoft 365 Defender portal](submissions-admin.md#report-good-email-to-microsoft) (where you can elect to **Allow emails with similar attributes**, which creates the required temporary entries in the Tenant Allow/Block List).
+- Reporting good email to Microsoft [from the Submissions page in the Microsoft Defender portal](submissions-admin.md#report-good-email-to-microsoft) (where you can elect to **Allow emails with similar attributes**, which creates the required temporary entries in the Tenant Allow/Block List).
 
   > [!IMPORTANT]
   > Messages from entries in the allowed senders list or the allowed domains list bypass most email protection (except malware and high confidence phishing) and [email authentication](email-authentication-about.md) checks (SPF, DKIM and DMARC). Entries in the allowed senders list or the allowed domains list create a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered. These lists are best used for temporary testing only.

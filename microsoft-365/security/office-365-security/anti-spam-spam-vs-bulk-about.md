@@ -23,7 +23,7 @@ ms.date: 9/25/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # What's the difference between junk email and bulk email in EOP?
@@ -68,7 +68,7 @@ EmailEvents
 
 This query allows admins to identify wanted and unwanted senders. If a bulk sender has a BCL score that's more than the bulk threshold, admins can [report the sender's messages to Microsoft for analysis](submissions-admin.md#report-good-email-to-microsoft). This action also adds the sender as an allow entry in the Tenant Allow/Block List.
 
-Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft 365 Defender for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](reports-email-security.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
+Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft Defender XDR for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](reports-email-security.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
 
 1. Open the **Threat protection status** report at one of the following URLs:
    - **EOP**: <https://security.microsoft.com/reports/TPSAggregateReport>

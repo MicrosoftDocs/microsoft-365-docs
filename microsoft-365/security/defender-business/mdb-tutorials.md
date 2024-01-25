@@ -2,13 +2,12 @@
 title: Tutorials and simulations in Microsoft Defender for Business
 description: Learn about several tutorials to help you get started using Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.reviewer: efratka, nehabha, yaelbenari
 ms.date: 01/26/2023
@@ -43,7 +42,7 @@ The following table describes the recommended tutorials for Defender for Busines
 
 | Tutorial  | Description  |
 |---------|---------|
-| **Document Drops Backdoor**     | Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to use the simulation file and what to watch for in the Microsoft 365 Defender portal. <p>This tutorial requires that Microsoft Word is installed on your test device.   |
+| **Document Drops Backdoor**     | Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to use the simulation file and what to watch for in the Microsoft Defender portal. <p>This tutorial requires that Microsoft Word is installed on your test device.   |
 | **Live Response**     | Learn how to use basic and advanced commands with Live Response. Learn how to locate a suspicious file, remediate the file, and gather information on a device.   |
 | **Microsoft Defender Vulnerability Management(core scenarios)**     | Learn about Defender Vulnerability Management through three scenarios:<br/>1. Reduce your company's threat and vulnerability exposure.<br/>2. Request a remediation.<br/>3. Create an exception for security recommendations.<br/><br/>Defender Vulnerability Management uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.      |
 
@@ -54,7 +53,7 @@ Each tutorial includes a walkthrough document that explains the scenario, how it
 
 ## How to access the tutorials
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, under **Endpoints**, choose **Tutorials**.
 
@@ -70,3 +69,4 @@ Each tutorial includes a walkthrough document that explains the scenario, how it
 - [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
 - [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+

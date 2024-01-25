@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
   - M365-collaboration
+  - essentials-compliance
 description: Learn about Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
@@ -24,20 +25,15 @@ appliesto:
 
 # Overview of Loop workspaces storage and permissions
 
-Microsoft [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) powered by SharePoint platform stores all Loop app content. All Loop workspaces, pages, and components created in the Loop app are stored in a container in the Syntex repository service, which is designated for that specific workspace.
-
-> [!NOTE]
-> There are limited [security and compliance capabilities](/microsoft-365/loop/loop-compliance-summary) available specifically for the Loop app.
-
-Separately, Loop components created outside of the Loop app in other Microsoft 365 apps (such as [Teams](https://support.microsoft.com/office/first-things-to-know-about-loop-components-in-microsoft-teams-ee2a584b-5785-4dd6-8a2d-956131a29c81), [Outlook](https://support.microsoft.com/office/use-loop-components-in-outlook-9b47c279-011d-4042-bd7f-8bbfca0cb136), [Whiteboard](https://support.microsoft.com/office/loop-components-in-whiteboard-c5f08f54-995e-473e-be6e-7f92555da347), [Word for the web](https://support.microsoft.com/office/use-loop-components-in-word-for-the-web-645cc20d-5c98-4bdb-b559-380c5a27c5e5)) are stored in the creator's OneDrive. For example, if User A creates a Loop component within a Teams chat with User B, that Loop component is stored in User A's OneDrive and is shared with User B.
+Where the loop content was originally created determines its storage location. See the [Loop Storage](/microsoft-365/loop/loop-compliance-summary#loop-storage) section in [Summary of governance, lifecycle and compliance capabilities](/microsoft-365/loop/loop-compliance-summary) for Loop for a diagram and more information.
 
 ## Loop app's usage of organization's storage quota
 
-Loop app workspaces are stored inside your tenant. Loop workspaces and pages count against your tenant's storage quota, starting November 2023. Note that during the Loop app's Public Preview in 2023, Loop app content did **not** use your existing storage quota.
+Loop app workspaces are stored inside your tenant. Loop workspaces and pages count against your tenant's storage quota, starting November 2023. (Note that during the Loop app's Public Preview in 2023, Loop app content did **not** use your existing storage quota.)
 
 ## Content permissions mechanism
 
-Each Loop app workspace uses storage for the workspace in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/). Additionally, the Loop app creates a roster for that workspace to govern access to the full workspace. When pages are shared from the workspace, we create a sharing link using your company's default sharing link type as configured for OneDrive and SharePoint.
+Each Loop app workspace uses storage for the workspace in [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428). Additionally, the Loop app creates a roster for that workspace to govern access to the full workspace. When pages are shared from the workspace, we create a sharing link using your company's default sharing link type as configured for OneDrive and SharePoint.
 
 Sharing the workspace in Loop adds the user to the workspace roster. All workspace roster members have access and "*editing*" permissions to all the Loop pages in that workspace.
 
@@ -49,24 +45,25 @@ When you invite a user to a workspace, that user has access to all the pages in 
 
 When you share only a Loop page, you're giving users access to that specific page exclusively (not the whole workspace). The user can choose to use a company share link or people-specific share link; unless their tenant admin has disabled some of the share link types. When sharing a page, you can choose to grant the user "*edit*" or "*read only*" access.
 
-## Loop workspaces and Microsoft 365 groups
+## Loop workspace membership and Microsoft 365 groups
 
-Loop workspaces don't use Microsoft 365 groups for access management, instead they create a roster for access management.
+Loop workspaces currently have one type, with membership visible and manageable within the Loop app by the workspace owner. However, there is no integration with Microsoft 365 groups or Security groups.
 
-## eDiscovery support for Loop content stored in Loop workspaces
+At present, owners cannot assign new members as owners. If the owner leaves the company, the workspace becomes ownerless. Administrators cannot assign new owners to ownerless workspaces.
 
-Loop content (pages and components) created in the Loop app are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. As mentioned above, these files are stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) and are available for search and collection for both eDiscovery (Standard) and eDiscovery (Premium). Render in review and the HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
+PowerShell support for number of owners on a SharePoint Embedded container is not yet available. Once it is, to find ownerless workspaces, query Loop workspace containers in SharePoint Embedded. For more information, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application ID is listed in [Summary of governance, lifecycle and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
-A graph export API that can access Loop content stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) is not yet available.
+Note that there are other types of groups and membership lists in the Microsoft ecosystem, such as Microsoft 365 groups and Security groups. Currently, Loop workspace membership cannot be managed by or associated with these groups or lists.
 
 ## Storage management after user departure
 
 ### In the Loop app
 
-The Loop app is designed for shared workspaces and personal workspaces.</br>
+The Loop app is designed for shared workspaces and personal workspaces.
+
 Shared workspaces are backed by a roster and continue to exist even if someone leaves the company. However, if the creator of the workspace is the person who left the company, then others can't delete the workspace. 
 
-Personal workspaces are also backed by a roster, but there's only one person in them by design. When a user leaves a company, their personal workspaces become "ownerless".
+Personal workspaces are also backed by a roster, but there's only one person in them by design. When a user leaves a company, their personal workspaces become ownerless.
 
 ### In Loop components created in Microsoft 365 outside of the Loop app
 
@@ -74,14 +71,12 @@ Loop components created outside of the Loop are stored in the OneDrive of the pe
 
 ## Management of Loop app's storage
 
-Admin management capabilities are not yet available to enumerate, manage, delete and recover Loop content in Syntex repository storage. Therefore, an admin cannot yet query for ownerless workspaces, directly manage the rosters for workspaces, or restore workspaces deleted by end-users.
-
-Content created in Loop workspaces are stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) in the same location as your SharePoint Online tenant.
+See [Admin Management of Loop workspaces](/microsoft-365/loop/loop-compliance-summary#admin-management-of-loop-workspaces) section of the [Summary of governance, lifecycle and compliance capabilities](/microsoft-365/loop/loop-compliance-summary) for more information.
 
 ## Pricing and licensing model for Loop app
 
-Loop app is free during public preview. Post-preview pricing and licensing requirements for the Loop app are yet to be determined.
+Refer to [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/office/92915461-4b14-49a4-9cd4-d1c259292afa).
 
 ## Related topics
 
-[Summary of compliance capabilities for Loop](/microsoft-365/loop/loop-compliance-summary)
+[Summary of governance, lifecycle and compliance capabilities](/microsoft-365/loop/loop-compliance-summary)

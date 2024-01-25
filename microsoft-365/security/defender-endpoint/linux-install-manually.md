@@ -2,8 +2,7 @@
 title: Deploy Microsoft Defender for Endpoint on Linux manually
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -14,20 +13,20 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
-ms.date: 10/30/2023
+ms.date: 12/01/2023
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -325,18 +324,18 @@ sudo apt -t bionic install mdatp
 
 ## Download the onboarding package
 
-Download the onboarding package from Microsoft 365 Defender portal.
+Download the onboarding package from Microsoft Defender portal.
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
 > [!IMPORTANT]
 > If you miss this step, any command executed will show a warning message indicating that the product is unlicensed. Also the `mdatp health` command returns a value of `false`.
 
-1. In the Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
+1. In the Microsoft Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft 365 Defender portal" lightbox="images/portal-onboarding-linux.png":::
+   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft Defender portal" lightbox="images/portal-onboarding-linux.png":::
 
 4. From a command prompt, verify that you have the file, and extract the contents of the archive:
 
@@ -427,7 +426,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
    - Open a Terminal window and execute the following command:
 
      ``` bash
-     curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+     curl -o /tmp/eicar.com.txt https://secure.eicar.org/eicar.com.txt
      ```
 
    - The file should have been quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
@@ -438,11 +437,11 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
 6. Run an EDR detection test and simulate a detection to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-   - Verify that the onboarded Linux server appears in Microsoft 365 Defender. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears.
+   - Verify that the onboarded Linux server appears in Microsoft Defender XDR. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears.
 
    - Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
 
-   - After a few minutes, a detection should be raised in Microsoft 365 Defender.
+   - After a few minutes, a detection should be raised in Microsoft Defender XDR.
 
    - Look at the alert details, machine timeline, and perform your typical investigation steps.
 

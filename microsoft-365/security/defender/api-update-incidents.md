@@ -1,10 +1,9 @@
 ---
 title: Update incident API
-description: Learn how to update incidents using Microsoft 365 Defender API
+description: Learn how to update incidents using Microsoft Defender XDR API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,11 +28,11 @@ ms.date: 02/08/2023
 
 # Update incidents API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview). For information about the new _update incident_ API using MS Graph security API, see [Update incident](/graph/api/resources/security-incident-update).
@@ -54,7 +53,7 @@ If your request is throttled, it will return a `429` response code. The response
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender APIs](api-access.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft Defender XDR APIs](api-access.md).
 
 Permission type|Permission|Permission display name
 ---|---|---
@@ -136,10 +135,10 @@ Here's an example of the request.
 
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
-- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Access the Microsoft Defender XDR APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
 - [Incident APIs](api-incident.md)
 - [List incidents](api-list-incidents.md)
 - [Incidents overview](incidents-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

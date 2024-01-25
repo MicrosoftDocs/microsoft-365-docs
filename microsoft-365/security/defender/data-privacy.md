@@ -1,10 +1,9 @@
 ---
-title: Microsoft 365 Defender data security and privacy
+title: Microsoft Defender XDR data security and privacy
 description: Describes the privacy and data security of the service.
 keywords: privacy, data, security, trust center, information collection
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -25,15 +24,15 @@ search.appverid:
 ms.date: 02/16/2021
 ---
 
-# Microsoft 365 Defender data security and privacy
+# Microsoft Defender XDR data security and privacy
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-Microsoft 365 Defender operates in Microsoft Azure data centers in the European Union, the United Kingdom, the United States, and in Australia. Customer data collected by the service is stored at rest in (a) the geo-location of the tenant as identified during provisioning or, (b) the geo-location as defined by the data storage rules of an online service if this online service is used by Microsoft 365 Defender to process such data.
+Microsoft Defender XDR operates in Microsoft Azure data centers in the European Union, the United Kingdom, the United States, and in Australia. Customer data collected by the service is stored at rest in (a) the geo-location of the tenant as identified during provisioning or, (b) the geo-location as defined by the data storage rules of an online service if this online service is used by Microsoft Defender XDR to process such data.
 
 Customer data in pseudonymized form might also be stored in central storage and processing systems in the United States.
 
@@ -42,4 +41,4 @@ For more information on the data storage and privacy information of the specific
 - [Microsoft Defender for Cloud Apps data security and privacy](/cloud-app-security/cas-compliance-trust)
 - [Microsoft Defender for Identity data security and privacy](/defender-for-identity/privacy-compliance)
 - [Microsoft 365 privacy, security, and transparency](/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

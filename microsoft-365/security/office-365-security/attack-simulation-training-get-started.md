@@ -30,7 +30,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), you can use Attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
+In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), you can use Attack simulation training in the Microsoft Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 
 Watch this short video to learn more about Attack simulation training.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMhvB]
@@ -44,7 +44,7 @@ Watch this short video to learn more about Attack simulation training.
 
 - Attack simulation training supports on-premises mailboxes, but with reduced reporting functionality. For more information, see [Reporting issues with on-premises mailboxes](attack-simulation-training-faq.md#reporting-issues-with-on-premises-mailboxes).
 
-- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, use <https://security.microsoft.com/attacksimulator>.
+- To open the Microsoft Defender portal, go to <https://security.microsoft.com>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, use <https://security.microsoft.com/attacksimulator>.
 
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
@@ -55,7 +55,9 @@ Watch this short video to learn more about Attack simulation training.
     - **Attack Simulation Administrators**<sup>\*</sup>: Create and manage all aspects of attack simulation campaigns.
     - **Attack Payload Author**<sup>\*</sup>: Create attack payloads that an admin can initiate later.
 
-    <sup>\*</sup> Adding users to this role in [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md) is currently unsupported.
+    <sup>\*</sup> Adding users to this role in [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md) is currently unsupported.
+
+    Currently, [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) isn't supported.
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 

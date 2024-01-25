@@ -1,8 +1,8 @@
 ---
 title: Deploy and manage Removable Storage Access Control using group policy
 description: Use group policy to deploy and manage removable storage access control.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ ms.collection:
 - mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 11/06/2023
+ms.date: 11/21/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -39,7 +39,7 @@ You can use the following properties to create a removable storage group.
 
 ## Licensing requirements
 
-Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control through group policy, you must have Microsoft 365 E3 or E5.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control through group policy, you must have a standalone Microsoft Defender for Endpoint Plan 1 or Microsoft 365 E3 which includes Microsoft Defender for Endpoint Plan 1 or Microsoft 365 E5 which includes Microsoft Defender for Endpoint Plan 1 and 2.
 
 ## Deploy using group policy
 
@@ -197,7 +197,7 @@ For this scenario, you need to create two groups: one removable storage group fo
        Combine these two groups into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Block%20Read%20and%20Write%20access%20to%20specific%20file%20_Groups.xml). See step 3 from the [Deploy using group policy](deploy-manage-removable-storage-group-policy.md#deploy-using-group-policy) section to deploy this configuration.
 
        > [!TIP]
-       > Explicily mark the Type attribute on the group as **File**
+       > Explicitly mark the Type attribute on the group as **File**
 
     2. Policy 2: Deny read and execute access to any file under the allowed file extension group for defined removable storage group.
 

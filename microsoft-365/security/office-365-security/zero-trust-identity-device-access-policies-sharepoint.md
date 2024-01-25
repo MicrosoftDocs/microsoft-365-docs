@@ -4,7 +4,7 @@ description: Describes the policies for Microsoft recommendations about how to s
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
 audience: Admin
 f1.keywords:
@@ -21,7 +21,6 @@ ms.collection:
   - zerotrust-solution
   - highpri
   - tier1
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 1/31/2023
 ---
@@ -38,7 +37,7 @@ In addition to implementing this guidance, be sure to configure SharePoint sites
 
 To protect files in SharePoint and OneDrive, the following diagram illustrates which policies to update from the common identity and device access policies.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="The summary of policy updates for protecting the access to SharePoint" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.svg" alt-text="The summary of policy updates for protecting the access to SharePoint" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.svg":::
 
 If you included SharePoint when you created the common policies, you only need to create the new policies. For Conditional Access policies, SharePoint includes OneDrive.
 
@@ -79,7 +78,7 @@ It's important to understand that SharePoint site permissions are typically base
 
 The following illustration provides an example of how SharePoint device access policies protect access to sites for a user.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="An example of how SharePoint device access policies protect sites" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/sharepoint-rules-scenario.svg" alt-text="An example of how SharePoint device access policies protect sites" lightbox="../../media/microsoft-365-policies-configurations/sharepoint-rules-scenario.svg":::
 
 James has starting point Conditional Access policies assigned, but he can be given access to SharePoint sites with enterprise or specialized security protection.
 

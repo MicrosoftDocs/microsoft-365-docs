@@ -4,7 +4,7 @@ description: Describes the policies for Microsoft recommendations about how to a
 ms.author: dansimp
 author: dansimp
 manager: Laurawi
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
 audience: Admin
 f1.keywords: 
@@ -22,7 +22,6 @@ ms.collection:
   - zerotrust-solution
   - highpri
   - tier1
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 10/5/2023
 ---
@@ -39,7 +38,7 @@ These recommendations require your users to use modern email clients, including 
 
 To protect email, the following diagram illustrates which policies to update from the common identity and device access policies.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="The summary of policy updates for protecting access to Microsoft Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.svg" alt-text="The summary of policy updates for protecting access to Microsoft Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.svg":::
 
 Note the addition of a new policy for Exchange Online to block ActiveSync clients. This policy forces the use of Outlook for iOS and Android on mobile devices.
 
@@ -83,7 +82,7 @@ Here are the steps:
    ```powershell
    Get-OwaMailboxPolicy | Format-Table Name,ConditionalAccessPolicy
    ```
-   
+
 3. To allow viewing attachments but no downloading, run the following command on the affected policies:
 
    ```powershell

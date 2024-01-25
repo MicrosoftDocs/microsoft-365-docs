@@ -21,7 +21,7 @@ ms.service: microsoft-365-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # How do I report a suspicious email or file to Microsoft?
@@ -49,14 +49,14 @@ Watch this video that shows more information about the unified submissions exper
 |---|---|---|
 |[The built-in Report button](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web)|User|Currently, this method is available only in Outlook on the web (formerly known as Outlook Web App or OWA).|
 |[The Microsoft Report Message and Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook)|User|These free add-ins work in Outlook on all available platforms. For installation instructions, see [Enable the Report Message or the Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).|
-|[The Submissions page in the Microsoft 365 Defender portal](submissions-admin.md)|Admin|Admins can report good (false positives) and bad (false negative) messages, email attachments, and URLs (entities) from the available tabs on the **Submissions** page. <br><br> Admins can also submit user reported messages from the **User reported** tab on the **Submissions** page to Microsoft for analysis. The **Submissions** page is available only in organizations with Exchange Online mailboxes as part of a Microsoft 365 subscription (not available in standalone EOP).|
+|[The Submissions page in the Microsoft Defender portal](submissions-admin.md)|Admin|Admins can report good (false positives) and bad (false negative) messages, email attachments, and URLs (entities) from the available tabs on the **Submissions** page. <br><br> Admins can also submit user reported messages from the **User reported** tab on the **Submissions** page to Microsoft for analysis. The **Submissions** page is available only in organizations with Exchange Online mailboxes as part of a Microsoft 365 subscription (not available in standalone EOP).|
 |Report messages from quarantine|Admin and User|Admins can [submit quarantined messages to Microsoft for analysis](quarantine-admin-manage-messages-files.md#report-email-to-microsoft-for-review-from-quarantine) (false positives and false negatives). <br><br> If users are allowed to [release their own messages from quarantine](quarantine-end-user.md#release-quarantined-email), and [user reported settings](submissions-user-reported-messages-custom-mailbox.md) is configured to allow users to report quarantined messages, users can select **Report message as having no threats** (false positive) when they release a quarantined message.|
 
 ## Related reporting settings for admins
 
 [User reported settings](submissions-user-reported-messages-custom-mailbox.md) allow admins to configure whether user reported messages go to a specified reporting mailbox, to Microsoft, or both. After this feature is configured, user reported messages appear on the **User reported** tab on the **Submissions** page in the Defender portal.
 
-User reported messages are also available to admins in the following locations in the Microsoft 365 Defender portal:
+User reported messages are also available to admins in the following locations in the Microsoft Defender portal:
 
 - The [User-reported messages report](reports-email-security.md#user-reported-messages-report)
 - [Automated investigation and response (AIR) results](air-view-investigation-results.md) (Defender for Office 365 Plan 2)

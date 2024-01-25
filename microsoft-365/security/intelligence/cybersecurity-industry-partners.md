@@ -28,7 +28,7 @@ There are various industry-wide collaboration programs with different objectives
 
 MVI is open to organizations who build and own a Real Time Protection (RTP) anti-malware product of their own design, or one developed using a third-party Antivirus SDK.
 
-Members get access to the [Microsoft 365 Defender APIs](../defender/api-overview.md) for the Microsoft 365 Defender portal, IOfficeAntivirus (IOAV), AntiMalware Scan Interface (AMSI), and Cloud Files, along with health data and other telemetry to help customers stay protected. Anti-malware products are submitted to Microsoft for performance testing regularly.
+Members get access to the [Microsoft Defender XDR APIs](../defender/api-overview.md) for the Microsoft Defender portal, IOfficeAntivirus (IOAV), AntiMalware Scan Interface (AMSI), and Cloud Files, along with health data and other telemetry to help customers stay protected. Anti-malware products are submitted to Microsoft for performance testing regularly.
 
 Go to the [MVI program page](virus-initiative-criteria.md) for more information.
 

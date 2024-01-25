@@ -1,9 +1,8 @@
 ---
 title: Manage Microsoft Defender for Endpoint after initial setup or migration
 description: Now that you've made the switch to Microsoft Defender for Endpoint, your next step is to manage your threat protection features
-keywords: post-migration, manage, operations, maintenance, utilization, Microsoft Defender for Endpoint, edr
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -12,6 +11,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- essentials-manage
 ms.topic: conceptual
 ms.date: 04/17/2023
 ms.reviewer: chventou
@@ -23,7 +23,7 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -33,7 +33,7 @@ The following table lists various tools/methods you can use, with links to learn
 
 |Tool/Method|Description|
 |---|---|
-|**[Microsoft Defender Vulnerability Management dashboard insights](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** in the [Microsoft 365 Defender](https://security.microsoft.com/) portal|The Defender Vulnerability Management dashboard provides actionable information that your security operations team can use to reduce exposure and improve your organization's security posture. <br/><br/> See [Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) and [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use).|
+|**[Microsoft Defender Vulnerability Management dashboard insights](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** in the [Microsoft Defender XDR](https://security.microsoft.com/) portal|The Defender Vulnerability Management dashboard provides actionable information that your security operations team can use to reduce exposure and improve your organization's security posture. <br/><br/> See [Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) and [Overview of Microsoft Defender XDR](/microsoft-365/security/defender-endpoint/use).|
 |**[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)** | Intune provides mobile device management (MDM) and mobile application management (MAM) capabilities. With Intune, you control how your organization's devices are used, including mobile phones, tablets, and laptops. You can also configure specific policies to control applications. <br/><br/> See [Manage Microsoft Defender for Endpoint using Intune](manage-mde-post-migration-intune.md).|
 |**[Microsoft Configuration Manager](/mem/configmgr/core/understand/introduction)**|Microsoft Configuration Manager, formerly known as System Center Configuration Manager, is a powerful tool to manage your users, devices, and software. <br/><br/> See [Manage Microsoft Defender for Endpoint with Configuration Manager](manage-mde-post-migration-configuration-manager.md).|
 |**[Group Policy Objects in Microsoft Entra Domain Services](/azure/active-directory-domain-services/manage-group-policy)**|[Microsoft Entra Domain Services](/azure/active-directory-domain-services/overview) includes built-in Group Policy Objects for users and devices. You can customize the built-in Group Policy Objects as needed for your environment, as well as create custom Group Policy Objects and organizational units (OUs). <br/><br/> See [Manage Microsoft Defender for Endpoint with Group Policy Objects](manage-mde-post-migration-group-policy-objects.md).|

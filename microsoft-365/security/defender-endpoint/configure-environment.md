@@ -3,7 +3,7 @@ title: Configure your network environment to ensure connectivity with Defender f
 description: Learn how to configure your network environment to connect with the Defender for Endpoint service
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.reviewer: mkaminska
@@ -14,7 +14,7 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: how-to
-ms.subservice: mde
+ms.subservice: onboard
 ms.date: 10/24/2023
 ---
 
@@ -25,7 +25,7 @@ ms.date: 10/24/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
@@ -44,7 +44,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 > [!NOTE]
 > (Applies to public preview)<br>
-> - As part of the preview, certain Defender for Endpoint services are consolidated behind the URL: `*.endpoint.security.microsoft.com`. You have the option to use the reduced set of URLs in Microsoft 365 Defender for Defender for Endpoint. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. For more information, see [onboarding devices using streamlined method](configure-device-connectivity.md) and review the [updated list](https://go.microsoft.com/fwlink/?linkid=2248278) in the preceding table.<br> 
+> - As part of the preview, certain Defender for Endpoint services are consolidated behind the URL: `*.endpoint.security.microsoft.com`. You have the option to use the reduced set of URLs in Microsoft Defender XDR for Defender for Endpoint. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. For more information, see [onboarding devices using streamlined method](configure-device-connectivity.md) and review the [updated list](https://go.microsoft.com/fwlink/?linkid=2248278) in the preceding table.<br> 
 > - To use the new onboarding method, devices must meet specific prerequisites and use a new onboarding package. For more information, see [prerequisites](configure-device-connectivity.md#prerequisites). You can migrate previously onboarded devices. See, [migrating devices to streamlined connectivity](migrate-devices-streamlined.md
 ).<br>
 > - Certain services are not included in this consolidation. You must verify that you maintain connectivity with the required services. For details on services **not** included in the consolidation, see the [streamlined URL sheet](https://go.microsoft.com/fwlink/?linkid=2248278) or [onboarding devices using streamlined method](configure-device-connectivity.md).
@@ -151,7 +151,7 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 
 1. Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and [Onboard Windows servers](configure-server-endpoints.md)).
 
-2. Ensure the machine is successfully reporting into the Microsoft 365 Defender portal.
+2. Ensure the machine is successfully reporting into the Microsoft Defender portal.
 
 3. Run the TestCloudConnection.exe tool from `C:\Program Files\Microsoft Monitoring Agent\Agent` to validate the connectivity, and to get the required URLs for your specific workspace.
 
@@ -159,7 +159,7 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 
   :::image type="content" source="../../media/defender-endpoint/admin-powershell.png" alt-text="This is admin PowerShell.":::
 
-The wildcards (\*) used in `*.ods.opinsights.azure.com`, `*.oms.opinsights.azure.com`, and `*.agentsvc.azure-automation.net` URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace. It can be found in the Onboarding section of your tenant within the Microsoft 365 Defender portal.
+The wildcards (\*) used in `*.ods.opinsights.azure.com`, `*.oms.opinsights.azure.com`, and `*.agentsvc.azure-automation.net` URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace. It can be found in the Onboarding section of your tenant within the Microsoft Defender portal.
 
 The `*.blob.core.windows.net` URL endpoint can be replaced with the URLs shown in the "Firewall Rule: \*.blob.core.windows.net" section of the test results.
 

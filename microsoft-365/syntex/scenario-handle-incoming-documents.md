@@ -2,7 +2,7 @@
 title: Handle incoming documents with Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: lauris
 ms.date: 05/01/2023
 audience: admin
@@ -44,11 +44,11 @@ AI-based automation significantly reduces the time needed to process these forms
 
 ## Rental contract management
 
-Most landlords use a standard rental agreement with their tenants. Once a new tenant completes the agreement and sends it to the landlord, it's then placed in a SharePoint library where Syntex will extract the key information.
+Most landlords use a standard rental agreement with their tenants. Once a new tenant completes the agreement and sends it to the landlord, the agreement is placed in a SharePoint library where Syntex extracts the key information.
 
-During the life of the contract, certain events can occur that require correspondence to be sent to the tenant such as late rental notices, grievances, and eviction notices.  Correspondence for these events will also use standard templates that can use the information originally captured from the agreement.
+During the life of the contract, certain events can occur that require correspondence to be sent to the tenant such as late rental notices, grievances, and eviction notices.  Correspondence for these events also uses standard templates that can use the information originally captured from the agreement.
 
-Taking this a little further, PowerApps can begin to list all the active tenants, the correspondence sent and even allow them to create new correspondence using content assembly and Power Automate.
+Taking this further, PowerApps can begin to list all the active tenants, the correspondence sent and even allow them to create new correspondence using content assembly and Power Automate.
 
 ## Construction documentation verification
 

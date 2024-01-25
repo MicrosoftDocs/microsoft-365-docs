@@ -3,7 +3,7 @@ title: Supported Microsoft Defender for Endpoint APIs
 ms.reviewer: 
 description: Learn about the specific supported Microsoft Defender for Endpoint entities where you can create API calls to.
 keywords: apis, supported apis, actor, alerts, device, user, domain, ip, file, advanced queries, advanced hunting
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,14 +18,14 @@ ms.collection:
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ---
 
 # Supported Microsoft Defender for Endpoint APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:** 
 
@@ -34,7 +34,7 @@ search.appverid: met150
 - [Microsoft Defender for Business](../../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../../defender-business/compare-mdb-m365-plans.md#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
+> Advanced hunting capabilities are not included in Defender for Business. 
 
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)

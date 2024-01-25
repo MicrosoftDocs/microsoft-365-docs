@@ -9,7 +9,7 @@ metadata:
   ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: enabler-strategic, m365initiative-syntex, essentials-hub-or-landing
+  ms.collection: m365initiative-syntex, essentials-hub-or-landing, essentials-navigation
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
@@ -39,8 +39,10 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: View processing status
-            url: processing-status.md
+          - text: Syntex services promotion
+            url: promo-syntex.md
+          - text: Document translation
+            url: translation-overview.md
 
 # Card 2
   - title: Get started
@@ -77,8 +79,18 @@ landingContent:
             url: image-tagging-overview.md
           - text: Taxonomy tagging
             url: taxonomy-tagging-overview.md
+          - text: SharePoint eSignature
+            url: esignature-overview.md
+          - text: Document translation
+            url: translation-overview.md
           - text: Optical character recognition
             url: ocr-overview.md
+      - linkListType: architecture
+        links:
+          - text: Microsoft 365 Archive (Preview)
+            url: archive/archive-overview.md
+          - text: Microsoft Backup (Preview)
+            url: backup/backup-overview.md
 
 # Card 4
   - title: Extensibility

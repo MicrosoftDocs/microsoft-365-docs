@@ -29,7 +29,7 @@ sections:
       - question: |
           Does Microsoft accept files for a known list or false-positive prevention program?
         answer: |
-          No. We don't accept these requests from software developers. Signing your program's files in a consistent manner, with a digital certificate issued by a trusted root authority, helps our research team quickly identify the source of a program and apply previously gained knowledge. In some cases, this might result in your program being quickly added to the known list. Far less frequently, in will add your digital certificate to a list of trusted publishers.
+          No. We don't accept these requests from software developers. Signing your program's files in a consistent manner, with a digital certificate issued by a trusted root authority, helps our research team quickly identify the source of a program and apply previously gained knowledge. In some cases, this might result in your program being quickly added to the known list. Far less frequently, it will add your digital certificate to a list of trusted publishers.
 
       - question: |
           How do I dispute the detection of my program?

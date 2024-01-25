@@ -104,7 +104,7 @@ For more information, see [Security Dashboard](/microsoft-365/security/defender/
 
 Microsoft Secure Score shows your security posture as a number, which indicates your current level relative to the features that are available in your subscription. It also gives you a list of improvement actions you can take to improve your score.
 
-1. Create a new tab in your browser, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and then click **Secure score**.
+1. Create a new tab in your browser, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft  Defender portal</a>, and then click **Secure score**.
 2. On the **Overview**  tab, note your current Secure Score and how it compares with the global average and subscriptions with a similar number of licenses.
 3. On the **Improvement actions** tab, read through the list of actions you can take to increase your score.
 

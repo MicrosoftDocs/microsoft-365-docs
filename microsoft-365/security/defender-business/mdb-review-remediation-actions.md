@@ -2,13 +2,12 @@
 title: Review remediation actions in Microsoft Defender for Business
 description: View remediations that were taken on detected threats or suspected attacks with Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 12/02/2022
 ms.reviewer: efratka
@@ -36,7 +35,7 @@ All remediation actions are tracked in the Action center.
 
 ## How to use the Action center
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Action center**.
 
@@ -61,3 +60,4 @@ The following table lists remediation actions that are available.
 
 - [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Manage devices in Defender for Business](mdb-manage-devices.md)
+

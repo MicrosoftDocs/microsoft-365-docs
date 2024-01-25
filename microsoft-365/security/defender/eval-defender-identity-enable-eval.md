@@ -1,10 +1,9 @@
 ---
 title: Enable the evaluation environment for Microsoft Defender for Identity
-description: Set up Microsoft Defender for Identity in Microsoft 365 Defender trial lab or pilot environment by installing & configuring the sensor, and discovering local admins on other computers.
+description: Set up Microsoft Defender for Identity in Microsoft Defender XDR trial lab or pilot environment by installing & configuring the sensor, and discovering local admins on other computers.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,7 +28,7 @@ ms.topic: conceptual
 # Enable the evaluation environment for Microsoft Defender for Identity
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 This article is [Step 2 of 2](eval-defender-identity-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Identity. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
 
@@ -85,5 +84,5 @@ Step 3 of 3: [Pilot Microsoft Defender for Identity](eval-defender-identity-pilo
 
 Return to the overview for [Evaluate Microsoft Defender for Identity](eval-defender-identity-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

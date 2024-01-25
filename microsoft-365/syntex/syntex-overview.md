@@ -2,7 +2,7 @@
 title: Overview of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 09/13/2023
 audience: admin
@@ -11,7 +11,7 @@ ms.custom: intro-overview
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-get-started
     - m365initiative-syntex
     - essentials-overview
 ms.localizationpriority:  medium
@@ -64,7 +64,9 @@ You create *modern templates* based on the business documents you use most. You 
 
 [Learn more about how to generate documents using content assembly.](content-assembly.md)
 
-### Prebuilt document processing
+### Document processing
+
+#### Prebuilt document processing
 
 :::row:::
    :::column span="":::
@@ -79,7 +81,7 @@ Instead of having to create a new document processing model from scratch, you ca
 
 [Learn more about prebuilt models in Microsoft Syntex.](prebuilt-overview.md)
 
-### Structured and freeform document processing
+#### Structured and freeform document processing
 
 :::row:::
    :::column span="":::
@@ -94,7 +96,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about structured and freeform models in Microsoft Syntex.](form-processing-overview.md)
 
-### Unstructured document processing
+#### Unstructured document processing
 
 :::row:::
    :::column span="":::
@@ -133,6 +135,33 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about taxonomy tagging in Microsoft Syntex.](taxonomy-tagging-overview.md)
 
+### Document translation
+
+:::row:::
+   :::column span="3":::
+      Easily create a translated copy of a document or video transcipt in a SharePoint document library. You translate the file, while preserving the original format and structure of the file. Translation is available for all supported languages and dialects.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic translation icon.](../media/content-understanding/translation-image.png)
+   :::column-end:::
+:::row-end:::
+
+[Learn more about translation in Microsoft Syntex.](translation-overview.md)
+
+
+### SharePoint eSignature
+
+:::row:::
+   :::column span="":::
+      ![Image of generic esignature icon.](../media/content-understanding/esignature-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Send electronic requests using SharePoint eSignature, keeping your content in Microsoft 365 while it’s being reviewed and signed. Use eSignature to quickly and securely send documents for signature to people both inside and outside of your organization.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about using SharePoint eSignature.](esignature-overview.md)
+
 ### Optical character recognition
 
 :::row:::
@@ -145,6 +174,32 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 :::row-end:::
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
+
+### Microsoft 365 Archive (Preview)
+
+:::row:::
+   :::column span="":::
+      ![Image of generic archive icon.](../media/content-understanding/archive-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Microsoft 365 Archive is a cost-effective, long-term storage solution for inactive or historical data in SharePoint. Because the data is archived in place, the content retains Microsoft 365 security, compliance, search, and rich metadata.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about Microsoft 365 Archive (Preview).](archive/archive-overview.md)
+
+### Microsoft 365 Backup (Preview)
+
+:::row:::
+   :::column span="3":::
+      Microsoft 365 Backup provides modern backup and recovery capabilities for SharePoint, Exchange Online, and OneDrive for Business, keeping the data all within the Microsoft 365 security boundary. With Microsoft 365 Backup, your organization knows that your content is securely and efficiently backed up and restorable within hours rather than months.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic backup icon.](../media/content-understanding/backup-image.png)
+   :::column-end:::
+:::row-end:::
+
+[Learn more about Microsoft 365 Backup (Preview).](backup/backup-overview.md)
 
 ## Other features
 

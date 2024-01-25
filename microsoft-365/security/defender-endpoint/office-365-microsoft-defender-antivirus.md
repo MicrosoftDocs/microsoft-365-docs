@@ -2,7 +2,7 @@
 title: Better together - Microsoft Defender Antivirus and Office 365 (including OneDrive) - better protection from ransomware and cyberthreats
 description: Office 365, which includes OneDrive, goes together wonderfully with Microsoft Defender Antivirus. Read this article to learn more.
 keywords: windows defender, antivirus, office 365, onedrive, restore, ransomware
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: 
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
@@ -26,7 +26,7 @@ ms.date: 10/10/2023
 
 # Better together: Microsoft Defender Antivirus and Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -78,7 +78,7 @@ Microsoft Defender for Office 365 integrated with Microsoft Defender for Endpoin
 
     SO
 
-- Your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+- Your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 ## More good reasons to use OneDrive
 

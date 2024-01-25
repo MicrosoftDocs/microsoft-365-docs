@@ -15,14 +15,15 @@ ms.collection:
   - zerotrust-solution
   - msftsolution-secops
   - tier1
+  - essentials-manage
 ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/22/2023
+ms.date: 01/19/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Microsoft Defender for Office 365 Security Operations Guide
@@ -33,22 +34,24 @@ This article gives an overview of the requirements and tasks for successfully op
 
 The rest of this guide describes the required activities for SecOps personnel. The activities are grouped into prescriptive daily, weekly, monthly, and ad-hoc tasks.
 
-A companion article to this guide provides an overview to [manage incidents and alerts from Defender for Office 365 on the Incidents page in the Microsoft 365 Defender portal](mdo-sec-ops-manage-incidents-and-alerts.md).
+A companion article to this guide provides an overview to [manage incidents and alerts from Defender for Office 365 on the Incidents page in the Microsoft Defender portal](mdo-sec-ops-manage-incidents-and-alerts.md).
 
-The [Microsoft 365 Defender Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
+The [Microsoft Defender XDR Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
 
 For a video about this information, see <https://youtu.be/eQanpq9N1Ps>.
 
 ## Daily activities
 
-### Monitor the Microsoft 365 Defender Incidents queue
+<a name='monitor-the-microsoft-365-defender-incidents-queue'></a>
 
-The **Incidents** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/incidents-queue> (also known as the _Incidents queue_) allows you to manage and monitor events from the following sources in Defender for Office 365:
+### Monitor the Microsoft Defender XDR Incidents queue
+
+The **Incidents** page in the Microsoft Defender portal at <https://security.microsoft.com/incidents-queue> (also known as the _Incidents queue_) allows you to manage and monitor events from the following sources in Defender for Office 365:
 
 - [Alerts](/purview/alert-policies#default-alert-policies).
 - [Automated investigation and response (AIR)](air-about-office.md).
 
-For more information about the Incidents queue, see [Prioritize incidents in Microsoft 365 Defender](../defender/incident-queue.md).
+For more information about the Incidents queue, see [Prioritize incidents in Microsoft Defender XDR](../defender/incident-queue.md).
 
 Your triage plan for monitoring the Incidents queue should use the following order of precedence for incidents:
 
@@ -178,14 +181,14 @@ Short videos for specific tasks are also available in the [Microsoft Defender fo
 
 ### Permissions for Defender for Office 365 activities and tasks
 
-Permissions for managing Defender for Office 365 in the Microsoft 365 Defender portal and PowerShell are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+Permissions for managing Defender for Office 365 in the Microsoft Defender portal and PowerShell are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
 
 > [!NOTE]
 > Privileged Identity Management (PIM) in Microsoft Entra ID is also a way to assign required permissions to SecOps personnel. For more information, see [Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365](pim-in-mdo-configure.md).
 
 The following permissions (roles and role groups) are available in Defender for Office 365 and can be used to grant access to security team members:
 
-- **Microsoft Entra ID**: Centralized roles that assign permissions for _all_ Microsoft 365 services, including Defender for Office 365. You can view the Microsoft Entra roles and assigned users in the Microsoft 365 Defender portal, but you can't manage them directly there. Instead, you manage Microsoft Entra roles and members at <https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles/adminUnitObjectId//resourceScope/%2F>. The most frequent roles used by security teams are:
+- **Microsoft Entra ID**: Centralized roles that assign permissions for _all_ Microsoft 365 services, including Defender for Office 365. You can view the Microsoft Entra roles and assigned users in the Microsoft Defender portal, but you can't manage them directly there. Instead, you manage Microsoft Entra roles and members at <https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles/adminUnitObjectId//resourceScope/%2F>. The most frequent roles used by security teams are:
   - **[Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator)**
   - **[Security Reader](/azure/active-directory/roles/permissions-reference#security-reader)**
 
@@ -198,7 +201,7 @@ The following permissions (roles and role groups) are available in Defender for 
     - Data Investigator
     - eDiscovery Manager
 
-    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal).
+    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal).
 
   - **Search and Purge** role (Email & collaboration): Approve the deletion of malicious messages as recommended by AIR or take manual action on messages in hunting experiences like Threat Explorer.
 
@@ -207,7 +210,7 @@ The following permissions (roles and role groups) are available in Defender for 
     - Data Investigator
     - Organization Management
 
-    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal).
+    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal).
 
   - **Tenant AllowBlockList Manager** (Exchange Online): Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
 
@@ -217,9 +220,9 @@ The following permissions (roles and role groups) are available in Defender for 
 
 ### SIEM/SOAR integration
 
-Defender for Office 365 exposes most of its data through a set of programmatic APIs. These APIs help you automate workflows and make full use of Defender for Office 365 capabilities. Data is available through the [Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-overview) and can be used to integrate Defender for Office 365 into existing SIEM/SOAR solutions.
+Defender for Office 365 exposes most of its data through a set of programmatic APIs. These APIs help you automate workflows and make full use of Defender for Office 365 capabilities. Data is available through the [Microsoft Defender XDR APIs](/microsoft-365/security/defender/api-overview) and can be used to integrate Defender for Office 365 into existing SIEM/SOAR solutions.
 
-- [Incident API](/microsoft-365/security/defender/api-incident): Defender for Office 365 alerts and automated investigations are active parts of incidents in Microsoft 365 Defender. Security teams can focus on what's critical by grouping the full attack scope and all impacted assets together.
+- [Incident API](/microsoft-365/security/defender/api-incident): Defender for Office 365 alerts and automated investigations are active parts of incidents in Microsoft Defender XDR. Security teams can focus on what's critical by grouping the full attack scope and all impacted assets together.
 
 - [Event streaming API](/microsoft-365/security/defender/streaming-api): Allows shipping of real-time events and alerts into a single data stream as they happen. Supported event types in Defender for Office 365 include:
   - [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)
@@ -233,11 +236,11 @@ Defender for Office 365 exposes most of its data through a set of programmatic A
 
 - [Threat Assessment API](/graph/api/resources/threatassessment-api-overview): Can be used to report spam, phishing URLs, or malware attachments directly to Microsoft.
 
-To connect Defender for Office 365 incidents and raw data with Microsoft Sentinel, you can use the [Microsoft 365 Defender (M365D) connector](/azure/sentinel/connect-microsoft-365-defender?tabs=MDO)
+To connect Defender for Office 365 incidents and raw data with Microsoft Sentinel, you can use the [Microsoft Defender XDR (M365D) connector](/azure/sentinel/connect-microsoft-365-defender?tabs=MDO)
 
-You can use the following "Hello World" example to test API access to Microsoft Defender APIs: [Hello World for Microsoft 365 Defender REST API](/microsoft-365/security/defender/api-hello-world).
+You can use the following "Hello World" example to test API access to Microsoft Defender APIs: [Hello World for Microsoft Defender XDR REST API](/microsoft-365/security/defender/api-hello-world).
 
-For more information about SIEM tool integration, see [Integrate your SIEM tools with Microsoft 365 Defender](/microsoft-365/security/defender/configure-siem-defender).
+For more information about SIEM tool integration, see [Integrate your SIEM tools with Microsoft Defender XDR](/microsoft-365/security/defender/configure-siem-defender).
 
 ## Address false positives and false negatives in Defender for Office 365
 
@@ -263,7 +266,7 @@ The submission pipeline in the service follows a tightly integrated process when
 
 For more information, see [Reporting an email in Defender for Office 365 - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/reporting-an-email-in-microsoft-defender-for-office-365/ba-p/2870231).
 
-Security team members can do submissions from multiple locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>:
+Security team members can do submissions from multiple locations in the Microsoft Defender portal at <https://security.microsoft.com>:
 
 - [Admin submission](submissions-admin.md): Use the **Submissions** page to submit suspected spam, phishing, URLs, and files to Microsoft.
 - Directly from Threat Explorer using one of the following message actions:
@@ -288,7 +291,7 @@ If your organization uses a third-party reporting tool that allows users to inte
 - Simplified triage.
 - Reduced investigation and response time.
 
-Designate the reporting mailbox where user reported messages are sent on the **User reported settings** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/securitysettings/userSubmission>. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+Designate the reporting mailbox where user reported messages are sent on the **User reported settings** page in the Microsoft Defender portal at <https://security.microsoft.com/securitysettings/userSubmission>. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 > [!NOTE]
 >
@@ -302,9 +305,9 @@ When a user reported message arrives in the reporting mailbox, Defender for Offi
 - Gather data about the threats and _entities_ related to that email (for example, files, URLs, and recipients).
 - Provide recommended actions for the SecOps team to take based on the investigation findings.
 
-**Email reported by user as malware or phish** alerts, automated investigations and their recommended actions are automatically correlated to incidents in Microsoft 365 Defender. This correlation further simplifies the triage and response process for security teams. If multiple users report the same or similar messages, all of the users and messages are correlated into the same incident.
+**Email reported by user as malware or phish** alerts, automated investigations and their recommended actions are automatically correlated to incidents in Microsoft Defender XDR. This correlation further simplifies the triage and response process for security teams. If multiple users report the same or similar messages, all of the users and messages are correlated into the same incident.
 
-Data from alerts and investigations in Defender for Office 365 is automatically compared to alerts and investigations in the other Microsoft 365 Defender products:
+Data from alerts and investigations in Defender for Office 365 is automatically compared to alerts and investigations in the other Microsoft Defender XDR products:
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Cloud Apps

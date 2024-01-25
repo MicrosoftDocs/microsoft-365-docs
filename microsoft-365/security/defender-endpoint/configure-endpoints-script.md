@@ -3,7 +3,7 @@ title: Onboard Windows devices using a local script
 description: Use a local script to deploy the configuration package on devices to enable onboarding of the devices to the service.
 keywords: configure devices using a local script, device management, configure Microsoft Defender for Endpoint devices
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -14,18 +14,18 @@ ms.collection:
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 ms.date: 08/31/2023
 ---
 
 # Onboard Windows devices using a local script
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
@@ -42,7 +42,7 @@ Check out [Identify Defender for Endpoint architecture and deployment method](de
 
 ## Onboard devices
 
-1. Open the configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+1. Open the configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
     2. Select Windows 10 or Windows 11 as the operating system.
     3. In the **Deployment method** field, select **Local Script**.
@@ -71,7 +71,7 @@ For information on how you can manually validate that the device is compliant an
 
 ## Configure sample collection settings
 
-For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
+For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender XDR to submit a file for deep analysis.
 
 You can manually configure the sample sharing setting on the device by using *regedit* or creating and running a *.reg* file.
 
@@ -101,7 +101,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Offboarding**.
     2. Select Windows 10 or Windows 11 as the operating system.
     3. In the **Deployment method** field, select **Local Script**.
@@ -130,7 +130,7 @@ Monitoring can also be done directly on the portal, or by using the different de
 
 ### Monitor devices using the portal
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 2. Click **Devices inventory**.
 

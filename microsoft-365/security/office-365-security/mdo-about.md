@@ -14,6 +14,7 @@ ms.collection:
   - m365-security
   - tier1
   - highpri
+  - essentials-overview
 ms.custom:
   - seo-marvel-apr2020
   - intro-overview
@@ -21,10 +22,10 @@ ms.custom:
 description: Is Microsoft Defender for Office 365 worth it? Let's find out.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 9/14/2023
+ms.date: 01/19/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Microsoft Defender for Office 365 overview
@@ -38,7 +39,7 @@ For email threats that are identified after the fact, Zero-hour autopurge (ZAP) 
 
 Defender for Office 365 safeguards organizations against malicious threats by providing admins and SecOps teams a wide range of capabilities. Users, admins, and SecOps personnel benefit from these features from the beginning of the organization. For example:
 
-- **[Preset security policies can configure everything for you](preset-security-policies.md)**: The protection policies included in Standard and Strict preset security policies contain our recommended settings. All you need to do is decide who gets the protection (by user, group, domain, or all recipients) and specify the entries and optional exceptions for user and domain impersonation protection. For instructions, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+- **[Preset security policies can configure everything for you](preset-security-policies.md)**: The protection policies included in Standard and Strict preset security policies contain our recommended settings. All you need to do is decide who gets the protection (by user, group, domain, or all recipients) and specify the entries and optional exceptions for user and domain impersonation protection. For instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 - **[Threat protection policies](#defender-for-office-365-protection-policies)**: Define threat-protection policies so admins can set the right level of protection for the organization.
 
@@ -124,7 +125,7 @@ Safe Links policies are also included in the Standard and Strict preset security
 
 ## View Defender for Office 365 reports
 
-Defender for Office 365 includes [reports](reports-defender-for-office-365.md) to monitor Defender for Office 365. You can access the reports in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. You can also go directly to the **Email and collaboration reports** page using <https://security.microsoft.com/securityreports>.
+Defender for Office 365 includes [reports](reports-defender-for-office-365.md) to monitor Defender for Office 365. You can access the reports in the Microsoft Defender portal at <https://security.microsoft.com> at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. You can also go directly to the **Email and collaboration reports** page using <https://security.microsoft.com/securityreports>.
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Available predefined reports include:
 
@@ -162,10 +163,10 @@ To access Defender for Office 365 features, you *must* be assigned an appropriat
 
 |Role or role group|Resources to learn more|
 |---|---|
-|Global Administrator (or Organization Management)|You can assign this role in Azure Active Directory or in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).|
-|Security Administrator|You can assign this role in Azure Active Directory or in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).|
+|Global Administrator (or Organization Management)|You can assign this role in Azure Active Directory or in the Microsoft Defender portal. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).|
+|Security Administrator|You can assign this role in Azure Active Directory or in the Microsoft Defender portal. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).|
 |Organization Management in Exchange Online|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Search and Purge|This role is available only in the Microsoft 365 Defender portal or the Microsoft Purview compliance portal. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Permissions in the Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center-permissions).|
+|Search and Purge|This role is available only in the Microsoft Defender portal or the Microsoft Purview compliance portal. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md) and [Permissions in the Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center-permissions).|
 
 ## Where can you get MDefender for Office 365?
 
@@ -193,5 +194,5 @@ New features are continually added to Defender for Office 365 continually. To le
 
 ## See also
 
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-- [Automated investigation and response (AIR) in Microsoft 365 Defender](../defender/m365d-autoir.md)
+- [Microsoft Defender XDR](../defender/microsoft-365-defender.md)
+- [Automated investigation and response (AIR) in Microsoft Defender XDR](../defender/m365d-autoir.md)

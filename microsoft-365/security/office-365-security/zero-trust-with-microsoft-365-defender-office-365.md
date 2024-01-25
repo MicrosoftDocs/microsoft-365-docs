@@ -1,11 +1,10 @@
 ---
 title: Zero Trust with Microsoft Defender for Office 365
 description: Microsoft Defender for Office 365 contributes to a strong Zero Trust strategy and architecture
-keywords: Zero Trust, Microsoft Defender for Office 365, Microsoft 365 Defender, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation
+keywords: Zero Trust, Microsoft Defender for Office 365, Microsoft Defender XDR, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: microsoft-365-zero-trust
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,7 +28,7 @@ appliesto:
 
 # Zero Trust with Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 Microsoft Defender for Office 365 is a cloud-based email filtering service that helps protect your organization against advanced threats to email and collaboration tools (for example, phishing, business email compromise, and malware attacks). Defender for Office 365 also provides investigation, Threat Hunting, and remediation capabilities to help security teams efficiently identify, prioritize, investigate, and respond to threats.
 
@@ -39,7 +38,7 @@ Microsoft Defender for Office 365 is a cloud-based email filtering service that 
 |---|---|---|
 |Always authenticate and authorize based on all available data points.|Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.|Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.|
 
-Defender for Office 365 is a primary component of the **Assume breach** principle and an important element of your extended detection and response (XDR) deployment with Microsoft 365 Defender. Defender for Office 365 consists of three levels of protection based on your subscription level and starts with built-in Exchange Online Protection (EOP). EOP is present in any Microsoft 365 subscription where there are Exchange Online mailboxes.
+Defender for Office 365 is a primary component of the **Assume breach** principle and an important element of your extended detection and response (XDR) deployment with Microsoft Defender XDR. Defender for Office 365 consists of three levels of protection based on your subscription level and starts with built-in Exchange Online Protection (EOP). EOP is present in any Microsoft 365 subscription where there are Exchange Online mailboxes.
 
 |Protection level|Description|
 |---|---|
@@ -66,4 +65,4 @@ Learn more about Zero Trust and how to build an enterprise-scale strategy and ar
 
 Learn about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with [Zero Trust deployment plan with Microsoft 365](../microsoft-365-zero-trust.md).
 
-For an overview of Zero Trust for Microsoft 365 Defender services, see [Zero Trust with Microsoft 365 Defender](../defender/zero-trust-with-microsoft-365-defender.md).
+For an overview of Zero Trust for Microsoft Defender XDR services, see [Zero Trust with Microsoft Defender XDR](../defender/zero-trust-with-microsoft-365-defender.md).

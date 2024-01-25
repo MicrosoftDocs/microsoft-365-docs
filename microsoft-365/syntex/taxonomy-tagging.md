@@ -2,12 +2,13 @@
 title: Find and manage terms using taxonomy tagging in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
 ms.date: 08/31/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 ms.custom: 
 search.appverid: 
 ms.collection: 

@@ -29,6 +29,9 @@ description: "Learn how to manage plugins for Copilot in the Integrated apps pag
 
 # Manage Plugins for Copilot in Integrated Apps
 
+> [!IMPORTANT]
+> You must be licensed with Microsoft 365 Copilot to use plugins for Copilot for Microsoft 365. During the Public Preview, admins will need to enable their tenant by contacting their Microsoft Customer Success Account Manager or submitting a support ticket requesting to "Opt-in to plugins for Copilot for Microsoft 365."
+
 Microsoft Copilot for Microsoft 365 is a new experience inside Microsoft 365 that combines the power of large language models with your data and Microsoft 365 apps to capture natural language commands to produce content and analyze data. Plugins for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, Dynamics 365, or Bing Web Search. Admins can manage plugins for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove plugins for Copilot for their organization, and about Copilot capabilities and data privacy.
 
 ## Overview

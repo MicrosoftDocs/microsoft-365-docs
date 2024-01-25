@@ -2,40 +2,24 @@
 title: Overview of Microsoft 365 Archive (Preview)
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 10/17/2023
+ms.date: 11/15/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
-ms.custom: CSH, archive
+ms.custom: archive
 search.appverid:
 ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about Microsoft 365 Archive.
+description: Learn about how Microsoft 365 Archive can provide your with organization cost-effective storage solutions.
 ---
 
 # Overview of Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive-preview-terms.md).
-
-## Preview documentation
-
-In addition to this overview, the documentation for the preview includes the following help articles.
-
-|Article  |Description  |
-|---------|---------|
-|[Set up Microsoft 365 Archive (Preview)](archive-setup.md)   | Learn how to set up and configure Microsoft 365 Archive, including required licensing, permissions, pay-as-you-go billing, and how to turn on the service.|
-|[Pricing model for Microsoft 365 Archive (Preview)](archive-pricing.md)   | Learn how archive usage is calculated, including for monthly usage and reactivations. |
-|[Archived states in Microsoft 365 Archive (Preview)](archive-states.md)   | Learn about the various archived states, what they mean, and their allowed operations. |
-|[Manage Microsoft 365 Archive (Preview)](archive-manage.md)   | Learn how to archive and manage SharePoint sites, and how to reactivate archived sites. |
-|[Compliance features in Microsoft 365 Archive (Preview)](archive-compliance.md)    | Learn about durability, security, geo residency, and other compliance considerations. |
-|[End user experience for Microsoft 365 Archive (Preview)](archive-end-user.md)    | Learn about how an end user might experience archived sites, and some of the options an admin can use to help the user find information. |
-
-## Introduction
+> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations. Before you begin, read the [Microsoft 365 Archive preview terms and conditions](archive-preview-terms.md).
 
 Microsoft 365 Archive offers cost-effective storage for inactive SharePoint sites.
 
@@ -49,7 +33,7 @@ Some additional advantages of using Microsoft 365 Archive are:
 
 - **Cost savings** – A lower list price on storage consumption beyond your license-allocated Microsoft 365 storage quota.
 
-- **Lossless Metadata** – A site will retain all of its metadata and permissions upon reactivation.
+- **Lossless metadata** – A site will retain all of its metadata and permissions upon reactivation.
 
 - **Decluttering** – Explicit separation between active and inactive content to help you manage your site's lifecycle.
 
@@ -65,21 +49,25 @@ Archiving a site archives everything within it, including:
 > [!NOTE]
 > Microsoft 365 Archive (Preview) is currently rolling out. More features will be rolled out as they become available.
 
-Administrators should notify the site owners and end users before a site is archived so they're aware that the site will not be accessible.
+Administrators should notify the site owners and end users before a site is archived so they're aware that the site won't be accessible.
 
 ## Preview limitations
 
+> [!NOTE]
+> These limitations are temporary during the preview. Unless otherwise stated, these limitations will be resolved when the product is available for general release.
+
 - As a part of the preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the **Archived sites** page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
 
-- Currently, end user search results will not show any archived content. Columns such as Archived Date and Archived By are not currently available, but are planned and will be rolled out when available.
+- Currently, archived content exported via eDiscovery doesn't require site reactivation for exporting, but will require it before general release.
 
-- For multi-geo tenants, while data residency requirements are honored, site moves are not supported. Archived sites will need to be reactivated prior to any move.
+- Currently, end user search results won't show any archived content.
+
+- Columns such as Archived Date and Archived By aren't currently available but are planned and will be rolled out when available.
+
+- For multi-geo tenants, while data residency requirements are honored, site moves aren't supported. Archived sites will need to be reactivated prior to any move.
 
 - Currently, tenant rename isn't supported on archived sites. Sites will need to be reactivated before a tenant rename is triggered.
 
-- Sites that are backed up as part of the Microsoft 365 Backup shouldn't be archived.  
+- Archiving a site that is currently enrolled in Microsoft 365 Backup will be blocked.
 
-<br>
-
-> [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview.md#preview-documentation)
+- If you archive a site that has a library syncing to a device, that device's sync client will display errors after the site is archived. We recommend that you remove syncing libraries before archiving a site.

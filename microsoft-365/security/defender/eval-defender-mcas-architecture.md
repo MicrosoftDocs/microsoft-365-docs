@@ -1,10 +1,9 @@
 ---
 title: Review architecture requirements and the structure for Microsoft Defender for Cloud Apps
-description: Microsoft Defender for Cloud Apps technical diagrams explain the architecture in Microsoft 365 Defender, which will help you build a pilot environment.
+description: Microsoft Defender for Cloud Apps technical diagrams explain the architecture in Microsoft Defender XDR, which will help you build a pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -30,15 +29,15 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-This article is [Step 1 of 3](eval-defender-mcas-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Cloud Apps alongside Microsoft 365 Defender. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
+This article is [Step 1 of 3](eval-defender-mcas-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Cloud Apps alongside Microsoft Defender XDR. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
 
 Before enabling Microsoft Defender for Cloud Apps, be sure you understand the architecture and can meet the requirements.
 
 ## Understand the architecture
 
-Microsoft Defender for Cloud Apps is a cloud access security broker (CASB). CASBs act a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and regardless of the device they are using. Microsoft Defender for Cloud Apps natively integrates with Microsoft security capabilities, including Microsoft 365 Defender.
+Microsoft Defender for Cloud Apps is a cloud access security broker (CASB). CASBs act a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and regardless of the device they are using. Microsoft Defender for Cloud Apps natively integrates with Microsoft security capabilities, including Microsoft Defender XDR.
 
 Without Defender for Cloud Apps, cloud apps that are used by your organization are unmanaged and unprotected, as illustrated.
 
@@ -103,11 +102,11 @@ You might have discovered and sanctioned cloud apps using Defender for Cloud App
 
 ### Protecting your organization from hackers
 
-Defender for Cloud Apps provides powerful protection on its own. However, when combined with the other capabilities of Microsoft 365 Defender, Defender for Cloud Apps provides data into the shared signals which (together) helps stop attacks.
+Defender for Cloud Apps provides powerful protection on its own. However, when combined with the other capabilities of Microsoft Defender XDR, Defender for Cloud Apps provides data into the shared signals which (together) helps stop attacks.
 
-It's worth repeating this illustration from the overview to this Microsoft 365 Defender evaluation and pilot guide.
+It's worth repeating this illustration from the overview to this Microsoft Defender XDR evaluation and pilot guide.
 
-:::image type="content" source="../../media/defender/m365-defender-eval-threat-chain.png" alt-text="How Microsoft 365 Defender stops a chain of threats" lightbox="../../media/defender/m365-defender-eval-threat-chain.png":::
+:::image type="content" source="../../media/defender/m365-defender-eval-threat-chain.png" alt-text="How Microsoft Defender XDR stops a chain of threats" lightbox="../../media/defender/m365-defender-eval-threat-chain.png":::
 
 Focusing on the right side of this illustration, Microsoft Defender for Cloud Apps notices anomalous behavior like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these behaviors to the security team. Therefore, Defender for Cloud Apps helps prevent lateral movement by hackers and exfiltration of sensitive data. Microsoft 356 Defender for Cloud correlates the signals from all the components to provide the full attack story.
 
@@ -155,5 +154,5 @@ Step 2 of 3: [Enable the evaluation environment for Microsoft Defender for Cloud
 
 Return to the overview for [Evaluate Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

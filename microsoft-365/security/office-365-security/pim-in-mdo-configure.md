@@ -36,7 +36,7 @@ By setting up PIM to work with Defender for Office 365, admins create a process 
 In this example we configure "Alex", a member of our security team who has zero-standing access within Microsoft 365, but can elevate to both a role required for normal day-to-day operations, such as [Threat Hunting](threat-explorer-threat-hunting.md) and then also to a higher level of privilege when less frequent but sensitive operations, such as [remediating malicious delivered email](remediate-malicious-email-delivered-office-365.md) is required.
 
 > [!NOTE]
-> This will walk you through the steps required to setup PIM for a Security Analyst who requires the ability to purge emails using Threat Explorer in Microsoft Defender for Office 365, but the same steps can be used for other RBAC roles within the Security, and Compliance portal. For example this process could be used for a information worker who requires day-to-day access in eDiscovery to perform searches and case work, but only occasionally needs the elevated right to export data from the tenant.
+> This will walk you through the steps required to setup PIM for a Security Analyst who requires the ability to purge emails using Threat Explorer in Microsoft Defender for Office 365, but the same steps can be used for other RBAC roles within the Security, and Compliance portal. For example this process could be used for an information worker who requires day-to-day access in eDiscovery to perform searches and case work, but only occasionally needs the elevated right to export data from the tenant.
 
 ***Step 1***. In the Azure PIM console for your subscription, add the user (Alex) to the Azure Security Reader role and configure the security settings related to activation.
 
@@ -60,9 +60,9 @@ Using [Privileged Access groups](/azure/active-directory/privileged-identity-man
 
 ### Create a role group requiring the permissions we need
 
-In the Microsoft 365 Defender portal, create a custom role group that contains the permissions that we want.
+In the Microsoft Defender portal, create a custom role group that contains the permissions that we want.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
 2. On the **Permissions** page, click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create**.
 3. Name your group to reflect its purpose such as 'Search and Purge PIM'.
 4. Don't add members, simply save the group and move on to the next part!
@@ -75,7 +75,7 @@ In the Microsoft 365 Defender portal, create a custom role group that contains t
 2. Name your Microsoft Entra group to reflect its purpose, **no owners or members are required** right now.
 3. Turn **Microsoft Entra roles can be assigned to the group** to **Yes**.
 4. Don't add any roles, members or owners, create the group.
-5. Go back into the group you've just created, and select **Privileged Access** > **Enable Privileged Access**.
+5. Go back into the group you've just created, and select **Privileged Identity Management** > **Enable PIM**.
 6. Within the group, select **Eligible assignments** > **Add assignments** > Add the user who needs Search & Purge as a role of **Member**.
 7. Configure the **Settings** within the group's Privileged Access pane. Choose to **Edit** the settings for the role of **Member**.
 8. Change the activation time to suit your organization. In this example require *Azure MFA*, *justification*, and *ticket information* before selecting **Update**.
@@ -90,7 +90,7 @@ In the Microsoft 365 Defender portal, create a custom role group that contains t
 
 ## Test your configuration of PIM with Defender for Office 365
 
-1. Login with the test user (Alex), who should have no administrative access within the [Microsoft 365 Defender portal](/microsoft-365/security/defender/overview-security-center) at this point.
+1. Login with the test user (Alex), who should have no administrative access within the [Microsoft Defender portal](/microsoft-365/security/defender/overview-security-center) at this point.
 2. Navigate to PIM, where the user can activate their day-to-day security reader role.
 3. If you try to purge an email using Threat Explorer, you get an error stating you need additional permissions.
 4. PIM a second time into the more elevated role, after a short delay you should now be able to purge emails without issue.

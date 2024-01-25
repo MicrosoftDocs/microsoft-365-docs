@@ -1,9 +1,8 @@
 ---
-title: Get incident notifications by email in Microsoft 365 Defender
-description: Set up email notifications to get notified of new incidents or updates to incidents in Microsoft 365 Defender.
-keywords: email, notifications, incident response, incident response notifications, incident notifications, email notifications, Microsoft 365 Defender notifications
-ms.service: microsoft-365-security
-ms.subservice: m365d
+title: Get incident notifications by email in Microsoft Defender XDR
+description: Set up email notifications to get notified of new incidents or updates to incidents in Microsoft Defender XDR.
+keywords: email, notifications, incident response, incident response notifications, incident notifications, email notifications, Microsoft Defender XDR notifications
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -24,17 +23,17 @@ search.appverid:
 ms.date: 09/18/2023
 ---
 
-# Get incident notifications by email in Microsoft 365 Defender
+# Get incident notifications by email in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-You can set up Microsoft 365 Defender to notify your staff with an email about new incidents or updates to existing incidents. You can choose to get notifications based on:
+You can set up Microsoft Defender XDR to notify your staff with an email about new incidents or updates to existing incidents. You can choose to get notifications based on:
 
 - Alert severity
 - Alert sources 
@@ -61,7 +60,7 @@ Likewise, if your organization is using role-based access control (RBAC), you ca
 
 Follow these steps to create a new rule and customize email notification settings.
 
-1. Go to [Microsoft 365 Defender](https://security.microsoft.com) in the navigation pane, select **Settings > Microsoft 365 Defender > Incident email notifications**.
+1. Go to [Microsoft Defender XDR](https://security.microsoft.com) in the navigation pane, select **Settings > Microsoft Defender XDR > Incident email notifications**.
 2. Select **Add item**.
 3. On the **Basics** page, type the rule name and a description, and then select **Next**.
 4. On the **Notification settings** page, configure:
@@ -71,7 +70,7 @@ Follow these steps to create a new rule and customize email notification setting
     - **Include organization name in the email** - Select if you want your organization name to appear in the email notification.
     - **Include tenant-specific portal link** - Select if you want to add a link with the tenant ID in the email notification for access to a specific Microsoft 365 tenant.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-email-notification-settings.png" alt-text="Screenshot of the Notification settings page for incident email notifications in the Microsoft 365 Defender portal." lightbox="../../media/get-incident-notifications/incidents-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-email-notification-settings.png" alt-text="Screenshot of the Notification settings page for incident email notifications in the Microsoft Defender portal." lightbox="../../media/get-incident-notifications/incidents-email-notification-settings.png":::
 
 5. Select **Next**. On the **Recipients** page, add the email addresses that will receive the incident notifications. Select **Add** after typing each new email address. To test notifications and ensure that the recipients receive them in the inboxes, select **Send test email**.
 6. Select **Next**. On the **Review rule** page, review the settings of the rule, and then select **Create rule**. Recipients will start receiving incident notifications through email based on the settings.
@@ -80,7 +79,7 @@ To edit an existing rule, select it from the list of rules. On the pane with the
 
 To delete a rule, select it from the list of rules. On the pane with the rule name, select **Delete**.
 
-Once you get the notification, you can go directly to the incident and start your investigation right away. For more information on investigating incidents, see [Investigate incidents in Microsoft 365 Defender](investigate-incidents.md).
+Once you get the notification, you can go directly to the incident and start your investigation right away. For more information on investigating incidents, see [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md).
 
 ## Next steps
 
@@ -89,4 +88,4 @@ Once you get the notification, you can go directly to the incident and start you
 
 ## See also
 
-- [Investigate incidents in Microsoft 365 Defender](investigate-incidents.md)
+- [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)

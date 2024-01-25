@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to install and use Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -14,20 +14,20 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
-ms.date: 09/14/2023
+ms.date: 11/29/2023
 ---
 
 # Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint for Linux includes antimalware and endpoint dete
 
 ### Prerequisites
 
-- Access to the Microsoft 365 Defender portal
+- Access to the Microsoft Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
 
   > [!NOTE]
@@ -64,12 +64,12 @@ In general you need to take the following steps:
 - Deploy Microsoft Defender for Endpoint on Linux using one of the following deployment methods:
   - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
-  - Third-party management tools:
+   - Third-party management tools:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
     - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
-    - [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
-
-If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
+      - [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
+      - [Deploy using Saltstack configuration management tool](linux-install-with-saltack.md)
+      If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 > [!NOTE]
 > It is not supported to install Microsoft Defender for Endpoint in any other location other than the default install path.
@@ -79,11 +79,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 ### System requirements
 
-> [!NOTE]
-
-
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
-
   - Red Hat Enterprise Linux 6.7 or higher (In preview)
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
@@ -91,7 +87,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - CentOS 6.7 or higher (In preview)
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
-  - Debian 9 - 11
+   - Debian 9 - 12
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
   - Oracle Linux 8.x
@@ -214,10 +210,11 @@ When adding exclusions to Microsoft Defender Antivirus, you should be mindful of
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you might need to create an *allow* rule specifically for them.
 
-|Spreadsheet of domains list| Description|
-|---|---|
-|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx)|
-| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)|
+| Spreadsheet of domains list  | Description  |
+|---------|---------|
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <br/><br/> [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx). |
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <br/><br/> [Download the spreadsheet here](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx). |
+
 
 > [!NOTE]
 > For a more specific URL list, see [Configure proxy and internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
@@ -258,3 +255,4 @@ High I/O workloads from certain applications can experience performance issues w
 - [Connect your non-Azure machines to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
 - [Turn on network protection for Linux](network-protection-linux.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

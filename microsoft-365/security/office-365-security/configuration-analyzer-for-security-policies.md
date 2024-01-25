@@ -19,18 +19,18 @@ ms.custom:
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/14/2023
+ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Configuration analyzer in the Microsoft 365 Defender portal provides a central location to find and fix security policies where the settings are below the Standard protection and Strict protection profile settings in [preset security policies](preset-security-policies.md).
+Configuration analyzer in the Microsoft Defender portal provides a central location to find and fix security policies where the settings are below the Standard protection and Strict protection profile settings in [preset security policies](preset-security-policies.md).
 
 The following types of policies are analyzed by the configuration analyzer:
 
@@ -51,20 +51,23 @@ The Standard and Strict policy setting values that are used as baselines are des
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Configuration analyzer** page, use <https://security.microsoft.com/configurationAnalyzer>.
+- You open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **Configuration analyzer** page, use <https://security.microsoft.com/configurationAnalyzer>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md):
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
+  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
     - _Use the configuration analyzer and update the affected security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to the configuration analyzer_: Membership in the **Global Reader** or **Security Reader** role groups.
   - [Exchange Online permissions](/Exchange/permissions-exo/permissions-exo): Membership in the **View-Only Organization Management** role group gives read-only access to the configuration analyzer.
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-## Use the configuration analyzer in the Microsoft 365 Defender portal
+<a name='use-the-configuration-analyzer-in-the-microsoft-365-defender-portal'></a>
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Configuration analyzer** in the **Templated policies** section. To go directly to the **Configuration analyzer** page, use <https://security.microsoft.com/configurationAnalyzer>.
+## Use the configuration analyzer in the Microsoft Defender portal
+
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Configuration analyzer** in the **Templated policies** section. To go directly to the **Configuration analyzer** page, use <https://security.microsoft.com/configurationAnalyzer>.
 
 The **Configuration analyzer** page has three main tabs:
 
@@ -112,14 +115,14 @@ If you select a row and click **Apply recommendation**, a confirmation dialog (w
 - The **Apply recommendation** and **View policy** disappear (only the **Refresh** button remains).
 - The **Status** value for the row changes to **Complete**.
 
-If you select a row and click **View policy** you're taken to the details flyout of the affected policy in the Microsoft 365 Defender portal where you can manually update the setting.
+If you select a row and click **View policy** you're taken to the details flyout of the affected policy in the Microsoft Defender portal where you can manually update the setting.
 
 After you automatically or manually update the setting, click **Refresh** to see the reduced number of recommendations and the removal of the updated row from the results.
 
 ### Configuration drift analysis and history tab in the configuration analyzer
 
 > [!NOTE]
-> [Unified Auditing](/purview/audit-log-enable-disable) needs to be enabled for drift analysis. 
+> [Unified Auditing](/purview/audit-log-enable-disable) needs to be enabled for drift analysis.
 
 This tab allows you to track the changes that have been made to your security policies and how those changes compare to the Standard or Strict settings. By default, the following information is displayed:
 

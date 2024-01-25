@@ -4,8 +4,7 @@ description: Learn how to configure your Event Hubs
 keywords: event hub, configure, insights
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -26,15 +25,15 @@ ms.date: 02/08/2023
 
 # Configure your Event Hubs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
-Learn how to configure your Event Hubs so that it can ingest events from Microsoft 365 Defender.
+Learn how to configure your Event Hubs so that it can ingest events from Microsoft Defender XDR.
 
 ## Set up the required Resource Provider in the Event Hubs subscription
 
@@ -89,7 +88,7 @@ This client secret value is used by Microsoft Graph APIs to authenticate this ap
 
 You're required to add permissions to the following roles to entities that are involved in Event Hubs data management:
 
-- **Contributor**: The permissions related to this role are added to entity who logs in to the Microsoft 365 Defender portal.
+- **Contributor**: The permissions related to this role are added to entity who logs in to the Microsoft Defender portal.
 - **Reader** and **Azure Event Hub data Receiver**: The permissions related to these roles are assigned to the entity who is already assigned the role of a **Service Principal** and logs in to the Microsoft Entra application.
 
 To ensure that these roles have been added, perform the following step:
@@ -108,7 +107,7 @@ You can create an Event Hubs within your Namespace and **all** the Event Types (
 
 Instead of exporting all the Event Types (Tables) into one Event Hub, you can export each table into different Event Hubs inside your Event Hubs Namespace (one Event Hub per Event Type).
 
-In this option, Microsoft 365 Defender will create Event Hubs for you.
+In this option, Microsoft Defender XDR will create Event Hubs for you.
 
 > [!NOTE]
 > If you are using an Event Hub Namespace that is **not** part of an Event Hub Cluster, you will only be able to choose up to 10 Event Types (Tables) to export in each Export Settings you define, due to an Azure limitation of 10 Event Hub per Event Hub Namespace.
@@ -117,7 +116,7 @@ For example:
 
 :::image type="content" source="../../media/005c1f6c10c34420d387f594987f9ffe.png" alt-text="An event hubs section in the Microsoft Azure portal" lightbox="../../media/005c1f6c10c34420d387f594987f9ffe.png":::
 
-If you choose this option, you can skip to the [Configure Microsoft 365 Defender to send email tables](#configure-microsoft-365-defender-to-send-email-tables) section.
+If you choose this option, you can skip to the [Configure Microsoft Defender XDR to send email tables](#configure-microsoft-365-defender-to-send-email-tables) section.
 
 Create Event Hubs within your Namespace by selecting **Event Hub** \> **+ Event Hub**.
 
@@ -129,17 +128,21 @@ For these Event Hubs (not namespace), you'll need to configure a Shared Access P
 
 :::image type="content" source="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png" alt-text="The Shared access policies page in the Microsoft Azure portal" lightbox="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png":::
 
-## Configure Microsoft 365 Defender to send email tables
+<a name='configure-microsoft-365-defender-to-send-email-tables'></a>
 
-### Set up Microsoft 365 Defender send Email tables to Splunk via Event Hubs
+## Configure Microsoft Defender XDR to send email tables
 
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with an account that meets all the following role requirements:
+<a name='set-up-microsoft-365-defender-send-email-tables-to-splunk-via-event-hubs'></a>
+
+### Set up Microsoft Defender XDR send Email tables to Splunk via Event Hubs
+
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> with an account that meets all the following role requirements:
 
     - Contributor role at the Event Hubs *Namespace* Resource level or higher for the Event Hubs that you'll be exporting to. Without this permission, you'll get an export error when you try to save the settings.
 
-    - Global Admin or Security Admin Role on the tenant tied to Microsoft 365 Defender and Azure.
+    - Global Admin or Security Admin Role on the tenant tied to Microsoft Defender XDR and Azure.
 
-      :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="The Settings page of the Microsoft 365 Defender portal" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
+      :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="The Settings page of the Microsoft Defender portal" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
 
 1. Click on **Raw Data Export \> +Add**.
 
@@ -153,9 +156,9 @@ For these Event Hubs (not namespace), you'll need to configure a Shared Access P
 
     **Event-Hub name**: If you created an Event Hubs inside your Event Hubs Namespace, paste the Event Hubs name you recorded above.
 
-    If you choose to let Microsoft 365 Defender to create Event Hubs per Event Types (Tables) for you, leave this field empty.
+    If you choose to let Microsoft Defender XDR to create Event Hubs per Event Types (Tables) for you, leave this field empty.
 
-    **Event Types**: Select the Advanced Hunting tables that you want to forward to the Event Hubs and then on to your custom app. Alert tables are from Microsoft 365 Defender, Devices tables are from Microsoft Defender for Endpoint (EDR), and Email tables are from Microsoft Defender for Office 365. Email Events records all Email Transactions. The URL (Safe Links), Attachment (Safe Attachments), and Post Delivery Events (ZAP) are also recorded and can be joined to the Email Events on the NetworkMessageId field.
+    **Event Types**: Select the Advanced Hunting tables that you want to forward to the Event Hubs and then on to your custom app. Alert tables are from Microsoft Defender XDR, Devices tables are from Microsoft Defender for Endpoint (EDR), and Email tables are from Microsoft Defender for Office 365. Email Events records all Email Transactions. The URL (Safe Links), Attachment (Safe Attachments), and Post Delivery Events (ZAP) are also recorded and can be joined to the Email Events on the NetworkMessageId field.
 
     :::image type="content" source="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png" alt-text="The Streaming API settings page in the Microsoft Azure portal" lightbox="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png":::
 
@@ -189,4 +192,4 @@ for your custom app to ingest.
 ## Related topics
 
 [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

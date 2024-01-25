@@ -32,7 +32,7 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Some of the information in this article might not apply to Office 365 operated by 21Vianet.
+> Some of the information in this article might not apply to Microsoft 365 operated by 21Vianet.
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in the Exchange admin center](/Exchange/whats-new)
 - [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft Purview compliance portal](/microsoft-365/compliance/whats-new)
-- [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
+- [What's new in Microsoft Defender XDR](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [What's new for Teams admins](/OfficeUpdates/teams-admin)
 - [Microsoft 365 updates](/OfficeUpdates/)

@@ -57,15 +57,18 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 - The campaigns feature is available in organizations with Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5).
 - You need to be assigned permissions to view information about campaigns as described in this article. You have the following options:
-  - [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Raw data (email & collaboration)/Email message headers (read)**.
+  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
     - **Organization Management**
     - **Security Administrator**
     - **Security Reader**
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-## Campaigns page in the Microsoft 365 Defender portal
+<a name='campaigns-page-in-the-microsoft-365-defender-portal'></a>
 
-To open the **Campaigns** page in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Campaigns**. Or, to go directly to the **Campaigns** page, use <https://security.microsoft.com/campaigns>.
+## Campaigns page in the Microsoft Defender portal
+
+To open the **Campaigns** page in the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Campaigns**. Or, to go directly to the **Campaigns** page, use <https://security.microsoft.com/campaigns>.
 
 The main **Campaigns** page consists of the following elements:
 
@@ -73,7 +76,7 @@ The main **Campaigns** page consists of the following elements:
 - A chart area, which is set to **Campaign Type** by default.
 - A details table, which is set to the **Campaign** tab by default
 
-:::image type="content" source="../../media/campaigns-overview.png" alt-text="Screenshot that shows the Campaigns in the Microsoft 365 Defender portal." lightbox="../../media/campaigns-overview.png":::
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="Screenshot that shows the Campaigns in the Microsoft Defender portal." lightbox="../../media/campaigns-overview.png":::
 
 > [!TIP]
 >

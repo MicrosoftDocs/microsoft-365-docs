@@ -1,11 +1,11 @@
 ---
-title: Archived states in Microsoft 365 Archive (Preview)
+title: Archive states in Microsoft 365 Archive (Preview)
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 10/17/2023
+ms.date: 11/15/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: archive
@@ -13,24 +13,18 @@ search.appverid:
 ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about the archived states and what they mean in Microsoft 365 Archive.
+description: Learn about the archive states and what they mean in Microsoft 365 Archive.
 ---
 
-# Archived states in Microsoft 365 Archive (Preview)
+# Archive states in Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change.
+> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
 
-The following table describes the archived states and allowed operations.
+The following table describes the archive states and allowed operations.
 
-|Archived state  |Description  |Allowed operations  |
+|Archive state  |Description  |Allowed operations  |
 |---------|---------|---------|
 |Recently Archived    |This state is the first stage after a site is archived and is valid for seven days. A site in this stage can be reactivated without any cost and will be reactivated instantaneously.         |Reactivate, Delete         |
 |Archived    |The site enters this state after seven days after being archived. In this stage, reactivations will be charged, and might take a few hours.         |Reactivate, Delete         |
 |Reactivating     |If a site is reactivated from “Archived” state, it will be in this stage until reactivation is complete. After this, the site will be active, and will be available in Active sites page.         |None         |
-
-<br>
-
-> [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview.md#preview-documentation)

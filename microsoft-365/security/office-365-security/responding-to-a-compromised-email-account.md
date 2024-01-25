@@ -29,7 +29,7 @@ ms.date: 6/19/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Responding to a compromised email account
@@ -57,9 +57,9 @@ Users might notice and report unusual activity in their Microsoft 365 mailboxes.
 - Mail forwarding was recently added.
 - Unusual signatures were recently added. For example, a fake banking signature or a prescription drug signature.
 
-If a user reports these symptoms or other unusual symptoms, you should investigate. The Microsoft 365 Defender portal and the Azure portal offer the following tools to help you investigate suspicious activity on a user account.
+If a user reports these symptoms or other unusual symptoms, you should investigate. The Microsoft Defender portal and the Azure portal offer the following tools to help you investigate suspicious activity on a user account.
 
-- **Unified audit logs in the Microsoft 365 Defender portal**: Filter the logs for activity using a date range that starts immediately before the suspicious activity occurred to today. Don't filter on specific activities during the search. For more information, see [Search the audit log](audit-log-search-defender-portal.md).
+- **Unified audit logs in the Microsoft Defender portal**: Filter the logs for activity using a date range that starts immediately before the suspicious activity occurred to today. Don't filter on specific activities during the search. For more information, see [Search the audit log](audit-log-search-defender-portal.md).
 
 - **Microsoft Entra sign-in logs and other risk reports in the Microsoft Entra admin center**: Examine the values in these columns:
   - Review IP address
@@ -163,7 +163,7 @@ To unblock a mailbox from sending email, follow the procedures in [Remove blocke
 1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, do the following steps:
    1. Go to **Users** \> **Active users**. Or, to go directly to the **Active users** page, use <https://admin.microsoft.com/Adminportal/Home#/users>.
    2. On the **Active users** page, find and select the user account from the list by doing one of the following steps:
-      - Select the user by clicking anywhere in the row other than the check box next to the name. In the details flyout that opens, verify the **Account** tab is selected, and then select **Manage roles** in the **Roles** section. 
+      - Select the user by clicking anywhere in the row other than the check box next to the name. In the details flyout that opens, verify the **Account** tab is selected, and then select **Manage roles** in the **Roles** section.
       - Select the user by selecting the check box next to the name. Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** \> :::image type="icon" source="../../media/m365-cc-sc-manage-roles-icon.png" border="false"::: **Manage roles**.
    3. In the **Manage admin roles** flyout that opens, do the following steps:
       - Record any information that you want to restore later.
@@ -171,7 +171,7 @@ To unblock a mailbox from sending email, follow the procedures in [Remove blocke
 
       When you're finished in the **Manage admin roles** flyout, select **Save changes**.
 
-2. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, do the following steps:
+2. In the Microsoft Defender portal at <https://security.microsoft.com>, do the following steps:
    1. Go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
    2. On the **Permissions** page, select a role group from the list.
    3. Look for the user account in the **Members** section of the details flyout that opens. If the role group contains the user account, do the following steps:
@@ -194,7 +194,7 @@ To unblock a mailbox from sending email, follow the procedures in [Remove blocke
 
 ### Step 7 Optional: Additional precautionary steps
 
-1. Verify the contents of the **Sent items** folder of the account in Outlook or Outlook on the web. 
+1. Verify the contents of the **Sent items** folder of the account in Outlook or Outlook on the web.
 
    You might need to inform people in your contacts list that your account was compromised. For example, the attacker might have sent messages asking your contacts for money, or the attacker might have sent a virus to hijack their computers.
 

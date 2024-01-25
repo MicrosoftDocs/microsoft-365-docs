@@ -1,8 +1,8 @@
 ---
 title: Address false positives/negatives in Microsoft Defender for Endpoint
 description: Learn how to handle false positives or false negatives in Microsoft Defender for Endpoint.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -37,7 +37,7 @@ search.appverid: met150
 
 In endpoint protection solutions, a false positive is an entity, such as a file or a process that was detected and identified as malicious even though the entity isn't actually a threat. A false negative is an entity that wasn't detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Defender for Endpoint](microsoft-defender-endpoint.md).
 
-:::image type="content" source="images/false-positives-overview.png" alt-text="The definition of false positive and negatives in the Microsoft 365 Defender portal" lightbox="images/false-positives-overview.png":::
+:::image type="content" source="images/false-positives-overview.png" alt-text="The definition of false positive and negatives in the Microsoft Defender portal" lightbox="images/false-positives-overview.png":::
 
 Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives occurring with Defender for Endpoint, your security operations can take steps to address them by using the following process:
 
@@ -64,7 +64,7 @@ Managing your alerts and classifying true/false positives helps to train your th
 
 Before you classify or suppress an alert, determine whether the alert is accurate, a false positive, or benign.
 
-1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
+1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
 
 2. Select an alert to view more details about it. (To get help with this task, see [Review alerts in Defender for Endpoint](review-alerts.md).)
 
@@ -78,9 +78,9 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 ### Classify an alert
 
-Alerts can be classified as false positives or true positives in the Microsoft 365 Defender portal. Classifying alerts helps train Defender for Endpoint so that over time, you'll see more true alerts and fewer false alerts.
+Alerts can be classified as false positives or true positives in the Microsoft Defender portal. Classifying alerts helps train Defender for Endpoint so that over time, you'll see more true alerts and fewer false alerts.
 
-1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, choose **Incidents & alerts**, select **Alerts** and then select an alert.
+1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, choose **Incidents & alerts**, select **Alerts** and then select an alert.
 
 2. For the selected alert, select **Manage alert**. A flyout pane opens.
 
@@ -91,9 +91,9 @@ Alerts can be classified as false positives or true positives in the Microsoft 3
 
 ### Suppress an alert
 
-If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft 365 Defender. Suppressing alerts helps reduce noise in your queue.
+If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft Defender XDR. Suppressing alerts helps reduce noise in your queue.
 
-1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
+1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
 
 2. Select an alert that you want to suppress to open its **Details** pane.
 
@@ -128,7 +128,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review completed actions
 
-1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
+1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
 
 2. Select the **History** tab to view a list of actions that were taken.
 
@@ -136,7 +136,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Restore a quarantined file from the Action Center
 
-1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
+1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
 
 2. On the **History** tab, select an action that you want to undo.
 
@@ -144,7 +144,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Undo multiple actions at one time
 
-1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
+1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
 
 2. On the **History** tab, select the actions that you want to undo.
 
@@ -155,7 +155,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="The Quarantine file" lightbox="images/autoir-quarantine-file-1.png":::
 
-1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
+1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
@@ -163,7 +163,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review quarantined messages
 
-1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, under **Email & collaboration**, select **Exchange message trace**.
+1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, under **Email & collaboration**, select **Exchange message trace**.
 
 2. Select a message to view details.
 
@@ -283,7 +283,7 @@ Before you create indicators for IP addresses, URLs, or domains, make sure the f
 - Antimalware client version is 4.18.1906.x or later
 - Devices are running Windows 10, version 1709, or later, or Windows 11
 
-Custom network indicators are turned on in the [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). To learn more, see [Advanced features](/microsoft-365/security/defender-endpoint/advanced-features).
+Custom network indicators are turned on in the [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender). To learn more, see [Advanced features](/microsoft-365/security/defender-endpoint/advanced-features).
 
 #### Indicators for application certificates
 
@@ -384,7 +384,7 @@ Depending on the [level of automation](/microsoft-365/security/defender-endpoint
 
 If you've worked through all the steps in this article and still need help, contact technical support.
 
-1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
+1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
 
 2. In the **Support Assistant** window, describe your issue, and then send your message. From there, you can open a service request.
 
@@ -392,7 +392,7 @@ If you've worked through all the steps in this article and still need help, cont
 
 - [Manage Defender for Endpoint](manage-mde-post-migration.md)
 - [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
-- [Overview of Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use)
+- [Overview of Microsoft Defender portal](/microsoft-365/security/defender-endpoint/use)
 - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md) 

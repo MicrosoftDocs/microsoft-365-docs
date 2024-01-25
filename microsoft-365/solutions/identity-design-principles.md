@@ -134,7 +134,7 @@ If you agree with this expanded definition of authorization, then you need to im
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) (Defender for Cloud Apps)
-- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)
+- [Microsoft Defender XDR](../security/defender/microsoft-365-defender.md)
 - [Microsoft Intune](/mem/intune/)
 - [Microsoft Purview Information Protection](../compliance/information-protection.md)
 - [Microsoft Sentinel](/azure/sentinel/)
@@ -224,17 +224,19 @@ I mentioned [Microsoft Entra PIM](/azure/active-directory/privileged-identity-ma
 
 Sometimes scenarios call for adding an external user to a role (see the multi-tenant section, above). This works just fine. [Microsoft Entra B2B](/azure/active-directory/b2b/) is another large and fun article to walk customers through, perhaps in another article.
 
-### Microsoft 365 Defender and Microsoft 365 Purview compliance portals
+<a name='microsoft-365-defender-and-microsoft-365-purview-compliance-portals'></a>
 
-**Email & Collaboration roles** in the [Microsoft 365 Defender portal](../security/office-365-security/mdo-portal-permissions.md) and ***Role groups for Microsoft Purview solutions** in the [Microsoft 365 Purview compliance portal](../compliance/microsoft-365-compliance-center-permissions.md) are a collection of "role groups", which are separate and distinct from Microsoft Entra roles. This can be confusing because some of these role groups have the same name as Microsoft Entra roles (for example, Security Reader), yet they can have different membership. I prefer the use of Microsoft Entra roles. Each role group consists of one or more "roles" (see what I mean about reusing the same word?) and have members from Microsoft Entra ID, which are email enabled objects. Also, you can create a role group with the same name as a role, which may or may not contain that role (avoid this confusion).
+### Microsoft Defender XDR and Microsoft 365 Purview compliance portals
 
-In a sense, these permissions are an evolution of the Exchange role groups model. However, Exchange Online has its own [role group management](/exchange/permissions-exo) interface. Some role groups in Exchange Online are locked and managed from Microsoft Entra ID or the Microsoft 365 Defender and Microsoft 365 Purview compliance portals, but others might have the same or similar names and are managed in Exchange Online (adding to the confusion). I recommend you avoid using the Exchange Online user interface unless you need scopes for Exchange management.
+**Email & Collaboration roles** in the [Microsoft Defender portal](../security/office-365-security/mdo-portal-permissions.md) and ***Role groups for Microsoft Purview solutions** in the [Microsoft 365 Purview compliance portal](../compliance/microsoft-365-compliance-center-permissions.md) are a collection of "role groups", which are separate and distinct from Microsoft Entra roles. This can be confusing because some of these role groups have the same name as Microsoft Entra roles (for example, Security Reader), yet they can have different membership. I prefer the use of Microsoft Entra roles. Each role group consists of one or more "roles" (see what I mean about reusing the same word?) and have members from Microsoft Entra ID, which are email enabled objects. Also, you can create a role group with the same name as a role, which may or may not contain that role (avoid this confusion).
+
+In a sense, these permissions are an evolution of the Exchange role groups model. However, Exchange Online has its own [role group management](/exchange/permissions-exo) interface. Some role groups in Exchange Online are locked and managed from Microsoft Entra ID or the Microsoft Defender XDR and Microsoft 365 Purview compliance portals, but others might have the same or similar names and are managed in Exchange Online (adding to the confusion). I recommend you avoid using the Exchange Online user interface unless you need scopes for Exchange management.
 
 You can't create custom roles. Roles are defined by services created by Microsoft and will grow as new services are introduced. This behavior is similar in concept to [roles defined by applications](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Microsoft Entra ID. When new services are enabled, often new role groups need to be created in order to grant or delegate access to these (for example, [insider risk management](../compliance/insider-risk-management-configure.md).
 
 These role groups also require direct membership and cannot contain Microsoft Entra groups. Unfortunately, today these role groups aren't supported by Microsoft Entra PIM. Like Microsoft Entra roles, I tend to recommend management of these role groups through APIs or a partner governance product like Saviynt, or others.
 
-Microsoft 365 Defender portal and Microsoft 365 Purview compliance portal roles span Microsoft 365 and you can't scope these role groups to a subset of the environment (like you can with administrative units in Microsoft Entra ID). Many customers ask how they can subdelegate. For example, "create a DLP policy only for EU users." Today, if you have rights to a specific function in the Microsoft 365 Defender and Microsoft 365 Purview compliance portals, you have rights to everything covered by this function in the tenant. However, many policies have capabilities to target a subset of the environment (for example, "make these [labels](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) available only to these users"). Proper governance and communication are a key component to avoid conflicts. Some customers choose to implement a "configuration as code" approach to address subdelegation in the Microsoft 365 Defender and Microsoft 365 Purview compliance portals. Some specific services support subdelegation (see below).
+Microsoft Defender portal and Microsoft 365 Purview compliance portal roles span Microsoft 365 and you can't scope these role groups to a subset of the environment (like you can with administrative units in Microsoft Entra ID). Many customers ask how they can subdelegate. For example, "create a DLP policy only for EU users." Today, if you have rights to a specific function in the Microsoft Defender XDR and Microsoft 365 Purview compliance portals, you have rights to everything covered by this function in the tenant. However, many policies have capabilities to target a subset of the environment (for example, "make these [labels](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) available only to these users"). Proper governance and communication are a key component to avoid conflicts. Some customers choose to implement a "configuration as code" approach to address subdelegation in the Microsoft Defender XDR and Microsoft 365 Purview compliance portals. Some specific services support subdelegation (see below).
 
 ### Service Specific
 
@@ -265,7 +267,7 @@ As stated earlier, many customers are looking to achieve a more granular delegat
 
 - **Intune** - (/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender for Endpoint** - (/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365 Defender** - (../security/defender/m365d-permissions.md)
+- **Microsoft Defender XDR** - (../security/defender/m365d-permissions.md)
 - **Microsoft Defender for Cloud Apps** - (/cloud-app-security/manage-admins)
 - **Stream** - (/stream/assign-administrator-user-role)
 - **Information barriers** - (../compliance/information-barriers.md)
@@ -297,7 +299,7 @@ Combining all the logs into one storage location includes added benefit, such as
 
 Logs do not have to be directed to one place only. It might also be beneficial to integrate [Office 365 Logs with Microsoft Defender for Cloud Apps](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) or a custom RBAC model in [Power BI](../admin/usage-analytics/usage-analytics.md). Different repositories have different benefits and audiences.
 
-It's worth mentioning that there's a very rich built-in analytics system for security, threats, vulnerabilities, and so on in a service called [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md).
+It's worth mentioning that there's a very rich built-in analytics system for security, threats, vulnerabilities, and so on in a service called [Microsoft Defender XDR](../security/defender/microsoft-365-defender.md).
 
 Many large customers want to transfer this log data to a third-party system (for example, SIEM). There are different approaches for this, but in-general [Azure Event Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) and [Graph](/graph/security-integration) are good starting points.
 

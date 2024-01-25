@@ -4,7 +4,7 @@ description: Learn how you can use Microsoft 365 and Teams to empower the frontl
 search.appverid: MET150
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 ms.topic: overview
 ms.service: microsoft-365-frontline

@@ -2,7 +2,7 @@
 title: Migrate devices to use the streamlined onboarding method
 description: Learn how to migrate devices to Defender for Endpoint using the streamlined connectivity method.
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -12,19 +12,19 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: how-to
-ms.subservice: mde
+ms.subservice: onboard
 ms.date: 09/21/2023
 ---
 
 # Migrate devices to use the streamlined connectivity method
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
@@ -187,7 +187,7 @@ Replace the onboarding package file in the current deployment method.
 You can use the following methods to check that you have successfully connected Windows devices:
 
 - [Client analyzer](#use-defender-for-endpoint-client-analyzer-windows-to-validate-connectivity-after-onboarding-for-migrated-endpoints)
-- [Tracking with advanced hunting in Microsoft 365 Defender](#tracking-with-advanced-hunting-in-microsoft-365-defender)
+- [Tracking with advanced hunting in Microsoft Defender XDR](#tracking-with-advanced-hunting-in-microsoft-365-defender)
 - [Track locally using Event Viewer (for Windows)](#tracking-locally-on-a-device-through-windows-event-viewer)
 - [Run tests to confirm connectivity with Defender for Endpoint services](#)
 - Checking the registry editor
@@ -196,7 +196,7 @@ You can use the following methods to check that you have successfully connected 
 For macOS and Linux, you can use the following methods:
 
 - MDATP connectivity tests
-- Tracking with advanced hunting in Microsoft 365 Defender
+- Tracking with advanced hunting in Microsoft Defender XDR
 - Run tests to confirm connectivity with Defender for Endpoint services
 
 ### Use Defender for Endpoint Client Analyzer (Windows) to validate connectivity after onboarding for migrated endpoints
@@ -209,26 +209,28 @@ You can follow the same instructions as in [Verify client connectivity to Micros
 
 Ensure connectivity is established with the appropriate URLs. 
 
-### Tracking with advanced hunting in Microsoft 365 Defender
+<a name='tracking-with-advanced-hunting-in-microsoft-365-defender'></a>
 
-You can use advanced hunting in Microsoft 365 Defender portal to view the connectivity type status. 
+### Tracking with advanced hunting in Microsoft Defender XDR
 
-This information is found in the DeviceInfo table under the “ConnectivityType” column:
+You can use advanced hunting in Microsoft Defender portal to view the connectivity type status. 
+
+This information is found in the DeviceInfo table under the "ConnectivityType" column:
 - Column Name: ConnectivityType
 - Possible Values: `<blank>`, Streamlined, Standard
 - Data type: String
 - Description: Type of connectivity from the device to the cloud
 
-Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as “Streamlined”.
+Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as "Streamlined".
 
-If you move the device back to the regular method, the value will be “standard”.
+If you move the device back to the regular method, the value will be "standard".
 
 For devices that have not yet attempted reonboard, the value will remain blank. 
 
 
 ### Tracking locally on a device through Windows Event Viewer
 
-You can use Windows Event Viewer’s SENSE operational log to locally validate connections with the new streamlined approach. SENSE Event ID 4 tracks successful EDR connections.
+You can use Windows Event Viewer's SENSE operational log to locally validate connections with the new streamlined approach. SENSE Event ID 4 tracks successful EDR connections.
 
 Open the Defender for Endpoint service event log using the following steps:
 
@@ -275,7 +277,7 @@ Make sure to run a couple of basic commands post-connection to confirm connectiv
 
 Ensure that Automated investigation and response is working on your test device: [Configure automated investigation and response capabilities](/microsoft-365/security/defender/m365d-configure-auto-investigation-response).
 
-For Auto-IR testing labs, navigate to  **Microsoft 365 Defender > Evaluations & Tutorials> Tutorials & Simulations > Tutorials>  Automated Investigation tutorials**.
+For Auto-IR testing labs, navigate to **Microsoft Defender XDR** \> **Evaluations & Tutorials** \> **Tutorials & Simulations** \> **Tutorials \> **Automated Investigation tutorials**.
 
 #### Cloud-delivered protection 
 
@@ -318,20 +320,22 @@ After the command runs, the Command Prompt window closes automatically. If succe
 For macOS and Linux, you can use the following methods:
 
 - MDATP connectivity tests
-- Tracking with advanced hunting in Microsoft 365 Defender
+- Tracking with advanced hunting in Microsoft Defender XDR
 - Run tests to confirm connectivity with Defender for Endpoint services
 
 ### MDATP connectivity test (macOS and Linux)
 
-Run `mdatp health –details` to confirm simplified_connectivity: "enabled".
+Run `mdatp health -details` to confirm simplified_connectivity: "enabled".
 
-Run `mdatp health –details edr` to confirm `edr_partner_geo_location` is available. The value should be `GW_<geo>` where 'geo' is your tenant’s geo-location.
+Run `mdatp health -details edr` to confirm `edr_partner_geo_location` is available. The value should be `GW_<geo>` where 'geo' is your tenant's geo-location.
 
 Run mdatp connectivity test. Ensure the streamlined URL pattern is present. You should expect two for '\storage', one for '\mdav', one for '\xplat', and one for '/packages'.
 
 For example: `https:mdav.us.endpoint.security.microsoft/com/storage`
 
-### Tracking with advanced hunting in Microsoft 365 Defender
+<a name='tracking-with-advanced-hunting-in-microsoft-365-defender'></a>
+
+### Tracking with advanced hunting in Microsoft Defender XDR
 
 Follow the same instructions as for Windows.
 
@@ -339,6 +343,6 @@ Follow the same instructions as for Windows.
 
 Download and run the client analyzer for macOS or Linux. For more information, see [Download and run the client analyzer](download-client-analyzer.md).
 
-1. Run `mdeclientanalyzer.cmd -o <path to cmd file>` from within the MDEClientAnalyzer folder. The command uses parameters from the onboarding package to test connectivity. 
+1. Run `mdeclientanalyzer.cmd -o <path to cmd file>` from within the MDEClientAnalyzer folder. The command uses parameters from the onboarding package to test connectivity.
 
 2.	Run `mdeclientanalyzer.cmd -g <GW_US, GW_UK, GW_EU>` (where parameter is of GW_US, GW_EU, GW_UK). GW refers to the streamlined option. Run with applicable tenant geo.

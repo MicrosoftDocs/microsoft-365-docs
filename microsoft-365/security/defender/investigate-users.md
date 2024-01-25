@@ -1,9 +1,8 @@
 ---
-title: Investigate users in Microsoft 365 Defender
-description: Investigate users for an incident in the Microsoft 365 Defender portal.
+title: Investigate users in Microsoft Defender XDR
+description: Investigate users for an incident in the Microsoft Defender portal.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -21,15 +20,15 @@ ms.custom: seo-marvel-jun2020
 ms.date: 08/04/2023
 ---
 
-# Investigate users in Microsoft 365 Defender
+# Investigate users in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-The user entity page in Microsoft 365 Defender helps you in your investigation of user identities. The page has all the important information about each identity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile. 
+The user entity page in Microsoft Defender XDR helps you in your investigation of user identities. The page has all the important information about each identity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile. 
 
 You can find identity information in the following views:
 
@@ -41,9 +40,9 @@ You can find identity information in the following views:
 - Advanced hunting queries
 - Action center
  
-A clickable identity link is available in these views that will take you to the **User** page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft 365 Defender portal at **Incidents & alerts** \> ***incident*** \> **Users**.
+A clickable identity link is available in these views that will take you to the **User** page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts** \> ***incident*** \> **Users**.
 
-:::image type="content" source="../../media/investigate-users/Fig1-user-incident-overview.png" alt-text="The Users page for an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-users/Fig1-user-incident-overview.png":::
+:::image type="content" source="../../media/investigate-users/Fig1-user-incident-overview.png" alt-text="The Users page for an incident in the Microsoft Defender portal." lightbox="../../media/investigate-users/Fig1-user-incident-overview.png":::
 
 When you investigate a specific identity, you'll see the:
 
@@ -53,7 +52,7 @@ When you investigate a specific identity, you'll see the:
 - [Identity timeline](#timeline) tab
 - [Remediation actions](#remediation-actions)
 
-:::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="A specific user's page in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
+:::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="A specific user's page in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
 
 > [!NOTE]
 > The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
@@ -103,7 +102,7 @@ Defender for Identity pulls tags out of Active Directory to give you a single in
 | **Unresolved** |  Indicates that the device doesn't resolve to a valid identity in the Active Directory forest. No directory information is available. |
 | **Sensitive** |  Indicates that the entity is considered as sensitive. |
 
-For more information, see [Defender for Identity entity tags in Microsoft 365 Defender](/defender-for-identity/entity-tags).
+For more information, see [Defender for Identity entity tags in Microsoft Defender XDR](/defender-for-identity/entity-tags).
 
 > [!NOTE]
 > The organization tree section and the account tags are available when a Microsoft Defender for Identity license is available.
@@ -112,7 +111,7 @@ For more information, see [Defender for Identity entity tags in Microsoft 365 De
 
 You can see all active alerts involving the user from the last 180 days in this tab. Information like alert severity and the time the alert was generated is available in this tab. Clicking on the alert row shows you additional information about the alert.
 
-:::image type="content" source="../../media/investigate-users/Fig3-user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig3-user-incident-alertstab.png":::
+:::image type="content" source="../../media/investigate-users/Fig3-user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig3-user-incident-alertstab.png":::
 
 ## Observed in organization
 
@@ -130,7 +129,7 @@ The map provides a list of other devices or users an attacker can take advantage
 
 The lateral movement path report, which can be viewed by date, is always available to provide information about the potential lateral movement paths discovered and can be customized by time. Select a different date using **View a different date** to view previous lateral movement paths found for an entity. The graph only displays if a potential lateral movement path has been found for an entity in the past two days.
 
-:::image type="content" source="../../media/investigate-users/Fig4-user-incident-difftabs.png" alt-text="The Observed in organization view showing device, group, location, and lateral movement paths for a user in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig4-user-incident-difftabs.png":::
+:::image type="content" source="../../media/investigate-users/Fig4-user-incident-difftabs.png" alt-text="The Observed in organization view showing device, group, location, and lateral movement paths for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig4-user-incident-difftabs.png":::
 
 ## Timeline
 
@@ -176,7 +175,7 @@ For example:
 ![Screenshot of the Timeline tab.](media/investigate-users/time.png)
 
 > [!NOTE]
-> Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
+> Microsoft Defender XDR can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
 > To set the time zone for these features, go to **Settings** > **Security center** > **Time zone**.
 
 ## Remediation actions
@@ -188,7 +187,7 @@ From the Overview page, you can do these additional actions:
 - Reset investigation priority score for the user
 - View Microsoft Entra account settings, related governance, the user's owned files, or the user's shared files
 
-:::image type="content" source="../../media/investigate-users/Fig6-user-incident-actions.png" alt-text="The actions for remediation for a user in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig6-user-incident-actions.png":::
+:::image type="content" source="../../media/investigate-users/Fig6-user-incident-actions.png" alt-text="The actions for remediation for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig6-user-incident-actions.png":::
 
 For more information, see [Remediation actions in Microsoft Defender for Identity](/defender-for-identity/remediation-actions).
 
@@ -205,4 +204,4 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 
 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

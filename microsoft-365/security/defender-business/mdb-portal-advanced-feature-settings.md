@@ -1,14 +1,13 @@
 ---
 title: Review and edit settings in Microsoft Defender for Business
-description: View and edit settings for the Microsoft 365 Defender portal and advanced features in Defender for Business
+description: View and edit settings for the Microsoft Defender portal and advanced features in Defender for Business
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 10/06/2023
 ms.reviewer: efratka
@@ -23,11 +22,11 @@ ms.collection:
 
 # Review and edit settings in Microsoft Defender for Business
 
-You can view and edit settings, such as portal settings and advanced features, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Use this article to get an overview of the various settings that are available and how to edit your Defender for Business settings.
+You can view and edit settings, such as portal settings and advanced features, in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Use this article to get an overview of the various settings that are available and how to edit your Defender for Business settings.
 
 ## View settings for advanced features
 
-In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features**.
+In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **General** > **Advanced features**.
 
 The following table describes advanced feature settings.
 
@@ -48,7 +47,9 @@ The following table describes advanced feature settings.
 | **Device discovery**<br/>(turned on by default) | Enables your security team to find unmanaged devices that are connected to your company network. Unknown and unmanaged devices introduce significant risks to your network, whether it's an unpatched printer, a network device with a weak security configuration, or a server with no security controls.<br/><br/>Device discovery uses onboarded devices to discover unmanaged devices, so your security team can onboard the unmanaged devices and reduce your vulnerability. <br/><br/>[Learn more about device discovery](../defender-endpoint/device-discovery.md).    |
 | **Preview features** | Microsoft is continually updating services such as Defender for Business to include new feature enhancements and capabilities. If you opt in to receive preview features, you'll be among the first to try upcoming features in the preview experience. <br/><br/>[Learn more about preview features](../defender-endpoint/preview.md).  |
 
-## View and edit other settings in the Microsoft 365 Defender portal
+<a name='view-and-edit-other-settings-in-the-microsoft-365-defender-portal'></a>
+
+## View and edit other settings in the Microsoft Defender portal
 
 In addition to security policies applied to devices, there are other settings you can view and edit in Defender for Business. For example, you specify the time zone to use, and you can onboard (or offboard) devices. 
 
@@ -62,16 +63,19 @@ The following table describes settings you can view and  edit in Defender for Bu
 | Category | Setting | Description |
 |:---|:---|:---|
 | **Security center** | **Time zone** | Select the time zone to use for the dates and times displayed in incidents, detected threats, and automated investigation and remediation. You can either use UTC or your local time zone (*recommended*).  |
-| **Microsoft 365 Defender** | **Account** | View details such where your data is stored, your tenant ID, and your organization (org) ID. |
-| **Microsoft 365 Defender**  | **Preview features**  | Turn on preview features to try upcoming features and new capabilities. You can be among the first to preview new features and provide feedback. |
+| **Microsoft Defender XDR** | **Account** | View details such where your data is stored, your tenant ID, and your organization (org) ID. |
+| **Microsoft Defender XDR**  | **Preview features**  | Turn on preview features to try upcoming features and new capabilities. You can be among the first to preview new features and provide feedback. |
 | **Endpoints**  | **Email notifications** | Set up or edit your email notification rules. When vulnerabilities are detected or an alert is created, the recipients specified in your email notification rules will receive an email. [Learn more about email notifications](mdb-email-notifications.md). |
 | **Endpoints**   | **Device management** > **Onboarding** | Onboard devices to Defender for Business by using a downloadable script. To learn more, see [Onboard devices to Defender for Business](mdb-onboard-devices.md).   |  
 | **Endpoints**  |  **Device management** > **Offboarding** | Offboard (remove) devices from Defender for Business. When you offboard a device, it no longer sends data to Defender for Business, but data received prior to offboarding is retained. To learn more, see [Offboarding a device](mdb-offboard-devices.md).  |
 
-### Access your settings in the Microsoft 365 Defender portal
+<a name='access-your-settings-in-the-microsoft-365-defender-portal'></a>
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), and sign in.
+### Access your settings in the Microsoft Defender portal
 
-2. Select **Settings**, and then select a category (such as **Security center**, **Microsoft 365 Defender**, or **Endpoints**).
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), and sign in.
+
+2. Select **Settings**, and then select a category (such as **Security center**, **Microsoft Defender XDR**, or **Endpoints**).
 
 3. In the list of settings, select an item to view or edit.
+

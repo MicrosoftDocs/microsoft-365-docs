@@ -5,8 +5,8 @@ keywords: Attack surface reduction rules deployment, ASR deployment, enable asr 
 search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
@@ -41,7 +41,7 @@ Implementing attack surface reduction rules move the first test ring into an ena
 ## Step 1: Transition attack surface reduction rules from Audit to Block
 
 1. After all exclusions are determined while in audit mode, start setting some attack surface reduction rules to "block" mode, starting with the rule that has the fewest triggered events. See [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
-2. Review the reporting page in the Microsoft 365 Defender portal; see [Threat protection report in Microsoft Defender for Endpoint](threat-protection-reports.md). Also review feedback from your champions.
+2. Review the reporting page in the Microsoft Defender portal; see [Threat protection report in Microsoft Defender for Endpoint](threat-protection-reports.md). Also review feedback from your champions.
 3. Refine exclusions or create new exclusions as determined necessary.
 4. Switch problematic rules back to Audit.
 
@@ -62,11 +62,11 @@ When you're confident that you've correctly configured the attack surface reduct
 The deployment process, steps 1 – 3,  is essentially the same for each subsequent ring:
 
 1. Test rules in Audit
-2. Review attack surface reduction-triggered audit events in the Microsoft 365 Defender portal
+2. Review attack surface reduction-triggered audit events in the Microsoft Defender portal
 3. Create exclusions
 4. Review: refine, add, or remove exclusions as necessary
 5. Set rules to "block"
-6. Review the reporting page in the Microsoft 365 Defender portal.
+6. Review the reporting page in the Microsoft Defender portal.
 7. Create exclusions.
 8. Disable problematic rules or switch them back to Audit.
 

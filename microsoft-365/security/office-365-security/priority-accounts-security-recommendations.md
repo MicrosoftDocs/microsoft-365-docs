@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 ms.date: 7/31/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Security recommendations for priority accounts in Microsoft 365
@@ -95,16 +95,16 @@ After you secure and tag your priority users, you can use the available reports,
 
 |Feature|Description|
 |---|---|
-|Alerts|The user tags of affected users are visible and available as filters on the **Alerts** page in the Microsoft 365 Defender portal. For more information, see [Alert policies in the Microsoft 365 Defender portal](alert-policies-defender-portal.md).|
-|Incidents|The user tags for all correlated alerts are visible on the **Incidents** page in the Microsoft 365 Defender portal. For more information, see [Manage incidents and alerts](mdo-sec-ops-manage-incidents-and-alerts.md).|
-|Custom alert policies|You can create alert policies based on user tags in the Microsoft 365 Defender portal. For more information, see [Alert policies in the Microsoft 365 Defender portal](alert-policies-defender-portal.md).|
+|Alerts|The user tags of affected users are visible and available as filters on the **Alerts** page in the Microsoft Defender portal. For more information, see [Alert policies in the Microsoft Defender portal](alert-policies-defender-portal.md).|
+|Incidents|The user tags for all correlated alerts are visible on the **Incidents** page in the Microsoft Defender portal. For more information, see [Manage incidents and alerts](mdo-sec-ops-manage-incidents-and-alerts.md).|
+|Custom alert policies|You can create alert policies based on user tags in the Microsoft Defender portal. For more information, see [Alert policies in the Microsoft Defender portal](alert-policies-defender-portal.md).|
 |Explorer <p> Real-time detections|In **Explorer** (Defender for Office 365 Plan 2) or **Real-time detections** (Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Explorer](threat-explorer-about.md#tags-in-threat-explorer).|
 |Email entity page|You can filter email based on applied user tags in Microsoft 365 E5 and in Defender for Office 365 Plan 1 and Plan 2. For more information, see [Email entity page](mdo-email-entity-page.md).|
 |Campaign Views|User tags are one of many filterable properties in Campaign Views in Microsoft Defender for Office 365 Plan 2. For more information, see [Campaign Views](campaigns.md).|
 |Threat protection status report|In virtually all of the views and detail tables in the **Threat protection status report**, you can filter the results by **priority accounts**. For more information, see [Threat protection status report](reports-email-security.md#threat-protection-status-report).|
 |Top senders and recipients report|You can add this user tag to the top 20 message senders in your organization. For more information, see [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report).|
 |Compromised user report|User accounts that are marked as **Suspicious** or **Restricted** in Microsoft 365 organizations with Exchange Online mailboxes shows up in this report. For more information, see [Compromised user report](reports-email-security.md#compromised-users-report).|
-|Admin submissions and user reported messages|Use the Submissions page in the Microsoft 365 Defender portal to submit email messages, URLs, and attachments to Microsoft for analysis. For more information, see [Admin submissions and user reported messages](submissions-admin.md).|
+|Admin submissions and user reported messages|Use the Submissions page in the Microsoft Defender portal to submit email messages, URLs, and attachments to Microsoft for analysis. For more information, see [Admin submissions and user reported messages](submissions-admin.md).|
 |Quarantine|Quarantine is available to hold potentially dangerous or unwanted messages in Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations for **Priority accounts**. For more information, see [Quarantine email messages](quarantine-about.md).|
 |Attack simulation|To test your security policies and practices, run a benign cyberattack simulation for your target users. For more information, see [Attack simulation](attack-simulation-training-simulations.md#target-users).|
 |Email issues for priority accounts report|The **Email issues for priority accounts** report in the Exchange admin center (EAC) contains information about undelivered and delayed messages for **priority accounts**. For more information, see [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|

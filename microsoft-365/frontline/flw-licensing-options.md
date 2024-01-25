@@ -2,7 +2,7 @@
 title: Understand frontline worker user types and licensing
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: aaglick
 ms.topic: conceptual
 audience: admin

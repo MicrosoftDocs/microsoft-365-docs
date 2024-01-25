@@ -84,8 +84,6 @@
             href: collaborate-guests-cross-cloud.md
           - name: Onboard trusted vendors
             href: trusted-vendor-onboarding.md
-          - name: Create a B2B extranet
-            href: b2b-extranet.md
           - name: Trust conditional access from other organizations
             href: trust-conditional-access-from-other-organizations.md
         - name: Limit sharing
@@ -419,7 +417,7 @@
     href: ../security/top-security-tasks-for-remote-work.md
   - name: Identity and device access configurations
     href: ../security/office-365-security/zero-trust-identity-device-access-policies-overview.md
-  - name: Evaluate and pilot Microsoft 365 Defender
+  - name: Evaluate and pilot Microsoft Defender XDR
     href: ../security/defender/eval-overview.md
   - name: Respond to your first incident
     href: ../security/defender/first-incident-overview.md
@@ -433,17 +431,6 @@
     href: ../security/office-365-security/priority-accounts-security-recommendations.md
   - name: Remove a former employee and secure data
     href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-
-- name: Contoso case studies
-  items:
-  - name: Microsoft 365 solutions for the Contoso Corporation
-    href: contoso-case-study-solutions.md
-  - name: COVID-19 response and support for hybrid work
-    href: contoso-remote-onsite-work.md
-  - name: Teams voice migration
-    href: /MicrosoftTeams/voice-case-study-overview
-  - name: Contoso compliance case study
-    href: ../compliance/communication-compliance-case-study.md
 
 - name: Industry-specific guidance
   items: 

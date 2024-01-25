@@ -23,7 +23,7 @@ ms.date: 6/14/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Create safe sender lists in EOP
@@ -43,7 +43,9 @@ The available safe sender lists are described in the following list in order fro
 The rest of this article contains specifics about each method.
 
 > [!IMPORTANT]
-> Messages that are identified as malware or high confidence phishing are always quarantined, regardless of the safe sender list option that you use. For more information, see [Secure by default in Office 365](secure-by-default.md).
+> Messages that are identified as malware<sup>\*</sup> or high confidence phishing are always quarantined, regardless of the safe sender list option that you use. For more information, see [Secure by default in Office 365](secure-by-default.md).
+>
+> <sup>\*</sup> Malware filtering is skipped on SecOps mailboxes that are identified in the advanced delivery policy. For more information, see [Configure the advanced delivery policy for third-party phishing simulations and email delivery to SecOps mailboxes](advanced-delivery-policy-configure.md).
 >
 > Be careful to closely monitor _any_ exceptions that you make to spam filtering using safe sender lists.
 >

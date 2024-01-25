@@ -14,14 +14,15 @@ search.appverid:
 ms.collection: 
   - zerotrust-solution
   - tier1
+  - essentials-get-started
 ms.custom:
 description: Learn how to get started with the initial deployment and configuration of Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/7/2023
+ms.date: 01/19/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Get started with Microsoft Defender for Office 365
@@ -48,9 +49,9 @@ To configure EOP and Defender for Office 365 features, you need permissions. The
 |Role or role group|Learn more|
 |---|---|
 |Global Administrator in Azure AD|[About Microsoft 365 admin roles](/microsoft-365/admin/add-users/about-admin-roles)|
-|Organization Management in Email & collaboration role groups|[Role groups in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance)|
+|Organization Management in Email & collaboration role groups|[Role groups in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview)|
 |Security Administrator in Azure AD|[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#security-administrator)
-|Security Administrator in Email & collaboration role groups|[Role groups in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance)|
+|Security Administrator in Email & collaboration role groups|[Role groups in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview)|
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
 ## Step 1: Configure email authentication for your Microsoft 365 domains
@@ -229,7 +230,7 @@ When it comes to assigning permissions for tasks in EOP and Defender for Office 
 
 - [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): These permissions apply to all workloads in Microsoft 365 (Exchange Online, SharePoint Online, Microsoft Teams, etc.).
 - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Most tasks in EOP and Defender for Office 365 are available using Exchange Online permissions. Assigning permissions only in Exchange Online prevents administrative access in other Microsoft 365 workloads.
-- [Email & collaboration permissions in the Microsoft 365 Defender portal](scc-permissions.md): Administration of some security features in EOP and Defender for Office 365 is available with Email & collaboration permissions. For example:
+- [Email & collaboration permissions in the Microsoft Defender portal](scc-permissions.md): Administration of some security features in EOP and Defender for Office 365 is available with Email & collaboration permissions. For example:
   - [Configuration analyzer](configuration-analyzer-for-security-policies.md)
   - [Admin quarantine management](quarantine-admin-manage-messages-files.md) and [quarantine policies](quarantine-policies.md)
   - [Admin submissions and review of user reported messages](submissions-admin-review-user-reported-messages.md)
@@ -237,7 +238,7 @@ When it comes to assigning permissions for tasks in EOP and Defender for Office 
 
 **For simplicity, we recommend using the [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator) role in Azure AD for others who need to configure settings in EOP and Defender for Office 365.**
 
-For instructions, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](/microsoft-365/security/defender/m365d-permissions).
+For instructions, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft Defender XDR with Azure Active Directory global roles](/microsoft-365/security/defender/m365d-permissions).
 
 ## Step 4: Priority accounts and user tags
 

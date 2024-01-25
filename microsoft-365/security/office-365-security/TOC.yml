@@ -27,7 +27,7 @@
        href: zero-trust-with-microsoft-365-defender-office-365.md
      - name: Mail flow in EOP
        href: mail-flow-about.md
-     - name: Microsoft 365 Defender portal overview
+     - name: Microsoft Defender portal overview
        href: ../defender/microsoft-365-defender-portal.md
 
    - name: Evaluate
@@ -67,9 +67,9 @@
        items:
        - name: Defender for Office 365 permissions
          href: mdo-portal-permissions.md
-       - name: Permissions - Defender for Office 365 and Purview compliance
+       - name: Permissions - Defender for Office 365 and Microsoft Purview
          href: scc-permissions.md
-       - name: Microsoft 365 Defender RBAC
+       - name: Microsoft Defender XDR RBAC
          href: /microsoft-365/security/defender/manage-rbac
      - name: Step 4 - Apply priority account tags and user tags
        items:
@@ -354,7 +354,7 @@
 
    - name: Investigate and Respond
      items:
-     - name: Manage incidents and alerts in Microsoft 365 Defender
+     - name: Manage incidents and alerts in Microsoft Defender XDR
        href: mdo-sec-ops-manage-incidents-and-alerts.md
      - name: How threat investigation and response works
        href: office-365-ti.md
@@ -451,6 +451,8 @@
            href: air-report-false-positives-negatives.md
          - name: View details and results of an automated investigation
            href: air-view-investigation-results.md
+         - name: Automatic user notifications for user reported phishing results
+           href: air-user-automatic-feedback-response.md
          - name: Remediation in AIR
            items:
             - name: Remediation actions
@@ -489,9 +491,9 @@
      - name: Privileged identity management in Defender for Office 365
        href: pim-in-mdo-configure.md
 
-   - name: Microsoft 365 Defender docs
+   - name: Microsoft Defender XDR docs
      items:
-       - name: Microsoft 365 Defender
+       - name: Microsoft Defender XDR
          href: ../defender/index.yml
        - name: Defender for Endpoint
          href: ../defender-endpoint/index.yml
@@ -534,7 +536,7 @@
           href: step-by-step-guides/track-and-respond-to-emerging-threats-with-campaigns.md
         - name: Set up a digest notification of changes to Microsoft Defender for Office 365 from the message center
           href: step-by-step-guides/stay-informed-with-message-center.md
-        - name: How to prioritize, Manage, Investigate & Respond to Incidents in Microsoft 365 Defender
+        - name: How to prioritize, Manage, Investigate & Respond to Incidents in Microsoft Defender XDR
           href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
         - name: How to run attack simulations for your team
           href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
@@ -544,7 +546,7 @@
           href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
         - name: Protect your c-suite with priority account protection
           href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
-        - name: Search for emails and remediate threats using Threat Explorer in Microsoft 365 Defender
+        - name: Search for emails and remediate threats using Threat Explorer in Microsoft Defender XDR
           href: step-by-step-guides/search-for-emails-and-remediate-threats.md
         - name: How to prioritize and manage Automated Investigations and Response (AIR)
           href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md

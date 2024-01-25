@@ -2,15 +2,15 @@
 title: "Secure managed devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: siosulli
+author: siosulli
+manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.date: 11/02/2023
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - m365-security
@@ -27,11 +27,11 @@ description: "Learn how to secure managed devices from security threats and cybe
 
 :::image type="content" source="media/mission6.png" alt-text="Diagram with Set Up and Secure Managed Devices highlighted.":::
 
-Microsoft 365 Business Premium includes [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) to help protect your organization's devices from ransomware, malware, phishing, and other threats. 
+Microsoft 365 Business Premium includes [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) to help protect your organization's devices from ransomware, malware, phishing, and other threats.
 
 > [!NOTE]
 > This article applies primarily to managed devices. Guidance for protecting unmanaged devices is available here: [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md).
-> 
+>
 > [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 
 Your tasks are to:

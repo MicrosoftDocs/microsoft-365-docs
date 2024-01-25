@@ -7,14 +7,10 @@
     href: flw-choose-scenarios.md
   - name: Scenario posters
     href: flw-scenario-posters.md
-  - name: Try Microsoft 365 for frontline workers
-    href: flw-trial.md
   - name: Set up and configure
     items:
     - name: Overview
       href: flw-deploy-overview.md
-    - name: Managers - get your team started
-      href: get-up-and-running.md
     - name: Start with a pilot deployment
       href: flw-pilot.md
 #    - name: Extend your pilot to a full deployment
@@ -29,6 +25,14 @@
         href: deploy-dynamic-teams-at-scale.md
       - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
+      - name: Deploy your frontline operational hierarchy
+        href: deploy-frontline-operational-hierarchy.md
+    - name: Set up and configure experiences for your frontline
+      items: 
+      - name: Set up targeted communications
+        href: set-up-targeted-communications.md 
+      - name: Deploy Shifts at scale
+        href: deploy-shifts-at-scale.md 
     - name: Manage devices
       items:
       - name: Manage shared and personal devices
@@ -43,8 +47,6 @@
         href: pin-teams-apps-based-on-license.md
       - name: Teams policy packages for frontline managers and workers
         href: /microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-      - name: Secure messaging
-        href: messaging-policies-hc.md
       - name: Message delegation
         href: hc-delegates.md
     - name: Switch from enterprise to frontline worker
@@ -53,14 +55,14 @@
         href: flw-licensing-options.md
       - name: Considerations for switching from E to F
         href: switch-from-enterprise-to-frontline.md
+  - name: Managers - get your team started
+    href: get-up-and-running.md  
   - name: Communications
     items: 
     - name: Frontline team collaboration
       href: flw-team-collaboration.md
     - name: Corporate communications with frontline workers
       href: flw-corp-comms.md
-    - name: Help your employees use collaboration apps and features
-      href: collab-features-apps-toolkit.md
   - name: Wellbeing & engagement
     items: 
     - name: Engage your employees and focus on wellbeing
@@ -77,8 +79,6 @@
       href: schedule-owner-for-shift-management.md
     - name: Shifts data FAQ
       href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-    - name: Help your employees track time and attendance
-      href: shifts-toolkit.md
     - name: Shifts connectors
       items: 
       - name: Overview
@@ -153,6 +153,8 @@
         href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
       - name: Teams policy packages for healthcare
         href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      - name: Messaging policies
+        href: messaging-policies-hc.md    
     - name: Retail
       items:
       - name: Overview
@@ -164,7 +166,7 @@
   - name: Apps for frontline workers
     items:
     - name: About apps in Microsoft Teams
-      href: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      href: /microsoftteams/apps-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Overview of app management in Microsoft Teams
       href: /microsoftteams/manage-apps?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json 
     - name: Manage the Approvals app

@@ -23,7 +23,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Use DKIM to validate outbound email sent from your custom domain
@@ -35,7 +35,7 @@ This article lists the steps to use DomainKeys Identified Mail (DKIM) with Micro
 In this article:
 
 - [How DKIM works better than SPF alone to prevent malicious spoofing](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
-- [Steps to Create, enable and disable DKIM from Microsoft 365 Defender portal](#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
+- [Steps to Create, enable and disable DKIM from Microsoft Defender portal](#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
 - [Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
 - [Steps to manually set up DKIM using PowerShell](#steps-to-manually-set-up-dkim-using-powershell)
 - [Error: No DKIM keys saved for this domain](#error-no-dkim-keys-saved-for-this-domain)
@@ -77,14 +77,16 @@ In this example, if you had only published an SPF TXT record for your domain, th
 > [!TIP]
 > DKIM uses a private key to insert an encrypted signature into the message headers. The signing domain, or outbound domain, is inserted as the value of the **d=** field in the header. The verifying domain, or recipient's domain, then uses the **d=** field to look up the public key from DNS, and authenticate the message. If the message is verified, the DKIM check passes.
 
-## Steps to Create, enable and disable DKIM from Microsoft 365 Defender portal
+<a name='steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal'></a>
 
-All the accepted domains of your tenant will be shown in the Microsoft 365 Defender portal under the DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
+## Steps to Create, enable and disable DKIM from Microsoft Defender portal
+
+All the accepted domains of your tenant will be shown in the Microsoft Defender portal under the DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Once your domain is added, follow the steps as shown below to configure DKIM.
 
 Step 1: On the [DKIM page](https://security.microsoft.com/dkimv2), select the domain you wish to configure.
 
-:::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="The DKIM page in the Microsoft 365 Defender portal with a domain selected" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
+:::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="The DKIM page in the Microsoft Defender portal with a domain selected" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
 
 Step 2: Click **Create DKIM keys**. You will see a pop-up window stating that you need to add CNAME records.
 
@@ -114,7 +116,7 @@ If you see CNAME record doesn't exist error, it might be due to:
 1. Synchronization with DNS server, which might take few seconds to hours, if the problem persists repeat the steps again
 2. Check for any copy paste errors, like additional space or tabs etc.
 
-If you wish to disable DKIM, toggle back to disable mode
+If you wish to disable DKIM, toggle back to disable mode.
 
 ## Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys
 <a name="1024to2048DKIM"> </a>

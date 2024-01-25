@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: prlachhw, pablom
+ms.reviewer: prlachhw, socheng
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -27,7 +27,7 @@ ms.date: 04/06/2023
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
 
-The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases.
+The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases of Microsoft or select third party offers.
 
 You can use the **MSCommerce** PowerShell module to:
 
@@ -93,6 +93,7 @@ The following table lists the available products and their **ProductId**. It als
 
 | Product | ProductId | Is trial without payment method enabled? |
 |-----------------------------|--------------|--------------|
+| Cllipchamp Premium | CFQ7TTC0N8SS | No |
 | Power Apps per user* | CFQ7TTC0LH2H | No |
 | Power Automate per user* | CFQ7TTC0LH3L | No |
 | Power Automate RPA* | CFQ7TTC0LSGZ  | No |
@@ -100,6 +101,7 @@ The following table lists the available products and their **ProductId**. It als
 | Power BI Pro* | CFQ7TTC0H9MP | No |
 | Project Plan 1* | CFQ7TTC0HDB1 | Yes |
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
+| Python in Excel | CFQ7TTC0S3X1 | Yes |
 | Teams Exploratory | CFQ7TTC0J1FV | Yes |
 | Teams Premium Introductory Pricing | CFQ7TTC0RM8K | Yes |
 | Visio Plan 1* | CFQ7TTC0HD33 | Yes |
@@ -116,6 +118,27 @@ The following table lists the available products and their **ProductId**. It als
 | Dynamics 365 Marketing Additional Non-Prod Application | CFQ7TTC0LHWM | No |
 
 *These IDs have changed. If you previously blocked products using the old IDs, they're automatically blocked using the new IDs. No other work is required.
+
+## View a list of self-service purchase "third party offer types" and their status
+
+To view a list of all available self-service purchase third party offer types and the status of each, run the following command:
+
+```powershell
+Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase -Scope OfferType
+```
+
+The following table lists the available third-party offer types. These offer types can be enabled or disabled for self-service purchase.
+
+| Offer Type| Id |
+|-----------------------------|--------------|
+| Software as a Service | SaaS |
+| Power BI Visuals | POWERBIVISUALS |
+| Dynamics 365 Dataverse Apps | DYNAMICSCE |
+| Dynamics 365 Business Central | DYNAMICSBC |
+
+
+
+
 
 ## View or set the status for AllowSelfServicePurchase
 
@@ -156,6 +179,26 @@ To allow users to try a specific product without a payment method, run the follo
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "OnlyTrialsWithoutPaymentMethod" 
 ```
 
+To get the policy setting for a specific third party offer type, run the following command:
+
+```powershell
+Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType <ID>
+```
+
+To enable the policy setting for a specific third-party offer type, run the following command:
+
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType <ID> -Value "Enabled"
+```
+
+To disable the policy setting for a specific third-party offer type, run the following command:
+
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType <ID> -Value "Disabled"
+```
+
 ## Example script to disable AllowSelfServicePurchase
 
 The following example walks you through how to import the **MSCommerce** module, sign in with your account, get the **ProductId** for Power Automate per user, and then disable **AllowSelfServicePurchase** for that product.
@@ -169,9 +212,11 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 If there are multiple values for the product, you can run the command individually for each value as shown in the following example:
 
+
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -OfferType SaaS -Value "Disabled"
 ```
 
 ## Troubleshooting

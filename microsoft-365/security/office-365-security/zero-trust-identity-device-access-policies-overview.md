@@ -4,7 +4,7 @@ description: Describes Microsoft recommendations and core concepts for deploying
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
 audience: Admin
 f1.keywords:
@@ -22,7 +22,6 @@ ms.collection:
   - zerotrust-solution
   - highpri
   - tier1
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 10/10/2023
 ---

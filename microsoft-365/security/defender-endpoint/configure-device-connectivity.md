@@ -1,12 +1,12 @@
-﻿---
+---
 title: Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint 
 description: Learn how to use a  streamlined domain or static IP ranges during onboarding when connecting devices to Microsoft Defender for Endpoint         
 author: mjcaparas
 ms.author: macapara 
 manager: dansimp 
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium 
 ms.collection: 
 - m365-security
@@ -19,13 +19,13 @@ ms.date: 09/19/2023
 
 # Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
@@ -72,11 +72,11 @@ For the updated list of required URLs, see [Download the spreadsheet here](https
 | Category   | Consolidated URLs  |
 |------------|---------------|
 | MAPS: cloud-delivered protection   | `*.wdcp.microsoft.com` <br/>`*.wd.microsoft.com`  |
-| Cloud protection &  <br/>security intelligence updates for macOS and Linux  | `unitedstates.x.cp.wd.microsoft.com` <br/>`europe.x.cp.wd.microsoft.com` <br/>`unitedkingdom.x.cp.wd.microsoft.com`<br/> `x.cp.wd.microsoft.com`  <br/>`https://www.microsoft.com/security/encyclopedia/adlpackages.aspx ` |
+| Cloud protection &  <br/>security intelligence updates for macOS and Linux  | `unitedstates.x.cp.wd.microsoft.com` <br/>`europe.x.cp.wd.microsoft.com` <br/>`unitedkingdom.x.cp.wd.microsoft.com`<br/> `x.cp.wd.microsoft.com` <br/>`https://www.microsoft.com/security/encyclopedia/adlpackages.aspx` |
 | Malware Sample Submission Storage   | `ussus1eastprod.blob.core.windows.net` <br/>`ussus2eastprod.blob.core.windows.net` <br/>`ussus3eastprod.blob.core.windows.net` <br/>`ussus4eastprod.blob.core.windows.net` <br/>`wsus1eastprod.blob.core.windows.net` <br/>`wsus2eastprod.blob.core.windows.net` <br/>`ussus1westprod.blob.core.windows.net` <br/>`ussus2westprod.blob.core.windows.net` <br/>`ussus3westprod.blob.core.windows.net` <br/>`ussus4westprod.blob.core.windows.net` <br/>`wsus1westprod.blob.core.windows.net`<br/>`wsus2westprod.blob.core.windows.net` <br/>`usseu1northprod.blob.core.windows.net` <br/>`wseu1northprod.blob.core.windows.net` <br/>`usseu1westprod.blob.core.windows.net` <br/>`wseu1westprod.blob.core.windows.net` <br/>`ussuk1southprod.blob.core.windows.net` <br/>`wsuk1southprod.blob.core.windows.net` <br/>`ussuk1westprod.blob.core.windows.net` <br/>`wsuk1westprod.blob.core.windows.net`  |
 | Defender for Endpoint Auto-IR Sample Storage   | `automatedirstrprdcus.blob.core.windows.net` <br/>`automatedirstrprdeus.blob.core.windows.net` <br/>`automatedirstrprdcus3.blob.core.windows.net` <br/>`automatedirstrprdeus3.blob.core.windows.net` <br/>`automatedirstrprdneu.blob.core.windows.net` <br/>`automatedirstrprdweu.blob.core.windows.net` <br/>`automatedirstrprdneu3.blob.core.windows.net` <br/>`automatedirstrprdweu3.blob.core.windows.net` <br/>`automatedirstrprduks.blob.core.windows.net` <br/>`automatedirstrprdukw.blob.core.windows.net` |
 | Defender for Endpoint Command and Control   | `winatp-gw-cus.microsoft.com` <br/>`winatp-gw-eus.microsoft.com` <br/>`winatp-gw-cus3.microsoft.com` <br/>`winatp-gw-eus3.microsoft.com` <br/>`winatp-gw-neu.microsoft.com` <br/>`winatp-gw-weu.microsoft.com` <br/>`winatp-gw-neu3.microsoft.com` <br/>`winatp-gw-weu3.microsoft.com` <br/>`winatp-gw-uks.microsoft.com` <br/>`winatp-gw-ukw.microsoft.com` |
-| EDR Cyberdata | `events.data.microsoft.com` <br/>`us-v20.events.data.microsoft.com` <br/>`eu-v20.events.data.microsoft.com` <br/>`uk-v20.events.data.microsoft.com` |
+| EDR Cyberdata | `events.data.microsoft.com` <br/>`us-v20.events.data.microsoft.com` <br/> `eu-v20.events.data.microsoft.com` <br/>`uk-v20.events.data.microsoft.com` |
 
 
 ## Before you begin 
@@ -182,12 +182,12 @@ In order to stay up to date on IP ranges, it is recommended to refer to the foll
 The following table lists the current static IP ranges. For latest list, refer to the Azure service tags.
 
 
-| **Geo**  | **IP Ranges**   |
+|Geo|IP Ranges|
 |------|-------|
-| US | `20.15.141.0/24` <br/> `20.242.181.0/24` <br/>`20.10.127.0/24`<br/>`13.83.125.0/24`        |
-| EU | `4.208.13.0/24`  <br/>`20.8.195.0/24`       |
-| UK | `20.26.63.224/28`  <br/>`20.254.173.48/28`     |
-| AU | `68.218.120.64/28`  <br/>`20.211.228.80/28`     |
+|US|`20.15.141.0/24` <br/> `20.242.181.0/24` <br/>`20.10.127.0/24`<br/>`13.83.125.0/24`|
+|EU|`4.208.13.0/24` <br/>`20.8.195.0/24`|
+|UK|`20.26.63.224/28` <br/>`20.254.173.48/28`|
+|AU|`68.218.120.64/28` <br/>`20.211.228.80/28`|
 
 > [!IMPORTANT]
 > In compliance with Defender for Endpoint security and compliance standards, your data will be processed and stored in accordance with your tenant's physical location. Based on client location, traffic may flow through any of these IP regions (which correspond to Azure datacenter regions). For more information, see [Data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy).  
@@ -204,9 +204,9 @@ The following preonboarding checks can be run on both Windows and Xplat MDE Clie
 
 To test streamlined connectivity for devices not yet onboarded to Defender for Endpoint, you can use the Client Analyzer for Windows using the following commands: 
 
-- Run `mdeclientanalyzer.cmd -o <path to cmd file>`  from within MDEClientAnalyzer folder. The command uses parameters from onboarding package to test connectivity.  
+- Run `mdeclientanalyzer.cmd -o <path to cmd file>`  from within MDEClientAnalyzer folder. The command uses parameters from onboarding package to test connectivity.
 
-- Run `mdeclientanalyzer.cmd -g <GW_US, GW_UK, GW_EU>` , where parameter  is of GW_US, GW_EU, GW_UK. GW refers to the streamlined option. Run with applicable tenant geo.
+- Run `mdeclientanalyzer.cmd -g <GW_US, GW_UK, GW_EU>` , where parameter is of GW_US, GW_EU, GW_UK. GW refers to the streamlined option. Run with applicable tenant geo.
 
 As a supplementary check, you can also use the client analyzer to test whether a device meets pre-requisites: https://aka.ms/BetaMDEAnalyzer
  
@@ -221,7 +221,7 @@ Once you configure your network to communicate with the full list of services, y
 Before proceeding, confirm devices meet the [prerequisites](#prerequisites) and have updated the sensor and Microsoft Defender Antivirus versions. 
 
 
-To get the new package, in Microsoft 365 Defender, select **Settings > Endpoints > Device management> Onboarding**.
+To get the new package, in Microsoft Defender XDR, select **Settings > Endpoints > Device management> Onboarding**.
 
 
 Select the applicable operating system and choose "Streamlined (preview)" from the Connectivity type dropdown menu.
@@ -241,7 +241,7 @@ For migrating devices already onboarded to Defender for Endpoint, see [Migrating
 :::image type="content" source="images/migrate-devices-streamlined.png" alt-text="Screenshot of onboarding page with streamlined connectivity":::
 
 
-When you're ready to set the default onboarding package to streamlined, you can turn on the following Advanced Feature setting in the Microsoft 365 Defender portal (**Settings > Endpoints > Advanced Features**).
+When you're ready to set the default onboarding package to streamlined, you can turn on the following Advanced Feature setting in the Microsoft Defender portal (**Settings > Endpoints > Advanced Features**).
 
 > [!NOTE]
 > Before moving forward with this option, validate that your environment is ready and all devices meet prerequisites.
@@ -250,7 +250,3 @@ When you're ready to set the default onboarding package to streamlined, you can 
 :::image type="content" source="images/advanced-setting-streamlined-connectivity.png" alt-text="Screenshot of advanced settings page with streamlined connectivity option":::
 
 This setting sets the default onboarding package to 'streamlined' for applicable operating systems.  You can still use the standard onboarding package within the onboarding page but you must specifically select it in the drop-down.  
-
-
-
-

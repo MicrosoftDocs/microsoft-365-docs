@@ -73,6 +73,10 @@ In Microsoft Entra ID, The last password can't be used again when the user chang
 
 <a name='synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365'></a>
 
+## New and federated domains
+
+Password policies you choose is set for each managed domain in your organization. If you add a new domain or convert a domain from federated to managed, you need to re-enable the organization password policy to update all domains again, otherwise the new or converted domain keeps the default policy.
+
 ## Synchronize user passwords hashes from an on-premises Active Directory to Microsoft Entra ID (Microsoft 365)
 
 This article is for setting the expiration policy for cloud-only users (Microsoft Entra ID). It doesn't apply to hybrid identity users who use password hash sync, pass-through authentication, or on-premises federation like ADFS.

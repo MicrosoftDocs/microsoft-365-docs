@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: shcallaw, kywirpel
+ms.reviewer: shcallaw
 ms.date: 08/11/2023
 audience: Admin
 ms.topic: article
@@ -41,7 +41,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## Access a tenant deployment plan
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 
@@ -66,7 +66,7 @@ The **Deployment Plan** tab also supports the following actions:
 
 - **Search:** Enter keywords to quickly locate a specific task in the list.
 
-When a tenant’s onboarding status becomes **Active** or when you access a tenant within Lighthouse, Lighthouse queries the tenant for existing configurations. The deployment status is assigned to each task based on the status of each setting included in the subtask and, where applicable, for each user to which the subtask is assigned.
+When a tenant's onboarding status becomes **Active** or when you access a tenant within Lighthouse, Lighthouse queries the tenant for existing configurations. The deployment status is assigned to each task based on the status of each setting included in the subtask and, where applicable, for each user to which the subtask is assigned.
 
 Deployment statuses are automatically determined by Lighthouse when detection is possible, and by user input when detection isn't possible.
 

@@ -4,7 +4,7 @@ description: Learn how to use Viva Connections, SharePoint, Microsoft Teams, and
 ms.topic: conceptual
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 f1.keywords:
 - NOCSH
@@ -114,12 +114,11 @@ Viva Engage is an internal social network that gives members of your organizatio
 
 ### Host live events
 
-Members of your leadership or management team can host live events on Viva Engage where employees can engage and ask questions in real time over chat. Your communications and management teams can use live events to share announcements, host morale events, and more.
+Members of your leadership or management team can host live events in Viva Engage where employees can engage and ask questions in real time over chat. Your communications and management teams can use live events to share announcements, host morale events, and more.
 
-> [!NOTE]
-> Only users with an E3 or E5 license can host live events, but users with F licenses can join them. [Learn more about who can host and join live events in Viva Engage](/viva/engage/manage-viva-engage-groups/viva-engage-live-events).
+[Learn more about how to organize a Microsoft Teams powered live event in Viva Engage](/viva/engage/organize-live-event).
 
-[Learn more about Viva Engage](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c).
+[Learn more about Viva Engage](/viva/engage/overview).
 
 ## Boost morale with Praise
 

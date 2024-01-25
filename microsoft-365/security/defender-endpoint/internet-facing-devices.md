@@ -1,7 +1,7 @@
 ---
 title: Identify internet-facing devices in Microsoft Defender for Endpoint
 description: Identify internet-facing devices in the device inventory list
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -11,7 +11,6 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 07/10/2023
 ---
@@ -22,21 +21,21 @@ ms.date: 07/10/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
 As threat actors continuously scan the web to detect exposed devices they can exploit to gain a foothold in internal corporate networks, mapping your organization's external attack surface is a key part of your security posture management. Devices that can be connected to or are approachable from the outside pose a threat to your organization.
 
-Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet-facing devices in the [Microsoft 365 Defender portal](https://security.microsoft.com/). This critical information provides increased visibility into an organization's external attack surface and insights into asset exploitability.
+Microsoft Defender for Endpoint automatically identifies and flags onboarded, exposed, internet-facing devices in the [Microsoft Defender portal](https://security.microsoft.com/). This critical information provides increased visibility into an organization's external attack surface and insights into asset exploitability.
 
 > [!NOTE]
 > Currently, only Windows devices onboarded to Microsoft Defender for Endpoint can be identified as internet-facing. Support for other platforms will be available in upcoming releases.
 
 ## Devices flagged as internet-facing
 
-Devices that are successfully connected through TCP or identified as host reachable through UDP will be flagged as internet-facing in the [Microsoft 365 Defender portal](https://security.microsoft.com). Defender for Endpoint uses different data sources to identify the devices to flag:
+Devices that are successfully connected through TCP or identified as host reachable through UDP will be flagged as internet-facing in the [Microsoft Defender portal](https://security.microsoft.com). Defender for Endpoint uses different data sources to identify the devices to flag:
 
 - External scans are used to identify which devices are approachable from the outside.
 - Device network connections, captured as part of Defender for Endpoint signals, help to identify external incoming connections that reach internal devices.
@@ -47,9 +46,9 @@ Understanding your firewall policy, and your devices that are intentionally inte
 
 ## View internet-facing devices
 
-For each onboarded device identified as internet-facing, the internet facing tag appears in the **Tags** column in the device inventory in the Microsoft 365 Defender portal. To view internet-facing devices:
+For each onboarded device identified as internet-facing, the internet facing tag appears in the **Tags** column in the device inventory in the Microsoft Defender portal. To view internet-facing devices:
 
-1. Go to **Assets** \> **Device** in the [Microsoft 365 Defender portal](https://security.microsoft.com/machines/).
+1. Go to **Assets** \> **Device** in the [Microsoft Defender portal](https://security.microsoft.com/machines/).
 
    :::image type="content" source="../../media/defender-endpoint/internet-facing-tag.png" alt-text="Screenshot of the internet-facing tag" lightbox="../../media/defender-endpoint/internet-facing-tag.png":::
 
@@ -65,7 +64,7 @@ You can use filters to focus in on internet-facing devices and investigate the r
    :::image type="content" source="../../media/defender-endpoint/internet-facing-filter.png" alt-text="Screenshot of the internet-facing filter" lightbox="../../media/defender-endpoint/internet-facing-filter.png":::
 
 > [!NOTE]
-> If no new events for a device occur for 48 hours, the Internet-facing tag is removed and it will no longer be visible in the Microsoft 365 Defender portal.
+> If no new events for a device occur for 48 hours, the Internet-facing tag is removed and it will no longer be visible in the Microsoft Defender portal.
 
 ## Investigate your internet-facing devices
 
@@ -164,4 +163,3 @@ You can report an inaccuracy for a device with incorrect internet-facing informa
 - [Device inventory](machines-view-overview.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-

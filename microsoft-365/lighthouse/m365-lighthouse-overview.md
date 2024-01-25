@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: crimora
+ms.reviewer: chboyd
 ms.date: 07/14/2023
 audience: Admin
 ms.topic: article
@@ -18,7 +18,8 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse 
-- intro-overview                        
+- intro-overview
+- essentials-overview                        
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs), learn how Microsoft 365 Lighthouse can help you secure and manage customer tenants in one location."
 ---
@@ -56,7 +57,7 @@ Lighthouse helps MSPs grow secure and manage Microsoft 365 services and connecte
 - Simplifying common tasks like resetting a password.
 - Configuring multifactor authentication and self-service password reset (SSPR), including tools to help drive adoption by users.
 - Understanding and protecting against risky sign-ins.
-- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft 365 Defender and actions to take to resolve issues and keep devices up to date.
+- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft Defender XDR and actions to take to resolve issues and keep devices up to date.
 - Providing insights into Microsoft 365 service incidents and advisories that impact the customer tenants they manage.
 
 ## Watch: Demonstration of Microsoft 365 Lighthouse

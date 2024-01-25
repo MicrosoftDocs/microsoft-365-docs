@@ -15,7 +15,7 @@ search.appverid: MET150
 description: Threat remediation
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/19/2023
+ms.date: 1/16/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -26,14 +26,13 @@ appliesto:
 
 Remediation means to take a prescribed action against a threat. Malicious email sent to your organization can be cleaned up either by the system, through zero-hour auto purge (ZAP), or by security teams through remediation actions like *move to inbox*, *move to junk*, *move to deleted items*, *soft delete*, or *hard delete*. Microsoft Defender for Office 365 Plan 2/E5 enables security teams to remediate threats in email and collaboration functionality through manual and automated investigation.
 
-> [!NOTE]
-> To remediate malicious email, security teams need the *Search and Purge* role assigned to them. Role assignment is done through [permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
-
 ## What you need to know before you begin
 
-Admins can take required action on emails, but to get those actions approved, they must have the *Search and Purge* role assigned to them in the **Email & collaboration** permissions in the Microsoft 365 Defender portal. Without the *Search and purge"*role added to one of the role-groups, they won't be able to execute the action.
+- You need to be assigned permissions before you can do the procedures in this article. Admins can take the required action on email messages, but the **Search and Purge** role is required to get those actions approved. To assign the **Search and Purge** role, you have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Security data/Email advanced actions (manage)**.
+  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** or **Data Investigator** role groups. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) and add the **Search and Purge** role to it.
 
-Because email actions create automated investigations in the backend, you need to enable *Automated Investigation*. Go to **Settings** \> **Endpoints** \> **Advanced features** and turn on **Automated Investigation**.
+- Verify **Automated Investigation** is turned on at <https://security.microsoft.com/securitysettings/endpoints/integration>.
 
 ## Manual and automated remediation
 
@@ -93,14 +92,14 @@ Open any remediation item to view details about it, including its remediation na
     - On-premises/external
     - Failed/dropped
     - Unknown
-   
+
   - **Types of Move and Delete actions supported**:
     - **Move to junk folder**: Moves messages to the user's Junk Email folder.
     - **Move to inbox**: Moves messages to the users Inbox folder.
     - **Move to deleted items**: Moves messages to the user's Deleted Items folder.
     - **Soft delete**: Moves messages to a deleted folder in the cloud.
     - **Hard delete**: Permanently deletes the messages.
- 
+
   Suspicious messages are categorized as either remediable or nonremediable. In most cases, remediable and nonremediable messages combine equals total messages submitted. But in rare cases this may not be true. This can happen because of system delays, timeouts, or expired messages. Messages expire based on the Explorer retention period for your organization.
 
   Unless you're remediating old messages after your organization's Explorer retention period, it's advisable to retry remediating items if you see number inconsistencies. For system delays, remediation updates are typically refreshed within a few hours.

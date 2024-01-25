@@ -1,8 +1,7 @@
 ---
 title: Microsoft Secure Score
-description: Describes Microsoft Secure Score in the Microsoft 365 Defender portal, how to improve your security posture, and what security admins can expect.
-ms.service: microsoft-365-security
-ms.subservice: m365d
+description: Describes Microsoft Secure Score in the Microsoft Defender portal, how to improve your security posture, and what security admins can expect.
+ms.service: defender-xdr
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
@@ -23,11 +22,11 @@ ms.date: 08/03/2023
 
 # Microsoft Secure Score
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at [Microsoft Secure Score](https://security.microsoft.com/securescore) in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at [Microsoft Secure Score](https://security.microsoft.com/securescore) in the [Microsoft Defender portal](microsoft-365-defender-portal.md).
 
-Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
+Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
 
 Secure Score helps organizations:
 
@@ -40,7 +39,7 @@ Watch this video for a quick overview of Secure score.
 
 Organizations gain access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
 
-:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Microsoft Secure Score homepage in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Microsoft Secure Score homepage in the Microsoft Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 > [!NOTE]
 > Currently, the Microsoft Entra related Microsoft Secure Score recommendations are not available for customer tenants registered in the following Microsoft Entra regions:
@@ -115,22 +114,24 @@ If you turn on security defaults, you'll be awarded full points for the followin
 
 ## Secure Score permissions
 
-### Manage permissions with Microsoft 365 Defender Unified role-based access control(RBAC)
+<a name='manage-permissions-with-microsoft-365-defender-unified-role-based-access-controlrbac'></a>
 
-With [Microsoft 365 Defender Unified role-based access control(RBAC)](manage-rbac.md), you can create custom roles with specific permissions for Secure Score. This allows you to control which users have access to Secure Score data, the products for which they will see Secure Score data (for example, Microsoft Defender for Endpoint) and their permission level to the data.
+### Manage permissions with Microsoft Defender XDR Unified role-based access control(RBAC)
+
+With [Microsoft Defender XDR Unified role-based access control(RBAC)](manage-rbac.md), you can create custom roles with specific permissions for Secure Score. This allows you to control which users have access to Secure Score data, the products for which they will see Secure Score data (for example, Microsoft Defender for Endpoint) and their permission level to the data.
 
 You can also manage user permissions to access Secure Score data from additional data sources, such as the other products supported by Secure Score, for more information, see [Products included in Secure Score](#products-included-in-secure-score). You can view the Secure Score data from the additional data sources either alone or alongside the other data sources.
 
-To start using Microsoft 365 Defender Unified RBAC to manage your Secure Score permissions, see [Microsoft 365 Defender Unified role-based access control(RBAC)](manage-rbac.md).
+To start using Microsoft Defender XDR Unified RBAC to manage your Secure Score permissions, see [Microsoft Defender XDR Unified role-based access control(RBAC)](manage-rbac.md).
 
 > [!NOTE]
-> Currently, the model is only supported in the Microsoft 365 Defender portal. If you want to use GraphAPI (for example, for internal dashboards or Defender for Identity Secure Score) you should continue to use Microsoft Entra roles. Support GraphAPI is planned at a later date.
+> Currently, the model is only supported in the Microsoft Defender portal. If you want to use GraphAPI (for example, for internal dashboards or Defender for Identity Secure Score) you should continue to use Microsoft Entra roles. Support GraphAPI is planned at a later date.
 
 <a name='azure-active-directory-global-roles-permissions'></a>
 
 ### Microsoft Entra global roles permissions
 
-Microsoft Entra global roles (for example, Global Administrator) can still be used to access Secure Score. Users who have the supported Microsoft Entra global roles, but are not assigned to a custom role in Microsoft 365 Defender Unified RBAC, will continue to have access to view (and manage where permitted) Secure Score data as outlined below:
+Microsoft Entra global roles (for example, Global Administrator) can still be used to access Secure Score. Users who have the supported Microsoft Entra global roles, but are not assigned to a custom role in Microsoft Defender XDR Unified RBAC, will continue to have access to view (and manage where permitted) Secure Score data as outlined below:
 
 The following roles have read and write access and can make changes, directly interact with Secure Score, and can assign read-only access to other users:
 
@@ -149,7 +150,7 @@ The following roles have read-only access and aren't able to edit status or note
 - Global reader
 
 > [!NOTE]
-> If you want to follow the principle of least privilege access (where you only give users and groups the permissions, they need to do their job), Microsoft recommends that you remove any existing elevated Microsoft Entra global roles for users and/or security groups assigned a custom role with Secure Score permissions. This will ensure that the custom Microsoft 365 Defender Unified RBAC roles will take effect.
+> If you want to follow the principle of least privilege access (where you only give users and groups the permissions, they need to do their job), Microsoft recommends that you remove any existing elevated Microsoft Entra global roles for users and/or security groups assigned a custom role with Secure Score permissions. This will ensure that the custom Microsoft Defender XDR Unified RBAC roles will take effect.
 
 ## Risk awareness
 
@@ -165,4 +166,4 @@ If you have any issues, let us know by posting in the [Security, Privacy & Compl
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
 - [What's coming](microsoft-secure-score-whats-coming.md)
 - [What's new](microsoft-secure-score-whats-new.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

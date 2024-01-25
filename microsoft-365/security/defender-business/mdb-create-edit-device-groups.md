@@ -2,13 +2,12 @@
 title: Device groups in Microsoft Defender for Business
 description: Security policies are applied to devices through device groups in Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 ms.date: 05/17/2023
@@ -49,7 +48,7 @@ All device groups, including your default device groups and any custom device gr
 
 Currently, in Defender for Business, you can create a new device group while you are in the process of creating or editing a policy, as described in the following procedure: 
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Configuration management** and select **Device configuration**. 
 
@@ -79,7 +78,7 @@ Currently, in Defender for Business, you can create a new device group while you
 
 Currently, in Defender for Business, you can view your existing device groups while you are in the process of creating or editing a policy, as described in the following procedure: 
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Device configuration**. 
 
@@ -112,3 +111,4 @@ Choose one or more of the following tasks:
 - [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
 - [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+

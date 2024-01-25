@@ -3,7 +3,7 @@ title: "Remove Microsoft 365 licenses from user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/23/2020
+ms.date: 12/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -46,7 +47,7 @@ The Organization.Read.All permission scope is required to read the licenses avai
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
-To view the licensing plan information in your organization, see the following topics:
+To view the licensing plan information in your organization, see the following articles:
 
 - [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
 
@@ -76,8 +77,8 @@ $licensedUsers = Get-MgUser -Filter 'assignedLicenses/$count ne 0' `
 
 foreach($user in $licensedUsers)
 {
-    $licencesToRemove = $user.AssignedLicenses | Select -ExpandProperty SkuId
-    $user = Set-MgUserLicense -UserId $user.UserPrincipalName -RemoveLicenses $licencesToRemove -AddLicenses @{} 
+    $licensesToRemove = $user.AssignedLicenses | Select -ExpandProperty SkuId
+    $user = Set-MgUserLicense -UserId $user.UserPrincipalName -RemoveLicenses $licensesToRemove -AddLicenses @{} 
 }
 ```
 
@@ -137,15 +138,15 @@ if($userList.Count -ne 0) {
 >
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
-   
-To view the licensing plan (**AccountSkuID**) information in your organization, see the following topics:
-    
+
+To view the licensing plan (**AccountSkuID**) information in your organization, see the following articles:
+
 - [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
-    
+
 - [View account license and service details with PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
-    
+
 If you use the **Get-MsolUser** cmdlet without using the _-All_ parameter, only the first 500 accounts are returned.
-    
+
 ### Removing licenses from user accounts
 
 To remove licenses from an existing user account, use the following syntax:
@@ -171,7 +172,7 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 To remove all licenses from a group of existing licensed users, use either of the following methods:
   
 - **Filter the accounts based on an existing account attribute** To do this, use the following syntax:
-    
+
   ```powershell
   $userArray = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
   for ($i=0; $i -lt $userArray.Count; $i++)
@@ -181,7 +182,7 @@ To remove all licenses from a group of existing licensed users, use either of th
   ```
 
   This example removes all licenses from all user accounts in the Sales department in the United States.
-    
+
   ```powershell
   $userArray = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
   for ($i=0; $i -lt $userArray.Count; $i++)
@@ -191,9 +192,9 @@ To remove all licenses from a group of existing licensed users, use either of th
   ```
 
 - **Use a list of specific accounts for a specific license** To do this, perform the following steps:
-    
+
   1. Create and save a text file that contains one account on each line like this:
-    
+
      ```powershell
      akol@contoso.com
      tjohnston@contoso.com
@@ -201,7 +202,7 @@ To remove all licenses from a group of existing licensed users, use either of th
      ```
 
   2. Use the following syntax:
-    
+
      ```powershell
      $x=Get-Content "<FileNameAndPath>"
      for ($i=0; $i -lt $x.Count; $i++)
@@ -211,7 +212,7 @@ To remove all licenses from a group of existing licensed users, use either of th
      ```
 
      This example removes the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) license from the user accounts defined in the text file C:\My Documents\Accounts.txt.
-    
+
      ```powershell
      $x=Get-Content "C:\My Documents\Accounts.txt"
      for ($i=0; $i -lt $x.Count; $i++)

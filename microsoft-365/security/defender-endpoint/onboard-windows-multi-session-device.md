@@ -1,7 +1,7 @@
 ---
 title: Onboard Windows devices in Azure Virtual Desktop
 description: Learn about onboarding Windows devices to Defender for Endpoint in Azure Virtual Desktop
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
@@ -13,9 +13,9 @@ manager: dansimp
 ms.collection: 
 - m365-security
 - tier3
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
-ms.date: 06/27/2023
+ms.date: 01/18/2024
 ---
 
 # Onboard Windows devices in Azure Virtual Desktop
@@ -68,11 +68,13 @@ Follow the instructions for a single entry for each device.
 
 This scenario uses a centrally located script and runs it using a domain-based group policy. You can also place the script in the golden image and run it in the same way.
 
-##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Microsoft 365 Defender portal
+<a name='download-the-windowsdefenderatponboardingpackagezip-file-from-the-microsoft-365-defender-portal'></a>
+
+##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Microsoft Defender portal
 
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)
 
-    1. In the Microsoft 365 Defender portal navigation pane, select **Settings** \> **Endpoints** \> **Onboarding** (under **Device Management**).
+    1. In the Microsoft Defender portal navigation pane, select **Settings** \> **Endpoints** \> **Onboarding** (under **Device Management**).
     1. Select Windows 10 or Windows 11 as the operating system.
     1. In the **Deployment method** field, select VDI onboarding scripts for non-persistent endpoints.
     1. Click **Download package** and save the .zip file.
@@ -122,35 +124,7 @@ As part of your onboarding, you may want to consider setting a machine tag to di
 
 When building your golden image, you may want to configure initial protection settings as well. For more information, see [Other recommended configuration settings](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
-Also, if you're using FSlogix user profiles, we recommend you exclude the following files from always-on protection:
-
-**Exclude Files:**
-
-`%ProgramFiles%\FSLogix\Apps\frxdrv.sys`
-
-`%ProgramFiles%\FSLogix\Apps\frxdrvvt.sys`
-
-`%ProgramFiles%\FSLogix\Apps\frxccd.sys`
-
-`%TEMP%\*.VHD`
-
-`%TEMP%\*.VHDX`
-
-`%Windir%\TEMP\*.VHD`
-
-`%Windir%\TEMP\*.VHDX`
-
-`\\storageaccount.file.core.windows.net\share\*\*.VHD`
-
-`\\storageaccount.file.core.windows.net\share\*\*.VHDX`
-
-**Exclude Processes:**
-
-`%ProgramFiles%\FSLogix\Apps\frxccd.exe`
-
-`%ProgramFiles%\FSLogix\Apps\frxccds.exe`
-
-`%ProgramFiles%\FSLogix\Apps\frxsvc.exe`
+Also, if you're using FSlogix user profiles, we recommend you follow the guidance described in [FSLogix antivirus exclusions](/fslogix/overview-prerequisites#configure-antivirus-file-and-folder-exclusions). 
 
 #### Licensing requirements
 
@@ -164,4 +138,5 @@ Licensing requirements for Microsoft Defender for Endpoint can be found at: [Lic
 [FSLogix anti-malware exclusions](/fslogix/overview-prerequisites#configure-antivirus-file-and-folder-exclusions)
 
 [Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

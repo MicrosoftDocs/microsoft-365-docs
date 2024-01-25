@@ -2,7 +2,7 @@
 title: Cloud protection and sample submission at Microsoft Defender Antivirus
 description: Learn about cloud-delivered protection and Microsoft Defender Antivirus
 keywords: Microsoft Defender Antivirus, next-generation technologies, antivirus sample submission, next-generation av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -10,8 +10,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
-ms.custom: nextgen
-ms.subservice: mde
+ms.subservice: ngp
 ms.topic: conceptual
 ms.date: 02/24/2022
 ms.collection: 
@@ -138,8 +137,8 @@ There are two more scenarios where Defender for Endpoint might request a file sa
 
 | Scenario | Description |
 |:---|:---|
-|Manual file sample collection in the Microsoft 365 Defender portal | When onboarding devices to Defender for Endpoint, you can configure settings for [endpoint detection and response (EDR)](overview-endpoint-detection-response.md). For example, there's a setting to enable sample collections from the device, which can easily be confused with the sample submission settings described in this article. <br/><br/>The EDR setting controls file sample collection from devices when requested through the Microsoft 365 Defender portal, and is subject to the roles and permissions already established. This setting can allow or block file collection from the endpoint for features such as deep analysis in the Microsoft 365 Defender portal. If this setting isn't configured, the default is to enable sample collection. <br/><br/>Learn about Defender for Endpoint configuration settings, see: [Onboarding tools and methods for Windows 10 devices in Defender for Endpoint](configure-endpoints.md) |
-| Automated investigation and response content analysis | When [automated investigations](automated-investigations.md) are running on devices (when configured to run automatically in response to an alert or manually run), files that are identified as suspicious can be collected from the endpoints for further inspection. If necessary, the file content analysis feature for automated investigations can be disabled in the Microsoft 365 Defender portal. <br/><br/> The file extension names can also be modified to add or remove extensions for other file types that will be automatically submitted during an automated investigation. <br/><br/> To learn more, see [Manage automation file uploads](manage-automation-file-uploads.md). |
+|Manual file sample collection in the Microsoft Defender portal | When onboarding devices to Defender for Endpoint, you can configure settings for [endpoint detection and response (EDR)](overview-endpoint-detection-response.md). For example, there's a setting to enable sample collections from the device, which can easily be confused with the sample submission settings described in this article. <br/><br/>The EDR setting controls file sample collection from devices when requested through the Microsoft Defender portal, and is subject to the roles and permissions already established. This setting can allow or block file collection from the endpoint for features such as deep analysis in the Microsoft Defender portal. If this setting isn't configured, the default is to enable sample collection. <br/><br/>Learn about Defender for Endpoint configuration settings, see: [Onboarding tools and methods for Windows 10 devices in Defender for Endpoint](configure-endpoints.md) |
+| Automated investigation and response content analysis | When [automated investigations](automated-investigations.md) are running on devices (when configured to run automatically in response to an alert or manually run), files that are identified as suspicious can be collected from the endpoints for further inspection. If necessary, the file content analysis feature for automated investigations can be disabled in the Microsoft Defender portal. <br/><br/> The file extension names can also be modified to add or remove extensions for other file types that will be automatically submitted during an automated investigation. <br/><br/> To learn more, see [Manage automation file uploads](manage-automation-file-uploads.md). |
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:

@@ -496,6 +496,8 @@
                   href: introduction-to-performance-tuning-for-sharepoint-online.md
                 - name: Diagnosing performance issues with SharePoint
                   href: diagnosing-performance-issues-with-sharepoint-online.md
+                - name: Use the Page Diagnostics for SharePoint tool
+                  href: page-diagnostics-for-spo.md
             - name: Tune Project Online performance
               href: /ProjectOnline/tune-project-online-performance
             - name: Performance troubleshooting plan

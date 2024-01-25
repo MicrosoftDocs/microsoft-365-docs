@@ -1,9 +1,8 @@
 ---
-title: Investigate alerts in Microsoft 365 Defender
+title: Investigate alerts in Microsoft Defender XDR
 description: Investigate alerts seen across devices, users, and mailboxes.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -23,35 +22,35 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 05/30/2023
+ms.date: 12/18/2023
 ---
 
-# Investigate alerts in Microsoft 365 Defender
+# Investigate alerts in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!NOTE]
-> This article describes security alerts in Microsoft 365 Defender. However, you can use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365. For more information, see [Create activity alerts - Microsoft Purview | Microsoft Docs](../../compliance/create-activity-alerts.md).
+> This article describes security alerts in Microsoft Defender XDR. However, you can use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365. For more information, see [Create activity alerts - Microsoft Purview | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. Alerts are typically part of a broader attack and provide clues about an incident.
 
-In Microsoft 365 Defender, related alerts are aggregated together to form [incidents](incidents-overview.md). Incidents will always provide the broader context of an attack, however, analyzing alerts can be valuable when deeper analysis is required.
+In Microsoft Defender XDR, related alerts are aggregated together to form [incidents](incidents-overview.md). Incidents will always provide the broader context of an attack, however, analyzing alerts can be valuable when deeper analysis is required.
 
-The **Alerts queue** shows the current set of alerts. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139).
+The **Alerts queue** shows the current set of alerts. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="The Alerts section in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="The Alerts section in the Microsoft Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png":::
 
-Alerts from different Microsoft security solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft 365 Defender appear here.
+Alerts from different Microsoft security solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft Defender XDR appear here.
 
-By default, the alerts queue in the Microsoft 365 Defender portal displays the new and in progress alerts from the last 30 days. The most recent alert is at the top of the list so you can see it first.
+By default, the alerts queue in the Microsoft Defender portal displays the new and in progress alerts from the last 30 days. The most recent alert is at the top of the list so you can see it first.
 
 From the default alerts queue, you can select **Filter** to see a **Filter** pane, from which you can specify a subset of the alerts. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="The Filters section in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="The Filters section in the Microsoft Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
 
 You can filter alerts according to these criteria:
 
@@ -82,7 +81,7 @@ You'll need to have any of the following roles to access Microsoft Defender for 
 
 To see the main alert page, select the name of the alert. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Screenshot showing the details of an alert in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Screenshot showing the details of an alert in the Microsoft Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
 
 You can also select the **Open the main alert page** action from the **Manage alert** pane.
 
@@ -95,7 +94,7 @@ Throughout an alert page, you can select the ellipses (**...**) beside any entit
 
 ### Alert sources
 
-Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, the app governance add-on for Microsoft Defender for Cloud Apps, Microsoft Entra ID Protection, and Microsoft Data Loss Prevention. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
+Microsoft Defender XDR alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, the app governance add-on for Microsoft Defender for Cloud Apps, Microsoft Entra ID Protection, and Microsoft Data Loss Prevention. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
 
 > [!NOTE]
 >
@@ -104,7 +103,7 @@ Microsoft 365 Defender alerts may come from solutions like Microsoft Defender fo
 
 | Alert source | Prepended character |
 | :---|:--- |
-| Microsoft 365 Defender | `ra` <br> `ta` for ThreatExperts <br> `ea` for DetectionSource = DetectionSource.CustomDetection |
+| Microsoft Defender XDR | `ra` <br> `ta` for ThreatExperts <br> `ea` for DetectionSource = DetectionSource.CustomDetection |
 | Microsoft Defender for Office 365 | `fa{GUID}` <br> Example: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Endpoint | `da` or `ed` for custom detection alerts <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Example: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
@@ -117,15 +116,15 @@ Microsoft 365 Defender alerts may come from solutions like Microsoft Defender fo
 
 ### Configure Microsoft Entra IP alert service
 
-1. Go to the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)), select **Settings** > **Microsoft 365 Defender**.
+1. Go to the Microsoft Defender portal ([security.microsoft.com](https://security.microsoft.com)), select **Settings** > **Microsoft Defender XDR**.
 
 2. From the list, select **Alert service settings**, and then configure your **Microsoft Entra ID Protection** alert service.
 
-   :::image type="content" source="../../media/investigate-alerts/alerts-ss-aadip-alert.png" alt-text="Screenshot of Microsoft Entra ID Protection alerts setting in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-aadip-alert.png":::
+   :::image type="content" source="../../media/investigate-alerts/alerts-ss-entra-alert.png" alt-text="Screenshot of Microsoft Entra ID Protection alerts setting in the Microsoft Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-entra-alert.png":::
 
 By default, only the most relevant alerts for the security operation center are enabled. If you want to get all Microsoft Entra IP risk detections, you can change it in the **Alert service settings** section.
 
-You can also access **Alert service settings** directly from the **Incidents** page in the Microsoft 365 Defender portal.
+You can also access **Alert service settings** directly from the **Incidents** page in the Microsoft Defender portal.
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -134,7 +133,7 @@ You can also access **Alert service settings** directly from the **Incidents** p
 
 The **Actions taken** section has a list of impacted assets, such as mailboxes, devices, and users affected by this alert.
 
-You can also select **View in action center** to view the **History** tab of the **Action center** in the Microsoft 365 Defender portal.
+You can also select **View in action center** to view the **History** tab of the **Action center** in the Microsoft Defender portal.
 
 ### Trace an alert's role in the alert story
 
@@ -153,7 +152,7 @@ Once you've selected an entity of interest, the details page changes to display 
 
 To manage an alert, select **Manage alert** in the summary details section of the alert page. For a single alert, here's an example of the **Manage alert** pane.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Screenshot of the Manage alert section in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Screenshot of the Manage alert section in the Microsoft Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
 The **Manage alert** pane allows you to view or specify:
 
@@ -163,7 +162,7 @@ The **Manage alert** pane allows you to view or specify:
   - **Not Set** (default).
   - **True positive** with a type of threat. Use this classification for alerts that accurately indicate a real threat. Specifying this threat type alerts your security team see threat patterns and act to defend your organization from them.
   - **Informational, expected activity** with a type of activity. Use this option for alerts that are technically accurate, but represent normal behavior or simulated threat activity. You generally want to ignore these alerts but expect them for similar activities in the future where the activities are triggered by actual attackers or malware. Use the options in this category to classify alerts for security tests, red team activity, and expected unusual behavior from trusted apps and users.
-  - **False positive** for types of alerts that were created even when there's no malicious activity or for a false alarm. Use the options in this category to classify alerts that are mistakenly identified as normal events or activities as malicious or suspicious. Unlike alerts for 'Informational, expected activity', which can also be useful for catching real threats, you generally don't want to see these alerts again. Classifying alerts as false positive helps Microsoft 365 Defender improve its detection quality.
+  - **False positive** for types of alerts that were created even when there's no malicious activity or for a false alarm. Use the options in this category to classify alerts that are mistakenly identified as normal events or activities as malicious or suspicious. Unlike alerts for 'Informational, expected activity', which can also be useful for catching real threats, you generally don't want to see these alerts again. Classifying alerts as false positive helps Microsoft Defender XDR improve its detection quality.
 - A comment on the alert.
 
 > [!NOTE]
@@ -176,13 +175,13 @@ The **Manage alert** pane allows you to view or specify:
 
 To manage a *set of alerts similar to a specific alert*, select **View similar alerts** in the **INSIGHT** box in the summary details section of the alert page.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Screenshot of selecting an alert in the Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Screenshot of selecting an alert in the Microsoft Defender portal":::
 
 From the **Manage alerts** pane, you can then classify all of the related alerts at the same time. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Screenshot of managing related alerts in the Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Screenshot of managing related alerts in the Microsoft Defender portal":::
 
-If similar alerts were already classified in the past, you can save time by using Microsoft 365 Defender recommendations to learn how the other alerts were resolved. From the summary details section, select **Recommendations**.
+If similar alerts were already classified in the past, you can save time by using Microsoft Defender XDR recommendations to learn how the other alerts were resolved. From the summary details section, select **Recommendations**.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Screenshot of an example of selecting recommendations for an alert":::
 
@@ -198,18 +197,18 @@ Alert tuning provides the ability to tune and manage alerts in advance. This str
 
 You can create rule conditions based on 'evidence types' such as files, processes, scheduled tasks, and many other evidence types that trigger the alert. After creating the rule, you can apply the rule on the selected alert or any alert type that meets the rule conditions to tune the alert.
 
-In addition, the feature also covers alerts coming from various Microsoft 365 Defender service sources. The alert tuning feature in public preview is getting alerts from workloads like Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, Microsoft Entra ID Protection (Microsoft Entra IP), and others, if these sources are available on your platform and plan. Previously, the alert tuning capability only captured alerts from the Defender for Endpoint workload.
+In addition, the feature also covers alerts coming from various Microsoft Defender XDR service sources. The alert tuning feature in public preview is getting alerts from workloads like Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, Microsoft Entra ID Protection (Microsoft Entra IP), and others, if these sources are available on your platform and plan. Previously, the alert tuning capability only captured alerts from the Defender for Endpoint workload.
 
 > [!NOTE]
 > We recommend using alert tuning, previously known as **alert suppression**, with caution. In certain situations, a known internal business application or security tests trigger an expected activity and you don't want to see these alerts. So, you can create a rule to tune these alert types.
 
 ### Create rule conditions to tune alerts
 
-There are two ways to tune an alert in Microsoft 365 Defender. To tune an alert from the **Settings** page:
+There are two ways to tune an alert in Microsoft Defender XDR. To tune an alert from the **Settings** page:
 
 1. Go to Settings. On the left pane, go to **Rules** and select **Alert tuning**.
 
-    :::image type="content" source="../../media/investigate-alerts/alert-tuning-settings.png" lightbox="../../media/investigate-alerts/alert-tuning-settings.png" alt-text="Screenshot of Alert tuning option in Microsoft 365 Defender's Settings page.":::
+    :::image type="content" source="../../media/investigate-alerts/alert-tuning-settings.png" lightbox="../../media/investigate-alerts/alert-tuning-settings.png" alt-text="Screenshot of Alert tuning option in Microsoft Defender XDR's Settings page.":::
     
     Select **Add new rule** to tune a new alert. You can also edit an existing rule in this view by selecting a rule from the list.
 
@@ -308,14 +307,14 @@ To tune an alert from the **Alerts** page:
 
 9. The new alert tuning functionality is available by default.
 
-   However, you can switch back to the previous experience in Microsoft 365 Defender portal by navigating to **Settings > Microsoft 365 Defender > Rules > Alert tuning**, then switch off the **New tuning rules creation enabled** toggle.
+   However, you can switch back to the previous experience in Microsoft Defender portal by navigating to **Settings > Microsoft Defender XDR > Rules > Alert tuning**, then switch off the **New tuning rules creation enabled** toggle.
 
    > [!NOTE]
    > Soon, only the new alert tuning experience will be available. You will not be able to go back to the previous experience.
 
 10. **Edit existing rules:**
 
-    You can always add or change rule conditions and scope of new or existing rules in the Microsoft 365 Defender portal, by selecting the relevant rule and clicking **Edit rule**.
+    You can always add or change rule conditions and scope of new or existing rules in the Microsoft Defender portal, by selecting the relevant rule and clicking **Edit rule**.
 
     To edit existing rules, ensure that the **New alert tuning rules creation enabled** toggle is enabled.
 
@@ -323,7 +322,7 @@ To tune an alert from the **Alerts** page:
 
 Once you're done analyzing an alert and it can be resolved, go to the **Manage alert** pane for the alert or similar alerts and mark the status as **Resolved** and then classify it as a **True positive** with a type of threat, an **Informational, expected activity** with a type of activity, or a **False positive**.
 
-Classifying alerts helps Microsoft 365 Defender improve its detection quality.
+Classifying alerts helps Microsoft Defender XDR improve its detection quality.
 
 ## Use Power Automate to triage alerts
 
@@ -362,4 +361,4 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Investigate data loss prevention alerts in Defender](dlp-investigate-alerts-defender.md)
 - [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -2,7 +2,7 @@
 title: Pilot ring deployment using Group Policy and Windows Server Update Services
 description: Microsoft Defender Antivirus is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides information about how to use a ring deployment method to update your Microsoft Defender Antivirus pilot clients using Group Policy and Windows Server Update Services (WSUS).
 keywords: Deploy Microsoft Defender Antivirus updates, pilot ring deployment Microsoft Defender Antivirus, Microsoft Defender Antivirus Group Policy, Microsoft Defender Antivirus Windows Server Update Services (WSUS), Microsoft Defender Antivirus Group Policy Windows Server Update Services (WSUS), threat intelligence, cybersecurity, cloud security,
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,19 +17,19 @@ ms.collection:
 - mde-ngp
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 07/21/2023
 ---
 
 # Microsoft Defender Antivirus pilot ring deployment using Group Policy and Windows Server Update Services
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -43,8 +43,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
->
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
 ### Resources
 
@@ -59,12 +57,12 @@ This section provides information about setting up the pilot (UAT/Test/QA) envir
 :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Screenshot that shows an example ring deployment schedule for Group Policy with WSUS environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
 
 > [!NOTE]
-> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+> Security intelligence update (SIU) is equivalent to signature updates, which is the same as definition updates.
 
 On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
 > [!NOTE]
-> If you have a Citrix enviroment, include at least one Citrix VM (non-persistent) and/or (persistent)
+> If you have a Citrix environment, include at least one Citrix VM (non-persistent) and/or (persistent)
 
 1. Launch the **Windows Server Update Services Configuration Wizard**.
 
@@ -143,16 +141,16 @@ The Windows Server Update Services Configuration Wizard is complete.
 1. In the **Update Services** console, go > **Update Services** > **YR2K19** > **Updates** > **All Updates**.
 1. In **Approval**, select **Any Except Declined**, and the select **Refresh**.
 
-   The **All Updates** view lists “Platform Updates” and “Security Intelligence Updates” (also known as signatures/definitions). For example, KB4052623 platform updates. KB4052623 platform update is shown in the following figure:
+   The **All Updates** view lists "Platform Updates" and "Security Intelligence Updates" (also known as signatures/definitions). For example, KB4052623 platform updates. KB4052623 platform update is shown in the following figure:
 
    :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-view-signature-platform-updates.png" alt-text="Screenshot that shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623 platform updates." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-view-signature-platform-updates.png"::: 
 
 1. Select **KB4052623** version **4.18.2302.7** to see the synchronization status. 
    
    > [!NOTE]
-   > For the “Security Intelligence Updates”, please see [Appendix A](microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md).
-   > For the “Engine Updates”, please see [Appendix B](microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md).
-   > For the “Platform Updates”, please see [Appendix C](microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md).  
+   > For the "Security Intelligence Updates", please see [Appendix A](microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md).
+   > For the "Engine Updates", please see [Appendix B](microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md).
+   > For the "Platform Updates", please see [Appendix C](microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md).  
 
 #### Approve and deploy updates in WSUS
 

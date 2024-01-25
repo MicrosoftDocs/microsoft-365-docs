@@ -4,7 +4,7 @@ description: This article describes the prerequisites you need to meet to use Ze
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
 audience: Admin
 f1.keywords: 
@@ -20,7 +20,6 @@ ms.collection:
   - m365solution-scenario
   - zerotrust-solution
   - tier2
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 07/24/2023
 ---
@@ -56,7 +55,7 @@ The following table details the prerequisite features and their configuration th
 
 ## Recommended client configurations
 
-This section describes the default platform client configurations we recommend to provide the best SSO experience to your users, as well as the technical prerequisites for Conditional Access.
+This section describes the default platform client configurations that we recommend to provide the best SSO experience to your users, as well as the technical prerequisites for Conditional Access.
 
 ### Windows devices
 
@@ -108,7 +107,7 @@ For more information about client support in Microsoft 365, see the following ar
 
 ## Protecting administrator accounts
 
-For Microsoft 365 E3 or E5 or with separate Microsoft Entra ID P1 or P2 licenses, you can require MFA for administrator accounts with a manually-created Conditional Access policy. See [Conditional Access: Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) for the details.
+For Microsoft 365 E3 or E5 or with separate Microsoft Entra ID P1 or P2 licenses, you can require MFA for administrator accounts with a manually created Conditional Access policy. See [Conditional Access: Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) for the details.
 
 For editions of Microsoft 365 or Office 365 that do not support Conditional Access, you can enable [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) to require MFA for all accounts.
 

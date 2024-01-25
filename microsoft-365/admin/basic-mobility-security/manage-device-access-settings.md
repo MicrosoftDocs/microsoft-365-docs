@@ -20,9 +20,10 @@ ms.collection:
 ms.custom:
   - AdminSurgePortfolio
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 search.appverid:
 - MET150
-description: "For devices you can't manage with Basic Mobility and Security, block Exchange ActiveSync app access to email and use Azure AD PowerShell to get details about org devices."
+description: "For devices you can't manage with Basic Mobility and Security, block Exchange ActiveSync app access to email and use Microsoft Graph PowerShell to get details about org devices."
 ---
 
 # Manage device access settings in Basic Mobility and Security
@@ -43,7 +44,7 @@ To learn what devices Basic Mobility and Security supports, see [Capabilities of
 
 ## Get details about Basic Mobility and Security managed devices
 
-Additionally, you can use Azure AD PowerShell to get details about the devices in your organization that you set up for Basic Mobility and Security.
+Additionally, you can use [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) to get details about the devices in your organization that you set up for Basic Mobility and Security.
 
 Here's a breakdown for the device details available to you.
 

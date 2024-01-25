@@ -2,7 +2,7 @@
 title: Configure Microsoft Defender for Endpoint on iOS features
 description: Describes how to deploy Microsoft Defender for Endpoint on iOS features.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, configure, features, ios
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,20 +16,20 @@ ms.collection:
 - tier3
 - mde-ios
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ios
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Configure Microsoft Defender for Endpoint on iOS features
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -77,7 +77,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
     - In Settings page, select Use configuration designer and add **WebProtection** as the key and value type as **String**.
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
-        - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.
+        - Defender will send the heartbeat to the Microsoft Defender portal whenever user opens the app.
         - Click Next and assign this profile to targeted devices/users.
 
 1. **Disable Web Protection(MAM)** Use the following steps to disable **Web Protection** for unenrolled devices.
@@ -88,7 +88,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
     - In Settings page, under the General Configuration Settings, add **WebProtection** as the key and value as **false**.
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
-        - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.
+        - Defender will send the heartbeat to the Microsoft Defender portal whenever user opens the app.
         - Click Next and assign this profile to targeted devices/users.
 
 ## Configure Network Protection
@@ -255,7 +255,7 @@ Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the o
 
 Microsoft Defender for Endpoint has the capability of detecting unmanaged and managed devices that are jailbroken. These jailbreak checks are done periodically. If a device is detected to be jailbroken,
 
-1. A **High**-risk alert will be reported to the Microsoft 365 Defender portal. If device Compliance and Conditional Access is set up based on device risk score, then the device will be blocked from accessing corporate data.
+1. A **High**-risk alert will be reported to the Microsoft Defender portal. If device Compliance and Conditional Access is set up based on device risk score, then the device will be blocked from accessing corporate data.
 1. User data on app will be cleared. When user opens the app after jailbreaking the VPN profile also will be deleted and no web protection will be offered.
 
 ### Configure compliance policy against jailbroken devices
@@ -292,7 +292,7 @@ Defender for Endpoint on iOS enables admins to configure custom indicators on iO
 > [!NOTE]
 > Defender for Endpoint on iOS supports creating custom indicators only for URLs and domains. IP based custom indicators is not supported on iOS.
 >
-> For iOS, no alerts are generated on Microsoft 365 Defender when the URL or domain set in the indicator is accessed.
+> For iOS, no alerts are generated on Microsoft Defender XDR when the URL or domain set in the indicator is accessed.
 
 ## Configure vulnerability assessment of apps
 
@@ -377,7 +377,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
 ## Device Tagging
 
-Defender for Endpoint on iOS enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
+Defender for Endpoint on iOS enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
 
 This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices. Admins can use the following steps to configure the Device tags.
 

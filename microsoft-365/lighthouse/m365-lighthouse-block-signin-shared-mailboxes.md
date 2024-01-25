@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind, katmartin
+ms.reviewer: ragovind
 ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse provides visibility into all the shared mailboxes acros
 
 ## Block sign-in for shared mailbox accounts
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Account management** > **Shared mailboxes**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management** > **Shared mailboxes**.
 
 2. On the **Shared mailboxes** tab, select the Shared mailbox account you want to block and then select **Block sign-in**.
 
@@ -40,7 +40,7 @@ Microsoft 365 Lighthouse provides visibility into all the shared mailboxes acros
 
 ## Notify users that access is blocked (optional)
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Account management** > **Shared mailboxes**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management** > **Shared mailboxes**.
 
 2. On the **Shared mailboxes** tab, select the check box next to the accounts you want to notify.
 
