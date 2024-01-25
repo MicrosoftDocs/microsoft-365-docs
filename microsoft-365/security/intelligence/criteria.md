@@ -166,7 +166,7 @@ Microsoft maintains a worldwide network of analysts and intelligence systems whe
 
 #### Tampering software
 
-Tampering software encompasses a broad spectrum of threats that directly or indirectly lower the overall level of security of devices. Examples of common tampering actions include:
+Tampering software encompasses a broad spectrum of tools and threats that directly or indirectly lower the overall level of security of devices. Examples of common tampering actions include:
 
 * **Disabling or uninstalling security software**: Tools and threats that attempt to evade defense mechanisms by disabling or uninstalling security software, such as antivirus, EDR, or network protection systems. These actions leave the system vulnerable to further attacks. 
  
@@ -189,7 +189,6 @@ Tampering software encompasses a broad spectrum of threats that directly or indi
 * **Unauthorized registry changes**: Modifications to the Windows Registry or system settings that impact the security posture of the device. 
  
 * **Tampering with boot processes**: Efforts to manipulate the boot process, which can result in the loading of malicious code during startup. 
-
 
 ## Potentially unwanted application (PUA)
 
