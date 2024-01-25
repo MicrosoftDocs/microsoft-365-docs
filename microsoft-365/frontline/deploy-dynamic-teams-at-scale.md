@@ -108,7 +108,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-deploy-locations.png" alt-text="Screenshot of the table of locations." lightbox="media/dtas-deploy-locations.png":::
 
-4. Select **Deploy**. This process can take several hours depending on how many teams you're creating. After deployment is completed, you'll see the number updated in the **Frontline teams** tile. On this tile, you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the **Last deployment health** tile.
+4. Select **Deploy**. This process can take several hours depending on how many teams you're creating. After deployment is completed, you'll see the number updated in the **Frontline teams** card. On this tile, you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the **Last deployment health** card.
 
     :::image type="content" source="media/dtas-view-errors.png" alt-text="Screenshot of where you can get the CSV file on the Manage frontline teams page." lightbox="media/dtas-view-errors.png":::
 
@@ -133,7 +133,7 @@ You can manage your teams when changes happen in your organization.
 ### Edit your frontline team settings
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
-2. In the **Deployment settings** column, choose **Deploy teams with dynamic membership** .
+2. In the **Deployment settings** column, choose **Deploy frontline dynamic teams**.
 3. Edit your settings on this page, and then select **Save**. Your settings might take several hours to update. See the following table for the effects of updating your settings.
 
     |Setting |Effect on existing frontline teams |Effect on new frontline teams |
