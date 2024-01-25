@@ -178,6 +178,20 @@ Tampering software encompasses a broad spectrum of threats that directly or indi
 
    - **Safe mode exploitation**: Leveraging the legitimate `Safe Mode` setting to put the device in a state where security solutions may be bypassed, allowing for unauthorized access or malware execution. 
 
+* **Manipulating system components**: Tools and threats that target critical system components, such as kernel drivers or system services, to compromise the overall security and stability of the device. 
+ 
+* **Privilege escalation**: Techniques aimed at elevating user privileges to gain control over the system's resources and potentially manipulate security settings. 
+ 
+	Interfering with Security Updates: Attempts to block or manipulate security updates, leaving the system vulnerable to known vulnerabilities. 
+ 
+	Disrupting Critical Services: Actions that disrupt essential system services or processes, potentially causing system instability and opening the door for additional attacks. 
+ 
+	Unauthorized Registry Changes: Modifications to the Windows Registry or system settings that impact the security posture of the device. 
+ 
+	Tampering with Boot Processes: Efforts to manipulate the boot process, which can result in the loading of malicious code during startup. 
+
+
+
 ## Potentially unwanted application (PUA)
 
 Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This protection helps deliver more productive, performant, and delightful Windows experiences. For instruction on how to enable PUA protection in Chromium-based Microsoft Edge and Microsoft Defender Antivirus, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
