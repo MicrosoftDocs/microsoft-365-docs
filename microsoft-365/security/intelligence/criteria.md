@@ -19,9 +19,9 @@ search.appverid: met150
 
 # How Microsoft identifies malware and potentially unwanted applications
 
-Microsoft aims to provide a delightful and productive Windows experience by working to ensure you're safe and in control of your devices. Microsoft helps protect you from potential threats by identifying and analyzing software and online content. When you download, install, and run software, we check the reputation of downloaded programs and ensure you're protected against known threats. You are also warned about software that is unknown to us.  
+Microsoft aims to provide a delightful and productive Windows experience by working to ensure you're safe and in control of your devices. Microsoft helps protect you from potential threats by identifying and analyzing software and online content. When you download, install, and run software, we check the reputation of downloaded programs and ensure you're protected against known threats. You're also warned about software that is unknown to us.  
 
-You can assist Microsoft by [submitting unknown or suspicious software for analysis](https://www.microsoft.com/wdsi/filesubmission/). This will help ensure that unknown or suspicious software is scanned by our system to start establishing reputation. [Learn more about submitting files for analysis](submission-guide.md)
+You can assist Microsoft by [submitting unknown or suspicious software for analysis](https://www.microsoft.com/wdsi/filesubmission/). Submitting files for analysis helps ensure that unknown or suspicious software is scanned by our system to start establishing reputation. [Learn more about submitting files for analysis](submission-guide.md)
 
 The next sections provide an overview of the classifications we use for applications and the types of behaviors that lead to that classification.
 
