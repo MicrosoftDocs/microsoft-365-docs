@@ -47,7 +47,7 @@ Learn more about [Viva Engage](/viva/engage/overview) and help your employees [g
 
 Email is a core communication tool for most workplaces. [Set up email with Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) and create mailboxes for your frontline workers and managers so you can send broadcast communications over email. Users must have an F3 license to have an email mailbox.
 
-## See also:
+## See also
 
 - [Communications and Communities: Viva Engage, Viva Connections, and Viva Amplify](/viva/experience-connection)
 - [Organizational communications: Guidance, methods, and products](/sharepoint/corporate-communications-overview)
