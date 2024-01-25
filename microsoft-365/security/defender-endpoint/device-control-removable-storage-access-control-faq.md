@@ -41,7 +41,7 @@ The backend call is done through OMA-URI (GET to read or PATCH to update) either
 
 ## Why doesn't the policy work?
 
-The most common reason is there's no required [anti-malware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
+The most common reason is there's no required anti-malware client version.
 
 Another reason could be that the XML file isn't correctly formatted. For example, not using the correct markdown formatting for the "&" character in the XML file or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files causing the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**), and then update.
 

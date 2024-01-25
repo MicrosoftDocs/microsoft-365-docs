@@ -29,7 +29,7 @@ search.appverid: met150
 
 
 > [!NOTE]
-> Device installation is one type of device control policies. If you want to manage removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
+> Device installation is one type of device control policies. For more information, see [Overview of device control](device-control-overview.md).
 
 Microsoft Defender for Endpoint Device Control Device Installation enables you to:
 
