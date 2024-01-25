@@ -4,7 +4,7 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/23/2024
+ms.date: 01/24/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -75,7 +75,7 @@ This section lists scenarios for device control. Select a tab, review the scenar
 |---|---|
 | Prevent installation of a specific USB device | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
 | Prevent installation of all USB devices while allowing an installation of only an authorized USB | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md). |
-| Prevent copying of sensitive files to USB | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
+| Prevent copying of sensitive files to USB | [Endpoint DLP](/purview/endpoint-dlp-learn-about) |
 | Block write access to removable data drives not protected by BitLocker | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
 | Block write access to devices configured in another organization | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
 | Prevent Write and Execute access to all but allow specific approved USBs | Device control in Defender for Endpoint. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
@@ -89,7 +89,7 @@ This section lists scenarios for device control. Select a tab, review the scenar
 |---|---|
 | Block people from printing via noncorporate printer | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
 | Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
-| Block printing of sensitive documents to any printer | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
+| Block printing of sensitive documents to any printer | [Endpoint DLP](/purview/endpoint-dlp-learn-about) |
 | Prevent installation of all printers | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
 | Prevent installation of a specific printer | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
 | Prevent installation of all printers while allowing a specific printer to be installed | Device control in Windows. See [Device Installation](mde-device-control-device-installation.md) |
@@ -98,7 +98,7 @@ This section lists scenarios for device control. Select a tab, review the scenar
 
 | Scenario | Device control policy |
 |---|---|
-| Block copying of sensitive document to any Bluetooth Device | [Endpoint DLP](/purview/endpoint-dlp-learn-about?view=o365-worldwide) |
+| Block copying of sensitive document to any Bluetooth Device | [Endpoint DLP](/purview/endpoint-dlp-learn-about) |
 
 ---
 
