@@ -4,7 +4,7 @@ description: Learn about device control policies and entries in Defender for End
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/24/2024
+ms.date: 01/25/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -208,7 +208,7 @@ The following code snippet shows the syntax for a device control entry in XML:
 
 The following table provides more context for the XML code snippet:
 
-| Property Name | Description | Options |
+| Property name | Description | Option |
 |---|---|---|
 | Entry Id | GUID, a unique ID, represents the entry and is used in reporting and troubleshooting. | You can generate the GUID by using PowerShell. |
 | Type | Defines the action for the removable storage groups in `IncludedIDList`. <br/>- Allow <br/>- Deny <br/>- AuditAllowed: Defines notification and event when access is allowed <br/>- AuditDenied: Defines notification and event when access is denied; works together with a Deny entry. <br/><br/>When there are conflict types for the same media, the system applies the first one in the policy. An example of a conflict type is Allow and Deny. | - Allow <br/>- Deny <br/>- AuditAllowed <br/>- AuditDenied |
