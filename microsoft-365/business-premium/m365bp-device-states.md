@@ -4,13 +4,13 @@ f1.keywords:
 - NOCSH
 ms.author: siosulli
 author: siosulli
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.date: 10/26/2022
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - tier1
 ms.custom:
 - MiniMaven
@@ -29,14 +29,13 @@ You can view and monitor device health state by using Defender for Business capa
 
 :::image type="content" source="../media/defender-business/mdb-deviceinventory.png" lightbox="../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory in Defender for Business":::
 
-1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal (<https://security.microsoft.com>) and sign in.
 
 2. In the navigation pane, go to **Assets** > **Devices**. A list of devices that were onboarded to Defender for Business displays.
 
 3. Select a device to view more information and available actions.
 
    :::image type="content" source="../media/defender-business/mdb-selected-device.png" lightbox="../media/defender-business/mdb-selected-device.png" alt-text="Screenshot showing a selected device with details and actions available":::
-  
 
 ## See also
 
