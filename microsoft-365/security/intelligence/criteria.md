@@ -215,7 +215,7 @@ Microsoft uses specific categories and the category definitions to classify soft
 
 ## Vulnerable software
 
-Vulnerable software is an application or code that has security flaws or weaknesses which can be exploited by attackers to perform various malicious and potentially destructive actions.
+Vulnerable software is an application or code that has security flaws or weaknesses which can be exploited by attackers to perform various malicious and potentially destructive actions.  These vulnerabilities may stem from unintentional coding errors or design flaws, and if exploited, can lead to harmful activities such as unauthorized access, privilege escalation, tampering and more. 
 
 ### Vulnerable drivers
 
