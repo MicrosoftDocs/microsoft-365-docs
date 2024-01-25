@@ -4,7 +4,7 @@ description: Learn how to work with device control in Defender for Endpoint.
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
-ms.date: 01/24/2024
+ms.date: 01/25/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -24,7 +24,7 @@ f1.keywords: NOCSH
 
 This article describes different ways to see how device control works. Beginning with default settings, each section describes how to configure device control to achieve certain objectives.
 
-## Step 1: Explore the default state of device control
+## Explore the default state of device control
 
 By default, [device control](device-control-overview.md) is disabled and there are no restrictions on which devices can be added. The auditing of basic device control events is enabled for devices that are onboarded to Defender for Endpoint. This activity can be seen in the [device control report](device-control-report.md). Filtering on the built-in **PnP Audit Policy** shows devices that are connected to the endpoints in the environment, as shown in the following screenshot:
 
@@ -100,7 +100,7 @@ Remove, and reinsert the USB device in the test machine. Try to open the drive. 
 > [!NOTE]
 > Detailed instructions and examples are available [here](https://github.com/j0shbregman/mdatp-devicecontrol/tree/main/Getting%20Started).
 
-## Step 2: Deny all removable media
+## Step 1: Deny all removable media
 
 In order to customize the behavior, device control uses policies that are a combination of groups and rules. Start by deploying a policy that denies all access to all removable storage devices, and audits the event by sending a notification to the portal and the user. The following image summarizes these settings:
 
@@ -140,7 +140,7 @@ Selecting the event to view information about the policy and the device, as show
 
 :::image type="content" source="media/deny-removable-devices-advhuntingresults.png" alt-text="Screenshot showing deny event in advanced hunting." lightbox="media/deny-removable-devices-advhuntingresults.png":::
 
-## Step 3: Allow access for authorized USB devices
+## Step 2: Allow access for authorized USB devices
 
 To grant access to set of authorized USBs devices, set up a group to identify those devices. We call our group `Authorized USBs`, and used the settings depicted in the following image:
 
@@ -152,7 +152,7 @@ Notice that the authorized USB group is excluded from the deny-all policy. This 
 
 Device control has lots of ways to group devices based on properties. See LINK NEEDED List of device properties for the full list.
 
-## Step 4: Allow different levels of access for different types of devices
+## Step 3: Allow different levels of access for different types of devices
 
 To create different behaviors for different devices, place them into separate groups. In our example, we use a group called `Read Only USBs`. The following image shows the settings we used:
 
@@ -164,7 +164,7 @@ Once the policy is deployed, insert an authorized USB. You should see that full 
 
 If you insert any other USB device, it should be blocked due to the "Deny all other USBs" policy.
 
-## Step 5: Allow different levels of access to devices for specific users or groups
+## Step 4: Allow different levels of access to devices for specific users or groups
 
 Device control allows you to further restrict access using conditions. The simplest condition is a user condition. In device control, users and groups are identified by their Security Identified (SID).
 
