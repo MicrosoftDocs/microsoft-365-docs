@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint Device Control Removable Storage frequently asked questions
-description: Answers frequently asked questions on MDE device control removable storage. 
+title: Microsoft Defender for Endpoint Device Control frequently asked questions
+description: Answers frequently asked questions about device control in Defender for Endpoint
 ms.service: defender-endpoint
 ms.subservice: asr
 ms.author: dansimp
@@ -14,12 +14,12 @@ ms.collection:
 - mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 05/11/2023
-ms.reviewer: tewchen
+ms.date: 01/25/2024
+ms.reviewer: tewchen, joshbregman
 search.appverid: met150
 ---
 
-# Microsoft Defender for Endpoint Device Control Removable Storage frequently asked questions
+# Microsoft Defender for Endpoint Device Control frequently asked questions
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
