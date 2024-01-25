@@ -1,0 +1,49 @@
+    - name: Microsoft 365 Archive
+      href: index.yml
+ 
+    - name: Overview 
+      href: /syntex/archive/archive-overview.md
+    - name: Admin setup 
+      href: /syntex/archive/archive-setup.md
+    - name: Pricing model 
+      href: /syntex/archive/archive-pricing.md
+    - name: Archive states 
+      href: /syntex/archive/archive-states.md
+    - name: Manage 
+      href: /syntex/archive/archive-manage.md
+    - name: Compliance 
+      href: /syntex/archive/archive-compliance.md
+    - name: End user experience 
+      href: /syntex/archive/archive-end-user.md
+    - name: FAQs
+      href: /syntex/archive/archive-faq.md
+
+    - name: Microsoft 365 Backup (Preview)
+      items: 
+        - name: Overview 
+          href: /syntex/backup/backup-overview.md
+        - name: Admin setup 
+          href: /syntex/backup/backup-setup.md
+        - name: View and edit policies 
+          href: /syntex/backup/backup-view-edit-policies.md
+        - name: Restore data 
+          href: /syntex/backup/backup-restore-data.md
+        - name: Preview limitations
+          href: /syntex/backup/backup-limitations.md
+        - name: /syntex/Pricing
+          href: /syntex/backup/backup-pricing.md
+        - name: /syntex/Offboarding
+          href: /syntex/backup/backup-offboarding.md
+        - name: /syntex/FAQs
+          href: /syntex/backup/backup-faq.md
+
+    - name: Microsoft 365 Backup (Preview)
+      href: /syntex/backup/backup-overview.md
+
+    - name: SharePoint Advanced Management
+      href: /sharepoint/advanced-management
+
+
+
+
+
