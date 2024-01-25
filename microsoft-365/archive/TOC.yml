@@ -2,7 +2,7 @@
       href: index.yml
  
     - name: Overview 
-      href: /syntex/archive/archive-overview.md
+      href: /archive/archive-overview.md
     - name: Admin setup 
       href: /syntex/archive/archive-setup.md
     - name: Pricing model 
