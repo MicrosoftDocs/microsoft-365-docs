@@ -42,7 +42,7 @@ Malware is the overarching name for applications and other code, like software, 
 
 ### Malicious software
 
-Malicious software is an application or code that compromises user security. Malicious software may steal your personal information, lock your device until you pay a ransom, use your device to send spam, or download other malicious software. In general, malicious software wants to trick, cheat, or defrauds users, placing them in vulnerable states.
+Malicious software is an application or code that compromises user security. Malicious software might steal your personal information, lock your device until you pay a ransom, use your device to send spam, or download other malicious software. In general, malicious software wants to trick, cheat, or defrauds users, placing them in vulnerable states.
 
 Microsoft classifies most malicious software into one of the following categories:
 
@@ -62,7 +62,7 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Obfuscator:** A type of malware that hides its code and purpose, making it more difficult for security software to detect or remove.
 
-* **Password stealer:** A type of malware that gathers your personal information, such as usernames and passwords. It often works along with a keylogger, which collects and sends information about the keys you press and websites you visit.
+* **Password stealer:** A type of malware that gathers your personal information, such as usernames and passwords. It often works along with a key logger, which collects and sends information about the keys you press and websites you visit.
 
 * **Ransomware:** A type of malware that encrypts your files or makes other modifications that can prevent you from using your device. It then displays a ransom note that states you must pay money or perform other actions before you can use your device again. [See more information about ransomware](/security/compass/human-operated-ransomware).
 
@@ -70,7 +70,7 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Trojan:** A type of malware that attempts to appear harmless. Unlike a virus or a worm, a trojan doesn't spread by itself. Instead, it tries to look legitimate to tricks users into downloading and installing it. Once installed, trojans perform various malicious activities such as stealing personal information, downloading other malware, or giving attackers access to your device.
 
-* **Trojan clicker:** A type of trojan that automatically clicks buttons or similar controls on websites or applications. Attackers can use this trojan to click on online advertisements. These clicks can skew online polls or other tracking systems and can even install applications on your device.
+* **Trojan clicker:** A type of trojan that automatically selects buttons or similar controls on websites or applications. Attackers can use this trojan to click on online advertisements. These clicks can skew online polls or other tracking systems and can even install applications on your device.
 
 * **Worm:** A type of malware that spreads to other devices. Worms can spread through email, instant messaging, file sharing platforms, social networks, network shares, and removable drives. Sophisticated worms take advantage of software vulnerabilities to propagate.
 
@@ -96,7 +96,7 @@ Software that exhibits lack of choice might:
 
 * Falsely claim to be software from Microsoft.
 
-Software must not mislead or coerce you into making decisions about your device. It is considered behavior that limits your choices. In addition to the previous list, software that exhibits lack of choice might:
+Software must not mislead or coerce you into making decisions about your device. It's considered behavior that limits your choices. In addition to the previous list, software that exhibits lack of choice might:
 
 * Display exaggerated claims about your device's health.
 
@@ -122,7 +122,7 @@ Software that exhibits lack of control might:
 
 * Modify or manipulate webpage content without your consent.
 
-Software that changes your browsing experience must only use the browser's supported extensibility model for installation, execution, disabling, or removal. Browsers that don't provide supported extensibility models are considered non-extensible and shouldn't be modified.
+Software that changes your browsing experience must only use the browser's supported extensibility model for installation, execution, disabling, or removal. Browsers that don't provide supported extensibility models are considered nonextensible and shouldn't be modified.
 
 #### Installation and removal
 
@@ -176,7 +176,7 @@ Tampering software encompasses a broad spectrum of threats that directly or indi
 
    - **DNS manipulation**: Tampering with DNS settings to redirect traffic or block security updates, leaving the system exposed to malicious activities. 
 
-   - **Safe mode exploitation**: Leveraging the legitimate `Safe Mode` setting to put the device in a state where security solutions may be bypassed, allowing for unauthorized access or malware execution. 
+   - **Safe mode exploitation**: Leveraging the legitimate `Safe Mode` setting to put the device in a state where security solutions might be bypassed, allowing for unauthorized access or malware execution. 
 
 * **Manipulating system components**: Tools and threats that target critical system components, such as kernel drivers or system services, to compromise the overall security and stability of the device. 
  
@@ -184,7 +184,7 @@ Tampering software encompasses a broad spectrum of threats that directly or indi
  
 * **Interfering with security updates**: Attempts to block or manipulate security updates, leaving the system vulnerable to known vulnerabilities. 
  
-* **Disrupting critical services**: Actions that disrupt essential system services or processes, potentially causing system instability and opening the door for additional attacks. 
+* **Disrupting critical services**: Actions that disrupt essential system services or processes, potentially causing system instability and opening the door for other attacks. 
  
 * **Unauthorized registry changes**: Modifications to the Windows Registry or system settings that impact the security posture of the device. 
  
@@ -195,17 +195,17 @@ Tampering software encompasses a broad spectrum of threats that directly or indi
 
 Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This protection helps deliver more productive, performant, and delightful Windows experiences. For instruction on how to enable PUA protection in Chromium-based Microsoft Edge and Microsoft Defender Antivirus, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
-*PUAs are not considered malware.*
+*PUAs aren't considered malware.*
 
 Microsoft uses specific categories and the category definitions to classify software as a PUA.
 
-* **Advertising software:** Software that displays advertisements or promotions, or prompts you to complete surveys for other products or services in software other than itself. This includes software that inserts advertisements to webpages.
+* **Advertising software:** Software that displays advertisements or promotions, or prompts you to complete surveys for other products or services in software other than itself. Such software includes software that inserts advertisements to webpages.
 
 * **Torrent software (Enterprise only):** Software that is used to create or download torrents or other files specifically used with peer-to-peer file-sharing technologies.
 
 * **Cryptomining software (Enterprise only):** Software that uses your device resources to mine cryptocurrencies.
 
-* **Bundling software:** Software that offers to install other software that is not developed by the same entity or not required for the software to run. Also, software that offers to install other software that qualifies as PUA based on the criteria outlined in this document.
+* **Bundling software:** Software that offers to install other software that isn't developed by the same entity or not required for the software to run. Also, software that offers to install other software that qualifies as PUA based on the criteria outlined in this document.
 
 * **Marketing software:** Software that monitors and transmits the activities of users to applications or services other than itself for marketing research.
 
