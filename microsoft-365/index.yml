@@ -28,7 +28,7 @@ highlightedContent:
     # Card
     - title: Join us at the Microsoft 365 Conference April 30 - May 2
       itemType: whats-new
-      url: https://www.m365conf.com/#!/
+      url: https://www.m365conf.com/#!/?wt.mc_id=m365conf_docs_webpage_mwmktg
     # Card
     - title: Remote learning with Microsoft Teams
       itemType: get-started
