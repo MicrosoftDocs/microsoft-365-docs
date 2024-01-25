@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft 365 Archive documentation # < 60 chars
-summary: Microsoft 365 Archive Microsoft 365 Archive is a cost-effective storage solution for your organization. Retain your inactive data by moving it into a cold storage tier (archive) within SharePoint and the Microsoft 365 trust boundary. 
+summary: Microsoft 365 Archive is a cost-effective storage solution for your organization. Retain your inactive data by moving it into a cold storage tier (archive) within SharePoint and the Microsoft 365 trust boundary. 
 metadata:
   title: Microsoft 365 Archive documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This page contains links to some important topics related to Microsoft 365 Archive features. Start here to learn about how to set up and use Microsoft 365 Archive in your organization. # Required; article description that is displayed in search results. < 160 chars.
