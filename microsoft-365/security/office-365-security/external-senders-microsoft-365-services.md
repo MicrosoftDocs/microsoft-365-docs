@@ -35,7 +35,6 @@ Microsoft offers several support options for people having trouble sending mail 
 
 - Follow the instructions in any non-delivery report (also known as an NDR or bounce message) that you receive.
 - Check out the most common problems that external senders encounter in [External senders - Troubleshoot email sent to Microsoft 365](external-senders-mail-flow-troubleshooting.md).
-- Check the [Microsoft community forums](https://community.office365.com/f/).
 - Ask the Microsoft 365 recipient to contact Microsoft Support and open a support ticket on your behalf. Typically, external senders can't open support tickets in Microsoft 365. But, there are legal reasons that might require Microsoft Support to communicate directly with owner of the blocked source IP address space.
 
   For more information about Microsoft Technical support for Microsoft 365, see [Support](/office365/servicedescriptions/office-365-platform-service-description/support).
