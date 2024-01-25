@@ -1,7 +1,7 @@
 ---
 title: Launch your portal using the Portal launch scheduler
-ms.author: jhendr
-author: JoanneHendrickson
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.date: 11/11/2020
 audience: Admin
