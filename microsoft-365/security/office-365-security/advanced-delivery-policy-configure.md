@@ -334,7 +334,7 @@ In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-
 - Remove any SecOps override rules:
 
   ```powershell
-  Get-ExoSecOpsOverridePolicy | Remove-ExoSecOpsOverrideRule
+  Get-SecOpsOverridePolicy | Remove-ExoSecOpsOverrideRule
   ```
 
 - Remove the specified SecOps override rule:
@@ -549,7 +549,7 @@ In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-
 - Remove any phishing simulation override rules:
 
   ```powershell
-  Get-ExoPhishSimOverridePolicy | Remove-ExoPhishSimOverrideRule
+  Get-PhishSimOverridePolicy | Remove-ExoPhishSimOverrideRule
   ```
 
 - Remove the specified phishing simulation override rule:
