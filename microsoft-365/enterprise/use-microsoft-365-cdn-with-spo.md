@@ -700,7 +700,7 @@ Once you've set up the CDN, you can make changes to your configuration as you up
 
 Once you've completed the setup steps, you can add new assets, and update or remove existing assets whenever you want. Just make your changes to the assets in the folder or SharePoint library that you identified as an origin. If you add a new asset, it is available through the CDN immediately. However, if you update the asset, it will take up to 15 minutes for the new copy to propagate and become available in the CDN.
 
-If you need to retrieve the location of the origin, you can use the **Get-PnPTenantCdnOrigin** cmdlet. For information on how to use this cmdlet, see [Get-PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/get-pnptenantcdnorigin).
+If you need to retrieve the location of the origin, you can use the **Get-PnPTenantCdnOrigin** cmdlet. For information on how to use this cmdlet, see [Get-PnPTenantCdnOrigin](https://github.com/pnp/powershell/blob/dev/documentation/Get-PnPTenantCdnOrigin.md).
 
 <a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
 #### Remove an origin from the Office 365 CDN

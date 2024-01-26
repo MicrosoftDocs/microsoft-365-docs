@@ -60,7 +60,7 @@ The Teams app usage report is available in the Microsoft 365 admin center and th
 
 - The start date for all installs metrics is October 2021. Only apps installed after that date will be counted.
 
-- App IDs in this report are the External (manifest) App IDs. For more information on how to tie this ID to an app in the Manage Apps experience in Teams Admin Center, see [Manage app setup policies in Microsoft Teams](/microsoftteams/teams-app-setup-policies#install-apps.md).
+- App IDs in this report are the External (manifest) App IDs. For more information on how to tie this ID to an app in the Manage Apps experience in Teams Admin Center, see [Manage app setup policies in Microsoft Teams](/microsoftteams/teams-app-setup-policies#install-apps).
 
 - You can export the report data into an Excel .csv file by selecting the Export link. This exports data for all users/apps and enables you to do simple sorting and filtering for further analysis.
 
