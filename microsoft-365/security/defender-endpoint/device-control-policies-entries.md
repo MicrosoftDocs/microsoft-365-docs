@@ -39,8 +39,10 @@ When device control is enabled, it's enabled for all device types by default. Th
 
 When device types are configured, device control in Defender for Endpoint ignores requests to other device families.
 
-- See LINK NEEDED Defining Settings with OMA-URI for information on changing default behavior using Intune
-- See LINK NEEDED Deploy Using Device GPO (Windows) for information on changing default behavior using Group Policy
+For more information, see the following articles:
+
+- [Deploy and manage device control with Intune](device-control-deploy-manage-intune.md)
+- [Deploy and manage device control with Group Policy](device-control-deploy-manage-gpo.md)
 
 ## Policies
 
@@ -357,25 +359,21 @@ For Windows devices, you can use Device Manager to understand the properties of 
 
 1. Open Device Manager, locate the device, right-click on **Properties**, and then select the **Details** tab.
 
-   :::image type="content" source="media/device-control-groups-windowsproperties.png" alt-text="Screenshot of device properties using Device Manager in Windows.":::
-
 2. In the Property list, select **Device instance path**. 
 
-   :::image type="content" source="media/device-control-groups-windows-deviceinstancepath.png" alt-text="Screenshot showing the device instance path in Device Manager on a Windows device.":::
+   The value shown for device instance path is the `InstancePathId`, but it also contains other properties:
 
-The value shown for device instance path is the `InstancePathId`, but it also contains other properties.
+      - `USB\VID_090C&PID_1000\FBH1111183300721`
+      - `{BusId}\{DeviceId}\{SerialNumberId}`
 
-- `USB\VID_090C&PID_1000\FBH1111183300721`
-- `{BusId}\{DeviceId}\{SerialNumberId}`
+   The properties in the device manager map to device control as shown in the following table:
 
-The properties in the device manager map to device control as shown in the following table:
-
-| Device Manager | Device Control |
-|---|---|
-| Hardware Ids | `HardwareId` |
-| Friendly name | `FriendlyNameId` |
-| Parent | `VID_PID` |
-| DeviceInstancePath | `InstancePathId` |
+   | Device Manager | Device Control |
+   |---|---|
+   | Hardware Ids | `HardwareId` |
+   | Friendly name | `FriendlyNameId` |
+   | Parent | `VID_PID` |
+   | DeviceInstancePath | `InstancePathId` |
 
 
 ### Using reports and advanced hunting to determine properties of devices
