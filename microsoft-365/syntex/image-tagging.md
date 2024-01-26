@@ -27,7 +27,7 @@ Before you can use image tagging, you need to enable it in a document library. T
 
 ## Use an existing Image Tags column
 
-If you already have an [**Image Tags** column in your library](https://support.microsoft.com/office/work-with-image-tags-in-a-sharepoint-library), use these steps to enable enhanced image tagging:
+If you already have an **Image Tags** column in your library, use these steps to enable enhanced image tagging:
 
 1. On the **Image Tags** column, select **Column settings** > **Edit**.
 
