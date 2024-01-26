@@ -59,7 +59,7 @@ To edit or update permissions after the initial setup, go to **Settings** > **De
 
 ## Exclude devices and users from remediation
 
-Defender Experts for XDR lets you exclude devices and users from remediation actions taken by our experts and instead get remediation guidance for those entities. These exclusions are based on identified [device groups](../defender-endpoint/machine-groups.md) in Microsoft Defender for Endpoint and identified [user groups](/entra/fundamentals/concept-learn-about-groups.md) in Microsoft Entra ID.
+Defender Experts for XDR lets you exclude devices and users from remediation actions taken by our experts and instead get remediation guidance for those entities. These exclusions are based on identified [device groups](../defender-endpoint/machine-groups.md) in Microsoft Defender for Endpoint and identified [user groups](/entra/fundamentals/concept-learn-about-groups) in Microsoft Entra ID.
 
 **To exclude device groups:**
 
@@ -79,7 +79,7 @@ Defender Experts for XDR lets you exclude devices and users from remediation act
 1. In the same Defender Experts settings setup, under **Exclusions**, go to the **User groups** tab.
 2. Select **+ Add user groups**, then search for and choose the user group(s) that you wish to exclude.
    > [!NOTE]
-   > This page only lists existing user groups. If you wish to create a new user group, you first need to sign into the Microsoft Entra ID admin center as a Global Administrator. Then, refresh this page to search for and choose the newly created group. [Learn more about creating user groups](/entra/fundamentals/groups-view-azure-portal.md)
+   > This page only lists existing user groups. If you wish to create a new user group, you first need to sign into the Microsoft Entra ID admin center as a Global Administrator. Then, refresh this page to search for and choose the newly created group. [Learn more about creating user groups](/entra/fundamentals/groups-view-azure-portal)
 
 3. Select **Add user groups**.
 4. Back on the **User groups** tab, review the list of excluded user groups. If you wish to remove a user group from the exclusion list, choose it then select **Remove user group**.
