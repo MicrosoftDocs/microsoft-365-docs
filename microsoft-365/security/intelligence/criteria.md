@@ -38,7 +38,7 @@ Once enough data is gathered, Microsoft's security solutions can make a determin
 
 ## Malware
 
-Malware is the overarching name for applications and other code, like software, that Microsoft classifies more granularly as *malicious software* or *unwanted software*.
+Malware is the overarching name for applications and other code, like software, that Microsoft classifies more granularly as *malicious software*, *unwanted software*, or *tampering software*.
 
 ### Malicious software
 
