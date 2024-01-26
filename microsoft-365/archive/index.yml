@@ -41,7 +41,7 @@ landingContent:
             url: /syntex/archive/archive-pricing.md
 
 # Card 3
-  - title: Manage Microsoft 365 Archive
+  - title: Archive data
     linkLists:
       - linkListType: overview
         links:
