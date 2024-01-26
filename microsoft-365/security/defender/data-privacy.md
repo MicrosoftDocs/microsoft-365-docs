@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- essentials-accountability
 ms.topic: conceptual
 search.appverid: 
   - MOE150
