@@ -172,7 +172,7 @@ An entry supports the following optional conditions:
 
 - Access Condition: Applies the action only to the access defined in the access mask
 - User Condition: Applies the action only to the user/group identified by the SID
-- Machine Condition:  Applies the action only to the machine/group identified by the SID
+- Machine Condition:  Applies the action only to the device/group identified by the SID
 - Parameters Condition:  Applies the action only if the parameters match (See Advanced Conditions)
 
 Entries can be further scoped to specific users and devices.  For example, allow read access to these USBs for this user only on this device.
@@ -220,7 +220,7 @@ The following table provides more context for the XML code snippet:
 | Option | If type is `AuditDenied` | - 0: nothing <br/>- 1: show notification <br/>- 2: send event <br/>- 3: show notification and send event |
 | AccessMask | Defines the access | See the following section [Understand mask access](#understand-mask-access-windows) |
 | `Sid` | Local user SID or user SID group or the SID of the Microsoft Entra object or the Object ID. It defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the device. | SID | 
-| `ComputerSid` | Local computer SID or computer SID group or the SID of the Microsoft Entra object or the Object Id. It defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the device. If you want to apply an Entry to a specific user and specific device, add both SID and ComputerSID into the same Entry. | SID | 
+| `ComputerSid` | Local computer SID or computer SID group or the SID of the Microsoft Entra object or the Object Id. It defines whether to apply this policy over a specific device or device group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the device. If you want to apply an Entry to a specific user and specific device, add both SID and ComputerSID into the same Entry. | SID | 
 | Parameters | Condition for an entry, such as network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See LINK NEEDED Advanced Conditions  |
 
 
@@ -293,9 +293,9 @@ The following table describes the device type specific access and how they map t
 |---|---|---|---|---|---|
 | `appleDevice` | `backup_device` |  | X |  |  |      
 | `appleDevice` | `update_device` |  |  | X |   |   
-| `appleDevice` | `download_photos_from_device` | download photo(s) from the specific iOS device to local machine | X  |  |  |         
-| `appleDevice` | `download_files_from_device` | download file(s) from the specific iOS device to local machine | X  |  |  |        
-| `appleDevice` | `sync_content_to_device` | sync content from local machine to specific iOS device |  | X |  |
+| `appleDevice` | `download_photos_from_device` | download photo(s) from the specific iOS device to local device | X  |  |  |         
+| `appleDevice` | `download_files_from_device` | download file(s) from the specific iOS device to local device | X  |  |  |        
+| `appleDevice` | `sync_content_to_device` | sync content from local device to specific iOS device |  | X |  |
 | `portableDevice` | `download_files_from_device` | X  |  |  |        
 | `portableDevice` | `send_files_to_device`  |  |  | X |  |     
 | `portableDevice` | `download_photos_from_device` |  | X |  |  |        
