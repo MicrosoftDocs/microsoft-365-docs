@@ -300,11 +300,11 @@ Logs don't have to be directed to one place only. It might also be beneficial to
 
 It's worth mentioning that there's a rich built-in analytics system for security, threats, vulnerabilities, and so on in a service called [Microsoft Defender XDR](../security/defender/microsoft-365-defender.md).
 
-Many large customers want to transfer this log data to a third-party system (for example, SIEM). There are different approaches for this, but in-general [Azure Event Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) and [Graph](/graph/security-integration) are good starting points.
+Many large customers want to transfer this log data to a third-party system (for example, SIEM). There are different approaches for this result, but in-general [Azure Event Hubs](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) and [Graph](/graph/security-integration) are good starting points.
 
 ### Azure
 
-I'm often asked if there's a way to separate high-privilege roles between Microsoft Entra ID, Azure, and SaaS (ex.: Global Administrator for Microsoft 365 but not Azure). Not really. Multi-tenant architecture is needed if complete administrative separation is required, but that adds significant [complexity](https://aka.ms/multi-tenant-user) (see above). All these services are part of the same security/identity boundary (look at the hierarchy model above).
+I'm often asked if there's a way to separate high-privilege roles between Microsoft Entra ID, Azure, and SaaS (ex.: Global Administrator for Microsoft 365 but not Azure). Not really. Multi-tenant architecture is needed if complete administrative separation is required, but that adds significant [complexity](https://aka.ms/multi-tenant-user) (as discussed earlier). All these services are part of the same security/identity boundary (as shown in the hierarchy model).
 
 It's important to understand relationships between various services in the same tenant. I'm working with many customers that are building business solutions that span Azure, Microsoft 365, and Power Platform (and often also on-premises and third-party cloud services). One common example:
 
@@ -313,7 +313,7 @@ It's important to understand relationships between various services in the same 
 3. After all components are approved, assemble these items into a unified deliverable(s) (Azure)
 [Microsoft Graph API](/azure/active-directory/develop/microsoft-graph-intro) is your best friend here. Not impossible, but significantly more complex to design a solution spanning [multiple tenants](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
-Azure Role-Based Access Control (RBAC) enables fine-grained access management for Azure. Using RBAC, you can manage access to resources by granting users the fewest permissions needed to perform their jobs. Details are out of scope for this document, but for more information on RBAC, see [What is role-based access control (RBAC) in Azure?](/azure/role-based-access-control/overview) RBAC is important but only part of the governance considerations for Azure. [Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/) is a great starting point to learn more. I like how my friend, [Andres Ravinet](https://www.linkedin.com/in/andres-ravinet/), walks customers step by step though various components to decide on the approach. High-level view for various elements (not as good as the process to get to actual customer model) is something like this:
+Azure Role-Based Access Control (RBAC) enables fine-grained access management for Azure. Using RBAC, you can manage access to resources by granting users the fewest permissions needed to perform their jobs. Details are out of scope for this document, but for more information on RBAC, see [What is role-based access control (RBAC) in Azure?](/azure/role-based-access-control/overview) RBAC is important but only part of the governance considerations for Azure. [Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/) is a great starting point to learn more. I like how my friend, [Andres Ravinet](https://www.linkedin.com/in/andres-ravinet/), walks customers step by step through various components to decide on the approach. High-level view for various elements (not as good as the process to get to actual customer model) is something like this:
 
 ![High-level view of Azure components for delegated administration.](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 
@@ -321,4 +321,4 @@ As you can see from above picture, many other services should be considered as p
 
 ## Conclusion
 
-Started as a short summary, ended-up longer than I expected. I hope you are now ready to venture into a deep see of creating delegation model for your organization. This conversation is very common with customers. There's no one model that works for everyone. Waiting for a few planned improvements from Microsoft engineering before documenting common patterns we see across customers. In the meantime, you can work with your Microsoft account team to arrange a visit to the nearest [Microsoft Technology Center](https://www.microsoft.com/mtc). See you there!
+This article started as a short summary, ended-up longer than I expected. I hope you're now ready to venture into a deep see of creating delegation model for your organization. This conversation is very common with customers. There's no one model that works for everyone. Waiting for a few planned improvements from Microsoft engineering before documenting common patterns we see across customers. In the meantime, you can work with your Microsoft account team to arrange a visit to the nearest [Microsoft Technology Center](https://www.microsoft.com/mtc). See you there!
