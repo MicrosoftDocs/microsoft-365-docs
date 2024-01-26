@@ -89,7 +89,7 @@ When evaluating the right solution for your organization, we recommend you do th
     1. Select **Users**, and then choose your user.
     1. Copy the user's object ID.
 
-9. Review the settings, and then choose **Finish setup.**
+9. Review your settings, and then choose **Finish setup.**
 
     >[!NOTE]
     >Setup can take several hours to run. You can refresh the **Manage frontline teams** page to get the latest status of your setup.
