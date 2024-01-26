@@ -44,7 +44,7 @@ The report provided the following list of app configuration status:
 - **MDM device ID**: The MDM device ID is displayed if the device is enrolled with Microsoft Intune MDM.
 
 > [!NOTE]
-> The **Last Sync** column represents the same value in the in-console **User status report**, the **App Protection Policy** [exportable .csv report](/mem/intune/app-protection-policies-monitor), and the **App Configuration Report**. The difference is a small delay in synchronization between the value in the reports.
+> The **Last Sync** column represents the same value in the in-console **User status report**, the **App Protection Policy** [exportable .csv report](/mem/intune/apps/app-protection-policies-monitor), and the **App Configuration Report**. The difference is a small delay in synchronization between the value in the reports.
 
 ## Understand app configuration diagnostic logs
 
