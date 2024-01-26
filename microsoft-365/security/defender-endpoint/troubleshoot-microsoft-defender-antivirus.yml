@@ -1686,7 +1686,7 @@ sections:
 
          Possible reason: This error indicates that Microsoft Defender Antivirus doesn't support the current version of the platform and requires a new version of the platform.
 
-         Resolution: You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For Windows 8, Windows 7 and Windows Vista, you can use [System Center Endpoint Protection](https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx).
+         Resolution: You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For Windows 8, Windows 7 and Windows Vista, you can use System Center Endpoint Protection.
 
      - question: Internal error codes
        answer: |

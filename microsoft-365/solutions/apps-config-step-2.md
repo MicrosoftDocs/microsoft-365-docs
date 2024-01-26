@@ -20,12 +20,13 @@ Microsoft Intune makes it easy to provide Microsoft Outlook to your end-users at
 
 > [!NOTE]
 > The methods described use Microsoft Intune as the unified endpoint management service and Exchange as the messaging platform.
-> 
+>
 > If your organization uses a native email app or a different email service, you don't need to configure Microsoft Outlook.
 >
 > App configuration policies are targeted to the iOS/iPadOS and Android platforms. However some apps, such as M365 apps for Windows and later devices, have configuration options available when you add the app to Intune.
 
 Outlook app configuration can be delivered by selecting either of the following methods:
+
 1. **Managed devices** - Select the mobile device management (MDM) OS channel.
     - **iOS**: Use an App Configuration Policy for iOS. For related information, see the [Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS.
     - **Android**: Use an App Configuration Policy for Android Enterprise. For related information, see the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android.
@@ -59,6 +60,7 @@ For specific procedural steps and detailed documentation on the app configuratio
 ## Configure Outlook on managed devices
 
 You can configure Microsoft Outlook for managed devices by using an App Configuration Policy specifically for either the iOS/iPadOS or Android platforms. There are two areas to consider when configuring Outlook for managed devices:
+
 - [Account setup configuration](#account-setup-configuration)
 - [Organization allowed accounts mode settings](#organization-allowed-accounts-mode-settings)
 
@@ -67,11 +69,12 @@ You can configure Microsoft Outlook for managed devices by using an App Configur
 
 ### Account setup configuration
 
-You can configure account configuration setting for Microsoft Outlook on iOS/iPadOS and Android devices using Intune or other Unified Endpoint Management (UEM) providers. Once account setup configuration has been created as an App Configuration Policy in Intune (or other UEM provider) and the user enrolls their device, Outlook for iOS/iPadOS and Android will detect the related account and will then prompt the user to sign-in to the account. The only information the user needs to enter to complete the setup process is their password. Then, the user's mailbox content loads and the user can begin using the app. This process ensures that every device user successfully sets up Outlook. 
+You can configure account configuration setting for Microsoft Outlook on iOS/iPadOS and Android devices using Intune or other Unified Endpoint Management (UEM) providers. Once account setup configuration has been created as an App Configuration Policy in Intune (or other UEM provider) and the user enrolls their device, Outlook for iOS/iPadOS and Android will detect the related account and will then prompt the user to sign-in to the account. The only information the user needs to enter to complete the setup process is their password. Then, the user's mailbox content loads and the user can begin using the app. This process ensures that every device user successfully sets up Outlook.
 
-When creating an App Configuration Policy in Intune, you can set up account configuration options for devices by specifically setting a key and value in the policy and assigning the policy to members of your organization. 
+When creating an App Configuration Policy in Intune, you can set up account configuration options for devices by specifically setting a key and value in the policy and assigning the policy to members of your organization.
 
 Available account setup configuration keys for Outlook include the following:
+
 - `com.microsoft.outlook.Settings.OpenLinks.UseSystemDefaultBrowser`
 - `com.microsoft.outlook.Settings.OpenLinks.UserChangeAllowed`
 - `com.microsoft.outlook.EmailProfile.EmailAddress`
@@ -82,9 +85,10 @@ For more information about using the above keys, see [Account setup configuratio
 
 ### Organization allowed accounts mode settings
 
-Outlook for iOS/iPadOS and Android on corporate-managed devices can be configured to only allow a single, corporate account to be provisioned within Outlook for iOS/iPadOS and Android. This capability is supported with Microsoft 365 and Office 365 accounts or on-premises accounts using hybrid modern authentication, however, only a single corporate account can be added to Outlook for iOS/iPadOS and Android. Similar to account setup configuration, you can configure organization allowed accounts mode settings for Microsoft Outlook on iOS/iPadOS and Android devices using Intune or other Unified Endpoint Management (UEM) providers. Once account setup configuration has been created as an App Configuration Policy in Intune (or other UEM provider), you have assigned the policy, and the user enrolls their device, Outlook for iOS/iPadOS and Android will detect the related account and will then prompt the user to sign-in to the account. 
+Outlook for iOS/iPadOS and Android on corporate-managed devices can be configured to only allow a single, corporate account to be provisioned within Outlook for iOS/iPadOS and Android. This capability is supported with Microsoft 365 and Office 365 accounts or on-premises accounts using hybrid modern authentication, however, only a single corporate account can be added to Outlook for iOS/iPadOS and Android. Similar to account setup configuration, you can configure organization allowed accounts mode settings for Microsoft Outlook on iOS/iPadOS and Android devices using Intune or other Unified Endpoint Management (UEM) providers. Once account setup configuration has been created as an App Configuration Policy in Intune (or other UEM provider), you have assigned the policy, and the user enrolls their device, Outlook for iOS/iPadOS and Android will detect the related account and will then prompt the user to sign-in to the account.
 
 Available organization allowed accounts mode configuration keys for Outlook include the following:
+
 - `IntuneMAMAllowedAccountsOnly`
 - `IntuneMAMUPN`
 - `com.microsoft.intune.mam.AllowedAccountUPNs`
@@ -95,7 +99,7 @@ For more information on the settings that need to be configured to deploy organi
 
 ### Configuration process for managed devices
 
-When you create an app configuration policy to be applied to a managed device in Intune, you specifically choose **Managed devices**. Managed devices are those devices that are managed by Intune or other unified endpoint management provider. The app, in this case Microsoft Outlook, must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices. 
+When you create an app configuration policy to be applied to a managed device in Intune, you specifically choose **Managed devices**. Managed devices are those devices that are managed by Intune or other unified endpoint management provider. The app, in this case Microsoft Outlook, must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices.
 
 For more information about creating an app configuration policy in Intune, see [Create an app configuration policy](/mem/intune/apps/app-configuration-policies-use-ios#create-an-app-configuration-policy) for iOS/iPadOS devices and [Create an app configuration policy](/mem/intune/apps/app-configuration-policies-use-android#create-an-app-configuration-policy) for Android Enterprise devices. In addition, see [Email apps](/mem/intune/apps/app-configuration-policies-use-android#email-apps) for Android Enterprise devices.
 
@@ -104,6 +108,7 @@ For more information about creating an app configuration policy in Intune, see [
 Outlook for iOS/iPadOS and Android offers administrators the ability to customize the default configuration for several in-app settings. This capability is offered for both enrolled devices via any UEM provider and for devices that aren't enrolled when Outlook for iOS/iPadOS and Android has an Intune App Protection Policy applied.
 
 Within Intune, you can create an app configuration policy that allows you to set the following types of configuration settings:
+
 - Outlook configuration settings
 - Microsoft Tunnel for Mobile Application Management settings
 - S/MIME settings
@@ -115,6 +120,7 @@ Within Intune, you can create an app configuration policy that allows you to set
 ### Outlook configuration settings
 
 In Intune, you can use an app configuration policy to set Outlook specific configuration settings for iOS/iPadOS and Android platforms. These settings are divided into the following categories:
+
 - **General app configuration** settings
 - **Data Protection configuration** settings
 - **Sync contact fields to native contacts app configuration** settings
@@ -178,13 +184,13 @@ When you use the Microsoft Tunnel VPN Gateway, you can extend Tunnel support by 
 > [!NOTE]
 > This capability is available when you add Microsoft Intune Plan 2 or Microsoft Intune Suite as an add-on license. For more information, see [Use Intune Suite add-on capabilities](/mem/intune/fundamentals/intune-add-ons).
 
-For more information about Microsoft Tunnel for MAM, see [Microsoft Tunnel for Mobile Application Management](\memdocs\intune\protect\microsoft-tunnel-mam).
+For more information about Microsoft Tunnel for MAM, see [Microsoft Tunnel for Mobile Application Management](/mem/intune/protect/microsoft-tunnel-mam).
 
 ### S/MIME settings
 
-Secure Multipurpose Internet Mail Extensions (S/MIME) is a specification that allows users to send and receive digitally signed and encrypted emails. You can use an app configuration policy in Intune to configure your S/MIME settings for Outlook on iOS/iPadOS devices or Android devices. You can enable Outlook S/MIME settings to always sign and/or always encrypt on iOS/iPadOS and Android devices when using the **Managed apps** configuration option. 
+Secure Multipurpose Internet Mail Extensions (S/MIME) is a specification that allows users to send and receive digitally signed and encrypted emails. You can use an app configuration policy in Intune to configure your S/MIME settings for Outlook on iOS/iPadOS devices or Android devices. You can enable Outlook S/MIME settings to always sign and/or always encrypt on iOS/iPadOS and Android devices when using the **Managed apps** configuration option.
 
-S/MIME settings for Outlook can be configured by selecting the available options in an app configuration policy, or by using specific keys and values. When you select the options within the app configuration policy, you can choose from standard options. 
+S/MIME settings for Outlook can be configured by selecting the available options in an app configuration policy, or by using specific keys and values. When you select the options within the app configuration policy, you can choose from standard options.
 
 The following table provides a list of the **Sync contact fields to native contacts app configuration** settings for Outlook:
 

@@ -12,7 +12,7 @@ author: dmcwee
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 - mde-linux
@@ -25,7 +25,6 @@ ms.date: 01/19/2023
 # Deploy Microsoft Defender for Endpoint on Linux with Saltstack
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 
@@ -58,6 +57,7 @@ In addition, for Saltstack deployment, you need to be familiar with Saltstack ad
     ```bash
     sudo salt '*' test.ping
     ```
+
 - The Saltstack master has a file server location where the Microsoft Defender for Endpoint files can be distributed from (by default Saltstack uses the /srv/salt folder as the default distribution point)
 
 ## Download the onboarding package
@@ -77,13 +77,16 @@ Download the onboarding package from Microsoft Defender portal.
     ```bash
     ls -l
     ```
+
     ```Output
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip -d /srv/salt/mde
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: /srv/salt/mde/mdatp_onboard.json
@@ -114,13 +117,14 @@ Create a SaltState state file in your configuration repository (typically `/srv/
   ```bash
   cat /srv/salt/install_mdatp.sls
   ```
+
   ```output
   add_ms_repo:
     pkgrepo.managed:
       - humanname: Microsoft Defender Repository
       {% if grains['os_family'] == 'Debian' %}
       - name: deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/[distro]/[version]/[channel] [codename] main
-      - dist: [codename] 
+      - dist: [codename]
       - file: /etc/apt/sources.list.d/microsoft-[channel].list
       - key_url: https://packages.microsoft.com/keys/microsoft.asc
       - refresh: true
@@ -160,7 +164,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
     - humanname: Microsoft Defender Repository
     {% if grains['os_family'] == 'Debian' %}
     - name: deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
-    - dist: [codename] 
+    - dist: [codename]
     - file: /etc/apt/sources.list.d/microsoft-[channel].list
     - key_url: https://packages.microsoft.com/keys/microsoft.asc
     - refresh: true
@@ -176,7 +180,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
     pkg.installed:
     - name: matp
     - required: add_ms_repo
-    
+
     copy_mde_onboarding_file:
     file.managed:
     - name: /etc/opt/microsoft/mdatp/mdatp_onboard.json
@@ -191,13 +195,15 @@ Create a SaltState state file in your configuration repository (typically `/srv/
     ```bash
     cat /srv/salt/uninstall_mdatp.sls
     ```
+
     ```Output
     remove_mde_onboarding_file:
       file.absent:
         - name: /etc/opt/microsoft/mdatp/mdatp_onboard.json
     ```
 
-- Add the offboarding file deployment to the `uninstall_mdatp.sls` file after the `remove_mde_onboarding_file` state defined in the previous section
+- Add the offboarding file deployment to the `uninstall_mdatp.sls` file after the `remove_mde_onboarding_file` state defined in the previous section.
+
     ```Output
     offboard_mde:
       file.managed:
@@ -205,7 +211,8 @@ Create a SaltState state file in your configuration repository (typically `/srv/
         - source: salt://mde/mdatp_offboard.json
     ```
 
-- Add the removal of the MDATP package to the `uninstall_mdatp.sls` file after the `offboard_mde` state defined in the previous section
+- Add the removal of the MDATP package to the `uninstall_mdatp.sls` file after the `offboard_mde` state defined in the previous section.
+
     ```Output
     remove_mde_packages:
       pkg.removed:
@@ -213,7 +220,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
     ```
 
     The complete uninstall state file should look similar to the following output:
-    
+
     ```Output
     remove_mde_onboarding_file:
       file.absent:
@@ -247,6 +254,7 @@ Now apply the state to the minions. The below command applies the state to machi
     ```bash
     salt 'mdetest*' cmd.run 'mdatp connectivity test'
     ```
+
     ```bash
     salt 'mdetest*' cmd.run 'mdatp health'
     ```
@@ -276,5 +284,6 @@ When upgrading your operating system to a new major version, you must first unin
 - [Manage apt-packages](https://docs.Saltstack.com/Saltstack/latest/collections/Saltstack/builtin/apt_module.html)
 
 ## See also
+
 - [Investigate agent health issues](health-status.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

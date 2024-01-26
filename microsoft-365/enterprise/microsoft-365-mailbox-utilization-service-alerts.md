@@ -62,15 +62,15 @@ If an admin increases the Recoverable Items Quota, they should also make sure th
 
 Archive retention policies may be configured in a variety of ways, depending on your organization’s needs. For detailed information about retention policies, see [Retention tags and retention policies in Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies). An admin may view existing retention policies by running the following command:
 
-   ```powershell
-   Get-RetentionPolicy | FL
-   ```
+```powershell
+Get-RetentionPolicy | FL
+```
 
 Retention policies may be applied to and take different actions on mailboxes with or without archives. The following is a brief overview of common archive retention policy actions:
 
-* MovePrimaryToArchive and MoveDumpsterToArchive instruct the retention policy to move the contents of the main mailbox, or Recoverable Items folder respectively, to the mailbox’s archive once the policy’s conditions have been met. These tags are set by admins and apply regardless of a user's individual settings.
-    * The retention policy applied to moving Recoverable Items content should be relatively short to ensure the user’s primary mailbox does not reach its Recoverable Items quota.
-* A Personal Archive tag means this policy may be applied by users to their personal folders to archive content on the specified schedule.
+- MovePrimaryToArchive and MoveDumpsterToArchive instruct the retention policy to move the contents of the main mailbox, or Recoverable Items folder respectively, to the mailbox’s archive once the policy’s conditions have been met. These tags are set by admins and apply regardless of a user's individual settings.
+  - The retention policy applied to moving Recoverable Items content should be relatively short to ensure the user’s primary mailbox does not reach its Recoverable Items quota.
+- A Personal Archive tag means this policy may be applied by users to their personal folders to archive content on the specified schedule.
 
 ### MRM retention policies do not function as expected
 
@@ -84,5 +84,5 @@ If you do not resolve the quota issues, you can expect to see this type of servi
 
 ## More information
 
-- For information about troubleshooting and resolving archive mailbox issues, see [Microsoft Purview troubleshooting](/office365/troubleshoot/microsoft-365-compliance-welcome).
+- For information about troubleshooting and resolving archive mailbox issues, see [Microsoft Purview troubleshooting](/microsoft-365/troubleshoot/microsoft-365-compliance-welcome).
 - For guidance about identifying the holds placed on a mailbox, see [How to identify the type of hold placed on a mailbox](../compliance/ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md).
