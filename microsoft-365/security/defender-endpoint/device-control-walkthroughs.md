@@ -146,11 +146,11 @@ To grant access to set of authorized USBs devices, set up a group to identify th
 
 :::image type="content" source="media/device-control-authorized-usb-settings.png" alt-text="Screenshot depicting settings for a group of authorized devices." lightbox="media/device-control-authorized-usb-settings.png":::  
 
-In our example, the authorized USBs group contains a single device identified by its `InstancePathId`. Before deploying the sample, you can change the value to the `InstancePathId` for a test device. See LINK NEEDED Using Windows Device Manager to determine device properties and LINK NEEDED Using reports and advanced hunting to determine properties of devices for details on how to find the correct value.
+In our example, the authorized USBs group contains a single device identified by its `InstancePathId`. Before deploying the sample, you can change the value to the `InstancePathId` for a test device. See [Using Windows Device Manager to determine device properties](device-control-policies-entries.md#using-windows-device-manager-to-determine-device-properties) and [Using reports and advanced hunting](device-control-policies-entries.md#using-reports-and-advanced-hunting-to-determine-properties-of-devices) to determine properties of devices for details on how to find the correct value.
 
 Notice that the authorized USB group is excluded from the deny-all policy. This ensures that those devices are evaluated for the other policies. Policies aren't evaluated in order, so each policy should be correct if evaluated independently. Once the policy is deployed, reinsert the approved USB device. You should see that there's full access to the device. Insert another USB, and confirm that access is blocked for that device.
 
-Device control has lots of ways to group devices based on properties. See LINK NEEDED List of device properties for the full list.
+Device control has lots of ways to group devices based on properties. For more information, see [Device control policies and entries in Microsoft Defender for Endpoint](device-control-policies-entries.md).
 
 ## Step 3: Allow different levels of access for different types of devices
 
