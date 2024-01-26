@@ -53,8 +53,6 @@ landingContent:
             url: /syntex/archive/archive-states.md
           - text: End user experience
             url: /syntex/archive/archive-end-user.md
-          - text: FAQs
-            url: /syntex/archive/archive-faq.md
 
 # Card 4
   - title: Security & compliance
