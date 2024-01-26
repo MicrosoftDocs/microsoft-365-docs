@@ -50,9 +50,9 @@ To further refine access to devices, device control uses policies.  A policy is 
 
 | Management tool    | Operating system | How rules and groups are managed |
 |---|---|---|
-| Intune – Device control policy |  Windows | Device and printer groups can be managed as reusable settings and included in rules. Not all features are available in the device control policy (See LINK NEEDED Managing Device Control in Intune (Windows) for details) |
-| Intune – Custom    | Windows | Each group/rule is stored as an XML string in custom configuration policy. The OMA-URI contains the GUID of the group/rule.  The GUID needs to be generated. |
-| Group Policy | Windows | The groups and rules are defined in separate XML settings in the GPO – Define device control policy groups, and Define device control policy rules. |
+| Intune – Device control policy |  Windows | Device and printer groups can be managed as reusable settings and included in rules. Not all features are available in the device control policy (see [Deploy and manage device control with Microsoft Intune](device-control-deploy-manage-intune.md)) |
+| Intune – Custom    | Windows | Each group/rule is stored as an XML string in custom configuration policy. The OMA-URI contains the GUID of the group/rule. The GUID must be generated. |
+| Group Policy | Windows | The groups and rules are defined in separate XML settings in the Group Policy Object (see [Deploy and manage device control with Group Policy](device-control-deploy-manage-gpo.md)). |
 | Intune | Mac | The rules and policies are combined into a single JSON and included in the mobileconfig file that is deployed via Intune |
 | JAMF | Mac | The rules and policies are combined into a single JSON and configured via JAMF as the Device Control Policy |
 
@@ -219,8 +219,8 @@ The following table provides more context for the XML code snippet:
 | `Option` | If type is `AuditAllowed` | - `0`: nothing<br/>- `1`: nothing <br/>- `2`: send event |
 | `Option` | If type is `AuditDenied` | - `0`: nothing <br/>- `1`: show notification <br/>- `2`: send event <br/>- `3`: show notification and send event |
 | `AccessMask` | Defines the access | See the following section [Understand mask access](#understand-mask-access-windows) |
-| `Sid` | Local user SID or user SID group or the SID of the Microsoft Entra object or the Object ID. It defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the device. | SID | 
-| `ComputerSid` | Local computer SID or computer SID group or the SID of the Microsoft Entra object or the Object Id. It defines whether to apply this policy over a specific device or device group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the device. If you want to apply an Entry to a specific user and specific device, add both SID and ComputerSID into the same Entry. | SID | 
+| `Sid` | Local user SID or user SID group, or the SID of the Microsoft Entra object or the Object ID. It defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the device. | SID | 
+| `ComputerSid` | Local computer SID or computer SID group, or the SID of the Microsoft Entra object or the Object Id. It defines whether to apply this policy over a specific device or device group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the device. If you want to apply an Entry to a specific user and specific device, add both SID and ComputerSID into the same Entry. | SID | 
 | `Parameters` | Condition for an entry, such as network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See LINK NEEDED Advanced Conditions  |
 
 
