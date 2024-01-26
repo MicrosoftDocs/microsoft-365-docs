@@ -13,7 +13,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-- essentials-accountability
+- essentials-privacy
+- essentials-compliance
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 08/07/2023
