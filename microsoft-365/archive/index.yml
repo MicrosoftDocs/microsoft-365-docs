@@ -27,7 +27,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Introduction to Microsoft 365 Archive?
+          - text: Introduction to Microsoft 365 Archive
             url: /microsoft-365/syntex/archive/archive-overview.md
           - text: FAQs
             url: /microsoft-365/syntex/archive/archive-faq.md
@@ -51,15 +51,13 @@ landingContent:
             url: /syntex/archive/archive-manage.md
           - text: Archive states
             url: /syntex/archive/archive-states.md
-          - text: Compliance features
-            url: /syntex/archive/archive-compliance.md.md
           - text: End user experience
             url: /syntex/archive/archive-end-user.md
           - text: FAQs
             url: /syntex/archive/archive-faq.md
 
 # Card 4
-  - title: Security and compliance
+  - title: Security & compliance
     linkLists:
       - linkListType: overview
         links:
