@@ -128,7 +128,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
        - **7 days**
        - **30 days**
        - **Never expire**
-       - **Specific date**: The maximum value is 90 days from today.
+       - **Specific date**: The maximum value is 30 days from today.
      - **Block entry note (optional)**: Enter optional information about why you're blocking this item.
 
      When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
@@ -283,7 +283,7 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
        - **1 day**
        - **7 days**
        - **30 days**
-       - **Specific date**: The maximum value is 90 days from today.
+       - **Specific date**: The maximum value is 30 days from today.
 
        For spoofed senders, this value is meaningless, because entries for spoofed senders never expire.
 
