@@ -33,7 +33,7 @@ This is Step 1 in a solution designed to complete a **Cross-tenant SharePoint mi
 
 ## Before you begin
 
-- **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. If not, [Download SharePoint Online Management Shell from Official Microsoft Download Center](/download/details.aspx?id=35588).
+- **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. If not, [Download SharePoint Online Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588).
 - Be a SharePoint Online admin or Microsoft 365 Global admin on both the source and target tenants
 
 
