@@ -28,9 +28,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Introduction to Microsoft 365 Archive
-            url: /microsoft-365/syntex/archive/archive-overview.md
+            url: /microsoft-365/syntex/archive/archive-overview
           - text: FAQs
-            url: /microsoft-365/syntex/archive/archive-faq.md
+            url: /microsoft-365/syntex/archive/archive-faq
 
 # Card 2
   - title: Get started
