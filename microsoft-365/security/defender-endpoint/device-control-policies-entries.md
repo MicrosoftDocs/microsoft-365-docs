@@ -221,8 +221,7 @@ The following table provides more context for the XML code snippet:
 | `AccessMask` | Defines the access | See the following section [Understand mask access](#understand-mask-access-windows) |
 | `Sid` | Local user SID or user SID group, or the SID of the Microsoft Entra object or the Object ID. It defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the device. | SID | 
 | `ComputerSid` | Local computer SID or computer SID group, or the SID of the Microsoft Entra object or the Object Id. It defines whether to apply this policy over a specific device or device group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the device. If you want to apply an Entry to a specific user and specific device, add both SID and ComputerSID into the same Entry. | SID | 
-| `Parameters` | Condition for an entry, such as network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See LINK NEEDED Advanced Conditions  |
-
+| `Parameters` | Condition for an entry, such as network condition. | Can add groups (non-device types) or even put parameters into parameters. For more information, see the [advanced conditions](#advanced-conditions) section (in this article).  |
 
 #### Understand mask access (Windows)
 
