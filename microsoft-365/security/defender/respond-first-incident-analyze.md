@@ -73,7 +73,7 @@ The following sections contain tutorials and videos of Microsoft Defender XDR fe
 
 Ransomware continues to be a significant threat to organizations. Microsoft has the following resources to help you investigate and respond to ransomware attacks:
 
-- **Guides**: [From detection to protection: Microsoft's guide to combating ransomware attacks](/security/ransowmare)
+- **Guides**: [From detection to protection: Microsoft's guide to combating ransomware attacks](/security/ransowmare/)
 - **Tutorial**: [Ransomware investigation playbook](/security/operations/incident-response-playbook-dart-ransomware-approach)
 - **Video**: [Investigating ransomware attacks in Microsoft Defender XDR (part 1)](https://youtu.be/eLCrGe4-Zzc)
 - **Video**: [Investigating ransomware attacks in Microsoft Defender XDR (part 2)](https://youtu.be/q1s7lm3O9Sc)
