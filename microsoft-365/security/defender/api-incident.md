@@ -32,7 +32,7 @@ ms.date: 02/08/2023
 
 **Applies to:**
 
-- [Microsoft Defender XDR](/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/p/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview?view=graph-rest-1.0&preserve-view=true).

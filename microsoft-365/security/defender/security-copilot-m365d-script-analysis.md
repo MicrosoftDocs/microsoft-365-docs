@@ -51,7 +51,7 @@ This guide describes what the script analysis capability is and how it works, in
 
 ## Analyze a script or code
 
-You can access the script analysis capability in the alert timeline within an incident and in the [device timeline](/defender-endpoint/device-timeline-event-flag.md).
+You can access the script analysis capability in the alert timeline within an incident and in the [device timeline](/microsoft-365/security/defender-endpoint/device-timeline-event-flag).
 
 To begin analysis, perform the following steps:
 
