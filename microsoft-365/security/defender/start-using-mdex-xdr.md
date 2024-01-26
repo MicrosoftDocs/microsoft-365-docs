@@ -2,7 +2,7 @@
 title: How to use the Microsoft Defender Experts for XDR service
 ms.reviewer:
 description: Defender Experts for XDR helps prioritize and customize recommendations to fit your environment
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts, threat hunting and analysis
+keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Managed response in Teams, real-time visibility with XDR experts, threat hunting and analysis
 ms.service: defender-experts
 ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
@@ -16,9 +16,10 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - essentials-manage
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/18/2024
+ms.date: 01/23/2024
 ---
 
 # Start using Defender Experts for XDR service
@@ -131,7 +132,7 @@ Once you turn on chat on Teams, a new team named **Defender Experts team** is cr
 
 **Important reminders when using the Teams chat:**
 
-- Only reply to posts (announcing managed response is published on an incident) created by Defender Experts. When you create a new post, our experts might not be able to see it.
+- Only reply to posts (announcing managed response is published on an incident) created by Defender Experts. When you create a new post, our experts will not be able to see it.
 - Tag or mention our experts by typing *@Defender Experts* in your replies, so they are notified to join the chat conversation.
 - Don’t attach any attachments (for example, files for analysis) in the chat. For security reasons, Defender Experts won't be able to view the attachments. Instead, send them to appropriate submissions channels or provide links where they can be found in Microsoft Defender XDR portal.
 

@@ -16,8 +16,9 @@ ms.collection:
 - Adm_o365
 search.appverid: MET150
 description: "Learn about Microsoft 365 E3 and E5 Extra Features and how to assign licenses for it to your users."
-ms.date: 01/05/2024
+ms.date: 01/25/2024
 ---
+
 # Understand the Microsoft 365 E3 and E5 Extra Features license
 
 > [!IMPORTANT]
@@ -34,13 +35,25 @@ The new Microsoft 365 E3 or E5 Extra Features product is now included in this li
 
 ## What’s provided by Microsoft 365 E3 or E5 Extra Features?
 
-Microsoft 365 E3 or E5 Extra Features provides the following features for your users:
+Microsoft 365 E3 or E5 Extra Features provides additional features for your users. Some features are only available for E5 subscriptions. The following table indicates which features are available in Microsoft 365 E3 Extra Features and Microsoft 365 E5 Extra Features subscriptions.
 
-- [Copilot](https://www.microsoft.com/bing/chat/enterprise/?form=MA13FV)&mdash;An AI-powered copilot for the web, with commercial data protection. It ensures user and business data are protected, won’t leak outside the organization and won’t be used to train the large language models.
-- [Microsoft Clipchamp](https://www.microsoft.com/microsoft-365/blog/2023/07/31/introducing-microsoft-clipchamp-unlock-the-power-of-video-at-work/)&mdash;A video editing tool for anyone to create professional-looking videos, even with no prior experience.
-- [Microsoft Loop](https://www.microsoft.com/microsoft-365/blog/2023/03/22/new-microsoft-loop-app-is-built-for-modern-co-creation/)&mdash;A co-creation app that lets teams bring together all the parts of a project in one place and collaborate across the apps and devices they already use.
-- [Avatars for Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/avatars-for-microsoft-teams-in-public-preview/ba-p/3774421)&mdash;A service that lets users create personalized avatars for Teams meetings that express their appearance, style, or mood for the day. 
-- [Windows Autopatch](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-autopatch-has-arrived/ba-p/3570119)&mdash;A service that manages and automates Windows 10, Windows 11, Microsoft Edge, Microsoft Teams and Microsoft 365 software updates.
+|Feature  |Microsoft 365 E3 Extra Features  |Microsoft 365 E5 Extra Features  |
+|---------|---------|---------|
+|Avatars for Teams    | Yes       | Yes         |
+|Avatars for Teams (additional)     | Yes       | Yes         |
+|Microsoft Copilot     | Yes       | Yes         |
+|Microsoft Clipchamp     | Yes       | Yes         |
+|Microsoft Loop     | Yes       | Yes         |
+|Windows Autopatch     | Yes       | Yes         |
+|Customer Lockbox     | No        | Yes        |
+|Defender for IoT - Enterprise IoT Security     | No        | Yes        |
+|Immersive spaces for Teams     | No        | Yes        |
+|Information Protection and Governance Analytics - Premium     | No        | Yes        |
+|Microsoft Defender Application Guard for Office     | No        | Yes        |
+|Machine Learning-Based Classification     | No        | Yes        |
+|Microsoft Endpoint DLP     | No        | Yes        |
+|Microsoft Insider Risk Management     | No        | Yes        |
+|Safe Documents     | No        | Yes        |
 
 ## Assign the Microsoft 365 E3 or E5 Extra Features license to users
 

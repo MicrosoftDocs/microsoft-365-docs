@@ -1,23 +1,20 @@
 ---
 title: Configure general Defender for Endpoint settings 
 description: Use the settings page to configure general settings, permissions, apis, and rules.
-keywords: settings, general settings, permissions, apis, rules
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- essentials-manage
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 01/19/2024
 ---
 
 # Configure general Defender for Endpoint settings
