@@ -219,5 +219,3 @@ Vulnerable software is an application or code that has security flaws or weaknes
 ### Vulnerable drivers
 
 Despite strict requirements and reviews imposed on code running in kernel, device drivers remain susceptible to various types of vulnerabilities and bugs. Examples include memory corruption and arbitrary read and write bugs, which can be exploited by attackers to execute more significant malicious and destructive actions -– actions typically restricted in user mode. Terminating critical processes on a device is an example of such malicious action.  
-
-Vulnerable drivers are typically benign and not a threat, devoid of malicious intent. However, they might possess vulnerabilities that can be exploited by attackers to facilitate malicious actions, such as terminating critical processes on a device.
