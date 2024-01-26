@@ -102,7 +102,7 @@ Admins can perform the following tasks for Loop workspaces, which are containers
   - get container details including labels, storage, owners etc.
   - delete, recover and purge Loop workspaces (note that the Loop app workspaces views do not yet reflect the changes, so a user would need to visit a page link for a workspace that's recovered in order to see it again)
   - set sharing settings at a tenant level
-  - get and set sensitivity labels, conditional access policy, block download policy
+  - get and set sensitivity labels
 
 See more about how to use PowerShell to perform these tasks on Loop application containers in the [Consuming Tenant admin](/sharepoint/dev/embedded/concepts/admin-exp/cta) article.
 
@@ -112,6 +112,7 @@ See more about how to use PowerShell to perform these tasks on Loop application 
   - add storage to enumeration list of Loop workspace
   - control external sharing of a Loop workspace
   - **Multi-Geo capabilities**, including creation of .loop files in a user's Loop workspaces in the geo that matches the user's preferred data location, and **Multi-Geo rehome** of Loop workspaces and .loop files as needed
+  - get and set conditional access policy, block download policy
 - SharePoint Admin Center
   - Loop workspaces page for active and deleted workspaces, restore, permanently delete, sort, filter, storage information
   - search in active and deleted
