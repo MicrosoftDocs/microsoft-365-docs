@@ -58,6 +58,12 @@ You can use the [Microsoft Teams setup guide](https://admin.microsoft.com/Adminp
 
 To enable Copilot in Teams to reference meeting content after the meeting has ended, transcription or meeting recording must be enabled. To learn more about configuring transcription and recording, see [Configure transcription and captions for Teams meetings](/microsoftteams/meeting-transcription-captions) and [Teams meeting recording](/microsoftteams/meeting-recording).
 
+### Microsoft Teams Phone
+
+Copilot in [Teams Phone](/microsoftteams/what-is-phone-system-in-office-365) supports both voice over Internet Protocol (VOIP) and public switched telephone network (PSTN) calls. For support across VoIP calls, you'll need a Microsoft Copilot for Microsoft 365 license. To use Copilot for PSTN calls, you'll need a Teams Phone license and a calling plan in addition to the Microsoft Copilot for Microsoft 365 license.
+
+To enable Copilot in Teams Phone, you need to turn on transcription or recording. For VoIP callers, all participants see a notification that the call is being transcribed or recorded. For PSTN callers, all participants will hear an announcement that the call is being recorded.
+
 ### Microsoft Loop
 
 To use Microsoft Copilot for Microsoft 365 with Microsoft Loop, you must have Loop enabled for your tenant. This can be done in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop) or the [Microsoft 365 Apps admin center](https://config.office.com) under **Customization** \| **Policy Management**. For more information, see [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration) and [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).
