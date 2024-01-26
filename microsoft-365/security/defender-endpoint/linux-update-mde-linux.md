@@ -73,13 +73,13 @@ sudo crontab -e
 You might see:
 
 ```output
-0****/etc/opt/microsoft/mdatp/logrorate.sh
+0 * * * * /etc/opt/microsoft/mdatp/logrorate.sh
 ```
 
 And
 
 ```output
-02**sat /bin/mdatp scan quick>~/mdatp_cron_job.log
+0 2 * * sat /bin/mdatp scan quick>~/mdatp_cron_job.log
 ```
 
 See [Schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md)
