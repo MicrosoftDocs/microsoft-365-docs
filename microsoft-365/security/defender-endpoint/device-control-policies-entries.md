@@ -278,7 +278,7 @@ The following table provides more context for the JSON code snippet:
 | `enforcement $options` | If enforcement $type is auditAllow | `send_event`: Sends telemetry |
 | `enforcement $options` | If enforcement $type is auditDeny | <br/>- `send_event`: Sends telemetry <br/>- `show_notification`: Displays block message to user |
 | `$type` | The type of entry.  The type determines the operations that can be protected by device control | The `$type` attributes can be any of the following values:<br/>- `removableMedia`<br/>- `appleDevice`<br/>- `PortableDevice`<br/>- `bluetoothDevice` | 
-| `access` | A list of operations that this entry grants | See LINK NEEDED Understand access on Mac | 
+| `access` | A list of operations that this entry grants | See the next section, "Understand access on Mac" | 
 
 #### Understand access (Mac)
 
