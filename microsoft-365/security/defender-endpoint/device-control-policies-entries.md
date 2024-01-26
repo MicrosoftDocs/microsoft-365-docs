@@ -192,7 +192,7 @@ You can configure entries using Intune, an XML file in Windows, or a JSON file o
 
 ### [**Intune**](#tab/Removable)
 
-The following screenshot shows how you can manage entries in Intune. The **Access mask** field has options, such as **Read** (Disk Level Read = 1), **Write** (Disk Level Write = 2), **Execute** (Disk Level Execute = 4) and **Print** (Print = 64). Not all features are shown in the Intune user interface. For more information, see LINK NEEDED Managing Device Control in Intune (Windows).
+The following screenshot shows how you can manage entries in Intune. The **Access mask** field has options, such as **Read** (Disk Level Read = 1), **Write** (Disk Level Write = 2), **Execute** (Disk Level Execute = 4) and **Print** (Print = 64). Not all features are shown in the Intune user interface. For more information, see [Deploy and manage device control with Intune](device-control-deploy-manage-intune.md).
 
 ### [**XML (Windows)**](#tab/XML)
 
