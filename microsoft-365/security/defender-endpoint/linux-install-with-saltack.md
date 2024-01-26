@@ -19,7 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 01/19/2023
+ms.date: 1/26/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Saltstack
@@ -47,11 +47,11 @@ This article describes how to deploy Defender for Endpoint on Linux using Saltst
 
 Before you get started, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.
 
-In addition, for Saltstack deployment, you need to be familiar with Saltstack administration, have Saltstack installed, have configured the Master and Minions, and know how to apply states. Saltstack has many ways to complete the same task. These instructions assume availability of supported Saltstack modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Saltstack documentation](https://docs.saltproject.io/) for details.
+In addition, for Saltstack deployment, you need to be familiar with Saltstack administration, have Saltstack installed, configure the Master and Minions, and know how to apply states. Saltstack has many ways to complete the same task. These instructions assume availability of supported Saltstack modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Saltstack documentation](https://docs.saltproject.io/) for details.
 
-- Saltstack needs to be installed on at least one computer (Saltstack calls the computer as the master).
-- The Saltstack master must have accepted the managed nodes (Saltstack calls the nodes as minions) connections.
-- The Saltstack minions must be able to resolve communication to the Saltstack master (be default the minions try to communicate with a machine named 'salt').
+- Saltstack is installed on at least one computer (Saltstack calls the computer as the master).
+- The Saltstack master accepted the managed nodes (Saltstack calls the nodes as minions) connections.
+- The Saltstack minions are able to resolve communication to the Saltstack master (be default the minions try to communicate with a machine named 'salt').
 - Rung this ping test:
 
     ```bash
@@ -98,18 +98,18 @@ Create a SaltState state file in your configuration repository (typically `/srv/
 
 - Add the Defender for Endpoint repository and key, `install_mdatp.sls`:
 
-    Defender for Endpoint on Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
+    Defender for Endpoint on Linux can be deployed from one of the following channels (described as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.
 
     The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
-    In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
+    In order to preview new features and provide early feedback, we recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
     > [!WARNING]
     > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
     Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
 
-    In the following commands, replace *[distro]* and *[version]* with the information you've identified.
+    In the following commands, replace *[distro]* and *[version]* with your information.
 
     > [!NOTE]
     > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle utilize, replace *[version]* with the version of Oracle Linux.
@@ -137,7 +137,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
       {% endif %}
   ```
 
-- Add the package installed state to `install_mdatp.sls` after the `add_ms_repo` state defined above
+- Add the package installed state to `install_mdatp.sls` after the `add_ms_repo` state as previously defined.
 
     ```Output
     install_mdatp_package:
@@ -146,7 +146,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
         - required: add_ms_repo
     ```
 
-- Add the onboarding file deployment to `install_mdatp.sls` after the `install_mdatp_package` state defined above
+- Add the onboarding file deployment to `install_mdatp.sls` after the `install_mdatp_package` as previously defined.
 
     ```Output
     copy_mde_onboarding_file:
@@ -156,7 +156,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
         - required: install_mdatp_package
     ```
 
-    The completed install state file should look similar to this:
+    The completed install state file should look similar to this output:
 
     ```Output
     add_ms_repo:
@@ -267,7 +267,7 @@ Now apply the state to the minions. The below command applies the state to machi
 
 ## Log installation issues
 
-For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Log installation issues](linux-resources.md#log-installation-issues).
+For more information on how to find the automatically generated log that's created by the installer when an error occurs, see [Log installation issues](linux-resources.md#log-installation-issues).
 
 ## Operating system upgrades
 
@@ -276,11 +276,8 @@ When upgrading your operating system to a new major version, you must first unin
 ## References
 
 - [Add or remove YUM repositories](https://docs.Saltstack.com/Saltstack/latest/collections/Saltstack/builtin/yum_repository_module.html)
-
 - [Manage packages with the dnf package manager](https://docs.Saltstack.com/Saltstack/latest/collections/Saltstack/builtin/dnf_module.html)
-
 - [Add and remove APT repositories](https://docs.Saltstack.com/Saltstack/latest/collections/Saltstack/builtin/apt_repository_module.html)
-
 - [Manage apt-packages](https://docs.Saltstack.com/Saltstack/latest/collections/Saltstack/builtin/apt_module.html)
 
 ## See also
