@@ -53,10 +53,10 @@ To further refine access to devices, device control uses policies.  A policy is 
 | Intune – Device control policy |  Windows | Device and printer groups can be managed as reusable settings and included in rules. Not all features are available in the device control policy (see [Deploy and manage device control with Microsoft Intune](device-control-deploy-manage-intune.md)) |
 | Intune – Custom    | Windows | Each group/rule is stored as an XML string in custom configuration policy. The OMA-URI contains the GUID of the group/rule. The GUID must be generated. |
 | Group Policy | Windows | The groups and rules are defined in separate XML settings in the Group Policy Object (see [Deploy and manage device control with Group Policy](device-control-deploy-manage-gpo.md)). |
-| Intune | Mac | The rules and policies are combined into a single JSON and included in the mobileconfig file that is deployed via Intune |
-| JAMF | Mac | The rules and policies are combined into a single JSON and configured via JAMF as the Device Control Policy |
+| Intune | Mac | The rules and policies are combined into a single JSON and included in the `mobileconfig` file that is deployed by using Intune |
+| JAMF | Mac | The rules and policies are combined into a single JSON and configured by using JAMF as the device control policy (see [Device Control for macOS](mac-device-control-overview.md)) |
 
-Rules and groups are identified by Global Unique ID (GUIDs).  If device control policies are deployed using a management tool other than the Intune – Device Control Policy, the GUIDs must be generated. This can be done easily via [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).
+Rules and groups are identified by Global Unique ID (GUIDs). If device control policies are deployed using a management tool other than Intune, the GUIDs must be generated. You can generate the GUIDs by using [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).
 
 For schema details, see [JSON schema for Mac](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/device_control_policy_schema.json).
 
