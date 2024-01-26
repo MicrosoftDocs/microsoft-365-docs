@@ -73,7 +73,7 @@ The following sections contain tutorials and videos of Microsoft Defender XDR fe
 
 Ransomware continues to be a significant threat to organizations. Microsoft has the following resources to help you investigate and respond to ransomware attacks:
 
-- **Guides**: [From detection to protection: Microsoft's guide to combating ransomware attacks](/security/ransowmare)
+- **Guides**: [From detection to protection: Microsoft's guide to combating ransomware attacks](/security/ransomware/)
 - **Tutorial**: [Ransomware investigation playbook](/security/operations/incident-response-playbook-dart-ransomware-approach)
 - **Video**: [Investigating ransomware attacks in Microsoft Defender XDR (part 1)](https://youtu.be/eLCrGe4-Zzc)
 - **Video**: [Investigating ransomware attacks in Microsoft Defender XDR (part 2)](https://youtu.be/q1s7lm3O9Sc)
@@ -82,9 +82,9 @@ Ransomware continues to be a significant threat to organizations. Microsoft has 
 
 Identifying and tracking modified, created, or stolen identities are essential to investigating phishing and BEC attacks. Use the following resources when investigating these attacks:
 
-- **Tutorial**: [Investigate malicious email](//microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)
+- **Tutorial**: [Investigate malicious email](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)
 - **Tutorial**: [Investigate users](investigate-users.md)
-- **Tutorial**: [Investigate a user account](//microsoft-365/security/defender-endpoint/investigate-user)
+- **Tutorial**: [Investigate a user account](/microsoft-365/security/defender-endpoint/investigate-user)
 - **Blog**: [Total Identity Compromise: Microsoft Incident Response lessons on securing Active Directory
 Identity compromise can also be investigated using Defender for Identity signals.](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/total-identity-compromise-microsoft-incident-response-lessons-on/ba-p/3753391)
 - **Tutorial**: [Example of a phishing email attack](first-incident-path-phishing.md)
