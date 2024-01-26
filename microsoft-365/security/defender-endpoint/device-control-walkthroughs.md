@@ -184,6 +184,6 @@ Device control also supports group SIDs. Change the SID in the read-only policy 
 ## Next steps
 
 - [Learn about device control policies and entries](device-control-policies-entries.md)
-- [Deploy and manage device control in Microsoft Defender for Endpoint with Microsoft Intune](device-control-deploy-manage-intune.md)
-- [Deploy and manage device control in Microsoft Defender for Endpoint with Group Policy](device-control-deploy-manage-gpo.md)
+- [Deploy and manage device control with Intune](device-control-deploy-manage-intune.md)
+- [Deploy and manage device control with Group Policy](device-control-deploy-manage-gpo.md)
 - [View device control reports](device-control-report.md)
