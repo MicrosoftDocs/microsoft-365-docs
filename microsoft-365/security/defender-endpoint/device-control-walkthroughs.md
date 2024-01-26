@@ -60,7 +60,7 @@ The status of device control (enabled/disabled, default enforcement, and last po
 
 Change the device control state to be enabled* on a test device. Make sure the policy is applied by checking [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
 
-:::image type="content" source="media/device-control-statusenabled.png" alt-text="Screenshot showing device control is enabled on a device.":::
+:::image type="content" source="media/device-control-statusenabled.png" alt-text="Screenshot showing device control is enabled on a device." lightbox="media/device-control-statusenabled.png":::
 
 In the test device, insert a USB drive. There are no restrictions; all types of access (read, write, execute, and print) are allowed. A record is created to show that a USB device was connected. You can use the following example advanced hunting query to see it:
 
