@@ -51,7 +51,7 @@ Microsoft 365 and Microsoft Defender for Office 365 contain several key features
 |[Train users](#train-users)|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|
 
 > [!NOTE]
-> For information about securing _privileged accounts_ (admin accounts), see [this topic](/security/compass/critical-impact-accounts).
+> For information about securing _privileged accounts_ (admin accounts), see [this topic](/purview/privileged-access-management).
 
 ## Increase sign-in security for priority accounts
 
