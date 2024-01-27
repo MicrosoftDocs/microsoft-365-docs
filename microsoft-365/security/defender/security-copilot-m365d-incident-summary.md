@@ -53,7 +53,7 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 - A summary of timelines of how the attack unfolded.
 - The assets involved in the attack.
 - Indicators of compromise (IOCs).
-- Names of [threat actors](/security/intelligence/microsoft-threat-actor-naming) involved.
+- Names of [threat actors](/microsoft-365/security/intelligence/microsoft-threat-actor-naming) involved.
 
 To summarize an incident, perform the following steps:
 
@@ -79,9 +79,9 @@ You can validate or report the results of the incident summary provided by Secur
 
 ## See also
 
-- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
+- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot)
 - [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
-- [Get started with Security Copilot](/security-copilot/get-started-security-copilot.md)
-- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot.md)
+- [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
+- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
