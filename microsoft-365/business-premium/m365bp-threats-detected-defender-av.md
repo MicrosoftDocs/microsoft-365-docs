@@ -78,7 +78,7 @@ To learn more about different threats, visit the <a href="https://www.microsoft.
 
 ## Related content
 
-[Secure Windows devices](/misc/m365bp-secure-windows-devices) (article)\
+[Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md) (article)\
 [Evaluate Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (article)\
 [How to turn on real-time and cloud-delivered antivirus protection](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) (article)\
 [How to turn on and use Microsoft Defender Antivirus from the Windows Security app](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (article)\
