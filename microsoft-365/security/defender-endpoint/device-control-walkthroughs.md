@@ -81,11 +81,7 @@ DeviceEvents
 
 This example query filters the events by `MediaClass`. The default behavior can be changed to deny all devices, or to exclude families of devices from device control. Change the default behavior to deny, and then set device control only to apply to removable storage.
 
-For Intune, use a custom profile to set the device control settings, as shown in the following screenshot:
-
-:::image type="content" source="media/device-control-intuneentries.png" alt-text="Screenshot showing Intune settings for device control." lightbox="media/device-control-intuneentries.png":::
-
-The previous screenshot lists these settings for Intune:
+For Intune, use a custom profile to set the device control settings, as follows: 
 
 - Set `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled` to `1`
 - Set `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` to `2` 
