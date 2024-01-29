@@ -115,9 +115,17 @@ Apart from these one-click actions, you can also receive managed responses from 
 > [!TIP]
 > You can also monitor the status of in-portal response actions in the [Action center](m365d-action-center.md). If a response action fails, try doing again from the **View device details** page. If you’d like to engage with Defender Experts for XDR, feel free to initiate a chat.
 
-3. For cards with required actions that you need to perform manually, select **I've completed this action** once you've performed them.
+3. For cards with required actions that you need to perform manually, select **I've completed this action** once you've performed them. Select **Yes, I've done it** if you have completed all the necessary actions.
 
 :::image type="content" source="../../media/xdr/ive-completed-this-action.png" alt-text="Screenshot of managed response action to isolate the device prod server." lightbox="../../media/xdr/ive-completed-this-action.png":::
+
+4. If you don't want to complete a required action right away, select **Skip**. An additional confirmation dialog is required to skip certain actions.
+
+##### Known issues
+
+- If you notice that any of the buttons on the action cards are grayed out, it could indicate that you do not have the necessary permissions to perform the action.
+- To resolve this issue, ensure that you are logged in to the Microsoft Defender XDR portal with the appropriate permissions. Most of the actions require that you have at least the **Security Operator** access.
+- If you still face issues, try navigating to **View device details** and complete the steps from there. This should help you complete the desired action without any further issues.
 
 ### Chat with Defender Experts
 
