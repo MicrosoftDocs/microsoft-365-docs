@@ -63,7 +63,7 @@ When tamper protection is set to audit or block mode, you can expect the followi
 - Creation of new files under Defender for Endpoint location is blocked
 - Deletion of Defender for Endpoint files is blocked
 - Renaming of Defender for Endpoint files is blocked
-- Commands to stop the agent fail
+- Commands to stop the agent (wdavdaemon) fail
 
 Here's an example of a system message in response to a blocked action:
 
