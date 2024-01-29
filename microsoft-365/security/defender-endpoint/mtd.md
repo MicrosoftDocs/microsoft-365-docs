@@ -1,16 +1,13 @@
 ---
 title: Microsoft Defender for Endpoint - Mobile Threat Defense
-ms.reviewer: 
+ms.reviewer: tdoucette
 description: Overview of Mobile Threat Defense in Microsoft Defender for Endpoint
 keywords: mobile, defender, Microsoft Defender for Endpoint, ios, mtd, android, security
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: sunasing
 author: sunasing
 ms.localizationpriority: medium
-ms.date: 12/07/2022
+ms.date: 01/28/2024
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -39,7 +36,7 @@ Microsoft Defender for Endpoint on Android and iOS provides the below key capabi
 
 |Capability|Description|
 |---|---|
-|Web Protection|Anti-phishing, blocking unsafe network connections, and support for custom indicators.|
+|Web Protection|Anti-phishing, blocking unsafe network connections, and support for custom indicators for URLs and domains. (File and IP indicators are not currently supported.)|
 |Malware Protection (Android-only)|Scanning for malicious apps.|
 |Jailbreak Detection (iOS-only)|Detection of jailbroken devices.|
 |Microsoft Defender Vulnerability Management (MDVM) |Vulnerability assessment of onboarded mobile devices. Includes OS and Apps vulnerabilities assessment for both Android and iOS. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about Microsoft Defender Vulnerability Management in Microsoft Defender for Endpoint.|
