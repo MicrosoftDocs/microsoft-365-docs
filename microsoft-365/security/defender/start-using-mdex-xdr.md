@@ -19,7 +19,7 @@ ms.collection:
   - essentials-manage
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/23/2024
+ms.date: 01/29/2024
 ---
 
 # Start using Defender Experts for XDR service
@@ -36,7 +36,7 @@ Once our experts begin to perform comprehensive response work on your behalf, yo
 
 Through a combination of automation and human expertise, Defender Experts for XDR triages Microsoft Defender XDR incidents, prioritizes them on your behalf, filters out the noise, carries out detailed investigations, and provides actionable managed response to your security operations center (SOC) teams.
 
-### Incident notifications
+### Incident updates
 
 Once our experts start investigating an incident, the incident's **Assigned to** and **Status** fields are updated to _Defender Experts_ and _In progress_, respectively.
 
@@ -55,11 +55,11 @@ If an incident is classified as _False Positive_ or _Informational_, _Expected A
 > [!NOTE]
 > Incident comments are one-way posts. Defender Experts can't respond to any comments or questions you add in the **Comments and history** panel. If you wish to correspond with our experts, reply to the email Defender Experts sent you instead.
 
-Otherwise, if an incident is classified as _True Positive_, our experts then identify recommended response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
+Otherwise, if an incident is classified as _True Positive_, our experts then identify the required response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
 
-- If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the recommended response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident's [Managed response](#how-to-use-managed-response-in-microsoft-365-defender) flyout panel in your Microsoft Defender portal for you or your SOC team to review. Once our experts conclude their work on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
+- If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the required response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident's [Managed response](#how-to-use-managed-response-in-microsoft-365-defender) flyout panel in your Microsoft Defender portal for you or your SOC team to review. All actions that are completed by Defender Experts for XDR appear under the Completed actions section. If there are pending actions that require you or you SOC team to complete, they will be listed under the **Pending actions** section. Once our experts have taken all the necessary actions on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
 
-- If you have granted Defender Experts for XDR the default Security Reader access, then the recommended response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel in your Microsoft Defender portal for you or your SOC team to perform. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and its **Assigned to** field is updated to _Customer_.
+- If you have granted Defender Experts for XDR the default Security Reader access, then the required response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel under the **Pending actions** section in your Microsoft Defender portal for you or your SOC team to perform. Refer to [Actions](#actions) section for more details. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and the **Assigned to** field is updated to _Customer_.
 
 You can check the number of incidents that are awaiting your action in the Defender Experts card in your Microsoft Defender portal:
 
