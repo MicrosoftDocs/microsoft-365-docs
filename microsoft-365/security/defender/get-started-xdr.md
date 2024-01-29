@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - essentials-get-started
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 01/23/2024
@@ -59,7 +60,7 @@ To edit or update permissions after the initial setup, go to **Settings** > **De
 
 ## Exclude devices and users from remediation
 
-Defender Experts for XDR lets you exclude devices and users from remediation actions taken by our experts and instead get remediation guidance for those entities. These exclusions are based on identified [device groups](../defender-endpoint/machine-groups.md) in Microsoft Defender for Endpoint and identified [user groups](/entra/fundamentals/concept-learn-about-groups.md) in Microsoft Entra ID.
+Defender Experts for XDR lets you exclude devices and users from remediation actions taken by our experts and instead get remediation guidance for those entities. These exclusions are based on identified [device groups](../defender-endpoint/machine-groups.md) in Microsoft Defender for Endpoint and identified [user groups](/entra/fundamentals/concept-learn-about-groups) in Microsoft Entra ID.
 
 **To exclude device groups:**
 
@@ -79,7 +80,7 @@ Defender Experts for XDR lets you exclude devices and users from remediation act
 1. In the same Defender Experts settings setup, under **Exclusions**, go to the **User groups** tab.
 2. Select **+ Add user groups**, then search for and choose the user group(s) that you wish to exclude.
    > [!NOTE]
-   > This page only lists existing user groups. If you wish to create a new user group, you first need to sign into the Microsoft Entra ID admin center as a Global Administrator. Then, refresh this page to search for and choose the newly created group. [Learn more about creating user groups](/entra/fundamentals/groups-view-azure-portal.md)
+   > This page only lists existing user groups. If you wish to create a new user group, you first need to sign into the Microsoft Entra ID admin center as a Global Administrator. Then, refresh this page to search for and choose the newly created group. [Learn more about creating user groups](/entra/fundamentals/groups-view-azure-portal)
 
 3. Select **Add user groups**.
 4. Back on the **User groups** tab, review the list of excluded user groups. If you wish to remove a user group from the exclusion list, choose it then select **Remove user group**.
@@ -182,8 +183,7 @@ The readiness assessment has two parts:
 
 After you complete all the required tasks and met the onboarding targets in your readiness assessment, your service delivery manager (SDM) initiates the monitoring phase of the Defender Experts for XDR service, where, for a few days, our experts start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
 
-Once our experts begin to perform comprehensive response work on your behalf, you’ll start receiving [notifications about incidents](../defender/start-using-mdex-xdr.md#incident-notifications) that require remediation steps and targeted recommendations on critical incidents. You can also chat with our experts or your SDMs regarding important queries and regular business and security posture reviews, and [view real-time reports](../defender/start-using-mdex-xdr.md#understand-the-defender-experts-for-xdr-report) on the number of incidents we’ve investigated and resolved on your behalf.
-
+Once our experts begin to perform comprehensive response work on your behalf, you’ll start receiving [notifications about incidents](../defender/start-using-mdex-xdr.md#incident-updates) that require remediation steps and targeted recommendations on critical incidents. You can also chat with our experts or your SDMs regarding important queries and regular business and security posture reviews, and [view real-time reports](../defender/start-using-mdex-xdr.md#understand-the-defender-experts-for-xdr-report) on the number of incidents we’ve investigated and resolved on your behalf.
 
 ### Next step
 
