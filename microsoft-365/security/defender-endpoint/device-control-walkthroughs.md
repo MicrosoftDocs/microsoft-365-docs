@@ -4,7 +4,7 @@ description: Learn how to work with device control in Defender for Endpoint.
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
-ms.date: 01/25/2024
+ms.date: 01/29/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -91,9 +91,15 @@ The previous screenshot lists these settings for Intune:
 - Set `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` to `2` 
 - Set `./Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration` to `RemovableMediaDevices`
 
-Deploy your policy to the test device. Use [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to confirm that the default enforcement is set to Deny, as shown in the following screenshot:
+Deploy your policy to the test device. Use [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to confirm that the default enforcement is set to Deny, as illustrated in the following snippet:
 
-:::image type="content" source="media/device-control-status-defaultdeny.png" alt-text="Screenshot showing device control is set to DefaultDeny." lightbox="media/device-control-status-defaultdeny.png":::
+```powershell
+
+DeviceControlDefaultEnforcement  : DefaultDeny
+DeviceControlPoliciesLastUpdated : 1/4/2024 10:27:06 AM
+DeviceControlState               : Enabled
+
+```
 
 Remove, and reinsert the USB device in the test machine. Try to open the drive. The drive isn't accessible, and a message appears which indicates that access is denied.
 
