@@ -18,6 +18,7 @@ ms.collection:
 - Adm_O365
 - TRN_SMB
 - Adm_TOC
+- ContentFreshnessFY24
 ms.custom:
 - commerce_signup
 - VSBFY23

@@ -135,7 +135,7 @@ On the **Mailflow status report** page, the **Type** tab is selected by default.
 - **Phishing email**: Email that's blocked as phishing by various filters.
 - **Spam**: Email that's blocked as spam by various filters.
 - **Edge protection**: Email that's rejected at the edge/perimeter before examination by EOP or Defender for Office 365.
-- **Rule messages**: Email messages that were acted on by mail flow rules (also known as transport rules).
+- **Rule messages**: Email messages that were quarantined by mail flow rules (also known as transport rules).
 
 The details table below the graph shows the following information:
 

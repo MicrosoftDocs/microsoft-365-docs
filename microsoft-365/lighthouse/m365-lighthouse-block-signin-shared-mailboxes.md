@@ -50,5 +50,5 @@ Lighthouse opens your default email client and prepopulates the email message to
 
 ## Related content
 
-[Block user sign-in](/microsoft-365/lighthouse/m365-lighthouse-block-user-signin.md) (article)\
+[Block user sign-in](m365-lighthouse-block-user-signin.md) (article)\
 [About shared mailboxes - Microsoft 365 admin](../admin/email/about-shared-mailboxes.md) (article)
