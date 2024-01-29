@@ -79,13 +79,13 @@ Select **View managed response** on the task card or on the top of the portal pa
 
 #### Investigation summary
 
-The **Investigation summary** section provides you with more context about the incident analyzed by our experts to provide you with visibility about its severity and potential impact if not addressed immediately. It could include the device timeline, indicators of attack and indicators of compromise (IOCs) observed, and other details.
+The **Investigation summary** section provides you with more context about the incident analyzed by our experts to provide you with visibility about its severity and potential impact if not addressed immediately. It could include the device timeline, indicators of attack, and indicators of compromise (IOCs) observed, and other details.
 
 :::image type="content" source="../../media/xdr/investigation-summary.png" alt-text="Screenshot of managed response investigation summary." lightbox="../../media/xdr/investigation-summary.png":::
 
 #### Actions
 
-The **Actions** tab displays task cards that contain response actions recommended by our experts. 
+The **Actions** tab displays task cards that contain response actions recommended by our experts.
 
 Defender Experts for XDR currently supports the following one-click managed response actions:
 
@@ -93,6 +93,9 @@ Defender Experts for XDR currently supports the following one-click managed resp
 |------------|-----------------|
 |[Isolate device](/microsoft-365/security/defender-endpoint/respond-machine-alerts##isolate-devices-from-the-network)|Isolates a device, which helps prevent an attacker from controlling it and performing further activities such as data exfiltration and lateral movement. The isolated device will still be connected to Microsoft Defender for Endpoint.|
 |[Quarantine file](/microsoft-365/security/defender-endpoint/respond-file-alerts##stop-and-quarantine-files)|Stops running processes, quarantines the files, and deletes persistent data such as registry keys.|
+|[Restrict app execution](/microsoft-365/security/defender-endpoint/respond-machine-alerts##restrict-app-execution)| Restricting the execution of potentially malicious programs and locking down the device to prevent further attempts.|
+|[Release from isolation](/microsoft-365/security/defender-endpoint/respond-machine-alerts#isolate-devices-from-the-network)| Undo Isolation of a device.|
+|[Remove app restriction](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)| Undo release from isolation.|
 
 Apart from these one-click actions, you can also receive managed responses from our experts that you need to perform manually.
 
@@ -101,7 +104,10 @@ Apart from these one-click actions, you can also receive managed responses from 
 
 **To view and perform the managed response actions:**
 
-1. Select the arrow buttons in a task card to expand it and read more information about the recommendation or collapse it.
+1. Select the arrow buttons in an action card to expand it and read more information about the required action.
+
+:::image type="content" source="../../media/xdr/action-card-1.png" alt-text="Screenshot of managed response action to isolate the device prod server." lightbox="../../media/xdr/action-card-1.png":::
+
 1. For cards with one-click response actions, select the recommended action. The **Action status** in the card changes to **In progress**, then to **Failed** or **Completed**, depending on the action's outcome.
 
 > [!TIP]
