@@ -1,11 +1,7 @@
 ---
 title: How to schedule an update of the Microsoft Defender for Endpoint (Linux)
 description: Learn how to schedule an update of the Microsoft Defender for Endpoint (Linux) to better protect your organization's assets.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint (linux)
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -18,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 10/06/2021
+ms.date: 01/26/2024
 ---
 
 # Schedule an update of the Microsoft Defender for Endpoint (Linux)
@@ -73,13 +69,13 @@ sudo crontab -e
 You might see:
 
 ```output
-0****/etc/opt/microsoft/mdatp/logrorate.sh
+0 * * * * /etc/opt/microsoft/mdatp/logrorate.sh
 ```
 
 And
 
 ```output
-02**sat /bin/mdatp scan quick>~/mdatp_cron_job.log
+0 2 * * sat /bin/mdatp scan quick>~/mdatp_cron_job.log
 ```
 
 See [Schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md)
@@ -186,7 +182,7 @@ crontab -l
 crontab -u username -l
 ```
 
-### To backup crontab entries
+### To back up crontab entries
 
 ```bash
 crontab -l > /var/tmp/cron_backup.dat
