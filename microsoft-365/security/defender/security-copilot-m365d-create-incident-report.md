@@ -84,8 +84,8 @@ Here are some recommendations to consider to ensure that Security Copilot genera
 - Classify and resolve the incident before generating the incident report.
 - Ensure that you write and save comments in the Microsoft Sentinel activity log or in the Microsoft Defender XDR incident comments and history to include the comments in the incident report.
 - Write comments using comprehensive and clear language. In-depth and clear comments provide better context about the response actions. See the following steps to know how to access the comments field:
-  - [Add comments to incidents in Microsoft Defender XDR](manage-incidents.md#add-comments) 
-  - [Add comments to incidents in Microsoft Sentinel](/azure/sentinel/investigate-cases.md#comment-on-incidents)
+  - [Add comments to incidents in Microsoft Defender XDR](manage-incidents.md#add-comments)
+  - [Add comments to incidents in Microsoft Sentinel](/azure/sentinel/investigate-cases#comment-on-incidents)
 - For ServiceNow users, [enable the Microsoft Sentinel and ServiceNow bi-directional sync](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-introducing-microsoft-sentinel-solution-for/ba-p/3692840) to get more robust incident data.
 - Copy the generated incident report and post it to the comments and history of the incident to ensure that the incident report is saved in the incident page.
 
