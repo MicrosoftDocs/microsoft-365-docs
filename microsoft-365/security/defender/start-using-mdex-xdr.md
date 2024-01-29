@@ -110,14 +110,14 @@ Apart from these one-click actions, you can also receive managed responses from 
 
 1. For cards with one-click response actions, select the required action. The **Action status** in the card changes to **In progress**, then to **Failed** or **Completed**, depending on the action's outcome.
 
-:::image type="content" source="../../media/xdr/action-card-2.png" alt-text="Screenshot of managed response action to isolate the device prod server." lightbox="../../media/xdr/action-card-2.png":::
+:::image type="content" source="../../media/xdr/action-card-2.png" alt-text="Screenshot of managed response action showing in-progress to isolate the device prod server." lightbox="../../media/xdr/action-card-2.png":::
 
 > [!TIP]
 > You can also monitor the status of in-portal response actions in the [Action center](m365d-action-center.md). If a response action fails, try doing again from the **View device details** page. If you’d like to engage with Defender Experts for XDR, feel free to initiate a chat.
 
 3. For cards with required actions that you need to perform manually, select **I've completed this action** once you've performed them. Select **Yes, I've done it** if you have completed all the necessary actions.
 
-:::image type="content" source="../../media/xdr/ive-completed-this-action.png" alt-text="Screenshot of managed response action to isolate the device prod server." lightbox="../../media/xdr/ive-completed-this-action.png":::
+:::image type="content" source="../../media/xdr/ive-completed-this-action.png" alt-text="Screenshot of managed response action to confirm action completion." lightbox="../../media/xdr/ive-completed-this-action.png":::
 
 4. If you don't want to complete a required action right away, select **Skip**. An additional confirmation dialog is required to skip certain actions.
 
