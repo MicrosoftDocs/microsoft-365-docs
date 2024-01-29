@@ -30,9 +30,7 @@ By default, [device control](device-control-overview.md) is disabled and there a
 
 :::image type="content" source="media/device-control-report-filterpnp.png" alt-text="Screenshot of device control report with PnP filter applied." lightbox="media/device-control-report-filterpnp.png":::
 
-Device control in Defender for Endpoint identifies a device based on its properties. The device properties are visible by selecting an entry in the report. The following image depicts device properties:
-
-:::image type="content" source="media/device-control-deviceproperties.png" alt-text="Screenshot showing device properties.":::
+Device control in Defender for Endpoint identifies a device based on its properties. Device properties are visible by selecting an entry in the report. 
 
 The **Device ID**, **Vendor ID** (VID), **Serial number**, and **Bus type** can all be used to identify a device (see [Device control policies and entries in Microsoft Defender for Endpoint](device-control-policies-entries.md)). The data is also available in [advanced hunting](../defender/advanced-hunting-overview.md), by searching for the `Plug and Play Device Connected action` (`PnPDeviceConnected`), as shown in the following example query:
 
