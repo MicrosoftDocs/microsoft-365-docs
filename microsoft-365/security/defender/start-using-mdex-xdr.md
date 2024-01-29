@@ -121,7 +121,7 @@ Apart from these one-click actions, you can also receive managed responses from 
 
 4. If you don't want to complete a required action right away, select **Skip**. An additional confirmation dialog is required to skip certain actions.
 
-##### Known issues
+**Known issues:**
 
 - If you notice that any of the buttons on the action cards are grayed out, it could indicate that you do not have the necessary permissions to perform the action.
 - To resolve this issue, ensure that you are logged in to the Microsoft Defender XDR portal with the appropriate permissions. Most of the actions require that you have at least the **Security Operator** access.
@@ -147,7 +147,7 @@ Once you turn on chat on Teams, a new team named **Defender Experts team** is cr
 **Important reminders when using the Teams chat:**
 
 - Only reply to posts (announcing managed response is published on an incident) created by Defender Experts. When you create a new post, our experts will not be able to see it.
-- Tag or mention our experts by typing *@Defender Experts* in your replies, so they are notified to join the chat conversation.
+- Tag or mention our experts by typing _@Defender Experts_ in your replies, so they are notified to join the chat conversation.
 - Don’t attach any attachments (for example, files for analysis) in the chat. For security reasons, Defender Experts won't be able to view the attachments. Instead, send them to appropriate submissions channels or provide links where they can be found in Microsoft Defender XDR portal.
 
 Conversations in the Teams chat about an incident are also synchronized with the incident’s **Chat** tab in the Microsoft Defender XDR portal so that you can see messages and updates about an investigation wherever you go.
@@ -166,7 +166,7 @@ You can get incident visibility in Microsoft Sentinel by turning on its out-of-t
 Once you have turned on the connector, updates by Defender Experts to the **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft Defender XDR will show up in the corresponding **Status**, **Owner**, and **Reason for closing** fields in Sentinel.
 
 > [!NOTE]
-> The status of incidents investigated by Defender Experts in Microsoft Defender XDR typically transitions from _Active_ to _In progress_ to _Awaiting Customer Action_ to _Resolved_, while in Sentinel, it follows the _New_ to _Active_ to _Resolved_ path. The Microsoft Defender XDR Status ***Awaiting Customer Action*** doesn't have an equivalent field in Sentinel; instead, it's displayed as a tag in an incident in Sentinel.
+> The status of incidents investigated by Defender Experts in Microsoft Defender XDR typically transitions from _Active_ to _In progress_ to _Awaiting Customer Action_ to _Resolved_, while in Sentinel, it follows the _New_ to _Active_ to _Resolved_ path. The Microsoft Defender XDR Status _**Awaiting Customer Action**_ doesn't have an equivalent field in Sentinel; instead, it's displayed as a tag in an incident in Sentinel.
 
 The following section describes how an incident handled by our experts is updated in Sentinel as it progresses through the investigation journey:
 
