@@ -34,6 +34,7 @@ Microsoft Defender Experts for XDR provides you with multiple channels of commun
 When an incident requires your attention, such as the incidents our experts issue [managed response actions](start-using-mdex-xdr.md#managed-detection-and-response), you're notified through one or more of the following channels:
 
 ### In-portal chat
+
 > [!NOTE]
 > The chat option is only available for incidents where we issued managed response.
 
@@ -68,7 +69,6 @@ However, our experts could also send out emails to your identified notification 
 > [!IMPORTANT]
 >
 > Remember to verify emails claiming to be from Defender Experts.
-
 
 ### Phone call
 
