@@ -113,7 +113,7 @@ Apart from these one-click actions, you can also receive managed responses from 
    :::image type="content" source="../../media/xdr/action-card-2.png" alt-text="Screenshot of managed response action showing in-progress to isolate the device prod server." lightbox="../../media/xdr/action-card-2.png":::
 
    > [!TIP]
-   > You can also monitor the status of in-portal response actions in the [Action center](m365d-action-center.md). If a response action fails, try doing it again from the **View device details** page or [initiate a chat](#in-portal-chat) with Defender Experts.
+   > You can also monitor the status of in-portal response actions in the [Action center](m365d-action-center.md). If a response action fails, try doing it again from the **View device details** page or [initiate a chat](communicate-defender-experts-xdr.md#in-portal-chat) with Defender Experts.
 
 3. For cards with required actions that you need to perform manually, select **I've completed this action** once you've performed them, then select **Yes, I've done it** in the confirmation dialog box that appears.
 
@@ -127,33 +127,6 @@ Apart from these one-click actions, you can also receive managed responses from 
 >
 >If you still encounter this issue even with the appropriate permissions, navigate to **View device details** and complete the steps from there.
 
-### Chat with Defender Experts
-
-> [!NOTE]
-> The chat option is only available for incidents where we issued managed response.
-
-#### In-portal chat
-
-The **Chat** tab within the Microsoft Defender XDR portal provides you with a space to engage with our experts and further understand the incident, our investigation, and the recommended actions we provided. You could ask about a malicious executable, malicious attachment, information about activity groups, advanced hunting queries, or any other information that would assist you with the incident resolution.
-
-#### Teams chat
-
-Apart from using the in-portal chat, you also have the option to engage in real-time chat conversations with Defender Experts directly within Microsoft Teams, providing you and your SOC team more flexibility when responding to incidents that require managed response. [Learn more about turning on notifications and chat on Teams](../defender/get-started-xdr.md#receive-managed-response-notifications-and-updates-in-microsoft-teams)
-
-Once you turn on chat on Teams, a new team named **Defender Experts team** is created. An incident that requires your attention is posted on this team’s Managed response channel as a new post. To engage with our experts (for example, ask follow-up questions), use the **Reply** text bar to type your message.
-
-:::image type="content" source="../../media/xdr/teams-chat-managed-response.png" alt-text="Screenshot of managed response teams channel." lightbox="../../media/xdr/teams-chat-managed-response.png":::
-
-**Important reminders when using the Teams chat:**
-
-- Only reply to posts (announcing managed response is published on an incident) created by Defender Experts. When you create a new post, our experts won't be able to see it.
-- Tag or mention our experts by typing _@Defender Experts_ in your replies, so they're notified to join the chat conversation.
-- Don’t attach any attachments (for example, files for analysis) in the chat. For security reasons, Defender Experts won't be able to view the attachments. Instead, send them to appropriate submissions channels or provide links where they can be found in Microsoft Defender XDR portal.
-
-Conversations in the Teams chat about an incident are also synchronized with the incident’s **Chat** tab in the Microsoft Defender XDR portal so that you can see messages and updates about an investigation wherever you go.
-
-> [!IMPORTANT]
-> Defender Experts will have access to all messages in any channel in this team.
 
 ## Get visibility to Defender Experts investigations in your SIEM or ITSM application
 
@@ -204,19 +177,6 @@ The **Average time to resolve incidents** section displays a bar chart of the av
 The **Incidents by severity**, **Incidents by category**, and **Incidents by service source** sections break down resolved incidents by severity, attack technique, and Microsoft security service source, respectively. These sections let you identify potential attack entry points and types of threats detected in your environment, assess their impact, and develop strategies to mitigate and prevent them. Select **View incidents** to get a filtered view of the incident queue based on the selections you made in each of the two sections.
 
 The **Most impacted assets** section shows the users and devices in your environment that were involved in the most number of incidents during your selected date range. You can see the volume of incidents each asset was involved in. Select an asset to get a filtered view of the incident queue based on the incidents that included the said asset.
-
-## Collaborate with a trusted advisor
-
-The service delivery manager (SDM) is responsible for managing the overall relationship for your organization with the Defender Experts for XDR service. They are your trusted advisor working along with XDR experts' team to help you protect your organization.
-
-The SDM provides the following services:
-
-- Service readiness support
-  - Educate customers about the end-to-end service experience, from signup to regular operations and escalation process.
-  - Help establish a service-ready security posture, including guidance on required controls and policy updates.
-- Service operations support
-  - Provide tailored service delivery content and reporting, including periodic business reviews.
-  - Serve as a single point of contact for feedback and escalations related to Defender Experts Service.
 
 ## Proactive managed hunting
 
