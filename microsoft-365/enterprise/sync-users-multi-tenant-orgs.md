@@ -70,7 +70,7 @@ The [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-
 
 The [new Teams desktop client](/microsoftteams/new-teams-desktop-admin) fetches some data directly from the other tenants in the multitenant organization to create a richer experience. When a user looks at the profile card for a user in another tenant in Teams, the name, contact information, and job information is available in 1:1 chats and shared channels without the need for property synchronization to be configured. (These properties are retrieved by Microsoft Entra cross-tenant access and Teams external access.) To see these properties elsewhere in Teams, such as channels, group chats, and chats with guest accounts, you need to include them as part of user synchronization.
 
-The profile picture is always available and is retrieved from the user's home tenant in the new teams client once MTO setup is completed and the user has been synchronized as part of the multitenant organization.
+The profile picture is always available and is retrieved from the user's home tenant in the new teams client once the user has been synchronized as part of the multitenant organization.
 
 For the most consistent profile card experience, keep in mind the following:
 
