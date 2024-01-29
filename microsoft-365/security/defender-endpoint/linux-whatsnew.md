@@ -48,7 +48,7 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 - Updated default engine version to `1.1.23110.4`, and default signatures version to `1.403.1579.0`.
 - General stability and performance improvements.
-- Bug fix for behaviour monitoring configuration.
+- Bug fix for behavior monitoring configuration.
 - Bug fixes.
 
 </details>
