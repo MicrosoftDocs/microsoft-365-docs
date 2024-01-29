@@ -67,7 +67,6 @@ However, our experts could also send out emails to your identified notification 
 - When they reply to the requests or queries sent to them through email 
 
 > [!IMPORTANT]
->
 > Remember to verify emails claiming to be from Defender Experts.
 
 ### Phone call

@@ -438,6 +438,8 @@
                 href: get-started-xdr.md
               - name: Start using Microsoft Defender Experts for XDR service
                 href: start-using-mdex-xdr.md
+              - name: Communicating with experts in the Microsoft Defender Experts for XDR service
+                href: communicate-defender-experts-xdr.md
               - name: Auditing
                 href: auditing.md
               - name: Additional information
