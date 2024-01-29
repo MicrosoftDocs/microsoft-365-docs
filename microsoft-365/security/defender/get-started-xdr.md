@@ -58,7 +58,7 @@ You also need to grant our experts one or both of the following permissions:
 
 To edit or update permissions after the initial setup, go to **Settings** > **Defender Experts** > **Permissions**.
 
-## Exclude devices and users from remediation
+## Exclude devices from remediation
 
 Defender Experts for XDR lets you exclude devices and users from remediation actions taken by our experts and instead get remediation guidance for those entities. These exclusions are based on identified [device groups](../defender-endpoint/machine-groups.md) in Microsoft Defender for Endpoint and identified [user groups](/entra/fundamentals/concept-learn-about-groups) in Microsoft Entra ID.
 
@@ -75,7 +75,7 @@ Defender Experts for XDR lets you exclude devices and users from remediation act
 
 :::image type="content" source="../../media/xdr/exclude-device-groups.png" alt-text="Screenshot of option to exclude device groups." lightbox="../../media/xdr/exclude-device-groups.png":::
 
-**To exclude user groups:**
+<!--**To exclude user groups:**
 
 1. In the same Defender Experts settings setup, under **Exclusions**, go to the **User groups** tab.
 2. Select **+ Add user groups**, then search for and choose the user group(s) that you wish to exclude.
@@ -89,7 +89,8 @@ Defender Experts for XDR lets you exclude devices and users from remediation act
 :::image type="content" source="../../media/xdr/exclude-user-groups.png" alt-text="Screenshot of option to exclude user groups in Defender Experts for XDR service." lightbox="../../media/xdr/exclude-user-groups.png":::
 
 To edit or update exclusions after the initial setup, go to **Settings** > **Defender Experts** > **Exclusions**, then go to the **Device groups** or **User groups** tab.
-
+-->
+<!--
 ### Exclude all high-value devices or users automatically
 
 Defender Experts for XDR also lets you exclude automatically identified high-value devices and users, such as key executives, or sensitive admins, from remediation actions by our experts:
@@ -110,6 +111,7 @@ Similar to the other excluded device or user groups, you instead get remediation
 
 > [!NOTE]
 > Unlike the other excluded device and user groups, excluded high-value entities aren't listed in the **Device groups** or **User groups** tab.
+-->
 
 ## Tell us who to contact for important matters
 
@@ -180,7 +182,6 @@ The readiness assessment has two parts:
 
 > [!IMPORTANT]
 > Defender Experts for XDR reviews your readiness assessment periodically, especially if there are any changes to your environment, such as the addition of new devices and identities. It's important that you regularly monitor and run the readiness assessment beyond the initial onboarding to ensure that your environment has strong security posture to reduce risk.
-
 After you complete all the required tasks and met the onboarding targets in your readiness assessment, your service delivery manager (SDM) initiates the monitoring phase of the Defender Experts for XDR service, where, for a few days, our experts start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
 
 Once our experts begin to perform comprehensive response work on your behalf, you’ll start receiving [notifications about incidents](../defender/start-using-mdex-xdr.md#incident-updates) that require remediation steps and targeted recommendations on critical incidents. You can also chat with our experts or your SDMs regarding important queries and regular business and security posture reviews, and [view real-time reports](../defender/start-using-mdex-xdr.md#understand-the-defender-experts-for-xdr-report) on the number of incidents we’ve investigated and resolved on your behalf.
