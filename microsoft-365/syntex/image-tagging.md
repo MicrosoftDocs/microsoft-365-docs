@@ -10,8 +10,8 @@ ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 ms.custom: admindeeplinkMAC
-search.appverid: 
-ms.collection: 
+search.appverid:
+ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
@@ -43,11 +43,11 @@ If you don't have an **Image Tags** column in your library, use these steps to e
 
 1. From the document library, select **Automate** > **Enable image tagger**.
 
-   ![Screenshot showing the Automate menu in a document library.](../media/content-understanding/image-tagger-automate-menu.png) 
+   ![Screenshot showing the Automate menu in a document library.](../media/content-understanding/image-tagger-automate-menu.png)
 
 2. Enhanced image tagging is then activated. Images uploaded are tagged with a set of descriptive keywords. The keywords are available in the **Image Tags** column that is added to the library view.
 
-   ![Screenshot showing the library view with the Image Tags column.](../media/content-understanding/image-tagger-image-tags-column.png)  
+   ![Screenshot showing the library view with the Image Tags column.](../media/content-understanding/image-tagger-image-tags-column.png)
 
 3. Once the **Image Tags** column is configured, you can upload images. The relevant tags are displayed in the library for each image.
 
