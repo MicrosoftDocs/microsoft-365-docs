@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - ContentEnagagementFY23
-- essentials-accountability
+- essentials-security
 search.appverid:
 - BCS160
 - MET150
