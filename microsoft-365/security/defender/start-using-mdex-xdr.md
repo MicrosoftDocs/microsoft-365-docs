@@ -2,7 +2,7 @@
 title: How to use the Microsoft Defender Experts for XDR service
 ms.reviewer:
 description: Defender Experts for XDR helps prioritize and customize recommendations to fit your environment
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Managed response in Teams, real-time visibility with XDR experts, threat hunting and analysis
+keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Managed response in Teams, real-time visibility with XDR experts, threat hunting and analysis, incidents by category, impacted assets
 ms.service: defender-experts
 ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
@@ -61,7 +61,7 @@ Otherwise, if an incident is classified as _True Positive_, our experts then ide
 
 - If you have granted Defender Experts for XDR the default Security Reader access, then the required response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel under the **Pending actions** section in your Microsoft Defender portal for you or your SOC team to perform. Refer to [Actions](#actions) section for more details. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and the **Assigned to** field is updated to _Customer_.
 
-You can check the number of incidents that are awaiting your action in the Defender Experts card in your Microsoft Defender portal:
+You can check the number of incidents that require your action in the Defender Experts banner at the top of the Microsoft Defender homepage.
 
 :::image type="content" source="../../media/xdr/view-incidents.png" alt-text="Screenshot of the Defender Experts card in Microsoft Defender portal showing the number of incidents awaiting customer action." lightbox="../../media/xdr/view-incidents.png":::
 
@@ -199,11 +199,11 @@ The topmost section of the Defender Experts for XDR report provides the percenta
 - **Resolved directly** – The number of investigated incidents that we were able to close directly on your behalf.
 - **Resolved with your help** – The number of investigated incidents that were resolved because of your action on one or more managed response tasks.
 
-The **Incidents by severity** and **Incidents by category** sections break down resolved incidents by severity and attack technique or threat type, respectively. These sections let you identify potential attack entry points and types of threats detected in your environment, assess their impact, and develop strategies to mitigate and prevent them. Select **View incidents** to get a filtered view of the incident queue based on the selections you made in each of the two sections.
+The **Incidents by severity**, **Incidents by category**, and **Incidents by service source** sections break down resolved incidents by severity and attack technique, and Microsoft security service source, respectively. These sections let you identify potential attack entry points and types of threats detected in your environment, assess their impact, and develop strategies to mitigate and prevent them. Select **View incidents** to get a filtered view of the incident queue based on the selections you made in each of the two sections.
 
-The **Average incident resolution time** section displays a bar chart of the average time, in minutes, our experts spent investigating and closing incidents in your environment and the average time you spent performing the recommended managed response actions.
+The **Average time to resolve incidents** section displays a bar chart of the average time, in minutes, our experts spent investigating and closing incidents in your environment and the average time you spent performing the recommended managed response actions.
 
-If you've set Defender Experts for XDR to have **Security Reader** access, the **Average incident resolution time** section also displays the estimated **Potential time savings** you could realize if you let our experts take managed remediation actions on your behalf by [providing them the permissions](get-started-xdr.md#grant-permissions-to-our-experts) to do so. The potential time savings are derived by calculating the total time it took you to complete recommended managed response actions after our experts issued them to you during your selected date range. Otherwise, if the service has **Security Operator** access, this report section displays the estimated time you already saved by granting us permission to take managed remediation actions on your behalf. To change access levels, select **Edit permissions**.
+The **Most impacted assets** section, shows your users and devices that were involved in the most incidents, during your selected date range. You can see the volume of incidents each asset was involved in. Additionally, you can select to get a filtered view of the incident queue based on the incidents that included the corresponding asset.
 
 ## Collaborate with a trusted advisor
 
