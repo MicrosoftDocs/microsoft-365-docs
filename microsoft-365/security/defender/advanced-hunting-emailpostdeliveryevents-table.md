@@ -31,7 +31,6 @@ ms.date: 01/16/2024
 **Applies to:**
 - Microsoft Defender XDR
 
-
 The `EmailPostDeliveryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about post-delivery actions taken on email messages processed by Microsoft 365. Use this reference to construct queries that return information from this table.
 
 > [!TIP]
@@ -58,6 +57,7 @@ To get more information about individual email messages, you can also use the [`
 | `ReportId` | `string` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 
 ## Supported event types
+
 This table captures events with the following `ActionType` values:
 
 - **Manual remediation** – An administrator manually took action on an email message after it was delivered to the user mailbox. This includes actions taken manually through [Threat Explorer](../office-365-security/threat-explorer-about.md) or approvals of [automated investigation and response (AIR) actions](m365d-autoir-actions.md).
@@ -65,6 +65,7 @@ This table captures events with the following `ActionType` values:
 - **Malware ZAP** – Zero-hour auto purge (ZAP) took action on an email message found containing malware after delivery.
 
 ## Related topics
+
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
