@@ -34,6 +34,26 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+	<summary> January-2024 (Build: 101.23112.0009 | Release version: 30.123112.0009.0)</summary>
+
+## January-2024 Build: 101.23112.0009 | Release version: 30.123112.0009.0
+
+&ensp;Released: **January 29,2024**<br/>
+&ensp;Published: **January 29, 2024**<br/>
+&ensp;Build: **101.23112.0009**<br/>
+&ensp;Release version: **30.123112.0009.0**<br/>
+&ensp;Engine version: **1.1.23110.4**<br/>
+&ensp;Signature version: **1.403.1579.0**<br/>
+
+**What's new**
+- Updated default engine version to `1.1.23110.4`, and default signatures version to `1.403.1579.0`.
+- General stability and performance improvements.
+- Bug fix for behaviour monitoring configuration.
+- Bug fixes.
+
+</details>
+
+<details>
 	<summary> November-2023 (Build: 101.23102.0003 | Release version: 30.123102.0003.0)</summary>
 
 ## November-2023 Build: 101.23102.0003 | Release version: 30.123102.0003.0
