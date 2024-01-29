@@ -4,15 +4,15 @@ description: Onboard your organization's devices to Microsoft Defender for Busin
 search.appverid: MET150
 ms.author: siosulli
 author: siosulli
-manager: dansimp 
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.date: 07/19/2023
 ms.localizationpriority: medium
 ms.reviewer: efratka
-f1.keywords: NOCSH 
-ms.collection: 
+f1.keywords: NOCSH
+ms.collection:
 - SMB
 - m365-security
 - tier1
@@ -41,9 +41,9 @@ This article also includes:
 
 ## Use automatic onboarding for Windows devices that are already enrolled in Intune
 
-You can onboard Windows client devices to Defender for Business automatically if those devices are already enrolled in Intune. Defender for Business detects Windows client devices that are already enrolled in Intune, and prompts you to choose whether to onboard those devices automatically. Security policies and settings in Defender for Business are then applied to those devices. We call this process *automatic onboarding*. 
+You can onboard Windows client devices to Defender for Business automatically if those devices are already enrolled in Intune. Defender for Business detects Windows client devices that are already enrolled in Intune, and prompts you to choose whether to onboard those devices automatically. Security policies and settings in Defender for Business are then applied to those devices. We call this process *automatic onboarding*.
 
-Automatic onboarding helps get your devices protected almost immediately. 
+Automatic onboarding helps get your devices protected almost immediately.
 Note that the automatic onboarding option applies to Windows client devices only, if the following conditions are met:
 
 - Your organization was already using Intune or Mobile Device Management (MDM) in Intune before you got Defender for Business (Microsoft 365 Business Premium customers already have Microsoft Intune and MDM).
@@ -62,7 +62,7 @@ See [Onboard devices to Microsoft Defender for Business](../security/defender-bu
 
 ## Onboard mobile devices using the Microsoft Defender app
 
-You can now onboard Android and iOS devices using the Microsoft Defender app. With [mobile threat defense capabilities in Defender for Business](../security/defender-business/mdb-mtd.md), users download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps. 
+You can now onboard Android and iOS devices using the Microsoft Defender app. With [mobile threat defense capabilities in Defender for Business](../security/defender-business/mdb-mtd.md), users download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
 
 For detailed instructions, see the **Mobile devices** tab in [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
 
@@ -70,11 +70,11 @@ To learn more about mobile threat defense, see [Mobile threat defense capabiliti
 
 ## Use Intune to enroll devices
 
-To enroll a device, you can enroll it yourself, or have users sign in to the company portal app, enroll their devices, and then install any apps that are needed. 
+To enroll a device, you can enroll it yourself, or have users sign in to the company portal app, enroll their devices, and then install any apps that are needed.
 
 If you were already using Intune or Mobile Device Management before you got Defender for Business, you can continue to use Intune to onboard your organization's devices. With Intune, you can onboard computers, tablets, and phones, including iOS and Android devices.
 
-See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
+See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
 
 ## What about servers?
 
@@ -98,7 +98,7 @@ After the command has run, the Command Prompt window closes automatically. If su
 
 ## Onboard devices gradually
 
-If you prefer to onboard devices in phases, which we call *gradual device onboarding*, follow these steps: 
+If you prefer to onboard devices in phases, which we call *gradual device onboarding*, follow these steps:
 
 1. Identify a set of devices to onboard.
 
@@ -108,7 +108,7 @@ If you prefer to onboard devices in phases, which we call *gradual device onboar
 
 4. Select an operating system (such as **Windows 10 and 11)**, and then choose an onboarding method (such as **Local script**). Follow the guidance provided for the method you selected.
 
-5. Repeat this process for each set of devices you want to onboard. 
+5. Repeat this process for each set of devices you want to onboard.
 
 > [!TIP]
 > You don't have to use the same onboarding package every time you onboard devices. For example, you can use a local script to onboard some devices, and later on, you can choose another method to onboard more devices.
@@ -121,15 +121,14 @@ If you want to offboard a device, use one of the following procedures:
 
 2. Under **Device management**, choose **Offboarding**.
 
-3. Select an operating system, such as **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**. 
+3. Select an operating system, such as **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**.
 
 4. In the confirmation screen, review the information, and then choose **Download** to proceed.
 
 5. Select **Download offboarding package**. We recommend saving the offboarding package to a removable drive.
 
-6. Run the script on each device that you want to offboard. Need help with this task? See the following resources:   
-
-   - Windows devices: [Offboard Windows devices using a local script](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script) 
+6. Run the script on each device that you want to offboard. Need help with this task? See the following resources:
+   - Windows devices: [Offboard Windows devices using a local script](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
    - Mac: [Uninstalling on Mac](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]

@@ -43,9 +43,9 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 - The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy and won't be dynamically updated in the system if users are added or removed from the original security group, for example.
 
 - Backup and restore of tenants that have the multi-geo feature enabled for OneDrive and SharePoint might not work properly. We recommend not using the preview version of Backup until multi-geo support is fully enabled.
-
+<!---
 - When you remove a OneDrive for Business account or a SharePoint site from a backup policy, you continue to be billed for the existing backups for the next one year of their retention. Additionally, the price of that backup will be proportional to the size of the site or account throughout that remaining year.
-
+--->
 ### Restore
 
 - Site search is case-sensitive and is a prefix-type search.
@@ -80,7 +80,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - While restoring Exchange mailboxes at a granular level, the search feature provides several search parameters. These parameters allow you to enter up to a maximum of five keywords each. For example, the parameters “from” and “to” allow you to enter up to a maximum of five email addresses each.
 
-- The multi-geo feature isn't supported for SharePoint Online or OneDrive for Business services in this release. This might affect the restore of sites across different geos.
+- The multi-geo feature isn't supported for SharePoint Online or OneDrive for Business services in this release. This might affect the restore of sites across different geos. Exchange Online multi-geo is supported, however, when configuring a restore each mailbox in a single restore request must be in the same geo.
 
 - OneDrive accounts and SharePoint sites that have undergone the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.  
 

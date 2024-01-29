@@ -143,7 +143,7 @@ dkim=[1,1,header.d=sampledoamin.onmicrosoft.com]
 dmarc=[1,1,header.from=sampledoamin.onmicrosoft.com])
 ```
 
-To check whether the ARC result was used to override a DMARC failure, look for `compauth=pass` and `reason=130` in the last **ARC-Authentication-Results** header. For example:
+To check whether the ARC result was used to override a DMARC failure, look for `compauth=pass` and `reason=130` in the last **Authentication-Results** header. For example:
 
 
 ```text
