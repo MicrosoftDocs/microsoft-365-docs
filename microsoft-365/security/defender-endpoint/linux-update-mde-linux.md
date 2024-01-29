@@ -182,7 +182,7 @@ crontab -l
 crontab -u username -l
 ```
 
-### To backup crontab entries
+### To back up crontab entries
 
 ```bash
 crontab -l > /var/tmp/cron_backup.dat
