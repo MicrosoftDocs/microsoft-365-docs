@@ -50,13 +50,25 @@ DeviceEvents
 
 ```
 
-The status of device control (enabled/disabled, default enforcement, and last policy update) is available on a device via [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
+The status of device control (enabled/disabled, default enforcement, and last policy update) is available on a device via [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as illustrated in the following snippet:
 
-:::image type="content" source="media/device-control-status.png" alt-text="Screenshot showing device control status." lightbox="media/device-control-status.png":::
+```powershell
 
-Change the device control state to be enabled* on a test device. Make sure the policy is applied by checking [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as shown in the following screenshot:
+DeviceControlDefaultEnforcement   : 
+DeviceControlPoliciesLastUpdated  : 1/3/2024 12:51:56 PM
+DeviceControlState                : Disabled
 
-:::image type="content" source="media/device-control-statusenabled.png" alt-text="Screenshot showing device control is enabled on a device." lightbox="media/device-control-statusenabled.png":::
+```
+
+Change the device control state to be enabled* on a test device. Make sure the policy is applied by checking [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus), as illustrated in the following snippet:
+
+```powershell
+
+DeviceControlDefaultEnforcement   : DefaultAllow
+DeviceControlPoliciesLastUpdated  : 1/4/2024 10:27:06 AM
+DeviceControlState                : Enabled
+
+```
 
 In the test device, insert a USB drive. There are no restrictions; all types of access (read, write, execute, and print) are allowed. A record is created to show that a USB device was connected. You can use the following example advanced hunting query to see it:
 
