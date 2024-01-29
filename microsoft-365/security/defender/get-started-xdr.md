@@ -136,7 +136,7 @@ To edit or update your notification contacts after the initial setup, go to **Se
 
 ## Receive managed response notifications and updates in Microsoft Teams
 
-Apart from email and [in-portal chat](start-using-mdex-xdr.md#in-portal-chat), you also have to option to use Microsoft Teams to receive updates about managed responses and communicate with our experts in real time. When this setting is turned on, a new team named **Defender Experts team** is created, where managed response notifications related to ongoing incidents are sent as new posts in the **Managed response** channel. [Learn more about using Teams chat](../defender/start-using-mdex-xdr.md#teams-chat)
+Apart from email and [in-portal chat](communicate-defender-experts-xdr.md#in-portal-chat), you also have to option to use Microsoft Teams to receive updates about managed responses and communicate with our experts in real time. When this setting is turned on, a new team named **Defender Experts team** is created, where managed response notifications related to ongoing incidents are sent as new posts in the **Managed response** channel. [Learn more about using Teams chat](communicate-defender-experts-xdr.md#teams-chat)
 
 > [!IMPORTANT]
 > Defender Experts will have access to all messages posted on any channel in the created **Defender Experts team**. To prevent Defender Experts from accessing messages in this team, go to **Apps** in Teams then navigate to **Manage your apps** > **Defender Experts** > **Remove**. This removal action cannot be reversed.
