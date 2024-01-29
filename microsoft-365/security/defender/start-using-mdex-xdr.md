@@ -57,9 +57,9 @@ If an incident is classified as _False Positive_ or _Informational_, _Expected A
 
 Otherwise, if an incident is classified as _True Positive_, our experts then identify the required response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
 
-- If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the required response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident's [Managed response](#how-to-use-managed-response-in-microsoft-365-defender) flyout panel in your Microsoft Defender portal for you or your SOC team to review. All actions that are completed by Defender Experts for XDR appear under the **Completed actions** section. Any pending actions that require you or you SOC team to complete are listed under the **Pending actions** section. Refer to [Actions](#actions) section for more details. Once our experts have taken all the necessary actions on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
+- If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the required response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident's [Managed response](#how-to-use-managed-response-in-microsoft-365-defender) flyout panel in your Microsoft Defender portal for you or your SOC team to review. All actions that are completed by Defender Experts for XDR appear under the **Completed actions** section. Any pending actions that require you or you SOC team to complete are listed under the **Pending actions** section. For more information, see the [Actions](#actions) section. Once our experts have taken all the necessary actions on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
 
-- If you have granted Defender Experts for XDR the default Security Reader access, then the required response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel under the **Pending actions** section in your Microsoft Defender portal for you or your SOC team to perform. Refer to [Actions](#actions) section for more details. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and the **Assigned to** field is updated to _Customer_.
+- If you have granted Defender Experts for XDR the default Security Reader access, then the required response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel under the **Pending actions** section in your Microsoft Defender portal for you or your SOC team to perform. For more information, see the [Actions](#actions) section. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and the **Assigned to** field is updated to _Customer_.
 
 You can check the number of incidents that require your action in the Defender Experts banner at the top of the Microsoft Defender homepage.
 
@@ -67,7 +67,7 @@ You can check the number of incidents that require your action in the Defender E
 
 To view the incidents our experts have investigated or are currently investigating, filter the incident queue in your Microsoft Defender portal using the _Defender Experts_ tag.
 
-:::image type="content" source="../../media/xdr/incidents-filter.png" alt-text="Screenshot of the Incidents queue in Microsoft Defender portal filtered to only show those with the  Defender Experts tag." lightbox="../../media/xdr/incidents-filter.png":::
+:::image type="content" source="../../media/xdr/incidents-filter.png" alt-text="Screenshot of the Incidents queue in Microsoft Defender portal filtered to only show those with the Defender Experts tag." lightbox="../../media/xdr/incidents-filter.png":::
 
 <a name='how-to-use-managed-response-in-microsoft-365-defender'></a>
 
@@ -123,9 +123,9 @@ Apart from these one-click actions, you can also receive managed responses from 
 
 **Known issue:**
 
-If you notice that any of the buttons on the action cards are grayed out, it could indicate that you don't have the necessary permissions to perform the action Make sure that you're signed into the Microsoft Defender XDR portal with the appropriate permissions. Most managed response actions require that you have at least the Security Operator access.
+If you notice that any of the buttons on the action cards are grayed out, it could indicate that you don't have the necessary permissions to perform the action. Make sure that you're signed into the Microsoft Defender XDR portal with the appropriate permissions. Most managed response actions require that you have at least the Security Operator access.
 
-If you still encounter this issue even with the appropriate permissions, try navigating to **View device details** and complete the steps from there. This should help you complete the desired action.
+If you still encounter this issue even with the appropriate permissions, navigate to **View device details** and complete the steps from there.
 
 ### Chat with Defender Experts
 
@@ -138,7 +138,7 @@ The **Chat** tab within the Microsoft Defender XDR portal provides you with a sp
 
 #### Teams chat
 
-Apart from using the in-portal chat, you also have the option to engage in real-time chat conversations with Defender Experts directly within Microsoft Teams, providing you and your SOC team additional flexibility when responding to incidents that require managed response. [Learn more about turning on notifications and chat on Teams](../defender/get-started-xdr.md#receive-managed-response-notifications-and-updates-in-microsoft-teams)
+Apart from using the in-portal chat, you also have the option to engage in real-time chat conversations with Defender Experts directly within Microsoft Teams, providing you and your SOC team more flexibility when responding to incidents that require managed response. [Learn more about turning on notifications and chat on Teams](../defender/get-started-xdr.md#receive-managed-response-notifications-and-updates-in-microsoft-teams)
 
 Once you turn on chat on Teams, a new team named **Defender Experts team** is created. An incident that requires your attention is posted on this team’s Managed response channel as a new post. To engage with our experts (for example, ask follow-up questions), use the **Reply** text bar to type your message.
 
@@ -146,8 +146,8 @@ Once you turn on chat on Teams, a new team named **Defender Experts team** is cr
 
 **Important reminders when using the Teams chat:**
 
-- Only reply to posts (announcing managed response is published on an incident) created by Defender Experts. When you create a new post, our experts will not be able to see it.
-- Tag or mention our experts by typing _@Defender Experts_ in your replies, so they are notified to join the chat conversation.
+- Only reply to posts (announcing managed response is published on an incident) created by Defender Experts. When you create a new post, our experts won't be able to see it.
+- Tag or mention our experts by typing _@Defender Experts_ in your replies, so they're notified to join the chat conversation.
 - Don’t attach any attachments (for example, files for analysis) in the chat. For security reasons, Defender Experts won't be able to view the attachments. Instead, send them to appropriate submissions channels or provide links where they can be found in Microsoft Defender XDR portal.
 
 Conversations in the Teams chat about an incident are also synchronized with the incident’s **Chat** tab in the Microsoft Defender XDR portal so that you can see messages and updates about an investigation wherever you go.
@@ -224,7 +224,7 @@ Defender Experts for XDR also includes proactive threat hunting offered by [Micr
 
 ## Request advanced threat expertise on demand
 
-Select **Ask Defender Experts** directly inside the Microsoft Defender XDR portal to get swift and accurate responses to all your threat questions. Experts can provide insights to better understand the complex threats your organization may face. Consult an expert to:
+Select **Ask Defender Experts** directly inside the Microsoft Defender XDR portal to get swift and accurate responses to all your threat questions. Experts can provide insights to better understand the complex threats your organization might face. Consult an expert to:
 
 - Gather additional information on alerts and incidents, including root causes and scope.
 - Gain clarity into suspicious devices, alerts, or incidents and get the next steps if faced with an advanced attacker.
