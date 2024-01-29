@@ -68,9 +68,9 @@ You can change the properties that are synchronized after the synchronization ha
 
 The [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) is a feature that allows users to view information about another user, such as email, phone number, and office location. It's available in most Microsoft 365 apps like Teams, Outlook, SharePoint and Viva Engage. Users in multitenant organizations can see information about users in other tenants that are part of the multitenant organization. What users can see depends on what data is being synchronized between the tenants. (Note that some properties [require additional configuration](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#attributes) to be displayed.)
 
-The [new Teams desktop client](/microsoftteams/new-teams-desktop-admin) fetches some data directly from the other tenants in the multitenant organization to create a richer experience. When a user looks at the profile card for a user in another tenant in Teams, the name, contact information, and job information is always available in 1:1 chats and shared channels. This information is retrieved from the other tenant regardless of sync settings. To see these properties elsewhere in Teams, such as channels and group chats, you need to include them as part of user synchronization.
+The [new Teams desktop client](/microsoftteams/new-teams-desktop-admin) fetches some data directly from the other tenants in the multitenant organization to create a richer experience. When a user looks at the profile card for a user in another tenant in Teams, the name, contact information, and job information is available in 1:1 chats and shared channels without the need for property synchronization to be configured. (These properties are retrieved by Microsoft Entra cross-tenant access and Teams external access.) To see these properties elsewhere in Teams, such as channels and group chats, you need to include them as part of user synchronization.
 
-The profile picture is always available regardless of sync settings and is retrieved from the user's home tenant.
+The profile picture is always available regardless of sync settings and is retrieved from the user's home tenant by Microsoft Entra cross-tenant access.
 
 For the most consistent profile card experience, keep in mind the following:
 
