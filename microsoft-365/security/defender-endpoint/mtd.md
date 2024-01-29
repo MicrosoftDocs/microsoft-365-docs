@@ -39,7 +39,7 @@ Microsoft Defender for Endpoint on Android and iOS provides the below key capabi
 
 |Capability|Description|
 |---|---|
-|Web Protection|Anti-phishing, blocking unsafe network connections, and support for custom indicators.|
+|Web Protection|Anti-phishing, blocking unsafe network connections, and support for custom indicators (for URLs and domains). File and IP indicators are not currently supported.|
 |Malware Protection (Android-only)|Scanning for malicious apps.|
 |Jailbreak Detection (iOS-only)|Detection of jailbroken devices.|
 |Microsoft Defender Vulnerability Management (MDVM) |Vulnerability assessment of onboarded mobile devices. Includes OS and Apps vulnerabilities assessment for both Android and iOS. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about Microsoft Defender Vulnerability Management in Microsoft Defender for Endpoint.|
