@@ -42,8 +42,8 @@ You can set default access such as, Deny or Allow for all Device Control feature
 
 For example, you can have either a Deny or an Allow policy for RemovableMediaDevices, but not for CdRomDevices or WpdDevices. If you set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices is blocked. If you only want to manage storage, make sure to create Allow policy for Printer. Otherwise, this Default Enforcement will be applied to Printer as well.
 
-- Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Features** \> **Device Control** \> **Select Device Control Default Enforcement**.
-- In the **Select Device Control Default Enforcement** pane, select **Default Deny**.
+- Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Features** \> **Device Control** \> **Select Device Control Default Enforcement Policy**.
+- In the **Select Device Control Default Enforcement Policy** window, select **Default Deny**.
 
 :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Screenshot of set default enforcement." lightbox="images/set-default-enforcement-deny-gp.png":::
 
@@ -52,7 +52,7 @@ For example, you can have either a Deny or an Allow policy for RemovableMediaDev
 To configure the device types that device control applies to.
 
 - Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Turn on device control for specific device types**.
-- In the **Turn on device control for specific types** pane, enter the product family\_ids RemovableMediaDevices, CdRomDevices, WpdDevices, or PrinterDevices separated by a pipe (|).
+- In the **Turn on device control for specific types** window, enter the product family\_ids RemovableMediaDevices, CdRomDevices, WpdDevices, or PrinterDevices separated by a pipe (|).
 
 :::image type="content" source="media/deploy-dc-gpo/configure-device.png" alt-text="Screenshot of configure device types." lightbox="media/deploy-dc-gpo/configure-device.png":::
 
@@ -71,7 +71,7 @@ Use the properties in removable storage group to create an XML file for the Remo
 Take a look at the **Overview** \> **Removable storage group**. You can create different group types. Here's one group example XML file for any removable storage and CDROM, Windows portable devices, and approved USBs group: [XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)
 
 > [!NOTE]
-> Comments using XML comment notation `<!--COMMENT--\>` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
+> Comments using XML comment notation `<!--COMMENT-->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
 ## Define Policies
 
@@ -90,10 +90,10 @@ Use the properties in removable storage access policy rule(s) to create an XML f
 
 ## Set location for a copy of the file (evidence)
 
-If you want to have a copy of the file (evidence) when Write access happens, set right **Options** in your removable storage access policy rule in the XML file, and then specify the location where system can save the copy.
+If you want to have a copy of the file (evidence) having Write access, set right **Options** in your removable storage access policy rule in the XML file, and then specify the location where system can save the copy.
 
 - Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Define Device Control evidence data remote location**.
-- In the **Define Device Control evidence data remote location** pane, select **Enabled**, and then specify the local or network share folder path.
+- In the **Define Device Control evidence data remote location** window, select **Enabled**, and then specify the local or network share folder path.
 
 :::image type="content" source="media/deploy-dc-gpo/set-loc-copy-file.png" alt-text="Screenshot of set location for a copy of the file." lightbox="media/deploy-dc-gpo/set-loc-copy-file.png":::
 
@@ -102,6 +102,6 @@ If you want to have a copy of the file (evidence) when Write access happens, set
 If you want to change the default value of 60 days for persisting the local cache for file evidence:
 
 - Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Set the retention period for files in the local device control cache**.
-- In the **Set the retention period for files in the local device control cache** pane, select  **Enabled**, and then enter the number of days to retain the local cache (default 60).
+- In the **Set the retention period for files in the local device control cache** window, select  **Enabled**, and then enter the number of days to retain the local cache (default 60).
 
 :::image type="content" source="media/deploy-dc-gpo/retention-loc-cache.png" alt-text="Screenshot of retention period for local cache." lightbox="media/deploy-dc-gpo/retention-loc-cache.png":::
