@@ -237,8 +237,6 @@ If you've uploaded building data to your Call Quality Dashboard, you can add tho
 
 ## Understanding test sampling
 
-
-
 ## FAQ
 
 ### What is a Microsoft 365 service front door?
