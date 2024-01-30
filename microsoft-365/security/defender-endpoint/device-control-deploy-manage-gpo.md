@@ -86,7 +86,7 @@ Use the properties in removable storage access policy rule(s) to create an XML f
 - In the **Define device control policy rules** window, select **Enabled**, and enter the network share file path containing the XML rules data.
 
 > [!NOTE]
-> Comments using XML comment notation \<!-- COMMENT --\> can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
+> Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
 ## Set location for a copy of the file (evidence)
 
