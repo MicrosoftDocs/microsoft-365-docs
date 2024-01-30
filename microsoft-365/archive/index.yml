@@ -38,9 +38,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Set up Microsoft 365 Archive
-            url: /syntex/archive/archive-setup.md
+            url: /microsoft-365/syntex/archive/archive-setup.md
           - text: Pricing model
-            url: /syntex/archive/archive-pricing.md
+            url: /microsoft-365/syntex/archive/archive-pricing.md
 
 # Card 3
   - title: Archive data
@@ -48,11 +48,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: Manage Microsoft 365 Archive
-            url: /syntex/archive/archive-manage.md
+            url: /microsoft-365/syntex/archive/archive-manage.md
           - text: Archive states
-            url: /syntex/archive/archive-states.md
+            url: /microsoft-365/syntex/archive/archive-states.md
           - text: End user experience
-            url: /syntex/archive/archive-end-user.md
+            url: /microsoft-365/syntex/archive/archive-end-user.md
 
 # Card 4
   - title: Security & compliance
@@ -60,7 +60,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Compliance features
-            url: /syntex/archive/archive-compliance.md.md
+            url: /microsoft-365/syntex/archive/archive-compliance.md.md
 
 # Card 5
   - title: More solutions
@@ -68,9 +68,9 @@ landingContent:
       - linkListType: reference
         links:
           - text: Microsoft Syntex
-            url: /syntex/index.yml
+            url: /microsoft-365/syntex/index.yml
           - text: SharePoint Advanced Management
-            url: /sharepoint/advanced-management
+            url: /microsoft-365/sharepoint/advanced-management
           - text: Microsoft 365 Backup (Preview)
-            url: /syntex/backup/backup-overview.md
+            url: /microsoft-365/syntex/backup/backup-overview.md
 
