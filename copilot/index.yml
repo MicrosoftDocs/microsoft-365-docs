@@ -70,6 +70,8 @@ additionalContent:
           links:
             - text: Manage Copilot for Microsoft 365 with the Copilot page
               url: microsoft-365-copilot-page.md
+            - text: Connect to the Microsoft Copilot Dashboard (Preview)
+              url: /viva/insights/org-team-insights/copilot-dashboard
             - text: Manage Plugins in Integrated Apps (PREVIEW)
               url: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
             - text: Related Microsoft 365 admin controls

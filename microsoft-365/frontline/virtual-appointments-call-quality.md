@@ -43,11 +43,11 @@ You can also access CQD from Teams Admin Center:
 1. Then, choose **Call Quality Dashboard**.
 
 
-One you've logged into CQD, you can begin to analyze data from the existing dashboards. You can find these in the dropdown menu at the top of the page. You can also use [Power BI desktop](https://www.microsoft.com/p/power-bi-desktop/9ntxr16hnw1t#activetab=pivot:overviewtab) to create highly customizable reports. Use the [CQD Power BI template files](/microsoftteams/cqd-data-and-reports#import-the-cqd-report-templates) to get started. These template files contain many of the most frequently requested call quality metrics and charts.
+One you've logged into CQD, you can begin to analyze data from the existing dashboards. You can find these in the dropdown menu at the top of the page. You can also use [Power BI desktop](https://apps.microsoft.com/detail/9ntxr16hnw1t#activetab=pivot:overviewtab) to create highly customizable reports. Use the [CQD Power BI template files](/microsoftteams/cqd-data-and-reports#import-the-cqd-report-templates) to get started. These template files contain many of the most frequently requested call quality metrics and charts.
 
 ## Working with CQD data in Power BI
 
-Before you begin analyzing organizational call quality data, you'll need to [install](/p/power-bi-desktop/9ntxr16hnw1t#activetab=pivot:overviewtab) and [learn to use](https://powerbi.microsoft.com/learning/) Power BI desktop. To access the CQD database through Power BI, you'll need to [download and install the Microsoft Call Quality connector](/microsoftteams/cqd-power-bi-connector). Make sure to install the connector in the appropriate Documents folder.
+Before you begin analyzing organizational call quality data, you'll need to [install](https://apps.microsoft.com/detail/9ntxr16hnw1t#activetab=pivot:overviewtab) and [learn to use](https://powerbi.microsoft.com/learning/) Power BI desktop. To access the CQD database through Power BI, you'll need to [download and install the Microsoft Call Quality connector](/microsoftteams/cqd-power-bi-connector). Make sure to install the connector in the appropriate Documents folder.
 
 Once you've installed the connector, you'll be able to access your CQD data in Power BI.
 
