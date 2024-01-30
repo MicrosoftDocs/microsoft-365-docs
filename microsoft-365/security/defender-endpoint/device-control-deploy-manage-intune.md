@@ -71,11 +71,15 @@ Different aspects of device control are managed differently in Intune, as descri
 
 ### Connectivity
 
+#### Allow USB Connection
+
 - **Setting**: Allow USB Connection
 - **Device Control Profile**: Yes
 - **Device Control Rules Profile**: N/A
 - **Intune OMA-URI**: N/A
-- **Intune Reusable Settings**: N/A
+- **Intune Reusable Settings**: N/A   
+
+#### Allow Bluetooth
 
 - **Setting**: Allow Bluetooth
 - **Device Control Profile**: Yes
@@ -83,28 +87,31 @@ Different aspects of device control are managed differently in Intune, as descri
 - **Intune OMA-URI**: N/A
 - **Intune Reusable Settings**: N/A
 
-1. Bluetooth
+### Bluetooth
 
-   **Setting**: Allow advertising, Allow discovery mode, Allow preparing, Allow Promoted proximal connections, Services allowed List
-   **Device Control Profile**: X
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: N/A
-   **Intune Reusable Settings**: N/A
+- **Settings**: Allow advertising, Allow discovery mode, Allow preparing, Allow promoted proximal connections, and Services allowed list
+- **Device Control Profile**: Yes
+- **Device Control Rules Profile**: N/A
+- **Intune OMA-URI**: N/A
+- **Intune Reusable Settings**: N/A
 
-1. Device Control
+### Device Control
 
-   **Setting**: Enable/Disable Device Control, Define Device Control evidence data remote location, Set the retention period for files in the local device control cache, Turn on device control for specific device types, Select device control default enforcement policy
-   **Device Control Profile**: N/A
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: X
-   **Intune Reusable Settings**: N/A
+#### Device control settings
 
+- **Settings**: Enable/Disable Device Control, Define Device Control evidence data remote location, Set the retention period for files in the local device control cache, Turn on device control for specific device types, Select device control default enforcement policy
+- **Device Control Profile**: N/A
+- **Device Control Rules Profile**: N/A
+- **Intune OMA-URI**: Yes
+- **Intune Reusable Settings**: N/A
 
-   **Setting**: Policies and entries
-   **Device Control Profile**: X
-   **Device Control Rules Profile**: X
-   **Intune OMA-URI**: X
-   **Intune Reusable Settings**: N/A
+#### Policies and entries
+
+- **Setting**: Policies and entries
+- **Device Control Profile**: Yes
+- **Device Control Rules Profile**: Yes
+- **Intune OMA-URI**: Yes
+- **Intune Reusable Settings**: N/A
 
 
    **Setting**: Groups for Removable Storage and Printers
