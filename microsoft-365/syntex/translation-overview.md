@@ -2,7 +2,7 @@
 title: Overview of document translation in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/19/2024
 audience: admin
@@ -19,6 +19,9 @@ description: Learn about the document translation service in Microsoft Syntex.
 
 # Overview of document translation in Microsoft Syntex
 
+> [!NOTE]
+> Through June 2024, you can try out document translation and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+
 Microsoft Syntex lets you easily create a translated copy of a selected file or a set of files in a SharePoint document library. You can translate a file, while preserving the original format and structure of the file. Translation is available for all supported languages and dialects.
 
 ![Screenshot showing a document library with translated documents.](../media/content-understanding/translation-sample-library.png)
@@ -31,7 +34,7 @@ You can also use the translation feature for translating video transcripts and c
 
 ### Supported file types
 
-Document translation is available for the following file types: .csv, .docx, .htm, .html, .markdown, .md, .msg, .pdf, .pptx, .txt, and .xlsx. For legacy file types .doc, .rtf, .xls, .ods.ppt, and .odp, the translated copy is created in the modern equivalent (.docx, .xlsx, or .pptx).
+Document translation is available for the following file types: .csv, .docx, .htm, .html, .markdown, .md, .msg, .pdf, .pptx, .txt, and .xlsx. For legacy file types .doc, .rtf, .xls, .ods, .ppt, and .odp, the translated copy is created in the modern equivalent (.docx, .xlsx, or .pptx).
 
 ### Supported file size
 

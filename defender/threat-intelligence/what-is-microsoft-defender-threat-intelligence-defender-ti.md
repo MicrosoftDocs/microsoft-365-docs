@@ -5,6 +5,7 @@ author: alexroland24
 ms.author: aroland
 manager: dolmont
 ms.service: threat-intelligence 
+ms.collection: essentials-overview
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
