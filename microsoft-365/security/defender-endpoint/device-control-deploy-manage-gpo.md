@@ -68,7 +68,7 @@ Use the properties in removable storage group to create an XML file for the Remo
 
 - In the **Define device control policy groups** window, specify the network share file path containing the XML groups data.
 
-Take a look at the **Overview** \> **Removable storage group**. You can create different group types. Here's one group example XML file for any removable storage and CDROM, Windows portable devices, and approved USBs group: [XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)
+Look at the **Overview** \> **Removable storage group**. You can create different group types. Here's one group example XML file for any removable storage and CDROM, Windows portable devices, and approved USBs group: [XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)
 
 > [!NOTE]
 > Comments using XML comment notation `<!--COMMENT-->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
