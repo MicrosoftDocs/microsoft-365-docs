@@ -88,6 +88,9 @@ The first section of the tab displays the number of settings in each type of pol
 - **Anti-malware**
 - **Safe Attachments** (if your subscription includes Microsoft Defender for Office 365)
 - **Safe Links** (if your subscription includes Microsoft Defender for Office 365)
+- **DKIM**
+- **Built-in Protection**
+- **Outlook**
 
 If a policy type and number isn't shown, then all of your policies of that type meet the recommended settings of Standard or Strict protection.
 
@@ -101,19 +104,27 @@ The rest of the tab is the table of settings that need to be brought up to the l
 - **Last modified**: The date that the policy was last modified.
 - **Status**: Typically, this value is **Not started**.
 
-### Change a policy setting to the recommended value
+### View more details or change a policy setting to the recommended value
 
-On the **Standard protection** or **Strict protection** tab of the configuration analyzer, select the row in the table. The following buttons appear:
+:::image type="content" source="../../media/configuration-analyzer-flyout.png" alt-text="Flyout experience in the Configuration analyzer" lightbox="../../media/configuration-analyzer-flyout.png":::
 
-- **Apply recommendation**
+On the **Standard protection** or **Strict protection** tab of the configuration analyzer, select the row in the table. The following will appear:
+
+- **Flyout Page**
+- **Apply recommendation** (For recommendations which involve multiple steps, this will be greyed out)
+- **Export**
 - **View policy**
 - **Refresh**:
+
+Flyout page will list details about why we are making the recommendation and deep links to documentation for more details. 
 
 If you select a row and click **Apply recommendation**, a confirmation dialog (with the option to not show the dialog again) appears. If you click **OK**, the following things happen:
 
 - The setting is updated to the recommended value.
 - The **Apply recommendation** and **View policy** disappear (only the **Refresh** button remains).
 - The **Status** value for the row changes to **Complete**.
+
+If you select one or multiples rows and click **Export**, all the selected recommendations will be exported as a CSV file. 
 
 If you select a row and click **View policy** you're taken to the details flyout of the affected policy in the Microsoft Defender portal where you can manually update the setting.
 
