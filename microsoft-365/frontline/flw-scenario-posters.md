@@ -15,11 +15,10 @@ ms.collection:
   - m365solution-frontline
   - m365solution-scenario
   - contentengagementFY23
-ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 
+ms.date: 01/30/2024
 
 ---
 
