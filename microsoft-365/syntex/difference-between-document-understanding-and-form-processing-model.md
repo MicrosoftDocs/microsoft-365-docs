@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: lauris
-ms.date: 06/12/2023
+ms.date: 01/29/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -33,6 +33,6 @@ Use the following table to see differences in custom models to help identify the
 | Supported regions| Available in all regions. | Relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). |
 | Transactional cost | Not applicable | For pay-as-you-go licensing, not applicable. <br>If you still have per-user licensing, uses AI Builder credits. 3,500 credits are included for each Syntex license per month. One million credits allow processing of 10,000 file pages. | For pay-as-you-go licensing, not applicable. <br>If you still have per-user licensing, uses AI Builder credits. 3,500 credits are included for each Syntex license per month. One million credits allow processing of 10,000 file pages.|
 | Capacity | No capacity restrictions. | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Uses the default Power Platform environment (custom environments with Dataverse database supported). |
-| Supported languages| Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. | Current language support is for English. | Language support for [more than 100 languages](/ai-builder/form-processing-model-requirements#languages-supported). |
+| Supported languages| Supports [more than 40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents). | Supports [more than 40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents). | Supports [more than 100 languages](/ai-builder/form-processing-model-requirements#model-for-structured-and-semi-structured-documents). |
 
 

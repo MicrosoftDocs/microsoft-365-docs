@@ -33,19 +33,18 @@ This article details Step 1 in a solution designed to complete a Cross-tenant On
 - **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. If not, [Download SharePoint Online Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588).
 - Be a SharePoint Online admin or Microsoft 365 Global admin on both the source and target tenants
 
-
 ### Connect to both tenants
 
 1. Sign in to the SharePoint Management Shell as a SharePoint Online admin or Microsoft 365 Global admin.
-2. Run the following entering the **source** tenant URL: 
+2. Run the following entering the **source** tenant URL:
 
     ```powershell
     Connect-SPOService -url https://<TenantName>-admin.sharepoint.com
     ```
 
 3. When prompted, sign in to the **source** tenant using your Admin username and password.
- 
-4. Run the following entering the **target** tenant URL: 
+
+4. Run the following entering the **target** tenant URL:
 
     ```powershell
     Connect-SPOService -url https://<TenantName>-admin.sharepoint.com
@@ -53,7 +52,7 @@ This article details Step 1 in a solution designed to complete a Cross-tenant On
 
 5. When prompted, sign in to the **target** tenant using your Admin username and password.
 
->[!Important]
->**Microsoft 365 Multi-Geo customers:** You must treat each geography as a separate tenant. Provide the correct geography-specific URLs throughout the migration process.
+> [!IMPORTANT]
+> **Microsoft 365 Multi-Geo customers:** You must treat each geography as a separate tenant. Provide the correct geography-specific URLs throughout the migration process.
 
 ## Step 2: [Establish trust between the source and target tenants](cross-tenant-onedrive-migration-step2.md)

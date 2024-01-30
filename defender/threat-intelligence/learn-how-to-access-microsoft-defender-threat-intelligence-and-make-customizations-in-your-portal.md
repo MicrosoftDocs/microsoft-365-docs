@@ -8,6 +8,7 @@ ms.service: threat-intelligence
 ms.topic: quickstart
 ms.date: 08/02/2022
 ms.custom: template-quickstart
+ms.collection: essentials-get-started
 ---
 
 # Quickstart: Learn how to access Microsoft Defender Threat Intelligence and make customizations in your portal
