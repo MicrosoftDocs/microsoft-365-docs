@@ -30,43 +30,24 @@ To use the following table, identify the type of setting you want to configure, 
 
 | Setting | Device control profile and/or rule | Intune OMA-URI and/or reusable settings |
 |---|---|---|
-| **Device installation restrictions** | Profile | N/A |
+| **Allow Bluetooth** | Profile | N/A |
 | **Allow full scan removable drive scanning** | Profile | N/A |
 | **Allow direct memory access** <br/>(Data protection) Profile | N/A |
-| **Device enumeration policy** <br/>(Dma guard) | Profile | N/A |
-| **Removable disk deny write access** <br/>(Storage) | Profile | N/A |
 | **Allow USB connection**<br/>(Connectivity) | Profile | N/A |
-| **Allow Bluetooth** | Profile | N/A |
 | **Bluetooth settings** <br/>- Allow advertising<br/>- Allow discovery mode<br/>- Allow preparing<br/>- Allow promoted proximal connections<br/>- Services allowed list | Profile | N/A |
+| **Control disk level access** | Rule | OMA-URI |
+| **Control file level access** | N/A | OMA-URI |
+| **Device control entries - Create file evidence option**<br/>(`Allow: 8`) | N/A | OMA-URI |
+| **Device control entries - options** | Rule | Reusable settings |
+| **Device control parameters** | N/A | OMA-URI |
 | **Device control settings** <br/>- Enable/disable device control<br/>- Define device control evidence data remote location<br/>- Set the retention period for files in the local device control cache<br/>- Turn on device control for specific device types<br/>- Select device control default enforcement policy | N/A | OMA-URI |
-| **Policies and entries** <br/>(see [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md)) | Profile <br/>Rule | OMA-URI |
+| **Device enumeration policy** <br/>(Dma guard) | Profile | N/A |
+| **Device installation restrictions** | Profile | N/A |
 | **Groups for removable storage and printers** | N/A | OMA-URI<br/>Reusable settings |
 | **Groups other than removable storage and printers**<br/>(Network, VPN Connection, File, PrintJob) | N/A | OMA-URI |
-| **Control disk level access** | Rule | OMA-URI |
-| **Control File level access** | N/A | OMA-URI |
-| **Device control entries - options** | Rule | Reusable settings |
-| **Device control entries - Create file evidence option**<br/>(Allow: 8) | N/A | OMA-URI |
+| **Policies and entries** <br/>(see [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md)) | Profile <br/>Rule | OMA-URI |
+| **Removable disk deny write access** <br/>(Storage) | Profile | N/A |
 
-
-   **Setting**: Entries – Options
-   **Device Control Profile**: N/A
-   **Device Control Rules Profile**: X
-   **Intune OMA-URI**: X
-   **Intune Reusable Settings**: N/A
-
-
-   **Setting**: Entries – create file evidence option (Allow: 8)
-   **Device Control Profile**: N/A
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: X
-   **Intune Reusable Settings**: N/A
-
-
-   **Setting**: Parameters
-   **Device Control Profile**: N/A
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: X
-   **Intune Reusable Settings**: N/A
 
 ## Device control profile
 
