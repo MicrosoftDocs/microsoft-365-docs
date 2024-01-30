@@ -44,9 +44,9 @@ You must have one of the following subscription plans to enable Microsoft Copilo
 
 Your users must be assigned one of the following base licenses to get Copilot for Microsoft 365 as an add-on license.
 
-### Deploy Microsoft 365 Apps for enterprise
+### Deploy Microsoft 365 Apps
 
-Microsoft 365 Apps for enterprise must be deployed for your users to integrate with Copilot and applications such as Word, Excel, PowerPoint, Outlook, and Teams. To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
+Microsoft 365 Apps must be deployed for your users to integrate with Copilot and applications such as Word, Excel, PowerPoint, Outlook, and Teams. To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
 - **OneDrive Account** You need to have a OneDrive account for several features within Copilot for Microsoft 365, such as saving and sharing your files. For more information, see [Sign in or create an account for OneDrive](https://support.microsoft.com/office/video-sign-in-or-create-an-account-for-onedrive-3adf09fd-90e3-4420-8c4e-b55e2cde40d2?ui=en-us&rs=en-us&ad=us).
 
@@ -71,7 +71,7 @@ Microsoft Copilot for Microsoft 365 ensures data security and privacy by adherin
 
 Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft Copilot for Microsoft 365 features. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
 
-## Manage licenses for Copilot
+## Manage licenses
 
 After you’ve prepared your organization for Copilot, you can manage Microsoft Copilot for Microsoft 365 licenses from the Microsoft 365 admin center. You can assign licenses to individual users or to groups of users, as well as reassign licenses to other users.  
 
@@ -81,7 +81,7 @@ You can also assign licenses in bulk to [groups of users through the Azure admin
 
 To learn more about the steps to deploy Copilot for your organization, see [Enable users for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-enable-users.md).
 
-## Configure settings for Copilot
+## Configure settings
 
 As an admin, you can manage Microsoft Copilot experiences for your organization by using the controls available in the Microsoft 365 admin center. You can view the status of Copilot license assignments, access the latest information on Copilot, manage data security and compliance controls, submit feedback on behalf of users, configure plugins and permissions, and enable the use of web data as grounding data in Copilot.
 
