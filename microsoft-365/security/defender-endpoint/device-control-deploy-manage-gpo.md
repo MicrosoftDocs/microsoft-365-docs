@@ -65,7 +65,7 @@ To configure the device types that a device control policy is applied, follow th
 
 2. Use the properties in your removable storage group to create an XML file for each removable storage group. 
 
-3. Save the XML file to your network share.
+3. Save each XML file to your network share.
 
 4. Define the settings as follows:
 
@@ -80,36 +80,43 @@ You can create different group types. Here's one group example XML file for any 
 
 ## Define Policies
 
-Create one XML file for access policy rule(s):
-
-Use the properties in removable storage access policy rule(s) to create an XML for each group's removable storage access policy rule, save the XML file to network share, and deliver the setting as follows:
-
-- Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Define device control policy rules**.
-
 :::image type="content" source="media/deploy-dc-gpo/define-policies.png" alt-text="Screenshot of define policies." lightbox="media/deploy-dc-gpo/define-policies.png":::
 
-- In the **Define device control policy rules** window, select **Enabled**, and enter the network share file path containing the XML rules data.
+
+1. Create one XML file for access policy rule.
+
+2. Use the properties in removable storage access policy rule(s) to create an XML for each group's removable storage access policy rule. 
+
+3. Save the XML file to network share.
+
+4. Define the settings as follows:
+
+   1. On a device running Windows, go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Define device control policy rules**.
+
+   2. In the **Define device control policy rules** window, select **Enabled**, and then specify the network share file path containing the XML rules data.
 
 > [!NOTE]
 > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
 ## Set location for a copy of the file (evidence)
 
+:::image type="content" source="media/deploy-dc-gpo/set-loc-copy-file.png" alt-text="Screenshot of set location for a copy of the file." lightbox="media/deploy-dc-gpo/set-loc-copy-file.png":::
+
 If you want to have a copy of the file (evidence) having Write access, set right **Options** in your removable storage access policy rule in the XML file, and then specify the location where system can save the copy.
 
-- Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Define Device Control evidence data remote location**.
-- In the **Define Device Control evidence data remote location** window, select **Enabled**, and then specify the local or network share folder path.
+1. On a device running Windows, go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Define Device Control evidence data remote location**.
 
-:::image type="content" source="media/deploy-dc-gpo/set-loc-copy-file.png" alt-text="Screenshot of set location for a copy of the file." lightbox="media/deploy-dc-gpo/set-loc-copy-file.png":::
+2. In the **Define Device Control evidence data remote location** window, select **Enabled**, and then specify the local or network share folder path.
 
 ## Retention period for local evidence cache
 
-If you want to change the default value of 60 days for persisting the local cache for file evidence:
-
-- Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Set the retention period for files in the local device control cache**.
-- In the **Set the retention period for files in the local device control cache** window, select  **Enabled**, and then enter the number of days to retain the local cache (default 60).
-
 :::image type="content" source="media/deploy-dc-gpo/retention-loc-cache.png" alt-text="Screenshot of retention period for local cache." lightbox="media/deploy-dc-gpo/retention-loc-cache.png":::
+
+If you want to change the default value of 60 days for persisting the local cache for file evidence, follow these steps:
+
+1. Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Set the retention period for files in the local device control cache**.
+
+2. In the **Set the retention period for files in the local device control cache** window, select  **Enabled**, and then enter the number of days to retain the local cache (default 60).
 
 ## See also
 
