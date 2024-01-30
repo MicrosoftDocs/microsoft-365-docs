@@ -104,7 +104,7 @@ Use a survey to take inventory of the tools, capabilities and scenarios your use
 
 Determine what devices to support. For example, you can use the Teams mobile clients on Android and iOS for on-the-go access to Teams and frontline worker apps. See [Get Teams clients](/microsoftteams/get-clients) and [Manage devices for frontline workers](flw-devices.md).
 
-See [Set up Microsoft 365 for frontline workers](flw-setup-microsoft-365.md) for guidance on how to set up Microsoft 365, Teams, and the other services you'll need for your pilot.
+See [Set up Microsoft 365 for frontline workers](flw-setup-microsoft-365.md) and [Teams deployment overview](microsoftteams/deploy-overview) for guidance on how to set up Microsoft 365, Teams, and the other services you'll need for your pilot.
 
 <!--When you set up and configured all of the other services you need, you can set up Teams.-->
 
