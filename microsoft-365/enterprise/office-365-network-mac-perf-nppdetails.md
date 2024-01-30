@@ -33,13 +33,13 @@ This test detects a private or unknown certificate presented by a network device
 
 ## Incorrect destination IP address detected
 
-This indicates that the destination endpoint representing Microsoft 365 endpoints have incorrect or unfamiliar IP addresses assigned to them. Typically, this means there is an intermediate network device acting as a proxy and we will show you the incorrect or unfamiliar IP address detected.
+This indicates that the destination endpoint representing Microsoft 365 endpoints have incorrect or unfamiliar IP addresses assigned to them. Typically, this means there's an intermediate network device acting as a proxy and we'll show you the incorrect or unfamiliar IP address detected.
 
 :::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdetails-2.png" alt-text="Incorrect destination IP address detected.":::
 
 ## VPN or tunneling detected
 
-This indicates that the network taken to connect to Microsoft 365 endpoints involves a VPN or traffic tunnelling. A VPN or traffic tunnelling may cause backhaul of network traffic and lead to network performance issues that impacts user experience.
+This indicates that the network taken to connect to Microsoft 365 endpoints involves a VPN or traffic tunneling. A VPN or traffic tunneling might cause backhaul of network traffic and lead to network performance issues that impacts user experience.
 
 :::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdetails-3.png" alt-text="VPN or tunneling detected.":::
 
@@ -47,7 +47,7 @@ This indicates that the network taken to connect to Microsoft 365 endpoints invo
 
 This is aligned with our connectivity principles and indicates that there was no device interference detected between your tenant users and Microsoft 365 services.
 
-## Related topics
+## Related articles
 
 [Network connectivity in the Microsoft 365 admin center](office-365-network-mac-perf-overview.md)
 
