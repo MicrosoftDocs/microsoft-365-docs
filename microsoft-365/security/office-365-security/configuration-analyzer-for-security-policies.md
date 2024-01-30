@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.reviewer:
 audience: ITPro
 ms.topic: how-to
@@ -16,10 +16,10 @@ ms.collection:
   - m365-security
   - tier1
 ms.custom:
-description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
+description: Admins can learn how to use the configuration analyzer to find and fix security policies that are less secure than Standard protection and Strict protection in preset security policies.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/2/2023
+ms.date: 1/29/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -30,7 +30,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Configuration analyzer in the Microsoft Defender portal provides a central location to find and fix security policies where the settings are below the Standard protection and Strict protection profile settings in [preset security policies](preset-security-policies.md).
+Configuration analyzer in the Microsoft Defender portal provides a central location to find and fix security policies where the settings are less secure than the Standard protection and Strict protection profile settings in [preset security policies](preset-security-policies.md).
 
 The following types of policies are analyzed by the configuration analyzer:
 
@@ -48,6 +48,11 @@ The following types of policies are analyzed by the configuration analyzer:
   - [Safe Attachments policies](safe-attachments-policies-configure.md).
 
 The Standard and Strict policy setting values that are used as baselines are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+
+The configuration analyzer also checks the following non-policy settings:
+
+- **DKIM**: Whether [SPF](email-authentication-spf-configure.md) and [DKIM](email-authentication-dkim-configure.md) records for the specified domain are detected in DNS.
+- **Outlook**: Whether native Outlook external sender identifiers are [enabled](/powershell/module/exchange/set-externalinoutlook) in the organization.
 
 ## What do you need to know before you begin?
 
@@ -89,12 +94,12 @@ The first section of the tab displays the number of settings in each type of pol
 - **Safe Attachments** (if your subscription includes Microsoft Defender for Office 365)
 - **Safe Links** (if your subscription includes Microsoft Defender for Office 365)
 - **DKIM**
-- **Built-in Protection**
+- **Built-in Protection** (if your subscription includes Microsoft Defender for Office 365)
 - **Outlook**
 
 If a policy type and number isn't shown, then all of your policies of that type meet the recommended settings of Standard or Strict protection.
 
-The rest of the tab is the table of settings that need to be brought up to the level Standard or Strict protection. The table contains the following columns:
+The rest of the tab is the table of settings that need to be brought up to the level Standard or Strict protection. The table contains the following columns<sup>\*</sup>:
 
 - **Recommendations**: The value of the setting in the Standard or Strict protection profile.
 - **Policy**: The name of the affected policy that contains the setting.
@@ -104,38 +109,70 @@ The rest of the tab is the table of settings that need to be brought up to the l
 - **Last modified**: The date that the policy was last modified.
 - **Status**: Typically, this value is **Not started**.
 
-### View more details or change a policy setting to the recommended value
+<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
 
-:::image type="content" source="../../media/configuration-analyzer-flyout.png" alt-text="Flyout experience in the Configuration analyzer" lightbox="../../media/configuration-analyzer-flyout.png":::
+- Horizontally scroll in your web browser.
+- Narrow the width of appropriate columns.
+- Zoom out in your web browser.
 
-On the **Standard protection** or **Strict protection** tab of the configuration analyzer, select the row in the table. The following will appear:
+To filter the entries, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**. The following filters are available in the **Filters** flyout that opens:
 
-- **Flyout Page**
-- **Apply recommendation** (For recommendations which involve multiple steps, this will be greyed out)
-- **Export**
-- **View policy**
-- **Refresh**:
+- **Anti-spam**
+- **Anti-phishing**
+- **Anti-malware**
+- **Safe Attachments**
+- **Safe Links**
+- **ATP Built-in Protection rule**
+- **DKIM**
+- **Outlook**
 
-Flyout page will list details about why we are making the recommendation and deep links to documentation for more details. 
+When you're finished in the **Filters** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-If you select a row and click **Apply recommendation**, a confirmation dialog (with the option to not show the dialog again) appears. If you click **OK**, the following things happen:
+Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific entries.
 
-- The setting is updated to the recommended value.
-- The **Apply recommendation** and **View policy** disappear (only the **Refresh** button remains).
-- The **Status** value for the row changes to **Complete**.
+#### View details about a recommended policy setting
 
-If you select one or multiples rows and click **Export**, all the selected recommendations will be exported as a CSV file. 
+On the **Standard protection** or **Strict protection** tab of the configuration analyzer, select an entry by clicking anywhere in the row other than the check box next to the recommendation name. In the details flyout that opens, the following information is available:
 
-If you select a row and click **View policy** you're taken to the details flyout of the affected policy in the Microsoft Defender portal where you can manually update the setting.
+- **Policy**: The name of the affected policy.
+- **Why?**: Information about why we recommend the value for the setting.
+- The specific setting to change and the value to change it to.
+- **View policy**: The link takes you to the details flyout of the affected policy in the Microsoft Defender portal where you can manually update the setting.
+- A link to [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
-After you automatically or manually update the setting, click **Refresh** to see the reduced number of recommendations and the removal of the updated row from the results.
+> [!TIP]
+> To see details about other recommendations without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous** and **Next** at the top of the flyout.
+
+When you're finished in the details flyout, select **Close**.
+
+:::image type="content" source="../../media/configuration-analyzer-details-flyout.png" alt-text="Flyout experience in the Configuration analyzer" lightbox="../../media/configuration-analyzer-details-flyout.png":::
+
+#### Take action on a recommended policy setting
+
+On the **Standard protection** or **Strict protection** tab of the configuration analyzer, select an entry by selecting the check box next to the recommendation name. The following actions appear on the page:
+
+- :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Apply recommendation**: If the recommendation requires multiple steps, this action is grayed out.
+
+  When you select this action, a confirmation dialog (with the option to not show the dialog again) opens. When you select **OK**, the following things happen:
+
+  - The setting is updated to the recommended value.
+  - The recommendation is still selected, but the only available action is :::image type="icon" source="../../media/m365-cc-sc-refresh-icon.png" border="false"::: **Refresh**.
+  - The **Status** value for the row changes to **Complete**.
+
+- :::image type="icon" source="../../media/m365-cc-sc-view-policy-icon.png" border="false":::**View policy**: You're taken to the details flyout of the affected policy in the Microsoft Defender portal where you can manually update the setting.
+
+- :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export**: Exports the selected recommendation to a .csv file, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export**.
+
+  You can also export recommendations after you select multiple recommendations or after you select all recommendations by selecting the check box next to the **Recommendations** column header.
+
+After you automatically or manually update the setting, select :::image type="icon" source="../../media/m365-cc-sc-refresh-icon.png" border="false"::: **Refresh** to see the reduced number of recommendations and the removal of the updated row from the results.
 
 ### Configuration drift analysis and history tab in the configuration analyzer
 
 > [!NOTE]
 > [Unified Auditing](/purview/audit-log-enable-disable) needs to be enabled for drift analysis.
 
-This tab allows you to track the changes that have been made to your security policies and how those changes compare to the Standard or Strict settings. By default, the following information is displayed:
+This tab allows you to track the changes to your security policies and how those changes compare to the Standard or Strict settings. By default, the following information is displayed:
 
 - **Last modified**
 - **Modified by**
@@ -145,15 +182,15 @@ This tab allows you to track the changes that have been made to your security po
 - **Configuration change**: The old value and the new value of the setting
 - **Configuration drift**: The value **Increase** or **Decrease** that indicates the setting increased or decreased security compared to the recommended Standard or Strict setting.
 
-To filter the results, click **Filter**. In the **Filters** flyout that appears, you can select from the following filters:
+To filter the entries, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**. The following filters are available in the **Filters** flyout that opens:
 
-- **Start time** and **End time** (date): You can go back as far as 90 days from today.
-- **Standard protection** or **Strict protection**
+- **Date**: **Start time** and **End time**. You can go back as far as 90 days from today.
+- **Type**: **Standard protection** or **Strict protection**.
 
-When you're finished, click **Apply**.
+When you're finished in the **Filters** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-To export the results to a .csv file, click **Export**.
+Use the ::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to filter the entries by a specific **Modified by**, **Setting name**, or **Type** value.
 
-To filter the results by a specific **Modified by**, **Setting name**, or **Type** value, use the **Search** box.
+To export the entries shown on the **Configuration drift analysis and history** tab to a .csv file, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export**.
 
 :::image type="content" source="../../media/configuration-analyzer-configuration-drift-analysis-view.png" alt-text="The Configuration drift analysis and history view in the Configuration analyzer" lightbox="../../media/configuration-analyzer-configuration-drift-analysis-view.png":::
