@@ -33,11 +33,11 @@ If you're using Group Policy to manage Defender for Endpoint settings, you can u
 2. In the **Device Control** window, select **Enabled**.
 
 > [!NOTE]
-> If you don't see these group policy objects, you need to add the group policy administrative template. You can download administrative template (WindowsDefender.adml and WindowsDefender.admx) from [mdatp-devicecontrol / Removable Storage Access Control Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) in GitHub.
+> If you don't see these Group Policy Objects, you need to add the Group Policy Administrative Templates (ADMX). You can download administrative template (WindowsDefender.adml and WindowsDefender.admx) from [mdatp-devicecontrol / Removable Storage Access Control Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) in GitHub.
 
-## Set Default Enforcement
+## Set default enforcement
 
-You can set default access such as, Deny or Allow for all Device Control features like, RemovableMediaDevices, CdRomDevices, WpdDevices, and PrinterDevices.
+You can set default access such as, `Deny` or `Allow` for all device control features, such as `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, and `PrinterDevices`.
 
 For example, you can have either a Deny or an Allow policy for RemovableMediaDevices, but not for CdRomDevices or WpdDevices. If you set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices is blocked. If you only want to manage storage, make sure to create Allow policy for Printer. Otherwise, this Default Enforcement will be applied to Printer as well.
 
