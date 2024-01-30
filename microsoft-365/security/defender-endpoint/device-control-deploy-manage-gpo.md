@@ -4,7 +4,7 @@ description: Learn how to deploy and manage device control in Defender for Endpo
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/23/2024
+ms.date: 01/30/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -24,14 +24,13 @@ f1.keywords: NOCSH
 
 If you're using Group Policy to manage Defender for Endpoint settings, you can use it to deploy and manage device control.
 
-## Enable or Disable Removable Storage Access Control
-
-You can enable or disable Device control as follows:
-
-- Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Features** \> **Device Control**.
-- In the **Device Control** window, select **Enabled**.
+## Enable or disable removable storage access control
 
 :::image type="content" source="media/deploy-dc-gpo/enable-disable-rsac.png" alt-text="Screenshot of enable disable rsac." lightbox="media/deploy-dc-gpo/enable-disable-rsac.png":::
+
+1. On a device running Windows, go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Features** \> **Device Control**.
+
+2. In the **Device Control** window, select **Enabled**.
 
 > [!NOTE]
 > If you don't see these group policy objects, you need to add the group policy administrative template. You can download administrative template (WindowsDefender.adml and WindowsDefender.admx) from [mdatp-devicecontrol / Removable Storage Access Control Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) in GitHub.
@@ -105,3 +104,11 @@ If you want to change the default value of 60 days for persisting the local cach
 - In the **Set the retention period for files in the local device control cache** window, select  **Enabled**, and then enter the number of days to retain the local cache (default 60).
 
 :::image type="content" source="media/deploy-dc-gpo/retention-loc-cache.png" alt-text="Screenshot of retention period for local cache." lightbox="media/deploy-dc-gpo/retention-loc-cache.png":::
+
+## See also
+
+[Device control in Microsoft Defender for Endpoint](device-control-overview.md)
+
+[Device control policies and entries in Microsoft Defender for Endpoint](device-control-policies-entries.md)
+
+[Device Control for macOS](mac-device-control-overview.md)
