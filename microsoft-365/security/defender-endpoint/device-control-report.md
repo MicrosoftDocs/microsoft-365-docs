@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.date: 12/14/2023
 ms.author: deniseb
 author: denisebmsft
-ms.reviewer: dansimp
 ms.topic: conceptual
 manager: dansimp
 ms.reviewer: joshbregman
