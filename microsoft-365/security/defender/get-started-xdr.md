@@ -53,14 +53,14 @@ You also need to grant our experts one or both of the following permissions:
 **To grant our experts permissions:**
 
 1. In the same Defender Experts settings setup, under **Permissions**, choose the access level(s) you want to grant our experts.
-1. If you wish to [exclude device and user groups](#exclude-devices-and-users-from-remediation) in your organization from remediation actions, select **Manage exclusions**.
+1. If you wish to [exclude device and user groups](#exclude-devices-from-remediation) in your organization from remediation actions, select **Manage exclusions**.
 1. Select **Next** to [add contact persons or groups](#tell-us-who-to-contact-for-important-matters).
 
 To edit or update permissions after the initial setup, go to **Settings** > **Defender Experts** > **Permissions**.
 
 ## Exclude devices from remediation
 
-Defender Experts for XDR lets you exclude devices and users from remediation actions taken by our experts and instead get remediation guidance for those entities. These exclusions are based on identified [device groups](../defender-endpoint/machine-groups.md) in Microsoft Defender for Endpoint and identified [user groups](/entra/fundamentals/concept-learn-about-groups) in Microsoft Entra ID.
+Defender Experts for XDR lets you exclude devices and users from remediation actions taken by our experts and instead get remediation guidance for those entities. These exclusions are based on identified [device groups](../defender-endpoint/machine-groups.md) in Microsoft Defender for Endpoint<!--and identified [user groups](/entra/fundamentals/concept-learn-about-groups) in Microsoft Entra ID-->.
 
 **To exclude device groups:**
 
