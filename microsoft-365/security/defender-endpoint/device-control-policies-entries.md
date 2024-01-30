@@ -1,5 +1,5 @@
 ---
-title: Device control policies and entries in Microsoft Defender for Endpoint            
+title: Device control policies in Microsoft Defender for Endpoint            
 description: Learn about device control policies and entries in Defender for Endpoint           
 author: denisebmsft
 ms.author: deniseb
@@ -20,7 +20,7 @@ search.appverid: MET150
 f1.keywords: NOCSH 
 ---
 
-# Device control policies and entries in Microsoft Defender for Endpoint
+# Device control policies in Microsoft Defender for Endpoint
 
 This article describes device control policies, rules, entries, groups, and advanced conditions. Essentially, device control policies define access for a set of devices. The devices that are in scope are determined by a list of included device groups and a list of excluded device groups. A policy applies if the device is in all of the included device groups and none of the excluded device groups. If no policies apply, then the default enforcement is applied. 
 
