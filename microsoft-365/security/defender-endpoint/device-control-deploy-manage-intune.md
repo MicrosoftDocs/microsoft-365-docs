@@ -93,14 +93,9 @@ In Intune, device control groups appear as reusable settings under **Home > Endp
 | Setting | OMA-URI | Data type and values |
 |---|---|---|
 | **Enable device control** <br/>Enable or disable device control on the device | `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled` | Integer <br/>Disable = `0`; Enable = `1` |
-| **Device control default enforcement** <br/>Default enforcement establishes what decisions are made during device control access checks when none of the policy rules match | `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` | Integer <br/>`DefaultEnforcementAllow` = `1`; `DefaultEnforcementDeny` = `2`
-
-1. Device Types
-
-   **Description**: Device types, identified by their Primary IDs, will have device control protection turned on.
-   **OMA-URI**: ./Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration
-   **Data Type**: String
-   **Value(s)**: RemovableMediaDevices; CdRomDevices; WpdDevices; PrinterDevices
+| **Device control default enforcement** <br/>Default enforcement establishes what decisions are made during device control access checks when none of the policy rules match | `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` | Integer <br/>`DefaultEnforcementAllow` = `1`; `DefaultEnforcementDeny` = `2` | 
+| **Device types** <br/>Device types, identified by their Primary IDs, with device control protection turned on | `./Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration` | String <br/>- `RemovableMediaDevices`<br/>- `CdRomDevices`<br/>- `WpdDevices`<br/>- `PrinterDevices` |
+| 
 
 1. Evidence Data Remote Location
 
