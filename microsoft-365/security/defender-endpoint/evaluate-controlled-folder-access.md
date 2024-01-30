@@ -37,10 +37,9 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-
 [Controlled folder access](controlled-folders.md) is a feature that helps protect your documents and files from modification by suspicious or malicious apps. Controlled folder access is supported on Windows Server 2019, Windows Server 2022, Windows 10, and Windows 11 clients.
 
-It's especially useful in helping protect against [ransomware](https://www.microsoft.com/wdsi/threats/ransomware) that attempts to encrypt your files and hold them hostage.
+It's especially useful in helping protect against [ransomware](https://www.microsoft.com/wdsi/threats) that attempts to encrypt your files and hold them hostage.
 
 This article helps you evaluate controlled folder access. It explains how to enable audit mode so you can test the feature directly in your organization.
 
@@ -79,7 +78,7 @@ See [Protect important folders with controlled folder access](controlled-folders
 
 ## See also
 
-* [Protect important folders with controlled folder access](controlled-folders.md)
-* [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)
-* [Use audit mode](audit-windows-defender.md)
+- [Protect important folders with controlled folder access](controlled-folders.md)
+- [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)
+- [Use audit mode](audit-windows-defender.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

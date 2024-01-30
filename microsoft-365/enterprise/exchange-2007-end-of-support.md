@@ -233,7 +233,7 @@ If you decided to keep your email on-premises, use the following resources to he
 
 - [Exchange Deployment Assistant](/exchange/exchange-deployment-assistant)
 
-- Active Directory schema changes for Exchange [2016](/Exchange/plan-and-deploy/active-directory/ad-schema-changes), [2013](/exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help), [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)
+- Active Directory schema changes for Exchange [2016](/Exchange/plan-and-deploy/active-directory/ad-schema-changes), [2013](/exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help), [2010](/previous-versions/office/developer/exchange-server-2010/dd877014(v=exchg.140))
 
 - System requirements for Exchange [2016](/Exchange/plan-and-deploy/system-requirements), [2013](/exchange/exchange-2013-system-requirements-exchange-2013-help), [2010](/previous-versions/office/exchange-server-2010/aa996719(v=exchg.141))
 
