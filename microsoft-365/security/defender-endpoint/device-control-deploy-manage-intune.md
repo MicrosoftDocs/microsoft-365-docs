@@ -70,87 +70,64 @@ Policies can be added and removed using the **+** and **–** icons.  The name o
 
 ## Device control groups (Reusable settings)
 
-In Intune, device control groups appear as reusable settings under **Home > Endpoint Security > Attack Surface Reduction**. Select the **Reusable Settings** Tab.
+In Intune, device control groups appear as reusable settings under **Home** > **Endpoint Security** > **Attack Surface Reduction**. Select the **Reusable Settings** Tab.
 
 ## Removable Storage Access Control using OMA-URI
 
 1. Go to the Microsoft Intune admin center (https://endpoint.microsoft.com/).
 
-1. Choose **Devices > Configuration profiles**. The **Configuration profiles** page appears. 
+2. Choose **Devices** > **Configuration profiles**. The **Configuration profiles** page appears. 
 
-1. Under the **Policies** tab (selected by default), select **+ Create**, and choose **+ New policy** from the drop-down that appears. The **Create a profile** page appears.
+3. Under the **Policies** tab (selected by default), select **+ Create**, and choose **+ New policy** from the drop-down that appears. The **Create a profile** page appears.
 
-1. Choose **Windows 10 and later** from the **Platform** drop-down list, and choose **Templates** from the **Profile type** drop-down list.
+4. Choose **Windows 10 and later** from the **Platform** drop-down list, and choose **Templates** from the **Profile type** drop-down list.
 
    Once you choose **Templates** from the **Profile type** drop-down list, the **Template name** pane is displayed, along with a search box (to search the profile name).
 
-1. Select **Custom** from the **Template name** pane, and select **Create**.
+5. Select **Custom** from the **Template name** pane, and select **Create**.
 
-1. Create a row for each setting, group, or policy by implementing Steps 1—5.
+6. Create a row for each setting, group, or policy by implementing Steps 1—5.
 
 ## Defining Settings with OMA-URI
 
-| Setting | OMA-URI | Data type and values |
+To use the following table, identify the setting you want to configure, and then use the information in the OMA-URI and data type & values columns.
+
+| Setting | OMA-URI | Data type & values |
 |---|---|---|
-| **Enable device control** <br/>Enable or disable device control on the device | `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled` | Integer <br/>Disable = `0`; Enable = `1` |
 | **Device control default enforcement** <br/>Default enforcement establishes what decisions are made during device control access checks when none of the policy rules match | `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` | Integer <br/>`DefaultEnforcementAllow` = `1`; `DefaultEnforcementDeny` = `2` | 
 | **Device types** <br/>Device types, identified by their Primary IDs, with device control protection turned on | `./Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration` | String <br/>- `RemovableMediaDevices`<br/>- `CdRomDevices`<br/>- `WpdDevices`<br/>- `PrinterDevices` |
-| 
-
-1. Evidence Data Remote Location
-
-   **Description**: Where Device Control service will move evidence data captured.
-   **OMA-URI**: ./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation
-   **Data Type**: String
-   **Value(s)**: N/A
-
-1. Local Evidence Cache Duration
-
-   **Description**: Set the retention period in "days" for files in the local device control cache.
-   **OMA-URI**: ./Vendor/MSFT/Defender/Configuration/DataDuplicationLocalRetentionPeriod
-   **Data Type**: Integer
-   **Value(s)**: 60
+| **Enable device control** <br/>Enable or disable device control on the device | `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled` | Integer <br/>Disable = `0`; Enable = `1` |
+| **Evidence data remote location** <br/>Device control moves evidence data captured | `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation` | String |
+| **Local evidence cache duration** <br/>Sets the retention period in days for files in the local device control cache | `./Vendor/MSFT/Defender/Configuration/DataDuplicationLocalRetentionPeriod` | Integer <br/>Example: `60` (60 days) |
 
 ### Creating Policies with OMA-URI
 
-> [!NOTE]
-> The best practice is to use the Device Control Profile or Device Control Rules Profile to author custom policies.
-
-1. Create one XML file for each access control or policy rule.
-
-1. Create a policy and apply it to related removable storage group by doing the following steps:
-
-    1. In the **Add Row** pane, enter:
-        1. **Allow Read Activity** in the **Name** field.
-        1. **/Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b[PolicyRule Id]%7d/RuleData** in the **OMA-URI** field.
-        1. **String (XML file)** in the **Data Type** field.
-            1. **Custom XML** as the selected XML file.
-
 :::image type="content" source="images/create-policy-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a policy with OMA-URI." lightbox="images/create-policy-with-oma-uri.png":::
 
-See at the **Overview -> Access policy** rule; you can use parameters to set condition for a specific entry. Here's a [group example XML file for Allow Read access for each removable storage](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml).
+When you create policies with OMA-URI in Intune, create one XML file for each policy. As a best practice, use the Device Control Profile or Device Control Rules Profile to author custom policies.
+
+In the **Add Row** pane, specify the following settings:
+
+- In the **Name** field, type `Allow Read Activity`.
+- In the **OMA-URI** field, type `/Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b[PolicyRule Id]%7d/RuleData`.
+- In the **Data Type** field, select **String (XML file)**, and use **Custom XML**.
+
+You can use parameters to set conditions for specific entries. Here's a [group example XML file for Allow Read access for each removable storage](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml).
 
 > [!NOTE]
 > Comments using XML comment notation <!-- COMMENT --> can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
 ### Creating groups with OMA-URI
 
-> [!NOTE]
-> The best practice is to use the Reusable Settings to author groups.
-
-1. Create one XML file for each group.
-
-1. Create a removable storage group for each group by doing the following steps:
-
-    1. In the **Add Row** pane, enter:
-        1. **Any Removable Storage Group** in the **Name** field.
-        1. **./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**[GroupId]**%7d/GroupData** in the **OMA-URI** field.
-        1. **String (XML file)** in the **Data Type** field.
-            1. **Custom XML** as the selected XML file.
-
 :::image type="content" source="images/create-group-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a group with OMA-URI." lightbox="images/create-group-with-oma-uri.png":::
 
-To get the Group Id, sign in to the Microsoft Intune admin center and select **Groups > Copy the Object ID**.
+When you create groups with OMA-URI in Intune, create one XML file for each group. As a best practice, use reusable settings to define groups. 
+
+In the **Add Row** pane, specify the following settings:
+
+- In the **Name** field, type `Any Removable Storage Group`.
+- In the **OMA-URI** field, type `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**[GroupId]**%7d/GroupData`. (To get your GroupID, in the Intune admin center, go to **Groups**, and then select **Copy the Object ID**.)
+- In the **Data Type** field, select **String (XML file)**, and use **Custom XML**.
 
 > [!NOTE]
 > Comments using XML comment notation `<!-- COMMENT -- >` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
