@@ -49,7 +49,7 @@ To use the following table, identify the type of setting you want to configure, 
 | **Removable disk deny write access** <br/>(Storage) | Profile | N/A |
 
 
-## Device control profile
+## Device control profiles
 
 The device control profile mostly has settings for capabilities other than removable storage access control.  For more information, see [Microsoft Defender for Endpoint Device Control Device Installation](mde-device-control-device-installation.md). 
 
@@ -90,21 +90,10 @@ In Intune, device control groups appear as reusable settings under **Home > Endp
 
 ## Defining Settings with OMA-URI
 
-**Setting name**: 
-
-1. Enable Device Control
-
-   **Description**: Enable or Disable Defender Device Control on this machine.
-   **OMA-URI**: ./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled
-   **Data Type**: Integer
-   **Value(s)**: Disable = 0; Enable = 1
-
-1. Device Control Default Enforcement
-
-   **Description**: Default Enforcement will establish what decision should be made during the Device Control access checks when none of the policy rules match.
-   **OMA-URI**: ./Vendor/MSFT/Defender/Configuration/DefaultEnforcement
-   **Data Type**: Integer
-   **Value(s)**: DefaultEnforcementAllow = 1; DefaultEnforcementDeny = 2
+| Setting | OMA-URI | Data type and values |
+|---|---|---|
+| **Enable device control** <br/>Enable or disable device control on the device | `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled` | Integer <br/>Disable = `0`; Enable = `1` |
+| **Device control default enforcement** <br/>Default enforcement establishes what decisions are made during device control access checks when none of the policy rules match | `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` | Integer <br/>`DefaultEnforcementAllow` = `1`; `DefaultEnforcementDeny` = `2`
 
 1. Device Types
 
