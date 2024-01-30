@@ -4,7 +4,7 @@ description: Learn how to deploy and manage device control in Defender for Endpo
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/23/2024
+ms.date: 01/30/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -22,11 +22,11 @@ f1.keywords: NOCSH
 
 # Deploy and manage device control in Microsoft Defender for Endpoint with Microsoft Intune
 
-If you’re using Intune to manage Defender for Endpoint settings, you can use it to deploy and manage device control capabilities.
+If you're using Intune to manage Defender for Endpoint settings, you can use it to deploy and manage device control capabilities.
 
 Different aspects of device control are managed differently in Intune, as described below:
 
-**Capabilities**
+## Capabilities
 
 1. Device installation
 
@@ -180,8 +180,11 @@ In Intune, device control groups appear as re-usable settings under **Home > End
 ## Removable Storage Access Control using OMA-URI
 
 1. Go to the Microsoft Intune admin center (https://endpoint.microsoft.com/).
+
 1. Choose **Devices > Configuration profiles**. The **Configuration profiles** page appears. 
+
 1. Under the **Policies** tab (selected by default), select **+ Create**, and choose **+ New policy** from the drop-down that appears. The **Create a profile** page appears.
+
 1. Choose **Windows 10 and later** from the **Platform** drop-down list, and choose **Templates** from the **Profile type** drop-down list.
 
    Once you choose **Templates** from the **Profile type** drop-down list, the **Template name** pane is displayed, along with a search box (to search the profile name).
@@ -235,7 +238,9 @@ In Intune, device control groups appear as re-usable settings under **Home > End
 > The best practice is to use the Device Control Profile or Device Control Rules Profile to author custom policies.
 
 1. Create one XML file for each access control or policy rule.
+
 1. Create a policy and apply it to related removable storage group by doing the following steps:
+
     1. In the **Add Row** pane, enter:
         1. **Allow Read Activity** in the **Name** field.
         1. **/Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b[PolicyRule Id]%7d/RuleData** in the **OMA-URI** field.
@@ -255,7 +260,9 @@ See at the **Overview -> Access policy** rule; you can use parameters to set con
 > The best practice is to use the Reusable Settings to author groups.
 
 1. Create one XML file for each group.
+
 1. Create a removable storage group for each group by doing the following steps:
+
     1. In the **Add Row** pane, enter:
         1. **Any Removable Storage Group** in the **Name** field.
         1. **./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**[GroupId]**%7d/GroupData** in the **OMA-URI** field.
@@ -267,5 +274,5 @@ See at the **Overview -> Access policy** rule; you can use parameters to set con
 To get the Group Id, sign in to the Microsoft Intune admin center and select **Groups > Copy the Object ID**.
 
 > [!NOTE]
-> Comments using XML comment notation <!-- COMMENT --> can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
+> Comments using XML comment notation `<!-- COMMENT -- >` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
  
