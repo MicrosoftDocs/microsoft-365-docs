@@ -132,3 +132,8 @@ In the **Add Row** pane, specify the following settings:
 > [!NOTE]
 > Comments using XML comment notation `<!-- COMMENT -- >` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
  
+## See also
+
+[Device control in Microsoft Defender for Endpoint](device-control-overview.md)
+
+[Device control policies and entries in Microsoft Defender for Endpoint](device-control-policies-entries.md)
