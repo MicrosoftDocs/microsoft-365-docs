@@ -3754,6 +3754,11 @@
       "source_path": "microsoft-365/security/office-365-security/email-authentication-dkim-support-about.md",
       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dkim-configure",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/email-authentication-dmarc-reports.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dmarc-configure",
+      "redirect_document_id": false
     }
    ]
  }
