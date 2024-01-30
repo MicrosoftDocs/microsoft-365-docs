@@ -39,19 +39,21 @@ If you're using Group Policy to manage Defender for Endpoint settings, you can u
 
 You can set default access such as, `Deny` or `Allow` for all device control features, such as `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, and `PrinterDevices`.
 
-For example, you can have either a Deny or an Allow policy for RemovableMediaDevices, but not for CdRomDevices or WpdDevices. If you set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices is blocked. If you only want to manage storage, make sure to create Allow policy for Printer. Otherwise, this Default Enforcement will be applied to Printer as well.
-
-- Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Features** \> **Device Control** \> **Select Device Control Default Enforcement Policy**.
-- In the **Select Device Control Default Enforcement Policy** window, select **Default Deny**.
-
 :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Screenshot of set default enforcement." lightbox="images/set-default-enforcement-deny-gp.png":::
 
-## Configure Device Types
+For example, you can have either a `Deny` or an `Allow` policy for `RemovableMediaDevices`, but not for `CdRomDevices` or `WpdDevices`. If you set `Default Deny` through this policy, then Read/Write/Execute access to `CdRomDevices` or `WpdDevices` is blocked. If you only want to manage storage, make sure to create `Allow` policy for printers. Otherwise, default enforcement (Deny) is applied to printers, too.
 
-To configure the device types that device control applies to.
+1. On a device running Windows, go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Features** \> **Device Control** \> **Select Device Control Default Enforcement Policy**.
 
-- Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Turn on device control for specific device types**.
-- In the **Turn on device control for specific types** window, enter the product family\_ids RemovableMediaDevices, CdRomDevices, WpdDevices, or PrinterDevices separated by a pipe (|).
+2. In the **Select Device Control Default Enforcement Policy** window, select **Default Deny**.
+
+## Configure device types
+
+To configure the device types that a device control policy is applied, follow these steps:
+
+1. On a computer running Windows, go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Turn on device control for specific device types**.
+
+2. In the **Turn on device control for specific types** window, specify the product family IDs, separate by a pipe (`|`). Product family IDs include `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, or `PrinterDevices`.
 
 :::image type="content" source="media/deploy-dc-gpo/configure-device.png" alt-text="Screenshot of configure device types." lightbox="media/deploy-dc-gpo/configure-device.png":::
 
