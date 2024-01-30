@@ -51,11 +51,11 @@ To use the following table, identify the type of setting you want to configure, 
 
 ## Device control profiles
 
-Each row is a device control policy. The included ID is the re-usable setting that the policy applies to. The excluded ID is the re-usable setting that's excluded from the policy. The entry for the policy contains the permissions allowed and the behavior for device control that comes into force when the policy applies.
+Each row is a device control policy. The included ID is the reusable setting that the policy applies to. The excluded ID is the reusable setting that's excluded from the policy. The entry for the policy contains the permissions allowed and the behavior for device control that comes into force when the policy applies.
 
 :::image type="content" source="images/device-control-profile.png" alt-text="The screenshot that shows the page on which you can configure the settings for the Device Control capability." lightbox="images/device-control-profile.png":::
 
-For information on how to add the re-usable groups of settings — that are included in the row of each device control policy — see the *Add reusable groups to a Device Control profile* section in [Use reusable groups of settings with Intune policies](/mem/intune/protect/reusable-settings-groups).
+For information on how to add the reusable groups of settings that are included in the row of each device control policy, see the *Add reusable groups to a Device Control profile* section in [Use reusable groups of settings with Intune policies](/mem/intune/protect/reusable-settings-groups).
 
 Policies can be added and removed using the **+** and **–** icons.  The name of the policy appears in the warning to users, and in advanced hunting and reports.
 
