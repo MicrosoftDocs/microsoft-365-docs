@@ -24,135 +24,136 @@ f1.keywords: NOCSH
 
 If you're using Intune to manage Defender for Endpoint settings, you can use it to deploy and manage device control capabilities.
 
-Different aspects of device control are managed differently in Intune, as described below:
+Different aspects of device control are managed differently in Intune, as described in the following sections.
 
 ## Capabilities
 
-1. Device installation
+### Device installation
 
-   **Setting**: Device Installation Restrictions
-   **Device Control Profile**: X
-   **Device Control Rules Profile**: —
-   **Intune OMA-URI**: —
-   **Intune Reusable Settings**: —
 
-1. Defender
 
-   **Setting**: Allow Full Scan Removable Drive Scanning
-   **Device Control Profile**: X
-   **Device Control Rules Profile**: —
-   **Intune OMA-URI**: —
-   **Intune Reusable Settings**: —
+- **Setting**: Device Installation Restrictions
+- **Device Control Profile**: X
+- **Device Control Rules Profile**: N/A
+- **Intune OMA-URI**: N/A
+- **Intune Reusable Settings**: N/A
 
-1. Data Protection
+### Defender
 
-   **Setting**: Allow direct memory access
-   **Device Control Profile**: X
-   **Device Control Rules Profile**: —
-   **Intune OMA-URI**: —
-   **Intune Reusable Settings**: —
+- **Setting**: Allow Full Scan Removable Drive Scanning
+- **Device Control Profile**: X
+- **Intune OMA-URI**: N/A
+- **Intune Reusable Settings**: N/A
+
+### Data Protection
+
+- **Setting**: Allow direct memory access
+- **Device Control Profile**: X
+- **Device Control Rules Profile**: N/A
+- **Intune OMA-URI**: N/A
+- **Intune Reusable Settings**: N/A
 
 1. Dma Guard
 
    **Setting**: Device Enumeration Policy
    **Device Control Profile**: X
-   **Device Control Rules Profile**: —
-   **Intune OMA-URI**: —
-   **Intune Reusable Settings**: —
+   **Device Control Rules Profile**: N/A
+   **Intune OMA-URI**: N/A
+   **Intune Reusable Settings**: N/A
 
 1. Storage
 
    **Setting**: Removable Disk Deny Write Access
    **Device Control Profile**: X
-   **Device Control Rules Profile**: —
-   **Intune OMA-URI**: —
-   **Intune Reusable Settings**: —
+   **Device Control Rules Profile**: N/A
+   **Intune OMA-URI**: N/A
+   **Intune Reusable Settings**: N/A
 
 1. Connectivity
 
    **Setting**: Allow USB Connection
    **Device Control Profile**: X
-   **Device Control Rules Profile**: —
-   **Intune OMA-URI**: —
-   **Intune Reusable Settings**: —
+   **Device Control Rules Profile**: N/A
+   **Intune OMA-URI**: N/A
+   **Intune Reusable Settings**: N/A
 
    **Setting**: Allow Bluetooth
    **Device Control Profile**: X
-   **Device Control Rules Profile**: —
-   **Intune OMA-URI**: —
-   **Intune Reusable Settings**: —
+   **Device Control Rules Profile**: N/A
+   **Intune OMA-URI**: N/A
+   **Intune Reusable Settings**: N/A
 
 1. Bluetooth
 
    **Setting**: Allow advertising, Allow discovery mode, Allow preparing, Allow Promoted proximal connections, Services allowed List
    **Device Control Profile**: X
-   **Device Control Rules Profile**: —
-   **Intune OMA-URI**: —
-   **Intune Reusable Settings**: —
+   **Device Control Rules Profile**: N/A
+   **Intune OMA-URI**: N/A
+   **Intune Reusable Settings**: N/A
 
 1. Device Control
 
    **Setting**: Enable/Disable Device Control, Define Device Control evidence data remote location, Set the retention period for files in the local device control cache, Turn on device control for specific device types, Select device control default enforcement policy
-   **Device Control Profile**: —
-   **Device Control Rules Profile**: —
+   **Device Control Profile**: N/A
+   **Device Control Rules Profile**: N/A
    **Intune OMA-URI**: X
-   **Intune Reusable Settings**: —
+   **Intune Reusable Settings**: N/A
 
 
    **Setting**: Policies and entries
    **Device Control Profile**: X
    **Device Control Rules Profile**: X
    **Intune OMA-URI**: X
-   **Intune Reusable Settings**: —
+   **Intune Reusable Settings**: N/A
 
 
    **Setting**: Groups for Removable Storage and Printers
-   **Device Control Profile**: —
-   **Device Control Rules Profile**: —
+   **Device Control Profile**: N/A
+   **Device Control Rules Profile**: N/A
    **Intune OMA-URI**: X
    **Intune Reusable Settings**: X
 
 
    **Setting**: Groups other than Removable Storage and Printers (Network, VPN Connection, File, PrintJob)
-   **Device Control Profile**: —
-   **Device Control Rules Profile**: —
+   **Device Control Profile**: N/A
+   **Device Control Rules Profile**: N/A
    **Intune OMA-URI**: X
-   **Intune Reusable Settings**: —
+   **Intune Reusable Settings**: N/A
 
 
    **Setting**: Control Disk level access
-   **Device Control Profile**: —
+   **Device Control Profile**: N/A
    **Device Control Rules Profile**: X
    **Intune OMA-URI**: X
-   **Intune Reusable Settings**: —
+   **Intune Reusable Settings**: N/A
 
 
    **Setting**: Control File level access
-   **Device Control Profile**: —
-   **Device Control Rules Profile**: —
+   **Device Control Profile**: N/A
+   **Device Control Rules Profile**: N/A
    **Intune OMA-URI**: X
-   **Intune Reusable Settings**: —
+   **Intune Reusable Settings**: N/A
 
 
    **Setting**: Entries – Options
-   **Device Control Profile**: —
+   **Device Control Profile**: N/A
    **Device Control Rules Profile**: X
    **Intune OMA-URI**: X
-   **Intune Reusable Settings**: —
+   **Intune Reusable Settings**: N/A
 
 
    **Setting**: Entries – create file evidence option (Allow: 8)
-   **Device Control Profile**: —
-   **Device Control Rules Profile**: —
+   **Device Control Profile**: N/A
+   **Device Control Rules Profile**: N/A
    **Intune OMA-URI**: X
-   **Intune Reusable Settings**: —
+   **Intune Reusable Settings**: N/A
 
 
    **Setting**: Parameters
-   **Device Control Profile**: —
-   **Device Control Rules Profile**: —
+   **Device Control Profile**: N/A
+   **Device Control Rules Profile**: N/A
    **Intune OMA-URI**: X
-   **Intune Reusable Settings**: —
+   **Intune Reusable Settings**: N/A
 
 ## Device Control Profile
 
@@ -223,7 +224,7 @@ In Intune, device control groups appear as re-usable settings under **Home > End
    **Description**: Where Device Control service will move evidence data captured.
    **OMA-URI**: ./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation
    **Data Type**: String
-   **Value(s)**: —
+   **Value(s)**: N/A
 
 1. Local Evidence Cache Duration
 
