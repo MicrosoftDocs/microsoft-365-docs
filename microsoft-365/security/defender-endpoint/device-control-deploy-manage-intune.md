@@ -43,18 +43,9 @@ To use the following table, identify the type of setting you want to configure, 
 | **Groups for removable storage and printers** | N/A | OMA-URI<br/>Reusable settings |
 | **Groups other than removable storage and printers**<br/>(Network, VPN Connection, File, PrintJob) | N/A | OMA-URI |
 | **Control disk level access** | Rule | OMA-URI |
-
-   **Device Control Profile**: N/A
-   **Device Control Rules Profile**: X
-   **Intune OMA-URI**: X
-   **Intune Reusable Settings**: N/A
-
-
-   **Setting**: Control File level access
-   **Device Control Profile**: N/A
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: X
-   **Intune Reusable Settings**: N/A
+| **Control File level access** | N/A | OMA-URI |
+| **Device control entries - options** | Rule | Reusable settings |
+| **Device control entries - Create file evidence option**<br/>(Allow: 8) | N/A | OMA-URI |
 
 
    **Setting**: Entries – Options
