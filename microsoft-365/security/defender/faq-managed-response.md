@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/15/2024
+ms.date: 01/30/2024
 ---
 
 # Understanding managed response

@@ -19,7 +19,7 @@ ms.collection:
   - essentials-get-started
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/23/2024
+ms.date: 01/30/2024
 ---
 
 # Get started with Microsoft Defender Experts for XDR
