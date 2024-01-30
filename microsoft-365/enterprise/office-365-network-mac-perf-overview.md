@@ -62,7 +62,7 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 For this option, neither Windows Location Services nor Wi-Fi is required. Your OneDrive for Windows version must be up-to-date and installed on at least one computer at the location and you must know your LAN subnet information for each of your offices. This option allows multiple office locations per city and you can name your office locations. You can also upload them from other sources.
 
-Make sure that you also add locations in the **locations page** or import those from a CSV file. The locations added must include your office LAN subnet information. In the dialog for adding or editing a location, you can specify a number of LAN subnets and a number of public egress IP subnets. The LAN subnets are required and one of them must match the LAN subnet attribute on a received network assessment for results to show up. Super nets aren't supported so the LAN subnet must match exactly.
+Make sure that you also add locations in the **locations page** or import those from a CSV file. The locations added must include your office LAN subnet information. In the dialog for adding or editing a location, you can specify a number of LAN subnets and a number of public egress IP subnets. The LAN subnets are required and one of them must match the LAN subnet attribute on a received network assessment for results to show up. We now support matching of all subnets under a given network when you add locations using LAN subnets. The main advantage with this is, you no longer need to define exact matches for LAN subnets when you add locations. For example, you added a location using /20 as the LAN subnet definition, in the network assessment we received a LAN subnet attribute containing /24 which is part of the supernet you defined using /20 and there is no other specific match for the /24 subnet, we will map this network assessment to the location you added using the /20 LAN subnet definition. 
 
 Usually, LAN subnets are private IP address ranges as defined in RFC1918 such that the use of public IP addresses as the LAN subnets is likely to be incorrect. The dialog shows suggestions of LAN subnets that have been seen in recent network assessment tests for your organization so that you can choose.
 
@@ -238,6 +238,9 @@ If you've uploaded building data to your Call Quality Dashboard, you can add tho
 ## Understanding test sampling
 
 ## FAQ
+
+### What role is needed to access Network Connectivity in Microsoft 365 Admin Center? 
+You will need Network Administrator or Global Administrator role. 
 
 ### What is a Microsoft 365 service front door?
 
