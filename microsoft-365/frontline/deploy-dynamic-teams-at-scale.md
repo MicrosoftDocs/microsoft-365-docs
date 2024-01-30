@@ -68,7 +68,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
 1. Review the setup and prerequisites information.
 
-1. On the Identify frontline workforce page, select the Microsoft Entra attribute that defines your frontline workers. You can only choose one Microsoft Entra attribute, but you can define multiple values by separating them with commas.
+1. On the Identify your frontline workers page, select the Microsoft Entra attribute that defines your frontline workers. You can only choose one Microsoft Entra attribute, but you can define multiple values by separating them with commas.
 
     :::image type="content" source="media/dtas-frontline-worker-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute and values to identify your frontline workforce." lightbox="media/dtas-frontline-worker-attribute.png":::
 
@@ -76,7 +76,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/dtas-location-attribute.png":::
 
-1. On the Set team details page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
+1. On the Team settings page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
 
     :::image type="content" source="media/dtas-team-settings.png" alt-text="Screenshot of team settings options showing the prefix, team template, and team owner fields." lightbox="media/dtas-team-settings.png":::
 
