@@ -22,113 +22,28 @@ f1.keywords: NOCSH
 
 # Deploy and manage device control in Microsoft Defender for Endpoint with Microsoft Intune
 
-If you're using Intune to manage Defender for Endpoint settings, you can use it to deploy and manage device control capabilities.
+If you're using Intune to manage Defender for Endpoint settings, you can use it to deploy and manage device control capabilities. Different aspects of device control are managed differently in Intune, as described in the following sections.
 
-Different aspects of device control are managed differently in Intune, as described in the following sections.
+## Device control and Intune
 
-## Capabilities
+To use the following table, identify the type of setting you want to configure, and then see whether you can configure it by using device control in Defender for Endpoint (with a profile and/or rule) or in Intune (with OMA-URI and/or reusable settings).
 
-### Device installation
+| Setting | Device control profile and/or rule | Intune OMA-URI and/or reusable settings |
+|---|---|---|
+| **Device installation restrictions** | Profile | N/A |
+| **Allow full scan removable drive scanning** | Profile | N/A |
+| **Allow direct memory access** <br/>(Data protection) Profile | N/A |
+| **Device enumeration policy** <br/>(Dma guard) | Profile | N/A |
+| **Removable disk deny write access** <br/>(Storage) | Profile | N/A |
+| **Allow USB connection**<br/>(Connectivity) | Profile | N/A |
+| **Allow Bluetooth** | Profile | N/A |
+| **Bluetooth settings** <br/>- Allow advertising<br/>- Allow discovery mode<br/>- Allow preparing<br/>- Allow promoted proximal connections<br/>- Services allowed list | Profile | N/A |
+| **Device control settings** <br/>- Enable/disable device control<br/>- Define device control evidence data remote location<br/>- Set the retention period for files in the local device control cache<br/>- Turn on device control for specific device types<br/>- Select device control default enforcement policy | N/A | OMA-URI |
+| **Policies and entries** <br/>(see [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md)) | Profile <br/>Rule | OMA-URI |
+| **Groups for removable storage and printers** | N/A | OMA-URI<br/>Reusable settings |
+| **Groups other than removable storage and printers**<br/>(Network, VPN Connection, File, PrintJob) | N/A | OMA-URI |
+| **Control disk level access** | Rule | OMA-URI |
 
-
-
-- **Setting**: Device Installation Restrictions
-- **Device Control Profile**: Yes
-- **Device Control Rules Profile**: N/A
-- **Intune OMA-URI**: N/A
-- **Intune Reusable Settings**: N/A
-
-### Defender
-
-- **Setting**: Allow Full Scan Removable Drive Scanning
-- **Device Control Profile**: Yes
-- **Intune OMA-URI**: N/A
-- **Intune Reusable Settings**: N/A
-
-### Data Protection
-
-- **Setting**: Allow direct memory access
-- **Device Control Profile**: Yes
-- **Device Control Rules Profile**: N/A
-- **Intune OMA-URI**: N/A
-- **Intune Reusable Settings**: N/A
-
-### Dma Guard
-
-- **Setting**: Device Enumeration Policy
-- **Device Control Profile**: Yes
-- **Device Control Rules Profile**: N/A
-- **Intune OMA-URI**: N/A
-- **Intune Reusable Settings**: N/A
-
-### Storage
-
-- **Setting**: Removable Disk Deny Write Access
-- **Device Control Profile**: Yes
-- **Device Control Rules Profile**: N/A
-- **Intune OMA-URI**: N/A
-- **Intune Reusable Settings**: N/A
-
-### Connectivity
-
-#### Allow USB Connection
-
-- **Setting**: Allow USB Connection
-- **Device Control Profile**: Yes
-- **Device Control Rules Profile**: N/A
-- **Intune OMA-URI**: N/A
-- **Intune Reusable Settings**: N/A   
-
-#### Allow Bluetooth
-
-- **Setting**: Allow Bluetooth
-- **Device Control Profile**: Yes
-- **Device Control Rules Profile**: N/A
-- **Intune OMA-URI**: N/A
-- **Intune Reusable Settings**: N/A
-
-### Bluetooth
-
-- **Settings**: Allow advertising, Allow discovery mode, Allow preparing, Allow promoted proximal connections, and Services allowed list
-- **Device Control Profile**: Yes
-- **Device Control Rules Profile**: N/A
-- **Intune OMA-URI**: N/A
-- **Intune Reusable Settings**: N/A
-
-### Device Control
-
-#### Device control settings
-
-- **Settings**: Enable/Disable Device Control, Define Device Control evidence data remote location, Set the retention period for files in the local device control cache, Turn on device control for specific device types, Select device control default enforcement policy
-- **Device Control Profile**: N/A
-- **Device Control Rules Profile**: N/A
-- **Intune OMA-URI**: Yes
-- **Intune Reusable Settings**: N/A
-
-#### Policies and entries
-
-- **Setting**: Policies and entries
-- **Device Control Profile**: Yes
-- **Device Control Rules Profile**: Yes
-- **Intune OMA-URI**: Yes
-- **Intune Reusable Settings**: N/A
-
-
-   **Setting**: Groups for Removable Storage and Printers
-   **Device Control Profile**: N/A
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: X
-   **Intune Reusable Settings**: X
-
-
-   **Setting**: Groups other than Removable Storage and Printers (Network, VPN Connection, File, PrintJob)
-   **Device Control Profile**: N/A
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: X
-   **Intune Reusable Settings**: N/A
-
-
-   **Setting**: Control Disk level access
    **Device Control Profile**: N/A
    **Device Control Rules Profile**: X
    **Intune OMA-URI**: X
@@ -162,13 +77,13 @@ Different aspects of device control are managed differently in Intune, as descri
    **Intune OMA-URI**: X
    **Intune Reusable Settings**: N/A
 
-## Device Control Profile
+## Device control profile
 
 The device control profile mostly has settings for capabilities other than removable storage access control.  For more information, see [Microsoft Defender for Endpoint Device Control Device Installation](mde-device-control-device-installation.md). 
 
 The exception is Device Control. The details of how to configure policies in Intune are covered in the Device Control Rules Profile.
 
-## Device Control Rules Profile
+## Device control rules profile
 
 Each row is a device control policy. The included ID is the re-usable setting that the policy applies to. The excluded ID is the re-usable setting that's excluded from the policy. The entry for the policy contains the permissions allowed and the behavior for device control that comes into force when the policy applies.
 
@@ -181,9 +96,9 @@ Policies can be added and removed using the **+** and **–** icons.  The name o
 > [!NOTE]
 > The order in the UX isn't preserved for policies enforcement. The best practice is to set the default enforcement to DENY, and then use **Allow policies**. Ensure that the **Allow policies** option is non-intersecting by explicitly adding devices to be excluded.
 
-## Device Control Groups (Re-usable Settings)
+## Device control groups (Reusable settings)
 
-In Intune, device control groups appear as re-usable settings under **Home > Endpoint Security > Attack Surface Reduction**. Select the **Reusable Settings** Tab.
+In Intune, device control groups appear as reusable settings under **Home > Endpoint Security > Attack Surface Reduction**. Select the **Reusable Settings** Tab.
 
 ## Removable Storage Access Control using OMA-URI
 
