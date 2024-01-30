@@ -33,7 +33,7 @@ Different aspects of device control are managed differently in Intune, as descri
 
 
 - **Setting**: Device Installation Restrictions
-- **Device Control Profile**: X
+- **Device Control Profile**: Yes
 - **Device Control Rules Profile**: N/A
 - **Intune OMA-URI**: N/A
 - **Intune Reusable Settings**: N/A
@@ -41,47 +41,47 @@ Different aspects of device control are managed differently in Intune, as descri
 ### Defender
 
 - **Setting**: Allow Full Scan Removable Drive Scanning
-- **Device Control Profile**: X
+- **Device Control Profile**: Yes
 - **Intune OMA-URI**: N/A
 - **Intune Reusable Settings**: N/A
 
 ### Data Protection
 
 - **Setting**: Allow direct memory access
-- **Device Control Profile**: X
+- **Device Control Profile**: Yes
 - **Device Control Rules Profile**: N/A
 - **Intune OMA-URI**: N/A
 - **Intune Reusable Settings**: N/A
 
-1. Dma Guard
+### Dma Guard
 
-   **Setting**: Device Enumeration Policy
-   **Device Control Profile**: X
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: N/A
-   **Intune Reusable Settings**: N/A
+- **Setting**: Device Enumeration Policy
+- **Device Control Profile**: Yes
+- **Device Control Rules Profile**: N/A
+- **Intune OMA-URI**: N/A
+- **Intune Reusable Settings**: N/A
 
-1. Storage
+### Storage
 
-   **Setting**: Removable Disk Deny Write Access
-   **Device Control Profile**: X
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: N/A
-   **Intune Reusable Settings**: N/A
+- **Setting**: Removable Disk Deny Write Access
+- **Device Control Profile**: Yes
+- **Device Control Rules Profile**: N/A
+- **Intune OMA-URI**: N/A
+- **Intune Reusable Settings**: N/A
 
-1. Connectivity
+### Connectivity
 
-   **Setting**: Allow USB Connection
-   **Device Control Profile**: X
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: N/A
-   **Intune Reusable Settings**: N/A
+- **Setting**: Allow USB Connection
+- **Device Control Profile**: Yes
+- **Device Control Rules Profile**: N/A
+- **Intune OMA-URI**: N/A
+- **Intune Reusable Settings**: N/A
 
-   **Setting**: Allow Bluetooth
-   **Device Control Profile**: X
-   **Device Control Rules Profile**: N/A
-   **Intune OMA-URI**: N/A
-   **Intune Reusable Settings**: N/A
+- **Setting**: Allow Bluetooth
+- **Device Control Profile**: Yes
+- **Device Control Rules Profile**: N/A
+- **Intune OMA-URI**: N/A
+- **Intune Reusable Settings**: N/A
 
 1. Bluetooth
 
