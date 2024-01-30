@@ -49,27 +49,31 @@ For example, you can have either a `Deny` or an `Allow` policy for `RemovableMed
 
 ## Configure device types
 
+:::image type="content" source="media/deploy-dc-gpo/configure-device.png" alt-text="Screenshot of configure device types." lightbox="media/deploy-dc-gpo/configure-device.png":::
+
 To configure the device types that a device control policy is applied, follow these steps:
 
 1. On a computer running Windows, go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Turn on device control for specific device types**.
 
 2. In the **Turn on device control for specific types** window, specify the product family IDs, separate by a pipe (`|`). Product family IDs include `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, or `PrinterDevices`.
 
-:::image type="content" source="media/deploy-dc-gpo/configure-device.png" alt-text="Screenshot of configure device types." lightbox="media/deploy-dc-gpo/configure-device.png":::
-
-## Define Groups
-
-Create one XML file for removable storage group(s):
-
-Use the properties in removable storage group to create an XML file for the Removable storage group(s), save the XML file to network share, and define the setting as follows:
-
-- Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Define device control policy groups**.
+## Define groups
 
 :::image type="content" source="media/deploy-dc-gpo/define-groups.png" alt-text="Screenshot of define groups." lightbox="media/deploy-dc-gpo/define-groups.png":::
 
-- In the **Define device control policy groups** window, specify the network share file path containing the XML groups data.
+1. Create one XML file for each removable storage group. 
 
-Look at the **Overview** \> **Removable storage group**. You can create different group types. Here's one group example XML file for any removable storage and CDROM, Windows portable devices, and approved USBs group: [XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)
+2. Use the properties in your removable storage group to create an XML file for each removable storage group. 
+
+3. Save the XML file to your network share.
+
+4. Define the settings as follows:
+
+   1. On a device running Windows, go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **Define device control policy groups**.
+
+   2. In the **Define device control policy groups** window, specify the network share file path containing the XML groups data.
+
+You can create different group types. Here's one group example XML file for any removable storage and CD-ROM, Windows portable devices, and approved USBs group: [XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)
 
 > [!NOTE]
 > Comments using XML comment notation `<!--COMMENT-->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
