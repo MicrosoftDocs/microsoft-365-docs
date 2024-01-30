@@ -137,3 +137,5 @@ In the **Add Row** pane, specify the following settings:
 [Device control in Microsoft Defender for Endpoint](device-control-overview.md)
 
 [Device control policies and entries in Microsoft Defender for Endpoint](device-control-policies-entries.md)
+
+[Device Control for macOS](mac-device-control-overview.md)
