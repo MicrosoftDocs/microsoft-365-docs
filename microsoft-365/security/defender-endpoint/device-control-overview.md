@@ -4,7 +4,7 @@ description: Get an overview of device control, including removable storage acce
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/25/2024
+ms.date: 01/30/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -125,6 +125,8 @@ Device control in Defender for Endpoint can be applied to devices running Window
 - `4.18.2207` or later: Add File support; the common use case can be: block people from Read/Write/Execute access specific file on removable storage. Add Network and VPN Connection support; the common use case can be: block people from access removable storage when the machine isn't connecting corporate network.
 
 For Mac, see [Device Control for macOS](mac-device-control-overview.md).
+
+Currently, device control is not supported on servers.
 
 ## Next steps
 
