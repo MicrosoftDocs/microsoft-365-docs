@@ -26,7 +26,7 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 
 ## Device control and Intune
 
-To use the following table, identify the type of setting you want to configure, and then see whether you can configure it by using device control in Defender for Endpoint (with a profile and/or rule) or in Intune (with OMA-URI and/or reusable settings).
+To use the following table, identify the type of setting you want to configure, and then see whether you can configure it by using device control in Defender for Endpoint (with a profile and/or rule) or in Intune (with OMA-URI and/or reusable settings). Settings are listed in alphabetical order.
 
 | Setting | Device control profile and/or rule | Intune OMA-URI and/or reusable settings |
 |---|---|---|
@@ -51,12 +51,6 @@ To use the following table, identify the type of setting you want to configure, 
 
 ## Device control profiles
 
-The device control profile mostly has settings for capabilities other than removable storage access control.  For more information, see [Microsoft Defender for Endpoint Device Control Device Installation](mde-device-control-device-installation.md). 
-
-The exception is Device Control. The details of how to configure policies in Intune are covered in the Device Control Rules Profile.
-
-## Device control rules profile
-
 Each row is a device control policy. The included ID is the re-usable setting that the policy applies to. The excluded ID is the re-usable setting that's excluded from the policy. The entry for the policy contains the permissions allowed and the behavior for device control that comes into force when the policy applies.
 
 :::image type="content" source="images/device-control-profile.png" alt-text="The screenshot that shows the page on which you can configure the settings for the Device Control capability." lightbox="images/device-control-profile.png":::
@@ -70,11 +64,17 @@ Policies can be added and removed using the **+** and **–** icons.  The name o
 
 ## Device control groups (Reusable settings)
 
-In Intune, device control groups appear as reusable settings under **Home** > **Endpoint Security** > **Attack Surface Reduction**. Select the **Reusable Settings** Tab.
+In Intune, device control groups appear as reusable settings.
+
+1. Go to the [Microsoft Intune admin center](https://endpoint.microsoft.com) and sign in.
+
+2. Go to **Endpoint Security** > **Attack Surface Reduction**. 
+
+3. Select the **Reusable Settings** tab.
 
 ## Removable Storage Access Control using OMA-URI
 
-1. Go to the Microsoft Intune admin center (https://endpoint.microsoft.com/).
+1. Go to the [Microsoft Intune admin center](https://endpoint.microsoft.com) and sign in.
 
 2. Choose **Devices** > **Configuration profiles**. The **Configuration profiles** page appears. 
 
@@ -90,7 +90,7 @@ In Intune, device control groups appear as reusable settings under **Home** > **
 
 ## Defining Settings with OMA-URI
 
-To use the following table, identify the setting you want to configure, and then use the information in the OMA-URI and data type & values columns.
+To use the following table, identify the setting you want to configure, and then use the information in the OMA-URI and data type & values columns. Settings are listed in alphabetical order.
 
 | Setting | OMA-URI | Data type & values |
 |---|---|---|
