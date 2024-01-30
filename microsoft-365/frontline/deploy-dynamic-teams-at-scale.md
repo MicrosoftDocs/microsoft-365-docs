@@ -68,15 +68,15 @@ When evaluating the right solution for your organization, we recommend you do th
 
 1. Review the setup and prerequisites information.
 
-1. On the Identify your frontline workers page, select the Microsoft Entra attribute that defines your frontline workers. You can only choose one Microsoft Entra attribute, but you can define multiple values by separating them with commas.
+1. On the Identify frontline workforce page, select the Microsoft Entra attribute that defines your frontline workers. You can only choose one Microsoft Entra attribute, but you can define multiple values by separating them with commas.
 
-    :::image type="content" source="media/dtas-identify-frontline-workers.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute and values to identify your frontline workforce." lightbox="media/dtas-identify-frontline-workers.png":::
+    :::image type="content" source="media/dtas-frontline-worker-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute and values to identify your frontline workforce." lightbox="media/dtas-frontline-worker-attribute.png":::
 
 1. On the Location page, select the Microsoft Entra attribute that defines the location your frontline employees work in. You can only choose one location attribute.
 
-    :::image type="content" source="media/dtas-location.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/dtas-location.png":::
+    :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/dtas-location-attribute.png":::
 
-1. On the Team settings page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
+1. On the Set team details page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
 
     :::image type="content" source="media/dtas-team-settings.png" alt-text="Screenshot of team settings options showing the prefix, team template, and team owner fields." lightbox="media/dtas-team-settings.png":::
 
@@ -105,11 +105,11 @@ When evaluating the right solution for your organization, we recommend you do th
     > [!NOTE]
     > Setup can take several hours to run. Refresh the Manage frontline teams page to get the latest status.
 
-    :::image type="content" source="media/dtas-setup-in-progress.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup is in progress." lightbox="media/dtas-setup-in-progress.png":::
+    :::image type="content" source="media/dtas-setup-submitted.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup is in progress." lightbox="media/dtas-setup-submitted.png":::
 
 ## Deploy your frontline dynamic teams
 
-1. After setup is completed, go to the **Manage frontline teams** page, and then select the **Deploy** button.
+1. After setup is completed, go to the Manage frontline teams page, and then select the **Deploy** button.
 
     :::image type="content" source="media/dtas-deploy.png" alt-text="Screenshot of the Manage frontline teams page, showing the Deploy button." lightbox="media/dtas-deploy.png":::
 
@@ -123,7 +123,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
     After deployment is completed, you'll see the number of deployed frontline teams in the **Frontline teams** card. You can also download a CSV file with a list of those teams.
 
-    :::image type="content" source="media/dtas-view-errors.png" alt-text="Screenshot of where you can get the CSV file on the Manage frontline teams page." lightbox="media/dtas-view-errors.png":::
+    :::image type="content" source="media/dtas-deploy-completed.png" alt-text="Screenshot of where you can get the CSV file on the Manage frontline teams page." lightbox="media/dtas-deploy-completed.png":::
 
     If an error occurred during the deployment process, you can download the error CSV file on the **Last deployment health** card. Use the information in it to help resolve the errors, and then rerun the deployment experience
 
