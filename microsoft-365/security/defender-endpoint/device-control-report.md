@@ -3,7 +3,7 @@ title: View device control events and information in Microsoft Defender for Endp
 description: Monitor your organization's data security through device control reports.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 12/14/2023
+ms.date: 01/31/2024
 ms.author: deniseb
 author: denisebmsft
 ms.topic: conceptual
@@ -20,7 +20,7 @@ search.appverid: met150
 
 # View device control events and information in Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint device control protects against data loss by monitoring and controlling media used by peripheral devices (like removable storage or printers) in your organization. You can view device control events events that are triggered by either Device Control Removable Storage Access Control or Printer Protection policies by using advanced hunting or the device control report.
+Microsoft Defender for Endpoint device control helps protect your organization from potential data loss, malware, or other cyberthreats by allowing or preventing certain devices to be connected to users' computers. You can view information about device control events with advanced hunting or by using the device control report. 
 
 To access the [Microsoft Defender portal](https://security.microsoft.com/advanced-hunting), your subscription must include Microsoft 365 for E5 reporting.
 
@@ -39,7 +39,10 @@ When a device control policy is triggered, an event is visible with advanced hun
 
 ### Example 1: Removable storage policy triggered by disk and file system level enforcement
 
-When a RemovableStoragePolicyTriggered action occurs, event information about the disk and file system level enforcement is available. 
+When a `RemovableStoragePolicyTriggered` action occurs, event information about the disk and file system level enforcement is available. 
+
+> [!NOTE]
+> Currently, there's a limit of 300 events per device per day for RemovableStoragePolicyTriggered events. Use the device control report to view additional data.
 
 ```kusto
 
