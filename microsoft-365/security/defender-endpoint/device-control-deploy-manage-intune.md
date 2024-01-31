@@ -24,43 +24,29 @@ f1.keywords: NOCSH
 
 If you're using Intune to manage Defender for Endpoint settings, you can use it to deploy and manage device control capabilities. Different aspects of device control are managed differently in Intune, as described in the following sections.
 
-## Device control and Intune
+## Configure and manage device control in Intune
 
-To use the following table, identify the type of setting you want to configure, and then see whether you can configure it by using device control in Defender for Endpoint (with a profile and/or rule) or in Intune (with OMA-URI and/or reusable settings). Settings are listed in alphabetical order.
+1. Go to the [Intune admin center](https://intune.microsoft.com) and sign in.
 
-| Setting | Device control profile and/or rule | Intune OMA-URI and/or reusable settings |
-|---|---|---|
-| **Allow Bluetooth** | Profile | N/A |
-| **Allow full scan removable drive scanning** | Profile | N/A |
-| **Allow direct memory access** <br/>(Data protection) Profile | N/A |
-| **Allow USB connection**<br/>(Connectivity) | Profile | N/A |
-| **Bluetooth settings** <br/>- Allow advertising<br/>- Allow discovery mode<br/>- Allow preparing<br/>- Allow promoted proximal connections<br/>- Services allowed list | Profile | N/A |
-| **Control disk level access** | Rule | OMA-URI |
-| **Control file level access** | N/A | OMA-URI |
-| **Device control entries - Create file evidence option**<br/>(`Allow: 8`) | N/A | OMA-URI |
-| **Device control entries - options** | Rule | Reusable settings |
-| **Device control parameters** | N/A | OMA-URI |
-| **Device control settings** <br/>- Enable/disable device control<br/>- Define device control evidence data remote location<br/>- Set the retention period for files in the local device control cache<br/>- Turn on device control for specific device types<br/>- Select device control default enforcement policy | N/A | OMA-URI |
-| **Device enumeration policy** <br/>(Dma guard) | Profile | N/A |
-| **Device installation restrictions** | Profile | N/A |
-| **Groups for removable storage and printers** | N/A | OMA-URI<br/>Reusable settings |
-| **Groups other than removable storage and printers**<br/>(Network, VPN Connection, File, PrintJob) | N/A | OMA-URI |
-| **Policies and entries** <br/>(see [Device control policies](device-control-policies.md)) | Profile <br/>Rule | OMA-URI |
-| **Removable disk deny write access** <br/>(Storage) | Profile | N/A |
+2. Go to Endpoint security > Attack surface reduction policies.
 
+3. Select an existing policy, or select **+ Create Policy** to set up a new policy, using these settings:
 
-## Device control profiles
+   - In the **Platform** list, select **Windows 10, Windows 11, and Windows Server**. (Device control is not currently supported on Windows Server, even though you select this profile for device control policies.)
+   - In the **Profile** list, select **Device Control**. 
 
-Each row is a device control policy. The included ID is the reusable setting that the policy applies to. The excluded ID is the reusable setting that's excluded from the policy. The entry for the policy contains the permissions allowed and the behavior for device control that comes into force when the policy applies.
+4. On the **Basics** tab, specify a name and description for your policy.
 
-:::image type="content" source="images/device-control-profile.png" alt-text="The screenshot that shows the page on which you can configure the settings for the Device Control capability." lightbox="images/device-control-profile.png":::
+5. On the **Configuration settings** tab, you see a long list of settings.
 
-For information on how to add the reusable groups of settings that are included in the row of each device control policy, see the *Add reusable groups to a Device Control profile* section in [Use reusable groups of settings with Intune policies](/mem/intune/protect/reusable-settings-groups).
-
-Policies can be added and removed using the **+** and **–** icons.  The name of the policy appears in the warning to users, and in advanced hunting and reports.
-
-> [!NOTE]
-> The order in the UX isn't preserved for policies enforcement. The best practice is to set the default enforcement to DENY, and then use **Allow policies**. Ensure that the **Allow policies** option is non-intersecting by explicitly adding devices to be excluded.
+   - Under **Administrative Templates**, you have [Device Installation](/windows/client-management/mdm/policy-csp-deviceinstallation?WT.mc_id=Portal-fx) and [Removable Storage Access](/windows/client-management/mdm/policy-csp-admx-removablestorage) settings.
+   - Under **Defender**, see [Allow Full Scan Removable Drive Scanning](/windows/client-management/mdm/policy-csp-defender#allowfullscanremovabledrivescanning) settings.
+   - Under **Data Protection**, see **Allow Direct Memory Access** settings.
+   - Under **Dma Guard**, see **Device Enumeration Policy** settings.
+   - Under **Storage**, see **Removable Disk Deny Write Access** settings.
+   - Under **Connectivity**, see **Allow USB Connection** and **Allow Bluetooth** settings.
+   - Under **Bluetooth**, see a list of settings that pertain to Bluetooth connections and services.
+   - Under **Device Control**, you can configure custom policies with reusable settings. You can use XML files to set up your policies. For more details, see [Rules](device-control-policies.md#rules).
 
 ## Device control groups (Reusable settings)
 
