@@ -35,7 +35,12 @@ Device control helps protect your organization from potential data loss, malware
 
 ## Device control in Windows
 
-This section lists scenarios for device control. Select a tab, review the scenarios, and then identify the type of device control policy to create.
+This section lists scenarios for device control in Windows. 
+
+> [!TIP]
+> If you're using Mac, device control can control access to Bluetooth, iOS devices, portable devices such as cameras, and removable media such as USB devices. See [Device Control for macOS](mac-device-control-overview.md).
+
+Select a tab, review the scenarios, and then identify the type of device control policy to create.
 
 ## [**Removable storage**](#tab/Removable)
 
