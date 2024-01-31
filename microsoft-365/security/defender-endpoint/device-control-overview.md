@@ -33,38 +33,6 @@ This list is intended to provide some examples. It's not an exhaustive list; the
 
 Device control helps protect your organization from potential data loss, malware, or other cyberthreats by allowing or preventing certain devices to be connected to users' computers. With device control, your security team can determine whether and what peripheral devices users can install and use on their computers. 
 
-## Microsoft device control capabilities
-
-Device control capabilities from Microsoft can be organized into three main categories: device control in Windows, device control in Defender for Endpoint, and Endpoint Data Loss Prevention (Endpoint DLP).
-
-- **Device control in Windows**. The Windows operating system has built-in device control capabilities. Your security team can configure device installation settings to prevent (or allow) users from installing certain devices on their computers. Policies are applied at the device level, and use various device properties to determine whether or not a user can install/use a device. Device control in Windows works with BitLocker and ADMX templates, and can be managed using Intune.
-
-   - **BitLocker and Intune**. [BitLocker](/windows/security/operating-system-security/data-protection/encrypted-hard-drive) is a Windows security feature that provides encryption for entire volumes. Together with [Intune](/mem/intune/fundamentals/what-is-intune), policies can be configured to enforce encryption on devices using BitLocker for Windows (and FileVault for Mac). For more information, see [Disk encryption policy settings for endpoint security in Intune](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
-
-   - **Administrative Templates (ADMX) and Intune**. You can use ADMX templates to create policies that restrict or allow specific types of USB devices to be used with computers. For more information, see [Restrict USB devices and allow specific USB devices using ADMX templates in Intune](/mem/intune/configuration/administrative-templates-restrict-usb).
-
-- **Device control in Defender for Endpoint**. Device control in Defender for Endpoint provides more advanced capabilities and is cross platform. You can configure device control settings to prevent (or allow) users to have Read, Write, or Execute access to content on removable storage devices. You can define exceptions, and you can choose to employ audit policies that detect but don't block users from accessing their removable storage devices. Policies are applied at the device level, user level, or both. Device control in Microsoft Defender can be managed using Intune.
-
-   - **Device control in Microsoft Defender and Intune**. Intune provides a rich experience for managing complex device control policies for organizations. You can configure and deploy device restriction settings in Defender for Endpoint, for example. See [Configure device restriction settings in Microsoft Intune](/mem/intune/configuration/device-restrictions-configure).
-
-- **Endpoint data loss prevention** (Endpoint DLP). Endpoint DLP monitors sensitive information on devices that are onboarded to Microsoft Purview solutions. DLP policies can enforce protective actions on sensitive information and where it's stored or used. [Learn about Endpoint DLP](/purview/endpoint-dlp-learn-about).
-
-See the [device control scenarios](#device-control-scenarios) section (in this article) for more details about these capabilities.
-
-## Supported devices
-
-Device control supports Bluetooth devices, CD/ROMs and DVD devices, printers, USB devices, and other types of portable devices. On a Windows device, based on the driver, some peripheral devices are marked as removable. The following table lists examples of devices that device control supports with their `primary_id` values and media class names:
-
-| Device type | `PrimaryId` in Windows | `primary_id` in macOS | Media Class Name |
-|---|---|---|---|
-| Bluetooth devices |  | `bluetoothDevice` | `Bluetooth Devices` |
-| CD/ROMs, DVDs | `CdRomDevices` |  |  `CD-Roms` |
-| iOS devices |  | `appleDevice` | | 
-| Portable devices (such as cameras) |   | `portableDevice` | | 
-| Printers | `PrinterDevices` |  | `Printers` |
-| USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` | `USB` | 
-| Windows Portable Devices | `WpdDevices` |  | `Windows Portable Devices (WPD)` |
-
 ## Device control scenarios
 
 This section lists scenarios for device control. Select a tab, review the scenarios, and then identify the type of device control policy to create.
@@ -101,6 +69,39 @@ This section lists scenarios for device control. Select a tab, review the scenar
 | Block copying of sensitive document to any Bluetooth Device | [Endpoint DLP](/purview/endpoint-dlp-learn-about) |
 
 ---
+
+## Categories of Microsoft device control capabilities
+
+Device control capabilities from Microsoft can be organized into three main categories: device control in Windows, device control in Defender for Endpoint, and Endpoint Data Loss Prevention (Endpoint DLP).
+
+- **Device control in Windows**. The Windows operating system has built-in device control capabilities. Your security team can configure device installation settings to prevent (or allow) users from installing certain devices on their computers. Policies are applied at the device level, and use various device properties to determine whether or not a user can install/use a device. Device control in Windows works with BitLocker and ADMX templates, and can be managed using Intune.
+
+   - **BitLocker and Intune**. [BitLocker](/windows/security/operating-system-security/data-protection/encrypted-hard-drive) is a Windows security feature that provides encryption for entire volumes. Together with [Intune](/mem/intune/fundamentals/what-is-intune), policies can be configured to enforce encryption on devices using BitLocker for Windows (and FileVault for Mac). For more information, see [Disk encryption policy settings for endpoint security in Intune](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
+
+   - **Administrative Templates (ADMX) and Intune**. You can use ADMX templates to create policies that restrict or allow specific types of USB devices to be used with computers. For more information, see [Restrict USB devices and allow specific USB devices using ADMX templates in Intune](/mem/intune/configuration/administrative-templates-restrict-usb).
+
+- **Device control in Defender for Endpoint**. Device control in Defender for Endpoint provides more advanced capabilities and is cross platform. You can configure device control settings to prevent (or allow) users to have Read, Write, or Execute access to content on removable storage devices. You can define exceptions, and you can choose to employ audit policies that detect but don't block users from accessing their removable storage devices. Policies are applied at the device level, user level, or both. Device control in Microsoft Defender can be managed using Intune.
+
+   - **Device control in Microsoft Defender and Intune**. Intune provides a rich experience for managing complex device control policies for organizations. You can configure and deploy device restriction settings in Defender for Endpoint, for example. See [Configure device restriction settings in Microsoft Intune](/mem/intune/configuration/device-restrictions-configure).
+
+- **Endpoint data loss prevention** (Endpoint DLP). Endpoint DLP monitors sensitive information on devices that are onboarded to Microsoft Purview solutions. DLP policies can enforce protective actions on sensitive information and where it's stored or used. [Learn about Endpoint DLP](/purview/endpoint-dlp-learn-about).
+
+See the [device control scenarios](#device-control-scenarios) section (in this article) for more details about these capabilities.
+
+## Supported devices
+
+Device control supports Bluetooth devices, CD/ROMs and DVD devices, printers, USB devices, and other types of portable devices. On a Windows device, based on the driver, some peripheral devices are marked as removable. The following table lists examples of devices that device control supports with their `primary_id` values and media class names:
+
+| Device type | `PrimaryId` in Windows | `primary_id` in macOS | Media Class Name |
+|---|---|---|---|
+| Bluetooth devices |  | `bluetoothDevice` | `Bluetooth Devices` |
+| CD/ROMs, DVDs | `CdRomDevices` |  |  `CD-Roms` |
+| iOS devices |  | `appleDevice` | | 
+| Portable devices (such as cameras) |   | `portableDevice` | | 
+| Printers | `PrinterDevices` |  | `Printers` |
+| USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` | `USB` | 
+| Windows Portable Devices | `WpdDevices` |  | `Windows Portable Devices (WPD)` |
+
 
 ## Device control in Defender for Endpoint sample scenarios
 
