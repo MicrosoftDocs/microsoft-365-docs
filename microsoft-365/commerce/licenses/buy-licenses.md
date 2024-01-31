@@ -93,7 +93,7 @@ If you have an MCA billing account type, you can only remove licenses from your 
 Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. After you buy the licenses you need, you can add them to your subscription by using the following steps. You can also use a product key to [extend the expiration date of your subscription](../enter-your-product-key.md#extend-the-expiration-date-for-an-existing-subscription).
 
 > [!NOTE]
-> If you don't want to buy a new product key, you can always choose to add a credit card or debit card to your subscription to pay for more licenses. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).
+> If you don't want to buy a new product key, you can always choose to add a credit card or debit card to your subscription to pay for more licenses. For more information, see [What if I have a prepaid subscription?](../subscriptions/renew-your-subscription.md#what-if-i-have-a-prepaid-subscription).
   
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you’re using the **Simplified view**, select **Subscriptions**.
