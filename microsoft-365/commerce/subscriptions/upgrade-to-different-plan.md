@@ -162,7 +162,7 @@ After you confirm the number of licenses in your new subscription, you can [move
 
 If you moved all users from one subscription to another, and you don't need the original subscription anymore, just [cancel the subscription](cancel-your-subscription.md).
 
-If you moved only some users to a different subscription, [remove licenses that you no longer need](../licenses/buy-licenses.md#buy-or-remove-licenses-for-your-business-subscription).
+If you moved only some users to a different subscription, [remove licenses that you no longer need](../licenses/buy-licenses.md).
 
 ## Next steps
 

@@ -85,7 +85,7 @@ The steps to cancel your trial or paid subscription depend on the number of lice
 |If your subscription has  |You can  |
 |--------------|--------------|
 |25 or fewer licenses  | [Use the steps later in this article to cancel your trial or paid subscription](#steps-to-cancel-your-subscription) online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.        |
-|More than 25 licenses   | [Reduce the number of licenses](../licenses/buy-licenses.md#buy-or-remove-licenses-for-your-business-subscription) to 25 or fewer and then [use the steps later in this article to cancel](#steps-to-cancel-your-subscription).      |
+|More than 25 licenses   | [Reduce the number of licenses](../licenses/buy-licenses.md) to 25 or fewer and then [use the steps later in this article to cancel](#steps-to-cancel-your-subscription).      |
 
 If you can't reduce the number of licenses, [turn off recurring billing](renew-your-subscription.md). Turning off recurring billing prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
 

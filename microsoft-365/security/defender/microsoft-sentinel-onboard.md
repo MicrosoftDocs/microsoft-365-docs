@@ -95,7 +95,7 @@ After you connect your workspace to the Defender portal, you'll see **Microsoft 
 You'll also see many of the existing Microsoft Sentinel features are integrated into the Defender portal. For these features, you'll notice that the experience between Microsoft Sentinel in the Azure portal and Defender portal are similar. Use the following articles to help you start working with Microsoft Sentinel in the Defender portal. When using these articles, keep in mind that your starting point in this context is the [Defender portal](https://security.microsoft.com/) instead of the Azure portal.
 
 - Search
-  - [Search across long time spans in large datasets](/sentinel/search-jobs)
+  - [Search across long time spans in large datasets](/azure/sentinel/search-jobs)
   - [Restore archived logs from search](/azure/sentinel/restore)
 - Threat management
   - [Visualize and monitor your data by using workbooks](/azure/sentinel/monitor-your-data)

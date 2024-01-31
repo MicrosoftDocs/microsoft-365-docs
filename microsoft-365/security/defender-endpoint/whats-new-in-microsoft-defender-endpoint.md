@@ -7,7 +7,7 @@ ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 01/22/2024
+ms.date: 01/24/2024
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -49,6 +49,15 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 - [What's new in Defender for Endpoint on Android](android-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+## January 2024
+
+- **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Take a moment to celebrate your organization's improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. 
+
+   - Defender Boxed opens automatically when you go to the **Incidents** page in the Microsoft Defender portal. 
+   - If you close Defender Boxed and you want to reopen it, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
+   - Act quickly! Defender Boxed is available only for a short period of time.
+
 
 ## November 2023
 
