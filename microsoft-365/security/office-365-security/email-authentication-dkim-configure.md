@@ -411,7 +411,7 @@ To confirm the corresponding public key that's used to verify the DKIM signature
 > [!TIP]
 > For custom domains, you can rotate DKIM keys only on domains that are enabled for DKIM signing (the **Status** value is Enabled).
 >
-> Currently, there's automatic DKIM key rotation for the \*.onmicrosoft.com domain. You can manually rotate the DKIM keys as described in this section. If **Rotate DKIM keys** isn't available in the properties of the \*.onmicrosoft.com domain, use the procedures in the [Use the Defender portal to customize DKIM signing of outbound messages using the \*.onmicrosoft.com domain](#use-the-defender-portal-to-customize-dkim-signing-of-outbound-messages-using-the-onmicrosoftcom-domain) section earlier in this article.
+> Currently, there's no automatic DKIM key rotation for the \*.onmicrosoft.com domain. You can manually rotate the DKIM keys as described in this section. If **Rotate DKIM keys** isn't available in the properties of the \*.onmicrosoft.com domain, use the procedures in the [Use the Defender portal to customize DKIM signing of outbound messages using the \*.onmicrosoft.com domain](#use-the-defender-portal-to-customize-dkim-signing-of-outbound-messages-using-the-onmicrosoftcom-domain) section earlier in this article.
 
 ### Use the Defender portal to rotate DKIM keys for a custom domain
 
