@@ -73,7 +73,7 @@ To configure the device types that a device control policy is applied, follow th
 
    2. In the **Define device control policy groups** window, specify the network share file path containing the XML groups data.
 
-You can create different group types. Here's one group example XML file for any removable storage and CD-ROM, Windows portable devices, and approved USBs group: [XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)
+You can create different group types. Here's one group example XML file for any removable storage and CD-ROM, Windows portable devices, and approved USBs group: [XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/windows/device/Group%20Policy/Scenario%202%20GPO%20Removable%20Storage%20Group.xml)
 
 > [!NOTE]
 > Comments using XML comment notation `<!--COMMENT-->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
