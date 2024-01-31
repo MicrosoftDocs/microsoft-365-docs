@@ -102,8 +102,6 @@ Exchange Online synchronizes the PreferredDataLocation property from Microsoft E
 
 Exchange Online PowerShell is required to view and configure Multi-Geo properties in your Microsoft 365 environment. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-You need the [Microsoft Azure Active Directory PowerShell Module](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 or later in v1.x to see the **PreferredDataLocation** property on user objects. User objects synchronized via Microsoft Entra Connect into Microsoft Entra ID can't have their **PreferredDataLocation** value directly modified via Azure AD PowerShell. Cloud-only user objects can be modified via Azure AD PowerShell. To connect to Azure AD PowerShell, see [Connect to PowerShell](connect-to-microsoft-365-powershell.md).
-
 In Exchange Online Multi-Geo environments, you don't need to do any manual steps to add Geographies to your tenant. After you receive the Message Center post that says multi-geo is ready for Exchange Online, all available Geographies will be ready and configured for you to use.
 
 #### Connect directly to a geo location using Exchange Online PowerShell
