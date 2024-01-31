@@ -37,7 +37,7 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 
 4. On the **Basics** tab, specify a name and description for your policy.
 
-5. On the **Configuration settings** tab, you see a long list of settings.
+5. On the **Configuration settings** tab, you see a list of settings.
 
    - Under **Administrative Templates**, you have [Device Installation](/windows/client-management/mdm/policy-csp-deviceinstallation?WT.mc_id=Portal-fx) and [Removable Storage Access](/windows/client-management/mdm/policy-csp-admx-removablestorage) settings.
    - Under **Defender**, see [Allow Full Scan Removable Drive Scanning](/windows/client-management/mdm/policy-csp-defender#allowfullscanremovabledrivescanning) settings.
