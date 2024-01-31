@@ -197,8 +197,7 @@ Managing how users can install and use Office add-ins means that you decide who 
 > [!NOTE]
 > This setting does not impact any deployed Office add-ins on Outlook. You can continue to deploy Office add-ins on Outlook to users in your organization, even if the above setting is turned off.
 
-Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins will continue to be honored as long as they stay as add-ins. When Office add-ins upgrade to work across different Microsoft applications, you can learn to manage them from here. For more information, see [Controls for managing Teams apps that work on Outlook and Microsoft 365](/manage/teams-apps-work-on-outlook-and-m365#controls-for-managing-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
-
+Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins will continue to be honored as long as they stay as add-ins. When Office add-ins upgrade to work across different Microsoft applications, you can learn to manage them from here. For more information, see [Controls for managing Teams apps that work on Outlook and Microsoft 365](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#controls-for-managing-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
 
 ## Upload Custom Office Add-ins in your organization  
 

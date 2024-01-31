@@ -53,4 +53,4 @@ Use the following poster to start envisioning what your organization can do with
 
 ## See also
 
-[Microsoft 365 productivity illustrations](/microsoft-365/solutions/productivity-illustrations.md)
+[Microsoft 365 productivity illustrations](/microsoft-365/solutions/productivity-illustrations)
