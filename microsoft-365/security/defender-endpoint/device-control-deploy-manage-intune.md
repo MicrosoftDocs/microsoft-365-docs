@@ -115,7 +115,7 @@ Policies can be added and removed using the **+** and **–** icons.  The name o
 
 ## Configure removable storage access control using OMA-URI
 
-1. Go to the [Microsoft Intune admin center](https://endpoint.microsoft.com) and sign in.
+1. Go to the [Microsoft Intune admin center](https://intune.microsoft.com) and sign in.
 
 2. Choose **Devices** > **Configuration profiles**. The **Configuration profiles** page appears. 
 
