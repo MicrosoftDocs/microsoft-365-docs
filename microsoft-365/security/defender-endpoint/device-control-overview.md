@@ -33,7 +33,7 @@ This list is intended to provide some examples. It's not an exhaustive list; the
 
 Device control helps protect your organization from potential data loss, malware, or other cyberthreats by allowing or preventing certain devices to be connected to users' computers. With device control, your security team can determine whether and what peripheral devices users can install and use on their computers. 
 
-## Device control scenarios
+## Device control in Windows
 
 This section lists scenarios for device control. Select a tab, review the scenarios, and then identify the type of device control policy to create.
 
