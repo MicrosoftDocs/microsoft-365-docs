@@ -68,7 +68,7 @@ To use the following table, identify the setting you want to configure, and then
 | **Evidence data remote location** <br/>Device control moves evidence data captured | `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation` | String |
 | **Local evidence cache duration** <br/>Sets the retention period in days for files in the local device control cache | `./Vendor/MSFT/Defender/Configuration/DataDuplicationLocalRetentionPeriod` | Integer <br/>Example: `60` (60 days) |
 
-### Creating Policies with OMA-URI
+### Creating policies with OMA-URI
 
 :::image type="content" source="images/create-policy-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a policy with OMA-URI." lightbox="images/create-policy-with-oma-uri.png":::
 
