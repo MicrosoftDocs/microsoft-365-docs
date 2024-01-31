@@ -33,7 +33,7 @@ If you're using Group Policy to manage Defender for Endpoint settings, you can u
 2. In the **Device Control** window, select **Enabled**.
 
 > [!NOTE]
-> If you don't see these Group Policy Objects, you need to add the Group Policy Administrative Templates (ADMX). You can download administrative template (WindowsDefender.adml and WindowsDefender.admx) from [mdatp-devicecontrol / Removable Storage Access Control Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) in GitHub.
+> If you don't see these Group Policy Objects, you need to add the Group Policy Administrative Templates (ADMX). You can download administrative template ([WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/windows/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/windows/WindowsDefender.admx)) from [mdatp-devicecontrol / Windows samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/windows) in GitHub.
 
 ## Set default enforcement
 
