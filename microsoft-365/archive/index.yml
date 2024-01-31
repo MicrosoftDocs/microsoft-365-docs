@@ -65,12 +65,12 @@ landingContent:
 # Card 5
   - title: More solutions
     linkLists:
-      - linkListType: reference
+      - linkListType: overview
         links:
           - text: Microsoft Syntex
-            url: /microsoft-365/syntex/index.yml
+            url: /microsoft-365/syntex/
           - text: SharePoint Advanced Management
-            url: /microsoft-365/sharepoint/advanced-management
+            url: /sharepoint/advanced-management
           - text: Microsoft 365 Backup (Preview)
             url: /microsoft-365/syntex/backup/backup-overview
 
