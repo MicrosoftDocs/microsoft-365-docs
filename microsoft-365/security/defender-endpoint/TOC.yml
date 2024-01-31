@@ -550,9 +550,9 @@
           href: device-control-overview.md
         - name: Device control walkthroughs
           href: device-control-walkthroughs.md
-        - name: Understand Device control policies
+        - name: Understand device control policies
           href: device-control-policies.md
-        - name: Deploy and manage device control with Intune
+        - name: Deploy and manage device control with Microsoft Intune
           href: device-control-deploy-manage-intune.md
         - name: Deploy and manage device control with Group Policy
           href: device-control-deploy-manage-gpo.md
