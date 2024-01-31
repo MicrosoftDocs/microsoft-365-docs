@@ -25,7 +25,7 @@ appliesto:
 ms.reviewer: 
 description: Learn how to customize a messaging policy for Microsoft Teams that can include read receipts and priority notifications.
 ms.custom: seo-marvel-mar2020
-ms.date: 1/17/2024
+ms.date: 01/17/2024
 ---
 
 # Messaging policies for healthcare organizations
