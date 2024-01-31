@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/29/2023
+ms.date: 1/31/2024
 ---
 
 # Threat protection report in Microsoft Defender for Endpoint
@@ -31,10 +31,10 @@ ms.date: 11/29/2023
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
-> The Microsoft Defender for Endpoint Threat Protection report page is now deprecated and is no longer available. Microsoft recommends that you transition to either the Defender XDR Incidents page or Advanced hunting to understand endpoint threat protection details. See the following sections for more information.
+> The Microsoft Defender for Endpoint Threat Protection report page is now deprecated and is no longer available. Microsoft recommends that you transition to either the Defender XDR alerts or advanced hunting to understand endpoint threat protection details. See the following sections for more information.
 
-## Use the Alert queue filter in Defender XDR
-Due to the deprecation of the Defender for Endpoint Threat protection report, you can use the Defender XDR Alerts view, filtered against Defender for Endpoint, to see the current status of alerts for protected devices. For alert status, such as unresolved, you can filter against New and In progress. [Learn more about Defender XDR Alerts](../defender/investigate-alerts.md).
+## Use the alert queue filter in Defender XDR
+Due to the deprecation of the Defender for Endpoint Threat protection report, you can use the Defender XDR alerts view, filtered against Defender for Endpoint, to see the current status of alerts for protected devices. For alert status, such as *unresolved*, you can filter against *New* and *In progress* items. [Learn more about Defender XDR Alerts](../defender/investigate-alerts.md).
 
 ## Use Advanced hunting queries
 Due to the deprecation of the Defender for Endpoint Threat protection report, you can use Advanced hunting queries to find Defender for Endpoint threat protection information.  Note that currently there is no alert status in Advanced hunting elements that maps to resolve/unresolve. [Learn more about Advanced hunting in Defender XDR](../defender/advanced-hunting-overview.md). See below for a sample advanced hunting query that shows endpoint related threat protection details.
@@ -83,7 +83,7 @@ AlertInfo
 | render timechart
 ```
 
-## Related topic
+## Related topics 
 
 - [Device health and compliance report](device-health-reports.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
