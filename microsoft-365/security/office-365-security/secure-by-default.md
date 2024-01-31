@@ -15,7 +15,7 @@ search.appverid:
 ms.collection:
   - m365-security
   - tier2
-  - essentials-accountability
+  - essentials-security
 description: Learn more about the secure by default setting in Exchange Online Protection (EOP)
 ms.subservice: mdo
 ms.service: microsoft-365-security
