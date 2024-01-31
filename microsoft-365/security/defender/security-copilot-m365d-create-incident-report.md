@@ -1,7 +1,7 @@
 ---
 title: Create incident reports with Security Copilot in Microsoft Defender XDR
 description: Use Security Copilot incident report creation embedded in Microsoft Defender XDR to write incident reports.
-keywords: security copilot, microsoft 365 defender, embedded experience, incident report, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident report creation, create report, create incident report, write incident report, write report
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident report, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident report creation, create report, create incident report, write incident report, write report
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +25,7 @@ ms.date: 10/10/2023
 
 # Create an incident report with Microsoft Security Copilot in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -84,8 +84,8 @@ Here are some recommendations to consider to ensure that Security Copilot genera
 - Classify and resolve the incident before generating the incident report.
 - Ensure that you write and save comments in the Microsoft Sentinel activity log or in the Microsoft Defender XDR incident comments and history to include the comments in the incident report.
 - Write comments using comprehensive and clear language. In-depth and clear comments provide better context about the response actions. See the following steps to know how to access the comments field:
-  - [Add comments to incidents in Microsoft Defender XDR](manage-incidents.md#add-comments) 
-  - [Add comments to incidents in Microsoft Sentinel](/azure/sentinel/investigate-cases.md#comment-on-incidents)
+  - [Add comments to incidents in Microsoft Defender XDR](manage-incidents.md#add-comments)
+  - [Add comments to incidents in Microsoft Sentinel](/azure/sentinel/investigate-cases#comment-on-incidents)
 - For ServiceNow users, [enable the Microsoft Sentinel and ServiceNow bi-directional sync](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-introducing-microsoft-sentinel-solution-for/ba-p/3692840) to get more robust incident data.
 - Copy the generated incident report and post it to the comments and history of the incident to ensure that the incident report is saved in the incident page.
 
@@ -95,4 +95,4 @@ Here are some recommendations to consider to ensure that Security Copilot genera
 - [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
 - [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

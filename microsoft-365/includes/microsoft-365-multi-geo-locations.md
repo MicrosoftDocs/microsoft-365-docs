@@ -11,6 +11,7 @@ ms.date: 05/24/2023
 |France                                  |FRA     |Europe datacenters                |
 |Germany                                 |DEU     |Europe datacenters                |
 |India                                   |IND     |Southeast or East Asia datacenters|
+|Israel                                  |ISR     |(eDiscovery data location coming soon)|
 |Italy                                   |ITA     |(eDiscovery data location coming soon)|
 |Japan                                   |JPN     |Southeast or East Asia datacenters|
 |Korea                                   |KOR     |Southeast or East Asia datacenters|

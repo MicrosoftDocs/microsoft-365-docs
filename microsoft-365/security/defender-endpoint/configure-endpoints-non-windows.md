@@ -1,12 +1,8 @@
 ---
 title: Onboard non-Windows devices to the Microsoft Defender for Endpoint service
 description: Configure non-Windows devices so that they can send sensor data to the Microsoft Defender for Endpoint service.
-keywords: onboard non-Windows devices, macos, linux, device management, configure Microsoft Defender for Endpoint devices
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.service: defender-endpoint
 ms.pagetype: security
 ms.author: siosulli
 author: siosulli
@@ -17,19 +13,19 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: conceptual
-ms.subservice: mde
-ms.date: 12/18/2020
+ms.subservice: onboard
+ms.date: 01/18/2024
 ---
 
 # Onboard non-Windows devices
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **Platforms**
 - macOS
@@ -65,7 +61,9 @@ You'll need to take the following steps:
 
 ## Offboard non-Windows devices
 
-For macOS and Linux devices, you can choose to offboard through Microsoft Defender for Endpoint. In the navigation pane, select **Settings** \> **Offboard** \> **Select Operating System to start the offboarding Process**.
+For macOS and Linux devices, you can choose to offboard through Microsoft Defender for Endpoint. In the navigation pane, select **Settings** > **Offboard** > **Select Operating System to start the offboarding Process**.
+
+For details on offboarding Microsoft Defender on macOS, see [Uninstalling Microsoft Defender for macOS](mac-resources.md).
 
 You can also offboard non-Windows devices by disabling the third-party integration. Enable coverage for devices running non-Windows platforms by [integrating third-party solutions](https://security.microsoft.com/interoperability/partners).
 
@@ -76,3 +74,4 @@ You can also offboard non-Windows devices by disabling the third-party integrati
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Troubleshooting Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

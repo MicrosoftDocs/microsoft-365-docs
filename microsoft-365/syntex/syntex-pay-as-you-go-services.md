@@ -2,14 +2,14 @@
 title: Pay-as-you-go services and pricing for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires, kkameth
 ms.date: 08/01/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
-    - enabler-strategic
+    - essentials-get-started
     - m365initiative-syntex
     - Tier1
 search.appverid: MET150
@@ -18,6 +18,9 @@ description: Learn about pay-as-you-go services and pricing for Microsoft Syntex
 ---
 
 # Pay-as-you-go services and pricing for Microsoft Syntex
+
+> [!NOTE]
+> Through June 2024, if you have [pay-as-you-go billing](syntex-azure-billing.md) set up, your organization will receive a limited amount of included capacity each month for selected services, letting you try these services at no cost. This offering does not include capacity for Microsoft 365 Archive or Microsoft 365 Backup. For more information, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
 When you use Microsoft Syntex [pay-as-you-go](syntex-azure-billing.md), services are billed using Syntex meters in the Azure subscription that you specified when you set up Microsoft Syntex. The following table describes each meter, its pricing, and how it measures usage. When you connect your Azure subscription to Microsoft Syntex, users in your organization are able to take advantage of Syntex services right away. Your tenant is billed according to the details shown in this article.
 
@@ -29,10 +32,12 @@ When you use Microsoft Syntex [pay-as-you-go](syntex-azure-billing.md), services
 |Content assembly |The number of documents (Word or PDF) created using Syntex templates. Each processed document counts as one transaction.<br><br>If you have an existing Syntex per-user license, you won't be charged for generating documents manually but will be charged for automated document generation using Power Automate. |$0.15/transaction |
 |Image tagging |The number of images processed. Each processed image counts as one transaction. You won’t be charged if you only enable pay-as-you-go billing for image tagging. You are charged only when you [enable image tagging on a document library](image-tagging.md). |$0.001/transaction |
 |Taxonomy tagging |The number of documents processed. Each processed document counts as one transaction. You won’t be charged if you only enable pay-as-you-go billing for taxonomy tagging. You're charged only when you [enable taxonomy tagging on a document library](taxonomy-tagging.md). |$0.05/transaction |
-|Syntex eSignature |The number of electronic signature requests processed. Each signature request counts as one transaction. |$2.00/transaction |
+|SharePoint eSignature |The number of electronic signature requests created. Each signature request for up to 10 recipients counts as one transaction. |$2.00/transaction |
+|Document translation |For document translation, the number of characters processed. Character count includes letters, Unicode code points, punctuation, and white spaces. <br>For video transcript translation, the number of characters from the source transcript. (This meter is charged only when the translation has successfully resulted in a new transcript.) |$15.00/1M characters |
 |Optical character recognition  |The number of pages processed for images (JPEG, JPG, PNG, or BMP); the number of pages processed for PDF, TIF, or TIFF; or the number of embedded images in Teams chats and email messages. Each of these counts as one transaction. Processing occurs every time the file is edited. |$0.001/transaction|
 |Microsoft 365 Archive (Preview)  |The number of gigabytes (GB) of data archived. (This meter is only charged when archived storage plus active storage in SharePoint exceeds a tenant’s included or licensed allocated SharePoint storage quota limit.) <br>Reactivation of archived data after seven days. |$0.05/GB/month (shows on invoice as $0.00167/GB/day)<br><br><br>$0.60/GB|
 |Microsoft 365 Backup (Preview)  |The number of gigabytes (GB) of data backed up. |$0.15/GB/month (shows on invoice as $0.005/GB/day)|
+<!---|Translation |For document translation, the number of characters processed. Character count includes letters, Unicode code points, punctuation, and white spaces. <br>For video transcript translation, the number of characters from the source transcript. (This meter is only charged when the translation has successfully resulted in a new transcript.) |$15.00/1M characters |--->
 
 ## Related articles
 

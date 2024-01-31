@@ -4,12 +4,12 @@ ms.author: chucked
 author: chuckedmonson
 ms.reviewer: kkamath
 ms.date: 05/15/2023
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
-    - enabler-strategic
+    - essentials-get-started
     - m365initiative-syntex
     - Tier1
 search.appverid: MET150
@@ -77,6 +77,7 @@ The following Microsoft Syntex products are currently available:
 - Content assembly
 - Image tagging
 - Taxonomy tagging
+- Translation
 - Syntex eSignature
 - Optical character recognition
 - Microsoft 365 Archive (Preview)

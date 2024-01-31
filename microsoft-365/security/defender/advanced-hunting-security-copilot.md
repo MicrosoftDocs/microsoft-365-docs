@@ -1,7 +1,7 @@
 ---
 title: Microsoft Security Copilot in advanced hunting
 description: Create Microsoft Security Copilot advanced hunting (NL2KQL) plugin generate a KQL query for you.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Security Copilot, AI, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
+keywords: advanced hunting, threat hunting, cyber threat hunting, Security Copilot, AI, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr

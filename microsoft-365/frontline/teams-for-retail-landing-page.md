@@ -4,7 +4,7 @@ description: Learn about the admin resources available to manage and get the mos
 ms.topic: conceptual
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 f1.keywords:
 - NOCSH

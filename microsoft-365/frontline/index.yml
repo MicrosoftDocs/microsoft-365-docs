@@ -12,10 +12,10 @@ metadata:
   ms.topic: hub-page # Required
   author: lana-chin #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-chinlana #Required; microsoft alias of author; optional team alias.
-  manager: serdars
+  manager: jtremper
 
   audience: Admin
-  ms.date: 04/07/2022 #Required; mm/dd/yyyy format.
+  ms.date: 01/12/2024 #Required; mm/dd/yyyy format.
   ms.collection:
     - m365-frontline
     - highpri
@@ -35,9 +35,9 @@ highlightedContent:
       itemType: get-started
       url: flw-choose-scenarios.md
     # Card
-    - title: Technical planning guide for deploying frontline solutions
+    - title: How to find the best frontline team solution for your organization
       itemType: whats-new
-      url: flw-technical-planning-guide-deployment.md
+      url: frontline-team-options.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -76,20 +76,20 @@ productDirectory:
       links:
         - url: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Approvals
-        - url: /microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-          text: Bookings
         - url: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Shifts
         - url: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Tasks
         - url: /microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: Updates
-        - url: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - url: /microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+          text: Virtual Appointments
+        - url: /microsoftteams/apps-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
           text: More >
     # Card
     - title: Set up and configure Microsoft 365 for frontline workers
       imageSrc: /office/media/icons/settings.svg
-      summary: Set up a trial team, start with a pilot deployment, or deploy at scale with this guidance.
+      summary: Start with a pilot deployment or deploy at scale with this guidance.
       url: flw-deploy-overview.md
     # Card
     - title: Adoption resources

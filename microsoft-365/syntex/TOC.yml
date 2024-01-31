@@ -15,6 +15,8 @@
               href: set-up-content-understanding.md
             - name: Set up Microsoft Syntex
               href: set-up-microsoft-syntex.md
+            - name: Privacy, security, & compliance
+              href: syntex-privacy-security.md
             - name: Set up a content center 
               href: create-a-content-center.md
 
@@ -53,6 +55,8 @@
                   href: discover-other-trained-models.md
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
+                - name: Apply a sensitivity label 
+                  href: apply-a-sensitivity-label-to-a-model.md
                 - name: Rename a model
                   href: rename-a-model.md
                 - name: Delete a model
@@ -187,7 +191,16 @@
         - name: Find and manage terms 
           href: taxonomy-tagging.md
 
-    - name: Syntex eSignature 
+    - name: Document translation
+      items: 
+        - name: Overview 
+          href: translation-overview.md
+        - name: Admin setup 
+          href: translation-setup.md
+        - name: Translate documents 
+          href: translation.md
+
+    - name: eSignature 
       items: 
         - name: Overview 
           href: esignature-overview.md
@@ -197,6 +210,8 @@
           href: esignature-send-requests.md
         - name: Review and sign a request 
           href: esignature-review-sign-requests.md
+        - name: Troubleshoot a request 
+          href: esignature-troubleshoot.md
 
     - name: Optical character recognition 
       items: 
@@ -221,6 +236,8 @@
           href: archive/archive-compliance.md
         - name: End user experience 
           href: archive/archive-end-user.md
+        - name: FAQs
+          href: archive/archive-faq.md
 
     - name: Microsoft 365 Backup (Preview)
       items: 
@@ -228,14 +245,14 @@
           href: backup/backup-overview.md
         - name: Admin setup 
           href: backup/backup-setup.md
+        - name: Pricing model
+          href: backup/backup-pricing.md
         - name: View and edit policies 
           href: backup/backup-view-edit-policies.md
         - name: Restore data 
           href: backup/backup-restore-data.md
         - name: Preview limitations
           href: backup/backup-limitations.md
-        - name: Pricing
-          href: backup/backup-pricing.md
         - name: Offboarding
           href: backup/backup-offboarding.md
         - name: FAQs
@@ -274,6 +291,8 @@
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
+        - name: Try out Syntex services
+          href: promo-syntex.md
         - name: Scenarios and use cases
           items:
             - name: Overview
@@ -330,8 +349,12 @@
         - name: Microsoft Syntex REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
-    - name: Syntex-SharePoint Advanced Management
+    - name: SharePoint Advanced Management
       href: /sharepoint/advanced-management
+
+    - name: SharePoint Embedded
+      href: /sharepoint/dev/embedded/overview
+
 
 
 

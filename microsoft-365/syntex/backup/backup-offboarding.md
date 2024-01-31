@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 11/15/2023
+ms.date: 01/17/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: backup
@@ -32,11 +32,9 @@ To no longer use the Microsoft 365 Backup tool, you must offboard usage. This ac
 
 ## Offboarding recovery undo period
 
-If offboarding from Microsoft 365 Backup has begun due to either an explicit request from you or due to an unhealthy billing state, the following grace period initiates:
+If offboarding from Microsoft 365 Backup has begun due to either an explicit request from you or due to an unhealthy billing state, the grace periods shown in the following table initiate.
 
-- In the first 14 days, your policy is automatically paused, meaning new backups won't be taken. However, you'll still be able to continue to use the tool to restore existing backups.
-
-- During days 15-29, usage of the tool will be blocked.
+![Screenshot of a data table showing the offboarding undo periods.](../../media/content-understanding/backup-offboarding-time.png)
 
 By bringing your billing back to a healthy state or by asking support to reverse the offboarding, the tool becomes usable again and no backups are lost.
 

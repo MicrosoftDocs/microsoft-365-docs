@@ -1,7 +1,7 @@
 ---
 title: Manage endpoint security policies in Microsoft Defender for Endpoint
 description: Learn how to set windows, mac, and linux endpoint security policies such as antivirus, firewall, endpoint detection and response in Microsoft Defender for Endpoint.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -11,9 +11,8 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: how-to
-ms.subservice: mde
 search.appverid: met150
-ms.date: 09/14/2023
+ms.date: 12/14/2023
 ---
 
 # Manage endpoint security policies in Microsoft Defender for Endpoint
@@ -27,16 +26,12 @@ ms.date: 09/14/2023
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->[!NOTE]
->The following capability is only available to customers who turn on preview features. For more information, see [Turn on preview features](preview.md#turn-on-preview-features). 
-
-
 Use security policies to manage security settings on devices. As a security administrator, you can configure security policy settings in Microsoft Defender XDR. 
 
 You'll find endpoint security policies under **Endpoints > Configuration management > Endpoint security policies**.
 
 > [!NOTE]
-> The **Endpoint Security Policies** page in Microsoft Defender XDR is available only for [users with the security administrator role in Microsoft Defender XDR](/microsoft-365/security/defender-endpoint/assign-portal-access). Any other user role, such as Security Reader, cannot access the portal. When a user has the required permissions to view policies in the Microsoft Defender portal, the data is presented based on Intune permissions. If the user is in scope for Intune role-based access control, it applies to the list of policies presented in the Microsoft Defender portal. We recommend granting security administrators with the [Intune built-in role, “Endpoint Security Manager”](/mem/intune/fundamentals/role-based-access-control#built-in-roles) to effectively align the level of permissions between Intune and Microsoft Defender XDR.
+> The **Endpoint Security Policies** page in Microsoft Defender XDR is available only for [users with the security administrator role in Microsoft Defender XDR](/microsoft-365/security/defender-endpoint/assign-portal-access). Any other user role, such as Security Reader, cannot access the portal. When a user has the required permissions to view policies in the Microsoft Defender portal, the data is presented based on Intune permissions. If the user is in scope for Intune role-based access control, it applies to the list of policies presented in the Microsoft Defender portal. We recommend granting security administrators with the [Intune built-in role, "Endpoint Security Manager"](/mem/intune/fundamentals/role-based-access-control#built-in-roles) to effectively align the level of permissions between Intune and Microsoft Defender XDR.
 
 :::image type="content" source="./images/endpoint-security-policies.png" alt-text="Managing Endpoint security policies in the Microsoft Defender portal":::
 

@@ -1,11 +1,11 @@
 ---
 ms.date: 09/27/2023
 title: Edit an existing topic in Topics
-ms.author: daisyfeller
+ms.author: sunar
 author: daisyfell
-manager: pamgreen
+manager: elizapo
 audience: admin
-ms.reviewer: cjtan
+ms.reviewer: daisyfeller
 ms.topic: article
 ms.collection:
   - m365initiative-viva-topics

@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - essentials-overview
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 08/08/2023
@@ -52,4 +53,4 @@ In addition to the constantly updated research and intelligence tailored for the
 ### Next step
 
 [Before you begin](before-you-begin-xdr.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

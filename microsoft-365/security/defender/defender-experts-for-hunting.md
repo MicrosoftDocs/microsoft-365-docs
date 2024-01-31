@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - essentials-overview
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 10/18/2023
@@ -22,7 +23,7 @@ ms.date: 10/18/2023
 
 # Microsoft Defender Experts for Hunting
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -49,4 +50,4 @@ The following capabilities included in this managed threat hunting service could
 ### Next step
 
 - [Before you begin using Defender Experts for Hunting](before-you-begin-defender-experts.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

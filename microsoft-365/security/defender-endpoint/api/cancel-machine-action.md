@@ -3,8 +3,8 @@ title: Cancel machine action API
 description: Learn how to cancel an already launched machine action
 keywords: apis, graph api,
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: reference
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -26,7 +26,7 @@ ms.date: 06/03/2021
 
 # Cancel machine action API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

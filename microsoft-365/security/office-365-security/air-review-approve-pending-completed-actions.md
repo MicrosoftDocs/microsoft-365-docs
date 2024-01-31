@@ -21,7 +21,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 06/09/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Review and manage remediation actions in Office 365
@@ -35,7 +35,7 @@ As automated investigations on email & collaboration content result in verdicts,
 
 These remediation actions are not taken unless and until your security operations team approves them. We recommend reviewing and approving any pending actions as soon as possible so that your automated investigations complete in a timely manner. You need to be part of Search & purge role before taking any actions.
 
-We've added additional checks for duplicate or overlapping investigations with the same clusters approved multiple times. If the same investigation cluster is already approved in the previous hour, new duplicate remediation will not be processed again. This behavior doesn't remove duplicate investigations or investigation evidence - it simply de-duplicates approved actions to improve remediation processing speed. For the duplicate approved cluster investigations, you won't see action details in the [action center](https://security.microsoft.com/action-center/history) side panel. 
+We've added additional checks for duplicate or overlapping investigations with the same clusters approved multiple times. If the same investigation cluster is already approved in the previous hour, new duplicate remediation will not be processed again. This behavior doesn't remove duplicate investigations or investigation evidence - it simply de-duplicates approved actions to improve remediation processing speed. For the duplicate approved cluster investigations, you won't see action details in the [action center](https://security.microsoft.com/action-center/history) side panel.
 
 ## Approve (or reject) pending actions
 
@@ -64,7 +64,7 @@ There are four different ways to find and take auto investigation actions:
    - Select **Open investigation page** to view more details about the investigation.
    - Select **Approve** to initiate a pending action.
    - Select **Reject** to prevent a pending action from being taken.
-  
+
 > [!NOTE]
 > Pending actions time out after awaiting approval for one week.
 

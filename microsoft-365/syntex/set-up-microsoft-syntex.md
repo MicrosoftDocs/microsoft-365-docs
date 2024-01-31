@@ -3,7 +3,7 @@ title: Set up Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
-manager: pamgreen
+manager: jtremper
 ms.date: 08/01/2023
 audience: admin
 ms.topic: conceptual
@@ -59,8 +59,9 @@ The following table provides links to the specific setup instructions for each s
 |Unstructured document processing | [Set up unstructured document processing](unstructured-setup.md) |
 |Content assembly                 | [Set up content assembly](content-assembly-setup.md)  |
 |Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
-|Taxonomy tagging                    | [Set up taxonomy tagging](taxonomy-tagging-setup.md)  |
-|Syntex eSignature                    | [Set up Syntex eSignature](esignature-setup.md)  |
+|Taxonomy tagging                 | [Set up taxonomy tagging](taxonomy-tagging-setup.md)  |
+|Translation                    | [Set up document translation](translation-setup.md)  |
+|Syntex eSignature                | [Set up Syntex eSignature](esignature-setup.md)  |
 |Optical character recognition    | [Set up optical character recognition](ocr.md)  |
-|Microsoft 365 Archive (Preview)   | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
+|Microsoft 365 Archive (Preview)  | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
 |Microsoft 365 Backup (Preview)   | [Set up Microsoft 365 Backup](backup/backup-setup.md)  |

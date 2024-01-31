@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: magarlan, chrigreen
+ms.reviewer: taylorau
 ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
@@ -32,7 +32,7 @@ You must have access to a partner tenant that has onboarded to the Microsoft 365
 
 ## View your roles
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. From the list of tenants, select any tenant name to open the tenant's **Overview** page.
 

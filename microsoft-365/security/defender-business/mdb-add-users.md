@@ -2,13 +2,12 @@
 title: Add users and assign licenses in Microsoft Defender for Business
 description: Add users and assign Defender for Business licenses to protect their devices
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 05/01/2023
 ms.collection: 
@@ -77,3 +76,4 @@ One good way to make sure MFA is enabled for all users is by using [security def
 
 - [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
 - [Step 4: Set up email notifications for your security team](mdb-email-notifications.md).
+

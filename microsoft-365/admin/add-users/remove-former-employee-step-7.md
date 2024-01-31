@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/17/2021
+ms.date: 11/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -23,10 +23,6 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "After you've saved and accessed all of a former employee's user data, you can delete the former employee's account in the Microsoft 365 admin center."
 ---
 
@@ -61,22 +57,18 @@ If you're using Microsoft Entra ID, see the [Remove-MgUser](/powershell/module/m
 
 Here's information about how to get an employee out of email (Exchange).
 
-<br>
 
-****
 
 |What you can do|How you do it|
 |:-----|:-----|
 |Terminate a session (such as Outlook on the web, Outlook, Exchange active sync, etc.) and force to open a new session|Reset password|
-|Terminate a session and block access to future sessions (for all protocols)|Disable the account. For example, in the Exchange admin center or using PowerShell: <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
-|Terminate the session for a particular protocol (such as ActiveSync)|Disable the protocol. For example, in the Exchange admin center or using PowerShell: <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|Terminate a session and block access to future sessions (for all protocols)|Disable the account. For example, in the Exchange admin center or using PowerShell: <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Terminate the session for a particular protocol (such as ActiveSync)|Disable the protocol. For example, in the Exchange admin center or using PowerShell: <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
 |
 
 The above operations can be done in three places:
   
-<br>
 
-****
 
 |If you terminate the session here|How long it takes|
 |---|---|

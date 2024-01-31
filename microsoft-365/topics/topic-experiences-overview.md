@@ -1,10 +1,10 @@
 ---
 ms.date: 05/04/2023
 title: Topics overview
-ms.author: daisyfeller
+ms.author: cjtan
 author: daisyfell
-manager: pamgreen
-ms.reviewer: cjtan; lauris
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 search.appverid:
@@ -20,6 +20,7 @@ ms.collection:
   - highpri
   - Tier1
   - essentials-overview
+  - essentials-navigation
 ms.localizationpriority:  medium
 description: Learn about how to use Topics in your organization.
 ---

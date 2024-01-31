@@ -3,13 +3,12 @@ title: Microsoft Defender for Business preview features
 description: Learn how to access Microsoft Defender for Business preview features.
 keywords: preview, preview experience, Microsoft Defender for Business, features, updates
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: Admin
@@ -59,3 +58,4 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 - [How to get Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers)
 - [Trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md)
 - [Visit the Microsoft Defender portal](mdb-get-started.md)
+

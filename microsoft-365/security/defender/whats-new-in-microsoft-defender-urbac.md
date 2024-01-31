@@ -19,7 +19,17 @@ ms.date: 11/8/2023
 
 This article provides information about new features and important product updates for the latest release of Microsoft Defender XDR Unified role-based access control (RBAC).
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+## January 2024
+
+Microsoft Defender XDR Unified RBAC is now generally available to GCC High and DoD customers. To learn more about the supported workloads and supported data sources, see [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md).
+
+The process of importing roles from individual workloads' RBAC models into Microsoft Defender XDR Unified RBAC has been improved. Admins can now view the permissions and assignment of a role before importing it by clicking the role name at the roles to import selection stage.
+
+## December 2023
+
+### Microsoft Defender XDR Unified RBAC is now generally available
+
+Microsoft Defender XDR Unified RBAC is now generally available. This offering is also available to GCC Moderate customers. To learn more about the supported workloads and supported data sources, see [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md).
 
 ## October 2023
 

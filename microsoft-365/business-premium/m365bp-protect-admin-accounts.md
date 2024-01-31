@@ -2,15 +2,15 @@
 title: "Protect your administrator accounts with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.date: 10/26/2022
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - highpri
@@ -27,7 +27,7 @@ description: "Learn how to set up and protect your administrator accounts in Mic
 
 Because admin accounts come with elevated privileges, they're valuable targets for cyberattackers. This article describes:
 
-- [How to set up an another administrator account for emergencies](#create-other-admin-accounts).
+- [How to set up another administrator account for emergencies](#create-other-admin-accounts).
 - [How to create an emergency admin account](#create-an-emergency-admin-account).
 - [How to create a user account for yourself](#create-a-user-account-for-yourself).
 - [How to protect admin accounts](#protect-admin-accounts).
@@ -42,7 +42,7 @@ Use admin accounts only for Microsoft 365 administration. Admins should have a s
 You'll want to set up at least one other Global admin account to give admin access to another trusted employee. You can also create separate admin accounts for user management (this role is called **User management administrator**). For more information, see [about admin roles](/office365/admin/add-users/about-admin-roles).
 
 > [!IMPORTANT]
-> Although we recommend setting up a set of admin accounts, you'll want to limit the number of global admins for your organization. In addition, we recommend adhering to the concept of least-privilege access, which means you grant access to only the data and operations needed to perform their jobs. [Learn more about the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access). 
+> Although we recommend setting up a set of admin accounts, you'll want to limit the number of global admins for your organization. In addition, we recommend adhering to the concept of least-privilege access, which means you grant access to only the data and operations needed to perform their jobs. [Learn more about the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
 
 To create more admin accounts:
 
@@ -50,7 +50,7 @@ To create more admin accounts:
 
     ![Choose Users and then Active users in the left nav.](../media/Activeusers.png)
 
- 2. On the **Active users** page, select **Add a user** at the top of the page. 
+ 2. On the **Active users** page, select **Add a user** at the top of the page.
 
  3. In the **Add a user** panel, enter basic information such as name and username information.
 

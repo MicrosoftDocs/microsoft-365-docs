@@ -21,13 +21,161 @@ ms.date: 09/13/2023
 
 # What's new in Microsoft Secure Score
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 To make Microsoft Secure Score a better representative of your security posture, we continue to add new features and improvement actions.
 
 The more improvement actions you take, the higher your Secure Score will be. For more information, see [Microsoft Secure Score](microsoft-secure-score.md).
 
 Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft Defender portal](microsoft-365-defender-portal.md).
+
+## January 2024 
+ 
+The following recommendations have been added as Microsoft Secure Score improvement actions: 
+ 
+**Microsoft Entra (AAD):**
+
+- Ensure 'Phishing-resistant MFA strength' is required for Administrators. 
+- Ensure custom banned passwords lists are used. 
+
+**Admin Center:**
+
+- Ensure ‘User owned apps and services’ is restricted. 
+
+**Microsoft Forms:** 
+
+- Ensure internal phishing protection for Forms is enabled. 
+ 
+**Microsoft Share Point:** 
+
+- Ensure that SharePoint guest users cannot share items they don't own.
+
+### Defender for Cloud Apps support for multiple instances of an app
+
+Microsoft Defender for Cloud Apps now supports Secure Score recommendations across multiple instances of the same app. For example, if you have multiple instances of AWS, you can configure and filter for Secure Score recommendations for each instance individually. 
+
+For more information, see [Turn on and manage SaaS security posture management (SSPM)](/defender-cloud-apps/security-saas).
+
+## December 2023
+
+The following recommendations have been added as Microsoft Secure Score improvement actions:
+
+**Microsoft Entra (AAD):**
+
+- Ensure 'Microsoft Azure Management' is limited to administrative roles.
+
+**Microsoft Sway:**
+
+- Ensure that Sways cannot be shared with people outside of your organization.
+
+**Microsoft Exchange Online:**
+
+- Ensure users installing Outlook add-ins is not allowed.
+
+**Zendesk:**
+
+- Enable and adopt two-factor authentication (2FA).
+- Send a notification on password change for admins, agents, and end users.
+- Enable IP restrictions.
+- Block customers to bypass IP restrictions.
+- Admins and agents can use the Zendesk Support mobile app.
+- Enable Zendesk authentication.
+- Enable session timeout for users.
+- Block account assumption.
+- Block admins to set passwords.
+- Automatic redaction.
+
+**Net Document:**
+
+- Adopt Single sign on (SSO) in netDocument.
+
+**Meta Workplace:**
+
+- Adopt Single sign on (SSO) in Workplace by Meta.
+
+**Dropbox:**
+
+- Enable web session timeout for web users.
+
+**Atlassian:**
+
+- Enable multi-factor authentication (MFA).
+- Enable Single Sign On (SSO).
+- Enable strong Password Policies.
+- Enable session timeout for web users.
+- Enable Password expiration policies.
+- Atlassian mobile app security - Users that are affected by policies.
+- Atlassian mobile app security - App data protection.
+- Atlassian mobile app security - App access requirement.
+
+**Microsoft Defender for Identity:
+New Active Directory Certificate Services (ADCS) related recommendations:**
+
+- **Certificate templates recommended actions** :
+  - [Prevent users to request a certificate valid for arbitrary users based on the certificate template (ESC1)](/defender-for-identity/security-assessment-prevent-users-request-certificate)
+  - [Edit overly permissive Certificate Template with privileged EKU (Any purpose EKU or No EKU) (ESC2)](/defender-for-identity/security-assessment-edit-overly-permissive-template)
+  - [Misconfigured enrollment agent certificate template (ESC3)](/defender-for-identity/security-assessment-edit-misconfigured-enrollment-agent)
+  - [Edit misconfigured certificate templates ACL (ESC4)](/defender-for-identity/security-assessment-edit-misconfigured-acl)
+  - [Edit misconfigured certificate templates owner](/defender-for-identity/security-assessment-edit-misconfigured-owner)
+- **Certificate authority recommended actions** :
+  - [Edit vulnerable Certificate Authority setting](/defender-for-identity/security-assessment-edit-vulnerable-ca-setting)
+  - [Edit misconfigured Certificate Authority ACL (ESC7)](/defender-for-identity/security-assessment-edit-misconfigured-ca-acl)
+  - [Enforce encryption for RPC certificate enrollment interface (ESC8)](/defender-for-identity/security-assessment-enforce-encryption-rpc)
+
+For more information, see [Microsoft Defender for Identity's security posture assessments](/defender-for-identity/security-assessment).
+
+## October 2023:
+
+The following recommendations have been added as Microsoft Secure Score improvement actions:
+
+**Microsoft Entra (AAD):**
+
+- Ensure 'Phishing-resistant MFA strength' is required for administrators.
+- Ensure custom banned passwords lists are used.
+
+**Microsoft Sway:**
+
+- Ensure that Sways cannot be shared with people outside of your organization.
+
+**Atlassian:**
+
+- Enable multi-factor authentication (MFA).
+- Enable Single Sign On (SSO).
+- Enable strong Password Policies.
+- Enable session timeout for web users.
+- Enable Password expiration policies.
+- Atlassian mobile app security - Users that are affected by policies.
+- Atlassian mobile app security - App data protection.
+- Atlassian mobile app security - App access requirement.
+
+## September 2023:
+
+The following recommendations have been added as Microsoft Secure Score improvement actions:
+
+**Microsoft Information Protection:**
+
+- Ensure Microsoft 365 audit log search is enabled.
+- Ensure DLP policies are enabled for Microsoft Teams.
+
+**Exchange Online:**
+
+- Ensure that SPF records are published for all Exchange Domains.
+- Ensure modern authentication for Exchange Online is enabled.
+- Ensure MailTips are enabled for end users.
+- Ensure mailbox auditing for all users is enabled.
+- Ensure additional storage providers are restricted in Outlook on the web.
+
+**Microsoft Defender for Cloud Apps:**
+
+- Ensure Microsoft Defender for Cloud Apps is enabled.
+
+**Microsoft Defender for Office:**
+
+- Ensure Exchange Online Spam Policies are set to notify administrators.
+- Ensure all forms of mail forwarding are blocked and/or disabled.
+- Ensure Safe Links for Office Applications is enabled.
+- Ensure Safe Attachments policy is enabled.
+- Ensure that an anti-phishing policy has been created. 
 
 ## August 2023
 
@@ -245,4 +393,4 @@ If you have any issues, let us know by posting in the [Security, Privacy & Compl
 - [Assess your security posture](microsoft-secure-score-improvement-actions.md)
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
 - [What's coming](microsoft-secure-score-whats-coming.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

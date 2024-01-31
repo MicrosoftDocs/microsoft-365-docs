@@ -1,7 +1,7 @@
 ---
 title: Manage access to Microsoft Defender XDR data in the Microsoft Defender portal
 description: Learn how to manage permissions to data in Microsoft Defender XDR
-keywords: access, permissions, Microsoft 365 Defender, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC
+keywords: access, permissions, Microsoft Defender XDR, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
+- essentials-manage
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -33,7 +34,7 @@ ms.date: 09/21/2023
 
 - Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 There are two ways to manage access to Microsoft Defender XDR:
 
@@ -65,18 +66,18 @@ Access to specific functionality is determined by your [Microsoft Entra role](/a
 
 ## Access to data
 
-Access to Microsoft Defender XDR data can be controlled using the scope assigned to user groups in Microsoft Defender for Endpoint role-based access control (RBAC). If your access has not been scoped to a specific set of devices in the Defender for Endpoint, you will have full access to data in Microsoft Defender XDR. However, once your account is scoped, you will only see data about the devices in your scope.
+Access to Microsoft Defender XDR data can be controlled using the scope assigned to user groups in Microsoft Defender for Endpoint role-based access control (RBAC). If your access hasn't been scoped to a specific set of devices in the Defender for Endpoint, you'll have full access to data in Microsoft Defender XDR. However, once your account is scoped, you'll only see data about the devices in your scope.
 
-For example, if you belong to only one user group with a Microsoft Defender for Endpoint role and that user group has been given access to sales devices only, you will see only data about sales devices in Microsoft Defender XDR. [Learn more about RBAC settings in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/rbac)
+For example, if you belong to only one user group with a Microsoft Defender for Endpoint role and that user group has been given access to sales devices only, you'll see only data about sales devices in Microsoft Defender XDR. [Learn more about RBAC settings in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ### Microsoft Defender for Cloud Apps access controls
 
-During the preview, Microsoft Defender XDR does not enforce access controls based on  Defender for Cloud Apps settings. Access to Microsoft Defender XDR data is not affected by these settings.
+During the preview, Microsoft Defender XDR doesn't enforce access controls based on  Defender for Cloud Apps settings. Access to Microsoft Defender XDR data isn't affected by these settings.
 
-## Related topics
+## Related articles
 
 - [Custom roles in role-based access control for Microsoft Defender XDR](custom-roles.md)
 - [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)
 - [Microsoft Defender for Endpoint RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Defender for Cloud Apps roles](/cloud-app-security/manage-admins)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

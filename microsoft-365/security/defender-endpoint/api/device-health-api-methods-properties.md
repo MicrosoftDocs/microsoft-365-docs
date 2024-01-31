@@ -2,7 +2,7 @@
 title: Microsoft Defender Antivirus export device antivirus health details API methods and properties
 description: "Learn how to export a list of Microsoft Defender Antivirus device health details." 
 keywords: apis, graph api, supported apis, get, device health api, Microsoft Defender for Endpoint report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender report api 
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy 
 ms.sitesec: library 
 ms.pagetype: security 
@@ -17,7 +17,7 @@ ms.collection:
  - must-keep
  - tier3
 ms.topic: reference 
-ms.subservice: mde 
+ms.subservice: reference
 ms.custom: api 
 search.appverid: met150
 ---

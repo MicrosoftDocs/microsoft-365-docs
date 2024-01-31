@@ -4,7 +4,7 @@ description: Download these PDF posters to learn about scenarios you can easily 
 search.appverid: MET150
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -53,4 +53,4 @@ Use the following poster to start envisioning what your organization can do with
 
 ## See also
 
-[Microsoft 365 productivity illustrations](/microsoft-365/solutions/productivity-illustrations.md)
+[Microsoft 365 productivity illustrations](/microsoft-365/solutions/productivity-illustrations)

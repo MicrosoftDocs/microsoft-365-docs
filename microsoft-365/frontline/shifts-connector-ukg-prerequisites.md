@@ -1,8 +1,8 @@
 ---
-title: Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management (Preview)
+title: Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: imarquesgil
 ms.topic: how-to
 audience: admin
@@ -20,11 +20,11 @@ appliesto:
 ms.date: 10/31/2023
 ---
 
-# Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management (Preview)
+# Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management
 
 ## Overview
 
-The [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) (Preview) enables you to integrate the Shifts app in Microsoft Teams with your UKG Pro Workforce Management (UKG Pro WFM) system. Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
+The [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) enables you to integrate the Shifts app in Microsoft Teams with your UKG Pro Workforce Management (UKG Pro WFM) system. Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
 
 You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center or by using PowerShell.
 

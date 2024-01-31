@@ -1,9 +1,9 @@
 ---
 title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 11/07/2023
+ms.date: 12/06/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -11,7 +11,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska, tudobril
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
@@ -27,14 +27,6 @@ search.appverid: met150
 
 **Platforms**
 - Windows
-
-
-> [!NOTE]
-> You can use RSS to be notified when this page is updated. To get notified when this page is updated, copy and paste the following URL into your RSS feed reader:
->
-> ```https
-> https://learn.microsoft.com/api/search/rss?search=%22Microsoft+Defender+Antivirus+security+intelligence+and+product+updates%22&locale=en-us
-> ```
 
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). This article includes information about the two types of updates for keeping Microsoft Defender Antivirus current:
 
@@ -88,7 +80,8 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 
 - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
-- If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The `mde-urls` workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
+- If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx
+)**, and then select the **Microsoft Defender Processes** worksheet. The `mde-urls` workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
 
 - Platform updates can be temporarily postponed if other protection features (such as [Endpoint DLP](../../compliance/endpoint-dlp-getting-started.md) or [Device Control](device-control-report.md)) are actively monitoring running processes. Platform updates are retried after a reboot or when all monitored services are stopped.
 
@@ -102,7 +95,33 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
-### October-2023 (Platform: Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
+### November-2023 (Platform: 4.18.23110.3 | Engine: 1.1.23110.2)
+
+- Security intelligence update version: **1.403.7.0** 
+- Release date: **December 5, 2023 (Platform)** / **December 6, 2023 (Engine)**
+- Platform: **4.18.23110.3** 
+- Engine: **1.1.23110.2**
+- Support phase: **Security and Critical Updates** 
+
+#### What's new 
+
+- Fixed PowerShell cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to show the correct date/time for `AntivirusSignatureLastUpdated`
+- Resolved deadock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
+- Added the `InitializationProgress` field to [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) output 
+- Fixed installation failure on Windows Server 2016 due to existing Defender EventLog registry key 
+- Added the ability to have [quick scans](schedule-antivirus-scans.md) ignore Microsoft Defender Antivirus exclusions 
+- Fixed remediation for long running [on-demand scans](run-scan-microsoft-defender-antivirus.md) where the service may have been restarted 
+- Fixed an issue with Microsoft Defender Vulnerability Management to allow the execution of a [blocked application](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps) when the [warn option](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps#block-or-warn-mitigation-action) is selected 
+- Added support for managing schedule day/time for [signature updates in Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows#updates) and [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) 
+- Fixed non-standard signature path loading across platforms ([Windows](microsoft-defender-antivirus-windows.md), [Mac](microsoft-defender-endpoint-mac.md), [Linux](microsoft-defender-endpoint-linux.md), [Android](microsoft-defender-endpoint-android.md), and [iOS](microsoft-defender-endpoint-ios.md)) 
+- Improved handling of cached detections in [attack surface reduction](overview-attack-surface-reduction.md) capabilities 
+- Improved performance for enumerating virtual memory ranges 
+
+#### Known issues
+
+- None
+
+### October-2023 (Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
 
 - Security intelligence update version: **1.401.3.0**
 - Release date:  **November 3, 2023 (Engine) / November 6, 2023 (Platform)**
@@ -147,29 +166,6 @@ All our updates contain
 #### Known issues
 
 - None
-
-### August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
-
-- Security intelligence update version: **1.397.59.0**
-- Released:  **August 30, 2023 (Platform and Engine)**
-- Platform: **4.18.23080.2006**
-- Engine: **1.1.23080.2005**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Fixed an issue where Microsoft Defender Antivirus switched from [passive mode to active mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) following an update on Windows Server 2016 and Windows Server 2012 R2 [onboarded using the modern, unified client](configure-server-endpoints.md)
-- Fixed an issue where [exclusions](defender-endpoint-antivirus-exclusions.md) weren't applied correctly using [gpupdate](/windows-server/administration/windows-commands/gpupdate) when registry policy processing was set to process even if Group Policy Objects didn't change
-- Excluded IP addresses can now be configured using [Intune](/windows/client-management/mdm/defender-csp#configurationexcludedipaddresses)
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on Windows Server 2016
-- [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
-- Fixed an issue where [device control](device-control-removable-storage-protection.md) policies weren't applied correctly without a reboot following product updates
-- Fixed an issue in the attack surface reduction rule, [Block Win32 API calls from Office macros](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros), configured in warn mode where excluded files were incorrectly blocked until the next device reboot
-
-#### Known issues
-
-- None
-
 
 ### Previous version updates: Technical upgrade support only
 

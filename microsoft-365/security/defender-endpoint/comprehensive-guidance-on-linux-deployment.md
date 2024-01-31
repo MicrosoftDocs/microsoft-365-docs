@@ -1,7 +1,7 @@
 ---
 title: Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
 description: Learn how to deploy Defender for Endpoint on Linux and address issues such as high cpu utilization
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -12,9 +12,9 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
-ms.date: 09/05/2023
+ms.date: 11/29/2023
 ---
 
 # Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
@@ -39,52 +39,52 @@ To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, se
 
 Learn about the general guidance on a typical Microsoft Defender for Endpoint on Linux deployment. The applicability of some steps is determined by the requirements of your Linux environment.
 
-[1. Work with your Firewall, Proxy, and Networking admin.](#1-work-with-your-firewall-proxy-and-networking-admin)
+1. [Work with your Firewall, Proxy, and Networking admin](#1-work-with-your-firewall-proxy-and-networking-admin).
 
-[2. Capture performance data from the endpoint.](#2-capture-performance-data-from-the-endpoint)
+2. [Capture performance data from the endpoint](#2-capture-performance-data-from-the-endpoint).
 
-> [!NOTE]
-> Consider doing the following optional items, even though they are not Microsoft Defender for Endpoint specific, they tend to improve performance in Linux systems.
+   > [!NOTE]
+   > Consider doing the following optional items, even though they are not Microsoft Defender for Endpoint specific, they tend to improve performance in Linux systems.
 
-[3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk).](#3-optional-check-for-filesystem-errors-fsck-akin-to-chkdsk)
+3. [(Optional) Check for filesystem errors 'fsck' (akin to chkdsk)](#3-optional-check-for-filesystem-errors-fsck-akin-to-chkdsk).
 
-[4. (Optional) Update storage subsystem drivers.](#4-optional-update-storage-subsystem-drivers)
+4. [(Optional) Update storage subsystem drivers](#4-optional-update-storage-subsystem-drivers).
 
-[5. (Optional) Update nic drivers.](#5-optional-update-nic-drivers)
+5. [(Optional) Update nic drivers](#5-optional-update-nic-drivers).
 
-[6. Confirm system requirements and resource recommendations are met.](#6-confirm-system-requirements-and-resource-recommendations-are-met)
+6. [Confirm system requirements and resource recommendations are met](#6-confirm-system-requirements-and-resource-recommendations-are-met).
 
-[7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus.](#7-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus)
+7. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#7-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
 
-[8. Keep the following points about exclusions in mind.](#8-keep-the-following-points-about-exclusions-in-mind)
+8. [Review important points about exclusions](#8-keep-the-following-points-about-exclusions-in-mind).
 
-[9. Create Device Groups.](#9-create-device-groups)
+9. [Create Device Groups](#9-create-device-groups).
 
-[10. Configure Microsoft Defender for Endpoint on Linux antimalware settings.](#10-configure-microsoft-defender-for-endpoint-on-linux-antimalware-settings)
+10. [Configure Microsoft Defender for Endpoint on Linux antimalware settings](#10-configure-microsoft-defender-for-endpoint-on-linux-antimalware-settings).
 
-[11. Download the Microsoft Defender for Endpoint on Linux onboarding package from the Microsoft Defender portal.](#11-download-the-microsoft-defender-for-endpoint-on-linux-onboarding-package)
+11. [Download the Microsoft Defender for Endpoint on Linux onboarding package from the Microsoft Defender portal](#11-download-the-microsoft-defender-for-endpoint-on-linux-onboarding-package).
 
-[12. Use Ansible, Puppet, or Chef to manage Microsoft Defender for Endpoint on Linux](#12-ansible-puppet-and-chef-examples-to-manage-microsoft-defender-for-endpoint-on-linux)
+12. [Use Ansible, Puppet, or Chef to manage Microsoft Defender for Endpoint on Linux](#12-ansible-puppet-and-chef-examples-to-manage-microsoft-defender-for-endpoint-on-linux).
 
-[13. Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.](#13-troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux)
+13. [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](#13-troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux).
 
-[14. Check resource utilization statistics and report on pre-deployment utilization compared to post-deployment.](#14-check-resource-utilization-statistics)
+14. [Check resource utilization statistics and report on predeployment utilization compared to post-deployment](#14-check-resource-utilization-statistics).
 
-[15. Verify communication with Microsoft Defender for Endpoint backend.](#15-verify-communication-with-microsoft-defender-for-endpoint-backend)
+15. [Verify communication with Microsoft Defender for Endpoint backend](#15-verify-communication-with-microsoft-defender-for-endpoint-backend).
 
-[16. Investigate agent health issues.](#16-investigate-agent-health-issues)
+16. [Investigate agent health issues](#16-investigate-agent-health-issues).
 
-[17. Verify that you're able to get "Platform Updates" (agent updates).](#17-verify-that-youre-able-to-get-platform-updates-agent-updates)
+17. [Verify that you're able to get "Platform Updates" (agent updates)](#17-verify-that-youre-able-to-get-platform-updates-agent-updates).
 
-[18. Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates).](#18-verify-that-youre-able-to-get-security-intelligence-updates-signaturesdefinition-updates)
+18. [Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates)](#18-verify-that-youre-able-to-get-security-intelligence-updates-signaturesdefinition-updates).
 
-[19. Test detections.](#19-test-detections)
+19. [Test detections](#19-test-detections).
 
-[20. Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux.](#20-troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux)
+20. [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](#20-troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux).
 
-[21. Troubleshooting High CPU utilization by ISVs, Linux apps, or scripts.](#21-troubleshoot-high-cpu-utilization-by-isvs-linux-apps-or-scripts)
+21. [Troubleshooting High CPU utilization by ISVs, Linux apps, or scripts](#21-troubleshoot-high-cpu-utilization-by-isvs-linux-apps-or-scripts).
 
-[22. Uninstall your non-Microsoft solution.](#22-uninstall-your-non-microsoft-solution)
+22. [Uninstall your non-Microsoft solution](#22-uninstall-your-non-microsoft-solution).
 
 ## 1. Work with your Firewall, Proxy, and Networking admin
 
@@ -97,12 +97,15 @@ For more information, see, [Troubleshoot cloud connectivity issues](#troubleshoo
 Use the following steps to check the network connectivity of Microsoft Defender for Endpoint:
 
 1. See [Allow URLs for the Microsoft Defender for Endpoint traffic](#step-1-allow-urls-for-the-microsoft-defender-for-endpoint-traffic) that are allowed for the Microsoft Defender for Endpoint traffic.
+
 2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#step-2-set-up-proxy-settings).
+
 3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection isn't being performed on the network traffic](#step-3-verify-ssl-inspection-isnt-being-performed-on-the-network-traffic).
 
 #### Step 1: Allow URLs for the Microsoft Defender for Endpoint traffic
 
-1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx) or the [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) for a list of services and their associated URLs that your network must be able to connect.
+1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx
+) or the [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx) for a list of services and their associated URLs that your network must be able to connect.
 
 2. Under **Geography** column, ensure the following checkboxes are selected:
     - EU, or UK, or US
@@ -162,7 +165,7 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
 |Resource|Recommendation|
 |---|---|
-|Disk space |Minimum: 2 GB <br> NOTE: An additional 2-GB disk space might be needed if cloud diagnostics are enabled for crash collections. |
+|Disk space |Minimum: 2 GB <br> NOTE: More disk space might be needed if cloud diagnostics are enabled for crash collections. |
 |RAM |1 GB<br> 4 GB is preferred|
 |CPU |If the Linux system is running only 1 vcpu, we recommend it be increased to 2 vcpu's<br> 4 cores are preferred |
 
@@ -178,15 +181,15 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 > [!TIP]
 > To get help configuring exclusions, refer to your solution provider's documentation.
 
-- Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft antimalware product depends on the implementation details of that product. If the other antimalware product leverages fanotify, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents.
+- Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft antimalware product depends on the implementation details of that product. If the other antimalware product uses fanotify, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents.
 
 - To check if there's a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
 
   :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result":::
 
-  Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft antimalware.
+  Under "conflicting_applications", if you see a result other than "unavailable", uninstall the non-Microsoft antimalware.
 
-- If you don't uninstall the non-Microsoft antimalware product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
+- If you don't uninstall the non-Microsoft antimalware product, you might encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
 
 - To identify the Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft antimalware product, run `systemctl status -l mdatp`.
 
@@ -209,8 +212,8 @@ When you add [exclusions to Microsoft Defender Antivirus scans](/windows/securit
 
 > [!NOTE]
 >
-> - AV exclusions apply to the AV engine.
-> - Indicators allow/block apply to the AV engine.
+> - Antivirus exclusions apply to the antivirus engine.
+> - Indicators allow/block apply to the antivirus engine.
 
 Keep the following points in mind:
 
@@ -236,13 +239,11 @@ Set up your device groups, device collections, and organizational units Device g
 
 **Before you begin**:
 
-- If you're already using a non-Microsoft antimalware product for your Linux servers:
-  - Consider that you may need to copy the existing exclusions to Microsoft Defender for Endpoint on Linux.
+- If you're already using a non-Microsoft antimalware product for your Linux servers, consider that you might have to copy the existing exclusions to Microsoft Defender for Endpoint on Linux.
 
-- If you're not using a non-Microsoft antimalware product for your Linux servers:
-  - Get a list of all your Linux applications and check the vendors website for exclusions.
+- If you're not using a non-Microsoft antimalware product for your Linux servers, get a list of all your Linux applications and check the vendors website for exclusions.
 
-- If you're running a non-Microsoft antimalware product, add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, check the non-Microsoft antimalware documentation or contact their support.
+- If you're running a non-Microsoft antimalware product, add the processes/paths to the Microsoft Defender for Endpoint's antivirus exclusion list. For more information, check the non-Microsoft antimalware documentation or contact their support.
 
 - If you're testing on one machine, you can use a command line to set up the exclusions:
   - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
@@ -569,8 +570,8 @@ The following table lists the processes that may cause a high CPU usage:
 
 |Process name|Component used|MDE engine used|
 |---|---|---|
-|wdavdaemon|FANotify| AV & EDR|
-|wdavdaemon unprivileged||AV engine|
+|wdavdaemon|FANotify| Antivirus & EDR|
+|wdavdaemon unprivileged||Antivirus engine|
 |wdavdaemon edr||EDR engine|
 |mdatp_audisp_plugin|audit framework (auditd)|Audit log ingestion|
 
@@ -584,8 +585,8 @@ Use the following table to troubleshoot high CPU utilization:
 
 |Process name|Component used|Microsoft Defender for Endpoint engine used| Steps |
 |---|---|---|---|
-|wdavdaemon|FANotify | AV & EDR|- Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md). <br/><br/> - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).<br/><br/> - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
-|wdavdaemon unprivileged|N/A|AV engine| The following diagram shows the workflow and steps required in order to add AV exclusions. <br/><br/> :::image type="content" source="images/unprivileged-plugins.png" alt-text="Screenshot that shows This is unprivileged sensors." lightbox="images/unprivileged-plugins.png"::: <br/><br/>**General troubleshooting guidance**<br/> - If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they're threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the unified submissions experience (for more information, see [Unified submissions experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)) or [File submissions](https://www.microsoft.com/wdsi/filesubmission). <br/><br/> - See [troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).<br/><br/> - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md). <br/><br/> - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).<br/><br/> - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
+|wdavdaemon|FANotify | Antivirus & EDR|- Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md). <br/><br/> - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).<br/><br/> - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
+|wdavdaemon unprivileged|N/A|Antivirus engine| The following diagram shows the workflow and steps required in order to add Antivirus exclusions. <br/><br/> :::image type="content" source="images/unprivileged-plugins.png" alt-text="Screenshot that shows This is unprivileged sensors." lightbox="images/unprivileged-plugins.png"::: <br/><br/>**General troubleshooting guidance**<br/> - If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they're threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the unified submissions experience (for more information, see [Unified submissions experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)) or [File submissions](https://www.microsoft.com/wdsi/filesubmission). <br/><br/> - See [troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).<br/><br/> - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md). <br/><br/> - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).<br/><br/> - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
 |wdavdaemon edr| N/A |EDR engine|The following diagram shows the workflow and steps to troubleshoot wdavedaemon_edr process issues. <br/><br/> :::image type="content" source="images/wdavdaemon_edr_engine.png" alt-text="Image of troubleshooting wdavdaemon edr process." lightbox="images/wdavdaemon_edr_engine.png"::: <br/><br/>**General troubleshooting guidance**<br/>- If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they're threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the unified submissions experience (for more information, see [Unified submissions experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)) or [File submissions](https://www.microsoft.com/wdsi/filesubmission). <br/><br/> - See [troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).<br/><br/> - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md). <br/><br/> - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).<br/><br/> - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
 |mdatp_audisp_plugin|Audit framework|Audit log ingestion| See [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
 
@@ -613,8 +614,7 @@ Then your next step is to uninstall your non-Microsoft antivirus, antimalware, a
 
 - [Enhanced antimalware engine capabilities on Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
 
-- Boost protection of your Linux estate with behavior monitoring capabilities:
-  - [Boost protection of Linux estate with behavior monitoring](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)
+- [Boost protection of Linux estate with behavior monitoring](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)
 
   > [!NOTE]
   > The behavior monitoring functionality complements existing strong content-based capabilities, however you should carefully evaluate this feature in your environment before deploying it broadly since enabling behavioral monitoring consumes more resources and may cause performance issues.
@@ -632,4 +632,5 @@ Then your next step is to uninstall your non-Microsoft antivirus, antimalware, a
 - [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
 
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

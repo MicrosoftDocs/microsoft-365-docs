@@ -1,15 +1,11 @@
 ---
 title: Contextual file and folder exclusions
 description: Describes the contextual file and folder exclusions capability for Microsoft Defender Antivirus on Windows. This capability allows you to be more specific when you define under which context Microsoft Defender Antivirus shouldn't scan a file or folder, by applying restrictions
-keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 author: Dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/25/2022
+ms.date: 12/07/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -17,7 +13,7 @@ ms.collection:
 - tier2
 - mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ---
 
@@ -84,6 +80,10 @@ The following string excludes "c:\documents\design.doc" only if it's scanned (on
 
 `c:\documents\design.doc\:{Process:"winword.exe"}`
 
+File and folder paths may contain wildcards, as in the following example:
+
+`c:\*\*.doc\:{PathType:file,ScanTrigger:OnDemand}`
+
 The process image path may contain wildcards, as in the following example:
 
 `c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
@@ -96,11 +96,14 @@ You can restrict exclusions to only apply if the target is a file or a folder by
 
 If you don't specify any other options, the file/folder is excluded from all types of scans, _and_ the exclusion applies regardless of whether the target is a file or a folder. For more information about customizing exclusions to only apply to a specific scan type, see [Scan type restriction](#scan-type-restriction).
 
+> [!NOTE]  
+> Wildcards are supported in file/folder exclusions.
+
 #### Folders
 
 To ensure an exclusion only applies if the target is a folder, not a file you can use the **PathType:folder** restriction. For example:
 
-`C:\documents\:{PathType:folder}`
+`C:\documents\*\:{PathType:folder}`
 
 #### Files
 
@@ -108,7 +111,7 @@ To make sure an exclusion only applies if the target is a file, not a folder you
 
 Example:
 
-`C:\documents\database.mdb\:{PathType:file}`
+`C:\documents\*.mdb\:{PathType:file}`
 
 ### Scan type restriction
 
@@ -146,16 +149,15 @@ To exclude a file or folder and its contents from being scanned only when the fi
 
 ### Process restriction
 
-This restriction allows you to define that an exclusion should only apply when a file or folder is being accessed by a specific process. A common scenario is when you want to avoid excluding the process as that avoidance would cause Defender Antivirus to ignore other operations by that process.
+This restriction allows you to define that an exclusion should only apply when a file or folder is being accessed by a specific process. A common scenario is when you want to avoid excluding the process as that avoidance would cause Defender Antivirus to ignore other operations by that process. Wildcards are supported in the process name/path.
 
 > [!NOTE]  
 >
-> Using a large amount of process exclusion restrictions on a machine may adversely affect performance.  
-> In addition, because you restricted the exclusion to a certain process or processes, other active processes (such as indexing, backup, updates) can still trigger file scans.
+> Using a large amount of process exclusion restrictions on a machine can adversely affect performance. In addition, if an exclusion is restricted to a certain process or processes, other active processes (such as indexing, backup, updates) can still trigger file scans.
 
-To exclude a file or folder only when accessed by a specific process, create a normal file or folder exclusion and add the process to restrict the exclusion to:  
+To exclude a file or folder only when accessed by a specific process, create a normal file or folder exclusion and add the process to restrict the exclusion to. For example:  
 
-`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe"}`
+`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe", Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
 
 ### How to configure
 

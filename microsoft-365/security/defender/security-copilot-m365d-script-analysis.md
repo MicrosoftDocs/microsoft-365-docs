@@ -1,7 +1,7 @@
 ---
 title: Analyze scripts and codes with Security Copilot in Microsoft Defender XDR
 description: Use Security Copilot script analysis embedded in Microsoft Defender XDR to investigate scripts and codes.
-keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, powershell, powershell analysis, bash, batch, bash analysis, batch analysis, code analysis, code analyzer
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, powershell, powershell analysis, bash, batch, bash analysis, batch analysis, code analysis, code analyzer
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +25,7 @@ ms.date: 10/10/2023
 
 # Analyze scripts and codes with Microsoft Security Copilot in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -51,7 +51,7 @@ This guide describes what the script analysis capability is and how it works, in
 
 ## Analyze a script or code
 
-You can access the script analysis capability in the alert timeline within an incident and in the [device timeline](/defender-endpoint/device-timeline-event-flag.md).
+You can access the script analysis capability in the alert timeline within an incident and in the [device timeline](/microsoft-365/security/defender-endpoint/device-timeline-event-flag).
 
 To begin analysis, perform the following steps:
 
@@ -81,4 +81,4 @@ You can validate or report the script analysis results provided by Security Copi
 - [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
 - [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

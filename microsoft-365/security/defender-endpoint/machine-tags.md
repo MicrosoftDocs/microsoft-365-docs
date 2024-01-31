@@ -2,12 +2,12 @@
 title: Create and manage device tags
 description: Use device tags to group devices to capture context and enable dynamic list creation as part of an incident
 keywords: tags, device tags, device groups, groups, remediation, level, rules, aad group, role, assign, rank
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -16,14 +16,14 @@ ms.collection:
 - tier2
 ms.topic: reference
 ms.custom: api
-ms.subservice: mde
+ms.subservice: reference
 search.appverid: met150
 ms.date: 02/27/2023
 ---
 
 # Create and manage device tags
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 

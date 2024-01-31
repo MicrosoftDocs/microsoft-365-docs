@@ -1,7 +1,7 @@
 ---
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.date: 10/17/2023 
 ms.topic: include
 audience: admin

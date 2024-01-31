@@ -43,7 +43,7 @@ You also need the following information:
 
 - You need the customer's **TenantId**.
 
-- The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publically register a domain name, see [How to buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md).
+- The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publicly register a domain name, see [How to buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md).
 
 - You need to know how to add a TXT record to the registered DNS zone for your DNS registrar. For more information on how to add a TXT record, see [Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). If those procedures don't work for you, you will need to find the procedures for your DNS registrar.
 

@@ -2,7 +2,7 @@
 title: Create indicators for IPs and URLs/domains
 ms.reviewer: thdoucet
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -20,7 +20,7 @@ ms.date: 10/06/2023
 
 # Create indicators for IPs and URLs/domains
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -77,7 +77,7 @@ The _Antimalware client version_ must be 4.18.1906.x or later.
 
 ### Custom network indicators requirements
 
-Ensure that **Custom network indicators** is enabled in **Microsoft 365 Defender** \> **Settings** \> **Advanced features**. For more information, see [Advanced features](advanced-features.md).
+Ensure that **Custom network indicators** is enabled in **Microsoft Defender XDR** \> **Settings** \> **Advanced features**. For more information, see [Advanced features](advanced-features.md).
 
 For support of indicators on iOS, see [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 

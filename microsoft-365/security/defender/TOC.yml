@@ -152,6 +152,8 @@
             href: ../defender-identity/notifications.md
       - name: Protect your Office 365 workloads
         href: ../office-365-security/index.yml
+      - name: Create Custom Defender XDR reports
+        href: defender-xdr-custom-reports.md
     - name: Investigate and respond to threats
       items: 
        - name: Overview
@@ -221,7 +223,7 @@
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
-                href: /security/compass/incident-response-playbooks
+                href: /security/operations/incident-response-playbooks
               - name: Investigate domains and URLs associated with Microsoft Defender XDR
                 href: ../defender-endpoint/investigate-domain.md
        - name: Manage automated investigation and response
@@ -269,7 +271,7 @@
                  - name: Refine your query in guided mode
                    href: advanced-hunting-query-builder-details.md
                  - name: Work with query results in guided mode
-                   href: advanced-hunting-query-builder-results.md                   
+                   href: advanced-hunting-query-builder-results.md                                   
              - name: Create queries using advanced mode
                items:
                  - name: Learn, train, & get examples
@@ -287,9 +289,7 @@
                      - name: Advanced hunting example
                        href: advanced-hunting-example.md
                      - name: Transition from Defender for Endpoint 
-                       href: advanced-hunting-migrate-from-mde.md                
-                 - name: Work with query results
-                   href: advanced-hunting-query-results.md
+                       href: advanced-hunting-migrate-from-mde.md 
                  - name: Quickly investigate with go hunt
                    href: advanced-hunting-go-hunt.md
                  - name: Create custom functions 
@@ -310,6 +310,10 @@
                       href: advanced-hunting-best-practices.md
                     - name: Handle errors
                       href: advanced-hunting-errors.md
+             - name: Work with query results
+               href: advanced-hunting-query-results.md
+             - name: Rerun query in query history
+               href: advanced-hunting-query-history.md                       
              - name: Data schema
                items: 
                 - name: Understand the schema
@@ -434,6 +438,8 @@
                 href: get-started-xdr.md
               - name: Start using Microsoft Defender Experts for XDR service
                 href: start-using-mdex-xdr.md
+              - name: Communicate with Defender Experts
+                href: communicate-defender-experts-xdr.md
               - name: Auditing
                 href: auditing.md
               - name: Additional information

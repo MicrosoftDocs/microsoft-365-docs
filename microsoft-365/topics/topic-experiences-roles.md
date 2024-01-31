@@ -1,10 +1,10 @@
 ---
 ms.date: 07/13/2023
 title: Roles in Topics
-ms.author: daisyfeller
+ms.author: cjtan
 author: daisyfell
-manager: pamgreen
-ms.reviewer: cjtan
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:

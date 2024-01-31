@@ -22,7 +22,7 @@ ms.date: 11/14/2023
 
 # Investigate data loss prevention alerts with Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -64,7 +64,6 @@ It's best practice to only grant minimal permissions to alerts in the Microsoft 
 |DLP Compliance Management     |DLP only         |
 |View-Only DLP Compliance Management     |DLP only         |
 
-
 ## Before you start
 
 [Turn on alerts for all your DLP policies](/purview/dlp-create-deploy-policy) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
@@ -78,8 +77,8 @@ It's best practice to only grant minimal permissions to alerts in the Microsoft 
 
 1. Go to the Microsoft Defender portal, and select **Incidents** in the left hand navigation menu to open the incidents page.
 
-2. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts. Here's a few examples of the subfilters that are available in preview:
-    1. by user and device names    
+1. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts. Here's a few examples of the subfilters that are available in preview:
+    1. by user and device names
     1. (in preview) In the **Entities** filter, you can search on file names, user, device names, and file paths.
     1. (in preview) In the **Incidents** queue > **Alert policies** > Alert policy title. You can search on the DLP policy name.
 
@@ -99,9 +98,9 @@ The **CloudAppEvents** table contains all audit logs across all locations like S
 
 #### Before you begin
 
-If you're new to advanced hunting, you should review [Get started with advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview.md).
+If you're new to advanced hunting, you should review [Get started with advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview).
 
-Before you can use advance hunting you must have [access to the **CloudAppEvents** table](/defender-cloud-apps/connect-office-365.md) that contains the Microsoft Purview data.
+Before you can use advance hunting you must have [access to the **CloudAppEvents** table](/defender-cloud-apps/protect-office-365#connect-microsoft-365-to-microsoft-defender-for-cloud-apps) that contains the Microsoft Purview data.
 
 #### Using built in queries
 
@@ -114,7 +113,7 @@ The Defender portal offers multiple built-in queries you can use to help with yo
 1. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts.
 1. Open a DLP incident.
 1. Select on an alert to view its associated events.
-1. Select an event. 
+1. Select an event.
 1. In the event details pane, select the **Go Hunt** control.
     1. Defender shows you a list of built-in queries that are relevant to the source location of the event. For example, if the event is from SharePoint you see
         1. **File shared with**
@@ -146,4 +145,4 @@ Go to the incident summary page and select **Manage Incident** to add incident t
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

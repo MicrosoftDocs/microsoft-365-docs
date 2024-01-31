@@ -2,7 +2,7 @@
 title: Production ring deployment using Group Policy and Microsoft Update (MU)
 description: Microsoft Defender Antivirus is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides information about how to use a ring deployment method to update your Microsoft Defender Antivirus clients using Group Policy and Microsoft Update (MU).
 keywords: Deploy Microsoft Defender Antivirus updates, ring deployment Microsoft Defender Antivirus, Microsoft Defender Antivirus Group Policy, Microsoft Defender Antivirus Microsoft Update (MU), Microsoft Defender Antivirus Group Policy and Microsoft Update, threat intelligence, cybersecurity, cloud security,
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,14 +17,14 @@ ms.collection:
 - mde-ngp
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 07/21/2023
 ---
 
 # Microsoft Defender Antivirus production ring deployment using Group Policy and Microsoft Updates
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -43,8 +43,6 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
->
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
 
 ## Prerequisites
 
@@ -56,7 +54,7 @@ Download the latest Windows Defender .admx and .adml
 - [WindowsDefender.admx](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.admx) 
 - [WindowsDefender.adml](https://github.com/microsoft/defender-updatecontrols/blob/main/WindowsDefender.adml)
 
-2)	Copy the latest .admx and .adml to the Domain Controller [Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store#the-central-store).
+Copy the latest .admx and .adml to the Domain Controller [Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store#the-central-store).
 
 ## Setting up the Pilot (UAT/Test/QA) environment
 
@@ -65,12 +63,12 @@ This section describes the process for setting up the pilot UAT / Test / QA envi
 :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-mu-schedule.png" alt-text="Screenshot that shows an example schedule for Microsoft Defender Antivirus ring deployments in Group Policy and Microsoft Updates environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-mu-schedule.png":::
 
 > [!NOTE]
-> Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
+> Security intelligence update (SIU) is equivalent to signature updates, which is the same as definition updates.
 
  On about 10-500 Windows and/or Windows Server systems, depending on how many total systems that you all have, perform the following tasks.
  
  > [!NOTE]
- > If you have a Citrix enviroment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
+ > If you have a Citrix environment, include at least 1 Citrix VM (non-persistent) and/or (persistent)
 
 In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265969(v=ws.11)) (GPMC, GPMC.msc), create or append to your Microsoft Defender Antivirus  policy.
 

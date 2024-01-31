@@ -2,7 +2,7 @@
 title: Schedule Microsoft Defender Antivirus protection updates
 description: Schedule the day, time, and interval for when protection updates should be downloaded
 keywords: updates, security baselines, schedule updates
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,7 +15,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2

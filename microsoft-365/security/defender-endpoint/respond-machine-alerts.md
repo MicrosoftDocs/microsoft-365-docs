@@ -1,15 +1,11 @@
 ---
 title: Take response actions on a device in Microsoft Defender for Endpoint
 description: Take response actions on a device such as isolating devices, collecting an investigation package, managing tags, running an av scan, and restricting app execution.
-keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 05/29/2023
+ms.date: 12/15/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,17 +13,17 @@ ms.collection:
 - tier2
 - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 
 # Take response actions on a device
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plans 1 and 2](defender-endpoint-plan-1-2.md)
+- [Microsoft Defender for Endpoint Plans 1 and 2](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
 [!INCLUDE [Prerelease information](../../includes/prerelease.md)]
@@ -68,10 +64,7 @@ Response actions run along the top of a specific device page and include:
 - **Search box** - Select Device from the drop-down menu and enter the device name.
 
 > [!IMPORTANT]
->
-> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022.
-> - For non-Windows platforms, response capabilities (such as isolate device) are dependent on the third-party capabilities.
-> - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
+> For information on availability and support for each response action, please refer to the supported/minimum operating system requirements found under each feature.
 
 ## Manage tags
 
@@ -114,21 +107,21 @@ Alternate steps:
 
     ![Image of collect investigation package](images/collect-investigation-package.png)
    
-2. Add comments and select **Confirm**.
+1. Add comments and select **Confirm**.
 
     ![Image of confirm comment](images/comments-confirm.png)
-
-3. Select **Action center** from the response actions section of the device page.
+   
+1. Select **Action center** from the response actions section of the device page.
 
     ![Image of action center](images/action-center-selected.png)
-
-4. Click the **Package collection package available** to download the collection package.
+   
+1. Click the **Package collection package available** to download the collection package.
 
     ![Image of download package](images/download-package.png)
+   
+   For Windows devices, the package contains the following folders:
 
-For Windows devices, the package contains the following folders:
-
-|Folder|Description|
+   |Folder|Description|
 |---|---|
 |Autoruns|Contains a set of files that each represent the content of the registry of a known auto start entry point (ASEP) to help identify attacker's persistency on the device. <p> <div class="alert"><b>NOTE:</b> If the registry key is not found, the file will contain the following message: "ERROR: The system was unable to find the specified registry key or value."<div>|
 |Installed programs|This .CSV file contains the list of installed programs that can help identify what is currently installed on the device. For more information, see [Win32_Product class](https://go.microsoft.com/fwlink/?linkid=841509).|
@@ -145,9 +138,9 @@ For Windows devices, the package contains the following folders:
 |WdSupportLogs|Provides the MpCmdRunLog.txt and MPSupportFiles.cab  <p> <div class="alert"><b>NOTE:</b> This folder will only be created on Windows 10, version 1709 or later with February 2020 update rollup or more recent installed: <ul><li>Win10 1709 (RS3) Build 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) Build 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) Build 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) Builds 18362.693 and 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
 
-The collection packages for macOS and Linux devices contain the following:
+   The collection packages for macOS and Linux devices contain the following:
 
-|Object|macOS|Linux|
+   |Object|macOS|Linux|
 |---|---|---|
 |Applications|A list of all installed applications|Not applicable|
 |Disk volume|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|
@@ -216,7 +209,7 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 >
 > - Isolating devices from the network is supported for macOS for client version 101.98.84 and above. You can also use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md) 
 > - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2.
-> - You can use the device isolation capability on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
+> - You can use the device isolation capability on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements). Ensure that the following prerequisites are enabled: iptables, ip6tables, and Linux kernel with CONFIG_NETFILTER, CONFID_IP_NF_IPTABLES, and CONFIG_IP_NF_MATCH_OWNER.
 > - Selective isolation is available for devices running Windows 10, version 1709 or later, and Windows 11.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 > - The feature supports VPN connection.
@@ -238,7 +231,7 @@ Once you have selected **Isolate device** on the device page, type a comment and
 :::image type="content" source="images/isolate-device.png" alt-text="An isolated device details page" lightbox="images/isolate-device.png":::
 
 > [!NOTE]
-> The device will remain connected to the Defender for Endpoint service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated.
+> The device will remain connected to the Defender for Endpoint service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated. Selective isolation only works on the classic versions of Outlook and Microsoft Teams.
 
 ### Forcibly release device from isolation
 
@@ -275,9 +268,6 @@ When a device is being isolated, the following notification is displayed to info
 > The notification is not available on non-Windows platforms.
 
 ## Contain devices from the network
-
-> [!NOTE]
-> Contain capabilities are currently in public preview. To learn about new features in the Microsoft Defender XDR preview release and be among the first to try upcoming features by turning on the preview experience, see [Preview features in Microsoft Defender XDR](../defender/preview.md).
 
 When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with that device. This action can help prevent neighboring devices from becoming compromised while the security operations analyst locates, identifies, and remediates the threat on the compromised device.
 
@@ -323,17 +313,14 @@ You'll be able to stop containing a device at any time.
 
 ## Contain user from the network
 
-> [!NOTE]
-> Contain user capability is currently available in public preview. To learn more about new preview features in Microsoft Defender XDR preview, see [Preview features in Microsoft Defender XDR](../defender/preview.md).
-
-When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can “contain” an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP) while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
+When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can "contain" an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP) while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
 
 > [!NOTE]
-> Blocking incoming communication with a “contained” user is supported on onboarded Microsoft Defender for Endpoint Windows 10 and 11 devices (Sense version 8740 and higher), Windows Server 2019+ devices, and Windows Servers 2012R2 and 2016 with the modern agent.
+> Blocking incoming communication with a "contained" user is supported on onboarded Microsoft Defender for Endpoint Windows 10 and 11 devices (Sense version 8740 and higher), Windows Server 2019+ devices, and Windows Servers 2012R2 and 2016 with the modern agent.
 
 ### How to contain a user
 
-Currently, containing users is only available automatically by using automatic attack disruption. When Microsoft detects a user as being compromised a “Contain User” policy is automatically set.
+Currently, containing users is only available automatically by using automatic attack disruption. When Microsoft detects a user as being compromised a "Contain User" policy is automatically set.
 
 ### View the contain user actions
 
@@ -341,7 +328,7 @@ After a user is contained, you can view the action in this History view of the A
 
 :::image type="content" source="../../media/defender-endpoint/user-contain-action-center.png" alt-text="View the user contain action in the action center" lightbox="../../media/defender-endpoint/user-contain-action-center.png":::
 
-Furthermore, after an identity is considered “contained", that user will be blocked by Defender for Endpoint and cannot perform any malicious lateral movement or remote encryption on or to any supported Defender for Endpoint onboarded device. These blocks will show up as alerts to help you quickly see the devices the compromised user attempted access and potential attack techniques:
+Furthermore, after an identity is considered "contained", that user will be blocked by Defender for Endpoint and cannot perform any malicious lateral movement or remote encryption on or to any supported Defender for Endpoint onboarded device. These blocks will show up as alerts to help you quickly see the devices the compromised user attempted access and potential attack techniques:
 
 :::image type="content" source="../../media/defender-endpoint/user-contain-lateral-move-block.png" alt-text="Shows a user contain lateral movement block event" lightbox="../../media/defender-endpoint/user-contain-lateral-move-block.png":::
 
@@ -352,7 +339,7 @@ You can release the blocks and containment on a user at any time:
 1. Select the **Contain User** action in the **Action Center**. In the side pane select **Undo**
 2. Select the user from either the user inventory, Incident page side pane or alert side pane and select **Undo**
 
-This action will restore this user’s connection to the network.
+This action will restore this user's connection to the network.
 
 :::image type="content" source="../../media/defender-endpoint/undo-user-contain-action.png" alt-text="Shows user contain undo option in the action center" lightbox="../../media/defender-endpoint/undo-user-contain-action.png":::
 
@@ -362,7 +349,7 @@ After a user is contained, you can investigate the potential threat by viewing t
 
 :::image type="content" source="../../media/defender-endpoint/event-blocked by-contained-user.png" alt-text="Shows blocked event details for a contained users" lightbox="../../media/defender-endpoint/event-blocked by-contained-user.png":::
 
-In addition, you can expand the investigation by using Advanced Hunting. Look for any “Action Type” starting with “Contain” in the “DeviceEvents” table. Then, you can view all the different singular blocking events in relation to Contain User in your tenant, dive deeper into the context of each block, and extract the different entities and techniques associated with those events.
+In addition, you can expand the investigation by using Advanced Hunting. Look for any "Action Type" starting with "Contain" in the "DeviceEvents" table. Then, you can view all the different singular blocking events in relation to Contain User in your tenant, dive deeper into the context of each block, and extract the different entities and techniques associated with those events.
 
 :::image type="content" source="../../media/defender-endpoint/user-contain-advanced-hunting.png" alt-text="Shows advanced hunting for user contain events" lightbox="../../media/defender-endpoint/user-contain-advanced-hunting.png":::
 
@@ -391,3 +378,4 @@ All other related details are also shown, for example, submission date/time, sub
 - [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
 - [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

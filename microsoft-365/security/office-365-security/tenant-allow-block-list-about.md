@@ -52,10 +52,10 @@ These articles contain procedures in the Microsoft Defender portal and in PowerS
 > [!NOTE]
 > In the Tenant Allow/Block List, block entries take precedence over allow entries.
 
-Use the **Submissions** page (also known as *admin submission*) at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a> to create block entries for the following types of items as you report them as false negatives to Microsoft:
+Use the **Submissions** page (also known as *admin submission*) at <https://security.microsoft.com/reportsubmission> to create block entries for the following types of items as you report them as false negatives to Microsoft:
 
 - **Domains and email addresses**:
-  - Email messages from these senders are marked as *phishing* and then moved to quarantine. 
+  - Email messages from these senders are marked as *high confidence phishing* and then moved to quarantine.
   - Users in the organization can't send email to these blocked domains and addresses. They receive the following non-delivery report (also known as an NDR or bounce message): `550 5.7.703 Your message can't be delivered because messages to XXX, YYY are blocked by your organization using Tenant Allow Block List.` The entire message is blocked for all internal and external recipients of the message, even if only one recipient email address or domain is defined in a block entry.
 
   > [!TIP]
@@ -77,17 +77,17 @@ By default, block entries for **domains and email addresses**, **files** and **U
 
 In most cases, you can't directly create allow entries in the Tenant Allow/Block List:
 
-- **Domains and email addresses**, **files**, and **URLs**: You can't create allow entries directly in the Tenant Allow/Block List. Instead you use the **Submissions** page at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a> to report the **email**, **email attachment**, or **URL** to Microsoft as **Should not have been blocked (False positive)**.
+- **Domains and email addresses**, **files**, and **URLs**: You can't create allow entries directly in the Tenant Allow/Block List. Instead you use the **Submissions** page at <https://security.microsoft.com/reportsubmission> to report the **email**, **email attachment**, or **URL** to Microsoft as **Should not have been blocked (False positive)**.
 
 - **Spoofed senders**:
-  - If spoof intelligence has already blocked the message as spoofing, use the **Submissions** page at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a> to report the **email** to Microsoft as **Should not have been blocked (False positive)**.
+  - If spoof intelligence has already blocked the message as spoofing, use the **Submissions** page at <https://security.microsoft.com/reportsubmission> to report the **email** to Microsoft as **Should not have been blocked (False positive)**.
   - You can proactively create an allow entry for a spoofed sender on the **Spoofed sender** tab in the Tenant Allow/Block List before [spoof intelligence](anti-spoofing-spoof-intelligence.md) identifies and blocks the message as spoofing.
 
 The following list describes what happens in the Tenant Allow/Block List when you report something to Microsoft as a false positive on the **Submissions** page:
 
 - **Email attachments** and **URLs**: An allow entry is created and the entry appears on the **Files** or **URLs** tab in the Tenant Allow/Block List respectively.
 
-   For URLs reported as false positives, we'll allow subsequent messages that contain variations of the original URL. For example, you use the **Submissions** page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `*.contoso.com/abc`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
+   For URLs reported as false positives, we'll allow subsequent messages that contain variations of the original URL. For example, you use the **Submissions** page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `www.contoso.com/abc/whatever`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
 
 - **Email**: If a message was blocked by the EOP or Defender for Office 365 filtering stack, an allow entry might be created in the Tenant Allow/Block List:
   - If the message was blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md), an allow entry for the sender is created, and the entry appears on the **Spoofed senders** tab in the Tenant Allow/Block List.
@@ -102,7 +102,7 @@ By default, allow entries for domains and email addresses, files, and URLs exist
 > [!IMPORTANT]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the creation of allow entries from the **Submissions** page at <a href="https://security.microsoft.com/reportsubmission" target="_blank">https://security.microsoft.com/reportsubmission</a>. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
+> Microsoft manages the creation of allow entries from the **Submissions** page at <https://security.microsoft.com/reportsubmission>. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
 >
 > When the entity is encountered again (during mail flow or time of click), all filters associated with that entity are skipped.
 >

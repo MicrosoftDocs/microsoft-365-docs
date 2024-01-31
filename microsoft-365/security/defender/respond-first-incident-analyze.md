@@ -28,27 +28,27 @@ ms.date: 08/21/2023
 
 # Analyze your first incident in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - Microsoft Defender XDR
 
-Understanding the context that surrounds [incidents](incidents-overview.md) is essential in analyzing attacks.  Combining your expertise and experience with Microsoft Defender XDR's features and capabilities ensure faster resolution of incidents and your organization’s safety from cyber attacks.
+Understanding the context that surrounds [incidents](incidents-overview.md) is essential in analyzing attacks.  Combining your expertise and experience with Microsoft Defender XDR's features and capabilities ensure faster resolution of incidents and your organization's safety from cyber attacks.
 
 Today's threats on data security - [business email compromise (BEC)](https://www.microsoft.com/security/business/security-101/what-is-business-email-compromise-bec), malware like backdoors and [ransomware](/security/ransomware), organizational breaches, and [nation-state attacks](https://www.microsoft.com/security/business/security-insider/) – require quick, intelligent, and decisive action from incident responders. Tools like [Microsoft Defender XDR](microsoft-365-defender.md) allow response teams to detect, triage, and investigate incidents through its single-pane-of-glass experience and find the information needed to make these timely decisions.
 
 ## Investigation tasks
 
-Investigations usually involve responders viewing several apps while simultaneously checking various threat intelligence sources. Sometimes investigations are extended to hunting down other threats. Documenting facts and solutions in an attack investigation is an additional important task that provides history and context for other investigators’ use or for later investigations. These investigation tasks are simplified when using Microsoft Defender XDR through the following:
+Investigations usually involve responders viewing several apps while simultaneously checking various threat intelligence sources. Sometimes investigations are extended to hunting down other threats. Documenting facts and solutions in an attack investigation is an additional important task that provides history and context for other investigators' use or for later investigations. These investigation tasks are simplified when using Microsoft Defender XDR through the following:
 
-- **Pivoting** – the portal aggregates important attack information contextualized across the Defender workloads enabled in your organization. The portal consolidates all information across a single attack’s components (file, URL, mailbox, a user account, or device), showing relationships and timeline of activities. With all the information available in a page, the portal allows incident responders to pivot across related entities and events to find the information they need to make decisions.
+- **Pivoting** – the portal aggregates important attack information contextualized across the Defender workloads enabled in your organization. The portal consolidates all information across a single attack's components (file, URL, mailbox, a user account, or device), showing relationships and timeline of activities. With all the information available in a page, the portal allows incident responders to pivot across related entities and events to find the information they need to make decisions.
 
 - **Hunting** – threat hunters can find known and possible threats within an organization through the portal's [advanced hunting](advanced-hunting-overview.md) capability using Kusto queries. If you're new to Kusto, use the [guided mode](advanced-hunting-modes.md) to hunt for threats.
 
-- **Insight** – where applicable, incident responders can view actions to previously detected event and alerts to aid present investigations. Additional insights are also automatically added to events and alerts through Microsoft’s own threat intelligence efforts and from sources like the [MITRE ATT&CK®](https://attack.mitre.org/) framework and [VirusTotal](https://www.virustotal.com/gui/home/upload).
+- **Insight** – where applicable, incident responders can view actions to previously detected event and alerts to aid present investigations. Additional insights are also automatically added to events and alerts through Microsoft's own threat intelligence efforts and from sources like the [MITRE ATT&CK®](https://attack.mitre.org/) framework and [VirusTotal](https://www.virustotal.com/gui/home/upload).
 
-- **Collaboration** – security operations teams can view each team members’ decisions and actions on past and present incidents and alerts through portal features like comments, tagging, flagging, and assignment. Further collaboration with Microsoft’s managed detection and response service through [Defender Experts for XDR](dex-xdr-overview.md) and [Defender Experts for Hunting](defender-experts-for-hunting.md) are also available when an organization requires an augmented response.
+- **Collaboration** – security operations teams can view each team members' decisions and actions on past and present incidents and alerts through portal features like comments, tagging, flagging, and assignment. Further collaboration with Microsoft's managed detection and response service through [Defender Experts for XDR](dex-xdr-overview.md) and [Defender Experts for Hunting](defender-experts-for-hunting.md) are also available when an organization requires an augmented response.
 
 ## Attack overview
 
@@ -65,7 +65,7 @@ Complex threats like [adversary-in-the-middle attacks](https://www.microsoft.com
 - Presence of malware or suspicious use of tools and apps
 - Clues about any communication channels or entry points used by any malicious or suspicious entity
 - Clues pointing to possible identity compromise
-- Identifying what the impact is on the organization’s data and security posture
+- Identifying what the impact is on the organization's data and security posture
 
 The following sections contain tutorials and videos of Microsoft Defender XDR features that aid incident response teams in investigating various complex attacks.
 
@@ -73,7 +73,7 @@ The following sections contain tutorials and videos of Microsoft Defender XDR fe
 
 Ransomware continues to be a significant threat to organizations. Microsoft has the following resources to help you investigate and respond to ransomware attacks:
 
-- **Guides**: [From detection to protection: Microsoft's guide to combating ransomware attacks](/security/ransowmare)
+- **Guides**: [From detection to protection: Microsoft's guide to combating ransomware attacks](/security/ransomware/)
 - **Tutorial**: [Ransomware investigation playbook](/security/operations/incident-response-playbook-dart-ransomware-approach)
 - **Video**: [Investigating ransomware attacks in Microsoft Defender XDR (part 1)](https://youtu.be/eLCrGe4-Zzc)
 - **Video**: [Investigating ransomware attacks in Microsoft Defender XDR (part 2)](https://youtu.be/q1s7lm3O9Sc)
@@ -82,9 +82,9 @@ Ransomware continues to be a significant threat to organizations. Microsoft has 
 
 Identifying and tracking modified, created, or stolen identities are essential to investigating phishing and BEC attacks. Use the following resources when investigating these attacks:
 
-- **Tutorial**: [Investigate malicious email](//microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)
+- **Tutorial**: [Investigate malicious email](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)
 - **Tutorial**: [Investigate users](investigate-users.md)
-- **Tutorial**: [Investigate a user account](//microsoft-365/security/defender-endpoint/investigate-user)
+- **Tutorial**: [Investigate a user account](/microsoft-365/security/defender-endpoint/investigate-user)
 - **Blog**: [Total Identity Compromise: Microsoft Incident Response lessons on securing Active Directory
 Identity compromise can also be investigated using Defender for Identity signals.](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/total-identity-compromise-microsoft-incident-response-lessons-on/ba-p/3753391)
 - **Tutorial**: [Example of a phishing email attack](first-incident-path-phishing.md)
@@ -105,7 +105,7 @@ Investigate an identity compromise and know what you can do to contain an attack
 
 A malicious file's information and capabilities are key to investigating malware. Microsoft Defender XDR, in most cases, can detonate the file to show critical data including hash, metadata, prevalence within the organization, and file capabilities based on MITRE ATT&CK® techniques. This removes the need to do black box testing or static analysis of files. You can view file information from the incident graph, or by viewing an alert process tree, an artifact timeline, or a device timeline.
 
-The following resources provide details on how to use the portal’s capabilities in investigating files:
+The following resources provide details on how to use the portal's capabilities in investigating files:
 
 - **Tutorial**: [Investigate files](/microsoft-365/security/defender-endpoint/investigate-files)
 - **Video**: [Investigating malware in Microsoft Defender XDR](https://youtu.be/TTqFlnlwch0)
@@ -140,12 +140,12 @@ Attackers often use vulnerabilities to gain access to an organization. Some rans
 
 - **Tutorial**: [Identify vulnerabilities in your organization](/microsoft-365/security/defender-vulnerability-management/tvm-weaknesses)
 - **Tutorial**: [Hunt for exposed devices](/microsoft-365/security/defender-vulnerability-management/tvm-hunt-exposed-devices)
-- **Tutorial**: [Assess your organization’s risk through the Exposure score](/microsoft-365/security/defender-vulnerability-management/tvm-exposure-score)
+- **Tutorial**: [Assess your organization's risk through the Exposure score](/microsoft-365/security/defender-vulnerability-management/tvm-exposure-score)
 - **Video**: Threat and vulnerability management via Defender Vulnerability Management
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XTiJ]
 
-Breaches also happen through various devices like phones and tablets that connect to your organization’s network. Incident responders can further investigate these devices within the portal. The following video talks about the top threats from mobile devices and how you can investigate these:
+Breaches also happen through various devices like phones and tablets that connect to your organization's network. Incident responders can further investigate these devices within the portal. The following video talks about the top threats from mobile devices and how you can investigate these:
 
 - Mobile threat defense in Microsoft Defender XDR
 
@@ -193,4 +193,4 @@ Collaborate with Microsoft's experts for incident response and threat hunting to
 - [Investigate alerts](investigate-alerts.md)
 - Learn the portal's features and functions through the [Microsoft Defender XDR Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

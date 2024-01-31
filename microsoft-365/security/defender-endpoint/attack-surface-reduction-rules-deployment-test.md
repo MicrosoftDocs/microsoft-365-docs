@@ -1,8 +1,8 @@
 ---
 title: Test attack surface reduction rules
 description: Provides guidance to test your attack surface reduction rules deployment. Microsoft Defender for Endpoint ASR test includes, audit Defender rules, configure ASR rules using Intune, Microsoft ASR rules reporting, ASR rules exclusions, ASR rules event viewer.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp

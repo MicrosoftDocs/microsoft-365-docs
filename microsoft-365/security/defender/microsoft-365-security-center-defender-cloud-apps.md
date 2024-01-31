@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Cloud Apps in Microsoft Defender XDR
 description: Learn about changes from the Microsoft Defender for Cloud Apps to Microsoft Defender XDR
-keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Cloud Apps
+keywords: Getting started with Microsoft Defender XDR, Microsoft Defender for Cloud Apps
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: bagol
 author: batamig
 manager: raynew
-ms.date: 10/23/2023
+ms.date: 12/17/2023
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -24,7 +24,7 @@ ms.custom: admindeeplinkDEFENDER
 
 # Microsoft Defender for Cloud Apps in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -135,26 +135,6 @@ As part of the creation of a dedicated **Assets** section that spans the entire 
 
 <a name='redirection-from-the-classic-microsoft-defender-for-cloud-apps-portal-to-microsoft-365-defender'></a>
 
-### Redirection from the classic Microsoft Defender for Cloud Apps portal to Microsoft Defender XDR
-
-Customers still using the classic Microsoft Defender for Cloud Apps portal are now all automatically redirected to Microsoft 365. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
-
-> [!NOTE]
-> If something isn't working for you or if there's anything you're unable to complete through Microsoft Defender XDR, we want to hear about it. If you've encountered any issues with redirection, we encourage you to let us know by using the Give feedback submission form.
->
-
-**To revert to the former Microsoft Defender for Cloud Apps portal**:
-
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a Global administrator, Security administrator, or Cloud App Security administrator in Azure Active directory, or a local global admin in Microsoft Defender for Cloud Apps.
-
-1. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go directly to the Redirection setting](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
-
-1. Toggle the **Automatic redirection** setting to **Off**.
-
-Once toggled off, accounts are no longer routed to *security.microsoft.com*. Active user sessions are not terminated, and the updates are applied only after the user ends their current session or opens a new tab.
-
-The update might take effect almost immediately in some accounts, but may take longer to propagate to every account in your organization. This setting can be turned back on again at any time.
-
 ### Preview features in Defender for Cloud Apps
 
 Turn on the preview experience setting to be among the first to try upcoming features.
@@ -174,23 +154,46 @@ You'll know you have preview features turned on when you see that the **Enable p
 
 For more information, see [Microsoft Defender for Cloud Apps preview features](/defender-cloud-apps/preview-features).
 
+### Redirection from the classic Microsoft Defender for Cloud Apps portal to Microsoft Defender XDR
+
+Customers still using the classic Microsoft Defender for Cloud Apps portal are all automatically redirected to Microsoft 365, and customers using preview features with the classic portal now have no option to switch back. If you're not using preview features, admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
+
+> [!NOTE]
+> If something isn't working for you or if there's anything you're unable to complete through Microsoft Defender XDR, we want to hear about it. If you've encountered any issues with redirection, we encourage you to let us know by using the Give feedback submission form.
+>
+
+**To revert to the former Microsoft Defender for Cloud Apps portal**:
+
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a Global administrator, Security administrator, or Cloud App Security administrator in Azure Active directory, or a local global admin in Microsoft Defender for Cloud Apps.
+
+1. Make sure that you don't have Preview features turned on for your tenant. For more information, see [Preview features in Microsoft Defender for Cloud Apps](/defender-cloud-apps/preview-features).
+
+1. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft Defender XDR** or [go directly to the Redirection setting](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
+
+1. Toggle the **Automatic redirection** setting to **Off**.
+
+Once toggled off, accounts are no longer routed to *security.microsoft.com*. Active user sessions are not terminated, and the updates are applied only after the user ends their current session or opens a new tab.
+
+The update might take effect almost immediately in some accounts, but may take longer to propagate to every account in your organization. This setting can be turned back on again at any time.
+
 
 ## Related videos
 
 Learn how to protect your cloud apps in Microsoft Defender XDR:
 
-**Protecting cloud apps in Microsoft 365 Defender**:<br>
+**Protecting cloud apps in Microsoft Defender XDR**:<br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU title="Protecting cloud apps in Microsoft 365 Defender"]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU title="Protecting cloud apps in Microsoft Defender XDR"]
 
 <br>
 
-**Defender for Cloud Apps in Microsoft 365 Defender for customers migrating from the classic portal**<br>
+**Defender for Cloud Apps in Microsoft Defender XDR for customers migrating from the classic portal**<br>
 
-> [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=2105e5c9-23bf-41fb-a61d-0f0fae8ef05f title="Defender for Cloud Apps in Microsoft 365 Defender for customers migrating from the classic portal"]
+> [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=2105e5c9-23bf-41fb-a61d-0f0fae8ef05f title="Defender for Cloud Apps in Microsoft Defender XDR for customers migrating from the classic portal"]
 
 
 ## Related information
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+- [Contact support](/defender-cloud-apps/support-and-ts)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

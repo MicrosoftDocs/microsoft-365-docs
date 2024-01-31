@@ -1,7 +1,7 @@
 ---
 title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ ms.collection:
 - mde-edr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 
@@ -113,8 +113,6 @@ If you've determined that a device or a file is not a threat, you can undo remed
 > - Isolate device
 > - Stop and quarantine a file
 > - Add an indicator to block or allow a file
->
-> To learn more, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md) and [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md).
 
 ### To undo multiple actions at one time
 

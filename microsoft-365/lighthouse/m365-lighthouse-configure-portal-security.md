@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: crimora
+ms.reviewer: taylorau
 ms.date: 06/09/2023
 audience: Admin
 ms.topic: article
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-security
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse

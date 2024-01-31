@@ -1,7 +1,7 @@
 ---
 title: Summarize incidents with Security Copilot in Microsoft Defender XDR
 description: Use Security Copilot incident summary capabilities embedded in Microsoft Defender XDR.
-keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, guided response, incident response playbooks, incident response, summary, summarize incident, summarize incidents, incident overview, write incident summary
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, guided response, incident response playbooks, incident response, summary, summarize incident, summarize incidents, incident overview, write incident summary
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +25,7 @@ ms.date: 10/10/2023
 
 # Summarize an incident with Microsoft Security Copilot in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -53,7 +53,7 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 - A summary of timelines of how the attack unfolded.
 - The assets involved in the attack.
 - Indicators of compromise (IOCs).
-- Names of [threat actors](/security/intelligence/microsoft-threat-actor-naming) involved.
+- Names of [threat actors](/microsoft-365/security/intelligence/microsoft-threat-actor-naming) involved.
 
 To summarize an incident, perform the following steps:
 
@@ -79,9 +79,9 @@ You can validate or report the results of the incident summary provided by Secur
 
 ## See also
 
-- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
+- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot)
 - [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
-- [Get started with Security Copilot](/security-copilot/get-started-security-copilot.md)
-- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot.md)
+- [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
+- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

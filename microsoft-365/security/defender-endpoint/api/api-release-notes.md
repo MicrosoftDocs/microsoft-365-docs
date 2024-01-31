@@ -2,8 +2,8 @@
 title: Microsoft Defender for Endpoint API release notes
 description: Release notes for updates made to the Microsoft Defender for Endpoint set of APIs.
 keywords: Microsoft Defender for Endpoint API release notes, mde, APIs, Microsoft Defender for Endpoint API, updates, notes, release
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: reference
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -31,13 +31,6 @@ ms.date: 02/02/2021
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 The following information lists the updates made to the Microsoft Defender for Endpoint APIs and the dates they were made.
-
-> [!TIP]
-> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
->
-> ```http
-> /api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
-> ```
 
 ## Release notes - newest to oldest (dd.mm.yyyy)
 

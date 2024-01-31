@@ -2,13 +2,12 @@
 title: Get Microsoft Defender for Business
 description: Find out how to get Microsoft Defender for Business, endpoint protection for small and medium sized businesses.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 09/07/2023
 ms.reviewer: efratka
@@ -136,3 +135,4 @@ If your subscription also includes Microsoft Intune, you use the Intune admin ce
 ## Next step
 
 - Proceed to [Step 2: Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md).
+
