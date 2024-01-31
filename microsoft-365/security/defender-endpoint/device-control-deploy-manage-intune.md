@@ -37,7 +37,7 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 
 4. On the **Basics** tab, specify a name and description for your policy.
 
-5. On the **Configuration settings** tab, you see a list of settings.
+5. On the **Configuration settings** tab, you see a list of settings. You don't have to configure all of these settings at once. Consider starting with **Device Control**.
 
    - Under **Administrative Templates**, you have [Device Installation](/windows/client-management/mdm/policy-csp-deviceinstallation?WT.mc_id=Portal-fx) and [Removable Storage Access](/windows/client-management/mdm/policy-csp-admx-removablestorage) settings.
    - Under **Defender**, see [Allow Full Scan Removable Drive Scanning](/windows/client-management/mdm/policy-csp-defender#allowfullscanremovabledrivescanning) settings.
@@ -46,7 +46,7 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
    - Under **Storage**, see [Removable Disk Deny Write Access](/windows/client-management/mdm/policy-csp-Storage#removablediskdenywriteaccess) settings.
    - Under **Connectivity**, see [Allow USB Connection](/windows/client-management/mdm/policy-csp-Connectivity#allowusbconnection)** and [Allow Bluetooth](/windows/client-management/mdm/policy-csp-Connectivity#allowbluetooth) settings.
    - Under **Bluetooth**, see a list of settings that pertain to Bluetooth connections and services. For more details, see [Policy CSP - Bluetooth](/windows/client-management/mdm/policy-csp-Bluetooth?WT.mc_id=Portal-fx).
-   - Under **Device Control**, you can configure custom policies with reusable settings. For example, you can use XML files to set up your policies. For more details, see [Rules](device-control-policies.md#rules).
+   - Under **Device Control**, you can configure custom policies with reusable settings. For example, you can use XML files to set up your policies. For more details, see [Device control overview: Rules](device-control-policies.md#rules).
 
 6. After you have configured your settings, proceed to the **Scope tags** tab, where you can specify [scope tags](/mem/intune/fundamentals/scope-tags) for the policy.
 
@@ -55,32 +55,6 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 8. On the **Review + create** tab, review your settings, and make any needed changes.
 
 9. When you're ready, select **Create** to create your device control policy.
-
-## Device control groups (Reusable settings)
-
-In Intune, device control groups appear as reusable settings.
-
-1. Go to the [Microsoft Intune admin center](https://endpoint.microsoft.com) and sign in.
-
-2. Go to **Endpoint Security** > **Attack Surface Reduction**. 
-
-3. Select the **Reusable Settings** tab.
-
-## Removable Storage Access Control using OMA-URI
-
-1. Go to the [Microsoft Intune admin center](https://endpoint.microsoft.com) and sign in.
-
-2. Choose **Devices** > **Configuration profiles**. The **Configuration profiles** page appears. 
-
-3. Under the **Policies** tab (selected by default), select **+ Create**, and choose **+ New policy** from the drop-down that appears. The **Create a profile** page appears.
-
-4. Choose **Windows 10 and later** from the **Platform** drop-down list, and choose **Templates** from the **Profile type** drop-down list.
-
-   Once you choose **Templates** from the **Profile type** drop-down list, the **Template name** pane is displayed, along with a search box (to search the profile name).
-
-5. Select **Custom** from the **Template name** pane, and select **Create**.
-
-6. Create a row for each setting, group, or policy by implementing Steps 1—5.
 
 ## Defining Settings with OMA-URI
 
