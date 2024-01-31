@@ -103,11 +103,9 @@ Device control capabilities from Microsoft can be organized into three main cate
 See the [device control scenarios](#device-control-scenarios) section (in this article) for more details about these capabilities.
 
 
-## Device control in Defender for Endpoint sample scenarios
+## Device control samples and scenarios
 
-Device control capabilities in Defender for Endpoint provide more advanced capabilities than what's built into the Windows operating system. With device control in Defender for Endpoint, you have a robust access control model that enables a wide range of scenarios (see [Device control policies](device-control-policies.md)).  
-
-If you're interested in sample queries and configuration methods, see the following resources:
+Device control in Defender for Endpoint provides your security team with a robust access control model that enables a wide range of scenarios (see [Device control policies](device-control-policies.md)). We have put together a GitHub repository that contains samples and scenarios you can explore. See the following resources:
 
 - [Device control samples README](https://github.com/microsoft/mdatp-devicecontrol/blob/main/README.md)
 - [Getting started with device control samples on Windows devices](https://github.com/microsoft/mdatp-devicecontrol/blob/main/windows/Getting%20Started/readme.md)
