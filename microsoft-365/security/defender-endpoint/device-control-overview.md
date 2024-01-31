@@ -29,7 +29,7 @@ Device control capabilities in Microsoft Defender for Endpoint enable your secur
 - Allow users to install and use specific devices
 - Allow users to install and use only [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/)-encrypted devices with Windows computers
 
-This list is intended to provide some examples. It's not an exhaustive list; there are other examples to consider (see the [device control scenarios](#device-control-scenarios) section in this article). 
+This list is intended to provide some examples. It's not an exhaustive list; there are other examples to consider (see the [device control in Windows](#device-control-in-windows) section in this article). 
 
 Device control helps protect your organization from potential data loss, malware, or other cyberthreats by allowing or preventing certain devices to be connected to users' computers. With device control, your security team can determine whether and what peripheral devices users can install and use on their computers. 
 
