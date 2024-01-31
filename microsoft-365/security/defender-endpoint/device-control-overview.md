@@ -70,6 +70,20 @@ This section lists scenarios for device control. Select a tab, review the scenar
 
 ---
 
+## Supported devices
+
+Device control supports Bluetooth devices, CD/ROMs and DVD devices, printers, USB devices, and other types of portable devices. On a Windows device, based on the driver, some peripheral devices are marked as removable. The following table lists examples of devices that device control supports with their `primary_id` values and media class names:
+
+| Device type | `PrimaryId` in Windows | `primary_id` in macOS | Media Class Name |
+|---|---|---|---|
+| Bluetooth devices |  | `bluetoothDevice` | `Bluetooth Devices` |
+| CD/ROMs, DVDs | `CdRomDevices` |  |  `CD-Roms` |
+| iOS devices |  | `appleDevice` | | 
+| Portable devices (such as cameras) |   | `portableDevice` | | 
+| Printers | `PrinterDevices` |  | `Printers` |
+| USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` | `USB` | 
+| Windows Portable Devices | `WpdDevices` |  | `Windows Portable Devices (WPD)` |
+
 ## Categories of Microsoft device control capabilities
 
 Device control capabilities from Microsoft can be organized into three main categories: device control in Windows, device control in Defender for Endpoint, and Endpoint Data Loss Prevention (Endpoint DLP).
@@ -87,20 +101,6 @@ Device control capabilities from Microsoft can be organized into three main cate
 - **Endpoint data loss prevention** (Endpoint DLP). Endpoint DLP monitors sensitive information on devices that are onboarded to Microsoft Purview solutions. DLP policies can enforce protective actions on sensitive information and where it's stored or used. [Learn about Endpoint DLP](/purview/endpoint-dlp-learn-about).
 
 See the [device control scenarios](#device-control-scenarios) section (in this article) for more details about these capabilities.
-
-## Supported devices
-
-Device control supports Bluetooth devices, CD/ROMs and DVD devices, printers, USB devices, and other types of portable devices. On a Windows device, based on the driver, some peripheral devices are marked as removable. The following table lists examples of devices that device control supports with their `primary_id` values and media class names:
-
-| Device type | `PrimaryId` in Windows | `primary_id` in macOS | Media Class Name |
-|---|---|---|---|
-| Bluetooth devices |  | `bluetoothDevice` | `Bluetooth Devices` |
-| CD/ROMs, DVDs | `CdRomDevices` |  |  `CD-Roms` |
-| iOS devices |  | `appleDevice` | | 
-| Portable devices (such as cameras) |   | `portableDevice` | | 
-| Printers | `PrinterDevices` |  | `Printers` |
-| USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` | `USB` | 
-| Windows Portable Devices | `WpdDevices` |  | `Windows Portable Devices (WPD)` |
 
 
 ## Device control in Defender for Endpoint sample scenarios
