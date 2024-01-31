@@ -46,7 +46,19 @@ The **Upcoming renewals** page lists all customer subscriptions, sorted by subsc
 
 [Go to the Upcoming renewals page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/UpcomingRenewals.ReactView) 
 
-To learn more, see [Blog post: Unlock the Copilot opportunity and grow your CSP business with Microsoft 365 Lighthouse](https://go.microsoft.com/fwlink/?linkid=2257055).
+To learn more, see "Optimize your renewal conversations with simplified renewal insights" in [Blog post: Unlock the Copilot opportunity and grow your CSP business with Microsoft 365 Lighthouse](https://go.microsoft.com/fwlink/?linkid=2257055).
+
+### Microsoft Copilot opportunities in Sales Advisor
+
+We've added Microsoft Copilot opportunities to Sales Advisor to help you identify customers who are eligible to buy Microsoft Copilot for Microsoft 365. Microsoft Copilot is an AI companion that works everywhere you do and intelligently adapts to your needs.
+
+To access Copilot opportunities, in the left navigation pane in Microsoft 365 Lighthouse, select **Sales Advisor (Project Orland)** > **Opportunities**, and then select the **Customer growth** tab.
+
+Select a Copilot opportunity to see customer insights, suggested actions, and resources to engage with the customer.
+
+[Go to the Opportunities page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/OrlandInsights.ReactView)
+
+To learn more, see [Blog post: Unlock the Copilot opportunity and grow your CSP business with Microsoft 365 Lighthouse](https://go.microsoft.com/fwlink/?linkid=2257335).
 
 ### Assign GDAP template settings automatically after customer approval of GDAP relationships
 
