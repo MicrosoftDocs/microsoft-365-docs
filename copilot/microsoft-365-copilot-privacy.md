@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.collection: privacy-microsoft365
 description: "Learn how Microsoft Copilot for Microsoft 365 uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 01/23/2024
+ms.date: 01/31/2024
 ---
 
 # Data, Privacy, and Security for Microsoft Copilot for Microsoft 365
