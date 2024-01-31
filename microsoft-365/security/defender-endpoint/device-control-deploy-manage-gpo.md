@@ -4,7 +4,7 @@ description: Learn how to deploy and manage device control in Defender for Endpo
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/30/2024
+ms.date: 01/31/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -120,8 +120,6 @@ If you want to change the default value of 60 days for persisting the local cach
 
 ## See also
 
-[Device control in Microsoft Defender for Endpoint](device-control-overview.md)
-
-[Device control policies in Microsoft Defender for Endpoint](device-control-policies.md)
-
-[Device Control for macOS](mac-device-control-overview.md)
+- [Device control in Defender for Endpoint](device-control-overview.md)
+- [Device control policies in and settings](device-control-policies.md)
+- [Device Control for macOS](mac-device-control-overview.md)
