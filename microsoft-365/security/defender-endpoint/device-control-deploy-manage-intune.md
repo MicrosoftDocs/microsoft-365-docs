@@ -42,11 +42,19 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
    - Under **Administrative Templates**, you have [Device Installation](/windows/client-management/mdm/policy-csp-deviceinstallation?WT.mc_id=Portal-fx) and [Removable Storage Access](/windows/client-management/mdm/policy-csp-admx-removablestorage) settings.
    - Under **Defender**, see [Allow Full Scan Removable Drive Scanning](/windows/client-management/mdm/policy-csp-defender#allowfullscanremovabledrivescanning) settings.
    - Under **Data Protection**, see [Allow Direct Memory Access](/windows/client-management/mdm/policy-csp-dataprotection) settings.
-   - Under **Dma Guard**, see **Device Enumeration Policy** settings.
-   - Under **Storage**, see **Removable Disk Deny Write Access** settings.
+   - Under **Dma Guard**, see [Device Enumeration Policy](/windows/client-management/mdm/policy-csp-dmaguard?WT.mc_id=Portal-fx) settings.
+   - Under **Storage**, see [Removable Disk Deny Write Access](/windows/client-management/mdm/policy-csp-Storage#removablediskdenywriteaccess) settings.
    - Under **Connectivity**, see **Allow USB Connection** and **Allow Bluetooth** settings.
-   - Under **Bluetooth**, see a list of settings that pertain to Bluetooth connections and services.
-   - Under **Device Control**, you can configure custom policies with reusable settings. You can use XML files to set up your policies. For more details, see [Rules](device-control-policies.md#rules).
+   - Under **Bluetooth**, see a list of settings that pertain to Bluetooth connections and services. Formore details, see [Policy CSP - Bluetooth](/windows/client-management/mdm/policy-csp-Bluetooth?WT.mc_id=Portal-fx).
+   - Under **Device Control**, you can configure custom policies with reusable settings. For example, you can use XML files to set up your policies. For more details, see [Rules](device-control-policies.md#rules).
+
+6. After you have configured your settings, proceed to the **Scope tags** tab, where you can specify [scope tags](/mem/intune/fundamentals/scope-tags) for the policy.
+
+7. On the **Assignments** tab, specify groups of users or devices to receive your policy. For more details, see [Assign policies in Intune](/mem/intune/configuration/device-profile-assign).
+
+8. On the **Review + create** tab, review your settings, and make any needed changes.
+
+9. When you're ready, select **Create** to create your device control policy.
 
 ## Device control groups (Reusable settings)
 
