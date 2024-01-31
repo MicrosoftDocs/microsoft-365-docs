@@ -60,13 +60,13 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 
 To use the following table, identify the setting you want to configure, and then use the information in the OMA-URI and data type & values columns. Settings are listed in alphabetical order.
 
-| Setting | OMA-URI | Data type & values |
-|---|---|---|
-| **Device control default enforcement** <br/>Default enforcement establishes what decisions are made during device control access checks when none of the policy rules match | `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement` | Integer <br/>`DefaultEnforcementAllow` = `1`; `DefaultEnforcementDeny` = `2` | 
-| **Device types** <br/>Device types, identified by their Primary IDs, with device control protection turned on | `./Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration` | String <br/>- `RemovableMediaDevices`<br/>- `CdRomDevices`<br/>- `WpdDevices`<br/>- `PrinterDevices` |
-| **Enable device control** <br/>Enable or disable device control on the device | `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled` | Integer <br/>Disable = `0`; Enable = `1` |
-| **Evidence data remote location** <br/>Device control moves evidence data captured | `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation` | String |
-| **Local evidence cache duration** <br/>Sets the retention period in days for files in the local device control cache | `./Vendor/MSFT/Defender/Configuration/DataDuplicationLocalRetentionPeriod` | Integer <br/>Example: `60` (60 days) |
+| Setting | OMA-URI, data type, & values |
+|---|---|
+| **Device control default enforcement** <br/>Default enforcement establishes what decisions are made during device control access checks when none of the policy rules match | `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`<br/><br/>Integer <br/>`DefaultEnforcementAllow` = `1`; `DefaultEnforcementDeny` = `2` | 
+| **Device types** <br/>Device types, identified by their Primary IDs, with device control protection turned on | `./Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration`<br/><br/>String <br/>- `RemovableMediaDevices`<br/>- `CdRomDevices`<br/>- `WpdDevices`<br/>- `PrinterDevices` |
+| **Enable device control** <br/>Enable or disable device control on the device | `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`<br/><br/>Integer <br/>Disable = `0`; Enable = `1` |
+| **Evidence data remote location** <br/>Device control moves evidence data captured | `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`<br/><br/>String |
+| **Local evidence cache duration** <br/>Sets the retention period in days for files in the local device control cache | `./Vendor/MSFT/Defender/Configuration/DataDuplicationLocalRetentionPeriod`<br/><br/>Integer <br/>Example: `60` (60 days) |
 
 ### Creating policies with OMA-URI
 
