@@ -7,20 +7,20 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - tier1
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid: 
-  - MOE150
-  - MET150
-ms.date: 05/31/2023
+- MOE150
+- MET150
+ms.date: 01/31/2024
 ---
 
 # Automatic attack disruption in Microsoft Defender XDR
