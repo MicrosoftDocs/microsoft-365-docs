@@ -41,7 +41,7 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 
    - Under **Administrative Templates**, you have [Device Installation](/windows/client-management/mdm/policy-csp-deviceinstallation?WT.mc_id=Portal-fx) and [Removable Storage Access](/windows/client-management/mdm/policy-csp-admx-removablestorage) settings.
    - Under **Defender**, see [Allow Full Scan Removable Drive Scanning](/windows/client-management/mdm/policy-csp-defender#allowfullscanremovabledrivescanning) settings.
-   - Under **Data Protection**, see **Allow Direct Memory Access** settings.
+   - Under **Data Protection**, see [Allow Direct Memory Access](/windows/client-management/mdm/policy-csp-dataprotection) settings.
    - Under **Dma Guard**, see **Device Enumeration Policy** settings.
    - Under **Storage**, see **Removable Disk Deny Write Access** settings.
    - Under **Connectivity**, see **Allow USB Connection** and **Allow Bluetooth** settings.
