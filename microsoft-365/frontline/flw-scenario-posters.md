@@ -18,7 +18,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 01/30/2024
+ms.date: 01/31/2024
 
 ---
 
