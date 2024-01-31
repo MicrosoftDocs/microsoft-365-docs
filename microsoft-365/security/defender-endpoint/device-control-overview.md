@@ -87,8 +87,8 @@ This section lists scenarios for device control. Select a tab, review the scenar
 
 | Scenario | Device control policy |
 |---|---|
-| Block people from printing via noncorporate printer | Device control in Microsoft Defender. See [Device control policies](device-control-policies.md). |
-| Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See [Device control policies](device-control-policies.md). |
+| Block people from printing via noncorporate printers | Device control in Defender for Endpoint. See [Device control policies](device-control-policies.md). |
+| Only allow specific USB printer(s) by VID/PID | Device control in Defender for Endpoint. See [Device control policies](device-control-policies.md). |
 | Block printing of sensitive documents to any printer | [Endpoint DLP](/purview/endpoint-dlp-learn-about) |
 | Prevent installation of all printers | Device control in Windows. See [Device control policies](device-control-policies.md). |
 | Prevent installation of a specific printer | Device control in Windows. See [Device control policies](device-control-policies.md). |
@@ -106,11 +106,11 @@ This section lists scenarios for device control. Select a tab, review the scenar
 
 Device control capabilities in Defender for Endpoint provide more advanced capabilities than what's built into the Windows operating system. With device control in Defender for Endpoint, you have a robust access control model that enables a wide range of scenarios (see [Device control policies](device-control-policies.md)).  
 
-If you're interested in sample queries and configuration methods, see the following examples:
+If you're interested in sample queries and configuration methods, see the following resources:
 
-- **Removable Storage Access Control**. See [mdatp-devicecontrol/Removable Storage Access Control Samples](https://github.com/j0shbregman/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
-
-- **Printer protection**. See [mdatp-devicecontrol/Printer Protection Samples](https://github.com/j0shbregman/mdatp-devicecontrol/tree/main/Printer%20Protection%20Samples).
+- [Device control samples README](https://github.com/microsoft/mdatp-devicecontrol/blob/main/README.md)
+- [Getting started with device control samples on Windows devices](https://github.com/microsoft/mdatp-devicecontrol/blob/main/windows/Getting%20Started/readme.md)
+- [Device control for macOS samples](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/README.md)
 
 If you're new to device control, see [Device control walkthroughs](device-control-walkthroughs.md).
 
