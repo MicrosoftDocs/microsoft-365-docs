@@ -56,14 +56,14 @@ See the [device control scenarios](#device-control-scenarios) section (in this a
 Device control supports Bluetooth devices, CD/ROMs and DVD devices, printers, USB devices, and other types of portable devices. On a Windows device, based on the driver, some peripheral devices are marked as removable. The following table lists examples of devices that device control supports with their `primary_id` values and media class names:
 
 | Device type | `PrimaryId` in Windows | `primary_id` in macOS | Media Class Name |
-|---|---|---|
+|---|---|---|---|
 | Bluetooth devices |  | `bluetoothDevice` | `Bluetooth Devices` |
 | CD/ROMs, DVDs | `CdRomDevices` |  |  `CD-Roms` |
 | iOS devices |  | `appleDevice` | | 
 | Portable devices (such as cameras) |   | `portableDevice` | | 
-| Printers | `PrinterDevices` |  | `Printers` | 
+| Printers | `PrinterDevices` |  | `Printers` |
 | USB devices (removable media) | `RemovableMediaDevices` | `removableMedia` | `USB` | 
-| Windows Portable Devices | `WpdDevices` |  | `Windows Portable Devices (WPD)` | 
+| Windows Portable Devices | `WpdDevices` |  | `Windows Portable Devices (WPD)` |
 
 ## Device control scenarios
 
