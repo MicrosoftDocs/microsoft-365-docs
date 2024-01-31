@@ -104,7 +104,7 @@ DeviceControlState               : Enabled
 Remove, and reinsert the USB device in the test machine. Try to open the drive. The drive isn't accessible, and a message appears which indicates that access is denied.
 
 > [!NOTE]
-> Detailed instructions and examples are available [here](https://github.com/j0shbregman/mdatp-devicecontrol/tree/main/Getting%20Started).
+> Samples and instructions and examples are available [here](https://github.com/microsoft/mdatp-devicecontrol/blob/main/README.md).
 
 ## Step 1: Deny all removable media
 
