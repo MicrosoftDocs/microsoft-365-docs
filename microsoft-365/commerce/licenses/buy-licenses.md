@@ -24,7 +24,7 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: "Learn how to buy more licenses or reduce the number of licenses for your business subscription in the Microsoft 365 admin center."
-ms.date: 01/26/2024
+ms.date: 01/31/2024
 ---
 
 # Buy or remove licenses for a Microsoft business subscription
@@ -59,7 +59,7 @@ If you have an MCA billing account type and buy licenses in the middle of your b
    - If you’re using the **Simplified view**, select **Subscriptions**.
    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to change.
-3. On the subscription details page, select **Buy licenses**.
+3. On the subscription details page, select **Buy licenses**. [What if I can't select the Buy licenses or Remove licenses buttons?](#what-if-i-cant-select-the-buy-licenses-or-remove-licenses-buttons)
 4. Choose when to schedule the license change to happen.
    - If recurring billing is turned on, you can choose to make the change now, or when the subscription renews.
    - If recurring billing is turned off, you can only make the change now.
@@ -74,7 +74,7 @@ If you have an MCA billing account type, you can only remove licenses from your 
    - If you’re using the **Simplified view**, select **Subscriptions**.
    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to change.
-3. On the subscription details page, select **Remove licenses**.
+3. On the subscription details page, select **Remove licenses**. [What if I can't select the Buy licenses or Remove licenses buttons?](#what-if-i-cant-select-the-buy-licenses-or-remove-licenses-buttons)
 4. Under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to remove 25 licenses, enter 75.
 5. Select **Save**.
 
@@ -84,7 +84,7 @@ If you have an MCA billing account type, you can only remove licenses from your 
     - If you’re using the **Simplified view**, select **Subscriptions**.
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to change.
-3. On the subscription details page, select **Buy licenses** or **Remove licenses**.
+3. On the subscription details page, select **Buy licenses** or **Remove licenses**. [What if I can't select the Buy licenses or Remove licenses buttons?](#what-if-i-cant-select-the-buy-licenses-or-remove-licenses-buttons)
 4. To change the number of licenses, under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five of them, enter 95.
 5. Select **Save**.
 
@@ -112,10 +112,12 @@ This table describes the reasons why the **Buy licenses** or **Remove licenses**
 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
-|A credit check is pending. |If a credit check is pending, you can't buy or remove licenses until the credit check is complete.  | Check back later to see if the credit check is complete. Credit checks typically take up to two working days to complete. After the credit check is complete, you should be able to select the **Buy licenses** and **Remove licenses** buttons. |
+|A credit check is pending. |If a credit check is pending, you can't buy or remove licenses until the credit check is complete.  | Check back later to see if the credit check is complete. Credit checks typically take up to two working days to complete. After the credit check is complete, you can select the **Buy licenses** and **Remove licenses** buttons. |
 |You activated the subscription by using a product key.| If the subscription was bought and activated by using a 25-character product key, you see the word "Prepaid" in the **Purchase channel** column of the **Your products** page.  |See [Add licenses to a prepaid subscription by using a product key](#add-licenses-to-a-prepaid-subscription-by-using-a-product-key). |
 |You bought your subscription through a reseller.| You see the word "Reseller" in the **Purchase information** section under **Purchase channel** on the subscription details page, and in the **Purchase channel** column of the **Your products** page. | If you bought the subscription through a Cloud Solution Provider (CSP) partner, contact your CSP partner to buy more licenses.        |
 |You have a trial subscription. | To view your trial subscriptions, select the filter button, then choose **Trial**. | First buy your trial subscription, then you can buy more licenses.|
+|The product has reached end of sale | On the subscription details page, you see the following message: "This product is no longer available to buy, so some actions below are turned off." | You can [buy a different subscription](../try-or-buy-microsoft-365.md#buy-a-different-subscription). In some cases, you might be able to convert your subscription.<br/><br/>
+For more information, see [Understand end-of-sale products in the Microsoft 365 admin center](../subscriptions/understand-eos-products.md) |
 
 ## When are the new licenses available to assign?
 
@@ -123,13 +125,13 @@ The payment method associated with your subscription or billing profile is charg
 
 If you prepaid for your subscription with a product key, you can add more licenses by using another product key, or by adding a credit card or debit card to cover the extra cost of the new licenses. If your subscription is prepaid, you can't remove licenses.
 
-## How does buying or removing licenses affect my billing statements?
+## How does buying or removing licenses affect my invoice?
 
 Licenses added in the middle of your billing period appear on your next invoice. If you pay annually, you're invoiced within a month for these changes.
 
 If you have an MCA billing account type, you have seven days to reduce the number of licenses. If you reduce the number of licenses after that seven day period, the change appears on the first invoice you receive after the subscription renewal date.
 
-If you have an MOSA billing account type, the previous charge for the original number of licenses is deducted on your next billing statement. We add a prorated charge for the time period with the original number of licenses and add a charge for the new license count. There's also a charge for the current license count for the remainder of your billing period.
+If you have an MOSA billing account type, the previous charge for the original number of licenses is deducted on your next invoice. We add a prorated charge for the time period with the original number of licenses and add a charge for the new license count. There's also a charge for the current license count for the remainder of your billing period.
 
 ## Next steps
 
