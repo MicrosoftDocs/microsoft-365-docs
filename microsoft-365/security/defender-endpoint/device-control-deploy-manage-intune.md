@@ -127,8 +127,7 @@ Policies can be added and removed using the **+** and **–** icons.  The name o
 
 5. Select **Custom** from the **Template name** pane, and select **Create**.
 
-6. Create a row for each setting, group, or policy by implementing Steps 1—5.
-
+6. Create a row for each setting, group, or policy by implementing Steps 1-5.
 
 ## View device control groups (Reusable settings)
 
@@ -142,8 +141,6 @@ In Intune, device control groups appear as reusable settings.
  
 ## See also
 
-[Device control in Microsoft Defender for Endpoint](device-control-overview.md)
-
-[Device control policies in Microsoft Defender for Endpoint](device-control-policies.md)
-
-[Device Control for macOS](mac-device-control-overview.md)
+- [Device control in Defender for Endpoint](device-control-overview.md)
+- [Device control policies and settings](device-control-policies.md)
+- [Device Control for macOS](mac-device-control-overview.md)
