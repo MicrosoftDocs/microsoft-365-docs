@@ -2,43 +2,43 @@
       href: index.yml
  
     - name: Overview 
-      href: /microsoft-365/syntex/archive/archive-overview.md
+      href: /microsoft-365/syntex/archive/archive-overview
     - name: Admin setup 
-      href: /microsoft-365/syntex/archive/archive-setup.md
+      href: /microsoft-365/syntex/archive/archive-setup
     - name: Pricing model 
-      href: /microsoft-365/syntex/archive/archive-pricing.md
+      href: /microsoft-365/syntex/archive/archive-pricing
     - name: Archive states 
-      href: /microsoft-365/syntex/archive/archive-states.md
+      href: /microsoft-365/syntex/archive/archive-states
     - name: Manage 
-      href: /microsoft-365/syntex/archive/archive-manage.md
+      href: /microsoft-365/syntex/archive/archive-manage
     - name: Compliance 
-      href: /microsoft-365/syntex/archive/archive-compliance.md
+      href: /microsoft-365/syntex/archive/archive-compliance
     - name: End user experience 
-      href: /microsoft-365/syntex/archive/archive-end-user.md
+      href: /microsoft-365/syntex/archive/archive-end-user
     - name: FAQs
-      href: /microsoft-365/syntex/archive/archive-faq.md
+      href: /microsoft-365/syntex/archive/archive-faq
 
     - name: Microsoft 365 Backup (Preview)
       items: 
         - name: Overview 
-          href: /microsoft-365/syntex/backup/backup-overview.md
+          href: /microsoft-365/syntex/backup/backup-overview
         - name: Admin setup 
-          href: /microsoft-365/syntex/backup/backup-setup.md
+          href: /microsoft-365/syntex/backup/backup-setup
         - name: View and edit policies 
-          href: /microsoft-365/syntex/backup/backup-view-edit-policies.md
+          href: /microsoft-365/syntex/backup/backup-view-edit-policies
         - name: Restore data 
-          href: /microsoft-365/syntex/backup/backup-restore-data.md
+          href: /microsoft-365/syntex/backup/backup-restore-data
         - name: Preview limitations
-          href: /microsoft-365/syntex/backup/backup-limitations.md
+          href: /microsoft-365/syntex/backup/backup-limitations
         - name: Pricing nodel
-          href: /microsoft-365/syntex/backup/backup-pricing.md
+          href: /microsoft-365/syntex/backup/backup-pricing
         - name: Offboarding
-          href: /microsoft-365/syntex/backup/backup-offboarding.md
+          href: /microsoft-365/syntex/backup/backup-offboarding
         - name: FAQs
-          href: /microsoft-365/syntex/backup/backup-faq.md
+          href: /microsoft-365/syntex/backup/backup-faq
 
     - name: Microsoft 365 Backup (Preview)
-      href: /microsoft-365/syntex/backup/backup-overview.md
+      href: /microsoft-365/syntex/backup/backup-overview
 
     - name: SharePoint Advanced Management
       href: /sharepoint/advanced-management
