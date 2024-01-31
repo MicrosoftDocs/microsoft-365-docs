@@ -19,7 +19,7 @@ ms.custom:
 description: Learn how to get started with the initial deployment and configuration of Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 01/19/2024
+ms.date: 01/31/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
@@ -62,7 +62,7 @@ To configure EOP and Defender for Office 365 features, you need permissions. The
 
 Email authentication (also known as _email validation_) is a group of standards to verify that email messages are legitimate, unaltered, and come from expected sources for the sender's email domain. For more information, see [Email authentication in EOP](email-authentication-about.md).
 
-We'll proceed with the assumption that you're using one or more [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365 for email (for example @contoso.com) , so you need to create specific email authentication DNS records for each custom domain that you're using for email.
+We'll proceed with the assumption that you're using one or more [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365 for email (for example contoso.com) , so you need to create specific email authentication DNS records for each custom domain that you're using for email.
 
 Create the following email authentication DNS records at your DNS registrar or DNS hosting service for each custom domain that you use for email in Microsoft 365:
 
@@ -72,13 +72,13 @@ Create the following email authentication DNS records at your DNS registrar or D
 
 - **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: DMARC helps destination email servers decide what to do with messages from the custom domain that fail SPF and DKIM checks. Be sure to include the DMARC policy (`p=reject` or `p=quarantine`) and DMARC report destinations (aggregate and forensic reports) in the DMARC records. for instructions, see [Use DMARC to validate email](email-authentication-dmarc-configure.md).
 
-- **Authenticated Received Chain (ARC)**: If you use third-party services that modify message in transit, you can configure the services as _trusted ARC sealers_ so the modified messages can still pass email authentication checks (if the service supports it). For instructions, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).
+- **Authenticated Received Chain (ARC)**: If you use third-party services that modify _inbound_ messages in transit before delivery to Microsoft 365, you can identify the services as _trusted ARC sealers_ (if they support it) so the modified messages don't automatically fail email authentication checks in Microsoft 365. For instructions, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).
 
-If you're using the @\*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do:
+If you're using the \*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do:
 
-- **SPF**: An SPF record is already configured for the \<domain\>.onmicrosoft.com domain.
-- **DKIM**: DKIM signing is is already configured for outbound mail using the \<domain\>.onmicrosoft.com domain.
-- **DMARC**: You need to manually set up the DMARC record for the \<domain\>.onmicrosoft.com domain as described in [Use the Microsoft 365 admin center to add DMARC TXT records for \*.onmicrosoft.com domains in Microsoft 365](email-authentication-dmarc-configure.md#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365).
+- **SPF**: An SPF record is already configured for the \*.onmicrosoft.com domain.
+- **DKIM**: DKIM signing is is already configured for outbound mail using the \*.onmicrosoft.com domain, but you can also [manually customize it](email-authentication-dkim-configure.md#use-the-defender-portal-to-customize-dkim-signing-of-outbound-messages-using-the-onmicrosoftcom-domain).
+- **DMARC**: You need to manually set up the DMARC record for the \*.onmicrosoft.com domain as described [here](email-authentication-dmarc-configure.md#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365).
 
 ## Step 2: Configure protection policies
 
