@@ -99,6 +99,46 @@ In the **Add Row** pane, specify the following settings:
 
 > [!NOTE]
 > Comments using XML comment notation `<!-- COMMENT -- >` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
+
+## Device control profiles
+
+In Intune, each row represents a device control policy. The included ID is the reusable setting that the policy applies to. The excluded ID is the reusable setting that's excluded from the policy. The entry for the policy contains the permissions allowed and the behavior for device control that comes into force when the policy applies.
+
+:::image type="content" source="images/device-control-profile.png" alt-text="The screenshot that shows the page on which you can configure the settings for the Device Control capability." lightbox="images/device-control-profile.png":::
+
+For information on how to add the reusable groups of settings that are included in the row of each device control policy, see the *Add reusable groups to a Device Control profile* section in [Use reusable groups of settings with Intune policies](/mem/intune/protect/reusable-settings-groups).
+
+Policies can be added and removed using the **+** and **–** icons.  The name of the policy appears in the warning to users, and in advanced hunting and reports.
+
+> [!NOTE]
+> The order in the UX isn't preserved for policies enforcement. The best practice is to set the default enforcement to DENY, and then use **Allow policies**. Ensure that the **Allow policies** option is non-intersecting by explicitly adding devices to be excluded.
+
+## Configure removable storage access control using OMA-URI
+
+1. Go to the [Microsoft Intune admin center](https://endpoint.microsoft.com) and sign in.
+
+2. Choose **Devices** > **Configuration profiles**. The **Configuration profiles** page appears. 
+
+3. Under the **Policies** tab (selected by default), select **+ Create**, and choose **+ New policy** from the drop-down that appears. The **Create a profile** page appears.
+
+4. In the **Platform** list, select **Windows 10, Windows 11, and Windows Server** from the **Platform** drop-down list, and choose **Templates** from the **Profile type** drop-down list.
+
+   Once you choose **Templates** from the **Profile type** drop-down list, the **Template name** pane is displayed, along with a search box (to search the profile name).
+
+5. Select **Custom** from the **Template name** pane, and select **Create**.
+
+6. Create a row for each setting, group, or policy by implementing Steps 1—5.
+
+
+## View device control groups (Reusable settings)
+
+In Intune, device control groups appear as reusable settings.
+
+1. Go to the [Microsoft Intune admin center](https://endpoint.microsoft.com) and sign in.
+
+2. Go to **Endpoint Security** > **Attack Surface Reduction**. 
+
+3. Select the **Reusable Settings** tab.
  
 ## See also
 
