@@ -139,7 +139,7 @@ DeviceEvents
 ```
 
 > [!NOTE]
-> You can view up to 300 events per device per day.
+> You can view up to 300 events per device per day with advanced hunting.
 > 
 
 Selecting the event to view information about the policy and the device. 
