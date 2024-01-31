@@ -32,13 +32,6 @@ ms.date: 02/02/2021
 
 The following information lists the updates made to the Microsoft Defender for Endpoint APIs and the dates they were made.
 
-> [!TIP]
-> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
->
-> ```http
-> /api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
-> ```
-
 ## Release notes - newest to oldest (dd.mm.yyyy)
 
 ### 08.08.2022

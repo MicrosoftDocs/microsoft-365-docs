@@ -2,20 +2,20 @@
 title: "Configure your security protection with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.date: 11/02/2023
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - m365-security
 - tier1
-- essentials-accountability
+- essentials-security
 ms.custom:
 - MiniMaven
 search.appverid:
