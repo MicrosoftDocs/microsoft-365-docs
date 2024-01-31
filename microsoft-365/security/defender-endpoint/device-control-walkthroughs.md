@@ -30,7 +30,7 @@ By default, [device control](device-control-overview.md) is disabled and there a
 
 Device control in Defender for Endpoint identifies a device based on its properties. Device properties are visible by selecting an entry in the report. 
 
-The **Device ID**, **Vendor ID** (VID), **Serial number**, and **Bus type** can all be used to identify a device (see [Device control policies and entries in Microsoft Defender for Endpoint](device-control-policies-entries.md)). The data is also available in [advanced hunting](../defender/advanced-hunting-overview.md), by searching for the `Plug and Play Device Connected action` (`PnPDeviceConnected`), as shown in the following example query:
+The **Device ID**, **Vendor ID** (VID), **Serial number**, and **Bus type** can all be used to identify a device (see [Device control policies in Microsoft Defender for Endpoint](device-control-policies.mddata is also available in [advanced hunting](../defender/advanced-hunting-overview.md), by searching for the `Plug and Play Device Connected action` (`PnPDeviceConnected`), as shown in the following example query:
 
 ```kusto
 
@@ -150,11 +150,11 @@ To grant access to set of authorized USBs devices, set up a group to identify th
 
 :::image type="content" source="media/device-control-authorized-usb-settings.png" alt-text="Screenshot depicting settings for a group of authorized devices." lightbox="media/device-control-authorized-usb-settings.png":::  
 
-In our example, the authorized USBs group contains a single device identified by its `InstancePathId`. Before deploying the sample, you can change the value to the `InstancePathId` for a test device. See [Using Windows Device Manager to determine device properties](device-control-policies-entries.md#using-windows-device-manager-to-determine-device-properties) and [Using reports and advanced hunting](device-control-policies-entries.md#using-reports-and-advanced-hunting-to-determine-properties-of-devices) to determine properties of devices for details on how to find the correct value.
+In our example, the authorized USBs group contains a single device identified by its `InstancePathId`. Before deploying the sample, you can change the value to the `InstancePathId` for a test device. See [Using Windows Device Manager to determine device properties](device-control-policies.md#using-windows-device-manager-to-determine-device-properties) and [Using reports and advanced hunting](device-control-policies.md#using-reports-and-advanced-hunting-to-determine-properties-of-devices) to determine properties of devices for details on how to find the correct value.
 
 Notice that the authorized USB group is excluded from the deny-all policy. This ensures that those devices are evaluated for the other policies. Policies aren't evaluated in order, so each policy should be correct if evaluated independently. Once the policy is deployed, reinsert the approved USB device. You should see that there's full access to the device. Insert another USB, and confirm that access is blocked for that device.
 
-Device control has lots of ways to group devices based on properties. For more information, see [Device control policies and entries in Microsoft Defender for Endpoint](device-control-policies-entries.md).
+Device control has lots of ways to group devices based on properties. For more information, see [Device control policies in Microsoft Defender for Endpoint](device-control-policies.md).
 
 ## Step 3: Allow different levels of access for different types of devices
 
@@ -187,7 +187,7 @@ Device control also supports group SIDs. Change the SID in the read-only policy 
 
 ## Next steps
 
-- [Understand device control policies and entries](device-control-policies-entries.md)
+- [Understand Device control policies](device-control-policies.md)
 - [Deploy and manage device control with Intune](device-control-deploy-manage-intune.md)
 - [Deploy and manage device control with Group Policy](device-control-deploy-manage-gpo.md)
 - [View device control reports](device-control-report.md)

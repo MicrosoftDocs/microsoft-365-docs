@@ -122,6 +122,6 @@ If you want to change the default value of 60 days for persisting the local cach
 
 [Device control in Microsoft Defender for Endpoint](device-control-overview.md)
 
-[Device control policies and entries in Microsoft Defender for Endpoint](device-control-policies-entries.md)
+[Device control policies in Microsoft Defender for Endpoint](device-control-policies.md)
 
 [Device Control for macOS](mac-device-control-overview.md)

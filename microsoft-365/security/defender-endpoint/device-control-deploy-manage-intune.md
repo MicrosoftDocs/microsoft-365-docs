@@ -45,7 +45,7 @@ To use the following table, identify the type of setting you want to configure, 
 | **Device installation restrictions** | Profile | N/A |
 | **Groups for removable storage and printers** | N/A | OMA-URI<br/>Reusable settings |
 | **Groups other than removable storage and printers**<br/>(Network, VPN Connection, File, PrintJob) | N/A | OMA-URI |
-| **Policies and entries** <br/>(see [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md)) | Profile <br/>Rule | OMA-URI |
+| **Policies and entries** <br/>(see [Device control policies](device-control-policies.md)) | Profile <br/>Rule | OMA-URI |
 | **Removable disk deny write access** <br/>(Storage) | Profile | N/A |
 
 
@@ -136,6 +136,6 @@ In the **Add Row** pane, specify the following settings:
 
 [Device control in Microsoft Defender for Endpoint](device-control-overview.md)
 
-[Device control policies and entries in Microsoft Defender for Endpoint](device-control-policies-entries.md)
+[Device control policies in Microsoft Defender for Endpoint](device-control-policies.md)
 
 [Device Control for macOS](mac-device-control-overview.md)

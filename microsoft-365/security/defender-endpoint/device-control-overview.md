@@ -73,26 +73,26 @@ This section lists scenarios for device control. Select a tab, review the scenar
 
 | Scenario | Device control policy |
 |---|---|
-| Prevent installation of a specific USB device | Device control in Windows. See [Device control policies and entries](device-control-policies-entries.md). |
-| Prevent installation of all USB devices while allowing an installation of only an authorized USB | Device control in Windows. See [Device control policies and entries](device-control-policies-entries.md). |
+| Prevent installation of a specific USB device | Device control in Windows. See [Device control policies](device-control-policies.md). |
+| Prevent installation of all USB devices while allowing an installation of only an authorized USB | Device control in Windows. See [Device control policies](device-control-policies.md). |
 | Prevent copying of sensitive files to USB | [Endpoint DLP](/purview/endpoint-dlp-learn-about) |
 | Block write access to removable data drives not protected by BitLocker | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
 | Block write access to devices configured in another organization | Device control in Windows. See [BitLocker](/windows/security/operating-system-security/data-protection/bitlocker/configure?tabs=common). |
-| Prevent Write and Execute access to all but allow specific approved USBs | Device control in Defender for Endpoint. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
-| Audit Write and Execute access for all but block specific blocked USBs | Device control in Defender for Endpoint. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
-| Block read and execute access to specific file extension | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
-| Block people from access removable storage when the machine isn't connecting corporate network | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
+| Prevent Write and Execute access to all but allow specific approved USBs | Device control in Defender for Endpoint. See [Device control policies](device-control-policies.md). |
+| Audit Write and Execute access for all but block specific blocked USBs | Device control in Defender for Endpoint. See [Device control policies](device-control-policies.md). |
+| Block read and execute access to specific file extension | Device control in Microsoft Defender. See [Device control policies](device-control-policies.md). |
+| Block people from access removable storage when the machine isn't connecting corporate network | Device control in Microsoft Defender. See [Device control policies](device-control-policies.md). |
 
 ## [**Printers**](#tab/Printers)
 
 | Scenario | Device control policy |
 |---|---|
-| Block people from printing via noncorporate printer | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
-| Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md). |
+| Block people from printing via noncorporate printer | Device control in Microsoft Defender. See [Device control policies](device-control-policies.md). |
+| Only Allow specific USB printer(s) by VID/PID | Device control in Microsoft Defender. See [Device control policies](device-control-policies.md). |
 | Block printing of sensitive documents to any printer | [Endpoint DLP](/purview/endpoint-dlp-learn-about) |
-| Prevent installation of all printers | Device control in Windows. See [Device control policies and entries](device-control-policies-entries.md). |
-| Prevent installation of a specific printer | Device control in Windows. See [Device control policies and entries](device-control-policies-entries.md). |
-| Prevent installation of all printers while allowing a specific printer to be installed | Device control in Windows. See [Device control policies and entries](device-control-policies-entries.md). |
+| Prevent installation of all printers | Device control in Windows. See [Device control policies](device-control-policies.md). |
+| Prevent installation of a specific printer | Device control in Windows. See [Device control policies](device-control-policies.md). |
+| Prevent installation of all printers while allowing a specific printer to be installed | Device control in Windows. See [Device control policies](device-control-policies.md). |
 
 ## [**Bluetooth**](#tab/Bluetooth)
 
@@ -104,7 +104,7 @@ This section lists scenarios for device control. Select a tab, review the scenar
 
 ## Device control in Defender for Endpoint sample scenarios
 
-Device control capabilities in Defender for Endpoint provide more advanced capabilities than what's built into the Windows operating system. With device control in Defender for Endpoint, you have a robust access control model that enables a wide range of scenarios (see [Device control policies and entries in Defender for Endpoint](device-control-policies-entries.md)).  
+Device control capabilities in Defender for Endpoint provide more advanced capabilities than what's built into the Windows operating system. With device control in Defender for Endpoint, you have a robust access control model that enables a wide range of scenarios (see [Device control policies](device-control-policies.md)).  
 
 If you're interested in sample queries and configuration methods, see the following examples:
 
@@ -131,5 +131,5 @@ Currently, device control is not supported on servers.
 ## Next steps
 
 - [Device control walkthroughs](device-control-walkthroughs.md)
-- [Learn about device control policies and entries](device-control-policies-entries.md)
+- [Learn about Device control policies](device-control-policies.md)
 - [View device control reports](device-control-report.md)
