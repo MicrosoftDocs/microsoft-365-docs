@@ -41,8 +41,8 @@ When a device control policy is triggered, an event is visible with advanced hun
 
 When a `RemovableStoragePolicyTriggered` action occurs, event information about the disk and file system level enforcement is available. 
 
-> [!NOTE]
-> Currently, there's a limit of 300 events per device per day for RemovableStoragePolicyTriggered events. Use the device control report to view additional data.
+> [!TIP]
+> Currently, in advanced hunting, there's a limit of 300 events per device per day for `RemovableStoragePolicyTriggered` events. Use the device control report to view additional data.
 
 ```kusto
 
