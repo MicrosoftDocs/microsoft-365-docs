@@ -4,7 +4,7 @@ description: Learn about Device control policies in Defender for Endpoint
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/25/2024
+ms.date: 01/31/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -192,7 +192,14 @@ You can configure entries using Intune, an XML file in Windows, or a JSON file o
 
 ### [**Intune**](#tab/Removable)
 
-The following screenshot shows how you can manage entries in Intune. The **Access mask** field has options, such as **Read** (Disk Level Read = 1), **Write** (Disk Level Write = 2), **Execute** (Disk Level Execute = 4) and **Print** (Print = 64). Not all features are shown in the Intune user interface. For more information, see [Deploy and manage device control with Intune](device-control-deploy-manage-intune.md).
+In Intune, the **Access mask** field has options, such as:
+
+- **Read** (Disk Level Read = 1)
+- **Write** (Disk Level Write = 2)
+- **Execute** (Disk Level Execute = 4)
+- **Print** (Print = 64). 
+
+Not all features are shown in the Intune user interface. For more information, see [Deploy and manage device control with Intune](device-control-deploy-manage-intune.md).
 
 ### [**XML (Windows)**](#tab/XML)
 
