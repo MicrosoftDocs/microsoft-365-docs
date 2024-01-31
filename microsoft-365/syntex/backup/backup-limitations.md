@@ -99,3 +99,11 @@ During the preview, we're enforcing self-service restore limits while we gain a 
 |Number of artifacts (active and completed) restored in a day per workload    | Not applicable        | > 10,000        |
 
 *Customer can call into support to lift the safety restrictions.
+
+Follow these steps:
+
+1. As an administrator, select the following link, which will populate a help query in the admin center: [M365 Backup Limit Request](https://aka.ms/M365BackupLimit).
+
+2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**.
+
+3. Leave **Description** blank.
