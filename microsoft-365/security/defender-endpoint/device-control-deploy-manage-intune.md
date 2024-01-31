@@ -44,8 +44,8 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
    - Under **Data Protection**, see [Allow Direct Memory Access](/windows/client-management/mdm/policy-csp-dataprotection) settings.
    - Under **Dma Guard**, see [Device Enumeration Policy](/windows/client-management/mdm/policy-csp-dmaguard?WT.mc_id=Portal-fx) settings.
    - Under **Storage**, see [Removable Disk Deny Write Access](/windows/client-management/mdm/policy-csp-Storage#removablediskdenywriteaccess) settings.
-   - Under **Connectivity**, see **Allow USB Connection** and **Allow Bluetooth** settings.
-   - Under **Bluetooth**, see a list of settings that pertain to Bluetooth connections and services. Formore details, see [Policy CSP - Bluetooth](/windows/client-management/mdm/policy-csp-Bluetooth?WT.mc_id=Portal-fx).
+   - Under **Connectivity**, see [Allow USB Connection](/windows/client-management/mdm/policy-csp-Connectivity#allowusbconnection)** and [Allow Bluetooth](/windows/client-management/mdm/policy-csp-Connectivity#allowbluetooth) settings.
+   - Under **Bluetooth**, see a list of settings that pertain to Bluetooth connections and services. For more details, see [Policy CSP - Bluetooth](/windows/client-management/mdm/policy-csp-Bluetooth?WT.mc_id=Portal-fx).
    - Under **Device Control**, you can configure custom policies with reusable settings. For example, you can use XML files to set up your policies. For more details, see [Rules](device-control-policies.md#rules).
 
 6. After you have configured your settings, proceed to the **Scope tags** tab, where you can specify [scope tags](/mem/intune/fundamentals/scope-tags) for the policy.
