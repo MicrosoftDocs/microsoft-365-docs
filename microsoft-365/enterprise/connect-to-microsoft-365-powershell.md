@@ -32,6 +32,8 @@ Microsoft Graph PowerShell enables you to manage your Microsoft 365 settings fro
 
 Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the Microsoft Azure Active Directory module for Windows PowerShell for application proxy management, user, and contact administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
 
+<a name='connect-with-the-azure-active-directory-powershell-for-graph-module'></a>
+
 ## What do you need to know before you begin?
 
 > [!NOTE]
