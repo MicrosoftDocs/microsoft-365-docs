@@ -2,10 +2,10 @@
 title: Secure by default in Office 365
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/20/2023
+ms.date: 01/19/2024
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -15,6 +15,7 @@ search.appverid:
 ms.collection:
   - m365-security
   - tier2
+  - essentials-security
 description: Learn more about the secure by default setting in Exchange Online Protection (EOP)
 ms.subservice: mdo
 ms.service: microsoft-365-security

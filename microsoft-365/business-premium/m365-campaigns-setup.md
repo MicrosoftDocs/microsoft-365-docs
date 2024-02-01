@@ -4,13 +4,13 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.date: 11/01/2023
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - tier1
@@ -41,7 +41,7 @@ Campaigns and political parties in the USA are eligible for special pricing for 
    > [!IMPORTANT]
    > Due to local regulations, we are unable to offer Microsoft 365 for Campaigns in the following states at this time: CO, DE, IL, OK, WI & WY. We encourage campaigns in those states to explore additional offerings at [Microsoft 365 for business](https://www.office.com/business).
 
-If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft. See [Microsoft 365 for Campaigns](https://m365forcampaigns.microsoft.com).  
+If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft. See [Microsoft 365 for Campaigns](https://m365forcampaigns.microsoft.com).
 
 > [!TIP]
 > If you're not eligible for special pricing, Microsoft 365 Business Premium is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [How to get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md).
@@ -80,13 +80,13 @@ After you have subscribed to Microsoft 365 for Campaigns, your next step is to g
 
 Make sure that you meet the following requirements before you begin your setup process:
 
-| Requirement | Description |
-|:---|:---|
-| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following resources: <br/>- [Get Microsoft 365 Business Premium](m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium)<br/>- [Get Microsoft 365 for Campaigns](#get-microsoft-365-for-campaigns) |
-| Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
-| Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Operating systems (client) | **Windows**:  Windows 10 or 11 Pro<br/>**macOS**: One of the three most recent versions of macOS | 
-| Operating systems (servers) | Windows Server or Linux Server <br/>(Requires an additional license, such as [Microsoft Defender for Business servers](../security/defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).)  |
+|Requirement|Description|
+|---|---|
+|Subscription|Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following resources: <ul><li>[Get Microsoft 365 Business Premium](m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium)</li><li>[Get Microsoft 365 for Campaigns](#get-microsoft-365-for-campaigns)</li></ul>|
+|Permissions|To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md).|
+|Browser requirements|Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).|
+|Operating systems (client)|**Windows**:  Windows 10 or 11 Pro <br/> **macOS**: One of the three most recent versions of macOS|
+|Operating systems (servers)|Windows Server or Linux Server <br/> (Requires an additional license, such as [Microsoft Defender for Business servers](../security/defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).)|
 
 > [!TIP]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
@@ -133,7 +133,7 @@ The elements you can update are:
 - Banner logo
 - Username hint
 
-For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+For examples of privacy and consent notices, see Appendix A in [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/d9/criminal-ccips/legacy/2015/01/14/ssmanual2009_002.pdf).
 
 ## Visual guide: Help protect yourself and your campaign from digital threats
 
