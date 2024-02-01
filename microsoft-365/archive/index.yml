@@ -43,7 +43,7 @@ landingContent:
             url: /microsoft-365/syntex/archive/archive-pricing
 
 # Card 3
-  - title: Archive data
+  - title: Archive sites
     linkLists:
       - linkListType: overview
         links:
