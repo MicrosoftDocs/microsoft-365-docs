@@ -4,7 +4,7 @@ description: Learn about Device control policies in Defender for Endpoint
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/31/2024
+ms.date: 02/01/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -726,3 +726,7 @@ The `FileEvidenceLocation` field of has the location of the evidence file, if on
 
 ## Next steps
 
+- [View device control events and information in Microsoft Defender for Endpoint](device-control-report.md)
+- [Deploy and manage device control in Microsoft Defender for Endpoint with Microsoft Intune](device-control-deploy-manage-intune.md)
+- [Deploy and manage device control in Microsoft Defender for Endpoint using Group Policy](device-control-deploy-manage-gpo.md)
+- [Device Control for macOS](mac-device-control-overview.md)
