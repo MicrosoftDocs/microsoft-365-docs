@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 02/02/2023
+ms.date: 01/16/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence

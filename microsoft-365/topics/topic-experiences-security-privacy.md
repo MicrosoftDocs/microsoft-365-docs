@@ -10,7 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-  - essentials-accountability
+  - essentials-privacy
 ms.service: viva 
 ms.subservice: viva-topics 
 search.appverid:
@@ -23,7 +23,10 @@ description: Learn how to plan for security and privacy in Topics.
 
 Topics uses existing content security features in Microsoft 365, along with administrative controls, to control what AI-generated content is shown to users in your organization. It is the combination of Microsoft 365 security settings (permissions to sites, files, and folders) and Topics admin settings that determine what a given user can see in topics.
 
-Setting up Topics does not modify any existing access controls on content in your organization. Users will only see what they already have access to.
+Setting up Topics does not modify any existing access controls on content in your organization. Users can only see what they already have access to.
+
+>[!NOTE]
+>Users might not see everything that the previously mentioned settings allow them to. [Topic scores](manage-topics.md#topic-scores) and [topic status](manage-topics.md#topic-status) also determine what users see.
 
 This article describes how Topics works from a security perspective and the options that administrators and knowledge managers have to control topic visibility. Read this article as part of your [planning for Topics](plan-topic-experiences.md).
 
@@ -34,9 +37,9 @@ You should be familiar with [what Topics is](topic-experiences-overview.md), the
 To see topics, a user must:
 
 - Have a license that includes Topics
-- Be a [topic viewer](manage-topic-visibility.md#change-who-can-see-topics-in-your-organization), [contributor, or knowledge manager](topic-experiences-user-permissions.md)
+- Have permissions to [view topics](manage-topic-visibility.md#change-who-can-see-topics-in-your-organization), [or create, contribute to, or manage topics](topic-experiences-user-permissions.md).
 
-These two things give users view access to the topic center and allow them to see highlights and topic cards.
+These two things give users view access to the topic center and allow them to see topic experiences in Microsoft 365.
 
 Topic contributors additionally have [create and edit](topic-experiences-user-permissions.md) permissions for topics, and knowledge managers can confirm or remove topics.
 
