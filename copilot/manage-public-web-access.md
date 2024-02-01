@@ -40,11 +40,11 @@ For Search admins and Global admins:
 
 1. In the Microsoft 365 admin center, go to **Settings** > **Search & intelligence**.
 
-2. On the **Configurations** page, select **Public web content in Microsoft Copilot for Microsoft 365**.
+2. On the **Configurations** page, select **Improved responses with web content in Copilot for Microsoft 365**.
 
 3. Select Change.
 
-4. Unselect the checkbox for Allow Copilot to reference public web content.
+4. Unselect the checkbox for **Allow Copilot to reference public web content**.
 
 5. Select Save.
 
@@ -55,7 +55,7 @@ For Search admins and Global admins:
 For Global admins only:
 
 1. In the admin center, go to **Settings** > **Org settings**.
-2. On the Copilot page, select **Public Web Content in Microsoft Copilot for Microsoft 365**.
+2. On the Copilot page, select **Improved responses with web content in Copilot for Microsoft 365**.
 3. Select **Change**.
 4. Unselect the checkbox for **Allow Copilot to reference public web content**.
 5. Select **Save**.
