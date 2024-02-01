@@ -23,7 +23,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 1/17/2024
+ms.date: 01/17/2024
 ---
 
 # Frontline team collaboration

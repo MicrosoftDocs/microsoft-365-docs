@@ -19,7 +19,7 @@ ms.collection:
   - essentials-get-started
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/23/2024
+ms.date: 01/30/2024
 ---
 
 # Get started with Microsoft Defender Experts for XDR
@@ -53,14 +53,14 @@ You also need to grant our experts one or both of the following permissions:
 **To grant our experts permissions:**
 
 1. In the same Defender Experts settings setup, under **Permissions**, choose the access level(s) you want to grant our experts.
-1. If you wish to [exclude device and user groups](#exclude-devices-and-users-from-remediation) in your organization from remediation actions, select **Manage exclusions**.
+1. If you wish to [exclude device and user groups](#exclude-devices-from-remediation) in your organization from remediation actions, select **Manage exclusions**.
 1. Select **Next** to [add contact persons or groups](#tell-us-who-to-contact-for-important-matters).
 
 To edit or update permissions after the initial setup, go to **Settings** > **Defender Experts** > **Permissions**.
 
-## Exclude devices and users from remediation
+## Exclude devices from remediation
 
-Defender Experts for XDR lets you exclude devices and users from remediation actions taken by our experts and instead get remediation guidance for those entities. These exclusions are based on identified [device groups](../defender-endpoint/machine-groups.md) in Microsoft Defender for Endpoint and identified [user groups](/entra/fundamentals/concept-learn-about-groups) in Microsoft Entra ID.
+Defender Experts for XDR lets you exclude devices and users from remediation actions taken by our experts and instead get remediation guidance for those entities. These exclusions are based on identified [device groups](../defender-endpoint/machine-groups.md) in Microsoft Defender for Endpoint<!--and identified [user groups](/entra/fundamentals/concept-learn-about-groups) in Microsoft Entra ID-->.
 
 **To exclude device groups:**
 
@@ -75,7 +75,7 @@ Defender Experts for XDR lets you exclude devices and users from remediation act
 
 :::image type="content" source="../../media/xdr/exclude-device-groups.png" alt-text="Screenshot of option to exclude device groups." lightbox="../../media/xdr/exclude-device-groups.png":::
 
-**To exclude user groups:**
+<!--**To exclude user groups:**
 
 1. In the same Defender Experts settings setup, under **Exclusions**, go to the **User groups** tab.
 2. Select **+ Add user groups**, then search for and choose the user group(s) that you wish to exclude.
@@ -89,7 +89,8 @@ Defender Experts for XDR lets you exclude devices and users from remediation act
 :::image type="content" source="../../media/xdr/exclude-user-groups.png" alt-text="Screenshot of option to exclude user groups in Defender Experts for XDR service." lightbox="../../media/xdr/exclude-user-groups.png":::
 
 To edit or update exclusions after the initial setup, go to **Settings** > **Defender Experts** > **Exclusions**, then go to the **Device groups** or **User groups** tab.
-
+-->
+<!--
 ### Exclude all high-value devices or users automatically
 
 Defender Experts for XDR also lets you exclude automatically identified high-value devices and users, such as key executives, or sensitive admins, from remediation actions by our experts:
@@ -110,6 +111,7 @@ Similar to the other excluded device or user groups, you instead get remediation
 
 > [!NOTE]
 > Unlike the other excluded device and user groups, excluded high-value entities aren't listed in the **Device groups** or **User groups** tab.
+-->
 
 ## Tell us who to contact for important matters
 
