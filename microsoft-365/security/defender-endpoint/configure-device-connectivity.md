@@ -104,8 +104,8 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 
 **Defender Antivirus versions (macOS/Linux)**
 
-- [macOS supported versions](microsoft-defender-endpoint-mac.md) with MDE product version 101.23092+.* running InsiderFast (Beta) ring
-- [Linux supported versions](microsoft-defender-endpoint-linux.md) with MDE product version 101.23092+.* running InsiderFast (Beta) ring
+- [macOS supported versions](microsoft-defender-endpoint-mac.md) with MDE product version 101.23102.*+
+- [Linux supported versions](microsoft-defender-endpoint-linux.md) with MDE product version 101.23102.*+
 
 **Supported Operating Systems**
 
@@ -115,8 +115,8 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 -   Windows Server 2019
 -   Windows Server 2022
 -   Windows Server 2012 R2, Server 2016 R2, fully updated running Defender for Endpoint modern unified solution (installation through MSI).
-- [macOS supported versions](microsoft-defender-endpoint-mac.md) with MDE product version 101.23092+.* running InsiderFast (Beta) ring
-- [Linux supported versions](microsoft-defender-endpoint-linux.md) with MDE product version 101.23092+.* running InsiderFast (Beta) ring
+- [macOS supported versions](microsoft-defender-endpoint-mac.md) with MDE product version 101.23102.*+
+- [Linux supported versions](microsoft-defender-endpoint-linux.md) with MDE product version 101.23102.*+
 
 > [!IMPORTANT]
 > - **Devices running on MMA agent are not supported** on the streamlined connectivity method and will need to continue using the standard URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Server 2012 & 2016 R2 not upgraded to modern unified agent). 
