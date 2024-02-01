@@ -8,17 +8,19 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
   - NOCSH
-ms.date: 09/20/2023
+ms.date: 02/01/2024
 ms.reviewer: georgiah
 ms.custom:
   - it-pro
   - admindeeplinkMAC
   - admindeeplinkEXCHANGE
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.localizationpriority: high
 ms.collection:
   - scotvorg
   - M365-subscription-management
+  - must-keep
 ---
 
 # Cross-tenant mailbox migration
@@ -55,7 +57,9 @@ When a mailbox is migrated cross-tenant with this feature, only user-visible con
 
 If you do not have the proper license assigned to the user being migrated, the migration fails, and you receive an error that is similar to the following:
 
-> Error: CrossTenantMigrationWithoutLicensePermanentException: No license was found for the source recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87', or the target recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87'. A Cross-tenant User Data Migration license is required to move a mailbox between tenants.
+``` code
+Error: CrossTenantMigrationWithoutLicensePermanentException: No license was found for the source recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87', or the target recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87'. A Cross-tenant User Data Migration license is required to move a mailbox between tenants.
+```
 
 ## Preparing source and target tenants
 
@@ -572,7 +576,6 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 > In addition to this X500 proxy, you will need to copy all X500 proxies from the mailbox in the source to the mailbox in the target.
 > While rare, you could also run across an X400 proxy address on a mailbox, while not a requirement for the move to complete, it is recommended that you also stamp this address on the target mail user object.
 
-
 ### Can the source and target tenants utilize the same domain name?
 
 No, the source tenant and target tenant domain names must be unique, for example, a source domain of contoso.com and the target domain of northwindtraders.com.
@@ -586,7 +589,7 @@ Yes. However, we only keep the store permissions as described in these articles:
 
 ### Do you have any recommendations for batches?
 
-To ensure a smooth migration process, we recommend limiting the number of mailboxes per batch to 2,000 and submitting batches at least two weeks prior to the cut-over date. This will not impact end users during synchronization. For guidance on migrating quantities exceeding 50,000 mailboxes, please contact your account team for assistance.
+Don't exceed 2,000 mailboxes per batch. We strongly recommend submitting batches two weeks prior to the cut-over date as there's no impact on the end users during synchronization. If you need guidance for mailboxes quantities over 50,000, you can reach out to the Engineering Feedback Distribution List at crosstenantmigrationpreview@service.microsoft.com.
 
 ### What if I use Service encryption with Microsoft Purview Customer Key?
 
@@ -678,53 +681,135 @@ Mailbox signatures are not migrated cross tenant and must be recreated.
 
 - When any Exchange service plan is applied to a MailUser, the Microsoft Entra ID process starts to enforce proxy scrubbing to ensure that the local organization isn't able to send out mail, spoof, or mail from another tenant. Any SMTP address on a recipient object with these service plans will be removed if the address isn't verified by the local organization. As is the case in the example, the northwindtraders.com domain isn't verified by the contoso.onmicrosoft.com tenant; therefore, the scrubbing removes that northwindtraders.com domain. If you wish to persist these external domains on MailUser, either before or after the migration, you need to alter your migration processes to strip licenses after the move completes or before the move to ensure that the users have the expected external branding applied. You'll need to ensure that the mailbox object is properly licensed to not affect mail service. An example script to remove the service plans on a MailUser in the contoso.onmicrosoft.com tenant is shown here.
 
-  ```PowerShell
-  $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans "LOCKBOX_ENTERPRISE","EXCHANGE_S_ENTERPRISE","INFORMATION_BARRIERS","MIP_S_CLP2","MIP_S_CLP1","MYANALYTICS_P2","EXCHANGE_ANALYTICS","EQUIVIO_ANALYTICS","THREAT_INTELLIGENCE","PAM_ENTERPRISE","PREMIUM_ENCRYPTION"
-  Set-MsolUserLicense -UserPrincipalName ProxyTest@contoso.com LicenseOptions $lo
-  ```
+> [!NOTE]
+> The following script uses Microsoft Graph Powershell. For more information, see [Microsoft Graph PowerShell overview](/powershell/microsoftgraph/overview).
+>
+> For information about how to use different methods to authenticate ```Connect-Graph``` in an unattended script, see the article [Authentication module cmdlets in Microsoft Graph PowerShell](/powershell/microsoftgraph/authentication-commands).
+
+```powershell
+# Connect to Microsoft Graph
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+
+# Get licensing plans and include disabled plans
+$EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'ENTERPRISEPREMIUM'
+$userLicense = Get-MgUserLicenseDetail -UserId "38955658-c844-4f59-9430-6519430ac89b"
+
+$userDisabledPlans = $userLicense.ServicePlans |
+  Where ProvisioningStatus -eq "Disabled" |
+  Select -ExpandProperty ServicePlanId
+
+$newDisabledPlans = $EmsSku.ServicePlans |
+  Where ServicePlanName -in ("LOCKBOX_ENTERPRISE","EXCHANGE_S_ENTERPRISE","INFORMATION_BARRIERS","MIP_S_CLP2","MIP_S_CLP1","MYANALYTICS_P2","EXCHANGE_ANALYTICS","EQUIVIO_ANALYTICS","THREAT_INTELLIGENCE","PAM_ENTERPRISE","PREMIUM_ENCRYPTION") |
+  Select -ExpandProperty ServicePlanId
+
+$disabledPlans = $userDisabledPlans + $newDisabledPlans | Select -Unique
+
+$addLicenses = @(
+  @{SkuId = $EmsSku.SkuId
+  DisabledPlans = $disabledPlans
+  }
+  )
+
+Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
+
+Id                                   DisplayName   Mail UserPrincipalName                     UserType
+--                                   -----------   ---- -----------------                     --------
+38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
+```
 
   Results in the set of ServicePlans assigned are shown here:
 
   ```PowerShell
-  (Get-MsolUser -UserPrincipalName ProxyTest@contoso.com).licenses | Select-Object -ExpandProperty ServiceStatus |sort ProvisioningStatus -Descending
+  Get-MgUserLicenseDetail -UserId '38955658-c844-4f59-9430-6519430ac89b' | Select-Object -ExpandProperty ServicePlans | sort ProvisioningStatus -Ascending
 
-  ServicePlan           ProvisioningStatus
-  -----------           ------------------
-  ATP_ENTERPRISE        PendingProvisioning
-  MICROSOFT_SEARCH      PendingProvisioning
-  INTUNE_O365           PendingActivation
-  PAM_ENTERPRISE        Disabled
-  EXCHANGE_ANALYTICS    Disabled
-  EQUIVIO_ANALYTICS     Disabled
-  THREAT_INTELLIGENCE   Disabled
-  LOCKBOX_ENTERPRISE    Disabled
-  PREMIUM_ENCRYPTION    Disabled
-  EXCHANGE_S_ENTERPRISE Disabled
-  INFORMATION_BARRIERS  Disabled
-  MYANALYTICS_P2        Disabled
-  MIP_S_CLP1            Disabled
-  MIP_S_CLP2            Disabled
-  ADALLOM_S_O365        PendingInput
-  RMS_S_ENTERPRISE      Success
-  YAMMER_ENTERPRISE     Success
-  PROJECTWORKMANAGEMENT Success
-  BI_AZURE_P2           Success
-  WHITEBOARD_PLAN3      Success
-  SHAREPOINTENTERPRISE  Success
-  SHAREPOINTWAC         Success
-  KAIZALA_STANDALONE    Success
-  OFFICESUBSCRIPTION    Success
-  MCOSTANDARD           Success
-  Deskless              Success
-  STREAM_O365_E5        Success
-  FLOW_O365_P3          Success
-  POWERAPPS_O365_P3     Success
-  TEAMS1                Success
-  MCOEV                 Success
-  MCOMEETADV            Success
-  BPOS_S_TODO_3         Success
-  FORMS_PLAN_E5         Success
-  SWAY                  Success
+  AppliesTo ProvisioningStatus  ServicePlanId                        ServicePlanName
+--------- ------------------  -------------                        ---------------
+User      Success             2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 ADALLOM_S_STANDALONE
+User      Success             6c6042f5-6f01-4d67-b8c1-eb99d36eed3e STREAM_O365_E5
+User      Success             e212cbc7-0961-4c40-9825-01117710dcb1 FORMS_PLAN_E5
+User      Success             07699545-9485-468e-95b6-2fca3738be01 FLOW_O365_P3
+User      Success             9c0dab89-a30c-4117-86e7-97bda240acd2 POWERAPPS_O365_P3
+User      Success             871d91ec-ec1a-452b-a83f-bd76c7d770ef WINDEFATP
+User      Success             21b439ba-a0ca-424f-a6cc-52f954a5b111 WIN10_PRO_ENT_SUB
+User      Success             57ff2da0-773e-42df-b2af-ffb7a2317929 TEAMS1
+User      Success             8c7d2df8-86f0-4902-b2ed-a0458298f3b3 Deskless
+User      Success             8e0c0a52-6a6c-4d40-8370-dd62790dcd70 THREAT_INTELLIGENCE
+User      Success             4a51bca5-1eff-43f5-878c-177680f191af WHITEBOARD_PLAN3
+User      Success             efb0351d-3b08-4503-993d-383af8de41e3 MIP_S_CLP2
+User      Success             617b097b-4b93-4ede-83de-5f075bb5fb2f PREMIUM_ENCRYPTION
+User      Success             8c098270-9dd4-4350-9b30-ba4703f3b36b ADALLOM_S_O365
+Company   Success             94065c59-bc8e-4e8b-89e5-5138d471eaff MICROSOFT_SEARCH
+User      Success             14ab5db5-e6c4-4b20-b4bc-13e36fd2227f ATA
+User      Success             3fb82609-8c27-4f7b-bd51-30634711ee67 BPOS_S_TODO_3
+User      Success             b1188c4c-1b36-4018-b48b-ee07604f6feb PAM_ENTERPRISE
+User      Success             5136a095-5cf0-4aff-bec3-e84448b38ea5 MIP_S_CLP1
+User      Success             33c4f319-9bdd-48d6-9c4d-410b750a4a5a MYANALYTICS_P2
+User      Success             5689bec4-755d-4753-8b61-40975025187c RMS_S_PREMIUM2
+User      Success             4828c8ec-dc2e-4779-b502-87ac9ce28ab7 MCOEV
+User      Success             9f431833-0334-42de-a7dc-70aa40db46db LOCKBOX_ENTERPRISE
+User      Success             3e26ee1f-8a5f-4d52-aee2-b81ce45c8f40 MCOMEETADV
+User      Success             43de0ff5-c92c-492b-9116-175376d08c38 OFFICESUBSCRIPTION
+User      Success             0feaeb32-d00e-4d66-bd5a-43b5b83db82c MCOSTANDARD
+User      Success             70d33638-9c74-4d01-bfd3-562de28bd4ba BI_AZURE_P2
+Company   Success             f20fedf3-f3c3-43c3-8267-2bfdd51c0939 ATP_ENTERPRISE
+User      Success             4de31727-a228-4ec3-a5bf-8e45b5ca48cc EQUIVIO_ANALYTICS
+User      Success             efb87545-963c-4e0d-99df-69c6916d9eb0 EXCHANGE_S_ENTERPRISE
+User      Success             34c0d7a0-a70f-4668-9238-47f9fc208882 EXCHANGE_ANALYTICS
+User      Success             8a256a2b-b617-496d-b51b-e76466e88db0 MFA_PREMIUM
+User      Success             41781fb2-bc02-4b7c-bd55-b576c07bb09d AAD_PREMIUM
+User      Success             bea4c11e-220a-4e6d-8eb8-8ea15d019f90 RMS_S_ENTERPRISE
+User      Success             eec0eb4f-6444-4f95-aba0-50c24d67f998 AAD_PREMIUM_P2
+User      Success             6c57d4b6-3b23-47a5-9bc9-69f17b4947b3 RMS_S_PREMIUM
+User      Success             5dbe027f-2339-4123-9542-606e4d348a72 SHAREPOINTENTERPRISE
+User      Success             b737dad2-2f6c-4c65-90e3-ca563267e8b9 PROJECTWORKMANAGEMENT
+User      Success             e95bec33-7c88-4a70-8e19-b10bd9d0c014 SHAREPOINTWAC
+User      Success             7547a3fe-08ee-4ccb-b430-5077c5041653 YAMMER_ENTERPRISE
+User      Success             a23b959c-7ce8-4e57-9140-b90eb88a9e97 SWAY
+User      Success             c4801e8a-cb58-4c35-aca6-f2dcc106f287 INFORMATION_BARRIERS
+User      Success             b76fb638-6ba6-402a-b9f9-83d28acb3d86 VIVA_LEARNING_SEEDED
+Company   Success             db4d623d-b514-490b-b7ef-8885eee514de Nucleus
+Company   Success             6f23d6a9-adbf-481c-8538-b4c095654487 M365_LIGHTHOUSE_CUSTOMER_PLAN1
+User      Success             a82fbf69-b4d7-49f4-83a6-915b2cf354f4 VIVAENGAGE_CORE
+User      Success             9a6eeb79-0b4b-4bf0-9808-39d99a2cd5a3 Windows_Autopatch
+User      Success             cd31b152-6326-4d1b-ae1b-997b625182e6 MIP_S_Exchange
+User      Success             a413a9ff-720c-4822-98ef-2f37c2a21f4c MICROSOFT_COMMUNICATION_COMPLIANCE
+User      Success             795f6fe0-cc4d-4773-b050-5dde4dc704c9 UNIVERSAL_PRINT_01
+Company   Success             2b815d45-56e4-4e3a-b65c-66cb9175b560 ContentExplorer_Standard
+User      Success             7bf960f6-2cd9-443a-8046-5dbff9558365 WINDOWSUPDATEFORBUSINESS_DEPLOYMENTSERVICE
+User      Success             3ec18638-bd4c-4d3b-8905-479ed636b83e CustomerLockboxA_Enterprise
+User      Success             3efbd4ed-8958-4824-8389-1321f8730af8 MESH_AVATARS_ADDITIONAL_FOR_TEAMS
+User      Success             99cd49a9-0e54-4e07-aea1-d8d9f5f704f5 Defender_for_Iot_Enterprise
+User      Success             0898bdbb-73b0-471a-81e5-20f1fe4dd66e KAIZALA_STANDALONE
+User      Success             c948ea65-2053-4a5a-8a62-9eaaaf11b522 PURVIEW_DISCOVERY
+User      Success             a1ace008-72f3-4ea0-8dac-33b3a23a2472 CLIPCHAMP
+User      Success             f6de4823-28fa-440b-b886-4783fa86ddba M365_AUDIT_PLATFORM
+User      Success             0d0c0d31-fae7-41f2-b909-eaf4d7f26dba Bing_Chat_Enterprise
+User      Success             dcf9d2f4-772e-4434-b757-77a453cfbc02 MESH_AVATARS_FOR_TEAMS
+User      Success             c4b8c31a-fb44-4c65-9837-a21f55fcabda MICROSOFT_LOOP
+User      Success             a6520331-d7d4-4276-95f5-15c0933bc757 GRAPH_CONNECTORS_SEARCH_INDEX
+User      Success             e26c2fcc-ab91-4a61-b35c-03cdc8dddf66 INFO_GOVERNANCE
+User      Success             46129a58-a698-46f0-aa5b-17f6586297d9 DATA_INVESTIGATIONS
+User      Success             9d0c4ee5-e4a1-4625-ab39-d82b619b1a34 INSIDER_RISK_MANAGEMENT
+User      Success             65cc641f-cccd-4643-97e0-a17e3045e541 RECORDS_MANAGEMENT
+User      Success             d2d51368-76c9-4317-ada2-a12c004c432f ML_CLASSIFICATION
+User      Success             bf6f5520-59e3-4f82-974b-7dbbc4fd27c7 SAFEDOCS
+User      Success             2f442157-a11c-46b9-ae5b-6e39ff4e5849 M365_ADVANCED_AUDITING
+User      Success             41fcdd7d-4733-4863-9cf4-c65b83ce2df4 COMMUNICATIONS_COMPLIANCE
+User      Success             6db1f1db-2b46-403f-be40-e39395f08dbb CUSTOMER_KEY
+User      Success             6dc145d6-95dd-4191-b9c3-185575ee6f6b COMMUNICATIONS_DLP
+User      Success             199a5c09-e0ca-4e37-8f7c-b05d533e1ea2 MICROSOFTBOOKINGS
+User      Success             ded3d325-1bdc-453e-8432-5bac26d7a014 POWER_VIRTUAL_AGENTS_O365_P3
+Company   Success             d9fa6af4-e046-4c89-9226-729a0786685d Content_Explorer
+User      Success             afa73018-811e-46e9-988f-f75d2b1b8430 CDS_O365_P3
+User      Success             b21a6b06-1988-436e-a07b-51ec6d9f52ad PROJECT_O365_P3
+User      Success             64bfac92-2b17-4482-b5e5-a0304429de3e MICROSOFTENDPOINTDLP
+User      Success             bf28f719-7844-4079-9c78-c1307898e192 MTP
+User      Success             28b0fa46-c39a-4188-89e2-58e979a6b014 DYN365_CDS_O365_P3
+User      Success             d587c7a3-bda9-4f99-8776-9bcf59c84f75 INSIDER_RISK
+User      Success             531ee2f8-b1cb-453b-9c21-d2180d014ca5 EXCEL_PREMIUM
+User      PendingProvisioning f0ff6ac6-297d-49cd-be34-6dfef97f0c28 MESH_IMMERSIVE_FOR_TEAMS
+User      PendingInput        c1ec4a95-1f05-45b3-a911-aa3fa01094f5 INTUNE_A
+Company   PendingActivation   882e1d05-acd1-4ccb-8708-6ee03664b117 INTUNE_O365
   ```
 
   The user's PrimarySMTPAddress is no longer scrubbed. The northwindtraders.com domain isn't owned by the contoso.onmicrosoft.com tenant and will persist as the primary SMTP address shown in the directory.
@@ -797,53 +882,98 @@ Mailbox signatures are not migrated cross tenant and must be recreated.
   This failure is because the user was not in the migration scope when batch was started and the user has AuxArchive on the source.  
   Add user to the correct security group on source target.  
   Remove the migration user from the batch.  
-  Remove users with the following command: Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  Remove users with the following command:
+
+  ```powershell
+  Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  ```
+  
   Add user to new batch.  
 
 - MailboxIsNotInExpectedDBException
 
   This failure is due to internal Microsoft maintenance.  
   Remove the migration user from the batch.  
-  Remove users with the following command: Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  Remove users with the following command:
+
+   ```powershell
+  Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser
+   ```
+  
   Add user to new batch.  
 
 - NotAcceptedDomainException
 
   There is an invalid proxy address stamped on the target user. An example would be where a user in contoso.onmicrosoft.com had a proxy address of  fabrikam.onmicrosoft.com, which is the source tenant.  
-  Remove the invalid proxy address using Set-MailUser LaraN@contoso.onmicrosoft.com -EmailAddress @{remove="smtp:LaraN@northwindtraders.onmicrosoft.com"}  
+  Remove the invalid proxy address using the following command:
+
+  ```powershell
+  Set-MailUser LaraN@contoso.onmicrosoft.com -EmailAddress @{remove="smtp:LaraN@northwindtraders.onmicrosoft.com"}
+  ```
+
   Resume the migration batch.  
 
 - SourceAuxArchiveIsProvisionedDuringCrossTenantMovePermanentException
 
   A new AuxArchive was provisioned during migration.  
   Remove the migration user from the batch.  
-  Remove users with the following command: Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  Remove users with the following command:
+
+  ```powershell
+  Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser 
+   ```
+
   Add user to new batch.  
 
 - UserDuplicateInOtherBatchException
 
   User exists in another batch already.  
   Remove the migration user from the batch.  
-  Remove users with the following command: Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  Remove users with the following command:
+
+  ```powershell
+  Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser
+  ```
+
   Add user to new batch.  
 
 - MissingExchangeGuidException
 
   The target mailuser object is missing the correct ExchangeGuid value.  
-  Use Set-MailUser LaraN@contoso.onmicrosoft.com -ExchangeGuid 4e3188c6-39f5-4387-adc7-b355b6b852c8  
+  Update the ExchangeGuid with the following command:
+
+  ```powershell
+  Set-MailUser LaraN@contoso.onmicrosoft.com -ExchangeGuid 4e3188c6-39f5-4387-adc7-b355b6b852c8  
+  ```
+
   Resume migration batch.  
 
 - SourceMailboxAlreadyBeingMovedPermanentException
 
   The source mailbox already has an existing move request. Investigate and remove the existing move. It is possible that this is an internal Microsoft  move and you will need to wait for the move to complete.  
   Remove the migration user from the batch.  
-  Remove users with the following command: Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  Remove users with the following command:
+
+  ```powershell
+  Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  ```
+
   Add user to new batch after the original move has been removed or completed.  
 
 - UserAlreadyHasDemotedArchiveException
 
   The user had an archive mailbox previously that was disabled. Choose one of the two following options to resolve this issue.  
   Permanently delete the disabled archive mailbox, this is unreversable. Set-Mailbox -RemoveDisabledArchive LaraN@contoso.onmicrosoft.com  
-  Re-enable the disabled archive mailbox. Enable-Mailbox -Archive mailbox@contoso.onmicrosoft.com.  
+  Re-enable the disabled archive mailbox with the following command:
+
+  ```powershell
+  Enable-Mailbox -Archive mailbox@contoso.onmicrosoft.com.
+  ```
+
   If you re-enable the disabled archive mailbox, you will need to update the archive guid on the target mailuser object.  
   Resume migration batch.  
+
+## See also
+
+- [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+- [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started)
