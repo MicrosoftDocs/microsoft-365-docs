@@ -4,7 +4,7 @@ description: Learn how to deploy and manage device control in Defender for Endpo
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/30/2024
+ms.date: 02/01/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -28,9 +28,9 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 
 1. Go to the [Intune admin center](https://intune.microsoft.com) and sign in.
 
-2. Go to Endpoint security > Attack surface reduction policies.
+2. Go to **Endpoint security** > **Attack surface reduction**.
 
-3. Select an existing policy, or select **+ Create Policy** to set up a new policy, using these settings:
+3. Under **Attack surface reduction policies**, either select an existing policy, or select **+ Create Policy** to set up a new policy, using these settings:
 
    - In the **Platform** list, select **Windows 10, Windows 11, and Windows Server**. (Device control is not currently supported on Windows Server, even though you select this profile for device control policies.)
    - In the **Profile** list, select **Device Control**. 
@@ -38,6 +38,8 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 4. On the **Basics** tab, specify a name and description for your policy.
 
 5. On the **Configuration settings** tab, you see a list of settings. You don't have to configure all of these settings at once. Consider starting with **Device Control**.
+
+   :::image type="content" source="media/device-control-policy-intune.png" alt-text="Screeenshot of Intune user interface for device control policies." lightbox="media/device-control-policy-intune.png":::
 
    - Under **Administrative Templates**, you have [Device Installation](/windows/client-management/mdm/policy-csp-deviceinstallation?WT.mc_id=Portal-fx) and [Removable Storage Access](/windows/client-management/mdm/policy-csp-admx-removablestorage) settings.
    - Under **Defender**, see [Allow Full Scan Removable Drive Scanning](/windows/client-management/mdm/policy-csp-defender#allowfullscanremovabledrivescanning) settings.
