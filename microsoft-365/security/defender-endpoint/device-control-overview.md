@@ -108,7 +108,7 @@ Device control capabilities from Microsoft can be organized into three main cate
 
 - **Endpoint data loss prevention** (Endpoint DLP). Endpoint DLP monitors sensitive information on devices that are onboarded to Microsoft Purview solutions. DLP policies can enforce protective actions on sensitive information and where it's stored or used. [Learn about Endpoint DLP](/purview/endpoint-dlp-learn-about).
 
-See the [device control scenarios](#device-control-scenarios) section (in this article) for more details about these capabilities.
+See the [device control scenarios](#device-control-in-windows) section (in this article) for more details about these capabilities.
 
 
 ## Device control samples and scenarios
