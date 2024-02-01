@@ -43,5 +43,5 @@ Custom detections provide:
 - [Create and manage custom detection rules](custom-detection-rules.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)
-- [Microsoft Graph security API for custom detections](/graph/api/resources/security-api-overview?view=graph-rest-beta#custom-detections)
+- [Microsoft Graph security API for custom detections](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#custom-detections)
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

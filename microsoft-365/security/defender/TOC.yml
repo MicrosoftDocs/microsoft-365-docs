@@ -585,7 +585,7 @@
                 - name: Advanced hunting API
                   href: api-advanced-hunting.md
                 - name: Custom detections API
-                  href: /graph/api/resources/security-api-overview?view=graph-rest-beta#custom-detections                  
+                  href: /graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#custom-detections                  
                 - name: Incidents APIs
                   items: 
                     - name: Incidents methods and properties
