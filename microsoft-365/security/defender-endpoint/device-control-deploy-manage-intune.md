@@ -56,6 +56,19 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 
 9. When you're ready, select **Create** to create your device control policy.
 
+## Device control profiles
+
+In Intune, each row represents a device control policy. The included ID is the reusable setting that the policy applies to. The excluded ID is the reusable setting that's excluded from the policy. The entry for the policy contains the permissions allowed and the behavior for device control that comes into force when the policy applies.
+
+:::image type="content" source="images/device-control-profile.png" alt-text="The screenshot that shows the page on which you can configure the settings for the Device Control capability." lightbox="images/device-control-profile.png":::
+
+For information on how to add the reusable groups of settings that are included in the row of each device control policy, see the *Add reusable groups to a Device Control profile* section in [Use reusable groups of settings with Intune policies](/mem/intune/protect/reusable-settings-groups).
+
+Policies can be added and removed using the **+** and **–** icons.  The name of the policy appears in the warning to users, and in advanced hunting and reports.
+
+> [!NOTE]
+> The order in the UX isn't preserved for policies enforcement. The best practice is to set the default enforcement to DENY, and then use **Allow policies**. Ensure that the **Allow policies** option is non-intersecting by explicitly adding devices to be excluded.
+
 ## Defining Settings with OMA-URI
 
 To use the following table, identify the setting you want to configure, and then use the information in the OMA-URI and data type & values columns. Settings are listed in alphabetical order.
@@ -99,19 +112,6 @@ In the **Add Row** pane, specify the following settings:
 
 > [!NOTE]
 > Comments using XML comment notation `<!-- COMMENT -- >` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
-
-## Device control profiles
-
-In Intune, each row represents a device control policy. The included ID is the reusable setting that the policy applies to. The excluded ID is the reusable setting that's excluded from the policy. The entry for the policy contains the permissions allowed and the behavior for device control that comes into force when the policy applies.
-
-:::image type="content" source="images/device-control-profile.png" alt-text="The screenshot that shows the page on which you can configure the settings for the Device Control capability." lightbox="images/device-control-profile.png":::
-
-For information on how to add the reusable groups of settings that are included in the row of each device control policy, see the *Add reusable groups to a Device Control profile* section in [Use reusable groups of settings with Intune policies](/mem/intune/protect/reusable-settings-groups).
-
-Policies can be added and removed using the **+** and **–** icons.  The name of the policy appears in the warning to users, and in advanced hunting and reports.
-
-> [!NOTE]
-> The order in the UX isn't preserved for policies enforcement. The best practice is to set the default enforcement to DENY, and then use **Allow policies**. Ensure that the **Allow policies** option is non-intersecting by explicitly adding devices to be excluded.
 
 ## Configure removable storage access control using OMA-URI
 
