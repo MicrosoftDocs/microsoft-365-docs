@@ -435,7 +435,7 @@ Dependencies: Microsoft Defender Antivirus, RPC
 This rule blocks code injection attempts from Office apps into other processes.
 
 > [!IMPORTANT]
-> This rule requires restarting Office applications for the configuration changes to take effect.
+> This rule requires restarting Microsoft 365 Apps (Office applications) for the configuration changes to take effect.
 
 Attackers might attempt to use Office apps to migrate malicious code into other processes through code injection, so the code can masquerade as a clean process.
 
