@@ -582,10 +582,9 @@ No, the source tenant and target tenant domain names must be unique, for example
 
 ### Will shared mailboxes move and still work?
 
-Yes. However, we only keep the store permissions as described in these articles:
+Yes. However, we only keep the store permissions as described in this article:
 
 - [Manage permissions for recipients in Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
-- [How to grant Exchange and Outlook mailbox permissions in Office 365 dedicated](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
 ### Do you have any recommendations for batches?
 
