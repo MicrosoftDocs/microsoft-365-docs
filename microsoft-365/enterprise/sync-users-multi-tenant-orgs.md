@@ -2,7 +2,7 @@
 title: Synchronize users in multitenant organizations in Microsoft 365 (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 02/02/2024
 audience: ITPro
 ms.topic: article
@@ -31,7 +31,7 @@ There are two ways to set up user synchronization:
 
 Both methods use cross-tenant synchronization in Microsoft Entra ID.
 
-If you want to synchronize the same users with all the other tenants in a multitenant organization, we recommend sharing users in the Microsoft 365 admin center. This will create the necessary configurations in Microsoft Entra ID for you.
+If you want to synchronize the same users with all the other tenants in a multitenant organization, we recommend sharing users in the Microsoft 365 admin center. This creates the necessary configurations in Microsoft Entra ID for you.
 
 If you want to synchronize different users to different tenants, then you must configure cross-tenant synchronization directly in Microsoft Entra ID.
 
