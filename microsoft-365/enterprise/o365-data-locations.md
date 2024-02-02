@@ -31,7 +31,7 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 > The **Italy** local data center region launched on October 3, 2023. If your organization requires the migration of your Microsoft 365 customer data to Italy, and data residency commitments for Italy, see [Advanced Data Residency](advanced-data-residency.md).
 
 > [!NOTE]
-> For tenants in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and the United Kingdom, additional workloads are available for data residency commitments. For more information, see [Advanced Data Residency](advanced-data-residency.md).
+> For tenants in Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Norway, Poland, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, and the United Kingdom, additional workloads are available for data residency commitments. For more information, see [Advanced Data Residency](advanced-data-residency.md).
 
 See the following links to understand how you can determine current data residency and data residency commitments.
 

@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center apps usage reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 09/09/2019
+ms.date: 01/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -35,7 +35,7 @@ For example, you can understand the activity of each user licensed to use Micros
 ## How to get to the Microsoft 365 Apps usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the Active users - Microsoft 365 Apps card.
+2. From the dashboard homepage, under Reports, select **Microsoft 365 apps** > **Usage**.
 
 ## Interpret the Microsoft 365 Apps usage report
 
