@@ -3,11 +3,11 @@ title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 09/13/2023
+ms.date: 02/02/2024
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: oogunrinde
+ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: asr
 ms.subservice: asr
@@ -48,9 +48,9 @@ The following table summarizes network protection areas of coverage.
 
 | Feature | Microsoft Edge | 3rd-party browsers | Non-browser processes <br> (e.g. PowerShell) |
 |:---|:---|:---|:---|
-| Web Threat Protection | SmartScreen must be enabled | NP has to be in block mode | NP has to be in block mode |
-| Custom Indicators | SmartScreen must be enabled | NP has to be in block mode | NP has to be in block mode |
-| Web Content Filtering | SmartScreen must be enabled | NP has to be in block mode | Not supported |
+| Web Threat Protection | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
+| Custom Indicators | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
+| Web Content Filtering | SmartScreen must be enabled | Network protection must be in block mode | Not supported |
 
 > [!NOTE]
 > On Mac and Linux, you must have network protection in block mode to get support for these features in Edge.
@@ -61,7 +61,7 @@ The following table summarizes network protection areas of coverage.
 > - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
 > - Full URL path blocks can be applied for unencrypted URLs.
 >
-> There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
+> There might be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
 Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
