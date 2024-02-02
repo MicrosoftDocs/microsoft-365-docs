@@ -7,7 +7,7 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 01/22/2024
+ms.date: 2/2/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -40,6 +40,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## January 2024
 
+- **New training modules available in Attack Simulation Training**: Teach your users to recognize and protect themselves against QR code phishing attacks. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/train-your-users-to-be-more-resilient-against-qr-code-phishing/ba-p/4022667).
 - **Providing intent while submitting is now generally available**: Admins can identify if they're submitting an item to Microsoft for a second opinion or they're submitting the message because it's malicious and was missed by Microsoft. With this change, Microsoft analysis of admin submitted messages (email and Microsoft Teams), URLs, and email attachments is further streamlined and results in a more accurate analysis. [Learn more](submissions-admin.md).
 
 ## December 2023
