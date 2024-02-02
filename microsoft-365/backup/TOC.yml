@@ -5,16 +5,16 @@
       href: /microsoft-365/syntex/backup/backup-overview
     - name: Admin setup 
       href: /microsoft-365/syntex/backup/backup-setup
+    - name: Pricing model
+      href: /microsoft-365/syntex/backup/backup-pricing
     - name: View and edit policies 
       href: /microsoft-365/syntex/backup/backup-view-edit-policies
     - name: Restore data 
       href: /microsoft-365/syntex/backup/backup-restore-data
-    - name: Preview limitations
-      href: /microsoft-365/syntex/backup/backup-limitations
-    - name: Pricing model
-      href: /microsoft-365/syntex/backup/backup-pricing
     - name: Offboarding
       href: /microsoft-365/syntex/backup/backup-offboarding
+    - name: Preview limitations
+      href: /microsoft-365/syntex/backup/backup-limitations
     - name: FAQs
       href: /microsoft-365/syntex/backup/backup-faq
 
