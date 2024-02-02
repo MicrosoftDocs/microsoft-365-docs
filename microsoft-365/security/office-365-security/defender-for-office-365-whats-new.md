@@ -7,7 +7,7 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 1/2/2024
+ms.date: 2/2/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -39,7 +39,7 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 ## January 2024
-- **New training modules availabe in Attack Simulation Training**: Teach your users to recognize and protect themselves against QR code phishing attacks. For more details, [learn more here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/train-your-users-to-be-more-resilient-against-qr-code-phishing/ba-p/4022667).
+- **New training modules available in Attack Simulation Training**: Teach your users to recognize and protect themselves against QR code phishing attacks. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/train-your-users-to-be-more-resilient-against-qr-code-phishing/ba-p/4022667).
   
 ## December 2023
 
