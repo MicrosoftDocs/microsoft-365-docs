@@ -52,6 +52,9 @@ You must be a global administrator or a security administrator in Azure Active D
 
 The following section describes the detection and investigation experience in Microsoft Defender XDR with Defender for Cloud alerts.
 
+> [!NOTE]
+> Informational alerts from Defender for Cloud are not integrated to Microsoft Defender XDR to allow focus on the relevant and high severity alerts. This strategy streamlines management of incidents and reduces alert fatigue.
+
 > [!div class="mx-tdCol2BreakAl"]
 > |Area   |Description   |
 > |----------|-----------|
