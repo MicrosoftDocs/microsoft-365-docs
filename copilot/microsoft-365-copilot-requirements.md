@@ -101,10 +101,8 @@ Copilot services connect to endpoints contained within the [Microsoft 365 endpo
 
 There are many Copilot experiences, including some core experiences like Excel, Word, PowerPoint, Teams, and Loop, that use WebSocket connections (wss://) from the device running the Microsoft 365 app to a Microsoft service. So, to use these Copilot experiences, WebSocket connections must be allowed from user endpoints to the endpoints listed in our endpoint taxonomy, specifically in ID number 147 in the section for [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
-## Conditional Access
+## More resources
 
-While Copilot supports Conditional Access Policies in SharePoint Online configured to target "all cloud apps" or "Office 365 group," Microsoft Copilot does not currently support Conditional Access policies configured to the SharePoint Online app directly. We anticipate deploying a change in coming weeks.
-
-## Restricted Access Control
-
-Microsoft Copilot does not currently support Restricted Access Control and Microsoft Purview Information Barriers (Implicit and Owner moderated mode) on sites. Support for both policies is intended.  We anticipate deploying a change in coming weeks.
+- [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide)
+- [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot)
+- [Microsoft Copilot for Microsoft 365 - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/ct-p/Microsoft365Copilot)
