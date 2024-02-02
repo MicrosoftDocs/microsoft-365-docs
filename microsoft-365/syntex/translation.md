@@ -107,16 +107,6 @@ To create a rule to translate documents automatically when data in a column chan
 
 4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
 
-> [!NOTE]
-> If you try to submit a translation request within one minute
-
-If you try to submit a duplicate translation request before the file has finished processing, you'll receive a message telling you to wait a few minutes before trying again.
-
-s for the same file within one minute, you'll receive the following message need to wait at least one minuteInformation the user should notice even if skimming
-Add to article note on preventing submission of duplicate requests: 
-
-We will prevent a translated copy of a file for the same language to be requested on demand w/in sixty seconds (to prevent duplicate requests since it will likely take longer for the copy to be created than the UI message to display - and we don't write to the doclib activity stream yet) - displaying the following message:
-
 <!---
 ### View the translation activity feed of a document library
 
