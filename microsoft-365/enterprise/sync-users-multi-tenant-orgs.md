@@ -3,7 +3,7 @@ title: Synchronize users in multitenant organizations in Microsoft 365 (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 08/17/2023
+ms.date: 02/02/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -70,7 +70,7 @@ The [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-
 
 The [new Teams desktop client](/microsoftteams/new-teams-desktop-admin) fetches some data directly from the other tenants in the multitenant organization to create a richer experience. In a multitenant organization, when a user looks at the profile card for a user in another tenant in Teams, the name, contact information, and job information is available in 1:1 chats and shared channels without the need for property synchronization to be configured. (These properties are retrieved by Microsoft Entra cross-tenant access and Teams external access.) To see these properties elsewhere in Teams, such as channels, group chats, and chats with guest accounts, you need to include them as part of user synchronization.
 
-The profile picture is always available and is retrieved from the user's home tenant.
+In a multitenant organization, the profile picture is always available and is retrieved from the user's home tenant.
 
 For the most consistent profile card experience, keep in mind the following:
 
