@@ -19,8 +19,7 @@ ms.custom:
   - commerce_ssp
   - AdminSurgePortfolio
   - okr_smb
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+  - has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 search.appverid:
 - MET150
 description: "Learn how admins can use the Microsoft 365 admin center to manage self-service purchases and trials made by users in their organization."
@@ -106,7 +105,7 @@ For more information, see [Use AllowSelfServicePurchase for the MSCommerce Power
 
 ## Use PowerShell and Microsoft Entra ID to enable or disable all self-service sign-ups
 
-You can use PowerShell commands to change the settings that control self-service sign-ups. To turn off all self-service sign-ups, use the **Microsoft Graph** PowerShell module to change the **MgOrganization** setting for **AllowAdHocSubscriptions** in Microsoft Entra ID. For the steps to turn off self-service sign-ups, see [Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization).
+You can use PowerShell commands to change the settings that control self-service sign-ups. To turn off all self-service sign-ups, use the **Microsoft Graph** PowerShell module to change the **MgPolicyAuthorizationPolicy** setting for **AllowedToSignUpEmailBasedSubscriptions** in Microsoft Entra ID. For the steps to turn off self-service sign-ups, see [Update-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy).
 
 ## Centralize licenses under a single subscription
 
