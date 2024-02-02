@@ -3,7 +3,7 @@ title: View device control events and information in Microsoft Defender for Endp
 description: Monitor your organization's data security through device control reports.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 01/31/2024
+ms.date: 02/01/2024
 ms.author: deniseb
 author: denisebmsft
 ms.topic: conceptual
@@ -159,3 +159,8 @@ There might be a delay of up to six hours from the time a media connection occur
 ---
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+## See also
+
+- [Device control in Microsoft Defender for Endpoint](device-control-overview.md)
+- [Device Control for macOS](mac-device-control-overview.md)
