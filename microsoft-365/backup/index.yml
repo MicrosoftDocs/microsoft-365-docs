@@ -37,30 +37,30 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Set up Microsoft 365 Archive
-            url: /microsoft-365/syntex/archive/archive-setup
+          - text: Set up Microsoft 365 Backup
+            url: /microsoft-365/syntex/backup/backup-setup
           - text: Pricing model
-            url: /microsoft-365/syntex/archive/archive-pricing
+            url: /microsoft-365/syntex/backup/backup-pricing
 
 # Card 3
-  - title: Archive sites
+  - title: Manage backups
     linkLists:
       - linkListType: overview
         links:
-          - text: Manage Microsoft 365 Archive
-            url: /microsoft-365/syntex/archive/archive-manage
-          - text: Archive states
-            url: /microsoft-365/syntex/archive/archive-states
-          - text: End user experience
-            url: /microsoft-365/syntex/archive/archive-end-user
+          - text: View and edit backup policies
+            url: /microsoft-365/syntex/backup/backup-view-edit-policies
+          - text: Restore data
+            url: /microsoft-365/syntex/backup/backup-restore-data
+          - text: Offboard usage
+            url: /microsoft-365/syntex/backup/backup-offboarding
 
 # Card 4
-  - title: Security & compliance
+  - title: Preview information
     linkLists:
       - linkListType: overview
         links:
-          - text: Compliance features
-            url: /microsoft-365/syntex/archive/archive-compliance
+          - text: Preview limitations
+            url: /microsoft-365/syntex/backup/backup-limitations
 
 # Card 5
   - title: More solutions
