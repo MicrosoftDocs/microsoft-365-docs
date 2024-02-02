@@ -80,7 +80,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - While restoring Exchange mailboxes at a granular level, the search feature provides several search parameters. These parameters allow you to enter up to a maximum of five keywords each. For example, the parameters “from” and “to” allow you to enter up to a maximum of five email addresses each.
 
-- The multi-geo feature isn't supported for SharePoint Online or OneDrive for Business services in this release. This might affect the restore of sites across different geos.
+- The multi-geo feature isn't supported for SharePoint Online or OneDrive for Business services in this release. This might affect the restore of sites across different geos. Exchange Online multi-geo is supported, however, when configuring a restore each mailbox in a single restore request must be in the same geo.
 
 - OneDrive accounts and SharePoint sites that have undergone the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.  
 
@@ -99,3 +99,11 @@ During the preview, we're enforcing self-service restore limits while we gain a 
 |Number of artifacts (active and completed) restored in a day per workload    | Not applicable        | > 10,000        |
 
 *Customer can call into support to lift the safety restrictions.
+
+Follow these steps:
+
+1. As an administrator, select the following link, which will populate a help query in the admin center: [M365 Backup Limit Request](https://aka.ms/M365BackupLimit).
+
+2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**.
+
+3. Leave **Description** blank.

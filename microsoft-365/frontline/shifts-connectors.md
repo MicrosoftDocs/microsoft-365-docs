@@ -5,6 +5,7 @@ ms.author: v-chinlana
 manager: jtremper
 ms.topic: conceptual
 audience: admin
+ms.reviewer: imarquesgil
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn about Shifts connectors and how to use them to connect Shifts to your workforce management system. 
@@ -17,7 +18,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/2/2023
+ms.date: 10/02/2023
 ---
 
 # Shifts connectors
@@ -45,7 +46,7 @@ Managed Shifts connectors are connectors developed in collaboration with our par
 |Connector|Description|Requirements|
 |---------|---------|---------|
 |[Microsoft Teams Shifts connector for Blue Yonder](#microsoft-teams-shifts-connector-for-blue-yonder)|Use this connector to integrate Shifts with Blue Yonder Workforce Management. This connector is hosted and managed by Microsoft.|Prerequisites for setting up a connection: <ul><li>Using the [Shifts connector wizard](shifts-connector-wizard.md#prerequisites) in the Microsoft 365 admin center<br>Before you run the wizard, [remove schedules from existing teams that you want to map](shifts-connector-wizard.md#remove-schedule-entities-from-teams-you-want-to-map).</li><li>Using [PowerShell](shifts-connector-blue-yonder-powershell-setup.md#prerequisites)</li></ul>|
-|[Microsoft Teams Shifts connector for UKG Pro Workforce Management](#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) (Preview)|Use this connector to integrate Shifts with UKG Pro Workforce Management (UKG Pro WFM). This connector is hosted and managed by Microsoft.|See [Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management](shifts-connector-ukg-prerequisites.md).|
+|[Microsoft Teams Shifts connector for UKG Pro Workforce Management](#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)|Use this connector to integrate Shifts with UKG Pro Workforce Management (UKG Pro WFM). This connector is hosted and managed by Microsoft.|See [Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management](shifts-connector-ukg-prerequisites.md).|
 |[Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)|Use this connector to integrate Shifts with Reflexis Workforce Management. This connector is hosted and managed by Zebra. |To learn more, go to <https://connect.zebra.com/microsoft-connectors>.|
 
 <a name="blue_yonder"> </a>
@@ -106,8 +107,6 @@ After a connection is set up, you can update and change connection settings at a
 As for the connector itself, you don't need to worry about upgrades or maintenance. We take care of that.
 
 ## Microsoft Teams Shifts connector for UKG Pro Workforce Management
-
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 The Teams Shifts connector for UKG Pro Workforce Management is a first-party offering that's hosted and managed by Microsoft. With this connector, you can integrate Shifts with UKG Pro Workforce Management (UKG Pro WFM) to manage your schedules and keep them up to date.  
 

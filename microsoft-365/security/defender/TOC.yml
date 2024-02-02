@@ -223,7 +223,7 @@
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
-                href: /security/compass/incident-response-playbooks
+                href: /security/operations/incident-response-playbooks
               - name: Investigate domains and URLs associated with Microsoft Defender XDR
                 href: ../defender-endpoint/investigate-domain.md
        - name: Manage automated investigation and response
@@ -438,6 +438,8 @@
                 href: get-started-xdr.md
               - name: Start using Microsoft Defender Experts for XDR service
                 href: start-using-mdex-xdr.md
+              - name: Communicate with Defender Experts
+                href: communicate-defender-experts-xdr.md
               - name: Auditing
                 href: auditing.md
               - name: Additional information
@@ -570,18 +572,20 @@
                   href: api-error-codes.md
                 - name: Streaming API
                   items:
-                    - name: Microsoft 365 Streaming API
+                    - name: Microsoft 365 streaming API
                       href: streaming-api.md
                     - name: Stream advanced hunting events to Azure Events hub
                       href: streaming-api-event-hub.md
                     - name: Stream advanced hunting events to your storage account
                       href: streaming-api-storage.md
-                    - name: Supported Streaming event types
+                    - name: Supported streaming event types
                       href: supported-event-types.md  
                     - name: Configure your Event hub
                       href: configure-event-hub.md
-                - name: Advanced Hunting API
+                - name: Advanced hunting API
                   href: api-advanced-hunting.md
+                - name: Custom detections API
+                  href: /graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#custom-detections                  
                 - name: Incidents APIs
                   items: 
                     - name: Incidents methods and properties
