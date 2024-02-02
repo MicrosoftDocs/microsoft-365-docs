@@ -88,6 +88,22 @@
           href: network-planning-and-performance.md
         - name: Monitor connectivity
           href: monitor-connectivity.md
+        - name: Network Connectivity in Microsoft 365 Admin center
+          items:
+            - name: Network Connectivity in Microsoft 365 Admin center
+              href: office-365-network-mac-perf-overview.md
+            - name: Microsoft 365 Network Assessment
+              href: office-365-network-mac-perf-score.md
+            - name: Microsoft 365 Network Insights
+              href: office-365-network-mac-perf-insights.md
+            - name: Microsoft 365 Network Provider Information
+              href: office-365-network-mac-perf-nppux.md
+            - name: Microsoft 365 Network Provider Assessments
+              href: office-365-network-mac-perf-nppdata.md
+            - name: Microsoft 365 Network Provider Details
+              href: office-365-network-mac-perf-nppdetails.md
+            - name: Microsoft 365 Network connectivity test tool
+              href: office-365-network-mac-perf-onboarding-tool.md
     - name: Microsoft 365 Networking Partner Program
       href: microsoft-365-networking-partner-program.md
 
