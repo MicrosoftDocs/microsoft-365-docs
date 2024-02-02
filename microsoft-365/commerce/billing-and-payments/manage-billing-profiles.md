@@ -44,27 +44,29 @@ A billing profile contains payment method and invoice information associated wit
 > If you follow these steps and the billing profiles list is empty, it means that you don't have a billing profile, and can't use this feature.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-   - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-2. On the **Bills & payments** page, select the **Billing profile** tab.
-3. Select a billing profile name to view its details page.
+2. In the **Navigation menu**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
+3. On the **Overview** tab, select a billing account.
+4. On the billing account details page, select the **Billing profiles** tab. The tab lists all billing profiles associated with the selected billing account.
+5. Select a billing profile name to view its details page.
 
 ## Understand the billing profile details page
 
-The top of the **Billing profile** details page contains information about the payment method used to pay for the products and services that you buy, and shows details about how we invoice you. You can update your profile to change your payment method, Bill-to address, email address, and phone number.
+The **Billing profile** details page contains details like the billing profile name, status, the associated billing account, and address information. The details page also contains information about the invoice, billing notification settings, and the payment method used to pay for the products and services that you buy. You can update your billing profile to change certain things like the profile name, the Bill-to address, and invoice and billing notification settings.
 
 The following table lists the terms shown on the **Billing profile** details page.
 
 |Field name            |Description |
 |----------------------|------------|
-|Name                  |The name of your billing profile. To change the name, select **Update name**. |
+|Billing profile ID    |The unique identiifier for your billing profile. This ID can't be changed. |
+|Name                  |The name of your billing profile. To change the name, select **Edit name**. |
 |Status                |A read-only field that shows the status of the billing profile. |
+|Billing account       |The billing account that’s associated with the billing profile. To view details about the billing account, select the link. For more information about billing accounts, see [Understand billing accounts](../manage-billing-accounts.md). |
+|My role               |A read-only field that shows your billing profile role. 
 |Invoice currency      |The currency used for your invoice, based on the **Sold-to** country or region of the billing account. |
 |Payment method        |The payment method used for the billing profile. To make changes, select **Edit** or **Replace**. |
 |Invoice frequency     |Shows how often you receive an invoice. |
 |Backup payment method |Shows the backup payment method, if one exists. |
 |Invoice date          |Shows the date the invoice is created. |
-|Billing account       |The billing account that’s associated with the billing profile. To view details about the billing account, select the link. For more information about billing accounts, see [Understand billing accounts](../manage-billing-accounts.md). |
 |Get invoices in email statements   |A setting you can turn on to receive the invoice as an email attachment. The default setting is **On**. |
 |Bill-to address       |Contains the contact name, address, email address, and phone number for the billing profile. |
 |PO number (optional)  |If you provide a purchase order (PO) number in this field, it appears on your invoice. |
