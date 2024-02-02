@@ -4,8 +4,9 @@ description: Use web content filtering in Microsoft Defender for Endpoint to tra
 ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
+ms.reviewer: tdoucett
 ms.localizationpriority: medium
-ms.date: 12/07/2023
+ms.date: 02/02/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
