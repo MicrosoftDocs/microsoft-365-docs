@@ -36,11 +36,7 @@ search.appverid: met150
 - Windows
 
 > [!NOTE]  
-> **Microsoft does not support using this feature in Enterprise environments.**
-> 
-> This feature only uses a limited subset of the Microsoft Defender Antivirus capabilities to detect malware, and will not be able to detect most malware and potentially unwanted software. Management of the feature is not supported, the feature cannot be enabled or disabled via Policy, and reporting capabilities are extremely limited.
->
-> Microsoft recommends enterprises choose their primary antivirus solution and use it exclusively. 
+> **Microsoft does not support using this feature in Enterprise environments.** This feature only uses a limited subset of the Microsoft Defender Antivirus capabilities to detect malware, and can't detect most malware and potentially unwanted software. Management of the feature is not supported, the feature cannot be enabled or disabled through policies, and reporting capabilities are extremely limited. Microsoft recommends that enterprise orgnaizations choose a primary antivirus/antimalware solution, and use it exclusively. 
 
 Limited periodic scanning is a special type of threat detection and remediation that can be enabled when you have installed another antivirus product on a Windows 10 or Windows 11 device.
 
