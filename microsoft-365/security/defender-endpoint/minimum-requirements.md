@@ -68,14 +68,14 @@ Devices on your network must be running one of these editions. New features or c
 ### Supported Windows versions
 
 - Windows 11 Enterprise
-- Windows 11 Enterprise IoT
+- Windows 11 IoT Enterprise
 
 - Windows 11 Education
 - Windows 11 Pro
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
-- Windows 10 Enterprise IoT (including LTSC)
+- Windows 10 IoT Enterprise (including LTSC)
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
