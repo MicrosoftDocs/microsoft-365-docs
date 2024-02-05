@@ -34,6 +34,33 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+<summary> Feburary-2024 (Build: 101.23122.0002 | Release version: 30.123122.0002.0)</summary>
+ 
+ 
+## Feburary-2024 Build: 101.23122.0002 | Release version: 30.123122.0002.0
+ 
+&ensp;Released: **February 5,2024**<br/>
+&ensp;Published: **February 5,2024**<br/>
+&ensp;Build: **101.23122.0002**<br/>
+&ensp;Release version: **30.123122.0002.0**<br/>
+&ensp;Engine version: **1.1.23100.2010**<br/>
+&ensp;Signature version: **1.399.1389.0**<br/>
+ 
+**What's new**
+ 
+There are multiple fixes and new changes in this release:
+ 
+- Support available for Rocky, Alma and Mariner2 in production
+- Updated default engine version to `1.1.23100.2010`, and default signatures version to `1.399.1389.0`.
+- General stability and performance improvements.
+- Bug fixes.
+ 
+**Known issues**
+- // Check if this ection can be left empty
+ 
+</details>
+
+<details>
 	<summary> January-2024 (Build: 101.23112.0009 | Release version: 30.123112.0009.0)</summary>
 
 ## January-2024 Build: 101.23112.0009 | Release version: 30.123112.0009.0
@@ -42,8 +69,8 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Published: **January 29, 2024**<br/>
 &ensp;Build: **101.23112.0009**<br/>
 &ensp;Release version: **30.123112.0009.0**<br/>
-&ensp;Engine version: **1.1.23110.4**<br/>
-&ensp;Signature version: **1.403.1579.0**<br/>
+&ensp;Engine version: **1.1.23100.2010**<br/>
+&ensp;Signature version: **1.399.1389.0**<br/>
 
 **What's new**
 - Updated default engine version to `1.1.23110.4`, and default signatures version to `1.403.1579.0`.
@@ -51,32 +78,6 @@ This article is updated frequently to let you know what's new in the latest rele
 - Bug fix for behavior monitoring configuration.
 - Bug fixes.
 
-<details>
-<summary> Feburary-2024 (Build: 101.23122.0002 | Release version: 30.123122.0002.0)</summary>
- 
- 
-## Feburary-2024 Build: 101.23122.0002 | Release version: 30.123122.0002.0
- 
-&ensp;Released: **February 3,2024**<br/>
-&ensp;Published: **February 3,2024**<br/>
-&ensp;Build: **101.23122.0002**<br/>
-&ensp;Release version: **30.123122.0002.0**<br/>
-&ensp;Engine version: **<TO-ADD>**<br/>
-&ensp;Signature version: **<TO-ADD>**<br/>
- 
-**What's new**
- 
-There are multiple fixes and new changes in this release:
- 
-- Support available for Mariner2 in production
-- Updated default engine version to `<TO-ADD>`, and default signatures version to `<TO-ADD>.
-- General stability and performance improvements.
-- Bug fixes.
- 
-**Known issues**
-- // Check if this ection can be left empty
- 
-</details>
 
 </details>
 
