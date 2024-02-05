@@ -19,3 +19,6 @@ description: Learn how to use autofill columns in Microsoft Syntex.
 
 # Use autofill columns in Microsoft Syntex
 
+## Create a new autofill column
+
+## Update an existing autofill column
