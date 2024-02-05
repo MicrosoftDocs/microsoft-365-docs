@@ -32,15 +32,15 @@ Your organization's data protection requirements may differ from other organizat
 Once you have followed the [prerequisites](apps-protect-overview.md#prerequisites) and understood the different app data protection settings available for each support platform, you can use the following process to add app protection policies. 
 
 Process to add app data protection:
-1. **Determine which platforms you must support at your organization** - For more information about app platforms, see [Supported platforms](/microsoft-365/solutions/apps-protect-overview#supported-platforms).
-2. **Add one or more protected apps to Intune** - For more information, see [Intune protected apps](/mem/intune/apps/apps-supported-intune-apps). These apps have been enhanced to support Intune app protection policies. If you are uncertain, start with a Core Microsoft App. For more information, see [Apps to include in the App Protection Policies](/mem/intune/apps/app-protection-framework) and [Microsoft apps](/intune/apps/apps-supported-intune-apps#microsoft-apps).
+1. **Determine which platforms you must support at your organization** - For more information about app platforms, see [Supported platforms](apps-protect-overview.md#supported-platforms).
+2. **Add one or more protected apps to Intune** - For more information, see [Intune protected apps](/mem/intune/apps/apps-supported-intune-apps). These apps have been enhanced to support Intune app protection policies. If you are uncertain, start with a Core Microsoft App. For more information, see [Apps to include in the App Protection Policies](/mem/intune/apps/app-protection-framework) and [Microsoft apps](/mem/intune/apps/apps-supported-intune-apps#microsoft-apps).
 3. **Determine the level of app protection your organization requires**:
-    1. [Minimum data protection](/microsoft-365/solutions/apps-protect-step-1)
-    2. [Enhanced data protection](/microsoft-365/solutions/apps-protect-step-2)
-    3. [High data protection](/microsoft-365/solutions/apps-protect-step-3)
+    1. [Minimum data protection](apps-protect-step-1.md)
+    2. [Enhanced data protection](apps-protect-step-2.md)
+    3. [High data protection](apps-protect-step-3.md)
 
 > [!TIP]
-> For more information about protected apps, suppported platforms, app store links, supported app configuration, and supported protection, see [Microsoft apps](/intune/apps/apps-supported-intune-apps#microsoft-apps).
+> For more information about protected apps, suppported platforms, app store links, supported app configuration, and supported protection, see [Microsoft apps](/mem/intune/apps/apps-supported-intune-apps#microsoft-apps).
 
 ## Steps to apply the app protection framework
 
