@@ -37,7 +37,7 @@ Empower your frontline workforce with digital tools and modern devices that offe
 
 ## Choose your scenarios
 
-Microsoft 365 and Microsoft Teams offers capabilities that can help manufacturing organizations enhance productivity in their daily operations and digital transformation. We recommend the following scenarios for manufacturers:
+Microsoft 365 and Microsoft Teams offers capabilities that help manufacturing organizations enhance productivity in their daily operations and digital transformation. We recommend the following scenarios for manufacturers:
 
 - [Connect and engage your workforce](#connect-and-engage-your-workforce)
 - [Enhance workforce management](#enhance-workforce-management)
@@ -97,9 +97,9 @@ More information: [Training and onboarding](flw-onboarding-training.md)
 
 ### Apps and services for manufacturing
 
-Ensure that your workers can communicate, collaborate, and deliver great products with apps like Shifts, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).
+Ensure that your workers can communicate, collaborate, and deliver great products with apps like Shifts, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by using a team template. Learn more about [managing Teams apps](/microsoftteams/manage-apps).
 
-For manufacturing environments, the following apps and services can help you transform your business processes and support communication:
+For manufacturing environments, the following apps and services can help you transform your business processes and support communication.
 
 | Teams apps and services | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
@@ -110,9 +110,9 @@ For manufacturing environments, the following apps and services can help you tra
 | Shifts | Manage schedules and clock in and out with Shifts. | [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
 | Tasks | Supervisors can assign tasks to let workers know what to focus on. Your organization's central office can use [task publishing](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
 | Updates | Check in on recurring and one-off priorities such as machinery repairs and inspections. Supervisors can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
-| Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Employees can view a tailored news feed from your organization and a personalized dashboard with resources they need. For example, you could create a Manuals card so your operators can easily find all the necessary manuals. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
+| Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Employees can view a tailored news feed from your organization and a personalized dashboard with the resources they need. For example, you could create a Manuals card so your operators can easily find all the necessary manuals. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Overview of Viva Learning](/viva/learning/overview-viva-learning) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
-| Viva Engage | Connect your entire organization and enable communication across departments and regions. | [Overview of Viva Engage](/viva/engage/overview) | [Use Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284) |
+| Viva Engage | Connect your entire organization and enable communication across departments and regions with Viva Engage. | [Overview of Viva Engage](/viva/engage/overview) | [Use Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284) |
 
 | More apps and services from Microsoft | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
