@@ -33,14 +33,14 @@ description: Learn how to view, list, or display your Microsoft 365 user account
 
 You can use the Microsoft 365 admin center to view the accounts for your Microsoft 365 tenant. PowerShell for Microsoft 365 enables this but also provides additional functionality.
   
-## View user accounts using Microsoft Graph Powershell
+## View user accounts using Microsoft Graph PowerShell
 
 > [!NOTE]
 > The Azure Active Directory (AzureAD) PowerShell module is being deprecated and replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 >
 > Also see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) and [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps) for information on how to install and upgrade to Microsoft Graph PowerShell, respectively.
 
-1. First, install the required software to use Microsoft Graph Powershell. See [Connect to Microsoft 365 with Microsoft Graph PowerShell](connect-to-microsoft-365-powershell.md) for more information.
+1. First, install the required software to use Microsoft Graph PowerShell. See [Connect to Microsoft 365 with Microsoft Graph PowerShell](connect-to-microsoft-365-powershell.md) for more information.
 
 1. Then run the following cmdlet to connect to your organization with the required permission scope, which in this case is *User.ReadBasic.All*:
 
@@ -77,7 +77,7 @@ Bianca Pisani             7fe8c2d1-eb8e-4032-96ba-26242ff0acd9 BiancaP@M365x8952
 To display a specific user account, run the following command. Fill in the sign-in account name of the user account, which is also known as the user principal name (UPN). Remove the "<" and ">" characters.
   
 ```powershell
-Get-MgUser -UserId '<user pincipal name>'
+Get-MgUser -UserId '<user principal name>'
 ```
 
 Here's an example:
@@ -129,25 +129,25 @@ Get-MgUser -All -Filter 'OnPremisesSyncEnabled eq true'
 ```
 
 You can use the following command to find **cloud-only** accounts. It instructs PowerShell to get all users who have the attribute *OnPremisesSyncEnabled* set to *False* or not set (*Null*).
-An account that was never synced from on-premise AD has *OnPremisesSyncEnabled* set to *Null*. An account that was synced initially from on-premise AD but is no longer being synced has *OnPremisesSyncEnabled* set to *False*.
+An account that was never synced from on-premises AD has *OnPremisesSyncEnabled* set to *Null*. An account that was synced initially from on-premises AD but is no longer being synced has *OnPremisesSyncEnabled* set to *False*.
 
 ```powershell
 Get-MgUser -All | Where OnPremisesSyncEnabled -ne true
-```
+OnPremisesSyncEnabled```
 
 ### View accounts based on a common property
 
-To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-MgUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here's an example command that displays only those user accounts that have an unspecified usage location:
+To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-MgUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells PowerShell to take the results of one command and send it to the next command. Here is an example command that displays only those user accounts that have an unspecified usage location:
   
 ```powershell
 Get-MgUser | Where UsageLocation -eq $Null
 ```
 
-This command instructs Azure Active Directory PowerShell for Graph to:
+This command instructs PowerShell for Graph to:
   
 1. Get all the information on the user accounts (**Get-MgUser**) and send it to the next command (**|**).
 
-1. Find all the user accounts that have an unspecified usage location (**Where UsageLocation -eq $Null**). Inside the braces, the command instructs PowerShell to only find the set of accounts for which the UsageLocation user account property (**UsageLocation**) is not specified (**-eq $Null**).
+1. Find all the user accounts that have an unspecified usage location (**Where UsageLocation -eq $Null**). The command instructs PowerShell to only find the set of accounts for which the *UsageLocation* user account property (**UsageLocation**) is not specified (**-eq $Null**).
 
 The **UsageLocation** property is only one of many properties associated with a user account. To display all the properties for a specific user account, use the **Select** cmdlet and the wildcard character (*). Here's an example:
   
