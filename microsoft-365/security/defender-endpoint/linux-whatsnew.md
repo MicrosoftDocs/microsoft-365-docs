@@ -51,6 +51,33 @@ This article is updated frequently to let you know what's new in the latest rele
 - Bug fix for behavior monitoring configuration.
 - Bug fixes.
 
+<details>
+<summary> Feburary-2024 (Build: 101.23122.0002 | Release version: 30.123122.0002.0)</summary>
+ 
+ 
+## Feburary-2024 Build: 101.23122.0002 | Release version: 30.123122.0002.0
+ 
+&ensp;Released: **February 3,2024**<br/>
+&ensp;Published: **February 3,2024**<br/>
+&ensp;Build: **101.23122.0002**<br/>
+&ensp;Release version: **30.123122.0002.0**<br/>
+&ensp;Engine version: **<TO-ADD>**<br/>
+&ensp;Signature version: **<TO-ADD>**<br/>
+ 
+**What's new**
+ 
+There are multiple fixes and new changes in this release:
+ 
+- Support available for Mariner2 in production
+- Updated default engine version to `<TO-ADD>`, and default signatures version to `<TO-ADD>.
+- General stability and performance improvements.
+- Bug fixes.
+ 
+**Known issues**
+- // Check if this ection can be left empty
+ 
+</details>
+
 </details>
 
 <details>
