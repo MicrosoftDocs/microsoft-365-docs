@@ -112,7 +112,7 @@ sections:
           When a message expires from quarantine, you can't recover it.
 
       - question: |
-          A message was released from quarantine, but the original recipient can't find it. How can I determine what happened to the message? OR Messages are released unexpectedly from Quarantine? 
+          A message was released from quarantine, but the original recipient can't find it. How can I determine what happened to the message? OR Messages are released unexpectedly from Quarantine?
         answer: |
           Third party anti-virus solutions or security services can cause the following issues for messages that are released from quarantine:
 

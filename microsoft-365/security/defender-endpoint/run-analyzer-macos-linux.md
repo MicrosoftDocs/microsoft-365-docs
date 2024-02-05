@@ -49,10 +49,10 @@ If using a terminal download using the command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '9743C02442B2E0C3396E7E659AB7F8A0B925AD388E10970D8E427B03CE3BD7F8'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '708C2257109D200C2862637363BEC0C073ACD66CBD5120EB1DDE28F7AA9C9C1E'
 
     ```console
-    echo '9743C02442B2E0C3396E7E659AB7F8A0B925AD388E10970D8E427B03CE3BD7F8 XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '708C2257109D200C2862637363BEC0C073ACD66CBD5120EB1DDE28F7AA9C9C1E XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
@@ -101,12 +101,6 @@ When using a terminal, unzip the file using one of the following commands based 
    sudo ./MDESupportTool -d
    ```
 
-   > [!NOTE]
-   > The binary is currently unsigned. To allow the package run on MacOS, you will need to use the command
-   >
-   > `spctl --add /Path/To/MDESupportTool`
-   >
-
 ## Running the Python-based client analyzer
 
 > [!NOTE]
@@ -133,7 +127,7 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo 'B2B0452416AAA308668693601C0A540D7BAB1F13D1E42503B7292B00DE18DAFE XMDEClientAnalyzer.zip' | sha256sum -c
+    echo 'A13C262EDD1C657EC056DD03E9F0487B4FD897964F1ABF968445E19035ABFD6D XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\

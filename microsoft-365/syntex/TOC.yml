@@ -191,6 +191,15 @@
         - name: Find and manage terms 
           href: taxonomy-tagging.md
 
+    - name: Document translation
+      items: 
+        - name: Overview 
+          href: translation-overview.md
+        - name: Admin setup 
+          href: translation-setup.md
+        - name: Translate documents 
+          href: translation.md
+
     - name: eSignature 
       items: 
         - name: Overview 
@@ -201,6 +210,8 @@
           href: esignature-send-requests.md
         - name: Review and sign a request 
           href: esignature-review-sign-requests.md
+        - name: Troubleshoot a request 
+          href: esignature-troubleshoot.md
 
     - name: Optical character recognition 
       items: 
@@ -234,14 +245,14 @@
           href: backup/backup-overview.md
         - name: Admin setup 
           href: backup/backup-setup.md
+        - name: Pricing model
+          href: backup/backup-pricing.md
         - name: View and edit policies 
           href: backup/backup-view-edit-policies.md
         - name: Restore data 
           href: backup/backup-restore-data.md
         - name: Preview limitations
           href: backup/backup-limitations.md
-        - name: Pricing
-          href: backup/backup-pricing.md
         - name: Offboarding
           href: backup/backup-offboarding.md
         - name: FAQs
@@ -340,6 +351,10 @@
 
     - name: SharePoint Advanced Management
       href: /sharepoint/advanced-management
+
+    - name: SharePoint Embedded
+      href: /sharepoint/dev/embedded/overview
+
 
 
 

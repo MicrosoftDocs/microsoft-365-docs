@@ -2,7 +2,7 @@
 title: How to use the Microsoft Defender Experts for XDR service
 ms.reviewer:
 description: Defender Experts for XDR helps prioritize and customize recommendations to fit your environment
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts, threat hunting and analysis
+keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Managed response in Teams, real-time visibility with XDR experts, threat hunting and analysis, incidents by category, impacted assets
 ms.service: defender-experts
 ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
@@ -16,9 +16,10 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - essentials-manage
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/10/2023
+ms.date: 01/29/2024
 ---
 
 # Start using Defender Experts for XDR service
@@ -35,7 +36,7 @@ Once our experts begin to perform comprehensive response work on your behalf, yo
 
 Through a combination of automation and human expertise, Defender Experts for XDR triages Microsoft Defender XDR incidents, prioritizes them on your behalf, filters out the noise, carries out detailed investigations, and provides actionable managed response to your security operations center (SOC) teams.
 
-### Incident notifications
+### Incident updates
 
 Once our experts start investigating an incident, the incident's **Assigned to** and **Status** fields are updated to _Defender Experts_ and _In progress_, respectively.
 
@@ -52,21 +53,21 @@ The **Determination** field corresponding to each classification is also updated
 If an incident is classified as _False Positive_ or _Informational_, _Expected Activity_, then the incident's **Status** field gets updated to _Resolved_. Our experts then conclude their work on this incident and the **Assigned to** field gets updated to _Unassigned_. Our experts may share updates from their investigation and their conclusion when resolving an incident. These updates are posted in the incident's **Comments and history** flyout panel.
 
 > [!NOTE]
-> Incident comments are one-way posts. Defender Experts can't respond to any comments or questions you add in the **Comments and history** panel. If you wish to correspond with our experts, reply to the email Defender Experts sent you instead.
+> Incident comments are one-way posts. Defender Experts can't respond to any comments or questions you add in the **Comments and history** panel. For more information about how to correspond with our experts, see [Communicating with experts in the Microsoft Defender Experts for XDR service](communicate-defender-experts-xdr.md).
 
-Otherwise, if an incident is classified as _True Positive_, our experts then identify recommended response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
+Otherwise, if an incident is classified as _True Positive_, our experts then identify the required response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
 
-- If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the recommended response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident's [Managed response](#how-to-use-managed-response-in-microsoft-365-defender) flyout panel in your Microsoft Defender portal for you or your SOC team to review. Once our experts conclude their work on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
+- If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the required response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident's [Managed response](#how-to-use-managed-response-in-microsoft-365-defender) flyout panel in your Microsoft Defender portal for you or your SOC team to review. All actions that are completed by Defender Experts for XDR appear under the **Completed actions** section. Any pending actions that require you or you SOC team to complete are listed under the **Pending actions** section. For more information, see the [Actions](#actions) section. Once our experts have taken all the necessary actions on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
 
-- If you have granted Defender Experts for XDR the default Security Reader access, then the recommended response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel in your Microsoft Defender portal for you or your SOC team to perform. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and its **Assigned to** field is updated to _Customer_.
+- If you have granted Defender Experts for XDR the default Security Reader access, then the required response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel under the **Pending actions** section in your Microsoft Defender portal for you or your SOC team to perform. For more information, see the [Actions](#actions) section. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and the **Assigned to** field is updated to _Customer_.
 
-You can check the number of incidents that are awaiting your action in the Defender Experts card in your Microsoft Defender portal:
+You can check the number of incidents that require your action in the Defender Experts banner at the top of the Microsoft Defender homepage.
 
 :::image type="content" source="../../media/xdr/view-incidents.png" alt-text="Screenshot of the Defender Experts card in Microsoft Defender portal showing the number of incidents awaiting customer action." lightbox="../../media/xdr/view-incidents.png":::
 
 To view the incidents our experts have investigated or are currently investigating, filter the incident queue in your Microsoft Defender portal using the _Defender Experts_ tag.
 
-:::image type="content" source="../../media/xdr/incidents-filter.png" alt-text="Screenshot of the Incidents queue in Microsoft Defender portal filtered to only show those with the  Defender Experts tag." lightbox="../../media/xdr/incidents-filter.png":::
+:::image type="content" source="../../media/xdr/incidents-filter.png" alt-text="Screenshot of the Incidents queue in Microsoft Defender portal filtered to only show those with the Defender Experts tag." lightbox="../../media/xdr/incidents-filter.png":::
 
 <a name='how-to-use-managed-response-in-microsoft-365-defender'></a>
 
@@ -78,13 +79,13 @@ Select **View managed response** on the task card or on the top of the portal pa
 
 #### Investigation summary
 
-The **Investigation summary** section provides you with more context about the incident analyzed by our experts to provide you with visibility about its severity and potential impact if not addressed immediately. It could include the device timeline, indicators of attack and indicators of compromise (IOCs) observed, and other details.
+The **Investigation summary** section provides you with more context about the incident analyzed by our experts to provide you with visibility about its severity and potential impact if not addressed immediately. It could include the device timeline, indicators of attack, and indicators of compromise (IOCs) observed, and other details.
 
 :::image type="content" source="../../media/xdr/investigation-summary.png" alt-text="Screenshot of managed response investigation summary." lightbox="../../media/xdr/investigation-summary.png":::
 
 #### Actions
 
-The **Actions** tab displays task cards that contain response actions recommended by our experts. 
+The **Actions** tab displays task cards that contain response actions recommended by our experts.
 
 Defender Experts for XDR currently supports the following one-click managed response actions:
 
@@ -92,6 +93,9 @@ Defender Experts for XDR currently supports the following one-click managed resp
 |------------|-----------------|
 |[Isolate device](/microsoft-365/security/defender-endpoint/respond-machine-alerts##isolate-devices-from-the-network)|Isolates a device, which helps prevent an attacker from controlling it and performing further activities such as data exfiltration and lateral movement. The isolated device will still be connected to Microsoft Defender for Endpoint.|
 |[Quarantine file](/microsoft-365/security/defender-endpoint/respond-file-alerts##stop-and-quarantine-files)|Stops running processes, quarantines the files, and deletes persistent data such as registry keys.|
+|[Restrict app execution](/microsoft-365/security/defender-endpoint/respond-machine-alerts##restrict-app-execution)| Restricts the execution of potentially malicious programs and locks down the device to prevent further attempts.|
+|[Release from isolation](/microsoft-365/security/defender-endpoint/respond-machine-alerts#isolate-devices-from-the-network)| Undoes isolation of a device.|
+|[Remove app restriction](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)| Undoes release from isolation.|
 
 Apart from these one-click actions, you can also receive managed responses from our experts that you need to perform manually.
 
@@ -100,24 +104,29 @@ Apart from these one-click actions, you can also receive managed responses from 
 
 **To view and perform the managed response actions:**
 
-1. Select the arrow buttons in a task card to expand it and read more information about the recommendation or collapse it.
-1. For cards with one-click response actions, select the recommended action. The **Action status** in the card changes to **In progress**, then to **Failed** or **Completed**, depending on the action's outcome.
+1. Select the arrow buttons in an action card to expand it and read more information about the required action.
 
-> [!TIP]
-> You can also monitor the status of in-portal response actions in the [Action center](m365d-action-center.md).
+   :::image type="content" source="../../media/xdr/action-card-1.png" alt-text="Screenshot of managed response action to isolate the device prod server." lightbox="../../media/xdr/action-card-1.png":::
 
-3. For cards with recommended actions that you need to perform manually, select **Mark as complete** once you've performed them. 
-1. If you don't want to complete a recommended action right away, select the ellipsis icon on the top of the card and choose any of the following other options:
-   - **Mark in progress**
-   - **Mark as skipped**
-   - **Mark as new**
+2. For cards with one-click response actions, select the required action. The **Action status** in the card changes to **In progress**, then to **Failed** or **Completed**, depending on the action's outcome.
 
-#### Chat
+   :::image type="content" source="../../media/xdr/action-card-2.png" alt-text="Screenshot of managed response action showing in-progress to isolate the device prod server." lightbox="../../media/xdr/action-card-2.png":::
 
-The **Chat** tab provides you with a space in the Microsoft Defender portal to engage with our experts and further understand the incident, our investigation, and the recommended actions we provided. You could ask about a malicious executable, malicious attachment, information about activity groups, advanced hunting queries, or any other information that would assist you with the incident resolution.
+   > [!TIP]
+   > You can also monitor the status of in-portal response actions in the [Action center](m365d-action-center.md). If a response action fails, try doing it again from the **View device details** page or [initiate a chat](communicate-defender-experts-xdr.md#in-portal-chat) with Defender Experts.
 
-> [!NOTE]
-> The chat option is only available for incidents where we issued managed response.
+3. For cards with required actions that you need to perform manually, select **I've completed this action** once you've performed them, then select **Yes, I've done it** in the confirmation dialog box that appears.
+
+   :::image type="content" source="../../media/xdr/ive-completed-this-action.png" alt-text="Screenshot of managed response action to confirm action completion." lightbox="../../media/xdr/ive-completed-this-action.png":::
+
+4. If you don't want to complete a required action right away, select **Skip**, then select **Yes, skip this action** in the confirmation dialog box that appears.
+
+> [!IMPORTANT]
+>
+>If you notice that any of the buttons on the action cards are grayed out, it could indicate that you don't have the necessary permissions to perform the action. Make sure that you're signed into the Microsoft Defender XDR portal with the appropriate permissions. Most managed response actions require that you have at least the Security Operator access.
+>
+>If you still encounter this issue even with the appropriate permissions, navigate to **View device details** and complete the steps from there.
+
 
 ## Get visibility to Defender Experts investigations in your SIEM or ITSM application
 
@@ -130,7 +139,7 @@ You can get incident visibility in Microsoft Sentinel by turning on its out-of-t
 Once you have turned on the connector, updates by Defender Experts to the **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft Defender XDR will show up in the corresponding **Status**, **Owner**, and **Reason for closing** fields in Sentinel.
 
 > [!NOTE]
-> The status of incidents investigated by Defender Experts in Microsoft Defender XDR typically transitions from _Active_ to _In progress_ to _Awaiting Customer Action_ to _Resolved_, while in Sentinel, it follows the _New_ to _Active_ to _Resolved_ path. The Microsoft Defender XDR Status ***Awaiting Customer Action*** doesn't have an equivalent field in Sentinel; instead, it's displayed as a tag in an incident in Sentinel.
+> The status of incidents investigated by Defender Experts in Microsoft Defender XDR typically transitions from _Active_ to _In progress_ to _Awaiting Customer Action_ to _Resolved_, while in Sentinel, it follows the _New_ to _Active_ to _Resolved_ path. The Microsoft Defender XDR Status _**Awaiting Customer Action**_ doesn't have an equivalent field in Sentinel; instead, it's displayed as a tag in an incident in Sentinel.
 
 The following section describes how an incident handled by our experts is updated in Sentinel as it progresses through the investigation journey:
 
@@ -150,7 +159,7 @@ After configuring a connector, the updates by Defender Experts to an incident's 
 
 Defender Experts for XDR includes an interactive, on-demand report that provides a clear summary of the work our expert analysts are doing on your behalf, aggregate information about your incident landscape, and granular details about specific incidents. Your service delivery manager (SDM) also uses the report to provide you with more context regarding the service during a monthly business review.
 
-:::image type="content" source="../../media/xdr/defender-xdr-report.png" alt-text="Screenshot of Defender Experts for XDR report." lightbox="../../media/xdr/Defender-xdr-report.png":::
+:::image type="content" source="../../media/xdr/defender-xdr-report.png" alt-text="Screenshot of Defender Experts for XDR report." lightbox="../../media/xdr/defender-xdr-report.png":::
 
 Each section of the report is designed to provide more insights about the incidents our experts investigated and resolved in your environment in real time. You can also select the **Date range** to get detailed information about incidents based on severity, category, and understand the time taken to investigate and resolve an incident during a specific period.
 
@@ -163,24 +172,11 @@ The topmost section of the Defender Experts for XDR report provides the percenta
 - **Resolved directly** – The number of investigated incidents that we were able to close directly on your behalf.
 - **Resolved with your help** – The number of investigated incidents that were resolved because of your action on one or more managed response tasks.
 
-The **Incidents by severity** and **Incidents by category** sections break down resolved incidents by severity and attack technique or threat type, respectively. These sections let you identify potential attack entry points and types of threats detected in your environment, assess their impact, and develop strategies to mitigate and prevent them. Select **View incidents** to get a filtered view of the incident queue based on the selections you made in each of the two sections.
+The **Average time to resolve incidents** section displays a bar chart of the average time, in minutes, our experts spent investigating and closing incidents in your environment and the average time you spent performing the required managed response actions.
 
-The **Average incident resolution time** section displays a bar chart of the average time, in minutes, our experts spent investigating and closing incidents in your environment and the average time you spent performing the recommended managed response actions.
+The **Incidents by severity**, **Incidents by category**, and **Incidents by service source** sections break down resolved incidents by severity, attack technique, and Microsoft security service source, respectively. These sections let you identify potential attack entry points and types of threats detected in your environment, assess their impact, and develop strategies to mitigate and prevent them. Select **View incidents** to get a filtered view of the incident queue based on the selections you made in each of the two sections.
 
-If you've set Defender Experts for XDR to have **Security Reader** access, the **Average incident resolution time** section also displays the estimated **Potential time savings** you could realize if you let our experts take managed remediation actions on your behalf by [providing them the permissions](get-started-xdr.md#grant-permissions-to-our-experts) to do so. The potential time savings are derived by calculating the total time it took you to complete recommended managed response actions after our experts issued them to you during your selected date range. Otherwise, if the service has **Security Operator** access, this report section displays the estimated time you already saved by granting us permission to take managed remediation actions on your behalf. To change access levels, select **Edit permissions**.
-
-## Collaborate with a trusted advisor
-
-The service delivery manager (SDM) is responsible for managing the overall relationship for your organization with the Defender Experts for XDR service. They are your trusted advisor working along with XDR experts' team to help you protect your organization.
-
-The SDM provides the following services:
-
-- Service readiness support
-  - Educate customers about the end-to-end service experience, from signup to regular operations and escalation process.
-  - Help establish a service-ready security posture, including guidance on required controls and policy updates.
-- Service operations support
-  - Provide tailored service delivery content and reporting, including periodic business reviews.
-  - Serve as a single point of contact for feedback and escalations related to Defender Experts Service.
+The **Most impacted assets** section shows the users and devices in your environment that were involved in the most number of incidents during your selected date range. You can see the volume of incidents each asset was involved in. Select an asset to get a filtered view of the incident queue based on the incidents that included the said asset.
 
 ## Proactive managed hunting
 
@@ -188,7 +184,7 @@ Defender Experts for XDR also includes proactive threat hunting offered by [Micr
 
 ## Request advanced threat expertise on demand
 
-Select **Ask Defender Experts** directly inside the Microsoft 365 security portal to get swift and accurate responses to all your threat questions. Experts can provide insights to better understand the complex threats your organization may face. Consult an expert to:
+Select **Ask Defender Experts** directly inside the Microsoft Defender XDR portal to get swift and accurate responses to all your threat questions. Experts can provide insights to better understand the complex threats your organization might face. Consult an expert to:
 
 - Gather additional information on alerts and incidents, including root causes and scope.
 - Gain clarity into suspicious devices, alerts, or incidents and get the next steps if faced with an advanced attacker.

@@ -164,13 +164,7 @@ Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are
 
    For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
-2. Run the following command to verify that Microsoft Defender for Endpoint is running:
-
-   ```dos
-   sc.exe query sense
-   ```
-
-The result should show it is running. If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
+If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
 
 ## Run a detection test
 

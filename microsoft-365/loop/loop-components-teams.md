@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
   - M365-collaboration
+  - essentials-overview
 description: Learn how to manage Loop components in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
@@ -71,18 +72,12 @@ Version History allows you to review, restore, or copy from previous versions of
 
 The .loop files can only be opened as links in your browser, such as Office.com, and as Loop components in Teams chat, Outlook email, Whiteboard, and Word for the web. If downloaded, they can't be opened again without first uploading them back to OneDrive or SharePoint.
 
-## Do .loop (and .fluid) files support eDiscovery?
-
-Loop components created in Teams, Outlook, and Word for the web, are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. Currently, these files are stored in the creator’s OneDrive and are available for search and collection in both eDiscovery (Standard) and eDiscovery (Premium). Render in review and HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
-
-A [graph export API](/graph/api/driveitem-get-content-format) solution is also available for Loop components that supports both raw export and an HTML offline format.
-
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
 If you disable these experiences as outlined in the [Settings management](loop-workspaces-configuration.md#settings-management-in-cloud-policy) section, the following experience-changes will apply:
 - The create/insert entry point within Teams messaging and Outlook email will be hidden. The users won't be able to create new .loop files.
 - Existing messages that would have formerly rendered as an interactive Loop component will instead render as a hyperlink. No interactive content will be displayed within the app that Loop components have been disabled in.
-- When you click on the hyperlink or browse to a .loop file in OneDrive for Business and click it to open, it will open in a separate browser tab. You will still be able to edit the file.
+- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it will open in a separate browser tab. You will still be able to edit the file.
 
 ## Known issues
 

@@ -2,15 +2,15 @@
 title: "Set up online meetings in Microsoft Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.date: 10/26/2023
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - tier1

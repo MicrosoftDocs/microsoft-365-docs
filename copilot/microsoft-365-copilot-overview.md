@@ -25,7 +25,7 @@ description: "Learn about how Microsoft Copilot for Microsoft 365 works."
 
 [Microsoft Copilot for Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 apps that you use every day, such as Word, Excel, PowerPoint, Outlook, Teams, and others. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
 
-Microsoft Copilot for Microsoft 365 uses a combination of LLMs, a type of artificial intelligence (AI) algorithm that uses deep learning techniques and vast data sets to understand, summarize, predict, and generate content. These LLMs include pre-trained models, such as Generative Pre-Trained Transformers (GPT) like GPT-4, designed to excel in these tasks.
+Copilot for Microsoft 365 uses a combination of LLMs, a type of artificial intelligence (AI) algorithm that uses deep learning techniques and vast data sets to understand, summarize, predict, and generate content. These LLMs include pre-trained models, such as Generative Pre-Trained Transformers (GPT) like GPT-4, designed to excel in these tasks.
 
 ## Copilot integration with Graph and Microsoft 365 Apps
 
@@ -53,6 +53,7 @@ Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and m
 | Teams                 | Chat                           | Users can invoke Copilot in any chat. Copilot can summarize up to 30 days of the chat content prior to the last message in a given chat. Copilot uses only the single chat thread as source content for responses and can't reference other chats or data types (for example, meeting transcripts, emails, and files). Users can interact with Copilot by selecting pre-written prompts or writing their own questions. Responses include clickable citations that direct users to the relevant source content that was used. Conversations with Copilot take place in a side panel that allows users to copy and paste. Copilot conversations will disappear after the side panel is closed. |
 |                       | Meetings                       | Users can invoke Copilot in meetings or calls within the same tenant. Copilot will use the transcript in real-time to answer questions from the user. It only uses the transcript and knows the name of the user typing the question. The user can type any question or use pre-determined prompts; however, Copilot will only answer questions related to the meeting conversation from the transcript. The user can copy/paste an answer and access Copilot after the meeting ends on the Recap page. |
 |                       | Copilot                  | Allows users to access data across their Microsoft 365 Graph and leverage LLM functionality. Copilot can be accessed in Teams and when signed-in to Bing with an active directory account. |
+|                       | Calls                  | Copilot in Teams Phone uses the power of AI to empower you to work more flexibly and intelligently, automating important administrative tasks of a call, such as capturing key points, task owners, and next steps, so you can stay focused on the discussion. Copilot in Teams Phone supports both voice over Internet Protocol (VoIP) and public switched telephone network (PSTN) calls.  |
 |                       | Whiteboard                     | Makes meetings and brainstorm sessions more creative and effective. Use natural language to ask Copilot to generate ideas, organize ideas into themes, create designs that bring ideas to life and summarize whiteboard content. |
 | OneNote               | Draft with Copilot             | Use prompts to draft plans, generate ideas, create lists, and organize information to help you easily find what you need.  |
 
@@ -62,17 +63,17 @@ To learn more about what's possible with Microsoft 365 Apps and Copilot, check o
 
 Microsoft Copilot for Microsoft 365 capabilities that users see in Microsoft 365 Apps and other surfaces appear as intelligent features, functionality, and prompting capability. Our foundation LLMs and proprietary Microsoft technologies work together in an underlying system that helps you securely access, use, and manage your organizational data.
 
-- **Microsoft 365 Apps** (such as Word, Excel, PowerPoint, Outlook, Teams, and Loop) operate with Microsoft Copilot for Microsoft 365 to support users in the context of their work. For example, Copilot in Word is designed to assist users specifically in the process of creating, understanding, and editing documents. In a similar way, Copilot in the other apps helps users in the context of their work within those apps.
+- **Microsoft 365 Apps** (such as Word, Excel, PowerPoint, Outlook, Teams, and Loop) operate with Copilot for Microsoft 365 to support users in the context of their work. For example, Copilot in Word is designed to assist users specifically in the process of creating, understanding, and editing documents. In a similar way, Copilot in the other apps helps users in the context of their work within those apps.
 
-- **Microsoft 365 Chat** enables Microsoft Copilot for Microsoft 365 users to leverage cross-app intelligence, simplifying their workflow across multiple apps. Microsoft 365 Chat uses the power of the foundation LLMs, a user's organizational data, and a user's apps to generate a response. Microsoft 365 Chat is available in a range of experiences, including Teams (chat), Bing, Microsoft Edge, and the Microsoft 365 app.
+- **Microsoft Copilot with Graph-grounded chat** enables you to bring your work content and context to Microsoft Copilot's chat capabilities. With Graph-grounded chat, you can draft content, catch up on what you missed, and get answers to questions via open-ended prompts— all securely grounded in your work data. Use Graph-grounded Copilot at many surfaces, including within Microsoft Teams, at [Microsoft365.com](https://www.microsoft365.com/), and at [copilot.microsoft.com](https://copilot.microsoft.com/).
 
 - **Microsoft Graph** has long been fundamental to Microsoft 365. It includes information about the relationships between users, activities, and your organization’s data. The Microsoft Graph API brings more context from customer signals into the prompt, such as information from emails, chats, documents, and meetings. For more information, see [Overview of Microsoft Graph](/graph/overview) and [Major services and features in Microsoft Graph](/graph/overview-major-services).
 
-- **Semantic Index** for Copilot uses multiple LLMs that sit on top of Microsoft Graph to interpret user queries and produce sophisticated, meaningful, and multilingual responses that help you to be more productive. It allows you to search quickly through billions of vectors (mathematical representations of features or attributes) to help connect you with relevant and actionable information in your organization. For more information on Semantic Index for Copilot, [review this video](https://www.youtube.com/watch?v=KtsVRCsdvoU).
+- **Semantic Index** for Copilot uses multiple LLMs that sit on top of Microsoft Graph to interpret user queries and produce sophisticated, meaningful, and multilingual responses that help you to be more productive. It allows you to search quickly through billions of vectors (mathematical representations of features or attributes) to help connect you with relevant and actionable information in your organization. For more information, see the [Semantic Index for Copilot article](https://aka.ms/SemanticIndex/Whitepaper)
 
 The following diagram provides a visual representation of how Microsoft Copilot for Microsoft 365 works.
 
-:::image type="content" source="media/microsoft-365-copilot-flow.png" alt-text="Diagram that shows the relationship among the components of Microsoft Copilot for Microsoft 365, such as Microsoft Graph and LLM." lightbox="media/microsoft-365-copilot-flow.png":::
+:::image type="content" source="media/copilot-architecture.png" alt-text="Diagram that shows the relationship among the components of Microsoft Copilot for Microsoft 365, such as Microsoft Graph and LLM." lightbox="media/copilot-architecture.png":::
 
 Here's an explanation of how Microsoft Copilot for Microsoft 365 works:
 
@@ -88,28 +89,26 @@ Microsoft Copilot for Microsoft 365 iteratively processes and orchestrates these
 
 ## Semantic Index
 
-The semantic index brings a whole new world of understanding to your data in Microsoft 365. Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft 365 chat via Copilot, it's always in the security context of the user, and only content that a user has access to is returned.
+Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft Copilot, it's always in the security context of the user, and only content that a user has access to is returned.
 
-The semantic index does more than enhance search results; it works to help you understand your data, find information quicker and improve productivity. Users can interact with the semantic index initially through Microsoft 365 Chat integration, and then over time, Microsoft will improve the search experience in SharePoint Online, Microsoft Teams, and the Microsoft 365 app:
-
-:::image type="content" source="media/microsoft-365-chat-search-index.png" alt-text="Diagram that shows the relationship between Microsoft 365 Chat and Microsoft Search." lightbox="media/microsoft-365-chat-search-index.png":::
-
-We are in the early stages of rolling out the semantic index to all organizations with Microsoft Copilot for Microsoft 365 and an eligible Microsoft 365 license, without any administrative involvement. Microsoft automatically manages the enablement of the semantic index, with prioritization given for organizations that purchase more than 300 licenses for Microsoft Copilot for Microsoft 365. When user indexing is complete, administrators will see a ‘Semantic indexing is complete’ status in the Microsoft 365 admin center for enabled users. When tenant level indexing starts in an organization, admins will see ‘Semantic index is enabled for your organization’ on the Search and Intelligence page in the Microsoft 365 admin center.
-
-:::image type="content" source="media/enable-semantic-index.png" alt-text="Screenshot that shows the semantic index enabled.":::
-
-> [!IMPORTANT]
-> Microsoft will not provide timelines or status of semantic indexing of user and tenant level indexing for individual tenants. Organizations are advised to use the process above to check on indexing status for their tenants.
-
-To learn more about Semantic Index for Copilot, check out these resources:
-
-- [Semantic Index for Copilot: Explained by Microsoft](https://www.youtube.com/watch?v=KtsVRCsdvoU)
-
-- [Semantic Index for Copilot whitepaper](https://aka.ms/SemanticIndex/Whitepaper)
+To learn more, see [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot).
 
 ## Availability
 
-Microsoft Copilot for Microsoft 365 is generally available as an add-on to customers with Microsoft E3, E5, A3, or A5 faculty. Contact your Microsoft account team to start the purchase process.
+Copilot for Microsoft 365 is an add-on plan with the following licensing prerequisites:
+
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Office 365 E3  
+- Office 365 E5
+- Microsoft 365 A5 for faculty
+- Microsoft 365 A3 for faculty
+- Office 365 A5 for faculty
+- Office 365 A3 for faculty
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Premium
+
+You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) and [Microsoft Copilot for Microsoft 365 requirements](microsoft-365-copilot-requirements.md).
 
 ## Additional resources
 

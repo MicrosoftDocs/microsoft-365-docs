@@ -23,7 +23,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 09/27/2022
+ms.date: 01/17/2024
 ---
 
 # Frontline team collaboration
@@ -35,15 +35,15 @@ Bring your frontline together to communicate, collaborate, and streamline operat
 
 ## Day-to-day communications and collaboration in Teams
 
-Microsoft Teams enables your on-the-ground staff to collaborate efficiently with included collaboration features and apps. Your frontline workforce can use Teams on either personal or shared devices depending on the needs of your organization.
+Microsoft Teams enables your on-the-ground staff to collaborate efficiently with collaboration features and apps. Your frontline workforce can use Teams on either personal or shared devices depending on the needs of your organization.
 
-Teams includes the following ways to communicate and share information:
+Here are some of the ways that your frontline can use Teams to communicate and share information.
 
 |Task |Description |Manage this capability |End-user training |
 |-----|------------|-----------------------|------------------|
-|Chat, post messages, and communicate |Your frontline workers can seamlessly communicate within and across locations to with individual and channel chat messaging. Teams provides a great out-of-the-box collaboration experience for your organization, and most organizations find that the default settings work for them. |[Manage Chat, teams, channels, and apps](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). | [Start chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) and [Work with posts and messages](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885). Watch the [Tags in Microsoft Teams video](https://go.microsoft.com/fwlink/?linkid=2202727). |
-|Call and meet with team members |Managers can set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features. You'll need to configure settings for meetings and conferencing, and enable a voice solution to use calling. |[Manage calling and meeting in Teams](/microsoftteams/deploy-meetings-microsoft-teams-landing-page) and [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page) |[Make calls](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f) and [Join a meeting](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4) |
-|Store and share files and documents |Sharing files allows in-store staff to easily access information such as merchandising diagrams without having to leave the sales floor or get help from a manager. Every team automatically comes with a Files tab that you can use to store and share documents. This tab actually represents a folder within the default team site document library in SharePoint that is automatically created when the team is created. |[Overview of Teams and SharePoint integration](/sharepoint/teams-connected-sites) |[Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
+|Chat, post messages, and communicate |Your frontline workers can seamlessly communicate within and across locations through chats and channel conversations. Teams provides a great out-of-the-box collaboration experience for your organization, and most organizations find that the default settings work for them. |[Manage chat, teams, channels, and apps](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). |Chats:<ul><li>[Chat in Teams](https://support.microsoft.com/en-us/office/chat-in-microsoft-teams-f3a917cb-1a83-42b2-a097-0678298703bb)</li><li>[Start chats](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) (video)</li></ul> Channel conversations: <ul><li>[Send a message to a channel](https://support.microsoft.com/office/send-a-message-to-a-channel-in-microsoft-teams-5c8131ce-eaad-4798-bc73-e33f4652a9c4)</li><li>[Work with posts and messages](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885) (video training)</li></ul>[Using tags in Teams](https://support.microsoft.com/office/using-tags-in-microsoft-teams-667bd56f-32b8-4118-9a0b-56807c96d91e)|
+|Call and meet with team members |Managers can set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features. You'll need to configure settings for meetings and conferencing, and enable a voice solution to use calling. |[Overview of meetings, webinars, and town halls in Teams](/microsoftteams/deploy-meetings-microsoft-teams-landing-page) and [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page) |Calls: <ul><li>[Make calls](https://support.microsoft.com/en-us/office/start-a-call-from-a-chat-in-microsoft-teams-f5138c9d-df4c-43d8-9cf6-53400c1a7798)</li><li>[Overview of Teams calls](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f) (video training)</li></ul> Meetings:<ul><li>[Join a meeting in Teams](https://support.microsoft.com/en-us/office/join-a-meeting-in-microsoft-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9)</li><li>[Join a meeting](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4) (video training)</li></ul>|
+|Store and share files and documents |Sharing files allows in-store staff to easily access information such as merchandising diagrams without having to leave the sales floor or get help from a manager. Every team automatically comes with a **Files** tab that you can use to store and share documents. This tab actually represents a folder within the default team site document library in SharePoint that's' automatically created when the team is created. |[Overview of Teams and SharePoint integration](/sharepoint/teams-connected-sites) |[Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) (video training) |
 
 ### See examples of how different industries can use communication capabilities in Teams
 
@@ -55,7 +55,7 @@ Retail employees can use Teams to keep in touch and better serve customers. Diff
 
 #### Healthcare
 
-Healthcare workers in a hospital use Teams capabilities to coordinate care. Everyone in the office is part of a general chat, and each group of workers (doctors, nurses, receptionists, and other staff) has their own channel where they can ask questions and communicate. Staff in different departments use Teams meetings and calls to keep up to date without having to leave their stations. When multiple staff are attending to one patient, they share notes and care plans over Teams. Staff who work with instruments and machinery, such as medical instrument technicians, can share fact and care sheets about equipment.
+Healthcare workers in a hospital use Teams capabilities to coordinate care. Everyone in the office is part of a general chat, and each group of workers (doctors, nurses, receptionists, and other staff) can have their own channel where they can ask questions and communicate. Staff in different departments uses Teams meetings and calls to keep up to date without having to leave their stations. When multiple staff are attending to one patient, they share notes and care plans over Teams. Staff who work with instruments and machinery, such as medical instrument technicians, can share fact and care sheets about equipment.
 
 #### Financial services
 
@@ -63,7 +63,7 @@ Bank employees can use Teams to communicate across branches and share informatio
 
 #### Manufacturing
 
-Manufacturing workers can use Teams to communicate and coordinate production within and across locations. Plants can hold morning stand-up meetings without anyone having to leave their stations. Workers can use chat to get in touch with each other and foremen or supervisors so they don't need to search across large areas to find help. Your team can use file sharing to make sure everyone has on-the-go access to manuals, instruction sheets, inspection records, and any other information your workers need.
+Manufacturing workers can use Teams to communicate and coordinate production within and across locations. Plants can hold morning stand-up meetings without anyone having to leave their stations. Workers can use chat to get in touch with each other and supervisors so they don't need to search across large areas to find help. Your team can use file sharing to make sure everyone has on-the-go access to manuals, instruction sheets, inspection records, and any other information your workers need.
 
 ## Apps in Teams
 
@@ -76,41 +76,34 @@ Your team can use apps in Teams to coordinate and collaborate with each other on
 - [Streamline approvals with Approvals](#streamline-approvals-with-approvals)
 - [Check in on progress with Updates](#check-in-on-progress-with-updates)
 
-Financial services organizations can also use the [Collaboration Manager for Loans](/industry/financial-services/collaboration-manager/overview) to seamlessly collaborate on the lending process.
-
 > [!TIP]
 > Examples are given for the financial services, healthcare, nonprofit, and retail industries, but you can use these apps for an organization in any sector.
 
-[View videos and resources](collab-features-apps-toolkit.md) to share with your team to help them use collaboration apps and features in Teams.
-
 ### Create, manage, and share schedules with Shifts
 
-Use Shifts to seamlessly manage and share schedules. Managers can create custom groups such as cashiers, nurses, or mortgage specialists, assign shifts to employees, add custom labeling and breaks, and add open shifts that employees can request to take. Employees can use Shifts to set their availability, view their schedules, swap shifts with coworkers, and clock in and out. Managers can also create open shifts that employees can request. For example, a volunteer coordinator at a nonprofit could create open shifts that volunteers can request to take.
+Use Shifts to seamlessly manage and share schedules. Managers can create custom groups such as cashiers, nurses, or mortgage specialists, assign shifts to employees, add breaks, and add open shifts that employees can request to take. Employees can use Shifts to set their availability, view their schedules, swap shifts with coworkers, clock in and out, and more. For example, a volunteer coordinator at a nonprofit could create open shifts that volunteers can request to take.
 
-Learn how to [Manage Shifts for your organization](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
-
-Learn how to [help your employees track time and attendance with Shifts](shifts-toolkit.md).
+Learn how to [manage Shifts for your organization](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Shifts video training](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) with your users.
 
-[View videos and resources](shifts-toolkit.md) to share with your team to help them use features in Shifts.
-
 ### Keep in touch with Walkie Talkie
 
-The Walkie Talkie app provides instant push-to-talk communication. By using Walkie Talkie, employees and managers can communicate from anywhere in the store. For example, if a customer on one side of the store asks an employee if an item is in stock on the other side of the store, the employee can use Walkie Talkie to contact someone who works near the item. Because Walkie Talkie doesn’t have limited range, employees can also easily consult with experts in other stores or corporate offices.
+The Walkie Talkie app in Teams provides a push-to-talk (PTT) experience that enables clear, instant, and secure voice communications. For example, if a customer at one side of the store asks an employee if an item is in stock on the other side of the store, the employee can use Walkie Talkie to contact someone who works near the item. Employees can also easily consult with experts in other stores or corporate offices. Because Walkie Talkie works over Wi-Fi or cellular data, your frontline can communicate from anywhere they have an internet connection.
 
 |Industry |Example |
 |:--------|:-------|
-|Retail | If a customer asks a store associate a question they don't know the answer to, the associate can use Walkie Talkie to call a manager or another expert without having to leave the customer. |
-|Healthcare |A medical staff member who has a question about a patient's treatment can use Walkie Talkie to call another staff member who works with the patient. |
+|Retail | If a customer asks a store associate a question they don't know the answer to, the associate can use Walkie Talkie to communicate with a manager or another expert without having to leave the customer. |
+|Healthcare |A medical staff member who has a question about a patient's treatment can use Walkie Talkie to communicate with another staff member who works with the patient. |
 |Financial services |A bank employee discussing loan options with a customer can use Walkie Talkie to consult a loan expert to determine the best option for the customer. |
-|Manufacturing |A technician can use Walkie Talkie to consult with an expert in another location while performing equipment maintenance or repair. |
+|Manufacturing |A technician can use Walkie Talkie to consult with an expert in another location while performing equipment maintenance or repairs. |
 
 Learn how to [manage Walkie Talkie for your organization](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
-Share this [Walkie Talkie video training](https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69) with your users.
+Share these Walkie Talkie resources with your users:
 
-Watch the [Walkie Talkie featurette video](https://go.microsoft.com/fwlink/?linkid=2202710).
+- [Get started with Teams Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c)
+- [Communicate with your team in Walkie Talkie](https://support.microsoft.com/office/communicate-with-your-team-in-walkie-talkie-e4342550-5516-4451-b9ec-93166b60f8a4)
 
 ### Boost morale with Praise
 
@@ -121,7 +114,7 @@ The Praise app allows management and frontline team members to congratulate each
 |Retail |A store manager can send the **Awesome** badge to an associate who meets their sales goals. |
 |Healthcare |A healthcare worker can send the **Kind heart** badge to a peer who puts extra effort into patient care. |
 |Financial services |A bank manager can send the **Achiever** badge to a relationship manager who helps to retain an important client. |
-|Manufacturing |A supervisor can send the **Leadership** badge to a foreman whose team is performing well. |
+|Manufacturing |A manager can send the **Leadership** badge to a supervisor whose team is performing well. |
 
 Learn how to [manage the Praise app for your organization](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
@@ -142,8 +135,6 @@ Learn how to [manage the Tasks app for your organization](/microsoftteams/manage
 
 Share this [Tasks video training](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) with your users.
 
-Watch the [Tasks featurette video](https://go.microsoft.com/fwlink/?linkid=2202616).
-
 ### Streamline approvals with Approvals
 
 Use Approvals to streamline requests and processes with your team. Create, manage, and share approvals directly from your hub for teamwork. Start an approval flow from the same place you send a chat, in a channel conversation, or from the Approvals app itself. Just select an approval type, add details, attach files, and choose approvers. Once submitted, approvers are notified and can review and act on the request. You can allow the Approvals app for your organization and add it to Teams.
@@ -158,8 +149,6 @@ Use Approvals to streamline requests and processes with your team. Create, manag
 Learn how to [manage the Approvals app for your organization](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 Share this [Approvals video training](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) with your users.
-
-Watch the [Approvals featurette video](https://go.microsoft.com/fwlink/?linkid=2202800).
 
 ### Check in on progress with Updates
 
@@ -176,26 +165,9 @@ Learn how to [manage the Updates app for your organization](/microsoftteams/mana
 
 Share this [Updates video training](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) with your users.
 
-Watch the [Updates featurette video](https://go.microsoft.com/fwlink/?linkid=2202831).
+## Manage apps
 
-## Set up your teams, channels, and apps
-
-When you're ready to connect your retail associates in Teams, you can set up teams and channels for your store teams and managers with pre-built or custom templates. The easiest way is to start with a template. The **Organize a store** and **Retail for managers** [templates](/microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) are pre-made templates that include channels and apps designed for retail. You can also create a template based off of an existing team. Even when you start with a template, you can customize the team and channels, and add more apps to suit your team's needs.
-
-- Use channels with tabs to share news, keep employees in touch across shifts, and build community.
-- Use teams templates to set up teams with similar structures (such as channels and tabs) across stores or regions.
-
-### Create a team based on a template
-
-1. In Microsoft Teams, select **Join or create a team**.
-
-2. Select **Create a team** and then scroll down to see available templates.
-
-More information: [Create a team with templates](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)
-
-### Manage apps
-
-Refine what's in your team with apps. You can allow or block apps for your organization, or configure settings for apps, in the Microsoft Teams admin center. For more information about managing apps, see [Manage apps in the Microsoft Teams admin center](/microsoftteams/manage-apps).
+Manage apps for your organization in the Teams admin center. To learn more, see [Overview of app management and governance in Teams admin center](/microsoftteams/manage-apps).
 
 Your users can add any apps that you have allowed to their teams. Share this training with your users to show them how: [Find and use apps](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
 
@@ -207,19 +179,14 @@ You can also set up shared mailboxes to allow for incoming mail from customers (
 
 ## Use Viva Connections to create a personalized experience
 
-> [!NOTE]
-> Viva Connections isn't currently available for tablets.
-
 Viva Connections is part of the [Microsoft Viva suite](/viva/microsoft-viva-overview) and enables you to create a personalized landing experience in Teams.
 
-![Screenshot of the Viva Connections Dashboard on a mobile device.](media/flw-shifts-praise-tasks-approvals.png)
+The Viva Connections dashboard provides fast and easy access to information and job-related tasks. For example, add the Shifts card to show information about the next or current shift from the Shifts app. Content in the cards is dynamic and personalized to the user.
 
-Use the Viva Connections Dashboard and add the Shifts, Tasks, and Approvals cards. Cards are connected to the Shifts, Tasks, and Approvals apps in Teams. Content in the cards is dynamic and personalized to the user.
-
-Learn more about [how to get Viva Connections](/viva/connections/viva-connections-overview) and [how to create a Viva Connections Dashboard](/viva/connections/create-dashboard).
+Learn more about [Viva Connections](/viva/connections/viva-connections-overview) and [how to create a Viva Connections dashboard](/viva/connections/create-dashboard).
 
 ## Learn more about Teams capabilities for specific industries
 
 - [Teams for Retail](teams-for-retail-landing-page.md)
 - [Teams for Healthcare](teams-in-hc.md)
-- [Collaboration Manager for Loans for Financial Services](/industry/financial-services/collaboration-manager/overview)
+- [Teams for Manufacturing](teams-for-manufacturing.md)

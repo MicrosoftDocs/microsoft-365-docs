@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
   - M365-collaboration
+  - essentials-compliance
 description: Learn about Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
@@ -44,15 +45,15 @@ When you invite a user to a workspace, that user has access to all the pages in 
 
 When you share only a Loop page, you're giving users access to that specific page exclusively (not the whole workspace). The user can choose to use a company share link or people-specific share link; unless their tenant admin has disabled some of the share link types. When sharing a page, you can choose to grant the user "*edit*" or "*read only*" access.
 
-## Loop workspaces and Microsoft 365 groups
+## Loop workspace membership and Microsoft 365 groups
 
-Loop workspaces don't use Microsoft 365 groups for access management, instead they create a roster for access management.
+Loop workspaces currently have one type, with membership visible and manageable within the Loop app by the workspace owner. However, there is no integration with Microsoft 365 groups or Security groups.
 
-## eDiscovery support for Loop content stored in Loop workspaces
+At present, owners cannot assign new members as owners. If the owner leaves the company, the workspace becomes ownerless. Administrators cannot assign new owners to ownerless workspaces.
 
-Loop content (pages and components) created in the Loop app are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. As mentioned above, these files are stored in SharePoint Embedded and are available for search and collection for both eDiscovery (Standard) and eDiscovery (Premium). Render in review and the HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
+PowerShell support for number of owners on a SharePoint Embedded container is not yet available. Once it is, to find ownerless workspaces, query Loop workspace containers in SharePoint Embedded. For more information, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application ID is listed in [Summary of governance, lifecycle and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
-A graph export API that can access Loop content stored in [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428) is not yet available.
+Note that there are other types of groups and membership lists in the Microsoft ecosystem, such as Microsoft 365 groups and Security groups. Currently, Loop workspace membership cannot be managed by or associated with these groups or lists.
 
 ## Storage management after user departure
 
