@@ -78,7 +78,6 @@ There are multiple fixes and new changes in this release:
 - Bug fix for behavior monitoring configuration.
 - Bug fixes.
 
-
 </details>
 
 <details>
