@@ -3,7 +3,7 @@ title: "View Microsoft 365 user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/19/2023
+ms.date: 02/05/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -22,6 +22,7 @@ ms.custom:
   - Ent_Office_Other
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 
 description: Learn how to view, list, or display your Microsoft 365 user accounts in different ways with PowerShell.
