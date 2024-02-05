@@ -51,7 +51,7 @@ Before you can protect apps with Microsoft Intune, you must follow a few prerequ
 
 Follow these steps if you haven't already set up Intune and added the apps you need to manage and protect:
 1. Set up and [deploy Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune&preserve-view=true)
-2. Understand [application protection](apps-protect-overview.md#app-protection&preserve-view=true)
+2. Understand [application protection](apps-protect-overview.md#app-protection)
 3. [Understand app types](/microsoft-365/solutions/apps-guide-overview#understand-app-types&preserve-view=true)
 4. [Add apps to Intune](/microsoft-365/solutions/apps-add-overview)
 
