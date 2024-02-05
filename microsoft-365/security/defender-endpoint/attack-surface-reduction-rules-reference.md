@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: sugamar,
+ms.reviewer: sugamar, niwelton
 manager: dansimp
 ms.custom: asr
 ms.topic: reference
@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - mde-asr
-ms.date: 11/30/2023
+ms.date: 02/02/2024
 search.appverid: met150
 ---
 
@@ -32,7 +32,7 @@ search.appverid: met150
 
 - Windows
 
-This article provides information about Microsoft Defender for Endpoint attack surface reduction rules:
+This article provides information about Microsoft Defender for Endpoint attack surface reduction rules (ASR rules):
 
 - [ASR rules supported operating system versions](#asr-rules-supported-operating-systems)
 - [ASR rules supported configuration management systems](#asr-rules-supported-configuration-management-systems)
@@ -43,7 +43,7 @@ This article provides information about Microsoft Defender for Endpoint attack s
 
 ## Attack surface reduction rules by type
 
-ASR rules are categorized as one of two types:
+Attack surface reduction rules are categorized as one of two types:
 
 - **Standard protection rules**: Are the minimum set of rules which Microsoft recommends you always enable, while you are evaluating the impact and configuration needs of the other ASR rules. These rules typically have minimal-to-no noticeable impact on the end user.
 
@@ -433,6 +433,9 @@ Dependencies: Microsoft Defender Antivirus, RPC
 ### Block Office applications from injecting code into other processes
 
 This rule blocks code injection attempts from Office apps into other processes.
+
+> [!IMPORTANT]
+> This rule requires restarting Microsoft 365 Apps (Office applications) for the configuration changes to take effect.
 
 Attackers might attempt to use Office apps to migrate malicious code into other processes through code injection, so the code can masquerade as a clean process.
 
