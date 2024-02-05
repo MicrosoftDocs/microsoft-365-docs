@@ -33,9 +33,18 @@ description: Learn how to view, list, or display your Microsoft 365 user account
 
 You can use the Microsoft 365 admin center to view the accounts for your Microsoft 365 tenant. PowerShell for Microsoft 365 enables this but also provides additional functionality.
   
-## Use the Azure Active Directory PowerShell for Graph module
+## View user accounts using Microsoft Graph Powershell
 
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+> [!NOTE]
+> The Azure Active Directory (AzureAD) PowerShell module is being deprecated and replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+>
+> Also see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) and [Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps) for information on how to install and upgrade to Microsoft Graph PowerShell, respectively.
+
+1. First, install the required software to use Microsoft Graph Powershell. See [Connect to Microsoft 365 with Microsoft Graph PowerShell](connect-to-microsoft-365-powershell.md) for more information.
+
+1. Then run the following comdlet to connect to your organization:
+
+
   
 ### View all accounts
 
