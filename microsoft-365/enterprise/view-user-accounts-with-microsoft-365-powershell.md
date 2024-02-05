@@ -77,41 +77,41 @@ Bianca Pisani             7fe8c2d1-eb8e-4032-96ba-26242ff0acd9 BiancaP@M365x8952
 To display a specific user account, run the following command. Fill in the sign-in account name of the user account, which is also known as the user principal name (UPN). Remove the "<" and ">" characters.
   
 ```powershell
-Get-MgUser -All | Select UserPrincipalName
+Get-MgUser -UserId '<user pincipal name>'
 ```
 
 Here's an example:
   
 ```powershell
-Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
+Get-MgUser -UserId 'BelindaN@litwareinc.onmicosoft.com'
 ```
 
 ### View additional property values for a specific account
 
-By default, the **Get-AzureADUser** cmdlet only displays the *ObjectID*, *DisplayName*, and *UserPrincipalName* properties of accounts.
+By default, the **Get-MgUser** cmdlet only displays the *DisplayName*, *Id*, *Mail*, and *UserPrincipalName* properties of accounts.
 
-To be more selective about the properties to display, use the **Select** cmdlet in combination with the **Get-AzureADUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here's an example command that displays the *DisplayName*, *Department*, and *UsageLocation* for every user account:
+To be more selective about the properties to display, use the **Select** cmdlet in combination with the **Get-MgUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells PowerShell to take the results of one command and send it to the next command. Here's an example command that displays the *DisplayName*, *Department*, and *UsageLocation* for every user account:
   
 ```powershell
-Get-AzureADUser | Select DisplayName,Department,UsageLocation
+Get-MgUser -All | Select DisplayName,Department,UsageLocation
 ```
 
 This command instructs PowerShell to:
   
-1. Get all the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
+1. Get all the information on the user accounts (**Get-MgUser**) and send it to the next command (**|**).
 
 1. Display only the user account name, department, and usage location (**Select DisplayName, Department, UsageLocation**).
   
 To see all the properties for a specific user account, use the **Select** cmdlet and the wildcard character (*). Here's an example:
   
 ```powershell
-Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
+Get-MgUser -UserID 'BelindaN@litwareinc.onmicosoft.com' | Select *
 ```
 
 As another example, run the following command to check the enabled status of a specific user account:
   
 ```powershell
-Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
+Get-MgUser -UserID '<sign-in name of the user account>' | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
 
 ### View account synchronization status
@@ -122,47 +122,47 @@ User accounts have two sources:
 
 - Microsoft Entra accounts, which are created directly in the cloud.
 
-You can use the following command to find accounts that are synchronizing from **on-premise** AD. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*.
+You can use the following command to find accounts that are synchronizing from **on-premise** AD. It instructs PowerShell to get all users who have the attribute *OnPremisesSyncEnabled* set to *True*.
 
 ```powershell
-Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
+Get-MgUser -All -Filter 'OnPremisesSyncEnabled eq true'
 ```
 
-You can use the following command to find **cloud-only** accounts. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *False* or not set (*Null*).
-An account that was never synced from on-premise AD has *DirSyncEnabled* set to *Null*. An account that was synced initially from on-premise AD but is no longer being synced has *DirSyncEnabled* set to *False*. 
+You can use the following command to find **cloud-only** accounts. It instructs PowerShell to get all users who have the attribute *OnPremisesSyncEnabled* set to *False* or not set (*Null*).
+An account that was never synced from on-premise AD has *OnPremisesSyncEnabled* set to *Null*. An account that was synced initially from on-premise AD but is no longer being synced has *OnPremisesSyncEnabled* set to *False*.
 
 ```powershell
-Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
+Get-MgUser -All | Where OnPremisesSyncEnabled -ne true
 ```
 
 ### View accounts based on a common property
 
-To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-AzureADUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here's an example command that displays only those user accounts that have an unspecified usage location:
+To be more selective about the list of accounts to display, you can use the **Where** cmdlet in combination with the **Get-MgUser** cmdlet. To combine the two cmdlets, use the "pipe" character ("|"), which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here's an example command that displays only those user accounts that have an unspecified usage location:
   
 ```powershell
-Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
+Get-MgUser | Where UsageLocation -eq $Null
 ```
 
 This command instructs Azure Active Directory PowerShell for Graph to:
   
-1. Get all the information on the user accounts (**Get-AzureADUser**) and send it to the next command (**|**).
+1. Get all the information on the user accounts (**Get-MgUser**) and send it to the next command (**|**).
 
-1. Find all the user accounts that have an unspecified usage location (**Where {$\_.UsageLocation -eq $Null}**). Inside the braces, the command instructs PowerShell to only find the set of accounts for which the UsageLocation user account property (**$\_.UsageLocation**) is not specified (**-eq $Null**).
+1. Find all the user accounts that have an unspecified usage location (**Where UsageLocation -eq $Null**). Inside the braces, the command instructs PowerShell to only find the set of accounts for which the UsageLocation user account property (**UsageLocation**) is not specified (**-eq $Null**).
 
 The **UsageLocation** property is only one of many properties associated with a user account. To display all the properties for a specific user account, use the **Select** cmdlet and the wildcard character (*). Here's an example:
   
 ```powershell
-Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
+Get-MgUser -UserID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
 For example, **City** is the name of a user account property. You can use the following command to list all accounts of users who live in London:
   
 ```powershell
-Get-AzureADUser | Where {$_.City -eq "London"}
+Get-MgUser | Where City -eq "London"
 ```
 
 > [!TIP]
-> The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](/powershell/module/microsoft.powershell.core/where-object).
+> The syntax for the **Where** cmdlet in these examples is **Where** [user account property name] [comparison operator] [value] **value**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](/powershell/module/microsoft.powershell.core/where-object).
 
 ## See also
 
