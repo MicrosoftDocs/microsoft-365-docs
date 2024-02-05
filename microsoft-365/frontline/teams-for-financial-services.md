@@ -51,7 +51,7 @@ Microsoft 365 and Teams offers capabilities that help financial services organiz
 
 Bring associates and management together across branches to collaborate and streamline operations with Teams and Teams apps.
 
-**Key apps and capabilities:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
+**Key apps and capabilities:** Shifts, Walkie Talkie, Tasks, Approvals, Praise, Lists, Updates, Chat, Files
 
 **Additional services:** Viva Connections, SharePoint, Power Platform and Power Apps
 
@@ -93,7 +93,7 @@ More information: [Corporate communications with frontline workers](flw-corp-com
 > For all these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.-->
 
 > [!NOTE]
-> For all these capabilities, users must have an appropriate license. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) to learn more about using Microsoft 365 for frontline workers in combination with other licenses. For a detailed comparison of what's included in Microsoft 365 enterprise plans, see [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145).
+> For all these capabilities, users must have an appropriate license. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) to learn more about using Microsoft 365 for frontline workers in combination with other licenses. For a detailed comparison of what's included in Microsoft 365 enterprise plans, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
 
 ## Configure services and apps
 
@@ -108,7 +108,7 @@ For financial services environments, the following apps and services can help yo
 | Teams apps and services | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
 | Approvals | Streamline the sign-off process by integrating Approvals into chat. | [Manage Approvals](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
-| Chat | Enable quick conversations between staff with chat in Teams. | [Chat, teams, channels & apps in Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chat in Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
+| Chat | Enable quick conversations between staff with chat in Teams. | [Chat, teams, channels & apps in Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chat in Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
 | Documents and files | Share standard operating procedures, regulatory compliance policies, company policies, and financial product fact sheets. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 | Praise | Recognize coworkers for great teamwork with the Praise app. | [Manage the Praise app](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Send Praise to people](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
 | Shifts | Manage schedules and clock in and out with Shifts. | [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
@@ -118,10 +118,10 @@ For financial services environments, the following apps and services can help yo
 
 | More apps and services from Microsoft | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
-| Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as sales numbers, KPIs, and other reports. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
+| Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as sales numbers, KPIs, and other reports. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
 | SharePoint | A new, connected SharePoint site is created whenever you create a new team. You can use SharePoint to store files, post news, and make sure your workers have access to important information. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Add a SharePoint page, list, or document library as a tab in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
-| Viva Connections | Viva Connections creates a hub in Teams where your frontline team can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
-| Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Manage Viva Learning](/microsoft-365/learning/) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
+| Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Employees can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | [Viva Connections in Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
+| Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Overview of Viva Learning](/viva/learning/overview-viva-learning) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
 | Viva Engage | Connect your entire organization and enable communication across departments and regions. | [Overview of Viva Engage](/viva/engage/overview) | [Use Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284) |
 
 For more about successfully implementing and adopting Teams, see [Adopt Microsoft Teams](/microsoftteams/adopt-microsoft-teams-landing-page).
