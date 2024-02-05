@@ -75,9 +75,9 @@ You can manage threat detections for any devices that are [enrolled in Microsoft
      - Sync
      - Update signatures
 
-## FAQs
+### FAQs
 
-### In the Microsoft XDR portal > Devices with active malware > Devices with malware detections report, why does the Last update seem to be occurring today?
+#### In the Microsoft XDR portal > Devices with active malware > Devices with malware detections report, why does the Last update seem to be occurring today?
 
 To see when the malware was detected, you can do the following:
 
@@ -86,11 +86,11 @@ To see when the malware was detected, you can do the following:
 3. On your device, go to Downloads, and extract the Active malware_YYYY_MM_DD_THH_MM_SS.0123Z.csv.zip.
 4. Open the CSV and find the **LastStateChangeDateTime** column to see when malware was detected.
 
-### In the devices with malware detections report, why can’t I see any information about which malware was detected on the device. 
+#### In the devices with malware detections report, why can’t I see any information about which malware was detected on the device. 
 
 To see the malware name, visit the [Intune portal](https://intune.microsoft.com) as this is an integration with Intune, select **Antivirus**  and select **Active malware** tab and you'll see a column named **Malware name**.
 
-### I see a different number for active malware in Devices with active malware report, when compared to numbers I see using Reports > Detected malware, and Intune > Antivirus > Active malware.
+#### I see a different number for active malware in Devices with active malware report, when compared to numbers I see using Reports > Detected malware, and Intune > Antivirus > Active malware.
 
 The **Devices with active malware** report is based on the devices that were active within the last 1 day (24 hours) and had malware detections within the last 15 days.
 
@@ -111,11 +111,11 @@ DeviceName
 | distinct DeviceName, DeviceId, Title, AlertId, Timestamp 
 ```
 
-### I searched the computer name in the top search bar and got two devices with the same name. I don't know which one of those two devices the report is referring to. 
+#### I searched the computer name in the top search bar and got two devices with the same name. I don't know which one of those two devices the report is referring to?
 
 Use the Advanced Hunting query that is mentioned [here](#i-see-a-different-number-for-active-malware-in-devices-with-active-malware-report-when-compared-to-numbers-i-see-using-reports--detected-malware-and-intune--antivirus--active-malware) for details such as unique DeviceID, Title, AlertID, and the remediation process. After identifying, work with your IT admin’s to make sure that the devices are uniquely named. If a device is retired, use [tags to decommission it.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-to-use-tagging-effectively-part-1/ba-p/1964058)
 
-### I see malware detection in Intune and on the Devices with active malware report, but I don’t see it in the MDE Alerts queue or in the Incidents queue.
+#### I see malware detection in Intune and on the Devices with active malware report, but I don’t see it in the MDE Alerts queue or in the Incidents queue.
 
 It’s might be that the URL's [Cloud Protection](configure-network-connections-microsoft-defender-antivirus.md) is currently not being allowed through your firewall or proxy.
 
