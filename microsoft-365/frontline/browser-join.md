@@ -40,7 +40,7 @@ With browser join, when an attendee joins an appointment, they aren't prompted t
 Currently, browser join is available for appointments that are scheduled through the following:
 
 - [The Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f)
-<!-- - [The Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)-->
+- [The Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
 - Microsoft Teams Electronic Health Record (EHR) connector
 
   - Integration with [Oracle Health EHR](ehr-admin-oracle-health.md)
