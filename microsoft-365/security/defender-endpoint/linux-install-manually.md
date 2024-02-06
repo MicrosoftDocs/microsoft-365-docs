@@ -258,8 +258,6 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | su
   > [!NOTE]
   > On Mariner, Insider Fast Channel is not available.
 
-  <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
-
   If you want to deploy Defender for Endpoint on Linux from the *prod* channel. Use the following commands
   
   ```bash
@@ -267,7 +265,7 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | su
   sudo dnf config-manager --enable mariner-official-extras
   ```
 
-  Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel. Use the following commands:
+  Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-slow* channel. Use the following commands:
   
   ```bash
   sudo dnf install mariner-repos-extras-preview
