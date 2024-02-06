@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/28/2022
+ms.date: 
 ---
 
 # Understand frontline worker user types and licensing
@@ -26,7 +26,7 @@ Organizations in many industries, such as retail, manufacturing, hospitality, an
 - Information workers, who probably have desktop or laptop computers and likely work more on documents than directly with customers, such as headquarters staff.
 - Frontline workers, who often work on tablets or phones and work either directly with customers or the general public. They provide services, support, and sell products, or are employees directly involved in the manufacturing and distribution of products and services. For example: retail associates, healthcare clinicians and nursing staff, factory workers, and so on.
 
-Microsoft 365 and Microsoft Teams have features and a licensing model to support both types of users for your organization. [Microsoft 365 for Frontline Workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a frequently mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization.
+Microsoft 365 and Microsoft Teams have features and a licensing model to support both types of users for your organization. [Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a frequently mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRoBo]
 
@@ -42,9 +42,9 @@ With this example, you can mix license types for the two types of workers in you
 | ----- | ----- |
 | Frontline workers need access to information on the go - they have the Office apps on phones or tablets. | Information workers write, edit, and share documents and have Office apps on desktops or laptops, plus mobile apps on phones and tablets. |
 | Frontline workers communicate on the go with Teams chat, schedule work with Shifts, check off to-do items with Tasks, and track items in Lists, along with other Teams functionality.  | Information workers communicate over Teams with chat, meet, and call, and use other Teams apps (depending on the specific license). |
-| Frontline workers can find organization-wide resources, communications, or training with SharePoint, OneDrive, Viva Engage, and Stream. | Information workers create or consume team or organization-wide resources and communications with included Microsoft 365 services (depending on the specific license). |
+| Frontline workers can find organization-wide resources, communications, or training with SharePoint, OneDrive, Viva Connections, and Viva Engage. | Information workers create or consume team or organization-wide resources and communications with included Microsoft 365 services (depending on the specific license). |
 
-For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+For a detailed comparison of what's included in Microsoft 365 enterprise plans, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145)table.
 
 ## Related articles
 

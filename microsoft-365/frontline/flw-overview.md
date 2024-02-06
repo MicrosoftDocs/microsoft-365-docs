@@ -44,7 +44,7 @@ The following image shows the employee experiences that are key to frontline wor
 
 Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses or Office 365 F3 license, but you can also use an Enterprise license (E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
 
-Some features are available for F3 licenses, but not F1, such as Power Apps and Power Automate. For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+Some features are available for F3 licenses, but not F1, such as Power Apps and Power Automate. For a detailed comparison of what's included in Microsoft 365 enterprise plans, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
 
 ## Enhance communications and collaboration
 
@@ -173,7 +173,7 @@ Get started by following these steps:
 :::image type="content" source="media/m365-flw-get-started.png" alt-text="Five steps to get started with Microsoft 365 for frontline workers.":::
 
 1. **[Choose your scenarios](flw-choose-scenarios.md):** Discover the ways you can use Microsoft 365 for frontline workers to connect and engage your workforce, manage your workforce, and streamline operations.
-1. **[Set up Microsoft 365](flw-deploy-overview.md):** Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
+1. **[Set up Microsoft 365](flw-deploy-overview.md):** Set up Microsoft 365 core elements, Microsoft Teams, and any other services you need.
 1. **Configure services and apps:** Configure the services and apps you need for your scenarios. The steps to configure each scenario, plus training resources you can provide to your end users are included in each scenario article.
-1. **Set up devices:** Learn how to set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
+1. **[Set up devices](flw-devices.md):** Learn how to set up shared and personal devices to work with Microsoft 365 and Teams and to allow your frontline workers to communicate more securely within your organization.
 1. **Roll out:** Roll out communications and training for your frontline managers and workers. Learn more about helping your organization adopt and use Microsoft 365 for frontline workers on the [Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
