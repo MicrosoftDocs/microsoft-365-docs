@@ -1,6 +1,6 @@
 ---
-title: Data Residency for Microsoft Teams
-description: Learn about data residency for Microsoft Teams
+title: Data Residency for Microsoft Copilot
+description: Learn about data residency for Microsoft Copilot
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -18,7 +18,7 @@ ms.collection:
 - must-keep
 ---
 
-# Data Residency for Microsoft Teams
+# Data Residency for Microsoft Copilot
 
 ## Data Residency Commitments Available
 
