@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft 365 Backup (Preview) documentation # < 60 chars
-summary: Microsoft 365 Backup is a cost-effective, long-term storage solution for inactive SharePoint content that maintains the same searchability, security, and compliance standards as active data. 
+summary: Microsoft 365 Backup provides a reliable solution to help you recover and restore your data quickly and easily in case of malicious or accidental data deletion. 
 metadata:
   title: Microsoft 365 Backup documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This page contains links to some important topics related to Microsoft 365 Archive features. Start here to learn about how to set up and use Microsoft 365 Archive in your organization. # Required; article description that is displayed in search results. < 160 chars.
