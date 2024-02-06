@@ -22,7 +22,7 @@ description: Learn how to set up and configure Microsoft 365 Backup and backup p
 > [!NOTE]
 > Microsoft 365 Backup (Preview) is now available worldwide in all commercial cloud environments. This preview feature is subject to change and [limitations as defined](backup-limitations.md). Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
 
-Get started with Microsoft 365 Backup by following the simple three steps in the Microsoft 365 admin center.
+Get started with Microsoft 365 Backup by following these simple three steps in the Microsoft 365 admin center.
 
 ![Diagram showing the three-step setup process for Microsoft 365 Backup.](../../media/content-understanding/backup-setup-diagram.png)
 
@@ -90,26 +90,6 @@ To enable Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin cen
 
     ![Screenshot of the Microsoft 365 Backup page showing SharePoint, Exchange, and OneDrive.](../../media/content-understanding/backup-setup-backup-page.png)
 --->
-
-### Admin roles and backup management privileges
-
-Only tenant-level admins can create and manage backups using Microsoft 365 Backup for their users. End users don't have the ability to enable backup or restores for their user account, distribution lists, mailboxes, or sites. It’s important to note that your admin role determines which products you can manage with Microsoft 365 Backup. In the future, we might introduce a Backup admin role that can control the entire tool.
-
-|Admin role  |OneDrive  |SharePoint  |Exchange  |
-|---------|---------|---------|---------|
-|Global admin     | ✓        | ✓        | ✓       |
-|SharePoint admin     | ✓        | ✓        |         |
-|Exchange admin    |         |         | ✓        |
-
-### Glossary
-
-- **Protection units** – SharePoint sites, OneDrive accounts, or Exchange Online mailboxes backed up by the Microsoft 365 Backup tool.
-
-- **Restore point** – A prior point in time from which you can restore a version of your content and metadata. If the protection unit from a prior point in time is identical to the present state of your data, then a restore from that point will have no impact on your current data.
-
-- **RPO** – Recovery point objective, or how close in time the most recent restore point is to an impacting event.
-
-- **RTO** – Recovery time objective, or how fast a restore to a prior point in time can complete.
 
 ## Step 3: Create backup policies to protect your data
 
@@ -258,3 +238,23 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
     ![Screenshot of the Exchange backup policy created page.](../../media/content-understanding/backup-policy-created-exchange.png)
 
 ---
+
+## Admin roles and backup management privileges
+
+Only tenant-level admins can create and manage backups using Microsoft 365 Backup for their users. End users don't have the ability to enable backup or restores for their user account, distribution lists, mailboxes, or sites. It’s important to note that your admin role determines which products you can manage with Microsoft 365 Backup. In the future, we might introduce a Backup admin role that can control the entire tool.
+
+|Admin role  |OneDrive  |SharePoint  |Exchange  |
+|---------|---------|---------|---------|
+|Global admin     | ✓        | ✓        | ✓       |
+|SharePoint admin     | ✓        | ✓        |         |
+|Exchange admin    |         |         | ✓        |
+
+## Glossary
+
+- **Protection units** – SharePoint sites, OneDrive accounts, or Exchange Online mailboxes backed up by the Microsoft 365 Backup tool.
+
+- **Restore point** – A prior point in time from which you can restore a version of your content and metadata. If the protection unit from a prior point in time is identical to the present state of your data, then a restore from that point will have no impact on your current data.
+
+- **RPO** – Recovery point objective, or how close in time the most recent restore point is to an impacting event.
+
+- **RTO** – Recovery time objective, or how fast a restore to a prior point in time can complete.
