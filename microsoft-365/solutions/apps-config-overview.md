@@ -32,7 +32,11 @@ You create app configuration policies directly in Intune that are unique for eac
 - Security and protection settings
 - Branding settings (such as a company logo)
 
-If end users were to enter these settings instead, they could enter them incorrectly. App configuration policies can help provide consistency across an enterprise and reduce helpdesk calls from end users trying to configure settings on their own. By using app configuration policies, the adoption of new apps can be easier and quicker. In total, app configuration policies can help you streamline apps installation, increase app adoption, reduce setup problems, and ensure app configuration consistency. In addition, by having the apps configured in a consistent manner with correct settings, you organizational data is better protected.
+If end users were to enter these settings instead, they could enter them incorrectly. App configuration policies can help provide consistency across an enterprise and reduce helpdesk calls from end users trying to configure settings on their own. By using app configuration policies, the adoption of new apps can be easier and quicker. 
+
+## Benefits of app configuration policies
+
+App configuration policies can help you streamline apps installation, increase app adoption, reduce setup problems, and ensure app configuration consistency. In addition, by having the apps configured in a consistent manner with correct settings, you organizational data is better protected.
 
 :::image type="content" source="../media/configure-managed-apps/configure-managed-apps-12.png" alt-text="Benefits of configuring apps using Microsoft Intune" border="false" :::
 
@@ -76,17 +80,17 @@ Before you configure apps to be managed by Intune, you first need to determine y
 | MAM | Apps that are managed (MAM)   without device management (MDM), can be configured and protected using   Intune. MAM enables your to manage and protect your organization's data   within an application. When you choose to manage only the apps on devices   used by members of your organization without enrolling or managing devices,   your  app configuration policy channel   must be set to **Managed apps** . This configuration is commonly referred to   as MAM without device enrollment, or MAM-WE. You can manage apps using MAM by using Intune configuration and protection policies on devices not enrolled   with Intune MDM. MAM is ideal to help protect organization data on mobile   devices used by members of your organization for both personal and work   tasks.<p>**NOTE:**<br>You can't deploy apps to the device. The end user has to get the   apps from the store.<p>For more information, see [MAM without device   management](/mem/intune/fundamentals/deployment-plan-protect-apps#mam-without-device-management). |
 | MDM +   MAM | Intune allows you to manage   devices (MDM) and manage apps (MAM). This configuration is commonly referred   to as MAM + MDM. You can manage apps using MAM on devices that are enrolled   with Intune MDM. A configuration policy that is delivered through the **Manged   apps** channel will take presidence over a configuration policy delivered   through the **Managed devices** channel. For more information about MDM +   MAM, see [MAM with device   management](/mem/intune/fundamentals/deployment-plan-protect-apps#mam-with-device-management). |
 
-:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-11.png" alt-text="Configure apps using Microsoft Intune" border="false" :::
-
-Once you have added an app to Intune, you can assign the app configuration policy to end users. The configuration policy will be used when the app is installed on the end user's device.
-
-:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-13.png" alt-text="Process flow when configuring apps using Microsoft Intune" border="false" :::
-
 It is important to understand that you have different app configuration options and capabilities depending on the management workflow you use at your organization. For more information about MAM, see [MAM configurations](/mem/intune/fundamentals/deployment-plan-protect-apps#mam-configurations). For more information about management deployment models, see [Enroll in device management, application management, or both](/mem/intune/fundamentals/what-is-intune#enroll-in-device-management-application-management-or-both).
 
 ## What process should you follow?
 
 :::image type="content" source="../media/configure-managed-apps/guide.png" alt-text="Common process to configure apps using Microsoft Intune" border="false" :::
+
+## App configuration process flow
+
+Once you have added an app to Intune, you can assign the app configuration policy to end users. The configuration policy will be used when the app is installed on the end user's device.
+
+:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-13.png" alt-text="Process flow when configuring apps using Microsoft Intune" border="false" :::
 
 ## Delivery channels for app configuration policies
 
