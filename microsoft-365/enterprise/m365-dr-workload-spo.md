@@ -42,7 +42,7 @@ Required Conditions:
 
 **Commitment:**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#sharepoint-onlineonedrive-for-business) for the specific customer data at rest commitment for SharePoint and OneDrive.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#sharepointonedrive) for the specific customer data at rest commitment for SharePoint and OneDrive.
 
 ### Multi-Geo add-on
 
