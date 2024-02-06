@@ -250,7 +250,7 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | su
 
 ## Application installation
 
-### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
+### RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)
 
 ```bash
 sudo yum install mdatp
