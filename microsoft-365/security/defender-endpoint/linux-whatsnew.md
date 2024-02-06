@@ -55,9 +55,6 @@ There are multiple fixes and new changes in this release:
 - General stability and performance improvements.
 - Bug fixes.
  
-**Known issues**
-- // Check if this ection can be left empty
- 
 </details>
 
 <details>
