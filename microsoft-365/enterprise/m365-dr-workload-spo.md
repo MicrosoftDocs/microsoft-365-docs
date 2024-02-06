@@ -1,6 +1,6 @@
 ---
-title: Data Residency for SharePoint Online and OneDrive for Business
-description: Data Residency for SharePoint Online and OneDrive for Business
+title: Data Residency for SharePoint and OneDrive
+description: Data Residency for SharePoint and OneDrive
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -18,7 +18,7 @@ ms.collection:
 - must-keep
 ---
 
-# Data Residency for SharePoint Online and OneDrive for Business
+# Data Residency for SharePoint and OneDrive
 
 ## **Data Residency Commitments Available**
 
@@ -38,11 +38,11 @@ Required Conditions:
 
 1. _Tenant_ has a sign-up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
-1. The SharePoint Online subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. The SharePoint subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 **Commitment:**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#sharepoint-onlineonedrive-for-business) for the specific customer data at rest commitment for SharePoint Online and OneDrive for Business.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#sharepoint-onlineonedrive-for-business) for the specific customer data at rest commitment for SharePoint and OneDrive.
 
 ### Multi-Geo add-on
 
@@ -53,46 +53,46 @@ Required Conditions:
 1. Total purchased Multi-Geo units must be greater than 5% of the total eligible licenses in the _Tenant_.
 
 **Commitment:**
-Customers can assign users of SharePoint Online/OneDrive for Business to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
+Customers can assign users of SharePoint/OneDrive to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
 
-- SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.  
+- SharePoint site content and the files stored within that site, and files uploaded to OneDrive.  
 
 ## Migration with Advanced Data Residency
 
-When SharePoint Online is moved, data for the following services is also moved:
+When SharePoint is moved, data for the following services is also moved:
   
-- OneDrive for Business
+- OneDrive
 - Microsoft 365 Video services
 - Office in a browser
 - Microsoft 365 Apps for enterprise
 - Visio Pro for Microsoft 365
 
-After we've completed moving your SharePoint Online data, you might see some of the following effects.
+After we've completed moving your SharePoint data, you might see some of the following effects.
   
 ### Microsoft 365 Video Services
 
-- The data move for video takes longer than the moves for the rest of your content in SharePoint Online.
-- After the SharePoint Online content is moved, there will be a time frame when videos aren't able to be played.
+- The data move for video takes longer than the moves for the rest of your content in SharePoint.
+- After the SharePoint content is moved, there will be a time frame when videos aren't able to be played.
 - We're removing the trans-coded copies from the previous datacenter and transcoding them again in the new datacenter.
 
 ### Search
 
-In the course of moving your SharePoint Online data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint Online data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint Online data. From this point and onwards, we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint Online data, but some customers might experience reduced freshness in the first 24-48 hours.
+In the course of moving your SharePoint data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint data. From this point and onwards, we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint data, but some customers might experience reduced freshness in the first 24-48 hours.
   
 The following search features are affected:
   
 - Search results and Search Web Parts: Results don't include changes that occurred after the migration until crawling picks them up.
 - Delve: Delve doesn't include changes that occurred after the migration until crawling picks them up.
-- Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint Online data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
+- Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
 - Video Portal: View counts and statistics for the Video Portal depend on the statistics for Excel Reports, so view counts and statistics for the Video Portal are lost for the same time period as for the Excel reports.
 - eDiscovery: Items that changed during the migration aren't shown until crawling picks up the changes.
 - Data Loss Protection (DLP): Policies aren't enforced on items that change until crawling picks up the changes.
 
-As part of the migration, the _Primary Provisioned Geography_ changes and all new content will be stored at rest in the new _Primary Provisioned Geography_. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint Online data location in the admin center.
+As part of the migration, the _Primary Provisioned Geography_ changes and all new content will be stored at rest in the new _Primary Provisioned Geography_. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint data location in the admin center.
 
-## **Multi-Geo Capabilities in SharePoint Online / OneDrive for Business**
+## **Multi-Geo Capabilities in SharePoint / OneDrive**
 
-Multi-Geo capabilities in OneDrive and SharePoint Online enable control of shared resources like SharePoint team sites and Microsoft 365 group mailboxes stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_.
+Multi-Geo capabilities in OneDrive and SharePoint enable control of shared resources like SharePoint team sites and Microsoft 365 group mailboxes stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_.
 
 Each user, Group mailbox, and SharePoint site have a Preferred Data Location (PDL) which denotes the _Macro Region Geography_ or _Local Region Geography_ (location where related data is to be stored). Users' personal data (Exchange mailbox and OneDrive) along with any Microsoft 365 Groups or SharePoint sites that they create can be stored in the specified _Macro Region Geography_ or _Local Region Geographies_ location to meet data residency requirements. You can specify different administrators for each _Macro Region Geography_ or _Local Region Geographies_ location.
 
@@ -121,13 +121,13 @@ Setting up and managing your Multi-Geo environment is done through the SharePoin
 
 By default, all _Geography_ locations of a multi-geo environment share the available _Tenant_ storage quota.
 
-With the SharePoint geo storage quota setting, you can manage the storage quota for each _Geography_ location. When you allocate a storage quota for a _Geography_ location, it becomes the maximum amount of storage available for that _Geography_ location, and is deducted from the available _Tenant_ storage quota. The remaining available _Tenant_ storage quota is then shared across the configured _Geography_ locations for which a specific storage quota has not been allocated.
+With the SharePoint geo storage quota setting, you can manage the storage quota for each _Geography_ location. When you allocate a storage quota for a _Geography_ location, it becomes the maximum amount of storage available for that _Geography_ location, and is deducted from the available _Tenant_ storage quota. The remaining available _Tenant_ storage quota is then shared across the configured _Geography_ locations for which a specific storage quota hasn't been allocated.
 
-The SharePoint storage quota for any _Geography_ location can be allocated by the SharePoint Online administrator by connecting to the _Primary Provisioned Geography_. _Geography_ administrators for _Satellite Geography_ locations can view the storage quota but cannot allocate it.
+The SharePoint storage quota for any _Geography_ location can be allocated by the SharePoint administrator by connecting to the _Primary Provisioned Geography_. _Geography_ administrators for _Satellite Geography_ locations can view the storage quota but can't allocate it.
 
 #### **Configure a storage quota for a _Geography_ location**
 
-Use the [Microsoft SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588) and connect to the _Primary Provisioned Geography_ location to allocate the storage quota for a _Geography_ location.
+Use the [Microsoft SharePoint Management Shell](https://www.microsoft.com/download/details.aspx?id=35588) and connect to the _Primary Provisioned Geography_ location to allocate the storage quota for a _Geography_ location.
 
 To allocate Storage Quota for a location, run cmdlet:
 
@@ -157,29 +157,29 @@ Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0
 
 #### Move a OneDrive site to a different _Geography_ location
 
-With OneDrive _Geography_ move, you can move a user's OneDrive to a different _Geography_ location. OneDrive _Geography_ move is performed by the SharePoint Online administrator or the Microsoft 365 global administrator. Before you start a OneDrive _Geography_ move, be sure to notify the user whose OneDrive is being moved and recommend they close all files for the duration of the move. (If the user has a document open using the Office client during the move, then upon move completion the document will need to be saved to the new location.) The move can be scheduled for a future time, if desired.
+With OneDrive _Geography_ move, you can move a user's OneDrive to a different _Geography_ location. OneDrive _Geography_ move is performed by the SharePoint administrator or the Microsoft 365 global administrator. Before you start a OneDrive _Geography_ move, be sure to notify the user whose OneDrive is being moved and recommend they close all files for the duration of the move. (If the user has a document open using the Office client during the move, then upon move completion the document will need to be saved to the new location.) The move can be scheduled for a future time, if desired.
 
 The OneDrive service uses Azure Blob Storage to store content. The Storage blob associated with the user's OneDrive will be moved from the source to destination _Geography_ location within 40 days of destination OneDrive being available to the user. The access to the user's OneDrive will be restored as soon as the destination OneDrive is available.
 
-During OneDrive _Geography_ move window (about 2-6 hours) the user's OneDrive is set to read-only. The user can still access their files via the OneDrive sync app or their OneDrive site in SharePoint Online. After OneDrive _Geography_ move is complete, the user will be automatically connected to their OneDrive at the destination _Geography_ location when they navigate to OneDrive in the Microsoft 365 app launcher. The sync app will automatically begin syncing from the new location.
+During OneDrive _Geography_ move window (about 2-6 hours) the user's OneDrive is set to read-only. The user can still access their files via the OneDrive sync app or their OneDrive site in SharePoint. After OneDrive _Geography_ move is complete, the user will be automatically connected to their OneDrive at the destination _Geography_ location when they navigate to OneDrive in the Microsoft 365 app launcher. The sync app will automatically begin syncing from the new location.
 
-The procedures in this article require the [Microsoft SharePoint Online PowerShell Module](https://www.microsoft.com/download/details.aspx?id=35588).
+The procedures in this article require the [Microsoft SharePoint PowerShell Module](https://www.microsoft.com/download/details.aspx?id=35588).
 
 #### Communicating to your users
 
 When moving OneDrive sites between _Geography_ locations, it's important to communicate to your users what to expect. This can help reduce user confusion and calls to your help desk. Email your users before the move and let them know the following information:
 
-- When the move is expected to start and how long it is expected to take
+- When the move is expected to start and how long it's expected to take
 - What _Geography_ location their OneDrive is moving to, and the URL to access the new location
 - They should close their files and not make edits during the move.
-- File permissions and sharing will not change as a result of the move.
+- File permissions and sharing won't change as a result of the move.
 - What to expect from the user experience in a multi-geo environment
 
 Be sure to send your users an email when the move has successfully completed informing them that they can resume working in OneDrive.
 
 #### Scheduling OneDrive site moves
 
-You can schedule OneDrive site moves in advance (described later in this article). We recommend that you start with a small number of users to validate your workflows and communication strategies. Once you are comfortable with the process, you can schedule moves as follows:
+You can schedule OneDrive site moves in advance (described later in this article). We recommend that you start with a small number of users to validate your workflows and communication strategies. Once you're comfortable with the process, you can schedule moves as follows:
 
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
@@ -211,15 +211,15 @@ To ensure that all _Geography_ locations are compatible, run:
 Get-SPOGeoMoveCrossCompatibilityStatus
 ```
 
-You will see a list of your _Geography_ locations and whether content can be moved between will be denoted as "Compatible". If the command returns "Incompatible" please retry validating the status at a later date.
+You'll see a list of your _Geography_ locations and whether content can be moved between will be denoted as "Compatible". If the command returns "Incompatible" please retry validating the status at a later date.
 
-If a OneDrive contains a subsite, for example, it cannot be moved. You can use the `Start-SPOUserAndContentMove` cmdlet with the `-ValidationOnly` parameter to validate if the OneDrive is able to be moved:
+If a OneDrive contains a subsite, for example, it can't be moved. You can use the `Start-SPOUserAndContentMove` cmdlet with the `-ValidationOnly` parameter to validate if the OneDrive is able to be moved:
 
 ```powershell
 Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly
 ```
 
-  This will return Success if the OneDrive is ready to be moved or Fail if there is a legal hold or subsite that would prevent the move. Once you have validated that the OneDrive is ready to move, you can start the move.
+  This will return Success if the OneDrive is ready to be moved or Fail if there's a legal hold or subsite that would prevent the move. Once you have validated that the OneDrive is ready to move, you can start the move.
 
 #### **Start a OneDrive geo move**
 
@@ -247,7 +247,7 @@ To schedule a _Geography_ move for a later time, use one of the following parame
 
 #### **Cancel a OneDrive _Geography_ move**
   
-You can stop the _Geography_ move of a user's OneDrive, provided the move is not in progress or completed by using the cmdlet:
+You can stop the _Geography_ move of a user's OneDrive, provided the move isn't in progress or completed by using the cmdlet:
 
 ```powershell
 Stop-SPOUserAndContentMove – UserPrincipalName <UserPrincipalName>
@@ -263,7 +263,7 @@ The move statuses are described in the following table.
 
 |Status|Description|
 |---|---|
-|NotStarted|The move has not started|
+|NotStarted|The move hasn't started|
 |InProgress (_n_/4)|The move is in progress in one of the following states: <ul><li>Validation (1/4)</li><li>Backup (2/4)</li><li>Restore (3/4)</li><li>Cleanup (4/4)</li></ul>|
 |Success|The move has completed successfully.|
 |Failed|The move failed.|
@@ -341,7 +341,7 @@ The following types of site can be moved between _Geography_ locations:
 > [!NOTE]
 > You must be a Global Administrator or SharePoint Administrator to move a site between _Geography_ locations.
 
-There is a read-only window during the SharePoint site _Geography_ move of approximately 4-6 hours, depending on site contents.
+There's a read-only window during the SharePoint site _Geography_ move of approximately 4-6 hours, depending on site contents.
 
 #### **Best practices**
 
@@ -357,7 +357,7 @@ When moving SharePoint sites between _Geography_ locations, it's important to co
 - When the move is expected to start and how long it is expected to take.
 - What _Geography_ location their site is moving to, and the URL to access the new location.
 - They should close their files and not make edits during the move.
-- File permissions and sharing will not change because of the move.
+- File permissions and sharing won't change because of the move.
 - What to expect from the user experience in a multi-geo environment.
 
 Be sure to send your sites' users an email when the move has successfully completed informing them that they can resume working on their sites.
@@ -391,7 +391,7 @@ Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 
 We recommend that before scheduling any site move, you perform a validation to ensure that the site can be moved.
 
-We do not support moving sites with:
+We don't support moving sites with:
 
 - Business Connectivity Services
 - InfoPath forms
@@ -445,11 +445,11 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 #### **Cancel a SharePoint site _Geography_ move**
 
-You can stop a SharePoint site _Geography_ move, provided the move is not in progress or completed by using the `Stop-SPOSiteContentMove` cmdlet.
+You can stop a SharePoint site _Geography_ move, provided the move isn't in progress or completed by using the `Stop-SPOSiteContentMove` cmdlet.
 
 #### **Determining the status of a SharePoint site _Geography_ move**
 
-You can determine the status of a site move in our out of the _Geography_ that you are connected to by using the following cmdlets:
+You can determine the status of a site move in our out of the _Geography_ that you're connected to by using the following cmdlets:
 
 - [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites)
 - [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
@@ -462,8 +462,8 @@ The move statuses are described in the following table.
 
 |Status|Description|
 |---|---|
-|Ready to Trigger|The move has not started.|
-|Scheduled|The move is in queue but has not yet started.|
+|Ready to Trigger|The move hasn't started.|
+|Scheduled|The move is in queue but hasn't yet started.|
 |InProgress (n/4)|The move is in progress in one of the following states: Validation (1/4), Back up (2/4), Restore (3/4), Cleanup (4/4).|
 |Success|The move has completed successfully.|
 |Failed|The move failed.|
@@ -507,7 +507,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 #### **Teams (applicable to Microsoft 365 group connected sites)**
 
 When the SharePoint site _Geography_ move completes, users will have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to _Geography_ move will continue to work after move is complete.
-SharePoint site _Geography_ move does not support moving sites backing Private and Shared Channels from one _Geography_ to another, when using the `Start-SPOUnifiedGroupMove` command. Sites backing Private and Shared Channels remain in the original _Geography_. To move those sites individually, admins can initiate direct moves using the `Start-SPOSiteContentMove` command.
+SharePoint site _Geography_ move doesn't support moving sites backing Private and Shared Channels from one _Geography_ to another, when using the `Start-SPOUnifiedGroupMove` command. Sites backing Private and Shared Channels remain in the original _Geography_. To move those sites individually, admins can initiate direct moves using the `Start-SPOSiteContentMove` command.
 
 #### **SharePoint Mobile App (iOS/Android)**
 
@@ -519,7 +519,7 @@ SharePoint 2013 workflows have to be republished after the site move. SharePoint
 
 #### **Apps**
 
-If you are moving a site with apps, you must reinstantiate the app in the site's new _Geography_ location as the app and its connections may not be available in the destination _Geography_ location.
+If you're moving a site with apps, you must reinstantiate the app in the site's new _Geography_ location as the app and its connections may not be available in the destination _Geography_ location.
 
 #### **Power Automate**
 
@@ -531,13 +531,13 @@ Power Apps need to be recreated in the destination location.
 
 #### **Data movement between geo locations**
 
-SharePoint uses Azure Blob Storage for its content, while the metadata associated with sites and its files is stored within SharePoint. After the site is moved from its source _Geography_ location to its destination _Geography_ location, the service will also move its associated Blob Storage. Blob Storage moves complete in approximately 40 days. This will not have any impact to users interaction with the data.
+SharePoint uses Azure Blob Storage for its content, while the metadata associated with sites and its files is stored within SharePoint. After the site is moved from its source _Geography_ location to its destination _Geography_ location, the service will also move its associated Blob Storage. Blob Storage moves complete in approximately 40 days. This won't have any impact to users interaction with the data.
 
 ****
 
 ### **Enabling SharePoint Multi-Geo in your _Satellite Geography_ location**
 
-This article is for Global or SharePoint administrators who have created a Multi-Geo _Satellite Geography_ location **before** SharePoint Multi-Geo capabilities became generally available on March 27, 2019, and who have not enabled SharePoint Multi-Geo in their _Satellite Geography_ location(s).
+This article is for Global or SharePoint administrators who have created a Multi-Geo _Satellite Geography_ location **before** SharePoint Multi-Geo capabilities became generally available on March 27, 2019, and who haven't enabled SharePoint Multi-Geo in their _Satellite Geography_ location(s).
 
 > [!NOTE]
 > If you have added a new _Geography_ location **after March 27th, 2019**, you do not need to perform these instructions, as your new _Geography_ location will already be enabled for OneDrive and SharePoint Multi-Geo.
@@ -551,7 +551,7 @@ These instructions will allow you to enable SharePoint in your _Satellite Geogra
 
 To set a _Geography_ location into SPO mode, connect to the _Geography_ location you want to set in SPO Mode:
 
-1. Open your SharePoint Online Management Shell and then run and confirm the following code:
+1. Open your SharePoint Management Shell and then run and confirm the following code:
 
 ```powershell
 Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
@@ -569,4 +569,4 @@ This operation usually takes about an hour while we perform various publish back
 
 ## How can I determine customer data location?
 
-You can find the actual data location in Microsoft 365 admin center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to **Admin->Settings->Org Settings->Organization Profile->Data Location**. If you do not have a _Tenant_ created, you can have a _Tenant_ created when signing up for a Microsoft 365 trial.
+You can find the actual data location in Microsoft 365 admin center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to **Admin->Settings->Org Settings->Organization Profile->Data Location**. If you don't have a _Tenant_ created, you can have a _Tenant_ created when signing up for a Microsoft 365 trial.
