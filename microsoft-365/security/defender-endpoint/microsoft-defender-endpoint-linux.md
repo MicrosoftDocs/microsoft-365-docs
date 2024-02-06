@@ -94,6 +94,9 @@ In general you need to take the following steps:
   - Amazon Linux 2
   - Amazon Linux 2023
   - Fedora 33 or higher
+  - Alma 8 or higher
+  - Rocky 8 or higher
+  - Mariner
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).

@@ -89,7 +89,7 @@ Options:
 
 Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
-### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
+### RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)
 
 - Install `yum-utils` if it isn't installed yet:
 
@@ -104,11 +104,15 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
 
   |Distro & version|Package|
   |---|---|
+  |For Alma 8|<https://packages.microsoft.com/config/alma/8/prod.repo>|
+  |For Alma 9|<https://packages.microsoft.com/config/alma/9/prod.repo>|
   |For RHEL/Centos/Oracle 8.0-8.8|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
   |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
   |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
   |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
+  |For Rocky 8|<https://packages.microsoft.com/config/rocky/8/prod.repo>|
+  |For Rocky 9|<https://packages.microsoft.com/config/rocky/9/prod.repo>|
 
   <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 
