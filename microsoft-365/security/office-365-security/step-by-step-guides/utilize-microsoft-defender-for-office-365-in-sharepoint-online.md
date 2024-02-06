@@ -32,11 +32,11 @@ Microsoft SharePoint Online is a widely used user collaboration and file storage
 - Microsoft Defender for Office 365 Plan 1
 - Sufficient permissions (SharePoint administrator/security administrator).
 - Microsoft SharePoint Online (part of Microsoft 365).
-- Five to ten minutes to perform these steps.
+- Five to 10 minutes to perform these steps.
 
 ## Turn on Microsoft Defender for Office 365 in SharePoint Online
 
-If licensed for Microsoft Defender for Office 365 **(free 90-day evaluation available at aka.ms/trymdo)** you can ensure seamless protection from zero day malware and time of click protection within Microsoft Teams.
+If you're licensed for Microsoft Defender for Office 365 **(free 90-day evaluation available at aka.ms/trymdo)**, you can ensure seamless protection from zero day malware and time of click protection within Microsoft Teams.
 
 To learn more, read [Step 1: Use the Microsoft Defender portal to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-configure#step-1-use-the-microsoft-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams).
 
