@@ -60,7 +60,7 @@ To learn more about the user experience when a file has been detected as malicio
 
 Files that are identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams appear in [reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) and in [Explorer (and real-time detections)](threat-explorer-about.md).
 
-When a file is identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, the file is also available in quarantine, but only to admins. For more information, see [Manage quarantined files in Defender for Office 365](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
+When a file is identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, the file is also available in quarantine, but only to admins. For more information, see [Manage quarantined files in Defender for Office 365](quarantine-admin-manage-messages-files.md#use-the-microsoft-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
 
 ## Keep these points in mind
 

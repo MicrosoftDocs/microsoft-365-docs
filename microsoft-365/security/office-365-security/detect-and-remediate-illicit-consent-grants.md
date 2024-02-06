@@ -78,8 +78,6 @@ If you have one or more instances of the IOCs listed above, you need to do furth
 
 You can do this for your users with either the Microsoft Entra admin center, or PowerShell or have your users individually enumerate their application access.
 
-<a name='steps-for-using-the-azure-active-directory-portal'></a>
-
 ### Steps for using the Microsoft Entra admin center
 
 You can look up the applications to which any individual user has granted permissions by using the Microsoft Entra admin center at <https://portal.azure.com>.
