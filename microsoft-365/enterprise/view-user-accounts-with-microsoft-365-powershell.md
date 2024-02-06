@@ -144,7 +144,7 @@ To be more selective about the list of accounts to display, you can use the **Wh
 Get-MgUser | Where UsageLocation -eq $Null
 ```
 
-This command instructs PowerShell for Graph to:
+This command instructs PowerShell to:
   
 1. Get all the information on the user accounts (**Get-MgUser**) and send it to the next command (**|**).
 
