@@ -40,10 +40,12 @@ This article describes how to deploy Microsoft Defender for Endpoint on Linux ma
   - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2-1)
   - [SLES and variants](#sles-and-variants-1)
   - [Ubuntu and Debian systems](#ubuntu-and-debian-systems-1)
+  - [Mariner](#mariner)
 - [Application installation](#application-installation)
   - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
   - [SLES and variants](#sles-and-variants)
   - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
+  - [Mariner](#mariner-1)
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Client configuration](#client-configuration)
 
@@ -243,6 +245,34 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | su
   ```bash
   sudo apt-get update
   ```
+### Mariner
+
+- Install `dnf-plugins-core` if it isn't installed yet:
+
+  ```bash
+  sudo dnf install dnf-plugins-core
+  ```
+
+- Configure and Enable the required repositories
+
+  > [!NOTE]
+  > On Mariner, Insider Fast Channel is not available.
+
+  <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
+
+  If you want to deploy Defender for Endpoint on Linux from the *prod* channel. Use the following commands
+  
+  ```bash
+  sudo dnf install mariner-repos-extras
+  sudo dnf config-manager --enable mariner-official-extras
+  ```
+
+  Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel. Use the following commands:
+  
+  ```bash
+  sudo dnf install mariner-repos-extras-preview
+  sudo dnf config-manager --enable mariner-official-extras-preview
+  ```
 
 ## Application installation
 
@@ -321,6 +351,20 @@ sudo apt -t bionic install mdatp
 
 > [!NOTE]
 > Reboots are NOT required after installing or updating Microsoft Defender for Endpoint on Linux except when you're running auditD in immutable mode.
+
+### Mariner
+
+```bash
+sudo dnf install mdatp
+```
+
+> [!NOTE]
+> If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-slow` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
+
+```bash
+sudo dnf config-manager --disable mariner-official-extras-preview
+sudo dnf config-manager --enable mariner-official-extras
+```
 
 ## Download the onboarding package
 
