@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/22/2023
+ms.date: 02/02/2024
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: ngp
@@ -58,7 +58,7 @@ On at least two devices that are experiencing the same issue, obtain the `.cab` 
     mpcmdrun.exe -GetFiles
     ```
 
-4. A `.cab` file is generated that contains various diagnostic logs. The location of the file is specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
+4. A `.cab` file is generated that contains various diagnostic logs. The location of the file is specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.
 
    > [!NOTE]
    > To redirect the cab file to a different path or UNC share, use the following command:
