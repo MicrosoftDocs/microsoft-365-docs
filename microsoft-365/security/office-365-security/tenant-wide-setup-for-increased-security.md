@@ -38,8 +38,6 @@ Specifics are up to your business.
 
 This article walks you through the manual configuration of tenant-wide settings that affect the security of your Microsoft 365 environment. Use these recommendations as a starting point.
 
-<a name='tune-eop-and-defender-for-office-365-protection-policies-in-the-microsoft-365-defender-portal'></a>
-
 ## Tune EOP and Defender for Office 365 protection policies in the Microsoft Defender portal
 
 The Microsoft Defender portal has capabilities for both protection and reporting. It has dashboards you can use to monitor and take action when threats arise.
@@ -58,8 +56,6 @@ We recommend turning on and using the Standard and/or Strict preset security pol
 - Complete list of all features and settings in default policies, Standard preset security policies, and Strict preset security policies: [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 Custom policies are required if the business needs of your organization require policy settings that are *different than* or *aren't defined in* preset security policies. Or, if your organization requires a different user experience for quarantined messages (including notifications). For more information, see [Determine your protection policy strategy](mdo-deployment-guide.md#determine-your-protection-policy-strategy).
-
-<a name='view-dashboards-and-reports-in-the-microsoft-365-defender-portal'></a>
 
 ## View dashboards and reports in the Microsoft Defender portal
 
@@ -101,8 +97,6 @@ To support the goals for baseline protection, configure tenant-wide sharing poli
 |**Sharing** (SharePoint Online and OneDrive for Business)|Yes|External sharing is enabled by default. These settings are recommended: <ul><li>Allow sharing to authenticated external users and using anonymous access links (default setting).</li><li>Anonymous access links expire in this many days. Enter a number, if desired, such as 30 days.</li><li>Default link type \> select Internal (people in the organization only). Users who wish to share using anonymous links must choose this option from the sharing menu.</li></ul> <br/> More information: [External sharing overview](/sharepoint/external-sharing-overview)|
 
 SharePoint admin center and OneDrive for Business admin center include the same settings. The settings in either admin center apply to both.
-
-<a name='configure-settings-in-azure-active-directory'></a>
 
 ## Configure settings in Microsoft Entra ID
 

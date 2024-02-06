@@ -38,7 +38,7 @@ Microsoft SharePoint Online is a widely used user collaboration and file storage
 
 If licensed for Microsoft Defender for Office 365 **(free 90-day evaluation available at aka.ms/trymdo)** you can ensure seamless protection from zero day malware and time of click protection within Microsoft Teams.
 
-To learn more, read [Step 1: Use the Microsoft Defender portal to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-configure#step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams).
+To learn more, read [Step 1: Use the Microsoft Defender portal to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-configure#step-1-use-the-microsoft-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams).
 
 1. Sign in to the [security center's safe attachments configuration page](https://security.microsoft.com/safeattachmentv2).
 1. Select **Global settings**.
