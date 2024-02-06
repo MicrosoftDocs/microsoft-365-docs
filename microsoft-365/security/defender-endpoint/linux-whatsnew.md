@@ -50,7 +50,7 @@ This article is updated frequently to let you know what's new in the latest rele
  
 There are multiple fixes and new changes in this release:
  
-- Support available for Rocky, Alma and Mariner2 in production
+- Microsoft Defender for Endpoint on Linux now officially supports Mariner 2, Rocky Linux 8, Rocky Linux 9, Alma Linux 8, and Alma Linux 9 version distros. If you already have MDE running on any of these distros and facing any issues in the older versions, please upgrade to the latest MDE version. Refer our public deployment docs for more details. 
 - Updated default engine version to `1.1.23100.2010`, and default signatures version to `1.399.1389.0`.
 - General stability and performance improvements.
 - Bug fixes.
