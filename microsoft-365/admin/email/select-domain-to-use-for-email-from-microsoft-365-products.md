@@ -100,30 +100,32 @@ As we are transitioning to the centralized sender address setting, it might be u
 This is a list of some common sender addresses, without any claim to completeness:
 
 - azure-noreply@microsoft.com
+- azuredevops@microsoft.com
 - defender-noreply@microsoft.com
-- ms-noreply@microsoft.com
-- microsoft-noreply@microsoft.com
-- office365alerts@microsoft.com
-- office365reports@microsoft.com
-- no-reply@sharepointonline.com
-- noreply@emeamail.teams.microsoft.com
-- noreply@email.teams.microsoft.com
-- powerplat-noreply@microsoft.com
-- o365mc@microsoft.com
-- marketplace-no-reply@microsoft.com
-- no-reply@microsoftadvertising.com
-- viva-noreply@microsoft.com
-- no-reply@microsoftproject.com
+- do_not_reply_windowsautopatch@microsoft.com
+- IntuneNotificationService@microsoft.com
 - invites@microsoft.com
 - m365dev@microsoft.com
-- no-reply@cloudappsecurity.com
-- do_not_reply_windowsautopatch@microsoft.com
-- winhealth-noreply@microsoft.com
+- marketplace-no-reply@microsoft.com
+- microsoft-noreply@microsoft.com
 - microsofttechcommunity@us.khoros-mail.com
+- ms-noreply@microsoft.com
+- mswwprog@microsoft.com
+- no-reply@cloudappsecurity.com
+- no-reply@microsoftadvertising.com
+- no-reply@microsoftproject.com
+- no-reply@planner.com
+- no-reply@project.com
+- no-reply@sharepointonline.com
+- noreply@email.teams.microsoft.com
+- noreply@emeamail.teams.microsoft.com
+- o365mc@microsoft.com
+- office365alerts@microsoft.com
+- office365reports@microsoft.com
 - powerapps-noreply@microsoft.com
 - PowerAutomateNoReply@microsoft.com
-- mswwprog@microsoft.com
-- azuredevops@microsoft.com
-- IntuneNotificationService@microsoft.com
+- powerplat-noreply@microsoft.com
+- viva-noreply@microsoft.com
+- winhealth-noreply@microsoft.com
 
 
