@@ -51,9 +51,9 @@ In the Microsoft Defender portal, you can view and manage threat detections usin
 
     You can select **View Details** for more information.
 
-2. Once remediated, you will see the following text displayed:
+2. Once remediated, you will see the following text being displayed:
 
-   'Malware found on your devices have been remediated successfully'.
+   *Malware found on your devices have been remediated successfully*.
 
 ## Manage threat detections in Microsoft Intune
 
@@ -63,7 +63,7 @@ You can manage threat detections for any devices that are [enrolled in Microsoft
 
 2. In the navigation pane, select **Endpoint security**. 
 
-3. Under Manage, select **Antivirus**. You'll see tabs for **Summary**, **Unhealthy endpoints**, and **Active malware**.
+3. Under **Manage**, select **Antivirus**. You'll see tabs for **Summary**, **Unhealthy endpoints**, and **Active malware**.
 
 4. Review the information on the available tabs, and then take action as necessary.
 
@@ -74,7 +74,7 @@ You can manage threat detections for any devices that are [enrolled in Microsoft
      - Sync
      - Update signatures
 
-### FAQs
+## FAQs
 
 ### In the Microsoft XDR portal > Devices with active malware > Devices with malware detections report, why does the Last update seem to be occurring today?
 
@@ -118,4 +118,8 @@ Use the Advanced Hunting query that is mentioned [here](#i-see-a-different-numbe
 
 It’s might be that the URL's [Cloud Protection](configure-network-connections-microsoft-defender-antivirus.md) is currently not being allowed through your firewall or proxy.
 
-You need to ensure that when you run `%ProgramFiles%\Windows Defender\MpCmdRun.exe -ValidateMapsConnection` on your device, is reporting Ok.
+You need to ensure that when you run `%ProgramFiles%\Windows Defender\MpCmdRun.exe -ValidateMapsConnection` on your device, the reporting is Ok.
+
+## Related topics
+- [Investigate alerts in Microsoft Defender for Endpoint](investigate-alerts.md)
+- [Alerts queue in Microsoft Defender XDR](alerts-queue-endpoint-detection-response.md)
