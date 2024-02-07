@@ -195,7 +195,7 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
 # [Exchange](#tab/exchange)
 
-Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup. Ensure that Microsoft 365 Backup is [enabled for your tenant](#enable-microsoft-365-backup).
+Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup. Ensure that Microsoft 365 Backup is [enabled for your tenant](#turn-on-microsoft-365-backup).
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
