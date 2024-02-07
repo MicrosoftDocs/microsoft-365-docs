@@ -63,8 +63,6 @@ To keep you protected, Safe Documents sends file information to the [Microsoft D
 
 File information sent by Safe Documents isn't retained in Defender for Endpoint beyond the time needed for analysis (typically, less than 24 hours).
 
-<a name='use-the-microsoft-365-defender-portal-to-configure-safe-documents'></a>
-
 ## Use the Microsoft Defender portal to configure Safe Documents
 
 1. In the Microsoft Defender portal, go to the **Safe Attachments** page at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section. Or, to go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
