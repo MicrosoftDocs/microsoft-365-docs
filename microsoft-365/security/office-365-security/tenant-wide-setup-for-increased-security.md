@@ -106,7 +106,7 @@ Be sure to visit these two areas in Microsoft Entra ID to complete tenant-wide s
 
 If your organization includes offices with secure network access, add the trusted IP address ranges to Microsoft Entra ID as named locations. This feature helps reduce the number of reported false positives for sign-in risk events.
 
-See: [Named locations in Microsoft Entra ID](/azure/active-directory/conditional-access/location-condition)
+See: [Named locations in Microsoft Entra ID](/entra/identity/conditional-access/location-condition)
 
 ### Block apps that don't support modern authentication
 
