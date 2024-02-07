@@ -364,7 +364,7 @@ In the **Submit to Microsoft for analysis** flyout that opens, configure the fol
    - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
     - **Allow entry note**: Enter an optional note that contains additional information.
 
-  - **It appears clean**: Select this option if you want to get verdict from Microsoft and you're unsure.
+  - **It appears clean**: Select this option if you're unsure and you want a verdict from Microsoft.
 
 When you're finished on the **Submit to Microsoft for analysis** flyout, select **Submit**.
 
