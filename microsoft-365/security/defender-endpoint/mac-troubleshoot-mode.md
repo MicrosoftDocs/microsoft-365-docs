@@ -65,8 +65,8 @@ During troubleshooting mode, you can't:
 
 - Supported version of macOS for Microsoft Defender for Endpoint.
 - Microsoft Defender for Endpoint must be tenant-enrolled and active on the device. 
-- Must have "Manage security settings in Security Center" permissions in Microsoft Defender for Endpoint.
-- Device must be actively running Microsoft Defender for Endpoint, version or later. 
+- Permissions for "Manage security settings in Security Center" in Microsoft Defender for Endpoint.
+- A device that is actively running Microsoft Defender for Endpoint, version or later. 
 
 ## Enable troubleshooting mode on macOS
 
