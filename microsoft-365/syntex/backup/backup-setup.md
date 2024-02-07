@@ -66,7 +66,7 @@ To set up pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex
 
 You must have Global admin or SharePoint admin permissions to access the Microsoft 365 admin center and set up Microsoft 365 Backup.
 
-## Step 2: Enable Microsoft 365 Backup
+## Step 2: Turn on Microsoft 365 Backup
 
 To enable Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin center.
 
@@ -195,7 +195,7 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
 # [Exchange](#tab/exchange)
 
-Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup. Ensure that Microsoft 365 Backup is [enabled for your tenant](#enable-microsoft-365-backup).
+Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup. Ensure that Microsoft 365 Backup is [enabled for your tenant](#turn-on-microsoft-365-backup).
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
