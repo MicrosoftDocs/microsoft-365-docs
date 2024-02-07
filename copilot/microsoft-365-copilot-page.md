@@ -58,9 +58,9 @@ Microsoft Copilot for Microsoft 365 is powered by an advanced processing and orc
 
 This control navigates you to the Integrated App settings to control how non-Microsoft apps and first party apps can work with Microsoft Copilot for Microsoft 365.
 
-### Public web content access
+### Web content access
 
-This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to public web content in Microsoft Copilot for Microsoft 365 responses](manage-public-web-access.md).
+This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to web content in Copilot for Microsoft 365 responses](manage-public-web-access.md).
 
 ### Data Security and Compliance
 
