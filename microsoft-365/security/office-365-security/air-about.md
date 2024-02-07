@@ -105,8 +105,8 @@ Permissions are granted through certain roles, such as those that are described 
 
 |Task|Role(s) required|
 |---|---|
-|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <br/> These roles can be assigned in [Microsoft Entra ID](/azure/active-directory/roles/permissions-reference) or in the [Microsoft Defender portal](mdo-portal-permissions.md).|
-|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Microsoft Entra ID](/azure/active-directory/roles/permissions-reference) or in the [Microsoft Defender portal](mdo-portal-permissions.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Global Reader</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft Defender portal](mdo-portal-permissions.md). You might need to create a new **Email & collaboration** role group there and add the Search and Purge role to that new role group.</li></ul>|
+|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <br/> These roles can be assigned in [Microsoft Entra ID](/entra/identity/role-based-access-control/permissions-reference) or in the [Microsoft Defender portal](mdo-portal-permissions.md).|
+|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Microsoft Entra ID](/entra/identity/role-based-access-control/permissions-reference) or in the [Microsoft Defender portal](mdo-portal-permissions.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Global Reader</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft Defender portal](mdo-portal-permissions.md). You might need to create a new **Email & collaboration** role group there and add the Search and Purge role to that new role group.</li></ul>|
 
 ## Required licenses
 

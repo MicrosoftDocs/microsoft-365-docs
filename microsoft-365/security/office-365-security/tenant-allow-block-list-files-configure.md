@@ -96,8 +96,6 @@ To create block entries for files, use either of the following methods:
 
 - From the **Files** tab on the **Tenant Allow/Block Lists** page or in PowerShell as described in this section.
 
-<a name='use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-tenant-allowblock-list'></a>
-
 ### Use the Microsoft Defender portal to create block entries for files in the Tenant Allow/Block List
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
@@ -139,8 +137,6 @@ New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695e
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-<a name='use-the-microsoft-365-defender-portal-to-view-entries-for-files-in-the-tenant-allowblock-list'></a>
-
 ## Use the Microsoft Defender portal to view entries for files in the Tenant Allow/Block List
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
@@ -149,12 +145,12 @@ Select the **Files** tab.
 
 On the **Files** tab, you can sort the entries by clicking on an available column header. The following columns are available:
 
-   - **Value**: The file hash.
-   - **Action**: The available values are  **Allow** or **Block**.
-   - **Modified by**
-   - **Last updated**
-   - **Remove on**: The expiration date.
-   - **Notes**
+- **Value**: The file hash.
+- **Action**: The available values are  **Allow** or **Block**.
+- **Modified by**
+- **Last updated**
+- **Remove on**: The expiration date.
+- **Notes**
 
 To filter the entries, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**. The following filters are available in the **Filter** flyout that opens:
 
@@ -196,8 +192,6 @@ Get-TenantAllowBlockListItems -ListType FileHash -Block
 ```
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
-<a name='use-the-microsoft-365-defender-portal-to-modify-entries-for-files-in-the-tenant-allowblock-list'></a>
 
 ## Use the Microsoft Defender portal to modify entries for files in the Tenant Allow/Block List
 
@@ -246,8 +240,6 @@ Set-TenantAllowBlockListItems -ListType FileHash -Entries "27c5973b2451db9deeb01
 ```
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
-
-<a name='use-the-microsoft-365-defender-portal-to-remove-entries-for-files-from-the-tenant-allowblock-list'></a>
 
 ## Use the Microsoft Defender portal to remove entries for files from the Tenant Allow/Block List
 
