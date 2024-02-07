@@ -65,7 +65,7 @@ For mobile devices, the following clients are blocked based on the Conditional A
 - Exchange ActiveSync clients that support modern authentication, but don't support Intune app protection policies.
 - Devices that support Intune app protection policies, but aren't defined in the policy.
 
-To block Exchange ActiveSync connections using basic authentication on other types of devices (for example, PCs), follow the steps in [Block Exchange ActiveSync on all devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices).
+To block Exchange ActiveSync connections using basic authentication on other types of devices (for example, PCs), follow the steps in [Block Exchange ActiveSync on all devices](/entra/identity/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices).
 
 ## Limit access to Exchange Online from Outlook on the web
 
@@ -107,7 +107,7 @@ Here are the steps:
    Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-5. In the Azure portal, [create a new Conditional Access policy](/azure/active-directory/conditional-access/concept-conditional-access-policies) with these settings:
+5. In the Azure portal, [create a new Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies) with these settings:
 
    **Assignments** \> **Users and groups**: Select appropriate users and groups to include and exclude.
 

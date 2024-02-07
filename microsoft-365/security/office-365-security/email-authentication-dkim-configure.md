@@ -35,7 +35,7 @@ This article lists the steps to use DomainKeys Identified Mail (DKIM) with Micro
 In this article:
 
 - [How DKIM works better than SPF alone to prevent malicious spoofing](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
-- [Steps to Create, enable and disable DKIM from Microsoft Defender portal](#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
+- [Steps to Create, enable and disable DKIM from Microsoft Defender portal](#steps-to-create-enable-and-disable-dkim-from-microsoft-defender-portal)
 - [Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
 - [Steps to manually set up DKIM using PowerShell](#steps-to-manually-set-up-dkim-using-powershell)
 - [Error: No DKIM keys saved for this domain](#error-no-dkim-keys-saved-for-this-domain)
@@ -76,8 +76,6 @@ In this example, if you had only published an SPF TXT record for your domain, th
 
 > [!TIP]
 > DKIM uses a private key to insert an encrypted signature into the message headers. The signing domain, or outbound domain, is inserted as the value of the **d=** field in the header. The verifying domain, or recipient's domain, then uses the **d=** field to look up the public key from DNS, and authenticate the message. If the message is verified, the DKIM check passes.
-
-<a name='steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal'></a>
 
 ## Steps to Create, enable and disable DKIM from Microsoft Defender portal
 
