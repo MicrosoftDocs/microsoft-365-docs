@@ -34,7 +34,7 @@ This guidance includes recommendations for these scenarios:
 
 ## Bring SaaS apps into IT management
 
-The first step in using Defender for Cloud Apps to manage SaaS apps is to discover these and then add them to your Microsoft Entra tenant. If you need help with discovery, see [Discover and manage SaaS apps in your network](/cloud-app-security/tutorial-shadow-it). After you've discovered apps, [add these to your Microsoft Entra tenant](/azure/active-directory/manage-apps/add-application-portal).
+The first step in using Defender for Cloud Apps to manage SaaS apps is to discover these and then add them to your Microsoft Entra tenant. If you need help with discovery, see [Discover and manage SaaS apps in your network](/cloud-app-security/tutorial-shadow-it). After you've discovered apps, [add these to your Microsoft Entra tenant](/entra/identity/enterprise-apps/add-application-portal).
 
 You can begin to manage these by doing the following:
 
