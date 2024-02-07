@@ -72,8 +72,6 @@
         href: validate-antimalware.md
       - name: Attack surface reduction rules demonstrations
         href: defender-endpoint-demonstration-attack-surface-reduction-rules.md
-      - name: Block at First Sight (BAFS) demonstration
-        href: defender-endpoint-demonstration-block-at-first-sight-bafs.md
       - name: Cloud-delivered protection demonstration
         href: defender-endpoint-demonstration-cloud-delivered-protection.md
       - name: Controlled folder access (CFA) demonstration (block script)
