@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 01/17/2024
+ms.date: 03/06/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: backup
@@ -20,17 +20,15 @@ description: Learn how to set up and configure Microsoft 365 Backup and backup p
 # Set up Microsoft 365 Backup (Preview)
 
 > [!NOTE]
-> Microsoft 365 Backup (Preview) is rolling out. When it is available worldwide, this message will be updated and you will be able to see and enable the feature in the Syntex billing setup flow in the Microsoft 365 admin center.
+> Microsoft 365 Backup (Preview) is now available worldwide in all commercial cloud environments. This preview feature is subject to change and [limitations as defined](backup-limitations.md). Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
 
-Get started with Microsoft 365 Backup by following the simple three steps in the Microsoft 365 admin center.
+Get started with Microsoft 365 Backup by following these simple three steps in the Microsoft 365 admin center.
 
 ![Diagram showing the three-step setup process for Microsoft 365 Backup.](../../media/content-understanding/backup-setup-diagram.png)
 
 <!---<insert how-to Affirma video   – https://aka.ms/M365Backup-how-to-video> --->
 
-## Prerequisites
-
-### Set up pay-as-you-go billing
+## Step 1: Set up pay-as-you-go billing
 
 As a first step to sign up for Microsoft 365 Backup, you should first link an Azure subscription in [Syntex pay-as-you-go](https://admin.microsoft.com/Adminportal/Home#/featureexplorer/csi/ContentUnderstanding), if you haven't already done so. Although Microsoft 365 Backup isn't part of the Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
 
@@ -68,7 +66,7 @@ To set up pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex
 
 You must have Global admin or SharePoint admin permissions to access the Microsoft 365 admin center and set up Microsoft 365 Backup.
 
-### Enable Microsoft 365 Backup
+## Step 2: Turn on Microsoft 365 Backup
 
 To enable Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin center.
 
@@ -87,32 +85,25 @@ To enable Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin cen
 7. Review the applicable [terms of service for Microsoft 365 Backup](backup-preview-terms.md) and select **Confirm**.
 
     ![Screenshot of the Turn on Backup panel and the Confirm button.](../../media/content-understanding/backup-setup-turn-on.png)
-
+<!---
 8. Select **Go to Microsoft 365 Backup** to start setting up Microsoft 365 Backup on OneDrive, SharePoint, or Exchange.
 
     ![Screenshot of the Microsoft 365 Backup page showing SharePoint, Exchange, and OneDrive.](../../media/content-understanding/backup-setup-backup-page.png)
+--->
 
-## Admin roles and backup management privileges
+## Step 3: Create backup policies to protect your data
 
-Only tenant-level admins can create and manage backups using Microsoft 365 Backup for their users. End users don't have the ability to enable backup or restores for their user account, distribution lists, mailboxes, or sites. It’s important to note that your admin role determines which products you can manage with Microsoft 365 Backup. In the future, we might introduce a Backup admin role that can control the entire tool.
+Now that you have enabled Microsoft 365 Backup for your organization, follow through to create policies and start protecting your content.
 
-|Admin role  |OneDrive  |SharePoint  |Exchange  |
-|---------|---------|---------|---------|
-|Global admin     | ✓        | ✓        | ✓       |
-|SharePoint admin     | ✓        | ✓        |         |
-|Exchange admin    |         |         | ✓        |
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
-## Glossary
+2. Select **Settings**.
 
-- **Protection units** – SharePoint sites, OneDrive accounts, or Exchange Online mailboxes backed up by the Microsoft 365 Backup tool.
+3. Select **Microsoft 365 Backup** from the list of products.
 
-- **Restore point** – A prior point in time from which you can restore a version of your content and metadata. If the protection unit from a prior point in time is identical to the present state of your data, then a restore from that point will have no impact on your current data.
+    ![Screenshot of the Microsoft 365 admin center panel showing Settings and Microsoft 365 Backup.](../../media/content-understanding/backup-setup-admin-center-panel.png)
 
-- **RPO** – Recovery point objective, or how close in time the most recent restore point is to an impacting event.
-
-- **RTO** – Recovery time objective, or how fast a restore to a prior point in time can complete.
-
-## Set up backup policies for OneDrive, SharePoint, and Exchange
+### Set up backup policies for OneDrive, SharePoint, and Exchange
 
 To use Microsoft 365 Backup for OneDrive, SharePoint, or Exchange, you need to create a backup policy for each product. A *policy* represents the backup plan defined by admins for protecting the Microsoft 365 data of an organization.
 
@@ -204,7 +195,7 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
 # [Exchange](#tab/exchange)
 
-Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup. Ensure that Microsoft 365 Backup is [enabled for your tenant](#enable-microsoft-365-backup).
+Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup. Ensure that Microsoft 365 Backup is [enabled for your tenant](#turn-on-microsoft-365-backup).
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
@@ -247,3 +238,23 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
     ![Screenshot of the Exchange backup policy created page.](../../media/content-understanding/backup-policy-created-exchange.png)
 
 ---
+
+## Admin roles and backup management privileges
+
+Only tenant-level admins can create and manage backups using Microsoft 365 Backup for their users. End users don't have the ability to enable backup or restores for their user account, distribution lists, mailboxes, or sites. It’s important to note that your admin role determines which products you can manage with Microsoft 365 Backup. In the future, we might introduce a Backup admin role that can control the entire tool.
+
+|Admin role  |OneDrive  |SharePoint  |Exchange  |
+|---------|---------|---------|---------|
+|Global admin     | ✓        | ✓        | ✓       |
+|SharePoint admin     | ✓        | ✓        |         |
+|Exchange admin    |         |         | ✓        |
+
+## Glossary
+
+- **Protection units** – SharePoint sites, OneDrive accounts, or Exchange Online mailboxes backed up by the Microsoft 365 Backup tool.
+
+- **Restore point** – A prior point in time from which you can restore a version of your content and metadata. If the protection unit from a prior point in time is identical to the present state of your data, then a restore from that point will have no impact on your current data.
+
+- **RPO** – Recovery point objective, or how close in time the most recent restore point is to an impacting event.
+
+- **RTO** – Recovery time objective, or how fast a restore to a prior point in time can complete.

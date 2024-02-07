@@ -14,6 +14,7 @@ ms.collection:
   - m365-security
   - tier1
   - highpri
+  - essentials-overview
 ms.custom:
   - seo-marvel-apr2020
   - intro-overview
@@ -21,7 +22,7 @@ ms.custom:
 description: Is Microsoft Defender for Office 365 worth it? Let's find out.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 9/14/2023
+ms.date: 01/19/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
@@ -38,7 +39,7 @@ For email threats that are identified after the fact, Zero-hour autopurge (ZAP) 
 
 Defender for Office 365 safeguards organizations against malicious threats by providing admins and SecOps teams a wide range of capabilities. Users, admins, and SecOps personnel benefit from these features from the beginning of the organization. For example:
 
-- **[Preset security policies can configure everything for you](preset-security-policies.md)**: The protection policies included in Standard and Strict preset security policies contain our recommended settings. All you need to do is decide who gets the protection (by user, group, domain, or all recipients) and specify the entries and optional exceptions for user and domain impersonation protection. For instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+- **[Preset security policies can configure everything for you](preset-security-policies.md)**: The protection policies included in Standard and Strict preset security policies contain our recommended settings. All you need to do is decide who gets the protection (by user, group, domain, or all recipients) and specify the entries and optional exceptions for user and domain impersonation protection. For instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 - **[Threat protection policies](#defender-for-office-365-protection-policies)**: Define threat-protection policies so admins can set the right level of protection for the organization.
 
@@ -106,7 +107,7 @@ Anti-phishing policies with spoofing and impersonation protection are included i
 
 [Safe Attachments](safe-attachments-about.md) provides zero-day protection for email by checking message attachments for malicious content *in addition to* the regular malware scanning in EOP. Safe Attachments opens all attachments in virtual environment to see what happens (a process known as _detonation_). If no suspicious activity is detected, the message is delivered to the mailbox.
 
-Safe Attachments protection is on by default for all recipients thanks to the [Built-in protection preset security policy](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy), but you can specify exceptions.
+Safe Attachments protection is on by default for all recipients thanks to the [Built-in protection preset security policy](preset-security-policies.md#use-the-microsoft-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy), but you can specify exceptions.
 
 Safe Attachments policies are also included in the Standard and Strict preset security policies, and you can create custom policies as needed.
 
@@ -118,7 +119,7 @@ Safe Attachments policies are also included in the Standard and Strict preset se
 
 [Safe Links](safe-links-about.md) provides time-of-click verification of URLs in email messages, supported Office files, and Microsoft Teams. Protection is ongoing and applies across your messaging and Office environment. Links are scanned for each click. Benign links remain accessible, but malicious links are dynamically blocked.
 
-Safe Links protection is on by default for all recipients thanks to the [Built-in protection preset security policy](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy), but you can specify exceptions.
+Safe Links protection is on by default for all recipients thanks to the [Built-in protection preset security policy](preset-security-policies.md#use-the-microsoft-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy), but you can specify exceptions.
 
 Safe Links policies are also included in the Standard and Strict preset security policies, and you can create custom policies as needed.
 

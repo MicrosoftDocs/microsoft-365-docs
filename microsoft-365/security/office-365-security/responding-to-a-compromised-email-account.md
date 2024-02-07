@@ -96,7 +96,7 @@ Follow the procedures in [Reset a business password for someone](/microsoft-365/
 >
 > - If the on-premises identity is federated with Microsoft 365, you must change the on-premises account password on-premises, and then notify the administrator of the compromise.
 >
-> - Be sure to update app passwords. App passwords aren't automatically revoked when you reset the password. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+> - Be sure to update app passwords. App passwords aren't automatically revoked when you reset the password. The user should delete existing app passwords and create new ones. For instructions, see [Manage app passwords for two-step verification](https://support.microsoft.com/account-billing/d6dc8c6d-4bf7-4851-ad95-6d07799387e9).
 >
 > - We highly recommended that you enable multi-factor authentication (MFA) for the account. MFA is a good way to help prevent account compromise, and is very important for accounts with administrative privileges. For instructions, see [Set up multi-factor authentication](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 

@@ -92,7 +92,7 @@ All key features have an option for providing feedback. To provide feedback, per
 
 ## Microsoft Defender XDR plugin in Security Copilot
 
-Microsoft Defender XDR is one of the [Microsoft plugins](/security-copilot/manage-plugins.md#microsoft-plugins) that enable the Security Copilot platform to generate accurate and relevant information. Through the Microsoft Defender XDR plugin, the Security Copilot portal can provide more context to incidents and generate more accurate results. The key features mentioned in this article are capabilities that are also available in the Security Copilot portal.
+Microsoft Defender XDR is one of the [Microsoft plugins](/security-copilot/manage-plugins#microsoft-plugins) that enable the Security Copilot platform to generate accurate and relevant information. Through the Microsoft Defender XDR plugin, the Security Copilot portal can provide more context to incidents and generate more accurate results. The key features mentioned in this article are capabilities that are also available in the Security Copilot portal.
 
 You can learn more about plugins implemented in the Security Copilot portal in [Manage plugins in Security Copilot](/security-copilot/manage-plugins). Additionally, you can learn more about the embedded experiences in other Microsoft security products in [Microsoft Security Copilot experiences](/security-copilot/experiences-security-copilot)
 
