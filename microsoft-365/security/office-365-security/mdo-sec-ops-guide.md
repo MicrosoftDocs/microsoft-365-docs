@@ -187,8 +187,8 @@ Permissions for managing Defender for Office 365 in the Microsoft Defender porta
 The following permissions (roles and role groups) are available in Defender for Office 365 and can be used to grant access to security team members:
 
 - **Microsoft Entra ID**: Centralized roles that assign permissions for _all_ Microsoft 365 services, including Defender for Office 365. You can view the Microsoft Entra roles and assigned users in the Microsoft Defender portal, but you can't manage them directly there. Instead, you manage Microsoft Entra roles and members at <https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles/adminUnitObjectId//resourceScope/%2F>. The most frequent roles used by security teams are:
-  - **[Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator)**
-  - **[Security Reader](/azure/active-directory/roles/permissions-reference#security-reader)**
+  - **[Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)**
+  - **[Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader)**
 
 - **Exchange Online** and **Email & collaboration**: Roles and role groups that grant permission specific to Microsoft Defender for Office 365. The following roles aren't available in Microsoft Entra ID, but can be important for security teams:
 
@@ -212,7 +212,7 @@ The following permissions (roles and role groups) are available in Defender for 
 
   - **Tenant AllowBlockList Manager** (Exchange Online): Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
 
-    By default, this role is assigned only to the **Security Operator role group in Exchange Online**, not in Microsoft Entra ID. Membership in the **[Security Operator role in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference#security-operator)** _doesn't_ allow you to manage entries the Tenant Allow/Block List.
+    By default, this role is assigned only to the **Security Operator role group in Exchange Online**, not in Microsoft Entra ID. Membership in the **[Security Operator role in Microsoft Entra ID](/entra/identity/role-based-access-control/permissions-reference#security-operator)** _doesn't_ allow you to manage entries the Tenant Allow/Block List.
 
     Members of the **Security Administrator** or **Organization management** roles in Microsoft Entra ID or the corresponding role groups in Exchange Online _are_ able to manage entries in the Tenant Allow/Block List.
 
