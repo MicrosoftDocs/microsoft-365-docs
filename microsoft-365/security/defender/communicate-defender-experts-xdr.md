@@ -19,7 +19,7 @@ ms.collection:
   - essentials-manage
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/29/2024
+ms.date: 02/07/2024
 ---
 
 # Communicating with experts in the Microsoft Defender Experts for XDR service
