@@ -120,7 +120,7 @@ You can see the following summary charts in this report as default view:
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
 >[!NOTE]
-> Teams Copilot usage does not include Microsoft 365 Chat usage, but Microsoft 365 Chat usage will be displayed in Copilot for Microsoft 365 usage soon.
+> Teams Copilot usage does not include Microsoft Copilot with Graph-grounded chat usage, but it will be displayed in Copilot for Microsoft 365 usage soon.
 
 **Current view** shows you the total usage of Copilot for Microsoft 365 among Microsoft 365 apps of the time frame.
 
