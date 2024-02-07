@@ -97,7 +97,7 @@ For more information about user reported message settings in the Defender portal
    > - The reported message remains visible to the user in the Teams client.
    > - Users can report the same message multiple times.
    > - The message sender isn't notified that messages were reported.
-   > - Microsoft also sends an email message notification to the user who reported the message from submissions@messaging.microsoft.com with the subject, "You have successfully reported a Teams message as a security risk." If Teams integration is turned on in the Defender portal, admins can customize some elements of the notification message in the **Email notifications** section on **User reported settings** page as described in [Customize the messages used to notify users](submissions-admin-review-user-reported-messages.md#customize-the-messages-used-to-notify-users).
+   > - Microsoft also sends an email message notification to the user who reported the message from `submissions@messaging.microsoft.com` with the subject, "You have successfully reported a Teams message as a security risk." If Teams integration is turned on in the Defender portal, admins can customize some elements of the notification message in the **Email notifications** section on **User reported settings** page as described in [Customize the messages used to notify users](submissions-admin-review-user-reported-messages.md#customize-the-messages-used-to-notify-users).
 
 ## What happens after a user reports a message from Teams?
 
@@ -112,8 +112,9 @@ For more information, see [User reported settings](submissions-user-reported-mes
 **Notes**:
 
 - If you select **Send the reported messages to** \> **My reporting mailbox only**, reported messages don't go to Microsoft for analysis unless an admin manually submits the message from the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. Reporting messages to Microsoft is an important part of training the service to help improve the accuracy of filtering (reduce false positives and false negatives). That's why we use **Send the reported messages to** \> **Microsoft and my reporting mailbox** as the default.
-- Regardless of the **Send the reported messages to** setting, metadata from the reported Teams message (for example, senders, recipients, reported by, and message details) is available on the **User reported** tab on the **Submissions** page.
-- Regardless of the **Send the reported messages to** setting, the alert policy named **Teams message reported by user as a security risk** generates an alert when a user reports a message in Teams by default. For more information, see [Manage alerts](/purview/alert-policies#manage-alerts).
+- Regardless of the **Send the reported messages to** setting, the following actions occur when a user reports a Teams message:
+  - Metadata from the reported Teams message (for example, senders, recipients, reported by, and message details) is available on the **User reported** tab on the **Submissions** page.
+  - The alert policy named **Teams message reported by user as a security risk** generates an alert by default. For more information, see [Manage alerts](/purview/alert-policies#manage-alerts).
 
   To view the corresponding alert for a user reported message in Teams, go to the **User reported** tab on the **Submission** page, and then double-click the message to open the submission flyout. Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** and then select **View alert**.
 

@@ -40,7 +40,7 @@ In Microsoft 365 E5 and Defender for Office 365 Plan 2, we've extended Teams pro
 
   Instructions to configure ZAP for Teams protection are in the next section.
 
-- **Teams messages in quarantine**: As with email messages that are identified as malware or high confidence phishing, only admins are able to manage Teams messages that are quarantined by ZAP for Teams by default. For more information, see [Manage quarantined Teams messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages).
+- **Teams messages in quarantine**: As with email messages that are identified as malware or high confidence phishing, only admins are able to manage Teams messages that are quarantined by ZAP for Teams by default. For more information, see [Manage quarantined Teams messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-defender-portal-to-manage-microsoft-teams-quarantined-messages).
 
 - The **Teams Message Entity Panel** is a single place to store all Teams message metadata for immediate SecOps review. Any threats coming from Teams chats, group chats, meeting chats, and other channels can be found in one place as soon as they're assessed. For more information, see [Teams Message Entity Panel for Microsoft Teams](teams-message-entity-panel.md).
 
@@ -59,7 +59,7 @@ In Microsoft 365 E5 and Defender for Office 365 Plan 2, we've extended Teams pro
    - **Quarantine policies** section: You can select the existing quarantine policy to use for messages that are quarantined by ZAP for Teams protection as **Malware** or **High confidence phishing**. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
      > [!NOTE]
-     > Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware or high confidence phishing, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+     > Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware or high confidence phishing, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-defender-portal).
 
    - **Exclude these participants** section: Specify the **Users**, **Groups**, or **Domains** to exclude from ZAP for Teams protection. Exclusions matter for message _recipients_, not message _senders_. For more information, see [Zero-hour auto purge (ZAP) in Microsoft Teams](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams).
 
@@ -162,5 +162,5 @@ For detailed syntax and parameter information, see [Set-TeamsProtectionPolicyRul
 ## See also
 
 - [Microsoft Teams](/microsoftteams/teams-overview)
-- [Managing Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages)
+- [Managing Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-defender-portal-to-manage-microsoft-teams-quarantined-messages)
 - [Get started using Attack simulation training in Defender for Office 365](attack-simulation-training-get-started.md)
