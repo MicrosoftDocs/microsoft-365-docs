@@ -97,8 +97,6 @@ You have the following options to create block entries for URLs:
 
 - From the **URLs** tab on the **Tenant Allow/Block Lists** page or in PowerShell as described in this section.
 
-<a name='use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list'></a>
-
 ### Use the Microsoft Defender portal to create block entries for URLs in the Tenant Allow/Block List
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
@@ -139,8 +137,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries *contoso.com
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-<a name='use-the-microsoft-365-defender-portal-to-view-entries-for-urls-in-the-tenant-allowblock-list'></a>
 
 ## Use the Microsoft Defender portal to view entries for URLs in the Tenant Allow/Block List
 
@@ -192,8 +188,6 @@ Get-TenantAllowBlockListItems -ListType Url -Block
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-entries-for-urls-in-the-tenant-allowblock-list'></a>
-
 ## Use the Microsoft Defender portal to modify entries for URLs in the Tenant Allow/Block List
 
 In existing URL entries, you can change the expiration date and note.
@@ -241,8 +235,6 @@ Set-TenantAllowBlockListItems -ListType Url -Entries "~contoso.com" -ExpirationD
 ```
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
-
-<a name='use-the-microsoft-365-defender-portal-to-remove-entries-for-urls-from-the-tenant-allowblock-list'></a>
 
 ## Use the Microsoft Defender portal to remove entries for URLs from the Tenant Allow/Block List
 
