@@ -62,8 +62,8 @@ Zero Trust identity and device access settings and policies are recommended in t
 These tiers and their corresponding configurations provide consistent levels of Zero Trust protection across your data, identities, and devices. These capabilities and their recommendations:
 
 - Are supported in Microsoft 365 E3 and Microsoft 365 E5.
-- Are aligned with [Microsoft Secure Score](../defender/microsoft-secure-score.md) and [identity score in Microsoft Entra ID](/azure/active-directory/fundamentals/identity-secure-score). Following the recommendations will increase these scores for your organization.
-- Help you to implement these [five steps to securing your identity infrastructure](/azure/security/azure-ad-secure-steps).
+- Are aligned with [Microsoft Secure Score](../defender/microsoft-secure-score.md) and [identity score in Microsoft Entra ID](/entra/identity/monitoring-health/concept-identity-secure-score). Following the recommendations will increase these scores for your organization.
+- Help you to implement these [five steps to securing your identity infrastructure](/azure/security/fundamentals/steps-secure-identity).
 
 If your organization has unique requirements or complexities, use these recommendations as a starting point. However, most organizations can implement these recommendations as prescribed.
 
@@ -89,7 +89,7 @@ Many of our recommendations rely on services that are available only with the fo
 - EMS E5.
 - Microsoft Entra ID P2 licenses.
 
-For organizations who don't have these licenses, we recommend that you at least implement [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which is included with all Microsoft 365 plans.
+For organizations who don't have these licenses, we recommend that you at least implement [security defaults](/entra/fundamentals/security-defaults), which is included with all Microsoft 365 plans.
 
 ### Caveats
 
@@ -139,21 +139,19 @@ Microsoft 365 for enterprise is designed for large organizations to empower ever
 
 This section provides an overview of the Microsoft 365 services and capabilities that are important for Zero Trust identity and device access.
 
-<a name='azure-ad'></a>
-
 ### Microsoft Entra ID
 
 Microsoft Entra ID provides a full suite of identity management capabilities. We recommend using these capabilities to secure access.
 
 |Capability or feature|Description|Licensing|
 |---|---|---|
-|[Multifactor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA requires users to provide two forms of verification, such as a user password plus a notification from the Microsoft Authenticator app or a phone call. MFA greatly reduces the risk that stolen credentials can be used to access your environment. Microsoft 365 uses the Microsoft Entra multifactor authentication service for MFA-based sign-ins.|Microsoft 365 E3 or E5|
-|[Conditional Access](/azure/active-directory/conditional-access/overview)|Microsoft Entra ID evaluates the conditions of the user sign-in and uses Conditional Access policies to determine the allowed access. For example, in this guidance we show you how to create a Conditional Access policy to require device compliance for access to sensitive data. This greatly reduces the risk that a hacker with their own device and stolen credentials can access your sensitive data. It also protects sensitive data on the devices, because the devices must meet specific requirements for health and security.|Microsoft 365 E3 or E5|
-|[Microsoft Entra groups](/azure/active-directory/fundamentals/active-directory-manage-groups)|Conditional Access policies, device management with Intune, and even permissions to files and sites in your organization rely on the assignment to user accounts or Microsoft Entra groups. We recommend you create Microsoft Entra groups that correspond to the levels of protection you are implementing. For example, your executive staff are likely higher value targets for hackers. Therefore, it makes sense to add the user accounts of these employees to a Microsoft Entra group and assign this group to Conditional Access policies and other policies that enforce a higher level of protection for access.|Microsoft 365 E3 or E5|
-|[Device enrollment](/azure/active-directory/devices/overview)|You enroll a device into Microsoft Entra ID to create an identity for the device. This identity is used to authenticate the device when a user signs in and to apply Conditional Access policies that require domain-joined or compliant PCs. For this guidance, we use device enrollment to automatically enroll domain-joined Windows computers. Device enrollment is a prerequisite for managing devices with Intune.|Microsoft 365 E3 or E5|
-|[Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview)|Enables you to detect potential vulnerabilities affecting your organization's identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply Conditional Access policies for multifactor authentication. This guidance also includes a Conditional Access policy that requires users to change their password if high-risk activity is detected for their account.|Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Microsoft Entra ID P2 licenses|
-|[Self-service password reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Allow your users to reset their passwords securely and without help-desk intervention, by providing verification of multiple authentication methods that the administrator can control.|Microsoft 365 E3 or E5|
-|[Microsoft Entra password protection](/azure/active-directory/authentication/concept-password-ban-bad)|Detect and block known weak passwords and their variants and additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in a Microsoft Entra tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.|Microsoft 365 E3 or E5|
+|[Multifactor authentication (MFA)](/entra/identity/authentication/concept-mfa-howitworks)|MFA requires users to provide two forms of verification, such as a user password plus a notification from the Microsoft Authenticator app or a phone call. MFA greatly reduces the risk that stolen credentials can be used to access your environment. Microsoft 365 uses the Microsoft Entra multifactor authentication service for MFA-based sign-ins.|Microsoft 365 E3 or E5|
+|[Conditional Access](/entra/identity/conditional-access/overview)|Microsoft Entra ID evaluates the conditions of the user sign-in and uses Conditional Access policies to determine the allowed access. For example, in this guidance we show you how to create a Conditional Access policy to require device compliance for access to sensitive data. This greatly reduces the risk that a hacker with their own device and stolen credentials can access your sensitive data. It also protects sensitive data on the devices, because the devices must meet specific requirements for health and security.|Microsoft 365 E3 or E5|
+|[Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups)|Conditional Access policies, device management with Intune, and even permissions to files and sites in your organization rely on the assignment to user accounts or Microsoft Entra groups. We recommend you create Microsoft Entra groups that correspond to the levels of protection you are implementing. For example, your executive staff are likely higher value targets for hackers. Therefore, it makes sense to add the user accounts of these employees to a Microsoft Entra group and assign this group to Conditional Access policies and other policies that enforce a higher level of protection for access.|Microsoft 365 E3 or E5|
+|[Device enrollment](/entra/identity/devices/overview)|You enroll a device into Microsoft Entra ID to create an identity for the device. This identity is used to authenticate the device when a user signs in and to apply Conditional Access policies that require domain-joined or compliant PCs. For this guidance, we use device enrollment to automatically enroll domain-joined Windows computers. Device enrollment is a prerequisite for managing devices with Intune.|Microsoft 365 E3 or E5|
+|[Microsoft Entra ID Protection](/entra/id-protection/overview-identity-protection)|Enables you to detect potential vulnerabilities affecting your organization's identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply Conditional Access policies for multifactor authentication. This guidance also includes a Conditional Access policy that requires users to change their password if high-risk activity is detected for their account.|Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Microsoft Entra ID P2 licenses|
+|[Self-service password reset (SSPR)](/entra/identity/authentication/concept-sspr-howitworks)|Allow your users to reset their passwords securely and without help-desk intervention, by providing verification of multiple authentication methods that the administrator can control.|Microsoft 365 E3 or E5|
+|[Microsoft Entra password protection](/entra/identity/authentication/concept-password-ban-bad)|Detect and block known weak passwords and their variants and additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in a Microsoft Entra tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.|Microsoft 365 E3 or E5|
 
 Here are the components of Zero Trust identity and device access, including Intune and Microsoft Entra objects, settings, and subservices.
 
@@ -228,7 +226,7 @@ Microsoft recommends that you don't create policy sets that apply to all apps be
 3. Configure Conditional Access policies for guest and external users.
 4. Configure Conditional Access policies for Microsoft 365 cloud apps—such as Microsoft Teams, Exchange, and SharePoint—and Microsoft Defender for Cloud Apps policies.
 
-After you have configured Zero Trust identity and device access, see the [Microsoft Entra feature deployment guide](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Microsoft Entra ID Governance](/azure/active-directory/governance/) to protect, monitor, and audit access.
+After you have configured Zero Trust identity and device access, see the [Microsoft Entra feature deployment guide](/entra/fundamentals/concept-secure-remote-workers) for a phased checklist of additional features to consider and [Microsoft Entra ID Governance](/entra/id-governance/) to protect, monitor, and audit access.
 
 ## Next step
 
