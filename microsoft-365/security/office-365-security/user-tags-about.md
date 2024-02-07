@@ -64,8 +64,6 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 - For information about securing _privileged accounts_ (admin accounts), see [this article](/purview/privileged-access-management).
 
-<a name='use-the-microsoft-365-defender-portal-to-create-user-tags'></a>
-
 ## Use the Microsoft Defender portal to create user tags
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
@@ -108,18 +106,16 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
    Back on the **User tags** page, the new tag is listed.
 
-<a name='use-the-microsoft-365-defender-portal-to-view-user-tags'></a>
-
 ## Use the Microsoft Defender portal to view user tags
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
 On the **User tags** page, you can sort the entries by clicking on an available column header. The following columns are available:
 
-   - **Tag**: The name of the user tag.
-   - **Applied to**: The number of members
-   - **Last modified**
-   - **Created on**
+- **Tag**: The name of the user tag.
+- **Applied to**: The number of members
+- **Last modified**
+- **Created on**
 
 Use :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the user tags by **Last modified date**.
 
@@ -138,8 +134,6 @@ The details flyout of the user tag contains the following information, based on 
 
 To take action on user tags, see the next section.
 
-<a name='use-the-microsoft-365-defender-portal-to-take-action-on-user-tags'></a>
-
 ## Use the Microsoft Defender portal to take action on user tags
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **User tags**. Or, to go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
@@ -150,8 +144,6 @@ To take action on user tags, see the next section.
 
 After you select the user tag, the available actions are described in the following subsections.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-user-tags'></a>
-
 ### Use the Microsoft Defender portal to modify user tags
 
 After you select the user tag, use either of the following methods to modify it:
@@ -159,12 +151,10 @@ After you select the user tag, use either of the following methods to modify it:
 - **On the User tags page**: Select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** action that appears.
 - **In the details flyout of the selected user tag**: Select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** action at the top of the flyout.
 
-The same wizard and most of the same settings are available as described in the [Use the Microsoft Defender portal to create user tags](#use-the-microsoft-365-defender-portal-to-create-user-tags) section earlier in this article, with the following exceptions:
+The same wizard and most of the same settings are available as described in the [Use the Microsoft Defender portal to create user tags](#use-the-microsoft-defender-portal-to-create-user-tags) section earlier in this article, with the following exceptions:
 
 - You can't rename or change the description of the Priority account tag, so the **Define tag** page isn't available for the Priority account tag.
 - The **Define tag** page is available for custom tags, but you can't rename the tag; you can only change the description.
-
-<a name='use-the-microsoft-365-defender-portal-to-remove-user-tags'></a>
 
 ## Use the Microsoft Defender portal to remove user tags
 
