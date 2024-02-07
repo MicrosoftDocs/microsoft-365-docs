@@ -66,7 +66,7 @@ To set up pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex
 
 You must have Global admin or SharePoint admin permissions to access the Microsoft 365 admin center and set up Microsoft 365 Backup.
 
-## Step 2: Enable Microsoft 365 Backup
+## Step 2: Turn on Microsoft 365 Backup
 
 To enable Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin center.
 
