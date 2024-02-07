@@ -56,7 +56,7 @@ To get started with the implementation process, see [Deployment guide for Micros
 >[!IMPORTANT]
 > Microsoft Copilot for Microsoft 365 will follow the standard practice of deployment and updates for Microsoft 365 Apps, being available in all update channels, except for Semi-Annual Enterprise Channel. Preview channels (also known as Microsoft 365 Insider) include Current Channel (Preview) and Beta Channel. Production channels include Current Channel and Monthly Enterprise Channel.
 >
-> Copilot is available in Current Channel and in Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and the [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
+> Copilot is available in Current Channel and in Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
 ## Manage licenses for Copilot
 
