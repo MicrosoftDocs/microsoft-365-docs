@@ -1433,6 +1433,8 @@
 
     - name: Troubleshoot Microsoft Defender for Endpoint on macOS
       items:
+      - name: Troubleshoot mode on macOS
+        href: mac-troubleshoot-mode.md
       - name: Troubleshoot installation issues
         href: mac-support-install.md
       - name: Troubleshoot performance issues
