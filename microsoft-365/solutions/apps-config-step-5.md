@@ -16,7 +16,7 @@ keywords:
 
 # Step 5. Configure Microsoft Teams
 
-Microsoft Teams allows your organization to collaborate and communicate in real-time. Your organization can use Teams to chat between individuals, groups, teams, and channels. They can set up meetings, share apps and files, and make calls. Team also supports adding a variety of apps to bring capability and insight.
+Microsoft Teams allows your organization to collaborate and communicate in real-time. Your organization can use Teams to chat between individuals, groups, teams, and channels. They can set up meetings, share apps and files, and make calls. Team also supports adding various apps to bring capability and insight.
 
 Using Intune, Teams can be added, configured, and assigned to your organization's end users. You can also assign Microsoft Teams to your end users to support conditional access, app protection, and single sign-on at your organization.
 
@@ -35,9 +35,9 @@ Microsoft Teams provides configuration settings that allow you to customize the 
 
 | Key | Description |
 |---|---|
-| com.microsoft.teams.chat.notifications.IntuneMAMOnly | You can allow chat notifications   when using the  Mobile Application   Management (MAM) channel in Intune. You select the **Managed apps** option   when create an app configuration policy. For more information, see [Notification   settings in Microsoft   Teams](/mem/intune/apps/manage-microsoft-teams#notification-settings-in-microsoft-teams). |
-| com.microsoft.teams.channel.notifications.IntuneMAMOnly | You can allow channel   notifications when using the MAM channel in Intune. You select the **Managed   apps** option when create an app configuration policy. For more information,   see [Notification settings in Microsoft   Teams](/mem/intune/apps/manage-microsoft-teams#notification-settings-in-microsoft-teams). |
-| com.microsoft.teams.others.notifications.IntuneMAMOnly | You can allow other   notifications when using the MAM channel in Intune. You select the **Managed   apps** option when create an app configuration policy. For more information,   see [Notification settings in Microsoft   Teams](/mem/intune/apps/manage-microsoft-teams#notification-settings-in-microsoft-teams). |
+| com.microsoft.teams.chat.notifications.IntuneMAMOnly | You can allow chat notifications   when using the  Mobile Application   Management (MAM) channel in Intune. You select the **Managed apps** option when you create an app configuration policy. For more information, see [Notification   settings in Microsoft   Teams](/mem/intune/apps/manage-microsoft-teams#notification-settings-in-microsoft-teams). |
+| com.microsoft.teams.channel.notifications.IntuneMAMOnly | You can allow channel   notifications when using the MAM channel in Intune. You select the **Managed   apps** option when you create an app configuration policy. For more information,   see [Notification settings in Microsoft   Teams](/mem/intune/apps/manage-microsoft-teams#notification-settings-in-microsoft-teams). |
+| com.microsoft.teams.others.notifications.IntuneMAMOnly | You can allow other   notifications when using the MAM channel in Intune. You select the **Managed   apps** option when you create an app configuration policy. For more information,   see [Notification settings in Microsoft   Teams](/mem/intune/apps/manage-microsoft-teams#notification-settings-in-microsoft-teams). |
 
 For these notifications to show up on iOS/iPadOS and Android devices, your end users must ensure specific settings are set in the Teams and Company Portal apps. For more information, see [Teams notifications](/mem/intune/apps/manage-microsoft-teams#for-the-notifications-to-show-up-on-ios-and-android-devices).
 
