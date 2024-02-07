@@ -47,7 +47,7 @@ During the troubleshooting mode, you can:
 - Use Microsoft Defender for Endpoint on macOS functional troubleshooting /application compatibility (false positives). 
 - Local admins, with appropriate permissions, can change the following configurations on individual endpoints that are usually locked by policy: 
 
-     | Setting  | Command to enable  | Command to disable/remove |
+     | Setting  | Enable  | Disable/Remove |
      | ----| ---- | ----|
      | Real-Time Protection/ Passive mode / On-Demand | `mdatp config real-time-protection --value enabled` | `mdatp config real-time-protection --value disabled` |
      | Network Protection   | `mdatp config network-protection enforcement-level --value block` | `mdatp config network-protection enforcement-level --value disabled` |
@@ -58,35 +58,38 @@ During the troubleshooting mode, you can:
 
 During troubleshooting mode, you can't:
 
-- Disable Tamper Protection for Microsoft Defender for Endpoint on macOS. 
+- Disable tamper protection for Microsoft Defender for Endpoint on macOS. 
 - Uninstall the Microsoft Defender for Endpoint on macOS.
 
 ### Prerequisites
 
 - Supported version of macOS for Microsoft Defender for Endpoint on macOS.
-- For troubleshooting mode to be applied, Microsoft Defender for Endpoint must be tenant-enrolled and active on the device. 
-- You must have "Manage security settings in Security Center" permissions for Microsoft Defender for Endpoint.
-- The device must be actively running Microsoft Defender for Endpoint, version <<number>> or later. 
+- Microsoft Defender for Endpoint must be tenant-enrolled and active on the device. 
+- Must have "Manage security settings in Security Center" permissions in Microsoft Defender for Endpoint.
+- Device must be actively running Microsoft Defender for Endpoint, version or later. 
 
-## Enable troubleshooting mode 
+## Enable troubleshooting mode on macOS
 
 1. Go to the [Microsoft Defender XDR portal](https://security.microsoft.com/), and sign in.
 2. Navigate to the device page you would like to turn on troubleshooting mode. Then, click on the ellipses(...) and select **Turn on troubleshooting mode**.  
      :::image type="content" source="images/troubleshooting-mode-on-mac.png" alt-text="Image displaying the screenshot of the troubleshooting mode on mac.":::
+
      > [!NOTE]
      > The **Turn on troubleshooting mode** option is available on all devices, even if the device does not meet the prerequisites for troubleshooting mode.
 
 3. Read the information displayed on the pane and once you're ready, select **Submit** to confirm that you want to turn on troubleshooting mode for that device.
-4. You'll see *It might take a few minutes for the change to take effect.* text and during this time, when clicked on the ellipses you'll see the **Turn On Troubleshooting mode is pending** option being grayed-out.
+4. You'll see *It might take a few minutes for the change to take effect* text being displayed. During this time, when you click on the ellipses again, you'll see the **Turn On Troubleshooting mode is pending** option grayed-out.
 5. Once complete, the device page shows that the device is now in troubleshooting mode. 
+
      If the end-user is logged-in on the macOS device, they'll see the following text:
 
-     *Troubleshooting mode has started: This mode allows you to temporarily change settings that are managed by your Administrator. Expires at YEAR-MM-DDTHH:MM:SSZ.* 
+     *Troubleshooting mode has started. This mode allows you to temporarily change settings that are managed by your Administrator. Expires at YEAR-MM-DDTHH:MM:SSZ.* 
 
-     Select **OK** to enable the troubleshooting mode.
+     Select **OK**.
 
-6. Once enabled, you can test the different command line options that are togglable in the troubleshooting mode (TS Mode) enabled. 
-     For example, when you use `mdatp config real-time-protection --value disabled` command in order to disable real time protection, you'll be prompted to enter your password. Select **OK** after entering your password.
+6. Once enabled, you can test the different command line options that are togglable in the troubleshooting mode (TS Mode).
+
+     For example, when you use `mdatp config real-time-protection --value disabled` command to disable real time protection, you'll be prompted to enter your password. Select **OK** after entering your password.
 
      :::image type="content" source="images/ts-mode-rtp-disable.png" alt-text="Image displaying the screenshot of real time protection being disabled.":::
 
