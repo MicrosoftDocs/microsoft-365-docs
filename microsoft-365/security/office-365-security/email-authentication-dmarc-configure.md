@@ -184,7 +184,7 @@ Once you've formed your record, you need to update the record at your domain reg
 > [!CAUTION]
 > Mails may not be sent out daily.
 
-In this example DMARC TXT record: `dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.example.com; ruf=mailto:d@ruf.example.com; fo=1"`, you can see the *rua* address. This address is used to send 'aggregate feedback' for analysis, which is used to generate a report.
+In this example DMARC TXT record: `_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.example.com; ruf=mailto:d@ruf.example.com; fo=1"`, you can see the *rua* address. This address is used to send 'aggregate feedback' for analysis, which is used to generate a report.
 
 > [!TIP]
 > Visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog) to view more third-party vendors offering DMARC reporting for Microsoft 365. See [IETF.org's 'Domain-based Message Authentication, Reporting, and Conformance (DMARC)'](https://datatracker.ietf.org/doc/html/rfc7489) for more information on DMARC 'rua' addresses.
