@@ -111,8 +111,8 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
   |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
   |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
-  |For Rocky 8|<https://packages.microsoft.com/config/rocky/8/prod.repo>|
-  |For Rocky 9|<https://packages.microsoft.com/config/rocky/9/prod.repo>|
+  |For Rocky 8.9|<https://packages.microsoft.com/config/rocky/8/prod.repo>|
+  |For Rocky 9.3|<https://packages.microsoft.com/config/rocky/9/prod.repo>|
 
   <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 

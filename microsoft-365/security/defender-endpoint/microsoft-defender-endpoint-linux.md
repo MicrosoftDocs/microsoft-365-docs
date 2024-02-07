@@ -95,7 +95,8 @@ In general you need to take the following steps:
   - Amazon Linux 2023
   - Fedora 33 or higher
   - Alma 8 or higher
-  - Rocky 8 or higher
+  - Rocky 8.9
+  - Rocky 9.3
   - Mariner2
 
     > [!NOTE]
