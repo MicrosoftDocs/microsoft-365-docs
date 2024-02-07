@@ -612,26 +612,26 @@
                  href: ../defender-endpoint/professional-services.md           
             - name: Understand threat intelligence concepts
               href: ../defender-endpoint/threat-indicator-concepts.md 
-      - name: Security intelligence
+      - name: Microsoft Security Resources
         items: 
           - name: Safety Scanner download
-            href: ../intelligence/safety-scanner-download.md
+            href: safety-scanner-download.md
           - name: Threat actor naming
-            href: ../intelligence/microsoft-threat-actor-naming.md
+            href: microsoft-threat-actor-naming.md
           - name: Malware names
-            href: ../intelligence/malware-naming.md
+            href: malware-naming.md
           - name: How Microsoft identifies malware and PUA
-            href: ../intelligence/criteria.md
+            href: criteria.md
           - name: Submit files for analysis
-            href: ../intelligence/submission-guide.md
+            href: submission-guide.md
           - name: Troubleshoot MSI portal errors caused by admin block
-            href: ../intelligence/portal-submission-troubleshooting.md
+            href: portal-submission-troubleshooting.md
           - name: Industry collaboration programs
-            href: ../intelligence/cybersecurity-industry-partners.md
+            href: cybersecurity-industry-partners.md
           - name: Microsoft virus initiative
-            href: ../intelligence/virus-initiative-criteria.md
+            href: virus-initiative-criteria.md
           - name: Software developer FAQ
-            href: ../intelligence/developer-faq.yml
+            href: developer-faq.yml
     - name: Microsoft Defender XDR docs
       items: 
        - name: Defender for Office 365
