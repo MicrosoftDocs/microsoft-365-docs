@@ -302,6 +302,8 @@
               href: m365-dr-workload-exo.md
             - name: SharePoint and OneDrive
               href: m365-dr-workload-spo.md
+            - name: Microsoft Copilot
+              href: m365-dr-workload-copilot.md
             - name: Microsoft Teams
               href: m365-dr-workload-teams.md
             - name: Microsoft Defender for Office P1
