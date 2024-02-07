@@ -45,13 +45,11 @@ You turn on or turn off Safe Attachments for Office 365 for SharePoint, OneDrive
 
 - To turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Microsoft Defender portal. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
 
-- To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) or [SharePoint Administrator](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) roles in Microsoft Entra ID.
+- To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) or [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) roles in Microsoft Entra ID.
 
 - Verify that audit logging is enabled for your organization (it's on by default). For instructions, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
 - Allow up to 30 minutes for the settings to take effect.
-
-<a name='step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams'></a>
 
 ## Step 1: Use the Microsoft Defender portal to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 
@@ -93,8 +91,6 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 - People can still delete malicious files.
 
 For detailed syntax and parameter information, see [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
-
-<a name='step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files'></a>
 
 ## Step 3 (Recommended) Use the Microsoft Defender portal to create an alert policy for detected files
 
