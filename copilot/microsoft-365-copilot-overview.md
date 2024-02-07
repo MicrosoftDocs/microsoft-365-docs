@@ -95,7 +95,7 @@ To learn more, see [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-
 
 ## Availability
 
-Copilot for Microsoft 365 is an add-on plan with the following licensing prerequisites:
+Copilot for Microsoft 365 is an add-on plan with one of the following licensing prerequisites:
 
 - Microsoft 365 E5
 - Microsoft 365 E3

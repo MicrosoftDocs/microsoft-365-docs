@@ -74,7 +74,7 @@ To use Microsoft Copilot for Microsoft 365 with Microsoft Whiteboard, you must h
 
 ## License requirements
 
-Copilot for Microsoft 365 is an add-on plan with the one of the following licensing prerequisites:
+Copilot for Microsoft 365 is an add-on plan with one of the following licensing prerequisites:
 
 - Microsoft 365 E5
 - Microsoft 365 E3
