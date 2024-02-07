@@ -128,4 +128,11 @@ This is a list of some common sender addresses, without any claim to completenes
 - viva-noreply@microsoft.com
 - winhealth-noreply@microsoft.com
 
+In addition, several domains and subdomains may be considered for sending notifications in general:
 
+- email.microsoft.com
+- mail.support.microsoft.com
+- messaging.microsoft.com
+- microsoftsupport.com
+- notifications.microsoft.com
+- notify.microsoft.com
