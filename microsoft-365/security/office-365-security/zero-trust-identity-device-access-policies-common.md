@@ -70,7 +70,7 @@ For more information about roles and permissions, see the article [Microsoft Ent
 
 ### User registration
 
-Ensure your users register for multifactor authentication prior to requiring its use. If you have licenses that include Microsoft Entra ID P2, you can use the [MFA registration policy within Microsoft Entra ID Protection](/entra/id-protection/howto-identity-protection-configure-mfa-policyy) to require that users register. We provide [communication templates](https://aka.ms/mfatemplates), you can download and customize, to promote registration.
+Ensure your users register for multifactor authentication prior to requiring its use. If you have licenses that include Microsoft Entra ID P2, you can use the [MFA registration policy within Microsoft Entra ID Protection](/entra/id-protection/howto-identity-protection-configure-mfa-policy) to require that users register. We provide [communication templates](https://aka.ms/mfatemplates), you can download and customize, to promote registration.
 
 ### Groups
 
