@@ -139,8 +139,6 @@ Microsoft 365 for enterprise is designed for large organizations to empower ever
 
 This section provides an overview of the Microsoft 365 services and capabilities that are important for Zero Trust identity and device access.
 
-<a name='azure-ad'></a>
-
 ### Microsoft Entra ID
 
 Microsoft Entra ID provides a full suite of identity management capabilities. We recommend using these capabilities to secure access.

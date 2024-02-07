@@ -51,8 +51,6 @@ You turn on or turn off Safe Attachments for Office 365 for SharePoint, OneDrive
 
 - Allow up to 30 minutes for the settings to take effect.
 
-<a name='step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams'></a>
-
 ## Step 1: Use the Microsoft Defender portal to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section. Or, to go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
@@ -93,8 +91,6 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 - People can still delete malicious files.
 
 For detailed syntax and parameter information, see [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
-
-<a name='step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files'></a>
 
 ## Step 3 (Recommended) Use the Microsoft Defender portal to create an alert policy for detected files
 

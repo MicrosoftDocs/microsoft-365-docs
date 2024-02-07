@@ -64,8 +64,6 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
     - **Security Reader**
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-<a name='campaigns-page-in-the-microsoft-365-defender-portal'></a>
-
 ## Campaigns page in the Microsoft Defender portal
 
 To open the **Campaigns** page in the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Campaigns**. Or, to go directly to the **Campaigns** page, use <https://security.microsoft.com/campaigns>.
