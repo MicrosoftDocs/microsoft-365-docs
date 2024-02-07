@@ -96,7 +96,7 @@ In general you need to take the following steps:
   - Fedora 33 or higher
   - Alma 8 or higher
   - Rocky 8 or higher
-  - Mariner
+  - Mariner2
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
