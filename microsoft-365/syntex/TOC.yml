@@ -213,6 +213,15 @@
         - name: Troubleshoot a request 
           href: esignature-troubleshoot.md
 
+    - name: Autofill columns
+      items: 
+        - name: Overview 
+          href: autofill-overview.md
+        - name: Admin setup 
+          href: autofill-setup.md
+        - name: Translate documents 
+          href: autofill.md
+
     - name: Optical character recognition 
       items: 
         - name: Overview 
