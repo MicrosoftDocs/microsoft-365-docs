@@ -3812,7 +3812,7 @@
      },
      {
       "source_path": "microsoft-365/security/intelligence/cybersecurity-industry-partners.md",
-      "redirect_url": "/microsoft-365/security/defender/cybersecurity-industry-partners",
+      "redirect_url": "/microsoft-365/security/defender/virus-initiative-criteria",
       "redirect_document_id": false
      },
      {
@@ -3823,6 +3823,11 @@
      {
       "source_path": "microsoft-365/security/intelligence/malware-naming.md",
       "redirect_url": "/microsoft-365/security/defender/malware-naming",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/intelligence/microsoft-threat-actor-naming.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-threat-actor-naming",
       "redirect_document_id": false
      },
      {
