@@ -23,7 +23,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 01/17/2024
+ms.date: 02/07/2024
 ---
 
 # Frontline team collaboration
@@ -186,6 +186,7 @@ You can also set up shared mailboxes to allow for incoming mail from customers (
 
 ## Learn more about Teams capabilities for specific industries
 
-- [Teams for Retail](teams-for-retail-landing-page.md)
+- [Teams for Financial Services](teams-for-financial-services.mc)
 - [Teams for Healthcare](teams-in-hc.md)
 - [Teams for Manufacturing](teams-for-manufacturing.md)
+- [Teams for Retail](teams-for-retail-landing-page.md)

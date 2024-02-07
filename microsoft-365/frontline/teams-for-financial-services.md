@@ -24,7 +24,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 
+ms.date: 02/07/2024
 ---
 
 # Get started with Microsoft 365 for Financial Services
@@ -51,9 +51,9 @@ Microsoft 365 and Teams offer capabilities that help financial services organiza
 
 Bring associates and management together across branches to collaborate and streamline operations with Teams and Teams apps.
 
-**Key apps and capabilities:** Shifts, Walkie Talkie, Tasks, Approvals, Praise, Lists, Updates, Chat, Files
+**Key apps and capabilities:** Shifts, Walkie Talkie, Tasks, Approvals, Praise, Lists, Updates, Viva Connections, Chat, Files
 
-**Additional services:** Viva Connections, SharePoint, Power Platform and Power Apps
+**Additional services:** SharePoint, Power Platform and Power Apps
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
@@ -75,9 +75,9 @@ More information: [Simplify business processes](simplify-business-processes.md)
 
 Financial services organizations have unique needs due to the high knowledge bases of frontline staff. From numeracy skills to up-to-date knowledge of company and governmental regulations, make sure your workforce is prepared with a strong onboarding and training process.
 
-**Key apps and capabilities:** Lists, meetings
+**Key apps and capabilities:** Lists, Viva Learning, Viva Connections, Viva Engage, meetings
 
-**Additional services:** Viva Learning, Viva Connections, SharePoint, Viva Engage
+**Additional services:** SharePoint
 
 More information: [Training and onboarding](flw-onboarding-training.md)
 
@@ -85,12 +85,11 @@ More information: [Training and onboarding](flw-onboarding-training.md)
 
 Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Viva Connections, and Viva Engage.
 
-**Additional services:** SharePoint, Viva Connections, Viva Engage
+**Key apps and capabilities:** Viva Connections, Viva Engage, meetings
+
+**Additional services:** SharePoint
 
 More information: [Corporate communications with frontline workers](flw-corp-comms.md)
-
-<!-- > [!NOTE]
-> For all these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.-->
 
 > [!NOTE]
 > For all these capabilities, users must have an appropriate license. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to learn more about using Microsoft 365 for frontline workers in combination with other licenses. For a detailed comparison of what's included in Microsoft 365 enterprise plans, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
@@ -115,7 +114,7 @@ For financial services environments, the following apps and services can help yo
 | Tasks | Help employees know what they should focus on when not with customers by assigning tasks. Your corporate office can use [task publishing](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
 | Updates | Check in on recurring or one-off priorities such as daily counts. Managers can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 | Virtual Appointments| Schedule and manage virtual consultations with clients, view analytics, and more, in the Virtual Appointments app.| [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [What is the Virtual Appointments app?](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) |
-| Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Employees can view a tailored news feed from your organization and a personalized dashboard with the resources they need. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
+| Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Employees can view a tailored news feed from your organization and a personalized dashboard with the resources they need. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | Use [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Overview of Viva Learning](/viva/learning/overview-viva-learning) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
 | Viva Engage | Connect your entire organization and enable communication across departments and regions with Viva Engage. | [Overview of Viva Engage](/viva/engage/overview) | [Use Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284) |
 

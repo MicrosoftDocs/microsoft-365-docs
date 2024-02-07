@@ -24,7 +24,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 
+ms.date: 02/07/2024
 ---
 
 # Get started with Microsoft 365 for Manufacturing
@@ -44,9 +44,6 @@ Microsoft 365 and Microsoft Teams offers capabilities that help manufacturing or
 - [Increase operational efficiency](#increase-operational-efficiency)
 - [Onboard and train employees](#onboard-and-train-employees)
 
-<!-- > [!NOTE]
-> For all of these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.-->
-
 > [!NOTE]
 > For all these capabilities, users must have an appropriate license. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to learn more about using Microsoft 365 for frontline workers in combination with other licenses. For a detailed comparison of what's included in Microsoft 365 enterprise plans, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
 
@@ -54,9 +51,9 @@ Microsoft 365 and Microsoft Teams offers capabilities that help manufacturing or
 
 Empower your frontline workers to engage with each other and your broader organization using communication tools and platforms.
 
-**Key apps and capabilities:** Walkie Talkie, Praise, Chat
+**Key apps and capabilities:** Walkie Talkie, Praise, Viva Connections, Viva Engage, Chat
 
-**Additional services:** Viva Connections, Viva Engage, SharePoint
+**Additional services:** SharePoint
 
 More information: [Frontline team collaboration](flw-team-collaboration.md) and [Corporate communications](flw-corp-comms.md)
 
@@ -77,7 +74,7 @@ More information: [Frontline team collaboration](flw-team-collaboration.md) and 
 - Track key performance indicators (KPIs) with Power BI reports
 - Keep track of everything else with Lists
 
-**Key features and apps:** Lists
+**Key apps:** Lists
 
 **Additional services:** Power Platform with Power Apps and Power BI
 
@@ -87,7 +84,9 @@ More information: [Simplify business processes](simplify-business-processes.md)
 
 Make sure that all your workers have the knowledge and capabilities they need to succeed.
 
-**Additional services:** Viva Learning, Viva Connections, SharePoint, Stream, Viva Engage
+**Key apps:** Viva Learning, Viva Connections, Viva Engage
+
+**Additional services:** SharePoint
 
 More information: [Training and onboarding](flw-onboarding-training.md)
 

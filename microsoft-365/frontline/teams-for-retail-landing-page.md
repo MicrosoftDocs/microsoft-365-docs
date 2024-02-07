@@ -24,7 +24,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 
+ms.date: 02/07/2024
 ---
 
 # Get started with Microsoft 365 for retail organizations
@@ -68,9 +68,9 @@ Watch the following video to see how you can simplify business processes in reta
 
 Bring in-store associates and management together to collaborate and streamline operations with Teams and Teams apps.
 
-**Key apps and capabilities:** Shifts, Walkie Talkie, Tasks, Approvals, Praise, Lists, Updates, Chat, Files 
+**Key apps and capabilities:** Shifts, Walkie Talkie, Tasks, Approvals, Praise, Lists, Updates, Viva Connections, Chat, Files
 
-**Additional services:** Outlook, Viva Connections, SharePoint, Power Platform and Power Apps
+**Additional services:** Outlook, SharePoint, Power Platform and Power Apps
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
@@ -78,9 +78,9 @@ More information: [Frontline team collaboration](flw-team-collaboration.md)
 
 Staff members can communicate and collaboration across multiple stores in a region, or with headquarters using the same tools and apps you use within your store.
 
-**Key apps and capabilities:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
+**Key apps and capabilities:** Shifts, Walkie Talkie, Tasks, Approvals, Praise, Lists, Updates, Viva Connections, Viva Engage, Chat, Files
 
-**Additional services:** Outlook, Viva Connections, Viva Engage, SharePoint, Power Platform and Power Apps
+**Additional services:** Outlook, SharePoint, Power Platform and Power Apps
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
@@ -110,7 +110,9 @@ More information: [Simplify business processes](simplify-business-processes.md)
 
 Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Viva Engage, and Viva Connections.
 
-**Additional services:** Viva Connections, SharePoint, Viva Engage
+**Key apps:** Viva Connections, Viva Engage
+
+**Additional services:** SharePoint
 
 More information: [Corporate communications with frontline workers](flw-corp-comms.md)
 
@@ -118,14 +120,11 @@ More information: [Corporate communications with frontline workers](flw-corp-com
 
 Make new employee onboarding a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.
 
-**Key apps and capabilities:** Lists, meetings
+**Key apps and capabilities:** Lists, Viva Learning, Viva Engage, meetings
 
-**Additional services:** Viva Learning, SharePoint, Viva Engage
+**Additional services:** SharePoint
 
 More information: [Onboard new employees](flw-onboarding-training.md)
-
-<!-- > [!NOTE]
-> For all of these capabilities, users must have an appropriate license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3, Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business Standard, Business Premium, A3, A5, E3, and E5 are all supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). See [Licensing options for frontline workers](flw-licensing-options.md) for more about using Microsoft 365 for frontline workers in combination with other licenses.-->
 
 > [!NOTE]
 > For all these capabilities, users must have an appropriate license. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to learn more about using Microsoft 365 for frontline workers in combination with other licenses. For a detailed comparison of what's included in Microsoft 365 enterprise plans, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
@@ -152,7 +151,7 @@ For retail environments, the following apps and services can help you transform 
 | Updates | Check in on recurring or one-off priorities such as daily cleaning. Managers can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 | Walkie Talkie | Instant push-to-talk communication that's not constrained by geography like standard two-way radios.| [Manage the Walkie Talkie app](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
 | Virtual Appointments|Schedule and manage virtual fittings and consultations, view analytics, and more, in the Virtual Appointments app.| [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [What is the Virtual Appointments app?](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) |
-| Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Retail associates can view a tailored news feed from your organization and a personalized dashboard with the resources they need. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
+| Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Retail associates can view a tailored news feed from your organization and a personalized dashboard with the resources they need. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | Use [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Provide training when needed, right in the flow of their work.| [Overview of Viva Learning](/viva/learning/overview-viva-learning) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
 | Viva Engage | Connect your entire organization and enable communication across departments and regions with Viva Engage. | [Overview of Viva Engage](/viva/engage/overview) | [Use Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284) |
 
