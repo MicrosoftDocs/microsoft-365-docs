@@ -23,12 +23,12 @@ ms.collection:
   - highpri
   - m365initiative-meetings
   - m365-virtual-appointments 
-ms.reviewer: hafarmer
+ms.reviewer: revathim
 description: Learn about the join experience for Teams Virtual Appointments on browsers. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/01/2023
+ms.date: 02/06/2024
 ---
 
 # Manage the join experience for Teams Virtual Appointments on browsers
@@ -48,7 +48,7 @@ Currently, browser join is available for appointments that are scheduled through
 
 ## Set up browser join
 
-### Appointments scheduled through the Virtual Appointments app or the Bookings app
+### Appointments scheduled through the Virtual Appointments app
 
 Schedulers in your organization can turn on this feature for specific appointment types and for scheduled individual appointments.
 
@@ -56,16 +56,15 @@ After this feature is turned on, the confirmation email or SMS text that’s sen
 
 #### Turn on browser join for an appointment type
 
-1. Do one of the following:
-    1. In the Virtual Appointments app, go to the **Manage** tab > **Appointment types**, and then under **Scheduled**, select an appointment type.
-    1. In the Bookings app, go to **Settings** > **Appointment types**, and then under **Scheduled**, select an appointment type.
+1. In the Virtual Appointments app, go to the **Manage** tab > **Services**, and then under **Scheduled**, select an appointment type.
+
 1. Turn on **Have attendees join from a web browser**. Doing this enables browser join for all appointments of this type.
 
     :::image type="content" source="media/browser-join-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types." lightbox="media/browser-join-appointment-type.png":::
 
 #### Turn on browser join for an individual appointment
 
-On the **Bookings schedule** tab of the Virtual Appointments app or in the Bookings app, select **New booking**, and then turn on **Have attendees join from a browser**.
+On the **Schedule** tab of the Virtual Appointments app, select **New appointment**, and then turn on **Have attendees join from a browser**.
 
 :::image type="content" source="media/browser-join-bookings-form.png" alt-text="Screenshot of the Have attendees join from a browser setting on the new booking form." lightbox="media/browser-join-bookings-form.png":::
 

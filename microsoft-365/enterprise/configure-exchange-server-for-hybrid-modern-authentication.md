@@ -3,7 +3,7 @@ title: "How to configure Exchange Server on-premises to use Hybrid Modern Authen
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/19/2023
+ms.date: 02/01/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -21,6 +21,7 @@ description: Learn how to configure an Exchange Server on-premises to use Hybrid
 ms.custom:
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ---
 
 # How to configure Exchange Server on-premises to use Hybrid Modern Authentication
@@ -83,15 +84,16 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 
     Ensure the URLs clients might connect to are listed as HTTPS service principal names in Microsoft Entra ID. In case EXCH is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the Microsoft Entra ID of all the tenants in hybrid with EXCH.
 
-2. Next, connect to Microsoft Entra ID with [these instructions](connect-to-microsoft-365-powershell.md).
+2. Next, connect to Microsoft Entra ID with [these instructions](connect-to-microsoft-365-powershell.md). To consent to the required permissions, run the following command:
 
-    > [!NOTE]
-    > You need to use the _Connect-MsolService_ option from this page to be able to use the following command.
+   ```powershell
+   Connect-MgGraph -Scopes Application.Read.All, Application.ReadWrite.All.
+   ```
 
 3. For your Exchange-related URLs, type the following command:
 
    ```powershell
-   Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
+   Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'" | select -ExpandProperty ServicePrincipalNames
    ```
 
    Take note of (and screenshot for later comparison) the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises that are missing, those specific records should be added to this list.
@@ -99,10 +101,11 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 4. If you don't see your internal and external MAPI/HTTP, EWS, ActiveSync, OAB, and Autodiscover records in this list, you must add them using the following command (the example URLs are `mail.corp.contoso.com` and `owa.contoso.com`, but you should replace the example URLs with your own):
 
    ```powershell
-   $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
-   $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
-   $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
-   Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+   $x= Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
+   $ServicePrincipalUpdate =@(
+   "https://mail.corp.contoso.com/","https://owa.contoso.com/"
+   )
+   Update-MgServicePrincipal -ServicePrincipalId $x.Id -ServicePrincipalNames $ServicePrincipalUpdate
    ```
 
 5. Verify your new records were added by running the `Get-MsolServicePrincipal` command from step 2 again, and looking through the output. Compare the list / screenshot from before to the new list of SPNs. You might also take a screenshot of the new list for your records. If you are successful, you'll see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
