@@ -40,7 +40,7 @@ Users don't need Defender for Endpoint installed on their local devices to get S
 
   Safe Documents isn't included in Microsoft Defender for Office 365 licensing plans.
 
-  For more information, see [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
+  For more information, see [Product names and service plan identifiers for licensing](/entra/identity/users/licensing-service-plan-reference).
 
 - They're using Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus) version 2004 or later.
 
@@ -109,7 +109,7 @@ For more information, see the following articles:
 
 - [View Microsoft 365 licenses and services with PowerShell](/microsoft-365/enterprise/view-licenses-and-services-with-microsoft-365-powershell)
 - [View Microsoft 365 account license and service details with PowerShell](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
-- [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
+- [Product names and service plan identifiers for licensing](/entra/identity/users/licensing-service-plan-reference)
 
 ### Onboard to the Microsoft Defender for Endpoint service to enable auditing capabilities
 

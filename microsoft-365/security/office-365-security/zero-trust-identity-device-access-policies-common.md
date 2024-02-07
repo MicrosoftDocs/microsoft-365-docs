@@ -66,15 +66,15 @@ Here's a one-page PDF summary:
 - Users who will manage app protection and device compliance policies must be able to sign in to Intune as an **Intune Administrator** or **Global Administrator**.
 - Those users who only need to view configurations can be assigned the **Security Reader** or **Global Reader** roles.
 
-For more information about roles and permissions, see the article [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
+For more information about roles and permissions, see the article [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
 ### User registration
 
-Ensure your users register for multifactor authentication prior to requiring its use. If you have licenses that include Microsoft Entra ID P2, you can use the [MFA registration policy within Microsoft Entra ID Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) to require that users register. We provide [communication templates](https://aka.ms/mfatemplates), you can download and customize, to promote registration.
+Ensure your users register for multifactor authentication prior to requiring its use. If you have licenses that include Microsoft Entra ID P2, you can use the [MFA registration policy within Microsoft Entra ID Protection](/entra/id-protection/howto-identity-protection-configure-mfa-policy) to require that users register. We provide [communication templates](https://aka.ms/mfatemplates), you can download and customize, to promote registration.
 
 ### Groups
 
-All Microsoft Entra groups used as part of these recommendations must be created as a **Microsoft 365** group *not a Security group*. This requirement is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint later on. For more information, see the article [Learn about groups and access rights in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-learn-about-groups#group-types)
+All Microsoft Entra groups used as part of these recommendations must be created as a **Microsoft 365** group *not a Security group*. This requirement is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint later on. For more information, see the article [Learn about groups and access rights in Microsoft Entra ID](/entra/fundamentals/concept-learn-about-groups#group-types)
 
 ### Assigning policies
 
@@ -90,11 +90,11 @@ Here's an example of group assignment and exclusions for requiring MFA after you
 
 Be careful when applying higher levels of protection to groups and users. **The goal of security isn't to add unnecessary friction** to the user experience. For example, members of the *Top Secret Project Buckeye group* will be required to use MFA every time they sign in, even if they aren't working on the specialized security content for their project. Excessive security friction can lead to fatigue.
 
-You may consider enabling [passwordless authentication methods](/azure/active-directory/authentication/concept-authentication-passwordless), like Windows Hello for Business or FIDO2 security keys to reduce some friction created by certain security controls.
+You may consider enabling [passwordless authentication methods](/entra/identity/authentication/concept-authentication-passwordless), like Windows Hello for Business or FIDO2 security keys to reduce some friction created by certain security controls.
 
 ### Emergency access accounts
 
-All organizations should have at least one emergency access account that is monitored for use and excluded from policies. **These accounts are only used in case all other administrator accounts and authentication methods become locked out or otherwise unavailable**. More information can be found in the article, [Manage emergency access accounts in Microsoft Entra ID](/azure/active-directory/roles/security-emergency-access).
+All organizations should have at least one emergency access account that is monitored for use and excluded from policies. **These accounts are only used in case all other administrator accounts and authentication methods become locked out or otherwise unavailable**. More information can be found in the article, [Manage emergency access accounts in Microsoft Entra ID](/entra/identity/role-based-access-control/security-emergency-access).
 
 ### Exclusions
 
@@ -273,7 +273,7 @@ Once your app protection and device compliance policies are created in Intune, y
 
 ### Require MFA based on sign-in risk
 
-Follow the guidance in the article [Common Conditional Access policy: Sign-in risk-based multifactor authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) to create a policy to require multifactor authentication based on sign-in risk.
+Follow the guidance in the article [Common Conditional Access policy: Sign-in risk-based multifactor authentication](/entra/identity/conditional-access/howto-conditional-access-policy-risk) to create a policy to require multifactor authentication based on sign-in risk.
 
 When configuring your policy, use the following risk levels.
 
@@ -284,19 +284,19 @@ When configuring your policy, use the following risk levels.
 
 ### Block clients that don't support multifactor authentication
 
-Follow the guidance in the article [Common Conditional Access policy: Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) to block legacy authentication.
+Follow the guidance in the article [Common Conditional Access policy: Block legacy authentication](/entra/identity/conditional-access/howto-conditional-access-policy-block-legacy) to block legacy authentication.
 
 ### High risk users must change password
 
-Follow the guidance in the article [Common Conditional Access policy: User risk-based password change](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user) to require users with compromised credentials to change their password.
+Follow the guidance in the article [Common Conditional Access policy: User risk-based password change](/entra/identity/conditional-access/howto-conditional-access-policy-risk-user) to require users with compromised credentials to change their password.
 
-Use this policy along with [Microsoft Entra password protection](/azure/active-directory/authentication/concept-password-ban-bad), which detects and blocks known weak passwords and their variants in addition to terms specific to your organization. Using Microsoft Entra password protection ensures that changed passwords are stronger.
+Use this policy along with [Microsoft Entra password protection](/entra/identity/authentication/concept-password-ban-bad), which detects and blocks known weak passwords and their variants in addition to terms specific to your organization. Using Microsoft Entra password protection ensures that changed passwords are stronger.
 
 ### Require approved apps and app protection policies
 
 **You must create a Conditional Access policy** to enforce the app protection policies created in Intune. Enforcing app protection policies requires a Conditional Access policy **and** a corresponding app protection policy.
 
-To create a Conditional Access policy that requires approved apps and APP protection, follow the steps in [Require approved client apps or app protection policy with mobile devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection). This policy only allows accounts within mobile apps protected by app protection policies to access Microsoft 365 endpoints.
+To create a Conditional Access policy that requires approved apps and APP protection, follow the steps in [Require approved client apps or app protection policy with mobile devices](/entra/identity/conditional-access/howto-policy-approved-app-or-app-protection). This policy only allows accounts within mobile apps protected by app protection policies to access Microsoft 365 endpoints.
 
 Blocking legacy authentication for other client apps on iOS and Android devices ensures that these clients can't bypass Conditional Access policies. If you're following the guidance in this article, you've already configured [Block clients that don't support modern authentication](#block-clients-that-dont-support-multifactor-authentication).
 
@@ -331,7 +331,7 @@ Organizations using the [Subscription Activation](/windows/deployment/windows-10
 
 ### Always require MFA
 
-Follow the guidance in the article [Common Conditional Access policy: Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) to require your specialized security level users to always perform multifactor authentication.
+Follow the guidance in the article [Common Conditional Access policy: Require MFA for all users](/entra/identity/conditional-access/howto-conditional-access-policy-all-users-mfa) to require your specialized security level users to always perform multifactor authentication.
 
 > [!WARNING]
 > When configuring your policy, select the group that requires specialized security and use that **instead of selecting All users**.
