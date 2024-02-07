@@ -186,7 +186,7 @@ You can also set up shared mailboxes to allow for incoming mail from customers (
 
 ## Learn more about Teams capabilities for specific industries
 
-- [Teams for Financial Services](teams-for-financial-services.mc)
+- [Teams for Financial Services](teams-for-financial-services.md)
 - [Teams for Healthcare](teams-in-hc.md)
 - [Teams for Manufacturing](teams-for-manufacturing.md)
 - [Teams for Retail](teams-for-retail-landing-page.md)
