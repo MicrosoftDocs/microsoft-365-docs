@@ -3736,29 +3736,88 @@
        "redirect_document_id": false
      },
      {
-      "source_path": "microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files.md",
-      "redirect_url": "/microsoft-365/community/sharepoint-security-a-team-effort",
-      "redirect_document_id": false
+       "source_path": "microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files.md",
+       "redirect_url": "/microsoft-365/community/sharepoint-security-a-team-effort",
+       "redirect_document_id": false
      },
      {
-      "source_path": "microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft",
-      "redirect_document_id": true
+       "source_path": "microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md",
+       "redirect_url": "/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft",
+       "redirect_document_id": true
      },
      {
-      "source_path": "microsoft-365/security/office-365-security/email-authentication-anti-spoofing.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-spf-configure",
-      "redirect_document_id": false
+       "source_path": "microsoft-365/security/office-365-security/email-authentication-anti-spoofing.md",
+       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-spf-configure",
+       "redirect_document_id": false
      },
      {
-      "source_path": "microsoft-365/security/office-365-security/email-authentication-dkim-support-about.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dkim-configure",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/email-authentication-dmarc-reports.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dmarc-configure",
-      "redirect_document_id": false
-    }
+       "source_path": "microsoft-365/security/office-365-security/email-authentication-dkim-support-about.md",
+       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dkim-configure",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/office-365-security/email-authentication-dmarc-reports.md",
+       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dmarc-configure",
+       "redirect_document_id": false
+     },
+       "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/deploy-and-manage-using-group-policy.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-deploy-manage-gpo",
+       "redirect_document_id": true
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/deploy-and-manage-using-intune.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-deploy-manage-intune",
+       "redirect_document_id": true
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/deploy-manage-removable-storage-group-policy.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-deploy-manage-gpo",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/deploy-manage-removable-storage-intune.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-deploy-manage-intune",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/printer-protection.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-policies",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/printer-protection-frequently-asked-questions.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-policies",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/printer-protection-overview.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
+       "redirect_document_id": true
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/mde-device-control-device-installation.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-block-at-first-sight-bafs.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/defender-endpoint-demonstrations",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control-faq.md",
+       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-faq",
+       "redirect_document_id": false
+     }
    ]
  }

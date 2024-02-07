@@ -66,8 +66,6 @@ For more information about compromised _connectors_ and how to remove them from 
 
 - A sender exceeding the outbound email limits is an indicator of a compromised account. Before you follow the procedures in this article to remove a user from the **Restricted entities** page, be sure to follow the required steps to regain control of the account as described in [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
 
-<a name='remove-a-user-from-the-restricted-entities-page-in-the-microsoft-365-defender-portal'></a>
-
 ## Remove a user from the Restricted entities page in the Microsoft Defender portal
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Restricted entities**. Or, to go directly to the **Restricted entities** page, use <https://security.microsoft.com/restrictedentities>.
