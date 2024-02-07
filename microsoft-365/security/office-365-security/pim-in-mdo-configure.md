@@ -67,8 +67,6 @@ In the Microsoft Defender portal, create a custom role group that contains the p
 3. Name your group to reflect its purpose such as 'Search and Purge PIM'.
 4. Don't add members, simply save the group and move on to the next part!
 
-<a name='create-the-security-group-in-azure-ad-for-elevated-permissions'></a>
-
 ### Create the security group in Microsoft Entra ID for elevated permissions
 
 1. Browse back to the [Microsoft Entra Admin Center](https://aad.portal.azure.com/) and navigate to **Microsoft Entra ID** > **Groups** > **New Group**.

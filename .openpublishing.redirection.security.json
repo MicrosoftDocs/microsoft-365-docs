@@ -3796,6 +3796,11 @@
       "redirect_document_id": false
      },
      {
+      "source_path": "microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-block-at-first-sight-bafs.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/defender-endpoint-demonstrations",
+      "redirect_document_id": false
+     },
+     {
       "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control-faq.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-faq",
       "redirect_document_id": false
