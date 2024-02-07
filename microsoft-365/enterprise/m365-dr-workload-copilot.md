@@ -18,7 +18,15 @@ ms.collection:
 - must-keep
 ---
 
-# Data Residency for Microsoft Copilot
+# Data Residency for Copilot for Microsoft 365
+
+## Overview
+
+Service documentation: [Microsoft Copilot for Microsoft 365 overview](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-overview) and [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-privacy)
+
+Capability Summary: Microsoft Copilot for Microsoft 365 is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 apps that you use every day, such as Word, Excel, PowerPoint, Outlook, and Teams. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
+The following applications provide the ability to interact with Copilot for Microsoft 365:  Microsoft Word, PowerPoint, Loop, Outlook, Teams (Chat, Meetings, Calls, Whiteboard) and OneNote.  The interactions with these applications, as well as the related semantic index, will be stored in the relevant _Geography_. Copilot interaction data for all stated applications is stored within the Microsoft Teams data storage infrastructure.
+
 
 ## Data Residency Commitments Available
 
