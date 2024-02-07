@@ -233,13 +233,13 @@ Get-MgUser -ConsistencyLevel eventual -Count userCount -Search '"UserPrincipalNa
 To modify the **PreferredDataLocation** value for a cloud-only user object, use the following syntax in Microsoft Graph PowerShell:
 
 ```powershell
-Set-MgUser -UserID <UserID> -PreferredDataLocation <GeoLocationCode>
+Update-MgUser -UserID <UserID> -PreferredDataLocation <GeoLocationCode>
 ```
 
 For example, to set the **PreferredDataLocation** value to the European Union (EUR) geo for the user michelle@contoso.onmicrosoft.com, get the UserID value from the last command output and run the following command:
 
 ```powershell
-Set-MgUser -UserID "916a6a08-b9d0-44b6-870f-562d8358a314" -PreferredDataLocation EUR
+Update-MgUser -UserID michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
 > [!NOTE]
@@ -291,10 +291,26 @@ To create a new mailbox in a specific _Geographic_ location, you need to do eith
 To create a new cloud-only licensed user (not Microsoft Entra Connect synchronized) in a specific _Geographic_ location, use the following syntax in Azure AD PowerShell:
 
 ```powershell
-$user = New-MgUser -DisplayName "<display name>" -GivenName "<first name>" -SurName "<last name>" -UserPrincipalName <sign-in name> -AccountEnabled -MailNickName <mailbox name> -PasswordProfile @{ ForceChangePasswordNextSignIn = $true; Password = "<temp password>" } -UsageLocation <ISO 3166-1 alpha-2 country code> 
+$params = @{
+	accountEnabled = $true
+	displayName = "<display name>"
+	mailNickname = "<mailbox name>"
+	userPrincipalName = "<sign-in name>"
+	usageLocation = "<ISO 3166-1 alpha-2 country code>"
+	passwordProfile = @{
+		forceChangePasswordNextSignIn = $true
+		password = "<temp password>"
+	}
+}
+
+$user = New-MgUser -BodyParameter $params
+
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq '<license SKU ID>'
 Set-MgUserLicense -UserId $user.Id -AddLicenses @{SkuId = $EmsSku.SkuId} -RemoveLicenses @()
 ```
+
+> [!TIP]
+> The `usageLocation` is A two-letter country code (ISO standard 3166). Required for users that are assigned licenses due to legal requirements to check for availability of services in countries. Examples include: US, JP, and GB.
 
 This example creates a new user account for Elizabeth Brunner with the following values:
 
@@ -304,14 +320,27 @@ This example creates a new user account for Elizabeth Brunner with the following
 - Display name: Elizabeth Brunner
 - Password: Manually add password in the form of a hashtable
 - License: `contoso:ENTERPRISEPREMIUM` (E5)
-- Location: Australia (AUS)
+- Location: Australia (AU)
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md) using Microsoft Graph Powershell.
 
 After you connect, use the following syntax to create an individual account:
 
 ```powershell
-$user = New-MgUser -DisplayName "Elizabeth Brunner" -GivenName "Elizabeth" -Surname "Brunner" -UserPrincipalName "elizabethb@contoso.onmicrosoft.com" -AccountEnabled -MailNickname "ElizabethB" -PasswordProfile @{ ForceChangePasswordNextSignIn = $true; Password = "TempPassword123" } -UsageLocation "AUS"
+$params = @{
+	accountEnabled = $true
+	displayName = "Elizabeth Brunner"
+	mailNickname = "ElizabethB"
+	userPrincipalName = "ebrunner@contoso.onmicrosoft.com"
+	usageLocation = "AU"
+	passwordProfile = @{
+		forceChangePasswordNextSignIn = $true
+		password = "xWwvJ]6NMw+bWH-d"
+	}
+}
+
+$user = New-MgUser -BodyParameter $params
+
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'ENTERPRISEPREMIUM'
 Set-MgUserLicense -UserId $user.Id -AddLicenses @{SkuId = $EmsSku.SkuId} -RemoveLicenses @()
 ```
