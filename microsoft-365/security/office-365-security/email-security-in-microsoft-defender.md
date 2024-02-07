@@ -67,7 +67,7 @@ You can use the **Submit to Microsoft** option in Explorer to report a message a
 
    :::image type="content" source="../../media/submission-panel-explorer.png" alt-text="Screenshot of the submission flyout in Threat Explorer." lightbox="../../media/submission-panel-explorer.png":::
 
-5. Select the **It appears clean** checkbox if you want to get a second opinion from Microsoft and then select **Submit**.
+5. Select the **It appears clean** checkbox if you want to get verdict from Microsoft and you're unsure. Then select **Submit**.
 
 6. Select the **I've confirmed it's clean** checkbox if you are sure that it is clean. After clicking **Next**, you can specify whether you want to create an allow entry. You can specify how many days you want the allow entry to be active, add a note if needed, and then select **Submit**.
 
