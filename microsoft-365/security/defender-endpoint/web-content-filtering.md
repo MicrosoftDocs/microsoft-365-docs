@@ -4,8 +4,9 @@ description: Use web content filtering in Microsoft Defender for Endpoint to tra
 ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
+ms.reviewer: tdoucett
 ms.localizationpriority: medium
-ms.date: 12/07/2023
+ms.date: 02/02/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -42,7 +43,7 @@ Configure policies across your device groups to block certain categories. Blocki
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and network protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see the [prerequisites](#prerequisites) section.
 
 > [!NOTE]
-> Web content filtering is restricted to browsers via process name. This means that web content filtering doesn't work when there is a local proxy application in place (such as Fiddler, ZScaler), due to the process name being masked.
+> Web content filtering does not apply policies to isolated browser sessions (i.e. Microsoft Defender Application Guard). The feature is also restricted to specific browsers via process name. This means that web content filtering doesn't work when there is a local proxy application in place (such as Fiddler, ZScaler), due to the process name being masked.
 
 ## Benefits of web content filtering
 
