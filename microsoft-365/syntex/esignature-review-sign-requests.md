@@ -1,5 +1,5 @@
 ---
-title: Review and sign a signature request using Microsoft SharePoint eSignature
+title: Review and sign a signature request using SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to review and sign electronic signature requests using Microsoft SharePoint eSignature. 
+description: Learn how to review and sign electronic signature requests using SharePoint eSignature. 
 ---
 
-# Review and sign a signature request using Microsoft SharePoint eSignature
+# Review and sign a signature request using SharePoint eSignature
 
 When a signature request is created, an email notification is sent to the recipients. The notification contains details of the request, including all recipients who are required to sign, and any signing instructions. A recipient doesn't need to have a SharePoint license or a Microsoft account to sign the request.
 
