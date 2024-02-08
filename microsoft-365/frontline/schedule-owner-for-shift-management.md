@@ -31,7 +31,7 @@ ms.date:
 
 # Schedule Owner for shift management
 
-In Shifts, there are two user personas, depending on the user's responsibilities within a team: frontline manager and frontline worker.
+In Shifts, there are two user personas, based on a user's responsibilities within a team: frontline manager and frontline worker.
 
 - **Frontline managers** are responsible for the creation and overall management of their team’s schedule and requests. They're part of the frontline workforce with managerial responsibilities. A frontline manager in Shifts requires one of the following roles:
 
@@ -42,47 +42,85 @@ In Shifts, there are two user personas, depending on the user's responsibilities
 
 ## Capabilities of each role in Shifts and Teams
 
-Here's a summary of the capabilities of each role in Shifts and in Teams.
+Each role has different capabilities in Shifts and in Teams. Here's a summary of the capabilities of each role.
 
-**In Shifts**
+### In Shifts
 
 |Capability  |Team member |Schedule owner |Team owner |
 |---------|---------|---------|---------|
-|Create, edit, and publish schedules to manage their team’s shifts assignments||✔️|✔️|
-|View and manage (approve or deny) Shifts requests||✔️|✔️|
-|Manage settings in Shifts for their teams||✔️| ✔️|
-|View and modify their team’s timesheet to process employee payrolls||✔️|✔️|
-|Manage settings in Shifts for their teams||✔️|✔️|
-|View their schedules and their team's schedules|✔️|✔️|✔️|
-|Create and cancel shift requests|✔️||
-|Clock in and out of shifts|✔️|✔️|✔️|
-|Set availability (or working preferences) in Shifts|✔️|||
+|Create, edit, and publish schedules to manage their team’s shifts assignments.||✔️|✔️|
+|View and manage (approve or deny) shift requests.||✔️|✔️|
+|Manage settings in Shifts for their teams.||✔️| ✔️|
+|View and modify their team’s timesheet to process employee payrolls.||✔️|✔️|
+|Manage settings in Shifts for their teams.||✔️|✔️|
+|View their schedules and their team's schedules.|✔️|✔️|✔️|
+|Create and cancel shift requests.|✔️||
+|Clock in and out of shifts.|✔️|✔️|✔️|
+|Set availability (or working preferences) in Shifts.|✔️|||
 
-**In Teams**
+### In Teams
 
 |Capability  |Team member  |Schedule owner |Team owner  |
 |---------|---------|---------|---------|
-|Add or remove members and guests to the team |||✔️|
-|Edit or delete a team|||✔️|
-|Archive or restore a team|||✔️|
-|Create a channel and participate in conversations|✔️|✔️|✔️|
-|Share chat and channel files|✔️|✔️|✔️|
+|Add or remove members and guests.|||✔️|
+|Edit or delete a team.|||✔️|
+|Archive or restore a team.|||✔️|
+|Create a channel and participate in conversations.|✔️|✔️|✔️|
+|Share chat and channel files.|✔️|✔️|✔️|
 
-### Scenario
+This isn't a complete list. Learn more about [team owner and member capabilities in Teams](https://support.microsoft.com/office/team-owner-member-and-guest-capabilities-in-microsoft-teams-d03fdf5b-1a6e-48e4-8e07-b13e1350ec7b).
 
-At your organization, department managers report directly to the store manager.  
+## Example scenario
 
-The store manager has more authority within your company as they oversee the hiring of department managers and store associates, help their departments on specific issues, and manage the generation of revenue within their store. On the other hand, department managers are responsible for managing the day-to-day operations and people within their department.  
+Here’s an example of how to use role assignments in Teams and Shifts for your frontline managers and workers.
 
-Thus, your organization defines that:  
+At Contoso Ltd., department managers report directly to the store manager. The store manager has more authority within the company as they oversee the hiring of department managers and store associates, help their departments on specific issues, and manage the generation of revenue within their store. Department managers, on the other hand, are responsible for managing the day-to-day operations and people within their department.
 
-- Store managers are responsible for their store's success, and only get involved in the daily department management if required. For their store's team, the store manager has a **team owner** role in Teams.  
+Based on employee responsibilities, Contoso set up their team roles as follows:
 
-- Department managers manage the day-to-day activities of their team in Shifts, and don’t require team owner privileges in Teams. Department managers have the **team member** role in Teams and **schedule owner** role in Shifts.  
+- Store managers are responsible for their store's success, and only get involved in daily department management activities if necessary. For their store's team, the store manager has a **team owner** role in Teams.  
 
-- Store associates are members of a department, and are assigned the **team member** role in Teams.  
+- Department managers manage the day-to-day activities of their team in Shifts, and don’t require team owner privileges in Teams. Although store managers have more seniority than department managers, department managers handle the scheduling of people on their teams. Department managers are assigned the **team member** role in Teams and **schedule owner** role in Shifts.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+- Store associates work in a specific department, and are assigned the **team member** role in Teams.  
+
+## Frontline manager role assignment
+
+### Team owner
+
+
+### Schedule owner
+
+As an admin, you use policies to control schedule management ownership in your organization. You manage these policies by using the following PowerShell cmdlets:
+
+- [New-CsTeamsShiftsPolicy](/powershell/module/teams/new-csteamsshiftspolicy?view=teams-ps)
+- [Get-CsTeamsShiftsPolicy](/powershell/module/teams/get-csteamsshiftspolicy?view=teams-ps)
+- [Set-CsTeamsShiftsPolicy](/powershell/module/teams/set-csteamsshiftspolicy?view=teams-ps)
+- [Grant-CsTeamsShiftsPolicy](/powershell/module/teams/grant-csteamsshiftspolicy?view=teams-ps)
+- [Remove-CsTeamsShiftsPolicy](/powershell/module/teams/remove-csteamsshiftspolicy?view=teams-ps)
+
+1. Create a new policy using the [New-CsTeamsShiftsPolicy](/powershell/module/teams/new-csteamsshiftspolicy?view=teams-ps) PowerShell cmdlet.
+
+In this example, we create a new policy named ScheduleOwnerPolicy with the Schedule Owner feature turned on.
+
+```powershell
+New-CsTeamsShiftsPolicy –Identity ScheduleOwnerPolicy  -EnableScheduleOwnerPermissions $true -AccessType UnrestrictedAccess_TeamsApp
+```
+
+1. Assign the policy to a specific user or group of users by using the [Grant-CsTeamsShiftsPolicy](/powershell/module/teams/grant-csteamsshiftspolicy?view=teams-ps) PowerShell cmdlet.
+
+In this example, we assign a policy named ScheduleOwnerPolicy to a user named remy@contoso.com.
+
+```powershell
+Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName ScheduleOwnerPolicy
+```
+
+In this example, we assign a policy named ScheduleOwnerPolicy to a group specified by its object ID.
+
+```powershell
+Grant-CsTeamsShiftsPolicy -Group 83d3ca56-50e9-46fb-abd4-4f66939188f8 -PolicyName ScheduleOwnerPolicy
+
+++++++++++++++++++++
 
 ## Overview
 
