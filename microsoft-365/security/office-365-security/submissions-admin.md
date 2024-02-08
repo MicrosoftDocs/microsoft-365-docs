@@ -100,7 +100,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email bypassed scanning due to user or organization policies or override.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value to get a verdict from Microsoft when you're unsure, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -154,7 +154,7 @@ After a few moments, the block entry is available on the **Domains & addresses**
    - **File**: Select :::image type="icon" source="../../media/m365-cc-sc-import-icon.png" border="false"::: **Browse files** to find and select the file to submit.
 
    - **Why are you submitting this email attachment to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value to get a verdict from Microsoft when you're unsure, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -206,7 +206,7 @@ After a few moments, the block entry is available on the **Files** tab on the **
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can enter up to 50 URLs at once.
 
    - **Why are you submitting this URL to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value to get verdict from Microsoft when you're unsure, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -262,7 +262,7 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value to get a verdict from Microsoft when you're unsure, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -322,7 +322,7 @@ After a few moments, the associated allow entries appear on the **Domains & addr
    - **File**: Select **Browse files** to find and select the file to submit.
 
    - **Why are you submitting the message to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value to get a verdict from Microsoft when you're unsure, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -377,7 +377,7 @@ For URLs reported as false positives, we allow subsequent messages that contain 
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can also provide a top level domain (for example, `https://www.fabrikam.com/*`), and then select it in the box that appears. You can enter up to 50 URL at once.
 
    - **Why are you submitting this URL to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value to get a verdict from Microsoft when you're unsure, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -814,7 +814,7 @@ In the **Submit to Microsoft for analysis** flyout that opens, do the following 
 
 - **Email messages**:
   - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-    - **It appears clean** or **It appears suspicious**: Select one of these values to get a verdict from Microsoft when you're unsure.
+    - **It appears clean** or **It appears suspicious**: Select one of these values if you're unsure and you want a verdict from Microsoft.
 
       Select **Submit**, and then select **Done**.
 
