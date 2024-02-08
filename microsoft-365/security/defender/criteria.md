@@ -57,7 +57,7 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Dropper:** A type of malware that installs other malware files onto your device. Unlike a downloader, a dropper doesn't have to connect to the internet to drop malicious files. The dropped files are typically embedded in the dropper itself.
 
-* **Exploit:** A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware. [See more information about exploits](exploits-malware.md).
+* **Exploit:** A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware..
 
 * **Hacktool:** A type of tool that can be used to gain unauthorized access to your device.
 
