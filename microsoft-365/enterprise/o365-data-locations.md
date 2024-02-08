@@ -38,6 +38,7 @@ See the following links to understand how you can determine current data residen
 - Exchange Online [Data Location](m365-dr-workload-exo.md#how-can-i-determine-customer-data-location)
 - SharePoint Online (ODSP) and OneDrive for Business [Data Location](m365-dr-workload-spo.md#how-can-i-determine-customer-data-location)
 - Microsoft Teams [Data Location](m365-dr-workload-teams.md#how-can-i-determine-customer-data-location)
+- Copilot for Microsoft 365 [Data Location](m365-dr-workload-copilot.md#how-can-i-determine-customer-data-location)
 - Microsoft Defender for Office (MDO P1)  [Data Location](m365-dr-workload-mdo-p1.md#how-can-i-determine-customer-data-location)
 - Office for the Web (Office Online)  [Data Location](m365-dr-workload-office-for-web.md#how-can-i-determine-customer-data-location)
 - Viva Connections [Data Location](m365-dr-workload-viva-connections.md#how-can-i-determine-customer-data-location)
