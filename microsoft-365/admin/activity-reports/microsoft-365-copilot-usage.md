@@ -123,7 +123,7 @@ You can see the following summary charts in this report as default view:
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
 >[!NOTE]
-> This report does not yet include Microsoft Copilot with Graph-grounded chat usage, but it will be available in this report soon. You;='ll be notified of this update through the Microsoft 365 message center.
+> This report does not yet include Microsoft Copilot with Graph-grounded chat usage, but it will be available in this report soon. You'll be notified of this update through the Microsoft 365 message center.
 
 >[!IMPORTANT]
 > Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
