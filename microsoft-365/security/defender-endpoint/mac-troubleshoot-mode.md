@@ -72,10 +72,11 @@ During troubleshooting mode, you can't:
 
 1. Go to the [Microsoft Defender XDR portal](https://security.microsoft.com/), and sign in.
 2. Navigate to the device page you would like to turn on troubleshooting mode. Then, click on the ellipses(...) and select **Turn on troubleshooting mode**.  
-     :::image type="content" source="images/troubleshooting-mode-on-mac.png" alt-text="Image displaying the screenshot of the troubleshooting mode on mac.":::
 
-     > [!NOTE]
-     > The **Turn on troubleshooting mode** option is available on all devices, even if the device does not meet the prerequisites for troubleshooting mode.
+   :::image type="content" source="images/troubleshooting-mode-on-mac.png" alt-text="Image displaying the screenshot of the troubleshooting mode on mac.":::
+
+   > [!NOTE]
+   > The **Turn on troubleshooting mode** option is available on all devices, even if the device does not meet the prerequisites for troubleshooting mode.
 
 3. Read the information displayed on the pane and once you're ready, select **Submit** to confirm that you want to turn on troubleshooting mode for that device.
 4. You'll see *It might take a few minutes for the change to take effect* text being displayed. During this time, when you click on the ellipses again, you'll see the **Turn On Troubleshooting mode is pending** option grayed-out.
