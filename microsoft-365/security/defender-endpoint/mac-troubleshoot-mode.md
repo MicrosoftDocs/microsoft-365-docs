@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting mode in Microsoft Defender for Endpoint on macOS
-description: This topic describes how to enable the troubleshooting mode in Microsoft Defender for Endpoint on macOS.
+description: This article describes how to enable the troubleshooting mode in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, install, mde for mac
 ms.service: defender-endpoint
 ms.mktglfcycl: deploy
@@ -36,7 +36,7 @@ ms.date: 02/06/2024
 
 This article describes how to enable the troubleshooting mode in Microsoft Defender for Endpoint on macOS so admins can troubleshoot various Microsoft Defender Antivirus features temporarily, even if the devices are managed by organizational policies.
 
-For example, if tamper protection is enabled, certain settings can't be modified or turned off, but you can use troubleshooting mode on the device to edit those settings temporarily.
+For example, if the tamper protection is enabled, certain settings can't be modified or turned off, but you can use troubleshooting mode on the device to edit those settings temporarily.
 
 Troubleshooting mode is disabled by default, and requires you to turn it on for a device (and/or group of devices) for a limited time. Troubleshooting mode is exclusively an enterprise-only feature, and requires access to [Microsoft Defender XDR portal](https://security.microsoft.com/).
 
@@ -79,7 +79,7 @@ During troubleshooting mode, you can't:
    > The **Turn on troubleshooting mode** option is available on all devices, even if the device does not meet the prerequisites for troubleshooting mode.
 
 3. Read the information displayed on the pane and once you're ready, select **Submit** to confirm that you want to turn on troubleshooting mode for that device.
-4. You'll see *It might take a few minutes for the change to take effect* text being displayed. During this time, when you click on the ellipses again, you'll see the **Turn On Troubleshooting mode is pending** option grayed-out.
+4. You'll see *It might take a few minutes for the change to take effect* text being displayed. During this time, when you select the ellipses again, you'll see the **Turn On Troubleshooting mode is pending** option grayed-out.
 5. Once complete, the device page shows that the device is now in troubleshooting mode. 
 
      If the end-user is logged-in on the macOS device, they'll see the following text:
@@ -94,7 +94,7 @@ During troubleshooting mode, you can't:
 
      :::image type="content" source="images/ts-mode-rtp-disable.png" alt-text="Image displaying the screenshot of real time protection being disabled.":::
 
-     The output report similar to the following screenshot will be displayed on running mdatp health with `real_time_protection_enabled` as ‘false’ and `tamper_protection` as ‘block.’
+     The output report similar to the following screenshot will be displayed on running mdatp health with `real_time_protection_enabled` as "false" and `tamper_protection` as "block."
   
      :::image type="content" source="images/ts-mode-mdatp-health.png" alt-text="Image displaying the screenshot of the output report of mdatp health running.":::
 
