@@ -34,7 +34,7 @@ ms.date: 02/06/2024
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This article describes how to enable the troubleshooting mode in Microsoft Defender for Endpoint on macOS so admins can troubleshoot various Microsoft Defender Antivirus features temporarily, even if the devices are managed by organizational policies.
+This article describes how to enable the troubleshooting mode in Microsoft Defender for Endpoint on macOS so admins can troubleshoot various Microsoft Defender Antivirus features temporarily, even if organizational policies manage the devices.
 
 For example, if the tamper protection is enabled, certain settings can't be modified or turned off, but you can use troubleshooting mode on the device to edit those settings temporarily.
 
@@ -45,7 +45,7 @@ Troubleshooting mode is disabled by default, and requires you to turn it on for 
 During the troubleshooting mode, you can:
 
 - Use Microsoft Defender for Endpoint on macOS functional troubleshooting /application compatibility (false positives). 
-- Local admins, with appropriate permissions, can change the following configurations on individual endpoints that are usually locked by policy: 
+- Local admins, with appropriate permissions, can change the following policy locked configurations on individual endpoints: 
 
      | Setting  | Enable  | Disable/Remove |
      | ----| ---- | ----|
@@ -71,7 +71,7 @@ During troubleshooting mode, you can't:
 ## Enable troubleshooting mode on macOS
 
 1. Go to the [Microsoft Defender XDR portal](https://security.microsoft.com/), and sign in.
-2. Navigate to the device page you would like to turn on troubleshooting mode. Then, click on the ellipses(...) and select **Turn on troubleshooting mode**.  
+2. Navigate to the device page you would like to turn on troubleshooting mode. Then, select the ellipses(...) and select **Turn on troubleshooting mode**.  
 
    :::image type="content" source="images/troubleshooting-mode-on-mac.png" alt-text="Image displaying the screenshot of the troubleshooting mode on mac.":::
 
