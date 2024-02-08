@@ -146,12 +146,11 @@ For more information and configuration examples for a small and medium business 
 
 [![Image for the Best together with Surface and the Edge browser poster.](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
 
-
 ## Microsoft 365 training
 
 ![Microsoft 365 Fundamentals training.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](/training/paths/m365-fundamentals/).
+To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](/training/paths/describe-microsoft-365-core-services-concepts/).
 
 ## See also
 
