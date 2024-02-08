@@ -70,7 +70,7 @@ Microsoft 365 services are not deployed to all Microsoft data centers globally. 
 
 Over time, a particular service may deploy their software to additional _Geographies_, so the provisioning locations for new customers can change over time.  This doesn't necessarily cause customer data to move to a new _Geography_.
 
-In order to understand where your data, for a given service is stored, your primary tool for understanding this is in the _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Currently the data location is available for Exchange Online, SharePoint Online and Microsoft Teams.  In addition to this resource, see the [Data Maps page](o365-data-locations.md).
+In order to understand where your data, for a given service is stored, your primary tool for understanding this is in the _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Currently the data location is available for Exchange Online, SharePoint Online/OneDrive, Microsoft Teams, Copilot for Microsoft 365, Exchange Online Protection, Viva Connections and Viva Topics.  In addition to this resource, see the [Data Maps page](o365-data-locations.md).
 
 Some examples:
 
@@ -89,15 +89,15 @@ Some examples:
 Once a Microsoft 365 service provisions a _Tenant_ into a particular _Geography_, there are three ways that this data could move to another _Geography_:
 
 1. The Microsoft 365 service decides to move the data to a new _Geography_ for service operations reasons, if there are no other policies in place to prevent the move.
-1. If a _Tenant_ subscribes to the _Multi-Geo_ service, then _Tenants_ user's data for Exchange Online, SharePoint Online and Microsoft Teams can be assigned to _Satellite Geographies_.
+1. If a _Tenant_ subscribes to the _Multi-Geo_ service, then _Tenants_ user's data for Exchange Online, SharePoint Online, and Microsoft Teams can be assigned to _Satellite Geographies_. For Copilot, see the [Copilot for Microsoft 365 Multi-Geo support](m365-dr-workload-copilot.md)
 1. If a _Tenant_ has sign up country/region as a _Local Region Geography_  and has a subscription to the _Advanced Data Residency_ service add-on, then the _Tenant_ data for the included services will be migrated from the _Regional Geography_ to the relevant _Local Region Geography_.
 
 ### Durable commitments on data location
 
 There are three methods for ensuring that the _Tenant_ data location for a particular service doesn't change.
 
-1. Product Terms: Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams provisioned in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States have a commitment for customer data residency expressed in the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).  For more information, see the [Product Terms Data Residency page](m365-dr-product-terms-dr.md).
-1. _Multi Geo_ subscription: allows customers to assign data location for Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams to any supported _Geography_.  For more information, see [Multi Geo Data Residency](microsoft-365-multi-geo.md).
+1. Product Terms: Exchange Online, SharePoint Online, OneDrive for Business, Microsoft Teams and Copilot for Microsoft 365 provisioned in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States have a commitment for customer data residency expressed in the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).  For more information, see the [Product Terms Data Residency page](m365-dr-product-terms-dr.md).
+1. _Multi Geo_ subscription: allows customers to assign data location for Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams to any supported _Geography_.  For more information, see [Multi Geo Data Residency](microsoft-365-multi-geo.md) and [Copilot for Microsoft 365 ](m365-dr-workload-copilot.md).
 1. _Advanced Data Residency_ subscription guarantees data residency for an expanded set of Microsoft 365 services in any _Local Region Geography_.  For more information, see the [Advanced Data Residency page](advanced-data-residency.md).
 #### **Table 2: Available Data Residency by Workload**
 
@@ -153,15 +153,7 @@ A: Advanced Data Residency
 
 The following Regional Geographies can store data at rest.
 
-#### **Table 4: Regional Geographies**
-
-| Regional Geographies | Locations where customer data may be stored |
-|---------|---------|
-|Macro Region Geography 1 - EMEA (Europe, Middle East and Africa) |  Austria, Finland, France, Ireland, Israel, Italy, Netherlands, Poland, Sweden  |
-|Macro Region Geography 2 - Asia Pacific |  Hong Kong SAR, Japan, Malaysia, Singapore, South Korea  |
-|Macro Region Geography 3 - Americas | Brazil, Chile, United States  |
-
-#### **Table 5: Current Local Geographies and Region specific Datacenter locations**
+#### **Table 4: Current Local Geographies and Region specific Datacenter locations**
 
 |Country/Region |Datacenter Location  |
 |---------|---------|
