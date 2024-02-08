@@ -95,15 +95,36 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
+### January-2024 (Platform: 4.18.24010.xxxx | Engine: 1.1.24010.xxxx)
+
+- Security intelligence update version: **x.x.x.x**
+- Release date:  **February 12, 2024 (Engine) / February 12, 2024 (Platform)**
+- Platform: **4.18.24010.xxxx**
+- Engine: **1.1.24010.xxxx**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Microsoft Defender Anti-virus now caches the Mark of the Web (MoTW) Alternative Data Stream (ADS) for better performance while scanning.
+- Fixed an issue that occurred in attack surface reduction warn mode when removing from the RTP cache.
+- Performance improvement added for OneNote.exe.
+- Cloud based entries will be regularly cleared from the persistent user mode cache in Windows Defender. This is to prevent an occasional issue occurring where a user could still add a certificate based on an Indicator of compromise (IoC) to the cache when a file with that certificate had already been added via cloud signature.
+- Sense onboarding event is now sent in passive mode for operating systems with the old Sense client.
+- Improved performance for logs created/accessed by powershell.
+- Improved performance for folders included in controlled folder access(CFA) accessing network files.
+- Fixed a deadlock that occurred at shutdown for Data Loss Prevention (DLP) enabled devices.
+- Fixed an issue to remove a vulnerability in the Microsoft Defender Core service.
+- Fixed an onboarding issue in the Unified Agent installation script [install.ps1](https://github.com/microsoft/mdefordownlevelserver).
+
 ### November-2023 (Platform: 4.18.23110.3 | Engine: 1.1.23110.2)
 
-- Security intelligence update version: **1.403.7.0** 
+- Security intelligence update version: **1.403.7.0**
 - Release date: **December 5, 2023 (Platform)** / **December 6, 2023 (Engine)**
-- Platform: **4.18.23110.3** 
+- Platform: **4.18.23110.3**
 - Engine: **1.1.23110.2**
-- Support phase: **Security and Critical Updates** 
+- Support phase: **Security and Critical Updates**
 
-#### What's new 
+#### What's new
 
 - Fixed PowerShell cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to show the correct date/time for `AntivirusSignatureLastUpdated`
 - Resolved deadock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
