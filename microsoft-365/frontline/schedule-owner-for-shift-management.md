@@ -3,7 +3,7 @@ title: Manage schedule owners for shift management
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.topic: how-to
+ms.topic: conceptual
 audience: admin
 ms.reviewer: imarquesgil
 ms.service: microsoft-365-frontline
@@ -26,10 +26,63 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-mar2020
-ms.date: 10/28/2022
+ms.date: 
 ---
 
 # Schedule Owner for shift management
+
+In Shifts, there are two user personas, depending on the user's responsibilities within a team: frontline manager and frontline worker.
+
+- **Frontline managers** are responsible for the creation and overall management of their team’s schedule and requests. They're part of the frontline workforce with managerial responsibilities. A frontline manager in Shifts requires one of the following roles:
+
+  - Team owner in Teams
+  - Team member in Teams who is elevated to a schedule owner in Shifts
+
+- **Frontline workers** are employees who aren't responsible for scheduling. They view their schedules and interact with their manager or coworkers through requests in Shifts. A frontline worker in Shifts requires the team member role in Teams.
+
+## Capabilities of each role in Shifts and Teams
+
+Here's a summary of the capabilities of each role in Shifts and in Teams.
+
+**In Shifts**
+
+|Capability  |Team member |Schedule owner |Team owner |
+|---------|---------|---------|---------|
+|Create, edit, and publish schedules to manage their team’s shifts assignments||✔️|✔️|
+|View and manage (approve or deny) Shifts requests||✔️|✔️|
+|Manage settings in Shifts for their teams||✔️| ✔️|
+|View and modify their team’s timesheet to process employee payrolls||✔️|✔️|
+|Manage settings in Shifts for their teams||✔️|✔️|
+|View their schedules and their team's schedules|✔️|✔️|✔️|
+|Create and cancel shift requests|✔️||
+|Clock in and out of shifts|✔️|✔️|✔️|
+|Set availability (or working preferences) in Shifts|✔️|||
+
+**In Teams**
+
+|Capability  |Team member  |Schedule owner |Team owner  |
+|---------|---------|---------|---------|
+|Add or remove members and guests to the team |||✔️|
+|Edit or delete a team|||✔️|
+|Archive or restore a team|||✔️|
+|Create a channel and participate in conversations|✔️|✔️|✔️|
+|Share chat and channel files|✔️|✔️|✔️|
+
+### Scenario
+
+At your organization, department managers report directly to the store manager.  
+
+The store manager has more authority within your company as they oversee the hiring of department managers and store associates, help their departments on specific issues, and manage the generation of revenue within their store. On the other hand, department managers are responsible for managing the day-to-day operations and people within their department.  
+
+Thus, your organization defines that:  
+
+- Store managers are responsible for their store's success, and only get involved in the daily department management if required. For their store's team, the store manager has a **team owner** role in Teams.  
+
+- Department managers manage the day-to-day activities of their team in Shifts, and don’t require team owner privileges in Teams. Department managers have the **team member** role in Teams and **schedule owner** role in Shifts.  
+
+- Store associates are members of a department, and are assigned the **team member** role in Teams.  
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ## Overview
 
