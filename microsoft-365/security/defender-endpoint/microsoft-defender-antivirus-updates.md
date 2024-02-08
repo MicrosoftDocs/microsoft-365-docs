@@ -108,10 +108,10 @@ All our updates contain
 - Microsoft Defender Anti-virus now caches the Mark of the Web (MoTW) Alternative Data Stream (ADS) for better performance while scanning.
 - Fixed an issue that occurred in attack surface reduction warn mode when removing from the RTP cache.
 - Performance improvement added for OneNote.exe.
-- Cloud based entries will be regularly cleared from the persistent user mode cache in Windows Defender. This is to prevent an occasional issue occurring where a user could still add a certificate based on an Indicator of compromise (IoC) to the cache when a file with that certificate had already been added via cloud signature.
+- Cloud based entries will be regularly removed from the persistent user mode cache in Windows Defender. This is to prevent a uncommon issue where a user could still add a certificate, based on an Indicator of compromise (IoC), to the cache after a file with that certificate had already been added via cloud signature.
 - Sense onboarding event is now sent in passive mode for operating systems with the old Sense client.
 - Improved performance for logs created/accessed by powershell.
-- Improved performance for folders included in controlled folder access(CFA) accessing network files.
+- Improved performance for folders included in controlled folder access(CFA) when accessing network files.
 - Fixed a deadlock that occurred at shutdown for Data Loss Prevention (DLP) enabled devices.
 - Fixed an issue to remove a vulnerability in the Microsoft Defender Core service.
 - Fixed an onboarding issue in the Unified Agent installation script [install.ps1](https://github.com/microsoft/mdefordownlevelserver).
