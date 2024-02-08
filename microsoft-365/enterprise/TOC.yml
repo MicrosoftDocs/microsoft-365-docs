@@ -302,7 +302,7 @@
               href: m365-dr-workload-exo.md
             - name: SharePoint and OneDrive
               href: m365-dr-workload-spo.md
-            - name: Microsoft Copilot
+            - name: Copilot for Microsoft 365
               href: m365-dr-workload-copilot.md
             - name: Microsoft Teams
               href: m365-dr-workload-teams.md
