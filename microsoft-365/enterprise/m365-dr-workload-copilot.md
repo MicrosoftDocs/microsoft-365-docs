@@ -49,7 +49,7 @@ Required Conditions:
 
 **Commitment:**
 
-Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-copilot) to understand the specific commitments provided via Product Terms.  Examples of the committed data include:
+Refer to the [ADR Commitment page](m365-dr-commitments.md#copilot-for-microsoft-365) to understand the specific commitments provided via Product Terms.  Examples of the committed data include:
 
 - (5) any stored content of interactions with Copilot for Microsoft 365 to the extent not included in the preceding commitments.
 
