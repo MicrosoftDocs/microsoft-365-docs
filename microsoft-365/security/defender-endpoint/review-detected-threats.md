@@ -51,9 +51,9 @@ In the Microsoft Defender portal, you can view and manage threat detections usin
 
     You can select **View Details** for more information.
 
-2. Once remediated, you will see the following text being displayed:
+2. Once remediated, you'll see the following text being displayed:
 
-   *Malware found on your devices have been remediated successfully*.
+    *Malware found on your devices have been remediated successfully*.
 
 ## Manage threat detections in Microsoft Intune
 
@@ -87,7 +87,7 @@ To see when the malware was detected, you can do the following:
 
 ### In the devices with malware detections report, why can’t I see any information about which malware was detected on the device. 
 
-To see the malware name, visit the [Intune portal](https://intune.microsoft.com) as this is an integration with Intune, select **Antivirus**  and select **Active malware** tab and you'll see a column named **Malware name**.
+To see the malware name, visit the [Intune portal](https://intune.microsoft.com) as this is an integration with Intune, select **Antivirus**,  and select **Active malware** tab and you'll see a column named **Malware name**.
 
 ### I see a different number for active malware in Devices with active malware report, when compared to numbers I see using Reports > Detected malware, and Intune > Antivirus > Active malware.
 
@@ -116,10 +116,11 @@ Use the Advanced Hunting query that is mentioned [here](#i-see-a-different-numbe
 
 ### I see malware detection in Intune and on the Devices with active malware report, but I don’t see it in the MDE Alerts queue or in the Incidents queue.
 
-It’s might be that the URL's [Cloud Protection](configure-network-connections-microsoft-defender-antivirus.md) is currently not being allowed through your firewall or proxy.
+It might be that the URL's [Cloud Protection](configure-network-connections-microsoft-defender-antivirus.md) is currently not being allowed through your firewall or proxy.
 
 You need to ensure that when you run `%ProgramFiles%\Windows Defender\MpCmdRun.exe -ValidateMapsConnection` on your device, the reporting is Ok.
 
-## Related topics
-- [Investigate alerts in Microsoft Defender for Endpoint](investigate-alerts.md)
+## Related articles
+
+- [Alerts in Microsoft Defender for Endpoint](investigate-alerts.md)
 - [Alerts queue in Microsoft Defender XDR](alerts-queue-endpoint-detection-response.md)
