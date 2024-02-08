@@ -66,7 +66,18 @@ Multi-Geo capabilities in Copilot for Microsoft 365 enable content of interactio
 
 ## Multi-Geo Capabilities in Copilot for Microsoft 365
 
-**place holder, todo**
+Copilot for Microsoft 365 relies on Microsoft Teams for storing the interactions users have with Copilot for Microsoft 365.  Given that approach, the assignment of PDL to users for Teams will apply to the Copilot for Microsoft 365 interactions that are stored and committed to.
+
+ The _Geography_ used to store the Copilot interactions is determined by the user who writes the prompt. Different users in different regions will have their interactions stored in different regions. 
+
+**Collaboration**
+
+Regarding two or more people working together on a Microsoft Word or Microsoft Powerpoint document.  User A is in Canada and asks Copilot to do something in PPTX/Word, but the document is stored in France. User A from Canada will have Copilot data in Canada even though the document is in France. The document is not copied to Canada but parts of the document may be included in the results and stored in Teams. 
+
+**Meeting Recordings**
+
+Microsoft Teams meeting recording location is determined by the region of the user that starts the recording.  When users in other regions ask Copilot for Microsoft 365 to summarize the meeting, those questions and related answers  (interactions) are stored in the location of the user that asks the Copilot questions.
+
 
 ### Migration
 
