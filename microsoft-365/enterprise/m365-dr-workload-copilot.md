@@ -22,11 +22,10 @@ ms.collection:
 
 ## Overview
 
-Service documentation: [Microsoft Copilot for Microsoft 365 overview](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-overview) and [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-privacy)
+Service documentation: [Microsoft Copilot for Microsoft 365 overview](/microsoft-365-copilot/microsoft-365-copilot-overview) and [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
 
 Capability Summary: Microsoft Copilot for Microsoft 365 is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 apps that you use every day, such as Word, Excel, PowerPoint, Outlook, and Teams. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
-The following applications provide the ability to interact with Copilot for Microsoft 365:  Microsoft Word, PowerPoint, Loop, Outlook, Teams (Chat, Meetings, Calls, Whiteboard) and OneNote.  The interactions with these applications, as well as the related semantic index, will be stored in the relevant _Geography_. Copilot interaction data for all stated applications is stored within the Microsoft Teams data storage infrastructure.
-
+The following applications provide the ability to interact with Copilot for Microsoft 365:  Microsoft Word, PowerPoint, Loop, Outlook, Teams (Chat, Meetings, Calls, Whiteboard), and OneNote.  The interactions with these applications and the related semantic index will be stored in the relevant _Geography_. Copilot interaction data for all stated applications is stored within the Microsoft Teams data storage infrastructure.
 
 ## Data Residency Commitments Available for Copilot for Microsoft 365
 
@@ -34,11 +33,11 @@ The following applications provide the ability to interact with Copilot for Micr
 
 Required Conditions:
 
-1. _Tenant_ has a sign up country/region included in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States.
+1. _Tenant_ has a sign-up country/region included in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States.
 
 **Commitment:**
 
-_For current language please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services" and reference statement (5)._
+_For current language, refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services" and reference statement (5)._
 
 ### Advanced Data Residency add-on
 
@@ -50,9 +49,9 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-copilot) to understand the specific commitments provided via Product Terms.  Examples of the committed data include:
+Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-copilot) to understand the specific commitments provided via Product Terms.  Examples of the committed data include:
 
--  (5) any stored content of interactions with Copilot for Microsoft 365 to the extent not included in the preceding commitments.
+- (5) any stored content of interactions with Copilot for Microsoft 365 to the extent not included in the preceding commitments.
 
 ### Multi-Geo add-on
 
