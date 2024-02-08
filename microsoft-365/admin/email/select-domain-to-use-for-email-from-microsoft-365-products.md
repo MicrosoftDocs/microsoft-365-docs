@@ -110,6 +110,7 @@ This is a list of some common sender addresses, without any claim to completenes
 - microsoft-noreply@microsoft.com
 - microsofttechcommunity@us.khoros-mail.com
 - ms-noreply@microsoft.com
+- MSSecurity-noreply@microsoft.com
 - mswwprog@microsoft.com
 - no-reply@cloudappsecurity.com
 - no-reply@microsoftadvertising.com
