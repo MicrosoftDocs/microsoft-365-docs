@@ -47,8 +47,6 @@ The rest of this article describes the reports that are exclusive to Defender fo
 >
 >   A link to these reports is available in the Defender portal at **Reports** \> **Email & collaboration** \> **Email & collaboration reports** \> **Exchange mail flow reports**, which takes you to <https://admin.exchange.microsoft.com/#/reports/mailflowreportsmain>.
 
-<a name='email-security-report-changes-in-the-microsoft-365-defender-portal'></a>
-
 ## Email security report changes in the Microsoft Defender portal
 
 The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft Defender portal that have been replaced, moved, or deprecated are described in the following table.
