@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/13/2023
+ms.date: 02/12/2024
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -165,7 +165,7 @@ Schedules are based on the local time zone of the device.
 | ignoreExclusions | true or false |
 | lowPriorityScheduledScan | true or false |
 | dayOfWeek | The range is between 0 and 8. <br>- 0: Everyday <br>- 1: Sunday <br>- 2: Monday <br>- 3: Tuesday <br>- 4: Wednesday <br>- 5: Thursday <br>- 6: Friday <br>- 7: Saturday <br>- 8: Never |
-| timeOfDay | Specifies the time of day, as the number of _minutes after midnight_, to perform a scheduled scan. The time refers to the local time on the computer. If you do not specify a value for this parameter, a scheduled scan runs at a default time of two hours after midnight. |
+| timeOfDay | Specifies the time of day, as the number of _minutes after midnight_, to perform a scheduled scan. The time refers to the local time on the computer. If you don't specify a value for this parameter, a scheduled scan runs at a default time of two hours after midnight. |
 | interval | 0 (never), every 1 (hour) to 24 (hours, 1 scan per day) |
 | randomizeScanStartTime | Only supported on version 101.23122.\* or higher. Only applicable for daily quick scans or weekly quick/full scans. Randomize the start time of the scan by up to specified number of hours. <br> For example, if a scan is scheduled for 2 p.m and randomizeScanStartTime is set to 2, the scan will commence at a random time between 2 p.m and 4 p.m. |
 
@@ -334,34 +334,35 @@ The following code shows the schema you need to use to schedule a quick scan.
 ### Option 3: Configure scheduled scans through CLI tool
 
 To enable scheduled scan feature:
+
 |Version|Command|
 |---|---|
 | Version 101.23102.\* or lower | `sudo mdatp config scheduled-scan-settings feature --value enabled` |
 | Version 101.23122.\* or higher | `sudo mdatp config scheduled-scan settings feature --value enabled` |
 
 To schedule hourly quick scans:
+
 |Version|Command|
 |---|---|
 | Version 101.23102.\* or lower | sudo mdatp config schedule-quick-scan hourly-interval --value \<arg\> |
-| --- | --- |
 | Version 101.23122.\* or higher | sudo mdatp config scheduled-scan quick-scan hourly-interval --value \<arg\> |
 
 :::image type="content" source="media/schedule-scans-mac/schedule-scan-1.png" alt-text="Screenshot of schedule hourly scan." lightbox="media/schedule-scans-mac/schedule-scan-1.png":::
 
 To schedule daily quick scans:
+
 |Version|Command|
 |---|---|
 | Version 101.23102.\* or lower | sudo mdatp config schedule-quick-scan time-of-day --value \<arg\> |
-| --- | --- |
 | Version 101.23122.\* or higher | sudo mdatp config scheduled-scan quick-scan time-of-day --value \<arg\> |
 
 :::image type="content" source="media/schedule-scans-mac/schedule-scan-2.png" alt-text="Screenshot of schedule daily quick scan." lightbox="media/schedule-scans-mac/schedule-scan-2.png":::
 
 To schedule weekly scans:
+
 |Version|Command|
 |---|---|
 | Version 101.23102.\* or lower | sudo mdatp config schedule-weekly-scan –day-of-week \<arg\> --time-of-day \<arg\> --scan-type \<arg\> |
-| --- | --- |
 | Version 101.23122.\* or higher | sudo mdatp config scheduled-scan weekly-scan --day-of-week \<arg\> --time-of-day \<arg\>--scan-type \<arg\> |
 
 :::image type="content" source="media/schedule-scans-mac/schedule-scan-3.png" alt-text="Screenshot of schedule weekly scan." lightbox="media/schedule-scans-mac/schedule-scan-3.png":::
