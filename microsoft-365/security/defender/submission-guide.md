@@ -3,8 +3,7 @@ title: Submit files for analysis by Microsoft
 description: Learn how to submit files to Microsoft for malware analysis, how to track your submissions, and dispute detections.
 ms.reviewer:
 keywords: security, sample submission help, malware file, virus file, trojan file, submit, send to Microsoft, submit a sample, virus, trojan, worm, undetected, doesn't detect, email microsoft, email malware, I think this is malware, I think it's a virus, where can I send a virus, is this a virus, MSE, doesn't detect, no signature, no detection, suspect file, MMPC, Microsoft Malware Protection Center, researchers, analyst, WDSI, security intelligence
-ms.service: microsoft-365-security
-ms.subservice: intelligence
+ms.service: defender-xdr
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
