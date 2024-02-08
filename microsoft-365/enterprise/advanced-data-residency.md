@@ -31,6 +31,7 @@ The following workloads are included in ADR. For more information, see:
 - [Exchange Online](m365-dr-workload-exo.md)
 - [SharePoint and OneDrive](m365-dr-workload-spo.md)
 - [Microsoft Teams](m365-dr-workload-teams.md)
+- [Copilot for Microsoft 365](m365-dr-workload-copilot.md)
 - [Microsoft Defender for Office P1 and Exchange Online Protection](m365-dr-workload-mdo-p1.md)
 - [Office for the Web](m365-dr-workload-office-for-web.md)
 - [Viva Connections](m365-dr-workload-viva-connections.md)
@@ -91,7 +92,7 @@ If all of a customer's tenant data covered by the Advanced Data Residency featur
 
 ### Starting Data Migration
 
-After a customer receives their Advanced Data Residency licenses,  the customer needs to signal that they're ready to schedule data migration, if one is necessary. To signal your tenant is ready for its data migration, the customer administrator visits the Data Location section of the Microsoft 365 Admin Console within the **Settings -> Org Settings -> Organization Profile** area. From here the customer administrator is able to see the current location of their data-at-rest and what _Local Region Geography_ their customer data is migrated to.
+After a customer receives their Advanced Data Residency licenses,  the customer needs to signal that they're ready to schedule data migration, if one is necessary. To signal your tenant is ready for its data migration, the customer _tenant_ administrator visits the Data Location section of the Microsoft 365 Admin Console within the **Settings -> Org Settings -> Organization Profile** area. From here the customer administrator is able to see the current location of their data-at-rest and what _Local Region Geography_ their customer data is migrated to.
 
 > [!NOTE]
 > Data migration won't be scheduled until the customer administrator has completed this task. The migration expectation discussed elsewhere in this documentation won't start being tracked until this task has been completed.
