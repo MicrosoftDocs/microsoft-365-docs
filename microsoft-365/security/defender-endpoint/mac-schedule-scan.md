@@ -347,7 +347,7 @@ To schedule hourly quick scans:
 | Version 101.23102.\* or lower | sudo mdatp config schedule-quick-scan hourly-interval --value \<arg\> |
 | Version 101.23122.\* or higher | sudo mdatp config scheduled-scan quick-scan hourly-interval --value \<arg\> |
 
-:::image type="content" source="media/schedule-scans-mac/schedule-scan-1.png" alt-text="Screenshot of schedule hourly scan." lightbox="media/schedule-scans-mac/schedule-scan-1.png":::
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-1.png" alt-text="Screenshot of schedule hourly scan.":::
 
 To schedule daily quick scans:
 
@@ -356,7 +356,7 @@ To schedule daily quick scans:
 | Version 101.23102.\* or lower | sudo mdatp config schedule-quick-scan time-of-day --value \<arg\> |
 | Version 101.23122.\* or higher | sudo mdatp config scheduled-scan quick-scan time-of-day --value \<arg\> |
 
-:::image type="content" source="media/schedule-scans-mac/schedule-scan-2.png" alt-text="Screenshot of schedule daily quick scan." lightbox="media/schedule-scans-mac/schedule-scan-2.png":::
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-2.png" alt-text="Screenshot of schedule daily quick scan.":::
 
 To schedule weekly scans:
 
@@ -365,7 +365,7 @@ To schedule weekly scans:
 | Version 101.23102.\* or lower | sudo mdatp config schedule-weekly-scan –day-of-week \<arg\> --time-of-day \<arg\> --scan-type \<arg\> |
 | Version 101.23122.\* or higher | sudo mdatp config scheduled-scan weekly-scan --day-of-week \<arg\> --time-of-day \<arg\>--scan-type \<arg\> |
 
-:::image type="content" source="media/schedule-scans-mac/schedule-scan-3.png" alt-text="Screenshot of schedule weekly scan." lightbox="media/schedule-scans-mac/schedule-scan-3.png":::
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-3.png" alt-text="Screenshot of schedule weekly scan.":::
 
 For other configuration options:
 
@@ -382,11 +382,11 @@ Use the following command:
 
 `mdatp scan list`
 
-:::image type="content" source="media/schedule-scans-mac/schedule-scan-check.png" alt-text="Screenshot of schedule ran." lightbox="media/schedule-scans-mac/schedule-scan-check.png":::
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-check.png" alt-text="Screenshot of schedule ran.":::
 
 `\<snip\>`
 
-:::image type="content" source="media/schedule-scans-mac/schedule-scan-chk.png" alt-text="Screenshot of schedule ran successfully." lightbox="media/schedule-scans-mac/schedule-scan-chk.png":::  
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-chk.png" alt-text="Screenshot of schedule ran successfully.":::  
 
  
 > [!IMPORTANT]
