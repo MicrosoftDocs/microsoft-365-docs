@@ -380,13 +380,13 @@ For other configuration options:
 ### Check that the scheduled scan ran
 Use the following command:
 
-   `mdatp scan list`
+`mdatp scan list`
 
-    :::image type="content" source="media/schedule-scans-mac/schedule-scan-check.png" alt-text="Screenshot of schedule ran." lightbox="media/schedule-scans-mac/schedule-scan-check.png":::
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-check.png" alt-text="Screenshot of schedule ran." lightbox="media/schedule-scans-mac/schedule-scan-check.png":::
 
-   `\<snip\>`
+`\<snip\>`
 
-    :::image type="content" source="media/schedule-scans-mac/schedule-scan-chk.png" alt-text="Screenshot of schedule ran successfully." lightbox="media/schedule-scans-mac/schedule-scan-chk.png":::  
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-chk.png" alt-text="Screenshot of schedule ran successfully." lightbox="media/schedule-scans-mac/schedule-scan-chk.png":::  
 
  
 > [!IMPORTANT]
