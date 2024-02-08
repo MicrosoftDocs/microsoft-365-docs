@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot Microsoft Security intelligence website malware submission errors caused by administrator block
+title: Troubleshoot Microsoft Security intelligence malware submission errors caused by administrator block
 description: Troubleshoot MSI portal errors
 ms.reviewer:
 keywords: security, sample submission help, malware file, virus file, trojan file, submit, send to Microsoft, submit a sample, virus, trojan, worm, undetected, doesn't detect, email microsoft, email malware, I think this is malware, I think it's a virus, where can I send a virus, is this a virus, MSE, doesn't detect, no signature, no detection, suspect file, MMPC, Microsoft Malware Protection Center, researchers, analyst, WDSI, security intelligence
@@ -19,7 +19,7 @@ search.appverid: met150
 ms.date: 03/18/2022
 ---
 
-# Troubleshooting Microsoft Security intelligence malware submission errors website caused by administrator block
+# Troubleshooting Microsoft Security intelligence malware submission errors caused by administrator block
 
 In some instances, an administrator block might cause submission issues when you try to submit a potentially infected file to the [Microsoft Security intelligence website](https://www.microsoft.com/wdsi) for analysis. The following process shows how to resolve this problem.
 
