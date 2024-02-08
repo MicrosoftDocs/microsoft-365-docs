@@ -44,11 +44,9 @@ For Search admins and Global admins:
 
 3. Select Change.
 
-4. Unselect the checkbox for **Allow Copilot to reference public web content**.
+4. Unselect the checkbox for **Allow Copilot to improve responses with web content**.
 
 5. Select Save.
-
-:::image type="content" source="media/public-web-content-active.png" alt-text="Screenshot showing Copilot access to web content is active.":::
 
 :::image type="content" source="media/allow-copilot-web-content.png" alt-text="Screenshot showing the option to allow Copilot to access web content.":::
 
@@ -57,8 +55,10 @@ For Global admins only:
 1. In the admin center, go to **Settings** > **Org settings**.
 2. On the Copilot page, select **Improved responses with web content in Copilot for Microsoft 365**.
 3. Select **Change**.
-4. Unselect the checkbox for **Allow Copilot to reference web content**.
+4. Unselect the checkbox for **Allow Copilot to improve responses with web content**.
 5. Select **Save**.
+
+:::image type="content" source="media/copilot-web-content-active.png" alt-text="Screenshot showing the option to allow Copilot to access web content is enabled and active.":::
 
 All admin setting updates may take up to 24 hours to reflect any changes.
 
