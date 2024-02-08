@@ -4,12 +4,13 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: deanw
-ms.date: 12/18/2023
+ms.date: 02/08/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection:
 - must-keep
+- essentials-overview
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -28,7 +29,7 @@ The Microsoft 365 Advanced Data Residency add-on ("ADR") provides eligible custo
 The following workloads are included in ADR. For more information, see:
 
 - [Exchange Online](m365-dr-workload-exo.md)
-- [SharePoint Online and OneDrive for Business](m365-dr-workload-spo.md)
+- [SharePoint and OneDrive](m365-dr-workload-spo.md)
 - [Microsoft Teams](m365-dr-workload-teams.md)
 - [Microsoft Defender for Office P1 and Exchange Online Protection](m365-dr-workload-mdo-p1.md)
 - [Office for the Web](m365-dr-workload-office-for-web.md)
