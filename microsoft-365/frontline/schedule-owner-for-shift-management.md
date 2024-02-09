@@ -39,7 +39,7 @@ Alternative titles:
 
 ## Overview
 
-In Shifts, there are two user personas&mdash;frontline manager and frontline worker&mdash;based a user's responsibilities and activities within a team. This article explains the user personas and how to use roles in Shifts and Teams to define your frontline mangers and workers.
+In Shifts, there are two user personas&mdash;frontline manager and frontline worker&mdash;based on their responsibilities and activities within a team. This article explains the user personas and how to use roles in Shifts and Teams to define your frontline mangers and workers.
 
 - **Frontline managers** are responsible for the creation and overall management of their team’s schedule and shift requests. They're part of the frontline workforce with managerial responsibilities. A frontline manager in Shifts requires one of the following roles:
 
@@ -55,7 +55,7 @@ Each role has different capabilities in Shifts and in Teams. Here's a summary of
 <!--### In Shifts-->
 
 |Capability in Shifts  |Team member |Schedule owner |Team owner |
-|---------|---------|---------|---------|
+|---------|:---------:|:---------:|:---------:|
 |Create, edit, and publish schedules to manage their team’s shifts assignments.||✔️|✔️|
 |View and manage (approve or deny) shift requests.||✔️|✔️|
 |Manage settings in Shifts for their teams.||✔️| ✔️|
@@ -69,7 +69,7 @@ Each role has different capabilities in Shifts and in Teams. Here's a summary of
 <!--### In Teams-->
 
 |Capability in Teams* |Team member  |Schedule owner |Team owner  |
-|---------|---------|---------|---------|
+|---------|:---------:|:---------:|:---------:|
 |Add or remove members and guests.|||✔️|
 |Edit or delete a team.|||✔️|
 |Archive or restore a team.|||✔️|
@@ -91,13 +91,13 @@ Contoso set up their team roles as follows based on employees' responsibilities:
 
 - Store associates work in a specific department, and are assigned the **team member** role in Teams.  
 
-## Frontline manager role assignment 
+## Frontline manager role assignment
 
-Determine the capabilities you want to provide your frontline managers in Shifts and Teams, based on your organization's needs.
+Determine the capabilities you want to provide your frontline managers in Shifts, based on your organization's needs.
 
 As mentioned earlier, a frontline manager in Shifts can be a team owner in Teams *or* a team member in Teams who is a schedule owner in Shifts. Team owners can manage their team in Teams. Schedule owners are team members in Teams who can manage schedules in Shifts for their team.
 
-You can elevate the permissions of a team member to a schedule owner role in Shifts so they can create schedules and manage shift requests without making that person a team owner. With schedule owner permissions, a frontline manager can manage their team’s schedule without being able to do things like add or remove members or delete a team.
+You can elevate the permissions of a team member to a schedule owner role in Shifts so they can create schedules and manage shift requests without making that person a team owner. With schedule owner permissions, a frontline manager can manage their team’s schedule without being able to do things like add or remove members or delete the team.
 
 ### Team owner in Teams
 
@@ -132,7 +132,7 @@ As an admin, you use policies to manage schedule owners in Shifts for your organ
     ```
 
     > [!IMPORTANT]
-    > When a policy is assigned to a group, all members of that group become schedule owners across every Shifts schedule they belong to. Say, for example, adelev@contoso.com is part of the group to which we assign the ShiftsScheduleOwners policy. This means that adelev@contoso.com is a frontline manager (with the schedule owner role) in Shifts in every team they're a member of.
+    > When a policy is assigned to a group, all members of that group become schedule owners across every Shifts schedule they belong to. Say, for example, adelev@contoso.com is part of the group to which we assigned the ShiftsScheduleOwners policy. This means that adelev@contoso.com is a frontline manager (with the schedule owner role) in Shifts in every team they're a member of.
 
     Group membership can be static or dynamic. Learn more about [groups in Microsoft Entra ID](/entra/fundamentals/concept-learn-about-groups) and [how to manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
 
