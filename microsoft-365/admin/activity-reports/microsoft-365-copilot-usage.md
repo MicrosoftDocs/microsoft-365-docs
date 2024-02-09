@@ -108,6 +108,9 @@ You can view several numbers for Copilot for Microsoft 365 usage, which highligh
 
 **Active Users** shows you total number of enabled users in your organization who tried a user-initiated Copilot for Microsoft 365 feature, in one or more Microsoft 365 apps over the selected time period.
 
+> [!NOTE]
+> A user is considered active in a given app if they performed an intentional action for an AI-powered capability. For example, if a user selects the Copilot icon in the Word ribbon to open the Copilot chat pane, this does not count towards active usage. However, if the user interacts with the chat pane by submitting a prompt, this action would count towards active usage.
+
 **Active users rate** shows you the number of active users in your organization divided by the number of enabled users.
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
@@ -120,7 +123,10 @@ You can see the following summary charts in this report as default view:
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
 >[!NOTE]
-> Teams Copilot usage does not include Microsoft Copilot with Graph-grounded chat usage, but it will be displayed in Copilot for Microsoft 365 usage soon.
+> This report does not yet include Microsoft Copilot with Graph-grounded chat usage, but it will be available in this report soon. You'll be notified of this update through the Microsoft 365 message center.
+
+>[!IMPORTANT]
+> Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
 
 **Current view** shows you the total usage of Copilot for Microsoft 365 among Microsoft 365 apps of the time frame.
 
