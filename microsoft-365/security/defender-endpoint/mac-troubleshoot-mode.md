@@ -73,7 +73,7 @@ During troubleshooting mode, you can't:
 - Microsoft Defender for Endpoint must be tenant-enrolled and active on the device. 
 - Permissions for "Manage security settings in Security Center" in Microsoft Defender for Endpoint.
 - Platform Update version: [101.23122.0005](
-mac-whatsnew#jan-2024-build-101231220005---release-version-2012312250)
+mac-whatsnew.md#jan-2024-build-101231220005---release-version-2012312250)
 or newer. 
 - [Beta Channel (formerly Insiders-Fast), or Current Channel (Preview) (formerly Insiders-Slow)](/microsoft-365/security/defender-endpoint/mac-updates)
 
