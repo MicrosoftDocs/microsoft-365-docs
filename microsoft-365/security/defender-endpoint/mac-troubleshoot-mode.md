@@ -35,7 +35,7 @@ ms.date: 02/06/2024
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!IMPORTANT]
-> Some information relates to a pre-released product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+ Some information relates to a pre-released product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This article describes how to enable the troubleshooting mode in Microsoft Defender for Endpoint on macOS so admins can troubleshoot various Microsoft Defender Antivirus features temporarily, even if organizational policies manage the devices.
 
@@ -66,7 +66,7 @@ During troubleshooting mode, you can't:
 
 ### Prerequisites
 
->  [!NOTE] 
+> [!NOTE] 
 > Troubleshooting mode on macOS is currently in public preview. Review the prerequisites carefully. 
 
 - Supported version of macOS for Microsoft Defender for Endpoint.
