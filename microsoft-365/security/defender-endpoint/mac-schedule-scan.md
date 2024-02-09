@@ -344,8 +344,8 @@ To schedule hourly quick scans:
 
 |Version|Command|
 |---|---|
-| Version 101.23102.\* or lower | sudo mdatp config schedule-quick-scan hourly-interval --value \<arg\> |
-| Version 101.23122.\* or higher | sudo mdatp config scheduled-scan quick-scan hourly-interval --value \<arg\> |
+| Version 101.23102.\* or lower | `sudo mdatp config schedule-quick-scan hourly-interval --value \<arg\>` |
+| Version 101.23122.\* or higher | `sudo mdatp config scheduled-scan quick-scan hourly-interval --value \<arg\>` |
 
 :::image type="content" source="media/schedule-scans-mac/schedule-scan-1.png" alt-text="Screenshot of schedule hourly scan.":::
 
@@ -353,8 +353,8 @@ To schedule daily quick scans:
 
 |Version|Command|
 |---|---|
-| Version 101.23102.\* or lower | sudo mdatp config schedule-quick-scan time-of-day --value \<arg\> |
-| Version 101.23122.\* or higher | sudo mdatp config scheduled-scan quick-scan time-of-day --value \<arg\> |
+| Version 101.23102.\* or lower | `sudo mdatp config schedule-quick-scan time-of-day --value \<arg\>` |
+| Version 101.23122.\* or higher | `sudo mdatp config scheduled-scan quick-scan time-of-day --value \<arg\>` |
 
 :::image type="content" source="media/schedule-scans-mac/schedule-scan-2.png" alt-text="Screenshot of schedule daily quick scan.":::
 
@@ -362,8 +362,8 @@ To schedule weekly scans:
 
 |Version|Command|
 |---|---|
-| Version 101.23102.\* or lower | sudo mdatp config schedule-weekly-scan –day-of-week \<arg\> --time-of-day \<arg\> --scan-type \<arg\> |
-| Version 101.23122.\* or higher | sudo mdatp config scheduled-scan weekly-scan --day-of-week \<arg\> --time-of-day \<arg\>--scan-type \<arg\> |
+| Version 101.23102.\* or lower | `sudo mdatp config schedule-weekly-scan –day-of-week \<arg\> --time-of-day \<arg\> --scan-type \<arg\>` |
+| Version 101.23122.\* or higher | `sudo mdatp config scheduled-scan weekly-scan --day-of-week \<arg\> --time-of-day \<arg\>--scan-type \<arg\>` |
 
 :::image type="content" source="media/schedule-scans-mac/schedule-scan-3.png" alt-text="Screenshot of schedule weekly scan.":::
 
