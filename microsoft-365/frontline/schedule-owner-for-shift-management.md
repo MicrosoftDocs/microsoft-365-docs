@@ -32,8 +32,10 @@ ms.date:
 
 # Overview of team owner, schedule owner, and team member roles in Shifts
 
-Use roles to define your frontline managers and workers in Shifts
-Roles in Shifts
+
+Alternative titles:
+- Use roles to define your frontline managers and workers in Shifts
+- Roles in Shifts
 
 ## Overview
 
