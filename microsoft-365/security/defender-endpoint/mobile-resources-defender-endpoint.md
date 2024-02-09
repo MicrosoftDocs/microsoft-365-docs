@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: ngp
 search.appverid: met150
-ms.date: 09/19/2023
+ms.date: 02/09/2024
 ---
 # Resources for Microsoft Defender for Endpoint for mobile devices
 
@@ -84,9 +84,5 @@ Microsoft Defender for Mobile TVM is the service which provides the vulnerabilit
 1. Create service principal for the apps that needs to be excluded. [Steps to create service principal.](/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-1.0&tabs=powershell#request)
 1. While creating the service principal object above, use these app ids: **Xplat Broker App ( a0e84e36-b067-4d5c-ab4a-3db38e598ae2), TVM app (e724aa31-0f56-4018-b8be-f8cb82ca1196).** 
 1. Once the object is successfully created the two apps will be visible in the CA screen and can be excluded.
-
-
-
-
-![AppExclusion](media/mobile-resources-defender-endpoint/appexclusion.png)
+:::image type="content" source="media/mobile-resources-defender-endpoint/appexclusion.png" alt-text="Image displaying Application exclusions.":::
 
