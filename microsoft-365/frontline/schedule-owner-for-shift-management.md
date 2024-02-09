@@ -122,11 +122,11 @@ As an admin, you use policies to manage schedule owners in Shifts for your organ
     In this example, we assign the ShiftsScheduleOwners policy to a group specified by its object ID.
 
     ```powershell
-    Grant-CsTeamsShiftsPolicy -Group 83d3ca56-50e9-46fb-abd4-4f66939188f8 -PolicyName ScheduleOwnerPolicy
+    Grant-CsTeamsShiftsPolicy -Group 83d3ca56-50e9-46fb-abd4-4f66939188f8 -PolicyName ShiftsScheduleOwners
     ```
 
     > [!IMPORTANT]
-    > When a policy is assigned to a group, all members of that group become schedule owners across every Shifts schedule they belong to. Say, for example, adelev@contoso is part of the group to which we assign the ShiftsScheduleOwners policy. This means that adelev@contoso.com is a frontline manager (with the schedule owner role) in Shifts in every team they're a member of.
+    > When a policy is assigned to a group, all members of that group become schedule owners across every Shifts schedule they belong to. Say, for example, adelev@contoso.com is part of the group to which we assign the ShiftsScheduleOwners policy. This means that adelev@contoso.com is a frontline manager (with the schedule owner role) in Shifts in every team they're a member of.
 
     Group membership can be static or dynamic. Learn more about [groups in Microsoft Entra ID](/entra/fundamentals/concept-learn-about-groups) and [how to manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
 
