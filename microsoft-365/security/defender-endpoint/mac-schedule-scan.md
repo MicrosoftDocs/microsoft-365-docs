@@ -128,12 +128,12 @@ The following code shows the schema you need to use to schedule a quick scan.
     launchctl load -w /Library/LaunchDaemons/<your file name.plist>
     ```
 
-3. Your scheduled scan will run at the date, time, and frequency you defined in your p-list. In the previous examples, the scan runs at 2:50 AM every Friday. 
+3. Your scheduled scan runs at the date, time, and frequency you defined in your p-list. In the previous examples, the scan runs at 2:50 AM every Friday. 
 
     - The `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday. The range is between 1 and 7 with 7 representing Sunday.
     - The `Day` value of `StartCalendarInterval` uses an integer to indicate the third day of the month. The range is between 1 and 31.
     - The `Hour` value of `StartCalendarInterval` uses an integer to indicate the second hour of the day. The range is between 0 and 23.
-      The `Minute` value of `StartCalendarInterval` uses an integer to indicate fifty minutes of the hour. The range is between 0 and 59.
+      The `Minute` value of `StartCalendarInterval` uses an integer to indicate 50 minutes of the hour. The range is between 0 and 59.
     
     
  > [!IMPORTANT]
@@ -143,18 +143,18 @@ The following code shows the schema you need to use to schedule a quick scan.
 
 ## Schedule a scan with Intune
 
-You can also schedule scans with Microsoft Intune. The runMDATPQuickScan.sh shell script available at [Scripts for Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/macOS/Config/MDATP) will persist when the device resumes from sleep mode. 
+You can also schedule scans with Microsoft Intune. The runMDATPQuickScan.sh shell script available at [Scripts for Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/macOS/Config/MDATP) persists when the device resumes from sleep mode. 
 
 See [Use shell scripts on macOS devices in Intune](/mem/intune/apps/macos-shell-scripts) for more detailed instructions on how to use this script in your enterprise.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
 
 ## Schedule a scan with Microsoft Defender for Endpoint on macOS
 
-You can create a scheduled scan for your macOS which is built-in to Microsoft Defender for Endpoint on macOS.
+You can create a scheduled scan for your macOS, which is built-in to Microsoft Defender for Endpoint on macOS.
 
 For more information on the _.plist_ file format used here, see [About Information Property List Files](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) at the official Apple developer website.
 
-Below is a sample of daily and/or weekly configuration for the scheduled scan on macOS.
+The following sample shows the daily and/or weekly configuration for the scheduled scan on macOS.
 
 Schedules are based on the local time zone of the device.
 
@@ -167,9 +167,9 @@ Schedules are based on the local time zone of the device.
 | dayOfWeek | The range is between 0 and 8. <br>- 0: Everyday <br>- 1: Sunday <br>- 2: Monday <br>- 3: Tuesday <br>- 4: Wednesday <br>- 5: Thursday <br>- 6: Friday <br>- 7: Saturday <br>- 8: Never |
 | timeOfDay | Specifies the time of day, as the number of _minutes after midnight_, to perform a scheduled scan. The time refers to the local time on the computer. If you don't specify a value for this parameter, a scheduled scan runs at a default time of two hours after midnight. |
 | interval | 0 (never), every 1 (hour) to 24 (hours, 1 scan per day) |
-| randomizeScanStartTime | Only supported on version 101.23122.\* or higher. Only applicable for daily quick scans or weekly quick/full scans. Randomize the start time of the scan by up to specified number of hours. <br> For example, if a scan is scheduled for 2 p.m and randomizeScanStartTime is set to 2, the scan will commence at a random time between 2 p.m and 4 p.m. |
+| randomizeScanStartTime | Only supported on version 101.23122.\* or higher. Only applicable for daily quick scans or weekly quick/full scans. Randomize the start time of the scan by up to specified number of hours. <br> For example, if a scan is scheduled for 2 p.m and randomizeScanStartTime is set to 2, the scan commences at a random time between 2 p.m and 4 p.m. |
 
-Your scheduled scan will run at the date, time, and frequency you defined in your _plist_.
+Your scheduled scan runs at the date, time, and frequency you defined in your _plist_.
 
 ### Option 1: Schedule a quick scan using a _plist_
 
