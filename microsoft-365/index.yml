@@ -26,7 +26,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Join us at the Microsoft 365 Conference April 30 - May 2
+    - title: Join us at the Microsoft 365 Community Conference April 30 - May 2
       itemType: whats-new
       url: https://www.m365conf.com/#!/?wt.mc_id=m365conf_docs_webpage_mwmktg
     # Card
