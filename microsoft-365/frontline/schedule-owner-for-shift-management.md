@@ -12,7 +12,7 @@ searchScope:
   - Microsoft Teams
   - Microsoft Cloud for Healthcare
   - Microsoft Cloud for Retail
-description: Learn how to manage shift owners for schedule management. You can set a policy to elevate the permission of a team member to a schedule owner. 
+description: Learn how to use role assignments in Shifts and Teams to define your frontline managers and workers in Shifts. 
 f1.keywords:
 - NOCSH
 ms.localizationpriority: high
@@ -83,11 +83,13 @@ Contoso set up their team roles as follows based on employees' responsibilities:
 
 - Store managers are responsible for their store's success, and only get involved in daily department management activities if necessary. For their store's team, the store manager is assigned a **team owner** role in Teams.  
 
-- Department managers manage the day-to-day activities of their team in Shifts, including scheduling and shift requests. They don’t require team owner privileges in Teams. Department managers are assigned the **team member** role in Teams and **schedule owner** role in Shifts.
+- Department managers manage the day-to-day activities of their team in Shifts, including managing schedules and shift requests. They don’t need team owner privileges in Teams. Department managers are assigned the **team member** role in Teams and **schedule owner** role in Shifts.
 
 - Store associates work in a specific department, and are assigned the **team member** role in Teams.  
 
 ## Frontline manager role assignment
+
+As mentioned eariler, a frontline manager in Shifts can be a team owner in Teams *or* a team member in Teams who is elevated to a schedule owner in Shifts.
 
 ### Team owner in Teams
 
@@ -97,15 +99,9 @@ The person who creates a new team in Teams is the team owner by default. Team ow
 
 ### Schedule owner in Shifts
 
-Team member in Teams who is elevated to a schedule owner in Shifts. The Schedule Owner feature lets you elevate the permissions of a team member so that they can manage schedules without making the employee a team owner. With Schedule Owner permissions, an employee can manage their team’s schedule without being able to modify any other team properties such as updating, editing, or deleting team channels.
+You can elevate the permissions of a team member to a schedule owner role in Shifts so they can manage schedules without making that employee a team owner. With schedule owner permissions, an employee can manage their team’s schedule without being able to do things like add or remove members or delete a team.
 
-As an admin, you use policies to manage schedule owners in Shifts for your organization.
-
-- [New-CsTeamsShiftsPolicy](/powershell/module/teams/new-csteamsshiftspolicy?view=teams-ps)
-- [Get-CsTeamsShiftsPolicy](/powershell/module/teams/get-csteamsshiftspolicy?view=teams-ps)
-- [Set-CsTeamsShiftsPolicy](/powershell/module/teams/set-csteamsshiftspolicy?view=teams-ps)
-- [Grant-CsTeamsShiftsPolicy](/powershell/module/teams/grant-csteamsshiftspolicy?view=teams-ps)
-- [Remove-CsTeamsShiftsPolicy](/powershell/module/teams/remove-csteamsshiftspolicy?view=teams-ps)
+As an admin, you use policies to manage schedule owners in Shifts for your organization. You use PowerShell to create a policy, and then assign that policy to individual users or groups of users.
 
 1. Create a TeamsShiftsPolicy instance by using the [New-CsTeamsShiftsPolicy](/powershell/module/teams/new-csteamsshiftspolicy?view=teams-ps) PowerShell cmdlet.
 
@@ -132,7 +128,13 @@ As an admin, you use policies to manage schedule owners in Shifts for your organ
     > [!IMPORTANT]
     > When a policy is assigned to a group, all members of that group become schedule owners across every Shifts schedule they belong to. Say, for example, adelev@contoso is part of the group to which we assign the ShiftsScheduleOwners policy. This means that adelev@contoso.com is a frontline manager (with the schedule owner role) in Shifts in every team they're a member of.
 
-    The creation of a group can be done through static or dynamic groups. Learn more about [how to manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups). Learn more about [groups in Microsoft Entra ID](/entra/fundamentals/concept-learn-about-groups)
+    Group membership can be static or dynamic. Learn more about [groups in Microsoft Entra ID](/entra/fundamentals/concept-learn-about-groups) and [how to manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
+
+See also:
+
+- [Get-CsTeamsShiftsPolicy](/powershell/module/teams/get-csteamsshiftspolicy?view=teams-ps)
+- [Set-CsTeamsShiftsPolicy](/powershell/module/teams/set-csteamsshiftspolicy?view=teams-ps)
+- [Remove-CsTeamsShiftsPolicy](/powershell/module/teams/remove-csteamsshiftspolicy?view=teams-ps)
 
 ## Related articles
 
