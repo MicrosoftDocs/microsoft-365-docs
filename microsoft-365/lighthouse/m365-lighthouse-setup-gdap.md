@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 06/09/2023
+ms.date: 1/18/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -57,7 +57,7 @@ If you encounter any problems during GDAP setup, see [Troubleshoot error message
 
 To get started:
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Home**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Home**.
 
 2. On the **Set up GDAP** card, select **Set up GDAP**.
 
@@ -131,7 +131,11 @@ You need at least one security group per support role for each template. For the
 
 8. Select **Save and close** to save your settings and exit GDAP Setup.
 
-JIT agent security group users are eligible to request access to highly privileged GDAP roles; they are not given access to them automatically. As part of GDAP Setup, select a JIT approver security group from your tenant to approve access requests from JIT agents. The JIT approver security group must be role assignable. After completing GDAP setup, a JIT access policy is created for JIT agents to request access.  You can review the policy created in the [Microsoft Entra ID Governance portal](https://portal.azure.com/#view/Microsoft_AAD_ERM/DashboardBlade/~/elmEntitlement), and JIT agents can request access to their roles from the [My Access portal](https://myaccess.microsoft.com/#/access-packages). For more information on how JIT agents can request access, see [Manage access to resources](/azure/active-directory/governance/entitlement-management-access-package-first?wt.mc_id=365admincsh_lighthouse). For more information on how approvers can approve requests, see [Approve or deny request](/azure/active-directory/governance/entitlement-management-access-package-first?wt.mc_id=365admincsh_lighthouse).
+JIT agent security group users are eligible to request access to highly privileged GDAP roles; they're not given access to them automatically. As part of GDAP Setup, select a JIT approver security group from your tenant to approve access requests from JIT agents.
+
+The JIT approver security group must be role-assignable. If you're not seeing a security group appear in GDAP Setup, confirm that the security group is role-assignable. For more information on how to manage role assignments, see [Use Microsoft Entra groups to manage role assignments](/entra/identity/role-based-access-control/groups-concept).
+
+After completing GDAP setup, a JIT access policy is created for JIT agents to request access. You can review the policy created in the [Microsoft Entra ID Governance portal](https://portal.azure.com/#view/Microsoft_AAD_ERM/DashboardBlade/~/elmEntitlement), and JIT agents can request access to their roles from the [My Access portal](https://myaccess.microsoft.com/#/access-packages). For more information on how JIT agents can request access, see [Manage access to resources](/azure/active-directory/governance/entitlement-management-access-package-first). For more information on how approvers can approve requests, see [Approve or deny request](/azure/active-directory/governance/entitlement-management-access-package-first).
 
 ### Step 4: Tenant assignments
 
@@ -159,7 +163,7 @@ It may take a minute or two for the settings you've configured to apply. If you 
 > For customers with an existing DAP relationship, these settings are automatically applied. Customers with an Active status on the last page of GDAP Setup are assigned to roles and security groups as defined in the GDAP template.  
 
 > [!NOTE]
-> For customers without an existing DAP relationship, an admin relationship request link is generated for each customer on the last page of GDAP Setup. From there, you can send the link to your customer's Global Administrator so they can approve the GDAP relationship. Once the relationship is approved, rerun GDAP Setup to assign the security groups to the GDAP relationship created for that customer.
+> For customers without an existing DAP relationship, an admin relationship request link is generated for each customer on the last page of GDAP Setup. From there, you can send the link to your customer's Global Administrator so they can approve the admin relationship. Once the relationship is approved, the GDAP template settings will be applied. It may take up to an hour after relationship approval for changes to appear in Lighthouse.
 
 Once you've completed GDAP Setup, you can navigate to different steps to update or change roles, security groups, or templates. GDAP relationships are now visible in Partner Center and the security groups are now visible in Microsoft Entra ID.
 

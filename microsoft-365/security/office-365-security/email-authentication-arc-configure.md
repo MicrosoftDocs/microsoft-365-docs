@@ -65,6 +65,7 @@ When an admin adds a trusted ARC sealer, Microsoft 365 validates and trusts the 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** or **Security Administrator** role groups.
   - [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
@@ -142,7 +143,7 @@ dkim=[1,1,header.d=sampledoamin.onmicrosoft.com]
 dmarc=[1,1,header.from=sampledoamin.onmicrosoft.com])
 ```
 
-To check whether the ARC result was used to override a DMARC failure, look for `compauth=pass` and `reason=130` in the last **ARC-Authentication-Results** header. For example:
+To check whether the ARC result was used to override a DMARC failure, look for `compauth=pass` and `reason=130` in the last **Authentication-Results** header. For example:
 
 
 ```text

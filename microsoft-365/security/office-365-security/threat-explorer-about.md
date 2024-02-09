@@ -101,7 +101,7 @@ Tags information is also shown in the URL clicks flyout. To view it, go to Phish
 >
 Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
-## Upcoming improvements to the threat hunting experience 
+## Upcoming improvements to the threat hunting experience
 
 ### Updated threat information for emails
 

@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - teams-1p-app-admin
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/15/2023
+ms.date: 01/11/2024
 
 ---
 
@@ -106,6 +107,9 @@ You can choose to allow schedule owners to create and manage schedule groups or 
 ### Review and finish setup
 
 Review your settings. If you need to make changes, select **Back**, and edit the settings that you want. When you're ready, select **Finish setup**.
+
+> [!NOTE]
+> If you haven’t deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center, there may be an error after you finish the setup wizard. If an error occurs, wait 15 minutes and try again.
 
 :::image type="content" source="media/dsas-finish-setup.png" alt-text="Screenshot of the Review and finish setup page, showing a summary of the selected settings. "lightbox="media/dsas-finish-setup.png":::
 

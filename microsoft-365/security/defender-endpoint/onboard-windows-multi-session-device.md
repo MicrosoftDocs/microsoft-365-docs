@@ -15,7 +15,7 @@ ms.collection:
 - tier3
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 06/27/2023
+ms.date: 01/18/2024
 ---
 
 # Onboard Windows devices in Azure Virtual Desktop
@@ -124,35 +124,7 @@ As part of your onboarding, you may want to consider setting a machine tag to di
 
 When building your golden image, you may want to configure initial protection settings as well. For more information, see [Other recommended configuration settings](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
-Also, if you're using FSlogix user profiles, we recommend you exclude the following files from always-on protection:
-
-**Exclude Files:**
-
-`%ProgramFiles%\FSLogix\Apps\frxdrv.sys`
-
-`%ProgramFiles%\FSLogix\Apps\frxdrvvt.sys`
-
-`%ProgramFiles%\FSLogix\Apps\frxccd.sys`
-
-`%TEMP%\*.VHD`
-
-`%TEMP%\*.VHDX`
-
-`%Windir%\TEMP\*.VHD`
-
-`%Windir%\TEMP\*.VHDX`
-
-`\\storageaccount.file.core.windows.net\share\*\*.VHD`
-
-`\\storageaccount.file.core.windows.net\share\*\*.VHDX`
-
-**Exclude Processes:**
-
-`%ProgramFiles%\FSLogix\Apps\frxccd.exe`
-
-`%ProgramFiles%\FSLogix\Apps\frxccds.exe`
-
-`%ProgramFiles%\FSLogix\Apps\frxsvc.exe`
+Also, if you're using FSlogix user profiles, we recommend you follow the guidance described in [FSLogix antivirus exclusions](/fslogix/overview-prerequisites#configure-antivirus-file-and-folder-exclusions). 
 
 #### Licensing requirements
 
@@ -166,4 +138,5 @@ Licensing requirements for Microsoft Defender for Endpoint can be found at: [Lic
 [FSLogix anti-malware exclusions](/fslogix/overview-prerequisites#configure-antivirus-file-and-folder-exclusions)
 
 [Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

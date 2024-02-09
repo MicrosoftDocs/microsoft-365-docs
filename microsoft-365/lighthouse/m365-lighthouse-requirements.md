@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 11/10/2023
+ms.date: 1/17/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-get-started
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
@@ -24,16 +25,16 @@ description: "For Managed Service Providers (MSPs), get a list of requirements t
 
 # Requirements for Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse is a portal that helps Managed Service Providers (MSPs) grow their business and deliver services at scale for small- and medium-sized business (SMB) customers. Lighthouse provides multi-tenant views across customer devices, data, users, and sales opportunities to help customers get the most value from Microsoft 365.  
+Microsoft 365 Lighthouse is an admin portal that provides advanced capabilities for Managed Service Providers (MSPs) to manage customers at scale through proactive account management, simplified onboarding, efficient tenant configuration, device protection, and alerts. Lighthouse provides insights into customer acquisition, retention, and growth opportunities, as well as multi-tenant views across customer devices, data, and users to help customers get the most value from Microsoft 365.  
 
-Lighthouse is available to partners enrolled in the Cloud Solution Provider (CSP) program, including both Direct-Bill and Indirect Resellers.  
+Lighthouse is available to partners enrolled in the Cloud Solution Provider (CSP) program, including both indirect resellers and direct-bill partners.  
 
 > [!NOTE]
-> Only MSPs are required to enroll in the CSP program; the customers they manage don't need to enroll in the CSP program.
+> Only partners are required to enroll in the CSP program; the customers they manage don't need to enroll in the CSP program.
 
-In addition, each MSP customer tenant must meet the following requirements to be actively monitored and managed in Lighthouse:
+In addition, each customer tenant must meet the following requirements to be actively monitored and managed in Lighthouse:
 
-- Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant
+- Must have delegated access set up for the partner to be able to manage the customer tenant
     > [!NOTE]
     > Either granular delegated admin privileges (GDAP) or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. An indirect reseller relationship is no longer required to onboard to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups.
     > [!NOTE]

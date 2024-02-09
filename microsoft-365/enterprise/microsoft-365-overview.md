@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/08/2022
+ms.date: 02/08/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,8 @@ ms.localizationpriority: high
 ms.collection: 
 - scotvorg
 - M365-subscription-management
+- must-keep
+- essentials-overview
 ms.custom: 
 - it-pro
 - intro-overview
@@ -32,7 +34,7 @@ Microsoft 365 for enterprise consists of:
 |Services|Description|
 |---|---|
 |Local apps and cloud-based apps and productivity services|Includes both Microsoft 365 Apps for enterprise, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more.|
-|Windows 10 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
+|Windows 11 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
 |Device management and advanced security services|Includes Microsoft Intune, which is a cloud-based enterprise mobility management service that helps enable your workforce to be productive while protecting your organization data.|
 
 ## Plans
@@ -144,12 +146,11 @@ For more information and configuration examples for a small and medium business 
 
 [![Image for the Best together with Surface and the Edge browser poster.](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
 
-
 ## Microsoft 365 training
 
 ![Microsoft 365 Fundamentals training.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](/training/paths/m365-fundamentals/).
+To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Fundamentals](/training/courses/ms-900t01/).
 
 ## See also
 

@@ -68,11 +68,10 @@ Each insight captures the number of Copilot-enabled users in your organization p
 
 ### Summarize
 
-- **Summarize a Teams meeting:** This represents the number of users who summarize meetings using Copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a meeting in the Copilot chat box.
-- **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using Copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a conversation in the Copilot chat box.
-- **Summarize an email thread:** This represents the number of users who summarize email threads using Copilot in Outlook. This doesn't include the instances when the user types to summarize an Outlook thread in the Copilot chat box.
-- **Summarize a Word document:** This represents the number of users who summarize Word documents using Copilot in Microsoft Word. This doesn't include the instances when the user types to summarize a document in the Copilot chat box.
-- **Summarize a presentation:** This represents the number of users who summarize a presentation using Copilot in Microsoft PowerPoint. This doesn't include the instances when the user types to summarize a presentation in the Copilot chat box.
+- **Summarize a Teams meeting:** This represents the number of users who summarize meetings using Copilot in Microsoft Teams.
+- **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using Copilot in Microsoft Teams.
+- **Summarize an email thread:** This represents the number of users who summarize email threads using Copilot in Outlook.
+- **Summarize a Word document:** This represents the number of users who summarize Word documents using Copilot in Microsoft Word.
 
 ### Create
 
@@ -97,7 +96,7 @@ Use this feature to provide your organizational leaders with a centralized locat
 
 :::image type="content" source="../../media/as-upload-survey.png" alt-text="Screenshot showing the dashboard to upload survey data for Copilot sentiment" lightbox="../../media/as-upload-survey.png":::
 
-:::image type="content" source="../../media/as-survey-results.png" alt-text="Screenshot showing the pop-up pane for survey results for Copilot sentiment" lightbox="../../media/as-survey-results.png":::
+:::image type="content" source="../../media/as-survey-results.png" alt-text="Screenshot showing the pop-up pane for survey results for Copilot sentiment":::
 
 ### Update results over time
 

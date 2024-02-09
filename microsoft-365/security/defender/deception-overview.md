@@ -37,7 +37,7 @@ ms.date: 11/14/2023
 
 Microsoft Defender XDR, through built-in deception capability, delivers high confidence detections of human-operated lateral movement, preventing attacks from reaching an organization's critical assets. Various attacks like [business email compromise (BEC)](https://www.microsoft.com/security/business/security-101/what-is-business-email-compromise-bec), [ransomware](/security/ransomware/), organizational breaches, and nation-state attacks often use lateral movement and can be hard to detect with high confidence in the early stages. Defender XDR's deception technology provides high confidence detections based on deception signals correlated with Microsoft Defender for Endpoint signals.
 
-The deception capability automatically generates authentic-looking decoy accounts, hosts, and lures. The fake assets generated are then automatically deployed to specific clients. When an attacker interacts with the decoys or lures, the deception capability raises high confidence alerts, helping in security team’s investigations and allowing them to observe an attacker’s methods and strategies. All alerts raised by the deception capability are automatically correlated into incidents and are fully integrated into Microsoft Defender XDR. In addition, the deception technology is integrated into Defender for Endpoint, minimizing deployment needs.
+The deception capability automatically generates authentic-looking decoy accounts, hosts, and lures. The fake assets generated are then automatically deployed to specific clients. When an attacker interacts with the decoys or lures, the deception capability raises high confidence alerts, helping in security team's investigations and allowing them to observe an attacker's methods and strategies. All alerts raised by the deception capability are automatically correlated into incidents and are fully integrated into Microsoft Defender XDR. In addition, the deception technology is integrated into Defender for Endpoint, minimizing deployment needs.
 
 This article gives you an overview of Defender XDR's deception technology, prerequisites, and additional resources.
 
@@ -49,14 +49,14 @@ The following table lists the requirements to enable the deception capability in
 > |Requirement|Details|
 > |-------------|----------|
 > |Subscription requirements|One of these subscriptions:</br> - Microsoft 365 E5</br> - Microsoft Security E5</br> - Microsoft Defender for Endpoint Plan 2|
-> |Deployment requirements|Requirements:</br> - Defender for Endpoint is the primary EDR solution</br> - [Automated investigation and response capabilities in Defender for Endpoint](/defender-endpoint/configure-automated-investigations-remediation/) is configured</br> - Devices are [joined](/entra/identity/devices/concept-directory-join/) or [hybrid joined](/entra/identity/devices/concept-hybrid-join/) in Microsoft Entra</br> - PowerShell is enabled on the devices</br> - The deception feature covers clients operating on Windows 10 RS5 and later in preview|
+> |Deployment requirements|Requirements:</br> - Defender for Endpoint is the primary EDR solution</br> - [Automated investigation and response capabilities in Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation) is configured</br> - Devices are [joined](/entra/identity/devices/concept-directory-join/) or [hybrid joined](/entra/identity/devices/concept-hybrid-join/) in Microsoft Entra</br> - PowerShell is enabled on the devices</br> - The deception feature covers clients operating on Windows 10 RS5 and later in preview|
 > |Permissions|You must have one of the following roles assigned in the [Microsoft Entra admin center](https://entra.microsoft.com) or in the [Microsoft 365 admin center](https://admin.microsoft.com) to configure deception capabilities:</br> - Global administrator</br> - Security administrator|
 
 ## What is deception technology?
 
 Deception technology is a security measure that provides immediate alerts of a potential attack to security teams, allowing them to respond in real-time. Deception technology creates fake assets like devices, users, and hosts that appear to belong to your network.
 
-Attackers interacting with the fake network assets set up by the deception capability can help security teams prevent potential attacks from compromising an organization and monitor the attackers’ actions so defenders can improve their environment’s security further.
+Attackers interacting with the fake network assets set up by the deception capability can help security teams prevent potential attacks from compromising an organization and monitor the attackers' actions so defenders can improve their environment's security further.
 
 ### How does the Microsoft Defender XDR deception capability work?
 
@@ -73,7 +73,7 @@ There are two types of lures available in the deception feature:
 - Advanced lures – planted content like cached credentials and interceptions that respond or interact with the customer environment. For example, attackers might interact with decoy credentials that were injected responses to Active Directory queries, which can be used to sign in.
 
 > [!NOTE]
-> Lures are only planted on Windows clients defined in the scope of a deception rule. However, attempts to use any decoy host or account on any Defender for Endpoint-onboarded client raises a deception alert. Learn how to onboard clients in [Onboard to Microsoft Defender for Endpoint](/defender-for-endpoint/onboarding/). Planting lures on Windows Server 2016 and later is planned for future development.
+> Lures are only planted on Windows clients defined in the scope of a deception rule. However, attempts to use any decoy host or account on any Defender for Endpoint-onboarded client raises a deception alert. Learn how to onboard clients in [Onboard to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding). Planting lures on Windows Server 2016 and later is planned for future development.
 
 You can specify decoys, lures, and the scope in a deception rule. See [Configure the deception feature](configure-deception.md) to learn more about how to create and modify deception rules.  
 

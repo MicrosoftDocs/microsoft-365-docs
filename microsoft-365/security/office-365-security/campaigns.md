@@ -57,13 +57,12 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 - The campaigns feature is available in organizations with Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5).
 - You need to be assigned permissions to view information about campaigns as described in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Raw data (email & collaboration)/Email message headers (read)**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
     - **Organization Management**
     - **Security Administrator**
     - **Security Reader**
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
-
-<a name='campaigns-page-in-the-microsoft-365-defender-portal'></a>
 
 ## Campaigns page in the Microsoft Defender portal
 

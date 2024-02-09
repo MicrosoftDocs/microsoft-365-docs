@@ -108,16 +108,6 @@ Watch the following video for an overview of the virtual appointments experience
 
 More information: [Virtual Appointments with Microsoft Teams](virtual-appointments.md)
 
-## Help your team, clients, and customers
-
-Find resources to share with your team to help them get comfortable using Teams apps and features. Get customizable infographics and web content to help your clients and customers use Virtual Appointments with your organization.
-
-| Scenario | Description |
-| --- | --- |
-|[Help your clients and customers use virtual appointments scheduled with Bookings](virtual-appointments-toolkit.md) |Customizable infographics and FAQ that you can add to your website to make it easy for your clients to use virtual appointments with your organization. |
-|[Help your frontline workers track time and attendance](shifts-toolkit.md) |Videos to help your frontline managers and employees learn about how to use Shifts in Microsoft Teams. |
-|[Help your frontline workers use collaboration apps and features](collab-features-apps-toolkit.md) |Videos to help your frontline team use Microsoft Teams apps and features. |
-
 ## More scenarios and solutions with the digital ecosystem
 
 All of the scenarios above can be achieved with out of the box capabilities from Microsoft. But you can extend even further with third-party apps in [AppSource](https://appsource.microsoft.com/marketplace/apps?search=frontline&page=1) and custom apps that you or our partners build for you with Power Platform, Teams, and Viva extensibility.
