@@ -148,9 +148,9 @@ You can also schedule scans with Microsoft Intune. The runMDATPQuickScan.sh shel
 See [Use shell scripts on macOS devices in Intune](/mem/intune/apps/macos-shell-scripts) for more detailed instructions on how to use this script in your enterprise.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
 
-## Schedule a scan with Microsoft Defender for Endpoint on macOS
+## Schedule a scan with *Microsoft Defender for Endpoint on macOS*
 
-You can create a scheduled scan for your macOS, which is built-in to Microsoft Defender for Endpoint on macOS.
+You can create a scheduled scan for your macOS, which is built-in to *Microsoft Defender for Endpoint on macOS*.
 
 For more information on the _.plist_ file format used here, see [About Information Property List Files](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) at the official Apple developer website.
 
