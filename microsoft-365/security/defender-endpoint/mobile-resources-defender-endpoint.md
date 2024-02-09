@@ -65,3 +65,28 @@ Suspicious certificates |Informational| | |
 
 [Complete privacy information for iOS](ios-privacy.md)
 
+
+## Microsoft Defender Mobile App exclusion from Conditional Access(CA) Policies
+
+Microsoft Defender Mobile app is a security app which needs to constantly be running in the background to report the device security posture. This security posture is used in the Compliance and App Protection policies to secure the managed apps and ensure that corporate data is accessed only in a secured device.  However, in the presence of restrictive Conditional Access policies such as having Block policies based on certain locations or enforcing Sign in very frequently (end user needs to periodically re sing in) can result in Defender blocked from reporting posture. If the Defender app fails to report the device posture this can lead to situation where the device is under a threat. Hence leading to vulnerability of corporate data on the device. To ensure seamless protection, we recommend excluding the Defender app from the blocking Conditional Access Policy.
+
+### Apps required to exclude:
+
+1. **Xplat Broker App ( a0e84e36-b067-4d5c-ab4a-3db38e598ae2)**
+Xplat Broker App is the application responsible for forwarding Defender risk signals to the Defender backend. However, the presence of restrictive CA policies     can result in Defender blocked from reporting signals. In these scenarios, we recommend to exclude the Xplat Broker App. Please note, that **Xplat Broker Ap** is also used by other platforms like Mac and Linux. So if the policy is same for these platforms, it will be better to create a separate Conditional Access policy for Mobile.
+
+
+2. **TVM app (e724aa31-0f56-4018-b8be-f8cb82ca1196)**		
+Microsoft Defender for Mobile TVM is the service which provides the vulnerability assessment for the installed apps on the iOS devices. However, the presence of restrictive CA policies can result in Defender blocked from communicating the onboarding requests to the TVM backend services. This service should be excluded if MDVM (Vulnerability Assessment) is used in the organization.
+
+### Steps to exclude:
+
+1. Create service principal for the apps that needs to be excluded. [Steps to create service principal.](/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-1.0&tabs=powershell#request)
+1. While creating the service principal object above, use these app ids: **Xplat Broker App ( a0e84e36-b067-4d5c-ab4a-3db38e598ae2), TVM app (e724aa31-0f56-4018-b8be-f8cb82ca1196).** 
+1. Once the object is successfully created the two apps will be visible in the CA screen and can be excluded.
+
+
+
+
+![AppExclusion](media/mobile-resources-defender-endpoint/appexclusion.png)
+
