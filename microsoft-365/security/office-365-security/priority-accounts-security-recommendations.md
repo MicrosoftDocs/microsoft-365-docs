@@ -51,7 +51,7 @@ Microsoft 365 and Microsoft Defender for Office 365 contain several key features
 |[Train users](#train-users)|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|:::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" border="false":::|
 
 > [!NOTE]
-> For information about securing _privileged accounts_ (admin accounts), see [this topic](/security/compass/critical-impact-accounts).
+> For information about securing _privileged accounts_ (admin accounts), see [this topic](/purview/privileged-access-management).
 
 ## Increase sign-in security for priority accounts
 
@@ -121,7 +121,7 @@ Microsoft 365 provides the following resources to help inform users in your orga
 |---|---|---|
 |Microsoft 365|[Customizable learning pathways](/office365/customlearning/)|These resources can help you put together training for users in your organization.|
 |Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/training/modules/security-with-microsoft-365)|This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
-|Multi-factor authentication|[Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|This article helps end users understand what multi-factor authentication is and why it's being used at your organization.|
+|Multi-factor authentication|[Download and install the Microsoft Authenticator app](https://support.microsoft.com/account-billing/351498fc-850a-45da-b7b6-27e523b8702a)|This article helps end users understand what multi-factor authentication is and why it's being used at your organization.|
 |Attack simulation training|[Get started using Attack simulation training](attack-simulation-training-get-started.md)|Attack simulation training in Microsoft Defender for Office 365 Plan 2 allows admin to configure, launch, and track simulated phishing attacks against specific groups of users.|
 
 In addition, Microsoft recommends that users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). These actions include:

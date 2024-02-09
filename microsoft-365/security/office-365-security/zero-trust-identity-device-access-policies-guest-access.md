@@ -71,7 +71,7 @@ This policy prompts guests to register for MFA in your tenant, regardless of whe
 
 While organizations can enforce risk-based policies for B2B users using Microsoft Entra ID Protection, there are limitations in the implementation of Microsoft Entra ID Protection for B2B collaboration users in a resource directory because their identity exists in their home directory. Due to these limitations, Microsoft recommends you exclude guests from risk-based MFA policies and require these users to always use MFA.
 
-For more information, see [Limitations of Identity Protection for B2B collaboration users](/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users).
+For more information, see [Limitations of ID Protection for B2B collaboration users](/entra/id-protection/concept-identity-protection-b2b#limitations-of-id-protection-for-b2b-collaboration-users).
 
 ### Excluding guests and external users from device management
 

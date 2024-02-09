@@ -40,7 +40,7 @@ Users don't need Defender for Endpoint installed on their local devices to get S
 
   Safe Documents isn't included in Microsoft Defender for Office 365 licensing plans.
 
-  For more information, see [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
+  For more information, see [Product names and service plan identifiers for licensing](/entra/identity/users/licensing-service-plan-reference).
 
 - They're using Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus) version 2004 or later.
 
@@ -62,8 +62,6 @@ Users don't need Defender for Endpoint installed on their local devices to get S
 To keep you protected, Safe Documents sends file information to the [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) cloud for analysis. Details on how Microsoft Defender for Endpoint handles your data can be found here: [Microsoft Defender for Endpoint data storage and privacy](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
 File information sent by Safe Documents isn't retained in Defender for Endpoint beyond the time needed for analysis (typically, less than 24 hours).
-
-<a name='use-the-microsoft-365-defender-portal-to-configure-safe-documents'></a>
 
 ## Use the Microsoft Defender portal to configure Safe Documents
 
@@ -111,7 +109,7 @@ For more information, see the following articles:
 
 - [View Microsoft 365 licenses and services with PowerShell](/microsoft-365/enterprise/view-licenses-and-services-with-microsoft-365-powershell)
 - [View Microsoft 365 account license and service details with PowerShell](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
-- [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
+- [Product names and service plan identifiers for licensing](/entra/identity/users/licensing-service-plan-reference)
 
 ### Onboard to the Microsoft Defender for Endpoint service to enable auditing capabilities
 

@@ -7,7 +7,7 @@ ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 01/22/2024
+ms.date: 01/30/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -29,6 +29,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+
+## February 2024
+- (Preview) **[Custom detection rules in Microsoft Graph security API](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#custom-detections)** are now available.  Create advanced hunting custom detection rules specific to your org to proactively monitor for threats and take action.
+
 ## January 2024
 
 - **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Take a moment to celebrate your organization's improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. 
@@ -39,19 +43,21 @@ You can also get product updates and important notifications through the [messag
 
 - Defender Experts for XDR now lets you [receive managed response notifications and updates using Teams](get-started-xdr.md#receive-managed-response-notifications-and-updates-in-microsoft-teams). You can also chat with Defender Experts regarding incidents where managed response is issued.
 
+- (GA) New functionality in the **incident queue's available filters** is now generally available. Prioritize incidents according to your preferred filters by creating filter sets and saving filter queries. Learn more about incident queue filters in [Available filters](incident-queue.md#available-filters).
+
 - (GA) Microsoft Defender for Cloud alerts integration with Microsoft Defender XDR is now generally available. Learn more about the integration in [Microsoft Defender for Cloud in Microsoft Defender XDR](microsoft-365-security-center-defender-cloud.md).
 
-- **Activity log** is now available within an incident page. Use the activity log to view all audits and comments, and add comments to the log of an incident. For details, see [Activity log](manage-incidents.md#activity-log). 
+- (GA) **Activity log** is now available within an incident page. Use the activity log to view all audits and comments, and add comments to the log of an incident. For details, see [Activity log](manage-incidents.md#activity-log). 
 
 - (Preview) **[Query history](advanced-hunting-query-history.md) in advanced hunting** is now available. You can now rerun or refine queries you have run recently. Up to 30 queries in the past 28 days can be loaded in the query history pane.
 
-- (Preview) Additional features you can use to **[drill down](/advanced-hunting-query-results#drill-down-from-query-results)** further from your query results in advanced hunting are now available.
+- (Preview) Additional features you can use to **[drill down](advanced-hunting-query-results.md#drill-down-from-query-results)** further from your query results in advanced hunting are now available.
 
 ## December 2023
 
 - **Microsoft Defender XDR Unified role-based access control (RBAC)** is now generally available. Unified (RBAC) allows administrators to manage user permissions across different security solutions from a single, centralized location. This offering is also available to GCC Moderate customers. To learn more, see [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md).
 
-- Microsoft Defender Experts for XDR now lets you [exclude devices and users](get-started-xdr.md#exclude-all-high-value-devices-or-users-automatically) from remediation actions taken by our experts and instead get remediation guidance for those entities.
+- Microsoft Defender Experts for XDR now lets you [exclude devices](get-started-xdr.md#exclude-devices-from-remediation) from remediation actions taken by our experts and instead get remediation guidance for those entities.
 
 - The Microsoft Defender portal's incident queue has updated filters, search, and added a new function where you can create your own filter sets. For details, see [Available filters](incident-queue.md#available-filters).
 
