@@ -41,7 +41,7 @@ Alternative titles:
 
 In Shifts, there are two user personas&mdash;frontline manager and frontline worker&mdash;based a user's responsibilities and activities within a team. This article explains the user personas and how to use roles in Shifts and Teams to define your frontline mangers and workers.
 
-- **Frontline managers** are responsible for the creation and overall management of their team’s schedule and requests. They're part of the frontline workforce with managerial responsibilities. A frontline manager in Shifts requires one of the following roles:
+- **Frontline managers** are responsible for the creation and overall management of their team’s schedule and shift requests. They're part of the frontline workforce with managerial responsibilities. A frontline manager in Shifts requires one of the following roles:
 
   - Team owner in Teams
   - Team member in Teams who is elevated to a schedule owner in Shifts
