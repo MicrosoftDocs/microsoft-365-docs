@@ -71,9 +71,9 @@ If you're using a terminal, download the tool by entering the following command:
 
 5. Three new zip files are produced:
 
-      1. **SupportToolLinuxBinary.zip** : For all Linux devices
-      2. **SupportToolmacOSBinary.zip** : For Intel-based Mac devices
-      3. **SupportToolmacOS-armBinary.zip** : For Arm-based Mac devices
+   - **SupportToolLinuxBinary.zip** : For all Linux devices
+   - **SupportToolmacOSBinary.zip** : For Intel-based Mac devices
+   - **SupportToolmacOS-armBinary.zip** : For Arm-based Mac devices
 
 6. Unzip one of the above 3 zip files based on the machine you need to investigate.\
 When using a terminal, unzip the file by entering one of the following commands based on machine type:
