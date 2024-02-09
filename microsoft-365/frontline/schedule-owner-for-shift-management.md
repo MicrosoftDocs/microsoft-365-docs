@@ -73,7 +73,6 @@ Each role has different capabilities in Shifts and in Teams. Here's a summary of
 |Add or remove members and guests.|||✔️|
 |Edit or delete a team.|||✔️|
 |Archive or restore a team.|||✔️|
-|Create a channel and participate in conversations.|✔️|✔️|✔️|
 |Share chat and channel files.|✔️|✔️|✔️|
 
 *Keep in mind that this table compares capabilities in Teams across the three roles. It's not a comprehensive list of capabilities for team owners and members in Teams. Learn more about [team owner and member capabilities in Teams](https://support.microsoft.com/office/team-owner-member-and-guest-capabilities-in-microsoft-teams-d03fdf5b-1a6e-48e4-8e07-b13e1350ec7b).
