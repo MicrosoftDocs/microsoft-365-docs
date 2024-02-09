@@ -32,8 +32,8 @@ search.appverid: met150
 > [!IMPORTANT]
 > Some information relates to a pre-released product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
->  [!NOTE] 
->The built-in Scheduled Scan is currently in public preview. Make sure to review the prerequisites to confirm requirements.
+> [!NOTE] 
+>The built-in Scheduled Scan is currently in public preview. Review the prerequisites carefully.
 
 ## Schedule a scan *built-in to* Microsoft Defender for Endpoint on macOS
 
