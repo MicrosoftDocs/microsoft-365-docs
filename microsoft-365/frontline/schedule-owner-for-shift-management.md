@@ -19,6 +19,7 @@ ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - teams-1p-app-admin
   - highpri
   - microsoftcloud-healthcare
   - microsoftcloud-retail
@@ -29,7 +30,7 @@ ms.custom: seo-marvel-mar2020
 ms.date: 
 ---
 
-# Schedule Owner for shift management
+# Roles in Shifts
 
 ## Overview
 
@@ -46,9 +47,9 @@ In Shifts, there are two user personas based on a user's responsibilities within
 
 Each role has different capabilities in Shifts and in Teams. Here's a summary of the capabilities of each role.
 
-**In Shifts**
+### In Shifts
 
-|Capability  |Team member |Schedule owner |Team owner |
+|Capability in Shifts  |Team member |Schedule owner |Team owner |
 |---------|---------|---------|---------|
 |Create, edit, and publish schedules to manage their team’s shifts assignments.||✔️|✔️|
 |View and manage (approve or deny) shift requests.||✔️|✔️|
@@ -60,9 +61,9 @@ Each role has different capabilities in Shifts and in Teams. Here's a summary of
 |Clock in and out of shifts.|✔️|✔️|✔️|
 |Set availability (or working preferences) in Shifts.|✔️|||
 
-**In Teams**
+### In Teams
 
-|Capability  |Team member  |Schedule owner |Team owner  |
+|Capability in Teams |Team member  |Schedule owner |Team owner  |
 |---------|---------|---------|---------|
 |Add or remove members and guests.|||✔️|
 |Edit or delete a team.|||✔️|
@@ -70,7 +71,7 @@ Each role has different capabilities in Shifts and in Teams. Here's a summary of
 |Create a channel and participate in conversations.|✔️|✔️|✔️|
 |Share chat and channel files.|✔️|✔️|✔️|
 
-This isn't a complete list. Learn more about [team owner and member capabilities in Teams](https://support.microsoft.com/office/team-owner-member-and-guest-capabilities-in-microsoft-teams-d03fdf5b-1a6e-48e4-8e07-b13e1350ec7b).
+Keep in mind that this table compares capabilities in Teams across the three roles. It's not a comprehensive list of capabilities for team owners and members in Teams. Learn more about [team owner and member capabilities in Teams](https://support.microsoft.com/office/team-owner-member-and-guest-capabilities-in-microsoft-teams-d03fdf5b-1a6e-48e4-8e07-b13e1350ec7b).
 
 ## Example scenario
 
@@ -98,7 +99,7 @@ The person who creates a new team in Teams is the team owner by default. Team ow
 
 Team member in Teams who is elevated to a schedule owner in Shifts. The Schedule Owner feature lets you elevate the permissions of a team member so that they can manage schedules without making the employee a team owner. With Schedule Owner permissions, an employee can manage their team’s schedule without being able to modify any other team properties such as updating, editing, or deleting team channels.
 
-As an admin, you use policies to manage schedule owners in Shifts for your organization. 
+As an admin, you use policies to manage schedule owners in Shifts for your organization.
 
 - [New-CsTeamsShiftsPolicy](/powershell/module/teams/new-csteamsshiftspolicy?view=teams-ps)
 - [Get-CsTeamsShiftsPolicy](/powershell/module/teams/get-csteamsshiftspolicy?view=teams-ps)
@@ -108,29 +109,32 @@ As an admin, you use policies to manage schedule owners in Shifts for your organ
 
 1. Create a TeamsShiftsPolicy instance by using the [New-CsTeamsShiftsPolicy](/powershell/module/teams/new-csteamsshiftspolicy?view=teams-ps) PowerShell cmdlet.
 
-Here, we create a new policy named ShiftsScheduleOwners and enable schedule owner permissions in the policy.
+    Here, we create a new policy named ShiftsScheduleOwners and enable schedule owner permissions in the policy.
 
-```powershell
-New-CsTeamsShiftsPolicy –Identity ShiftsScheduleOwners  -EnableScheduleOwnerPermissions $true -AccessType UnrestrictedAccess_TeamsApp
-```
+    ```powershell
+    New-CsTeamsShiftsPolicy –Identity ShiftsScheduleOwners  -EnableScheduleOwnerPermissions $true -AccessType UnrestrictedAccess_TeamsApp
+    ```
 
 1. Assign the policy to a specific user or group of users by using the [Grant-CsTeamsShiftsPolicy](/powershell/module/teams/grant-csteamsshiftspolicy?view=teams-ps) PowerShell cmdlet.
 
-In this example, we assign the ShiftsScheduleOwners policy to a user named remy@contoso.com.
+    In this example, we assign the ShiftsScheduleOwners policy to a user named remy@contoso.com.
 
-```powershell
-Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName ShiftsScheduleOwners
-```
+    ```powershell
+    Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName ShiftsScheduleOwners
+    ```
 
-In this example, we assign the ShiftsScheduleOwners policy to a group specified by its object ID.
+    In this example, we assign the ShiftsScheduleOwners policy to a group specified by its object ID.
 
-```powershell
-Grant-CsTeamsShiftsPolicy -Group 83d3ca56-50e9-46fb-abd4-4f66939188f8 -PolicyName ScheduleOwnerPolicy
-```
+    ```powershell
+    Grant-CsTeamsShiftsPolicy -Group 83d3ca56-50e9-46fb-abd4-4f66939188f8 -PolicyName ScheduleOwnerPolicy
+    ```
 
-> [!IMPORTANT]
-> When a policy is assigned to a group, all members of that group become schedule owners across every Shifts schedule they belong to. Say, for example, adelev@contoso is part of the group to which we assign the ShiftsScheduleOwners policy. This means that adelev@contoso.com is a frontline manager (with the schedule owner role) in Shifts in every team they're a member of. 
+    > [!IMPORTANT]
+    > When a policy is assigned to a group, all members of that group become schedule owners across every Shifts schedule they belong to. Say, for example, adelev@contoso is part of the group to which we assign the ShiftsScheduleOwners policy. This means that adelev@contoso.com is a frontline manager (with the schedule owner role) in Shifts in every team they're a member of.
+
+    The creation of a group can be done through static or dynamic groups. Learn more about [how to manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups). Learn more about [groups in Microsoft Entra ID](/entra/fundamentals/concept-learn-about-groups)
 
 ## Related articles
 
+- [Shifts for frontline workers](shifts-for-teams-landing-page.md)
 - [Manage the Shifts app for your organization in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
