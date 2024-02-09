@@ -55,7 +55,7 @@ If you're using a terminal, download the tool by entering the following command:
     echo '0A8E32B618F278BED60AB6763E9458BA2CD02C99D718E50DCCE51A7DBAC69863 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
-3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
+3. Extract the contents of _XMDEClientAnalyzerBinary.zip_ on the machine.
 
     If you're using a terminal, extract the files by entering the following command:
 
@@ -96,7 +96,7 @@ When using a terminal, unzip the file by entering one of the following commands 
      unzip -q SupportToolmacOS-armBinary.zip
      ```
 
-7. Run the tool as <i>root</i> to generate diagnostic package:
+7. Run the tool as _root_ to generate diagnostic package:
 
    ```console
    sudo ./MDESupportTool -d
