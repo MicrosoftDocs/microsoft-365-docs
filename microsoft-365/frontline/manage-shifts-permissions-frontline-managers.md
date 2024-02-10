@@ -32,33 +32,36 @@ ms.date:
 
 # Manage Shifts permissions for frontline managers
 
-Frontline managers create and manage of their team’s schedule and shift requests. By default, frontline managers can do the following in Shifts:
+Frontline managers create and manage their team’s schedule and shift requests. By default, frontline managers can do the following in Shifts:
 
-- Configure Shifts settings for their teams. For example, managers can enable time-off requests and time clock for their respective teams.  
+- Configure [Shifts settings](https://support.microsoft.comoffice/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b) for their teams. For example, they can set whether frontline workers on their team can swap shifts and request time off.  
 - Create and manage schedule groups for their teams in Shifts. Schedule groups are used to group frontline workers based on common characteristics within a team, such as departments or job types.
 
-Depending on the needs of your organization, you might need to control which settings frontline managers can configure in Shifts for their teams and whether frontline managers can create and manage schedule groups. You can control and define the capabilities of your frontline managers by using the [Graph API]().
+Depending on the needs of your organization, you might need to control which settings frontline managers can configure in Shifts for their teams and whether frontline managers can create and manage schedule groups. You control these capabilities by using the [Graph API]().
 
-The following table lists what frontline managers can do in Shifts, and indicates whether you can control their permissions to do so.
+The following table lists what frontline managers can do, and indicates whether you can restrict their permissions to do so.
+
+The following table lists the capabilities that are available to frontline managers for managing their teams, and indicates whether you can restrict their permissions to do so.
 
 |Capability|Description|Can control permissions|
 |---------|---------|:---------:|
 |Team time zone|Select the team's time zone and closest city.||
 |Start of week|Set the day of the week for schedules to start.||
 |Copying shifts|Set whether shifts activities are automatically included when copying shifts.||
-|Open shifts|Turn on or turn off the ability to create and request open shifts.|✔️|
-|Swap shifts|Turn on or off workers' ability to swap shifts with each other. |✔️|
-|Offer shift|Turn on or off workers' ability to offer shifts to coworkers.|✔️|
+|Open shifts|Turn on or turn off the ability to create and request open shifts.|✔️&sup1;|
+|Swap shifts|Turn on or off workers' ability to swap shifts with each other. |✔️&sup1;|
+|Offer shift|Turn on or off workers' ability to offer shifts to coworkers.|✔️&sup1;|
 |Time-off requests|Turn on or turn off workers' ability to request time off.|✔️|
 |Time-off reasons|Add and edit time-off reasons for the team.|✔️|
 |Time clock|Turn on or turn off time clock for their time.|✔️|
 |Time clock geolocation|Define time clock geolocation (take precedence over time clock setting)|✔️|
 |Visibility of past shifts|Turn on or turn off workers' ability to see coworkers' past shifts.||
 |Visibility of time off|Turn on or turn off workers' ability to see each other's time-off details.||
-|Visibility of shifts details|Turn on or turn off workers' ability to see each other's shifts details.||
+|Visibility of shifts details|Turn on or turn off workers' ability to see each other's shift details.||
 |Manage schedule groups|Add, rename, and delete schedule groups.|✔️|
 |Manage schedule group membership|Add and remove team members from schedule groups.||
 
+&sup1;These capabilities are managed by a single `CanModifyShiftRequestsCapabilities` parameter.
 
 ## Related articles
 
