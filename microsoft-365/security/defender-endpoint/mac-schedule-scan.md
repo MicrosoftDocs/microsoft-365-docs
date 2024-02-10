@@ -52,7 +52,7 @@ For more information on the _.plist_ file format used here, see [About Informati
 
 The following sample shows the daily and/or weekly configuration for the scheduled scan on macOS.
 
->  [!TIP] 
+> [!TIP] 
 > Schedules are based on the local time zone of the device.
 
 | Parameter | The acceptable values for this parameter are: |
@@ -115,7 +115,7 @@ The following code shows the schema you need to use to schedule a quick scan.
 </plist> 
 ```
 
-1. Save the file as _com.microsoft.wdav.plist_.
+2. Save the file as _com.microsoft.wdav.plist_.
 
 ### Option 2: Schedule a full scan using a _plist_
 
@@ -158,7 +158,7 @@ The following code shows the schema you need to use to schedule a quick scan.
 </plist> 
 ```
 
-1. Save the file as _com.microsoft.wdav.plist_.
+2. Save the file as _com.microsoft.wdav.plist_.
 
 ### Option 3: Configure scheduled scans through CLI tool
 
@@ -174,7 +174,7 @@ To schedule hourly quick scans:
 |---|---|
 | Version 101.23122.\* or higher | `sudo mdatp config scheduled-scan quick-scan hourly-interval --value \<arg\>` |
 
-:::image type="content" source="media/schedule-scans-mac/schedule-scan-1.png" alt-text="Screenshot of schedule hourly scan.":::
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-pic1.png" alt-text="Screenshot of schedule hourly scan.":::
 
 To schedule daily quick scans:
 
@@ -182,7 +182,7 @@ To schedule daily quick scans:
 |---|---|
 | Version 101.23122.\* or higher | `sudo mdatp config scheduled-scan quick-scan time-of-day --value \<arg\>` |
 
-:::image type="content" source="media/schedule-scans-mac/schedule-scan-2.png" alt-text="Screenshot of schedule daily quick scan.":::
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-pic2.png" alt-text="Screenshot of schedule daily quick scan.":::
 
 To schedule weekly scans:
 
@@ -190,7 +190,7 @@ To schedule weekly scans:
 |---|---|
 | Version 101.23122.\* or higher | `sudo mdatp config scheduled-scan weekly-scan --day-of-week \<arg\> --time-of-day \<arg\>--scan-type \<arg\>` |
 
-:::image type="content" source="media/schedule-scans-mac/schedule-scan-3.png" alt-text="Screenshot of schedule weekly scan.":::
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-pic3.png" alt-text="Screenshot of schedule weekly scan.":::
 
 For other configuration options:
 
@@ -207,11 +207,11 @@ Use the following command:
 
 `mdatp scan list`
 
-:::image type="content" source="media/schedule-scans-mac/schedule-scan-check.png" alt-text="Screenshot of schedule ran.":::
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-pic4.png" alt-text="Screenshot of schedule ran.":::
 
 `\<snip\>`
 
-:::image type="content" source="media/schedule-scans-mac/schedule-scan-chk.png" alt-text="Screenshot of schedule ran successfully.":::  
+:::image type="content" source="media/schedule-scans-mac/schedule-scan-pic5.png" alt-text="Screenshot of schedule ran successfully.":::  
 
  
 > [!IMPORTANT]
