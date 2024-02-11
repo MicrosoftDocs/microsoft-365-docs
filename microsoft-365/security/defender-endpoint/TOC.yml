@@ -860,6 +860,8 @@
           href: manage-alerts.md
         - name: Investigate alerts
           href: investigate-alerts.md
+        - name: Review and manage detected threats
+          href: review-detected-threats.md
         - name: Investigate files
           href: investigate-files.md
         - name: Investigate devices
