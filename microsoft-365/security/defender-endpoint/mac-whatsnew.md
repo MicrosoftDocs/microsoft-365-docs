@@ -36,6 +36,14 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
 - - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
 
+**Built-in Scheduled Scan for macOS** (Public Preview) 
+
+Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in Public Preview.  To learn more, see How to schedule scans with Microsoft Defender for Endpoint on macOS. 
+
+**Troubleshooting mode for macOS** (Public Preview) 
+
+Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. Troubleshooting mode for macOS is now available in Public Preview.  To learn more, see Troubleshooting mode in Microsoft Defender for Endpoint on macOS.  
+
 **Mac devices receive built-in protection**
 
 Tamper protection is turned on in block mode by default to help secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](built-in-protection.md).
