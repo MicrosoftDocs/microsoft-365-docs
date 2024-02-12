@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/29/2020
+ms.date: 02/12/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - m365initiative-coredeploy
+- must-keep
 ms.custom: it-pro
 description: The roadmap to set up your tenants for Microsoft 365.
 ---
@@ -37,6 +38,7 @@ To plan for your tenant implementation:
 - [Understand subscriptions, licenses, and Microsoft Entra tenants](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Understand how to use third-party SSL certificates](plan-for-third-party-ssl-certificates.md)
 - [Understand the ways a Microsoft 365 tenant is integrated with Microsoft Entra services](integrated-apps-and-azure-ads.md)
+- [Understand and plan for Microsoft 365 network optimization](microsoft-365-network-connectivity-principles.md)
 - [Plan for client app support](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determine how to use hybrid modern authentication](hybrid-modern-auth-overview.md)
 - [Plan for Office 2007 and Office 2010 upgrades](plan-upgrade-previous-versions-office.md)
@@ -44,7 +46,7 @@ To plan for your tenant implementation:
 
 ### Deploy
 
-To deploy your tenant: 
+To deploy your tenant:
 
 - Add the [DNS domains](../admin/setup/add-domain.md) for your organization.
 - Use the [setup guides in the Microsoft 365 admin center](setup-guides-for-microsoft-365.md).
@@ -56,14 +58,13 @@ Microsoft continues to open new datacenter geographic locations (geos) for Micro
 
 For more information, see [Moving core data to new Microsoft 365 datacenter geos](moving-data-to-new-datacenter-geos.md).
 
-
 ## Deploy Microsoft 365 Multi-Geo
 
 With Microsoft 365 Multi-Geo, your organization can expand its Microsoft 365 presence to multiple geographic regions and/or countries within your existing tenant.
 
 For more information, see [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
 
-## Manage multiple Microsoft 365 tenants 
+## Manage multiple Microsoft 365 tenants
 
 Although having a single tenant for your organization is ideal, you may be one of many organizations that have multiple tenants. Reasons can include mergers and acquisitions, you want administrative isolation, or you have a decentralized IT.
 
