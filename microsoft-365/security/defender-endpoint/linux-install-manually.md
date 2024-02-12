@@ -37,12 +37,12 @@ This article describes how to deploy Microsoft Defender for Endpoint on Linux ma
 
 - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
 - [Configure the Linux software repository](#configure-the-linux-software-repository)
-  - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2-1)
+  - [RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)](#rhel-and-variants-centos-fedora-oracle-linux-amazon-linux-2-rocky-and-alma-1)
   - [SLES and variants](#sles-and-variants-1)
   - [Ubuntu and Debian systems](#ubuntu-and-debian-systems-1)
   - [Mariner](#mariner)
 - [Application installation](#application-installation)
-  - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
+  - [RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)](#rhel-and-variants-centos-fedora-oracle-linux-amazon-linux-2-rocky-and-alma)
   - [SLES and variants](#sles-and-variants)
   - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
   - [Mariner](#mariner-1)
@@ -91,7 +91,7 @@ Options:
 
 Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
-### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
+### RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)
 
 - Install `yum-utils` if it isn't installed yet:
 
@@ -106,11 +106,13 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
 
   |Distro & version|Package|
   |---|---|
+  |For Alma 9.2 and higher|<https://packages.microsoft.com/config/alma/9/prod.repo>|
   |For RHEL/Centos/Oracle 8.0-8.8|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
   |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
   |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
   |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
+  |For Rocky 8.7 and higher|<https://packages.microsoft.com/config/rocky/8/prod.repo>|
 
   <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 
@@ -274,7 +276,7 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | su
 
 ## Application installation
 
-### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
+### RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)
 
 ```bash
 sudo yum install mdatp
