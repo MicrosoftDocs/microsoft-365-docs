@@ -82,7 +82,7 @@ or newer.
 1. Go to the [Microsoft Defender XDR portal](https://security.microsoft.com/), and sign in.
 2. Navigate to the device page you would like to turn on troubleshooting mode. Then, select the ellipses(...) and select **Turn on troubleshooting mode**.  
 
-   :::image type="content" source="images/troubleshooting-mode-on-mac.png" alt-text="Image displaying the screenshot of the troubleshooting mode on mac.":::
+   :::image type="content" source="images/troubleshooting-mode-on-mac.png" alt-text="Screenshot displaying the screenshot of the troubleshooting mode on mac.":::
 
    > [!NOTE]
    > The **Turn on troubleshooting mode** option is available on all devices, even if the device does not meet the prerequisites for troubleshooting mode.
@@ -101,11 +101,11 @@ or newer.
 
      For example, when you use `mdatp config real-time-protection --value disabled` command to disable real time protection, you'll be prompted to enter your password. Select **OK** after entering your password.
 
-     :::image type="content" source="images/ts-mode-rtp-disable.png" alt-text="Image displaying the screenshot of real time protection being disabled.":::
+     :::image type="content" source="images/ts-mode-rtp-disable.png" alt-text="Screenshot displaying the screenshot of real time protection being disabled.":::
 
      The output report similar to the following screenshot will be displayed on running mdatp health with `real_time_protection_enabled` as "false" and `tamper_protection` as "block."
   
-     :::image type="content" source="images/ts-mode-mdatp-health.png" alt-text="Image displaying the screenshot of the output report of mdatp health running.":::
+     :::image type="content" source="images/ts-mode-mdatp-health.png" alt-text="Screnshot displaying the screenshot of the output report of mdatp health running.":::
 
 ## Advanced hunting queries for detection
 
