@@ -175,6 +175,26 @@ If a user lacks a standalone Power Apps license and launches an app that require
 
 If a user without a standalone Power Apps license launches an app within a Managed environment, they're automatically granted a Power Apps per user license.
 
+## Auto-claim policies for Microsoft Power Automate
+
+Auto-claim for Power Automate license is supported for the following licenses:
+1. Power Automate premium plan
+2. Power Automate per user plan
+When the auto-claim policy is configured, The following scenarios will automatically assign a user licenses when the user lacks the required entitlement:
+
+Power Automate per user plan
+1. User triggers a premium cloud flow 
+2. User saves a premium cloud flow
+3. User turns on a premium cloud flow
+
+Power Automate premium
+
+In addition to the scenarios listed for Power Automate per user plan:
+1. User triggers a premium cloud flow with Attended RPA
+2. User saves a premium cloud flow with Attended RPA
+3. User turns on a premium cloud flow with Attended RPA
+
+
 ## Next steps
 
 You can periodically return to the **Auto-claim policy** tab to see a list of users who have claimed licenses under the policies you created.
