@@ -125,7 +125,7 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
   > [!TIP]
   > Use hostnamectl command to identify system related information including release *[version]*.
 
-  For example, if you are running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
+  For example, if you're running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
 
   ```bash
   sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
@@ -157,7 +157,7 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
    > [!TIP]
    > Use SPident command to identify system related information including release *[version]*.
 
-   For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
+   For example, if you're running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
    ```bash
    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -461,7 +461,7 @@ Download the onboarding package from Microsoft Defender portal.
      mdatp health --field real_time_protection_enabled
      ```
 
-     If it is not enabled, execute the following command:
+     If it isn't enabled, execute the following command:
 
      ```bash
      mdatp config real-time-protection --value enabled
