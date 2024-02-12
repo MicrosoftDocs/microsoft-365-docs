@@ -46,7 +46,7 @@ While you can start a threat scan at any time with Microsoft Defender for Endpoi
 
 ## Schedule a scan with *Microsoft Defender for Endpoint on macOS*
 
-You can create a scheduled scan for your macOS, which is built-in to *Microsoft Defender for Endpoint on macOS*.
+You can create a scheduled scan for your macOS, which is built in to *Microsoft Defender for Endpoint on macOS*.
 
 For more information on the _.plist_ file format used here, see [About Information Property List Files](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) at the official Apple developer website.
 
