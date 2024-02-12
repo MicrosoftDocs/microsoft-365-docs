@@ -25,7 +25,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.reviewer: casjacks
+ms.reviewer: beolson
 description: Use this guidance to help you troubleshoot common setup and configuration issues for the Teams Electronic Health Record (EHR) connector.  
 ms.date: 04/21/2023
 ---

@@ -82,8 +82,6 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 - For our recommended settings for spoof intelligence, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
-<a name='find-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal'></a>
-
 ## Find the spoof intelligence insight in the Microsoft Defender portal
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
