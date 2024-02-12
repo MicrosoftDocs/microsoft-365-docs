@@ -40,16 +40,6 @@ Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumpti
 
 Once you have these items ready, you can [set up pay-as-you-go billing for Microsoft 365 Backup](backup/backup-billing.md).
 
-- A valid Azure subscription. An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure concepts, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
-
-- A resource group. A resources group provides a logical grouping of resources within an Azure subscription.
-
-- The region in which you want to register the service.
-
-- Name of an owner or contributor role on the Azure subscription.
-
-Once you have these items ready, you can [set up pay-as-you-go billing for Microsoft 365 Backup](backup/backup-billing.md).  
-
 <!---To set up pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing](../syntex-azure-billing.md).--->
 
 ### Permissions
