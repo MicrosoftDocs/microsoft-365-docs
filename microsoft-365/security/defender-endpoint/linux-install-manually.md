@@ -504,7 +504,7 @@ The mde-netfilter package also has the following package dependencies:
 - For RPM the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
 - For Mariner the mde-netfilter package requires "libnfnetlink", "libnetfilter_queue"
 
-If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies.
+If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the prerequisite dependencies.
 
 
 ## Log installation issues
