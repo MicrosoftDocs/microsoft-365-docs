@@ -32,16 +32,26 @@ ms.date:
 
 # Manage Shifts permissions for frontline managers
 
-Frontline managers create and manage their team’s schedule and shift requests. By default, frontline managers can do the following in Shifts:
+Frontline managers in Shifts are users that have either the team owner or schedule owner role. They create and manage schedules for their teams. By default, frontline managers can do the following in Shifts:
 
-- Configure [Shifts settings](https://support.microsoft.comoffice/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b) for their teams. For example, they can set whether frontline workers on their team can swap shifts and request time off.  
+- Configure [Shifts settings](https://support.microsoft.comoffice/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b) for their teams. For example, frontline managers can turn on time clock and set whether frontline workers on their team can swap shifts and request time off.  
 - Create and manage schedule groups for their teams in Shifts. Schedule groups are used to group frontline workers based on common characteristics within a team, such as departments or job types.
 
-Depending on the needs of your organization, you might need to control which settings frontline managers can configure in Shifts for their teams and whether frontline managers can create and manage schedule groups. You control these capabilities by using the [Graph API]().
++++++++++++++++++
 
-The following table lists the settings and schedule group capabilities that are available to frontline managers in Shifts for managing their teams, and indicates whether you can restrict their permissions to do so.
+Depending on the needs of your organization, you might need to restrict the Shifts capabilities that are available to frontline managers for managing their teams. You control these capabilities by using the [Graph API]().
 
-|Setting or capability|Description|Can control permissions|
+The following table lists the settings and schedule group capabilities that are available to frontline managers in Shifts for managing their teams, and indicates whether you can restrict the capability.
+
++++++++++++++++++
+
+Depending on the needs of your organization, you might need to define the settings that frontline managers can configure in Shifts for their teams and whether frontline managers can create and manage schedule groups. You control these capabilities by using the [Graph API]().
+
+The following table lists the capabilities that are available to frontline managers for managing their teams in Shifts and indicates whether you can restrict the capability.
+
++++++++++++++++++
+
+|Setting/capability|Description|Can control permissions|
 |---------|---------|:---------:|
 |Team time zone|Set the team's time zone and closest city.||
 |Start of week|Set the day of the week for schedules to start.||
@@ -59,7 +69,12 @@ The following table lists the settings and schedule group capabilities that are 
 |Manage schedule groups|Add, rename, and delete schedule groups.|✔️|
 |Manage schedule group membership|Add and remove team members from schedule groups.||
 
-&sup1;These capabilities are managed by a single `CanModifyShiftRequestsCapabilities` parameter.
+&sup1;These three capabilities are managed together by using a single parameter, `CanModifyShiftRequestsCapabilities`.
+
+You can also use the following Graph APIs to define the following values:
+
+- Shifts settings: [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0)
+- Schedule group management and membership: [Create schedulingGroup](/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0)
 
 ## Related articles
 
