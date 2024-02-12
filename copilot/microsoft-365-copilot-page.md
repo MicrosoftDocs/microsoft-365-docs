@@ -26,7 +26,7 @@ You can manage Microsoft Copilot for Microsoft 365 through the Microsoft 365 adm
 
 ## Before you begin
 
-- You must have a Copilot for Microsoft 365 license for the Copilot page to appear in the Microsoft 365 admin center. For more information, see [Get started with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-setup.md).
+- Your organization must have purchased Copilot licenses to access the Copilot page in the Microsoft 365 admin center. While you don't need a license assigned to your admin account, you must have these licenses present within the organization for the Copilot page to be visible. For more information, see [Get started with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-setup.md).
 
 - You must be a Global Administrator to access the Copilot page. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
@@ -58,9 +58,9 @@ Microsoft Copilot for Microsoft 365 is powered by an advanced processing and orc
 
 This control navigates you to the Integrated App settings to control how non-Microsoft apps and first party apps can work with Microsoft Copilot for Microsoft 365.
 
-### Public web content access
+### Improved responses with web content in Copilot for Microsoft 365
 
-This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to public web content in Microsoft Copilot for Microsoft 365 responses](manage-public-web-access.md).
+This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to web content in Copilot for Microsoft 365 responses](manage-public-web-access.md).
 
 ### Data Security and Compliance
 
