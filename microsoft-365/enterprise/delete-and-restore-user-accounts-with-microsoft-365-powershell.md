@@ -61,7 +61,9 @@ After you connect, use the following syntax to remove an individual user account
   
 ```powershell
 $userName="<display name>"
+# Get the user
 $userId = (Get-MgUser -Filter "displayName eq '$userName'").Id
+# Remove the user
 Remove-MgUser -UserId $userId -Confirm:$false
 ```
 
@@ -71,6 +73,31 @@ This example removes the user account *calebs\@litwareinc.com*.
 $userName="Caleb Sills"
 $userId = (Get-MgUser -Filter "displayName eq '$userName'").Id
 Remove-MgUser -UserId $userId -Confirm:$false
+```
+
+## Restore a user account
+
+To a restore a user account using Microsoft Graph PowerShell, first [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md). Note that in this instance, you'll be restoring a directory item, so adding the permission scope *Directory.ReadWrite.All* is required.
+
+```powershell
+# Connect to your tenant
+Connect-MgGraph -Scopes User.Read.All, Directory.ReadWrite.All
+```
+
+After you connect, use the following syntax to restore an individual user account:
+
+```powershell
+# Get the user
+$user = Get-MgUser -Filter "userPrincipalName eq '<user principal name>'"
+# Restore the user
+Restore-MgDirectoryDeletedItem -DirectoryObjectId $user.Id
+```
+
+This example restores the user account *calebs\@litwareinc.com*.
+
+```powershell
+$user = Get-MgUser -Filter "userPrincipalName eq 'calebs@litwareinc.com'"
+Restore-MgDirectoryDeletedItem -DirectoryObjectId $user.Id
 ```
 
 ## See also
