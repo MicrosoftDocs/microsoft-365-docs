@@ -21,7 +21,7 @@ description: Learn how to troubleshoot issues with sending, receiving, or viewin
 
 ## Unable to create a request
 
-If you aren't able to create a signature request, check the PDF viewer settings, the collaboration settings, or the access policies. Please, refer to the [setup page](https://learn.microsoft.com/en-us/microsoft-365/syntex/esignature-setup) to ensure the correct seetings are done. Also, check that the PDF you are attempting to sign is not already electronically signed using SharePoint eSignature or any other eSignature provider.
+If you aren't able to create a signature request, check the PDF viewer settings, the collaboration settings, or the access policies. Refer to the [setup page](https://learn.microsoft.com/microsoft-365/syntex/esignature-setup) to ensure the correct settings are done. Also, check that the PDF you are attempting to sign is not already electronically signed using SharePoint eSignature or any other electronic signature provider.
 
 > [!NOTE]
 > New eSignature requests can not be started from documents that have been previously signed. You would need to choose another document to create the request.
