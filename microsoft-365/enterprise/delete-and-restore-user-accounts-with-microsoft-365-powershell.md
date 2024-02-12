@@ -67,7 +67,7 @@ $userId = (Get-MgUser -Filter "displayName eq '$userName'").Id
 Remove-MgUser -UserId $userId -Confirm:$false
 ```
 
-This example removes the user account *calebs\@litwareinc.com*.
+This example removes the user account *Caleb Sills*.
 
 ```powershell
 $userName="Caleb Sills"
