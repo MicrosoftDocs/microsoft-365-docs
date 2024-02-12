@@ -38,11 +38,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **Built-in Scheduled Scan for macOS** (Public Preview) 
 
-Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in Public Preview.  To learn more, see How to schedule scans with Microsoft Defender for Endpoint on macOS. 
+Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in Public Preview.  To learn more, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md). 
 
 **Troubleshooting mode for macOS** (Public Preview) 
 
-Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. Troubleshooting mode for macOS is now available in Public Preview.  To learn more, see Troubleshooting mode in Microsoft Defender for Endpoint on macOS.  
+Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. Troubleshooting mode for macOS is now available in Public Preview. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).  
 
 **Mac devices receive built-in protection**
 
