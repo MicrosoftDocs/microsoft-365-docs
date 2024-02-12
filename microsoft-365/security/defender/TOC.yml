@@ -440,11 +440,11 @@
                 items: 
                 - name: Managed detection and response
                   href: managed-detection-and-response-xdr.md
-                - name: Defender Experts for XDR Reports
+                - name: Reports
                   href: reports-xdr.md
                 - name: Communicate with Defender Experts for XDR
                   href: communicate-defender-experts-xdr.md
-                - name: Defender Experts for hunting
+                - name: Defender Experts for Hunting
                   href: defender-experts-for-hunting.md
                 - name: Ask Defender Experts
                   href: onboarding-defender-experts-for-hunting.md#collaborate-with-experts-on-demand
