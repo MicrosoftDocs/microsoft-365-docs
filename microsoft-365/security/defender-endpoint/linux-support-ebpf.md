@@ -100,9 +100,9 @@ Post reboot, run the below command to check if audit rules got cleared.
 % sudo auditctl -l
 ```
 
-The output of above command should show no rules or any user added rules. In case the rules did not get removed, then perform the following steps to clear the audit rules file
+The output of above command should show no rules or any user added rules. In case the rules did not get removed, then perform the following steps to clear the audit rules file 
 
-  1. Switch to ebpf mode
+1. Switch to ebpf mode
   2. Remove the file /etc/audit/rules.d/mdatp.rules
   3. Reboot the machine
 
