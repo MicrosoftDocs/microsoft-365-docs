@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/29/2020
+ms.date: 02/08/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,8 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - m365initiative-coredeploy
+- essentials-get-started
+- must-keep
 ms.custom: it-pro
 description: The roadmap to set up your tenants for Microsoft 365.
 ---
