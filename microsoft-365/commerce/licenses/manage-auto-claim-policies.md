@@ -20,7 +20,7 @@ ms.custom:
 - AdminSurgePortfolio
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
-ms.date: 10/13/2023
+ms.date: 02/12/2024
 ---
 
 # Manage auto-claim policies in the Microsoft 365 admin center
@@ -177,23 +177,26 @@ If a user without a standalone Power Apps license launches an app within a Manag
 
 ## Auto-claim policies for Microsoft Power Automate
 
-Auto-claim for Power Automate license is supported for the following licenses:
-1. Power Automate premium plan
-2. Power Automate per user plan
-When the auto-claim policy is configured, The following scenarios will automatically assign a user licenses when the user lacks the required entitlement:
+Auto-claim for Power Automate licenses is supported for the following plans:
 
-Power Automate per user plan
-1. User triggers a premium cloud flow 
-2. User saves a premium cloud flow
-3. User turns on a premium cloud flow
+- Power Automate premium plan
+- Power Automate per user plan
 
-Power Automate premium
+When the auto-claim policy is configured and a user doesn't have a license for the product, the user is automatically assigned a license when they take any of the following actions:
 
-In addition to the scenarios listed for Power Automate per user plan:
-1. User triggers a premium cloud flow with Attended RPA
-2. User saves a premium cloud flow with Attended RPA
-3. User turns on a premium cloud flow with Attended RPA
+**For Power Automate per user plans**
 
+- Trigger a premium cloud flow 
+- Save a premium cloud flow
+- Turn on a premium cloud flow
+
+**For Power Automate premium plans**
+
+In addition to the actions listed in **For Power Automate per user plans**, the following actions also apply:
+
+- Trigger a premium cloud flow with Attended RPA
+- Save a premium cloud flow with Attended RPA
+- Turn on a premium cloud flow with Attended RPA
 
 ## Next steps
 
@@ -203,4 +206,4 @@ You can periodically return to the **Auto-claim policy** tab to see a list of us
 
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Buy or remove subscription licenses](buy-licenses.md) (article)\
-u[Understand subscriptions and licenses in Microsoft 365 for business](subscriptions-and-licenses.md) (article)
+[Understand subscriptions and licenses in Microsoft 365 for business](subscriptions-and-licenses.md) (article)
