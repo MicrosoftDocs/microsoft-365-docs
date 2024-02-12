@@ -59,15 +59,19 @@ The following table gives information about the supported Microsoft Defender for
 ||||||
 |**Response**     |         |         |         ||
 |[Automated Investigation & Response (AIR)](automated-investigations.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)  |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
-|[Device response capabilities: collect investigation package ](respond-machine-alerts.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)        |
+|[Device response capabilities: collect investigation package ](respond-machine-alerts.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![Yes.](images/svg/check-yes.svg) <sup>[3]</sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[3]</sup>        |
 |[Device response capabilities: run AV scan](respond-machine-alerts.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)         |
 |[Device isolation](respond-machine-alerts.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)    |
-|File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![No](images/svg/check-no.svg) <sup>[4]</sup>      |  ![No](images/svg/check-no.svg) <sup>[4]</sup>    |
+|File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)     |
 |[Live Response](live-response.md)       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg) |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)      |
 
 <sup>[1]</sup> Refers to the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 <sup>[2]</sup> Feature is currently in preview ([Microsoft Defender for Endpoint preview features](preview.md))
+
+<sup>[3]</sup> Response capabilities using Live Response [2]
+
+<sup>[4]</sup> Collect file only, using Live Response [2]
 
 > [!NOTE]
 > Windows 7, 8.1, Windows Server 2008 R2 include support for the EDR sensor, and AV using System Center Endpoint Protection (SCEP).
