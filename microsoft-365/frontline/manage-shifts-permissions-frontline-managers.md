@@ -12,7 +12,7 @@ searchScope:
   - Microsoft Teams
   - Microsoft Cloud for Healthcare
   - Microsoft Cloud for Retail
-description: Learn how to manage Shifts permissions for frontline managers to control the Shifts settings that they can configure for their teams.
+description: Learn how to manage Shifts permissions for your frontline managers. You can use Graph API to control the Shifts settings that frontline managers can configure for their teams and whether they can create and manage schedule groups.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: high
@@ -32,20 +32,20 @@ ms.date:
 
 # Manage Shifts permissions for frontline managers
 
-Frontline managers in Shifts are users that have either the team owner or schedule owner role. They create and manage schedules for their teams. By default, frontline managers can do the following in Shifts:
+Frontline managers in Shifts are users that have the team owner or schedule owner role. They create and manage schedules for their teams. By default, frontline managers can do the following in Shifts:
 
 - Configure [Shifts settings](https://support.microsoft.com/office/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b) for their teams. For example, frontline managers can turn on time clock and set whether frontline workers on their team can swap shifts and request time off.  
 - Create and manage schedule groups for their teams in Shifts. Schedule groups are used to group frontline workers based on common characteristics within a team, such as departments or job types.
 
 +++++++++++++++++
 
-Depending on the needs of your organization, you might need to restrict the Shifts capabilities that are available to frontline managers for managing their teams. You control these capabilities by using the [Graph API]().
+Depending on the needs of your organization, you might need to restrict the Shifts capabilities that are available to frontline managers for managing their teams. This article describes how you can control these capabilities using the [Graph API]().
 
 The following table lists the settings and schedule group capabilities that are available to frontline managers in Shifts for managing their teams, and indicates whether you can restrict the capability.
 
 +++++++++++++++++
 
-Depending on the needs of your organization, you might need to define the settings that frontline managers can configure in Shifts for their teams and whether frontline managers can create and manage schedule groups. You control these capabilities through [Graph API]().
+Depending on the needs of your organization, you might need to define the settings that frontline managers can configure in Shifts for their teams and whether frontline managers can create and manage schedule groups. This article describes how you can control these capabilities using the [Graph API]().
 
 The following table lists the capabilities that are available to frontline managers for managing their teams in Shifts and indicates whether you can restrict the capability.
 
@@ -73,25 +73,34 @@ The following table lists the capabilities that are available to frontline manag
 
 You can also use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0) API to define Shifts settings and the [Create schedulingGroup](/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0) API to manage schedule groups and membership.  
 
-## Scenario
+## Example scenario
 
-At Contoso Ltd, department managers report directly to the store manager. Store managers have more authority within the company than department managers and so roles are assigned as follows:
+At Contoso Ltd, department managers report directly to the store manager. Because store managers have more authority within the company than department managers, roles are assigned as follows:
 
 - Store managers are team owners in Teams.
 - Department managers are team members in Teams and schedule owners in Shifts.
 
-Recently, Contoso reviewed the Shifts capabilities of their frontline managers based on business needs and determined:
+Recently, Contoso reviewed the Shifts capabilities of their frontline managers and determined the following based on business needs:
 
-- Frontline managers shouldn't be able to choose whether their teams can use time clock in Shifts.
+- **Frontline managers shouldn't be able to choose whether their teams can use time clock in Shifts.**
 
-  Contoso is opting out of using time clock in Shifts for now because they want their frontline workers to use the in-store stations to clock and out of their shifts. This means that you need to:
+  Contoso decided to opt out of using time clock in Shifts for now because they want their frontline workers to use the in-store stations to clock and out of their shifts.
+  
+  This means that you need to:
 
   - Remove frontline managers' permission for changing the time clock setting in Shifts for their teams.
   - Set the time clock setting in Shifts to **Off** for all teams.
+  
+    For steps on how to do this, see []().
 
-- Department managers shouldn't be able to choose whether they can add and edit time-off reasons in Shifts. At Contoso, adding time-off reasons is the responsbility of the store manager. This means that you need to: 
+- **Department managers shouldn't be able to choose whether they can add and edit time-off reasons in Shifts.** At Contoso, adding time-off reasons is the responsibility of the store manager.
 
-  - Remove schedule owners' permission for adding and editing time-off reasons in Shifts for all teams.
+    This means that you need to remove schedule owners' permission for adding and editing time-off reasons in Shifts for all teams.
+    For steps on how to do this, see []().
+
+### Steps
+
+
 
 ## Related articles
 
