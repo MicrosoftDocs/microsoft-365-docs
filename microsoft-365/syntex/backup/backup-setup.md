@@ -30,37 +30,27 @@ Get started with Microsoft 365 Backup by following these simple three steps in t
 
 ## Step 1: Set up pay-as-you-go billing
 
-As a first step to sign up for Microsoft 365 Backup, you should first link an Azure subscription in [Syntex pay-as-you-go](https://admin.microsoft.com/Adminportal/Home#/featureexplorer/csi/ContentUnderstanding), if you haven't already done so. Although Microsoft 365 Backup isn't part of the Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
+Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you will need to provide these things:
 
-<!---
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
+> [!div class="checklist"]
+> * **Valid Azure subscription**. An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure concepts, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
+> * **Resource group**. A resources group provides a logical grouping of resources within an Azure subscription.
+> * **Region**. The region in which you want to register the service.
+> * **Owner or contributor**. Name of an owner or contributor role on the Azure subscription.
 
-2. Select **Setup**.
+Once you have these items ready, you can [set up pay-as-you-go billing for Microsoft 365 Backup](backup/backup-billing.md).
 
-3. On the **Setup** page, in the **Files and content** section, select **Use content AI with Microsoft Syntex**.
+- A valid Azure subscription. An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure concepts, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
 
-4. On the **Use content AI with Microsoft Syntex** page, select **Set up billing**.
+- A resource group. A resources group provides a logical grouping of resources within an Azure subscription.
 
-    ![Screenshot of the Use content AI with Microsoft Syntex page showing the Set up billing option.](../../media/content-understanding/backup-setup-set-up-billing.png)
+- The region in which you want to register the service.
 
-    > [!NOTE]
-    > To set up pay-as-you-go billing for Microsoft 365 Backup, the admin must have an owner or contribution role on the Azure subscription to be used.
+- Name of an owner or contributor role on the Azure subscription.
 
-5. If you don't have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, skip this step and go to step 6.
+Once you have these items ready, you can [set up pay-as-you-go billing for Microsoft 365 Backup](backup/backup-billing.md).  
 
-    ![Screenshot of the Set up pay-as-you-go billing panel with the Prerequisites section lighlighted.](../../media/content-understanding/backup-setup-prerequisites.png)
-
-    a. To create a new Azure subscription, on the **Set up pay-as-you-go billing** panel, select **Learn more about Azure subscriptions**. Alternatively, you can follow the steps in [Create your initial Azure subscriptions](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
-
-    b. To create a new Azure resource group, on the **Set up pay-as-you-go billing** panel,select **Learn more about Azure resource groups**. Alternatively, you can follow the steps in [Manage Azure resource groups by using the Azure portal](https://learn.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal) to create a resource group. The resource group should be within the Azure subscription.
-
-    c. After you create an Azure subscription with owner or contributor role, you'll need to have a resource group created.
-
-6. If you have an Azure subscription, select the subscription from the drop-down menu.
-
-    ![Screenshot of the Set up pay-as-you-go billing panel with the Azure subscription section lighlighted.](../../media/content-understanding/backup-setup-azure-subscription.png)
---->
-To set up pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing](../syntex-azure-billing.md).
+<!---To set up pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing](../syntex-azure-billing.md).--->
 
 ### Permissions
 
