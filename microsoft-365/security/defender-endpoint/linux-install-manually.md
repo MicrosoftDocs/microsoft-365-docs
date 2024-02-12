@@ -420,13 +420,13 @@ Download the onboarding package from Microsoft Defender portal.
    > [!NOTE]
    > To onboard a device that was previously offboarded you must remove the mdatp_offboard.json file located at /etc/opt/microsoft/mdatp.
 
-   If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
+   If you're running RHEL 8.x or Ubuntu 20.04 or higher, you'll need to use `python3`.
 
    ```bash
    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
    ```
 
-   For the rest of distros and versions, you will need to use `python`.
+   For the rest of distros and versions, you'll need to use `python`.
 
    ```bash
    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
