@@ -106,7 +106,7 @@ Certain [conditional access](/entra/identity/conditional-access/overview) might 
 
 ### Microsoft Entra B2B
 
-Microsoft Entra B2B provides authentication and management of guests. External signers are considered as guests within your tenant, therefore to be able to send requests to signers outside your organization, you will need to [enable Microsoft Entra B2B integration for SharePoint and OneDrive](https://learn.microsoft.com/en-us/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration). 
+Microsoft Entra B2B provides authentication and management of guests. External signers are considered as guests within your tenant. To be able to send requests to signers outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration). 
 
 ### Authentication
 
