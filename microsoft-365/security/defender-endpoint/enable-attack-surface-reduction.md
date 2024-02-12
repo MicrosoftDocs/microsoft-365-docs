@@ -4,9 +4,8 @@ description: Enable attack surface reduction rules to protect your devices from 
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
-author: Dansimp
-ms.author: dansimp
-ms.reviewer: oogunrinde
+author: siosulli
+ms.author: siosulli
 manager: dansimp
 ms.subservice: asr
 ms.topic: how-to
@@ -16,7 +15,7 @@ ms.collection:
 - mde-asr
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
-ms.date: 11/30/2023
+ms.date: 02/11/2024
 ---
 
 # Enable attack surface reduction rules
