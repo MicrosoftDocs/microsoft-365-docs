@@ -33,21 +33,29 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
 
     ![Screenshot of the Set up billing option in the Microsoft 365 admin center.](../../media/content-understanding/backup-setup-billing.png)
 
-> [!NOTE]
-> To set up pay-as-you-go billing for Microsoft 365 Backup, you must provide an owner or contribution role on the Azure subscription to be used.
+    > [!NOTE]
+    > To set up pay-as-you-go billing for Microsoft 365 Backup, you must provide an owner or contribution role on the Azure subscription to be used.
 
 5. If you *do not* have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, go to step 6.
 
-    a.	To create a new Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription, follow the below simple 3 steps: 
-1.	Sign in to the Azure portal (https://portal.azure.com) with your Microsoft 365 Microsoft Entra DC admin, or Global admin account.
-2.	In the left navigation, click Subscriptions, and then click Add.
-3.	On the Add subscription page, select an offer and complete the payment information and agreement.
- 
-b.	To create a new Azure resource group, select ‘Learn more about Azure resource groups’ on the flyout. Alternatively, you can follow steps here <link to azure resource group document>to create a resource group. 
+    To create a new Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription:
 
-Note that the resource group should be mapped to the azure subscription provided while setting up Pay-as-you-go. 
+    a. Sign in to the Azure portal (https://portal.azure.com) with your Microsoft 365 Microsoft Entra DC admin, or Global admin account.
 
+    b. In the left navigation, select **Subscriptions**, and then select **Add**.
+
+    c. On the **Add subscription** page, select an offer and complete the payment information and agreement.
  
+    To create a new Azure resource group:
+
+    a. On the **Set up pay-as-you-go billing** panel, select **Learn more about Azure resource groups**.
+    
+    b. Or, you can follow steps here <link to azure resource group document>to create a resource group.
+
+    > [!NOTE]
+    > Note that the resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
+
+
 
 6.	If you have an Azure subscription, select the subscription from the drop-down menu. 
 Please note that the subscription dropdown will not populate if you do not have an owner or contributor on the subscription. Check your role on subscription using the learn document here. 
