@@ -3,8 +3,7 @@ title: Submit files for analysis by Microsoft
 description: Learn how to submit files to Microsoft for malware analysis, how to track your submissions, and dispute detections.
 ms.reviewer:
 keywords: security, sample submission help, malware file, virus file, trojan file, submit, send to Microsoft, submit a sample, virus, trojan, worm, undetected, doesn't detect, email microsoft, email malware, I think this is malware, I think it's a virus, where can I send a virus, is this a virus, MSE, doesn't detect, no signature, no detection, suspect file, MMPC, Microsoft Malware Protection Center, researchers, analyst, WDSI, security intelligence
-ms.service: microsoft-365-security
-ms.subservice: intelligence
+ms.service: defender-xdr
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -31,11 +30,11 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 ### Send a malware file
 
-You can send files that you think might be malware or files that have been incorrectly detected through the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission).
+You can send files that you think might be malware or files that were incorrectly detected through the [sample submission portal](https://www.microsoft.com/wdsi/filesubmission).
 
 You can complete a quick analysis by providing detailed information about the product you were using and what you were doing when you found the file.
 
-After you sign in, you will be able to track your submissions.
+After you sign in, you'll be able to track your submissions.
 
 > [!NOTE]
 >
@@ -55,7 +54,7 @@ No, we only accept submissions through our [sample submission portal](https://ww
 
 ## Can I submit a sample without signing in?
 
-No. If you're an enterprise customer, you need to sign in so that we can prioritize your submission appropriately. If you are currently experiencing a virus outbreak or security-related incident, you should contact your designated Microsoft support professional or go to [Microsoft Support](https://support.microsoft.com/) for immediate assistance.
+No. If you're an enterprise customer, you need to sign in so that we can prioritize your submission appropriately. If you're currently experiencing a virus outbreak or security-related incident, you should contact your designated Microsoft support professional or go to [Microsoft Support](https://support.microsoft.com/) for immediate assistance.
 
 ## What is the Software Assurance ID (SAID)?
 
@@ -65,7 +64,7 @@ The [Software Assurance ID (SAID)](https://www.microsoft.com/licensing/licensing
 
 [Submit the file](https://www.microsoft.com/wdsi/filesubmission) in question as a software developer. Wait until your submission has a final determination.
 
-If you're not satisfied with our determination of the submission, use the developer contact form provided with the submission results to reach Microsoft. We will use the information you provide to investigate further if necessary.
+If you're not satisfied with our determination of the submission, use the developer contact form provided with the submission results to reach Microsoft. We'll use the information you provide to investigate further if necessary.
 
 We encourage all software vendors and developers to read about [how Microsoft identifies malware and unwanted software](criteria.md).
 

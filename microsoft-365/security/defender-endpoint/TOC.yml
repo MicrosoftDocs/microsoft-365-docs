@@ -860,6 +860,8 @@
           href: manage-alerts.md
         - name: Investigate alerts
           href: investigate-alerts.md
+        - name: Review and manage detected threats
+          href: review-detected-threats.md
         - name: Investigate files
           href: investigate-files.md
         - name: Investigate devices
@@ -1431,6 +1433,8 @@
 
     - name: Troubleshoot Microsoft Defender for Endpoint on macOS
       items:
+      - name: Troubleshooting mode on macOS
+        href: mac-troubleshoot-mode.md
       - name: Troubleshoot installation issues
         href: mac-support-install.md
       - name: Troubleshoot performance issues

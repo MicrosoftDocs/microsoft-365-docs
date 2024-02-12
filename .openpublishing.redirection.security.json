@@ -3816,9 +3816,54 @@
        "redirect_document_id": false
      },
      {
-       "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control-faq.md",
-       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-faq",
-       "redirect_document_id": false
+      "source_path": "microsoft-365/security/intelligence/safety-scanner-download.md",
+      "redirect_url": "/microsoft-365/security/defender/safety-scanner-download",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/intelligence/criteria.md",
+      "redirect_url": "/microsoft-365/security/defender/criteria",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/intelligence/cybersecurity-industry-partners.md",
+      "redirect_url": "/microsoft-365/security/defender/virus-initiative-criteria",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/intelligence/developer-faq.yml",
+      "redirect_url": "/microsoft-365/security/defender/developer-faq",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/intelligence/malware-naming.md",
+      "redirect_url": "/microsoft-365/security/defender/malware-naming",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/intelligence/microsoft-threat-actor-naming.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-threat-actor-naming",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/intelligence/portal-submission-troubleshooting.md",
+      "redirect_url": "/microsoft-365/security/defender/portal-submission-troubleshooting",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/intelligence/submission-guide.md",
+      "redirect_url": "/microsoft-365/security/defender/submission-guide",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/intelligence/virus-initiative-criteria.md",
+      "redirect_url": "/microsoft-365/security/defender/virus-initiative-criteria",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control-faq.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-faq",
+      "redirect_document_id": false
      }
    ]
  }

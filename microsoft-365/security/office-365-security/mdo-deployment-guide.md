@@ -228,7 +228,7 @@ But, the intent of this step is to configure other admins to help you manage the
 
 When it comes to assigning permissions for tasks in EOP and Defender for Office 365, the following options are available:
 
-- [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): These permissions apply to all workloads in Microsoft 365 (Exchange Online, SharePoint Online, Microsoft Teams, etc.).
+- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): These permissions apply to all workloads in Microsoft 365 (Exchange Online, SharePoint Online, Microsoft Teams, etc.).
 - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Most tasks in EOP and Defender for Office 365 are available using Exchange Online permissions. Assigning permissions only in Exchange Online prevents administrative access in other Microsoft 365 workloads.
 - [Email & collaboration permissions in the Microsoft Defender portal](scc-permissions.md): Administration of some security features in EOP and Defender for Office 365 is available with Email & collaboration permissions. For example:
   - [Configuration analyzer](configuration-analyzer-for-security-policies.md)
