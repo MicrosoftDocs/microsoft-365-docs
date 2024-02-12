@@ -62,7 +62,7 @@ Defender for Endpoint on Linux can be deployed from one of the following channel
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
-In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
+In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
@@ -125,7 +125,7 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
   > [!TIP]
   > Use hostnamectl command to identify system related information including release *[version]*.
 
-  For example, if you are running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
+  For example, if you're running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
 
   ```bash
   sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
@@ -157,7 +157,7 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
    > [!TIP]
    > Use SPident command to identify system related information including release *[version]*.
 
-   For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
+   For example, if you're running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
    ```bash
    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -195,7 +195,7 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
   > [!TIP]
   > Use hostnamectl command to identify system related information including release *[version]*.
 
-  For example, if you are running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
+  For example, if you're running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
   ```bash
   curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
@@ -420,13 +420,13 @@ Download the onboarding package from Microsoft Defender portal.
    > [!NOTE]
    > To onboard a device that was previously offboarded you must remove the mdatp_offboard.json file located at /etc/opt/microsoft/mdatp.
 
-   If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
+   If you're running RHEL 8.x or Ubuntu 20.04 or higher, you'll need to use `python3`.
 
    ```bash
    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
    ```
 
-   For the rest of distros and versions, you will need to use `python`.
+   For the rest of distros and versions, you'll need to use `python`.
 
    ```bash
    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -461,7 +461,7 @@ Download the onboarding package from Microsoft Defender portal.
      mdatp health --field real_time_protection_enabled
      ```
 
-     If it is not enabled, execute the following command:
+     If it isn't enabled, execute the following command:
 
      ```bash
      mdatp config real-time-protection --value enabled
@@ -504,7 +504,7 @@ The mde-netfilter package also has the following package dependencies:
 - For RPM the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
 - For Mariner the mde-netfilter package requires "libnfnetlink", "libnetfilter_queue"
 
-If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies.
+If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the prerequisite dependencies.
 
 
 ## Log installation issues

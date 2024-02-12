@@ -38,7 +38,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ## How to install Microsoft Defender for Endpoint on Linux
 
-Microsoft Defender for Endpoint for Linux includes antimalware and endpoint detection and response (EDR) capabilities.
+Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint detection and response (EDR) capabilities.
 
 ### Prerequisites
 
