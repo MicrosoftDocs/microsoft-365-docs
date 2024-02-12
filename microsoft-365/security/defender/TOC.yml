@@ -445,9 +445,9 @@
                 - name: Communicate with Defender Experts for XDR
                   href: communicate-defender-experts-xdr.md
                 - name: Defender Experts for hunting
-                  href: dex-for-hunting-xdr.md
+                  href: defender-experts-for-hunting.md
                 - name: Ask Defender Experts
-                  href: ask-defender-experts.md
+                  href: onboarding-defender-experts-for-hunting.md#collaborate-with-experts-on-demand
                 - name: Auditing
                   href: auditing.md
               - name: Frequently asked questions
@@ -460,10 +460,10 @@
                   href: faq-managed-response.md
               - name: Additional information on Defender Experts for XDR
                 items:
-              - name: Important considerations on incident response  
-                href: additional-information-xdr.md
-              - name: How Defender Experts for XDR permissions work
-                href: dex-xdr-permissions.md
+                - name: Important considerations on incident response  
+                  href: additional-information-xdr.md
+                - name: How Defender Experts for XDR permissions work
+                  href: dex-xdr-permissions.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft Defender XDR
