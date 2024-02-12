@@ -34,7 +34,7 @@ ms.date:
 
 Frontline managers in Shifts are users that have either the team owner or schedule owner role. They create and manage schedules for their teams. By default, frontline managers can do the following in Shifts:
 
-- Configure [Shifts settings](https://support.microsoft.comoffice/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b) for their teams. For example, frontline managers can turn on time clock and set whether frontline workers on their team can swap shifts and request time off.  
+- Configure [Shifts settings](https://support.microsoft.com/office/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b) for their teams. For example, frontline managers can turn on time clock and set whether frontline workers on their team can swap shifts and request time off.  
 - Create and manage schedule groups for their teams in Shifts. Schedule groups are used to group frontline workers based on common characteristics within a team, such as departments or job types.
 
 +++++++++++++++++
@@ -45,7 +45,7 @@ The following table lists the settings and schedule group capabilities that are 
 
 +++++++++++++++++
 
-Depending on the needs of your organization, you might need to define the settings that frontline managers can configure in Shifts for their teams and whether frontline managers can create and manage schedule groups. You control these capabilities by using the [Graph API]().
+Depending on the needs of your organization, you might need to define the settings that frontline managers can configure in Shifts for their teams and whether frontline managers can create and manage schedule groups. You control these capabilities through [Graph API]().
 
 The following table lists the capabilities that are available to frontline managers for managing their teams in Shifts and indicates whether you can restrict the capability.
 
@@ -69,12 +69,29 @@ The following table lists the capabilities that are available to frontline manag
 |Manage schedule groups|Add, rename, and delete schedule groups.|✔️|
 |Manage schedule group membership|Add and remove team members from schedule groups.||
 
-&sup1;These three capabilities are managed together by using a single parameter, `CanModifyShiftRequestsCapabilities`.
+&sup1;These three capabilities are managed together through the `CanModifyShiftRequestsCapabilities` parameter.
 
-You can also use the following Graph APIs to define the following values:
+You can also use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0) API to define Shifts settings and the [Create schedulingGroup](/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0) API to manage schedule groups and membership.  
 
-- Shifts settings: [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0)
-- Schedule group management and membership: [Create schedulingGroup](/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0)
+## Scenario
+
+At Contoso Ltd, department managers report directly to the store manager. Store managers have more authority within the company than department managers and so roles are assigned as follows:
+
+- Store managers are team owners in Teams.
+- Department managers are team members in Teams and schedule owners in Shifts.
+
+Recently, Contoso reviewed the Shifts capabilities of their frontline managers based on business needs and determined:
+
+- Frontline managers shouldn't be able to choose whether their teams can use time clock in Shifts.
+
+  Contoso is opting out of using time clock in Shifts for now because they want their frontline workers to use the in-store stations to clock and out of their shifts. This means that you need to:
+
+  - Remove frontline managers' permission for changing the time clock setting in Shifts for their teams.
+  - Set the time clock setting in Shifts to **Off** for all teams.
+
+- Department managers shouldn't be able to choose whether they can add and edit time-off reasons in Shifts. At Contoso, adding time-off reasons is the responsbility of the store manager. This means that you need to: 
+
+  - Remove schedule owners' permission for adding and editing time-off reasons in Shifts for all teams.
 
 ## Related articles
 
