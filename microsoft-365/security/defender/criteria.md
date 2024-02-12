@@ -3,8 +3,7 @@ title: How Microsoft identifies malware and potentially unwanted applications
 ms.reviewer: 
 description: Learn how Microsoft reviews software for privacy violations and other negative behavior, to determine if it's malware or a potentially unwanted application.
 keywords: security, malware, virus research threats, research malware, device protection, computer infection, virus infection, descriptions, remediation, latest threats, MMdevice, Microsoft Malware Protection Center, PUA, potentially unwanted applications
-ms.service: microsoft-365-security
-ms.subservice: intelligence
+ms.service: defender-xdr
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -57,7 +56,7 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Dropper:** A type of malware that installs other malware files onto your device. Unlike a downloader, a dropper doesn't have to connect to the internet to drop malicious files. The dropped files are typically embedded in the dropper itself.
 
-* **Exploit:** A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware. [See more information about exploits](exploits-malware.md).
+* **Exploit:** A piece of code that uses software vulnerabilities to gain access to your device and perform other tasks, such as installing malware..
 
 * **Hacktool:** A type of tool that can be used to gain unauthorized access to your device.
 

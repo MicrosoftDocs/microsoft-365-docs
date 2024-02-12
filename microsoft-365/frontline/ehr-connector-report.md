@@ -25,7 +25,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.reviewer: 
+ms.reviewer: beolson, ansantam
 description: Learn how to use the Teams EHR connector Virtual Appointments report in the Microsoft Teams admin center to get an overview of EHR-integrated virtual appointment usage in your organization. 
 ms.date: 12/16/2022
 ---

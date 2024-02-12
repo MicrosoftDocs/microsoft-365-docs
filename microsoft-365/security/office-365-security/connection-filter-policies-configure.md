@@ -66,8 +66,6 @@ This article describes how to configure the default connection filter policy in 
 
 - The IP Allow List and the IP Block List each support a maximum of 1273 entries, where an entry is a single IP address, an IP address range, or a Classless InterDomain Routing (CIDR) IP.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy'></a>
-
 ## Use the Microsoft Defender portal to modify the default connection filter policy
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
@@ -96,8 +94,6 @@ This article describes how to configure the default connection filter policy in 
    When you're finished in the flyout, select **Save**.
 
 4. Back on the policy details flyout, select **Close**.
-
-<a name='use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy'></a>
 
 ## Use the Microsoft Defender portal to view the default connection filter policy
 
