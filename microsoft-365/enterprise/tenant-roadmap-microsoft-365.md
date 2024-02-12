@@ -29,7 +29,9 @@ To get your tenant ready for user, groups, licenses, and cloud apps, it's critic
 
 ## Set up your Microsoft 365 tenant
 
-After ensuring that your networking is optimized for access to Microsoft 365 for both on-premises and remote workers, your next big tasks are planning for and then configuring your Microsoft 365 tenant for DNS domain names, common services, and for that identity infrastructure that supports secure user sign-in.
+Before you begin planning your network for Microsoft 365 network connectivity, it's important to understand the connectivity principles for securely managing Microsoft 365 traffic and getting the best possible performance. Ensure that your networking is optimized for access to Microsoft 365 for both on-premises and remote workers by [understanding and planning for Microsoft 365 network optimization](microsoft-365-network-connectivity-principles.md).
+
+Your next big tasks are planning for and then configuring your Microsoft 365 tenant for DNS domain names, common services, and for that identity infrastructure that supports secure user sign-in.
 
 ### Plan
 
@@ -38,7 +40,6 @@ To plan for your tenant implementation:
 - [Understand subscriptions, licenses, and Microsoft Entra tenants](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Understand how to use third-party SSL certificates](plan-for-third-party-ssl-certificates.md)
 - [Understand the ways a Microsoft 365 tenant is integrated with Microsoft Entra services](integrated-apps-and-azure-ads.md)
-- [Understand and plan for Microsoft 365 network optimization](microsoft-365-network-connectivity-principles.md)
 - [Plan for client app support](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determine how to use hybrid modern authentication](hybrid-modern-auth-overview.md)
 - [Plan for Office 2007 and Office 2010 upgrades](plan-upgrade-previous-versions-office.md)
