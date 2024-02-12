@@ -438,7 +438,7 @@ Download the onboarding package from Microsoft Defender portal.
    mdatp health --field org_id
    ```
 
-4. Check the health status of the product by running the following command. A return value of `1` denotes that the product is functioning as expected:
+4. Check the health status of the product by running the following command. A return value of `true` denotes that the product is functioning as expected:
 
    ```bash
    mdatp health --field healthy
@@ -455,7 +455,7 @@ Download the onboarding package from Microsoft Defender portal.
 
 5. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-   - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
+   - Ensure that real-time protection is enabled (denoted by a result of `true` from running the following command):
 
      ```bash
      mdatp health --field real_time_protection_enabled
