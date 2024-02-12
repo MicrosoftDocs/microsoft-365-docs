@@ -437,13 +437,19 @@
               - name: Get started with Microsoft Defender Experts for XDR service
                 href: get-started-xdr.md
               - name: Start using Microsoft Defender Experts for XDR service
-                href: start-using-mdex-xdr.md
-              - name: Communicate with Defender Experts
-                href: communicate-defender-experts-xdr.md
-              - name: Auditing
-                href: auditing.md
-              - name: Additional information
-                href: additional-information-xdr.md
+                items: 
+                - name: Managed detection and response
+                  href: managed-detection-and-response-xdr.md
+                - name: Defender Experts for XDR Reports
+                  href: reports-xdr.md
+                - name: Communicate with Defender Experts for XDR
+                  href: communicate-defender-experts-xdr.md
+                - name: Defender Experts for hunting
+                  href: dex-for-hunting-xdr.md
+                - name: Ask Defender Experts
+                  href: ask-defender-experts.md
+                - name: Auditing
+                  href: auditing.md
               - name: Frequently asked questions
                 items: 
                 - name: General information
@@ -452,6 +458,10 @@
                   href: faq-incident-notifications-xdr.md
                 - name: Managed response
                   href: faq-managed-response.md
+              - name: Additional information on Defender Experts for XDR
+                items:
+              - name: Important considerations on incident response  
+                href: additional-information-xdr.md
               - name: How Defender Experts for XDR permissions work
                 href: dex-xdr-permissions.md
        - name: Ransomware playbooks
