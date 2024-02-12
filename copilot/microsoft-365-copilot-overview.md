@@ -53,6 +53,7 @@ Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and m
 | Teams                 | Chat                           | Users can invoke Copilot in any chat. Copilot can summarize up to 30 days of the chat content prior to the last message in a given chat. Copilot uses only the single chat thread as source content for responses and can't reference other chats or data types (for example, meeting transcripts, emails, and files). Users can interact with Copilot by selecting pre-written prompts or writing their own questions. Responses include clickable citations that direct users to the relevant source content that was used. Conversations with Copilot take place in a side panel that allows users to copy and paste. Copilot conversations will disappear after the side panel is closed. |
 |                       | Meetings                       | Users can invoke Copilot in meetings or calls within the same tenant. Copilot will use the transcript in real-time to answer questions from the user. It only uses the transcript and knows the name of the user typing the question. The user can type any question or use pre-determined prompts; however, Copilot will only answer questions related to the meeting conversation from the transcript. The user can copy/paste an answer and access Copilot after the meeting ends on the Recap page. |
 |                       | Copilot                  | Allows users to access data across their Microsoft 365 Graph and leverage LLM functionality. Copilot can be accessed in Teams and when signed-in to Bing with an active directory account. |
+|                       | Calls                  | Copilot in Teams Phone uses the power of AI to empower you to work more flexibly and intelligently, automating important administrative tasks of a call, such as capturing key points, task owners, and next steps, so you can stay focused on the discussion. Copilot in Teams Phone supports both voice over Internet Protocol (VoIP) and public switched telephone network (PSTN) calls.  |
 |                       | Whiteboard                     | Makes meetings and brainstorm sessions more creative and effective. Use natural language to ask Copilot to generate ideas, organize ideas into themes, create designs that bring ideas to life and summarize whiteboard content. |
 | OneNote               | Draft with Copilot             | Use prompts to draft plans, generate ideas, create lists, and organize information to help you easily find what you need.  |
 
@@ -88,13 +89,13 @@ Microsoft Copilot for Microsoft 365 iteratively processes and orchestrates these
 
 ## Semantic Index
 
-The semantic index brings a whole new world of understanding to your data in Microsoft 365. Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft Copilot, it's always in the security context of the user, and only content that a user has access to is returned.
+Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft Copilot, it's always in the security context of the user, and only content that a user has access to is returned.
 
 To learn more, see [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot).
 
 ## Availability
 
-Copilot for Microsoft 365 is an add-on plan with the following licensing prerequisites:
+Copilot for Microsoft 365 is available as an add-on plan with one of the following licensing prerequisites:
 
 - Microsoft 365 E5
 - Microsoft 365 E3

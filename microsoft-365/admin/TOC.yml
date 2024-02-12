@@ -449,10 +449,6 @@
                 href: manage/servicenow-virtual-agent-integration-v1.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
-    - name: Manage self-service purchases, trials, and licenses
-      items: 
-       - name: Manage self-service purchases, trials, and licenses
-         href: manage/manage-self-service-purchases-org-trials-for-msproject.md   
     - name: Secure your organization
       items: 
         - name: Multi-factor authentication for Microsoft 365

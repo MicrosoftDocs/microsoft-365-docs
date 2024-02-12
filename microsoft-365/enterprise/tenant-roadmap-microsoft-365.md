@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - m365initiative-coredeploy
+- essentials-get-started
 - must-keep
 ms.custom: it-pro
 description: The roadmap to set up your tenants for Microsoft 365.

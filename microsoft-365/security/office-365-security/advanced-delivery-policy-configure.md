@@ -68,8 +68,6 @@ Messages that are identified by the advanced delivery policy aren't security thr
       - **View-Only Organization Management** in Exchange Online RBAC.
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-<a name='use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy'></a>
-
 ## Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
@@ -98,8 +96,6 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 - The **Email** column contains the email address for each entry.
 - To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-or-remove-secops-mailboxes-in-the-advanced-delivery-policy'></a>
-
 ## Use the Microsoft Defender portal to modify or remove SecOps mailboxes in the advanced delivery policy
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
@@ -108,7 +104,7 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 
 2. On the **SecOps mailbox** tab, select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
-3. In **Edit SecOps mailboxes** flyout that opens, add or remove mailboxes as described in Step 3 in the [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
+3. In **Edit SecOps mailboxes** flyout that opens, add or remove mailboxes as described in Step 3 in the [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
 
    To remove all mailboxes, select remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to each value until there are no more mailboxes selected.
 
@@ -117,8 +113,6 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 5. Review the information in the **Changes to SecOps mailbox override saved** flyout, and then select **Close**.
 
 Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configured are displayed. If you removed all entries, the list is empty.
-
-<a name='use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy'></a>
 
 ## Use the Microsoft Defender portal to configure third-party phishing simulations in the advanced delivery policy
 
@@ -184,8 +178,6 @@ Back on the **Phishing simulation** tab, the third-party phishing simulation ent
 - The **Date** column shows when the entry was created.
 - To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-or-remove-third-party-phishing-simulations-in-the-advanced-delivery-policy'></a>
-
 ## Use the Microsoft Defender portal to modify or remove third-party phishing simulations in the advanced delivery policy
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
@@ -194,7 +186,7 @@ Back on the **Phishing simulation** tab, the third-party phishing simulation ent
 
 2. On the **Phishing simulation** tab, select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
-3. In the **Edit third-party phishing simulation** flyout that opens, add or remove entries for **Domain**, **Sending IP**, and **Simulation URLs** as described in Step 3 in the [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
+3. In the **Edit third-party phishing simulation** flyout that opens, add or remove entries for **Domain**, **Sending IP**, and **Simulation URLs** as described in Step 3 in the [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
 
    To remove all entries, select remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to each value until there are no more domains, IPs, or URLs selected.
 
@@ -334,7 +326,7 @@ In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-
 - Remove any SecOps override rules:
 
   ```powershell
-  Get-ExoSecOpsOverridePolicy | Remove-ExoSecOpsOverrideRule
+  Get-ExoSecOpsOverrideRule | Remove-ExoSecOpsOverrideRule
   ```
 
 - Remove the specified SecOps override rule:
@@ -549,7 +541,7 @@ In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-
 - Remove any phishing simulation override rules:
 
   ```powershell
-  Get-ExoPhishSimOverridePolicy | Remove-ExoPhishSimOverrideRule
+  Get-ExoPhishSimOverrideRule | Remove-ExoPhishSimOverrideRule
   ```
 
 - Remove the specified phishing simulation override rule:
