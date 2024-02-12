@@ -91,7 +91,7 @@ You can also get product updates and important notifications through the [messag
 
 - (Preview) The [DeviceInfo](advanced-hunting-deviceinfo-table.md) table in advanced hunting now also includes the columns `DeviceManualTags` and `DeviceDynamicTags` in public preview to surface both manually and dynamically assigned tags related to the device you are investigating.
 
-- The **Guided response** feature in Microsoft Defender Experts for XDR has been renamed to **[Managed response](start-using-mdex-xdr.md#how-to-use-managed-response-in-microsoft-365-defender)**. We have also added a [new FAQ section](faq-incident-notifications-xdr.md#understanding-and-managing-defender-experts-for-xdr-incident-updates) on incident updates.
+- The **Guided response** feature in Microsoft Defender Experts for XDR has been renamed to **[Managed response](managed-detection-and-response-xdr.md)**. We have also added a [new FAQ section](faq-incident-notifications-xdr.md#understanding-and-managing-defender-experts-for-xdr-incident-updates) on incident updates.
 
 ## July 2023
 
