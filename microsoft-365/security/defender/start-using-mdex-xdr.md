@@ -1,8 +1,8 @@
 ---
 title: How to use the Microsoft Defender Experts for XDR service
 ms.reviewer:
-description: Defender Experts for XDR helps prioritize and customize recommendations to fit your environment
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Managed response in Teams, real-time visibility with XDR experts, threat hunting and analysis, incidents by category, impacted assets
+description: Defender Experts for XDR help prioritize and customize recommendations to fit your environment
+keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, service, service delivery manager, Managed response in Teams, real-time visibility with XDR experts, threat hunting and analysis, incidents by category, impacted assets
 ms.service: defender-experts
 ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
