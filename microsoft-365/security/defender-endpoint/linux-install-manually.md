@@ -37,13 +37,15 @@ This article describes how to deploy Microsoft Defender for Endpoint on Linux ma
 
 - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
 - [Configure the Linux software repository](#configure-the-linux-software-repository)
-  - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2-1)
+  - [RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)](#rhel-and-variants-centos-fedora-oracle-linux-amazon-linux-2-rocky-and-alma-1)
   - [SLES and variants](#sles-and-variants-1)
   - [Ubuntu and Debian systems](#ubuntu-and-debian-systems-1)
+  - [Mariner](#mariner)
 - [Application installation](#application-installation)
-  - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
+  - [RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)](#rhel-and-variants-centos-fedora-oracle-linux-amazon-linux-2-rocky-and-alma)
   - [SLES and variants](#sles-and-variants)
   - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
+  - [Mariner](#mariner-1)
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Client configuration](#client-configuration)
 
@@ -89,7 +91,7 @@ Options:
 
 Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
-### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
+### RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)
 
 - Install `yum-utils` if it isn't installed yet:
 
@@ -104,11 +106,13 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
 
   |Distro & version|Package|
   |---|---|
+  |For Alma 9.2 and higher|<https://packages.microsoft.com/config/alma/9/prod.repo>|
   |For RHEL/Centos/Oracle 8.0-8.8|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
   |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
   |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
   |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
+  |For Rocky 8.7 and higher|<https://packages.microsoft.com/config/rocky/8/prod.repo>|
 
   <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 
@@ -243,10 +247,36 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | su
   ```bash
   sudo apt-get update
   ```
+### Mariner
+
+- Install `dnf-plugins-core` if it isn't installed yet:
+
+  ```bash
+  sudo dnf install dnf-plugins-core
+  ```
+
+- Configure and Enable the required repositories
+
+  > [!NOTE]
+  > On Mariner, Insider Fast Channel is not available.
+
+  If you want to deploy Defender for Endpoint on Linux from the *prod* channel. Use the following commands
+  
+  ```bash
+  sudo dnf install mariner-repos-extras
+  sudo dnf config-manager --enable mariner-official-extras
+  ```
+
+  Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-slow* channel. Use the following commands:
+  
+  ```bash
+  sudo dnf install mariner-repos-extras-preview
+  sudo dnf config-manager --enable mariner-official-extras-preview
+  ```
 
 ## Application installation
 
-### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
+### RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)
 
 ```bash
 sudo yum install mdatp
@@ -321,6 +351,20 @@ sudo apt -t bionic install mdatp
 
 > [!NOTE]
 > Reboots are NOT required after installing or updating Microsoft Defender for Endpoint on Linux except when you're running auditD in immutable mode.
+
+### Mariner
+
+```bash
+sudo dnf install mdatp
+```
+
+> [!NOTE]
+> If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-slow` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
+
+```bash
+sudo dnf config-manager --disable mariner-official-extras-preview
+sudo dnf config-manager --enable mariner-official-extras
+```
 
 ## Download the onboarding package
 
@@ -452,11 +496,13 @@ The following external package dependencies exist for the mdatp package:
 - The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "semanage" "selinux-policy-targeted", "mde-netfilter"
 - For RHEL6 the mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter"
 - For DEBIAN the mdatp package requires "libc6 >= 2.23", "uuid-runtime", "auditd", "mde-netfilter"
+- For Mariner the mdatp package requires "attr", "audit", "diffutils", "libacl", "libattr", "libselinux-utils", "selinux-policy", "policycoreutils", "mde-netfilter"
 
 The mde-netfilter package also has the following package dependencies:
 
 - For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0"
-- for RPM the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
+- For RPM the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
+- For Mariner the mde-netfilter package requires "libnfnetlink", "libnetfilter_queue"
 
 If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies.
 
