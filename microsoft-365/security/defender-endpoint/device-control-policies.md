@@ -4,7 +4,7 @@ description: Learn about Device control policies in Defender for Endpoint
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 02/01/2024
+ms.date: 02/13/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -15,7 +15,7 @@ ms.collection:
 - mde-asr
 ms.custom:
 - partner-contribution
-ms.reviewer: joshbregman
+ms.reviewer: joshbregman, ksarens
 search.appverid: MET150
 f1.keywords: NOCSH 
 ---
