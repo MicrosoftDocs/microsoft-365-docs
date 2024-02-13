@@ -7,7 +7,7 @@ ms.author: dansimp
 author: dansimp
 ms.reviewer: kumasumit
 ms.localizationpriority: medium
-ms.date: 11/30/2023
+ms.date: 02/12/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -57,7 +57,7 @@ There are multiple fixes and new changes in this release:
 </details>
 
 <details>
-	<summary> January-2024 (Build: 101.23112.0009 | Release version: 30.123112.0009.0)</summary>
+<summary> January-2024 (Build: 101.23112.0009 | Release version: 30.123112.0009.0)</summary>
 
 ## January-2024 Build: 101.23112.0009 | Release version: 30.123112.0009.0
 
@@ -678,22 +678,23 @@ In case the issue reappears with some different denials. We need to run the miti
 
 **What's new**
 
-- There are multiple fixes and new changes in this release 
-	- Improved Data Completeness for Network Connection events.
-	- Improved Data Collection capabilities for file ownership/permissions changes
-	- seManage in part of the package, to that seLinux policies can be configured in different distro (fixed).
-	- Bug fix 
-		- Improved enterprise daemon stability.
-		- AuditD stop path clean-up: 
-		- Improve the stability of mdatp stop flow.
-	- Added new field to wdavstate to keep track of platform update time.
-	- Stability improvements to parsing Defender for Endpoint onboarding blob.
-	- Scan doesn't proceed if a valid license isn't present (fixed)
-	- Added performance tracing option to xPlatClientAnalyzer, with tracing enabled mdatp process dumps the flow in all_process.zip file that can be used for analysis of performance issues.
-	- Added support in Defender for Endpoint for the following RHEL-6 kernel versions:
-		- `2.6.32-754.43.1.el6.x86_64`
-		- `2.6.32-754.49.1.el6.x86_64`
-	- Other fixes
+There are multiple fixes and new changes in this release.
+
+- Improved Data Completeness for Network Connection events
+- Improved Data Collection capabilities for file ownership/permissions changes
+- seManage in part of the package, to that seLinux policies can be configured in different distro (fixed).
+- Bug fixes
+- Improved enterprise daemon stability
+- AuditD stop path clean-up
+- Improved the stability of mdatp stop flow.
+- Added new field to wdavstate to keep track of platform update time.
+- Stability improvements to parsing Defender for Endpoint onboarding blob.
+- Scan doesn't proceed if a valid license isn't present (fixed)
+- Added performance tracing option to xPlatClientAnalyzer, with tracing enabled mdatp process dumps the flow in all_process.zip file that can be used for analysis of performance issues.
+- Added support in Defender for Endpoint for the following RHEL-6 kernel versions:
+   - `2.6.32-754.43.1.el6.x86_64`
+   - `2.6.32-754.49.1.el6.x86_64`
+- Other fixes
 	
 **Known issues**
 
