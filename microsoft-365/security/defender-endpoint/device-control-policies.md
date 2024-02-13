@@ -625,6 +625,7 @@ Then the group is then referenced as parameters in an entry, as illustrated in t
           <Options>0</Options>
           <AccessMask>64</AccessMask>
           <Parameters MatchType="MatchAny">
+            <VPNConnection>
                     <GroupId>{d633d17d-d1d1-4c73-aa27-c545c343b6d7}</GroupId>
             </VPNConnection>
         </Parameters>
