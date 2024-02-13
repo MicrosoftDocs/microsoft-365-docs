@@ -160,6 +160,8 @@
          href: incident-response-overview.md
        - name: Investigate and respond with Security Copilot
          items:
+              - name: Overview
+                href: security-copilot-in-microsoft-365-defender.md
               - name: Summarize incidents
                 href: security-copilot-m365d-incident-summary.md
               - name: Analyze scripts and codes

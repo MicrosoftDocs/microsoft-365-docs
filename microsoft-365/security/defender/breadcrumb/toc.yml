@@ -1,10 +1,10 @@
 
 - name: Microsoft 365
-  tocHref: /microsoft-365/
+  tocHref: /azure/
   topicHref: /microsoft-365/index
   items:
   - name: Security
-    tocHref: /microsoft-365/security/
+    tocHref: /azure/security/
     topicHref: /microsoft-365/security/index
     items:
     - name: Microsoft Defender XDR
