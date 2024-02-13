@@ -33,8 +33,8 @@ Get started with Microsoft 365 Backup by following these simple three steps in t
 Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you will need to have this information:
 
 > [!div class="checklist"]
-> * **Valid Azure subscription**. An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure concepts, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
-> * **Resource group**. A resources group provides a logical grouping of resources within an Azure subscription.
+> * **Valid Azure subscription**. An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
+> * **Resource group**. A resource group provides a logical grouping of resources within an Azure subscription.
 > * **Region**. The region in which you want to register the service.
 > * **Owner or contributor**. Name of an owner or contributor role on the Azure subscription.
 
