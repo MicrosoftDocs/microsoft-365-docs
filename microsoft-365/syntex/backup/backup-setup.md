@@ -30,7 +30,7 @@ Get started with Microsoft 365 Backup by following these simple three steps in t
 
 ## Step 1: Set up pay-as-you-go billing
 
-Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you will need to provide these things:
+Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you will need to have this information:
 
 > [!div class="checklist"]
 > * **Valid Azure subscription**. An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure concepts, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
@@ -38,7 +38,7 @@ Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumpti
 > * **Region**. The region in which you want to register the service.
 > * **Owner or contributor**. Name of an owner or contributor role on the Azure subscription.
 
-Once you have these items ready, you can [set up pay-as-you-go billing for Microsoft 365 Backup](backup/backup-billing.md).
+Once you have the information on this list, you are ready to [set up pay-as-you-go billing for Microsoft 365 Backup](backup-billing.md).
 
 <!---To set up pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing](../syntex-azure-billing.md).--->
 
