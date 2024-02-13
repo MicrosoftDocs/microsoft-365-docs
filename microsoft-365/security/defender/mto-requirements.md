@@ -25,6 +25,9 @@ ms.date: 09/01/2023
 
 This article describes the steps you need to take to start using multi-tenant management in Microsoft Defender XDR.
 
+>[!Note]
+> In a multi-tenant environment, interactions between the multi-tenant user and the managed tenants may involve accessing data and managing configurations. However, these actions depend on the permissions that the managed tenant has granted to the multi-tenant user.
+
 1. [Review the requirements](#review-the-requirements)
 2. [Verify your tenant access](#verify-your-tenant-access)
 3. [Set up multi-tenant management in Microsoft Defender XDR](#set-up-multi-tenant-management)
@@ -49,10 +52,8 @@ The following table lists the basic requirements you need to use multi-tenant ma
 
 In order to view and manage the data you have access to in multi-tenant management, you need to ensure you have the necessary permissions. For each tenant you want to view and manage, you need to either:
 
-- [Verify your tenant access with Microsoft Entra B2B](#verify-your-tenant-access-with-azure-active-directory-b2b)
+- [Verify your tenant access with Microsoft Entra B2B](#verify-your-tenant-access-with-microsoft-entra-b2b)
 - [Verify your tenant access with GDAP](#verify-your-tenant-access-with-gdap)
-
-<a name='verify-your-tenant-access-with-azure-active-directory-b2b'></a>
 
 ### Verify your tenant access with Microsoft Entra B2B
 
@@ -81,6 +82,9 @@ The first time you use multi-tenant management in Microsoft Defender XDR, you ne
    :::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Screenshot of the Microsoft Defender XDR multi-tenant portal setup screen" lightbox="../../media/defender/mto-add-tenants.png":::
 
 3. Choose the tenants you want to manage and select **Add**.
+
+>[!Note]
+> The multi-tenant view in Microsoft Defender XDR currently has a limit of 50 target tenants.
 
 The features available in multi-tenant management now appear on the navigation bar and you're ready to view and manage security data across all your tenants.
 
