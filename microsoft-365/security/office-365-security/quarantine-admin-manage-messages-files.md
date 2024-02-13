@@ -110,6 +110,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 - **Recipient tag**: Currently, the only selectable [user tag](user-tags-about.md) is Priority account.
 - **Quarantine reason**:
   - **Transport rule** (mail flow rule)
+  - **Data loss prevention**
   - **Bulk**
   - **Spam**
   - **Malware**: Anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365. The **Policy Type** value indicates which feature was used.
