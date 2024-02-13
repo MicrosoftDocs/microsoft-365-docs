@@ -48,7 +48,7 @@ You must have Global admin or SharePoint admin permissions to access the Microso
 
 ## Step 2: Turn on Microsoft 365 Backup
 
-To enable Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin center.
+To turn on Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin center.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
