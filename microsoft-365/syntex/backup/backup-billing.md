@@ -64,8 +64,6 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
     > [!NOTE]
     > The subscription dropdown list will not populate if you don't have an owner or contributor on the subscription.
 
-<!---To check your role on subscription, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).--->
-
     ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../../media/content-understanding/back-billing-subscription.png)
 
     b. Under **Resource group**, select the resource group from the dropdown list.
