@@ -55,14 +55,21 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
     ![Screenshot of the Set up pay-as-you-go billing panel in the Microsoft 365 admin center.](../../media/content-understanding/backup-billing-panel.png)
 
     > [!NOTE]
-    > Note that the resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
+    > The resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
 
+6. If you *have* an Azure subscription, follow these steps:
 
+    a. On the **Set up pay-as-you-go billing** panel, under **Azure subscription**, select the subscription from the dropdown list.
 
-6.	If you have an Azure subscription, select the subscription from the drop-down menu. 
-Please note that the subscription dropdown will not populate if you do not have an owner or contributor on the subscription. Check your role on subscription using the learn document here. 
- 
+    > [!NOTE]
+    > The subscription dropdown list will not populate if you don't have an owner or contributor on the subscription. To check your role on subscription, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-7.	Select the Azure subscription, resource group and region from the drop down, accept terms of service and hit Save. 
-Now you have successfully set up billing for the product, you can proceed to Step 2: Enable Microsoft 365 Backup
+    ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../../media/content-understanding/back-billing-subscription.png)
 
+    b. Under **Resource group**, select the resource group from the dropdown list.
+
+    c. Under **Region**, select the region from the dropdown list.
+
+    d. Review and accept the terms of service, and then select **Save**.
+
+You have successfully set up billing. You can proceed to [Step 2: Turn on Microsoft 365 Backup](backup-setup.md/#step-2-turn-on-microsoft-365-backup).
