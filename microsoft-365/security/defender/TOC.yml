@@ -632,6 +632,86 @@
             href: virus-initiative-criteria.md
           - name: Software developer FAQ
             href: developer-faq.yml
+    - name: Microsoft Sentinel docs
+      items:
+      - name: Overview
+        href: /azure/sentinel/overview?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+      - name: Search
+        items:
+        - name: Overview
+          href: /azure/sentinel/investigate-large-datasets?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Search large datasets
+          href: /azure/sentinel/search-jobs?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Restore historical data
+          href: /azure/sentinel/restore?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+      - name: Manage threats
+        items:
+        - name: Visualize data by using workbooks
+          href: /azure/sentinel/monitor-your-data?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Hunt for threats
+          items:
+          - name: Overview
+            href: /azure/sentinel/hunting?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Conduct end-to-end hunts
+            href: /azure/sentinel/hunts?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Hunt with bookmarks
+            href: /azure/sentinel/bookmarks?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Hunt with livestream
+            href: /azure/sentinel/livestream?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Hunt with notebooks
+            href: /azure/sentinel/notebooks-hunt?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Integrate threat intelligence
+          items:
+          - name: Overview
+            href: /azure/sentinel/understand-threat-intelligence?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Add indicators in bulk by file
+            href: /azure/sentinel/indicators-bulk-file-import?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Work with threat indicators
+            href: /azure/sentinel/work-with-threat-indicators?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Review MITRE ATT&CK coverage
+          href: /azure/sentinel/mitre-coverage?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+      - name: Manage content
+        items:
+        - name: Overview
+          href: /azure/sentinel/sentinel-solutions?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Deploy out-of-the-box content
+          href: /azure/sentinel/sentinel-solutions-deploy?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Solution catalog
+          href: /azure/sentinel/sentinel-solutions-catalog?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: ASIM-based domain solutions
+          href: /azure/sentinel/domain-based-essential-solutions?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Deploy custom content from your repository
+          href: /azure/sentinel/ci-cd?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+      - name: Configure features
+        items:
+        - name: Collect Data
+          items:
+          - name: Overview
+            href: /azure/sentinel/connect-data-sources?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Find data connector
+            href: /azure/sentinel/data-connectors-reference?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Create threat detection rules
+          items:
+          - name: Create a scheduled query rule
+            href: /azure/sentinel/detect-threats-custom?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Create near-real-time (NRT) analytics rules
+            href: /azure/sentinel/create-nrt-rules?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Create watchlists
+          items:
+          - name: Overview
+            href: /azure/sentinel/watchlists?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Create watchlist
+            href: /azure/sentinel/watchlists-create?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Manage watchlists in Microsoft Sentinel
+            href: /azure/sentinel/watchlists-manage?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+        - name: Automate responses
+          items:
+          - name: Overview
+            href: /azure/sentinel/automate-incident-handling-with-automation-rules?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json                    
+          - name: Create automation rule
+            href: /azure/sentinel/create-manage-use-automation-rules?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Customize playbooks from templates
+            href: /azure/sentinel/use-playbook-templates?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
     - name: Microsoft Defender XDR docs
       items: 
        - name: Defender for Office 365
