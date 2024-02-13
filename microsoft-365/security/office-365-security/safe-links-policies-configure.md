@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete Safe Links policies in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 9/19/2023
+ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
@@ -47,23 +47,22 @@ You configure Safe Links policies in the Microsoft Defender portal or in Exchang
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md) and [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Create, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups in Email & collaboration RBAC <u>and</u> membership in the **Organization Management** role group in Exchange Online RBAC.
     - _Read-only access to policies_: Membership in one of the following role groups:
       - **Global Reader** or **Security Reader** in Email & collaboration RBAC.
       - **View-Only Organization Management** in Exchange Online RBAC.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-rolesd): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
   > [!TIP]
-  > [Exceptions to Built-in protection for Safe Links](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy) or settings in custom Safe Links policies are ignored if a recipient is also included in the [Standard or Strict preset security policies](preset-security-policies.md). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+  > [Exceptions to Built-in protection for Safe Links](preset-security-policies.md#use-the-microsoft-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy) or settings in custom Safe Links policies are ignored if a recipient is also included in the [Standard or Strict preset security policies](preset-security-policies.md). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 - Allow up to 6 hours for a new or updated policy to be applied.
 
 - For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
-
-<a name='use-the-microsoft-365-defender-portal-to-create-safe-links-policies'></a>
 
 ## Use the Microsoft Defender portal to create Safe Links policies
 
@@ -185,8 +184,6 @@ You configure Safe Links policies in the Microsoft Defender portal or in Exchang
 
    Back on the **Safe Links** page, the new policy is listed.
 
-<a name='use-the-microsoft-365-defender-portal-to-view-safe-links-policy-details'></a>
-
 ## Use the Microsoft Defender portal to view Safe Links policy details
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
@@ -195,7 +192,7 @@ On the **Safe Links** page, the following properties are displayed in the list o
 
 - **Name**
 - **Status**: Values are **On** or **Off**.
-- **Priority**: For more information, see the [Set the priority of Safe Links policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-safe-links-policies) section.
+- **Priority**: For more information, see the [Set the priority of Safe Links policies](#use-the-microsoft-defender-portal-to-set-the-priority-of-custom-safe-links-policies) section.
 
 To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
@@ -209,8 +206,6 @@ Select a policy by clicking anywhere in the row other than the check box next to
 
 > [!TIP]
 > To see details about other Safe Links policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
-
-<a name='use-the-microsoft-365-defender-portal-to-take-action-on-safe-links-policies'></a>
 
 ## Use the Microsoft Defender portal to take action on Safe Links policies
 
@@ -235,15 +230,11 @@ In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Em
 
 The actions are described in the following subsections.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-custom-safe-links-policies'></a>
-
 ### Use the Microsoft Defender portal to modify custom Safe Links policies
 
-After you select a custom Safe Links policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create Safe Links policies](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) section earlier in this article.
+After you select a custom Safe Links policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create Safe Links policies](#use-the-microsoft-defender-portal-to-create-safe-links-policies) section earlier in this article.
 
 You can't modify the Safe Links policies named **Standard Preset Security Policy**, **Strict Preset Security Policy**, or **Built-in protection (Microsoft)** that are associated with [preset security policies](preset-security-policies.md) in the policy details flyout. Instead, you select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View preset security policies** in the details flyout to go to the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies> to modify the preset security policies.
-
-<a name='use-the-microsoft-365-defender-portal-to-enable-or-disable-custom-safe-links-policies'></a>
 
 ### Use the Microsoft Defender portal to enable or disable custom Safe Links policies
 
@@ -261,13 +252,11 @@ After you select a disabled custom Safe Links policy (the **Status** value is **
 
 On the **Safe Links** page, the **Status** value of the policy is now **On** or **Off**.
 
-<a name='use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-safe-links-policies'></a>
-
 ### Use the Microsoft Defender portal to set the priority of custom Safe Links policies
 
 Safe Links policies are processed in the order that they're displayed on the **Safe Links** page:
 
-- The Safe Links policy named **Strict Preset Security Policy** that's associated with the Strict preset security policy is always applied first (if the Strict preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
+- The Safe Links policy named **Strict Preset Security Policy** that's associated with the Strict preset security policy is always applied first (if the Strict preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
 - The Safe Links policy named **Standard Preset Security Policy** that's associated with the Standard preset security policy is always applied next (if the Standard preset security policy is enabled).
 - Custom Safe Links policies are applied next in priority order (if they're enabled):
   - A lower priority value indicates a higher priority (0 is the highest).
@@ -286,8 +275,6 @@ After you select the custom Safe Links policy by clicking anywhere in the row ot
 When you're finished in the policy details flyout, select **Close**.
 
 Back on the **Safe Links** page, the order of the policy in the list matches the updated **Priority** value.
-
-<a name='use-the-microsoft-365-defender-portal-to-remove-custom-safe-links-policies'></a>
 
 ### Use the Microsoft Defender portal to remove custom Safe Links policies
 

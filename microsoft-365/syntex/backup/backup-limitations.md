@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 11/15/2023
+ms.date: 01/17/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: backup
@@ -34,7 +34,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - You can create only one active backup policy per underlying service (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange online users). You can add or remove as many artifacts (sites or user accounts) to or from each active policy.
 
-- Once the sites or mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore. Backups will begin as soon as the policy is in effect, even if the restore points aren't yet available. This limitation will be completely removed shortly.
+- Once the sites or mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore. Backups begin as soon as the policy is in effect, even if the restore points aren't yet available. This limitation will be removed shortly.
 
 - The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 3,000 entries per CSV file.
 
@@ -43,7 +43,9 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 - The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy and won't be dynamically updated in the system if users are added or removed from the original security group, for example.
 
 - Backup and restore of tenants that have the multi-geo feature enabled for OneDrive and SharePoint might not work properly. We recommend not using the preview version of Backup until multi-geo support is fully enabled.
-
+<!---
+- When you remove a OneDrive for Business account or a SharePoint site from a backup policy, you continue to be billed for the existing backups for the next one year of their retention. Additionally, the price of that backup will be proportional to the size of the site or account throughout that remaining year.
+--->
 ### Restore
 
 - Site search is case-sensitive and is a prefix-type search.
@@ -78,7 +80,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - While restoring Exchange mailboxes at a granular level, the search feature provides several search parameters. These parameters allow you to enter up to a maximum of five keywords each. For example, the parameters “from” and “to” allow you to enter up to a maximum of five email addresses each.
 
-- The multi-geo feature isn't supported for SharePoint Online or OneDrive for Business services in this release. This might affect the restore of sites across different geos.
+- The multi-geo feature isn't supported for SharePoint Online or OneDrive for Business services in this release. This might affect the restore of sites across different geos. Exchange Online multi-geo is supported, however, when configuring a restore each mailbox in a single restore request must be in the same geo.
 
 - OneDrive accounts and SharePoint sites that have undergone the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.  
 
@@ -97,3 +99,11 @@ During the preview, we're enforcing self-service restore limits while we gain a 
 |Number of artifacts (active and completed) restored in a day per workload    | Not applicable        | > 10,000        |
 
 *Customer can call into support to lift the safety restrictions.
+
+Follow these steps:
+
+1. As an administrator, select the following link, which will populate a help query in the admin center: [M365 Backup Limit Request](https://aka.ms/M365BackupLimit).
+
+2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**.
+
+3. Leave **Description** blank.

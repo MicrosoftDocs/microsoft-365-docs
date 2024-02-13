@@ -27,12 +27,20 @@ In a document library, you can see the status of any file that is being processe
 The **Processing status** column shows you whether the processing of a file is in progress, completed, or wasn’t done due to an error with the file or the job. The status helps you know whether a file needs to be queued again for processing or if more investigation is required.
 
 | Processing status | Description |
+| ------- | -------
+| In progress | The file has been queued for processing or is processing. |
+| Finished | The file has been processed. |
+| Failed | The file has been queued, but can't be processed (for example, the file type isn't supported or there's an issue with an image or text). |
+
+<!---
+| Processing status | Description |
 | ------- | ------- 
 | In progress | File has been queued for processing. |
 | Finished | File has been processed. |
 | Not supported | File has been queued, but can't be processed (for example, the file type isn't supported). |
 | Error | File can't be queued for processing (for example, the file isn't supported at all). |
 | [Empty] | No models have been applied to the library. |
+--->
 
 The **Processing details** column provides more information about the processing status, such as if a file format isn't supported or if an image is too small.
 

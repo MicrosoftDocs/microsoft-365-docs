@@ -3,8 +3,8 @@ title: Migrate devices to use the streamlined onboarding method
 description: Learn how to migrate devices to Defender for Endpoint using the streamlined connectivity method.
 search.appverid: met150
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -13,7 +13,7 @@ ms.collection:
 - tier1
 ms.topic: how-to
 ms.subservice: onboard
-ms.date: 09/21/2023
+ms.date: 02/01/2024
 ---
 
 # Migrate devices to use the streamlined connectivity method
@@ -215,22 +215,22 @@ Ensure connectivity is established with the appropriate URLs.
 
 You can use advanced hunting in Microsoft Defender portal to view the connectivity type status. 
 
-This information is found in the DeviceInfo table under the “ConnectivityType” column:
+This information is found in the DeviceInfo table under the "ConnectivityType" column:
 - Column Name: ConnectivityType
 - Possible Values: `<blank>`, Streamlined, Standard
 - Data type: String
 - Description: Type of connectivity from the device to the cloud
 
-Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as “Streamlined”.
+Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as "Streamlined".
 
-If you move the device back to the regular method, the value will be “standard”.
+If you move the device back to the regular method, the value will be "standard".
 
 For devices that have not yet attempted reonboard, the value will remain blank. 
 
 
 ### Tracking locally on a device through Windows Event Viewer
 
-You can use Windows Event Viewer’s SENSE operational log to locally validate connections with the new streamlined approach. SENSE Event ID 4 tracks successful EDR connections.
+You can use Windows Event Viewer's SENSE operational log to locally validate connections with the new streamlined approach. SENSE Event ID 4 tracks successful EDR connections.
 
 Open the Defender for Endpoint service event log using the following steps:
 
@@ -325,9 +325,9 @@ For macOS and Linux, you can use the following methods:
 
 ### MDATP connectivity test (macOS and Linux)
 
-Run `mdatp health –details` to confirm simplified_connectivity: "enabled".
+Run `mdatp health -details features ` to confirm simplified_connectivity: "enabled".
 
-Run `mdatp health –details edr` to confirm `edr_partner_geo_location` is available. The value should be `GW_<geo>` where 'geo' is your tenant’s geo-location.
+Run `mdatp health -details edr` to confirm `edr_partner_geo_location` is available. The value should be `GW_<geo>` where 'geo' is your tenant's geo-location.
 
 Run mdatp connectivity test. Ensure the streamlined URL pattern is present. You should expect two for '\storage', one for '\mdav', one for '\xplat', and one for '/packages'.
 

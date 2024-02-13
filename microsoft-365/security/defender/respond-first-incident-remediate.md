@@ -46,7 +46,7 @@ Learn how automatic attack disruption helps in incident response:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10OoF]
 
-Meanwhile, Microsoft Defender XDR’s [automated investigation and response](m365d-autoir.md) capabilities can automatically investigate and apply remediation actions to malicious and suspicious items. These capabilities scale investigation and resolution to threats, freeing incident responders to focus their efforts on high-impact attacks.
+Meanwhile, Microsoft Defender XDR's [automated investigation and response](m365d-autoir.md) capabilities can automatically investigate and apply remediation actions to malicious and suspicious items. These capabilities scale investigation and resolution to threats, freeing incident responders to focus their efforts on high-impact attacks.
 
 You can [configure](m365d-configure-auto-investigation-response.md) and [manage](m365d-autoir-actions.md) automated investigation and response capabilities. You can also view all past and pending actions through the [Action center](m365d-action-center.md).
 
@@ -102,14 +102,14 @@ Other actions on devices are available through the following tutorial:
 
 The following tutorials enumerate steps and actions that you can apply when investigating entities or responding to specific threats:
 
--	[Responding to a compromised email account via Defender for Office 365](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account.md)
--	[Remediating vulnerabilities with Defender for Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/tvm-remediation.md)
--	[Remediation actions for user accounts via Defender for Identity](/defender-for-identity/remediation-actions)
--	[Applying policies to control apps with Defender for Cloud Apps](/defender-cloud-apps/control-cloud-apps-with-policies)
+- [Responding to a compromised email account via Defender for Office 365](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)
+- [Remediating vulnerabilities with Defender for Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/tvm-remediation)
+- [Remediation actions for user accounts via Defender for Identity](/defender-for-identity/remediation-actions)
+- [Applying policies to control apps with Defender for Cloud Apps](/defender-cloud-apps/control-cloud-apps-with-policies)
 
 ## Next steps
 
--	[Simulate attacks through the attack simulation training](eval-defender-investigate-respond-simulate-attack.md)
+- [Simulate attacks through the attack simulation training](eval-defender-investigate-respond-simulate-attack.md)
 - Explore Microsoft Defender XDR through the [Virtual Ninja training](https://adoption.microsoft.com/ninja-show/)
 
 ## See also

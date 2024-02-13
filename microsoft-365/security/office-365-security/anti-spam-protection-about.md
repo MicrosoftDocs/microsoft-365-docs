@@ -54,6 +54,7 @@ To configure the default anti-spam policy, and to create, modify, and remove cus
 
 > [!TIP]
 > If you disagree with the spam filtering verdict, you can report the message to Microsoft as a false positive (good mail marked as bad) or a false negative (bad email allowed). For more information, see:
+>
 > - [How do I report a suspicious email or file to Microsoft?](submissions-report-messages-files-to-microsoft.md).
 > - [How to handle legitimate emails getting blocked (false positive), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md)
 > - [How to handle malicious emails that are delivered to recipients (false negatives), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md)
@@ -61,6 +62,7 @@ To configure the default anti-spam policy, and to create, modify, and remove cus
 > The anti-spam message headers can tell you why a message was marked as spam, or why it skipped spam filtering. For more information, see [Anti-spam message headers](message-headers-eop-mdo.md).
 >
 > You can't completely turn off spam filtering in Microsoft 365, but you can use Exchange mail flow rules (also known as transport rules) to bypass most spam filtering on incoming messages (for example, if you route email through a third-party protection service or device before delivery to Microsoft 365). For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+>
 > - High confidence phishing messages are still filtered. Other features in EOP aren't affected (for example, messages are always scanned for malware).
 > - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
 >
@@ -75,7 +77,7 @@ Anti-spam policies control the configurable settings for spam filtering. The imp
 
 ### Recipient filters in anti-spam policies
 
-In [custom anti-spam policies](anti-spam-policies-configure.md) and in the Standard and Strict [preset security policies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), you can specify recipient conditions and exceptions that determine who the policy applies to. You can use the following properties for conditions and exceptions:
+In [custom anti-spam policies](anti-spam-policies-configure.md) and in the Standard and Strict [preset security policies](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), you can specify recipient conditions and exceptions that determine who the policy applies to. You can use the following properties for conditions and exceptions:
 
 - **Users**
 - **Groups**
@@ -204,7 +206,7 @@ The functionality of these lists has been largely replaced by:
 
 ### Priority of anti-spam policies
 
-If they're [turned on](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), the Standard and Strict preset security policies are applied before any custom anti-spam policies or the default policy (Strict is always first). If you create multiple custom anti-spam policies, you can specify the order that they're applied. Policy processing stops after the first policy is applied (the highest priority policy for that recipient).
+If they're [turned on](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), the Standard and Strict preset security policies are applied before any custom anti-spam policies or the default policy (Strict is always first). If you create multiple custom anti-spam policies, you can specify the order that they're applied. Policy processing stops after the first policy is applied (the highest priority policy for that recipient).
 
 For more information about the order of precedence and how multiple policies are evaluated, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md) and [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies).
 

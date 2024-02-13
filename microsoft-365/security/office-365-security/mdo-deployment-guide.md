@@ -14,11 +14,12 @@ search.appverid:
 ms.collection: 
   - zerotrust-solution
   - tier1
+  - essentials-get-started
 ms.custom:
 description: Learn how to get started with the initial deployment and configuration of Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/7/2023
+ms.date: 01/31/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
@@ -49,35 +50,35 @@ To configure EOP and Defender for Office 365 features, you need permissions. The
 |---|---|
 |Global Administrator in Azure AD|[About Microsoft 365 admin roles](/microsoft-365/admin/add-users/about-admin-roles)|
 |Organization Management in Email & collaboration role groups|[Role groups in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview)|
-|Security Administrator in Azure AD|[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#security-administrator)
+|Security Administrator in Azure AD|[Azure AD built-in roles](/entra/identity/role-based-access-control/permissions-reference#security-administrator)
 |Security Administrator in Email & collaboration role groups|[Role groups in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview)|
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
 ## Step 1: Configure email authentication for your Microsoft 365 domains
 
-**Summary**: Configure [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md) records (in that order) for all custom Microsoft 365 domains (including parked domains and all subdomains). If necessary, configure any [trusted ARC sealers](email-authentication-arc-configure.md).
+**Summary**: Configure [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md) records (in that order) for all custom Microsoft 365 domains (including parked domains and subdomains). If necessary, configure any [trusted ARC sealers](email-authentication-arc-configure.md).
 
 **Details**:
 
 Email authentication (also known as _email validation_) is a group of standards to verify that email messages are legitimate, unaltered, and come from expected sources for the sender's email domain. For more information, see [Email authentication in EOP](email-authentication-about.md).
 
-We'll proceed with the assumption that you're using one or more [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) (for example @contoso.com) in Microsoft 365 for email, so you need to create specific email authentication DNS records for each custom domain that you're using for email.
+We'll proceed with the assumption that you're using one or more [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365 for email (for example contoso.com) , so you need to create specific email authentication DNS records for each custom domain that you're using for email.
 
 Create the following email authentication DNS records at your DNS registrar or DNS hosting service for each custom domain that you use for email in Microsoft 365:
 
-- **Sender Policy Framework (SPF)**: The SPF TXT record identifies valid sources for email from senders in the domain. For instructions, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
+- **Sender Policy Framework (SPF)**: The SPF TXT record identifies valid sources of email from senders in the domain. For instructions, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
 
-- **DomainKeys Identified Mail (DKIM)**: DKIM encrypts a signature within the message header that survives message forwarding. For instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
+- **DomainKeys Identified Mail (DKIM)**: DKIM signs outbound messages and stores the signature in the message header that survives message forwarding. For instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 
-- **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: DMARC helps destination email servers decide what to do with messages from the custom domain that fail SPF and DKIM checks. Be sure to include `p=reject` or `p=quarantine` policies in the DMARC records. for instructions, see [Set up DMARC for outbound mail from Microsoft 365](email-authentication-dmarc-configure.md#set-up-dmarc-for-outbound-mail-from-microsoft-365).
+- **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: DMARC helps destination email servers decide what to do with messages from the custom domain that fail SPF and DKIM checks. Be sure to include the DMARC policy (`p=reject` or `p=quarantine`) and DMARC report destinations (aggregate and forensic reports) in the DMARC records. for instructions, see [Use DMARC to validate email](email-authentication-dmarc-configure.md).
 
-- **Authenticated Received Chain (ARC)**: If you use third-party services that modify message in transit, you can configure the services as _trusted ARC sealers_ so the modified messages can still pass email authentication checks (if the service supports it). For instructions, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).
+- **Authenticated Received Chain (ARC)**: If you use third-party services that modify _inbound_ messages in transit before delivery to Microsoft 365, you can identify the services as _trusted ARC sealers_ (if they support it) so the modified messages don't automatically fail email authentication checks in Microsoft 365. For instructions, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).
 
-If you're using the @\*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do:
+If you're using the \*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do:
 
-- **SPF**: An SPF record is already configured for the \<domain\>.onmicrosoft.com domain.
-- **DKIM**: A DKIM record is already configured for the \<domain\>.onmicrosoft.com domain.
-- **DMARC**: You need to manually set up the DMARC record for the \<domain\>.onmicrosoft.com domain in the Microsoft 365 admin center at <https://admin.microsoft.com/Adminportal/Home#/Domains> as described in [Activate DMARC for a MOERA domain](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md#activate-dmarc-for-moera-domain).
+- **SPF**: An SPF record is already configured for the \*.onmicrosoft.com domain.
+- **DKIM**: DKIM signing is is already configured for outbound mail using the \*.onmicrosoft.com domain, but you can also [manually customize it](email-authentication-dkim-configure.md#use-the-defender-portal-to-customize-dkim-signing-of-outbound-messages-using-the-onmicrosoftcom-domain).
+- **DMARC**: You need to manually set up the DMARC record for the \*.onmicrosoft.com domain as described [here](email-authentication-dmarc-configure.md#use-the-microsoft-365-admin-center-to-add-dmarc-txt-records-for-onmicrosoftcom-domains-in-microsoft-365).
 
 ## Step 2: Configure protection policies
 
@@ -178,7 +179,7 @@ Remember, default policies (and Built-in protection in Defender for Office 365) 
 
 It's also important to realize that you aren't locked into your initial decision forever. The information in the [recommended settings tables](recommended-settings-for-eop-and-office365.md) and the [comparison table for Standard and Strict](preset-security-policies.md#policy-settings-in-preset-security-policies) should allow you to make an informed decision. But if needs, results, or circumstances change, it's not difficult to switch to a different strategy later.
 
-**Without a compelling business need that indicates otherwise, we recommend starting with the Standard preset security policy for all users in your organization**. Preset security policies are configured with settings based years of observations in the Microsoft 365 datacenters, and should be the right choice for the majority of organizations. And, the policies are automatically updated to match the threats of the security landscape.
+**Without a compelling business need that indicates otherwise, we recommend starting with the Standard preset security policy for all users in your organization**. Preset security policies are configured with settings based on years of observations in the Microsoft 365 datacenters, and should be the right choice for the majority of organizations. And, the policies are automatically updated to match the threats of the security landscape.
 
 In preset security policies, you can select the **All recipients** option to easily apply protection to all recipients in the organization.
 
@@ -217,17 +218,17 @@ If you decide to use custom policies, use the [Configuration analyzer](configura
 
 ## Step 3: Assign permissions to admins
 
-**Summary**: Assign the [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator) role in Azure Active Directory to other admins, specialists, and help desk personnel so they can do tasks in EOP and Defender for Office 365.
+**Summary**: Assign the [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator) role in Azure Active Directory to other admins, specialists, and help desk personnel so they can do tasks in EOP and Defender for Office 365.
 
 **Details**: 
 
-You're probably already using the initial account that you used to enroll in Microsoft 365 to do all the work in this deployment guide. That account is an admin everywhere in Microsoft 365 (specifically, it's a member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) role in Azure Active Directory (Azure AD)), and allows you to do pretty much anything. The required permissions were described earlier in this article at [Roles and permissions](#roles-and-permissions).
+You're probably already using the initial account that you used to enroll in Microsoft 365 to do all the work in this deployment guide. That account is an admin everywhere in Microsoft 365 (specifically, it's a member of the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role in Azure Active Directory (Azure AD)), and allows you to do pretty much anything. The required permissions were described earlier in this article at [Roles and permissions](#roles-and-permissions).
 
 But, the intent of this step is to configure other admins to help you manage the features of EOP and Defender for Office 365 in the future. What you don't want is a lot of people with Global Administrator power who don't need it. For example, do they really need to delete/create accounts or make other users Global Administrators? The concept of _least privilege_ (assigning only the required permissions to do the job and nothing more) is a good practice to follow.
 
 When it comes to assigning permissions for tasks in EOP and Defender for Office 365, the following options are available:
 
-- [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): These permissions apply to all workloads in Microsoft 365 (Exchange Online, SharePoint Online, Microsoft Teams, etc.).
+- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): These permissions apply to all workloads in Microsoft 365 (Exchange Online, SharePoint Online, Microsoft Teams, etc.).
 - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Most tasks in EOP and Defender for Office 365 are available using Exchange Online permissions. Assigning permissions only in Exchange Online prevents administrative access in other Microsoft 365 workloads.
 - [Email & collaboration permissions in the Microsoft Defender portal](scc-permissions.md): Administration of some security features in EOP and Defender for Office 365 is available with Email & collaboration permissions. For example:
   - [Configuration analyzer](configuration-analyzer-for-security-policies.md)
@@ -235,9 +236,9 @@ When it comes to assigning permissions for tasks in EOP and Defender for Office 
   - [Admin submissions and review of user reported messages](submissions-admin-review-user-reported-messages.md)
   - [User tags](user-tags-about.md)
 
-**For simplicity, we recommend using the [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator) role in Azure AD for others who need to configure settings in EOP and Defender for Office 365.**
+**For simplicity, we recommend using the [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator) role in Azure AD for others who need to configure settings in EOP and Defender for Office 365.**
 
-For instructions, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft Defender XDR with Azure Active Directory global roles](/microsoft-365/security/defender/m365d-permissions).
+For instructions, see [Assign Microsoft Entra roles to users](/entra/identity/role-based-access-control/manage-roles-portal) and [Manage access to Microsoft Defender XDR with Azure Active Directory global roles](/microsoft-365/security/defender/m365d-permissions).
 
 ## Step 4: Priority accounts and user tags
 

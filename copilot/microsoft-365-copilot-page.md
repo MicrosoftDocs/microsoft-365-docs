@@ -24,6 +24,12 @@ description: "Learn about the Copilot page in the Microsoft 365 admin center."
 
 You can manage Microsoft Copilot for Microsoft 365 through the Microsoft 365 admin center by using the Copilot page. Use the Copilot page to review licensing, get the latest information, and to view additional resources. You can also manage how users in your organization interact with Microsoft Copilot for Microsoft 365, Security Copilot, and more.
 
+## Before you begin
+
+- Your organization must have purchased Copilot licenses to access the Copilot page in the Microsoft 365 admin center. While you don't need a license assigned to your admin account, you must have these licenses present within the organization for the Copilot page to be visible. For more information, see [Get started with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-setup.md).
+
+- You must be a Global Administrator to access the Copilot page. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+
 ## How to get to the Copilot page
 
 1. Sign in to the Microsoft 365 admin center.
@@ -42,7 +48,7 @@ You can manage Copilot licenses, including assigning and unassigning licenses, f
 
 ### Manage how your organization interacts with Copilot in Bing, Edge, and Windows
 
-Copilot with commercial data protection provides enhanced security for users accessing the generative AI capabilities of Copilot. This experience is on by default for users when they are signed in and using a Microsoft 365 E3, E5, A3, or A5 license assigned by your organization.
+Copilot with commercial data protection provides enhanced security for users accessing the generative AI capabilities of Copilot. This experience is on by default for users when they are signed in and using a Microsoft 365 E3, E5, A3, A5, Business Standard, or Business Premium license assigned by your organization.
 
 Copilot in Bing, Edge and Windows is the public version of Copilot and doesn’t require users to be signed in. You can reroute to the documentation available on the panel to turn off the public experience and still have access to the Copilot with commercial data protection experience.
 
@@ -52,9 +58,9 @@ Microsoft Copilot for Microsoft 365 is powered by an advanced processing and orc
 
 This control navigates you to the Integrated App settings to control how non-Microsoft apps and first party apps can work with Microsoft Copilot for Microsoft 365.
 
-### Public web content access
+### Improved responses with web content in Copilot for Microsoft 365
 
-This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to public web content in Microsoft Copilot for Microsoft 365 responses](manage-public-web-access.md).
+This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to web content in Copilot for Microsoft 365 responses](manage-public-web-access.md).
 
 ### Data Security and Compliance
 

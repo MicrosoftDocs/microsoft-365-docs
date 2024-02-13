@@ -50,9 +50,9 @@ The Microsoft Defender portal supports a single Microsoft Entra tenant and the c
 
 To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must have the following resources and access:
 
-- A Microsoft Entra tenant that’s allow-listed by Microsoft to connect a workspace through the Defender portal
+- A Microsoft Entra tenant that's allow-listed by Microsoft to connect a workspace through the Defender portal
 - A Log Analytics workspace that has Microsoft Sentinel enabled
-- The data connector for Microsoft Defender XDR (formerly named Microsoft Defender XDR) enabled in Microsoft Sentinel for incidents and alerts
+- The data connector for Microsoft Defender XDR (formerly named Microsoft 365 Defender) enabled in Microsoft Sentinel for incidents and alerts
 - Microsoft Defender XDR onboarded to the Microsoft Entra tenant
 - An Azure account with the appropriate roles to onboard and use Microsoft Sentinel in the Defender portal. The following table highlights some of the key roles needed.
 
@@ -71,7 +71,7 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
 1. Go to the [Microsoft Defender portal](https://security.microsoft.com/) and sign in.
 1. In Microsoft Defender XDR, select **Overview**.
 
-   If you're invited to participate in the preview, you’ll see a banner with an option to connect a workspace.
+   If you're invited to participate in the preview, you'll see a banner with an option to connect a workspace.
 
 1. Select **Connect a workspace**.
 1. Choose the workspace you want to connect and select **Next**.
@@ -85,18 +85,17 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
    Detailed changes and limitations are in the documentation shared with you as part of this private preview.
 
 1. Select **Connect**.
-1. You might need to wait up to 6 hours until all experiences are fully connected.
 
-After your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready.  You’ll also see the **Overview** page updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
+After your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready.  You'll also see the **Overview** page updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
 
 ## Explore Microsoft Sentinel features in the Defender portal
 
-After you connect your workspace to the Defender portal, you’ll see **Microsoft Sentinel** on the left-hand side navigation pane. Pages like  **Overview**, **Incidents**, and **Advanced Hunting** have unified data from Microsoft Sentinel and Defender XDR.
+After you connect your workspace to the Defender portal, you'll see **Microsoft Sentinel** on the left-hand side navigation pane. Pages like  **Overview**, **Incidents**, and **Advanced Hunting** have unified data from Microsoft Sentinel and Defender XDR.
 
-You’ll also see many of the existing Microsoft Sentinel features are integrated into the Defender portal. For these features, you'll notice that the experience between Microsoft Sentinel in the Azure portal and Defender portal are similar. Use the following articles to help you start working with Microsoft Sentinel in the Defender portal. When using these articles, keep in mind that your starting point in this context is the [Defender portal](https://security.microsoft.com/) instead of the Azure portal.
+You'll also see many of the existing Microsoft Sentinel features are integrated into the Defender portal. For these features, you'll notice that the experience between Microsoft Sentinel in the Azure portal and Defender portal are similar. Use the following articles to help you start working with Microsoft Sentinel in the Defender portal. When using these articles, keep in mind that your starting point in this context is the [Defender portal](https://security.microsoft.com/) instead of the Azure portal.
 
 - Search
-  - [Search across long time spans in large datasets](/sentinel/search-jobs)
+  - [Search across long time spans in large datasets](/azure/sentinel/search-jobs)
   - [Restore archived logs from search](/azure/sentinel/restore)
 - Threat management
   - [Visualize and monitor your data by using workbooks](/azure/sentinel/monitor-your-data)

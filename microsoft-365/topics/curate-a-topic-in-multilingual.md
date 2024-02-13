@@ -1,11 +1,11 @@
 ---
 ms.date: 09/12/2023
 title: Curate Multilingual topics in Topics
-ms.author: daisyfeller
+ms.author: ninay
 author: daisyfell
-manager: pamgreen
+manager: elizapo
 audience: admin
-ms.reviewer: cjtan
+ms.reviewer: daisyfeller
 ms.topic: article
 ms.collection:
   - m365initiative-viva-topics

@@ -34,7 +34,7 @@ ms.date: 11/16/2023
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> This article applies to Office 365 operated by 21Vianet in China. It is for organizations who want to allow a 21Vianet Partner to administer their Office 365 subscription for them.
+> This article applies to Microsoft 365 operated by 21Vianet in China. It is for organizations who want to allow a 21Vianet Partner to administer their Microsoft 365 subscription for them.
 
 ::: moniker-end
 

@@ -101,7 +101,7 @@ Tags information is also shown in the URL clicks flyout. To view it, go to Phish
 >
 Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
-## Upcoming improvements to the threat hunting experience 
+## Upcoming improvements to the threat hunting experience
 
 ### Updated threat information for emails
 
@@ -150,7 +150,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 >
 > - You might see **Delivery location** as "delivered" and **Delivery location** as "unknown" if the message was delivered, but an Inbox rule moved the message to a default folder (such as Draft or Archive) instead of to the Inbox or Junk Email folder.
 >
-> - **Latest delivery location** can be unknown if an admin/system action (such as ZAP) was attempted, but the message wasn't found. Typically, the action happens after the user  moved or deleted the message. In such cases, verify the **Result/Details** column in timeline view. Look for the statement "Message moved or deleted by the user."
+> - **Latest delivery location** can be "Deleted items folder" if an admin/system action (such as ZAP) was attempted, but the message wasn't found. Typically, the action happens after the user  moved or deleted the message. In such cases, verify the **Result/Details** column in timeline view. Look for the statement "Message moved or deleted by the user."
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/Updated_Timeline_Delivery_Location.png" alt-text="Screenshot of the delivery locations for timeline." lightbox="../../media/Updated_Timeline_Delivery_Location.png":::

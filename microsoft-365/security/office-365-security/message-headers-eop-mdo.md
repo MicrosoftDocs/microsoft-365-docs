@@ -90,7 +90,7 @@ The following table describes useful fields in the **X-Microsoft-Antispam** mess
 
 ## Authentication-results message header
 
-The results of email authentication checks for SPF, DKIM, and DMARC are recorded (stamped) in the **Authentication-results** message header in inbound messages.
+The results of email authentication checks for SPF, DKIM, and DMARC are recorded (stamped) in the **Authentication-results** message header in inbound messages. The **Authentication-results** header is defined in [RFC 7001](https://datatracker.ietf.org/doc/html/rfc7001).
 
 The following list describes the text that's added to the **Authentication-Results** header for each type of email authentication check:
 
@@ -104,6 +104,7 @@ The following list describes the text that's added to the **Authentication-Resul
 
   ```text
   spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
+
   spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
   ```
 
@@ -117,6 +118,7 @@ The following list describes the text that's added to the **Authentication-Resul
 
   ```text
   dkim=pass (signature was verified) header.d=contoso.com
+
   dkim=fail (body hash did not verify) header.d=contoso.com
   ```
 
@@ -130,8 +132,11 @@ The following list describes the text that's added to the **Authentication-Resul
 
   ```text
   dmarc=pass action=none header.from=contoso.com
+
   dmarc=bestguesspass action=none header.from=contoso.com
+
   dmarc=fail action=none header.from=contoso.com
+
   dmarc=fail action=oreject header.from=contoso.com
   ```
 
@@ -141,7 +146,7 @@ The following table describes the fields and possible values for each email auth
 
 |Field|Description|
 |---|---|
-|`action`|Indicates the action taken by the spam filter based on the results of the DMARC check. For example: <ul><li>`oreject` or `o.reject`: Stands for override reject. In this case, Microsoft 365 uses this action when it receives a message that fails the DMARC check from a domain whose DMARC TXT record has a policy of `p=reject`. Instead of deleting or rejecting the message, Microsoft 365 marks the message as spam. For more information on why Microsoft 365 is configured this way, see [How Microsoft 365 handles inbound email that fails DMARC](email-authentication-dmarc-configure.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>`pct.quarantine`: Indicates that a percentage less than 100% of messages that don't pass DMARC are delivered anyway. This result means that the message failed DMARC and the DMARC policy was set to `p=quarantine`. But, the pct field wasn't set to 100%, and the system randomly determined not to apply the DMARC action per the specified domain's DMARC policy.</li><li>`pct.reject`: Indicates that a percentage less than 100% of messages that don't pass DMARC are delivered anyway. This result means that the message failed DMARC and the DMARC policy was set to `p=reject`. But, the pct field wasn't set to 100% and the system randomly determined not to apply the DMARC action per the specified domain's DMARC policy.</li><li>`permerror`: A permanent error occurred during DMARC evaluation, such as encountering an incorrectly formed DMARC TXT record in DNS. Attempting to resend this message isn't likely to end with a different result. Instead, you might need to contact the domain's owner in order to resolve the issue.</li><li>`temperror`: A temporary error occurred during DMARC evaluation. You might be able to request that the sender resend the message later in order to process the email properly.</li></ul>|
+|`action`|Indicates the action taken by the spam filter based on the results of the DMARC check. For example: <ul><li>`pct.quarantine`: Indicates that a percentage less than 100% of messages that don't pass DMARC are delivered anyway. This result means that the message failed DMARC and the DMARC policy was set to `p=quarantine`. But, the pct field wasn't set to 100%, and the system randomly determined not to apply the DMARC action per the specified domain's DMARC policy.</li><li>`pct.reject`: Indicates that a percentage less than 100% of messages that don't pass DMARC are delivered anyway. This result means that the message failed DMARC and the DMARC policy was set to `p=reject`. But, the pct field wasn't set to 100% and the system randomly determined not to apply the DMARC action per the specified domain's DMARC policy.</li><li>`permerror`: A permanent error occurred during DMARC evaluation, such as encountering an incorrectly formed DMARC TXT record in DNS. Attempting to resend this message isn't likely to end with a different result. Instead, you might need to contact the domain's owner in order to resolve the issue.</li><li>`temperror`: A temporary error occurred during DMARC evaluation. You might be able to request that the sender resend the message later in order to process the email properly.</li></ul>|
 |`compauth`|Composite authentication result. Used by Microsoft 365 to combine multiple types of authentication (SPF, DKIM, and DMARC), or any other part of the message to determine whether or not the message is authenticated. Uses the From: domain as the basis of evaluation.|
 |`dkim`|Describes the results of the DKIM check for the message. Possible values include: <ul><li>**pass**: Indicates the DKIM check for the message passed.</li><li>**fail (reason)**: Indicates the DKIM check for the message failed and why. For example, if the message wasn't signed or the signature wasn't verified.</li><li>**none**: Indicates that the message wasn't signed. This result might or might not indicate that the domain has a DKIM record or the DKIM record doesn't evaluate to a result.</li></ul>|
 |`dmarc`|Describes the results of the DMARC check for the message. Possible values include: <ul><li>**pass**: Indicates the DMARC check for the message passed.</li><li>**fail**: Indicates the DMARC check for the message failed.</li><li>**bestguesspass**: Indicates that no DMARC TXT record exists for the domain exists. If the domain had a DMARC TXT record, the DMARC check for the message would have passed.</li><li>**none**: Indicates that no DMARC TXT record exists for the sending domain in DNS.|

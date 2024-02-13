@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 9/13/2023
+ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -51,6 +51,7 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security Data / email quarantine (manage)** (management via PowerShell).
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Global Administrator**, **Security Administrator**, or **Quarantine Administrator** role group.
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
     - _Take action on quarantined messages for all users_: Membership in the **Global Administrator** or **Security Administrator** roles.
@@ -61,8 +62,6 @@ Watch this short video to learn how to manage quarantined messages as an admin.
   > The ability to manage quarantined messages using [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) ended in February 2023 per MC447339.
 
 - Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantine retention](quarantine-about.md#quarantine-retention).
-
-<a name='use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages'></a>
 
 ## Use the Microsoft Defender portal to manage quarantined email messages
 
@@ -108,7 +107,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Next 2 days**
   - **Next 7 days**
   - **Custom**: Enter a **Start time** and **End time** (date).
-- **Recipient tag**
+- **Recipient tag**: Currently, the only selectable [user tag](user-tags-about.md) is Priority account.
 - **Quarantine reason**:
   - **Transport rule** (mail flow rule)
   - **Bulk**
@@ -277,7 +276,7 @@ In the **Release email to recipient inboxes** flyout that opens, configure the f
 
   Selecting this option reveals the following options:
 
-  - **Allow email with similar attributes**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
+  - **Allow this message**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
     - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
     - **Allow entry note**: Enter an optional note that contains additional information.
 
@@ -287,7 +286,7 @@ Back on the **Email** tab, the **Release status** value of the message is **Rele
 
 #### Approve or deny release requests from users for quarantined email
 
-Users can request the release of email messages if the quarantine policy used **Allow recipients to request a message to be released from quarantine** (`PermissionToRequestRelease` permission) instead of **Allow recipients to release a message from quarantine** (`PermissionToRelease` permission) when the message was quarantined. For more information, see [Create quarantine policies in the Microsoft Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+Users can request the release of email messages if the quarantine policy used **Allow recipients to request a message to be released from quarantine** (`PermissionToRequestRelease` permission) instead of **Allow recipients to release a message from quarantine** (`PermissionToRelease` permission) when the message was quarantined. For more information, see [Create quarantine policies in the Microsoft Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-defender-portal).
 
 After a recipient requests the release of the email message, the **Release status** value changes to **Release requested**, and an admin can approve or deny the request.
 
@@ -354,8 +353,6 @@ After you select the message, use either of the following methods to report the 
 
 In the **Submit to Microsoft for analysis** flyout that opens, configure the following options:
 
-- **Select the submission type**: Select **Email** (default), **URL**, or **File**.
-
 - **Add the network message ID or upload the email file**: Select one of the following options:
   - **Add the email network message ID**: This value is selected by default, with the corresponding value in the box.
   - **Upload the email file (.msg or eml)**: After you select this option, select the :::image type="icon" source="../../media/m365-cc-sc-import-icon.png" border="false":::**Browse files** button that appears to find and select the .msg or .eml message file to submit.
@@ -364,16 +361,12 @@ In the **Submit to Microsoft for analysis** flyout that opens, configure the fol
 
 - **Select a reason for submitting to Microsoft**: Choose one of the following options:
 
-  - **Should not have been blocked (false positive)** (default): If you select this option, the following settings are available:
-    - **Allow email with similar attributes**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
+  - **I've confirmed it's clean** (default): Select this option if you're sure that the message is clean, and then select **Next**. Then the following settings are available:
+    - **Allow this email**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
    - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
     - **Allow entry note**: Enter an optional note that contains additional information.
 
-  - **Should have been blocked (false negative)**: If you select this option, the following settings appear:
-    - **The email should have been categorized as**: Select **Phish**, **Spam**, or **Spam**.
-    - **Block all email from this sender or domain**: If you select this option, block entries for the **Sender** or **Domain** (you choose) are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md).
-      - **Remove block entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, **90 days**, **Never expire**, or a **Specific date**.
-    - **Block entry note**: Enter an optional note that contains additional information.
+  - **It appears clean**: Select this option if you're unsure and you want a verdict from Microsoft.
 
 When you're finished on the **Submit to Microsoft for analysis** flyout, select **Submit**.
 
@@ -471,8 +464,6 @@ Admins can search the audit log to find events for messages that were deleted fr
 3. When you're finished entering the search criteria, select **Search** to generate the search.
 
 For complete instructions for audit log searches, see [Audit New Search](/purview/audit-new-search).
-
-<a name='use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365'></a>
 
 ## Use the Microsoft Defender portal to manage quarantined files in Defender for Office 365
 
@@ -617,8 +608,6 @@ When you select multiple quarantined files on the **Files** tab by selecting the
 - [Download quarantined files from quarantine](#download-quarantined-files-from-quarantine)
 
 :::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions dropdown list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
-
-<a name='use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages'></a>
 
 ## Use the Microsoft Defender portal to manage Microsoft Teams quarantined messages
 
