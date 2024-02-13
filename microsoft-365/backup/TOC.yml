@@ -6,6 +6,8 @@
       href: /microsoft-365/syntex/backup/backup-overview
     - name: Admin setup 
       href: /microsoft-365/syntex/backup/backup-setup
+    - name: Billing setup
+      href: /microsoft-365/syntex/backup/backup-billing
     - name: Pricing model
       href: /microsoft-365/syntex/backup/backup-pricing
     - name: View and edit policies 
