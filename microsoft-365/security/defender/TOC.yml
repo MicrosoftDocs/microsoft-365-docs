@@ -630,7 +630,7 @@
             href: virus-initiative-criteria.md
           - name: Software developer FAQ
             href: developer-faq.yml
-    - name: Microsoft Sentinel documentation
+    - name: Microsoft Sentinel docs
       items:
       - name: Overview
         href: /azure/sentinel/overview?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
