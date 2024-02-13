@@ -59,3 +59,11 @@ landingContent:
         links:
           - text: Customize your booking page
             url: customize-booking-page.md
+
+  # Card
+  - title: Reporting information for Bookings
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Booking activity
+            url: reporting-info.md
