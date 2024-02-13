@@ -40,7 +40,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
 
     To create a new Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription:
 
-    a. Sign in to the Azure portal (https://portal.azure.com) with your Microsoft 365 Microsoft Entra DC admin, or Global admin account.
+    a. Sign in to the [Azure portal](https://portal.azure.com) with your Microsoft 365 admin, Microsoft Entra DC admin, or Global admin account.
 
     b. In the left navigation, select **Subscriptions**, and then select **Add**.
 
@@ -50,7 +50,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
 
     a. On the **Set up pay-as-you-go billing** panel, select **Learn more about Azure resource groups**.
 
-    b. Or, you can follow steps here <link to azure resource group document>to create a resource group.
+    b. Or, you can follow steps in [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal) to create a resource group.
 
     ![Screenshot of the Set up pay-as-you-go billing panel in the Microsoft 365 admin center.](../../media/content-understanding/backup-billing-panel.png)
 
@@ -62,7 +62,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
     a. On the **Set up pay-as-you-go billing** panel, under **Azure subscription**, select the subscription from the dropdown list.
 
     > [!NOTE]
-    > The subscription dropdown list will not populate if you don't have an owner or contributor on the subscription. To check your role on subscription, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
+    > The subscription dropdown list will not populate if you don't have an owner or contributor on the subscription. <!---To check your role on subscription, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).--->
 
     ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../../media/content-understanding/back-billing-subscription.png)
 
