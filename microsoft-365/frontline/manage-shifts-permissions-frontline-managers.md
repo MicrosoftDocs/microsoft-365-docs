@@ -90,14 +90,22 @@ Contoso decided not to use time clock in Shifts for now because they want their 
   
 To do this:
 
-1. To prevent frontline managers from changing the time clock setting for their teams, use the [Shifts role permissions]() Graph API and set the `CanModifyTimeClockCapabilities` to `false` for every team owner and schedule owner on every team.
+1. To prevent frontline managers from changing the time clock setting for their teams, use the [Shifts role permissions]() Graph API and set the `CanModifyTimeClockCapabilities` parameter to `false` for every team owner and schedule owner on every team.
 1. To turn off time clock in Shifts for all teams, use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0) Graph API and set the `timeClockEnabled` parameter to `false` for every team.
+
+Here's an example of what the time clock setting in Shifts looks like for frontline managers before and after removing their permissions to change it. After turning of the capability, the setting is unavailable in Shifts.
+
+:::image type="content" source="media/flm-shifts-permissions-time-clock.png" alt-text="Example of the time clock setting in Shifts for frontline managers before and after removing their permissions to change it." lightbox="media/flm-shifts-permissions-time-clock.png":::
 
 **Department managers shouldn't be able to choose whether they can add and edit time-off reasons in Shifts.**
 
 At Contoso, adding and editing time-off reasons is the responsibility of the store manager. This means that they need to turn off the ability for schedule owners to add and edit time-off reasons in Shifts for all teams.
 
 To do this, use the [Shifts role permissions]() Graph API and set the `CanModifyTimeOffReasons` parameter to `false` for every schedule owner on every team.
+
+Here's an example of what the time-off reasons option in Shifts looks like for department managers before and after removing their permissions to use it.  After turning of the capability, the setting is unavailable in Shifts.
+
+:::image type="content" source="media/flm-shifts-permissions-time-off-reasons.png" alt-text="Example of the time-off reasons option in Shifts for department managers before and after removing their permissions to use it." lightobx="media/flm-shifts-permissions-time-off-reasons.png":::
 
 ## Related articles
 
