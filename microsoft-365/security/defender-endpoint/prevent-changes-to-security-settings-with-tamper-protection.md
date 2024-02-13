@@ -53,7 +53,8 @@ When tamper protection is turned on, these tamper-protected settings can't be ch
 - Security intelligence updates occur.
 - Automatic actions are taken on detected threats.
 - Notifications are visible in the Windows Security app on Windows devices.
-- Archived files are scanned. 
+- Archived files are scanned.
+- [Exclusions cannot be modified or added ](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune?view=o365-worldwide#tamper-protection-for-antivirus-exclusions)
 
 *As of signature release `1.383.1159.0`, due to confusion around the default value for "Allow Scanning Network Files", tamper protection no longer locks this setting to its default value. In managed environments, the default value is enabled.*
 
