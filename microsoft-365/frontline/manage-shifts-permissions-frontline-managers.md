@@ -105,7 +105,7 @@ To do this, use the [Shifts role permissions]() Graph API and set the `CanModify
 
 Here's an example of what the time-off reasons option in Shifts looks like for department managers before and after removing their permissions to use it.  After turning of the capability, the setting is unavailable in Shifts.
 
-:::image type="content" source="media/flm-shifts-permissions-time-off-reasons.png" alt-text="Example of the time-off reasons option in Shifts for department managers before and after removing their permissions to use it." lightobx="media/flm-shifts-permissions-time-off-reasons.png":::
+:::image type="content" source="media/flm-shifts-permissions-time-off-reasons.png" alt-text="Example of the time-off reasons option in Shifts for department managers before and after removing their permissions to use it." lightbox="media/flm-shifts-permissions-time-off-reasons.png":::
 
 ## Related articles
 
