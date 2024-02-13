@@ -45,12 +45,14 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
     b. In the left navigation, select **Subscriptions**, and then select **Add**.
 
     c. On the **Add subscription** page, select an offer and complete the payment information and agreement.
- 
+
     To create a new Azure resource group:
 
     a. On the **Set up pay-as-you-go billing** panel, select **Learn more about Azure resource groups**.
-    
+
     b. Or, you can follow steps here <link to azure resource group document>to create a resource group.
+
+    ![Screenshot of the Set up pay-as-you-go billing panel in the Microsoft 365 admin center.](../../media/content-understanding/backup-billing-panel.png)
 
     > [!NOTE]
     > Note that the resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
