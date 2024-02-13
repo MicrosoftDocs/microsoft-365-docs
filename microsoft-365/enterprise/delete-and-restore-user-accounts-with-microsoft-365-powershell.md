@@ -77,27 +77,62 @@ Remove-MgUser -UserId $userId -Confirm:$false
 
 ## Restore a user account
 
-To a restore a user account using Microsoft Graph PowerShell, first [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md). Note that in this instance, you'll be restoring a directory item, so adding the permission scope *Directory.ReadWrite.All* is required.
+To a restore a user account using Microsoft Graph PowerShell, first [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
+
+To restore a deleted user account, the permission scope *Directory.ReadWrite.All* is required. Connect to the tenant with this permision scope:
 
 ```powershell
 # Connect to your tenant
-Connect-MgGraph -Scopes User.Read.All, Directory.ReadWrite.All
+Connect-MgGraph -Scopes Directory.ReadWrite.All
 ```
 
-After you connect, use the following syntax to restore an individual user account:
+Deleted user accounts no longer exist except as objects in the directory, so you cannot search for the user account to restore. Instead, use the following PowerShell script to search the directory for deleted objects of the type *microsoft.graph.user*:
 
 ```powershell
-# Get the user
-$user = Get-MgUser -Filter "userPrincipalName eq '<user principal name>'"
+$DeletedUsers = Get-MgDirectoryDeletedItem -DirectoryObjectId microsoft.graph.user -Property '*'
+$DeletedUsers = $DeletedUsers.AdditionalProperties['value']
+foreach ($deletedUser in $DeletedUsers)
+{
+   $deletedUser | Format-Table
+}
+```
+
+The output of this script, assuming any deleted user objects exist in the directory, will look like this:
+
+```powershell
+Key               Value
+---               -----
+businessPhones    {}
+displayName       Caleb Sills
+givenName         Caleb
+mail              CalebS@litware.com
+surname           Sills
+userPrincipalName cdea706c3fdc4bbd95925d92d9f71eb8CalebS@litware.com
+id                cdea706c-3fdc-4bbd-9592-5d92d9f71eb8
+```
+
+Use the following syntax to restore an individual user account:
+
+```powershell
+# Input user account ID
+$userId = "<id>"
 # Restore the user
-Restore-MgDirectoryDeletedItem -DirectoryObjectId $user.Id
+Restore-MgDirectoryDeletedItem -DirectoryObjectId $userId
 ```
 
-This example restores the user account *calebs\@litwareinc.com*.
+This example restores the user account *calebs\@litwareinc.com* using the value for ```$userID``` from the output of the above script.
 
 ```powershell
-$user = Get-MgUser -Filter "userPrincipalName eq 'calebs@litwareinc.com'"
-Restore-MgDirectoryDeletedItem -DirectoryObjectId $user.Id
+$userId = "cdea706c-3fdc-4bbd-9592-5d92d9f71eb8"
+Restore-MgDirectoryDeletedItem -DirectoryObjectId $userId
+```
+
+The output of this cpmmand looks like this:
+
+```powershell
+Id                                   DeletedDateTime
+--                                   ---------------
+cdea706c-3fdc-4bbd-9592-5d92d9f71eb8
 ```
 
 ## See also
