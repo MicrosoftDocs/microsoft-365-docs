@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 01/11/2024
+ms.date: 02/12/2024
 ---
 
 # Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
@@ -86,23 +86,23 @@ You can also update the mdatp_managed.json file:
     }
 }
 ```
-Refer to the link for detailed sample json file - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+Refer to the link for detailed sample json file - [Set preferences for Microsoft Defender for Endpoint on Linux.](linux-preferences.md)
 > [!IMPORTANT]
 > If you disable eBPF, the supplementary event provider switches back to auditd.
 > In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. 
 
 ## Immutable mode of Auditd
 
-For customers using auditd in immutable mode, a reboot is required post enablement of eBPF in order to clear the audit rules added by Microsoft Defender for Endpoint. This is a limitation in immutable mode of auditd which freezes the rules file and prohibits editing/overwriting. This is resolved with the reboot.
+For customers using auditd in immutable mode, a reboot is required post enablement of eBPF in order to clear the audit rules added by Microsoft Defender for Endpoint. This is a limitation in immutable mode of auditd, which freezes the rules file and prohibits editing/overwriting. This issue is resolved with the reboot.
 Post reboot, run the below command to check if audit rules got cleared.
 
 ```bash
 % sudo auditctl -l
 ```
 
-The output of above command should show no rules or any user added rules. In case the rules did not get removed, then perform the following steps to clear the audit rules file
+The output of above command should show no rules or any user added rules. In case the rules didn't get removed, then perform the following steps to clear the audit rules file. 
 
-  1. Switch to ebpf mode
+1. Switch to ebpf mode
   2. Remove the file /etc/audit/rules.d/mdatp.rules
   3. Reboot the machine
 
@@ -117,7 +117,7 @@ Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.
 
 Following steps can be taken to mitigate this issue:     
 
-1. Use a kernal version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Please note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
+1. Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
 
 2. Switch to auditd mode if customer needs to use the same kernel version
 
@@ -133,7 +133,7 @@ The following two sets of data help analyze potential issues and determine the m
 
 #### Troubleshooting performance issues
 
-If you see a hike in resource consumption by Microsoft Defender on your endpoints, it is important to identify the process/mount-point/files that is consuming most CPU/Memory utilization and then apply necessary exclusions. After applying possible AV exclusions, if wdavdaemon (parent process) is still consuming the resources, then use the ebpf-statistics command to obtain the top system call count:
+If you see a hike in resource consumption by Microsoft Defender on your endpoints, it's important to identify the process/mount-point/files that is consuming most CPU/Memory utilization and then apply necessary exclusions. After applying possible AV exclusions, if wdavdaemon (parent process) is still consuming the resources, then use the ebpf-statistics command to obtain the top system call count:
 
 ```Bash
 sudo mdatp diagnostic  ebpf-statistics
@@ -162,9 +162,9 @@ Top syscall ids:
 90 : 10
 87 : 3
 ``` 
-In the above output, it can be seen that stress-ng is the top process generating large number of events and might result into performance issues. Most likely stress-ng is generating the system call with ID 82. You can create a ticket with Microsoft to get this process excluded. In future as part of upcoming enhancements, you will have more control to apply such exclusions at your end.
+In the above output, you can see that stress-ng is the top process generating large number of events and might result into performance issues. Most likely stress-ng is generating the system call with ID 82. You can create a ticket with Microsoft to get this process excluded. In future as part of upcoming enhancements, you'll have more control to apply such exclusions at your end.
 
-Exclusions applied to auditd cannot be migrated or copied to eBPF. Common concerns such as noisy logs, kernel panic, noisy syscalls are already taken care of by eBPF internally. In case you want to add any further exclusions, then reach out to Microsoft to get the necessary exclusions applied. 
+Exclusions applied to auditd can't be migrated or copied to eBPF. Common concerns such as noisy logs, kernel panic, noisy syscalls are already taken care of by eBPF internally. In case you want to add any further exclusions, then reach out to Microsoft to get the necessary exclusions applied. 
 
 ## See also
 
