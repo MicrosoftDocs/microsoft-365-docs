@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 01/10/2024
+ms.date: 02/07/2024
 
 ---
 
@@ -55,7 +55,7 @@ Map your attributes on the Map frontline attributes page of the [deploy frontlin
 
 After you mapped your attributes, you can view your list of mapped values. These values are used for targeted communications and represent the unique departments and job titles in your organization.
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline apps**.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline apps**.
 1. In the table, next to **Targeted communications**, choose **Review**.
 1. Your mapped values are listed under **Values status**.
 

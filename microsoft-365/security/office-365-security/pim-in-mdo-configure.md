@@ -56,7 +56,7 @@ The name of your user (here 'Alex') will appear under Eligible assignments on th
 
 ***Step 2***. Create the required second (elevated) permission group for additional tasks and assign eligibility.
 
-Using [Privileged Access groups](/azure/active-directory/privileged-identity-management/groups-features) we can now create our own custom groups and combine permissions or increase granularity where required to meet your organizational practices and needs.
+Using [Privileged Access groups](/entra/id-governance/privileged-identity-management/concept-pim-for-groups) we can now create our own custom groups and combine permissions or increase granularity where required to meet your organizational practices and needs.
 
 ### Create a role group requiring the permissions we need
 
@@ -66,8 +66,6 @@ In the Microsoft Defender portal, create a custom role group that contains the p
 2. On the **Permissions** page, click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create**.
 3. Name your group to reflect its purpose such as 'Search and Purge PIM'.
 4. Don't add members, simply save the group and move on to the next part!
-
-<a name='create-the-security-group-in-azure-ad-for-elevated-permissions'></a>
 
 ### Create the security group in Microsoft Entra ID for elevated permissions
 

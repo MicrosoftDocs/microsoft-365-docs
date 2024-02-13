@@ -696,9 +696,12 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
-      "enforcementLevel":"passive",
+      "enforcementLevel":"real_time",
+      "behaviorMonitoring": "enabled",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
+      "scanHistoryMaximumItems": 10000,
+	  "scanResultsRetentionDays": 90,
       "maximumOnDemandScanThreads":2,
       "exclusionsMergePolicy":"merge",
       "exclusions":[

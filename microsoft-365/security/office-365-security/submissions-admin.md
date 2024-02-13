@@ -100,7 +100,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email bypassed scanning due to user or organization policies or override.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -154,7 +154,7 @@ After a few moments, the block entry is available on the **Domains & addresses**
    - **File**: Select :::image type="icon" source="../../media/m365-cc-sc-import-icon.png" border="false"::: **Browse files** to find and select the file to submit.
 
    - **Why are you submitting this email attachment to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -206,7 +206,7 @@ After a few moments, the block entry is available on the **Files** tab on the **
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can enter up to 50 URLs at once.
 
    - **Why are you submitting this URL to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -262,7 +262,7 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -304,7 +304,7 @@ After a few moments, the associated allow entries appear on the **Domains & addr
 > - When an allowed domain or email address, spoofed sender, URL, or file (_entity_) is encountered again, all filters that are associated with the entity are skipped. For email messages, all other entities are still evaluated by the filtering system before making a decision.
 > - During mail flow, if messages from the allowed domain or email address pass other checks in the filtering stack, the messages are delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), a message from an allowed sender email address are delivered.
 > - By default, allow entries for domains and email addresses exist for 30 days. During those 30 days, Microsoft learns from the allow entries and [removes them or automatically extends them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages from those domains or email addresses are delivered, unless something else in the message is detected as malicious. By default, allow entries for spoofed senders never expire.
-> - For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), the allow entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains** section in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
+> - For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), the allow entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains** section in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 > - When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
 ### Report good email attachments to Microsoft
@@ -322,7 +322,7 @@ After a few moments, the associated allow entries appear on the **Domains & addr
    - **File**: Select **Browse files** to find and select the file to submit.
 
    - **Why are you submitting the message to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -377,7 +377,7 @@ For URLs reported as false positives, we allow subsequent messages that contain 
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can also provide a top level domain (for example, `https://www.fabrikam.com/*`), and then select it in the box that appears. You can enter up to 50 URL at once.
 
    - **Why are you submitting this URL to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -814,7 +814,7 @@ In the **Submit to Microsoft for analysis** flyout that opens, do the following 
 
 - **Email messages**:
   - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-    - **It appears clean** or **It appears suspicious**: Select one of these values to get a second opinion from Microsoft.
+    - **It appears clean** or **It appears suspicious**: Select one of these values if you're unsure and you want a verdict from Microsoft.
 
       Select **Submit**, and then select **Done**.
 
