@@ -1,7 +1,7 @@
 ---
-title: Use guided responses with Security Copilot in Microsoft Defender XDR
-description: Use guided responses with Security Copilot in Microsoft Defender XDR to respond to incidents.
-keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident response playbooks, remediate incident, remediation actions, incident solution, resolve incidents, guided responses, security copilot guided response, copilot in security guided response, security copilot guided response in Microsoft Defender XDR
+title: Resolve incidents with guided responses with Microsoft Copilot for Security in Microsoft Defender XDR
+description: Resolve incidents with guided responses from Microsoft Copilot for Security in Microsoft Defender XDR.
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident response playbooks, remediate incident, remediation actions, incident solution, resolve incidents, guided responses, security copilot guided response, copilot in security guided response, security copilot guided response in Microsoft Defender XDR, Microsoft Copilot for Security
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,10 +20,10 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 02/12/2024
+ms.date: 03/01/2024
 ---
 
-# Use guided responses with Microsoft Security Copilot in Microsoft Defender XDR
+# Resolve incidents with guided responses from Microsoft Copilot for Security in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -31,23 +31,16 @@ ms.date: 02/12/2024
 
 - Microsoft Defender XDR
 
-> [!IMPORTANT]
-> The information in this article only applies to the Microsoft Security Copilot Early Access Program, an invite-only paid preview program for commercial customers. Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+[Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in Microsoft Defender XDR supports incident response teams in immediately resolving incidents with guided responses. Copilot for Security and Microsoft Defender XDR use AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
 
-[Microsoft Security Copilot](/security-copilot/microsoft-security-copilot) in Microsoft Defender XDR supports incident response teams in immediately resolving incidents with guided responses. Security Copilot and Microsoft Defender XDR use AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
+Responding to incidents in Microsoft Defender XDR often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot for Security in Microsoft Defender XDR allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease.
 
-Responding to incidents in Microsoft Defender XDR often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Security Copilot in Microsoft Defender XDR allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease.
-
-This guide outlines how to access the guided response capability of Security Copilot in Microsoft Defender XDR, including information on providing feedback about the responses.
+This guide outlines how to access the guided response capability, including information on providing feedback about the responses.
 
 > [!NOTE]
-> The guided response capability is also available in the Security Copilot standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
+> The guided response capability is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
 
-## Technical requirements
-
-[Learn how you can get started with Security Copilot](/security-copilot/get-started-security-copilot).
-
-## Use guided responses to resolve incidents
+## Apply guided responses to resolve incidents
 
 Guided responses recommend actions in the following categories:
 
@@ -56,30 +49,30 @@ Guided responses recommend actions in the following categories:
 - Investigation - includes recommended actions for further investigation
 - Remediation - includes recommended response actions to apply to specific entities involved in an incident
 
-Each card contains information about the recommended action, including the entity where the action will be applied and why the action is recommended.
+Each card contains information about the recommended action, including the entity where the action needs to be applied and why the action is recommended.
 
 To use guided responses, perform the following steps:
 
-1. Open an incident page. Once the page loads, Security Copilot automatically generates guided responses.
-:::image type="content" source="../../media/copilot-in-defender/guided-response/fig1-new-sec-copilot-m365d-guided-response.png" alt-text="Screenshot of the Security Copilot pane in Microsoft Defender XDR where it shows guided response is automatically generating." lightbox="../../media/copilot-in-defender/guided-response/fig1-expand-sec-copilot-m365d-guided-response.png":::
-2. Review the guided response cards generated by Security Copilot.
-:::image type="content" source="../../media/copilot-in-defender/guided-response/fig2-new-sec-copilot-m365d-guided-response.png" alt-text="Screenshot of guided responses shown on the Security Copilot pane." lightbox="../../media/copilot-in-defender/guided-response/fig2-expand-sec-copilot-m365d-guided-response.png":::
+1. Open an incident page. Copilot automatically generates guided responses upon opening an incident page.
+:::image type="content" source="../../media/copilot-in-defender/guided-response/fig1-new-sec-copilot-m365d-guided-response.png" alt-text="Screenshot of the Copilot pane in Microsoft Defender XDR where it shows guided response is automatically generating." lightbox="../../media/copilot-in-defender/guided-response/fig1-expand-sec-copilot-m365d-guided-response.png":::
+2. Review the guided response cards before applying the recommendations.
+:::image type="content" source="../../media/copilot-in-defender/guided-response/fig2-new-sec-copilot-m365d-guided-response.png" alt-text="Screenshot of guided responses shown on the Copilot pane." lightbox="../../media/copilot-in-defender/guided-response/fig2-expand-sec-copilot-m365d-guided-response.png":::
 3. **Classify the incident** by selecting an option from the dropdown menu on the Triage card. You can classify the incident as true positive, informational, or false positive.
-4. Review and apply each response generated by Security Copilot on the Containment, Investigation, and Remediation cards. You can provide feedback to each recommended action to continually enhance future responses.
+4. Review and apply each response generated by Copilot on the Containment, Investigation, and Remediation cards. You can provide feedback to each recommended action to continually enhance future responses.
 5. Actions that are grayed out might mean they are unavailable to you due to insufficient permission. [Refer to the unified role-based access (RBAC) permissions](manage-rbac.md) page for more information.
 :::image type="content" source="../../media/copilot-in-defender/guided-response/fig3-sec-copilot-m365d-guided-response.png" alt-text="Screenshot of unavailable action under guided responses." lightbox="../../media/copilot-in-defender/guided-response/fig3-sec-copilot-m365d-guided-response.png":::
 
-Security Copilot and Microsoft Defender XDR make it easy for incident response teams to gain more context about actions with additional insights. For remediation responses, incident response teams can view additional information with options like **View similar incidents** or **View similar emails**.
+Copilot for Security and Microsoft Defender XDR support incident response teams by enabling analysts to gain more context about response actions with additional insights. For remediation responses, incident response teams can view additional information with options like **View similar incidents** or **View similar emails**.
 
 The **View similar incidents** action becomes available when there are other incidents within the organization that are similar to the current incident. The Similar incidents tab lists similar incidents that you can review. Microsoft Defender XDR automatically identifies similar incidents within the organization through machine learning. Incident response teams can use the information from these similar incidents to classify incidents and further review the actions done in those similar incidents.
 
-The **View similar emails** action, which is specific to phishing incidents, takes you to the [advanced hunting](advanced-hunting-overview.md) page, where a  KQL query to list similar emails within the organization is automatically generated. This automatic query generation related to an incident helps incident response teams further investigate other emails that might be related to the incident. You can review the query and modify it as needed.
+The **View similar emails** action, which is specific to phishing incidents, takes you to the [advanced hunting](advanced-hunting-overview.md) page, where a KQL query to list similar emails within the organization is automatically generated. This automatic query generation related to an incident helps incident response teams further investigate other emails that might be related to the incident. You can review the query and modify it as needed.
 
 ## Managing feedback
 
-You can validate or report the responses provided by Security Copilot. Validating and reporting results improve Security Copilot's delivery of more accurate responses in the future.
+You can validate or report the responses Copilot provides. Validating and reporting results improve Copilot's delivery of more accurate responses in the future.
 
-Each response card has an option for providing feedback. [Follow these steps to provide your feedback about the results](security-copilot-in-microsoft-365-defender.md#providing-feedback).
+Each response card has an option for providing feedback. [Follow these steps to provide your feedback about the results](security-copilot-in-microsoft-365-defender.md#provide-feedback-to-copilot).
 
 ## Next steps
 
@@ -89,8 +82,7 @@ Each response card has an option for providing feedback. [Follow these steps to 
 
 ## See also
 
-- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot)
-- [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
-- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot)
+- [Get started with Microsoft Copilot for Security](/security-copilot/get-started-security-copilot)
+- [Learn about other Copilot for Security embedded experiences](/security-copilot/experiences-security-copilot)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
