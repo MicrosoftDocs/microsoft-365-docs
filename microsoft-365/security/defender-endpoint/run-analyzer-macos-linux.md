@@ -1,17 +1,13 @@
 ---
 title:  Run the client analyzer on macOS or Linux
-description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux.
-keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, macos, linux, mdeanalyzer
+description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 06/15/2023
+ms.date: 02/02/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
