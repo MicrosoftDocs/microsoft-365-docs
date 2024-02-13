@@ -785,10 +785,6 @@ sudo systemctl disable mdatp
 <details>
   <summary>Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)</summary>
 
-
-
-
-
 ## Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)
 
 &ensp;Released: **November 02, 2022**<br/>
@@ -839,10 +835,6 @@ sudo systemctl disable mdatp
 <details>
   <summary>Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)</summary>
 
-
-
-
-
 ## Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)
 
 &ensp;Released: **September 14, 2022**<br/>
@@ -881,10 +873,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 <details>
    <summary>Aug-2022 (Build: 101.78.13 | Release version: 30.122072.17813.0)</summary>
 
-
-
-
-
 ## Aug-2022 (Build: 101.78.13 | Release version: 30.122072.17813.0)
 
  &ensp;Released: **August 24, 2022**<br/>
@@ -910,10 +898,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
 <details>
   <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>
-
-
-
-
 
 ## Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)
 
@@ -944,10 +928,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 <details>
   <summary>Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)</summary>
 
-
-
-
-
 ## Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)
 
 &ensp;Released: **July 21, 2022**<br/>
@@ -976,10 +956,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 <details>
   <summary>Jun-2022 (Build: 101.71.18 | Release version: 30.122052.17118.0)</summary>
 
-
-
-
-
 &ensp;Released: **June 24, 2022**<br/>
 &ensp;Published: **June 24, 2022**<br/>
 &ensp;Build: **101.71.18**<br/>
@@ -1006,10 +982,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
 <details>
   <summary>May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)</summary>
-
-
-
-
 
 ## May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)
 
@@ -1039,10 +1011,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 <details>
 <summary>May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)</summary>
 
-
-
-
-
 ## May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)
 
 &ensp;Released: **May 2, 2022**<br/>
@@ -1059,10 +1027,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </details><details>
 <summary>Mar-2022 (Build: 101.62.74 | Release version: 30.122022.16274.0)</summary>
 
-
-
-
-
 &ensp;Released: **Mar 24, 2022**<br/>
 &ensp;Published: **Mar 24, 2022**<br/>
 &ensp;Build: **101.62.74**<br/>
@@ -1076,10 +1040,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 <br/><br/>
 </details><details>
 <summary>Mar-2022 (Build: 101.60.93 | Release version: 30.122012.16093.0)</summary>
-
-
-
-
 
 ## Mar-2022 (Build: 101.60.93 | Release version: 30.122012.16093.0)
 
@@ -1096,10 +1056,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </details><details>
 <summary>Mar-2022 (Build: 101.60.05 | Release version: 30.122012.16005.0)</summary>
 
-
-
-
-
 &ensp;Released: **Mar 3, 2022**<br/>
 &ensp;Published: **Mar 3, 2022**<br/>
 &ensp;Build: **101.60.05**<br/>
@@ -1113,10 +1069,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 <br/><br/>
 </details><details>
 <summary>Feb-2022 (Build: 101.58.80 | Release version: 30.122012.15880.0)</summary>
-
-
-
-
 
 ## Feb-2022 (Build: 101.58.80 | Release version: 30.122012.15880.0)
 
@@ -1135,10 +1087,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </details><details>
 <summary>Jan-2022 (Build: 101.56.62 | Release version: 30.121122.15662.0)</summary>
 
-
-
-
-
 ## Jan-2022 (Build: 101.56.62 | Release version: 30.121122.15662.0)
 
 &ensp;Released: **Jan 26, 2022**<br/>
@@ -1153,10 +1101,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 <br/><br/>
 </details><details>
 <summary>Jan-2022 (Build: 101.53.02 | Release version: (30.121112.15302.0)</summary>
-
-
-
-
 
 &ensp;Released: **Jan 8, 2022**<br/>
 &ensp;Published: **Jan 8, 2022**<br/>
@@ -1177,10 +1121,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
   Release version: 30.121092.15257.0</b></p>
 
   <p><b> What's new </b></p>
-
-
-
-
 
 - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
 
@@ -1227,10 +1167,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
    <p><b>What's new</b></p>
 
-
-
-
-
   - Added new switches to the command-line tool:
     - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
     - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this setting is set to `enabled`.
@@ -1246,10 +1182,6 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
    Release version: <b>30.121062.13998.0</b></p>
 
    <p><b>What's new</b></p>
-
-
-
-
 
 - Performance improvements & bug fixes
 
