@@ -49,14 +49,10 @@
          href: email-authentication-spf-configure.md
        - name: Set up DKIM
          href: email-authentication-dkim-configure.md
-       - name: Support for DKIM-signed messages
-         href: email-authentication-dkim-support-about.md
        - name: Set up DMARC
          href: email-authentication-dmarc-configure.md
        - name: Configure trusted ARC sealers
          href: email-authentication-arc-configure.md
-       - name: Use DMARC Reports to validate email
-         href: email-authentication-dmarc-reports.md
      - name: Step 2 - Configure protection policies
        items:
        - name: Preset security policies
@@ -188,8 +184,6 @@
              href: anti-spoofing-spoof-intelligence.md
            - name: Impersonation insight
              href: anti-phishing-mdo-impersonation-insight.md
-           - name: How Microsoft 365 uses SPF to prevent spoofing
-             href: email-authentication-anti-spoofing.md
          - name: Safe Attachments in Defender for Office 365
            items:
            - name: Safe Attachments in Defender for Office 365

@@ -86,6 +86,7 @@ There are several ways to uninstall Defender for Endpoint on Linux. If you are u
 - `sudo yum remove mdatp` for RHEL and variants(CentOS and Oracle Linux).
 - `sudo zypper remove mdatp` for SLES and variants.
 - `sudo apt-get purge mdatp` for Ubuntu and Debian systems.
+- `sudo dnf remove mdatp` for Mariner
 
 ## Configure from the command line
 
