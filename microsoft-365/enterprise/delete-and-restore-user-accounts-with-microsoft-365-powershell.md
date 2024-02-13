@@ -86,7 +86,7 @@ To restore a deleted user account, the permission scope *Directory.ReadWrite.All
 Connect-MgGraph -Scopes Directory.ReadWrite.All
 ```
 
-Deleted user accounts no longer exist except as objects in the directory, so you cannot search for the user account to restore. Instead, use the following PowerShell script to search the directory for deleted objects of the type *microsoft.graph.user*:
+Deleted user accounts no longer exist except as objects in the directory, so you can't search for the user account to restore. Instead, use the following PowerShell script to search the directory for deleted objects of the type *microsoft.graph.user*:
 
 ```powershell
 $DeletedUsers = Get-MgDirectoryDeletedItem -DirectoryObjectId microsoft.graph.user -Property '*'
@@ -127,7 +127,7 @@ $userId = "cdea706c-3fdc-4bbd-9592-5d92d9f71eb8"
 Restore-MgDirectoryDeletedItem -DirectoryObjectId $userId
 ```
 
-The output of this cpmmand looks like this:
+The output of this command looks like this:
 
 ```powershell
 Id                                   DeletedDateTime
