@@ -39,6 +39,8 @@ landingContent:
         links:
           - text: Set up Microsoft 365 Backup
             url: /microsoft-365/syntex/backup/backup-setup
+          - text: Set up billing
+            url: /microsoft-365/syntex/backup/backup-billing
           - text: Pricing model
             url: /microsoft-365/syntex/backup/backup-pricing
 
