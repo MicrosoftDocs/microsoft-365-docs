@@ -460,7 +460,7 @@
                   href: faq-managed-response.md
               - name: Additional information on Defender Experts for XDR
                 items:
-                - name: Important considerations on incident response  
+                - name: Important considerations  
                   href: additional-information-xdr.md
                 - name: How Defender Experts for XDR permissions work
                   href: dex-xdr-permissions.md

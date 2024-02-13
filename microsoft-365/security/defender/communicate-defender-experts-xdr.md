@@ -96,6 +96,7 @@ The SDM engages with your identified **service review contacts**. [Learn more ab
 ### See also
 
 - [Get started with Microsoft Defender Experts for XDR](get-started-xdr.md)
-- [Start using Defender Experts for XDR service](start-using-mdex-xdr.md)
+- [Managed detection and response](managed-detection-and-response-xdr.md)
+- [Get real-time visibility with Defender Experts for XDR reports](reports-xdr.md)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -24,7 +24,11 @@ ms.date: 02/12/2024
 
 # Managed detection and response
 
-Through a combination of automation and human expertise, Defender Experts for XDR triages Microsoft Defender XDR incidents, prioritizes them on your behalf, filters out the noise, carries out detailed investigations, and provides actionable managed response to your security operations center (SOC) teams.
+**Applies to:**
+
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+Through a combination of automation and human expertise, Microsoft Defender Experts for XDR triages Microsoft Defender XDR incidents, prioritizes them on your behalf, filters out the noise, carries out detailed investigations, and provides actionable managed response to your security operations center (SOC) teams.
 
 ## Incident updates
 
@@ -113,3 +117,11 @@ Apart from these one-click actions, you can also receive managed responses from 
 
 > [!IMPORTANT]
 >If you notice that any of the buttons on the action cards are grayed out, it could indicate that you don't have the necessary permissions to perform the action. Make sure that you're signed into the Microsoft Defender XDR portal with the appropriate permissions. Most managed response actions require that you have at least the Security Operator access. If you still encounter this issue even with the appropriate permissions, navigate to **View device details** and complete the steps from there.
+
+### See also
+
+- [Get started with Microsoft Defender Experts for XDR](get-started-xdr.md)
+- [Get real-time visibility with Defender Experts for XDR reports](reports-xdr.md)
+- [Communicating with experts in the Microsoft Defender Experts for XDR service](communicate-defender-experts-xdr.md)
+
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

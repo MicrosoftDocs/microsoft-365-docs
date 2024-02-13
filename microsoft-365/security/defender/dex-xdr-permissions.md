@@ -47,5 +47,5 @@ These policies are configured during the onboarding process and require the rele
 
 ### See also
 
-[Additional information](additional-information-xdr.md)
+[Important considerations for Microsoft Defender Experts for XDR](additional-information-xdr.md)
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

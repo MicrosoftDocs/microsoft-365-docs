@@ -185,11 +185,13 @@ The readiness assessment has two parts:
 
 After you complete all the required tasks and met the onboarding targets in your readiness assessment, your service delivery manager (SDM) initiates the monitoring phase of the Defender Experts for XDR service, where, for a few days, our experts start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
 
-Once our experts begin to perform comprehensive response work on your behalf, you’ll start receiving [notifications about incidents](../defender/start-using-mdex-xdr.md#incident-updates) that require remediation steps and targeted recommendations on critical incidents. You can also chat with our experts or your SDMs regarding important queries and regular business and security posture reviews, and [view real-time reports](../defender/start-using-mdex-xdr.md#understand-the-defender-experts-for-xdr-report) on the number of incidents we’ve investigated and resolved on your behalf.
+Once our experts begin to perform comprehensive response work on your behalf, you’ll start receiving [notifications about incidents](managed-detection-and-response-xdr.md#incident-updates) that require remediation steps and targeted recommendations on critical incidents. You can also [chat with our experts](communicate-defender-experts-xdr.md) or your SDMs regarding important queries and regular business and security posture reviews, and [view real-time reports](reports-xdr.md) on the number of incidents we’ve investigated and resolved on your behalf.
 
 ### Next step
 
-[Start using Microsoft Defender Experts for XDR service](start-using-mdex-xdr.md)
+- [Managed detection and response](managed-detection-and-response-xdr.md)
+- [Get real-time visibility with Defender Experts for XDR reports](reports-xdr.md)
+- [Communicating with experts in the Microsoft Defender Experts for XDR service](communicate-defender-experts-xdr.md)
 
 ### See also
 

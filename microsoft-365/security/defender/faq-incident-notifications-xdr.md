@@ -68,6 +68,6 @@ The following section lists down questions your SOC team might have regarding th
 
 ### See also
 
-[Start using Defender Experts for XDR service](start-using-mdex-xdr.md)
+[Managed detection and response](managed-detection-and-response-xdr.md)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
