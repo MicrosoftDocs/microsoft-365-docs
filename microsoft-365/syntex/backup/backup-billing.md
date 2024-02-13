@@ -36,7 +36,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
     > [!NOTE]
     > To set up pay-as-you-go billing for Microsoft 365 Backup, you must provide an owner or contribution role on the Azure subscription to be used.
 
-5. If you *do not* have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, go to step 6.
+5. If you ***don't*** have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, go directly to step 6.
 
     To create a new Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription:
 
@@ -57,7 +57,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
     > [!NOTE]
     > The resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
 
-6. If you *have* an Azure subscription, follow these steps:
+6. If you ***have*** an Azure subscription, follow these steps:
 
     a. On the **Set up pay-as-you-go billing** panel, under **Azure subscription**, select the subscription from the dropdown list.
 
