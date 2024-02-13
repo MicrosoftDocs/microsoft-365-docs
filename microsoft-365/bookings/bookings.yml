@@ -23,47 +23,43 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Microsoft Bookings
+  - title: Bookings for Admins
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft Bookings?
+          - text: Get started
             url: bookings-overview.md
-      - linkListType: download
+      - linkListType: how-to-guide
         links:
-          - text: Get the Bookings app
+          - text: Set access to Bookings
             url: get-bookings-app.md
 
   # Card (optional)
-  - title: Set up Microsoft Bookings
+  - title: Bookings for end-users
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Enter your business information
+          - text: Get access to Bookings
             url: enter-business-information.md
-          - text: Set your scheduling policies
+          - text: Set your available time
             url: set-scheduling-policies.md
-          - text: Define your service offerings
-            url: define-service-offerings.md
-          - text: Set employee working hours
-            url: employee-hours.md
-          - text: Customize and publish your booking page
-            url: customize-booking-page.md
-          - text: Create and staff your bookings
-            url: create-a-manual-booking.md
 
   # Card
-  - title: Invite people to book appointments
+  - title: Bookings for industries
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Customize your booking page
+          - text: Bookings for medical
+            url: customize-booking-page.md
+      - linkListType: how-to-guide
+        links:
+          - text: Bookings for retail
             url: customize-booking-page.md
 
   # Card
-  - title: Reporting information for Bookings
+  - title: What's new
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: overview
         links:
-          - text: Booking activity
+          - text: What's new in Bookings
             url: reporting-info.md
