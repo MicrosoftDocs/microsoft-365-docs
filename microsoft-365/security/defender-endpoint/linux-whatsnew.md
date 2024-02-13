@@ -663,10 +663,6 @@ In case the issue reappears with some different denials. We need to run the miti
 <details>
 	<summary> March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
 
-
-
-
-
 ## March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)
 
 &ensp;Released: **March , 08,2023**<br/>
@@ -723,14 +719,11 @@ Caution: Some customers(<1%) are experiencing issues with this method.
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
+
 </details>
 
-```
-
-```<details>
+<details>
   <summary>Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)</summary>
-
-
 
 ## Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)
 
