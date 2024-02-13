@@ -683,7 +683,6 @@ There are multiple fixes and new changes in this release.
 - Improved Data Completeness for Network Connection events
 - Improved Data Collection capabilities for file ownership/permissions changes
 - seManage in part of the package, to that seLinux policies can be configured in different distro (fixed).
-- Bug fixes
 - Improved enterprise daemon stability
 - AuditD stop path clean-up
 - Improved the stability of mdatp stop flow.
