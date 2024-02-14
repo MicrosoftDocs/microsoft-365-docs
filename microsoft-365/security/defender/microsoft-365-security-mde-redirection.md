@@ -100,7 +100,7 @@ To revert to the former Microsoft Defender Security Center:
 
 This setting can be enabled again at any time.
 
-Once disabled, accounts aren't routed to security.microsoft.com, and you will once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com.
+Once disabled, accounts aren't routed to security.microsoft.com, and you'll once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com.
 
 ## Related information
 
@@ -109,4 +109,5 @@ Once disabled, accounts aren't routed to security.microsoft.com, and you will on
 - [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813)
 - [About Microsoft Defender XDR](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
