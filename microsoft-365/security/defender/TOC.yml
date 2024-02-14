@@ -10,11 +10,6 @@
         href: zero-trust-with-microsoft-365-defender.md  
       - name: Microsoft Defender portal
         href: microsoft-365-defender-portal.md
-      - name: What's new in Microsoft Defender XDR
-        href: whats-new.md
-      - name: Preview features in Microsoft Defender XDR
-        href: preview.md
-      - name: Microsoft Defender XDR services
         items:
         - name: Defender for Endpoint
           href: microsoft-365-security-center-mde.md
@@ -28,6 +23,11 @@
           href: microsoft-365-security-center-defender-cloud.md
         - name: Redirecting the Microsoft Defender Security Center to the Microsoft Defender portal
           href: microsoft-365-security-mde-redirection.md
+      - name: What's new in Microsoft Defender XDR
+        href: whats-new.md
+      - name: Preview features in Microsoft Defender XDR
+        href: preview.md
+      - name: Microsoft Defender XDR services
       - name: Integration with Microsoft Sentinel
         items:
         - name: Bi-directional connector for Microsoft Sentinel
