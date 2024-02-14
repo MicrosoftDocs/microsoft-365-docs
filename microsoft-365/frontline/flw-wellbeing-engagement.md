@@ -75,7 +75,7 @@ As you prioritize and align the scenarios to support, consider how and where cer
 
 #### Empower your workers to share feedback
 
-Creating channels for your frontline workers to share feedback helps these teams feel engaged and like their voices matter. Additionally, getting feedback from these teams can provide insights into how your organization can improve processes.
+Creating channels for your frontline workers to share feedback helps your teams feel engaged and like their voices matter. Additionally, getting feedback from your teams can provide insights into how your organization can improve processes.
 
 - **On the dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Viva Engage communities](https://support.microsoft.com/office/join-and-create-a-community-in-yammer-56aaf591-1fbc-4160-ba26-0c4723c23fd6). You can also [integrate third-party solutions into the dashboard](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
 
@@ -95,7 +95,7 @@ Frontline workers need extra support when it comes to managing health and wellbe
 
 ### Create a supportive digital ecosystem
 
-Empowering frontline workers with the right technology makes their jobs easier and helps your organization quickly adapt to ever-changing work conditions. Use Viva Connections to create a digital ecosystem and curated employee experience.
+Empowering frontline workers with the right technology makes their jobs easier and helps your organization quickly adapt to ever-changing work conditions. Use Viva Connections to create a digital ecosystem and a curated employee experience.
 
 - **On the dashboard**: Use [adaptive card templates](/adaptive-cards/templating/), the [Card designer](/viva/connections/create-dashboard#design-your-own-card-with-a-quick-view), and [third-party integrations](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration) to create custom cards and quick views that help workers access information and complete every day tasks such as:
     - Finding or securing parking spaces
@@ -112,7 +112,7 @@ Review Viva Connections capabilities, technical requirements, and customization 
 
 ## Create communities with Viva Engage
 
-[Viva Engage](/viva/engage/overview) is an internal social network that gives members of your organization opportunities to connect with each other. You can create communities where members of your organization can post messages and communicate. Having a variety of communities that span both frontline and non-frontline teams helps your on-the-ground workforce connect to each other and the broader organization. Communities can be based on:
+[Viva Engage](/viva/engage/overview) is an internal social network that gives members of your organization opportunities to connect with each other. You can create communities where members of your organization can ask and answer questions, share knowledge, and find belonging at work. Having a variety of communities that span both frontline and non-frontline teams helps your on-the-ground workforce connect to each other and the broader organization. Communities can be based on:
 
 - Location
 - Roles, such as cashiers or nurses
