@@ -86,16 +86,16 @@ The following sections describe enhanced Defender for Identity features found in
 
 The following table lists the changes in navigation between Microsoft Defender for Identity and the Microsoft Defender portal.
 
-| **Defender for** Identity  | **the Microsoft Defender portal**                                   |
+| **Defender for** Identity  | **The Microsoft Defender portal**                                   |
 | -------------------------- | ------------------------------------------------------------ |
-| **Timeline**                   |- The Microsoft Defender portal Alerts/Incidents queue                |
+| **Timeline**                   |- Microsoft Defender portal Alerts/Incidents queue                |
 | **Reports**                    |The following types of reports are available from the **Reports** > **Identities** > **Report management** page in the Microsoft Defender portal, either for immediate download or scheduled for a periodic email delivery: <br><br>- A summary report of alerts and health issues you should take care of. <br>- A list of each time a modification is made to sensitive groups. <br>- A list of source computer and account passwords that are detected as being sent in clear text.<br>- A list of the sensitive accounts exposed in lateral movement paths. <br><br>For more information, see [Report management](/defender-for-identity/reports).  |
-| **Identity page**                  | The Microsoft Defender portal user details page                             |
-| **Device page**                | The Microsoft Defender portal device details page                           |
-| **Group page**                 | The Microsoft Defender portal groups side pane                      |
-| **Alert page**                 | The Microsoft Defender portal alert details page <br><br>**Tip**: Use [alert tuning](investigate-alerts.md#tune-an-alert) to optimize the alerts you see in The Microsoft Defender portal.                        |
-| **Search**                     | The Microsoft Defender portal global search                                |
-| **Health issues**              | The Microsoft Defender portal **Identities > Health issues**                          |
+| **Identity page**                  | Microsoft Defender portal user details page                             |
+| **Device page**                | Microsoft Defender portal device details page                           |
+| **Group page**                 | Microsoft Defender portal groups side pane                      |
+| **Alert page**                 | Microsoft Defender portal alert details page <br><br>**Tip**: Use [alert tuning](investigate-alerts.md#tune-an-alert) to optimize the alerts you see in the Microsoft Defender portal.                        |
+| **Search**                     | Microsoft Defender portal global search                                |
+| **Health issues**              | Microsoft Defender portal **Identities > Health issues**                          |
 | **Entity activities**          | - **Advanced hunting** <br>- Device page > **Timeline** <br>- Identity page > **Timeline** tab  <br>- **Group** pane > **Timeline** tab                                           |
 | **Settings**                   | **Settings** -> **Identities**                                       |
 | **Users and accounts**         | **Assets** -> **Identities**                                         |
@@ -111,4 +111,5 @@ For more information, see:
 - [Related videos for Microsoft Defender for Identity](https://www.microsoft.com/videoplayer/embed/RE4HcEU)
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender for Identity](/defender-for-identity/)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
