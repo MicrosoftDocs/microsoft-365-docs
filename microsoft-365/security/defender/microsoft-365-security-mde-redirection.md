@@ -31,17 +31,17 @@ In alignment with Microsoft's cross-domain approach to threat protection with SI
 This guide explains how to enable automatic redirection from the former Microsoft Defender Security Center (securitycenter.windows.com or securitycenter.microsoft.com), to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 > [!NOTE]
-> Microsoft Defender for Endpoint in Microsoft Defender XDR supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender Security Center](./mssp-access.md).
+> Microsoft Defender for Endpoint in the Microsoft Defender portal supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the former Microsoft Defender Security Center](./mssp-access.md).
 
 ## What to expect
 
-Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Endpoint portal at securitycenter.windows.com or securitycenter.microsoft.com, will be automatically routed to Microsoft Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><security.microsoft.com></a>.
+Once automatic redirection is enabled, accounts accessing the former Microsoft Defender Security Center at securitycenter.windows.com or securitycenter.microsoft.com are automatically routed to the Microsoft Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><security.microsoft.com></a>.
 
-Learn more about what's changed: [Microsoft Defender for Endpoint in Microsoft Defender XDR](microsoft-365-security-center-mde.md).
+Learn more about what's changed: [Microsoft Defender for Endpoint](microsoft-365-security-center-mde.md).
 
-This includes redirection for direct access to the former portal via browser, including links pointing towards the former securitycenter.windows.com portal - such as links in email notifications, and links returned by SIEM API calls.
+These changes include redirection for direct access to the former portal via browser, including links pointing towards the former securitycenter.windows.com portal, such as links in email notifications, and links returned by SIEM API calls.
 
- External links from email notifications or SIEM APIs currently contain links to both portals. Once redirection is enabled, both links will point to Microsoft Defender XDR until the old link is eventually removed. We encourage you to adopt the new link pointing to Microsoft Defender XDR.
+External links from email notifications or SIEM APIs currently contain links to both portals. Once redirection is enabled, both links point to the new Microsoft Defender portal until the old link is eventually removed. We encourage you to adopt the new link pointing to the Microsoft Defender portal.
 
 Refer to the table below for more on links and routing.
 ## SIEM API routing
