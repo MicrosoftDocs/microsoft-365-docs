@@ -41,13 +41,9 @@ The following Microsoft 365 products and services are now available in the `clou
 
 |**Service**|**URL**|
 |:-----|:-----|
-|Microsoft 365 | m365.cloud.microsoft|
-|Microsoft Forms | forms.cloud.microsoft|
 |Microsoft Loop | loop.cloud.microsoft|
 |Microsoft 365 Service Health Portal | status.cloud.microsoft|
 |Microsoft Mesh | mesh.cloud.microsoft|
-|Microsoft OneNote | onenote.cloud.microsoft|
-|Microsoft Outlook | outlook.cloud.microsoft|
 |Microsoft Setup | setup.cloud.microsoft|
 |Microsoft Sway | sway.cloud.microsoft|
 |Microsoft Viva Engage | engage.cloud.microsoft|
