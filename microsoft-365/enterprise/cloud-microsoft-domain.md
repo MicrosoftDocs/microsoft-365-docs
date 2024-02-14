@@ -37,26 +37,26 @@ Consolidating authenticated user-facing Microsoft 365 experiences to a single do
 Organizations currently following standard [Microsoft network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges) shouldn't see an impact to the Microsoft 365 experience. The *.cloud.microsoft domain is already added to the official list of Office 365 URLs and IP address ranges. 
 
 ## Microsoft product and service URLs
-The following Microsoft 365 services are now available in the `cloud.microsoft` domain.
+The following Microsoft 365 products and services are now available in the `cloud.microsoft` domain.
 
 |**Service**|**URL**|
 |:-----|:-----|
 |Microsoft 365 | m365.cloud.microsoft|
-|Forms | forms.cloud.microsoft|
-|Loop | loop.cloud.microsoft|
+|Microsoft Forms | forms.cloud.microsoft|
+|Microsoft Loop | loop.cloud.microsoft|
 |Microsoft 365 Service Health Portal | status.cloud.microsoft|
-|Mesh | mesh.cloud.microsoft|
-|OneNote | onenote.cloud.microsoft|
-|Outlook | outlook.cloud.microsoft|
-|Setup | setup.cloud.microsoft|
-|Sway | sway.cloud.microsoft|
-|Viva Engage | engage.cloud.microsoft|
-|Viva Goals | goals.cloud.microsoft|
-|Viva Home | viva.cloud.microsoft|
-|Viva Insights | insights.cloud.microsoft|
-|Viva Learning | learning.cloud.microsoft|
-|Viva Pulse | pulse.cloud.microsoft|
-|Viva Skills | skills.cloud.microsoft| 
+|Microsoft Mesh | mesh.cloud.microsoft|
+|Microsoft OneNote | onenote.cloud.microsoft|
+|Microsoft Outlook | outlook.cloud.microsoft|
+|Microsoft Setup | setup.cloud.microsoft|
+|Microsoft Sway | sway.cloud.microsoft|
+|Microsoft Viva Engage | engage.cloud.microsoft|
+|Microsoft Viva Goals | goals.cloud.microsoft|
+|Microsoft Viva Home | viva.cloud.microsoft|
+|Microsoft Viva Insights | insights.cloud.microsoft|
+|Microsoft Viva Learning | learning.cloud.microsoft|
+|Microsoft Viva Pulse | pulse.cloud.microsoft|
+|Microsoft Viva Skills | skills.cloud.microsoft|
 
 
 ## See also
