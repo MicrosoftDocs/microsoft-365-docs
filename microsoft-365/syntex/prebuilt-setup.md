@@ -59,3 +59,14 @@ By default, prebuilt document processing is turned on for libraries in all Share
     > For multi-geo environments, the **No sites** and **Selected sites** settings apply only to the primary geo of multi-geo tenants. If you want to restrict or add sites in non-primary geos, contact Microsoft support.
 
     c. Select **Save**.
+
+### Turn off prebuilt document processing
+
+1. On the **Manage Microsoft Syntex** page, select **Prebuilt document processing**.
+
+2. On the **Prebuilt document processing** page, under **Status**, turn the toggle to **Off**.
+
+When prebuilt document processing is off, prebuilt models will not run, and users will not be able to create or apply prebuilt models.
+
+> [!NOTE]
+> For multi-geo environments, when the service is turned off, the service is off for all geos.
