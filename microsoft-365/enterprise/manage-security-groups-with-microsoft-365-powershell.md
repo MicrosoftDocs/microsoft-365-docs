@@ -3,7 +3,7 @@ title: "Manage security groups with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 02/14/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,6 +21,7 @@ ms.custom:
   - Ent_Office_Other
   - O365ITProTrain
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 description: "Learn how to use PowerShell to manage security groups."
 ---
 
@@ -39,7 +41,7 @@ When a command block in this article requires that you specify variable values, 
 
 See [Maintain security group membership](maintain-group-membership-with-microsoft-365-powershell.md) to manage group membership with PowerShell.
 
-## Use the Azure Active Directory PowerShell for Graph module
+## Manage security groups using Microsoft Graph PowerShell
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
@@ -121,52 +123,6 @@ Use these commands to remove a user account by its **display name** to the curre
 $userName="<Display name of the user account to remove>"
 $groupName="<display name of the group>"
 Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -OwnerId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectId
-```
-
-## Use the Microsoft Azure Active Directory module for Windows PowerShell
-
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
-
-### List your groups
-
-Use this command to list all of your groups.
-
-```powershell
-Get-MsolGroup
-```
-Use these commands to display the settings of a specific group by its display name.
-
-```powershell
-$groupName="<display name of the group>"
-Get-MsolGroup | Where { $_.DisplayName -eq $groupName }
-```
-
-### Create a new group
-
-Use this command to create a new security group.
-
-```powershell
-New-MsolGroup -Description "<group purpose>" -DisplayName "<name>"
-```
-
-### Change the settings on a group
-
-Display the settings of the group with these commands.
-
-```powershell
-$groupName="<display name of the group>"
-Get-MsolGroup | Where { $_.DisplayName -eq $groupName } | Select *
-```
-
-Then, use the [Set-MsolGroup](/powershell/module/msonline/set-msolgroup) article to determine how to change a setting.
-
-### Remove a security group
-
-Use these commands to remove a security group.
-
-```powershell
-$groupName="<display name of the group>"
-Remove-MsolGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId
 ```
 
 ## See also
