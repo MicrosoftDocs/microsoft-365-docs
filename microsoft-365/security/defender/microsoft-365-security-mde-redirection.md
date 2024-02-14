@@ -73,37 +73,34 @@ To start routing accounts to Microsoft Defender XDR:
 
 1. Make sure you're a global administrator or have security administrator permissions in Microsoft Entra ID.
 
-2. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>.
+2. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 3. Navigate to **Settings** \> **Endpoints** \> **General** \> **Portal redirection** or [click here](https://security.microsoft.com/preferences2/portal_redirection).
 
-4. Toggle the Automatic redirection setting to **On**.
+4. Toggle the **Automatic redirection** setting to **On**.
 
-5. Click **Enable** to apply automatic redirection to Microsoft Defender XDR.
+5. Click **Enable** to apply automatic redirection to the Microsoft Defender portal.
 
 > [!IMPORTANT]
-> Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to Microsoft Defender XDR after ending their current session and signing in again.
-
-> [!NOTE]
-> You must be a global administrator or have security administrator permissions in Microsoft Entra ID to enable or disable this setting.
+> Enabling this setting doesn't terminate active user sessions. Accounts who are in an active session while this setting is applied are directed to the Microsoft Defender portal after ending their current session and signing in again.
 
 ## Can I go back to using the former portal?
 
-If something isn't working for you or if there's anything you're unable to complete through Microsoft Defender XDR, we want to hear about it. If you've encountered any issues with redirection, we encourage you to let us know by using the Give feedback submission form.
+If something isn't working for you or if there's anything you're unable to complete through the Microsoft Defender portal, we want to hear about it. If you've encountered any issues with redirection, we encourage you to let us know by using the **Give feedback** submission form.
 
-To revert to the former Microsoft Defender for Endpoint portal:
+To revert to the former Microsoft Defender Security Center:
 
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a global administrator or using and account with security administrator permissions in Microsoft Entra ID.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> as a global administrator or using and account with security administrator permissions in Microsoft Entra ID.
 
 2. Navigate to **Settings** \> **Endpoints** \> **General** \> **Portal redirection** or [open the page here](https://security.microsoft.com/preferences2/portal_redirection).
 
-3. Toggle the Automatic redirection setting to **Off**.
+3. Toggle the **Automatic redirection** setting to **Off**.
 
 4. Click **Disable** & share feedback when prompted.
 
 This setting can be enabled again at any time.
 
-Once disabled, accounts will no longer be routed to security.microsoft.com, and you will once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com.
+Once disabled, accounts aren't routed to security.microsoft.com, and you will once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com.
 
 ## Related information
 
