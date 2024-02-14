@@ -3761,6 +3761,17 @@
        "redirect_document_id": false
      },
      {
+      "source_path": "microsoft-365/security/office-365-security/real-time-detections.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-real-time-detections-about",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/email-security-in-microsoft-defender.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-email-security",
+      "redirect_document_id": false
+      
+     },
+     {
        "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
        "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-overview",
        "redirect_document_id": false

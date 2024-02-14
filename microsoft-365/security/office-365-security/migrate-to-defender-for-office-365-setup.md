@@ -95,7 +95,7 @@ If you're using some other mechanism to override the Microsoft filtering stack (
 
 The SCL=-1 mail flow rule is important during the migration for the following reasons:
 
-- You can use [Threat Explorer](email-security-in-microsoft-defender.md) to see which features in the Microsoft stack *would have* acted on messages without affecting the results from your existing protection service.
+- You can use [Threat Explorer](threat-explorer-email-security.md) to see which features in the Microsoft stack *would have* acted on messages without affecting the results from your existing protection service.
 - You can gradually adjust who is protected by the Microsoft 365 filtering stack by configuring exceptions to the SCL=-1 mail flow rule. The exceptions are the members of the pilot distribution groups that we recommend later in this article.
 
   Before or during the cutover of your MX record to Microsoft 365, you disable this rule to turn on the full protection of the Microsoft 365 protection stack for all recipients in your organization.

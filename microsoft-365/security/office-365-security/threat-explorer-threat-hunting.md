@@ -38,7 +38,7 @@ With these tools, you can:
 - Start an automated investigation and response process from a view in Explorer
 - Investigate malicious email, and more
 
-For more information, see [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
+For more information, see [Email security with Threat Explorer](threat-explorer-email-security.md).
 
 > [!TIP]
 > Advanced hunting in Microsoft Defender XDR now supports an easy-to-use query builder for analysts who want to hunt through cloud app data and other threat data (if available), even if they do not know Kusto Query Language (KQL). To get started, read [Build queries using guided mode](/microsoft-365/security/defender/advanced-hunting-query-builder).

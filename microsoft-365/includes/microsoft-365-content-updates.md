@@ -1,5 +1,6 @@
 <!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
-
+
+
 
 
 ## Week of February 05, 2024
@@ -137,7 +138,7 @@
 |------|------------|--------|
 | 1/21/2024 | [Vulnerable components](/microsoft-365/security/defender-vulnerability-management/tvm-vulnerable-components?view=o365-worldwide) | added |
 | 1/22/2024 | [Review detected threats on devices and take action](/microsoft-365/business-premium/m365bp-review-threats-take-action?view=o365-worldwide) | modified |
-| 1/22/2024 | [Email security with Threat Explorer in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/email-security-in-microsoft-defender?view=o365-worldwide) | modified |
+| 1/22/2024 | [Email security with Threat Explorer in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/threat-explorer-email-security?view=o365-worldwide) | modified |
 | 1/22/2024 | [Manage quarantined messages and files as an admin](/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files?view=o365-worldwide) | modified |
 | 1/22/2024 | [Manage allows and blocks in the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list-about?view=o365-worldwide) | modified |
 | 1/23/2024 | [Connect to all Microsoft 365 services in a single PowerShell window](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window?view=o365-worldwide) | modified |
@@ -222,7 +223,7 @@
 | 1/16/2024 | [EDR detection test for verifying device's onboarding and reporting service](/microsoft-365/security/defender-endpoint/edr-detection?view=o365-worldwide) | modified |
 | 1/16/2024 | [AV detection test for verifying device's onboarding and reporting services](/microsoft-365/security/defender-endpoint/validate-antimalware?view=o365-worldwide) | modified |
 | 1/16/2024 | [Microsoft Defender XDR Unified role-based access control (RBAC)](/microsoft-365/security/defender/manage-rbac?view=o365-worldwide) | modified |
-| 1/16/2024 | [Threat Explorer and Real-time detections basics in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/real-time-detections?view=o365-worldwide) | modified |
+| 1/16/2024 | [Threat Explorer and Real-time detections basics in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/threat-explorer-real-time-detections-about?view=o365-worldwide) | modified |
 | 1/16/2024 | [Remediate malicious email that was delivered in Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide) | modified |
 | 1/16/2024 | [Topic center overview in Topics](/microsoft-365/topics/topic-center-overview?view=o365-worldwide) | modified |
 | 1/16/2024 | [Topic Contributors—Share knowledge and expertise in Topics](/microsoft-365/topics/topic-experiences-topic-contributors?view=o365-worldwide) | modified |

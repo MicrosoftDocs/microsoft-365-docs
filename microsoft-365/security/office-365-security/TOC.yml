@@ -382,10 +382,10 @@
            href: submissions-error-messages.md
        - name: Threat Explorer and real-time detections
          items:
-         - name: What is Threat Explorer and Real-time detections?
-           href: real-time-detections.md
+         - name: Threat Explorer and Real-time detections
+           href: threat-explorer-real-time-detections-about.md
          - name: Email security with Threat Explorer
-           href: email-security-in-microsoft-defender.md
+           href: threat-explorer-email-security.md
          - name: Threat hunting in Threat Explorer
            href: threat-explorer-threat-hunting.md
          - name: Improvements to Threat Hunting in Threat Explorer
