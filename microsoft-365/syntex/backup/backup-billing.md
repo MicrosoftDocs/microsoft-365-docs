@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set up and configure pay-as-you-go billing for Microsoft 365 Backup.
+description: Learn how to set up pay-as-you-go billing for Microsoft 365 Backup.
 ---
 
 # Set up pay-as-you-go billing for Microsoft 365 Backup (Preview)
