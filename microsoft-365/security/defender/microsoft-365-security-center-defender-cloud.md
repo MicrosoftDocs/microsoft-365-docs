@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Cloud in The Microsoft Defender portal
+title: Microsoft Defender for Cloud in the Microsoft Defender portal
 description: Learn about changes in the Microsoft Defender portal with the Microsoft Defender for Cloud integration.
 ms.service: defender-xdr
 ms.localizationpriority: medium
