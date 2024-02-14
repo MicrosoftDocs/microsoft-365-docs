@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint in the Microsoft Defender portal
-description: Learn about changes from the Microsoft Defender Security Center to the Microsoft Defender portal
+description: Get an overview of changes from the Microsoft Defender Security Center to the Microsoft Defender portal
 ms.service: defender-xdr
 ms.localizationpriority: medium
 f1.keywords:
