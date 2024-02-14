@@ -35,7 +35,7 @@ Microsoft 365 Backup will charge you for content size of the following for 365 d
 - Deleted content in user’s Recycle Bin and second-stage Recycle Bin (also known as Site Collection Recycle Bin).
 
 > [!NOTE]
-> Restore points or size of restores will not be charged.
+> Restore points or size of restores will not be charged. Although Azure is being used to process the payments, there are no additional Azure API or storage costs beyond the Microsoft 365 Backup usage charges mentioned above.
 
 As an example, if you have a site under protection that is currently 1 GB for the first month, you'll be charged 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no long be charged for Backup.
 
