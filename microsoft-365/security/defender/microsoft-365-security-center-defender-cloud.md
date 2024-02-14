@@ -1,16 +1,14 @@
 ---
-title: Microsoft Defender for Cloud in Microsoft Defender XDR
-description: Learn about changes in Microsoft Defender XDR with the Microsoft Defender for Cloud integration.
-keywords: Getting started with Microsoft Defender XDR, Microsoft Defender for Cloud
+title: Microsoft Defender for Cloud in The Microsoft Defender portal
+description: Learn about changes in The Microsoft Defender portal with the Microsoft Defender for Cloud integration.
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: diannegali
 author: diannegali
 manager: dansimp
-ms.date: 01/15/2024
+ms.date: 02/14/2024
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
