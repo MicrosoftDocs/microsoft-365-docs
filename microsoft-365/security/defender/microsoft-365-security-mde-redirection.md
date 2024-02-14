@@ -28,7 +28,7 @@ ms.date: 02/14/2024
 
 In alignment with Microsoft's cross-domain approach to threat protection with SIEM and Extended Detection and Response (XDR), we've rebranded Microsoft Defender Advanced Threat Protection as Microsoft Defender for Endpoint and unified it into a single integrated portal: the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
-This guide explains how to route accounts to Microsoft Defender XDR by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>.
+This guide explains how to enable automatic redirection from the former Microsoft Defender Security Center (securitycenter.windows.com or securitycenter.microsoft.com), to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 > [!NOTE]
 > Microsoft Defender for Endpoint in Microsoft Defender XDR supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender Security Center](./mssp-access.md).
