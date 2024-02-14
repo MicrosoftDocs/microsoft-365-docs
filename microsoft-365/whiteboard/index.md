@@ -11,6 +11,8 @@ ms.custom:
 ms.service: whiteboard
 search.appverid: MET150
 ms.collection: 
+ - essentials-navigation
+ - essentials-overview
 ms.localizationpriority: medium
 description: Find resources about how to set up and manage Microsoft Whiteboard.
 ---
