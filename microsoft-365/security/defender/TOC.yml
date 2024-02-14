@@ -27,7 +27,6 @@
         href: whats-new.md
       - name: Preview features in Microsoft Defender XDR
         href: preview.md
-      - name: Microsoft Defender XDR services
       - name: Integration with Microsoft Sentinel
         items:
         - name: Bi-directional connector for Microsoft Sentinel
