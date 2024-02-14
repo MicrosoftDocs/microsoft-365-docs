@@ -61,10 +61,10 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
 
     1. On the **Set up pay-as-you-go billing** panel, under **Azure subscription**, select the subscription from the dropdown list.
 
-    > [!NOTE]
-    > The subscription dropdown list will not populate if you don't have an owner or contributor on the subscription.
+       > [!NOTE]
+       > The subscription dropdown list will not populate if you don't have an owner or contributor on the subscription.
 
-    ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../../media/content-understanding/back-billing-subscription.png)
+       ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../../media/content-understanding/back-billing-subscription.png)
 
     1. Under **Resource group**, select the resource group from the dropdown list.
 
