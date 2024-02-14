@@ -65,7 +65,7 @@ Refer to the following table for more on links and routing.
 
 ## When does this take effect?
 
-Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to Microsoft Defender XDR after ending their current session and signing back in again.
+Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied won't be ejected from their session and will only be routed to Microsoft Defender XDR after ending their current session and signing back in again.
 
 ### Set up portal redirection
 
@@ -79,7 +79,7 @@ To start routing accounts to Microsoft Defender XDR:
 
 4. Toggle the **Automatic redirection** setting to **On**.
 
-5. Click **Enable** to apply automatic redirection to the Microsoft Defender portal.
+5. Select **Enable** to apply automatic redirection to the Microsoft Defender portal.
 
 > [!IMPORTANT]
 > Enabling this setting doesn't terminate active user sessions. Accounts who are in an active session while this setting is applied are directed to the Microsoft Defender portal after ending their current session and signing in again.
@@ -96,11 +96,11 @@ To revert to the former Microsoft Defender Security Center:
 
 3. Toggle the **Automatic redirection** setting to **Off**.
 
-4. Click **Disable** & share feedback when prompted.
+4. Select **Disable** & share feedback when prompted.
 
 This setting can be enabled again at any time.
 
-Once disabled, accounts aren't routed to security.microsoft.com, and you'll once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com.
+Once disabled, accounts aren't routed to security.microsoft.com, and you'll have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com.
 
 ## Related information
 
