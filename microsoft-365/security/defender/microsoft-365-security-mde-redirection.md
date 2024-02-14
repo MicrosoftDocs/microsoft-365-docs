@@ -1,13 +1,8 @@
 ---
-title: Redirecting accounts from Microsoft Defender for Endpoint to Microsoft Defender XDR
+title: Redirecting from the Microsoft Defender Security Center to the Microsoft Defender portal
 description: How to redirect accounts and sessions from the Defender for Endpoint to Microsoft Defender XDR.
-keywords: Microsoft Defender XDR, Getting started with Microsoft Defender XDR, security center redirection
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -20,10 +15,10 @@ ms.collection:
   - tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 02/14/2024
 ---
 
-# Redirecting accounts from Microsoft Defender for Endpoint to Microsoft Defender XDR
+# Redirecting from the Microsoft Defender Security Center to the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -31,7 +26,7 @@ ms.date: 02/16/2021
 - Microsoft Defender XDR
 - Defender for Endpoint
 
-In alignment with Microsoft's cross-domain approach to threat protection with SIEM and Extended detection and response (XDR), we've rebranded Microsoft Defender Advanced Threat Protection as Microsoft Defender for Endpoint and unified it into a single integrated portal: Microsoft Defender XDR.
+In alignment with Microsoft's cross-domain approach to threat protection with SIEM and Extended Detection and Response (XDR), we've rebranded Microsoft Defender Advanced Threat Protection as Microsoft Defender for Endpoint and unified it into a single integrated portal: the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
 This guide explains how to route accounts to Microsoft Defender XDR by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>.
 
