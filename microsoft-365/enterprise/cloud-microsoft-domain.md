@@ -41,8 +41,8 @@ The following Microsoft 365 products and services are now available in the `clou
 
 |**Service**|**URL**|
 |:-----|:-----|
-|Microsoft Loop | loop.cloud.microsoft|
 |Microsoft 365 Service Health Status Page | status.cloud.microsoft|
+|Microsoft Loop | loop.cloud.microsoft|
 |Microsoft Mesh | mesh.cloud.microsoft|
 |Microsoft Setup | setup.cloud.microsoft|
 |Microsoft Sway | sway.cloud.microsoft|
