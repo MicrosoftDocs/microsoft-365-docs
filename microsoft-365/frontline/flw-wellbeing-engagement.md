@@ -36,18 +36,20 @@ Surveys like Microsoft’s [Work Trend Index Pulse Report](https://microsoft.com
 - Say leadership doesn't prioritize building culture
 - Believe that work stress will either stay the same or worsen in the coming year
 
-You can help your frontline teams overcome these challenges and feel supported in your organization by using Teams, [Viva Connections](#connect-frontline-workers-to-your-broader-organization-with-viva-connections), [Viva Engage](#create-communities-with-viva-engage), [Praise](#boost-morale-with-praise), and [SharePoint](#support-engagement).
+You can help your frontline teams overcome these challenges and feel supported in your organization by using [Viva Connections](#connect-frontline-workers-to-your-broader-organization-with-viva-connections), [Viva Engage](#create-communities-with-viva-engage), [Praise](#boost-morale-with-praise), and [SharePoint](#support-engagement).
 
 ## Connect frontline workers to your broader organization with Viva Connections
 
 <!-- >> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vpnn]-->
 
-With [Viva Connections](/viva/connections/viva-connections-overview), your frontline workers can easily access everything they need on the go. Use the Viva Connections app in Teams to:
+Keep everyone engaged and informed with [Viva Connections](/viva/connections/viva-connections-overview). Use the Viva Connections app in Teams to:
 
 - Connect frontline workers and create opportunities to engage, communicate, and collaborate.
 - Make it easy for frontline workers to access important news and announcements.
 - Empower frontline workers around a common mission and goal.
 - Create a sense of belonging and provide tools that help foster wellbeing.
+
+With Viva Connections, your frontline workers can easily access everything they need on the go.
 
 ### Increase engagement with communications
 
@@ -61,10 +63,10 @@ With [Viva Connections](/viva/connections/viva-connections-overview), your front
 |Feed |The feed aggregates content from Viva Engage and SharePoint news to display a personalized news stream. |Content in the feed gets automatically aggregated based on sites and Viva Engage communities that the user follows. Content can be prioritized to display more prominently in the feed. Use audience targeting to display content to specific audiences. |
 |Resources |The resources experience surfaces links to popular SharePoint sites and other content. |Resources are inherited from global navigation in SharePoint. Link to popular SharePoint sites like HR benefits and training resources. |-->
 
-The Viva Connections experience is designed to engage and connect employees to your organization, and is composed of three main components: the feed, dashboard, and resources.
+The Viva Connections experience is composed of three main components: the feed, dashboard, and resources.
 
 - Feed: The feed aggregates content from multiple sources to display a personalized news and information stream.  [Learn more](/viva/connections/viva-connections-overview#viva-connections-feed).
-- Dashboard: The dashboard is your employee’s digital toolset that brings together the resources they need. Create a curated experience using cards to give your frontline quick access to do things like clock in and out of shifts. [Learn more](/viva/connections/viva-connections-overview#viva-connections-dashboard).
+- Dashboard: The dashboard is your employee’s digital toolset that brings together the tools and resources they need. Create a curated experience using cards to give your frontline quick access to complete daily tasks like clock in and out of shifts. [Learn more](/viva/connections/viva-connections-overview#viva-connections-dashboard).
 - Resources: Resources surfaces links to popular SharePoint sites and other content. Link to popular SharePoint sites like HR benefits and training resources. [Learn more](/viva/connections/viva-connections-overview#viva-connections-resources).
 
 <!--There are several ways to use Viva Connections to communicate with your workforce. Viva Connections features a [feed](/viva/connections/viva-connections-overview#viva-connections-feed) where news, content from Viva Engage, and videos are aggregated and displayed in a personalized view based on the sites and communities that the viewer follows. The [dashboard](/viva/connections/create-dashboard) can also be used to highlight certain cards that link to important news sources.-->
