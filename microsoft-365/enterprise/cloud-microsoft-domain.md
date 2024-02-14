@@ -58,7 +58,6 @@ The following Microsoft 365 products and services are now available in the `clou
 |Microsoft Viva Pulse | pulse.cloud.microsoft|
 |Microsoft Viva Skills | skills.cloud.microsoft|
 
-
 ## See also
 
 - [Introducing cloud.microsoft: a unified domain for Microsoft 365 apps and services](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961)
