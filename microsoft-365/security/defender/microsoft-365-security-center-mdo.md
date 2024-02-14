@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 in The Microsoft Defender portal
+title: Microsoft Defender for Office 365 in the Microsoft Defender portal
 description: Learn about changes from the Security & Compliance Center to The Microsoft Defender portal.
 ms.date: 02/14/2024
 ms.author: tracyp
@@ -18,7 +18,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.service: defender-xdr
 ---
 
-# Microsoft Defender for Office 365 in The Microsoft Defender portal
+# Microsoft Defender for Office 365 in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
