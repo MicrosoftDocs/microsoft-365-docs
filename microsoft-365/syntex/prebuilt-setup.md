@@ -60,7 +60,7 @@ By default, prebuilt document processing is turned on for libraries in all Share
 
     c. Select **Save**.
 
-### Turn off prebuilt document processing
+## Turn off prebuilt document processing
 
 1. On the **Manage Microsoft Syntex** page, select **Prebuilt document processing**.
 
