@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Identity in The Microsoft Defender portal
+title: Microsoft Defender for Identity in the Microsoft Defender portal
 description: Learn about changes from Microsoft Defender for Identity to The Microsoft Defender portal.
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER, defender-for-identity
 ---
 
-# Microsoft Defender for Identity in The Microsoft Defender portal
+# Microsoft Defender for Identity in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
