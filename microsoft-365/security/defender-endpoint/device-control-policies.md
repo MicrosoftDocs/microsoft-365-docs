@@ -4,7 +4,7 @@ description: Learn about Device control policies in Defender for Endpoint
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 02/01/2024
+ms.date: 02/13/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -15,7 +15,7 @@ ms.collection:
 - mde-asr
 ms.custom:
 - partner-contribution
-ms.reviewer: joshbregman
+ms.reviewer: joshbregman, ksarens
 search.appverid: MET150
 f1.keywords: NOCSH 
 ---
@@ -625,6 +625,7 @@ Then the group is then referenced as parameters in an entry, as illustrated in t
           <Options>0</Options>
           <AccessMask>64</AccessMask>
           <Parameters MatchType="MatchAny">
+            <VPNConnection>
                     <GroupId>{d633d17d-d1d1-4c73-aa27-c545c343b6d7}</GroupId>
             </VPNConnection>
         </Parameters>
