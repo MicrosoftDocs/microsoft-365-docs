@@ -43,7 +43,8 @@ These changes include redirection for direct access to the former portal via bro
 
 External links from email notifications or SIEM APIs currently contain links to both portals. Once redirection is enabled, both links point to the new Microsoft Defender portal until the old link is eventually removed. We encourage you to adopt the new link pointing to the Microsoft Defender portal.
 
-Refer to the table below for more on links and routing.
+Refer to the following table for more on links and routing.
+
 ## SIEM API routing
 
 | Property | Destination when redirection is OFF | Destination when redirection is ON |
