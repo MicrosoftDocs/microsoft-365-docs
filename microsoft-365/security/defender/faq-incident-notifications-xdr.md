@@ -27,7 +27,7 @@ ms.date: 08/29/2023
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 
-The following section lists down questions your SOC team might have regarding the receipt of [incident notifications](start-using-mdex-xdr.md#incident-notifications).
+The following section lists down questions your SOC team might have regarding the receipt of [incident notifications](start-using-mdex-xdr.md#incident-updates).
 
 <a name='in-microsoft-365-defender-portal-and-graph-security-api'></a>
 

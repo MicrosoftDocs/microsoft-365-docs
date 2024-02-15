@@ -60,8 +60,6 @@ For more information about compromised _user accounts_ and how to remove them fr
 
 - Before you follow the procedures in this article to remove a connector from the **Restricted entities** page, be sure to follow the required steps to regain control of the connector as described in [Respond to a compromised connector](connectors-detect-respond-to-compromise.md).
 
-<a name='remove-a-connector-from-the-restricted-entities-page-in-the-microsoft-365-defender-portal'></a>
-
 ## Remove a connector from the Restricted entities page in the Microsoft Defender portal
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Restricted entities**. Or, to go directly to the **Restricted entities** page, use <https://security.microsoft.com/restrictedentities>.

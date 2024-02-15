@@ -40,11 +40,11 @@ Microsoft 365 E3 or E5 Extra Features provides additional features for your user
 |Feature  |Microsoft 365 E3 Extra Features  |Microsoft 365 E5 Extra Features  |
 |---------|---------|---------|
 |Avatars for Teams    | Yes       | Yes         |
-|Avatars for Teams (additional)     | Yes       | Yes         |
 |Microsoft Copilot     | Yes       | Yes         |
 |Microsoft Clipchamp     | Yes       | Yes         |
 |Microsoft Loop     | Yes       | Yes         |
 |Windows Autopatch     | Yes       | Yes         |
+|Windows Update for Business deployment service     | Yes       | Yes         |
 |Customer Lockbox     | No        | Yes        |
 |Defender for IoT - Enterprise IoT Security     | No        | Yes        |
 |Immersive spaces for Teams     | No        | Yes        |
