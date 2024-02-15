@@ -36,11 +36,11 @@ Surveys like Microsoft’s [Work Trend Index Pulse Report](https://microsoft.com
 - Say leadership doesn't prioritize building culture
 - Believe that work stress will either stay the same or worsen in the coming year
 
-You can help your frontline teams overcome these challenges and feel supported in your organization by using [Viva Connections](#connect-frontline-workers-to-your-broader-organization-with-viva-connections), [Viva Engage](#create-communities-with-viva-engage), [Praise](#boost-morale-with-praise), and [SharePoint](#support-engagement).
+You can help your frontline teams overcome these challenges and feel supported in your organization by using Viva Connections, Viva Engage, Praise, and SharePoint.
 
 ## Connect frontline workers to your broader organization with Viva Connections
 
-Keep everyone in your organization engaged and informed with [Viva Connections](/viva/connections/viva-connections-overview). With the Viva Connections app in Teams, you can curate specific content and tools to give your frontline easy access to resources, tools, relevant news, and popular destinations. Use it to:
+Keep everyone engaged and informed with the [Viva Connections](/viva/connections/viva-connections-overview) app in Teams. You can customize Viva Connections to give your frontline easy access to resources, tools, relevant news, and popular destinations. Use it to:
 
 - Connect frontline workers and create opportunities to engage, communicate, and collaborate.
 - Make it easy for frontline workers to access important news and announcements.
