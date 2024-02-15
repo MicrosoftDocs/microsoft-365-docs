@@ -57,7 +57,7 @@ The Viva Connections experience is composed of three main components: the feed, 
 - **Dashboard**: The dashboard is your employee’s digital toolset that brings together the tools and resources they need. Prioritize cards that help your frontline accomplish daily tasks like clocking in and out of shifts or viewing assigned tasks. [Learn more](/viva/connections/viva-connections-overview#viva-connections-dashboard).
 - **Resources**: Resources surfaces links to popular SharePoint sites and other content. Link to popular SharePoint sites like HR benefits and training resources. [Learn more](/viva/connections/viva-connections-overview#viva-connections-resources).
 
-You customize As you prioritize and align the scenarios to support, consider how and where certain tools and resources should be located.
+As you prioritize and align scenarios to support, consider how and where certain tools and resources should be located.
 
 [Learn more about the differences between the Viva Connections desktop and mobile experience](/viva/connections/viva-connections-overview#viva-connections-mobile-and-desktop-experiences).
 
@@ -65,7 +65,7 @@ You customize As you prioritize and align the scenarios to support, consider how
 
 Creating channels for your frontline workers to share feedback helps your teams feel engaged and like their voices matter. Additionally, getting feedback from your teams can provide insights into how your organization can improve processes.
 
-- **On the dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Viva Engage communities](https://support.microsoft.com/office/join-and-create-a-community-in-viva-engage-56aaf591-1fbc-4160-ba26-0c4723c23fd6). You can also [integrate third-party solutions](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration) into the dashboard.
+- **On the dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Viva Engage communities](https://support.microsoft.com/topic/communities-in-viva-engage-1ee29da1-5250-4c1e-b773-e7a78cfaf5d4). You can also [integrate third-party solutions](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration) into the dashboard.
 
     > [!NOTE]
     > Form creation requires an F3 or Enterprise license. Workers with F1 licenses can fill out forms, but the forms need to be created by someone with an F3 or Enterprise license. [Learn more about license types](flw-licensing-options.md) or see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
@@ -94,13 +94,13 @@ Empowering frontline workers with the right technology makes their jobs easier a
 
 ### Get started planning, building, and launching Viva Connections
 
-Review Viva Connections capabilities, technical requirements, and customization options. Then, work with stakeholders (such as representatives from HR and operations and process owners) who can accurately represent the needs of your frontline workforce. Take inventory of the highest priority needs and align them to Viva Connections capabilities to build a custom experience in Teams.
+Review Viva Connections capabilities, technical requirements, and customization options. Then, work with stakeholders (such as representatives from HR, operations, and process owners) who can accurately represent the needs of your frontline workforce. Take inventory of the highest priority needs and align them to Viva Connections capabilities to build a custom experience in Teams.
 
 [Learn how to plan, build, and launch Viva Connections in your organization](/viva/connections/viva-connections-setup-overview).
 
 ## Create communities with Viva Engage
 
-[Viva Engage](/viva/engage/overview) is an internal social network that gives members of your organization opportunities to connect with each other. You can create communities where members of your organization can ask and answer questions, share knowledge, and find belonging at work. Having a variety of communities that span both frontline and non-frontline teams helps your on-the-ground workforce connect to each other and the broader organization.
+[Viva Engage](/viva/engage/overview) is an internal social network that gives members of your organization opportunities to connect with each other. You can create [communities](https://support.microsoft.com/topic/communities-in-viva-engage-1ee29da1-5250-4c1e-b773-e7a78cfaf5d4) where members of your organization can ask and answer questions, share knowledge, and find belonging at work. Having a variety of communities that span both frontline and non-frontline teams helps your on-the-ground workforce connect to each other and the broader organization.
 
 Communities can be based on:
 
@@ -112,7 +112,7 @@ Communities can be based on:
 
 ## Boost morale with Praise
 
-The Praise app in Teams lets managers and employees congratulate each other and share appreciation by sending badges in Teams chat and channels. Praise helps employees feel recognized for achievements such as meeting goals and going above and beyond to help customers.
+The Praise app in Teams lets managers and employees congratulate each other and share appreciation by sending badges in Teams chats and channels. Praise helps employees feel recognized for achievements such as meeting goals and going above and beyond to help customers.
 
 [Learn how to manage Praise for your organization](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
