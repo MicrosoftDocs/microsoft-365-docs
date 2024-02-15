@@ -52,14 +52,23 @@ You can access the script analysis capability in the alert timeline within an in
 To begin analysis, perform the following steps:
 
 1. Open an incident page. Open the alert timeline in the attack story tab. Within the timeline, select an event with a script or code that you want to analyze. Click **Analyze** to start the script/code analysis.
+
 :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig1-script-analysis.png" alt-text="Screenshot highlighting the script analysis button on the alert timeline view in the incident page of Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/script-analyzer/fig1-script-analysis.png":::
+
 Alternately, you can select an event to inspect in the device timeline view. In the process tree shown on the file details pane, select **Analyze** to run the script analysis capability.
+
 :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig2-script-analysis.png" alt-text="Screenshot highlighting the Analyze button on the device timeline view of Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/script-analyzer/fig2-script-analysis.png":::
+
 2. Copilot runs script analysis and displays the results in the Copilot pane. You can see specific lines in the code by selecting **Show code** to expand the script or code, and select **Hide code** to close.
+
 :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig3-script-analysis.png" alt-text="Screenshot of the Copilot pane with script analysis results in the Microsoft Defender XDR incident page." lightbox="../../media/copilot-in-defender/script-analyzer/fig3-script-analysis.png":::
+
 3. Select the three dots on the upper right of the script analysis card to copy or regenerate the results, or view the results in the Copilot for Security standalone experience. Selecting **Open in Security Copilot** opens a new tab to the Copilot standalone portal where you can input prompts and access other plugins.
+
 :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig4-script-analysis.png" alt-text="Screenshot highlighting the available options in the Copilot script analysis card." lightbox="../../media/copilot-in-defender/script-analyzer/fig4-script-analysis.png":::
+
 4. Review the analysis results. You can provide feedback on the results by selecting the feedback dropdown found at the end of the script analysis card.
+
 :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig5-script-analysis.png" alt-text="Screenshot highlighting the feedback button and options in the Copilot script analysis card." lightbox="../../media/copilot-in-defender/script-analyzer/fig5-script-analysis.png":::
 
 > [!TIP]

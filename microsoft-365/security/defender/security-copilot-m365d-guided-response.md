@@ -59,11 +59,17 @@ The guided response cards can be sorted based on the available status for each c
 To use guided responses, perform the following steps:
 
 1. Open an incident page. Copilot automatically generates guided responses upon opening an incident page. The Copilot pane appears on the right side of the incident page, showing the guided response cards.
+
 :::image type="content" source="../../media/copilot-in-defender/guided-response/fig3-guided-responses-copilot.png" alt-text="Screenshot highlighting the Copilot pane with the guided responses in the Microsoft Defender XDR incident page." lightbox="../../media/copilot-in-defender/guided-response/fig3-guided-responses-copilot.png":::
+
 2. Review each card before applying the recommendations. You have the option to apply, skip, or view the recommended action in the Copilot for Security portal. To view these options, select the three dots on top of a response card.
+
 :::image type="content" source="../../media/copilot-in-defender/guided-response/fig4-guided-responses-copilot.png" alt-text="Screenshot highlighting the options available to users for each guided response card in the Copilot pane in Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/guided-response/fig4-guided-responses-copilot.png":::
+
 3. To apply a recommended action, select the desired action from the dropdown menu or the action button found on each card.
+
 :::image type="content" source="../../media/copilot-in-defender/guided-response/fig5-guided-responses-copilot.png" alt-text="Screenshot highlighting the actions available to users for each guided response card in the Copilot pane in Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/guided-response/fig5-guided-responses-copilot.png":::
+
 4. You can provide feedback to each response card to continuously enhance future responses from Copilot. To provide feedback, select the feedback dropdown menu found on the bottom right of each card.
 :::image type="content" source="../../media/copilot-in-defender/guided-response/fig6-guided-responses-copilot.png" alt-text="Screenshot highlighting the feedback options available in each guided response card in the Copilot pane in Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/guided-response/fig6-guided-responses-copilot.png":::
 
