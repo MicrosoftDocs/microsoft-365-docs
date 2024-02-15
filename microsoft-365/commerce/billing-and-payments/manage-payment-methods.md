@@ -25,12 +25,12 @@ ms.custom:
 - business_assist
 search.appverid: MET150
 description: "Learn how to manage your payment methods for Microsoft business products or services in the Microsoft 365 admin center."
-ms.date: 08/24/2023
+ms.date: 02/16/2024
 ---
 
 # Manage payment methods for Microsoft business accounts
 
-When you buy Microsoft business products or services, you can use an existing payment method to pay for then, or add a new one. You can use a credit or debit card to pay for the things you buy.
+When you buy Microsoft business products or services, you can use an existing payment method to pay for them, or add a new one. You can use a credit or debit card to pay for the things you buy.
 
 > [!IMPORTANT]
 >
@@ -96,13 +96,13 @@ When you replace an existing payment method, you can add a new one, or use a pay
 
 If you have an MCA billing account type, you can replace the payment method that's linked with a billing profile.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Billing** > **View payment methods**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-2. Select the **Billing profiles** tab, then select the billing profile to update.
-3. On the **Billing profile** page, under **Payment method**, select **Replace**.
-4. If you need to add a new payment method first, select **Add payment method**, enter the details, then select **Save**.
-5. In the **Replace payment method** pane, select a different payment method from the drop-down list, then select **Replace**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
+2. On the **Overview** tab, select a billing account.
+3. On the billing account details page, select the **Billing profile** tab. The tab lists all billing profiles associated with the selected billing account.
+4. Select a billing profile name to view its details page.
+5. On the billing profile details page, in the **Invoice and billing notifications** section, under **Payment method**, select **Replace**.
+6. Select a new payment method from the drop-down list. If you need to add a new payment method first, select **Add payment method**, enter the details, then select **Save**.
+7. In the **Replace payment method** pane, select a different payment method from the drop-down list, then select **Replace**.
 
 ### Replace the payment method for a single subscription
 
