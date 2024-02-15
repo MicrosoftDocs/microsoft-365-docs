@@ -1,5 +1,5 @@
 ---
-title: Run script and code analysis with Security Copilot in Microsoft Defender XDR
+title: Run script and code analysis with Microsoft Copilot for in Microsoft Defender XDR
 description: Use Security Copilot script analysis embedded in Microsoft Defender XDR to investigate scripts and codes.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, powershell, powershell analysis, bash, batch, bash analysis, batch analysis, code analysis, code analyzer, security copilot script analysis, copilot in security script analysis, security copilot script analysis in Microsoft Defender XDR
 ms.service: defender-xdr
