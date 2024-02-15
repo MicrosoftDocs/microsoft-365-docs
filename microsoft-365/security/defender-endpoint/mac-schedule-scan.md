@@ -39,6 +39,7 @@ search.appverid: met150
 
 While you can start a threat scan at any time with Microsoft Defender for Endpoint, your enterprise might benefit from scheduled or timed scans. For example, you can schedule a scan to run at the beginning of every workday or week. 
 
+There are three types of scheduled scans that are configurable: hourly, daily, and weekly scans. Hourly and daily scheduled scans are always run as quick scans, weekly scans can be configured to be either quick or full scans. It is possible to have all three types of scheduled scans at the same time. See the samples below. 
 **Pre-requisites:**
 
 - Platform Update version: [101.23122.0005](mac-whatsnew.md#jan-2024-build-101231220005---release-version-2012312250) or newer
@@ -68,13 +69,13 @@ The following sample shows the daily and/or weekly configuration for the schedul
 
 Your scheduled scan runs at the date, time, and frequency you defined in your _plist_.
 
-### Option 1: Schedule a quick scan using a _plist_
+### Example 1: Schedule a daily quick scan and weekly full scan using a _plist_
 
 In the following example, the daily quick scan configuration is set to run at 885 minutes after midnight (2:45 p.m.).<br>
-The weekly configuration is set to run a quick scan on Wednesday at 880 minutes after midnight (2:40 p.m.).
-And it's set to ignore exclusions and run on a low priority scan.
+The weekly configuration is set to run a full scan on Wednesday at 880 minutes after midnight (2:40 p.m.).
+And it's set to ignore exclusions and run a low priority scan.
 
-The following code shows the schema you need to use to schedule a quick scan.
+The following code shows the schema you need to use to schedule scans according to the requirements above.
 
 1. Open a text editor and use this example as a guide for your own scheduled scan file.
 
@@ -98,8 +99,6 @@ The following code shows the schema you need to use to schedule a quick scan.
         <dict> 
             <key>timeOfDay</key> 
             <integer>885</integer> 
-            <key>interval</key> 
-            <string>0</string> 
         </dict> 
         <key>weeklyConfiguration</key> 
         <dict> 
@@ -108,18 +107,19 @@ The following code shows the schema you need to use to schedule a quick scan.
             <key>timeOfDay</key> 
             <integer>880</integer> 
             <key>scanType</key> 
-            <string>quick</string> 
+            <string>full</string> 
         </dict> 
-        </dict> 
-    </dict> 
+	</dict> 
+</dict> 
 </plist> 
 ```
 
 2. Save the file as _com.microsoft.wdav.plist_.
 
-### Option 2: Schedule a full scan using a _plist_
+### Example 2: Schedule an hourly quick scan, a daily quick scan, and weekly full scan using a _plist_
 
-1. Open a text editor and use this example for a full scan.
+In the following example, an hourly quick scan will run every 6 hours, a daily quick scan configuration is set to run at 885 minutes after midnight (2:45 p.m.), and a weekly full scan will run on Wednesdays at 880 minutes after midnight (2:40 p.m).
+1. Open a text editor and use this example.
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?> 
