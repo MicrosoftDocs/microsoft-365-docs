@@ -1,17 +1,13 @@
 ---
 title: Experience Microsoft Defender for Endpoint through simulated attacks
 description: Run the provided attack scenario simulations to experience how Microsoft Defender for Endpoint can detect, investigate, and respond to breaches.
-keywords: test, scenario, attack, simulation, simulated, diy, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.sitesec: library
 ms.service: defender-endpoint
 ms.subservice: onboard
-ms.pagetype: security
 ms.author: maccruz
-author: dansimp
+author: schmurky
 ms.localizationpriority: medium
-manager: dansimp
+manager: dolmont
 audience: ITPro
 ms.collection: 
 - m365-security

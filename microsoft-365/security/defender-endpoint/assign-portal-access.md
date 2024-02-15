@@ -1,17 +1,13 @@
 ---
 title: Assign user access 
 description: Assign read and write or read only access to the Microsoft Defender for Endpoint portal.
-keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.sitesec: library
 ms.service: defender-endpoint
 ms.subservice: onboard
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
