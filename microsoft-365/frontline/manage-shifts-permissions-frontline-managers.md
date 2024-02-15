@@ -32,7 +32,7 @@ ms.date:
 
 # Manage Shifts permissions for frontline managers
 
-Frontline managers in Shifts are users that have the team owner or schedule owner role. They create and manage schedules for their teams. By default, frontline managers can do the following in Shifts:
+Frontline managers in Shifts are users that have [the team owner or schedule owner role](schedule-owner-for-shift-management.md). They create and manage schedules for their teams. By default, frontline managers can do the following in Shifts:
 
 - Configure [Shifts settings](https://support.microsoft.com/office/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b) for their teams. For example, frontline managers can turn on time clock and set whether frontline workers on their team can swap shifts and request time off.  
 - Create and manage schedule groups for their teams in Shifts. Schedule groups are used to group frontline workers based on common characteristics within a team, such as departments or job types.
@@ -47,7 +47,7 @@ The following table lists the settings and schedule group capabilities that are 
 
 The following table lists the capabilities that are available to frontline managers for managing their teams in Shifts and indicates whether you can restrict the capability.-->
 
-|Setting/capability|Description|Use Shifts Graph APIs to control permissions|
+|Setting/capability|Description|Use Shifts role Graph API to control permissions|
 |---------|---------|:---------:|
 |Team time zone|Set the team's time zone and closest city.||
 |Start of week|Set the day of the week for schedules to start.||
@@ -67,7 +67,7 @@ The following table lists the capabilities that are available to frontline manag
 
 &sup1;You manage these three capabilities through the `CanModifyShiftRequestsCapabilities` parameter.
 
-You can also use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0) API to define Shifts settings and the [Create schedulingGroup](/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0) API to manage schedule groups and membership.  
+You can also use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0) Graph API to define Shifts settings and the [Create schedulingGroup](/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0) Graph API to manage schedule groups and membership.  
 
 ## Example scenario
 
