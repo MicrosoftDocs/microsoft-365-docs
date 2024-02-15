@@ -40,14 +40,14 @@ You can help your frontline teams overcome these challenges and feel supported i
 
 ## Connect frontline workers to your broader organization with Viva Connections
 
-Keep everyone engaged and informed with the [Viva Connections](/viva/connections/viva-connections-overview) app in Teams. You can customize Viva Connections to give your frontline easy access to resources, tools, relevant news, and popular destinations. Use it to:
+Keep everyone engaged and informed with [Viva Connections](/viva/connections/viva-connections-overview). Use the Viva Connections app in Teams to:
 
 - Connect frontline workers and create opportunities to engage, communicate, and collaborate.
 - Make it easy for frontline workers to access important news and announcements.
 - Empower frontline workers around a common mission and goal.
 - Create a sense of belonging and provide tools that help foster wellbeing.
 
-With Viva Connections, your frontline workers can access everything they need on the go.
+You can customize Viva Connections to give your frontline easy access to resources, tools, relevant news, and popular destinations so they can access everything they need on the go.
 
 ### Increase engagement with communications
 
