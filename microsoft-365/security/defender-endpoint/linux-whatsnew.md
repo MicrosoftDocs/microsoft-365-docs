@@ -34,26 +34,26 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+
 <summary> February-2024 (Build: 101.23122.0002 | Release version: 30.123122.0002.0)</summary>
- 
+
 ## February-2024 Build: 101.23122.0002 | Release version: 30.123122.0002.0
- 
+
 &ensp;Released: **February 5,2024**<br/>
 &ensp;Published: **February 5,2024**<br/>
 &ensp;Build: **101.23122.0002**<br/>
 &ensp;Release version: **30.123122.0002.0**<br/>
 &ensp;Engine version: **1.1.23100.2010**<br/>
 &ensp;Signature version: **1.399.1389.0**<br/>
- 
+
 **What's new**
- 
 There are multiple fixes and new changes in this release:
- 
-- Microsoft Defender for Endpoint on Linux now officially supports Mariner 2, Rocky 8.7 and higher, Alma 9.2 and higher version distros. If you already have MDE running on any of these distros and facing any issues in the older versions, please upgrade to the latest MDE version. Refer our public deployment docs for more details. 
+
+- Microsoft Defender for Endpoint on Linux now officially supports Mariner 2, Rocky 8.7 and higher, Alma 9.2 and higher version distros. If you already have MDE running on any of these distros and facing any issues in the older versions, please upgrade to the latest MDE version. Refer our public deployment docs for more details.
 - Updated default engine version to `1.1.23100.2010`, and default signatures version to `1.399.1389.0`.
 - General stability and performance improvements.
 - Bug fixes.
- 
+
 </details>
 
 <details>
