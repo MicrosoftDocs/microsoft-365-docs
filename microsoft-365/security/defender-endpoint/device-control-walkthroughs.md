@@ -4,7 +4,7 @@ description: Learn how to work with device control in Defender for Endpoint.
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
-ms.date: 01/29/2024
+ms.date: 02/14/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -21,6 +21,12 @@ f1.keywords: NOCSH
 ---
 
 # Device control walkthroughs
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 This article describes different ways to see how device control works. Beginning with default settings, each section describes how to configure device control to achieve certain objectives.
 
