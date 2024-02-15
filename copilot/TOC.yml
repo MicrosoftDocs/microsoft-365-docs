@@ -27,7 +27,9 @@
           href: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
         - name: Copilot page in the Microsoft 365 admin center
           href: microsoft-365-copilot-page.md
-        - name: Manage public web access for Microsoft Copilot for Microsoft 365
+        - name: Manage web access for Microsoft Copilot for Microsoft 365
           href: manage-public-web-access.md
+        - name: Manage Copilot for Microsoft Teams meetings and events
+          href: /MicrosoftTeams/copilot-teams-transcription
         - name: Provide Copilot feedback to Microsoft
           href: provide-feedback.md

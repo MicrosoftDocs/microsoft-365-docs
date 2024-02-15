@@ -56,13 +56,12 @@ You create and assign quarantine policies in the Microsoft Defender portal or in
 - How long messages that were quarantined by anti-spam and anti-phishing protection are held before they expire is controlled by the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) in anti-spam policies. For more information, see the table in [Quarantine retention](quarantine-about.md#quarantine-retention).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
     - **Organization Management**
     - **Security Administrator**
     - **Quarantine Administrator**
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Quarantine Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
-
-<a name='step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal'></a>
 
 ## Step 1: Create quarantine policies in the Microsoft Defender portal
 
@@ -113,7 +112,7 @@ Back on the **Quarantine policy** page, the policy that you created is now liste
 ### Create quarantine policies in PowerShell
 
 > [!TIP]
-> The PermissionToAllowSender permission in quarantine policies in PowerShell isn't used. 
+> The PermissionToAllowSender permission in quarantine policies in PowerShell isn't used.
 
 If you'd rather use PowerShell to create quarantine policies, connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [standalone Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) and use the following syntax:
 
@@ -202,8 +201,6 @@ The default quarantine policies, preset permission groups, and permissions are d
 
 The rest of this step explains how to assign quarantine policies for supported filter verdicts.
 
-<a name='assign-quarantine-policies-in-supported-policies-in-the-microsoft-365-defender-portal'></a>
-
 ## Assign quarantine policies in supported policies in the Microsoft Defender portal
 
 > [!NOTE]
@@ -211,7 +208,7 @@ The rest of this step explains how to assign quarantine policies for supported f
 
 ### Anti-spam policies
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Ant-spam policies** page, use <https://security.microsoft.com/antispam>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
 2. On the **Anti-spam policies** page, use either of the following methods:
    - Select an existing **inbound** anti-spam policy by clicking anywhere in the row other than the check box next to the name. In the policy details flyout that opens, go to the **Actions** section and then select **Edit actions**.
@@ -355,7 +352,7 @@ For detailed syntax and parameter information, see [Set-AntiPhishPolicy](/powers
 
 3. On the **Protection settings** page or flyout, view or select a quarantine policy in the **Quarantine policy** box.
 
-   Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+   Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-defender-portal).
 
    Users can't release their own messages that were quarantined as malware by anti-malware policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
 
@@ -457,8 +454,6 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag ContosoNoAcc
 
 For detailed syntax and parameter information, see [Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
 
-<a name='configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal'></a>
-
 ## Configure global quarantine notification settings in the Microsoft Defender portal
 
 The global settings for quarantine policies allow you to customize the quarantine notifications that are sent to recipients of quarantined messages if quarantine notifications are turned on in the quarantine policy. For more information about quarantine notifications, see [Quarantine notifications](quarantine-quarantine-notifications.md).
@@ -550,8 +545,6 @@ Get-QuarantinePolicy -QuarantinePolicyType GlobalQuarantinePolicy | Set-Quaranti
 
 For detailed syntax and parameter information, see [Set-QuarantinePolicy](/powershell/module/exchange/set-quarantinepolicy).
 
-<a name='view-quarantine-policies-in-the-microsoft-365-defender-portal'></a>
-
 ## View quarantine policies in the Microsoft Defender portal
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
@@ -586,8 +579,6 @@ If you'd rather use PowerShell to view quarantine policies, do any of the follow
 
 For detailed syntax and parameter information, see [Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy).
 
-<a name='modify-quarantine-policies-in-the-microsoft-365-defender-portal'></a>
-
 ## Modify quarantine policies in the Microsoft Defender portal
 
 You can't modify the default quarantine policies named AdminOnlyAccessPolicy, DefaultFullAccessPolicy, or DefaultFullAccessWithNotificationPolicy.
@@ -598,7 +589,7 @@ You can't modify the default quarantine policies named AdminOnlyAccessPolicy, De
 
 3. Select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit policy** action that appears.
 
-The policy wizard opens with the settings and values of the selected quarantine policy. The steps are virtually the same as described in the [Create quarantine policies in the Microsoft Defender portal](#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal) section. The main difference is: you can't rename an existing policy.
+The policy wizard opens with the settings and values of the selected quarantine policy. The steps are virtually the same as described in the [Create quarantine policies in the Microsoft Defender portal](#step-1-create-quarantine-policies-in-the-microsoft-defender-portal) section. The main difference is: you can't rename an existing policy.
 
 ### Modify quarantine policies in PowerShell
 
@@ -611,8 +602,6 @@ Set-QuarantinePolicy -Identity "<QuarantinePolicyName>" [Settings]
 The available settings are the same as described for creating quarantine policies earlier in this article.
 
 For detailed syntax and parameter information, see [Set-QuarantinePolicy](/powershell/module/exchange/set-quarantinepolicy).
-
-<a name='remove-quarantine-policies-in-the-microsoft-365-defender-portal'></a>
 
 ## Remove quarantine policies in the Microsoft Defender portal
 

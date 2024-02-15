@@ -191,10 +191,10 @@ The following cmdlets can be used with Microsoft 365 Groups.
 |[Get-UnifiedGroupLinks](/powershell/module/exchange/get-unifiedgrouplinks)|Retrieve membership and owner information for a Microsoft 365 Group|
 |[Add-UnifiedGroupLinks](/powershell/module/exchange/add-unifiedgrouplinks)|Add members, owners, and subscribers to an existing Microsoft 365 Group|
 |[Remove-UnifiedGroupLinks](/powershell/module/exchange/remove-unifiedgrouplinks)|Remove owners and members from an existing Microsoft 365 Group|
-|[Get-MgGroupPhoto](/powershell/module/microsoft.graph.users/get-mggroupphoto)|Used to view information about the user photo that's associated with a Microsoft 365 Group.|
-|[Get-MgGroupPhotoContent](/powershell/module/microsoft.graph.users/get-mggroupphotocontent)|Used to download the user photo that's associated with a Microsoft 365 Group.|
+|[Get-MgGroupPhoto](/powershell/module/microsoft.graph.groups/get-mggroupphoto)|Used to view information about the user photo that's associated with a Microsoft 365 Group.|
+|[Get-MgGroupPhotoContent](/powershell/module/microsoft.graph.groups/get-mggroupphotocontent)|Used to download the user photo that's associated with a Microsoft 365 Group.|
 |[Set-MgUserPhotoContent](/powershell/module/microsoft.graph.users/set-mguserphotocontent)|Used to add a user photo to a Microsoft 365 Group.|
-|[Remove-MgGroupPhoto](/powershell/module/microsoft.graph.users/get-mggroupphoto)|Remove the photo for a Microsoft 365 Group.|
+|[Remove-MgGroupPhoto](/powershell/module/microsoft.graph.groups/get-mggroupphoto)|Remove the photo for a Microsoft 365 Group.|
 
 ## Related articles
 

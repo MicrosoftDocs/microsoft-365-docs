@@ -41,6 +41,8 @@ landingContent:
         links:
           - text: Syntex services promotion
             url: promo-syntex.md
+          - text: Document translation
+            url: translation-overview.md
 
 # Card 2
   - title: Get started
@@ -79,8 +81,12 @@ landingContent:
             url: taxonomy-tagging-overview.md
           - text: SharePoint eSignature
             url: esignature-overview.md
+          - text: Document translation
+            url: translation-overview.md
           - text: Optical character recognition
             url: ocr-overview.md
+      - linkListType: architecture
+        links:
           - text: Microsoft 365 Archive (Preview)
             url: archive/archive-overview.md
           - text: Microsoft Backup (Preview)
@@ -95,8 +101,10 @@ landingContent:
             url: powershell-syntex-intro.md
           - text: Syntex Model REST API
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
-          - text: Syntex-SharePoint Advanced Management
+          - text: SharePoint Advanced Management
             url: /sharepoint/advanced-management
+          - text: SharePoint Embedded
+            url: /sharepoint/dev/embedded/overview
 
 # Card 5
   - title: Adoption

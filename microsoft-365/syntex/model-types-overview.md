@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 08/12/2023
+ms.date: 01/29/2024
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -64,7 +64,7 @@ Use the unstructured document processing model to automatically classify documen
 
 For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string "Service start date of" followed by an actual date.
 
-This model type supports the widest range of file types and only works on files using the Latin alphabet (English characters).
+This model type supports the widest range of file types and supports [more than 40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
 
 When you create an unstructured document processing model, use the **Teaching method** option.
 
@@ -81,7 +81,7 @@ Freeform document processing models use Microsoft Power Apps [AI Builder](/ai-bu
 
 Because your organization receives letters and documents in large quantities from various sources, such as mail, fax, and email, processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text and other information from these documents, this model automates this process.
 
-This model type is the best option for English documents in PDF or image files when you don't require automatic classification of the type of document.
+This model type is the best option for documents in PDF or image files when you don't require automatic classification of the type of document, and it supports [more than 40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
 
 When you create a freeform document processing model, use the **Freeform selection method** option.
 
@@ -93,7 +93,7 @@ Use the structured document processing model to automatically identify field and
 
 Structured document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create and train models within Syntex. 
 
-This model type supports the widest range of languages and is trained to understand the layout of your form from example documents, and then learns to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number on a tax form).
+This model type supports the [widest range of languages](/ai-builder/form-processing-model-requirements#model-for-structured-and-semi-structured-documents) and is trained to understand the layout of your form from example documents, and then learns to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number on a tax form).
 
 When you create a structured document processing model, use the **Layout method** option.
 

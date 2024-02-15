@@ -18,6 +18,7 @@ ms.collection:
 - Adm_O365
 - TRN_SMB
 - Adm_TOC
+- ContentFreshnessFY24
 ms.custom:
 - commerce_signup
 - VSBFY23
@@ -80,7 +81,7 @@ When you sign up for a new subscription, we ask you for the following informatio
     > [!NOTE]
     > The email address you enter here is different from your Microsoft 365 email address (your sign-in name). Because this is where we also send your billing information, we recommend that you use an e-mail address that's appropriate for receiving business email.
   
-- **A sign-in name (user ID)**&mdash;The user ID you provide becomes your initial Microsoft 365 email address, just to get you started quickly, and is the email address that you use to sign in. For example, if your business name is Fourth Coffee, you might choose rob@fourthcoffee.onmicrosoft.com for your user ID.
+- **A username**&mdash;The username you provide becomes your initial Microsoft 365 email address, just to get you started quickly, and is the email address that you use to sign in. For example, if your business name is Fourth Coffee, you might choose rob@fourthcoffee.onmicrosoft.com for your username.
 
     Most people add their own custom domain shortly after they sign up so they can start receiving email at that address. For example, if you have a custom domain named fourthcoffee.com, you can set up your email address as rob@fourthcoffee.com.
 

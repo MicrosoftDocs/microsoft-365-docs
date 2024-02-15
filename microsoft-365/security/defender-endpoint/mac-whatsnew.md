@@ -33,12 +33,20 @@ ms.reviewer: mavel
 
 For more information on Microsoft Defender for Endpoint on other operating systems:
 
-- - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
-- - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
+- [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
+- [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
+
+**Built-in Scheduled Scan for macOS** (Public Preview) 
+
+Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in Public Preview.  To learn more, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md). 
+
+**Troubleshooting mode for macOS** (Public Preview) 
+
+Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. Troubleshooting mode for macOS is now available in Public Preview. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).  
 
 **Mac devices receive built-in protection**
 
-Tamper protection is turned on in block mode by default to help secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](built-in-protection.md).
+Tamper protection is turned on in block mode by default. This setting helps secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](built-in-protection.md).
 
 **Network protection available for macOS**
 
@@ -46,7 +54,7 @@ Network protection for macOS is now available for all Mac devices onboarded to D
 
 **Known issues**
 
-Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
+Apple fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
 
 **Sonoma support**
 
@@ -57,12 +65,24 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 > [!NOTE]
 > Microsoft Defender for Endpoint no longer supports these macOS as Apple ended support for:
 > - Big Sur (11) in December 2023.
-> - Catalina (10.15) in December 2022.
+
+### Jan-2024 (Build: 101.23122.0005  | Release version: 20.123122.5.0)
+
+| Build:             | **101.23122.0005**    |
+|--------------------|-----------------------|
+| Release version:   | **20.123122.5.0**     |
+| Engine version:    | **1.1.23100.2010**    |
+| Signature version: | **1.403.3022.0**      |
+
+##### What's new
+
+- [[device control](mac-device-control-overview.md)] Fixes for Bluetooth devices support
+- Bug and performance fixes
 
 ### Dec-2023 (Build: 101.23102.0020 | Release version: 20.123102.20.0)
 
 | Build:             | **101.23102.0020** |
-|--------------------|----------------------------|
+|--------------------|--------------------|
 | Release version:   | **20.123102.20.0** |
 | Engine version:    | **1.1.23090.2005** |
 | Signature version: | **1.401.1729.0**   |
@@ -87,7 +107,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 > [!NOTE]
 > If you use Device Control v1, consider migrating to v2 (that includes all v1 functionality and more).
 > Device Control v1 will be considered deprecated in the nearest future.
-> To check, run the [mdatp health --details device_control](mac-device-control-overview.md#status) command, and inspect the `active` property, it should not contain "v1".
+> To check, run the `[mdatp health --details device_control](mac-device-control-overview.md#status)` command, and inspect the `active` property, it should not contain "v1".
 
 ### Oct-2023 (Build: 101.23082.0018  | Release version: 20.123082.18.0)
 
@@ -100,7 +120,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 ##### What's new
 
 - [[device control](mac-device-control-overview.md)] Detailed status with `mdatp health --details device_control`
-- [[device control](mac-device-control-overview.md)] `mdatp config device-control policy` to [set policy](mac-device-control-manual.md) on a non-managed machine
+- [[device control](mac-device-control-overview.md)] `mdatp config device-control policy` to [set policy](mac-device-control-manual.md) on a nonmanaged machine
 - Bug and performance fixes
 
 ### Sep-2023 (Build: 101.23072.0025 | Release version: 20.123072.25.0)
@@ -114,7 +134,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 ##### What's new
 
 - Bug and performance fixes
-- Fix: Security Portal events may have missed ancestors details for short lived processes
+- Fix: Security Portal events might have missed ancestors details for short lived processes
 - Fix: Major performance issues on macOS when Network Protection is set to Audit mode
 
 ### Aug-2023 (Build: 101.23062.0016  | Release version: 20.123062.16.0)
@@ -141,7 +161,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 ##### What's new
 
 - Client version schema change
-- Fix: Defender does not start on a machine with certain versions of Edge due to directory permission issue
+- Fix: Defender doesn't start on a machine with certain versions of Microsoft Edge due to directory permission issue
 - Bug and performance fixes
 
 ### Jun-2023 (Build: 101.98.84  | Release version: 20.123042.19884.0)
@@ -263,7 +283,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **What's new**
 
-- Bug fix: Upgrade fails if \_mdatp user a member of \_lpadmin group
+- Bug fix: Upgrade fails if `\_mdatp` user a member of `\_lpadmin` group
 
 <br/>
 </details>
@@ -283,7 +303,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 - Bug fix - Mac TP in Block mode causing device hang on shutdown/crashes on reboot
 - Add a mdatp command-line switch to view the on-demand scan history
-- Improve Performance of Device Owner on MacOs
+- Improve Performance of Device Owner on macOS
 - Ready for macOS Ventura (13.0)
 - Bug and performance fixes
 
@@ -332,9 +352,9 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **What's new**
 
-- Addressed an issue where printing could not be completed successfully due to the network extension
+- Addressed an issue where printing couldn't be completed successfully due to the network extension
 - Added an option to [configure file hash computation](mac-preferences.md#configure-file-hash-computation-feature)
-- From this build onwards, the product will have the new anti-malware engine by default
+- From this build onwards, the product has the new anti-malware engine by default
 - Performance improvements for file copy operations
 - Bug fixes
 
@@ -348,8 +368,8 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **What's new**
 
-- `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
-- Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
+- `mdatp connectivity test` added an extra URL. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
+- Up until now, the product log level didn't persist between product restarts. Beginning in this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
 - Fixed a bug in the product installation package that in rare cases could lead a loss of product state during updates
 - Performance improvements for file copy operations and built-in macOS applications
 - Bug fixes
@@ -364,8 +384,8 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **What's new**
 
-- Fixed a bug where threat-related notifications were not always presented to the end user.
-- Performance improvements & other bug fixes
+- Fixed a bug where threat-related notifications weren't always presented to the end user.
+- Performance improvements & other updates.
 
 <br/>
 </details>
@@ -391,7 +411,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **What's new**
 
-- Addressed an issue where `mdatp diagnostic real-time-protection-statistics` was not printing the correct process path in some cases.
+- Addressed an issue where `mdatp diagnostic real-time-protection-statistics` wasn't printing the correct process path in some cases.
 - Bug fixes
 
 <br/>
@@ -443,9 +463,9 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **What's new**
 
-- This version adds support for macOS 12.3. Starting with macOS 12.3, [Apple is removing Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). There will be no Python version preinstalled on macOS by default. **ACTION NEEDED**:
-  - Users must update Microsoft Defender for Endpoint for Mac to version 101.59.50 (or newer) prior to updating their devices to macOS Monterey 12.3 (or newer). This minimal version 101.59.50 is a prerequisite to eliminating Python-related issues with Microsoft Defender for Endpoint for Mac on macOS Monterey.
-  - For remote deployments, existing MDM setups must be updated to Microsoft Defender for Endpoint for Mac version 101.59.50 (or newer). Pushing via MDM an older Microsoft Defender for Endpoint for Mac version to macOS Monterey 12.3 (or newer) will result in an installation failure.
+- This version adds support for macOS 12.3. Starting with macOS 12.3, [Apple is removing Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). There's no Python version preinstalled on macOS by default. **ACTION NEEDED**:
+  - Users must update Microsoft Defender for Endpoint for Mac to version 101.59.50 (or newer) before updating their devices to macOS Monterey 12.3 (or newer). This minimal version 101.59.50 is a prerequisite to eliminating Python-related issues with Microsoft Defender for Endpoint for Mac on macOS Monterey.
+  - For remote deployments, existing MDM setups must be updated to Microsoft Defender for Endpoint for Mac version 101.59.50 (or newer). Pushing via MDM an older Microsoft Defender for Endpoint for Mac version to macOS Monterey 12.3 (or newer) results in an installation failure.
 \*\*\n
 <br/>
 </details>
@@ -462,7 +482,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 - The command-line tool now supports restoring quarantined files to a location other than the one where the file was originally detected. This can be done through `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
 - Extended device control to handle devices connected over Thunderbolt 3
-- Improved the handling of device control policies containing invalid vendor IDs and product IDs. Prior to this version, if the policy contained one or more invalid IDs, the entire policy was ignored. Starting from this version, only the invalid portions of the policy are ignored. Issues with the policy are surfaced through `mdatp device-control removable-media policy list`.
+- Improved the handling of device control policies containing invalid vendor IDs and product IDs. Before this version, if the policy contained one or more invalid IDs, the entire policy was ignored. Starting from this version, only the invalid portions of the policy are ignored. Issues with the policy are surfaced through `mdatp device-control removable-media policy list`.
 - Bug fixes
 
 <br/>
@@ -487,13 +507,13 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **What's new**
 
-- The application has been renamed from "Microsoft Defender ATP" to "Microsoft Defender". End users will observe the following changes:
+- The application is renamed from "Microsoft Defender ATP" to "Microsoft Defender". End users observe the following changes:
 - The application installation path has been changed from `/Application/Microsoft Defender ATP.app` to `/Applications/Microsoft Defender.app`.
 - Within the user experience, occurrences of "Microsoft Defender ATP" have been replaced with "Microsoft Defender"
-- Resolved an issue where some VPN applications could not connect due to the network content filter that is distributed with Microsoft Defender for Endpoint for Mac
-- Addressed an issue discovered in macOS 12.2 beta 2 where the installation package could not be opened due to a change in the operating system (OS) that prevents installation of packages with certain characteristics. While it appears that this OS change is not included in the final release of macOS 12.2, it is likely that it will be reintroduced in a future macOS version. As such, we encourage all enterprise administrators to refresh the Microsoft Defender for Endpoint package in their management console to this product version (or a newer version).
-- Addressed an issue seen on some M1 devices where the product was stuck with invalid antimalware definitions and could not successfully update to a working set of definitions.
-- `mdatp health` output has been extended with an additional attribute called `full_disk_access_enabled` that can be used to determine whether Full Disk Access has been granted to all components of Microsoft Defender for Endpoint for Mac.
+- Resolved an issue where some VPN applications couldn't connect due to the network content filter that is distributed with Microsoft Defender for Endpoint for Mac
+- Addressed an issue discovered in macOS 12.2 preview 2 where the installation package couldn't be opened due to a change in the operating system (OS) that prevents installation of packages with certain characteristics. While it appears that this OS change isn't included in the final release of macOS 12.2, it's likely that it will be reintroduced in a future macOS version. As such, we encourage all enterprise administrators to refresh the Microsoft Defender for Endpoint package in their management console to this product version (or a newer version).
+- Addressed an issue seen on some M1 devices where the product was stuck with invalid anti-malware definitions and couldn't successfully update to a working set of definitions.
+- `mdatp health` output has been extended with a more attribute called `full_disk_access_enabled` that can be used to determine whether Full Disk Access has been granted to all components of Microsoft Defender for Endpoint for Mac.
 - Performance improvements & bug fixes
 
 <br/>
@@ -606,7 +626,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 **What's new**
 
 - [Device control for macOS](mac-device-control-overview.md) is now in general availability.
-- Addressed an issue where a quick scan could not be started from the status menu on macOS 11 (Big Sur).
+- Addressed an issue where a quick scan couldn't be started from the status menu on macOS 11 (Big Sur).
 - Other bug fixes
 
 <br/>
@@ -628,7 +648,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 **What's new**
 
 - Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
-- `mdatp diagnostic real-time-protection-statistics` now supports two additional switches:
+- `mdatp diagnostic real-time-protection-statistics` now supports two other switches:
   - `--sort`: sorts the output descending by total number of files scanned
   - `--top N`: displays the top N results (only works if `--sort` is also specified)
 - Performance improvements (specifically for when `YARN` is used) & bug fixes
@@ -759,7 +779,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **What's new**
 
-- This product version has been validated on macOS Big Sur 11 beta 9.
+- This product version has been validated on macOS Big Sur 11 preview 9.
 - The new syntax for the mdatp command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line).
 > [!NOTE]
 > The old command-line tool syntax will be removed from the product on **January 1st, 2021**.
@@ -787,7 +807,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 - Added new fields to the output of `mdatp --health` for checking the status of passive mode and the EDR group ID.
 > [!NOTE]
 > `mdatp --health` will be replaced with `mdatp health` in a future product update.
-- Fixed a bug where automatic sample submission was not marked as managed in the user interface.
+- Fixed a bug where automatic sample submission wasn't marked as managed in the user interface.
 - Added new settings for controlling the retention of items in the antivirus scan history. You can now [specify the number of days to retain items in the scan history](mac-preferences.md#antivirus-scan-history-retention-in-days) and [specify the maximum number of items in the scan history](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history).
 - Bug fixes
 
@@ -903,7 +923,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 **What's new**
 
 - Added more controls for IT administrators around [management of exclusions](mac-preferences.md#exclusion-merge-policy), [management of threat type settings](mac-preferences.md#threat-type-settings-merge-policy), and [disallowed threat actions](mac-preferences.md#disallowed-threat-actions).
-- When Full Disk Access is not enabled on the device, a warning is now displayed in the status menu.
+- When Full Disk Access isn't enabled on the device, a warning is now displayed in the status menu.
 - Performance improvements & bug fixes
 
 <br/>
