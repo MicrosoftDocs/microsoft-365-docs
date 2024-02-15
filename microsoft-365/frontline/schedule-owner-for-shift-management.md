@@ -107,14 +107,14 @@ The person who creates a new team in Teams is the team owner by default. Team ow
 
 ### Schedule owner in Shifts
 
-As an admin, you use policies to manage schedule owners in Shifts for your organization. Use PowerShell to create a policy and assign that policy to individual users or groups of users.
+As an admin, you use policies to assign schedule owner roles in Shifts for your organization. Use PowerShell to create a policy and assign that policy to individual users or groups of users.
 
 1. Create a TeamsShiftsPolicy instance by using the [New-CsTeamsShiftsPolicy](/powershell/module/teams/new-csteamsshiftspolicy?view=teams-ps) PowerShell cmdlet.
 
     Here, we create a new policy named ShiftsScheduleOwners and enable schedule owner permissions in the policy.
 
     ```powershell
-    New-CsTeamsShiftsPolicy –Identity ShiftsScheduleOwners  -EnableScheduleOwnerPermissions $true -AccessType UnrestrictedAccess_TeamsApp
+    New-CsTeamsShiftsPolicy -Identity ShiftsScheduleOwners -EnableScheduleOwnerPermissions $true -AccessType UnrestrictedAccess_TeamsApp
     ```
 
 1. Assign the policy to a specific user or group of users by using the [Grant-CsTeamsShiftsPolicy](/powershell/module/teams/grant-csteamsshiftspolicy?view=teams-ps) PowerShell cmdlet.
