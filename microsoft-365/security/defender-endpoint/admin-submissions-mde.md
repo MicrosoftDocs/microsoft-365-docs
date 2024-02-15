@@ -1,16 +1,12 @@
 ---
 title: Submit files in Microsoft Defender for Endpoint
 description: Learn how to use the unified submissions feature in Microsoft Defender XDR to submit suspicious emails, URLs, email attachments, and files to Microsoft for scanning.
-keywords: antivirus, spam, phish, file, alert, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url, submission, submit, report
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.date: 10/02/2023
+ms.date: 02/15/2024
 ms.service: defender-endpoint
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: siosulli
+author: siosulli
+manager: deniseb
 localization_priority: Normal
 audience: ITPro
 ms.topic: how-to
