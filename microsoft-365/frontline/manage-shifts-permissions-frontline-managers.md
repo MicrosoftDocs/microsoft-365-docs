@@ -92,12 +92,11 @@ To do this:
 
 1. To prevent frontline managers from changing the time clock setting for their teams, use the [Shifts role permissions]() Graph API and remove the `CanModifyTimeClockCapabilities` parameter from the `allowedResourceActions` list for the team owner role and schedule owner role on every team using Shifts.
 
-    The following example shows the role permissions of the team owner role for the Contoso Chicago store (team ID fb963991-69a8-4d2c-8465-cd8e374891c4).
+    This example shows the permissions of the team owner role for the Contoso Chicago store (team ID fb963991-69a8-4d2c-8465-cd8e374891c4).
 
     **Request**<br>
     ```http
     PATCH https://graph.microsoft.com/beta/teams/fb963991-69a8-4d2c-8465-cd8e374891c4/schedule/shiftsRoleDefinitions/teamowner
-
     Content-Type: application/json
 
     {
@@ -114,24 +113,21 @@ To do this:
     }     
     ```
 
-1. To turn off time clock in Shifts for all teams, use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0) Graph API 
+1. To turn off time clock in Shifts for all teams, use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0) Graph API and set the `timeClockEnabled parameter` to `false` for every team.
+
+    Here, time clock is turned off for the Contoso Chicago store (team ID fb963991-69a8-4d2c-8465-cd8e374891c4).
 
     **Request**<br>
     ```http
-    PATCH https://graph.microsoft.com/beta/teams/fb963991-69a8-4d2c-8465-cd8e374891c4/schedule/shiftsRoleDefinitions/teamowner
-
+    PUT https://graph.microsoft.com/v1.0/teams/fb963991-69a8-4d2c-8465-cd8e374891c4/schedule
     Content-Type: application/json
-
-   PUT https://graph.microsoft.com/v1.0/teams/fb963991-69a8-4d2c-8465-cd8e374891c4/schedule
-
-    Content-type: application/json
 
     {
       "enabled": true,
       "timeZone": "America/Chicago”, 
       "timeClockEnabled": false
     }
-    ```    
+    ```
 
 Here's what the time clock setting in Shifts looks like for store managers and department managers at Contoso before and after removing their permissions to change it. After the capability if turned off, the setting is unavailable in Shifts.
 
@@ -141,7 +137,26 @@ Here's what the time clock setting in Shifts looks like for store managers and d
 
 At Contoso, adding and editing time-off reasons is the responsibility of the store manager. This means that they need to turn off the ability for schedule owners to add and edit time-off reasons in Shifts for all teams.
 
-To do this, use the [Shifts role permissions]() Graph API and set the `CanModifyTimeOffReasons` parameter to `false` for every schedule owner on every team.
+To do this, use the [Shifts role permissions]() Graph API and remove the `CanModifyTimeOffReasons` parameter from the `allowedResourceActions` list for the schedule owner role on every team using Shifts.
+
+This example shows the permissions of the schedule owner role for the Contoso Chicago store (team ID fb963991-69a8-4d2c-8465-cd8e374891c4).
+
+**Request**<br>
+```http
+PATCH https://graph.microsoft.com/beta/teams/fb963991-69a8-4d2c-8465-cd8e374891c4/schedule/shiftsRoleDefinitions/scheduleowner
+Content-Type: application/json
+{
+"shiftsRolePermissions": [
+  {
+    "allowedResourceActions": [
+       "CanModifyShiftRequestsCapabilities",
+       "CanModifyTimeOffRequestsCapabilities",
+       "CanModifySchedulingGroups"
+     ]
+  }
+ ]
+}
+```
 
 Here's what the time-off reasons option in Shifts looks like for department managers at Contoso before and after removing their permissions to use it. After the capability is turned off, the option is unavailable in Shifts.
 
