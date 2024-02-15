@@ -118,6 +118,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Transport rule** (mail flow rule)
   - **Bulk**
   - **Spam**
+  - **Data loss prevention**
   - **Malware**: Anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365. The **Policy Type** value indicates which feature was used.
   - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](anti-phishing-policies-about.md#spoof-settings) or [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
   - **High confidence phishing**
@@ -331,17 +332,17 @@ When you select multiple quarantined messages on the **Email** tab by selecting 
 
 ## Manage quarantined messages in Microsoft Teams
 
-When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Users can now view and manage these quarantined Teams messages in the Microsoft Defender portal. Quarantine notifications aren't supported for quarantined Teams messages. 
+When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Users can now view and manage these quarantined Teams messages in the Microsoft Defender portal. Quarantine notifications aren't supported for quarantined Teams messages.
 
 ### View your quarantined messages in Microsoft Teams
 
-In the Microsoft Defender portal at https://security.microsoft.com, go to **Email & collaboration** > **Review** > **Quarantine** > **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>. 
+In the Microsoft Defender portal at https://security.microsoft.com, go to **Email & collaboration** > **Review** > **Quarantine** > **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>.
 
 You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default columns are:
 
 - **Teams message text**: Contains the subject for the teams message.
 - **Date quarantined**: Showed when the message was quarantined.
-- **Status**: Shows whether the message is already reviewed and released or needs review. 
+- **Status**: Shows whether the message is already reviewed and released or needs review.
 - **Sender**: The person who sent the message that was quarantined.
 - **Quarantine reason**: Available options are **High confidence phish** and **Malware**.
 - **Expires**: Indicates the time after which the message is removed from quarantine. By default, this value is 30 days.
@@ -382,7 +383,7 @@ In the details flyout that opens, the following information is available:
   - **Release status**
   - **Policy type**
 - **Message details** section: Includes date and time of the message sent, the sender address, Teams message ID, and the list of recipients.
-  - **Sender address** 
+  - **Sender address**
   - **Time received**
   - **Recipients**
   - **Teams message ID**
@@ -398,4 +399,3 @@ On the **Teams messages** tab, select the quarantined message by selecting the c
 - **Preview message**: You can view the details of the message you selected.
 
 If you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
- 

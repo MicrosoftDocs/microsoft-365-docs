@@ -33,7 +33,7 @@ Microsoft 365 Lighthouse provides the connection status between your customer te
 
 ## View a failed network connection
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Devices** > **Windows 365**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Devices** > **Windows 365**.
 
 2. Select the **Azure network connections** tab.
 

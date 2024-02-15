@@ -3,7 +3,7 @@ title: "Microsoft 365 endpoints"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/19/2023
+ms.date: 01/19/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -44,7 +44,7 @@ There are currently five different Microsoft 365 clouds. This table takes you to
 | [Microsoft 365 operated by 21Vianet endpoints](urls-and-ip-address-ranges-21vianet.md) | The endpoints for Microsoft 365 operated by 21Vianet, which is designed to meet the needs for Microsoft 365 in China. |
 |||
 
-To automate getting the latest list of endpoints for your Microsoft 365 cloud, see the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
+To automate getting the latest list of endpoints for your Microsoft 365 cloud, see the [Microsoft 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
 
 For more endpoints, see these articles:
 
@@ -55,4 +55,4 @@ If you're a network equipment vendor, join the [Office 365 Networking Partner Pr
 
 ## See also
 
-[Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
+[Microsoft 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)

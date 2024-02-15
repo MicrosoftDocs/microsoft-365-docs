@@ -40,14 +40,13 @@ This article describes how to confirm that priority account protection is turned
 - You open the Microsoft Defender portal at <https://security.microsoft.com>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/System settings/Read and manage** or **Authorization and settings/System settings/Read-only**.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** or **Security Administrator** role groups.
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - As previously described, priority account protection is applied to accounts that have the **Priority account** tag applied to them. For instructions, see [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
 - The Priority account tag is a type of _user tag_. You can create custom user tags to differentiate specific groups of users in reporting and other features. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
-
-<a name='review-or-turn-on-priority-account-protection-in-the-microsoft-365-defender-portal'></a>
 
 ## Review or turn on priority account protection in the Microsoft Defender portal
 
@@ -91,7 +90,7 @@ The effects of priority account protection are visible in the following reportin
 - [Threat Explorer and real-time detections](threat-explorer-about.md)
 - [Email entity page](mdo-email-entity-page.md)
 
-For information about where the Priority account tag and other user tags are available as filters, see [User tags in reports and features](user-tags-about.md#user-tags-in-reports-and-features). 
+For information about where the Priority account tag and other user tags are available as filters, see [User tags in reports and features](user-tags-about.md#user-tags-in-reports-and-features).
 
 ### Threat protection status report
 
