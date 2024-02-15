@@ -5,7 +5,7 @@ description: View and manage the alerts surfaced in Microsoft Defender XDR
 keywords:
 ms.service: defender-endpoint
 ms.author: siosulli
-author: mjcapasiosulliras
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
