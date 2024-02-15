@@ -52,6 +52,11 @@ Copilot with commercial data protection provides enhanced security for users acc
 
 Copilot in Bing, Edge and Windows is the public version of Copilot and doesn’t require users to be signed in. You can reroute to the documentation available on the panel to turn off the public experience and still have access to the Copilot with commercial data protection experience.
 
+You'll soon have the ability to control access to Copilot for Microsoft 365 in Bing, Edge, and Windows using a PowerShell script. By running this script, you can manage access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. However, this will not affect how users access Copilot in other Microsoft 365 apps.
+
+>[!NOTE]
+> The PowerShell script download link and run commands will be available in late February 2024. If you want to configure Copilot for Microsoft 365 in Bing, Edge, and Windows after late February, return to this page for further instructions.
+
 ### Manage plugins that work with Microsoft Copilot for Microsoft 365
 
 Microsoft Copilot for Microsoft 365 is powered by an advanced processing and orchestration engine that seamlessly integrates Microsoft 365 apps, Microsoft Graph, and large language models (LLMs) to turn your words into the most powerful productivity tool. While Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many users still depend on various external tools and services for work management and collaboration. You can extend Microsoft Copilot for Microsoft 365 by building a plugin or by connecting to an external data source.
