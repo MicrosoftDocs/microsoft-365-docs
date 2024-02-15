@@ -4,7 +4,6 @@ description: Assign read and write or read only access to the Microsoft Defender
 keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.service: defender-endpoint
 ms.subservice: onboard

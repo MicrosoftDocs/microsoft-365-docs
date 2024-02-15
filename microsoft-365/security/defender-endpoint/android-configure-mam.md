@@ -5,7 +5,6 @@ keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, co
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: shthota

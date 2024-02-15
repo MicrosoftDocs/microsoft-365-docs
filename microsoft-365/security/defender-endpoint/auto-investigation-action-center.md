@@ -2,7 +2,6 @@
 title: Visit the Action center to see remediation actions
 description: Use the action center to view details and results following an automated investigation
 keywords: action, center, autoir, automated, investigation, response, remediation
-ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.service: defender-endpoint

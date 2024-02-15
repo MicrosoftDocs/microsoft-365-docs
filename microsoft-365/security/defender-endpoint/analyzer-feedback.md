@@ -3,7 +3,6 @@ title:  Provide feedback on the Microsoft Defender for Endpoint Client Analyzer 
 description: Provide feedback on the Microsoft Defender for Endpoint client analyzer tool
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:

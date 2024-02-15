@@ -4,7 +4,6 @@ description: Run the provided attack scenario simulations to experience how Micr
 keywords: test, scenario, attack, simulation, simulated, diy, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.service: defender-endpoint
 ms.subservice: onboard

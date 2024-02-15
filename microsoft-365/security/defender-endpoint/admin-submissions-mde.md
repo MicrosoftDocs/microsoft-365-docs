@@ -6,7 +6,6 @@ search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.date: 10/02/2023
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
