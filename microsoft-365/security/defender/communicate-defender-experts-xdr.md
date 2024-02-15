@@ -4,6 +4,7 @@ ms.reviewer:
 description: Defender Experts for XDR has multiple channels to discuss incidents, managed response, and service support
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Managed response in Teams, real-time visibility with XDR experts, ask defender experts
 ms.service: defender-experts
+ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,10 +16,10 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
-  - essentials-overview
+  - essentials-manage
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/29/2024
+ms.date: 02/08/2024
 ---
 
 # Communicating with experts in the Microsoft Defender Experts for XDR service

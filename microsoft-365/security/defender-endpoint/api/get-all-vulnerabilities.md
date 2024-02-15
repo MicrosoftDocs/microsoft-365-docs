@@ -111,9 +111,9 @@ Here is an example of the response.
             "exploitVerified": false,
             "exploitInKit": false,
             "exploitTypes": [],
-            "exploitUris": []
+            "exploitUris": [],
+            "CveSupportability": "supported"  
         }
-        ...
     ]
 
 }

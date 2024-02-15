@@ -52,7 +52,7 @@ To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must
 
 - A Microsoft Entra tenant that's allow-listed by Microsoft to connect a workspace through the Defender portal
 - A Log Analytics workspace that has Microsoft Sentinel enabled
-- The data connector for Microsoft Defender XDR (formerly named Microsoft Defender XDR) enabled in Microsoft Sentinel for incidents and alerts
+- The data connector for Microsoft Defender XDR (formerly named Microsoft 365 Defender) enabled in Microsoft Sentinel for incidents and alerts
 - Microsoft Defender XDR onboarded to the Microsoft Entra tenant
 - An Azure account with the appropriate roles to onboard and use Microsoft Sentinel in the Defender portal. The following table highlights some of the key roles needed.
 
