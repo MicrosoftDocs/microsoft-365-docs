@@ -90,8 +90,48 @@ Contoso decided not to use time clock in Shifts for now because they want their 
   
 To do this:
 
-1. To prevent frontline managers from changing the time clock setting for their teams, use the [Shifts role permissions]() Graph API and set the `CanModifyTimeClockCapabilities` parameter to `false` for every team owner and schedule owner on every team.
-1. To turn off time clock in Shifts for all teams, use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0) Graph API and set the `timeClockEnabled` parameter to `false` for every team.
+1. To prevent frontline managers from changing the time clock setting for their teams, use the [Shifts role permissions]() Graph API and remove the `CanModifyTimeClockCapabilities` parameter from the `allowedResourceActions` list for the team owner role and schedule owner role on every team using Shifts.
+
+    The following example shows the role permissions of the team owner role for the Contoso Chicago store (team ID fb963991-69a8-4d2c-8465-cd8e374891c4).
+
+    **Request**<br>
+    ```http
+    PATCH https://graph.microsoft.com/beta/teams/fb963991-69a8-4d2c-8465-cd8e374891c4/schedule/shiftsRoleDefinitions/teamowner
+
+    Content-Type: application/json
+
+    {
+    "shiftsRolePermissions": [
+      {
+        "allowedResourceActions": [
+           "CanModifyShiftRequestsCapabilities",
+           "CanModifyTimeOffRequestsCapabilities",
+           "CanModifySchedulingGroups",
+           "CanModifyTimeOffReasons"
+         ]
+      }
+     ]
+    }     
+    ```
+
+1. To turn off time clock in Shifts for all teams, use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0) Graph API 
+
+    **Request**<br>
+    ```http
+    PATCH https://graph.microsoft.com/beta/teams/fb963991-69a8-4d2c-8465-cd8e374891c4/schedule/shiftsRoleDefinitions/teamowner
+
+    Content-Type: application/json
+
+   PUT https://graph.microsoft.com/v1.0/teams/fb963991-69a8-4d2c-8465-cd8e374891c4/schedule
+
+    Content-type: application/json
+
+    {
+      "enabled": true,
+      "timeZone": "America/Chicago”, 
+      "timeClockEnabled": false
+    }
+    ```    
 
 Here's what the time clock setting in Shifts looks like for store managers and department managers at Contoso before and after removing their permissions to change it. After the capability if turned off, the setting is unavailable in Shifts.
 
