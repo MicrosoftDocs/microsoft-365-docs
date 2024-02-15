@@ -28,46 +28,45 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections** to detect and remediate threats. For example:
-
-- See malware detected by Microsoft 365 security features.
-- View phishing URL and click verdict data.
-- Start an automated investigation.
-- Investigate malicious email.
-- And more.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections**. Fundamentally, these features are near real-time reports of detected threats found in email and files.
 
 Depending on your Defender for Office 365 subscription, Threat Explorer or Real-time detections is available in the **Email & collaboration** section in the Microsoft Defender portal at <https://security.microsoft.com>:
 
-- **Threat Explorer** is a threat hunting and remediation tool in _Defender for Office 365 Plan 2_. The **Explorer** page is available directly at <https://security.microsoft.com/threatexplorerv3>.
-
-  :::image type="content" source="../../media/te-rtd-select-threat-explorer.png" alt-text="Explorer in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-threat-explorer.png":::
-
-- **Real-time detections** is a reporting tool in _Defender for Office 365 Plan 1_. The **Real-time detections** page is available directly at <https://security.microsoft.com/realtimereportsv3>.
+- **Real-time detections** is available in _Defender for Office 365 Plan 1_. The **Real-time detections** page is available directly at <https://security.microsoft.com/realtimereportsv3>.
 
   :::image type="content" source="../../media/te-rtd-select-real-time-detections.png" alt-text="Real-time detections in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-real-time-detections.png":::
 
+  Real-time detections contains information about email containing malware and phishing threats (including phishing URL and click verdict data), and files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
+
+- **Threat Explorer** is available in _Defender for Office 365 Plan 2_. The **Explorer** page is available directly at <https://security.microsoft.com/threatexplorerv3>.
+
+  :::image type="content" source="../../media/te-rtd-select-threat-explorer.png" alt-text="Explorer in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-threat-explorer.png":::
+
+  Threat Explorer contains the same information as Real-time detections and the following additional reporting capabilities:
+
+  - Information about all email sent into your organization and between users in your organization (whether threats are detected or not).
+  - Information about [campaigns](campaigns.md).
+  - Information about user clicks on URLs in email messages, Teams messages, SharePoint, and OneDrive.
+  - More filtering options.
+  - The ability to save and use queries.
+
+  More importantly, Threat Explorer is also a threat hunting and remediation tool that allows you to take action on items from the reports. For example:
+
+  - Start automated investigations and responses.
+  - ???
+
 For more information about the differences between Defender for Office 365 Plan 1 and Plan 2, see the [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-security-comparison.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
-This article gives an overview to Threat Explorer and Real-time detections, and describes the differences between them.
-
-## Real-time report data in Threat Explorer in Real-time detections
-
-The major component of Threat Explorer and Real-time detections is the real-time report data that's available on the **Explorer**</li><li>Real-time detections** page.
-
-Real-time report data contains the following elements:
+The reports in Threat Explorer and Real-time detections contain the following elements:
 
 - **Views**: Tabs at the top of the page that organize detections by threat. The view selection affects the rest of the data and options that are available on the page.
-- **Filters**: Filter the results by date/time and message, file, or threat properties.
-- **Charts**: A visual, aggregate view of the filtered data. You can use different pivots to view the data by different dimensions. You can also export the chart data to a .csv file.
-- **Results grid**: Shows the results based on the applied filters you've applied. Tabs are available in the results grid to further classify the data. Some tabs also allow you to customize the columns that are shown or export data.
+- **Filters (queries)**: Filter the results by date/time and message, file, or threat properties.
+- **Charts**: A visual, aggregate view of the filtered or unfiltered data. You can use available pivots to organize the chart in different ways. You can often export the chart data to a .csv file.
+- **Details area**: The details area shows a table, chart, or map that contains the filtered or unfiltered data. You can use the available views (tabs) to organize the data in different ways. You can often export the data from the details area to a .csv file.
 
 :::image type="content" source="../../media/te-rtd-threat-explorer-main-page.png" alt-text="The main page in Threat explorer showing real-time report data in the Defender for Office 365 portal." lightbox="../../media/te-rtd-threat-explorer-main-page.png":::
 
-These elements are described in the following sections.
-
-## Views in Threat Explorer in Real-time detections
-
-The following table lists the views and their availability in Threat Explorer and Real-time detections:
+The following table lists the available report views in Threat Explorer and Real-time detections:
 
 |View|Threat<br/>Explorer|Real-time<br/>detections|Description|
 |---|:---:|:---:|---|
@@ -78,19 +77,23 @@ The following table lists the views and their availability in Threat Explorer an
 |**Content malware**|✔|✔|Information about malicious files that were identified by [Safe Attachments for Sharepoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).|
 |**URL clicks**|✔||Information about user clicks on URLs in email messages, Teams messages, SharePoint, and OneDrive.|
 
-These views are described in the following subsections.
+The rest of this article explains the report views and actions that are available in Threat Explorer and Real-time detections.
 
-### All email view in Threat Explorer
+## All email view in Threat Explorer
 
 The **All email** view in Threat Explorer shows information about all email messages sent by external users into your organization, or email sent between internal users in your organization.
 
-The **All email** view is available on the **Explorer** page in the Defender portal at **Email & collaboration** \> **Explorer** \> **All email** tab. Or, to go directly to the **All email** view on the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+:::image type="content" source="../../media/te-rtd-all-email view.png" alt-text="The All email view showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-all-email view.png":::
+
+The view is available on the **Explorer** page in the Defender portal at **Email & collaboration** \> **Explorer** \> **All email** tab. Or, to go directly to the **All email** view on the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
 
 By default, the view is filtered by data from yesterday and today. To change the date filter, select the date range filter, and then select **Start Date** and **End date** values up to 30 days ago.
 
 :::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="The date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
 
-By default, no filters are applied to the data. To filter the data, select the **Delivery action** box, and then select a filter from the drop down list. The available filters are listed in the following table:
+By default, no filters (queries) are applied to the data. The steps to create filters are described in the [Filters in Threat Explorer and Real-time detections](#data-filters-in-threat-explorer-and-real-time-detections) section later in this article.
+
+The filterable properties that are available in the **Delivery action** box in the **All email** view are described in the following table:
 
 |Property|Type|
 |---|---|
@@ -160,48 +163,178 @@ By default, no filters are applied to the data. To filter the data, select the *
 |DMARC|Select one or more values: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|
 |Composite|Select one or more values: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
 
-Depending on the nature of the filter (text, an integer, or discreet values), the following operators are available:
+The date/time filter and the data filters (queries) that you configure affect the data that's shown in the chart and details table. Use the following options to further organize the data:
 
-- **Equal any of**
-- **Equal none of**
-- **Greater than**
-- **Less than**
+- **Chart pivots**: Select an available value from **Select pivot for histogram chart** to change how the filtered or unfiltered chart data is organized and displayed.
+- **Details table views**: Select an available view tab for the details table to change how the details table is organized and displayed.
 
-To apply multiple conditions for the query, do the following steps:
+These options are described in the following subsections.
 
-1. Use the boxes to select the property and operator.
-2. When you enter/select the value or values in the box, the condition appears below the boxes.
-3. When you repeat the previous steps, the next condition is copied using the **AND** or **OR** value that shown in the corresponding box in the query builder.
+> [!TIP]
+> Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export chart data** to export the filtered or unfiltered chart data to a CSV file.
+>
+> Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the filtered or unfiltered details table data to a CSV file.
+>
+> To remove the chart from the page (maximize the size of the details table), do either of the following steps:
+>
+> - Select :::image type="icon" source="../../media/m365-cc-sc-chart-view-icon.png" border="false"::: **Chart View** \> :::image type="icon" source="../../media/m365-cc-sc-list-view-icon.png" border="false"::: **List View** at the top of the page.
+> - Select :::image type="icon" source="../../media/m365-cc-sc-show-list-view-icon.png" border="false"::: **Show list view** between the chart and the views for the details table.
 
-   If you select **AND** or **OR** when existing conditions are present, the operators between the conditions change to all **AND** or all **OR**.
+### Delivery action chart pivot in the All email view in Threat Explorer
 
-:::image type="content" source="../../media/te-rtd-query-builder.png" alt-text="An example query in Threat Explorer or Real-time detections showing multiple conditions." lightbox="../../media/te-rtd-query-builder.png":::
+Although this chart pivot doesn't look like it's selected, **Delivery action** is the default chart pivot in the **All email** view.
 
-To save the query, select **Save query** \> **Save query**. In the **Save query** flyout that opens, configure the following options:
+### Sender domain chart pivot in the All email view in Threat Explorer
 
-- **Query name**: Enter a unique name for the query.
-- Select one of the following options:
-  - **Exact dates**: Select a start date and end date in the boxes. The oldest start date that you can select is 30 days before today. The newest end date that you can select is today.
-  - **Relative dates**: Select the number of days in the **Show last nn days when search is run**. The default value is 7, but you can select 1 to 30.
-- **Track query**: By default, this option isn't selected.
+### Sender IP chart pivot in the All email view in Threat Explorer
 
-When you're finished in the **Save query** flyout, select **Save**, and then select **OK** in the confirmation dialog.
+### Detection technology chart pivot in the All email view in Threat Explorer
+
+### Full URL chart pivot in the All email view in Threat Explorer
+
+### URL domain chart pivot in the All email view in Threat Explorer
+
+### URL domain and path chart pivot in the All email view in Threat Explorer
+
+### Email view for the details area in the All email view in Threat Explorer
+
+**Email** is the default view for the details area in the **All email** view.
+
+You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
+
+- **Date**<sup></sup>
+- **Subject**<sup></sup>
+- **Recipient**<sup></sup>
+- **Recipient domain**
+- **Tags**<sup></sup>
+- **Sender address**<sup></sup>
+- **Sender display name**
+- **Sender domain**<sup></sup>
+- **Sender IP**
+- **Sender mail from address**
+- **Sender mail from domain**
+- **Additional actions**<sup></sup>
+- **Delivery action**
+- **Latest delivery location**<sup></sup>
+- **Original delivery location**<sup></sup>
+- **System overrides source**
+- **System overrides**
+- **Alert ID**
+- **Internet message ID**
+- **Network message ID**
+- **Mail language**
+- **Exchange transport rule**
+- **Connector**
+- **Context**
+- **Data loss prevention rule**
+- **Threat type**<sup></sup>
+- **Detection technology**
+- **Attachment Count**
+- **URL Count**
+- **Email size**
+
+To see all columns, you likely need to do one or more of the following steps:
+
+- Horizontally scroll in your web browser.
+- Narrow the width of appropriate columns.
+- Remove columns from the view.
+- Zoom out in your web browser.
+
+Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export up to 200,000 results to a CSV file.
+
+**Take action**
+
+### URL clicks view for the details area in the All email view in Threat Explorer
+
+The **URL clicks** view shows a chart that can be organized using pivots as described in the following subsections.
+
+
+
+### Top URLs view for the details area in the All email view in Threat Explorer
+
+### Top clicks view for the details area in the All email view in Threat Explorer
+
+### Top targeted users view for the details area in the All email view in Threat Explorer
+
+### Email origin view for the details area in the All email view in Threat Explorer
+
+### Campaign view for the details area in the All email view in Threat Explorer
+
+
+
+
+## Malware view in Threat Explorer and Real-time detections
+
+## Phish view in Threat Explorer and Real-time detections
+
+## Campaigns view in Threat Explorer
+
+## Content malware view in Threat Explorer and Real-time detections
+
+## URL clicks view in Threat Explorer
+
+## Data filters in Threat Explorer and Real-time detections
+
+The steps to create data filters (queries) are the same in all views in Threat Explorer and Real-time detections:
+
+1. Identify the filter property using the tables in the preview view description sections earlier in this article.
+
+2. Select an available filter operator. The available filter operators depend on the property type as described in the following table:
+
+   |Operator|Property type|
+   |---|---|
+   |**Equal any of**|Text <br/> Integer <br/> Discreet values|
+   |**Equal none of**|Text <br/> Discreet values|
+   |**Greater than**|Integer|
+   |**Less than**|Integer|
+
+3. Enter or select one or more property values. For text values and integers, you can enter multiple values separated by commas.
+
+   Multiple values in the property value use the OR logical operator. For example, **Sender address** \> **Equal any of** \> `bob@fabrikam.com,cindy@fabrikam.com` means **Sender address** \> **Equal any of** \> `bob@fabrikam.com` OR `cindy@fabrikam.com`.
+
+   After you enter or select one or more property values, the completed filter condition appears below the filter creation boxes.
+
+4. To add another filter condition, repeat the previous three steps.
+
+   The filter conditions below the filter creation boxes are separated by the logical operator that was selected at the time you created the second or subsequent filter conditions. The default value is **AND**, but you can also select **OR**.
+
+   The same logical operator is used between all filter conditions: they're all **AND** or they're all **OR**. To change the existing logical operators, select the logical operator box, and then select **AND** or **OR**.
+
+   To edit an existing condition, double-click on it to bring the selected property, filter operator, and values back into the corresponding boxes.
+
+   To remove an existing condition, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: on the condition.
+
+5. To apply the filter to the chart and the details table, select **Refresh**
+
+   :::image type="content" source="../../media/te-rtd-query-builder.png" alt-text="An example query in Threat Explorer or Real-time detections showing multiple conditions." lightbox="../../media/te-rtd-query-builder.png":::
+
+   > [!TIP]
+   > **Save query** isn't available in Real-time detections. It's available only in Threat Explorer.
+
+### Saved filters in Threat Explorer
+
+Threat Explorer allows you to save filters (queries) for later use.
+
+To save a filter in Threat Explorer, do the following steps:
+
+1. After you create the filter as described in the previous section, select **Save query** \> :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query**.
+
+2. In the **Save query** flyout that opens, configure the following options:
+   - **Query name**: Enter a unique name for the query.
+   - Select one of the following options:
+     - **Exact dates**: Select a start date and end date in the boxes. The oldest start date that you can select is 30 days before today. The newest end date that you can select is today.
+     - **Relative dates**: Select the number of days in the **Show last nn days when search is run**. The default value is 7, but you can select 1 to 30.
+   - **Track query**: By default, this option isn't selected.
+
+   When you're finished in the **Save query** flyout, select **Save**, and then select **OK** in the confirmation dialog.
+
+:::image type="content" source="../../media/te-rtd-query-save.png" alt-text="The Save query flyout in Threat Explorer in the Defender portal." lightbox="../../media/te-rtd-query-save.png":::
+
+Where to open/use query???
 
 **Save query as**???
 
 **Saved query settings**???
-
-### Malware view in Threat Explorer and Real-time detections
-
-### Phish view in Threat Explorer and Real-time detections
-
-### Campaigns view in Threat Explorer
-
-### Content malware view in Threat Explorer and Real-time detections
-
-### URL clicks view in Threat Explorer
-
-### Build queries in Threat Explorer and Real-time detections
 
 ## Differences between Explorer and Real-time detections
 
