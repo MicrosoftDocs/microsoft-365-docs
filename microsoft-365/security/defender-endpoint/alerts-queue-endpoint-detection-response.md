@@ -4,19 +4,17 @@ ms.reviewer:
 description: View and manage the alerts surfaced in Microsoft Defender XDR
 keywords:
 ms.service: defender-endpoint
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: mjcapasiosulliras
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
 - mde-edr
 ms.topic: conceptual
-ms.date: 09/03/2018
+ms.date: 02/15/2024
 ms.subservice: edr
 search.appverid: met150
 ---
