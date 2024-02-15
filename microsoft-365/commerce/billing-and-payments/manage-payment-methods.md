@@ -43,9 +43,9 @@ When you buy Microsoft business products or services, you can use an existing pa
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to dp the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to dp the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
 - If you have a Microsoft Online Subscription Agreement (MOSA), you must be a global or billing admin to do the tasks in this article. For more information, see [[About admin roles]](../../admin/add-users/about-admin-roles.md).
-- If you have an MCA billing account type and you’re a billing profile owner or contributor, you can use the billing profile that's backed by a credit or debit card or invoice payment to make purchases or pay bills. If you're a billing invoice manager, you can only use a billing profile to pay bills. To learn more about billing profiles and roles, see [Understand your Microsoft business billing profile](manage-billing-profiles.md).
+- If you have an MCA billing account type and you’re a billing profile owner or contributor, you can use the billing profile that's backed by a credit or debit card or invoice payment to make purchases or pay bills. If you're a billing invoice manager, you can only use a billing profile to pay bills. To learn more about billing profiles and roles, see [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
 
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a billing account owner or global admin.
@@ -178,5 +178,5 @@ If a payment method is attached to any subscriptions or billing profiles, first 
 ## Related content
 
 [Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article) \
-[Understand your Microsoft business billing profile](manage-billing-profiles.md) (article) \
+[Manage your Microsoft business billing profiles](manage-billing-profiles.md) (article) \
 [Change your billing frequency](change-payment-frequency.md) (article)

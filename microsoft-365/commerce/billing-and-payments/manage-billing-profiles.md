@@ -31,7 +31,7 @@ A billing profile contains payment method and invoice information associated wit
 
 > [!IMPORTANT]
 >
-> This article only applies to customers with a Microsoft Customer Agreement (MCA) billing account type. Find out what type of billing account you have.
+> This article only applies to customers with a Microsoft Customer Agreement (MCA) billing account type.
 
 ## Before you begin
 
@@ -52,7 +52,7 @@ A billing profile contains payment method and invoice information associated wit
 
 The billing profile details page contains details like the billing profile name, status, the associated billing account, and address information. The details page also contains information about the invoice, billing notification settings, and payment method used to pay for the products and services that you buy. You can update your billing profile to change certain things like the profile name, the Bill-to address, and invoice and billing notification settings.
 
-The following table lists the terms shown on the **Billing profile** details page.
+The following table lists the terms shown on the billing profile details page.
 
 |Field name            |Description |
 |----------------------|------------|
@@ -62,7 +62,7 @@ The following table lists the terms shown on the **Billing profile** details pag
 |Billing account       |The billing account that’s associated with the billing profile. To view details about the billing account, select the link. For more information about billing accounts, see [Understand billing accounts](../manage-billing-accounts.md). |
 |My role               |A read-only field that shows your billing profile role. |
 |Bill-to address       |Contains the contact name, address, email address, and phone number for the billing profile. To make changes to the address details, select **Edit**. |
-|Get invoices in email statements   |A setting you can turn on to receive the invoice as an email attachment. The default setting is **On**. To turn this setting on or off, select Edit settings. |
+|Get invoices in email statements   |A setting you can turn on to receive the invoice as an email attachment. The default setting is **On**. To turn this setting on or off, select **Edit settings**. |
 |Additional recipients | The list of people who also receive a copy of the invoice by email. |
 |Billing notification settings |A link to the **Billing notifications** page where you can edit notification settings, edit the organization email address, and manage the list of admins who receive billing notifications. To make changes, select **Edit settings**. |
 |Invoice currency      |The currency used for your invoice, based on the **Sold-to** country or region of the billing account. |
@@ -71,7 +71,7 @@ The following table lists the terms shown on the **Billing profile** details pag
 
 ## Add a billing profile
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, then go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
 2. On the **Overview** tab, select a billing account.
 3. On the billing account details page, select the **Billing profiles** tab, then select **Add a billing profile.**
 4. On the **Basic information** page, enter a name for the new billing profile, then select **Next**.
@@ -103,7 +103,7 @@ Billing profile roles have permissions to control purchases, and view and manage
 
 ## View users and their billing profile roles
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, then go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
 2. On the **Overview** tab, select a billing account.
 3. On the billing account details page, select the **Billing profiles** tab.
 4. Selec a billing profile name.
@@ -115,7 +115,7 @@ Billing profile roles have permissions to control purchases, and view and manage
 >
 > You can only assign billing profile roles to users in your organization.
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, then go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
 2. On the **Overview** tab, select a billing account.
 3. On the billing account details page, select the **Billing profiles** tab.
 4. Select a billing profile name to view its details page, then select the **Billing profile roles** tab.
@@ -127,7 +127,7 @@ Billing profile roles have permissions to control purchases, and view and manage
 
 You can view the roles assigned to users for a billing account and related billing profiles across associated tenants.
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, then go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
 2. On the **Overview** tab, select a billing account.
 3. On the billing account details page, select the **Billing profiles** tab.
 4. Select a billing profile name to view its details page, then select the **Billing profile roles** tab.
