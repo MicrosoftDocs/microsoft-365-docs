@@ -1,16 +1,13 @@
 ---
 title: Understand the client analyzer HTML report
 description: Learn how to analyze the Microsoft Defender for Endpoint Client Analyzer HTML report
-keywords: client analyzer report, html report, client analyzer
 ms.service: defender-endpoint
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -18,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 03/23/2021
+ms.date: 02/15/2024
 ---
 
 # Understand the client analyzer HTML report
