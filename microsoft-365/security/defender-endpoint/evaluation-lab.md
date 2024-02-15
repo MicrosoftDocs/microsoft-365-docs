@@ -19,6 +19,9 @@ ms.date: 11/02/2023
 
 # Microsoft Defender for Endpoint evaluation lab
 
+   > [!IMPORTANT]
+   > **The Microsoft Defender for Endpoint evaluation lab has been deprecated as of January, 2024**
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
