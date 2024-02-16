@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Microsoft Defender for Endpoint live response issues
-description: Troubleshoot issues that might arise when using live response in Microsoft Defender for Endpoint
+description: Troubleshoot issues that might arise when using live response in Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
@@ -30,9 +30,9 @@ ms.date: 02/16/2024
 
 This page provides detailed steps to troubleshoot live response issues.
 
-## File cannot be accessed during live response sessions
+## File can't be accessed during live response sessions
 
-If while trying to take an action during a live response session, you encounter an error message stating that the file can't be accessed, you need to use the steps below to address the issue.
+If while trying to take an action during a live response session, you encounter an error message stating that the file can't be accessed, take the following steps to address the issue.
 
 1. Copy the following script code snippet and save it as a PS1 file:
 
@@ -58,12 +58,13 @@ If while trying to take an action during a live response session, you encounter 
 
 ## Slow live response sessions or delays during initial connections
 
-Live response leverages Defender for Endpoint sensor registration with WNS service in Windows. If you're having connectivity issues with live response, confirm the following details:
+Live response uses Defender for Endpoint sensor registration with WNS service in Windows. If you're having connectivity issues with live response, confirm the following details:
 
 1. WpnService (Windows Push Notifications System Service) isn't disabled.
-2. WpnService connectivity with WNS cloud isn't disabled via group policy or MDM setting. ['Turn off notifications network usage'](/windows/client-management/mdm/policy-csp-notifications) shouldn't be set to '1'.
 
-Refer to the articles below to fully understand the WpnService service behavior and requirements:
+2. WpnService connectivity with WNS cloud isn't disabled via group policy or MDM setting. ['Turn off notifications network usage'](/windows/client-management/mdm/policy-csp-notifications) shouldn't be set to `1`.
+
+Refer to the following articles to fully understand the WpnService service behavior and requirements:
 
 - [Windows Push Notification Services (WNS) overview](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
 - [Enterprise Firewall and Proxy Configurations to Support WNS Traffic](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
