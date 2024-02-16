@@ -48,7 +48,7 @@ This deployment collection provides information about the following aspects of a
 - attack surface reduction rules advanced hunting
 - attack surface reduction rules event viewer
 
-## ASR rules deployment steps
+## Attack surface reduction rules deployment steps
 
 As with any new, wide-scale implementation, which could potentially impact your line-of-business operations, it's important to be methodical in your planning and implementation. Careful planning and deployment of attack surface reduction rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize attack surface reduction rules carefully.  
 
@@ -67,7 +67,7 @@ Typically, you can enable the standard protection rules with minimal-to-no notic
 > [!NOTE]
 > For customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules, Microsoft advises running the HIPS solution alongside attack surface reduction rules deployment until the moment you shift from Audit mode to Block mode. Keep in mind that you must reach out to your non-Microsoft antivirus provider for exclusion recommendations.
 
-## Before you begin testing or enabling ASR rules
+## Before you begin testing or enabling attack surface reduction rules
 
 During your initial preparation, it's vital to understand the capabilities of the systems that you put in place. Understanding the capabilities help you determine which attack surface reduction rules are most important for protecting your organization. Additionally, there are several prerequisites, which you must attend to in preparation of your attack surface reduction deployment.
 
@@ -78,7 +78,7 @@ Before you start, review [Overview of attack surface reduction](overview-attack-
 
 Attack surface reduction rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document goes into more detail on deploying attack surface reduction rules effectively to stop advanced threats like human-operated ransomware and other threats.
 
-### ASR rules list by category
+### Attac surface reduction rules list by category
 
 The following table shows attack surface reduction rules by category:
 
