@@ -93,11 +93,11 @@ sections:
           GPresult.exe /h gpresult.html
           ```
 
-          This will generate a report located at *./gpresult.html*. Open this file and you might see the following results, depending on how Microsoft Defender Antivirus was turned off.
+          This generates a report located at *./gpresult.html*. Open this file and you might see the following results, depending on how Microsoft Defender Antivirus was turned off.
 
           ##### Group policy results
 
-          ##### If security settings are implemented via group policy (GPO) at the domain or local level, or though System center configuration manager (SCCM)
+          ##### If security settings are implemented via group policy (GPO) at the domain or local level, or through System center configuration manager (SCCM)
 
           Within the GPResults report, under the heading, *Windows Components/Microsoft Defender Antivirus*, you might see something like the following entry, indicating that Microsoft Defender Antivirus is turned off.
 
@@ -132,18 +132,18 @@ sections:
 
           ###### If security settings are set in Windows or your Windows Server image
 
-          Your imagining admin might have set the security policy, **[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)**, locally via *GPEdit.exe*, *LGPO.exe*, or by modifying the registry in their task sequence. You can [configure a Trusted Image Identifier](/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender) for Microsoft Defender Antivirus.
+          Your imagining admin might have set the security policy, [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware), locally via *GPEdit.exe*, *LGPO.exe*, or by modifying the registry in their task sequence. You can [configure a Trusted Image Identifier](/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender) for Microsoft Defender Antivirus.
 
           ### Turn Microsoft Defender Antivirus back on
 
-          Microsoft Defender Antivirus will automatically turn on if no other antivirus is currently active. You'll need to turn the non-Microsoft antivirus completely off to ensure Microsoft Defender Antivirus can run with full functionality.
+          Microsoft Defender Antivirus automatically turns on if no other antivirus is currently active. You need to turn the non-Microsoft antivirus off to ensure Microsoft Defender Antivirus can run with full functionality.
 
           > [!WARNING]
-          > Solutions suggesting that you edit the *Windows Defender* start values for *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc*, and *windefend* in  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services are unsupported, and might force you to re-image your system.
+          > Solutions suggesting that you edit the *Windows Defender* start values for *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc*, and *windefend* in  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services are unsupported, and might force you to reimage your system.
 
-          Passive mode is available if you start using Microsoft Defender for Endpoint and a non-Microsoft antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender Antivirus to scan files and update itself, but it will not remediate threats. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) is not available under passive mode, unless [Endpoint data loss prevention (DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) is deployed.
+          Passive mode is available if you start using Microsoft Defender for Endpoint and a non-Microsoft antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender Antivirus to scan files and update itself, but it doesn't remediate threats in passive mode. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) isn't available under passive mode, unless [Endpoint data loss prevention (DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) is deployed.
 
-          Another feature, known as [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), is available to end-users when Microsoft Defender Antivirus is set to automatically turn off. This feature allows Microsoft Defender Antivirus to scan files periodically alongside a non-Microsoft antivirus, using a limited number of detections.
+          Another feature, known as [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), is available to end-users when Microsoft Defender Antivirus is set to turn off automatically. This feature allows Microsoft Defender Antivirus to scan files periodically alongside a non-Microsoft antivirus, using a limited number of detections.
 
           > [!IMPORTANT]
           > Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced as compared to active mode.
