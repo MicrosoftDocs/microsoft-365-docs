@@ -105,12 +105,12 @@ The below table provides a mapping between the SIEM API to the Microsoft Defende
 | InternalIPV6List | X | Not supported |
 | FileHash |->| Use sha1 or sha256 |
 | DeviceID |->| evidence/deviceEvidence: mdeDeviceId |
-| MachineGroup |->| evidence/deviceEvidence: rbacGroupName |
-| Description |->| description |
-| DeviceCreatedMachineTags |->| evidence: tags [] (for deviceEvidence) |
-| CloudCreatedMachineTags |->| evidence: tags [] (for deviceEvidence) |
-| CommandLine | -> | evidence/processEvidence: processCommandLine |
-| IncidentLinkToWDATP |->| incidentWebUrl |
+| `MachineGroup` |->| `evidence/deviceEvidence: rbacGroupName` |
+| `Description` |->| `description` |
+| `DeviceCreatedMachineTags` |->| `evidence: tags [] (for deviceEvidence)` |
+| `CloudCreatedMachineTags` |->| `evidence: tags [] (for deviceEvidence)` |
+| `CommandLine` | -> | `evidence/processEvidence: processCommandLine` |
+| `IncidentLinkToWDATP` |->| `incidentWebUrl` |
 | `ReportId` | X | Obsolete (Defender for Endpoint alerts are atomic/complete that are updatable, while the SIEM API were immutable records of detections) |
 | `LinkToMTP` |->| `alertWebUrl` |
 | `IncidentLinkToMTP` |->| `incidentWebUrl` |
