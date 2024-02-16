@@ -62,7 +62,7 @@ We recommended that you enable the following three _standard protection rules_. 
 - [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 - [Block persistence through Windows Management Instrumentation (WMI) event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
-Typically, you can enable the standard protection rules with minimal-to-no noticeable impact to the end user. For an easy method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
+Typically, you can enable the standard protection rules with minimal-to-no noticeable impact to the end user. For an easy method to enable the standard protection rules, see [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
 
 > [!NOTE]
 > For customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules, Microsoft advises running the HIPS solution alongside attack surface reduction rules deployment until the moment you shift from Audit mode to Block mode. Keep in mind that you must reach out to your non-Microsoft antivirus provider for exclusion recommendations.
@@ -74,7 +74,7 @@ During your initial preparation, it's vital to understand the capabilities of th
 > [!IMPORTANT]
 > This guide provides images and examples to help you decide how to configure attack surface reduction rules; these images and examples might not reflect the best configuration options for your environment.
 
-Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of attack surface reduction rules; see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md). While you're familiarizing yourself with the attack surface reduction rules set, take note of the per-rule GUID mappings; see: [Attack surface reduction rule to GUID matrix](attack-surface-reduction-rules-reference.md#asr-rule-to-guid-matrix).
+Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of attack surface reduction rules; see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md). While you're familiarizing yourself with the attack surface reduction rules set, take note of the per-rule GUID mappings; see [Attack surface reduction rule to GUID matrix](attack-surface-reduction-rules-reference.md#asr-rule-to-guid-matrix).
 
 Attack surface reduction rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document goes into more detail on deploying attack surface reduction rules effectively to stop advanced threats like human-operated ransomware and other threats.
 
@@ -82,18 +82,16 @@ Attack surface reduction rules are only one capability of the attack surface red
 
 The following table shows attack surface reduction rules by category:
 
-<br/>
-
 | Polymorphic threats | Lateral movement & credential theft | Productivity apps rules |  Email rules | Script rules | Misc rules |
 |:---|:---|:---|:---|:---|:---|
-| Block executable files from running unless they meet a prevalence (1000 machines), age, or trusted list criteria | Block process creations originating from PSExec and WMI commands | Block Office apps from creating executable content | Block executable content from email client and webmail | Block obfuscated JS/VBS/PS/macro code | Block abuse of exploited vulnerable signed drivers <sup>[[1](#fn1)]<sup></sup>  |
+| Block executable files from running unless they meet a prevalence (1,000 machines), age, or trusted list criteria | Block process creations originating from PSExec and WMI commands | Block Office apps from creating executable content | Block executable content from email client and webmail | Block obfuscated JS/VBS/PS/macro code | Block abuse of exploited vulnerable signed drivers <sup>[[1](#fn1)]<sup></sup>  |
 | Block untrusted and unsigned processes that run from USB | Block credential stealing from the Windows local security authority subsystem (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Block Office apps from creating child processes |  Block only Office communication applications from creating child processes | Block JS/VBS from launching downloaded executable content | |
 | Use advanced protection against ransomware | Block persistence through WMI event subscription | Block Office apps from injecting code into other processes | Block Office communication apps from creating child processes | | |
 | | | Block Adobe Reader from creating child processes | | | |
 
 (<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ is now available under **Endpoint Security** > **Attack Surface Reduction**.
 
-(<a id="fn1">2</a>) Some attack surface reduction rules generate considerable noise, but don't block functionality. For example, if you're updating Chrome, Chrome accesses **lsass.exe**; passwords are stored in **lsass** on the device. However, Chrome shouldn't be accessing local device **lsass.exe**. If you enable the rule to block access to **lsass**, you see many events. Those events are good events because the software update process shouldn't access lsass.exe. Using this rule blocks Chrome updates from accessing **lsass**, but won't block Chrome from updating. This is also true of other applications that make unnecessary calls to **lsass.exe**. The _block access to lsass_ rule will block unnecessary calls to **lsass**, but doesn't block the application from running.
+(<a id="fn1">2</a>) Some attack surface reduction rules generate considerable noise, but don't block functionality. For example, if you're updating Chrome, Chrome accesses **lsass.exe**; passwords are stored in **lsass** on the device. However, Chrome shouldn't be accessing local device **lsass.exe**. If you enable the rule to block access to **lsass**, you see many events. Those events are good events because the software update process shouldn't access lsass.exe. Using this rule blocks Chrome updates from accessing **lsass**, but won't block Chrome from updating. This is also true of other applications that make unnecessary calls to **lsass.exe**. The _block access to lsass_ rule blocks unnecessary calls to **lsass**, but doesn't block the application from running.
 
 ### Attack surface reduction infrastructure requirements
 
