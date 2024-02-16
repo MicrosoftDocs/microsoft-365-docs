@@ -1,5 +1,5 @@
 ---
-title: Overview of team owner, schedule owner, and team member roles in Shifts
+title: Use roles to define your frontline managers and workers in Shifts
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
@@ -12,7 +12,7 @@ searchScope:
   - Microsoft Teams
   - Microsoft Cloud for Healthcare
   - Microsoft Cloud for Retail
-description: Learn how to use roles in Shifts and Teams to define your frontline managers and workers in Shifts. 
+description: Learn how to use team owner and team member roles in Teams and the schedule owner role in Shifts to define your frontline managers and workers in Shifts. 
 f1.keywords:
 - NOCSH
 ms.localizationpriority: high
@@ -34,8 +34,8 @@ ms.date:
 
 Alternative titles:
 - Use roles to define your frontline managers and workers in Shifts
+- Overview of team owner, schedule owner, and team member roles in Shifts
 - Frontline manager and frontline worker roles in Shifts
-- Roles in Shifts
 
 ## Overview
 
@@ -135,6 +135,8 @@ As an admin, you use policies to assign schedule owner roles in Shifts for your 
     > When a policy is assigned to a group, all members of that group become schedule owners across every Shifts schedule they belong to. Say, for example, adelev@contoso.com is part of the group to which we assigned the ShiftsScheduleOwners policy. This means that adelev@contoso.com is a frontline manager (with the schedule owner role) in Shifts in every team they're a member of.
 
     Group membership can be static or dynamic. Learn more about [groups in Microsoft Entra ID](/entra/fundamentals/concept-learn-about-groups) and [how to manage Microsoft Entra groups and group membership](/entra/fundamentals/how-to-manage-groups).
+
+After you assign the policy, it can take up to 12 hours for the policy to take effect for your users. The schedule owner policy doesn't show up as one of the listed policies for a user in the Teams admin center.
 
 See also:
 
