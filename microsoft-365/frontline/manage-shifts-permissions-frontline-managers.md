@@ -145,6 +145,7 @@ This example shows the permissions of the schedule owner role for the Contoso Ch
 ```http
 PATCH https://graph.microsoft.com/beta/teams/fb963991-69a8-4d2c-8465-cd8e374891c4/schedule/shiftsRoleDefinitions/scheduleowner
 Content-Type: application/json
+
 {
 "shiftsRolePermissions": [
   {
