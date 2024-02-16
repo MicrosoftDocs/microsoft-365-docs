@@ -1,17 +1,13 @@
 ---
 title: Protect your organization against web threats
 description: Learn about web protection in Microsoft Defender for Endpoint and how it can protect your organization.
-keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 08/22/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
