@@ -83,7 +83,7 @@ sections:
 
           While checking the app, you might see that *Microsoft Defender Antivirus Service* is set to manual, but when you try to start this service manually, you get a warning. The warning might say, *The Microsoft Defender Antivirus Service service on Local Computer started and then stopped. Some services stop automatically if they aren't in use by other services or programs.*
 
-          This issue indicates that Microsoft Defender Antivirus has been automatically turned off to preserve compatibility with a non-Microsoft antivirus.
+          This issue indicates that Microsoft Defender Antivirus was automatically turned off to preserve compatibility with a non-Microsoft antivirus.
 
           #### Generate a detailed report
 
@@ -93,7 +93,7 @@ sections:
           GPresult.exe /h gpresult.html
           ```
 
-          This generates a report located at *./gpresult.html*. Open this file and you might see the following results, depending on how Microsoft Defender Antivirus was turned off.
+          This command generates a report located at *./gpresult.html*. Open this file and you might see the following results, depending on how Microsoft Defender Antivirus was turned off.
 
           ##### Group policy results
 
