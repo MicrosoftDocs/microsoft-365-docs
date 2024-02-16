@@ -34,8 +34,8 @@ Web protection in Microsoft Defender for Endpoint lets you efficiently investiga
 
 Microsoft Defender for Endpoint generates the following [alerts](manage-alerts.md) for malicious or suspicious web activity:
 
-- **Suspicious connection blocked by network protection**: This alert is generated when an attempt to access a malicious website or a website in your custom indicator list is *stopped* by network protection in *block* mode
-- **Suspicious connection detected by network protection**: This alert is generated when an attempt to access a malicious website or a website in your custom indicator list is detected by network protection in *audit only* mode
+- **Suspicious connection blocked by network protection**: This alert is generated when network protection (in block mode) stops an attempt to access a malicious website or a website in your custom indicator list.
+- **Suspicious connection detected by network protection**: This alert is generated when network protection (in audit mode) detects an attempt to access a malicious website or a website in your custom indicator list.
 
 Each alert provides the following information:
 
