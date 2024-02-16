@@ -32,7 +32,7 @@ ms.date: 07/18/2023
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> is the new interface for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft Defender portal is intended for security admins and security operations teams to better manage and protect their organization. Visit the Microsoft Defender portal at<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a>.
 
-In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, we offer you a complete look at the current attack surface reduction rules configuration and events in your estate. Note that your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
+In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, we offer you a complete look at the current attack surface reduction rules configuration and events in your estate. Your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
 Here's a screenshot from the Microsoft Defender portal (under **Reports** \> **Devices** \> **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual attack surface reduction rule configuration.
 
 :::image type="content" source="images/asrrulesnew.png" alt-text="The attack surface reduction rules page" lightbox="images/asrrulesnew.png":::
@@ -45,7 +45,7 @@ Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool tha
 
 Through advanced hunting, it's possible to extract attack surface reduction rules information, create reports, and get in-depth information on the context of a given attack surface reduction rule audit or block event.
 
-attack surface reduction rules events are available to be queried from the DeviceEvents table in the advanced hunting section of the Microsoft Defender XDR. For example, a simple query such as the one below can report all the events that have attack surface reduction rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the attack surface reduction rule.
+Attack surface reduction rules events are available to be queried from the DeviceEvents table in the advanced hunting section of the Microsoft Defender XDR. For example, a simple query such as the one below can report all the events that have attack surface reduction rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it is the actual codename of the attack surface reduction rule.
 
 ```kusto
 DeviceEvents
@@ -60,9 +60,9 @@ With advanced hunting you can shape the queries to your liking, so that you can 
 
 ## Microsoft Defender for Endpoint machine timeline
 
-An alternative to advanced hunting, but with a narrower scope, is the Microsoft Defender for Endpoint machine timeline. You can view all the collected events of a device, for the past six months, in the Microsoft Defender XDR, by going to the Machines list, select a given machine, and then click on the Timeline tab.
+An alternative to advanced hunting, but with a narrower scope, is the Microsoft Defender for Endpoint machine timeline. You can view all the collected events of a device, for the past six months, in the Microsoft Defender XDR, by going to the Machines list, select a given machine, and then select on the Timeline tab.
 
-Pictured below is a screenshot of the Timeline view of these events on a given endpoint. From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
+The following screenshot shows the Timeline view of these events on a given endpoint. From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
 
 :::image type="content" source="images/mic-sec-def-timelinenew.png" alt-text="The Microsoft Defender XDR timeline" lightbox="images/mic-sec-def-timelinenew.png":::
 
