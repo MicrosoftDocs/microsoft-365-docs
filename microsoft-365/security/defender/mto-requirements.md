@@ -1,6 +1,6 @@
 ---
-title: Set up multi-tenant management in Microsoft Defender XDR
-description: Learn what steps you need to take to get started with multi-tenant management in Microsoft Defender XDR
+title: Set up multitenant management in Microsoft Defender XDR
+description: Learn what steps you need to take to get started with multitenant management in Microsoft Defender XDR.
 ms.service: defender-xdr
 ms.author: siosulli
 author: siosulli
@@ -76,12 +76,12 @@ In order to view and manage the data you have access to in multi-tenant manageme
 
 The first time you use multi-tenant management in Microsoft Defender XDR, you need setup the tenants you want to view and manage. To get started:
 
-1. Sign in to [Multi-tenant management in Microsoft Defender XDR](https://mto.security.microsoft.com/).
+1. Sign in to [Multi-tenant management in Microsoft Defender XDR](https://mto.security.microsoft.com/)
 2. Select **Add tenants**.
 
    :::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Screenshot of the Microsoft Defender XDR multi-tenant portal setup screen" lightbox="../../media/defender/mto-add-tenants.png":::
 
-3. Choose the tenants you want to manage and select **Add**.
+3. Choose the tenants you want to manage and select **Add**
 
 >[!Note]
 > The multi-tenant view in Microsoft Defender XDR currently has a limit of 50 target tenants.
