@@ -91,6 +91,10 @@ By default, the view is filtered by data from yesterday and today. To change the
 
 :::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="The date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
 
+The date/time filter and the data filters (queries) that you configure affect the data that's shown in the chart and details area. The filterable properties are listed in the table in the next section.
+
+### Filterable properties in the All email view in Threat Explorer
+
 By default, no filters (queries) are applied to the data. The steps to create filters are described in the [Filters in Threat Explorer and Real-time detections](#data-filters-in-threat-explorer-and-real-time-detections) section later in this article.
 
 The filterable properties that are available in the **Delivery action** box in the **All email** view are described in the following table:
@@ -163,24 +167,21 @@ The filterable properties that are available in the **Delivery action** box in t
 |DMARC|Select one or more values: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|
 |Composite|Select one or more values: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
 
-The date/time filter and the data filters (queries) that you configure affect the data that's shown in the chart and details table. Use the following options to further organize the data:
+### Pivots for the chart in the All email view in Threat Explorer
 
-- **Chart pivots**: Select an available value from **Select pivot for histogram chart** to change how the filtered or unfiltered chart data is organized and displayed.
-- **Details table views**: Select an available view tab for the details table to change how the details table is organized and displayed.
+The chart has a default view, but you can select a value from **Select pivot for histogram chart** to change how the filtered or unfiltered chart data is organized and displayed.
 
-These options are described in the following subsections.
+The available chart pivots are described in the following subsections.
 
 > [!TIP]
-> Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export chart data** to export the filtered or unfiltered chart data to a CSV file.
->
-> Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the filtered or unfiltered details table data to a CSV file.
+> Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export chart data** in each pivot to export the filtered or unfiltered chart data to a CSV file.
 >
 > To remove the chart from the page (which maximizes the size of the details area), do either of the following steps:
 >
 > - Select :::image type="icon" source="../../media/m365-cc-sc-chart-view-icon.png" border="false"::: **Chart View** \> :::image type="icon" source="../../media/m365-cc-sc-list-view-icon.png" border="false"::: **List View** at the top of the page.
 > - Select :::image type="icon" source="../../media/m365-cc-sc-show-list-view-icon.png" border="false"::: **Show list view** between the chart and the views for the details table.
 
-### Sender domain chart pivot in the All email view in Threat Explorer
+#### Sender domain chart pivot in the All email view in Threat Explorer
 
 The **Sender domain** pivot organizes the chart by the domains in messages for the specified date/time range and data filters.
 
@@ -188,7 +189,7 @@ The **Sender domain** pivot organizes the chart by the domains in messages for t
 
 If you hover over a data point in the chart, the count for each domain action is shown.
 
-### Sender IP chart pivot in the All email view in Threat Explorer
+#### Sender IP chart pivot in the All email view in Threat Explorer
 
 The **Sender IP** pivot organizes the chart by the source IP addresses of messages for the specified date/time range and data filters.
 
@@ -196,7 +197,7 @@ The **Sender IP** pivot organizes the chart by the source IP addresses of messag
 
 If you hover over a data point in the chart, the count for each sender IP address is shown.
 
-### Delivery action chart pivot in the All email view in Threat Explorer
+#### Delivery action chart pivot in the All email view in Threat Explorer
 
 Although this chart pivot doesn't look like it's selected, **Delivery action** is the default chart pivot in the **All email** view.
 
@@ -206,7 +207,7 @@ The **Delivery action** pivot organizes the chart by the actions taken on messag
 
 If you hover over a data point in the chart, the count for each delivery action is shown.
 
-### Detection technology chart pivot in the All email view in Threat Explorer
+#### Detection technology chart pivot in the All email view in Threat Explorer
 
 The **Detection technology** pivot organizes the chart by the detection technology used on messages for the specified date/time range and data filters.
 
@@ -214,7 +215,7 @@ The **Detection technology** pivot organizes the chart by the detection technolo
 
 If you hover over a data point in the chart, the count for each detection technology is shown.
 
-### Full URL chart pivot in the All email view in Threat Explorer
+#### Full URL chart pivot in the All email view in Threat Explorer
 
 The **Full URL** pivot organizes the chart by the full URLs in messages for the specified date/time range and data filters.
 
@@ -222,7 +223,7 @@ The **Full URL** pivot organizes the chart by the full URLs in messages for the 
 
 If you hover over a data point in the chart, the count for each full URL is shown.
 
-### URL domain chart pivot in the All email view in Threat Explorer
+#### URL domain chart pivot in the All email view in Threat Explorer
 
 The **URL domain** pivot organizes the chart by the domains in URLs in messages for the specified date/time range and data filters.
 
@@ -230,7 +231,7 @@ The **URL domain** pivot organizes the chart by the domains in URLs in messages 
 
 If you hover over a data point in the chart, the count for each URL domain is shown.
 
-### URL domain and path chart pivot in the All email view in Threat Explorer
+#### URL domain and path chart pivot in the All email view in Threat Explorer
 
 The **URL domain and path** pivot organizes the chart by the domains and paths in URLs in messages for the specified date/time range and data filters.
 
@@ -238,7 +239,21 @@ The **URL domain and path** pivot organizes the chart by the domains and paths i
 
 If you hover over a data point in the chart, the count for each URL domain and path is shown.
 
-### Email view for the details area in the All email view in Threat Explorer
+### Views for the details area in the All email view in Threat Explorer
+
+The details area of the **All email** view has several tabs (views) to change how the details table is organized and displayed. Typically, the details area shows data in tables, but graphs or other visual elements are also used.
+
+The available views for the details area are described in the following subsections.
+
+> [!TIP]
+> Where available, use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the filtered or unfiltered details table data to a CSV file.
+>
+> To remove the chart from the page (which maximizes the size of the details area), do either of the following steps:
+>
+> - Select :::image type="icon" source="../../media/m365-cc-sc-chart-view-icon.png" border="false"::: **Chart View** \> :::image type="icon" source="../../media/m365-cc-sc-list-view-icon.png" border="false"::: **List View** at the top of the page.
+> - Select :::image type="icon" source="../../media/m365-cc-sc-show-list-view-icon.png" border="false"::: **Show list view** between the chart and the views for the details table.
+
+#### Email view for the details area in the All email view in Threat Explorer
 
 **Email** is the default view for the details area in the **All email** view.
 
@@ -289,7 +304,7 @@ When you select one or more entries from the list by selecting the check box nex
 
 In the **Subject** value for the entry, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open in new window** action is available. This action opens the message in the Email entity page.
 
-#### Subject details
+##### Subject details
 
 When you select an entry by clicking on the **Subject** value, a details flyout opens with the following information:
 
@@ -350,7 +365,7 @@ When you select an entry by clicking on the **Subject** value, a details flyout 
 
 :::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="The details tab after you select a subject in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
 
-#### Recipient details
+##### Recipient details
 
 When you select an entry by clicking on the **Recipient** value, a details flyout opens with the following information:
 
@@ -368,7 +383,7 @@ When you select an entry by clicking on the **Recipient** value, a details flyou
     - **Recent alerts** section
     - **Recent activity** section.
 
-### URL clicks view for the details area in the All email view in Threat Explorer
+#### URL clicks view for the details area in the All email view in Threat Explorer
 
 The **URL clicks** view shows a chart that can be organized using pivots as described in the following subsections.
 
@@ -377,7 +392,7 @@ The **URL clicks** view shows a chart that can be organized using pivots as desc
 > [!TIP]
 > Each pivot in **URL clicks** view has a :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all clicks** action that opens the [URL clicks view in Threat Explorer](#url-clicks-view-in-threat-explorer) in a new tab.
 
-#### URL domain pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+##### URL domain pivot for the URL clicks view for the details area in the All email view in Threat Explorer
 
 Although this chart pivot doesn't appear to be selected, **URL domain** is the default chart pivot in the **URL clicks** view.
 
@@ -387,7 +402,7 @@ The **URL domain** pivot shows the different domains in URLs in email messages f
 
 If you hover over a data point in the chart, the count for each domain is shown.
 
-#### Click verdict pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+##### Click verdict pivot for the URL clicks view for the details area in the All email view in Threat Explorer
 
 The **Click verdict** pivot shows the different verdicts for clicked URLs in email messages for the specified date/time range and data filters.
 
@@ -395,7 +410,7 @@ The **Click verdict** pivot shows the different verdicts for clicked URLs in ema
 
 If you hover over a data point in the chart, the count for each verdict is shown.
 
-#### URL pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+##### URL pivot for the URL clicks view for the details area in the All email view in Threat Explorer
 
 The **URL** pivot shows the different URLs that were clicked in email messages for the specified date/time range and data filters.
 
@@ -403,7 +418,7 @@ The **URL** pivot shows the different URLs that were clicked in email messages f
 
 If you hover over a data point in the chart, the count for each URL is shown.
 
-#### URL domain and path pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+##### URL domain and path pivot for the URL clicks view for the details area in the All email view in Threat Explorer
 
 The **URL domain and path** pivot shows the different domains and file paths of URLs that were clicked in email messages for the specified date/time range and data filters.
 
@@ -411,7 +426,7 @@ The **URL domain and path** pivot shows the different domains and file paths of 
 
 If you hover over a data point in the chart, the count for each domain and file path is shown.
 
-### Top URLs view for the details area in the All email view in Threat Explorer
+#### Top URLs view for the details area in the All email view in Threat Explorer
 
 The **Top URLs** view shows a details table. You can sort the entries by clicking on an available column header:
 
@@ -420,7 +435,7 @@ The **Top URLs** view shows a details table. You can sort the entries by clickin
 - **Messages junked**
 - **Messages delivered**
 
-#### Top URL details
+##### Top URL details
 
 When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens with the following information:
 
@@ -470,7 +485,7 @@ When you select an entry by clicking anywhere in the row other than the check bo
   
 :::image type="content" source="../../media/te-rtd-all-email-view-top-urls-tab-details-area-url-details-flyout.png" alt-text="The details flyout after selecting an entry in the Top URLs tab in the All email view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-top-urls-tab-details-area-url-details-flyout.png":::
 
-### Top clicks view for the details area in the All email view in Threat Explorer
+#### Top clicks view for the details area in the All email view in Threat Explorer
 
 The **Top clicks** view shows a details table. You can sort the entries by clicking on an available column header:
 
@@ -495,7 +510,7 @@ The **Top clicks** view shows a details table. You can sort the entries by click
 
 When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The flyout contains the same information as described in the [details fylout for the Top URLs tab](#top-url-details).
 
-### Top targeted users view for the details area in the All email view in Threat Explorer
+#### Top targeted users view for the details area in the All email view in Threat Explorer
 
 The **Top targeted users** view shows a details table with the following columns:
 
@@ -505,11 +520,11 @@ The **Top targeted users** view shows a details table with the following columns
   - The **All email** view is selected and filtered by the top target user's email address.
   - In the details area, the **Email** view is selected.
 
-### Email origin view for the details area in the All email view in Threat Explorer
+#### Email origin view for the details area in the All email view in Threat Explorer
 
 The **Email origin** view shows message sources on a map of the world.
 
-### Campaign view for the details area in the All email view in Threat Explorer
+#### Campaign view for the details area in the All email view in Threat Explorer
 
 The **Campaign** view shows a details table. You can sort the entries by clicking on an available column header.
 
