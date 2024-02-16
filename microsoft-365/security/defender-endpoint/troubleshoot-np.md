@@ -56,7 +56,7 @@ Network protection works on devices with the following conditions:
 
 ## Use audit mode
 
-You can enable network protection in audit mode and then visit a website that's designed to demo the feature. All website connections are allowed by network protection but an event is logged to indicate any connection that would were blocked if network protection was enabled.
+You can enable network protection in audit mode and then visit a website that's designed to demo the feature. All website connections are allowed by network protection but an event is logged to indicate any connection that would be blocked if network protection were enabled.
 
 1. Set network protection to **Audit mode**.
 
@@ -76,7 +76,7 @@ You can enable network protection in audit mode and then visit a website that's 
 
 ## Report a false positive or false negative
 
-If you've tested the feature with the demo site and with audit mode, and network protection is working on pre-configured scenarios, but isn't working as expected for a specific connection, use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/filesubmission) to report a false negative or false positive for network protection. With an E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
+If you've tested the feature with the demo site and with audit mode, and network protection is working on preconfigured scenarios, but isn't working as expected for a specific connection, use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/filesubmission) to report a false negative or false positive for network protection. With an E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
 
 See [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
@@ -85,12 +85,14 @@ See [Address false positives/negatives in Microsoft Defender for Endpoint](defen
 The current exclusion options are:
 
 1. Setting up a custom allow indicator.
-2. Using IP exclusions: `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
+
+2. Using IP exclusions: `Add-MpPreference -ExclusionIpAddress 192.168.1.1`.
+
 3. Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
 
 ## Collect diagnostic data for file submissions
 
-When you report a problem with network protection, you're asked to collect and submit diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues.
+When you report a problem with network protection, you're asked to collect and submit diagnostic data for Microsoft support and engineering teams to help troubleshoot issues.
 
 1. Open an elevated command prompt and change to the Windows Defender directory:
 
