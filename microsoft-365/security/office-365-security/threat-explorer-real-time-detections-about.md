@@ -175,32 +175,74 @@ These options are described in the following subsections.
 >
 > Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the filtered or unfiltered details table data to a CSV file.
 >
-> To remove the chart from the page (maximize the size of the details table), do either of the following steps:
+> To remove the chart from the page (which maximizes the size of the details area), do either of the following steps:
 >
 > - Select :::image type="icon" source="../../media/m365-cc-sc-chart-view-icon.png" border="false"::: **Chart View** \> :::image type="icon" source="../../media/m365-cc-sc-list-view-icon.png" border="false"::: **List View** at the top of the page.
 > - Select :::image type="icon" source="../../media/m365-cc-sc-show-list-view-icon.png" border="false"::: **Show list view** between the chart and the views for the details table.
+
+### Sender domain chart pivot in the All email view in Threat Explorer
+
+The **Sender domain** pivot organizes the chart by the domains in messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-sender-domain-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the Delivery action pivot." lightbox="../../media/te-rtd-all-email-view-chart-sender-domain-pivot.png":::
+
+If you hover over a data point in the chart, the count for each domain action is shown.
+
+### Sender IP chart pivot in the All email view in Threat Explorer
+
+The **Sender IP** pivot organizes the chart by the source IP addresses of messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-sender-ip-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the Sender IP pivot." lightbox="../../media/te-rtd-all-email-view-chart-sender-ip-pivot.png":::
+
+If you hover over a data point in the chart, the count for each sender IP address is shown.
 
 ### Delivery action chart pivot in the All email view in Threat Explorer
 
 Although this chart pivot doesn't look like it's selected, **Delivery action** is the default chart pivot in the **All email** view.
 
-### Sender domain chart pivot in the All email view in Threat Explorer
+The **Delivery action** pivot organizes the chart by the actions taken on messages for the specified date/time range and data filters.
 
-### Sender IP chart pivot in the All email view in Threat Explorer
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-delivery-action-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the Delivery action pivot." lightbox="../../media/te-rtd-all-email-view-chart-delivery-action-pivot.png":::
+
+If you hover over a data point in the chart, the count for each delivery action is shown.
 
 ### Detection technology chart pivot in the All email view in Threat Explorer
 
+The **Detection technology** pivot organizes the chart by the detection technology used on messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-detection-technology-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-all-email-view-chart-detection-technology-pivot.png":::
+
+If you hover over a data point in the chart, the count for each detection technology is shown.
+
 ### Full URL chart pivot in the All email view in Threat Explorer
+
+The **Full URL** pivot organizes the chart by the full URLs in messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-full-url-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the Full URL pivot." lightbox="../../media/te-rtd-all-email-view-chart-full-url-pivot.png":::
+
+If you hover over a data point in the chart, the count for each full URL is shown.
 
 ### URL domain chart pivot in the All email view in Threat Explorer
 
+The **URL domain** pivot organizes the chart by the domains in URLs in messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the URL domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png":::
+
+If you hover over a data point in the chart, the count for each URL domain is shown.
+
 ### URL domain and path chart pivot in the All email view in Threat Explorer
+
+The **URL domain and path** pivot organizes the chart by the domains and paths in URLs in messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-and-path-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the URL domain and path pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-and-path-pivot.png":::
+
+If you hover over a data point in the chart, the count for each URL domain and path is shown.
 
 ### Email view for the details area in the All email view in Threat Explorer
 
 **Email** is the default view for the details area in the **All email** view.
 
-You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
+The **Email** view shows a details table. You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that is shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
 - **Date**<sup></sup>
 - **Subject**<sup></sup>
@@ -233,35 +275,247 @@ You can sort the entries by clicking on an available column header. Select :::im
 - **URL Count**
 - **Email size**
 
-To see all columns, you likely need to do one or more of the following steps:
-
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export up to 200,000 results to a CSV file.
 
-**Take action**
+When you select one or more entries from the list by selecting the check box next to the first colum, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** becomes available.
+
+In the **Subject** value for the entry, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open in new window** action is available. This action opens the message in the Email entity page.
+
+#### Subject details
+
+When you select an entry by clicking on the **Subject** value, a details flyout opens with the following information:
+
+> [!TIP]
+> To see details about other messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+- The number of attachments or links in the message.
+- Any [user tags](user-tags-about.md) that are assigned to the recipients of the message
+- The following actions are available:
+  - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
+  - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **View header**
+  - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**
+  - :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options**:
+    - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**
+    - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**
+    - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View in Explorer**
+    - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Go hunt**
+  <!--- Email preview and Download email aren't available with Security Administrator permissions; Go hunt not always available?--->
+- The following sections are available:
+  - **Delivery details** section:
+    - **Original threats**
+    - **Latest threats**
+    - **Original location**
+    - **Latest delivery location**
+    - **Delivery action**
+    - **Detection technologies**
+    - **Primary override : Source**
+  - **Email details** section:
+    - **Sender display name**
+    - **Sender address**
+    - **Sender email from address**
+    - **Sent on behalf of**
+    - **Return path**
+    - **Sender IP**
+    - **Location**
+    - **Recipient(s)**
+    - **Time received**
+    - **Directionality**
+    - **Network message ID**
+    - **Internet message ID**
+    - **Campaign ID**
+    - **DMARC**
+    - **DKIM**
+    - **SPF**
+    - **Composite authentication**
+  - **URLs** section: Details about any URLs in the message:
+    - **URL**
+    - **Threat** status
+
+    If the message has more than three URLs, select **View all URLs** to see all of them.
+
+  - **Attachments** section: Details about any file attachments in the message:
+    - **Attachment name**
+    - **Threat**
+    - **Detection tech / Malware family**
+
+    If the message has more than three attachments, select **View all attachments** to see all of them.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="The details tab after you select a subject in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
+
+#### Recipient details
+
+When you select an entry by clicking on the **Recipient** value, a details flyout opens with the following information:
+
+> [!TIP]
+> To see details about other messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+- **Summary** section:
+  - **Role**: Whether they have admin roles assigned.
+  - **Policies**:
+    - Whether they have permission to see archive information.
+    - Whether they have permission to see retention information.
+    - Whether they they're covered by data loss prevention (DLP).
+    - Whether they're covered by **Mobile management** at <https://portal.office.com/EAdmin/Device/IntuneInventory.aspx> <!-- -Security Administrator can't open the page--->
+    - **Email section**
+    - **Recent alerts** section
+    - **Recent activity** section.
 
 ### URL clicks view for the details area in the All email view in Threat Explorer
 
 The **URL clicks** view shows a chart that can be organized using pivots as described in the following subsections.
 
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab selected and showing the available pivots with no pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png":::
 
+> [!TIP]
+> Each pivot in **URL clicks** view has a :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all clicks** action that opens the [URL clicks view in Threat Explorer](#url-clicks-view-in-threat-explorer) in a new tab.
+
+#### URL domain pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+
+Although this chart pivot doesn't appear to be selected, **URL domain** is the default chart pivot in the **URL clicks** view.
+
+The **URL domain** pivot shows the different domains in URLs in email messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-pivot.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab and the URL domain pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-pivot.png":::
+
+If you hover over a data point in the chart, the count for each domain is shown.
+
+#### Click verdict pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+
+The **Click verdict** pivot shows the different verdicts for clicked URLs in email messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-click-verdict-pivot.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab and the URL domain pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-click-verdict-pivot.png":::
+
+If you hover over a data point in the chart, the count for each verdict is shown.
+
+#### URL pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+
+The **URL** pivot shows the different URLs that were clicked in email messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-pivot.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab and the URL pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-pivot.png":::
+
+If you hover over a data point in the chart, the count for each URL is shown.
+
+#### URL domain and path pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+
+The **URL domain and path** pivot shows the different domains and file paths of URLs that were clicked in email messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-and-path-pivot.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab and the URL domain and path pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-and-path-pivot.png":::
+
+If you hover over a data point in the chart, the count for each domain and file path is shown.
 
 ### Top URLs view for the details area in the All email view in Threat Explorer
 
+The **Top URLs** view shows a details table. You can sort the entries by clicking on an available column header:
+
+- **URL**
+- **Messages blocked**
+- **Messages junked**
+- **Messages delivered**
+
+#### Top URL details
+
+When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens with the following information:
+
+> [!TIP]
+> To see details about other URLs without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+- The following actions are available at the top of the flyout:
+  - :::image type="icon" source="../../media/m365-cc-sc-open-url-page-icon.png" border="false"::: **Open URL page**
+  - :::image type="icon" source="../../media/m365-cc-sc-send-icon.png" border="false"::: **Submit for analysis**:
+    - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Report clean**
+    - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Report phishing**
+    - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Report malware**
+    <!--- The target URL is constructed such that it should open a new submission with the details filled out. But it takes me to the Email tab on the main Submissions page. Perhaps another permissions issue?--->
+  - :::image type="icon" source="../../media/m365-cc-sc-manage-indicator-icon.png" border="false"::: **Manage indicator**:
+    - :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add indicator**
+    - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Manage in tenant block list**
+
+    Selecting any of these options takes you to the **Submissions** page in the Defender portal.
+
+  - :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More**:
+    - :::image type="icon" source="../../media/m365-cc-sc-show-trends-icon.png" border="false"::: **View in Explorer**
+    - :::image type="icon" source="../../media/m365-cc-sc-go-hunt-icon.png" border="false":::**Go hunt**
+- **Original URL**
+- **Detection** section:
+  - **Threat intelligence verdict**
+  - **x active alerts y incidents**: A horizontal bar graph that shows the number of **High**, **Medium**, **Low**, and **Info** alerts are related to this link.
+  - A link to **View all incidents & alerts in URL page**.
+- **Domain details** section:
+  - **Domain name** and a link to **View domain page**.
+  - **Registrant**
+  - **Registered on**
+  - **Updated on**
+  - **Expires on**
+- **Registrant contact info** section:
+  - **Registrar**
+  - **Country/Region**
+  - **Mailing address**
+  - **Email**
+  - **Phone**
+  - **More info**: A link to **Open at Whois**.
+- **URL prevalence (last 30 days)** section: Contains the number of **Devices**, **Email**, and **Clicks**. Select each value to view the full list.
+- **Devices**: Shows the affected devices:
+  - **Date (First / Last)**
+  - **Devices**
+
+    If more than two devices are involved, select **View all devices** to see all of them.
+  
+:::image type="content" source="../../media/te-rtd-all-email-view-top-urls-tab-details-area-url-details-flyout.png" alt-text="The details flyout after selecting an entry in the Top URLs tab in the All email view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-top-urls-tab-details-area-url-details-flyout.png":::
+
 ### Top clicks view for the details area in the All email view in Threat Explorer
+
+The **Top clicks** view shows a details table. You can sort the entries by clicking on an available column header:
+
+- **URL**
+- **Blocked**
+- **Allowed**
+- **Block overridden**
+- **Pending verdict**
+- **Pending verdict bypassed**
+- **None**
+- **Error page**
+- **Failure**
+
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Zoom out in your web browser.
+>
+> All available columns are selected. Currently, if you select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**, you can't deselect any columns.
+
+When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The flyout contains the same information as described in the [details fylout for the Top URLs tab](#top-url-details).
 
 ### Top targeted users view for the details area in the All email view in Threat Explorer
 
+The **Top targeted users** view shows a details table with the following columns:
+
+- **Top targeted users**: You can select the column header to by ascending or descending values. If you select the user's email address by clicking on it, a details flyout opens.  
+
+- Number of attempts: This column has no header. If you select the number of attempts, a new Threat Explorer tab opens with the following configuration:
+  - The **All email** view is selected and filtered by the top target user's email address.
+  - In the details area, the **Email** view is selected.
+
 ### Email origin view for the details area in the All email view in Threat Explorer
+
+The **Email origin** view shows message sources on a map of the world.
 
 ### Campaign view for the details area in the All email view in Threat Explorer
 
+The **Campaign** view shows a details table. You can sort the entries by clicking on an available column header.
 
+The details table is identical to the [details table on the Campaigns page](campaigns.md#details-table-on-the-campaigns-page).
 
+When you select an entry by clicking anywhere in the row other than the check box next to the **Name**, a details flyout opens. The information is identical to [Campaign details](campaigns.md#campaign-details).
 
 ## Malware view in Threat Explorer and Real-time detections
 

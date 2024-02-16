@@ -420,7 +420,7 @@ On each tab, select a column header to sort by that column. To remove columns, s
 The actions at the bottom the campaign details flyout allow you to investigate and record details about the campaign:
 
 - Select **Yes** or **No** in **Do you think this campaign has accurately grouped these messages together?**.
-- **Explore messages**: Use the power of Threat Explorer to further investigate the campaign by selecting one of the following value in the dropdown list:
+- **Explore messages**: Use the power of Threat Explorer to further investigate the campaign by selecting one of the following values in the dropdown list:
   - **All messages**: Opens a new Threat Explorer search tab using the **Campaign ID** value as the search filter.
   - **Inboxed messages**: Opens a new Threat Explorer search tab using the **Campaign ID** and **Delivery location: Inbox** as the search filter.
   - **Internal messages**: Opens a new Threat Explorer search tab using the **Campaign ID** and **Directionality: Intra-org** as the search filter.
