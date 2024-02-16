@@ -38,7 +38,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ## How to install Microsoft Defender for Endpoint on Linux
 
-Microsoft Defender for Endpoint for Linux includes antimalware and endpoint detection and response (EDR) capabilities.
+Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint detection and response (EDR) capabilities.
 
 ### Prerequisites
 
@@ -94,6 +94,9 @@ In general you need to take the following steps:
   - Amazon Linux 2
   - Amazon Linux 2023
   - Fedora 33 or higher
+  - Rocky 8.7 and higher
+  - Alma 9.2 and higher
+  - Mariner 2
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
