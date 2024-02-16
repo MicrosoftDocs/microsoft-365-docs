@@ -30,7 +30,7 @@ ms.date: 12/18/2020
 
 The Microsoft Defender XDR alerts API, released to public preview in MS Graph, is the official and recommended API for customers migrating from the SIEM API. This API enables customers to work with alerts across all Microsoft Defender XDR products using a single integration. We expect the new API to reach general availability (GA) by Q1 CY 2023.
 
-The SIEM API was deprecated on December 31, 2023. It is declared to be "deprecated," but not "retired." This means that until this date, the SIEM API continues to function for existing customers. After the deprecation date, the SIEM API will continue to be available, however it will only be supported for security-related fixes.
+The SIEM API was deprecated on December 31, 2023. It's declared to be "deprecated," but not "retired." This means that until this date, the SIEM API continues to function for existing customers. After the deprecation date, the SIEM API will continue to be available, however it will only be supported for security-related fixes.
 
 Effective December 31, 2024, three years after the original deprecation announcement, we reserve the right to turn off the SIEM API, without further notice.
 
@@ -48,7 +48,7 @@ Read about the new Microsoft Defender XDR [alerts and incidents API](https://tec
 
 ### Pulling Defender for Endpoint alerts into an external system
 
-If you are pulling Defender for Endpoint alerts into an external system, there are various supported options to give organizations the flexibility to work with the solution of their choice:
+If you're pulling Defender for Endpoint alerts into an external system, there are several supported options to give organizations the flexibility to work with the solution of their choice:
 
 1. **Microsoft Sentinel** is a scalable, cloud-native, SIEM and Security orchestration, automation, and response (SOAR) solution. Delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for attack detection, threat visibility, proactive hunting, and threat response. The Microsoft Defender XDR connector allows customers to easily pull in all their incidents and alerts from all Microsoft Defender XDR products. To learn more about the integration, see [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 
