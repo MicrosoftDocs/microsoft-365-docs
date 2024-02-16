@@ -392,12 +392,12 @@ The following table describes the settings that are recommended as part of `mdat
 
 - Save the setting as `mdatp_managed.json` file.
 - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
-- Add your third-party antimalware processes and paths to the exclusion list from the prior step.
-- Verify that you've added your current exclusions from your third-party antimalware to the prior step.
+- Add your non-Microsoft antimalware processes and paths to the exclusion list from the prior step.
+- Verify that you've added your current exclusions from your non-Microsoft antimalware solution to the prior step.
 
 ### Applications that Microsoft Defender for Endpoint can impact
 
-High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins might require other exclusions depending on the amount of activity that is being processed (which is monitored by Defender for Endpoint). It's best to follow guidance from third party application providers for exclusions if you experience performance degradation after installing Defender for Endpoint. Also keep in mind [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins might require other exclusions, depending on the amount of activity that is being processed (and monitored by Defender for Endpoint). It's best to follow guidance from non-Microsoft application providers for their exclusions if you experience performance degradation after installing Defender for Endpoint. Also keep in mind [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
 If you experience performance degradation, see the following resources:
 
