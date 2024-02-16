@@ -1,18 +1,14 @@
 ---
 title: Attack surface reduction rules reporting
 description: Provides information about attack surface reduction rules detections, configuration, block threats, and methods to enable three standard rules and exclusions.
-keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.service: defender-endpoint
 ms.subservice: asr
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar,
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+ms.reviewer: sugamar,
+manager: deniseb
 ms.custom: asr
 ms.topic: conceptual
 ms.collection: 
