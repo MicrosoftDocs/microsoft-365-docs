@@ -61,15 +61,15 @@ If these prerequisites are met, proceed to the next step to test the rule in aud
 
 Follow these instructions in [Use the demo tool to see how attack surface reduction rules work](evaluate-attack-surface-reduction.md) to test the specific rule you're encountering problems with.
 
-1. Enable audit mode for the specific rule you want to test. Use Group Policy to set the rule to **Audit mode** (value: **2**) as described in [Enable attack surface reduction rules](enable-attack-surface-reduction.md). Audit mode allows the rule to report the file or process, but will still allow it to run.
+1. Enable audit mode for the specific rule you want to test. Use Group Policy to set the rule to **Audit mode** (value: **2**) as described in [Enable attack surface reduction rules](enable-attack-surface-reduction.md). Audit mode allows the rule to report the file or process, but allows it to run.
 
 2. Perform the activity that is causing an issue (for example, open or execute the file or process that should be blocked but is being allowed).
 
-3. [Review the attack surface reduction rule event logs](attack-surface-reduction.md) to see if the rule would have blocked the file or process if the rule had been set to **Enabled**.
+3. [Review the attack surface reduction rule event logs](attack-surface-reduction.md) to see if the rule would block the file or process if the rule were set to **Enabled**.
 
 If a rule isn't blocking a file or process that you're expecting it should block, first check if audit mode is enabled.
 
-Audit mode might have been enabled for testing another feature, or by an automated PowerShell script, and might not have been disabled after the tests were completed.
+Audit mode might be enabled for testing another feature, or by an automated PowerShell script, and might not be disabled after the tests were completed.
 
 If you've tested the rule with the demo tool and with audit mode, and attack surface reduction rules are working on preconfigured scenarios, but the rule isn't working as expected, proceed to either of the following sections based on your situation:
 
