@@ -1,17 +1,13 @@
 ---
 title:  Provide feedback on the Microsoft Defender for Endpoint Client Analyzer tool
 description: Provide feedback on the Microsoft Defender for Endpoint client analyzer tool
-keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -19,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: ngp
 search.appverid: met150
-ms.date: 03/23/2021
+ms.date: 02/15/2024
 ---
 
 # Provide feedback on the Microsoft Defender for Endpoint client analyzer tool
