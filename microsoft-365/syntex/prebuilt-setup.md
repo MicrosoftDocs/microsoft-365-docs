@@ -64,7 +64,7 @@ Follow these steps to manage which SharePoint sites users can use to create preb
 
 ## Turn off prebuilt document processing
 
-When the prebuilt document processing service is off, prebuilt models will not run, and users will not be able to create or apply prebuilt models.
+When the prebuilt document processing service is turned off, prebuilt models will not run, and users will not be able to create or apply prebuilt models.
 
 Follow these steps to turn off prebuilt document processing.
 
