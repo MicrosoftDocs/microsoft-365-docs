@@ -874,7 +874,7 @@ sections:
 
           - Level: Level. Examples: win: Warning
 
-          - TimeCreated: SystemTime, time when the event was created
+          - TimeCreated: SystemTime, time when the event was created.
 
           - EventRecordID: EventRecordID, index number of the event in the event log
 
@@ -1092,7 +1092,7 @@ sections:
 
           - Error Description: Error description Description of the error.
 
-         User action: The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update. To troubleshoot this event:
+         User action: The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is due to an interruption in network connectivity during an update. To troubleshoot this event:
 
            - [Update definitions](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) and force a rescan directly on the endpoint.
 
@@ -1169,9 +1169,9 @@ sections:
 
          Symbolic name: `MALWAREPROTECTION_SIGNATURE_FASTPATH_UPDATED`
 
-         Message: The antimalware engine used the Dynamic Signature Service to get additional definitions.
+         Message: The antimalware engine used the Dynamic Signature Service to get other definitions.
 
-         Description: Microsoft Defender Antivirus used Dynamic Signature Service to retrieve additional signatures to help protect your machine.
+         Description: Microsoft Defender Antivirus used Dynamic Signature Service to retrieve more signatures to help protect your machine.
 
           - Current Signature Version: Current signature version
 
@@ -1198,11 +1198,11 @@ sections:
 
          Message: The Dynamic Signature Service deleted the out-of-date dynamic definitions.
 
-         Change to default behavior: Change to dynamic signature event reporting default behavior
+         Change to default behavior: Change to dynamic signature event reporting default behavior.
 
            When a dynamic signature is received by MDE, a 2010 event is reported. However, when the dynamic signature expires or is manually deleted a 2011 event is reported. In some cases, when a new signature is delivered to MDE sometimes hundreds of dynamic signatures expire at the same time; therefore hundreds of 2011 events are reported. The generation of so many 2011 events can cause a Security information and event management (SIEM) server to become flooded.
 
-           To avoid the previously described situation - starting with platform version 4.18.2207.7 - by default, Defender for Endpoint will now *not* report 2011 events:
+           To avoid the previously described situation - starting with platform version 4.18.2207.7 - by default, Defender for Endpoint doesn't report 2011 events:
 
             - This new default behavior is controlled by registry entry: `HKLM\SOFTWARE\Microsoft\Windows Defender\Reporting\EnableDynamicSignatureDroppedEventReporting`.
             - The default value for `EnableDynamicSignatureDroppedEventReporting` is **false**, which means 2011 *events aren't reported*. If it's set to true, 2011 *events are reported*.
