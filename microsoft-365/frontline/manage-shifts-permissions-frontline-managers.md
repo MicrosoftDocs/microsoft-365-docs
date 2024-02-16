@@ -85,7 +85,7 @@ Contoso reviewed the Shifts capabilities of their frontline managers and determi
 
 Contoso decided not to use time clock in Shifts for now because they want their frontline workers to use the in-store stations to clock and out of their shifts. This means that they need to:
 
-- Turn off the capability for frontline managers to change the time clock setting in Shifts for their teams.
+- Remove permissions for store managers (team owners) and department managers (schedule owners) to change the time clock setting in Shifts for their teams.
 - Set the time clock setting in Shifts to **Off** for all teams.
   
 To do this:
@@ -129,13 +129,13 @@ To do this:
     }
     ```
 
-Here's what the time clock setting in Shifts looks like for store managers and department managers at Contoso before and after removing their permissions to change it. After the capability if turned off, the setting is unavailable in Shifts.
+Here's what the time clock setting in Shifts looks like for store managers and department managers at Contoso before and after removing their permissions to change it. After removing their permissions, the setting is unavailable in Shifts.
 
 :::image type="content" source="media/flm-shifts-permissions-time-clock.png" alt-text="Example of the time clock setting in Shifts for frontline managers before and after removing their permissions to change it.":::
 
 ### Department managers shouldn't be able to choose whether they can add and edit time-off reasons in Shifts
 
-At Contoso, adding and editing time-off reasons is the responsibility of the store manager. This means that they need to turn off the ability for schedule owners to add and edit time-off reasons in Shifts for all teams.
+At Contoso, adding and editing time-off reasons is the responsibility of the store manager. This means that they need to remove permissions for department managers (schedule owners) to add and edit time-off reasons in Shifts for all teams.
 
 To do this, use the [Shifts role permissions]() Graph API and remove the `CanModifyTimeOffReasons` parameter from the `allowedResourceActions` list for the schedule owner role on every team using Shifts.
 
@@ -158,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-Here's what the time-off reasons option in Shifts looks like for department managers at Contoso before and after removing their permissions to use it. After the capability is turned off, the option is unavailable in Shifts.
+Here's what the time-off reasons option in Shifts looks like for department managers at Contoso before and after removing their permissions to use it. After removing their permissions, the option is unavailable in Shifts.
 
 :::image type="content" source="media/flm-shifts-permissions-time-off-reasons.png" alt-text="Example of the time-off reasons option in Shifts for department managers before and after removing their permissions to use it.":::
 
