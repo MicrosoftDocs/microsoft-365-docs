@@ -108,7 +108,7 @@ To take full advantage of attack surface reduction rules and reporting, we recom
 > There are multiple methods to configure attack surface reduction rules. Attack surface reduction rules can be configured using: Microsoft Intune, PowerShell, Group Policy, Microsoft Configuration Manager (ConfigMgr), Intune OMA-URI.
 > If you are using a different infrastructure configuration than what is listed for _Infrastructure requirements_, you can learn more about deploying attack surface reduction rules using other configurations here: [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
-### ASR rules dependencies
+### Attack surface reduction rules dependencies
 
 Microsoft Defender Antivirus must be enabled and configured as primary anti-virus solution, and must be in the following mode:
 
