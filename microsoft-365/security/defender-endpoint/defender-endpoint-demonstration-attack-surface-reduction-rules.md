@@ -1,17 +1,12 @@
 ---
 title: Microsoft Defender for Endpoint attack surface reduction rules demonstrations
 description: See how attack surface reduction rules block various known threat types.
-keywords: Microsoft Defender for Endpoint demonstration, attack surface reduction rules demonstration, ASR rules, demonstration
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp 
-author: dansimp
+ms.author: siosulli 
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -40,9 +35,9 @@ Attack surface reduction rules target specific behaviors that are typically used
 ## Scenario requirements and setup
 
 - Windows 11, Windows 10 1709 build 16273 or later
-- Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2 with the unified MDE client.
-- Microsoft Defender AV
-- Microsoft Office (required for Office rules and sample)
+- Windows Server 2022, Windows Server 2019, Windows Server 2016, or Windows Server 2012 R2 with the unified MDE client.
+- Microsoft Defender Antivirus
+- Microsoft 365 Apps (Office; required for Office rules and sample)
 - [Download attack surface reduction PowerShell scripts](https://demo.wd.microsoft.com/Content/WindowsDefender_ASR_scripts.zip)
 
 ## PowerShell commands
@@ -123,10 +118,10 @@ You can perform these manual steps instead:
 2. Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo.
 3. Enable all rules using the PowerShell command.
 
-### Scenario 1: ASR blocks a test file with multiple vulnerabilities
+### Scenario 1: Attack surface reduction blocks a test file with multiple vulnerabilities
 
 1. Enable all rules in block mode using the PowerShell commands (you can copy paste all)
-2. Download and open any of the test file/documents, enable editing and content if prompted.
+2. Download and open any of the test file/documents, and enable editing and content, if prompted.
 
 #### Scenario 1 expected results
 
@@ -134,10 +129,13 @@ You should immediately see an "Action blocked" notification.
 
 ### Scenario 2: ASR rule blocks the test file with the corresponding vulnerability
 
-1. Configure the rule you want to test using the PowerShell command from the previous step.
-2. Example: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
-3. Download and open the test file/document for the rule you want to test, enable editing and content if prompted
-4. Example: [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
+1. Configure the rule you want to test using the PowerShell command from the previous step. 
+
+   Example: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
+
+2. Download and open the test file/document for the rule you want to test, and enable editing and content, if prompted.
+
+   Example: [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
 #### Scenario 2 expected results
 
@@ -145,7 +143,7 @@ You should immediately see an "Action blocked" notification.
 
 ### Scenario 3 (Windows 10 or later): ASR rule blocks unsigned USB content from executing
 
-1. Configure the rule for USB protection (B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4).
+1. Configure the rule for USB protection (`B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4`).
 
 ```powershell
 Add-MpPreference -AttackSurfaceReductionRules_Ids B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4 -AttackSurfaceReductionRules_Actions Enabled
@@ -157,7 +155,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids B2B3F03D-6A65-4F7B-A9C7-1C7EF7
 
 You should immediately see an "Action blocked" notification.
 
-### Scenario 4: What would happen without ASR
+### Scenario 4: What would happen without attack surface reduction
 
 1. Turn off all attack surface reduction rules using PowerShell commands in the cleanup section
 2. Download any test file/document, enable editing and content if prompted
@@ -172,18 +170,6 @@ You should immediately see an "Action blocked" notification.
 Download and run this [clean-up script](https://demo.wd.microsoft.com/Content/ASR_CFA_CleanupScript.zip)
 
 Alternately, you can perform these manual steps:
-
-
-
-
-
-
-
-
-
-
-
-
 
 ```powershell
 Add-MpPreference -AttackSurfaceReductionRules_Ids BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 -AttackSurfaceReductionRules_Actions Disabled
@@ -205,8 +191,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A
 Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions Disabled
 ```
 
-  
-Cleanup **c:\demo** encryption by running the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
+Clean up **c:\demo** encryption by running the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## See also
 
@@ -215,4 +200,5 @@ Cleanup **c:\demo** encryption by running the [encrypt/decrypt file](https://dem
 [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

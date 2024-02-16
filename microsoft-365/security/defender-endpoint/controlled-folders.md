@@ -1,18 +1,14 @@
 ---
 title: Protect important folders from ransomware from encrypting your files with controlled folder access
 description: Files in default folders can be protected from being changed by malicious apps. Prevent ransomware from encrypting your files.
-keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 ms.date: 01/06/2023
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 audience: ITPro
-ms.reviewer: oogunrinde, sugamar 
-manager: dansimp
+ms.reviewer: sugamar 
+manager: deniseb
 ms.custom: asr
 ms.subservice: asr
 ms.topic: how-to
