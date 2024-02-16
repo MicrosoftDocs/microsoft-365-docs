@@ -164,7 +164,7 @@ To learn more about Tax IDs, and how to apply for tax-exempt status, see
 
 This section shows the billing profile used to determine what items are included on your invoice, and how you pay your invoices. Each billing cycle, you receive a separate invoice for each billing profile. You pay for invoices by using either check or wire transfer, or Azure prepayment. If you don't already have a billing profile, your Microsoft representative creates one for you. During checkout, you can select a different billing profile, if you have one, change the name of the billing profile, or add a P.O. number. You can also create a new billing profile.
 
-For information about billing profiles, see [Manage billing profiles](billing-and-payments/manage-billing-profiles.md).
+For information about billing profiles, see [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 
 ### Proposal items in this order
 
