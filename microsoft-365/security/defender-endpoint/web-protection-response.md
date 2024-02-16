@@ -69,7 +69,7 @@ You can also check the device that attempted to access a blocked URL. Selecting 
 
 ## Web browser and Windows notifications for end users
 
-With web protection in Microsoft Defender for Endpoint, your end users will be prevented from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is performed by [network protection](network-protection.md), they will see a generic error from the web browser. They will also see a notification from Windows.
+With web protection in Defender for Endpoint, your end users are prevented from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is done by [network protection](network-protection.md), users see a generic error from the web browser. They also see a notification from Windows.
 
 :::image type="content" source="images/wtp-browser-blocking-page.png" alt-text="The Microsoft Edge showing a 403 error, and the Windows notification" lightbox="images/wtp-browser-blocking-page.png":::
 
@@ -78,7 +78,7 @@ With web protection in Microsoft Defender for Endpoint, your end users will be p
 :::image type="content" source="images/wtp-chrome-browser-blocking-page.png" alt-text="The Chrome web browser showing a secure connection warning, and the Windows notification" lightbox="images/wtp-chrome-browser-blocking-page.png":::
 *Web threat blocked on Chrome*
 
-## Related topics
+## Related articles
 
 - [Web protection overview](web-protection-overview.md)
 - [Web content filtering](web-content-filtering.md)
