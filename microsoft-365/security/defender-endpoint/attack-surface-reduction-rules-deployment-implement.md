@@ -1,19 +1,15 @@
 ---
 title: Implement attack surface reduction rules
 description: Provides guidance to implement your attack surface reduction rules deployment.
-keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
-search.product: eADQiWindows 10XVcnh
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.service: defender-endpoint
 ms.subservice: asr
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+ms.reviewer: sugamar
+manager: deniseb
 ms.custom: asr
 ms.topic: conceptual
 ms.collection: 
@@ -87,7 +83,7 @@ In cases in which blocks aren't self resolved in a timely manner, customers can 
 > [!WARNING]
 > Excluding or unblocking files or folders could potentially allow unsafe files to run and infect your devices. Excluding files or folders can severely reduce the protection provided by attack surface reduction rules. Files that would have been blocked by a rule will be allowed to run, and there will be no report or event recorded.
 
-An exclusion can apply to all rules that allow exclusions or apply to specific rules using [per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-per-rule-exclusions). You can specify an individual file, folder path, or the fully qualified domain name for a resource.
+An exclusion can apply to all rules that allow exclusions or apply to specific rules using [per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-attack-surface-reduction-per-rule-exclusions). You can specify an individual file, folder path, or the fully qualified domain name for a resource.
 
 An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service continues to trigger events until the service is stopped and restarted.
 
