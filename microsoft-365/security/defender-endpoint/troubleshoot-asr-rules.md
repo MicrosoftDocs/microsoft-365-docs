@@ -32,10 +32,10 @@ ms.date: 07/18/2023
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> is the new interface for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft Defender portal is intended for security admins and security operations teams to better manage and protect their organization. Visit the Microsoft Defender portal at<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a>.
 
-In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, we offer you a complete look at the current ASR rules configuration and events in your estate. Note that your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
-Here's a screenshot from the Microsoft Defender portal (under **Reports** \> **Devices** \> **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual ASR rule configuration.
+In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, we offer you a complete look at the current attack surface reduction rules configuration and events in your estate. Note that your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
+Here's a screenshot from the Microsoft Defender portal (under **Reports** \> **Devices** \> **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual attack surface reduction rule configuration.
 
-:::image type="content" source="images/asrrulesnew.png" alt-text="The ASR rules page" lightbox="images/asrrulesnew.png":::
+:::image type="content" source="images/asrrulesnew.png" alt-text="The attack surface reduction rules page" lightbox="images/asrrulesnew.png":::
 
 ## Microsoft Defender for Endpoint - Advanced hunting
 
@@ -43,9 +43,9 @@ One of the most powerful features of Microsoft Defender for Endpoint is advanced
 
 Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool that lets you explore up to 30 days of the captured (raw) data, that Defender for Endpoint collects from your devices. Through advanced hunting, you can proactively inspect events to locate interesting indicators and entities. The flexible access to data helps unconstrained hunting for both known and potential threats.
 
-Through advanced hunting, it's possible to extract ASR rules information, create reports, and get in-depth information on the context of a given ASR rule audit or block event.
+Through advanced hunting, it's possible to extract attack surface reduction rules information, create reports, and get in-depth information on the context of a given attack surface reduction rule audit or block event.
 
-ASR rules events are available to be queried from the DeviceEvents table in the advanced hunting section of the Microsoft Defender XDR. For example, a simple query such as the one below can report all the events that have ASR rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the ASR rule.
+attack surface reduction rules events are available to be queried from the DeviceEvents table in the advanced hunting section of the Microsoft Defender XDR. For example, a simple query such as the one below can report all the events that have attack surface reduction rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the attack surface reduction rule.
 
 ```kusto
 DeviceEvents
@@ -66,23 +66,23 @@ Pictured below is a screenshot of the Timeline view of these events on a given e
 
 :::image type="content" source="images/mic-sec-def-timelinenew.png" alt-text="The Microsoft Defender XDR timeline" lightbox="images/mic-sec-def-timelinenew.png":::
 
-## How to troubleshoot ASR rules?
+## How to troubleshoot attack surface reduction rules?
 
-The first and most immediate way is to check locally, on a Windows device, which ASR rules are enabled (and their configuration) is by using the PowerShell cmdlets.
+The first and most immediate way is to check locally, on a Windows device, which attack surface reduction rules are enabled (and their configuration) is by using the PowerShell cmdlets.
 
-Here are a few other sources of information that Windows offers, to troubleshoot ASR rules' impact and operation.
+Here are a few other sources of information that Windows offers, to troubleshoot attack surface reduction rules' impact and operation.
 
 ### Querying which rules are active
 
-One of the easiest ways to determine if ASR rules are already enabled is through a PowerShell cmdlet, Get-MpPreference.
+One of the easiest ways to determine if attack surface reduction rules are already enabled is through a PowerShell cmdlet, Get-MpPreference.
 
 Here's an example:
 
 :::image type="content" source="images/getmpreferencescriptnew.png" alt-text="The get mppreference script" lightbox="images/getmpreferencescriptnew.png":::
 
-There are multiple ASR rules active, with different configured actions.
+There are multiple attack surface reduction rules active, with different configured actions.
 
-To expand the above information on ASR rules, you can use the properties **AttackSurfaceReductionRules_Ids** and/or **AttackSurfaceReductionRules_Actions**.
+To expand the above information on attack surface reduction rules, you can use the properties **AttackSurfaceReductionRules_Ids** and/or **AttackSurfaceReductionRules_Actions**.
 
 Example:
 
@@ -92,7 +92,7 @@ Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Ids
 
 :::image type="content" source="images/getmpref-examplenew.png" alt-text="The get mpreference example" lightbox="images/getmpref-examplenew.png":::
 
-The above shows all the IDs for ASR rules that have a setting different from 0 (Not Configured).
+The above shows all the IDs for attack surface reduction rules that have a setting different from 0 (Not Configured).
 
 The next step is then to list the actual actions (Block or Audit) that each rule is configured with.
 
@@ -104,7 +104,7 @@ Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Act
 
 ### Querying blocking and auditing events
 
-ASR rule events can be viewed within the Windows Defender log.
+attack surface reduction rule events can be viewed within the Windows Defender log.
 
 To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
