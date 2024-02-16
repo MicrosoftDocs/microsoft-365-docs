@@ -59,7 +59,7 @@ Depending on your business needs, you might decide to include multiple business 
 
 ## Identify ASR rules champions
 
-Attack surface reduction  rules champions are members in your organization that will help with your initial attack surface reduction rules rollout during the preliminary testing and implementation phases. Your champions are typically employees who are more technically adept, and who aren't derailed by intermittent work-flow outages. The champions' involvement continues throughout the broader expansion of attack surface reduction rules deployment to your organization. Your attack surface reduction rules champions are first to experience each level of the attack surface reduction rules rollout.
+Attack surface reduction rules champions are members in your organization who can help with your initial attack surface reduction rules rollout during the preliminary testing and implementation phases. Your champions are typically employees who are more technically adept, and who aren't derailed by intermittent work-flow outages. The champions' involvement continues throughout the broader expansion of attack surface reduction rules deployment to your organization. Your attack surface reduction rules champions are first to experience each level of the attack surface reduction rules rollout.
 
 It's important to provide a feedback and response channel for your attack surface reduction rules champions to alert you to attack surface reduction rules-related work disruptions and receive attack surface reduction  rules-rollout related communications.
 
