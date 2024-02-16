@@ -5,10 +5,10 @@ ms.service: defender-endpoint
 ms.subservice: asr
 ms.localizationpriority: medium
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.reviewer: sugamar
-manager: dansimp
+manager: deniseb
 ms.custom: asr
 ms.topic: conceptual
 ms.collection:  
