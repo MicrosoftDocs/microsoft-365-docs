@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 1/30/2024
+ms.date: 2/16/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -31,6 +31,12 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## February 2024
+
+### Feedback and support widget
+
+We've made it easier for you to give us feedback. Check out the new feedback and support widget in the lower-right corner of the Lighthouse portal. Make a suggestion, report a problem, or give a compliment by simply selecting the widget. Share your comments today through our enhanced feedback tool and let us know how Lighthouse is working for you.
 
 ## January 2024
 
@@ -81,20 +87,6 @@ Stay tuned for the announcement of additional Lighthouse management roles that y
 [Go to the Lighthouse permissions page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/RBAC.ReactView)
 
 To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
-
-### User offboarding capabilities
-
-You can now easily and securely offboard user accounts in your managed tenants by going to **Users** > **Account management**, and then selecting the **Offboarded users** tab. Select **Offboard users from the tenant** and follow the guided instructions.
-
-Microsoft 365 Lighthouse simplifies the offboarding of users by guiding you through the process and providing recommended actions, such as blocking the user's sign-in, revoking their licenses, delegating their mailbox access, and more. From the Offboarded users page, you can also track the progress and status of the offboarding tasks for the users you offboard. 
-
-[Go to the Offboard users page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Users.ReactView)
-
-### Management of PowerShell scripts
-
-You can now create PowerShell scripts and check results for Intune-managed devices in Microsoft 365 Lighthouse instead of having to go to the device Scripts page in the Microsoft Intune admin center for each customer. To access this functionality, select **Tenants** from the left navigation pane in Lighthouse, select a tenant from the list, and then select the **Scripts** tab.
-
-To create a script, select **Create script**. To view a list of targeted devices and the last run time for an existing script, select a script from the list. You can run scripts against all Intune-managed devices in a customer tenant or you can target devices by using Microsoft Entra groups.
 
 ## October 2023
 
