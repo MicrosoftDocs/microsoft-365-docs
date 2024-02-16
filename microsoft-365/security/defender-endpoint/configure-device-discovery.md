@@ -1,17 +1,13 @@
 ---
 title: Configure device discovery
 description: Learn how to configure device discovery in Microsoft Defender XDR using basic or standard discovery
-keywords: basic, standard, configure endpoint discovery, device discovery
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

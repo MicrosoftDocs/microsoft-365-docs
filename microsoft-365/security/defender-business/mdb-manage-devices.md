@@ -4,7 +4,7 @@ description: Learn how to add, remove, and manage devices in Defender for Busine
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: how-to
 ms.service: defender-business
