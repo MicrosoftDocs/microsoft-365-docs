@@ -91,6 +91,7 @@ In general you need to take the following steps:
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
   - Oracle Linux 8.x
+  - Oracle Linux 9.x
   - Amazon Linux 2
   - Amazon Linux 2023
   - Fedora 33 or higher
