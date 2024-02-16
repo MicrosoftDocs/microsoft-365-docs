@@ -24,7 +24,7 @@ ms.date: 02/16/2024
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Microsoft Defender Antivirus assesses all apps (any executable file, including .exe, .scr, .dll files and others) and then determines if the app is malicious or safe. If the app is determined to be malicious or suspicious, then it will not be allowed to make changes to any files in any protected folder.
+Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Microsoft Defender Antivirus assesses all apps (any executable file, including .exe, .scr, .dll files and others) and then determines if the app is malicious or safe. If the app is determined to be malicious or suspicious, then the app can't make changes to any files in any protected folder.
 
 ## Scenario requirements and setup
 
