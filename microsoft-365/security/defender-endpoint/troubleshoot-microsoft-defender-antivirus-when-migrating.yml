@@ -44,7 +44,7 @@ sections:
 
              Selecting an event from the details pane shows you more information about an event in the lower pane, under the **General** and **Details** tabs.
 
-      - question: Microsoft Defender Antivirus doesn't start
+      - question: Microsoft Defender Antivirus doesn't start.
         answer: |
           This issue can manifest in the form of  several different event IDs, all of which have the same underlying cause.
 
@@ -68,14 +68,14 @@ sections:
           - **Description**: Microsoft Defender Antivirus scanning for spyware and other potentially unwanted software is disabled.
           - **Source**: Windows Defender
 
-          ### How to tell if Microsoft Defender Antivirus won't start because a non-Microsoft antivirus is installed
+          ### How to tell if Microsoft Defender Antivirus doesn't start because a non-Microsoft antivirus is installed.
 
           On a Windows 10 or Windows 11 device, if you aren't using Microsoft Defender for Endpoint, and you have a non-Microsoft antivirus installed, then Microsoft Defender Antivirus is automatically turned off. If you're using Microsoft Defender for Endpoint with a non-Microsoft antivirus installed, Microsoft Defender Antivirus starts in passive mode, with reduced functionality.
 
           > [!TIP]
           > The scenario described earlier applies only to Windows 10 and Windows 11. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside non-Microsoft security software.
 
-          #### Use Services app to check if Microsoft Defender Antivirus is turned off
+          #### Use Services app to check if Microsoft Defender Antivirus is turned off.
 
           To open the Services app, select the Search icon from the taskbar and search for *services*. You can also open the app from the command-line by typing *services.msc*.
 
@@ -139,7 +139,7 @@ sections:
           Microsoft Defender Antivirus automatically turns on if no other antivirus is currently active. You need to turn the non-Microsoft antivirus off to ensure Microsoft Defender Antivirus can run with full functionality.
 
           > [!WARNING]
-          > Solutions suggesting that you edit the *Windows Defender* start values for *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc*, and *windefend* in  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services are unsupported, and might force you to reimage your system.
+          > Solutions suggesting that you edit the Windows Defender start values for `wdboot`, `wdfilter`, `wdnisdrv`, `wdnissvc`, and `windefend` in `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services` are unsupported, and might force you to reimage your system.
 
           Passive mode is available if you start using Microsoft Defender for Endpoint and a non-Microsoft antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender Antivirus to scan files and update itself, but it doesn't remediate threats in passive mode. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) isn't available under passive mode, unless [Endpoint data loss prevention (DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) is deployed.
 
