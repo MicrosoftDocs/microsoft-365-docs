@@ -101,9 +101,9 @@ Based on the query, the user is able to view data for scan counts, duration (tot
 ## Additional functionality: exporting and converting to CSV and JSON
 
 The results of the performance analyzer can also be exported and converted to a CSV or JSON file.
-For examples that describe the process of "export" and "convert" through sample codes, see below.
+For examples that describe the process of "export" and "convert" through sample codes, see the following sections.
 
-Starting with Defender version 4.18.2206.X, users are able to view scan skip reason information under "SkipReason" column. The possible values are:
+Starting with Defender version `4.18.2206.X`, users are able to view scan skip reason information under "SkipReason" column. The possible values are:
 
 - Not Skipped
 - Optimization (typically due to performance reasons)
@@ -129,7 +129,7 @@ Starting with Defender version 4.18.2206.X, users are able to view scan skip rea
 (Get-MpPerformanceReport -Path .\Repro-Install.etl -Topscans 1000).TopScans | ConvertTo-Json -Depth 1
 ```
 
-To ensure machine-readable output for exporting with other data processing systems, it is recommended to use `-Raw` parameter for `Get-MpPerformanceReport`. See below for details.
+To ensure machine-readable output for exporting with other data processing systems, it's recommended to use `-Raw` parameter for `Get-MpPerformanceReport`. See the following sections for more details.
 
 
 ## PowerShell reference
@@ -153,7 +153,7 @@ New-MpPerformanceRecording -RecordTo <String>
 
 The `New-MpPerformanceRecording` cmdlet collects a performance recording of Microsoft Defender Antivirus scans. These performance recordings contain Microsoft-Antimalware-Engine and NT kernel process events and can be analyzed after collection using the [Get-MpPerformanceReport](#get-mpperformancereport) cmdlet.
 
-This `New-MpPerformanceRecording` cmdlet provides an insight into problematic files that could cause a degradation in the performance of Microsoft Defender Antivirus. This tool is provided "AS IS", and is not intended to provide suggestions on exclusions. Exclusions can reduce the level of protection on your endpoints. Exclusions, if any, should be defined with caution.
+This `New-MpPerformanceRecording` cmdlet provides an insight into problematic files that could cause a degradation in the performance of Microsoft Defender Antivirus. This tool is provided "AS IS", and isn't intended to provide suggestions on exclusions. Exclusions can reduce the level of protection on your endpoints. Exclusions, if any, should be defined with caution.
 
 For more information on the performance analyzer, see [Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) docs.
 
@@ -266,7 +266,7 @@ Get-MpPerformanceReport [-Path] <String>
 
 The `Get-MpPerformanceReport` cmdlet analyzes a previously collected Microsoft Defender Antivirus performance recording ([New-MpPerformanceRecording](#new-mpperformancerecording)) and reports the file paths, file extensions, and processes that cause the highest impact to Microsoft Defender Antivirus scans.
 
-The performance analyzer provides an insight into problematic files that could cause a degradation in the performance of Microsoft Defender Antivirus. This tool is provided "AS IS" and is not intended to provide suggestions on exclusions. Exclusions can reduce the level of protection on your endpoints. Exclusions, if any, should be defined with caution.
+The performance analyzer provides an insight into problematic files that could cause a degradation in the performance of Microsoft Defender Antivirus. This tool is provided "AS IS" and isn't intended to provide suggestions on exclusions. Exclusions can reduce the level of protection on your endpoints. Exclusions, if any, should be defined with caution.
 
 For more information on the performance analyzer, see [Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) docs.
 
@@ -315,7 +315,7 @@ Using \-Raw in the above command specifies that the output should be machine rea
 
 ##### -TopPaths
 
-Requests a top-paths report and specifies how many top paths to output, sorted by "Duration". Aggregates the scans based on their path and directory. User can specify how many directories should be displayed on each level and the depth of the selection.
+Requests a top-paths report and specifies how many top paths to output, sorted by Duration. Aggregates the scans based on their path and directory. User can specify how many directories should be displayed on each level and the depth of the selection.
 
 ```yaml
 - Type: Int32
@@ -327,9 +327,9 @@ Requests a top-paths report and specifies how many top paths to output, sorted b
 
 ##### -TopPathsDepth
 
-Specifies recursive depth that will be used to group and display aggregated path results. For example "C:\" corresponds to a depth of 1, "C:\Users\Foo" corresponds to a depth of 3.
+Specifies recursive depth that is used to group and display aggregated path results. For example "C:\" corresponds to a depth of 1, "C:\Users\Foo" corresponds to a depth of 3.
 
-This flag can accompany all other Top Path options. If missing, a default value of 3 is assumed. Value cannot be 0.
+This flag can accompany all other Top Path options. If missing, a default value of 3 is assumed. Value can't be 0.
 
 ```yaml
 - Type: Int32
@@ -341,8 +341,8 @@ This flag can accompany all other Top Path options. If missing, a default value 
 
 | flag | definition |
 |:---|:---|  
-|  -**TopScansPerPath** | Specifies how may top scans to specify for each top path. |
-|  -**TopFilesPerPath** | Specifies how may top files to specify for each top path. |
+|  -**TopScansPerPath** | Specifies how many top scans to specify for each top path. |
+|  -**TopFilesPerPath** | Specifies how many top files to specify for each top path. |
 |  -**TopScansPerFilePerPath** | Specifies how many top scans to output for each top file for each top path, sorted by "Duration" |
 |  -**TopExtensionsPerPath** | Specifies how many top extensions to output for each top path |
 |  -**TopScansPerExtensionPerPath** | Specifies how many top scans to output for each top extension for each top path |
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 
 ##### -Path
 
-Specifies the path(s) to one or more locations.
+Specifies the path or paths to one or more locations.
 
 ```yaml
 Type: String
@@ -379,7 +379,7 @@ Accept wildcard characters: False
 
 ##### -Raw
 
-Specifies that output of performance recording should be machine readable and readily convertible to serialization formats like JSON (for example, via Convert-to-JSON command). This is recommended for users interested in batch processing with other data processing systems.
+Specifies that output of performance recording should be machine readable and readily convertible to serialization formats like JSON (for example, via Convert-to-JSON command). This configuration is recommended for users interested in batch processing with other data processing systems.
 
 ```yaml
 Type: <SwitchParameter>
@@ -391,7 +391,7 @@ Accept wildcard characters: False
 
 ##### -TopExtensions
 
-Specifies how many top extensions to output, sorted by "Duration".
+Specifies how many top extensions to output, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -403,7 +403,7 @@ Accept wildcard characters: False
 
 ##### -TopExtensionsPerProcess
 
-Specifies how many top extensions to output for each top process, sorted by "Duration".
+Specifies how many top extensions to output for each top process, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -415,7 +415,7 @@ Accept wildcard characters: False
 
 ##### -TopFiles
 
-Requests a top-files report and specifies how many top files to output, sorted by "Duration".
+Requests a top-files report and specifies how many top files to output, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -427,7 +427,7 @@ Accept wildcard characters: False
 
 ##### -TopFilesPerExtension
 
-Specifies how many top files to output for each top extension, sorted by "Duration".
+Specifies how many top files to output for each top extension, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -439,7 +439,7 @@ Accept wildcard characters: False
 
 ##### -TopFilesPerProcess
 
-Specifies how many top files to output for each top process, sorted by "Duration".
+Specifies how many top files to output for each top process, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 
 ##### -TopProcesses
 
-Requests a top-processes report and specifies how many of the top processes to output, sorted by "Duration".
+Requests a top-processes report and specifies how many of the top processes to output, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -463,7 +463,7 @@ Accept wildcard characters: False
 
 ##### -TopProcessesPerExtension
 
-Specifies how many top processes to output for each top extension, sorted by "Duration".
+Specifies how many top processes to output for each top extension, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -475,7 +475,7 @@ Accept wildcard characters: False
 
 ##### -TopProcessesPerFile
 
-Specifies how many top processes to output for each top file, sorted by "Duration ".
+Specifies how many top processes to output for each top file, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -487,7 +487,7 @@ Accept wildcard characters: False
 
 ##### -TopScans
 
-Requests a top-scans report and specifies how many top scans to output, sorted by "Duration".
+Requests a top-scans report and specifies how many top scans to output, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -499,7 +499,7 @@ Accept wildcard characters: False
 
 ##### -TopScansPerExtension
 
-Specifies how many top scans to output for each top extension, sorted by "Duration".
+Specifies how many top scans to output for each top extension, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -511,7 +511,7 @@ Accept wildcard characters: False
 
 ##### -TopScansPerExtensionPerProcess
 
-Specifies how many top scans to output for each top extension for each top process, sorted by "Duration".
+Specifies how many top scans to output for each top extension for each top process, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -523,7 +523,7 @@ Accept wildcard characters: False
 
 ##### -TopScansPerFile
 
-Specifies how many top scans to output for each top file, sorted by "Duration".
+Specifies how many top scans to output for each top file, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -535,7 +535,7 @@ Accept wildcard characters: False
 
 ##### -TopScansPerFilePerExtension
 
-Specifies how many top scans to output for each top file for each top extension, sorted by "Duration".
+Specifies how many top scans to output for each top file for each top extension, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -547,7 +547,7 @@ Accept wildcard characters: False
 
 ##### -TopScansPerFilePerProcess
 
-Specifies how many top scans for output for each top file for each top process, sorted by "Duration".
+Specifies how many top scans for output for each top file for each top process, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -559,7 +559,7 @@ Accept wildcard characters: False
 
 ##### -TopScansPerProcess
 
-Specifies how many top scans to output for each top process in the Top Processes report, sorted by "Duration".
+Specifies how many top scans to output for each top process in the Top Processes report, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -571,7 +571,7 @@ Accept wildcard characters: False
 
 ##### -TopScansPerProcessPerExtension
 
-Specifies how many top scans for output for each top process for each top extension, sorted by "Duration".
+Specifies how many top scans for output for each top process for each top extension, sorted by Duration.
 
 ```yaml
 Type: Int32
@@ -583,7 +583,7 @@ Accept wildcard characters: False
 
 ##### -TopScansPerProcessPerFile
 
-Specifies how many top scans for output for each top process for each top file, sorted by "Duration".
+Specifies how many top scans for output for each top process for each top file, sorted by Duration.
 
 ```yaml
 Type: Int32
