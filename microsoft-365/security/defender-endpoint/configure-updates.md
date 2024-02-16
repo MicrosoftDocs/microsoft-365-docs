@@ -1,14 +1,13 @@
 ---
 title: Create a custom gradual rollout process for Microsoft Defender updates
 description: Learn how to use supported tools to create a custom gradual rollout process for updates
-keywords: update tools, gpo, intune, mdm, microsoft endpoint manager, policy, powershell
 ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
