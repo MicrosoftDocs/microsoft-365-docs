@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
+  title: Troubleshoot Microsoft Defender Antivirus while migrating from a non-Microsoft solution
   description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
   ms.service: defender-endpoint
   ms.localizationpriority: medium
@@ -17,7 +17,7 @@ metadata:
   - mde-ngp
   search.appverid: met150
   ms.date: 03/24/2023
-title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
+title: Troubleshoot Microsoft Defender Antivirus while migrating from a non-Microsoft solution
 summary: |
   [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,7 +29,7 @@ summary: |
   **Platforms**
   - Windows
 
-  You can find help here if you encounter issues while migrating from a third-party security solution to Microsoft Defender Antivirus.
+  You can find help here if you encounter issues while migrating from a non-Microsoft security solution to Microsoft Defender Antivirus.
 
 sections:
   - name: General
@@ -68,12 +68,12 @@ sections:
           - **Description**: Microsoft Defender Antivirus scanning for spyware and other potentially unwanted software is disabled.
           - **Source**: Windows Defender
 
-          ### How to tell if Microsoft Defender Antivirus won't start because a third-party antivirus is installed
+          ### How to tell if Microsoft Defender Antivirus won't start because a non-Microsoft antivirus is installed
 
-          On a Windows 10 or Windows 11 device, if you are not using Microsoft Defender for Endpoint, and you have a third-party antivirus installed, then Microsoft Defender Antivirus will be automatically turned off. If you are using Microsoft Defender for Endpoint with a third-party antivirus installed, Microsoft Defender Antivirus will start in passive mode, with reduced functionality.
+          On a Windows 10 or Windows 11 device, if you are not using Microsoft Defender for Endpoint, and you have a non-Microsoft antivirus installed, then Microsoft Defender Antivirus will be automatically turned off. If you are using Microsoft Defender for Endpoint with a non-Microsoft antivirus installed, Microsoft Defender Antivirus will start in passive mode, with reduced functionality.
 
           > [!TIP]
-          > The scenario just described applies only to Windows 10 and Windows 11. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside third-party security software.
+          > The scenario just described applies only to Windows 10 and Windows 11. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside non-Microsoft security software.
 
           #### Use Services app to check if Microsoft Defender Antivirus is turned off
 
@@ -83,7 +83,7 @@ sections:
 
           While checking the app, you may see that *Microsoft Defender Antivirus Service* is set to manual, but when you try to start this service manually, you get a warning stating, *The Microsoft Defender Antivirus Service service on Local Computer started and then stopped. Some services stop automatically if they are not in use by other services or programs.*
 
-          This indicates that Microsoft Defender Antivirus has been automatically turned off to preserve compatibility with a third-party antivirus.
+          This indicates that Microsoft Defender Antivirus has been automatically turned off to preserve compatibility with a non-Microsoft antivirus.
 
           #### Generate a detailed report
 
@@ -136,14 +136,14 @@ sections:
 
           ### Turn Microsoft Defender Antivirus back on
 
-          Microsoft Defender Antivirus will automatically turn on if no other antivirus is currently active. You'll need to turn the third-party antivirus completely off to ensure Microsoft Defender Antivirus can run with full functionality.
+          Microsoft Defender Antivirus will automatically turn on if no other antivirus is currently active. You'll need to turn the non-Microsoft antivirus completely off to ensure Microsoft Defender Antivirus can run with full functionality.
 
           > [!WARNING]
           > Solutions suggesting that you edit the *Windows Defender* start values for *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc*, and *windefend* in  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services are unsupported, and may force you to re-image your system.
 
-          Passive mode is available if you start using Microsoft Defender for Endpoint and a third-party antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender Antivirus to scan files and update itself, but it will not remediate threats. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) is not available under passive mode, unless [Endpoint data loss prevention (DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) is deployed.
+          Passive mode is available if you start using Microsoft Defender for Endpoint and a non-Microsoft antivirus together with Microsoft Defender Antivirus. Passive mode allows Microsoft Defender Antivirus to scan files and update itself, but it will not remediate threats. In addition, behavior monitoring via [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) is not available under passive mode, unless [Endpoint data loss prevention (DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) is deployed.
 
-          Another feature, known as [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), is available to end-users when Microsoft Defender Antivirus is set to automatically turn off. This feature allows Microsoft Defender Antivirus to scan files periodically alongside a third-party antivirus, using a limited number of detections.
+          Another feature, known as [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), is available to end-users when Microsoft Defender Antivirus is set to automatically turn off. This feature allows Microsoft Defender Antivirus to scan files periodically alongside a non-Microsoft antivirus, using a limited number of detections.
 
           > [!IMPORTANT]
           > Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced as compared to active mode.
