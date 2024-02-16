@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: siosulli
 ms.author: siosulli
-ms.date: 04/18/2023
+ms.date: 02/16/2024
 manager: deniseb
 ms.collection: 
 - m365-security
@@ -33,7 +33,7 @@ search.appverid: met150
 Microsoft Defender Antivirus performance analyzer has the following prerequisites:
 
 - Supported Windows versions: Windows 10, Windows 11, Windows 2012 R2 with the Modern Unified Solution and Windows Server 2016 and above
-- Platform Version: 4.18.2108.7+
+- Platform Version: `4.18.2108.7` or later
 - PowerShell Version: PowerShell Version 5.1, PowerShell ISE, remote PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
 ## What is Microsoft Defender Antivirus performance analyzer?
@@ -42,7 +42,7 @@ Microsoft Defender Antivirus performance analyzer has the following prerequisite
 
 Similar to the way mechanics perform diagnostics and service on a vehicle that has performance problems, performance analyzer can help you improve Defender Antivirus performance.
 
-:::image type="content" source="images/performance-analyzer-improve-defender-antivirus-performance.png" alt-text="Conceptual performance analyzer image for Microsoft Defender Antivirus. The diagram is related to:  Microsoft Defender performance analyzer, defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows defender, microsoft defender, microsoft windows 10, microsoft defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows defender antivirus, Windows 10 antivirus, microsoft windows defender, performance windows. " lightbox="images/performance-analyzer-improve-defender-antivirus-performance.png":::
+:::image type="content" source="images/performance-analyzer-improve-defender-antivirus-performance.png" alt-text="Conceptual performance analyzer image for Microsoft Defender Antivirus. The diagram is related to:  Microsoft Defender performance analyzer, Defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows Defender, microsoft Defender, microsoft windows 10, microsoft Defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows Defender antivirus, Windows 10 antivirus, microsoft windows Defender, performance windows. " lightbox="images/performance-analyzer-improve-defender-antivirus-performance.png":::
 
 Some options to analyze include:
 
@@ -84,7 +84,7 @@ To start recording system events, open PowerShell in administrative mode and per
 
 3. Press **ENTER** to stop and save recording, or **Ctrl+C** to cancel recording.
 
-4. Analyze the results using the performance analyzer's `Get-MpPerformanceReport` parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top 3 files affecting performance.
+4. Analyze the results using the performance analyzer's `Get-MpPerformanceReport` parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top three files affecting performance.
 
 For more information on command-line parameters and options, see the [New-MpPerformanceRecording](#new-mpperformancerecording) and [Get-MpPerformanceReport](#get-mpperformancereport).
 
@@ -94,7 +94,7 @@ For more information on command-line parameters and options, see the [New-MpPerf
 
 ## Performance tuning data and information
 
-Based on the query, the user will be able to view data for scan counts, duration (total/min/average/max/median), path, process, and **reason for scan**. The image below shows sample output for a simple query of the top 10 files for scan impact.
+Based on the query, the user is able to view data for scan counts, duration (total/min/average/max/median), path, process, and **reason for scan**. The following image shows sample output for a simple query of the top 10 files for scan impact.
 
 :::image type="content" source="images/example-output.png" alt-text="Example output for a basic TopFiles query" lightbox="images/example-output.png":::
 
