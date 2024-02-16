@@ -1,11 +1,9 @@
 ---
 title: Behavioral blocking and containment
 description: Learn about behavioral blocking and containment capabilities at Microsoft Defender for Endpoint
-keywords: Microsoft Defender for Endpoint, EDR in block mode, passive mode blocking
-ms.pagetype: security
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+manager: deniseb
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: conceptual
