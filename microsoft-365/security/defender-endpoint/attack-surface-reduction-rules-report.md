@@ -273,7 +273,7 @@ The **Add exclusions** tab presents a ranked list of detections by file name and
 
 > [!IMPORTANT]
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files are allowed to run, and no report or event will be recorded.
-> If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit).
+> If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](attack-surface-reduction-rules-deployment-test.md#step-1-test-attack-surface-reduction-rules-using-audit).
 
 When you select a file, a **Summary & expected impact** fly out opens, presenting the following types of information:
 
