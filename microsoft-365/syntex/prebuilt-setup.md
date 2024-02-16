@@ -38,7 +38,9 @@ After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing
 
 ## Manage sites
 
-By default, prebuilt document processing is turned on for libraries in all SharePoint sites. Follow these steps to manage which SharePoint sites users can use to create prebuilt models to process files.
+By default, prebuilt document processing is turned on for libraries in all SharePoint sites. When prebuilt document processing is on, prebuilt models are allowed to run. Prebuilt models can also be created and applied on sites that are specified.
+
+Follow these steps to manage which SharePoint sites users can use to create prebuilt models to process files.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
@@ -62,11 +64,15 @@ By default, prebuilt document processing is turned on for libraries in all Share
 
 ## Turn off prebuilt document processing
 
+When the prebuilt document processing service is off, prebuilt models will not run, and users will not be able to create or apply prebuilt models.
+
+Follow these steps to turn off the prebuilt document processing service.
+
 1. On the **Manage Microsoft Syntex** page, select **Prebuilt document processing**.
 
 2. On the **Prebuilt document processing** page, under **Status**, turn the toggle to **Off**.
 
-When prebuilt document processing is off, prebuilt models will not run, and users will not be able to create or apply prebuilt models.
+    ![Screenshot of a Prebuilt document processing panel showing the Status toggle.](../media/content-understanding/turn-off-service.png)
 
-> [!NOTE]
-> For multi-geo environments, when the service is turned off, the service is off for all geos.
+    > [!NOTE]
+    > For multi-geo environments, when the service is turned off, the service is off for all geos.
