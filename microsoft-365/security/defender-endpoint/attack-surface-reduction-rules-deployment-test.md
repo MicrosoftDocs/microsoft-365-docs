@@ -104,14 +104,14 @@ Provides a 30-day timeline of detected audit and blocked events.
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Graph that shows the attack surface reduction rules report summary detections card." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png":::
 
-The Attack Surface reduction rules pane provides an overview of detected events on a per-rule basis.
+The attack surface reduction rules pane provides an overview of detected events on a per-rule basis.
 
 > [!NOTE]
 > There are some variations in attack surface reduction rules reports. Microsoft is in the process of updating the behavior of the attack surface reduction rules reports to provide a consistent experience.
 
 :::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png" alt-text="Graph that shows the attack surface reduction rules report summary configuration card." lightbox="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png":::
 
-Click **View detections** to open the **Detections** tab.
+Select **View detections** to open the **Detections** tab.
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search.png" alt-text="Screenshot that shows the attack surface reduction rules report search feature." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search.png":::
 
@@ -254,4 +254,5 @@ Event ID | Description
 [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
