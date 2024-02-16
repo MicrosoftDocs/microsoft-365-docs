@@ -56,7 +56,7 @@ Network protection works on devices with the following conditions:
 
 ## Use audit mode
 
-You can enable network protection in audit mode and then visit a website that's designed to demo the feature. All website connections is allowed by network protection but an event will be logged to indicate any connection that would have been blocked if network protection was enabled.
+You can enable network protection in audit mode and then visit a website that's designed to demo the feature. All website connections are allowed by network protection but an event is logged to indicate any connection that would have been blocked if network protection was enabled.
 
 1. Set network protection to **Audit mode**.
 
