@@ -202,7 +202,7 @@ sections:
 
               - NIS: Network inspection system
 
-              - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+              - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls.
 
               - Early Launch Antimalware (ELAM). This source includes malware detected by the boot sequence.
 
@@ -481,9 +481,9 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this source protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this source protects against malicious webpage controls.
 
-             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+             - Early Launch Antimalware (ELAM). This source includes malware detected by the boot sequence.
 
              - Remote attestation
 
@@ -540,9 +540,9 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls.
 
-             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence.
 
              - Remote attestation
 
@@ -556,7 +556,7 @@ sections:
 
           - Engine Version: Antimalware Engine version
 
-         User action: No action is required. Microsoft Defender Antivirus can suspend and take routine action on this threat. If you want to remove the threat manually, in the Microsoft Defender Antivirus interface, click **Clean Computer**.
+         User action: No action is required. Microsoft Defender Antivirus can suspend and take routine action on this threat. If you want to remove the threat manually, in the Microsoft Defender Antivirus interface, select **Clean Computer**.
 
      - question: Event ID 1117
        answer: |
@@ -593,7 +593,7 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this source protects against malicious webpage controls.
 
              - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
 
@@ -694,7 +694,7 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls.
 
              - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
 
@@ -769,7 +769,7 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls.
 
              - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
 
