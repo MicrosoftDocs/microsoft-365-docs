@@ -36,8 +36,8 @@ Attack surface reduction rules target specific behaviors that are typically used
 
 - Windows 11, Windows 10 1709 build 16273 or later
 - Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2 with the unified MDE client.
-- Microsoft Defender AV
-- Microsoft Office (required for Office rules and sample)
+- Microsoft Defender Antivirus
+- Microsoft 365 Apps (Office; required for Office rules and sample)
 - [Download attack surface reduction PowerShell scripts](https://demo.wd.microsoft.com/Content/WindowsDefender_ASR_scripts.zip)
 
 ## PowerShell commands
@@ -121,7 +121,7 @@ You can perform these manual steps instead:
 ### Scenario 1: ASR blocks a test file with multiple vulnerabilities
 
 1. Enable all rules in block mode using the PowerShell commands (you can copy paste all)
-2. Download and open any of the test file/documents, enable editing and content if prompted.
+2. Download and open any of the test file/documents, and enable editing and content, if prompted.
 
 #### Scenario 1 expected results
 
@@ -201,7 +201,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1
 ```
 
   
-Cleanup **c:\demo** encryption by running the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
+Clean up **c:\demo** encryption by running the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## See also
 
