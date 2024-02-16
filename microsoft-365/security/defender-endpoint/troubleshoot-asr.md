@@ -31,7 +31,7 @@ search.appverid: met150
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-When you use [attack surface reduction rules](attack-surface-reduction.md) you may run into issues, such as:
+When you use [attack surface reduction rules](attack-surface-reduction.md) you might run into issues, such as:
 
 - A rule blocks a file, process, or performs some other action that it shouldn't (false positive)
 - A rule doesn't work as described, or doesn't block a file or process that it should (false negative)
@@ -69,7 +69,7 @@ Follow these instructions in [Use the demo tool to see how attack surface reduct
 
 If a rule isn't blocking a file or process that you're expecting it should block, first check if audit mode is enabled.
 
-Audit mode may have been enabled for testing another feature, or by an automated PowerShell script, and may not have been disabled after the tests were completed.
+Audit mode might have been enabled for testing another feature, or by an automated PowerShell script, and might not have been disabled after the tests were completed.
 
 If you've tested the rule with the demo tool and with audit mode, and attack surface reduction rules are working on preconfigured scenarios, but the rule isn't working as expected, proceed to either of the following sections based on your situation:
 
