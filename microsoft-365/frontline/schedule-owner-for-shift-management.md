@@ -30,10 +30,9 @@ ms.custom: seo-marvel-mar2020
 ms.date: 
 ---
 
-# Overview of team owner, schedule owner, and team member roles in Shifts
+# Use roles to define your frontline managers and workers in Shifts
 
 Alternative titles:
-- Use roles to define your frontline managers and workers in Shifts
 - Overview of team owner, schedule owner, and team member roles in Shifts
 - Frontline manager and frontline worker roles in Shifts
 
@@ -52,8 +51,6 @@ In Shifts, there are two user personas&mdash;frontline manager and frontline wor
 
 Each role has different capabilities in Shifts and in Teams. Here's a summary of the capabilities of each role.
 
-<!--### In Shifts-->
-
 |Capability in Shifts  |Team member |Schedule owner |Team owner |
 |---------|:---------:|:---------:|:---------:|
 |Create, edit, and publish schedules to manage their team’s shifts assignments.||✔️|✔️|
@@ -65,8 +62,6 @@ Each role has different capabilities in Shifts and in Teams. Here's a summary of
 |Create and cancel shift requests.|✔️||
 |Clock in and out of shifts.|✔️|✔️|✔️|
 |Set availability (or working preferences) in Shifts.|✔️|||
-
-<!--### In Teams-->
 
 |Capability in Teams* |Team member  |Schedule owner |Team owner  |
 |---------|:---------:|:---------:|:---------:|
