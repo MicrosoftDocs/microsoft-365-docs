@@ -1,6 +1,6 @@
 ---
-title: Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
-description: This topic describes how to report and troubleshoot Microsoft Defender for Endpoint ASR Rules
+title: Report and troubleshoot Microsoft Defender for Endpoint attack surface reduction rules
+description: This article describes how to report and troubleshoot Microsoft Defender for Endpoint attack surface reduction ules
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
@@ -20,7 +20,7 @@ search.appverid: met150
 ms.date: 07/18/2023
 ---
 
-# Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
+# Report and troubleshoot Defender for Endpoint attack surface reduction rules
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
