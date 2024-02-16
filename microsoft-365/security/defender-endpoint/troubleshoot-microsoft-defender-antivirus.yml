@@ -5,7 +5,7 @@ metadata:
   author: siosulli
   ms.author: siosulli
   ms.service: defender-endpoint
-  ms.topic: conceptual
+  ms.topic: troubleshooting
   ms.date: 02/16/2024
   ms.localizationpriority: medium
   ms.custom: nextgen
@@ -43,7 +43,7 @@ sections:
 
           4. In the details pane, view the list of individual events to find your event.
 
-          5. Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
+          5. Select the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
      - question: Event ID 1000
        answer: |
@@ -204,7 +204,7 @@ sections:
 
               - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
 
-              - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence.
+              - Early Launch Antimalware (ELAM). This source includes malware detected by the boot sequence.
 
               - Remote attestation
 
@@ -241,19 +241,19 @@ sections:
 
           - Action: Action. Examples:
 
-              - Clean: The resource was cleaned
+              - Clean: The resource was cleaned.
 
-              - Quarantine: The resource was quarantined
+              - Quarantine: The resource was quarantined.
 
-              - Remove: The resource was deleted
+              - Remove: The resource was deleted.
 
-              - Allow: The resource was allowed to execute/exist
+              - Allow: The resource was allowed to execute/exist.
 
               - User defined: User-defined action that's typically from this list of actions specified by the user.
 
               - No action: No action
 
-              - Block: The resource was blocked from executing
+              - Block: The resource was blocked from executing.
 
           - Status: Status
 
@@ -284,19 +284,19 @@ sections:
 
            - Action: Action. Examples:
 
-              - Clean: The resource was cleaned
+              - Clean: The resource was cleaned.
 
-              - Quarantine: The resource was quarantined
+              - Quarantine: The resource was quarantined.
 
-              - Remove: The resource was deleted
+              - Remove: The resource was deleted.
 
-              - Allow: The resource was allowed to execute/exist
+              - Allow: The resource was allowed to execute/exist.
 
               - User defined: User-defined action that's typically from this list of actions specified by the user.
 
               - No action: No action
 
-              - Block: The resource was blocked from executing
+              - Block: The resource was blocked from executing.
 
           - Error Code: Error code Result code associated with threat status. Standard HRESULT values.
 
@@ -425,7 +425,7 @@ sections:
 
          Description: Microsoft Defender Antivirus removed history of malware and other potentially unwanted software.
 
-          - Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.
+          - Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For such events, we specifically call them as Action Time or Detection Time.
 
           - User: Domain\User
 
@@ -438,7 +438,7 @@ sections:
 
          Description: Microsoft Defender Antivirus encountered an error trying to remove history of malware and other potentially unwanted software.
 
-          - Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.
+          - Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For such events, we specifically call them as Action Time or Detection Time.
 
           - User: Domain\User
 
@@ -481,7 +481,7 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this source protects against malicious webpage controls
 
              - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
 
