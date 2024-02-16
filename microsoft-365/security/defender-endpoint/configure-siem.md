@@ -74,18 +74,18 @@ The below table provides a mapping between the SIEM API to the Microsoft Defende
 | `AlertId` |->| `id` |
 | `Actor` |->| `actorDisplayName` |
 | `LinkToWDATP` |->| alertWebUrl |
-| IocName | X | IoC fields not supported |
-| IocValue | X | IoC fields not supported |
-| CreatorIocName | X | IoC fields not supported |
-| CreatorIocValue | X | IoC fields not supported |
-| Sha1 |->| evidence/fileEvidence/fileDetails: sha1 (or evidence/processEvidence/imageFile: sha1) |
-| FileName |->| evidence/fileEvidence/fileDetails: fileName (or evidence/processEvidence/image: fileName) |
-| FilePath |->| evidence/fileEvidence/fileDetails: filePath (or evidence/processEvidence/image: filePath) |
-| IPAddress |->| evidence/ipEvidence: ipAddress |
-| URL | -> | evidence/urlEvidence: url |
-| IoaDefinitionId |->| detectorId |
-| UserName |->| evidence/userEvidence/userAccount: accountName |
-| AlertPart | X | Obsolete (MDE alerts are atomic/complete that are updatable, while the SIEM API were immutable records of detections) |
+| `IocName` | X | IoC fields not supported |
+| `IocValue` | X | IoC fields not supported |
+| `CreatorIocName` | X | IoC fields not supported |
+| `CreatorIocValue` | X | IoC fields not supported |
+| `Sha1` |->| `evidence/fileEvidence/fileDetails: sha1 (or evidence/processEvidence/imageFile: sha1)` |
+| `FileName` |->| `evidence/fileEvidence/fileDetails: fileName (or evidence/processEvidence/image: fileName)` |
+| `FilePath` |->| `evidence/fileEvidence/fileDetails: filePath (or evidence/processEvidence/image: filePath)` |
+| `IPAddress` |->| `evidence/ipEvidence: ipAddress` |
+| `URL` | -> | `evidence/urlEvidence: url` |
+| `IoaDefinitionId` |->| `detectorId` |
+| `UserName` |->| `evidence/userEvidence/userAccount: accountName` |
+| AlertPart | X | Obsolete (Defender for Endpoint alerts are atomic/complete that are updatable, while the SIEM API were immutable records of detections) |
 | FullId | X | IoC fields not supported |
 | LastProcessedTimeUtc |->| lastActivityDateTime |
 | ThreatCategory |->| mitreTechniques [] |
