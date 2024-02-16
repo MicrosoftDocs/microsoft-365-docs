@@ -50,7 +50,7 @@ You also now have a *billing profile* associated with your billing account. A bi
 
 Like billing accounts, billing profiles also have special roles that you can assign to users in your organization. These roles let users do things like assign billing profile roles, edit the billing profile group, use the billing profile in a purchase, pay bills, and view the billing profile group.
 
-For more information, see [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md).
+For more information, see [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 
 ## Additional changes
 
@@ -66,6 +66,6 @@ The following list describes other changes we’ve made to the billing experienc
 ## Related articles
 
 [Understand your Microsoft business billing account](manage-billing-accounts.md) (article)\
-[Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md) (article)\
+[Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md) (article)\
 [Understand your bill or invoice](billing-and-payments/understand-your-invoice.md) (article)\
 [Payment options for Microsoft business subscriptions](billing-and-payments/pay-for-your-subscription.md) (article)

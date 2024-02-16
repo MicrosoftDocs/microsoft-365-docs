@@ -23,12 +23,12 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 
+ms.date: 02/15/2024
 ---
 
 # Engage your frontline workers and focus on wellbeing
 
-Nurture a sense of belonging among your frontline team by empowering to engage with your entire organization.
+Nurture a sense of belonging among your frontline teams by empowering them to engage with your entire organization.
 
 Surveys like Microsoft’s [Work Trend Index Pulse Report](https://microsoft.com/worklab/work-trend-index) show that many frontline workers:
 
@@ -36,43 +36,39 @@ Surveys like Microsoft’s [Work Trend Index Pulse Report](https://microsoft.com
 - Say leadership doesn't prioritize building culture
 - Believe that work stress will either stay the same or worsen in the coming year
 
-You can help your frontline team overcome these challenges and feel supported in your organization by using Teams, [Viva Connections](#connect-frontline-workers-to-your-broader-organization-with-viva-connections), [Viva Engage](#create-communities-with-viva-engage), [Praise](#boost-morale-with-praise), and [SharePoint](#support-engagement).
+You can help your frontline teams overcome these challenges and feel supported in your organization by using Viva Connections, Viva Engage, Praise, and SharePoint.
 
 ## Connect frontline workers to your broader organization with Viva Connections
 
-<!-- >> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vpnn]-->
+Keep everyone engaged and informed with [Viva Connections](/viva/connections/viva-connections-overview). Use the Viva Connections app in Teams to:
 
-With [Viva Connections](/viva/connections/viva-connections-overview), your frontline workers can easily access everything they need on the go. Use the Viva Connections app for Teams to:
-
-- Connect frontline workers and create opportunities to engage, communicate, and collaborate
-- Make it easy for frontline workers to access important news and announcements
-- Empower frontline workers around a common mission and goal
+- Connect frontline workers and create opportunities to engage, communicate, and collaborate.
+- Make it easy for frontline workers to access important news and announcements.
+- Empower frontline workers around a common mission and goal.
 - Create a sense of belonging and provide tools that help foster wellbeing.
+
+You can customize Viva Connections to give your frontline easy access to resources, tools, relevant news, and popular destinations so they can access everything they need on the go.
 
 ### Increase engagement with communications
 
-Viva Connections is composed of three main components that can be set up and customized in different ways to highlight tools and resources: the dashboard, feed and resources.
+The Viva Connections experience is composed of three main components: the feed, dashboard, and resources.
 
-<!--![Viva Connections dashboard, feed, and resources.](media/viva-connections-mobile-flw.png)-->
+- **Feed**: The feed aggregates content from multiple sources to display a personalized news and information stream.  [Learn more](/viva/connections/viva-connections-overview#viva-connections-feed).
+- **Dashboard**: The dashboard is your employee’s digital toolset that brings together the tools and resources they need. Prioritize cards that help your frontline accomplish daily tasks like clocking in and out of shifts or viewing assigned tasks. [Learn more](/viva/connections/viva-connections-overview#viva-connections-dashboard).
+- **Resources**: Resources surfaces links to popular SharePoint sites and other content. Link to popular SharePoint sites like HR benefits and training resources. [Learn more](/viva/connections/viva-connections-overview#viva-connections-resources).
 
-|Component |Description |Capabilities |
-|:---------|:-----------|:------------|
-|Dashboard |The dashboard is your employee’s digital toolset that brings together the resources they need. |Prioritize cards that help frontline workers accomplish common tasks like clocking in and out, or viewing assigned tasks. Cards can be targeted to distinct roles and regions. |
-|Feed |The feed aggregates content from Viva Engage and SharePoint news to display a personalized news stream. |Content in the feed gets automatically aggregated based on sites and Viva Engage communities that the user follows. Content can be prioritized to display more prominently in the feed. Use audience targeting to display content to specific audiences. |
-|Resources |The resources experience surfaces links to popular SharePoint sites and other content. |Resources are inherited from global navigation in SharePoint. Link to popular SharePoint sites like HR benefits and training resources. |
+As you prioritize and align scenarios to support, consider how and where certain tools and resources should be located.
 
-There are several ways to use Viva Connections to communicate with your workforce. Viva Connections features a [feed](/viva/connections/viva-connections-overview#viva-connections-feed) where news, content from Viva Engage, and videos are aggregated and displayed in a personalized view based on the sites and communities that the viewer follows. The [dashboard](/viva/connections/create-dashboard) can also be used to highlight certain cards that link to important news sources.
-
-As you prioritize and align the scenarios to support, consider how and where certain tools and resources should be located. [Learn more about the differences between desktop and mobile apps](/viva/connections/viva-connections-overview#viva-connections-mobile-and-desktop-experiences).
+[Learn more about the differences between the Viva Connections desktop and mobile experience](/viva/connections/viva-connections-overview#viva-connections-mobile-and-desktop-experiences).
 
 #### Empower your workers to share feedback
 
-Creating channels for your frontline workers to share feedback helps these teams feel engaged and like their voices matter. Additionally, getting feedback from these teams can provide insights into how your organization can improve processes.
+Creating channels for your frontline workers to share feedback helps your teams feel engaged and like their voices matter. Additionally, getting feedback from your teams can provide insights into how your organization can improve processes.
 
-- **On the dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Viva Engage communities](https://support.microsoft.com/office/join-and-create-a-community-in-yammer-56aaf591-1fbc-4160-ba26-0c4723c23fd6). You can also [integrate third-party solutions into the dashboard](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
+- **On the dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Viva Engage communities](https://support.microsoft.com/topic/communities-in-viva-engage-1ee29da1-5250-4c1e-b773-e7a78cfaf5d4). You can also [integrate third-party solutions](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration) into the dashboard.
 
     > [!NOTE]
-    > Form creation requires an F3 or Enterprise license. Workers with F1 licenses can fill out forms, but they'll need to be created by someone with an F3 or Enterprise license. [Learn more about license types](flw-licensing-options.md) or see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
+    > Form creation requires an F3 or Enterprise license. Workers with F1 licenses can fill out forms, but the forms need to be created by someone with an F3 or Enterprise license. [Learn more about license types](flw-licensing-options.md) or see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
 
 - **In the feed**: Strategically [publish a SharePoint news post](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) targeted to frontline workers to highlight different ways to collect feedback and explains how feedback can improve the frontline worker experience.
 - **In resources**: Link to feedback tools so that frontline workers know where to go to provide feedback.
@@ -87,26 +83,26 @@ Frontline workers need extra support when it comes to managing health and wellbe
 
 ### Create a supportive digital ecosystem
 
-Empowering frontline workers with the right technology makes their jobs easier and helps your organization quickly adapt to ever-changing work conditions. Use Viva Connections to create a digital ecosystem and curated employee experience.
+Empowering frontline workers with the right technology makes their jobs easier and helps your organization quickly adapt to ever-changing work conditions. Use Viva Connections to create a digital ecosystem and a curated employee experience.
 
 - **On the dashboard**: Use [adaptive card templates](/adaptive-cards/templating/), the [Card designer](/viva/connections/create-dashboard#design-your-own-card-with-a-quick-view), and [third-party integrations](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration) to create custom cards and quick views that help workers access information and complete every day tasks such as:
-
     - Finding or securing parking spaces
     - Accessing pay and benefits information
     - Requesting new uniforms and supplies
-
 - **In the feed**: [SharePoint news posts](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) and [video news links](/viva/connections/video-news-links) allow you to digitize organizational announcements. News posts are highlighted throughout the entire Microsoft 365 ecosystem, can be translated into different languages, and can be easily found when employees are searching for content.
 - **In resources**: Link to tools that your teams use to manage work, such as [Teams apps](flw-team-collaboration.md#apps-in-teams).
 
 ### Get started planning, building, and launching Viva Connections
 
-Review Viva Connections capabilities, technical requirements, and customization options. Then, work with stakeholders (such as representatives from HR and operations and process owners) who can accurately represent the needs of your frontline workforce. Take inventory of the highest priority needs and align them to Viva Connections capabilities to build a custom experience in Teams.
+Review Viva Connections capabilities, technical requirements, and customization options. Then, work with stakeholders (such as representatives from HR, operations, and process owners) who can accurately represent the needs of your frontline workforce. Take inventory of the highest priority needs and align them to Viva Connections capabilities to build a custom experience in Teams.
 
-[Get started planning, building, and launching Viva Connections for your organization](/viva/connections/plan-viva-connections).
+[Learn how to plan, build, and launch Viva Connections in your organization](/viva/connections/viva-connections-setup-overview).
 
 ## Create communities with Viva Engage
 
-[Viva Engage](/viva/engage/overview) is an internal social network that gives members of your organization opportunities to connect with each other. You can create communities where members of your organization can post messages and communicate. Having a variety of communities that span both frontline and non-frontline teams helps your on-the-ground workforce connect to each other and the broader organization. Communities can be based on:
+[Viva Engage](/viva/engage/overview) is an internal social network that gives members of your organization opportunities to connect with each other. You can create [communities](https://support.microsoft.com/topic/communities-in-viva-engage-1ee29da1-5250-4c1e-b773-e7a78cfaf5d4) where members of your organization can ask and answer questions, share knowledge, and find belonging at work. Having a variety of communities that span both frontline and non-frontline teams helps your on-the-ground workforce connect to each other and the broader organization.
+
+Communities can be based on:
 
 - Location
 - Roles, such as cashiers or nurses
@@ -114,15 +110,9 @@ Review Viva Connections capabilities, technical requirements, and customization 
 - Identity groups
 - And more
 
-### Host live events
-
-Members of your leadership or management team can host live events in Viva Engage where employees can engage and ask questions in real time over chat. Your communications and management teams can use live events to share announcements, host morale events, and more.
-
-[Learn more about how to organize a Microsoft Teams powered live event in Viva Engage](/viva/engage/organize-live-event).
-
 ## Boost morale with Praise
 
-The Praise app in Teams lets managers and employees congratulate each other and share appreciation by sending badges in Teams chat and channels. Praise helps employees feel recognized for achievements such as meeting goals and going above and beyond to help customers.
+The Praise app in Teams lets managers and employees congratulate each other and share appreciation by sending badges in Teams chats and channels. Praise helps employees feel recognized for achievements such as meeting goals and going above and beyond to help customers.
 
 [Learn how to manage Praise for your organization](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
@@ -139,18 +129,3 @@ If your organization already uses Teams, you might have recorded some of your me
 [Learn how to record Teams meetings and store them in SharePoint](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24).
 
 After a meeting is recorded and saved in SharePoint, your corporate communications team can [add a card in Viva Connections](/viva/connections/create-dashboard#create-a-dashboard-and-add-cards) to make it easily accessible for your frontline teams.
-
-<!--### Host live events and share video content on Microsoft Stream
-
-Microsoft Stream is your organization's own streaming video platform. With Stream, anyone in your organization can record and upload videos to share. Ways you can use Stream to engage your frontline workers include:
-
-- Share announcements such as product releases and new policies so your frontline team isn't the last to know.
-- Members of the leadership team can introduce themselves and discuss their goals so your frontline team understands who drives decisions and why.
-- Frontline teams from different locations can create videos introducing themselves and showcasing their location so workers in different places can feel connected.
-
-> [!NOTE]
-> Only users with an Enterprise license can host events or publish to stream. Users with F licenses can join events and view videos.
-
-[Learn more about Microsoft Stream](https://support.microsoft.com/office/explore-stream-87a7d1e2-ef0e-44c6-88dc-74b23266cfc0).
-
-Your corporate communications team can make sure everyone has easy access to stream videos by [adding a card in Viva Connections](/viva/connections/create-dashboard#create-a-dashboard-and-add-cards).-->
