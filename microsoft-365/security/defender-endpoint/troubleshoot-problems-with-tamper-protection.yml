@@ -2,17 +2,14 @@
 metadata:
   title: Troubleshoot problems with tamper protection
   description: Information and resources to troubleshoot issues with tamper protection.
-  keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration, microsoft defender antivirus 
   ms.service: defender-endpoint
-  ms.mktglfcycl: manage
-  ms.sitesec: library
   ms.localizationpriority: medium
   ms.topic: faq
-  author: denisebmsft
-  ms.author: deniseb
+  author: siosulli
+  ms.author: siosulli
   ms.custom: nextgen
   ms.reviewer:
-  manager: dansimp
+  manager: deniseb
   ms.subservice: ngp
   ms.collection: 
   - m365-security
