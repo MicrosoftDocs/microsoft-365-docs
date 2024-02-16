@@ -124,12 +124,12 @@ Microsoft Defender Antivirus must not be in any of the following modes:
 
 See [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) for more.
 
-### Cloud Protection (MAPS) must be enabled to enable ASR rules
+### Cloud Protection (MAPS) must be enabled to enable attack surface reduction rules
 
 Microsoft Defender Antivirus works seamlessly with Microsoft cloud services. These cloud protection services, also referred to as Microsoft Advanced Protection Service (MAPS), enhances standard real-time protection, arguably providing the best antivirus defense. Cloud protection is critical to preventing breaches from malware and a critical component of attack surface reduction rules.
 [Turn on cloud-delivered protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-### Microsoft Defender Antivirus components must be current versions for ASR rules
+### Microsoft Defender Antivirus components must be current versions for attack surface reduction rules
 
 The following Microsoft Defender Antivirus component versions must be no more than two versions older than the most-currently-available version:
 
@@ -137,11 +137,11 @@ The following Microsoft Defender Antivirus component versions must be no more th
 - **Microsoft Defender Antivirus engine version** - Microsoft Defender Antivirus engine is updated monthly.
 - **Microsoft Defender Antivirus security intelligence** - Microsoft continually updates Microsoft Defender security intelligence (also known as, definition and signature) to address the latest threats, and to refine detection logic.
 
-Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules false positive results and improves Microsoft Defender Antivirus detection capabilities. For more details on the current versions and how to update the different Microsoft Defender Antivirus components visit [Microsoft Defender Antivirus platform support](microsoft-defender-antivirus-updates.md).
+Keeping Microsoft Defender Antivirus versions current helps reduce attack surface reduction rules false positive results and improves Microsoft Defender Antivirus detection capabilities. For more details on the current versions and how to update the different Microsoft Defender Antivirus components visit [Microsoft Defender Antivirus platform support](microsoft-defender-antivirus-updates.md).
 
 ### Caveat
 
-Some rules don't work well if unsigned, internally developed application and scripts are in high usage. It's more difficult to deploy ASR rules if code signing isn't enforced.
+Some rules don't work well if unsigned, internally developed application and scripts are in high usage. It's more difficult to deploy attack surface reduction rules if code signing isn't enforced.
 
 ## Other articles in this deployment collection
 
@@ -165,7 +165,7 @@ Some rules don't work well if unsigned, internally developed application and scr
 
 [Demystifying attack surface reduction rules - Part 4](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-4/ba-p/1384425)
 
-### ASR rules collection
+### Attack surface reduction rules collection
 
 [Overview of attack surface reduction](overview-attack-surface-reduction.md)
 
