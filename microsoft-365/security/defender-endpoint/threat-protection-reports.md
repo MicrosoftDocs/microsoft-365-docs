@@ -80,7 +80,7 @@ AlertInfo
 | render timechart
 ```
 
-## Related topics 
+## Related articles 
 
 - [Device health and compliance report](device-health-reports.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
