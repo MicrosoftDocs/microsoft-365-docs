@@ -28,17 +28,17 @@ ms.date: 12/18/2020
 
 ## Use the new Microsoft Defender XDR API for all your alerts
 
-The Microsoft Defender XDR alerts API, released to public preview in MS Graph, is the official and recommended API for customers migrating from the SIEM API. This API will enable customers to work with alerts across all Microsoft Defender XDR products using a single integration. We expect the new API to reach general availability (GA) by Q1 CY 2023.
+The Microsoft Defender XDR alerts API, released to public preview in MS Graph, is the official and recommended API for customers migrating from the SIEM API. This API enables customers to work with alerts across all Microsoft Defender XDR products using a single integration. We expect the new API to reach general availability (GA) by Q1 CY 2023.
 
-To provide customers with more time to plan and prepare their migration to the new Microsoft Defender XDR APIs, we have pushed the SIEM API deprecation date to December 31, 2023. This will give customers one year from the expected GA release of Microsoft Defender XDR APIs to migrate from the SIEM API.  At the time of deprecation, the SIEM API will be declared "deprecated" but not "retired." This means that until this date, the SIEM API will continue to function for existing customers. After the deprecation date, the SIEM API will continue to be available, however it will only be supported for security-related fixes.
+The SIEM API was deprecated on December 31, 2023. It is declared to be "deprecated," but not "retired." This means that until this date, the SIEM API continues to function for existing customers. After the deprecation date, the SIEM API will continue to be available, however it will only be supported for security-related fixes.
 
-Effective December 31st, 2024, three years after the original deprecation announcement, we reserve the right to turn off the SIEM API, without additional notice.
+Effective December 31, 2024, three years after the original deprecation announcement, we reserve the right to turn off the SIEM API, without further notice.
 
-For additional information about the new APIs see the blog announcement: [The new Microsoft Defender XDR APIs in Microsoft Graph are now available in public preview!](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099)
+For additional information about the new APIs, see the blog announcement: [The new Microsoft Defender XDR APIs in Microsoft Graph are now available in public preview!](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099)
 
 API documentation: [Use the Microsoft Graph security API - Microsoft Graph](/graph/api/resources/security-api-overview#alerts-and-incidents-preview)
 
-If you are a customer using the SIEM API, we strongly recommend planning and executing the migration. Listed below is information about the options available to migrate to a supported capability:
+If you're a customer using the SIEM API, we strongly recommend planning and executing the migration. This article includes information about the options available to migrate to a supported capability:
 
 1. [Pulling MDE alerts into an external system](#pulling-defender-for-endpoint-alerts-into-an-external-system) (SIEM/SOAR).
 
@@ -51,10 +51,12 @@ Read about the new Microsoft Defender XDR [alerts and incidents API](https://tec
 If you are pulling Defender for Endpoint alerts into an external system, there are various supported options to give organizations the flexibility to work with the solution of their choice:
 
 1. **Microsoft Sentinel** is a scalable, cloud-native, SIEM and Security orchestration, automation, and response (SOAR) solution. Delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for attack detection, threat visibility, proactive hunting, and threat response. The Microsoft Defender XDR connector allows customers to easily pull in all their incidents and alerts from all Microsoft Defender XDR products. To learn more about the integration, see [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
+
 1. **IBM Security QRadar** SIEM provides centralized visibility and intelligent security analytics to identify and prevent threats and vulnerabilities from disrupting business operations. [QRadar SIEM team has just announced the release of a new DSM](https://community.ibm.com/community/user/security/blogs/gaurav-sharma/2022/10/18/ibm-qradar-and-microsoft-defender) that is integrated with the new Microsoft Defender XDR alerts API to pull in Microsoft Defender for Endpoint alerts. New customers are welcome to take advantage of the new DSM upon release. Learn more about the new DSM and how to easily migrate to it at [Microsoft Defender XDR - IBM Documentation](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender).
+
 1. **Splunk SOAR** helps customers orchestrate workflows and automate tasks in seconds to work smarter and respond faster. Splunk SOAR is integrated with the new Microsoft Defender XDR APIs, including the alerts API. For more information, see [Microsoft Defender XDR | Splunkbase](https://splunkbase.splunk.com/app/6563)
 
-Additional integrations are listed in [Technological partners of Microsoft Defender XDR](technological-partners.md), or contact your SIEM / SOAR provider to learn about integrations they may provide.
+Other integrations are listed in [Technological partners of Microsoft Defender XDR](technological-partners.md), or contact your SIEM / SOAR provider to learn about integrations they provide.
 
 <a name='calling-the-microsoft-365-defender-alerts-api-directly'></a>
 
