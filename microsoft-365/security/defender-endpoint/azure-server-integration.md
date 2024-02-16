@@ -4,7 +4,6 @@ description: Learn about Microsoft Defender for Endpoint integration with Micros
 keywords: integration, server, azure, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.service: defender-endpoint
 ms.pagetype: security
