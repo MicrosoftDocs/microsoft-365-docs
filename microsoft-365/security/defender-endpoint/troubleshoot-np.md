@@ -56,7 +56,7 @@ Network protection works on devices with the following conditions:
 
 ## Use audit mode
 
-You can enable network protection in audit mode and then visit a website that's designed to demo the feature. All website connections are allowed by network protection but an event is logged to indicate any connection that would have been blocked if network protection was enabled.
+You can enable network protection in audit mode and then visit a website that's designed to demo the feature. All website connections are allowed by network protection but an event is logged to indicate any connection that would were blocked if network protection was enabled.
 
 1. Set network protection to **Audit mode**.
 
@@ -66,7 +66,7 @@ You can enable network protection in audit mode and then visit a website that's 
 
 2. Perform the connection activity that is causing an issue (for example, attempt to visit the site, or connect to the IP address you do or don't want to block).
 
-3. [Review the network protection event logs](network-protection.md#review-network-protection-events-in-windows-event-viewer) to see if the feature would have blocked the connection if it had been set to **Enabled**.
+3. [Review the network protection event logs](network-protection.md#review-network-protection-events-in-windows-event-viewer) to see if the feature would block the connection if it were set to **Enabled**.
 
    If network protection isn't blocking a connection that you're expecting it should block, enable the feature.
 
