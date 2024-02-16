@@ -14,7 +14,7 @@ ms.collection:
 - demo
 ms.topic: article
 ms.subservice: asr
-ms.date: 10/21/2022
+ms.date: 02/16/2024
 ---
 
 # Controlled folder access (CFA) demonstrations (block ransomware)
