@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: dolmont
 author: DulceMontemayor
 ms.localizationpriority: medium
-manager: dansimp
+manager: dolmont
 audience: ITPro
 ms.collection: 
 - m365-security
