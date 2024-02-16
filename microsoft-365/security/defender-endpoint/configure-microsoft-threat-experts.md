@@ -2,12 +2,7 @@
 title: Configure and manage Microsoft Defender Experts capabilities
 ms.reviewer:
 description: Register to Microsoft Threats Experts to configure, manage, and use it in your daily security operations and security administration work.
-keywords: Microsoft Threat Experts, managed threat hunting service, MTE, Microsoft managed hunting service
-search.product: Windows 10
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
 ms.localizationpriority: medium
