@@ -4,10 +4,10 @@ description: Describes the procedure to tune the performance of Microsoft Defend
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.date: 04/18/2023
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - mde-ngp
