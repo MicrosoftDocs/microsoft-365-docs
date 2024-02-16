@@ -46,21 +46,12 @@ Before MSSPs can take these actions, the MSSP customer needs to grant access to 
 
 Typically, MSSP customers take the initial configuration steps to grant MSSPs access to their Windows Defender Security Central tenant. After access is granted, the MSSP or customer can do the other configuration steps. In general, these are the configuration steps to complete:
 
-- **Grant the MSSP access to Microsoft Defender XDR**
-
-  This action needs to be done by the MSSP customer. It grants the MSSP access to the MSSP customer's Defender for Endpoint tenant.
-
-- **Configure alert notifications sent to MSSPs**
-
-  This action can be taken by either the MSSP customer or MSSP. It lets the MSSPs know what alerts they need to address for the MSSP customer.
-
-- **Fetch alerts from MSSP customer's tenant into SIEM system**
-
-  This action is taken by the MSSP. It allows MSSPs to fetch alerts in SIEM tools.
-
-- **Fetch alerts from MSSP customer's tenant using APIs**
-
-  This action is taken by the MSSP. It allows MSSPs to fetch alerts using APIs.
+| Step | Who does it|
+|---|---|
+| **Grant the MSSP access to Microsoft Defender XDR**. This action grants the MSSP access to the MSSP customer's Defender for Endpoint tenant. | MSSP Customer |
+| **Configure alert notifications sent to MSSPs**. This action lets the MSSPs know what alerts they need to address for the MSSP customer. | MSSP customer or MSSP |
+| **Fetch alerts from MSSP customer's tenant into SIEM system**. This action allows MSSPs to fetch alerts in SIEM tools. | MSSP |
+| **Fetch alerts from MSSP customer's tenant using APIs**. This action allows MSSPs to fetch alerts using APIs. | MSSP |
 
 ## Multi-tenant access for MSSPs
 
