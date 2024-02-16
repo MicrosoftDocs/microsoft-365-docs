@@ -1,15 +1,11 @@
 ---
 title: Troubleshoot Microsoft Defender for Endpoint live response issues
 description: Troubleshoot issues that might arise when using live response in Microsoft Defender for Endpoint
-keywords: troubleshoot live response, live, response, locked, file
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
