@@ -71,9 +71,11 @@ Set-ExecutionPolicy Unrestricted
 
 You can perform these manual steps instead:
 
-1. Create a folder under c: named demo, "c:\demo"
-2. Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo (we need something to encrypt)
-3. Execute PowerShell commands above
+1. Create a folder under c: named demo, "c:\demo".
+
+2. Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo (we need something to encrypt).
+
+3. Execute PowerShell commands listed earlier in this article.
 
 ### Scenario 1: CFA blocks ransomware test file
 
