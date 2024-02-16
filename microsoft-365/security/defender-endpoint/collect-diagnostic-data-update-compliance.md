@@ -1,5 +1,6 @@
 ---
 title: Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus
+description: Learn how to collect diagnostic data that's used by Microsoft support and engineering teams when they help with troubleshooting issues with Microsoft Defender Antivirus.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 author: siosulli
