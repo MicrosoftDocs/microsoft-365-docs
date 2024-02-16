@@ -595,7 +595,7 @@ sections:
 
              - IEPROTECT: IE - IExtensionValidation; this source protects against malicious webpage controls.
 
-             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence.
 
              - Remote attestation
 
@@ -607,21 +607,21 @@ sections:
 
           - Action: Action. Examples:
 
-             - Clean: The resource was cleaned
+             - Clean: The resource was cleaned.
 
-             - Quarantine: The resource was quarantined
+             - Quarantine: The resource was quarantined.
 
-             - Remove: The resource was deleted
+             - Remove: The resource was deleted.
 
-             - Allow: The resource was allowed to execute/exist
+             - Allow: The resource was allowed to execute/exist.
 
              - User defined: User-defined action that's typically from this list of actions specified by the user.
 
              - No action: No action
 
-             - Block: The resource was blocked from executing
+             - Block: The resource was blocked from executing.
 
-          - Action Status: Description of additional actions
+          - Action Status: Description of other actions
 
           - Error Code: Error code Result code associated with threat status. Standard HRESULT values.
 
@@ -631,7 +631,7 @@ sections:
 
           - Engine Version: Antimalware Engine version
 
-          NOTE: Whenever Microsoft Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it restores the following system settings and services that the malware might have changed:
+          NOTE: Whenever Microsoft Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it restores the following system settings and services that might have been changed by the malware:
 
              - Default Internet Explorer or Microsoft Edge setting
 
