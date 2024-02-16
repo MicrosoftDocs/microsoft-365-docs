@@ -103,11 +103,11 @@ Based on the query, the user is able to view data for scan counts, duration (tot
 The results of the performance analyzer can also be exported and converted to a CSV or JSON file.
 For examples that describe the process of "export" and "convert" through sample codes, see below.
 
-Starting with Defender version 4.18.2206.X, users will be able to view scan skip reason information under "SkipReason" column. The possible values are:
+Starting with Defender version 4.18.2206.X, users are able to view scan skip reason information under "SkipReason" column. The possible values are:
 
-1. Not Skipped
-1. Optimization (typically due to performance reasons)
-1. User skipped (typically due to user-set exclusions)
+- Not Skipped
+- Optimization (typically due to performance reasons)
+- User skipped (typically due to user-set exclusions)
 
 ### For CSV
 
