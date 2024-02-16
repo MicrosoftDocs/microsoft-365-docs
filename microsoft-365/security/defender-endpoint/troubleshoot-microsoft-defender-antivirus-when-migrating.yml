@@ -29,7 +29,7 @@ summary: |
   **Platforms**
   - Windows
 
-  You can find help here if you encounter issues while migrating from a non-Microsoft security solution to Microsoft Defender Antivirus.
+  Use this article to resolve issues while migrating from a non-Microsoft security solution to Microsoft Defender Antivirus.
 
 sections:
   - name: General
@@ -42,7 +42,7 @@ sections:
 
           1. From there, select **Open** underneath **Operational**.
 
-             Selecting an event from the details pane will show you more information about an event in the lower pane, under the **General** and **Details** tabs.
+             Selecting an event from the details pane shows you more information about an event in the lower pane, under the **General** and **Details** tabs.
 
       - question: Microsoft Defender Antivirus won't start
         answer: |
@@ -59,7 +59,7 @@ sections:
           #### Event ID 5007
 
           - **Log name**: Microsoft-Windows-Windows Defender/Operational
-          - **Description**: Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware. <br> **Old value:** Default\IsServiceRunning = 0x0 <br> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1
+          - **Description**: Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event you should review the settings as this could be due to malware. <br> **Old value:** Default\IsServiceRunning = 0x0 <br> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1
           - **Source**: Windows Defender
 
           #### Event ID 5010
@@ -70,10 +70,10 @@ sections:
 
           ### How to tell if Microsoft Defender Antivirus won't start because a non-Microsoft antivirus is installed
 
-          On a Windows 10 or Windows 11 device, if you are not using Microsoft Defender for Endpoint, and you have a non-Microsoft antivirus installed, then Microsoft Defender Antivirus will be automatically turned off. If you are using Microsoft Defender for Endpoint with a non-Microsoft antivirus installed, Microsoft Defender Antivirus will start in passive mode, with reduced functionality.
+          On a Windows 10 or Windows 11 device, if you aren't using Microsoft Defender for Endpoint, and you have a non-Microsoft antivirus installed, then Microsoft Defender Antivirus is automatically turned off. If you're using Microsoft Defender for Endpoint with a non-Microsoft antivirus installed, Microsoft Defender Antivirus starts in passive mode, with reduced functionality.
 
           > [!TIP]
-          > The scenario just described applies only to Windows 10 and Windows 11. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside non-Microsoft security software.
+          > The scenario described earlier applies only to Windows 10 and Windows 11. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside non-Microsoft security software.
 
           #### Use Services app to check if Microsoft Defender Antivirus is turned off
 
