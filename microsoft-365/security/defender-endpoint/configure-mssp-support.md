@@ -36,13 +36,13 @@ To enable the managed security service provider (MSSP) integration, follow the g
 > - MSSPs: Security organizations that offer to monitor and manage security devices for an organization.
 > - MSSP customers: Organizations that engage the services of MSSPs.
 
-The integration will allow MSSPs to take the following actions:
+The integration allows MSSPs to take the following actions:
 
 - Get access to MSSP customer's Microsoft Defender portal
 - Get email notifications, and
 - Fetch alerts through security information and event management (SIEM) tools
 
-Before MSSPs can take these actions, the MSSP customer will need to grant access to their Defender for Endpoint tenant so that the MSSP can access the portal.
+Before MSSPs can take these actions, the MSSP customer needs to grant access to their Defender for Endpoint tenant so that the MSSP can access the portal.
 
 Typically, MSSP customers take the initial configuration steps to grant MSSPs access to their Windows Defender Security Central tenant. After access is granted, other configuration steps can be done by either the MSSP customer or the MSSP.
 
@@ -54,7 +54,7 @@ In general, the following configuration steps need to be taken:
 
 - **Configure alert notifications sent to MSSPs**
 
-  This action can be taken by either the MSSP customer or MSSP. This lets the MSSPs know what alerts they need to address for the MSSP customer.
+  This action can be taken by either the MSSP customer or MSSP. It lets the MSSPs know what alerts they need to address for the MSSP customer.
 
 - **Fetch alerts from MSSP customer's tenant into SIEM system**
 
@@ -66,9 +66,9 @@ In general, the following configuration steps need to be taken:
 
 ## Multi-tenant access for MSSPs
 
-For information on how to implement a multi-tenant delegated access, see [Multi-tenant access for Managed Security Service Providers](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/multi-tenant-access-for-managed-security-service-providers/ba-p/1533440).
+For information on how to implement a multitenant delegated access, see [Multi-tenant access for Managed Security Service Providers](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/multi-tenant-access-for-managed-security-service-providers/ba-p/1533440).
 
-## Related topics
+## Related articles
 
 - [Grant MSSP access to the portal](grant-mssp-access.md)
 - [Access the MSSP customer portal](access-mssp-portal.md)
