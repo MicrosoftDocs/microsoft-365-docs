@@ -203,8 +203,8 @@ Some rules don't work well if unsigned, internally developed application and scr
 
 [Attack surface reduction](https://security.microsoft.com/asr?viewid=detections)
 
-[ASR rules Configurations](https://security.microsoft.com/asr?viewid=configuration)
+[Attack surface reduction rules configurations](https://security.microsoft.com/asr?viewid=configuration)
 
-[ASR rules Exclusions](https://security.microsoft.com/asr?viewid=exclusions)
+[Attack surface reduction rules exclusions](https://security.microsoft.com/asr?viewid=exclusions)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
