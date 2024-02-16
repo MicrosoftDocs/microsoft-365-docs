@@ -2,15 +2,11 @@
 title: Understand and use attack surface reduction
 ms.reviewer: 
 description: Learn about the attack surface reduction capabilities of Microsoft Defender for Endpoint.
-keywords: asr, attack surface reduction, attack surface reduction rules, Microsoft Defender for Endpoint, microsoft defender, antivirus, av, windows defender
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: Dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
@@ -96,7 +92,7 @@ Audit mode lets you see a record of what *would* have happened if you had enable
 
 You can enable audit mode when testing how the features work. Enabling audit mode only for testing helps to prevent audit mode from affecting your line-of-business apps. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
 
-The features won't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log records events as if the features were fully enabled. With audit mode, you can review the event log to see what effect the feature would have had if it was enabled.
+The features don't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log records events as if the features were fully enabled. With audit mode, you can review the event log to see what effect the feature would have had if it was enabled.
 
 To find the audited entries, go to **Applications and Services** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
@@ -107,7 +103,7 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 | Audit options | How to enable audit mode | How to view events |
 |---|---|---|
 | Audit applies to all events | [Enable controlled folder access](enable-controlled-folders.md) | [Controlled folder access events](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| Audit applies to individual rules | [Step 1: Test attack surface reduction rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| Audit applies to individual rules | [Step 1: Test attack surface reduction rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-attack-surface-reduction-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
@@ -165,11 +161,11 @@ You can also manually navigate to the event area that corresponds to the feature
    > [!div class="mx-imgBorder"]
    > ![Animation highlighting the create custom view option on the Event viewer window.](images/events-create.gif)
 
-3. Go to the XML tab and select **Edit query manually**. You'll see a warning that you can't edit the query using the **Filter** tab if you use the XML option. Select **Yes**.
+3. Go to the XML tab and select **Edit query manually**. You see a warning that you can't edit the query using the **Filter** tab if you use the XML option. Select **Yes**.
 
 4. Paste the XML code for the feature you want to filter events from into the XML section.
 
-5. Select **OK**. Specify a name for your filter. This creates a custom view that filters to only show the events related to that feature.
+5. Select **OK**. Specify a name for your filter. This action creates a custom view that filters to only show the events related to that feature.
 
 #### XML for attack surface reduction rule events
 
@@ -244,7 +240,7 @@ You can access these events in Windows Event viewer:
 |---|---|:---:|---|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|1|ACG audit|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|2|ACG enforce|
-|Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|3|Do not allow child processes audit|
+|Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|3|Don't allow child processes audit|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|4|Don't allow child processes block|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|5|Block low integrity images audit|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|6|Block low integrity images block|
