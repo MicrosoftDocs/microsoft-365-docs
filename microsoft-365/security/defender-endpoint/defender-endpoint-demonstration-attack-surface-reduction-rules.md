@@ -143,7 +143,7 @@ You should immediately see an "Action blocked" notification.
 
 ### Scenario 3 (Windows 10 or later): ASR rule blocks unsigned USB content from executing
 
-1. Configure the rule for USB protection (B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4).
+1. Configure the rule for USB protection (`B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4`).
 
 ```powershell
 Add-MpPreference -AttackSurfaceReductionRules_Ids B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4 -AttackSurfaceReductionRules_Actions Enabled
@@ -155,7 +155,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids B2B3F03D-6A65-4F7B-A9C7-1C7EF7
 
 You should immediately see an "Action blocked" notification.
 
-### Scenario 4: What would happen without ASR
+### Scenario 4: What would happen without attack surface reduction
 
 1. Turn off all attack surface reduction rules using PowerShell commands in the cleanup section
 2. Download any test file/document, enable editing and content if prompted
@@ -170,18 +170,6 @@ You should immediately see an "Action blocked" notification.
 Download and run this [clean-up script](https://demo.wd.microsoft.com/Content/ASR_CFA_CleanupScript.zip)
 
 Alternately, you can perform these manual steps:
-
-
-
-
-
-
-
-
-
-
-
-
 
 ```powershell
 Add-MpPreference -AttackSurfaceReductionRules_Ids BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 -AttackSurfaceReductionRules_Actions Disabled
@@ -203,7 +191,6 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A
 Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions Disabled
 ```
 
-  
 Clean up **c:\demo** encryption by running the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## See also
@@ -213,4 +200,5 @@ Clean up **c:\demo** encryption by running the [encrypt/decrypt file](https://de
 [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
