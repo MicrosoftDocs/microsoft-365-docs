@@ -15,7 +15,7 @@ ms.collection:
 - tier3
 - mde-asr
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 02/16/2024
 ---
 
 # Troubleshoot network protection
