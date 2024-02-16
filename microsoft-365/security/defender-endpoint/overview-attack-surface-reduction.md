@@ -92,7 +92,7 @@ Audit mode lets you see a record of what *would* have happened if you had enable
 
 You can enable audit mode when testing how the features work. Enabling audit mode only for testing helps to prevent audit mode from affecting your line-of-business apps. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
 
-The features won't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log records events as if the features were fully enabled. With audit mode, you can review the event log to see what effect the feature would have had if it was enabled.
+The features don't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log records events as if the features were fully enabled. With audit mode, you can review the event log to see what effect the feature would have had if it was enabled.
 
 To find the audited entries, go to **Applications and Services** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
@@ -240,7 +240,7 @@ You can access these events in Windows Event viewer:
 |---|---|:---:|---|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|1|ACG audit|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|2|ACG enforce|
-|Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|3|Do not allow child processes audit|
+|Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|3|Don't allow child processes audit|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|4|Don't allow child processes block|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|5|Block low integrity images audit|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|6|Block low integrity images block|
