@@ -129,10 +129,13 @@ You should immediately see an "Action blocked" notification.
 
 ### Scenario 2: ASR rule blocks the test file with the corresponding vulnerability
 
-1. Configure the rule you want to test using the PowerShell command from the previous step.
-2. Example: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
-3. Download and open the test file/document for the rule you want to test, enable editing and content if prompted
-4. Example: [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
+1. Configure the rule you want to test using the PowerShell command from the previous step. 
+
+   Example: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
+
+2. Download and open the test file/document for the rule you want to test, enable editing and content if prompted.
+
+   Example: [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
 #### Scenario 2 expected results
 
