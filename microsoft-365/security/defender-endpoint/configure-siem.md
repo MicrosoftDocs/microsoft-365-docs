@@ -66,14 +66,14 @@ The below table provides a mapping between the SIEM API to the Microsoft Defende
 
 | SIEM API property | Mapping | Microsoft Defender XDR alert API property |
 |:---|:---:|:---|
-| AlertTime |->| createdDateTime |
-| ComputerDnsName |->| evidence/deviceEvidence: deviceDnsName |
-| AlertTitle |->| title |
-| Category |->| category |
-| Severity |->| severity |
-| AlertId |->| id |
-| Actor |->| actorDisplayName |
-| LinkToWDATP |->| alertWebUrl |
+| `AlertTime` |->| `createdDateTime` |
+| `ComputerDnsName` |->| `evidence/deviceEvidence: deviceDnsName` |
+| `AlertTitle` |->| `title` |
+| `Category` |->| `category` |
+| `Severity` |->| `severity` |
+| `AlertId` |->| `id` |
+| `Actor` |->| `actorDisplayName` |
+| `LinkToWDATP` |->| alertWebUrl |
 | IocName | X | IoC fields not supported |
 | IocValue | X | IoC fields not supported |
 | CreatorIocName | X | IoC fields not supported |
@@ -111,11 +111,11 @@ The below table provides a mapping between the SIEM API to the Microsoft Defende
 | CloudCreatedMachineTags |->| evidence: tags [] (for deviceEvidence) |
 | CommandLine | -> | evidence/processEvidence: processCommandLine |
 | IncidentLinkToWDATP |->| incidentWebUrl |
-| ReportId | X | Obsolete (MDE alerts are atomic/complete that are updatable, while the SIEM API were immutable records of detections) |
-| LinkToMTP |->| alertWebUrl |
-| IncidentLinkToMTP |->| incidentWebUrl |
-| ExternalId | X | Obsolete |
-| IocUniqueId | X | IoC fields not supported |
+| `ReportId` | X | Obsolete (Defender for Endpoint alerts are atomic/complete that are updatable, while the SIEM API were immutable records of detections) |
+| `LinkToMTP` |->| `alertWebUrl` |
+| `IncidentLinkToMTP` |->| `incidentWebUrl` |
+| `ExternalId` | X | Obsolete |
+| `IocUniqueId` | X | IoC fields not supported |
 
 ## Ingest alerts using security information and events management (SIEM) tools
 
