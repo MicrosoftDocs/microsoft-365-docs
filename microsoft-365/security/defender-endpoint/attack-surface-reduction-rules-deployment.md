@@ -69,7 +69,7 @@ Typically, you can enable the standard protection rules with minimal-to-no notic
 
 ## Before you begin testing or enabling ASR rules
 
-During your initial preparation, it's vital that you understand the capabilities of the systems that you put in place. Understanding the capabilities help you determine which attack surface reduction rules are most important for protecting your organization. Additionally, there are several prerequisites, which you must attend to in preparation of your attack surface reduction deployment.
+During your initial preparation, it's vital to understand the capabilities of the systems that you put in place. Understanding the capabilities help you determine which attack surface reduction rules are most important for protecting your organization. Additionally, there are several prerequisites, which you must attend to in preparation of your attack surface reduction deployment.
 
 > [!IMPORTANT]
 > This guide provides images and examples to help you decide how to configure attack surface reduction rules; these images and examples might not reflect the best configuration options for your environment.
