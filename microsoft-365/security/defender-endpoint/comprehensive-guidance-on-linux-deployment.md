@@ -397,9 +397,9 @@ The following table describes the settings that are recommended as part of `mdat
 
 ### Applications that Microsoft Defender for Endpoint can impact
 
-High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins may require other exclusions depending on the amount of activity that is being processed (which is then monitored by Defender for Endpoint). It's best to follow guidance from third party application providers for exclusions if you experience performance degradation after installing Defender for Endpoint. Also keep in mind [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins might require other exclusions depending on the amount of activity that is being processed (which is monitored by Defender for Endpoint). It's best to follow guidance from third party application providers for exclusions if you experience performance degradation after installing Defender for Endpoint. Also keep in mind [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
-You can refer to these documents for more information if you experience performance degradation:
+If you experience performance degradation, see the following resources:
 
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
 - [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
