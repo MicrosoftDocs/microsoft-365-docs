@@ -49,13 +49,13 @@ Attack surface reduction rules only work on devices with the following condition
 
 - Endpoints are running Windows 10 Enterprise or later.
 
-- Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Microsoft Defender Antivirus to disable itself](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+- Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app causes Microsoft Defender Antivirus to disable itself](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 - [Real-time protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) is enabled.
 
 - Audit mode isn't enabled. Use Group Policy to set the rule to **Disabled** (value: **0**) as described in [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
-If these prerequisites have all been met, proceed to the next step to test the rule in audit mode.
+If these prerequisites are met, proceed to the next step to test the rule in audit mode.
 
 ## Use audit mode to test the rule
 
