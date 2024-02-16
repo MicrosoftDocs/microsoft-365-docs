@@ -696,7 +696,7 @@ sections:
 
              - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls.
 
-             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence.
 
              - Remote attestation
 
@@ -708,11 +708,11 @@ sections:
 
           - Action: Action. Examples:
 
-             - Clean: The resource was cleaned
+             - Clean: The resource was cleaned.
 
-             - Quarantine: The resource was quarantined
+             - Quarantine: The resource was quarantined.
 
-             - Remove: The resource was deleted
+             - Remove: The resource was deleted.
 
              - Allow: The resource was allowed to execute/exist
 
@@ -785,19 +785,19 @@ sections:
 
              - Clean: The resource was cleaned
 
-             - Quarantine: The resource was quarantined
+             - Quarantine: The resource was quarantined.
 
-             - Remove: The resource was deleted
+             - Remove: The resource was deleted.
 
-             - Allow: The resource was allowed to execute/exist
+             - Allow: The resource was allowed to execute/exist.
 
              - User defined: User-defined action that's typically from this list of actions specified by the user.
 
              - No action: No action
 
-             - Block: The resource was blocked from executing
+             - Block: The resource was blocked from executing.
 
-          - Action Status: Description of additional actions
+          - Action Status: Description of other actions
 
           - Error Code: Error code Result code associated with threat status. Standard HRESULT values.
 
@@ -807,7 +807,7 @@ sections:
 
           - Engine Version: Antimalware Engine version
 
-         User action: The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant **User action** steps below.
+         User action: The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant **User action** steps.
 
            - Action: Remove
              User action: Update the definitions then verify that the removal was successful.
