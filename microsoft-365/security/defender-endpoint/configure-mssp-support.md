@@ -28,7 +28,7 @@ ms.date: 12/18/2020
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-You'll need to take the following configuration steps to enable the managed security service provider (MSSP) integration.
+To enable the managed security service provider (MSSP) integration, follow the guidance in this article.
 
 > [!NOTE]
 > The following terms are used in this article to distinguish between the service provider and service consumer:
