@@ -85,26 +85,26 @@ The below table provides a mapping between the SIEM API to the Microsoft Defende
 | `URL` | -> | `evidence/urlEvidence: url` |
 | `IoaDefinitionId` |->| `detectorId` |
 | `UserName` |->| `evidence/userEvidence/userAccount: accountName` |
-| AlertPart | X | Obsolete (Defender for Endpoint alerts are atomic/complete that are updatable, while the SIEM API were immutable records of detections) |
-| FullId | X | IoC fields not supported |
-| LastProcessedTimeUtc |->| lastActivityDateTime |
-| ThreatCategory |->| mitreTechniques [] |
-| ThreatFamilyName |->| threatFamilyName |
-| ThreatName |->| threatDisplayName |
-| RemediationAction |->| evidence: remediationStatus |
-| RemediationIsSuccess |->| evidence: remediationStatus (implied) |
-| Source |->| detectionSource (use with serviceSource: microsoftDefenderForEndpoint) |
-| Md5 | X | Not supported |
-| Sha256 |->| evidence/fileEvidence/fileDetails: sha256 (or evidence/processEvidence/imageFile: sha256) |
-| WasExecutingWhileDetected |->| evidence/processEvidence: detectionStatus |
-| UserDomain |->| evidence/userEvidence/userAccount: domainName |
-| LogOnUsers |->| evidence/deviceEvidence: loggedOnUsers [] |
-| MachineDomain |->| Included in evidence/deviceEvidence: deviceDnsName |
-| MachineName |->| Included in evidence/deviceEvidence: deviceDnsName |
-| InternalIPV4List | X | Not supported |
-| InternalIPV6List | X | Not supported |
-| FileHash |->| Use sha1 or sha256 |
-| DeviceID |->| evidence/deviceEvidence: mdeDeviceId |
+| `AlertPart` | X | Obsolete (Defender for Endpoint alerts are atomic/complete that are updatable, while the SIEM API were immutable records of detections) |
+| `FullId` | X | IoC fields not supported |
+| `LastProcessedTimeUtc` |->| `lastActivityDateTime` |
+| `ThreatCategory` |->| `mitreTechniques []` |
+| `ThreatFamilyName` |->| `threatFamilyName` |
+| `ThreatName` |->| `threatDisplayName` |
+| `RemediationAction` |->| `evidence: remediationStatus` |
+| `RemediationIsSuccess` |->| `evidence: remediationStatus (implied)` |
+| `Source` |->| `detectionSource (use with serviceSource: microsoftDefenderForEndpoint)` |
+| `Md5` | X | Not supported |
+| `Sha256` |->| `evidence/fileEvidence/fileDetails: sha256 (or evidence/processEvidence/imageFile: sha256)` |
+| `WasExecutingWhileDetected` |->| `evidence/processEvidence: detectionStatus` |
+| `UserDomain` |->| `evidence/userEvidence/userAccount: domainName` |
+| `LogOnUsers` |->| `evidence/deviceEvidence: loggedOnUsers []` |
+| `MachineDomain` |->| Included in `evidence/deviceEvidence: deviceDnsName` |
+| `MachineName` |->| Included in `evidence/deviceEvidence: deviceDnsName` |
+| `InternalIPV4List` | X | Not supported |
+| `InternalIPV6List` | X | Not supported |
+| `FileHash` |->| Use `sha1` or `sha256` |
+| `DeviceID` |->| `evidence/deviceEvidence: mdeDeviceId` |
 | `MachineGroup` |->| `evidence/deviceEvidence: rbacGroupName` |
 | `Description` |->| `description` |
 | `DeviceCreatedMachineTags` |->| `evidence: tags [] (for deviceEvidence)` |
