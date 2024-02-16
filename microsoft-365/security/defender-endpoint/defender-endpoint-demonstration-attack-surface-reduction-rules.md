@@ -157,8 +157,9 @@ You should immediately see an "Action blocked" notification.
 
 ### Scenario 4: What would happen without attack surface reduction
 
-1. Turn off all attack surface reduction rules using PowerShell commands in the cleanup section
-2. Download any test file/document, enable editing and content if prompted
+1. Turn off all attack surface reduction rules using PowerShell commands in the cleanup section.
+
+2. Download any test file/document, and enable editing and content, if prompted.
 
 #### Scenario 4 expected results
 
