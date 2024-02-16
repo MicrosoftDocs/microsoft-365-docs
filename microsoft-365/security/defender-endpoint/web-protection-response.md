@@ -59,13 +59,13 @@ You can dive deeper by selecting the URL or domain of the website in the alert. 
 
   :::image type="content" source="images/wtp-website-details.png" alt-text="The domain or URL entity details page" lightbox="images/wtp-website-details.png":::
 
-[Learn more about URL or domain entity pages](investigate-domain.md)
+For more information, see [About URL or domain entity pages](investigate-domain.md).
 
 ## Inspect the device
 
 You can also check the device that attempted to access a blocked URL. Selecting the name of the device on the alert page opens a page with comprehensive information about the device.
 
-[Learn more about device entity pages](investigate-machines.md)
+For more information, see [About device entity pages](investigate-machines.md).
 
 ## Web browser and Windows notifications for end users
 
