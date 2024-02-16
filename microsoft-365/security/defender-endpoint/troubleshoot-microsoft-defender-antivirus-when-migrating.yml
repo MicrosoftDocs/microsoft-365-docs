@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Troubleshoot Microsoft Defender Antivirus while migrating from a non-Microsoft solution
-  description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
+  description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus.
   ms.service: defender-endpoint
   ms.localizationpriority: medium
   ms.topic: faq
@@ -36,7 +36,7 @@ sections:
     questions:
       - question: Review event logs
         answer: |
-          1. Open the Event viewer app by selecting the **Search** icon in the taskbar, and searching for *event viewer*.
+          1. Open the Event viewer app by selecting the Search icon in the taskbar, and searching for *event viewer*.
 
              Information about Microsoft Defender Antivirus can be found under  **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender**.
 
@@ -59,7 +59,7 @@ sections:
           #### Event ID 5007
 
           - **Log name**: Microsoft-Windows-Windows Defender/Operational
-          - **Description**: Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event you should review the settings as this could be due to malware. <br> **Old value:** Default\IsServiceRunning = 0x0 <br> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1
+          - **Description**: Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event, you should review the settings as this issue could be due to malware. <br> **Old value:** Default\IsServiceRunning = 0x0 <br> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1
           - **Source**: Windows Defender
 
           #### Event ID 5010
@@ -146,7 +146,7 @@ sections:
           Another feature, known as [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), is available to end-users when Microsoft Defender Antivirus is set to turn off automatically. This feature allows Microsoft Defender Antivirus to scan files periodically alongside a non-Microsoft antivirus, using a limited number of detections.
 
           > [!IMPORTANT]
-          > Limited periodic scanning is not recommended in enterprise environments. The detection, management and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced as compared to active mode.
+          > Limited periodic scanning is not recommended in enterprise environments. The detection, management, and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced as compared to active mode.
 
           > [!TIP]
           > If you're looking for Antivirus related information for other platforms, see:
