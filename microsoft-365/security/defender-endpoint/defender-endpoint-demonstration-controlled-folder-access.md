@@ -108,7 +108,7 @@ Set-MpPreference -EnableControlledFolderAccess Disabled
 
 #### Scenario 2 expected results
 
-- The files in c:\demo will be encrypted and you should get a warning message
+- The files in c:\demo are encrypted and you should get a warning message
 - Execute the ransomware test file again to decrypt the files
 
 ## Clean-up
@@ -119,8 +119,10 @@ Download and run this [cleanup script](https://demo.wd.microsoft.com/Content/ASR
 Set-MpPreference -EnableControlledFolderAccess Disabled
 ```
 
-Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
+Clean up c:\demo encryption by using the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## See also
+
 [Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
