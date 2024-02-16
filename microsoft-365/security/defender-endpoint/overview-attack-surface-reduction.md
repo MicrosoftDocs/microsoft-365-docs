@@ -161,11 +161,11 @@ You can also manually navigate to the event area that corresponds to the feature
    > [!div class="mx-imgBorder"]
    > ![Animation highlighting the create custom view option on the Event viewer window.](images/events-create.gif)
 
-3. Go to the XML tab and select **Edit query manually**. You'll see a warning that you can't edit the query using the **Filter** tab if you use the XML option. Select **Yes**.
+3. Go to the XML tab and select **Edit query manually**. You see a warning that you can't edit the query using the **Filter** tab if you use the XML option. Select **Yes**.
 
 4. Paste the XML code for the feature you want to filter events from into the XML section.
 
-5. Select **OK**. Specify a name for your filter. This creates a custom view that filters to only show the events related to that feature.
+5. Select **OK**. Specify a name for your filter. This action creates a custom view that filters to only show the events related to that feature.
 
 #### XML for attack surface reduction rule events
 
