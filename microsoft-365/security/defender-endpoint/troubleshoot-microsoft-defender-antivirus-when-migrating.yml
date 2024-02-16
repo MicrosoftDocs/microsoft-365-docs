@@ -44,7 +44,7 @@ sections:
 
              Selecting an event from the details pane shows you more information about an event in the lower pane, under the **General** and **Details** tabs.
 
-      - question: Microsoft Defender Antivirus won't start
+      - question: Microsoft Defender Antivirus doesn't start
         answer: |
           This issue can manifest in the form of  several different event IDs, all of which have the same underlying cause.
 
@@ -146,7 +146,7 @@ sections:
           Another feature, known as [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), is available to end-users when Microsoft Defender Antivirus is set to turn off automatically. This feature allows Microsoft Defender Antivirus to scan files periodically alongside a non-Microsoft antivirus, using a limited number of detections.
 
           > [!IMPORTANT]
-          > Limited periodic scanning is not recommended in enterprise environments. The detection, management, and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced as compared to active mode.
+          > Limited periodic scanning isn't recommended in enterprise environments. The detection, management, and reporting capabilities available when running Microsoft Defender Antivirus in this mode are reduced as compared to active mode.
 
           > [!TIP]
           > If you're looking for Antivirus related information for other platforms, see:
