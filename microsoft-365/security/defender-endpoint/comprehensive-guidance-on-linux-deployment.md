@@ -24,7 +24,7 @@ ms.date: 11/29/2023
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You'll get a brief summary of the deployment steps, learn about the system requirements, then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
+This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You get a brief summary of the deployment steps, learn about the system requirements, then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
 
 For information about Microsoft Defender for Endpoint capabilities, see [Advanced Microsoft Defender for Endpoint capabilities](#advanced-microsoft-defender-for-endpoint-capabilities).
 
@@ -167,7 +167,7 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 |---|---|
 |Disk space |Minimum: 2 GB <br> NOTE: More disk space might be needed if cloud diagnostics are enabled for crash collections. |
 |RAM |1 GB<br> 4 GB is preferred|
-|CPU |If the Linux system is running only 1 vcpu, we recommend it be increased to 2 vcpu's<br> 4 cores are preferred |
+|CPU |If the Linux system is running only one vcpu, we recommend it be increased to two vcpu's<br> 4 cores are preferred |
 
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
@@ -397,7 +397,7 @@ The following table describes the settings that are recommended as part of `mdat
 
 ### Applications that Microsoft Defender for Endpoint can impact
 
-High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins may require additional exclusions depending on the amount of activity that is being processed (which is then monitored by Defender for Endpoint). It's best to follow guidance from third party application providers for exclusions if you experience performance degradation after installing Defender for Endpoint. Also keep in mind [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins may require other exclusions depending on the amount of activity that is being processed (which is then monitored by Defender for Endpoint). It's best to follow guidance from third party application providers for exclusions if you experience performance degradation after installing Defender for Endpoint. Also keep in mind [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
 You can refer to these documents for more information if you experience performance degradation:
 
@@ -440,7 +440,7 @@ Learn how to troubleshoot issues that might occur during installation in [Troubl
 
 ## 14. Check resource utilization statistics
 
-Check performance statistics and compare to pre-deployment utilization compared to post-deployment.
+Check performance statistics and compare to predeployment utilization compared to post-deployment.
 
 ## 15. Verify communication with Microsoft Defender for Endpoint backend
 
