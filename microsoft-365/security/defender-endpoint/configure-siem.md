@@ -28,11 +28,10 @@ ms.date: 12/18/2020
 
 ## Use the new Microsoft Defender XDR API for all your alerts
 
-> [!IMPORTANT]
-> In February we announced the [Deprecation of the Microsoft Defender for Endpoint SIEM API would be postponed](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/deprecating-the-legacy-siem-api-postponed/ba-p/3139643).
-After gathering customer feedback, we have learned there are challenges with the timeline originally communicated. As a result, we are making changes to our timeline to improve our customers' experience in migrating to the new API.
-The new Microsoft Defender XDR alerts API, released to public preview in MS Graph, is the official and recommended API for customers migrating from the SIEM API. This API will enable customers to work with alerts across all Microsoft Defender XDR products using a single integration. We expect the new API to reach general availability (GA) by Q1 CY 2023.
+The Microsoft Defender XDR alerts API, released to public preview in MS Graph, is the official and recommended API for customers migrating from the SIEM API. This API will enable customers to work with alerts across all Microsoft Defender XDR products using a single integration. We expect the new API to reach general availability (GA) by Q1 CY 2023.
+
 To provide customers with more time to plan and prepare their migration to the new Microsoft Defender XDR APIs, we have pushed the SIEM API deprecation date to December 31, 2023. This will give customers one year from the expected GA release of Microsoft Defender XDR APIs to migrate from the SIEM API.  At the time of deprecation, the SIEM API will be declared "deprecated" but not "retired." This means that until this date, the SIEM API will continue to function for existing customers. After the deprecation date, the SIEM API will continue to be available, however it will only be supported for security-related fixes.
+
 Effective December 31st, 2024, three years after the original deprecation announcement, we reserve the right to turn off the SIEM API, without additional notice.
 
 For additional information about the new APIs see the blog announcement: [The new Microsoft Defender XDR APIs in Microsoft Graph are now available in public preview!](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099)
@@ -41,8 +40,9 @@ API documentation: [Use the Microsoft Graph security API - Microsoft Graph](/gra
 
 If you are a customer using the SIEM API, we strongly recommend planning and executing the migration. Listed below is information about the options available to migrate to a supported capability:
 
-1. [Pulling MDE alerts into an external system](#pulling-defender-for-endpoint-alerts-into-an-external-system) (SIEM/SOAR)
-1. [Calling the Microsoft Defender XDR alerts API directly](#calling-the-microsoft-365-defender-alerts-api-directly)
+1. [Pulling MDE alerts into an external system](#pulling-defender-for-endpoint-alerts-into-an-external-system) (SIEM/SOAR).
+
+1. [Calling the Microsoft Defender XDR alerts API directly](#calling-the-microsoft-365-defender-alerts-api-directly).
 
 Read about the new Microsoft Defender XDR [alerts and incidents API](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099#:~:text=Incidents%3A%20Contain%20incident%20metadata%20and%20a%20collection%20of,richer%20and%20actionable%20information%20for%20your%20automation%20flows.)
 
