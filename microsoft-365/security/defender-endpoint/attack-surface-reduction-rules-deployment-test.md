@@ -208,9 +208,9 @@ To configure specific rule exclusions:
 > [!TIP]
 > Use the checkboxes next to your list of exclusion entries to select items to **Delete**, **Sort**, **Import**, or **Export**.
 
-### Use PowerShell as an alternative method to enable ASR rules
+### Use PowerShell as an alternative method to enable attack surface reduction rules
 
-You can use PowerShell - as an alternative to Intune - to enable ASR rules in audit mode to view a record of apps that would have been blocked if the feature was fully enabled. You can also get an idea of how often the rules fire during normal use.
+You can use PowerShell - as an alternative to Intune - to enable attack surface reduction rules in audit mode to view a record of apps that would have been blocked if the feature was fully enabled. You can also get an idea of how often the rules fire during normal use.
 
 To enable an attack surface reduction rule in audit mode, use the following PowerShell cmdlet:
 
