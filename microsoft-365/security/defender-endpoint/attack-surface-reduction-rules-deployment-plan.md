@@ -28,7 +28,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Before you test or enable attack surface reduction rules, you should plan your deployment. Careful planning helps you test your attack surface reduction rules deployment and get ahead of any rule exceptions. When planning to test attack surface reduction rules it's important to start with the right business unit. Start with a small group of people in a specific business unit. You can identify some champions within a particular business unit who can provide feedback to help tune your implementation.
+Before you test or enable attack surface reduction rules, you should plan your deployment. Careful planning helps you test your attack surface reduction rules deployment and get ahead of any rule exceptions. When planning to test attack surface reduction rules, make sure you start with the right business unit. Start with a small group of people in a specific business unit. You can identify some champions within a particular business unit who can provide feedback to help tune your implementation.
 
 > :::image type="content" source="images/asr-rules-planning-steps.png" alt-text="The attack surface reduction rules planning steps." lightbox="images/asr-rules-planning-steps.png":::
 
@@ -85,7 +85,7 @@ Typical roles and responsibilities include:
 ## ASR rules ring deployment
 
 For large enterprises, Microsoft recommends deploying attack surface reduction rules in "rings." Rings are groups of devices that are visually represented as concentric circles that radiate outward like nonoverlapping tree rings. When the innermost ring is successfully deployed, you can transition to the next ring into the testing phase. Thorough assessment of your business units, attack surface reduction  rules champions, apps, and processes is imperative to defining your rings.
-In most cases, your organization will have deployment rings for phased rollouts of Windows updates. You can use your existing ring design to implement attack surface reduction rules.
+In most cases, your organization has deployment rings for phased rollouts of Windows updates. You can use your existing ring design to implement attack surface reduction rules.
 See: [Create a deployment plan for Windows](/windows/deployment/update/create-deployment-plan)
 
 ## Other articles in this deployment collection
