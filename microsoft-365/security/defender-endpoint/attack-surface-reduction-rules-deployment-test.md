@@ -1,5 +1,6 @@
 ---
 title: Test attack surface reduction rules
+description: Learn how to test attack surface reduction rules in Defender for Endpoint.
 ms.service: defender-endpoint
 ms.subservice: asr
 ms.localizationpriority: medium
