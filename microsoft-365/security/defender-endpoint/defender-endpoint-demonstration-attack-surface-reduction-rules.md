@@ -133,7 +133,7 @@ You should immediately see an "Action blocked" notification.
 
    Example: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
 
-2. Download and open the test file/document for the rule you want to test, enable editing and content if prompted.
+2. Download and open the test file/document for the rule you want to test, and enable editing and content, if prompted.
 
    Example: [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
