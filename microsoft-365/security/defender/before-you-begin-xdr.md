@@ -51,7 +51,7 @@ Defender Experts for XDR is a managed extended detection and response (XDR) serv
 
 ### Server coverage
 
-Defender Experts for XDR also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn't cover Microsoft Defender for Cloud.
+Defender Experts for XDR also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Endpoint for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn't cover Microsoft Defender for Cloud workloads.
 [Learn more about specific hardware and software requirements](/microsoft-365/security/defender-endpoint/minimum-requirements).
 
 ### Ask Defender Experts
