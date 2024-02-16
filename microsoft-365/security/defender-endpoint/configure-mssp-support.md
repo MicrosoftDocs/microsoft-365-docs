@@ -44,9 +44,7 @@ The integration allows MSSPs to take the following actions:
 
 Before MSSPs can take these actions, the MSSP customer needs to grant access to their Defender for Endpoint tenant so that the MSSP can access the portal.
 
-Typically, MSSP customers take the initial configuration steps to grant MSSPs access to their Windows Defender Security Central tenant. After access is granted, other configuration steps can be done by either the MSSP customer or the MSSP.
-
-In general, the following configuration steps need to be taken:
+Typically, MSSP customers take the initial configuration steps to grant MSSPs access to their Windows Defender Security Central tenant. After access is granted, the MSSP or customer can do the other configuration steps. In general, these are the configuration steps to complete:
 
 - **Grant the MSSP access to Microsoft Defender XDR**
 
