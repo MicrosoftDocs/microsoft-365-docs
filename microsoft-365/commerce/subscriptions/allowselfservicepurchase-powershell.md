@@ -25,6 +25,33 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 04/06/2023
 ---
 
+---
+title: Use AllowSelfServicePurchase for the MSCommerce PowerShell module
+f1.keywords:
+- NOCSH
+author: cmcatee-MSFT
+ms.author: cmcatee
+manager: scotv
+ms.reviewer: prlachhw, socheng
+audience: Admin
+ms.topic: how-to
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
+ms.collection:
+- Tier2
+- scotvorg
+- M365-subscription-management
+- Adm_O365
+ms.custom: 
+- commerce_ssp
+- AdminSurgePortfolio
+search.appverid:
+- MET150
+description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
+ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 04/06/2023
+---
+
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
 
 The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases of Microsoft or select third party offers.
