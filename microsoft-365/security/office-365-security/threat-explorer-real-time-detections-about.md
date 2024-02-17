@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: conceptual
-ms.date: 2/13/24
+ms.date: 2/13/2024
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
@@ -36,62 +36,76 @@ Depending on your Defender for Office 365 subscription, Threat Explorer or Real-
 
   :::image type="content" source="../../media/te-rtd-select-real-time-detections.png" alt-text="Real-time detections in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-real-time-detections.png":::
 
-  Real-time detections contains information about email containing malware and phishing threats (including phishing URL and click verdict data), and files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
-
 - **Threat Explorer** is available in _Defender for Office 365 Plan 2_. The **Explorer** page is available directly at <https://security.microsoft.com/threatexplorerv3>.
 
   :::image type="content" source="../../media/te-rtd-select-threat-explorer.png" alt-text="Explorer in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-threat-explorer.png":::
 
-  Threat Explorer contains the same information as Real-time detections and the following additional reporting capabilities:
+Threat Explorer contains the same information and capabilities as Real-time detections, but with the following additional features:
 
-  - Information about all email sent into your organization and between users in your organization (whether threats are detected or not).
-  - Information about [campaigns](campaigns.md).
-  - Information about user clicks on URLs in email messages, Teams messages, SharePoint, and OneDrive.
-  - More filtering options.
-  - The ability to save and use queries.
-
-  More importantly, Threat Explorer is also a threat hunting and remediation tool that allows you to take action on items from the reports. For example:
-
+- More views.
+- More property filtering options, including the option to save queries.
+- Threat hunting and remediation actions. For example:
   - Start automated investigations and responses.
   - ???
 
 For more information about the differences between Defender for Office 365 Plan 1 and Plan 2, see the [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-security-comparison.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
-The reports in Threat Explorer and Real-time detections contain the following elements:
+The rest of this article explains the views and features that are available in Threat Explorer and Real-time detections.
 
-- **Views**: Tabs at the top of the page that organize detections by threat. The view selection affects the rest of the data and options that are available on the page.
-- **Filters (queries)**: Filter the results by date/time and message, file, or threat properties.
-- **Charts**: A visual, aggregate view of the filtered or unfiltered data. You can use available pivots to organize the chart in different ways. You can often export the chart data to a .csv file.
-- **Details area**: The details area shows a table, chart, or map that contains the filtered or unfiltered data. You can use the available views (tabs) to organize the data in different ways. You can often export the data from the details area to a .csv file.
+## Elements of Threat Explorer and Real-time detections
+
+Threat Explorer and Real-time detections contain the following elements:
+
+- **Views**: Tabs at the top of the page that organize detections by threat. The view affects the rest of the data and options that are available on the page.
+
+  The following table lists the available views in Threat Explorer and Real-time detections:
+
+  |View|Threat<br/>Explorer|Real-time<br/>detections|Description|
+  |---|:---:|:---:|---|
+  |**All email**|✔||Default view for Threat Explorer. Information about all email messages sent by external users into your organization, or email sent between internal users in your organization.|
+  |**Malware**|✔|✔|Default view for Real-time detections. Information about email messages that contain malware.|
+  |**Phish**|✔|✔|Information about email messages that contain phishing threats.|
+  |**Campaigns**|✔||Information about malicious email that Defender for Office 365 Plan 2 identified as part of a [coordinated phishing or malware campaign](campaigns.md).|
+  |**Content malware**|✔|✔|Information about malicious files that were identified by [Safe Attachments for Sharepoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).|
+  |**URL clicks**|✔||Information about user clicks on URLs in email messages, Teams messages, SharePoint files, and OneDrive files.|
+
+  These views are described in detail in this article, including the differences between Threat Explorer and Real-time detections.
+
+- **Date/time filters**: By default, the view is filtered by yesterday and today. To change the date filter, select the date range, and then select **Start Date** and **End date** values up to 30 days ago.
+
+  :::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="The date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
+
+- **Property filters (queries)**: Filter the results in the view by the available message, file, or threat properties.
+
+  The available filters for each view are listed in this article, including the differences between Threat Explorer and Real-time detections.
+
+  Threat Explorer allows you to save queries for later use as described in the [Saved filters in Threat Explorer](#saved-filters-in-threat-explorer) section.
+
+- **Charts**: Each view contains a visual, aggregate representation of the filtered or unfiltered data. You can use available pivots to organize the chart in different ways. You can often use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export chart data** to export filtered or unfiltered chart data to a CSV file.
+
+   The charts and available pivots are described in detail in this article, including the differences between Threat Explorer and Real-time detections.
+
+  > [!TIP]
+  > To remove the chart from the page (which maximizes the size of the details area), do either of the following steps:
+  >
+  > - Select :::image type="icon" source="../../media/m365-cc-sc-chart-view-icon.png" border="false"::: **Chart View** \> :::image type="icon" source="../../media/m365-cc-sc-list-view-icon.png" border="false"::: **List View** at the top of the page.
+  > - Select :::image type="icon" source="../../media/m365-cc-sc-show-list-view-icon.png" border="false"::: **Show list view** between the chart and the views for the details table.
+
+- **Details area**: The details area for a view typically shows a table that contains the filtered or unfiltered data. You can use the available views (tabs) to organize the data in the details area in different ways. For example, a view might contain a chart, map, or a different table. If the details area contains a table, you can often use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export up to 200,000 filtered or unfiltered data to a CSV file.
 
 :::image type="content" source="../../media/te-rtd-threat-explorer-main-page.png" alt-text="The main page in Threat explorer showing real-time report data in the Defender for Office 365 portal." lightbox="../../media/te-rtd-threat-explorer-main-page.png":::
 
-The following table lists the available report views in Threat Explorer and Real-time detections:
-
-|View|Threat<br/>Explorer|Real-time<br/>detections|Description|
-|---|:---:|:---:|---|
-|**All email**|✔||Default view for Threat Explorer. Information about all email messages sent by external users into your organization, or email sent between internal users in your organization.|
-|**Malware**|✔|✔|Default view for Real-time detections. Information about email messages that contain malware.|
-|**Phish**|✔|✔|Information about email messages that contain phishing threats.|
-|**Campaigns**|✔||Information about malicious email that Defender for Office 365 Plan 2 identified as part of a [coordinated phishing or malware campaign](campaigns.md).|
-|**Content malware**|✔|✔|Information about malicious files that were identified by [Safe Attachments for Sharepoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).|
-|**URL clicks**|✔||Information about user clicks on URLs in email messages, Teams messages, SharePoint, and OneDrive.|
-
-The rest of this article explains the report views and actions that are available in Threat Explorer and Real-time detections.
-
 ## All email view in Threat Explorer
 
-The **All email** view in Threat Explorer shows information about all email messages sent by external users into your organization, or email sent between internal users in your organization.
+The **All email** view in Threat Explorer shows information about all email messages sent by external users into your organization, or email sent between internal users in your organization. The view shows malicious and non-malicious email. For example:
 
-:::image type="content" source="../../media/te-rtd-all-email view.png" alt-text="The All email view showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-all-email view.png":::
+- Email identified phishing or malware.
+- Email identified as spam or bulk.
+- Email identified with no threats.
 
-The view is available on the **Explorer** page in the Defender portal at **Email & collaboration** \> **Explorer** \> **All email** tab. Or, to go directly to the **All email** view on the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+This view is the default in Threat Explorer. The view is available on the **Explorer** page in the Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer** \> **All email** tab. Or, go directly to the **Explorer** page using <https://security.microsoft.com/threatexplorerv3>, and then verify that the **All email** tab is selected.
 
-By default, the view is filtered by data from yesterday and today. To change the date filter, select the date range filter, and then select **Start Date** and **End date** values up to 30 days ago.
-
-:::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="The date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
-
-The date/time filter and the data filters (queries) that you configure affect the data that's shown in the chart and details area. The filterable properties are listed in the table in the next section.
+:::image type="content" source="../../media/te-rtd-all-email-view.png" alt-text="The All email view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-all-email-view.png":::
 
 ### Filterable properties in the All email view in Threat Explorer
 
@@ -173,14 +187,6 @@ The chart has a default view, but you can select a value from **Select pivot for
 
 The available chart pivots are described in the following subsections.
 
-> [!TIP]
-> Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export chart data** in each pivot to export the filtered or unfiltered chart data to a CSV file.
->
-> To remove the chart from the page (which maximizes the size of the details area), do either of the following steps:
->
-> - Select :::image type="icon" source="../../media/m365-cc-sc-chart-view-icon.png" border="false"::: **Chart View** \> :::image type="icon" source="../../media/m365-cc-sc-list-view-icon.png" border="false"::: **List View** at the top of the page.
-> - Select :::image type="icon" source="../../media/m365-cc-sc-show-list-view-icon.png" border="false"::: **Show list view** between the chart and the views for the details table.
-
 #### Sender domain chart pivot in the All email view in Threat Explorer
 
 The **Sender domain** pivot organizes the chart by the domains in messages for the specified date/time range and data filters.
@@ -199,7 +205,7 @@ If you hover over a data point in the chart, the count for each sender IP addres
 
 #### Delivery action chart pivot in the All email view in Threat Explorer
 
-Although this chart pivot doesn't look like it's selected, **Delivery action** is the default chart pivot in the **All email** view.
+Although this chart pivot doesn't look selected by default, **Delivery action** is the default chart pivot in the **All email** view.
 
 The **Delivery action** pivot organizes the chart by the actions taken on messages for the specified date/time range and data filters.
 
@@ -239,21 +245,13 @@ The **URL domain and path** pivot organizes the chart by the domains and paths i
 
 If you hover over a data point in the chart, the count for each URL domain and path is shown.
 
-### Views for the details area in the All email view in Threat Explorer
+### Views for the details area of the All email view in Threat Explorer
 
 The details area of the **All email** view has several tabs (views) to change how the details table is organized and displayed. Typically, the details area shows data in tables, but graphs or other visual elements are also used.
 
 The available views for the details area are described in the following subsections.
 
-> [!TIP]
-> Where available, use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the filtered or unfiltered details table data to a CSV file.
->
-> To remove the chart from the page (which maximizes the size of the details area), do either of the following steps:
->
-> - Select :::image type="icon" source="../../media/m365-cc-sc-chart-view-icon.png" border="false"::: **Chart View** \> :::image type="icon" source="../../media/m365-cc-sc-list-view-icon.png" border="false"::: **List View** at the top of the page.
-> - Select :::image type="icon" source="../../media/m365-cc-sc-show-list-view-icon.png" border="false"::: **Show list view** between the chart and the views for the details table.
-
-#### Email view for the details area in the All email view in Threat Explorer
+#### Email view for the details area of the All email view in Threat Explorer
 
 **Email** is the default view for the details area in the **All email** view.
 
@@ -298,21 +296,19 @@ The **Email** view shows a details table. You can sort the entries by clicking o
 > - Remove columns from the view.
 > - Zoom out in your web browser.
 
-Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export up to 200,000 results to a CSV file.
-
 When you select one or more entries from the list by selecting the check box next to the first colum, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** becomes available.
 
 In the **Subject** value for the entry, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open in new window** action is available. This action opens the message in the Email entity page.
 
-##### Subject details
+##### Subject details from the Email view of the details area in the All email view
 
 When you select an entry by clicking on the **Subject** value, a details flyout opens with the following information:
 
 > [!TIP]
-> To see details about other messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+> To see details about other message subjects without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 - The number of attachments or links in the message.
-- Any [user tags](user-tags-about.md) that are assigned to the recipients of the message
+- Any [user tags](user-tags-about.md) that are assigned to the recipients of the message.
 - The following actions are available:
   - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
   - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **View header**
@@ -365,12 +361,12 @@ When you select an entry by clicking on the **Subject** value, a details flyout 
 
 :::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="The details tab after you select a subject in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
 
-##### Recipient details
+##### Recipient details from the Email view of the details area in the All email view
 
 When you select an entry by clicking on the **Recipient** value, a details flyout opens with the following information:
 
 > [!TIP]
-> To see details about other messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+> To see details about other recipients without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 - **Summary** section:
   - **Role**: Whether they have admin roles assigned.
@@ -379,11 +375,19 @@ When you select an entry by clicking on the **Recipient** value, a details flyou
     - Whether they have permission to see retention information.
     - Whether they they're covered by data loss prevention (DLP).
     - Whether they're covered by **Mobile management** at <https://portal.office.com/EAdmin/Device/IntuneInventory.aspx> <!-- -Security Administrator can't open the page--->
-    - **Email section**
-    - **Recent alerts** section
-    - **Recent activity** section.
+    - **Email section**: A table showing the following related information for other messages sent to the recipient:
+      - **Date**
+      - **Subject**
+      - **Recipient**
 
-#### URL clicks view for the details area in the All email view in Threat Explorer
+      Select **View all email** to open Threat Explorer or Real-time detections in a new tab filtered by the recipient.
+
+    - **Recent alerts** section
+    - **Recent activity** section <!-- -Security Administrator can't open the page. You do not have permission to run audit search cmdlet.--->
+
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png" alt-text="The details flyout after you select a recipient in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png":::
+
+#### URL clicks view for the details area of the All email view in Threat Explorer
 
 The **URL clicks** view shows a chart that can be organized using pivots as described in the following subsections.
 
@@ -392,7 +396,7 @@ The **URL clicks** view shows a chart that can be organized using pivots as desc
 > [!TIP]
 > Each pivot in **URL clicks** view has a :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all clicks** action that opens the [URL clicks view in Threat Explorer](#url-clicks-view-in-threat-explorer) in a new tab.
 
-##### URL domain pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+##### URL domain pivot for the URL clicks view for the details area of the All email view in Threat Explorer
 
 Although this chart pivot doesn't appear to be selected, **URL domain** is the default chart pivot in the **URL clicks** view.
 
@@ -402,7 +406,7 @@ The **URL domain** pivot shows the different domains in URLs in email messages f
 
 If you hover over a data point in the chart, the count for each domain is shown.
 
-##### Click verdict pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+##### Click verdict pivot for the URL clicks view for the details area of the All email view in Threat Explorer
 
 The **Click verdict** pivot shows the different verdicts for clicked URLs in email messages for the specified date/time range and data filters.
 
@@ -410,7 +414,7 @@ The **Click verdict** pivot shows the different verdicts for clicked URLs in ema
 
 If you hover over a data point in the chart, the count for each verdict is shown.
 
-##### URL pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+##### URL pivot for the URL clicks view for the details area of the All email view in Threat Explorer
 
 The **URL** pivot shows the different URLs that were clicked in email messages for the specified date/time range and data filters.
 
@@ -418,7 +422,7 @@ The **URL** pivot shows the different URLs that were clicked in email messages f
 
 If you hover over a data point in the chart, the count for each URL is shown.
 
-##### URL domain and path pivot for the URL clicks view for the details area in the All email view in Threat Explorer
+##### URL domain and path pivot for the URL clicks view for the details area of the All email view in Threat Explorer
 
 The **URL domain and path** pivot shows the different domains and file paths of URLs that were clicked in email messages for the specified date/time range and data filters.
 
@@ -426,7 +430,7 @@ The **URL domain and path** pivot shows the different domains and file paths of 
 
 If you hover over a data point in the chart, the count for each domain and file path is shown.
 
-#### Top URLs view for the details area in the All email view in Threat Explorer
+#### Top URLs view for the details area of the All email view in Threat Explorer
 
 The **Top URLs** view shows a details table. You can sort the entries by clicking on an available column header:
 
@@ -485,7 +489,7 @@ When you select an entry by clicking anywhere in the row other than the check bo
   
 :::image type="content" source="../../media/te-rtd-all-email-view-top-urls-tab-details-area-url-details-flyout.png" alt-text="The details flyout after selecting an entry in the Top URLs tab in the All email view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-top-urls-tab-details-area-url-details-flyout.png":::
 
-#### Top clicks view for the details area in the All email view in Threat Explorer
+#### Top clicks view for the details area of the All email view in Threat Explorer
 
 The **Top clicks** view shows a details table. You can sort the entries by clicking on an available column header:
 
@@ -508,9 +512,9 @@ The **Top clicks** view shows a details table. You can sort the entries by click
 >
 > All available columns are selected. Currently, if you select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**, you can't deselect any columns.
 
-When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The flyout contains the same information as described in the [details fylout for the Top URLs tab](#top-url-details).
+When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The flyout contains the same information as described in the [details flyout for the Top URLs tab](#top-url-details).
 
-#### Top targeted users view for the details area in the All email view in Threat Explorer
+#### Top targeted users view for the details area of the All email view in Threat Explorer
 
 The **Top targeted users** view shows a details table with the following columns:
 
@@ -520,11 +524,11 @@ The **Top targeted users** view shows a details table with the following columns
   - The **All email** view is selected and filtered by the top target user's email address.
   - In the details area, the **Email** view is selected.
 
-#### Email origin view for the details area in the All email view in Threat Explorer
+#### Email origin view for the details area of the All email view in Threat Explorer
 
 The **Email origin** view shows message sources on a map of the world.
 
-#### Campaign view for the details area in the All email view in Threat Explorer
+#### Campaign view for the details area of the All email view in Threat Explorer
 
 The **Campaign** view shows a details table. You can sort the entries by clicking on an available column header.
 
@@ -534,11 +538,498 @@ When you select an entry by clicking anywhere in the row other than the check bo
 
 ## Malware view in Threat Explorer and Real-time detections
 
+The **Malware** view in Threat Explorer and Real-time detections shows information about email messages that were identified as containing malware. This view is the default in Real-time detections.
+
+To open the **Malware** view, do one of the following steps:
+
+- **Threat Explorer**: On the **Explorer** page in the Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer** \> **Malware** tab. Or, go directly to the **Explorer** page using <https://security.microsoft.com/threatexplorerv3>, and then select the **Malware** tab.
+- **Real-time detections**: On the **Real-time detections** page in the Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer** \> **Malware** tab. Or, go directly to the **Real-time detections** page using <https://security.microsoft.com/realtimereportsv3>, and then verify that the **Malware** tab is selected.
+
+:::image type="content" source="../../media/te-rtd-malware-view.png" alt-text="The Malware view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-malware-view.png":::
+
+### Filterable properties in the Malware view in Threat Explorer and Real-time detections
+
+By default, no filters (queries) are applied to the data. The steps to create filters are described in the [Filters in Threat Explorer and Real-time detections](#data-filters-in-threat-explorer-and-real-time-detections) section later in this article.
+
+The filterable properties that are available in the **Sender address** box in the **Malware** view are described in the following table:
+
+|Property|Type|Threat<br/>Explorer|Real-time<br/>detections|
+|---|---|:---:|:---:|
+|**Basic**||||
+|Sender address|Text. Separate multiple values by commas.|✔|✔|
+|Recipients|Text. Separate multiple values by commas.|✔|✔|
+|Sender domain|Text. Separate multiple values by commas.|✔|✔|
+|Recipient domain|Text. Separate multiple values by commas.|✔|✔|
+|Subject|Text. Separate multiple values by commas.|✔|✔|
+|Sender display name|Text. Separate multiple values by commas.|✔|✔|
+|Sender mail from address|Text. Separate multiple values by commas.|✔|✔|
+|Sender mail from domain|Text. Separate multiple values by commas.|✔|✔|
+|Return path|Text. Separate multiple values by commas.|✔|✔|
+|Return path domain|Text. Separate multiple values by commas.|✔|✔|
+|Malware family|Text. Separate multiple values by commas.|✔|✔|
+|Tags|Text. Separate multiple values by commas.|✔||
+|Exchange transport rule|Text. Separate multiple values by commas.|✔||
+|Data loss prevention rule|Text. Separate multiple values by commas.|✔||
+|Context|Select one or more values: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|✔||
+|Connector|Text. Separate multiple values by commas.|✔||
+|Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|✔|✔|
+|Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**</li></ul>|✔|✔|
+|Directionality|Select one or more values: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|✔|✔|
+|Detection technology|Select one or more values: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra.org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|✔|✔|
+|Original delivery location|Select one or more values: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|✔|✔|
+|Latest delivery location|Same values as **Original delivery location**</li></ul>|✔|✔|
+|Primary override|Select one or more values: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|✔|✔|
+|Primary override source|Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|✔|✔|
+|Override source|Same values as **Primary override source**</li></ul>|✔|✔|
+|Policy type|Select one or more values: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|✔|✔|
+|Policy action|Select one or more values: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|✔|✔|
+|Email size|Integer. Separate multiple values by commas.|✔|✔|
+|**Advanced**||||
+|Internet Message ID|Text. Separate multiple values by commas.|✔|✔|
+|Network Message ID|Text. Separate multiple values by commas.|✔|✔|
+|Sender IP|Text. Separate multiple values by commas.|✔|✔|
+|Attachment SHA256|Text. Separate multiple values by commas.|✔|✔|
+|Cluster ID|Text. Separate multiple values by commas.|✔|✔|
+|Alert ID|Text. Separate multiple values by commas.|✔|✔|
+|Alert Policy ID|Text. Separate multiple values by commas.|✔|✔|
+|Campaign ID|Text. Separate multiple values by commas.|✔|✔|
+|ZAP URL signal|Text. Separate multiple values by commas.|✔|✔|
+|**Urls**||||
+|URL Count|Integer. Separate multiple values by commas.|✔|✔|
+|URL domain|Text. Separate multiple values by commas.|✔|✔|
+|URL domain and path|Text. Separate multiple values by commas.|✔|✔|
+|URL|Text. Separate multiple values by commas.|✔|✔|
+|URL path|Text. Separate multiple values by commas.|✔|✔|
+|URL source|Select one or more values: <ul><li>**Attachments**</li><li>**Cloud attachment**</li><li>**Email body**</li><li>**Email header**</li><li>**QR Code**</li><li>**Subject**</li><li>**Unknown**</li></ul>|✔|✔|
+|Click verdict|Select one or more values: <ul><li>**Allowed**</li><li>**Block overridden**</li><li>**Blocked**</li><li>**Error**</li><li>**Failure**</li><li>**None**</li><li>**Pending verdict**</li><li>**Pending verdict bypassed**</li></ul>|✔|✔|
+|URL Threat|Select one or more values: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|✔|✔|
+|**File**||||
+|Attachment Count|Integer. Separate multiple values by commas.|✔|✔|
+|Attachment filename|Text. Separate multiple values by commas.|✔|✔|
+|File type|Text. Separate multiple values by commas.|✔|✔|
+|File Extension|Text. Separate multiple values by commas.|✔|✔|
+|File Size|Integer. Separate multiple values by commas.|✔|✔|
+|**Authentication**||||
+|SPF|Select one or more values: <ul><li>**Fail**</li><li>**Neutral**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Soft fail**</li><li>**Temporary error**</li></ul>|✔|✔|
+|DKIM|Select one or more values: <ul><li>**Error**</li><li>**Fail**</li><li>**Ignore**</li><li>**None**</li><li>**Pass**</li><li>**Test**</li><li>**Timeout**</li><li>**Unknown**</li></ul>|✔|✔|
+|DMARC|Select one or more values: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|✔|✔|
+|Composite|Select one or more values: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
+
+### Pivots for the chart in the Malware view in Threat Explorer and Real-time Detections
+
+The chart has a default view, but you can select a value from **Select pivot for histogram chart** to change how the filtered or unfiltered chart data is organized and displayed.
+
+The chart pivots that are available in the **Malware** view in Threat Explorer and Real-time detections are described in the following table:
+
+|Pivot|Threat<br/>Explorer|Real-time<br/>detections|
+|---|:---:|:---:|
+|**Malware family**|✔||
+|**Sender domain**|✔||
+|**Sender IP**|✔||
+|**Delivery action**|✔|✔|
+|**Detection technology**|✔|✔|
+
+The available chart pivots are described in the following subsections.
+
+#### Malware family chart pivot in the Malware view in Threat Explorer
+
+Although this chart pivot doesn't look selected by default, **Malware family** is the default chart pivot in the **Malware** view.
+
+The **Malware family** pivot organizes the chart by the malware family detected in messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-malware-view-chart-malware-family-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Malware family pivot." lightbox="../../media/te-rtd-malware-view-chart-malware-family-pivot.png":::
+
+If you hover over a data point in the chart, the count for each malware family is shown.
+
+#### Sender domain chart pivot in the Malware view in Threat Explorer
+
+The **Sender domain** pivot organizes the chart by the sender domain of messages that were found to contain malware for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-malware-view-chart-sender-domain-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Malware family pivot." lightbox="../../media/te-rtd-malware-view-chart-sender-domain-pivot.png":::
+
+If you hover over a data point in the chart, the count for each malware family is shown.
+
+#### Sender IP chart pivot in the Malware view in Threat Explorer
+
+The **Sender IP** pivot organizes the chart by the source IP address of messages that were found to contain malware for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-malware-view-chart-sender-ip-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Sender IP pivot." lightbox="../../media/te-rtd-malware-view-chart-sender-ip-pivot.png":::
+
+If you hover over a data point in the chart, the count for each source IP address is shown.
+
+#### Delivery action chart pivot in the Malware view in Threat Explorer and Real-time detections
+
+Although this chart pivot doesn't look selected by default, **Delivery action** is the default chart pivot in the **Malware** view in Real-time detections.
+
+The **Delivery action** pivot organizes the chart by what happened to messages that were found to contain malware for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-malware-view-chart-delivery-action-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Delivery action pivot." lightbox="../../media/te-rtd-malware-view-chart-delivery-action-pivot.png":::
+
+If you hover over a data point in the chart, the count for each delivery action is shown.
+
+#### Detection technology chart pivot in the Malware view in Threat Explorer and Real-time detections
+
+The **Detection technology** pivot organizes the chart by the feature that detected malware in messages for the specified date/time range and data filters.
+
+:::image type="content" source="../../media/te-rtd-malware-view-chart-detection-technology-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-malware-view-chart-detection-technology-pivot.png":::
+
+If you hover over a data point in the chart, the count for each detection technology is shown.
+
+### Views for the details area of the Malware view in Threat Explorer
+
+The available views (tabs) in the details area of the **Malware** view are listed in the following table, and are described in the following subsections.
+
+|View|Threat<br/>Explorer|Real-time<br/>detections|
+|---|:---:|:---:|
+|**Email**|✔|✔|
+|**Top malware families**|✔||
+|**Top targeted users**|✔||
+|**Email origin**|✔||
+|**Campaign**|✔||
+
+The available views for the details area are described in the following subsections.
+
+#### Email view for the details area of the Malware view in Threat Explorer and Real-time detections
+
+**Email** is the default view for the details area of the **Malware** view in Threat Explorer and Real-time detections.
+
+The **Email** view shows a details table. You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that is shown.
+
+The following table shows the columns that are available in Threat Explorer and Real-time detections. The default values are marked with an asterisk (<sup>\*</sup>).
+
+|Column|Threat<br/>Explorer|Real-time<br/>detections|
+|---|:---:|:---:|
+|**Date**<sup></sup>|✔|✔|
+|**Subject**<sup></sup>|✔|✔|
+|**Recipient**<sup></sup>|✔|✔|
+|**Recipient domain**|✔|✔|
+|**Tags**<sup></sup>|✔||
+|**Sender address**<sup></sup>|✔|✔|
+|**Sender display name**|✔|✔|
+|**Sender domain**<sup></sup>|✔|✔|
+|**Sender IP**|✔|✔|
+|**Sender mail from address**|✔|✔|
+|**Sender mail from domain**|✔|✔|
+|**Additional actions**<sup></sup>|✔|✔|
+|**Delivery action**|✔|✔|
+|**Latest delivery location**<sup></sup>|✔|✔|
+|**Original delivery location**<sup></sup>|✔|✔|
+|**System overrides source**|✔|✔|
+|**System overrides**|✔|✔|
+|**Alert ID**|✔|✔|
+|**Internet message ID**|✔|✔|
+|**Network message ID**|✔|✔|
+|**Mail language**|✔|✔|
+|**Exchange transport rule**|✔||
+|**Connector**|✔||
+|**Context**|✔|✔|
+|**Data loss prevention rule**|✔|✔|
+|**Threat type**<sup></sup>|✔|✔|
+|**Detection technology**|✔|✔|
+|**Attachment Count**|✔|✔|
+|**URL Count**|✔|✔|
+|**Email size**|✔|✔|
+
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
+
+In Threat Explorer, when you select one or more entries from the list by selecting the check box next to the first colum, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** becomes available.
+
+##### Subject details from the Email view of the details area in the Malware view
+
+When you select an entry by clicking on the **Subject** value, a details flyout opens.
+
+In Threat Explorer, the information that's shown in the subject details flyout is identical to [Subject details from the Email view of the details area in the All email view](#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
+
+In Real-time detections, the information that's shown in the subject details flyout is nearly identical to [Subject details from the Email view of the details area in the All email view](#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view). The exception is the :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Go hunt** action isn't available.
+
+##### Recipient details from the Email view of the details area in the Malware view
+
+When you select an entry by clicking on the **Recipient** value, a details flyout opens.
+
+In Threat Explorer and Real-time detections, the information that's shown in the recipient details flyout is identical to [Recipient details from the Email view of the details area in the All email view](#recipient-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
+
+#### Top malware families view for the details area of the Malware view in Threat Explorer
+
+The **Top malware families** view for the details area organizes the data into a list of the top malware families. The list shows:
+
+- **Top malware families**: The malware family name.
+
+  If you select a malware family name, a details flyout opens that contains the following information:
+
+  - **Email section**: A table showing the following related information for other messages sent to the recipient:
+    - **Date**
+    - **Subject**
+    - **Recipient**
+
+    Select **View all email** to open Threat Explorer in a new tab filtered by the malware family name.
+
+  - **Technical details** section
+
+  :::image type="content" source="../../media/te-rtd-malware-view-details-area-top-malware-families-details-flyout.png" alt-text="The details flyout after you select a malware family from the Top malware families tab of the details area in the Malware view of Threat Explorer." lightbox="../../media/te-rtd-malware-view-details-area-top-malware-families-details-flyout.png":::
+
+- The number of attempts: If you select the number of attempts, Threat Explorer opens in a new tab filtered by the malware family name.
+
+#### Top targeted users view for the details area of the Malware view in Threat Explorer
+
+The **Top targeted users** view organizes the data into a list of the top malware families. The list shows:
+
+- **Top targeted users**: The email address of the top targeted user.
+
+  If you select a user, a details flyout opens that contains the following information:
+
+  - **Summary** section:
+  - **Role**: Whether they have admin roles assigned.
+  - **Policies**:
+    - Whether they have permission to see archive information.
+    - Whether they have permission to see retention information.
+    - Whether they they're covered by data loss prevention (DLP).
+    - Whether they're covered by **Mobile management** at <https://portal.office.com/EAdmin/Device/IntuneInventory.aspx> <!-- -Security Administrator can't open the page--->
+    - **Email section**: A table showing the following related information for other messages sent to the recipient:
+      - **Date**
+      - **Subject**
+      - **Recipient**
+
+      Select **View all email** to open Threat Explorer or Real-time detections in a new tab filtered by the recipient.
+
+    - **Recent alerts** section
+    - **Recent activity** section <!-- -Security Administrator can't open the page. You do not have permission to run audit search cmdlet.--->
+
+    :::image type="content" source="../../media/te-rtd-malware-view-details-area-top-targeted-users-details-flyout.png" alt-text="The details flyout after you select a recipient from the Top targeted users tab of the details area in the Malware view of Threat Explorer." lightbox="../../media/te-rtd-malware-view-details-area-top-targeted-users-details-flyout.png":::
+
+- The number of attempts: If you select the number of attempts, Threat Explorer opens in a new tab filtered by the malware family name.
+
+#### Email origin view for the details area of the Malware view in Threat Explorer
+
+The **Email origin** view shows message sources on a map of the world.
+
+#### Campaign view for the details area of the Malware view in Threat Explorer
+
+The **Campaign** view shows a details table. You can sort the entries by clicking on an available column header.
+
+The details table is identical to the [details table on the Campaigns page](campaigns.md#details-table-on-the-campaigns-page).
+
+When you select an entry by clicking anywhere in the row other than the check box next to the **Name**, a details flyout opens. The information is identical to [Campaign details](campaigns.md#campaign-details).
+
 ## Phish view in Threat Explorer and Real-time detections
+
+The **Phish** view in Threat Explorer and Real-time detections shows information about email messages that were identified as phishing.
+
+To open the **Phish** view, do one of the following steps:
+
+- **Threat Explorer**: On the **Explorer** page in the Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer** \> **Phish** tab. Or, go directly to the **Explorer** page using <https://security.microsoft.com/threatexplorerv3>, and then select the **Phish** tab.
+- **Real-time detections**: On the **Real-time detections** page in the Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer** \> **Phish** tab. Or, go directly to the **Real-time detections** page using <https://security.microsoft.com/realtimereportsv3>, and then select the **Phish** tab.
+
+:::image type="content" source="../../media/te-rtd-phish-view.png" alt-text="The Phish view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-phish-view.png":::
+
+### Filterable properties in the Phish view in Threat Explorer and Real-time detections
+
+By default, no filters (queries) are applied to the data. The steps to create filters are described in the [Filters in Threat Explorer and Real-time detections](#data-filters-in-threat-explorer-and-real-time-detections) section later in this article.
+
+The filterable properties that are available in the **Sender address** box in the **Malware** view are described in the following table:
+
+|Property|Type|Threat<br/>Explorer|Real-time<br/>detections|
+|---|---|:---:|:---:|
+|**Basic**||||
+|Sender address|Text. Separate multiple values by commas.|✔|✔|
+|Recipients|Text. Separate multiple values by commas.|✔|✔|
+|Sender domain|Text. Separate multiple values by commas.|✔|✔|
+|Recipient domain|Text. Separate multiple values by commas.|✔|✔|
+|Subject|Text. Separate multiple values by commas.|✔|✔|
+|Sender display name|Text. Separate multiple values by commas.|✔|✔|
+|Sender mail from address|Text. Separate multiple values by commas.|✔|✔|
+|Sender mail from domain|Text. Separate multiple values by commas.|✔|✔|
+|Return path|Text. Separate multiple values by commas.|✔|✔|
+|Return path domain|Text. Separate multiple values by commas.|✔|✔|
+|Tags|Text. Separate multiple values by commas.|✔||
+|Impersonated domain|Text. Separate multiple values by commas.|✔|✔|
+|Impersonated user|Text. Separate multiple values by commas.|✔|✔|
+|Exchange transport rule|Text. Separate multiple values by commas.|✔||
+|Data loss prevention rule|Text. Separate multiple values by commas.|✔||
+|Context|Select one or more values: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|✔||
+|Connector|Text. Separate multiple values by commas.|✔||
+|Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|✔|✔|
+|Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**</li></ul>|✔|✔|
+|Directionality|Select one or more values: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|✔|✔|
+|Detection technology|Select one or more values: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra.org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|✔|✔|
+|Original delivery location|Select one or more values: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|✔|✔|
+|Latest delivery location|Same values as **Original delivery location**</li></ul>|✔|✔|
+|Phish confidence level|Select one or more values: <ul><li>**High**</li><li>**Normal**</li></ul>|✔||
+|Primary override|Select one or more values: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|✔|✔|
+|Primary override source|Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|✔|✔|
+|Override source|Same values as **Primary override source**</li></ul>|✔|✔|
+|Policy type|Select one or more values: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|✔|✔|
+|Policy action|Select one or more values: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|✔|✔|
+|Email size|Integer. Separate multiple values by commas.|✔|✔|
+|**Advanced**||||
+|Internet Message ID|Text. Separate multiple values by commas.|✔|✔|
+|Network Message ID|Text. Separate multiple values by commas.|✔|✔|
+|Sender IP|Text. Separate multiple values by commas.|✔|✔|
+|Attachment SHA256|Text. Separate multiple values by commas.|✔|✔|
+|Cluster ID|Text. Separate multiple values by commas.|✔|✔|
+|Alert ID|Text. Separate multiple values by commas.|✔|✔|
+|Alert Policy ID|Text. Separate multiple values by commas.|✔|✔|
+|Campaign ID|Text. Separate multiple values by commas.|✔|✔|
+|ZAP URL signal|Text. Separate multiple values by commas.|✔||
+|**Urls**||||
+|URL Count|Integer. Separate multiple values by commas.|✔|✔|
+|URL domain|Text. Separate multiple values by commas.|✔|✔|
+|URL domain and path|Text. Separate multiple values by commas.|✔||
+|URL|Text. Separate multiple values by commas.|✔||
+|URL path|Text. Separate multiple values by commas.|✔||
+|URL source|Select one or more values: <ul><li>**Attachments**</li><li>**Cloud attachment**</li><li>**Email body**</li><li>**Email header**</li><li>**QR Code**</li><li>**Subject**</li><li>**Unknown**</li></ul>|✔|✔|
+|Click verdict|Select one or more values: <ul><li>**Allowed**</li><li>**Block overridden**</li><li>**Blocked**</li><li>**Error**</li><li>**Failure**</li><li>**None**</li><li>**Pending verdict**</li><li>**Pending verdict bypassed**</li></ul>|✔|✔|
+|URL Threat|Select one or more values: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|✔|✔|
+|**File**||||
+|Attachment Count|Integer. Separate multiple values by commas.|✔|✔|
+|Attachment filename|Text. Separate multiple values by commas.|✔|✔|
+|File type|Text. Separate multiple values by commas.|✔|✔|
+|File Extension|Text. Separate multiple values by commas.|✔|✔|
+|File Size|Integer. Separate multiple values by commas.|✔|✔|
+|**Authentication**||||
+|SPF|Select one or more values: <ul><li>**Fail**</li><li>**Neutral**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Soft fail**</li><li>**Temporary error**</li></ul>|✔|✔|
+|DKIM|Select one or more values: <ul><li>**Error**</li><li>**Fail**</li><li>**Ignore**</li><li>**None**</li><li>**Pass**</li><li>**Test**</li><li>**Timeout**</li><li>**Unknown**</li></ul>|✔|✔|
+|DMARC|Select one or more values: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|✔|✔|
+|Composite|Select one or more values: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
+
+### Pivots for the chart in the Phish view in Threat Explorer and Real-time Detections
+
+The chart has a default view, but you can select a value from **Select pivot for histogram chart** to change how the filtered or unfiltered chart data is organized and displayed.
+
+The chart pivots that are available in the **Phish** view in Threat Explorer and Real-time detections are described in the following table:
+
+|Pivot|Threat<br/>Explorer|Real-time<br/>detections|
+|---|:---:|:---:|
+|**Sender domain**|✔|✔|
+|**Sender IP**|✔||
+|**Delivery action**|✔|✔|
+|**Detection technology**|✔|✔|
+|**Full URL**|✔||
+|**URL domain**|✔|✔|
+|**URL domain and path**|✔||
+
+### Views for the details area of the Phish view in Threat Explorer
+
+The available views (tabs) in the details area of the **Phish** view are listed in the following table, and are described in the following subsections.
+
+|View|Threat<br/>Explorer|Real-time<br/>detections|
+|---|:---:|:---:|
+|**Email**|✔|✔|
+|**URL clicks**|✔|✔|
+|**Top URLs**|✔|✔|
+|**Top clicks**|✔|✔|
+|**Top targeted users**|✔||
+|**Email origin**|✔||
+|**Campaign**|✔||
 
 ## Campaigns view in Threat Explorer
 
 ## Content malware view in Threat Explorer and Real-time detections
+
+The **Content malware** view in Threat Explorer and Real-time detections shows information about files that were identified as malware by shows files that were identified as malicious by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
+
+To open the **Content malware** view, do one of the following steps:
+
+- **Threat Explorer**: On the **Explorer** page in the Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer** \> **Content malware** tab. Or, go directly to the **Explorer** page using <https://security.microsoft.com/threatexplorerv3>, and then select the **Content malware** tab.
+- **Real-time detections**: On the **Real-time detections** page in the Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer** \> **Content malware** tab. Or, go directly to the **Real-time detections** page using <https://security.microsoft.com/realtimereportsv3>, and then select the **Content malware** tab.
+
+:::image type="content" source="../../media/te-rtd-content-malware-view.png" alt-text="The Cotent malware view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-content-malware-view.png":::
+
+### Filterable properties in the Content malware view in Threat Explorer and Real-time detections
+
+By default, no filters (queries) are applied to the data. The steps to create filters are described in the [Filters in Threat Explorer and Real-time detections](#data-filters-in-threat-explorer-and-real-time-detections) section later in this article.
+
+The filterable properties that are available in the **File name** box in the **Content malware** view in Threat Explorer and Real-time detections are described in the following table:
+
+|Property|Type|
+|---|---|
+|**File**||
+|File name|Text. Separate multiple values by commas.|
+|Workload|Select one or more values: <ul><li>**OneDrive**</li><li>**SharePoint**</li><li>**Teams**</li></ul>|
+|Site|Text. Separate multiple values by commas.|
+|**Users**||
+|File owner|Text. Separate multiple values by commas.|
+|Last modified by|Text. Separate multiple values by commas.|
+|**Threats**||
+|SHA256|Integer. Separate multiple values by commas.|
+|Malware family|Text. Separate multiple values by commas.|
+|Detection technologySelect one or more values: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra.org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|
+|Threat type|Select one or more values: <ul><li>**Block**</li><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|
+
+### Pivots for the chart in the Content malware view in Threat Explorer and Real-time Detections
+
+The chart has a default view, but you can select a value from **Select pivot for histogram chart** to change how the filtered or unfiltered chart data is organized and displayed.
+
+The same chart pivots are available in Threat Explorer and Real-time detections and are described in the following subsections.
+
+#### Malware family chart pivot in the Content malware view in Threat Explorer and Real-time detections
+
+#### Detection technology chart pivot in the Content malware view in Threat Explorer and Real-time detections
+
+#### Workload chart pivot in the Content malware view in Threat Explorer and Real-time detections
+
+### Views for the details area of the Content malware view in Threat Explorer and Real-time detections
+
+In Theat Explorer and Real-time detections, the details area of the **Content malware** view contains only one view (tab) named **Documents**. This view is described in the next subsection.
+
+#### Document view for the details area of the Content malware view in Threat Explorer and Real-time detections
+
+**Document** is the default and only view for the details area in the **Content malware** view.
+
+The **Document** view shows a details table. You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that is shown. The default values are marked with an asterisk (<sup>\*</sup>):
+
+- **Date**<sup></sup>
+- **Name**<sup></sup>
+- **Workload**<sup></sup>
+- **Threat**<sup></sup>
+- **Detection technology**<sup></sup>
+- **Last modifying user**<sup></sup>
+- **File owner**<sup></sup>
+- **Size (bytes)**<sup></sup>
+- **Last modified time**
+- **Site path**
+- **File path**
+- **Document ID**
+- **SHA256**
+- **Detected date**
+- **Malware family**
+- **Context**
+
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
+
+When you select a filename value from the **Name** column, a details flyout opens. The flyout contains the following information:
+
+- **Summary** section:
+  - **Filename**
+  - **Site path**
+  - **File path**
+  - **Document ID**
+  - **SHA256**
+  - **Last date modified**
+  - **Last modified by**
+  - **Threat**
+  - **Detection technology**
+- **Details** section:
+  - **Detected date**
+  - **Detected by**
+  - **Malware name**
+  - **Last modified by**
+  - **File size**
+  - **File owner**
+- **Recent activity**
+
+:::image type="content" source="../../media/te-rtd-content-malware-view-documents-tab-details-area-filename-flyout.png" alt-text="x" lightbox="../../media/te-rtd-content-malware-view-documents-tab-details-area-filename-flyout.png":::
 
 ## URL clicks view in Threat Explorer
 
