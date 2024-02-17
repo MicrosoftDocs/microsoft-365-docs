@@ -25,33 +25,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 04/06/2023
 ---
 
----
-title: Use AllowSelfServicePurchase for the MSCommerce PowerShell module
-f1.keywords:
-- NOCSH
-author: cmcatee-MSFT
-ms.author: cmcatee
-manager: scotv
-ms.reviewer: prlachhw, socheng
-audience: Admin
-ms.topic: how-to
-ms.service: microsoft-365-business
-ms.localizationpriority: medium
-ms.collection:
-- Tier2
-- scotvorg
-- M365-subscription-management
-- Adm_O365
-ms.custom: 
-- commerce_ssp
-- AdminSurgePortfolio
-search.appverid:
-- MET150
-description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
-ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 04/06/2023
----
-
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
 
 The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases of Microsoft or select third party offers.
@@ -120,7 +93,7 @@ The following table lists the available products and their **ProductId**. It als
 
 | Product | ProductId | Is trial without payment method enabled? |
 |-----------------------------|--------------|--------------|
-| Cllipchamp Premium | CFQ7TTC0N8SS | No |
+| Clipchamp Premium | CFQ7TTC0N8SS | No |
 | Power Apps per user* | CFQ7TTC0LH2H | No |
 | Power Automate per user* | CFQ7TTC0LH3L | No |
 | Power Automate RPA* | CFQ7TTC0LSGZ  | No |
@@ -128,7 +101,6 @@ The following table lists the available products and their **ProductId**. It als
 | Power BI Pro* | CFQ7TTC0H9MP | No |
 | Project Plan 1* | CFQ7TTC0HDB1 | Yes |
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
-| Python in Excel | CFQ7TTC0S3X1 | Yes |
 | Teams Exploratory | CFQ7TTC0J1FV | Yes |
 | Teams Premium Introductory Pricing | CFQ7TTC0RM8K | Yes |
 | Visio Plan 1* | CFQ7TTC0HD33 | Yes |
