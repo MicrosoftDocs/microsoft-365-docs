@@ -1,18 +1,14 @@
 ---
 title: Troubleshoot problems with reporting tools for Microsoft Defender Antivirus
 description: Identify and solve common problems when attempting to report in Microsoft Defender Antivirus protection status in Update Compliance
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender Antivirus
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer:
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 ms.collection: 
 - m365-security
