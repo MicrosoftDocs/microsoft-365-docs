@@ -1,11 +1,9 @@
 ---
 title: UEFI scanning in Defender for Endpoint
 description: Learn how Microsoft Defender for Endpoint is extending its protection capabilities to the firmware level with a new Unified Extensible Firmware Interface (UEFI) scanner.
-keywords: Microsoft Defender for Endpoint, EDR in block mode, passive mode blocking
-ms.pagetype: security
-author: v-jmathew
-ms.author: v-jmathew
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+manager: deniseb
 ms.reviewer: yongrhee
 audience: ITPro
 ms.topic: conceptual
