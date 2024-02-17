@@ -4,10 +4,10 @@ description: Monitor your organization's data security through device control re
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 02/01/2024
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.topic: conceptual
-manager: dansimp
+manager: deniseb
 ms.reviewer: joshbregman
 audience: ITPro
 ms.subservice: asr
