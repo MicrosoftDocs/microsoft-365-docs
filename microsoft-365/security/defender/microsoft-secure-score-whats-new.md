@@ -5,8 +5,8 @@ ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
 ms.service: defender-xdr
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -16,7 +16,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 09/13/2023
+ms.date: 02/19/2024
 ---
 
 # What's new in Microsoft Secure Score
@@ -29,6 +29,12 @@ The more improvement actions you take, the higher your Secure Score will be. For
 
 Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft Defender portal](microsoft-365-defender-portal.md).
 
+## February 2024
+The following recommendation is added as a Microsoft Secure Score improvement action:
+
+- Microsoft Defender for Identity:
+  - Edit insecure ADCS certificate enrollment IIS endpoints (ESC8)
+
 ## January 2024 
  
 The following recommendations have been added as Microsoft Secure Score improvement actions: 
@@ -37,6 +43,7 @@ The following recommendations have been added as Microsoft Secure Score improvem
 
 - Ensure 'Phishing-resistant MFA strength' is required for Administrators. 
 - Ensure custom banned passwords lists are used. 
+- Ensure 'Microsoft Azure Management' is limited to administrative roles.
 
 **Admin Center:**
 
