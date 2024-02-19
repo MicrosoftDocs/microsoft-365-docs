@@ -32,6 +32,8 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
+- Microsoft Defender for Individual
+
 **Platforms**
 - Windows
 
