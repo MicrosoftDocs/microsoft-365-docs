@@ -1,6 +1,6 @@
 ---
-title: Manage tenants with multi-tenant management in Microsoft Defender XDR
-description: Learn about the tenant list in multi-tenant management in Microsoft Defender XDR
+title: Manage tenants with multitenant management in Microsoft Defender XDR
+description: Learn about the tenant list in multitenant management in Microsoft Defender XDR
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: siosulli
@@ -46,6 +46,6 @@ When an issue exists, the status indicator shows a red warning sign:
 
 - ![data issues](../../media/defender/mto-data-issues.png)
 
-Hovering over the red warning sign displays the issues that have occurred and the tenant information. By expanding each section, you see all the tenants with this issue.
+Hovering over the red warning sign displays the issues that occurred and the tenant information. By expanding each section, you see all the tenants with this issue.
 
 - ![tenant data issues](../../media/defender/mto-tenantdata-issues.png)

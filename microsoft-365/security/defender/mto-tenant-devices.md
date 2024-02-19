@@ -1,6 +1,6 @@
 ---
 title: Devices in multi-tenant management 
-description: Learn about multi-tenant device view in multi-tenant management of the Microsoft Defender XDR 
+description: Learn about multitenant device view in multitenant management of the Microsoft Defender XDR 
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: siosulli
@@ -24,7 +24,7 @@ ms.date: 09/01/2023
 
 ## Tenant device list
 
-The Tenants page in multi-tenant management lists each tenant you have access to. For each tenant, the page includes details such as the number of devices and device types, the number of high value and high exposure devices, and the number of devices available to onboard:
+The Tenants page in multi-tenant management lists each tenant you have access to. Each tenant page includes details such as the number of devices and device types, the number of high value and high exposure devices, and the number of devices available to onboard:
 
    :::image type="content" source="../../media/defender/mto-tenant-page.png" alt-text="Screenshot of the Microsoft Defender XDR multi-tenant device list" lightbox="../../media/defender/mto-tenant-page.png":::
 
