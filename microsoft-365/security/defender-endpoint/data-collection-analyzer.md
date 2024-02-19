@@ -31,14 +31,6 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 
 :::image type="content" source="images/MDEClientAnalyzerHelp.png" alt-text="The parameters for MDEClientAnalyzer.cmd" lightbox="images/MDEClientAnalyzerHelp.png":::
 
-> [!NOTE]
-> When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) to collect Microsoft Defender Antivirus related support logs.
-
-
-> [!NOTE]
-> You can use '-g' flag to validate URLs for a specific datacenter region even without being onboarded to that region<br>
-> For example:<br>
-> 'MDEClientAnalyzer.cmd -g EU' will force the analyzer to test cloud URLs in Europe region.
 
 **-h** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect a verbose general performance trace in addition to the standard log set.
 
@@ -76,10 +68,19 @@ The analyzer and all the above scenario flags can be initiated remotely by runni
 :::image type="content" source="images/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="The parameters for RemoteMDEClientAnalyzer.cmd" lightbox="images/57cab9d82d08f672a92bf9e748ac9572.png":::
 
 > [!NOTE]
+> When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) to collect Microsoft Defender Antivirus related support logs.
+
+> [!NOTE]
+> You can use '-g' flag to validate URLs for a specific datacenter region even without being onboarded to that region<br>
+> For example:<br>
+> 'MDEClientAnalyzer.cmd -g EU' will force the analyzer to test cloud URLs in Europe region.
+
+> [!NOTE]
 >
 > - When using RemoteMDEClientAnalyzer.cmd it calls into psexec to download the tool from the configured file share and then run it locally via PsExec.exe.
-    The CMD script uses '-r' flag to specify that it is running remotely within SYSTEM context and so no prompt to the user will be presented.
-> - That same flag can be used with MDEClientAnalyzer.cmd to avoid a prompt to user that requests to specify the number of minutes for data collection. For example:
+```
+The CMD script uses '-r' flag to specify that it is running remotely within SYSTEM context and so no prompt to the user will be presented.
+```> - That same flag can be used with MDEClientAnalyzer.cmd to avoid a prompt to user that requests to specify the number of minutes for data collection. For example:
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >
