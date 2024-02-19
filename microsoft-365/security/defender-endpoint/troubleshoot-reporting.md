@@ -24,12 +24,15 @@ ms.date: 04/08/2021
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 **Platforms**
 - Windows
+- Windows Server
 
 > [!IMPORTANT]
 > On March 31, 2020, the Microsoft Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Intune family of products](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune), which allows finer control over security features and updates.
