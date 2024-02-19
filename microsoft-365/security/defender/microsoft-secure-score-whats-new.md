@@ -32,7 +32,7 @@ Microsoft Secure Score can be found at <https://security.microsoft.com/securesco
 ## February 2024
 The following recommendation is added as a Microsoft Secure Score improvement action:
 
-- Microsoft Defender for Identity:
+**Microsoft Defender for Identity:**
   - Edit insecure ADCS certificate enrollment IIS endpoints (ESC8)
 
 ## January 2024 
