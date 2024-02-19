@@ -16,7 +16,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: ngp
 search.appverid: met150
-ms.date: 03/23/2021
+ms.date: 02/18/2024
 ---
 
 # Data collection for advanced troubleshooting on Windows
