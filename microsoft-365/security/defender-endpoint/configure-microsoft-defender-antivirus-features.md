@@ -8,14 +8,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
 ms.custom: nextgen
-ms.reviewer:
+ms.reviewer: yongrhee
 manager: deniseb
 ms.collection: 
 - m365-security
 - tier2
 - mde-ngp
 search.appverid: met150
-ms.date: 04/08/2021
+ms.date: 02/18/2024
 ---
 
 # Configure Microsoft Defender Antivirus features
