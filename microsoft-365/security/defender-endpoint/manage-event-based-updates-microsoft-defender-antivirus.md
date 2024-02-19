@@ -30,6 +30,8 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender for Business
+
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -39,7 +41,34 @@ Microsoft Defender Antivirus allows you to determine if updates should (or shoul
 
 ## Check for protection updates before running a scan
 
-You can use Microsoft Configuration Manager, Group Policy, PowerShell cmdlets, and WMI to force Microsoft Defender Antivirus to check and download protection updates before running a scheduled scan.
+You can use Microsoft Defender for Endpoint Security Settings Management, Microsoft Intune, Microsoft Configuration Manager, Group Policy, PowerShell cmdlets, and WMI to force Microsoft Defender Antivirus to check and download protection updates before running a scheduled scan.
+
+### Use Microsoft Defender for Endpoint Security Settings Management to check for protection updates before running a scan
+1. On your Microsoft Defender for Endpoint console ([https://security.microsoft.com](https://security.microsoft.com))
+
+1. Under Endpoints > Configuration management > Endpoint security policies > Create new Policy 
+
+Under Select Platform "Windows 10, Windows 11, and Windows Server"
+Under Select Templates "Microsoft Defender Antivirus"
+Name:
+Description:
+Click on Next
+1. Go to the **Scheduled scans** section and set **Check For Signatures Before Running Scan** to **Enabled**.
+
+1. Deploy the updated policy as usual.
+
+### Use Microsoft Intune to check for protection updates before running a scan
+1. On your Microsoft Intune console ([https://intune.microsoft.com/](https://intune.microsoft.com/)),  
+
+1. Under Endpoints > Configuration management > Endpoint security policies > Create new Policy 
+
+Under Select Platform "Windows 10, Windows 11, and Windows Server"
+Under Select Templates "Microsoft Defender Antivirus"
+Name:
+Description:
+Click on Next
+1. Go to the **Scheduled scans** section and set **Check For Signatures Before Running Scan** to **Enabled**.
+1. Deploy the updated policy as usual.
 
 ### Use Configuration Manager to check for protection updates before running a scan
 
