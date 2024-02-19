@@ -28,6 +28,8 @@ search.appverid: met150
 **Platforms**
 - Windows
 
+- Windows Server
+
 Microsoft Defender Antivirus uses many intelligent mechanisms for detecting malware. One of the most powerful capabilities is the ability to apply the power of the cloud to detect malware and perform rapid analysis. Cloud protection and automatic sample submission work together with Microsoft Defender Antivirus to help protect against new and emerging threats. 
 
 If a suspicious or malicious file is detected, a sample is sent to the cloud service for analysis while Microsoft Defender Antivirus blocks the file. As soon as a determination is made, which happens quickly, the file is either released or blocked by Microsoft Defender Antivirus. 
@@ -97,6 +99,8 @@ In addition to configuring your cloud protection level, you can configure your s
 - **Send all samples automatically**  
 - **Do not send samples**  
 
+> [!TIP]
+> Setting to "Send all samples automatically" provides higher amount of security since phishing attacks are used for a high amount of [initial access attacks](https://attack.mitre.org/tactics/TA0001/).
 For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection at Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ## Examples of metadata sent to the cloud protection service
