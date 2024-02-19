@@ -25,6 +25,10 @@ ms.date: 02/18/2024
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+- Microsoft Defender for Business
+
+- Microsoft Defender Antivirus
+
 When collaborating with Microsoft support professionals, you may be asked to use the client analyzer to collect data for troubleshooting of more complex scenarios. The analyzer script supports other parameters for that purpose and can collect a specific log set based on the observed symptoms that need to be investigated.
 
 Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and their description:
@@ -60,7 +64,6 @@ The analyzer and all the above scenario flags can be initiated remotely by runni
 > 'MDEClientAnalyzer.cmd -g EU' will force the analyzer to test cloud URLs in Europe region.
 
 > [!NOTE]
->
 > - When using RemoteMDEClientAnalyzer.cmd it calls into psexec to download the tool from the configured file share and then run it locally via PsExec.exe.
 ```
 The CMD script uses '-r' flag to specify that it is running remotely within SYSTEM context and so no prompt to the user will be presented.
