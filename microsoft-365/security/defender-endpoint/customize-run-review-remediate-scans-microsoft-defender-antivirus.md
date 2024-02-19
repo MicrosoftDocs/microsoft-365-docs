@@ -7,8 +7,8 @@ ms.localizationpriority: medium
 author: siosulli
 ms.author: siosulli
 ms.custom: nextgen
-ms.date: 02/18/2024
-ms.reviewer: yongrhee
+ms.date: 09/03/2018
+ms.reviewer: 
 manager: deniseb
 ms.subservice: ngp
 ms.topic: conceptual
@@ -32,7 +32,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
-You can use Microsoft Defender for Endpoint Security Configuration Management, Microsoft Intune, Microsoft Configuration Manager Tenant Attach, Group Policy, PowerShell, and Windows Management Instrumentation (WMI) to configure Microsoft Defender Antivirus scans. 
+You can use Group Policy, PowerShell, and Windows Management Instrumentation (WMI) to configure Microsoft Defender Antivirus scans. 
 
 ## In this section
 
