@@ -8,7 +8,7 @@ ms.topic: conceptual
 author: siosulli
 ms.author: siosulli
 ms.custom: nextgen
-ms.reviewer:
+ms.reviewer: yongrhee
 manager: deniseb
 ms.subservice: ngp
 ms.collection: 
@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 - mde-ngp
 search.appverid: met150
-ms.date: 04/08/2021
+ms.date: 02/18/2024
 ---
 
 # Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint
