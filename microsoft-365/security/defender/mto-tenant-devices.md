@@ -22,8 +22,6 @@ ms.date: 09/01/2023
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## Tenant device list
 
 The Tenants page in multi-tenant management lists each tenant you have access to. For each tenant, the page includes details such as the number of devices and device types, the number of high value and high exposure devices, and the number of devices available to onboard:

@@ -22,8 +22,6 @@ ms.date: 09/01/2023
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## Microsoft Defender Vulnerability Management dashboard
 
 You can use the Defender Vulnerability Management dashboard in multi-tenant management to view aggregated and summarized information across all tenants, such as:

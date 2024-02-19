@@ -21,8 +21,6 @@ ms.date: 09/01/2023
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 This article describes the steps you need to take to start using multi-tenant management in Microsoft Defender XDR.
 
 >[!Note]

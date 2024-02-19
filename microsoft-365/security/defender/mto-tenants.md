@@ -22,8 +22,6 @@ ms.date: 09/01/2023
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## View the tenants page
 
 To view the list of tenants that appear in multi-tenant management, go to [Settings page](https://mto.security.microsoft.com/mtosettings) in multi-tenant management in Microsoft Defender XDR:
