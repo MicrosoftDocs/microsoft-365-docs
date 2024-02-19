@@ -5,7 +5,7 @@ ms.service: defender-endpoint
 author: siosulli
 ms.author: siosulli
 ms.localizationpriority: medium
-ms.date: 12/07/2023
+ms.date: 02/18/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
