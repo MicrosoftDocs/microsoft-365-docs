@@ -24,10 +24,7 @@ ms.date: 09/01/2023
 This article describes the steps you need to take to start using multi-tenant management in Microsoft Defender XDR.
 
 >[!Note]
-> In a multi-tenant environment, interactions between the multi-tenant user and the managed tenants may involve accessing data and managing configurations. However, these actions depend on the permissions that the managed tenant has granted to the multi-tenant user.
-
->[!Note]
-> In multi-tenant management, interactions between the multi-tenant user and the managed tenants could involve accessing data and managing configurations. The ability to undertake these actions is determined by the permissions a managed tenant has granted the multi-tenant user.
+>In multi-tenant management, interactions between the multi-tenant user and the managed tenants could involve accessing data and managing configurations. The ability to undertake these actions is determined by the permissions a managed tenant has granted the multi-tenant user.
 
 1. [Review the requirements](#review-the-requirements)
 2. [Verify your tenant access](#verify-your-tenant-access)
