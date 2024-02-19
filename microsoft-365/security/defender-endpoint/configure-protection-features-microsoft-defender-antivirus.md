@@ -36,7 +36,7 @@ Microsoft Defender Antivirus uses several methods to provide threat protection:
 - Always-on scanning, using file and process behavior monitoring and other heuristics (also known as "real-time protection")
 - Dedicated protection updates based on machine learning, human and automated big-data analysis, and in-depth threat resistance research
 
-You can configure how Microsoft Defender Antivirus uses these methods with Group Policy, System Center Configuration Manage, PowerShell cmdlets, and Windows Management Instrumentation (WMI).
+You can configure how Microsoft Defender Antivirus uses these methods with [Microsoft Defender for Endpoint Security Configuration Management](/mem/intune/protect/mde-security-integration), [Microsoft Intune](/microsoft-365/security/defender-endpoint/use-intune-config-manager-microsoft-defender-antivirus), Microsoft Configuration Manager, [Group Policy](/microsoft-365/security/defender-endpoint/use-group-policy-microsoft-defender-antivirus), [PowerShell cmdlets](/microsoft-365/security/defender-endpoint/use-powershell-cmdlets-microsoft-defender-antivirus), and [Windows Management Instrumentation (WMI)](/microsoft-365/security/defender-endpoint/use-wmi-microsoft-defender-antivirus).
 
 This section covers configuration for always-on scanning, including how to detect and block apps that are deemed unsafe, but may not be detected as malware.
 
