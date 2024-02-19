@@ -31,15 +31,20 @@ ms.subservice: ngp
 The Microsoft Defender for Endpoint agent depends on Microsoft Defender Antivirus for some capabilities such as file scanning.
 
 > [!IMPORTANT]
-> Defender for Endpoint does not adhere to the Microsoft Defender Antivirus Exclusions settings.
+> Microsoft Defender for Endpoint - Endpoint Protection and Response (EDR) does not adhere to the Microsoft Defender Antivirus Exclusions settings.
+For optimal protection Microsoft Defender for Endpoint devices whether Microsoft Defender Antivirus is the active anti-malware or not. You must configure the following settings:
 
-You must configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active anti-malware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).
+- Security intelligence updates (which will also update the scan engine)
 
-If an onboarded device is protected by a third-party anti-malware client, Microsoft Defender Antivirus on that endpoint will enter into passive mode.
+- Platform Update updates
 
-Microsoft Defender Antivirus will continue to receive updates, and the *msmpeng.exe* process will be listed as a running a service. But, it won't perform scans and doesn't replace the running third-party anti-malware client.
+For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).
 
-The Microsoft Defender Antivirus interface will be disabled. Users on the device won't be able to use Microsoft Defender Antivirus to perform on-demand scans or configure most options.
+If an onboarded device is protected by a third-party anti-malware client, Microsoft Defender Antivirus on that endpoint will enter into [passive mode](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+
+Microsoft Defender Antivirus will continue to receive updates, and the *msmpeng.exe* process will be listed as a running a service. But, it won't perform real-time protection scans, scheduled scans, on-demand scans and doesn't replace the running third-party anti-malware client.
+
+The Microsoft Defender Antivirus interface will be disabled. Users on the device won't be able to use Microsoft Defender Antivirus to perform on-demand scans or configure most options such as Attack Surface Reduction (ASR) rules, Network Protection, Indicators - File/IP address/URL/Certificates allow/block, Web Content Filtering, Controlled Folder Access, etc...
 
 For more information, see the [Microsoft Defender Antivirus and Defender for Endpoint compatibility topic](microsoft-defender-antivirus-compatibility.md).
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
