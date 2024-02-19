@@ -6,11 +6,11 @@ ms.localizationpriority: medium
 author: siosulli
 ms.author: siosulli
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer: yongrhee
 manager: deniseb
 ms.subservice: ngp
 ms.topic: conceptual
-ms.date: 02/16/2024
+ms.date: 02/18/2024
 ms.collection: 
 - m365-security
 - tier2
