@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: dansimp
 author: dansimp
 localization_priority: Normal
-ms.date: 09/06/2022
+ms.date: 02/18/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
