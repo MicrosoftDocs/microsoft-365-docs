@@ -9,8 +9,8 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 02/02/2024
-ms.reviewer: 
+ms.date: 02/18/2024
+ms.reviewer: yongrhee
 manager: dansimp
 ms.subservice: ngp
 ms.collection: 
