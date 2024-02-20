@@ -3,7 +3,7 @@ title: "Manage Microsoft 365 groups"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/25/2020
+ms.date: 02/20/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -17,6 +17,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-subscription-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150
@@ -41,9 +42,11 @@ Where and how you can manage your user accounts depends on the identity model yo
 You create and manage groups with:
 
 - [The Microsoft 365 admin center](/admin)
-- [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
+- PowerShell
+  - [Manage Microsoft 365 groups with PowerShell](manage-microsoft-365-groups-with-powershell.md)
+  - [Maintain security group membership with PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Microsoft Entra admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
-    
+
 ### Hybrid
 
 AD DS groups are synchronized with Microsoft 365 from AD DS, so you must use on-premises AD DS tools to manage these groups.
@@ -51,12 +54,14 @@ AD DS groups are synchronized with Microsoft 365 from AD DS, so you must use on-
 You can also create and manage Microsoft Entra groups that are separate from AD DS groups but can contain users and groups from AD DS. In this case, you can use:
 
 - [The Microsoft 365 admin center](/admin)
-- [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
+- PowerShell
+  - [Manage Microsoft 365 groups with PowerShell](manage-microsoft-365-groups-with-powershell.md)
+  - [Maintain security group membership with PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Microsoft Entra admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 ## Allow users to create and manage their own groups
 
-Microsoft Entra ID allows groups that can be managed by group owners instead of IT administrators. Known as *self-service group management*, this feature allows group owners who are not assigned an administrative role to create and manage security groups. 
+Microsoft Entra ID allows groups that can be managed by group owners instead of IT administrators. Known as *self-service group management*, this feature allows group owners who are not assigned an administrative role to create and manage security groups.
 
 Users can request membership in a security group and that request goes to the group owner, rather than an IT administrator. This allows the day-to-day control of group membership to be delegated to team, project, or business owners who understand the business use for the group and can manage its membership.
 
