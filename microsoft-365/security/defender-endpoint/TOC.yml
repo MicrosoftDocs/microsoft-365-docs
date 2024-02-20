@@ -152,91 +152,11 @@
       - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
         href: configure-endpoints-vdi.md
 
-    - name: Defender for Endpoint on macOS
-      items:
-      - name: Microsoft Defender for Endpoint on macOS
-        href: microsoft-defender-endpoint-mac.md
-      - name: What's new in Defender for Endpoint on macOS
-        href: mac-whatsnew.md
-      - name: Deploy Defender for Endpoint on macOS
-        items:
-      - name: Deployment with Microsoft Intune
-        href: mac-install-with-intune.md
-      - name: JAMF Pro-based deployment
-        items:
-        - name: Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro
-          href: mac-install-with-jamf.md
-        - name: Log in to Jamf Pro
-          href: mac-install-jamfpro-login.md
-        - name: Set up device groups
-          href: mac-jamfpro-device-groups.md
-        - name: Set up policies
-          href: mac-jamfpro-policies.md
-        - name: Enroll devices
-          href: mac-jamfpro-enroll-devices.md        
-        - name: Deployment with Mobile Device Management (MDM) systems
-          href: mac-install-with-other-mdm.md
-      - name: Manual deployment
-        href: mac-install-manually.md
-    - name: Configure Defender for Endpoint on macOS
-      items:
-      - name: Configure and validate exclusions
-        href: mac-exclusions.md
-      - name: Set preferences
-        href: mac-preferences.md 
-      - name: Detect and block Potentially Unwanted Applications
-        href: mac-pua.md
-      - name: Protect macOS security settings using tamper protection
-        href: tamperprotection-macos.md
-      - name: Device control
-        items:
-        - name: Device control overview
-          href: mac-device-control-overview.md
-        - name: JAMF examples
-          href: mac-device-control-jamf.md
-        - name: Intune examples
-          href: mac-device-control-intune.md
-        - name: macOS Device Control frequently asked questions (FAQ)
-          href: mac-device-control-faq.md
-      - name: Schedule scans
-        href: mac-schedule-scan.md
-      - name: Configure Microsoft Defender for Endpoint on macOS
-        items:
-      - name: Configure and validate exclusions
-        href: mac-exclusions.md
-      - name: Set preferences
-        href: mac-preferences.md
-      - name: Detect and block Potentially Unwanted Applications
-        href: mac-pua.md
-      - name: Protect macOS security settings using tamper protection
-        href: tamperprotection-macos.md
-      - name: Device control
-        items:
-        - name: Device control overview
-          href: mac-device-control-overview.md
-        - name: JAMF examples
-          href: mac-device-control-jamf.md
-        - name: Intune examples
-          href: mac-device-control-intune.md
-        - name: macOS Device Control frequently asked questions (FAQ)
-          href: mac-device-control-faq.md
-
-      - name: Schedule scans
-        href: mac-schedule-scan.md
-
-    - name: Update Defender for Endpoint on macOS
-      href: mac-updates.md
-    - name: Privacy for Microsoft Defender for Endpoint on macOS
-      href: mac-privacy.md
-    - name: Resources for Microsoft Defender for Endpoint on macOS
-      href: mac-resources.md
-
     - name: Microsoft Defender for Endpoint on other platforms
       items:
       - name: Onboard non-Windows devices
         href: configure-endpoints-non-windows.md
-  - name: Microsoft Defender for Endpoint on macOS
-    items:
+        items:
       - name: Microsoft Defender for Endpoint on Linux
         items:
         - name: Deploy Defender for Endpoint on Linux
@@ -1517,7 +1437,82 @@
         href: troubleshoot-asr.md
       - name: Migrate to Attack surface reduction rules
         href: migrating-asr-rules.md
-
+- name: Defender for Endpoint on macOS
+  items:
+  - name: Microsoft Defender for Endpoint on macOS
+    href: microsoft-defender-endpoint-mac.md
+  - name: What's new in Defender for Endpoint on macOS
+    href: mac-whatsnew.md
+  - name: Deploy Defender for Endpoint on macOS
+    items:
+    - name: Deployment with Microsoft Intune
+      href: mac-install-with-intune.md
+    - name: JAMF Pro-based deployment
+      items:
+      - name: Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro
+        href: mac-install-with-jamf.md
+      - name: Log in to Jamf Pro
+        href: mac-install-jamfpro-login.md
+      - name: Set up device groups
+        href: mac-jamfpro-device-groups.md
+      - name: Set up policies
+        href: mac-jamfpro-policies.md
+      - name: Enroll devices
+        href: mac-jamfpro-enroll-devices.md        
+      - name: Deployment with Mobile Device Management (MDM) systems
+        href: mac-install-with-other-mdm.md
+    - name: Manual deployment
+      href: mac-install-manually.md
+  - name: Configure Defender for Endpoint on macOS
+    items:
+      - name: Configure and validate exclusions
+        href: mac-exclusions.md
+      - name: Set preferences
+        href: mac-preferences.md 
+      - name: Detect and block Potentially Unwanted Applications
+        href: mac-pua.md
+      - name: Protect macOS security settings using tamper protection
+        href: tamperprotection-macos.md
+      - name: Device control
+        items:
+        - name: Device control overview
+          href: mac-device-control-overview.md
+        - name: JAMF examples
+          href: mac-device-control-jamf.md
+        - name: Intune examples
+          href: mac-device-control-intune.md
+        - name: macOS Device Control frequently asked questions (FAQ)
+          href: mac-device-control-faq.md
+      - name: Schedule scans
+        href: mac-schedule-scan.md
+      - name: Configure Microsoft Defender for Endpoint on macOS
+        items:
+      - name: Configure and validate exclusions
+        href: mac-exclusions.md
+      - name: Set preferences
+        href: mac-preferences.md
+      - name: Detect and block Potentially Unwanted Applications
+        href: mac-pua.md
+      - name: Protect macOS security settings using tamper protection
+        href: tamperprotection-macos.md
+      - name: Device control
+        items:
+        - name: Device control overview
+          href: mac-device-control-overview.md
+        - name: JAMF examples
+          href: mac-device-control-jamf.md
+        - name: Intune examples
+          href: mac-device-control-intune.md
+        - name: macOS Device Control frequently asked questions (FAQ)
+          href: mac-device-control-faq.md
+      - name: Schedule scans
+        href: mac-schedule-scan.md
+  - name: Update Defender for Endpoint on macOS
+    href: mac-updates.md
+  - name: Privacy for Microsoft Defender for Endpoint on macOS
+    href: mac-privacy.md
+  - name: Resources for Microsoft Defender for Endpoint on macOS
+    href: mac-resources.md
   - name: Microsoft Defender XDR docs
     items:
     - name: Microsoft Defender XDR
