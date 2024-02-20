@@ -1,18 +1,14 @@
 ---
 title: Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus
 description: In Windows 10 and Windows 11, you can use PowerShell cmdlets to run scans, update Security intelligence, and change settings in Microsoft Defender Antivirus.
-keywords: scan, command line, mpcmdrun, defender
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.date: 09/06/2022
 ms.reviewer: 
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 audience: ITPro
 ms.topic: how-to
@@ -40,7 +36,7 @@ For a list of the cmdlets and their functions and available parameters, see the 
 PowerShell cmdlets are most useful in Windows Server environments that don't rely on a graphical user interface (GUI) to configure software.
 
 > [!NOTE]
-> PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [Microsoft Endpoint Configuration Manager](/configmgr), [Group Policy Management Console](use-group-policy-microsoft-defender-antivirus.md), or [Microsoft Defender Antivirus Group Policy ADMX templates](https://www.microsoft.com/download/101445).
+> PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [Microsoft Endpoint Configuration Manager](/configmgr), [Group Policy Management Console](use-group-policy-microsoft-defender-antivirus.md), or [Microsoft Defender Antivirus Group Policy ADMX templates](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
 Changes made with PowerShell will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune can overwrite changes made with PowerShell.
 
