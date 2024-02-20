@@ -2,14 +2,14 @@
 metadata:
   title: Microsoft Defender Antivirus event IDs and error codes
   description: Look up the causes and solutions for Microsoft Defender Antivirus event IDs and errors.
-  author: denisebmsft
-  ms.author: deniseb
+  author: siosulli
+  ms.author: siosulli
   ms.service: defender-endpoint
-  ms.topic: conceptual
-  ms.date: 1/26/2024
+  ms.topic: troubleshooting
+  ms.date: 02/16/2024
   ms.localizationpriority: medium
   ms.custom: nextgen
-  manager: dansimp
+  manager: deniseb
   ms.subservice: ngp
   ms.collection:
   - m365-security
@@ -43,7 +43,7 @@ sections:
 
           4. In the details pane, view the list of individual events to find your event.
 
-          5. Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
+          5. Select the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
      - question: Event ID 1000
        answer: |
@@ -202,9 +202,9 @@ sections:
 
               - NIS: Network inspection system
 
-              - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+              - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls.
 
-              - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence.
+              - Early Launch Antimalware (ELAM). This source includes malware detected by the boot sequence.
 
               - Remote attestation
 
@@ -241,19 +241,19 @@ sections:
 
           - Action: Action. Examples:
 
-              - Clean: The resource was cleaned
+              - Clean: The resource was cleaned.
 
-              - Quarantine: The resource was quarantined
+              - Quarantine: The resource was quarantined.
 
-              - Remove: The resource was deleted
+              - Remove: The resource was deleted.
 
-              - Allow: The resource was allowed to execute/exist
+              - Allow: The resource was allowed to execute/exist.
 
               - User defined: User-defined action that's typically from this list of actions specified by the user.
 
               - No action: No action
 
-              - Block: The resource was blocked from executing
+              - Block: The resource was blocked from executing.
 
           - Status: Status
 
@@ -284,19 +284,19 @@ sections:
 
            - Action: Action. Examples:
 
-              - Clean: The resource was cleaned
+              - Clean: The resource was cleaned.
 
-              - Quarantine: The resource was quarantined
+              - Quarantine: The resource was quarantined.
 
-              - Remove: The resource was deleted
+              - Remove: The resource was deleted.
 
-              - Allow: The resource was allowed to execute/exist
+              - Allow: The resource was allowed to execute/exist.
 
               - User defined: User-defined action that's typically from this list of actions specified by the user.
 
               - No action: No action
 
-              - Block: The resource was blocked from executing
+              - Block: The resource was blocked from executing.
 
           - Error Code: Error code Result code associated with threat status. Standard HRESULT values.
 
@@ -425,7 +425,7 @@ sections:
 
          Description: Microsoft Defender Antivirus removed history of malware and other potentially unwanted software.
 
-          - Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.
+          - Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For such events, we specifically call them as Action Time or Detection Time.
 
           - User: Domain\User
 
@@ -438,7 +438,7 @@ sections:
 
          Description: Microsoft Defender Antivirus encountered an error trying to remove history of malware and other potentially unwanted software.
 
-          - Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.
+          - Time: The time when the event occurred, for example when the history is purged. This parameter isn't used in threat events so that there's no confusion regarding whether it's remediation time or infection time. For such events, we specifically call them as Action Time or Detection Time.
 
           - User: Domain\User
 
@@ -481,9 +481,9 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this source protects against malicious webpage controls.
 
-             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+             - Early Launch Antimalware (ELAM). This source includes malware detected by the boot sequence.
 
              - Remote attestation
 
@@ -540,9 +540,9 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls.
 
-             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence.
 
              - Remote attestation
 
@@ -556,7 +556,7 @@ sections:
 
           - Engine Version: Antimalware Engine version
 
-         User action: No action is required. Microsoft Defender Antivirus can suspend and take routine action on this threat. If you want to remove the threat manually, in the Microsoft Defender Antivirus interface, click **Clean Computer**.
+         User action: No action is required. Microsoft Defender Antivirus can suspend and take routine action on this threat. If you want to remove the threat manually, in the Microsoft Defender Antivirus interface, select **Clean Computer**.
 
      - question: Event ID 1117
        answer: |
@@ -593,9 +593,9 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this source protects against malicious webpage controls.
 
-             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence.
 
              - Remote attestation
 
@@ -607,21 +607,21 @@ sections:
 
           - Action: Action. Examples:
 
-             - Clean: The resource was cleaned
+             - Clean: The resource was cleaned.
 
-             - Quarantine: The resource was quarantined
+             - Quarantine: The resource was quarantined.
 
-             - Remove: The resource was deleted
+             - Remove: The resource was deleted.
 
-             - Allow: The resource was allowed to execute/exist
+             - Allow: The resource was allowed to execute/exist.
 
              - User defined: User-defined action that's typically from this list of actions specified by the user.
 
              - No action: No action
 
-             - Block: The resource was blocked from executing
+             - Block: The resource was blocked from executing.
 
-          - Action Status: Description of additional actions
+          - Action Status: Description of other actions
 
           - Error Code: Error code Result code associated with threat status. Standard HRESULT values.
 
@@ -631,7 +631,7 @@ sections:
 
           - Engine Version: Antimalware Engine version
 
-          NOTE: Whenever Microsoft Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it restores the following system settings and services that the malware might have changed:
+          NOTE: Whenever Microsoft Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it restores the following system settings and services that might have been changed by the malware:
 
              - Default Internet Explorer or Microsoft Edge setting
 
@@ -694,9 +694,9 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls.
 
-             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
+             - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence.
 
              - Remote attestation
 
@@ -708,11 +708,11 @@ sections:
 
           - Action: Action. Examples:
 
-             - Clean: The resource was cleaned
+             - Clean: The resource was cleaned.
 
-             - Quarantine: The resource was quarantined
+             - Quarantine: The resource was quarantined.
 
-             - Remove: The resource was deleted
+             - Remove: The resource was deleted.
 
              - Allow: The resource was allowed to execute/exist
 
@@ -769,7 +769,7 @@ sections:
 
              - NIS: Network inspection system
 
-             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls
+             - IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls.
 
              - Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence
 
@@ -785,19 +785,19 @@ sections:
 
              - Clean: The resource was cleaned
 
-             - Quarantine: The resource was quarantined
+             - Quarantine: The resource was quarantined.
 
-             - Remove: The resource was deleted
+             - Remove: The resource was deleted.
 
-             - Allow: The resource was allowed to execute/exist
+             - Allow: The resource was allowed to execute/exist.
 
              - User defined: User-defined action that's typically from this list of actions specified by the user.
 
              - No action: No action
 
-             - Block: The resource was blocked from executing
+             - Block: The resource was blocked from executing.
 
-          - Action Status: Description of additional actions
+          - Action Status: Description of other actions
 
           - Error Code: Error code Result code associated with threat status. Standard HRESULT values.
 
@@ -807,7 +807,7 @@ sections:
 
           - Engine Version: Antimalware Engine version
 
-         User action: The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant **User action** steps below.
+         User action: The Microsoft Defender Antivirus client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant **User action** steps.
 
            - Action: Remove
              User action: Update the definitions then verify that the removal was successful.
@@ -874,7 +874,7 @@ sections:
 
           - Level: Level. Examples: win: Warning
 
-          - TimeCreated: SystemTime, time when the event was created
+          - TimeCreated: SystemTime, time when the event was created.
 
           - EventRecordID: EventRecordID, index number of the event in the event log
 
@@ -1092,7 +1092,7 @@ sections:
 
           - Error Description: Error description Description of the error.
 
-         User action: The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update. To troubleshoot this event:
+         User action: The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is due to an interruption in network connectivity during an update. To troubleshoot this event:
 
            - [Update definitions](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) and force a rescan directly on the endpoint.
 
@@ -1169,9 +1169,9 @@ sections:
 
          Symbolic name: `MALWAREPROTECTION_SIGNATURE_FASTPATH_UPDATED`
 
-         Message: The antimalware engine used the Dynamic Signature Service to get additional definitions.
+         Message: The antimalware engine used the Dynamic Signature Service to get other definitions.
 
-         Description: Microsoft Defender Antivirus used Dynamic Signature Service to retrieve additional signatures to help protect your machine.
+         Description: Microsoft Defender Antivirus used Dynamic Signature Service to retrieve more signatures to help protect your machine.
 
           - Current Signature Version: Current signature version
 
@@ -1198,11 +1198,11 @@ sections:
 
          Message: The Dynamic Signature Service deleted the out-of-date dynamic definitions.
 
-         Change to default behavior: Change to dynamic signature event reporting default behavior
+         Change to default behavior: Change to dynamic signature event reporting default behavior.
 
            When a dynamic signature is received by MDE, a 2010 event is reported. However, when the dynamic signature expires or is manually deleted a 2011 event is reported. In some cases, when a new signature is delivered to MDE sometimes hundreds of dynamic signatures expire at the same time; therefore hundreds of 2011 events are reported. The generation of so many 2011 events can cause a Security information and event management (SIEM) server to become flooded.
 
-           To avoid the previously described situation - starting with platform version 4.18.2207.7 - by default, Defender for Endpoint will now *not* report 2011 events:
+           To avoid the previously described situation - starting with platform version 4.18.2207.7 - by default, Defender for Endpoint doesn't report 2011 events:
 
             - This new default behavior is controlled by registry entry: `HKLM\SOFTWARE\Microsoft\Windows Defender\Reporting\EnableDynamicSignatureDroppedEventReporting`.
             - The default value for `EnableDynamicSignatureDroppedEventReporting` is **false**, which means 2011 *events aren't reported*. If it's set to true, 2011 *events are reported*.
@@ -1342,7 +1342,7 @@ sections:
 
          Message: Antimalware support for this operating system version will soon end.
 
-         Description: The support for your operating system will expire shortly. Running Microsoft Defender Antivirus on an out of support operating system isn't an adequate solution to protect against threats.
+         Description: The support for your operating system expires shortly. Running Microsoft Defender Antivirus on an out of support operating system isn't an adequate solution to protect against threats.
 
      - question: Event ID 2041
        answer: |
@@ -1371,7 +1371,7 @@ sections:
 
          Description: Microsoft Defender Antivirus Real-Time Protection feature encountered an error and failed.
 
-          - Feature: Feature. Examples: On Access, Internet Explorer downloads and Microsoft Outlook Express attachments, Behavior monitoring, or Network Inspection System
+          - Feature: Feature. Examples: On Access, Internet Explorer downloads and Microsoft Outlook Express attachments, Behavior monitoring, or Network Inspection System.
 
           - Error Code: Error code Result code associated with threat status. Standard HRESULT values.
 
@@ -1388,7 +1388,7 @@ sections:
 
          Message: Real-time protection recovered from a failure. We recommend running a full system scan when you see this error.
 
-         Description: Microsoft Defender Antivirus Real-time Protection restarted a feature. It's recommended that you run a full system scan to detect any items that may have been missed while this agent was down.
+         Description: Microsoft Defender Antivirus Real-time Protection restarted a feature. It's recommended that you run a full system scan to detect any items that might have been missed while this agent was down.
 
           - Feature: Feature. Examples: On Access, IE downloads and Outlook Express attachments, Behavior monitoring, or Network Inspection System
 
@@ -1515,20 +1515,20 @@ sections:
 
          Message: Tamper protection blocked a change to Microsoft Defender Antivirus.
 
-         Description: If Tamper protection is enabled, then, any attempt to change any of Defender's settings is blocked. Event ID 5013 is generated and states which setting change was blocked.
+         Description: If Tamper protection is enabled then any attempt to change any of Defender's settings is blocked. Event ID 5013 is generated and states which setting change was blocked.
 
      - question: Event ID 5100
        answer: |
 
          Symbolic name: `MALWAREPROTECTION_EXPIRATION_WARNING_STATE`
 
-         Message: The antimalware platform will expire soon.
+         Message: The antimalware platform expires soon.
 
          Description: Microsoft Defender Antivirus entered a grace period and will soon expire. After expiration, this program will disable protection against viruses, spyware, and other potentially unwanted software.
 
-           - Expiration Reason: The reason Microsoft Defender Antivirus will expire.
+           - Expiration Reason: The reason Microsoft Defender Antivirus expires.
 
-           - Expiration Date: The date Microsoft Defender Antivirus will expire.
+           - Expiration Date: The date Microsoft Defender Antivirus expires.
 
      - question: Event ID 5101
        answer: |
