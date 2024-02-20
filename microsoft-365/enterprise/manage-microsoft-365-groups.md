@@ -33,7 +33,7 @@ description: "Learn about how to manage Microsoft 365 groups."
 
 You can manage Microsoft 365 groups in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](/admin), PowerShell, in Active Directory Domain Services (AD DS), or in the [Microsoft Entra admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
-## Plan for where and how you will manage your groups
+## Plan for where and how you'll manage your groups
 
 Where and how you can manage your user accounts depends on the identity model you want to use for your Microsoft 365. The two overall models are cloud-only and hybrid.
   
@@ -49,13 +49,13 @@ You create and manage groups with:
 
 ### Hybrid
 
-To manage hybrid groups, you can use the same tools you use for cloud-only groups. Note that AD DS groups are synchronized with Microsoft 365 from AD DS, so you must use on-premises AD DS tools to manage these groups.
+To manage hybrid groups, you can use the same tools you use for cloud-only groups. AD DS groups are synchronized with Microsoft 365 from AD DS, so you must use on-premises AD DS tools to manage these groups.
 
 You can also create and manage Microsoft Entra groups that are separate from AD DS groups but can contain users and groups from AD DS.
 
 ## Allow users to create and manage their own groups
 
-Microsoft Entra ID allows groups that can be managed by group owners instead of IT administrators. Known as *self-service group management*, this feature allows group owners who are not assigned an administrative role to create and manage security groups.
+Microsoft Entra ID allows groups that can be managed by group owners instead of IT administrators. Known as *self-service group management*, this feature allows group owners who aren't assigned an administrative role to create and manage security groups.
 
 Users can request membership in a security group and that request goes to the group owner, rather than an IT administrator. This allows the day-to-day control of group membership to be delegated to team, project, or business owners who understand the business use for the group and can manage its membership.
 
@@ -73,7 +73,7 @@ Here's how the rules are applied:
 - If a new user account matches all the rules for the group, it becomes a member.
 - If a user account isn't a member of the group, but its attributes change so that it matches all the rules for the group, it becomes a member of that group.
 - If a user account doesn't match all the rules for the group, it isn't added to the group.
-- If a user account is a member of the group, but its attributes change so that it no longer matches all the rules for the group, it is removed as a member of the group.
+- If a user account is a member of the group, but its attributes change so that it no longer matches all the rules for the group, it's removed as a member of the group.
 
 To use dynamic membership, you must first determine the sets of groups that have a common set of user account attributes. For example, all members of the Sales department should be in the Sales Microsoft Entra group, based on the user account attribute Department set to "Sales".
 
