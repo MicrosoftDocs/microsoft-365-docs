@@ -3,7 +3,7 @@ title: "Mailbox utilization service alerts"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 1/26/2024
+ms.date: 02/20/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
