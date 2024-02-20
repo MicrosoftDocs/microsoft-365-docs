@@ -76,7 +76,7 @@ If you've previously turned on per-user MFA, you must turn it off before enablin
 > [!IMPORTANT]
 > It's not recommended to turn off MFA.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as least a [security administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator), [conditional access administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator) and [global administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [security administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator), [conditional access administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator) or [global administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator).
 
 1. Browse to **Identity** > **Overview** > **Properties**.
 1. Select **Manage security defaults**.
