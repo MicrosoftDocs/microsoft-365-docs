@@ -101,7 +101,7 @@ In the **Add Row** pane, specify the following settings:
 - In the **OMA-URI** field, type `/Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b[PolicyRule Id]%7d/RuleData`.
 - In the **Data Type** field, select **String (XML file)**, and use **Custom XML**.
 
-You can use parameters to set conditions for specific entries. Here's a [group example XML file for Allow Read access for each removable storage](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml).
+You can use parameters to set conditions for specific entries. Here's a [group example XML file for Allow Read access for each removable storage](https://github.com/microsoft/mdatp-devicecontrol/blob/main/windows/device/Intune%20OMA-URI/Allow%20Read.xml).
 
 > [!NOTE]
 > Comments using XML comment notation <!-- COMMENT --> can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
