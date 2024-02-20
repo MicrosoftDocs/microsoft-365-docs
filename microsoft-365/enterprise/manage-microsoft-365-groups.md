@@ -31,7 +31,7 @@ description: "Learn about how to manage Microsoft 365 groups."
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can manage Microsoft 365 groups in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](/admin), PowerShell, in Active Directory Domain Services (AD DS), or in the [Microsoft Entra admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
+You can manage Microsoft 365 groups in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](/admin), PowerShell, in Active Directory Domain Services (AD DS), or in the [Microsoft Entra admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
 ## Plan for where and how you will manage your groups
 
@@ -49,15 +49,9 @@ You create and manage groups with:
 
 ### Hybrid
 
-AD DS groups are synchronized with Microsoft 365 from AD DS, so you must use on-premises AD DS tools to manage these groups.
+To manage hybrid groups, you can use the same tools you use for cloud-only groups. Note that AD DS groups are synchronized with Microsoft 365 from AD DS, so you must use on-premises AD DS tools to manage these groups.
 
-You can also create and manage Microsoft Entra groups that are separate from AD DS groups but can contain users and groups from AD DS. In this case, you can use:
-
-- [The Microsoft 365 admin center](/admin)
-- PowerShell
-  - [Manage Microsoft 365 groups with PowerShell](manage-microsoft-365-groups-with-powershell.md)
-  - [Maintain security group membership with PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
-- [Microsoft Entra admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+You can also create and manage Microsoft Entra groups that are separate from AD DS groups but can contain users and groups from AD DS.
 
 ## Allow users to create and manage their own groups
 
@@ -67,7 +61,6 @@ Users can request membership in a security group and that request goes to the gr
 
 >[!Note]
 >Self-service group management is available only for Microsoft Entra security and Microsoft 365 groups. It is not available for mail-enabled groups, distribution lists, or any group that has been synchronized from AD DS.
->
 
 For more information, see the [instructions to configure a Microsoft Entra group for self-service management](/azure/active-directory/active-directory-accessmanagement-self-service-group-management).
 
@@ -96,7 +89,6 @@ Make sure you have enough licenses for all the group members. If you run out of 
 
 >[!Note]
 >You should not configure group-based licensing for groups that contain Azure business to business (B2B) accounts.
->
 
 For more information, see [Group-based licensing basics in Microsoft Entra ID](/azure/active-directory/active-directory-licensing-whatis-azure-portal).
 
