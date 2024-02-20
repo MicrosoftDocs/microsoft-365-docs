@@ -27,14 +27,10 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-mar2020
-ms.date: 
+ms.date: 02/20/2024
 ---
 
 # Use roles to define your frontline managers and workers in Shifts
-
-Alternative titles:
-- Overview of team owner, schedule owner, and team member roles in Shifts
-- Frontline manager and frontline worker roles in Shifts
 
 ## Overview
 
