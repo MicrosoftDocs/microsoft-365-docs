@@ -172,10 +172,10 @@ When moving OneDrive sites between _Geography_ locations, it's important to comm
 - When the move is expected to start and how long it is expected to take
 - What _Geography_ location their OneDrive is moving to, and the URL to access the new location
 - They should close their files and not make edits during the move.
-- File permissions and sharing will not change as a result of the move.
+- File permissions and sharing don't change as a result of the move.
 - What to expect from the user experience in a multi-geo environment
 
-Be sure to send your users an email when the move has successfully completed informing them that they can resume working in OneDrive.
+Be sure to send your users an email when the move completes, informing them that they can resume working in OneDrive.
 
 #### Scheduling OneDrive site moves
 
@@ -284,7 +284,7 @@ You can also add the _Verbose_ parameter for more verbose descriptions of the mo
 
 #### **User Experience**
 
-Users of OneDrive should notice minimal disruption if their OneDrive is moved to a different _Geography_ location. Aside from a brief read-only state during the move, existing links and permissions will continue to work as expected once the move is completed.
+Users of OneDrive should notice minimal disruption if their OneDrive is moved to a different _Geography_ location. Aside from a brief read-only state during the move, existing links and permissions continue to work as expected once the move is completed.
 
 #### **User's OneDrive**
 
@@ -292,7 +292,7 @@ While the move is in progress the user's OneDrive is set to read-only. Once the 
 
 #### **Permissions on OneDrive content**
 
-Users with permissions to OneDrive content will continue to have access to the content during the move and after it's complete.
+Users with permissions to OneDrive content continue to have access to the content during the move and after it's complete.
 
 #### **OneDrive sync app**
 
@@ -312,7 +312,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 
 #### **Teams app**
 
-Upon OneDrive _Geography_ move completion, users will have access to their OneDrive files on the Teams app. Additionally, files shared via Teams chat from their OneDrive prior to _Geography_ move will continue to work after move is complete.
+Upon OneDrive _Geography_ move completion, users will have access to their OneDrive files on the Teams app. Additionally, files shared via Teams chat from their OneDrive prior to _Geography_ move continue to work after move is complete.
 
 #### **OneDrive Mobile App (iOS)**
 
@@ -357,10 +357,10 @@ When moving SharePoint sites between _Geography_ locations, it's important to co
 - When the move is expected to start and how long it is expected to take.
 - What _Geography_ location their site is moving to, and the URL to access the new location.
 - They should close their files and not make edits during the move.
-- File permissions and sharing will not change because of the move.
+- File permissions and sharing don't change because of the move.
 - What to expect from the user experience in a multi-geo environment.
 
-Be sure to send your sites' users an email when the move has successfully completed informing them that they can resume working on their sites.
+Be sure to send your sites' users an email when the move completes, informing them that they can resume working on their sites.
 
 #### **Scheduling SharePoint site moves**
 
@@ -473,7 +473,7 @@ You can also apply the `-Verbose` option to see additional information about the
 
 #### **User experience**
 
-Site users should notice minimal disruption when their site is moved to a different _Geography_ location. Aside from a brief read-only state during the move, existing links and permissions will continue to work as expected once the move is completed.
+Site users should notice minimal disruption when their site is moved to a different _Geography_ location. Aside from a brief read-only state during the move, existing links and permissions continue to work as expected once the move is completed.
 
 #### **Site**
 
@@ -481,7 +481,7 @@ While the move is in progress, the site is set to read-only. Once the move is co
 
 #### **Permissions**
 
-Users with permissions to site will continue to have access to the site during the move and after it's complete.
+Users with permissions to site continue to have access to the site during the move and after it's complete.
 
 #### **Sync app**
 
@@ -506,7 +506,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 
 #### **Teams (applicable to Microsoft 365 group connected sites)**
 
-When the SharePoint site _Geography_ move completes, users will have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to _Geography_ move will continue to work after move is complete.
+When the SharePoint site _Geography_ move completes, users will have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to _Geography_ move continue to work after move is complete.
 SharePoint site _Geography_ move does not support moving sites backing Private and Shared Channels from one _Geography_ to another, when using the `Start-SPOUnifiedGroupMove` command. Sites backing Private and Shared Channels remain in the original _Geography_. To move those sites individually, admins can initiate direct moves using the `Start-SPOSiteContentMove` command.
 
 #### **SharePoint Mobile App (iOS/Android)**
@@ -523,7 +523,7 @@ If you are moving a site with apps, you must reinstantiate the app in the site's
 
 #### **Power Automate**
 
-In most cases, Power Automate Flows will continue to work after a SharePoint site _Geography_ move. We recommend that you test them once the move completes.
+In most cases, Power Automate Flows continue to work after a SharePoint site _Geography_ move. We recommend that you test them once the move completes.
 
 #### **Power Apps**
 
