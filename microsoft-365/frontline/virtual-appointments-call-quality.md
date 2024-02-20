@@ -68,7 +68,7 @@ If you choose not to use the template files, you can create a Power BI report fr
 
 You can analyze Teams data in several different ways.
 
-- **[Teams admin center](https://admin.teams.microsoft.com/):** You can find a pre-made and easy to read set of reports and insights inside Teams Admin Center. However, you can't extensively customize these reports.
+- **[Teams admin center](https://admin.teams.microsoft.com/):** You can find a pre-made and easy-to-read set of reports and insights in the Teams admin center. However, you can't extensively customize these reports.
 - **[Call Quality Dashboard](https://cqd.teams.microsoft.com/):** Here you can filter and customize reports that provide quick answers to many frequently asked questions.
 - **[Call Quality connector for Power BI](/microsoftteams/cqd-power-bi-query-templates):** Using Power BI gives you the most customizable options for creating reports. Here you can use CQD data to understand user behavior, see usage patterns, and resolve individual call issues. You can use Power BI to supplement the dashboards with answers that aren't available in the pre-made reports.
 
