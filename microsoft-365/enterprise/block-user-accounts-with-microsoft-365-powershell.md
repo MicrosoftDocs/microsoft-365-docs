@@ -48,22 +48,31 @@ Connect-Graph -Scopes User.ReadWrite.All
 Use the following syntax to block an individual user account:
 
 ```powershell
-Update-MgUser -UserId <sign-in name of the user account> -AccountEnabled $false
+$params = @{
+	accountEnabled = $false
+}
+Update-MgUser -UserId <sign-in name of the user account> -BodyParameter $params
 ```
 
 > [!NOTE]
-> The *-ObjectID* parameter in the **Set-AzureAD** cmdlet accepts either the account sign-in name, also known as the User Principal Name, or the account's object ID.
+> The *-UserId* parameter in the **Update-MgUser** cmdlet accepts either the account sign-in name, also known as the User Principal Name, or the account's object ID.
 
 This example blocks access to the user account *fabricec@litwareinc.com*.
 
 ```powershell
-Update-MgUser -UserId "fabricec@litwareinc.com" -AccountEnabled $false
+$params = @{
+	accountEnabled = $false
+}
+Update-MgUser -UserId "fabricec@litwareinc.com" -BodyParameter $params
 ```
 
 To unblock this user account, run the following command:
 
 ```powershell
-Update-MgUser -UserId "fabricec@litwareinc.com" -AccountEnabled $true
+$params = @{
+	accountEnabled = $true
+}
+Update-MgUser -UserId "fabricec@litwareinc.com" -BodyParameter $params
 ```
 
 To display the user account UPN based on the user's display name, use the following commands:
@@ -86,13 +95,16 @@ To block an account based on the user's display name, use the following commands
 ```powershell
 $userName="<display name>"
 $user = Get-MgUser -Filter "displayName eq '$userName'"
-Update-MgUser -UserId $user.Id -AccountEnabled $false
+$params = @{
+	accountEnabled = $false
+}
+Update-MgUser -UserId $user.Id -BodyParameter $params
 ```
 
 To check the blocked status of a user account use the following command:
 
 ```powershell
-Get-MgUser -ObjectID <UPN of user account> | Select DisplayName,AccountEnabled
+Get-MgUser -ObjectID <UPN of user account> -Property "displayName,accountEnabled" | Select displayName, accountEnabled
 ```
 
 ### Block multiple user accounts
@@ -110,13 +122,19 @@ In the following commands, the example text file is *C:\My Documents\Accounts.tx
 To block access to the accounts listed in the text file, run the following command:
 
 ```powershell
-Get-Content "C:\My Documents\Accounts.txt" | ForEach {Update-MgUser -UserId $_ -AccountEnabled $false}
+$params = @{
+	accountEnabled = $false
+}
+Get-Content "C:\My Documents\Accounts.txt" | ForEach {Update-MgUser -UserId $_ -BodyParameter $params}
 ```
 
 To unblock the accounts that are listed in the text file, run the following command:
 
 ```powershell
-Get-Content "C:\My Documents\Accounts.txt" | ForEach {Update-MgUser -UserId $_ -AccountEnabled $true}
+$params = @{
+	accountEnabled = $true
+}
+Get-Content "C:\My Documents\Accounts.txt" | ForEach {Update-MgUser -UserId $_ -BodyParameter $params}
 ```
 
 ## See also
