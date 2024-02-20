@@ -40,7 +40,8 @@ You need to be member of the **Global Administrator** role in Microsoft Entra ID
 > [!NOTE]
 > Some Defender for Office 365 features require additional permissions in Exchange Online. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 >
-> In the Microsoft Defender XDR preview program, a different Microsoft Defender 365 RBAC model is also available. The permissions in this RBAC model are different from the Defender for Office 365 permissions as described in this article. For more information, see [Microsoft Defender XDR role-based access control (RBAC)](../defender/manage-rbac.md).
+> Microsoft Defender XDR has a Unified role-based access control (RBAC) model, to provide a single permissions management experience that provides one central location for administrators to control user permissions across different security solutions. These permissions are different from the Defender for Office 365 permissions as described in this article. For more information, see [Microsoft Defender XDR role-based access control (RBAC)](../defender/manage-rbac.md).
+> Please note that if you activate Defender XDR RBAC for Email & collaboration, this permissions page (https://security.microsoft.com/emailandcollabpermissions) will be hidden in the Defender portal.
 >
 > For information about permissions in the Microsoft Purview compliance portal, see [Permissions in the Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center-permissions).
 
