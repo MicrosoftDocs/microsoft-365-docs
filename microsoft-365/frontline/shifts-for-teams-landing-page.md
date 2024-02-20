@@ -6,6 +6,7 @@ author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
 audience: admin
+ms.reviewer: imarquesgil
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
@@ -28,7 +29,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-jun2020
-ms.date: 12/12/2023
+ms.date: 02/20/2024
 ---
 
 # Shifts for frontline workers
@@ -47,7 +48,7 @@ Use the following resources to help you set up and manage Shifts in your organiz
 |---------|---------|
 |:::image type="icon" source="/office/media/icons/deploy-teams.png":::|**[Deploy Shifts at scale](deploy-shifts-at-scale.md)** (Preview) Configure and manage Shifts settings centrally in the Teams admin center and deploy Shifts to your frontline teams at scale. |
 |:::image type="icon" source="/office/media/icons/administrator.png":::|**[Manage Shifts](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Get an overview of how to manage Shifts for your organization. Learn how to control access to Shifts, pin Shifts to the Teams app bar for easy access, enable shift-based tags, and more. |
-|:::image type="icon" source="/office/media/icons/users-people.png":::|**[Manage schedule owners for shift management](schedule-owner-for-shift-management.md)** Elevate the permissions of a team member to a schedule owner without making the employee a team owner. Schedule owners can manage their team's schedules in Shifts but can't change other team properties. |
+|:::image type="icon" source="/office/media/icons/users-people.png":::|**[Use roles to define your frontline managers and workers in Shifts](shifts-frontline-manager-worker-roles.md)** Learn how to use team owner and team member roles in Teams and the schedule owner role in Shifts to define your frontline managers and workers in Shifts. |
 |:::image type="icon" source="/office/media/icons/help.png":::| **[Shifts data FAQ](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Learn where Shifts data is stored and other topics related to Shifts data, including retention, retrieval, and encryption.|
 
 ## Shifts connectors
@@ -58,7 +59,7 @@ If you're using a third-party workforce management (WFM) system for scheduling, 
 |---------|---------|
 |:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Overview](shifts-connectors.md)** Get an overview of Shifts connectors and how they work. Learn about the managed connectors that are available and the supported WFM systems.   |
 |:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder)** <ul><li>Learn how to set up a connection to Blue Yonder Workforce Management by using the [Shifts connector wizard](shifts-connector-wizard.md) or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md).</li><li>Learn how to manage your connection to Blue Yonder Workforce Management by using the [Microsoft 365 admin center](shifts-connector-blue-yonder-admin-center-manage.md) or [PowerShell](shifts-connector-powershell-manage.md).</li></ul> |
-|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)** (Preview)<ul><li>Learn how to set up a connection to UKG Pro Workforce Management by using the [Shifts connector wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md).</li><li>Learn how to manage your connection to UKG Pro Workforce Management by using the [Microsoft 365 admin center](shifts-connector-ukg-admin-center-manage.md) or [PowerShell](shifts-connector-ukg-powershell-manage.md).</li></ul>|
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)**<ul><li>Learn how to set up a connection to UKG Pro Workforce Management by using the [Shifts connector wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md).</li><li>Learn how to manage your connection to UKG Pro Workforce Management by using the [Microsoft 365 admin center](shifts-connector-ukg-admin-center-manage.md) or [PowerShell](shifts-connector-ukg-powershell-manage.md).</li></ul>|
 |:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams)** Learn about integrating Shifts with the Reflexis WFM system through the connector.|
 
 ## Shifts extensions

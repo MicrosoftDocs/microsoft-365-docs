@@ -2,10 +2,10 @@
 title: Configure advanced features in Microsoft Defender for Endpoint
 description: Turn on advanced features such as block file in Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -155,7 +155,7 @@ Enabling the Skype for Business integration gives you the ability to communicate
 > [!IMPORTANT]
 > This setting was used when Microsoft Defender for Office 365 and Microsoft Defender for Endpoint were in different portals previously. After the convergence of security experiences into a unified portal that is now called Microsoft Defender XDR, these settings are irrelevant and don't have any functionality associated with them. You can safely ignore the status of the control until it is removed from the portal.
 
-This feature is only available if you have an active subscription for Office 365 E5 or the Threat Intelligence add-on. For more information, see the [Office 365 E5 product page](https://www.microsoft.com/en-us/microsoft-365/enterprise/office-365-e5?activetab=pivot:overviewtab).
+This feature is only available if you have an active subscription for Office 365 E5 or the Threat Intelligence add-on. For more information, see the [Office 365 E5 product page](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot:overviewtab).
 
 This feature enables you to incorporate data from Microsoft Defender for Office 365 into Microsoft Defender XDR to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
@@ -166,7 +166,7 @@ To receive contextual device integration in Office 365 Threat Intelligence, you'
 
 ## Endpoint Attack Notifications
 
-[Endpoint Attack Notifications](/security/defender-endpoint/endpoint-attack-notifications) enable Microsoft to actively hunt for critical threats to be prioritized based on urgency and impact over your endpoint data. 
+[Endpoint Attack Notifications](/microsoft-365/security/defender-endpoint/endpoint-attack-notifications) enable Microsoft to actively hunt for critical threats to be prioritized based on urgency and impact over your endpoint data. 
 
 For proactive hunting across the full scope of Microsoft Defender XDR, including threats that span email, collaboration, identity, cloud applications, and endpoints, [learn more](https://aka.ms/DefenderExpertsForHuntingGetStarted) about Microsoft Defender Experts.
 

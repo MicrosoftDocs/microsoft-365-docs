@@ -1,18 +1,13 @@
 ---
 title: Onboard Windows servers to the Microsoft Defender for Endpoint service
 description: Onboard Windows servers so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
-keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: mjcaparas
-ms.author: macapara
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/12/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -58,13 +53,14 @@ Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender fo
 
 > [!NOTE]
 > For Windows Server 2012 R2 and 2016, you can either manually install/upgrade the modern, unified solution on these machines, or use the integration to automatically deploy or upgrade servers covered by your respective Microsoft Defender for Server plan. More information about making the switch at [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#enable-the-integration).
+>
 > - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
 Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
 > - If you use Defender for Endpoint before using Microsoft Defender for Cloud, your data will be stored in the location you specified when you created your tenant even if you integrate with Microsoft Defender for Cloud at a later time.
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
 > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 > - Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and previous versions of Windows Server allowed for the OMS / Log Analytics gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019, Windows Server 2022, and Windows 10, doesn't support this gateway.
-> - Linux servers onboarded through Microsoft Defender for Cloud will have their initial configuration set to run Defender Antivirus in [passive mode](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+> - Linux servers onboarded through Microsoft Defender for Cloud will have their initial configuration set to run Defender Antivirus in [passive mode](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
 
 **Windows Server 2012 R2 and Windows Server 2016**:
 

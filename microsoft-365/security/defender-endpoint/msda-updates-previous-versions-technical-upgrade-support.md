@@ -42,7 +42,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Excluded IP addresses can now be configured using [Intune](/windows/client-management/mdm/defender-csp#configurationexcludedipaddresses)
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on Windows Server 2016
 - [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
-- Fixed an issue where [device control](device-control-removable-storage-protection.md) policies weren't applied correctly without a reboot following product updates
+- Fixed an issue where [device control](device-control-overview.md) policies weren't applied correctly without a reboot following product updates
 - Fixed an issue in the attack surface reduction rule, [Block Win32 API calls from Office macros](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros), configured in warn mode where excluded files were incorrectly blocked until the next device reboot
 
 ### Known issues
@@ -467,7 +467,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Fixed false positive triggering attack surface reduction detections
 - Added fix resulting in better fidelity of EDR and Advanced Hunting detection alerts
 - Defender no longer supports custom notifications on toast pop ups. Modified GPO/Intune/SCCM and docs to reflect this change.
-- Improvements to capture both information and copy of files written to removable storage. To learn more, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](device-control-removable-storage-access-control.md).
+- Improvements to capture both information and copy of files written to removable storage.
 - Improved traffic output when SmartScreen service is unreachable
 - Connectivity improvements for customers using proxies with authentication requirements
 - Fixed VDI device update bug for network FileShares
@@ -511,7 +511,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 ### What's new
 
 - Improved CPU usage efficiency of certain intensive scenarios on Exchange servers
-- Added new device control status fields under Get-MpComputerStatus in Defender PowerShell module. For more information, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
+- Added new device control status fields under Get-MpComputerStatus in Defender PowerShell module. 
 - Fixed bug in which `SharedSignatureRoot` value couldn't be removed when set with PowerShell
 - Fixed bug in which [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) failed to be enabled, even though Microsoft Defender for Endpoint indicated that tamper protection was turned on
 - Added supportability and bug fixes to performance analyzer for Microsoft Defender Antivirus tool. For more information, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).

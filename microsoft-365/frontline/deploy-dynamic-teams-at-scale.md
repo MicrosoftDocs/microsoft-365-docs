@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/01/2023
+ms.date: 01/29/2024
 
 ---
 
@@ -36,6 +36,8 @@ You also determine team structure and team owners.
 Then, you can choose which locations you want to create dynamic frontline teams for.
 
 Team membership is automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams are updated accordingly.
+
+Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTnPdIRS4&t=461s) for an overview of how to set up and deploy your frontline dynamic teams.
 
 > [!NOTE]
 > If you would like to provide feedback and improve this feature, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
@@ -57,7 +59,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
 ## Set up your frontline dynamic teams
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
 2. In the table, choose **Setup**.
 
     :::image type="content" source="media/dtas-manage-setup.png" alt-text="Screenshot of the Manage frontline teams page, showing the Setup button." lightbox="media/dtas-manage-setup.png":::
@@ -87,7 +89,7 @@ When evaluating the right solution for your organization, we recommend you do th
     1. Select **Users**, and then choose your user.
     1. Copy the user's object ID.
 
-9. Review the settings, and then choose **Finish setup.**
+9. Review your settings, and then choose **Finish setup.**
 
     >[!NOTE]
     >Setup can take several hours to run. You can refresh the **Manage frontline teams** page to get the latest status of your setup.
@@ -106,7 +108,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-deploy-locations.png" alt-text="Screenshot of the table of locations." lightbox="media/dtas-deploy-locations.png":::
 
-4. Select **Deploy**. This process can take several hours depending on how many teams you're creating. After deployment is completed, you'll see the number updated in the **Frontline teams** tile. On this tile, you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the **Last deployment health** tile.
+4. Select **Deploy**. This process can take several hours depending on how many teams you're creating. After deployment is completed, you'll see the number updated in the **Frontline teams** card. On this card, you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the **Last deployment health** card.
 
     :::image type="content" source="media/dtas-view-errors.png" alt-text="Screenshot of where you can get the CSV file on the Manage frontline teams page." lightbox="media/dtas-view-errors.png":::
 
@@ -118,7 +120,7 @@ You can manage your teams when changes happen in your organization.
 
 ### Create new teams for newly opened locations
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
 
 2. In the table, choose **Deploy**.
 
@@ -130,8 +132,8 @@ You can manage your teams when changes happen in your organization.
 
 ### Edit your frontline team settings
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
-2. In the **Deploy settings** column, choose **Deploy frontline teams** .
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
+2. In the **Deployment settings** column, choose **Deploy frontline dynamic teams**.
 3. Edit your settings on this page, and then select **Save**. Your settings might take several hours to update. See the following table for the effects of updating your settings.
 
     |Setting |Effect on existing frontline teams |Effect on new frontline teams |
@@ -154,7 +156,7 @@ The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-u
 5. Filter the spreadsheet based on your frontline team IDs. 
 
     > [!NOTE]
-    > To get a list of your frontline team IDs, in the Teams admin center, go to **Teams** > **Manage frontline teams**, and then in the **Frontline teams** section, select **Download CSV**.
+    > To get a list of your frontline team IDs, in the Teams admin center, go to **Frontline deployment** > **Manage frontline teams**, and then in the **Frontline teams** section, select **Download CSV**.
 
 ## Frequently asked questions
 
