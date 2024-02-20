@@ -4,7 +4,7 @@ description: Add users and assign Defender for Business licenses to protect thei
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: conceptual
 ms.service: defender-business
