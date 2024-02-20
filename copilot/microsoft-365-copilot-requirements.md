@@ -89,6 +89,8 @@ Copilot for Microsoft 365 is available as an add-on plan with one of the followi
 
 You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
+If users are receiving license validation errors after assigning the Microsoft Copilot for Microsoft 365 to their user account, you can refer them to the article entitled [I am getting license validation errors with Copilot](https://support.microsoft.com/office/i-am-getting-license-validation-errors-with-copilot-375cf342-8559-48c3-8436-7564d5de3fc6). 
+
 ## Update channels
 
 Microsoft Copilot for Microsoft 365 will follow the standard practice of deployment and updates for Microsoft 365 Apps, being available in all update channels, except for Semi-Annual Enterprise Channel. Preview channels (also known as Microsoft 365 Insider) include Current Channel (Preview) and Beta Channel. Production channels include Current Channel and  Monthly Enterprise Channel.
