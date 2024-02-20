@@ -139,3 +139,4 @@ See also:
 
 - [Shifts for frontline workers](shifts-for-teams-landing-page.md)
 - [Manage the Shifts app for your organization in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
+- [Teams PowerShell overview](/microsoftteams/teams-powershell-overview)
