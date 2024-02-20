@@ -116,19 +116,17 @@ uname -a
 #### Known Issues
 1. Enabling eBPF on RHEL 8.1 version with SAP might result in kernel panic. 
 
-   The following steps can be taken to mitigate this issue: 
+ To mitigate this issue you can take one of the following steps: 
    
-   1. Use a distro version higher than RHEL 8.1. 
-
-   1. Switch to auditd mode if you need to use RHEL 8.1 version
+  - Use a distro version higher than RHEL 8.1. 
+  - Switch to auditd mode if you need to use RHEL 8.1 version
 
 1. Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result in kernel panic. 
 
-   The following steps can be taken to mitigate this issue:
+ To mitigate this issue you can take one of the following steps: 
    
-   1.  Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8 if you want to use eBPF as supplementary subsystem provider. Note that the minimum kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
-   
-   1. Switch to auditd mode if you need to use the same kernel version
+-  Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8 if you want to use eBPF as supplementary subsystem provider. Note that the minimum kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
+- Switch to auditd mode if you need to use the same kernel version
    
 ```bash
 sudo mdatp config  ebpf-supplementary-event-provider  --value disabled
