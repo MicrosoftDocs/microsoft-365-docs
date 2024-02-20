@@ -24,7 +24,7 @@ description: Learn about changes coming to Topics.
 
 Viva Topics will be retired on February 22, 2025 and Microsoft will not invest in new feature development for Viva Topics going forward from February 22, 2024.
 
-With the generational shift in AI technology underway, we are now focusing our strategy and efforts on building new AI-powered knowledge management experiences in Microsoft Copilot and other parts of Microsoft 365.  To help customers plan, please see new guidance on the Managing Knowledge page on the Microsoft 365 Adoption Center <LINK>.
+With the generational shift in AI technology underway, we are now focusing our strategy and efforts on building new AI-powered knowledge management experiences in [Microsoft Copilot](https://www.microsoft.com/microsoft-365/enterprise/copilot-for-microsoft-365) and other parts of Microsoft 365.  To help customers plan, please see new guidance on the Managing Knowledge page on the Microsoft 365 Adoption Center <LINK>.
 
 ## How will this affect you?
 
