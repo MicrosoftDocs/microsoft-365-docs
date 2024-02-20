@@ -45,7 +45,7 @@ Microsoft 365 and Microsoft Teams offers capabilities that help manufacturing or
 - [Onboard and train employees](#onboard-and-train-employees)
 
 > [!NOTE]
-> For all these capabilities, users must have an appropriate license. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to learn more about using Microsoft 365 for frontline workers in combination with other licenses. For a detailed comparison of what's included in Microsoft 365 enterprise plans, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
+> For all these capabilities, users must have an appropriate license. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to learn more about using Microsoft 365 for frontline workers in combination with other licenses. For a detailed comparison of what's included in Microsoft 365 plans for enterprises, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
 
 ### Connect and engage your workforce
 
