@@ -37,9 +37,9 @@ ms.date: 03/15/2023
 Microsoft 365 and Microsoft Teams offer a number of telemedicine features useful for hospitals and other healthcare organizations.
 
 - Virtual Appointments and Electronic Healthcare Record (EHR) integration
-- Teams policy packages
+- Teams policy packages for healthcare
 - Secure messaging
-- Teams templates
+- Team templates for healthcare
 - Care coordination and collaboration
 
 > [!NOTE]
@@ -68,9 +68,9 @@ The following scenarios support these goals:
 | Scenario | Description | Requirements |
 | -------- | -------- | -------- |
 | [Virtual Appointments](virtual-appointments.md) | Schedule, manage, and conduct virtual appointments with patients. This scenario connects Teams and the Oracle Health or Epic platform to support virtual appointments. | Active subscription to Microsoft Cloud for Healthcare or subscription to Microsoft Teams EHR connector standalone offer. <br> Users must have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings. <br> For additional requirements, see [Integration with Oracle Health EHR](ehr-admin-oracle-health.md#before-you-begin) or [Integration with Epic EHR](ehr-admin-epic.md#prerequisites). |
-| [Team communication and collaboration](flw-team-collaboration.md) |Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. |Users must have an appropriate license to use Teams apps.* |
+| [Team communication and collaboration](flw-team-collaboration.md) |Bring your health teams together to communicate, collaborate, and streamline operations with Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. |Users must have an appropriate license to use Teams apps.* |
 | [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md) | Build deeper connections across your organization and create an inclusive workplace. |Users must have an appropriate license to use Microsoft Teams apps.* |
-| [Schedule your teams with Shifts](shifts-for-teams-landing-page.md) |Use Shifts and Shifts Connectors to schedule your team and connect with your workforce management tools. |Users must have an appropriate license to use Teams apps.* |
+| [Schedule your teams with Shifts](shifts-for-teams-landing-page.md) |Use Shifts to create and manage schedules for your teams.|Users must have an appropriate license to use Teams apps.* |
 | [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. |Users must have an appropriate license to use Teams apps.* To use Power Apps and Power Automate, users need an appropriate license.*|
 
 > [!NOTE]
@@ -90,7 +90,7 @@ Use the following poster to start envisioning what your organization can do with
 
 Use the complete meetings platform in Teams to schedule, manage, and conduct virtual appointments with patients.
 
-- If your organization already uses an Electronic Health Record (EHR) system, you can integrate Teams for a more seamless experience. Teams Electronic Health Record (EHR) connector makes it easy for clinicians to launch a virtual patient appointment or consultation with another provider in Teams directly from the EHR system. To learn more, see [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md) and [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md).
+- If your organization already uses an EHR system, you can integrate Teams for a more seamless experience. Teams EHR connector makes it easy for clinicians to launch a virtual appointment with a patient or consultation with another provider in Teams directly from the EHR system. To learn more, see [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md) and [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md).
 - If you aren't using a supported EHR system, you can use the Virtual Appointments app in Teams. To learn more, see [Virtual Appointments with Teams](virtual-appointments.md).
 
 ![Virtual Appointments with Microsoft Teams.](media/virtual-visits-teams.png)
@@ -101,25 +101,25 @@ Bring your health team together to coordinate care and collaborate with Teams.
 
 ![Screenshot of Healthcare: Collaborate with your health team in Teams.](media/teams-healthcare-collaborate-in-teams.png)
 
-Teams enables physicians, clinicians, nurses, and other staff to collaborate efficiently with included collaboration features in Teams, such as:
+Teams enables physicians, clinicians, nurses, and other staff to collaborate efficiently with collaboration features in Teams.
 
 - Set up teams and channels for your health teams and information workers. Use channels with tabs as a way to structure their work, with additional help from tabs to which they can pin information sources.
 - Chat, post messages, and communicate. Your team can have persistent conversations about different patients needing attention.
 - Call and meet with members of the health team. Set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features.
 - Store and share files and documents. Your health team is part of a single virtualized team that works and collaborates on Office documents.
 
-### Secure messaging
+### Messaging for healthcare organizations
 
-Secure messaging supports collaboration within health teams, including several new features:
+Secure messaging supports collaboration within health teams, including the following features:
 
 - A message sender can set a special priority for their message, so the recipient is repeatedly notified until they read the message.
 - A message sender can request a read receipt, so they're notified when a message they sent was read by the message recipient.
 
-Together, these features allow quicker attention to urgent messages and confidence that the message was received and read. New health teams using these features can be created on a per-patient basis. These features are policy-based, and can be assigned to individuals or entire Teams.
+Together, these features allow quicker attention to urgent messages and confidence that the message was received and read. New health teams using these features can be created on a per-patient basis. These features are policy-based, and can be assigned to individuals or entire teams.
 
-To learn more, see [Get started with Secure Messaging policies for Healthcare organizations](messaging-policies-hc.md).
+To learn more, see [Messaging policies for healthcare organizations](messaging-policies-hc.md).
 
-Also related to secure messaging is the ability to have other tenants federated by Healthcare organizations, allowing richer inter-tenant communication. To learn more, see [Manage external meetings and chat in Microsoft Teams](/microsoftteams/manage-external-access).
+Also related to secure messaging is the ability to have other tenants federated by healthcare organizations, allowing richer inter-tenant communication. To learn more, see [Manage external meetings and chat in Microsoft Teams](/microsoftteams/manage-external-access).
 
 ### Coordinate over email with Exchange Online
 
@@ -131,7 +131,7 @@ You can also set up shared mailboxes to allow for incoming mail from customers (
 
 Unburden and empower your teams with seamless shift scheduling, task management, and workflow automation so they can focus on what matters.
 
-### Teams policy packages
+### Teams policy packages for healthcare
 
 Apply Teams policy packages to define what different roles can do in Teams. For example, specify policies for:
 
@@ -141,9 +141,11 @@ Apply Teams policy packages to define what different roles can do in Teams. For 
 
 To learn more, see [Teams policy packages for healthcare](/microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
-### Teams templates for healthcare organizations
+### Team templates for healthcare organizations
 
-Teams includes templates designed specifically for healthcare organizations, making it easier to create teams for staff to communicate and collaborate on patient care or operational needs. To learn more, see [Use healthcare team templates](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Team templates allow you to quickly create teams by providing a predefined team structure of settings, channels, and preinstalled apps. Teams includes templates designed specifically for healthcare organizations, making it easier to create teams for staff to communicate and collaborate on patient care or operational needs.
+
+To learn more, see [Use healthcare team templates](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 ### Share lists and track information with the Lists app
 
@@ -167,13 +169,13 @@ To learn more, see [Manage the Tasks app for your organization in Microsoft Team
 
 ### Streamline approvals with the Approvals app
 
-Use [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) to streamline all of your requests and processes with your team. Create, manage, and share approvals directly from your hub for teamwork. Start an approval flow from the same place you send a chat, in a channel conversation, or from the Approvals app itself. Just select an approval type, add details, attach files, and choose approvers. Once submitted, approvers are notified and can review and act on the request.
+Use [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) to streamline all your requests and processes with your team. Create, manage, and share approvals directly from your hub for teamwork. Start an approval flow from the same place you send a chat, in a channel conversation, or from the Approvals app itself. Just select an approval type, add details, attach files, and choose approvers. Once submitted, approvers are notified and can review and act on the request.
 
 You can allow the Approvals app for your organization and add it to your teams. To learn more, see [Manage the Approvals app](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
-### Create, manage, and share schedules with the Shifts app and Frontline Worker integration
+### Create, manage, and share schedules with the Shifts app
 
-Teams integrates with the Shifts app and Frontline Worker, which can be used to coordinate shift staffing features and more. For example, in Shifts, Nurse managers can set up and coordinate schedules for their staff, and nurses can check schedules and swap shifts.
+Teams integrates with the Shifts app and Frontline Worker, which can be used to coordinate shift staffing features and more. For example, in Shifts, nurse managers can set up and coordinate schedules for their staff, and nurses can check schedules and swap shifts.
 
 To learn more, see [Manage the Shifts app for your organization in Microsoft Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
