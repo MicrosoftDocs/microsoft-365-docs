@@ -89,13 +89,13 @@ Microsoft Copilot for Microsoft 365 iteratively processes and orchestrates these
 
 ## Semantic Index
 
-The semantic index brings a whole new world of understanding to your data in Microsoft 365. Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft Copilot, it's always in the security context of the user, and only content that a user has access to is returned.
+Through enhanced interactions with your individual and company data via the Microsoft Graph, and the creation of a new index, the semantic index is an improvement to Microsoft 365 search that lays the foundation for the next generation of Search and Copilot experiences. The semantic index respects security and policies in the Microsoft Graph so that when a user issues a query either directly via search or in Microsoft Copilot, it's always in the security context of the user, and only content that a user has access to is returned.
 
 To learn more, see [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-for-copilot).
 
 ## Availability
 
-Copilot for Microsoft 365 is an add-on plan with the following licensing prerequisites:
+Copilot for Microsoft 365 is available as an add-on plan with one of the following licensing prerequisites:
 
 - Microsoft 365 E5
 - Microsoft 365 E3

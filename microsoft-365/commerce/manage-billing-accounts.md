@@ -64,7 +64,7 @@ The following table lists the terms shown on the billing account details page.
 |Account status                   |A read-only field that specifies the status of your commercial account with Microsoft. |
 |Sold-to                          |The details of the legal entity responsible for payment and identified on the invoice. This section contains the name and address of the individual or organization responsible for the account, together with a contact email address and phone number. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](billing-and-payments/tax-information.md). |
 |Tax ID                           |This field only applies if you’re in a country or region that requires you to provide a VAT or local equivalent. For more information, see [Tax information](billing-and-payments/tax-information.md). |
-|Billing profiles                 |The link goes to the list of billing profiles associated with the current billing account. A billing profile defines the properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and an optional purchase order (PO) number. For more information about billing profiles, see [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md). |
+|Billing profiles                 |The link goes to the list of billing profiles associated with the current billing account. A billing profile defines the properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and an optional purchase order (PO) number. For more information about billing profiles, see [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md). |
 |Registration number (Optional)   |A legal registration number that you provide to us so we can review the details of your account. For more information, see [About registration numbers and under-review notifications](about-registration-numbers.md). To add a registration number, select **Edit**. |
 
 > [!NOTE]
@@ -118,4 +118,4 @@ If you have an MCA billing account type, you can give users from other tenants a
 ## Related content
 
 [Tax information](billing-and-payments/tax-information.md) (article) \
-[Understand billing profiles](billing-and-payments/manage-billing-profiles.md) (article)
+[Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md) (article)
