@@ -122,10 +122,14 @@ Connect-MgGraph -Scopes "Group.ReadWrite.All", "User.ReadBasic.All"
 
 # Get the group and user
 $group = Get-MgGroup -Filter "displayName eq '$groupName'"
-$user = Get-MgUser -Filter "userPrincipalName eq '$userUPN'"
+$userId = (Get-MgUser -Filter "userPrincipalName eq '$userUPN'").Id
 
 # Add the user as an owner to the group
-New-MgGroupOwnerByRef -GroupId $group.Id -UserId $user.Id
+$newGroupOwner =@{
+  "@odata.id"= "https://graph.microsoft.com/v1.0/users/$userId"
+  }
+
+New-MgGroupOwnerByRef -GroupId $group.Id -BodyParameter $newGroupOwner
 ```
 
 Use these commands to add a user account by its **display name** to the current owners of a security group.
@@ -139,10 +143,14 @@ Connect-MgGraph -Scopes "Group.ReadWrite.All", "Directory.Read.All", "User.ReadB
 
 # Get the group and user
 $group = Get-MgGroup -All | Where-Object { $_.DisplayName -eq $groupName }
-$user = Get-MgUser -All | Where-Object { $_.DisplayName -eq $userName }
+$userId = (Get-MgUser -All | Where-Object { $_.DisplayName -eq $userName }).Id
 
 # Add the user as an owner to the group
-New-MgGroupOwnerByRef -GroupId $group.Id -UserId $user.Id
+$newGroupOwner =@{
+  "@odata.id"= "https://graph.microsoft.com/v1.0/users/$userId"
+  }
+
+New-MgGroupOwnerByRef -GroupId $group.Id -BodyParameter $newGroupOwner
 ```
 
 Use these commands to remove a user account by its **UPN** from the current owners of a security group.
@@ -159,7 +167,7 @@ $group = Get-MgGroup -Filter "displayName eq '$groupName'" | Select-Object -Firs
 $user = Get-MgUser -Filter "userPrincipalName eq '$userUPN'" | Select-Object -First 1
 
 # Remove the user from the group
-Remove-MgGroupOwnerByRef -GroupId $group.Id -UserId $user.Id
+Remove-MgGroupOwnerByRef -GroupId $group.Id -DirectoryObjectId $user.Id
 ```
 
 Use these commands to remove a user account by its **display name** from the current owners of a security group.
@@ -167,7 +175,10 @@ Use these commands to remove a user account by its **display name** from the cur
 ```powershell
 $userName="<Display name of the user account to remove>"
 $groupName="<display name of the group>"
-Remove-MgGroupOwnerByRef -GroupId (Get-MgGroup | Where-Object { $_.DisplayName -eq $groupName }).Id -UserId (Get-MgUser | Where-Object { $_.DisplayName -eq $userName }).Id
+$group = Get-MgGroup | Where-Object { $_.DisplayName -eq $groupName }
+$user = Get-MgUser | Where-Object { $_.DisplayName -eq $userName }
+
+Remove-MgGroupOwnerByRef -GroupId $group.Id -DirectoryObjectId $user.Id
 ```
 
 ## See also
