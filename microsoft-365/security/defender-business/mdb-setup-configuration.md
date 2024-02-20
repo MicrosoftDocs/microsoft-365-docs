@@ -4,7 +4,7 @@ description: See how to set up your Defender for Business cybersecurity solution
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: overview
 ms.service: defender-business
