@@ -90,3 +90,10 @@
           href: trial-topics.md
         - name: Adoption resources
           href: adoption-resources.md
+
+    - name: Retirement
+      items:
+        - name: Topics Retirement
+          href: changes-coming-to-topics.md
+        - name: FAQ
+          href: topics-changes-faq

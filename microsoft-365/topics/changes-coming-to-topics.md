@@ -1,7 +1,7 @@
 ---
-ms.date: 04/20/2023
-title: Add the Topics app in the Teams Admin Center
-ms.author: mgrewal
+ms.date: 02/20/2024
+title: Changes coming to Topics
+ms.author: cjtan
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -15,21 +15,26 @@ ms.subservice: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
-description: Learn how to Add the Topics app in the Teams Admin Center.
+description: Learn about changes coming to Topics.
 ---
 
-# Add the Topics app in the Teams Admin Center
+# Changes coming to Topics
 
-Once your organization has a Viva Suite or Copilot license, you’ll automatically have access to the Topics app in the Microsoft Teams app store.
+## Viva Topics to be retired on February 22, 2025
 
-## Manage and pin the Topics app
+Viva Topics will be retired on February 22, 2025 and Microsoft will not invest in new feature development for Viva Topics going forward from February 22, 2024.
 
-1. Sign into your Microsoft Teams admin center.
+With the generational shift in AI technology underway, we are now focusing our strategy and efforts on building new AI-powered knowledge management experiences in Microsoft Copilot and other parts of Microsoft 365.  To help customers plan, please see new guidance on the Managing Knowledge page on the Microsoft 365 Adoption Center <LINK>.
 
-2. Go to Teams apps, then choose Manage apps.
+## How will this affect you?
 
-3. Scroll down or search for Topics. Here you can view the Topics app details, permissions, and settings.
+After retirement, here are the changes that will occur:
 
-4. In the left rail, select Permission policies. Here you can choose what users have access to the Topics app.
+Topic pages that have been published by users will be standard SharePoint pages. This means that while existing Topic pages will no longer be automatically enhanced by the AI and machine learning algorithms of Viva Topics, users can still edit and publish updates as they would any other SharePoint page.  Topic pages that were generated entirely by AI and machine learning algorithms will no longer be available. If you're already using Copilot, your SharePoint pages are already indexed and will be used in responding to users’ questions.
 
-5. Next, select Setup policies from the left rail. Add setup policies to control how apps are made available to users in Teams. [Learn more about app setup policies](/microsoftteams/teams-app-setup-policies). It’s recommended to [pin the app](/microsoftteams/teams-app-setup-policies#pin-apps) for your users so they can find it easily.
+The Topic Center site where the published Topics pages were stored will be converted to a standard SharePoint site and can be maintained and governed like any other SharePoint site. The knowledge management and analytics around topics will no longer be available. We recommend you use SharePoint to publish and organize knowledge that can be discovered via Microsoft Search and leveraged via Microsoft Copilot across the Microsoft 365 suite.
+
+The ability for Topics to appear automatically across Microsoft Search, Office apps, Outlook, Teams and SharePoint modern pages will no longer be available.
+
+In Viva Engage, topics will return to a simplified public topics model and the integration with Viva Topics will be retired. The ability to hover over a topic pill to view the topic card, the use of AI-discovered Viva Topics, links to the Viva Topics pages, and access to management view of Viva Topics will no longer be available.  Users will continue to be able to create topics, add topics to posts, follow topics and see relevance of feeds by topics they follow, just as they would in the unlicensed experience. Users will continue to be able to create topics, add topics to posts, follow topics and see relevance of feeds by topics they follow. Topics will be public to Engage users. [Learn more about this experience.](https://support.microsoft.com/office/use-topics-and-hashtags-in-viva-engage-98c0a0bb-aad0-45d3-88f1-4f6d12bb1772)
+
