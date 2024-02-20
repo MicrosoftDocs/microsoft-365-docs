@@ -72,7 +72,7 @@ After the move completes, you might see some of the following effects.
 ### Microsoft 365 Video Services
 
 - The data move for video takes longer than the moves for the rest of your content in SharePoint Online.
-- After the SharePoint Online content is moved, there will be a time frame when videos aren't able to be played.
+- After the SharePoint Online content is moved, there is a time frame when videos aren't able to be played.
 - We're removing the trans-coded copies from the previous datacenter and transcoding them again in the new datacenter.
 
 ### Search
@@ -159,9 +159,9 @@ Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0
 
 With OneDrive _Geography_ move, you can move a user's OneDrive to a different _Geography_ location. OneDrive _Geography_ move is performed by the SharePoint Online administrator or the Microsoft 365 global administrator. Before you start a OneDrive _Geography_ move, be sure to notify the user whose OneDrive is being moved and recommend they close all files for the duration of the move. (If the user has a document open using the Office client during the move, then upon move completion the document will need to be saved to the new location.) The move can be scheduled for a future time, if desired.
 
-The OneDrive service uses Azure Blob Storage to store content. The Storage blob associated with the user's OneDrive will be moved from the source to destination _Geography_ location within 40 days of destination OneDrive being available to the user. The access to the user's OneDrive will be restored as soon as the destination OneDrive is available.
+The OneDrive service uses Azure Blob Storage to store content. The Storage blob associated with the user's OneDrive is moved from the source to destination _Geography_ location within 40 days of destination OneDrive being available to the user. The access to the user's OneDrive is restored as soon as the destination OneDrive is available.
 
-During OneDrive _Geography_ move window (about 2-6 hours) the user's OneDrive is set to read-only. The user can still access their files via the OneDrive sync app or their OneDrive site in SharePoint Online. After OneDrive _Geography_ move is complete, the user will be automatically connected to their OneDrive at the destination _Geography_ location when they navigate to OneDrive in the Microsoft 365 app launcher. The sync app will automatically begin syncing from the new location.
+During OneDrive _Geography_ move window (about 2-6 hours) the user's OneDrive is set to read-only. The user can still access their files via the OneDrive sync app or their OneDrive site in SharePoint Online. After OneDrive _Geography_ move is complete, the user is automatically connected to their OneDrive at the destination _Geography_ location when they navigate to OneDrive in the Microsoft 365 app launcher. The sync app automatically begins syncing from the new location.
 
 The procedures in this article require the [Microsoft SharePoint Online PowerShell Module](https://www.microsoft.com/download/details.aspx?id=35588).
 
@@ -211,7 +211,7 @@ To ensure that all _Geography_ locations are compatible, run:
 Get-SPOGeoMoveCrossCompatibilityStatus
 ```
 
-You will see a list of your _Geography_ locations and whether content can be moved between will be denoted as "Compatible". If the command returns "Incompatible" please retry validating the status at a later date.
+You will see a list of your _Geography_ locations and whether content can be moved between is denoted as "Compatible". If the command returns "Incompatible" please retry validating the status at a later date.
 
 If a OneDrive contains a subsite, for example, it cannot be moved. You can use the `Start-SPOUserAndContentMove` cmdlet with the `-ValidationOnly` parameter to validate if the OneDrive is able to be moved:
 
@@ -263,9 +263,9 @@ The move statuses are described in the following table.
 
 |Status|Description|
 |---|---|
-|NotStarted|The move has not started|
+|NotStarted|The move is pending|
 |InProgress (_n_/4)|The move is in progress in one of the following states: <ul><li>Validation (1/4)</li><li>Backup (2/4)</li><li>Restore (3/4)</li><li>Cleanup (4/4)</li></ul>|
-|Success|The move has completed successfully.|
+|Success|The move completed successfully.|
 |Failed|The move failed.|
 
 To find the status of a specific user's move, use the _UserPrincipalName_ parameter:
@@ -300,7 +300,7 @@ The OneDrive sync app automatically detects and seamlessly transfers syncing to 
 
 #### **Sharing links**
 
-Upon OneDrive _Geography_ move completion, the existing shared links for the files that were moved will automatically redirect to the new _Geography_ location.
+Upon OneDrive _Geography_ move completion, the existing shared links for the files that were moved automatically redirect to the new _Geography_ location.
 
 #### **OneNote Experience**
 
@@ -312,7 +312,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 
 #### **Teams app**
 
-Upon OneDrive _Geography_ move completion, users will have access to their OneDrive files on the Teams app. Additionally, files shared via Teams chat from their OneDrive prior to _Geography_ move continue to work after move is complete.
+Upon OneDrive _Geography_ move completion, users have access to their OneDrive files on the Teams app. Additionally, files shared via Teams chat from their OneDrive prior to _Geography_ move continue to work after move is complete.
 
 #### **OneDrive Mobile App (iOS)**
 
@@ -324,7 +324,7 @@ Followed sites and groups show up in the user's OneDrive regardless of their _Ge
 
 #### **Delve Geo URL updates**
 
-Users will be sent to the Delve _Geography_ corresponding to their PDL only after their OneDrive has been moved to the new _Geography_.
+Users are sent to the Delve _Geography_ corresponding to their PDL only after their OneDrive has been moved to the new _Geography_.
 
 ### **Move a SharePoint site**
 
@@ -437,7 +437,7 @@ Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
 Get-SPOUnifiedGroup -GroupAlias <GroupAlias>
 ```
 
-Once you have updated the PDL, you can start the site move:
+Once you update the PDL, you can start the site move:
 
 ```PowerShell
 Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <DestinationDataLocation>
@@ -462,10 +462,10 @@ The move statuses are described in the following table.
 
 |Status|Description|
 |---|---|
-|Ready to Trigger|The move has not started.|
-|Scheduled|The move is in queue but has not yet started.|
+|Ready to Trigger|The move is pending.|
+|Scheduled|The move is in queue but is yet to start.|
 |InProgress (n/4)|The move is in progress in one of the following states: Validation (1/4), Back up (2/4), Restore (3/4), Cleanup (4/4).|
-|Success|The move has completed successfully.|
+|Success|The move completed successfully.|
 |Failed|The move failed.|
 |
 
@@ -490,7 +490,7 @@ If a user updates a file while the move is in progress, the sync app notifies th
 
 #### **Sharing links**
 
-When the SharePoint site _Geography_ move completes, the existing shared links for the files that were moved will automatically redirect to the new _Geography_ location.
+When the SharePoint site _Geography_ move completes, the existing shared links for the files that were moved automatically redirect to the new _Geography_ location.
 
 #### **Most Recently Used files in Office (MRU)**
 
@@ -506,7 +506,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 
 #### **Teams (applicable to Microsoft 365 group connected sites)**
 
-When the SharePoint site _Geography_ move completes, users will have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to _Geography_ move continue to work after move is complete.
+When the SharePoint site _Geography_ move completes, users have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to _Geography_ move continue to work after move is complete.
 SharePoint site _Geography_ move does not support moving sites backing Private and Shared Channels from one _Geography_ to another, when using the `Start-SPOUnifiedGroupMove` command. Sites backing Private and Shared Channels remain in the original _Geography_. To move those sites individually, admins can initiate direct moves using the `Start-SPOSiteContentMove` command.
 
 #### **SharePoint Mobile App (iOS/Android)**
@@ -537,12 +537,12 @@ SharePoint uses Azure Blob Storage for its content, while the metadata associate
 
 ### **Enabling SharePoint Multi-Geo in your _Satellite Geography_ location**
 
-This article is for Global or SharePoint administrators who have created a Multi-Geo _Satellite Geography_ location **before** SharePoint Multi-Geo capabilities became generally available on March 27, 2019, and who have not enabled SharePoint Multi-Geo in their _Satellite Geography_ location(s).
+This article is for Global or SharePoint administrators who created a Multi-Geo _Satellite Geography_ location **before** SharePoint Multi-Geo capabilities became generally available on March 27, 2019, and who have not enabled SharePoint Multi-Geo in their _Satellite Geography_ location(s).
 
 > [!NOTE]
 > If you have added a new _Geography_ location **after March 27th, 2019**, you do not need to perform these instructions, as your new _Geography_ location will already be enabled for OneDrive and SharePoint Multi-Geo.
 
-These instructions will allow you to enable SharePoint in your _Satellite Geography_ location, so your Multi-Geo satellite users can take advantage of both OneDrive and SharePoint Multi-Geo capabilities in Microsoft 365.
+These instructions allow you to enable SharePoint in your _Satellite Geography_ location, so your Multi-Geo satellite users can take advantage of both OneDrive and SharePoint Multi-Geo capabilities in Microsoft 365.
 
 > [!IMPORTANT]
 > Please note that this is a one way enablement. Once you set SPO mode, you will not be able to revert your _Tenant_ to OneDrive only Multi-Geo mode without an escalation with support.
