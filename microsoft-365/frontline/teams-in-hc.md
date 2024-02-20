@@ -70,7 +70,7 @@ The following scenarios support these goals:
 | [Virtual Appointments](virtual-appointments.md) | Schedule, manage, and conduct virtual appointments with patients. This scenario connects Teams and the Oracle Health or Epic platform to support virtual appointments. | Active subscription to Microsoft Cloud for Healthcare or subscription to Microsoft Teams EHR connector standalone offer. <br> Users must have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings. <br> For additional requirements, see [Integration with Oracle Health EHR](ehr-admin-oracle-health.md#before-you-begin) or [Integration with Epic EHR](ehr-admin-epic.md#prerequisites). |
 | [Team communication and collaboration](flw-team-collaboration.md) |Bring your health teams together to communicate, collaborate, and streamline operations with Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. |Users must have an appropriate license to use Teams apps.* |
 | [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md) | Build deeper connections across your organization and create an inclusive workplace. |Users must have an appropriate license to use Microsoft Teams apps.* |
-| [Schedule your teams with Shifts](shifts-for-teams-landing-page.md) |Use Shifts to create and manage schedules for your teams.|Users must have an appropriate license to use Teams apps.* |
+| [Schedule your teams with Shifts](shifts-for-teams-landing-page.md) |Create and manage schedules for your teams in Shifts.|Users must have an appropriate license to use Teams apps.* |
 | [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. |Users must have an appropriate license to use Teams apps.* To use Power Apps and Power Automate, users need an appropriate license.*|
 
 > [!NOTE]
@@ -88,18 +88,18 @@ Use the following poster to start envisioning what your organization can do with
 
 ## Provide seamless virtual visits
 
-Use the complete meetings platform in Teams to schedule, manage, and conduct virtual appointments with patients.
+Use the complete meetings platform in Teams to schedule, manage, and conduct virtual appointments with patients and other providers.
 
-- If your organization already uses an EHR system, you can integrate Teams for a more seamless experience. Teams EHR connector makes it easy for clinicians to launch a virtual appointment with a patient or consultation with another provider in Teams directly from the EHR system. To learn more, see [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md) and [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md).
+- If your organization already uses an EHR system, you can integrate Teams for a more seamless experience. Teams EHR connector makes it easy for clinicians to launch a virtual appointment with a patient or a consultation with another provider in Teams directly from the EHR system. To learn more, see [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md) and [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md).
 - If you aren't using a supported EHR system, you can use the Virtual Appointments app in Teams. To learn more, see [Virtual Appointments with Teams](virtual-appointments.md).
 
-![Virtual Appointments with Microsoft Teams.](media/virtual-visits-teams.png)
+:::image type="content" source="media/virtual-appointments-teams-healthcare.png" alt-text="Diagram showing Virtual Appointments options in Teams through integration with an EHR system and through the Virtual Appointments app.":::
 
 ## Connect and engage the healthcare workforce
 
 Bring your health team together to coordinate care and collaborate with Teams.
 
-![Screenshot of Healthcare: Collaborate with your health team in Teams.](media/teams-healthcare-collaborate-in-teams.png)
+:::image type="content" source="media/teams-healthcare-collaborate-in-teams.png" alt-text="Diagram showing collaboration options for care teams in Teams.":::
 
 Teams enables physicians, clinicians, nurses, and other staff to collaborate efficiently with collaboration features in Teams.
 
@@ -175,14 +175,14 @@ You can allow the Approvals app for your organization and add it to your teams. 
 
 ### Create, manage, and share schedules with the Shifts app
 
-Teams integrates with the Shifts app and Frontline Worker, which can be used to coordinate shift staffing features and more. For example, in Shifts, nurse managers can set up and coordinate schedules for their staff, and nurses can check schedules and swap shifts.
+Create and manage schedules for your health teams with Shifts. For example, nurse managers can set up and manage schedules for their staff. They can assign shifts, add open shifts, and approve shift requests from nurses on their team. Nurses can check their own and their team's schedule, request to swap or offer a shift, and more.
 
-To learn more, see [Manage the Shifts app for your organization in Microsoft Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+To learn more, see [Shifts for frontline workers](shifts-for-teams-landing-page.md).
 
 ## Help your clinical and information workers get going with Teams
 
 There are many resources available to help all of the users in your organization get comfortable with using Teams:
 
-- Visit the [Teams adoption center](https://adoption.microsoft.com/microsoft-teams/) for advice on rolling out Teams if you're just starting your organization's journey with Teams, or expanding Teams into more areas of your organization.
+- Check out the [Teams adoption center](https://adoption.microsoft.com/microsoft-teams/) for advice on rolling out Teams if you're just starting your organization's journey with Teams, or expanding Teams to more areas of your organization.
 - Consider setting up custom [learning pathways](https://adoption.microsoft.com/microsoft-365-learning-pathways/) for your users to cover just the tasks they need to do.
-- Get help and training for your users on how to perform basic tasks in Teams on the [Teams support site](https://support.microsoft.com/teams), including [quick training videos](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7). This site also has help and training for the Teams apps, including [Lists](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db), [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070), [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3), [Bookings](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5), and [Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821).
+- Get help and training for your users on how to perform basic tasks in Teams on the [Teams help & learning site](https://support.microsoft.com/teams), including [quick training videos](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7). This site also has help and training for the Teams apps, including [Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f), [Lists](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db), [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070), [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3), and [Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821).
