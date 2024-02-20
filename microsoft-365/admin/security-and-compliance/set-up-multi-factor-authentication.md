@@ -76,7 +76,8 @@ If you've previously turned on per-user MFA, you must turn it off before enablin
 > [!IMPORTANT]
 > It's not recommended to turn off MFA.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as least a [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as least a [security administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator), [conditional access administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator) and [global administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator).
+
 1. Browse to **Identity** > **Overview** > **Properties**.
 1. Select **Manage security defaults**.
 1. Set **Security defaults** to **Disabled (not recommended)**.
@@ -84,7 +85,7 @@ If you've previously turned on per-user MFA, you must turn it off before enablin
 
 ## Use Conditional Access policies
 
-If your organization has more granular sign-in security needs, [Conditional Access policies](https://learn.microsoft.com/microsoft-365/business-premium/m365bp-turn-on-mfa?view=o365-worldwide&source=recommendations&tabs=condit#tabpanel_1_condit) can offer you more control. Conditional Access lets you create and define policies that react to sign in events and request additional actions before a user is granted access to an application or service.
+If your organization has more granular sign-in security needs, [Conditional Access policies](https://learn.microsoft.com/microsoft-365/business-premium/m365bp-turn-on-mfa?view=o365-worldwide&source=recommendations&tabs=condit#tabpanel_1_condit) can offer you more control. Conditional Access lets you create and define policies that react to sign in events and request additional actions before a user is granted access to an application or service. You can also get started by using [conditional access templates](/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation).
 
 > [!IMPORTANT]
 > Do not forget to disable per-user MFA after you have enabled Conditional Access policies. This is important as it will result in inconsistent user experience.
