@@ -4,7 +4,7 @@ description: Learn about order of priority with cybersecurity policies to protec
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: overview
 ms.service: defender-business
