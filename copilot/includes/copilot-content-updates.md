@@ -2,6 +2,14 @@
 
 
 
+## Week of February 12, 2024
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/13/2024 | [Microsoft Copilot for Microsoft 365 documentation # < 60 chars](/microsoft-365-copilot/index) | modified |
+
+
 ## Week of January 29, 2024
 
 
