@@ -127,7 +127,7 @@ The SharePoint storage quota for any _Geography_ location can be allocated by th
 
 #### **Configure a storage quota for a _Geography_ location**
 
-Use the [Microsoft SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588) and connect to the _Primary Provisioned Geography_ location to allocate the storage quota for a _Geography_ location.
+To allocate the storage quota for a _Geography_ location, use the [Microsoft SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588) and connect to the _Primary Provisioned Geography_ location.
 
 To allocate Storage Quota for a location, run cmdlet:
 
@@ -211,7 +211,7 @@ To ensure that all _Geography_ locations are compatible, run:
 Get-SPOGeoMoveCrossCompatibilityStatus
 ```
 
-You will see a list of your _Geography_ locations and whether content can be moved between is denoted as "Compatible". If the command returns "Incompatible" please retry validating the status at a later date.
+You will see a list of your _Geography_ locations and whether content can be moved between is denoted as "Compatible". If the command returns "Incompatible", please retry validating the status later.
 
 If a OneDrive contains a subsite, for example, it can't be moved. You can use the `Start-SPOUserAndContentMove` cmdlet with the `-ValidationOnly` parameter to validate if the OneDrive is able to be moved:
 
@@ -288,7 +288,7 @@ Users of OneDrive should notice minimal disruption if their OneDrive is moved to
 
 #### **User's OneDrive**
 
-While the move is in progress the user's OneDrive is set to read-only. Once the move is completed, the user is directed to their OneDrive in the new _Geography_  location when they navigate to OneDrive the Microsoft 365 app launcher or a web browser.
+While the move is in progress, the user's OneDrive is set to read-only. Once the move is completed, the user is directed to their OneDrive in the new _Geography_  location when they navigate to OneDrive the Microsoft 365 app launcher or a web browser.
 
 #### **Permissions on OneDrive content**
 
@@ -312,7 +312,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 
 #### **Teams app**
 
-Upon OneDrive _Geography_ move completion, users have access to their OneDrive files on the Teams app. Additionally, files shared via Teams chat from their OneDrive prior to _Geography_ move continue to work after move is complete.
+Upon OneDrive _Geography_ move completion, users have access to their OneDrive files on the Teams app. Additionally, files shared via Teams chat from their OneDrive before the _Geography_ move continue to work after move is complete.
 
 #### **OneDrive Mobile App (iOS)**
 
@@ -346,9 +346,9 @@ There's a read-only window during the SharePoint site _Geography_ move of approx
 #### **Best practices**
 
 - Try a SharePoint site move on a test site to get familiar with the procedure.
-- Validate whether the site can be moved prior to scheduling or performing the move.
+- Validate whether the site can be moved before scheduling or performing the move.
 - When possible schedule cross-geo sites moves for outside business hours to reduce user impact.
-- Communicate with impacted users prior to the sites move.
+- Communicate with impacted users before the sites move.
 
 #### **Communicating to your users**
 
@@ -506,7 +506,7 @@ OneNote Win32 client and UWP (Universal) App automatically detects and seamlessl
 
 #### **Teams (applicable to Microsoft 365 group connected sites)**
 
-When the SharePoint site _Geography_ move completes, users have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to _Geography_ move continue to work after move is complete.
+When the SharePoint site _Geography_ move completes, users have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site before the _Geography_ move continue to work after move is complete.
 SharePoint site _Geography_ move doesn't support moving sites backing Private and Shared Channels from one _Geography_ to another, when using the `Start-SPOUnifiedGroupMove` command. Sites backing Private and Shared Channels remain in the original _Geography_. To move those sites individually, admins can initiate direct moves using the `Start-SPOSiteContentMove` command.
 
 #### **SharePoint Mobile App (iOS/Android)**
@@ -560,7 +560,7 @@ Set-SPOMultiGeoExperience
 
 ![Set-SPOMultiGeoExperience.](../media/Set-SPO-MultiGeo.jpg)
 
-This operation usually takes about an hour while we perform various publish backs in the service and re-stamp your _Tenant_. After at least 1 hour, please perform a Get-SPOMultiGeoExperience. This shows you whether this _Geography_ location is in SPO mode.
+This operation usually takes about an hour while we perform various publish backs in the service and restamp your _Tenant_. After at least 1 hour, please perform a Get-SPOMultiGeoExperience. This shows you whether this _Geography_ location is in SPO mode.
 
 ![Image of Set-SPOMultiGeoExperience.](../media/Get-SPO-MultiGeo.jpg)
 
