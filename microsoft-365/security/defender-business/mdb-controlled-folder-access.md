@@ -3,7 +3,7 @@ title: Set up or edit your controlled folder access policy in Microsoft Defender
 description: Get an overview of attack surface reduction capabilities in Microsoft Defender for Business            
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 ms.date: 08/21/2023
 ms.topic: conceptual
 ms.service: defender-business

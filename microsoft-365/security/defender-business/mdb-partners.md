@@ -4,7 +4,7 @@ description: Download our new security guide or integrate your remote monitoring
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: overview
 ms.service: defender-business
