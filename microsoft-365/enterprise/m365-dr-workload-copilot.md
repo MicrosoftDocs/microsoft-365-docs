@@ -45,6 +45,7 @@ Required Conditions:
 
 1. _Tenant_ has a sign-up country/region included in _Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_
+1.	For existing Tenant that has data stored in a _Macro Region Geography_, the Tenant Global Admin must opt in to move the _Tenant_ data into the _Local Region Geography_.
 1. The Microsoft Copilot for Microsoft 365 subscription customer data is provisioned in _Local Region Geography_.
 
 **Commitment:**
