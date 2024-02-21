@@ -1,13 +1,12 @@
 ---
 title: How to schedule scans with Microsoft Defender for Endpoint on macOS
 description: Learn how to schedule an automatic scanning time for Microsoft Defender for Endpoint in macOS to better protect your organization's assets.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, scans, antivirus, big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 02/12/2024
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -109,7 +108,7 @@ The following code shows the schema you need to use to schedule scans according 
             <key>scanType</key> 
             <string>full</string> 
         </dict> 
-	</dict> 
+    </dict> 
 </dict> 
 </plist> 
 ```
