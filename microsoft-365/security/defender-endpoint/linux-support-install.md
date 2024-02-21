@@ -106,7 +106,7 @@ service mdatp status
 
 ## Steps to troubleshoot if the mdatp service isn't running
 
-1. Check if `mdatp` user exists:
+1. Check to see if `mdatp` user exists:
 
     ```bash
     id "mdatp"
