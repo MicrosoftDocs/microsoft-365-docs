@@ -249,17 +249,17 @@ Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the o
     - If an admin has set up optional permissions, then the user can **Skip** VPN permission and complete onboarding.
     - Even if the user has skipped VPN, the device is able to onboard, and a heartbeat is sent.
     - If VPN is disabled, web protection isn't active.
-    - Later, the user can enable web protection from within the app. This will install the VPN configuration on the device.
+    - Later, the user can enable web protection from within the app, which installs the VPN configuration on the device.
 
 > [!NOTE]
 > **Optional Permission** is different from **Disable Web Protection**. Optional VPN Permission only helps to skip the permission during onboarding but its available for the end user to later review and enable it. While **Disable Web Protection** allows users to onboard the Defender for Endpoint app without the Web Protection. It cannot be enabled later.
 
 ## Jailbreak detection
 
-Microsoft Defender for Endpoint has the capability of detecting unmanaged and managed devices that are jailbroken. These jailbreak checks are done periodically. If a device is detected to be jailbroken,
+Microsoft Defender for Endpoint has the capability of detecting unmanaged and managed devices that are jailbroken. These jailbreak checks are done periodically. If a device is detected as jailbroken, these events occur:
 
-1. A **High**-risk alert is reported to the Microsoft Defender portal. If device Compliance and Conditional Access is set up based on device risk score, then the device is blocked from accessing corporate data.
-1. User data on app is cleared. When user opens the app after jailbreaking the VPN profile also is deleted and no web protection is offered.
+- **High**-risk alert is reported to the Microsoft Defender portal. If device Compliance and Conditional Access is set up based on device risk score, then the device is blocked from accessing corporate data.
+- User data on app is cleared. When user opens the app after jailbreaking the VPN profile also is deleted and no web protection is offered.
 
 ### Configure compliance policy against jailbroken devices
 
