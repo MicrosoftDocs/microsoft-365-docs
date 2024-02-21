@@ -4,8 +4,8 @@ description: Learn about the gradual update process and controls
 ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
