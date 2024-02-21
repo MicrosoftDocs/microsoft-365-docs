@@ -1,17 +1,13 @@
 ---
 title: Device discovery frequently asked questions
 description: Find answers to frequently asked questions (FAQs) about device discovery
-keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
