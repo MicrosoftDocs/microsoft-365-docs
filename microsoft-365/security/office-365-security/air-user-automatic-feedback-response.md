@@ -15,8 +15,7 @@ appliesto:
 # Automatic user notifications for user reported phishing results in AIR
 
 > [!NOTE]
-> The features described in this article are currently in Private Preview, aren't available in all organizations, and are subject to change.
-
+> The features described in this article are currently in Public Preview, aren't available in all organizations, and are subject to change.
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can configure the backend for messages that users report as malicious or not malicious in Outlook (send to Microsoft, send to a reporting mailbox, or both), and configure the various notification options for user reported messages. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 In Microsoft 365 organizations with Microsoft Defender for Office 365 Plan 2, when a user reports a message as phishing, an investigation is automatically created in [automated investigation and response (AIR)](air-about.md). Admins can configure the user reported message settings to send an email notification to the user who reported the message based on the verdict from AIR. This notification is also known as _automatic feedback response_.
@@ -70,8 +69,10 @@ After you enable automated feedback response, the user who reported the message 
 
 - **Spam**: If a user reports a message as phishing, the submission triggers AIR on the reported message. If the investigation finds the message is spam, the user who reported the message receives a notification email that looks like this:
 
-   :::image type="content" source="../../media/air-automatic-feedback-spam-email.png" alt-text="An example notification email for Spam found." lightbox="../../media/air-automatic-feedback-spam-email.png":::
-
+  ![Submissions spam Screenshot 2024-02-21 180335](media/air-user-automatic-feedback-response/submissions-spam-screenshot-2024-02-21-180335.png)
+  
+   
+  
 - **Phishing or malware**: If a user reports a message as phishing, the submission triggers AIR on the reported message. What happens next depends on the results of the investigation:
   - **High confidence phishing or malware**: The message needs to be remediated using one of the following actions:
     - Approve the recommended action (shown as pending actions in the investigation or in the Action center).
