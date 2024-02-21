@@ -25,7 +25,7 @@ ms.collection:
 Service documentation: [Microsoft Copilot for Microsoft 365 overview](/microsoft-365-copilot/microsoft-365-copilot-overview) and [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
 
 Capability Summary: Microsoft Copilot for Microsoft 365 is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 apps that you use every day, such as Word, Excel, PowerPoint, Outlook, and Teams. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
-The following applications provide the ability to interact with Copilot for Microsoft 365:  Microsoft Word, PowerPoint, Loop, Outlook, Teams (Chat, Meetings, Calls, Whiteboard), and OneNote.  The interactions with these applications and the related semantic index will be stored in the relevant _Geography_. Copilot interaction data for all stated applications is stored within the Microsoft Teams data storage infrastructure.
+The following applications provide the ability to interact with Copilot for Microsoft 365:  Microsoft Word, Excel, PowerPoint, Loop, Outlook, Teams (Chat, Meetings, Calls, Whiteboard), and OneNote.  The interactions with these applications and the related semantic index will be stored in the relevant _Geography_. Copilot interaction data for all stated applications is stored within the Microsoft Teams data storage infrastructure.
 
 ## Data Residency Commitments Available for Copilot for Microsoft 365
 
@@ -70,13 +70,13 @@ Copilot for Microsoft 365 relies on Microsoft Teams for storing the interactions
 
  The _Geography_ used to store the Copilot interactions is determined by the user who writes the prompt. Different users in different regions will have their interactions stored in different regions. 
 
-**Collaboration**
+**Collaboration Experience**
 
-Regarding two or more people working together on a Microsoft Word or Microsoft Powerpoint document.  User A is in Canada and asks Copilot to do something in PPTX/Word, but the document is stored in France. User A from Canada will have Copilot data in Canada even though the document is in France. The document is not copied to Canada but parts of the document may be included in the results and stored in Teams. 
+Regarding two or more people working together on a Microsoft Word or Microsoft Powerpoint document.  User A is in Canada and asks Copilot to do something in PPTX/Word, but the document is stored in France. User A from Canada will have Copilot data in Canada even though the document is in France. The document is not copied to Canada but parts of the document may be included in the results and stored in Teams. Interactions with Microsoft Copilot for Microsoft 365 that do not result in the document being updated, may have interactions stored in Teams in the user's location.
 
-**Meeting Recordings**
+**Teams Meeting Experience**
 
-Microsoft Teams meeting recording location is determined by the region of the user that starts the recording.  When users in other regions ask Copilot for Microsoft 365 to summarize the meeting, those questions and related answers  (interactions) are stored in the location of the user that asks the Copilot questions.
+Microsoft Teams meeting recording video location is determined by the region of the user that starts the recording, or when meetings have an automatic recording policy, the location is determined from the first person joining the meeting.  When users in other regions interact with Microsoft Copilot for Microsoft 365, those questions and related answers  (interactions) are stored in the location of the user that asks the Copilot questions.
 
 
 ### Migration
