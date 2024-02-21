@@ -22,7 +22,7 @@ ms.collection:
 
 Microsoft Privacy and Security product terms included with Microsoft's Cloud product terms provides data residency commitment with the following scope:
 
-1. Online Services: Exchange Online, SharePoint,  Microsoft Teams (as of November 1, 2022) and Copilot for Microsoft 365 (as of March 1, 2024).
+1. Online Services: Exchange Online, SharePoint, OneDrive, Microsoft Teams (as of November 1, 2022) and Microsoft Copilot for Microsoft 365 (as of March 1, 2024).
 2. Commitments period: The length of the customers contract with Microsoft. Typically, this is 1-3 years.
 3. Country/regions included: Australia, Brazil, Canada, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, United States and the European Union.
 
