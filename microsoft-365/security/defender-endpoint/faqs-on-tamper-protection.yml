@@ -6,10 +6,10 @@ metadata:
   ms.subservice: ngp
   ms.localizationpriority: medium
   audience: ITPro
-  author: denisebmsft
-  ms.author: deniseb
+  author: siosulli
+  ms.author: siosulli
   ms.reviewer: joshbregman, sugamar 
-  manager: dansimp
+  manager: deniseb
   ms.topic: faq
   ms.collection: 
   - m365-security
