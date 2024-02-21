@@ -132,7 +132,7 @@ More details about certain events are provided in the **Additional information**
 - Remediation successful - the detected threat was stopped and cleaned
 - Warning bypassed by user - the Windows Defender SmartScreen warning was dismissed and overridden by a user
 - Suspicious script detected - a potentially malicious script was found running
-- The alert category - if the event led to the generation of an alert, the alert category  ("Lateral Movement", for example) is provided
+- The alert category - if the event led to the generation of an alert, the alert category  (**Lateral Movement**, for example) is provided
 
 #### Event details
 
@@ -179,7 +179,7 @@ The **Missing KBs** tab lists the missing security updates for the device.
 
 ### Active alerts
 
-The **Azure Advanced Threat Protection** card displays a high-level overview of alerts related to the device and their risk level, if you're using the Microsoft Defender for Identity feature, and there are any active alerts. More information is available in the "Alerts" drill down.
+The **Azure Advanced Threat Protection** card displays a high-level overview of alerts related to the device and their risk level, if you're using the Microsoft Defender for Identity feature, and there are any active alerts. More information is available in the **Alerts** drill down.
 
 :::image type="content" source="images/risk-level-small.png" alt-text="The active alerts card" lightbox="images/risk-level-small.png":::
 
@@ -188,13 +188,13 @@ The **Azure Advanced Threat Protection** card displays a high-level overview of 
 
 ### Logged on users
 
-The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the "See all users" link opens the details pane, which displays information such as user type, log on type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
+The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the **See all users** link opens the details pane, which displays information such as user type, log on type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
 
 :::image type="content" source="images/logged-on-users.png" alt-text="The user details pane" lightbox="images/logged-on-users.png":::
 
 > [!NOTE]
 > The 'Most frequent' user value is calculated only based on evidence of users who successfully logged on interactively.
-> However, the "All users" side-pane calculates all sorts of user logons so it is expected to see more frequent users in the side-pane, given that those users may not be interactive.
+> However, the **All users** side-pane calculates all sorts of user logons so it is expected to see more frequent users in the side-pane, given that those users may not be interactive.
 
 ### Security assessments
 
