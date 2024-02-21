@@ -155,7 +155,7 @@ See the following table for a list of events recorded by the service.
    |407|Microsoft Defender for Endpoint service failed to sign message (authentication). Failure code: %1.  |Failed to sign request.    |Normal operating notification; no action required.   |
    |408|Microsoft Defender for Endpoint service failed to remove persist authentication state. State: %1, Failure code: %2.   |Failed to persist authentication state. |If a device isn't reporting, contact support. Otherwise, no action required.|
    |409| Microsoft Defender for Endpoint service failed to open key. Failure code: %1.  |Failed to open crypto key.|If a device isn't reporting, contact support. Otherwise, no action required.|
-   |410|Registration is required as part of re-onboarding of Microsoft Defender for Endpoint service.   |Occurs during reonboarding. |Normal operating notification; no action required.|
+   |410|Registration is required as part of reonboarding of Microsoft Defender for Endpoint service.   |Occurs during reonboarding. |Normal operating notification; no action required.|
    |411|Cyber telemetry upload has been suspended for Microsoft Defender for Endpoint service due to invalid/expired token.|Cyber upload temporarily suspended.|Normal operating notification; no action required.|
    |412|Cyber telemetry upload been resumed for Microsoft Defender for Endpoint service due to newly refreshed token.|Cyber upload successfully resumed.|Normal operating notification; no action required.|
    |1800| CSP: Get `Node&apos;s` Value. NodeId: (%1), TokenName: (%2).  | An operation of Get is about to start.   | Contact support. |
