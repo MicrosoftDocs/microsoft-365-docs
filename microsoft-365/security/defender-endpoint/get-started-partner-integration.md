@@ -1,14 +1,10 @@
 ---
 title: Become a Microsoft Defender for Endpoint partner
 ms.reviewer:
-description: Learn the steps and requirements to integrate your solution with Microsoft Defender for Endpoint and be a partner
-keywords: partner, integration, solution validation, certification, requirements, member, misa, application portal
+description: Learn the steps and requirements to integrate your solution with Microsoft Defender for Endpoint and be a partner.
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -31,7 +27,7 @@ ms.date: 12/18/2020
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-To become a Defender for Endpoint solution partner, you'll need to follow and complete the following steps.
+To become a Defender for Endpoint solution partner, complete steps outlined in this article.
 
 ## Step 1: Subscribe to a Microsoft Defender for Endpoint license
 
