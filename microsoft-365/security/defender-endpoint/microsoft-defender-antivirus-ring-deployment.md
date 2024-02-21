@@ -1,13 +1,9 @@
 ---
 title: Microsoft Defender Antivirus ring deployment guide overview
 description: Microsoft Defender Antivirus is an enterprise endpoint security platform that helps defend against advanced persistent threats. This article provides an overview about how to use ring deployment methods to update your Microsoft Defender Antivirus clients.
-keywords: deploy Microsoft Defender Antivirus updates, ring deployment Microsoft Defender Antivirus, threat intelligence, cybersecurity, cloud security,
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: high
 manager: deniseb
 audience: ITPro

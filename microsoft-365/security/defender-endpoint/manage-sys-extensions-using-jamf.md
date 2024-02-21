@@ -1,13 +1,9 @@
 ---
 title: Manage system extensions using JamF
 description: Manage system extensions using JamF for Microsoft Defender for Endpoint to work properly on macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -31,10 +27,10 @@ This article describes the procedures to implement in the process of managing th
 
 To approve the system extensions, perform the following steps:
 
-1.	Select **Computers > Configuration Profiles**, and then select **Options > System Extensions**.
-2.	Select **Allowed System Extensions** from the **System Extension Types** drop-down list.
-3.	Use **UBF8T346G9** for Team ID.
-4.	Add the following bundle identifiers to the **Allowed System Extensions** list:
+1.    Select **Computers > Configuration Profiles**, and then select **Options > System Extensions**.
+2.    Select **Allowed System Extensions** from the **System Extension Types** drop-down list.
+3.    Use **UBF8T346G9** for Team ID.
+4.    Add the following bundle identifiers to the **Allowed System Extensions** list:
     - com.microsoft.wdav.epsext
     - com.microsoft.wdav.netext
     
