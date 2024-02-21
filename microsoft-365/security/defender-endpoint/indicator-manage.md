@@ -62,17 +62,17 @@ The following table shows the supported parameters.
 
 | Parameter|Type|Description |
 | ---| ---| --- |
-| indicatorType|Enum|Type of the indicator. Possible values are: *FileSha1*, *FileSha256*, *IpAddress*, *DomainName* and *Url*. **Required** |
+| indicatorType|Enum|Type of the indicator. Possible values are: *FileSha1*, *FileSha256*, *IpAddress*, *DomainName*, and *Url*. **Required** |
 | indicatorValue|String|Identity of the [Indicator](ti-indicator.md) entity. **Required** |
 | action|Enum|The action that is taken if the indicator is discovered in the organization. Possible values are: *Allowed*, *Audit*, *BlockAndRemediate*, *Warn*, and *Block*. **Required** |
 | title|String|Indicator alert title. **Required** |
 | description|String| Description of the indicator. **Required** |
 | expirationTime|DateTimeOffset|The expiration time of the indicator in the following format YYYY-MM-DDTHH:MM:SS.0Z. The indicator gets deleted if the expiration time passes and whatever happens at the expiration time occurs at the seconds (SS) value. **Optional** |
-| severity|Enum|The severity of the indicator. Possible values are: *Informational*, *Low*, *Medium* and *High*. **Optional** |
+| severity|Enum|The severity of the indicator. Possible values are: *Informational*, *Low*, *Medium*, and *High*. **Optional** |
 | recommendedActions|String|TI indicator alert recommended actions. **Optional** |
 | rbacGroups|String|Comma-separated list of RBAC groups the indicator would be applied to. **Optional** |
-| category|String|Category of the alert. Examples include: Execution and credential access. **Optional**
-mitretechniques|String|MITRE techniques code/id (comma separated). For more information, see [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/). **Optional** It is recommended to add a value in category when a MITRE technique. |
+| category|String|Category of the alert. Examples include: Execution and credential access. **Optional** |
+| mitretechniques|String|MITRE techniques code/id (comma separated). For more information, see [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/). **Optional** It is recommended to add a value in category when a MITRE technique. |
 | GenerateAlert|String|Whether the alert should be generated. Possible Values are: True or False. **Optional** |
 
 > [!NOTE]
