@@ -241,11 +241,11 @@ Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the o
     - On the Settings page, select **Use configuration designer** and add **DefenderOptionalVPN** as the key and value type as **Boolean**.
 
       - To enable optional VPN permission, enter value as `true` and assign this policy to users. By default, this value is set to `false`.
-      - For users with key set as `true`, the users is able to onboard the app without giving the VPN permission.
+      - For users with key set as `true`, the users are able to onboard the app without giving the VPN permission.
 
     - Select **Next** and assign this profile to targeted devices/users.
 
-1. **End User flow** - User will install and open the app to start the onboarding.
+1. **End User flow** - User installs and opens the app to start the onboarding.
     - If an admin has set up optional permissions, then the user can **Skip** VPN permission and complete onboarding.
     - Even if the user has skipped VPN, the device is able to onboard, and a heartbeat is sent.
     - If VPN is disabled, web protection isn't active.
