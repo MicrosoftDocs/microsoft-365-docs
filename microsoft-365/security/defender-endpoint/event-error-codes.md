@@ -44,7 +44,7 @@ To open the Defender for Endpoint service event log:
    > [!NOTE]
    > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint.
 
-3. Events recorded by the service will appear in the log.
+3. Events recorded by the service appear in the log.
 
 See the following table for a list of events recorded by the service.
 
@@ -53,9 +53,9 @@ See the following table for a list of events recorded by the service.
    |1|Microsoft Defender for Endpoint service started (Version `variable`).|Occurs during system startup, shut down, and during onboarding.|Normal operating notification; no action required.|
    |2|Microsoft Defender for Endpoint service shutdown.|Occurs when the device is shut down or offboarded.|Normal operating notification; no action required.|
    |3|Microsoft Defender for Endpoint service failed to start. Failure code: `variable`.|Service didn't start.|Review other messages to determine possible cause and troubleshooting steps.|
-   |4|Microsoft Defender for Endpoint service contacted the server at `variable`.|Variable = URL of the Defender for Endpoint processing servers. <p> This URL will match that seen in the Firewall or network activity.|Normal operating notification; no action required.|
+   |4|Microsoft Defender for Endpoint service contacted the server at `variable`.|Variable = URL of the Defender for Endpoint processing servers. <p> This URL matches that seen in the Firewall or network activity.|Normal operating notification; no action required.|
    |5|Microsoft Defender for Endpoint service failed to connect to the server at `variable`.|Variable = URL of the Defender for Endpoint processing servers. <p> The service couldn't contact the external processing servers at that URL.|Check the connection to the URL. See [Configure proxy and Internet connectivity](configure-proxy-internet.md).|
-   |6|Microsoft Defender for Endpoint service isn't onboarded and no onboarding parameters were found.|The device didn't onboard correctly and won't be reporting to the portal.|Onboarding must be run before starting the service. <p> Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows client devices](configure-endpoints.md).|
+   |6|Microsoft Defender for Endpoint service isn't onboarded and no onboarding parameters were found.|The device didn't onboard correctly and isn't reporting to the portal.|Onboarding must be run before starting the service. <p> Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows client devices](configure-endpoints.md).|
    |7|Microsoft Defender for Endpoint service failed to read the onboarding parameters. Failure: `variable`.|Variable = detailed error description. The device didn't onboard correctly and won't be reporting to the portal.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows client devices](configure-endpoints.md).|
    |8|Microsoft Defender for Endpoint service failed to clean its configuration. Failure code: `variable`.|**During onboarding:** The service failed to clean its configuration during the onboarding. The onboarding process continues. <p> **During offboarding:** The service failed to clean its configuration during the offboarding. The offboarding process finished but the service keeps running.|**Onboarding:** No action required. <p> **Offboarding:** Reboot the system. <p> See [Onboard Windows client devices](configure-endpoints.md).|
    |9|Microsoft Defender for Endpoint service failed to change its start type. Failure code: `variable`.|**During onboarding:** The device didn't onboard correctly and won't be reporting to the portal. <p>**During offboarding:** Failed to change the service start type. The offboarding process continues. |Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows client devices](configure-endpoints.md).|
