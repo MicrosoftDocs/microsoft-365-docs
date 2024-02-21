@@ -69,15 +69,15 @@ Multi-Geo capabilities in Microsoft Copilot for Microsoft 365 enable content of 
 
 Microsoft Copilot for Microsoft 365 relies on Microsoft Teams for storing the interactions users have with Microsoft Copilot for Microsoft 365.  Given that approach, the assignment of PDL to users for Teams will apply to the Microsoft Copilot for Microsoft 365 interactions that are stored and committed to.
 
- The _Geography_ used to store the Copilot interactions is determined by the user who writes the prompt. Different users in different regions will have their interactions stored in different regions. 
+ The _Geography_ used to store the Microsoft Copilot for Microsoft 365 interactions is determined by the user who writes the prompt. Different users in different regions will have their interactions stored in different regions. 
 
-**Collaboration**
+**Collaboration Experience**
 
-Regarding two or more people working together on a Microsoft Word or Microsoft Powerpoint document.  User A is in Canada and asks Copilot to do something in PPTX/Word, but the document is stored in France. User A from Canada will have Copilot data in Canada even though the document is in France. The document is not copied to Canada but parts of the document may be included in the results and stored in Teams. 
+Regarding two or more people working together on a Microsoft Word or Microsoft Powerpoint document.  User A is in Canada and asks Microsoft Copilot for Microsoft 365 to do something in PPTX/Word, but the document is stored in France. User A from Canada will have Microsoft Copilot for Microsoft 365 data in Canada even though the document is in France. The document is not copied to Canada but parts of the document may be included in the results and stored in Teams. Interactions with Microsoft Copilot for Microsoft 365 that do not result in the document being updated, may have interactions stored in Teams in the user's location.
 
-**Meeting Recordings**
+**Teams Meeting Experience**
 
-Microsoft Teams meeting recording location is determined by the region of the user that starts the recording.  When users in other regions ask Microsoft Copilot for Microsoft 365 to summarize the meeting, those questions and related answers  (interactions) are stored in the location of the user that asks the Copilot questions.
+Microsoft Teams meeting recording video location is determined by the region of the user that starts the recording, or when meetings have an automatic recording policy, the location is determined from the first person joining the meeting.  When users in other regions interact with Microsoft Copilot for Microsoft 365, those questions and related answers  (interactions) are stored in the location of the user that asks the Microsoft Copilot for Microsoft 365 questions.
 
 
 ### Migration
@@ -86,5 +86,5 @@ Microsoft Copilot for Microsoft 365 prompts and responses are stored with the Te
 
 ### How can I determine customer data location?
 
-You can find the actual data location in _Tenant_ Microsoft 365 admin center. As a _Tenant_ Global Administrator you can find the actual data location, for committed data, by navigating to **Admin > Settings > Org Settings > Organization Profile > Data Location**.
+You can find the actual data location in _Tenant_ Microsoft 365 admin center. As a _Tenant_ Global Administrator you can find the actual data location by referencing the Microsoft Teams data location, for committed data, by navigating to **Admin > Settings > Org Settings > Organization Profile > Data Location**.
 
