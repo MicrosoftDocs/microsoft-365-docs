@@ -250,7 +250,7 @@ Where an TLS/SSL certificate is found that isn't provided by Microsoft, we show 
 
 This section shows the results of an ICMP traceroute to the Exchange Online service front door, the SharePoint Online service front door, and the Microsoft Teams service front door. It's provided for information only and there's no associated network insight. There are three traceroutes provided. A traceroute to _outlook.office365.com_, a traceroute to the customers SharePoint front end or to _microsoft.sharepoint.com_ if one wasn't provided, and a traceroute to _world.tr.teams.microsoft.com_.
 
-> [！NOTES]
+> [!NOTE]
 > In reports generated in different versions, the addresses you see above may also vary slightly.
 
 ## Connectivity reports
