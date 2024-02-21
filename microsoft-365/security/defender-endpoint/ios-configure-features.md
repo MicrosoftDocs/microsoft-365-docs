@@ -204,13 +204,13 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
    4. On the Settings page, under the **General Configuration Settings**, add **DefenderExcludeURLInReport** as the key and value as `true`.
 
       - To enable privacy and not collect the domain name, enter the value as `true` and assign this policy to users. By default, this value is set to `false`.
-      - For users with key set as `true`, the phish alert will not contain the domain name information whenever a malicious site is detected and blocked by Defender for Endpoint.
+      - For users with key set as `true`, the phish alert doesn't contain the domain name information whenever a malicious site is detected and blocked by Defender for Endpoint.
 
    5. Select **Next** and assign this profile to targeted devices/users.
 
 3. **End User Privacy Controls** These controls help the end user to configure the information shared to their organization.
 
-   For Supervised devices, End User controls aren't visible. Admin will decide and controls the settings. However, for Unsupervised devices, the control is displayed under the **Settings \> Privacy**.
+   For Supervised devices, End User controls aren't visible. Your admin decides and controls the settings. However, for Unsupervised devices, the control is displayed under the **Settings \> Privacy**.
 
    - Users see a toggle for **Unsafe Site Info**.
    - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**.
