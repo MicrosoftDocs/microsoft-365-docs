@@ -86,4 +86,4 @@ Microsoft Copilot for Microsoft 365 prompts and responses are stored with the Te
 
 ### How can I determine customer data location?
 
-You can find the actual data location in _Tenant_ Microsoft 365 admin center. As a _Tenant_ Global Administrator you can find the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.
+You can find the actual data location in _Tenant_ Microsoft 365 admin center. As a _Tenant_ Global Administrator you can find the actual data location, for committed data, by navigating to **Admin > Settings > Org Settings > Organization Profile > Data Location**.
