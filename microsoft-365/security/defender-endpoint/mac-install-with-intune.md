@@ -182,7 +182,7 @@ Download [notif.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-
 To turn off notifications for the end users, you can change '**Show NotificationCenter**' from 'true' to 'false' in 
 [notif.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig).
 
-:::image type="content" source="media/image.png" alt-text="Screenshot of notif.mobileconfig showing ShowNotificationCenter set to True.":::
+:::image type="content" source="media/image.png" alt-text="Screenshot showing notif.mobileconfig with ShowNotificationCenter set to True.":::
 
 To configure notifications:
 
