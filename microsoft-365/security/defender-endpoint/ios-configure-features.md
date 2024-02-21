@@ -59,9 +59,9 @@ While enabled by default, there might be some cases that require you to disable 
 
 ## Disable Web Protection
 
-Web Protection is one of the key features of Defender for Endpoint and it requires a VPN to provide that capability. The VPN used is a local/loopback VPN and not a traditional VPN, however there are several reasons for which customers might not prefer the VPN. Customers who do not want to set up a VPN, there is an option to disable **Web Protection** and deploy Defender for Endpoint without that feature. Other Defender for Endpoint features will continue to work.
+Web Protection is one of the key features of Defender for Endpoint and it requires a VPN to provide that capability. The VPN used is a local/loopback VPN and not a traditional VPN, however there are several reasons for which customers might not prefer the VPN. Customers who don't want to set up a VPN, there's an option to disable **Web Protection** and deploy Defender for Endpoint without that feature. Other Defender for Endpoint features continue to work.
 
-This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices. For customers with MDM, admins can configure the **Web Protection** through Managed devices in the App Config. For customers without enrollment, using MAM, admins can configure the **Web Protection** through Managed apps in the App Config.
+This configuration is available for both the enrolled (MDM) devices and unenrolled (MAM) devices. For customers with MDM, admins can configure the **Web Protection** through Managed devices in the App Config. For customers without enrollment, using MAM, admins can configure the **Web Protection** through Managed apps in the App Config.
 
 ### Configure Web Protection
 
@@ -73,8 +73,8 @@ This configuration is available for both the enrolled (MDM) devices as well as u
     - In Settings page, select Use configuration designer and add **WebProtection** as the key and value type as **String**.
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
-        - Defender will send the heartbeat to the Microsoft Defender portal whenever user opens the app.
-        - Click Next and assign this profile to targeted devices/users.
+        - Defender sends the heartbeat to the Microsoft Defender portal whenever user opens the app.
+        - Select **Next** and assign this profile to targeted devices/users.
 
 1. **Disable Web Protection(MAM)** Use the following steps to disable **Web Protection** for unenrolled devices.
 
@@ -84,8 +84,8 @@ This configuration is available for both the enrolled (MDM) devices as well as u
     - In Settings page, under the General Configuration Settings, add **WebProtection** as the key and value as **false**.
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
-        - Defender will send the heartbeat to the Microsoft Defender portal whenever user opens the app.
-        - Click Next and assign this profile to targeted devices/users.
+        - Defender sends the heartbeat to the Microsoft Defender portal whenever user opens the app.
+        - Select **Next** and assign this profile to targeted devices/users.
 
 ## Configure Network Protection
 
@@ -94,29 +94,36 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 > [!NOTE]
 > Only one policy should be created for Network Protection, either MDM or MAM.
 
-**For enrolled devices (MDM)**:
+### For enrolled devices (MDM)
 
 Follow the below steps for setting up MDM configuration for enrolled devices for Network protection.
 
 1. In the Microsoft Intune admin center, navigate to **Apps** \> **App configuration policies** \> **Add** \> **Managed devices**.
-1. Provide name and description for the policy. In Platform choose **iOS/iPad**.
-1. In targeted app choose **Microsoft Defender for Endpoint**.
-1. In the Settings page, choose configuration settings format **Use configuration designer**.
-1. Add 'DefenderNetworkProtectionEnable' as the configuration key, value type as 'String' and value as 'true' to enable Network Protection. (Network protection is disabled by default.)
-       :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Screenshot that shows the add mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
-1. For other configurations related to Network protection, add the following keys, choose the corresponding value type and value.
 
-    | Key | Value Type | Default (true-enable, false-disable) | Description |
-    | --- | --- | --- | --- |
-    | `DefenderOpenNetworkDetection` | Integer | 0 | 1 - Audit, 0 - Disable(default), 2 - Enable. This setting is managed by an IT Admin to audit, disable, or enable open network detection, respectively. In 'Audit' mode, alerts will be sent only to the ATP portal with no end-user experience. For end-user experience, set the config to 'Enable' mode.|
-    | `DefenderEndUserTrustFlowEnable` | String | false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks. |
-    | `DefenderNetworkProtectionAutoRemediation` | String | true | true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender. |
-    | `DefenderNetworkProtectionPrivacy` | String | true | true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection. |
+2. Provide name and description for the policy. In Platform choose **iOS/iPad**.
 
-1. In the Assignments section, admin can choose groups of users to include and exclude from the policy.
-1. Review and create the configuration policy.
+3. In targeted app choose **Microsoft Defender for Endpoint**.
 
-**For unenrolled devices (MAM)**:
+4. In the Settings page, choose configuration settings format **Use configuration designer**.
+
+5. Add 'DefenderNetworkProtectionEnable' as the configuration key, value type as 'String' and value as 'true' to enable Network Protection. (Network protection is disabled by default.)
+
+   :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Screenshot that shows the add mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
+
+6. For other configurations related to Network protection, add the following keys, choose the corresponding value type and value.
+
+   | Key | Value Type | Default (true-enable, false-disable) | Description |
+   | --- | --- | --- | --- |
+   | `DefenderOpenNetworkDetection` | Integer | 0 | 1 - Audit, 0 - Disable(default), 2 - Enable. This setting is managed by an IT Admin to audit, disable, or enable open network detection, respectively. In 'Audit' mode, alerts will be sent only to the ATP portal with no end-user experience. For end-user experience, set the config to 'Enable' mode.|
+   | `DefenderEndUserTrustFlowEnable` | String | false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks. |
+   | `DefenderNetworkProtectionAutoRemediation` | String | true | true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender. |
+   | `DefenderNetworkProtectionPrivacy` | String | true | true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection. |
+
+7. In the Assignments section, admin can choose groups of users to include and exclude from the policy.
+
+8. Review and create the configuration policy.
+
+### For unenrolled devices (MAM)
 
 Follow the below steps for setting up MAM config for unenrolled devices for Network protection (Authenticator device registration is required for MAM configuration) in iOS devices. Network Protection initialization will require the end user to open the app once.
 
@@ -125,6 +132,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
    :::image type="content" source="images/addiosconfig.png" alt-text="Add configuration policy." lightbox="images/addiosconfig.png":::
 
 2. Provide a name and description to uniquely identify the policy. Then select **Select Public apps**, and choose **Microsoft Defender for Platform iOS/iPadOS**.
+
    :::image type="content" source="images/nameiosconfig.png" alt-text="Name the configuration." lightbox="images/nameiosconfig.png":::
 
 3. On the Settings page, add **DefenderNetworkProtectionEnable** as the key and the value as `true` to enable network protection. (Network protection is disabled by default.)
@@ -172,38 +180,37 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
 
 1. **Admin Privacy Controls (MDM)** Use the following steps to enable privacy and not collect the domain name as part of the phish alert report for enrolled devices.
 
-    - In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** \> **App configuration policies** \> **Add** \> **Managed devices**.
+   1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** \> **App configuration policies** \> **Add** \> **Managed devices**.
 
-    - Give the policy a name, **Platform \> iOS/iPadOS**, select the profile type.
+   2. Give the policy a name, **Platform \> iOS/iPadOS**, select the profile type.
 
-    - Select **Microsoft Defender for Endpoint** as the target app.
+   3. Select **Microsoft Defender for Endpoint** as the target app.
 
-    - On the Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Boolean**.
-
-      - To enable privacy and not collect the domain name, enter the value as `true` and assign this policy to users. By default, this value is set to `false`.
-
-      - For users with key set as `true`, the phish alert will not contain the domain name information whenever a malicious site is detected and blocked by Defender for Endpoint.
-
-    - Select **Next** and assign this profile to targeted devices/users.
-
-1. **Admin Privacy Controls (MAM)** Use the following steps to enable privacy and not collect the domain name as part of the phish alert report for unenrolled devices.
-
-    - In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** \> **App configuration policies** \> **Add** \> **Managed apps**.
-
-    - Give the policy a name.
-
-    - Under **Select Public Apps**, choose **Microsoft Defender for Endpoint** as the target app.
-
-    - On the Settings page, under the **General Configuration Settings**, add **DefenderExcludeURLInReport** as the key and value as `true`.
+   4. On the Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Boolean**.
 
       - To enable privacy and not collect the domain name, enter the value as `true` and assign this policy to users. By default, this value is set to `false`.
-
       - For users with key set as `true`, the phish alert will not contain the domain name information whenever a malicious site is detected and blocked by Defender for Endpoint.
 
-    - Select **Next** and assign this profile to targeted devices/users.
+   5. Select **Next** and assign this profile to targeted devices/users.
 
-1. **End User Privacy Controls** These controls help the end user to configure the information shared to their organization.
-    - For Supervised devices, End User controls will not be visible. Admin will decide and controls the settings.
+2. **Admin Privacy Controls (MAM)** Use the following steps to enable privacy and not collect the domain name as part of the phish alert report for unenrolled devices.
+
+   1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** \> **App configuration policies** \> **Add** \> **Managed apps**.
+
+   2. Give the policy a name.
+
+   3. Under **Select Public Apps**, choose **Microsoft Defender for Endpoint** as the target app.
+
+   4. On the Settings page, under the **General Configuration Settings**, add **DefenderExcludeURLInReport** as the key and value as `true`.
+
+      - To enable privacy and not collect the domain name, enter the value as `true` and assign this policy to users. By default, this value is set to `false`.
+      - For users with key set as `true`, the phish alert will not contain the domain name information whenever a malicious site is detected and blocked by Defender for Endpoint.
+
+   5. Select **Next** and assign this profile to targeted devices/users.
+
+3. **End User Privacy Controls** These controls help the end user to configure the information shared to their organization.
+
+   For Supervised devices, End User controls aren't visible. Admin will decide and controls the settings.
     - However, for Unsupervised devices, the control will be displayed under the **Settings \> Privacy**.
         - Users will see a toggle for **Unsafe Site Info**.
         - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**.
