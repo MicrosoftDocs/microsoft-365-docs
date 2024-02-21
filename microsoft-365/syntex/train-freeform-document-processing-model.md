@@ -15,6 +15,7 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to train a freeform document processing model in Microsoft Syntex.
 ---
 
