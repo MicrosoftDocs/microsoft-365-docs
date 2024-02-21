@@ -44,7 +44,7 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
 1. In Microsoft Defender portal, select **Incidents & alerts** \> **Incidents**.
 
-2. Scroll to the right to see the **Data sensitivity** column. This column reflects sensitivity labels that are observed on devices related to the incidents providing an indication of whether sensitive files are impacted by the incident.
+2. Scroll over to see the **Data sensitivity** column. This column reflects sensitivity labels that are observed on devices related to the incidents providing an indication of whether sensitive files are impacted by the incident.
 
    :::image type="content" source="images/data-sensitivity-column.png" alt-text="The Highly confidential option in the data sensitivity column" lightbox="images/data-sensitivity-column.png":::
 
