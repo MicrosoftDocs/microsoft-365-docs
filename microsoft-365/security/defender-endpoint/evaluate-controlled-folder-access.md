@@ -1,6 +1,6 @@
 ---
 title: Evaluate controlled folder access
-description: See how controlled folder access can help protect files from being changed by malicious apps.
+description: See how controlled folder access can help protect files from malicious apps.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
@@ -42,7 +42,7 @@ This article helps you evaluate controlled folder access. It explains how to ena
 
 ## Use audit mode to measure impact
 
-Enable the controlled folder access in audit mode to see a record of what *would* have happened if it was fully enabled. Test how the feature will work in your organization to ensure it doesn't affect your line-of-business apps. You can also get an idea of how many suspicious file modification attempts generally occur over a certain period of time.
+Enable the controlled folder access in audit mode to see a record of what *would* have happened if it was fully enabled. Test how the feature works in your organization to ensure it doesn't affect your line-of-business apps. You can also get an idea of how many suspicious attempts to modify files generally occur over a certain period of time.
 
 To enable audit mode, use the following PowerShell cmdlet:
 
@@ -69,7 +69,7 @@ Event ID | Description
 
 ## Customize protected folders and apps
 
-During your evaluation, you may wish to add to the list of protected folders, or allow certain apps to modify files.
+During your evaluation, you might want to add to the list of protected folders, or allow certain apps to modify files.
 
 See [Protect important folders with controlled folder access](controlled-folders.md) for configuring the feature with management tools, including Group Policy, PowerShell, and MDM configuration service providers (CSPs).
 
