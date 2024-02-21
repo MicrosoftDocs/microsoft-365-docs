@@ -30,6 +30,7 @@ ms.date: 01/12/2024
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
 
 It is important to ensure that client components are up to date to deliver critical protection capabilities and prevent attacks.
