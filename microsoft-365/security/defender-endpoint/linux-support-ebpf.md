@@ -5,7 +5,7 @@ ms.service: microsoft-365-security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security

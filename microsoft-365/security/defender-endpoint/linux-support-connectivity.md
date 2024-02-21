@@ -2,15 +2,11 @@
 title: Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux
 ms.reviewer: 
 description: Learn how to troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, cloud, connectivity, communication
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
