@@ -157,6 +157,6 @@ When you choose to cancel a self-service purchase or trial subscription, users w
 
 ## Need help? Contact us
 
-For common questions about purchases and trials, see [Self-service purchases FAQ](self-service-purchase-faq.yml).
+For common questions about self-service purchases and trials, see [Self-service purchases FAQ](self-service-purchase-faq.yml).
 
-If you have questions or need help with purchases and trials, [contact support](../../admin/get-help-support.md).
+If you have questions or need help with self-service purchases and trials, [contact support](../../admin/get-help-support.md).
