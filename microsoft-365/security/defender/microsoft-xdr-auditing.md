@@ -81,8 +81,8 @@ Search-UnifiedAuditLog -StartDate 2023/03/12 -EndDate 2023/03/20 -RecordType <ID
 
 ## Additional resources
 
-- Search the audit log in the compliance center
-- Use a PowerShell script to search the audit log
-- Detailed properties in the audit log
-- Export, configure, and view audit log records
-- Office 365 Management Activity API reference
+- [Search the audit log in the compliance center](/purview/audit-new-search)
+- [Use a PowerShell script to search the audit log](/purview/audit-log-search-script)
+- [Detailed properties in the audit log](/purview/audit-log-detailed-properties)
+- [Export, configure, and view audit log records](purview/audit-log-export-records)
+- [Office 365 Management Activity API reference](office/office-365-management-api/office-365-management-activity-api-reference)
