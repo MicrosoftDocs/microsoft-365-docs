@@ -174,9 +174,22 @@ Managing how users can install and use Office add-ins means that you decide who 
 1. To manage users’ ability to self-install and use Office add-ins from the Word, Excel and PowerPoint stores, visit the Microsoft 365 Admin Center.
 2. Choose **Settings** and the select **Org Settings**.
 3. Scroll down and select **User owned apps and services**.
-4. Make changes to the checkbox **Let users access the Office Store**.
-    - Activating the checkbox turns on access to all Word, Excel and PowerPoint add-ins for all users in your organization.
-    - Deactivating the checkbox turns off access to all Word, Excel and PowerPoint add-ins for all users in your organization.
+4. Check or clear the option to allow or prevent users to access all Word, Excel, and PowerPoint add-ins.
+
+Options available in non-educational tenants:
+    
+   ![Let user access office store settings](../../media/user-owned-apps-and-services.png)
+   
+Options available in educational tenants:
+
+   ![Let user access office store settings for EDU](../../media/user-owned-apps-and-services-edu.png)
+
+The user’s license information is used to define whether a user is a faculty/staff or a student along with the Age Group property to check whether the student is an adult or not.  
+
+> [!NOTE]
+> For more information see:  
+>- [Learn how to review the user's license type and assign or unassign licenses as required](./assign-licenses-to-users?.md)
+>- [Understand how to configure the Age Group property in the Microsoft Encarta admin center](https://learn.microsoft.com/entra/fundamentals/how-to-manage-user-profile-info)
 
 > [!NOTE]
 > This setting does not impact any deployed Office add-ins on Word, Excel, and PowerPoint. You can continue to deploy Office add-ins to users in your organization, even if the above setting is turned off.
