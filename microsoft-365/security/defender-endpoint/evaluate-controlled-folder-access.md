@@ -42,7 +42,7 @@ This article helps you evaluate controlled folder access. It explains how to ena
 
 ## Use audit mode to measure impact
 
-Enable the controlled folder access in audit mode to see a record of what *would* have happened if it were fully enabled. Test how the feature works in your organization to ensure it doesn't affect your line-of-business apps. You can also get an idea of how many suspicious attempts to modify files generally occur over a certain period of time.
+Enable the controlled folder access in audit mode to see a record of what could occur if it were enabled. Test how the feature works in your organization to ensure it doesn't affect your line-of-business apps. You can also get an idea of how many suspicious attempts to modify files generally occur over a certain period of time.
 
 To enable audit mode, use the following PowerShell cmdlet:
 
@@ -78,4 +78,5 @@ See [Protect important folders with controlled folder access](controlled-folders
 - [Protect important folders with controlled folder access](controlled-folders.md)
 - [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)
 - [Use audit mode](audit-windows-defender.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
