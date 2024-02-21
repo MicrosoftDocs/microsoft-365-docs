@@ -60,4 +60,5 @@ You can deploy the mobileconfig file through [**https://endpoint.microsoft.com/*
 - [Device Control for macOS](mac-device-control-overview.md)
 - [Deploy and manage Device Control using jamf](mac-device-control-jamf.md)
 - [macOS Device Control frequently asked questions (FAQ)](mac-device-control-faq.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
