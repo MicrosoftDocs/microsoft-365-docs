@@ -2,17 +2,12 @@
 title: Evaluate Microsoft Defender for Endpoint
 ms.reviewer: 
 description: Evaluate the different security capabilities in Microsoft Defender for Endpoint.
-keywords: attack surface reduction, evaluate, next, generation, protection
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
