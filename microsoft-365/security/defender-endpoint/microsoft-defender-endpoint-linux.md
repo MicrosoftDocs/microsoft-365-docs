@@ -96,7 +96,7 @@ In general you need to take the following steps:
   - Amazon Linux 2023
   - Fedora 33 or higher
   - Rocky 8.7 and higher
-  - Alma 9.2 and higher
+  - Alma 8.4 and higher
   - Mariner 2
 
     > [!NOTE]
@@ -106,7 +106,7 @@ In general you need to take the following steps:
 
 - List of supported kernel versions
   > [!NOTE]
-  > Microsoft Defender for Endpoint on Red Hat Enterprise Linux and CentOS - 6.7 to 6.10 is a Kernel based solution. You must verify that the kernel version is supported before updating to a newer kernel version. See the list below for the list of supported kernels.
+  > Microsoft Defender for Endpoint on Red Hat Enterprise Linux and CentOS - 6.7 to 6.10 is a Kernel based solution. You must verify that the kernel version is supported before updating to a newer kernel version.
   > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version-agnostic. With a minimal requirement for the kernel version to be at or greater than 3.10.0-327.
 
   - The `fanotify` kernel option must be enabled
