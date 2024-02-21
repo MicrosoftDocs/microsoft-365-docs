@@ -6,6 +6,11 @@
          "redirect_document_id":true
       },
       {
+         "source_path":"microsoft-365/frontline/schedule-owner-for-shift-management.md",
+         "redirect_url":"/microsoft-365/frontline/shifts-frontline-manager-worker-roles",
+         "redirect_document_id":true
+      },
+      {
          "source_path":"microsoft-365/frontline/get-up-and-running.md",
          "redirect_url":"/microsoft-365/frontline/flw-team-collaboration",
          "redirect_document_id":true
