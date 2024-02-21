@@ -100,7 +100,7 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 
 1. In the Microsoft Intune admin center, navigate to **Apps** \> **App configuration policies** \> **Add** \> **Managed devices**.
 
-2. Provide name and description for the policy. In Platform choose **iOS/iPad**.
+2. Provide name and description for the policy. Under **Platform**, choose **iOS/iPad**.
 
 3. In the targeted app, choose **Microsoft Defender for Endpoint**.
 
