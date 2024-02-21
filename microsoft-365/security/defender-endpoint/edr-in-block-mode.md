@@ -3,7 +3,7 @@ title: Endpoint detection and response in block mode
 description: Learn about endpoint detection and response in block mode
 author: denisebmsft
 ms.author: deniseb
-manager: dansimp
+manager: deniseb
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: conceptual

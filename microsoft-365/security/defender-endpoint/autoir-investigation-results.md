@@ -12,7 +12,7 @@ ms.author: dansimp
 ms.service: defender-endpoint
 ms.subservice: edr
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

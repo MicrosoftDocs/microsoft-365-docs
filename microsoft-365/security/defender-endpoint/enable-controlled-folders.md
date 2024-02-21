@@ -8,7 +8,7 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
-manager: dansimp
+manager: deniseb
 ms.subservice: asr
 ms.collection: 
 - m365-security

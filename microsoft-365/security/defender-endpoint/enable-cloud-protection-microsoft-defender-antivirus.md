@@ -11,7 +11,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.date: 05/24/2023
 ms.reviewer: mkaminska
-manager: dansimp
+manager: deniseb
 ms.custom: nextgen
 ms.subservice: asr
 ms.collection: 
