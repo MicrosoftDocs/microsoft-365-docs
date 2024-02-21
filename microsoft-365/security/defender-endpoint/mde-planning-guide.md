@@ -36,7 +36,7 @@ ms.date: 01/19/2024
 
 Maximize available security capabilities and better protect your enterprise from cyber threats by deploying Microsoft Defender for Endpoint and onboarding your devices. Onboarding your devices enables you to identify and stop threats quickly, prioritize risks, and evolve your defenses across operating systems and network devices.
 
-This guide provides five steps to help deploy Defender for Endpoint as your multi-platform endpoint protection solution. It will help you choose the best deployment tool, onboard devices, and configure capabilities. Each step corresponds to a separate article.
+This guide provides five steps to help deploy Defender for Endpoint as your multi-platform endpoint protection solution. It helps you choose the best deployment tool, onboard devices, and configure capabilities. Each step corresponds to a separate article.
 
 The steps to deploy Defender for Endpoint are:
 
@@ -50,11 +50,11 @@ The steps to deploy Defender for Endpoint are:
 
 ## Requirements
 
-The following is a list of pre-requisites required to deploy Defender for Endpoint:
+Here's a list of prerequisites required to deploy Defender for Endpoint:
 
 - You're a global admin
-- You meet the [minimum requirements](minimum-requirements.md)
-- You have a full inventory of your environment. The table below provides a starting point to gather information and ensure your environment is deeply understood by stakeholders, which will help identify potential dependencies and/or changes required in technologies or processes.
+- Your environment meets the [minimum requirements](minimum-requirements.md)
+- You have a full inventory of your environment. The following table provides a starting point to gather information and ensure your environment is deeply understood by stakeholders, which helps identify potential dependencies and/or changes required in technologies or processes.
 
 |What|Description|
 |---|---|
@@ -67,4 +67,5 @@ The following is a list of pre-requisites required to deploy Defender for Endpoi
 ## Next step
 
 Start your deployment with [Step 1 - Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
