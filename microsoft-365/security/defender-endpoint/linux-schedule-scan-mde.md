@@ -27,7 +27,7 @@ ms.date: 10/22/2021
 
 To run a scan for Linux, see [Supported Commands](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
-Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.
+For Linux (and Unix), you can use a tool called **crontab** (similar to Task Scheduler in Windows) to run scheduled tasks.
 
 ## Prerequisite
 
@@ -108,7 +108,7 @@ sudo grep mdatp /var/log/cron
 sudo nano mdatp_cron_job.log
 ```
 
-## For those who use Ansible, Chef, Puppet, or SaltStack
+## If you're using Ansible, Chef, Puppet, or SaltStack
 
 Use the following commands:
 
@@ -126,7 +126,7 @@ For more information, see [Ansible documentation](https://docs.ansible.com/ansib
 cron resource
 ```
 
-For more inforamtion, see [Chef documentation](https://docs.chef.io/resources/cron).
+For more information, see [Chef documentation](https://docs.chef.io/resources/cron).
 
 ### To set cron jobs in Puppet
 
