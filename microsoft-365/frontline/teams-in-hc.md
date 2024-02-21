@@ -93,13 +93,13 @@ Use the complete meetings platform in Teams to schedule, manage, and conduct vir
 - If your organization already uses an EHR system, you can integrate Teams for a more seamless experience. Teams EHR connector makes it easy for clinicians to launch a virtual appointment with a patient or a consultation with another provider in Teams directly from the EHR system. To learn more, see [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md) and [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md).
 - If you aren't using a supported EHR system, you can use the Virtual Appointments app in Teams. To learn more, see [Virtual Appointments with Teams](virtual-appointments.md).
 
-:::image type="content" source="media/virtual-appointments-teams-healthcare.png" alt-text="Diagram showing Virtual Appointments options in Teams through integration with an EHR system and through the Virtual Appointments app.":::
+:::image type="content" source="media/virtual-appointments-teams-healthcare.png" alt-text="Diagram showing Virtual Appointments options in Teams through integration with an EHR system and through the Virtual Appointments app." lightbox="media/virtual-appointments-teams-healthcare.png:::
 
 ## Connect and engage the healthcare workforce
 
 Bring your health team together to coordinate care and collaborate with Teams.
 
-:::image type="content" source="media/teams-healthcare-collaborate-in-teams.png" alt-text="Diagram showing collaboration options for care teams in Teams.":::
+:::image type="content" source="media/teams-healthcare-collaborate-in-teams.png" alt-text="Diagram showing collaboration options for care teams in Teams." lightbox="media/teams-healthcare-collaborate-in-teams.png":::
 
 Teams enables physicians, clinicians, nurses, and other staff to collaborate efficiently with collaboration features in Teams.
 
@@ -157,7 +157,7 @@ For example, a charge nurse creates a patient list in a team that includes all h
 
 Here's an example list, which was set up for patient rounding.
 
-:::image type="content" source="media/lists-patients-example.png" alt-text="Screenshot of example list for patient rounding.":::
+:::image type="content" source="media/lists-patients-example.png" alt-text="Screenshot of example list for patient rounding." lightbox="media/lists-patients-example.png":::
 
 To learn more, see [Manage the Lists app for your organization in Teams](/microsoftteams/manage-lists-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
