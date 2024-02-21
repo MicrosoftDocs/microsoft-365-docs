@@ -3,8 +3,8 @@ title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.reviewer: kumasumit
 ms.localizationpriority: medium
 ms.date: 02/12/2024
@@ -77,7 +77,7 @@ There are multiple fixes and new changes in this release:
 </details>
 
 <details>
-	<summary> November-2023 (Build: 101.23102.0003 | Release version: 30.123102.0003.0)</summary>
+    <summary> November-2023 (Build: 101.23102.0003 | Release version: 30.123102.0003.0)</summary>
 
 ## November-2023 Build: 101.23102.0003 | Release version: 30.123102.0003.0
 
@@ -98,7 +98,7 @@ There are multiple fixes and new changes in this release:
 </details>
 
 <details>
-	<summary> November-2023 (Build: 101.23092.0012 | Release version: 30.123092.0012.0)</summary>
+    <summary> November-2023 (Build: 101.23092.0012 | Release version: 30.123092.0012.0)</summary>
 
 ## November-2023 Build: 101.23092.0012 | Release version: 30.123092.0012.0
 
@@ -132,7 +132,7 @@ There are multiple fixes and new changes in this release:
 </details>
 
 <details>
-	<summary> November-2023 (Build: 101.23082.0011 | Release version: 30.123082.0011.0)</summary>
+    <summary> November-2023 (Build: 101.23082.0011 | Release version: 30.123082.0011.0)</summary>
 
 ## November-2023 Build: 101.23082.0011 | Release version: 30.123082.0011.0
 
@@ -176,7 +176,7 @@ sudo systemctl disable mdatp
 </details>
 
 <details>
-	<summary> October-2023 (Build: 101.23082.0009 | Release version: 30.123082.0009.0)</summary>
+    <summary> October-2023 (Build: 101.23082.0009 | Release version: 30.123082.0009.0)</summary>
 
 
 
@@ -220,7 +220,7 @@ sudo systemctl disable mdatp
 </details>
 
 <details>
-	<summary> October-2023 (Build: 101.23082.0006 | Release version: 30.123082.0006.0)</summary>
+    <summary> October-2023 (Build: 101.23082.0006 | Release version: 30.123082.0006.0)</summary>
 
 
 
@@ -296,7 +296,7 @@ sudo systemctl disable mdatp
 </details>
 
 <details>
-	<summary> September-2023 (Build: 101.23072.0021 | Release version: 30.123072.0021.0)</summary>
+    <summary> September-2023 (Build: 101.23072.0021 | Release version: 30.123072.0021.0)</summary>
 
 
 
@@ -314,10 +314,10 @@ sudo systemctl disable mdatp
 **What's new**
 
 - There are multiple fixes and new changes in this release
-	- In mde_installer.sh v0.6.3, users can use the `--channel` argument to provide the channel of the configured repository during cleanup. For example, `sudo ./mde_installer --clean --channel prod`
-	- The Network Extension can now be reset by administrators using `mdatp network-protection reset`.
-	- Other performance improvements
-	- Bug Fixes
+    - In mde_installer.sh v0.6.3, users can use the `--channel` argument to provide the channel of the configured repository during cleanup. For example, `sudo ./mde_installer --clean --channel prod`
+    - The Network Extension can now be reset by administrators using `mdatp network-protection reset`.
+    - Other performance improvements
+    - Bug Fixes
 
 **Known issues**
 
@@ -345,7 +345,7 @@ sudo systemctl disable mdatp
 </details>
 
 <details>
-	<summary> July-2023 (Build: 101.23062.0010 | Release version: 30.123062.0010.0)</summary>
+    <summary> July-2023 (Build: 101.23062.0010 | Release version: 30.123062.0010.0)</summary>
 
 
 
@@ -363,12 +363,12 @@ sudo systemctl disable mdatp
 **What's new**
 
 - There are multiple fixes and new changes in this release
-	- If a proxy is set for Defender for Endpoint, then it's visible in the `mdatp health` command output
-	- With this release we provided two options in mdatp diagnostic hot-event-sources:
+    - If a proxy is set for Defender for Endpoint, then it's visible in the `mdatp health` command output
+    - With this release we provided two options in mdatp diagnostic hot-event-sources:
         1. Files
         2. Executables
-	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users are now correctly reported to Microsoft Defender XDR
-	- Improved logging in Network Protection block and audit events for debugging
+    - Network Protection: Connections that are blocked by Network Protection and have the block overridden by users are now correctly reported to Microsoft Defender XDR
+    - Improved logging in Network Protection block and audit events for debugging
 - Other fixes and improvements
     - From this version, enforcementLevel are in passive mode by default giving admins more control over where they want 'RTP on' within their estate
     - This change only applies to fresh MDE deployments, for example, servers where Defender for Endpoint is being deployed for the first time. In update scenarios, servers that have Defender for Endpoint deployed with RTP ON, continue operating with RTP ON even post update to version 101.23062.0010
@@ -403,7 +403,7 @@ sudo systemctl disable mdatp
 </details>
 
 <details>
-	<summary> July-2023 (Build: 101.23052.0009 | Release version: 30.123052.0009.0)</summary>
+    <summary> July-2023 (Build: 101.23052.0009 | Release version: 30.123052.0009.0)</summary>
 
 
 
@@ -421,10 +421,10 @@ sudo systemctl disable mdatp
 **What's new**
 
 - There are multiple fixes and new changes in this release
-  	- The build version schema is updated from this release. While the major version number remains same as 101, the minor version number now has five digits followed by four digit patch number that is, `101.xxxxx.yyy`
-  	- Improved Network Protection memory consumption under stress
- 	- Updated the engine version to `1.1.20300.5` and signature version to `1.391.2837.0`.
-	- Bug fixes.
+      - The build version schema is updated from this release. While the major version number remains same as 101, the minor version number now has five digits followed by four digit patch number that is, `101.xxxxx.yyy`
+      - Improved Network Protection memory consumption under stress
+     - Updated the engine version to `1.1.20300.5` and signature version to `1.391.2837.0`.
+    - Bug fixes.
 
 **Known issues**
 
@@ -452,7 +452,7 @@ sudo systemctl disable mdatp
 </details>
 
 <details>
-	<summary> June-2023 (Build: 101.98.89 | Release version: 30.123042.19889.0)</summary>
+    <summary> June-2023 (Build: 101.98.89 | Release version: 30.123042.19889.0)</summary>
 
 
 
@@ -470,12 +470,12 @@ sudo systemctl disable mdatp
 **What's new**
 
 - There are multiple fixes and new changes in this release 
-	- Improved Network Protection Proxy handling.
-	- In Passive mode, Defender for Endpoint no longer scans when Definition update happens.
-	- Devices continue to be protected even after Defender for Endpoint agent has expired. We recommend upgrading the Defender for Endpoint Linux agent to the latest available version to receive bug fixes, features and performance improvements.
-	- Removed semanage package dependency.
-	- Engine Update to `1.1.20100.7` and Signatures Ver: `1.385.1648.0`.
-	- Bug fixes.
+    - Improved Network Protection Proxy handling.
+    - In Passive mode, Defender for Endpoint no longer scans when Definition update happens.
+    - Devices continue to be protected even after Defender for Endpoint agent has expired. We recommend upgrading the Defender for Endpoint Linux agent to the latest available version to receive bug fixes, features and performance improvements.
+    - Removed semanage package dependency.
+    - Engine Update to `1.1.20100.7` and Signatures Ver: `1.385.1648.0`.
+    - Bug fixes.
 
 **Known issues**
 
@@ -503,7 +503,7 @@ sudo systemctl disable mdatp
 </details>
 
 <details>
-	<summary> May-2023 (Build: 101.98.64 | Release version: 30.123032.19864.0)</summary>
+    <summary> May-2023 (Build: 101.98.64 | Release version: 30.123032.19864.0)</summary>
 
 
 
@@ -521,15 +521,15 @@ sudo systemctl disable mdatp
 **What's new**
 
 - There are multiple fixes and new changes in this release 
-	- Health message improvements to capture details about auditd failures.
-	- Improvements to handle augenrules, which was causing installation failure.
-	- Periodic memory cleanup in engine process.
-	- Fix for memory issue in mdatp audisp plugin.
-	- Handled missing plugin directory path during installation.
-	- When conflicting application is using blocking fanotify, with default configuration mdatp health shows unhealthy. This is now fixed.
-	- Support for ICMP traffic inspection in BM.
-	- Engine Update to `1.1.20100.6` and Signatures Ver: `1.385.68.0`.
-	- Bug fixes.
+    - Health message improvements to capture details about auditd failures.
+    - Improvements to handle augenrules, which was causing installation failure.
+    - Periodic memory cleanup in engine process.
+    - Fix for memory issue in mdatp audisp plugin.
+    - Handled missing plugin directory path during installation.
+    - When conflicting application is using blocking fanotify, with default configuration mdatp health shows unhealthy. This is now fixed.
+    - Support for ICMP traffic inspection in BM.
+    - Engine Update to `1.1.20100.6` and Signatures Ver: `1.385.68.0`.
+    - Bug fixes.
 
 **Known issues**
 
@@ -557,7 +557,7 @@ sudo systemctl disable mdatp
 </details>
 
 <details>
-	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
+    <summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
 
 
 
@@ -575,12 +575,12 @@ sudo systemctl disable mdatp
 **What's new**
 
 - There are multiple fixes and new changes in this release 
-	- Logging and error reporting improvements for auditd.
-	- Handle failure in reload of auditd configuration.
-	- Handling for empty auditd rule files during MDE install.
-	- Engine Update to `1.1.20000.2` and Signatures Ver: `1.381.3067.0`.
-	- Addressed a health issue in mdatp that occurs due to selinux denials.
-	- Bug fixes.
+    - Logging and error reporting improvements for auditd.
+    - Handle failure in reload of auditd configuration.
+    - Handling for empty auditd rule files during MDE install.
+    - Engine Update to `1.1.20000.2` and Signatures Ver: `1.381.3067.0`.
+    - Addressed a health issue in mdatp that occurs due to selinux denials.
+    - Bug fixes.
 
 **Known issues**
 
@@ -596,7 +596,7 @@ augenrules --load
 There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
-	
+    
 Example:
 ```bash
 sudo apt purge mdatp
@@ -614,7 +614,7 @@ sudo systemctl disable mdatp
 </details>
 
 <details>
-	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
+    <summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
 
 
 
@@ -630,7 +630,7 @@ sudo systemctl disable mdatp
 &ensp;Signature version: **1.379.1299.0**<br/>
 **What's new**
 - This new release is build over March 2023 release (`101.98.05``) with a fix for Live response commands failing for one of our customers. There's no change for other customers and upgrade is optional. 
-	
+    
 **Known issues**
 
 - With mdatp version 101.98.30 you might see a health false issue in some of the cases, because SELinux rules aren't defined for certain scenarios. The health warning could look something like this:
@@ -661,7 +661,7 @@ In case the issue reappears with some different denials. We need to run the miti
 </details>
 
 <details>
-	<summary> March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
+    <summary> March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
 
 ## March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)
 
@@ -690,7 +690,7 @@ There are multiple fixes and new changes in this release.
    - `2.6.32-754.43.1.el6.x86_64`
    - `2.6.32-754.49.1.el6.x86_64`
 - Other fixes
-	
+    
 **Known issues**
 
 - While upgrading mdatp to version 101.94.13, you might notice that health is false, with health_issues as "no active supplementary event provider". This can happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Make sure to back up following file: `/etc/audit/rules.d/audit.rules`` as these steps are only to identify failures.
