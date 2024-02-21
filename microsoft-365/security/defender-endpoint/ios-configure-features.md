@@ -108,7 +108,7 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 
 5. Add 'DefenderNetworkProtectionEnable' as the configuration key, value type as 'String' and value as 'true' to enable Network Protection. (Network protection is disabled by default.)
 
-   :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Screenshot that shows the add mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
+   :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Screenshot that shows the mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
 
 6. For other configurations related to Network protection, add the following keys, choose the corresponding value type and value.
 
@@ -125,7 +125,7 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 
 ### For unenrolled devices (MAM)
 
-Follow the below steps for setting up MAM config for unenrolled devices for Network protection (Authenticator device registration is required for MAM configuration) in iOS devices. Network Protection initialization will require the end user to open the app once.
+Follow the below steps for setting up MAM config for unenrolled devices for Network protection (Authenticator device registration is required for MAM configuration) in iOS devices. Network Protection initialization requires the end user to open the app once.
 
 1. In the Microsoft Intune admin center, navigate to **Apps** \> **App configuration policies** \> **Add** \> **Managed apps** \> **Create a new App configuration policy**.
 
@@ -143,7 +143,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
     |Key| Default (true - enable, false - disable)|Description|
     |---|---|---|
-    |`DefenderOpenNetworkDetection`|0| 1 - Audit, 0 - Disable (default), 2 - Enable. This setting is managed by an IT admin to enable, audit, or disable open network detection. In Audit mode, alerts is sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
+    |`DefenderOpenNetworkDetection`|0| 1 - Audit, 0 - Disable (default), 2 - Enable. This setting is managed by an IT admin to enable, audit, or disable open network detection. In Audit mode, alerts are sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
     |`DefenderEndUserTrustFlowEnable`| false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks.|
     |`DefenderNetworkProtectionAutoRemediation`| true |true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender.|
     |`DefenderNetworkProtectionPrivacy`| true |true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection.|
@@ -154,9 +154,9 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
 6. Review and create the configuration policy.
 
-## Co-existence of multiple VPN profiles
+## Coexistence of multiple VPN profiles
 
-Apple iOS does not support multiple device-wide VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time.
+Apple iOS doesn't support multiple device-wide VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time.
 
 ## Configure Microsoft Defender for Endpoint risk signal in app protection policy (MAM)
 
@@ -164,19 +164,19 @@ Microsoft Defender for Endpoint on iOS enables the App Protection Policy scenari
 
 Microsoft Defender for Endpoint can be configured to send threat signals to be used in App Protection Policies (APP, also known as MAM) on iOS/iPadOS. With this capability, you can use Microsoft Defender for Endpoint to protect access to corporate data from unenrolled devices as well.
 
-Follow the steps in the link below to set up app protection policies with Microsoft Defender for Endpoint [Configure Defender risk signals in app protection policy (MAM)](ios-install-unmanaged.md)
+Follow the steps in the following link to set up app protection policies with Microsoft Defender for Endpoint [Configure Defender risk signals in app protection policy (MAM)](ios-install-unmanaged.md)
 
 For more details on MAM or app protection policy, see [iOS app protection policy settings](/mem/intune/apps/app-protection-policy-settings-ios).
 
 ## Privacy Controls
 
-Microsoft Defender for Endpoint on iOS enables Privacy Controls for both the Admins and the End Users. This includes the controls for enrolled (MDM) as well as unenrolled (MAM) devices.
+Microsoft Defender for Endpoint on iOS enables Privacy Controls for both the Admins and the End Users. This includes the controls for enrolled (MDM) and unenrolled (MAM) devices.
 
 For Customers with MDM, admins can configure the Privacy Controls through Managed devices in the App Config. For Customers without enrollment, using MAM, admins can configure the Privacy Controls through Managed apps in the App Config. End Users will also have the ability to configure the Privacy Settings from the Defender App settings.
 
 ### Configure privacy in phish alert report
 
-Customers can now enable privacy control for the phish report sent by Microsoft Defender for Endpoint on iOS. This will ensure that the domain name is not sent as part of the phish alert whenever a phish website is detected and blocked by Microsoft Defender for Endpoint.
+Customers can now enable privacy control for the phish report sent by Microsoft Defender for Endpoint on iOS so that the domain name is not included as part of a phish alert whenever a phish website is detected and blocked by Microsoft Defender for Endpoint.
 
 1. **Admin Privacy Controls (MDM)** Use the following steps to enable privacy and not collect the domain name as part of the phish alert report for enrolled devices.
 
