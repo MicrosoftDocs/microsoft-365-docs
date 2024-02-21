@@ -1,13 +1,9 @@
 ---
 title: Privacy for Microsoft Defender for Endpoint on Linux
 description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data that is collected in Microsoft Defender for Endpoint on Linux.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, privacy, diagnostic
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

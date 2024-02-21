@@ -3,8 +3,8 @@ title: Deploy Microsoft Defender for Endpoint on Linux manually
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 12/01/2023
+ms.date: 02/21/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually

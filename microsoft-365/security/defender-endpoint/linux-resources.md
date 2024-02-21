@@ -2,10 +2,9 @@
 title: Microsoft Defender for Endpoint on Linux resources
 ms.reviewer:
 description: Describes resources for Microsoft Defender for Endpoint on Linux, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

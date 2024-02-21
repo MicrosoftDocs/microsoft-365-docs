@@ -1,14 +1,10 @@
 ---
 title: Deploy Microsoft Defender for Endpoint on Linux with SaltStack
-ms.reviewer:
+ms.reviewer: dmcwee
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Saltstack.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, saltstack, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dmcwee
-author: dmcwee
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

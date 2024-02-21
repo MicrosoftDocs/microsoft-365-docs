@@ -3,8 +3,8 @@ title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/07/2023
 manager: deniseb
@@ -701,7 +701,7 @@ The following configuration profile contains entries for all settings described 
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
       "scanHistoryMaximumItems": 10000,
-	  "scanResultsRetentionDays": 90,
+      "scanResultsRetentionDays": 90,
       "maximumOnDemandScanThreads":2,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
