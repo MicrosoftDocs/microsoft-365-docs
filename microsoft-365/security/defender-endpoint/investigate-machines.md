@@ -165,7 +165,7 @@ The **Software inventory** tab lets you view software on the device, along with 
 
 ### Discovered vulnerabilities
 
-The **Discovered vulnerabilities** tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. Selecting a specific vulnerability shows a description and details.
+The **Discovered vulnerabilities** tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. If you select a specific vulnerability, you see a description and details.
 
 :::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="The Discovered vulnerabilities tab" lightbox="images/discovered-vulnerabilities-device.png":::
 
