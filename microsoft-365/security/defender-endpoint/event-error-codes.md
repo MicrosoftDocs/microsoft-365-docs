@@ -146,15 +146,15 @@ See the following table for a list of events recorded by the service.
    |110  |Failed to remove MDEContain WFP filters.   | Occurs during offboarding.   | Contact support.  |
    |307| Failed to update driver permissions Failure code: %1. |Occurs during onboarding.    |Contact support.   |
    |308 | Failed to ACL on Folder %1 Failure code: %2.  |Occurs during onboarding.    | Contact support.  |
-   |401  | Microsoft Defender for Endpoint service failed to generate key. Failure code: %1.  | Failed to create crypto key.|If machine is not reporting, contact support. Otherwise, no action required.   |
-   |402 |Microsoft Defender for Endpointservice failed to persist authentication state. Failure code: %1.| Failed to persist authentication state.   | If machine is not reporting, contact support. Otherwise, no action required.  |
+   |401  | Microsoft Defender for Endpoint service failed to generate key. Failure code: %1.  | Failed to create crypto key.|If machine isn't reporting, contact support. Otherwise, no action required.   |
+   |402 |Microsoft Defender for Endpoint service failed to persist authentication state. Failure code: %1.| Failed to persist authentication state.   | If a device isn't reporting, contact support. Otherwise, no action required.  |
    |403|Registration of Microsoft Defender for Endpoint service completed.|Successful registration to authentication service.|Normal operating notification; no action required.|
    |404  |Microsoft Defender for Endpoint service successfully generated a key.  |Successful crypto key generation.  |Normal operating notification; no action required.|
    |405|Failed to communicate with authentication service. %1 request failed, hresult: %2,  HTTP error code: %3. |Failed to send request to authentication service.|Normal operating notification; no action required.|
    |406|Request for %1 rejected by authentication service. Hresult: %2, error code: %3.    | Request returned undesired response.  |Normal operating notification; no action required. |
    |407|Microsoft Defender for Endpoint service failed to sign message (authentication). Failure code: %1.  |Failed to sign request.    |Normal operating notification; no action required.   |
-   |408|Microsoft Defender for Endpoint service failed to remove persist authentication state. State: %1, Failure code: %2.   |Failed to persist authentication state. |If machine is not reporting, contact support. Otherwise, no action required.|
-   |409| Microsoft Defender for Endpoint service failed to open key. Failure code: %1.  |Failed to open crypto key.|If machine is not reporting, contact support. Otherwise, no action required.|
+   |408|Microsoft Defender for Endpoint service failed to remove persist authentication state. State: %1, Failure code: %2.   |Failed to persist authentication state. |If a device isn't reporting, contact support. Otherwise, no action required.|
+   |409| Microsoft Defender for Endpoint service failed to open key. Failure code: %1.  |Failed to open crypto key.|If a device isn't reporting, contact support. Otherwise, no action required.|
    |410|Registration is required as part of re-onboarding of Microsoft Defender for Endpoint service.   |Occurs during reonboarding. |Normal operating notification; no action required.|
    |411|Cyber telemetry upload has been suspended for Microsoft Defender for Endpoint service due to invalid/expired token.|Cyber upload temporarily suspended.|Normal operating notification; no action required.|
    |412|Cyber telemetry upload been resumed for Microsoft Defender for Endpoint service due to newly refreshed token.|Cyber upload successfully resumed.|Normal operating notification; no action required.|
