@@ -50,7 +50,7 @@ To have your company listed as a partner in the in-product partner page, provide
 - A 15-word product description
 - A link to the landing page for the customer to complete the integration or blog post that includes sufficient information for customers. Any press release including the Microsoft Defender for Endpoint product name should be reviewed by the marketing and engineering teams. Wait for at least 10 days for the review process to be done.
 - If you use a multi-tenant Microsoft Entra ID approach, we need the Microsoft Entra application name to track usage of the application.
-- The User-Agent field in each API call made to Microsoft Defender for Endpoint public set of APIs or Graph Security APIs. This is used for statistical purposes, troubleshooting, and partner recognition. In addition, this step is a requirement for membership in Microsoft Intelligent Security Association (MISA).
+- The User-Agent field in each API call to the Defender for Endpoint public set of APIs or Graph Security APIs. This is used for statistical purposes, troubleshooting, and partner recognition. In addition, this step is a requirement for membership in Microsoft Intelligent Security Association (MISA).
 
    Follow these steps:
 
