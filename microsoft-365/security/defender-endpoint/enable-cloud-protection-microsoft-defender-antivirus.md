@@ -1,14 +1,11 @@
 ---
 title: Turn on cloud protection in Microsoft Defender Antivirus
 description: Turn on cloud protection to benefit from fast and advanced protection features.
-keywords: Microsoft Defender Antivirus, antimalware, security, cloud, block at first sight
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
-ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+ms.topic: how-to
+author: siosulli
+ms.author: siosulli
 ms.date: 05/24/2023
 ms.reviewer: mkaminska
 manager: deniseb
