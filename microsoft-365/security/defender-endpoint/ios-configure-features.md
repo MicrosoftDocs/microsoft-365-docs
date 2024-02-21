@@ -102,7 +102,7 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 
 2. Provide name and description for the policy. In Platform choose **iOS/iPad**.
 
-3. In targeted app choose **Microsoft Defender for Endpoint**.
+3. In the targeted app, choose **Microsoft Defender for Endpoint**.
 
 4. In the Settings page, choose configuration settings format **Use configuration designer**.
 
