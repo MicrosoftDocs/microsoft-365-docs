@@ -106,8 +106,8 @@ The user’s license information is used to define whether a user is a faculty/s
 
 > [!NOTE]
 > For more information see:  
->- [Learn how to review the user's license type and assign or unassign licenses as required](./assign-licenses-to-users?.md)
->- [Understand how to configure the Age Group property in the Microsoft Encarta admin center](https://learn.microsoft.com/entra/fundamentals/how-to-manage-user-profile-info)
+>- [Learn how to review the user's license type and assign or unassign licenses as required](assign-licenses-to-users.md)
+>- [Understand how to configure the Age Group property in the Microsoft Encarta admin center](/entra/fundamentals/how-to-manage-user-profile-info)
 
 This will control all users' ability to acquire the following add-ins from the store.
 

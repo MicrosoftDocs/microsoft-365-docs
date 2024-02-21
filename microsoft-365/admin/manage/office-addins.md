@@ -188,8 +188,8 @@ The user’s license information is used to define whether a user is a faculty/s
 
 > [!NOTE]
 > For more information see:  
->- [Learn how to review the user's license type and assign or unassign licenses as required](./assign-licenses-to-users?.md)
->- [Understand how to configure the Age Group property in the Microsoft Encarta admin center](https://learn.microsoft.com/entra/fundamentals/how-to-manage-user-profile-info)
+>- [Learn how to review the user's license type and assign or unassign licenses as required](assign-licenses-to-users?.md)
+>- [Understand how to configure the Age Group property in the Microsoft Encarta admin center](/entra/fundamentals/how-to-manage-user-profile-info)
 
 > [!NOTE]
 > This setting does not impact any deployed Office add-ins on Word, Excel, and PowerPoint. You can continue to deploy Office add-ins to users in your organization, even if the above setting is turned off.
