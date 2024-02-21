@@ -30,7 +30,7 @@ ms.date: 12/18/2020
 
 The **Device inventory** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.
 
-At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
+At a glance you see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
 > [!NOTE]
 > The device inventory is available in different Microsoft Defender XDR services. The information available to you will differ depending on your license. You'll get the most complete set of capabilities when using [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
@@ -60,7 +60,7 @@ You can apply the following filters to limit the list of alerts and get a more f
 
 During the Microsoft Defender for Endpoint onboarding process, devices onboarded to MDE are gradually populated into the device inventory as they begin to report sensor data. Following this, the device inventory is populated by devices that are discovered in your network through the device discovery process. The device inventory has three tabs that list devices by:
 
-- **Computers and Mobile**: Enterprise endpoints (workstations, servers and mobile devices)
+- **Computers and Mobile**: Enterprise endpoints (workstations, servers, and mobile devices)
 - **Network devices**: Devices like routers and switches
 - **IoT devices**: Devices like printers and cameras
 
@@ -70,13 +70,13 @@ Access the device inventory page by selecting **Devices** from the **Assets** na
 
 ## Device inventory overview
 
-The device inventory opens on the **Computers and Mobile** tab. At a glance you'll see information such as device name, domain, risk level, exposure level, OS platform, onboarding status, sensor health state, and other details for easy identification of devices most at risk.
+The device inventory opens on the **Computers and Mobile** tab. At a glance you see information such as device name, domain, risk level, exposure level, OS platform, onboarding status, sensor health state, and other details for easy identification of devices most at risk.
 
-Use the **Onboarding Status** column to sort and filter by discovered devices, and those already onboarded to Microsoft Defender for Endpoint.
+Use the **Onboarding Status** column to sort and filter by discovered devices, and devices that are already onboarded to Microsoft Defender for Endpoint.
 
 :::image type="content" alt-text="Image of devices list with list of devices." source="images/device-inventory.png" lightbox="images/device-inventory.png":::
 
-From the **Network devices** and **IoT devices** tabs, you'll also see information such as vendor, model and device type:
+From the **Network devices** and **IoT devices** tabs, you'll also see information such as vendor, model, and device type:
 
 :::image type="content" alt-text="Image of network devices list." source="images/device-inventory-networkdevices.png" lightbox="images/device-inventory-networkdevices.png":::
 
@@ -85,7 +85,7 @@ From the **Network devices** and **IoT devices** tabs, you'll also see informati
 >
 > When Defender for IoT is configured, you also can view the devices there. See [Manage your IoT devices with the device inventory for organizations](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
 
-At the top of each device inventory tab, you can see the total number of devices, the number of devices that are not yet onboarded, and the number of devices that have been identified as a higher risk to your organization. You can use this information to help you prioritize devices for security posture improvements.
+At the top of each device inventory tab, you can see the total number of devices, the number of devices that aren't yet onboarded, and the number of devices that are identified as a higher risk to your organization. You can use this information to help you prioritize devices for security posture improvements.
 
 The **Newly discovered** device count for network devices and IoT devices tabs, shows the number of new devices discovered, in the last 7 days, listed in the current view.
 
