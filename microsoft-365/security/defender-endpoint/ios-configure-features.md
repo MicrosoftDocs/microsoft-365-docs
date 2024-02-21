@@ -270,23 +270,23 @@ To protect corporate data from being accessed on jailbroken iOS devices, we reco
 
 Follow the steps below to create a compliance policy against jailbroken devices.
 
-1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** \> **Compliance policies** \> **Create Policy**. Select "iOS/iPadOS" as platform and click **Create**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** \> **Compliance policies** \> **Create Policy**. Select "iOS/iPadOS" as platform and select **Create**.
 
    :::image type="content" source="images/ios-jb-policy.png" alt-text="The Create Policy tab" lightbox="images/ios-jb-policy.png":::
 
-1. Specify a name of the policy, for example "Compliance Policy for Jailbreak".
+2. Specify a name of the policy, such as *Compliance Policy for Jailbreak*.
 
-1. In the compliance settings page, click to expand **Device Health** section and click **Block** for **Jailbroken devices** field.
+3. In the compliance settings page, select to expand **Device Health** section and select **Block** for **Jailbroken devices** field.
 
    :::image type="content" source="images/ios-jb-settings.png" alt-text="The Compliance settings tab" lightbox="images/ios-jb-settings.png":::
 
-1. In the **Actions for noncompliance** section, select the actions as per your requirements and select **Next**.
+4. In the **Actions for noncompliance** section, select the actions as per your requirements and select **Next**.
 
    :::image type="content" source="images/ios-jb-actions.png" alt-text="The Actions for noncompliance tab" lightbox="images/ios-jb-actions.png":::
 
-1. In the **Assignments** section, select the user groups that you want to include for this policy and then select **Next**.
+5. In the **Assignments** section, select the user groups that you want to include for this policy and then select **Next**.
 
-1. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
+6. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
 
 ## Configure custom indicators
 
