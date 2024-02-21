@@ -3,12 +3,12 @@ title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
-ms.date: 08/22/2023
+ms.date: 02/02/2024
 ms.reviewer: pahuijbr
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 ms.topic: conceptual
 ms.collection: 
@@ -58,7 +58,7 @@ On at least two devices that are experiencing the same issue, obtain the `.cab` 
     mpcmdrun.exe -GetFiles
     ```
 
-4. A `.cab` file is generated that contains various diagnostic logs. The location of the file is specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
+4. A `.cab` file is generated that contains various diagnostic logs. The location of the file is specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.
 
    > [!NOTE]
    > To redirect the cab file to a different path or UNC share, use the following command:

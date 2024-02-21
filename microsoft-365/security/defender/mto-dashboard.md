@@ -1,6 +1,6 @@
 ---
-title: Vulnerability management in multi-tenant management
-description: Learn about the capabilities of the vulnerability management dashboard in multi-tenant management in Microsoft Defender XDR
+title: Vulnerability management in multitenant management
+description: Learn about the capabilities of the vulnerability management dashboard in multitenant management in Microsoft Defender XDR
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: siosulli
@@ -21,8 +21,6 @@ ms.date: 09/01/2023
 **Applies to:**
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Microsoft Defender Vulnerability Management dashboard
 
