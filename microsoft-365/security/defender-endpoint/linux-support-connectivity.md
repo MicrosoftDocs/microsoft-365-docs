@@ -38,7 +38,7 @@ To test if Defender for Endpoint on Linux can communicate to the cloud with the 
 mdatp connectivity test
 ```
 
-expected output:
+Expected output:
 
 ```output
 Testing connection with https://cdn.x.cp.wd.microsoft.com/ping ... [OK]
@@ -59,7 +59,7 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 
 If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-endpoint-linux.md#network-connections) are blocked by a proxy or firewall.
 
-Failures with curl error 35 or 60, indicate certificate pinning rejection. Please check if the connection is under SSL or HTTPS inspection. If so, add Microsoft Defender for Endpoint to the allow list.
+Failures with curl error 35 or 60, indicate certificate pinning rejection. Check to see if the connection is under SSL or HTTPS inspection. If so, add Microsoft Defender for Endpoint to the allow list.
 
 ## Troubleshooting steps for environments without proxy or with transparent proxy
 
