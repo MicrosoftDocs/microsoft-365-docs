@@ -35,7 +35,7 @@ This article describes how to deploy Defender for Endpoint on Linux using Saltst
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Create Saltstack state files](#create-saltstack-state-files)
 - [Deployment](#deployment)
-- [References](#references)
+- [Reference](#reference)
 
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
 
