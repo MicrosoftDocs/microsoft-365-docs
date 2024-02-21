@@ -33,7 +33,7 @@ sections:
   - name: Ignored
     questions:
       - question: |
-          What's required for tamper protection to reach devices when it's enabled in the Microsoft Defender portal?
+          What are the device requirements for tamper protection to reach devices when tamper protection is enabled in the Microsoft Defender portal?
         answer: |
           Devices must meet all of the following requirements:
 
