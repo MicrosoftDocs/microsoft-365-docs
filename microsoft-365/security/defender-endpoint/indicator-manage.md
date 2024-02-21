@@ -35,7 +35,7 @@ ms.date: 12/18/2020
 
 2. Select the tab of the entity type you'd like to manage.
 
-3. Update the details of the indicator and click **Save** or click the **Delete** button if you'd like to remove the entity from the list.
+3. Update the details of the indicator and select **Save** or select the **Delete** button if you'd like to remove the entity from the list.
 
 ## Import a list of IoCs
 
@@ -49,7 +49,7 @@ Download the sample CSV to know the supported column attributes.
 
 3. Select **Import** \> **Choose file**.
 
-4. Select **Import**. Do this for all the files you'd like to import.
+4. Select **Import**. Repeat for all the files you'd like to import.
 
 5. Select **Done**.
 
