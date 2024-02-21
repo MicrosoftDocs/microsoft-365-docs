@@ -8,8 +8,8 @@ ms.localizationpriority: medium
 ms.date: 10/24/2023
 audience: ITPro
 ms.topic: how-to
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
