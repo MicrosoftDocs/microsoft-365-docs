@@ -53,7 +53,9 @@ You can use advanced hunting KQL queries to hunt through Microsoft Defender XDR 
 
 When you open the advanced hunting page for the first time after connecting a workspace, you can find your Sentinel tables organized by solution after the Microsoft Defender XDR tables under the **Schema** tab.
 
-advanced-hunting-unified-sentinel-data.png
+
+:::image type="content" source="../../media/advanced-hunting-unified-sentinel-data.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-sentinel-data.png":::
+
 
 Likewise, you can find the functions from Sentinel in the **Functions** tab, and your shared and sample queries from Sentinel can be found in the **Queries** tab inside folders marked **Sentinel**.
 
@@ -67,7 +69,7 @@ In the unified portal, in addition to viewing the schema column names and descri
 - **Data retention period** – how long the data is set to be kept
 - **Tags** – available for Sentinel data tables
 
-advanced-hunting-unified-view-schema.png
+:::image type="content" source="../../media/advanced-hunting-unified-view-schema.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-view-schema.png":::
 
 ### Use functions
 
@@ -88,8 +90,8 @@ To use a saved query from Sentinel, go to the **Queries** tab and scroll until y
 - Open in query editor – loads the query in the query editor
 - View details – opens the query details side pane where you can inspect the query, run the query, or open the query in the editor
 
+:::image type="content" source="../../media/advanced-hunting-unified-view-details.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-view-details.png":::
 
-advanced-hunting-unified-view-details.png
 
 For editable queries, additional options are available when you select  the stacked dots:
 
@@ -103,7 +105,7 @@ To help discover threats and anomalous behaviors in your environment, you can cr
 
 For analytics rules that apply to data ingested through the connected Sentinel workspace, select **Manage rules > Create analytics rule**. 
 
-advanced-hunting-unified-rules.png
+:::image type="content" source="../../media/advanced-hunting-unified-rules.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-rules.png":::
 
 The **Analytics rule wizard** appears. Fill up the required details as described in [Analytics rule wizard—General tab](https://learn.microsoft.com/azure/sentinel/detect-threats-custom#analytics-rule-wizardgeneral-tab).
 
@@ -113,7 +115,7 @@ For custom detection rules that apply to Microsoft Defender XDR data, select **M
 
 Results of queries that you have run appear in the **Results** tab. You can export the results to a CSV file by selecting **Export**. 
 
-advanced-hunting-unified-results.png
+:::image type="content" source="../../media/advanced-hunting-unified-results.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-results.png":::
 
 You can also explore the results in-line with the following features:
 
