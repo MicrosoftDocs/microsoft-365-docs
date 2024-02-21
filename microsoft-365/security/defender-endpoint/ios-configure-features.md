@@ -176,7 +176,7 @@ For Customers with MDM, admins can configure the Privacy Controls through Manage
 
 ### Configure privacy in phish alert report
 
-Customers can now enable privacy control for the phish report sent by Microsoft Defender for Endpoint on iOS so that the domain name is not included as part of a phish alert whenever a phish website is detected and blocked by Microsoft Defender for Endpoint.
+Customers can now enable privacy control for the phish report sent by Microsoft Defender for Endpoint on iOS so that the domain name isn't included as part of a phish alert whenever a phish website is detected and blocked by Microsoft Defender for Endpoint.
 
 1. **Admin Privacy Controls (MDM)** Use the following steps to enable privacy and not collect the domain name as part of the phish alert report for enrolled devices.
 
@@ -189,7 +189,7 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
    4. On the Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Boolean**.
 
       - To enable privacy and not collect the domain name, enter the value as `true` and assign this policy to users. By default, this value is set to `false`.
-      - For users with key set as `true`, the phish alert will not contain the domain name information whenever a malicious site is detected and blocked by Defender for Endpoint.
+      - For users with key set as `true`, the phish alert doesn't contain the domain name information whenever a malicious site is detected and blocked by Defender for Endpoint.
 
    5. Select **Next** and assign this profile to targeted devices/users.
 
