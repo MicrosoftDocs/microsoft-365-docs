@@ -6,8 +6,8 @@ ms.subservice: ngp
 ms.localizationpriority: medium
 ms.date: 12/12/2023
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: deniseb
