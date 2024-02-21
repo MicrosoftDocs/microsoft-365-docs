@@ -70,7 +70,7 @@ Microsoft 365 services are not deployed to all Microsoft data centers globally. 
 
 Over time, a particular service may deploy their software to additional _Geographies_, so the provisioning locations for new customers can change over time.  This doesn't necessarily cause customer data to move to a new _Geography_.
 
-In order to understand where your data, for a given service is stored, your primary tool for understanding this is in the _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Currently the data location is available for Exchange Online, SharePoint Online, OneDrive, Microsoft Teams, Microsoft Copilot for Microsoft 365, Exchange Online Protection, Viva Connections and Viva Topics.  In addition to this resource, see the [Data Maps page](o365-data-locations.md).
+You can use the Microsoft 365 admin center to understand where your data for a given service is stored. As a _Tenant_ administrator you can find the actual data location by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Currently the data location is available for Exchange Online, SharePoint Online, OneDrive, Microsoft Teams, Microsoft Copilot for Microsoft 365, Exchange Online Protection, Viva Connections and Viva Topics.  In addition to this resource, see the [Data Maps page](o365-data-locations.md).
 
 Some examples:
 
