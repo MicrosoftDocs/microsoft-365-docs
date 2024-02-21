@@ -1,13 +1,9 @@
 ---
 title: Troubleshoot system extension issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -67,13 +63,13 @@ mdatp health
 The output on running **mdatp health** is:
 
 ```Output
-healthy				            : false
-health_issues		            : ["no active event provider", "network event provider not running", "full disk access has not been granted"]
+healthy                            : false
+health_issues                    : ["no active event provider", "network event provider not running", "full disk access has not been granted"]
 ...
-real_time_protection_enabled	: unavailable
+real_time_protection_enabled    : unavailable
 real_time_protection_available: unavailable
 ...
-full_disk_access_enabled		: false
+full_disk_access_enabled        : false
 ```
 The output report displayed on running **mdatp health** is shown in the following screenshot:
 
@@ -105,9 +101,9 @@ You'll get the following output:
 
 ```OutputCopy
 network_extension_enabled                 : false
-network_extension_installed		         : true
-endpoint_security_extension_ready		   : false
-endpoint_security_extension_installed 	   : true
+network_extension_installed                 : true
+endpoint_security_extension_ready           : false
+endpoint_security_extension_installed        : true
 ```
 
 This output is shown in the following screenshot:
