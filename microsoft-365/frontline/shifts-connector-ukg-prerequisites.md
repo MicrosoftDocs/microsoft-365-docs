@@ -111,7 +111,7 @@ Configure the connector's redirection URL. This allows UKG Pro WFM to redirect t
 Create at least one team in Teams, and add the following people and account to it:
 
 - Frontline workers as team members.
-- Frontline managers as team owners and/or schedule owners. To learn more about schedule owners, see [Schedule Owner for shift management](schedule-owner-for-shift-management.md).
+- Frontline managers as team owners and/or schedule owners. To learn more about team owners and schedule owners in Shifts, see [Use roles to define your frontline managers and workers in Shifts](shifts-frontline-manager-worker-roles.md).
 
     > [!NOTE]
     > When adding people to your teams, make sure you do the following:
