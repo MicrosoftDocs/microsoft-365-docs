@@ -2,16 +2,11 @@
 title: Experts on Demand
 ms.reviewer:
 description: You can partner with Microsoft Defender Experts who can be engaged directly from within the Microsoft Defender portal for their response
-keywords: Ask Defender Experts, experts on demand, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Endpoint Attack Notification
-search.product: Windows 10
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
-manager: deniseb
+manager: dolmont
 audience: ITPro
 ms.collection:
   - m365-security-compliance

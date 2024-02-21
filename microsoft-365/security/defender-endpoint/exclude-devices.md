@@ -1,11 +1,7 @@
 ---
 title: Exclude devices in Microsoft Defender for Endpoint
 description: Exclude devices from the device inventory list
-keywords: exclude
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium

@@ -1,15 +1,12 @@
 ---
 title: Evaluate network protection
 description: See how network protection works by testing common scenarios that it protects against.
-keywords: Network protection, exploits, malicious website, ip, domain, domains, evaluate, test, demo
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
-author: dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.reviewer: 
 manager: deniseb
 ms.subservice: asr
