@@ -58,11 +58,11 @@ You can also use Group Policy, Intune, mobile device management (MDM), or Micros
 
 The following controlled folder access events appear in Windows Event Viewer under Microsoft/Windows/Windows Defender/Operational folder.
 
-Event ID | Description
--|-
- 5007 | Event when settings are changed
- 1124 | Audited controlled folder access event
- 1123 | Blocked controlled folder access event
+| Event ID | Description |
+| --|--|
+| 5007 | Event when settings are changed |
+| 1124 | Audited controlled folder access event |
+| 1123 | Blocked controlled folder access event |
 
 > [!TIP]
 > You can configure a [Windows Event Forwarding subscription](/windows/win32/wec/setting-up-a-source-initiated-subscription) to collect the logs centrally. 
