@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 05/31/2023
+ms.date: 02/21/2024
 ---
 
 # Automatic attack disruption in Microsoft Defender XDR
@@ -30,6 +30,7 @@ ms.date: 05/31/2023
 **Applies to:**
 
 - Microsoft Defender XDR
+- Microsoft Sentinel
 
 Microsoft Defender XDR correlates millions of individual signals to identify active ransomware campaigns or other sophisticated attacks in the environment with high confidence. While an attack is in progress, Defender XDR disrupts the attack by automatically containing compromised assets that the attacker is using through automatic attack disruption.
 
@@ -65,10 +66,19 @@ Investigations are integral to monitoring our signals and the attack threat land
 Automatic attack disruption uses Microsoft-based XDR response actions. Examples of these actions are:
 
 - [Device contain](/microsoft-365/security/defender-endpoint/respond-machine-alerts#contain-devices-from-the-network) - based on Microsoft Defender for Endpoint's capability, this action is an automatic containment of a suspicious device to block any incoming/outgoing communication with the said device.
+
 - [Disable user](/defender-for-identity/remediation-actions) - based on Microsoft Defender for Identity's capability, this action is an automatic suspension of a compromised account to prevent additional damage like lateral movement, malicious mailbox use, or malware execution.
+
+    
 - [Contain user](../defender-endpoint/respond-machine-alerts.md#contain-user-from-the-network) - This response action automatically contains suspicious identities temporarily to help block any lateral movement and remote encryption related to incoming communication with Defender for Endpoint's onboarded devices.
 
 For more information, see [remediation actions](m365d-remediation-actions.md) in Microsoft Defender XDR.
+
+### Automated response actions for SAP with Microsoft Sentinel (Preview)
+
+If you configured the integration between the Microsoft Defender portal and Microsoft Sentinel, and also deployed the Microsoft Sentinel solution for SAP applications, you can also deploy automatic attack disruption for SAP. Supported actions includes automatically locking suspicious SAP users. 
+
+For more information, see [Deploy automatic attack disruption for SAP with Microsoft Sentinel](/azure/sentinel/sap/deployment-attack-disrupt).
 
 ## Identify when an attack disruption happens in your environment
 
