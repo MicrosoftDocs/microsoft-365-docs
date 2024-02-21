@@ -28,7 +28,7 @@ ms.date: 04/07/2021
 
 Before you begin: Install unzip if it's not already installed.
 
-The Chef components are already installed and a Chef repository exists (chef generate repo \<reponame\>) to store the cookbook that will be used to deploy to Defender for Endpoint on Chef managed Linux servers.
+The Chef components are already installed and a Chef repository exists (chef generate repo \<reponame\>) to store the cookbook that's used to deploy to Defender for Endpoint on Chef managed Linux servers.
 
 You can create a new cookbook in your existing repository by running the following command from inside the cookbooks folder that is in your chef repository:
 
