@@ -1,15 +1,11 @@
 ---
 title: Configure Microsoft Defender for Endpoint on iOS features
 description: Describes how to deploy Microsoft Defender for Endpoint on iOS features.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, configure, features, ios
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
