@@ -105,8 +105,8 @@ In general you need to take the following steps:
 
 - List of supported kernel versions
   > [!NOTE]
-  > Microsoft Defender for Endpoint on Red Hat Enterprise Linux and CentOS - 6.7 to 6.10 is a Kernel based solution. You must verify that the kernel version is supported before updating to a newer kernel version. See the list below for the list of supported kernels.
-  > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version-agnostic. With a minimal requirement for the kernel version to be at or above 3.10.0-327.
+  > Microsoft Defender for Endpoint on Red Hat Enterprise Linux and CentOS - 6.7 to 6.10 is a Kernel based solution. You must verify that the kernel version is supported before updating to a newer kernel version.
+  > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version-agnostic. With a minimal requirement for the kernel version to be at or greater than 3.10.0-327.
 
   - The `fanotify` kernel option must be enabled
   - Red Hat Enterprise Linux 6 and CentOS 6:
@@ -164,7 +164,7 @@ In general you need to take the following steps:
     > [!NOTE]
     > Please make sure that you have free disk space in /var.
 
-- Below is the list of supported filesystems for RTP, Quick, Full and Custom Scan.
+- List of supported filesystems for RTP, Quick, Full and Custom Scan.
   
   |RTP, Quick, Full Scan| Custom Scan|
   |---|---|
