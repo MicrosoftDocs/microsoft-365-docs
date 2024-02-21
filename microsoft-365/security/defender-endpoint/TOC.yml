@@ -437,7 +437,6 @@
         - name: Updating MMA on Windows devices
           href: update-agent-mma-windows.md
 
-
     - name: Configure time zone settings
       href: time-settings.md
 
