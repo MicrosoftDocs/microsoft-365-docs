@@ -68,7 +68,7 @@ To have your company listed as a partner in the in-product partner page, provide
 
    - For more information, see [RFC 2616 section-14.43](https://tools.ietf.org/html/rfc2616#section-14.43).
 
-Partnerships with Microsoft Defender for Endpoint help our mutual customers to further streamline, integrate, and orchestrate defenses. We're happy that you chose to become a Microsoft Defender for Endpoint partner and to achieve our common goal of effectively protecting customers and their assets by preventing and responding to modern threats together.
+Partnerships with Microsoft Defender for Endpoint help our mutual customers to further streamline, integrate, and orchestrate defenses. Thank you for choosing to become a Microsoft Defender for Endpoint partner and to achieve our common goal of effectively protecting customers and their assets by preventing and responding to modern threats together.
 
 ## MISA nomination 
 
