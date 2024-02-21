@@ -139,7 +139,7 @@ You can use Defender for Endpoint security settings management to define and app
 
 You can use configuration profile to set device tag for macOS and Linux. Please refer to following documentation for details.
 
-- **For macOS**, create configuration profile (.plist file) and deploy it manually or through management tool including Intune. See the guidance in [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences?view=o365-worldwide). To deploy configuration profile with Intune, follow the guidance in [Use custom settings for macOS devices in Microsoft Intune](/mem/intune/configuration/custom-settings-macos).
+- **For macOS**, create configuration profile (.plist file) and deploy it manually or through management tool including Intune. See the guidance in [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences). To deploy configuration profile with Intune, follow the guidance in [Use custom settings for macOS devices in Microsoft Intune](/mem/intune/configuration/custom-settings-macos).
 
 - **For Linux**, create configuration profile (.json file) and deploy it manually or through management tool. See the guidance in [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences)
 
@@ -171,7 +171,7 @@ You can use Microsoft Intune to define and apply tag for mobile devices. You can
 
 - [Tag mobile devices with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-mobile-device-tagging-for-ios-and-android/ba-p/3897368)
 
-- **For iOS**, follow the guidance in [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide).
-- **For Android**, follow the guidance on [Configure Defender for Endpoint on Android features](/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide).
+- **For iOS**, follow the guidance in [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features).
+- **For Android**, follow the guidance on [Configure Defender for Endpoint on Android features](/microsoft-365/security/defender-endpoint/android-configure).
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
