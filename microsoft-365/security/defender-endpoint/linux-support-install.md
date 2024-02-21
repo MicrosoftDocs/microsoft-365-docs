@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
-description: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
+description: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
@@ -32,7 +32,7 @@ ms.date: 12/18/2020
 
 ## Verify that the installation succeeded
 
-An error in installation may or may not result in a meaningful error message by the package manager. To verify if the installation succeeded, obtain and check the installation logs using:
+An error in installation might or might not result in a meaningful error message by the package manager. To verify if the installation succeeded, obtain and check the installation logs using:
 
 ```bash
  sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
