@@ -48,7 +48,7 @@ You can set a policy manually, only if it wasn't set via MDM (as a managed confi
 
 ### Step 1: Create policy JSON
 
-Now, you have `groups`, `rules`, `settings`, combine them into one JSON. Here's the demo file: [mdatp-devicecontrol/deny_removable_media_except_kingston.json at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/examples/deny_removable_media_except_kingston.json). Make sure to validate your policy with the JSON schema so your policy format is correct: [mdatp-devicecontrol/device_control_policy_schema.json at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/device_control_policy_schema.json).
+Now, you have `groups`, `rules`, `settings`, combine them into one JSON. Here's the demo file: [mdatp-devicecontrol/deny_removable_media_except_kingston.json at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/samples/deny_removable_media_except_kingston.md). Make sure to validate your policy with the JSON schema so your policy format is correct: [mdatp-devicecontrol/device_control_policy_schema.json at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/device_control_policy_schema.json).
 
 See [Device Control for macOS](mac-device-control-overview.md) for information about settings, rules and groups.
 
