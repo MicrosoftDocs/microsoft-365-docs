@@ -1,13 +1,9 @@
 ---
 title: Manage Microsoft Defender for Endpoint using Configuration Manager
 description: Learn how to manage Microsoft Defender for Endpoint with Configuration Manager
-keywords: post-migration, manage, operations, maintenance, utilization, Configuration Manager, Microsoft Defender for Endpoint, edr
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
