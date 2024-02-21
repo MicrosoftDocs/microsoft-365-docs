@@ -84,7 +84,7 @@ To implement a multitenant delegated access solution, take the following steps:
 
 3. **Create access packages for MSSP resources Customer AAD: Identity Governance**
 
-    Access packages are the collection of rights and accesses that a requestor will be granted upon approval.
+    Access packages are the collection of rights and accesses that a requestor is granted upon approval.
 
     To do so, in the customer AD tenant, access Identity Governance: Access Packages, and add **New Access Package**. Create an access package for the MSSP approvers and each analyst tier. For example, the following Tier 1 Analyst configuration creates an access package that:
 
