@@ -1,17 +1,13 @@
 ---
 title: Schedule antivirus scans using Windows Management Instrumentation
 description: Schedule antivirus scans using WMI
-keywords: quick scan, full scan, WMI, schedule, antivirus
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
-ms.date: 10/18/2021
-ms.reviewer: pauhijbr, ksarens
+ms.date: 02/21/2024
+ms.reviewer: pauhijbr, ksarens, yongrhee
 manager: dansimp
 ms.subservice: ngp
 ms.topic: how-to
