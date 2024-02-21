@@ -134,7 +134,7 @@ service mdatp status
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path> 
     ```
 
-    where `<systemd_path>` is `/lib/systemd/system` for Ubuntu and Debian distributions and /usr/lib/systemd/system` for Rhel, CentOS, Oracle and SLES. Then rerun step 2.
+    where `<systemd_path>` is `/lib/systemd/system` for Ubuntu and Debian distributions and /usr/lib/systemd/system` for Rhel, CentOS, Oracle, and SLES. Then rerun step 2.
 
 4. If the above steps don't work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to `permissive` or `disabled` in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
 Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
@@ -169,7 +169,7 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
     findmnt -T <path_of_EICAR_file>
     ```
 
-    Currently supported file systems for on-access activity are listed [here](microsoft-defender-endpoint-linux.md#system-requirements). Any files outside these file systems won't be scanned.
+    Currently supported file systems for on-access activity are listed [here](microsoft-defender-endpoint-linux.md#system-requirements). Any files outside these file systems aren't scanned.
 
 ## Command-line tool mdatp isn't working
 
@@ -191,5 +191,5 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
     Diagnostic file created: <path to file>
     ```
 
-    Path to a zip file that contains the logs will be displayed as an output. Reach out to our customer support with these logs.
+    Path to a zip file that contains the logs are displayed as an output. Reach out to our customer support with these logs.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
