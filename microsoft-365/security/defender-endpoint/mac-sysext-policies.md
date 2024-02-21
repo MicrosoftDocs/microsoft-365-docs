@@ -1,15 +1,10 @@
 ---
 title: New configuration profiles for macOS Big Sur and newer versions of macOS
 description: This topic describes the changes that are must be made in order to benefit from the system extensions, which are a replacement for kernel extensions on macOS Big Sur and newer versions of macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, big sur, monterey, ventura, mde for mac
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

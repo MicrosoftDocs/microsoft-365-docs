@@ -1,13 +1,9 @@
 ---
 title: Troubleshooting mode in Microsoft Defender for Endpoint on macOS
 description: This article describes how to enable the troubleshooting mode in Microsoft Defender for Endpoint on macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, install, mde for mac
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
