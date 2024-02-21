@@ -37,11 +37,11 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://si
 
 The best way for technology partners to certify that their integration works is to have a joint customer approve the suggested integration design in the [Partner Application page](https://security.microsoft.com/interoperability/partnersapps) in Microsoft Defender XDR and have it tested and demoed to the Microsoft Defender for Endpoint team.
 
-Once the Microsoft Defender for Endpoint team has reviewed and approves the integration, we'll direct you to be included as a partner at the Microsoft Intelligent Security Association.
+Once the Microsoft Defender for Endpoint team has reviewed and approves the integration, we direct you to be included as a partner at the Microsoft Intelligent Security Association.
 
 ## Step 3: Get listed in the Microsoft Defender for Endpoint partner application portal
 
-Microsoft Defender for Endpoint supports third-party applications discovery and integration using the in-product [partner page](partner-applications.md) that is embedded within the Microsoft Defender for Endpoint management portal.
+Microsoft Defender for Endpoint supports non-Microsoft applications discovery and integration using the in-product [partner page](partner-applications.md) that is embedded within the Microsoft Defender for Endpoint management portal.
 
 To have your company listed as a partner in the in-product partner page, you'll need to provide the following information:
 
