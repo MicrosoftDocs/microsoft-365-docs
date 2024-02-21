@@ -1,13 +1,9 @@
 ---
 title: Deploying Microsoft Defender for Endpoint on macOS with Jamf Pro
 description: Deploying Microsoft Defender for Endpoint on macOS with Jamf Pro
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
