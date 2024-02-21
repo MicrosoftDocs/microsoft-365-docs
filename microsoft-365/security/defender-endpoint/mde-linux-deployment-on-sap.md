@@ -1,10 +1,9 @@
 ---
 title: Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP 
 description: Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP 
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, SAp
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -25,7 +24,7 @@ ms.date: 01/10/2024
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-This article provides deployment guidance for Microsoft Defender for Endpoint on Linux for SAP. You'll learn about recommended SAP OSS(Online Services System) notes, the system requirements, prerequisites, important configuration settings, recommended antivirus exclusions, and guidance on scheduling antivirus scans.
+This article provides deployment guidance for Microsoft Defender for Endpoint on Linux for SAP. This article includes recommended SAP OSS (Online Services System) notes, the system requirements, prerequisites, important configuration settings, recommended antivirus exclusions, and guidance on scheduling antivirus scans.
 
 Conventional security defenses that have been commonly used to protect SAP systems such as isolating infrastructure behind firewalls and limiting interactive operating system logons are no longer considered sufficient to mitigate modern sophisticated threats. It's essential to deploy modern defenses to detect and contain threats in real-time. SAP applications unlike most other workloads require basic assessment and validation before deploying Microsoft Defender for Endpoint. The Enterprise Security administrators should contact the SAP Basis Team prior to deploying Defender for Endpoint. The SAP Basis Team should be cross trained with a basic level of knowledge about Defender for Endpoint.
 
@@ -39,13 +38,13 @@ Conventional security defenses that have been commonly used to protect SAP syste
 
 ## SAP Applications on Linux
 
-- SAP only supports Suse, Redhat and Oracle Linux. Other distributions aren't supported for SAP S4 or NetWeaver applications.
+- SAP only supports Suse, Redhat, and Oracle Linux. Other distributions aren't supported for SAP S4 or NetWeaver applications.
 - Suse 15.x, Redhat 8.x or 9.x and Oracle Linux 8.x are strongly recommended.
-- Suse 12.x, Redhat 7.x and Oracle Linux 7.x are technically supported but haven't been extensively tested.
-- Suse 11.x, Redhat 6.x and Oracle Linux 6.x might not be supported and haven't been tested.
-- Suse and Redhat offer tailored distributions for SAP.  These “for SAP” versions of Suse and Redhat might have different packages preinstalled and possibly different kernels.
+- Suse 12.x, Redhat 7.x and Oracle Linux 7.x are technically supported but weren't extensively tested.
+- Suse 11.x, Redhat 6.x and Oracle Linux 6.x might not be supported and weren't tested.
+- Suse and Redhat offer tailored distributions for SAP.  These "for SAP" versions of Suse and Redhat might have different packages preinstalled and possibly different kernels.
 - SAP only supports certain Linux File systems. In general, XFS and EXT3 are used. Oracle Automatic Storage Management (ASM) filesystem is sometimes used for Oracle DBMS and can't be read by Defender for Endpoint.
-- Some SAP applications use “standalone engines” such as TREX, Adobe Document Server, Content Server and LiveCache. These engines require specific configuration and file exclusions.
+- Some SAP applications use "standalone engines" such as TREX, Adobe Document Server, Content Server and LiveCache. These engines require specific configuration and file exclusions.
 - SAP applications often have Transport and Interface directories with many thousands of small files. If the number of files is larger than 100,000, it might and affect performance. It's recommended to archive files.
 - It's strongly recommended to deploy Defender for Endpoint to non-productive SAP landscapes for several weeks before deploying to production. The SAP Basis Team should use tools such as sysstat, KSAR and nmon to verify if CPU and other performance parameters are impacted.
 
@@ -78,8 +77,8 @@ The key parameters recommended for SAP applications are:
 - release_ring = Production. Pre-release and insider rings shouldn't be used with SAP Applications.
 - real_time_protection_enabled = false. Real-time protection is off in passive mode which is the default mode and will prevent real-time IO interception.
 - automatic_definition_update_enabled = true
-- definition_status = “up_to_date”.  Run a manual update if a new value is identified.
-- edr_early_preview_enabled = “disabled”. If enabled on SAP systems it might lead to system instability.
+- definition_status = "up_to_date".  Run a manual update if a new value is identified.
+- edr_early_preview_enabled = "disabled". If enabled on SAP systems it might lead to system instability.
 - conflicting_applications = [ ]. Other AV or security software installed on a VM such as Clam.
 - supplementary_events_subsystem = "ebpf".  Do not proceed if ebpf is not displayed. Contact the security admin team.
 
@@ -152,7 +151,7 @@ Scheduled scans for SAP ECC, BW, CRM, SCM, Solution Manager, and other component
 
 ## Useful Commands
 
-If, during manual zypper installation on Suse an error “Nothing provides ‘policycoreutils’” occurs, refer to:
+If, during manual zypper installation on Suse an error "Nothing provides 'policycoreutils'" occurs, refer to:
 [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 There are several command-line commands that can control the operation of mdatp. To enable the passive mode you can use the following command:
