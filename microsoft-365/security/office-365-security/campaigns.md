@@ -19,7 +19,7 @@ ms.custom:
 description: Learn about Campaigns in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/14/2023
+ms.date: 2/20/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -58,33 +58,30 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 - The campaigns feature is available in organizations with Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5).
 - You need to be assigned permissions to view information about campaigns as described in this article. You have the following options:
   - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Raw data (email & collaboration)/Email message headers (read)**.
-  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
-    - **Organization Management**
-    - **Security Administrator**
-    - **Security Reader**
+  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management**, **Security Administrator**, or **Security Reader** role group.
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Campaigns page in the Microsoft Defender portal
 
 To open the **Campaigns** page in the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Campaigns**. Or, to go directly to the **Campaigns** page, use <https://security.microsoft.com/campaigns>.
 
-The main **Campaigns** page consists of the following elements:
+The **Campaigns** page consists of the following elements:
 
 - A filter/query builder at the top of the page.
-- A chart area, which is set to **Campaign Type** by default.
-- A details table, which is set to the **Campaign** tab by default
+- A chart area where you can use the available pivots to organize the chart in different ways. By default, the chart uses the **Campaign Type** pivot, even though that pivot doesn't appear to be selected.
+- A details area, which is set to the **Campaign** tab by default
 
 :::image type="content" source="../../media/campaigns-overview.png" alt-text="Screenshot that shows the Campaigns in the Microsoft Defender portal." lightbox="../../media/campaigns-overview.png":::
 
 > [!TIP]
 >
-> - If you don't see any campaign data, or very limited data, try changing the date range or [filters](#filters-on-the-campaigns-page).
+> - If you don't see any campaign data or very limited data, try changing the date range or [filters](#filters-on-the-campaigns-page).
 >
-> - You can also view information about campaigns in [Threat Explorer](threat-explorer-about.md) at <https://security.microsoft.com/threatexplorerv3>:
->   - **Campaigns** tab
->   - **All email** tab \> **Campaign** tab
->   - **Malware** tab \> **Campaign** tab
->   - **Phish** tab \> **Campaign** tab
+> - You can also view the same information about campaigns in [Threat Explorer](threat-explorer-about.md) at <https://security.microsoft.com/threatexplorerv3>:
+>   - **Campaigns** view.
+>   - **All email** view \> **Campaign** tab in the details area below the chart.
+>   - **Malware** view \> **Campaign** tab in the details area below the chart.
+>   - **Phish** view \> **Campaign** tab in the details area below the chart.
 >
 > - If you have a Microsoft Defender for Endpoint subscription, campaigns information is connected with Microsoft Defender for Endpoint.
 
@@ -108,9 +105,12 @@ Change the organization of the chart by selecting **Campaign Type**, and then se
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export chart data** to export the data in the chart to a CSV file.
 
-To remove the chart area from the page, select :::image type="icon" source="../../media/m365-cc-sc-chart-view-icon.png" border="false"::: **Chart View** \> :::image type="icon" source="../../media/m365-cc-sc-list-view-icon.png" border="false"::: **List View** at the top of the page.
+To remove the chart from the page (which maximizes the size of the details area), do either of the following steps:
 
-### Details table on the Campaigns page
+- Select :::image type="icon" source="../../media/m365-cc-sc-chart-view-icon.png" border="false"::: **Chart View** \> :::image type="icon" source="../../media/m365-cc-sc-list-view-icon.png" border="false"::: **List View** at the top of the page.
+- Select :::image type="icon" source="../../media/m365-cc-sc-show-list-view-icon.png" border="false"::: **Show list view** between the chart and the views for the details table.
+
+### Details area on the Campaigns page
 
 To filter the information that's shown in the chart and in the details table, change the [filters](#filters-on-the-campaigns-page).
 
@@ -140,130 +140,63 @@ On the **Campaigns** page, the **Campaign origin** tab below the chart shows the
 
 At the top of the **Campaign** page, there are several filter settings to help you find and isolate specific campaigns. The filters you select affect the chart and the details table.
 
-:::image type="content" source="../../media/campaign-filters-and-settings.png" alt-text="Campaign filters on the Campaigns page." lightbox="../../media/campaign-filters-and-settings.png":::
+By default, the view is filtered by yesterday and today. To change the date filter, select the date range, and then select **Start Date** and **End date** values up to 30 days ago.
 
-You can filter the results by the start date/time and end date/time. Data is available for the last 30 days.
+:::image type="content" source="../../media/campaign-filters-and-settings.png" alt-text="Campaign filters on the Campaigns page." lightbox="../../media/campaign-filters-and-settings.png":::
 
 You can also filter the results by one or more message or campaign properties. The basic syntax is:
 
 \<Property\> \<**Equal any of** \| **Equal none of**\> \<Property value or values\>
 
 - Select the message or campaign property from the **Campaign Type** dropdown list (**Campaign Type** is the default value that's selected).
-- The property values that you need to enter are completely dependent on the property. Some properties allow freeform text with multiple values separated by commas, some properties require a single value selected from a list, and some properties allow multiple values selected from a list.
+- The property values that you need to enter are completely dependent on the property. Some properties allow freeform text with multiple values separated by commas, and some properties allow multiple values selected from a list.
 
-The available properties and their associated values are described in the following list:
+The available properties and their associated values are described in the following table:
 
-- **Basic** section:
-  - **Campaign Type**: Select one or more of the following values:¹
-    - **Malware**
-    - **Phish**
-  - **Campaign Name**: Freeform text values separated by commas.
-  - **Campaign subtype**: Freeform text values separated by commas.
-  - **Sender**: Freeform text values separated by commas.
-  - **Recipients**: Freeform text values separated by commas.
-  - **Sender domain**: Freeform text values separated by commas.
-  - **Subject**: Freeform text values separated by commas.
-  - **Attachment filename**: Freeform text values separated by commas.
-  - **Malware family**: Freeform text values separated by commas.
-  - **Tags**: Freeform text values separated by commas. For more information about user tags, see [User tags](user-tags-about.md).
-  - **Delivery action**: Select one of the following values:¹
-    - **Delivered**
-    - **Delivered to Junk**
-    - **Blocked**
-    - **Replaced**
-  - **Additional action**: Select one or more of the following values:¹
-    - **None**
-    - **Manual remediation**
-    - **ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).
-    - **Reprocessed**
-    - **Dynamic delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).
-  - **Directionality**: Select one or more of the following values:¹
-    - **Inbound**
-    - **Outbound**
-    - **Intra-org**
-  - **Detection technology**: Select one or more of the following values:¹
-    - **Advanced filter**: Signals based on machine learning.
-    - **Anti-malware protection**
-    - **Bulk**
-    - **Campaign**
-    - **Domain reputation**
-    - **File detonation**[Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.
-    - **File detonation reputation**: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.
-    - **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
-    - **Fingerprint matching**: The message closely resembles a previous detected malicious message.
-    - **General filter**
-    - **Impersonation brand**: Sender impersonation of well-known brands.
-    - **Impersonation domain**: Impersonation of sender domains that you own or specified for protection in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
-    - **IP reputation**
-    - **Mailbox intelligence impersonation**: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
-    - **Mixed analysis detection**: Multiple filters contributed to the message verdict.
-    - **Spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).
-    - **Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.
-    - **Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.
-    - **URL detonation**: [Safe Links](safe-links-about.md) detected a malicious URL in the message during detonation analysis.
-    - **URL detonation reputation**: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.
-    - **URL malicious reputation**: The message contains a URL that was previously identified as malicious in other Microsoft 365 organizations.
-  - **Original delivery location**: Select one or more of the following values:¹
-    - **Deleted Items folder**
-    - **Dropped**
-    - **Failed**
-    - **Inbox/folder**
-    - **Junk folder**
-    - **On-prem/external**
-    - **Quarantine**
-    - **Unknown**
-  - **Latest delivery location**: Same values as **Original delivery location**.¹
-  - **System overrides**: Select one of the following values:
-    - **Allowed by user policy**
-    - **Blocked by user policy**
-    - **Allowed by organization policy**
-    - **Blocked by organization policy**
-    - **File extension blocked by organization policy**
-    - **None**
-  - **System override source**: Select one of the following values:
-    - **3rd party filter**
-    - **Admin initiated time travel** (ZAP)
-    - **Anti-malware policy block by file type**
-    - **Anti-spam policy settings**
-    - **Connection policy**
-    - **Exchange transport rule** (mail flow rule)
-    - **Filtering skipped due to on-prem organization**
-    - **IP region filter from policy**
-    - **Language filter from policy**
-    - **Phishing simulation**
-    - **Quarantine release**
-    - **SecOPs mailbox**
-    - **Sender address list (admin override)**
-    - **Sender address list (user override)**
-    - **Sender domain list (admin override)**
+|Property|Type|
+|---|---|
+|**Basic**||
+|Campaign Type|Select one or more values¹: <ul><li>**Malware**</li><li>**Phish**</li></ul>|
+|Campaign Name|Text. Separate multiple values by commas.|
+|Campaign Subtype|Text. Separate multiple values by commas.|
+|Sender address|Text. Separate multiple values by commas.|
+|Recipients|Text. Separate multiple values by commas.|
+|Sender domain|Text. Separate multiple values by commas.|
+|Recipient domain|Text. Separate multiple values by commas.|
+|Subject|Text. Separate multiple values by commas.|
+|Sender display name|Text. Separate multiple values by commas.|
+|Sender mail from address|Text. Separate multiple values by commas.|
+|Sender mail from domain|Text. Separate multiple values by commas.|
+|Malware family|Text. Separate multiple values by commas.|
+|Tags|Text. Separate multiple values by commas. <br/><br/> For more information about user tags, see [User tags](user-tags-about.md).|
+|Delivery action|Select one or more values¹: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|
+|Additional action|Select one or more values¹: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).</li></ul>|
+|Directionality|Select one or more values¹: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|
+|Detection technology|Select one or more values¹: <ul><li>**Advanced filter**: Signals based on machine learning.</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**: [Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.</li><li>**File detonation reputation**: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.</li><li>**File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.</li><li>**Fingerprint matching**: The message closely resembles a previous detected malicious message.</li><li>**General filter**</li><li>**Impersonation brand**: Sender impersonation of well-known brands.</li><li>**Impersonation domain**: Impersonation of sender domains that you own or specified for protection in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).</li><li>**Mixed analysis detection**: Multiple filters contributed to the message verdict.</li><li>**spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).</li><li>**Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.</li><li>**Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.</li><li>**URL detonation**: [Safe Links](safe-links-about.md) detected a malicious URL in the message during detonation analysis.</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.</li></ul>|
+|Original delivery location|Select one or more values¹: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|
+|Latest delivery location|Same values as **Original delivery location**</li></ul>|
+|System overrides|Select one or more values¹: <ul><li>**Allowed by user policy**</li><li>**Blocked by user policy**</li><li>**Allowed by organization policy**</li><li>**Blocked by organization policy**</li><li>**File extension blocked by organization policy**</li><li>**None**</li></ul>|
+|System override source|Select one or more values¹: <ul><li>**3rd party filter**</li><li>**Admin initiated time travel** (ZAP)</li><li>**Anti-malware policy block by file type**</li><li>**Anti-spam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule** (mail flow rule)</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing simulation**</li><li>**Quarantine release**</li><li>**SecOPs mailbox**</li><li>**Sender address list (admin override)**</li><li>**Sender address list (user override)**</li><li>**Sender domain list (admin override)**</li></ul>|
+|**Advanced**||
+|Internet Message ID|Text. Separate multiple values by commas. <br/><br/> Available in the **Message-ID** header field in the message header. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).|
+|Network Message ID|Text. Separate multiple values by commas. <br/><br/> A GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header field in the message header.|
+|Sender IP|Text. Separate multiple values by commas.|
+|Attachment SHA256|Text. Separate multiple values by commas. <br/><br/> To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.|
+|Cluster ID|Text. Separate multiple values by commas.|
+|Alert ID|Text. Separate multiple values by commas.|
+|Alert Policy ID|Text. Separate multiple values by commas.|
+|Campaign ID|Text. Separate multiple values by commas.|
+|ZAP URL signal|Text. Separate multiple values by commas.|
+|**Urls**||
+|URL domain|Text. Separate multiple values by commas.|
+|URL domain and path|Text. Separate multiple values by commas.|
+|URL|Text. Separate multiple values by commas.|
+|URL path|Text. Separate multiple values by commas.|
+|Click verdict|Select one or more values¹: <ul><li>**Allowed**</li><li>**Block overridden**</li><li>**Blocked**</li><li>**Error**</li><li>**Failure**</li><li>**None**</li><li>**Pending verdict**</li><li>**Pending verdict bypassed**</li></ul>|
+|**File**||
+|Attachment filename|Text. Separate multiple values by commas.|
 
-- **Advanced** section: All properties use freeform text value separated by commas:
-  - **Internet message ID**: Available in the **Message-ID** header field in the message header. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).
-  - **Network message ID**: A GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header field in the message header.
-  - **Sender IP**
-  - **Attachment SHA256**: To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
-  - **Cluster ID**
-  - **Alert ID**
-  - **Alert Policy ID**
-  - **Campaign ID**
-  - **ZAP URL signal**
-
-- **URLs** section:
-  - **URL domain**: Freeform text values separated by commas.
-  - **URL domain and path**: Freeform text values separated by commas.
-  - **URL**: Freeform text values separated by commas.
-  - **URL path**: Freeform text values separated by commas.
-  - **Click verdict**: Select one or more of the following values:¹
-    - **None**
-    - **Allowed**
-    - **Blocked**
-    - **Block overridden**
-    - **Error**
-    - **Failure**
-    - **Pending verdict bypassed**
-    - **Pending verdict**
-
-¹ Clearing all selections has the same result as selecting all values.
+¹ Not using this property filter or using this property filter with no values selected has the same result as using this property filter with all values selected.
 
 After you select a property from the **Campaign Type** dropdown, select **Equal any of** or **Not equal any of**, and then enter or select a value in the property box, the filter query appears below the filter area.
 
@@ -330,7 +263,7 @@ The diagram contains the following information:
 
   |Value|Spam filter verdict|Description|
   |---|---|---|
-  |**Allowed**|`SFV:SKN` <p> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering. For example, the message was marked as not spam by a mail flow rule (also known as a transport rule). <p> The message skipped spam filtering for other reasons. For example, the sender and recipient appear to be in the same organization.|
+  |**Allowed**|`SFV:SKN` <br/><br/ `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering. For example, the message was marked as not spam by a mail flow rule (also known as a transport rule). <br/><br/ The message skipped spam filtering for other reasons. For example, the sender and recipient appear to be in the same organization.|
   |**Blocked**|`SFV:SKS`|The message was marked as spam before being evaluated by spam filtering. For example, by a mail flow rule.|
   |**Detected**|`SFV:SPM`|The message was marked as spam by spam filtering.|
   |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by spam filtering.|

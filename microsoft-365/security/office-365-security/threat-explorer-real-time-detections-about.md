@@ -66,7 +66,7 @@ Threat Explorer and Real-time detections contain the following elements:
   |**Malware**|✔|✔|Default view for Real-time detections. Information about email messages that contain malware.|
   |**Phish**|✔|✔|Information about email messages that contain phishing threats.|
   |**Campaigns**|✔||Information about malicious email that Defender for Office 365 Plan 2 identified as part of a [coordinated phishing or malware campaign](campaigns.md).|
-  |**Content malware**|✔|✔|Information about malicious files that were identified by [Safe Attachments for Sharepoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).|
+  |**Content malware**|✔|✔|Information about malicious files detected by the following features: <ul><li>[Built-in virus protection in SharePoint, OneDrive, and Microsoft Teams](anti-malware-protection-for-spo-odfb-teams-about.md)</li><li>[Safe Attachments for Sharepoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)</li></ul>|
   |**URL clicks**|✔||Information about user clicks on URLs in email messages, Teams messages, SharePoint files, and OneDrive files.|
 
   These views are described in detail in this article, including the differences between Threat Explorer and Real-time detections.
@@ -75,11 +75,11 @@ Threat Explorer and Real-time detections contain the following elements:
 
   :::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="The date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
 
-- **Property filters (queries)**: Filter the results in the view by the available message, file, or threat properties.
+- **Property filters/queries**: Filter the results in the view by the available message, file, or threat properties.
 
   The available filters for each view are listed in this article, including the differences between Threat Explorer and Real-time detections.
 
-  Threat Explorer allows you to save queries for later use as described in the [Saved filters in Threat Explorer](#saved-filters-in-threat-explorer) section.
+  Threat Explorer allows you to save filters/queries for later use as described in the [Saved filters in Threat Explorer](#saved-filters-in-threat-explorer) section.
 
 - **Charts**: Each view contains a visual, aggregate representation of the filtered or unfiltered data. You can use available pivots to organize the chart in different ways. You can often use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export chart data** to export filtered or unfiltered chart data to a CSV file.
 
@@ -127,32 +127,32 @@ The filterable properties that are available in the **Delivery action** box in t
 |Return path|Text. Separate multiple values by commas.|
 |Return path domain|Text. Separate multiple values by commas.|
 |Malware family|Text. Separate multiple values by commas.|
-|Tags|Text. Separate multiple values by commas.|
+|Tags|Text. Separate multiple values by commas. <br/><br/> For more information about user tags, see [User tags](user-tags-about.md).|
 |Impersonated domain|Text. Separate multiple values by commas.|
 |Impersonated user|Text. Separate multiple values by commas.|
 |Exchange transport rule|Text. Separate multiple values by commas.|
 |Data loss prevention rule|Text. Separate multiple values by commas.|
-|Context|Select one or more values: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|
+|Context|Select one or more values¹: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|
 |Connector|Text. Separate multiple values by commas.|
-|Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|
-|Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**</li></ul>|
-|Directionality|Select one or more values: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|
-|Detection technology|Select one or more values: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra.org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|
-|Original delivery location|Select one or more values: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|
+|Delivery action|Select one or more values¹: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|
+|Additional action|Select one or more values¹: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).</li></ul>|
+|Directionality|Select one or more values¹: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|
+|Detection technology|Select one or more values¹: <ul><li>**Advanced filter**: Signals based on machine learning.</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**: [Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.</li><li>**File detonation reputation**: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.</li><li>**File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.</li><li>**Fingerprint matching**: The message closely resembles a previous detected malicious message.</li><li>**General filter**</li><li>**Impersonation brand**: Sender impersonation of well-known brands.</li><li>**Impersonation domain**: Impersonation of sender domains that you own or specified for protection in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).</li><li>**Mixed analysis detection**: Multiple filters contributed to the message verdict.</li><li>**spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).</li><li>**Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.</li><li>**Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.</li><li>**URL detonation**: [Safe Links](safe-links-about.md) detected a malicious URL in the message during detonation analysis.</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.</li></ul>|
+|Original delivery location|Select one or more values¹: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|
 |Latest delivery location|Same values as **Original delivery location**</li></ul>|
-|Phish confidence level|Select one or more values: <ul><li>**High**</li><li>**Normal**</li></ul>|
-|Primary override|Select one or more values: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|
-|Primary override source|Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|
+|Phish confidence level|Select one or more values¹: <ul><li>**High**</li><li>**Normal**</li></ul>|
+|Primary override|Select one or more values¹: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|
+|Primary override source|Select one or more values¹: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|
 |Override source|Same values as **Primary override source**</li></ul>|
-|Policy type|Select one or more values: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|
-|Policy action|Select one or more values: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|
-|Threat type|Select one or more values: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|
-|Forwarded message|Select one or more values: <ul><li>**True**</li><li>**False**</li></ul>|
+|Policy type|Select one or more values¹: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|
+|Policy action|Select one or more values¹: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|
+|Threat type|Select one or more values¹: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|
+|Forwarded message|Select one or more values¹: <ul><li>**True**</li><li>**False**</li></ul>|
 |Distribution list|Text. Separate multiple values by commas.|
 |Email size|Integer. Separate multiple values by commas.|
 |**Advanced**||
-|Internet Message ID|Text. Separate multiple values by commas.|
-|Network Message ID|Text. Separate multiple values by commas.|
+|Internet Message ID|Text. Separate multiple values by commas. <br/><br/> Available in the **Message-ID** header field in the message header. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).|
+|Network Message ID|Text. Separate multiple values by commas. <br/><br/> A GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header field in the message header.|
 |Sender IP|Text. Separate multiple values by commas.|
 |Attachment SHA256|Text. Separate multiple values by commas.|
 |Cluster ID|Text. Separate multiple values by commas.|
@@ -166,9 +166,9 @@ The filterable properties that are available in the **Delivery action** box in t
 |URL domain and path|Text. Separate multiple values by commas.|
 |URL|Text. Separate multiple values by commas.|
 |URL path|Text. Separate multiple values by commas.|
-|URL source|Select one or more values: <ul><li>**Attachments**</li><li>**Cloud attachment**</li><li>**Email body**</li><li>**Email header**</li><li>**QR Code**</li><li>**Subject**</li><li>**Unknown**</li></ul>|
-|Click verdict|Select one or more values: <ul><li>**Allowed**</li><li>**Block overridden**</li><li>**Blocked**</li><li>**Error**</li><li>**Failure**</li><li>**None**</li><li>**Pending verdict**</li><li>**Pending verdict bypassed**</li></ul>|
-|URL Threat|Select one or more values: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|
+|URL source|Select one or more values¹: <ul><li>**Attachments**</li><li>**Cloud attachment**</li><li>**Email body**</li><li>**Email header**</li><li>**QR Code**</li><li>**Subject**</li><li>**Unknown**</li></ul>|
+|Click verdict|Select one or more values¹: <ul><li>**Allowed**</li><li>**Block overridden**</li><li>**Blocked**</li><li>**Error**</li><li>**Failure**</li><li>**None**</li><li>**Pending verdict**</li><li>**Pending verdict bypassed**</li></ul>|
+|URL Threat|Select one or more values¹: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|
 |**File**||
 |Attachment Count|Integer. Separate multiple values by commas.|
 |Attachment filename|Text. Separate multiple values by commas.|
@@ -176,10 +176,12 @@ The filterable properties that are available in the **Delivery action** box in t
 |File Extension|Text. Separate multiple values by commas.|
 |File Size|Integer. Separate multiple values by commas.|
 |**Authentication**||
-|SPF|Select one or more values: <ul><li>**Fail**</li><li>**Neutral**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Soft fail**</li><li>**Temporary error**</li></ul>|
-|DKIM|Select one or more values: <ul><li>**Error**</li><li>**Fail**</li><li>**Ignore**</li><li>**None**</li><li>**Pass**</li><li>**Test**</li><li>**Timeout**</li><li>**Unknown**</li></ul>|
-|DMARC|Select one or more values: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|
-|Composite|Select one or more values: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
+|SPF|Select one or more values¹: <ul><li>**Fail**</li><li>**Neutral**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Soft fail**</li><li>**Temporary error**</li></ul>|
+|DKIM|Select one or more values¹: <ul><li>**Error**</li><li>**Fail**</li><li>**Ignore**</li><li>**None**</li><li>**Pass**</li><li>**Test**</li><li>**Timeout**</li><li>**Unknown**</li></ul>|
+|DMARC|Select one or more values¹: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|
+|Composite|Select one or more values¹: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
+
+¹ Not using this property filter or using this property filter with no values selected has the same result as using this property filter with all values selected.
 
 ### Pivots for the chart in the All email view in Threat Explorer
 
@@ -257,21 +259,21 @@ The available views for the details area are described in the following subsecti
 
 The **Email** view shows a details table. You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that is shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
-- **Date**<sup></sup>
-- **Subject**<sup></sup>
-- **Recipient**<sup></sup>
+- **Date**<sup>\*</sup>
+- **Subject**<sup>\*</sup>
+- **Recipient**<sup>\*</sup>
 - **Recipient domain**
-- **Tags**<sup></sup>
-- **Sender address**<sup></sup>
+- **Tags**<sup>\*</sup>
+- **Sender address**<sup>\*</sup>
 - **Sender display name**
-- **Sender domain**<sup></sup>
+- **Sender domain**<sup>\*</sup>
 - **Sender IP**
 - **Sender mail from address**
 - **Sender mail from domain**
-- **Additional actions**<sup></sup>
+- **Additional actions**<sup>\*</sup>
 - **Delivery action**
-- **Latest delivery location**<sup></sup>
-- **Original delivery location**<sup></sup>
+- **Latest delivery location**<sup>\*</sup>
+- **Original delivery location**<sup>\*</sup>
 - **System overrides source**
 - **System overrides**
 - **Alert ID**
@@ -282,7 +284,7 @@ The **Email** view shows a details table. You can sort the entries by clicking o
 - **Connector**
 - **Context**
 - **Data loss prevention rule**
-- **Threat type**<sup></sup>
+- **Threat type**<sup>\*</sup>
 - **Detection technology**
 - **Attachment Count**
 - **URL Count**
@@ -567,26 +569,26 @@ The filterable properties that are available in the **Sender address** box in th
 |Return path|Text. Separate multiple values by commas.|✔|✔|
 |Return path domain|Text. Separate multiple values by commas.|✔|✔|
 |Malware family|Text. Separate multiple values by commas.|✔|✔|
-|Tags|Text. Separate multiple values by commas.|✔||
+|Tags|Text. Separate multiple values by commas. <br/><br/> For more information about user tags, see [User tags](user-tags-about.md).|✔||
 |Exchange transport rule|Text. Separate multiple values by commas.|✔||
 |Data loss prevention rule|Text. Separate multiple values by commas.|✔||
-|Context|Select one or more values: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|✔||
+|Context|Select one or more values¹: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|✔||
 |Connector|Text. Separate multiple values by commas.|✔||
-|Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|✔|✔|
-|Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**</li></ul>|✔|✔|
-|Directionality|Select one or more values: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|✔|✔|
-|Detection technology|Select one or more values: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra.org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|✔|✔|
-|Original delivery location|Select one or more values: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|✔|✔|
+|Delivery action|Select one or more values¹: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|✔|✔|
+|Additional action|Select one or more values¹: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).</li></ul>|✔|✔|
+|Directionality|Select one or more values¹: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|✔|✔|
+|Detection technology|Select one or more values¹: <ul><li>**Advanced filter**: Signals based on machine learning.</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**: [Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.</li><li>**File detonation reputation**: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.</li><li>**File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.</li><li>**Fingerprint matching**: The message closely resembles a previous detected malicious message.</li><li>**General filter**</li><li>**Impersonation brand**: Sender impersonation of well-known brands.</li><li>**Impersonation domain**: Impersonation of sender domains that you own or specified for protection in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).</li><li>**Mixed analysis detection**: Multiple filters contributed to the message verdict.</li><li>**spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).</li><li>**Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.</li><li>**Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.</li><li>**URL detonation**: [Safe Links](safe-links-about.md) detected a malicious URL in the message during detonation analysis.</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.</li></ul>|✔|✔|
+|Original delivery location|Select one or more values¹: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|✔|✔|
 |Latest delivery location|Same values as **Original delivery location**</li></ul>|✔|✔|
-|Primary override|Select one or more values: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|✔|✔|
-|Primary override source|Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|✔|✔|
+|Primary override|Select one or more values¹: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|✔|✔|
+|Primary override source|Select one or more values¹: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|✔|✔|
 |Override source|Same values as **Primary override source**</li></ul>|✔|✔|
-|Policy type|Select one or more values: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|✔|✔|
-|Policy action|Select one or more values: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|✔|✔|
+|Policy type|Select one or more values¹: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|✔|✔|
+|Policy action|Select one or more values¹: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|✔|✔|
 |Email size|Integer. Separate multiple values by commas.|✔|✔|
 |**Advanced**||||
-|Internet Message ID|Text. Separate multiple values by commas.|✔|✔|
-|Network Message ID|Text. Separate multiple values by commas.|✔|✔|
+|Internet Message ID|Text. Separate multiple values by commas. <br/><br/> Available in the **Message-ID** header field in the message header. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).|✔|✔|
+|Network Message ID|Text. Separate multiple values by commas. <br/><br/> A GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header field in the message header.|✔|✔|
 |Sender IP|Text. Separate multiple values by commas.|✔|✔|
 |Attachment SHA256|Text. Separate multiple values by commas.|✔|✔|
 |Cluster ID|Text. Separate multiple values by commas.|✔|✔|
@@ -600,9 +602,9 @@ The filterable properties that are available in the **Sender address** box in th
 |URL domain and path|Text. Separate multiple values by commas.|✔|✔|
 |URL|Text. Separate multiple values by commas.|✔|✔|
 |URL path|Text. Separate multiple values by commas.|✔|✔|
-|URL source|Select one or more values: <ul><li>**Attachments**</li><li>**Cloud attachment**</li><li>**Email body**</li><li>**Email header**</li><li>**QR Code**</li><li>**Subject**</li><li>**Unknown**</li></ul>|✔|✔|
-|Click verdict|Select one or more values: <ul><li>**Allowed**</li><li>**Block overridden**</li><li>**Blocked**</li><li>**Error**</li><li>**Failure**</li><li>**None**</li><li>**Pending verdict**</li><li>**Pending verdict bypassed**</li></ul>|✔|✔|
-|URL Threat|Select one or more values: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|✔|✔|
+|URL source|Select one or more values¹: <ul><li>**Attachments**</li><li>**Cloud attachment**</li><li>**Email body**</li><li>**Email header**</li><li>**QR Code**</li><li>**Subject**</li><li>**Unknown**</li></ul>|✔|✔|
+|Click verdict|Select one or more values¹: <ul><li>**Allowed**</li><li>**Block overridden**</li><li>**Blocked**</li><li>**Error**</li><li>**Failure**</li><li>**None**</li><li>**Pending verdict**</li><li>**Pending verdict bypassed**</li></ul>|✔|✔|
+|URL Threat|Select one or more values¹: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|✔|✔|
 |**File**||||
 |Attachment Count|Integer. Separate multiple values by commas.|✔|✔|
 |Attachment filename|Text. Separate multiple values by commas.|✔|✔|
@@ -610,10 +612,12 @@ The filterable properties that are available in the **Sender address** box in th
 |File Extension|Text. Separate multiple values by commas.|✔|✔|
 |File Size|Integer. Separate multiple values by commas.|✔|✔|
 |**Authentication**||||
-|SPF|Select one or more values: <ul><li>**Fail**</li><li>**Neutral**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Soft fail**</li><li>**Temporary error**</li></ul>|✔|✔|
-|DKIM|Select one or more values: <ul><li>**Error**</li><li>**Fail**</li><li>**Ignore**</li><li>**None**</li><li>**Pass**</li><li>**Test**</li><li>**Timeout**</li><li>**Unknown**</li></ul>|✔|✔|
-|DMARC|Select one or more values: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|✔|✔|
-|Composite|Select one or more values: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
+|SPF|Select one or more values¹: <ul><li>**Fail**</li><li>**Neutral**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Soft fail**</li><li>**Temporary error**</li></ul>|✔|✔|
+|DKIM|Select one or more values¹: <ul><li>**Error**</li><li>**Fail**</li><li>**Ignore**</li><li>**None**</li><li>**Pass**</li><li>**Test**</li><li>**Timeout**</li><li>**Unknown**</li></ul>|✔|✔|
+|DMARC|Select one or more values¹: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|✔|✔|
+|Composite|Select one or more values¹: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
+
+¹ Not using this property filter or using this property filter with no values selected has the same result as using this property filter with all values selected.
 
 ### Pivots for the chart in the Malware view in Threat Explorer and Real-time Detections
 
@@ -699,21 +703,21 @@ The following table shows the columns that are available in Threat Explorer and 
 
 |Column|Threat<br/>Explorer|Real-time<br/>detections|
 |---|:---:|:---:|
-|**Date**<sup></sup>|✔|✔|
-|**Subject**<sup></sup>|✔|✔|
-|**Recipient**<sup></sup>|✔|✔|
+|**Date**<sup>\*</sup>|✔|✔|
+|**Subject**<sup>\*</sup>|✔|✔|
+|**Recipient**<sup>\*</sup>|✔|✔|
 |**Recipient domain**|✔|✔|
-|**Tags**<sup></sup>|✔||
-|**Sender address**<sup></sup>|✔|✔|
+|**Tags**<sup>\*</sup>|✔||
+|**Sender address**<sup>\*</sup>|✔|✔|
 |**Sender display name**|✔|✔|
-|**Sender domain**<sup></sup>|✔|✔|
+|**Sender domain**<sup>\*</sup>|✔|✔|
 |**Sender IP**|✔|✔|
 |**Sender mail from address**|✔|✔|
 |**Sender mail from domain**|✔|✔|
-|**Additional actions**<sup></sup>|✔|✔|
+|**Additional actions**<sup>\*</sup>|✔|✔|
 |**Delivery action**|✔|✔|
-|**Latest delivery location**<sup></sup>|✔|✔|
-|**Original delivery location**<sup></sup>|✔|✔|
+|**Latest delivery location**<sup>\*</sup>|✔|✔|
+|**Original delivery location**<sup>\*</sup>|✔|✔|
 |**System overrides source**|✔|✔|
 |**System overrides**|✔|✔|
 |**Alert ID**|✔|✔|
@@ -724,7 +728,7 @@ The following table shows the columns that are available in Threat Explorer and 
 |**Connector**|✔||
 |**Context**|✔|✔|
 |**Data loss prevention rule**|✔|✔|
-|**Threat type**<sup></sup>|✔|✔|
+|**Threat type**<sup>\*</sup>|✔|✔|
 |**Detection technology**|✔|✔|
 |**Attachment Count**|✔|✔|
 |**URL Count**|✔|✔|
@@ -846,29 +850,29 @@ The filterable properties that are available in the **Sender address** box in th
 |Sender mail from domain|Text. Separate multiple values by commas.|✔|✔|
 |Return path|Text. Separate multiple values by commas.|✔|✔|
 |Return path domain|Text. Separate multiple values by commas.|✔|✔|
-|Tags|Text. Separate multiple values by commas.|✔||
+|Tags|Text. Separate multiple values by commas. <br/><br/> For more information about user tags, see [User tags](user-tags-about.md).|✔||
 |Impersonated domain|Text. Separate multiple values by commas.|✔|✔|
 |Impersonated user|Text. Separate multiple values by commas.|✔|✔|
 |Exchange transport rule|Text. Separate multiple values by commas.|✔||
 |Data loss prevention rule|Text. Separate multiple values by commas.|✔||
-|Context|Select one or more values: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|✔||
+|Context|Select one or more values¹: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|✔||
 |Connector|Text. Separate multiple values by commas.|✔||
-|Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|✔|✔|
-|Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**</li></ul>|✔|✔|
-|Directionality|Select one or more values: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|✔|✔|
-|Detection technology|Select one or more values: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra.org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|✔|✔|
-|Original delivery location|Select one or more values: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|✔|✔|
+|Delivery action|Select one or more values¹: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|✔|✔|
+|Additional action|Select one or more values¹: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**</li></ul>|✔|✔|
+|Directionality|Select one or more values¹: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|✔|✔|
+|Detection technology|Select one or more values¹: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra-org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|✔|✔|
+|Original delivery location|Select one or more values¹: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|✔|✔|
 |Latest delivery location|Same values as **Original delivery location**</li></ul>|✔|✔|
-|Phish confidence level|Select one or more values: <ul><li>**High**</li><li>**Normal**</li></ul>|✔||
-|Primary override|Select one or more values: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|✔|✔|
-|Primary override source|Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|✔|✔|
+|Phish confidence level|Select one or more values¹: <ul><li>**High**</li><li>**Normal**</li></ul>|✔||
+|Primary override|Select one or more values¹: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|✔|✔|
+|Primary override source|Select one or more values¹: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|✔|✔|
 |Override source|Same values as **Primary override source**</li></ul>|✔|✔|
-|Policy type|Select one or more values: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|✔|✔|
-|Policy action|Select one or more values: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|✔|✔|
+|Policy type|Select one or more values¹: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|✔|✔|
+|Policy action|Select one or more values¹: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|✔|✔|
 |Email size|Integer. Separate multiple values by commas.|✔|✔|
 |**Advanced**||||
-|Internet Message ID|Text. Separate multiple values by commas.|✔|✔|
-|Network Message ID|Text. Separate multiple values by commas.|✔|✔|
+|Internet Message ID|Text. Separate multiple values by commas. <br/><br/> Available in the **Message-ID** header field in the message header. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).|✔|✔|
+|Network Message ID|Text. Separate multiple values by commas. <br/><br/> A GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header field in the message header.|✔|✔|
 |Sender IP|Text. Separate multiple values by commas.|✔|✔|
 |Attachment SHA256|Text. Separate multiple values by commas.|✔|✔|
 |Cluster ID|Text. Separate multiple values by commas.|✔|✔|
@@ -882,9 +886,9 @@ The filterable properties that are available in the **Sender address** box in th
 |URL domain and path|Text. Separate multiple values by commas.|✔||
 |URL|Text. Separate multiple values by commas.|✔||
 |URL path|Text. Separate multiple values by commas.|✔||
-|URL source|Select one or more values: <ul><li>**Attachments**</li><li>**Cloud attachment**</li><li>**Email body**</li><li>**Email header**</li><li>**QR Code**</li><li>**Subject**</li><li>**Unknown**</li></ul>|✔|✔|
-|Click verdict|Select one or more values: <ul><li>**Allowed**</li><li>**Block overridden**</li><li>**Blocked**</li><li>**Error**</li><li>**Failure**</li><li>**None**</li><li>**Pending verdict**</li><li>**Pending verdict bypassed**</li></ul>|✔|✔|
-|URL Threat|Select one or more values: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|✔|✔|
+|URL source|Select one or more values¹: <ul><li>**Attachments**</li><li>**Cloud attachment**</li><li>**Email body**</li><li>**Email header**</li><li>**QR Code**</li><li>**Subject**</li><li>**Unknown**</li></ul>|✔|✔|
+|Click verdict|Select one or more values¹: <ul><li>**Allowed**</li><li>**Block overridden**</li><li>**Blocked**</li><li>**Error**</li><li>**Failure**</li><li>**None**</li><li>**Pending verdict**</li><li>**Pending verdict bypassed**</li></ul>|✔|✔|
+|URL Threat|Select one or more values¹: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|✔|✔|
 |**File**||||
 |Attachment Count|Integer. Separate multiple values by commas.|✔|✔|
 |Attachment filename|Text. Separate multiple values by commas.|✔|✔|
@@ -892,10 +896,12 @@ The filterable properties that are available in the **Sender address** box in th
 |File Extension|Text. Separate multiple values by commas.|✔|✔|
 |File Size|Integer. Separate multiple values by commas.|✔|✔|
 |**Authentication**||||
-|SPF|Select one or more values: <ul><li>**Fail**</li><li>**Neutral**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Soft fail**</li><li>**Temporary error**</li></ul>|✔|✔|
-|DKIM|Select one or more values: <ul><li>**Error**</li><li>**Fail**</li><li>**Ignore**</li><li>**None**</li><li>**Pass**</li><li>**Test**</li><li>**Timeout**</li><li>**Unknown**</li></ul>|✔|✔|
-|DMARC|Select one or more values: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|✔|✔|
-|Composite|Select one or more values: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
+|SPF|Select one or more values¹: <ul><li>**Fail**</li><li>**Neutral**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Soft fail**</li><li>**Temporary error**</li></ul>|✔|✔|
+|DKIM|Select one or more values¹: <ul><li>**Error**</li><li>**Fail**</li><li>**Ignore**</li><li>**None**</li><li>**Pass**</li><li>**Test**</li><li>**Timeout**</li><li>**Unknown**</li></ul>|✔|✔|
+|DMARC|Select one or more values¹: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|✔|✔|
+|Composite|Select one or more values¹: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
+
+¹ Not using this property filter or using this property filter with no values selected has the same result as using this property filter with all values selected.
 
 ### Pivots for the chart in the Phish view in Threat Explorer and Real-time Detections
 
@@ -927,7 +933,99 @@ The available views (tabs) in the details area of the **Phish** view are listed 
 |**Email origin**|✔||
 |**Campaign**|✔||
 
+#### Email view for the details area of the Phish view in Threat Explorer and Real-time detections
+
+**Email** is the default view for the details area of the **Phish** view in Threat Explorer and Real-time detections.
+
+The **Email** view shows a details table. You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that is shown.
+
+The following table shows the columns that are available in Threat Explorer and Real-time detections. The default values are marked with an asterisk (<sup>\*</sup>).
+
+|Column|Threat<br/>Explorer|Real-time<br/>detections|
+|---|:---:|:---:|
+|**Date**<sup>\*</sup>|✔|✔|
+|**Subject**<sup>\*</sup>|✔|✔|
+|**Recipient**<sup>\*</sup>|✔|✔|
+|**Recipient domain**|✔|✔|
+|**Tags**<sup>\*</sup>|✔||
+|**Sender address**<sup>\*</sup>|✔|✔|
+|**Sender display name**|✔|✔|
+|**Sender domain**<sup>\*</sup>|✔|✔|
+|**Sender IP**|✔|✔|
+|**Sender mail from address**|✔|✔|
+|**Sender mail from domain**|✔|✔|
+|**Additional actions**<sup>\*</sup>|✔|✔|
+|**Delivery action**|✔|✔|
+|**Latest delivery location**<sup>\*</sup>|✔|✔|
+|**Original delivery location**<sup>\*</sup>|✔|✔|
+|**System overrides source**|✔|✔|
+|**System overrides**|✔|✔|
+|**Alert ID**|✔|✔|
+|**Internet message ID**|✔|✔|
+|**Network message ID**|✔|✔|
+|**Mail language**|✔|✔|
+|**Exchange transport rule**|✔||
+|**Connector**|✔||
+|**Phish confidence level**|✔||
+|**Context**|✔||
+|**Data loss prevention rule**|✔||
+|**Threat type**<sup>\*</sup>|✔|✔|
+|**Detection technology**|✔|✔|
+|**Attachment Count**|✔|✔|
+|**URL Count**|✔|✔|
+|**Email size**|✔|✔|
+
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
+
+In Threat Explorer, when you select one or more entries from the list by selecting the check box next to the first colum, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** becomes available.
+
+##### Subject details from the Email view of the details area in the Phish view
+
+When you select an entry by clicking on the **Subject** value, a details flyout opens.
+
+In Threat Explorer, the information that's shown in the subject details flyout is identical to [Subject details from the Email view of the details area in the All email view](#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
+
+In Real-time detections, the information that's shown in the subject details flyout is nearly identical to [Subject details from the Email view of the details area in the All email view](#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view). The exception is the :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Go hunt** action isn't available.
+
+##### Recipient details from the Email view of the details area in the Malware view
+
+When you select an entry by clicking on the **Recipient** value, a details flyout opens.
+
+In Threat Explorer and Real-time detections, the information that's shown in the recipient details flyout is identical to [Recipient details from the Email view of the details area in the All email view](#recipient-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
+
+#### URL clicks view for the details area of the Phish view in Threat Explorer and Real-time detections
+
+#### Top URLs view for the details area of the Phish view in Threat Explorer and Real-time detections
+
+#### Top clicks view for the details area of the Phish view in Threat Explorer and Real-time detections
+
+#### Top targeted users view for the details area of the Phish view in Threat Explorer
+
+#### Email origin view for the details area of the Phish view in Threat Explorer
+
+The **Email origin** view shows message sources on a map of the world.
+
+#### Campaign view for the details area of the Phish view in Threat Explorer
+
+The **Campaign** view shows a details table. You can sort the entries by clicking on an available column header.
+
+The details table is identical to the [details table on the Campaigns page](campaigns.md#details-table-on-the-campaigns-page).
+
+When you select an entry by clicking anywhere in the row other than the check box next to the **Name**, a details flyout opens. The information is identical to [Campaign details](campaigns.md#campaign-details).
+
 ## Campaigns view in Threat Explorer
+
+The **Campaigns** view in Threat Explorer shows information about threats that were identified as coordinated phishing and malware attacks, either specific to your organization, or to other organizations in Microsoft 365.
+
+To open the **Campaigns** view on the **Explorer** page in the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** \> **Campaigns** tab. Or, go directly to the **Explorer** page using <https://security.microsoft.com/threatexplorerv3>, and then select the **Campaigns** tab.
+
+All of the available information and actions in the **Campaigns** view on the **Explorer** page is identical to the information and actions on the **Campaigns** page at <https://security.microsoft.com/campaignsv3>. For more information, see this article: [Campaigns page in the Microsoft Defender portal](campaigns.md#campaigns-page-in-the-microsoft-defender-portal).
 
 ## Content malware view in Threat Explorer and Real-time detections
 
@@ -950,16 +1048,18 @@ The filterable properties that are available in the **File name** box in the **C
 |---|---|
 |**File**||
 |File name|Text. Separate multiple values by commas.|
-|Workload|Select one or more values: <ul><li>**OneDrive**</li><li>**SharePoint**</li><li>**Teams**</li></ul>|
+|Workload|Select one or more values¹: <ul><li>**OneDrive**</li><li>**SharePoint**</li><li>**Teams**</li></ul>|
 |Site|Text. Separate multiple values by commas.|
 |**Users**||
 |File owner|Text. Separate multiple values by commas.|
 |Last modified by|Text. Separate multiple values by commas.|
 |**Threats**||
-|SHA256|Integer. Separate multiple values by commas.|
+|SHA256|Integer. Separate multiple values by commas. <br/><br/> To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.|
 |Malware family|Text. Separate multiple values by commas.|
-|Detection technologySelect one or more values: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra.org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|
-|Threat type|Select one or more values: <ul><li>**Block**</li><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|
+|Detection technology|Select one or more values¹: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra-org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|
+|Threat type|Select one or more values¹: <ul><li>**Block**</li><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|
+
+¹ Not using this property filter or using this property filter with no values selected has the same result as using this property filter with all values selected.
 
 ### Pivots for the chart in the Content malware view in Threat Explorer and Real-time Detections
 
@@ -983,14 +1083,14 @@ In Theat Explorer and Real-time detections, the details area of the **Content ma
 
 The **Document** view shows a details table. You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that is shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
-- **Date**<sup></sup>
-- **Name**<sup></sup>
-- **Workload**<sup></sup>
-- **Threat**<sup></sup>
-- **Detection technology**<sup></sup>
-- **Last modifying user**<sup></sup>
-- **File owner**<sup></sup>
-- **Size (bytes)**<sup></sup>
+- **Date**<sup>\*</sup>
+- **Name**<sup>\*</sup>
+- **Workload**<sup>\*</sup>
+- **Threat**<sup>\*</sup>
+- **Detection technology**<sup>\*</sup>
+- **Last modifying user**<sup>\*</sup>
+- **File owner**<sup>\*</sup>
+- **Size (bytes)**<sup>\*</sup>
 - **Last modified time**
 - **Site path**
 - **File path**
@@ -1029,13 +1129,24 @@ When you select a filename value from the **Name** column, a details flyout open
   - **File owner**
 - **Recent activity**
 
+> [!TIP]
+> If the file was detected by the [built-in virus protection in SharePoint, OneDrive, and Microsoft Teams](anti-malware-protection-for-spo-odfb-teams-about.md) (the **Detected by** value is **Antimalware engine**), an **Email list** section is also available.
+
 :::image type="content" source="../../media/te-rtd-content-malware-view-documents-tab-details-area-filename-flyout.png" alt-text="x" lightbox="../../media/te-rtd-content-malware-view-documents-tab-details-area-filename-flyout.png":::
 
 ## URL clicks view in Threat Explorer
 
 ## Data filters in Threat Explorer and Real-time detections
 
-The steps to create data filters (queries) are the same in all views in Threat Explorer and Real-time detections:
+The basic syntax of a data filter/query is:
+
+Condition = \<Filter property\> \<Filter operator> \<Property value or values\>
+
+Multiple filters/query conditions use the following syntax:
+
+\<Condition1> \<AND | OR\> \<Condition2>  \<AND | OR\> \<Condition3>... \<AND | OR\> \<ConditionN>
+
+The steps to create data filter/query conditions are the same in all views in Threat Explorer and Real-time detections:
 
 1. Identify the filter property using the tables in the preview view description sections earlier in this article.
 
@@ -1054,11 +1165,11 @@ The steps to create data filters (queries) are the same in all views in Threat E
 
    After you enter or select one or more property values, the completed filter condition appears below the filter creation boxes.
 
-4. To add another filter condition, repeat the previous three steps.
+4. To add another condition, repeat the previous three steps.
 
-   The filter conditions below the filter creation boxes are separated by the logical operator that was selected at the time you created the second or subsequent filter conditions. The default value is **AND**, but you can also select **OR**.
+   The conditions below the filter creation boxes are separated by the logical operator that was selected at the time you created the second or subsequent conditions. The default value is **AND**, but you can also select **OR**.
 
-   The same logical operator is used between all filter conditions: they're all **AND** or they're all **OR**. To change the existing logical operators, select the logical operator box, and then select **AND** or **OR**.
+   The same logical operator is used between all conditions: they're all **AND** or they're all **OR**. To change the existing logical operators, select the logical operator box, and then select **AND** or **OR**.
 
    To edit an existing condition, double-click on it to bring the selected property, filter operator, and values back into the corresponding boxes.
 
@@ -1068,16 +1179,16 @@ The steps to create data filters (queries) are the same in all views in Threat E
 
    :::image type="content" source="../../media/te-rtd-query-builder.png" alt-text="An example query in Threat Explorer or Real-time detections showing multiple conditions." lightbox="../../media/te-rtd-query-builder.png":::
 
-   > [!TIP]
-   > **Save query** isn't available in Real-time detections. It's available only in Threat Explorer.
-
 ### Saved filters in Threat Explorer
 
-Threat Explorer allows you to save filters (queries) for later use.
+> [!TIP]
+> **Save query** isn't available in Real-time detections. It's available only in Threat Explorer.
 
-To save a filter in Threat Explorer, do the following steps:
+Threat Explorer allows you to save filters/queries for later use.
 
-1. After you create the filter as described in the previous section, select **Save query** \> :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query**.
+To save filters/queries in Threat Explorer, do the following steps:
+
+1. After you create the filter/query as previously described, select **Save query** \> :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query**.
 
 2. In the **Save query** flyout that opens, configure the following options:
    - **Query name**: Enter a unique name for the query.
