@@ -90,18 +90,18 @@ If your organization has more granular sign-in security needs, [Conditional Acce
 > [!IMPORTANT]
 > Do not forget to disable per-user MFA after you have enabled Conditional Access policies. This is important as it will result in inconsistent user experience.
 
-Conditional Access is available for customers who have purchased Microsoft Entra ID P1, or licenses that include this, such as Microsoft 365 Business Premium, and Microsoft 365 E3. For more information, see [create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
+Conditional Access is available for customers who bought Microsoft Entra ID P1, or licenses that include this, such as Microsoft 365 Business Premium, and Microsoft 365 E3. For more information, see [create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-Risk-based conditional access is available through Microsoft Entra ID P2 license, or licenses that include this, such as Microsoft 365 E5. For more information, see [risk-based Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+Risk-based conditional access is available through Microsoft Entra ID P2 license, or licenses that include risk based conditional access, like Microsoft 365 E5. For more information, see [risk-based Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
 For more information about the Microsoft Entra ID P1 and P2, see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## Next steps - Send to your users
 
 - [What is multifactor authentication](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
-- [How to sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
-- [How to change their additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
-- [How to register for their additional verification method](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [Sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+- [Change additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+- [Register for additional verification method](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
 
 ## Related content
 
