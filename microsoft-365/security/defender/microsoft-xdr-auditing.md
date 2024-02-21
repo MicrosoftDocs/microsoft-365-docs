@@ -40,11 +40,6 @@ search.appverid: met150
 
 For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies).
 
-|Solution|Description|
-|---|---|
-|Microsoft Defender XDR|Centralized permissions management for Microsoft Defender XDR experiences.|
-|Microsoft Defender for Endpoint|Full support for all endpoint data and actions. All roles are compatible with the device group's scope as defined on the device groups page.|
-
 ## Enable the auditing feature
 
 1. Log in to [Microsoft Defender XDR](https://security.microsoft.com/homepage) using an account with the Security administrator or Global administrator role assigned.
@@ -55,16 +50,23 @@ For more information, see [Manage audit log retention policies](/purview/audit-l
 
 4. Select **Save preferences**.
 
-## Using the audit log
+## Using the audit search in Microsoft Defender XDR
 
 1. Navigate to the [Microsoft Defender XDR Audit page](https://security.microsoft.com/auditlogsearch)
 
    :::image type="content" source="../../media/defender/unified-audit-log-xdr.png" alt-text="Screenshot of the unified audit log page in Microsoft Defender XDR " lightbox="../../media/defender/unified-audit-log-xdr.png":::
 
->[!Note]
->The Audit log page can also be accessed from the [Compliance portal](https://compliance.microsoft.com/auditlogsearch).
+2. To narrow your scope and search for Microsoft Defender XDR or Microsoft Defender of Endpoint activities, in the **Activities - friendly names** type **Defender for Endpoint** or **Defender XDR**
+3. Select search
 
-2. Open the activities dropdown or click View all activities to open the side pane:
+   :::image type="content" source="../../media/defender/unified-audit-search.png" alt-text="Screenshot of the unified audit log search options in Microsoft Defender XDR " lightbox="../../media/defender/unified-audit-search.png":::
+
+For more information on using the audit search, see [Audit New Search](/purview/audit-new-search).
+
+For a full list of activities logged in the Microsoft 365 audit log, see [Audit Log Activities](/purview/audit-log-activities).
+
+>[!Note]
+>The Audit log page is also accessible from the [Compliance portal](https://compliance.microsoft.com/auditlogsearch).
 
 ## Using a PowerShell script
 
