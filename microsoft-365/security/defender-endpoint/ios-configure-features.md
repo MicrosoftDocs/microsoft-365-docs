@@ -55,7 +55,7 @@ While enabled by default, there might be some cases that require you to disable 
    :::image type="content" source="images/ios-vpn-config.png" alt-text="The toggle button for the VPN config Connect on demand option" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
-> Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
+> Web Protection isn't available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
 
 ## Disable Web Protection
 
@@ -114,7 +114,7 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 
    | Key | Value Type | Default (true-enable, false-disable) | Description |
    | --- | --- | --- | --- |
-   | `DefenderOpenNetworkDetection` | Integer | 0 | 1 - Audit, 0 - Disable(default), 2 - Enable. This setting is managed by an IT Admin to audit, disable, or enable open network detection, respectively. In 'Audit' mode, alerts will be sent only to the ATP portal with no end-user experience. For end-user experience, set the config to 'Enable' mode.|
+   | `DefenderOpenNetworkDetection` | Integer | 0 | 1 - Audit, 0 - Disable(default), 2 - Enable. This setting is managed by an IT Admin to audit, disable, or enable open network detection, respectively. In 'Audit' mode, alerts is sent only to the ATP portal with no end-user experience. For end-user experience, set the config to 'Enable' mode.|
    | `DefenderEndUserTrustFlowEnable` | String | false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks. |
    | `DefenderNetworkProtectionAutoRemediation` | String | true | true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender. |
    | `DefenderNetworkProtectionPrivacy` | String | true | true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection. |
@@ -143,7 +143,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
     |Key| Default (true - enable, false - disable)|Description|
     |---|---|---|
-    |`DefenderOpenNetworkDetection`|0| 1 - Audit, 0 - Disable (default), 2 - Enable. This setting is managed by an IT admin to enable, audit, or disable open network detection. In Audit mode, alerts will be sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
+    |`DefenderOpenNetworkDetection`|0| 1 - Audit, 0 - Disable (default), 2 - Enable. This setting is managed by an IT admin to enable, audit, or disable open network detection. In Audit mode, alerts is sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
     |`DefenderEndUserTrustFlowEnable`| false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks.|
     |`DefenderNetworkProtectionAutoRemediation`| true |true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender.|
     |`DefenderNetworkProtectionPrivacy`| true |true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection.|
@@ -210,18 +210,18 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
 
 3. **End User Privacy Controls** These controls help the end user to configure the information shared to their organization.
 
-   For Supervised devices, End User controls aren't visible. Admin will decide and controls the settings.
-    - However, for Unsupervised devices, the control will be displayed under the **Settings \> Privacy**.
-        - Users will see a toggle for **Unsafe Site Info**.
-        - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**.
-        - If enabled by Admin, Users can decide if they want to send the unsafe site info to their Organization or not.
-        - By default, it's set to `false`. The unsafe site information will not be sent.
-        - If user toggles it to `true`, the unsafe site details will  be sent.
+   For Supervised devices, End User controls aren't visible. Admin will decide and controls the settings. However, for Unsupervised devices, the control is displayed under the **Settings \> Privacy**.
 
-Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
+   - Users see a toggle for **Unsafe Site Info**.
+   - This toggle is only visible if Admin has set **DefenderExcludeURLInReport = true**.
+   - If enabled by an Admin, Users can decide if they want to send the unsafe site info to their Organization or not.
+   - By default, it's set to `false`. The unsafe site information isn't sent.
+   - If user toggles it to `true`, the unsafe site details are sent.
+
+Turning the above privacy controls on or off doesn't impact the device compliance check or conditional access.
 
 > [!NOTE]
-> On Supervised devices with the configuration profile, Microsoft Defender for Endpoint can access the entire URL and if it is found to be phishing, it will be blocked.
+> On Supervised devices with the configuration profile, Microsoft Defender for Endpoint can access the entire URL and if it is found to be phishing, it is blocked.
 > On an Unsupervised device, Microsoft Defender for Endpoint has access to only the domain name, and if the domain is not a phishing URL, it won't be blocked.
 
 ## Optional Permissions
@@ -241,14 +241,14 @@ Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the o
     - On the Settings page, select **Use configuration designer** and add **DefenderOptionalVPN** as the key and value type as **Boolean**.
 
       - To enable optional VPN permission, enter value as `true` and assign this policy to users. By default, this value is set to `false`.
-      - For users with key set as `true`, the users will be able to onboard the app without giving the VPN permission.
+      - For users with key set as `true`, the users is able to onboard the app without giving the VPN permission.
 
     - Select **Next** and assign this profile to targeted devices/users.
 
 1. **End User flow** - User will install and open the app to start the onboarding.
     - If an admin has set up optional permissions, then the user can **Skip** VPN permission and complete onboarding.
-    - Even if the user has skipped VPN, the device will be able to onboard, and a heartbeat will be sent.
-    - If VPN is disabled, web protection will not be active.
+    - Even if the user has skipped VPN, the device is able to onboard, and a heartbeat is sent.
+    - If VPN is disabled, web protection isn't active.
     - Later, the user can enable web protection from within the app. This will install the VPN configuration on the device.
 
 > [!NOTE]
@@ -258,8 +258,8 @@ Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the o
 
 Microsoft Defender for Endpoint has the capability of detecting unmanaged and managed devices that are jailbroken. These jailbreak checks are done periodically. If a device is detected to be jailbroken,
 
-1. A **High**-risk alert will be reported to the Microsoft Defender portal. If device Compliance and Conditional Access is set up based on device risk score, then the device will be blocked from accessing corporate data.
-1. User data on app will be cleared. When user opens the app after jailbreaking the VPN profile also will be deleted and no web protection will be offered.
+1. A **High**-risk alert is reported to the Microsoft Defender portal. If device Compliance and Conditional Access is set up based on device risk score, then the device is blocked from accessing corporate data.
+1. User data on app is cleared. When user opens the app after jailbreaking the VPN profile also is deleted and no web protection is offered.
 
 ### Configure compliance policy against jailbroken devices
 
@@ -338,7 +338,7 @@ Defender for Endpoint on iOS supports vulnerability assessments of OS and apps. 
 
 1. Once the config is applied, end-user will need to open the app to **Approve** the privacy setting.
     - Privacy approval screen will come only for unsupervised devices.
-    - Only if end-user approves the privacy, the app information will be sent to the Defender for Endpoint console.
+    - Only if end-user approves the privacy, the app information is sent to the Defender for Endpoint console.
 
         :::image type="content" source="images/tvm-user-privacy2.png" alt-text="Screenshot of the end user privacy screen." lightbox="images/tvm-user-privacy2.png":::
 
@@ -431,7 +431,7 @@ Use the following steps to configure the option to send feedback data to Microso
 
    - To remove the ability of end-users to provide feedback, set the value as `false` and assign this policy to users. By default, this value is set to `true`. For US Government customers, the default value is set to 'false'.
 
-   - For users with key set as `true`, there will be an option to send Feedback data to Microsoft within the app (**Menu** \> **Help & Feedback** \> **Send Feedback to Microsoft**).
+   - For users with key set as `true`, there is an option to send Feedback data to Microsoft within the app (**Menu** \> **Help & Feedback** \> **Send Feedback to Microsoft**).
 
 1. Select **Next** and assign this profile to targeted devices/users.
 
