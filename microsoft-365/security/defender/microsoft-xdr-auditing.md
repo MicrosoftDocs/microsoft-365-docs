@@ -31,8 +31,8 @@ search.appverid: met150
 - To use the auditing functionality, your organization must have Microsoft 365 E3/E5 or Office E3/E5 subscriptions.
 - To access the audit log, you need to have the **View-Only Audit Logs** or **Audit Logs** role in Exchange Online. By default, those roles are assigned to the Compliance Management and Organization Management role groups.
 
->
->[!Note] Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online.
+>[!Note]
+> Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online.
 
 - Activities retention:
    - For users assigned an Office E5 or Microsoft 365 E5 license the audit records are retained for one year by default.
@@ -61,8 +61,8 @@ For more information, see [Manage audit log retention policies](/purview/audit-l
 
    :::image type="content" source="../../media/defender/unified-audit-log-xdr.png" alt-text="Screenshot of the unified audit log page in Microsoft Defender XDR " lightbox="../../media/defender/unified-audit-log-xdr.png":::
 
->
->[!Note] The Audit log page can also be accessed from the [Compliance portal](https://compliance.microsoft.com/auditlogsearch).
+>[!Note]
+>The Audit log page can also be accessed from the [Compliance portal](https://compliance.microsoft.com/auditlogsearch).
 
 2. Open the activities dropdown or click View all activities to open the side pane:
 
