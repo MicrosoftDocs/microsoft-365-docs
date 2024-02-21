@@ -10,7 +10,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier2

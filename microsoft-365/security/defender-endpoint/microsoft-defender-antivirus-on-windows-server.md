@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
-manager: dansimp
+manager: deniseb
 ms.topic: conceptual
 ms.date: 04/06/2023
 ms.collection: 
