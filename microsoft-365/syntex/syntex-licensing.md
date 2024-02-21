@@ -3,7 +3,7 @@ title: Licensing for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
-ms.date: 09/25/2023
+ms.date: 02/15/2024
 manager: jtremper
 audience: admin
 ms.topic: conceptual
@@ -72,7 +72,7 @@ As of July 1, 2023, per-user licenses are no longer available for purchase. Per-
 Users with active per-user licenses can perform the following tasks:
 
 - Apply an unstructured document processing model to a library. (Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.)
-- Create a structured document processing model or a freeform document processing model via the entry point in a library.
+- Create a prebuilt, structured, or freeform document processing model via the entry point in a library.
 - Upload content to a library where a custom model has been applied.
 - Run an unstructured document processing model on-demand.
 - Create a modern template with content assembly.

@@ -40,7 +40,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, alert policies
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
     - _Create and manage alert policies in the Threat management category_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _View alerts in the Threat management_ category: Membership in the **Security Reader** role group.
-  - [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
   For information about other alert policy categories, see [Permissions required to view alerts](/purview/alert-policies#rbac-permissions-required-to-view-alerts).
 

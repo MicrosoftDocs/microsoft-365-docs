@@ -4,7 +4,7 @@ author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
 audience: ITPro
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -25,7 +25,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 description: Learn how a user with Away status or Do not disturb status can set another user as a delegate in their Teams status message.
 ms.custom: seo-marvel-mar2020
-ms.date: 1/17/2024
+ms.date: 01/17/2024
 ---
 
 # Use a Teams status message to assign a delegate

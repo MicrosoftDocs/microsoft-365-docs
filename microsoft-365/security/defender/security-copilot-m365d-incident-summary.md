@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 10/10/2023
+ms.date: 02/12/2024
 ---
 
 # Summarize an incident with Microsoft Security Copilot in Microsoft Defender XDR
@@ -39,6 +39,9 @@ Microsoft Defender XDR applies the capabilities of [Microsoft Security Copilot](
 Incident responders can easily gain the right context to investigate and remediate incidents through Microsoft Defender XDR's correlation capabilities and Security Copilot's AI-powered data processing and contextualization. With an incident summary, responders can quickly get important information to help in their investigation.
 
 This guide outlines what to expect and how to access the summarizing capability of Security Copilot within Microsoft Defender XDR, including information on providing feedback.
+
+> [!NOTE]
+> The incident summary capability is also available in the Security Copilot standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
 
 ## Technical requirements
 
