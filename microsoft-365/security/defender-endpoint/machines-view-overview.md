@@ -125,7 +125,7 @@ Filter | Description
 **Onboarding status** | Onboarding status indicates whether the device is currently onboarded to Microsoft Defender for Endpoint or not. Device discovery must be enabled for this filter to appear. You can filter by the following states: </br> - **Onboarded**: The endpoint is onboarded to Microsoft Defender for Endpoint.  </br> - **Can be onboarded**: The endpoint was discovered in the network as a supported device, but it's not currently onboarded. Microsoft highly recommends onboarding these devices. </br> - **Unsupported**: The endpoint was discovered in the network, but isn't supported by Microsoft Defender for Endpoint. </br> - **Insufficient info**: The system couldn't determine the supportability of the device.</br></br> (_Computers and mobile only_)
 **Antivirus status** | Filter the view based on whether the antivirus status is disabled, not updated or unknown.</br></br> (_Computers and mobile only_)
 **Group** | Filter the list based on the group you're interested in investigating. </br></br> (_Computers and mobile only_)
-**Managed by** | Managed by indicates how the device is being managed. You can filter by:</br> - Microsoft Defender for Endpoint</br> - Microsoft Intune, including co-management with Microsoft Configuration Manager via tenant attach</br>- Microsoft Configuration manager (ConfigMgr)</br> - Unknown: This could be due the running an outdated Windows version, GPO management, or another non-Microsoft MDM.</br></br> (_Computers and mobile only_)
+**Managed by** | Managed by indicates how the device is being managed. You can filter by:</br> - Microsoft Defender for Endpoint</br> - Microsoft Intune, including co-management with Microsoft Configuration Manager via tenant attach</br>- Microsoft Configuration manager (ConfigMgr)</br> - Unknown: This issue could be due the running an outdated Windows version, GPO management, or another non-Microsoft MDM.</br></br> (_Computers and mobile only_)
 **Device Type** | Filter by the device type you're interested in investigating.</br></br> (_IoT devices only_)
 **Mitigation status** | Filter by isolation or containment status of a device.
 
@@ -133,15 +133,15 @@ Filter | Description
 
 You can add or remove columns from the view and sort the entries by clicking on an available column header.
 
-On the **Computer and Mobiles** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
+On the **Computer and Mobiles** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 
 :::image type="content" alt-text="Image of computers and mobiles" source="images/computerandmobilescolumns.png":::
 
-On the **Network devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
+On the **Network devices** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 
 :::image type="content" alt-text="Image of network device columns" source="images/networkdevicescolumns.png":::
 
-On the **IoT devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
+On the **IoT devices** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 
 :::image type="content" alt-text="Image of IoT device columns" source="images/iotdevicescolumns.png":::
 
