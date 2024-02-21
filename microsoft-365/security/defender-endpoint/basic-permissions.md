@@ -1,24 +1,22 @@
 ---
 title: Use basic permissions to access the portal
 description: Learn how to use basic permissions to access the Microsoft Defender for Endpoint portal.
-keywords: assign user roles, assign read and write access, assign read only access, user, user roles, roles
-ms.sitesec: library
-ms.pagetype: security
 ms.service: defender-endpoint
 ms.subservice: onboard
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.custom:
-  - has-azure-ad-ps-ref, azure-ad-ref-level-one-done 
-manager: dansimp
+  - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done 
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/18/2024
+ms.date: 02/21/2024
 ---
 
 # Use basic permissions to access the portal

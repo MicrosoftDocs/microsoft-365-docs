@@ -1,7 +1,7 @@
 ---
 title: Manage tamper protection on an individual device
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
-manager: dansimp
+manager: deniseb
 description: Turn tamper protection on or off for an individual device.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
