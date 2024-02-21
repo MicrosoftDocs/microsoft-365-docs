@@ -188,7 +188,7 @@ The **Azure Advanced Threat Protection** card displays a high-level overview of 
 
 ### Logged on users
 
-The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the **See all users** link opens the details pane, which displays information such as user type, log on type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
+The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the **See all users** link opens the details pane, which displays information such as user type, sign-in type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
 
 :::image type="content" source="images/logged-on-users.png" alt-text="The user details pane" lightbox="images/logged-on-users.png":::
 
@@ -207,11 +207,11 @@ The **Security assessments** card shows the overall exposure level, security rec
 The **Device health status** card shows a summarized health report for the specific device. One of the following messages is displayed at the top of the card to indicate the overall status of the device (listed in order of highest to lowest priority):
 
 - Defender Antivirus not active
-- Security intelligence is not up to date
-- Engine is not up to date
+- Security intelligence isn't up to date
+- Engine isn't up to date
 - Quick scan failed
 - Full scan failed
-- Platform is not up to date
+- Platform isn't up to date
 - Security intelligence update status is unknown
 - Engine update status is unknown
 - Quick scan status is unknown
@@ -220,9 +220,9 @@ The **Device health status** card shows a summarized health report for the speci
 - Device is up to date
 - Status not available for macOS & Linux
 
-Other information in the card include: the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode.
+Other information in the card includes: the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode.
 
-Please note that a grey circle indicates that the data is unknown.
+Note that a grey circle indicates that the data is unknown.
 
 > [!NOTE]
 > The overall status message for macOS and Linux devices currently shows up as 'Status not available for macOS & Linux'. Currently, the status summary is only available for Windows devices. All other information in the table is up to date to show the individual states of each device health signal for all supported platforms.
@@ -234,7 +234,7 @@ To gain an in-depth view of the device health report, you can go to **Reports > 
 
 :::image type="content" source="images/device-health-status.png"  alt-text="The device health status card" lightbox="images/device-health-status.png":::
 
-## Related topics
+## Related articles
 
 - [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender for Endpoint alerts](manage-alerts.md)
@@ -245,4 +245,5 @@ To gain an in-depth view of the device health report, you can go to **Reports > 
 - [Investigate a user account in Defender for Endpoint](investigate-user.md)
 - [Security recommendation](tvm-security-recommendation.md)
 - [Software inventory](tvm-software-inventory.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
