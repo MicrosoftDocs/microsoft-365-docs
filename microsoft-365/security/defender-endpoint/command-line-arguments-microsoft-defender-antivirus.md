@@ -3,11 +3,11 @@ title: Use the command line to manage Microsoft Defender Antivirus
 description: Run Microsoft Defender Antivirus scans and configure next-generation protection with a dedicated command-line utility.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer: ksarens
-manager: dansimp
+manager: deniseb
 ms.date: 06/06/2023
 ms.subservice: ngp
 ms.topic: how-to

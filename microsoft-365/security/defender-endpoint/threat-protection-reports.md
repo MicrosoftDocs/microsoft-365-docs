@@ -1,15 +1,11 @@
 ---
 title: Threat protection report in Microsoft Defender for Endpoint
-description: Track alert detections, categories, and severity using the threat protection report
-keywords: alert detection, source, alert by category, alert severity, alert classification, determination
+description: Track alert detections, categories, and severity using the threat protection report.
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -37,9 +33,10 @@ ms.date: 1/31/2024
 Due to the deprecation of the Defender for Endpoint Threat protection report, you can use the Defender XDR alerts view, filtered against Defender for Endpoint, to see the current status of alerts for protected devices. For alert status, such as *unresolved*, you can filter against *New* and *In progress* items. [Learn more about Defender XDR Alerts](../defender/investigate-alerts.md).
 
 ## Use Advanced hunting queries
-Due to the deprecation of the Defender for Endpoint Threat protection report, you can use Advanced hunting queries to find Defender for Endpoint threat protection information.  Note that currently there is no alert status in Advanced hunting elements that maps to resolve/unresolve. [Learn more about Advanced hunting in Defender XDR](../defender/advanced-hunting-overview.md). See below for a sample advanced hunting query that shows endpoint related threat protection details.
+Due to the deprecation of the Defender for Endpoint Threat protection report, you can use Advanced hunting queries to find Defender for Endpoint threat protection information.  Currently there's no alert status in Advanced hunting elements that maps to resolve/unresolve. [Learn more about Advanced hunting in Defender XDR](../defender/advanced-hunting-overview.md). See the following section for a sample advanced hunting query that shows endpoint related threat protection details.
 
 ### Alert status
+
 ```kusto
 // Severity
 AlertInfo
@@ -83,7 +80,7 @@ AlertInfo
 | render timechart
 ```
 
-## Related topics 
+## Related articles 
 
 - [Device health and compliance report](device-health-reports.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

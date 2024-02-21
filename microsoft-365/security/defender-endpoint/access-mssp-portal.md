@@ -1,15 +1,11 @@
 ---
 title: Access the Microsoft Defender XDR MSSP customer portal
 description: Access the Microsoft Defender XDR MSSP customer portal
-keywords: managed security service provider, mssp, configure, integration
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
