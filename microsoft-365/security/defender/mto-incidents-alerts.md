@@ -22,8 +22,6 @@ ms.date: 09/01/2023
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 Multi-tenant management in Microsoft Defender XDR enables security operation center (SOC) analysts to access and analyze data from multiple tenants in one place, allowing them to quickly identify and respond to threats.
 
 You can manage incidents & alerts originating from multiple tenants under **Incidents & alerts**.
