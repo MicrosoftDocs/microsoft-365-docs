@@ -29,7 +29,7 @@ To run a scan for Linux, see [Supported Commands](/microsoft-365/security/defend
 
 Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.
 
-## Pre-requisite
+## Prerequisite
 
 > [!NOTE]
 > To get a list of all the time zones, run the following command:
@@ -118,7 +118,7 @@ Use the following commands:
 cron - Manage cron.d and crontab entries
 ```
 
-See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.
+For more information, see [Ansible documentation](https://docs.ansible.com/ansible/latest/modules/cron_module.html).
 
 ### To set crontabs in Chef
 
@@ -126,7 +126,7 @@ See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://d
 cron resource
 ```
 
-See <https://docs.chef.io/resources/cron/> for more information.
+For more inforamtion, see [Chef documentation](https://docs.chef.io/resources/cron).
 
 ### To set cron jobs in Puppet
 
@@ -138,7 +138,7 @@ See <https://puppet.com/docs/puppet/5.5/types/cron.html> for more information.
 
 **Automating with Puppet: Cron jobs and scheduled tasks**
 
-See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) for more information.
+For more information, see [Puppet documentation about jobs and scheduled tasks](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/).
 
 ### To manage cron jobs in SaltStack
 
@@ -154,7 +154,7 @@ mdatp scan quick > /tmp/mdatp_scan_log.log:
     - special: '@hourly'
 ```
 
-See <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cron.html> for more information.
+For more information, see the [Salt.States.Cron documentation](https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cron.html).
 
 ## Additional information
 
