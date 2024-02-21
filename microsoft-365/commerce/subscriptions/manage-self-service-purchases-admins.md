@@ -73,7 +73,7 @@ We use the directory data to provide the user with a license and to send email a
 
 ## View who has licenses for a self-service purchase or trial subscription
 
-As an admin, you can't assign or unassign licenses for a purchase or trial subscription bought by a user in your organization. However, you can [take over a purchase or trial subscription](#take-over-a-purchase-or-trial-subscription), and then assign or unassign licenses.
+As an admin, you can't assign or unassign licenses for a purchase or trial subscription bought by a user in your organization. However, you can [Take over a self-service purchase or trial subscription](#take-over-a-self-service-purchase-or-trial-subscription), and then assign or unassign licenses.
 
 [!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
@@ -109,7 +109,7 @@ You can assign existing licenses or buy extra subscriptions through existing agr
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. Find and select the product that you want to buy, then select **Buy**.
 3. Complete the remaining steps to complete your purchase.
-4. To export a list of users to reference in the next step, follow the steps in [View who has licenses for a purchase or trial subscription](#view-who-has-licenses-for-a-purchase-or-trial-subscription).
+4. To export a list of users to reference in the next step, follow the steps in [View who has licenses for a self-service purchase or trial subscription](#view-who-has-licenses-for-a-self-service-purchase-or-trial-subscription).
 5. Assign licenses to everyone who has a license in the other subscription. For instructions on how to do this, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).
 6. Contact the person who bought the original subscription and ask them to [cancel it](manage-self-service-purchases-users.md#cancel-a-subscription).
 
