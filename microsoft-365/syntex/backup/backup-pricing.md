@@ -24,12 +24,23 @@ description: Learn about the charge model and pricing calculator for Microsoft 3
 
 ## Microsoft 365 Backup charge model
 
-The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a [pay-as-you-go consumption-based service](../syntex-pay-as-you-go-services.md). The preview list price is $0.15/GB/mo of protected content. The size of protected content is equal to the cumulative size of the mailboxes being protected plus the size of the SharePoint sites and OneDrive accounts being protected (that is, the size of the live OneDrive accounts and SharePoint sites as display in the live sites’ usage reports) plus the size of any deleted/versioned content held for restore during the protection period.
+The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a [pay-as-you-go consumption-based service](../syntex-pay-as-you-go-services.md). The preview list price is $0.15/GB/month of protected content.
 
-As an example, if you have a site under protection that is currently 1 GB for the first month, you'll be charged 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no long be charged for Backup.
+### What’s counted towards protected backup storage?
+
+Microsoft 365 Backup will charge you for content size of the following for 365 days from when it is added to backup protection:
+
+- Cumulative back up size of the mailboxes, SharePoint sites, and OneDrive accounts being protected. Size of OneDrive accounts and SharePoint sites are the size of the live OneDrive accounts and SharePoint sites as displayed in the live sites’ usage reports. Mailboxes are the size of the user's mailbox plus their online archives plus deleted items held for Backup.
+
+- Deleted content in user’s Recycle Bin and second-stage Recycle Bin (also known as Site Collection Recycle Bin).
 
 > [!NOTE]
-> These prices are subject to change when the product becomes generally available. A partner application integrated with Microsoft 365 Backup Storage might charge a different rate for their service.
+> Restore points or size of restores will not be charged. Although Azure is being used to process the payments, there are no additional Azure API or storage costs beyond the Microsoft 365 Backup usage charges mentioned above.
+
+As an example, if you have a site under protection that is currently 1 GB for the first month, you'll be charged 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no longer be charged for Backup.
+
+> [!NOTE]
+> These prices are subject to change when the product becomes generally available. A partner application integrated with Microsoft 365 Backup storage might charge a different rate for their service.
 
 <!---<Include charge model video >--->
 

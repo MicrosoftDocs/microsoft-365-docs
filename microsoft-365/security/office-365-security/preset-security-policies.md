@@ -55,8 +55,6 @@ The rest of this article how to configure preset security policies.
     - _Read-only access to preset security policies_: Membership in the **Global Reader** role group.
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-<a name='use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users'></a>
-
 ## Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. Or, to go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
@@ -143,7 +141,7 @@ The rest of this article how to configure preset security policies.
 
    Click in the **Add domains** box, enter a domain value, press the ENTER key or select the value that's displayed below the box. To remove a domain from the box and start over, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the domain. When you're ready to add the domain, select **Add**. Repeat this step as many times as necessary.
 
-  The domains you added are listed on the page. To remove the domain, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
+   The domains you added are listed on the page. To remove the domain, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
    The domains you added are listed on the page. To remove a domain, select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: next to the entry.
 
@@ -168,15 +166,11 @@ The rest of this article how to configure preset security policies.
 
 10. On the **Standard protection updated** or **Strict protection updated** page, select **Done**.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies'></a>
-
 ## Use the Microsoft Defender portal to modify the assignments of Standard and Strict preset security policies
 
-The steps to modify the assignment of the **Standard protection** or **Strict protection** preset security policy are the same as when you initially [assigned the preset security policies to users](#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+The steps to modify the assignment of the **Standard protection** or **Strict protection** preset security policy are the same as when you initially [assigned the preset security policies to users](#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 To disable the **Standard protection** or **Strict protection** preset security policies while still preserving the existing conditions and exceptions, slide the toggle to :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::. To enable the policies, slide the toggle to :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
-
-<a name='use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy'></a>
 
 ## Use the Microsoft Defender portal to add exclusions to the Built-in protection preset security policy
 
@@ -552,7 +546,7 @@ The differences in meaningful policy settings in the Standard preset security po
 |&nbsp;&nbsp;**Spam** detection action (_SpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |**Anti-phishing policy**|||
 |&nbsp;&nbsp;**If the message is detected as spoof by spoof intelligence** (_AuthenticationFailAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
-|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Not selected (`$false`)|
+|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Selected (`$true`)|
 |&nbsp;&nbsp;**If mailbox intelligence detects an impersonated user** (_MailboxIntelligenceProtectionAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |&nbsp;&nbsp;**Phishing email threshold** (_PhishThresholdLevel_)|**3 - More aggressive** (`3`)|**4 - Most aggressive** (`4`)|
 |**Safe Attachments policy**|No difference|No difference|

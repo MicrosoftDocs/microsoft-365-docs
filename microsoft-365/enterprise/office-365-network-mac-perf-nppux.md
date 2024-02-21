@@ -1,5 +1,5 @@
 ---
-title: "Network provider connectivity attribution in the Microsoft 365 Admin Center (PREVIEW)"
+title: "Network provider connectivity attribution in the Microsoft 365 Admin Center"
 ms.author: teleary
 author: temanteleary
 manager: scotv
@@ -18,7 +18,7 @@ description: "Network provider connectivity attribution in the Microsoft 365 Adm
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# Network provider connectivity attribution in the Microsoft 365 Admin Center (PREVIEW)
+# Network provider connectivity attribution in the Microsoft 365 Admin Center.
 
 ## The network provider table
 
@@ -74,13 +74,19 @@ The table of locations can be filtered by specific network providers. The table 
 
 A network providers column is included in the table where network providers are shown as fit. The network providers are all shown in the details tab.
 
-## Network Provider Index Chart for the location
+## Top Providers for a location (Network Provider Index or NPI chart)
 
-The Network Provider Index Chart (NPI Chart) shows in an office location summary and lists large network providers that are being used by Office 365 customers in the same country/region and state as your office. We include availability and performance information attributed to these providers. This chart also shows a target baseline that shows what good performance observed in the same country/region and state looks like.
+The NPI chart shows the network providers with the highest performance for Office 365 applications for customers who are in the same country/region and state as your office. We show availability and performance data related to these providers. This chart also has a target baseline that shows the best performance observed in the same country/region and state.
 
-:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppux-NPIChart.png" alt-text="Example of a network provider index chart that shows availability and performance for each network provider.":::
+:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppux-NPIChart-01222024.png" alt-text="Example of a network provider index chart that shows availability and performance for each network provider.":::
+
+Note: NPI chart is currently available only for United States of America, the chart will be expanded soon to all locations globally.
+
+## Providers used at this location 
 
 Below the NPI Chart is a list of network providers detected for your users at this specific office location. The Table of network providers for this location has the following fields:
+
+:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppux-providers-at-location.png" alt-text="Image showing Table of nework providers detected for your users at this specific office location.":::
 
 * Network provider name
 * Solution name

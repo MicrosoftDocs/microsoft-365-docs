@@ -2,16 +2,12 @@
 title: Create indicators for files
 ms.reviewer:
 description: Create indicators for a file hash that define the detection, prevention, and exclusion of entities.
-keywords: file, hash, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 08/10/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

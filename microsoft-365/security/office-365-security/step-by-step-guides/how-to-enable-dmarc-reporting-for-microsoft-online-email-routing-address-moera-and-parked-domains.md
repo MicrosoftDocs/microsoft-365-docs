@@ -25,14 +25,14 @@ ms.date: 1/31/2023
 
 # How to enable DMARC Reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains
 
-Best practice for domain email security protection is to protect yourself from spoofing using Domain-based Message Authentication, Reporting, and Conformance (DMARC). If you haven't already enabled DMARC for your domains, that should be the first step, detailed here: [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure)
+Best practice for domain email security protection is to protect yourself from spoofing using Domain-based Message Authentication, Reporting, and Conformance (DMARC). Enabling DMARC for your domains should be the first step as described here: [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure)
 
-This guide is designed to help you configure DMARC for domains not covered by the main DMARC article. These domains include domains that you're not using for email, but could be leveraged by attackers if they remain unprotected:
+This guide is designed to help you configure DMARC for domains not covered by the main DMARC article. These domains include domains that you're not using for email, but could be used by attackers if they remain unprotected:
 
 - Your `onmicrosoft.com` domain, also known as the Microsoft Online Email Routing Address (MOERA) domain.
 - Parked custom domains that you're currently not using for email yet.
 
-## What you'll need
+## What you need
 
 - Microsoft 365 admin center and access to your DNS provider hosting your domains.
 - Sufficient permissions as Global Admin to make the appropriate changes in the Microsoft 365 admin center.
@@ -46,9 +46,9 @@ This guide is designed to help you configure DMARC for domains not covered by th
 1. Select your tenant domain (for example, contoso.onmicrosoft.com).
 1. On the page that loads, select **DNS records**.
 1. Select **+ Add record**.
-1. A flyout will appear on the right. Ensure that the selected Type is **TXT (Text)**.
+1. A flyout opens. Ensure that the selected Type is **TXT (Text)**.
 1. Add `_dmarc` as **TXT name**.
-1. Add your specific DMARC value. For more information, see [Form the DMARC TXT record for your domain](../email-authentication-dmarc-configure.md#step-4-form-the-dmarc-txt-record-for-your-domain).
+1. Add your specific DMARC value. For more information, see [Syntax for DMARC TXT records](../email-authentication-dmarc-configure.md#syntax-for-dmarc-txt-records).
 1. Press **Save**.
 
 ## Active DMARC for parked domains
@@ -63,6 +63,6 @@ Wait until the DNS changes are propagated and try to spoof the configured domain
 
 ## More Information
 
-[Set up SPF to help prevent spoofing - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/email-authentication-spf-configure)
+[Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/email-authentication-spf-configure).
 
-[Use DMARC to validate email, setup steps - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure)
+[Use DMARC to validate email, setup steps](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure).
