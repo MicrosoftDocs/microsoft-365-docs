@@ -25,7 +25,7 @@ ms.collection:
 Service documentation: [Microsoft Copilot for Microsoft 365 overview](/microsoft-365-copilot/microsoft-365-copilot-overview) and [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
 
 Capability Summary: Microsoft Copilot for Microsoft 365 is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 apps that you use every day, such as Word, Excel, PowerPoint, Outlook, and Teams. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
-The following applications provide the ability to interact with Microsoft Copilot for Microsoft 365:  Microsoft Word, PowerPoint, Loop, Outlook, Teams (Chat, Meetings, Calls, Whiteboard), and OneNote.  The interactions with these applications and the related semantic index will be stored in the relevant _Geography_. 
+The following applications provide the ability to interact with Microsoft Copilot for Microsoft 365:  Microsoft Word, Excel, PowerPoint, Loop, Outlook, Teams (Chat, Meetings, Calls, Whiteboard), and OneNote.  The interactions with these applications and the related semantic index will be stored in the relevant _Geography_. Copilot interaction data for all stated applications is stored within the Microsoft Teams data storage infrastructure.
 
 ## Data Residency Commitments Available for Microsoft Copilot for Microsoft 365
 
@@ -37,7 +37,7 @@ Required Conditions:
 
 **Commitment:**
 
-_For current language, refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services"._
+_For current language, refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services" and reference statement (5)._
 
 ### Advanced Data Residency add-on
 
@@ -86,4 +86,4 @@ Microsoft Copilot for Microsoft 365 prompts and responses are stored with the Te
 
 ### How can I determine customer data location?
 
-You can find the actual data location in _Tenant_ Microsoft 365 admin center. As a _Tenant_ Global Administrator you can find the actual data location by referencing the Microsoft Teams data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.
+You can find the actual data location in _Tenant_ Microsoft 365 admin center. As a _Tenant_ Global Administrator you can find the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.
