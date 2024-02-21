@@ -1,14 +1,14 @@
 ---
 title: Microsoft Defender Antivirus exclusions on Windows Server
 ms.reviewer: pahuijbr
-manager: dansimp
+manager: deniseb
 description: Windows Server includes automatic exclusions, based on server role. You can also add custom exclusions.
 ms.service: defender-endpoint
 ms.subservice: ngp
 ms.localizationpriority: medium
 ms.date: 08/07/2023
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.topic: conceptual
 ms.custom: nextgen
 ms.collection: 

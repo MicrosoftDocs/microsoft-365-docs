@@ -112,6 +112,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Transport rule** (mail flow rule)
   - **Bulk**
   - **Spam**
+  - **Data loss prevention**
   - **Malware**: Anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365. The **Policy Type** value indicates which feature was used.
   - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](anti-phishing-policies-about.md#spoof-settings) or [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
   - **High confidence phishing**
@@ -131,6 +132,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Anti-phishing policy**
   - **Anti-spam policy**
   - **Transport rule** (mail flow rule)
+  - **Data loss prevention rule**
 
   The **Policy type** and **Quarantine reason** values are interrelated. For example, **Bulk** is always associated with an **Anti-spam policy**, never with an **Anti-malware policy**.
 
@@ -364,7 +366,7 @@ In the **Submit to Microsoft for analysis** flyout that opens, configure the fol
    - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
     - **Allow entry note**: Enter an optional note that contains additional information.
 
-  - **It appears clean**: Select this option if you want to get a second opinion from Microsoft.
+  - **It appears clean**: Select this option if you're unsure and you want a verdict from Microsoft.
 
 When you're finished on the **Submit to Microsoft for analysis** flyout, select **Submit**.
 

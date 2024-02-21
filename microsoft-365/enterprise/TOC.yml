@@ -66,6 +66,8 @@
           items: 
             - name: Microsoft 365 endpoints
               href: microsoft-365-endpoints.md
+            - name: Unified cloud.microsoft domain for Microsoft 365 apps
+              href: cloud-microsoft-domain.md
             - name: Managing Office 365 endpoints
               href: managing-office-365-endpoints.md
             - name: Worldwide endpoints

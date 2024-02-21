@@ -122,8 +122,7 @@ View reports, change your settings, and modify user roles.
 ![The quick launch menu for Microsoft Defender XDR permissions and reporting, on the left navigation pane in the Microsoft Defender portal.](../../media/m365d-settings-nav.png)
   
 > [!NOTE]
-> DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.
-> For Defender for Office 365 users, you can now *manage and rotate* DKIM keys through Microsoft Defender XDR: <https://security.microsoft.com/threatpolicy>, or navigate to **Policy & rules** \> **Threat policies** \> \> **Rules** section \> **DKIM**.
+> For Defender for Office 365 users, you can now *manage and rotate* DKIM keys in Microsoft Defender XDR at <https://security.microsoft.com/authentication?viewid=DKIM>.
 >
 > For more information, see [Use DKIM to validate outbound email sent from your custom domain](/microsoft-365/security/office-365-security/email-authentication-dkim-configure).
 

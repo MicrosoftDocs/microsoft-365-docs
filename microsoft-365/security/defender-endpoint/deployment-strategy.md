@@ -1,16 +1,11 @@
 ---
 title: Identify Defender for Endpoint architecture and deployment method
 description: Select the best Microsoft Defender for Endpoint deployment strategy for your environment
-keywords: deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem, intune
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
   - m365-security

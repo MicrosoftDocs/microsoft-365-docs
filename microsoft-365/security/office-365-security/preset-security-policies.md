@@ -546,7 +546,7 @@ The differences in meaningful policy settings in the Standard preset security po
 |&nbsp;&nbsp;**Spam** detection action (_SpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |**Anti-phishing policy**|||
 |&nbsp;&nbsp;**If the message is detected as spoof by spoof intelligence** (_AuthenticationFailAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
-|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Not selected (`$false`)|
+|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Selected (`$true`)|
 |&nbsp;&nbsp;**If mailbox intelligence detects an impersonated user** (_MailboxIntelligenceProtectionAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |&nbsp;&nbsp;**Phishing email threshold** (_PhishThresholdLevel_)|**3 - More aggressive** (`3`)|**4 - Most aggressive** (`4`)|
 |**Safe Attachments policy**|No difference|No difference|
