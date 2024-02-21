@@ -179,7 +179,7 @@ The **Missing KBs** tab lists the missing security updates for the device.
 
 ### Active alerts
 
-The **Azure Advanced Threat Protection** card will display a high-level overview of alerts related to the device and their risk level, if you have enabled the Microsoft Defender for Identity feature, and there are any active alerts. More information is available in the "Alerts" drill down.
+The **Azure Advanced Threat Protection** card displays a high-level overview of alerts related to the device and their risk level, if you're using the Microsoft Defender for Identity feature, and there are any active alerts. More information is available in the "Alerts" drill down.
 
 :::image type="content" source="images/risk-level-small.png" alt-text="The active alerts card" lightbox="images/risk-level-small.png":::
 
