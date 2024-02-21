@@ -65,7 +65,7 @@ We use the directory data to provide the user with a license and to send email a
 
 ## View self-service subscriptions
 
-[!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
+[!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
@@ -75,7 +75,7 @@ We use the directory data to provide the user with a license and to send email a
 
 As an admin, you can't assign or unassign licenses for a purchase or trial subscription bought by a user in your organization. However, you can [Take over a self-service purchase or trial subscription](#take-over-a-self-service-purchase-or-trial-subscription), and then assign or unassign licenses.
 
-[!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
+[!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
@@ -104,7 +104,7 @@ For more information, see [Use AllowSelfServicePurchase for the MSCommerce Power
 
 You can assign existing licenses or buy extra subscriptions through existing agreements for users assigned to self-service purchases or trials. After you assign these centrally purchased licenses, you can request that users cancel their existing subscriptions. Alternatively, you can take over the subscription and cancel it yourself in the admin center. For steps to do that, see [Take over a self-service purchase or trial subscription](#take-over-a-self-service-purchase-or-trial-subscription).
 
-[!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
+[!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. Find and select the product that you want to buy, then select **Buy**.
@@ -127,7 +127,7 @@ When you move users to a different subscription, the old subscription is automat
 > [!NOTE]
 > You must have an available license for each user you're moving in the subscription that you're moving users to.
 
-[!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
+[!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
@@ -143,7 +143,7 @@ When you move users to a different subscription, the old subscription is automat
 
 When you choose to cancel a self-service purchase or trial subscription, users with licenses lose access to the product. The user who originally signed up for the subscription receives an email that says the subscription was canceled.
 
-[!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
+[!INCLUDE [office-365-operated-by-21vianet-admin-center-link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
