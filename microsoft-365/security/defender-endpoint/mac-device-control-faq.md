@@ -1,13 +1,9 @@
 ---
 title: macOS Device control policies frequently asked questions (FAQ)
 description: Get answers to common questions about device control policies using JAMF or Intune.
-keywords: microsoft, defender, endpoint, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media, jamf, intune, faq,
 ms.service: defender-endpoint
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
