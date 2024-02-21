@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Frequently asked questions (FAQs) about tamper protection 
-  description: Find answers to frequently asked questions
+  description: Find answers to frequently asked questions.
   ms.service: defender-endpoint
   ms.subservice: ngp
   ms.localizationpriority: medium
@@ -94,7 +94,7 @@ sections:
       - question: |
           If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
         answer: |
-          If you're using Intune to configure and manage tamper protection, you do not necessarily have to apply tamper protection to your entire organization. With Intune, you can choose to apply tamper protection to your entire organization, or you can select specific devices or user groups to receive tamper protection. You can also exclude specific devices from tamper protection.
+          If you're using Intune to configure and manage tamper protection, you don't necessarily have to apply tamper protection to your entire organization. With Intune, you can choose to apply tamper protection to your entire organization, or you can select specific devices or user groups to receive tamper protection. You can also exclude specific devices from tamper protection.
 
       - question: |
           What settings can't be changed when tamper protection is turned on?
@@ -162,8 +162,8 @@ sections:
           You can use any of the following methods to configure tamper protection:
           - The [Microsoft Defender portal](manage-tamper-protection-microsoft-365-defender.md) (turn tamper protection on or off, tenant wide)
           - [Intune](manage-tamper-protection-microsoft-endpoint-manager.md) (turn tamper protection on or off, and/or configure tamper protection for some or all users)
-          - [Configuration Manager](manage-tamper-protection-configuration-manager.md) (with tenant attach, you can configure tamper protection for some or all devices by using the Windows Security experience profile)
-          - [Windows Security app](manage-tamper-protection-individual-device.md) (for an individual device used at home or that isn't centrally managed by a security team)
+          - [Configuration Manager](manage-tamper-protection-configuration-manager.md) (with tenant attach, you can configure tamper protection for some or all devices by using the Windows Security experience profile).
+          - [Windows Security app](manage-tamper-protection-individual-device.md) (for an individual device used at home or in situations where a security team doesn't manage your device)
          
           > [!NOTE]
           > We recommend keeping tamper protection turned on for your whole organization. If tamper protection prevents your IT or security team from performing a necessary task on a device, 
