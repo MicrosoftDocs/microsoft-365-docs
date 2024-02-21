@@ -18,13 +18,13 @@ keywords:
 
 The **Conditional launch** settings allow you to select the sign-in security requirements for your access protection policy. App protection policies offer both app and device conditions.
 
-You must select a setting and enter the value that users must meet to sign in to your company app. Then select the Action you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting. Learn more about conditional launch actions.
+You must select a setting and enter the value that users must meet to sign in to your company app. Then select the Action you want to take if users don't meet your requirements. In some cases, multiple actions can be configured for a single setting. Learn more about conditional launch actions.
 
 Conditional launch settings offer similarities between iOS/iPadOS and Android. 
 
 ## Conditional launch for iOS/iPadOS and Android app protection policy
 
-iOS/iPadOS app condition settings allows the similar settings configuration as Android, however you can also set a **Min SDK version** for iOS/iPadOS. 
+iOS/iPadOS app conditional settings allow the similar settings configuration as Android, however you can also set a **Min SDK version** for iOS/iPadOS. 
 
 | App   condition setting | iOS/iPadOS | Android |
 |:---:|:---:|:---:|
@@ -36,7 +36,7 @@ iOS/iPadOS app condition settings allows the similar settings configuration as A
 
 :::image type="content" source="../media/protect-managed-apps/protect-managed-apps-12.png" alt-text="Conditional launch UI for iOS/iPadOS" border="false" :::
 
-In addition, Android device condition settings offers several more setting configuration option compared to iOS/iPadOS.
+In addition, Android device condition settings offer several more setting configuration options compared to iOS/iPadOS.
 
 | Device   condition setting | iOS/iPadOS | Android |
 |:---:|:---:|:---:|
