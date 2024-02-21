@@ -10,7 +10,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.date: 01/27/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

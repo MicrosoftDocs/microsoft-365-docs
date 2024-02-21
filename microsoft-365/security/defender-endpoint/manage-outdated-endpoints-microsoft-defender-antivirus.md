@@ -12,7 +12,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 ms.collection: 
 - m365-security
