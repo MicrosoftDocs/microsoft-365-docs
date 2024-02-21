@@ -3,12 +3,12 @@ title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.date: 02/02/2024
 ms.reviewer: pahuijbr
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 ms.topic: conceptual
 ms.collection: 

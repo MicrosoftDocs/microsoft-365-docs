@@ -104,9 +104,12 @@ You can view several numbers for Copilot for Microsoft 365 usage, which highligh
 
 :::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage summary information." source="../../media/copilot-usage-numbers.png":::
 
-**Enabled Users** shows you total number of unique users in your organization with Copilot for Microsoft 365 licenses over the selected time period.
+**Enabled Users** shows the total number of unique users in your organization with Copilot for Microsoft 365 licenses over the selected time period.
 
-**Active Users** shows you total number of enabled users in your organization who tried a user-initiated Copilot for Microsoft 365 feature, in one or more Microsoft 365 apps over the selected time period.
+**Active Users** shows the total number of enabled users in your organization who tried a user-initiated Copilot for Microsoft 365 feature, in one or more Microsoft 365 apps over the selected time period.
+
+> [!NOTE]
+> A user is considered active in a given app if they performed an intentional action for an AI-powered capability. For example, if a user selects the Copilot icon in the Word ribbon to open the Copilot chat pane, this does not count towards active usage. However, if the user interacts with the chat pane by submitting a prompt, this action would count towards active usage.
 
 **Active users rate** shows you the number of active users in your organization divided by the number of enabled users.
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
@@ -120,7 +123,10 @@ You can see the following summary charts in this report as default view:
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
 >[!NOTE]
-> Teams Copilot usage does not include Microsoft 365 Chat usage, but Microsoft 365 Chat usage will be displayed in Copilot for Microsoft 365 usage soon.
+> This report does not yet include Microsoft Copilot with Graph-grounded chat usage, but it will be available in this report soon. You'll be notified of this update through the Microsoft 365 message center.
+
+>[!IMPORTANT]
+> Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
 
 **Current view** shows you the total usage of Copilot for Microsoft 365 among Microsoft 365 apps of the time frame.
 
@@ -184,3 +190,9 @@ To make the data in the Copilot for Microsoft 365 report anonymous, you must be 
 2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports in Microsoft 365 admin center and Teams admin center.
 
 3. Select **Save changes**.
+
+## FAQ
+
+### What's the difference between the user activity table and audit log?
+
+The information captured in audit log records differs from that in [Microsoft 365 usage reports](#user-last-activity-table). It's important to note that audit logs are not designed for assessing user engagement in Microsoft 365, and they should not be used should not be used to replace or augment information in Microsoft 365 usage reports. To learn more about audit logs, see [Export, configure, and view audit log records](/purview/audit-log-export-records#step-1-export-audit-log-search-results).

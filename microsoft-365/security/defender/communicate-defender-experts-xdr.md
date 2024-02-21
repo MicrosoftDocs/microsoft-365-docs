@@ -2,7 +2,7 @@
 title: Communicating with Microsoft Defender Experts
 ms.reviewer:
 description: Defender Experts for XDR has multiple channels to discuss incidents, managed response, and service support
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Managed response in Teams, real-time visibility with XDR experts, ask defender experts
+keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Managed response in Teams, real-time visibility with XDR experts, ask defender experts, in-portal chat in teams
 ms.service: defender-experts
 ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
@@ -19,7 +19,7 @@ ms.collection:
   - essentials-manage
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/29/2024
+ms.date: 02/20/2024
 ---
 
 # Communicating with experts in the Microsoft Defender Experts for XDR service
@@ -40,6 +40,8 @@ When an incident requires your attention, such as the incidents our experts issu
 > The chat option is only available for incidents where we issued managed response.
 
 The **Chat** tab within the Microsoft Defender XDR portal provides you with a space to engage with our experts and further understand the incident, our investigation, and the required actions we provided. You could ask about a malicious executable, malicious attachment, information about activity groups, advanced hunting queries, or any other information that would assist you with the incident resolution.
+
+:::image type="content" source="../../media/xdr/in-portal-xdr-chat.png" alt-text="Screenshot of managed response in-portal chat." lightbox="../../media/xdr/in-portal-xdr-chat.png":::
 
 ### Teams chat
 
