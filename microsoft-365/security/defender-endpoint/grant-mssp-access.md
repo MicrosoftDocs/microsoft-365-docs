@@ -1,6 +1,6 @@
 ---
 title: Grant access to managed security service provider (MSSP)
-description: Take the necessary steps to configure MSSP integration with the Microsoft Defender for Endpoint
+description: Take the necessary steps to configure MSSP integration with the Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
@@ -28,7 +28,7 @@ ms.date: 12/18/2020
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-To implement a multi-tenant delegated access solution, take the following steps:
+To implement a multitenant delegated access solution, take the following steps:
 
 1. Enable [role-based access control](rbac.md) in Defender for Endpoint and connect with Active Directory (AD) groups.
 
@@ -40,7 +40,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
 1. **Create access groups for MSSP resources in Customer AAD: Groups**
 
-    These groups will be linked to the Roles you create in Defender for Endpoint. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
+    These groups are linked to the Roles you create in Defender for Endpoint. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
 
     - Tier 1 Analyst
     - Tier 2 Analyst
@@ -68,7 +68,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
 1. **Add MSSP as Connected Organization in Customer AAD: Identity Governance**
 
-    Adding the MSSP as a connected organization will allow the MSSP to request and have accesses provisioned.
+    Adding the MSSP as a connected organization allows the MSSP to request and have accesses provisioned.
 
     To do so, in the customer AD tenant, access Identity Governance: Connected organization. Add a new organization and search for your MSSP Analyst tenant via Tenant ID or Domain. We suggest creating a separate AD tenant for your MSSP Analysts.
 
@@ -76,7 +76,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     Resource catalogs are a logical collection of access packages, created in the customer AD tenant.
 
-    To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, we will call it **MSSP Accesses**.
+    To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, it's called, **MSSP Accesses**.
 
     :::image type="content" source="images/goverance-catalog.png" alt-text="The new catalog page" lightbox="images/goverance-catalog.png":::
 
