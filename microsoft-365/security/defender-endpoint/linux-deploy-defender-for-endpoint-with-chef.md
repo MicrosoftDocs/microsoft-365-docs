@@ -132,7 +132,8 @@ cookbook_file '/etc/opt/microsoft/mdatp/managed/mdatp_managed.json' do
 end
 ```
 
-To include this step as part of the recipe just add include_recipe ':: settings_mdatp' to your default.rb file within the recipe folder.
+To include this step as part of the recipe just add `include_recipe ':: settings_mdatp` to your default.rb file within the recipe folder.
+
 You can also use crontab to schedule automatic updates [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md).
 
 Uninstall MDATP cookbook:
