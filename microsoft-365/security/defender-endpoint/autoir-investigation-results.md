@@ -1,14 +1,11 @@
 ---
 title: View the details and results of an automated investigation
 description: During and after an automated investigation, you can view the results and key findings
-keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
-author: dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.service: defender-endpoint
 ms.subservice: edr
 ms.localizationpriority: medium
@@ -23,7 +20,7 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.date: 03/15/2021
+ms.date: 02/21/2024
 ---
 
 # View the details and results of an automated investigation
