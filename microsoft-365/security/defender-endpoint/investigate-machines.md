@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 06/19/2023
+ms.date: 02/21/2024
 ---
 
 # Investigate devices in the Microsoft Defender for Endpoint Devices list
@@ -32,7 +32,7 @@ Investigate the details of an alert raised on a specific device to identify othe
 > [!NOTE]
 > As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
 
-You can click on affected devices whenever you see them in the portal to open a detailed report about that device. Affected devices are identified in the following areas:
+You can select on affected devices whenever you see them in the portal to open a detailed report about that device. Affected devices are identified in the following areas:
 
 - [Devices list](investigate-machines.md)
 - [Alerts queue](alerts-queue.md)
@@ -40,7 +40,7 @@ You can click on affected devices whenever you see them in the portal to open a 
 - Any individual file details view
 - Any IP address or domain details view
 
-When you investigate a specific device, you'll see:
+When you investigate a specific device, you see:
 
 - Device details
 - Response actions
@@ -55,7 +55,7 @@ When you investigate a specific device, you'll see:
 
 ## Device details
 
-The device details section provides information such as the domain, OS, and health state of the device. If there's an investigation package available on the device, you'll see a link that allows you to download the package.
+The device details section provides information such as the domain, OS, and health state of the device. If there's an investigation package available on the device, you see a link that allows you to download the package.
 
 ## Response actions
 
@@ -138,20 +138,20 @@ More details about certain events are provided in the **Additional information**
 
 Select an event to view relevant details about that event. A panel displays to show general event information. When applicable and data is available, a graph showing related entities and their relationships are also shown.
 
-To further inspect the event and related events, you can quickly run an [advanced hunting](advanced-hunting-overview.md) query by selecting **Hunt for related events**. The query will return the selected event and the list of other events that occurred around the same time on the same endpoint.
+To further inspect the event and related events, you can quickly run an [advanced hunting](advanced-hunting-overview.md) query by selecting **Hunt for related events**. The query returns the selected event and the list of other events that occurred around the same time on the same endpoint.
 
 :::image type="content" source="images/event-details.png" alt-text="The event details panel" lightbox="images/event-details.png":::
 
 ### Security recommendations
 
-**Security recommendations** are generated from Microsoft Defender for Endpoint's [Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation will show a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it. See [Security recommendation](tvm-security-recommendation.md) for details.
+**Security recommendations** are generated from Microsoft Defender for Endpoint's [Vulnerability Management](tvm-dashboard-insights.md) capability. Selecting a recommendation shows a panel where you can view relevant details such as description of the recommendation and the potential risks associated with not enacting it. See [Security recommendation](tvm-security-recommendation.md) for details.
 
 
 
 
 ### Security policies
 
-The **Security policies** tab shows the endpoint security policies that are applied on the device. You'll see a list of policies, type, status, and last check-in time. Selecting the name of a policy, will take you to the policy details page where you can see the policy settings status, applied devices, and assigned groups.
+The **Security policies** tab shows the endpoint security policies that are applied on the device. You see a list of policies, type, status, and last check-in time. Selecting the name of a policy, will take you to the policy details page where you can see the policy settings status, applied devices, and assigned groups.
 
 
 :::image type="content" source="images/security-policies-tab.png" alt-text="The Security policies tab" lightbox="images/security-policies-tab.png":::
@@ -159,13 +159,13 @@ The **Security policies** tab shows the endpoint security policies that are appl
 
 ### Software inventory
 
-The **Software inventory** tab lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software will take you to the software details page where you can view security recommendations, discovered vulnerabilities, installed devices, and version distribution. See [Software inventory](tvm-software-inventory.md) for details
+The **Software inventory** tab lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software takes you to the software details page where you can view security recommendations, discovered vulnerabilities, installed devices, and version distribution. See [Software inventory](tvm-software-inventory.md) for details.
 
 :::image type="content" source="images/software-inventory-device.png" alt-text="The Software inventory tab" lightbox="images/software-inventory-device.png":::
 
 ### Discovered vulnerabilities
 
-The **Discovered vulnerabilities** tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. Selecting specific vulnerabilities will show a description and details.
+The **Discovered vulnerabilities** tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. Selecting a specific vulnerability shows a description and details.
 
 :::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="The Discovered vulnerabilities tab" lightbox="images/discovered-vulnerabilities-device.png":::
 
