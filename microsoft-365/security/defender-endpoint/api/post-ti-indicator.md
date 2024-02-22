@@ -38,22 +38,22 @@ ms.date: 12/18/2020
 
 Submits or Updates new [Indicator](ti-indicator.md) entity.
 
-CIDR notation for IPs is not supported.
+CIDR notation for IPs isn't supported.
 
 ## Limitations
 
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
-2. There is a limit of 15,000 active indicators per tenant.
+1. Rate limitations for this API are 100 calls per minute and 1,500 calls per hour.
+2. There's a limit of 15,000 active indicators per tenant.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md).
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|Ti.ReadWrite|'Read and write Indicators'
-Application|Ti.ReadWrite.All|'Read and write All Indicators'
-Delegated (work or school account)|Ti.ReadWrite|'Read and write Indicators'
+|Permission type|Permission|Permission display name|
+|:---|:---|:---|
+|Application|Ti.ReadWrite|`Read and write Indicators`|
+|Application|Ti.ReadWrite.All|`Read and write All Indicators`|
+|Delegated (work or school account)|Ti.ReadWrite|`Read and write Indicators`|
 
 ## HTTP request
 
