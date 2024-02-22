@@ -1,13 +1,9 @@
 ---
 title: Get one remediation activity by ID
 description: Returns information for the specified remediation activity.
-keywords: apis, remediation, remediation api, get, remediation tasks, remediation by ID,
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: Dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
