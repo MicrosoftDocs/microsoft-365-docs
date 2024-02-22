@@ -1,15 +1,11 @@
 ---
-title: Log in to Jamf Pro
-description: Log in to Jamf Pro
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos,  big sur, monterey, ventura, mde for mac
+title: Sign in to Jamf Pro
+description: Sign in to Jamf Pro.
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -21,7 +17,7 @@ search.appverid: met150
 ms.date: 12/18/2020
 ---
 
-# Log in to Jamf Pro
+# Sign in to Jamf Pro
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,12 +36,13 @@ ms.date: 12/18/2020
 
    :::image type="content" source="images/jamf-pro-dashboard.png" alt-text="The Jamf Pro dashboard2" lightbox="images/jamf-pro-dashboard.png":::
 
-3. You'll see the settings that are available.
+3. You see the settings that are available.
 
    :::image type="content" source="images/jamfpro-settings.png" alt-text="The Jamf Pro dashboard3" lightbox="images/jamfpro-settings.png":::
 
 
 ## Next step
+
 [Setup the device groups in Jamf Pro](mac-jamfpro-device-groups.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
