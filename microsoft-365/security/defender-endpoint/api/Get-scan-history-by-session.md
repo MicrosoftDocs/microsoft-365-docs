@@ -88,7 +88,7 @@ If successful, this method returns 200 - OK response code with a list of the sca
 
 ## Example request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryBySessionId
