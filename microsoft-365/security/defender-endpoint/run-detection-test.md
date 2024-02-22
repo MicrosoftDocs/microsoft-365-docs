@@ -1,5 +1,5 @@
 ---
-title: Run a detection test on a device to verify it has been properly onboarded to Microsoft Defender for Endpoint
+title: Run a detection test on a device to verify onboarding to Microsoft Defender for Endpoint
 description: Run the detection test script on a device recently onboarded to the Microsoft Defender for Endpoint service to verify that it's properly added.
 search.appverid: met150
 ms.service: defender-endpoint
