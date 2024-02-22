@@ -40,7 +40,9 @@ You need to be member of the **Global Administrator** role in Microsoft Entra ID
 > [!NOTE]
 > Some Defender for Office 365 features require additional permissions in Exchange Online. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 >
-> In the Microsoft Defender XDR preview program, a different Microsoft Defender 365 RBAC model is also available. The permissions in this RBAC model are different from the Defender for Office 365 permissions as described in this article. For more information, see [Microsoft Defender XDR role-based access control (RBAC)](../defender/manage-rbac.md).
+> Microsoft Defender XDR has its own Unified role-based access control (RBAC). This model provides a single permissions management experience in one central location where admins can control permissions across different security solutions. These permissions are different from the permissions described in this article. For more information, see [Microsoft Defender XDR role-based access control (RBAC)](../defender/manage-rbac.md).
+>
+> **If you activate Defender XDR RBAC for Email & collaboration, the permissions page at <https://security.microsoft.com/emailandcollabpermissions> is no loger available in the Defender portal**.
 >
 > For information about permissions in the Microsoft Purview compliance portal, see [Permissions in the Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center-permissions).
 
@@ -56,8 +58,6 @@ Defender for Office 365 permissions in the Microsoft Defender portal includes de
 
 :::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="The relationship of a role group to its roles and members" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
-<a name='roles-and-role-groups-in-the-microsoft-365-defender-portal'></a>
-
 ## Roles and role groups in the Microsoft Defender portal
 
 On the **Permissions** page in the Defender portal at <https://security.microsoft.com/securitypermissions>, the following types of roles and role groups are available:
@@ -68,10 +68,6 @@ On the **Permissions** page in the Defender portal at <https://security.microsof
 
 :::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="The Permissions & roles page in the Microsoft Defender portal" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
-<a name='azure-ad-roles-in-the-microsoft-365-defender-portal'></a>
-
-<a name='microsoft-entra-roles-in-the-microsoft-365-defender-portal'></a>
-
 ### Microsoft Entra roles in the Microsoft Defender portal
 
 Microsoft Entra roles that are described in this section are available in the [Defender portal](https://security.microsoft.com) \> **Permissions** \> **Microsoft Entra ID** \> **Roles** or directly at <https://security.microsoft.com/aadpermissions>.
@@ -80,21 +76,19 @@ When you select a role, a details flyout opens that contains the description of 
 
 :::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="The link to manage permissions in Microsoft Entra ID" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
 
-For more information, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](/microsoft-365/security/defender/m365d-permissions).
+For more information, see [Assign Microsoft Entra roles to users](/entra/identity/role-based-access-control/manage-roles-portal) and [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](/microsoft-365/security/defender/m365d-permissions).
 
 |Role|Description|
 |---|---|
-|**Global Administrator**|Access to all administrative features in all Microsoft 365 services. Only global administrators can assign other administrator roles. For more information, see [Global Administrator / Company Administrator](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
-|**Compliance Data Administrator**|Keep track of your organization's data across Microsoft 365, make sure it's protected, and get insights into any issues to help mitigate risks. For more information, see [Compliance Data Administrator](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
-|**Compliance Administrator**|Help your organization stay compliant with any regulatory requirements, manage eDiscovery cases, and maintain data governance policies across Microsoft 365 locations, identities, and apps. For more information, see [Compliance Administrator](/azure/active-directory/roles/permissions-reference#compliance-administrator).|
-|**Security Operator**|View, investigate, and respond to active threats to your Microsoft 365 users, devices, and content. For more information, see [Security Operator](/azure/active-directory/roles/permissions-reference#security-operator).|
-|**Security Reader**|View and investigate active threats to your Microsoft 365 users, devices, and content, but (unlike the Security operator) they don't have permissions to respond by taking action. For more information, see [Security Reader](/azure/active-directory/roles/permissions-reference#security-reader).|
-|**Security Administrator**|Control your organization's overall security by managing security policies, reviewing security analytics and reports across Microsoft 365 products, and staying up-to-speed on the threat landscape. For more information, see [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator).|
-|**Global Reader**|The read-only version of the **Global administrator** role. View all settings and administrative information across Microsoft 365. For more information, see [Global Reader](/azure/active-directory/roles/permissions-reference#global-reader).|
-|**Attack Simulation Administrator**|Create and manage all aspects of [attack simulation](attack-simulation-training-simulations.md) creation, launch/scheduling of a simulation, and the review of simulation results. For more information, see [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
-|**Attack Payload Author**|Create attack payloads but not actually launch or schedule them. For more information, see [Attack Payload Author](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
-
-<a name='email--collaboration-roles-in-the-microsoft-365-defender-portal'></a>
+|**Global Administrator**|Access to all administrative features in all Microsoft 365 services. Only global administrators can assign other administrator roles. For more information, see [Global Administrator / Company Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator--company-administrator).|
+|**Compliance Data Administrator**|Keep track of your organization's data across Microsoft 365, make sure it's protected, and get insights into any issues to help mitigate risks. For more information, see [Compliance Data Administrator](/entra/identity/role-based-access-control/permissions-reference#compliance-data-administrator).|
+|**Compliance Administrator**|Help your organization stay compliant with any regulatory requirements, manage eDiscovery cases, and maintain data governance policies across Microsoft 365 locations, identities, and apps. For more information, see [Compliance Administrator](/entra/identity/role-based-access-control/permissions-reference#compliance-administrator).|
+|**Security Operator**|View, investigate, and respond to active threats to your Microsoft 365 users, devices, and content. For more information, see [Security Operator](/entra/identity/role-based-access-control/permissions-reference#security-operator).|
+|**Security Reader**|View and investigate active threats to your Microsoft 365 users, devices, and content, but (unlike the Security operator) they don't have permissions to respond by taking action. For more information, see [Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader).|
+|**Security Administrator**|Control your organization's overall security by managing security policies, reviewing security analytics and reports across Microsoft 365 products, and staying up-to-speed on the threat landscape. For more information, see [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator).|
+|**Global Reader**|The read-only version of the **Global administrator** role. View all settings and administrative information across Microsoft 365. For more information, see [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader).|
+|**Attack Simulation Administrator**|Create and manage all aspects of [attack simulation](attack-simulation-training-simulations.md) creation, launch/scheduling of a simulation, and the review of simulation results. For more information, see [Attack Simulation Administrator](/entra/identity/role-based-access-control/permissions-reference#attack-simulation-administrator).|
+|**Attack Payload Author**|Create attack payloads but not actually launch or schedule them. For more information, see [Attack Payload Author](/entra/identity/role-based-access-control/permissions-reference#attack-payload-author).|
 
 ### Email & collaboration roles in the Microsoft Defender portal
 
@@ -107,13 +101,11 @@ For complete information about these role groups, see [Roles and role groups in 
 
 The following actions are available for Email & collaboration role groups in the Defender portal:
 
-- [Create role groups](#create-email--collaboration-role-groups-in-the-microsoft-365-defender-portal)
-- [Copy role groups](#copy-email--collaboration-role-groups-in-the-microsoft-365-defender-portal)
-- [Modify role group membership](#modify-email--collaboration-role-group-membership-in-the-microsoft-365-defender-portal)
-- [Modify role assignments](#modify-email--collaboration-role-group-role-assignments-in-the-microsoft-365-defender-portal) (custom role groups only)
-- [Remove role groups](#remove-email--collaboration-role-groups-in-the-microsoft-365-defender-portal) (custom role groups only)
-
-<a name='create-email--collaboration-role-groups-in-the-microsoft-365-defender-portal'></a>
+- [Create role groups](#create-email--collaboration-role-groups-in-the-microsoft-defender-portal)
+- [Copy role groups](#copy-email--collaboration-role-groups-in-the-microsoft-defender-portal)
+- [Modify role group membership](#modify-email--collaboration-role-group-membership-in-the-microsoft-defender-portal)
+- [Modify role assignments](#modify-email--collaboration-role-group-role-assignments-in-the-microsoft-defender-portal) (custom role groups only)
+- [Remove role groups](#remove-email--collaboration-role-groups-in-the-microsoft-defender-portal) (custom role groups only)
 
 #### Create Email & collaboration role groups in the Microsoft Defender portal
 
@@ -169,8 +161,6 @@ The following actions are available for Email & collaboration role groups in the
 
 Back on the **Permissions** page, the new role group is listed.
 
-<a name='copy-email--collaboration-role-groups-in-the-microsoft-365-defender-portal'></a>
-
 #### Copy Email & collaboration role groups in the Microsoft Defender portal
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
@@ -179,13 +169,11 @@ Back on the **Permissions** page, the new role group is listed.
 
 3. In the role group details flyout that opens, select **Copy role group** at the top of the flyout.
 
-The new role group wizard opens as previously described for [creating a new role group](#create-email--collaboration-role-groups-in-the-microsoft-365-defender-portal).
+The new role group wizard opens as previously described for [creating a new role group](#create-email--collaboration-role-groups-in-the-microsoft-defender-portal).
 
 The default name of the new role group is **Copy of \<original role group name\>**, but you can change it.
 
 The roles and members are populated with the values from the role you're copying, but you can change them.
-
-<a name='modify-email--collaboration-role-group-membership-in-the-microsoft-365-defender-portal'></a>
 
 #### Modify Email & collaboration role group membership in the Microsoft Defender portal
 
@@ -218,11 +206,9 @@ The roles and members are populated with the values from the role you're copying
 
    When you're finished in the original **Choose members** flyout, select **Done**.
 
-7. Back on the **Choose members** tab of the wizard, select **Save**.
+6. Back on the **Choose members** tab of the wizard, select **Save**.
 
-8. Back on the role group details flyout, select **Done**.
-
-<a name='modify-email--collaboration-role-group-role-assignments-in-the-microsoft-365-defender-portal'></a>
+7. Back on the role group details flyout, select **Done**.
 
 #### Modify Email & collaboration role group role assignments in the Microsoft Defender portal
 
@@ -258,11 +244,9 @@ The roles and members are populated with the values from the role you're copying
 
    When you're finished in the original **Choose roles** flyout, select **Done**.
 
-7. Back on the **Choose roles** tab of the wizard, select **Save**.
+6. Back on the **Choose roles** tab of the wizard, select **Save**.
 
-8. Back on the role group details flyout, select **Done**.
-
-<a name='remove-email--collaboration-role-groups-in-the-microsoft-365-defender-portal'></a>
+7. Back on the role group details flyout, select **Done**.
 
 #### Remove Email & collaboration role groups in the Microsoft Defender portal
 

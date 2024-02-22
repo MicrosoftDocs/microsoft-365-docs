@@ -29,6 +29,12 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+
+## February 2024
+- (GA) **Assigning severity to incidents** and the ***go hunt*** option from the attack story graph are now generally available. Read [assign or change incident severity](manage-incidents.md#assign-or-change-incident-severity) to learn how to change an incident's severity, and learn how you can use the *go hunt* option by exploring [attack story](investigate-incidents.md#attack-story).
+
+- (Preview) **[Custom detection rules in Microsoft Graph security API](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#custom-detections)** are now available.  Create advanced hunting custom detection rules specific to your org to proactively monitor for threats and take action.
+
 ## January 2024
 
 - **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Take a moment to celebrate your organization's improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. 
