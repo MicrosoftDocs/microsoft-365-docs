@@ -1,15 +1,10 @@
 ---
 title: Turn on the preview experience in Microsoft Defender for Endpoint
 description: Turn on the preview experience in Microsoft Defender for Endpoint to try upcoming features.
-keywords: advanced features, settings, block file
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

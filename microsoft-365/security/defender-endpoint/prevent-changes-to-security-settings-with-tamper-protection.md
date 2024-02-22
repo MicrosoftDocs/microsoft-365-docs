@@ -8,8 +8,8 @@ ms.localizationpriority: medium
 ms.date: 02/13/2024
 audience: ITPro
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
@@ -32,6 +32,7 @@ search.appverid: met150
 - [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
 
 **Platforms**
+
 - Windows
 - [macOS](tamperprotection-macos.md)
 
