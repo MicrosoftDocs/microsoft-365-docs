@@ -2,10 +2,9 @@
 title: Overview of endpoint detection and response capabilities
 ms.reviewer: 
 description: Learn about the endpoint detection and response capabilities in Microsoft Defender for Endpoint
-keywords: Microsoft Defender for Endpoint, endpoint detection and response, response, detection, cybersecurity, protection
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
