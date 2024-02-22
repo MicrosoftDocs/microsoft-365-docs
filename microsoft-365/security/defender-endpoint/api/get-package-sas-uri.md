@@ -1,13 +1,9 @@
 ---
 title: Get package SAS URI API
 description: Use this API to get a URI that allows downloading an investigation package.
-keywords: apis, graph api, supported apis, get package, sas, uri
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
