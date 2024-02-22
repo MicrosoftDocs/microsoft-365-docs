@@ -1,6 +1,6 @@
 ---
 title: Onboarding using Microsoft Intune
-description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Intune
+description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Intune.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
@@ -33,30 +33,30 @@ ms.date: 12/18/2020
 
 This article acts as an example onboarding method.
 
-In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the cloud-native architecture.
+In the [Planning](deployment-strategy.md) article, there were several methods provided to onboard devices to the service. This article covers the cloud-native architecture.
 
 :::image type="content" source="images/cloud-native-architecture.png" alt-text="The cloud-native architecture" lightbox="images/cloud-native-architecture.png":::
 *Diagram of environment architectures*
 
-While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+While Defender for Endpoint supports onboarding of various endpoints and tools, this article doesn't cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
 The Microsoft Intune family of products is a solution platform that unifies several services. It includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Configuration Manager](/mem/configmgr).
 
-This topic guides users in:
+This article guides users in:
 
 - Step 1: Onboarding devices to the service by creating a group in Microsoft Intune to assign configurations on
 - Step 2: Configuring Defender for Endpoint capabilities using Microsoft Intune
 
-This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Intune:
+This onboarding guidance walks you through the following basic steps that you need to take when using Microsoft Intune:
 
 - [Identifying target devices or users](#identify-target-devices-or-users)
   - Creating a Microsoft Entra group (User or Device)
 - [Creating a Configuration Profile](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
-  - In Microsoft Intune, we'll guide you in creating a separate policy for each capability.
+  - In Microsoft Intune, we guide you in creating a separate policy for each capability.
 
 ## Resources
 
-Here are the links you'll need for the rest of the process:
+Here are the links you need for the rest of the process:
 
 - [Intune admin center](https://aka.ms/memac)
 - [Microsoft Defender XDR](https://security.microsoft.com)
@@ -68,7 +68,7 @@ For more information about Microsoft Intune, go to [Microsoft Intune securely ma
 
 ### Identify target devices or users
 
-In this section, we will create a test group to assign your configurations on.
+In this section, we create a test group to assign your configurations on.
 
 > [!NOTE]
 > Intune uses Microsoft Entra groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs.
