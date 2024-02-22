@@ -1,16 +1,12 @@
 ---
 title: Deploy Microsoft Defender for Endpoint on Linux with SaltStack
-ms.reviewer:
+ms.reviewer: dmcwee
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Saltstack.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, saltstack, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dmcwee
-author: dmcwee
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -19,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 1/26/2024
+ms.date: 02/21/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Saltstack
@@ -39,7 +35,7 @@ This article describes how to deploy Defender for Endpoint on Linux using Saltst
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Create Saltstack state files](#create-saltstack-state-files)
 - [Deployment](#deployment)
-- [References](#references)
+- [Reference](#reference)
 
 [!INCLUDE [Microsoft Defender for Endpoint third-party tool support](../../includes/support.md)]
 
@@ -273,12 +269,9 @@ For more information on how to find the automatically generated log that's creat
 
 When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint on Linux, install the upgrade, and finally reconfigure Defender for Endpoint on Linux on your device.
 
-## References
+## Reference
 
-- [Add or remove YUM repositories](https://docs.Saltstack.com/Saltstack/latest/collections/Saltstack/builtin/yum_repository_module.html)
-- [Manage packages with the dnf package manager](https://docs.Saltstack.com/Saltstack/latest/collections/Saltstack/builtin/dnf_module.html)
-- [Add and remove APT repositories](https://docs.Saltstack.com/Saltstack/latest/collections/Saltstack/builtin/apt_repository_module.html)
-- [Manage apt-packages](https://docs.Saltstack.com/Saltstack/latest/collections/Saltstack/builtin/apt_module.html)
+- [SALT Project documentation](https://docs.saltproject.io/en/latest/topics/about_salt_project.html)
 
 ## See also
 
