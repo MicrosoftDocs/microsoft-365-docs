@@ -56,7 +56,7 @@ Represent a file entity in Defender for Endpoint.
 |globalLastObserved | DateTimeOffset | Last time the file was observed |
 |size | Nullable long | Size of the file |
 |fileType | String | Type of the file |
-|isPeFile | Boolean | true if the file is portable executable (for example "DLL", "EXE", etc.) |
+|isPeFile | Boolean | true if the file is portable executable (for example `DLL`, `EXE`, etc.) |
 |filePublisher | String | File publisher |
 |fileProductName | String | Product name |
 |signer | String | File signer |
