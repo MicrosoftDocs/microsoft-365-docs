@@ -194,15 +194,15 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
 2. In the **Upload custom apps** flyout that opens, select **I have a URL for the manifest file**.
 
-4. In the **Add from URL** dialog that opens, enter one of the following URLs:
+3. In the **Add from URL** dialog that opens, enter one of the following URLs:
    - **Report Message**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml>
    - **Report Phishing**: <https://ipagave.azurewebsites.net/ReportPhishingManifest/ReportPhishingAzure.xml>
 
    When you're finished, select **Install**. In the success dialog, select **OK**.
 
-5. Back on the **Add-ins** page, select the add-in you installed, and then select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
+4. Back on the **Add-ins** page, select the add-in you installed, and then select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
-6. In the add-in properties dialog that opens, confirm or modify the following settings:
+5. In the add-in properties dialog that opens, confirm or modify the following settings:
    - **Make this add-in available to users in your organization**.
    - **Specify user defaults**: Select one of the following settings:
      - **Optional, enabled by default**.
@@ -211,7 +211,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
    When you're finished, select **Save**.
 
-7. To fully configure user reported message settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+6. To fully configure user reported message settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 ### View and edit settings for the Report Message or Report Phishing add-ins
 

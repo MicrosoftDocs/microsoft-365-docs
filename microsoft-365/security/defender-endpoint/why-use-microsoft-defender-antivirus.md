@@ -1,18 +1,15 @@
 ---
 title: Why you should use Microsoft Defender Antivirus together with Microsoft Defender for Endpoint
 description: For best results, use Microsoft Defender Antivirus together with your other Microsoft offerings.
-keywords: windows defender, antivirus, third party av
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer:
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 ms.collection: 
 - m365-security

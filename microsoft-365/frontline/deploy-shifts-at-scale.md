@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - teams-1p-app-admin
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -81,7 +82,7 @@ Choose the Shifts capabilities that you want enabled for your frontline teams. C
 
 In this step, you identify the schedule owners in your organization and define how schedule groups are created and managed across your frontline teams.
 
- - Schedule owners, similar to team owners, are frontline managers who create and manage schedules for their teams. [Learn more about schedule owners](schedule-owner-for-shift-management.md).
+ - Schedule owners, similar to team owners, are frontline managers who create and manage schedules for their teams. [Learn more about schedule owners](shifts-frontline-manager-worker-roles.md).
  - Schedule groups are used to further group employees based on common characteristics within a team. For example, schedule groups can be departments or job types.
 
 You can choose to allow schedule owners to create and manage schedule groups or you can do so centrally in the Teams admin center.  

@@ -1,17 +1,13 @@
 ---
 title: Collect support logs in Microsoft Defender for Endpoint using live response
 description: Learn how to collect logs using live response to troubleshoot Microsoft Defender for Endpoint issues
-keywords: support, log, collect, troubleshoot, live response, liveanalyzer, analyzer, live, response
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 - mde-edr
@@ -23,13 +19,11 @@ ms.date: 12/18/2020
 
 # Collect support logs in Microsoft Defender for Endpoint using live response
 
-
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
-
 
 When contacting support, you may be asked to provide the output package of the Microsoft Defender for Endpoint Client Analyzer tool.
 
@@ -37,7 +31,7 @@ This topic provides instructions on how to run the tool via Live Response.
 
 1. Download and fetch the required scripts available from within the 'Tools' sub-directory of the [Microsoft Defender for Endpoint Client Analyzer](https://aka.ms/BetaMDEAnalyzer). <br>
 For example, to get the basic sensor and device health logs, fetch "..\Tools\MDELiveAnalyzer.ps1".<br>
-If you also require Defender Antivirus support logs (MpSupportFiles.cab), then fetch "..\Tools\MDELiveAnalyzerAV.ps1" 
+If you also require Defender Antivirus support logs (MpSupportFiles.cab), then fetch "..\Tools\MDELiveAnalyzerAV.ps1"
 
 2. Initiate a [Live Response session](live-response.md#initiate-a-live-response-session-on-a-device) on the machine you need to investigate.
 
@@ -64,9 +58,8 @@ If you also require Defender Antivirus support logs (MpSupportFiles.cab), then f
 
 > [!NOTE]
 >
-> - The latest preview version of MDEClientAnalyzer can be downloaded here: [https://aka.ms/Betamdeanalyzer](https://aka.ms/Betamdeanalyzer).
->
-> - The LiveAnalyzer script downloads the troubleshooting package on the destination machine from: https://mdatpclientanalyzer.blob.core.windows.net.
+> - The latest preview version of MDEClientAnalyzer can be downloaded here: <https://aka.ms/Betamdeanalyzer>.
+> - The LiveAnalyzer script downloads the troubleshooting package on the destination machine from: `https://mdatpclientanalyzer.blob.core.windows.net`.
 >
 >   If you cannot allow the machine to reach the above URL, then upload MDEClientAnalyzerPreview.zip file to the library before running the LiveAnalyzer script:
 >
@@ -77,14 +70,15 @@ If you also require Defender Antivirus support logs (MpSupportFiles.cab), then f
 >   ```
 >
 > - For more information on gathering data locally on a machine in case the machine isn't communicating with Microsoft Defender for Endpoint cloud services, or does not appear in Microsoft Defender for Endpoint portal as expected, see [Verify client connectivity to Microsoft Defender for Endpoint service URLs](verify-connectivity.md).
-> 
+>
 > - As described in [Live response command examples](live-response-command-examples.md), you may want to use the '&' symbol at the end of the command to collect logs as a background action:
+>
 >   ```console
 >   Run MDELiveAnalyzer.ps1&
 >   ```
 
-
 ## See also
+
 - [Client analyzer overview](overview-client-analyzer.md)
 - [Download and run the client analyzer](download-client-analyzer.md)
 - [Run the client analyzer on Windows](run-analyzer-windows.md)

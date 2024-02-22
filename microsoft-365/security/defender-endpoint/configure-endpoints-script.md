@@ -1,13 +1,12 @@
 ---
 title: Onboard Windows devices using a local script
 description: Use a local script to deploy the configuration package on devices to enable onboarding of the devices to the service.
-keywords: configure devices using a local script, device management, configure Microsoft Defender for Endpoint devices
 search.appverid: met150
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -96,7 +95,7 @@ After onboarding the device, you can choose to run a detection test to verify th
 
 ## Offboard devices using a local script
 
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to Offboard devices will expire 3 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.

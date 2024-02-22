@@ -79,8 +79,6 @@ If you have one or more instances of the IOCs listed above, you need to do furth
 
 You can do this for your users with either the Microsoft Entra admin center, or PowerShell or have your users individually enumerate their application access.
 
-<a name='steps-for-using-the-azure-active-directory-portal'></a>
-
 ### Steps for using the Microsoft Entra admin center
 
 You can look up the applications to which any individual user has granted permissions by using the Microsoft Entra admin center at <https://portal.azure.com>.
@@ -161,8 +159,8 @@ After you have identified an application with illicit permissions, you have seve
 
 ## See also
 
-- [Unexpected application in my applications list](/azure/active-directory/application-access-unexpected-application) walks administrators through various actions they may want to take after realizing there are unexpected applications with access to data.
-- [Integrating applications with Microsoft Entra ID](/azure/active-directory/active-directory-apps-permissions-consent) is a high-level overview of consent and permissions.
-- [Problems developing my application](/azure/active-directory/active-directory-application-dev-development-content-map) provides links to various consent related articles.
-- [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/active-directory-application-objects) provides an overview of the Application and Service principal objects that are core to the application model.
-- [Manage access to apps](/azure/active-directory/active-directory-managing-access-to-apps) is an overview of the capabilities that administrators have to manage user access to apps.
+- [Applications listed in Enterprise applications](/entra/identity/enterprise-apps/application-list) walks administrators through various actions they may want to take after realizing there are unexpected applications with access to data.
+- [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app) is a high-level overview of consent and permissions.
+- [Configure token lifetime policies](/entra/identity-platform/configure-token-lifetimes) provides links to various consent related articles.
+- [Application and service principal objects in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals) provides an overview of the Application and Service principal objects that are core to the application model.
+- [Manage access to an application](/entra/identity/enterprise-apps/what-is-access-management) is an overview of the capabilities that administrators have to manage user access to apps.

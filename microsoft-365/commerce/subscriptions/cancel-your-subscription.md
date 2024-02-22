@@ -39,7 +39,7 @@ This article only applies to canceling **Dynamics 365**, **Intune**, **Power Pla
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For information about Billing account roles and Billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](../billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For information about Billing account roles and Billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](../billing-and-payments/manage-billing-profiles.md).
 - If you have a Microsoft Online Subscription Agreement (MOSA), you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 - If you added your own domain name to use with your subscription, you must [remove the domain](../../admin/get-help-with-domains/remove-a-domain.md) before you cancel your subscription.
 - If you have a domain subscription, to prevent any other charges for that subscription, [turn off recurring billing](renew-your-subscription.md).
@@ -85,7 +85,7 @@ The steps to cancel your trial or paid subscription depend on the number of lice
 |If your subscription has  |You can  |
 |--------------|--------------|
 |25 or fewer licenses  | [Use the steps later in this article to cancel your trial or paid subscription](#steps-to-cancel-your-subscription) online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.        |
-|More than 25 licenses   | [Reduce the number of licenses](../licenses/buy-licenses.md#buy-or-remove-licenses-for-your-business-subscription) to 25 or fewer and then [use the steps later in this article to cancel](#steps-to-cancel-your-subscription).      |
+|More than 25 licenses   | [Reduce the number of licenses](../licenses/buy-licenses.md) to 25 or fewer and then [use the steps later in this article to cancel](#steps-to-cancel-your-subscription).      |
 
 If you can't reduce the number of licenses, [turn off recurring billing](renew-your-subscription.md). Turning off recurring billing prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
 

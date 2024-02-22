@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 10/10/2023
+ms.date: 02/12/2024
 ---
 
 # Create an incident report with Microsoft Security Copilot in Microsoft Defender XDR
@@ -41,6 +41,9 @@ A comprehensive and clear incident report is an essential reference for security
 While an [incident summary](security-copilot-m365d-incident-summary.md) provides an overview of an incident and how it happened, an incident report consolidates incident information from various data sources available in Microsoft Sentinel and Microsoft Defender XDR. The incident report also includes all analyst-driven steps and automated actions, the analysts involved in the response, and the comments from the analysts. Whether security teams are using Microsoft Defender XDR, Microsoft Sentinel, or both, all relevant incident data are added into the generated incident report.
 
 This guide lists the data in incident reports and contains steps on how to access the incident report creation capability within the portal. It also includes information on how to provide feedback about the generated report.
+
+> [!NOTE]
+> The incident report generation capability is also available in the Security Copilot standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
 
 ## Technical requirements
 
@@ -84,8 +87,8 @@ Here are some recommendations to consider to ensure that Security Copilot genera
 - Classify and resolve the incident before generating the incident report.
 - Ensure that you write and save comments in the Microsoft Sentinel activity log or in the Microsoft Defender XDR incident comments and history to include the comments in the incident report.
 - Write comments using comprehensive and clear language. In-depth and clear comments provide better context about the response actions. See the following steps to know how to access the comments field:
-  - [Add comments to incidents in Microsoft Defender XDR](manage-incidents.md#add-comments) 
-  - [Add comments to incidents in Microsoft Sentinel](/azure/sentinel/investigate-cases.md#comment-on-incidents)
+  - [Add comments to incidents in Microsoft Defender XDR](manage-incidents.md#add-comments)
+  - [Add comments to incidents in Microsoft Sentinel](/azure/sentinel/investigate-cases#comment-on-incidents)
 - For ServiceNow users, [enable the Microsoft Sentinel and ServiceNow bi-directional sync](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-introducing-microsoft-sentinel-solution-for/ba-p/3692840) to get more robust incident data.
 - Copy the generated incident report and post it to the comments and history of the incident to ensure that the incident report is saved in the incident page.
 

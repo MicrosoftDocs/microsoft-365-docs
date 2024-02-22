@@ -23,6 +23,8 @@ Translation in Microsoft Syntex lets you create a translated copy of a file manu
 
 When a file is translated, the file name of the translated copy is appended to show the ISO code for the language.
 
+   ![Screenshot showing the translated filename with the language code appended.](../media/content-understanding/translation-file-with-language-code.png)
+
 ## Translate a document on demand
 
 To create a translated version of a document, follow these steps:
@@ -44,6 +46,10 @@ To create a translated version of a document, follow these steps:
 3. You receive a confirmation message saying that the request to translate the file has been submitted.
 
    ![Screenshot showing the translation confirmation screen.](../media/content-understanding/translation-confirmation.png)
+
+   If you try to submit a duplicate translation request before the file has finished processing, you'll receive a message telling you to wait a few minutes before trying again.
+
+   ![Screenshot showing the message to wait a few minutes and trying again.](../media/content-understanding/translation-wait-message.png)
 
 ## Translate a document automatically
 
@@ -100,6 +106,7 @@ To create a rule to translate documents automatically when data in a column chan
      ![Screenshot of the Create a rule page showing the enter a language option.](../media/content-understanding/translation-column-enter-language.png)
 
 4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
+
 <!---
 ### View the translation activity feed of a document library
 

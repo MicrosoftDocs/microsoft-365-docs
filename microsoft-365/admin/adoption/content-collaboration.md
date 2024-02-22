@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/23/2020
+ms.date: 02/13/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -133,7 +133,7 @@ Understand how many users are attaching physical files in email rather than link
         - Denominator: The number of people who have had access to Exchange and OneDrive, SharePoint, or both within the last 28 days.
       - **Links to online files:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people using attachments and attaching links to files in emails.
         - Numerator: The number of people attaching links to online files to emails within the last 28 days.
-        - Denominator: The number of people who have access to Exchange and OneDrive, SharePoint, or both within the last 28 days.
+        - Denominator: The number of people who have had access to Exchange and OneDrive, SharePoint, or both, and sent at least one attachment within the last 28 days.
 4. **Link to resources:** Select this link to view help content.
 
 ### Sharing of online files
@@ -148,7 +148,7 @@ Understand how many users are attaching physical files in email rather than link
         - Denominator: The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
       - **Internally only:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people who have access to OneDrive or SharePoint and are sharing files internally only.
         - Numerator: The number of people who have shared files internally only within the last 28 days
-        - Denominator: The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
+        - Denominator: The number of people who have had access to Exchange and OneDrive, SharePoint, or both, and sent at least one attachment within the last 28 days.
 4. **Link to resources:** Select this link to view help content.
 
 ### Number of files collaborated on
