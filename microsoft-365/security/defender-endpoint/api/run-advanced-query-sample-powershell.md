@@ -32,7 +32,7 @@ ms.date: 12/18/2020
 
 [!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
-Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).
+Run advanced queries using PowerShell. For more information, see [Advanced Hunting API](run-advanced-query-api.md).
 
 In this section, we share PowerShell samples to retrieve a token and use it to run a query.
 
@@ -72,8 +72,8 @@ $response = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $body -ErrorActi
 $aadToken = $response.access_token
 ```
 
-where
-- $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
+Where
+- $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query is run on the data of this tenant)
 - $appId: ID of your Microsoft Entra app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
 - $appSecret: Secret of your Microsoft Entra app
 
@@ -126,7 +126,7 @@ $results | ConvertTo-Json | Set-Content file1.json
 ```
 
 
-## Related topic
+## Related article
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
