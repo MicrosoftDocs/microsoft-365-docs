@@ -34,7 +34,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Operation**- File Creation
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- *.zepto, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab
 - **Attack Surface Reduction rules**- ASR rules block the attack techniques and not the Indicators of Compromise (IOC). Blocking a specific file extension isn't always useful, as it doesn't prevent a device from compromise. It only partially thwarts an attack until attackers create a new type of extension for the payload.
-- **Other recommended features**- Having Microsoft Defender Antivirus enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend that you use other prevention, such as the ASR rule "Use advanced protection against ransomware", which provides a greater level of protection against ransomware attacks. Furthermore, Microsoft Defender for Endpoint monitors many of these registry keys, such as ASEP techniques, which trigger specific alerts. The registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. It's recommended to use a locked down environment with minimum administrative accounts or rights. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that's part of our wider security recommendations.
+- **Other recommended features**- Having Microsoft Defender Antivirus enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend that you use other prevention, such as the ASR rule *Use advanced protection against ransomware*, which provides a greater level of protection against ransomware attacks. Furthermore, Microsoft Defender for Endpoint monitors many of these registry keys, such as ASEP techniques, which trigger specific alerts. The registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. It's recommended to use a locked down environment with minimum administrative accounts or rights. Other system configurations can be enabled, including *Disable SeDebug for nonrequired roles* that's part of our wider security recommendations.
 
 ### Block creation of specific registry keys
 
@@ -43,7 +43,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Operation**- Registry Modifications
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs*\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **Attack Surface Reduction rules**- ASR rules block the attack techniques and not the Indicators of Compromise (IOC). Blocking a specific file extension isn't always useful, because it doesn't prevent a device from compromise. It only partially thwarts an attack until attackers create a new type of extension for the payload.
-- **Other recommended features**- Having Microsoft Defender Antivirus enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend you use extra prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, Microsoft Defender for Endpoint monitors several of these registry keys, such as ASEP techniques, which trigger specific alerts. Additionally, the registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. It's recommended to use a locked down environment with minimum administrative accounts or rights. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that's part of our wider security recommendations.
+- **Other recommended features**- Having Microsoft Defender Antivirus enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend you use extra prevention, such as the ASR rule *Use advanced protection against ransomware*. This provides a greater level of protection against ransomware attacks. Furthermore, Microsoft Defender for Endpoint monitors several of these registry keys, such as ASEP techniques, which trigger specific alerts. Additionally, the registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. It's recommended to use a locked down environment with minimum administrative accounts or rights. Other system configurations can be enabled, including *Disable SeDebug for non-required roles* that's part of our wider security recommendations.
 
 ### Block untrusted programs from running from removable drives
 
@@ -51,7 +51,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- *
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services:-*
-- **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent the launch of untrusted and unsigned programs from removable drives: "Block untrusted and unsigned processes that run from USB", GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4".
+- **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent the launch of untrusted and unsigned programs from removable drives: *Block untrusted and unsigned processes that run from USB*, GUID *b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4*.
 - **Other recommended features**- Please explore more controls for USB devices and other removable media using Microsoft Defender for Endpoint:[How to control USB devices and other removable media using Microsoft Defender for Endpoint](/windows/security/threat-protection/device-control/control-usb-devices-using-intune).
 
 ### Block Mshta from launching certain child processes
@@ -60,8 +60,8 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- mshta.exe
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- powershell.exe, cmd.exe, regsvr32.exe
-- **Attack Surface Reduction rules**- ASR rules don't contain any specific rule to prevent child processes from "mshta.exe". This control is within the remit of Exploit Protection or Windows Defender Application Control.
-- **Other recommended features**- Enable Windows Defender Application Control to prevent mshta.exe from being executed altogether. If your organization requires "mshta.exe" for line of business apps, configure a specific Windows Defender Exploit Protection rule, to prevent mshta.exe from launching child processes.
+- **Attack Surface Reduction rules**- ASR rules don't contain any specific rule to prevent child processes from *mshta.exe*. This control is within the remit of Exploit Protection or Windows Defender Application Control.
+- **Other recommended features**- Enable Windows Defender Application Control to prevent mshta.exe from being executed altogether. If your organization requires *mshta.exe* for line of business apps, configure a specific Windows Defender Exploit Protection rule, to prevent mshta.exe from launching child processes.
 
 ### Block Outlook from launching child processes
 
@@ -69,7 +69,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- outlook.exe
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- powershell.exe
-- **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent Office communication apps (Outlook, Skype, and Teams) from launching child processes: "Block Office communication application from creating child processes", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
+- **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent Office communication apps (Outlook, Skype, and Teams) from launching child processes: *Block Office communication application from creating child processes*, GUID *26190899-1602-49e8-8b27-eb1d0a1ce869*.
 - **Other recommended features**- We recommend enabling PowerShell constrained language mode to minimize the attack surface from PowerShell.
 
 ### Block Office Apps from launching child processes
@@ -78,7 +78,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- winword.exe, powerpnt.exe, excel.exe
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
-- **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent Office apps from launching child processes: "Block all Office applications from creating child processes", GUID "d4f940ab-401b-4efc-aadc-ad5f3c50688a".
+- **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent Office apps from launching child processes: *Block all Office applications from creating child processes*, GUID *d4f940ab-401b-4efc-aadc-ad5f3c50688a*.
 - **Other recommended features**- N/A
 
 ### Block Office Apps from creating executable content
@@ -95,7 +95,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- wscript.exe
 - **Operation**- File Read
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- C:\Users*\AppData**.js, C:\Users*\Downloads**.js
-- **Attack Surface Reduction rules**- Due to reliability and performance issues, ASR rules don't have the capability to prevent a specific process from reading a certain script file type. We do have a rule to prevent attack vectors that might originate from these scenarios. The rule name is "Block JavaScript or VBScript from launching downloaded executable content" (GUID "d3e037e1-3eb8-44c8-a917-57927947596d") and the "Block execution of potentially obfuscated scripts" (GUID " 5beb7efe-fd9a-4556-801d-275e5ffc04cc").
+- **Attack Surface Reduction rules**- Due to reliability and performance issues, ASR rules don't have the capability to prevent a specific process from reading a certain script file type. We do have a rule to prevent attack vectors that might originate from these scenarios. The rule name is *Block JavaScript or VBScript from launching downloaded executable content* (GUID *d3e037e1-3eb8-44c8-a917-57927947596d*) and the *Block execution of potentially obfuscated scripts* (GUID * 5beb7efe-fd9a-4556-801d-275e5ffc04cc*).
 - **Other recommended features**- Though there are specific ASR rules that mitigate certain attack vectors within these scenarios, it's important to mention that AV is able by default to inspect scripts (PowerShell, Windows Script Host, JavaScript, VBScript, and more) in real time, through the Antimalware Scan Interface (AMSI). More info is available here: [Antimalware Scan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal).
 
 ### Block launch of child processes
@@ -104,7 +104,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- AcroRd32.exe, Acrobat.exe
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- cmd.exe, powershell.exe, wscript.exe
-- **Attack Surface Reduction rules**- ASR rules allow blocking Adobe Reader from launching child processes. The rule name is "Block Adobe Reader from creating child processes", GUID "7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c".
+- **Attack Surface Reduction rules**- ASR rules allow blocking Adobe Reader from launching child processes. The rule name is *Block Adobe Reader from creating child processes*, GUID *7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c*.
 - **Other recommended features**- N/A
 
 ### Block download or creation of executable content
@@ -128,7 +128,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 ### Block specific launch Process Attempt
 
 - **Applies to**- Specific Processes
-- **Processes**- "Name your Process"
+- **Processes**- *Name your Process*
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- tor.exe, bittorrent.exe, cmd.exe, powershell.exe, and more
 - **Attack Surface Reduction rules**- Overall, ASR rules aren't designed to function as an Application manager.
