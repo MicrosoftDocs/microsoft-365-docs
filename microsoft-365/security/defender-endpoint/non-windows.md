@@ -1,14 +1,10 @@
 ---
 title: Microsoft Defender for Endpoint on other platforms
 description: Learn about Microsoft Defender for Endpoint capabilities on other platforms
-keywords: non windows, mac, macos, linux, android
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-endpoint
 ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

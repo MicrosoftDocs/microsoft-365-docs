@@ -5,8 +5,8 @@ ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
-author: dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: deniseb

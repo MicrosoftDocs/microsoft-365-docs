@@ -1,11 +1,7 @@
 ---
 title: Defender for Endpoint onboarding Windows Client
 description: Onboard Windows Client.
-keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
