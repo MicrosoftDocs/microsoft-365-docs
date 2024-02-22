@@ -76,7 +76,7 @@ Parameter|Type|Description
 :---|:---|:---
 indicatorValue|String|Identity of the [Indicator](ti-indicator.md) entity. **Required**
 indicatorType|Enum|Type of the indicator. Possible values are: `FileSha1`, `FileMd5`, `CertificateThumbprint`, `FileSha256`, `IpAddress`, `DomainName`, and `Url`. **Required**
-action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: `Alert`, `Warn`, `Block`, `Audit`, `BlockAndRemediate`, `AlertAndBlock`, and `Allowed`. **Required**. The `GenerateAlert` parameter must be set to `TRUE` when creating an action with `Audit`.
+action|Enum|The action that is taken if the indicator is discovered in the organization. Possible values are: `Alert`, `Warn`, `Block`, `Audit`, `BlockAndRemediate`, `AlertAndBlock`, and `Allowed`. **Required**. The `GenerateAlert` parameter must be set to `TRUE` when creating an action with `Audit`.
 application|String|The application associated with the indicator. This field only works for new indicators. It will not update the value on an existing indicator. **Optional**
 title|String|Indicator alert title. **Required**
 description|String|Description of the indicator. **Required**
