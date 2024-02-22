@@ -9,7 +9,7 @@ ms.pagetype: security
 author: Dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
