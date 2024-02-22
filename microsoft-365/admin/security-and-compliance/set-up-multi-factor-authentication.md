@@ -105,8 +105,8 @@ For more information about the Microsoft Entra ID P1 and P2, see [Microsoft Entr
 
 ## Related content
 
-[Set up multifactor authentication](set-up-multi-factor-authentication.md) (video)\
+[Set up multifactor authentication](set-up-multi-factor-authentication.md) (video)
 
-[Turn on multifactor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (article)\
+[Turn on multifactor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (article)
 
 [Security defaults and multifactor authentication](/microsoft-365/business-premium/m365bp-turn-on-mfa) (article)
