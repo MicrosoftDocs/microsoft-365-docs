@@ -64,7 +64,7 @@ The following steps guide you on how to create custom roles in Microsoft Defende
 9. Select **Add assignments** and Enter the Assignment name.
 10. Under **data sources**, choose if the assigned users will have the selected permissions across all the available products, or only for specific data sources:
 
-     :::image type="content" source="../../media/defender/m365-defender-rbac-assignments.png" alt-text="Screenshot of the assignments screen" lightbox="../../media/defender/m365-defender-rbac-assignments.png":::
+     :::image type="content" source="../../media/defender/m365-defender-rbac-assignments-fig.png" alt-text="Screenshot of the assignments screen" lightbox="../../media/defender/m365-defender-rbac-assignments.png":::
 
     If a user selects all read-only permissions for a single data source, for example, Microsoft Defender for Endpoint, they will not be able to read alerts for Microsoft Defender for Office 365 or Microsoft Defender for Identity.
 
