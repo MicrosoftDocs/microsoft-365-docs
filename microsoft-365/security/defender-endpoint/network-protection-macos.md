@@ -31,7 +31,7 @@ search.appverid: met150
 
 ## Overview
 
-Microsoft Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host:
+Microsoft Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that might host:
 
 - phishing scams
 - exploits
@@ -41,14 +41,14 @@ Network protection expands the scope of Microsoft Defender XDR [SmartScreen](/wi
 
 ## Availability
 
-Network Protection for macOS is now available for all Microsoft Defender for Endpoint onboarded macOS devices that meet the minimum requirements. All of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode.
+Network Protection for macOS is now available for all Microsoft Defender for Endpoint onboarded macOS devices that meet the minimum requirements. All of your currently configured Network Protection and Web Threat Protection policies are enforced on macOS devices where Network Protection is configured for block mode.
 
-To roll out Network Protection for macOS, we recommend the following:
+To roll out Network Protection for macOS, we recommend the following actions:
 
 - Create a device group for a small set of devices that you can use to test Network Protection.
 - Evaluate the impact of Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and Microsoft Defender for Cloud Apps enforcement policies that target those macOS devices where Network Protection is in Block mode.
 - Deploy an audit or block mode policy to this device group and verify there are no issues or broken workstreams.
-- Gradually deploy Network Protection to a larger set of devices until completely rolled out.
+- Gradually deploy Network Protection to a larger set of devices until rolled out.
 
 ## Current capabilities
 
@@ -56,7 +56,7 @@ To roll out Network Protection for macOS, we recommend the following:
 - Web Content Filtering support:
   - Block website categories scoped to device groups through policies created in the MDEP portal.
   - Policies are applied to browsers, including Chromium Microsoft Edge for macOS. 
-- Advanced Hunting - Network Events will be reflected in the Machine Timeline, and queryable in Advanced Hunting to aid security investigations.
+- Advanced Hunting - Network Events are reflected in the Machine Timeline, and queryable in Advanced Hunting to aid security investigations.
 - Microsoft Defender for Cloud Apps:
   - Shadow IT discovery - Identify which apps are being used in your organization.
   - Block applications - Block entire applications (such as Slack and Facebook) from being used in your organization.
@@ -66,12 +66,9 @@ To roll out Network Protection for macOS, we recommend the following:
 
 ### Known issues
 
-- Block/Warn UX isn't customizable and might require other look and feel changes
-  - Customer feedback is being collected to drive further design improvements
-- There is a known application incompatibility issue with VMWare's "Per-App Tunnel" feature.
-  - This incompatibility might result in an inability to block traffic that goes through the "Per-App Tunnel."
-- There is a known application incompatibility issue with Blue Coat Proxy.
-  - This incompatibility might result in network layer crashes in unrelated applications when both Blue Coat Proxy and Network Protection are enabled.
+- Block/Warn UX isn't customizable and might require other look and feel changes. (Customer feedback is being collected to drive further design improvements)
+- There is a known application incompatibility issue with VMWare's "Per-App Tunnel" feature. (This incompatibility might result in an inability to block traffic that goes through the "Per-App Tunnel.")
+- There is a known application incompatibility issue with Blue Coat Proxy. (This incompatibility might result in network layer crashes in unrelated applications when both Blue Coat Proxy and Network Protection are enabled.)
 
 ### Important notes
 
