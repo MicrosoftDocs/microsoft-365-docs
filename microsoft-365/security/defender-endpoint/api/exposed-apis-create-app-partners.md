@@ -42,18 +42,18 @@ search.appverid: met150
 
 This page describes how to create a Microsoft Entra application to get programmatic access to Microsoft Defender for Endpoint on behalf of your customers.
 
-Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs help you automate work flows and innovate based on Microsoft Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-In general, you'll need to take the following steps to use the APIs:
+In general, you need to take the following steps to use the APIs:
 
 - Create a **multi-tenant** Microsoft Entra application.
 - Get authorized(consent) by your customer administrator for your application to access Defender for Endpoint resources it needs.
 - Get an access token using this application.
 - Use the token to access Microsoft Defender for Endpoint API.
 
-The following steps will guide you how to create a Microsoft Entra application, get an access token to Microsoft Defender for Endpoint and validate the token.
+The following steps guide you how to create a Microsoft Entra application, get an access token to Microsoft Defender for Endpoint and validate the token.
 
-## Create the multi-tenant app
+## Create the multitenant app
 
 1. Sign in to your [Azure tenant](https://portal.azure.com) with user that has **Global Administrator** role.
 
@@ -75,7 +75,7 @@ The following steps will guide you how to create a Microsoft Entra application, 
 
    - On your application page, select **API Permissions** \> **Add permission** \> **APIs my organization uses** > type **WindowsDefenderATP** and select on **WindowsDefenderATP**.
 
-   - **Note**: *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
+   - Note that *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
      :::image type="content" source="../images/add-permission.png" alt-text="The Add a permission option" lightbox="../images/add-permission.png":::
 
