@@ -40,17 +40,17 @@ ms.date: 12/18/2020
 
 1. You can only run a query on data from the last 30 days.
 
-2. The results will include a maximum of 100,000 rows.
+2. The results include a maximum of 100,000 rows.
 
 3. The number of executions is limited per tenant:
-   - API calls: Up to 45 calls per minute, up to 1500 calls per hour.
+   - API calls: Up to 45 calls per minute, and up to 1,500 calls per hour.
    - Execution time: 10 minutes of running time every hour and 3 hours of running time a day.
 
 4. The maximal execution time of a single request is 200 seconds.
 
-5. `429` response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached.
+5. `429` response represents reaching quota limit either by number of requests or by CPU. Read response body to understand what limit was reached.
 
-6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again" will appear.
+6. The maximum query result size of a single request can't exceed 124 MB. If exceeded, an HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again" occurs.
 
 ## Permissions
 
