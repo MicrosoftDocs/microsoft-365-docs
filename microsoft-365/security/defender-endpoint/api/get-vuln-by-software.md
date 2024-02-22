@@ -1,13 +1,9 @@
 ---
 title: List vulnerabilities by software
 description: Retrieve a list of vulnerabilities in the installed software.
-keywords: apis, graph api, supported apis, get, vulnerabilities list, Microsoft Defender for Endpoint tvm api
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
