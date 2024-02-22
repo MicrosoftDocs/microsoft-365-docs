@@ -42,21 +42,21 @@ The OData's `$filter` query is supported on: `application`, `createdByDisplayNam
 <br>```$stop``` with max value of 10,000. 
 <br>```$skip```.
 
-See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ## Limitations
 
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
+Rate limitations for this API are 100 calls per minute and 1,500 calls per hour. 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md).
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|Ti.ReadWrite|'Read and write Indicators'
-Application|Ti.ReadWrite.All|'Read and write All Indicators'
-Delegated (work or school account)|Ti.ReadWrite|'Read and write Indicators'
+|Permission type|Permission|Permission display name|
+|---|---|---|
+| Application|Ti.ReadWrite|'Read and write Indicators' |
+| Application|Ti.ReadWrite.All|'Read and write All Indicators' |
+| Delegated (work or school account)|Ti.ReadWrite|'Read and write Indicators' |
 
 ## HTTP request
 
@@ -85,7 +85,7 @@ If successful, this method returns 200, Ok response code with a collection of [I
 
 ### Example 1 request
 
-Here is an example of a request that gets all Indicators
+Here's an example of a request that gets all Indicators:
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators
@@ -93,7 +93,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 ### Example 1 response
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 200 Ok
@@ -148,7 +148,7 @@ Content-type: application/json
 
 ### Example 2 request
 
-Here is an example of a request that gets all Indicators with 'AlertAndBlock' action 
+Here's an example of a request that gets all Indicators with `AlertAndBlock` action:
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'
@@ -156,7 +156,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'A
 
 ### Example 2 response
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 200 Ok
