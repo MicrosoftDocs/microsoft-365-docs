@@ -71,9 +71,9 @@ Empty
 
 ## Response
 
-If Indicator exists and deleted successfully - 204 OK without content
+If Indicator exists and deleted successfully - 204 OK without content.
 
-If Indicator with the specified id wasn't found - 404 Not Found
+If Indicator with the specified ID wasn't found - 404 Not Found.
 
 ## Example
 
@@ -84,4 +84,6 @@ Here's an example of the request.
 ```http
 DELETE https://api.securitycenter.microsoft.com/api/indicators/995
 ```
+
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]
