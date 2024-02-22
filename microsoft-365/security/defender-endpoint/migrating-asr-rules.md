@@ -1,6 +1,6 @@
 ---
-title: Migrating from a third-party HIPS to ASR rules
-description: Describes how to approach a migration from a third-party Host Intrusion Prevention System (HIPS) solution into ASR rules.
+title: Migrating from non-Microsoft HIPS to ASR rules
+description: Describes how to approach a migration from a non-Microsoft Host Intrusion Prevention System (HIPS) solution into ASR rules.
 ms.topic: conceptual
 ms.service: defender-endpoint
 ms.localizationpriority: medium
@@ -18,7 +18,7 @@ search.appverid: met150
 ms.date: 03/26/2021
 ---
 
-# Migrating from a third-party HIPS to ASR rules
+# Migrating from a non-Microsoft HIPS to ASR rules
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
