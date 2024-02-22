@@ -70,9 +70,9 @@ jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
 ```
 
-where
+Where
 
-- tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
+- tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query is run on the data of this tenant)
 - appId: ID of your Microsoft Entra app (the app must have 'Run advanced queries' permission to Microsoft Defender for Endpoint)
 - appSecret: Secret of your Microsoft Entra app
 
@@ -116,7 +116,7 @@ queryFile.close()
 
 You can now use the query results.
 
-To iterate over the results do the below:
+To iterate over the results, use the following command:
 
 ```python
 for result in results:
