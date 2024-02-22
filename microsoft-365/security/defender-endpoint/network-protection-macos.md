@@ -54,7 +54,7 @@ To roll out Network Protection for macOS, we recommend the following actions:
 
 - Custom Indicators of Compromise on Domains and IPs.
 - Web Content Filtering support:
-  - Block website categories scoped to device groups through policies created in the MDEP portal.
+  - Block website categories scoped to device groups through policies created in the Microsoft Defender portal.
   - Policies are applied to browsers, including Chromium Microsoft Edge for macOS. 
 - Advanced Hunting - Network Events are reflected in the Machine Timeline, and queryable in Advanced Hunting to aid security investigations.
 - Microsoft Defender for Cloud Apps:
@@ -67,8 +67,8 @@ To roll out Network Protection for macOS, we recommend the following actions:
 ### Known issues
 
 - Block/Warn UX isn't customizable and might require other look and feel changes. (Customer feedback is being collected to drive further design improvements)
-- There is a known application incompatibility issue with VMWare's "Per-App Tunnel" feature. (This incompatibility might result in an inability to block traffic that goes through the "Per-App Tunnel.")
-- There is a known application incompatibility issue with Blue Coat Proxy. (This incompatibility might result in network layer crashes in unrelated applications when both Blue Coat Proxy and Network Protection are enabled.)
+- There's a known application incompatibility issue with VMware's "Per-App Tunnel" feature. (This incompatibility might result in an inability to block traffic that goes through the "Per-App Tunnel.")
+- There's a known application incompatibility issue with Blue Coat Proxy. (This incompatibility might result in network layer crashes in unrelated applications when both Blue Coat Proxy and Network Protection are enabled.)
 
 ### Important notes
 
@@ -175,9 +175,9 @@ After you create this configuration profile, assign it to the devices where you 
 7. Select **OK**
 8. Select **Manage** \> **Assignments**. In the **Include** tab, select the devices for which you want to enable network protection.
 
-#### mobileconfig deployment
+#### Mobileconfig deployment
 
-To deploy the configuration via a .mobileconfig file, which can be used with 3rd party MDM solutions or distributed to devices directly:
+To deploy the configuration via a .mobileconfig file, which can be used with non-Microsoft MDM solutions or distributed to devices directly:
 
 1. Save the following payload as _com.microsoft.wdav.xml.mobileconfig_
    
@@ -255,7 +255,7 @@ To deploy the configuration via a .mobileconfig file, which can be used with 3rd
    >
    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
-4. [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](/defender-cloud-apps/mde-integration) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
+4. [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](/defender-cloud-apps/mde-integration) and your network protection-enabled macOS devices have endpoint policy enforcement capabilities.
    > [!NOTE]
    > Discovery and other features are currently not supported on these platforms.
 
@@ -265,13 +265,13 @@ The following scenarios are supported.
 
 ### Web threat protection
 
-Web threat protection is part of web protection in Microsoft Defender XDR for Endpoint. It uses network protection to secure your devices against web threats. By integrating with Microsoft Edge for macOS and popular third-party browsers like Chrome and Firefox, web threat protection stops web threats without a web proxy. Web threat protection can protect devices while they're on premises or away. Web threat protection stops access to the following types of sites:
+Web threat protection is part of web protection in Microsoft Defender XDR for Endpoint. It uses network protection to secure your devices against web threats. By integrating with Microsoft Edge for macOS and popular non-Microsoft browsers, such as Chrome and Firefox, web threat protection stops web threats without a web proxy. Web threat protection can protect devices while they're on premises or away. Web threat protection stops access to the following types of sites:
 
 - phishing sites
 - malware vectors
 - exploit sites
 - untrusted or low-reputation sites
-- sites you've blocked in your custom indicator list
+- sites that are blocked in your custom indicator list
 
 :::image type="content" source="images/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections." lightbox="images/network-protection-reports-web-protection.png":::
 
@@ -293,7 +293,7 @@ For more information, see: [Create indicators for IPs and URLs/domains](indicato
 
 Web content filtering is part of the [Web protection](web-protection-overview.md) capabilities in Microsoft Defender for Endpoint and Microsoft Defender for Business. Web content filtering enables your organization to track and regulate access to websites based on their content categories. Many of these websites (even if they're not malicious) might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
-Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
+Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you gather access statistics to help create a more custom policy decision. Your users see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
 Web content filtering is available on the major web browsers, with blocks performed by Network Protection (Safari, Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
 
@@ -307,25 +307,25 @@ The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you wo
 
 :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection monitored apps.":::
 
-Within 10-15 minutes, these domains will be listed in Microsoft Defender XDR under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users will be getting warn messages when attempting to access these domains:
+Within 10-15 minutes, these domains are listed in Microsoft Defender XDR under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users are getting warn messages when attempting to access these domains:
 
 :::image type="content" source="images/network-protection-macos-indicators-urls-domains-warn.png" alt-text="Shows network protection indicators for urls or domains warning.":::
 
-When the end user will be attempting to access monitored domains, they'll be warned by Microsoft Defender XDR for Endpoint.
+When the end user is attempting to access monitored domains, they're warned by Defender for Endpoint.
 
-- The user will get a plain block experience accompanied by the following toast message, which will be displayed by the operating system including the name of the blocked application (e.g Blogger.com)
+- The user gets a plain block experience accompanied by the following toast message, which is displayed by the operating system including the name of the blocked application (e.g Blogger.com)
 
   :::image type="content" source="images/network-protection-macos-content-blocked.png" alt-text="Shows end-user network protection content blocked toast notification.":::
 
-If the end user encounters a _block_, the user will have two possible resolutions:
+If the end user encounters a _block_, the user has two possible resolutions:
 
 #### User bypass
 
-- **For toast message experience**: Press the Unblock button. By reloading the webpage, the user will be able to proceed and use the cloud app. (This action is applicable for the next 24 hours, after which the user will have to unblock once again)
+- **For toast message experience**: Press the Unblock button. By reloading the webpage, the user is able to proceed and use the cloud app. (This action is applicable for the next 24 hours, after which the user has to unblock once again)
 
 #### User education
 
-- **For toast message experience**: Press the toast message itself. End user will be redirected to a custom redirect URL set globally in Microsoft Defender for Cloud Apps (More information at the bottom of this page)
+- **For toast message experience**: Press the toast message itself. End user is redirected to a custom redirect URL set globally in Microsoft Defender for Cloud Apps (More information at the bottom of this page)
 
 > [!NOTE]
 > Tracking bypasses per app** – You can track how many users have bypassed the warning in the _Application_ page in Microsoft Defender for Cloud Apps.
@@ -343,7 +343,7 @@ For many organizations, it's important to take the cloud controls provided by Mi
 - what is the thinking behind this decision
 - how encountering block sites can be mitigated
 
-Upon facing an unexpected behavior, users' confusion may be reduced by providing them as much information as possible, not only to explain about what has happened but to also educate them to be more aware the next time they choose a cloud app to complete their job. For example, this information can include:
+Upon facing an unexpected behavior, users' confusion might be reduced by providing them as much information as possible, not only to explain about what has happened but to also educate them to be more aware the next time they choose a cloud app to complete their job. For example, this information can include:
 
 - Organization security and compliance policies and guidelines for internet and cloud use
 - Approved/recommended cloud apps for use
@@ -354,10 +354,10 @@ For this page, we recommend that your organization uses a basic SharePoint site.
 ### Important things to know
 
 1. It can take up to two hours (typically less) for app domains to propagate and to be update in the endpoint devices, after it's marked as _Monitored_.
-2. By default, action will be taken for all apps and domains that were marked as Monitored in Microsoft Defender for Cloud Apps portal for all the onboarded endpoints in the organization.
+2. By default, action is taken for all apps and domains that were marked as Monitored in Microsoft Defender for Cloud Apps portal for all the onboarded endpoints in the organization.
 3. Full URLs are currently not supported and won't be sent from Microsoft Defender for Cloud Apps to Microsoft Defender XDR for Endpoint, if any full URLs are listed under Microsoft Defender for Cloud Apps monitored apps, hence, user won't get warned on access attempt (for example, google.com/drive isn't supported, while drive.google.com is supported).
 
-No End-user notification on third party browsers? Check your toast message settings
+No End-user notification on third party browsers? Check your toast message settings.
 
 ## See also
 
