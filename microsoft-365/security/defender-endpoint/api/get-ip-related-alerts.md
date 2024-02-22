@@ -1,6 +1,6 @@
 ---
 title: Get IP related alerts API
-description: Retrieve a collection of alerts related to a given IP address using Microsoft Defender for Endpoint
+description: Retrieve a collection of alerts related to a given IP address using Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
@@ -38,19 +38,19 @@ Retrieves a collection of alerts related to a given IP address.
 
 
 ## Limitations
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+1. Rate limitations for this API are 100 calls per minute and 1,500 calls per hour.
 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md).
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|Alert.Read.All|'Read all alerts'
-Application|Alert.ReadWrite.All|'Read and write all alerts'
-Delegated (work or school account) | Alert.Read | 'Read alerts'
-Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
+|Permission type|Permission|Permission display name|
+|:---|:---|:---|
+|Application|Alert.Read.All|'Read all alerts'|
+|Application|Alert.ReadWrite.All|'Read and write all alerts'|
+|Delegated (work or school account) | Alert.Read | 'Read alerts'|
+|Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'|
 
 > [!NOTE]
 > When obtaining a token using user credentials:
