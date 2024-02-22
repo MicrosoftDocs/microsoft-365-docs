@@ -9,7 +9,7 @@ manager: scotv
 ---
 # Request FastTrack assistance for Microsoft 365
 
-The FastTrack request for assistance (RFA) form is now available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2226341" target="_blank">Microsoft 365 admin center</a> and the <a href="https://setup.microsoft.com/" target="_blank">Microsoft 365 Setup portal</a>.  Submit this form to request guidance from FastTrack specialists with your Microsoft 365 deployment and migration efforts. FastTrack assistance is available for tenants with 150 or more licenses for the following Microsoft product families: Microsoft 365, Office 365, Microsoft Viva, Enterprise Mobility + Security, and Windows 10/11.  See <a href="https://learn.microsoft.com/microsoft-365/fasttrack/eligibility" target="_blank">eligible plans</a> for details.
+The FastTrack request for assistance (RFA) form is now available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2226341" target="_blank">Microsoft 365 admin center</a> and the <a href="https://setup.microsoft.com/" target="_blank">Microsoft 365 Setup portal</a>.  Submit this form to request guidance from FastTrack specialists with your Microsoft 365 deployment and migration efforts. FastTrack assistance is available for tenants with 150 or more licenses for the following Microsoft product families: Microsoft 365, Office 365, Microsoft Viva, Enterprise Mobility + Security, and Windows 10/11.  See <a href="/microsoft-365/fasttrack/eligibility" target="_blank">eligible plans</a> for details.
 
 ## Submit an RFA in the Microsoft 365 admin center
 
