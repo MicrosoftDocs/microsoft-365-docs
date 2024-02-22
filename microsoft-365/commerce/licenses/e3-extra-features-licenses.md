@@ -19,27 +19,6 @@ description: "Learn about Microsoft 365 E3 and E5 Extra Features and how to assi
 ms.date: 01/25/2024
 ---
 
----
-title: "Understand the Microsoft 365 E3 and E5 Extra Features license"
-f1.keywords:
-- NOCSH
-author: cmcatee-MSFT
-ms.author: cmcatee
-manager: scotv
-ms.reviewer: paprud, marketing
-audience: Admin
-ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.localizationpriority: medium
-ms.collection: 
-- Tier2
-- scotvorg
-- Adm_o365
-search.appverid: MET150
-description: "Learn about Microsoft 365 E3 and E5 Extra Features and how to assign licenses for it to your users."
-ms.date: 01/25/2024
----
-
 # Understand the Microsoft 365 E3 and E5 Extra Features license
 
 > [!IMPORTANT]
