@@ -433,11 +433,11 @@ To deploy the onboarding package:
 
    :::image type="content" alt-text="Deploy onboarding package" source="images/mdatp-6-systemconfigurationprofiles-1.png" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
 
-1. On the **Basics** tab, **Name** the profile. For example, 'Autoupdate-prod-macOS-Default-MDE'. Click **Next**.
+1. On the **Basics** tab, **Name** the profile. For example, 'MDATP onboarding for MacOS'. Click **Next**.
 
    :::image type="content" alt-text="click next" source="images/mdatp-6-systemconfigurationprofiles-2.png" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
 
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Autoupdate.mobileconfig'.
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'MDATP onboarding for MacOS'.
 1. Choose a **Deployment channel**.
 1. Click **Next**.
 1. Select a **Configuration profile file**.
