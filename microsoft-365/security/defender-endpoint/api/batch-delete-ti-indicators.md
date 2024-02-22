@@ -7,7 +7,7 @@ ms.subservice: reference
 author: itsela-ms
 ms.author: itsela
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier3

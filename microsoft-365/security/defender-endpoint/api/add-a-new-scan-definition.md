@@ -1,15 +1,11 @@
 ---
 title: Add, update or delete a scan definition
 description: Learn how to use the Add, update or delete scan definitions.
-keywords: apis, graph api, supported apis, scans, network scans, authenticated scan
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

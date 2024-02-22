@@ -12,7 +12,7 @@ ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 ms.date: 01/25/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
