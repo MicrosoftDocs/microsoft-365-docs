@@ -54,9 +54,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
-| Application|Ti.ReadWrite|'Read and write Indicators' |
-| Application|Ti.ReadWrite.All|'Read and write All Indicators' |
-| Delegated (work or school account)|Ti.ReadWrite|'Read and write Indicators' |
+| Application|Ti.ReadWrite|`Read and write Indicators` |
+| Application|Ti.ReadWrite.All|`Read and write All Indicators` |
+| Delegated (work or school account)|Ti.ReadWrite|`Read and write Indicators` |
 
 ## HTTP request
 
@@ -79,7 +79,7 @@ Empty
 If successful, this method returns 200, Ok response code with a collection of [Indicator](ti-indicator.md) entities.
 
 > [!NOTE]
-> If the Application has 'Ti.ReadWrite.All' permission, it will be exposed to all Indicators. Otherwise, it will be exposed only to the Indicators it created.
+> If the Application has `Ti.ReadWrite.All` permission, it will be exposed to all Indicators. Otherwise, it will be exposed only to the Indicators it created.
 
 ## Example 1
 
