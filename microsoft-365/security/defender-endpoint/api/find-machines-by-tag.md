@@ -1,13 +1,9 @@
 ---
 title: Find devices by tag API
 description: Find all devices that contain specific tag
-keywords: apis, supported apis, get, device, find, find device, by tag, tag
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
