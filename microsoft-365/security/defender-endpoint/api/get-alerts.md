@@ -74,7 +74,7 @@ One of the following permissions is required to call this API. To learn more, in
 > When obtaining a token using user credentials:
 >
 > - The user needs to have at least the following role permission: `View Data` (See [Create and manage roles](../user-roles.md) for more information)
-> - The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](../machine-groups.md) for more information)
+> - The response includes only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](../machine-groups.md) for more information)
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
@@ -86,9 +86,9 @@ GET /api/alerts
 
 ## Request headers
 
-Name|Type|Description
-:---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
+|Name|Type|Description|
+|:---|:---|:---|
+|Authorization | String | Bearer {token}. **Required**.|
 
 ## Request body
 
@@ -102,7 +102,7 @@ If successful, this method returns 200 OK, and a list of [alert](alerts.md) obje
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts
@@ -110,7 +110,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 
 ### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 > [!NOTE]
 > The response list shown here may be truncated for brevity. All alerts will be returned from an actual call.
@@ -171,7 +171,7 @@ Here is an example of the response.
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
@@ -179,7 +179,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 
 ### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 > [!NOTE]
 > The response list shown here may be truncated for brevity. All alerts will be returned from an actual call.
@@ -322,4 +322,5 @@ Here is an example of the response.
 ## See also
 
 [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]
