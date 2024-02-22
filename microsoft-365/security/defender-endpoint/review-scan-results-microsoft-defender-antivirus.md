@@ -8,7 +8,7 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.date: 12/11/2023
 ms.reviewer: 
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 ms.topic: conceptual
 ms.collection: 

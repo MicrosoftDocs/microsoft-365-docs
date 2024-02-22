@@ -9,7 +9,7 @@ ms.author: dansimp
 author: dansimp
 ms.reviewer: younghree
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
