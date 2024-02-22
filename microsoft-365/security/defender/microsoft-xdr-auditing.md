@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender XDR audit activities
-description: Learn about the Microsoft Defender XDR activities at are logged in the Microsoft Defender XDR audit logs.
+title: Search the audit log for events in Microsoft Defender XDR
+description: Learn about the Microsoft Defender XDR activities that are logged in the Microsoft 365 audit log.
 ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
@@ -17,7 +17,7 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Microsoft Defender XDR audit activities
+# Search the audit log for events in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
@@ -26,11 +26,17 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Intro
-How to turn it (including a statement about us using the audit log, and a link tp thier "how to turn on section")
-How to search - go to the security portal (or purview), and add same data as they did - I can give it to yoi
-Defender activities = links to UAL pages
-additional resources
+The audit log can help you investigate specific activities across Microsoft 365 services. In the Microsoft Defender XDR portal, Microsoft Defender XDR and Microsoft Defender for Endpoint activities are audited. Some of the activities audited are:
+
+- Changes to data retention settings
+- Changes to advanced features
+- Creation of indicators of compromise
+- Isolation of devices
+- Add\edit\deletion of security roles
+- Create\edit custom detection rules
+- Assign user to an incidents
+
+For a complete list of Microsoft Defender XDR activities that are audited, see [Audit Log Activities](/purview/audit-log-activities).
 
 ## Requirements
 
@@ -47,6 +53,11 @@ additional resources
 For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies).
 
 ## Enable the unified audit log
+
+How to turn it (including a statement about us using the audit log, and a link tp thier "how to turn on section")
+How to search - go to the security portal (or purview), and add same data as they did - I can give it to yoi
+Defender activities = links to UAL pages
+additional resources
 
 1. Log in to [Microsoft Defender XDR](https://security.microsoft.com/homepage) using an account with the Security administrator or Global administrator role assigned.
 2. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
