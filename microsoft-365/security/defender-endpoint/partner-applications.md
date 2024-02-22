@@ -108,7 +108,7 @@ Logo|Partner name|Description
 
 Logo|Partner name|Description
 :---|:---|:---
-![Logo for Cyren Web Filter.](images/cyren-logo.png)|[Cyren Web Filter](https://go.microsoft.com/fwlink/?linkid=2108221)|Enhance your Defender for Endpoint with advanced Web Filtering
+![Logo for Cyren Web Filter.](images/cyren-logo.png)|[Cyren Web Filter](https://www.cyren.com/security-center/url-category-check)|Enhance your Defender for Endpoint with advanced Web Filtering
 ![Logo for Morphisec.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Defender for Cloud dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
 ![Logo for THOR Cloud.](images/nextron-thor-logo.png)|[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)|Provides on-demand live forensics scans using a signature base with focus on persistent threats
 
