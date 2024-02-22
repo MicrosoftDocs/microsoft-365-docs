@@ -56,15 +56,15 @@ ms.date: 12/18/2020
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|AdvancedQuery.Read.All|'Run advanced queries'
-Delegated (work or school account)|AdvancedQuery.Read|'Run advanced queries'
+|Permission type|Permission|Permission display name|
+|:---|:---|:---|
+|Application|AdvancedQuery.Read.All|`Run advanced queries`|
+|Delegated (work or school account)|AdvancedQuery.Read|`Run advanced queries`|
 
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have 'View Data' AD role
+> - The user needs to have the `View Data` role assigned in Microsoft Entra ID
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](../machine-groups.md) for more information)
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
@@ -98,7 +98,7 @@ If successful, this method returns 200 OK, and _QueryResponse_ object in the res
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
@@ -116,7 +116,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 > [!NOTE]
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -158,7 +158,7 @@ Here is an example of the response.
 }
 ```
 
-## Related topics
+## Related articles
 
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
