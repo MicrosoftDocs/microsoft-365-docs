@@ -130,15 +130,15 @@ In the following example we use **'Read all alerts'** permission:
 
    :::image type="content" source="../images/app-consent-partner.png" alt-text="The Accept button" lightbox="../images/app-consent-partner.png":::
 
-   In addition, you will need to ask your customer for their tenant ID and save it for future use when acquiring the token.
+   In addition, you'll need to ask your customer for their tenant ID and save it for future use when acquiring the token.
 
-6. **Done!** You have successfully registered an application! See examples below for token acquisition and validation.
+6. **Done!** You successfully registered an application! See the following examples for token acquisition and validation.
 
 ## Get an access token example
 
 **Note:** To get access token on behalf of your customer, use the customer's tenant ID on the following token acquisitions.
 
-For more information on Microsoft Entra token, see [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more information on Microsoft Entra token, see [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### Using PowerShell
 
@@ -179,7 +179,7 @@ return $token
     using Microsoft.Identity.Client;
     ```
 
-- Copy/Paste the below code in your application (do not forget to update the three variables: `tenantId`, `appId`, and `appSecret`)
+- Copy/Paste the below code in your application (don't forget to update the three variables: `tenantId`, `appId`, and `appSecret`)
 
     ```csharp
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
@@ -199,56 +199,63 @@ return $token
 
 ### Using Python
 
-Refer to [Get token using Python](run-advanced-query-sample-python.md#get-token)
+Refer to [Get token using Python](run-advanced-query-sample-python.md#get-token).
 
 ### Using Curl
 
 > [!NOTE]
 > The below procedure supposed Curl for Windows is already installed on your computer
 
-- Open a command window
-- Set CLIENT_ID to your Azure application ID
-- Set CLIENT_SECRET to your Azure application secret
-- Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Microsoft Defender for Endpoint application
-- Run the below command:
+1. Open a command window.
 
-```curl
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
-```
+2. Set CLIENT_ID to your Azure application ID.
 
-You will get an answer of the form:
+3. Set CLIENT_SECRET to your Azure application secret.
 
-```console
-{"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
-```
+4. Set TENANT_ID to the Azure tenant ID of the customer that wants to use your application to access Microsoft Defender for Endpoint application.
+
+5. Run the follwoing command:
+
+   ```curl
+   curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
+   ```
+
+   You will get an answer of the form:
+
+   ```console
+   {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
+   ```
 
 ## Validate the token
 
-Sanity check to make sure you got a correct token:
+Confirm you received a correct token.
 
-- Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
-- Validate you get a 'roles' claim with the desired permissions
-- In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to  Microsoft Defender for Endpoint:
-- The "tid" claim is the tenant ID the token belongs to.
+1. Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it.
 
-:::image type="content" source="../images/webapp-decoded-token.png" alt-text="The token validation page" lightbox="../images/webapp-decoded-token.png":::
+2. Confirm you get a 'roles' claim with the desired permissions.
+
+   In the following screenshot, you can see a decoded token acquired from an Application with multiple permissions to  Microsoft Defender for Endpoint:
+
+   The "tid" claim is the tenant ID the token belongs to.
+
+   :::image type="content" source="../images/webapp-decoded-token.png" alt-text="The token validation page" lightbox="../images/webapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 
-- Choose the API you want to use, for more information, see [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
-- Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme)
-- The Expiration time of the token is 1 hour (you can send more than one request with the same token)
+1. Choose the API you want to use. For more information, see [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md).
 
-- Example of sending a request to get a list of alerts **using C#**
+2. Set the Authorization header in the Http request you send to "Bearer {token}" (Bearer is the Authorization scheme). The Expiration time of the token is 1 hour (you can send more than one request with the same token).
 
-    ```csharp
-    var httpClient = new HttpClient();
+   Here's an example of sending a request to get a list of alerts **using C#**
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
+   ```csharp
+   var httpClient = new HttpClient();
 
-    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+   var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
 
-    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+   request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+   var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 
     // Do something useful with the response
     ```
@@ -257,4 +264,5 @@ Sanity check to make sure you got a correct token:
 
 - [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint on behalf of a user](exposed-apis-create-app-nativeapp.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]
