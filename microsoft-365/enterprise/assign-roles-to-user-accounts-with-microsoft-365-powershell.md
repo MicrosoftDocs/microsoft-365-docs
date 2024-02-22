@@ -3,7 +3,7 @@ title: "Assign roles to Microsoft 365 user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/14/2024
+ms.date: 02/22/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -41,7 +41,14 @@ You can easily assign roles to user accounts by using PowerShell for Microsoft 3
 
 ## Assign roles to user accounts using Microsoft Graph PowerShell
 
-First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+>[!NOTE]
+> The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+
+First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md). The cmdlets in this article require the permission scope **RoleManagement.ReadWrite.Directory** or one of the other permissions listed in the ['List subscribedSkus' Graph API reference page](/graph/api/subscribedsku-list). Some commands in this article may require different permission scopes, in which case this will be noted in the relevant section.
+
+```powershell
+Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"
+```
 
 For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?).
 
@@ -53,39 +60,48 @@ Next, determine the name of the role. See [Microsoft Entra built-in roles](/azur
 >Pay attention to the notes in this article. Some role names are different for Azure Active Directory (Azure AD) PowerShell. For example, the *SharePoint Administrator* role in the Microsoft 365 admin center is *SharePoint Service Administrator* in Azure AD PowerShell.
 >
 
-Next, fill in the sign-in and role names and run these commands:
+Next, fill in the user UPN and role names and run these commands:
   
 ```powershell
-$userName="<sign-in name of the account>"
-$roleName="<admin role name>"
-$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+$userUPN="<user UPN>"
+$roleName="<role name>"
+$role = Get-MgDirectoryRole | Where-Object {$_.displayName -eq $roleName}
 if ($role -eq $null) {
-$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
-Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
-$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+    $roleTemplate = (Get-MgDirectoryRoleTemplate | Where-Object {$_.displayName -eq $roleName}).id
+    New-MgDirectoryRole -DisplayName $roleName -RoleTemplateId $roleTemplate
+    $role = Get-MgDirectoryRole | Where-Object {$_.displayName -eq $roleName}
 }
-Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$userId = (Get-MgUser -Filter "userPrincipalName eq '$userUPN'").Id
+$newRoleMember =@{
+    "@odata.id"= "https://graph.microsoft.com/v1.0/users/$userId"
+    }
+New-MgDirectoryRoleMemberByRef -DirectoryRoleId $role.Id -BodyParameter $newRoleMember
 ```
 
 Here's an example of a completed command set that assigns the SharePoint Service Administrator role to the *belindan\@contoso.com* account:
-  
+
 ```powershell
-$userName="belindan@contoso.com"
-$roleName="SharePoint Service Administrator"
-$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+$userUPN="adelev@contoso.com"
+$roleName="Exchange Administrator"
+$role = Get-MgDirectoryRole | Where-Object {$_.displayName -eq $roleName}
 if ($role -eq $null) {
-$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
-Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
-$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+    $roleTemplate = (Get-MgDirectoryRoleTemplate | Where-Object {$_.displayName -eq $roleName}).id
+    New-MgDirectoryRole -DisplayName $roleName -RoleTemplateId $roleTemplate
+    $role = Get-MgDirectoryRole | Where-Object {$_.displayName -eq $roleName}
 }
-Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$userId = (Get-MgUser -Filter "userPrincipalName eq '$userUPN'").Id
+$newRoleMember =@{
+    "@odata.id"= "https://graph.microsoft.com/v1.0/users/$userId"
+    }
+New-MgDirectoryRoleMemberByRef -DirectoryRoleId $role.Id -BodyParameter $newRoleMember
 ```
 
-To display the list of user names for a specific admin role, use these commands.
+To display the list of user IDs for a specific admin role, use these commands.
 
 ```powershell
 $roleName="<role name>"
-Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+Connect-MgGraph -Scopes "Directory.Read.All"
+Get-MgDirectoryRole | Where-Object { $_.DisplayName -eq $roleName } | ForEach-Object { Get-MgDirectoryRoleMember -DirectoryRoleId $_.Id }
 ```
 
 ## See also
