@@ -8,7 +8,7 @@ ms.author: sunasing
 author: sunasing
 ms.localizationpriority: medium
 ms.date: 01/28/2024
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

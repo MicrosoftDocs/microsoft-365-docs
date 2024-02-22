@@ -9,7 +9,7 @@ author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: thdoucet
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier3

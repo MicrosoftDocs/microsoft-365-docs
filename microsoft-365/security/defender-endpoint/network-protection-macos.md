@@ -9,7 +9,7 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 ms.reviewer: 
-manager: dansimp
+manager: deniseb
 ms.custom: asr
 ms.subservice: macos
 ms.topic: overview

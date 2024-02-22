@@ -11,7 +11,7 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde
-manager: dansimp
+manager: deniseb
 ms.subservice: linux
 ms.topic: overview
 ms.collection: 

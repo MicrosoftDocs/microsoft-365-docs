@@ -8,7 +8,7 @@ audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
-manager: dansimp
+manager: deniseb
 ms.custom: asr
 ms.subservice: asr
 ms.topic: overview
