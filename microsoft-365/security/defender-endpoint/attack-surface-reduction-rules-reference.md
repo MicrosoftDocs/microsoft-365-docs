@@ -1,4 +1,3 @@
----
 title: Attack surface reduction rules reference
 description: Lists details about Microsoft Defender for Endpoint attack surface reduction rules on a per-rule basis.
 ms.service: defender-endpoint
@@ -66,7 +65,9 @@ For the easiest method to enable the standard protection rules, see: [Simplified
 | Block Office communication application from creating child processes | | Yes |
 | Block persistence through WMI event subscription | Yes | |
 | Block process creations originating from PSExec and WMI commands | | Yes |
+| Block rebooting machine in Safe Mode | | Yes |
 | Block untrusted and unsigned processes that run from USB | | Yes |
+| Block use of copied or impersonated system tools | | Yes |
 | Block Webshell creation for Servers | | Yes |
 | Block Win32 API calls from Office macros | | Yes |
 | Use advanced protection against ransomware | | Yes |
@@ -114,7 +115,9 @@ The following table lists the supported operating systems for rules that are cur
 | [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
 | [Block persistence through Windows Management Instrumentation (WMI) event subscription](#block-persistence-through-wmi-event-subscription) | Y <br> version 1903 (build 18362) or later <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> version 1903 (build 18362) or later | N | Y |
 | [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
+| [Block rebooting machine in Safe Mode](#Block-rebooting-machine-in-Safe-Mode) | Y | Y | Y | Y | Y |
 | [Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
+| [Block use of copied or impersonated system tools](#Block-use-of-copied-or-impersonated-system-tools) | Y | Y | Y | Y | Y |
 | [Block Webshell creation for Servers](#block-webshell-creation-for-servers)  | N | Y <br>Exchange Role Only | Y <br>Exchange Role Only | Y <br>Exchange Role Only | N |
 | [Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | N | N | N | N |
 | [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
@@ -143,9 +146,11 @@ Links to information about configuration management system versions referenced i
 |[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) | Y |Y <br><br> CB 1710 | Y  | Y  |
 |[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y |Y <br><br> CB 1710 | Y  | Y  |
 |[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |Y  |  |Y   | Y  |
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |   |  Y | Y  |
-|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |Y <br><br> CB 1802  | Y  | Y  |
-|[Block Webshell creation for Servers](#block-webshell-creation-for-servers) | Y |   | Y | Y |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |  |  Y | Y  |
+| [Block rebooting machine in Safe Mode](#Block-rebooting-machine-in-Safe-Mode) | Y | | Y  |  Y |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |Y <br><br> CB 1802 | Y  | Y  |
+| [Block use of copied or impersonated system tools](#Block-use-of-copied-or-impersonated-system-tools) | Y | | Y  |  Y |
+|[Block Webshell creation for Servers](#block-webshell-creation-for-servers) | Y | | Y | Y |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y |Y <br><br> CB 1710  | Y  |  Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y |Y <br><br> CB 1802 | Y  | Y  |
 
@@ -181,8 +186,10 @@ For rules with the "Rule State" specified:
 |[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
 |[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
 |[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
+|[Block rebooting machine in Safe Mode](#Block-rebooting-machine-in-Safe-Mode) | | N | N |
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
-|[Block Webshell creation for Servers](#block-webshell-creation-for-servers) |   |   |   |
+|[Block use of copied or impersonated system tools](#Block-use-of-copied-or-impersonated-system-tools) | | N | N |
+|[Block Webshell creation for Servers](#block-webshell-creation-for-servers) |   | N | N |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
 
@@ -203,7 +210,9 @@ For rules with the "Rule State" specified:
 | Block Office communication application from creating child processes | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
 | Block persistence through WMI event subscription <br>* File and folder exclusions not supported. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
 | Block process creations originating from PSExec and WMI commands | d1e49aac-8f56-4280-b9ba-993a6d77406c |
+| Block rebooting machine in Safe Mode | 33ddedf1-c6e0-47cb-833e-de6133960387 |
 | Block untrusted and unsigned processes that run from USB | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
+| Block use of copied or impersonated system tools | c0033c00-d16d-4114-a5a0-dc9b3a7d2ceb |
 | Block Webshell creation for Servers | a8f5898e-1dc8-49a9-9878-85004b8a61e6 |
 | Block Win32 API calls from Office macros | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
 | Use advanced protection against ransomware | c1db55ab-c21a-4637-bb3f-a12568109d35 |
@@ -245,6 +254,8 @@ The **Block abuse of exploited vulnerable signed drivers** rule doesn't block a 
 -->
 
 Intune Name: `Block abuse of exploited vulnerable signed drivers`
+
+Configuration Manager name: Not yet available
 
 GUID: `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
@@ -419,7 +430,7 @@ Malware that abuses Office as a vector might attempt to break out of Office and 
 
 Intune name: `Office apps/macros creating executable content`
 
-SCCM name: `Block Office applications from creating executable content`
+Configuration Manager name: `Block Office applications from creating executable content`
 
 GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
@@ -520,6 +531,20 @@ Advanced hunting action type:
 
 Dependencies: Microsoft Defender Antivirus
 
+### Block rebooting machine in Safe Mode
+ 
+This rule prevents machine from restarting in Safe mode.
+ 
+Safe Mode is a diagnostic mode that only loads the essential files and drivers needed for Windows to run. However, in Safe mode, many security products are either disabled or operate in a limited capacity, which allows attackers to further launch tampering commands, or simply execute and encrypt all files on the machine. This rule blocks such attacks by preventing processes from restarting machine in Safe mode.
+ 
+Intune Name: `Block rebooting machine in Safe Mode`
+
+Configuration Manager name: Not yet available
+ 
+GUID: `33ddedf1-c6e0-47cb-833e-de6133960387`
+ 
+Dependencies: Microsoft Defender Antivirus
+
 ### Block untrusted and unsigned processes that run from USB
 
 With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include executable files (such as .exe, .dll, or .scr)
@@ -540,6 +565,20 @@ Advanced hunting action type:
 
 Dependencies: Microsoft Defender Antivirus
 
+### Block use of copied or impersonated system tools
+ 
+This rule blocks the use of executable files that are identified as copies of Windows system tools (such as cmd.exe, vssadmin.exe, certutil.exe etc). These files are either duplicates or impostors of the original system tools.
+ 
+Some malicious programs may try to copy or impersonate Windows system tools to avoid detection or gain privileges. Allowing such executable files can lead to potential attacks. This rule prevents propagation and execution of such duplicates and imposters of the system tools on Windows machines. 
+ 
+Intune Name: `Block use of copied or impersonated system tools`
+
+Configuration Manager name: Not yet available
+
+GUID: `c0033c00-d16d-4114-a5a0-dc9b3a7d2ceb`
+ 
+Dependencies: Microsoft Defender Antivirus
+
 ### Block Webshell creation for Servers
 
 This rule blocks web shell script creation on Microsoft Server, Exchange Role.
@@ -549,6 +588,8 @@ A web shell script is a specifically crafted script that allows an attacker to c
 Intune name: `Block Webshell creation for Servers`
  
 GUID: `a8f5898e-1dc8-49a9-9878-85004b8a61e6`
+
+Dependencies: Microsoft Defender Antivirus
 
 ### Block Win32 API calls from Office macros
 
