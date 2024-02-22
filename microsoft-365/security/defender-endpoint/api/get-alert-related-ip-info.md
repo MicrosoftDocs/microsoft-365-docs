@@ -1,13 +1,9 @@
 ---
 title: Get alert-related IPs' information
 description: Retrieve all IPs related to a specific alert using Microsoft Defender for Endpoint.
-keywords: apis, graph api, supported apis, get alert information, alert information, related ip
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
