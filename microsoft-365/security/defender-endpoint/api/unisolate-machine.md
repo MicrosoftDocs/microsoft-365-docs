@@ -1,14 +1,9 @@
 ---
 title: Release device from isolation API
 description: Use this API to create calls related to release a device from isolation.
-keywords: apis, graph api, supported apis, remove device from isolation
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
