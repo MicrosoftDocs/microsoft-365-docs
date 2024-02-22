@@ -3,10 +3,10 @@ title: Technological partners of Microsoft Defender XDR
 ms.reviewer:
 description: View technological partners of M365 Defender to enhance detection, investigation, and threat intelligence capabilities of the platform.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -68,7 +68,7 @@ The following are the solution's categories:
 |[Microsoft Sentinel](https://go.microsoft.com/fwlink/?linkid=2201962)|Microsoft|Microsoft Sentinel is a scalable, cloud-native, security information and event management (SIEM) and security orchestration, automation, and response (SOAR) solution. Microsoft Sentinel delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for attack detection, threat visibility, proactive hunting, and threat response.|
 |[ArcSight](https://go.microsoft.com/fwlink/?linkid=2202142)|Micro Focus|ArcSight provides multiple analytics capabilities for correlation, search, UEBA, enhanced and automated response, and log management.|
 |[Splunk SOAR](https://go.microsoft.com/fwlink/?linkid=2201773)|Splunk|Splunk SOAR orchestrates workflows and automates tasks in seconds to work smarter and respond faster.|
-|[Security Incident Response](https://go.microsoft.com/fwlink/?linkid=2201874)|ServiceNow|The ServiceNow® Security Incident Response application tracks the progress of security incidents from discovery and initial analysis, through containment, eradication, and recovery, and into the final post-incident review, knowledge base article creation, and closure.|
+|[Security Incident Response](https://go.microsoft.com/fwlink/?linkid=2201874)|ServiceNow|The ServiceNow&reg; Security Incident Response application tracks the progress of security incidents from discovery and initial analysis, through containment, eradication, and recovery, and into the final post-incident review, knowledge base article creation, and closure.|
 |[Swimlane](https://go.microsoft.com/fwlink/?linkid=2202140)|Swimlane Inc|Automates your incident response capabilities with Swimlane (SOAR) and Microsoft Defender.|
 |[InsightConnect](https://go.microsoft.com/fwlink/?linkid=2201877)|Rapid7|InsightConnect provides security orchestration, automation and response solution that accelerates incident response and vulnerability management processes.|
 |[Demisto, a Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2201777)|Palo Alto Networks|Demisto integrates with Microsoft Defender for Endpoint to enable security teams to orchestrate and automate endpoint security monitoring, enrichment and response.|
@@ -77,7 +77,7 @@ The following are the solution's categories:
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2201775)|SafeBreach|SafeBreach continuously executes attacks, correlates results to help visualize security gaps, and leverages contextual insights to highlight remediation efforts. With its Hacker's Playbook™, the industry's most extensive collection of attack data enabled by state-of-the-art threat intelligence research, SafeBreach empowers organizations to get proactive about security with a simple approach that replaces hope with data.|
+|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2201775)|SafeBreach|SafeBreach continuously executes attacks, correlates results to help visualize security gaps, and leverages contextual insights to highlight remediation efforts. With its Hacker's Playbook&trade;, the industry's most extensive collection of attack data enabled by state-of-the-art threat intelligence research, SafeBreach empowers organizations to get proactive about security with a simple approach that replaces hope with data.|
 |[Extended Security Posture Management (XSPM)](https://go.microsoft.com/fwlink/?linkid=2201771)|Cymulate|Cymulate's Extended Security Posture Management enables companies to challenge, assess, and optimize their cybersecurity posture.|
 |[Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201967)|SkyBox|Develops a vulnerability program strategy that accurately analyzes exposure risk across hybrid attack surface and prioritize the remediation.|
 |[Attack Path Management](https://go.microsoft.com/fwlink/?linkid=2201774)|XM Cyber|Attack Path Management is a hybrid cloud security company providing attack path management changing the ways organizations approach cyber risk.|
