@@ -68,14 +68,14 @@ ms.date: 12/18/2020
 |osBuild|Nullable long|Operating system build number.|
 |lastIpAddress|String|Last IP on local NIC on the [machine](machine.md).|
 |lastExternalIpAddress|String|Last IP through which the [machine](machine.md) accessed the internet.|
-|healthStatus|Enum|[machine](machine.md) health status. Possible values are: `Active`, `Inactive`, `ImpairedCommunication`, `NoSensorData`, `NoSensorDataImpairedCommunication` and `Unknown`.|
+|healthStatus|Enum|[machine](machine.md) health status. Possible values are: `Active`, `Inactive`, `ImpairedCommunication`, `NoSensorData`, `NoSensorDataImpairedCommunication`, and `Unknown`.|
 |rbacGroupName|String|Machine group Name.|
 |rbacGroupId|String|Machine group ID.|
-|riskScore|Nullable Enum|Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.|
+|riskScore|Nullable Enum|Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: `None`, `Informational`, `Low`, `Medium`, and `High`.|
 |aadDeviceId|Nullable representation Guid|Microsoft Entra Device ID (when [machine](machine.md) is Microsoft Entra joined).|
 |machineTags|String collection|Set of [machine](machine.md) tags.|
-|exposureLevel|Nullable Enum|Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.|
-|deviceValue|Nullable Enum|The [value of the device](../tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.|
+|exposureLevel|Nullable Enum|Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: `None`, `Low`, `Medium`, and `High`.|
+|deviceValue|Nullable Enum|The [value of the device](../tvm-assign-device-value.md). Possible values are: `Normal`, `Low`, and `High`.|
 |ipAddresses|IpAddress collection|Set of ***IpAddress*** objects. See [Get machines API](get-machines.md).|
 |osArchitecture|String|Operating system architecture. Possible values are: `32-bit`, `64-bit`. Use this property instead of osProcessor.|
 
