@@ -26,6 +26,12 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+Intro
+How to turn it (including a statement about us using the audit log, and a link tp thier "how to turn on section")
+How to search - go to the security portal (or purview), and add same data as they did - I can give it to yoi
+Defender activities = links to UAL pages
+additional resources
+
 ## Requirements
 
 - To use the auditing functionality, your organization must have Microsoft 365 E3/E5 or Office E3/E5 subscriptions.
@@ -40,7 +46,7 @@ search.appverid: met150
 
 For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies).
 
-## Enable the auditing feature
+## Enable the unified audit log
 
 1. Log in to [Microsoft Defender XDR](https://security.microsoft.com/homepage) using an account with the Security administrator or Global administrator role assigned.
 2. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
