@@ -1,13 +1,9 @@
 ---
 title: Get security recommendations
 description: Retrieves a collection of security recommendations related to a given device ID.
-keywords: apis, graph api, supported apis, get, list, file, information, security recommendation per device, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

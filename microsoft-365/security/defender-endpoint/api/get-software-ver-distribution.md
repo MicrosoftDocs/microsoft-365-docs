@@ -1,13 +1,9 @@
 ---
 title: List software version distribution
 description: Retrieves a list of your organization's software version distribution
-keywords: apis, graph api, supported apis, get, software version distribution, Microsoft Defender for Endpoint tvm api
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

@@ -1,13 +1,9 @@
 ---
 title: List Indicators API
 description: Learn how to use the List Indicators API to retrieve a collection of all active Indicators in Microsoft Defender for Endpoint.
-keywords: apis, public api, supported apis, Indicators collection
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
