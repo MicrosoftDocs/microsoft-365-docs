@@ -95,7 +95,7 @@ category| String | Category of the alert. The property values are: "General", "C
 
 ## Response
 
-If successful, this method returns 200 OK, and a new [alert](alerts.md) object in the response body. If event with the specified properties (_reportId_, _eventTime_ and _machineId_) was not found - 404 Not Found.
+If successful, this method returns 200 OK, and a new [alert](alerts.md) object in the response body. If event with the specified properties (_reportId_, _eventTime_ and _machineId_) wasn't found - 404 Not Found.
 
 ## Example
 
