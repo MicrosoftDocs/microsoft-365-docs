@@ -1,11 +1,7 @@
 ---
 title: Get scan history by session
 description: Learn how to use the get scan history by session api
-keywords: apis, graph api, supported apis, scan history by session
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
