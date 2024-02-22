@@ -1,13 +1,9 @@
 ---
 title: Investigation resource type
 description: Microsoft Defender for Endpoint Investigation entity.
-keywords: apis, graph api, supported apis, get, alerts, investigations
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
