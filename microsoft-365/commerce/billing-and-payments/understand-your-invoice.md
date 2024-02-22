@@ -24,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MCA billing account."
-ms.date: 02/16/2024
+ms.date: 02/22/2024
 ---
 
 # Understand your invoice for your Microsoft MCA billing account
