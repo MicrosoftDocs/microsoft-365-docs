@@ -75,18 +75,18 @@ The following steps guide you how to create a Microsoft Entra application, get a
 
    - On your application page, select **API Permissions** \> **Add permission** \> **APIs my organization uses** > type **WindowsDefenderATP** and select on **WindowsDefenderATP**.
 
-   - Note that *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
+   - Note that *WindowsDefenderATP* doesn't appear in the original list. Start writing its name in the text box to see it appear.
 
      :::image type="content" source="../images/add-permission.png" alt-text="The Add a permission option" lightbox="../images/add-permission.png":::
 
 ### Request API permissions
 
-To determine which permission you need, review the **Permissions** section in the API you are interested to call. For instance:
+To determine which permission you need, review the **Permissions** section in the API you're interested to call. For instance:
 
 - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
 - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
 
-In the following example we will use **'Read all alerts'** permission:
+In the following example we use **'Read all alerts'** permission:
 
 1. Choose **Application permissions** \> **Alert.Read.All** > select on **Add permissions**
 
@@ -102,7 +102,7 @@ In the following example we will use **'Read all alerts'** permission:
 
    - Select **Certificates & secrets**, add description to the secret and select **Add**.
 
-    **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
+    **Important**: After you select **Add**, make sure to copy the generated secret value. You won't be able to retrieve it after you leave!
 
      :::image type="content" source="../images/webapp-create-key2.png" alt-text="The create app key" lightbox="../images/webapp-create-key2.png":::
 
@@ -114,7 +114,7 @@ In the following example we will use **'Read all alerts'** permission:
 
 5. Add the application to your customer's tenant.
 
-   You need your application to be approved in each customer tenant where you intend to use it. This is because your application interacts with Microsoft Defender for Endpoint application on behalf of your customer.
+   You need your application to be approved in each customer tenant where you intend to use it. This approval is necessary because your application interacts with Microsoft Defender for Endpoint application on behalf of your customer.
 
    A user with **Global Administrator** from your customer's tenant need to select the consent link and approve your application.
 
