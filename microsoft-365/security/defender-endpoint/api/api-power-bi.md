@@ -33,7 +33,7 @@ ms.date: 12/18/2020
 
 [!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
-In this section you'll learn to create a Power BI report on top of Defender for Endpoint APIs.
+In this section, you learn to create a Power BI report on top of Defender for Endpoint APIs.
 
 The first example demonstrates how to connect Power BI to Advanced Hunting API, and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.
 
