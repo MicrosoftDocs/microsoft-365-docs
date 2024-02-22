@@ -1,6 +1,6 @@
 ---
-title: Add, update or delete a scan definition
-description: Learn how to use the Add, update or delete scan definitions.
+title: Add, update, or delete a scan definition
+description: Learn how to use the Add, update, or delete scan definitions.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
@@ -18,7 +18,7 @@ search.appverid: met150
 ms.date: 12/14/2022
 ---
 
-# Add, update or delete a scan definition
+# Add, update, or delete a scan definition
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
@@ -40,11 +40,11 @@ ms.date: 12/14/2022
 
 ## API description
 
-API to add, update or delete an authenticated scan.
+API to add, update, or delete an authenticated scan.
 
 ## Limitations
 
-Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+Rate limitations for this API are 100 calls per minute and 1,500 calls per hour.
 
 You can post on machines last seen according to your configured retention period.
 
@@ -60,8 +60,8 @@ Delegated (work or school account)|Machine.Read.Write|Read and write all scan in
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - To view data the user needs to have at least the following role permission: 'ViewData' or 'TvmViewData' (See [Create and manage roles](../user-roles.md) for more information)
-> - To edit data the user needs to have at least the following role permission: 'ManageSecurity' (See [Create and manage roles](../user-roles.md) for more information)
+> - To view data the user needs to have at least the following role permission: `ViewData` or `TvmViewData` (See [Create and manage roles](../user-roles.md) for more information)
+> - To edit data the user needs to have at least the following role permission: `ManageSecurity` (See [Create and manage roles](../user-roles.md) for more information)
 
 ## HTTP request
 
