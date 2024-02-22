@@ -1,11 +1,7 @@
 ---
 title: Score methods and properties
 description: Retrieves your organization's exposure score, device secure score, and exposure score by device group
-keywords: apis, graph api, supported apis, score, exposure score, device secure score, exposure score by device group
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium

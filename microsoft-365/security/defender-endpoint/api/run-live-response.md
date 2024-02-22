@@ -1,12 +1,8 @@
 ---
 title: Run live response commands on a device
 description: Learn how to run a sequence of live response commands on a device.
-keywords: apis, graph api, supported apis, upload to library
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: diannegali
