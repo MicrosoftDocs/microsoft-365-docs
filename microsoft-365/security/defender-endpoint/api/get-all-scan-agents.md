@@ -1,11 +1,7 @@
 ---
 title: Get all scan agents
 description: Learn how to use the Get all scan agents API
-keywords: apis, graph api, supported apis, scan, authenticated scan, agent
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
