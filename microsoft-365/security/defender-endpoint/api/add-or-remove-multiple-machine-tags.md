@@ -80,7 +80,7 @@ Parameter|Type|Description
 :---|:---|:---
 Value|String|The tag name. **Required**.
 Action|Enum|Add or Remove. Allowed values are: 'Add' or 'Remove'. **Required**.
-MachineIds|List (String)|List of machine ids to update. Required.|
+MachineIds|List (String)|List of machine IDs to update. Required.|
 
 ## Response
 
@@ -88,7 +88,7 @@ If successful, this method returns 200 - Ok response code and the updated machin
 
 ## Example Request
 
-Here is an example of a request that adds a tag to multiple machines.
+Here's an example of a request that adds a tag to multiple machines.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/AddOrRemoveTagForMultipleMachines
