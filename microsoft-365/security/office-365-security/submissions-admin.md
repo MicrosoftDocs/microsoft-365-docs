@@ -497,7 +497,7 @@ On the **Submissions** page, select the **Teams messages** tab.
 You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
 - **Submission name**<sup>\*</sup>
-- **Sender**sup>\*</sup>
+- **Sender**<sup>\*</sup>
 - **Date submitted**<sup>\*</sup>
 - **Reason for submitting**<sup>\*</sup>
 - **Submitted by**
