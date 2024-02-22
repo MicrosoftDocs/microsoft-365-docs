@@ -40,7 +40,7 @@ List live response library files.
 
 ## Limitations
 
-1.  Rate limitations for this API are 100 calls per minute and 1500 calls per
+1.  Rate limitations for this API are 100 calls per minute and 1,500 calls per
     hour.
 
 ## Permissions
@@ -77,7 +77,7 @@ If successful, this method returns 200 - OK response code with a collection
 
 **Request**
 
-Here is an example of a request that gets all live response library files
+Here's an example of a request that gets all live response library files.
 
 ```HTTP
 GET https://api.securitycenter.microsoft.com/api/libraryfiles
@@ -85,7 +85,7 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 
 ## Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```JSON
 HTTP/1.1 200 Ok
@@ -127,6 +127,6 @@ Content-type: application/json
 ```
 
 
-## Related topic
+## Related article
 - [Run live response](run-live-response.md) 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]
