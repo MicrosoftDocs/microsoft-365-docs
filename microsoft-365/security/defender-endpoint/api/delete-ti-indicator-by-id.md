@@ -1,13 +1,9 @@
 ---
 title: Delete Indicator API.
 description: Learn how to use the Delete Indicator API to delete an Indicator entity by ID in Microsoft Defender for Endpoint.
-keywords: apis, public api, supported apis, delete, ti indicator, entity, id
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -44,16 +40,16 @@ Deletes an [Indicator](ti-indicator.md) entity by ID.
 
 ## Limitations
 
-Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+Rate limitations for this API are 100 calls per minute and 1,500 calls per hour.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md).
 
-Permission type | Permission | Permission display name
-:---|:---|:---
-Application | Ti.ReadWrite | 'Read and write TI Indicators'
-Application | Ti.ReadWrite.All | 'Read and write Indicators'
+| Permission type | Permission | Permission display name |
+| :---|:---|:---|
+| Application | Ti.ReadWrite | 'Read and write TI Indicators' |
+| Application | Ti.ReadWrite.All | 'Read and write Indicators' |
 
 ## HTTP request
 
