@@ -40,7 +40,7 @@ Microsoft and Managed Service Providers (MSPs) share the responsibility for data
 
 This collaborative approach ensures that all involved parties take necessary steps to safeguard the data and uphold the highest standards of data privacy.
 
-:::image type="content" source="../media/m365-lighthouse-data-privacy-and-compliance/terms-and-conditions.png" alt-text="Diagram that shows how terms and conditions encompass customer data and transparent operations.":::
+:::image type="content" source="../media/m365-lighthouse-data-privacy-and-compliance/terms-and-conditions.png" alt-text="Diagram that shows how terms and conditions apply to customer data and transparent operations.":::
 
 ## Data access
 
@@ -74,12 +74,12 @@ These relationships ensure MSPs access data responsibly while enhancing customer
 
 Data access relationships intersect with the following data feature areas:
 
-- **Customer success insights**
+- **Customer success insights**<br>
     These features include opportunities and subscription renewals and enable MSPs to offer proactive guidance and recommendations to their customers.
     - **Data source:** Lighthouse uses anonymized tenant-level usage data, which combines subscription information with aggregated insights. This approach ensures valuable analytics while safeguarding individual privacy.
     - **Example:** By using the subscription renewals feature, an MSP can proactively connect with their customer to discuss their needs and take the appropriate actions to prevent a service interruption.
 
-- **Customer management**
+- **Customer management**<br>
     These features help MSPs monitor and manage customer data, devices, and users.
     - **Data source:** Lighthouse collects data from customers who have an active delegated admin relationship with the MSP and whose tenant was successfully onboarded to Lighthouse.
     - **Example:** By using the device compliance feature, an MSP can assess the status of customer devices and identify any issues affecting productivity and security.
@@ -98,9 +98,9 @@ For more information on how Lighthouse handles data collection, see [Data collec
 
 ## Data removal
 
-The data available in Lighthouse plays an important role in the valuable features and functions that Lighthouse provides for MSPs, such as optimized tenant management experiences and customer success insights. But what if you want to remove your data from Lighthouse? How do you do that, and what are the consequences?
+The data available in Lighthouse plays an important role in the valuable features and functions that Lighthouse provides for MSPs, such as optimized tenant management experiences and customer success insights. But what if you want to remove your data from Lighthouse? How do you remove it, and what are the consequences?
 
-Data removal is the process of withdrawing permission to access and use data that was previously granted to a service. Data removal may also involve stopping the access and use of data that's already stored by the service. This can be done without impacting an MSP's relationship with its customers, since the MSP can still perform other administrative actions on behalf of the customers. Data removal is a crucial aspect of data governance because it allows MSPs and customers to control their data and protect their privacy and security.
+Data removal is the process of withdrawing permission to access and use data that was previously granted to a service. Data removal may also involve stopping the access and use of data that's already stored by the service. This can be done without impacting an MSP's relationship with its customer, since the MSP can still perform other administrative actions on behalf of the customer. Data removal is a crucial aspect of data governance because it allows MSPs and customers to control their data and protect their privacy and security.
 
 ### Data removal for partner tenants
 
