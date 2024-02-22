@@ -1,11 +1,7 @@
 ---
 title: Add or remove a tag for multiple machines
 description: Learn how to use the Add or Remove machine tags API to add or remove a tag for multiple devices in Microsoft Defender for Endpoint.
-keywords: apis, graph api, supported apis, tags, machine tags
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -44,8 +40,8 @@ Adds or removes a tag for the specified set of machines.
 ## Limitations
 
 1. You can post on machines last seen according to your configured retention period.
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
-3. We can add or remove tag a for up to 500 machines per API call.
+2. Rate limitations for this API are 100 calls per minute and 1,500 calls per hour.
+3. We can add or remove a tag for up to 500 machines per API call.
 
 
 ## Permissions
@@ -60,7 +56,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'Manage security setting'. For more (See [Create and manage roles](../user-roles.md) for more information).
+> - The user needs to have at least the following role permission: 'Manage security setting'. For more information, see [Create and manage roles](../user-roles.md).
 > - The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](../machine-groups.md) for more information).
 
 ## HTTP request
