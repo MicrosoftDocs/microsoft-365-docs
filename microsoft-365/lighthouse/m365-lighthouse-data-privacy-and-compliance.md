@@ -38,19 +38,19 @@ Microsoft and Managed Service Providers (MSPs) share the responsibility for data
 - MSPs are responsible for using customer data in a responsible and transparent manner.
 - Customers are responsible for granting and revoking the relationships that provide their MSP access to the data.
 
-This collaborative approach ensures that all parties involved take necessary steps to safeguard the data and uphold the highest standards of data privacy.
+This collaborative approach ensures that all involved parties take necessary steps to safeguard the data and uphold the highest standards of data privacy.
 
-Image placeholder
+:::image type="content" source="../media/m365-lighthouse-data-privacy-and-compliance/terms-and-conditions.png" alt-text="Diagram that shows how terms and conditions encompass customer data and transparent operations.":::
 
 ## Data access
 
 Data access is the authorized ability to access and use data. When it comes to accessing data in Lighthouse, Microsoft follows several key principles:
 
-- **Openness:** Microsoft believes in openness and collaboration. Data should be accessible to those who need it, and it should foster innovation and inform decision-making. Open-data initiatives promote transparency and enable cross-organizational collaboration.
+- **Openness:** Microsoft believes in openness and collaboration. Data should be accessible to everyone who needs it, and it should foster innovation and inform decision-making. Open-data initiatives promote transparency and enable cross-organizational collaboration.
 - **Usability:** Data access should be straightforward and user-friendly. Microsoft provides tools, APIs, and interfaces that allow developers and users to interact with data efficiently. Usability ensures that data is accessible without unnecessary complexity.
 - **Empowerment:** Data access empowers individuals, organizations, and communities. Enabling access to relevant data allows Microsoft to contribute to solving real-world challenges and make a positive impact on society.
-- **Security:** While promoting data access, Microsoft prioritizes security. Robust authentication, authorization, and encryption mechanisms protect data from unauthorized access. Security measures ensure that data remains confidential and integral.
-- **Privacy:** Respecting user privacy is paramount. Microsoft adheres to privacy regulations and best practices. Data access should not compromise individual privacy rights, and personal data must be handled responsibly.
+- **Security:** Microsoft prioritizes security when promoting data access. Robust authentication, authorization, and encryption mechanisms protect data from unauthorized access. Security measures ensure that data remains confidential and integral.
+- **Privacy:** Respecting user privacy is paramount. Microsoft adheres to privacy regulations and best practices. Data access shouldn't compromise individual privacy rights, and personal data must be handled responsibly.
  
 These principles guide Microsoft's approach to data access. They emphasize responsible sharing and collaboration and foster innovation, while also safeguarding privacy and security.
 
@@ -76,21 +76,21 @@ Data access relationships intersect with the following data feature areas:
 
 - **Customer success insights**
     These features include opportunities and subscription renewals and enable MSPs to offer proactive guidance and recommendations to their customers.
-    - **Data source:** Lighthouse leverages anonymized tenant-level usage data, which combines subscription information with aggregated insights. This approach ensures valuable analytics while safeguarding individual privacy.
+    - **Data source:** Lighthouse uses anonymized tenant-level usage data, which combines subscription information with aggregated insights. This approach ensures valuable analytics while safeguarding individual privacy.
     - **Example:** By using the subscription renewals feature, an MSP can proactively connect with their customer to discuss their needs and take the appropriate actions to prevent a service interruption.
 
 - **Customer management**
     These features help MSPs monitor and manage customer data, devices, and users.
-    - **Data source:** Lighthouse collects data from customers who have an active delegated admin relationship with the MSP and whose tenant has been successfully onboarded to Lighthouse.
+    - **Data source:** Lighthouse collects data from customers who have an active delegated admin relationship with the MSP and whose tenant was successfully onboarded to Lighthouse.
     - **Example:** By using the device compliance feature, an MSP can assess the status of customer devices and identify any issues affecting productivity and security.
 
 By understanding these feature areas and their connection to data access relationships, organizations can navigate data responsibly while enhancing customer satisfaction.
 
 ## Data residency
 
-Data residency refers to the physical location where data is stored and processed. Data privacy, protection laws, and regulations may vary by region and country, and some customers may prefer or require their data to reside in certain locations. MSPs should understand how Lighthouse handles data residency and which options are available for them and their customers.
+Data residency refers to the physical location where data is stored and processed. Data privacy, protection laws, and regulations might vary by region and country, and some customers might prefer or require their data to reside in certain locations. MSPs should understand how Lighthouse handles data residency and which options are available for them and their customers.
 
-Lighthouse processes and stores data in compliance with regional data protection laws and regulations. However, it's important to note that Lighthouse has different data residency commitments than other Microsoft 365 services. For example, some Microsoft 365 services allow customers to choose a specific country for their data processing and storage, whereas Lighthouse does not offer this option. MSPs and customers should be aware that Lighthouse processes and stores data in the region associated with the customer tenant.
+Lighthouse processes and stores data in compliance with regional data protection laws and regulations. However, it's important to note that Lighthouse has different data residency commitments than other Microsoft 365 services. For example, some Microsoft 365 services allow customers to choose a specific country for their data processing and storage, whereas Lighthouse doesn't offer this option. MSPs and customers should be aware that Lighthouse processes and stores data in the region associated with the customer tenant.
 
 This approach is designed to provide a consistent and unified experience for MSPs who manage customers in different regions. By processing and storing data in the customer tenant's region, Lighthouse can optimize performance, reliability, and scalability for these MSPs.
 
@@ -108,3 +108,60 @@ MSPs control whether Lighthouse can access and use their data. To remove their d
 
 - Contact Microsoft Support, who will process the partner tenant for offboarding from the Lighthouse service.
 - Remove the service principals for Microsoft 365 Lighthouse on their own, if they have experience in managing service principals and Microsoft Entra ID.
+
+By performing one of these actions, MSPs can maintain control over their data while discontinuing the use of Lighthouse. These actions result in losing access to the features and functions provided by Lighthouse, such as tenant management experiences and customer success insights.
+
+### Data removal for customer tenants
+
+Customers control whether Lighthouse can access and use their data. Withdrawing the ability for Lighthouse to access and use customer data can affect the MSP's ability to effectively manage and secure the customer tenant. Before making any changes to data access, customers should consider the following:
+
+- Lighthouse might be the solution their MSP chose to provide the managed services that the customer purchased from the MSP.
+- Lighthouse will no longer be able to provide the MSP with valuable insights into the configuration of the customer tenant and potential security issues might arise as a result.
+ 
+If an MSP wants to prevent Lighthouse from accessing and using customer data, the MSP can inactivate the customer tenant. Inactivation can be a useful approach since it doesn't affect the delegated admin relationship or reseller relationship between the customer and the MSP. To inactivate a customer tenant, MSPs should follow these steps:
+
+1. In the left navigation pane of Lighthouse, select **Tenants** to open the **Tenants** page.
+2. Find the tenant that you want to inactivate, select the three dots (more actions) next to the tenant's name, and then select **Inactivate tenant**.
+3. In the confirmation dialog, select **Confirm** to inactivate the tenant.
+ 
+Alternatively, the customer can withdraw the MSP's ability to access or use the customer's data by ending the delegated admin relationship and reseller relationship that they have with the MSP. Before removing either relationship, it's important to consider the following:
+
+- Removing the delegated admin relationship means the MSP can no longer perform admin actions on behalf of the customer, such as configuring services, resetting passwords, and much more.
+- Removing the reseller relationship means the MSP will cancel any subscriptions the customer purchased through the MSP.
+ 
+## Data restrictions
+
+Data privacy and compliance are important aspects of using data in Lighthouse. The data restrictions are based on the product terms and conditions and the agreements that apply to the Cloud Solution Provider program. These agreements might change from time to time, and it's the responsibility of the MSP to follow them and consult with legal counsel as needed.
+
+Data restrictions limit the use of data. For example, data can't be used for marketing or sales purposes. MSPs can use data in Lighthouse for customer success purposes only, and only if it doesn't violate data restrictions or the customer's privacy preferences. *Customer success purposes* ensure customers achieve their desired outcomes while using a product or service. *Marketing and sales purposes* involve persuading customers to buy a product or service.
+
+Some examples of how data can be used for customer success include:
+
+- Providing relevant and timely communications and feedback to customers.
+- Helping customers to adopt and use the features and capabilities that best suit their needs and goals.
+- Providing customers with additional value or services that enhance their experience and outcomes with Microsoft online services.
+- Providing proactive guidance and support to customers to resolve issues and prevent problems.
+
+## Data retention 
+
+Lighthouse follows different data retention policies for different types of data that it collects from partner and customer tenants. The following table summarizes the data retention policies for each type of data, the deletion method, and the principles followed.
+
+| Data type | Retention period | Deletion method | Principles followed |
+|--|--|--|--|
+| Data collected from customer tenants | 30 days | Automatic | Data minimization, transparency, accountability |
+| Data generated by MSPs through use of the Lighthouse service | Until deleted by the MSP or until the customer or MSP is offboarded | Manual | User control, consent |
+| Diagnostic data collected from MSPs | 30 days | Automatic | Data minimization, transparency, accountability |
+
+The data retention policies are designed to minimize the amount of customer data that's stored outside of customer tenants, while still providing valuable insights and actions for MSPs. The policies are also designed to help MSPs manage their customers effectively and efficiently. Data retention policies follow the principles of data minimization, transparency, accountability, user control, consent, and choice when managing data.
+
+MSPs and customers can't configure data retention periods. When Lighthouse deletes data that's older than 30 days, it's permanently erased from the service and can't be recovered. The data isn't stored or transferred to any other location or service.
+
+For more information, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
+
+## Related content
+
+[Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview) (link page)\
+[Privacy at Microsoft](https://privacy.microsoft.com/) (link page)\
+[Data collection for Microsoft 365 Lighthouse](m365-lighthouse-data-collection.md) (article)\
+[Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview) (article)\
+[Microsoft Compliance Hub](/compliance/) (link page)
