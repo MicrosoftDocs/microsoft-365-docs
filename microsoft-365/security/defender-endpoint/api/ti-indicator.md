@@ -45,7 +45,7 @@ Method|Return Type|Description
 
 ## Properties
 
-| Property|Type|Description |
+|Property|Type|Description |
 |---|---|--|
 |id|String|Identity of the [Indicator](../ti-indicator.md) entity.|
 |indicatorValue|String|The value of the [Indicator](../ti-indicator.md).|
