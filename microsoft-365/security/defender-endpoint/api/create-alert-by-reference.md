@@ -84,7 +84,7 @@ In the request body, supply the following values (all are required):
 
 Property | Type | Description
 :---|:---|:---
-eventTime | DateTime(UTC) | The precise time of the event as string, as obtained from advanced hunting. e.g.,  ```2018-08-03T16:45:21.7115183Z``` **Required**.
+eventTime | DateTime(UTC) | The precise time of the event as string, as obtained from advanced hunting. For example,  ```2018-08-03T16:45:21.7115183Z``` **Required**.
 reportId | String | The reportId of the event, as obtained from advanced hunting. **Required**.
 machineId | String | Id of the device on which the event was identified. **Required**.
 severity | String | Severity of the alert. The property values are: 'Low', 'Medium' and 'High'. **Required**.
