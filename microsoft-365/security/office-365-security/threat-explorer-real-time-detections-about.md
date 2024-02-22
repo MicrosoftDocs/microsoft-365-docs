@@ -1437,7 +1437,7 @@ The basic syntax of a property filter/query is:
 
 Condition = \<Filter property\> \<Filter operator> \<Property value or values\>
 
-Multiple filters/query conditions use the following syntax:
+Multiple conditions use the following syntax:
 
 \<Condition1> \<AND | OR\> \<Condition2>  \<AND | OR\> \<Condition3>... \<AND | OR\> \<ConditionN>
 
