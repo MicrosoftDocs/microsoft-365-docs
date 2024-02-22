@@ -43,13 +43,13 @@ You first need to [create an app](apis-intro.md).
 
 - Open a PowerShell window.
 
-- If your policy does not allow you to run the PowerShell commands, you can run the following command:
+- If your policy doesn't allow you to run the PowerShell commands, you can run the following command:
 
   ```powershell
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-For more information, see [PowerShell documentation](/powershell/module/microsoft.powershell.security/set-executionpolicy)
+For more information, see [PowerShell documentation](/powershell/module/microsoft.powershell.security/set-executionpolicy).
 
 ## Get token
 
