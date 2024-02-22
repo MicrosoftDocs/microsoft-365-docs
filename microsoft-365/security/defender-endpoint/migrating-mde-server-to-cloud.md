@@ -1,10 +1,9 @@
 ---
 title: Migrating servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud
 description: Learn how to migrate servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud.
-keywords: migrate server, server, Microsoft Defender for Endpoint server, Microsoft Defender for Cloud, MDE, azure, azure cloud, CSPM, CWP, cloud workload protection, threat protection, advanced threat protection, Microsoft Azure, multi-cloud connector
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.service: defender-endpoint
