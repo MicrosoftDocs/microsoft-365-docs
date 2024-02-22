@@ -1,5 +1,5 @@
 ---
-title: Run a detection test on a device to verify onboarding to Microsoft Defender for Endpoint
+title: Run a detection test on a device recently onboarded to Microsoft Defender for Endpoint
 description: Run the detection test script on a device recently onboarded to the Microsoft Defender for Endpoint service to verify that it's properly added.
 search.appverid: met150
 ms.service: defender-endpoint
@@ -16,7 +16,7 @@ ms.topic: conceptual
 ms.subservice: onboard
 ---
 
-# Run a detection test on a newly onboarded Microsoft Defender for Endpoint device
+# Run a detection test on a device recently onboarded to Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
@@ -62,7 +62,7 @@ The Command Prompt window closes automatically. If successful, a new alert appea
 > [!NOTE]
 > You can also use the EICAR test string to perform this test. Create a text file, paste the EICAR line, and save the file as an executable file to your endpoint's local drive. You will receive a test endpoint notification and an alert in the Microsoft Defender portal.
 
-## Related topics
+## Related articles
 
 - [Onboard Windows devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
