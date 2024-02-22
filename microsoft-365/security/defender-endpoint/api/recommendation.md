@@ -66,14 +66,14 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://si
 |recommendedVersion|String|Recommended version|
 |recommendedProgram|String|Recommended program|
 |recommendedVendor|String|Recommended vendor|
-|recommendationCategory|String|Recommendation category. Possible values are: "Accounts", "Application", "Network", "OS", "SecurityControls"|
+|recommendationCategory|String|Recommendation category. Possible values are: `Accounts`, `Application`, `Network`, `OS`, `SecurityControls`|
 |subCategory|String|Recommendation sub-category|
 |severityScore|Double|Potential impact of the configuration to the organization's Microsoft Secure Score for Devices (1-10)|
 |publicExploit|Boolean|Public exploit is available|
 |activeAlert|Boolean|Active alert is associated with this recommendation|
 |associatedThreats|String collection|Threat analytics report is associated with this recommendation|
-|remediationType|String|Remediation type. Possible values are: "ConfigurationChange","Update","Upgrade","Uninstall"|
-|Status|Enum|Recommendation exception status. Possible values are: "Active" and "Exception"|
+|remediationType|String|Remediation type. Possible values are: `ConfigurationChange`,`Update`,`Upgrade`,`Uninstall`|
+|Status|Enum|Recommendation exception status. Possible values are: `Active` and `Exception`|
 |configScoreImpact|Double|Microsoft Secure Score for Devices impact|
 |exposureImpact|Double|Exposure score impact|
 |totalMachineCount|Long|Number of installed devices|
