@@ -1,11 +1,7 @@
 ---
 title: Export information gathering assessment
 description: Returns a table with an entry for every unique combination of DeviceId, DeviceName, Additional fields.
-keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, information gathering assessment
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
