@@ -1,16 +1,12 @@
 ---
 title: Get live response results
 description: Learn how to retrieve a specific live response command result by its index.
-keywords: apis, graph api, supported apis, upload to library
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
