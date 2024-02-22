@@ -35,9 +35,9 @@ ms.subservice: onboard
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-When you add a device to the Microsoft Defender for Endpoint service for management, this is also called onboarding devices. Onboarding allows devices to report signals about their health status to the service.
+When you add a device to the Microsoft Defender for Endpoint service for management, it's referred to as onboarding. Onboarding allows devices to report signals about their health status to the service.
 
-Making sure, or verifying, that a device has been added to the service successfully is a critical step in the entire deployment process. It assures that all the devices expected are being managed. 
+Verifying that a device has been added to the service successfully is a critical step in the entire deployment process. It assures that all the devices expected are being managed. 
 
 ## Verify Microsoft Defender for Endpoint onboarding of a device using a PowerShell detection test
 
