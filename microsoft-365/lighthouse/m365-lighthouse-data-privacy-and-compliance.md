@@ -98,7 +98,7 @@ For more information on how Lighthouse handles data collection, see [Data collec
 
 ## Data removal
 
-The data available in Lighthouse plays an important role in the valuable features and functions that Lighthouse provides for MSPs, such as optimized tenant management experiences and customer success insights. But what if you want to remove your data from Lighthouse? How do you remove it, and what are the consequences?
+The data available in Lighthouse plays an important role in the valuable features and functions that Lighthouse provides for MSPs, such as optimized tenant management experiences and customer success insights. But what if you want to remove your data from Lighthouse? How do you remove it and what are the consequences?
 
 Data removal is the process of withdrawing permission to access and use data that was previously granted to a service. Data removal may also involve stopping the access and use of data that's already stored by the service. This can be done without impacting an MSP's relationship with its customer, since the MSP can still perform other administrative actions on behalf of the customer. Data removal is a crucial aspect of data governance because it allows MSPs and customers to control their data and protect their privacy and security.
 
