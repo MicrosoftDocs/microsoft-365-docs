@@ -1,13 +1,9 @@
 ---
 title: Run antivirus scan API
 description: Use this API to create calls related to running an antivirus scan on a device.
-keywords: apis, graph api, supported apis, remove device from isolation
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
