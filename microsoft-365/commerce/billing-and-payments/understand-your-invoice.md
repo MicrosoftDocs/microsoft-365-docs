@@ -24,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MCA billing account."
-ms.date: 08/08/2023
+ms.date: 02/22/2024
 ---
 
 # Understand your invoice for your Microsoft MCA billing account
@@ -34,9 +34,6 @@ Check out all of our small business content on [Small business help & learning](
 This article only applies to customers with a Microsoft Customer Agreement (MCA) billing account type. If you have a Microsoft Online Services Agreement (MOSA) billing account type, see [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md). [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
 The invoice for your Microsoft business subscription provides a summary of the charges and instructions for how to pay your bill. You can [view your online invoice](view-your-bill-or-invoice.md) in the Microsoft 365 admin center. You can also download a copy of your invoice in the Portable Document Format (.PDF) to send via email. If you want to receive the invoice .PDF as an attachment in the email notification, see [Receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
-
-> [!IMPORTANT]
-> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
 
 ## Before you begin
 
@@ -49,6 +46,8 @@ The invoice for your Microsoft business subscription provides a summary of the c
 ## How often and when am I billed?
 
 Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice monthly, every three months, every six months, or annually. The amount of time since the last invoice date is called the *Billing Period* and is shown on page one of the invoice, above the Billing Summary section. This time   period represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+
+Each new subscription purchase is billed the next day. You receive an invoice on the same day of the month either monthly, every three months, every six months or, annually, depending on the billing frequency you chose. Changes you make to an existing subscription are also charged the next day, except when you add and remove licenses or cancel which appear on the monthly invoice around the beginning of the following month.
 
 > [!NOTE]
 > You can only change the billing frequency for a subscription when you buy, upgrade, or renew a subscription.
@@ -93,7 +92,7 @@ The **Billing Summary** shows the summary of charges since the previous billing 
 | Charges|Total number of products purchased for this billing period, and their related charges and taxes. Purchases are aggregated to provide a concise view of your bill. |
 | Credits |Credits you received from returns |
 | Azure credits applied |Your Azure credits that are automatically applied to Azure charges each billing period. If you don't have any Azure credits, this field is hidden. For more information about Azure credits, see [Track Microsoft Customer Agreement Azure credit balance](/azure/billing/billing-mca-check-azure-credits-balance). |
-| Subtotal |The pre-tax amount due |
+| Subtotal |The pretax amount due |
 | Tax |The type and amount of tax that you pay, depending on the country/region of your billing profile. If you don't have to pay tax, no tax is shown on your invoice. |
 
 ### Understand page two of your invoice
@@ -145,7 +144,7 @@ Some invoices are generated within 24 hours of the purchase. Other invoices are 
 
 ### How do I pay the amount due on my invoice?
 
-Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit or debit card, it's automatically charged within 10 days of the invoice date. If your payment method is by wire transfer, see the information under **Payment Instructions** in the PDF.
+Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit or debit card, we automatically charge the card within 10 days of the invoice date. If your payment method is by wire transfer, see the information under **Payment Instructions** in the PDF.
 
 ### What's the difference between "Sold to" and "Bill to" addresses?
 
