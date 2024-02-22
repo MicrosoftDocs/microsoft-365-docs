@@ -44,7 +44,7 @@ ms.date: 12/18/2020
 
 2. Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft Defender XDR.
 
-3. Click on **Add data export settings**.
+3. Select on **Add data export settings**.
 
 4. Choose a name for your new settings.
 
@@ -54,11 +54,11 @@ ms.date: 12/18/2020
 
    :::image type="content" source="../images/storage-account-resource-id.png" alt-text="The Event Hubs with resource ID1" lightbox="../images/storage-account-resource-id.png":::
 
-7. Choose the events you want to stream and click **Save**.
+7. Choose the events you want to stream and select **Save**.
 
 ## The schema of the events in the Storage account
 
-- A blob container will be created for each event type:
+- A blob container is created for each event type:
 
   :::image type="content" source="../images/storage-account-event-schema.png" alt-text="The Event Hubs with resource ID2" lightbox="../images/storage-account-event-schema.png":::
 
@@ -75,7 +75,7 @@ ms.date: 12/18/2020
 
 - Each blob contains multiple rows.
 
-- Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
+- Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you get events only from your tenant), and the event in JSON format in a property called "properties".
 
 - For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](../advanced-hunting-overview.md).
 
