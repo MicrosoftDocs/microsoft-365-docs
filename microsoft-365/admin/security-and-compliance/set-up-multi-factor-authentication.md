@@ -36,7 +36,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Multifactor authentication means you and your employees must provide more than one way to sign in to Microsoft 365 is one of the easiest ways to secure your business. Based on your understanding of [multifactor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it's time to set it up and roll it out to your organization.
 
-Multifactor authentication (MFA) is an important first step in securing your organization. Microsoft 365 for business gives you the option to use security defaults or Conditional Access policies to turn on MFA for your admins and user accounts. For most organizations, **Security defaults** offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use [Conditional Access policies](https://learn.microsoft.com/microsoft-365/business-premium/m365bp-turn-on-mfa?view=o365-worldwide&source=recommendations&tabs=condit#tabpanel_1_condit) instead.
+Multifactor authentication (MFA) is an important first step in securing your organization. Microsoft 365 for business gives you the option to use security defaults or Conditional Access policies to turn on MFA for your admins and user accounts. For most organizations, **Security defaults** offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use [Conditional Access policies](https://go.microsoft.com/fwlink/?linkid=2261708).
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -85,7 +85,7 @@ If you've previously turned on per-user MFA, you must turn it off before enablin
 
 ## Use Conditional Access policies
 
-If your organization has more granular sign-in security needs, [Conditional Access policies](https://learn.microsoft.com/microsoft-365/business-premium/m365bp-turn-on-mfa?view=o365-worldwide&source=recommendations&tabs=condit#tabpanel_1_condit) can offer you more control. Conditional Access lets you create and define policies that react to sign in events and request additional actions before a user is granted access to an application or service. You can also get started by using [conditional access templates](/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation).
+If your organization has more granular sign-in security needs, [Conditional Access policies](https://go.microsoft.com/fwlink/?linkid=2261708) can offer you more control. Conditional Access lets you create and define policies that react to sign in events and request additional actions before a user is granted access to an application or service. You can also get started by using [conditional access templates](/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation).
 
 > [!IMPORTANT]
 > Do not forget to disable per-user MFA after you have enabled Conditional Access policies. This is important as it will result in inconsistent user experience.
