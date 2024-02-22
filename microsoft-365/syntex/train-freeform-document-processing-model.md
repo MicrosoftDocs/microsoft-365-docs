@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/12/2023
+ms.date: 02/21/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -15,6 +15,7 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to train a freeform document processing model in Microsoft Syntex.
 ---
 
