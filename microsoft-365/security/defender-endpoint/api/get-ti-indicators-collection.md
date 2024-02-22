@@ -66,9 +66,9 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 ## Request headers
 
-Name|Type|Description
-:---|:---|:---
-Authorization|String|Bearer {token}. **Required**.
+|Name|Type|Description|
+|---|---|---|
+|Authorization|String|Bearer {token}. **Required**.|
 
 ## Request body
 
@@ -85,7 +85,7 @@ If successful, this method returns 200, Ok response code with a collection of [I
 
 ### Example 1 request
 
-Here's an example of a request that gets all Indicators:
+Here's an example of a request that gets all indicators.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators
@@ -148,7 +148,7 @@ Content-type: application/json
 
 ### Example 2 request
 
-Here's an example of a request that gets all Indicators with `AlertAndBlock` action:
+Here's an example of a request that gets all Indicators with `AlertAndBlock` action.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'
@@ -187,4 +187,5 @@ Content-type: application/json
     ]
 }
 ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]
