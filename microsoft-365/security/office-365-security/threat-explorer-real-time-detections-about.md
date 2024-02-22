@@ -564,7 +564,7 @@ The **Email origin** view shows message sources on a map of the world.
 
 The **Campaign** view shows a details table. You can sort the entries by clicking on an available column header.
 
-The details table is identical to the [details table on the Campaigns page](campaigns.md#details-table-on-the-campaigns-page).
+The details table is identical to the [details table on the Campaigns page](campaigns.md#details-area-on-the-campaigns-page).
 
 When you select an entry by clicking anywhere in the row other than the check box next to the **Name**, a details flyout opens. The information is identical to [Campaign details](campaigns.md#campaign-details).
 
@@ -821,7 +821,7 @@ The **Email origin** view shows message sources on a map of the world.
 
 The **Campaign** view shows a details table. You can sort the entries by clicking on an available column header.
 
-The details table is identical to the [details table on the Campaigns page](campaigns.md#details-table-on-the-campaigns-page).
+The details table is identical to the [details table on the Campaigns page](campaigns.md#details-area-on-the-campaigns-page).
 
 When you select an entry by clicking anywhere in the row other than the check box next to the **Name**, a details flyout opens. The information is identical to [Campaign details](campaigns.md#campaign-details).
 
@@ -1148,7 +1148,7 @@ The **Email origin** view shows message sources on a map of the world.
 
 The **Campaign** view shows a details table. You can sort the entries by clicking on an available column header.
 
-The details table is identical to the [details table on the Campaigns page](campaigns.md#details-table-on-the-campaigns-page).
+The details table is identical to the [details table on the Campaigns page](campaigns.md#details-area-on-the-campaigns-page).
 
 When you select an entry by clicking anywhere in the row other than the check box next to the **Name**, a details flyout opens. The information is identical to [Campaign details](campaigns.md#campaign-details).
 
@@ -1296,7 +1296,7 @@ When you select a filename value from the **Name** column, a details flyout open
 > [!TIP]
 > If the file was detected by the [built-in virus protection in SharePoint, OneDrive, and Microsoft Teams](anti-malware-protection-for-spo-odfb-teams-about.md) (the **Detected by** value is **Antimalware engine**), an **Email list** section is also available.
 
-:::image type="content" source="../../media/te-rtd-content-malware-view-details-area-documents-tab-filename-flyout.png" alt-text="x" lightbox="../../media/te-rtd-content-malware-view-details-area-documents-tab-details-area-filename-flyout.png":::
+:::image type="content" source="../../media/te-rtd-content-malware-view-details-area-documents-tab-filename-flyout.png" alt-text="x" lightbox="../../media/te-rtd-content-malware-view-details-area-documents-tab-filename-flyout.png":::
 
 ## URL clicks view in Threat Explorer
 
