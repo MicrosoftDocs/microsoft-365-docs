@@ -67,10 +67,12 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Syntex
-            url: /microsoft-365/syntex/
-          - text: SharePoint Advanced Management
-            url: /sharepoint/advanced-management
           - text: Microsoft 365 Backup (Preview)
             url: /microsoft-365/syntex/backup/backup-overview
+          - text: SharePoint Advanced Management
+            url: /sharepoint/advanced-management
+          - text: SharePoint Embedded
+            url: /sharepoint/dev/embedded/overview
+          - text: Microsoft Syntex
+            url: /microsoft-365/syntex/
 
