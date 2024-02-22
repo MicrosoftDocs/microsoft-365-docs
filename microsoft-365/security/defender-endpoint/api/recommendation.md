@@ -67,7 +67,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://si
 |recommendedProgram|String|Recommended program|
 |recommendedVendor|String|Recommended vendor|
 |recommendationCategory|String|Recommendation category. Possible values are: `Accounts`, `Application`, `Network`, `OS`, `SecurityControls`|
-|subCategory|String|Recommendation sub-category|
+|subCategory|String|Recommendation subcategory|
 |severityScore|Double|Potential impact of the configuration to the organization's Microsoft Secure Score for Devices (1-10)|
 |publicExploit|Boolean|Public exploit is available|
 |activeAlert|Boolean|Active alert is associated with this recommendation|
@@ -78,7 +78,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://si
 |exposureImpact|Double|Exposure score impact|
 |totalMachineCount|Long|Number of installed devices|
 |exposedMachinesCount|Long|Number of installed devices that are exposed to vulnerabilities|
-|nonProductivityImpactedAssets|Long|Number of devices that are not affected|
+|nonProductivityImpactedAssets|Long|Number of devices that aren't affected|
 |relatedComponent|String|Related software component|
 |
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]
