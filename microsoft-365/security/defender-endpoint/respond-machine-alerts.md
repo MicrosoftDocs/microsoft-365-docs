@@ -90,9 +90,6 @@ For more information on live response, see [Investigate entities on devices usin
 
 As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker.
 
-> [!IMPORTANT]
-> These actions are not currently supported for devices running macOS or Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
-
 To download the package (Zip file) and investigate the events that occurred on a device:
 
 1. Select **Collect investigation package** from the row of response actions at the top of the device page.

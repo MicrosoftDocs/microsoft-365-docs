@@ -7,7 +7,7 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
-manager: dansimp
+manager: deniseb
 ms.custom: nextgen
 ms.subservice: ngp
 ms.collection: 
