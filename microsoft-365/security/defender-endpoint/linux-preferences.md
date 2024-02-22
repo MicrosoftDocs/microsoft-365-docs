@@ -3,11 +3,11 @@ title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/07/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -79,8 +79,8 @@ Specifies the enforcement preference of antivirus engine. There are three values
 #### Enable/disable behavior-monitoring 
 
 Determines whether behavior monitoring and blocking capability is enabled on the device or not. 
-
-<br>
+> [!NOTE]
+> This feature is applicable only when Real-Time Protection feature is enabled.
 
 ****
 |Description|Value|
@@ -701,7 +701,7 @@ The following configuration profile contains entries for all settings described 
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
       "scanHistoryMaximumItems": 10000,
-	  "scanResultsRetentionDays": 90,
+      "scanResultsRetentionDays": 90,
       "maximumOnDemandScanThreads":2,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
@@ -792,35 +792,3 @@ When you run the `mdatp health` command for the first time, the value for the ta
   >[!NOTE]
   >Add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`.
  
-## Configuration profile validation
-
-The configuration profile must be a valid JSON-formatted file. There are many tools that can be used to verify this. For example, if you have `python` installed on your device:
-
-```bash
-python -m json.tool mdatp_managed.json
-```
-
-If the JSON is well-formed, the above command outputs it back to the Terminal and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.
-
-## Verifying that the mdatp_managed.json file is working as expected
-
-To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is working properly, you should see "[managed]" next to these settings:
-
-- cloud_enabled
-- cloud_automatic_sample_submission_consent
-- passive_mode_enabled
-- real_time_protection_enabled
-- automatic_definition_update_enabled
-
->[!NOTE]
->No restart of mdatp daemon is required for changes to _most_ configurations in mdatp_managed.json to take effect.
-  **Exception:** The following configurations require a daemon restart to take effect:
-> - cloud-diagnostic
-> - log-rotation-parameters
-
-## Configuration profile deployment
-
-Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
-
-
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
