@@ -314,7 +314,7 @@ For information on timing, see [Intune configuration information](/mem/intune/co
 To confirm that the configuration policy is applied to your test device, follow the following process for each configuration policy.
 
 1. Open the Intune admin center and navigate to the relevant policy as shown in the
-    steps above. The following example shows the next generation protection settings.
+    preceding section. The following example shows the next generation protection settings.
 
     > [!div class="mx-imgBorder"]
     > [![Image of Microsoft Intune admin center33.](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox) 
@@ -344,12 +344,12 @@ To confirm that the configuration policy is applied to your test device, follow 
 
 ### Confirm endpoint detection and response
 
-1. Before applying the configuration, the Defender for Endpoint Protection service should not be started.
+1. Before applying the configuration, the Defender for Endpoint Protection service shouldn't be started.
 
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel1.](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2. After the configuration has been applied, the Defender for Endpoint Protection Service should be started.
+2. After the configuration is applied, the Defender for Endpoint Protection service should be started.
 
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
@@ -362,12 +362,12 @@ To confirm that the configuration policy is applied to your test device, follow 
 ### Confirm next-generation protection
 
 1. Before applying the policy on a test device, you should be able to manually
-    manage the settings as shown below.
+    manage the settings as shown in the following image:
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/88efb4c3710493a53f2840c3eac3e3d3.png" alt-text="The settings page-1" lightbox="images/88efb4c3710493a53f2840c3eac3e3d3.png":::
 
-2. After the policy has been applied, you should not be able to manually manage
+2. After the policy is applied, you shouldn't be able to manually manage
     the settings.
 
     > [!NOTE]
@@ -381,7 +381,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 
 1. Before applying the policy on a test device, open a PowerShell Window and type `Get-MpPreference`.
 
-2. This should respond with the following lines with no content:
+2. You should see the following lines with no content:
 
     > AttackSurfaceReductionOnlyExclusions:
     >
@@ -393,7 +393,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 
 3. After applying the policy on a test device, open a PowerShell Windows and type `Get-MpPreference`.
 
-4. This should respond with the following lines with content as shown below:
+4. You should see the following lines with content, as shown in the following image:
 
    :::image type="content" source="images/619fb877791b1fc8bc7dfae1a579043d.png" alt-text="The command line-2" lightbox="images/619fb877791b1fc8bc7dfae1a579043d.png":::
 
@@ -402,14 +402,15 @@ To confirm that the configuration policy is applied to your test device, follow 
 1. On the test device, open a PowerShell Windows and type
     `(Get-MpPreference).EnableNetworkProtection`.
 
-2. This should respond with a 0 as shown below.
+2. This should respond with a 0 as shown in the following image:
 
    :::image type="content" source="images/196a8e194ac99d84221f405d0f684f8c.png" alt-text="The command line-3" lightbox="images/196a8e194ac99d84221f405d0f684f8c.png":::
 
 3. After applying the policy, open a PowerShell Windows and type
     `(Get-MpPreference).EnableNetworkProtection`.
 
-4. This should respond with a 1 as shown below.
+4. You should see a response with a 1 as shown in the following image:
 
    :::image type="content" source="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="The command line-4" lightbox="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::
+   
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
