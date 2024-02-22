@@ -104,13 +104,13 @@ In this section, we create a test group to assign your configurations on.
 
 ## Step 2: Create configuration policies to configure Microsoft Defender for Endpoint capabilities
 
-In the following section, you'll create a number of configuration policies.
+In the following section, you create several configuration policies.
 
-First is a configuration policy to select which groups of users or devices will be onboarded to Defender for Endpoint:
+First is a configuration policy to select which groups of users or devices are onboarded to Defender for Endpoint:
 
 - [Endpoint detection and response](#endpoint-detection-and-response)
 
-Then you will continue by creating several different types of endpoint security policies:
+Then, you continue by creating several different types of endpoint security policies:
 
 - [Next-generation protection](#next-generation-protection)
 - [Attack surface reduction](#attack-surface-reduction---attack-surface-reduction-rules)
@@ -119,7 +119,7 @@ Then you will continue by creating several different types of endpoint security 
 
 1. Open the Intune admin center.
 
-2. Navigate to **Endpoint security > Endpoint detection and response**. Click on **Create Policy**.
+2. Navigate to **Endpoint security > Endpoint detection and response**. Select on **Create Policy**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/58dcd48811147feb4ddc17212b7fe840.png" alt-text="The Microsoft Intune admin center4" lightbox="images/58dcd48811147feb4ddc17212b7fe840.png":::
@@ -200,7 +200,7 @@ Then you will continue by creating several different types of endpoint security 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/dfdadab79112d61bd3693d957084b0ec.png" alt-text="The Microsoft Intune admin center17" lightbox="images/dfdadab79112d61bd3693d957084b0ec.png":::
 
-9. You'll see the configuration policy you created.
+9. You see the configuration policy you created.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/38180219e632d6e4ec7bd25a46398da8.png" alt-text="The Microsoft Intune admin center18" lightbox="images/38180219e632d6e4ec7bd25a46398da8.png":::
@@ -224,8 +224,7 @@ Then you will continue by creating several different types of endpoint security 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png" alt-text="The Microsoft Intune admin center20" lightbox="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png":::
 
-6. In the **Configuration settings page**: Set the configurations you require for
-    Attack surface reduction rules, then select  **Next**.
+6. In the **Configuration settings page**: Set the configurations you require for Attack surface reduction rules, then select  **Next**.
 
     > [!NOTE]
     > We will be configuring all of the Attack surface reduction rules to Audit.
@@ -308,11 +307,11 @@ Then you will continue by creating several different types of endpoint security 
 
 ### Confirm policies have been applied
 
-Once the Configuration policy has been assigned, it will take some time to apply.
+Once the Configuration policy has been assigned, it takes some time to apply.
 
 For information on timing, see [Intune configuration information](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
-To confirm that the configuration policy has been applied to your test device, follow the following process for each configuration policy.
+To confirm that the configuration policy is applied to your test device, follow the following process for each configuration policy.
 
 1. Open the Intune admin center and navigate to the relevant policy as shown in the
     steps above. The following example shows the next generation protection settings.
