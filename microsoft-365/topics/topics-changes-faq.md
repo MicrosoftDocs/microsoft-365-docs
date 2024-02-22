@@ -63,9 +63,7 @@ Answers in Viva experiences will also continue to work for anyone with a Viva Su
 
 ## My organization uses Answers in Viva. How will the experience change?
 
-[Answers in Viva](https://support.microsoft.com/topic/answers-in-viva-introduction-e6331234-e044-4009-a0c8-7c519a2cf668) will continue to work without Viva Topics for anyone with Viva Suite or Viva Employee Communications and Communities licenses. Answers won't continue to show topics cards on hover or link to Viva Topics pages in SharePoint, Topic management experiences will continue to be supported. Customers will continue to be able to add topics to posts, click on topics pills to see posts with that topic attached, follow topics, or route the Answers digest through topic following and Answers activity.  
-
-We will be providing Viva Topics standalone customers with a Viva Communications and Community (C&C) license for each Viva Topics standalone license. More details on this will be provided in the coming weeks. This will ensure every customer using Answers in Viva today will continue to be able to use this functionality going forward. Viva Suite customers using Answers in Viva will continue to have access via their Viva Suite license.
+[Answers in Viva](https://support.microsoft.com/topic/answers-in-viva-introduction-e6331234-e044-4009-a0c8-7c519a2cf668) will continue to work without Viva Topics for anyone with Viva Suite or Viva Employee Communications and Communities licenses. Answers won't continue to show topics cards on hover or link to Viva Topics pages in SharePoint, Topic management experiences will continue to be supported. Customers will continue to be able to add topics to posts, click on topics pills to see posts with that topic attached, follow topics, or route the Answers digest through topic following and Answers activity.
 
 ## How should I communicate this change to my users?
 
