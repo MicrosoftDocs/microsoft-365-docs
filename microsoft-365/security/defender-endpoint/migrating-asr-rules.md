@@ -26,7 +26,7 @@ ms.date: 03/26/2021
 
 This article helps you to map common rules to Microsoft Defender for Endpoint.
 
-## Scenarios when migrating from a third-party HIPS product to ASR rules
+## Scenarios when migrating from a non-Microsoft HIPS product to ASR rules
 
 ### Block creation of specific files
 
@@ -34,7 +34,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Operation**- File Creation
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- *.zepto, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab
 - **Attack Surface Reduction rules**- ASR rules block the attack techniques and not the Indicators of Compromise (IOC). Blocking a specific file extension isn't always useful, as it doesn't prevent a device from compromise. It only partially thwarts an attack until attackers create a new type of extension for the payload.
-- **Other recommended features**- Having Microsoft Defender Antivirus enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend that you use other prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, Microsoft Defender for Endpoint monitors many of these registry keys, such as ASEP techniques, which trigger specific alerts. The registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. It's recommended to use a locked down environment with minimum administrative accounts or rights. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that's part of our wider security recommendations.
+- **Other recommended features**- Having Microsoft Defender Antivirus enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend that you use other prevention, such as the ASR rule "Use advanced protection against ransomware", which provides a greater level of protection against ransomware attacks. Furthermore, Microsoft Defender for Endpoint monitors many of these registry keys, such as ASEP techniques, which trigger specific alerts. The registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. It's recommended to use a locked down environment with minimum administrative accounts or rights. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that's part of our wider security recommendations.
 
 ### Block creation of specific registry keys
 
