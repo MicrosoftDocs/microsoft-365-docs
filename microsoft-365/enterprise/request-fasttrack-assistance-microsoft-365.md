@@ -17,9 +17,9 @@ The FastTrack request for assistance (RFA) form is now available in the <a href=
 
 1. Select <a href="https://go.microsoft.com/fwlink/?linkid=2226341" target="_blank">Advanced deployment guides & assistance</a> on the home page.
 
-1. Select the **FastTrack assistance** tab and then select **Submit a new request**
+1. Select the **FastTrack assistance** tab and then select **Submit a new request**.
 
-   a. After submission, receipt is confirmed with an RFA ID number, and the option to provide feedback about your experience.
+   After submission, receipt is confirmed with an RFA ID number, and the option to provide feedback about your experience.
 
 1. Select **Done**.
 
@@ -34,7 +34,7 @@ The FastTrack request for assistance (RFA) form is now available in the <a href=
 
 1. Sign in with your work or school account.
 
-1. Select **Submit a new request**
+1. Select **Submit a new request**.
 
    After submission, receipt is confirmed with an RFA ID number, and the option to provide feedback about your experience.
 
