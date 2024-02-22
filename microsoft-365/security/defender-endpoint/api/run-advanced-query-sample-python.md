@@ -124,7 +124,7 @@ for result in results:
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
 ```
 
-To output the results of the query in CSV format in file file1.csv do the below:
+To output the results of the query in CSV format in file file1.csv use the following command:
 
 ```python
 import csv
@@ -138,7 +138,7 @@ for result in results:
 outputFile.close()
 ```
 
-To output the results of the query in JSON format in file file1.json do the below:
+To output the results of the query in JSON format in file file1.json use the following command:
 
 ```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
