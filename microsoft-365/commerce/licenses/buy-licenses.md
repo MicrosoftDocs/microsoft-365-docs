@@ -49,7 +49,7 @@ As an admin, you can add or remove licenses for your business subscriptions in t
 
 [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
-If you have an MCA billing account type, you can buy more licenses for your subscription at any time. However, you can only remove licenses from your subscription if it’s within seven days of you buying or renewing your subscription. For more information, see [Remove licenses from your subscription](#remove-licenses-from-your-subscription).
+If you have an MCA billing account type, you can buy more licenses for your subscription at any time. However, you can only remove licenses from your subscription if it’s within seven days of buying or renewing your subscription. For more information, see [Remove licenses from your subscription](#remove-licenses-from-your-subscription).
 
 ### Buy more licenses for your subscription
 
