@@ -10,7 +10,7 @@ ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 11/03/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
