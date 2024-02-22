@@ -87,7 +87,7 @@ ms.date: 12/18/2020
 
 In order to get the data types for our events properties do the following:
 
-1. Log in to [Microsoft Defender XDR](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
+1. Sign in to [Microsoft Defender XDR](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
 
@@ -97,11 +97,11 @@ In order to get the data types for our events properties do the following:
    | project ColumnName, ColumnType
    ```
 
-- Here is an example for Device Info event:
+- Here's an example for Device Info event:
 
   :::image type="content" source="../images/data-types-mapping-query.png" alt-text="The Event Hubs with resource ID3" lightbox="../images/data-types-mapping-query.png":::
 
-## Related topics
+## Related articles
 
 - [Stream Microsoft Defender XDR events | Microsoft Learn](/microsoft-365/security/defender/streaming-api)
 
