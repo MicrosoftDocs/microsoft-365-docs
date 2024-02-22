@@ -1,13 +1,9 @@
 ---
 title: Get the device secure score
 description: Retrieves the organizational device secure score.
-keywords: apis, graph api, supported apis, get, alerts, recent
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
