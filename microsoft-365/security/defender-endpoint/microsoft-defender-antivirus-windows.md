@@ -5,10 +5,10 @@ ms.service: defender-endpoint
 ms.localizationpriority: high
 ms.date: 01/16/2024
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.reviewer: mkaminska, yonghree, pahuijbr
-manager: dansimp
+manager: deniseb
 ms.custom: nextgen
 ms.subservice: ngp
 ms.collection: 
