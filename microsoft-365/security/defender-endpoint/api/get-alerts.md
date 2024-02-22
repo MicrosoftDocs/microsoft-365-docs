@@ -36,37 +36,44 @@ ms.date: 12/18/2020
 
 
 ## API description
+
 Retrieves a collection of Alerts.
-<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
-<br>OData supported operators:
-<br>```$filter``` on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```, ```InvestigationId```, ```id```, ```asssignedTo```, ```detectionSource```, ```lastEventTime```, ```status```, ```severity``` and ```category``` properties.
-<br>```$top``` with max value of 10,000 
-<br>```$skip```
-<br>```$expand``` of ```evidence```
-<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+
+Supports [OData V4 queries](https://www.odata.org/documentation/).
+
+OData supported operators:
+
+- ```$filter``` on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```, ```InvestigationId```, ```id```, ```asssignedTo```, ```detectionSource```, ```lastEventTime```, ```status```, ```severity``` and ```category``` properties.
+- ```$top``` with max value of 10,000 
+- ```$skip```
+- ```$expand``` of ```evidence```
+- See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 
 ## Limitations
+
 1. You can get alerts last updated according to your configured retention period.
+
 2. Maximum page size is 10,000.
-3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
+
+3. Rate limitations for this API are 100 calls per minute and 1,500 calls per hour. 
 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md).
 
-Permission type | Permission | Permission display name
-:---|:---|:---
-Application | Alert.Read.All | 'Read all alerts'
-Application | Alert.ReadWrite.All | 'Read and write all alerts'
-Delegated (work or school account) | Alert.Read | 'Read alerts'
-Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
+|Permission type | Permission | Permission display name|
+|:---|:---|:---|
+|Application | Alert.Read.All | `Read all alerts`|
+|Application | Alert.ReadWrite.All | `Read and write all alerts`|
+|Delegated (work or school account) | Alert.Read | `Read alerts`|
+|Delegated (work or school account) | Alert.ReadWrite | `Read and write alerts`|
 
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](../user-roles.md) for more information)
+> - The user needs to have at least the following role permission: `View Data` (See [Create and manage roles](../user-roles.md) for more information)
 > - The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](../machine-groups.md) for more information)
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
