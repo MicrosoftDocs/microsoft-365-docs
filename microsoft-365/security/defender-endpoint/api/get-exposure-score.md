@@ -1,13 +1,9 @@
 ---
 title: Get exposure score
 description: Retrieves the organizational exposure score.
-keywords: apis, graph api, supported apis, get, exposure score, organizational exposure score
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

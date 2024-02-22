@@ -1,13 +1,9 @@
 ---
 title: List Investigations API
 description: Use this API to create calls related to get Investigations collection
-keywords: apis, graph api, supported apis, Investigations collection
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
