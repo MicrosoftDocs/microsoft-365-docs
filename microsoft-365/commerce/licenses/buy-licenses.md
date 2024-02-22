@@ -24,7 +24,7 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: "Learn how to buy more licenses or reduce the number of licenses for your business subscription in the Microsoft 365 admin center."
-ms.date: 01/31/2024
+ms.date: 02/22/2024
 ---
 
 # Buy or remove licenses for a Microsoft business subscription
@@ -39,7 +39,7 @@ As an admin, you can add or remove licenses for your business subscriptions in t
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article.
 - If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be a Global or Billing admin to complete the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - You can [add users and assign licenses at the same time](../../admin/add-users/add-users.md).
-- If you bought your subscription through a Microsoft representative, contact them directly for help with increasing or reducing your license count.
+- If you bought your subscription through a Microsoft representative, contact them directly to increase or reduce your license count.
 - You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/assign-licenses-to-users.md), then remove the licenses from the subscription.
 
 > [!NOTE]
@@ -53,7 +53,7 @@ If you have an MCA billing account type, you can buy more licenses for your subs
 
 ### Buy more licenses for your subscription
 
-If you have an MCA billing account type and buy licenses in the middle of your billing period, you have seven days from when you buy them to reduce the number of licenses you bought.
+If you buy licenses in the middle of your billing period, you have seven days from when you buy them to reduce the number of licenses you bought.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you’re using the **Simplified view**, select **Subscriptions**.
@@ -68,7 +68,10 @@ If you have an MCA billing account type and buy licenses in the middle of your b
 
 ### Remove licenses from your subscription
 
-If you have an MCA billing account type, you can only remove licenses from your subscription during a limited time window after you buy or renew your subscription, or if you recently bought more licenses. If the window is closed, the subscription details page lists the date when your plan changes take effect.
+You can only remove licenses from your subscription during a limited time window after you buy or renew your subscription, or if you recently bought more licenses. If the window is closed, the subscription details page lists the date when your plan changes take effect.
+
+> [!NOTE]
+> You can only remove licenses when recurring billing is turned on.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you’re using the **Simplified view**, select **Subscriptions**.
@@ -88,14 +91,16 @@ If you have an MCA billing account type, you can only remove licenses from your 
 4. To change the number of licenses, under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five of them, enter 95.
 5. Select **Save**.
 
-## Add licenses to a prepaid subscription by using a product key
+## Add or reduce licenses for a prepaid subscription
 
 Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. After you buy the licenses you need, you can add them to your subscription by using the following steps. You can also use a product key to [extend the expiration date of your subscription](../enter-your-product-key.md#extend-the-expiration-date-for-an-existing-subscription).
 
 > [!NOTE]
 > If you don't want to buy a new product key, you can always choose to add a credit card or debit card to your subscription to pay for more licenses. For more information, see [What if I have a prepaid subscription?](../subscriptions/renew-your-subscription.md#what-if-i-have-a-prepaid-subscription).
-  
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
+
+### Add licenses to a prepaid subscription by using a product key
+
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you’re using the **Simplified view**, select **Subscriptions**.
    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription to which you want to add licenses.
@@ -106,13 +111,21 @@ Prepaid product licenses are issued to you as a 25-character alphanumeric code, 
     > If you have more than one product key, you can select **Add another product key** to enter them.
 6. Review your order details, then select **Redeem**.
 
+### Reduce licenses for a prepaid subscription by using a product key
+
+If you used a product key to add licenses and you want to reduce the number of licenses in your subscription, you must renew your subscription with a product key that has fewer licenses.
+
+1. Buy a prepaid product key that has the desired number of licenses. For example, if you currently have 50 licenses, but you only need 30, buy a prepaid product key with 30 licenses.
+2. Reduce the total number of licenses that are currently assigned.
+3. Extend the subscription by using the new prepaid product key.
+
 ## What if I can't select the Buy licenses or Remove licenses buttons?
 
 This table describes the reasons why the **Buy licenses** or **Remove licenses** buttons aren't available, and possible solutions.
 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
-|A credit check is pending. |If a credit check is pending, you can't buy or remove licenses until the credit check is complete.  | Check back later to see if the credit check is complete. Credit checks typically take up to two working days to complete. After the credit check is complete, you can select the **Buy licenses** and **Remove licenses** buttons. |
+|A credit check is pending. |If a credit check is pending, you can't buy or remove licenses until the credit check is complete.  | Check back later to see if the credit check is complete. Credit checks typically take up to two working days to complete.<br/><br/>After the credit check is complete, you can select the **Buy licenses** and **Remove licenses** buttons. |
 |You activated the subscription by using a product key.| If the subscription was bought and activated by using a 25-character product key, you see the word "Prepaid" in the **Purchase channel** column of the **Your products** page.  |See [Add licenses to a prepaid subscription by using a product key](#add-licenses-to-a-prepaid-subscription-by-using-a-product-key). |
 |You bought your subscription through a reseller.| You see the word "Reseller" in the **Purchase information** section under **Purchase channel** on the subscription details page, and in the **Purchase channel** column of the **Your products** page. | If you bought the subscription through a Cloud Solution Provider (CSP) partner, contact your CSP partner to buy more licenses.        |
 |You have a trial subscription. | To view your trial subscriptions, select the filter button, then choose **Trial**. | First buy your trial subscription, then you can buy more licenses.|
