@@ -79,7 +79,7 @@ ms.date: 12/18/2020
 
 - For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](../advanced-hunting-overview.md).
 
-- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](../machine-groups.md) for more information.
+- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here, every event is decorated with this column as well. For more information, see [Device Groups](../machine-groups.md).
     > [!NOTE]
     > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
