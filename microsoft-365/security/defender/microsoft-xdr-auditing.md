@@ -34,7 +34,7 @@ The audit log can help you investigate specific activities across Microsoft 365 
 - Create\edit custom detection rules
 - Assign user to an incidents
 
-For a complete list of Microsoft Defender XDR activities that are audited, see [Audit Log Activities](/purview/audit-log-activities).
+For a complete list of Microsoft Defender XDR activities that are audited, see [Microsoft Defender XDR activities](#microsoft-defender-xdr-activities) and [Microsoft Defender for Endpoint activities](#microsoft-defender-for-endpoint-activities).
 
 ## Requirements
 
@@ -47,7 +47,7 @@ For a complete list of Microsoft Defender XDR activities that are audited, see [
    - For users assigned an Office E5 or Microsoft 365 E5 license the audit records are retained for one year by default.
    - For users assigned any other (non-E5) license, audit records are retained for 90 days.
 
-For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies).
+  For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies).
 
 ## Turn on auditing in Microsoft Defender XDR
 
@@ -65,7 +65,7 @@ Microsoft Defender XDR uses the [Microsoft Purview auditing solution](/purview/a
 
 ## Using the audit search in Microsoft Defender XDR
 
-1. To retrieve audit logs for Microsoft Defender XDR activities, navigate to the [Microsoft Defender XDR Audit page](https://security.microsoft.com/auditlogsearch) or go to <https://compliance.microsoft.com> and select **Audit**.
+1. To retrieve audit logs for Microsoft Defender XDR activities, navigate to the [Microsoft Defender XDR Audit page](https://security.microsoft.com/auditlogsearch) or go to the [Purview compliance portal](https://compliance.microsoft.com) and select **Audit**.
 
    :::image type="content" source="../../media/defender/unified-audit-log-xdr.png" alt-text="Screenshot of the unified audit log page in Microsoft Defender XDR " lightbox="../../media/defender/unified-audit-log-xdr.png":::
 
@@ -108,8 +108,8 @@ Import-PSSession $s
 Search-UnifiedAuditLog -StartDate 2023/03/12 -EndDate 2023/03/20 -RecordType <ID>
 ```
 
->
->[!Note] See the API column in Audit activities included for the record type values.
+>[!Note]
+> See the API column in Audit activities included for the record type values.
 
 ## Additional resources
 
