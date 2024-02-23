@@ -8,7 +8,7 @@ ms.author: siosulli
 ms.custom: nextgen
 ms.date: 02/21/2024
 ms.reviewer: pauhijbr, ksarens, yongrhee
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 ms.topic: how-to
 ms.collection: 

@@ -1,15 +1,11 @@
 ---
 title: File resource type
 description: Retrieve recent Microsoft Defender for Endpoint alerts related to files.
-keywords: apis, graph api, supported apis, get, alerts, recent
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -41,12 +37,12 @@ Represent a file entity in Defender for Endpoint.
 
 ## Methods
 
-Method|Return Type |Description
-:---|:---|:---
-[Get file](get-file-information.md) | [file](files.md) | Get a single file 
-[List file related alerts](get-file-related-alerts.md) | [alert](alerts.md) collection | Get the [alert](alerts.md) entities that are associated with the file.
-[List file related machines](get-file-related-machines.md) | [machine](machine.md) collection | Get the [machine](machine.md) entities associated with the alert.
-[file statistics](get-file-statistics.md) | Statistics summary | Retrieves the prevalence for the given file.
+|Method|Return Type |Description|
+|:---|:---|:---|
+|[Get file](get-file-information.md) | [file](files.md) | Get a single file |
+|[List file related alerts](get-file-related-alerts.md) | [alert](alerts.md) collection | Get the [alert](alerts.md) entities that are associated with the file.|
+|[List file related machines](get-file-related-machines.md) | [machine](machine.md) collection | Get the [machine](machine.md) entities associated with the alert.|
+|[file statistics](get-file-statistics.md) | Statistics summary | Retrieves the prevalence for the given file.|
 
 
 ## Properties
@@ -60,7 +56,7 @@ Method|Return Type |Description
 |globalLastObserved | DateTimeOffset | Last time the file was observed |
 |size | Nullable long | Size of the file |
 |fileType | String | Type of the file |
-|isPeFile | Boolean | true if the file is portable executable (e.g. "DLL", "EXE", etc.) |
+|isPeFile | Boolean | true if the file is portable executable (for example `DLL`, `EXE`, etc.) |
 |filePublisher | String | File publisher |
 |fileProductName | String | Product name |
 |signer | String | File signer |
