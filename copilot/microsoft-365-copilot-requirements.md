@@ -72,6 +72,12 @@ To use Microsoft Copilot for Microsoft 365 with Microsoft Loop, you must have Lo
 
 To use Microsoft Copilot for Microsoft 365 with Microsoft Whiteboard, you must have Whiteboard enabled for your tenant. To learn more about Microsoft Whiteboard, see [Manage access to Microsoft Whiteboard for your organization](/microsoft-365/whiteboard/manage-whiteboard-access-organizations).
 
+### Office Feature Updates task
+
+The Office Feature Updates task is required for core Copilot experiences in apps such as Word, PowerPoint, Excel and OneNote, to work properly. This task should be allowed to run on its regular schedule, and allowed to access the required network resources.
+
+For more information about the Office Feature Updates task, see [Office Feature Updates task description and FAQ](/microsoft-365/troubleshoot/updates/office-feature-updates-task-faq). For more information about which network resources should be allowed, see [Network requirements](#network-requirements).
+
 ## License requirements
 
 Copilot for Microsoft 365 is available as an add-on plan with one of the following licensing prerequisites:
