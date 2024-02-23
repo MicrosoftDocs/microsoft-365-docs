@@ -116,7 +116,7 @@ The Loop experiences (except for Microsoft Teams) check the following [Cloud Pol
 1. Save the policy configuration.
 1. Reassign priority for any security group, if required. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
-In case you create a new policy configuration or change the configuration for an existing policy, there will be a delay in the change being reflected as described below:
+In case you create a new policy configuration or change the configuration for an existing policy, there can be a delay in the change being reflected as described below:
 - If there were existing policy configurations prior to the change, then it will take 90 mins for the change to be reflected.
 - If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
 
