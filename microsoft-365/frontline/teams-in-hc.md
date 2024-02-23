@@ -45,9 +45,9 @@ Microsoft 365 and Microsoft Teams offer a number of telemedicine features useful
 > [!NOTE]
 > This functionality is also part of Microsoft Cloud for Healthcare. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Healthcare](/industry/healthcare).
 
-Watch the following video to learn more about using the healthcare collection to enhance health team collaboration in Teams.
+<!--Watch the following video to learn more about using the healthcare collection to enhance health team collaboration in Teams.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hqan]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hqan]-->
 
 To get the most benefit for your healthcare organization, first choose which scenarios Microsoft 365 and Teams can help you with in your day-to-day activities, and then make sure that you prepare your Teams environment with the right fundamentals, teams, and apps to support those scenarios.
 
@@ -110,7 +110,7 @@ Teams enables physicians, clinicians, nurses, and other staff to collaborate eff
 
 ### Messaging for healthcare organizations
 
-Secure messaging supports collaboration within health teams, including the following features:
+[Messaging policies](/microsoftteams/messaging-policies-in-teams) in Teams are used to control which chat and channel messaging features are available to users. Secure messaging supports collaboration within health teams, including the following features:
 
 - A message sender can set a special priority for their message, so the recipient is repeatedly notified until they read the message.
 - A message sender can request a read receipt, so they're notified when a message they sent was read by the message recipient.
@@ -184,5 +184,4 @@ To learn more, see [Shifts for frontline workers](shifts-for-teams-landing-page.
 There are many resources available to help all of the users in your organization get comfortable with using Teams:
 
 - Check out the [Teams adoption center](https://adoption.microsoft.com/microsoft-teams/) for advice on rolling out Teams if you're just starting your organization's journey with Teams, or expanding Teams to more areas of your organization.
-- Consider setting up custom [learning pathways](https://adoption.microsoft.com/microsoft-365-learning-pathways/) for your users to cover just the tasks they need to do.
 - Get help and training for your users on how to perform basic tasks in Teams on the [Teams help & learning site](https://support.microsoft.com/teams), including [quick training videos](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7). This site also has help and training for the Teams apps, including [Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f), [Lists](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db), [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070), [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3), and [Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821).
