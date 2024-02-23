@@ -25,10 +25,10 @@ description: "Learn about how to configure external data connections for Loop ex
 
 # Configuring external data connections for Loop experiences
 
-Microsoft has enabled Jira, Trello and GitHub integration experiences within [Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop). Tenant admins can use Cloud Policy to configure the data integration features. Tenant admins have the option to either Enable, Disable or Not Configure various policy settings. The data integration policies are:
+Microsoft enabled Jira, Trello and GitHub integration experiences within [Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop). Tenant admins can use Cloud Policy to configure the data integration features. Tenant admins can Enable, Disable or Not Configure various policy settings to control these integrations. The data integration policies are:
 
 - **Allow external data integrations in Loop so users can import, view and edit items using Loop**
-    - This is the primary policy to control all specific data integration policies. To configure a specific data integration differently than the primary setting, use one of the specific policies below.
+    - This is the primary policy to control all specific data integration policies. To configure a specific data integration differently than the primary setting, use one of the specific policies.
 - **Allow GitHub external data integration in Loop so users can import, view and edit items using Loop**
 - **Allow Jira external data integration in Loop so users can import, view and edit items using Loop**
 - **Allow Trello external data integration in Loop so users can import, view and edit items using Loop**
@@ -36,9 +36,9 @@ Microsoft has enabled Jira, Trello and GitHub integration experiences within [Mi
 
 ## User experience expectations when admin settings are configured
 
-When data integrations are Enabled, data from external sources will synchronize into the Loop data file. Integration options will appear in the Discover '/' menu. Integrations will synchronize in all everywhere, when experienced as a Loop component in apps that support Loop such as Teams, Outlook, Loop app, etc.
+When data integrations are Enabled, data from external sources synchronize into the Loop data file. Integration options appear in the Discover '/' menu. Integrations synchronize in all everywhere, when experienced as a Loop component in apps that support Loop such as Teams, Outlook, Loop app, etc.
 
-When data integrations are Disabled, data from external sources you have disabled will not be synchronized. No connections to these external sources will be established. All existing data will stop sync'ing and become read-only everywhere. The integration options will still appear in the Discover '/' menu but no connections to external data can be made by users.
+When data integrations are Disabled, data from external sources you have disabled do not synchronize. No connections to these external sources be established. All existing data stops sync'ing and becomes read-only everywhere. The integration options still appear in the Discover '/' menu but no connections to external data can be made by users.
 
 ## Example policy configurations and user experience result
 
@@ -59,7 +59,7 @@ When data integrations are Disabled, data from external sources you have disable
 
 The Loop experiences check the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) settings:
 
-- **Allow external data integrations in Loop so users can import, view and edit items using Loop** - This is the primary policy that controls and overrides all specific data integration policies. To configure a specific data integration, use one of the specific policies below.
+- **Allow external data integrations in Loop so users can import, view and edit items using Loop** - This is the primary policy that controls and overrides all specific data integration policies. To configure a specific data integration, use one of the specific policies.
 - **Allow GitHub external data integration in Loop so users can import, view and edit items using Loop**
 - **Allow Jira external data integration in Loop so users can import, view and edit items using Loop**
 - **Allow Trello external data integration in Loop so users can import, view and edit items using Loop**
@@ -72,7 +72,7 @@ The Loop experiences check the following [Cloud Policy](/deployoffice/admincente
 1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](/microsoft-365/loop/loop-components-configuration#microsoft-365-groups-for-cloud-policy).
 1. In **Configure Settings**, choose one of the following settings:
     - For **Allow external data integrations in Loop so users can import, view and edit items using Loop**:
-        - recall from above:
+        - recall:
             - This is the primary policy to control all specific data integration policies. To configure a specific data integration differently than the primary setting, use one of the specific policies below.
         - **Enabled**: All external data integrations in Loop are available to the users.
         - **Disabled**: All external data integrations in Loop are not available to the users.
