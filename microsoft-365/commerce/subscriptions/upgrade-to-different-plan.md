@@ -82,7 +82,7 @@ If you can't select the **View upgrades recommended for your org** link, it mean
 
 |Issue  |Resolution  |
 |---------|---------|
-|You have more users than licenses. To change plans automatically, all users must have valid licenses. [Unassign licenses from users](../../admin/manage/assign-licenses-to-users.md) until you have the same or fewer users as your number of licenses. |
+|You have more users than licenses. |To change plans automatically, all users must have valid licenses. [Unassign licenses from users](../../admin/manage/assign-licenses-to-users.md) until you have the same or fewer users as your number of licenses. |
 |The current subscription isn't fully set up or the service isn't available. |For example, if a service in your existing plan has an incident, you can't change plans until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page. </br></br>If you find that a service isn't fully provisioned, or there's a service health issue, wait a few hours for the service to become available and try again. If you still have a problem, [contact support](../../admin/get-help-support.md). |
 |Another plan is in the process of being changed or a credit check is pending. |Wait until the credit check is complete before you change plans. Credit checks can take up to two working days. |
 |The subscription isn't currently eligible to change plans. |You can [change plans manually](#change-plans-manually). |
@@ -137,15 +137,15 @@ Make sure that you buy a subscription for the same organization that the users a
 
 ### Step 2: Check your new subscription and licenses
 
-In the admin center, go to the **Billing** > **Your products** page, then do the following:
+In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, then do the following:
 
 - **Verify that both the old and new subscriptions are listed and active.** The subscription that you're moving users from and the subscription that you're moving users to must be listed together. If the new subscription isn't there when you first check, try again later. Verify that both subscriptions are listed as **Active**.
 - **Check that you have enough licenses for each user.** Each user needs a license that matches their subscription. If you want to move 10 users to Microsoft 365 Business Premium, make sure 10 unassigned licenses are available in that subscription.
-- **Need more licenses for the new subscription?** Go to the **Your products** page, select the subscription, and [buy more licenses](../licenses/buy-licenses.md).
+- **Need more licenses for the new subscription?** Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, select the subscription, and [buy more licenses](../licenses/buy-licenses.md).
 
 #### The new subscription isn't listed, or isn't active
 
-If you bought two subscriptions and they aren't both listed on the **Your products** page, you might have bought them for different organizations (for different domains). Subscriptions can't cross organization boundaries.
+If you bought two subscriptions and they aren't both listed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, you might have bought them for different organizations (for different domains). Subscriptions can't cross organization boundaries.
 
 If you know you have another subscription, and it isn't listed here, or isn't active, [contact support](../../admin/get-help-support.md).
 
