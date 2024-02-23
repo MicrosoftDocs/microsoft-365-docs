@@ -189,9 +189,9 @@ For rules with the "Rule State" specified:
 |[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
 |[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
 |[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
-|[PREVIEW Block rebooting machine in Safe Mode](#preview-block-rebooting-machine-in-Safe-Mode) | | N | N |
+|[Block rebooting machine in Safe Mode (preview)](#block-rebooting-machine-in-safe-mode-preview) | | N | N |
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
-|[PREVIEW Block use of copied or impersonated system tools](#preview-block-use-of-copied-or-impersonated-system-tools) | | N | N |
+|[Block use of copied or impersonated system tools (preview)](#block-use-of-copied-or-impersonated-system-tools-preview) | | N | N |
 |[Block Webshell creation for Servers](#block-webshell-creation-for-servers) |   | N | N |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
