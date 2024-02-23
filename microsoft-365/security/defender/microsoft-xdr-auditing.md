@@ -56,7 +56,7 @@ For more information, see [Manage audit log retention policies](/purview/audit-l
 
 Microsoft Defender XDR uses the [Microsoft Purview auditing solution](/purview/audit-solutions-overview), before you can look at the audit data in the Microsoft Defender XDR portal:
 
-- You should confirm that auditing is turned on in the Microsoft Purview compliance portal. For more information, see [Turn auditing on or off](audit-log-enable-disable.md).
+- You should confirm that auditing is turned on in the Microsoft Purview compliance portal. For more information, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
 - Follow the steps below to enable the unified audit log in the Microsoft Defender XDR portal:
     1. Log in to [Microsoft Defender XDR](https://security.microsoft.com/homepage) using an account with the Security administrator or Global administrator role assigned.
@@ -79,7 +79,7 @@ Microsoft Defender XDR uses the [Microsoft Purview auditing solution](/purview/a
 
 4. Export your results to Excel for further analysis.
 
-For step-by-step instructions, see [Search the audit log in the compliance portal](audit-new-search.md).
+For step-by-step instructions, see [Search the audit log in the compliance portal](/purview/audit-new-search).
 
 The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 or Office 365 subscription, and specifically the type of license that's assigned to users. To learn more, see the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
@@ -119,5 +119,5 @@ Search-UnifiedAuditLog -StartDate 2023/03/12 -EndDate 2023/03/20 -RecordType <ID
 - [Search the audit log in the compliance center](/purview/audit-new-search)
 - [Use a PowerShell script to search the audit log](/purview/audit-log-search-script)
 - [Detailed properties in the audit log](/purview/audit-log-detailed-properties)
-- [Export, configure, and view audit log records](purview/audit-log-export-records)
-- [Office 365 Management Activity API reference](office/office-365-management-api/office-365-management-activity-api-reference)
+- [Export, configure, and view audit log records](/purview/audit-log-export-records)
+- [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference)
