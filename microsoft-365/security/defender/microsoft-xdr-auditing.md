@@ -80,6 +80,14 @@ For step-by-step instructions, see [Search the audit log in the compliance porta
 
 The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 or Office 365 subscription, and specifically the type of license that's assigned to users. To learn more, see the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
+## Microsoft Defender XDR activities
+
+For a list of all events that are logged for user and admin activities in Microsoft Defender XDR in the Microsoft 365 audit log, see:
+
+- [Custom detection activities in Microsoft Defender XDR in the audit log](/purview/audit-log-activities#microsoft-defender-xdr-custom-detection-activities)
+- [Incident activities in Microsoft Defender XDR in the audit log](/purview/audit-log-activities#microsoft-defender-xdr-custom-detection-activities)
+- [Suppression rule activities in Microsoft Defender XDR in the audit log](/purview/audit-log-activities#microsoft-defender-xdr-suppression-rule-activities)
+
 ## Microsoft Defender for Endpoint activities
 
 For a list of all events that are logged for user and admin activities in Microsoft Defender for Endpoint in the Microsoft 365 audit log, see:
@@ -88,14 +96,6 @@ For a list of all events that are logged for user and admin activities in Micros
 - [Indicator settings activities in Defender for Endpoint in the audit log](/purview/audit-log-activities#microsoft-defender-for-endpoint-indicator-settings-activities)
 - [Response action activities in Defender for Endpoint in the audit log](/purview/audit-log-activities#microsoft-defender-for-endpoint-reponse-actions-activities)
 - [Roles settings activities in Defender for Endpoint in the audit log](/purview/audit-log-activities#microsoft-defender-for-endpoint-roles-settings-activities)
-
-## Microsoft Defender XDR activities
-
-For a list of all events that are logged for user and admin activities in Microsoft Defender for Endpoint in the Microsoft 365 audit log, see:
-
-- [Custom detection activities in Microsoft Defender XDR in the audit log](/purview/audit-log-activities#microsoft-defender-xdr-custom-detection-activities)
-- [Incident activities in Microsoft Defender XDR in the audit log](/purview/audit-log-activities#microsoft-defender-xdr-custom-detection-activities)
-- [Suppression rule activities in Microsoft Defender XDR in the audit log](/purview/audit-log-activities#microsoft-defender-xdr-suppression-rule-activities)
 
 ## Using a PowerShell script
 
