@@ -52,42 +52,57 @@ For a complete list of Microsoft Defender XDR activities that are audited, see [
 
 For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies).
 
-## Enable the unified audit log
+## Turn on auditing in Microsoft Defender XDR
 
-How to turn it (including a statement about us using the audit log, and a link tp thier "how to turn on section")
-How to search - go to the security portal (or purview), and add same data as they did - I can give it to yoi
-Defender activities = links to UAL pages
-additional resources
+Microsoft Defender XDR uses the [Microsoft Purview auditing solution](/purview/audit-solutions-overview), before you can look at the audit data in the Microsoft Defender XDR portal:
 
-1. Log in to [Microsoft Defender XDR](https://security.microsoft.com/homepage) using an account with the Security administrator or Global administrator role assigned.
-2. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
-3. Scroll own to **Unified audit log** and toggle the setting to **On**.
+- You should confirm that auditing is turned on in the Microsoft Purview compliance portal. For more information, see [Turn auditing on or off](audit-log-enable-disable.md).
+
+- Follow the steps below to enable the unified audit log in the Microsoft Defender XDR portal:
+    1. Log in to [Microsoft Defender XDR](https://security.microsoft.com/homepage) using an account with the Security administrator or Global administrator role assigned.
+    2. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
+    3. Scroll own to **Unified audit log** and toggle the setting to **On**.
 
    :::image type="content" source="../../media/defender/unified-audit-log.png" alt-text="Screenshot of the unified audit log toggle in Microsoft Defender XDR advanced settings" lightbox="../../media/defender/unified-audit-log.png":::
-
-4. Select **Save preferences**.
+    4. Select **Save preferences**.
 
 ## Using the audit search in Microsoft Defender XDR
 
-1. Navigate to the [Microsoft Defender XDR Audit page](https://security.microsoft.com/auditlogsearch)
+1. To retrieve audit logs for Microsoft Defender XDR activities, navigate to the [Microsoft Defender XDR Audit page](https://security.microsoft.com/auditlogsearch) or go to <https://compliance.microsoft.com> and select **Audit**.
 
    :::image type="content" source="../../media/defender/unified-audit-log-xdr.png" alt-text="Screenshot of the unified audit log page in Microsoft Defender XDR " lightbox="../../media/defender/unified-audit-log-xdr.png":::
 
-2. To narrow your scope and search for Microsoft Defender XDR or Microsoft Defender of Endpoint activities, in the **Activities - friendly names** type **Defender for Endpoint** or **Defender XDR**
-3. Select search
+2. On the **New Search** page, filter the activities, dates, and users you want to audit.
+3. Select **Search**
 
    :::image type="content" source="../../media/defender/unified-audit-search.png" alt-text="Screenshot of the unified audit log search options in Microsoft Defender XDR " lightbox="../../media/defender/unified-audit-search.png":::
 
-For more information on using the audit search, see [Audit New Search](/purview/audit-new-search).
+4. Export your results to Excel for further analysis.
 
-For a full list of activities logged in the Microsoft 365 audit log, see [Audit Log Activities](/purview/audit-log-activities).
+For step-by-step instructions, see [Search the audit log in the compliance portal](audit-new-search.md).
 
->[!Note]
->The Audit log page is also accessible from the [Compliance portal](https://compliance.microsoft.com/auditlogsearch).
+The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 or Office 365 subscription, and specifically the type of license that's assigned to users. To learn more, see the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+
+## Microsoft Defender for Endpoint activities
+
+For a list of all events that are logged for user and admin activities in Microsoft Defender for Endpoint in the Microsoft 365 audit log, see:
+
+- [General settings activities in Defender for Endpoint in the audit log](/purview/audit-log-activities#microsoft-defender-for-endpoint-general-settings-activities)
+- [Indicator settings activities in Defender for Endpoint in the audit log](/purview/audit-log-activities#microsoft-defender-for-endpoint-indicator-settings-activities)
+- [Response action activities in Defender for Endpoint in the audit log](/purview/audit-log-activities#microsoft-defender-for-endpoint-reponse-actions-activities)
+- [Roles settings activities in Defender for Endpoint in the audit log](/purview/audit-log-activities#microsoft-defender-for-endpoint-roles-settings-activities)
+
+## Microsoft Defender XDR activities
+
+For a list of all events that are logged for user and admin activities in Microsoft Defender for Endpoint in the Microsoft 365 audit log, see:
+
+- [Custom detection activities in Microsoft Defender XDR in the audit log](/purview/audit-log-activities#microsoft-defender-xdr-custom-detection-activities)
+- [Incident activities in Microsoft Defender XDR in the audit log](/purview/audit-log-activities#microsoft-defender-xdr-custom-detection-activities)
+- [Suppression rule activities in Microsoft Defender XDR in the audit log](/purview/audit-log-activities#microsoft-defender-xdr-suppression-rule-activities)
 
 ## Using a PowerShell script
 
-You can use the following PowerShell code snippet to query the Office 365 Management API:
+You can use the following PowerShell code snippet to query the Office 365 Management API to retrieve information about Microsoft Defender XDR events:
 
 ```PowerShell
 $cred = Get-Credential
@@ -95,6 +110,7 @@ $s = New-PSSession -ConfigurationName microsoft.exchange -ConnectionUri https://
 Import-PSSession $s
 Search-UnifiedAuditLog -StartDate 2023/03/12 -EndDate 2023/03/20 -RecordType <ID>
 ```
+
 >
 >[!Note] See the API column in Audit activities included for the record type values.
 
