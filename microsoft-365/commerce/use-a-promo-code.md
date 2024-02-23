@@ -57,6 +57,6 @@ If you receive an error message after you enter your promo code, there can be ma
   
 ## Related content
 
-[Buy a subscription from your free trial](./try-or-buy-microsoft-365.md) (article)\  
-[Buy another subscription](./try-or-buy-microsoft-365.md) (article)\  
+[Buy a subscription from your free trial](./try-or-buy-microsoft-365.md) (article)\
+[Buy another subscription](./try-or-buy-microsoft-365.md) (article)\
 [Buy or edit an add-on](buy-or-edit-an-add-on.md) (article)
