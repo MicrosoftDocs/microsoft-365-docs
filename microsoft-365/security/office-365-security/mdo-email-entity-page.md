@@ -1,11 +1,11 @@
 ---
-title: Microsoft Defender for Office 365 email entity page
+title: The email entity page in Defender for Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
-manager: dansimp
-ms.date: 11/10/2023
+ms.author: chrisda
+author: chrisda
+manager: deniseb
+ms.date: 2/22/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
@@ -16,40 +16,33 @@ ms.collection:
 - tier1
 - highpri
 ms.custom:
-description: Microsoft 365 E5 and Microsoft Defender for Office 365 Plan 1 and Plan 2 customers can see email details in all Microsoft Defender for Office 365 experiences including the email headers for copy, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert Id, Network Message ID and more.
+description: Admins can learn about the Email entity page in Microsoft 3Defender for Office 365. This page show many details about email messages. For example, email headers, threat detection details, the latest and original delivery locations, delivery actions, and IDs (for example, the Network message ID and the associated Alert Id).
 search.appverid: met150
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # The Email entity page
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Admins of Microsoft 365 E5, and Microsoft Defender for Office 365 Plan 1 and Plan 2 have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered throughout Microsoft Defender for Office 365 and Microsoft Defender XDR.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md) included in their subscription or purchased as an add-on have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered throughout Defender for Office 365 and Microsoft Defender XDR.
+
 
 See email details in the experiences below, including [previewing and downloading the email](#email-preview-and-download-for-cloud-mailboxes), the email headers *with the option to copy*, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert ID, Network Message ID and more.
 
-## How to get to the email entity page
+## Where to find the Email email entity page
 
-Anywhere you find email details throughout the Microsoft Defender for Office 365, the email entity details are available. This includes:
+The :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available in the Microsoft Defender portal wherever you find details about email messages. For example:
 
-- Threat Explorer
 - Advanced Hunting
 - Alerts
-- Quarantine
-- Submissions
 - Reporting
 - Action Center
-
-One way to get to the email entity page is Threat Explorer, but the steps remain the same from wherever you find email details. Navigate to the Microsoft Defender portal at <https://security.microsoft.com>, **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
-
-1. In **Explorer**, select the subject of an email you're investigating.
-1. The email fly-out for that mail opens.
-1. You see **Open email entity**.
-1. Select it for your email deep dive.
-
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="With the email selected, you get a fly out with details, and Open entity page for the email at the top." lightbox="../../media/email-entities-1-navigation-to-ee.png":::
+- **Threat Explorer** (**Explorer**): On the **Explorer** page at <https://security.microsoft.com/threatexplorerv3> \> verify the **All email** view is selected \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry. **Open email entity** is available at the top of the details flyout that opens. For more information, see [Email view for the details area of the All email view in Threat Explorer](threat-explorer-real-time-detections-about).md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
+- **Quarantine**: On the **Quarantine** page at <https://security.microsoft.com/quarantine> \> verify the **Email** tab is selected \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View quarantined email details](quarantine-admin-manage-messages-files.md#view-quarantined-email-details).
+- **Admin email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **Emails** tab \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View email attachment admin submissions to Microsoft](submissions-admin.md#view-email-attachment-admin-submissions-to-microsoft).
+- **User reported email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **User reported** tab \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
 
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="The graphic of the email entity page that focuses on headings that you'll see" lightbox="../../media/email-entities-2-eep.png":::
 

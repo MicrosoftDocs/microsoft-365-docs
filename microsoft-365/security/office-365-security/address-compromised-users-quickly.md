@@ -85,7 +85,7 @@ To learn more, see [View details of an investigation](air-view-investigation-res
 
 - [Review the required permissions to use AIR capabilities](air-about.md#required-permissions-to-use-air-capabilities)
 
-- [Find and investigate malicious email in Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Find and investigate malicious email in Office 365](threat-explorer-investigate-delivered-malicious-email.md)
 
 - [Learn about AIR in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

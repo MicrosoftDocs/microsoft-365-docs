@@ -356,8 +356,6 @@
        href: mdo-sec-ops-guide.md
      - name: Analyze and classify
        items:
-       - name: Investigate malicious email
-         href: investigate-malicious-email-that-was-delivered.md
        - name: Campaign Views
          href: campaigns.md
        - name: Report suspicious messages and files
@@ -388,10 +386,10 @@
            href: threat-explorer-email-security.md
          - name: Threat hunting in Threat Explorer
            href: threat-explorer-threat-hunting.md
+         - name: Investigate delivered malicious email
+           href: threat-explorer-investigate-delivered-malicious-email.md
          - name: Improvements to Threat Hunting in Threat Explorer
            href: threat-explorer-about.md
-         - name: Threat Explorer views
-           href: threat-explorer-views.md
          - name: Email entity page
            href: mdo-email-entity-page.md
          - name: Teams message entity panel

@@ -2,9 +2,9 @@
 title: Threat Explorer and Real-time Detections
 f1.keywords:
   - NOCSH
-ms.author: tracyp
-author: msfttracyp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 
@@ -31,7 +31,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Threat Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!).
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections**. These features are powerful, near real-time tools to help Security Operations (SecOps) teams investigate and respond to threats. For more information, see [About Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-real-time-detections-about.md).
 
 Threat Explorer or Real-time detections helps your security operations team investigate and respond to threats efficiently. With this report, you can:
 
@@ -50,14 +50,6 @@ We are making this integration more relevant by introducing the alert ID (see an
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/AlertID-Filter.png" alt-text="Screenshot of the Filtering for Alert ID." lightbox="../../media/AlertID-Filter.png":::
 
-### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days
-
-As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office 365 P1 and P2 trial tenants.
-This does not impact any production tenants for both P1 and P2/E5 customers, which already have the 30 day data retention and search capabilities.
-
-### Updated limits for Export of records for Threat Explorer
-
-As part of this update, the number of rows for Email records that can be exported from Threat Explorer is increased from 9990 to 200,000 records. The set of columns that can be exported currently will remain the same, but the number of rows will increase from the current limit.
 
 ### Tags in Threat Explorer
 
@@ -295,11 +287,6 @@ The search for connectors is "contains" in nature, which means partial keyword s
 
 ## New features in Threat Explorer and Real-time detections
 
-- [View phishing emails sent to impersonated users and domains](#view-phishing-emails-sent-to-impersonated-users-and-domains)
-- [Preview email header and download email body](#preview-email-header-and-download-email-body)
-- [Email timeline](#email-timeline)
-- [Export URL click data](#export-url-click-data)
-
 ### View phishing emails sent to impersonated users and domains
 
 To identify phishing attempts against users and domains that are impersonated users must be added to the list of *Users to protect*. For domains, admins must either enable *Organization domains*, or add a domain name to *Domains to protect*. The domains to protect are found on the *Anti-Phishing policy page* in the *Impersonation* section.
@@ -378,7 +365,7 @@ Here is what the user can and can't see:
 
 The **Email timeline** is a new Explorer feature that improves the hunting experience for admins. It cuts the time spent checking different locations to try to understand the event. When multiple events happen at or close to the same time an email arrives, those events are displayed in a timeline view. Some events that happen to your email post-delivery are captured in the **Special action** column. Admins can combine  information from the timeline with the special action taken on the mail post-delivery to get insight into how their policies work, where the mail was finally routed, and, in some cases, what the final assessment was.
 
-For more information, see [Investigate and remediate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md).
+For more information, see [Investigate and remediate malicious email that was delivered in Office 365](threat-explorer-investigate-delivered-malicious-email.md).
 
 ### Export URL click data
 
@@ -503,7 +490,7 @@ The report refreshes to show data about email messages that people in your organ
 
 In addition to the scenarios outlined in this article, you have many more reporting options available with Explorer (or Real-time detections). See the following articles:
 
-- [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
+- [Find and investigate malicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md)
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](./safe-attachments-for-spo-odfb-teams-about.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)

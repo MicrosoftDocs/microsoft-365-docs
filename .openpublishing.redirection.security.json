@@ -3676,9 +3676,19 @@
        "redirect_document_id": true
      },
      {
-       "source_path": "microsoft-365/security/office-365-security/messaging-policy-and-compliance-in-eop.md",
-       "redirect_url": "/microsoft-365/security/office-365-security/auditing-reports-in-eop",
+      "source_path": "microsoft-365/security/office-365-security/messaging-policy-and-compliance-in-eop.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/auditing-reports-in-eop",
+      "redirect_document_id": true
+     },
+     {
+       "source_path": "microsoft-365/security/office-365-security/threat-explorer-views.md",
+       "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-real-time-detections-about",
        "redirect_document_id": true
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-investigate-delivered-malicious-email",
+      "redirect_document_id": true
      },
      {
        "source_path": "microsoft-365/security/office-365-security/manage-recipients-and-admin-role-groups-in-eop.md",

@@ -153,7 +153,7 @@ After you find a specific quarantined message, select the message to view detail
 > [!TIP]
 > On mobile devices, the previously described controls are available under :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More**.
 >
->   :::image type="content" source="../../media/quarantine-message-main-page-mobile-actions.png" alt-text="Selecting a quarantined message and selecting More on a mobile device." lightbox="../../media/quarantine-message-main-page-mobile-actions.png":::
+> :::image type="content" source="../../media/quarantine-message-main-page-mobile-actions.png" alt-text="Selecting a quarantined message and selecting More on a mobile device." lightbox="../../media/quarantine-message-main-page-mobile-actions.png":::
 
 ### View quarantined email details
 
@@ -250,6 +250,7 @@ If you don't release or remove a message, it's automatically deleted from quaran
 
 > [!TIP]
 > Third party anti-virus solutions or security services can cause the following issues for messages that are released from quarantine:
+>
 > - The message is quarantined after being released.
 > - Content is removed from the released message before it reaches the recipient's Inbox.
 > - The released message never arrives in the recipient's Inbox.
@@ -363,7 +364,7 @@ In the **Submit to Microsoft for analysis** flyout that opens, configure the fol
 
   - **I've confirmed it's clean** (default): Select this option if you're sure that the message is clean, and then select **Next**. Then the following settings are available:
     - **Allow this email**: If you select this option, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
-   - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
+    - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
     - **Allow entry note**: Enter an optional note that contains additional information.
 
   - **It appears clean**: Select this option if you're unsure and you want a verdict from Microsoft.

@@ -82,7 +82,7 @@ Ransomware continues to be a significant threat to organizations. Microsoft has 
 
 Identifying and tracking modified, created, or stolen identities are essential to investigating phishing and BEC attacks. Use the following resources when investigating these attacks:
 
-- **Tutorial**: [Investigate malicious email](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)
+- **Tutorial**: [Investigate malicious email](/microsoft-365/security/office-365-security/threat-explorer-investigate-delivered-malicious-email)
 - **Tutorial**: [Investigate users](investigate-users.md)
 - **Tutorial**: [Investigate a user account](/microsoft-365/security/defender-endpoint/investigate-user)
 - **Blog**: [Total Identity Compromise: Microsoft Incident Response lessons on securing Active Directory

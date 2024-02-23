@@ -97,7 +97,7 @@ conceptualContent:
          - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
            itemType: how-to-guide
            text: Operationalize Defender for Office 365
-         - url: /microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered
+         - url: /microsoft-365/security/office-365-security/threat-explorer-investigate-delivered-malicious-email
            itemType: how-to-guide
            text: Investigate malicious emails
 

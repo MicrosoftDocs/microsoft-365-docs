@@ -110,5 +110,5 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 ## Next steps
 
 - [Learn about Threat Trackers - New and Noteworthy](threat-trackers.md)
-- [Find and investigate malicious email that was delivered (Office 365 Threat Investigation and Response)](investigate-malicious-email-that-was-delivered.md)
+- [Find and investigate malicious email that was delivered (Office 365 Threat Investigation and Response)](threat-explorer-investigate-delivered-malicious-email.md)
 - [Simulate a phishing attack](attack-simulation-training-simulations.md)

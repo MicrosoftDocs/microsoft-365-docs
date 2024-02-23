@@ -1,5 +1,5 @@
 ---
-title: Threat hunting in Threat Explorer for Microsoft Defender for Office 365
+title: Threat hunting in Threat Explorer and Real-time detections
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -23,67 +23,100 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# Threat hunting in Threat Explorer for Microsoft Defender for Office 365
+# Threat hunting in Threat Explorer and Real-time detections in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** or **Real-time detections** to detect and remediate threats.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections**. These features are powerful, near real-time tools to help Security Operations (SecOps) teams investigate and respond to threats. For more information, see [About Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-real-time-detections-about.md).
 
-In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
+Threat Explorer or Real-time detections allow you to take the following actions:
 
-With these tools, you can:
+- See malware detected by Microsoft 365 security features.
+- View phishing URL and click verdict data.
+- Start an automated investigation and response process (Threat Explorer only).
+- Investigate malicious email.
+- And more.
 
-- See malware detected by Microsoft 365 security features
-- View phishing URL and click verdict data
-- Start an automated investigation and response process from a view in Explorer
-- Investigate malicious email, and more
-
-For more information, see [Email security with Threat Explorer](threat-explorer-email-security.md).
-
-> [!TIP]
-> Advanced hunting in Microsoft Defender XDR now supports an easy-to-use query builder for analysts who want to hunt through cloud app data and other threat data (if available), even if they do not know Kusto Query Language (KQL). To get started, read [Build queries using guided mode](/microsoft-365/security/defender/advanced-hunting-query-builder).
-
-Watch this short video to learn how to hunt and investigate email and collaboration-based threats using Microsoft Defender for Office 365.
+Watch this short video to learn how to hunt and investigate email and collaboration-based threats using Defender for Office 365.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
 
-## Threat Explorer walk-through
+> [!TIP]
+> Advanced hunting in Microsoft Defender XDR supports an easy-to-use query builder that doesn't use the Kusto Query Language (KQL). For more information, see [Build queries using guided mode](/microsoft-365/security/defender/advanced-hunting-query-builder).
 
-In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 and Plan 2. Manually operated Threat hunting tools exist in both plans, under different names and with different capabilities.
+## Threat Explorer and Real-time detections walk-through
 
-Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of the *Threat Explorer* (also called *Explorer*) hunting tool in Plan 2. In this series of articles, most of the examples were created using the full Threat Explorer. Admins should test any steps in Real-time detections to see where they apply.
+Threat Explorer or Real-time detections is available in the **Email & collaboration** section in the Microsoft Defender portal at <https://security.microsoft.com>:
 
-After you go to **Explorer**, by default, you'll arrive on the **All email** page, but use the tabs to navigate to the available views. If you're hunting phish or digging into a threat campaign, choose those views.
+- **Real-time detections** is available in _Defender for Office 365 Plan 1_. The **Real-time detections** page is available directly at <https://security.microsoft.com/realtimereportsv3>.
 
-Once a security operations (Sec Ops) person selects the data they want to see, they can further narrow down the data by applying filters such as Sender, Recipient, and Subject,  or select an appropriate date range to get the desired results. Remember to select Refresh to complete your filtering actions.
+  :::image type="content" source="../../media/te-rtd-select-real-time-detections.png" alt-text="Real-time detections in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-real-time-detections.png":::
 
-:::image type="content" source="../../media/sender-drop-down-new.png" alt-text="Screenshot of the Sender button in Threat Explorer." lightbox="../../media/sender-drop-down-new.png":::
+- **Threat Explorer** is available in _Defender for Office 365 Plan 2_. The **Explorer** page is available directly at <https://security.microsoft.com/threatexplorerv3>.
 
-Refining focus in Explorer or Real-time detection can be thought of in layers. The first is **View**. The second can be thought of as a *filtered focus*. For example, you can retrace the steps you took in finding a threat by recording your decisions like this: To find the issue in Explorer, **I chose the Malware View with a Recipient filter focus**. This makes retracing your steps easier.
+  :::image type="content" source="../../media/te-rtd-select-threat-explorer.png" alt-text="Explorer in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-threat-explorer.png":::
+
+Threat Explorer contains the same information and capabilities as Real-time detections, but with the following additional features:
+
+- More views.
+- More property filtering options, including the option to save queries.
+- Threat hunting and remediation actions.
+
+For more information about the differences between Defender for Office 365 Plan 1 and Plan 2, see the [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-security-comparison.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+
+Use the tabs (views) at the top of the page to start your investigation.
+
+The available views in Threat Explorer and Real-time detections are described in the following table:
+
+|View|Threat<br/>Explorer|Real-time<br/>detections|Description|
+|---|:---:|:---:|---|
+|**All email**|✔||Default view for Threat Explorer. Information about all email messages sent by external users into your organization, or email sent between internal users in your organization.|
+|**Malware**|✔|✔|Default view for Real-time detections. Information about email messages that contain malware.|
+|**Phish**|✔|✔|Information about email messages that contain phishing threats.|
+|**Campaigns**|✔||Information about malicious email that Defender for Office 365 Plan 2 identified as part of a [coordinated phishing or malware campaign](campaigns.md).|
+|**Content malware**|✔|✔|Information about malicious files detected by the following features: <ul><li>[Built-in virus protection in SharePoint, OneDrive, and Microsoft Teams](anti-malware-protection-for-spo-odfb-teams-about.md)</li><li>[Safe Attachments for Sharepoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)</li></ul>|
+|**URL clicks**|✔||Information about user clicks on URLs in email messages, Teams messages, SharePoint files, and OneDrive files.|
+
+Use the date/time filter and the available filter properties in the view to refine the results:
+
+- For instructions to create filters, see [Property filters in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#property-filters-in-threat-explorer-and-real-time-detections).
+- The available filter properties for each view are described in the following locations:
+  - [Filterable properties in the All email view in Threat Explorer](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-all-email-view-in-threat-explorer)
+  - [Filterable properties in the Malware view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-malware-view-in-threat-explorer-and-real-time-detections)
+  - [Filterable properties in the Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-phish-view-in-threat-explorer-and-real-time-detections)
+  - [Filterable properties in the Campaigns view in Threat Explorer](campaigns.md#filters-on-the-campaigns-page)
+  - [Filterable properties in the Content malware view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-content-malware-view-in-threat-explorer-and-real-time-detections)
+  - [Filterable properties in the URL clicks view in Threat Explorer](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-url-clicks-view-in-threat-explorer)
 
 > [!TIP]
-> If Sec Ops uses **Tags** to mark accounts they consider high valued targets, they can make selections like *Phish View with a Tags filter focus (include a date range if used)*. This will show them any phishing attempts directed at their high value user targets during a time-range (like dates when certain phishing attacks are happening a lot for their industry).
+> Remember to select **Refresh** after you create or update the filter. The filters affect the information in the chart and the details area of the view.
 
-With the new version of Threat Explorer, users can use the following new dropdown options with four new operators on the filters:
+You can think of refining the focus in Threat Explorer or Real-time detections as layers to make retracing your steps easier:
 
-- Equals any of – returns values matching the exact user input.
-- Equals none of – returns values not matching the exact user input.
-- Contains any of – returns values partially matching user input.
-- Contains none of – returns values not partially matching user input.
+- The first layer is the view you're using.
+- The second later is the filters you're using in that view.
 
-Note that these filter conditions are available based on filter types and input types.
+For example, you can retrace the steps you took to find a threat by recording your decisions like this: To find the issue in Threat Explorer, I used the **Malware** view and used a **Recipient** filter focus.
 
-Use the **Column options** button to get the kind of information on the table that would be most helpful:
+> [!TIP]
+> If you use [User tags](user-tags-about.md) to mark high value targets accounts (for example, the **Priority account** tag) you can use those tags as filters. For example, the **Phish** view with a **Tags** filter focus. This method shows phishing attempts directed at high value target accounts during a specific time period.
 
-:::image type="content" source="../../media/threat-explorer-column-options-new.png" alt-text="Screenshot of the Column options button highlighted." lightbox="../../media/threat-explorer-column-options-new.png":::
+Also, be sure to test your display options. Different audiences (for example, management) might react better or worse to different presentations of the same data.
 
-:::image type="content" source="../../media/column-options-new.png" alt-text="Screenshot showing available options in Columns." lightbox="../../media/column-options-new.png":::
+For example, in Threat Explorer the **All email** view, the **Email origin** and **Campaigns** views (tabs) are available in the details area at the bottom of the page:
 
-In the same mien, make sure to test your display options. Different audiences will react well to different presentations of the same data. For some viewers, the **Email Origins** map can show that a threat is widespread or discreet more quickly than the **Campaign display** option right next to it. Sec Ops can make use of these displays to best make points that underscore the need for security and protection, or for later comparison, to demonstrate the effectiveness of their actions.
+- Some people might think the world map in the **Email origin** tab does a better job of showing how widespread the detected threats are.
 
-:::image type="content" source="../../media/threat-explorer-email-origin-map-new.png" alt-text="Screenshot of the Email Origins map." lightbox="../../media/threat-explorer-email-origin-map-new.png":::
+  :::image type="content" source="../../media/te-rtd-all-email-view-details-area-email-origin-tab.png" alt-text="The world map in the Email origin view in the details area of the All email view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-details-area-email-origin-tab.png":::
 
-:::image type="content" source="../../media/threat-explorer-campaign-display-new.png" alt-text="Screenshot of the Campaign display options." lightbox="../../media/threat-explorer-campaign-display-new.png":::
+- Others might find the detailed information in the table in the **Campaigns** tab more useful to convey the information.
+
+  :::image type="content" source="../../media/te-rtd-all-email-view-details-area-campaign-tab.png" alt-text="The details table in the Campaign tab in the All email view view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-details-area-campaign-tab.png":::
+
+You can use this information for the following results:
+
+- To show the need for security and protection.
+- To later demonstrate the effectiveness of any actions.
 
 ### Email investigation
 
@@ -110,37 +143,3 @@ Here, the analyst can take actions like submitting the message as Spam, Phishing
 
 :::image type="content" source="../../media/threat-explorer-email-actions-drop-down-new.png" alt-text="Screenshot of the Actions drop down." lightbox="../../media/threat-explorer-email-actions-drop-down-new.png":::
 
-## Required licenses and permissions
-
-You must have [Microsoft Defender for Office 365](defender-for-office-365.md) to use Explorer or Real-time detections.
-
-- Explorer is included in Defender for Office 365 Plan 2.
-- The Real-time detections report is included in Defender for Office 365 Plan 1.
-- Plan to assign licenses for all users who should be protected by Defender for Office 365. Explorer and Real-time detections show detection data for licensed users.
-
-To view and use Explorer or Real-time detections, you must have the following permissions:
-
-- In the Microsoft Defender portal:
-  - Organization Management
-  - Security Administrator (this can be assigned in the Microsoft Entra admin center (<https://aad.portal.azure.com>)
-  - Security Reader
-- In Exchange Online:
-  - Organization Management
-  - View-Only Organization Management
-  - View-Only Recipients
-  - Compliance Management
-
-To learn more about roles and permissions, see the following resources:
-
-- [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md)
-- [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
-- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
-
-## More information
-
-- [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
-- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)
-- [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
-- [Threat protection status report](reports-email-security.md#threat-protection-status-report)
-- [Automated investigation and response in Microsoft Threat Protection](air-about-office.md)
-- [Investigate emails with the Email Entity Page](mdo-email-entity-page.md)

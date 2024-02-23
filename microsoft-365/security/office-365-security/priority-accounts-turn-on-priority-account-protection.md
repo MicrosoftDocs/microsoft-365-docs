@@ -112,13 +112,9 @@ To view the results of priority account protection in Threat Explorer, do the fo
 
 ### Email entity page
 
-The email entity page is available in **Threat Explorer**. For more information, see [The Email entity page](mdo-email-entity-page.md).
+The email entity page is available from many locations in the Defender portal, including **Threat Explorer** (also known as **Explorer**). For more information, see [The Email entity page](mdo-email-entity-page.md).
 
-In the filtered results on the **All email**, **Malware**, or **Phish** tabs of the **Explorer** page, select the **Subject** of an email message in the results.
-
-In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** at the top of the flyout.
-
-On the email entity page that opens, select the **Analysis** tab. **Priority account protection** is listed in the **Threat detection details** section.
+On the Email entity page, select the **Analysis** tab. **Priority account protection** is listed in the **Threat detection details** section.
 
 :::image type="content" source="../../media/email-entity-priority-account-protection.png" alt-text="The Analysis tab of the Email entity page showing Priority account protection results." lightbox="../../media/email-entity-priority-account-protection.png":::
 
