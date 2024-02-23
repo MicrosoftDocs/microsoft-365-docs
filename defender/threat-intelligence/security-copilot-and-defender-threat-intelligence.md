@@ -14,10 +14,7 @@ ms.topic: conceptual
 ms.date: 12/04/2023
 ---
 
-# Microsoft Copilot for Security (preview) and Microsoft Defender Threat Intelligence
-
-> [!IMPORTANT]
-> The information in this article applies to the Microsoft Copilot for Security Early Access Program, which is an invite-only paid preview program. Some information in this article relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided in this article.
+# Microsoft Copilot for Security and Microsoft Defender Threat Intelligence
 
 Microsoft Copilot for Security is a cloud-based AI platform that provides natural language copilot experience. It can help support security professionals in different scenarios, like incident response, threat hunting, and intelligence gathering. For more information about what it can do, read [What is Microsoft Copilot for Security?](/security-copilot/microsoft-security-copilot).
 
