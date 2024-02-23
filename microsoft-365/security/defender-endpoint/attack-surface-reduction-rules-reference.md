@@ -116,9 +116,9 @@ The following table lists the supported operating systems for rules that are cur
 | [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
 | [Block persistence through Windows Management Instrumentation (WMI) event subscription](#block-persistence-through-wmi-event-subscription) | Y <br> version 1903 (build 18362) or later <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> version 1903 (build 18362) or later | N | Y |
 | [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
-| [PREVIEW Block rebooting machine in Safe Mode](#PREVIEW-Block-rebooting-machine-in-Safe-Mode) | Y | Y | Y | Y | Y |
+| [PREVIEW Block rebooting machine in Safe Mode](#preview-block-rebooting-machine-in-Safe-Mode) | Y | Y | Y | Y | Y |
 | [Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
-| [PREVIEW Block use of copied or impersonated system tools](#PREVIEW-Block-use-of-copied-or-impersonated-system-tools) | Y | Y | Y | Y | Y |
+| [PREVIEW Block use of copied or impersonated system tools](#preview-block-use-of-copied-or-impersonated-system-tools) | Y | Y | Y | Y | Y |
 | [Block Webshell creation for Servers](#block-webshell-creation-for-servers)  | N | Y <br>Exchange Role Only | Y <br>Exchange Role Only | Y <br>Exchange Role Only | N |
 | [Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | N | N | N | N |
 | [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y <br> version 1803 or later <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
@@ -148,9 +148,9 @@ Links to information about configuration management system versions referenced i
 |[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y |Y <br><br> CB 1710 | Y  | Y  |
 |[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |Y  |  |Y   | Y  |
 |[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |  |  Y | Y  |
-|[PREVIEW Block rebooting machine in Safe Mode](#PREVIEW-Block-rebooting-machine-in-Safe-Mode) | Y | | Y  |  Y |
+|[PREVIEW Block rebooting machine in Safe Mode](#preview-block-rebooting-machine-in-Safe-Mode) | Y | | Y  |  Y |
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |Y <br><br> CB 1802 | Y  | Y  |
-|[PREVIEW Block use of copied or impersonated system tools](#PREVIEW-Block-use-of-copied-or-impersonated-system-tools) | Y | | Y  |  Y |
+|[PREVIEW Block use of copied or impersonated system tools](#preview-block-use-of-copied-or-impersonated-system-tools) | Y | | Y  |  Y |
 |[Block Webshell creation for Servers](#block-webshell-creation-for-servers) | Y | | Y | Y |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y |Y <br><br> CB 1710  | Y  |  Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y |Y <br><br> CB 1802 | Y  | Y  |
@@ -187,9 +187,9 @@ For rules with the "Rule State" specified:
 |[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
 |[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
 |[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
-|[PREVIEW Block rebooting machine in Safe Mode](#PREVIEW-Block-rebooting-machine-in-Safe-Mode) | | N | N |
+|[PREVIEW Block rebooting machine in Safe Mode](#preview-block-rebooting-machine-in-Safe-Mode) | | N | N |
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
-|[PREVIEW Block use of copied or impersonated system tools](#PREVIEW-Block-use-of-copied-or-impersonated-system-tools) | | N | N |
+|[PREVIEW Block use of copied or impersonated system tools](#preview-block-use-of-copied-or-impersonated-system-tools) | | N | N |
 |[Block Webshell creation for Servers](#block-webshell-creation-for-servers) |   | N | N |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y   | N \| Y  |
