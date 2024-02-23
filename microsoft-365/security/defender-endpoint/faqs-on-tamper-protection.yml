@@ -127,6 +127,11 @@ sections:
           How can I confirm whether exclusions are tamper protected on a Windows device?
         answer: |
          Follow the guidance in [Manage tamper-protected antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
+         
+      - question: |
+          If tamper protection is turned on for exclusions, do I need to disable it to apply new exclusions policy settings from Intune or Configuration Manager?
+        answer: |
+         No. When tamper protection for exclusions is enabled, you do not need to disable it to apply new exclusions.
 
       - question: |
           Can I configure tamper protection with Configuration Manager?
