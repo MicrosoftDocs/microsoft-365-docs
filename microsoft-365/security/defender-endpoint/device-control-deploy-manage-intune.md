@@ -4,7 +4,7 @@ description: Learn how to deploy and manage device control in Defender for Endpo
 author: siosulli
 ms.author: siosulli
 manager: deniseb 
-ms.date: 02/14/2024
+ms.date: 02/23/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
