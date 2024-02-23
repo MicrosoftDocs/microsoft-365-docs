@@ -110,16 +110,16 @@ Teams enables physicians, clinicians, nurses, and other staff to collaborate eff
 
 ### Messaging for healthcare organizations
 
-[Messaging policies](/microsoftteams/messaging-policies-in-teams) in Teams are used to control which chat and channel messaging features are available to users. Secure messaging supports collaboration within health teams, including the following features:
+[Messaging policies](/microsoftteams/messaging-policies-in-teams) in Teams are used to control which chat and channel messaging features are available to users. With the **Read receipts** and **Send urgent messages using priority notifications** messaging policy settings, you can enable the following features:
 
-- A message sender can set a special priority for their message, so the recipient is repeatedly notified until they read the message.
+- A message sender can send messages using priority notifications, so the recipient is repeatedly notified until they read the message.
 - A message sender can request a read receipt, so they're notified when a message they sent was read by the message recipient.
 
 Together, these features allow quicker attention to urgent messages and confidence that the message was received and read. New health teams using these features can be created on a per-patient basis. These features are policy-based, and can be assigned to individuals or entire teams.
 
 To learn more, see [Messaging policies for healthcare organizations](messaging-policies-hc.md).
 
-Also related to secure messaging is the ability to have other tenants federated by healthcare organizations, allowing richer inter-tenant communication. To learn more, see [Manage external meetings and chat in Microsoft Teams](/microsoftteams/manage-external-access).
+Also related to messaging is the ability to have other tenants federated by healthcare organizations, allowing richer inter-tenant communication. To learn more, see [Manage external meetings and chat with people and organizations using Microsoft identities](/microsoftteams/manage-external-access).
 
 ### Coordinate over email with Exchange Online
 
