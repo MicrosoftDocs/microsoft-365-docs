@@ -118,7 +118,7 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 
 To configure a third-party phishing simulation, you need to provide the following information:
 
-- At least one **Domain**.
+- At least one **Domain**. (P1 sender domain **or** DKIM domain)
 - At least one **Sending IP**.
 - For **non-email** phishing simulations (for example, Microsoft Teams messages, Word documents, or Excel spreadsheets), you can optionally identify the **Simulation URLs to allow** that shouldn't be treated as real threats at time of click: the URLs aren't blocked or detonated, and no URL click alerts or resulting incidents are generated. The URLs are wrapped at time of click, but they aren't blocked.
 
@@ -161,7 +161,25 @@ If your MX record doesn't point to Microsoft 365, the IP address in the `Authent
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
 
-   - **Simulation URLs to allow**: This setting isn't required for links in email phishing simulations. Use this setting to optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office documents) that shouldn't be treated as real threats at time of click.
+    In the example below, you can see that the connecting IP is **127.174.6.47**, the smtp.mailfrom (P1 sender, or envelope sender) is **contoso.com**, and the DKIM domain is header.d=**contoso-simulation.com**
+      
+```text
+Authentication-Results: spf=pass (sender IP is 127.174.6.147)
+smtp.mailfrom=contoso.com; dkim=pass (signature was verified)
+header.d=contoso-simulation.com; dmarc=pass action=none header.from=contoso-simulation.com;
+
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=contoso-simulation.com;
+s=selector1;
+h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+bh=UErATeHehIIPIXPeUAfZWiKo0w2cSsOhb9XM9ulqTX0=;
+```
+
+To configure a third-party phishing simulation, you can use one of the following combinations:
+
+    contoso.com 127.174.6.47   
+    contoso-simulation.com 127.174.6.47 
+
+  - **Simulation URLs to allow**: This setting isn't required for links in email phishing simulations. Use this setting to optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office documents) that shouldn't be treated as real threats at time of click.
 
      Add URL entries by expanding this setting, clicking in the box, entering a value, and then pressing the ENTER key or selecting the value that's displayed below the box. You can add up to 30 entries. For the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list).
 
