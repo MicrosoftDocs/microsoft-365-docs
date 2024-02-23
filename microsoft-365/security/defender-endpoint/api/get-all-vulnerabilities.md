@@ -1,15 +1,11 @@
 ---
 title: Get all vulnerabilities
 description: Retrieves a list of all the vulnerabilities affecting the organization
-keywords: apis, graph api, supported apis, get, vulnerability information, Microsoft Defender for Endpoint tvm api
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
