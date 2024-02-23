@@ -98,7 +98,7 @@ The Loop experiences (except for Microsoft Teams) check the following [Cloud Pol
 1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
 1. In **Configure Settings**, choose one of the following settings:
     - For **Create and view Loop files in Microsoft apps that support Loop**:
-        - recall from above,
+        - recall:
             - this setting applies to:
                 - Outlook integration
                 - Word for the web integration
