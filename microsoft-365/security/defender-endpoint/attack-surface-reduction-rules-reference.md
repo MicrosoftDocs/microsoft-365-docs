@@ -68,9 +68,9 @@ For the easiest method to enable the standard protection rules, see: [Simplified
 | Block Office communication application from creating child processes | | Yes |
 | Block persistence through WMI event subscription | Yes | |
 | Block process creations originating from PSExec and WMI commands | | Yes |
-| PREVIEW Block rebooting machine in Safe Mode | | Yes |
+| Block rebooting machine in Safe Mode (preview) | | Yes |
 | Block untrusted and unsigned processes that run from USB | | Yes |
-| PREVIEW Block use of copied or impersonated system tools | | Yes |
+| Block use of copied or impersonated system tools (preview) | | Yes |
 | Block Webshell creation for Servers | | Yes |
 | Block Win32 API calls from Office macros | | Yes |
 | Use advanced protection against ransomware | | Yes |
