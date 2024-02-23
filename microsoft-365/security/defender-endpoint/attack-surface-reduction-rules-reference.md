@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - mde-asr
-ms.date: 02/02/2024
+ms.date: 02/23/2024
 search.appverid: met150
 ---
 
@@ -40,6 +40,8 @@ This article provides information about Microsoft Defender for Endpoint attack s
 - [ASR rule to GUID matrix](#asr-rule-to-guid-matrix)
 - [ASR rule modes](#asr-rule-modes)
 - [Per-rule-descriptions](#per-rule-descriptions)
+
+[!Include[Prerelease information](../../includes/prerelease.md)]
 
 ## Attack surface reduction rules by type
 
