@@ -27,12 +27,12 @@ description: "Learn about how to configure external data connections for Loop ex
 
 Microsoft enabled Jira, Trello, and GitHub integration experiences within [Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop). Tenant admins can use Cloud Policy to configure the data integration features. Tenant admins can Enable, Disable, or Not Configure various policy settings to control these integrations. The data integration policies are:
 
-- **Allow external data integrations in Loop so users can import, view, and edit items using Loop**
+- **Import, view, and edit, items from apps integrated with Loop**
     - This is the primary policy to control all specific data integration policies. To configure a specific data integration differently than the primary setting, use one of the specific policies.
-- **Allow GitHub external data integration in Loop so users can import, view, and edit items using Loop**
-- **Allow Jira external data integration in Loop so users can import, view, and edit items using Loop**
-- **Allow Trello external data integration in Loop so users can import, view, and edit items using Loop**
-- **Allow Azure DevOps external data integration in Loop so users can import, view, and edit items using Loop**
+- **Import, view, and edit, GitHub items from Loop**
+- **Import, view, and edit, Jira issues from Loop**
+- **Import, view, and edit, Trello boards from Loop**
+- **Import, view, and edit, Azure DevOps items from Loop**
 
 ## User experience expectations when admin settings are configured
 
@@ -44,27 +44,27 @@ When data integrations are Disabled, data from external sources you have disable
 
 |Primary Policy|Primary State|Specific Policy|Specific State|End User Outcome|
 |-----|-----|-----|-----|-----|
-|Allow *external data integrations in Loop* so users can import, view, and edit items using Loop|Not Configured|Allow ***GitHub** external data integration in Loop* so users can import, view, and edit items using Loop|Not Configured|✅Enabled for all data integrations|
-|Allow *external data integrations in Loop* so users can import, view, and edit items using Loop|Not Configured|Allow ***GitHub** external data integration in Loop* so users can import, view, and edit items using Loop|✅Enabled|✅Enabled for all data integrations|
-|Allow *external data integrations in Loop* so users can import, view, and edit items using Loop|Not Configured|Allow ***GitHub** external data integration in Loop* so users can import, view, and edit items using Loop|🚫Disabled|✅Enabled for all data integrations EXCEPT<br/>🚫Disabled for GitHub|
-|Allow *external data integrations in Loop* so users can import, view, and edit items using Loop|✅Enabled|Allow ***GitHub** external data integration in Loop* so users can import, view, and edit items using Loop|Not Configured|✅Enabled for all data integrations|
-|Allow *external data integrations in Loop* so users can import, view, and edit items using Loop|✅Enabled|Allow ***GitHub** external data integration in Loop* so users can import, view, and edit items using Loop|✅Enabled|✅Enabled for all data integrations|
-|Allow *external data integrations in Loop* so users can import, view, and edit items using Loop|✅Enabled|Allow ***GitHub** external data integration in Loop* so users can import, view, and edit items using Loop|🚫Disabled|✅Enabled for all data integrations EXCEPT<br/>🚫Disabled for GitHub|
-|Allow *external data integrations in Loop* so users can import, view, and edit items using Loop|🚫Disabled|Allow ***GitHub** external data integration in Loop* so users can import, view, and edit items using Loop|Not Configured|🚫Disabled for all data integrations|
-|Allow *external data integrations in Loop* so users can import, view, and edit items using Loop|🚫Disabled|Allow ***GitHub** external data integration in Loop* so users can import, view, and edit items using Loop|✅Enabled|🚫Disabled for all data integrations|
-|Allow *external data integrations in Loop* so users can import, view, and edit items using Loop|🚫Disabled|Allow ***GitHub** external data integration in Loop* so users can import, view, and edit items using Loop|🚫Disabled|🚫Disabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|Not Configured|Import, view and edit, **GitHub** items from Loop|Not Configured|✅Enabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|Not Configured|Import, view and edit, **GitHub** items from Loop|✅Enabled|✅Enabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|Not Configured|Import, view and edit, **GitHub** items from Loop|🚫Disabled|✅Enabled for all data integrations EXCEPT<br/>🚫Disabled for GitHub|
+|Import, view, and edit, items from apps integrated with Loop|✅Enabled|Import, view and edit, **GitHub** items from Loop|Not Configured|✅Enabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|✅Enabled|Import, view and edit, **GitHub** items from Loop|✅Enabled|✅Enabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|✅Enabled|Import, view and edit, **GitHub** items from Loop|🚫Disabled|✅Enabled for all data integrations EXCEPT<br/>🚫Disabled for GitHub|
+|Import, view, and edit, items from apps integrated with Loop|🚫Disabled|Import, view and edit, **GitHub** items from Loop|Not Configured|🚫Disabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|🚫Disabled|Import, view and edit, **GitHub** items from Loop|✅Enabled|🚫Disabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|🚫Disabled|Import, view and edit, **GitHub** items from Loop|🚫Disabled|🚫Disabled for all data integrations|
 
 
 ## Settings management in Cloud Policy
 
 The Loop experiences check the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) settings:
 
-- **Allow external data integrations in Loop so users can import, view, and edit items using Loop**
+- **Import, view, and edit, items from apps integrated with Loop**
     - This is the primary policy to control all specific data integration policies. To configure a specific data integration differently than the primary setting, use one of the specific policies.
-- **Allow GitHub external data integration in Loop so users can import, view, and edit items using Loop**
-- **Allow Jira external data integration in Loop so users can import, view, and edit items using Loop**
-- **Allow Trello external data integration in Loop so users can import, view, and edit items using Loop**
-- **Allow Azure DevOps external data integration in Loop so users can import, view, and edit items using Loop**
+- **Import, view, and edit, GitHub items from Loop**
+- **Import, view, and edit, Jira issues from Loop**
+- **Import, view, and edit, Trello boards from Loop**
+- **Import, view, and edit, Azure DevOps items from Loop**
 
 
 1. Sign in to https://config.office.com/ with your Microsoft 365 admin credentials.
@@ -73,25 +73,25 @@ The Loop experiences check the following [Cloud Policy](/deployoffice/admincente
 1. Create a new policy configuration or edit an existing one.
 1. From the **Choose the scope** dropdown list, choose either **All users**, or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](/microsoft-365/loop/loop-components-configuration#microsoft-365-groups-for-cloud-policy).
 1. In **Configure Settings**, choose one of the following settings:
-    - For **Allow external data integrations in Loop so users can import, view and edit items using Loop**:
+    - For **Import, view, and edit, items from apps integrated with Loop**:
         - first, recall:
             - This is the primary policy to control all specific data integration policies. To configure a specific data integration differently than the primary setting, use one of the specific policies below.
         - **Enabled**: All external data integrations in Loop are available to the users.
         - **Disabled**: All external data integrations in Loop aren't available to the users.
         - **Not configured**: All external data integrations in Loop are available to the users.
-    - For **Allow GitHub external data integration in Loop so users can import, view and edit items using Loop**:
+    - For **Import, view, and edit, GitHub items from Loop**:
         - **Enabled**: GitHub data integrations in Loop are available to the users.
         - **Disabled**: GitHub data integrations in Loop aren't available to the users.
         - **Not configured**: GitHub data integrations in Loop are available to the users.
-    - For **Allow Jira external data integration in Loop so users can import, view and edit items using Loop**:
+    - For **Import, view, and edit, Jira issues from Loop**:
         - **Enabled**: Jira data integrations in Loop are available to the users.
         - **Disabled**: Jira data integrations in Loop aren't available to the users.
         - **Not configured**: Jira data integrations in Loop are available to the users.
-    - For **Allow Trello external data integration in Loop so users can import, view and edit items using Loop**:
+    - For **Import, view, and edit, Trello boards from Loop**:
         - **Enabled**: Trello data integrations in Loop are available to the users.
         - **Disabled**: Trello data integrations in Loop aren't available to the users.
         - **Not configured**: Trello data integrations in Loop are available to the users.
-    - For **Allow Azure DevOps external data integration in Loop so users can import, view and edit items using Loop**: 
+    - For **Import, view, and edit, Azure DevOps items from Loop**: 
         - **Enabled**: Azure DevOps data integrations in Loop are available to the users.
         - **Disabled**: Azure DevOps data integrations in Loop aren't available to the users.
         - **Not configured**: Azure DevOps data integrations in Loop are available to the users.
