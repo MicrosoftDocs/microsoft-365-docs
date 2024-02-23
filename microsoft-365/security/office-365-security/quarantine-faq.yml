@@ -209,7 +209,7 @@ sections:
           > Guest admins from other organizations can't manage quarantined messages. The admin needs to be in the same organization as the recipients.
 
       - question: |
-          I created a custom quarantine for a specific language, but users aren't seeing it. What's going on?
+          I created a custom quarantine notification for a specific language, but users aren't seeing it. What's going on?
         answer: |
           A custom quarantine notification for a different language is shown to users only when their account/mailbox language matches the language in the custom quarantine notification.
 
