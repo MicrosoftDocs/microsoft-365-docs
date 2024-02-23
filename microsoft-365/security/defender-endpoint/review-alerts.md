@@ -2,7 +2,6 @@
 title: Review alerts in Microsoft Defender for Endpoint
 description: Review alert information, including a visualized alert story and details for each step of the chain.
 ms.service: defender-endpoint
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: diannegali
