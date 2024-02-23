@@ -54,7 +54,7 @@ Attack surface reduction rules are categorized as one of two types:
 For the easiest method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
 
 | ASR rule name: | Standard protection rule? | Other rule? |
-|:---|:---|:---|
+|---|---|---|
 | Block abuse of exploited vulnerable signed drivers| Yes | |
 | Block Adobe Reader from creating child processes | | Yes |
 | Block all Office applications from creating child processes | | Yes |
@@ -82,7 +82,7 @@ Microsoft Defender Antivirus exclusions apply to some Microsoft Defender for End
 The following ASR rules DO NOT honor Microsoft Defender Antivirus exclusions:
 
 | ASR rules name: |
-|:---|
+|---|
 | [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) |
 | [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |
 | [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |
@@ -534,7 +534,7 @@ Advanced hunting action type:
 
 Dependencies: Microsoft Defender Antivirus
 
-### PREVIEW Block rebooting machine in Safe Mode
+### Block rebooting machine in Safe Mode (preview)
  
 This rule prevents execution of commands for restarting machine in Safe mode.
  
@@ -571,7 +571,7 @@ Advanced hunting action type:
 
 Dependencies: Microsoft Defender Antivirus
 
-### PREVIEW Block use of copied or impersonated system tools
+### Block use of copied or impersonated system tools (preview)
  
 This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
  
