@@ -36,9 +36,9 @@ Microsoft enabled Jira, Trello, and GitHub integration experiences within [Micro
 
 ## User experience expectations when admin settings are configured
 
-When data integrations are Enabled, data from external sources synchronize into the Loop data file. Integration options appear in the Discover '/' menu. Integrations synchronize in all everywhere, when experienced as a Loop component in apps that support Loop such as Teams, Outlook, Loop app, etc.
+When data integrations are Enabled, data from external sources synchronize into the Loop data file. Integration options appear in the Discover '/' menu. Integrations synchronize data when the user views or edits the Loop component in apps that support Loop such as Teams, Outlook, Loop app, etc.
 
-When data integrations are Disabled, data from external sources you have disabled don't synchronize. No connections to these external sources be established. All existing data stops syrchronizing and becomes read-only everywhere. The integration options still appear in the Discover '/' menu but no connections to external data can be made by users.
+When data integrations are Disabled, data from external sources you have disabled don't synchronize. No connections to these external sources can be established. All existing data stops syrchronizing and becomes read-only everywhere. The integration options still appear in the Discover '/' menu but no connections to external data can be made by users.
 
 ## Example policy configurations and user experience result
 
