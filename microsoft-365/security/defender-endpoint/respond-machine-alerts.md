@@ -6,7 +6,7 @@ ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
 ms.date: 12/15/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security

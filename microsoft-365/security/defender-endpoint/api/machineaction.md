@@ -1,15 +1,11 @@
 ---
 title: machineAction resource type
 description: Learn about the methods and properties of the MachineAction resource type in Microsoft Defender for Endpoint.
-keywords: apis, supported apis, get, machineaction, recent
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -64,8 +60,8 @@ ms.date: 12/18/2020
 |Property|Type|Description|
 |---|---|---|
 |ID|Guid|Identity of the [Machine Action](machineaction.md) entity.|
-|type|Enum|Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "LiveResponse", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution", and "UnrestrictCodeExecution".|
-|scope|string|Scope of the action. "Full" or "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.|
+|type|Enum|Type of the action. Possible values are: `RunAntiVirusScan`, `Offboard`, `LiveResponse`, `CollectInvestigationPackage`, `Isolate`, `Unisolate`, `StopAndQuarantineFile`, `RestrictCodeExecution`, and `UnrestrictCodeExecution`.|
+|scope|string|Scope of the action. `Full` or `Selective` for Isolation, `Quick` or `Full` for antivirus scan.|
 |requestor|String|Identity of the person that executed the action.|
 |externalID|String|Id the customer can submit in the request for custom correlation.|
 |requestSource|string|The name of the user/application that submitted the action.|
@@ -73,14 +69,14 @@ ms.date: 12/18/2020
 |cancellationRequestor|String|Identity of the person that canceled the action.|
 |requestorComment|String|Comment that was written when issuing the action.|
 |cancellationComment|String|Comment that was written when canceling the action.|
-|status|Enum|Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut", and "Cancelled".|
+|status|Enum|Current status of the command. Possible values are: `Pending`, `InProgress`, `Succeeded`, `Failed`, `TimeOut`, and `Cancelled`.|
 |machineId|String|ID of the [machine](machine.md) on which the action was executed.|
 |computerDnsName|String|Name of the [machine](machine.md) on which the action was executed.|
 |creationDateTimeUtc|DateTimeOffset|The date and time when the action was created.|
 |cancellationDateTimeUtc|DateTimeOffset|The date and time when the action was canceled.|
 |lastUpdateDateTimeUtc|DateTimeOffset|The last date and time when the action status was updated.|
 |title|String|Machine action title.|
-|relatedFileInfo|Class|Contains two Properties. string `fileIdentifier`, Enum `fileIdentifierType` with the possible values: "Sha1", "Sha256", and "Md5".|
+|relatedFileInfo|Class|Contains two Properties. string `fileIdentifier`, Enum `fileIdentifierType` with the possible values: `Sha1`, `Sha256`, and `Md5`.|
 
 ## Json representation
 
