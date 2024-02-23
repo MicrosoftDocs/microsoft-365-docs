@@ -38,21 +38,21 @@ Microsoft enabled Jira, Trello, and GitHub integration experiences within [Micro
 
 When data integrations are Enabled, data from external sources synchronize into the Loop data file. Integration options appear in the Discover '/' menu. Integrations synchronize data when the user views or edits the Loop component in apps that support Loop such as Teams, Outlook, Loop app, etc.
 
-When data integrations are Disabled, data from external sources you have disabled don't synchronize. No connections to these external sources can be established. All existing data stops syrchronizing and becomes read-only everywhere. The integration options still appear in the Discover '/' menu but no connections to external data can be made by users.
+When data integrations are Disabled, data from these disabled external sources don't synchronize. No connections to these external sources can be established. All existing data stops synchronizing, and becomes read-only everywhere. The integration options still appear in the Discover '/' menu but users cannot activate or create new external data connections.
 
 ## Example policy configurations and user experience result
 
 |Primary Policy|Primary State|Specific Policy|Specific State|End User Outcome|
 |-----|-----|-----|-----|-----|
-|Import, view, and edit, items from apps integrated with Loop|Not Configured|Import, view and edit, **GitHub** items from Loop|Not Configured|✅Enabled for all data integrations|
-|Import, view, and edit, items from apps integrated with Loop|Not Configured|Import, view and edit, **GitHub** items from Loop|✅Enabled|✅Enabled for all data integrations|
-|Import, view, and edit, items from apps integrated with Loop|Not Configured|Import, view and edit, **GitHub** items from Loop|🚫Disabled|✅Enabled for all data integrations EXCEPT<br/>🚫Disabled for GitHub|
-|Import, view, and edit, items from apps integrated with Loop|✅Enabled|Import, view and edit, **GitHub** items from Loop|Not Configured|✅Enabled for all data integrations|
-|Import, view, and edit, items from apps integrated with Loop|✅Enabled|Import, view and edit, **GitHub** items from Loop|✅Enabled|✅Enabled for all data integrations|
-|Import, view, and edit, items from apps integrated with Loop|✅Enabled|Import, view and edit, **GitHub** items from Loop|🚫Disabled|✅Enabled for all data integrations EXCEPT<br/>🚫Disabled for GitHub|
-|Import, view, and edit, items from apps integrated with Loop|🚫Disabled|Import, view and edit, **GitHub** items from Loop|Not Configured|🚫Disabled for all data integrations|
-|Import, view, and edit, items from apps integrated with Loop|🚫Disabled|Import, view and edit, **GitHub** items from Loop|✅Enabled|🚫Disabled for all data integrations|
-|Import, view, and edit, items from apps integrated with Loop|🚫Disabled|Import, view and edit, **GitHub** items from Loop|🚫Disabled|🚫Disabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|Not Configured|Import, view, and edit, **GitHub** items from Loop|Not Configured|✅Enabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|Not Configured|Import, view, and edit, **GitHub** items from Loop|✅Enabled|✅Enabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|Not Configured|Import, view, and edit, **GitHub** items from Loop|🚫Disabled|✅Enabled for all data integrations EXCEPT<br/>🚫Disabled for GitHub|
+|Import, view, and edit, items from apps integrated with Loop|✅Enabled|Import, view, and edit, **GitHub** items from Loop|Not Configured|✅Enabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|✅Enabled|Import, view, and edit, **GitHub** items from Loop|✅Enabled|✅Enabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|✅Enabled|Import, view, and edit, **GitHub** items from Loop|🚫Disabled|✅Enabled for all data integrations EXCEPT<br/>🚫Disabled for GitHub|
+|Import, view, and edit, items from apps integrated with Loop|🚫Disabled|Import, view, and edit, **GitHub** items from Loop|Not Configured|🚫Disabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|🚫Disabled|Import, view, and edit, **GitHub** items from Loop|✅Enabled|🚫Disabled for all data integrations|
+|Import, view, and edit, items from apps integrated with Loop|🚫Disabled|Import, view, and edit, **GitHub** items from Loop|🚫Disabled|🚫Disabled for all data integrations|
 
 
 ## Settings management in Cloud Policy
@@ -75,7 +75,7 @@ The Loop experiences check the following [Cloud Policy](/deployoffice/admincente
 1. In **Configure Settings**, choose one of the following settings:
     - For **Import, view, and edit, items from apps integrated with Loop**:
         - first, recall:
-            - This is the primary policy to control all specific data integration policies. To configure a specific data integration differently than the primary setting, use one of the specific policies below.
+            - This is the primary policy to control all specific data integration policies. To configure a specific data integration differently than the primary setting, use one of the specific policies.
         - **Enabled**: All external data integrations in Loop are available to the users.
         - **Disabled**: All external data integrations in Loop aren't available to the users.
         - **Not configured**: All external data integrations in Loop are available to the users.
@@ -96,11 +96,11 @@ The Loop experiences check the following [Cloud Policy](/deployoffice/admincente
         - **Disabled**: Azure DevOps data integrations in Loop aren't available to the users.
         - **Not configured**: Azure DevOps data integrations in Loop are available to the users.
 1. Save the policy configuration.
-1. Reassign priority for any security group, if required. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
+1. Reassign priority for any security group, if necessary. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
-In case you create a new policy configuration or change the configuration for an existing policy, there is a delay in the change being reflected as described below:
-- If there were existing policy configurations prior to the change, then it will take 90 mins for the change to be reflected.
-- If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
+In case you create a new policy configuration or change the configuration for an existing policy, there's a delay in the change being reflected:
+- If there were existing policy configurations before the change, then it will take 90 mins for the change to be reflected.
+- If there were no policy configurations before to the change, then it will take 24 hours for the change to be reflected.
 
 
 ## Related topics
