@@ -38,7 +38,6 @@ For a complete list of Microsoft Defender XDR activities that are audited, see [
 
 ## Requirements
 
-- To use the auditing functionality, your organization must have Microsoft 365 E3/E5 or Office E3/E5 subscriptions.
 - To access the audit log, you need to have the **View-Only Audit Logs** or **Audit Logs** role in Exchange Online. By default, those roles are assigned to the Compliance Management and Organization Management role groups.
 
 >[!Note]

@@ -546,7 +546,7 @@
               items: 
                - name: ServiceNow integration overview
                  href: ./tickets.md
-      - name: Microsoft Defender XDR Auditing
+      - name: Use auditing in Microsoft Defender XDR
         href: microsoft-xdr-auditing.md
       - name: Microsoft Defender XDR APIs
         items: 
