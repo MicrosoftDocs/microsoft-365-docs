@@ -2,7 +2,6 @@
 title: Microsoft Defender for Endpoint on other platforms
 description: Learn about Microsoft Defender for Endpoint capabilities on other platforms
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
