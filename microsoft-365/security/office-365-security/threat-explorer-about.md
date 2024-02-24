@@ -41,15 +41,6 @@ Threat Explorer or Real-time detections helps your security operations team inve
 
 ## The Threat Hunting Experience
 
-### Introduction of Alert ID for Defender for Office 365 alerts within Explorer/Real-time detections
-
-Today, if you navigate from an alert to Threat Explorer, it opens a filtered view within the Explorer, with the view filtered by Alert policy ID (policy ID being a unique identifier for an Alert policy).
-We are making this integration more relevant by introducing the alert ID (see an example of alert ID below) in Threat Explorer and Real-time detections so that you see messages which are relevant to the specific alert, as well as a count of emails. You will also be able to see if a message was part of an alert, as well as navigate from that message to the specific alert.
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/AlertID-Filter.png" alt-text="Screenshot of the Filtering for Alert ID." lightbox="../../media/AlertID-Filter.png":::
-
-
 ### Tags in Threat Explorer
 
 > [!NOTE]

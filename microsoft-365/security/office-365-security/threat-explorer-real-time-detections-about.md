@@ -321,7 +321,7 @@ The **Email** view shows a details table. You can sort the entries by clicking o
 > - Remove columns from the view.
 > - Zoom out in your web browser.
 
-When you select one or more entries from the list by selecting the check box next to the first colum, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** is available.
+When you select one or more entries from the list by selecting the check box next to the first colum, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
 
 In the **Subject** value for the entry, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open in new window** action is available. This action opens the message in the Email entity page.
 
@@ -339,7 +339,7 @@ When you select an entry by clicking on the **Subject** value, a details flyout 
 - The following actions are available:
   - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
   - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **View header**
-  - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**
+  - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
   - :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options**:
     - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**
     - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**
@@ -793,7 +793,7 @@ The following table shows the columns that are available in Threat Explorer and 
 > - Remove columns from the view.
 > - Zoom out in your web browser.
 
-In Threat Explorer, when you select one or more entries from the list by selecting the check box next to the first colum, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** is available.
+In Threat Explorer, when you select one or more entries from the list by selecting the check box next to the first colum, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
 
 When you click on the **Subject** or **Recipient** values in an entry, details flyouts open. These flyouts are described in the following subsections.
 
@@ -1075,7 +1075,7 @@ The following table shows the columns that are available in Threat Explorer and 
 > - Remove columns from the view.
 > - Zoom out in your web browser.
 
-In Threat Explorer, when you select one or more entries from the list by selecting the check box next to the first colum, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** is available.
+In Threat Explorer, when you select one or more entries from the list by selecting the check box next to the first colum, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
 
 When you click on the **Subject** or **Recipient** values in an entry, details flyouts open. These flyouts are described in the following subsections.
 
