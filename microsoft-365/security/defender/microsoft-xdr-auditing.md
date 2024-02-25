@@ -74,7 +74,6 @@ For step-by-step instructions, see [Search the audit log in the compliance porta
 
 Audit log record retention is based on Microsoft Purview retention policies. For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies). The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 or Office 365 subscription, and specifically the type of license that's assigned to users. To learn more, see the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
-
 ## Microsoft Defender XDR activities
 
 For a list of all events that are logged for user and admin activities in Microsoft Defender XDR in the Microsoft 365 audit log, see:
