@@ -72,9 +72,7 @@ Microsoft Defender XDR uses the [Microsoft Purview auditing solution](/purview/a
 
 For step-by-step instructions, see [Search the audit log in the compliance portal](/purview/audit-new-search).
 
-Audit log record retention is based on Microsoft Purview retention policies. For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies). 
-
-The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 or Office 365 subscription, and specifically the type of license that's assigned to users. To learn more, see the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+Audit log record retention is based on Microsoft Purview retention policies. For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies).
 
 ## Microsoft Defender XDR activities
 
