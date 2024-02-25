@@ -43,12 +43,6 @@ For a complete list of Microsoft Defender XDR activities that are audited, see [
 >[!Note]
 > Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online.
 
-- Activities retention:
-   - For users assigned an Office E5 or Microsoft 365 E5 license the audit records are retained for one year by default.
-   - For users assigned any other (non-E5) license, audit records are retained for 90 days.
-
-  For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies).
-
 ## Turn on auditing in Microsoft Defender XDR
 
 Microsoft Defender XDR uses the [Microsoft Purview auditing solution](/purview/audit-solutions-overview), before you can look at the audit data in the Microsoft Defender XDR portal:
@@ -78,7 +72,8 @@ Microsoft Defender XDR uses the [Microsoft Purview auditing solution](/purview/a
 
 For step-by-step instructions, see [Search the audit log in the compliance portal](/purview/audit-new-search).
 
-The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 or Office 365 subscription, and specifically the type of license that's assigned to users. To learn more, see the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+Audit log record retention is based on Microsoft Purview retention policies. For more information, see [Manage audit log retention policies](/purview/audit-log-retention-policies). The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 or Office 365 subscription, and specifically the type of license that's assigned to users. To learn more, see the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+
 
 ## Microsoft Defender XDR activities
 
