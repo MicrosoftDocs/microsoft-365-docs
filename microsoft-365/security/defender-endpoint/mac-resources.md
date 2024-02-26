@@ -98,6 +98,12 @@ Supports table and JSON format output types. For each command, there's a default
 
 - `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
 
+### Using JAMF Pro
+
+To uninstall Microsoft Defender for Endpoint on macOS using JAMF Pro upload the **offboarding profile**. The **offboarding profile** should be uploaded without any modifications, and with Preference Domain name set to **com.microsoft.wdav.atp.offboarding** (see an example below).
+
+![JAMF_Pro_offboarding](media/mac-resources/jamf-pro-offboarding.png)
+
 ## Configuring from the command line
 
 Important tasks, such as controlling product settings and triggering on-demand scans, can be done from the command line:
