@@ -93,7 +93,7 @@
 
     - name: Retirement
       items:
-        - name: Topics Retirement
+        - name: Topics retirement
           href: changes-coming-to-topics.md
         - name: FAQ
           href: topics-changes-faq.md
