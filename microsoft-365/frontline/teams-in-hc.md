@@ -112,7 +112,7 @@ Teams enables physicians, clinicians, nurses, and other staff to collaborate eff
 
 [Messaging policies](/microsoftteams/messaging-policies-in-teams) in Teams are used to control which chat and channel messaging features are available to users. With the **Read receipts** and **Send urgent messages using priority notifications** messaging policy settings, you can enable the following features:
 
-- A message sender can send messages using priority notifications, so the recipient is repeatedly notified until they read the message.
+- A message sender can send urgent messages using priority notifications, so the recipient is repeatedly notified until they read the message.
 - A message sender can request a read receipt, so they're notified when a message they sent was read by the message recipient.
 
 Together, these features allow quicker attention to urgent messages and confidence that the message was received and read.
