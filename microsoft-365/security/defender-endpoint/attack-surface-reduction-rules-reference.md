@@ -213,9 +213,9 @@ For rules with the "Rule State" specified:
 | Block Office communication application from creating child processes | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
 | Block persistence through WMI event subscription <br>* File and folder exclusions not supported. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
 | Block process creations originating from PSExec and WMI commands | d1e49aac-8f56-4280-b9ba-993a6d77406c |
-| PREVIEW Block rebooting machine in Safe Mode | 33ddedf1-c6e0-47cb-833e-de6133960387 |
+| Block rebooting machine in Safe Mode (preview) | 33ddedf1-c6e0-47cb-833e-de6133960387 |
 | Block untrusted and unsigned processes that run from USB | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
-| PREVIEW Block use of copied or impersonated system tools | c0033c00-d16d-4114-a5a0-dc9b3a7d2ceb |
+| Block use of copied or impersonated system tools (preview) | c0033c00-d16d-4114-a5a0-dc9b3a7d2ceb |
 | Block Webshell creation for Servers | a8f5898e-1dc8-49a9-9878-85004b8a61e6 |
 | Block Win32 API calls from Office macros | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
 | Use advanced protection against ransomware | c1db55ab-c21a-4637-bb3f-a12568109d35 |
