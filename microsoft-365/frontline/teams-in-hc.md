@@ -121,6 +121,8 @@ To learn more, see [Messaging policies for healthcare organizations](messaging-p
 
 Also related to messaging is the ability to have other tenants federated by healthcare organizations, allowing richer inter-tenant communication. To learn more, see [Manage external meetings and chat with people and organizations using Microsoft identities](/microsoftteams/manage-external-access).
 
+You can also use the external access feature in Teams to allow users in your healthcare organization to communicate with people outside your organization. To learn more, see [Manage external meetings and chat with people and organizations using Microsoft identities](/microsoftteams/manage-external-access).
+
 ### Coordinate over email with Exchange Online
 
 Email is a core communication tool for most workplaces. [Set up email with Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) to help your frontline managers and workers coordinate with care team members in other locations or schedule meetings to discuss care plans. Users must have an F3 license to have an email mailbox.
