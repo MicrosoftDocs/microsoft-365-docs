@@ -137,19 +137,19 @@
       - name: Protect your identities
         items:
           - name: Sensor settings and health
-            href: ../defender-identity/sensor-health.md
+            href: /defender-for-identity/sensor-settings.md
           - name: Directory Services account
-            href: ../defender-identity/directory-service-accounts.md
+            href: /defender-for-identity/deploy/directory-service-accounts.md
           - name: VPN integration
-            href: ../defender-identity/vpn-integration.md
+            href: /defender-for-identity/vpn-integration.md
           - name: Set entity tags
-            href: ../defender-identity/entity-tags.md
-          - name: Manage security alerts
-            href: ../defender-identity/manage-security-alerts.md
+            href: /defender-for-identity/entity-tags.md
+          - name: Investigate Defender for Identity alerts
+            href: /defender-for-identity/manage-security-alerts.md
           - name: Configure detection exclusions
-            href: ../defender-identity/exclusions.md
+            href: /defender-for-identity/exclusions.md
           - name: Email and syslog notifications
-            href: ../defender-identity/notifications.md
+            href: /defender-for-identity/notifications.md
       - name: Protect your Office 365 workloads
         href: ../office-365-security/index.yml
       - name: Create Custom Defender XDR reports
