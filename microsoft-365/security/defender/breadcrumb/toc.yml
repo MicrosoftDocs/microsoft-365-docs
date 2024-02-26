@@ -10,3 +10,6 @@
     - name: Microsoft Defender XDR
       tocHref: /azure/sentinel/
       topicHref: /microsoft-365/security/defender/index 
+    - name: Microsoft Defender XDR
+      tocHref: /defender-for-identity/
+      topicHref: /microsoft-365/security/defender/index 
