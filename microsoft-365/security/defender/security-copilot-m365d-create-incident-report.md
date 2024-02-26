@@ -1,7 +1,7 @@
 ---
-title: Create incident reports with Microsoft Copilot for Security in Microsoft Defender XDR
-description: Write incident reports with Microsoft Copilot for Security in Microsoft Defender XDR.
-keywords: security copilot, Microsoft Defender XDR, embedded experience, incident report, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident report creation, create report, create incident report, write incident report, write report, Microsoft Copilot for Security
+title: Create incident reports with Microsoft Copilot for Security in Microsoft Defender
+description: Write incident reports with Microsoft Copilot for Security in Microsoft Defender.
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident report, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident report creation, create report, create incident report, write incident report, write report, Microsoft Copilot for Security, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,27 +20,28 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/01/2024
+ms.date: 04/01/2024
 ---
 
-# Create an incident report with Microsoft Copilot for Security in Microsoft Defender XDR
+# Create an incident report with Microsoft Copilot for Security in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
+- Microsoft Defender
 - Microsoft Defender XDR
 
-[Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in Microsoft Defender XDR assists security operations teams with writing incident reports efficiently. Utilizing Copilot for Security's AI-powered data processing, security teams can immediately create incident reports with a click of a button in Microsoft Defender XDR.
+[Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in Microsoft Defender assists security operations teams with writing incident reports efficiently. Utilizing Copilot for Security's AI-powered data processing, security teams can immediately create incident reports with a click of a button in Microsoft Defender.
 
-A comprehensive and clear incident report is an essential reference for security teams and security operations management. However, writing a comprehensive report with the important details present can be a time-consuming task for security operations teams.Collecting, organizing, and summarizing incident information from multiple sources requires focus and detailed analysis to create an information-rich report. With Copilot for Security in Microsoft Defender XDR, security teams can now instantly create an extensive incident report within the portal.
+A comprehensive and clear incident report is an essential reference for security teams and security operations management. However, writing a comprehensive report with the important details present can be a time-consuming task for security operations teams.Collecting, organizing, and summarizing incident information from multiple sources requires focus and detailed analysis to create an information-rich report. With Copilot for Defender, security teams can now instantly create an extensive incident report within the portal.
 
 While an [incident summary](security-copilot-m365d-incident-summary.md) provides an overview of an incident and how it happened, an incident report consolidates incident information from various data sources available in Microsoft Sentinel and Microsoft Defender XDR. The Copilot-generated incident report also includes all analyst-driven steps and automated actions, the analysts involved in incident response, and the comments from the analysts. Whether security teams are using Microsoft Defender XDR, Microsoft Sentinel, or both, all relevant incident data are added into the generated incident report.
 
-This guide lists the data in incident reports and contains steps on how to access the incident report creation capability within Microsoft Defender XDR. It also includes information on how to provide feedback about the generated report.
+This guide lists the data in incident reports and contains steps on how to access the incident report creation capability within Microsoft Defender. It also includes information on how to provide feedback about the generated report.
 
 > [!NOTE]
-> The incident report generation capability is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
+> The incident report generation capability is also available in the Copilot for Security standalone experience through the Microsoft Defender plugin. Know more about [preinstalled plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
 
 ## Create an incident report
 
@@ -65,13 +66,8 @@ To create an incident report, perform the following steps:
 3. The incident report card appears on the Copilot pane. The generated report depends on the incident information available from Microsoft Defender XDR and Microsoft Sentinel. Refer to the [recommendations](security-copilot-m365d-create-incident-report.md#recommendations-for-incident-report-creation) to ensure a comprehensive incident report.
 :::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-new-sec-copilot-m365d-create-report.png" alt-text="Screenshot of the incident report card in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig2-expand-sec-copilot-m365d-create-report.png":::
 4. Select the three dots located on the right side of the incident report card. To copy the report, select **copy to clipboard** and paste the report to your preferred system, or **Post to comments and history** to add the report to the comments and history of the incident.
-5. Select **Regenerate** to restart report creation. You can also opt to **Open in Copilot** to view the results and continue accessing other plugins available in the Copilot for Security standalone portal.
-
-## Managing feedback
-
-You can validate and submit feedback about a generated incident report. Validating the generated report enables Copilot to learn further and deliver more accurate answers in the future.
-
-[Follow these steps when providing feedback about the results](security-copilot-in-microsoft-365-defender.md#provide-feedback-to-copilot).
+5. Select **Regenerate** to restart report creation. You can also **Open in Copilot** to view the results and continue accessing other plugins available in the Copilot for Security standalone portal.
+6. Review the generated incident report. You can provide feedback on the report by selecting the feedback icon on the bottom of the results.
 
 ## Recommendations for incident report creation
 

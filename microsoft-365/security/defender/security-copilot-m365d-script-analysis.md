@@ -1,7 +1,7 @@
 ---
-title: Run script and code analysis with Microsoft Copilot for in Microsoft Defender XDR
+title: Script analysis with Microsoft Copilot for in Microsoft Defender
 description: Use Security Copilot script analysis embedded in Microsoft Defender XDR to investigate scripts and codes.
-keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, powershell, powershell analysis, bash, batch, bash analysis, batch analysis, code analysis, code analyzer, security copilot script analysis, copilot in security script analysis, security copilot script analysis in Microsoft Defender XDR
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, powershell, powershell analysis, bash, batch, bash analysis, batch analysis, code analysis, code analyzer, security copilot script analysis, copilot in security script analysis, security copilot script analysis in Microsoft Defender XDR, Microsoft Copilot for Security, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,18 +20,19 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/01/2024
+ms.date: 04/01/2024
 ---
 
-# Run script and code analysis with Microsoft Copilot for Security in Microsoft Defender XDR
+# Script analysis with Microsoft Copilot for Security in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
+- Microsoft Defender
 - Microsoft Defender XDR
 
-Through AI-powered investigation capabilities from [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) embedded in Microsoft Defender XDR, security teams can speed up their analysis of malicious or suspicious scripts and codes within PowerShell, batch, and bash.
+Through AI-powered investigation capabilities from [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) embedded in Microsoft Defender, security teams can speed up their analysis of malicious or suspicious scripts and codes within PowerShell, batch, and bash.
 
 Most complex and sophisticated attacks like [ransomware](/security/ransomware) evade detection through numerous ways, including the use of scripts and PowerShell. Moreover, these scripts are often obfuscated, which adds to the complexity of detection and analysis. Security operations teams need to quickly analyze scripts and codes to understand capabilities and apply appropriate mitigation, immediately stopping attacks from progressing further within a network.
 
@@ -43,7 +44,7 @@ The script analysis capability provides security teams added capacity to inspect
 This guide describes what the script analysis capability is and how it works, including how you can provide feedback on the results generated.
 
 > [!NOTE]
-> The script analysis capability is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
+> The script analysis capability is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
 
 ## Analyze a script or code
 
@@ -53,7 +54,7 @@ To begin analysis, perform the following steps:
 
 1. Open an incident page. Open the alert timeline in the attack story tab. Within the timeline, select an event with a script or code that you want to analyze. Click **Analyze** to start the script/code analysis.
 
-   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig1-script-analysis.png" alt-text="Screenshot highlighting the script analysis button on the alert timeline view in the incident page of Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/script-analyzer/fig1-script-analysis.png":::
+   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig1-script-analysis.png" alt-text="Screenshot highlighting the script analysis button on the alert timeline view in the incident page of Microsoft Defender." lightbox="../../media/copilot-in-defender/script-analyzer/fig1-script-analysis.png":::
 
    Alternately, you can select an event to inspect in the device timeline view. In the process tree shown on the file details pane, select **Analyze** to run the script analysis capability.
 
@@ -67,12 +68,12 @@ To begin analysis, perform the following steps:
 
    :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig4-script-analysis.png" alt-text="Screenshot highlighting the available options in the Copilot script analysis card." lightbox="../../media/copilot-in-defender/script-analyzer/fig4-script-analysis.png":::
 
-4. Review the analysis results. You can provide feedback on the results by selecting the feedback dropdown found at the end of the script analysis card.
+4. Review the results. You can provide feedback on the results by selecting the feedback dropdown found at the end of the script analysis card.
 
    :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig5-script-analysis.png" alt-text="Screenshot highlighting the feedback button and options in the Copilot script analysis card." lightbox="../../media/copilot-in-defender/script-analyzer/fig5-script-analysis.png":::
 
 > [!TIP]
-> You can navigate to an IP, file, or URL entity page in the analysis results by clicking on the entity. This action opens the entity pane.
+> You can navigate to an IP, file, or URL entity page in the analysis results by clicking on the entity.
 
 ## See also
 

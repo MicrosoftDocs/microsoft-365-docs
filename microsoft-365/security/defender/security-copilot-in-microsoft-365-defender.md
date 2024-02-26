@@ -1,7 +1,7 @@
 ---
-title: Microsoft Copilot for Security in Microsoft Defender XDR
-description: Learn about Microsoft Copilot for Security capabilities embedded in Microsoft Defender XDR.
-keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response automated, automatic incident response, summarize incidents, summarize incident report, plugins, Microsoft plugins, preinstalled plugins, Microsoft Copilot for Security, Copilot for Security, file analysis, file analyzer, summarize device, device summary, summarize device information, device report, file information report
+title: Microsoft Copilot for Security in Microsoft Defender
+description: Learn about Microsoft Copilot for Security capabilities embedded in Microsoft Defender.
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response automated, automatic incident response, summarize incidents, summarize incident report, plugins, Microsoft plugins, preinstalled plugins, Microsoft Copilot for Security, Copilot for Security, file analysis, file analyzer, summarize device, device summary, summarize device information, device report, file information report, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,30 +20,31 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/01/2024
+ms.date: 04/01/2024
 ---
 
-# Microsoft Copilot for Security in Microsoft Defender XDR
+# Microsoft Copilot for Security in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
+- Microsoft Defender
 - Microsoft Defender XDR
 
-[Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) is a platform that brings together the power of AI and human expertise to help security teams respond to attacks faster and more effectively. Copilot for Security is embedded in Microsoft Defender XDR to enable security teams to efficiently summarize incidents, analyze scripts and codes, analyze files, summarize device information, use guided responses to resolve incidents, generate KQL queries, create incident reports.
+[Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) is a platform that brings together the power of AI and human expertise to help security teams respond to attacks faster and more effectively. Copilot for Security is embedded in Microsoft Defender to enable security teams to efficiently summarize incidents, analyze scripts and codes, analyze files, summarize device information, use guided responses to resolve incidents, generate KQL queries, create incident reports.
 
-This article provides an overview for users of the Copilot for Security embedded experience in Microsoft Defender XDR, including steps to access, key capabilities, and links to the details of these capabilities.
+This article provides an overview for users of the Copilot for Security embedded experience in Microsoft Defender, including steps to access, key capabilities, and links to the details of these capabilities.
 
 <a name='access-security-copilot-in-microsoft-365-defender'></a>
 
-## Access Copilot for Security in Microsoft Defender XDR
+## Access Copilot for Security in Microsoft Defender
 
-To ensure that you have access to Copilot for Security, see the [Copilot for Security purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Copilot for Security, the key capabilities discussed below become accessible in the Microsoft Defender XDR portal.
+To ensure that you have access to Copilot for Security, see the [Copilot for Security purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Copilot for Security, the key capabilities discussed below become accessible in Microsoft Defender.
 
 ## Key features
 
-Copilot for Security in Microsoft Defender XDR enables security teams to tackle attack investigations in a timely manner with ease and precision. Bringing AI to Microsoft Defender XDR allows teams to understand attacks immediately, promptly assess and apply appropriate mitigation to stop and contain attacks, quickly analyze complex files and scripts, and hunt for threats with ease.
+Copilot in Defender enables security teams to tackle attack investigations in a timely manner with ease and precision. Bringing AI to Microsoft Defender allows teams to understand attacks immediately, promptly assess and apply appropriate mitigation to stop and contain attacks, quickly analyze complex files and scripts, and hunt for threats with ease.
 
 ### Summarize incidents quickly
 
@@ -77,7 +78,7 @@ Security operations teams usually write reports to record important information,
 
 ## Provide feedback to Copilot
 
-Copilot for Security and Microsoft Defender XDR uses AI and machine learning to process data and generate results for each of the key features. However, AI might misinterpret some data, which sometimes cause a mismatch in results. Providing your feedback about the generated responses enable both Copilot and Microsoft Defender XDR to continuously improve delivery of more accurate responses in the future.
+Copilot in Defender uses AI and machine learning to process data and generate results for each of the key features. However, AI might misinterpret some data, which sometimes cause a mismatch in results. Providing your feedback about the generated responses enable both Copilot in Defender to continuously improve delivery of more accurate responses in the future.
 
 All key features have an option for providing feedback. To provide feedback, perform the following steps:
 
@@ -90,15 +91,15 @@ All key features have an option for providing feedback. To provide feedback, per
 
 ## Microsoft Defender XDR plugin in Copilot for Security
 
-Microsoft Defender XDR is one of the [Microsoft plugins](/security-copilot/manage-plugins#microsoft-plugins) that enable the Copilot for Security platform to generate accurate and relevant information. Through the Microsoft Defender XDR plugin, the Copilot for Security portal can provide more context to incidents and generate more accurate results. The key features mentioned in this article are capabilities that are also available in the Copilot portal.
+Microsoft Defender XDR is one of the [Microsoft plugins](/security-copilot/manage-plugins#microsoft-plugins) that enable the Copilot for Security platform to generate accurate and relevant information. Through the Microsoft Defender XDR plugin, the Copilot for Security portal can provide more context to incidents and generate more accurate results. The key features mentioned in this article are capabilities that are also available in the Copilot for Security portal.
 
-You can learn more about plugins implemented in the Copilot portal in [Manage plugins in Security Copilot](/security-copilot/manage-plugins). Additionally, you can learn more about other Copilot for Security embedded experiences in [Microsoft Copilot for Security experiences](/security-copilot/experiences-security-copilot)
+You can learn more about plugins implemented in [Manage plugins in Copilot for Security](/security-copilot/manage-plugins). Additionally, you can learn more about other Copilot for Security embedded experiences in [Microsoft Copilot for Security experiences](/security-copilot/experiences-security-copilot)
 
 ## Next steps
 
 - [Learn how to summarize incidents](security-copilot-m365d-incident-summary.md)
 - [Use guided responses when responding to incidents](security-copilot-m365d-guided-response.md)
-- [Analyze scripts and codes](security-copilot-m365d-script-analysis.md)
+- [Run script analysis](security-copilot-m365d-script-analysis.md)
 - [Generate KQL queries](advanced-hunting-security-copilot.md)
 - [Create incident reports](security-copilot-m365d-create-incident-report.md)
 
