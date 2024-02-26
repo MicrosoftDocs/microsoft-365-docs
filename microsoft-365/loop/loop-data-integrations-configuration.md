@@ -1,6 +1,6 @@
 ---
 ms.date: 02/22/2024
-title: "Configuring external data connections for Loop experiences"
+title: "Configuring external data integrations for Loop experiences"
 ms.reviewer: dancost, dimple
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -20,10 +20,10 @@ ms.collection:
 search.appverid:
 - SPO160
 - MET150
-description: "Learn about how to configure external data connections for Loop experiences."
+description: "Learn about how to configure external data integrations for Loop experiences."
 ---
 
-# Configuring external data connections for Loop experiences
+# Configuring external data integrations for Loop experiences
 
 Microsoft enabled Jira, Trello, and GitHub integration experiences within [Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop). Tenant admins can use Cloud Policy to configure the data integration features. Tenant admins can Enable, Disable, or Not Configure various policy settings to control these integrations. The data integration policies are:
 
@@ -38,7 +38,7 @@ Microsoft enabled Jira, Trello, and GitHub integration experiences within [Micro
 
 When data integrations are Enabled, data from external sources synchronize into the Loop data file. Integration options appear in the Discover '/' menu. Integrations synchronize data when the user views or edits the Loop component in apps that support Loop such as Teams, Outlook, Loop app, etc.
 
-When data integrations are Disabled, data from these disabled external sources don't synchronize. No connections to these external sources can be established. All existing data stops synchronizing, and becomes read-only everywhere. The integration options still appear in the Discover '/' menu but users cannot activate or create new external data connections.
+When data integrations are Disabled, data from these disabled external sources don't synchronize. No connections to these external sources can be established. All existing data stops synchronizing, and becomes read-only everywhere. The integration options still appear in the Discover '/' menu but users cannot activate or create new external data integrations.
 
 ## Example policy configurations and user experience result
 
