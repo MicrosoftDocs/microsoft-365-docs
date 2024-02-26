@@ -31,7 +31,7 @@ You can also get product updates and important notifications through the [messag
 
 
 ## February 2024
-- (GA) **Assigning severity to incidents** and the ***go hunt*** option from the attack story graph are now generally available. Read [assign or change incident severity](manage-incidents.md#assign-or-change-incident-severity) to learn how to change an incident's severity, and learn how you can use the *go hunt* option by exploring [attack story](investigate-incidents.md#attack-story).
+- (GA) **Assigning severity to incidents**, **assigning an incident to a group**, and the ***go hunt*** option from the attack story graph are now generally available. Guides to learn how to [assign or change incident severity](manage-incidents.md#assign-or-change-incident-severity) and [assign an incident to a group](manage-incidents.md#assign-an-incident) are in the [Manage incidents](manage-incidents.md) page. Learn how you can use the *go hunt* option by exploring [attack story](investigate-incidents.md#attack-story).
 
 - (Preview) **[Custom detection rules in Microsoft Graph security API](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#custom-detections)** are now available.  Create advanced hunting custom detection rules specific to your org to proactively monitor for threats and take action.
 
