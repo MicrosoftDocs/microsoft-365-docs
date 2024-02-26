@@ -122,6 +122,8 @@ You can see the following summary charts in this report as default view:
 
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
+To note, Active users of Word, Excel and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might be lower than expected if there are people in your organization using the Coach feature on Outlook Win32 over the selected time period. We are currently working on integrating this data into our reports and will notify you as soon as it becomes available.
+
 >[!NOTE]
 > This report does not yet include Microsoft Copilot with Graph-grounded chat usage, but it will be available in this report soon. You'll be notified of this update through the Microsoft 365 message center.
 
@@ -161,6 +163,9 @@ You can view a table list to show each Copilot for Microsoft 365 enabled user’
 Select **Choose columns** to add or remove columns from the table.
 
 :::image type="content" alt-text="Screenshot showing the columns you can select for the Microsoft 365 Copilot usage report." source="../../media/copilot-usage-choose-columns.png":::
+
+>[!NOTE]
+> All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there is no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
 
 You can also export the report data into an Excel .csv file by selecting the Export link. This exports the Copilot for Microsoft 365 usage data of all users and enables you to do simple sorting, filtering, and searching for further analysis.
 
