@@ -4,10 +4,10 @@ description: Learn about the gradual update process and controls.
 ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -30,6 +30,7 @@ ms.date: 01/12/2024
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
 
 It's important to ensure that client components are up to date to deliver critical protection capabilities and prevent attacks.
@@ -59,7 +60,9 @@ Our engineers continuously monitor impact and escalate any issues to create a fi
 
 ## How to customize your internal deployment process
 
-If your machines are receiving Defender updates from Windows Update, the gradual rollout process may result in some of your machines receiving Defender updates sooner than others. The following section explains how to allow automatic updates to release to specific groups of devices by using update channel configuration.
+
+If your machines are receiving Defender updates from Windows Update, the gradual rollout process can result in some of your devices receiving Defender updates sooner than others. The following section explains how to define a strategy that will allow automatic updates to flow differently to specific groups of devices by using update channel configuration.
+
 
 > [!NOTE]
 > When planning for your own gradual release, please make sure to always have a selection of devices subscribed to the preview and staged channels. This will provide your organization as well as Microsoft the opportunity to prevent or find and fix issues specific to your environment.
@@ -100,7 +103,7 @@ You can also assign a machine to a channel to define the cadence in which it rec
 
 ## Update guidance
 
-In most cases, the recommended configuration when using Windows Update is to allow endpoints to receive and apply monthly Defender updates as they arrive. This provides the best balance between protection and possible impact associated with the changes they can introduce.
+In most cases, the recommended configuration when using Windows Update is to allow endpoints to receive and apply monthly Defender updates as they arrive. This option provides the best balance between protection and possible impact associated with the changes they can introduce.
 
 For environments where there's a need for a more controlled gradual rollout of automatic Defender updates, consider an approach with deployment groups:
 
@@ -108,7 +111,7 @@ For environments where there's a need for a more controlled gradual rollout of a
 
 2. Designate a pilot group that opts-in to Preview Channel, typically validation environments, to receive new updates early.
 
-3. Designate a group of machines that receive updates later during the gradual rollout from Staged channel. Typically, this would be a representative ~10% of the population.
+3. Designate a group of machines that receive updates later during the gradual rollout from Staged channel. Typically, this group would be a representative ~10% of the population.
 
 4. Designate a group of machines that receive updates after the gradual release cycle completes. These are typically important production systems.
 
