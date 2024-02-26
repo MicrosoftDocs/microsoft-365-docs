@@ -165,6 +165,8 @@ Verify and check these items off your list before you continue:
   - If you use AD FS, you should have Windows 2012 R2 AD FS 3.0 and above for federation.
   - Your identity configurations are any of the types supported by Microsoft Entra Connect, such as password hash sync, pass-through authentication, and on-premises STS supported by Office 365.
   - You have Microsoft Entra Connect configured and functioning for user replication and sync.
+        > [!NOTE]
+        > Any user accounts that are not synchronized to Microsoft Entra ID will not be provided an authorization token via Hybrid Modern Authentication. Once the on-premises application is configured to use evoSTS as the default authorization endpoint, these user accounts that aren't synchronized will encounter issues with their access to the application.
   - You have verified that hybrid is configured using Exchange Classic Hybrid Topology mode between your on-premises and Office 365 environment. Official support statement for Exchange hybrid says you must have either current CU or current CU - 1.
     > [!NOTE]
     > Hybrid modern authentication is not supported with the [Hybrid Agent](/exchange/hybrid-deployment/hybrid-agent).
