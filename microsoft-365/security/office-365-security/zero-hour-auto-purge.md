@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -180,7 +180,7 @@ For messages that are identified as malware, ZAP for Teams protection blocks and
 
 ### How to see if ZAP blocked a Teams message
 
-Currently, only admins can view and manage messages that were quarantined by ZAP for Teams protection. For more information, see [Use the Microsoft Defender portal to manage Microsoft Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages).
+Currently, only admins can view and manage messages that were quarantined by ZAP for Teams protection. For more information, see [Use the Microsoft Defender portal to manage Microsoft Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-defender-portal-to-manage-microsoft-teams-quarantined-messages).
 
 ## Zero-hour auto purge (ZAP) FAQ
 

@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Step 4. Understand app protection delivery
+description: Step 4. Understand app protection delivery.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -20,14 +20,14 @@ keywords:
 > [!IMPORTANT]
 > You can require that an Intune app protection policy is present for the client app before access is available to the selected applications. For more information, see [Require app protection policy](/entra/identity/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-Before an app protection policy can be used to protect an app on a device, the policy must be delivered and applied to the user at your organization. There are several timing reasons and remedies that will impact app protection policy delivery. 
+Before an app protection policy can be used to protect an app on a device, the policy must be delivered and applied to the user at your organization. There are several timing reasons and remedies that impact app protection policy delivery. 
 
 Common user state issues that impact the delivery of app protection policies:
 - **Issue**: Tenant not on-boarded.<br>
-  **Solution**: You must setup your tenant for Intune.
-- **Issue**: User is not licensed.<br>
+  **Solution**: You must set up your tenant for Intune.
+- **Issue**: User isn't licensed.<br>
   **Solution**: You must assign an Intune license to the user.
-- **Issue**: User is not assigned app protection policies.<br>
+- **Issue**: User isn't assigned app protection policies.<br>
   **Solution**: You must assign app protection policy settings to the user.
 - **Issue**: User is assigned an app protection policy, but the related app isn't included in the policy.<br>
   **Solution**: You must include the app that you want to protect in the app protection policy.

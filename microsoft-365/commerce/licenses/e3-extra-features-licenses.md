@@ -44,6 +44,7 @@ Microsoft 365 E3 or E5 Extra Features provides additional features for your user
 |Microsoft Clipchamp     | Yes       | Yes         |
 |Microsoft Loop     | Yes       | Yes         |
 |Windows Autopatch     | Yes       | Yes         |
+|Windows Update for Business deployment service     | Yes       | Yes         |
 |Customer Lockbox     | No        | Yes        |
 |Defender for IoT - Enterprise IoT Security     | No        | Yes        |
 |Immersive spaces for Teams     | No        | Yes        |
@@ -53,6 +54,7 @@ Microsoft 365 E3 or E5 Extra Features provides additional features for your user
 |Microsoft Endpoint DLP     | No        | Yes        |
 |Microsoft Insider Risk Management     | No        | Yes        |
 |Safe Documents     | No        | Yes        |
+|Universal Print|Yes|Yes|
 
 ## Assign the Microsoft 365 E3 or E5 Extra Features license to users
 

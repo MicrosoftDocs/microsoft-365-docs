@@ -72,8 +72,6 @@
         href: validate-antimalware.md
       - name: Attack surface reduction rules demonstrations
         href: defender-endpoint-demonstration-attack-surface-reduction-rules.md
-      - name: Block at First Sight (BAFS) demonstration
-        href: defender-endpoint-demonstration-block-at-first-sight-bafs.md
       - name: Cloud-delivered protection demonstration
         href: defender-endpoint-demonstration-cloud-delivered-protection.md
       - name: Controlled folder access (CFA) demonstration (block script)
@@ -370,21 +368,6 @@
         href: switch-to-mde-phase-2.md
       - name: Phase 3 - Onboard
         href: switch-to-mde-phase-3.md
-
-    - name: Manage Defender for Endpoint after migration or setup
-      items:
-      - name: Overview
-        href: manage-mde-post-migration.md
-      - name: Use Intune (recommended)
-        href: manage-mde-post-migration-intune.md
-      - name: Use Configuration Manager
-        href: manage-mde-post-migration-configuration-manager.md
-      - name: Use Group Policy
-        href: manage-mde-post-migration-group-policy-objects.md
-      - name: Use PowerShell, WMI, or MPCmdRun.exe
-        href: manage-mde-post-migration-other-tools.md
-      - name: Updating MMA on Windows devices
-        href: update-agent-mma-windows.md
       - name: Server migration scenarios
         items:
         - name: Overview
@@ -451,6 +434,8 @@
           href: configure-machines.md
         - name: Monitor and increase device onboarding
           href: configure-machines-onboarding.md
+        - name: Updating MMA on Windows devices
+          href: update-agent-mma-windows.md
 
     - name: Configure time zone settings
       href: time-settings.md
@@ -862,6 +847,8 @@
           href: manage-alerts.md
         - name: Investigate alerts
           href: investigate-alerts.md
+        - name: Review and manage detected threats
+          href: review-detected-threats.md
         - name: Investigate files
           href: investigate-files.md
         - name: Investigate devices
@@ -1433,6 +1420,8 @@
 
     - name: Troubleshoot Microsoft Defender for Endpoint on macOS
       items:
+      - name: Troubleshooting mode on macOS
+        href: mac-troubleshoot-mode.md
       - name: Troubleshoot installation issues
         href: mac-support-install.md
       - name: Troubleshoot performance issues

@@ -1,17 +1,13 @@
 ---
 title: Zero Trust with Microsoft Defender for Office 365
 description: Microsoft Defender for Office 365 contributes to a strong Zero Trust strategy and architecture
-keywords: Zero Trust, Microsoft Defender for Office 365, Microsoft Defender XDR, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-zero-trust
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: tracyp
-author: mjcaparas
+author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro

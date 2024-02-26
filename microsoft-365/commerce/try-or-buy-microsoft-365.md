@@ -51,7 +51,7 @@ For all other procedures in this article, the following items are required:
 
 - You must have a Microsoft account, and you must be a Global or Billing admin for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Understand billing profiles](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 
 ::: moniker range="o365-21vianet"
 

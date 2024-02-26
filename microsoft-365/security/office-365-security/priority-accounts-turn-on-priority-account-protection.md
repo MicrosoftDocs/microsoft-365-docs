@@ -48,8 +48,6 @@ This article describes how to confirm that priority account protection is turned
 
 - The Priority account tag is a type of _user tag_. You can create custom user tags to differentiate specific groups of users in reporting and other features. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
-<a name='review-or-turn-on-priority-account-protection-in-the-microsoft-365-defender-portal'></a>
-
 ## Review or turn on priority account protection in the Microsoft Defender portal
 
 > [!NOTE]

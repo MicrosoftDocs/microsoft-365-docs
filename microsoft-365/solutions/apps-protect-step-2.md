@@ -24,8 +24,7 @@ The policies in level 1 enforce a reasonable data access level while minimizing 
 
 Use the following recommended app protection settings when creating and applying Intune app protection for Level 2 enterprise enhanced data protection.
 
-[!INCLUDE [app-protection-framework-level2](~/../_memdocs/memdocs/intune/includes/app-protection-framework-level2.md)]
-
+[!INCLUDE [app-protection-framework-level1](~/../_memdocs/memdocs/intune/includes/app-protection-framework-level2.md)]
 ## Next step
 
 [:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-03.png" alt-text="Step 3 - Apply high data protection." border="false" :::](apps-protect-step-3.md)

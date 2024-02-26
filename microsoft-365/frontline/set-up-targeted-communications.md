@@ -3,7 +3,7 @@ title: Set up targeted communications for your frontline
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: yingchang, aaglick, vakorlep
+ms.reviewer: yinchang, aaglick
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/02/2024
+ms.date: 02/07/2024
 
 ---
 

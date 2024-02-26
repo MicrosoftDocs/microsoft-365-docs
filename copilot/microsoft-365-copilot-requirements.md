@@ -35,6 +35,7 @@ The following are the prerequisites for using Microsoft Copilot for Microsoft 36
 > [!NOTE]
 > - For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
 > - Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft Copilot for Microsoft 365 features. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
+> - Copilot is not available on Device-Based Licensing for Office 365 Apps.
 
 ### Microsoft Entra ID
 
@@ -72,9 +73,15 @@ To use Microsoft Copilot for Microsoft 365 with Microsoft Loop, you must have Lo
 
 To use Microsoft Copilot for Microsoft 365 with Microsoft Whiteboard, you must have Whiteboard enabled for your tenant. To learn more about Microsoft Whiteboard, see [Manage access to Microsoft Whiteboard for your organization](/microsoft-365/whiteboard/manage-whiteboard-access-organizations).
 
+### Office Feature Updates task
+
+The Office Feature Updates task is required for core Copilot experiences in apps such as Word, PowerPoint, Excel and OneNote, to work properly. This task should be allowed to run on its regular schedule, and allowed to access the required network resources.
+
+For more information about the Office Feature Updates task, see [Office Feature Updates task description and FAQ](/microsoft-365/troubleshoot/updates/office-feature-updates-task-faq). For more information about which network resources should be allowed, see [Network requirements](#network-requirements).
+
 ## License requirements
 
-Copilot for Microsoft 365 is an add-on plan with the following licensing prerequisites:
+Copilot for Microsoft 365 is available as an add-on plan with one of the following licensing prerequisites:
 
 - Microsoft 365 E5
 - Microsoft 365 E3
@@ -91,9 +98,9 @@ You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.
 
 ## Update channels
 
-Microsoft Copilot for Microsoft 365 will follow Microsoft 365 Apps' standard practice for deployment and updates, being available in all update channels, except for Semi-annual channel. Preview channels include Insiders, Current Channel - Preview and Beta Channel. Production channels include Current Channel and then Monthly Enterprise Channel.
+Microsoft Copilot for Microsoft 365 will follow the standard practice of deployment and updates for Microsoft 365 Apps, being available in all update channels, except for Semi-Annual Enterprise Channel. Preview channels (also known as Microsoft 365 Insider) include Current Channel (Preview) and Beta Channel. Production channels include Current Channel and  Monthly Enterprise Channel.
 
-Copilot is available in Current Channel, and starting December 12, on Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and the [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
+Copilot is available in Current Channel and in Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels) and [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
 ## Network requirements
 

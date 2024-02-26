@@ -60,10 +60,10 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 
   > [!TIP]
   > The ability to manage quarantined messages using [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) ended in February 2023 per MC447339.
+  >
+  > Guest admins from other organizations can't manage quarantined messages. The admin needs to be in the same organization as the recipients.
 
 - Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantine retention](quarantine-about.md#quarantine-retention).
-
-<a name='use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages'></a>
 
 ## Use the Microsoft Defender portal to manage quarantined email messages
 
@@ -114,6 +114,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Transport rule** (mail flow rule)
   - **Bulk**
   - **Spam**
+  - **Data loss prevention**
   - **Malware**: Anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365. The **Policy Type** value indicates which feature was used.
   - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](anti-phishing-policies-about.md#spoof-settings) or [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
   - **High confidence phishing**
@@ -133,6 +134,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Anti-phishing policy**
   - **Anti-spam policy**
   - **Transport rule** (mail flow rule)
+  - **Data loss prevention rule**
 
   The **Policy type** and **Quarantine reason** values are interrelated. For example, **Bulk** is always associated with an **Anti-spam policy**, never with an **Anti-malware policy**.
 
@@ -286,7 +288,7 @@ Back on the **Email** tab, the **Release status** value of the message is **Rele
 
 #### Approve or deny release requests from users for quarantined email
 
-Users can request the release of email messages if the quarantine policy used **Allow recipients to request a message to be released from quarantine** (`PermissionToRequestRelease` permission) instead of **Allow recipients to release a message from quarantine** (`PermissionToRelease` permission) when the message was quarantined. For more information, see [Create quarantine policies in the Microsoft Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+Users can request the release of email messages if the quarantine policy used **Allow recipients to request a message to be released from quarantine** (`PermissionToRequestRelease` permission) instead of **Allow recipients to release a message from quarantine** (`PermissionToRelease` permission) when the message was quarantined. For more information, see [Create quarantine policies in the Microsoft Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-defender-portal).
 
 After a recipient requests the release of the email message, the **Release status** value changes to **Release requested**, and an admin can approve or deny the request.
 
@@ -366,7 +368,7 @@ In the **Submit to Microsoft for analysis** flyout that opens, configure the fol
    - **Remove entry after**: The default value is **30 days**, but you can also select **1 day**, **7 days**, or a **Specific date** that's less than 30 days.
     - **Allow entry note**: Enter an optional note that contains additional information.
 
-  - **It appears clean**: Select this option if you want to get a second opinion from Microsoft.
+  - **It appears clean**: Select this option if you're unsure and you want a verdict from Microsoft.
 
 When you're finished on the **Submit to Microsoft for analysis** flyout, select **Submit**.
 
@@ -464,8 +466,6 @@ Admins can search the audit log to find events for messages that were deleted fr
 3. When you're finished entering the search criteria, select **Search** to generate the search.
 
 For complete instructions for audit log searches, see [Audit New Search](/purview/audit-new-search).
-
-<a name='use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365'></a>
 
 ## Use the Microsoft Defender portal to manage quarantined files in Defender for Office 365
 
@@ -610,8 +610,6 @@ When you select multiple quarantined files on the **Files** tab by selecting the
 - [Download quarantined files from quarantine](#download-quarantined-files-from-quarantine)
 
 :::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions dropdown list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
-
-<a name='use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages'></a>
 
 ## Use the Microsoft Defender portal to manage Microsoft Teams quarantined messages
 

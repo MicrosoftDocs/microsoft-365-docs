@@ -26,7 +26,7 @@ You can manage Microsoft Copilot for Microsoft 365 through the Microsoft 365 adm
 
 ## Before you begin
 
-- You must have a Copilot for Microsoft 365 license for the Copilot page to appear in the Microsoft 365 admin center. For more information, see [Get started with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-setup.md).
+- Your organization must have purchased Copilot licenses to access the Copilot page in the Microsoft 365 admin center. While you don't need a license assigned to your admin account, you must have these licenses present within the organization for the Copilot page to be visible. For more information, see [Get started with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-setup.md).
 
 - You must be a Global Administrator to access the Copilot page. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
@@ -52,15 +52,20 @@ Copilot with commercial data protection provides enhanced security for users acc
 
 Copilot in Bing, Edge and Windows is the public version of Copilot and doesn’t require users to be signed in. You can reroute to the documentation available on the panel to turn off the public experience and still have access to the Copilot with commercial data protection experience.
 
+You'll soon have the ability to control access to Copilot for Microsoft 365 in Bing, Edge, and Windows using a PowerShell script. By running this script, you can manage access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. However, this will not affect how users access Copilot in other Microsoft 365 apps.
+
+>[!NOTE]
+> The PowerShell script download link and run commands will be available in late February 2024. If you want to configure Copilot for Microsoft 365 in Bing, Edge, and Windows after late February, return to this page for further instructions.
+
 ### Manage plugins that work with Microsoft Copilot for Microsoft 365
 
 Microsoft Copilot for Microsoft 365 is powered by an advanced processing and orchestration engine that seamlessly integrates Microsoft 365 apps, Microsoft Graph, and large language models (LLMs) to turn your words into the most powerful productivity tool. While Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many users still depend on various external tools and services for work management and collaboration. You can extend Microsoft Copilot for Microsoft 365 by building a plugin or by connecting to an external data source.
 
 This control navigates you to the Integrated App settings to control how non-Microsoft apps and first party apps can work with Microsoft Copilot for Microsoft 365.
 
-### Public web content access
+### Improved responses with web content in Copilot for Microsoft 365
 
-This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to public web content in Microsoft Copilot for Microsoft 365 responses](manage-public-web-access.md).
+This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to web content in Copilot for Microsoft 365 responses](manage-public-web-access.md).
 
 ### Data Security and Compliance
 

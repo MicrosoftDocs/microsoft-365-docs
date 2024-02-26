@@ -1,18 +1,14 @@
 ---
 title:  Run the client analyzer on macOS or Linux
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux
-keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, macos, linux, mdeanalyzer
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-ms.date: 06/15/2023
-manager: dansimp
+ms.date: 02/02/2024
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -40,7 +36,7 @@ There are two ways to run the client analyzer tool:
 ## Running the binary version of the client analyzer
 
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
-If using a terminal download using the command:
+If you're using a terminal, download the tool by entering the following command:
 
     ```console
     wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
@@ -49,33 +45,34 @@ If using a terminal download using the command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '708C2257109D200C2862637363BEC0C073ACD66CBD5120EB1DDE28F7AA9C9C1E'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '0A8E32B618F278BED60AB6763E9458BA2CD02C99D718E50DCCE51A7DBAC69863'
 
     ```console
-    echo '708C2257109D200C2862637363BEC0C073ACD66CBD5120EB1DDE28F7AA9C9C1E XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '0A8E32B618F278BED60AB6763E9458BA2CD02C99D718E50DCCE51A7DBAC69863 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
-3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
+3. Extract the contents of _XMDEClientAnalyzerBinary.zip_ on the machine.
 
-    If using a terminal download using the command:
+    If you're using a terminal, extract the files by entering the following command:
 
     ```console
     unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary
     ```
 
-4. Change to the tool's directory using the following command:
+4. Change to the tool's directory by entering the following command:
 
     ```console
     cd XMDEClientAnalyzerBinary
     ```
 
-5. Three new zip files will be produced:
-      1. **SupportToolLinuxBinary.zip** : For all Linux devices
-      2. **SupportToolmacOSBinary.zip** : For Intel-based Mac devices
-      3. **SupportToolmacOS-armBinary.zip** : For Arm-based Mac devices
+5. Three new zip files are produced:
+
+   - **SupportToolLinuxBinary.zip** : For all Linux devices
+   - **SupportToolmacOSBinary.zip** : For Intel-based Mac devices
+   - **SupportToolmacOS-armBinary.zip** : For Arm-based Mac devices
 
 6. Unzip one of the above 3 zip files based on the machine you need to investigate.\
-When using a terminal, unzip the file using one of the following commands based on machine type:
+When using a terminal, unzip the file by entering one of the following commands based on machine type:
 
    - Linux
 
@@ -95,7 +92,7 @@ When using a terminal, unzip the file using one of the following commands based 
      unzip -q SupportToolmacOS-armBinary.zip
      ```
 
-7. Run the tool as <i>root</i> to generate diagnostic package:
+7. Run the tool as _root_ to generate diagnostic package:
 
    ```console
    sudo ./MDESupportTool -d
@@ -118,7 +115,7 @@ When using a terminal, unzip the file using one of the following commands based 
 
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
-    If using a terminal, download by running the command:
+    If you're using a terminal, download the tool by running the following command:
 
     ```console
     wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
@@ -127,11 +124,11 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo 'A13C262EDD1C657EC056DD03E9F0487B4FD897964F1ABF968445E19035ABFD6D XMDEClientAnalyzer.zip' | sha256sum -c
+    echo '926DEF4C6857641E205E7978126F7C2CE541D52AEA1C0E194DDB85F7BCFDE3D9 XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
-    If using a terminal unzip using the command:
+    If you're using a terminal, extract the files by using the following command:
 
     ```console
     unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
@@ -155,7 +152,7 @@ When using a terminal, unzip the file using one of the following commands based 
     ./mde_support_tool.sh
     ```
 
-7. To collect actual diagnostic package and generate the result archive file run again as root:
+7. To collect actual diagnostic package and generate the result archive file, run again as root:
 
     ```console
     sudo ./mde_support_tool.sh -d
@@ -165,17 +162,18 @@ When using a terminal, unzip the file using one of the following commands based 
 
 ### Primary command lines
 
-Use this for getting machine diagnostic
+Use the following command to get the machine diagnostic.
 
 ```console
 -h, --help            show this help message and exit
 --output OUTPUT, -o OUTPUT
                       Output path to export report
+--outdir OUTDIR       Directory where diagnostics file will be generated
 --no-zip, -nz         If set a directory will be created instead of an archive file
 --force, -f           Will overwrite if output directory exists
 --diagnostic, -d      Collect extensive machine diagnostic information
 --bypass-disclaimer   Do not display disclaimer banner
---mdatp-log {info,trace,error,warning,debug,verbose}
+--mdatp-log {info,debug,verbose,error,trace,warning}
                       Set MDATP log level
 --max-log-size MAX_LOG_SIZE
                       Maximum log file size in MB before rotating(Will restart mdatp)
@@ -211,7 +209,7 @@ Use OS tracing facilities to record Defender for Endpoint performance traces.
 --mask MASK      Mask to select with event to trace. Defaults to all
 ```
 
-On running this command for the first time, it will install a Profile configuration.
+On running this command for the first time, it installs a Profile configuration.
 
 Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/guide/mac-help/configuration-profiles-standardize-settings-mh35561/mac#:~:text=Install%20a%20configuration%20profile%20you%E2%80%99ve%20received).
 
@@ -248,7 +246,7 @@ Usage example: `sudo ./MDESupportTool exclude -d /var/foo/bar`
 
 ### AuditD Rate Limiter
 
-Syntax that can be used to limit the number of events being reported by the auditD plugin. This option will set the rate limit globally for AuditD causing a drop in all the audit events. When the limiter is enabled the number of auditd events will be limited to 2500 events/sec. This option can be used in cases where we see high CPU usage from AuditD side.
+Syntax that can be used to limit the number of events being reported by the auditD plugin. This option sets the rate limit globally for AuditD causing a drop in all the audit events. When the limiter is enabled the number of auditd events are limited to 2500 events/sec. This option can be used in cases where we see high CPU usage from AuditD side.
 
 > [!NOTE]
 > This functionality exists for Linux only.
@@ -265,7 +263,7 @@ Usage example: `sudo ./mde_support_tool.sh ratelimit -e true`
 
 ### AuditD Skip Faulty Rules
 
-This option enables you to skip the faulty rules added in the auditd rules file while loading them. This option allows the auditd subsystem to continue loading rules even if there is a faulty rule. This option summarizes the results of loading the rules. In the background, this option runs the auditctl with the -c option.
+This option enables you to skip the faulty rules added in the auditd rules file while loading them. This option allows the auditd subsystem to continue loading rules even if there's a faulty rule. This option summarizes the results of loading the rules. In the background, this option runs the auditctl with the -c option.
 
 > [!NOTE]
 > This functionality is only available on Linux.
@@ -284,7 +282,7 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 
 - report.html
 
-  Description: The main HTML output file that will contain the findings and guidance that the analyzer script run on the machine can produce.
+  Description: The main HTML output file that contains the findings and guidance that the analyzer script run on the machine can produce.
 
 - mde_diagnostic.zip
 
@@ -316,5 +314,5 @@ Usage example: `sudo ./mde_support_tool.sh skipfaultyrules -e true`
 
 - perf_benchmark.tar.gz
 
-  Description: The performance test reports. You will see this only if you are using the performance parameter.
+  Description: The performance test reports. You'll see this only if you're using the performance parameter.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

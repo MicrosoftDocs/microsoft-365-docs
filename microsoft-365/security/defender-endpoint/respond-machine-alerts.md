@@ -6,7 +6,7 @@ ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
 ms.date: 12/15/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -89,9 +89,6 @@ For more information on live response, see [Investigate entities on devices usin
 ## Collect investigation package from devices
 
 As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker.
-
-> [!IMPORTANT]
-> These actions are not currently supported for devices running macOS or Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 
 To download the package (Zip file) and investigate the events that occurred on a device:
 

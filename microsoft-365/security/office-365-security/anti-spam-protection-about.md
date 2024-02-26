@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
@@ -77,7 +77,7 @@ Anti-spam policies control the configurable settings for spam filtering. The imp
 
 ### Recipient filters in anti-spam policies
 
-In [custom anti-spam policies](anti-spam-policies-configure.md) and in the Standard and Strict [preset security policies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), you can specify recipient conditions and exceptions that determine who the policy applies to. You can use the following properties for conditions and exceptions:
+In [custom anti-spam policies](anti-spam-policies-configure.md) and in the Standard and Strict [preset security policies](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), you can specify recipient conditions and exceptions that determine who the policy applies to. You can use the following properties for conditions and exceptions:
 
 - **Users**
 - **Groups**
@@ -206,7 +206,7 @@ The functionality of these lists has been largely replaced by:
 
 ### Priority of anti-spam policies
 
-If they're [turned on](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), the Standard and Strict preset security policies are applied before any custom anti-spam policies or the default policy (Strict is always first). If you create multiple custom anti-spam policies, you can specify the order that they're applied. Policy processing stops after the first policy is applied (the highest priority policy for that recipient).
+If they're [turned on](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), the Standard and Strict preset security policies are applied before any custom anti-spam policies or the default policy (Strict is always first). If you create multiple custom anti-spam policies, you can specify the order that they're applied. Policy processing stops after the first policy is applied (the highest priority policy for that recipient).
 
 For more information about the order of precedence and how multiple policies are evaluated, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md) and [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies).
 

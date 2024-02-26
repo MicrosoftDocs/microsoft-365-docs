@@ -4,10 +4,9 @@ f1.keywords:
   - NOCSH
 ms.author: bcarter
 author: BrendaCarter
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 ms.collection: 
   - Ent_O365
@@ -38,8 +37,6 @@ Specifics are up to your business.
 
 This article walks you through the manual configuration of tenant-wide settings that affect the security of your Microsoft 365 environment. Use these recommendations as a starting point.
 
-<a name='tune-eop-and-defender-for-office-365-protection-policies-in-the-microsoft-365-defender-portal'></a>
-
 ## Tune EOP and Defender for Office 365 protection policies in the Microsoft Defender portal
 
 The Microsoft Defender portal has capabilities for both protection and reporting. It has dashboards you can use to monitor and take action when threats arise.
@@ -47,7 +44,7 @@ The Microsoft Defender portal has capabilities for both protection and reporting
 As an initial step, you need to configure *email authentication* records in DNS for all custom email domains in Microsoft 365 (SPF, DKIM, and DMARC). Microsoft 365 automatically configures email authentication for the \*.onmicrosoft.com domain. For more information, see [Step 1: Configure email authentication for your Microsoft 365 domains](mdo-deployment-guide.md#step-1-configure-email-authentication-for-your-microsoft-365-domains).
 
 > [!NOTE]
-> For non-standard deployments of SPF, hybrid deployments, and troubleshooting: [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
+> For non-standard deployments of SPF, hybrid deployments, and troubleshooting: [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
 
 Most protection features in Exchange Online Protection (EOP) and Defender for Office 365 come with *default policy configurations*. For more information, see the table [here](mdo-deployment-guide.md#step-2-configure-protection-policies).
 
@@ -58,8 +55,6 @@ We recommend turning on and using the Standard and/or Strict preset security pol
 - Complete list of all features and settings in default policies, Standard preset security policies, and Strict preset security policies: [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 Custom policies are required if the business needs of your organization require policy settings that are *different than* or *aren't defined in* preset security policies. Or, if your organization requires a different user experience for quarantined messages (including notifications). For more information, see [Determine your protection policy strategy](mdo-deployment-guide.md#determine-your-protection-policy-strategy).
-
-<a name='view-dashboards-and-reports-in-the-microsoft-365-defender-portal'></a>
 
 ## View dashboards and reports in the Microsoft Defender portal
 
@@ -102,8 +97,6 @@ To support the goals for baseline protection, configure tenant-wide sharing poli
 
 SharePoint admin center and OneDrive for Business admin center include the same settings. The settings in either admin center apply to both.
 
-<a name='configure-settings-in-azure-active-directory'></a>
-
 ## Configure settings in Microsoft Entra ID
 
 Be sure to visit these two areas in Microsoft Entra ID to complete tenant-wide setup for more secure environments.
@@ -112,7 +105,7 @@ Be sure to visit these two areas in Microsoft Entra ID to complete tenant-wide s
 
 If your organization includes offices with secure network access, add the trusted IP address ranges to Microsoft Entra ID as named locations. This feature helps reduce the number of reported false positives for sign-in risk events.
 
-See: [Named locations in Microsoft Entra ID](/azure/active-directory/conditional-access/location-condition)
+See: [Named locations in Microsoft Entra ID](/entra/identity/conditional-access/location-condition)
 
 ### Block apps that don't support modern authentication
 

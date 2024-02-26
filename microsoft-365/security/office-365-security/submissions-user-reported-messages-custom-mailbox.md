@@ -49,7 +49,7 @@ Delivering user reported messages to a reporting mailbox instead of directly to 
 
 Before you get started, you need to use the following steps to configure Exchange Online Protection and Defender for Office 365 so user reported messages are delivered to the reporting mailbox without being filtered:
 
-- Identify the reporting mailbox as a SecOps mailbox. For instructions, see [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](advanced-delivery-policy-configure.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+- Identify the reporting mailbox as a SecOps mailbox. For instructions, see [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](advanced-delivery-policy-configure.md#use-the-microsoft-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
   > [!NOTE]
   > This step is especially important if you use [Attack simulation training](attack-simulation-training-get-started.md) or a third-party product to do phishing simulations. If you don't configure the reporting mailbox as a SecOps mailbox, a user reported message might trigger a training assignment by the phishing simulation product.
@@ -72,8 +72,6 @@ After you verify that the reporting mailbox meets all of these requirements, use
 - You need access to Exchange Online PowerShell. If your account doesn't have access to Exchange Online PowerShell, you get the following error: *Specify an email address in your domain*. For more information about enabling or disabling access to Exchange Online PowerShell, see the following articles:
   - [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Client Access Rules in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) ([until October 2023](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-client-access-rules-in-exchange-online/ba-p/3638563))
-
-<a name='use-the-microsoft-365-defender-portal-to-configure-user-reported-settings'></a>
 
 ## Use the Microsoft Defender portal to configure user reported settings
 
