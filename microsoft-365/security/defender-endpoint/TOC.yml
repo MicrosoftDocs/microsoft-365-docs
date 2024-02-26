@@ -640,10 +640,10 @@
         href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
       - name: Configure behavioral, heuristic, and real-time protection
         href: configure-protection-features-microsoft-defender-antivirus.md
-      - name: Detect and block potentially unwanted applications
-        href: detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md
       - name: Advanced technologies at the core of Microsoft Defender Antivirus
         href: adv-tech-of-mdav.md
+      - name: Detect and block potentially unwanted applications
+        href: detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md
       - name: Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
         href: configure-real-time-protection-microsoft-defender-antivirus.md
       - name: Configure remediation for Microsoft Defender Antivirus detections
