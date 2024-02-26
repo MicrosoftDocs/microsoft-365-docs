@@ -1,9 +1,10 @@
 ---
 title: Automatic user notifications for user reported phishing results in AIR
 description: Admins can learn about the automatic feedback response feature that sends the results of automated investigation and response (AIR) to user reported phishing messages.
-author: KCrider14
-ms.author: kellycrider
-manager: dansimp
+author: chrisda
+ms.author: chrisda
+ms.reviewer: kellycrider
+manager: deniseb
 ms.topic: overview
 ms.date: 12/21/2023
 ms.service: microsoft-365-security

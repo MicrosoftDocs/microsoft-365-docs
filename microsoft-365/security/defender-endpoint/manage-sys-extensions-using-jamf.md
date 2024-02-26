@@ -1,15 +1,11 @@
 ---
 title: Manage system extensions using JamF
 description: Manage system extensions using JamF for Microsoft Defender for Endpoint to work properly on macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -18,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 08/28/2023
+ms.date: 02/21/2024
 ---
 
 # Manage system extensions using JamF
@@ -31,12 +27,16 @@ This article describes the procedures to implement in the process of managing th
 
 To approve the system extensions, perform the following steps:
 
-1.	Select **Computers > Configuration Profiles**, and then select **Options > System Extensions**.
-2.	Select **Allowed System Extensions** from the **System Extension Types** drop-down list.
-3.	Use **UBF8T346G9** for Team ID.
-4.	Add the following bundle identifiers to the **Allowed System Extensions** list:
-    - com.microsoft.wdav.epsext
-    - com.microsoft.wdav.netext
+1. Select **Computers > Configuration Profiles**, and then select **Options > System Extensions**.
+
+2. Select **Allowed System Extensions** from the **System Extension Types** drop-down list.
+
+3. Use **UBF8T346G9** for Team ID.
+
+4. Add the following bundle identifiers to the **Allowed System Extensions** list:
+
+   - com.microsoft.wdav.epsext
+   - com.microsoft.wdav.netext
     
     :::image type="content" source="images/jamf-system-extensions-approval.png" alt-text="Approving system extensions in JamF." lightbox="images/jamf-system-extensions-approval.png":::
 
@@ -45,9 +45,12 @@ To approve the system extensions, perform the following steps:
 Add the following JAMF payload to grant Full Disk Access to the Microsoft Defender for Endpoint Security Extension. This policy is a prerequisite for running the extension on your device.
 
 1. Select **Options > Privacy Preferences Policy Control**.
-1. Use **com.microsoft.wdav.epsext** as the Identifier and **Bundle ID** as Bundle type.
-1. Set Code Requirement to **identifier com.microsoft.wdav.epsext and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9**.
-1. Set **App or service** to **SystemPolicyAllFiles** and access to **Allow**.
+
+2. Use **com.microsoft.wdav.epsext** as the Identifier and **Bundle ID** as Bundle type.
+
+3. Set Code Requirement to **identifier com.microsoft.wdav.epsext and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9**.
+
+4. Set **App or service** to **SystemPolicyAllFiles** and access to **Allow**.
 
    :::image type="content" source="images/privacy-preferences-policy-control.png" alt-text="Privacy preferences policy control." lightbox="images/privacy-preferences-policy-control.png":::
 
@@ -126,6 +129,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 ```BashCopy
 $ plutil -lint <PathToFile>/com.microsoft.network-extension.mobileconfig
 ```
+
 For example, if the file was stored in *Documents*:
 
 ```BashCopy
@@ -138,7 +142,8 @@ $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
 <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
 ```
 
-5. Follow the instructions on [this page](https://learn.jamf.com/bundle/technical-articles/page/Welcome.html) to create a signing certificate using JAMF's built-in certificate authority.
+4. Follow the instructions on [this page](https://learn.jamf.com/bundle/technical-articles/page/Welcome.html) to create a signing certificate using JAMF's built-in certificate authority.
+
 5. After the certificate is created and installed to your device, run the following command from terminal to sign the file:
 
 ```BashCopy
