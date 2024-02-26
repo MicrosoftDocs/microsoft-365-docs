@@ -100,9 +100,11 @@ Supports table and JSON format output types. For each command, there's a default
 
 ### Using JAMF Pro
 
-To uninstall Microsoft Defender for Endpoint on macOS using JAMF Pro upload the **offboarding profile**. The **offboarding profile** should be uploaded without any modifications, and with Preference Domain name set to **com.microsoft.wdav.atp.offboarding** (see an example below).
+To uninstall Microsoft Defender for Endpoint on macOS using JAMF Pro upload the **offboarding profile**. 
 
-![JAMF_Pro_offboarding](/microsoft-365/media/defender-endpoint/jamf-pro-offboarding.png)
+The **offboarding profile** should be uploaded without any modifications, and with Preference Domain name set to **com.microsoft.wdav.atp.offboarding**:
+
+   :::image type="content" source="../../media/defender-endpoint/jamf-pro-offboarding.png" alt-text="Screenshot of the JAMF offboarding screen" lightbox="../../media/defender-endpoint/jamf-pro-offboarding.png":::
 
 ## Configuring from the command line
 
