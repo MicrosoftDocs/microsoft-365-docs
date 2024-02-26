@@ -12,7 +12,7 @@ searchScope:
   - Microsoft Teams
   - Microsoft Cloud for Healthcare
   - Microsoft Cloud for Retail
-description: Learn how to manage Shifts permissions for your frontline managers. You can use Graph API to control the Shifts settings that frontline managers can configure for their teams and whether they can create and manage schedule groups.
+description: Learn how to manage Shifts permissions for your frontline managers. You can use the Shifts role permissions Graph API to control the Shifts settings that frontline managers can configure for their teams and whether they can create and manage schedule groups.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: high
@@ -37,7 +37,7 @@ Frontline managers in Shifts are users that have [the team owner or schedule own
 - Configure [Shifts settings](https://support.microsoft.com/office/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b) for their teams. For example, frontline managers can turn on time clock and set whether frontline workers on their team can swap shifts and request time off.  
 - Create and manage schedule groups for their teams in Shifts. Schedule groups are used to group frontline workers based on common characteristics within a team, such as departments or job types.
 
-Depending on the needs of your organization, you might need to restrict the Shifts capabilities that are available to frontline managers for managing their teams. This article describes how you can control permissions to these capabilities using the [Shifts role permissions]() Graph API.
+Depending on the needs of your organization, you might need to restrict the Shifts capabilities that are available to frontline managers for managing their team schedules. This article describes how you can control permissions to these capabilities using the [Shifts role permissions]() Graph API.
 
 ## Frontline manager capabilities in Shifts for managing their teams
 
@@ -47,7 +47,7 @@ The following table lists the settings and schedule group capabilities that are 
 
 The following table lists the capabilities that are available to frontline managers for managing their teams in Shifts and indicates whether you can restrict the capability.-->
 
-|Setting/capability|Description|Use Shifts role Graph API to control permissions|
+|Setting/capability|Description|Use Shifts role permissions Graph API to control permissions|
 |---------|---------|:---------:|
 |Team time zone|Set the team's time zone and closest city.||
 |Start of week|Set the day of the week for schedules to start.||
