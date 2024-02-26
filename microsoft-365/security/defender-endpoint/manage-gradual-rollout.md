@@ -41,7 +41,7 @@ Capabilities are provided through several components:
 - [Next-generation protection](microsoft-defender-antivirus-windows.md) with [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md)
 - [Attack Surface Reduction](overview-attack-surface-reduction.md)
 
-Updates are released monthly using a gradual release process. This process helps to enable early failure detection to identify issues as it occurs and address it quickly before a larger rollout.
+Updates are released monthly using a gradual release process. This process helps to enable early failure detection to identify issues as they occur and address them quickly before a larger rollout.
 
 > [!NOTE]
 > For more information on how to control daily security intelligence updates, see [Schedule Microsoft Defender Antivirus protection updates](manage-protection-update-schedule-microsoft-defender-antivirus.md). Updates ensure that next-generation protection can defend against new threats, even if cloud-delivered protection is not available to the endpoint.
