@@ -55,7 +55,7 @@ Whether automated investigations run, and whether remediation actions are taken 
 3. Review your device group policies. Look at the **Automation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want. To exclude a device group from automated containment, set its automation level to **no automated response**. Note that this is not highly recommended and should only be done for a limited number of devices.
 
 >[!NOTE]
->Attack Disruption can act on devices independently of their Microsoft Defender Antivirus operating state. The operating state can be in Active, Passive or EDR Block Mode
+>Attack disruption can act on devices independent of a device's Microsoft Defender Antivirus operating state. The operating state can be in Active, Passive, or EDR Block Mode.
 
 ## Review or change automated response exclusions for users
 
