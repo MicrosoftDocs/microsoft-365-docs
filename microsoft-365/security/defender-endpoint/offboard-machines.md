@@ -1,15 +1,11 @@
 ---
 title: Offboard devices
 description: Onboard Windows devices, servers, non-Windows devices from the Microsoft Defender for Endpoint service
-keywords: offboarding, Microsoft Defender for Endpoint offboarding, offboarding
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
