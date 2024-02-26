@@ -486,40 +486,7 @@ In addition to the scenarios outlined in this article, you have many more report
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft Defender XDR](../defender/m365d-autoir.md)
 
-## Required licenses and permissions
 
-You must have [Microsoft Defender for Office 365](defender-for-office-365.md) to use Explorer or Real-time detections.
-
-- Explorer is included in Defender for Office 365 Plan 2.
-- The Real-time detections report is included in Defender for Office 365 Plan 1.
-- Plan to assign licenses for all users who should be protected by Defender for Office 365. Explorer and Real-time detections show detection data for licensed users.
-
-To view and use Explorer or Real-time detections, you must have appropriate permissions, such as those granted to a security administrator or security reader.
-
-- For the Microsoft Defender portal, you must have one of the following roles assigned:
-
-  - Organization Management
-  - Security Administrator (this can be assigned in the Microsoft Entra admin center (<https://aad.portal.azure.com>)
-  - Security Reader
-
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (EAC) or [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
-
-  - Organization Management
-  - View-Only Organization Management
-  - View-Only Recipients
-  - Compliance Management
-
-To learn more about roles and permissions, see the following resources:
-
-- [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md)
-- [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
-
-## Differences between Threat Explorer and Real-time detections
-
-- The *Real-time detections* report is available in Defender for Office 365 Plan 1. *Threat Explorer* is available in Defender for Office 365 Plan 2.
-- The Real-time detections report allows you to view detections in real time. Threat Explorer does this as well, but it also provides additional details for a given attack.
-- An *All email* view is available in Threat Explorer but not in the Real-time detections report.
-- More filtering capabilities and available actions are included in Threat Explorer. For more information, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 ## Other articles
 
