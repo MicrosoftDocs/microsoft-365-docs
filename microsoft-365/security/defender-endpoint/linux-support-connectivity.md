@@ -1,16 +1,12 @@
 ---
 title: Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux
 ms.reviewer: 
-description: Learn how to troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, cloud, connectivity, communication
+description: Learn how to troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux.
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -42,7 +38,7 @@ To test if Defender for Endpoint on Linux can communicate to the cloud with the 
 mdatp connectivity test
 ```
 
-expected output:
+Expected output:
 
 ```output
 Testing connection with https://cdn.x.cp.wd.microsoft.com/ping ... [OK]
@@ -63,11 +59,11 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 
 If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-endpoint-linux.md#network-connections) are blocked by a proxy or firewall.
 
-Failures with curl error 35 or 60, indicate certificate pinning rejection. Please check if the connection is under SSL or HTTPS inspection. If so, add Microsoft Defender for Endpoint to the allow list.
+Failures with curl error 35 or 60, indicate certificate pinning rejection. Check to see if the connection is under SSL or HTTPS inspection. If so, add Microsoft Defender for Endpoint to the allowlist.
 
 ## Troubleshooting steps for environments without proxy or with transparent proxy
 
-To test that a connection is not blocked in an environment without a proxy or with a transparent proxy, run the following command in the terminal:
+To test that a connection isn't blocked in an environment without a proxy or with a transparent proxy, run the following command in the terminal:
 
 ```bash
 curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'

@@ -1,10 +1,10 @@
 ---
 title: Endpoint detection and response in block mode
 description: Learn about endpoint detection and response in block mode
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp
-ms.reviewer: shwetaj
+author: siosulli
+ms.author: siosulli
+manager: deniseb
+ms.reviewer: 
 audience: ITPro
 ms.topic: conceptual
 ms.service: defender-endpoint
