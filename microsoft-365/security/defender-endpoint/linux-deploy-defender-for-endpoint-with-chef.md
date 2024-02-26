@@ -1,15 +1,11 @@
 ---
 title: How to Deploy Defender for Endpoint on Linux with Chef
-description: Learn how to deploy Defender for Endpoint on Linux with Chef
-keywords: microsoft, defender, atp, linux, scans, antivirus, microsoft defender for endpoint (linux)
+description: Learn how to deploy Defender for Endpoint on Linux with Chef.
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -32,7 +28,7 @@ ms.date: 04/07/2021
 
 Before you begin: Install unzip if it's not already installed.
 
-The Chef components are already installed and a Chef repository exists (chef generate repo \<reponame\>) to store the cookbook that will be used to deploy to Defender for Endpoint on Chef managed Linux servers.
+The Chef components are already installed and a Chef repository exists (chef generate repo \<reponame\>) to store the cookbook that's used to deploy to Defender for Endpoint on Chef managed Linux servers.
 
 You can create a new cookbook in your existing repository by running the following command from inside the cookbooks folder that is in your chef repository:
 
@@ -40,7 +36,7 @@ You can create a new cookbook in your existing repository by running the followi
 chef generate cookbook mdatp
 ```
 
-This command will create a new folder structure for the new cookbook called mdatp. You can also use an existing cookbook if you already have one you'd like to use to add the MDE deployment into.
+This command creates a new folder structure for the new cookbook called mdatp. You can also use an existing cookbook if you already have one you'd like to use to add the Defender for Endpoint deployment into.
 After the cookbook is created, create a files folder inside the cookbook folder that just got created:
 
 ```bash
@@ -95,7 +91,7 @@ when 'rhel'
 end
 ```
 
-You'll need to modify the version number, distribution, and repo name to match the version you're deploying to and the channel you'd like to deploy.
+You need to modify the version number, distribution, and repo name to match the version you're deploying to and the channel you'd like to deploy.
 Next you should create an onboard_mdatp.rb file in the mdatp/recipies folder. Add the following text to that file:
 
 ```powershell
@@ -121,9 +117,9 @@ end
 ```
 
 Make sure to update the path name to the location of the onboarding file.
-To test deploy it on the Chef workstation, just run ``sudo chef-client -z -o mdatp``.
-After your deployment you should consider creating and deploying a configuration file to the servers based on [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences).
-After you've created and tested your configuration file, you can place it into the cookbook/mdatp/files folder where you also placed the onboarding package. Then you can create a settings_mdatp.rb file in the mdatp/recipies folder and add this text:
+To test deploy it on the Chef workstation, run ``sudo chef-client -z -o mdatp``.
+After your deployment, you should consider creating and deploying a configuration file to the servers based on [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences).
+After creating and testing your configuration file, you can put it into the `cookbook/mdatp/files` folder where you also placed the onboarding package. Then you can create a settings_mdatp.rb file in the mdatp/recipies folder and add this text:
 
 ```powershell
 #Copy the configuration file
@@ -136,7 +132,8 @@ cookbook_file '/etc/opt/microsoft/mdatp/managed/mdatp_managed.json' do
 end
 ```
 
-To include this step as part of the recipe just add include_recipe ':: settings_mdatp' to your default.rb file within the recipe folder.
+To include this step as part of the recipe just add `include_recipe ':: settings_mdatp` to your default.rb file within the recipe folder.
+
 You can also use crontab to schedule automatic updates [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md).
 
 Uninstall MDATP cookbook:

@@ -1,14 +1,13 @@
 ---
 title: Customize controlled folder access
 description: Add other folders that should be protected by controlled folder access, or allow apps that are incorrectly blocking changes to important files.
-keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.reviewer: dbodorin, vladiso, nixanm, anvascon
-manager: dansimp
+manager: deniseb
 ms.subservice: asr
 ms.topic: how-to
 ms.collection: 

@@ -1,17 +1,12 @@
 ---
 title: Enable Conditional Access to better protect users, devices, and data
 description: Enable Conditional Access to prevent applications from running if a device is considered at risk and an application is determined to be non-compliant.
-keywords: conditional access, block applications, security level, intune,
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

@@ -51,7 +51,7 @@ The following steps guide you on how to create custom roles in Microsoft Defende
     - Select all read and manage permissions – Users will be assigned all permissions in this category (read and manage permissions).
     - Select custom permissions – Users will be assigned the custom permissions selected.
 
-   :::image type="content" source="../../media/defender/m365-defender-rbac-permissions-secops-flyout.png" alt-text="Screenshot of the permissions flyout screen" lightbox="../../media/defender/m365-defender-rbac-permissions-secops-flyout.png":::
+   :::image type="content" source="../../media/defender/m365-defender-rbac-assignments-fig.png" alt-text="Screenshot of the permissions flyout screen" lightbox="../../media/defender/m365-defender-rbac-assignments-fig.png":::
 
     For more information on the RBAC custom permissions, see [About RBAC custom permissions](custom-permissions-details.md).
 

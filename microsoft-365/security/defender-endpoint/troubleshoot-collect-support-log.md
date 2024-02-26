@@ -1,15 +1,11 @@
 ---
 title: Collect support logs in Microsoft Defender for Endpoint using live response
 description: Learn how to collect logs using live response to troubleshoot Microsoft Defender for Endpoint issues
-keywords: support, log, collect, troubleshoot, live response, liveanalyzer, analyzer, live, response
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
