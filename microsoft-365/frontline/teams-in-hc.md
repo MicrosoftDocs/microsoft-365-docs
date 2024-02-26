@@ -45,7 +45,7 @@ Microsoft 365 and Microsoft Teams offer a number of telemedicine features useful
 > [!NOTE]
 > This functionality is also part of Microsoft Cloud for Healthcare. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Healthcare](/industry/healthcare).
 
-<!--Watch the following video to learn more about using the healthcare collection to enhance health team collaboration in Teams.
+<!-- Watch the following video to learn more about using the healthcare collection to enhance health team collaboration in Teams.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hqan]-->
 
@@ -67,7 +67,7 @@ The following scenarios support these goals:
 
 | Scenario | Description | Requirements |
 | -------- | -------- | -------- |
-| [Virtual Appointments](virtual-appointments.md) | Schedule, manage, and conduct virtual appointments with patients. This scenario connects Teams and the Oracle Health or Epic platform to support virtual appointments. | Active subscription to Microsoft Cloud for Healthcare or subscription to Microsoft Teams EHR connector standalone offer. <br> Users must have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings. <br> For additional requirements, see [Integration with Oracle Health EHR](ehr-admin-oracle-health.md#before-you-begin) or [Integration with Epic EHR](ehr-admin-epic.md#prerequisites). |
+| [Virtual Appointments](virtual-appointments.md) | Schedule, manage, and conduct virtual appointments with patients. This scenario connects Teams and the Oracle Health or Epic platform to support virtual appointments. | Active subscription to Microsoft Cloud for Healthcare or subscription to Microsoft Teams EHR connector standalone offer. <br> Users must have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings. <br> See also [Integration into Oracle Health EHR](ehr-admin-oracle-health.md#before-you-begin) or [Integration into Epic EHR](ehr-admin-epic.md#prerequisites). |
 | [Team communication and collaboration](flw-team-collaboration.md) |Bring your health teams together to communicate, collaborate, and streamline operations with Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. |Users must have an appropriate license to use Teams apps.* |
 | [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md) | Build deeper connections across your organization and create an inclusive workplace. |Users must have an appropriate license to use Microsoft Teams apps.* |
 | [Schedule your teams with Shifts](shifts-for-teams-landing-page.md) |Create and manage schedules for your teams in Shifts.|Users must have an appropriate license to use Teams apps.* |
@@ -115,7 +115,7 @@ Teams enables physicians, clinicians, nurses, and other staff to collaborate eff
 - A message sender can send messages using priority notifications, so the recipient is repeatedly notified until they read the message.
 - A message sender can request a read receipt, so they're notified when a message they sent was read by the message recipient.
 
-Together, these features allow quicker attention to urgent messages and confidence that the message was received and read. New health teams using these features can be created on a per-patient basis. These features are policy-based, and can be assigned to individuals or entire teams.
+Together, these features allow quicker attention to urgent messages and confidence that the message was received and read.
 
 To learn more, see [Messaging policies for healthcare organizations](messaging-policies-hc.md).
 
