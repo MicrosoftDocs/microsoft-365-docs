@@ -1,15 +1,11 @@
 ---
 title: Import Indicators API
 description: Learn how to use the Import batch of Indicator API in Microsoft Defender for Endpoint.
-keywords: apis, supported apis, submit, ti, indicator, update
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -41,23 +37,23 @@ ms.date: 02/02/2021
 
 Submits or Updates batch of [Indicator](ti-indicator.md) entities.
 
-CIDR notation for IPs is not supported.
+CIDR notation for IPs isn't supported.
 
 ## Limitations
 
 1. Rate limitations for this API are 30 calls per minute.
-2. There is a limit of 15,000 active [Indicators](ti-indicator.md) per tenant.
+2. There's a limit of 15,000 active [Indicators](ti-indicator.md) per tenant.
 3. Maximum batch size for one API call is 500.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md).
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|Ti.ReadWrite|'Read and write Indicators'
-Application|Ti.ReadWrite.All|'Read and write All Indicators'
-Delegated (work or school account)|Ti.ReadWrite|'Read and write Indicators'
+|Permission type|Permission|Permission display name|
+|---|---|---|
+|Application|Ti.ReadWrite|`Read and write Indicators`|
+|Application|Ti.ReadWrite.All|`Read and write All Indicators`|
+|Delegated (work or school account)|Ti.ReadWrite|`Read and write Indicators`|
 
 ## HTTP request
 
@@ -67,29 +63,29 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 ## Request headers
 
-Name|Type|Description
-:---|:---|:---
-Authorization|String|Bearer {token}. **Required**.
-Content-Type|string|application/json. **Required**.
+| Name|Type|Description|
+|---|---|---|
+|Authorization|String|Bearer {token}. **Required**.|
+|Content-Type|string|application/json. **Required**.|
 
 ## Request body
 
 In the request body, supply a JSON object with the following parameters:
 
-Parameter|Type|Description
-:---|:---|:---
-Indicators|List<[Indicator](ti-indicator.md)>|List of [Indicators](ti-indicator.md). **Required**
+|Parameter|Type|Description|
+|---|---|---|
+|Indicators|List<[Indicator](ti-indicator.md)>|List of [Indicators](ti-indicator.md). **Required** |
 
 ## Response
 
-- If successful, this method returns 200 - OK response code with a list of import results per indicator, see example below.
+- If successful, this method returns 200 - OK response code with a list of import results per indicator, see the following example.
 - If not successful: this method return 400 - Bad Request. Bad request usually indicates incorrect body.
 
 ## Example
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/indicators/import
@@ -129,7 +125,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 {
@@ -150,7 +146,7 @@ Here is an example of the response.
 }
 ```
 
-## Related topic
+## Related article
 
 - [Manage indicators](../manage-indicators.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

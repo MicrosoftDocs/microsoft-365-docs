@@ -1,15 +1,11 @@
 ---
 title: List all remediation activities
 description: Returns information about all remediation activities.
-keywords: apis, remediation, remediation api, get, remediation tasks, all remediation, 
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: Dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
