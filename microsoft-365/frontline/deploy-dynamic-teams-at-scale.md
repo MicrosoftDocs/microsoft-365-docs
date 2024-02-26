@@ -24,13 +24,16 @@ ms.date:
 
 ## Overview
 
+> [!NOTE]
+> Mapping frontline attributes to the department and job titles in your organization to enable [targeted communications](set-up-targeted-communications.md) is currently in public preview.
+
 Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Microsoft Entra attributes. [Learn more about Microsoft Entra attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
 
 In the setup process, you define the following information with Microsoft Entra attributes:
 
 - Who your frontline workers are
 - What locations they work at
-- Department and job titles of your frontline workers (optional)
+- (Preview) Department and job titles of your frontline workers (optional)
 
 You also determine team structure and team owners.
 
@@ -76,7 +79,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/dtas-location-attribute.png":::
 
-1. On the Team settings page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
+1. On the Team settings page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format to all your teams.
 
     :::image type="content" source="media/dtas-team-settings.png" alt-text="Screenshot of team settings options showing the prefix, team template, and team owner fields." lightbox="media/dtas-team-settings.png":::
 
@@ -91,7 +94,7 @@ When evaluating the right solution for your organization, we recommend you do th
     1. Select **Users**, and then choose your user.
     1. Copy the user's object ID.
 
-1. On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
+1. (Preview) On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
     > [!NOTE]
     > This step is optional. If you choose not to map frontline attributes, leave the values as **None**. You can always come back and map them later on the [Dynamic teams settings page](#edit-your-frontline-team-settings).
@@ -159,7 +162,7 @@ You can manage your teams when changes happen in your organization.
     |--------|-----------------------------------|------------------------------|
     |Define your frontline worker attribute. |All existing frontline teams will be members that have the new Microsoft Entra attribute defined. |All new frontline teams members will have the new Microsoft Entra attribute defined. |
     |Choose the values applicable to your frontline Microsoft Entra attribute. |All existing frontline team members will reflect your updated values. |All new teams will be populated with members who have the updated Microsoft Entra attributes that you defined. |
-    |Map your frontline attributes for department and job title. |All existing frontline team members will reflect the Microsoft Entra attribute you defined for department and job title. |All new frontline team members will use the Microsoft Entra attribute you defined for department and job title.|
+    |(Preview) Map your frontline attributes for department and job title. |All existing frontline team members will reflect the Microsoft Entra attribute you defined for department and job title. |All new frontline team members will use the Microsoft Entra attribute you defined for department and job title.|
     |Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Microsoft Entra attribute. |
     |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
     |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
