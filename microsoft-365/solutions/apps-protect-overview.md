@@ -81,7 +81,7 @@ In addition to the above list, you can also choose [scope tags](/mem/intune/fund
 
 Different app protection settings are available for each supported platform. It's important to recognize that the iOS/iPadOS and Android platform have the same app protection categories. However, Windows is different. The Windows platform protects organization data by managing the flow of data through Microsoft Edge to your organization's storage locations.
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-15.png" alt-text="App data protection categories" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-15.png" alt-text="App data protection categories." border="false" :::
 
 > [!TIP]
 > To see where app protection and compliance policies fit into the overall Intune architecture, see [High-level architecture for Microsoft Intune](/mem/intune/fundamentals/high-level-architecture).
@@ -121,6 +121,6 @@ To follow the recommended settings when adding app protection policies in Intune
 5. [Verify and monitor app protection](apps-protect-step-5.md)
 6. [Use app protection actions](apps-protect-step-6.md)
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps.png" alt-text="Step 1. Apply minimum data protection" border="false" :::](apps-protect-step-1.md)
+[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps.png" alt-text="Step 1. Apply minimum data protection." border="false" :::](apps-protect-step-1.md)
 
 After you've completed the above steps, you're ready to deploy, manage, and monitor the managed apps your organization uses.

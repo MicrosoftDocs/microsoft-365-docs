@@ -54,6 +54,6 @@ Follow these steps to add the recommended settings when adding app protection po
 5. [Verify and monitor app protection](apps-protect-step-5.md)
 6. [Use app protection actions](apps-protect-step-6.md)
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-01.png" alt-text="Step 1. Apply minimum data protection" border="false" :::](apps-protect-step-1.md)
+[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-01.png" alt-text="Step 1. Apply minimum data protection." border="false" :::](apps-protect-step-1.md)
 
 After you completed the above steps, you are ready to deploy, manage, and monitor the managed apps your organization uses.

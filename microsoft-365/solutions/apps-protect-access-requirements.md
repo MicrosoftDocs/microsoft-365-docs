@@ -29,10 +29,10 @@ For iOS/iPadOS and Android app protection policies, the available app access set
 
 You'll see that iOS/iPadOS offer slightly different app protection functionality.
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-10.png" alt-text="Access requirements UI for iOS/iPadOS" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-10.png" alt-text="Access requirements UI for iOS/iPadOS." border="false" :::
 
 ### Android access requirement settings
 
 Android offers similar functionality to iOS/iPadOS functionality.
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-11.png" alt-text="Access requirements UI for Android" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-11.png" alt-text="Access requirements UI for Android." border="false" :::

@@ -28,6 +28,6 @@ Use the following recommended app protection settings when creating and applying
 
 ## Next step
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-03.png" alt-text="Step 3 - Apply high data protection" border="false" :::](apps-protect-step-3.md)
+[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-03.png" alt-text="Step 3 - Apply high data protection." border="false" :::](apps-protect-step-3.md)
 
 Continue with [Step 3](apps-protect-step-3.md) to apply high data protection in Microsoft Intune.

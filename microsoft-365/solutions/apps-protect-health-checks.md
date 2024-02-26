@@ -30,8 +30,8 @@ Windows app condition settings allow similar settings configuration to the other
 | Max SDK version | ✔ | ✔ | ✖ |
 | Disabled account | ✔ | ✔ | ✔ |
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-14.png" alt-text="Health checks for Windows - App conditions" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-14.png" alt-text="Health checks for Windows - App conditions." border="false" :::
 
 Windows device condition settings are also available for Windows app protection settings.
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-16.png" alt-text="Health checks for Windows - Device conditions" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-16.png" alt-text="Health checks for Windows - Device conditions." border="false" :::

@@ -34,7 +34,7 @@ iOS/iPadOS app condition settings allows the similar settings configuration as A
 | Max SDK version | ✔ | ✖ |
 | Disabled account | ✔ | ✔ |
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-12.png" alt-text="Conditional launch UI for iOS/iPadOS" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-12.png" alt-text="Conditional launch UI for iOS/iPadOS." border="false" :::
 
 In addition, Android device condition settings offers several more setting configuration option compared to iOS/iPadOS.
 
@@ -56,5 +56,5 @@ In addition, Android device condition settings offers several more setting confi
 | Max allowed device threat   level | ✔ | ✔ |
 | Primary MTD service | ✔ | ✔ |
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-13.png" alt-text="Conditional launch UI for Android" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-13.png" alt-text="Conditional launch UI for Android." border="false" :::
 

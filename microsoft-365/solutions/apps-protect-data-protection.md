@@ -37,19 +37,19 @@ The **Data Protection** settings within app protection policies provides the fol
 
 The **Data Transfer** section of the **Data Protection** settings for a iOS/iPadOS specific app protection policy has settings that are specific to the iOS/iPadOS platform. These settings determine how end-users interact with org data in the iOS/iPadOS apps on a device. You select settings to allow or block iTunes and iCloud backups, determine how apps can send and receive org data, restrict end-user initiated data movement between apps, and prevent third-party keyboards. 
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-02.png" alt-text="Data Transfer UI for iOS/iPadOS" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-02.png" alt-text="Data Transfer UI for iOS/iPadOS." border="false" :::
 
 ### Data Transfer for Android app protection policy
 
 The **Data Transfer** section of the **Data Protection** settings for an Android specific app protection policy has settings that are also specific to the Android platform. In addition to the commonly offered app protection settings, Android app protection provides additional settings, such as allowing screen capture and Google Assistant.
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-03.png" alt-text="Data Transfer UI for Android" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-03.png" alt-text="Data Transfer UI for Android." border="false" :::
 
 ### Data Transfer for Windows app protection policy
 
 The **Data Transfer** section of the **Data Protection** settings for a Windows specific app protection policy has settings that are specific to the Windows platform. These DLP settings provide three main options for Android apps. These settings involve how data is received, sent, and moved between apps. 
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-04.png" alt-text="Data Transfer UI for Windows" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-04.png" alt-text="Data Transfer UI for Windows." border="false" :::
 
 ## Encryption
 
@@ -67,7 +67,7 @@ When you enable this setting, the user may be required to set up and use a PIN t
 > [!NOTE]
 > Go to the official Apple documentation to see which iOS encryption modules are FIPS 140-2 compliant or pending FIPS 140-2 compliance.
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-05.png" alt-text="Encryption UI for iOS/iPadOS" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-05.png" alt-text="Encryption UI for iOS/iPadOS." border="false" :::
 
 ### Encryption for Android app protection policy
 
@@ -76,7 +76,7 @@ Intune uses a wolfSSL, 256-bit AES encryption scheme along with the Android Keys
 > [!NOTE]
 > The encryption method is FIPS 140-2 compliant.
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-06.png" alt-text="Encryption UI for Android" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-06.png" alt-text="Encryption UI for Android." border="false" :::
 
 ## Functionality
 
@@ -96,11 +96,11 @@ Additionally, you can allow or block printing org data, restrict web content tra
 
 You'll see that iOS/iPadOS offer slightly different app protection functionality:
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-07.png" alt-text="Functionality UI for iOS/iPadOS" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-07.png" alt-text="Functionality UI for iOS/iPadOS." border="false" :::
 
 Android offers similar functionality to iOS/iPadOS functionality:
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-08.png" alt-text="Functionality UI for Android" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-08.png" alt-text="Functionality UI for Android." border="false" :::
 
 Additionally, Android allows you to select a connection to Microsoft Tunnel VPN when the app specified by your app protection policy is launched.
 
@@ -108,7 +108,7 @@ Additionally, Android allows you to select a connection to Microsoft Tunnel VPN 
 
 For Windows app protection policies, you can choose to allow or block printing org data.
 
-:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-09.png" alt-text="Functionality UI for Windows" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-09.png" alt-text="Functionality UI for Windows." border="false" :::
 
 > [!IMPORTANT]
 > Windows app protection policies allow only Microsoft Edge as the managed app specified in the policy.

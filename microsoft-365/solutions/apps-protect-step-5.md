@@ -45,7 +45,7 @@ The Company Portal includes UI that:
 - Displays device and account metadata.
 - Includes per-app information about the current MAM policy.
 
-:::image type="content" source="../media/protect-managed-apps/intunediagnostics01.png" alt-text="Intune diagnostics" border="false" ::: :::image type="content" source="../media/protect-managed-apps/intuneappinfo01.png" alt-text="Intune app information" border="false" :::
+:::image type="content" source="../media/protect-managed-apps/intunediagnostics01.png" alt-text="Intune diagnostics." border="false" ::: :::image type="content" source="../media/protect-managed-apps/intuneappinfo01.png" alt-text="Intune app information." border="false" :::
 
 End users can also launch the Company Portal's diagnostic console through Microsoft Edge, by entering `about:intunehelp` in the address bar to assist in debugging.
 
@@ -54,6 +54,6 @@ End users can also launch the Company Portal's diagnostic console through Micros
 
 ## Next step
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-06.png" alt-text="Step 6. Use app protection actions" border="false" :::](apps-protect-step-6.md)
+[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-06.png" alt-text="Step 6. Use app protection actions." border="false" :::](apps-protect-step-6.md)
 
 Continue with [Step 6](apps-protect-step-6.md) to use app protection actions in Microsoft Intune.
