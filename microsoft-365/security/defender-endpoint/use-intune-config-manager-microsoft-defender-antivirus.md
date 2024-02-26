@@ -47,11 +47,10 @@ You can use the Microsoft Intune family of products to configure Microsoft Defen
 
 5. Under **Manage**, choose **Properties**.
 
-6. Next to **Configuration settings**, choose **Edit**.
+1. Next to **Configuration settings**, choose **Edit**.
 
    > [!IMPORTANT]
-   > AllowOnAccessProtection and AllowIntrusionPreventionSystem antivirus settings are officially being deprecated and as such cannot be configured. 
-
+   > AllowIntrusionPreventionSystem antivirus settings is officially being deprecated and as such cannot be configured. 
 7. Expand the **Scan** section, and review or edit your scanning settings.
 
 8. Choose **Review + save**.

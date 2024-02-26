@@ -1,16 +1,11 @@
 ---
 title: Remove app restriction API
 description: Use this API to create calls related to removing a restriction from applications from executing.
-keywords: apis, graph api, supported apis, remove device from isolation
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
