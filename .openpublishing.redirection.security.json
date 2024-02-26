@@ -3864,6 +3864,31 @@
       "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control-faq.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-faq",
       "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration-configuration-manager.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration-group-policy-objects.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration-intune.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
      }
    ]
  }
