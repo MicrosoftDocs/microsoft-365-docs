@@ -199,12 +199,17 @@ sections:
           See [Customize all quarantine notifications](quarantine-policies.md#customize-all-quarantine-notifications).
 
       - question: |
-          What permissions are required for admins to download or release any messages from quarantine?
+          What permissions are required for admins to download or release messages from quarantine?
         answer: |
           See the permissions entry [here](quarantine-admin-manage-messages-files.md#what-do-you-need-to-know-before-you-begin).
 
+          > [!TIP]
+          > The ability to manage quarantined messages using [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) ended in February 2023 per MC447339.
+          >
+          > Guest admins from other organizations can't manage quarantined messages. The admin needs to be in the same organization as the recipients.
+
       - question: |
-          I created a custom quarantine for a specific language, but users aren't seeing it. What's going on?
+          I created a custom quarantine notification for a specific language, but users aren't seeing it. What's going on?
         answer: |
           A custom quarantine notification for a different language is shown to users only when their account/mailbox language matches the language in the custom quarantine notification.
 
