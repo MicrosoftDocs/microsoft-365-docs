@@ -71,7 +71,7 @@ After you enable automated feedback response, the user who reported the message 
 
 - **Spam**: If a user reports a message as phishing, the submission triggers AIR on the reported message. If the investigation finds the message is spam, the user who reported the message receives a notification email that looks like this:
 
-  :::image type="content" source="../../media/air-user-automatic-feedback-response/submissions-spam-screenshot-2024-02-21-180335.png" alt-text="An example notification email for spam found." lightbox="../../media/air-user-automatic-feedback-response/submissions-spam-screenshot-2024-02-21-180335.png":::
+  :::image type="content" source="../../media/air-automatic-feedback-spam-email.png" alt-text="An example notification email for spam found." lightbox="../../media/air-automatic-feedback-spam-email.png":::
 
 - **Phishing or malware**: If a user reports a message as phishing, the submission triggers AIR on the reported message. What happens next depends on the results of the investigation:
   - **High confidence phishing or malware**: The message needs to be remediated using one of the following actions:
@@ -85,7 +85,7 @@ After you enable automated feedback response, the user who reported the message 
 
   - **Phishing**: The investigation creates no pending actions, but the user still receives a notification email that the message was found to be phishing. The notification email looks like this:
 
-    :::image type="content" source="../../media/air-automatic-feedback-phishing-or-malware-email.png" alt-text="An example notification email for Phishing or malware found." lightbox="../../media/air-automatic-feedback-phishing-or-malware-email.png":::
+    :::image type="content" source="../../media/air-automatic-feedback-phishing-or-malware-email.png" alt-text="An example notification email for phishing or malware found." lightbox="../../media/air-automatic-feedback-phishing-or-malware-email.png":::
 
 When AIR reaches a verdict and the notification email is sent to the user who reported the message as phishing, the following property values are shown for the entry on the **User reported** tab on the **Submissions** page in the Defender portal:
 
