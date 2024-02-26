@@ -26,7 +26,7 @@ The policies in level 1 enforce a reasonable data access level while minimizing 
 
 Use the following recommended app protection settings when creating and applying Intune app protection for Level 1 enterprise basic data protection.
 
-[!INCLUDE [app-protection-framework-level1](~/../_memdocs/memdocs/intune/includes/app-protection-framework-level1.md)]
+[!INCLUDE [app-protection-framework-level1](/memdocs/intune/includes/app-protection-framework-level1.md)]
 
 ## Next step
 
