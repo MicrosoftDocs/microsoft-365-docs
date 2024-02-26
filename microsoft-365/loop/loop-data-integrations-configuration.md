@@ -32,7 +32,6 @@ Microsoft enabled Jira, Trello, and GitHub integration experiences within [Micro
 - **Import, view, and edit, GitHub items from Loop**
 - **Import, view, and edit, Jira issues from Loop**
 - **Import, view, and edit, Trello boards from Loop**
-- **Import, view, and edit, Azure DevOps items from Loop**
 
 ## User experience expectations when admin settings are configured
 
@@ -64,7 +63,6 @@ The Loop experiences check the following [Cloud Policy](/deployoffice/admincente
 - **Import, view, and edit, GitHub items from Loop**
 - **Import, view, and edit, Jira issues from Loop**
 - **Import, view, and edit, Trello boards from Loop**
-- **Import, view, and edit, Azure DevOps items from Loop**
 
 
 1. Sign in to https://config.office.com/ with your Microsoft 365 admin credentials.
@@ -91,10 +89,6 @@ The Loop experiences check the following [Cloud Policy](/deployoffice/admincente
         - **Enabled**: Trello data integrations in Loop are available to the users.
         - **Disabled**: Trello data integrations in Loop aren't available to the users.
         - **Not configured**: Trello data integrations in Loop are available to the users.
-    - For **Import, view, and edit, Azure DevOps items from Loop**: 
-        - **Enabled**: Azure DevOps data integrations in Loop are available to the users.
-        - **Disabled**: Azure DevOps data integrations in Loop aren't available to the users.
-        - **Not configured**: Azure DevOps data integrations in Loop are available to the users.
 1. Save the policy configuration.
 1. Reassign priority for any security group, if necessary. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
