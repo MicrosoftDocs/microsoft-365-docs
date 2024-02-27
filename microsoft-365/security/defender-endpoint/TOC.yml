@@ -636,6 +636,8 @@
           href: faqs-on-tamper-protection.yml
       - name: Turn on block at first sight
         href: configure-block-at-first-sight-microsoft-defender-antivirus.md
+      - name: Antimalware Scan Interface (AMSI) integration
+        href: amsi-on-mdav.md
       - name: Configure the cloud block timeout period
         href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
       - name: Configure behavioral, heuristic, and real-time protection
