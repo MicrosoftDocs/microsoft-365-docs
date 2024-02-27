@@ -391,8 +391,8 @@ In the default or custom anti-phishing policies, you need to specify the users a
 Use the following steps to review phish messages and search for impersonated users or domains.
 
 1. Use one of the following steps to open Threat Explorer or Real-time detections:
-   - **Threat Explorer**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
-   - **Real-time detections**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
+   - **Threat Explorer**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+   - **Real-time detections**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
 
 2. On the **Explorer** or **Real-time detections** page, select the **Phish** view. For more information about the **Phish** view, see [Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
 
@@ -435,8 +435,8 @@ For more information, see [Investigate and remediate malicious email that was de
 You can export URL click data to a CSV file to view the **Network Message ID** and **Click verdict** values, which helps explain where your URL click traffic originated.
 
 1. Use one of the following steps to open Threat Explorer or Real-time detections:
-   - **Threat Explorer**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
-   - **Real-time detections**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
+   - **Threat Explorer**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+   - **Real-time detections**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
 
 2. On the **Explorer** or **Real-time detections** page, select the **Phish** view. For more information about the **Phish** view, see [Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
 
@@ -454,8 +454,8 @@ You can use the Network Message ID value to search for specific messages in Thre
 Use the following steps in Threat Explorer or Real-time detections to see the malware detected in email by Microsoft 365.
 
 1. Use one of the following steps to open Threat Explorer or Real-time detections:
-   - **Threat Explorer**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
-   - **Real-time detections**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
+   - **Threat Explorer**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+   - **Real-time detections**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
 
 2. On the **Explorer** or **Real-time detections** page, select the **Malware** view. For more information about the **Phish** view, see [Malware view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#malware-view-in-threat-explorer-and-real-time-detections).
 
@@ -483,8 +483,8 @@ Safe Links protection tracks URLs that were allowed, blocked, and overridden. Sa
 Use the following steps to see phishing attempts using URLs in email messages.
 
 1. Use one of the following steps to open Threat Explorer or Real-time detections:
-   - **Threat Explorer**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
-   - **Real-time detections**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
+   - **Threat Explorer**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+   - **Real-time detections**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
 
 2. On the **Explorer** or **Real-time detections** page, select the **Phish** view. For more information about the **Phish** view, see [Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
 
