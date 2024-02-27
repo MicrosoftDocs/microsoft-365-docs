@@ -368,21 +368,6 @@
         href: switch-to-mde-phase-2.md
       - name: Phase 3 - Onboard
         href: switch-to-mde-phase-3.md
-
-    - name: Manage Defender for Endpoint after migration or setup
-      items:
-      - name: Overview
-        href: manage-mde-post-migration.md
-      - name: Use Intune (recommended)
-        href: manage-mde-post-migration-intune.md
-      - name: Use Configuration Manager
-        href: manage-mde-post-migration-configuration-manager.md
-      - name: Use Group Policy
-        href: manage-mde-post-migration-group-policy-objects.md
-      - name: Use PowerShell, WMI, or MPCmdRun.exe
-        href: manage-mde-post-migration-other-tools.md
-      - name: Updating MMA on Windows devices
-        href: update-agent-mma-windows.md
       - name: Server migration scenarios
         items:
         - name: Overview
@@ -449,6 +434,8 @@
           href: configure-machines.md
         - name: Monitor and increase device onboarding
           href: configure-machines-onboarding.md
+        - name: Updating MMA on Windows devices
+          href: update-agent-mma-windows.md
 
     - name: Configure time zone settings
       href: time-settings.md
@@ -816,6 +803,8 @@
       - name: UEFI scanning in Defender for Endpoint
         href: uefi-scanning-in-defender-for-endpoint.md
 
+      - name: "Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus  "
+        href: elam-on-mdav.md
     - name: Address false positives/negatives in Microsoft Defender for Endpoint
       href: defender-endpoint-false-positives-negatives.md
 

@@ -6,7 +6,7 @@ ms.author: aaroncz
 author: cdmm12
 manager: aaroncz
 ms.reviewer: alainme
-ms.date: 12/05/2023
+ms.date: 02/27/2024
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -102,7 +102,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 
 > [!NOTE]
-> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before February 20, 2024. 
+> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before May 5, 2024. 
 
 ## Additional guidance
 

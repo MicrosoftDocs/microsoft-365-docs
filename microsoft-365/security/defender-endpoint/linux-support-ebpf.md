@@ -2,10 +2,10 @@
 title: Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on Linux.
 ms.service: microsoft-365-security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -100,7 +100,7 @@ Post reboot, run the below command to check if audit rules got cleared.
 % sudo auditctl -l
 ```
 
-The output of above command should show no rules or any user added rules. In case the rules didn't get removed, then perform the following steps to clear the audit rules file. 
+The output of above command should show no rules or any user added rules. In case the rules didn't get removed, then perform the following steps to clear the audit rules file.
 
 1. Switch to ebpf mode
   2. Remove the file /etc/audit/rules.d/mdatp.rules
@@ -113,13 +113,18 @@ You can check the agent health status by running the **mdatp** health command. M
 ```bash
 uname -a
 ```
-Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result into kernel hang issues. 
 
-Following steps can be taken to mitigate this issue:     
+#### Known Issues
 
-1. Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
+1. Enabling eBPF on RHEL 8.1 version with SAP might result in kernel panic. To mitigate this issue you can take one of the following steps:
 
-2. Switch to auditd mode if customer needs to use the same kernel version
+    - Use a distro version higher than RHEL 8.1.
+    - Switch to auditd mode if you need to use RHEL 8.1 version
+
+2. Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result in kernel panic. To mitigate this issue you can take one of the following steps:
+
+    - Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8 if you want to use eBPF as supplementary subsystem provider. Note that the minimum kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4
+    - Switch to auditd mode if you need to use the same kernel version
 
 ```bash
 sudo mdatp config  ebpf-supplementary-event-provider  --value disabled

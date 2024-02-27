@@ -3,7 +3,7 @@ title: "Mailbox utilization service alerts"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 1/26/2024
+ms.date: 02/20/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
@@ -60,7 +61,7 @@ If an admin increases the Recoverable Items Quota, they should also make sure th
 
 ### MRM retention policies in your organization
 
-Archive retention policies can be configured in a variety of ways, depending on your organization's needs. For detailed information about retention policies, see [Retention tags and retention policies in Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies). An admin can view existing retention policies by running the following command:
+Archive retention policies can be configured in various ways, depending on your organization's needs. For detailed information about retention policies, see [Retention tags and retention policies in Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies). An admin can view existing retention policies by running the following command:
 
 ```powershell
 Get-RetentionPolicy | FL

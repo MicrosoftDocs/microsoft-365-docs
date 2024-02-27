@@ -2,7 +2,7 @@
 title: Manage quarantined messages and files as an admin
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -60,6 +60,8 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 
   > [!TIP]
   > The ability to manage quarantined messages using [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) ended in February 2023 per MC447339.
+  >
+  > Guest admins from other organizations can't manage quarantined messages. The admin needs to be in the same organization as the recipients.
 
 - Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantine retention](quarantine-about.md#quarantine-retention).
 
