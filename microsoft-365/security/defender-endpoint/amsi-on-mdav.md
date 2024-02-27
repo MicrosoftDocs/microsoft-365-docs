@@ -1,42 +1,81 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
-title: Antimalware Scan Interface (AMSI) and MDAV integration
-description: Antimalware Scan Interface (AMSI) and MDAV integration
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
-ms.service: defender-endpoint
-ms.topic: overview
-ms.date:     02/27/2024
-ms.subservice: ngp
-contributors_to_exclude:
-- yongrhee-msft
+title: "Antimalware Scan Interface (AMSI) integration with Microsoft Defender Antivirus"  
+description:  
+author:  
+ms.author: dansimp  
+manager:  dansimp
+ms.date: 02/27/2024  
+ms.topic:  
+ms.service: microsoft-365-security  
+ms.subservice: mdvm  
+ms.localizationpriority:  
+ms.collection:  
+ms.custom: QuickDraft  
+ms.reviewer: dansimp  
+search.appverid: MET150  
+f1.keywords:  
+audience:  
+ai-usage:  
+- ai-assisted  
 ---
-
-# Antimalware Scan Interface (AMSI) and MDAV integration
 
 __Applies to:__
 
 - Microsoft Defender XDR
-
 - Microsoft Defender for Endpoint P2
-
 - Microsoft Defender for Business
-
 - Microsoft Defender for Endpoint P1
-
 - Microsoft Defender Antivirus
-
 - Microsoft Defender for Individuals
-
  
 __Platforms__
 - Windows 10 and newer
-
 - Windows Server 2016 and newer
 
+
+# Antimalware Scan Interface (AMSI) integration with Microsoft Defender Antivirus
+
+Microsoft Defender for Endpoint utilizes the Antimalware Scan Interface (AMSI) to enhance protection against fileless malware, dynamic
+script-based attacks, and other non-traditional cyber threats. This article will discuss the benefits of AMSI integration, the types of
+scripting languages it supports, and how to enable AMSI for improved security.
+
+### Why AMSI?
+
+AMSI provides a deeper level of inspection for malicious software that employs obfuscation and evasion techniques on Windows' built-in scripting hosts. By integrating AMSI, Microsoft Defender for Endpoint offers additional layers of protection against advanced threats.
+
+### Supported Scripting Languages
+- PowerShell
+- Jscript
+- VBScript
+- Windows Script Host (wscript.exe and cscript.exe)
+- .NET Framework 4.8 or newer (scanning of all assemblies)
+- Windows Management Instrumentation (WMI)
+
+If you use Microsoft Office 365, AMSI also supports JavaScript, VBA,
+and XLM.
+
+Note that AMSI does not currently support Python or Perl.
+
+### Enabling AMSI
+To enable AMSI, follow these steps:
+
+1.  Enable "Turn on script scanning"
+
+For more information on configuring scanning options, refer to the
+following resources:
+
+- [Configure scanning options for Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus)
+- [Defender Policy CSP - Windows Client Management](/windows/client-management/mdm/policy-csp-defender)
+
+### AMSI Features and Future Developments
+
+[Antimalware Scan Interface (AMSI) APIs](/windows/win32/amsi/antimalware-scan-interface-portal) are also available for developers and antivirus
+vendors to implement.
+
+Note that other Microsoft products such as [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/more-about-amsi-integration-with-exchange-server/ba-p/2572371) and [Sharepoint](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/cyberattack-protection-by-default-and-other-enhancements-to/ba-p/3925641) also use AMSI
+integration. 
+
+## END rewrite
  
 Microsoft Defender Antivirus has [Antimalware Scan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) integrated in order to expose and block fileless malware such as dynamic script-based malware and non-traditional avenues of cyberattack.
  
