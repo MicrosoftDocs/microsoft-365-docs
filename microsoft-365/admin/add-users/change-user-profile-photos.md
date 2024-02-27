@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.date: 9/29/2023
 audience: Admin
 ms.topic: article
