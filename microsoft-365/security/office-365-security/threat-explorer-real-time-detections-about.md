@@ -60,13 +60,15 @@ To use Explorer or Real-time detections, you need to be assigned permissions. Yo
   - _Remediate malicious email_: **Security operations/Security data/Email advanced actions (manage)**.
 - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
   - _Full access_: Membership in the **Organization Management** or **Compliance Management** role groups.
+  - _Search for Exchange mail flow rules (transport rules) by name in Threat Explorer_: Membership in the **Compliance Management**, **Hygiene Management**, **O365 Support View Only**, **Organization Management**, **Records Management**, **Security Administrator**, **Security Reader**, or **View-Only Organization Management** role groups.
   - _Read-only access_: Membership in the **View-Only Organization Management** or **View-Only Recipients** role groups.
 - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
   - _Full access_: Membership in the **Organization Management** or **Security Administrator** role groups.
-  - _Preview and download messages_: Membership in the **Preview** role group.
+  - _Preview and download messages_: Membership in the **Data Investigator** or **eDiscovery Manager** role groups. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) and add the **Preview** role to it.
   - _Read-only access_: Membership in the **Security Reader** role group.
 - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
   - _Full access_: Membership in the **Global Administrator** or **Security Administrator** roles.
+  - _Search for Exchange mail flow rules (transport rules) by name in Threat Explorer_: Membership in the **Security Admin** or **Security Reader** roles.
   - _Read-only access_: Membership in the **Global Reader** or **Security Reader** roles.
 
 To use Threat Explorer or Real-time detections, you need to be assigned a license for Defender for Office 365 (included in your subscription or an add-on license).
@@ -162,14 +164,14 @@ The filterable properties that are available in the **Delivery action** box in t
 |Context|Select one or more values: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|
 |Connector|Text. Separate multiple values by commas.|
 |Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|
-|Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).</li></ul>|
+|Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**: The message was retroactively identified as good.</li><li>**ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).</li></ul>|
 |Directionality|Select one or more values: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|
 |Detection technology|Select one or more values: <ul><li>**Advanced filter**: Signals based on machine learning.</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**: [Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.</li><li>**File detonation reputation**: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.</li><li>**File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.</li><li>**Fingerprint matching**: The message closely resembles a previous detected malicious message.</li><li>**General filter**</li><li>**Impersonation brand**: Sender impersonation of well-known brands.</li><li>**Impersonation domain**: Impersonation of sender domains that you own or specified for protection in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).</li><li>**Mixed analysis detection**: Multiple filters contributed to the message verdict.</li><li>**spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).</li><li>**Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.</li><li>**Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.</li><li>**URL detonation reputation**: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.</li><li>**URL malicious reputation**: The message contains a URL that was previously identified as malicious in other Microsoft 365 organizations.</li></ul>|
 |Original delivery location|Select one or more values: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|
-|Latest delivery location|Same values as **Original delivery location**</li></ul>|
+|Latest delivery location¹|Same values as **Original delivery location**</li></ul>|
 |Phish confidence level|Select one or more values: <ul><li>**High**</li><li>**Normal**</li></ul>|
 |Primary override|Select one or more values: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|
-|Primary override source|Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|
+|Primary override source|Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel** (ZAP)</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|
 |Override source|Same values as **Primary override source**</li></ul>|
 |Policy type|Select one or more values: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|
 |Policy action|Select one or more values: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|
@@ -189,12 +191,12 @@ The filterable properties that are available in the **Delivery action** box in t
 |ZAP URL signal|Text. Separate multiple values by commas.|
 |**Urls**||
 |URL Count|Integer. Separate multiple values by commas.|
-|URL domain|Text. Separate multiple values by commas.|
-|URL domain and path|Text. Separate multiple values by commas.|
-|URL|Text. Separate multiple values by commas.|
-|URL path|Text. Separate multiple values by commas.|
+|URL domain²|Text. Separate multiple values by commas.|
+|URL domain and path²|Text. Separate multiple values by commas.|
+|URL²|Text. Separate multiple values by commas.|
+|URL path²|Text. Separate multiple values by commas.|
 |URL source|Select one or more values: <ul><li>**Attachments**</li><li>**Cloud attachment**</li><li>**Email body**</li><li>**Email header**</li><li>**QR Code**</li><li>**Subject**</li><li>**Unknown**</li></ul>|
-|Click verdict|Select one or more values: <ul><li>**Allowed**</li><li>**Block overridden**</li><li>**Blocked**</li><li>**Error**</li><li>**Failure**</li><li>**None**</li><li>**Pending verdict**</li><li>**Pending verdict bypassed**</li></ul>|
+|Click verdict|Select one or more values: <ul><li>**Allowed**: The user was allowed to open the URL.</li><li>**Block overridden**: The user was blocked from directly opening the URL, but they overrode the block to open the URL.</li><li>**Blocked**: The user was blocked from opening the URL.</li><li>**Error**: The user was presented with the error page, or an error occurred in capturing the verdict.</li><li>**Failure**: An unknown exception occurred while capturing the verdict. The user might have opened the URL.</li><li>**None**: Unable to capture the verdict for the URL. The user might have opened the URL.</li><li>**Pending verdict**: The user was presented with the detonation pending page.</li><li>**Pending verdict bypassed**: The user was presented with the detonation page, but they overrode the message to open the URL.</li></ul>|
 |URL Threat|Select one or more values: <ul><li>**Malware**</li><li>**Phish**</li><li>**Spam**</li></ul>|
 |**File**||
 |Attachment Count|Integer. Separate multiple values by commas.|
@@ -207,6 +209,21 @@ The filterable properties that are available in the **Delivery action** box in t
 |DKIM|Select one or more values: <ul><li>**Error**</li><li>**Fail**</li><li>**Ignore**</li><li>**None**</li><li>**Pass**</li><li>**Test**</li><li>**Timeout**</li><li>**Unknown**</li></ul>|
 |DMARC|Select one or more values: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|
 |Composite|Select one or more values: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
+
+¹ **Latest delivery location** doesn't include end-user actions on messages. For example, if the user deleted the message or moved the message to an archive or PST file.
+
+There are scenarios where **Original delivery location**/**Latest delivery location** and/or **Delivery action** have the value **Unknown**. For example:
+
+- The message was delivered (**Delivery action** is **Delivered**), but an Inbox rule moved the message to a default folder other than the Inbox or Junk Email folder (for example, the Draft or Archive folder) .
+- ZAP attempted to move the message after delivery, but the message wasn't found (for example, the user moved or deleted the message). <!--- In such cases, verify the **Result/Details** column in timeline view. Look for the statement "Message moved or deleted by the user."--->
+
+² By default, a URL search maps to `http`, unless another value is explicitly specified. For example:
+
+- Searching with and without the `http://` prefix in **URL**, **URL Domain**, and **URL Domain and Path** should show the same results.
+- Search for the `https://` prefix in **URL**. When no value is specified, the `http://` prefix is assumed.
+- `/` at the beginning and end of the **URL path**, **URL Domain**, **URL domain and path** fields is ignored.
+- `/` at the end of the **URL** field is ignored.
+
 
 ### Pivots for the chart in the All email view in Threat Explorer
 
@@ -468,7 +485,7 @@ The **Top URLs** view shows a details table. You can sort the entries by clickin
 - **Messages junked**
 - **Messages delivered**
 
-##### Top URL details for the All email view
+##### Top URLs details for the All email view
 
 When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens with the following information:
 
@@ -541,11 +558,11 @@ The **Top clicks** view shows a details table. You can sort the entries by click
 > - Narrow the width of appropriate columns.
 > - Zoom out in your web browser.
 
-When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The flyout contains the same information as described in the [details flyout for the Top URLs tab](#top-url-details-for-the-all-email-view).
+When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The flyout contains the same information as described in the [details flyout for the Top URLs tab](#top-urls-details-for-the-all-email-view).
 
 #### Top targeted users view for the details area of the All email view in Threat Explorer
 
-The **Top targeted users** view organizes the data into a table of the recipients who were targeted by the most threats. The table contains the following information:
+The **Top targeted users** view organizes the data into a table of the top five recipients who were targeted by the most threats. The table contains the following information:
 
 - **Top targeted users** column: The recipient's email address.
 
@@ -578,6 +595,9 @@ The **Top targeted users** view organizes the data into a table of the recipient
 - The number of attempts column: If you select the number of attempts, Threat Explorer opens in a new tab filtered by the recipient.
 
 :::image type="content" source="../../media/te-rtd-all-email-view-details-area-top-targeted-users-tab-details-flyout.png" alt-text="The details flyout after you select a recipient from the Top targeted users tab of the details area in the All email view of Threat Explorer." lightbox="../../media/te-rtd-all-email-view-details-area-top-targeted-users-tab-details-flyout.png":::
+
+> [!TIP]
+> Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of up to 3000 users and the corresponding attempts.
 
 #### Email origin view for the details area of the All email view in Threat Explorer
 
@@ -835,10 +855,13 @@ The **Top malware families** view for the details area organizes the data into a
 
 #### Top targeted users view for the details area of the Malware view in Threat Explorer
 
-The **Top targeted users** view organizes the data into a table of the top recipients who were targeted by malware. The list shows:
+The **Top targeted users** view organizes the data into a table of the top five recipients who were targeted by malware. The list shows:
 
 - **Top targeted users**: The email address of the top targeted user. If you select an email address, a details flyout opens that contains additional information. This information is the same as described in [Top targeted users view for the details area of the All email view in Threat Explorer](#top-targeted-users-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
 - The number of attempts: If you select the number of attempts, Threat Explorer opens in a new tab filtered by the malware family name.
+
+> [!TIP]
+> Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of up to 3000 users and the corresponding attempts.
 
 #### Email origin view for the details area of the Malware view in Threat Explorer
 
@@ -1128,11 +1151,11 @@ The **Top URLs** view shows a details table. You can sort the entries by clickin
 - **Messages junked**
 - **Messages delivered**
 
-##### Top URL details for the Phish view
+##### Top URLs details for the Phish view
 
 When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
 
-The same information is available and described for the **All email** view in Threat Explorer. For more information, see [Top URL details for the All email view](#top-url-details-for-the-all-email-view).
+The same information is available and described for the **All email** view in Threat Explorer. For more information, see [Top URLs details for the All email view](#top-urls-details-for-the-all-email-view).
 
 > [!TIP]
 > The :::image type="icon" source="../../media/m365-cc-sc-go-hunt-icon.png" border="false"::: **Go hunt** action is available only in Threat Explorer. It isn't available in Real-time detections.
@@ -1160,14 +1183,17 @@ The **Top clicks** view shows a details table. You can sort the entries by click
 > - Narrow the width of appropriate columns.
 > - Zoom out in your web browser.
 
-When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The flyout contains the same information as the [details flyout for the Top URLs tab in the Phish and All email views](#top-url-details-for-the-all-email-view).
+When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The flyout contains the same information as the [details flyout for the Top URLs tab in the Phish and All email views](#top-urls-details-for-the-all-email-view).
 
 #### Top targeted users view for the details area of the Phish view in Threat Explorer
 
-The **Top targeted users** view organizes the data into a table of the top recipients who were targeted by phishing attempts. The list shows:
+The **Top targeted users** view organizes the data into a table of the top five recipients who were targeted by phishing attempts. The list shows:
 
 - **Top targeted users**: The email address of the top targeted user. If you select an email address, a details flyout opens that contains additional information. This information is the same as described in [Top targeted users view for the details area of the All email view in Threat Explorer](#top-targeted-users-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
 - The number of attempts: If you select the number of attempts, Threat Explorer opens in a new tab filtered by the malware family name.
+
+> [!TIP]
+> Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of up to 3000 users and the corresponding attempts.
 
 #### Email origin view for the details area of the Phish view in Threat Explorer
 
@@ -1451,14 +1477,17 @@ The **Top clicks** view shows a details table. You can sort the entries by click
 
 Select an entry by selecting the check box next to the first column in the row, and then select :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all clicks** to open Threat Explorer in a new tab in **URL clicks** view. <!--- Doesn't work? No filters --->
 
-When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The flyout contains the same information as described in the [details flyout for the Top URLs tab](#top-url-details-for-the-all-email-view).
+When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The flyout contains the same information as described in the [details flyout for the Top URLs tab](#top-urls-details-for-the-all-email-view).
 
 #### Top targeted users view for the details area of the URL clicks view in Threat Explorer
 
-The **Top targeted users** view organizes the data into a table of the top recipients who clicked on URLs. The list shows:
+The **Top targeted users** view organizes the data into a table of the top five recipients who clicked on URLs. The list shows:
 
 - **Top targeted users**: The email address of the top targeted user. If you select an email address, a details flyout opens that contains additional information. This information is the same as described in [Top targeted users view for the details area of the All email view in Threat Explorer](#top-targeted-users-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
 - The number of attempts: If you select the number of attempts, Threat Explorer opens in a new tab filtered by the malware family name.
+
+> [!TIP]
+> Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of up to 3000 users and the corresponding attempts.
 
 ## Property filters in Threat Explorer and Real-time detections
 

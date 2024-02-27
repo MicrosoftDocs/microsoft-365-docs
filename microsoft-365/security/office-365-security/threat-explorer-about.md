@@ -41,41 +41,6 @@ Threat Explorer or Real-time detections helps your security operations team inve
 
 ## The Threat Hunting Experience
 
-### Tags in Threat Explorer
-
-> [!NOTE]
-> The user tags feature is in *Preview*, isn't available to everyone, and is subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
-
-User tags identify specific groups of users in Microsoft Defender for Office 365. For more information about tags, including licensing and configuration, see [User tags](user-tags-about.md).
-
-In Threat Explorer, you can see information about user tags in the following experiences.
-
-#### Email grid view
-
-The **Tags** column in the email grid contains all the tags that have been applied to the sender or recipient mailboxes. By default, system tags like priority accounts are shown first.
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/tags-grid.png" alt-text="Screenshot of the Filter tags in email grid view." lightbox="../../media/tags-grid.png":::
-
-#### Filtering
-
-You can use tags as a filter. Hunt just across priority accounts or specific user tags scenarios. You can also exclude results that have certain tags. Combine this functionality with other filters to narrow your scope of investigation.
-
-:::image type="content" source="../../media/tags-filter-normal.png" alt-text="Filter tags." lightbox="../../media/tags-filter-normal.png":::
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/tags-filter-not.png" alt-text="Screenshot of tags that are not filtered." lightbox="../../media/tags-filter-not.png":::
-
-#### Email detail flyout
-
-To view the individual tags for sender and recipient, select the subject to open the message details flyout. On the **Summary** tab, the sender and recipient tags are shown separately, if they're present for an email.
-The information about individual tags for sender and recipient also extends to exported CSV data, where you can see these details in two separate columns.
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/tags-flyout.png" alt-text="Screenshot of the Email Details tags." lightbox="../../media/tags-flyout.png":::
-
-Tags information is also shown in the URL clicks flyout. To view it, go to Phish or All Email view and then to the **URLs** or **URL Clicks** tab. Select an individual URL flyout to view additional details about clicks for that URL, including tags associated with that click.
-
 ### Updated Timeline View
 
 > [!div class="mx-imgBorder"]

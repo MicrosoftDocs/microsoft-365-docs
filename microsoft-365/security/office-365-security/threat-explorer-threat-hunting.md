@@ -44,6 +44,13 @@ Watch this short video to learn how to hunt and investigate email and collaborat
 > [!TIP]
 > Advanced hunting in Microsoft Defender XDR supports an easy-to-use query builder that doesn't use the Kusto Query Language (KQL). For more information, see [Build queries using guided mode](/microsoft-365/security/defender/advanced-hunting-query-builder).
 
+The following information is available in this article:
+
+- [A general walkthrough of Threat Explorer and Real-time detections](#threat-explorer-and-real-time-detections-walk-through)
+- [The threat hunting experience using Threat Explorer and Real-time detections](#the-threat-hunting-experience-using-threat-explorer-and-real-time-detections)
+- [Extended capabilities in Threat Explorer](#extended-capabilities-in-threat-explorer)
+- [Scenarios in Threat Explorer and Real-time detections](#scenarios-in-threat-explorer-and-real-time-detections)
+
 ## Threat Explorer and Real-time detections walk-through
 
 Threat Explorer or Real-time detections is available in the **Email & collaboration** section in the Microsoft Defender portal at <https://security.microsoft.com>:
@@ -98,9 +105,6 @@ You can think of refining the focus in Threat Explorer or Real-time detections a
 
 For example, you can retrace the steps you took to find a threat by recording your decisions like this: To find the issue in Threat Explorer, I used the **Malware** view and used a **Recipient** filter focus.
 
-> [!TIP]
-> If you use [User tags](user-tags-about.md) to mark high value targets accounts (for example, the **Priority account** tag) you can use those tags as filters. For example, the **Phish** view with a **Tags** filter focus. This method shows phishing attempts directed at high value target accounts during a specific time period.
-
 Also, be sure to test your display options. Different audiences (for example, management) might react better or worse to different presentations of the same data.
 
 For example, in Threat Explorer the **All email** view, the **Email origin** and **Campaigns** views (tabs) are available in the details area at the bottom of the page:
@@ -117,37 +121,6 @@ You can use this information for the following results:
 
 - To show the need for security and protection.
 - To later demonstrate the effectiveness of any actions.
-
-### Threat hunting from Alerts
-
-In Defender for Office 365 Plan 2, the **Alerts** page is available in the Defender portal at <https://security.microsoft.com/alerts>. Many alerts with the **Detection source** value **MDO** have the :::image type="icon" source="../../media/m365-cc-sc-show-trends-icon.png" border="false"::: **View messages in Explorer** action available at the top of the alert details flyout. The alert details flyout opens when you click anywhere on the alert other than the check box next to the first column. For example:
-
-- **A potentially malicious URL click was detected**
-- **Admin submission result completed**
-- **Email messages containing malicious URL removed after delivery​**
-- **Email messages removed after delivery**
-- **Messages containing malicious entity not removed after delivery**
-- **Phish not zapped because ZAP is disabled**
-
-:::image type="content" source="../../media/alerts-mdo-details-flyout-actions.png" alt-text="The available actions in the alert details flyout of an alert with the Detections source value MDO from the Alerts page in the Defender portal." lightbox="../../media/alerts-mdo-details-flyout-actions.png":::
-
-Selecting **View messages in Explorer** opens Threat Explorer in the **All email** view with the property filter **Alert ID** selected for the alert. The **Alert ID** value is a unique GUID value for the alert (for example, 89e00cdc-4312-7774-6000-08dc33a24419).
-
-**Alert ID** is a filterable property in the following views in Threat Explorer and Real-time detections:
-
-- [The **All email** view in Threat Explorer](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-all-email-view-in-threat-explorer).
-- [The **Malware** view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-malware-view-in-threat-explorer-and-real-time-detections)
-- [The **Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-phish-view-in-threat-explorer-and-real-time-detections)
-
-In those views, **Alert ID** is available as a selectable column in the details area below the chart in the following tabs (views):
-
-- [The **Email** view for the details area of the **All email** view in Threat Explorer](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer)
-- [The **Email** view for the details area of the **Malware** view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections)
-- [The **Email** view for the details area of the **Phish** view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections)
-
-In the [details flyout that opens when you click on a **Subject** value from one of the entries](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view), the **Alert ID** link is available in the **Email details** section of the flyout. Selecting the **Alert ID** link opens the **View alerts** page at <https://security.microsoft.com/viewalertsv2> with the alert selected and the details flyout open for the alert.
-
-:::image type="content" source="../../media/view-alerts-page-with-details-flyout.png" alt-text="The alert details flyout on the View alerts page after you select an Alert ID from the Subject details flyout of an entry in the Email tab from the All email, Malware, or Phish views in Threat Explorer or Real-time detections." lightbox="../../media/view-alerts-page-with-details-flyout.png":::
 
 ### Email investigation
 
@@ -265,3 +238,285 @@ Selecting **Take action** opens the **Take action** wizard in a flyout:
    Select **Back** to go back and change your selections.
 
    When you're finished on the **Review and submit** page, select **Submit**.
+
+## The threat hunting experience using Threat Explorer and Real-time detections
+
+Threat Explorer or Real-time detections helps your security operations team investigate and respond to threats efficiently. The following subsections explain how Threat Explorer and Real-time detections can help you find threats.
+
+### Threat hunting from Alerts
+
+In Defender for Office 365 Plan 2, the **Alerts** page is available in the Defender portal at <https://security.microsoft.com/alerts>.
+
+Many alerts with the **Detection source** value **MDO** have the :::image type="icon" source="../../media/m365-cc-sc-show-trends-icon.png" border="false"::: **View messages in Explorer** action available at the top of the alert details flyout.
+
+The alert details flyout opens when you click anywhere on the alert other than the check box next to the first column. For example:
+
+- **A potentially malicious URL click was detected**
+- **Admin submission result completed**
+- **Email messages containing malicious URL removed after delivery​**
+- **Email messages removed after delivery**
+- **Messages containing malicious entity not removed after delivery**
+- **Phish not zapped because ZAP is disabled**
+
+:::image type="content" source="../../media/alerts-mdo-details-flyout-actions.png" alt-text="The available actions in the alert details flyout of an alert with the Detections source value MDO from the Alerts page in the Defender portal." lightbox="../../media/alerts-mdo-details-flyout-actions.png":::
+
+Selecting **View messages in Explorer** opens Threat Explorer in the **All email** view with the property filter **Alert ID** selected for the alert. The **Alert ID** value is a unique GUID value for the alert (for example, 89e00cdc-4312-7774-6000-08dc33a24419).
+
+**Alert ID** is a filterable property in the following views in Threat Explorer and Real-time detections:
+
+- [The **All email** view in Threat Explorer](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-all-email-view-in-threat-explorer).
+- [The **Malware** view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-malware-view-in-threat-explorer-and-real-time-detections)
+- [The **Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-phish-view-in-threat-explorer-and-real-time-detections)
+
+In those views, **Alert ID** is available as a selectable column in the details area below the chart in the following tabs (views):
+
+- [The **Email** view for the details area of the **All email** view in Threat Explorer](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer)
+- [The **Email** view for the details area of the **Malware** view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections)
+- [The **Email** view for the details area of the **Phish** view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections)
+
+In the [details flyout that opens when you click on a **Subject** value from one of the entries](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view), the **Alert ID** link is available in the **Email details** section of the flyout. Selecting the **Alert ID** link opens the **View alerts** page at <https://security.microsoft.com/viewalertsv2> with the alert selected and the details flyout open for the alert.
+
+:::image type="content" source="../../media/view-alerts-page-with-details-flyout.png" alt-text="The alert details flyout on the View alerts page after you select an Alert ID from the Subject details flyout of an entry in the Email tab from the All email, Malware, or Phish views in Threat Explorer or Real-time detections." lightbox="../../media/view-alerts-page-with-details-flyout.png":::
+
+### Tags in Threat Explorer
+
+In Defender for Office 365 Plan 2, if you use [user tags](user-tags-about.md) to mark high value targets accounts (for example, the **Priority account** tag) you can use those tags as filters. For example, the **Phish** view with a **Tags** filter focus. This method shows phishing attempts directed at high value target accounts during a specific time period. For more information about user tags, see [User tags](user-tags-about.md).
+
+User tags are available in the following locations in Threat Explorer:
+
+- [A filterable property in the **All email** view](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-all-email-view-in-threat-explorer).
+- [An available column in the **Email** tab (view) of the details area in the **All email** view](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
+- [A filterable property in the **Malware** view](threat-explorer-real-time-detections-about.md#malware-view-in-threat-explorer-and-real-time-detections).
+- [An available column in the **Email** tab (view) of the details area in the **Malware** view](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections).
+- [A filterable property in the **Phish** view](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
+- [An available column in the **Email** tab (view) of the details area in the **Phish** view](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections).
+- [A filterable property in the **URL clicks** view](threat-explorer-real-time-detections-about.md#url-clicks-view-in-threat-explorer).
+- [An available column in the **Results** tab (view) of the details area in the **URL clicks** view](threat-explorer-real-time-detections-about.md#results-view-for-the-details-area-of-the-url-clicks-view-in-threat-explorer).
+- [The **Subject** details flyout from the **Email** tab (view)](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view) in the **All email**, **Malware**, or **Phish** view.
+
+<!--- ### Updated Timeline View
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/tags-urls.png" alt-text="Screenshot of the URL tags." lightbox="../../media/tags-urls.png":::
+>
+Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). --->
+
+### Threat information for email messages
+
+Pre-delivery and post-delivery actions on email messages are consolidated into a single record, regardless of the different post-delivery events that affected the message. For example:
+
+- [Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).
+- Manual remediation (admin action).
+- [Dynamic Delivery](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).
+
+[The **Subject** details flyout from the **Email** tab (view)](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view) in the **All email**, **Malware**, or **Phish** views shows the associated threats and the corresponding detection technologies that are associated with the email message. A message can have zero, one, or multiple threats.
+
+- In the **Delivery details** section, the **Detection technology** property shows the detection technology that identified the threat. **Detection technology** is also available as a chart pivot or a column in the details table for many views in Threat Explorer and Real-time detections.
+
+- The **URLs** section shows specific **Threat** information for any URLs in the message. For example, **Malware**, **Phish**, **Spam** or **None**.
+
+> [!TIP]
+> Verdict analysis might not necessarily be tied to entities. The filters evaluate content and other details of an email message before assigning a verdict. For example, an email message might be classified as phishing or spam, but no URLs in the message are stamped with a phishing or spam verdict.
+
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="The details tab after you select a subject in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
+
+<!-- ### Updated timeline view (upcoming)
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/Email_Timeline.png" alt-text="Screenshot of the updated Timeline View." lightbox="../../media/Email_Timeline.png":::
+
+Timeline view identifies all delivery and post-delivery events. It includes information about the threat identified at that point of time for a subset of these events. Timeline view also provides information about any additional action taken (such as ZAP or manual remediation), along with the result of that action. Timeline view information includes:
+
+- **Source:** Source of the event. It can be admin/system/user.
+- **Event:** Includes top-level events like original delivery, manual remediation, ZAP, submissions, and Dynamic Delivery.
+- **Action:** The specific action that was taken either as part of ZAP or admin action (for example, soft delete).
+- **Threats:** Covers the threats (malware, phish, spam) identified at that point of time.
+- **Result/Details:** More information about the result of the action, such as whether it was performed as part of ZAP/admin action. --->
+
+## Extended capabilities in Threat Explorer
+
+The following subsections describe filters that are exclusive to Threat Explorer.
+
+### Exchange mail flow rules (transport rules)
+
+To find messages that were affected by Exchange mail flow rules (also known as transport rules), you have the following options in the **All email**, **Malware**, and **Phish** views in Threat Explorer (not in Real-time detections):
+
+- **Exchange transport rule** is a selectable value for the **Primary override source**, **Override source**, and **Policy type** filterable properties.
+- **Exchange transport rule** is a filterable property. You enter a partial text value for the name of the rule.
+
+For more information, see the following links:
+
+- [All email view in Threat Explorer](threat-explorer-real-time-detections-about.md#all-email-view-in-threat-explorer)
+- [Malware view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#malware-view-in-threat-explorer-and-real-time-detections)
+- [Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections)
+
+The **Email** tab (view) for the details area of the **All email**, **Malware**, and **Phish** views in Threat Explorer also have **Exchange transport rule** as an available column that's not selected by default. This column shows the name of the transport rule. For more information, see the following links:
+
+- [Email view for the details area of the All email view in Threat Explorer](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer)
+- [Email view for the details area of the Malware view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections)
+- [Email view for the details area of the Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections)
+
+> [!TIP]
+> For the permissions required to search for mail flow rules by name in Threat Explorer, see [Permissions and licensing for Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#permissions-and-licensing-for-threat-explorer-and-real-time-detections). No special permissions are required to see rule names in email details flyouts, details tables, and exported results.
+
+### Inbound connectors
+
+Inbound connectors specify specific settings for email sources for Microsoft 365. For more information, see [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+
+To find messages that were affected by inbound connectors, you can use the **Connector** filterable property to search for connectors by name in the **All email**, **Malware**, and **Phish** views in Threat Explorer (not in Real-time detections). You enter a partial text value for the name of the connector. For more information, see the following links:
+
+- [All email view in Threat Explorer](threat-explorer-real-time-detections-about.md#all-email-view-in-threat-explorer)
+- [Malware view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#malware-view-in-threat-explorer-and-real-time-detections)
+- [Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections)
+
+The **Email** tab (view) for the details area of the **All email**, **Malware**, and **Phish** views in Threat Explorer also have **Connector** as an available column that's not selected by default. This column shows the name of the connector. For more information, see the following links:
+
+- [Email view for the details area of the All email view in Threat Explorer](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer)
+- [Email view for the details area of the Malware view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections)
+- [Email view for the details area of the Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections)
+
+## Scenarios in Threat Explorer and Real-time detections
+
+The following subsections describe scenarios in Threat Explorer and Real-time detections for common scenarios.
+
+### View phishing emails sent to impersonated users and domains
+
+For more information about user and domain impersonation protection in anti-phishing policies in Defender for Office 365, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+In the default or custom anti-phishing policies, you need to specify the users and domains to protect from impersonation, including domains you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)). In the Standard or Strict preset security policies, domains that you own automatically receive impersonation protection, but you need to specify any users or custom domains for impersonation protection. For instructions, see the following articles:
+
+- [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
+
+Use the following steps to review phish messages and search for impersonated users or domains.
+
+1. Use one of the following steps to open Threat Explorer or Real-time detections:
+   - **Threat Explorer**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+   - **Real-time detections**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
+
+2. On the **Explorer** or **Real-time detections** page, select the **Phish** view. For more information about the **Phish** view, see [Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
+
+3. Select the date/time range. The default is yesterday and today.
+
+4. Do any of the following steps:
+   - **Find any user or domain impersonation attempts**:
+     - Select the **Sender address** (property) box, and then select **Detection technology** in the **Basic** section of the drop down list.
+     - Verify **Equal any of** is selected as the filter operator.
+     - In the property value box, select **Impersonation domain** and **Impersonation user**
+
+   - **Find specific impersonated user attempts**:
+     - Select the **Sender address** (property) box, and then select **Impersonated user** in the **Basic** section of the drop down list.
+     - Verify **Equal any of** is selected as the filter operator.
+     - In the property value box, enter the full email address of the recipient. Separate multiple recipient values by commas.
+
+   - **Find specific impersonated domain attempts**:
+     - Select the **Sender address** (property) box, and then select **Impersonated domain** in the **Basic** section of the drop down list.
+     - Verify **Equal any of** is selected as the filter operator.
+     - In the property value box, enter the domain (for example, contoso.com). Separate multiple domain values by commas.
+
+5. Enter more conditions using other filterable properties as required. For instructions, see [Property filters in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#property-filters-in-threat-explorer-and-real-time-detections).
+
+6. When you're finished creating the filter conditions, select **Refresh**.
+
+7. In the details area below the chart, verify the **Email** tab (view) is selected.
+
+   You can sort the entries and show more columns as described in [Email view for the details area of the Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections).
+
+   If you select the **Subject** or **Recipient** value of an entry in the table, a details flyout opens. For more information, see [Subject details from the Email view of the details area in the Phish view](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-phish-view) and [Recipient details from the Email view of the details area in the Phish view](threat-explorer-real-time-detections-about.md#recipient-details-from-the-email-view-of-the-details-area-in-the-phish-view).
+
+<!--- ### Email timeline
+
+The **Email timeline** is a new Explorer feature that improves the hunting experience for admins. It cuts the time spent checking different locations to try to understand the event. When multiple events happen at or close to the same time an email arrives, those events are displayed in a timeline view. Some events that happen to your email post-delivery are captured in the **Special action** column. Admins can combine  information from the timeline with the special action taken on the mail post-delivery to get insight into how their policies work, where the mail was finally routed, and, in some cases, what the final assessment was.
+
+For more information, see [Investigate and remediate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md). -->
+
+### Export URL click data
+
+You can export URL click data to a CSV file to view the **Network Message ID** and **Click verdict** values, which helps explain where your URL click traffic originated.
+
+1. Use one of the following steps to open Threat Explorer or Real-time detections:
+   - **Threat Explorer**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+   - **Real-time detections**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
+
+2. On the **Explorer** or **Real-time detections** page, select the **Phish** view. For more information about the **Phish** view, see [Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
+
+3. Select the date/time range, and then select **Refresh**. The default is yesterday and today.
+
+4. In the details area, select the **Top URLs** or **Top clicks** tab (view).
+
+5. In the **Top URLs** or **Top clicks** view, select one or more entries from the table by selecting the check box next to the first column, and then select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export**.
+**Explorer** \> **Phish** \> **Clicks** \> **Top URLs** or **URL Top Clicks** \> select any record to open the URL flyout.
+
+You can use the Network Message ID value to search for specific messages in Threat Explorer or Real-time detections or associated third-party tools. These searches identify the email message that's associated with a click result. Having the correlated Network Message ID makes for quicker and more powerful analysis.
+
+### See malware detected in email
+
+Use the following steps in Threat Explorer or Real-time detections to see the malware detected in email by Microsoft 365.
+
+1. Use one of the following steps to open Threat Explorer or Real-time detections:
+   - **Threat Explorer**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+   - **Real-time detections**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
+
+2. On the **Explorer** or **Real-time detections** page, select the **Malware** view. For more information about the **Phish** view, see [Malware view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#malware-view-in-threat-explorer-and-real-time-detections).
+
+3. Select the date/time range. The default is yesterday and today.
+
+4. Select the **Sender address** (property) box, and then select **Detection technology** in the **Basic** section of the drop down list.
+   - Verify **Equal any of** is selected as the filter operator.
+   - In the property value box, select one or more of the following values:
+     - **Anti-malware protection**
+     - **File detonation**
+     - **File detonation reputation**
+     - **File reputation**
+     - **Fingerprint matching**
+
+5. Enter more conditions using other filterable properties as required. For instructions, see [Property filters in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#property-filters-in-threat-explorer-and-real-time-detections).
+
+6. When you're finished creating the filter conditions, select **Refresh**.
+
+The report shows the results that malware detected in email, using the technology options you selected. From here, you can conduct further analysis.
+
+### View phishing URL and click verdict data
+
+Safe Links protection tracks URLs that were allowed, blocked, and overridden. Safe Links protection is on by default, thanks to Built-in protection in [preset security policies](preset-security-policies.md). Safe Links protection is on in the Standard and Strict preset security policies. You can also create an configure Safe Links protection in [custom Safe Links policies](safe-links-policies-configure.md). For more information about the Safe Links policy settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+
+Use the following steps to see phishing attempts using URLs in email messages.
+
+1. Use one of the following steps to open Threat Explorer or Real-time detections:
+   - **Threat Explorer**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+   - **Real-time detections**: In the Defender portal at <https://sescurity.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
+
+2. On the **Explorer** or **Real-time detections** page, select the **Phish** view. For more information about the **Phish** view, see [Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
+
+3. Select the date/time range. The default is yesterday and today.
+
+4. Select the **Sender address** (property) box, and then select **Click verdict** in the **URLs** section of the drop down list.
+   - Verify **Equal any of** is selected as the filter operator.
+   - In the property value box, select one or more of the following values:
+     - **Blocked**
+     - **Blocked overridden**
+
+5. Enter more conditions using other filterable properties as required. For instructions, see [Property filters in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#property-filters-in-threat-explorer-and-real-time-detections).
+
+6. When you're finished creating the filter conditions, select **Refresh**.
+
+The **Top URLs** tab (view) in the details area below the chart shows the count of **Messages blocked**, **Messages junked**, and **Messages delivered** for the top five URLs. For more information, see [Top URLs view for the details area of the Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#top-urls-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections).
+
+The **Top clicks** tab (view) in the details area below the chart shows the top five clicked links that were wrapped by Safe Links. URL clicks on unwrapped links don't show up here. For more information, see [Top clicks view for the details area of the Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#top-clicks-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections).
+
+These URL tables show URLs that were blocked or visited despite a warning, so you can see the potential bad links that were presented to users. From here, you can conduct further analysis.
+
+Select a URL from an entry in the to view more information. For more information, see [URL details for the Top URLs and Top clicks tabs in Phish view](threat-explorer-real-time-detections-about.md#top-urls-details-for-the-phish-view).
+
+> [!TIP]
+> In the URL details flyout, the filtering on email messages is removed to show the full view of the URL's exposure in your environment. This behavior lets you filter for specific email messages, find specific URLs that are potential threats, and then expand your understanding of the URL exposure in your environment without having to add URL filters in the **Phish** view.
+
+### More ways to use Explorer and Real-time detections
+
+In addition to the scenarios outlined in this article, you have more options available in Explorer or Real-time detections. For more information, see the following articles:
+
+- [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
+- [Threat protection status report](reports-email-security.md#threat-protection-status-report)
+- [Automated investigation and response in Microsoft Defender XDR](../defender/m365d-autoir.md)
+- [Trigger an investigation from Threat Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+- [Investigate emails with the Email Entity Page](mdo-email-entity-page.md)
