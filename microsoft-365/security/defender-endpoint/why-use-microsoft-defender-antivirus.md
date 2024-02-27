@@ -37,7 +37,7 @@ Microsoft Defender Antivirus is the next-generation protection component of [Mic
 
 Although you can use a non-Microsoft antivirus solution with Microsoft Defender for Endpoint, there are advantages to using Microsoft Defender Antivirus together with Defender for Endpoint. Not only is Microsoft Defender Antivirus an excellent next-generation antivirus solution, but combined with other Defender for Endpoint capabilities, such as [endpoint detection and response](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) and [automated investigation and remediation](/microsoft-365/security/defender-endpoint/automated-investigations), you get better protection that's coordinated across products and services.
 
-## 11 reasons to use Microsoft Defender Antivirus together with Microsoft Defender for Endpoint
+## 13 reasons to use Microsoft Defender Antivirus together with Microsoft Defender for Endpoint
 
 |#|Advantage|Why it matters|
 |--|--|--|
