@@ -67,11 +67,11 @@ You can use Microsoft Defender for Endpoint Security Settings Management, Micros
 
 ### Use Configuration Manager to check for protection updates before running a scan
 
-1. On your Microsoft Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
+1. On your Microsoft Configuration Manager console, open the antimalware policy you want to change (select **Assets and Compliance** in the navigation pane, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**).
 
 2. Go to the **Scheduled scans** section and set **Check for the latest security intelligence updates before running a scan** to **Yes**.
 
-3. Click **OK**.
+3. Select **OK**.
 
 4. [Deploy the updated policy as usual](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
@@ -81,13 +81,13 @@ You can use Microsoft Defender for Endpoint Security Settings Management, Micros
 
 2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
-3. Click **Policies** then **Administrative templates**.
+3. Select **Policies** then **Administrative templates**.
 
 4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
 
 5. Double-click **Check for the latest virus and spyware definitions before running a scheduled scan** and set the option to **Enabled**.
 
-6. Click **OK**.
+6. Select **OK**.
 
 ### Use PowerShell cmdlets to check for protection updates before running a scan
 
