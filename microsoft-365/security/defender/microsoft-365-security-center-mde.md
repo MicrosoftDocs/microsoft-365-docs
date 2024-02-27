@@ -8,7 +8,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 02/14/2024
+ms.date: 02/27/2024
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -28,6 +28,8 @@ ms.custom: admindeeplinkDEFENDER
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+This article describes the Defender for Endpoint experience in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Formerly, Defender for Endpoint customers used the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com) or [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)).
 
 ## Quick reference
 
