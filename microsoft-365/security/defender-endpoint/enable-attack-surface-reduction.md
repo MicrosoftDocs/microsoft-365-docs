@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: siosulli
 ms.author: siosulli
-manager: dansimp
+manager: deniseb
 ms.subservice: asr
 ms.topic: how-to
 ms.collection: 
