@@ -100,8 +100,8 @@ In addition to configuring your cloud protection level, you can configure your s
 - **Do not send samples**  
 
 > [!TIP]
-> Setting to "Send all samples automatically" provides higher amount of security since phishing attacks are used for a high amount of [initial access attacks](https://attack.mitre.org/tactics/TA0001/).
-For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection at Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
+> Using the `Send all samples automatically` option provides for better security, because phishing attacks are used for a high amount of [initial access attacks](https://attack.mitre.org/tactics/TA0001/).
+For information about configuration options using Intune, Configuration Manager, Group Policy, or PowerShell, see [Turn on cloud protection at Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ## Examples of metadata sent to the cloud protection service
 
