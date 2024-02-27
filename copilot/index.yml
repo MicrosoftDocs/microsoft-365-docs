@@ -14,15 +14,6 @@ metadata:
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 09/21/2023 #Required; mm/dd/yyyy format.
 
-# highlightedContent section (Optional; Remove if not applicable.)
-# Maximum of 8 items
-highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
-  items:
-    # Card
-    - title: Join us Feb 28-29 for the Copilot for Microsoft 365 Tech Accelerator event.
-      itemType: whats-new
-      url: https://aka.ms/AccelerateCopilot
 
 # additionalContent section (Optional; Remove if not applicable.)
 # Card with links style
