@@ -28,7 +28,7 @@ search.appverid: met150
 
 - Microsoft Defender Antivirus
 
-- Microsoft Defender for Individual
+- Microsoft Defender for individuals
 
 This article/section describes the contextual file and folder exclusions capability for Microsoft Defender Antivirus on Windows. This capability allows you to be more specific when you define under which context Microsoft Defender Antivirus shouldn't scan a file or folder, by applying restrictions.
 
