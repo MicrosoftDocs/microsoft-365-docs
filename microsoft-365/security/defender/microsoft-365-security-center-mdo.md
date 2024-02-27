@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Office 365 in the Microsoft Defender portal
 description: Learn about changes from the Security & Compliance Center to The Microsoft Defender portal.
-ms.date: 02/14/2024
+ms.date: 02/27/2024
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -25,6 +25,8 @@ ms.service: defender-xdr
 **Applies to:**
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+
+This article describes the Defender for Office 365 experience in the Microsoft Defender portal. Formerly, Defender for Office 365 customers used the Office 365 Security & Compliance center ([https://protection.office.com](https://protection.office.com)).
 
 ## Quick reference
 
