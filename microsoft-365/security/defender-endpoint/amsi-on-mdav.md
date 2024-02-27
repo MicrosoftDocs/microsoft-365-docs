@@ -19,6 +19,8 @@ ai-usage:
 - ai-assisted  
 ---
 
+# Antimalware Scan Interface (AMSI) integration with Microsoft Defender Antivirus
+
 __Applies to:__
 
 - Microsoft Defender XDR
@@ -33,8 +35,6 @@ __Platforms__
 - Windows Server 2016 and newer
 
 
-# Antimalware Scan Interface (AMSI) integration with Microsoft Defender Antivirus
-
 Microsoft Defender for Endpoint utilizes the Antimalware Scan Interface (AMSI) to enhance protection against fileless malware, dynamic
 script-based attacks, and other non-traditional cyber threats. This article will discuss the benefits of AMSI integration, the types of
 scripting languages it supports, and how to enable AMSI for improved security.
@@ -47,20 +47,16 @@ Because memory is volatile, and fileless malware doesn't place files on disk, es
 
 Attackers use several fileless techniques that can make malware implants stealthy and evasive. These techniques include: 
 
-### Reflective DLL injection 
-Reflective DLL injection involves the manual loading of malicious DLLs into a process’ memory without the need for said DLLs to be on disk. The malicious DLL can be hosted on a remote attacker-controlled machine and delivered through a staged network channel (for example, Transport Layer Security (TLS) protocol), or embedded in obfuscated form inside infection vectors like macros and scripts. This results in the evasion of the OS mechanism that monitors and keeps track of loading executable modules. An example of malware that uses Reflective DLL injection is HackTool:Win32/Mikatz!dha. 
+- **Reflective DLL injection** Reflective DLL injection involves the manual loading of malicious DLLs into a process’ memory without the need for said DLLs to be on disk. The malicious DLL can be hosted on a remote attacker-controlled machine and delivered through a staged network channel (for example, Transport Layer Security (TLS) protocol), or embedded in obfuscated form inside infection vectors like macros and scripts. This results in the evasion of the OS mechanism that monitors and keeps track of loading executable modules. An example of malware that uses Reflective DLL injection is HackTool:Win32/Mikatz!dha. 
 
-### Memory exploits 
-Adversaries use fileless memory exploits to run arbitrary code remotely on victim machines. For example, the UIWIX threat uses the EternalBlue exploit, which was used by both Petya and WannaCry, and has been observed to install the DoublePulsar backdoor, which lives entirely in the kernel’s memory (SMB Dispatch Table). Unlike Petya and Wannacry, UIWIX does not drop any files on disk. 
+- **Memory exploits** Adversaries use fileless memory exploits to run arbitrary code remotely on victim machines. For example, the UIWIX threat uses the EternalBlue exploit, which was used by both Petya and WannaCry, and has been observed to install the DoublePulsar backdoor, which lives entirely in the kernel’s memory (SMB Dispatch Table). Unlike Petya and Wannacry, UIWIX does not drop any files on disk. 
 
-### Script-based techniques 
-Scripting languages provide powerful means for delivering memory-only executable payloads. Script files can embed encoded shellcodes or binaries that they can decrypt on the fly at run time and execute via .NET objects or directly with APIs without requiring them to be written to disk. The scripts themselves can be hidden in the registry, read from network streams, or simply run manually in the command-line by an attacker, without ever touching the disk. 
+- **Script-based techniques** Scripting languages provide powerful means for delivering memory-only executable payloads. Script files can embed encoded shellcodes or binaries that they can decrypt on the fly at run time and execute via .NET objects or directly with APIs without requiring them to be written to disk. The scripts themselves can be hidden in the registry, read from network streams, or simply run manually in the command-line by an attacker, without ever touching the disk. 
 
 > [!NOTE]
 > Do not disable PowerShell as a means to block fileless malware. PowerShell is a powerful and secure management tool and is important for many system and IT functions. Attackers use malicious PowerShell scripts as post-exploitation technique that can only take place after an initial compromise has already occurred. Its misuse is a symptom of an attack that begins with other malicious actions like software exploitation, social engineering, or credential theft. The key is to prevent an attacker from getting into the position where they can misuse PowerShell.
 
-### WMI persistence 
-Some attackers use the Windows Management Instrumentation (WMI) repository to store malicious scripts that are then invoked periodically using WMI bindings.
+- **WMI persistence** Some attackers use the Windows Management Instrumentation (WMI) repository to store malicious scripts that are then invoked periodically using WMI bindings.
 
 Microsoft Defender Antivirus blocks the vast majority of malware using generic, heuristic, and behavior-based detections, as well as local and cloud-based machine learning models. Microsoft Defender Antivirus protects against fileless malware through these capabilities: 
 
