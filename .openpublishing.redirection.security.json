@@ -3821,6 +3821,11 @@
       "redirect_document_id": false
      },
      {
+      "source_path": "microsoft-365/security/defender/safety-scanner-download.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/safety-scanner-download",
+      "redirect_document_id": false
+     },
+     {
       "source_path": "microsoft-365/security/intelligence/criteria.md",
       "redirect_url": "/microsoft-365/security/defender/criteria",
       "redirect_document_id": false

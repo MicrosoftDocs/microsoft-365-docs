@@ -990,11 +990,11 @@
        - name: Phishing trends
          href: malware/phishing-trends.md
        - name: Phishing
-         href: malware/phishing-malware-infection.md
+         href: malware/phishing.md
        - name: Prevent malware infection
          href: malware/prevent-malware-infection.md
        - name: Rootkits
-         href: malware/rootkit-malware.md
+         href: malware/rootkits-malware.md
        - name: Supply chain malware
          href: malware/supply-chain-malware.md
        - name: Support scams
