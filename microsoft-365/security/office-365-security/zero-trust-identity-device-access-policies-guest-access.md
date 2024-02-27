@@ -3,10 +3,10 @@ title: Identity and device access policies for allowing guest and external user 
 description: Describes the recommended Conditional Access and related policies for protecting access of guests and external users.
 ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
-ms.author: dansimp
-author: dansimp
+ms.author: tracyp
+author: MSFTTracyP
 audience: Admin
-manager: Laurawi
+manager: dansimp
 f1.keywords:
   - NOCSH
 ms.reviewer: martincoetzer
