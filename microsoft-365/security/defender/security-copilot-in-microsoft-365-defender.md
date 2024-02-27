@@ -76,6 +76,14 @@ Security operations teams usually write reports to record important information,
 
 :::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-new-sec-copilot-m365d-create-report.png" alt-text="Screenshot of the Copilot-generated incident report in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig2-expand-sec-copilot-m365d-create-report.png":::
 
+### Generate device summaries
+
+Investigating devices involved in incidents can be a tasking job. Copilot in Defender can help you quickly [summarize a device's information](copilot-in-defender-device-summary.md) to get essential information about the device, including the device's security posture, any unusual behaviors, and vulnerable software information.
+
+### Analyze files
+
+The [file analysis](copilot-in-defender-file-analysis.md) capability in Copilot in Defender helps security teams quickly understand the nature of a file, including detection information, related file certificate, list of API calls the file makes, and strings found in the file. Having file analysis instantly available to security teams allows them to quickly assess the nature of a file and decide on the next steps.
+
 ## Provide feedback to Copilot
 
 Copilot in Defender uses AI and machine learning to process data and generate results for each of the key features. However, AI might misinterpret some data, which sometimes cause a mismatch in results. Providing your feedback about the generated responses enable both Copilot in Defender to continuously improve delivery of more accurate responses in the future.
