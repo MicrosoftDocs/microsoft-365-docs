@@ -2,10 +2,11 @@
 title: Microsoft Defender for Endpoint evaluation lab
 description: Learn about Microsoft Defender for Endpoint capabilities, run attack simulations, and see how it prevents, detects, and remediates threats.
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
+ms.reviewer: noamhadash
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -14,10 +15,13 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/02/2023
+ms.date: 02/27/2024
 ---
 
 # Microsoft Defender for Endpoint evaluation lab
+
+   > [!IMPORTANT]
+   > **The Microsoft Defender for Endpoint evaluation lab was deprecated in January, 2024**.
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 

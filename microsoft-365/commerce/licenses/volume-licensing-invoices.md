@@ -19,7 +19,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to access your non-Azure volume licensing invoices in the Microsoft 365 admin center."
-ms.date: 09/29/2023
+ms.date: 02/21/2024
 ---
 
 # Microsoft volume licensing invoices
@@ -130,7 +130,7 @@ The invoice recon file is a CSV file that includes the same information as the I
 |Product Family|The logical categorization of products.|
 |License Type|Reflects the terms of buying the product.|
 |Price Level|The price categorization of product.|
-|Billing Option|How frequently the customer is billed. The frequency options are upfront, monthly, quarterly, semi-annually, or annually.|
+|Billing Option|How frequently the customer is billed. The frequency options are upfront, monthly, every three months, every six months, or yearly.|
 |Taxable|Indicates whether the product is taxable.|
 |Pool|The classification of the product into a system, server, or application.|
 |Service Period Start Date, Service Period End Date|Indicates the eligible service period.|
@@ -193,7 +193,7 @@ Only the **Bill To contact** participant on the agreement can view the correspon
 
 ## How often and when am I billed?
 
-Depending on the billing frequency you choose when you bought your subscription, you receive an invoice either upfront, monthly, quarterly, semi-annually, or annually. The amount of time since the last invoice date is the **Billing Period** and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+Depending on the billing frequency you choose when you bought your subscription, you receive an invoice either upfront, monthly, every three months, every six months, or yearly. The amount of time since the last invoice date is the **Billing Period** and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
 
 ## Why is my total due different from last billing period?
 
