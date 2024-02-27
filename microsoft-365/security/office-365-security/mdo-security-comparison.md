@@ -1,8 +1,8 @@
 ---
 title: Office 365 Security including Microsoft Defender for Office 365 and Exchange Online Protection
-ms.author: tracyp
-author: msfttracyp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: high
