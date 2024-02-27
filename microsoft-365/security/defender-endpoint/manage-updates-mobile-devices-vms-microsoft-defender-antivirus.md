@@ -2,9 +2,6 @@
 title: Define how mobile devices are updated by Microsoft Defender Antivirus
 description: Manage how mobile devices, such as laptops, should be updated with Microsoft Defender Antivirus protection updates.
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 ms.topic: conceptual
 author: siosulli
