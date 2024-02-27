@@ -32,7 +32,6 @@ Here are the primary investigate and respond tasks for Microsoft Defender XDR:
 - [Review and approve automatic remediation actions](#automated-investigation-and-remediation)
 - [Search for known threats in your data](#proactive-search-for-threats-with-advanced-hunting)
 - [Understand the latest cyberattacks](#get-ahead-of-emerging-threats-with-threat-analytics)
-- [Get help](#collaborate-with-microsoft-defender-experts)
 
 ## Incident response
 
