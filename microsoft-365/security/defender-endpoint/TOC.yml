@@ -805,6 +805,8 @@
       - name: UEFI scanning in Defender for Endpoint
         href: uefi-scanning-in-defender-for-endpoint.md
 
+      - name: "Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus  "
+        href: elam-on-mdav.md
     - name: Address false positives/negatives in Microsoft Defender for Endpoint
       href: defender-endpoint-false-positives-negatives.md
 

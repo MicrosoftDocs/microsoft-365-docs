@@ -1,8 +1,8 @@
 ---
 title: Why do I need Microsoft Defender for Office 365?
-ms.author: tracyp
-author: msfttracyp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: high
