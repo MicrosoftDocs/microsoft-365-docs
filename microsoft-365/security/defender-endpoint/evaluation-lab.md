@@ -4,6 +4,7 @@ description: Learn about Microsoft Defender for Endpoint capabilities, run attac
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: noamhadash
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -14,7 +15,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/02/2023
+ms.date: 02/27/2024
 ---
 
 # Microsoft Defender for Endpoint evaluation lab
