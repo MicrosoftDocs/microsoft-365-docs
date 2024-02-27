@@ -28,11 +28,12 @@ ms.date: 03/01/2024
 
 **Applies to:**
 
+- Microsoft Defender
 - Microsoft Defender XDR
 
-## Copilot for Security in advanced hunting
+## Microsoft Copilot for Security in advanced hunting
 
-[Microsoft Copilot for Security in Microsoft Defender XDR](security-copilot-in-microsoft-365-defender.md) comes with a query assistant capability in advanced hunting. 
+[Microsoft Copilot for Security in Microsoft Defender](security-copilot-in-microsoft-365-defender.md) comes with a query assistant capability in advanced hunting. 
 
 Threat hunters or security analysts who are not yet familiar with or have yet to learn KQL can make a request or ask a question in natural language (for instance, *Get all alerts involving user admin123*). Copilot for Security then generates a KQL query that corresponds to the request using the advanced hunting data schema.
 
@@ -41,9 +42,10 @@ This feature reduces the time  it takes to write a hunting query from scratch so
 Users with access to Copilot for Security have access to this capability in advanced hunting.
 
 > [!NOTE]
-> The advanced hunting capability is also available in the Security Copilot standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
+> The advanced hunting capability is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
 
 ## Try your first request
+
 1. Open the **advanced hunting** page from the navigation bar in Microsoft Defender XDR. The Copilot for Security side pane for advanced hunting appears at the right hand side.
 
     :::image type="content" source="../../media/advanced-hunting-security-copilot-pane.png" alt-text="Screenshot of the Copilot pane in advanced hunting." lightbox="../../media/advanced-hunting-security-copilot-pane.png":::
@@ -73,7 +75,6 @@ Users with access to Copilot for Security have access to this capability in adva
    
 1. You can provide feedback about the generated response by selecting the feedback **smiley icon** and choosing  **Confirm**, **Off-target**, or **Report**.
 
-    
 
 > [!TIP]
 > Providing feedback is an important way to let the Microsoft Copilot for Security team know how well the query assistant was able to help in generating a useful KQL query. Feel free to articulate what could have made the query better, what adjustments you had to make before running the generated KQL query, or share the KQL query that you eventually used. 

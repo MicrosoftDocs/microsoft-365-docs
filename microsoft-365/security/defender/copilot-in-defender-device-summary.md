@@ -11,7 +11,7 @@ f1.keywords:
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -49,16 +49,17 @@ The device summary capability of Copilot in Defender enables security teams to g
 To access the device summary capability, perform the following steps:
 
 1. From the main menu, select **Devices** under Assets to open the Device inventory page. Select a device to investigate from the list. Upon opening the file page, Copilot automatically summarizes the device information of the chosen device and displays the summary in the Copilot pane.
-[INSERT SCREENSHOT OF DEVICE SUMMARY IN THE DEVICE PAGE]
+ [INSERT SCREENSHOT OF DEVICE SUMMARY IN THE DEVICE PAGE]
 2. From an incident page, you can choose a device on the incident graph and then select **Device details**. On the device pane, select **Copilot** to generate the device summary. The summary is displayed in the Copilot pane.
-[INSERT SCREENSHOT OF DEVICE SUMMARY IN THE INCIDENT PAGE]
+ [INSERT SCREENSHOT OF DEVICE SUMMARY IN THE INCIDENT PAGE]
 You can also access the device summary capability by choosing a device listed in the **Assets** tab of an incident. Select **Copilot** in the device pane to generate the device summary.
-[INSERT SCREENSHOT OF DEVICE SUMMARY IN THE ASSETS TAB]
+ [INSERT SCREENSHOT OF DEVICE SUMMARY IN THE ASSETS TAB]
 3. Review the results. Provide feedback about the results by navigating to the bottom of the Copilot pane and selecting the feedback icon.
 
 ## See also
 
 - [Run script analysis](security-copilot-m365d-script-analysis.md)
+- [Analyze files](copilot-in-defender-file-analysis.md)
 - [Summarize an incident](security-copilot-m365d-incident-summary.md)
 - [Resolve incidents with guided responses](security-copilot-m365d-guided-response.md)
 - [Get started with Copilot for Security](/security-copilot/get-started-security-copilot)
