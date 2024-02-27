@@ -97,12 +97,12 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
-### January-2024 (Platform: 4.18.24010.12 | Engine: 1.1.24010.xxxx)
+### January-2024 (Platform: 4.18.24010.12 | Engine: 1.1.24010.10)
 
-- Security intelligence update version: **x.x.x.x**
+- Security intelligence update version: **1.405.702.0**
 - Release date:  **February 27, 2024**
 - Platform: **4.18.24010.12**
-- Engine: **1.1.24010.xxxx**
+- Engine: **1.1.24010.10**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
