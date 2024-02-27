@@ -146,11 +146,25 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
     You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed. Keep in mind that you can't redeploy Shifts to teams that already have Shifts enabled. The capability to edit Shifts settings configurations for your teams after the first deployment will be supported in the future.
 
+## Edit Shifts settings
+
+If you want to edit the Shifts settings that you previously set, select **Deploy Shifts to your teams**. This allows you to edit Shifts settings for teams you already deployed Shifts to and for teams you deploy Shifts to in the future.
+
+You'll see all your Shifts settings including shift request settings, time-off reasons, schedule owner group ID, and schedule group settings.
+
+You can enable or disable shift request settings, time-off requests, and clock in/clock out by switching the toggles **On** or **Off**. You can add, edit, and delete time-off reasons as you did during initial setup. However, you can't edit the time-off codes for the time-off reasons that you previously set.
+
+You can change the schedule owner group ID that identifies the group that contains all schedule owners.  
+
+You won’t be able to change your selection between **Schedule groups are created and managed by schedule owners** and **Schedule groups are created and managed in the Teams admin center**. If you previously selected that schedule groups are created and managed in the Teams admin center, you can add, edit, and delete schedule groups as you did during the initial setup. However, you can't edit the schedule group codes for any of the schedule groups you previously set.  
+
+After you make your edits, choose **Apply**. This action applies your changes to all teams that you already deployed Shifts to. These Shifts settings will also be applied to any new teams you deploy Shifts to.
+
 ## Troubleshoot errors
 
 If an error occurred during the deployment process, the status in the table shows as **Error** after you refresh the Manage frontline apps page.
 
-Select the link to download an error CSV file and use the information in it to help resolve the errors. Then, rerun the [deployment experience](#deploy-shifts-to-your-frontline-teams).  
+Select the link to download an error CSV file and use the information in it to help resolve the errors. If errors occurred during setup of your Shifts settings, select **Deploy Shifts to your teams** to resubmit or edit your Shifts settings. Then, rerun the [deployment experience](#deploy-shifts-to-your-frontline-teams).
 
 ## Related articles
 
