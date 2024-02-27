@@ -11,3 +11,18 @@
       href: get-access.md
   - name: What's new in Bookings
     href: get-access.md
+  - name: Industry-specific solutions
+    items: 
+    - name: Financial services
+      href: teams-for-financial-services.md
+    - name: Healthcare
+      items:
+      - name: Overview
+        href: teams-in-hc.md
+      - name: Healthcare team templates
+        href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      - name: Teams policy packages for healthcare
+        href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      - name: Messaging policies
+        href: messaging-policies-hc.md
+        
