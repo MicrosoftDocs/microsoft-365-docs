@@ -1,7 +1,6 @@
 ---
 title: Run and customize scheduled and on-demand scans
 description: Customize and initiate Microsoft Defender Antivirus scans on endpoints across your network
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 author: siosulli
