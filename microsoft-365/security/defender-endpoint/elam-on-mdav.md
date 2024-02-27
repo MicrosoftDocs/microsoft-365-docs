@@ -1,18 +1,19 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
-title: 'Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus  '
+title: Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus
 description: How Microsoft Defender Antivirus has incorporated Early Launch Antimalware (ELAM) for preventing rootkit and drivers with malware from loading before the antivirus service and drivers are loaded.
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
+author: siosulli
+ms.author: siosulli
+manager: deniseb
+ms.reviewer: yongrhee
 ms.service: defender-endpoint
 ms.topic: overview
-ms.date:     02/26/2024
+ms.date: 02/26/2024
 ms.subservice: ngp
-contributors_to_exclude:
-- yongrhee-msft
+ms.localizationpriority: medium
+ms.custom: partner-contribution
+search.appverid: MET150
+f1 keywords: NOCSH
+audience: ITPro
 ---
 
 # Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus
