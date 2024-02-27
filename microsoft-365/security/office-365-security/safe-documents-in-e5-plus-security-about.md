@@ -2,7 +2,7 @@
 title: Safe Documents in Microsoft Defender for Office 365
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.reviewer:
 audience: ITPro
 ms.topic: how-to
