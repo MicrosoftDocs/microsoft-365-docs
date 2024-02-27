@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 audience: ITPro
 ---
 
-# Run Microsoft Defender Antivirus in a sandbox environment
+# Run Microsoft Defender Antivirus in a sandbox
 
 **Applies to:**
 
