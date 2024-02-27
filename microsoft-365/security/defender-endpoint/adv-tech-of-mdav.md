@@ -1,18 +1,18 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
 title: Advanced technologies at the core of Microsoft Defender Antivirus
-description: Microsoft Defender Antivirus engines
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
+description: Microsoft Defender Antivirus engines and advanced technologies
+author: siosulli
+ms.author: siosulli
+ms.reviewer: yongrhee
+manager: deniseb
 ms.service: defender-endpoint
 ms.topic: overview
 ms.date:     02/26/2024
 ms.subservice: ngp
-contributors_to_exclude:
-- yongrhee-msft
+ms.localizationpriority: medium
+ms.custom: partner-contribution
+f1.keyboards: NOSCH
+audience: ITPro
 ---
 
 # Advanced technologies at the core of Microsoft Defender Antivirus
