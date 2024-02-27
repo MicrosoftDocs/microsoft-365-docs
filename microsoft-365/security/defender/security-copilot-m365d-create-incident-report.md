@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 04/01/2024
+ms.date: 03/01/2024
 ---
 
 # Create an incident report with Microsoft Copilot for Security in Microsoft Defender
@@ -58,17 +58,17 @@ Copilot in Defender creates an incident report containing the following informat
   - Automated actions applied by the system, including Microsoft Sentinel playbooks ran and Microsoft Defender XDR actions applied
 - Follow up actions like recommendations, open issues, or next steps noted by the analysts in the incident logs
 
-In particular, the incident report includes the following specific automatic and manually-triggered actions and data:
+In particular, the incident report includes data from the following automatic and manually-triggered actions:
 
 |Action source|Description|
 |---|---|
-|[Live response API](/defender-endpoint/api/run-live-response)|Live response commands ran by the live response API|
-|[Live response commands](/defender-endpoint/live-response)|Live response commands run on a device|
+|[Live response API](/defender-endpoint/api/run-live-response)|Live response commands that ran through the live response API|
+|[Live response commands](/defender-endpoint/live-response)|Live response commands that ran on a device|
 |[Response actions on a device](/defender-endpoint/respond-machine-alerts)|Defender for Endpoint response actions that an analyst ran on a device|
 |[Response actions on a file](/defender-endpoint/respond-file-alerts)|Defender for Endpoint response actions that an analyst ran on a file|
 |[Manual remediation actions applied to user accounts and email](m365d-remediation-actions.md#remediation-actions-that-are-taken-manually)|Manual remediation actions taken by analysts on user accounts and email after automated investigations in Defender XDR|
 |[Manual remediation actions taken from query results of advanced hunting](advanced-hunting-take-action.md)|Manual remediation actions taken by analysts on devices and files out of the results from advanced hunting queries|
-|[Microsoft Sentinel playbooks ran](/azure/sentinel/automate-responses-with-playbooks)|Microsoft Sentinel playbooks used|
+|[Microsoft Sentinel playbooks ran](/azure/sentinel/automate-responses-with-playbooks)|Microsoft Sentinel playbooks used in investigation and response|
 
 ## Create an incident report
 
