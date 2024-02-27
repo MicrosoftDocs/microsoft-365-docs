@@ -1,6 +1,6 @@
 ---
 title: Run Microsoft Defender Antivirus in a sandbox environment
-description: This article describes how to run Microsoft Defender Antivirus in a sandbox to further harden against tampering.
+description: This article describes how to run Microsoft Defender Antivirus in a sandbox to further strengthen against tampering.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.topic: conceptual
@@ -50,7 +50,7 @@ Before you begin, you must meet the following requirements:
 
 ## Why run Microsoft Defender Antivirus in a sandbox?
 
-Security researchers, both inside and outside of Microsoft have previously identified ways that an attacker can take advantage of vulnerabilities in Microsoft Defender Antivirus’s content parsers that could enable arbitrary code execution. To inspect the whole system for malicious content and artifacts, the antivirus runs with high privileges (Local System, NT Authority\SYSTEM), making it a target for attacks.
+Security researchers, both inside and outside of Microsoft, have previously identified ways that an attacker can take advantage of vulnerabilities in Microsoft Defender Antivirus’s content parsers that could enable arbitrary code execution. To inspect the whole system for malicious content and artifacts, the antivirus runs with high privileges (Local System, NT Authority\SYSTEM), making it a target for attacks.
 
 Whereas escalation of privilege from a sandbox is so much difficult on the latest versions of Windows 10 or newer and, running Microsoft Defender Antivirus in a sandbox ensures that in the unlikely event of a compromise, malicious actions are limited to the isolated environment, protecting the rest of the system from harm. This is part of Microsoft’s continued investment to stay ahead of attackers through security innovations.
 
@@ -96,19 +96,27 @@ setx /M MP_FORCE_USE_SANDBOX 0
 
 Microsoft Defender Antivirus performs an in-proc fallback that hosts content scanning in the privileged/parent process to provide protection. 
 
+### How is the content process strengthened?
+
 The content processes, which run with low privileges, also aggressively use all available mitigation policies to reduce the surface attack. They enable and prevent runtime changes for modern exploit mitigation techniques such as Data Execution Prevention (DEP), Address space layout randomization (ASLR), and Control Flow Guard (CFG). They also disable Win32K system calls and all extensibility points, as well as enforce that only signed and trusted code is loaded.
+
+**Performance of MDAV with sandbox enabled**
 
 Performance is often the main concern raised around sandboxing, especially given that anti-malware products are in many critical paths like synchronously inspecting file operations and processing and aggregating or matching large numbers of runtime events. To ensure that performance doesn’t degrade, we had to minimize the number of interactions between the sandbox and the privileged process. At the same time, only perform these interactions in key moments where their cost wouldn't be significant, for example, when I/O is being performed.
 
 Microsoft Defender Antivirus makes an orchestrated effort to avoid unnecessary I/O, for example, minimizing the amount of data read for every inspected file is paramount in maintaining good performance, especially on older hardware (rotational disk, remote resources). Thus, it was crucial to maintain a model where the sandbox can request data for inspection as needed, instead of passing the entire content.  
+
+**Reliability of MDAV with sandbox enabled**
 
 > [!NOTE]
 > Passing handles to the sandbox (to avoid the cost of passing the actual content) isn’t an option because there are many scenarios, such as real-time inspection, AMSI, etc., where there’s no ‘sharable’ handle that can be used by the sandbox without granting significant privileges, which decreases the security.
 
 Another significant concern around sandboxing is related to the inter-process communication mechanism to avoid potential problems like deadlocks and priority inversions. The communication shouldn't introduce any potential bottlenecks, either by throttling the caller or by limiting the number of concurrent requests that can be processed. Moreover, the sandbox process shouldn’t trigger inspection operations by itself. All inspections should happen without triggering more scans. This requires fully controlling the capabilities of the sandbox and ensuring that no unexpected operations can be triggered. Low-privilege AppContainers are the perfect way to implement strong guarantees because the capabilities-based model will allow fine-grained control on specifying what the sandbox process can do. 
 
+**Remediation of MDAV with sandbox enabled**
+
 Lastly, a significant challenge from the security perspective is related to content remediation or disinfection. Given the sensitive nature of the action (attempts to restore a binary to the original preinfection content), we needed to ensure that this happens with high privileges in order to mitigate cases in which the content process (sandbox) could be compromised and disinfection could be used to modify the detected binary in unexpected ways.
 
-### Why does troubleshooting the MsMpEngCP.exe process start and stop after a few minutes?
+### What to do while troubleshooting the MsMpEng.CP.exe process, if it starts and stops after a few minutes?
 
-A: If the [support diagnostic logs](collect-diagnostic-data.md) or any relevant dumps/crash information is associated with Windows Error Reporting (WER) events around the time, then the process stops.
+Collect the [support diagnostic logs](collect-diagnostic-data.md) and any relevant dumps/crash information if there are associated Windows Error Reporting (WER) events around the time the process stops.
