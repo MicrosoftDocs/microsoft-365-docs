@@ -6,6 +6,11 @@
        "redirect_document_id": true
      },
      {
+              "source_path": "microsoft-365/security/defender-endpoint/experts-on-demand.md",
+              "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
+              "redirect_document_id": true
+     },
+     {
        "source_path": "microsoft-365/security/defender/defenderexpertsforhuntingprev.md",
        "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
        "redirect_document_id": true
