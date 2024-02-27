@@ -245,7 +245,7 @@ Threat Explorer or Real-time detections helps your security operations team inve
 
 ### Threat hunting from Alerts
 
-In Defender for Office 365 Plan 2, the **Alerts** page is available in the Defender portal at <https://security.microsoft.com/alerts>.
+The **Alerts** page is available in the Defender portal at **Incidents & alerts** \> **Alerts**, or directly at <https://security.microsoft.com/alerts>.
 
 Many alerts with the **Detection source** value **MDO** have the :::image type="icon" source="../../media/m365-cc-sc-show-trends-icon.png" border="false"::: **View messages in Explorer** action available at the top of the alert details flyout.
 
@@ -280,19 +280,25 @@ In the [details flyout that opens when you click on a **Subject** value from one
 
 ### Tags in Threat Explorer
 
-In Defender for Office 365 Plan 2, if you use [user tags](user-tags-about.md) to mark high value targets accounts (for example, the **Priority account** tag) you can use those tags as filters. For example, the **Phish** view with a **Tags** filter focus. This method shows phishing attempts directed at high value target accounts during a specific time period. For more information about user tags, see [User tags](user-tags-about.md).
+In Defender for Office 365 Plan 2, if you use [user tags](user-tags-about.md) to mark high value targets accounts (for example, the **Priority account** tag) you can use those tags as filters. This method shows phishing attempts directed at high value target accounts during a specific time period. For more information about user tags, see [User tags](user-tags-about.md).
 
 User tags are available in the following locations in Threat Explorer:
 
-- [A filterable property in the **All email** view](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-all-email-view-in-threat-explorer).
-- [An available column in the **Email** tab (view) of the details area in the **All email** view](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
-- [A filterable property in the **Malware** view](threat-explorer-real-time-detections-about.md#malware-view-in-threat-explorer-and-real-time-detections).
-- [An available column in the **Email** tab (view) of the details area in the **Malware** view](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections).
-- [A filterable property in the **Phish** view](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
-- [An available column in the **Email** tab (view) of the details area in the **Phish** view](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections).
-- [A filterable property in the **URL clicks** view](threat-explorer-real-time-detections-about.md#url-clicks-view-in-threat-explorer).
-- [An available column in the **Results** tab (view) of the details area in the **URL clicks** view](threat-explorer-real-time-detections-about.md#results-view-for-the-details-area-of-the-url-clicks-view-in-threat-explorer).
-- [The **Subject** details flyout from the **Email** tab (view)](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view) in the **All email**, **Malware**, or **Phish** view.
+- **All email** view:
+  - [As a filterable property](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-all-email-view-in-threat-explorer).
+  - [An available column in the **Email** tab (view) of the details area](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
+  - [The **Subject** details flyout from an entry in the **Email** tab (view)](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view)
+- **Malware** view:
+  - [As a filterable property](threat-explorer-real-time-detections-about.md#malware-view-in-threat-explorer-and-real-time-detections).
+  - [An available column in the **Email** tab (view) of the details area in the **Malware** view](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections).
+  - [[The **Subject** details flyout from an entry in the **Email** tab (view)](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view)
+- **Phish** view:
+  - [As a filterable property](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
+  - [An available column in the **Email** tab (view) of the details](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections).
+  - [[The **Subject** details flyout from an entry in the **Email** tab (view)](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view)
+- **URL clicks** view:
+  - [As a filterable property](threat-explorer-real-time-detections-about.md#url-clicks-view-in-threat-explorer).
+  - [An available column in the **Results** tab (view) of the details area in the **URL clicks** view](threat-explorer-real-time-detections-about.md#results-view-for-the-details-area-of-the-url-clicks-view-in-threat-explorer).
 
 <!--- ### Updated Timeline View
 
