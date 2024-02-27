@@ -3,10 +3,10 @@ title: Deploy Microsoft Defender for Endpoint on Linux manually
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 12/01/2023
+ms.date: 02/21/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
@@ -106,13 +106,16 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
 
   |Distro & version|Package|
   |---|---|
+  |For Alma 8.4 and higher|<https://packages.microsoft.com/config/alma/8/prod.repo>|
   |For Alma 9.2 and higher|<https://packages.microsoft.com/config/alma/9/prod.repo>|
+  |For RHEL/Centos/Oracle 9.0-9.8|<https://packages.microsoft.com/config/rhel/9/prod.repo>|
   |For RHEL/Centos/Oracle 8.0-8.8|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
   |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
   |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
   |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
   |For Rocky 8.7 and higher|<https://packages.microsoft.com/config/rocky/8/prod.repo>|
+  |For Rocky 9.2 and higher|<https://packages.microsoft.com/config/rocky/9/prod.repo>|
 
   <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 
@@ -438,7 +441,7 @@ Download the onboarding package from Microsoft Defender portal.
    mdatp health --field org_id
    ```
 
-4. Check the health status of the product by running the following command. A return value of `1` denotes that the product is functioning as expected:
+4. Check the health status of the product by running the following command. A return value of `true` denotes that the product is functioning as expected:
 
    ```bash
    mdatp health --field healthy
@@ -455,7 +458,7 @@ Download the onboarding package from Microsoft Defender portal.
 
 5. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-   - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
+   - Ensure that real-time protection is enabled (denoted by a result of `true` from running the following command):
 
      ```bash
      mdatp health --field real_time_protection_enabled

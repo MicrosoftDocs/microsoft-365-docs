@@ -1,10 +1,10 @@
 ---
 title: Deploy and manage device control in Microsoft Defender for Endpoint with Group Policy           
 description: Learn how to deploy and manage device control in Defender for Endpoint using Group Policy
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
-ms.date: 01/31/2024
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
+ms.date: 02/14/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -21,6 +21,12 @@ f1.keywords: NOCSH
 ---
 
 # Deploy and manage device control in Microsoft Defender for Endpoint using Group Policy
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 If you're using Group Policy to manage Defender for Endpoint settings, you can use it to deploy and manage device control.
 

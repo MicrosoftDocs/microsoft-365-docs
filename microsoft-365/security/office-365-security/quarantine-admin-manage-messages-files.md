@@ -60,6 +60,8 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 
   > [!TIP]
   > The ability to manage quarantined messages using [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) ended in February 2023 per MC447339.
+  >
+  > Guest admins from other organizations can't manage quarantined messages. The admin needs to be in the same organization as the recipients.
 
 - Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantine retention](quarantine-about.md#quarantine-retention).
 
@@ -112,6 +114,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Transport rule** (mail flow rule)
   - **Bulk**
   - **Spam**
+  - **Data loss prevention**
   - **Malware**: Anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365. The **Policy Type** value indicates which feature was used.
   - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](anti-phishing-policies-about.md#spoof-settings) or [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
   - **High confidence phishing**
@@ -131,6 +134,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Anti-phishing policy**
   - **Anti-spam policy**
   - **Transport rule** (mail flow rule)
+  - **Data loss prevention rule**
 
   The **Policy type** and **Quarantine reason** values are interrelated. For example, **Bulk** is always associated with an **Anti-spam policy**, never with an **Anti-malware policy**.
 
