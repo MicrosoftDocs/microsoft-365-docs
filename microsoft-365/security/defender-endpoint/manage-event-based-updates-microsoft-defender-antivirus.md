@@ -115,19 +115,19 @@ For more information, see [Windows Defender WMIv2 APIs](/previous-versions/windo
 
 You can use Group Policy to force Microsoft Defender Antivirus to check and download protection updates when the machine is started.
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and select **Edit**.
 
 2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
-3. Click **Policies** then **Administrative templates**.
+3. Select **Policies** then **Administrative templates**.
 
 4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
 5. Double-click **Check for the latest virus and spyware definitions on startup** and set the option to **Enabled**.
 
-6. Click **OK**.
+6. Select **OK**.
 
-You can also use Group Policy, PowerShell, or WMI to configure Microsoft Defender Antivirus to check for updates at startup even when it is not running.
+You can also use Group Policy, PowerShell, or WMI to configure Microsoft Defender Antivirus to check for updates at startup even when it isn't running.
 
 ### Use Group Policy to download updates when Microsoft Defender Antivirus is not present
 
