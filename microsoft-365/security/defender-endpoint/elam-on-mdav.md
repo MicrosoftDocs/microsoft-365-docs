@@ -26,7 +26,6 @@ audience: ITPro
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Microsoft Defender for Individual 
 
- 
 **Platforms:**
 - Windows 11, Windows 10, Windows 8.1, Windows 8 
 - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 
@@ -36,20 +35,16 @@ Detecting malware that starts early in the boot cycle was a challenge before Win
 ### Where is the ELAM detection(s) logged?
 The ELAM detection is logged in the same location as the other Microsoft Defender Antivirus threats, such as [Event ID 1006](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus).
 
- 
 ### How do I keep the MDAV ELAM driver up to date?
 The MDAV ELAM driver ships with the monthly “[Platform update](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates).”
 
- 
 ### Can the Early Launch Antimalware (ELAM) policy be modified? 
 ELAM can be modified here: 
 **Computer Configuration > Administrative Templates > System > Early Launch Antimalware.**
 
- 
 ### How can I check that the MDAV ELAM driver is loaded?
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\EarlyLaunch 
 BackupPath (string) C:\Windows[ELAMBKUP](/windows-hardware/drivers/install/elam-driver-requirements)\WdBoot.sys (value)
-
 
 ### How do I revert the MDAV ELAM driver to a previous version?
 C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>\MpCmdRun.exe -[RevertPlatform](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus)<br>
