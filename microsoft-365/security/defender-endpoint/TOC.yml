@@ -982,7 +982,7 @@
        - name: Coinminers
          href: malware/coinminer-malware.md
        - name: Exploits and Exploit Kits
-         href: malware/exploit-malware.md
+         href: malware/exploits-malware.md
        - name: Fileless threats
          href: malware/fileless-threats.md
        - name: Macro threats
@@ -990,25 +990,23 @@
        - name: Phishing trends
          href: malware/phishing-trends.md
        - name: Phishing
-         href: malware/phishing-malware.md
+         href: malware/phishing-malware-infection.md
        - name: Prevent malware infection
          href: malware/prevent-malware-infection.md
        - name: Rootkits
          href: malware/rootkit-malware.md
-       - name: Safety Scanner download
-         href: malware/safety-scanner-download.md
        - name: Supply chain malware
          href: malware/supply-chain-malware.md
        - name: Support scams
          href: malware/support-scams.md
        - name: Trojans
-         href: malware/trojan-malware.md
+         href: malware/trojans-malware.md
        - name: Understanding malware
          href: malware/understanding-malware.md
        - name: Unwated software
          href: malware/unwanted-software.md
        - name: Worms
-         href: malware/worm-malware.md
+         href: malware/worms-malware.md
     - name: Understand threat intelligence concepts
       href: threat-indicator-concepts.md
     - name: Configure integration with other Microsoft solutions
