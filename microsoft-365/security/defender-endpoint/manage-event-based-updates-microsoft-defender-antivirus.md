@@ -77,17 +77,19 @@ You can use Microsoft Defender for Endpoint Security Settings Management, Micros
 
 ### Use Group Policy to check for protection updates before running a scan
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal).
 
-2. Using the **Group Policy Management Editor** go to **Computer configuration**.
+2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-3. Select **Policies** then **Administrative templates**.
+3. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
-4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
+4. Select **Policies** then **Administrative templates**.
 
-5. Double-click **Check for the latest virus and spyware definitions before running a scheduled scan** and set the option to **Enabled**.
+5. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
 
-6. Select **OK**.
+6. Double-click **Check for the latest virus and spyware definitions before running a scheduled scan** and set the option to **Enabled**.
+
+7. Select **OK**.
 
 ### Use PowerShell cmdlets to check for protection updates before running a scan
 
