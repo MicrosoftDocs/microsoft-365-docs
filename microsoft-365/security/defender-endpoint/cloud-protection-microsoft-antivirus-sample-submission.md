@@ -5,7 +5,7 @@ ms.service: defender-endpoint
 ms.localizationpriority: medium
 author: siosulli
 ms.author: siosulli
-ms.reviewer: mkaminska
+ms.reviewer: mkaminska, yongrhee
 manager: deniseb
 ms.subservice: ngp
 ms.topic: conceptual
