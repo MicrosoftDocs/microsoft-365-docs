@@ -1,18 +1,14 @@
 ---
 title: Schedule antivirus scans using PowerShell
 description: Schedule antivirus scans using PowerShell
-keywords: quick scan, full scan, antivirus, schedule, PowerShell
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: pauhijbr, ksarens
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 ms.topic: how-to
 ms.collection: 
@@ -25,12 +21,15 @@ search.appverid: met150
 # Schedule antivirus scans using PowerShell
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender for Business
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 **Platforms**
 - Windows
+- Windows Server
 
 This article describes how to configure scheduled scans using PowerShell cmdlets. To learn more about scheduling scans and about scan types, see [Configure scheduled quick or full Microsoft Defender Antivirus scans](schedule-antivirus-scans.md). 
 
