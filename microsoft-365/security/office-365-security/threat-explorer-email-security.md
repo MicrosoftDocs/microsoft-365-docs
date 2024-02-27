@@ -37,7 +37,7 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [**
 
    This example uses **Explorer**.
 
-   From here, start at the **Malware** view, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk-through](threat-explorer-threat-hunting.md#threat-explorer-walk-through).
+   From here, start at the **Malware** view, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Threat Explorer walk-through](threat-explorer-threat-hunting.md#threat-explorer-and-real-time-detections-walk-through).
 
 2. In the **Explorer** page, verify that **Malware** is selected.
 

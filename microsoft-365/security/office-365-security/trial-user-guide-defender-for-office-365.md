@@ -221,7 +221,7 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer-about.md).
 
 - [Find suspicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
-- [Check the delivery action and location](threat-explorer-investigate-delivered-malicious-emaild.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
+- [Check the delivery action and location](threat-explorer-investigate-delivered-malicious-email.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
 - [View the timeline of your email](threat-explorer-investigate-delivered-malicious-email.md#view-the-timeline-of-your-email): Simply hunting for your security operations team.
 
 #### Convert to Standard Protection at the end of evaluation period
