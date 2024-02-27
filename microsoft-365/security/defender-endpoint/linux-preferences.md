@@ -410,6 +410,7 @@ The *cloudService* entry in the configuration profile is used to configure the c
 
 > [!NOTE]
 > Cloud-delivered protection is applicable with any Enforcement level settings. (real_time, on_demand, passive)
+
 |Description|Value|
 |---|---|
 |**Key**|cloudService|
