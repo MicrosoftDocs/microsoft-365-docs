@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 12/06/2023
+ms.date: 02/27/2024
 audience: ITPro
 ms.topic: reference
 author: siosulli
@@ -22,10 +22,12 @@ search.appverid: met150
 # Microsoft Defender Antivirus security intelligence and product updates
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
 
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). This article includes information about the two types of updates for keeping Microsoft Defender Antivirus current:
@@ -98,23 +100,24 @@ All our updates contain
 ### January-2024 (Platform: 4.18.24010.xxxx | Engine: 1.1.24010.xxxx)
 
 - Security intelligence update version: **x.x.x.x**
-- Release date:  **February 12, 2024 (Engine) / February 12, 2024 (Platform)**
+- Release date:  **February 27, 2024**
 - Platform: **4.18.24010.xxxx**
 - Engine: **1.1.24010.xxxx**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
 
-- Microsoft Defender Anti-virus now caches the Mark of the Web (MoTW) Alternative Data Stream (ADS) for better performance while scanning.
-- Fixed an issue that occurred in [attack surface reduction](attack-surface-reduction-rules-reference.md) warn mode when removing scan results from the RTP cache.
-- Performance improvement added for OneNote.exe.
-- Cloud based entries will be regularly removed from the persistent user mode cache in Windows Defender. This is to prevent a uncommon issue where a user could still add a certificate, based on an Indicator of compromise (IoC), to the cache after a file with that certificate had already been added via cloud signature.
+- Microsoft Defender Antivirus now caches the Mark of the Web (MoTW) Alternative Data Stream (ADS) for better performance while scanning.
+- Fixed an issue that occurred in [attack surface reduction](attack-surface-reduction-rules-reference.md) in warn mode when removing scan results from the real-time protection cache.
+- Performance improvement added for `OneNote.exe`.
+- Cloud-based entries are regularly removed from the persistent user mode cache in Windows Defender to prevent a uncommon issue where a user could still add a certificate, based on an Indicator of compromise (IoC), to the cache after a file with that certificate had already been added via cloud signature.
 - The Sense onboarding event is now sent in passive mode for operating systems with the old Sense client.
 - Improved performance for logs created/accessed by powershell.
 - Improved performance for folders included in [Controlled folder access(CFA)](controlled-folders.md) when accessing network files.
 - Fixed a deadlock that occurred at shutdown for Data Loss Prevention (DLP) enabled devices.
 - Fixed an issue to remove a vulnerability in the Microsoft Defender Core service.
 - Fixed an onboarding issue in the Unified Agent installation script [install.ps1](https://github.com/microsoft/mdefordownlevelserver).
+- Fixed a memory leak that impacted some devices that received platform update `4.18.24010.7`
 
 ### November-2023 (Platform: 4.18.23110.3 | Engine: 1.1.23110.2)
 
