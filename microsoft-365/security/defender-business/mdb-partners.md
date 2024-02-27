@@ -2,13 +2,12 @@
 title: Resources for Microsoft partners working with small and medium-sized businesses
 description: Download our new security guide or integrate your remote monitoring and management (RMM) tools and professional service automation (PSA) software with Defender for Business, Microsoft 365 Business Premium, Defender for Endpoint, and Microsoft 365 Lighthouse.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 07/19/2023
 ms.reviewer: nehabha
@@ -26,7 +25,7 @@ ms.collection:
 
 Small and medium-sized businesses recognize that security is important, but they often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with setup and configuration, managing security for their devices and network, and addressing alerts or detected threats. Microsoft partners can help!
 
-If you're a Microsoft partner, and you're working with customers who have or need [Microsoft Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), or [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md), this article is for you!
+If you're a Microsoft partner, and you're working with customers who have or need [Microsoft Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md), [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), or [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md), this article is for you!
 
 - [Download our security guide and checklist](#download-our-security-guide-and-checklist-new) (NEW!)
 - [Learn how you can integrate Microsoft endpoint security with your RMM tools and PSA software](#integrate-microsoft-endpoint-security-with-your-rmm-tools-and-psa-software).
@@ -56,7 +55,7 @@ Use the links in the following table to access the guide and summary checklist:
 
 If you're a Microsoft Managed Service Provider (MSP), you can integrate Microsoft endpoint security with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software so that you can: 
 
-- Get access to your customers' Microsoft 365 Defender portal to [address detected threats and incidents](mdb-respond-mitigate-threats.md).
+- Get access to your customers' Microsoft Defender portal to [address detected threats and incidents](mdb-respond-mitigate-threats.md).
 - Get [email notifications](mdb-email-notifications.md) about new alerts or vulnerabilities across your customers' tenants.
 - Fetch and view [incidents and alerts](mdb-view-manage-incidents.md) with your security information and event management (SIEM) tools.
 - Orchestrate [remediation actions](mdb-review-remediation-actions.md), such as approving actions following automated investigations, or taking manual response actions on a device.

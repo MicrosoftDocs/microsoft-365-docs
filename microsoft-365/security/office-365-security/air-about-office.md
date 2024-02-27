@@ -2,9 +2,9 @@
 title: How automated investigation and response works in Microsoft Defender for Office 365
 f1.keywords:
 - NOCSH
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: chrisda
+ms.author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -14,7 +14,6 @@ search.appverid:
 ms.collection:
 - m365-security
 - tier2
-keywords: automated incident response, investigation, remediation, threat protection
 ms.date: 06/09/2023
 description: See how automated investigation and response capabilities work in Microsoft Defender for Office 365
 ms.custom:
@@ -23,8 +22,8 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # How automated investigation and response works in Microsoft Defender for Office 365
@@ -63,7 +62,7 @@ Next, several threat investigation and hunting steps are executed:
 - The signal is shared with other platforms, such as [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - A determination is made on whether any users have clicked through any malicious links in suspicious email messages.
 - A check is done across [Exchange Online Protection](eop-about.md) (EOP) and [Microsoft Defender for Office 365](defender-for-office-365.md) to see if there are any other similar messages reported by users.
-- A check is done to see if a user has been compromised. This check leverages signals across Office 365, [Microsoft Defender for Cloud Apps](/cloud-app-security), and [Azure Active Directory](/azure/active-directory), correlating any related user activity anomalies.
+- A check is done to see if a user has been compromised. This check leverages signals across Office 365, [Microsoft Defender for Cloud Apps](/cloud-app-security), and [Microsoft Entra ID](/azure/active-directory), correlating any related user activity anomalies.
 
 During the hunting phase, risks and threats are assigned to various hunting steps.
 
@@ -71,7 +70,7 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 ## Example: A security administrator triggers an investigation from Threat Explorer
 
-In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer-about.md). This investigation also creates an alert, so Microsoft 365 Defender incidents and external SIEM tools can see that this investigation was triggered.
+In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer-about.md). This investigation also creates an alert, so Microsoft Defender XDR incidents and external SIEM tools can see that this investigation was triggered.
 
 For example, suppose that you are using the **Malware** view in Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates.
 

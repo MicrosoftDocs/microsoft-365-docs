@@ -2,12 +2,13 @@
 title: Map fields of a modern template to library columns in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 03/14/2023
+ms.date: 02/21/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid:
 ms.collection:
     - enabler-strategic

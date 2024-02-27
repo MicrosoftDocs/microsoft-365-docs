@@ -1,22 +1,17 @@
 ---
 title: Identify Defender for Endpoint architecture and deployment method
 description: Select the best Microsoft Defender for Endpoint deployment strategy for your environment
-keywords: deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem, intune
-search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 12/18/2020
 ---
@@ -27,7 +22,7 @@ ms.date: 12/18/2020
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
@@ -45,7 +40,7 @@ Depending on your environment, some tools are better suited for certain architec
 |---|---|
 |**Cloud-native**| We recommend using Microsoft Intune to onboard, configure, and remediate endpoints from the cloud for enterprises that don't have an on-premises configuration management solution or are looking to reduce their on-premises infrastructure. |
 |**Co-management**| For organizations that host both on-premises and cloud-based workloads we recommend using Microsoft's ConfigMgr and Intune for their management needs. These tools provide a comprehensive suite of cloud-powered management features, as well as unique co-management options to provision, deploy, manage, and secure endpoints and applications across an organization. |
-|**On-premise**|For enterprises that want to take advantage of the cloud-based capabilities of Microsoft Defender for Endpoint while also maximizing their investments in Configuration Manager or Active Directory Domain Services, we recommend this architecture.|
+|**On-premises**|For enterprises that want to take advantage of the cloud-based capabilities of Microsoft Defender for Endpoint while also maximizing their investments in Configuration Manager or Active Directory Domain Services, we recommend this architecture.|
 |**Evaluation and local onboarding**|We recommend this architecture for SOCs (Security Operations Centers) that are looking to evaluate or run a Microsoft Defender for Endpoint pilot, but don't have existing management or deployment tools. This architecture can also be used to onboard devices in small environments without management infrastructure, such as a DMZ (Demilitarized Zone).|
 
 ## Step 2: Select deployment method

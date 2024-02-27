@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: overview
 search.appverid: 
@@ -27,8 +27,8 @@ ms.service: microsoft-365-security
 ms.date: 06/09/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Anti-spoofing protection in EOP
@@ -160,7 +160,7 @@ If all else fails, you can report the message as a false positive to Microsoft. 
 
 ## Considerations for anti-spoofing protection
 
-If you're an admin who currently sends messages to Microsoft 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phishing. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-authentication-about.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+If you're an admin who currently sends messages to Microsoft 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phishing. For more information, see [How to avoid email authentication failures when sending mail to Microsoft 36](email-authentication-about.md#how-to-avoid-email-authentication-failures-when-sending-mail-to-microsoft-36).
 
 Senders in individual user (or admin) Safe Senders lists bypass parts of the filtering stack, including spoof protection. For more information, see [Outlook Safe Senders](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 12/15/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -20,10 +20,6 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Learn how to move your files to OneDrive."
 ---
 # Move files to OneDrive for Business
@@ -36,17 +32,22 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198202).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
+After you sign up for a Microsoft 365 for business subscription, you'll want to copy your existing personal or work files to OneDrive for work. OneDrive is a good place to store work files or sensitive business files that you want to control access to.
 
-After you sign up for Microsoft 365 Business Premium, you&#39;ll want to copy your existing work files to OneDrive for Business. OneDrive is a good place to store personal work files or sensitive business files that you want to control access to.
+## Watch
 
-1. From Windows, select the  **Start** button.
-2. Search for OneDrive, and select it.
-3. Enter your work email address.
-4. Select  **Sign in** , and then select  **Next**.
-5. Go through the short tutorial, and then select  **Open my OneDrive folder**. If you also use the personal version of OneDrive, you&#39;ll see it here.
-6. In File Explorer, go to the files you want to copy.
-7. Select the files, and then drag and drop them into your OneDrive folder. Blue circular arrows beside your files mean that they&#39;re syncing to the cloud. When they&#39;re done syncing, green check marks are displayed.
+In this video, we'll show you how to move your OneDrive files from Microsoft 365 Family folder to your Microsoft 365 for business OneDrive folder.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSH]
+
+## Steps
+
+1. Select the white or blue OneDrive cloud icon in the Windows taskbar notification area.
+1. Select the **Help and settings** icon, then **Settings** > **Account** > **Add an account**.
+1. Enter your email address, select  **Sign in**, and enter your password.  Select **Next**.
+1. Go through the short tutorial, and then select  **Open my OneDrive folder**. If you also use the personal version of OneDrive, you'll see it here.
+1. In **File Explorer**, go to the files you want to copy.
+1. Select the files, and then drag and drop them into your OneDrive folder. Blue circular arrows beside your files mean that they're syncing to the cloud. When they're done syncing, green check marks are displayed.
 
 In addition to working on your OneDrive files locally, you can access them from your web browser:
 

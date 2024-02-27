@@ -15,18 +15,18 @@ description: Learn how to report phishing and suspicious emails in Outlook using
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 6/20/2023
+ms.date: 11/9/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Report phishing and suspicious emails in Outlook for admins
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or in on-premises mailboxes that use hybrid modern authentication, users can report phishing and suspicious email in Outlook. Users can report false positives (good email that was blocked or sent to their Junk Email folder) and false negatives (unwanted email or phishing that was delivered to their Inbox) from Outlook on all platforms using free tools from Microsoft.
+In Microsoft 365 organizations with mailboxes in Exchange Online, users can report phishing and suspicious email in Outlook. Users can report false positives (good email that was blocked or sent to their Junk Email folder) and false negatives (unwanted email or phishing that was delivered to their Inbox) from Outlook on all platforms using free tools from Microsoft.
 
 Microsoft provides the following tools for users to report good and bad messages:
 
@@ -35,7 +35,7 @@ Microsoft provides the following tools for users to report good and bad messages
 
 For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
-Admins configure user reported messages to go to a specified reporting mailbox, to Microsoft, or both. These user reported messages are available on the **User reported** tab on the **Submissions** page in the Microsoft 365 Defender Portal. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+Admins configure user reported messages to go to a specified reporting mailbox, to Microsoft, or both. These user reported messages are available on the **User reported** tab on the **Submissions** page in the Microsoft Defender portal. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 ## Use the built-in Report button in Outlook on the web
 
@@ -144,11 +144,10 @@ Based on the [User reported settings](submissions-user-reported-messages-custom-
 
 ## Review reported messages
 
-To review messages that users have reported to Microsoft, admins have these options:
+To review messages that users have reported to Microsoft, admins can use the **User reported** tab on the **Submissions** page in the Microsoft Defender portal at <https://security.microsoft.com/reportsubmission>. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
 
-- Use the **User reported** tab on the **Submissions** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/reportsubmission>. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
-
-- Create a mail flow rule (also known as a transport rule) to send copies of reported messages to a recipient for review. For instructions, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
+> [!NOTE]
+> If the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in the organization send user reported messages (email and [Microsoft Teams](submissions-teams.md)) to Microsoft (exclusively or in addition to the reporting mailbox), we do the same checks as when admins submit messages to Microsoft for analysis from the **Submissions** page. So, submitting or resubmitting messages to Microsoft is useful to admins only for messages that have never been submitted to Microsoft, or when you disagree with the original verdict.
 
 ## More information
 

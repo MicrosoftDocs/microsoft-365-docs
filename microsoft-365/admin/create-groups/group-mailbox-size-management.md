@@ -7,10 +7,10 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 search.appverid: 
-ms.reviewer: 
+ms.reviewer: rahulnayak
 ms.date: 08/03/2022
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 ---
 
 # Microsoft 365 group mailbox size management 
@@ -58,7 +58,7 @@ As mentioned earlier, the group mailbox is used for various applications to stor
    ```
 1. Check the folders quota or size.
 
-1. If the folder consuming the space is `SharePointWebPartsConnectorMessages`, as mentioned in [Use the Connector web part](https://support.microsoft.com/en-us/office/use-the-connector-web-part-db0756aa-f78f-4b74-8b19-be5dca0420e1?ns=spostandard&version=16&syslcid=1033&uilcid=1033&appver=spo160&helpid=wssenduser_useconnectorwebpart_fl862286&ui=en-us&rs=en-us&ad=us)then do the following:
+1. If the folder consuming the space is `SharePointWebPartsConnectorMessages`, as mentioned in [Use the Connector web part](https://support.microsoft.com/en-us/office/use-the-connector-web-part-db0756aa-f78f-4b74-8b19-be5dca0420e1?ns=spostandard&version=16&syslcid=1033&uilcid=1033&appver=spo160&helpid=wssenduser_useconnectorwebpart_fl862286&ui=en-us&rs=en-us&ad=us) then do the following:
 
    1. Disable the connector if not used. 
 

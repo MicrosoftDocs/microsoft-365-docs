@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: sharonchoi
+ms.reviewer: taylorau, stutisingh
 ms.date: 07/17/2023
 audience: Admin
 ms.topic: article
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-get-started
 ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
@@ -24,14 +25,14 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Get access to Sales Advisor in Microsoft 365 Lighthouse
 
-This article provides instructions for how to sign up for Microsoft 365 Lighthouse Sales Advisor. Even if you have access to Lighthouse, additional role in Partner Center is required to gain access to Sales Advisor.
+This article provides instructions for how to sign up for Microsoft 365 Lighthouse Sales Advisor. Even if you have access to Lighthouse, an additional role in Partner Center is required to gain access to Sales Advisor.
 
-Sales Advisor is built for sellers. Customer-facing roles in partner’s organization who are focused on business development, customer success, and sales can benefit from directly accessing the sales advisor experience.
+Sales Advisor is built for sellers. Customer-facing roles in partner's organization who are focused on business development, customer success, and sales can benefit from directly accessing the sales advisor experience.
 
 ## Before you begin
 
 - Your partner tenant must be onboarded to Microsoft 365 Lighthouse.
-- You must be a Global Administrator in the partner tenant that you’re signing in to. If you aren’t a Global Administrator, reach out to a Global Administrator from your organization to conduct the following steps for you.
+- You must be a Global Administrator in the partner tenant that you're signing in to. If you aren't a Global Administrator, reach out to a Global Administrator from your organization to conduct the following steps for you.
 
 ### Appropriate roles in Partner Center
 
@@ -45,7 +46,7 @@ For more information, see [CPP role-based access](/partner-center/insights-roles
 
 1. Go to Microsoft 365 Partner Center at [https://partner.microsoft.com/dashboard/home](https://partner.microsoft.com/dashboard/home).
 
-2. Go to **Account Settings \> User management**.
+2. Go to **Account Settings** > **User management**.
 
 3. Under **Users**, select the user account to edit permissions.
 
@@ -59,7 +60,7 @@ For more information, see [CPP role-based access](/partner-center/insights-roles
 
 ## Next steps
 
-Once you have access to Sales Advisor, you can start reviewing insights on the Opportunities page. In the left navigation pane in Lighthouse, select **Sales Advisor \> Opportunities**. To learn more about opportunities, see [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
+Once you have access to Sales Advisor, you can start reviewing insights on the Opportunities page. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Sales Advisor** > **Opportunities**. To learn more about opportunities, see [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
 
 ## Related content
 

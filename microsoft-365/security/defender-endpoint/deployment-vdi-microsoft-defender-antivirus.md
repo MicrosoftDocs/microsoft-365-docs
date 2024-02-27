@@ -4,17 +4,18 @@ description: Get an overview of how to configure Microsoft Defender Antivirus in
 ms.localizationpriority: medium
 ms.date: 03/06/2023
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer: jesquive
-manager: dansimp
-ms.subservice: mde
-ms.service: microsoft-365-security
+manager: deniseb
+ms.subservice: ngp
+ms.service: defender-endpoint
 ms.collection:
 - m365-security
 - tier2
 - ContentEngagementFY23
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -31,7 +32,7 @@ search.appverid: met150
 - Windows
 
 > [!TIP]
-> This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender](configure-endpoints-vdi.md).
+> This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](configure-endpoints-vdi.md).
 
 You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in.
 
@@ -169,7 +170,7 @@ Sometimes, Microsoft Defender Antivirus notifications are sent to or persist acr
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team will see the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team will see the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft Defender portal](https://security.microsoft.com).
 
 ## Disable scans after an update
 

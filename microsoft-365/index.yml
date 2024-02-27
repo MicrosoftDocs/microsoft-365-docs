@@ -26,9 +26,10 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Set up your infrastructure for hybrid work
-      itemType: how-to-guide
-      url: solutions/empower-people-to-work-remotely.md
+    - title: Join us at the Microsoft 365 Community Conference April 30 - May 2
+      itemType: whats-new
+      url: https://www.m365conf.com/#!/?wt.mc_id=m365conf_docs_webpage_mwmktg
+    # Card
     - title: Remote learning with Microsoft Teams
       itemType: get-started
       url: /MicrosoftTeams/remote-learning-edu
@@ -36,9 +37,14 @@ highlightedContent:
     - title: Build your skills with Microsoft Learn training
       itemType: learn
       url: /training/m365/
+    # Card
     - title: Get your small business started with Microsoft 365
       itemType: quickstart
       url: business-video/index.yml
+    # Card
+    - title: Set up your infrastructure for hybrid work
+      itemType: how-to-guide
+      url: solutions/empower-people-to-work-remotely.md
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -58,7 +64,7 @@ conceptualContent:
             - url: frontline/index.yml
               itemType: get-started
               text: Microsoft 365 for frontline workers
-            - url: business/index.yml
+            - url: business-premium/index.yml
               itemType: get-started
               text: Microsoft 365 Business Premium
             - url: security/index.yml
@@ -82,7 +88,7 @@ conceptualContent:
             - url: /microsoft-365/contentunderstanding/
               itemType: overview
               text: Microsoft Syntex
-            - url: /viva
+            - url: /viva/
               itemType: overview
               text: Microsoft Viva
             - url: /Exchange/exchange-online
@@ -94,9 +100,6 @@ conceptualContent:
             - url: /office365/planner
               itemType: overview
               text: Planner
-            - url: /yammer/yammer-landing-page
-              itemType: overview
-              text: Yammer
         # Card
         - title: Microsoft 365 Apps and Office
           links:
@@ -128,7 +131,7 @@ conceptualContent:
             - url: solutions/data-privacy-protection.md
               itemType: how-to-guide
               text: Manage data privacy and data protection
-            - url: business-premium/index.md
+            - url: business-premium/m365bp-overview.md
               itemType: how-to-guide
               text: Microsoft 365 for smaller businesses and campaigns
             - url: solutions/productivity-illustrations.md
@@ -217,6 +220,11 @@ tools:
       # imageSrc should be square in ratio with no white space
       imageSrc: /office/media/icons/deploy-blue.svg
       url: /microsoft-365/fasttrack/
+    # Card
+    - title: Microsoft 365 service adoption framework
+      # imageSrc should be square in ratio with no white space
+      imageSrc: /office/media/icons/users-group.svg
+      url: /training/paths/m365-service-adoption/
     # Card
     - title: Microsoft 365 Community Content
       imageSrc: /office/media/icons/blog-site-blue.svg

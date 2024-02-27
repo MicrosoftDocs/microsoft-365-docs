@@ -2,9 +2,9 @@
 title: Get started with Microsoft 365 for frontline workers
 description: Learn how you can use Microsoft 365 and Teams to empower the frontline workers in your organization.
 search.appverid: MET150
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
 audience: admin
 ms.topic: overview
 ms.service: microsoft-365-frontline
@@ -14,7 +14,8 @@ ms.collection:
   - highpri
   - m365solution-overview
   - m365solution-frontline
-  - tier1
+  - essentials-overview
+  - essentials-get-started
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
@@ -78,11 +79,13 @@ Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), th
 
 Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, identity and threat protection, and security management. The offerings available to your workforce in these areas depends on the licenses you assign to your users in the Microsoft 365 admin center.
 
-### Manage identities and access with Azure Active Directory
+<a name='manage-identities-and-access-with-azure-active-directory'></a>
+
+### Manage identities and access with Microsoft Entra ID
 
 |Capability |License availability |
 |-----------|---------------------|
-|[Azure Active Directory fundamentals](/azure/active-directory/fundamentals/active-directory-whatis) |Enterprise, F1, F3 |
+|[Microsoft Entra fundamentals](/azure/active-directory/fundamentals/active-directory-whatis) |Enterprise, F1, F3 |
 
 ### Mitigate compliance and privacy risks
 

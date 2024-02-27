@@ -1,6 +1,6 @@
 ---
 title: Introduction to Microsoft Whiteboard
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
@@ -8,9 +8,11 @@ ms.date: 12/14/2020
 audience: admin
 ms.topic: landing-page
 ms.custom: 
-ms.service: microsoft-365-enterprise
+ms.service: whiteboard
 search.appverid: MET150
 ms.collection: 
+ - essentials-navigation
+ - essentials-overview
 ms.localizationpriority: medium
 description: Find resources about how to set up and manage Microsoft Whiteboard.
 ---

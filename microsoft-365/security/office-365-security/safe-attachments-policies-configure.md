@@ -19,10 +19,10 @@ description: Learn about how to define Safe Attachments policies to protect your
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 7/12/2023
+ms.date: 11/2/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Set up Safe Attachments policies in Microsoft Defender for Office 365
@@ -38,34 +38,38 @@ Although there's no default Safe Attachments policy, the **Built-in protection**
 
 For greater granularity, you can also use the procedures in this article to create Safe Attachments policies that apply to specific users, group, or domains.
 
-You configure Safe Attachments policies in the Microsoft 365 Defender portal or in Exchange Online PowerShell.
+You configure Safe Attachments policies in the Microsoft Defender portal or in Exchange Online PowerShell.
 
 > [!NOTE]
 > In the global settings of Safe Attachments settings, you configure features that aren't dependent on Safe Attachments policies. For instructions see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-configure.md) and [Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md).
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
+- You open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
+  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md) and [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Create, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups in Email & collaboration RBAC <u>and</u> membership in the **Organization Management** role group in Exchange Online RBAC.
     - _Read-only access to policies_: Membership in one of the following role groups:
       - **Global Reader** or **Security Reader** in Email & collaboration RBAC.
       - **View-Only Organization Management** in Exchange Online RBAC.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for Safe Attachments policies, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+
+  > [!TIP]
+  > [Exceptions to Built-in protection for Safe Attachments](preset-security-policies.md#use-the-microsoft-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy) or settings in custom Safe Attachments policies are ignored if a recipient is also included in the [Standard or Strict preset security policies](preset-security-policies.md). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
 - For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
 
-## Use the Microsoft 365 Defender portal to create Safe Attachments policies
+## Use the Microsoft Defender portal to create Safe Attachments policies
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.Or, to go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.Or, to go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
 2. On the **Safe Attachments** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create** to start the new Safe Attachments policy wizard.
 
@@ -80,7 +84,7 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
    - **Groups**:
      - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
      - The specified Microsoft 365 Groups.
-   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+   - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png"::: next to the value.
 
@@ -117,7 +121,7 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
      By default, the quarantine policy named AdminOnlyAccessPolicy is used for malware detections by Safe Attachments policies. For more information about this quarantine policy, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
      > [!NOTE]
-     > Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware by Safe Attachments, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft 365 Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+     > Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware by Safe Attachments, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-defender-portal).
      >
      > Users can't release their own messages that were quarantined as malware by Safe Attachments policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
 
@@ -138,15 +142,15 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 
    Back on the **Safe Attachments** page, the new policy is listed.
 
-## Use the Microsoft 365 Defender portal to view Safe Attachments policy details
+## Use the Microsoft Defender portal to view Safe Attachments policy details
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
 On the **Safe Attachments** page, the following properties are displayed in the list of policies:
 
 - **Name**
 - **Status**: Values are **On** or **Off**.
-- **Priority**: For more information, see the [Set the priority of Safe Attachments policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-safe-attachments-policies) section.
+- **Priority**: For more information, see the [Set the priority of Safe Attachments policies](#use-the-microsoft-defender-portal-to-set-the-priority-of-custom-safe-attachments-policies) section.
 
 To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
@@ -161,9 +165,9 @@ Select a policy by clicking anywhere in the row other than the check box next to
 > [!TIP]
 > To see details about other Safe Attachments policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
-## Use the Microsoft 365 Defender portal to take action on Safe Attachments policies
+## Use the Microsoft Defender portal to take action on Safe Attachments policies
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
 2. On the **Safe Attachments** page, select the Safe Attachments policy by using either of the following methods:
 
@@ -184,13 +188,13 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 
 The actions are described in the following subsections.
 
-### Use the Microsoft 365 Defender portal to modify custom Safe Attachments policies
+### Use the Microsoft Defender portal to modify custom Safe Attachments policies
 
-After you select a custom Safe Attachments policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create Safe Attachments policies](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) section earlier in this article.
+After you select a custom Safe Attachments policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create Safe Attachments policies](#use-the-microsoft-defender-portal-to-create-safe-attachments-policies) section earlier in this article.
 
 You can't modify the Safe Attachments policies named **Standard Preset Security Policy**, **Strict Preset Security Policy**, or **Built-in protection (Microsoft)** that are associated with [preset security policies](preset-security-policies.md) in the policy details flyout. Instead, you select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View preset security policies** in the details flyout to go to the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies> to modify the preset security policies.
 
-### Use the Microsoft 365 Defender portal to enable or disable custom Safe Attachments policies
+### Use the Microsoft Defender portal to enable or disable custom Safe Attachments policies
 
 You can't enable or disable the Safe Attachments policies named **Standard Preset Security Policy**, **Strict Preset Security Policy**, or **Built-in protection (Microsoft)** that are associated with [preset security policies](preset-security-policies.md) here. You enable or disable preset security policies on the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies>.
 
@@ -206,11 +210,11 @@ After you select a disabled custom Safe Attachments policy (the **Status** value
 
 On the **Safe Attachments** page, the **Status** value of the policy is now **On** or **Off**.
 
-### Use the Microsoft 365 Defender portal to set the priority of custom Safe Attachments policies
+### Use the Microsoft Defender portal to set the priority of custom Safe Attachments policies
 
 Safe Attachments policies are processed in the order that they're displayed on the **Safe Attachments** page:
 
-- The Safe Attachments policy named **Strict Preset Security Policy** that's associated with the Strict preset security policy is always applied first (if the Strict preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
+- The Safe Attachments policy named **Strict Preset Security Policy** that's associated with the Strict preset security policy is always applied first (if the Strict preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
 - The Safe Attachments policy named **Standard Preset Security Policy** that's associated with the Standard preset security policy is always applied next (if the Standard preset security policy is enabled).
 - Custom Safe Attachments policies are applied next in priority order (if they're enabled):
   - A lower priority value indicates a higher priority (0 is the highest).
@@ -230,7 +234,7 @@ When you're finished in the policy details flyout, select **Close**.
 
 Back on the **Safe Attachments** page, the order of the policy in the list matches the updated **Priority** value.
 
-### Use the Microsoft 365 Defender portal to remove custom Safe Attachments policies
+### Use the Microsoft Defender portal to remove custom Safe Attachments policies
 
 You can't remove the Safe Attachments policies named **Standard Preset Security Policy**, **Strict Preset Security Policy**, or **Built-in protection (Microsoft)** that are associated with [preset security policies](preset-security-policies.md).
 
@@ -250,7 +254,7 @@ In PowerShell, the basic elements of a Safe Attachments policy are:
 - **The safe attachment policy**: Specifies the actions for unknown malware detections, whether to send messages with malware attachments to a specified email address, and whether to deliver messages if Safe Attachments scanning can't complete.
 - **The safe attachment rule**: Specifies the priority and recipient filters (who the policy applies to).
 
-The difference between these two elements isn't obvious when you manage Safe Attachments policies in the Microsoft 365 Defender portal:
+The difference between these two elements isn't obvious when you manage Safe Attachments policies in the Microsoft Defender portal:
 
 - When you create a Safe Attachments policy in the Defender portal, you're actually creating a safe attachment rule and the associated safe attachment policy at the same time using the same name for both.
 - When you modify a Safe Attachments policy in the Defender portal, settings related to the name, priority, enabled or disabled, and recipient filters modify the safe attachment rule. All other settings modify the associated safe attachment policy.
@@ -273,11 +277,11 @@ Creating a Safe Attachments policy in PowerShell is a two-step process:
 
 - You can create a new safe attachment rule and assign an existing, unassociated safe attachment policy to it. A safe attachment rule can't be associated with more than one safe attachment policy.
 
-- You can configure the following settings on new safe attachment policies in PowerShell that aren't available in the Microsoft 365 Defender portal until after you create the policy:
+- You can configure the following settings on new safe attachment policies in PowerShell that aren't available in the Microsoft Defender portal until after you create the policy:
   - Create the new policy as disabled (_Enabled_ `$false` on the **New-SafeAttachmentRule** cmdlet).
   - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-SafeAttachmentRule** cmdlet).
 
-- A new safe attachment policy that you create in PowerShell isn't visible in the Microsoft 365 Defender portal until you assign the policy to a safe attachment rule.
+- A new safe attachment policy that you create in PowerShell isn't visible in the Microsoft Defender portal until you assign the policy to a safe attachment rule.
 
 #### Step 1: Use PowerShell to create a safe attachment policy
 
@@ -378,7 +382,7 @@ For detailed syntax and parameter information, see [Get-SafeAttachmentRule](/pow
 
 ### Use PowerShell to modify safe attachment policies
 
-You can't rename a safe attachment policy in PowerShell (the **Set-SafeAttachmentPolicy** cmdlet has no _Name_ parameter). When you rename a Safe Attachments policy in the Microsoft 365 Defender portal, you're only renaming the safe attachment _rule_.
+You can't rename a safe attachment policy in PowerShell (the **Set-SafeAttachmentPolicy** cmdlet has no _Name_ parameter). When you rename a Safe Attachments policy in the Microsoft Defender portal, you're only renaming the safe attachment _rule_.
 
 Otherwise, the same settings are available when you create a safe attachment policy as described in the [Step 1: Use PowerShell to create a safe attachment policy](#step-1-use-powershell-to-create-a-safe-attachment-policy) section earlier in this article.
 
@@ -491,7 +495,7 @@ For detailed syntax and parameter information, see [Remove-SafeAttachmentRule](/
 
 To verify that you've successfully created, modified, or removed Safe Attachments policies, do any of the following steps:
 
-- On the **Safe Attachments** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safeattachmentv2>, verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list by clicking on the name, and view the details in the fly out.
+- On the **Safe Attachments** page in the Microsoft Defender portal at <https://security.microsoft.com/safeattachmentv2>, verify the list of policies, their **Status** values, and their **Priority** values. To view more details, select the policy from the list by clicking on the name, and view the details in the fly out.
 
 - In Exchange Online PowerShell, replace \<Name\> with the name of the policy or rule, run the following command, and verify the settings:
 
@@ -505,4 +509,4 @@ To verify that you've successfully created, modified, or removed Safe Attachment
 
 - Add the URL `http://spamlink.contoso.com` to a file (for example, a Word document), and attach that file in an email message to test Safe Attachments protection. This URL is similar to the GTUBE text string for testing anti-spam solutions. This URL isn't harmful, but when it's included in an email attachment, it triggers a Safe Attachments protection response.
 
-- To verify that Safe Attachments is scanning messages, check the available Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer-about.md).
+- To verify that Safe Attachments is scanning messages, check the available Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft Defender portal](threat-explorer-about.md).

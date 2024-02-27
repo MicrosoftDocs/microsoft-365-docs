@@ -88,9 +88,9 @@ Select **Next**.
 
 ### Step 4: Grant permissions to the SD-WAN solution
 
-This step will initiate a permissions grant request with Azure Active Directory (Azure AD). You'll be requested to grant tenant-level permissions that allow your selected SD-WAN solution access to the informed network routing data storage and the service health information associated with your tenant. This action requires **Azure AD DC admin**, or **Global admin** role permissions.
+This step will initiate a permissions grant request with Microsoft Entra ID. You'll be requested to grant tenant-level permissions that allow your selected SD-WAN solution access to the informed network routing data storage and the service health information associated with your tenant. This action requires **Microsoft Entra DC admin**, or **Global admin** role permissions.
 
-Select the **Give permission to this application** link and follow the Azure AD requests.
+Select the **Give permission to this application** link and follow the Microsoft Entra ID requests.
 
 Once you've completed the permissions grant, select **Next**.
 

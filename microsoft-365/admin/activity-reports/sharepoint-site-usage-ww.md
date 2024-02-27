@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/20/2020
+ms.date: 01/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,8 +33,8 @@ As a Microsoft 365 admin, the Reports dashboard shows you the activity overview 
 
 ## How to get to the SharePoint site usage report
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
+1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
+2. From the dashboard homepage, under Reports, select **Sharepoint**.
 
 ## Show user details in the reports
 
@@ -68,7 +68,7 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
   
 |Metric|Description|
 |:-----|:-----|
-|Site URL  |The full URL of the site. |
+|Site URL  |The full URL of the site. Note: The URL will be empty temporarily. |
 |Deleted  |The deletion status of the site. It takes at least 7 days for sites to be marked as deleted.  |
 |Site owner  |The username of the primary owner of the site.   |
 |Site owner principal name  |The email address of the owner of the site. |
@@ -88,6 +88,7 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 |Secure link for guest count  |The number of times documents or folders are shared using "specific people" on the site.  |
 |Secure link for member count  |The number of times documents or folders are shared using "specific people" on the site.  |
 |Root Web Template  |The template used for creating the site.  <br/> NOTE: If you want to filter the data by different site types, then export the data and use the Root Web Template column. |
+| Site ID | The site ID of the site. |
 
 Note that you may see differences between the sites listed above and those listed on the [Active sites page](https://go.microsoft.com/fwlink/?linkid=2185220) in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), from Sites > Active sites because the certain site templates and URLs are not included as Active Sites. See [Manage sites in the SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) for more information. 
  

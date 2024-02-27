@@ -1,25 +1,22 @@
 ---
 title: Visit the Action center to see remediation actions
 description: Use the action center to view details and results following an automated investigation
-keywords: action, center, autoir, automated, investigation, response, remediation
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.service: microsoft-365-security
-ms.subservice: mde
-author: dansimp
-ms.author: dansimp
+ms.service: defender-endpoint
+ms.subservice: edr
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-edr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 02/21/2024
 ---
 
 # Visit the Action center to see remediation actions
@@ -27,7 +24,7 @@ ms.date: 12/18/2020
 During and after an automated investigation, remediation actions for threat detections are identified. Depending on the particular threat and how [automated investigation and remediation capabilities are configured](configure-automated-investigations-remediation.md) for your organization, some remediation actions are taken automatically, and others require approval. If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center**.
 
 **Applies to:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
@@ -35,7 +32,7 @@ During and after an automated investigation, remediation actions for threat dete
 
 Recently, the Action center was updated. You now have a unified Action center experience. To access your Action center, go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) and sign in.
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="The Action center page in the Microsoft 365 Defender portal" lightbox="images/mde-action-center-unified.png":::
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="The Action center page in the Microsoft Defender portal" lightbox="images/mde-action-center-unified.png":::
 
 ### What's changed?
 
@@ -45,22 +42,22 @@ The following table compares the new, unified Action center to the previous Acti
 |---------|---------|
 |Lists pending and completed actions for devices and email in one location <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365))|Lists pending and completed actions for devices <br/> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) only)   |
 |Is located at:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Is located at:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, choose **Action center**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="The navigation pane to the Action Center in the Microsoft 365 Defender portal" lightbox="images/action-center-nav-new.png"::: | In the Microsoft 365 Defender portal, choose **Automated investigations** > **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="An older version of the navigation pane to the Action Center in the Microsoft 365 Defender portal" lightbox="images/action-center-nav-old.png":::  |
+| In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, choose **Action center**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="The navigation pane to the Action Center in the Microsoft Defender portal" lightbox="images/action-center-nav-new.png"::: | In the Microsoft Defender portal, choose **Automated investigations** > **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="An older version of the navigation pane to the Action Center in the Microsoft Defender portal" lightbox="images/action-center-nav-old.png":::  |
 
 The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience.
 
 You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
 
-- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Microsoft Defender XDR](/microsoft-365/security/mtp/microsoft-threat-protection)
 - [Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Defender for Business](../defender-business/mdb-overview.md)
 
 ## Using the Action center
 
-To get to the unified Action center in the improved Microsoft 365 Defender portal:
+To get to the unified Action center in the improved Microsoft Defender portal:
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in.
 
 2. In the navigation pane, select **Action center**.
 
@@ -90,5 +87,5 @@ To get to the unified Action center in the improved Microsoft 365 Defender porta
 ## See also
 
 - [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
-- [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

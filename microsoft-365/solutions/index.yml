@@ -39,7 +39,7 @@ landingContent:
           - text: Manage data privacy and data protection
             url: data-privacy-protection.md
           - text: Microsoft 365 for smaller businesses and campaigns
-            url: ../business-premium/index.md
+            url: ../business-premium/m365bp-overview.md
 
   # Card
   - title: Architecture illustrations and design principles
@@ -131,14 +131,14 @@ landingContent:
           - text: Microsoft 365 security for Business Decision Makers (BDMs)
             url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Identity and device access configurations
-            url: ../security/office-365-security/microsoft-365-policies-configurations.md
+            url: ../security/office-365-security/zero-trust-identity-device-access-policies-overview.md
           - text: Deploy Microsoft Defender for Endpoint
             url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
-          - text: Evaluate Microsoft 365 Defender
+          - text: Evaluate Microsoft Defender XDR
             url: ../security/defender-endpoint/deployment-phases.md
           - text: Security recommendations for priority accounts
             url: ../security/office-365-security/priority-accounts-security-recommendations.md
-          - text: Evaluate Microsoft 365 Defender
+          - text: Evaluate Microsoft Defender XDR
             url: ../security/defender-endpoint/deployment-phases.md
       - linkListType: how-to-guide
         links:

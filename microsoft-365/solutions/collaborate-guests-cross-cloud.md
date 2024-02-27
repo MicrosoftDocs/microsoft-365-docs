@@ -1,9 +1,9 @@
 ---
-title: Collaborate with guests from other Microsoft 365 cloud environments (Preview)
+title: Collaborate with guests from other Microsoft 365 cloud environments
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
-ms.date: 07/24/2023
+manager: pamgreen
+ms.date: 09/29/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,13 +16,13 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: 
-localization_priority: medium
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Learn how to enable guest invitations between Microsoft 365 cloud environments (such as commercial and DoD).
 ---
 
-# Collaborate with guests from other Microsoft 365 cloud environments (Preview)
+# Collaborate with guests from other Microsoft 365 cloud environments
 
 Microsoft 365 organizations have one of several tenant types and are located in one of three Microsoft clouds:
 
@@ -35,9 +35,15 @@ Microsoft 365 organizations have one of several tenant types and are located in 
 In order to invite guests from an organization in a different Microsoft Azure cloud environment, you must do the following:
 
 1. If the organization you want to collaborate with is in a different Microsoft Azure cloud environment (such as commercial and DoD), enable cross-tenant connections with that Microsoft Azure cloud environment.
-1. Set up cross-tenant access settings in Azure AD with the organization that you want to collaborate with.
+1. Set up cross-tenant access settings in Microsoft Entra ID with the organization that you want to collaborate with.
 
 Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD) can't create a cross-tenant connection with tenants in Microsoft Azure China.
+
+> [!NOTE]
+> Cross-cloud guest access between Microsoft 365 China (21Vianet) and other Microsoft 365 cloud environments is in preview.
+
+> [!NOTE]
+> VDI clients aren't supported for cross-cloud guests.
 
 > [!IMPORTANT]
 > The organization that you're collaborating with must also configure these settings for their organization.
@@ -56,9 +62,9 @@ Additionally, to enable B2B collaboration with an organization in a different Mi
 
 If you're setting up guest sharing with a tenant that's in a different Microsoft Azure cloud environment than yours, then you need to enable connections with that cloud environment before you add the organizational relationship.
 
-Enable the Microsoft Azure cloud environment you want to collaborate with in Azure AD cross tenant access settings.
+Enable the Microsoft Azure cloud environment you want to collaborate with in Microsoft Entra cross tenant access settings.
 
-1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
+1. Sign in to [Microsoft Entra ID](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Microsoft cloud settings**.
 1. Select the checkboxes next to the external Microsoft Azure cloud environments you want to enable.
@@ -67,11 +73,11 @@ Enable the Microsoft Azure cloud environment you want to collaborate with in Azu
 
 ### Add an organization
 
-Once you've enabled the cloud environments you want to collaborate with, you need to add the specific organizations with which you want to enable B2B collaboration. Unlike B2B collaboration with organizations in the same cloud environment, B2B collaboration with organizations in different Microsoft 365 cloud environments requires that each organization be added to Azure AD cross-tenant access settings.
+Once you've enabled the cloud environments you want to collaborate with, you need to add the specific organizations with which you want to enable B2B collaboration. Unlike B2B collaboration with organizations in the same cloud environment, B2B collaboration with organizations in different Microsoft 365 cloud environments requires that each organization be added to Microsoft Entra cross-tenant access settings.
 
 To add an organization
 
-1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
+1. Sign in to [Microsoft Entra ID](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.
@@ -95,7 +101,7 @@ To configure inbound settings for an organization
 
 ##### Configure outbound settings for the organization
 
-Use the outbound settings to specify which users or groups from the external organization can access resources in your organization.
+Use the outbound settings to specify which users or groups from your organization can access resources in the external organization.
 
 To configure outbound settings for an organization
 
@@ -111,4 +117,3 @@ To configure outbound settings for an organization
 [Configure Microsoft cloud settings for B2B collaboration](/azure/active-directory/external-identities/cross-cloud-settings)
 
 [Configure cross-tenant access settings for B2B direct connect](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect)
-

@@ -1,22 +1,19 @@
 ---
 title: How to schedule an antivirus scan using Anacron in Microsoft Defender for Endpoint on Linux
 description: Learn how to schedule an antivirus scan in Microsoft Defender for Endpoint on Linux for better protection of your organization's assets.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint on linux
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 12/02/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ---
 
@@ -52,12 +49,11 @@ Use the following steps to schedule scans:
 
 1. Connect to the RedHat server using PuTTY.
 1. Edit the anacron file:
-
    ```shell
    vi /etc/anacron
    ```
 
-   :::image type="content" source="images/vi_etc_anacron.png" alt-text="anacron file":::
+1.  :::image type="content" source="images/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="images/vi_etc_anacron.png" link="images/vi_etc_anacron.png":::
 
    ```shell
    # /etc/anacrontab: configuration file for anacron
@@ -82,7 +78,7 @@ Use the following steps to schedule scans:
    ls -lh /etc/cron*
    ```
 
-   :::image type="content" source="images/ls_lh_etc_cron.png" alt-text="anacron jobs":::
+    :::image type="content" source="images/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="images/vi_etc_anacron.png" link="images/vi_etc_anacron.png":::
 
    ```shell
    [root@redhat7 /] # ls -lh /etc/cron*
@@ -196,3 +192,4 @@ Use the following steps to schedule scans:
     [root@redhat7 cron.weekly] #
     ```
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

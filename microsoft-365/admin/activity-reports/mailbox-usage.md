@@ -1,9 +1,9 @@
 ---
 title: "Microsoft 365 admin center mailbox usage reports"
-ms.author: kwekua
-author: kwekuako
+ms.author: efrene
+author: efrene
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 11/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -27,7 +27,7 @@ description: "Learn how to get the Mailbox usage report to find out about activi
 # Microsoft 365 Reports in the admin center - Mailbox usage
 
 The **Mailbox usage report** provides information about users with a user mailbox and the level of activity by each based on the email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity. It also provides information about how much storage has been consumed by each user mailbox, and how many of them are approaching storage quotas. The mailbox usage report also contains information on mailboxes shared amongst users, providing storage and quota data on shared mailboxes.
- 
+
 ## How to get to the mailbox usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
@@ -57,6 +57,7 @@ The **Mailbox** chart shows you the total number of user or shared mailboxes in 
 > Shared mailboxes do not have activity independent of a user mailbox so only a count of shared mailboxes will be shown when this mailbox type is selected.
 
 On the Mailbox chart:
+
 - The Y axis is the number of user or shared mailboxes. 
 - The X axis is the selected date range for this specific report.
 
@@ -65,18 +66,21 @@ On the Mailbox chart:
 The **Storage** chart shows you amount of storage used in your organization by mailbox type. Storage Chart doesn't include archive mailboxes. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving in Microsoft 365](../../compliance/autoexpanding-archiving.md).
 
 On the Storage chart:
+
 - The Y axis is the amount of storage being used by user or shared mailboxes in your organization.
 - The X axis is the selected date range for this specific report.
 
 ### The Quota chart
 
-The **Quota** chart shows you the number of user or shared mailboxes in each quota category. There are four quota categories: 
+The **Quota** chart shows you the number of user or shared mailboxes in each quota category. There are four quota categories:
+
 - Good: The number of users or shared mailboxes whose storage used is below the "issue warning" quota.
 - Warning: The number of users or shared mailboxes whose storage used is at or above the "issue warning" quota, but below the "prohibit send" quota.
 - Can't send: The number of users or shared mailboxes whose storage used is at or above the prohibit send quota, but below the prohibit send/receive quota.
 - Can't send/receive: The number of users or shared mailboxes whose storage used is at or above the "prohibit send/receive" quota.
 
 On the Quota chart:
+
 - The Y axis is the number of user or shared mailboxes in each storage quota.
 - The X axis is the quota category.
 
@@ -97,14 +101,16 @@ This table shows you a breakdown of mailbox usage at the per mailbox level. You 
 |Last activity date | The date the mailbox last had an email send or read activity.   |
 |Item count|The total number of items in the mailbox. |
 |Storage used (MB)|The total storage used. |
-|Deleted Item Count|The total number of deleted items in the mailbox. |
-|Deleted Item Size (MB)|The total size of all deleted items in the mailbox. |
+|Deleted Item Count|The total number of recoverable items in the mailbox. |
+|Deleted Item Size (MB)|The total size of all recoverable items in the mailbox. |
 |Issue warning quota (MB)|The storage limit when the mailbox owner will receive a warning that it's about to hit the storage quota.  |
 |Prohibit send quota (MB)|The storage limit when the mailbox can no longer send emails. |
 |Prohibit send receive quota (MB)|The storage limit when the mailbox can no longer send or receive emails. |
 |Recoverable Item Quota (MB)|The storage limit for recoverable (deleted) items in the mailbox when the mailbox can no longer delete emails. |
+|Report Period| The period for which the report is available.|
 |Has Archive|Shows if the mailbox has an online archive enabled. |
 
+To learn more about the recoverable items folder, see [Recoverable Items folder in Exchange Online](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#recoverable-items-mailbox-quotas).
 
 If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **Hide user details in the reports** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md).
 

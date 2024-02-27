@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/20/2023
+ms.date: 12/07/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -71,7 +71,7 @@ If you get this error message it means that it's taking a bit longer to finish s
 
 ### Did you get "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory" message?
 
-If you get this error message it means that you need to add the alias in your on-premises Active Directory.
+If you get this error message, it means that you need to add the alias in your on-premises Active Directory. Open Active Directory Users and Computers (ADUC) and select the user account you would like to edit. Select **Properties** > **Attribute Editor** > **proxyAddresses** (if not visible, under ADUC's  **View** menu, enable **Advanced Features**). Next, add the required alias, which should start with the all-lowercase prefix "smtp:" (for example, `smtp:jsmith@contoso.com`). Lastly, wait for the changes to sync to Microsoft Entra ID.
 
 ### Did you purchase your subscription from GoDaddy or another Partner?
 

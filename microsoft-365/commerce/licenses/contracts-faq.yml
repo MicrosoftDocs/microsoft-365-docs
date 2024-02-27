@@ -4,8 +4,8 @@ metadata:
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: racheg, vician
-  ms.date: 03/27/2023
+  ms.reviewer: racheg, ronarg
+  ms.date: 01/18/2024
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
@@ -76,21 +76,6 @@ sections:
           |End date|The End date of the License|
           |Status|The status of the License|
           |Roles|Your permissions on the Contracts|
-
-      - question: |
-          About roles
-        answer: |
-          The following table shows the relationships between VLSC roles and MAC VL roles, and the actions those roles can take.
-
-          |VLSC Permission Role|MAC VL Permission Role|Allowable Action|
-          |---|---|---|
-          |Administrator|Administrator|Assign/Edit/Remove users permission, Can perform all actions allowed to other VL roles|
-          |Licensing Info Viewer|License Position Reader|View Contracts details, View Orders, View Keys of a contract, Create License Summary|
-          |Download|Product Download Manager|View Contracts, Download licensed Microsoft software products|
-          |Product Keys|Product Keys Reader|View Contracts, View Keys of a contract, Manage activation & Redemption of Online services (additionally need Global Admin roles), View keys from Downloads & Keys|
-          |Software Assurance Manager|Benefits Reader|View Contracts, Manage the following Software Assurance entitlements: Home Use Program|
-          |Online Services Manager|Online Services Manager|View Contracts, View Orders, Reservation of services, Manage activation & Redemption of Online services (additionally need Global Admin roles), Manage subscriptions under **Billing** > **Licenses** (additionally need Global Admin roles)|
-          |N/A|Invoice Reader|View Contracts, Can view the list of invoices and Download|
 
       - question: |
           What is the License Summary?

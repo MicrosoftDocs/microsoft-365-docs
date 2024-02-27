@@ -13,15 +13,15 @@ ms.collection:
   - m365-security
   - tier2
 ms.custom:
-description: Admins can learn how to remove connectors from the Restricted entities page in the Microsoft 365 Defender portal. Connectors are added to the Restricted entities page after signs of compromise.
+description: Admins can learn how to remove connectors from the Restricted entities page in the Microsoft Defender portal. Connectors are added to the Restricted entities page after signs of compromise.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
 ms.date: 6/14/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Remove blocked connectors from the Restricted entities page
@@ -31,7 +31,7 @@ appliesto:
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, several things happen if an [inbound connector](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) is detected as potentially compromised:
 
 - The connector is prevented from sending or relaying email.
-- The connector is added to the **Restricted entities** page in the Microsoft 365 Defender portal.
+- The connector is added to the **Restricted entities** page in the Microsoft Defender portal.
 
   A _restricted entity_ is a **user account** or a **connector** that's blocked from sending email due to indications of compromise, which typically includes exceeding message receiving and sending limits.
 
@@ -41,27 +41,28 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 For more information about compromised connectors and how to regain control of them, see [Respond to a compromised connector](connectors-detect-respond-to-compromise.md).
 
-The procedures in this article explain how admins can remove connectors from the **Restricted entities** page in the Microsoft 365 Defender portal or in Exchange Online PowerShell.
+The procedures in this article explain how admins can remove connectors from the **Restricted entities** page in the Microsoft Defender portal or in Exchange Online PowerShell.
 
-For more information about compromised _user accounts_ and how to remove them from the **Restricted entities** page, see [Remove blocked users from the Restricted entities page](removing-user-from-restricted-users-portal-after-spam.md).
+For more information about compromised _user accounts_ and how to remove them from the **Restricted entities** page, see [Remove blocked users from the Restricted entities page](outbound-spam-restore-restricted-users.md).
 
 ## What do you need to know before you begin?
 
-- Open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Restricted entities** page, use <https://security.microsoft.com/restrictedentities>.
+- Open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **Restricted entities** page, use <https://security.microsoft.com/restrictedentities>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Detection tuning (manage)** or **Authorization and settings/Security settings/Core security settings (read)**.
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Remove connectors from the Restricted entities page_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to the Restricted entities page_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - Before you follow the procedures in this article to remove a connector from the **Restricted entities** page, be sure to follow the required steps to regain control of the connector as described in [Respond to a compromised connector](connectors-detect-respond-to-compromise.md).
 
-## Remove a connector from the Restricted entities page in the Microsoft 365 Defender portal
+## Remove a connector from the Restricted entities page in the Microsoft Defender portal
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Restricted entities**. Or, to go directly to the **Restricted entities** page, use <https://security.microsoft.com/restrictedentities>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Restricted entities**. Or, to go directly to the **Restricted entities** page, use <https://security.microsoft.com/restrictedentities>.
 
 2. On the **Restricted entities** page, identify the connector to unblock. The **Entity** value is **Connector**.
 
@@ -82,12 +83,12 @@ For more information about compromised _user accounts_ and how to remove them fr
 
 ## Verify the alert settings for restricted connectors
 
-The default alert policy named **Suspicious connector activity** automatically notifies admins when connectors are blocked from relaying email. For more information about alert policies, see [Alert policies in Microsoft 365](../../compliance/alert-policies.md).
+The default alert policy named **Suspicious connector activity** automatically notifies admins when connectors are blocked from relaying email. For more information about alert policies, see [Alert policies in the Microsoft Defender portal](alert-policies-defender-portal.md).
 
 > [!IMPORTANT]
-> For alerts to work, audit logging must to be turned on (it's on by default). To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
+> For alerts to work, audit logging must be turned on (it's on by default). To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**. Or, to go directly to the **Alert policy** page, use <https://security.microsoft.com/alertpoliciesv2>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**. Or, to go directly to the **Alert policy** page, use <https://security.microsoft.com/alertpoliciesv2>.
 
 2. On the **Alert policy** page, find the alert named **Suspicious connector activity**. You can sort the alerts by name, or use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find the alert.
 
@@ -137,4 +138,4 @@ For detailed syntax and parameter information, see [Remove-BlockedConnector](/po
 ## More information
 
 - [Respond to a compromised connector](connectors-detect-respond-to-compromise.md)
-- [Remove blocked users](removing-user-from-restricted-users-portal-after-spam.md)
+- [Remove blocked users](outbound-spam-restore-restricted-users.md)

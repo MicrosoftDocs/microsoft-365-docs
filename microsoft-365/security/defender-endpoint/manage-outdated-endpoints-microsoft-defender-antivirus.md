@@ -1,19 +1,15 @@
 ---
 title: Apply Microsoft Defender Antivirus protection updates to out of date endpoints
 description: Define when and how updates should be applied for endpoints that haven't updated in a while.
-keywords: updates, protection, out of date, outdated, old, catch-up
-ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer:
-manager: dansimp
-ms.subservice: mde
+manager: deniseb
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier3

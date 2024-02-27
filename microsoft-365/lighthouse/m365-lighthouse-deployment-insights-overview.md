@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: kywirpel
+ms.reviewer: shcallaw
 ms.date: 06/05/2023
 audience: Admin
 ms.topic: article
@@ -36,11 +36,13 @@ Microsoft 365 Lighthouse provides deployment insights within and across the tena
 
 - Prioritize deployment activities based on risk.
 
-To access deployment insights, in the left navigation pane in Lighthouse, select **Deployment \> Deployment insights**.
+To access deployment insights, in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Deployment insights**.
 
 ## Watch: Deployment insights
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15vPs]
+
+Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
 
 ## Deployment insights page
 The **Deployment insights** page includes the following:
@@ -56,7 +58,7 @@ The **Deployment insights** page includes the following:
 
 ### Tenant progress
 
-The tenant progress graph measures deployment progress by customer tenant, reporting the status of each tenants' deployment plan as one of the following:
+The tenant progress graph measures deployment progress by customer tenant, reporting the status of each tenant's deployment plan as one of the following:
 
 - **Complete** – The status of all deployment tasks is **Compliant** or **Dismissed**.
 
@@ -201,7 +203,7 @@ Select any task from the list to open the deployment insights details pane for t
 
 ## Next steps
 
-For information on how to manage tenants by using deployment insights, see [Manage deployments using insights in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenants-using-deployment-insights.md).
+For information on how to manage tenants by using deployment insights, see [Manage tenants by using deployment insights in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenants-using-deployment-insights.md).
 
 ## Related content
 

@@ -2,34 +2,31 @@
 title: Troubleshoot issues for Microsoft Defender for Endpoint on Linux RHEL6
 ms.reviewer: 
 description: Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, cloud, connectivity, communication
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 ms.date: 10/06/2021
 ---
 
 # Troubleshoot issues for Microsoft Defender for Endpoint on Linux RHEL6
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

@@ -1,35 +1,32 @@
 ---
-title: Offboard devices from the Microsoft Defender for Endpoint service
+title: Offboard devices
 description: Onboard Windows devices, servers, non-Windows devices from the Microsoft Defender for Endpoint service
-keywords: offboarding, Microsoft Defender for Endpoint offboarding, offboarding
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
-# Offboard devices from the Microsoft Defender for Endpoint service
+# Offboard devices
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platforms**
 - macOS
@@ -65,4 +62,5 @@ Follow the corresponding instructions depending on your preferred deployment met
 ## Offboard non-Windows devices
 
 - [Offboard non-Windows devices](configure-endpoints-non-windows.md#offboard-non-windows-devices)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

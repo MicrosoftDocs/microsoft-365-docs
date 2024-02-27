@@ -1,13 +1,13 @@
 ---
 title: SharePoint Cross-tenant SharePoint migration Step 3 (preview)
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.subservice: sharepoint-migration
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration
@@ -21,7 +21,7 @@ description: "Step 3 of the SharePoint Cross-tenant migration feature"
 >[!Note]
 >Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
-This is Step 3 in a solution designed to complete a **Cross-tenant SharePoint migration.** To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
+This article is Step 3 in a solution designed to complete a **Cross-tenant SharePoint migration.** To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
 
 - Step 1: [Connect to the source and the target tenants](cross-tenant-SharePoint-migration-step1.md)
 - Step 2: [Establish trust between the source and the target tenant](cross-tenant-SharePoint-migration-step2.md) 
@@ -31,7 +31,7 @@ This is Step 3 in a solution designed to complete a **Cross-tenant SharePoint mi
 - Step 6: [Start a Cross-tenant SharePoint migration](cross-tenant-SharePoint-migration-step6.md)
 - Step 7: [Post migration steps](cross-tenant-SharePoint-migration-step7.md)
 
-Before proceeding with your migration,  you'll need to verify the trust is complete. A status of *GoodToProceed*,  confirms that the trust is verified.
+Before proceeding with your migration,  you need to verify the trust is complete. A status of *GoodToProceed* confirms that the trust is verified.
 
 ## To verify trust has been established
 
@@ -56,7 +56,7 @@ When verifying trust, possible values
 |Value|Description|
 |:-----|:-----|
 |NotEstablished|Trust hasn't been requested locally.|
-|NotEstablishedByPartner|Trust hasn't been requested by the partner|
+|NotEstablishedByPartner|Partner hasn't requested the Trust|
 |DormantByPartner|Partner’s requested trust is within the seven days waiting period after creation.|
 |CouldNotContactPartner|Couldn't contact the partner to determine status.|
 |GoodToProceed|Verified to proceed.|

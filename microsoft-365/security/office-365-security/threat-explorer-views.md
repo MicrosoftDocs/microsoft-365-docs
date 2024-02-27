@@ -8,19 +8,18 @@ manager: dansimp
 ms.date: 6/20/2023
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier1
-description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft 365 Defender portal.
+description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft Defender portal.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Views in Threat Explorer and real-time detections
@@ -29,7 +28,7 @@ appliesto:
 
 :::image type="content" source="../../media/explorer-new.png" alt-text="Screenshot of the Threat Explorer page." lightbox="../../media/explorer.png":::
 
-[Threat Explorer](threat-explorer-about.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Microsoft 365 Defender portal. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
+[Threat Explorer](threat-explorer-about.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Microsoft Defender portal. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
 
 - If you have [Microsoft Defender for Office 365](defender-for-office-365.md) Plan 2, then you have Explorer.
 - If you have Microsoft Defender for Office 365 Plan 1, then you have real-time detections.
@@ -51,16 +50,16 @@ Select the **View** menu using the navigation bar. Once you have selected a view
 
 ## All email
 
-To view this report, in Explorer, select **All email** in the top navigation pane. This view shows emails identified as malicious due to phishing or malware, as well all other non-malicious emails like regular email, spam, and bulk mail. 
+To view this report, in Explorer, select **All email** in the top navigation pane. This view shows emails identified as malicious due to phishing or malware, as well all other non-malicious emails like regular email, spam, and bulk mail.
 
 :::image type="content" source="../../media/all-email-new.png" alt-text="Screenshot of the Threat Explorer View menu." lightbox="../../media/all-email-new.png":::
 
-> [!NOTE] 
-> If you get a **Too much data to display** error, add a filter and, if necessary, narrow the date range you're viewing. 
+> [!NOTE]
+> If you get a **Too much data to display** error, add a filter and, if necessary, narrow the date range you're viewing.
 
-To apply a filter, select the filter dropdown, select an item in the list, and then select **Refresh**. You can view information by sender, sender's domain, recipients, subject, attachment filename, malware family, detection technology (how the malware was detected), and more. 
+To apply a filter, select the filter dropdown, select an item in the list, and then select **Refresh**. You can view information by sender, sender's domain, recipients, subject, attachment filename, malware family, detection technology (how the malware was detected), and more.
 
-You can view more details about specific email messages, such as subject line, recipient, sender, status, and so on below the chart. 
+You can view more details about specific email messages, such as subject line, recipient, sender, status, and so on below the chart.
 
 ## Malware
 
@@ -68,9 +67,9 @@ To view this report, in Explorer, select **Malware** in the top navigation pane.
 
 :::image type="content" source="../../media/threat-explorer-malware-new.png" alt-text="Screenshot of the View data about email identified as malware." lightbox="../../media/threat-explorer-malware-new.png":::
 
-Use this list to view data by sender, recipients, sender domain, subject, detection technology, and more. 
+Use this list to view data by sender, recipients, sender domain, subject, detection technology, and more.
 
-You can also use the **Top malware families** section to identify the malware families used most frequently to attack the users and the number of times it is used in last 30 days. 
+You can also use the **Top malware families** section to identify the malware families used most frequently to attack the users and the number of times it is used in last 30 days.
 
 Below the chart, view more details about specific messages. When you select an item in the list, a fly-out pane opens, where you can learn more about the item you selected.
 
@@ -82,13 +81,13 @@ To view this report, in Explorer (or real-time detections), select **Phish** in 
 
 :::image type="content" source="../../media/phish-new.png" alt-text="Screenshot of the View data about email identified as phishing attempts." lightbox="../../media/phish-new.png":::
 
-Your list of viewing options include data by sender, recipients, sender domain, sender IP, URL domain, click verdict, and more. 
+Your list of viewing options include data by sender, recipients, sender domain, sender IP, URL domain, click verdict, and more.
 
-For example, to see what actions were taken when people clicked on URLs that were identified as phishing attempts, select **Click verdict**, select one or more options, and then select **Refresh**.
+For example, to see what actions were taken when people clicked on URLs that were identified as phishing attempts, select **Click verdict**, select one or more options, and then select **Refresh**.
 
-Below the chart, view more details about specific emails, **URL clicks**, **Top URLs**, **Top clicks**, and more. 
+Below the chart, view more details about specific emails, **URL clicks**, **Top URLs**, **Top clicks**, and more.
 
-When you select an item in the list, such as a URL that was detected, a fly-out pane opens, where you can learn more about the item you selected. 
+When you select an item in the list, such as a URL that was detected, a fly-out pane opens, where you can learn more about the item you selected.
 
 :::image type="content" source="../../media/threat-explorer-email-phish-details-new.png" alt-text="Screenshot of the Details about a detected URL." lightbox="../../media/threat-explorer-email-phish-details-new.png":::
 
@@ -102,7 +101,7 @@ For more information on campaigns, see [Campaigns in Microsoft Defender for Offi
 
 ## Content Malware
 
-To view this report, in Explorer (or real-time detections), select **Content Malware** in the top navigation pane. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
+To view this report, in Explorer (or real-time detections), select **Content Malware** in the top navigation pane. This view shows files that were identified as malicious by [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 
 :::image type="content" source="../../media/threat-explorer-content-malware-new.png" alt-text="Screenshot of the view data about content malware." lightbox="../../media/threat-explorer-content-malware-new.png":::
 
@@ -116,11 +115,11 @@ To view this report, in Explorer, select **URL clicks** in the top navigation pa
 
 :::image type="content" source="../../media/threat-explorer-url-clicks-new.png" alt-text="Screenshot of the view data about url clicks." lightbox="../../media/threat-explorer-url-clicks-new.png":::
 
-You can view information by recipient, detection technology (how the malware was detected), and workload (Email, Office, Teams). 
+You can view information by recipient, detection technology (how the malware was detected), and workload (Email, Office, Teams).
 
 You can also use the **Top clicks** and **Top targeted users** options to get more information on user click patterns and know which users are more vulnerable to external attacks.
 
-:::image type="content" source="../../media/threat-explorer-top-clicks.png" alt-text="Screenshot of view data filtered by top clicks." lightbox="../../media/threat-explorer-top-clicks.png"::: 
+:::image type="content" source="../../media/threat-explorer-top-clicks.png" alt-text="Screenshot of view data filtered by top clicks." lightbox="../../media/threat-explorer-top-clicks.png":::
 
 ## Queries and filters
 

@@ -16,11 +16,11 @@ ms.collection:
 description: Admins can learn how to allow or block files in the Tenant Allow/Block List.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/20/2023
+ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Allow or block files using the Tenant Allow/Block List
@@ -29,11 +29,11 @@ appliesto:
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, admins can create and manage entries for files in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
-This article describes how admins can manage entries for files in the Microsoft 365 Defender Portal and in Exchange Online PowerShell.
+This article describes how admins can manage entries for files in the Microsoft Defender portal and in Exchange Online PowerShell.
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+- You open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -45,14 +45,18 @@ This article describes how admins can manage entries for files in the Microsoft 
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values aren't supported.
 
-- For files, the maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 file entries in total).
+- Entry limits for files:
+  - **Exchange Online Protection**: The maximum number of allow entries is 500, and the maximum number of block entries is 500 (1000 file entries in total).
+  - **Defender for Office 365 Plan 1**: The maximum number of allow entries is 1000, and the maximum number of block entries is 1000 (2000 file entries in total).
+  - **Defender for Office 365 Plan 2**: The maximum number of allow entries is 5000, and the maximum number of block entries is 10000 (15000 file entries in total).
 
 - You can enter a maximum of 64 characters in a file entry.
 
-- An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
+- An entry should be active within 5 minutes.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Detection tuning (manage)** or **Authorization and settings/Security settings/Core security settings (read)**.
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Add and remove entries from the Tenant Allow/Block List_: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).
       - **Security Operator** (Tenant AllowBlockList Manager).
@@ -61,9 +65,9 @@ This article describes how admins can manage entries for files in the Microsoft 
       - **Security Reader**
       - **View-Only Configuration**
       - **View-Only Organization Management**
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-- A **Files** tab is available on the **Submissions** page only in organizations with Microsoft 365 Defender or Microsoft Defender for Endpoint Plan 2. For information and instructions to submit files from the **Files** tab, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
+- A **Files** tab is available on the **Submissions** page only in organizations with Microsoft Defender XDR or Microsoft Defender for Endpoint Plan 2. For information and instructions to submit files from the **Files** tab, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
 
 ## Create allow entries for files
 
@@ -92,9 +96,9 @@ To create block entries for files, use either of the following methods:
 
 - From the **Files** tab on the **Tenant Allow/Block Lists** page or in PowerShell as described in this section.
 
-### Use the Microsoft 365 Defender portal to create block entries for files in the Tenant Allow/Block List
+### Use the Microsoft Defender portal to create block entries for files in the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. On the **Tenant Allow/Block Lists** page, select the **Files** tab.
 
@@ -133,20 +137,20 @@ New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695e
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-## Use the Microsoft 365 Defender portal to view entries for files in the Tenant Allow/Block List
+## Use the Microsoft Defender portal to view entries for files in the Tenant Allow/Block List
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 Select the **Files** tab.
 
 On the **Files** tab, you can sort the entries by clicking on an available column header. The following columns are available:
 
-   - **Value**: The file hash.
-   - **Action**: The available values are  **Allow** or **Block**.
-   - **Modified by**
-   - **Last updated**
-   - **Remove on**: The expiration date.
-   - **Notes**
+- **Value**: The file hash.
+- **Action**: The available values are  **Allow** or **Block**.
+- **Modified by**
+- **Last updated**
+- **Remove on**: The expiration date.
+- **Notes**
 
 To filter the entries, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**. The following filters are available in the **Filter** flyout that opens:
 
@@ -189,11 +193,11 @@ Get-TenantAllowBlockListItems -ListType FileHash -Block
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
-## Use the Microsoft 365 Defender portal to modify entries for files in the Tenant Allow/Block List
+## Use the Microsoft Defender portal to modify entries for files in the Tenant Allow/Block List
 
 In existing file entries, you can change the expiration date and note.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the **Files** tab
 
@@ -237,9 +241,9 @@ Set-TenantAllowBlockListItems -ListType FileHash -Entries "27c5973b2451db9deeb01
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-## Use the Microsoft 365 Defender portal to remove entries for files from the Tenant Allow/Block List
+## Use the Microsoft Defender portal to remove entries for files from the Tenant Allow/Block List
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the **Files** tab.
 

@@ -1,13 +1,12 @@
 ---
 title: Device profile in Microsoft 365 security portal
 description: View risk and exposure levels for a device in your organization. Analyze past and present threats, and protect the device with the latest updates.
-keywords: security, malware, Microsoft 365, M365, Microsoft 365 Defender, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, device page, device profile,  machine page, machine profile
-ms.service: microsoft-365-security
-ms.subservice: m365d
+keywords: security, malware, Microsoft 365, M365, Microsoft Defender XDR, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, device page, device profile,  machine page, machine profile
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
-author: martyav
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -20,7 +19,7 @@ ms.date: 02/16/2021
 
 # Device profile page
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 The Microsoft 365 security portal provides you with device profile pages, so you can quickly assess the health and status of devices on your network.
@@ -34,7 +33,7 @@ If the device is enrolled in Microsoft Defender for Endpoint, you can also use t
 
 The profile page is broken up into several broad sections.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-overall.png" alt-text="The Device profile page in the Microsoft 365 Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-overall.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-overall.png" alt-text="The Device profile page in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-overall.png":::
 
 The sidebar (1) lists basic details about the device.
 
@@ -46,7 +45,7 @@ If the device is enrolled in Microsoft Defender for Endpoint, you'll also see a 
 
 Beside the main content area of the device profile page is the sidebar.
 
-:::image type="content" source="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png" alt-text="The Sidebar tab for device profile in the Microsoft 365 Defender portal" lightbox="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png":::
+:::image type="content" source="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png" alt-text="The Sidebar tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png":::
 
 The sidebar lists the device's full name and exposure level. It also provides some important basic information in small subsections, which can be toggled open or closed, such as:
 
@@ -64,7 +63,7 @@ The sidebar lists the device's full name and exposure level. It also provides so
 
 Response actions offer a quick way to defend against and analyze threats.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-long-action-bar.png" alt-text="The Action bar for device profile in the Microsoft 365 Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-long-action-bar.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-long-action-bar.png" alt-text="The Action bar for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-long-action-bar.png":::
 
 > [!IMPORTANT]
 > * [Response actions](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) are only available if the device is enrolled in Microsoft Defender for Endpoint.
@@ -92,7 +91,7 @@ Devices enrolled in Microsoft Defender for Endpoint display tabs that feature a 
 
 The default tab is **Overview**. It provides a quick look at the most important security fact about the device.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-overview.png" alt-text="The Overview tab for device profile in the Microsoft 365 Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-overview.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-overview.png" alt-text="The Overview tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-overview.png":::
 
 Here, you can get a quick look at the device's active alerts, and any currently logged on users.
 
@@ -102,7 +101,7 @@ If the device is enrolled in Microsoft Defender for Endpoint, you'll also see th
 
 The **Alerts** tab contains a list of alerts that have been raised on the device, from both Microsoft Defender for Identity and Microsoft Defender for Endpoint.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-alerts.png" alt-text="The Alerts tab for device profile in the Microsoft 365 Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-alerts.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-alerts.png" alt-text="The Alerts tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-alerts.png":::
 
 You can customize the number of items displayed and which columns are displayed for each item. The default behavior is to list 30 items per page.
 
@@ -120,7 +119,7 @@ The **Timeline** tab includes an interactive, chronological chart of all events 
 
 Below the chart is a list of events for the selected range of dates.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-timeline.png" alt-text="The Timeline tab for device profile in the Microsoft 365 Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-timeline.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-timeline.png" alt-text="The Timeline tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-timeline.png":::
 
 The number of items displayed and the columns on the list can both be customized. The default columns list the event time, active user, action type, entities (processes), and additional information about the event.
 
@@ -134,7 +133,7 @@ The list can also be exported to a CSV file, for download. Although the file isn
 
 The **Security recommendations** tab lists actions you can take to protect the device. Selecting an item on this list opens a flyout where you can get instructions on how to apply the recommendation.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png" alt-text="The Security recommendations tab for device profile in the Microsoft 365 Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png" alt-text="The Security recommendations tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png":::
 
 As with the previous tabs, the number of items displayed per page and which columns are visible, can be customized.
 
@@ -144,7 +143,7 @@ The default view includes columns that detail the security weaknesses addressed,
 
 The **Software inventory** tab lists software installed on the device.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png" alt-text="The Software inventory tab for device profile in the Microsoft 365 Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png" alt-text="The Software inventory tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png":::
 
 The default view displays the software vendor, installed version number, number of known software weaknesses, threat insights, product code, and tags. The number of items displayed and which columns are displayed can both be customized.
 
@@ -156,7 +155,7 @@ This list can be filtered by product code.
 
 The **Discovered vulnerabilities** tab lists any Common Vulnerabilities and Exploits (CVEs) that may affect the device.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png" alt-text="The Discovered vulnerabilities tab for device profile in the Microsoft 365 Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png" alt-text="The Discovered vulnerabilities tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png":::
 
 The default view lists the severity of the CVE, the Common Vulnerability Score (CVS), the software related to the CVE, when the CVE was published, when the CVE was last updated, and threats associated with the CVE.
 
@@ -168,7 +167,7 @@ Selecting an item from this list opens a flyout that describes the CVE.
 
 The **Missing KBs** tab lists any Microsoft Updates that have yet to be applied to the device. The "KBs" in question are [Knowledge Base articles](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query), which describe these updates; for example, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG" alt-text="The Missing KBs tab for device profile in the Microsoft 365 Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG":::
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG" alt-text="The Missing KBs tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG":::
 
 The default view lists the bulletin containing the updates, OS version, products affected, CVEs addressed, the KB number, and tags.
 
@@ -178,8 +177,8 @@ Selecting an item opens a flyout that links to the update.
 
 ## Related topics
 
-* [Microsoft 365 Defender overview](microsoft-365-defender.md)
-* [Turn on Microsoft 365 Defender](m365d-enable.md)
+* [Microsoft Defender XDR overview](microsoft-365-defender.md)
+* [Turn on Microsoft Defender XDR](m365d-enable.md)
 * [Investigate entities on devices, using live response](../defender-endpoint/live-response.md)
 * [Automated investigation and response (AIR) in Office 365](../office-365-security/air-about.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

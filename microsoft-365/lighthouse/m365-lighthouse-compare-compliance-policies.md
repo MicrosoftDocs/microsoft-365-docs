@@ -32,7 +32,7 @@ Make sure devices have a Microsoft Intune license and are enrolled in Microsoft 
 
 ## Compare policy settings
 
-1. In the left navigation pane in Lighthouse, select **Devices** > **Device compliance**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Devices** > **Device compliance**.
 
 2. Select the **Policies** tab.
 
@@ -49,7 +49,7 @@ You can filter the results to see **Settings that differ**, **Settings that matc
 
 ## Configure a policy setting
 
-1. In the left navigation pane in Lighthouse, select **Devices** > **Device compliance**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Devices** > **Device compliance**.
 
 2. Select the **Policies** tab.
 

@@ -1,10 +1,9 @@
 ---
-title: Common Microsoft 365 Defender REST API error codes
-description: Learn about the common Microsoft 365 Defender REST API error codes
-keywords: api, error, codes, common errors, Microsoft 365 Defender, api error codes
+title: Common Microsoft Defender XDR REST API error codes
+description: Learn about the common Microsoft Defender XDR REST API error codes
+keywords: api, error, codes, common errors, Microsoft Defender XDR, api error codes
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +17,8 @@ audience: ITPro
 ms.collection: 
  - m365-security
  - tier3
-ms.topic: conceptual
+ - must-keep
+ms.topic: reference
 search.appverid: 
   - MOE150
   - MET150
@@ -26,13 +26,13 @@ ms.custom: api
 ms.date: 02/08/2023
 ---
 
-# Common Microsoft 365 Defender REST API error codes
+# Common Microsoft Defender XDR REST API error codes
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -40,7 +40,7 @@ ms.date: 02/08/2023
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Error codes may be returned by an operation on any of the Microsoft 365 Defender APIs. Every error response will contain an error message, which can help resolve the problem. The error message column in the table section provides some sample messages. The content of actual messages will vary based on the factors that triggered the response. Variable content is indicated in the table by angle brackets.
+Error codes may be returned by an operation on any of the Microsoft Defender XDR APIs. Every error response will contain an error message, which can help resolve the problem. The error message column in the table section provides some sample messages. The content of actual messages will vary based on the factors that triggered the response. Variable content is indicated in the table by angle brackets.
 
 ## Error codes
 
@@ -103,8 +103,8 @@ Each error response contains a unique ID parameter for tracking. The property na
 
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
-- [Microsoft 365 Defender APIs overview](api-overview.md)
-- [Supported Microsoft 365 Defender APIs](api-supported.md)
-- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Microsoft Defender XDR APIs overview](api-overview.md)
+- [Supported Microsoft Defender XDR APIs](api-supported.md)
+- [Access the Microsoft Defender XDR APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -1,34 +1,31 @@
 ---
 title: Privacy for Microsoft Defender for Endpoint on Linux
 description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data that is collected in Microsoft Defender for Endpoint on Linux.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, privacy, diagnostic
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Privacy for Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -42,13 +39,13 @@ This section describes the privacy controls for the different types of data that
 
 ### Diagnostic data
 
-Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, detect, diagnose and fix problems, and also make product improvements.
+Diagnostic data is used to keep Defender for Endpoint secure and up to date, detect, diagnose and fix problems, and also make product improvements.
 
 Some diagnostic data is required, while some diagnostic data is optional. We give you the ability to choose whether to send us required or optional diagnostic data by using privacy controls, such as policy settings for organizations.
 
 There are two levels of diagnostic data for Defender for Endpoint client software that you can choose from:
 
-- **Required**: The minimum data necessary to help keep Defender for Endpoint secure, up-to-date, and performing as expected on the device it's installed on.
+- **Required**: The minimum data necessary to help keep Defender for Endpoint secure, up to date, and performing as expected on the device it's installed on.
 - **Optional**: Other data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and remediate issues.
 
 By default, only required diagnostic data is sent to Microsoft.
@@ -102,7 +99,7 @@ The following fields are considered common for all events:
 
 ### Required diagnostic data
 
-**Required diagnostic data** is the minimum data necessary to help keep Defender for Endpoint secure, up-to-date, and perform as expected on the device it's installed on.
+**Required diagnostic data** is the minimum data necessary to help keep Defender for Endpoint secure, up to date, and perform as expected on the device it's installed on.
 
 Required diagnostic data helps to identify problems with Microsoft Defender for Endpoint that may be related to a device or software configuration. For example, it can help determine if a Defender for Endpoint feature crashes more frequently on a particular operating system version, with newly introduced features, or when certain Defender for Endpoint features are disabled. Required diagnostic data helps Microsoft detect, diagnose, and fix these problems more quickly so the impact to users or organizations is reduced.
 

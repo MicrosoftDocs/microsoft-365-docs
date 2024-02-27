@@ -1,19 +1,18 @@
 ---
 title: "How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365"
 description: Was something missed or wrongly detected by AIR in Microsoft Defender for Office 365? Learn how to submit false positives or false negatives to Microsoft for analysis.
-keywords: automated, investigation, alert, trigger, action, remediation, false positive, false negative
 search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-author: dansimp
-ms.author: dansimp
+author: chrisda
+ms.author: chrisda
 ms.service: microsoft-365-security
 ms.date: 06/09/2023
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -23,8 +22,8 @@ ms.custom:
 - autoir
 ms.subservice: mdo
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # How to report false positives/negatives in automated investigation and response capabilities
@@ -71,7 +70,7 @@ With Threat Explorer, your security operations team can find an email affected b
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the Action center by selecting **Action center**. To go directly to the Action center, use <https://security.microsoft.com/action-center/>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to the Action center by selecting **Action center**. To go directly to the Action center, use <https://security.microsoft.com/action-center/>.
 2. In the Action center, select the **History** tab to view the list of completed actions.
 3. Select an item. Its flyout pane opens.
 4. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)

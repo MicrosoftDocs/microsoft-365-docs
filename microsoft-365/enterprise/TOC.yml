@@ -66,6 +66,8 @@
           items: 
             - name: Microsoft 365 endpoints
               href: microsoft-365-endpoints.md
+            - name: Unified cloud.microsoft domain for Microsoft 365 apps
+              href: cloud-microsoft-domain.md
             - name: Managing Office 365 endpoints
               href: managing-office-365-endpoints.md
             - name: Worldwide endpoints
@@ -88,6 +90,22 @@
           href: network-planning-and-performance.md
         - name: Monitor connectivity
           href: monitor-connectivity.md
+        - name: Network Connectivity in Microsoft 365 Admin center
+          items:
+            - name: Network Connectivity in Microsoft 365 Admin center
+              href: office-365-network-mac-perf-overview.md
+            - name: Microsoft 365 Network Assessment
+              href: office-365-network-mac-perf-score.md
+            - name: Microsoft 365 Network Insights
+              href: office-365-network-mac-perf-insights.md
+            - name: Microsoft 365 Network Provider Information
+              href: office-365-network-mac-perf-nppux.md
+            - name: Microsoft 365 Network Provider Assessments
+              href: office-365-network-mac-perf-nppdata.md
+            - name: Microsoft 365 Network Provider Details
+              href: office-365-network-mac-perf-nppdetails.md
+            - name: Microsoft 365 Network connectivity test tool
+              href: office-365-network-mac-perf-onboarding-tool.md
     - name: Microsoft 365 Networking Partner Program
       href: microsoft-365-networking-partner-program.md
 
@@ -105,7 +123,7 @@
           href: setup-guides-for-microsoft-365.md
         - name: Integration
           items: 
-            - name: Integrated Apps and Azure AD
+            - name: Integrated Apps and Microsoft Entra ID
               href: integrated-apps-and-azure-ads.md
             - name: Integration with on-premises
               href: microsoft-365-integration.md
@@ -126,7 +144,7 @@
         - name: Tenant isolation in Microsoft 365
           href: /compliance/assurance/assurance-microsoft-365-isolation-controls
           items: 
-            - name: Isolation and Access Control in Azure Active Directory
+            - name: Isolation and Access Control in Microsoft Entra ID
               href: microsoft-365-isolation-in-azure-active-directory.md
             - name: Monitoring and Testing Tenant Boundaries
               href: /compliance/assurance/assurance-monitoring-and-testing
@@ -154,6 +172,8 @@
                   href: microsoft-365-mailbox-utilization-service-alerts.md
                 - name: Service advisories for auto-expanding archive utilization
                   href: microsoft-365-exo-archive-advisory.md
+                - name: Service advisories for eDiscovery cmdlet exception spike
+                  href: microsoft-365-exchange-monitoring-service-advisories.md
                 - name: Service advisories for eDiscovery throttling
                   href: microsoft-365-ediscovery-throttling-service-advisory.md
                 - name: Service advisories for MRS source delays
@@ -164,18 +184,32 @@
               href: microsoft-365-apps-monitoring.md
             - name: Microsoft 365 Teams monitoring
               href: microsoft-365-teams-monitoring.md
+            - name: Microsoft 365 for the web monitoring
+              href: microsoft-365-for-the-web-monitoring.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
       items: 
-        - name: Multi-Tenant Organization People Search
-          href: multi-tenant-people-search.md
         - name: Inter-tenant collaboration
           href: microsoft-365-inter-tenant-collaboration.md
         - name: Cross-tenant mailbox migration
           href: cross-tenant-mailbox-migration.md
         - name: Cross-tenant identity mapping
           href: cross-tenant-identity-mapping.md
+
+        - name: Multitenant collaboration
+          items:
+            - name: Plan for multitenant orgs
+              href: plan-multi-tenant-org-overview.md
+            - name: Set up a multitenant org
+              href: set-up-multi-tenant-org.md
+            - name: Join or leave a multitenant org
+              href: join-leave-multi-tenant-org.md
+            - name: Sync users with other orgs
+              href: sync-users-multi-tenant-orgs.md
+            - name: Multitenant Organization People Search
+              href: multi-tenant-people-search.md
+
         - name: Cross-tenant OneDrive migration
           items:
             - name: Cross-tenant OneDrive migration overview
@@ -315,7 +349,7 @@
             items: 
               - name: Overview
                 href: hybrid-solutions.md
-              - name: Use Azure Active Directory for SharePoint Server 2016 authentication
+              - name: Use Microsoft Entra ID for SharePoint Server 2016 authentication
                 href: /azure/active-directory/saas-apps/sharepoint-on-premises-tutorial
               - name: Connect an on-premises network to an Azure virtual network
                 href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
@@ -480,6 +514,8 @@
                   href: introduction-to-performance-tuning-for-sharepoint-online.md
                 - name: Diagnosing performance issues with SharePoint
                   href: diagnosing-performance-issues-with-sharepoint-online.md
+                - name: Use the Page Diagnostics for SharePoint tool
+                  href: page-diagnostics-for-spo.md
             - name: Tune Project Online performance
               href: /ProjectOnline/tune-project-online-performance
             - name: Performance troubleshooting plan
@@ -635,7 +671,7 @@
           href: pass-through-auth-m365-ent-test-environment.md
         - name: Federated authentication
           href: federated-identity-for-your-microsoft-365-dev-test-environment.md
-        - name: Azure AD Seamless Single Sign-on
+        - name: Microsoft Entra seamless single sign-on
           href: single-sign-on-m365-ent-test-environment.md
         - name: Multifactor authentication
           href: multi-factor-authentication-microsoft-365-test-environment.md
@@ -647,7 +683,7 @@
           href: password-reset-m365-ent-test-environment.md
         - name: Automatic licensing and group membership
           href: automate-licenses-group-membership-microsoft-365-test-environment.md
-        - name: Azure AD Identity Protection
+        - name: Microsoft Entra ID Protection
           href: azure-ad-identity-protection-microsoft-365-test-environment.md
         - name: Identity and device access
           href: identity-device-access-m365-test-environment.md

@@ -2,31 +2,32 @@
 title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
-ms.service: microsoft-365-security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/07/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ---
 
 # Set preferences for Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -64,7 +65,7 @@ Specifies the enforcement preference of antivirus engine. There are three values
   - Real-time protection is turned off.
 - [Passive (`passive`)](microsoft-defender-antivirus-compatibility.md#passive-mode-or-edr-block-mode): Runs the antivirus engine in passive mode. In this:
   - Real-time protection is turned off: Threats are not remediated by Microsoft Defender Antivirus.
-  - On-demand scanning is turned on: Still use the scan capabilites on the endpoint.
+  - On-demand scanning is turned on: Still use the scan capabilities on the endpoint.
   - Automatic threat remediation is turned off: No files will be moved and security admin is expected to take required action.
   - Security intelligence updates are turned on: Alerts will be available on security admins tenant.
 
@@ -78,8 +79,8 @@ Specifies the enforcement preference of antivirus engine. There are three values
 #### Enable/disable behavior-monitoring 
 
 Determines whether behavior monitoring and blocking capability is enabled on the device or not. 
-
-<br>
+> [!NOTE]
+> This feature is applicable only when Real-Time Protection feature is enabled.
 
 ****
 |Description|Value|
@@ -221,13 +222,40 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 
 Configure filesystems to be unmonitored/excluded from Real Time Protection(RTP). The filesystems configured are validated against Microsoft Defender's list of permitted filesystems. Only post successful validation, will the filesystem be allowed to be unmonitored. These configured unmonitored filesystems will still be scanned by Quick, Full, and custom scans.
 
-By default, NFS and Fuse are unmonitored from RTP, Quick, and Full scans. However, they can still be scanned by a custom scan.
-
 |Description|Value|
 |---|---|
 |**Key**|unmonitoredFilesystems|
 |**Data type**|Array of strings|
 |**Comments**|Configured filesystem will be unmonitored only if it is present in Microsoft's list of permitted unmonitored filesystems.|
+
+By default, NFS and Fuse are unmonitored from RTP, Quick, and Full scans. However, they can still be scanned by a custom scan. For example, to remove NFS from the list of unmonitored filesystems list, update the managed config file as shown below. This will automatically add NFS to the list of monitored filesystems for RTP.
+
+```JSON
+{
+   "antivirusEngine":{
+      "unmonitoredFilesystems": ["Fuse"]
+  }
+}
+```
+To remove both NFS and Fuse from unmonitored list of filesystems, do the following
+
+```JSON
+{
+   "antivirusEngine":{
+      "unmonitoredFilesystems": []
+  }
+}
+```
+
+
+>[!NOTE]
+> Below is the default list of monitored filesystems for RTP -
+>
+>**[btrfs, ecryptfs, ext2, ext3, ext4, fuseblk, jfs, overlay, ramfs, reiserfs, tmpfs, vfat, xfs]**
+>
+>If any monitored filesystem needs to be added to the list of unmonitored filesystems,then it needs to be evaluated and enabled by Microsoft via cloud config. Following which customers can update managed_mdatp.json to unmonitor that filesystem.
+
+
 
 #### Configure file hash computation feature
 
@@ -326,6 +354,56 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 |**Possible values**|10000 (default). Allowed values are from 5000 items to 15000 items.|
 |**Comments**|Available in Defender for Endpoint version 101.04.76 or higher.|
 
+#### Advanced scan options
+
+The following settings can be configured to enable certain advanced scanning features. 
+
+>[!NOTE]
+>Enabling these features might impact device performance. As such, it is recommended to keep the defaults.
+
+##### Configure scanning of file modify permissions events
+When this feature is enabled, Defender for Endpoint will scan files when their permissions have been changed to set the execute bit(s).
+
+>[!NOTE]
+>This feature is applicable only when the `enableFilePermissionEvents` feature is enabled. For more information, see [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-permissions-events) section below for details.
+
+|Description|Value|
+|---|---|
+|**Key**|scanFileModifyPermissions|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
+##### Configure scanning of file modify ownership events
+When this feature is enabled, Defender for Endpoint will scan files for which ownership has changed. 
+
+>[!NOTE]
+>This feature is applicable only when the `enableFileOwnershipEvents` feature is enabled. For more information, see [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-ownership-events) section below for details.
+
+|Description|Value|
+|---|---|
+|**Key**|scanFileModifyOwnership|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
+##### Configure scanning of raw socket events
+When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets, or setting socket option. 
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
+
+>[!NOTE]
+>This feature is applicable only when the `enableRawSocketEvent` feature is enabled. For more information, see [Advanced optional features](linux-preferences.md#configure-monitoring-of-raw-socket-events) section below for details.
+
+|Description|Value|
+|---|---|
+|**Key**|scanNetworkSocketEvent|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
+
 ### Cloud-delivered protection preferences
 
 The *cloudService* entry in the configuration profile is used to configure the cloud-driven protection feature of the product.
@@ -348,18 +426,19 @@ Determines whether cloud-delivered protection is enabled on the device or not. T
 
 #### Diagnostic collection level
 
-Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by the product to Microsoft.
+Diagnostic data is used to keep Defender for Endpoint secure and up to date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by the product to Microsoft.
 
 |Description|Value|
 |---|---|
 |**Key**|diagnosticLevel|
 |**Data type**|String|
 |**Possible values**|optional <p> required (default)|
-|
 
 #### Configure cloud block level
 
-This setting determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint is more aggressive when identifying suspicious files to block and scan; otherwise, it is less aggressive and therefore blocks and scans with less frequency. There are five values for setting cloud block level:
+This setting determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint is more aggressive when identifying suspicious files to block and scan; otherwise, it is less aggressive and therefore blocks and scans with less frequency. 
+
+There are five values for setting cloud block level:
 
 - Normal (`normal`): The default blocking level.
 - Moderate (`moderate`): Delivers verdict only for high confidence detections.
@@ -396,6 +475,174 @@ Determines whether security intelligence updates are installed automatically:
 |**Key**|automaticDefinitionUpdateEnabled|
 |**Data type**|Boolean|
 |**Possible values**|true (default) <p> false|
+
+
+### Advanced optional features
+
+The following settings can be configured to enable certain advanced features.
+
+>[!NOTE]
+>Enabling these features might impact device performance. It is recommended to keep the defaults.
+
+|Description|Value|
+|---|---|
+|**Key**|features|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+
+#### Module load feature
+
+Determines whether module load events (file open events on shared libraries) are monitored.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
+
+|Description|Value|
+|---|---|
+|**Key**|moduleLoad|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.68.80 or higher.|
+
+#### Supplementary sensor configurations
+
+The following settings can be used to configure certain advanced supplementary sensor features.
+
+|Description|Value|
+|---|---|
+|**Key**|supplementarySensorConfigurations|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+
+##### Configure monitoring of file modify permissions events
+Determines whether file modify permissions events (`chmod`) are monitored. 
+
+>[!NOTE]
+>When this feature is enabled, Defender for Endpoint will monitor changes to the execute bits of files, but not scan these events. For more information, see [Advanced scanning features](linux-preferences.md#configure-scanning-of-file-modify-permissions-events) section for more details.
+
+|Description|Value|
+|---|---|
+|**Key**|enableFilePermissionEvents|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
+##### Configure monitoring of file modify ownership events
+Determines whether file modify ownership events (chown) are monitored.
+
+>[!NOTE]
+>When this feature is enabled, Defender for Endpoint will monitor changes to the ownership of files, but not scan these events. For more information, see [Advanced scanning features](linux-preferences.md#configure-scanning-of-file-modify-ownership-events) section for more details.
+
+|Description|Value|
+|---|---|
+|**Key**|enableFileOwnershipEvents|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
+##### Configure monitoring of raw socket events
+Determines whether network socket events involving creation of raw sockets / packet sockets, or setting socket option, are monitored.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
+
+>[!NOTE]
+>When this feature is enabled, Defender for Endpoint will monitor these network socket events, but not scan these events. For more information, see [Advanced scanning features](linux-preferences.md#configure-scanning-of-raw-socket-events) section above for more details.
+
+|Description|Value|
+|---|---|
+|**Key**|enableRawSocketEvent|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
+##### Configure monitoring of boot loader events
+Determines whether boot loader events are monitored and scanned.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
+
+|Description|Value|
+|---|---|
+|**Key**|enableBootLoaderCalls|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.68.80 or higher.|
+
+##### Configure monitoring of ptrace events
+Determines whether ptrace events are monitored and scanned.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
+
+|Description|Value|
+|---|---|
+|**Key**|enableProcessCalls|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.68.80 or higher.|
+
+##### Configure monitoring of pseudofs events
+Determines whether pseudofs events are monitored and scanned.
+> [!NOTE]
+> This feature is applicable only when Behavior Monitoring is enabled.
+
+|Description|Value|
+|---|---|
+|**Key**|enablePseudofsCalls|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.68.80 or higher.|
+
+##### Configure monitoring of module load events using eBPF
+Determines whether module load events are monitored using eBPF and scanned.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
+
+|Description|Value|
+|---|---|
+|**Key**|enableEbpfModuleLoadEvents|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.68.80 or higher.|
+
+#### Report AV Suspicious Events to EDR
+
+Determines whether suspicious events from Antivirus are reported to EDR.
+
+|Description|Value|
+|---|---|
+|**Key**|sendLowfiEvents|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
+### Network protection configurations
+
+The following settings can be used to configure advanced Network Protection inspection features to control what traffic gets inspected by Network Protection.
+
+>[!NOTE]
+>For these to be effective, Network Protection has to be turned on. For more information, see [Turn on network protection for Linux](network-protection-linux.md).
+
+|Description|Value|
+|---|---|
+|**Key**|networkProtection|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+
+#### Configure ICMP inspection
+Determines whether ICMP events are monitored and scanned.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
+
+|Description|Value|
+|---|---|
+|**Key**|disableIcmpInspection|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
 
 ## Recommended configuration profile
 
@@ -441,17 +688,20 @@ The following configuration profile will:
 
 The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over the product.
   
-> [!NOTE]
-> It is not possible to control all Microsoft Defender for Endpoint communication with only a proxy setting in this JSON.
+>[!NOTE]
+>It is not possible to control all Microsoft Defender for Endpoint communication with only a proxy setting in this JSON.
 
 ### Full profile
 
 ```JSON
 {
    "antivirusEngine":{
-      "enforcementLevel":"passive",
+      "enforcementLevel":"real_time",
+      "behaviorMonitoring": "enabled",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
+      "scanHistoryMaximumItems": 10000,
+      "scanResultsRetentionDays": 90,
       "maximumOnDemandScanThreads":2,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
@@ -539,37 +789,6 @@ When you run the `mdatp health` command for the first time, the value for the ta
 }
 ```
 
-  > [!NOTE]
-  > Don't forget to add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`. 
-## Configuration profile validation
-
-The configuration profile must be a valid JSON-formatted file. There are many tools that can be used to verify this. For example, if you have `python` installed on your device:
-
-```bash
-python -m json.tool mdatp_managed.json
-```
-
-If the JSON is well-formed, the above command outputs it back to the Terminal and returns an exit code of `0`. Otherwise, an error that describes the issue is displayed and the command returns an exit code of `1`.
-
-## Verifying that the mdatp_managed.json file is working as expected
-
-To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is working properly, you should see "[managed]" next to these settings:
-
-- cloud_enabled
-- cloud_automatic_sample_submission_consent
-- passive_mode_enabled
-- real_time_protection_enabled
-- automatic_definition_update_enabled
-
-> [!NOTE]
-> No restart of mdatp daemon is required for changes to _most_ configurations in mdatp_managed.json to take effect.
-  **Exception:** The following configurations require a daemon restart to take effect:
-> - cloud-diagnostic
-> - log-rotation-parameters
-
-## Configuration profile deployment
-
-Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
-
-
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+  >[!NOTE]
+  >Add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`.
+ 

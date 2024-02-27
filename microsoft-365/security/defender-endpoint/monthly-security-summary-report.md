@@ -1,24 +1,18 @@
 ---
 title: Monthly security summary reporting in Microsoft Defender for Endpoint
 description: Use the monthly security summary to see threats detected and prevented, current status from Microsoft Secure Score, and recommended actions.
-keywords: month report, security summary, managed devices, secure score, incidents
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 localization_priority: Normal
 ms.date: 06/12/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 ms.reviewer: yaelbenari
 ---
 
@@ -26,7 +20,7 @@ ms.reviewer: yaelbenari
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 

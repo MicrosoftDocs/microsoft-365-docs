@@ -1,17 +1,12 @@
 ---
 title: Migrating servers from Microsoft Monitoring Agent to the unified solution
 description: Learn how to migrate down-level servers from Microsoft Monitoring Agent to the new unified solution step-by-step from this article.
-keywords: migrate server, server, 2012r2, 2016, server migration onboard Microsoft Defender for Endpoint servers, MECM, Microsoft Monitoring Agent, MMA, downlevel server, unified solution, UA
 search.appverid: met150
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.service: microsoft-365-security
-ms.subservice: mde
-ms.pagetype: security
-author: alekyaj
-ms.author: macapara
+ms.service: defender-endpoint
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -34,7 +29,7 @@ This article guides you in migrating down-level servers from Microsoft Monitorin
 - Microsoft Endpoint Configuration Manager (MECM) higher than 2207.
 - Down-level OS devices in your environment onboarded with Microsoft Monitoring Agent. To confirm, verify that `MsSenseS.exe` is running in Task Manager.
 - Presence of the MMA agent. You can verify it by checking if the correct Workspace ID is present in the Control Panel> Microsoft Monitoring Agent.
-- Active Microsoft 365 Defender portal with devices onboarded.
+- Active Microsoft Defender portal with devices onboarded.
 - A **Device Collection** containing down-level servers such as Windows Server 2012 R2 or Windows Server 2016 using MMA agent is set up in your MECM instance.
 
 For more information on installing the listed prerequisites, see [related topics](#related-topics) section.
@@ -43,7 +38,7 @@ For more information on installing the listed prerequisites, see [related topics
 
 Copy the unified solution package, onboarding script and migration script to the same content source you deploy other apps with MECM.
 
-1. Download Onboarding Script and the unified solution from [Microsoft 365 Defender settings page](https://sip.security.microsoft.com/preferences2/onboarding).
+1. Download Onboarding Script and the unified solution from [Microsoft Defender XDR settings page](https://sip.security.microsoft.com/preferences2/onboarding).
    :::image type="content" source="images/onboarding-script.png" alt-text="Screenshot of onboarding script and unified solution download" lightbox="images/onboarding-script.png":::
    > [!Note]
    > You must select the Group Policy from the Deployment method dropdown to obtain the .cmd file.

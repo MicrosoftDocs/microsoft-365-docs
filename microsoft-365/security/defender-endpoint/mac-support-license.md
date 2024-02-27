@@ -1,28 +1,25 @@
 ---
 title: Troubleshoot license issues for Microsoft Defender for Endpoint on Mac
 description: Troubleshoot license issues in Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 12/07/2023
 ---
 
 # Troubleshoot license issues for Microsoft Defender for Endpoint on macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -30,7 +27,7 @@ ms.date: 12/18/2020
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -40,25 +37,25 @@ When [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.
 
 Select the **x** symbol.
 
-:::image type="content" source="images/error-mde-mac-deployment.png" alt-text="Screenshot that shows the menu bar containing the x symbol on the Microsoft Defender for Endpoint on macOS shield." lightbox="images/error-mde-mac-deployment.png":::
+:::image type="content" source="images/error-mde-mac-deployment.png" alt-text="Screenshot that shows the menu bar containing the x symbol on the Microsoft Defender for Endpoint on macOS shield.":::
 
 ### Message
 
 When you select the **x** symbol, you'll see options as shown in the following screenshot:
 
-:::image type="content" source="images/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that get listed on selecting the x symbol." lightbox="images/x-symbol-menu-items.png":::
+:::image type="content" source="images/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that get listed on selecting the x symbol.":::
 
 When you select **Action needed**, you'll get the error message as shown in the following screenshot:
 
-:::image type="content" source="images/license-not-found-message.png" alt-text="Screenshot of the page displaying the No license found message and its description." lightbox="images/license-not-found-message.png":::
+:::image type="content" source="images/license-not-found-message.png" alt-text="Screenshot of the page displaying the No license found message and its description.":::
 
 You'll encounter this message in a different way: If you're using the terminal to enter **mdatp health** without the double quotes, the message as shown in the following screenshot is displayed:
 
-:::image type="content" source="images/no-license-found-warning.png" alt-text="Screenshot of the product page on which the No license found warning message is displayed." lightbox="images/no-license-found-warning.png":::
+:::image type="content" source="images/no-license-found-warning.png" alt-text="Screenshot of the product page on which the No license found warning message is displayed.":::
 
 ### Cause
 
-1. You've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#download-the-onboarding-package) that contains the license settings. For information on troubleshooting in this scenario, see [For not running the configuration script](#for-not-running-the-configuration-script).
+1. You've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#step-14-download-the-onboarding-package) that contains the license settings. For information on troubleshooting in this scenario, see [For not running the configuration script](#for-not-running-the-configuration-script).
 
 1. You can also encounter this error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date. For information on troubleshooting in this scenario, see [For Microsoft Defender for Endpoint on macOS not being up to date](#for-microsoft-defender-for-endpoint-on-macos-not-being-up-to-date).
 
@@ -74,10 +71,10 @@ Depending on the deployment management tool used, follow the tool-specific instr
 
 |Management  |License deployment instructions (Onboarding instructions)  |
 |---------|---------|
-|Intune     |   [Download the onboarding package](mac-install-with-intune.md#download-the-onboarding-package)     |
+|Intune     |   [Download the onboarding package](mac-install-with-intune.md#step-14-download-the-onboarding-package)     |
 |JamF     |    [Step 1: Get the Microsoft Defender for Endpoint onboarding package](mac-jamfpro-policies.md#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)     |
 |Other MDM     |     [License settings](mac-install-with-other-mdm.md#license-settings)   |
-|Manual installation      |    [Download installation and onboarding packages](mac-install-manually.md#download-installation-and-onboarding-packages); and [Client configuration](mac-install-manually.md#client-configuration)     |
+|Manual installation      |    [Download installation and onboarding packages](mac-install-manually.md#download-installation-and-onboarding-packages); and [Onboarding Package](mac-install-manually.md#onboarding-package)     |
 
 > [!NOTE]
 > If the onboarding package runs correctly, the licensing information will be located in `/Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist`.
@@ -88,7 +85,7 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
 
 #### For not assigning a license to the user
 
-1. In the Microsoft 365 Defender portal (security.microsoft.com):
+1. In the Microsoft Defender portal (security.microsoft.com):
     1. Select **Settings**. The **Settings** screen appears.
     1. Select **Endpoints**.
        
@@ -108,34 +105,33 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
 
     1. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying detail of the chosen license appears:
     
-      :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license." lightbox="images/resultant-screen-of-selecting-preferred-license.png":::
+       :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license.":::
 
     1. Select the **Assign licenses** link.
 
-      
-      :::image type="content" source="images/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link." lightbox="images/assign-licenses-link.png":::
+       :::image type="content" source="images/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link.":::
 
-      The following screen appears:
+       The following screen appears:
 
-      :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
+       :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
 
     1. Select **+ Assign licenses**.
     1. Enter the name or email address of the person to whom you want to assign this license.
     
        The following screen appears, displaying the details of the chosen license assignee and a list of options.
 
-       :::image type="content" source="images/assignee-details-and-options.png" alt-text="Screenshot of the page displaying the assignee's details and a list of options." lightbox="images/assignee-details-and-options.png":::
+       :::image type="content" source="images/assignee-details-and-options.png" alt-text="Screenshot of the page displaying the assignee's details and a list of options.":::
  
-    1. Check the checkboxes for **Microsoft 365 Advanced Auditing**, **Microsoft 365 Defender**, and **Microsoft Defender for Endpoint**.
+    1. Check the checkboxes for **Microsoft 365 Advanced Auditing**, **Microsoft Defender XDR**, and **Microsoft Defender for Endpoint**.
     1. Select **Save**.
 
 On implementing these solution-options (either of them), if the licensing issues have been resolved, and then you run **mdatp health**, you should see the following results:
 
-:::image type="content" source="images/results-after-license-issues-resolved.png" alt-text="Screenshot of the page containing the results displayed after running mdatp health." lightbox="images/results-after-license-issues-resolved.png":::
+:::image type="content" source="images/results-after-license-issues-resolved.png" alt-text="Screenshot of the page containing the results displayed after running mdatp health.":::
 
 ## Sign in with your Microsoft account
 
-:::image type="content" source="images/mac-consumer-login.png" alt-text="Screenshot of the page from which the users have to sign in with their Microsoft account's credentials to get started." lightbox="images/mac-consumer-login.png":::
+:::image type="content" source="images/mac-consumer-login.png" alt-text="Screenshot of the page from which the users have to sign in with their Microsoft account's credentials to get started.":::
 
 ### Message
 
@@ -153,7 +149,7 @@ Select **Switch to enterprise app** to switch to Enterprise experience.
 
 You can also suppress switching to experience for Individuals on MDM-enrolled machines by including **userInterface**/**consumerExperience** in the Defender's settings:
 
-```json
+```xml
 <key>userInterface</key>
 <dict>
     <key>consumerExperience</key>

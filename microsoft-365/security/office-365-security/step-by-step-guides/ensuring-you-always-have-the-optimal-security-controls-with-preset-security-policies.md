@@ -1,6 +1,6 @@
 ---
-title: Steps to quickly set up the Standard or Strict preset security policies for Microsoft Defender for Office 365
-description: Step to setup preset security policies in Microsoft Defender for Office 365 so you have the security recommended by the product. Preset policies set a security profile of either *Standard* or *Strict*. Set these and Microsoft Defender for Office 365 will manage and maintain these security controls for you.
+title: Steps to set up the Standard or Strict preset security policies for Microsoft Defender for Office 365
+description: Step to set up preset security policies in Microsoft Defender for Office 365 so you have the security recommended by the product. Preset policies set a security profile of either *Standard* or *Strict*. Set these and Microsoft Defender for Office 365 will manage and maintain these security controls for you.
 search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -20,7 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 8/21/2023
 ---
 
 # Set up steps for the Standard or Strict preset security policies in Microsoft Defender for Office 365
@@ -50,24 +50,24 @@ Our Strict preset security policy has more aggressive limits and settings for se
 - If the criteria above are met, then the user should be placed in the Strict preset security policy. Otherwise the user should be placed in the Standard preset security policy.
 
 > [!TIP]
-> For information on what Standard and Strict security polices are, see this [article](../../office-365-security/recommended-settings-for-eop-and-office365.md).
+> For information on what Standard and Strict security policies are, see this [article](../../office-365-security/recommended-settings-for-eop-and-office365.md).
 
 ## Enable Security Presets in Microsoft Defender for Office 365
 
 Once you've chosen between the Standard and Strict security preset policies for your users, it takes a few further steps to assign users to each preset.
 
 1. Identify the users, groups, or domains you would like to include in Standard and Strict security presets.
-1. Login to the Microsoft Security portal at <https://security.microsoft.com>.
+1. Log in to the Microsoft Security portal at <https://security.microsoft.com>.
 1. On the left nav, under **Email & collaboration**, select **Policies & rules**.
 1. Select **Threat policies**.
 1. Select **Preset Security Policies** underneath the **Templated policies** heading
 1. Select **Manage** underneath the Standard protection preset.
 1. Select **All Recipients** to apply Exchange Online Protection tenant wide, or select **Specific recipients** to manually add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
-1. Select **All Recipients** to apply Defender for Office 365 Protection tenant wide, or select **Specific recipients** to manually add add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
+1. Select **All Recipients** to apply Defender for Office 365 Protection tenant wide, or select **Specific recipients** to manually add users, groups, or domains you want to apply the protection policy to. Click the **Next** button.
 1. On the **Impersonation Protection** section, add email addresses & domains to protect from impersonation attacks, then add any trusted senders and domains you don't want the impersonation protection to apply to, then press **Next**.
 1. Click on the **Confirm** button.
-1. Select the **Manage** link in the Strict protection preset.
-1. Repeat steps 7-10 again, but for the users strict protection should be applied to. (if applicable)
+1. Select the **Manage protection settings** link in the Strict protection preset.
+1. Repeat steps 7-10 again, but for these users *strict* protection should be applied.
 1. Click on the **Confirm** button.
 
 > [!TIP]
@@ -80,4 +80,4 @@ Use config analyzer to determine if your users are configured per Microsoft's be
 > [!TIP]
 > Configuration analyzer allows admins to find and fix security policies where the settings are below the Standard or Strict protection profile settings in preset security policies. Find out more about Configuration analyzer [here](../../office-365-security/configuration-analyzer-for-security-policies.md).
 
-Secure Presets are always recommended because it *ensures* admins are exercising Microsoft best practices. However, in some cases customized configurations are required. Learn about custom policies [here](../../office-365-security/tenant-wide-setup-for-increased-security.md).
+Secure Presets are always recommended because it *ensures* admins are exercising Microsoft best practices. However, in some cases customized configurations are required. Learn about the reasons to use custom policies [here](../../office-365-security/mdo-deployment-guide.md#determine-your-protection-policy-strategy)

@@ -42,7 +42,7 @@ You can use the resulting environment to test the features and functionality of 
 ![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf).
 
 ## Phase 1: Create a simulated intranet
 
@@ -356,7 +356,7 @@ Your current configuration looks like this:
 
 ## Phase 2: Create your Microsoft 365 E5 subscription
 
-In this phase, you create a new Microsoft 365 E5 subscription that uses a new Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
+In this phase, you create a new Microsoft 365 E5 subscription that uses a new Microsoft Entra tenant, one that is separate from your production subscription. You can do this in two ways:
 
 - Use a trial subscription of Microsoft 365 E5.
 

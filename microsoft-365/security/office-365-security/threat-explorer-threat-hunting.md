@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier1
-description: Use Threat Explorer or Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
+description: Use Threat Explorer or Real-time detections in the Microsoft Defender portal to investigate and respond to threats efficiently.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Threat hunting in Threat Explorer for Microsoft Defender for Office 365
@@ -29,7 +29,7 @@ appliesto:
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** or **Real-time detections** to detect and remediate threats.
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
 
 With these tools, you can:
 
@@ -41,7 +41,7 @@ With these tools, you can:
 For more information, see [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
 
 > [!TIP]
-> Advanced hunting in Microsoft 365 Defender now supports an easy-to-use query builder for analysts who want to hunt through cloud app data and other threat data (if available), even if they do not know Kusto Query Language (KQL). To get started, read [Build queries using guided mode](/microsoft-365/security/defender/advanced-hunting-query-builder).
+> Advanced hunting in Microsoft Defender XDR now supports an easy-to-use query builder for analysts who want to hunt through cloud app data and other threat data (if available), even if they do not know Kusto Query Language (KQL). To get started, read [Build queries using guided mode](/microsoft-365/security/defender/advanced-hunting-query-builder).
 
 Watch this short video to learn how to hunt and investigate email and collaboration-based threats using Microsoft Defender for Office 365.
 
@@ -106,7 +106,7 @@ Once a Sec Ops person determines that an email is a threat, the next Explorer or
 
 :::image type="content" source="../../media/threat-explorer-email-actions-button-new.png" alt-text="Screenshot of the Actions button in the Threat Explorer." lightbox="../../media/threat-explorer-email-actions-button-new.png":::
 
-Here, the analyst can take actions like reporting the mail as Spam, Phishing, or Malware, contacting recipients, or further investigations that can include triggering Automated Investigation and Response (or AIR) playbooks (if you have Plan 2). Or, the mail can also be reported as clean.
+Here, the analyst can take actions like submitting the message as Spam, Phishing, or Malware, contacting recipients, or further investigations that can include triggering Automated Investigation and Response (or AIR) playbooks (if you have Plan 2). Or, the message can also be submitted as clean.
 
 :::image type="content" source="../../media/threat-explorer-email-actions-drop-down-new.png" alt-text="Screenshot of the Actions drop down." lightbox="../../media/threat-explorer-email-actions-drop-down-new.png":::
 
@@ -120,9 +120,9 @@ You must have [Microsoft Defender for Office 365](defender-for-office-365.md) to
 
 To view and use Explorer or Real-time detections, you must have the following permissions:
 
-- In the Microsoft 365 Defender portal:
+- In the Microsoft Defender portal:
   - Organization Management
-  - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
+  - Security Administrator (this can be assigned in the Microsoft Entra admin center (<https://aad.portal.azure.com>)
   - Security Reader
 - In Exchange Online:
   - Organization Management
@@ -132,7 +132,7 @@ To view and use Explorer or Real-time detections, you must have the following pe
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
+- [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md)
 - [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 

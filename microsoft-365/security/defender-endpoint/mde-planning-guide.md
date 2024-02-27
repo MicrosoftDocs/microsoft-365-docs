@@ -1,15 +1,11 @@
 ---
 title: Get started with your Microsoft Defender for Endpoint deployment
-description: Learn how to get started with the deploy, setup, licensing validation, tenant configuration, network configuration stages
-keywords: deploy, setup, network configuration
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+description: Learn how to get started with the deploy, setup, licensing validation, tenant configuration, network configuration stages.
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -17,11 +13,12 @@ ms.collection:
   - m365solution-scenario
   - highpri
   - tier1
+  - essentials-get-started
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 01/19/2024
 ---
 
 # Get started with your Microsoft Defender for Endpoint deployment
@@ -30,13 +27,16 @@ ms.date: 12/18/2020
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Maximize available security capabilities and better protect your enterprise from cyber threats by deploying Microsoft Defender for Endpoint and onboarding your devices. Onboarding your devices will enable you to identify and stop threats quickly, prioritize risks, and evolve your defenses across operating systems and network devices.
+> [!TIP]
+> As a companion to this article, we recommend using the [Microsoft Defender for Endpoint automated setup guide](https://go.microsoft.com/fwlink/?linkid=2251910) when signed in to the Microsoft 365 admin center. This guide will customize your experience based on your environment. To review best practices without signing in and activating automated setup features, go to the [Microsoft 365 setup guide](https://go.microsoft.com/fwlink/?linkid=2251563).
 
-This guide provides five steps to help deploy Defender for Endpoint as your multi-platform endpoint protection solution. It will help you choose the best deployment tool, onboard devices, and configure capabilities. Each step corresponds to a separate article.
+Maximize available security capabilities and better protect your enterprise from cyber threats by deploying Microsoft Defender for Endpoint and onboarding your devices. Onboarding your devices enables you to identify and stop threats quickly, prioritize risks, and evolve your defenses across operating systems and network devices.
+
+This guide provides five steps to help deploy Defender for Endpoint as your multi-platform endpoint protection solution. It helps you choose the best deployment tool, onboard devices, and configure capabilities. Each step corresponds to a separate article.
 
 The steps to deploy Defender for Endpoint are:
 
@@ -50,11 +50,11 @@ The steps to deploy Defender for Endpoint are:
 
 ## Requirements
 
-The following is a list of pre-requisites required to deploy Defender for Endpoint:
+Here's a list of prerequisites required to deploy Defender for Endpoint:
 
 - You're a global admin
-- You meet the [minimum requirements](minimum-requirements.md)
-- You have a full inventory of your environment. The table below provides a starting point to gather information and ensure your environment is deeply understood by stakeholders, which will help identify potential dependencies and/or changes required in technologies or processes.
+- Your environment meets the [minimum requirements](minimum-requirements.md)
+- You have a full inventory of your environment. The following table provides a starting point to gather information and ensure your environment is deeply understood by stakeholders, which helps identify potential dependencies and/or changes required in technologies or processes.
 
 |What|Description|
 |---|---|
@@ -67,4 +67,5 @@ The following is a list of pre-requisites required to deploy Defender for Endpoi
 ## Next step
 
 Start your deployment with [Step 1 - Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

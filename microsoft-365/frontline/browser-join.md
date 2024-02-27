@@ -1,10 +1,10 @@
 ---
 title: Manage the join experience for Teams Virtual Appointments on browsers
-author: daisyfell
-ms.author: daisyfeller
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
 audience: ITPro
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: microsoft-365-frontline 
 search.appverid: 
 searchScope:
@@ -21,14 +21,14 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier2
   - m365initiative-meetings
-ms.reviewer: hafarmer
+  - m365-virtual-appointments 
+ms.reviewer: revathim
 description: Learn about the join experience for Teams Virtual Appointments on browsers. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/01/2023
+ms.date: 02/06/2024
 ---
 
 # Manage the join experience for Teams Virtual Appointments on browsers
@@ -43,12 +43,12 @@ Currently, browser join is available for appointments that are scheduled through
 - [The Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
 - Microsoft Teams Electronic Health Record (EHR) connector
 
-  - Integration with [Cerner EHR](ehr-admin-cerner.md)
+  - Integration with [Oracle Health EHR](ehr-admin-oracle-health.md)
   - Integration with [Epic EHR](ehr-admin-epic.md)
 
 ## Set up browser join
 
-### Appointments scheduled through the Virtual Appointments app or the Bookings app
+### Appointments scheduled through the Virtual Appointments app
 
 Schedulers in your organization can turn on this feature for specific appointment types and for scheduled individual appointments.
 
@@ -56,16 +56,15 @@ After this feature is turned on, the confirmation email or SMS text that’s sen
 
 #### Turn on browser join for an appointment type
 
-1. Do one of the following:
-    1. In the Virtual Appointments app, go to the **Manage** tab > **Appointment types**, and then under **Scheduled**, select an appointment type.
-    1. In the Bookings app, go to **Settings** > **Appointment types**, and then under **Scheduled**, select an appointment type.
+1. In the Virtual Appointments app, go to the **Manage** tab > **Services**, and then under **Scheduled**, select an appointment type.
+
 1. Turn on **Have attendees join from a web browser**. Doing this enables browser join for all appointments of this type.
 
     :::image type="content" source="media/browser-join-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types." lightbox="media/browser-join-appointment-type.png":::
 
 #### Turn on browser join for an individual appointment
 
-On the **Bookings schedule** tab of the Virtual Appointments app or in the Bookings app, select **New booking**, and then turn on **Have attendees join from a browser**.
+On the **Schedule** tab of the Virtual Appointments app, select **New appointment**, and then turn on **Have attendees join from a browser**.
 
 :::image type="content" source="media/browser-join-bookings-form.png" alt-text="Screenshot of the Have attendees join from a browser setting on the new booking form." lightbox="media/browser-join-bookings-form.png":::
 
@@ -73,7 +72,7 @@ On the **Bookings schedule** tab of the Virtual Appointments app or in the Booki
 
 No setup is needed by you or your staff!
 
-**Integration with Cerner EHR**: The Teams EHR connector supports patients joining virtual appointments through a link in the SMS text message. At the time of the appointment, patients can join by tapping the link in the SMS text message, and Teams opens in a browser.
+**Integration with Oracle Health EHR**: The Teams EHR connector supports patients joining virtual appointments through a link in the SMS text message. At the time of the appointment, patients can join by tapping the link in the SMS text message, and Teams opens in a browser.
 
 **Integration with Epic EHR**: The Teams EHR connector supports patients joining virtual appointments through MyChart web and mobile. At the time of the appointment, patients can start the appointment from MyChart by using the **Begin virtual visit** button, and Teams opens in a browser.
 

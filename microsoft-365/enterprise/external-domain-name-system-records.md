@@ -3,7 +3,7 @@ title: "External Domain Name System records for Office 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/15/2022
+ms.date: 10/18/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -34,7 +34,7 @@ description: A reference list of external Domain Name System records to use when
 
 **Need step-by-step help to add these records at your domain's DNS host, such as GoDaddy or eNom?** [Find links to step-by-step instructions for many popular DNS hosts](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
-**Sticking around to use the reference list for your own custom deployment?** The below list should be used as a reference for your custom Office 365 deployment. You will need to select which records apply to your organization and fill in the appropriate values.
+**Sticking around to use the reference list for your own custom deployment?** The below list should be used as a reference for your custom Office 365 deployment. You need to select which records apply to your organization and fill in the appropriate values.
 
 **Go back to** [Network planning and performance tuning for Office 365](./network-planning-and-performance.md).
 
@@ -52,7 +52,7 @@ The CNAME record is only required for customers using [Office 365 operated by 21
 |DNS record|Purpose|Value to use|Applies to|
 |---|---|---|---|
 |**TXT** <br/> **(Domain verification)**|Used by Office 365 to verify only that you own your domain. It doesn't affect anything else.|**Host:** @ (or, for some DNS hosting providers, your domain name) <br/> **TXT Value:** _A text string provided by_ Office 365 <br/> The Office 365 **domain setup wizard** provides the values that you use to create this record.|All customers|
-|**CNAME** <br/> **(Suite)**|Used by Office 365 to direct authentication to the correct identity platform. [More information](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **Note** that this CNAME only applies to Office 365 operated by 21Vianet. If present and your Office 365 is not operated by 21Vianet, users on your custom domain will get a "*custom domain* isn't in our system" error and won't be able to activate their Office 365 license. [More information](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet) |**Alias:** msoid <br/> **Target:** clientconfig.partner.microsoftonline-p.net.cn| 21Vianet customers only|
+|**CNAME** <br/> **(Suite)**|Used by Office 365 to direct authentication to the correct identity platform. [More information](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **Note** that this CNAME only applies to Office 365 operated by 21Vianet. If present and your Office 365 isn't operated by 21Vianet, users on your custom domain get a "*custom domain* isn't in our system" error and aren't able to activate their Office 365 license. [More information](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet) |**Alias:** msoid <br/> **Target:** clientconfig.partner.microsoftonline-p.net.cn| 21Vianet customers only|
 
 ## External DNS records required for email in Office 365 (Exchange Online)
 <a name="BKMK_ReqdCore"> </a>
@@ -61,12 +61,12 @@ Email in Office 365 requires several different records. The three primary record
 
 - **The Autodiscover record** allows client computers to automatically find Exchange and configure the client properly.
 
-- **The MX record** tells other mail systems where to send email for your domain. **Note:** When you change your email to Office 365, by updating your domain's MX record, ALL email sent to that domain will start coming to Office 365.
+- **The MX record** tells other mail systems where to send email for your domain. **Note:** When you change your email to Office 365, by updating your domain's MX record, ALL email sent to that domain starts coming to Office 365.
 Do you just want to switch a few email addresses to Office 365? You can [Pilot Office 365 with a few email addresses on your custom domain](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7).
 
 - **The TXT record for SPF** is used by recipient email systems to validate that the server sending your email is one that you approve. This helps prevent problems like email spoofing and phishing. See the [External DNS records required for SPF](external-domain-name-system-records.md#BKMK_SPFrecords) in this article to help you understand what to include in your record.
 
-Email customers who are using Exchange Federation will also need the additional CNAME and TXT record listed at the bottom of the table.
+Email customers who are using Exchange Federation need the extra CNAME and TXT record listed at the bottom of the table.
 
 |DNS record|Purpose|Value to use|
 |---|---|---|
@@ -109,41 +109,41 @@ You can only have one SPF record (that is, a TXT record that defines SPF) for yo
 
 ### Structure of an SPF record
 
-All SPF records contain three parts: the declaration that it is an SPF record, the domains, and IP addresses that should be sending email, and an enforcement rule. You need all three in a valid SPF record. Here's an example of a common SPF record for Office 365 when you use only Exchange Online email:
+All SPF records contain three parts: the declaration that it's an SPF record, the domains, and IP addresses that should be sending email, and an enforcement rule. You need all three in a valid SPF record. Here's an example of a common SPF record for Office 365 when you use only Exchange Online email:
 
 ``` dns
 TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com -all
 ```
 
-An email system that receives an email from your domain looks at the SPF record, and if the email server that sent the message was an Office 365 server, the message is accepted. If the server that sent the message was your old mail system or a malicious system on the Internet, for example, the SPF check might fail and the message wouldn't be delivered. Checks like this help to prevent spoofing and phishing messages.
+An email system that receives an email from your domain looks at the SPF record. If the email server that sent the message was an Office 365 server, the message is accepted. If the server that sent the message was your old mail system or a malicious system on the Internet, for example, the SPF check might fail and the message wouldn't be delivered. Checks like this help to prevent spoofing and phishing messages.
 
 ### Choose the SPF record structure you need
 
 For scenarios where you're not just using Exchange Online email for Office 365 (for example, when you use email originating from SharePoint Online as well), use the following table to determine what to include in the value of the record.
 
 > [!NOTE]
-> If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. Learn how: [Set up SPF records in Office 365 to help prevent spoofing](../security/office-365-security/email-authentication-spf-configure.md). You can also learn much more about how SPF works with Office 365 by reading [How Office 365 uses Sender Policy Framework (SPF) to help prevent spoofing](../security/office-365-security/email-authentication-anti-spoofing.md).
+> If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. For more information, see [Set up SPF records in Office 365 to help prevent spoofing](../security/office-365-security/email-authentication-spf-configure.md).
 
 |Number|If you're using...|Purpose|Add these includes|
 |---|---|---|---|
 |1|All email systems (required)|All SPF records start with this value|v=spf1|
 |2|Exchange Online (common)|Use with just Exchange Online|include:spf.protection.outlook.com|
 |3|Third-party email system (less common)||include:\<email system like mail.contoso.com\>|
-|4|On-premises mail system (less common)|Use if you're using Exchange Online Protection or Exchange Online plus another mail system|`ip4:<0.0.0.0>` <br/> `ip6:< : : >` <br/> include:\<mail.contoso.com\> <br/> The value in brackets (\<\>) should be other mail systems that will send email for your domain.|
+|4|On-premises mail system (less common)|Use if you're using Exchange Online Protection or Exchange Online plus another mail system|`ip4:<0.0.0.0>` <br/> `ip6:< : : >` <br/> include:\<mail.contoso.com\> <br/> The value in brackets (\<\>) should be other mail systems that send email for your domain.|
 |5|All email systems (required)||-all|
 
 ### Example: Adding to an existing SPF record
 <a name="bkmk_addtospf"> </a>
 
-If you already have an SPF record, you'll need to add or update values for Office 365. For example, say your existing SPF record for contoso.com is this:
+If you already have an SPF record, you need to add or update values for Office 365. For example, say your existing SPF record for contoso.com is the following:
 
 ``` dns
 TXT Name @
 Values: v=spf1 ip4:60.200.100.30 include:smtp.adatum.com -all
 ```
 
-Now you're updating your SPF record for Office 365. You'll edit your current record so you have an SPF record that includes the values that you need. For Office 365, "spf.protection.outlook.com".
+Now you're updating your SPF record for Office 365. You edit your current record so you have an SPF record that includes the values that you need. For Office 365, "spf.protection.outlook.com".
 
 Correct:
 
@@ -165,20 +165,20 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 ### More examples of common SPF values
 <a name="bkmk_addtospf"> </a>
 
-If you are using the full Office 365 suite and are using MailChimp to send marketing emails on your behalf, your SPF record at contoso.com might look like the following, which uses rows 1, 3, and 5 from the table above. Remember, rows 1 and 5 are required.
+If you're using the full Office 365 suite and are using MailChimp to send marketing emails on your behalf, your SPF record at contoso.com might look like the following, which uses rows 1, 3, and 5 from the table above. Remember, rows 1 and 5 are required.
 
 ``` dns
 TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:servers.mcsv.net -all
 ```
 
-Alternatively, if you have an Exchange Hybrid configuration where email will be sent from both Office 365 and your on-premises mail system, your SPF record at contoso.com might look like this:
+Alternatively, if you have an Exchange Hybrid configuration where email is sent from both Office 365 and your on-premises mail system, your SPF record at contoso.com might look like this:
 
 ``` dns
 TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-These are some common examples that can help you adapt your existing SPF record when you add your domain to Office 365 for email. If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. Learn how: [Set up SPF records in Office 365 to help prevent spoofing](../security/office-365-security/email-authentication-spf-configure.md).
+These are some common examples that can help you adapt your existing SPF record when you add your domain to Office 365 for email. If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you have a more detailed SPF record to set up. Learn how: [Set up SPF records in Office 365 to help prevent spoofing](../security/office-365-security/email-authentication-spf-configure.md).
 
 Here's a short link you can use to come back: <https://aka.ms/o365edns>

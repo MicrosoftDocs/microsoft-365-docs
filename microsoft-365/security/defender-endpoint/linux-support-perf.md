@@ -1,35 +1,32 @@
 ---
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on Linux.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, performance, AuditD, XMDEClientAnalyzer, installation, deploy, uninstallation
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 01/18/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ---
 
 # Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -159,7 +156,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 **Applies to:**
 - Performance issues of all available Defender for Endpoint components such as AV and EDR
 
-The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, logs, and diagnostic information in order to troubleshoot performance issues on [onboarded devices](/microsoft-365/security/defender-endpoint/onboard-configure) on macOS.
+The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, logs, and diagnostic information in order to troubleshoot performance issues on [onboarded devices](/microsoft-365/security/defender-endpoint/onboard-configure) on Linux.
 
 > [!NOTE]
 >
@@ -197,7 +194,6 @@ These issues may occur on servers with many events flooding AuditD.
 > This will prevent AuditD logs accumulating in a single file and the rotated log files can be moved out to save disk space.
 >
 > To achieve this, you can set the value for **max_log_file_action** to **rotate** in the [auditd.conf](https://linux.die.net/man/8/auditd.conf) file.
-
  
 This can happen if there are multiple consumers for AuditD, or too many rules with the combination of Microsoft Defender for Endpoint and third party consumers, or high workload that generates a lot of events.
 

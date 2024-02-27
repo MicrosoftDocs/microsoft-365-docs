@@ -1,23 +1,20 @@
 ---
 title: Enable and update Microsoft Defender Antivirus on Windows Server
 description: Learn how to enable and update Microsoft Defender Antivirus on Windows Server
-keywords: Windows Server, Defender Antivirus
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: high
-ms.date: 02/16/2023
-manager: dansimp
+ms.date: 01/31/2024
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ---
 

@@ -1,19 +1,20 @@
 ---
 title: Common mistakes to avoid when defining exclusions
 description: Avoid common mistakes when defining exclusions for Microsoft Defender Antivirus scans.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer:
-manager: dansimp
-ms.subservice: mde
+manager: deniseb
+ms.subservice: ngp
 ms.topic: conceptual
 ms.date: 07/18/2023
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 

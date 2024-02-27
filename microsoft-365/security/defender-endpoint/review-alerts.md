@@ -1,28 +1,27 @@
 ---
 title: Review alerts in Microsoft Defender for Endpoint
 description: Review alert information, including a visualized alert story and details for each step of the chain.
-keywords: incident, incidents, machines, devices, users, alerts, alert, investigation, graph, evidence
-ms.service: microsoft-365-security
-ms.pagetype: security
+ms.service: defender-endpoint
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
   - m365-security
   - tier1
+  - mde-edr
 ms.topic: conceptual
 ms.date: 5/1/2020
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 
 # Review alerts in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

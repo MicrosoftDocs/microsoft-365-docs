@@ -1,41 +1,38 @@
 ---
 title: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
-description: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+description: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## Verify that the installation succeeded
 
-An error in installation may or may not result in a meaningful error message by the package manager. To verify if the installation succeeded, obtain and check the installation logs using:
+An error in installation might or might not result in a meaningful error message by the package manager. To verify if the installation succeeded, obtain and check the installation logs using:
 
 ```bash
  sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
@@ -55,7 +52,7 @@ Also check the [Client configuration](linux-install-manually.md#client-configura
 
 ## Make sure you have the correct package
 
-Verify that the package you are installing matches the host distribution and version.
+Verify that the package you're installing matches the host distribution and version.
 
 <br>
 
@@ -70,22 +67,22 @@ Verify that the package you are installing matches the host distribution and ver
 |mdatp.Linux.x86_64.deb|Debian and Ubuntu 16.04, 18.04 and 20.04|
 |
 
-For [manual deployment](linux-install-manually.md), make sure the correct distro and version had been chosen.
+For [manual deployment](linux-install-manually.md), make sure the correct distro and version are selected.
 
 ## Installation failed due to dependency error
 
-If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies. 
+If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the prerequisite dependencies. 
 
 The following external package dependencies exist for the mdatp package:
 
-- The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "semanage", "selinux-policy-targeted", "mde-netfilter" 
-- For RHEL6 the mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter" 
-- For DEBIAN the mdatp package requires "libc6 >= 2.23", "uuid-runtime", "auditd", "mde-netfilter" 
+- The mdatp RPM package requires `glibc >= 2.17`, `audit`, `policycoreutils`, `semanage`, `selinux-policy-targeted`, `mde-netfilter` 
+- For RHEL6 the mdatp RPM package requires `audit`, `policycoreutils`, `libselinux`, `mde-netfilter` 
+- For DEBIAN the mdatp package requires `libc6 >= 2.23`, `uuid-runtime`, `auditd`, `mde-netfilter` 
 
 The mde-netfilter package also has the following package dependencies:
 
-- For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0"  
-- For RPM the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2" 
+- For DEBIAN the mde-netfilter package requires `libnetfilter-queue1`, `libglib2.0-0`  
+- For RPM the mde-netfilter package requires `libmnl`, `libnfnetlink`, `libnetfilter_queue`, `glib2` 
 
 ## Installation failed
 
@@ -109,7 +106,7 @@ service mdatp status
 
 ## Steps to troubleshoot if the mdatp service isn't running
 
-1. Check if "mdatp" user exists:
+1. Check to see if `mdatp` user exists:
 
     ```bash
     id "mdatp"
@@ -137,9 +134,9 @@ service mdatp status
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path> 
     ```
 
-    where `<systemd_path>` is `/lib/systemd/system` for Ubuntu and Debian distributions and /usr/lib/systemd/system` for Rhel, CentOS, Oracle and SLES. Then rerun step 2.
+    where `<systemd_path>` is `/lib/systemd/system` for Ubuntu and Debian distributions and /usr/lib/systemd/system` for Rhel, CentOS, Oracle, and SLES. Then rerun step 2.
 
-4. If the above steps don't work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
+4. If the above steps don't work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to `permissive` or `disabled` in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
 Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
 
 5. If `/opt` directory is a symbolic link, create a bind mount for `/opt/microsoft`.
@@ -162,7 +159,7 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
 
     and retry running step 2.
 
-7. Ensure that the file system containing wdavdaemon isn't mounted with "noexec".
+7. Ensure that the file system containing wdavdaemon isn't mounted with `noexec`.
 
 ## If the Defender for Endpoint service is running, but the EICAR text file detection doesn't work
 
@@ -172,9 +169,9 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
     findmnt -T <path_of_EICAR_file>
     ```
 
-    Currently supported file systems for on-access activity are listed [here](microsoft-defender-endpoint-linux.md#system-requirements). Any files outside these file systems won't be scanned.
+    Currently supported file systems for on-access activity are listed [here](microsoft-defender-endpoint-linux.md#system-requirements). Any files outside these file systems aren't scanned.
 
-## Command-line tool "mdatp" isn't working
+## Command-line tool mdatp isn't working
 
 1. If running the command-line tool `mdatp` gives an error `command not found`, run the following command:
 
@@ -194,5 +191,5 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
     Diagnostic file created: <path to file>
     ```
 
-    Path to a zip file that contains the logs will be displayed as an output. Reach out to our customer support with these logs.
+    Path to a zip file that contains the logs are displayed as an output. Reach out to our customer support with these logs.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

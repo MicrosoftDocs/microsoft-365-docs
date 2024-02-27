@@ -15,25 +15,25 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
   - m365-security
   - tier2
-description: "Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal. This article helps answer the question, 'What is the Threat protection status report in EOP and Microsoft Defender for Office 365?'"
+description: "Admins can learn how to find and use the email security reports that are available in the Microsoft Defender portal. This article helps answer the question, 'What is the Threat protection status report in EOP and Microsoft Defender for Office 365?'"
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/30/2023
+ms.date: 1/24/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# View email security reports in the Microsoft 365 Defender portal
+# View email security reports in the Microsoft Defender portal
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 In all Microsoft 365 organizations, a variety of reports are available to help you see how email security features are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view and download these reports as described in this article.
 
-The reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> on the **Email & collaboration reports** page at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. Or, to go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
+The reports are available in the Microsoft Defender portal at <https://security.microsoft.com> on the **Email & collaboration reports** page at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. Or, to go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
 
 Summary information for each report is available on the page. Identify the report you want to view, and then select **View details** for that report.
 
@@ -41,15 +41,15 @@ The rest of this article describes the reports that are exclusive to Defender fo
 
 > [!NOTE]
 >
-> - Some of the reports on the **Email & collaboration reports** page are exclusive to Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](reports-defender-for-office-365.md).
+> - Some of the reports on the **Email & collaboration reports** page are exclusive to Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft Defender portal](reports-defender-for-office-365.md).
 >
 > - Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 >
 >   A link to these reports is available in the Defender portal at **Reports** \> **Email & collaboration** \> **Email & collaboration reports** \> **Exchange mail flow reports**, which takes you to <https://admin.exchange.microsoft.com/#/reports/mailflowreportsmain>.
 
-## Email security report changes in the Microsoft 365 Defender portal
+## Email security report changes in the Microsoft Defender portal
 
-The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft 365 Defender portal that have been replaced, moved, or deprecated are described in the following table.
+The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft Defender portal that have been replaced, moved, or deprecated are described in the following table.
 
 |Deprecated report and cmdlets|New report and cmdlets|Message Center ID|Date|
 |---|---|:---:|:---:|
@@ -133,7 +133,7 @@ On the **Mailflow status report** page, the **Type** tab is selected by default.
 - **Phishing email**: Email that's blocked as phishing by various filters.
 - **Spam**: Email that's blocked as spam by various filters.
 - **Edge protection**: Email that's rejected at the edge/perimeter before examination by EOP or Defender for Office 365.
-- **Rule messages**: Email messages that were acted on by mail flow rules (also known as transport rules).
+- **Rule messages**: Email messages that were quarantined by mail flow rules (also known as transport rules).
 
 The details table below the graph shows the following information:
 
@@ -215,7 +215,7 @@ The diagram is organized into the following horizontal bands:
   - **Edge block**: Messages that were filtered at the edge and identified as Edge Protection.
   - **Processed**: Messages that were handled by the filtering stack.
 - Outcomes band:
-  - **Rule Block**: Messages that were blocked by Exchange mail flow rules (transport rules).
+  - **Rule Block**: Messages that were quarantined by Exchange mail flow rules (transport rules).
   - **Malware block**: Messages that were identified as malware.<sup>\*</sup>
   - **Phishing block**: Messages that were identified as phishing.<sup>\*</sup>
   - **Spam block**: Messages that were identified as spam.<sup>\*</sup>
@@ -269,57 +269,7 @@ The **Mail latency report** in Defender for Office 365 contains information on t
 
 ## Post-delivery activities report
 
-> [!NOTE]
-> This report is in the process of being rolled out. Worldwide availability is expected by the end of March 2023.
-
-The **Post-delivery activities** report shows information about email messages that removed from user mailboxes after delivery by zero-hour auto purge (ZAP). For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
-
-The report shows real-time information, with updated threat information.
-
-On the **Email & collaboration reports** page at <https://security.microsoft.com/emailandcollabreport>, find **Post-delivery activities**, and then select **View details**. Or, to go directly to the report, use <https://security.microsoft.com/reports/ZapReport>.
-
-:::image type="content" source="../../media/post-delivery-activities-widget.png" alt-text="The Post-delivery activities widget on the Email & collaboration reports page." lightbox="../../media/post-delivery-activities-widget.png":::
-
-On the **Post-delivery activities** page, the chart shows the following information for the specified date range:
-
-- **No threat**: The number of unique delivered messages that were found to be not spam by ZAP.
-- **Spam**: The number of unique messages that were removed from mailboxes by ZAP for spam.
-- **Phishing**: The number of unique messages that were removed from mailboxes by ZAP for phishing.
-- **Malware**: The number of unique messages that were removed from mailboxes by ZAP for phishing.
-
-The details table below the graph shows the following information:
-
-- **Subject**
-- **Received time**
-- **Sender**
-- **Recipient**
-- **ZAP time**
-- **Original threat**
-- **Original location**
-- **Updated threat**
-- **Updated delivery location**
-- **Detection technology**
-
-  To see all columns, you likely need to do one or more of the following steps:
-
-  - Horizontally scroll in your web browser.
-  - Narrow the width of appropriate columns.
-  - Zoom out in your web browser.
-
-Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
-
-- **Date (UTC)**: **Start date** and **End date**.
-- **Verdict**:
-  - **No threat**
-  - **Spam**
-  - **Phishing**
-  - **Malware**
-
-When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
-
-On the **Post delivery activities** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
-
-:::image type="content" source="../../media/post-delivery-activities-report.png" alt-text="The Post-delivery activities report." lightbox="../../media/post-delivery-activities-report.png":::
+The **Post-delivery activities** report is available only in organizations with Microsoft Defender for Office 365 Plan 2. For information about the report, see [Post-delivery activities report](reports-defender-for-office-365.md#post-delivery-activities-report).
 
 ## Spam detections report
 
@@ -385,7 +335,7 @@ When you're finished configuring the filters, select **Apply**, **Cancel**, or :
 
 On the **Spoof mail report** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
-:::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="The Spoof mail report page in the Microsoft 365 Defender portal." lightbox="../../media/spoof-detections-report-page.png":::
+:::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="The Spoof mail report page in the Microsoft Defender portal." lightbox="../../media/spoof-detections-report-page.png":::
 
 ## Submissions report
 
@@ -427,7 +377,7 @@ When you're finished configuring the filters, select **Apply**, **Cancel**, or :
 
 On the **Submissions** report page, the **[Export](#export-report-data)** action is available.
 
-:::image type="content" source="../../media/submissions-report-page.png" alt-text="The Submissions report page in the Microsoft 365 Defender portal." lightbox="../../media/submissions-report-page.png":::
+:::image type="content" source="../../media/submissions-report-page.png" alt-text="The Submissions report page in the Microsoft Defender portal." lightbox="../../media/submissions-report-page.png":::
 
 ## Threat protection status report
 
@@ -533,9 +483,9 @@ In the details table below the chart, the following information is available:
 
 To see all columns, you likely need to do one or more of the following steps:
 
-  - Horizontally scroll in your web browser.
-  - Narrow the width of appropriate columns.
-  - Zoom out in your web browser.
+- Horizontally scroll in your web browser.
+- Narrow the width of appropriate columns.
+- Zoom out in your web browser.
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report by selecting one or more of the following values in the flyout that opens:
 
@@ -593,9 +543,9 @@ In the details table below the chart, the following information is available:
 
 To see all columns, you likely need to do one or more of the following steps:
 
-  - Horizontally scroll in your web browser.
-  - Narrow the width of appropriate columns.
-  - Zoom out in your web browser.
+- Horizontally scroll in your web browser.
+- Narrow the width of appropriate columns.
+- Zoom out in your web browser.
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report by selecting one or more of the following values in the flyout that opens:
 
@@ -853,7 +803,7 @@ In the **View data by System override** and **Chart breakdown by Reason** view, 
 - **On-premises skip**
 - **Organization allowed domains**
 - **Organization allowed senders**
-- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
 - **TABL - Both URL and file allowed**
 - **TABL - File allowed**
 - **TABL - File blocked**
@@ -902,7 +852,7 @@ On the **Threat protection status** page, the :::image type="icon" source="../..
 In the **View data by System override** and **Chart breakdown by Delivery location** view, the following override reason information is shown in the chart:
 
 - **Junk Mail folder not enabled**
-- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
 
 In the details table below the chart, the following information is available:
 
@@ -1016,7 +966,7 @@ The **URL protection report** is available only in Microsoft Defender for Office
 ## User reported messages report
 
 > [!IMPORTANT]
-> In order for the **User reported messages** report to work correctly, **audit logging must be turned on** in your Microsoft 365 organization (it's on by default). For more information, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
+> In order for the **User reported messages** report to work correctly, **audit logging must be turned on** in your Microsoft 365 organization (it's on by default). For more information, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
 The **User reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web) or the [Microsoft Report Message or Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook).
 
@@ -1052,13 +1002,14 @@ On the **User reported messages** page, the :::image type="icon" source="../../m
 
 You need to be assigned permissions before you can view and use the reports that are described in this article. You have the following options:
 
-- [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
+- [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/System settings/manage** or **Security operations/Security data/Read-only**.
+- [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
   - **Organization Management**<sup>\*</sup>
   - **Security Administrator**
   - **Security Reader**
   - **Global Reader**
-- [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Security Reader**, or **Global Reader** roles in Azure Active Directory gives users the required permissions _and_ permissions for other features in Microsoft 365.
-the 
+- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Security Reader**, or **Global Reader** roles in Microsoft Entra ID gives users the required permissions _and_ permissions for other features in Microsoft 365.
+
 <sup>\*</sup> Membership in the **Organization Management** role group or in the **Global Administrator** role is required to use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** or :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)** actions in reports (where available).
 
 ## What if the reports aren't showing data?
@@ -1106,7 +1057,7 @@ Depending on the report and possibly the specific view in the report, one or mor
 ### Schedule recurring reports
 
 > [!NOTE]
-> To create scheduled reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Azure AD.
+> To create scheduled reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Microsoft Entra ID.
 
 1. On the report page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create schedule** to start the new scheduled report wizard.
 
@@ -1133,8 +1084,8 @@ Depending on the report and possibly the specific view in the report, one or mor
    When you're finished on the **Select filters** page, select **Next**.
 
 5. On the **Recipients** page, choose recipients for the report in the **Send email to** box. The default value is your email address, but you can add others by doing either of the following steps:
-  - Click in the box, wait for the list of users to resolve, and then select the user from the list below the box.
-  - Click in the box, start typing a value, and then select the user from the list below the box.
+   - Click in the box, wait for the list of users to resolve, and then select the user from the list below the box.
+   - Click in the box, start typing a value, and then select the user from the list below the box.
 
    To remove an entry from the list, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the entry.
 
@@ -1150,13 +1101,13 @@ Depending on the report and possibly the specific view in the report, one or mor
 
 The reports are emailed to the specified recipients based on the schedule you configured
 
-The scheduled report entry is available on the **Managed schedules** page as described in the next subsection. 
+The scheduled report entry is available on the **Managed schedules** page as described in the next subsection.
 
 #### Manage existing scheduled reports
 
 After you create a scheduled report as described in the previous section, the scheduled report entry is available on the **Manage schedules** page in the Defender portal.
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> select **Manage schedules**. Or, to go directly to the **Manage schedules** page, use <https://security.microsoft.com/ManageSubscription>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> select **Manage schedules**. Or, to go directly to the **Manage schedules** page, use <https://security.microsoft.com/ManageSubscription>.
 
 On the **Manage schedules** page, the following information is shown for each scheduled report entry:
 
@@ -1194,7 +1145,7 @@ Back on the **Manage schedules** page, the deleted scheduled report entry is no 
 [Request on-demand reports](#request-on-demand-reports-for-download)
 
 > [!NOTE]
-> To create on-demand reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Azure AD.
+> To create on-demand reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Microsoft Entra ID.
 
 1. On the report page, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Request report** to start the new on-demand report wizard.
 
@@ -1207,8 +1158,8 @@ Back on the **Manage schedules** page, the deleted scheduled report entry is no 
    When you're finished on the **Name on-demand report** page, select **Next**.
 
 4. On the **Recipients** page, choose recipients for the report in the **Send email to** box. The default value is your email address, but you can add others by doing either of the following steps:
-  - Click in the box, wait for the list of users to resolve, and then select the user from the list below the box.
-  - Click in the box, start typing a value, and then select the user from the list below the box.
+   - Click in the box, wait for the list of users to resolve, and then select the user from the list below the box.
+   - Click in the box, start typing a value, and then select the user from the list below the box.
 
    To remove an entry from the list, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the entry.
 
@@ -1222,26 +1173,27 @@ Back on the **Manage schedules** page, the deleted scheduled report entry is no 
 
    When you're finished on the **New on-demand report created** page, select **Done**.
 
-The report creation task (and eventually the finished report) is available on the **Reports for download** page as described in the next subsection. 
+The report creation task (and eventually the finished report) is available on the **Reports for download** page as described in the next subsection.
 
 #### Download reports
 
 > [!NOTE]
-> To download on-demand reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Azure AD.
+> To download on-demand reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Microsoft Entra ID.
 
 After you request an on-demand report as described in the previous section, you check the status of the report and eventually download the report on the **Reports for download** page in the Defender portal.
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> select **Reports for download**. Or, to go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> select **Reports for download**. Or, to go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload>.
 
 On the **Reports for download** page, the following information is shown for each available report:
-   - **Start date**
-   - **Name**
-   - **Report type**
-   - **Last sent**
-   - **Status**:
-     - **Pending**: The report is still being created, and it isn't available to download yet.
-     - **Complete - Ready for download**: Report generation is complete, and the report is available to download.
-     - **Complete - No results found**: Report generation is complete, but the report contains no data, so you can't download it.
+
+- **Start date**
+- **Name**
+- **Report type**
+- **Last sent**
+- **Status**:
+  - **Pending**: The report is still being created, and it isn't available to download yet.
+  - **Complete - Ready for download**: Report generation is complete, and the report is available to download.
+  - **Complete - No results found**: Report generation is complete, but the report contains no data, so you can't download it.
 
 To download the report, select the check box next in the start date of the report, and then select the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download report** action that appears.
 

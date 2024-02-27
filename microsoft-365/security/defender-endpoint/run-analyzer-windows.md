@@ -1,25 +1,23 @@
 ---
 title:  Run the client analyzer on Windows
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on Windows.
-keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, windows
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
+ms.reviewer: younghree
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
-ms.date: 03/23/2021
+ms.date: 11/01/2023
 ---
 
 # Run the client analyzer on Windows
@@ -28,50 +26,57 @@ ms.date: 03/23/2021
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-1. Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the Windows machine you need to investigate.
+## Option 1: Live response
 
-2. Extract the contents of MDEClientAnalyzer.zip on the machine.
+You can collect the Defender for Endpoint analyzer support logs remotely using [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log).
 
-3. Open an elevated command line:
-    1. Go to **Start** and type **cmd**.
-    2. Right-click **Command prompt** and select **Run as administrator**.
+## Option 2: Run MDE Client Analyzer locally
 
-4. Enter the following command and press **Enter**:
+1. Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) or [Beta MDE Client Analyzer tool](https://aka.ms/BetaMDEAnalyzer) to the Windows device you want to investigate.
 
-   ```dos
-   HardDrivePath\MDEClientAnalyzer.cmd
+   The file is saved to your Downloads folder by default.
+
+2. Open your Downloads folder, right-click on **MDEClientAnalyzer.zip**, and then select **Properties**.
+
+4. Extract the contents of MDEClientAnalyzer.zip to an available folder.
+
+5. Open a command line with administrator permissions: 
+
+   1. Go to **Start** and type **cmd**.
+   1. Right-click **Command prompt** and select **Run as administrator**.
+
+6. Type the following command and then press **Enter**:
+
+   ```cmd
+   *DrivePath*\MDEClientAnalyzer.cmd
    ```
 
-   **Replace HardDrivePath with the path to which the tool was extracted to, for example:**
+   Replace *DrivePath* with the path where you extracted MDEClientAnalyzer, for example:
 
-   ```dos
+   ```cmd
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
-In addition to the above, there is also an option to [collect the analyzer support logs using live response.](troubleshoot-collect-support-log.md).
+In addition to the previous procedure, you can also [collect the analyzer support logs using live response.](troubleshoot-collect-support-log.md).
 
 > [!NOTE]
-> On Windows 10/11, Windows Server 2019/2022, or Windows Server 2012R2/2016 with the [modern unified solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) installed, the client analyzer script calls into an executable file called `MDEClientAnalyzer.exe` to run the connectivity tests to cloud service URLs.
+> On Windows 10 and 11, Windows Server 2019 and 2022, or Windows Server 2012R2 and 2016 with the [modern unified solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) installed, the client analyzer script calls into an executable file called `MDEClientAnalyzer.exe` to run the connectivity tests to cloud service URLs.
 >
 > On Windows 8.1, Windows Server 2016 or any previous OS edition where Microsoft Monitoring Agent (MMA) is used for onboarding, the client analyzer script calls into an executable file called `MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and Control (CnC) URLs while also calling into Microsoft Monitoring Agent connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
 
+## Important points to keep in mind
 
-All the PowerShell scripts and modules included with the analyzer are Microsoft-signed.
-If files have been modified in any way, then the analyzer is expected to exit with the following error:
+All the PowerShell scripts and modules included with the analyzer are Microsoft-signed. If files were modified in any way, then the analyzer is expected to exit with the following error:
 
 :::image type="content" source="images/sigerror.png" alt-text="The client analyzer error" lightbox="images/sigerror.png":::
 
-
-If this error is shown, then the issuerInfo.txt output will contain detailed information about why that happened and what file was affected:
+If you see this error, the issuerInfo.txt output contains detailed information about why this happened and the affected file:
 
 :::image type="content" source="images/issuerinfo.png" alt-text="The issuer info" lightbox="images/issuerinfo.png":::
-
 
 Example contents after MDEClientAnalyzer.ps1 is modified:
 
 :::image type="content" source="images/modified-ps1.png" alt-text="The  modified ps1 file" lightbox="images/modified-ps1.png":::
-
-
 
 ## Result package contents on Windows
 
@@ -83,13 +88,14 @@ Example contents after MDEClientAnalyzer.ps1 is modified:
 > - The start state of the EDR sensor (Sense is stopped if machine is not yet onboarded).
 > - If an advanced troubleshooting parameter was used with the analyzer command.
 
-By default, the unpacked MDEClientAnalyzerResult.zip file will contain the following items.
+By default, the unpacked MDEClientAnalyzerResult.zip file contains the following items.
 
 - MDEClientAnalyzer.htm
 
   This is the main HTML output file, which will contain the findings and guidance that the analyzer script run on the machine can produce.
 
-- SystemInfoLogs \[Folder\]
+- SystemInfoLogs [Folder]
+
   - AddRemovePrograms.csv
 
     Description: List of x64 installed software on x64 OS collected from registry.
@@ -104,7 +110,7 @@ By default, the unpacked MDEClientAnalyzerResult.zip file will contain the follo
 
     - dsregcmd.txt
 
-      Description: Output from running [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). This provides details about the Azure AD status of the machine.
+      Description: Output from running [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). This provides details about the Microsoft Entra status of the machine.
 
     - IFEO.txt
 
@@ -171,11 +177,12 @@ By default, the unpacked MDEClientAnalyzerResult.zip file will contain the follo
     Description: Corresponding enforcement results.
 
 
-
 ## See also
 
 - [Client analyzer overview](overview-client-analyzer.md)
 - [Download and run the client analyzer](download-client-analyzer.md)
 - [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
 - [Understand the analyzer HTML report](analyzer-report.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

@@ -1,10 +1,10 @@
 ---
 title: "Add or remove a geo administrator"
-ms.reviewer: adwood
-ms.date: 08/10/2020
+ms.reviewer: anfra
+ms.date: 12/11/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,16 +13,18 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Need to configure separate administrators for each geo location? Learn how to add or remove a geo administrator in Microsoft 365 Multi-Geo.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref, azure-ad-ref-level-one-done 
 ---
 
 # Add or remove a _Geography_ administrator in Microsoft 365 Multi-Geo
 
-You can configure separate administrators for each _Geography_ location that you have in your _Tenant_. These administrators will have access to the SharePoint Online and OneDrive settings that are specific to their _Geography_ location.
+You can configure separate administrators for each _Geography_ location that you have in your _Tenant_. These administrators will have access to the SharePoint and OneDrive settings that are specific to their _Geography_ location.
 
 Some services - such as the term store - are administered from the _Primary Provisioned Geography_ location and replicated to _Satellite Geography_ locations. The _Geography_ admin for the _Primary Provisioned Geography_ location has access to these, whereas _Geography_ admins for _Satellite Geography_ locations don't.
 
-Global administrators and SharePoint Online administrators continue to have access to settings in the _Primary Provisioned Geography_ location and all _Satellite Geography_ locations.
+Global administrators and SharePoint administrators continue to have access to settings in the _Primary Provisioned Geography_ location and all _Satellite Geography_ locations.
 
 ## Configuring _Geography_ administrators
 
@@ -46,7 +48,7 @@ To add a group as a _Geography_ administrator, run `Add-SPOGeoAdministrator -Gro
 
 To remove a group as a _Geography_ administrator, run `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-Note that not all security groups have a group alias. If you want to add a security group that does not have an alias, run [Get-MsolGroup](/powershell/module/msonline/get-msolgroup) to retrieve a list of groups, find your security group's ObjectID, and then run:
+Note that not all security groups have a group alias. If you want to add a security group that does not have an alias, run [Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup) to retrieve a list of groups, find your security group's ObjectID, and then run:
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
@@ -60,4 +62,4 @@ To remove a group by using the ObjectID, run `Remove-SPOGeoAdministrator -Object
 
 [Remove-SPOGeoAdministrator](/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[Set an alias (MailNickName) for a security group](/powershell/module/azuread/set-azureadgroup)
+[Set an alias (MailNickName) for a security group](/powershell/module/microsoft.graph.groups/update-mggroup)

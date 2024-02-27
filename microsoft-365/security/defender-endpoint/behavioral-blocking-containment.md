@@ -1,21 +1,16 @@
 ---
 title: Behavioral blocking and containment
 description: Learn about behavioral blocking and containment capabilities at Microsoft Defender for Endpoint
-keywords: Microsoft Defender for Endpoint, EDR in block mode, passive mode blocking
-ms.pagetype: security
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+manager: deniseb
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: edr
 ms.localizationpriority: medium
-ms.custom:
-  - next-gen
-  - edr
-  - admindeeplinkDEFENDER
+ms.custom: admindeeplinkDEFENDER
 ms.collection: 
 - m365-security
 - tier2
@@ -29,7 +24,7 @@ ms.date: 12/18/2020
 
 - [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -49,7 +44,7 @@ Behavioral blocking and containment capabilities work with multiple components a
 
 - [Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond.
 
-- [Defender for Endpoint](overview-endpoint-detection-response.md) has a wide range of optics across identities, email, data, and apps, in addition to the network, endpoint, and kernel behavior signals received through EDR. A component of [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender for Endpoint processes and correlates these signals, raises detection alerts, and connects related alerts in incidents.
+- [Defender for Endpoint](overview-endpoint-detection-response.md) has a wide range of optics across identities, email, data, and apps, in addition to the network, endpoint, and kernel behavior signals received through EDR. A component of [Microsoft Defender XDR](../defender/microsoft-365-defender.md), Defender for Endpoint processes and correlates these signals, raises detection alerts, and connects related alerts in incidents.
 
 With these capabilities, more threats can be prevented or blocked, even if they start running. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks.
 
@@ -59,13 +54,13 @@ The following image shows an example of an alert that was triggered by behaviora
 
 ## Components of behavioral blocking and containment
 
-- **On-client, policy-driven [attack surface reduction rules](attack-surface-reduction.md)** Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as informational alerts. Attack surface reduction rules aren't enabled by default; you configure your policies in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
+- **On-client, policy-driven [attack surface reduction rules](attack-surface-reduction.md)** Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as informational alerts. Attack surface reduction rules aren't enabled by default; you configure your policies in the [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
 
 - **[Client behavioral blocking](client-behavioral-blocking.md)** Threats on endpoints are detected through machine learning, and then are blocked and remediated automatically. (Client behavioral blocking is enabled by default.)
 
 - **[Feedback-loop blocking](feedback-loop-blocking.md)** (also referred to as rapid protection) Threat detections are observed through behavioral intelligence. Threats are stopped and prevented from running on other endpoints. (Feedback-loop blocking is enabled by default.)
 
-- **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)** Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Microsoft Defender Antivirus isn't the primary antivirus solution. (EDR in block mode isn't enabled by default; you turn it on at Microsoft 365 Defender.)
+- **[Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md)** Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained. EDR in block mode works even if Microsoft Defender Antivirus isn't the primary antivirus solution. (EDR in block mode isn't enabled by default; you turn it on at Microsoft Defender XDR.)
 
 Expect more to come in the area of behavioral blocking and containment, as Microsoft continues to improve threat protection features and capabilities. To see what's planned and rolling out now, visit the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -96,9 +91,9 @@ Behavior-based device-learning models in Defender for Endpoint caught and stoppe
 - The first protection layer detected the exploit behavior. Device-learning classifiers in the cloud correctly identified the threat as and immediately instructed the client device to block the attack.
 - The second protection layer, which helped stop cases where the attack got past the first layer, detected process hollowing, stopped that process, and removed the corresponding files (such as Lokibot).
 
-While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
+While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft 365 Defender portal" lightbox="images/behavblockcontain-initialaccessalert.png":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft Defender portal" lightbox="images/behavblockcontain-initialaccessalert.png":::
 
 This example shows how behavior-based device-learning models in the cloud add new layers of protection against attacks, even after they have started running.
 
@@ -138,5 +133,5 @@ This example shows that with behavioral blocking and containment capabilities, t
 
 - [See recent global threat activity](https://www.microsoft.com/wdsi/threats)
 
-- [Get an overview of Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Get an overview of Microsoft Defender XDR](../defender/microsoft-365-defender.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

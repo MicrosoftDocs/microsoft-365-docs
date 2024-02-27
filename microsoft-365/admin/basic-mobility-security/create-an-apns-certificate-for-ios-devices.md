@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/27/2020
+ms.date: 10/25/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -15,6 +15,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom: AdminSurgePortfolio
 description: "To manage iOS devices such as iPads and iPhones in Basic Mobility and Security, begin by creating an APNs certificate."
 ---

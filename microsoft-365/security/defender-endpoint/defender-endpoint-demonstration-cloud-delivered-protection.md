@@ -1,24 +1,19 @@
 ---
 title: Microsoft Defender for Endpoint Cloud-delivered protection demonstration
 description: See how Cloud-delivered protection can automatically detect and delete malicious files. 
-keywords: Microsoft Defender for Endpoint, Microsoft Defender ATP, virus protection, virus detection, virus deletion, 
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
+ms.subservice: ngp
 ms.date: 10/21/2022
 ---
 
@@ -26,14 +21,18 @@ ms.date: 10/21/2022
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
+- [Microsoft Defender for Individuals](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)
 
 Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as Microsoft Advanced Protection Service (MAPS), provides you with strong, fast protection in addition to our standard real-time protection.
 
 ## Scenario requirements and setup
 
-- Windows 7, Windows 8.1, Windows 10, Windows 11
+- Windows 11, Windows 10, Windows 8.1, and Windows 7 SP1
 - Microsoft Defender Real-time protection is enabled
 - Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies. For more information, see [Enable cloud-delivered protection in Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
 - You can also download and use the [PowerShell script](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others on Windows 10 and Windows 11.

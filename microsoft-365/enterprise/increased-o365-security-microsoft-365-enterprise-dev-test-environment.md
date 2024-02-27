@@ -31,7 +31,7 @@ With the instructions in this article, you configure additional Microsoft 365 se
 ![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Click [here](../downloads/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
+> Click [here](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
 
 ## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
@@ -48,7 +48,7 @@ In this phase, you enable increased Microsoft 365 security for your Microsoft 36
 
 ### Configure SharePoint Online to block apps that don't support modern authentication
 
-Apps that do not support modern authentication cannot have [identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets.
+Apps that do not support modern authentication cannot have [identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in to your Microsoft 365 test lab subscription with your global administrator account.
 
@@ -104,7 +104,7 @@ For more information, see [Security Dashboard](/microsoft-365/security/defender/
 
 Microsoft Secure Score shows your security posture as a number, which indicates your current level relative to the features that are available in your subscription. It also gives you a list of improvement actions you can take to improve your score.
 
-1. Create a new tab in your browser, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and then click **Secure score**.
+1. Create a new tab in your browser, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft  Defender portal</a>, and then click **Secure score**.
 2. On the **Overview**  tab, note your current Secure Score and how it compares with the global average and subscriptions with a similar number of licenses.
 3. On the **Improvement actions** tab, read through the list of actions you can take to increase your score.
 

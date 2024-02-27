@@ -19,11 +19,11 @@ ms.custom:
 description: Admins can learn how to configure connection filtering in Exchange Online Protection (EOP) to allow or block emails from email servers.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/14/2023
+ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Configure connection filtering
@@ -38,24 +38,27 @@ In Microsoft 365 organizations with Exchange Online mailboxes or standalone Exch
 
 - **Safe list**: The _safe list_ in the connection filter policy is a dynamic allow list that requires no customer configuration. Microsoft identifies these trusted email sources from subscriptions to various third-party lists. You enable or disable the use of the safe list; you can't configure the servers in the list. Spam filtering is skipped on incoming messages from the email servers on the safe list.
 
-This article describes how to configure the default connection filter policy in the Microsoft 365 Microsoft 365 Defender portal or in Exchange Online PowerShell. For more information about how EOP uses connection filtering is part of your organization's overall anti-spam settings, see [Anti-spam protection](anti-spam-protection-about.md).
+This article describes how to configure the default connection filter policy in the Microsoft 365 Microsoft Defender portal or in Exchange Online PowerShell. For more information about how EOP uses connection filtering is part of your organization's overall anti-spam settings, see [Anti-spam protection](anti-spam-protection-about.md).
 
 > [!NOTE]
 > The IP Allow List, safe list, and the IP Block List are one part of your overall strategy to allow or block email in your organization. For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md) and [Create blocked sender lists](create-block-sender-lists-in-office-365.md).
 >
-> IPv6 ranges are not supported.
+> IPv6 ranges aren't supported.
+>
+> Messages from blocked sources in the IP Block List aren't available in [message trace](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
+- You open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Modify policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - To find the source IP addresses of the email servers (senders) that you want to allow or block, you can check the connecting IP (**CIP**) header field in the message header. To view a message header in various email clients, see [View internet message headers in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -63,9 +66,9 @@ This article describes how to configure the default connection filter policy in 
 
 - The IP Allow List and the IP Block List each support a maximum of 1273 entries, where an entry is a single IP address, an IP address range, or a Classless InterDomain Routing (CIDR) IP.
 
-## Use the Microsoft 365 Defender portal to modify the default connection filter policy
+## Use the Microsoft Defender portal to modify the default connection filter policy
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
 2. On the **Anti-spam policies** page, select **Connection filter policy (Default)** from the list by clicking anywhere in the row other than the check box next to the name.
 
@@ -92,9 +95,9 @@ This article describes how to configure the default connection filter policy in 
 
 4. Back on the policy details flyout, select **Close**.
 
-## Use the Microsoft 365 Defender portal to view the default connection filter policy
+## Use the Microsoft Defender portal to view the default connection filter policy
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
 On the **Anti-spam policies** page, the following properties are displayed in the list of policies:
 
@@ -143,7 +146,7 @@ For detailed syntax and parameter information, see [Set-HostedConnectionFilterPo
 
 To verify that you've successfully modified the default connection filter policy, do any of the following steps:
 
-- On the **Anti-spam policies** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/antispam>, select **Connection filter policy (Default)** from the list by clicking anywhere in the row other than the check box next to the name, and verify the policy settings in the details flyout that opens.
+- On the **Anti-spam policies** page in the Microsoft Defender portal at <https://security.microsoft.com/antispam>, select **Connection filter policy (Default)** from the list by clicking anywhere in the row other than the check box next to the name, and verify the policy settings in the details flyout that opens.
 
 - In Exchange Online PowerShell or standalone EOP PowerShell, run the following command and verify the settings:
 

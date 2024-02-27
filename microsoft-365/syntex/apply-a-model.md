@@ -2,9 +2,9 @@
 title: Apply a model to a document library in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 10/01/2022
+ms.date: 05/01/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -112,7 +112,7 @@ An applied model processes all files and folder content uploaded to the document
 
 ### Classification Date field
 
-When a custom is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+When a custom model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
    ![Screenshot of a document library showing the Classification Date column.](../media/content-understanding/class-date-column.png) 
 

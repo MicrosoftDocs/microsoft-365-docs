@@ -1,35 +1,33 @@
 ---
 title: Microsoft Defender for Endpoint demonstration scenarios
 description: Lists Microsoft Defender for Endpoint demonstration scenarios that you can run.
-keywords: demonstration, Microsoft Defender for Endpoint demonstration, anti-Malware demonstration, Cloud-delivered protection, Block at First Sight (BAFS), Potentially unwanted applications (PUA)s, Microsoft security intelligence VDI, VDI security, Attack Surface Reduction (ASR) rules demonstration, Controlled folder access demonstration, Exploit Protection, Network Protection, Microsoft Defender SmartScreen, edge SmartScreen, 
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
-ms.date: 10/21/2022
+ms.subservice: ngp
+ms.date: 01/15/2024
 ---
 
 # Microsoft Defender for Endpoint - demonstration scenarios
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
+- [Microsoft Defender for Individuals](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)
 
-The following demonstration scenarios will help you learn about the capabilities of Microsoft Defender for Endpoint on Windows (Mac and Linux are out of scope). Demonstration scenarios are provided for the following Microsoft Defender for Endpoint protection areas:
+The following demonstration scenarios will help you learn about the capabilities of Microsoft Defender for Endpoint on Windows, Mac, and Linux. Demonstration scenarios are provided for the following Microsoft Defender for Endpoint protection areas:
 
 :::image type="content" source="images/microsoft-defender-for-endpoint-cloud-protection.png" alt-text="Shows the areas of Microsoft Defender for Endpoint demonstration scenarios covered in this collection" lightbox="images/microsoft-defender-for-endpoint-cloud-protection.png":::
 
@@ -48,17 +46,17 @@ The following table lists the available demonstrations alphabetically, with thei
 
 | # | Demonstration name | Protection area | Description |
 |:--|:---|:---|:---|
-| 1 | [App reputation demonstration](defender-endpoint-demonstration-app-reputation.md) | NGP | Navigate to the app reputation page to see the demonstration scenario using Microsoft Edge. |
-| 2 | [Attack surface reduction rules demonstrations](defender-endpoint-demonstration-attack-surface-reduction-rules.md) | ASR | Download sample files to trigger each ASR rule. |
-| 3 | [Block at First Sight (BAFS) demonstration](defender-endpoint-demonstration-block-at-first-sight-bafs.md) | NGP | With the BAFS feature in Microsoft Defender Antivirus, newly discovered files are analyzed and - if needed - blocked. |
-| 4 | [Cloud-delivered protection demonstration](defender-endpoint-demonstration-cloud-delivered-protection.md) | NGP |  Confirm that cloud-delivered protection is working properly on your computer. |
-| 5 | [Controlled folder access (CFA) demonstration (block script)](defender-endpoint-demonstration-controlled-folder-access-test-tool.md) | ASR | Download the CFA test tool. |
-| 6 | [Controlled folder access (CFA) demonstrations (block ransomware)](defender-endpoint-demonstration-controlled-folder-access.md) | ASR | Download and execute a sample file to trigger CFA ransomware protection. |
-| 7 | [Exploit protection (EP) demonstrations](defender-endpoint-demonstration-exploit-protection.md) | ASR | Apply custom exploit protection settings. |
-| 8 | [Network protection demonstrations](defender-endpoint-demonstration-network-protection.md) | ASR | Navigate to a suspicious URL to trigger network protection. |
-| 9 | [Potentially unwanted applications (PUA) demonstration](defender-endpoint-demonstration-potentially-unwanted-applications.md) | NGP | Confirm that potentially unwanted applications (PUAs) are being blocked on your network by downloading a fake (safe) PUA file. |
-| 10 | [URL reputation demonstrations](defender-endpoint-demonstration-smartscreen-url-reputation.md) | NGP | Navigate to the URL Reputation page to see the demonstration scenarios using Microsoft Edge. |
-
+| 1 |[Endpoint Detection and Response (EDR) detections](/microsoft-365/security/defender-endpoint/edr-detection)| EDR |Confirm that EDR is detecting cyber threats such as malware.|
+| 2 |[Validate antimalware](/microsoft-365/security/defender-endpoint/validate-antimalware)| NGP |Confirm that antivirus/antimalware is detecting and blocking malware. |
+| 3 |[Potentially unwanted applications (PUA) demonstration](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-potentially-unwanted-applications)| NGP |Confirm that potentially unwanted applications (PUAs) are being blocked on your network by downloading a fake (safe) PUA file. |
+| 4 |[Cloud-delivered protection demonstration](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-cloud-delivered-protection)| NGP |Confirm that cloud-delivered protection is working properly on your computer. |
+| 5 |[App reputation demonstration](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-app-reputation)| NGP | Navigate to the app reputation page to see the demonstration scenario using Microsoft Edge.|
+| 6 |[URL reputation demonstrations](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-smartscreen-url-reputation)| NGP | Navigate to the URL Reputation page to see the demonstration scenarios using Microsoft Edge. |
+| 7 | [Network protection demonstrations](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-network-protection)| ASR | Navigate to a suspicious URL to trigger network protection. |
+| 8 | [Attack surface reduction rules (ASR rules) demonstrations](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-attack-surface-reduction-rules)| ASR | Download sample files to trigger each ASR rule. |
+| 9 | [Exploit protection (EP) demonstrations](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-exploit-protection) | ASR | Apply custom exploit protection settings. |
+| 10 | [Controlled folder access (CFA) demonstration (block script)](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-controlled-folder-access-test-tool)| ASR | Download the CFA test tool. |
+| 11 | [Controlled folder access (CFA) demonstrations (block ransomware)](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-controlled-folder-access)|  ASR| Download and execute a sample file to trigger CFA ransomware protection.|
 ## See also
 
 [Attack surface protection \(ASR\) overview](overview-attack-surface-reduction.md)

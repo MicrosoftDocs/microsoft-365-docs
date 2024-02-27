@@ -1,18 +1,19 @@
 ---
 title: Overview of next-generation protection in Microsoft Defender for Endpoint
 description: Get an overview of next-generation protection in Microsoft Defender for Endpoint. Reinforce the security perimeter of your network by using next-generation protection designed to catch all types of emerging threats.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: high
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.reviewer: mkaminska
-manager: dansimp
+manager: deniseb
 ms.custom: nextgen
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier1
+- mde-ngp
 search.appverid: met150
 ms.date: 07/05/2023
 ---
@@ -35,7 +36,7 @@ Microsoft Defender for Endpoint includes next-generation protection to reinforce
 - [Cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md), which includes near-instant detection and blocking of new and emerging threats.
 - [Dedicated protection and product updates](microsoft-defender-antivirus-updates.md), which includes updates related to keeping Microsoft Defender Antivirus up to date.
 
-Next-generation protection is included in both [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md). Next-generation protection is also included in Microsoft Defender for Business and Microsoft 365 Business Premium (See [Security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md)).
+Next-generation protection is included in both [Defender for Endpoint Plan 1 and Plan 2](microsoft-defender-endpoint.md). Next-generation protection is also included in [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview) and [Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-overview). 
 
 To configure next-generation protection services, see [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md).
 

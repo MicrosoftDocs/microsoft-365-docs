@@ -1,25 +1,19 @@
 ---
 title: Microsoft Defender for Endpoint for US Government customers
 description: Learn about the Microsoft Defender for Endpoint for US Government customers requirements and capabilities available
-keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender for Endpoint, endpoint, dod
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.reviewer: jesquive
 ms.localizationpriority: medium
-ms.date: 04/19/2023
-manager: dansimp
+ms.date: 11/29/2023
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.subservice: mde
 ---
 
 # Microsoft Defender for Endpoint for US Government customers
@@ -28,7 +22,7 @@ ms.subservice: mde
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender for Endpoint for US Government customers, built in the Azure US Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
@@ -61,7 +55,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
 
-<br />
 
 |Customer type|Portal URL|
 |---|---|
@@ -78,7 +71,6 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 
 The following OS versions are supported:
 
-<br />
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -121,7 +113,6 @@ iOS|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <
 
 The following OS versions are supported when using [Microsoft Defender for servers](/azure/security-center/security-center-wdatp):
 
-<br />
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -137,10 +128,11 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 
 The following downloadable spreadsheet lists the services and their associated URLs your network must be able to connect to. Verify there are no firewall or network-filtering rules that would deny access to these URLs, or create an *allow* rule specifically for them.
 
-|Spreadsheet of domains list| Description|
-|---|---|
-|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+
+| Spreadsheet of domains list  | Description  |
+|---------|---------|
+| Microsoft Defender for Endpoint URL list for commercial customers | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <br/><br/> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) |
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <br/><br/> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx) |
 
 For more information, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
@@ -153,7 +145,6 @@ For more information, see [Configure device proxy and Internet connectivity sett
 
 Instead of the public URIs listed in our [API documentation](apis-intro.md), you'll need to use the following URIs:
 
-<br />
 
 |Endpoint type|GCC|GCC High & DoD|
 |---|---|---|
@@ -168,18 +159,14 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Microsoft Secure Score|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Microsoft Secure Score|![Yes](images/svg/check-yes.svg)<sup>1</sup>|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Microsoft Threat Experts|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-| Microsoft Defender for Endpoint Security Configuration Management|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-   
-**Footnote**
+|Microsoft Defender for Endpoint Security Configuration Management|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 
-   <sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
-
+> [!NOTE]
+> <sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
 
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
-
-<br />
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
@@ -191,7 +178,11 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 |Conditional Access/Conditional Launch|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Microsoft Defender Vulnerability Management (MDVM))|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Microsoft Defender Vulnerability Management core capabilities <br/> (included in Defender for Endpoint Plan 2) |![Yes](images/svg/check-yes.svg) <sup>1</sup>|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+|Microsoft Defender Vulnerability Management premium capabilities |![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 
+> [!NOTE]
+>
+> <sup>1</sup> The Defender Vulnerability Management Report inaccuracy functionality is not available for GCC customers.
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

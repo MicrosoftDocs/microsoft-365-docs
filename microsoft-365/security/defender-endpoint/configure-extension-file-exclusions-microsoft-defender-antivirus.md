@@ -1,19 +1,20 @@
 ---
 title: Configure and validate exclusions based on extension, name, or location
 description: Exclude files from Microsoft Defender Antivirus scans based on their file extension, file name, or location.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
 ms.date: 06/06/2023
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.topic: conceptual
 ms.custom: nextgen
 ms.reviewer: thdoucet
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -35,7 +36,7 @@ You can define exclusions for Microsoft Defender Antivirus that apply to [schedu
 - [Exclusions for files that are opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus exclusions do apply to some Microsoft Defender for Endpoint capabilities, such as [attack surface reduction (ASR) rules](attack-surface-reduction.md). Some Microsoft Defender Antivirus exclusions are applicable to some ASR rule exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
+> Microsoft Defender Antivirus exclusions do apply to some Microsoft Defender for Endpoint capabilities, such as [attack surface reduction rules](attack-surface-reduction.md). Some Microsoft Defender Antivirus exclusions are applicable to some ASR rule exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
 > Files that you exclude using the methods described in this article can still trigger Endpoint Detection and Response (EDR) alerts and other detections.
 > To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](manage-indicators.md).
 
@@ -353,7 +354,7 @@ In the following PowerShell snippet, replace `test.txt` with a file that conform
 Invoke-WebRequest "https://secure.eicar.org/eicar.com.txt" -OutFile "test.txt"
 ```
 
-If Microsoft Defender Antivirus reports malware, then the rule is not working. If there is no report of malware and the downloaded file exists, then the exclusion is working. You can open the file to confirm the contents are the same as what is described on the [EICAR test file website](http://www.eicar.org/86-0-Intended-use.html).
+If Microsoft Defender Antivirus reports malware, then the rule is not working. If there is no report of malware and the downloaded file exists, then the exclusion is working. You can open the file to confirm the contents are the same as what is described on the [EICAR test file website](https://www.eicar.org/download-anti-malware-testfile/).
 
 You can also use the following PowerShell code, which calls the .NET WebClient class to download the test file - as with the `Invoke-WebRequest` cmdlet; replace `c:\test.txt` with a file that conforms to the rule you are validating:
 

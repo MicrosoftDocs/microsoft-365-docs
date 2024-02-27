@@ -1,5 +1,5 @@
 ---
-title:  Manage incidents and alerts from Defender for Office 365 in Microsoft 365 Defender
+title:  Manage incidents and alerts from Defender for Office 365 in Microsoft Defender XDR
 f1.keywords:
   - NOCSH
 ms.author: chrisda
@@ -15,24 +15,24 @@ ms.collection:
   - m365-security
   - tier1
 ms.custom:
-description: SecOps personnel can learn how to use the Incidents queue in Microsoft 365 Defender to manage incidents in Microsoft Defender for Office 365.
+description: SecOps personnel can learn how to use the Incidents queue in Microsoft Defender XDR to manage incidents in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/15/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
-# Manage incidents and alerts from Microsoft Defender for Office 365 in Microsoft 365 Defender
+# Manage incidents and alerts from Microsoft Defender for Office 365 in Microsoft Defender XDR
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-An [incident](/microsoft-365/security/defender/incidents-overview) in Microsoft 365 Defender is a collection of correlated alerts and associated data that define the complete story of an attack. Defender for Office 365 [alerts](/microsoft-365/compliance/alert-policies#default-alert-policies), [automated investigation and response (AIR)](air-about.md#the-overall-flow-of-air), and the outcome of the investigations are natively integrated and correlated on the **Incidents** page in Microsoft 365 Defender at <https://security.microsoft.com/incidents-queue>. We refer to this page as the _Incidents queue_.
+An [incident](/microsoft-365/security/defender/incidents-overview) in Microsoft Defender XDR is a collection of correlated alerts and associated data that define the complete story of an attack. Defender for Office 365 [alerts](/purview/alert-policies#default-alert-policies), [automated investigation and response (AIR)](air-about.md#the-overall-flow-of-air), and the outcome of the investigations are natively integrated and correlated on the **Incidents** page in Microsoft Defender XDR at <https://security.microsoft.com/incidents-queue>. We refer to this page as the _Incidents queue_.
 
 Alerts are created when malicious or suspicious activity affects an entity (for example, email, users, or mailboxes). Alerts provide valuable insights about in-progress or completed attacks. However, an ongoing attack can affect multiple entities, which results in multiple alerts from different sources. Some built-in alerts automatically trigger AIR playbooks. These playbooks do a series of investigation steps to look for other impacted entities or suspicious activity.
 
-Watch this short video on how to manage Microsoft Defender for Office 365 alerts in Microsoft 365 Defender.
+Watch this short video on how to manage Microsoft Defender for Office 365 alerts in Microsoft Defender XDR.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGrL2]
 
 Defender for Office 365 alerts, investigations, and their data are automatically correlated. When a relationship is determined, the system creates an incident to give security teams visibility for the entire attack.
@@ -76,17 +76,17 @@ We strongly recommend that SecOps teams manage incidents and alerts from Defende
 > [!NOTE]
 > Incidents don't just represent static events. They also represent attack stories that happen over time. As the attack progresses, new Defender for Office 365 alerts, AIR investigations, and their data are continuously added to the existing incident.
 
-Manage incidents on the **Incidents** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/incidents-queue>:
+Manage incidents on the **Incidents** page in the Microsoft Defender portal at <https://security.microsoft.com/incidents-queue>:
 
-:::image type="content" source="../../media/mdo-sec-ops-incidents.png" alt-text="Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incidents.png":::
+:::image type="content" source="../../media/mdo-sec-ops-incidents.png" alt-text="Incidents page in the Microsoft Defender portal." lightbox="../../media/mdo-sec-ops-incidents.png":::
 
-:::image type="content" source="../../media/mdo-sec-ops-incident-details.png" alt-text="Details flyout on the Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-details.png":::
+:::image type="content" source="../../media/mdo-sec-ops-incident-details.png" alt-text="Details flyout on the Incidents page in the Microsoft Defender portal." lightbox="../../media/mdo-sec-ops-incident-details.png":::
 
-:::image type="content" source="../../media/mdo-sec-ops-incident-filters.png" alt-text="Filter flyout on the Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-filters.png":::
+:::image type="content" source="../../media/mdo-sec-ops-incident-filters.png" alt-text="Filter flyout on the Incidents page in the Microsoft Defender portal." lightbox="../../media/mdo-sec-ops-incident-filters.png":::
 
-:::image type="content" source="../../media/mdo-sec-ops-incident-summary-tab.png" alt-text="Summary tab of the incident details in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-summary-tab.png":::
+:::image type="content" source="../../media/mdo-sec-ops-incident-summary-tab.png" alt-text="Summary tab of the incident details in the Microsoft Defender portal." lightbox="../../media/mdo-sec-ops-incident-summary-tab.png":::
 
-:::image type="content" source="../../media/mdo-sec-ops-incident-evidence-and-response-tab.png" alt-text="Evidence and alerts tab of the incident details in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-evidence-and-response-tab.png":::
+:::image type="content" source="../../media/mdo-sec-ops-incident-evidence-and-response-tab.png" alt-text="Evidence and alerts tab of the incident details in the Microsoft Defender portal." lightbox="../../media/mdo-sec-ops-incident-evidence-and-response-tab.png":::
 
 Manage incidents on the **Incidents** page in Microsoft Sentinel at <https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/microsoft.securityinsightsarg%2Fsentinel>:
 
@@ -119,7 +119,7 @@ Security teams can take wide variety of response actions on email using Defender
 
 Actions in Defender for Office 365 are seamlessly integrated into hunting experiences and the history of actions are visible on the **History** tab in the unified **Action center** at <https://security.microsoft.com/action-center/history>.
 
-The most effective way to take action is to use the built-in integration with Incidents in Microsoft 365 Defender. You can approve the actions that were recommended by AIR in Defender for Office 365 on the [Evidence and response](/microsoft-365/security/defender/investigate-incidents#evidence-and-response) tab of an incident in Microsoft 365 Defender. This method of tacking action is recommended for the following reasons:
+The most effective way to take action is to use the built-in integration with Incidents in Microsoft Defender XDR. You can approve the actions that were recommended by AIR in Defender for Office 365 on the [Evidence and response](/microsoft-365/security/defender/investigate-incidents#evidence-and-response) tab of an incident in Microsoft Defender XDR. This method of tacking action is recommended for the following reasons:
 
 - You investigate the complete attack story.
 - You benefit from the built-in correlation with other workloads: Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps.
@@ -127,6 +127,6 @@ The most effective way to take action is to use the built-in integration with In
 
 You take action on email based on the result of a manual investigation or hunting activity. [Threat Explorer](threat-explorer-about.md) allows security team members to take action on any email messages that might still exist in cloud mailboxes. They can take action on intra-org messages that were sent between users in your organization. Threat Explorer data is available for the last 30 days.
 
-Watch this short video to learn how Microsoft 365 Defender combines alerts from various detection sources, like Defender for Office 365, into incidents.
+Watch this short video to learn how Microsoft Defender XDR combines alerts from various detection sources, like Defender for Office 365, into incidents.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGpcs]

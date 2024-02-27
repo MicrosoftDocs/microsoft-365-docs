@@ -16,8 +16,9 @@ search.appverid:
 f1.keywords:
 - CSH
 ms.custom:
-- PowerShell
-- Ent_Office_Other
+  - PowerShell
+  - Ent_Office_Other
+  - has-azure-ad-ps-ref
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: "Learn how to assign licenses to user accounts and disable specific service plans at the same time using PowerShell for Microsoft 365."
 ---
@@ -62,7 +63,7 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAssign
 ```
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -73,7 +74,7 @@ Get-MsolAccountSku
 ```
 
 >[!Note]
->PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+>PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
 >
 
 In the display of the  `Get-MsolAccountSku` command:

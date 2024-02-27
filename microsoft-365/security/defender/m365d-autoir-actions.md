@@ -3,8 +3,7 @@ title: View and manage actions in the Action center
 description: Use the Action center to view and manage remediation actions
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +12,7 @@ f1.keywords:
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 07/27/2022
+ms.date: 08/11/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -29,9 +28,9 @@ ms.reviewer: evaldm, isco
 # View and manage actions in the Action center
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-Threat protection features in Microsoft 365 Defender can result in certain remediation actions. Here are some examples:
+Threat protection features in Microsoft Defender XDR can result in certain remediation actions. Here are some examples:
 
 - [Automated investigations](m365d-autoir.md) can result in remediation actions that are taken automatically or await your approval.
 - Antivirus, antimalware, and other threat protection features can result in remediation actions, such as blocking a file, URL, or process, or sending an artifact to quarantine.
@@ -43,15 +42,15 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 To navigate to the Action center, take one of the following steps:
 
 - Go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); or
-- In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the Automated investigation & response card, select **Approve in Action Center**.
+- In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the Automated investigation & response card, select **Approve in Action Center**.
 
 ## Review pending actions in the Action center
 
 It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in. 
 
-2. In the navigation pane, choose **Action center**.
+2. In the navigation pane under Actions and submissions, choose **Action center**.
 
 3. In the Action center, on the **Pending** tab, select an item in the list. Its flyout pane opens. Here's an example.
 
@@ -102,4 +101,4 @@ If you've determined that a device or a file is not a threat, you can undo remed
 
 - [View the details and results of an automated investigation](m365d-autoir-results.md)
 - [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

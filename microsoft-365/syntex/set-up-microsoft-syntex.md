@@ -3,8 +3,8 @@ title: Set up Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
-manager: pamgreen
-ms.date: 03/06/2023
+manager: jtremper
+ms.date: 08/01/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -12,6 +12,7 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 - Tier1
+- essentials-get-started
 ms.custom: 
 - admindeeplinkMAC
 search.appverid: MET150
@@ -29,7 +30,7 @@ This article covers the initial setup experience for Microsoft Syntex content AI
 > [!Note]
 > For information about setting up Microsoft Syntex - SharePoint Advanced Management, see [Microsoft Syntex - SharePoint Advanced Management overview](/sharepoint/advanced-management).
 
-## Requirements 
+## Requirements
 
 You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Microsoft Syntex.
 
@@ -54,6 +55,13 @@ The following table provides links to the specific setup instructions for each s
 |Service |Instructions to set up service |
 |:-------|:----------------------|
 |Prebuilt document processing     | [Set up prebuilt document processing](prebuilt-setup.md) |
+|Structured and freeform document processing | [Set up structured and freeform document processing](structured-freeform-setup.md) |
 |Unstructured document processing | [Set up unstructured document processing](unstructured-setup.md) |
+|Content assembly                 | [Set up content assembly](content-assembly-setup.md)  |
 |Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
+|Taxonomy tagging                 | [Set up taxonomy tagging](taxonomy-tagging-setup.md)  |
+|Translation                    | [Set up document translation](translation-setup.md)  |
+|Syntex eSignature                | [Set up Syntex eSignature](esignature-setup.md)  |
 |Optical character recognition    | [Set up optical character recognition](ocr.md)  |
+|Microsoft 365 Archive (Preview)  | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
+|Microsoft 365 Backup (Preview)   | [Set up Microsoft 365 Backup](backup/backup-setup.md)  |

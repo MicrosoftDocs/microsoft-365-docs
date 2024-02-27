@@ -1,6 +1,6 @@
 ---
 title: "Exchange 2010 end of support roadmap"
-ms.author: v-aiyengar
+ms.author: serdars
 author: dstrome
 manager: scotv
 ms.date: 08/10/2020
@@ -44,7 +44,7 @@ It's a great time to explore your options and prepare a migration plan. You can:
 - Migrate your Exchange 2010 servers to Exchange 2016 on your on-premises servers.
 
 > [!IMPORTANT]
-> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep DirSync or Azure AD Connect in place to continue managing user accounts from on-premises Active Directory, you need to keep at least one Microsoft Exchange server on-premises. If you remove all Exchange servers, you won't be able to make changes to Exchange recipients in Exchange Online because the source of authority remains in your on-premises Active Directory. Changes need to be made there. In this scenario, you have the following options:
+> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep DirSync or Microsoft Entra Connect in place to continue managing user accounts from on-premises Active Directory, you need to keep at least one Microsoft Exchange server on-premises. If you remove all Exchange servers, you won't be able to make changes to Exchange recipients in Exchange Online because the source of authority remains in your on-premises Active Directory. Changes need to be made there. In this scenario, you have the following options:
 >
 > - *Recommended:* If you migrated your mailboxes to Microsoft 365 and upgraded your servers by October 13, 2020, use Exchange 2010 to connect to Microsoft 365 and migrate mailboxes. Next, migrate Exchange 2010 to Exchange 2016, and decommission any remaining Exchange 2010 servers.
 > - If you didn't complete the mailbox migration and on-premises server upgrade by October 13, 2020, upgrade your on-premises Exchange 2010 servers to Exchange 2016 first. Then use Exchange 2016 to connect to Microsoft 365 and migrate mailboxes.
@@ -148,13 +148,13 @@ Full hybrid migrations are best for organizations that expect to stay in a hybri
 Things to consider about full-hybrid migration:
 
 - They aren't suited to all organizations. Due to the complexity of full hybrid migrations, organizations with less than a few hundred mailboxes don't typically see benefits that justify the effort and cost involved. In such cases, we recommend that you consider cutover or minimal hybrid migration instead.
-- You need to set up directory synchronization using Azure Active Directory (Azure AD) Connect between your on-premises Active Directory servers and Microsoft 365.
-- Users will be able to sign in to their Microsoft 365 mailbox with same user name and password they use when they sign in to the local network. (This functionality requires Azure AD Connect with password synchronization and/or Active Directory Federation Services).
+- You need to set up directory synchronization using Microsoft Entra Connect between your on-premises Active Directory servers and Microsoft 365.
+- Users will be able to sign in to their Microsoft 365 mailbox with same user name and password they use when they sign in to the local network. (This functionality requires Microsoft Entra Connect with password synchronization and/or Active Directory Federation Services).
 - You need a Microsoft 365 license that includes Exchange Online for each user mailbox you migrate.
 - Users don't need to set up a new Outlook profile on most of their devices, although some older Android phones might need a new profile. Users won't need to redownload their email.
 
 > [!IMPORTANT]
-> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep DirSync or Azure AD Connect in place to continue managing user accounts from on-premises Active Directory, you need to keep at least one Exchange server on-premises. If all Exchange servers are removed, you won't be able to make changes to Exchange recipients in Exchange Online. This is because the source of authority remains in your on-premises Active Directory and changes need to be made there.
+> If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep DirSync or Microsoft Entra Connect in place to continue managing user accounts from on-premises Active Directory, you need to keep at least one Exchange server on-premises. If all Exchange servers are removed, you won't be able to make changes to Exchange recipients in Exchange Online. This is because the source of authority remains in your on-premises Active Directory and changes need to be made there.
 
 If a full hybrid migration sounds right for you, see the following helpful resources:
 
@@ -203,13 +203,13 @@ Use the following resources to help with your migration:
 
 ## Summary of options for Office 2010 client and servers and Windows 7
 
-For a visual summary of the upgrade, migrate, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
+For a visual summary of the upgrade, migrate, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf).
 
-[![End of support for Office 2010 clients and servers and Windows 7 poster.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![End of support for Office 2010 clients and servers and Windows 7 poster.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf)
 
 This one-page poster illustrates the various paths you can take to respond to Office 2010 client and server products and Windows 7 reaching end of support, with preferred paths and option support in Microsoft 365 Enterprise highlighted.
 
-You can also [download](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) this poster and print it in letter, legal, or tabloid (11 x 17) format.
+You can also [download](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf) this poster and print it in letter, legal, or tabloid (11 x 17) format.
 
 ## What if I need help?
 

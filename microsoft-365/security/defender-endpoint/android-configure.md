@@ -1,37 +1,34 @@
 ---
 title: Configure Microsoft Defender for Endpoint on Android features
 description: Describes how to configure Microsoft Defender for Endpoint on Android
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, configuration
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-android
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: android
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Configure Defender for Endpoint on Android features
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Conditional Access with Defender for Endpoint on Android
 
-Microsoft Defender for Endpoint on Android, along with Microsoft Intune and Azure Active Directory, enables enforcing Device compliance and Conditional Access policies based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy through Intune.
+Microsoft Defender for Endpoint on Android, along with Microsoft Intune and Microsoft Entra ID, enables enforcing Device compliance and Conditional Access policies based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy through Intune.
 
 For more information about how to set up Defender for Endpoint on Android and Conditional Access, see [Defender for Endpoint and Intune](/mem/intune/protect/advanced-threat-protection).
 
@@ -310,6 +307,29 @@ Use the following steps to configure Disable sign-out:
    - By default, Disable Sign Out = 1 for Android Enterprise personally owned work profiles, fully managed, company owned personally enabled profiles and 0 for device administrator mode.
    - Admins need to make Disable Sign Out = 0 to enable the sign-out button in the app. Users will be able to see the sign-out button once the policy is pushed.
 5. Select **Next** and assign this profile to targeted devices and users.
+
+> [!IMPORTANT]
+> This feature is in Public Preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+## Device Tagging
+
+Defender for Endpoint on Android enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
+
+Use the following steps to configure the Device tags:
+
+1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+2. Give the policy a name, select **Platform > Android Enterprise**, and select the profile type.
+3. Select **Microsoft Defender for Endpoint** as the target app.
+4. In Settings page, select Use configuration designer and add **DefenderDeviceTag** as the key and value type as **String**.
+   - Admin can assign a new tag by adding the key **DefenderDeviceTag** and setting a value for device tag.
+   - Admin can edit an existing tag by modifying the value of the key **DefenderDeviceTag**.
+   - Admin can delete an existing tag by removing the key **DefenderDeviceTag**.
+
+5. Click Next and assign this policy to targeted devices and users.
+
+
+> [!NOTE] 
+> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take upto 18 hours for tags to reflect in the portal.
 
 ## Related articles
 

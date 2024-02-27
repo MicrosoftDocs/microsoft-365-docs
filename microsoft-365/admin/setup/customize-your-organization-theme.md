@@ -91,7 +91,9 @@ Select **Save** to save your changes.
 :::image type="content" source="../../media/Logos_Tab.png" alt-text="Screenshot: Logos tab showing the logo options":::
 
 You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
-  
+
+**Note:** The Microsoft 365 suite header is designed to accommodate a variety of screen sizes, window sizes, and display settings. The responsive behavior of the suite header sometimes results in the logo not showing to give space to other capabilities shown on the suite header. To reduce the likelihood of this behavior a narrower image file is recommended.
+
 ## Colors: Choose theme colors
 
 On the **Colors** page, you can set the default colors and choose which logo should be used.
@@ -131,7 +133,7 @@ Users who are assigned to multiple group themes will be shown the default theme.
 
 ### Why can’t I delete the default theme?  
 
-The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the group theme.
+The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the default theme.
 
 ### Why am I receiving an error message every time I upload a logo URL
 

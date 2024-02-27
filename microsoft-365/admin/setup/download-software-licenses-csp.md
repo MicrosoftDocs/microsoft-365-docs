@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, nicholak
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -22,7 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Learn how to download the software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
-ms.date: 04/26/2023
+ms.date: 01/09/2024
 ---
 
 # Download perpetual software and product license keys in Microsoft 365
@@ -32,6 +32,9 @@ This article explains how to download software and product license keys for perp
 ## Before you begin
 
 You must be a Global admin to do the steps in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+
+> [!NOTE]
+> If you're a partner who's an admin on behalf of (AOBO) a customer, you must sign in to the customer's organization with an admin account created in the organization.
 
 ## Download software and product license keys
 

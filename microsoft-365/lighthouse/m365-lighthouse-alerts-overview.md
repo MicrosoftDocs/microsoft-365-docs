@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: algreer
+ms.reviewer: shcallaw
 ms.date: 06/30/2023
 audience: Admin
 ms.topic: article
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-manage
 ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
@@ -24,7 +25,12 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Alerts page in Microsoft 365 Lighthouse
 
-As an MSP provider, you need to monitor and respond to the security issues of your customers efficiently and effectively. Microsoft 365 Lighthouse introduces alerts, a powerful tool that gives you a consolidated view of all the high priority detections and alerts across your customers. You can see a prioritized list of the most urgent issues that require your attention and take immediate action to resolve them. You can also enable push alerts to your existing support systems and flows, so you never miss a critical alert that needs your intervention.
+> [!NOTE]
+> Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+>
+> To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+As an MSP provider, you need to monitor and respond to the security issues of your customers efficiently and effectively. Microsoft 365 Lighthouse introduces alerts, a powerful tool that gives you a consolidated view of all the high-priority detections and alerts across your customers. You can see a prioritized list of the most urgent issues that require your attention and take immediate action to resolve them. You can also enable push alerts to your existing support systems and flows, so you never miss a critical alert that needs your intervention.
 
 To help you get started, Lighthouse provides a default set of alerting rules based on best practices and recommendations. You can use these rules as they are or modify them according to your preferences and needs. You can also create rules from scratch for more control and flexibility.
 

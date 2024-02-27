@@ -91,7 +91,7 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 
 Depending on your subscription, here are the available reports in all environments.
 
-|Report|Public|GCC|GCC-High|DoD|Office 365 operated by 21Vianet|
+|Report|Public|GCC|GCC-High|DoD|Microsoft 365 operated by 21Vianet|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |[Microsoft browser usage](browser-usage-report.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|
 |[Email activity](email-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
@@ -113,14 +113,16 @@ Depending on your subscription, here are the available reports in all environmen
 |[Viva Engage groups activity report](viva-engage-groups-activity-report-ww.md)|Yes|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
 |[Forms activity](forms-activity-ww.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|
 |[Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)|Yes|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
-|[Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
-|[Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
-|[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
-|[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes|
-|[Viva Learning activity](viva-learning-activity.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
+|[Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|Yes|
+|[Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|Yes|
+|[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|Yes|
+|[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|Yes|
+|[Viva Learning activity](viva-learning-activity.md)|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
 |[Viva Insights activity](viva-insights-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
 |[Project activity](project-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
 |[Visio activity](visio-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
+|[Viva Goals activity](viva-goals-activity.md)|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
+|[Microsoft 365 Copilot usage report](microsoft-365-copilot-usage.md)|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
 
 N/A<sup>1</sup>: The report is planned to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 

@@ -1,8 +1,8 @@
 ---
 title: Use Microsoft Teams meetings with Canvas
-ms.author: danismith
-author: DaniEASmith
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: sovaish
 ms.date: 05/26/2021
 audience: admin
@@ -25,9 +25,9 @@ Microsoft Teams meetings is a Learning Tools Interoperability (LTI) app that hel
 ## Prerequisites Before Deployment
 
 > [!NOTE]
-> The current Teams Meetings LTI only supports syncing Canvas users with Microsoft Azure Active Directory (AAD) in a limited scope.
+> The current Teams Meetings LTI only supports syncing Canvas users with Microsoft Entra ID in a limited scope.
 >
-> - Your tenant must have an Microsoft Education license.
+> - Your tenant must have a Microsoft Education license.
 > - Only a single Microsoft tenant can be used for mapping users between Canvas and Microsoft.
 > - If you plan to use the Microsoft Teams Sync feature of Canvas concurrently with Microsoft’s School Data Sync (SDS), don't include class and class roster data in your SDS sync. You can continue to use SDS to sync all other data including users, organizations, parent contacts, and demographics.
 > - You can use Teams Meetings LTI without enabling **Course Sync**. However, you won't be able to use the **Add entire class** option. You can either type or copy and paste attendees' email addresses, or add channels of existing teams to the meetings.
@@ -44,14 +44,14 @@ Before managing the Microsoft Teams integration within Instructure Canvas, it's 
 
    ![Canvas Teams Sync Updated png.](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
 
-4. Enter your Microsoft tenant name, login attribute, domain suffix, and AAD lookup attribute. These fields will be used for matching users in Canvas with users in Microsoft Azure Active Directory.
+4. Enter your Microsoft tenant name, login attribute, domain suffix, and Microsoft Entra lookup attribute. These fields will be used for matching users in Canvas with users in Microsoft Entra ID.
    - The Login Attribute is the Canvas user attribute utilized for matching.
-   - The Suffix field is optional and lets you specify a domain when there isn't an exact mapping between Canvas attributes and Microsoft AAD fields. For example, if your Canvas email is 'name@example.edu' while the UPN in Microsoft AAD is 'name', you can match users by entering 'example.edu' in the suffix field.
+   - The Suffix field is optional and lets you specify a domain when there isn't an exact mapping between Canvas attributes and Microsoft Entra fields. For example, if your Canvas email is 'name@example.edu' while the UPN in Microsoft Entra is 'name', you can match users by entering 'example.edu' in the suffix field.
    - The Active Directory Lookup Attribute is the field on the Microsoft side which Canvas attributes are matched to. Select in between UPN, primary email address, or the email alias.
 
 5. Select **Update Settings** once done.
 
-6. To approve access for Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app, select the **Grant tenant access** link. You'll be redirected to the Microsoft Identity Platform Admin Consent Endpoint.
+6. To approve access for Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app, select the **Grant tenant access** link. You'll be redirected to the Microsoft identity platform Admin Consent Endpoint.
 
    ![permissions.](media/permissions.png)
 
@@ -72,25 +72,31 @@ As a Canvas Admin, you'll need to add the Microsoft Teams meetings LTI app withi
 
 - Microsoft Teams meetings - 170000000000703
 
-1. Access **Admin settings** > **Apps**.
+1. Sign in to Canvas as an administrator.
 
-2. Select **+ App** to add the Teams LTI apps.
+2. Select the Admin link in the global navigation, and then select your account.
+
+3. In the admin navigation, select the Developer Keys link, and then select the Inherited tab.
+
+4. Enable the LTI apps you are going to deploy by selecting the ON state for each of the appropriate apps.
+
+5. Access **Admin settings** > **Apps**.
+
+6. Select **+ App** to add the Teams LTI apps.
 
    ![external-apps.](media/external-apps.png)
 
-3. Select **By Client ID** for configuration type.
+7. Select **By Client ID** for configuration type.
 
    ![add app.](media/add-app.png)
 
-4. Enter the Client ID provided, and then select **Submit**.
+8. Enter the Client ID provided, and then select **Submit**.
 
    You'll notice the Microsoft Teams meetings LTI app name for the Client ID for confirmation.
 
-5. Select **Install**.
+9. Select **Install**.
 
    The Microsoft Teams meetings LTI app will be added to the list of external apps.
-
-6. Enable the app by navigating to the developer keys in the Canvas admin account, selecting inherited, and turning the toggle "on" for Microsoft Teams Meetings.
 
 ## Enable for Canvas Courses
 

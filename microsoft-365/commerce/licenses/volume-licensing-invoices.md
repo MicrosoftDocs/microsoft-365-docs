@@ -1,5 +1,5 @@
 ---
-title: "Non-Azure Microsoft volume licensing invoices"
+title: "Microsoft volume licensing invoices"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -18,20 +18,16 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to access and view non-Azure volume licensing invoices in the Microsoft 365 admin center."
-ms.date: 03/31/2023
+description: "Learn how to access your non-Azure volume licensing invoices in the Microsoft 365 admin center."
+ms.date: 02/21/2024
 ---
 
-# Non-Azure Microsoft volume licensing invoices
+# Microsoft volume licensing invoices
 
-This article applies only to non-Azure volume licensing (VL) invoices and explains the format of a new invoice PDF and invoice recon file that are available to volume licensing (VL) customers.
+> [!IMPORTANT]
+> This article applies only to non-Azure volume licensing (VL) invoices and explains the format of the invoice PDF and invoice recon file that are available to VL customers.
 
-Starting on November 18, 2022, VL customers with non-Azure products purchased **under a direct VL agreement** can access the new invoice format in the Microsoft 365 admin center. This invoice applies to all types of VL programs except Microsoft Products & Services Agreements (MPSA), Federal Government, Special agreements, and Select Plus agreements.
-
-This new invoice format is a phased implementation and will roll out to VL customers over the next few months. If you can't see VL invoices in the Microsoft 365 admin center yet, continue to refer to your invoice emails.
-
-> [!NOTE]
-> There are no changes to invoices generated before November 18, 2022.
+Volume licensing (VL) customers with non-Azure products bought under a direct VL agreement can access their invoice in the Microsoft 365 admin center. This invoice applies to all types of VL programs except Microsoft Products & Services Agreements (MPSA), Federal Government, Special agreements, and Select Plus agreements.
 
 ## Before you begin
 
@@ -134,7 +130,7 @@ The invoice recon file is a CSV file that includes the same information as the I
 |Product Family|The logical categorization of products.|
 |License Type|Reflects the terms of buying the product.|
 |Price Level|The price categorization of product.|
-|Billing Option|How frequently the customer is billed. This can be upfront, monthly, quarterly, semi-annually, or annually.|
+|Billing Option|How frequently the customer is billed. The frequency options are upfront, monthly, every three months, every six months, or yearly.|
 |Taxable|Indicates whether the product is taxable.|
 |Pool|The classification of the product into a system, server, or application.|
 |Service Period Start Date, Service Period End Date|Indicates the eligible service period.|
@@ -145,7 +141,7 @@ The invoice recon file is a CSV file that includes the same information as the I
 |Extended Amount|The quantity multiplied by the unit price.|
 |Commitment Usage|The amount of monetary commitment that was used.|
 |Net Amount|The extended amount minus the commitment usage.|
-|Tax Rate|The tax rate applicable to the product based on the country of billing.|
+|Tax Rate|The tax rate applicable to the product based on the country/region of billing.|
 |Tax Amount|The net amount multiplied by tax rate.|
 |Total|The sum of the net amount and tax amount.|
 |Is Third Party|Indicates whether the product or service is a third-party product.|
@@ -197,7 +193,7 @@ Only the **Bill To contact** participant on the agreement can view the correspon
 
 ## How often and when am I billed?
 
-Depending on the billing frequency you choose when you bought your subscription, you receive an invoice either upfront, monthly, quarterly, semi-annually, or annually. The amount of time since the last invoice date is the **Billing Period** and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+Depending on the billing frequency you choose when you bought your subscription, you receive an invoice either upfront, monthly, every three months, every six months, or yearly. The amount of time since the last invoice date is the **Billing Period** and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
 
 ## Why is my total due different from last billing period?
 
@@ -209,7 +205,7 @@ If the amount billed is different than expected, that can happen for a few reaso
 
 ## What is the tax rate applied to my invoice?
 
-The tax rate applied to the invoice depends on the country of billing. You can check the invoice recon file for the tax rate applied to each
+The tax rate applied to the invoice depends on the country/region of billing. You can check the invoice recon file for the tax rate applied to each
 item. For more information, contact your Microsoft partner.
 
 ## Who can I contact for questions related to pricing and the coverage period?
@@ -220,7 +216,7 @@ Contact your Microsoft partner for invoice support.
 
 Contact your Microsoft partner for invoice support.
 
-## How can I make a request for the invoice PDF and recon file to be resent by mail?
+## How can I make a request for the invoice PDF and recon file to be sent by mail?
 
 This functionality isn't currently available.
 

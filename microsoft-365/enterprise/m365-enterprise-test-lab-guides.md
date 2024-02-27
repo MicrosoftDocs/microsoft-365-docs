@@ -33,9 +33,9 @@ You can also use TLGs to create representative environments to develop and test 
   
 ![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, expand the following graphic or go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, expand the following graphic or go to [Microsoft 365 for enterprise Test Lab Guide Stack](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf).
 
-[![The Microsoft 365 for enterprise Test Lab Guide stack.](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+[![The Microsoft 365 for enterprise Test Lab Guide stack.](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf)
 
 ## Base configuration
 
@@ -63,9 +63,9 @@ To demonstrate identity-related features and capabilities, see:
   
    Enable and test federated authentication to an AD DS domain controller.
 
-- [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
+- [Microsoft Entra seamless single sign-on](single-sign-on-m365-ent-test-environment.md)
   
-   Enable and test Azure AD Seamless Single Sign-on (Seamless SSO) with an AD DS domain controller.
+   Enable and test Microsoft Entra seamless single sign-on (Seamless SSO) with an AD DS domain controller.
 
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -77,7 +77,7 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Password writeback](password-writeback-m365-ent-test-environment.md)
 
-   Use password writeback to change the password on your AD DS user account from Azure AD.
+   Use password writeback to change the password on your AD DS user account from Microsoft Entra ID.
 
 - [Password reset](password-reset-m365-ent-test-environment.md)
 
@@ -87,7 +87,7 @@ To demonstrate identity-related features and capabilities, see:
 
    Make administering new accounts easier than ever with automatic licensing and dynamic group membership.
 
-- [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
+- [Microsoft Entra ID Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 
    Scan your current user accounts for vulnerabilities.
 

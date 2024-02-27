@@ -1,29 +1,25 @@
 ---
 title: Onboard Windows devices to Microsoft Defender for Endpoint via Group Policy
 description: Use Group Policy to deploy the configuration package on Windows devices so that they are onboarded to the service.
-keywords: configure devices using group policy, device management, configure Microsoft Defender for Endpoint devices, onboard Microsoft Defender for Endpoint devices, group policy
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 12/07/2021
-ms.subservice: mde
+ms.date: 09/15/2023
+ms.subservice: onboard
 search.appverid: met150
 ---
 
 # Onboard Windows devices using Group Policy 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -32,7 +28,7 @@ search.appverid: met150
 - Group Policy
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
@@ -46,7 +42,7 @@ search.appverid: met150
 
 Check out [Identify Defender for Endpoint architecture and deployment method](deployment-strategy.md) to see the various paths in deploying Defender for Endpoint.
 
-1. Open the GP configuration package file (`WindowsDefenderATPOnboardingPackage.zip`) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+1. Open the GP configuration package file (`WindowsDefenderATPOnboardingPackage.zip`) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management**  > **Onboarding**.
 
@@ -83,7 +79,7 @@ Check out [Identify Defender for Endpoint architecture and deployment method](de
 
 ## Additional Defender for Endpoint configuration settings
 
-For each device, you can state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
+For each device, you can state whether samples can be collected from the device when a request is made through Microsoft Defender XDR to submit a file for deep analysis.
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
 
@@ -201,7 +197,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
 
@@ -219,7 +215,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 5. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.
 
-6. In the **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.
+6. In the **Task** window that opens, go to the **General** tab under **Security options** and select **Change User or Group**, enter SYSTEM, then select **Check Names** and then **OK**. NT AUTHORITY\SYSTEM appears as the user account that the task will run as.
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.
 
@@ -238,7 +234,7 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 
 ## Monitor devices using the portal
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 2. Click **Devices inventory**.
 3. Verify that devices are appearing.
 

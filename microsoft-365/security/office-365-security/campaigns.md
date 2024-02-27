@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.reviewer: mcostea
 audience: ITPro
 ms.topic: conceptual
@@ -21,7 +21,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/14/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Campaigns in Microsoft Defender for Office 365
@@ -57,15 +57,16 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 - The campaigns feature is available in organizations with Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5).
 - You need to be assigned permissions to view information about campaigns as described in this article. You have the following options:
-  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Raw data (email & collaboration)/Email message headers (read)**.
+  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
     - **Organization Management**
     - **Security Administrator**
     - **Security Reader**
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-## Campaigns page in the Microsoft 365 Defender portal
+## Campaigns page in the Microsoft Defender portal
 
-To open the **Campaigns** page in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Campaigns**. Or, to go directly to the **Campaigns** page, use <https://security.microsoft.com/campaigns>.
+To open the **Campaigns** page in the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Campaigns**. Or, to go directly to the **Campaigns** page, use <https://security.microsoft.com/campaigns>.
 
 The main **Campaigns** page consists of the following elements:
 
@@ -73,7 +74,7 @@ The main **Campaigns** page consists of the following elements:
 - A chart area, which is set to **Campaign Type** by default.
 - A details table, which is set to the **Campaign** tab by default
 
-:::image type="content" source="../../media/campaigns-overview.png" alt-text="Screenshot that shows the Campaigns in the Microsoft 365 Defender portal." lightbox="../../media/campaigns-overview.png":::
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="Screenshot that shows the Campaigns in the Microsoft Defender portal." lightbox="../../media/campaigns-overview.png":::
 
 > [!TIP]
 >
@@ -85,7 +86,7 @@ The main **Campaigns** page consists of the following elements:
 >   - **Malware** tab \> **Campaign** tab
 >   - **Phish** tab \> **Campaign** tab
 >
-> - If you have a Microsoft Defender for Endpoint subscription, you can select :::image type="icon" source="../../media/m365-cc-sc-gear-icon.png" border="false"::: **MDE Settings** on the **Campaigns** page to connect or disconnect the campaigns information with Microsoft Defender for Endpoint. For more information, see [Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md).
+> - If you have a Microsoft Defender for Endpoint subscription, campaigns information is connected with Microsoft Defender for Endpoint.
 
 ### Chart area on the Campaigns page
 
@@ -334,8 +335,8 @@ The diagram contains the following information:
   |**Detected**|`SFV:SPM`|The message was marked as spam by spam filtering.|
   |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by spam filtering.|
   |**Released**|`SFV:SKQ`|The message skipped spam filtering because it was released from quarantine.|
-  |**Tenant Allow**¹|`SFV:SKA`|The message skipped spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed sender list or allowed domain list.|
-  |**Tenant Block**²|`SFV:SKA`|The message was blocked by spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed sender list or allowed domain list.|
+  |**Tenant Allow**¹|`SFV:SKA`|The message skipped spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed senders list or allowed domain list.|
+  |**Tenant Block**²|`SFV:SKA`|The message was blocked by spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed senders list or allowed domain list.|
   |**User Allow**¹|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list.|
   |**User Block**²|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list.|
   |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) moved the delivered message to the Junk Email folder or quarantine. You configure the action in [anti-spam policies](anti-spam-policies-configure.md).|
@@ -390,14 +391,14 @@ The tabs in the campaign details flyout allow you to further investigate the cam
   - **Total count**
   - **Inboxed**
   - **Not Inboxed**
-  - **SPF passed**: The sender was authenticated by the [Sender Policy Framework (SPF)](email-authentication-anti-spoofing.md). A sender that doesn't pass SPF validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
+  - **SPF passed**: The sender was authenticated by the [Sender Policy Framework (SPF)](email-authentication-spf-configure.md). A sender that doesn't pass SPF validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
 
 - **Senders**
   - **Sender**: This is the actual sender address in the SMTP **MAIL FROM** command, which isn't necessarily the **From:** email address that users see in their email clients.
   - **Total count**
   - **Inboxed**
   - **Not Inboxed**
-  - **DKIM passed**: The sender was authenticated by [Domain Keys Identified Mail (DKIM)](email-authentication-dkim-support-about.md). A sender that doesn't pass DKIM validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
+  - **DKIM passed**: The sender was authenticated by [Domain Keys Identified Mail (DKIM)](email-authentication-dkim-configure.md). A sender that doesn't pass DKIM validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
   - **DMARC passed**: The sender was authenticated by [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](email-authentication-dmarc-configure.md). A sender that doesn't pass DMARC validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
 
 - **Attachments**

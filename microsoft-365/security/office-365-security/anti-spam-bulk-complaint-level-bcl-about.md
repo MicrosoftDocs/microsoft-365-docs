@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -17,11 +17,11 @@ ms.collection:
 description: Admins can learn about bulk complaint level (BCL) values that are used in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 06/09/2023
+ms.date: 10/17/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Bulk complaint level (BCL) in EOP
@@ -51,3 +51,5 @@ Messages that meet or exceed the configured BCL threshold have the following def
 
 - **Default anti-spam policy, new anti-spam policies, and Standard preset security policy**: Deliver the message to recipient Junk Email folders.
 - **Strict preset security policy**: [Quarantine the message](quarantine-end-user.md).
+
+The [View data by Email \> Spam and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) view in the Threat protection status report has a **Bulk complaint level** slider. This slider is available in :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** when you also select the **Detection** value **Bulk**. Using this slider shows you the results of increasing or decreasing the BCL value in the report.

@@ -19,11 +19,11 @@ description: Admins can learn about the header fields that are added to messages
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 7/5/2023
+ms.date: 9/8/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Anti-spam message headers in Microsoft 365
@@ -47,7 +47,7 @@ For information about how to view an email message header in various email clien
 
 After you have the message header information, find the **X-Forefront-Antispam-Report** header. There are multiple field and value pairs in this header separated by semicolons (;). For example:
 
-`...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;CAT:NONE;SFTY:;...`
+`...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;SFTY:;...`
 
 The individual fields and values are described in the following table.
 
@@ -57,9 +57,10 @@ The individual fields and values are described in the following table.
 |Field|Description|
 |---|---|
 |`ARC`|The `ARC` protocol has the following fields: <ul><li>`AAR`: Records the content of the **Authentication-results** header from DMARC.</li><li>`AMS`: Includes cryptographic signatures of the message.</li><li>`AS`: Includes cryptographic signatures of the message headers. This field contains a tag of a chain validation called `"cv="`, which includes the outcome of the chain validation as **none**, **pass**, or **fail**.</li></ul>|
-|`CAT:`|The category of protection policy, applied to the message: <ul><li>`BULK`: Bulk</li><li>`DIMP`: Domain Impersonation</li><li>`GIMP`: [Mailbox intelligence based impersonation](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` or `HPHISH`: High confidence phishing</li><li>`HSPM`: High confidence spam</li><li>`MALW`: Malware</li><li>`PHSH`: Phishing</li><li>`SPM`: Spam</li><li>`SPOOF`: Spoofing</li><li>`UIMP`: User Impersonation</li><li>`AMP`: Anti-malware</li><li>`SAP`: Safe attachments</li><li>`FTBP`: Anti-malware filetype policy</li><li>`OSPM`: Outbound spam</li><li>`INTOS`: Intra-Org phish action</li></ul> <br/> An inbound message might be flagged by multiple forms of protection and multiple detection scans. Policies have different priorities, and the policy with the highest priority is applied first. For more information, see [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md).|
+|`CAT:`|The category of protection policy that's applied to the message: <ul><li>`AMP`: Anti-malware</li><li>`BULK`: Bulk</li><li>`DIMP`: Domain impersonation<sup>\*</sup></li><li>`FTBP`: Anti-malware [common attachments filter](anti-malware-protection-about.md#common-attachments-filter-in-anti-malware-policies)</li><li>`GIMP`: [Mailbox intelligence](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) impersonation<sup>\*</sup></li><li>`HPHSH` or `HPHISH`: High confidence phishing</li><li>`HSPM`: High confidence spam</li><li>`INTOS`: Intra-Organization phishing</li><li>`MALW`: Malware</li><li>`OSPM`: Outbound spam</li><li>`PHSH`: Phishing</li><li>`SAP`: Safe Attachments<sup>\*</sup></li><li>`SPM`: Spam</li><li>`SPOOF`: Spoofing</li><li>`UIMP`: User impersonation<sup>\*</sup></li></ul> <br/> <sup>\*</sup>Defender for Office 365 only. <br/><br/> An inbound message might be flagged by multiple forms of protection and multiple detection scans. Policies are applied in an order of precedence, and the policy with the highest priority is applied first. For more information, see [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md).|
 |`CIP:[IP address]`|The connecting IP address. You can use this IP address in the IP Allow List or the IP Block List. For more information, see [Configure connection filtering](connection-filter-policies-configure.md).|
-|`CTRY`|The source country as determined by the connecting IP address, which might not be the same as the originating sending IP address.|
+|`CTRY`|The source country/region as determined by the connecting IP address, which might not be the same as the originating sending IP address.|
+|`DIR`|The Directionality of the message: <ul><li>`INB`: Inbound message.</li><li>`OUT`: Outbound message.</li><li>`INT`: Internal message.</li></ul>|
 |`H:[helostring]`|The HELO or EHLO string of the connecting email server.|
 |`IPV:CAL`|The message skipped spam filtering because the source IP address was in the IP Allow List. For more information, see [Configure connection filtering](connection-filter-policies-configure.md).|
 |`IPV:NLI`|The IP address wasn't found on any IP reputation list.|
@@ -72,7 +73,6 @@ The individual fields and values are described in the following table.
 |`SFV:SFE`|Filtering was skipped and the message was allowed because it was sent from an address in a user's Safe Senders list. <p> For more information about how admins can manage a user's Safe Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:SKA`|The message skipped spam filtering and was delivered to the Inbox because the sender was in the allowed senders list or allowed domains list in an anti-spam policy. For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md).|
 |`SFV:SKB`|The message was marked as spam because it matched a sender in the blocked senders list or blocked domains list in an anti-spam policy. For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md).|
-|`SFV:SKI`|The message was marked based on content of the intra-organizational message. For example, the message was marked as SCL 1 for nonspam or SCL 5 to 9 for spam.|
 |`SFV:SKN`|The message was marked as nonspam before processing by spam filtering. For example, the message was marked as SCL -1 or **Bypass spam filtering** by a mail flow rule.|
 |`SFV:SKQ`|The message was released from the quarantine and was sent to the intended recipients.|
 |`SFV:SKS`|The message was marked as spam before processing by spam filtering. For example, the message was marked as SCL 5 to 9 by a mail flow rule.|
@@ -86,11 +86,11 @@ The following table describes useful fields in the **X-Microsoft-Antispam** mess
 
 |Field|Description|
 |---|---|
-|`BCL`|The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (and is therefore more likely to be spam). For more information, see [Bulk complaint level (BCL)](anti-spam-bulk-complaint-level-bcl-about.md).|
+|`BCL`|The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (and is therefore more likely to be spam). For more information, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).|
 
 ## Authentication-results message header
 
-The results of email authentication checks for SPF, DKIM, and DMARC are recorded (stamped) in the **Authentication-results** message header in inbound messages.
+The results of email authentication checks for SPF, DKIM, and DMARC are recorded (stamped) in the **Authentication-results** message header in inbound messages. The **Authentication-results** header is defined in [RFC 7001](https://datatracker.ietf.org/doc/html/rfc7001).
 
 The following list describes the text that's added to the **Authentication-Results** header for each type of email authentication check:
 
@@ -104,6 +104,7 @@ The following list describes the text that's added to the **Authentication-Resul
 
   ```text
   spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
+
   spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
   ```
 
@@ -117,6 +118,7 @@ The following list describes the text that's added to the **Authentication-Resul
 
   ```text
   dkim=pass (signature was verified) header.d=contoso.com
+
   dkim=fail (body hash did not verify) header.d=contoso.com
   ```
 
@@ -130,8 +132,11 @@ The following list describes the text that's added to the **Authentication-Resul
 
   ```text
   dmarc=pass action=none header.from=contoso.com
+
   dmarc=bestguesspass action=none header.from=contoso.com
+
   dmarc=fail action=none header.from=contoso.com
+
   dmarc=fail action=oreject header.from=contoso.com
   ```
 
@@ -141,7 +146,7 @@ The following table describes the fields and possible values for each email auth
 
 |Field|Description|
 |---|---|
-|`action`|Indicates the action taken by the spam filter based on the results of the DMARC check. For example: <ul><li>`oreject` or `o.reject`: Stands for override reject. In this case, Microsoft 365 uses this action when it receives a message that fails the DMARC check from a domain whose DMARC TXT record has a policy of `p=reject`. Instead of deleting or rejecting the message, Microsoft 365 marks the message as spam. For more information on why Microsoft 365 is configured this way, see [How Microsoft 365 handles inbound email that fails DMARC](email-authentication-dmarc-configure.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>`pct.quarantine`: Indicates that a percentage less than 100% of messages that don't pass DMARC are delivered anyway. This result means that the message failed DMARC and the DMARC policy was set to `p=quarantine`. But, the pct field wasn't set to 100%, and the system randomly determined not to apply the DMARC action per the specified domain's DMARC policy.</li><li>`pct.reject`: Indicates that a percentage less than 100% of messages that don't pass DMARC are delivered anyway. This result means that the message failed DMARC and the DMARC policy was set to `p=reject`. But, the pct field wasn't set to 100% and the system randomly determined not to apply the DMARC action per the specified domain's DMARC policy.</li><li>`permerror`: A permanent error occurred during DMARC evaluation, such as encountering an incorrectly formed DMARC TXT record in DNS. Attempting to resend this message isn't likely to end with a different result. Instead, you might need to contact the domain's owner in order to resolve the issue.</li><li>`temperror`: A temporary error occurred during DMARC evaluation. You might be able to request that the sender resend the message later in order to process the email properly.</li></ul>|
+|`action`|Indicates the action taken by the spam filter based on the results of the DMARC check. For example: <ul><li>`pct.quarantine`: Indicates that a percentage less than 100% of messages that don't pass DMARC are delivered anyway. This result means that the message failed DMARC and the DMARC policy was set to `p=quarantine`. But, the pct field wasn't set to 100%, and the system randomly determined not to apply the DMARC action per the specified domain's DMARC policy.</li><li>`pct.reject`: Indicates that a percentage less than 100% of messages that don't pass DMARC are delivered anyway. This result means that the message failed DMARC and the DMARC policy was set to `p=reject`. But, the pct field wasn't set to 100% and the system randomly determined not to apply the DMARC action per the specified domain's DMARC policy.</li><li>`permerror`: A permanent error occurred during DMARC evaluation, such as encountering an incorrectly formed DMARC TXT record in DNS. Attempting to resend this message isn't likely to end with a different result. Instead, you might need to contact the domain's owner in order to resolve the issue.</li><li>`temperror`: A temporary error occurred during DMARC evaluation. You might be able to request that the sender resend the message later in order to process the email properly.</li></ul>|
 |`compauth`|Composite authentication result. Used by Microsoft 365 to combine multiple types of authentication (SPF, DKIM, and DMARC), or any other part of the message to determine whether or not the message is authenticated. Uses the From: domain as the basis of evaluation.|
 |`dkim`|Describes the results of the DKIM check for the message. Possible values include: <ul><li>**pass**: Indicates the DKIM check for the message passed.</li><li>**fail (reason)**: Indicates the DKIM check for the message failed and why. For example, if the message wasn't signed or the signature wasn't verified.</li><li>**none**: Indicates that the message wasn't signed. This result might or might not indicate that the domain has a DKIM record or the DKIM record doesn't evaluate to a result.</li></ul>|
 |`dmarc`|Describes the results of the DMARC check for the message. Possible values include: <ul><li>**pass**: Indicates the DMARC check for the message passed.</li><li>**fail**: Indicates the DMARC check for the message failed.</li><li>**bestguesspass**: Indicates that no DMARC TXT record exists for the domain exists. If the domain had a DMARC TXT record, the DMARC check for the message would have passed.</li><li>**none**: Indicates that no DMARC TXT record exists for the sending domain in DNS.|

@@ -1,25 +1,20 @@
 ---
 title: Microsoft Defender for Endpoint Controlled folder access (CFA) demonstrations
 description: Demonstrates how Controlled Folder Access protects valuable data from malicious apps and threats, such as ransomware.
-keywords: Microsoft Defender for Endpoint, Controlled folder access protection, Controlled folder access demonstration
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
-ms.date: 10/21/2022
+ms.subservice: asr
+ms.date: 02/16/2024
 ---
 
 # Controlled folder access (CFA) demonstrations (block ransomware)
@@ -29,7 +24,7 @@ ms.date: 10/21/2022
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Controlled Folder Access helps you protect valuable data from malicious apps and threats, such as ransomware. All apps (any executable file, including .exe, .scr, .dll files and others) are assessed by Microsoft Defender Antivirus, which then determines if the app is malicious or safe. If the app is determined to be malicious or suspicious, then it will not be allowed to make changes to any files in any protected folder.
+Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. Microsoft Defender Antivirus assesses all apps (any executable file, including .exe, .scr, .dll files and others) and then determines if the app is malicious or safe. If the app is determined to be malicious or suspicious, then the app can't make changes to any files in any protected folder.
 
 ## Scenario requirements and setup
 
@@ -76,9 +71,11 @@ Set-ExecutionPolicy Unrestricted
 
 You can perform these manual steps instead:
 
-1. Create a folder under c: named demo, "c:\demo"
-2. Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo (we need something to encrypt)
-3. Execute PowerShell commands above
+1. Create a folder under c: named demo, "c:\demo".
+
+2. Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo (we need something to encrypt).
+
+3. Execute PowerShell commands listed earlier in this article.
 
 ### Scenario 1: CFA blocks ransomware test file
 
@@ -113,7 +110,7 @@ Set-MpPreference -EnableControlledFolderAccess Disabled
 
 #### Scenario 2 expected results
 
-- The files in c:\demo will be encrypted and you should get a warning message
+- The files in c:\demo are encrypted and you should get a warning message
 - Execute the ransomware test file again to decrypt the files
 
 ## Clean-up
@@ -124,8 +121,10 @@ Download and run this [cleanup script](https://demo.wd.microsoft.com/Content/ASR
 Set-MpPreference -EnableControlledFolderAccess Disabled
 ```
 
-Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
+Clean up c:\demo encryption by using the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## See also
+
 [Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

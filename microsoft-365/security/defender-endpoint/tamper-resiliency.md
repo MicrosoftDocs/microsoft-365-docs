@@ -1,17 +1,18 @@
 ---
 title: Tamper resiliency with Microsoft Defender for Endpoint
 description: Learn about the anti-tampering capabilities of Microsoft Defender for Endpoint.
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+manager: deniseb
 ms.reviewer: joshbregman
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.date: 07/04/2023
 ms.topic: overview
 ms.collection:
 - tier1
 - highpri
+- mde-ngp
 f1.keywords: NOCSH
 audience: ITPro
 ---
@@ -24,7 +25,7 @@ Tampering is the general term used to describe attackers attempts to impair the 
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
+- [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
 ## Organization wide tamper resiliency is built on Zero Trust
@@ -54,7 +55,7 @@ Attackers use various tampering techniques to disable Microsoft Defender for End
 |--- |---| ---|
 | [Tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) | Windows | - Terminating/suspending processes<br/>- Stopping/pausing/suspending services<br/>- Modifying registry settings including exclusions<br/>- Manipulating/hijacking DLLs<br/>- Manipulation/modification of the file system<br/>- Agent integrity |
 | [Tamper protection](/microsoft-365/security/defender-endpoint/tamperprotection-macos) | Mac | - Terminating/suspending processes<br/>- Manipulation/modification of the file system<br/>- Agent integrity|
-| [Attack surface reduction (ASR) rules](attack-surface-reduction.md) | Windows | Kernel drivers (see [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers))|
+| [Attack surface reduction rules](attack-surface-reduction.md) | Windows | Kernel drivers (see [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers))|
 | [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide) (WDAC) | Windows | Kernel drivers (see [Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules))|
 
 
@@ -64,7 +65,7 @@ One of the most common tampering techniques is to use a vulnerable driver to gai
 
 In order to prevent a driver based tampering on a single device, the device needs to be configured to block the loading of that driver before the attack.
 
-Microsoft provides several ways to keep devices well protected and up-to-date against driver based tampering.
+Microsoft provides several ways to keep devices well protected and up to date against driver based tampering.
 
 ### Broadest protection - Microsoft vulnerable driver blocklist
 
@@ -100,7 +101,9 @@ For more information, see [Tamper protection for antivirus exclusions](/microsof
 
 Attackers can be preventing from discovering existing antivirus exclusions by enabling [HideExclusionsFromLocalAdmin](/windows/client-management/mdm/defender-csp#configurationhideexclusionsfromlocaladmins).
 
-## Detecting potential tampering activity in the Microsoft 365 Defender portal
+<a name='detecting-potential-tampering-activity-in-the-microsoft-365-defender-portal'></a>
+
+## Detecting potential tampering activity in the Microsoft Defender portal
 
 When tampering is detected, an alert is raised. Some of the alert titles for tampering are:
 
@@ -128,7 +131,7 @@ When tampering is detected, an alert is raised. Some of the alert titles for tam
 - Tampering with the Microsoft Defender for Endpoint sensor
 
 
-If the [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) attack surface reduction (ASR) rule is triggered, the event is viewable in the [ASR Report](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report) and in [Advanced Hunting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize#asr-rules-advanced-hunting)
+If the [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) attack surface reduction rule is triggered, the event is viewable in the [ASR Report](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report) and in [Advanced Hunting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize#asr-rules-advanced-hunting)
 
 If [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide) (WDAC) is enabled, the [block and audit activity can be seen in Advanced Hunting](/windows/security/threat-protection/windows-defender-application-control/querying-application-control-events-centrally-using-advanced-hunting).
 

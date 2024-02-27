@@ -1,34 +1,31 @@
 ---
 title: Create and manage device tags
 description: Use device tags to group devices to capture context and enable dynamic list creation as part of an incident
-keywords: tags, device tags, device groups, groups, remediation, level, rules, aad group, role, assign, rank
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: conceptual
-ms.subservice: mde
+ms.topic: reference
+ms.custom: api
+ms.subservice: reference
 search.appverid: met150
 ms.date: 02/27/2023
 ---
 
 # Create and manage device tags
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -45,7 +42,7 @@ You can add tags on devices using the following ways:
 > [!NOTE]
 > There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.
 
-To add device tags using API, see [Add or remove device tags API](add-or-remove-machine-tags.md).
+To add device tags using API, see [Add or remove device tags API](api/add-or-remove-machine-tags.md).
 
 ## Add and manage device tags using the portal
 

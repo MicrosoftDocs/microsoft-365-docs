@@ -1,33 +1,29 @@
 ---
 title: Understand threat intelligence concepts in Microsoft Defender for Endpoint
 description: Create custom threat alerts for your organization and learn the concepts around threat intelligence in Microsoft Defender for Endpoint
-keywords: threat intelligence, alert definitions, indicators of compromise, ioc
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Understand threat intelligence concepts
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -36,7 +32,7 @@ ms.date: 12/18/2020
 
 Multiple complex malicious events, attributes, and contextual information comprise advanced cybersecurity attacks. Identifying and deciding which of these activities qualify as suspicious can be a challenging task. Your knowledge of known attributes and abnormal activities specific to your industry is fundamental in knowing when to call an observed behavior as suspicious.
 
-With Microsoft 365 Defender, you can create custom threat alerts that can help you keep track of possible attack activities in your organization. You can flag suspicious events to piece together clues and possibly stop an attack chain. These custom threat alerts will only appear in your organization and will flag events that you set it to track.
+With Microsoft Defender XDR, you can create custom threat alerts that can help you keep track of possible attack activities in your organization. You can flag suspicious events to piece together clues and possibly stop an attack chain. These custom threat alerts will only appear in your organization and will flag events that you set it to track.
 
 Before creating custom threat alerts, it's important to know the concepts behind alert definitions and indicators of compromise (IOCs) and the relationship between them.
 
@@ -47,9 +43,9 @@ Alert definitions are contextual attributes that can be used collectively to ide
 IOCs are individually known malicious events that indicate that a network or device has already been breached. Unlike alert definitions, these indicators are considered as evidence of a breach. They're often seen after an attack has already been carried out and the objective has been reached, such as exfiltration. Keeping track of IOCs is also important during forensic investigations. Although it might not be able to intervene with an attack chain, gathering these indicators can be useful in creating better defenses for possible future attacks.
 
 ## Relationship between alert definitions and IOCs
-In the context of Microsoft 365 Defender and Microsoft Defender for Endpoint, alert definitions are containers for IOCs and defines the alert, including the metadata that is raised for a specific IOC match. Various metadata is provided as part of the alert definitions. Metadata such as alert definition name of attack, severity, and description is provided along with other options.
+In the context of Microsoft Defender XDR and Microsoft Defender for Endpoint, alert definitions are containers for IOCs and defines the alert, including the metadata that is raised for a specific IOC match. Various metadata is provided as part of the alert definitions. Metadata such as alert definition name of attack, severity, and description is provided along with other options.
 
-Each IOC defines the concrete detection logic based on its type, value, and action, which determines how it's matched. It's bound to a specific alert definition that defines how a detection is displayed as an alert on the Microsoft 365 Defender console.
+Each IOC defines the concrete detection logic based on its type, value, and action, which determines how it's matched. It's bound to a specific alert definition that defines how a detection is displayed as an alert on the Microsoft Defender XDR console.
 
 Here's an example of an IOC:
 - Type: Sha1

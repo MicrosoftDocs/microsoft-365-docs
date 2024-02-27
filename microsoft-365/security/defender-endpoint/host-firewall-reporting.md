@@ -1,36 +1,33 @@
 ---
 title: Host firewall reporting in Microsoft Defender for Endpoint
-description: Host and view firewall reporting in Microsoft 365 Defender portal.
-keywords: windows defender, firewall
-ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+description: Host and view firewall reporting in Microsoft Defender portal.
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 01/31/2023
 audience: ITPro
 ms.topic: conceptual
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.subservice: mde
+author: siosulli
+ms.author: siosulli
+manager: deniseb
+ms.subservice: asr
 ms.collection: 
 - m365-security
 - tier2
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
 ---
 
 # Host firewall reporting in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you're a Global or security administrator, you can now host firewall reporting to the [Microsoft 365 Defender portal](https://security.microsoft.com). This feature enables you to view Windows firewall reporting from a centralized location.
+If you're a Global or security administrator, you can now host firewall reporting to the [Microsoft Defender portal](https://security.microsoft.com). This feature enables you to view Windows firewall reporting from a centralized location.
 
 ## What do you need to know before you begin?
 
@@ -38,7 +35,7 @@ If you're a Global or security administrator, you can now host firewall reportin
      > [!NOTE]
      > For Windows2012 R2 and Windows Server 2016 to appear in Firewall reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 - To onboard devices to the Microsoft Defender for Endpoint service, see [here](onboard-configure.md).
-- For <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> to start receiving the data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security:
+- For <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> to start receiving the data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security:
   - [Audit Filtering Platform Packet Drop](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Audit Filtering Platform Connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - Enable these events by using Group Policy Object Editor, Local Security Policy, or the auditpol.exe commands. For more information, see [here](/windows/win32/fwp/auditing-and-logging).
@@ -84,7 +81,7 @@ catch {
 > [!NOTE]
 > Make sure to follow the instructions from the section above and properly configure your devices for the early preview participation.
 
-- After enabling the events, Microsoft 365 Defender will start to monitor the data, which includes: 
+- After enabling the events, Microsoft Defender XDR will start to monitor the data, which includes: 
    - Remote IP
    - Remote Port
    - Local Port
@@ -111,7 +108,7 @@ These reports can also be accessed by going to **Reports** > **Security Report**
 
 ### From "Computers with a blocked connection" to device
 
-Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch the Microsoft 365 Defender portal in a new tab, and take you directly to the **Device Timeline** tab.
+Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch the Microsoft Defender portal in a new tab, and take you directly to the **Device Timeline** tab.
 
 :::image type="content" source="images/firewall-reporting-blocked-connection.png" alt-text="The Computers with a blocked connection page" lightbox="images/firewall-reporting-blocked-connection.png":::
 

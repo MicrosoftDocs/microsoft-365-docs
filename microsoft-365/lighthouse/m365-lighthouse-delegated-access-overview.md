@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: algreer
+ms.reviewer: taylorau
 ms.date: 04/20/2023
 audience: Admin
 ms.topic: article
@@ -24,14 +24,14 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of Delegated Access in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse provides delegated relationship insights across all your customer tenants in a single view. You can track your transition away from Delegated Administrative Privileges (DAP) and ensure your Granular Delegated Administrative Privileges (GDAP) relationships are set up as intended. Data is available for any customer tenant in Lighthouse, regardless of the customers' licensing, user count, or geographic region. To access these insights, select **Permissions** > **Delegated access** in the left navigation pane in Lighthouse. You must hold the Admin agent role in Partner Center. 
+Microsoft 365 Lighthouse provides delegated relationship insights across all your customer tenants in a single view. You can track your transition away from Delegated Administrative Privileges (DAP) and ensure your Granular Delegated Administrative Privileges (GDAP) relationships are set up as intended. Data is available for any customer tenant in Lighthouse, regardless of the customers' licensing, user count, or geographic region. To access these insights, select **Permissions** > **Delegated access** in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com). You must hold the Admin agent role in Partner Center. 
 
 ## Delegated access page
 
 From this page, you can see the status of all your customers' delegated relationships at a glance, including whether GDAP is set up, if a GDAP template has been assigned, and the next upcoming GDAP relationship expiration date for a customer tenant. In this sortable view by tenant, you can filter by the following information:
 
 - **Delegated access:** The type of delegated relationships established with a customer tenant. For example, GDAP, GDAP & DAP, DAP, or None. 
-- **GDAP template:** Created by your organization through Lighthouse, GDAP templates define the service tiers, Azure Active Directory (AAD) roles used to deploy GDAP to your tenants. To learn more about GDAP templates, see [Set up GDAP for your customers](m365-lighthouse-setup-gdap.md).
+- **GDAP template:** Created by your organization through Lighthouse, GDAP templates define the service tiers, Microsoft Entra roles used to deploy GDAP to your tenants. To learn more about GDAP templates, see [Set up GDAP for your customers](m365-lighthouse-setup-gdap.md).
 - **Security groups:** Assigned to GDAP relationships, security groups contain the users in your organization with delegated access to a customer tenant.
 - **Pending GDAP relationships:** Indicates that a GDAP relationship has been set up but has yet to be approved by the customer tenant.
 
@@ -50,5 +50,5 @@ The Delegated access page also includes the following options:
 [Overview of permissions](m365-lighthouse-overview-of-permissions.md) (article)\
 [Configure portal security](m365-lighthouse-configure-portal-security.md) (article)\
 [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) (article)\
-[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
-[Learn about groups and access rights in Azure Active Directory](/azure/active-directory/fundamentals/concept-learn-about-groups) (article)
+[Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
+[Learn about groups and access rights in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-learn-about-groups) (article)

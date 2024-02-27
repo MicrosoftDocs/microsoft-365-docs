@@ -36,7 +36,7 @@ Users can also download artifacts within a project by selecting the download ico
 
 ## Prerequisites
 
-- An Azure Active Directory or personal Microsoft account. [Login or create an account](https://signup.microsoft.com/)
+- A Microsoft Entra ID or personal Microsoft account. [Login or create an account](https://signup.microsoft.com/)
 - A Microsoft Defender Threat Intelligence (Defender TI) Premium license.
     > [!NOTE]
     > Users without a Defender TI Premium license will still be able to log into the Defender Threat Intelligence Portal and access our free Defender TI offering.

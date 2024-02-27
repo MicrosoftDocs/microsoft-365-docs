@@ -1,15 +1,11 @@
 ---
 title: Set up Microsoft Defender for Endpoint deployment
 description: Learn how to set up the deployment for Microsoft Defender for Endpoint
-keywords: deploy, setup, licensing validation, tenant configuration, network configuration
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: siosulli
-author: mjcaparas
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -19,20 +15,20 @@ ms.collection:
   - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/29/2023
 ---
 
 # Set up Microsoft Defender for Endpoint deployment
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -59,7 +55,7 @@ Checking for the license state and whether it was properly provisioned can be do
 
     On the screen, you'll see all the provisioned licenses and their current **Status**.
 
-    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="The billing licenses page" lightbox="images/atp-billing-subscriptions.png":::
+    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="The billing licenses page":::
 
 ## Cloud Service Provider validation
 
@@ -73,13 +69,13 @@ To gain access into which licenses are provisioned to your company, and to check
 
 ## Tenant Configuration
 
-Onboarding to Microsoft Defender for Endpoint is easy. From the navigation menu, select any item under the Endpoints section, or any Microsoft 365 Defender feature such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process.
+Onboarding to Microsoft Defender for Endpoint is easy. From the navigation menu, select any item under the Endpoints section, or any Microsoft Defender XDR feature such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process.
 
-From a web browser, navigate to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+From a web browser, navigate to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 ## Data center location
 
-Microsoft Defender for Endpoint will store and process data in the [same location as used by Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). If Microsoft 365 Defender has not been turned on yet, onboarding to Microsoft Defender for Endpoint will also turn on Microsoft 365 Defender and a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown on the screen.
+Microsoft Defender for Endpoint will store and process data in the [same location as used by Microsoft Defender XDR](/microsoft-365/security/defender/m365d-enable). If Microsoft Defender XDR has not been turned on yet, onboarding to Microsoft Defender for Endpoint will also turn on Microsoft Defender XDR and a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown on the screen.
 
 ## Network configuration
 
@@ -91,7 +87,7 @@ The Microsoft Defender for Endpoint sensor requires Microsoft Windows HTTP (WinH
   - Transparent proxy
   - Web Proxy Autodiscovery Protocol (WPAD)
 
-  If a Transparent proxy or WPAD has been implemented in the network topology, there is no need for special configuration settings. For more information on Microsoft Defender for Endpoint URL exclusions in the proxy, see the [Proxy Service URLs](production-deployment.md#proxy-service-urls) section in this document for the URLs allow list or on [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+  If a Transparent proxy or WPAD has been implemented in the network topology, there is no need for special configuration settings. For more information on Microsoft Defender for Endpoint URL exclusions in the proxy, see the [Proxy Service URLs](production-deployment.md#proxy-service-urls) section in this document for the URLs allow list or on [Configure device proxy and Internet connectivity settings](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 - **Manual static proxy configuration**:
   - Registry-based configuration
@@ -125,9 +121,7 @@ The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `Disabl
 
 The registry value `TelemetryProxyServer` takes the following string format:
 
-```text
-<server name or ip>:<port>
-```
+`<server name or ip>:<port>`
 
 For example: 10.0.0.6:8080
 
@@ -148,7 +142,7 @@ Use netsh to configure a system-wide static proxy.
 
 2. Enter the following command and press **Enter**:
 
-   ```PowerShell
+   ```cmd
    netsh winhttp set proxy <proxy>:<port>
    ```
 
@@ -166,15 +160,11 @@ If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender for 
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. Ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-<br>
 
-****
-
-
-|Spreadsheet of domains list| Description|
-|---|---|
-|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+| Spreadsheet of domains list  | Description  |
+|---------|---------|
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <br/><br/> [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx). |
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <br/><br/> [Download the spreadsheet here](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx). |
 
 ## Next step
 

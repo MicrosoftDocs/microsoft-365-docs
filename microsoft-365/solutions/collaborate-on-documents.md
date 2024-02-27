@@ -2,7 +2,7 @@
 title: Collaborate with guests on a document (IT Admins)
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 07/18/2023
 audience: ITPro
 ms.topic: article
@@ -34,17 +34,17 @@ This video shows the configuration steps described in this document.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
-## Azure external collaboration settings
+## Microsoft Entra ID external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest-sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Microsoft Entra ID](/azure/active-directory/external-identities/delegate-invitations). If guest-sharing is disabled or restricted in Microsoft Entra ID, this setting overrides any sharing settings that you configure in Microsoft 365.
 
 Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Microsoft Entra Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 To set external collaboration settings
 
-1. Log in to Azure Active Directory at [https://entra.microsoft.com/](https://entra.microsoft.com/).
+1. Log in to Microsoft Entra ID at [https://entra.microsoft.com/](https://entra.microsoft.com/).
 1. In the left navigation pane, expand **External identities**.
 1. Select **External collaboration settings**.
 1. Ensure that either **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** or **Anyone in the organization can invite guest users including guests and non-admins** is selected.
@@ -52,7 +52,7 @@ To set external collaboration settings
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
-If you work with guests from multiple organizations, you may want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
+If you work with guests from multiple organizations, you might want to restrict their ability to access directory data. This prevents them from seeing who else is a guest in the directory. To do this, under **Guest user access restrictions**, select **Guest users have limited access to properties and membership of directory objects settings** or **Guest user access is restricted to properties and memberships of their own directory objects**.
 
 ## SharePoint organization-level sharing settings
 
@@ -133,4 +133,4 @@ Guest-sharing settings are now configured; so users can now share files and fold
 
 [Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
 
-[SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview)

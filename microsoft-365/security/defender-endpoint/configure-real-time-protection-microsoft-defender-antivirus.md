@@ -1,19 +1,19 @@
 ---
 title: Enable and configure Microsoft Defender Antivirus always-on protection
 description: Enable and configure Microsoft Defender Antivirus real-time protection features such as behavior monitoring, heuristics, and machine learning
-keywords: antivirus, real-time protection, rtp, machine learning, behavior monitoring, heuristics
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.topic: conceptual
 ms.date: 05/24/2023
-manager: dansimp
+manager: deniseb
 ms.custom: nextgen
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 

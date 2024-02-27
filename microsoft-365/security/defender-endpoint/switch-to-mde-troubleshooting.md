@@ -1,11 +1,11 @@
 ---
 title: Troubleshooting issues when moving to Microsoft Defender for Endpoint
 description: Learn how to troubleshoot issues when you migrate to Microsoft Defender for Endpoint.
-ms.service: microsoft-365-security
-ms.author: deniseb
-author: denisebmsft
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365solution-scenario
@@ -16,7 +16,7 @@ ms.topic: conceptual
 ms.custom: migrationguides
 ms.date: 04/24/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ---
 
@@ -25,7 +25,7 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 This article provides troubleshooting information for security administrators who are experiencing issues when moving from a non-Microsoft endpoint protection solution to Microsoft Defender for Endpoint.
 

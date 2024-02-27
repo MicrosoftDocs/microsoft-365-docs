@@ -2,9 +2,9 @@
 title: Create a model on a local SharePoint site with Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/01/2022
+ms.date: 01/16/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

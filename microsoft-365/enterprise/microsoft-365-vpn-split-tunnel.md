@@ -3,7 +3,7 @@ title: "Overview: VPN split tunneling for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 3/3/2022
+ms.date: 12/20/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -16,6 +16,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365initiative-coredeploy
+- must-keep
 f1.keywords:
 - NOCSH
 description: "Overview of VPN split tunneling with Microsoft 365 to optimize connectivity for remote users."
@@ -25,7 +26,7 @@ description: "Overview of VPN split tunneling with Microsoft 365 to optimize con
 
 >[!NOTE]
 >This article is part of a set of articles that address Microsoft 365 optimization for remote users.
-
+>
 >- For detailed guidance on implementing VPN split tunneling, see [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
 >- For a detailed list of VPN split tunneling scenarios, see [Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md).
 >- For guidance on securing Teams media traffic in VPN split tunneling environments, see [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
@@ -44,7 +45,7 @@ _Figure 1: A traditional Forced Tunnel VPN solution._
 
 This problem has been growing for many years, with many customers reporting a significant shift of network traffic patterns. Traffic that used to stay on premises now connects to external cloud endpoints. Many Microsoft customers report that previously, around 80% of their network traffic was to some internal source (represented by the dotted line in the above diagram). In 2020 that number decreased to around 20% or lower as they have shifted major workloads to the cloud. These trends aren't uncommon with other enterprises. Over time, as the cloud journey progresses, the above model becomes increasingly cumbersome and unsustainable, preventing an organization from being agile as they move into a cloud-first world.
 
-The worldwide COVID-19 crisis escalated this problem to require immediate remediation. The need to ensure employee safety has generated unprecedented demands on enterprise IT to support work-from-home productivity at a massive scale. Microsoft 365 is well positioned to help customers fulfill that demand, but high concurrency of users working from home generates a large volume of Microsoft 365 traffic which, if routed through forced tunnel VPN and on-premises network perimeters, causes rapid saturation and runs VPN infrastructure out of capacity. In this new reality, using VPN to access Microsoft 365 is no longer just a performance impediment, but a hard wall that not only impacts Microsoft 365 but critical business operations that still have to rely on the VPN to operate.
+The worldwide COVID-19 crisis escalated this problem to require immediate remediation. The need to ensure employee safety generated unprecedented demands on enterprise IT to support work-from-home productivity at a massive scale, which is still true in the post-crisis era. Microsoft 365 is well positioned to help customers fulfill that demand, but high concurrency of users working from home generates a large volume of Microsoft 365 traffic which, if routed through forced tunnel VPN and on-premises network perimeters, causes rapid saturation and runs VPN infrastructure out of capacity. In this post-crisis reality, using VPN to access Microsoft 365 is no longer just a performance impediment, but a hard wall that not only impacts Microsoft 365 but critical business operations that still have to rely on the VPN to operate.
 
 Microsoft has been working closely with customers and the wider industry to provide effective, modern solutions to these problems from within our own services, and to align with industry best practice. [Connectivity principles](./microsoft-365-network-connectivity-principles.md) for the Microsoft 365 service have been designed to work efficiently for remote users while still allowing an organization to maintain security and control over their connectivity. These solutions can also be implemented quickly with limited work yet achieve a significant positive effect on the problems outlined above.
 
@@ -89,7 +90,7 @@ _Figure 2: A common VPN solution for remote users where all traffic is forced ba
 
 As organizations move data and applications to the cloud, this model has begun to become less effective as it quickly becomes cumbersome, expensive, and unscalable, significantly impacting network performance and efficiency of users and restricting the ability of the organization to adapt to changing needs. Numerous Microsoft customers have reported that a few years ago 80% of network traffic was to an internal destination, but in 2020 80% plus of traffic connects to an external cloud-based resource.
 
-The COVID-19 crisis has aggravated this problem to require immediate solutions for the vast majority of organizations. Many customers have found that the forced VPN model is not scalable or performant enough for 100% remote work scenarios such as that which this crisis has necessitated. Rapid solutions are required for these organizations to continue to operate efficiently.
+The COVID-19 crisis aggravated this problem to require immediate solutions for the vast majority of organizations. Many customers have found that the forced VPN model is not scalable or performant enough for 100% remote work scenarios such as that which this crisis has necessitated. Rapid solutions are required for these organizations to operate efficiently.
 
 For the Microsoft 365 service, Microsoft has designed the connectivity requirements for the service with this problem squarely in mind, where a focused, tightly controlled and relatively static set of service endpoints can be optimized very simply and quickly so as to deliver high performance for users accessing the service, and reducing the burden on the VPN infrastructure so it can be used by traffic that still requires it.
 
@@ -135,10 +136,10 @@ To help you prevent the accidental disclosure of sensitive information, Microsof
 
 ### How do I evaluate and maintain control of the user's authentication when they are connecting directly?
 
-In addition to the tenant restrictions feature noted in Q1, [conditional access policies](/azure/active-directory/conditional-access/overview) can be applied to dynamically assess the risk of an authentication request and react appropriately. Microsoft recommends the [Zero Trust model](https://www.microsoft.com/security/zero-trust?rtc=1) is implemented over time and we can use Azure AD conditional access policies to maintain control in a mobile and cloud-first world. Conditional access policies can be used to make a real-time decision on whether an authentication request is successful based on numerous factors such as:
+In addition to the tenant restrictions feature noted in Q1, [conditional access policies](/azure/active-directory/conditional-access/overview) can be applied to dynamically assess the risk of an authentication request and react appropriately. Microsoft recommends the [Zero Trust model](https://www.microsoft.com/security/zero-trust?rtc=1) is implemented over time and we can use Microsoft Entra Conditional Access policies to maintain control in a mobile and cloud-first world. Conditional access policies can be used to make a real-time decision on whether an authentication request is successful based on numerous factors such as:
 
 - Device, is the device known/trusted/Domain joined?
-- IP – is the authentication request coming from a known corporate IP address? Or from a country we do not trust?
+- IP – is the authentication request coming from a known corporate IP address? Or from a country/region we do not trust?
 - Application – Is the user authorized to use this application?
 
 We can then trigger policy such as approve, trigger MFA or block authentication based on these policies.
@@ -165,7 +166,7 @@ Port 80 is only used for things like redirect to a port 443 session, no customer
 
 ### Does this advice apply to users in China using a worldwide instance of Microsoft 365?
 
-**No**, it does not. The one caveat to the above advice is users in the PRC who are connecting to a worldwide instance of Microsoft 365. Due to the common occurrence of cross border network congestion in the region, direct Internet egress performance can be variable. Most customers in the region operate using a VPN to bring the traffic into the corporate network and utilize their authorized MPLS circuit or similar to egress outside the country via an optimized path. This is outlined further in the article [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md).
+**No**, it does not. The one caveat to the above advice is users in the PRC who are connecting to a worldwide instance of Microsoft 365. Due to the common occurrence of cross border network congestion in the region, direct Internet egress performance can be variable. Most customers in the region operate using a VPN to bring the traffic into the corporate network and utilize their authorized MPLS circuit or similar to egress outside the country/region via an optimized path. This is outlined further in the article [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md).
 
 ### Does split-tunnel configuration work for Teams running in a browser?
 

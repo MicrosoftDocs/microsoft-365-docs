@@ -1,34 +1,29 @@
 ---
 title: Microsoft Defender for Endpoint - Mobile Threat Defense
-ms.reviewer: 
+ms.reviewer: tdoucette, sunasing
 description: Overview of Mobile Threat Defense in Microsoft Defender for Endpoint
-keywords: mobile, defender, Microsoft Defender for Endpoint, ios, mtd, android, security
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: sunasing
-author: sunasing
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-ms.date: 12/07/2022
-manager: dansimp
+ms.date: 01/28/2024
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint - Mobile Threat Defense
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -40,7 +35,7 @@ Microsoft Defender for Endpoint on Android and iOS provides the below key capabi
 
 |Capability|Description|
 |---|---|
-|Web Protection|Anti-phishing, blocking unsafe network connections, and support for custom indicators.|
+|Web Protection|Anti-phishing, blocking unsafe network connections, and support for custom indicators for URLs and domains. (File and IP indicators are not currently supported.)|
 |Malware Protection (Android-only)|Scanning for malicious apps.|
 |Jailbreak Detection (iOS-only)|Detection of jailbroken devices.|
 |Microsoft Defender Vulnerability Management (MDVM) |Vulnerability assessment of onboarded mobile devices. Includes OS and Apps vulnerabilities assessment for both Android and iOS. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about Microsoft Defender Vulnerability Management in Microsoft Defender for Endpoint.|

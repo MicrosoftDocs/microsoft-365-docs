@@ -1,17 +1,13 @@
 ---
 title: Device discovery overview
-description: Learn how to leverage endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
-keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+description: Learn how to leverage endpoint discovery in Microsoft Defender XDR to find unmanaged devices in your network
+ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: mjcaparas
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -20,19 +16,18 @@ ms.collection:
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 05/11/2023
 ---
 
 # Device discovery overview
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming.
 
@@ -96,11 +91,9 @@ Network devices aren't managed as standard endpoints, as Defender for Endpoint d
 
 For more information, see [Network devices](network-devices.md).
 
-## Device discovery Integrations
+## Device discovery Integration
 
-To address the challenge of gaining enough visibility to locate, identify, and secure your complete OT/IOT asset inventory Microsoft Defender for Endpoint now supports the following integrations:
-
-- **Corelight**: Microsoft has partnered with Corelight to receive data from Corelight network appliances. This provides Microsoft 365 Defender with increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks. for more information, see [Enable Corelight data integration](corelight-integration.md).
+To address the challenge of gaining enough visibility to locate, identify, and secure your complete OT/IOT asset inventory Microsoft Defender for Endpoint now supports the following integration:
 
 - **Microsoft Defender for IoT**: This integration combines Microsoft Defender for Endpoint's device discovery capabilities, with the agentless monitoring capabilities of Microsoft Defender for IoT, to secure enterprise IoT devices connected to an IT network (for example, Voice over Internet Protocol (VoIP), printers, and smart TVs). For more information, see [Enable Enterprise IoT security with Defender for Endpoint](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint/).
 

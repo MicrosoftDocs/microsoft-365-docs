@@ -2,16 +2,15 @@
 title: "Protect yourself against phishing and other attacks"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 04/18/2023
+ms.service: microsoft-365-business
+ms.date: 10/26/2023
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - highpri
@@ -32,8 +31,8 @@ In addition to the protection Microsoft 365 Business Premium offers against atta
 
 - **Spam or junk mail**. There are many reasons you might receive junk e-mail and not all junk mail is the same. However, you can reduce what gets through to you, and thus reduce the risks of attacks, by filtering out junk mail.
 - **Phishing**. A phishing scam is an email that seems legitimate but is an attempt to get your personal information or steal your money.
-- **Spoofing**. Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself. 
-- **Malware** is malicious software that can be installed on your computer, usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
+- **Spoofing**. Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself.
+- **Malware** is malicious software that can be installed on your computer after you've selected a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them.
 
 ## Best practices
 
@@ -52,7 +51,7 @@ For more information, see [reporting junk and phishing emails](https://support.o
 ### Avoid phishing
 
 - Never reply to an email that asks you to send personal or account information.
-- If you receive an email that looks suspicious or asks you for this type of information, never click links that supposedly take you to a company website
+- If you receive an email that looks suspicious or asks you for this type of information, never select links that supposedly take you to a company website
 - Never open any file attached to a suspicious-looking email.
 - If the email appears to come from a company, contact the company's customer service via phone or web browser to see if the email is legitimate.
 - Search the web for the email subject line followed by the word hoax to see if anyone else has reported this scam.
@@ -76,7 +75,7 @@ Learn more about how to:
 - [Keep your files and communications safe with Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
 
 - [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
-  
-## Next objective
 
-Once you've completed this mission objective, learn about how to [send encrypted email](m365bp-use-labels-encryption.md). 
+## Next step
+
+Learn how to [send encrypted email](m365bp-use-labels-encryption.md).

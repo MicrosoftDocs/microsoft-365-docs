@@ -1,11 +1,10 @@
 ---
 title: View the results of an automated investigation in Microsoft 365
-keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation,  remediation, actions
 f1.keywords: 
 - NOCSH
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: chrisda
+ms.author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -20,17 +19,17 @@ ms.date: 06/09/2023
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Details and results of an automated investigation in Microsoft 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-When an [automated investigation](air-about.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
+When an [automated investigation](air-about.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
 
 > [!TIP]
-> Check out the new, unified investigation page in the Microsoft 365 Defender portal. To learn more, see [(NEW!) Unified investigation page](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Check out the new, unified investigation page in the Microsoft Defender portal. To learn more, see [(NEW!) Unified investigation page](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## Investigation status
 
@@ -41,7 +40,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 |**Starting**|The investigation has been triggered and waiting to start running.|
 |**Running**|The investigation process has started and is underway. This state also occurs when [pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) are approved.|
 |**No Threats Found**|The investigation has finished and no threats (user account, email message, URL, or file) were identified. <p> **TIP**: If you suspect something was missed (such as a false negative), you can take action using [Threat Explorer](threat-explorer-about.md).|
-|**Partially Investigated**|The automated investigation found issues, but there are no specific remediation actions to resolve those issues. <p> The **Partially Investigated** status can occur when some type of user activity was identified but no cleanup actions are available. Examples include any of the following user activities: <ul><li>A [data loss prevention](../../compliance/dlp-learn-about-dlp.md) event</li><li>An email sending anomaly</li><li>Sent malware</li><li>Sent phish</li></ul> <br/> **Note**: This **Partially Investigated** status used to be labeled as **Threats Found**. <p> The investigation found no malicious URLs, files, or email messages to remediate, and no mailbox activity to fix, such as turning off forwarding rules or delegation. <p> **TIP**: If you suspect something was missed (such as a false negative), you can investigate and take action using [Threat Explorer](threat-explorer-about.md)|
+|**Partially Investigated**|The automated investigation found issues, but there are no specific remediation actions to resolve those issues. <p> The **Partially Investigated** status can occur when some type of user activity was identified but no cleanup actions are available. Examples include any of the following user activities: <ul><li>A [data loss prevention](/purview/dlp-learn-about-dlp) event</li><li>An email sending anomaly</li><li>Sent malware</li><li>Sent phish</li></ul> <br/> **Note**: This **Partially Investigated** status used to be labeled as **Threats Found**. <p> The investigation found no malicious URLs, files, or email messages to remediate, and no mailbox activity to fix, such as turning off forwarding rules or delegation. <p> **TIP**: If you suspect something was missed (such as a false negative), you can investigate and take action using [Threat Explorer](threat-explorer-about.md)|
 |**Terminated By System**|The investigation stopped. An investigation can stop for several reasons: <ul><li>The investigation's pending actions expired. Pending actions time out after awaiting approval for one week</li><li>There are too many actions. For example, if there are too many users clicking on malicious URLs, it can exceed the investigation's ability to run all the analyzers, so the investigation halts</li></ul> <br/> **TIP**: If an investigation halts before actions were taken, try using [Threat Explorer](threat-explorer-about.md) to find and address threats.|
 |**Pending Action**|The investigation has found a threat, such as a malicious email, a malicious URL, or a risky mailbox setting, and an action to remediate that threat is [awaiting approval](air-review-approve-pending-completed-actions.md). <p> The **Pending Action** state is triggered when any threat with a corresponding action is found. However, the list of pending actions can increase as an investigation runs. View investigation details to see if other items are still pending completion.|
 |**Remediated**|The investigation finished and all remediation actions were approved (noted as fully remediated). <p> **NOTE**: Approved remediation actions can have errors that prevent the actions from being taken. Regardless of whether remediation actions are successfully completed, the investigation status doesn't change. View investigation details.|
@@ -52,7 +51,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 ## View details of an investigation
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Go to the Microsoft Defender portal (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Actions & submissions** \> **Action center**.
 3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
 4. In the flyout pane, select **Open investigation page**.
@@ -62,7 +61,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [alert policies that trigger automated investigations](air-about.md#which-alert-policies-trigger-automated-investigations).
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Go to the Microsoft Defender portal (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Action center**.
 3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
 4. In the flyout pane, select **Open investigation page**.

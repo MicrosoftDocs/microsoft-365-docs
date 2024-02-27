@@ -1,12 +1,12 @@
 ---
 title: Configure and validate Microsoft Defender Antivirus network connections
 description: Configure and test your connection to the Microsoft Defender Antivirus cloud protection service.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
-author: denisebmsft
-manager: dansimp
-ms.author: deniseb
+author: siosulli
+manager: deniseb
+ms.author: siosulli
 ms.topic: conceptual
 ms.custom: nextgen
 ms.date: 06/26/2023
@@ -14,6 +14,7 @@ ms.reviewer: mkaminska; pahuijbr
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -27,13 +28,6 @@ search.appverid: met150
 
 **Platforms**
 - Windows
-
-> [!TIP]
-> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
->
-> ```https
-> https://github.com/MicrosoftDocs/microsoft-365-docs/commits/public/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus.md.atom
-> ```
 
 To ensure Microsoft Defender Antivirus cloud-delivered protection works properly, your security team must configure your network to allow connections between your endpoints and certain Microsoft servers. This article lists connections that must be allowed for using the firewall rules. It also provides instructions for validating your connection. Configuring your protection properly will ensure you receive the best value from your cloud-delivered protection services.
 
@@ -62,7 +56,6 @@ Make sure that there are no firewall or network filtering rules denying access t
 |Security intelligence updates Alternate Download Location (ADL)<br/>This is an alternate location for Microsoft Defender Antivirus Security intelligence updates, if the installed Security intelligence is out of date (Seven or more days behind).|`*.download.microsoft.com`<br/>`*.download.windowsupdate.com` (Port 80 is required)<br/>`go.microsoft.com` (Port 80 is required)<br/>`https://www.microsoft.com/security/encyclopedia/adlpackages.aspx` <br/>`https://definitionupdates.microsoft.com/download/DefinitionUpdates/`<br/>`https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 |Malware submission storage<br/>This is an upload location for files submitted to Microsoft via the Submission form or automatic sample submission.|`ussus1eastprod.blob.core.windows.net`<br/>`ussus2eastprod.blob.core.windows.net`<br/>`ussus3eastprod.blob.core.windows.net`<br/>`ussus4eastprod.blob.core.windows.net`<br/>`wsus1eastprod.blob.core.windows.net`<br/>`wsus2eastprod.blob.core.windows.net`<br/>`ussus1westprod.blob.core.windows.net`<br/>`ussus2westprod.blob.core.windows.net`<br/>`ussus3westprod.blob.core.windows.net`<br/>`ussus4westprod.blob.core.windows.net`<br/>`wsus1westprod.blob.core.windows.net`<br/>`wsus2westprod.blob.core.windows.net`<br/>`usseu1northprod.blob.core.windows.net`<br/>`wseu1northprod.blob.core.windows.net`<br/>`usseu1westprod.blob.core.windows.net`<br/>`wseu1westprod.blob.core.windows.net`<br/>`ussuk1southprod.blob.core.windows.net`<br/>`wsuk1southprod.blob.core.windows.net`<br/>`ussuk1westprod.blob.core.windows.net`<br/>`wsuk1westprod.blob.core.windows.net`|
 |Certificate Revocation List (CRL)<br/>Windows use this list while creating the SSL connection to MAPS for updating the CRL.|`http://www.microsoft.com/pkiops/crl/`<br/>`http://www.microsoft.com/pkiops/certs`<br/>`http://crl.microsoft.com/pki/crl/products`<br/>`http://www.microsoft.com/pki/certs`|
-|Symbol Store <p>Microsoft Defender Antivirus uses the Symbol Store to restore certain critical files during the remediation flows.|`https://msdl.microsoft.com/download/symbols`|
 |Universal GDPR Client<br/>Windows use this client to send the client diagnostic data.<br/><br/>Microsoft Defender Antivirus uses General Data Protection Regulation for product quality, and monitoring purposes.|The update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:<br/>`vortex-win.data.microsoft.com`<br/>`settings-win.data.microsoft.com`|
 
 ## Validate connections between your network and the cloud

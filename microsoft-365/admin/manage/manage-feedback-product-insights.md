@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/26/2021
+ms.date: 11/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -15,10 +15,6 @@ ms.collection:
 - scotvorg
 - Adm_O365
 ms.custom: AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Use Net promoter scores (NPS) from your end users to see how they feel about Microsoft products and services."
 ---
 
@@ -137,9 +133,9 @@ Verbatim Recall- 94%
 
 Charts are filtered by the NPS rating as follows:
 
-- Detractors are unhappy customers who are unlikely to recommend your product or service.
-- Passives are customers that are satisfied with the service but not enough to recommend your product or service.
-- Promoters- Happy customers that are loyal, enthusiastic and are likely to recommend your product or service.
+- Detractors are unhappy customers who are unlikely to recommend your product or service. For example, 1-3 on the 5 point scale.
+- Passives are customers that are satisfied with the service but not enough to recommend your product or service. For example, 4 on the 5 point scale.
+- Promoters- Happy customers that are loyal, enthusiastic and are likely to recommend your product or service. For example, 5 on the 5 point scale.
 
 :::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: Chart showing how likely are you to recommend an app to a friend or colleague" lightbox="../../media/how-likely-recommend.png":::
 

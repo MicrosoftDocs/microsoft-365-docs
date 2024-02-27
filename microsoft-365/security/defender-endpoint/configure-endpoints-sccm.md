@@ -1,15 +1,11 @@
 ---
 title: Onboard Windows devices using Configuration Manager
 description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
-keywords: onboard devices using sccm, device management, configure Microsoft Defender for Endpoint devices
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -17,19 +13,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 09/22/2021
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ---
 
 # Onboard Windows devices using Configuration Manager
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Configuration Manager current branch
 - System Center 2012 R2 Configuration Manager
 
@@ -63,7 +59,7 @@ For more information, see [Configure Detection Methods in System Center 2012 R2 
 
 ### Configure sample collection settings
 
-For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
+For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender XDR to submit a file for deep analysis.
 
 > [!NOTE]
 > These configuration settings are typically done through Configuration Manager.
@@ -88,6 +84,58 @@ Where Key type is a D-WORD. Possible values are:
 The default value in case the registry key doesn't exist is 1.
 
 For more information about System Center Configuration Manager Compliance, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+
+### Onboard Windows devices using Microsoft Configuration Manager
+
+### Collection creation
+
+To onboard Windows devices with Microsoft Configuration Manager, the deployment can target an existing collection or a new collection can be created for testing.
+
+Onboarding using tools such as Group Policy or a manual method doesn't install any agents on the system.
+
+Within the Microsoft Configuration Manager console, the onboarding process will be configured as part of the compliance settings within the console.
+
+Any system that receives this required configuration maintains that configuration for as long as the Configuration Manager client continues to receive this policy from the management point.
+
+Follow these steps to onboard endpoints using Microsoft Configuration Manager:
+
+1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.
+
+    :::image type="content" source="images/configmgr-device-collections.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard1." lightbox="images/configmgr-device-collections.png":::
+
+2. Select and hold (or right-click) **Device Collection** and select **Create Device Collection**.
+
+    :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard2." lightbox="images/configmgr-create-device-collection.png":::
+
+3. Provide a **Name** and **Limiting Collection**, then select **Next**.
+
+    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard3." lightbox="images/configmgr-limiting-collection.png":::
+
+4. Select **Add Rule** and choose **Query Rule**.
+
+    :::image type="content" source="images/configmgr-query-rule.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard4." lightbox="images/configmgr-query-rule.png":::
+
+5. Select **Next** on the **Direct Membership Wizard** and then select **Edit Query Statement**.
+
+    :::image type="content" source="images/configmgr-direct-membership.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard5." lightbox="images/configmgr-direct-membership.png":::
+
+6. Select **Criteria** and then choose the star icon.
+
+    :::image type="content" source="images/configmgr-criteria.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard6." lightbox="images/configmgr-criteria.png":::
+
+7. Keep criterion type as **simple value**, choose whereas **Operating System - build number**, operator as **is greater than or equal to** and value **14393**, and select **OK**.
+
+    :::image type="content" source="images/configmgr-simple-value.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard7." lightbox="images/configmgr-simple-value.png":::
+
+8. Select **Next** and **Close**.
+
+    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard8." lightbox="images/configmgr-membership-rules.png":::
+
+9. Select **Next**.
+
+    :::image type="content" source="images/configmgr-confirm.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard9." lightbox="images/configmgr-confirm.png":::
+
+After completing this task you have a device collection with all the Windows endpoints in the environment.
 
 ## Other recommended configuration settings
 
@@ -121,7 +169,7 @@ Configure all available rules to Audit.
 > [!NOTE]
 > Blocking these activities may interrupt legitimate business processes. The best approach is setting everything to audit, identifying which ones are safe to turn on, and then enabling those settings on endpoints which do not have false positive detections.
 
-For deploying Antivirus (AV) and Attack Surface Reduction (ASR) policies through Microsoft Configuration Manager (SCCM) follow the steps:
+For deploying Microsoft Defender Antivirus and attack surface reduction policies through Microsoft Configuration Manager (SCCM) follow the steps:
 
 - Enable Endpoint Protection and configure custom client settings.
 - Install the Endpoint Protection client from a command prompt.
@@ -176,7 +224,7 @@ After you install the Endpoint Protection client on your reference computer, ver
 
 1. On the reference computer, open **System Center Endpoint Protection** from the Windows notification area.
 1. On the **Home** tab of the **System Center Endpoint Protection** dialog box, verify that **Real-time protection** is set to **On.**
-1. Verify that **Up-to-date** is displayed for **Virus and spyware definitions.**
+1. Verify that **up to date** is displayed for **Virus and spyware definitions.**
 1. To make sure that your reference computer is ready for imaging, under **Scan options,** select **Full,** and then click **Scan now.**
 
 
@@ -207,7 +255,7 @@ If you use Microsoft Configuration Manager current branch, see [Create an offboa
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
-1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \>  **Offboarding**.
     1. Select Windows 10 or Windows 11 as the operating system.
     1. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.

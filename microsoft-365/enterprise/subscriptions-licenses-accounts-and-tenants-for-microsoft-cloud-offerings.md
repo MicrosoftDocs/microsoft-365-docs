@@ -3,7 +3,7 @@ title: "Subscriptions, licenses, accounts, and tenants for Microsoft's cloud off
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 08/23/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -75,13 +75,13 @@ Some virtual machine images have trial versions of applications installed and ne
   
 ### User accounts
 
-User accounts for all of Microsoft's cloud offerings are stored in an Azure Active Directory (Azure AD) tenant, which contains user accounts and groups. An Azure AD tenant can be synchronized with your existing Active Directory Domain Services (AD DS) accounts using Azure AD Connect, a Windows server-based service. This is known as directory synchronization.
+User accounts for all of Microsoft's cloud offerings are stored in a Microsoft Entra tenant, which contains user accounts and groups. A Microsoft Entra tenant can be synchronized with your existing Active Directory Domain Services (AD DS) accounts using Microsoft Entra Connect, a Windows server-based service. This is known as directory synchronization.
   
-Figure 3 shows an example of multiple subscriptions of an organization using a common Azure AD tenant that contains the organization's accounts.
+Figure 3 shows an example of multiple subscriptions of an organization using a common Microsoft Entra tenant that contains the organization's accounts.
   
-**Figure 3: Multiple subscriptions of an organization that use the same Azure AD tenant**
+**Figure 3: Multiple subscriptions of an organization that use the same Microsoft Entra tenant**
 
-![An example organization with multiple subscriptions all using the same Azure AD tenant.](../media/Subscriptions/Subscriptions-Fig3.png)
+![An example organization with multiple subscriptions all using the same Microsoft Entra tenant.](../media/Subscriptions/Subscriptions-Fig3.png)
   
 ### Tenants
 
@@ -89,7 +89,7 @@ For SaaS cloud offerings, the tenant is the regional location that houses the se
   
 Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
   
-An Azure AD tenant is a specific instance of Azure AD containing accounts and groups. Paid or trial subscriptions of Microsoft 365 or Dynamics 365 include a free Azure AD tenant. This Azure AD tenant does not include other Azure services and is not the same as an Azure trial or paid subscription.
+A Microsoft Entra tenant is a specific instance of Microsoft Entra ID containing accounts and groups. Paid or trial subscriptions of Microsoft 365 or Dynamics 365 include a free Microsoft Entra tenant. This Microsoft Entra tenant does not include other Azure services and is not the same as an Azure trial or paid subscription.
   
 ### Summary of the hierarchy
 
@@ -101,7 +101,7 @@ Here is a quick recap:
     
   - Licenses can be assigned to individual user accounts
     
-  - User accounts are stored in an Azure AD tenant
+  - User accounts are stored in a Microsoft Entra tenant
     
 Here is an example of the relationship of organizations, subscriptions, licenses, and user accounts:
   
@@ -115,15 +115,15 @@ Here is an example of the relationship of organizations, subscriptions, licenses
     
     Multiple Azure subscriptions.
     
-  - The organization's user accounts in a common Azure AD tenant.
+  - The organization's user accounts in a common Microsoft Entra tenant.
     
-Multiple Microsoft cloud offering subscriptions can use the same Azure AD tenant that acts as a common identity provider. A central Azure AD tenant that contains the synchronized accounts of your on-premises AD DS provides cloud-based Identity as a Service (IDaaS) for your organization. 
+Multiple Microsoft cloud offering subscriptions can use the same Microsoft Entra tenant that acts as a common identity provider. A central Microsoft Entra tenant that contains the synchronized accounts of your on-premises AD DS provides cloud-based Identity as a Service (IDaaS) for your organization. 
   
 **Figure 4: Synchronized on-premises accounts and IDaaS for an organization**
 
 ![Identity as a Service (IaaS) IDaaS for your organization.](../media/Subscriptions/Subscriptions-Fig4.png)
   
-Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud offerings, Azure PaaS apps, and virtual machines in Azure IaaS that use Azure AD Domain Services. Azure AD Connect synchronizes the on-premises AD DS forest with the Azure AD tenant.
+Figure 4 shows how a common Microsoft Entra tenant is used by Microsoft's SaaS cloud offerings, Azure PaaS apps, and virtual machines in Azure IaaS that use Microsoft Entra Domain Services. Microsoft Entra Connect synchronizes the on-premises AD DS forest with the Microsoft Entra tenant.
   
 ## Combining subscriptions for multiple Microsoft cloud offerings
 
@@ -143,17 +143,17 @@ An easy way to add subscriptions to your organization for Microsoft SaaS-based s
     
 3. On the **Purchase services** page, purchase your new subscriptions.
     
-The admin center assigns the organization and Azure AD tenant of your Microsoft 365 subscription to the new subscriptions for SaaS-based cloud offerings.
+The admin center assigns the organization and Microsoft Entra tenant of your Microsoft 365 subscription to the new subscriptions for SaaS-based cloud offerings.
   
-To add an Azure subscription with the same organization and Azure AD tenant as your Microsoft 365 subscription:
+To add an Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription:
   
-1. Sign in to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) with your Microsoft 365 **Azure AD DC admin**, or **Global admin** account.
+1. Sign in to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) with your Microsoft 365 **Microsoft Entra DC admin**, or **Global admin** account.
     
 2. In the left navigation, click **Subscriptions**, and then click **Add**.
     
 3. On the **Add subscription** page, select an offer and complete the payment information and agreement.
     
-If you purchased Azure and Microsoft 365 subscriptions separately and want to access the Microsoft 365 Azure AD tenant from your Azure subscription, see the instructions in [Add an existing Azure subscription to your Azure Active Directory tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+If you purchased Azure and Microsoft 365 subscriptions separately and want to access the Microsoft 365 Microsoft Entra tenant from your Azure subscription, see the instructions in [Add an existing Azure subscription to your Microsoft Entra tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## See also
 

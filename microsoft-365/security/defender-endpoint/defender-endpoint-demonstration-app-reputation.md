@@ -1,40 +1,36 @@
 ---
 title: Microsoft Defender for Endpoint SmartScreen app reputation demonstration
 description: Test how Microsoft Defender for Endpoint SmartScreen helps you identify phishing and malware websites
-keywords: Microsoft Defender for Endpoint, phishing website, malware website, app reputation, 
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp 
-author: dansimp 
+ms.service: defender-endpoint
+ms.author: siosulli 
+author: siosulli 
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
-ms.date: 10/21/2022
+ms.date: 01/15/2024
 ---
 
 # SmartScreen app reputation demonstration
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Test how Microsoft Defender for Endpoint SmartScreen helps you identify phishing and malware websites based on App reputation.
 
 ## Scenario requirements and setup
 
-- Windows 10
-- Internet Explorer or Microsoft Edge browser required
+- Windows 11 or Windows 10
+- Windows Server 2022 or Windows Server 2019 or Windows Server 2016 or Windows Server 2012 R2 or Windows Server 2008 R2 
+- Microsoft Edge or Internet Explorer browser required
 - To turn ON/OFF, go to **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **App & browser control** > **Check apps and files**
 
 ## Scenario Demos
@@ -65,9 +61,9 @@ This download is known malware; SmartScreen should block this program from runni
 
 - [Known malware](https://demo.smartscreen.msft.net/download/known/knownmalicious.exe)
 
-  Launching this link should render a message similar to the following:
+Launching this link should render a message similar to the following:
 
-  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="Screenshot showing how SmartScreen detects a file download with an unsafe reputation.; the download is blocked.":::
+  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="Screenshot showing how SmartScreen detects a file download with an unsafe reputation; the download is blocked.":::
 
 ## Learn more
 

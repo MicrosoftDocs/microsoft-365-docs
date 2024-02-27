@@ -1,16 +1,11 @@
 ---
 title: Microsoft Defender for Endpoint on other platforms
 description: Learn about Microsoft Defender for Endpoint capabilities on other platforms
-keywords: non windows, mac, macos, linux, android
-search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -18,26 +13,26 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Microsoft Defender for Endpoint on other platforms
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1 and Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft has been on a journey to extend its industry leading endpoint security capabilities beyond Windows and Windows Server to macOS, Linux, Android, and iOS.
 
-Organizations face threats across a variety of platforms and devices. Our teams have committed to building security solutions not just *for* Microsoft, but also *from* Microsoft to enable our customers to protect and secure their heterogenous environments. We're listening to customer feedback and partnering closely with our customers to build solutions that meet their needs.
+Organizations face threats across a variety of platforms and devices. Our teams have committed to building security solutions not just *for* Microsoft, but also *from* Microsoft to enable our customers to protect and secure their heterogeneous environments. We're listening to customer feedback and partnering closely with our customers to build solutions that meet their needs.
 
-With Microsoft Defender for Endpoint, customers benefit from a unified view of all threats and alerts in the Microsoft 365 Defender portal, across Windows and non-Windows platforms, enabling them to get a full picture of what's happening in their environment, which empowers them to more quickly assess and respond to threats.
+With Microsoft Defender for Endpoint, customers benefit from a unified view of all threats and alerts in the Microsoft Defender portal, across Windows and non-Windows platforms, enabling them to get a full picture of what's happening in their environment, which empowers them to more quickly assess and respond to threats.
 
 > [!NOTE]
 > Microsoft Defender for Endpoint doesn't support native compute workloads in Amazon Web Services (AWS) and Google Cloud Platform (GCP).

@@ -1,29 +1,24 @@
 ---
 title: Onboard Windows servers to the Microsoft Defender for Endpoint service
 description: Onboard Windows servers so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
-keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: mjcaparas
-ms.author: macapara
+ms.service: defender-endpoint
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/12/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 ---
 
 # Onboard Windows servers to the Microsoft Defender for Endpoint service
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -37,7 +32,7 @@ ms.subservice: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
 
-Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft 365 Defender console. Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
+Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft Defender XDR console. Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
 This article describes how to onboard specific Windows servers to Microsoft Defender for Endpoint.
 
@@ -58,13 +53,14 @@ Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender fo
 
 > [!NOTE]
 > For Windows Server 2012 R2 and 2016, you can either manually install/upgrade the modern, unified solution on these machines, or use the integration to automatically deploy or upgrade servers covered by your respective Microsoft Defender for Server plan. More information about making the switch at [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#enable-the-integration).
+>
 > - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
 Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
 > - If you use Defender for Endpoint before using Microsoft Defender for Cloud, your data will be stored in the location you specified when you created your tenant even if you integrate with Microsoft Defender for Cloud at a later time.
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
 > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 > - Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and previous versions of Windows Server allowed for the OMS / Log Analytics gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019, Windows Server 2022, and Windows 10, doesn't support this gateway.
-> - Linux servers onboarded through Microsoft Defender for Cloud will have their initial configuration set to run Defender Antivirus in [passive mode](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+> - Linux servers onboarded through Microsoft Defender for Cloud will have their initial configuration set to run Defender Antivirus in [passive mode](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
 
 **Windows Server 2012 R2 and Windows Server 2016**:
 
@@ -146,24 +142,23 @@ You'll need to download both the **installation** and **onboarding** packages fr
 > The installation package is updated monthly. Be sure to download the latest package before usage.
 > To update after installation, you do not have to run the installer package again. If you do, the installer will ask you to offboard first as that is a requirement for uninstallation. See [Update packages for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016](#update-packages-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016).
 
-> [!div class="mx-imgBorder"]
-> ![Image of onboarding dashboard](images/install-agent-onboard.png)
+:::image type="content" alt-text="Image of onboarding dashboard" source="images/install-agent-onboard.png" lightbox="images/install-agent-onboard.png":::
 
-   > [!NOTE]
-   > On Windows Server 2012R2, Microsoft Defender Antivirus will get installed by the installation package and will be active unless you set it to passive mode. On Windows Server 2016, Microsoft Defender Antivirus must be installed as a feature (see [Switch to MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) first and fully updated before proceeding with the installation.
-   >
-   > If you are running a non-Microsoft anti-malware solution ensure you add exclusions for Microsoft Defender Antivirus ([from this list of Microsoft Defender Processes on the Defender Processes tab](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) to the non-Microsoft solution before installation.  It is also recommended to add non-Microsoft security solutions to the Defender Antivirus exclusion list.
+> [!NOTE]
+> On Windows Server 2012R2, Microsoft Defender Antivirus will get installed by the installation package and will be active unless you set it to passive mode. On Windows Server 2016, Microsoft Defender Antivirus must be installed as a feature (see [Switch to MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) first and fully updated before proceeding with the installation.
+>
+> If you are running a non-Microsoft anti-malware solution ensure you add exclusions for Microsoft Defender Antivirus ([from this list of Microsoft Defender Processes on the Defender Processes tab](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx
+)) to the non-Microsoft solution before installation.  It is also recommended to add non-Microsoft security solutions to the Defender Antivirus exclusion list.
 
 The **installation package** contains an MSI file that installs the Microsoft Defender for Endpoint agent.
 
-The **onboarding package** contains the following files:
+The **onboarding package** contains the following file:
 
-- `OptionalParamsPolicy` - contains the setting that enables sample collection
 - `WindowsDefenderATPOnboardingScript.cmd` - contains the onboarding script
 
 Follow these steps to download the packages:
 
-1. In Microsoft 365 Defender, go to **Settings > Endpoint > Onboarding**.
+1. In Microsoft Defender XDR, go to **Settings > Endpoint > Onboarding**.
 
 2. Select **Windows Server 2012 R2 and 2016**.
 
@@ -175,14 +170,14 @@ Follow these steps to download the packages:
 
 > [!IMPORTANT]
 >
-> - A local onboarding script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
+> A local onboarding script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
 
 ### STEP 2: Apply the installation and onboarding package
 
 In this step, you'll install the prevention and detection components required before onboarding your device to the Microsoft Defender for Endpoint cloud environment, to prepare the machine for onboarding. Ensure all [prerequisites](#prerequisites) have been met.
 
-   > [!NOTE]
-   > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode.
+> [!NOTE]
+> Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode.
 
 #### Options to install the Microsoft Defender for Endpoint packages
 
@@ -248,7 +243,7 @@ This script can be used in various scenarios, including those scenarios describe
 
 8. Go to the **Actions** tab and select **New...** Ensure that **Start a program** is selected in the **Action** field. The [installer script](server-migration.md#installer-script) handles the installation, and immediately perform the onboarding step after installation completes. Select *C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe* then provide the arguments:
 
-    ```console
+    ```powershell
      -ExecutionPolicy RemoteSigned \\servername-or-dfs-space\share-name\install.ps1 -OnboardingScript \\servername-or-dfs-space\share-name\windowsdefenderatponboardingscript.cmd
     ```
 
@@ -281,12 +276,12 @@ The following steps are only applicable if you're using a third-party anti-malwa
 
 > [!IMPORTANT]
 >
-> Always download the latest installer package from the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) before performing a new installation and ensure prerequisites have been met. After installation, ensure to regularly update using component updates described in the section [Update packages for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016](#update-packages-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016).
+> Always download the latest installer package from the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) before performing a new installation and ensure prerequisites have been met. After installation, ensure to regularly update using component updates described in the section [Update packages for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016](#update-packages-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016).
 
 - An operating system update can introduce an installation issue on machines with slower disks due to a timeout with service installation. Installation fails with the message "Could not find c:\program files\windows defender\mpasdesc.dll, - 310 WinDefend". Use the latest installation package, and the latest [install.ps1](https://github.com/microsoft/mdefordownlevelserver) script to help clear the failed installation if necessary.
 - We've identified an issue with Windows Server 2012 R2 connectivity to cloud when static TelemetryProxyServer is used **and** the certificate revocation list (CRL) URLs aren't reachable from the SYSTEM account context. Ensure the EDR sensor is updated to version 10.8210.* or later (using [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)) to resolve the issue. Alternatively, use a different proxy option ("system-wide") that provides such connectivity, or configure the same proxy via the WinInet setting on the SYSTEM account context.
 - On Windows Server 2012 R2, there's no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It's recommended to disable or not enable the user interface nor require user interaction on any managed server as it may impact protection capability.
-- Not all Attack Surface Reduction rules are applicable to all operating systems. See [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
+- Not all Attack Surface Reduction rules are applicable to all operating systems. See [Attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
 - Operating system upgrades aren't supported. Offboard then uninstall before upgrading. The installer package can only be used to upgrade installations that have not yet been updated with new antimalware platform or EDR sensor update packages.
 - Automatic exclusions for **server roles** aren't supported on Windows Server 2012 R2; however, built-in exclusions for operating system files are. For more information about adding exclusions, see [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md).
 - To automatically deploy and onboard the new solution using Microsoft Endpoint Configuration Manager (MECM) you need to be on [version 2207 or later](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2207#improved-microsoft-defender-for-endpoint-mde-onboarding-for-windows-server-2012-r2-and-windows-server-2016). You can still configure and deploy using version 2107 with the hotfix rollup, but this requires additional deployment steps. See [Microsoft Endpoint Configuration Manager migration scenarios](/microsoft-365/security/defender-endpoint/server-migration#microsoft-endpoint-configuration-manager-migration-scenarios) for more information.
@@ -295,7 +290,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
 
 ### Download package
 
-1. In Microsoft 365 Defender, go to **Settings > Endpoints > Device Management > Onboarding**.
+1. In Microsoft Defender XDR, go to **Settings > Endpoints > Device Management > Onboarding**.
 
 2. Select **Windows Server 1803 and 2019**.
 
@@ -319,7 +314,7 @@ After onboarding the device, you can choose to run a detection test to verify th
     > [!NOTE]
     > This verification step is only required if you're using Microsoft Defender Antivirus as your active antimalware solution.
 
-    ```DOS
+    ```cmd
     sc.exe query Windefend
     ```
 
@@ -329,7 +324,7 @@ After onboarding the device, you can choose to run a detection test to verify th
 
 2. Run the following command to verify that Microsoft Defender for Endpoint is running:
 
-    ```DOS
+    ```cmd
     sc.exe query sense
     ```
 
@@ -370,6 +365,6 @@ For other Windows server versions, you have two options to offboard Windows serv
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md)
 - [Troubleshooting Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
-- [Azure Active Directory Seamless single sign-on](/azure/active-directory/hybrid/how-to-connect-sso-quick-start)
+- [Microsoft Entra seamless single sign-on](/azure/active-directory/hybrid/how-to-connect-sso-quick-start)
 - [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#instructions-for-applying-computer-join-rule-in-aad-connect)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

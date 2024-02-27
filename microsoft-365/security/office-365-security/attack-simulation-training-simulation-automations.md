@@ -2,7 +2,7 @@
 title: Simulation automations for Attack simulation training
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
@@ -15,7 +15,7 @@ ms.subservice: mdo
 search.appverid: met150
 ms.date: 6/14/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Simulation automations for Attack simulation training
@@ -26,7 +26,7 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-To see any existing simulation automations that you created, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> and then select **Simulation automations**. To go directly to the **Automations** tab where you can select **Simulation automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+To see any existing simulation automations that you created, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> and then select **Simulation automations**. To go directly to the **Automations** tab where you can select **Simulation automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 By default, the following information is shown for each simulation automation:
 
@@ -49,11 +49,11 @@ When you select a simulation automation from the list, a details flyout appears 
 
 To create a simulation automation, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Simulation automations**. or, to go directly to the **Automations** tab where you can select **Simulation automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Simulation automations**. or, to go directly to the **Automations** tab where you can select **Simulation automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. On the **Simulation automations** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create automation** to start the new simulation automation wizard.
 
-   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Simulation automations tab in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
    The following sections describe the steps and configuration options to create a simulation automation.
 
@@ -142,7 +142,7 @@ If you select a payload from the list by clicking anywhere in the row other than
 - The **Attachment** tab is available only for **Malware Attachment**, **Link in Attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, include a preview.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
 ### Select login pages
 
@@ -155,7 +155,7 @@ In the details flyout of the payload, the **Login page** tab shows the login pag
 
 To view the complete login page, use the **Page 1** and **Page 2** links at the bottom of the page for two-page login pages.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="The login page tab in the payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="The login page tab in the payload details flyout in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
 
 To change the login page that's used in the payload, select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Change login page**.
 
@@ -172,7 +172,7 @@ To find a login page in the list, type part of the login name in the :::image ty
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the login pages by **Source** or **Language**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="The Select login page in the Login page tab in payload details flyout in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="The Select login page in the Login page tab in payload details flyout in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
 
 To create a new login page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Login pages** \> **Tenant login pages** tab. For instructions, see [Create login pages](attack-simulation-training-login-pages.md#create-login-pages).
 
@@ -209,9 +209,6 @@ When you're finished on  the **Configure OAuth payload** page, select **Next**.
 On the **Target users** page, select who receives the simulation. Use the following options to select users:
 
 - **Include all users in your organization**: The unmodifiable list of users is show in groups of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** icon on the page to find specific users.
-
-  > [!TIP]
-  > Although you can't remove users from the list on this page, you can use the next **Exclude users** page to exclude specific users.
 
 - **Include only specific users and groups**: At first, no users or groups are shown on the **Targeted users** page. To add users or groups to the simulation, choose one of the following options:
 
@@ -262,7 +259,7 @@ On the **Target users** page, select who receives the simulation. Use the follow
         - Select **All Title**
         - Select existing Title values. If the link is available, select **See all Titles** to see the complete list of available Title values.
 
-      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="The User filtering on the Target users page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="The User filtering on the Target users page in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       You can use some or all of the search categories to find users and groups. If you select multiple categories, the AND operator is used. Any users or groups must match both values to be returned in the results (which is virtually impossible if you use the value **All** in multiple categories).
 
@@ -330,7 +327,7 @@ On the **Add training** flyout that opens, use the following tabs to select trai
 - **Recommended** tab: Shows the recommended built-in trainings based on the simulation configuration. These are the same trainings that would have been assigned if you selected **Assign training for me (Recommended)** on the previous page.
 - **All trainings** tab: Shows all built-in trainings that are available.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="The option to add the recommended training on the Training assignment page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="The option to add the recommended training on the Training assignment page in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 On either tab, the following information is shown for each training:
 
@@ -353,7 +350,7 @@ Back on the **Training assignment** page, the selected trainings are now listed.
   - One or both of the values **Clicked payload** or **Compromised**.
 - **Delete**: Select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** to remove the training from the simulation.
 
-:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="The Training assignment page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-training-assignment.png":::
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="The Training assignment page in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 When you're finished on the **Training assignment** page, select **Next**.
 

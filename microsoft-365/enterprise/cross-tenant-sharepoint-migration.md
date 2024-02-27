@@ -1,12 +1,13 @@
 ---
 title: Cross-tenant SharePoint site migration overview (preview)
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration
@@ -51,7 +52,7 @@ For more information on licensing:
 
 - **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588)
 
-- **Turn off service encryption with Customer Key enabled.** Confirm that the source OneDrive tenant **doesn't** have Service encryption with Microsoft Purview Customer Key enabled. If enabled on Source tenant, the migration will fail. [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview)
+- **Confirm that the source SharePoint tenant does not have Service encryption with Microsoft Purview Customer Key enabled.** If enabled on Source tenant, the migration will fail.  [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview)
 
 - Source SharePoint sites must be set to Read/Write. If set to Read only, the migration will fail.
 
@@ -68,7 +69,7 @@ For more information on licensing:
 > - The 1 million item limit can be any "item", including files (including versions), folders, and list line entries if it is a list or library.
 >
 >- Ensure all users and groups identified for migration have been pre-created on the target tenant.
->- Assign the appropriate licenses to each user on the target tenant.
+>- Assign the appropriate licenses to each user on either the Source **or** the Target tenant. **The license does not need to be applied in both locations.**
 
 
 ## Path size limits

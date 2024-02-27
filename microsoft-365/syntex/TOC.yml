@@ -15,6 +15,8 @@
               href: set-up-content-understanding.md
             - name: Set up Microsoft Syntex
               href: set-up-microsoft-syntex.md
+            - name: Privacy, security, & compliance
+              href: syntex-privacy-security.md
             - name: Set up a content center 
               href: create-a-content-center.md
 
@@ -53,6 +55,8 @@
                   href: discover-other-trained-models.md
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
+                - name: Apply a sensitivity label 
+                  href: apply-a-sensitivity-label-to-a-model.md
                 - name: Rename a model
                   href: rename-a-model.md
                 - name: Delete a model
@@ -61,6 +65,8 @@
                   href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
+                - name: View processing status 
+                  href: processing-status.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -68,6 +74,8 @@
       items:
             - name: Overview 
               href: form-processing-overview.md
+            - name: Admin setup
+              href: structured-freeform-setup.md
             - name: Train your model
               href: create-a-form-processing-model.md
             - name: Manage your model
@@ -90,6 +98,8 @@
                   href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
+                - name: View processing status 
+                  href: processing-status.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -139,6 +149,8 @@
                   href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
+                - name: View processing status 
+                  href: processing-status.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -146,6 +158,8 @@
       items: 
         - name: Overview 
           href: content-assembly.md
+        - name: Admin setup 
+          href: content-assembly-setup.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
@@ -163,10 +177,41 @@
       items: 
         - name: Overview 
           href: image-tagging-overview.md
-        - name: Admin setup 
+        - name: Admin setup
           href: image-tagging-setup.md
         - name: Find and manage images
           href: image-tagging.md
+
+    - name: Taxonomy tagging 
+      items: 
+        - name: Overview 
+          href: taxonomy-tagging-overview.md
+        - name: Admin setup 
+          href: taxonomy-tagging-setup.md
+        - name: Find and manage terms 
+          href: taxonomy-tagging.md
+
+    - name: Document translation
+      items: 
+        - name: Overview 
+          href: translation-overview.md
+        - name: Admin setup 
+          href: translation-setup.md
+        - name: Translate documents 
+          href: translation.md
+
+    - name: eSignature 
+      items: 
+        - name: Overview 
+          href: esignature-overview.md
+        - name: Admin setup 
+          href: esignature-setup.md
+        - name: Create a signature request 
+          href: esignature-send-requests.md
+        - name: Review and sign a request 
+          href: esignature-review-sign-requests.md
+        - name: Troubleshoot a request 
+          href: esignature-troubleshoot.md
 
     - name: Optical character recognition 
       items: 
@@ -175,20 +220,65 @@
         - name: Admin setup 
           href: ocr.md
 
+    - name: Microsoft 365 Archive (Preview)
+      items: 
+        - name: Overview 
+          href: archive/archive-overview.md
+        - name: Admin setup 
+          href: archive/archive-setup.md
+        - name: Pricing model 
+          href: archive/archive-pricing.md
+        - name: Archive states 
+          href: archive/archive-states.md
+        - name: Manage 
+          href: archive/archive-manage.md
+        - name: Compliance 
+          href: archive/archive-compliance.md
+        - name: End user experience 
+          href: archive/archive-end-user.md
+        - name: FAQs
+          href: archive/archive-faq.md
+
+    - name: Microsoft 365 Backup (Preview)
+      items: 
+        - name: Overview 
+          href: backup/backup-overview.md
+        - name: Admin setup 
+          href: backup/backup-setup.md
+        - name: Set up billing 
+          href: backup/backup-billing.md
+        - name: Pricing model
+          href: backup/backup-pricing.md
+        - name: View and edit policies 
+          href: backup/backup-view-edit-policies.md
+        - name: Restore data 
+          href: backup/backup-restore-data.md
+        - name: Preview limitations
+          href: backup/backup-limitations.md
+        - name: Offboarding
+          href: backup/backup-offboarding.md
+        - name: FAQs
+          href: backup/backup-faq.md
+
     - name: Annotations
       href: annotations.md
 
     - name: Content query
       href: metadata-search.md
 
-    - name: Content processing
+    - name: Merge and extract PDFs
+      href: merge-extract-pdf.md
+
+    - name: Processing rules
       items: 
         - name: Overview 
           href: content-processing-overview.md
         - name: Move or copy a file 
           href: content-processing-create-rules.md
+        - name: Set a content type 
+          href: content-processing-content-type.md
 
-    - name: Taxonomy
+    - name: Premium taxonomy features
       items:
         - name: Import using SKOS
           href: import-term-set-skos.md
@@ -203,6 +293,8 @@
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
+        - name: Try out Syntex services
+          href: promo-syntex.md
         - name: Scenarios and use cases
           items:
             - name: Overview
@@ -259,8 +351,12 @@
         - name: Microsoft Syntex REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
-    - name: Syntex-SharePoint Advanced Management
+    - name: SharePoint Advanced Management
       href: /sharepoint/advanced-management
+
+    - name: SharePoint Embedded
+      href: /sharepoint/dev/embedded/overview
+
 
 
 

@@ -1,35 +1,35 @@
 ---
 title: Schedule antivirus scans using Windows Management Instrumentation
 description: Schedule antivirus scans using WMI
-keywords: quick scan, full scan, WMI, schedule, antivirus
-ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
-ms.date: 10/18/2021
-ms.reviewer: pauhijbr, ksarens
-manager: dansimp
-ms.subservice: mde
+ms.date: 02/21/2024
+ms.reviewer: pauhijbr, ksarens, yongrhee
+manager: deniseb
+ms.subservice: ngp
 ms.topic: how-to
 ms.collection: 
 - m365-security
 - tier3
+- mde-ngp
 search.appverid: met150
 ---
 
 # Schedule antivirus scans using Windows Management Instrumentation (WMI)
 
 **Applies to:**
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 **Platforms**
 - Windows
+- Windows Server
 
 This article describes how to configure scheduled scans using WMI. To learn more about scheduling scans and about scan types, see [Configure scheduled quick or full Microsoft Defender Antivirus scans](schedule-antivirus-scans.md). 
 

@@ -2,8 +2,7 @@
 title: Alert classification for suspicious email forwarding activity
 description: Alert classification for suspicious email forwarding activity to review the alerts and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, alert classification, alert grading, classify alert
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -27,10 +26,10 @@ ms.date: 04/05/2023
 
 # Alert classification for suspicious email forwarding activity
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Threat actors can use compromised user accounts for several malicious purposes, including reading emails in a user's inbox, forwarding emails to external recipients, and sending phishing mails, among others. The targeted user might be unaware that their emails are being forwarded. This is a very common tactic that attackers use when user accounts are compromised.
 
@@ -84,7 +83,7 @@ While investigating this alert, you must determine:
 
 ### Is the user account and its mailbox compromised?
 
-By looking at sender's past behavior and recent activities, you should be able to determine whether the user's account should be considered compromised or not. You can see the details of alerts raised from the user's page in the Microsoft 365 Defender portal.
+By looking at sender's past behavior and recent activities, you should be able to determine whether the user's account should be considered compromised or not. You can see the details of alerts raised from the user's page in the Microsoft Defender portal.
 
 You can also analyze these additional activities for the affected mailbox:
 
@@ -110,7 +109,7 @@ Here is the workflow to identify suspicious email forwarding activities.
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="Alert investigation workflow for email forwarding" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
-You can investigate an email forwarding alert using Threat Explorer or with advanced hunting queries, based on the availability of features in the Microsoft 365 Defender portal. You may choose to follow the entire process or a part of the process as needed.
+You can investigate an email forwarding alert using Threat Explorer or with advanced hunting queries, based on the availability of features in the Microsoft Defender portal. You may choose to follow the entire process or a part of the process as needed.
 
 ## Using Threat Explorer
 
@@ -211,7 +210,7 @@ CloudAppEvents
 | where ActionType in (action_types)
 ```
 
-Run this query to find out if there were any anomalous login events from this user. For example: unknown IPs, new applications, uncommon countries, multiple LogonFailed events.
+Run this query to find out if there were any anomalous login events from this user. For example: unknown IPs, new applications, uncommon countries/regions, multiple LogonFailed events.
 
 ```kusto
 let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder
@@ -259,4 +258,4 @@ Once you determine that the activities associated make this alert a True Positiv
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigate alerts](investigate-alerts.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

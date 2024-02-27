@@ -2,32 +2,29 @@
 title: Create indicators for files
 ms.reviewer:
 description: Create indicators for a file hash that define the detection, prevention, and exclusion of entities.
-keywords: file, hash, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 08/10/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-asr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: asr
 search.appverid: met150
 ---
 
 # Create indicators for files
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
@@ -94,7 +91,7 @@ Files automatically blocked by an indicator won't show up in the file's Action c
 
 The current supported actions for file IOC are allow, audit and block, and remediate. After choosing to block a file, you can choose whether triggering an alert is needed. In this way, you'll be able to control the number of alerts getting to your security operations teams and make sure only required alerts are raised.
 
-In Microsoft 365 Defender, go to **Settings** > **Endpoints** > **Indicators** > **Add New File Hash**.
+In Microsoft Defender XDR, go to **Settings** > **Endpoints** > **Indicators** > **Add New File Hash**.
 
 Choose to Block and remediate the file.
 
@@ -154,8 +151,12 @@ Cert and File IoC policy handling conflict will follow the below order:
 - If the file isn't allowed by Windows Defender Application Control and AppLocker enforce mode policy/policies, then **Block**
 - Else if the file is allowed by the Microsoft Defender Antivirus exclusion, then **Allow**
 - Else if the file is blocked or warned by a block or warn file IoC, then **Block/Warn**
+- Else if the file is blocked by SmartScreen, then **Block**
+
 - Else if the file is allowed by an allow file IoC policy, then **Allow**
-- Else if the file is blocked by ASR rules, CFA, AV, SmartScreen, then **Block**
+
+- Else if the file is blocked by ASR rules, CFA, AV, then **Block**
+
 - Else **Allow** (passes Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
 
 > [!NOTE]
@@ -185,5 +186,7 @@ Microsoft Defender Vulnerability Management's block vulnerable application featu
 - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
+
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

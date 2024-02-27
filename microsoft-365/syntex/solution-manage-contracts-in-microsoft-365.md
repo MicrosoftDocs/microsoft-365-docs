@@ -2,11 +2,11 @@
 title: Manage contracts using a Microsoft 365 solution
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 audience: admin
 ms.topic: conceptual
-ms.date: 10/28/2022
+ms.date: 02/14/2024
 ms.service: microsoft-syntex
 ms.collection:
 - m365solution-managecontracts
@@ -33,13 +33,13 @@ This article describes how to create a contracts management solution for your or
 
 The first step in planning your contract management system is to understand the problem you're trying to solve. For this solution, four key issues need to be addressed:
 
-- **Identify contracts**. Your organization works with many documents, such as invoices, contracts, statements of work, and so on.  Some are digital assets sent through email, and some are paper assets sent through traditional mail. You need a way to identify all customer contracts from all other documents, and then classifying them as such.
+- **Identify contracts**. Your organization works with many documents, such as invoices, contracts, statements of work, and so on. Some are digital assets sent through email, and some are paper assets sent through traditional mail. You need a way to identify all customer contracts from all other documents, and then classifying them as such.
 
-- **Track the history of contract approvals**. Your organization needs a reliable way to find whether contracts have been either approved or rejected, and whether payment has been processed. 
+- **Track the history of contract approvals**. Your organization needs a reliable way to find whether contracts have been either approved or rejected, and whether payment has been processed.
 
 - **Site to manage contract approvals**. Your organization needs to set up a collaborative site in which all required stakeholders can easily review contracts. Stakeholders should be able to review the whole contract if needed, but mostly care about seeing several key fields from each contract (for example, customer name, PO number, and total cost). Stakeholders should be able to easily approve or reject incoming contracts.
 
-- **Route reviewed contracts**. Approved and rejected contracts need to be routed through a specific workflow. Approved contracts need to be routed to a third-party application for payment processing. Rejected contracts need to be routed for additional review.
+- **Route reviewed contracts**. Approved and rejected contracts need to be routed through a specific workflow. Approved contracts need to be routed to a partner application for payment processing. Rejected contracts need to be routed for additional review.
 
 ## Overview of the solution
 
@@ -89,7 +89,7 @@ This solution relies on the following functionality, all available as part of a 
 
 New to Microsoft Syntex? Learn how to use Syntex to manage content using AI.
 
-The [Introduction to Microsoft Syntex](/training/modules/syntex-intro) learning path will teach how you can use unstructured, freeform, and unstructured document processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
+The [Introduction to Microsoft Syntex](/training/modules/syntex-intro) learning path teaches how you can use unstructured, freeform, and unstructured document processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
 
 ## Create the solution
 

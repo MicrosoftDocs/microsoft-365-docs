@@ -2,34 +2,29 @@
 title: Partner applications in Microsoft Defender for Endpoint
 ms.reviewer:
 description: View supported partner applications to enhance the detection, investigation, and threat intelligence capabilities of the platform
-keywords: partners, applications, third-party, connections, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
-ms.date: 07/28/2023
+ms.date: 08/23/2023
 ---
 
 # Partner applications in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -90,7 +85,6 @@ Logo|Partner name|Description
 :---|:---|:---
 ![Logo for Aruba ClearPass Policy Manager.](images/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|Ensure Defender for Endpoint is installed and updated on each endpoint before allowing access to the network
 ![Logo for Blue Hexagon for Network.](images/bluehexagon-logo.png)|[Blue Hexagon for Network](/training/modules/explore-malware-threat-protection/)|Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection
-![Logo for Corelight.](images/logo-corelight.png)| [Corelight](https://corelight.com/integrations/iot-security)| Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
 ![Logo for CyberMDX.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX integrates comprehensive healthcare assets visibility, threat prevention and repose into your Defender for Endpoint environment
 ![Logo for HYAS Protect.](images/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect Microsoft Defender for Endpoint endpoints from cyberattacks
 ![Logo for Vectra Network Detection and Response (NDR).](images/vectra-logo.png)|[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applies AI & security research to detect and respond to cyber-attacks in real time
@@ -101,7 +95,7 @@ Logo|Partner name|Description
 :---|:---|:---
 ![Logo for Bitdefender.](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone is a layered next generation endpoint protection platform offering comprehensive protection against the full spectrum of sophisticated cyber threats
 ![Logo for Better Mobile.](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|AI-based MTD solution to stop mobile threats & phishing. Private internet browsing to protect user privacy
-![Logo for Corrata.](images/corrata-logo.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|Mobile solution - Protect your mobile devices with granular visibility and control from Corrata
+![Logo for Corrata.](images/corrata-new.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|Mobile solution - Protect your mobile devices with granular visibility and control from Corrata
 ![Logo for Lookout.](images/lookout-logo.png)|[Lookout](https://go.microsoft.com/fwlink/?linkid=866935)|Get Lookout Mobile Threat Protection telemetry for Android and iOS mobile devices
 ![Logo for Symantec Endpoint Protection Mobile.](images/symantec-logo.png)|[Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)|SEP Mobile helps businesses predict, detect, and prevent security threats and vulnerabilities on mobile devices
 ![Logo for Zimperium.](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Extend your Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense
@@ -110,7 +104,7 @@ Logo|Partner name|Description
 
 Logo|Partner name|Description
 :---|:---|:---
-![Logo for Cyren Web Filter.](images/cyren-logo.png)|[Cyren Web Filter](https://go.microsoft.com/fwlink/?linkid=2108221)|Enhance your Defender for Endpoint with advanced Web Filtering
+![Logo for Cyren Web Filter.](images/cyren-logo.png)|[Cyren Web Filter](https://www.cyren.com/security-center/url-category-check)|Enhance your Defender for Endpoint with advanced Web Filtering
 ![Logo for Morphisec.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Defender for Cloud dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
 ![Logo for THOR Cloud.](images/nextron-thor-logo.png)|[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)|Provides on-demand live forensics scans using a signature base with focus on persistent threats
 

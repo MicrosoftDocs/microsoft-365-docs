@@ -103,7 +103,9 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 
 1. Choose **Stop processing more rules** if you only want this signature rule to run. 
 
-1. Choose **Defer the message** if rule processing doesn’t complete if you want this experience. 
+1. Choose **Defer the message** if rule processing doesn’t complete if you want this experience.
+
+1. Select ***Header** under the **Match sender address in message** drop-down and then select **Next** and **Finish**.
     
 ## Limitations of organization wide signatures
 
@@ -127,4 +129,4 @@ For information about using PowerShell, see [Organization-wide message disclaime
 
 [Migrate email and contacts to Microsoft 365](migrate-email-and-contacts-admin.md) (video)\
 [User email settings](../email/office-365-user-email-settings.md) (article)\
-[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
+[Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)

@@ -1,20 +1,21 @@
 ---
 title: Configure custom exclusions for Microsoft Defender Antivirus
 description: You can exclude files (including files modified by specified processes) and folders from Microsoft Defender Antivirus scans.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 07/18/2023
-author: denisebmsft
-ms.author: deniseb
+ms.date: 01/02/2024
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer: ksarens
-manager: dansimp
-ms.subservice: mde
+manager: deniseb
+ms.subservice: ngp
 ms.audience: ITPro
 ms.topic: how-to
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -49,7 +50,6 @@ If you're using another tool, such as Configuration Manager or Group Policy, or 
 
 - [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configure contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md) to configure restrictions for your exclusions.
 
 #### Manage antivirus exclusions in Intune (for existing policies)
 
@@ -91,7 +91,7 @@ If you're using another tool, such as Configuration Manager or Group Policy, or 
 
 Defining exclusions lowers the protection offered by Microsoft Defender Antivirus. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you're confident aren't malicious.
 
-Exclusions directly affect the ability for Microsoft Defender Antivirus to block, remediate, or inspect events related to the files, folders, or processes that are added to the exclusion list. Custom exclusions can affect features that are directly dependent on the antivirus engine (such as protection against malware, [file IOCs](indicator-file.md), and [certificate IOCs](indicator-certificates.md)). Process exclusions also affect [network protection](network-protection.md) and [attack surface reduction (ASR) rules](attack-surface-reduction.md). Specifically, a process exclusion on any platform causes network protection and ASR to be unable to inspect traffic or enforce rules for that specific process.
+Exclusions directly affect the ability for Microsoft Defender Antivirus to block, remediate, or inspect events related to the files, folders, or processes that are added to the exclusion list. Custom exclusions can affect features that are directly dependent on the antivirus engine (such as protection against malware, [file IOCs](indicator-file.md), and [certificate IOCs](indicator-certificates.md)). Process exclusions also affect [network protection](network-protection.md) and [attack surface reduction rules](attack-surface-reduction.md). Specifically, a process exclusion on any platform causes network protection and ASR to be unable to inspect traffic or enforce rules for that specific process.
 
 Keep the following points in mind when you're defining exclusions:
 

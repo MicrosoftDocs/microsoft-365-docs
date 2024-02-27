@@ -1,19 +1,20 @@
 ---
 title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
-ms.service: microsoft-365-security
-author: dansimp
-ms.author: dansimp
+ms.service: defender-endpoint
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/13/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-edr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 
@@ -57,7 +58,7 @@ Whether taken automatically or upon approval, an automated investigation and rem
 
 ## Review pending actions
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in.
 
 2. In the navigation pane, choose **Action center**.
 
@@ -85,11 +86,11 @@ For incidents with a remediation status of **Pending approval**, you can also ap
    - Select the Approve pending action option to initiate a pending action.
    - Select the Reject pending action option to prevent a pending action from being taken.
 
-:::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/defender//m365-defender-approve-reject-action.png":::
+:::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft Defender portal" lightbox="../../media/defender//m365-defender-approve-reject-action.png":::
 
 ## Review completed actions
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in.
 
 2. In the navigation pane, choose **Action center**.
 
@@ -112,8 +113,6 @@ If you've determined that a device or a file is not a threat, you can undo remed
 > - Isolate device
 > - Stop and quarantine a file
 > - Add an indicator to block or allow a file
->
-> To learn more, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md) and [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md).
 
 ### To undo multiple actions at one time
 

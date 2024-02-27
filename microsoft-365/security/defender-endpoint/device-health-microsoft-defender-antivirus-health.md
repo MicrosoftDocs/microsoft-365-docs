@@ -1,24 +1,20 @@
 ---
 title: Device health Microsoft Defender Antivirus health report
 description: Use the Microsoft Defender Antivirus report to track antivirus status and Microsoft Defender Antivirus engine, intelligence, and platform versions.
-keywords: Microsoft Defender Antivirus report, engine version, intelligence version, and platform versions, antivirus
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 localization_priority: Normal
 ms.date: 09/06/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
+- mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 ms.reviewer: mkaminska
 ---
 
@@ -26,7 +22,7 @@ ms.reviewer: mkaminska
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -66,7 +62,7 @@ To access the Device health and antivirus compliance report in the Microsoft 365
 
 To Assign these permissions:
 
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> using account with Security administrator or Global administrator role assigned.
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> using account with Security administrator or Global administrator role assigned.
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Roles** (under **Permissions**).
 1. Select the role you'd like to edit.
 1. Select **Edit**.
@@ -276,15 +272,15 @@ Following are up-to-date definitions for engine and platform:
 
 | The engine/platform on the device is considered: | Situation |
 |:---|:---|
-| **up-to-date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, and the Engine or Platform version build time is within last 60 days. |
-| **out-of-date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, but Engine or Platform version build time is older than 60 days. |
+| **up to date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, and the Engine or Platform build version is greater than or equal to (`>=`) the most recent monthly release version. |
+| **out-of-date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, but Engine or Platform build version is less than (`<`) the most recent monthly release version. |
 | **unknown (no data available)** | If the device hasn't communicated with the report event ('Signature refresh time') for more than seven days. |
 
 Following is the definitions for up-to-date security intelligence:
 
 | The security intelligence update is considered: | Situation |
 |:---|:---|
-|**up-to-date** | If the security intelligence version on the device was written in the past seven days and the device has communicated with the report event in past seven days. |
+|**up to date** | If the security intelligence version on the device was written in the past seven days and the device has communicated with the report event in past seven days. |
 
 For more information, see:
 

@@ -1,31 +1,26 @@
 ---
-title: Technological partners of Microsoft 365 Defender
+title: Technological partners of Microsoft Defender XDR
 ms.reviewer:
-description: View technological partners of M365 Defender to enhance detection, investigation, and threat intelligence capabilities of the platform.
-keywords: partners, technological partner, applications, third-party, SIEM, threat intelligence, sentinel, SOAR, cross platform, m365 integrations, dns security, network protection
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: v-aljupudi
-author: alekyaj
+description: View technological partners of Microsoft 365 Defender to enhance detection, investigation, and threat intelligence capabilities of the platform.
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
-ms.date: 09/28/2022
+ms.date: 08/03/2023
 ---
 
-# Technological partners of Microsoft 365 Defender
+# Technological partners of Microsoft Defender XDR
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Vulnerability Management
 - Microsoft Defender for Office 365
@@ -37,7 +32,7 @@ ms.date: 09/28/2022
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
-Microsoft 365 Defender supports third-party integrations to help secure users with effective threat protection, detection, investigation, and response, in various security fields of endpoints, vulnerability management, email, identities, cloud apps.
+Microsoft Defender XDR supports third-party integrations to help secure users with effective threat protection, detection, investigation, and response, in various security fields of endpoints, vulnerability management, email, identities, cloud apps.
 
 The following are the solution's categories:
 
@@ -51,7 +46,7 @@ The following are the solution's categories:
 - Business cloud applications
 - Threat and vulnerability management
 - Secure service edge
-- Additional integrations
+- Other integrations
 
 ## Supported integrations and partners
 
@@ -73,20 +68,20 @@ The following are the solution's categories:
 |[Microsoft Sentinel](https://go.microsoft.com/fwlink/?linkid=2201962)|Microsoft|Microsoft Sentinel is a scalable, cloud-native, security information and event management (SIEM) and security orchestration, automation, and response (SOAR) solution. Microsoft Sentinel delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for attack detection, threat visibility, proactive hunting, and threat response.|
 |[ArcSight](https://go.microsoft.com/fwlink/?linkid=2202142)|Micro Focus|ArcSight provides multiple analytics capabilities for correlation, search, UEBA, enhanced and automated response, and log management.|
 |[Splunk SOAR](https://go.microsoft.com/fwlink/?linkid=2201773)|Splunk|Splunk SOAR orchestrates workflows and automates tasks in seconds to work smarter and respond faster.|
-|[Security Incident Response](https://go.microsoft.com/fwlink/?linkid=2201874)|ServiceNow|The ServiceNow® Security Incident Response application tracks the progress of security incidents from discovery and initial analysis, through containment, eradication, and recovery, and into the final post-incident review, knowledge base article creation, and closure.|
+|[Security Incident Response](https://go.microsoft.com/fwlink/?linkid=2201874)|ServiceNow|The ServiceNow&reg; Security Incident Response application tracks the progress of security incidents from discovery and initial analysis, through containment, eradication, and recovery, and into the final post-incident review, knowledge base article creation, and closure.|
 |[Swimlane](https://go.microsoft.com/fwlink/?linkid=2202140)|Swimlane Inc|Automates your incident response capabilities with Swimlane (SOAR) and Microsoft Defender.|
-|[InsightConnect](https://go.microsoft.com/fwlink/?linkid=2201877)|Rapid7|InsightConnect provides security orchestration, automation and response solution that accelerates incident response and vulnerability management processes.|
-|[Demisto, a Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2201777)|Palo Alto Networks|Demisto integrates with Microsoft Defender for Endpoint to enable security teams to orchestrate and automate endpoint security monitoring, enrichment and response.|
+|[InsightConnect](https://go.microsoft.com/fwlink/?linkid=2201877)|Rapid7|InsightConnect provides security orchestration, automation, and response solution that accelerates incident response and vulnerability management processes.|
+|[Demisto, a Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2201777)|Palo Alto Networks|Demisto integrates with Microsoft Defender for Endpoint to enable security teams to orchestrate and automate endpoint security monitoring, enrichment, and response.|
 
 ### Breach and attack simulation (BAS)
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2201775)|SafeBreach|SafeBreach continuously executes attacks, correlates results to help visualize security gaps, and leverages contextual insights to highlight remediation efforts. With its Hacker's Playbook™, the industry's most extensive collection of attack data enabled by state-of-the-art threat intelligence research, SafeBreach empowers organizations to get proactive about security with a simple approach that replaces hope with data.|
+|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2201775)|SafeBreach|SafeBreach continuously executes attacks, correlates results to help visualize security gaps, and uses contextual insights to highlight remediation efforts. With its Hacker's Playbook&trade;, the industry's most extensive collection of attack data enabled by state-of-the-art threat intelligence research, SafeBreach empowers organizations to get proactive about security with a simple approach that replaces hope with data.|
 |[Extended Security Posture Management (XSPM)](https://go.microsoft.com/fwlink/?linkid=2201771)|Cymulate|Cymulate's Extended Security Posture Management enables companies to challenge, assess, and optimize their cybersecurity posture.|
 |[Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201967)|SkyBox|Develops a vulnerability program strategy that accurately analyzes exposure risk across hybrid attack surface and prioritize the remediation.|
 |[Attack Path Management](https://go.microsoft.com/fwlink/?linkid=2201774)|XM Cyber|Attack Path Management is a hybrid cloud security company providing attack path management changing the ways organizations approach cyber risk.|
-|[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing and Privacy Protection and Simulation.|
+|[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing, and Privacy Protection and Simulation.|
 
 ### Threat intelligence
 
@@ -103,26 +98,25 @@ The following are the solution's categories:
 |---|---|---|
 |[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2201878)|Aruba, a Hewlett Packard Enterprise company|Network Access Control applies consistent policies and granular security controls to wired and wireless networks|
 |[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=2201969)|Vectra|Vectra applies AI & security research to detect and respond to cyber-attacks in real time.|
-|[Blue Hexagon for Network](https://go.microsoft.com/fwlink/?linkid=2201780)|Blue Hexagon|Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection.|
+|[Blue Hexagon for Network](https://go.microsoft.com/fwlink/?linkid=2201780)|Blue Hexagon|Blue Hexagon built the industry's first real-time deep learning platform for network threat protection.|
 |[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2201880)|CyberMDX|Cyber MDX integrates comprehensive healthcare assets visibility, threat prevention and repose into your Microsoft Defender for Endpoint environment.|
 |[HYAS Protect](https://www.hyas.com/hyas-protect)|HYAS|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect MDE endpoints from cyber attacks.|
-|[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing and Privacy Protection and Simulation.|
+|[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing, and Privacy Protection and Simulation.|
 |[Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201965)|Skybox security|Global security posture management leader with solutions for vulnerability management and network security policy management.|
-|[Open NDR](https://go.microsoft.com/fwlink/?linkid=2201964)|Corelight|Augment device inventory in Microsoft 365 Defender with network evidence for complete visibility.|
 
 ### Identity security
 
 |Product name|Vendor|Description|
 |---|---|---|
 |[Illusive Platform](https://go.microsoft.com/fwlink/?linkid=2201778)|Illusive Networks|Illusive continuously discovers and automatically remediates identity vulnerabilities, and it detects attacks using deceptive controls.|
-|[Silverfort](https://go.microsoft.com/fwlink/?linkid=2201873)|Silverfort|Enforces Azure AD Conditional Access and MFA across any user system and environment on-prem and in the cloud.|
+|[Silverfort](https://go.microsoft.com/fwlink/?linkid=2201873)|Silverfort|Enforces Microsoft Entra Conditional Access and MFA across any user system and environment on-premises and in the cloud.|
 
 ### Cross platform
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[Corrata Mobile Security](https://go.microsoft.com/fwlink/?linkid=2201879)|Corrata|Corrata is an immune system for mobile devices and tablets that detects & protects mobile devices from the full spectrum of security threats like phishing, malware, man-in-the-middle attacks and data loss.|
-|[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing and Privacy Protection and Simulation.|
+|[Corrata Mobile Security](https://go.microsoft.com/fwlink/?linkid=2201879)|Corrata|Corrata is an immune system for mobile devices and tablets that detects & protects mobile devices from the full spectrum of security threats like phishing, malware, man-in-the-middle attacks, and data loss.|
+|[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing, and Privacy Protection and Simulation.|
 |[Zimperium Mobile Threat Defense](https://go.microsoft.com/fwlink/?linkid=2202141)|Zimperuim|Extends your Microsoft Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense.|
 |[Bitdefender](https://go.microsoft.com/fwlink/?linkid=2201968)|Bitdefender|Bitdefender GravityZone is a layered next generation endpoint protection platform offering comprehensive protection against the full spectrum of sophisticated cyber threats.|
 
@@ -148,7 +142,7 @@ The following are the solution's categories:
 |[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2201769)|ServiceNow|ServiceNow provides cloud-based solutions that define, structure, manage, and automate services for enterprise operations.|
 |[Slack](https://go.microsoft.com/fwlink/?linkid=2201870)|Slack|Slack is an enterprise software platform that allows teams and businesses of all sizes to communicate effectively.|
 |[SmartSheet](https://go.microsoft.com/fwlink/?linkid=2201871)|SmartSheet|Smartsheet is a cloud-based work management platform that empowers collaboration, drives better decision making, and accelerates innovation.|
-|[Webex](https://go.microsoft.com/fwlink/?linkid=2201872)|Cisco|Webex, a Cisco company, provides on-demand applications for businesses to conduct web conferencing, telework and application remote control.|
+|[Webex](https://go.microsoft.com/fwlink/?linkid=2201872)|Cisco|Webex, a Cisco company, provides on-demand applications for businesses to conduct web conferencing, telework, and application remote control.|
 |[Workday](https://go.microsoft.com/fwlink/?linkid=2201960)|Workday|Workday offers enterprise-level software solutions for human resource and financial management.|
 |[Zendesk](https://go.microsoft.com/fwlink/?linkid=2201961)|Zendesk|Zendesk is a customer service platform that develops software to empower organization and customer relationships.|
 
@@ -157,13 +151,14 @@ The following are the solution's categories:
 |Product name|Vendor|Description|
 |---|---|---|
 |[Attack Path Management](https://go.microsoft.com/fwlink/?linkid=2201774)|XM Cyber|Hybrid cloud security company providing attack path management changing the ways organizations approach cyber risk.|
-|[Corrata Mobile Security](https://go.microsoft.com/fwlink/?linkid=2201879)|Corrata|Corrata is an immune system for mobile devices and tablets that detects & protects mobile devices from the full spectrum of security threats like phishing, malware, man-in-the-middle attacks and data loss.|
+|[Corrata Mobile Security](https://go.microsoft.com/fwlink/?linkid=2201879)|Corrata|Corrata is an immune system for mobile devices and tablets that detects & protects mobile devices from the full spectrum of security threats like phishing, malware, man-in-the-middle attacks, and data loss.|
 |[Zimperium Mobile Threat Defense](https://go.microsoft.com/fwlink/?linkid=2202141)|Zimperuim|Extend your Microsoft Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense.|
 |[RiskAnalyzer](https://go.microsoft.com/fwlink/?linkid=2202245)|DeepSurface Security|DeepSurface RiskAnalyzer helps quickly and efficiently discover, analyze and prioritize cybersecurity risk.|
 |[Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201965)|Skybox security|Global security posture management leader with solutions for vulnerability management and network security policy management.|
 |[Vulcan Cyber risk management platform](https://go.microsoft.com/fwlink/?linkid=2201770)|Vulcan Cyber|Vulcan Cyber gives you the tools to effectively manage the vulnerability and risk lifecycle for all your cyber assets, including application, cloud, and infrastructure.|
 |[Extended Security Posture Management (XSPM)](https://go.microsoft.com/fwlink/?linkid=2201771)|Cymulate|Cymulate's Extended Security Posture Management enables companies to challenge, assess, and optimize their cybersecurity posture.|
 |[Illusive Platform](https://go.microsoft.com/fwlink/?linkid=2201778)|Illusive Networks|Illusive continuously discovers and automatically remediates identity vulnerabilities, and it detects attacks using deceptive controls.|
+|[ServiceNow vulnerability response](https://go.microsoft.com/fwlink/?linkid=2243580)| ServiceNow |  Use the Microsoft Threat and vulnerability management integration to import third-party scanner data about your assets and vulnerabilities. You can then view reports about vulnerabilities and vulnerable items on the Vulnerability Response dashboards.
 
 ### Secure service edge
 
@@ -175,7 +170,7 @@ The following are the solution's categories:
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2201966)|Morphisec|Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into Microsoft 365 Defender dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information.|
+|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2201966)|Morphisec|Provides Moving Target Defense-powered advanced threat prevention and integrates forensics data directly into Microsoft Defender XDR dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information.|
 |[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=2201875)|Nextron systems|Provides on-demand live forensics scans using a signature base focused on persistent threats.|
 
 ## Recommended content

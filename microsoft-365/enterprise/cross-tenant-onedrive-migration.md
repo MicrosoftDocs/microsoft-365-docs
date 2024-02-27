@@ -1,13 +1,13 @@
 ---
 title: Cross-tenant OneDrive migration overview
-ms.author: jhendr
-author: JoanneHendrickson
+ms.author: jtremper
+author: MicrosoftHeidi
 manager: serdars
-ms.date: 10/10/2022
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration
@@ -37,15 +37,20 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 
 ## Licensing
 
-**Cross Tenant User Data Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are per migration (onetime fee). Please contact your Microsoft account team for details.
- 
-Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A5; Office 365 F3/E1/A1/E3/A3/E5/A5; Exchange Online; SharePoint Online; OneDrive for Business.
+>[!Important]
+>As of Nov. 2022, Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers, and is required for cross-tenant migrations. User licenses are per migration (one-time fee) and can be assigned either on the source or target user object. This license also covers Cross-tenant mailbox migration.  Contact your Microsoft account team for details.
+>
+>The Cross Tenant User Data Migration add-on is available as a separate purchase for Microsoft 365 Business Basic, Standard, and Premium; Microsoft 365 F1/F3/E3/E5; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; and OneDrive for Business.
+
+>[!Warning]
+>You must have purchased, or verified that you can purchase, cross tenant user data migration licenses prior to the next steps. Migrations fail if this step has not been completed. Microsoft does not offer exceptions for this licensing requirement.
+
 
 ## Prerequisites and settings
 
 - **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from the official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588).
 
-- **Turn off service encryption with Customer Key enabled.** Confirm that the source OneDrive tenant **doesn't** have Service encryption with Microsoft Purview Customer Key enabled. If enabled on the source tenant, the migration will fail. [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview).
+- **Confirm that the source OneDrive tenant does not have Service encryption with Microsoft Purview Customer Key enabled.** If enabled on the source tenant, the migration will fail. [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview).
 
 - Source OneDrive accounts must be set to Read/Write. If set to Read only, they'll fail.
 
