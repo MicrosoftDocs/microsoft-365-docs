@@ -90,6 +90,7 @@ Microsoft 365 (Office) for iOS/iPadOS supports the following configuration setti
 | [Set   add-ins   preference](/mem/intune/apps/manage-microsoft-office#set-add-ins-preference) | Enable or disable office add-in   platform and/or the Office store portion of the platform. | com.microsoft.office.OfficeWebAddinDisableAllCatalogs<br>com.microsoft.office.OfficeWebAddinDisableOMEXCatalog |
 | [Manage   Teams apps running on   Office](/mem/intune/apps/manage-microsoft-office#manage-teams-apps-running-on-office-for-ios-and-android) | Enable or disable Teams apps on   Office. | com.microsoft.office.officemobile.TeamsApps.IsAllowed |
 | [Microsoft   365 Feed for iOS and   Android](/mem/intune/apps/manage-microsoft-office#enable-or-disable-microsoft-365-feed-for-ios-and-android) | Enable or disable the Microsoft   365 Feed. | com.microsoft.office.officemobile.Feed.IsAllowed |
+| [Copilot with commercial data protection](/mem/intune/apps/manage-microsoft-office#copilot-with-commercial-data-protection) | Enable or disable Copilot in Microsoft 365 app by configuring the following setting in the Intune admin center. | com.microsoft.office.officemobile.BingChatEnterprise.IsAllowed |
 
 You can use the [configuration designer](/mem/intune/apps/app-configuration-policies-use-ios#use-configuration-designer) to add configuration settings for iOS app configuration policies. 
 
@@ -114,6 +115,8 @@ Microsoft 365 (Office) for Android supports the following configuration settings
 | [Set   add-ins   preference](/mem/intune/apps/manage-microsoft-office#set-add-ins-preference) | Enable or disable office add-in   platform and/or the Office store portion of the platform. | com.microsoft.office.OfficeWebAddinDisableAllCatalogs<br>com.microsoft.office.OfficeWebAddinDisableOMEXCatalog |
 | [Manage   Teams apps running on   Office](/mem/intune/apps/manage-microsoft-office#manage-teams-apps-running-on-office-for-ios-and-android) | Enable or disable Teams apps on   Office. | com.microsoft.office.officemobile.TeamsApps.IsAllowed |
 | [Microsoft   365 Feed for iOS and   Android](/mem/intune/apps/manage-microsoft-office#enable-or-disable-microsoft-365-feed-for-ios-and-android) | Enable or disable the Microsoft   365 Feed. | com.microsoft.office.officemobile.Feed.IsAllowed |
+| [Data protection settings in M365 for Android](/mem/intune/apps/manage-microsoft-office#data-protection-settings-in-microsoft-365-office) | Enable or disable offline caching when **Save As to Local Storage** is blocked by the app protection policy. | com.microsoft.intune.mam.IntuneMAMOnly.AllowOfflineCachingWhenSaveAsBlocked |
+| [Copilot with commercial data protection](/mem/intune/apps/manage-microsoft-office#copilot-with-commercial-data-protection) | Enable or disable Copilot in Microsoft 365 app by configuring the following setting in the Intune admin center. | com.microsoft.office.officemobile.BingChatEnterprise.IsAllowed |
 
 You can use the [configuration designer](/mem/intune/apps/app-configuration-policies-use-ios#use-configuration-designer) to add configuration settings for iOS app configuration policies.
 
