@@ -62,10 +62,10 @@ In particular, the incident report includes data from the following automatic an
 
 |Action source|Description|
 |---|---|
-|[Live response API](/microsoft-365/security/defender-endpoint/api/run-live-response.md)|Live response commands that ran through the live response API|
-|[Live response commands](/microsoft-365/security/defender-endpoint/live-response.md)|Live response commands that ran on a device|
-|[Response actions on a device](/microsoft-365/security/defender-endpoint/respond-machine-alerts.md)|Defender for Endpoint response actions that an analyst ran on a device|
-|[Response actions on a file](/microsoft-365/security/defender-endpoint/respond-file-alerts.md)|Defender for Endpoint response actions that an analyst ran on a file|
+|[Live response API](/microsoft-365/security/defender-endpoint/api/run-live-response)|Live response commands that ran through the live response API|
+|[Live response commands](/microsoft-365/security/defender-endpoint/live-response)|Live response commands that ran on a device|
+|[Response actions on a device](/microsoft-365/security/defender-endpoint/respond-machine-alerts)|Defender for Endpoint response actions that an analyst ran on a device|
+|[Response actions on a file](/microsoft-365/security/defender-endpoint/respond-file-alerts)|Defender for Endpoint response actions that an analyst ran on a file|
 |[Manual remediation actions applied to user accounts and email](m365d-remediation-actions.md#remediation-actions-that-are-taken-manually)|Manual remediation actions taken by analysts on user accounts and email after automated investigations in Defender XDR|
 |[Manual remediation actions taken from query results of advanced hunting](advanced-hunting-take-action.md)|Manual remediation actions taken by analysts on devices and files out of the results from advanced hunting queries|
 |[Microsoft Sentinel playbooks ran](/azure/sentinel/automate-responses-with-playbooks)|Microsoft Sentinel playbooks used in investigation and response|
