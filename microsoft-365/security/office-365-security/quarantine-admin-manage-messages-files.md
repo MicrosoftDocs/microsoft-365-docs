@@ -2,7 +2,7 @@
 title: Manage quarantined messages and files as an admin
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.localizationpriority: medium
