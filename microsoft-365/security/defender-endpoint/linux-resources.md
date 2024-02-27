@@ -2,12 +2,11 @@
 title: Microsoft Defender for Endpoint on Linux resources
 ms.reviewer:
 description: Describes resources for Microsoft Defender for Endpoint on Linux, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -143,8 +142,8 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Quarantine management|Add a file detected as a threat to the quarantine|`mdatp threat quarantine add --id [threat-id]`|
 |Quarantine management|Remove a file detected as a threat from the quarantine|`mdatp threat quarantine remove --id [threat-id]`|
 |Quarantine management|Restore a file from the quarantine. Available in Defender for Endpoint version lower than 101.23092.0012.|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
-|Quarantine management|Restore a file from the quarantine with Threat ID. Available in Defender for Endpoint version 101.23092.0012 or higher.|`mdatp threat restore threat-id --id [threat-id] --destination-path [destination-folder]`|
-|Quarantine management|Restore a file from the quarantine with Threat Original Path. Available in Defender for Endpoint version 101.23092.0012 or higher.|`mdatp threat restore threat-path --path [threat-original-path] --destination-path [destination-folder]`|
+|Quarantine management|Restore a file from the quarantine with Threat ID. Available in Defender for Endpoint version 101.23092.0012 or higher.|`mdatp threat quarantine restore threat-id --id [threat-id] --destination-path [destination-folder]`|
+|Quarantine management|Restore a file from the quarantine with Threat Original Path. Available in Defender for Endpoint version 101.23092.0012 or higher.|`mdatp threat quarantine restore threat-path --path [threat-original-path] --destination-path [destination-folder]`|
 |Endpoint Detection and Response|Set early preview |`mdatp edr early-preview [enabled\|disabled]`|
 |Endpoint Detection and Response|Set group-id|`mdatp edr group-ids --group-id [group-id]`|
 |Endpoint Detection and Response|Set / remove tag, only `GROUP` supported|`mdatp edr tag set --name GROUP --value [tag]`|

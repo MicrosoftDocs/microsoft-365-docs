@@ -1,15 +1,11 @@
 ---
 title: Get scan history by session
-description: Learn how to use the get scan history by session api
-keywords: apis, graph api, supported apis, scan history by session
+description: Learn how to use the get scan history by session api.
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -49,7 +45,7 @@ Retrieves a list of the scan history by session.
 
 ## Limitations
 
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+1. Rate limitations for this API are 100 calls per minute and 1,500 calls per hour.
 
 ## Permissions
 
@@ -63,7 +59,7 @@ Delegated (work or school account)|Machine.Read.All|Read all scan information.
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - To view data the user needs to have at least the following role permission: 'ViewData' or 'TvmViewData' (See [Create and manage roles](../user-roles.md) for more information)
+> - To view data the user needs to have at least the following role permission: `ViewData` or `TvmViewData`. For more information, see [Create and manage roles](../user-roles.md).
 
 ## HTTP request
 
@@ -92,7 +88,7 @@ If successful, this method returns 200 - OK response code with a list of the sca
 
 ## Example request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryBySessionId
