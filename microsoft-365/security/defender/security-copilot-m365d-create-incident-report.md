@@ -43,9 +43,9 @@ This guide lists the data in incident reports and contains steps on how to acces
 > [!NOTE]
 > The incident report generation capability is also available in the Copilot for Security standalone experience through the Microsoft Defender plugin. Know more about [preinstalled plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
 
-## Create an incident report
+## Incident report content
 
-Copilot creates an incident report containing the following information:
+Copilot in Defender creates an incident report containing the following information:
 
 - The main incident management actions' timestamps, including:
   - Incident creation and closure
@@ -58,7 +58,21 @@ Copilot creates an incident report containing the following information:
   - Automated actions applied by the system, including Microsoft Sentinel playbooks ran and Microsoft Defender XDR actions applied
 - Follow up actions like recommendations, open issues, or next steps noted by the analysts in the incident logs
 
-To create an incident report, perform the following steps:
+In particular, the incident report includes the following specific automatic and manually-triggered actions and data:
+
+|Action source|Description|
+|---|---|
+|[Live response API](/defender-endpoint/api/run-live-response)|Live response commands ran by the live response API|
+|[Live response commands](/defender-endpoint/live-response)|Live response commands run on a device|
+|[Response actions on a device](/defender-endpoint/respond-machine-alerts)|Defender for Endpoint response actions that an analyst ran on a device|
+|[Response actions on a file](/defender-endpoint/respond-file-alerts)|Defender for Endpoint response actions that an analyst ran on a file|
+|[Manual remediation actions applied to user accounts and email](m365d-remediation-actions.md#remediation-actions-that-are-taken-manually)|Manual remediation actions taken by analysts on user accounts and email after automated investigations in Defender XDR|
+|[Manual remediation actions taken from query results of advanced hunting](advanced-hunting-take-action.md)|Manual remediation actions taken by analysts on devices and files out of the results from advanced hunting queries|
+|[Microsoft Sentinel playbooks ran](/azure/sentinel/automate-responses-with-playbooks)|Microsoft Sentinel playbooks used|
+
+## Create an incident report
+
+To create an incident report with Copilot in Defender, perform the following steps:
 
 1. Open an incident page. In the incident page, select **Generate incident report** located at the top right corner of the page. Alternately, you can select the report icon found in the Copilot pane.
 :::image type="content" source="../../media/copilot-in-defender/incident-report/fig1-new-sec-copilot-m365d-create-report.png" alt-text="Screenshot highlighting the generate incident report and report icon buttons in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig1-expand-sec-copilot-m365d-create-report.png":::
