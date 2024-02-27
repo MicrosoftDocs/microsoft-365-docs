@@ -204,14 +204,6 @@
             href: mac-schedule-scan.md
           - name: Configure Microsoft Defender for Endpoint on macOS
             items:
-          - name: Configure and validate exclusions
-            href: mac-exclusions.md
-          - name: Set preferences
-            href: mac-preferences.md
-          - name: Detect and block Potentially Unwanted Applications
-            href: mac-pua.md
-          - name: Protect macOS security settings using tamper protection
-            href: tamperprotection-macos.md
       - name: Update Defender for Endpoint on macOS
         href: mac-updates.md
       - name: Privacy for Microsoft Defender for Endpoint on macOS
@@ -365,8 +357,6 @@
         href: basic-permissions.md
       - name: Assign user access to the portal
         href: assign-portal-access.md
-      - name: Manage portal access using RBAC
-        href: rbac.md
         items:
         - name: Create and manage roles
           href: user-roles.md
@@ -374,7 +364,6 @@
           href: machine-groups.md
         - name: Create and manage device tags
           href: machine-tags.md
-
     - name: Rules
       items:
       - name: Manage suppression rules
@@ -1316,20 +1305,6 @@
           href: connected-applications.md
         - name: API explorer
           href: api-explorer.md
-
-      - name: Role-based access control
-        items:
-        - name: Manage portal access using RBAC
-          href: rbac.md
-        - name: Create and manage roles
-          href: user-roles.md
-        - name: Create and manage device groups
-          items:
-          - name: Using device groups
-            href: machine-groups.md
-          - name: Create and manage device tags
-            href: machine-tags.md
-
     - name: Managed security service provider (MSSP) integration
       items:
       - name: Configure managed security service provider integration
@@ -1391,7 +1366,7 @@
       items:
       - name: Troubleshooting mode on macOS
         href: mac-troubleshoot-mode.md
-      - name: Troubleshoot installation issues
+      - name: Troubleshoot macOS installation issues
         href: mac-support-install.md
       - name: Troubleshoot performance issues
         href: mac-support-perf.md
@@ -1413,7 +1388,7 @@
 
     - name: Troubleshoot Microsoft Defender for Endpoint on Linux
       items:
-      - name: Troubleshoot installation issues
+      - name: Troubleshoot Linux installation issues
         href: linux-support-install.md
       - name: Investigate agent health issues
         href: health-status.md
