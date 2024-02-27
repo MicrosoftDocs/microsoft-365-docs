@@ -633,7 +633,7 @@
           - name: Software developer FAQ
             href: developer-faq.yml
     - name: Microsoft Sentinel docs
-      href: /azure/sentinel/index.yml
+      href: /azure/sentinel
     - name: Microsoft Defender XDR docs
       items: 
        - name: Defender for Office 365
