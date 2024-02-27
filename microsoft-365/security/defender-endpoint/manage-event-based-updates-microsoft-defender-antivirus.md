@@ -7,7 +7,7 @@ ms.topic: conceptual
 author: siosulli
 ms.author: siosulli
 ms.custom: nextgen
-ms.date: 02/18/2024
+ms.date: 02/27/2024
 ms.reviewer: pahuijbr
 manager: deniseb
 ms.subservice: ngp
@@ -33,38 +33,37 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-Microsoft Defender Antivirus allows you to determine if updates should (or should not) occur after certain events, such as at startup or after receiving specific reports from the cloud-delivered protection service.
+Microsoft Defender Antivirus allows you to determine if updates should (or shouldn't) occur after certain events, such as at startup or after receiving specific reports from the cloud-delivered protection service.
 
 ## Check for protection updates before running a scan
 
 You can use Microsoft Defender for Endpoint Security Settings Management, Microsoft Intune, Microsoft Configuration Manager, Group Policy, PowerShell cmdlets, and WMI to force Microsoft Defender Antivirus to check and download protection updates before running a scheduled scan.
 
 ### Use Microsoft Defender for Endpoint Security Settings Management to check for protection updates before running a scan
-1. On your Microsoft Defender for Endpoint console ([https://security.microsoft.com](https://security.microsoft.com))
 
-1. Under Endpoints > Configuration management > Endpoint security policies > Create new Policy 
+1. On your Microsoft Defender for Endpoint console ([https://security.microsoft.com](https://security.microsoft.com)), go to **Endpoints** > **Configuration management** > **Endpoint security policies** > **Create new policy**.
 
-Under Select Platform "Windows 10, Windows 11, and Windows Server"
-Under Select Templates "Microsoft Defender Antivirus"
-Name:
-Description:
-Click on Next
-1. Go to the **Scheduled scans** section and set **Check For Signatures Before Running Scan** to **Enabled**.
+   - In the **Platform** list, select **Windows 10, Windows 11, and Windows Server**.
+   - In the **Select Templates** list, select **Microsoft Defender Antivirus**.
 
-1. Deploy the updated policy as usual.
+2. Fill in the name and description, and then select **Next**>
+
+3. Go to the **Scheduled scans** section and set **Check For Signatures Before Running Scan** to **Enabled**.
+
+4. Deploy the updated policy as usual.
 
 ### Use Microsoft Intune to check for protection updates before running a scan
-1. On your Microsoft Intune console ([https://intune.microsoft.com/](https://intune.microsoft.com/)),  
 
-1. Under Endpoints > Configuration management > Endpoint security policies > Create new Policy 
+1. In the [Microsoft Intune admin center](https://intune.microsoft.com/), go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new policy**.
 
-Under Select Platform "Windows 10, Windows 11, and Windows Server"
-Under Select Templates "Microsoft Defender Antivirus"
-Name:
-Description:
-Click on Next
-1. Go to the **Scheduled scans** section and set **Check For Signatures Before Running Scan** to **Enabled**.
-1. Deploy the updated policy as usual.
+   - In the **Platform** list, select **Windows 10, Windows 11, and Windows Server**.
+   - In the **Select Templates** list, select **Microsoft Defender Antivirus**.
+
+2. Fill in the name and description, and then select **Next**.
+
+3. Go to the **Scheduled scans** section, and set **Check For Signatures Before Running Scan** to **Enabled**.
+
+4. Save and deploy the policy.
 
 ### Use Configuration Manager to check for protection updates before running a scan
 
