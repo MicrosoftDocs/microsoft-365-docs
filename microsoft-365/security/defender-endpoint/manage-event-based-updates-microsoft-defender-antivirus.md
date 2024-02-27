@@ -131,17 +131,17 @@ You can also use Group Policy, PowerShell, or WMI to configure Microsoft Defende
 
 ### Use Group Policy to download updates when Microsoft Defender Antivirus is not present
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and select **Edit**.
 
 2. Using the **Group Policy Management Editor**, go to **Computer configuration**.
 
-3. Click **Policies** then **Administrative templates**.
+3. Select **Policies** then **Administrative templates**.
 
 4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
 5. Double-click **Initiate security intelligence update on startup** and set the option to **Enabled**.
 
-6. Click **OK**.
+6. Select **OK**.
 
 ### Use PowerShell cmdlets to download updates when Microsoft Defender Antivirus is not present
 
@@ -169,21 +169,21 @@ For more information, see [Windows Defender WMIv2 APIs](/previous-versions/windo
 
 Microsoft Defender Antivirus can make changes to its protection based on cloud-delivered protection. Such changes can occur outside of normal or scheduled protection updates.
 
-If you have enabled cloud-delivered protection, Microsoft Defender Antivirus will send files it is suspicious about to the Windows Defender cloud. If the cloud service reports that the file is malicious, and the file is detected in a recent protection update, you can use Group Policy to configure Microsoft Defender Antivirus to automatically receive that protection update. Other important protection updates can also be applied.
+If you have enabled cloud-delivered protection, Microsoft Defender Antivirus sends files it's suspicious about to the Windows Defender cloud. If the cloud service reports that the file is malicious, and the file is detected in a recent protection update, you can use Group Policy to configure Microsoft Defender Antivirus to automatically receive that protection update. Other important protection updates can also be applied.
 
 ### Use Group Policy to automatically download recent updates based on cloud-delivered protection
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and select **Edit**.
 
 2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
-3. Click **Policies** then **Administrative templates**.
+3. Select **Policies** then **Administrative templates**.
 
 4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
-5. Double-click **Allow real-time security intelligence updates based on reports to Microsoft MAPS** and set the option to **Enabled**. Then click **OK**.
+5. Double-click **Allow real-time security intelligence updates based on reports to Microsoft MAPS** and set the option to **Enabled**. Then select **OK**.
 
-6. **Allow notifications to disable definitions-based reports to Microsoft MAPS** and set the option to **Enabled**. Then click **OK**.
+6. **Allow notifications to disable definitions-based reports to Microsoft MAPS** and set the option to **Enabled**. Then select **OK**.
 
 > [!NOTE]
 > **Allow notifications to disable definitions based reports** enables Microsoft MAPS to disable those definitions known to cause false-positive reports. You must configure your computer to join Microsoft MAPS for this function to work.
@@ -206,4 +206,5 @@ If you have enabled cloud-delivered protection, Microsoft Defender Antivirus wil
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
