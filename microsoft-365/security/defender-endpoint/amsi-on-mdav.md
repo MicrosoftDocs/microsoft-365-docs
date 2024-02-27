@@ -1,13 +1,13 @@
 ---
 title: "Antimalware Scan Interface (AMSI) integration with Microsoft Defender Antivirus"  
-description:  
-author:  
+description: describes fileless malware and how Microsoft Defender Antivirus uses AMSI to protect against hidden threats
+author:  dansimp
 ms.author: dansimp  
 manager:  dansimp
 ms.date: 02/27/2024  
-ms.topic:  
-ms.service: microsoft-365-security  
-ms.subservice: mdvm  
+ms.topic: conceptual
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority:  
 ms.collection:  
 ms.custom: QuickDraft  
@@ -90,11 +90,10 @@ To enable AMSI, follow these steps:
 For more information on configuring scanning options, refer to the
 following resources:
 
-- [Configure scanning options for Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus)
+- [Configure scanning options for Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [Defender Policy CSP - Windows Client Management](/windows/client-management/mdm/policy-csp-defender)
 
 ### AMSI resources
-
 [Antimalware Scan Interface (AMSI) APIs](/windows/win32/amsi/antimalware-scan-interface-portal) are also available for developers and antivirus
 vendors to implement.
 
@@ -102,9 +101,11 @@ Note that other Microsoft products such as [Exchange](https://techcommunity.micr
 integration. 
 
 ## Additional Resources to protect against fileless malware
-[Windows Defender Application Control and AppLocker](/windows/security/application-security/application-control/windows-defender-application-control/wdac-and-applocker-overview). Enforces strong code Integrity policies and to allow only trusted applications to run. In the context of fileless malware, WDAC locks down PowerShell to Constrained Language Mode, which limits the extended language features that can lead to unverifiable code execution, such as direct .NET scripting, invocation of Win32 APIs via the Add-Type cmdlet, and interaction with COM objects. This essentially mitigates PowerShell-based reflective DLL injection attacks. 
-[Attack surface reduction](overview-attack-surface-reduction.md) helps admins protect against common attack vectors.
-[Enable virtualization-based protection of code integrity](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity). Mitigates kernel-memory exploits  through Hypervisor Code Integrity (HVCI), which makes it difficult to inject malicious code using kernel-mode software vulnerabilities. 
+- [Windows Defender Application Control and AppLocker](/windows/security/application-security/application-control/windows-defender-application-control/wdac-and-applocker-overview). Enforces strong code Integrity policies and to allow only trusted applications to run. In the context of fileless malware, WDAC locks down PowerShell to Constrained Language Mode, which limits the extended language features that can lead to unverifiable code execution, such as direct .NET scripting, invocation of Win32 APIs via the Add-Type cmdlet, and interaction with COM objects. This essentially mitigates PowerShell-based reflective DLL injection attacks. 
+
+- [Attack surface reduction](overview-attack-surface-reduction.md) helps admins protect against common attack vectors.
+
+- [Enable virtualization-based protection of code integrity](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity). Mitigates kernel-memory exploits  through Hypervisor Code Integrity (HVCI), which makes it difficult to inject malicious code using kernel-mode software vulnerabilities. 
 
 ## END rewrite
  
