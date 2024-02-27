@@ -3,11 +3,11 @@ title: Address false positives/negatives in Microsoft Defender for Endpoint
 description: Learn how to handle false positives or false negatives in Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
 ms.subservice: ngp
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/18/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security

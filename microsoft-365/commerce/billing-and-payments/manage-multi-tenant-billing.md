@@ -129,4 +129,4 @@ As a Global administrator of an associated billing tenant, you can accept or dec
 ## Related articles
 
 [Understand your Microsoft business billing account](../manage-billing-accounts.md) (article)\
-[Understand your Microsoft business billing profile](manage-billing-profiles.md)(article)
+[Manage your Microsoft business billing profiles](manage-billing-profiles.md)(article)

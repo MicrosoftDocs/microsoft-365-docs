@@ -1,16 +1,12 @@
 ---
 title: Visit the Action center to see remediation actions
 description: Use the action center to view details and results following an automated investigation
-keywords: action, center, autoir, automated, investigation, response, remediation
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.service: defender-endpoint
 ms.subservice: edr
-author: dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -20,7 +16,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 02/21/2024
 ---
 
 # Visit the Action center to see remediation actions

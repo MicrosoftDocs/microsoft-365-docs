@@ -6,11 +6,11 @@ ms.localizationpriority: high
 ms.date: 12/06/2023
 audience: ITPro
 ms.topic: reference
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska, tudobril
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 ms.collection: 
 - m365-security

@@ -5,10 +5,10 @@ ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 02/02/2024
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.reviewer: mkaminska
-manager: dansimp
+manager: deniseb
 ms.custom: asr
 ms.subservice: asr
 ms.topic: overview

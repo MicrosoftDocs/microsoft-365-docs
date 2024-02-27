@@ -1,17 +1,14 @@
 ---
 title: Evaluate controlled folder access
-description: See how controlled folder access can help protect files from being changed by malicious apps.
-keywords: Exploit protection, windows 10, windows 11, windows defender, ransomware, protect, evaluate, test, demo, try
+description: See how controlled folder access can help protect files from malicious apps.
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
-author: dansimp
-ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+ms.reviewer: sugamar
+manager: deniseb
 ms.subservice: asr
 ms.collection: 
 - m365-security
@@ -45,7 +42,7 @@ This article helps you evaluate controlled folder access. It explains how to ena
 
 ## Use audit mode to measure impact
 
-Enable the controlled folder access in audit mode to see a record of what *would* have happened if it was fully enabled. Test how the feature will work in your organization to ensure it doesn't affect your line-of-business apps. You can also get an idea of how many suspicious file modification attempts generally occur over a certain period of time.
+Enable the controlled folder access in audit mode to see a record of what could occur if it were enabled. Test how the feature works in your organization to ensure it doesn't affect your line-of-business apps. You can also get an idea of how many suspicious attempts to modify files generally occur over a certain period of time.
 
 To enable audit mode, use the following PowerShell cmdlet:
 
@@ -61,18 +58,18 @@ You can also use Group Policy, Intune, mobile device management (MDM), or Micros
 
 The following controlled folder access events appear in Windows Event Viewer under Microsoft/Windows/Windows Defender/Operational folder.
 
-Event ID | Description
--|-
- 5007 | Event when settings are changed
- 1124 | Audited controlled folder access event
- 1123 | Blocked controlled folder access event
+| Event ID | Description |
+| --|--|
+| 5007 | Event when settings are changed |
+| 1124 | Audited controlled folder access event |
+| 1123 | Blocked controlled folder access event |
 
 > [!TIP]
 > You can configure a [Windows Event Forwarding subscription](/windows/win32/wec/setting-up-a-source-initiated-subscription) to collect the logs centrally. 
 
 ## Customize protected folders and apps
 
-During your evaluation, you may wish to add to the list of protected folders, or allow certain apps to modify files.
+During your evaluation, you might want to add to the list of protected folders, or allow certain apps to modify files.
 
 See [Protect important folders with controlled folder access](controlled-folders.md) for configuring the feature with management tools, including Group Policy, PowerShell, and MDM configuration service providers (CSPs).
 
@@ -81,4 +78,5 @@ See [Protect important folders with controlled folder access](controlled-folders
 - [Protect important folders with controlled folder access](controlled-folders.md)
 - [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)
 - [Use audit mode](audit-windows-defender.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

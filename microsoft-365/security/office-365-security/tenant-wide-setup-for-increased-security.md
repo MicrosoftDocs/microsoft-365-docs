@@ -4,10 +4,9 @@ f1.keywords:
   - NOCSH
 ms.author: bcarter
 author: BrendaCarter
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 ms.collection: 
   - Ent_O365
@@ -45,7 +44,7 @@ The Microsoft Defender portal has capabilities for both protection and reporting
 As an initial step, you need to configure *email authentication* records in DNS for all custom email domains in Microsoft 365 (SPF, DKIM, and DMARC). Microsoft 365 automatically configures email authentication for the \*.onmicrosoft.com domain. For more information, see [Step 1: Configure email authentication for your Microsoft 365 domains](mdo-deployment-guide.md#step-1-configure-email-authentication-for-your-microsoft-365-domains).
 
 > [!NOTE]
-> For non-standard deployments of SPF, hybrid deployments, and troubleshooting: [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
+> For non-standard deployments of SPF, hybrid deployments, and troubleshooting: [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
 
 Most protection features in Exchange Online Protection (EOP) and Defender for Office 365 come with *default policy configurations*. For more information, see the table [here](mdo-deployment-guide.md#step-2-configure-protection-policies).
 
