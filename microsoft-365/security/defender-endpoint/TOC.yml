@@ -803,6 +803,9 @@
       - name: UEFI scanning in Defender for Endpoint
         href: uefi-scanning-in-defender-for-endpoint.md
 
+      - name: Run Microsoft Defender Antivirus in a sandbox
+        href: sandboxing-mdav.md
+
     - name: Address false positives/negatives in Microsoft Defender for Endpoint
       href: defender-endpoint-false-positives-negatives.md
 
