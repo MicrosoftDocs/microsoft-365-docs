@@ -2,15 +2,11 @@
 title: Microsoft Defender for Endpoint APIs connection to Power BI
 ms.reviewer:
 description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender for Endpoint APIs.
-keywords: apis, supported apis, Power BI, reports
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -37,7 +33,7 @@ ms.date: 12/18/2020
 
 [!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
-In this section you will learn to create a Power BI report on top of Defender for Endpoint APIs.
+In this section, you learn to create a Power BI report on top of Defender for Endpoint APIs.
 
 The first example demonstrates how to connect Power BI to Advanced Hunting API, and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.
 
@@ -107,7 +103,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API, 
 
    :::image type="content" source="../images/power-bi-set-credentials-organizational-cont.png" alt-text="The sign-in confirmation message in the Organizational account menu item" lightbox="../images/power-bi-set-credentials-organizational-cont.png":::
 
-Now the results of your query will appear as a table and you can start to build visualizations on top of it!
+Now the results of your query appear as a table and you can start to build visualizations on top of it!
 
 You can duplicate this table, rename it, and edit the Advanced Hunting query inside to get any data you would like.
 
@@ -115,7 +111,7 @@ You can duplicate this table, rename it, and edit the Advanced Hunting query ins
 
 The only difference from the previous example is the query inside the editor. Follow steps 1-3 above.
 
-At step 4, instead of the code in that example, copy the code below and paste it in the editor to pull all **Machine Actions** from your organization:
+At step 4, instead of the code in that example, copy the following code, and paste it in the editor to pull all **Machine Actions** from your organization:
 
 ```
     let
@@ -128,19 +124,20 @@ At step 4, instead of the code in that example, copy the code below and paste it
 ```
 
 You can do the same for **Alerts** and **Machines**.
-You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md).
+You also can use OData queries for queries filters. See [Using OData Queries](exposed-apis-odata-samples.md).
 
 ## Power BI dashboard samples in GitHub
 
-For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
+For more information, see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## Sample reports
 
 View the Microsoft Defender for Endpoint Power BI report samples. For more information, see [Browse code samples](/samples/browse/?products=mdatp).
 
-## Related topics
+## Related articles
 
 - [Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Using OData Queries](exposed-apis-odata-samples.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]
