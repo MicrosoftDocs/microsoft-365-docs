@@ -57,23 +57,21 @@ The analyzer and all the above scenario flags can be initiated remotely by runni
 
 > [!NOTE]
 > When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) to collect Microsoft Defender Antivirus related support logs.
-
-> [!NOTE]
 > You can use '-g' flag to validate URLs for a specific datacenter region even without being onboarded to that region<br>
-> For example:<br>
-> 'MDEClientAnalyzer.cmd -g EU' will force the analyzer to test cloud URLs in Europe region.
+> For example, `MDEClientAnalyzer.cmd -g EU` forces the analyzer to test cloud URLs in Europe region.
 
-> [!NOTE]
-> - When using RemoteMDEClientAnalyzer.cmd it calls into psexec to download the tool from the configured file share and then run it locally via PsExec.exe.
-```
-The CMD script uses '-r' flag to specify that it is running remotely within SYSTEM context and so no prompt to the user will be presented.
-```> - That same flag can be used with MDEClientAnalyzer.cmd to avoid a prompt to user that requests to specify the number of minutes for data collection. For example:
->
->    **MDEClientAnalyzer.cmd -r -i -m 5**
->
->   - **-r** - Indicates that tool is being run from remote (or non-interactive context)
->   - **-i** - Scenario flag for collection of network trace along with other related logs
->   - **-m** \# - The number of minutes to run (5 minutes in the above example)
->   
->  - When using MDEClientAnalyzer.cmd the script checks for privileges using "net session" which requires the service "Server" to be running. If it is not, you will get the error message _Script is running with insufficient privileges_. Run it with administrator privileges if ECHO is off.
+## A few points to keep in mind
+
+When you use `RemoteMDEClientAnalyzer.cmd`, it calls into `psexec` to download the tool from the configured file share and then run it locally via `PsExec.exe`.
+
+The CMD script uses the `-r` flag to specify that it is running remotely within SYSTEM context, and so no prompt is presented to the user.
+
+That same flag can be used with `MDEClientAnalyzer.cmd` to avoid a prompt to the user to specify the number of minutes for data collection. For example, consider `MDEClientAnalyzer.cmd -r -i -m 5`.
+
+- `-r` indicates that tool is being run from remote (or non-interactive context).
+- `-i` is the scenario flag for collection of network trace along with other related logs.
+- `-m #` denotes the number of minutes to run (we used 5 minutes in our example).
+
+When using `MDEClientAnalyzer.cmd`, the script checks for privileges using `net session`, which requires the service `Server` to be running. If it's not, you will get the error message _Script is running with insufficient privileges_. Run it with administrator privileges if ECHO is off.
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
