@@ -536,12 +536,12 @@ Dependencies: Microsoft Defender Antivirus
 
 ### Block rebooting machine in Safe Mode (preview)
  
-This rule prevents execution of commands for restarting machine in Safe mode.
+This rule prevents the execution of commands to restart machines in Safe Mode.
  
-Safe Mode is a diagnostic mode that only loads the essential files and drivers needed for Windows to run. However, in Safe mode, many security products are either disabled or operate in a limited capacity, which allows attackers to further launch tampering commands, or simply execute and encrypt all files on the machine. This rule blocks such attacks by preventing processes from restarting machine in Safe mode.
+Safe Mode is a diagnostic mode that only loads the essential files and drivers needed for Windows to run. However, in Safe Mode, many security products are either disabled or operate in a limited capacity, which allows attackers to further launch tampering commands, or simply execute and encrypt all files on the machine. This rule blocks such attacks by preventing processes from restarting machines in Safe Mode.
  
 > [!NOTE]
-> This is a preview of the capabilities of this rule. Additional upgrades to improve efficacy are under development.
+> This capability is currently in preview. Additional upgrades to improve efficacy are under development.
  
 Intune Name: `[PREVIEW] Block rebooting machine in Safe Mode`
 
@@ -578,7 +578,7 @@ This rule blocks the use of executable files that are identified as copies of Wi
 Some malicious programs may try to copy or impersonate Windows system tools to avoid detection or gain privileges. Allowing such executable files can lead to potential attacks. This rule prevents propagation and execution of such duplicates and imposters of the system tools on Windows machines. 
 
 > [!NOTE]
-> This is a preview of the capabilities of this rule. Additional upgrades to improve efficacy are under development.
+> This capability is currently in preview. Additional upgrades to improve efficacy are under development.
  
 Intune Name: `[PREVIEW] Block use of copied or impersonated system tools`
 
