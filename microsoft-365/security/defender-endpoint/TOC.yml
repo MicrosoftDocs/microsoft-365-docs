@@ -20,8 +20,6 @@
       href: windows-whatsnew.md
     - name: What's new in Microsoft Defender for Endpoint on other platforms
       items:
-      - name: What's new in Defender for Endpoint on macOS
-        href: mac-whatsnew.md
       - name: What's new in Defender for Endpoint on Linux
         href: linux-whatsnew.md
       - name: What's new in Defender for Endpoint on Android
@@ -46,8 +44,6 @@
     - name: Overview of Microsoft Defender for Endpoint on other platforms
       href: non-windows.md
       items: 
-      - name: Microsoft Defender for Endpoint on macOS
-        href: microsoft-defender-endpoint-mac.md
       - name: Microsoft Defender for Endpoint on Linux
         href: microsoft-defender-endpoint-linux.md
       - name: Microsoft Defender for Endpoint on Android
@@ -156,35 +152,36 @@
       - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
         href: configure-endpoints-vdi.md
 
-    - name: Microsoft Defender for Endpoint on other platforms
+    - name: Onboard non-Windows devices
+      href: configure-endpoints-non-windows.md
+    - name: Defender for Endpoint on macOS
       items:
-      - name: Onboard non-Windows devices
-        href: configure-endpoints-non-windows.md
       - name: Microsoft Defender for Endpoint on macOS
+        href: microsoft-defender-endpoint-mac.md
+      - name: What's new in Defender for Endpoint on macOS
+        href: mac-whatsnew.md
+      - name: Deploy Defender for Endpoint on macOS
         items:
-        - name: Deploy Defender for Endpoint on macOS
+        - name: Deployment with Microsoft Intune
+          href: mac-install-with-intune.md
+        - name: JAMF Pro-based deployment
           items:
-          - name: Deployment with Microsoft Intune
-            href: mac-install-with-intune.md
-          - name: JAMF Pro-based deployment
-            items:
-            - name: Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro
-              href: mac-install-with-jamf.md
-            - name: Log in to Jamf Pro
-              href: mac-install-jamfpro-login.md
-            - name: Set up device groups
-              href: mac-jamfpro-device-groups.md
-            - name: Set up policies
-              href: mac-jamfpro-policies.md
-            - name: Enroll devices
-              href: mac-jamfpro-enroll-devices.md
-                
+          - name: Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro
+            href: mac-install-with-jamf.md
+          - name: Log in to Jamf Pro
+            href: mac-install-jamfpro-login.md
+          - name: Set up device groups
+            href: mac-jamfpro-device-groups.md
+          - name: Set up policies
+            href: mac-jamfpro-policies.md
+          - name: Enroll devices
+            href: mac-jamfpro-enroll-devices.md        
           - name: Deployment with Mobile Device Management (MDM) systems
             href: mac-install-with-other-mdm.md
-          - name: Manual deployment
-            href: mac-install-manually.md
-        - name: Configure Defender for Endpoint on macOS
-          items:
+        - name: Manual deployment
+          href: mac-install-manually.md
+      - name: Configure Defender for Endpoint on macOS
+        items:
           - name: Configure and validate exclusions
             href: mac-exclusions.md
           - name: Set preferences
@@ -205,59 +202,60 @@
               href: mac-device-control-faq.md
           - name: Schedule scans
             href: mac-schedule-scan.md
-        - name: Update Defender for Endpoint on macOS
-          href: mac-updates.md
-        - name: Privacy for Microsoft Defender for Endpoint on macOS
-          href: mac-privacy.md
-        - name: Resources for Microsoft Defender for Endpoint on macOS
-          href: mac-resources.md
-
-      - name: Microsoft Defender for Endpoint on Linux
-        items:
-        - name: Deploy Defender for Endpoint on Linux
-          items:
-          - name: Defender for Endpoint plug-in for WSL
-            href: mde-plugin-wsl.md
-          - name: Puppet based deployment
-            href: linux-install-with-puppet.md
-          - name: Ansible based deployment
-            href: linux-install-with-ansible.md
-          - name: Chef based deployment
-            href: linux-deploy-defender-for-endpoint-with-chef.md
-          - name: Manual deployment
-            href: linux-install-manually.md
-          - name: Saltstack-based deployment
-            href: linux-install-with-saltack.md
-          - name: Advanced deployment for Defender for Endpoint on Linux
-            href: comprehensive-guidance-on-linux-deployment.md
-          - name: Deployment guidance for Defender for Endpoint on Linux for SAP
-            href: mde-linux-deployment-on-sap.md
-        - name: Configure Defender for Endpoint on Linux
-          items:
-          - name: Configure and validate exclusions
-            href: linux-exclusions.md
-          - name: Static proxy configuration
-            href: linux-static-proxy-configuration.md
-          - name: Set preferences
-            href: linux-preferences.md
-          - name: Detect and block Potentially Unwanted Applications
-            href: linux-pua.md
-          - name: Schedule scans with Microsoft Defender for Endpoint on Linux
-            href: linux-schedule-scan-mde.md
-          - name: Schedule antivirus scan in Defender for Endpoint on Linux
-            href: schedule-antivirus-scan-in-mde.md
-          - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
-            href: linux-update-MDE-Linux.md
-          - name: Configure eBPF-based sensor
-            href: linux-support-ebpf.md 
-        - name: Update Defender for Endpoint on Linux
-          href: linux-updates.md
-        - name: Privacy for Defender for Endpoint on Linux
-          href: linux-privacy.md
-        - name: Resources for Microsoft Defender for Endpoint on Linux
-          href: linux-resources.md
-      - name: Mobile Threat Defense
-        items:
+          - name: Configure Microsoft Defender for Endpoint on macOS
+            items:
+      - name: Update Defender for Endpoint on macOS
+        href: mac-updates.md
+      - name: Privacy for Microsoft Defender for Endpoint on macOS
+        href: mac-privacy.md
+      - name: Resources for Microsoft Defender for Endpoint on macOS
+        href: mac-resources.md
+    - name: Microsoft Defender for Endpoint on Linux
+      items:
+       - name: Deploy Defender for Endpoint on Linux
+         items:
+         - name: Defender for Endpoint plug-in for WSL
+           href: mde-plugin-wsl.md
+         - name: Puppet based deployment
+           href: linux-install-with-puppet.md
+         - name: Ansible based deployment
+           href: linux-install-with-ansible.md
+         - name: Chef based deployment
+           href: linux-deploy-defender-for-endpoint-with-chef.md
+         - name: Manual deployment
+           href: linux-install-manually.md
+         - name: Saltstack-based deployment
+           href: linux-install-with-saltack.md
+         - name: Advanced deployment for Defender for Endpoint on Linux
+           href: comprehensive-guidance-on-linux-deployment.md
+         - name: Deployment guidance for Defender for Endpoint on Linux for SAP
+           href: mde-linux-deployment-on-sap.md
+       - name: Configure Defender for Endpoint on Linux
+         items:
+         - name: Configure and validate exclusions
+           href: linux-exclusions.md
+         - name: Static proxy configuration
+           href: linux-static-proxy-configuration.md
+         - name: Set preferences
+           href: linux-preferences.md
+         - name: Detect and block Potentially Unwanted Applications
+           href: linux-pua.md
+         - name: Schedule scans with Microsoft Defender for Endpoint on Linux
+           href: linux-schedule-scan-mde.md
+         - name: Schedule antivirus scan in Defender for Endpoint on Linux
+           href: schedule-antivirus-scan-in-mde.md
+         - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
+           href: linux-update-MDE-Linux.md
+         - name: Configure eBPF-based sensor
+           href: linux-support-ebpf.md 
+       - name: Update Defender for Endpoint on Linux
+         href: linux-updates.md
+       - name: Privacy for Defender for Endpoint on Linux
+         href: linux-privacy.md
+       - name: Resources for Microsoft Defender for Endpoint on Linux
+         href: linux-resources.md
+    - name: Mobile Threat Defense
+      items:
         - name: Mobile Threat Defense Overview
           href: mtd.md
         - name: Deploy
@@ -268,74 +266,24 @@
             href: ios-install.md
           - name: Deployment on iOS with Mobile Application Manager
             href: ios-install-unmanaged.md
-
-    - name: Configure Mobile Threat Defense
-      items:
-      - name: Mobile device resources for Defender for Endpoint 
-        href: mobile-resources-defender-endpoint.md
-      - name: Configure Defender for Endpoint on Android features
-        href: android-configure.md
-      - name: Configure Defender for Endpoint on Android risk signals using app protection policy
-        href: android-configure-mam.md
-      - name: Privacy for Defender for Endpoint on Android
-        href: android-privacy.md
-      - name: Configure Defender for Endpoint on iOS features
-        href: ios-configure-features.md
-      - name: Privacy for Defender for Endpoint on iOS
-        href: ios-privacy.md
+        - name: Configure Mobile Threat Defense
+          items:
+          - name: Mobile device resources for Defender for Endpoint 
+            href: mobile-resources-defender-endpoint.md
+          - name: Configure Defender for Endpoint on Android features
+            href: android-configure.md
+          - name: Configure Defender for Endpoint on Android risk signals using app protection policy
+            href: android-configure-mam.md
+          - name: Privacy for Defender for Endpoint on Android
+            href: android-privacy.md
+          - name: Configure Defender for Endpoint on iOS features
+            href: ios-configure-features.md
+          - name: Privacy for Defender for Endpoint on iOS
+            href: ios-privacy.md
     - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
       href: run-detection-test.md
-    - name: Configure Microsoft Defender for Endpoint on macOS
-      items:
-      - name: Configure and validate exclusions
-        href: mac-exclusions.md
-      - name: Set preferences
-        href: mac-preferences.md
-      - name: Detect and block Potentially Unwanted Applications
-        href: mac-pua.md
-      - name: Protect macOS security settings using tamper protection
-        href: tamperprotection-macos.md
-      - name: Device control
-        items:
-        - name: Device control overview
-          href: mac-device-control-overview.md
-        - name: JAMF examples
-          href: mac-device-control-jamf.md
-        - name: Intune examples
-          href: mac-device-control-intune.md
-        - name: macOS Device Control frequently asked questions (FAQ)
-          href: mac-device-control-faq.md
 
-      - name: Schedule scans
-        href: mac-schedule-scan.md
 
-    - name: Configure Microsoft Defender for Endpoint on Linux
-      items:
-      - name: Configure and validate exclusions
-        href: linux-exclusions.md
-      - name: Static proxy configuration
-        href: linux-static-proxy-configuration.md
-      - name: Set preferences
-        href: linux-preferences.md
-      - name: Detect and block Potentially Unwanted Applications
-        href: linux-pua.md
-      - name: Schedule scans with Microsoft Defender for Endpoint on Linux
-        href: linux-schedule-scan-mde.md
-      - name: Schedule antivirus scan in Defender for Endpoint on Linux
-        href: schedule-antivirus-scan-in-mde.md
-      - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
-        href: linux-update-MDE-Linux.md
-      - name: Configure eBPF-based sensor
-        href: linux-support-ebpf.md 
-
-    - name: Configure Mobile Threat Defense
-      items:
-      - name: Configure Microsoft Defender for Endpoint on Android features
-        href: android-configure.md
-      - name: Configure Microsoft Defender for Endpoint on Android risk signals using app protection policy
-        href: android-configure-mam.md
-      - name: Configure Microsoft Defender for Endpoint on iOS features
-        href: ios-configure-features.md
   - name: How to guides
     items:
     - name: Integration with Microsoft Defender for Cloud
@@ -394,8 +342,6 @@
         href: basic-permissions.md
       - name: Assign user access to the portal
         href: assign-portal-access.md
-      - name: Manage portal access using RBAC
-        href: rbac.md
         items:
         - name: Create and manage roles
           href: user-roles.md
@@ -403,7 +349,6 @@
           href: machine-groups.md
         - name: Create and manage device tags
           href: machine-tags.md
-
     - name: Rules
       items:
       - name: Manage suppression rules
@@ -1351,20 +1296,6 @@
           href: connected-applications.md
         - name: API explorer
           href: api-explorer.md
-
-      - name: Role-based access control
-        items:
-        - name: Manage portal access using RBAC
-          href: rbac.md
-        - name: Create and manage roles
-          href: user-roles.md
-        - name: Create and manage device groups
-          items:
-          - name: Using device groups
-            href: machine-groups.md
-          - name: Create and manage device tags
-            href: machine-tags.md
-
     - name: Managed security service provider (MSSP) integration
       items:
       - name: Configure managed security service provider integration
@@ -1426,7 +1357,7 @@
       items:
       - name: Troubleshooting mode on macOS
         href: mac-troubleshoot-mode.md
-      - name: Troubleshoot installation issues
+      - name: Troubleshoot macOS installation issues
         href: mac-support-install.md
       - name: Troubleshoot performance issues
         href: mac-support-perf.md
@@ -1448,7 +1379,7 @@
 
     - name: Troubleshoot Microsoft Defender for Endpoint on Linux
       items:
-      - name: Troubleshoot installation issues
+      - name: Troubleshoot Linux installation issues
         href: linux-support-install.md
       - name: Investigate agent health issues
         href: health-status.md
