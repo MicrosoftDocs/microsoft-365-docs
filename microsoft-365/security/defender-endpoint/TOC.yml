@@ -968,9 +968,6 @@
     - name: Endpoint Attack Notifications
       href: endpoint-attack-notifications.md
 
-    - name: Experts on Demand
-      href: experts-on-demand.md
-
   - name: Reference
     items:
     - name: Understand threat intelligence concepts
