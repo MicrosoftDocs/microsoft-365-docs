@@ -618,8 +618,6 @@
               href: ../defender-endpoint/threat-indicator-concepts.md 
       - name: Microsoft Security Resources
         items: 
-          - name: Safety Scanner download
-            href: safety-scanner-download.md
           - name: Threat actor naming
             href: microsoft-threat-actor-naming.md
           - name: Malware names
