@@ -1,15 +1,11 @@
 ---
 title: Investigate agent health issues
 description: Learn about the values returned when running the mdatp health command
-keywords: mdatp health, command, health, status, command, onboarding status
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
