@@ -37,7 +37,7 @@ __Platforms__
 
 Microsoft Defender for Endpoint utilizes the anti-malware Scan Interface (AMSI) to enhance protection against fileless malware, dynamic script-based attacks, and other nontraditional cyber threats. This article describes the benefits of AMSI integration, the types of scripting languages it supports, and how to enable AMSI for improved security.
 
-## What is Filless malware?
+## What is Fileless malware?
 Fileless malware plays a critical role in modern cyberattacks, using stealthy techniques to avoid detection. Several major ransomware outbreaks used fileless methods as part of their kill chains.
 
 Fileless malware uses existing tools that are already present on a compromised device, such as PowerShell.exe or wmic.exe. Malware can infiltrate a process, executing code within its memory space, and invoking these built-in tools. Attackers significantly reduce their footprint and evade traditional detection mechanisms.
@@ -91,7 +91,7 @@ Also see [Defender Policy CSP - Windows Client Management](/windows/client-manag
 Other Microsoft products such as [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/more-about-amsi-integration-with-exchange-server/ba-p/2572371) and [Sharepoint](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/cyberattack-protection-by-default-and-other-enhancements-to/ba-p/3925641) also use AMSI
 integration. 
 
-## More Resources to protect against fileless attacks
+## More resources to protect against fileless attacks
 
 - [Windows Defender Application Control and AppLocker](/windows/security/application-security/application-control/windows-defender-application-control/wdac-and-applocker-overview). Enforces strong code Integrity policies and to allow only trusted applications to run. In the context of fileless malware, WDAC locks down PowerShell to Constrained Language Mode, which limits the extended language features that can lead to unverifiable code execution, such as direct .NET scripting, invocation of Win32 APIs via the Add-Type cmdlet, and interaction with COM objects. This essentially mitigates PowerShell-based reflective DLL injection attacks. 
 
