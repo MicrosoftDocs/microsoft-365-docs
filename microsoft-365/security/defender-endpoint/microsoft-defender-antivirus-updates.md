@@ -97,11 +97,11 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
-### January-2024 (Platform: 4.18.24010.xxxx | Engine: 1.1.24010.xxxx)
+### January-2024 (Platform: 4.18.24010.12 | Engine: 1.1.24010.xxxx)
 
 - Security intelligence update version: **x.x.x.x**
 - Release date:  **February 27, 2024**
-- Platform: **4.18.24010.xxxx**
+- Platform: **4.18.24010.12**
 - Engine: **1.1.24010.xxxx**
 - Support phase: **Security and Critical Updates**
 
@@ -163,29 +163,6 @@ All our updates contain
 - Fixed an issue with device control so that device control policies remain enforced when a platform update requires a reboot
 - Improved performance of [device control for printing scenarios](device-control-policies.md)
 - Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus.md) (processing Unicode characters)
-
-#### Known issues
-
-- None
-
-### September-2023 (Platform: 4.18.23090.2008 | Engine: 1.1.23090.2007)
- 
-- Security intelligence update version: **1.399.44.0**
-- Release date:  **October 3, 2023 (Engine) | October 4, 2023 (Platform)**
-- Platform: **4.18.23090.2008**
-- Engine: **1.1.23090.2007**
-- Support phase: **Security and Critical Updates**
- 
-#### What's new
-
-- Fixed automatic remediation during on demand scans involving archives with multiple threats
-- Improved the performance of scanning files on network locations
-- Added support for domain computer SID for device control policies
-- Improved installer of unified agent to include legacy version of Windows Server 2012 (6.3.9600.17735)
-- Fixed issue in device control when querying Microsoft Entra group membership, which resulted in increased network traffic.
-- Improved parsing of attack surface reduction exclusions in the antimalware engine
-- Improved reliability in scanning PE files
-- Improved deployments safeguards for security intelligence updates
 
 #### Known issues
 
