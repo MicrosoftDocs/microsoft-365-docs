@@ -388,8 +388,6 @@
            href: threat-explorer-threat-hunting.md
          - name: Investigate delivered malicious email
            href: threat-explorer-investigate-delivered-malicious-email.md
-         - name: Improvements to Threat Hunting in Threat Explorer
-           href: threat-explorer-about.md
          - name: Email entity page
            href: mdo-email-entity-page.md
          - name: Teams message entity panel
