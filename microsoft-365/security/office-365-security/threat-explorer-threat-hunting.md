@@ -39,7 +39,7 @@ Threat Explorer or Real-time detections allow you to take the following actions:
 
 Watch this short video to learn how to hunt and investigate email and collaboration-based threats using Defender for Office 365.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyPRU]
 
 > [!TIP]
 > Advanced hunting in Microsoft Defender XDR supports an easy-to-use query builder that doesn't use the Kusto Query Language (KQL). For more information, see [Build queries using guided mode](/microsoft-365/security/defender/advanced-hunting-query-builder).
@@ -51,11 +51,18 @@ The following information is available in this article:
 - [Extended capabilities in Threat Explorer](#extended-capabilities-in-threat-explorer)
 
 > [!TIP]
-> For email security scenarios using Threat Explorer and Real-time detection, see [Email security with Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-email-security.md).
+> For email scenarios using Threat Explorer and Real-time detections, see the following articles:
+>
+> - [Email security with Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-email-security.md)
+> - [Investigate malicious email that was delivered in Microsoft 365](threat-explorer-investigate-delivered-malicious-email.md)
 
 ## What do you need to know before you begin?
 
-For permissions and licensing requirements for Threat Explorer and Real-time detections, see [Permissions and licensing for Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#permissions-and-licensing-for-threat-explorer-and-real-time-detections).
+- Threat Explorer is included in Defender for Office 365 Plan 2. Real-time detections is included in Defender for Office Plan 1:
+  - The differences between Threat Explorer and Real-time detections are described in [About Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-real-time-detections-about.md).
+  - The differences between Defender for Office 365 Plan 2 and Defender for Office Plan 1 are described in the [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-security-comparison.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+
+- For permissions and licensing requirements for Threat Explorer and Real-time detections, see [Permissions and licensing for Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#permissions-and-licensing-for-threat-explorer-and-real-time-detections).
 
 ## Threat Explorer and Real-time detections walkthrough
 

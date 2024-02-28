@@ -384,7 +384,9 @@
            href: threat-explorer-real-time-detections-about.md
          - name: Threat hunting in Threat Explorer and Real-time detections
            href: threat-explorer-threat-hunting.md
-         - name: Investigate delivered malicious email
+         - name: Email security with Threat Explorer and Real-time detections
+           href: threat-explorer-email-security.md
+         - name: Investigate delivered malicious email with Threat Explorer and Real-time detections
            href: threat-explorer-investigate-delivered-malicious-email.md
          - name: Email entity page
            href: mdo-email-entity-page.md

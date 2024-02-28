@@ -50,6 +50,13 @@ For more information about the differences between Defender for Office 365 Plan 
 
 The rest of this article explains the views and features that are available in Threat Explorer and Real-time detections.
 
+> [!TIP]
+> For email scenarios using Threat Explorer and Real-time detections, see the following articles:
+>
+> - [Threat hunting in Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-threat-hunting.md)
+> - [Email security with Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-email-security.md)
+> - [Investigate malicious email that was delivered in Microsoft 365](threat-explorer-investigate-delivered-malicious-email.md)
+
 ## Permissions and licensing for Threat Explorer and Real-time detections
 
 To use Explorer or Real-time detections, you need to be assigned permissions. You have the following options:
@@ -58,10 +65,6 @@ To use Explorer or Real-time detections, you need to be assigned permissions. Yo
   - _Read access for email and Teams message headers_: **Security operations/Raw data (email & collaboration)/Email message headers (read)**.
   - _Preview and download email messages_: **Security operations/Raw data (email & collaboration)/Email content (read)**.
   - _Remediate malicious email_: **Security operations/Security data/Email advanced actions (manage)**.
-- [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
-  - _Full access_: Membership in the **Organization Management** or **Compliance Management** role groups.
-  - _Search for Exchange mail flow rules (transport rules) by name in Threat Explorer_: Membership in the **Compliance Management**, **Hygiene Management**, **O365 Support View Only**, **Organization Management**, **Records Management**, **Security Administrator**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - _Read-only access_: Membership in the **View-Only Organization Management** or **View-Only Recipients** role groups.
 - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
   - _Full access_: Membership in the **Organization Management** or **Security Administrator** role groups.
   - _Preview and download messages_: Membership in the **Data Investigator** or **eDiscovery Manager** role groups. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) and add the **Preview** role to it.
