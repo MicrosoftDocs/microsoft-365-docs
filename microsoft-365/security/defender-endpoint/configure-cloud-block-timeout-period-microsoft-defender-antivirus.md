@@ -39,18 +39,18 @@ The default period that the file is [blocked](configure-block-at-first-sight-mic
 
 [Block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) and its prerequisites must be enabled before you can specify an extended timeout period.
 
-## Specify the extended timeout period using Microsoft Defender for Endpoint with Endpoint Security Policies 
+## Specify the extended timeout period using Microsoft Defender for Endpoint with Endpoint security policies 
 
-To specify the cloud block timeout period with the Endpoint Security Policies in Defender for Endpoint:
+To specify the cloud block timeout period with the Endpoint security policies in Defender for Endpoint:
 
 1. Go to the Microsoft Defender for Endpoint portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
-2. Select **Endpoints** > **Configuration management** > **Endpoint security policies**
-3. Select **Create new Policy**
-4. Under **Select Platform** choose: "Windows 10, Windows 11, and Windows Server"
-5. Under **Select Template** choose: "Microsoft Defender Antivirus"
-6. Select **Create policy**
-7. Enter a name and description and select **Next**
-8. From the **Defender** dropdown go to **Cloud Extended Timeout** and toggle it on
+2. Select **Endpoints** > **Configuration management** > **Endpoint security policies**.
+3. Select **Create new Policy**.
+4. Under **Select Platform** choose: "Windows 10, Windows 11, and Windows Server".
+5. Under **Select Template** choose: "Microsoft Defender Antivirus".
+6. Select **Create policy**.
+7. Enter a name and description and select **Next**.
+8. From the **Defender** dropdown go to **Cloud Extended Timeout** and toggle it on.
 9. Specify the extended time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
 10. Select **Next** and **Save** to finish configuring your policy.
 
