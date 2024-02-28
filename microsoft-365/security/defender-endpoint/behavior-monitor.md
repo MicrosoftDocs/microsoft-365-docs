@@ -68,7 +68,7 @@ The following table shows the different ways to configure behavior monitoring.
 | CSP | AllowBehaviorMonitoring | [Defender Policy CSP](/mem/intune/protect/antivirus-microsoft-defender-settings-windows#real-time-protection)   |
 | Configuration Manager Tenant Attach | Turn on behavior monitoring | [Windows Antivirus policy settings from Microsoft Defender Antivirus for tenant attached devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows-tenant-attach#real-time-protection) |
 | Group Policy | Turn on behavior monitoring | [Download Group Policy Settings Reference Spreadsheet for Windows 11 2023 Update (23H2)](https://www.microsoft.com/download/details.aspx?id=105668)   |
-| PowerShell | Set-Preference -DisableBehaviorMonitoring | [Set-MpPreference](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-disablebehaviormonitoring) |
+| PowerShell | Set-Preference -DisableBehaviorMonitoring | [Set-MpPreference](/powershell/module/defender/set-mppreference#-disablebehaviormonitoring) |
 | WMI | boolean  DisableBehaviorMonitoring;  | [MSFT\_MpPreference class](/previous-versions/windows/desktop/defender/msft-mppreference) |
 
 If you use Microsoft Defender for Business, see [Review or edit your next-generation protection policies in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-next-generation-protection).
@@ -81,7 +81,7 @@ Use the following command to modify the behavior monitoring settings:
 - `True` disables Behavior monitoring. 
 - `False` enables Behavior monitoring.
 
-For more information, see [Set-MpPreference](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps#-disablebehaviormonitoring). 
+For more information, see [Set-MpPreference](/powershell/module/defender/set-mppreference#-disablebehaviormonitoring). 
 
 ## Query the bBehavior monitoring status from PowerShell
 
@@ -125,13 +125,13 @@ withNames | join kind = fullouter DefUpdate on DeviceId
 ```
 
 ## Troubleshooting high CPU usage
-Detections related to behavior monitoring start with "[Behavior](/microsoft-365/security/defender/malware-naming?view=o365-worldwide#type)".
+Detections related to behavior monitoring start with "[Behavior](/microsoft-365/security/defender/malware-naming#type)".
 
 When investigating high CPU usage in `MsMpEng.exe`, you can temporarily disable behavior monitoring to see if the issues continue.
 
 You can use Performance analyzer for Microsoft Defender Antivirus to find **\path\process**, **process** and/or **file extensions** that are contributing to the high cpu utilization. You can then add these items to [Contextual Exclusion](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md).
 
-For more information, see [Performance analyzer for Microsoft Defender Antivirus](defender-endpoint/tune-performance-defender-antivirus.md). 
+For more information, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md). 
 
 If you're seeing high CPU usage caused by behavior monitoring, continue troubleshooting the issue by reverting each of the following items in order. Re-enable behavior monitoring after reverting each item to identify where the problem might be.
 
