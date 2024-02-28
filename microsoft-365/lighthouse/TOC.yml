@@ -144,5 +144,7 @@
       href: m365-lighthouse-faq.yml
 - name: Privacy and compliance
   items:
+    - name: Data privacy and compliance in Microsoft 365 Lighthouse
+      href: m365-lighthouse-data-privacy-and-compliance.md
     - name: Data collection for Microsoft 365 Lighthouse
       href: m365-lighthouse-data-collection.md

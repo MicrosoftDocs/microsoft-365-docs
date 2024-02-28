@@ -2,15 +2,11 @@
 title: Advanced Hunting with Python API Guide
 ms.reviewer: 
 description: Learn how to query using the Microsoft Defender for Endpoint API, by using Python, with examples.
-keywords: apis, supported apis, advanced hunting, query
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -74,9 +70,9 @@ jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
 ```
 
-where
+Where
 
-- tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
+- tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query is run on the data of this tenant)
 - appId: ID of your Microsoft Entra app (the app must have 'Run advanced queries' permission to Microsoft Defender for Endpoint)
 - appSecret: Secret of your Microsoft Entra app
 
@@ -120,7 +116,7 @@ queryFile.close()
 
 You can now use the query results.
 
-To iterate over the results do the below:
+To iterate over the results, use the following command:
 
 ```python
 for result in results:
@@ -128,7 +124,7 @@ for result in results:
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
 ```
 
-To output the results of the query in CSV format in file file1.csv do the below:
+To output the results of the query in CSV format in file file1.csv use the following command:
 
 ```python
 import csv
@@ -142,7 +138,7 @@ for result in results:
 outputFile.close()
 ```
 
-To output the results of the query in JSON format in file file1.json do the below:
+To output the results of the query in JSON format in file file1.json use the following command:
 
 ```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
