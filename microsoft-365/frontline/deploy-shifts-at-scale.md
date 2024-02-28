@@ -41,7 +41,7 @@ As an admin, you can now standardize these Shifts settings across all your front
 
 ## Set up Shifts for your frontline teams
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline apps**.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline apps**.
 1. On the Manage frontline apps page, next to **Deploy Shifts to your teams** in the table, select **Set up**.
 
     :::image type="content" source="media/dsas-setup.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing the Set up button for deploying Shifts. "lightbox="media/dsas-setup.png":::
@@ -94,7 +94,7 @@ You can choose to allow schedule owners to create and manage schedule groups or 
 
 1. Choose one of the following options to define how schedule groups are managed:
     > [!IMPORTANT]
-    > After you submit your selection, you won't be able to change it.
+    > After you submit your selection to finish setup, you won't be able to change it.  
 
     - **Schedule groups are created and managed by schedule owners**: Your schedule owners create and manage schedule groups for their teams. They can add, rename, and delete schedule groups in Shifts.
     - **Schedule groups are created and managed in the Teams admin center**: You create and manage the schedule group structure for Shifts. Your schedule owners won't be able to add, rename, or delete schedule groups in Shifts. With this option, you can standardize schedule groups across teams, which allows for automating workflows in Shifts across different teams.
@@ -109,7 +109,7 @@ You can choose to allow schedule owners to create and manage schedule groups or 
 
 ### Review and finish setup
 
-Review your settings. If you need to make changes, select **Back**, and edit the settings that you want. When you're ready, select **Finish setup**.
+Review your settings. If you need to make changes, select **Back**, and change the settings that you want. When you're ready, select **Finish setup**.
 
 > [!NOTE]
 > If you haven’t deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center, there may be an error after you finish the setup wizard. If an error occurs, wait 15 minutes and try again.
