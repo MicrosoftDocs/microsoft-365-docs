@@ -30,7 +30,7 @@ Microsoft Defender Antivirus and the multiple engines that lead to the advanced 
 
 :::image type="content" source="media/next-gen-protection-engines.png" alt-text="Diagram depicting next generation protection engines and how they work between the cloud and the client device.":::
 
-Many of these engines are built into the client and provide advanced protection against majority of threats in real time. 
+Many of these engines are built into the client and provide advanced protection against most threats in real time. 
 
 ## Hybrid detection and protection
 
@@ -63,7 +63,6 @@ Together with [attack surface reduction](/microsoft-365/security/defender-endpoi
 As part of Microsoft's defense-in-depth solution, the superior performance of these engines accrues to the [Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint) unified endpoint protection, where antivirus detections and other next-generation protection capabilities enrich endpoint detection and response, automated investigation and remediation, advanced hunting, threat and vulnerability management, managed threat hunting service, and other capabilities.
 
 These protections are further amplified through [Microsoft Defender XDR](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr), Microsoft's comprehensive, end-to-end security solution for the modern workplace. Through [signal-sharing and orchestration of remediation across Microsoft's security technologies](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Microsoft-Threat-Protection/ba-p/262783), Microsoft Defender XDR secures identities, endpoints, email and data, apps, and infrastructure. 
-
 
 ## Frequently asked questions
 
