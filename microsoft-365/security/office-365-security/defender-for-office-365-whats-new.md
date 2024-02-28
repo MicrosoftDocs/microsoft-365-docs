@@ -4,11 +4,11 @@ description: Learn about the new features and functionality available in the lat
 keywords: what's new in Microsoft Defender for Office 365, ga, generally available, capabilities, available, new
 search.appverid: met150
 f1.keywords: NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 ms.localizationpriority: medium
 ms.date: 2/2/2024
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
