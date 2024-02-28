@@ -31,6 +31,8 @@ Microsoft Defender for Endpoint includes next-generation protection to catch and
 
 Next-generation protections, such as Microsoft Defender Antivirus blocks malware using local and cloud-based machine learning models, behavior analysis, and heuristics. Microsoft Defender Antivirus uses predictive technologies, machine learning, applied science, and artificial intelligence to detect and block malware at the first sign of abnormal behavior.
 
+Microsoft Defender Antivirus provides Anomaly detection, a layer of protection for malware that doesn’t fit any predefined pattern. Anomaly detection monitors for process creation events or files that are downloaded from the internet. Through machine learning and cloud-delivered protection, Microsoft Defender Antivirus can stay one step ahead of attackers. Anomaly detection is on by default and can help block attacks such as [3CX Security Alert for Electron Windows App](https://www.3cx.com/blog/news/desktopapp-security-alert/). Microsoft Defender Antivirus started blocking this malware four days before the attack was registered in VirusTotal.  
+
 In addition to Microsoft Defender Antivirus, your next-generation protection services include the following capabilities:
 
 - [Behavior-based, heuristic, and real-time antivirus protection](configure-protection-features-microsoft-defender-antivirus.md), which includes always-on scanning using file and process behavior monitoring and other heuristics (also known as *real-time protection*). It also includes detecting and blocking apps that are deemed unsafe, but might not be detected as malware.
