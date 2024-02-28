@@ -25,24 +25,24 @@ description: "Learn how to manage access to the Loop app preview."
 
 # Manage Loop app preview access
 
-This article details the Cloud Policy setting used to gate access to the Loop app Preview experiences within your organization. Microsoft must invite you to the preview. If your tenant is invited, you can configure the users who will have access by using Cloud Policy. If your tenant is not invited, this policy will have no effect in your organization.
+This article details the Cloud Policy setting used to gate access to the Loop app Preview experiences within your organization. Microsoft must invite you to the preview. If your tenant is invited, you can configure the users who have access by using Cloud Policy. If your tenant is not invited, this policy has no effect in your organization.
 
 ## Requirements
 
-Users in your organization must first be enabled for Loop app with workspaces and also licensed for Loop app with workspaces. Learn more in [License Requirements](/microsoft-365/loop/loop-workspaces-configuration#license-requirements). If both of these conditions are true, and the user account is added to the Loop app Preview policy, they will also be enabled for Loop app Preview experiences.
+Users in your organization must first be enabled for Loop app with workspaces and also licensed for Loop app with workspaces. Learn more in [License Requirements](/microsoft-365/loop/loop-workspaces-configuration#license-requirements). If both of these conditions are true, and the user account is added to the Loop app Preview policy, this enables Loop app Preview experiences.
 
 ## User experience expectations when admin settings are configured
 
-When a user account in your organization is provided access to the Loop app Preview experience, they can choose between the Production or the Preview experience. They will default to Preview for each Loop app session and file loaded, and are able to manually switch to Production if needed.
+When a user account in your organization is provided access to the Loop app Preview experience, they can choose between the Production or the Preview experience. These users default to Preview for each Loop app session or file loaded, and are able to manually switch to Production if needed.
 
 ## Microsoft 365 Groups for Cloud Policy
 
-If you want to scope the Cloud Policy settings to only some users in your tenant, you must create or use an existing Microsoft 365 group that defines which users in your organization this policy will apply to. To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups).
+If you want to scope the Cloud Policy settings to only some users in your tenant, you must create or use an existing Microsoft 365 group that defines which users in your organization this policy applies to. To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups).
 
 > [!NOTE]
 > This section isn't required if you choose to apply the Loop settings to all the users in your tenant.
 
-You'll be able to use this group for the Cloud Policy setup procedure specified in [Settings management in Cloud Policy](#settings-management-in-cloud-policy).
+You are able to use this group for the Cloud Policy setup procedure specified in [Configuring Preview user accounts in Cloud Policy](#configuring-preview-user-accounts-in-cloud-policy).
 
 If you prefer, you can also create other types of groups to use with Cloud Policy. For more information, see [learn more about creating groups in the Microsoft 365 admin center](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) or [learn more about creating dynamic groups in AzureAD](/azure/active-directory/external-identities/use-dynamic-groups).
 
@@ -61,13 +61,14 @@ The Loop app Preview gate checks the following [Cloud Policy](/deployoffice/admi
     - For **Enable preview features for Loop**:
         - **Enabled**: Loop app Preview experience is available to the users.
         - **Disabled**: Loop app Preview experience isn't available to the users.
-        - **Not configured**: Loop app Preview experience isn't available to the users.   
+        - **Not configured**: Loop app Preview experience isn't available to the users.
 1. Save the policy configuration.
-1. Reassign priority for any security group, if required. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
+1. Reassign priority for any security group, if necessary. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
-In case you create a new policy configuration or change the configuration for an existing policy, there can be a delay in the change being reflected as described below:
-- If there were existing policy configurations prior to the change, then it will take 90 mins for the change to be reflected.
-- If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
+In case you create a new policy configuration or change the configuration for an existing policy, there can be a delay in the change being reflected as described:
+
+- If there were existing policy configurations before the change, then it takes 90 mins for the change to be reflected.
+- If there were no policy configurations before the change, then it takes 24 hours for the change to be reflected.
 
 ## Related topics
 
