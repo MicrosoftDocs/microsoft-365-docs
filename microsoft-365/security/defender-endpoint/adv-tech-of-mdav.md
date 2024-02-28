@@ -32,6 +32,12 @@ Microsoft Defender Antivirus and the multiple engines that lead to the advanced 
 
 Many of these engines are built into the client and provide advanced protection against most threats in real time. 
 
+These next-generation protection engines provide [industry-best](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests) detection and blocking capabilities and ensure that protection is: 
+
+- **Accurate**: Threats both common and sophisticated, many which are designed to try to slip through protections, are detected and blocked.
+- **Real-time**: Threats are prevented from getting on to devices, stopped in real-time at first sight, or detected and remediated in the least possible time (typically within a few milliseconds).
+- **Intelligent**: Through the power of the cloud, machine learning (ML), and Microsoft's industry-leading optics, protection is enriched and made even more effective against new and unknown threats.
+
 ## Hybrid detection and protection
 
 Microsoft Defender Antivirus does hybrid detection and protection. What this means is, detection and protection occur on the client device first, and works with the cloud for newly developing threats, which results in faster, more effective detection and protection. 
@@ -47,12 +53,6 @@ When the client encounters unknown threats, it sends metadata or the file itself
 | **Heuristics engine**<br/>Heuristic rules identify file characteristics that have similarities with known malicious characteristics to catch new threats or modified versions of known threats. | **Detonation-based ML engine**<br/>Suspicious files are detonated in a sandbox. Deep learning classifiers analyze the observed behaviors to block attacks.   |
 | **Emulation engine**<br/>The emulation engine dynamically unpacks malware and examines how they would behave at runtime. The dynamic emulation of the content and scanning both the behavior during emulation and the memory content at the end of emulation defeat malware packers and expose the behavior of polymorphic malware. | **Reputation ML engine**<br/>Domain-expert reputation sources and models from across Microsoft are queried to block threats that are linked to malicious or suspicious URLs, domains, emails, and files. Sources include Windows Defender SmartScreen for URL reputation models and Defender for Office 365 for email attachment expert knowledge, among other Microsoft services through the Microsoft Intelligent Security Graph.  |
 | **Network engine**<br/>Network activities are inspected to identify and stop malicious activities from threats. | **Smart rules engine**<br/>Expert-written smart rules identify threats based on researcher expertise and collective knowledge of threats.  |
-
-These next-generation protection engines provide [industry-best](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests) detection and blocking capabilities and ensure that protection is: 
-
-- **Accurate**: Threats both common and sophisticated, many which are designed to try to slip through protections, are detected and blocked.
-- **Real-time**: Threats are prevented from getting on to devices, stopped in real-time at first sight, or detected and remediated in the least possible time (typically within a few milliseconds).
-- **Intelligent**: Through the power of the cloud, machine learning (ML), and Microsoft's industry-leading optics, protection is enriched and made even more effective against new and unknown threats.
 
 For more information, see [Microsoft 365 Defender demonstrates 100 percent protection coverage in the 2023 MITRE Engenuity ATT&CK&reg; Evaluations: Enterprise](https://www.microsoft.com/security/blog/2023/09/20/microsoft-365-defender-demonstrates-100-percent-protection-coverage-in-the-2023-mitre-engenuity-attck-evaluations-enterprise/).
 
