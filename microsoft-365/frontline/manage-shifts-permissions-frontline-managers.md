@@ -12,7 +12,7 @@ searchScope:
   - Microsoft Teams
   - Microsoft Cloud for Healthcare
   - Microsoft Cloud for Retail
-description: Learn how to manage Shifts permissions for your frontline managers. You can use the Shifts role permissions Graph API to control the Shifts settings that frontline managers can configure for their teams and whether they can create and manage schedule groups.
+description: Learn how to manage Shifts permissions for your frontline managers. You can use the shiftsRoleDefinition Graph API to control the Shifts settings that frontline managers can configure for their teams and whether they can create and manage schedule groups.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: high
@@ -37,13 +37,13 @@ Frontline managers in Shifts are users that have [the team owner or schedule own
 - Configure [Shifts settings](https://support.microsoft.com/office/manage-settings-in-shifts-1aef353d-e2df-4661-abdd-4014cb57f17b) for their teams. For example, frontline managers can turn on time clock and set whether frontline workers on their team can swap shifts and request time off.  
 - Create and manage schedule groups for their teams in Shifts. Schedule groups are used to group frontline workers based on common characteristics within a team, such as departments or job types.
 
-Depending on the needs of your organization, you might need to restrict the Shifts capabilities that are available to frontline managers for managing their team schedules. This article describes how you can control permissions to these capabilities using the [shiftsRolePermission](/graph/api/resources/shiftsrolepermission?view=graph-rest-beta) Graph API.
+Depending on the needs of your organization, you might need to restrict the Shifts capabilities that are available to frontline managers for managing their team schedules. This article describes how you can control permissions to these capabilities using the [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition?view=graph-rest-beta) Graph API.
 
 ## Frontline manager capabilities in Shifts for managing their teams
 
 The following table lists the settings and schedule group capabilities that are available to frontline managers in Shifts for managing their teams, and indicates whether you can restrict the capability.
 
-|Setting/capability|Description|Use shiftsRolePermission Graph API to control permissions|
+|Setting/capability|Description|Use shiftsRoleDefinition Graph API to control permissions|
 |---------|---------|:---------:|
 |Team time zone|Set the team's time zone and closest city.||
 |Start of week|Set the day of the week for schedules to start.||
@@ -86,7 +86,7 @@ Contoso decided not to use time clock in Shifts for now because they want their 
   
 To do this:
 
-1. To prevent frontline managers from changing the time clock setting for their teams, use the [shiftsRolePermission](/graph/api/resources/shiftsrolepermission?view=graph-rest-beta) Graph API and remove the `CanModifyTimeClockCapabilities` parameter from the `allowedResourceActions` list for the team owner role and schedule owner role on every team using Shifts.
+1. To prevent frontline managers from changing the time clock setting for their teams, use the [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition?view=graph-rest-beta) Graph API and remove the `CanModifyTimeClockCapabilities` parameter from the `allowedResourceActions` list for the team owner role and schedule owner role on every team using Shifts.
 
     This example shows the permissions of the team owner role for the Contoso Chicago store (team ID fb963991-69a8-4d2c-8465-cd8e374891c4).
 
@@ -96,7 +96,7 @@ To do this:
     Content-Type: application/json
 
     {
-    "shiftsRolePermissions": [
+    "shiftsRoleDefinition": [
       {
         "allowedResourceActions": [
            "CanModifyShiftRequestsCapabilities",
@@ -133,7 +133,7 @@ Here's what the time clock setting in Shifts looks like for store managers and d
 
 At Contoso, adding and editing time-off reasons is the responsibility of the store manager. This means that they need to remove permissions for department managers (schedule owners) to add and edit time-off reasons in Shifts for all teams.
 
-To do this, use the [shiftsRolePermission](/graph/api/resources/shiftsrolepermission?view=graph-rest-beta) Graph API and remove the `CanModifyTimeOffReasons` parameter from the `allowedResourceActions` list for the schedule owner role on every team using Shifts.
+To do this, use the [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition?view=graph-rest-beta) Graph API and remove the `CanModifyTimeOffReasons` parameter from the `allowedResourceActions` list for the schedule owner role on every team using Shifts.
 
 This example shows the permissions of the schedule owner role for the Contoso Chicago store (team ID fb963991-69a8-4d2c-8465-cd8e374891c4).
 
@@ -143,7 +143,7 @@ PATCH https://graph.microsoft.com/beta/teams/fb963991-69a8-4d2c-8465-cd8e374891c
 Content-Type: application/json
 
 {
-"shiftsRolePermissions": [
+"shiftsRoleDefinition": [
   {
     "allowedResourceActions": [
        "CanModifyShiftRequestsCapabilities",
