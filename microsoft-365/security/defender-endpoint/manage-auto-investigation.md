@@ -2,11 +2,11 @@
 title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
 ms.service: defender-endpoint
-author: dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/13/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

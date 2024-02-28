@@ -1,15 +1,11 @@
 ---
 title: Intune-based deployment for Microsoft Defender for Endpoint on Mac
 description: Install Microsoft Defender for Endpoint on Mac, using Microsoft Intune.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -32,7 +28,7 @@ ms.date: 12/18/2020
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
 
-This topic describes how to deploy Microsoft Defender for Endpoint on macOS through Microsoft Intune. A successful deployment requires the completion of all of the following steps:
+This article describes how to deploy Microsoft Defender for Endpoint on macOS through Microsoft Intune. A successful deployment requires the completion of all of the following steps:
 
 1. [Approve system extension](#step-1-approve-system-extensions)
 1. [Network Filter](#step-2-network-filter)
@@ -182,7 +178,7 @@ Download [notif.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-
 To turn off notifications for the end users, you can change '**Show NotificationCenter**' from 'true' to 'false' in 
 [notif.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig).
 
-![Screen shot of notif.mobileconfig that shows "ShowNotificationCenter" set to "true".](image.png)
+:::image type="content" source="media/image.png" alt-text="Screenshot showing notif.mobileconfig with ShowNotificationCenter set to True.":::
 
 To configure notifications:
 

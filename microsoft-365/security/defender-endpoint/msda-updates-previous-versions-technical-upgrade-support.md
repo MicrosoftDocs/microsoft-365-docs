@@ -2,12 +2,12 @@
 title: Microsoft Defender Antivirus updates - Previous versions for technical upgrade support
 description: Understand the type of technical support offered for previous versions of Microsoft Defender Antivirus
 ms.service: defender-endpoint
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 12/05/2023
-manager: dansimp
+ms.date: 02/27/2024
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -26,6 +26,29 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## September-2023 (Platform: 4.18.23090.2008 | Engine: 1.1.23090.2007)
+ 
+- Security intelligence update version: **1.399.44.0**
+- Release date:  **October 3, 2023 (Engine) | October 4, 2023 (Platform)**
+- Platform: **4.18.23090.2008**
+- Engine: **1.1.23090.2007**
+- Support phase: **Technical upgrade support (only)**
+ 
+### What's new
+
+- Fixed automatic remediation during on demand scans involving archives with multiple threats
+- Improved the performance of scanning files on network locations
+- Added support for domain computer SID for device control policies
+- Improved installer of unified agent to include legacy version of Windows Server 2012 (6.3.9600.17735)
+- Fixed issue in device control when querying Microsoft Entra group membership, which resulted in increased network traffic.
+- Improved parsing of attack surface reduction exclusions in the antimalware engine
+- Improved reliability in scanning PE files
+- Improved deployments safeguards for security intelligence updates
+
+### Known issues
+
+- None
 
 ## August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
 
