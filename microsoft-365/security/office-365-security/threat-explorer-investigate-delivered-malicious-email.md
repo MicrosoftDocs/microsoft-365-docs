@@ -3,10 +3,10 @@ title: Investigate malicious email that was delivered in Microsoft 365, Find and
 keywords: TIMailData-Inline, Security Incident, incident, Microsoft Defender for Endpoint PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers,special actions
 f1.keywords:
   - NOCSH
-ms.author: tracyp
-author: msfttracyp
-manager: dansimp
-ms.date: 10/20/2023
+ms.author: chrisda
+author: chrisda
+manager: deniseb
+ms.date: 2/27/2024
 audience: ITPro
 ms.topic: conceptual
 
@@ -34,152 +34,119 @@ appliesto:
 
 [Microsoft Defender for Office 365](defender-for-office-365.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer-about.md).
 
+Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
+
 > [!NOTE]
 > Jump to the remediation article [here](remediate-malicious-email-delivered-office-365.md).
 
-## Before you begin
+## What do you need to know before you begin?
 
-Make sure that the following requirements are met:
-
-- Your organization has [Microsoft Defender for Office 365](defender-for-office-365.md) and [licenses are assigned to users](/microsoft-365/admin/manage/assign-licenses-to-users).
-
-- [Audit logging](/purview/audit-log-enable-disable) is turned on for your organization (it's on by default).
-
-- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in **Email & Collaboration permissions** the Microsoft Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md). For some actions, you must also have the Preview role assigned.
-
-### Preview role permissions
-
-To perform certain actions, such as viewing message headers or downloading email message content, you must have the **Preview** role added to another appropriate role group. The following table clarifies required roles and permissions:
-
-|Activity|Role group|Preview role needed?|
-|---|---|:---:|
-|Use Threat Explorer (and Real-time detections) to analyze threats|Global Administrator <br/><br/> Security Administrator <br/><br/> Security Reader|No|
-|Use Threat Explorer (and Real-time detections) to view headers for email messages as well as preview and download quarantined email messages|Global Administrator <br/><br/> Security Administrator <br/><br/> Security Reader|No|
-|Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <br/><br/> Security Administrator <br/><br/> Security Reader <br/><br/> Preview|Yes|
-
-> [!NOTE]
-> **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in **Email & Collaboration permissions** the Microsoft Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
->
-> The Global Administrator role is assigned the Microsoft 365 admin center at <https://admin.microsoft.com>. The Security Administrator and Security Reader roles are assigned in Microsoft Defender portal at <https://security.microsoft.com/emailandcollabpermissions>.
-
-We understand previewing and downloading email are sensitive activities, so auditing is enabled for these activities. Once an admin performs these activities on email, audit log entries are generated. To see these entries, go to the **Audit** page in the Microsoft Defender portal at <https://security.microsoft.com/auditlogsearch>. Filter on the admin name in the **Users** box. The filtered results will show activity for **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
+For permissions and licensing requirements for Threat Explorer and Real-time detections, see [Permissions and licensing for Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#permissions-and-licensing-for-threat-explorer-and-real-time-detections).
 
 ## Find suspicious email that was delivered
-
-Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
 
 > [!NOTE]
 > Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto purge (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** . To go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+1. Use one of the following steps to open Threat Explorer or Real-time detections:
+   - **Threat Explorer**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
+   - **Real-time detections**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Real-time detections**. Or, to go directly to the **Real-time detections** page, use <https://security.microsoft.com/realtimereportsv3>.
 
-   On the **Explorer** page, the **Additional actions** column shows admins the outcome of processing an email. The **Additional actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
+2. On the **Explorer** or **Real-time detections** page, select an appropriate view:
+   - **Threat Explorer**: Verify the [All email view](threat-explorer-real-time-detections-about.md#all-email-view-in-threat-explorer) is selected.
+   - **Real-time detections**: Verify the [Malware view](threat-explorer-real-time-detections-about.md#malware-view-in-threat-explorer-and-real-time-detections) is selected, or select the [Phish view](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
 
-2. In the **View** menu, choose **Email** \> **All email** from the dropdown list.
+3. Select the date/time range. The default is yesterday and today.
 
-    :::image type="content" source="../../media/tp-InvestigateMalEmail-viewmenu.png" alt-text="The Malware drop-down list" lightbox="../../media/tp-InvestigateMalEmail-viewmenu.png":::
+   :::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="The date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
 
-    The *Malware* view is currently the default, and captures emails where a malware threat is detected. The *Phish* view operates in the same way, for Phish.
+4. Create 0ne or more filter conditions using some or all of the following targeted properties and values. For complete instructions, see [Property filters in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#property-filters-in-threat-explorer-and-real-time-detections). For example:
 
-    However, *All email* view lists every mail received by the organization, whether threats were detected or not. As you can imagine, this is a lot of data, which is why this view shows a placeholder that asks a filter be applied. (This view is only available for Defender for Office 365 P2 customers.)
+   - **Delivery action**: The action taken on an email due to existing policies or detections. Useful values are:
+     - **Delivered**: Email delivered to the user's Inbox or other folder where the user can access the message.
+     - **Junked**: Email delivered to the user's Junk Email folder or Deleted Items folder where the user can access the message.
+     - **Blocked**: Email messages that were quarantined, that failed delivery, or were dropped.
 
-    *Submissions* view shows up all mails submitted by admin or user that were reported to Microsoft.
+   - **Original delivery location**: Where email went before any automatic or manual post-delivery actions by the system or admins (for example, [ZAP](zero-hour-auto-purge.md) or moved to quarantine). Useful values are:
+     - **Deleted items folder**
+     - **Dropped**: The message was lost somewhere in mail flow.
+     - **Failed**: The message failed to reach the mailbox.
+     - **Inbox/folder**
+     - **Junk folder**
+     - **On-prem/external**: The mailbox doesn't exist in the Microsoft 365 organization.
+     - **Quarantine**
+     - **Unknown**: For example, after delivery, an Inbox rule moved the message to a default folder (for example, Draft or Archive) instead of to the Inbox or Junk Email folder.
 
-3. **Search and filter in Threat Explorer**: Filters appear at the top of the page in the search bar to help admins in their investigations. Notice that multiple filters can be applied at the same time, and multiple comma-separated values added to a filter to narrow down the search. Remember:
+   - **Last delivery location**: Where email ended-up after any automatic or manual post-delivery actions by the system or admins. The same values are available from **Original delivery location**.
+  
+   - **Directionality**: Valid values are:
+     - **Inbound**
+     - **Intra-org**
+     - **Outbound**
 
-    - Filters do exact matching on most filter conditions.
-    - Subject filter uses a CONTAINS query. A CONTAINS query will look for an exact match of the substring. Wildcards or regular expressions are not supported.
-    - URL filters work with or without protocols (ex. https).
-    - URL domain, URL path, and URL domain and path filters don't require a protocol to filter.
-    - You must click the Refresh icon every time you change the filter values to get relevant results.
+     This information can help identify spoofing and impersonation. For example, messages from internal domain senders should be **Intra-org**, not **Inbound**.
 
-4. **Advanced filters**: With these filters, you can build complex queries and filter your data set. Clicking on *Advanced Filters* opens a flyout with options.
+   - **Primary override**: If organization or user settings allowed or blocked messages that would have otherwise been blocked or allowed. Values are:
+     - **Allowed by organization policy**
+     - **Allowed by user policy**
+     - **Blocked by organization policy**
+     - **Blocked by user policy**
+     - **None**
 
-   Advanced filtering is a great addition to search capabilities. A boolean NOT on the **Recipient**, **Sender** and **Sender domain** filters allows admins to investigate by excluding values. This option is the **Equals none of** selection. This option allows admins to exclude unwanted mailboxes from investigations (for example, alert mailboxes and default reply mailboxes), and is useful for cases where admins search for a specific subject (for example, Attention) where the Recipient can be set to *Equals none of: defaultMail@contoso.com*. This is an exact value search.
+     These categories are further refined by the **Primary override source** property.
 
-   :::image type="content" source="../../media/tp-InvestigateMalEmail-AdvancedFilter.png" alt-text="The Recipients pane" lightbox="../../media/tp-InvestigateMalEmail-AdvancedFilter.png":::
+   - **Primary override source** The type of organization policy or user setting that allowed or blocked messages that would have otherwise been blocked or allowed. Values are:
 
-   Adding a time filter to the start date and end date helps your security team to drill down quickly. The shortest allowed time duration is 30 minutes. If you can narrow the suspicious action by time-frame (e.g., it happened 3 hours ago), this will limit the context and help pinpoint the problem.
+     - **3rd Party Filter**
+     - **Admin initiated time travel**
+     - **Antimalware policy block by file type**: [Common attachments filter in anti-malware policies](anti-malware-protection-about.md#common-attachments-filter-in-anti-malware-policies)
+     - **Antispam policy settings**
+     - **Connection policy**: [Configure connection filtering](connection-filter-policies-configure.md)
+     - **Exchange transport rule** (mail flow rule)
+     - **Exclusive mode (User override)**: The **Only trust email from addresses in my Safe senders and domains list and Safe mailing lists** setting in the [safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+     - **Filtering skipped due to on-prem organization**
+     - **IP region filter from policy**: The **From these countries** filter in [anti-spam policies](anti-spam-protection-about.md#spam-properties-in-anti-spam-policies).
+     - **Language filter from policy**: The **Contains specific languages** filter in [anti-spam policies](anti-spam-protection-about.md#spam-properties-in-anti-spam-policies).
+     - **Phishing Simulation**: [Configure third-party phishing simulations in the advanced delivery policy](advanced-delivery-policy-configure.md#use-the-microsoft-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy)
+     - **Quarantine release**: [Release quarantined email](quarantine-admin-manage-messages-files.md#release-quarantined-email)
+     - **SecOps Mailbox**: [Configure SecOps mailboxes in the advanced delivery policy](advanced-delivery-policy-configure.md#use-the-microsoft-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
+     - **Sender address list (Admin Override)**: The allowed senders list or blocked senders list in [anti-spam policies](anti-spam-protection-about.md#allow-and-block-lists-in-anti-spam-policies).
+     - **Sender address list (User override)**: Sender email addresses in the **Blocked Senders** list in the [safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+     - **Sender domain list (Admin Override)**: The allowed domains list or blocked domains list in [anti-spam policies](anti-spam-protection-about.md#allow-and-block-lists-in-anti-spam-policies).
+     - **Sender domain list (User override)**: Sender domains in the **Blocked Senders** list in the [safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes).
+     - **Tenant Allow/Block List file block**: [Create block entries for files](tenant-allow-block-list-files-configure.md#create-block-entries-for-files)
+     - **Tenant Allow/Block List sender email address block**: [Create block entries for domains and email addresses](tenant-allow-block-list-email-spoof-configure.md#create-block-entries-for-domains-and-email-addresses)
+     - **Tenant Allow/Block List spoof block**: [Create block entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-block-entries-for-spoofed-senders)
+     - **Tenant Allow/Block List URL block**: [Create block entries for URLs](tenant-allow-block-list-urls-configure.md#create-block-entries-for-urls)
+     - **Trusted contact list (User override)**: The **Trust email from my contacts** setting in the [safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+     - **Tenant Allow/Block List file block**: [Create block entries for files](tenant-allow-block-list-files-configure.md#create-block-entries-for-files)
+     - **Trusted domain (User override)**: Sender domains in the **Safe Senders** list in the [safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+     - **Trusted recipient (User override)**: Recipient email addresses or domains in the **Safe Recipients** list in the [safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+     - **Trusted senders only (User override)**: The **Safe Lists Only: Only mail from people or domains on your Safe Senders List or Safe Recipients List will be delivered to your Inbox** setting in the [safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-   :::image type="content" source="../../media/tp-InvestigateMalEmail-FilterbyHours.png" alt-text="The filtering by hours option" lightbox="../../media/tp-InvestigateMalEmail-FilterbyHours.png":::
+   - **Override source**: Same available values as **Primary override source**.
 
-5. **Fields in Threat Explorer**: Threat Explorer exposes a lot more security-related mail information such as *Delivery action*, *Delivery location*, *Special action*, *Directionality*, *Overrides*, and *URL threat*. It also allows your organization's security team to investigate with a higher certainty.
+     > [!TIP]
+     > In the **Email** tab (view) in the details area of the **[All email](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer)**, **[Malware](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections)**, and **[Phish](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections)** views, the corresponding override columns are named **System overrides** and **System overrides source**.
 
-    *Delivery action* is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
+   - **URL threat**: Valid values are:
+     - **Malware**
+     - **Phish**
+     - **Spam**
 
-    - **Delivered**: Email was delivered to inbox or folder of a user and the user can directly access it.
-    - **Junked**: Email was sent to either user's Junk Email folder or Deleted Items folder, and the user has access to messages in those folders.
-    - **Blocked**: Any email messages that are quarantined, that failed, or were dropped.
-    - **Replaced**: Any email where malicious attachments are replaced by .txt files that state the attachment was malicious
+5. When you're finished configuring date/time and property filters, select **Refresh**.
 
-    **Delivery location**: The Delivery location filter is available in order to help admins understand where suspected malicious mail ended-up and what actions were taken on it. The resulting data can be exported to spreadsheet. Possible delivery locations are:
+The **Email** tab (view) in the details area of the **[All email](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer)**, **[Malware](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections)**, or **[Phish](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections)** views contains the details you need to investigate suspicious email.
 
-    - **Inbox or folder**: The email is in the Inbox or a specific folder, according to your email rules.
-    - **On-prem or external**: The mailbox doesn't exist in the Cloud but is on-premises.
-    - **Junk folder**: The email is in a user's Junk mail folder.
-    - **Deleted items folder**: The email is in a user's Deleted items folder.
-    - **Quarantine**: The email in quarantine, and not in a user's mailbox.
-    - **Failed**: The email failed to reach the mailbox.
-    - **Dropped**: The email was lost somewhere in the mail flow.
+For example, Use the **Delivery Action**, **Original delivery location**, and **Last delivery location** columns in the **Email** tab (view) to get a complete picture of where the affected messages went. The values were explained in Step 4.
 
-    **Directionality**: This option allows your security operations team to filter by the 'direction' a mail comes from, or is going. Directionality values are *Inbound*, *Outbound*, and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). This information can help security operations teams spot spoofing and impersonation, because a mismatch between the Directionality value (ex. *Inbound*), and the domain of the sender (which *appears* to be an internal domain) will be evident! The Directionality value is separate, and can differ from, the Message Trace. Results can be exported to spreadsheet.
+Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to selectively export up to 200,000 filtered or unfiltered results to a CSV file.
 
-    **Overrides**: This filter takes information that appears on the mail's details tab and uses it to expose where organizational, or user policies, for allowing and blocking mails have been *overridden*. The most important thing about this filter is that it helps your organization's security team see how many suspicious emails were delivered due to configuration. This gives them an opportunity to modify allows and blocks as needed. This result set of this filter can be exported to spreadsheet.
+<!--- ### View the timeline of your email
 
-    |Threat Explorer Overrides|What they mean|
-    |---|---|
-    |Allowed by Org Policy|Mail was allowed into the mailbox as directed by the organization policy.|
-    |Blocked by Org policy|Mail was blocked from delivery to the mailbox as directed by the organization policy.|
-    |File extension blocked by Org Policy|File was blocked from delivery to the mailbox as directed by the organization policy.|
-    |Allowed by User Policy|Mail was allowed into the mailbox as directed by the user policy.|
-    |Blocked by User Policy|Mail was blocked from delivery to the mailbox as directed by the user policy.|
+**Email Timeline** is a field in Threat Explorer that makes hunting easier for your security operations team. When multiple events happen at or close to the same time on an email, those events show up in a timeline view. Some events that happen post-delivery to email are captured in the **Special actions** column. Combining information from the timeline of an email message with any special actions that were taken post-delivery gives admins insight into policies and threat handling (such as where the mail was routed, and, in some cases, what the final assessment was).  --->
 
-    **URL threat**: The URL threat field has been included on the *details* tab of an email to indicate the threat presented by a URL. Threats presented by a URL can include *Malware*, *Phish*, or *Spam*, and a URL with *no threat* will say *None* in the threats section.
-
-6. **Email timeline view**: Your security operations team might need to deep-dive into email details to investigate further. The email timeline allows admins to view actions taken on an email from delivery to post-delivery. To view an email timeline, click on the subject of an email message, and then click Email timeline. (It appears among other headings on the panel like Summary or Details.) These results can be exported to spreadsheet.
-
-    Email timeline will open to a table that shows all delivery and post-delivery events for the email. If there are no further actions on the email, you should see a single event for the original delivery that states a result, such as *Blocked*, with a verdict like *Phish*. Admins can export the entire email timeline, including all details on the tab and email (such as, Subject, Sender, Recipient, Network, and Message ID). The email timeline cuts down on randomization because there is less time spent checking different locations to try to understand events that happened since the email arrived. When multiple events happen at, or close to, the same time on an email, those events show up in a timeline view.
-
-7. **Preview / download**: Threat Explorer gives your security operations team the details they need to investigate suspicious email. Your security operations team can either:
-
-    - [Check the delivery action and location](#check-the-delivery-action-and-location).
-
-    - [View the timeline of your email](#view-the-timeline-of-your-email).
-
-### Check the delivery action and location
-
-In [Threat Explorer (and real-time detections)](threat-explorer-about.md), you now have **Delivery Action** and **Delivery Location** columns instead of the former **Delivery Status** column. This results in a more complete picture of where your email messages land. Part of the goal of this change is to make investigations easier for security operations teams, but the net result is knowing the location of problem email messages at a glance.
-
-Delivery Status is now broken out into two columns:
-
-- **Delivery action** - What is the status of this email?
-- **Delivery location** - Where was this email routed as a result?
-
-Delivery action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
-
-- **Delivered**: Email was delivered to inbox or folder of a user and the user can directly access it.
-- **Junked**: Email was sent to either user's Junk Email folder or Deleted Items folder, and the user has access to messages in those folders.
-- **Blocked**: Any email messages that are quarantined, that failed, or were dropped.
-- **Replaced**: Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
-
-Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
-
-- **Inbox or folder**: The email is in the inbox or a folder (according to your email rules).
-- **On-prem or external**: The mailbox doesn't exist on cloud but is on-premises.
-- **Junk folder**: The email is in a user's Junk Email folder.
-- **Deleted items folder**: The email is in a user's Deleted Items folder.
-- **Quarantine**: The email in quarantine, and not in a user's mailbox.
-- **Failed**: The email failed to reach the mailbox.
-- **Dropped**: The email gets lost somewhere in the mail flow.
-
-### View the timeline of your email
-
-**Email Timeline** is a field in Threat Explorer that makes hunting easier for your security operations team. When multiple events happen at or close to the same time on an email, those events show up in a timeline view. Some events that happen post-delivery to email are captured in the **Special actions** column. Combining information from the timeline of an email message with any special actions that were taken post-delivery gives admins insight into policies and threat handling (such as where the mail was routed, and, in some cases, what the final assessment was).
-
-> [!IMPORTANT]
-> Jump to a remediation topic [here](remediate-malicious-email-delivered-office-365.md).
-
-## Related topics
+## Related articles
 
 [Remediate malicious email delivered in Office 365](remediate-malicious-email-delivered-office-365.md)
 

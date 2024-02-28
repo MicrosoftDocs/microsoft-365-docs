@@ -1,5 +1,5 @@
 ---
-title: Threat Explorer and Real-time detections basics in Microsoft Defender for Office 365
+title: About Threat Explorer and Real-time detections in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
 ms.author: chrisda
@@ -7,13 +7,13 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: conceptual
-ms.date: 2/13/2024
+ms.date: 2/37/2024
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier1
   - highpri
-description: Use Explorer or Real-time detections to investigate and respond to threats efficiently.
+description: Learn about the available views, filters, and action is Threat Explorer (Explorer) or Real-time detections to investigate and respond to threats.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
@@ -28,7 +28,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections**. These features are powerful, near real-time tools to help Security Operations (SecOps) teams investigate and respond to threats.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections**. These features are powerful, near real-time reporting tools that help Security Operations (SecOps) teams investigate and respond to threats.
 
 Depending on your Defender for Office 365 subscription, Threat Explorer or Real-time detections is available in the **Email & collaboration** section in the Microsoft Defender portal at <https://security.microsoft.com>:
 
@@ -71,9 +71,12 @@ To use Explorer or Real-time detections, you need to be assigned permissions. Yo
   - _Search for Exchange mail flow rules (transport rules) by name in Threat Explorer_: Membership in the **Security Admin** or **Security Reader** roles.
   - _Read-only access_: Membership in the **Global Reader** or **Security Reader** roles.
 
+> [!TIP]
+> Audit log entries are generated when an admin previews or downloads an email message. You can search the admin audit log by user for **AdminMailAccess** activity. For instructions, see [Audit New Search](/purview/audit-new-search).
+
 To use Threat Explorer or Real-time detections, you need to be assigned a license for Defender for Office 365 (included in your subscription or an add-on license).
 
-Threat Explorer or Real-time detections contains data for users with Defender for Office 365 licenses.
+Threat Explorer or Real-time detections contains data for users with Defender for Office 365 licenses assigned to them.
 
 ## Elements of Threat Explorer and Real-time detections
 
@@ -163,7 +166,7 @@ The filterable properties that are available in the **Delivery action** box in t
 |Data loss prevention rule|Text. Separate multiple values by commas.|
 |Context|Select one or more values: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|
 |Connector|Text. Separate multiple values by commas.|
-|Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|
+|Delivery action|Select one or more values: <ul><li>**Blocked**: Email messages that were quarantined, that failed delivery, or were dropped.</li><li>**Delivered**: Email delivered to the user's Inbox or other folder where the user can access the message.</li><li>**Delivered to junk**: Email delivered to the user's Junk Email folder or Deleted Items folder where the user can access the message.</li><li>**Replaced**: This value is no longer relevant. [Anti-malware policies](anti-malware-protection-about.md) in Exchange Online Protection (EOP) used to have an option to deliver the message with all attachments replaced by TXT files. This action is no longer available in Microsoft 365, but is still available in anti-malware policies in Exchange Server.</li></ul>|
 |Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**: The message was retroactively identified as good.</li><li>**ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).</li></ul>|
 |Directionality|Select one or more values: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|
 |Detection technology|Select one or more values: <ul><li>**Advanced filter**: Signals based on machine learning.</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**: [Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.</li><li>**File detonation reputation**: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.</li><li>**File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.</li><li>**Fingerprint matching**: The message closely resembles a previous detected malicious message.</li><li>**General filter**</li><li>**Impersonation brand**: Sender impersonation of well-known brands.</li><li>**Impersonation domain**: Impersonation of sender domains that you own or specified for protection in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).</li><li>**Mixed analysis detection**: Multiple filters contributed to the message verdict.</li><li>**spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).</li><li>**Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.</li><li>**Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.</li><li>**URL detonation reputation**: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.</li><li>**URL malicious reputation**: The message contains a URL that was previously identified as malicious in other Microsoft 365 organizations.</li></ul>|
@@ -1567,7 +1570,7 @@ To save queries in Threat Explorer, do the following steps:
 ## More information
 
 - [Threat Explorer collect email details on the email entity page](mdo-email-entity-page.md)
-- [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
+- [Find and investigate malicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md)
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft Threat Protection](air-about-office.md)

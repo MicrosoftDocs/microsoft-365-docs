@@ -380,11 +380,9 @@
            href: submissions-error-messages.md
        - name: Threat Explorer and real-time detections
          items:
-         - name: Threat Explorer and Real-time detections
+         - name: About Threat Explorer and Real-time detections
            href: threat-explorer-real-time-detections-about.md
-         - name: Email security with Threat Explorer
-           href: threat-explorer-email-security.md
-         - name: Threat hunting in Threat Explorer
+         - name: Threat hunting in Threat Explorer and Real-time detections
            href: threat-explorer-threat-hunting.md
          - name: Investigate delivered malicious email
            href: threat-explorer-investigate-delivered-malicious-email.md

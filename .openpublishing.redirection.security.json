@@ -3781,6 +3781,11 @@
       "redirect_document_id": false
      },
      {
+      "source_path": "microsoft-365/security/office-365-security/threat-explorer-email-security.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-threat-hunting#email-security-scenarios-in-threat-explorer-and-real-time-detections",
+      "redirect_document_id": false
+     },
+     {
       "source_path": "microsoft-365/security/office-365-security/threat-explorer-about.md",
       "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-real-time-detections-about",
       "redirect_document_id": false

@@ -157,7 +157,7 @@ As your pilot users report false positives and false negatives, the messages app
 Use the following features to monitor and iterate on the protection settings in Defender for Office 365:
 
 - [Quarantine](quarantine-admin-manage-messages-files.md)
-- [Threat Explorer](threat-explorer-email-security.md)
+- [Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md)
 - [Email security reports](reports-email-security.md)
 - [Defender for Office 365 reports](reports-defender-for-office-365.md)
 - [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights)

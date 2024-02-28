@@ -49,7 +49,7 @@ The following information is available in this article:
 - [A general walkthrough of Threat Explorer and Real-time detections](#threat-explorer-and-real-time-detections-walk-through)
 - [The threat hunting experience using Threat Explorer and Real-time detections](#the-threat-hunting-experience-using-threat-explorer-and-real-time-detections)
 - [Extended capabilities in Threat Explorer](#extended-capabilities-in-threat-explorer)
-- [Scenarios in Threat Explorer and Real-time detections](#scenarios-in-threat-explorer-and-real-time-detections)
+- [Email security scenarios in Threat Explorer and Real-time detections](#email-security-scenarios-in-threat-explorer-and-real-time-detections)
 
 ## Threat Explorer and Real-time detections walk-through
 
@@ -381,7 +381,7 @@ The **Email** tab (view) for the details area of the **All email**, **Malware**,
 - [Email view for the details area of the Malware view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections)
 - [Email view for the details area of the Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections)
 
-## Scenarios in Threat Explorer and Real-time detections
+## Email security scenarios in Threat Explorer and Real-time detections
 
 The following subsections describe scenarios in Threat Explorer and Real-time detections for common scenarios.
 
@@ -434,7 +434,7 @@ Use the following steps to review phish messages and search for impersonated use
 
 The **Email timeline** is a new Explorer feature that improves the hunting experience for admins. It cuts the time spent checking different locations to try to understand the event. When multiple events happen at or close to the same time an email arrives, those events are displayed in a timeline view. Some events that happen to your email post-delivery are captured in the **Special action** column. Admins can combine  information from the timeline with the special action taken on the mail post-delivery to get insight into how their policies work, where the mail was finally routed, and, in some cases, what the final assessment was.
 
-For more information, see [Investigate and remediate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md). -->
+For more information, see [Investigate and remediate malicious email that was delivered in Office 365](threat-explorer-investigate-delivered-malicious-email.md). -->
 
 ### Export URL click data
 
@@ -455,7 +455,7 @@ You can export URL click data to a CSV file to view the **Network Message ID** a
 
 You can use the Network Message ID value to search for specific messages in Threat Explorer or Real-time detections or associated third-party tools. These searches identify the email message that's associated with a click result. Having the correlated Network Message ID makes for quicker and more powerful analysis.
 
-### See malware detected in email
+### View malware detected in email
 
 Use the following steps in Threat Explorer or Real-time detections to see the malware detected in email by Microsoft 365.
 
@@ -482,6 +482,23 @@ Use the following steps in Threat Explorer or Real-time detections to see the ma
 
 The report shows the results that malware detected in email, using the technology options you selected. From here, you can conduct further analysis.
 
+### Report messages as clean
+
+You can use the **Submissions** page in the Defender portal at <https://security.microsoft.com/reportsubmission> to [report messages as clean (false positives) to Microsoft](submissions-admin.md#report-good-email-to-microsoft). But you can also submit messages as clean to Microsoft from Explorer or Real-time detections.
+
+For instructions, see the [Email remediation](#email-remediation) section earlier in this article.
+
+To summarize:
+
+1. Select :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** on an email in the **All email**, **Malware**, or **Phish** views in Threat Explorer or Real-time detections in the **Email** tab (view) of the details area below the chart.
+
+2. On the **Choose response actions** page of the **Take action** wizard, select **Submit to Microsoft for review** and then select one of the following options:
+   - **I've confirmed it's clean**: Select this value if you're sure that the message is clean. The following options appear:
+     - **Allow messages like this**: If you select this value, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
+       - **Remove entry after**: The default value is **1 day**, but you can also select **7 days**, **30 days**, or a **Specific date** that's less than 30 days.
+       - **Allow entry note**: Enter an optional note that contains additional information.
+   - **It appears clean**: Select one of these values if you're unsure and you want a verdict from Microsoft.
+
 ### View phishing URL and click verdict data
 
 Safe Links protection tracks URLs that were allowed, blocked, and overridden. Safe Links protection is on by default, thanks to Built-in protection in [preset security policies](preset-security-policies.md). Safe Links protection is on in the Standard and Strict preset security policies. You can also create an configure Safe Links protection in [custom Safe Links policies](safe-links-policies-configure.md). For more information about the Safe Links policy settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
@@ -502,6 +519,8 @@ Use the following steps to see phishing attempts using URLs in email messages.
      - **Blocked**
      - **Blocked overridden**
 
+   For explanations of the **Click verdict** values, see **Click verdict** in [Filterable properties in the All email view in Threat Explorer](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-all-email-view-in-threat-explorer).
+
 5. Enter more conditions using other filterable properties as required. For instructions, see [Property filters in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#property-filters-in-threat-explorer-and-real-time-detections).
 
 6. When you're finished creating the filter conditions, select **Refresh**.
@@ -517,11 +536,15 @@ Select a URL from an entry in the to view more information. For more information
 > [!TIP]
 > In the URL details flyout, the filtering on email messages is removed to show the full view of the URL's exposure in your environment. This behavior lets you filter for specific email messages, find specific URLs that are potential threats, and then expand your understanding of the URL exposure in your environment without having to add URL filters in the **Phish** view.
 
-### More ways to use Explorer and Real-time detections
+## Start automated investigation and response in Threat Explorer
+
+[Automated investigation and response (AIR)](air-about-office.md) in Defender for Office 365 Plan 2 can save time and effort as you investigate and mitigate cyberattacks. You can configure alerts that trigger a security playbook, and you can start AIR in Threat Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+
+### More ways to use Threat Explorer and Real-time detections
 
 In addition to the scenarios outlined in this article, you have more options available in Explorer or Real-time detections. For more information, see the following articles:
 
-- [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
+- [Find and investigate malicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md)
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft Defender XDR](../defender/m365d-autoir.md)
 - [Trigger an investigation from Threat Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
