@@ -153,7 +153,11 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
 If you want to edit the Shifts settings that you set previously, select **Deploy Shifts to your teams**. This allows you to edit Shifts settings for teams you already deployed Shifts to and for teams you deploy Shifts to in the future.
 
+:::image type="content" source="media/dsas-deploy-completed.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing the Deploy Shifts to your teams option. "lightbox="media/dsas-deploy-completed.png":::
+
 You'll see all your Shifts settings including shift request settings, time-off reasons, schedule owner group ID, and schedule group settings.
+
+:::image type="content" source="media/dsas-edit-settings.png" alt-text="Screenshot of the Shifts settings page for editing Shifts settings" lightbox="media/dsas-edit-settings.png":::
 
 - You can turn on or turn off shift request settings, time-off requests, and clock in/clock out by switching the toggles to **On** or **Off**. You can add, edit, and delete time-off reasons as you did during initial setup. However, you can't edit the time-off codes for the time-off reasons that you set previously.
 
