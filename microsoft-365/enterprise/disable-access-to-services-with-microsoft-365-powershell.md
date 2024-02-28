@@ -42,7 +42,10 @@ When a Microsoft 365 account is assigned a license from a licensing plan, Micros
 
 ## Use the Microsoft Graph PowerShell SDK
 
-First, [connect to your Microsoft 365 tenant](/graph/powershell/get-started#authentication).
+>[!NOTE]
+> The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+
+First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
 
 Assigning and removing licenses for a user requires the **User.ReadWrite.All** permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
 
