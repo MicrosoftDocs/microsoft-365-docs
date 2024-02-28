@@ -589,6 +589,8 @@
         href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
       - name: Configure behavioral, heuristic, and real-time protection
         href: configure-protection-features-microsoft-defender-antivirus.md
+      - name: Behavior monitoring with Microsoft Defender Antivirus
+        href: behavior-monitor.md
       - name: Detect and block potentially unwanted applications
         href: detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md
       - name: Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
@@ -751,9 +753,11 @@
 
       - name: UEFI scanning in Defender for Endpoint
         href: uefi-scanning-in-defender-for-endpoint.md
-
+      - name: Run Microsoft Defender Antivirus in a sandbox
+        href: sandbox-mdav.md
       - name: "Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus  "
         href: elam-on-mdav.md
+        
     - name: Address false positives/negatives in Microsoft Defender for Endpoint
       href: defender-endpoint-false-positives-negatives.md
 
