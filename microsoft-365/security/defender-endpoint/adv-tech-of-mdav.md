@@ -68,7 +68,7 @@ These protections are further amplified through [Microsoft Defender XDR](https:/
 
 ### How many malware does Microsoft Defender Antivirus block per month? 
 
-[5 billion threats on devices every month](https://www.microsoft.com/en-us/security/blog/2019/05/14/executing-vision-microsoft-threat-protection/)  
+[5 billion threats on devices every month](https://www.microsoft.com/en-us/security/blog/2019/05/14/executing-vision-microsoft-threat-protection/).
 
 ### Do you all focus your detections/preventions in one specific geographic area? 
 
@@ -80,11 +80,7 @@ We focus on every industry. 
  
 ### Do your detection/protection require a human analyst? 
 
-When you are pen-testing, you should demand where no human analysts are engaged on detect/protect, to see how the actual antivirus engine (pre-breach) efficacy truly is...  And a separate one where human analysts are engaged.  We do have the option where you could add [Microsoft Defender Experts for XDR](/microsoft-365/security/defender/dex-xdr-overview) a managed extended detection and response service to augment your SOC. 
- 
-The ***continuous iterative enhancement*** each of these engines to be increasingly effective at catching the latest strains of malware and attack methods.  
- 
-These enhancements show up in consistent [top scores in industry tests](/microsoft-365/security/defender/top-scoring-industry-tests), but more importantly, translate to [threats and malware outbreaks](https://www.microsoft.com/en-us/security/blog/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/) stopped and [more customers protected](https://www.microsoft.com/en-us/security/blog/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise/). 
- 
- 
+When you are pen-testing, you should demand where no human analysts are engaged on detect/protect, to see how the actual antivirus engine (pre-breach) efficacy truly is, and a separate one where human analysts are engaged. You can add [Microsoft Defender Experts for XDR](/microsoft-365/security/defender/dex-xdr-overview) a managed extended detection and response service to augment your SOC.
 
+The ***continuous iterative enhancement*** each of these engines to be increasingly effective at catching the latest strains of malware and attack methods. These enhancements show up in consistent [top scores in industry tests](/microsoft-365/security/defender/top-scoring-industry-tests), but more importantly, translate to [threats and malware outbreaks](https://www.microsoft.com/en-us/security/blog/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/) stopped and [more customers protected](https://www.microsoft.com/en-us/security/blog/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise/). 
+ 
