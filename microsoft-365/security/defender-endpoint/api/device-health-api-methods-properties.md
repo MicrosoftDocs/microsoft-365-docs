@@ -5,8 +5,9 @@ ms.service: defender-endpoint
 ms.author: siosulli 
 author: siosulli
 ms.localizationpriority: medium 
-ms.date: 11/03/2022
+ms.date: 02/28/2024
 manager: deniseb 
+ms.reviewr: mkaminska
 audience: ITPro 
 ms.collection:
  - m365-security
