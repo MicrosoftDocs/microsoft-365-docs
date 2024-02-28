@@ -52,7 +52,7 @@ The Loop app Preview gate checks the following [Cloud Policy](/deployoffice/admi
 
 - **Enable preview features for Loop**
 
-1. Sign in to https://config.office.com/ with your Microsoft 365 admin credentials.
+1. Sign in to [https://config.office.com](https://config.office.com) with your Microsoft 365 admin credentials.
 1. Select **Customization** from the left pane.
 1. Select **Policy Management**.
 1. Create a new policy configuration or edit an existing one.
@@ -75,4 +75,3 @@ In case you create a new policy configuration or change the configuration for an
 - [Get started with Microsoft Loop - Microsoft Support](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c)
 - [Manage Loop workspace experiences in SharePoint Embedded](/microsoft-365/loop/loop-workspaces-configuration)
 - [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration)
-

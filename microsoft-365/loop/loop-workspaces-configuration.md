@@ -89,7 +89,7 @@ The Loop app checks the following Cloud Policy setting to see if workspaces are 
 
 To configure this Cloud Policy setting, perform the following steps:
 
-1. Sign in to https://config.office.com/ with your Microsoft 365 admin credentials.
+1. Sign in to [https://config.office.com](https://config.office.com) with your Microsoft 365 admin credentials.
 1. Select **Customization** from the left pane.
 1. Select **Policy Management**.
 1. Create a new policy configuration or edit an existing one.
