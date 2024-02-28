@@ -4,17 +4,17 @@ description: Learn how to manage, configure, Microsoft Defender Antivirus perfor
 ms.service: defender-endpoint
 ms.localizationpriority: high
 ms.topic: conceptual
-author: denisebmsft
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.reviewer: pricci
-manager: dansimp
+manager: deniseb
 ms.custom: nextgen02
 ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
 search.appverid: met150
-ms.date: 11/02/2023
+ms.date: 02/22/2024
 ---
 
 # Protect Dev Drive using performance mode
