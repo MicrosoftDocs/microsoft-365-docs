@@ -1,8 +1,7 @@
 ---
-title: Microsoft Defender for Office 365 in Microsoft Defender XDR
-description: Learn about changes from the Security & Compliance Center to Microsoft Defender XDR.
-keywords: Microsoft 365 security, Getting started with Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, new defender security portal
-ms.date: 11/22/2022
+title: Microsoft Defender for Office 365 in the Microsoft Defender portal
+description: Learn about changes from the Security & Compliance Center to The Microsoft Defender portal.
+ms.date: 02/27/2024
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,7 +18,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.service: defender-xdr
 ---
 
-# Microsoft Defender for Office 365 in Microsoft Defender XDR
+# Microsoft Defender for Office 365 in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -27,13 +26,13 @@ ms.service: defender-xdr
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
+This article describes the Defender for Office 365 experience in the Microsoft Defender portal. Formerly, Defender for Office 365 customers used the Office 365 Security & Compliance center ([https://protection.office.com](https://protection.office.com)).
+
 ## Quick reference
 
-The table below lists the changes in navigation between the Security & Compliance Center and Microsoft Defender XDR.
+The table below lists the changes in navigation between the Security & Compliance Center and The Microsoft Defender portal.
 
-****
-
-|[Security & Compliance Center](https://protection.office.com)|[Microsoft Defender XDR](https://security.microsoft.com)|[Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)|[Exchange admin center](https://admin.exchange.microsoft.com)|
+|[Security & Compliance Center](https://protection.office.com)|[The Microsoft Defender portal](https://security.microsoft.com)|[Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)|[Exchange admin center](https://admin.exchange.microsoft.com)|
 |---|---|---|---|
 |Alerts|<ul><li>[Alert Policies](https://security.microsoft.com/alertpolicies)</li><li>[Incidents & alerts](https://security.microsoft.com/alerts)</li></ul>|[Alerts page](https://compliance.microsoft.com/homepage)||
 |Classification||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
@@ -50,9 +49,9 @@ The table below lists the changes in navigation between the Security & Complianc
 |Supervision||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
 |eDiscovery||See [Microsoft Purview compliance portal](https://compliance.microsoft.com/homepage)||
 
-[Microsoft Defender XDR](./microsoft-365-defender.md) at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> combines security capabilities from existing Microsoft security portals, including the Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
+[The Microsoft Defender portal](./microsoft-365-defender.md) at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> combines security capabilities from existing Microsoft security portals, including the Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
-If you're familiar with the Security & Compliance Center (protection.office.com), this article describes some of the changes and improvements in Microsoft Defender XDR.
+If you're familiar with the Security & Compliance Center (protection.office.com), this article describes some of the changes and improvements in The Microsoft Defender portal.
 
 Learn more about the benefits: [Overview of Microsoft Defender XDR](microsoft-365-defender.md)
 
@@ -64,7 +63,7 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 
 With the unified Microsoft Defender XDR solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
 
-![The Microsoft Defender XDR converged experience.](../../media/mdo-m36d-nav-collapsed.png)
+![The The Microsoft Defender portal converged experience.](../../media/mdo-m36d-nav-collapsed.png)
 
 Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
 
@@ -89,7 +88,7 @@ Here's an [example on advanced hunting](advanced-hunting-example.md) in Microsof
 
 ### Action center
 
-Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in Microsoft Defender XDR can help security teams by automatically responding to specific events.
+Action center shows you the investigations created by automated investigation and response capabilities. This automated, self-healing in The Microsoft Defender portal can help security teams by automatically responding to specific events.
 
 Learn more about [Action center](m365d-action-center.md).
 
@@ -101,7 +100,7 @@ Get threat intelligence from expert Microsoft security researchers. Threat Analy
 - Incidents view related to the threats.
 - Enhanced experience for quickly identifying and using actionable information in the reports.
 
-You can access Threat analytics either from the upper left navigation bar in Microsoft Defender XDR, or from a dedicated dashboard card that shows the top threats for your organization.
+You can access Threat analytics either from the upper left navigation bar in The Microsoft Defender portal, or from a dedicated dashboard card that shows the top threats for your organization.
 
 Learn more about how to [track and respond to emerging threats with threat analytics](./threat-analytics.md).
 
@@ -119,10 +118,10 @@ The [Email entity page](../office-365-security/mdo-email-entity-page.md) *unifie
 
 View reports, change your settings, and modify user roles.
 
-![The quick launch menu for Microsoft Defender XDR permissions and reporting, on the left navigation pane in the Microsoft Defender portal.](../../media/m365d-settings-nav.png)
+![The quick launch menu for The Microsoft Defender portal permissions and reporting, on the left navigation pane in the Microsoft Defender portal.](../../media/m365d-settings-nav.png)
   
 > [!NOTE]
-> For Defender for Office 365 users, you can now *manage and rotate* DKIM keys in Microsoft Defender XDR at <https://security.microsoft.com/authentication?viewid=DKIM>.
+> For Defender for Office 365 users, you can now *manage and rotate* DKIM keys in The Microsoft Defender portal at <https://security.microsoft.com/authentication?viewid=DKIM>.
 >
 > For more information, see [Use DKIM to validate outbound email sent from your custom domain](/microsoft-365/security/office-365-security/email-authentication-dkim-configure).
 
@@ -133,7 +132,7 @@ This table is a quick reference of Threat management where change has occurred b
 |Area|Description of change|
 |---|---|
 |[Investigation](../office-365-security/air-about.md#the-overall-flow-of-air) |Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) and [Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.|
-|[Alert queue](../../compliance/alert-policies.md)|The **View alerts** flyout pane in the Security & Compliance Center now includes links to Microsoft Defender XDR. Click on the **Open Alert Page** link and Microsoft Defender XDR opens. You can access the **View alerts** page by clicking on any Office 365 alert in the Alerts queue.|
+|[Alert queue](../../compliance/alert-policies.md)|The **View alerts** flyout pane in the Security & Compliance Center now includes links to The Microsoft Defender portal. Click on the **Open Alert Page** link and The Microsoft Defender portal opens. You can access the **View alerts** page by clicking on any Office 365 alert in the Alerts queue.|
 |[Attack Simulation training](../office-365-security/attack-simulation-training-insights.md)|Use Attack Simulation training to run realistic attack scenarios in your organization. These simulated attacks can help train your workforce before a real attack impacts your organization. Attack simulation training includes, more options, enhanced reports, and improved training flows help make your attack simulation and training scenarios easier to deliver and manage.|
 
 No changes to these areas:
@@ -151,11 +150,11 @@ Also, check the **Related Information** section at the bottom of this article.
 > The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> combines security features in <https://securitycenter.windows.com>, and <https://protection.office.com>. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints and Defender for Office Plan 1 customers won't see items such as Threat Analytics.
 
 > [!TIP]
-> All Exchange Online Protection (EOP) functions will be included in Microsoft Defender XDR, as EOP is a core element of Defender for Office 365.
+> All Exchange Online Protection (EOP) functions will be included in The Microsoft Defender portal, as EOP is a core element of Defender for Office 365.
 
 <a name='microsoft-365-defender-home-page'></a>
 
-## Microsoft Defender XDR Home page
+## The Microsoft Defender portal Home page
 
 The Home page of the portal surfaces important summary information about the security status of your Microsoft 365 environment.
 
@@ -165,9 +164,10 @@ Also included is a link to the Security & Compliance Center for comparison. The 
 
 ## Related information
 
-- [Redirecting Security & Compliance Center to Microsoft Defender XDR](microsoft-365-security-mdo-redirection.md)
+- [Redirecting Security & Compliance Center to The Microsoft Defender portal](microsoft-365-security-mdo-redirection.md)
 - [The Action center](./m365d-action-center.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
 - [Custom detection rules](/microsoft-365/security/defender-endpoint/custom-detection-rules)
 - [Create a phishing attack simulation](../office-365-security/attack-simulation-training-simulations.md) and [create a payload for training your people](../office-365-security/attack-simulation-training-payloads.md)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
