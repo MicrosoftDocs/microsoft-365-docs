@@ -93,6 +93,9 @@ You can choose to allow schedule owners to create and manage schedule groups or 
     > To find the Group ID of a group, sign in to the [Azure portal](https://portal.azure.com/), select **Microsoft Entra ID**, and then choose **Groups**. Select the group you want, and then copy the value in the **Object Id** field.
 
 1. Choose one of the following options to define how schedule groups are managed:
+    > [!IMPORTANT]
+    > After you submit your selection, you won't be able to change it again.
+
     - **Schedule groups are created and managed by schedule owners**: Your schedule owners create and manage schedule groups for their teams. They can add, rename, and delete schedule groups in Shifts.
     - **Schedule groups are created and managed in the Teams admin center**: You create and manage the schedule group structure for Shifts. Your schedule owners won't be able to add, rename, or delete schedule groups in Shifts. With this option, you can standardize schedule groups across teams, which allows for automating workflows in Shifts across different teams.
 1. If you chose the option to create and manage schedule groups in the Teams admin center, select **Add** to add schedule groups.
@@ -148,15 +151,15 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
 ## Edit Shifts settings
 
-If you want to edit the Shifts settings that you previously set, select **Deploy Shifts to your teams**. This allows you to edit Shifts settings for teams you already deployed Shifts to and for teams you deploy Shifts to in the future.
+If you want to edit the Shifts settings that you set previously, select **Deploy Shifts to your teams**. This allows you to edit Shifts settings for teams you already deployed Shifts to and for teams you deploy Shifts to in the future.
 
 You'll see all your Shifts settings including shift request settings, time-off reasons, schedule owner group ID, and schedule group settings.
 
-You can enable or disable shift request settings, time-off requests, and clock in/clock out by switching the toggles **On** or **Off**. You can add, edit, and delete time-off reasons as you did during initial setup. However, you can't edit the time-off codes for the time-off reasons that you previously set.
+- You can turn on or turn off shift request settings, time-off requests, and clock in/clock out by switching the toggles to **On** or **Off**. You can add, edit, and delete time-off reasons as you did during initial setup. However, you can't edit the time-off codes for the time-off reasons that you set previously.
 
-You can change the schedule owner group ID that identifies the group that contains all schedule owners.  
+- You can change the schedule owner group ID that identifies the group that contains all schedule owners.  
 
-You won’t be able to change your selection between **Schedule groups are created and managed by schedule owners** and **Schedule groups are created and managed in the Teams admin center**. If you previously selected that schedule groups are created and managed in the Teams admin center, you can add, edit, and delete schedule groups as you did during the initial setup. However, you can't edit the schedule group codes for any of the schedule groups you previously set.  
+- You won’t be able to change your schedule group management option between **Schedule groups are created and managed by schedule owners** and **Schedule groups are created and managed in the Teams admin center**. If you previously chose the option to create and manage schedule groups in the Teams admin center, you can add, edit, and delete schedule groups as you did during the initial setup. However, you can't edit the schedule group codes for any of the schedule groups that you set previously.  
 
 After you make your edits, choose **Apply**. This action applies your changes to all teams that you already deployed Shifts to. These Shifts settings will also be applied to any new teams you deploy Shifts to.
 
@@ -164,7 +167,7 @@ After you make your edits, choose **Apply**. This action applies your changes to
 
 If an error occurred during the deployment process, the status in the table shows as **Error** after you refresh the Manage frontline apps page.
 
-Select the link to download an error CSV file and use the information in it to help resolve the errors. If errors occurred during setup of your Shifts settings, select **Deploy Shifts to your teams** to resubmit or edit your Shifts settings. Then, rerun the [deployment experience](#deploy-shifts-to-your-frontline-teams).
+Select the link to download an error CSV file and use the information in it to help resolve the errors. If any errors occurred during setup of your Shifts settings, choose **Deploy Shifts to your teams** to resubmit or edit your Shifts settings. Then, rerun the [deployment experience](#deploy-shifts-to-your-frontline-teams).
 
 ## Related articles
 
