@@ -417,11 +417,7 @@
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
        - name: Endpoint Attack Notifications
-         items:
-              - name: Endpoint Attack Notifications
-                href: ../defender-endpoint/endpoint-attack-notifications.md
-              - name: Experts on Demand
-                href: ../defender-endpoint/experts-on-demand.md
+         href: ../defender-endpoint/endpoint-attack-notifications.md
        - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview

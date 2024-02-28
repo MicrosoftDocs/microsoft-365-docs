@@ -851,8 +851,6 @@
             href: respond-file-alerts.md#restore-file-from-quarantine
           - name: Add indicators to block or allow a file
             href: respond-file-alerts.md#add-indicator-to-block-or-allow-a-file
-          - name: Consult a threat expert
-            href: respond-file-alerts.md#consult-a-threat-expert
           - name: Check activity details in Action center
             href: respond-file-alerts.md#check-activity-details-in-action-center
           - name: Download or collect file
@@ -918,9 +916,6 @@
 
     - name: Endpoint Attack Notifications
       href: endpoint-attack-notifications.md
-
-    - name: Experts on Demand
-      href: experts-on-demand.md
 
   - name: Reference
     items:
