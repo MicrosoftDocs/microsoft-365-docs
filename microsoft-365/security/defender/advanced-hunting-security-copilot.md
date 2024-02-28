@@ -31,7 +31,7 @@ ms.date: 03/01/2024
 - Microsoft Defender
 - Microsoft Defender XDR
 
-## Microsoft Copilot for Security in advanced hunting
+## Copilot for Security in advanced hunting
 
 [Microsoft Copilot for Security in Microsoft Defender](security-copilot-in-microsoft-365-defender.md) comes with a query assistant capability in advanced hunting. 
 
