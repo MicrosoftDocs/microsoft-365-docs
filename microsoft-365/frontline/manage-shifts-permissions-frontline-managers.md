@@ -53,8 +53,8 @@ The following table lists the settings and schedule group capabilities that are 
 |Offer shift|Turn on or off workers' ability to offer shifts to coworkers.|✔️&sup1;|
 |Time-off requests|Turn on or turn off workers' ability to request time off.|✔️|
 |Time-off reasons|Add and edit time-off reasons for the team.|✔️|
-|Time clock|Turn on or turn off time clock for their team.|✔️|
-|Time clock geolocation|Define time clock geolocation (take precedence over time clock setting)|✔️|
+|Time clock|Turn on or turn off time clock for the team.|✔️|
+|Time clock geolocation|Define time clock geolocation (takes precedence over time clock setting)|✔️|
 |Visibility of past shifts|Turn on or turn off workers' ability to see coworkers' past shifts.||
 |Visibility of time off|Turn on or turn off workers' ability to see each other's time-off details.||
 |Visibility of shifts details|Turn on or turn off workers' ability to see each other's shift details.||
@@ -79,7 +79,7 @@ Contoso reviewed the Shifts capabilities of their frontline managers and determi
 
 ### Frontline managers shouldn't be able to choose whether their teams can use time clock in Shifts
 
-Contoso decided not to use time clock in Shifts for now because they want their frontline workers to use the in-store stations to clock and out of their shifts. This means that they need to:
+Contoso decided not to use time clock in Shifts for now because they want their frontline workers to use the in-store stations to clock in and out of their shifts. This means that they need to:
 
 - Remove permissions for store managers (team owners) and department managers (schedule owners) to change the time clock setting in Shifts for their teams.
 - Set the time clock setting in Shifts to **Off** for all teams.
