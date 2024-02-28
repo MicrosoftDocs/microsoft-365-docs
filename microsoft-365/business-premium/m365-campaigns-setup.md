@@ -39,7 +39,7 @@ Campaigns and political parties in the USA are eligible for special pricing for 
 - U.S. State-wide political campaigns (eg: campaigns seeking office for governor, state legislature, or attorney general)
 
    > [!IMPORTANT]
-   > Due to local regulations, we are unable to offer Microsoft 365 for Campaigns in the following states at this time: CO, DE, IL, OK, WI & WY. We encourage campaigns in those states to explore additional offerings at [Microsoft 365 for business](https://www.office.com/business).
+   > Due to local regulations, we are unable to offer Microsoft 365 for Campaigns in the following states at this time: CO, DE, IL, OK, WI & WY. We encourage campaigns in those states to explore additional offerings at [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business).
 
 If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft. See [Microsoft 365 for Campaigns](https://m365forcampaigns.microsoft.com).
 
