@@ -35,7 +35,7 @@ Just like other Microsoft 365 experiences, Loop also uses core services across S
 
 ### License requirements
 
-Licensing through the new Loop with workspaces service plan covers the creation of new workspaces. If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
+Licensing through the new Loop with workspaces service plan covers the creation of new workspaces and management of workspace members. The full set of experiences enabled and the specific licenses that include the Loop with workspaces service plan are covered in [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/office/loop-access-via-microsoft-365-subscriptions-92915461-4b14-49a4-9cd4-d1c259292afa).
 
 ### WebSocket connections
 
