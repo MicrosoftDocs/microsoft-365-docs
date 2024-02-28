@@ -752,7 +752,7 @@
       - name: UEFI scanning in Defender for Endpoint
         href: uefi-scanning-in-defender-for-endpoint.md
       - name: Run Microsoft Defender Antivirus in a sandbox
-        href: sandboxing-mdav.md
+        href: sandbox-mdav.md
       - name: "Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus  "
         href: elam-on-mdav.md
         
