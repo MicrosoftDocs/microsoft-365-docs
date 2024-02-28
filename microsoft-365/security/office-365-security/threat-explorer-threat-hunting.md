@@ -383,9 +383,9 @@ The **Email** tab (view) for the details area of the **All email**, **Malware**,
 
 ## Email security scenarios in Threat Explorer and Real-time detections
 
-The following subsections describe scenarios in Threat Explorer and Real-time detections for common scenarios.
+The following subsections describe scenarios in Threat Explorer and Real-time detections for common email security scenarios.
 
-### View phishing emails sent to impersonated users and domains
+### View phishing email sent to impersonated users and domains
 
 For more information about user and domain impersonation protection in anti-phishing policies in Defender for Office 365, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
