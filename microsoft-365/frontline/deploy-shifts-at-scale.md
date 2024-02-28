@@ -151,21 +151,21 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
 ## Edit Shifts settings
 
-If you want to edit the Shifts settings that you set previously, select **Deploy Shifts to your teams**. This allows you to edit Shifts settings for teams you already deployed Shifts to and for teams you deploy Shifts to in the future.
+1. If you want to edit the Shifts settings that you set previously, select **Deploy Shifts to your teams**. This allows you to edit Shifts settings for teams you already deployed Shifts to and for teams you deploy Shifts to in the future.
 
-:::image type="content" source="media/dsas-deploy-completed.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing the Deploy Shifts to your teams option. "lightbox="media/dsas-deploy-completed.png":::
+    :::image type="content" source="media/dsas-deploy-completed.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing the Deploy Shifts to your teams option. "lightbox="media/dsas-deploy-completed.png":::
 
-You'll see all your Shifts settings including shift request settings, time-off reasons, schedule owner group ID, and schedule group settings.
+1. You'll see all your Shifts settings including shift request settings, time-off reasons, schedule owner group ID, and schedule group settings.
 
-:::image type="content" source="media/dsas-edit-settings.png" alt-text="Screenshot of the Shifts settings page for editing Shifts settings" lightbox="media/dsas-edit-settings.png":::
+    :::image type="content" source="media/dsas-edit-settings.png" alt-text="Screenshot of the Shifts settings page for editing Shifts settings" lightbox="media/dsas-edit-settings.png":::
 
-- You can turn on or turn off shift request settings, time-off requests, and clock in/clock out by switching the toggles to **On** or **Off**. You can add, edit, and delete time-off reasons as you did during initial setup. However, you can't edit the time-off codes for the time-off reasons that you set previously.
+    - You can turn on or turn off shift request settings, time-off requests, and clock in/clock out by switching the toggles to **On** or **Off**. You can add, edit, and delete time-off reasons as you did during initial setup. However, you can't edit the time-off codes for the time-off reasons that you set previously.
 
-- You can change the schedule owner group ID that identifies the group that contains all schedule owners.  
+    - You can change the schedule owner group ID that identifies the group that contains all schedule owners.  
 
-- You won’t be able to change your schedule group management option from **Schedule groups are created and managed by schedule owners** to **Schedule groups are created and managed in the Teams admin center** or vice versa. If you previously chose the option to create and manage schedule groups in the Teams admin center, you can add, edit, and delete schedule groups as you did during the initial setup. However, you can't edit the schedule group codes for any of the schedule groups that you set previously.  
+    - You won’t be able to change your schedule group management selection from **Schedule groups are created and managed by schedule owners** to **Schedule groups are created and managed in the Teams admin center** or vice versa. If you previously chose the option to create and manage schedule groups in the Teams admin center, you can add, edit, and delete schedule groups as you did during the initial setup. However, you can't edit the schedule group codes for any of the schedule groups that you set previously.  
 
-After you make your edits, choose **Apply**. This action applies your changes to all teams that you already deployed Shifts to. These Shifts settings will also be applied to any new teams you deploy Shifts to.
+1. After you make your edits, choose **Apply**. This action applies your changes to all teams that you already deployed Shifts to. These Shifts settings will also be applied to any new teams you deploy Shifts to.
 
 ## Troubleshoot errors
 
