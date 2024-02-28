@@ -1,64 +1,66 @@
 - name: Microsoft Bookings
   href: bookings-overview.md
   items:
-  - name: Bookings for end-users
+  - name: Learn about Personal Bookings
     items:
     - name: Overview
       href: bookings-overview.md
-    - name: Personal Bookings
-      items:
-      - name: Create a new meeting type
-        href: bookings-in-outlook.md
-      - name: Preview and share your personal booking page
-        href: bookings-in-outlook.md
-      - name: Add email reminders and follow-up
-        href: bookings-in-outlook.md
-      - name: Set your banner page
-        href: bookings-in-outlook.md
-      - name: Turn off your personal booking page
-        href: bookings-in-outlook.md
-    - name: Shared Bookings
-      items:
-      - name: Enter your Bookings business information
-        href: enter-business-information.md
-      - name: Define your Bookings service offerings
-        href: define-service-offerings.md
-      - name: Add staff to Bookings
-        href: add-staff.md
-      - name: Share your booking page
-        href: enter-business-information.md
-      - name: Understanding staff roles
-        href: define-service-offerings.md
-      - name: Set up different staff availability
-        href: add-staff.md
-      - name: Notify staff member when they have a booking
-        href: enter-business-information.md
-      - name: Accept membership as a staff member
-        href: define-service-offerings.md
-      - name: Create multiple services
-        href: add-staff.md
-      - name: Set up SMS text notification
-        href: bookings-sms.md
-      - name: Block out specific services depending on dates
-        href: define-service-offerings.md
-      - name: Define booking acceptance threshold
-        href: add-staff.md
-      - name: Use buffer time to add prep time
-        href: enter-business-information.md
-      - name: Hide services from your booking page
-        href: define-service-offerings.md
-      - name: Configure notifications
-        href: add-staff.md
-      - name: Let customers manage their own bookings
-        href: define-service-offerings.md
-      - name: Create an appointment on behalf of a customer
-        href: add-staff.md
-      - name: Add custom questions
-        href: enter-business-information.md
-      - name: Default scheduling policies
-        href: define-service-offerings.md
-      - name: Change business hours and time zone
-        href: add-staff.md        
+    - name: Create a new meeting type
+      href: bookings-in-outlook.md
+    - name: Preview and share your personal booking page
+      href: bookings-in-outlook.md
+    - name: Add email reminders and follow-up
+      href: bookings-in-outlook.md
+    - name: Set your banner page
+      href: bookings-in-outlook.md
+    - name: Turn off your personal booking page
+      href: bookings-in-outlook.md      
+  - name: Learn about Shared Bookings
+    items:
+    - name: Overview
+      href: bookings-overview.md
+    - name: Create a new meeting type
+      href: bookings-in-outlook.md
+    - name: Enter your Bookings business information
+      href: enter-business-information.md
+    - name: Define your Bookings service offerings
+      href: define-service-offerings.md
+    - name: Add staff to Bookings
+      href: add-staff.md
+    - name: Share your booking page
+      href: enter-business-information.md
+    - name: Understanding staff roles
+      href: define-service-offerings.md
+    - name: Set up different staff availability
+      href: add-staff.md
+    - name: Notify staff member when they have a booking
+      href: enter-business-information.md
+    - name: Accept membership as a staff member
+      href: define-service-offerings.md
+    - name: Create multiple services
+      href: add-staff.md
+    - name: Set up SMS text notification
+      href: bookings-sms.md
+    - name: Block out specific services depending on dates
+      href: define-service-offerings.md
+    - name: Define booking acceptance threshold
+      href: add-staff.md
+    - name: Use buffer time to add prep time
+      href: enter-business-information.md
+    - name: Hide services from your booking page
+      href: define-service-offerings.md
+    - name: Configure notifications
+      href: add-staff.md
+    - name: Let customers manage their own bookings
+      href: define-service-offerings.md
+    - name: Create an appointment on behalf of a customer
+      href: add-staff.md
+    - name: Add custom questions
+      href: enter-business-information.md
+    - name: Default scheduling policies
+      href: define-service-offerings.md
+    - name: Change business hours and time zone
+      href: add-staff.md         
   - name: Bookings for admins
     items:
     - name: Overview
