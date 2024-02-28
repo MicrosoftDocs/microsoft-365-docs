@@ -32,7 +32,7 @@
       - name: Set up targeted communications
         href: set-up-targeted-communications.md 
       - name: Deploy Shifts at scale
-        href: deploy-shifts-at-scale.md 
+        href: deploy-shifts-at-scale.md
     - name: Manage devices
       items:
       - name: Manage shared and personal devices
