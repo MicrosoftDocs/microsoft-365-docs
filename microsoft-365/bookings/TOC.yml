@@ -62,7 +62,7 @@
   - name: Bookings for admins
     items:
     - name: Overview
-      href: bookings-overview.md    
+      href: bookings-overview.md
     - name: Bookings architecture
       href: bookings-overview.md
     - name: Turn bookings on or off
@@ -81,4 +81,11 @@
       href: bookings-overview.md    
     - name: Delete booking page
       href: bookings-overview.md
-
+  - name: Industry specific scenarios
+    items:
+    - name: Overview
+      href: bookings-overview.md
+  - name: What's new in Bookings
+    items:
+    - name: Overview
+      href: bookings-overview.md      
