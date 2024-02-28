@@ -203,7 +203,7 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   Remove-MgUserPhoto -UserId albertas@contoso.onmicrosoft.com
   ```
 
-  For detailed syntax and parameter information, see [Remove-MgUserPhoto](/powershell/module/microsoft.graph.users/remove-mguserphoto).
+  For detailed syntax and parameter information, see [Remove-MgUserPhoto](/powershell/module/exchange/remove-userphoto).
 
 - **Microsoft 365 Groups**:
 
@@ -219,4 +219,4 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   Remove-MgGroupPhoto -GroupId 173cd812-5563-439c-9da4-bc2715fa2aee
   ```
 
-  For detailed syntax and parameter information, see [Remove-MgGroupPhoto](/powershell/module/microsoft.graph.groups/remove-mggroupphoto).
+  For detailed syntax and parameter information, see [Remove-MgGroupPhoto](/powershell/module/exchange/remove-userphoto).
