@@ -1,25 +1,21 @@
 ---
 title: Troubleshoot problems with reporting tools for Microsoft Defender Antivirus
 description: Identify and solve common problems when attempting to report in Microsoft Defender Antivirus protection status in Update Compliance
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender Antivirus
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
-ms.reviewer:
-manager: dansimp
+ms.reviewer: yongrhee
+manager: deniseb
 ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier3
 - mde-ngp
 search.appverid: met150
-ms.date: 04/08/2021
+ms.date: 02/18/2024
 ---
 
 # Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
@@ -28,12 +24,15 @@ ms.date: 04/08/2021
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 **Platforms**
 - Windows
+- Windows Server
 
 > [!IMPORTANT]
 > On March 31, 2020, the Microsoft Defender Antivirus reporting feature of Update Compliance will be removed. You can continue to define and review security compliance policies using [Microsoft Intune family of products](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune), which allows finer control over security features and updates.

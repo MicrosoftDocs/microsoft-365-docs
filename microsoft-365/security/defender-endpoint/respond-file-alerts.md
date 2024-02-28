@@ -5,7 +5,7 @@ ms.service: defender-endpoint
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -252,12 +252,6 @@ See [manage indicators](manage-indicators.md) for more details on blocking and r
 To stop blocking a file, remove the indicator. You can do so via the **Edit Indicator** action on the file's profile page. This action will be visible in the same position as the **Add Indicator** action, before you added the indicator.
 
 You can also edit indicators from  the **Settings** page, under **Rules** \> **Indicators**. Indicators are listed in this area by their file's hash.
-
-## Consult a threat expert
-
-Select Ask Defender Experts to get more insights from Microsoft experts on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
-
-See [Ask Defender Experts](experts-on-demand.md) for details.
 
 ## Check activity details in Action center
 

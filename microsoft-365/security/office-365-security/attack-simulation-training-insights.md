@@ -2,7 +2,7 @@
 title: Insights and reports Attack simulation training
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
