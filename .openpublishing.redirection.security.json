@@ -1,9 +1,49 @@
 {
    "redirections": [
      {
+       "source_path": "microsoft-365/security/defender-identity/directory-service-accounts.md",
+       "redirect_url": "/defender-for-identity/deploy/directory-service-accounts?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/entity-tags.md",
+       "redirect_url": "/defender-for-identity/entity-tags?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/exclusions.md",
+       "redirect_url": "/defender-for-identity/exclusions?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/manage-security-alerts.md",
+       "redirect_url": "/defender-for-identity/manage-security-alerts?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/notifications.md",
+       "redirect_url": "/defender-for-identity/notifications?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/sensor-health.md",
+       "redirect_url": "/defender-for-identity/sensor-settings?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/vpn-integration.md",
+       "redirect_url": "/defender-for-identity/vpn-integration?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
        "source_path": "microsoft-365/security/defender/opt-out-of-preview.md",
        "redirect_url": "/microsoft-365/security/defender/dex-xdr-overview",
        "redirect_document_id": true
+     },
+     {
+              "source_path": "microsoft-365/security/defender-endpoint/experts-on-demand.md",
+              "redirect_url": "/microsoft-365/security/defender/onboarding-defender-experts-for-hunting/collaborate-with-experts-on-demand",
+              "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/defender/defenderexpertsforhuntingprev.md",

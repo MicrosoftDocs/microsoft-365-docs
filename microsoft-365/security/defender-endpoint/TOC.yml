@@ -589,6 +589,8 @@
         href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
       - name: Configure behavioral, heuristic, and real-time protection
         href: configure-protection-features-microsoft-defender-antivirus.md
+      - name: Behavior monitoring with Microsoft Defender Antivirus
+        href: behavior-monitor.md
       - name: Detect and block potentially unwanted applications
         href: detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md
       - name: Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
@@ -853,8 +855,6 @@
             href: respond-file-alerts.md#restore-file-from-quarantine
           - name: Add indicators to block or allow a file
             href: respond-file-alerts.md#add-indicator-to-block-or-allow-a-file
-          - name: Consult a threat expert
-            href: respond-file-alerts.md#consult-a-threat-expert
           - name: Check activity details in Action center
             href: respond-file-alerts.md#check-activity-details-in-action-center
           - name: Download or collect file
@@ -920,9 +920,6 @@
 
     - name: Endpoint Attack Notifications
       href: endpoint-attack-notifications.md
-
-    - name: Experts on Demand
-      href: experts-on-demand.md
 
   - name: Reference
     items:
