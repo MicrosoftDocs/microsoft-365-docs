@@ -25,15 +25,11 @@ description: "Learn how to manage access to the Loop app preview."
 
 # Manage Loop app preview access
 
-This article details the Cloud Policy setting used to gate access to the Loop app Preview experiences within your organization.
-
-## Requirements
-
-Users in your organization must first be enabled for Loop app with workspaces and also licensed for Loop app with workspaces. Learn more in [License Requirements](/microsoft-365/loop/loop-workspaces-configuration#license-requirements). If both of these conditions are true, and the user account is added to the Loop app Preview policy, this enables Loop app Preview experiences.
+This article details the Cloud Policy setting used to gate access to the Loop app preview experiences within your organization.
 
 ## User experience expectations when admin settings are configured
 
-When a user account in your organization is provided access to the Loop app Preview experience, they can choose between the Production or the Preview experience. These users default to Preview for each Loop app session and are able to manually switch to Production if needed.
+When a user account in your organization is provided access to the Loop app preview experience, they can choose between the standard or the preview experience. These users default to preview for each Loop app session and are able to manually switch to standard if needed.
 
 ## Microsoft 365 Groups for Cloud Policy
 
@@ -42,13 +38,13 @@ If you want to scope the Cloud Policy settings to only some users in your tenant
 > [!NOTE]
 > This section isn't required if you choose to apply the Loop settings to all the users in your tenant.
 
-You are able to use this group for the Cloud Policy setup procedure specified in [Configuring Preview user accounts in Cloud Policy](#configuring-preview-user-accounts-in-cloud-policy).
+You are able to use this group for the Cloud Policy setup procedure specified in [Configuring preview user accounts in Cloud Policy](#configuring-preview-user-accounts-in-cloud-policy).
 
 If you prefer, you can also create other types of groups to use with Cloud Policy. For more information, see [learn more about creating groups in the Microsoft 365 admin center](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) or [learn more about creating dynamic groups in AzureAD](/azure/active-directory/external-identities/use-dynamic-groups).
 
-## Configuring Preview user accounts in Cloud Policy
+## Configuring preview user accounts in Cloud Policy
 
-The Loop app Preview gate checks the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting:
+The Loop app oreview gate checks the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) setting:
 
 - **Enable preview features for Loop**
 
@@ -59,9 +55,9 @@ The Loop app Preview gate checks the following [Cloud Policy](/deployoffice/admi
 1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
 1. In **Configure Settings**, choose one of the following settings:
     - For **Enable preview features for Loop**:
-        - **Enabled**: Loop app Preview experience is available to the users.
-        - **Disabled**: Loop app Preview experience isn't available to the users.
-        - **Not configured**: Loop app Preview experience isn't available to the users.
+        - **Enabled**: Loop app preview experience is available to the users.
+        - **Disabled**: Loop app preview experience isn't available to the users.
+        - **Not configured**: Loop app preview experience isn't available to the users.
 1. Save the policy configuration.
 1. Reassign priority for any security group, if necessary. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
