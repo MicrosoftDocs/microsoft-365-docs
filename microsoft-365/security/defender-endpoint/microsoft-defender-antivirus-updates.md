@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 12/06/2023
+ms.date: 02/27/2024
 audience: ITPro
 ms.topic: reference
 author: siosulli
@@ -22,10 +22,12 @@ search.appverid: met150
 # Microsoft Defender Antivirus security intelligence and product updates
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
 
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). This article includes information about the two types of updates for keeping Microsoft Defender Antivirus current:
@@ -95,15 +97,37 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
+### January-2024 (Platform: 4.18.24010.12 | Engine: 1.1.24010.10)
+
+- Security intelligence update version: **1.405.702.0**
+- Release date:  **February 27, 2024**
+- Platform: **4.18.24010.12**
+- Engine: **1.1.24010.10**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Microsoft Defender Antivirus now caches the Mark of the Web (MoTW) Alternative Data Stream (ADS) for better performance while scanning.
+- Fixed an issue that occurred in [attack surface reduction](attack-surface-reduction-rules-reference.md) in warn mode when removing scan results from the real-time protection cache.
+- Performance improvement added for `OneNote.exe`.
+- Cloud-based entries are regularly removed from the persistent user mode cache in Windows Defender to prevent a uncommon issue where a user could still add a certificate, based on an Indicator of compromise (IoC), to the cache after a file with that certificate had already been added via cloud signature.
+- The Sense onboarding event is now sent in passive mode for operating systems with the old Sense client.
+- Improved performance for logs created/accessed by powershell.
+- Improved performance for folders included in [Controlled folder access(CFA)](controlled-folders.md) when accessing network files.
+- Fixed a deadlock that occurred at shutdown for Data Loss Prevention (DLP) enabled devices.
+- Fixed an issue to remove a vulnerability in the Microsoft Defender Core service.
+- Fixed an onboarding issue in the Unified Agent installation script [install.ps1](https://github.com/microsoft/mdefordownlevelserver).
+- Fixed a memory leak that impacted some devices that received platform update `4.18.24010.7`
+
 ### November-2023 (Platform: 4.18.23110.3 | Engine: 1.1.23110.2)
 
-- Security intelligence update version: **1.403.7.0** 
+- Security intelligence update version: **1.403.7.0**
 - Release date: **December 5, 2023 (Platform)** / **December 6, 2023 (Engine)**
-- Platform: **4.18.23110.3** 
+- Platform: **4.18.23110.3**
 - Engine: **1.1.23110.2**
-- Support phase: **Security and Critical Updates** 
+- Support phase: **Security and Critical Updates**
 
-#### What's new 
+#### What's new
 
 - Fixed PowerShell cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to show the correct date/time for `AntivirusSignatureLastUpdated`
 - Resolved deadock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
@@ -139,29 +163,6 @@ All our updates contain
 - Fixed an issue with device control so that device control policies remain enforced when a platform update requires a reboot
 - Improved performance of [device control for printing scenarios](device-control-policies.md)
 - Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus.md) (processing Unicode characters)
-
-#### Known issues
-
-- None
-
-### September-2023 (Platform: 4.18.23090.2008 | Engine: 1.1.23090.2007)
- 
-- Security intelligence update version: **1.399.44.0**
-- Release date:  **October 3, 2023 (Engine) | October 4, 2023 (Platform)**
-- Platform: **4.18.23090.2008**
-- Engine: **1.1.23090.2007**
-- Support phase: **Security and Critical Updates**
- 
-#### What's new
-
-- Fixed automatic remediation during on demand scans involving archives with multiple threats
-- Improved the performance of scanning files on network locations
-- Added support for domain computer SID for device control policies
-- Improved installer of unified agent to include legacy version of Windows Server 2012 (6.3.9600.17735)
-- Fixed issue in device control when querying Microsoft Entra group membership, which resulted in increased network traffic.
-- Improved parsing of attack surface reduction exclusions in the antimalware engine
-- Improved reliability in scanning PE files
-- Improved deployments safeguards for security intelligence updates
 
 #### Known issues
 
