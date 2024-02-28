@@ -7,7 +7,7 @@ ms.reviewer: yongrhee
 manager: deniseb
 ms.service: defender-endpoint
 ms.topic: overview
-ms.date:     02/26/2024
+ms.date: 02/28/2024
 ms.subservice: ngp
 ms.localizationpriority: medium
 ms.custom: partner-contribution
@@ -28,7 +28,7 @@ audience: ITPro
 
 Microsoft Defender Antivirus and the multiple engines that lead to the advanced detection and prevention technologies under the hood to detect and stop a wide range of threats and attacker techniques at multiple points, as depicted in the following diagram:
 
-
+:::image type="content" source="media/next-gen-protection-engines.png" alt-text="Diagram depicting next generation protection engines and how they work between the cloud and the client device.":::
 
 
 Many of these engines are built into the client and provide advanced protection against majority of threats in *real-time*. 
