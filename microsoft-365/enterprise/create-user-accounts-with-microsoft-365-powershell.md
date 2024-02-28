@@ -31,7 +31,7 @@ description: How to use PowerShell to create individual or multiple Microsoft 36
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can use PowerShell for Microsoft 365 to efficiently create user accounts, including multiple accounts.
+You can use Microsoft Graph PowerShell to efficiently create user accounts, including multiple accounts.
 
 When you create user accounts in PowerShell, certain account properties are always required. Other properties aren't required but are important. See the following table.
   
@@ -50,53 +50,33 @@ When you create user accounts in PowerShell, certain account properties are alwa
 >
 > For a list of additional resources, see [Manage users and groups](/admin).
 
-## Use the Azure Active Directory PowerShell for Graph module
+## Create Microsoft 365 user accounts with Microsoft Graph PowerShell
 
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+>[!NOTE]
+> The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
-### Create an individual user account
+First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md). The cmdlets in this article require the permission scope **User.ReadWrite.All** or one of the other permissions listed in the ['List subscribedSkus' Graph API reference page](/graph/api/subscribedsku-list). Some commands in this article may require different permission scopes, in which case this will be noted in the relevant section.
 
-After you connect, use the following syntax to create an individual account:
-  
 ```powershell
-$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-$PasswordProfile.Password="<user account password>"
-New-AzureADUser -DisplayName "<display name>" -GivenName "<first name>" -SurName "<last name>" -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -MailNickName <mailbox name> -PasswordProfile $PasswordProfile -AccountEnabled $true
+Connect-MgGraph -Scopes "User.ReadWrite.All"
 ```
-
-This example creates an account for the US user *Caleb Sills*:
-  
-```powershell
-$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-$PasswordProfile.Password="3Rv0y1q39/chsy"
-New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -MailNickName calebs -PasswordProfile $PasswordProfile -AccountEnabled $true
-```
-
-## Use the Microsoft Azure Active Directory module for Windows PowerShell
-
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 ### Create an individual user account
 
 To create an individual account, use the following syntax:
   
 ```powershell
-New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last name> -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -LicenseAssignment <licensing plan name> [-Password <Password>]
+$PasswordProfile = New-Object -TypeName Microsoft.Graph.PowerShell.Models.MicrosoftGraphPasswordProfile
+$PasswordProfile.Password = "<user account password>"
+New-MgUser -DisplayName "<display name>" -GivenName "<first name>" -Surname "<last name>" -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -MailNickname <mailbox name> -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
 
-> [!NOTE]
-> PowerShell Core doesn't support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets that have *Msol* in their name. Run these cmdlets from Windows PowerShell.
-
-To list the available [licensing plan names](/azure/active-directory/enterprise-users/licensing-service-plan-reference), use this command:
-
-````powershell
-Get-MsolAccountSku
-````
-
-This example creates an account for the US user *Caleb Sills*, and assigns a license from the `contoso:ENTERPRISEPACK` (Office 365 Enterprise E3) licensing plan.
+This example creates an account for the US user *John Doe*.
   
 ```powershell
-New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -LicenseAssignment contoso:ENTERPRISEPACK
+$PasswordProfile = New-Object -TypeName Microsoft.Graph.PowerShell.Models.MicrosoftGraphPasswordProfile
+$PasswordProfile.Password = "3Rv0y1q39/chsy"
+New-MgUser -DisplayName "John Doe" -GivenName "John" -Surname "Doe" -UserPrincipalName johnd@contoso.onmicrosoft.com -UsageLocation "US" -MailNickname "johnd" -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
 
 ### Create multiple user accounts
@@ -104,28 +84,41 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
 1. Create a comma-separated value (CSV) file that contains the required user account information. For example:
 
      ```powershell
-     UserPrincipalName,FirstName,LastName,DisplayName,UsageLocation,AccountSkuId
-     ClaudeL@contoso.onmicrosoft.com,Claude,Loiselle,Claude Loiselle,US,contoso:ENTERPRISEPACK
-     LynneB@contoso.onmicrosoft.com,Lynne,Baxter,Lynne Baxter,US,contoso:ENTERPRISEPACK
-     ShawnM@contoso.onmicrosoft.com,Shawn,Melendez,Shawn Melendez,US,contoso:ENTERPRISEPACK
+     UserPrincipalName,FirstName,LastName,DisplayName,UsageLocation,MailNickname
+     ClaudeL@contoso.onmicrosoft.com,Claude,Loiselle,Claude Loiselle,US,claudel
+     LynneB@contoso.onmicrosoft.com,Lynne,Baxter,Lynne Baxter,US,lynneb
+     ShawnM@contoso.onmicrosoft.com,Shawn,Melendez,Shawn Melendez,US,shawnm
      ```
 
    > [!NOTE]
    > The column names and their order in the first row of the CSV file are arbitrary. But make sure the order of the data in the rest of the file matches the order of the column names. And use the column names for the parameter values in the PowerShell for Microsoft 365 command.
 
-2. Use the following syntax:
+2. This example creates user accounts from the file *C:\temp\NewAccounts.csv* and logs the results in a file named *C:\temp\NewAccountResults.csv*.
 
     ```powershell
-     Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>
+    # Import the CSV file
+    $users = Import-Csv -Path "C:\temp\NewAccounts.csv"
+
+    # Create a password profile
+    $PasswordProfile = @{
+        Password = 'Password123'
+        }
+
+    # Loop through each user in the CSV file
+    foreach ($user in $users) {
+        # Create a new user
+        $newUser = New-MgUser -DisplayName $user.DisplayName -GivenName $user.FirstName -Surname $user.LastName -UserPrincipalName $user.UserPrincipalName -UsageLocation $user.UsageLocation -MailNickname $user.MailNickname -PasswordProfile $passwordProfile -AccountEnabled
+
+        # Assign a license to the new user
+        $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+        Set-MgUserLicense -UserId $newUser.Id -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
+    }
+
+    # Export the results to a CSV file
+    $users | Export-Csv -Path "C:\temp\NewAccountResults.csv" -NoTypeInformation
     ```
 
-   This example creates user accounts from the file *C:\My Documents\NewAccounts.csv* and logs the results in a file named *C:\My Documents\NewAccountResults.csv*.
-
-    ```powershell
-    Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
-    ```
-
-3. Review the output file to see the results. We didn't specify passwords, so the random passwords that Microsoft 365 generated are visible in the output file.
+3. Review the output file to see the results.
 
 ## See also
 
