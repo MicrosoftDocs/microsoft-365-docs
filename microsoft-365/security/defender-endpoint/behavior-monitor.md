@@ -83,7 +83,7 @@ Use the following command to modify the behavior monitoring settings:
 
 For more information, see [Set-MpPreference](/powershell/module/defender/set-mppreference#-disablebehaviormonitoring). 
 
-## Query the bBehavior monitoring status from PowerShell
+## Query the behavior monitoring status from PowerShell
 
 `Get-MpComputerStatus | ft BehaviorMonitorEnabled`   
 
