@@ -167,7 +167,7 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
     - You won’t be able to change your schedule group management selection from **Schedule groups are created and managed by schedule owners** to **Schedule groups are created and managed in the Teams admin center** or vice versa. If you previously chose the option to create and manage schedule groups in the Teams admin center, you can add, edit, and delete schedule groups as you did during initial setup. However, you can't edit the schedule group codes for any of the schedule groups that you set previously.  
 
-1. After you make your edits, choose **Apply**. This action applies the changes to all teams that you already deployed Shifts to. These Shifts settings will also be applied to any new teams you deploy Shifts to.
+1. After you make your edits, choose **Apply**. This action applies the changes to all teams that you already deployed Shifts to. These Shifts settings are also applied to any new teams you deploy Shifts to.
 
 ## Troubleshoot errors
 
