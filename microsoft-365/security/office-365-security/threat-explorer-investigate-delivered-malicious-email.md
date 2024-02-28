@@ -113,7 +113,7 @@ For permissions and licensing requirements for Threat Explorer and Real-time det
      - **Sender address list (Admin Override)**: The allowed senders list or blocked senders list in [anti-spam policies](anti-spam-protection-about.md#allow-and-block-lists-in-anti-spam-policies).
      - **Sender address list (User override)**: Sender email addresses in the **Blocked Senders** list in the [safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
      - **Sender domain list (Admin Override)**: The allowed domains list or blocked domains list in [anti-spam policies](anti-spam-protection-about.md#allow-and-block-lists-in-anti-spam-policies).
-     - **Sender domain list (User override)**: Sender domains in the **Blocked Senders** list in the [safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes).
+     - **Sender domain list (User override)**: Sender domains in the **Blocked Senders** list in the [safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md).
      - **Tenant Allow/Block List file block**: [Create block entries for files](tenant-allow-block-list-files-configure.md#create-block-entries-for-files)
      - **Tenant Allow/Block List sender email address block**: [Create block entries for domains and email addresses](tenant-allow-block-list-email-spoof-configure.md#create-block-entries-for-domains-and-email-addresses)
      - **Tenant Allow/Block List spoof block**: [Create block entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-block-entries-for-spoofed-senders)
