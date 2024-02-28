@@ -40,7 +40,7 @@ PowerShell cmdlets are most useful in Windows Server environments that don't rel
 > [!NOTE]
 > PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [Microsoft Endpoint Configuration Manager](/configmgr), [Group Policy Management Console](use-group-policy-microsoft-defender-antivirus.md), or [Microsoft Defender Antivirus Group Policy ADMX templates](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
-Changes made with PowerShell will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Microsoft Defender for Endpoint security settings management, or Microsoft Intune, or Microsoft Configuration Manager Tenant Attach, or Group Policy, can overwrite changes made with PowerShell.
+Changes made with PowerShell will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Microsoft Defender for Endpoint security settings management, Microsoft Intune, Microsoft Configuration Manager Tenant Attach, or Group Policy can overwrite changes made with PowerShell.
 
 You can [configure which settings can be overridden locally with local policy overrides](configure-local-policy-overrides-microsoft-defender-antivirus.md).
 
