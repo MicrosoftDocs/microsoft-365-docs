@@ -25,7 +25,7 @@ description: "Learn how to manage access to the Loop app preview."
 
 # Manage Loop app preview access
 
-This article details the Cloud Policy setting used to gate access to the Loop app Preview experiences within your organization. Microsoft must invite you to the preview. If your tenant is invited, you can configure the users who have access by using Cloud Policy. If your tenant is not invited, this policy has no effect in your organization.
+This article details the Cloud Policy setting used to gate access to the Loop app Preview experiences within your organization.
 
 ## Requirements
 
@@ -33,7 +33,7 @@ Users in your organization must first be enabled for Loop app with workspaces an
 
 ## User experience expectations when admin settings are configured
 
-When a user account in your organization is provided access to the Loop app Preview experience, they can choose between the Production or the Preview experience. These users default to Preview for each Loop app session or file loaded, and are able to manually switch to Production if needed.
+When a user account in your organization is provided access to the Loop app Preview experience, they can choose between the Production or the Preview experience. These users default to Preview for each Loop app session and are able to manually switch to Production if needed.
 
 ## Microsoft 365 Groups for Cloud Policy
 
