@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 01/11/2024
+ms.date: 02/29/2024
 
 ---
 
@@ -159,7 +159,7 @@ You'll see all your Shifts settings including shift request settings, time-off r
 
 - You can change the schedule owner group ID that identifies the group that contains all schedule owners.  
 
-- You won’t be able to change your schedule group management option between **Schedule groups are created and managed by schedule owners** and **Schedule groups are created and managed in the Teams admin center**. If you previously chose the option to create and manage schedule groups in the Teams admin center, you can add, edit, and delete schedule groups as you did during the initial setup. However, you can't edit the schedule group codes for any of the schedule groups that you set previously.  
+- You won’t be able to change your schedule group management option from **Schedule groups are created and managed by schedule owners** to **Schedule groups are created and managed in the Teams admin center** or vice versa. If you previously chose the option to create and manage schedule groups in the Teams admin center, you can add, edit, and delete schedule groups as you did during the initial setup. However, you can't edit the schedule group codes for any of the schedule groups that you set previously.  
 
 After you make your edits, choose **Apply**. This action applies your changes to all teams that you already deployed Shifts to. These Shifts settings will also be applied to any new teams you deploy Shifts to.
 
