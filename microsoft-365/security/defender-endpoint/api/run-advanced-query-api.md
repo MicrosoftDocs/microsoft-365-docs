@@ -2,15 +2,11 @@
 title: Advanced Hunting API
 ms.reviewer:
 description: Learn to use the advanced hunting API to run advanced queries on Microsoft Defender for Endpoint. Find out about limitations and see an example.
-keywords: apis, supported apis, advanced hunting, query
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -44,31 +40,31 @@ ms.date: 12/18/2020
 
 1. You can only run a query on data from the last 30 days.
 
-2. The results will include a maximum of 100,000 rows.
+2. The results include a maximum of 100,000 rows.
 
 3. The number of executions is limited per tenant:
-   - API calls: Up to 45 calls per minute, up to 1500 calls per hour.
+   - API calls: Up to 45 calls per minute, and up to 1,500 calls per hour.
    - Execution time: 10 minutes of running time every hour and 3 hours of running time a day.
 
 4. The maximal execution time of a single request is 200 seconds.
 
-5. `429` response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached.
+5. `429` response represents reaching quota limit either by number of requests or by CPU. Read response body to understand what limit was reached.
 
-6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again" will appear.
+6. The maximum query result size of a single request can't exceed 124 MB. If exceeded, an HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again" occurs.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|AdvancedQuery.Read.All|'Run advanced queries'
-Delegated (work or school account)|AdvancedQuery.Read|'Run advanced queries'
+|Permission type|Permission|Permission display name|
+|:---|:---|:---|
+|Application|AdvancedQuery.Read.All|`Run advanced queries`|
+|Delegated (work or school account)|AdvancedQuery.Read|`Run advanced queries`|
 
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have 'View Data' AD role
+> - The user needs to have the `View Data` role assigned in Microsoft Entra ID
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](../machine-groups.md) for more information)
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
@@ -102,7 +98,7 @@ If successful, this method returns 200 OK, and _QueryResponse_ object in the res
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
@@ -120,7 +116,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 > [!NOTE]
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -162,7 +158,7 @@ Here is an example of the response.
 }
 ```
 
-## Related topics
+## Related articles
 
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
