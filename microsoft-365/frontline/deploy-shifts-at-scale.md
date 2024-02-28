@@ -94,7 +94,7 @@ You can choose to allow schedule owners to create and manage schedule groups or 
 
 1. Choose one of the following options to define how schedule groups are managed:
     > [!IMPORTANT]
-    > After you submit your selection, you won't be able to change it again.
+    > After you submit your selection, you won't be able to change it.
 
     - **Schedule groups are created and managed by schedule owners**: Your schedule owners create and manage schedule groups for their teams. They can add, rename, and delete schedule groups in Shifts.
     - **Schedule groups are created and managed in the Teams admin center**: You create and manage the schedule group structure for Shifts. Your schedule owners won't be able to add, rename, or delete schedule groups in Shifts. With this option, you can standardize schedule groups across teams, which allows for automating workflows in Shifts across different teams.
