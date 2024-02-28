@@ -3,7 +3,7 @@ title: "Create Microsoft 365 user accounts with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/29/2023
+ms.date: 02/28/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -22,6 +22,7 @@ ms.custom:
   - O365ITProTrain
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: How to use PowerShell to create individual or multiple Microsoft 365 user accounts.
 ---
@@ -52,6 +53,8 @@ When you create user accounts in PowerShell, certain account properties are alwa
 ## Use the Azure Active Directory PowerShell for Graph module
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+
+### Create an individual user account
 
 After you connect, use the following syntax to create an individual account:
   
