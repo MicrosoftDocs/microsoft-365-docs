@@ -27,7 +27,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-mar2020
-ms.date: 
+ms.date: 02/28/2024
 ---
 
 # Manage Shifts permissions for frontline managers
