@@ -87,7 +87,9 @@
     items:
     - name: Overview
       href: bookings-overview.md
+    - name: Bookings legal scenarios
+      href: bookings-overview.md      
   - name: What's new in Bookings
     items:
-    - name: Overview
+    - name: What's new
       href: bookings-overview.md      
