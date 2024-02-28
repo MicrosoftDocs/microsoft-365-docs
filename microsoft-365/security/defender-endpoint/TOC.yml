@@ -548,6 +548,8 @@
           href: why-use-microsoft-defender-antivirus.md
         - name: Better together - Microsoft Defender Antivirus and Office 365
           href: office-365-microsoft-defender-antivirus.md
+      - name: Safety Scanner Download
+        href: safety-scanner-download.md
       - name: Evaluate Microsoft Defender Antivirus
         href: evaluate-microsoft-defender-antivirus.md
       - name: Configure Microsoft Defender Antivirus features
@@ -922,6 +924,36 @@
 
   - name: Reference
     items:
+    - name: Malware information
+      items: 
+       - name: Coinminers
+         href: malware/coinminer-malware.md
+       - name: Exploits and Exploit Kits
+         href: malware/exploits-malware.md
+       - name: Fileless threats
+         href: malware/fileless-threats.md
+       - name: Macro threats
+         href: malware/macro-malware.md
+       - name: Phishing trends
+         href: malware/phishing-trends.md
+       - name: Phishing
+         href: malware/phishing.md
+       - name: Prevent malware infection
+         href: malware/prevent-malware-infection.md
+       - name: Rootkits
+         href: malware/rootkits-malware.md
+       - name: Supply chain malware
+         href: malware/supply-chain-malware.md
+       - name: Support scams
+         href: malware/support-scams.md
+       - name: Trojans
+         href: malware/trojans-malware.md
+       - name: Understanding malware
+         href: malware/understanding-malware.md
+       - name: Unwated software
+         href: malware/unwanted-software.md
+       - name: Worms
+         href: malware/worms-malware.md
     - name: Understand threat intelligence concepts
       href: threat-indicator-concepts.md
     - name: Configure integration with other Microsoft solutions
