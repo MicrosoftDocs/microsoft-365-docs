@@ -43,18 +43,15 @@ The default period that the file is [blocked](configure-block-at-first-sight-mic
 You can specify the cloud block timeout period with the Microsoft Defender for Endpoint security settings management.
 
 1. Go to the Microsoft Defender for Endpoint portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
-
-1. Under Endpoints > Configuration management > Endpoint security policies > Create new Policy
-
-Under Select Platform "Windows 10, Windows 11, and Windows Server"
-Under Select Templates "Microsoft Defender Antivirus"
-Name:
-Description:
-Click on Next
-Select Cloud Extended Timeout, specify the more time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
-1. (This step is optional) Make any other changes to your antivirus policy. 
-
-1. Choose **Next**, and finish configuring your policy.
+2. Select **Endpoints** > **Configuration management** > **Endpoint security policies**
+3. Select **Create new Policy**
+4. Under **Select Platform** choose: "Windows 10, Windows 11, and Windows Server"
+5. Under **Select Template** choose "Microsoft Defender Antivirus"
+6. Select **Create policy**
+7. Enter a name and descripiont and select **Next**
+8. From the Defender dropdown go to **Cloud Extended Timeout** and toggle it on
+9. Specify the extended time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
+10. Select **Next** and **Save** to finish configuring your policy.
 
 ## Specify the extended timeout period using Microsoft Intune
 
