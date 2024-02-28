@@ -2,9 +2,9 @@
 title: Admin review for user reported messages
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.localizationpriority: medium
