@@ -589,6 +589,8 @@
         href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
       - name: Configure behavioral, heuristic, and real-time protection
         href: configure-protection-features-microsoft-defender-antivirus.md
+      - name: Advanced technologies at the core of Microsoft Defender Antivirus
+        href: adv-tech-of-mdav.md
       - name: Behavior monitoring with Microsoft Defender Antivirus
         href: behavior-monitor.md
       - name: Detect and block potentially unwanted applications
