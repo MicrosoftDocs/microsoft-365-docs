@@ -14,7 +14,6 @@ ms.collection:
 - essentials-overview
 - essentials-get-started
 - essentials-manage
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
 ---
 
