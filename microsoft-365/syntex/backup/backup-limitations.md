@@ -60,7 +60,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - For restores to a new URL, only the admin who executed the restore has ownership permissions for the restored SharePoint sites or OneDrive accounts in the new URLs. Restores to the same URL reverts permissions to their original state. We might decide to change this behavior in the future via a “copy permissions” feature.
 
-- Mailboxes and OneDrive accounts that are under legal or in-place holds can't currently be restored unless the destination is removed from legal hold.
+- Mailboxes, OneDrive accounts, and SharePoint sites that are under legal or in-place holds currently can't be restored unless the destination is removed from legal hold. To restore a SharePoint site under legal hold, you need to restore the site to a new URL.
 
 - While OneDrive account and mailbox backups of deleted users are maintained and after the user’s Microsoft Entra ID is deleted are restorable, search in the people picker UI for that user won't work. The user is displayed as an empty user in results, requiring a guess-and-check methodology.
 
