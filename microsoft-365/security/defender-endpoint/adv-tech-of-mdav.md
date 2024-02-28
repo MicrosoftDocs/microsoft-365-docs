@@ -30,7 +30,7 @@ Microsoft Defender Antivirus and the multiple engines that lead to the advanced 
 
 :::image type="content" source="media/next-gen-protection-engines.png" alt-text="Diagram depicting next generation protection engines and how they work between the cloud and the client device.":::
 
-Many of these engines are built into the client and provide advanced protection against majority of threats in *real-time*. 
+Many of these engines are built into the client and provide advanced protection against majority of threats in real time. 
 
 ## Hybrid detection and protection
 
@@ -45,7 +45,7 @@ When the client encounters unknown threats, it sends metadata or the file itself
 | **Memory scanning engine**<br/>This engine scans the memory space used by a running process to expose malicious behavior that may be hiding through code obfuscation. | **Antimalware Scan Interface (AMSI)-paired ML engine**<br/>Pairs of client-side and cloud-side models perform advanced analysis of scripting behavior pre- and post-execution to catch advanced threats like fileless and in-memory attacks. These models include a pair of models for each of the scripting engines covered, including PowerShell, JavaScript, VBScript, and Office VBA macros. Integrations include both dynamic content calls and/or behavior instrumentation on the scripting engines. |
 | **AMSI integration engine**<br/>Deep in-app integration engine enables detection of fileless and in-memory attacks through [AMSI](/windows/desktop/AMSI/antimalware-scan-interface-portal), defeating code obfuscation. This integration blocks malicious behavior of scripts client-side. |  **File classification ML engine**<br/>Multi-class, deep neural network classifiers examine full file contents, provides an additional layer of defense against attacks that require additional analysis. Suspicious files are held from running and submitted to the cloud protection service for classification. Within seconds, full-content deep learning models produce a classification and reply to the client to allow or block the file.  |
 | **Heuristics engine**<br/>Heuristic rules identify file characteristics that have similarities with known malicious characteristics to catch new threats or modified versions of known threats. | **Detonation-based ML engine**<br/>Suspicious files are detonated in a sandbox. Deep learning classifiers analyze the observed behaviors to block attacks.   |
-| **Emulation engine**<br/>The emulation engine dynamically unpacks malware and examines how they would behave at runtime. The dynamic emulation of the content and scanning both the behavior during emulation and the memory content at the end of emulation defeat malware packers and expose the behavior of polymorphic malware. | **Reputation ML engine**<br/>Domain-expert reputation sources and models from across Microsoft are queried to block threats that are linked to malicious or suspicious URLs, domains, emails, and files. Sources include Windows Defender SmartScreen for URL reputation models and Office 365 ATP for email attachment expert knowledge, among other Microsoft services through the Microsoft Intelligent Security Graph.  |
+| **Emulation engine**<br/>The emulation engine dynamically unpacks malware and examines how they would behave at runtime. The dynamic emulation of the content and scanning both the behavior during emulation and the memory content at the end of emulation defeat malware packers and expose the behavior of polymorphic malware. | **Reputation ML engine**<br/>Domain-expert reputation sources and models from across Microsoft are queried to block threats that are linked to malicious or suspicious URLs, domains, emails, and files. Sources include Windows Defender SmartScreen for URL reputation models and Defender for Office 365 for email attachment expert knowledge, among other Microsoft services through the Microsoft Intelligent Security Graph.  |
 | **Network engine**<br/>Network activities are inspected to identify and stop malicious activities from threats. | **Smart rules engine**<br/>Expert-written smart rules identify threats based on researcher expertise and collective knowledge of threats.  |
 
 These next-generation protection engines provide [industry-best](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests) detection and blocking capabilities and ensure that protection is: 
@@ -56,8 +56,7 @@ These next-generation protection engines provide [industry-best](/windows/securi
 
 For more details, see [Microsoft 365 Defender demonstrates 100 percent protection coverage in the 2023 MITRE Engenuity ATT&CK&reg; Evaluations: Enterprise](https://www.microsoft.com/security/blog/2023/09/20/microsoft-365-defender-demonstrates-100-percent-protection-coverage-in-the-2023-mitre-engenuity-attck-evaluations-enterprise/).
 
-
-## How next-generation protection works
+## How next-generation protection works with other Defender for Endpoint capabilities
 
 Together with [attack surface reduction](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction), which includes advanced capabilities like hardware-based isolation, application control, exploit protection, network protection, controlled folder access, attack surface reduction rules, and network firewall, [next-generation protection](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows) engines deliver Microsoft Defender for Endpoint's pre-breach capabilities, stopping attacks before they can infiltrate devices and compromise networks. 
 
