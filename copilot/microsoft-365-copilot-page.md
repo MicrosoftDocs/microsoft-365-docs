@@ -48,14 +48,24 @@ You can manage Copilot licenses, including assigning and unassigning licenses, f
 
 ### Manage how your organization interacts with Copilot in Bing, Edge, and Windows
 
-Copilot with commercial data protection provides enhanced security for users accessing the generative AI capabilities of Copilot. This experience is on by default for users when they are signed in and using a Microsoft 365 E3, E5, A3, A5, Business Standard, or Business Premium license assigned by your organization.
+Copilot with commercial data protection provides enhanced security for users accessing the generative AI capabilities of Copilot. This experience is on by default for [users with eligible licenses](/copilot/manage#commercial-data-protection-eligibility) assigned by your organization when they are signed in with their work or school (Entra ID) accounts.
 
 Copilot in Bing, Edge and Windows is the public version of Copilot and doesn’t require users to be signed in. You can reroute to the documentation available on the panel to turn off the public experience and still have access to the Copilot with commercial data protection experience.
 
-You'll soon have the ability to control access to Copilot for Microsoft 365 in Bing, Edge, and Windows using a PowerShell script. By running this script, you can manage access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. However, this will not affect how users access Copilot in other Microsoft 365 apps.
+You should use a PowerShell script to control access to Copilot for Microsoft 365 in Bing, Edge, and Windows. Running this script controls access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. It doesn’t change how users access Copilot in other Microsoft 365 apps.  
 
->[!NOTE]
-> The PowerShell script download link and run commands will be available in late February 2024. If you want to configure Copilot for Microsoft 365 in Bing, Edge, and Windows after late February, return to this page for further instructions.
+To turn on or turn off Copilot for Microsoft 365 in Bing, Edge, and Windows, follow these steps:
+
+1. Download the [PowerShell script](https://download.microsoft.com/download/8/9/d/89d41212-7ece-414c-b6d3-f4ecb070c613/ConfigureM365Copilot.ps1).
+2. Open an instance of the Windows PowerShell in admin mode.
+3. Run the following command first: ‘Set-ExecutionPolicy unrestricted’.
+4. Run the PowerShell script.
+5. Follow the instructions prompted by the script.
+6. The cmdlet will prompt you to sign in with your AAD account, which must be a Search Admin or Global Admin account.
+7. To get the current status of Copilot for Microsoft 365 in Bing, Edge, and Windows in your tenant, run: ‘*.\ConfigureM365Copilot.ps1*’
+8. To turn on Copilot for Microsoft 365 in Bing, Edge, and Windows, run: ‘*.\ConfigureM365Copilot.ps1 -enable $true*’
+9. To turn off Copilot for Microsoft 365 in Bing, Edge, and Windows, run: ‘*.\ConfigureM365Copilot.ps1 -enable $false*’
+10. If anything goes wrong, try running the script again. If the issue persists, you can contact support.
 
 ### Manage plugins that work with Microsoft Copilot for Microsoft 365
 
