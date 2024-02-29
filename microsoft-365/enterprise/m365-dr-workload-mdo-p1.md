@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/06/2024
+ms.date: 02/29/2024
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -24,7 +24,7 @@ ms.collection:
 
 Service documentation: [Office 365 Security including Microsoft Defender for Office 365 and Exchange Online Protection](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-Capability Summary: Protects email and collaboration from zero-day malware, phish, and business email compromise.  MDO P1 builds on Exchange Online Protection (EOP).  
+Capability Summary: Protects email and collaboration from zero-day malware, phish, and business email compromise. MDO P1 builds on Exchange Online Protection (EOP).
 
 ## Data Residency commitments available
 
@@ -38,7 +38,7 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-defender-for-office-p1) for the specific customer data at rest commitment for Microsoft Defender for Office P1.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-defender-for-office-p1) for the specific customer data at rest commitment for Microsoft Defender for Office P1.
 
 Other Information
 
@@ -58,17 +58,17 @@ Capability summary: Exchange Online Protection (EOP) is the cloud-based filterin
 
 Required Conditions:
 
-1. _Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_
 1. The EOP subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_
 
 **Commitment:**
 
-Please refer to the [Advanced Data Residency Commitment](m365-dr-commitments.md) page for the specific customer data at rest commitment for Exchange Online Protection.
+Refer to the [Advanced Data Residency Commitment](m365-dr-commitments.md) page for the specific customer data at rest commitment for Exchange Online Protection.
 
 ## Migration
 
-EOP customer data migrates after ADR migration is initated. MDO P1 does not have customer data to migrate.
+EOP customer data migrates after ADR migration is initiated. MDO P1 doesn't have customer data to migrate.
 
 ## How can I determine customer data location?
 
