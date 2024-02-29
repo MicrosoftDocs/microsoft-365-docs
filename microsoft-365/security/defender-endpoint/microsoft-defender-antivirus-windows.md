@@ -43,7 +43,7 @@ Microsoft Defender Antivirus can block almost all malware at first sight, in mil
 
 We’ve also designed our antivirus solution to work in both online and offline scenarios.  For offline scenarios, the latest dynamic intelligence from the Intelligence Security Graph is provisioned to the endpoint regularly throughout the day. When connected to the cloud, it’s fed real-time intelligence from the [Intelligent Security Graph](https://www.microsoft.com/en-us/security/blog/2018/04/17/connect-to-the-intelligent-security-graph-using-a-new-api/). 
 
-Microsoft Defender Antivirus can also stop threats based on their behaviors and process trees even when the threat has started execution. A common example of these kinds of attacks is fileless malware. Microsoft's Next-generation protection features work together to identify and block malware based on abnormal behavior. To learn more, see [Behavioral blocking and containment](behavioral-blocking-containment.md)
+Microsoft Defender Antivirus can also stop threats based on their behaviors and process trees even when the threat has started execution. A common example of these kinds of attacks is fileless malware. Microsoft's Next-generation protection features work together to identify and block malware based on abnormal behavior. To learn more, see [Behavioral blocking and containment](behavioral-blocking-containment.md).
 
 ## Compatibility with other antivirus products
 
