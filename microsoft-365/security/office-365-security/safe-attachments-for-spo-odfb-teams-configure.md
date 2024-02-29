@@ -2,9 +2,9 @@
 title: Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 f1.keywords: 
   - NOCSH
-ms.author: tracyp
-author: msfttracyp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
