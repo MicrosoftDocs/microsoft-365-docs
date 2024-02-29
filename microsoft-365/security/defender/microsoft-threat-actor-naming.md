@@ -129,7 +129,7 @@ Use the following reference table to understand how our previously publicly disc
 |Storm-0587|Russia|SaintBot, Saint Bear, TA471||
 |Storm-0744||Financially motivated||
 |Storm-0784||Iran||
-|Storm-0829|DEV-0829|Group in development|Nwgen Team|
+|Storm-0829|Group in development|Nwgen Team||
 |Storm-0835||Group in development|EvilProxy|
 |Storm-0842||Iran||
 |Storm-0861||Iran||
@@ -139,7 +139,7 @@ Use the following reference table to understand how our previously publicly disc
 |Storm-1044|Financially motivated|Danabot||
 |Storm-1084|Iran|DarkBit||
 |Storm-1099||Russia||
-|Storm-1101||Group in development|NakedPages||
+|Storm-1101|Group in development|NakedPages||
 |Storm-1113||Financially motivated||
 |Storm-1133||Palestinian Authority||
 |Storm-1152||Financially motivated||
