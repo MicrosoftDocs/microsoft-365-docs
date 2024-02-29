@@ -166,8 +166,12 @@
                 href: security-copilot-in-microsoft-365-defender.md
               - name: Summarize incidents
                 href: security-copilot-m365d-incident-summary.md
-              - name: Analyze scripts and codes
+              - name: Run script analysis
                 href: security-copilot-m365d-script-analysis.md
+              - name: Analyze files
+                href: copilot-in-defender-file-analysis.md
+              - name: Generate device summaries
+                href: copilot-in-defender-device-summary.md                               
               - name: Use guided responses
                 href: security-copilot-m365d-guided-response.md
               - name: Generate KQL queries
