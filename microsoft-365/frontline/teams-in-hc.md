@@ -110,7 +110,9 @@ Teams enables physicians, clinicians, nurses, and other staff to collaborate eff
 
 ### Messaging for healthcare organizations
 
-[Messaging policies](/microsoftteams/messaging-policies-in-teams) in Teams are used to control which chat and channel messaging features are available to users. For example, you can enable the following features:
+[Messaging policies](/microsoftteams/messaging-policies-in-teams) in Teams are used to control which chat and channel messaging features are available to users. You can edit the settings in the global (Org-wide default) policy or create and assign custom messaging policies to turn on or turn off the features that you want.
+
+For example, consider enabling the following messaging features for your health teams:
 
 - Users can send urgent messages using priority notifications, so the recipient is repeatedly notified until they read the message.
 - Users can use read receipts to know when the chat messages they send are read by the recipient.
