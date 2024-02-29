@@ -76,7 +76,7 @@ If you have 1645 seats purchased for ADR, then you have a data residency commitm
 
 Customers who purchase Multi-Geo seats for their tenant don't have to also pay for ADR for the same seats. You avoid “double licensing” a single seat for two different data residency programs. For example, if a customer would normally require 15,000 ADR seats to satisfy the program requirements, but they also have 4,000 Multi-Geo seats, then they're only required to purchase 11,000 ADR seats. The two programs combined would cover the normal ADR program requirement of 100% user coverage.
 
-To find out how many ADR seats, you need go to **Tenant Admin Center | Billing | Your Products** within your tenant and add up the total Purchase Quantity for all ADR-eligible SKUs to get the proper total of ADR seats required.
+To find out how many ADR seats, you need go to the Microsoft 365 admin center under **Billing > Your Products** within your tenant and add up the total Purchased Quantity for all ADR-eligible SKUs to get the proper total of ADR seats required.
 
 ### Tenants with a mix of Commercial and Education subscriptions
 
