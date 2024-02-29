@@ -94,10 +94,10 @@ After onboarding the device, you can choose to run a detection test to verify th
 
 ## Offboard devices using a local script
 
-For security reasons, the package used to Offboard devices will expire 3 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to offboard devices expires three days after the date it was downloaded. Expired offboarding packages sent to a device are rejected. When downloading an offboarding package, you're notified of the package's expiry date, and that date is included in the package file name.
 
 > [!NOTE]
-> Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
+> Onboarding and offboarding policies must not be deployed on the same device at the same time. Otherwise, unpredictable collisions might occur.
 
 1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
 
