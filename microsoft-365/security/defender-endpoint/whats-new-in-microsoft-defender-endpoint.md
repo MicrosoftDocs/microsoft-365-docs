@@ -51,9 +51,9 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## February 2024
 
-**ASR Rules**
+**Attack Surface Reduction (ASR) Rules**
 
-Two new Attack Surface Reduction (ASR) rules are now in public preview: 
+Two new ASR rules are now in public preview: 
 - Block rebooting machine in Safe Mode (preview): This rule prevents the execution of commands to restart machines in Safe Mode.
 - Block use of copied or impersonated system tools (preview): This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
 
