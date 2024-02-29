@@ -70,7 +70,7 @@ To begin analysis, perform the following steps:
 
 4. Review the results. You can provide feedback on the results by selecting the feedback icon found at the end of the script analysis card.
 
-   :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards." lightbox="../../media/copilot-in-defender/copilot-defender-feedback.png":::
+   :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards.":::
 
 > [!TIP]
 > You can navigate to an IP, file, or URL entity page in the analysis results by clicking on the entity.

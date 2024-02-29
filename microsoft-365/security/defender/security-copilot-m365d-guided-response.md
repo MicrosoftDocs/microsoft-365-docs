@@ -43,6 +43,9 @@ This guide outlines how to access the guided response capability, including info
 
 ## Apply guided responses to resolve incidents
 
+> [!NOTE]
+> Guided responses are continuously in development. Incidents and alerts are continuously reviewed to provide appropriate responses.
+
 Guided responses recommend actions in the following categories:
 
 - Triage - includes a recommendation to classify incidents as informational, true positive, or false positive
@@ -74,7 +77,7 @@ To use guided responses, perform the following steps:
 
 4. You can provide feedback to each response card to continuously enhance future responses from Copilot. To provide feedback, select the feedback icon found on the bottom right of each card.
 
-   :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards." lightbox="../../media/copilot-in-defender/copilot-defender-feedback.png":::
+   :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards.":::
 
 > [!NOTE]
 > Grayed out action buttons mean these actions are limited by your permission. [Refer to the unified role-based access (RBAC) permissions](manage-rbac.md) page for more information.
