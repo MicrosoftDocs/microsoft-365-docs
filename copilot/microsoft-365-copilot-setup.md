@@ -33,9 +33,9 @@ description: "Learn how to prepare your organization for Microsoft Copilot for M
 
 Before you can access Copilot, you must meet these requirements:
 
-You must have one of the following subscription plans to purchase Microsoft Copilot for Microsoft 365. You can purchase Copilot for Microsoft 365 licenses through the Microsoft 365 admin center on the Purchase Services page, Microsoft partners, or Microsoft account team. You can purchase as many Copilot for Microsoft 365 licenses as you have pre-requisite licenses.
+You must have one of the following subscription plans to purchase Microsoft Copilot for Microsoft 365. You can purchase Copilot for Microsoft 365 licenses through the Microsoft 365 admin center on the Purchase Services page, Microsoft partners, or Microsoft account team. You can purchase as many Copilot for Microsoft 365 licenses as you have prerequisite licenses.
 
-Your users must have one of the following base licenses to be eligible for a Copilot for Microsoft 365 license. Pre-requisite licenses include:
+Your users must have one of the following base licenses to be eligible for a Copilot for Microsoft 365 license. Prerequisite licenses include:
 
 - Microsoft 365 E5
 - Microsoft 365 E3
@@ -78,7 +78,7 @@ From the SharePoint admin center, you can review SharePoint site access to check
 You can check on site privacy by going to Active Sites, then selecting a site, and going to Settings. Setting a site as Private means that only users in your organization with access to the site will find it. You can also review access under the Membership tab, as well as site owners, members, and visitors.
 
 >[!NOTE]
-> A helpful strategy to balance effort and maximizing impact is to define a data definition for sensitivity and consider prioritizing the review of SharePoint sites, focusing first on the most critical repositories, then deploying licenses to users and piloting Copilot and implementing a process to iterate through the rest of your repositories in parallel with expanding user base. This provides a consistent loop of feedback from users to continually refine access without delaying deployment. [Jump to the deployment section below](#plan-for-deployment-and-measure-adoption-impact-and-sentiment) for a more detailed strategy to deploy and drive adoption.
+> A helpful strategy to balance effort and maximizing impact is to establish a data definition for sensitivity and consider prioritizing the review of SharePoint sites, focusing first on the most critical repositories, then deploying licenses to users and piloting Copilot and implementing a process to iterate through the rest of your repositories in parallel with expanding user base. This provides a consistent loop of feedback from users to continually refine access without delaying deployment. [Jump to the deployment section below](#plan-for-deployment-and-measure-adoption-impact-and-sentiment) for a more detailed strategy to deploy and drive adoption.
 
 With an eligible license, you can set up auto-classifiers for content on a SharePoint site by going to the site, selecting the Settings icon on the top right, going to Library Settings, and adjusting default sensitivity labels. This feature ensures that content created or edited inherits this label. Content that is moved to the site without appropriate labels will trigger a notification.
 
@@ -86,13 +86,13 @@ With an eligible license, you can set up auto-classifiers for content on a Share
 
 :::image type="content" source="media/purview-labels-sensitivity.png" alt-text="Screenshot showing the Microsoft Purview screen for sensitivity labels." lightbox="media/purview-labels-sensitivity.png":::
 
-In the Microsoft Purview portal, you can create sensitivity labels by navigating to the Labels tab to customize policies to best fit your data sensitivity classifications. You can also configure auto-labeling by navigating the Auto-labeling menu on the left navigation, under Information protection. Select a label or create a new label policy, and configure protections for content that has the label applied.
+In the Microsoft Purview compliance portal, you can create sensitivity labels by navigating to the Labels tab to customize policies to best fit your data sensitivity classifications. You can also configure auto-labeling by navigating the Auto-labeling menu on the left navigation, under Information protection. Select a label or create a new label policy, and configure protections for content that has the label applied.
 
-These labels can also be applied based on content found within documents using data loss prevention (DLP) policies. These policies allow labels to be automatically applied when specific types of content are identified in a document, for example, personally identifiable information like addresses, tax information or passport numbers. You can also DLP policies to trainable classifiers that identify categories of content like source code, financial documents, HR and more. You can also setup endpoint DLP policies that would restrict users from actions like copying content to clipboard or removable USB devices or printing.
+These labels can also be applied based on content found within documents using data loss prevention (DLP) policies. These policies allow labels to be automatically applied when specific types of content are identified in a document, for example, personally identifiable information like addresses, tax information or passport numbers. You can also DLP policies to trainable classifiers that identify categories of content like source code, financial documents, HR and more. You can also set up endpoint DLP policies that would restrict users from actions like copying content to clipboard or removable USB devices or printing.
 
 ### Audit Copilot activity in Microsoft Purview
 
-All activity from Copilot for Microsoft 365 can be discoverable using content search in the Microsoft Purview portal for audit and review. From the Microsoft Purview portal, you can initiate an audit from the Audit tab on the left navigation. You can also apply retention policies to retain content in prompts and responses based on your organization requirements. eDiscovery and communication compliance policies are also supported for Copilot for Microsoft 365 activity through the Purview portal, allowing you to setup flags for any content matches policies configured. For example, you can setup a policy to flag for activity that includes specific words or codenames.
+All activity from Copilot for Microsoft 365 can be discoverable using content search in the Microsoft Purview portal for audit and review. From the Microsoft Purview portal, you can initiate an audit from the Audit tab on the left navigation. You can also apply retention policies to retain content in prompts and responses based on your organization requirements. eDiscovery and communication compliance policies are also supported for Copilot for Microsoft 365 activity through the Purview portal, allowing you to set up flags for any content matches policies configured. For example, you can set up a policy to flag for activity that includes specific words or code names.
 
 For more information on data security and compliance configurations using Microsoft Purview, see [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview).
 
@@ -104,11 +104,11 @@ Microsoft Copilot for Microsoft 365 will follow Microsoft 365 Apps' standard pra
 
 We recommend Current Channel, because it provides your users with the newest Microsoft 365 app features as soon as they're ready and provides the best experience for a fast-moving product like Copilot for Microsoft 365. If you need more predictability of when these new Microsoft 365 app features are released each month, we recommend Monthly Enterprise Channel.  
 
-There are multiple ways you can manage channels for user devices. To learn more, see [Change update channel of Microsoft 365 to enable Copilot](/deployoffice/updates/change-channel-for-copilot)
+There are multiple ways you can manage channels for user devices. To learn more, see [Change update channel of Microsoft 365 to enable Copilot](/deployoffice/updates/change-channel-for-copilot).
 
 ## Provision Copilot for Microsoft 365 licenses
 
-After you’ve prepared your organization for Copilot, you can manage Microsoft Copilot for Microsoft 365 licenses from the Microsoft 365 admin center. You can assign licenses to individual users or to groups of users, as well as reassign licenses to other users. 
+After you’ve prepared your organization for Copilot, you can manage Microsoft Copilot for Microsoft 365 licenses from the Microsoft 365 admin center. You can assign licenses to individual users or to groups of users, as well as reassign licenses to other users.
 
 To access license management in the Microsoft 365 admin center, go to **Billing** > **Licenses**.
 
