@@ -9,8 +9,8 @@ manager: deniseb
 ms.author: siosulli
 ms.topic: conceptual
 ms.custom: nextgen
-ms.date: 02/28/2024
-ms.reviewer: yongrhee;mkaminska; pahuijbr
+ms.date: 06/26/2023
+ms.reviewer: mkaminska; pahuijbr
 ms.collection: 
 - m365-security
 - tier2
@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Configure and validate Microsoft Defender Antivirus network connections such as Cloud Protection
+# Configure and validate Microsoft Defender Antivirus network connections
 
 **Applies to:**
 
@@ -75,18 +75,21 @@ Use the following argument with the Microsoft Defender Antivirus command-line ut
 
 For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
-### If you get any of these errors:
-Start Time: ‎<Day_of_the_week> MM DD YYYY HH:MM:SS
-MpEnsureProcessMitigationPolicy: hr = 0x1  
-ValidateMapsConnection  
-ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80070006 httpcode=451)  
-MpCmdRun.exe: hr = 0x80070006__.__
-ValidateMapsConnection failed to establish a connection to MAPS (hr=80072F8F httpcode=451)  
-MpCmdRun.exe: hr = 0x80072F8F.
-ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072EFE httpcode=451)  
-MpCmdRun.exe: hr = 0x80072EFE.
+If you get any of these errors:
+Start Time: <Day_of_the_week> MM DD YYYY HH:MM:SS
+MpEnsureProcessMitigationPolicy: hr = 0x1
+ValidateMapsConnection
+ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80070006 httpcore=451)
+MpCmdRun.exe: hr = 0x80070006
+or
+ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072F8F httpcore=451)
+MpCmdRun.exe: hr = 0x80072F8F
+or
+ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072EFE httpcore=451)
+
+MpCmdRun.exe: hr = 0x80072EFE
 [Root cause]
-The device not having its system-wide WinHttp proxy configured. When we set it via netsh things seem to work.
+The device not having its system-wide WinHttp proxy configured.  When we set it via netsh things seem to work.
 If you don’t set the system-wide WinHttp proxy then the OS is not aware of the proxy, which means the OS can’t fetch the CRL (the OS does this, not MDE), which means that TLS connections to URLs like [cp.wd.microsoft.com](http://cp.wd.microsoft.com/) will not succeed. At least not fully. We would see successful (response 200) connections to the endpoints but our MAPS connections would still fail.
 [Solution] (Preferred)
 Configure the system-wide WinHttp proxy which will allow CRL check.
@@ -102,15 +105,19 @@ Computer Configuration > Windows Settings > Security Settings > Public Key Polic
 [https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element)
 [https://blogs.msdn.microsoft.com/amolravande/2008/07/20/improving-application-start-up-time-generatepublisherevidence-setting-in-machine-config/](https://blogs.msdn.microsoft.com/amolravande/2008/07/20/improving-application-start-up-time-generatepublisherevidence-setting-in-machine-config/)
 [Work-around] (Alternative)
-Not best practice since you will no longer check for revoked certs.
+Not best practice since you will no longer check for revoked certs or cert pinning.
 Disable CRL check only for SPYNET. Configuring this registry SSLOptions disable CRL check only for SPYNET reporting. It won’t impact other services.
 HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet  
 SSLOptions (dword) to 0 (hex)
-0 - Disable SSL cert revocation  
-1 - Enable SSL cert revocation (default)
-### Attempt to download a fake malware file from Microsoft
+0 – disable pinning and revocation checks
+1 – disable pinning
+2 – disable revocation checks only
+3 – enable revocation checks and pinning (default)
+## Attempt to download a fake malware file from Microsoft
+You can download a [sample file](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-cloud-delivered-protection) that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud. 
 
-The instructions to download a fake malware that tests Cloud Protection is located in [Cloud-delivered protection demonstration](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-cloud-delivered-protection)
+> [!NOTE]
+> The downloaded file is not exactly malware. It's a fake file designed to test if you're properly connected to the cloud.
 
 If you're properly connected, you'll see a warning Microsoft Defender Antivirus notification.
 
