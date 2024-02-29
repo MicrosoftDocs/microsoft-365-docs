@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 02/28/2024
+ms.date: 02/29/2024
 ---
 
 # How Microsoft names threat actors
@@ -128,11 +128,11 @@ Use the following reference table to understand how our previously publicly disc
 |Storm-0569|DEV-0569|Financially motivated||
 |Storm-0587|DEV-0587|Russia|SaintBot, Saint Bear, TA471|
 |Storm-0744|DEV-0744|Financially motivated||
-|Storm-0784|DEV-0784|Iran||
+|Storm-0784||Iran||
 |Storm-0829|DEV-0829|Group in development|Nwgen Team|
 |Storm-0835||Group in development|EvilProxy|
-|Storm-0842|DEV-0842|Iran||
-|Storm-0861|DEV-0861|Iran||
+|Storm-0842||Iran||
+|Storm-0861||Iran||
 |Storm-0867|DEV-0867|Egypt|Caffeine|
 |Storm-0971|DEV-0971|Financially motivated|(Merged into Octo Tempest)|
 |Storm-0978|DEV-0978|Group in development|RomCom, Underground Team|
@@ -147,7 +147,7 @@ Use the following reference table to understand how our previously publicly disc
 |Storm-1283||Group in development||
 |Storm-1286||Group in development||
 |Storm-1295|DEV-1295|Group in development|Greatness|
-|Storm-1364|DEV-1364|Iran||
+|Storm-1364||Iran||
 |Storm-1567||Financially motivated|Akira|
 |Storm-1575||Group in development|Dadsec|
 |Storm-1674||Financially motivated||
@@ -182,6 +182,7 @@ TANames
 }; 
 GetThreatActorAlias("ZINC")
 ```
+
 The following files containing the comprehensive mapping of old threat actor names with their new names are also available:
 
 - [JSON format](https://github.com/microsoft/mstic/blob/master/PublicFeeds/ThreatActorNaming/MicrosoftMapping.json)
