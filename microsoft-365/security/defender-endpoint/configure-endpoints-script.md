@@ -5,6 +5,7 @@ search.appverid: met150
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: pahuijbr
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -14,7 +15,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: onboard
-ms.date: 08/31/2023
+ms.date: 02/29/2024
 ---
 
 # Onboard Windows devices using a local script
@@ -31,25 +32,23 @@ ms.date: 08/31/2023
 You can also manually onboard individual devices to Defender for Endpoint. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
 
 > [!IMPORTANT]
-> This script has been optimized for use on up to ten devices.
-> Local scripting is a special onboarding method for evaluating Microsoft Defender for Endpoint.
-> The data reporting frequency is set higher than with other onboarding methods when onboarding using a local script.
-> This setting is for evaluation purposes and is not normally used in production deployments. For this reason, there are concerns about environmental impact, so we recommend limiting the number of deployments using local scripts to ten.
-> If you are deploying to a production environment as previously described, use [other deployment options](configure-endpoints.md) like  Group Policy or Microsoft Endpoint Configuration Manager.
+> The script described in this article is optimized for use on up to ten devices. It's a special onboarding method for evaluating Microsoft Defender for Endpoint, and isn't normally used in production deployments. If you're deploying to a production environment, see [other deployment options](configure-endpoints.md), such as Intune, Group Policy, or Configuration Manager.
 
 Check out [Identify Defender for Endpoint architecture and deployment method](deployment-strategy.md) to see the various paths in deploying Defender for Endpoint.
 
 ## Onboard devices
 
 1. Open the configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
+
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
     2. Select Windows 10 or Windows 11 as the operating system.
     3. In the **Deployment method** field, select **Local Script**.
-    4. Click **Download package** and save the .zip file.
+    4. Select **Download package** and save the .zip file.
 
 2. Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPLocalOnboardingScript.cmd*.
 
 3. Open an elevated command-line prompt on the device and run the script:
+
    1. Go to **Start** and type **cmd**.
    2. Right-click **Command prompt** and select **Run as administrator**.
 
@@ -57,7 +56,7 @@ Check out [Identify Defender for Endpoint architecture and deployment method](de
 
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
-5.  Press the **Enter** key or click **OK**.
+5.  Press the **Enter** key or select **OK**.
 
 6.  Type "Y" and enter when prompted.
 
@@ -72,7 +71,7 @@ For information on how you can manually validate that the device is compliant an
 
 For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender XDR to submit a file for deep analysis.
 
-You can manually configure the sample sharing setting on the device by using *regedit* or creating and running a *.reg* file.
+You can manually configure the sample sharing setting on the device by using *regedit* or creating and running a `.reg` file.
 
 The configuration is set through the following registry key entry:
 
@@ -101,20 +100,22 @@ For security reasons, the package used to Offboard devices will expire 3 days af
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
 1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
+
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Offboarding**.
     2. Select Windows 10 or Windows 11 as the operating system.
     3. In the **Deployment method** field, select **Local Script**.
     4. Click **Download package** and save the .zip file.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the devices. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the devices. You should have a file named `WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd`.
 
 3. Open an elevated command-line prompt on the device and run the script:
+
    1. Go to **Start** and type **cmd**.
    2. Right-click **Command prompt** and select **Run as administrator**.
 
       :::image type="content" source="images/run-as-admin.png" alt-text="The Windows Start menu pointing to the Run as administrator option" lightbox="images/run-as-admin.png":::
 
-4. Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
+4. Type the location of the script file. If you copied the file to the desktop, type: `%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd`
 
 5. Press the **Enter** key or click **OK**.
 
@@ -136,10 +137,12 @@ Monitoring can also be done directly on the portal, or by using the different de
 3. Verify that devices are appearing.
 
 ## Related articles
+
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 - [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
