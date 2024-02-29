@@ -32,7 +32,7 @@ ms.date: 02/29/2024
 You can also manually onboard individual devices to Defender for Endpoint. You might want to onboard some devices when you're testing the service before you commit to onboarding all devices in your network.
 
 > [!IMPORTANT]
-> The script described in this article is optimized for use on up to ten devices. It's a special onboarding method for evaluating Microsoft Defender for Endpoint, and isn't normally used in production deployments. If you're deploying to a production environment, see [other deployment options](configure-endpoints.md), such as Intune, Group Policy, or Configuration Manager.
+> The script described in this article is recommended for manually onbooarding devices to Defender for Endpoint. It should only be used on a limited number of devices. If you're deploying to a production environment, see [other deployment options](configure-endpoints.md), such as Intune, Group Policy, or Configuration Manager.
 
 Check out [Identify Defender for Endpoint architecture and deployment method](deployment-strategy.md) to see the various paths in deploying Defender for Endpoint.
 
