@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/06/2024
+ms.date: 02/29/2024
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -26,11 +26,11 @@ ms.collection:
 
 Required Conditions:
 
-1. _Tenant_ has a sign up country/region included in _Local Region Geography_, the European Union or the United States.
+1. _Tenant_ has a sign-up country/region included in _Local Region Geography_, the European Union, or the United States.
 
 **Commitment:**
 
-_For current language please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services"._
+_For current language, please refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services."_
 
 ### Advanced Data Residency add-on
 
@@ -42,11 +42,11 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-teams) to understand the specific commitments provided via Product Terms.  Examples of the committed data include:
+Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-teams) to understand the specific commitments provided via Product Terms. Examples of the committed data include:
 
-- Chat/ channel messages and team structure: Every team in Microsoft Teams is backed by a Microsoft 365 Modern Group and its SharePoint site and Exchange mailbox. Private chats (including group chats), messages sent as part of a conversation in a channel, and the structure of teams and channels are stored in an Azure powered chat service. The data is also stored in a hidden folder in the user and group mailboxes to enable information protection features.  
-- Images and Media: Media used in chats (except for Giphy GIFs which are not stored but are a reference link to the original Giphy URL) are stored in an Azure based Media Service deployed to the same locations as the chat service.
-- Meeting Recordings: For users of Microsoft Stream (on SharePoint) Meeting Recordings are stored in the OneDrive for Business storage of the user that initiates the recording.
+- Chat/ channel messages and team structure: Every team in Microsoft Teams is backed by a Microsoft 365 Modern Group and its SharePoint site and Exchange mailbox. Private chats (including group chats), messages sent as part of a conversation in a channel, and the structure of teams and channels are stored in an Azure powered chat service. The data is also stored in a hidden folder in the user and group mailboxes to enable information protection features. 
+- Images and Media: Media used in chats (except for Giphy GIFs which aren't stored but are a reference link to the original Giphy URL) are stored in an Azure based Media Service deployed to the same locations as the chat service.
+- Meeting Recordings: For users of Microsoft Stream (on SharePoint) Meeting Recordings are stored in the OneDrive storage of the user that initiates the recording.
 
 ### Multi-Geo add-on
 
@@ -106,7 +106,7 @@ Teams Multi-Geo is seamless to the end user. Once you change the PDL of a user o
 ### Migration
 
 **Files Tab**
-After the migration is complete the Files tab may take additional time (up to 7 seconds) to fully load when the user first attempts to use it.
+After the migration is complete the Files tab might take additional time (up to 7 seconds) to fully load when the user first attempts to use it.
 
 **Read-only period**
 Teams chat services moves each thread individually. The thread is locked in a read-only state during the move, which lasts a few seconds per thread. Threads remain accessible during the migration.
