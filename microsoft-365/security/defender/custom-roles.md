@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 01/03/2023
+ms.date: 03/04/2024
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -26,7 +26,7 @@ search.appverid:
 # Custom roles in role-based access control for Microsoft Defender XDR
 
 > [!NOTE]
-> If you are running the Microsoft Defender XDR preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
+> Microsoft Defender XDR users can now take advantage of a centralized permissions management solution to control user access and permissions across different Microsoft security solutions. Learn more about the [Microsoft Defender XDR Unified role-based access control (RBAC)](manage-rbac.md).
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
