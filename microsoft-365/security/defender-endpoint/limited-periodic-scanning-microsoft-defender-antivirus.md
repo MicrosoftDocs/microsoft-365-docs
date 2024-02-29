@@ -7,8 +7,8 @@ ms.topic: conceptual
 author: siosulli
 ms.author: siosulli
 ms.custom: nextgen
-ms.date: 02/02/2024
-ms.reviewer: 
+ms.date: 02/18/2024
+ms.reviewer: yongrhee
 manager: deniseb
 ms.subservice: ngp
 ms.collection: 
@@ -29,6 +29,8 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
+
+- Microsoft Defender for Individual
 
 **Platforms**
 - Windows

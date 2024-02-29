@@ -17,6 +17,7 @@ ms.collection:
     - m365solution-getstarted
     - highpri
     - tier1
+    - usx-security
 ms.topic: how-to
 search.appverid: 
   - MOE150

@@ -253,12 +253,6 @@ To stop blocking a file, remove the indicator. You can do so via the **Edit Indi
 
 You can also edit indicators from  the **Settings** page, under **Rules** \> **Indicators**. Indicators are listed in this area by their file's hash.
 
-## Consult a threat expert
-
-Select Ask Defender Experts to get more insights from Microsoft experts on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
-
-See [Ask Defender Experts](experts-on-demand.md) for details.
-
 ## Check activity details in Action center
 
 The **Action center** provides information on actions that were taken on a device or file. You can view the following details:
