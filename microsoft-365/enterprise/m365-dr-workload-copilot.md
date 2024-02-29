@@ -27,7 +27,7 @@ Service documentation: [Microsoft Copilot for Microsoft 365 overview](/microsoft
 Capability Summary: Microsoft Copilot for Microsoft 365 is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 apps that you use every day, such as Word, Excel, PowerPoint, Outlook, and Teams. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
 The following applications provide the ability to interact with Microsoft Copilot for Microsoft 365: Microsoft Word, Excel, PowerPoint, Loop, Outlook, Teams (Chat, Meetings, Calls, Whiteboard), and OneNote.
 
-The ontent of interactions and the related semantic index with Microsoft Copilot for Microsoft 365 are stored at rest in the relevant _Local Region Geography_.
+The content of interactions and the related semantic index with Microsoft Copilot for Microsoft 365 are stored at rest in the relevant _Local Region Geography_.
 
 ## Data Residency Commitments Available for Microsoft Copilot for Microsoft 365
 
@@ -83,4 +83,4 @@ Microsoft Copilot for Microsoft 365 is part of the Microsoft 365 Advanced Data R
 
 ### How can I determine customer data location?
 
-In the coming months you will be able to find the actual data location for committed data,  by navigating to **Settings > Org settings > Organization profile > Data location**.
+You can find the actual data location in Microsoft 365 admin center. In the coming months you will be able to find the actual data location for committed data,  by navigating to **Settings > Org settings > Organization profile > Data location**.
