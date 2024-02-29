@@ -97,7 +97,7 @@ additionalContent:
         # Card
         - title: End user Copilot resources
           links:
-            - text: Copilot for Microsoft 365 lab
+            - text: Copilot Lab
               url: https://copilot.cloud.microsoft
 #            - text: Use additional data sources with Microsoft 365 Chat
 #              url: https://go.microsoft.com/fwlink/?linkid=2250210
