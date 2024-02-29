@@ -49,15 +49,13 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on Android](android-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
-## January 2024
+## February 2024
 
-### ASR Rules
+**ASR Rules**
+
 Two new Attack Surface Reduction (ASR) rules are now in public preview: 
 - Block rebooting machine in Safe Mode (preview): This rule prevents the execution of commands to restart machines in Safe Mode.
 - Block use of copied or impersonated system tools (preview): This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
-
-### Microsoft Defender Antivirus updates
-Platform and engine version updates for Microsoft Defender Antivirus have been released. For more more information, see [Microsoft Defender Antivirus Updates](microsoft-defender-antivirus-updates.md#january-2024-platform-4182401012--engine-112401010)
 
 ## January 2024
 
