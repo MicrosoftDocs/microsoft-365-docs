@@ -104,9 +104,9 @@ For security reasons, the package used to offboard devices expires three days af
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Offboarding**.
     2. Select Windows 10 or Windows 11 as the operating system.
     3. In the **Deployment method** field, select **Local Script**.
-    4. Click **Download package** and save the .zip file.
+    4. Select **Download package** and save the .zip file.
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the devices. You should have a file named `WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd`.
+2. Extract the contents of the .zip file to a shared, read-only location that devices can access. You should have a file named `WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd`.
 
 3. Open an elevated command-line prompt on the device and run the script:
 
