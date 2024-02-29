@@ -116,30 +116,30 @@ Use the following reference table to understand how our previously publicly disc
 |Smoke Sandstorm|BOHRIUM|Iran||
 |Spandex Tempest|CHIMBORAZO|Financially motivated|TA505|
 |Star Blizzard|SEABORGIUM|Russia|Callisto, Reuse Team|
-|Storm-0062|China|DarkShadow, Oro0lxy||
-|Storm-0133|Iran|LYCEUM, HEXANE||
-|Storm-0216|Financially motivated|Twisted Spider, UNC2198||
-|Storm-0257|Group in development|UNC1151||
-|Storm-0324|Financially motivated|TA543, Sagrid||
+|Storm-0062||China|DarkShadow, Oro0lxy|
+|Storm-0133||Iran|LYCEUM, HEXANE|
+|Storm-0216||Financially motivated|Twisted Spider, UNC2198|
+|Storm-0257||Group in development|UNC1151|
+|Storm-0324||Financially motivated|TA543, Sagrid|
 |Storm-0381||Financially motivated||
-|Storm-0530|North Korea|H0lyGh0st||
+|Storm-0530||North Korea|H0lyGh0st|
 |Storm-0539||Financially motivated||
 |Storm-0558||China||
 |Storm-0569||Financially motivated||
 |Storm-0587|Russia|SaintBot, Saint Bear, TA471||
 |Storm-0744||Financially motivated||
 |Storm-0784||Iran||
-|Storm-0829|Group in development|Nwgen Team||
+|Storm-0829||Group in development|Nwgen Team|
 |Storm-0835||Group in development|EvilProxy|
 |Storm-0842||Iran||
 |Storm-0861||Iran||
-|Storm-0867|Egypt|Caffeine||
-|Storm-0971|Financially motivated|(Merged into Octo Tempest)||
-|Storm-0978|Group in development|RomCom, Underground Team||
-|Storm-1044|Financially motivated|Danabot||
+|Storm-0867||Egypt|Caffeine|
+|Storm-0971||Financially motivated|(Merged into Octo Tempest)|
+|Storm-0978||Group in development|RomCom, Underground Team|
+|Storm-1044||Financially motivated|Danabot|
 |Storm-1084|Iran|DarkBit||
 |Storm-1099||Russia||
-|Storm-1101|Group in development|NakedPages||
+|Storm-1101||Group in development|NakedPages|
 |Storm-1113||Financially motivated||
 |Storm-1133||Palestinian Authority||
 |Storm-1152||Financially motivated||
@@ -148,10 +148,10 @@ Use the following reference table to understand how our previously publicly disc
 |Storm-1286||Group in development||
 |Storm-1295||Group in development|Greatness|
 |Storm-1364||Iran||
-|Storm-1567|Financially motivated|Akira||
-|Storm-1575|Group in development|Dadsec||
+|Storm-1567||Financially motivated|Akira|
+|Storm-1575||Group in development|Dadsec|
 |Storm-1674||Financially motivated||
-|Strawberry Tempest|Financially motivated|LAPSUS$||
+|Strawberry Tempest||Financially motivated|LAPSUS$|
 |Sunglow Blizzard||Russia||
 |Tomato Tempest|SPURR|Financially motivated|Vatet|
 |Vanilla Tempest|DEV-0832|Financially motivated||
