@@ -23,7 +23,7 @@ ms.collection:
 >[!NOTE]
 >If you have purchased a Multi-Geo subscription, then Microsoft will store certain customer data at rest in more than one Geography based on your configuration even if you have purchased the Microsoft 365 Advanced Data Residency add-on ("ADR").  
 
-Microsoft makes commitments to store certain customer data at rest in the applicable _Local Region Geography_ for [eligible customers](advanced-data-residency.md#eligibility) that purchase ADR. The commitments are specified below.  
+Microsoft makes commitments to store certain customer data at rest in the applicable _Local Region Geography_ for [eligible customers](advanced-data-residency.md#eligibility) that purchase ADR. The commitments are specified as follows.  
 
 ## Exchange Online
 
@@ -66,7 +66,7 @@ The following customer data is stored at rest in the _Local Region Geography_:
 
 The following customer data is stored in the _Local Region Geography_:
 
-- Viva Connections Dashboard and Feed can have content sourced from SharePoint, Exchange Online and Microsoft Teams. All customer data sourced from these services covered by data residency commitments will be stored in the _Local Region Geography_. Refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
+- Viva Connections Dashboard and Feed can have content sourced from SharePoint, Exchange Online and Microsoft Teams. All customer data sourced from these services covered by data residency commitments will be stored in the _Local Region Geography_. Refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint](m365-dr-workload-spo.md), and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
 
 ## Viva Topics
 
@@ -105,14 +105,14 @@ The following customer data is stored at rest in the _Local Region Geography_:
   - Teams channel messages
   - Teams chats
   - Teams private channel messages
-  - SharePoint, OneDrive, Exchange Online and Microsoft Teams follow the data residency commitments for those services. Refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint](m365-dr-workload-spo.md) and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
+  - SharePoint, OneDrive, Exchange Online and Microsoft Teams follow the data residency commitments for those services. Refer to [Exchange Online](m365-dr-workload-exo.md), [SharePoint](m365-dr-workload-spo.md), and [Microsoft Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
 - Training classifiers
 - Disposition data
 - Mappings between retention labels and Data Loss Prevention (DLP) policies
 
 ## Data lifecycle management - Records Management
 
-The following customer data will be stored at rest in the _Local Region Geography_:
+The following customer data is stored at rest in the _Local Region Geography_:
 
 - Record retention label definitions, file plan definitions, event-based retention policy settings, disposition review records and records of deletion
 
@@ -131,7 +131,7 @@ The following customer data is stored at rest in the _Local Region Geography_:
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
-- DLP admin configuration, DLP policies in Compliance Center, DLP monitored activities, violation history, Activity Explorer and Microsoft 365 unified audit logs, quarantine storage,  DLP Alerts and DLP Alert management dashboard
+- DLP admin configuration, DLP policies in Compliance Portal, DLP monitored activities, violation history, Activity Explorer and Microsoft 365 unified audit logs, quarantine storage,  DLP Alerts and DLP Alert management dashboard
 
 ## Information Protection - Office Message Encryption
 
