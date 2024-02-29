@@ -76,19 +76,14 @@
       "searchScope": ["Microsoft Bookings", "Microsoft 365 Lighthouse", "Microsoft 365 for frontline workers", "Microsoft Syntex", "Microsoft 365"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
-        "traya1", 
-        "rmca14", 
         "claydetels19", 
         "jborsecnik",
-        "tiburd",
+        "shdyas",
         "garycentric",
-        "v-dihans",
-        "AngelaMotherofDragons",
         "alexbuckgit", 
         "beccarobins",
         "dstrome",
         "Stacyrch140",
-        "v-stsavell",
         "American-Dipper,"
       ]
     },
