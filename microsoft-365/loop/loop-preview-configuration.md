@@ -1,6 +1,7 @@
 ---
-ms.date: 08/21/2023
+ms.date: 02/29/2024
 title: "Manage Loop app preview"
+ROBOTS: NOINDEX, NOFOLLOW
 ms.reviewer: dancost, rekeys
 ms.author: mikeplum
 author: MikePlumleyMSFT
