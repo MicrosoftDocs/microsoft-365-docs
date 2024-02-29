@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/06/2024
+ms.date: 02/29/2024
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -22,19 +22,19 @@ ms.collection:
 
 This article lists the Data Residency commitments (available with the Advanced Data Residency add-on) for supported Microsoft Purview services and solutions.
 
-The required conditions for the related commitments for the services described below are:
+The required conditions for the related commitments for the following services are:
 
-1. _Tenant_ has a sign up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign-up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The Purview service Customer Data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 ## Migration
 
-Customer Data supporting Purview services is closely aligned with the Exchange Online and SharePoint Online services, and the bulk of the data migrated, if required to fulfill the data residency commitments for the Purview services, will be handled by those services. In the cases where supporting Customer Data is maintained in an Azure Service, for example, the migration of that data is tied to the migration of the underlying Exchange Online/SharePoint Online data.
+Customer Data supporting Purview services is closely aligned with the Exchange Online and SharePoint services, and the bulk of the data migrated, if required to fulfill the data residency commitments for the Purview services, will be handled by those services. In the cases where supporting Customer Data is maintained in an Azure Service, for example, the migration of that data is tied to the migration of the underlying Exchange Online/SharePoint data.
 
 ## How can I determine Customer Data location?
 
-We are in the process of updating the actual data location in _Tenant_ Admin Center.  When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Until that change is visible, you can view the Exchange Online data location information in order to understand where your committed data is stored for this service.
+We are in the process of updating the actual data location in _Tenant_ Admin Center. When this change is complete you will be able to see the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. Until that change is visible, you can view the Exchange Online data location information in order to understand where your committed data is stored for this service.
 
 ### Purview Audit (Standard)
 
@@ -48,7 +48,7 @@ Capability summary: Microsoft Purview Audit (Standard) provides you with the abi
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-standard) for the specific Customer Data at rest commitment for Purview Audit (Standard).
+Refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-standard) for the specific Customer Data at rest commitment for Purview Audit (Standard).
 
 ### Purview Audit (Premium)
 
@@ -62,7 +62,7 @@ Capability summary: Microsoft Purview Audit (Premium) builds on the capabilities
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-premium) for the specific Customer Data at rest commitment for Purview Audit (Premium).
+Refer to the [ADR Commitment page](m365-dr-commitments.md#purview-audit-premium) for the specific Customer Data at rest commitment for Purview Audit (Premium).
 
 ### Data lifecycle management - Data Retention
 
@@ -76,7 +76,7 @@ ADR applies to the following services within Purview Data lifecycle management, 
 - Machine Learning-based retention
 - Teams message retention policies
 
-Service documentation:  [Learn about retention policies & labels](/microsoft-365/compliance/retention)
+Service documentation: [Learn about retention policies & labels](/microsoft-365/compliance/retention)
 
 For more detailed information about how retention settings work for different workloads, see the following articles:
 
@@ -90,7 +90,7 @@ Capability summary: Lets you retain or delete content with policy management for
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---data-retention) for the specific Customer Data at rest commitment for Data lifecycle management - Data Retention.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---data-retention) for the specific Customer Data at rest commitment for Data lifecycle management - Data Retention.
 
 ### Data lifecycle management - Records Management
 
@@ -104,7 +104,7 @@ Capability summary: Organizations of all types require a records-management solu
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---records-management) for the specific Customer Data at rest commitment for Data lifecycle management - Records Management.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#data-lifecycle-management---records-management) for the specific Customer Data at rest commitment for Data lifecycle management - Records Management.
 
 ### Information Protection - Sensitivity labels
 
@@ -129,7 +129,7 @@ Capability summary: Sensitivity labels from Microsoft Purview Information Protec
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---sensitivity-labels) for the specificCustomer Data at rest commitment for Information Protection - Sensitivity labels.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---sensitivity-labels) for the specificCustomer Data at rest commitment for Information Protection - Sensitivity labels.
 
 ### Information Protection - Data Loss Prevention (DLP)
 
@@ -150,7 +150,7 @@ In Microsoft Purview, you implement data loss prevention by defining and applyin
 
 - Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
 - Office applications such as Word, Excel, and PowerPoint
-- Windows 10, Windows 11 and macOS (Catalina 10.15 and higher) endpoints
+- Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) endpoints
 - non-Microsoft cloud apps
 - on-premises file shares and on-premises SharePoint.
 
@@ -160,7 +160,7 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---data-loss-prevention-dlp) for the specific Customer Data at rest commitment for Information Protection - Data Loss Prevention (DLP).
+Refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---data-loss-prevention-dlp) for the specific Customer Data at rest commitment for Information Protection - Data Loss Prevention (DLP).
 
 ### Information Protection - Office Message Encryption
 
@@ -179,7 +179,7 @@ Capability summary: With Office 365 Message Encryption, your organization can se
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---office-message-encryption) for the specific Customer Data at rest commitment for Information Protection - Office Message Encryption.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---office-message-encryption) for the specific Customer Data at rest commitment for Information Protection - Office Message Encryption.
 
 ### Risk and compliance - information barriers
 
@@ -193,4 +193,4 @@ Capability summary: Microsoft Purview Information Barriers (IB) is a compliance 
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#risk-and-compliance---information-barriers) for the specific Customer Data at rest commitment for IB.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#risk-and-compliance---information-barriers) for the specific Customer Data at rest commitment for IB.
