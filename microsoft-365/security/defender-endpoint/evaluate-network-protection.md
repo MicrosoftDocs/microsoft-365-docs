@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: conceptual
 author: siosulli
 ms.author: siosulli
-ms.reviewer: 
+ms.reviewer: yongrhee
 manager: deniseb
 ms.subservice: asr
 ms.collection: 
@@ -15,7 +15,7 @@ ms.collection:
 - tier2
 - mde-asr
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 02/28/2024
 ---
 
 # Evaluate network protection
