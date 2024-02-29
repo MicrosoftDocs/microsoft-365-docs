@@ -122,7 +122,7 @@ In case you create a new policy configuration or change the configuration for an
 
 ## Settings management for Loop functionality in Teams
 
-You'll need the latest version of SharePoint PowerShell module to enable or disable Loop experiences in Teams. Loop components default to **ON** for all organizations. Because Loop components are designed for collaboration, the components are always shared as editable by others, even if your organization is set to create shareable links that have **view-only** permissions as the default value for other file types. For more information, see the **Learn more** link next to the setting.
+You'll need the [latest version of SharePoint PowerShell module](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to enable or disable Loop experiences in Teams. Loop components default to **ON** for all organizations. Because Loop components are designed for collaboration, the components are always shared as editable by others, even if your organization is set to create shareable links that have **view-only** permissions as the default value for other file types. For more information, see the **Learn more** link next to the setting.
 
 |Experience  |SharePoint organization properties  |Notes  |
 |---------|---------|---------|
