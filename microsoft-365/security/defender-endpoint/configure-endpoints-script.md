@@ -29,7 +29,7 @@ ms.date: 02/29/2024
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-You can also manually onboard individual devices to Defender for Endpoint. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
+You can also manually onboard individual devices to Defender for Endpoint. You might want onboard some devices when you're testing the service before you commit to onboarding all devices in your network.
 
 > [!IMPORTANT]
 > The script described in this article is optimized for use on up to ten devices. It's a special onboarding method for evaluating Microsoft Defender for Endpoint, and isn't normally used in production deployments. If you're deploying to a production environment, see [other deployment options](configure-endpoints.md), such as Intune, Group Policy, or Configuration Manager.
