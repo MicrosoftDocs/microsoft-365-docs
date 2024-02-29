@@ -7,7 +7,7 @@ ms.author: siosulli
 manager: deniseb 
 audience: ITPro
 ms.topic: overview
-ms.date: 01/02/2024
+ms.date: 02/21/2024
 ms.service: defender-endpoint
 ms.subservice: onboard
 ms.localizationpriority: medium
@@ -90,7 +90,7 @@ For example, suppose that you want to use a tag called `VIP` for all the devices
 
 1. Create a device tag called `VIP`, and apply it to all the devices that should receive Defender for Endpoint Plan 2 capabilities. Use one of the following methods to create your device tag:
 
-   - [Add and manage device tags using the Microsoft Defender portal](machine-tags.md#add-and-manage-device-tags-using-the-portal).
+   - [Add device tags using the portal](machine-tags.md#add-device-tags-using-the-portal).
    - [Add device tags by setting a registry key value](machine-tags.md#add-device-tags-by-setting-a-registry-key-value).
    - [Add or remove machine tags by using the Defender for Endpoint API](add-or-remove-machine-tags.md).
    - [Add device tags by creating a custom profile in Microsoft Intune](machine-tags.md#add-device-tags-by-creating-a-custom-profile-in-microsoft-intune).
