@@ -51,6 +51,16 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## January 2024
 
+### ASR Rules
+Two new Attack Surface Reduction (ASR) rules are now in public preview: 
+- Block rebooting machine in Safe Mode (preview): This rule prevents the execution of commands to restart machines in Safe Mode.
+- Block use of copied or impersonated system tools (preview): This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
+
+### Microsoft Defender Antivirus updates
+Platform and engine version updates for Microsoft Defender Antivirus have been released. For more more information, see [Microsoft Defender Antivirus Updates](microsoft-defender-antivirus-updates.md#january-2024-platform-4182401012--engine-112401010)
+
+## January 2024
+
 - **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Take a moment to celebrate your organization's improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. 
 
    - Defender Boxed opens automatically when you go to the **Incidents** page in the Microsoft Defender portal. 
