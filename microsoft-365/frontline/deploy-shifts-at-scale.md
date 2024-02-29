@@ -32,7 +32,7 @@ To start using Shifts, frontline managers are responsible for configuring Shifts
 As an admin, you can now standardize these Shifts settings across all your frontline teams and manage them centrally by deploying Shifts to your frontline teams at scale in the Teams admin center. You can select which capabilities to turn on or off and create schedule groups and time-off reasons that will be set uniformly across all your frontline teams. Your frontline managers can start using Shifts straight out-of-the-box with minimal setup required.
 
 > [!IMPORTANT]
-> This feature will begin rolling out for public preview in December 2023. Capabilities to edit Shifts settings configurations after the first deployment will come soon.
+> This feature will begin rolling out for public preview in December 2023.
 
 ## Prerequisites
 
@@ -147,7 +147,7 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
     :::image type="content" source="media/dsas-deploy-completed.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing a deployment status of Deployed. "lightbox="media/dsas-deploy-completed.png":::
 
-    You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed. Keep in mind that you can't redeploy Shifts to teams that already have Shifts enabled. The capability to edit Shifts settings configurations for your teams after the first deployment will be supported in the future.
+    You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed. Keep in mind that you can't redeploy Shifts to teams that already have Shifts enabled.
 
 ## Edit Shifts settings
 
