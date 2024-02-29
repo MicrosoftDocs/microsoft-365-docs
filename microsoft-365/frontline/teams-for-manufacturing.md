@@ -37,7 +37,7 @@ Empower your frontline workforce with digital tools and modern devices that offe
 
 ## Choose your scenarios
 
-Microsoft 365 and Microsoft Teams offers capabilities that help manufacturing organizations enhance productivity in their daily operations and digital transformation. We recommend the following scenarios for manufacturers:
+Microsoft 365 and Microsoft Teams offer capabilities that help manufacturing organizations enhance productivity in their daily operations and digital transformation. We recommend the following scenarios for manufacturers:
 
 - [Connect and engage your workforce](#connect-and-engage-your-workforce)
 - [Enhance workforce management](#enhance-workforce-management)
