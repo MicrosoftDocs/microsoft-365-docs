@@ -666,6 +666,20 @@ Specifies the value of tag
 > - Only one value per tag type can be set.
 > - Type of tags are unique, and should not be repeated in the same configuration profile.
 
+#### Group identifier
+
+EDR Group identifiers
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|groupIds|
+|**Data type**|String|
+|**Comments**|Group identifier|
+|||
+
 ### Tamper Protection
 
 Manage the preferences of the Tamper Protection component of Microsoft Defender for Endpoint on macOS.
