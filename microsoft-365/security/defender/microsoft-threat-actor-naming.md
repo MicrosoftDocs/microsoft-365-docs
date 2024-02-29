@@ -154,12 +154,12 @@ Use the following reference table to understand how our previously publicly disc
 |Strawberry Tempest|Financially motivated|LAPSUS$||
 |Sunglow Blizzard||Russia||
 |Tomato Tempest|SPURR|Financially motivated|Vatet|
-|Vanilla Tempest||Financially motivated||
-|Velvet Tempest||Financially motivated||
+|Vanilla Tempest|DEV-0832|Financially motivated||
+|Velvet Tempest|DEV-0504|Financially motivated||
 |Violet Typhoon|ZIRCONIUM|China|APT31|
 |[Volt Typhoon](https://www.microsoft.com/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques)||China|BRONZE SILHOUETTE, VANGUARD PANDA|
 |Wine Tempest|PARINACOTA|Financially motivated|Wadhrama|
-|Wisteria Tsunami|Private sector offensive actor|CyberRoot||
+|Wisteria Tsunami|DEV-0605|Private sector offensive actor|CyberRoot|
 |Zigzag Hail|DUBNIUM|South Korea|Dark Hotel, Tapaoux|
 
 Read our announcement about the new taxonomy for more information: [https://aka.ms/threatactorsblog](https://aka.ms/threatactorsblog)
