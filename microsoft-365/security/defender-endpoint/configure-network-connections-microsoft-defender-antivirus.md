@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Configure and validate Microsoft Defender Antivirus network connections
+# Configure and validate Microsoft Defender Antivirus network connections such as Cloud Protection
 
 **Applies to:**
 
@@ -75,12 +75,42 @@ Use the following argument with the Microsoft Defender Antivirus command-line ut
 
 For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
+### If you get any of these errors:
+Start Time: ‎<Day_of_the_week> MM DD YYYY HH:MM:SS
+MpEnsureProcessMitigationPolicy: hr = 0x1  
+ValidateMapsConnection  
+ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80070006 httpcode=451)  
+MpCmdRun.exe: hr = 0x80070006__.__
+ValidateMapsConnection failed to establish a connection to MAPS (hr=80072F8F httpcode=451)  
+MpCmdRun.exe: hr = 0x80072F8F.
+ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072EFE httpcode=451)  
+MpCmdRun.exe: hr = 0x80072EFE.
+[Root cause]
+The device not having its system-wide WinHttp proxy configured. When we set it via netsh things seem to work.
+If you don’t set the system-wide WinHttp proxy then the OS is not aware of the proxy, which means the OS can’t fetch the CRL (the OS does this, not MDE), which means that TLS connections to URLs like [cp.wd.microsoft.com](http://cp.wd.microsoft.com/) will not succeed. At least not fully. We would see successful (response 200) connections to the endpoints but our MAPS connections would still fail.
+[Solution] (Preferred)
+Configure the system-wide WinHttp proxy which will allow CRL check.
+[Solution] (Preferred # 2)
+[Setup Redirect the Microsoft Automatic Update URL for a disconnected environment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)?redirectedfrom=MSDN)
+[To configure a server that has access to the Internet to retrieve the CTL files](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)?redirectedfrom=MSDN)
+[Redirect the Microsoft Automatic Update URL for a disconnected environment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)?redirectedfrom=MSDN)
+References:  
+Computer Configuration > Windows Settings > Security Settings > Public Key Policies > Certificate Path Validation Settings > Click the Network Retrieval tab, click to select Define these policy settings, and then click to clear the Automatically update certificates in the Microsoft Root Certificate Program (recommended) check box.
+[Certificate Revocation List (CRL) Verification - an Application Choice](https://social.technet.microsoft.com/wiki/contents/articles/964.certificate-revocation-list-crl-verification-an-application-choice.aspx)
+[https://support.microsoft.com/en-us/help/931125/how-to-get-a-root-certificate-update-for-windows](https://support.microsoft.com/en-us/help/931125/how-to-get-a-root-certificate-update-for-windows)
+[https://technet.microsoft.com/en-us/library/dn265983(v=ws.11).aspx](https://technet.microsoft.com/en-us/library/dn265983(v=ws.11).aspx)
+[https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element)
+[https://blogs.msdn.microsoft.com/amolravande/2008/07/20/improving-application-start-up-time-generatepublisherevidence-setting-in-machine-config/](https://blogs.msdn.microsoft.com/amolravande/2008/07/20/improving-application-start-up-time-generatepublisherevidence-setting-in-machine-config/)
+[Work-around] (Alternative)
+Not best practice since you will no longer check for revoked certs.
+Disable CRL check only for SPYNET. Configuring this registry SSLOptions disable CRL check only for SPYNET reporting. It won’t impact other services.
+HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet  
+SSLOptions (dword) to 0 (hex)
+0 - Disable SSL cert revocation  
+1 - Enable SSL cert revocation (default)
 ### Attempt to download a fake malware file from Microsoft
 
-You can download a sample file that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud. Visit [https://aka.ms/ioavtest1](https://aka.ms/ioavtest1) to download the file.
-
-> [!NOTE]
-> The downloaded file is not exactly malware. It's a fake file designed to test if you're properly connected to the cloud.
+The instructions to download a fake malware that tests Cloud Protection is located in [Cloud-delivered protection demonstration](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-cloud-delivered-protection)
 
 If you're properly connected, you'll see a warning Microsoft Defender Antivirus notification.
 
