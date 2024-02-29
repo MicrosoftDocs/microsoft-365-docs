@@ -29,7 +29,7 @@ description: Learn about the telemedicine features in Microsoft 365 and Microsof
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.date: 03/15/2023
+ms.date: 02/29/2024
 ---
 
 # Get started with Microsoft 365 for healthcare organizations
@@ -110,18 +110,14 @@ Teams enables physicians, clinicians, nurses, and other staff to collaborate eff
 
 ### Messaging for healthcare organizations
 
-[Messaging policies](/microsoftteams/messaging-policies-in-teams) in Teams are used to control which chat and channel messaging features are available to users. With the **Read receipts** and **Send urgent messages using priority notifications** messaging policy settings, you can enable the following features:
+[Messaging policies](/microsoftteams/messaging-policies-in-teams) in Teams are used to control which chat and channel messaging features are available to users. For example, you can enable the following features:
 
-- A message sender can send urgent messages using priority notifications, so the recipient is repeatedly notified until they read the message.
-- A message sender can request a read receipt, so they're notified when a message they sent was read by the message recipient.
+- Users can send urgent messages using priority notifications, so the recipient is repeatedly notified until they read the message.
+- Users can use read receipts to know when the chat messages they send are read by the recipient.
 
 Together, these features allow quicker attention to urgent messages and confidence that the message was received and read.
 
 To learn more, see [Messaging policies for healthcare organizations](messaging-policies-hc.md).
-
-Also related to messaging is the ability to have other tenants federated by healthcare organizations, allowing richer inter-tenant communication. To learn more, see [Manage external meetings and chat with people and organizations using Microsoft identities](/microsoftteams/manage-external-access).
-
-You can also use the external access feature in Teams to allow users in your healthcare organization to communicate with people outside your organization. To learn more, see [Manage external meetings and chat with people and organizations using Microsoft identities](/microsoftteams/manage-external-access).
 
 ### Coordinate over email with Exchange Online
 
