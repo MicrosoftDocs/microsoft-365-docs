@@ -128,7 +128,7 @@ For example, in Threat Explorer the **All email** view, the **Email origin** and
 
 - Others might find the detailed information in the table in the **Campaigns** tab more useful to convey the information.
 
-  :::image type="content" source="../../media/te-rtd-all-email-view-details-area-campaign-tab.png" alt-text="The details table in the Campaign tab in the All email view view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-details-area-campaign-tab.png":::
+  :::image type="content" source="../../media/te-rtd-all-email-view-details-area-campaign-tab.png" alt-text="The details table in the Campaign tab in the All email view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-details-area-campaign-tab.png":::
 
 You can use this information for the following results:
 
@@ -188,7 +188,7 @@ Selecting **Take action** opens the **Take action** wizard in a flyout:
          - :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: **Expire on**: Select a date for block entries to expire.
          - :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **Never expire**
 
-         The number of blocked entities is shown (for exampe, **4/4 entities to be blocked**). Select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** to reopen the **Add to block rule** and make changes.
+         The number of blocked entities is shown (for example, **4/4 entities to be blocked**). Select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** to reopen the **Add to block rule** and make changes.
 
      - **Initiate automated investigation**: Threat Explorer only. Select one of the following values that appear:
        - **Investigate email**
@@ -329,7 +329,7 @@ Pre-delivery and post-delivery actions on email messages are consolidated into a
 
 - In the **Delivery details** section, the **Detection technology** property shows the detection technology that identified the threat. **Detection technology** is also available as a chart pivot or a column in the details table for many views in Threat Explorer and Real-time detections.
 
-- The **URLs** section shows specific **Threat** information for any URLs in the message. For example, **Malware**, **Phish**, **Spam** or **None**.
+- The **URLs** section shows specific **Threat** information for any URLs in the message. For example, **Malware**, **Phish**, **Spam, or **None**.
 
 > [!TIP]
 > Verdict analysis might not necessarily be tied to entities. The filters evaluate content and other details of an email message before assigning a verdict. For example, an email message might be classified as phishing or spam, but no URLs in the message are stamped with a phishing or spam verdict.

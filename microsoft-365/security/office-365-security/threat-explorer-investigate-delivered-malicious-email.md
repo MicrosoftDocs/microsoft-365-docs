@@ -1,5 +1,5 @@
 ---
-title: Investigate malicious email that was delivered in Microsoft 365, Find and investigate malicious email
+title: Investigate malicious email that was delivered in Microsoft 365, find and investigate malicious email
 keywords: TIMailData-Inline, Security Incident, incident, Microsoft Defender for Endpoint PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers,special actions
 f1.keywords:
   - NOCSH
@@ -41,7 +41,6 @@ Threat Explorer and Real-time detections allow you to investigate activities tha
 - Start an incident for further investigation.
 
 This article explains how to use Threat Explorer and Real-time detections to find malicious email in recipient mailboxes.
- you can find and investigate suspicious email messages that were delivered.
 
 > [!TIP]
 > To go directly to the remediation procedures, see [Remediate malicious email delivered in Office 365](remediate-malicious-email-delivered-office-365.md).
@@ -57,12 +56,11 @@ This article explains how to use Threat Explorer and Real-time detections to fin
   - The differences between Threat Explorer and Real-time detections are described in [About Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-real-time-detections-about.md).
   - The differences between Defender for Office 365 Plan 2 and Defender for Office Plan 1 are described in the [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-security-comparison.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
+- For filter properties that require you to select one or more available values, using the property in the filter condition with all values selected has the same result as not using the property in the filter condition.
+
 - For permissions and licensing requirements for Threat Explorer and Real-time detections, see [Permissions and licensing for Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#permissions-and-licensing-for-threat-explorer-and-real-time-detections).
 
 ## Find suspicious email that was delivered
-
-> [!NOTE]
-> Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto purge (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
 
 1. Use one of the following steps to open Threat Explorer or Real-time detections:
    - **Threat Explorer**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
@@ -76,7 +74,7 @@ This article explains how to use Threat Explorer and Real-time detections to fin
 
    :::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="The date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
 
-4. Create 0ne or more filter conditions using some or all of the following targeted properties and values. For complete instructions, see [Property filters in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#property-filters-in-threat-explorer-and-real-time-detections). For example:
+4. Create one or more filter conditions using some or all of the following targeted properties and values. For complete instructions, see [Property filters in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#property-filters-in-threat-explorer-and-real-time-detections). For example:
 
    - **Delivery action**: The action taken on an email due to existing policies or detections. Useful values are:
      - **Delivered**: Email delivered to the user's Inbox or other folder where the user can access the message.
@@ -101,6 +99,15 @@ This article explains how to use Threat Explorer and Real-time detections to fin
      - **Outbound**
 
      This information can help identify spoofing and impersonation. For example, messages from internal domain senders should be **Intra-org**, not **Inbound**.
+
+   - **Additional action**: Valid values are:
+     -**Automated remediation** (Defender for Office 365 Plan 2)
+     -**Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).
+     -**Manual remediation**
+     -**None**
+     -**Quarantine release**
+     -**Reprocessed**: The message was retroactively identified as good.
+     -**ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).
 
    - **Primary override**: If organization or user settings allowed or blocked messages that would have otherwise been blocked or allowed. Values are:
      - **Allowed by organization policy**

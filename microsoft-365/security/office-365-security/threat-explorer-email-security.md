@@ -29,7 +29,7 @@ appliesto:
 
 Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections**. These features are powerful, near real-time tools to help Security Operations (SecOps) teams investigate and respond to threats. For more information, see [About Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-real-time-detections-about.md).
 
-This article explains how to view and investigate malware and phishing attempts that are detected in email by Microsoft 365 security features using Threat Explorer (Explorer) or Real-time Detections.
+This article explains how to view and investigate detected malware and phishing attempts in email using Threat Explorer or Real-time Detections.
 
 > [!TIP]
 > For other email scenarios using Threat Explorer and Real-time detections, see the following articles:
@@ -54,7 +54,7 @@ In the default or custom anti-phishing policies, you need to specify the users a
 - [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
 - [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
 
-Use the following steps to review phish messages and search for impersonated users or domains.
+Use the following steps to review phishing messages and search for impersonated users or domains.
 
 1. Use one of the following steps to open Threat Explorer or Real-time detections:
    - **Threat Explorer**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
@@ -98,7 +98,7 @@ For more information, see [Investigate and remediate malicious email that was de
 
 ## Export URL click data
 
-You can export URL click data to a CSV file to view the **Network Message ID** and **Click verdict** values, which helps explain where your URL click traffic originated.
+You can export URL click data to a CSV file to view the **Network Message ID** and **Click verdict** values, which help explain where your URL click traffic came from.
 
 1. Use one of the following steps to open Threat Explorer or Real-time detections:
    - **Threat Explorer**: In the Defender portal at <https://security.microsoft.com>, go to **Email & Security** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorerv3>.
@@ -113,7 +113,7 @@ You can export URL click data to a CSV file to view the **Network Message ID** a
 5. In the **Top URLs** or **Top clicks** view, select one or more entries from the table by selecting the check box next to the first column, and then select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export**.
 **Explorer** \> **Phish** \> **Clicks** \> **Top URLs** or **URL Top Clicks** \> select any record to open the URL flyout.
 
-You can use the Network Message ID value to search for specific messages in Threat Explorer or Real-time detections or associated third-party tools. These searches identify the email message that's associated with a click result. Having the correlated Network Message ID makes for quicker and more powerful analysis.
+You can use the Network Message ID value to search for specific messages in Threat Explorer or Real-time detections or external tools. These searches identify the email message that's associated with a click result. Having the correlated Network Message ID makes for quicker and more powerful analysis.
 
 ## View malware detected in email
 
@@ -161,7 +161,7 @@ To summarize:
 
 ## View phishing URL and click verdict data
 
-Safe Links protection tracks URLs that were allowed, blocked, and overridden. Safe Links protection is on by default, thanks to Built-in protection in [preset security policies](preset-security-policies.md). Safe Links protection is on in the Standard and Strict preset security policies. You can also create an configure Safe Links protection in [custom Safe Links policies](safe-links-policies-configure.md). For more information about the Safe Links policy settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+Safe Links protection tracks URLs that were allowed, blocked, and overridden. Safe Links protection is on by default, thanks to Built-in protection in [preset security policies](preset-security-policies.md). Safe Links protection is on in the Standard and Strict preset security policies. You can also create and configure Safe Links protection in [custom Safe Links policies](safe-links-policies-configure.md). For more information about the Safe Links policy settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 Use the following steps to see phishing attempts using URLs in email messages.
 
@@ -189,9 +189,9 @@ The **Top URLs** tab (view) in the details area below the chart shows the count 
 
 The **Top clicks** tab (view) in the details area below the chart shows the top five clicked links that were wrapped by Safe Links. URL clicks on unwrapped links don't show up here. For more information, see [Top clicks view for the details area of the Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#top-clicks-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections).
 
-These URL tables show URLs that were blocked or visited despite a warning, so you can see the potential bad links that were presented to users. From here, you can conduct further analysis.
+These URL tables show URLs that were blocked or visited despite a warning. This information shows the potential bad links that were presented to users. From here, you can conduct further analysis.
 
-Select a URL from an entry in the to view more information. For more information, see [URL details for the Top URLs and Top clicks tabs in Phish view](threat-explorer-real-time-detections-about.md#top-urls-details-for-the-phish-view).
+Select a URL from an entry in the view for details. For more information, see [URL details for the Top URLs and Top clicks tabs in Phish view](threat-explorer-real-time-detections-about.md#top-urls-details-for-the-phish-view).
 
 > [!TIP]
 > In the URL details flyout, the filtering on email messages is removed to show the full view of the URL's exposure in your environment. This behavior lets you filter for specific email messages, find specific URLs that are potential threats, and then expand your understanding of the URL exposure in your environment without having to add URL filters in the **Phish** view.
@@ -222,4 +222,4 @@ The verdict values are described in the following list:
 
 ## Other articles
 
-[Investigate email with the Email Entity Page](mdo-email-entity-page.md)
+[Investigate email with the Email entity page](mdo-email-entity-page.md)
