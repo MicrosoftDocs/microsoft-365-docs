@@ -43,11 +43,11 @@ The following customer data is stored at rest in the _Local Region Geography_:
 
 - Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and, for customers using Microsoft Stream (on SharePoint), meeting recordings
 
-## Copilot for Microsoft 365
+## Microsoft Copilot for Microsoft 365
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
-- Any stored content of interactions with Copilot for Microsoft 365 to the extent not included in the preceding commitments.
+- Any stored content of interactions with Microsoft Copilot for Microsoft 365 to the extent not included in the preceding commitments.
 
 ## Microsoft Defender for Office P1
 
