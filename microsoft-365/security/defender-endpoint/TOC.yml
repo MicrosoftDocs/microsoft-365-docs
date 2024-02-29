@@ -563,6 +563,8 @@
           href: enable-cloud-protection-microsoft-defender-antivirus.md
         - name: Specify the cloud protection level
           href: specify-cloud-protection-level-microsoft-defender-antivirus.md
+        - name: Configure the cloud block timeout period
+          href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
         - name: Cloud protection and sample submission
           href: cloud-protection-microsoft-antivirus-sample-submission.md
       - name: Configure and validate Microsoft Defender Antivirus network connections
@@ -585,8 +587,6 @@
         href: configure-block-at-first-sight-microsoft-defender-antivirus.md
       - name: Antimalware Scan Interface (AMSI) integration
         href: amsi-on-mdav.md
-      - name: Configure the cloud block timeout period
-        href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
       - name: Configure behavioral, heuristic, and real-time protection
         href: configure-protection-features-microsoft-defender-antivirus.md
       - name: Advanced technologies at the core of Microsoft Defender Antivirus
