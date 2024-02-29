@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/06/2024
+ms.date: 02/29/2024
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -38,11 +38,11 @@ Required Conditions:
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#viva-topics) for the specific customer data at rest commitment for Viva Topics.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#viva-topics) for the specific customer data at rest commitment for Viva Topics.
 
 ## Migration
 
-Data stored is maintained within Exchange Online, SharePoint Online, and Microsoft Teams. Migration processes are handled by the applicable/relevant workloads.
+Data stored is maintained within Exchange Online, SharePoint, and Microsoft Teams. Migration processes are handled by the applicable/relevant workloads.
 
 ## How can I determine customer data location?
 
