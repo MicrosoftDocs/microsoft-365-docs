@@ -38,7 +38,7 @@ Microsoft 365 and Microsoft Teams offer a number of telemedicine features useful
 
 - Virtual Appointments and Electronic Healthcare Record (EHR) integration
 - Teams policy packages for healthcare
-- Secure messaging
+- Messaging
 - Team templates for healthcare
 - Care coordination and collaboration
 
@@ -110,7 +110,7 @@ Teams enables physicians, clinicians, nurses, and other staff to collaborate eff
 
 ### Messaging for healthcare organizations
 
-[Messaging policies](/microsoftteams/messaging-policies-in-teams) in Teams are used to control which chat and channel messaging features are available to users. You can edit the settings in the global (Org-wide default) policy or create and assign custom messaging policies to turn on or turn off the features that you want.
+Messaging policies in Teams are used to control which chat and channel messaging features are available to users. You can edit the settings in the global (Org-wide default) policy or create and assign custom messaging policies to turn on or turn off the features that you want.
 
 For example, consider enabling the following messaging features for your health teams:
 
@@ -119,7 +119,7 @@ For example, consider enabling the following messaging features for your health 
 
 Together, these features allow quicker attention to urgent messages and confidence that the message was received and read.
 
-To learn more, see [Messaging policies for healthcare organizations](messaging-policies-hc.md).
+To learn more, see [Manage messaging policies in Teams](/microsoftteams/messaging-policies-in-teams) and [Messaging policies for healthcare organizations](messaging-policies-hc.md).
 
 ### Coordinate over email with Exchange Online
 
