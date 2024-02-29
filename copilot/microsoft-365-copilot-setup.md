@@ -140,9 +140,9 @@ With your established community of early adopters or Champions, they can better 
 
 The [Microsoft Copilot Dashboard (Preview) from Viva Insights](/viva/insights/org-team-insights/copilot-dashboard) helps organizations maximize the value of Copilot for Microsoft 365 by providing organizational leaders and IT decision makers insights into readiness, adoption, impact, and user sentiment.
 
-[Access the Microsoft Copilot Dashboard (Preview) from Viva Insights here](http://aka.ms/copilotdashboard).
+[Access the Microsoft Copilot Dashboard (Preview) from Viva Insights here](https://aka.ms/copilotdashboard).
 
-[Review this article to learn more about the Microsoft Copilot Dashboard (Preview) from Viva Insights](https://learn.microsoft.com/en-us/viva/insights/org-team-insights/copilot-dashboard).
+[Review this article to learn more about the Microsoft Copilot Dashboard (Preview) from Viva Insights](/viva/insights/org-team-insights/copilot-dashboard).
 
 ## More resources
 
@@ -150,4 +150,4 @@ The [Microsoft Copilot Dashboard (Preview) from Viva Insights](/viva/insights/or
 - [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot)
 - [Copilot for Microsoft 365 – Microsoft Adoption](https://adoption.microsoft.com/Copilot/)
 - [Microsoft Copilot for Microsoft 365 - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/ct-p/Microsoft365Copilot)
-- [Copilot for Microsoft 365 technical documentation hub](microsoft-365-copilot/)
+- [Copilot for Microsoft 365 technical documentation hub](index.yml)
