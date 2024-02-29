@@ -91,7 +91,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 | Uses eligible update channel      | Yes/No field indicating if devices are configured to get the latest or monthly updates.                                       |
 | Uses Teams Meetings               | Indicates whether the user has attended at least one meeting using Teams in the past 30 days.                                  |
 | Uses Teams chat                   | Indicates whether the user has participated in at least one chat using Teams in the past 30 days.                              |
-| Uses Outlook Email                | Indicates whether the user has sent at least one meeting using Outlook in the past 30 days.                                    |
+| Uses Outlook Email                | Indicates whether the user has sent at least one email using Outlook in the past 30 days.                                    |
 | Uses Office docs                  | Indicates whether the user has collaborated on at least one document or file using OneDrive or sharepoint in the past 30 days. |
 
 ## Interpret the Usage tab in Copilot for Microsoft 365 report
@@ -169,7 +169,7 @@ Select **Choose columns** to add or remove columns from the table.
 
 You can also export the report data into an Excel .csv file by selecting the Export link. This exports the Copilot for Microsoft 365 usage data of all users and enables you to do simple sorting, filtering, and searching for further analysis.
 
-To ensure data quality, we perform daily data validation checks for the past three days and will fill any gaps detected. You may notice differences in historical data during the process. 
+To ensure data quality, we perform daily data validation checks for the past three days and will fill any gaps detected. You may notice differences in historical data during the process.
 
 ## User last activity table
 
