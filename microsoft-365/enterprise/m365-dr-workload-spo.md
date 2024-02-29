@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/06/2024
+ms.date: 02/29/2024
 ms.reviewer: deanw, anfra, robnichols
 ms.custom:
 - it-pro
@@ -56,12 +56,12 @@ Required Conditions:
 
 Customers can assign users of SharePoint/OneDrive to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
 
-- SharePoint site content and the files stored within that site, and files uploaded to OneDrive.  
+- SharePoint site content and the files stored within that site, and files uploaded to OneDrive. 
 
 ## Migration with Advanced Data Residency
 
 When SharePoint is moved, data for the following services is also moved:
-  
+ 
 - OneDrive
 - Microsoft 365 Video services
 - Office in a browser
@@ -69,7 +69,7 @@ When SharePoint is moved, data for the following services is also moved:
 - Visio Pro for Microsoft 365
 
 After we've completed moving your SharePoint data, you might see some of the following effects.
-  
+ 
 ### Microsoft 365 Video Services
 
 - The data move for video takes longer than the moves for the rest of your content in SharePoint.
@@ -79,9 +79,9 @@ After we've completed moving your SharePoint data, you might see some of the fol
 ### Search
 
 In the course of moving your SharePoint data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint data. From this point and onwards, we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint data, but some customers might experience reduced freshness in the first 24-48 hours.
-  
+ 
 The following search features are affected:
-  
+ 
 - Search results and Search Web Parts: Results don't include changes that occurred after the migration until crawling picks them up.
 - Delve: Delve doesn't include changes that occurred after the migration until crawling picks them up.
 - Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
@@ -203,7 +203,7 @@ Connect-SPOService -url https://contosoenergyeur-admin.sharepoint.com
 ```
 
 #### **Validating the environment**
-  
+ 
 Before you start a OneDrive _Geography_ move, we recommend that you validate the environment.
 
 To ensure that all _Geography_ locations are compatible, run:
@@ -247,7 +247,7 @@ To schedule a _Geography_ move for a later time, use one of the following parame
 - _PreferredMoveEndDate_ – The move will likely be completed by this specified time, on a best effort basis. Time must be specified in Coordinated Universal Time (UTC).
 
 #### **Cancel a OneDrive _Geography_ move**
-  
+ 
 You can stop the _Geography_ move of a user's OneDrive, provided the move isn't in progress or completed by using the cmdlet:
 
 ```powershell
@@ -289,7 +289,7 @@ Users of OneDrive should notice minimal disruption if their OneDrive is moved to
 
 #### **User's OneDrive**
 
-While the move is in progress, the user's OneDrive is set to read-only. Once the move is completed, the user is directed to their OneDrive in the new _Geography_  location when they navigate to OneDrive the Microsoft 365 app launcher or a web browser.
+While the move is in progress, the user's OneDrive is set to read-only. Once the move is completed, the user is directed to their OneDrive in the new _Geography_ location when they navigate to OneDrive the Microsoft 365 app launcher or a web browser.
 
 #### **Permissions on OneDrive content**
 
@@ -412,7 +412,7 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 This returns _Success_ if the site is ready to be moved or _Fail_ if any of blocked conditions are present.
 
 #### **Start a SharePoint site _Geography_ move for a site with no associated Microsoft 365 group**
-  
+ 
 By default, initial URL for the site will change to the URL of the destination _Geography_ location. For example:
 
 `https://Contoso.sharepoint.com/sites/projectx` to `https://ContosoEUR.sharepoint.com/sites/projectx`
@@ -429,7 +429,7 @@ Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <Dest
 
 #### **Start a SharePoint site _Geography_ move for a Microsoft 365 group-connected site**
 
-  To move a Microsoft 365 group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Microsoft 365 group.
+ To move a Microsoft 365 group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Microsoft 365 group.
 
 To set the PDL for a Microsoft 365 group:
 
@@ -570,4 +570,4 @@ This operation usually takes about an hour while we perform various publish back
 
 ## How can I determine customer data location?
 
-You can find the actual data location in Microsoft 365 admin center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to **Admin->Settings->Org Settings->Organization Profile->Data Location**. If you don't have a _Tenant_ created, you can have a _Tenant_ created when signing up for a Microsoft 365 trial.
+You can find the actual data location in Microsoft 365 admin center. As a _Tenant_ administrator you can find the actual data location, for committed data, by navigating to **Admin->Settings->Org Settings->Organization Profile->Data Location**. If you don't have a _Tenant_ created, you can have a _Tenant_ created when signing up for a Microsoft 365 trial.
