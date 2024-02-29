@@ -47,7 +47,6 @@ You can also manage licenses from the Copilot page in the Microsoft 365 admin ce
 
 Once you've assigned licenses, the Copilot experience will automatically appear for users in Microsoft 365 Apps. In some experiences, like Word, a Copilot dialog will appear when creating a new document. In other experiences, Copilot is quickly accessible on the Ribbon.
 
-
 >[!NOTE]
 >For Education customers, the Copilot license is listed under **Microsoft 365 A3 Extra Features for faculty** or **Microsoft 365 A5 Extra Features for faculty**.
 

@@ -91,7 +91,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 | Uses eligible update channel      | Yes/No field indicating if devices are configured to get the latest or monthly updates.                                       |
 | Uses Teams Meetings               | Indicates whether the user has attended at least one meeting using Teams in the past 30 days.                                  |
 | Uses Teams chat                   | Indicates whether the user has participated in at least one chat using Teams in the past 30 days.                              |
-| Uses Outlook Email                | Indicates whether the user has sent at least one meeting using Outlook in the past 30 days.                                    |
+| Uses Outlook Email                | Indicates whether the user has sent at least one email using Outlook in the past 30 days.                                    |
 | Uses Office docs                  | Indicates whether the user has collaborated on at least one document or file using OneDrive or sharepoint in the past 30 days. |
 
 ## Interpret the Usage tab in Copilot for Microsoft 365 report
@@ -121,6 +121,8 @@ You can see the following summary charts in this report as default view:
 :::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage adoption chart." source="../../media/copilot-usage-adoption-chart.png":::
 
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
+
+To note, Active users of Word, Excel and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might be lower than expected if there are people in your organization using the Coach feature on Outlook Win32 over the selected time period. We are currently working on integrating this data into our reports and will notify you as soon as it becomes available.
 
 >[!NOTE]
 > This report does not yet include Microsoft Copilot with Graph-grounded chat usage, but it will be available in this report soon. You'll be notified of this update through the Microsoft 365 message center.
@@ -162,6 +164,9 @@ Select **Choose columns** to add or remove columns from the table.
 
 :::image type="content" alt-text="Screenshot showing the columns you can select for the Microsoft 365 Copilot usage report." source="../../media/copilot-usage-choose-columns.png":::
 
+>[!NOTE]
+> All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there is no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
+
 You can also export the report data into an Excel .csv file by selecting the Export link. This exports the Copilot for Microsoft 365 usage data of all users and enables you to do simple sorting, filtering, and searching for further analysis.
 
 To ensure data quality, we perform daily data validation checks for the past three days and will fill any gaps detected. You may notice differences in historical data during the process.
@@ -195,4 +200,4 @@ To make the data in the Copilot for Microsoft 365 report anonymous, you must be 
 
 ### What's the difference between the user activity table and audit log?
 
-The information captured in audit log records differs from that in [Microsoft 365 usage reports](#user-last-activity-table). It's important to note that audit logs are not designed for assessing user engagement in Microsoft 365, and they should not be used should not be used to replace or augment information in Microsoft 365 usage reports. To learn more about audit logs, see [Export, configure, and view audit log records](/purview/audit-log-export-records#step-1-export-audit-log-search-results).
+The information captured in audit log records differs from that in [Microsoft 365 usage reports](#user-last-activity-table). It's important to note that audit logs are not designed for assessing user engagement in Microsoft 365, and they should not be used to replace or augment information in Microsoft 365 usage reports. To learn more about audit logs, see [Export, configure, and view audit log records](/purview/audit-log-export-records#step-1-export-audit-log-search-results).
