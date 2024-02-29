@@ -121,4 +121,4 @@ Teams files are stored in SharePoint and Teams chat files are stored in OneDrive
 
 ### How can I determine customer data location?
 
-You can find the actual data location in _Tenant_ Admin Center. As a _Tenant_ administrator you can find the actual data location, for committed data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location.
+You can find the actual data location in _Tenant_ Admin Center. As a _Tenant_ administrator you can find the actual data location, for committed data, by navigating to **Settings > Org settings > Organization profile > Data location**.
