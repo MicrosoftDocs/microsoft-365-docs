@@ -148,8 +148,8 @@ Use the following reference table to understand how our previously publicly disc
 |Storm-1286||Group in development||
 |Storm-1295||Group in development|Greatness|
 |Storm-1364||Iran||
-|Storm-1567||Financially motivated|Akira|
-|Storm-1575||Group in development|Dadsec|
+|Storm-1567|Financially motivated|Akira||
+|Storm-1575|Group in development|Dadsec||
 |Storm-1674||Financially motivated||
 |Strawberry Tempest|Financially motivated|LAPSUS$||
 |Sunglow Blizzard||Russia||
