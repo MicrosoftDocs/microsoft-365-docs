@@ -72,7 +72,7 @@ Network protection requires Windows 10 or 11 (Pro or Enterprise), Windows Server
 
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
-| Windows 10 version 1709 or later, Windows 11, Windows Server 1803 or later | Make sure that [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) are enabled (active) |
+| Windows 10 version 1709 or later, Windows 11, Windows Server 1803 or later | Make sure that [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), [behavior monitoring](/microsoft-365/security/defender-endpoint/behavior-monitor) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) are enabled (active) |
 | Windows Server 2012 R2 and Windows Server 2016 with the unified agent | Platform Update version 4.18.2001.x.x or newer |
 
 ## Why network protection is important
