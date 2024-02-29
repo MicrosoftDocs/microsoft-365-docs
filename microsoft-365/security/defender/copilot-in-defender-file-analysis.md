@@ -63,6 +63,7 @@ You can access the file analysis capability through the following ways:
   **[INSERT SCREENSHOT OF FILE DETAILS PANE IN AN INCIDENT PAGE]**
 
 Review the results. Provide feedback about the results by navigating to the bottom of the Copilot pane and selecting the feedback icon.
+
 :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards.":::
 
 ## See also
