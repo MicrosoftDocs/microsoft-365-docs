@@ -33,6 +33,18 @@ Microsoft Defender Antivirus is available in Windows 10 and Windows 11, and in v
 
 Microsoft Defender Antivirus is a major component of your next-generation protection in Microsoft Defender for Endpoint. This protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. Microsoft Defender Antivirus is built into Windows, and it works with Microsoft Defender for Endpoint to provide protection on your device and in the cloud.
 
+## Microsoft Defender Antivirus capabilities
+
+Microsoft Defender Antivirus provides anomaly detection, a layer of protection for malware that doesn’t fit any predefined pattern. Anomaly detection monitors for process creation events or files that are downloaded from the internet. Through machine learning and cloud-delivered protection, Microsoft Defender Antivirus can stay one step ahead of attackers. Anomaly detection is on by default and can help block attacks such as [3CX Security Alert for Electron Windows App](https://www.3cx.com/blog/news/desktopapp-security-alert/). Microsoft Defender Antivirus started blocking this malware four days before the attack was registered in VirusTotal.  
+
+Modern malware requires modern solutions. Microsoft Defender Antivirus stopped using signature-based engine detections many years ago. The scale and scope of today’s ever-evolving malware landscape requires adaptive,  predictive technologies such as, machine learning, applied science, and artificial intelligence to keep you and your organizations safe.
+
+Microsoft Defender Antivirus can block almost all malware at first sight, in milliseconds.
+
+We’ve also designed our antivirus solution to work in both online and offline scenarios.  For offline scenarios, the latest dynamic intelligence from the Intelligence Security Graph is provisioned to the endpoint regularly throughout the day. When connected to the cloud, it’s fed real-time intelligence from the [Intelligent Security Graph](https://www.microsoft.com/en-us/security/blog/2018/04/17/connect-to-the-intelligent-security-graph-using-a-new-api/). 
+
+Microsoft Defender Antivirus can also stop threats based on their behaviors and process trees even when the threat has started execution. A common example of these kinds of attacks is fileless malware. Microsoft's Next-generation protection features work together to identify and block malware based on abnormal behavior. To learn more, see [Behavioral blocking and containment](behavioral-blocking-containment.md)
+
 ## Compatibility with other antivirus products
 
 If you're using a non-Microsoft antivirus/antimalware product on your device, you might be able to run Microsoft Defender Antivirus in passive mode alongside the non-Microsoft antivirus solution. It depends on the operating system used and whether your device is onboarded to Defender for Endpoint. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
