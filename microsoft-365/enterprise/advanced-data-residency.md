@@ -31,7 +31,7 @@ The following workloads are included in ADR. For more information, see:
 - [Exchange Online](m365-dr-workload-exo.md)
 - [SharePoint and OneDrive](m365-dr-workload-spo.md)
 - [Microsoft Teams](m365-dr-workload-teams.md)
-- [Copilot for Microsoft 365](m365-dr-workload-copilot.md)
+- [Microsoft Copilot for Microsoft 365](m365-dr-workload-copilot.md)
 - [Microsoft Defender for Office P1 and Exchange Online Protection](m365-dr-workload-mdo-p1.md)
 - [Office for the Web](m365-dr-workload-office-for-web.md)
 - [Viva Connections](m365-dr-workload-viva-connections.md)
