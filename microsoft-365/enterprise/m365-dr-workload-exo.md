@@ -8,12 +8,12 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/06/2024
+ms.date: 02/29/2024
 ms.reviewer: deanw, brianday
 ms.custom:
-  - it-pro
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+ - it-pro
+ - has-azure-ad-ps-ref
+ - azure-ad-ref-level-one-done
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -34,8 +34,8 @@ _For current language, please refer to the Privacy and Security Product Terms <a
 
 **Commitment:**
 
->[!NOTE]
->If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that Geo: Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments)
+> [!NOTE]
+> If Customer provisions its tenant in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, United Arab Emirates, United Kingdom, or United States, Microsoft will store the following Customer Data at rest only within that Geo: Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments)
 
 ### Advanced Data Residency add-on
 
@@ -90,8 +90,8 @@ Exchange Online synchronizes the PreferredDataLocation property from Microsoft E
 - Outlook for Mac users might experience a temporary loss of access to their Online Archive folder while you move their mailbox to a new _Geography_ location. This condition occurs when the user's the primary and archive mailboxes are in different _Geography_ locations, because cross-geo mailbox moves might complete at different times.
 - Users can't share mailbox folders across _Geography_ locations in Outlook on the web (formerly known as Outlook Web App or OWA). For example, a user in the European Union can't use Outlook on the web to open a shared folder in a mailbox located in the United States. However, Outlook on the Web users can open other mailboxes in different _Geography_ locations by using a separate browser window as described in Open another person's mailbox in a separate browser window in Outlook Web App.
 
-  > [!NOTE]
-  > Cross-geo mailbox folder sharing is supported in Outlook on Windows.
+ > [!NOTE]
+ > Cross-geo mailbox folder sharing is supported in Outlook on Windows.
 
 - Public folders are supported in Multi-Geo organizations. However, the public folders must remain in the _Primary Provisioned Geography_ location. You can't move public folders to satellite geo locations.
 - In a Multi-Geo environment, cross-geo mailbox auditing isn't supported. For example, if a user is assigned permissions to access a shared mailbox in a different _Geography_ location, mailbox actions performed by that user aren't logged in the mailbox audit log of the shared mailbox. Exchange admin audit events are also only available for the default location. For more information, see Manage mailbox auditing.
@@ -113,35 +113,35 @@ The requirements for installing and using the Exchange Online PowerShell module 
 To connect Exchange Online PowerShell to a specific _Geography_ location, the ConnectionUri parameter is different than the regular connection instructions. The rest of the commands and values are the same.
 
 Specifically, you need to add the `?email=<emailaddress>` value to end of the ConnectionUri value, where `<emailaddress>` is the email address of **any** mailbox in the target _Geography_ location. Your permissions to that mailbox or the relationship to your credentials aren't a factor; the email address simply tells Exchange Online PowerShell where to connect.
-  
+ 
 Microsoft 365 or Microsoft 365 GCC customers typically don't need to use the _ConnectionUri_ parameter to connect to Exchange Online PowerShell. But, to connect to a specific _Geography_ location, you do need to use ConnectionUri parameter so you can use `?email=<emailaddress>` in the value.
-  
+ 
 #### Connect to a _Geography_ location in Exchange Online PowerShell
 
 The following connection instructions work for accounts that are or aren't configured for multifactor authentication (MFA).
 
 1. In a Windows PowerShell window, load the EXO V2 module by running the following command:
 
-   ```powershell
-   Import-Module ExchangeOnlineManagement
-   ```
-  
+ ```powershell
+ Import-Module ExchangeOnlineManagement
+ ```
+ 
 1. In the following example, admin@contoso.onmicrosoft.com is the admin account, and the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
-  
-   ```powershell
-   Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-   ```
-  
+ 
+ ```powershell
+ Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
+ ```
+ 
 1. Enter the password for the admin@contoso.onmicrosoft.com in the prompt that appears. If the account is configured for MFA, you also need to enter the security code.
-  
+ 
 #### View the available _Geography_ locations that are configured in your Exchange Online organization
 
 To see the list of configured _Geography_ locations in Microsoft 365 Multi-Geo, run the following command in Exchange Online PowerShell:
 
-  ```powershell
+ ```powershell
 Get-OrganizationConfig | Select -ExpandProperty AllowedMailboxRegions | Format-Table
 ```
-  
+ 
 #### View the _Primary Provisioned Geography_ location for your Exchange Online organization
 
 To view your tenant's _Primary Provisioned Geography_ location, run the following command in Exchange Online PowerShell:
@@ -164,20 +164,20 @@ To see these properties for a mailbox, use the following syntax:
 Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 ```
 
-  For example, to see the _Geography_ location information for the mailbox chris@contoso.onmicrosoft.com, run the following command:
+ For example, to see the _Geography_ location information for the mailbox chris@contoso.onmicrosoft.com, run the following command:
 
-  ```powershell
+ ```powershell
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
 ```
 
-  The output of the command looks like this:
+ The output of the command looks like this:
 
-  ```powershell
-Database                    : EURPR03DG077-db007
-MailboxRegion               : EUR
+ ```powershell
+Database   : EURPR03DG077-db007
+MailboxRegion  : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
-  
+ 
  > [!NOTE]
  >If the _Geography_ location code in the database name doesn't match **MailboxRegion** value, the mailbox will be automatically be put into a relocation queue and moved to the _Geography_ location specified by the **MailboxRegion** value (Exchange Online looks for a mismatch between these property values).
 
@@ -190,7 +190,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 
 A cloud-only user is a user not synchronized to the tenant via Microsoft Entra Connect. This user was created directly in Microsoft Entra ID. Use the **Get-MgUser** and **Set-MgUser** cmdlets in the Microsoft Graph PowerShell SDK to view or specify the _Geography_ location where a cloud-only user's mailbox will be stored.
 
-First, you must connect to Microsoft Graph using the required permission scopes for the actions you will take in your Microsoft Graph PowerShell session.
+First, you must connect to Microsoft Graph using the required permission scopes for the actions you'll take in your Microsoft Graph PowerShell session.
 
 The Microsoft Graph PowerShell SDK supports two types of authentication: delegated access, and app-only access. In this guide, you'll use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call the Microsoft Graph.
 
@@ -211,7 +211,7 @@ To connect to your Microsoft 365 Organization, run the following command:
 
 ```powershell
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
-```  
+``` 
 
 The command prompts you to go to a web page to sign in with your credentials. Once you've done that, the command indicates success with a Welcome To Microsoft Graph! message. You only need to sign in once per session.
 
@@ -248,21 +248,21 @@ Update-MgUser -UserID michelle@contoso.onmicrosoft.com -PreferredDataLocation EU
 >
 > - How long it takes to relocate a mailbox to a new geo location depends on several factors:
 >
->   - The size and type of mailbox.
->   - The number of mailboxes being moved.
->   - The availability of move resources.
+> - The size and type of mailbox.
+> - The number of mailboxes being moved.
+> - The availability of move resources.
 
 #### Move an inactive mailbox to a specific _Geography_
-  
+ 
 You can't move inactive mailboxes that are preserved for compliance purposes (for example, mailboxes on Litigation Hold) by changing their **PreferredDataLocation** value. To move an inactive mailbox to a different _Geography_, do the following steps:
 
 1. Recover the inactive mailbox. For instructions, see [Recover an inactive mailbox](/microsoft-365/compliance/recover-an-inactive-mailbox).
 
 1. Prevent the Managed Folder Assistant from processing the recovered mailbox by replacing \<MailboxIdentity\> with the name, alias, account, or email address of the mailbox and running the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
-    ```powershell
-    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
-    ```
+ ```powershell
+ Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
+ ```
 
 1. Assign an **Exchange Online Plan 2** license to the recovered mailbox. This step is required to place the mailbox back on Litigation Hold. For instructions, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
@@ -272,14 +272,14 @@ You can't move inactive mailboxes that are preserved for compliance purposes (fo
 
 1. After verifying that the Litigation Hold is in place, allow the Managed Folder Assistant to process the mailbox again by replacing \<MailboxIdentity\> with the name, alias, account, or email address of the mailbox and running the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
-    ```powershell
-    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
-    ```
+ ```powershell
+ Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
+ ```
 
 1. Make the mailbox inactive again by removing the user account associated with the mailbox. For instructions, see [Delete a user from your organization](/admin/add-users/delete-a-user). This step also releases the Exchange Online Plan 2 license for other uses.
 
 **Note**: When you move an inactive mailbox to a different geo location, you might affect content search results or the ability to search the mailbox from the former geo location. For more information, see [Searching and exporting content in Multi-Geo environments](/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
-  
+ 
 #### Create new cloud mailboxes in a specific _Geography_ location
 
 To create a new mailbox in a specific _Geographic_ location, you need to do either of these steps:
@@ -288,7 +288,7 @@ To create a new mailbox in a specific _Geographic_ location, you need to do eith
 
 - Assign a license at the same time you set the **PreferredDataLocation** value.
 
-To create a new cloud-only licensed user (not Microsoft Entra Connect synchronized) in a specific _Geographic_ location, use the following syntax in Azure AD PowerShell:
+To create a new cloud-only licensed user (not Microsoft Entra Connect synchronized) in a specific _Geographic_ location, use the following syntax in Microsoft Graph PowerShell:
 
 ```powershell
 $params = @{
@@ -364,22 +364,22 @@ Or, you can use the following steps to onboard mailboxes directly in a specific 
 
 1. In Exchange Online PowerShell, store the on-premises administrator credentials used to perform a mailbox migration in a variable by running the following command:
 
-   ```powershell
-   $RC = Get-Credential
-   ```
+ ```powershell
+ $RC = Get-Credential
+ ```
 
 1. In Exchange Online PowerShell, create a new **New-MoveRequest** similar to the following example:
 
-   ```powershell
-   New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
-   ```
+ ```powershell
+ New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
+ ```
 
 1. Repeat step #4 for every mailbox you need to migrate from on-premises Exchange to the satellite geo location you're currently connected to.
 
 1. If you need to migrate other mailboxes to different satellite geo locations, repeat steps 2 through 4 for each specific location.
 
 ## Multi-Geo reporting
-  
+ 
 > [!NOTE]
 > The multi-geo reporting feature is currently in Preview, is not available in all organizations, and is subject to change.
 
@@ -395,11 +395,11 @@ Some users open a shared mail folder from another mailbox (that the user has rea
 
 | Configuration | Description |
 |:-----|:-----|
-|User has mailbox folder permission to another mailbox  <br/> |Potentially limited.  <br/> If User A and Mailbox B aren't in the same _Geography_ during the tenant move, User A can't open Mailbox B's folder in Outlook Web Access if User A only has permission to a specific folder in Mailbox B.  <br/> To add a shared folder, right-click the user name in the left navigation panel and select **Add shared folder**.  <br/> |
-|User with full mailbox permission to another mailbox  <br/> |Fully supported.  <br/> If User A has _Full Access_ permission to Mailbox B, then User A can select the shared folder in the left navigation panel in Outlook Web Access to open a window showing Mailbox B.  A user can open a shared mailbox using Outlook Web Access during the move without any adverse affect. The limitation only applies to folder-level sharing in a mailbox.
+|User has mailbox folder permission to another mailbox <br/> |Potentially limited. <br/> If User A and Mailbox B aren't in the same _Geography_ during the tenant move, User A can't open Mailbox B's folder in Outlook Web Access if User A only has permission to a specific folder in Mailbox B. <br/> To add a shared folder, right-click the user name in the left navigation panel and select **Add shared folder**. <br/> |
+|User with full mailbox permission to another mailbox <br/> |Fully supported. <br/> If User A has _Full Access_ permission to Mailbox B, then User A can select the shared folder in the left navigation panel in Outlook Web Access to open a window showing Mailbox B. A user can open a shared mailbox using Outlook Web Access during the move without any adverse effect. The limitation only applies to folder-level sharing in a mailbox.|
 
 The process of email data migration to Microsoft 365 during the Exchange Online is a common scenario and is supported. Cloud migration between datacenter geos doesn't interfere with any on-premises to cloud mailbox migrations.
 
 ### How can I determine customer data location?
 
-You can find the actual data location in Tenant Admin Center.  As a tenant administrator you can find the actual data location, for committed data,  by navigating to **Admin->Settings->Org Settings->Organization Profile->Data Location**.
+You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to **Admin->Settings->Org Settings->Organization Profile->Data Location**.
