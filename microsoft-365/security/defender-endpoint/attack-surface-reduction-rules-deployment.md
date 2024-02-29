@@ -78,7 +78,7 @@ Before you start, review [Overview of attack surface reduction](overview-attack-
 
 Attack surface reduction rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document goes into more detail on deploying attack surface reduction rules effectively to stop advanced threats like human-operated ransomware and other threats.
 
-### Attac surface reduction rules list by category
+### Attack surface reduction rules list by category
 
 The following table shows attack surface reduction rules by category:
 
