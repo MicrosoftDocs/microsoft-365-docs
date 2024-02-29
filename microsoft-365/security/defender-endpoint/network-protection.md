@@ -3,7 +3,7 @@ title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 02/02/2024
+ms.date: 02/28/2024
 audience: ITPro
 author: siosulli
 ms.author: siosulli
