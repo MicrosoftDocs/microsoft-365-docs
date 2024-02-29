@@ -116,50 +116,50 @@ Use the following reference table to understand how our previously publicly disc
 |Smoke Sandstorm|BOHRIUM|Iran||
 |Spandex Tempest|CHIMBORAZO|Financially motivated|TA505|
 |Star Blizzard|SEABORGIUM|Russia|Callisto, Reuse Team|
-|Storm-0062|DEV-0062|China|DarkShadow, Oro0lxy|
-|Storm-0133|DEV-0133|Iran|LYCEUM, HEXANE|
-|Storm-0216|DEV-0216|Financially motivated|Twisted Spider, UNC2198|
-|Storm-0257|DEV-0257|Group in development|UNC1151|
-|Storm-0324|DEV-0324|Financially motivated|TA543, Sagrid|
-|Storm-0381|DEV-0381|Financially motivated||
-|Storm-0530|DEV-0530|North Korea|H0lyGh0st|
+|Storm-0062|China|DarkShadow, Oro0lxy||
+|Storm-0133|Iran|LYCEUM, HEXANE||
+|Storm-0216|Financially motivated|Twisted Spider, UNC2198||
+|Storm-0257|Group in development|UNC1151||
+|Storm-0324|Financially motivated|TA543, Sagrid||
+|Storm-0381||Financially motivated||
+|Storm-0530|North Korea|H0lyGh0st||
 |Storm-0539||Financially motivated||
 |Storm-0558||China||
-|Storm-0569|DEV-0569|Financially motivated||
-|Storm-0587|DEV-0587|Russia|SaintBot, Saint Bear, TA471|
-|Storm-0744|DEV-0744|Financially motivated||
+|Storm-0569||Financially motivated||
+|Storm-0587|Russia|SaintBot, Saint Bear, TA471||
+|Storm-0744||Financially motivated||
 |Storm-0784||Iran||
 |Storm-0829|DEV-0829|Group in development|Nwgen Team|
 |Storm-0835||Group in development|EvilProxy|
 |Storm-0842||Iran||
 |Storm-0861||Iran||
-|Storm-0867|DEV-0867|Egypt|Caffeine|
-|Storm-0971|DEV-0971|Financially motivated|(Merged into Octo Tempest)|
-|Storm-0978|DEV-0978|Group in development|RomCom, Underground Team|
-|Storm-1044|DEV-1044|Financially motivated|Danabot|
-|Storm-1084|DEV-1084|Iran|DarkBit|
+|Storm-0867|Egypt|Caffeine||
+|Storm-0971|Financially motivated|(Merged into Octo Tempest)||
+|Storm-0978|Group in development|RomCom, Underground Team||
+|Storm-1044|Financially motivated|Danabot||
+|Storm-1084|Iran|DarkBit||
 |Storm-1099||Russia||
-|Storm-1101|DEV-1101|Group in development|NakedPages|
-|Storm-1113|DEV-1113|Financially motivated||
+|Storm-1101||Group in development|NakedPages||
+|Storm-1113||Financially motivated||
 |Storm-1133||Palestinian Authority||
 |Storm-1152||Financially motivated||
-|Storm-1167|DEV-1167|Indonesia||
+|Storm-1167||Indonesia||
 |Storm-1283||Group in development||
 |Storm-1286||Group in development||
-|Storm-1295|DEV-1295|Group in development|Greatness|
+|Storm-1295||Group in development|Greatness|
 |Storm-1364||Iran||
 |Storm-1567||Financially motivated|Akira|
 |Storm-1575||Group in development|Dadsec|
 |Storm-1674||Financially motivated||
-|Strawberry Tempest|DEV-0537|Financially motivated|LAPSUS$|
-|Sunglow Blizzard|DEV-0665|Russia||
+|Strawberry Tempest|Financially motivated|LAPSUS$||
+|Sunglow Blizzard||Russia||
 |Tomato Tempest|SPURR|Financially motivated|Vatet|
-|Vanilla Tempest|DEV-0832|Financially motivated||
-|Velvet Tempest|DEV-0504|Financially motivated||
+|Vanilla Tempest||Financially motivated||
+|Velvet Tempest||Financially motivated||
 |Violet Typhoon|ZIRCONIUM|China|APT31|
 |[Volt Typhoon](https://www.microsoft.com/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques)||China|BRONZE SILHOUETTE, VANGUARD PANDA|
 |Wine Tempest|PARINACOTA|Financially motivated|Wadhrama|
-|Wisteria Tsunami|DEV-0605|Private sector offensive actor|CyberRoot|
+|Wisteria Tsunami|Private sector offensive actor|CyberRoot||
 |Zigzag Hail|DUBNIUM|South Korea|Dark Hotel, Tapaoux|
 
 Read our announcement about the new taxonomy for more information: [https://aka.ms/threatactorsblog](https://aka.ms/threatactorsblog)
