@@ -54,13 +54,13 @@ Check out [Identify Defender for Endpoint architecture and deployment method](de
 
     :::image type="content" source="images/run-as-admin.png" alt-text="The Window Start menu pointing to Run as administrator" lightbox="images/run-as-admin.png":::
 
-4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
+4. Type the location of the script file. If you copied the file to the desktop, type: `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`
 
-5.  Press the **Enter** key or select **OK**.
+5. Press the **Enter** key or select **OK**.
 
-6.  Type "Y" and enter when prompted.
+6. Type "Y" and enter when prompted.
 
-7.  After the script completes, it will display "Press any key to continue...". Press any key to complete the steps on the device.
+7. After the script completes, it will display "Press any key to continue...". Press any key to complete the steps on the device.
 
 For information on how you can manually validate that the device is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
