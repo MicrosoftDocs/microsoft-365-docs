@@ -33,7 +33,9 @@ description: "Learn how to prepare your organization for Microsoft Copilot for M
 
 Before you can access Copilot, you must meet these requirements:
 
-You must have one of the following subscription plans to purchase Microsoft Copilot for Microsoft 365. You can purchase Copilot for Microsoft 365 licenses through the Microsoft 365 admin center on the Purchase Services page, Microsoft partners, or Microsoft account team. You can purchase as many Copilot for Microsoft 365 licenses as you have pre-requisite licenses. Pre-requisite licenses include:
+You must have one of the following subscription plans to purchase Microsoft Copilot for Microsoft 365. You can purchase Copilot for Microsoft 365 licenses through the Microsoft 365 admin center on the Purchase Services page, Microsoft partners, or Microsoft account team. You can purchase as many Copilot for Microsoft 365 licenses as you have pre-requisite licenses.
+
+Your users must have one of the following base licenses to be eligible for a Copilot for Microsoft 365 license. Pre-requisite licenses include:
 
 - Microsoft 365 E5
 - Microsoft 365 E3
@@ -49,8 +51,6 @@ You must have one of the following subscription plans to purchase Microsoft Copi
 >[!NOTE]
 > Customers with Education or Business subscriptions that do not include Teams can still purchase Copilot for Microsoft 365 licenses.
 
-Your users must be assigned one of the following base licenses to be able to get a Copilot for Microsoft 365 license assigned.
-  
 - **Microsoft 365 Apps** desktop applications such as Word, Excel, PowerPoint, Outlook, and Teams. Copilot will be available in web versions of the apps when a license is assigned.To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
 - **OneDrive Account** You need to have a OneDrive account for several features within Copilot for Microsoft 365, such as saving and sharing your files. For more information, see [Sign in or create an account for OneDrive](https://support.microsoft.com/office/video-sign-in-or-create-an-account-for-onedrive-3adf09fd-90e3-4420-8c4e-b55e2cde40d2?ui=en-us&rs=en-us&ad=us).
