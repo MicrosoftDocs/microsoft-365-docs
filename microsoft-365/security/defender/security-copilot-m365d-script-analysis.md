@@ -68,15 +68,17 @@ To begin analysis, perform the following steps:
 
    :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig4-script-analysis.png" alt-text="Screenshot highlighting the available options in the Copilot script analysis card." lightbox="../../media/copilot-in-defender/script-analyzer/fig4-script-analysis.png":::
 
-4. Review the results. You can provide feedback on the results by selecting the feedback dropdown found at the end of the script analysis card.
+4. Review the results. You can provide feedback on the results by selecting the feedback icon found at the end of the script analysis card.
 
-   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig5-script-analysis.png" alt-text="Screenshot highlighting the feedback button and options in the Copilot script analysis card." lightbox="../../media/copilot-in-defender/script-analyzer/fig5-script-analysis.png":::
+   :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards." lightbox="../../media/copilot-in-defender/copilot-defender-feedback.png":::
 
 > [!TIP]
 > You can navigate to an IP, file, or URL entity page in the analysis results by clicking on the entity.
 
 ## See also
 
+- [Analyze files](copilot-in-defender-file-analysis.md)
+- [Generate device summary](copilot-in-defender-device-summary.md)
 - [Respond to incidents using guided responses](security-copilot-m365d-guided-response.md)
 - [Generate KQL queries](advanced-hunting-security-copilot.md)
 - [Create an incident report](security-copilot-m365d-create-incident-report.md)

@@ -72,12 +72,12 @@ To use guided responses, perform the following steps:
 
    :::image type="content" source="../../media/copilot-in-defender/guided-response/fig5-guided-responses-copilot.png" alt-text="Screenshot highlighting the actions available to users for each guided response card in the Copilot pane in Microsoft Defender." lightbox="../../media/copilot-in-defender/guided-response/fig5-guided-responses-copilot.png":::
 
-4. You can provide feedback to each response card to continuously enhance future responses from Copilot. To provide feedback, select the feedback dropdown menu found on the bottom right of each card.
+4. You can provide feedback to each response card to continuously enhance future responses from Copilot. To provide feedback, select the feedback icon found on the bottom right of each card.
 
-   :::image type="content" source="../../media/copilot-in-defender/guided-response/fig6-guided-responses-copilot.png" alt-text="Screenshot highlighting the feedback options available in each guided response card in the Copilot pane in Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/guided-response/fig6-guided-responses-copilot.png":::
+   :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards." lightbox="../../media/copilot-in-defender/copilot-defender-feedback.png":::
 
 > [!NOTE]
-> Action buttons that are grayed out mean these actions are limited by your permission. [Refer to the unified role-based access (RBAC) permissions](manage-rbac.md) page for more information.
+> Grayed out action buttons mean these actions are limited by your permission. [Refer to the unified role-based access (RBAC) permissions](manage-rbac.md) page for more information.
 
 Copilot in Defender supports incident response teams by enabling analysts to gain more context about response actions with additional insights. For remediation responses, incident response teams can view additional information with options like **View similar incidents** or **View similar emails**.
 
@@ -88,6 +88,8 @@ The **View similar emails** action, which is specific to phishing incidents, tak
 ## See also
 
 - [Summarize an incident](security-copilot-m365d-incident-summary.md)
+- [Analyze files](copilot-in-defender-file-analysis.md)
+- [Run script analysis](security-copilot-m365d-script-analysis.md)
 - [Create an incident report](security-copilot-m365d-create-incident-report.md)
 - [Generate KQL queries](advanced-hunting-security-copilot.md)
 - [Get started with Microsoft Copilot for Security](/security-copilot/get-started-security-copilot)

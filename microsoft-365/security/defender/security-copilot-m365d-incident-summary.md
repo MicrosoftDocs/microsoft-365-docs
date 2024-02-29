@@ -55,19 +55,22 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 To summarize an incident, perform the following steps:
 
 1. Open an incident page. Copilot automatically creates an incident summary upon opening the page. You can stop the summary creation by selecting **Cancel** or restart creation by selecting **Regenerate**.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig1-new-sec-copilot-m365d-summarize.png" alt-text="Screenshot highlighting the automatic incident summary generation by Copilot pane in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig1-expand-sec-copilot-m365d-summarize.png":::
+  :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig1-new-sec-copilot-m365d-summarize.png" alt-text="Screenshot highlighting the automatic incident summary generation by Copilot pane in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig1-expand-sec-copilot-m365d-summarize.png":::
 2. The incident summary card loads on the Copilot pane in the incident page. Review the generated summary on the card.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-new-sec-copilot-m365d-summarize.png" alt-text="Screenshot of the incident summary card on the Copilot pane as seen in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig2-expand-sec-copilot-m365d-summarize.png":::
+  :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-new-sec-copilot-m365d-summarize.png" alt-text="Screenshot of the incident summary card on the Copilot pane as seen in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig2-expand-sec-copilot-m365d-summarize.png":::
 3. Select the three dots at the top of the incident summary card to copy or regenerate the summary, or view the summary in the Copilot for Security portal. Selecting **Open in Security Copilot** opens a new tab to the Copilot for Security standalone portal where you can input prompts and access other plugins.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig3-new-sec-copilot-m365d-summarize.png" alt-text="Screenshot highlighting the actions available on the incident summary card." lightbox="../../media/copilot-in-defender/incident-summary/fig3-new-sec-copilot-m365d-summarize.png":::
-4. Review the summary and use the information to guide your investigation and response to the incident. You can provide feedback on the summary by selecting the feedback icon on the bottom of the results.
+  :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig3-new-sec-copilot-m365d-summarize.png" alt-text="Screenshot highlighting the actions available on the incident summary card." lightbox="../../media/copilot-in-defender/incident-summary/fig3-new-sec-copilot-m365d-summarize.png":::
+4. Review the summary and use the information to guide your investigation and response to the incident. You can provide feedback on the summary by selecting the feedback icon on the bottom of the Copilot pane.
+  :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards." lightbox="../../media/copilot-in-defender/copilot-defender-feedback.png":::
 
 > [!TIP]
 > You can navigate to a file, IP, or URL page directly by clicking on the entity in the Copilot results pane.
 
 ## See also
 
-- [Analyze scripts and codes](security-copilot-m365d-script-analysis.md)
+- [Run script analysis](security-copilot-m365d-script-analysis.md)
+- [Analyze files](copilot-in-defender-file-analysis.md)
+- [Generate device summary](copilot-in-defender-device-summary.md)
 - [Use guided responses when responding to threats](security-copilot-m365d-guided-response.md)
 - [Generate KQL queries](advanced-hunting-security-copilot.md)
 - [Create incident reports](security-copilot-m365d-create-incident-report.md)

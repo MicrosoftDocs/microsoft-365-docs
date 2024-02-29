@@ -108,6 +108,8 @@ You can learn more about plugins implemented in [Manage plugins in Copilot for S
 - [Learn how to summarize incidents](security-copilot-m365d-incident-summary.md)
 - [Use guided responses when responding to incidents](security-copilot-m365d-guided-response.md)
 - [Run script analysis](security-copilot-m365d-script-analysis.md)
+- [Analyze files](copilot-in-defender-file-analysis.md)
+- [Generate device summary](copilot-in-defender-device-summary.md)
 - [Generate KQL queries](advanced-hunting-security-copilot.md)
 - [Create incident reports](security-copilot-m365d-create-incident-report.md)
 
