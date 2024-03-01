@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 OneDrive for Business activity reports"
+title: "Microsoft 365 OneDrive activity reports"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
@@ -25,9 +25,9 @@ search.appverid:
 description: "Get the OneDrive usage report for your organization and find out the activity of every OneDrive user, the number of files shared, and the storage utilization."
 ---
 
-# Microsoft 365 Reports in the admin center - OneDrive for Business activity
+# Microsoft 365 Reports in the admin center - OneDrive activity
 
-The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It lets you drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
+The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It lets you drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview article](activity-reports.md).
   
 For example, you can understand the activity of every user licensed to use OneDrive by looking at their interaction with files on OneDrive. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
 
@@ -36,7 +36,7 @@ For example, you can understand the activity of every user licensed to use OneDr
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
 2. From the dashboard homepage, select the OneDrive button in the left navigation.
   
-## Interpret the OneDrive for Business activity report
+## Interpret the OneDrive activity report
 
 You can view the activities in the OneDrive report by choosing the **Activity** tab.<br/>![Microsoft 365 reports - Microsoft OneDrive activity report.](../../media/c89df0b0-2611-4acf-9ef7-17cedf7977be.png)
 
@@ -44,7 +44,7 @@ Select **Choose columns** to add or remove columns from the report.  <br/> ![One
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
 
-The **OneDrive for Business activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
+The OneDrive activity report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
 |Metric|Definition|
 |:-----|:-----|
