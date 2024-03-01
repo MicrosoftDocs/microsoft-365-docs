@@ -7,7 +7,7 @@ f1.keywords:
   - Compromised account
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.collection: 

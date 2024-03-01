@@ -2,7 +2,7 @@
 title: How to subscribe to Microsoft Defender Experts for Hunting
 ms.reviewer:
 description: If you're new to Microsoft Defender XDR and Defender Experts for Hunting, this is how you subscribe to Defender experts notifications
-keywords: managed threat hunting service, sample DEN, defender experts notifications, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, EOD, endpoint attack notifications, Microsoft Defender Experts for hunting, managed response.
+keywords: managed threat hunting service,onboarding to Defender Experts, sample DEN, defender experts notifications, Ask Defender Experts, MTE, Microsoft Threat Experts, EOD, endpoint attack notifications, Microsoft Defender Experts for hunting, managed response.
 search.product: Windows 10
 ms.service: defender-experts
 ms.mktglfcycl: deploy
@@ -19,7 +19,7 @@ ms.collection:
   - essentials-get-started
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/03/2024
+ms.date: 02/28/2024
 ---
 
 # Start using Microsoft Defender Experts for Hunting
@@ -98,10 +98,10 @@ A sample Defender Experts Notification shows up in your **Incidents** page with 
 
 :::image type="content" source="../../media/mte/defenderexperts/sample-den-links-dexh.png" alt-text="Screenshot of Sample DEN links." lightbox="../../media/mte/defenderexperts/sample-den-links-dexh.png":::
 
-## Collaborate with Experts on Demand
+## Collaborate with experts on demand
 
 > [!NOTE]
-> Experts on Demand is included in your Defender Experts for Hunting subscription with [monthly allocations](/microsoft-365/security/defender/before-you-begin-defender-experts#eligibility-and-licensing). However, it's not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
+> Ask Defender Experts is included in your Defender Experts for Hunting subscription with [monthly allocations](/microsoft-365/security/defender/before-you-begin-defender-experts#eligibility-and-licensing). However, it's not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 Select **Ask Defender Experts** directly inside the Microsoft 365 security portal to get swift and accurate responses to all your threat hunting questions. Experts can provide insight to better understand the complex threats your organization may face. Experts on Demand can help to:
 

@@ -2,9 +2,9 @@
 title: Report spam, non-spam, phishing, suspicious emails and files to Microsoft
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.date: 11/9/2023
 audience: ITPro
 ms.topic: overview

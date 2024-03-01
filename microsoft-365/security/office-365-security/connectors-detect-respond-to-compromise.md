@@ -2,9 +2,9 @@
 title: Respond to a compromised connector in Microsoft 365
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -95,7 +95,7 @@ In [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.md) or [Ex
 
    :::image type="content" source="../../media/connector-compromise-new-message-trace.png" alt-text="New message trace flyout" lightbox="../../media/connector-compromise-new-message-trace.png":::
 
-4. In the message trace results, look for the following information:
+5. In the message trace results, look for the following information:
    - A significant number of messages were recently marked as **FilteredAsSpam**. This result clearly indicates that a compromised connector was used to send spam.
    - Whether it's reasonable for the message recipients to receive email from senders in your organization
 

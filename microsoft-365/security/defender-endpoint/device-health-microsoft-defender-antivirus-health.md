@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 localization_priority: Normal
-ms.date: 09/06/2022
+ms.date: 02/18/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -15,7 +15,7 @@ ms.collection:
 - mde-ngp
 ms.topic: conceptual
 ms.subservice: ngp
-ms.reviewer: mkaminska
+ms.reviewer: mkaminska, yongrhee
 ---
 
 # Device health, Microsoft Defender Antivirus health report
