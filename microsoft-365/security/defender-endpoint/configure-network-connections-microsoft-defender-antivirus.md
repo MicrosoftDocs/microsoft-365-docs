@@ -76,17 +76,22 @@ Use the following argument with the Microsoft Defender Antivirus command-line ut
 For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
 If you get any of these errors:
+
+In my opinion stacktraces look very readable when they are formatted using python as a language something like -
+
+```error
 Start Time: <Day_of_the_week> MM DD YYYY HH:MM:SS
 MpEnsureProcessMitigationPolicy: hr = 0x1
 ValidateMapsConnection
 ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80070006 httpcore=451)
 MpCmdRun.exe: hr = 0x80070006
-or
+```
+```error
 ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072F8F httpcore=451)
 MpCmdRun.exe: hr = 0x80072F8F
-or
+```
+```error
 ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072EFE httpcore=451)
-
 MpCmdRun.exe: hr = 0x80072EFE
 [Root cause]
 The device not having its system-wide WinHttp proxy configured.  When we set it via netsh things seem to work.
@@ -113,6 +118,8 @@ SSLOptions (dword) to 0 (hex)
 1 – disable pinning
 2 – disable revocation checks only
 3 – enable revocation checks and pinning (default)
+```
+
 ## Attempt to download a fake malware file from Microsoft
 You can download a [sample file](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-cloud-delivered-protection) that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud. 
 
