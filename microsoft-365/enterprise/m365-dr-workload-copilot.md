@@ -67,7 +67,7 @@ Required Conditions:
 **Commitment:**
 Multi-Geo capabilities in Microsoft Copilot for Microsoft 365 enable content of s with Microsoft Copilot for Microsoft 365 to be stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_ location. Microsoft Copilot for Microsoft 365 uses the Preferred Data Location (PDL) for users and groups to determine where to store data. If the PDL isn't set or is invalid, data is stored in the _Tenant's Primary Provisioned Geography_ location. The _Geography_ where the content of interactions with Microsoft Copilot for Microsoft 365 are stored is determined by the PDL of the user interacting with Microsoft Copilot for Microsoft 365. This means that the storage of content of interactions for users in different regions will be based on their respective PDL configurations.
 
-To find the current location of a user's content of interactions with Microsoft Copilot for Microsoft 365 by referencing the PDL configuration for that user. Please refer to [Multi-Geo Testing](m365-multi-geo-user-testing.md)
+To find the current location of a user's content of interactions with Microsoft Copilot for Microsoft 365 by referencing the PDL configuration for that user. Refer to [Multi-Geo Testing](m365-multi-geo-user-testing.md)
 
 **Illustrative examples**
 
@@ -83,4 +83,4 @@ Microsoft Copilot for Microsoft 365 is part of the Microsoft 365 Advanced Data R
 
 ### How can I determine customer data location?
 
-You can find the actual data location in Microsoft 365 admin center. In the coming months you will be able to find the actual data location for committed data, by navigating to **Settings > Org settings > Organization profile > Data location**.
+You can find the actual data location in Microsoft 365 admin center. In the coming months, you will be able to find the actual data location for committed data, by navigating to **Settings > Org settings > Organization profile > Data location**.
