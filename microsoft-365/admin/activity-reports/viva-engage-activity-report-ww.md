@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/26/2020
+ms.date: 02/29/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -28,13 +28,12 @@ description: "Get the Viva Engage Activity report and know more about the number
 # Microsoft 365 Reports in the admin center - Viva Engage activity report
 
 As Microsoft 365 admin, the Reports dashboard shows you data on the usage of the products within your organization. Check out [activity reports in the admin center](activity-reports.md). With the **Viva Engage Activity report**, you can understand the level of engagement of your organization with Viva Engage by looking at the number of unique users using Viva Engage to post, like or read a message and the amount of activity generated across the organization.
- 
+
 ## How do I get to the Viva Engage activity report?
 
-1. In the admin center, go to the **Reports**, and then select **Usage**. 
-2. From the dashboard homepage, click on the **View more** button on the Viva Engage card.
+1. In the admin center, go to the **Reports**, and then select **Usage**.
+2. From the dashboard homepage, select **Viva Engage** in the left navigation.
 
-  
 ## Interpret the Viva Engage activity report
 
 You can view the activities in the Viva Engage report by choosing the **Activity** tab.

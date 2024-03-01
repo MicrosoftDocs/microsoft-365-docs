@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center Project activity "
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 06/07/2022
+ms.date: 02/29/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,7 +32,7 @@ In the **Project activity report**, you can understand the activity of every use
 ## How to get to the Project activity report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
-2. From the dashboard homepage, click on the **View more** button on the Project card.
+2. From the dashboard homepage, select **Project** in the left navigation.
 
 ## Interpret the Project activity report
 
@@ -63,7 +63,6 @@ The following are definitions for each metric in the user activity table.
 
 |Item|Description|
 |:-----|:-----|
-|**Metric**|**Definition**|
 |User name|The user's principal name.|
 |Display name|The full name of the user.|
 |Last activity date|The latest date the user in that row had activity in Project, including any of the activities in the summary reports.|
