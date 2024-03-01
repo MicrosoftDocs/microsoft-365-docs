@@ -48,17 +48,16 @@ You can also export the report data into an Excel .csv file by selecting the **E
 
 The **SharePoint activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
-|Item|Description|
+|Metric|Definition|
 |:-----|:-----|
-|**Metric**|**Definition**|
-|Username  <br/> |The email address of the user who performed the activity on the SharePoint Site.  <br/> |
-|Last activity date (UTC)  <br/> |The latest date a file activity was performed or a page was visited for the selected date range. To see activity that occurred on a specific date, select the date directly in the chart.  <br/> |
-|Files viewed or edited  <br/> |The number of files that the user uploaded, downloaded, modified, or viewed.   <br/> |
-|Files synced  <br/> |The number of files that have been synced from a user's local device to the SharePoint site. <br/> |
-|Files shared internally  <br/> | The count of files that have been shared with users within the organization, or with users within groups (that might include external users).  <br/> |
-|Files shared externally  <br/> |The number of files that have been shared with users outside of the organization. <br/>|
-|Pages visited  <br/> |The visits to unique pages by the user. <br/>|
-|Deleted  <br/> | This indicates that the user's license was removed.  <br/>  **NOTE:** Activity for a deleted user will still display in the report as long as he or she was licensed at some time during the selected time period. The Deleted column helps you to note that the user may no longer be active, but contributed to the data in the report.  <br/> |
-|Deleted date  <br/> |The date on which the user's license was removed. <br/>|
-|Product assigned  <br/> |The Microsoft 365 products that are licensed to the user.|
+|Username  |The email address of the user who performed the activity on the SharePoint Site. |
+|Last activity date (UTC)  |The latest date a file activity was performed or a page was visited for the selected date range. To see activity that occurred on a specific date, select the date directly in the chart. |
+|Files viewed or edited  |The number of files that the user uploaded, downloaded, modified, or viewed.  |
+|Files synced   |The number of files that have been synced from a user's local device to the SharePoint site. |
+|Files shared internally  | The count of files that have been shared with users within the organization, or with users within groups (that might include external users). |
+|Files shared externally  |The number of files that have been shared with users outside of the organization. |
+|Pages visited  |The visits to unique pages by the user. |
+|Deleted  | This indicates that the user's license was removed.  **NOTE:** Activity for a deleted user will still display in the report as long as he or she was licensed at some time during the selected time period. The Deleted column helps you to note that the user may no longer be active, but contributed to the data in the report.  |
+|Deleted date  |The date on which the user's license was removed. |
+|Product assigned  |The Microsoft 365 products that are licensed to the user.|
 |||
