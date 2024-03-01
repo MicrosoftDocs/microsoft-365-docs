@@ -4,6 +4,7 @@ description: Troubleshoot missing events or alerts issues in Microsoft Defender 
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

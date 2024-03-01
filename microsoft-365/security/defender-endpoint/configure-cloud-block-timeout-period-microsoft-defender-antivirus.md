@@ -39,9 +39,9 @@ The default period that the file is [blocked](configure-block-at-first-sight-mic
 
 [Block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) and its prerequisites must be enabled before you can specify an extended timeout period.
 
-## Specify the extended timeout period using Microsoft Defender for Endpoint with Endpoint security policies 
+## Specify the extended timeout period using Microsoft Defender for Endpoint Security settings management
 
-To specify the cloud block timeout period with the Endpoint security policies in Defender for Endpoint:
+To specify the cloud block timeout period with Microsoft Defender for Endpoint Security settings management:
 
 1. Go to the Microsoft Defender for Endpoint portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 2. Select **Endpoints** > **Configuration management** > **Endpoint security policies**.
