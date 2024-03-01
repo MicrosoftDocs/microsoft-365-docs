@@ -75,7 +75,7 @@ Microsoft Defender Antivirus (MDAV) provides memory protection with different en
 |Emulation |Detonation-based Machine Learning|
 |Memory scanning |N/A|
 
-Another option to help prevent memory-based attacks is to use the Attack Surface Reduction (ASR) rule – **Block Office applications from injecting code into other processes**. For more information see, [Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
+Another option to help prevent memory-based attacks is to use the Attack Surface Reduction (ASR) rule – **Block Office applications from injecting code into other processes**. For more information see, [Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes).
 
 ## Frequently asked questions
 
