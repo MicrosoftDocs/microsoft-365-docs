@@ -1,6 +1,6 @@
 ---
-title: Create custom Microsoft Defender XDR reports using Microsoft Graph security API and Power BI 
-description: How to create custom Microsoft Defender XDR reports using Microsoft Graph security API and Power BI 
+title: Create custom Microsoft Defender XDR reports using Microsoft Graph security API and Power BI
+description: How to create custom Microsoft Defender XDR reports using Microsoft Graph security API and Power BI.
 keywords: reports, Microsoft Defender XDR, Microsoft Graph security API, Power BI
 ms.service: defender-xdr
 ms.sitesec: library
@@ -11,7 +11,7 @@ ms.author: dansimp
 ms.date: 01/03/2023
 manager: dansimp
 ms.topic: conceptual
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
@@ -27,25 +27,25 @@ Empowering security professionals to visualize their data enables them to quickl
 
 There are multiple ways to visualize Microsoft Defender security data:
 
-- Navigating built-in reports in the Microsoft Defender portal
-- Using Microsoft Sentinel workbooks with prebuilt templates for every Defender product (requires integration with Microsoft Sentinel)
-- Applying the render function in Advanced Hunting
+- Navigating built-in reports in the Microsoft Defender portal.
+- Using Microsoft Sentinel workbooks with prebuilt templates for every Defender product (requires integration with Microsoft Sentinel).
+- Applying the render function in Advanced Hunting.
 - Using Power BI to expand existing reporting capabilities.
 
-In this article we'll create a sample Security Operations Center (SOC) efficiency dashboard in Power BI using Microsoft Graph security API. We'll access it in user context, therefore user must have [corresponding permissions](manage-rbac.md) to be able to view alerts and incidents data.
+In this article, we create a sample Security Operations Center (SOC) efficiency dashboard in Power BI using Microsoft Graph security API. We access it in user context, therefore user must have [corresponding permissions](manage-rbac.md) to be able to view alerts and incidents data.
 
 > [!NOTE]
 > **Example below is based on our new MS Graph security API**. Find out more at: [Use the Microsoft Graph security API](/graph/api/resources/security-api-overview).
 
 ## Importing data into Power BI
 
-In this section we'll go through the steps required to get Microsoft Defender XDR data into Power BI, using Alerts data as an example.
+In this section, we go through the steps required to get Microsoft Defender XDR data into Power BI, using Alerts data as an example.
 
 1. Open Microsoft Power BI Desktop.
 2. Select **Get Data > Blank Query**.
 3. Select **Advanced Editor**.
 
-   :::image type="content" source="../../media/defender/power-bi/manage-parameters.png" alt-text="Screenshot that shows how to create a new data query in PowerBI Desktop.." lightbox="../../media/defender/power-bi/manage-parameters.png":::
+   :::image type="content" source="../../media/defender/power-bi/manage-parameters.png" alt-text="Screenshot that shows how to create a new data query in Power BI Desktop." lightbox="../../media/defender/power-bi/manage-parameters.png":::
 
 4. Paste in Query:
 
@@ -57,7 +57,7 @@ In this section we'll go through the steps required to get Microsoft Defender XD
     ```
 
 5. Select **Done**.
-6. You'll be prompted for credentials, select **Edit Credentials**:
+6. When you're prompted for credentials, select **Edit Credentials**:
 
    :::image type="content" source="../../media/defender/power-bi/edit-credentials-api.png" alt-text="Screenshot of how to edit credentials for API connection." lightbox="../../media/defender/power-bi/edit-credentials-api.png":::
 
@@ -77,9 +77,9 @@ Now the results of your query appear as a table, and you can start building visu
 
 Microsoft Graph API supports OData protocol so that users don't have to worry about pagination - or requesting the next set of data. However, filtering data is essential to improving load times in a busy environment.
 
-Microsoft Graph API supports [query parameters](/graph/filter-query-parameter). Below are few examples of filters used in the report:
+Microsoft Graph API supports [query parameters](/graph/filter-query-parameter). Here are few examples of filters used in the report:
 
-- The query below will return the list of alerts generated over the past three days. Note that using this query in environments with high volumes of data may result in hundreds of megabytes of data that could take a moment to load. By using this hardcoded approach, you'll be able to quickly see your most recent alerts over the last three days as soon as you open the report.
+- The following query returns the list of alerts generated over the past three days. Using this query in environments with high volumes of data might result in hundreds of megabytes of data that could take a moment to load. By using this hardcoded approach, you're able to quickly see your most recent alerts over the last three days as soon as you open the report.
 
   ```console
   let
@@ -101,11 +101,11 @@ Microsoft Graph API supports [query parameters](/graph/filter-query-parameter). 
       Source
   ```
 
-- When historical data is required (for example, comparing the number of incidents per month), filtering by date isn't an option (since we want to go as far back as possible). In this case we need to pull a few selected fields shown below:
+- When historical data is required (for example, comparing the number of incidents per month), filtering by date isn't an option (since we want to go as far back as possible). In this case, we need to pull a few selected fields as shown in the following example:
 
   ```console
   let
-      Source = OData.Feed("https://graph.microsoft.com/v1.0/security/alerts_v2?$filter=createdDateTime ge " & StartLookbackDate & " and createdDateTime lt " & EndLookbackDate & 
+      Source = OData.Feed("https://graph.microsoft.com/v1.0/security/alerts_v2?$filter=createdDateTime ge " & StartLookbackDate & " and createdDateTime lt " & EndLookbackDate &
   "&$select=id,title,severity,createdDateTime", null, [Implementation="2.0"])
   in
       Source
@@ -113,13 +113,13 @@ Microsoft Graph API supports [query parameters](/graph/filter-query-parameter). 
 
 ## Introducing parameters
 
-Instead of constantly querying the code to adjust the timeframe, use parameters to set a Start and End Date each time you open the report. To do this, follow the steps below:
+Instead of constantly querying the code to adjust the timeframe, use parameters to set a Start and End Date each time you open the report.
 
 1. Go to **Query Editor**.
-2. Select **Manage Parameters** \> *New Parameter**.
+2. Select **Manage Parameters** \> **New Parameter**.
 3. Set desired parameters.
 
-   In the example below, we use two different time frames, Start and End dates.
+   In the following example, we use two different time frames, Start and End dates.
 
    :::image type="content" source="../../media/defender/power-bi/manage-parameters.png" alt-text="Screenshot of how to manage Parameters in Power BI." lightbox="../../media/defender/power-bi/manage-parameters.png":::
 
@@ -134,11 +134,11 @@ Instead of constantly querying the code to adjust the timeframe, use parameters 
 
 ## Reviewing the report
 
-Once the data has been queried and the parameters are set, now we can review the report. During the first launch of the .PBIT report file you'll be prompted to provide the parameters that we specified earlier:
+Once the data has been queried and the parameters are set, now we can review the report. During the first launch of the PBIT report file, you're prompted to provide the parameters that we specified earlier:
 
 :::image type="content" source="../../media/defender/power-bi/soc-overview-dashboard.png" alt-text="Screenshot of the Power BI template parameter prompt window." lightbox="../../media/defender/power-bi/soc-overview-dashboard.png":::
 
-The dashboard offers three tabs intended to provide SOC insights. The first tab provides a summary of all recent alerts (depending on the selected timeframe). This helps analysts clearly understand the security state over their environment using alert details broken down by detection source, severity, total number of alerts and mean-time-to-resolution.
+The dashboard offers three tabs intended to provide SOC insights. The first tab provides a summary of all recent alerts (depending on the selected timeframe). This tab helps analysts clearly understand the security state over their environment using alert details broken down by detection source, severity, total number of alerts and mean-time-to-resolution.
 
 :::image type="content" source="../../media/defender/power-bi/alert-tab-powerbi.png" alt-text="Screenshot of the alerts tab of resulting Power BI report." lightbox="../../media/defender/power-bi/alert-tab-powerbi.png":::
 
