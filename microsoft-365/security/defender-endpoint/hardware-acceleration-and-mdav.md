@@ -33,14 +33,14 @@ audience: ITPro
 
 **Known limitations:**
 
-- Processors designated as servers aren't supported by Intel TDT.
+- Intel TDT doesn't support processors designated as servers.
 - Multi-level virtualization isn't currently supported.
-- Not supported on Windows Server workloads.
-- Not supported on Windows clients running on Xeon processors due to Intel Xeon processors not supporting Intel TDT functionality.
+- Windows Server workloads aren't supported.
+- Windows clients running on Xeon processors aren't supported due to Intel Xeon processors not supporting Intel TDT functionality.
 
 ## Microsoft Defender Antivirus (MDAV) and Intel Threat Detection Technology (TDT)
 
-This table shows the Intel TDT technologies Microsoft have collaborated with Intel on to provide security while also balancing performance:
+This table shows the Intel TDT technologies Microsoft collaborated with Intel on to provide security while also balancing performance:
 
 |Available since |Intel TDT technology | Intel Threat Detection Technology (TDT) available on|
 |:---|:---|:---|
@@ -48,7 +48,7 @@ This table shows the Intel TDT technologies Microsoft have collaborated with Int
 |2021|Intel TDT - Cryptojacking detector| Intel 6th Gen Core (circa 2015) or newer family of processors, running on laptops, tablets, and desktop systems.|
 |2022|Intel TDT - Ransomware detector| Intel 8th Gen Core or newer family of processors.|
 
-**Intel Threat Detection Technology (TDT) - Accelerated Memory Scanning (AMS):** Introduced extra memory scanning capabilities to detect fileless attacks that are expensive on the Central Processing Unit (CPU) and then offload them to the integrated Graphics Processor Unit (integrated GPU). Two benefits are:
+**Intel Threat Detection Technology (TDT) - Accelerated Memory Scanning (AMS):** Introduced extra memory scanning capabilities to detect fileless attacks that are expensive on the Central Processing Unit (CPU), and then offload them to the integrated Graphics Processor Unit (integrated GPU). Two benefits are:
 
 - lower CPU consumption
 - A reduction of System-on-a-chip (SoC) power consumption leading to longer battery life on laptops and tablets
@@ -57,7 +57,7 @@ This table shows the Intel TDT technologies Microsoft have collaborated with Int
 
 ### How do you enable Intel TDT AMS or Cryptojacking integration?
 
-It is enabled by default when Microsoft Defender Antivirus is running.
+Enabled by default when Microsoft Defender Antivirus is running.
 
 ### What do the detections show up as?
 
@@ -65,9 +65,9 @@ The regular Microsoft Defender Antivirus Event ID **1116**.
 
 ### What type of attacks does it help with?
 
-- We utilize the Intel TDT - Cryptojacking detector to thwart various cryptojacking malwares. The following Coinminer campaigns were successfully detected and blocked using the TDT Cryptojacking detector:[YouTube Pirated Software Videos Deliver Triple Threat: Vidar Stealer, LaPlasa Clipper, XMRig Miner](https://www.fortinet.com/blog/threat-research/youtube-pirated-software-videos-deliver-triple-threat-vidar-stealer-laplas-clipper-xmrig-miner)
+- We use the Intel TDT - Cryptojacking detector to thwart various cryptojacking mallards. The following Coinminer campaigns were successfully detected and blocked using the TDT Cryptojacking detector: [YouTube Pirated Software Videos Deliver Triple Threat: Vidar Stealer, LaPlasa Clipper, XMRig Miner](https://www.fortinet.com/blog/threat-research/youtube-pirated-software-videos-deliver-triple-threat-vidar-stealer-laplas-clipper-xmrig-miner)
 
-- We leverage the Intel TDT detector to identify instances of CryptoJacking malware abusing Windows binaries (lolbins), and then employing Defender behavioral signatures to prevent and block such activities effectively. For more information, see [Hardware-based threat defense against increasingly complex cryptojackers](https://www.microsoft.com/security/blog/2022/08/18/hardware-based-threat-defense-against-increasingly-complex-cryptojackers/).
+- We use the Intel TDT detector to identify instances of CryptoJacking malware abusing Windows binaries (lolbins), and then employ Defender behavioral signatures to prevent and block such activities effectively. For more information, see [Hardware-based threat defense against increasingly complex cryptojackers](https://www.microsoft.com/security/blog/2022/08/18/hardware-based-threat-defense-against-increasingly-complex-cryptojackers/).
 
 ## Related articles
 
