@@ -43,7 +43,7 @@ This topic describes configuration options in Windows 10 or newer and Windows Se
 
 If you have any questions about a detection that Microsoft Defender AV makes, or you discover a missed detection, you can submit a file to us at [our sample submission help site.](https://www.microsoft.com/security/portal/mmpc/help/submission-help.aspx)
 
-# Use PowerShell to enable the features
+## Use PowerShell to enable the features
 
 This guide provides the [Microsoft Defender Antivirus cmdlets](https://learn.microsoft.com/powershell/module/defender/?view=windowsserver2022-ps) that configure the features you should use to evaluate our protection.
 
@@ -65,49 +65,60 @@ Standard definition updates can take hours to prepare and deliver; our cloud-del
 
 More details are available in [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus).
 
-- Enable the Microsoft Defender Cloud for near-instant protection and increased protection:
- ```Set-MpPreference -MAPSReporting Advanced```
-- Automatically submit samples to increase group protection:
-```Set-MpPreference -SubmitSamplesConsent```
-- Always Use the cloud to block new malware within seconds
-```Set-MpPreference -DisableBlockAtFirstSeen 0```
-- Scan all downloaded files and attachments
-```Set-MpPreference -DisableIOAVProtection 0```
-- Set cloud block level to 'High'
-```Set-MpPreference -CloudBlockLevel```
-- High Set cloud block timeout to 1 minute
-```Set-MpPreference -CloudExtendedTimeout 50```
+**Enable the Microsoft Defender Cloud for near-instant protection and increased protection:**
+
+```PowerShell
+Set-MpPreference -MAPSReporting Advanced
+```
+
+**Automatically submit samples to increase group protection:**
+
+```PowerShell
+Set-MpPreference -SubmitSamplesConsent
+```
+
+**Always Use the cloud to block new malware within seconds:**
+
+```PowerShell
+Set-MpPreference -DisableBlockAtFirstSeen 0
+```
+
+**Scan all downloaded files and attachments:**
+
+```PowerShell
+Set-MpPreference -DisableIOAVProtection 0
+```
+
+**Set cloud block level to 'High':**
+
+```PowerShell
+Set-MpPreference -CloudBlockLevel
+```
+
+**High Set cloud block timeout to 1 minute:**
+
+```PowerShell
+Set-MpPreference -CloudExtendedTimeout 50
+```
 
 ## Always-on protection (real-time scanning)
 
 Microsoft Defender AV scans files as soon as they are seen by Windows, and will monitor running processes for known or suspected malicious behaviors. If the antivirus engine discovers malicious modification, it will immediately block the process or file from running.
 
 See [Configure behavioral, heuristic, and real-time protection](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/configure-protection-features-microsoft-defender-antivirus) for more details on these options.
-
-- Constantly monitor files and processes for known malware modifications
-
-```run
-Set-MpPreference -DisableRealtimeMonitoring 0
 ```
+**Constantly monitor files and processes for known malware modifications**
 
-- Constantly monitor for known malware behaviors – even in ‘clean’ files and running programs
+Set-MpPreference -DisableRealtimeMonitoring 0
 
-```run
+**Constantly monitor for known malware behaviors – even in ‘clean’ files and running programs**
 Set-MpPreference -DisableBehaviorMonitoring 0
 
-```run
--Scan scripts as soon as they are seen or run
-```
-
-```run
+**Scan scripts as soon as they are seen or run**
 Set-MpPreference -DisableScriptScanning 0
-```
 
--Scan removable drives as soon as they are inserted or mounted
-
-```run
+**Scan removable drives as soon as they are inserted or mounted**
 Set-MpPreference -DisableRemovableDriveScanning 0
-```
 
 ## Potentially Unwanted Application protection
 
