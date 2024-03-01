@@ -130,7 +130,7 @@ Some rules may block behavior you find acceptable in your organization. In these
 
 Microsoft Defender Offline Scan is a specialized tool that comes with Windows 10 or newer, and allows you to boot a machine into a dedicated environment outside of the normal operating system. It’s especially useful for potent malware, such as rootkits.
 
-See [Microsoft Defender Offline](/microsoft-defender-offline.md) for more information on how this feature works.
+See [Microsoft Defender Offline](microsoft-defender-offline.md) for more information on how this feature works.
 
 | Description | PowerShell Command |
 |---|---|
@@ -142,8 +142,8 @@ This section lists many resources that can assist you with evaluating Microsoft 
 
 - [Microsoft Defender in Windows 10 library](microsoft-defender-antivirus-windows.md)
 - [Microsoft Defender for Windows Server 2016 library](/windows-server/security/windows-defender/windows-defender-overview-windows-server)
-- [Windows 10 security library](https://learn.microsoft.com/windows/resources/)
-- [Windows 10 security overview](https://learn.microsoft.com/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10)
+- [Windows 10 security library](/windows/resources/)
+- [Windows 10 security overview](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10)
 - [Microsoft Defender Security Intelligence (Microsoft Malware Protection Center (MMPC)) website – threat research and response](https://www.microsoft.com/wdsi)
 - [Microsoft Security website](https://www.microsoft.com/security)
 - [Microsoft Security blog](https://www.microsoft.com/security/blog)
