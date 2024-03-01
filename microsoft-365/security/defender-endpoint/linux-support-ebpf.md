@@ -4,6 +4,7 @@ description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on 
 ms.service: microsoft-365-security
 ms.author: siosulli
 author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
