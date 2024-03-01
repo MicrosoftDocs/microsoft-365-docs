@@ -63,7 +63,7 @@ The Windows event log also records detection and engine events. [See the Microso
 
 Standard definition updates can take hours to prepare and deliver; our cloud-delievered protection service can deliver this protection in seconds.
 
-More details are available in [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus).
+More details are available in [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus).
 
 | Description | PowerShell Command |
 |---|---|
@@ -138,8 +138,9 @@ See [Microsoft Defender Offline](https://learn.microsoft.com/microsoft-365/secur
 ## Resources
 
 This section lists a number of resources that can assist you with evaluating Microsoft Defender Antivirus.
+
 - [Microsoft Defender in Windows 10 library](microsoft-defender-antivirus-windows.md)
-- [Microsoft Defender for Windows Server 2016 library](https://learn.microsoft.com/windows-server/security/windows-defender/windows-defender-overview-windows-server)
+- [Microsoft Defender for Windows Server 2016 library](/windows-server/security/windows-defender/windows-defender-overview-windows-server)
 - [Windows 10 security library](https://learn.microsoft.com/windows/resources/)
 - [Windows 10 security overview](https://learn.microsoft.com/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10)
 - [Microsoft Defender Security Intelligence (Microsoft Malware Protection Center (MMPC)) website – threat research and response](https://www.microsoft.com/wdsi)
