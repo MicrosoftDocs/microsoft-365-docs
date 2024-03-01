@@ -112,14 +112,14 @@ MpCmdRun.exe: hr = 0x80072EFE
 **Work-around (Alternative):**
 Not best practice since you will no longer check for revoked certs or cert pinning. 
 
-Disable CRL check only for SPYNET. Configuring this registry SSLOptions disable CRL check only for SPYNET reporting. It won’t impact other services. Go to: 
+Disable CRL check only for SPYNET. Configuring this registry SSLOptions disable CRL check only for SPYNET reporting. It won’t impact other services. 
 
-- HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet  
-- set SSLOptions (dword) to 0 (hex):
-    0 – disable pinning and revocation checks
-    1 – disable pinning
-    2 – disable revocation checks only
-    3 – enable revocation checks and pinning (default)
+Go to **HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet** > set SSLOptions (dword) to 0 (hex).
+
+- 0 – disable pinning and revocation checks
+- 1 – disable pinning
+- 2 – disable revocation checks only
+- 3 – enable revocation checks and pinning (default)
 
 ## Attempt to download a fake malware file from Microsoft
 You can download a [sample file](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-cloud-delivered-protection) that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud. 
