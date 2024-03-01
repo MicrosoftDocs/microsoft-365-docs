@@ -45,16 +45,16 @@ This table shows the Intel TDT technologies Microsoft have collaborated with Int
 
 |Available since |Intel TDT technology | Intel Threat Detection Technology (TDT) available on|
 |:---|:---|:---|
-|2018 |Intel TDT – Accelerated Memory Scanning (AMS)|Intel integrated graphic 6th Gen Core (circa 2015) or newer family of processors, running on laptops, tablets, and desktop systems.|
-|2021| Intel TDT - Cryptojacking detector| Intel 6th Gen Core (circa 2015) or newer family of processors, running on laptops, tablets and desktop systems.|
+|2018|Intel TDT – Accelerated Memory Scanning (AMS)|Intel integrated graphic 6th Gen Core (circa 2015) or newer family of processors, running on laptops, tablets, and desktop systems.|
+|2021|Intel TDT - Cryptojacking detector| Intel 6th Gen Core (circa 2015) or newer family of processors, running on laptops, tablets and desktop systems.|
 |2022|Intel TDT - Ransomware detector| Intel 8th Gen Core or newer family of processors.|
 
-**Intel Threat Detection Technology (TDT) - Accelerated Memory Scanning (AMS):** Introduced extra memory scanning capabilities to detect fileless attacks that are expensive on the Central Processing Unit (CPU) and then offload them to the integrated Graphics Processor Unit (integrated GPU). This provides two benefits</br>:
+**Intel Threat Detection Technology (TDT) - Accelerated Memory Scanning (AMS):** Introduced extra memory scanning capabilities to detect fileless attacks that are expensive on the Central Processing Unit (CPU) and then offload them to the integrated Graphics Processor Unit (integrated GPU). This provides two benefits:
 
 - lower CPU consumption
 - A reduction of System-on-a-chip (SoC) power consumption leading to longer battery life on laptops and tablets
 
-**Intel Threat Detection Technology (TDT)– Cryptojacking:** Enhanced detection by leveraging Intel’s Central Processing Unit (CPU) performance monitoring unit (PMU) to offloaded to the integrated Graphics Processor Unit (integrated GPU) to detect the malware code execution “fingerprint” of repeated mathematical operations at runtime, the signals are processed by a layer of machine learning with minimal overhead.
+**Intel Threat Detection Technology (TDT) - Cryptojacking:** Enhanced detection by leveraging Intel’s Central Processing Unit (CPU) performance monitoring unit (PMU) and offloading to the integrated Graphics Processor Unit (integrated GPU) to detect the malware code execution (fingerprint) of repeated mathematical operations at runtime. The signals are processed by a layer of machine learning with minimal overhead.
 
 ## How do you enable Intel TDT AMS or Cryptojacking integration?
 
