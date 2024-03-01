@@ -74,7 +74,7 @@ Set-MpPreference -MAPSReporting Advanced
 **Automatically submit samples to increase group protection:**
 
 ```PowerShell
-Set-MpPreference -SubmitSamplesConsent
+Set-MpPreference -SubmitSamplesConsent Always
 ```
 
 **Always Use the cloud to block new malware within seconds:**
@@ -92,7 +92,7 @@ Set-MpPreference -DisableIOAVProtection 0
 **Set cloud block level to 'High':**
 
 ```PowerShell
-Set-MpPreference -CloudBlockLevel
+Set-MpPreference -CloudBlockLevel High
 ```
 
 **High Set cloud block timeout to 1 minute:**
