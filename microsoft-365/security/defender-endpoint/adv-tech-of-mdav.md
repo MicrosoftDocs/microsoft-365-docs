@@ -85,7 +85,7 @@ Another option to help prevent memory-based attacks is to use the Attack Surface
 
 ### How does Microsoft Defender Antivirus memory protection help? 
 
-One of the MDAV memory attack protection has been documented as part of the Detecting reflective DLL loading with Windows Defender for Endpoint. 
+See [Detecting reflective DLL loading with Windows Defender for Endpoint](https://www.microsoft.com/security/blog/2017/11/13/detecting-reflective-dll-loading-with-windows-defender-atp/) to learn about one way Microsoft Defender Antivirus memory attack protection helps.
 
 ### Do you all focus your detections/preventions in one specific geographic area? 
 
