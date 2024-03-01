@@ -66,9 +66,10 @@ To review apps that would have been blocked, open Event Viewer and filter for Ev
 | 1126 | Windows Defender (Operational) | Event when a network connection is blocked |
 
 ### Troubleshooting Network Protection
+
 If network protection fails to detect, make sure that the following pre-requisites are enabled:
 
-1. Microsoft Defender Antivirus is primary (active mode)
+1. Microsoft Defender Antivirus is the primary antivirus app (active mode)
 
 1. [Behavior Monitoring is enabled](/microsoft-365/security/defender-endpoint/behavior-monitor)
 
