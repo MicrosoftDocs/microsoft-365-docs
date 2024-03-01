@@ -51,6 +51,8 @@ Check out all of our small business content on [Small business help & learning](
 You can choose from the following top-level domains for your domain.
   
 - .biz
+ 
+- .cloud
     
 - .com
     
@@ -69,8 +71,6 @@ You can choose from the following top-level domains for your domain.
 - .co.uk
     
 - org.uk
-
-- .cloud
     
 
 > [!NOTE]
