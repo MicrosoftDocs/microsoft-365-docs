@@ -38,6 +38,8 @@ You can exclude certain files, folders, processes, and process-opened files from
 
 Exclusions can be useful to avoid incorrect detections on files or software that are unique or customized to your organization. They can also be useful for mitigating performance issues caused by Defender for Endpoint on Mac.
 
+In order to narrow down what process and/or path and/or extension you need to exclude, please use the [real-time-protection-statistics](/microsoft-365/security/defender-endpoint/mac-support-perf)
+
 > [!WARNING]
 > Defining exclusions lowers the protection offered by Defender for Endpoint on Mac. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
 
@@ -65,7 +67,61 @@ Wildcard|Description|Examples|
 > [!NOTE]
 > The product attempts to resolve firmlinks when evaluating exclusions. Firmlink resolution does not work when the exclusion contains wildcards or the target file (on the `Data` volume) does not exist.
 
+## Best practices for adding antimalware exclusions for Microsoft Defender for Endpoint on macOS. 
+
+1. Write down why an exclusion was added to a central location where only SecOps and/or Security Administrator have access.
+
+   e.g. Submitter, date, app name, reason, and exclusion information.  
+   
+1. Make sure to have an expiration date* for the exclusions 
+
+   *except for apps that the ISV stated that there is no additional tweaking that could be done to prevent the false positive or higher cpu utilization from occurring.
+   
+1. Avoid migrating 3rd party antimalware exclusions since they may no longer be applicable nor applicable to Microsoft Defender for Endpoint on macOS. 
+
+1. Order of exclusions to consider top (more secure) to bottom (least secure): 
+
+   1. Indicators - Certificate - allow 
+   
+   1. Add an extended validation (EV) code signing. 
+   
+   1. Indicators - File hash - allow 
+   
+      1. If a process or daemon doesn't change often, e.g. the app doesn't have a monthly security update. 
+      
+   1. Path & Process 
+   
+   1. Process 
+   
+   1. Path 
+   
+   1. Extension
+   
 ## How to configure the list of exclusions
+
+### From the Microsoft Defender for Endpoint Security Settings management console
+
+Login to security.microsoft.com
+
+Configuration management > Endpoint security policies > Create new Policy
+
+Select Platform: macOS
+
+Select Template: Microsoft Defender Antivirus exclusions
+
+Click on "Create Policy" 
+
+Name:
+
+Description:
+
+Click on Next
+
+Expand "Antivirus engine"
+
+Select "Path" or "File extension" or "File name" and add the exclusions as needed.
+
+Click on Next
 
 ### From the management console
 
