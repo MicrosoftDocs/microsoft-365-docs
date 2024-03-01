@@ -64,11 +64,28 @@ As part of Microsoft's defense-in-depth solution, the superior performance of th
 
 These protections are further amplified through [Microsoft Defender XDR](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr), Microsoft's comprehensive, end-to-end security solution for the modern workplace. Through [signal-sharing and orchestration of remediation across Microsoft's security technologies](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Microsoft-Threat-Protection/ba-p/262783), Microsoft Defender XDR secures identities, endpoints, email and data, apps, and infrastructure. 
 
+## Memory protection and memory scanning 
+
+Microsoft Defender Antivirus (MDAV) provides memory protection with different engines: 
+
+|Client|Cloud|
+|:---|:---|
+|Behavior Monitoring | Behavior-based Machine Learning| 
+|Antimalware Scan Interface(AMSI) integration | AMSI-paired Machine Learning| 
+|Emulation |Detonation-based Machine Learning|
+|Memory scanning |N/A|
+
+An additional layer to help prevent memory-based attacks is to use the Attack Surface Reduction (ASR) rule – **Block Office applications from injecting code into other processes**. For more information see, [Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes).
+
 ## Frequently asked questions
 
 ### How many malware threats does Microsoft Defender Antivirus block per month? 
 
 [Five billion threats on devices every month](https://www.microsoft.com/en-us/security/blog/2019/05/14/executing-vision-microsoft-threat-protection/).
+
+### How does Microsoft Defender Antivirus memory protection help? 
+
+See [Detecting reflective DLL loading with Windows Defender for Endpoint](https://www.microsoft.com/security/blog/2017/11/13/detecting-reflective-dll-loading-with-windows-defender-atp/) to learn about one way Microsoft Defender Antivirus memory attack protection helps.
 
 ### Do you all focus your detections/preventions in one specific geographic area? 
 
