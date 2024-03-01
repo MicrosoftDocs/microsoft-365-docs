@@ -59,7 +59,7 @@ sections:
               
       - question: How can I validate SPF records for my domain?
         answer: |
-          It's important that you have or create **only one TXT record for SPF**. If you already have an SPF record, you should append the new Microsoft 365 values to it, rather than create a new one. After you've added or updated your SPF record for Microsoft email, you should check to make sure that the syntax is correct with one of these tools: 
+          It's important that you have or create **only one TXT record for SPF**. If you already have an SPF record, you should append the new Microsoft 365 values to it, rather than create a new one. After you have added or updated your SPF record for Microsoft email, you should check to make sure that the syntax is correct with one of these tools: 
             
           - [SPF Record Testing Tools](http://www.kitterman.com/spf/validate.html)
               
@@ -73,11 +73,11 @@ sections:
             
           Using a custom domain like "**rob\@contoso.com**" with Microsoft 365 can help build credibility and recognition for your brand. 
             
-          You can [buy a domain in Microsoft 365 and we'll set it up automatically](../get-help-with-domains/buy-a-domain-name.md), or you can buy or bring one you already own from a domain registrar.
+          You can [buy a domain in Microsoft 365 and we will set it up automatically](../get-help-with-domains/buy-a-domain-name.md), or you can buy or bring one you already own from a domain registrar.
           
       - question: Is it possible to connect a domain with Personal or Family offerings?
         answer: |
-           As a benefit of your Microsoft 365 Family or Microsoft 365 Personal subscription, you can create a personalized email address that's associated with your Outlook.com mailbox, for example, yourname@example.com. At the moment, we only support connecting domains managed by GoDaddy with Outlook.com. For more information, see [Get a personalized email address in Microsoft 365](https://support.microsoft.com/office/get-a-personalized-email-address-in-microsoft-365-75416a58-b225-4c02-8c07-8979403b427b).
+           As a benefit of your Microsoft 365 Family or Microsoft 365 Personal subscription, you can create a personalized email address that is associated with your Outlook.com mailbox, for example, yourname@example.com. At the moment, we only support connecting domains managed by GoDaddy with Outlook.com. For more information, see [Get a personalized email address in Microsoft 365](https://support.microsoft.com/office/get-a-personalized-email-address-in-microsoft-365-75416a58-b225-4c02-8c07-8979403b427b).
               
       - question: What happens if my DNS provider doesn't support certain record types?
         answer: |
@@ -160,7 +160,7 @@ sections:
           
           ::: moniker range="o365-21vianet"
           
-          Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting 21Vianet manage your DNS settings with NS records, you can't add subdomains.
+          Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting 21Vianet manage your DNS settings with NS records, you cannot add subdomains.
           
           ::: moniker-end
           
@@ -170,7 +170,7 @@ sections:
             
           When you add a subdomain, it is automatically verified based on the parent domain that is being verified.
             
-          When you add multiple domains to Microsoft 365, you can host any of the services (like email) on any of the domains you've added. *When you change your email to Microsoft 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Microsoft 365.* 
+          When you add multiple domains to Microsoft 365, you can host any of the services (like email) on any of the domains you have added. *When you change your email to Microsoft 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Microsoft 365.* 
            
           ::: moniker range="o365-worldwide"
           
@@ -208,9 +208,9 @@ sections:
               
           2. To become the admin for your school, select the **Become an admin** option in Microsoft 365. 
               
-          3. You'll be prompted to add a TXT DNS record at the DNS host website for your domain. Why? Because by signing in at the DNS host and adding a record for your domain, you prove to Microsoft 365 that you own the domain name.
+          3. You will be prompted to add a TXT DNS record at the DNS host website for your domain. Why? Because by signing in at the DNS host and adding a record for your domain, you prove to Microsoft 365 that you own the domain name.
               
-          4. After you add the record, you'll go back to the Microsoft 365 portal and confirm that you've added it, so Microsoft 365 can check.
+          4. After you add the record, you'll go back to the Microsoft 365 portal and confirm that you have added it, so Microsoft 365 can check.
               
           Have a nonprofit and want to get Microsoft 365? [Make sure your organization qualifies](https://www.microsoft.com/nonprofits/eligibility) and then sign up for the service. 
             
