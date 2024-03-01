@@ -1,6 +1,6 @@
 ---
 title: Data Residency for Microsoft Copilot for Microsoft 365
-description: Learn about data residency for Microsoft Copilot for Microsoft 365
+description: Learn about data residency for Microsoft Copilot for Microsoft 365.
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -39,9 +39,9 @@ Required Conditions:
 
 **Commitment:**
 
-_For current language, refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services"._
+_For current language, refer to the [Privacy and Security Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and view the section titled "Location of Customer Data at Rest for Core Online Services."_
 
-### Advanced Data Residency add-on
+### Advanced Data Residency (ADR) add-on
 
 Required Conditions:
 
@@ -62,17 +62,17 @@ Required Conditions:
 
 1. _Tenants_ have a valid Multi-Geo subscription that covers all users assigned to a _Satellite Geography_
 1. Customer must have an active Enterprise or CSP Partner Agreement.
-1. Total purchased Multi-Geo units must be greater than 5% of the total eligible seats in the _Tenant_.
+1. Total purchased Multi-Geo units must be greater than 5% of the total eligible licenses in the _Tenant_.
 
 **Commitment:**
-Multi-Geo capabilities in Microsoft Copilot for Microsoft 365 enable content of s with Microsoft Copilot for Microsoft 365 to be stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_ location. Microsoft Copilot for Microsoft 365 uses the Preferred Data Location (PDL) for users and groups to determine where to store data. If the PDL isn't set or is invalid, data is stored in the _Tenant's Primary Provisioned Geography_ location. The _Geography_ where the content of interactions  with Microsoft Copilot for Microsoft 365 are stored is determined by the PDL of the user interacting with Microsoft Copilot for Microsoft 365. This means that the storage of content  of interactions for users in different regions will be based on their respective PDL configurations.
+Multi-Geo capabilities in Microsoft Copilot for Microsoft 365 enable content of s with Microsoft Copilot for Microsoft 365 to be stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_ location. Microsoft Copilot for Microsoft 365 uses the Preferred Data Location (PDL) for users and groups to determine where to store data. If the PDL isn't set or is invalid, data is stored in the _Tenant's Primary Provisioned Geography_ location. The _Geography_ where the content of interactions with Microsoft Copilot for Microsoft 365 are stored is determined by the PDL of the user interacting with Microsoft Copilot for Microsoft 365. This means that the storage of content of interactions for users in different regions will be based on their respective PDL configurations.
 
-To find the current location of a user's content of interactions with Microsoft Copilot for Microsoft 365 by referencing the PDL configuration for that user.  Please refer to [Multi-Geo Testing](m365-multi-geo-user-testing.md)
+To find the current location of a user's content of interactions with Microsoft Copilot for Microsoft 365 by referencing the PDL configuration for that user. Please refer to [Multi-Geo Testing](m365-multi-geo-user-testing.md)
 
 **Illustrative examples**
 
 **Collaboration Experience**
-Two people are working together on a Microsoft Word document. User A authored the document and stored it in the OneDrive for Business personal storage site, which is located in France. User B is in Canada and asks Microsoft Copilot for Microsoft 365 to rewrite a paragraph in the document. The paragraph User B submitted as the prompt, as well as the rewrite options Microsoft Copilot for Microsoft 365 provides (the “content of interactions” in this case) are stored in Canada; the original document remains in France, as does any rewrite the user accepts into that document. 
+Two people are working together on a Microsoft Word document. User A authored the document and stored it in the OneDrive for Business personal storage site, which is located in France. User B is in Canada and asks Microsoft Copilot for Microsoft 365 to rewrite a paragraph in the document. The paragraph User B submitted as the prompt, as well as the rewrite options Microsoft Copilot for Microsoft 365 provides (the “content of interactions” in this case) are stored in Canada; the original document remains in France, as does any rewrite the user accepts into that document.
 
 **Teams Meeting Experience**
 Microsoft Teams meeting recording video location is determined by the user PDL that starts the recording, or when meetings have an automatic recording policy, the location is determined from the first person joining the meeting. When users in other regions interact with Microsoft Copilot for Microsoft 365 in Teams, those user prompts and corresponding responses are stored in the location of the user that asks the Microsoft Copilot for Microsoft 365 questions.
@@ -83,4 +83,4 @@ Microsoft Copilot for Microsoft 365 is part of the Microsoft 365 Advanced Data R
 
 ### How can I determine customer data location?
 
-You can find the actual data location in Microsoft 365 admin center. In the coming months you will be able to find the actual data location for committed data,  by navigating to **Settings > Org settings > Organization profile > Data location**.
+You can find the actual data location in Microsoft 365 admin center. In the coming months you will be able to find the actual data location for committed data, by navigating to **Settings > Org settings > Organization profile > Data location**.
