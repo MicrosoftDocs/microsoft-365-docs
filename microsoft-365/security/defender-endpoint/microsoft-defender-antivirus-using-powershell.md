@@ -85,13 +85,29 @@ Microsoft Defender AV scans files as soon as they are seen by Windows, and will 
 See [Configure behavioral, heuristic, and real-time protection](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/configure-protection-features-microsoft-defender-antivirus) for more details on these options.
 
 - Constantly monitor files and processes for known malware modifications
-```Set-MpPreference -DisableRealtimeMonitoring 0```
+
+```run
+Set-MpPreference -DisableRealtimeMonitoring 0
+```
+
 - Constantly monitor for known malware behaviors – even in ‘clean’ files and running programs
-```Set-MpPreference -DisableBehaviorMonitoring 0```
+
+```run
+Set-MpPreference -DisableBehaviorMonitoring 0
+
+```run
 -Scan scripts as soon as they are seen or run
-```Set-MpPreference -DisableScriptScanning 0```
+```
+
+```run
+Set-MpPreference -DisableScriptScanning 0
+```
+
 -Scan removable drives as soon as they are inserted or mounted
-```Set-MpPreference -DisableRemovableDriveScanning 0```
+
+```run
+Set-MpPreference -DisableRemovableDriveScanning 0
+```
 
 ## Potentially Unwanted Application protection
 
