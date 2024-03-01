@@ -48,16 +48,15 @@ You can also export the report data into an Excel .csv file by selecting the **E
 
 The **Viva Engage activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
-|Item|Description|
+|Metric|Definition|
 |:-----|:-----|
-|**Metric**|**Definition**|
-|Username  <br/> |The email address of the user. You can display the actual email address or make this field anonymous. This grid shows users who logged into Viva Engage using the Microsoft 365 account or who logged into the network using single sign-on. <br/> |
-|Display name  <br/> |The full name of the user. You can display the actual email address or make this field anonymous.  <br/> |
-|User state  <br/> |One of three values: Activated, Deleted, or Suspended. These reports show data for active, suspended, and deleted users. They do not reflect pending users, because pending users cannot post, read, or like a message.  <br/> |
-|State change date (UTC)  <br/> |The date on which the user's state was changed in Viva Engage.  <br/> |
-|Last activity date (UTC)  <br/> | The last date that the user posted, read, or liked a message.  <br/> |
-|Posted  <br/> |The number of messages the user posted during the time period you specified. <br/>|
-|Read  <br/> |The number of conversations that the user read during the time period you specified.  <br/> |
-|Liked  <br/> |The number of messages that the user liked during the time period you specified.  <br/>|
-|Product assigned  <br/> |The products that are assigned to this user.|
+|Username  |The email address of the user. You can display the actual email address or make this field anonymous. This grid shows users who logged into Viva Engage using the Microsoft 365 account or who logged into the network using single sign-on. |
+|Display name  |The full name of the user. You can display the actual email address or make this field anonymous.  |
+|User state  |One of three values: Activated, Deleted, or Suspended. These reports show data for active, suspended, and deleted users. They do not reflect pending users, because pending users cannot post, read, or like a message.  |
+|State change date (UTC)  |The date on which the user's state was changed in Viva Engage.  |
+|Last activity date (UTC)  | The last date that the user posted, read, or liked a message.  |
+|Posted   |The number of messages the user posted during the time period you specified. |
+|Read   |The number of conversations that the user read during the time period you specified.  |
+|Liked  |The number of messages that the user liked during the time period you specified. |
+|Product assigned  |The products that are assigned to this user.|
 |||
