@@ -68,25 +68,24 @@ These protections are further amplified through [Microsoft Defender XDR](https:/
 
 Microsoft Defender Antivirus (MDAV) provides memory protection with different engines: 
 
-|Windows version|Primary antivirus/antimalware solution|Microsoft Defender Antivirus state|
-|:---|:---|
 |Client|Cloud|
-|Behavior Monitoring | Behavior-based ML| 
-|AMSI integration | AMSI-paired ML 
-|Emulation |Detonation-based ML|
-|Memory scanning |
+|:---|:---|
+|Behavior Monitoring | Behavior-based Machine Learning| 
+|Antimalware Scan Interface(AMSI) integration | AMSI-paired Machine Learning| 
+|Emulation |Detonation-based Machine Learing|
+|Memory scanning |N/A|
 
 Another option to help prevent memory-based attacks is to use the Attack Surface Reduction (ASR) rule – **Block Office applications from injecting code into other processes**. For more information see, [Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
-
-Q: How does Microsoft Defender Antivirus memory protection help? 
-
-A: One of the MDAV memory attack protection has been documented as part of the Detecting reflective DLL loading with Windows Defender for Endpoint. 
 
 ## Frequently asked questions
 
 ### How many malware threats does Microsoft Defender Antivirus block per month? 
 
 [Five billion threats on devices every month](https://www.microsoft.com/en-us/security/blog/2019/05/14/executing-vision-microsoft-threat-protection/).
+
+### How does Microsoft Defender Antivirus memory protection help? 
+
+One of the MDAV memory attack protection has been documented as part of the Detecting reflective DLL loading with Windows Defender for Endpoint. 
 
 ### Do you all focus your detections/preventions in one specific geographic area? 
 
