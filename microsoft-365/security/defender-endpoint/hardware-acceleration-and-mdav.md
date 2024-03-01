@@ -56,21 +56,19 @@ This table shows the Intel TDT technologies Microsoft have collaborated with Int
 
 **Intel Threat Detection Technology (TDT) - Cryptojacking:** Enhanced detection by leveraging Intel’s Central Processing Unit (CPU) performance monitoring unit (PMU) and offloading to the integrated Graphics Processor Unit (integrated GPU) to detect the malware code execution (fingerprint) of repeated mathematical operations at runtime. The signals are processed by a layer of machine learning with minimal overhead.
 
-## How do you enable Intel TDT AMS or Cryptojacking integration?
+### How do you enable Intel TDT AMS or Cryptojacking integration?
 
 When Microsoft Defender Antivirus is running, it’s enabled by default.
 
 ### What do the detections show up as?
 
-The regular Microsoft Defender Antivirus Event ID **1116**
+The regular Microsoft Defender Antivirus Event ID **1116**.
 
 ### What type of attacks does it help with?
 
-We utilize the Intel TDT - Cryptojacking detector to thwart various cryptojacking malwares. Notably, the following Coinminer campaigns were successfully detected and blocked using the TDT Cryptojacking detector:
+- We utilize the Intel TDT - Cryptojacking detector to thwart various cryptojacking malwares. Notably, the following Coinminer campaigns were successfully detected and blocked using the TDT Cryptojacking detector:[YouTube Pirated Software Videos Deliver Triple Threat: Vidar Stealer, LaPlasa Clipper, XMRig Miner](https://www.fortinet.com/blog/threat-research/youtube-pirated-software-videos-deliver-triple-threat-vidar-stealer-laplas-clipper-xmrig-miner)
 
-- [YouTube Pirated Software Videos Deliver Triple Threat: Vidar Stealer, LaPlasa Clipper, XMRig Miner](https://www.fortinet.com/blog/threat-research/youtube-pirated-software-videos-deliver-triple-threat-vidar-stealer-laplas-clipper-xmrig-miner)
-
-Additionally, we're leveraging the Intel TDT detector to identify instances of CryptoJacking malware abusing Windows binaries (lolbins), and then employing Defender behavioral signatures to prevent and block such activities effectively. For more information, see [Hardware-based threat defense against increasingly complex cryptojackers](https://www.microsoft.com/security/blog/2022/08/18/hardware-based-threat-defense-against-increasingly-complex-cryptojackers/).
+- We leverage the Intel TDT detector to identify instances of CryptoJacking malware abusing Windows binaries (lolbins), and then employing Defender behavioral signatures to prevent and block such activities effectively. For more information, see [Hardware-based threat defense against increasingly complex cryptojackers](https://www.microsoft.com/security/blog/2022/08/18/hardware-based-threat-defense-against-increasingly-complex-cryptojackers/).
 
 ## Related articles
 
