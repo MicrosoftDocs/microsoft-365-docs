@@ -69,6 +69,8 @@ You can choose from the following top-level domains for your domain.
 - .co.uk
     
 - org.uk
+
+- .cloud
     
 
 > [!NOTE]
