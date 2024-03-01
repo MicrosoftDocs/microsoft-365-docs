@@ -39,7 +39,7 @@ You can choose to configure and evaluate each setting independently, or all at o
 
 The guide is available:
 
-- [Evaluate Microsoft Defender Antivirus using PowerShell](evaluate-defender-antivirus-using-powershell.md)
+- [Evaluate Microsoft Defender Antivirus using PowerShell](microsoft-defender-antivirus-using-powershell.md)
 - in PDF format for offline viewing: [Download the guide in PDF format](https://www.microsoft.com/download/details.aspx?id=54795).
 
 You can also download a PowerShell that will enable all the settings described in the guide automatically. You can obtain the script alongside the PDF download above, or individually from PowerShell Gallery:
