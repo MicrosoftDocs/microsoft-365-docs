@@ -1,6 +1,5 @@
 ---
 title: Hardware acceleration and Microsoft Defender Antivirus.
-description: Describe hardware acceleration with Microsoft Defender Antivirus.
 description: How Microsoft Defender Antivirus incorporates hardware acceleration and Microsoft Defender Antivirus.
 author: siosulli
 ms.author: siosulli
