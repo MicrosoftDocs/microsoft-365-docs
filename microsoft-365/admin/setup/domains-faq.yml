@@ -117,7 +117,7 @@ sections:
             
       - question: How do I set or change the default domain in Microsoft 365?
         answer: |
-          You must have at least one custom domain that add to Microsoft 365 before you can choose a default domain.
+          You must have at least one custom domain that adds to Microsoft 365 before you can choose a default domain.
           
           ::: moniker range="o365-worldwide"
           
