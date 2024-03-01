@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 02/29/2024
 ---
 
 # Configure and validate exclusions for Microsoft Defender for Endpoint on macOS
