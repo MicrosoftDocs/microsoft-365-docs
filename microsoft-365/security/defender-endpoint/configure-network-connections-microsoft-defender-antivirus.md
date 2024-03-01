@@ -115,7 +115,7 @@ Not best practice since you will no longer check for revoked certs or cert pinni
 Disable CRL check only for SPYNET. Configuring this registry SSLOptions disable CRL check only for SPYNET reporting. It won’t impact other services. Go to: 
 
 - HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet  
-- set SSLOptions (dword) to 0 (hex)
+- set SSLOptions (dword) to 0 (hex):
     0 – disable pinning and revocation checks
     1 – disable pinning
     2 – disable revocation checks only
