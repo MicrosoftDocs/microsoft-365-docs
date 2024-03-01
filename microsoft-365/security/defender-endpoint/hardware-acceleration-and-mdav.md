@@ -67,7 +67,7 @@ The regular Microsoft Defender Antivirus Event ID **1116**.
 
 - We use the Intel TDT - Cryptojacking detector to thwart various cryptojacking mallards. The following Coinminer campaigns were successfully detected and blocked using the TDT Cryptojacking detector: [YouTube Pirated Software Videos Deliver Triple Threat: Vidar Stealer, LaPlasa Clipper, XMRig Miner](https://www.fortinet.com/blog/threat-research/youtube-pirated-software-videos-deliver-triple-threat-vidar-stealer-laplas-clipper-xmrig-miner)
 
-- We use the Intel TDT detector to identify instances of CryptoJacking malware abusing Windows binaries (lolbins), and then employ Defender behavioral signatures to prevent and block such activities effectively. For more information, see [Hardware-based threat defense against increasingly complex cryptojackers](https://www.microsoft.com/security/blog/2022/08/18/hardware-based-threat-defense-against-increasingly-complex-cryptojackers/).
+- We use the Intel TDT detector to identify instances of CryptoJacking malware abusing Windows binaries (lolbins), and then employ Defender behavior monitoring to prevent and block such activities effectively. For more information, see [Hardware-based threat defense against increasingly complex cryptojackers](https://www.microsoft.com/security/blog/2022/08/18/hardware-based-threat-defense-against-increasingly-complex-cryptojackers/).
 
 ## Related articles
 
