@@ -95,11 +95,9 @@ additionalContent:
 #            - text: Copilot for Microsoft 365 - Security & Privacy
 #              url: index.yml
         # Card
-        - title: End user content about Copilot for Microsoft 365
+        - title: End user Copilot resources
           links:
-            - text: Copilot for Microsoft 365 capabilities
-              url: https://support.microsoft.com/copilot
-            - text: Copilot for Microsoft 365 lab
+            - text: Copilot Lab
               url: https://copilot.cloud.microsoft
 #            - text: Use additional data sources with Microsoft 365 Chat
 #              url: https://go.microsoft.com/fwlink/?linkid=2250210
