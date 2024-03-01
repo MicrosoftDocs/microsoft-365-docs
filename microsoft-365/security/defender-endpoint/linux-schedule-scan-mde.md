@@ -4,6 +4,7 @@ description: Learn how to schedule an automatic scanning time for Microsoft Defe
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
