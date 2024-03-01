@@ -98,6 +98,8 @@ You can sort the entries by clicking on an available column header. Select :::im
 
 To filter the entries, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**. The following filters are available in the **Filters** flyout that opens:
 
+please note that whatever filters the users use, those filters are cached. when the user visits the quarantine view the next time, those previous filters that were used by the user in last session are selected by default the next time to help facilitate thier triage operation. 
+
 - **Message ID**: The globally unique identifier of the message.
 - **Sender address**
 - **Recipient address**
