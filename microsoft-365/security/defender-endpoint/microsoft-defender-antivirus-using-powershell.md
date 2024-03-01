@@ -106,19 +106,13 @@ Set-MpPreference -CloudExtendedTimeout 50
 Microsoft Defender AV scans files as soon as they are seen by Windows, and will monitor running processes for known or suspected malicious behaviors. If the antivirus engine discovers malicious modification, it will immediately block the process or file from running.
 
 See [Configure behavioral, heuristic, and real-time protection](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/configure-protection-features-microsoft-defender-antivirus) for more details on these options.
-```
-**Constantly monitor files and processes for known malware modifications**
 
-Set-MpPreference -DisableRealtimeMonitoring 0
-
-**Constantly monitor for known malware behaviors – even in ‘clean’ files and running programs**
-Set-MpPreference -DisableBehaviorMonitoring 0
-
-**Scan scripts as soon as they are seen or run**
-Set-MpPreference -DisableScriptScanning 0
-
-**Scan removable drives as soon as they are inserted or mounted**
-Set-MpPreference -DisableRemovableDriveScanning 0
+| Activity | PowerShell Command |
+|---|---|
+|Constantly monitor files and processes for known malware modifications | Set-MpPreference -DisableRealtimeMonitoring 0 |
+|Constantly monitor for known malware behaviors – even in ‘clean’ files and running programs | Set-MpPreference -DisableBehaviorMonitoring 0 |
+|Scan scripts as soon as they are seen or run | Set-MpPreference -DisableScriptScanning 0 |
+|Scan removable drives as soon as they are inserted or mounted | Set-MpPreference -DisableRemovableDriveScanning 0 |
 
 ## Potentially Unwanted Application protection
 
