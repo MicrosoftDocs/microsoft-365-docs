@@ -99,6 +99,9 @@ See [Configure behavioral, heuristic, and real-time protection](https://learn.mi
 
 You can set Microsoft Defender Antivirus to automatically scan certain types of email files and archive files (such as .zip files) when they are seen by Windows. More information about this feature can be found under the [Manage email scans in Microsoft Defender](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus) article.
 
+
+| Description | PowerShell Command |
+|---|---|
 |Scan email files and archives|Set-MpPreference -DisableArchiveScanning 0 </br> Set-MpPreference -DisableEmailScanning 0|
 
 ## Manage product and protection updates
