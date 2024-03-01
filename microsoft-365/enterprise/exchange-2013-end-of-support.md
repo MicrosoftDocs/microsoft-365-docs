@@ -1,7 +1,7 @@
 ---
 title: "Exchange 2013 end of support roadmap"
 ms.author: serdars
-author: JoanneHendrickson
+author: MicrosoftHeidi
 manager: serdars
 ms.date: 08/10/2020
 audience: ITPro

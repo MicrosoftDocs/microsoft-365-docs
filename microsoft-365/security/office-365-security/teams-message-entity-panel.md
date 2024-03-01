@@ -104,7 +104,7 @@ Selecting a Teams message across any Microsoft Defender for Office 365 experienc
 - **Channel details**: Available for messages in channels
   - **Conversation type**
   - **Conversation name**: Contains the name of the channel.
-  - **Name and email**: Contains the name and address of the channel. 
+  - **Name and email**: Contains the name and address of the channel.
 - **URLs**:
   - **Name and type** Contains the URL from the Teams message.
   - **Threat**

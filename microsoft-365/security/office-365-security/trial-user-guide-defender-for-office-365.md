@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.collection: 
@@ -148,7 +148,7 @@ Defender for Office 365 enables you to investigate activities that put people in
 See the bigger picture with Campaign Views in Defender for Office 365, which gives you a view of the attack campaigns targeting your organization and the impact they have on your users.
 
 - [Identify campaigns](campaigns.md#what-is-a-campaign) targeting your users.
-- [Visualize the scope](campaigns.md#campaigns-page-in-the-microsoft-365-defender-portal) of the attack.
+- [Visualize the scope](campaigns.md#campaigns-page-in-the-microsoft-defender-portal) of the attack.
 - [Track user interaction](campaigns.md#campaign-details) with these messages.
 
   :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="The Campaign details in the Microsoft Defender portal." lightbox="../../media/mdo-trial-playbook-campaign-details.png":::

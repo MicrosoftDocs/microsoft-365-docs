@@ -1,12 +1,11 @@
 ---
 title: Set up Microsoft Defender for Endpoint deployment
 description: Learn how to set up the deployment for Microsoft Defender for Endpoint
-keywords: deploy, setup, licensing validation, tenant configuration, network configuration
 ms.service: defender-endpoint
 ms.author: siosulli
-author: mjcaparas
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security

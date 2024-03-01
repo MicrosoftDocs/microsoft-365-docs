@@ -65,5 +65,3 @@ If you want to achieve these steps via [Exchange Online PowerShell](/powershell/
 - View a list of priority accounts: `Get-User -IsVIP | select Identity`
 - Add user to list of priority accounts: `Set-User -VIP $true -Identity <Identity>`
 - Remove user from list of priority accounts: `Set-User -VIP $false -Identity <Identity>`
-
-

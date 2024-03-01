@@ -1,8 +1,9 @@
 ---
 title: Get started driving adoption of Topics
-ms.author: daisyfeller
+ms.author: jobadach
 author: daisyfell
-manager: pamgreen
+manager: elizapo
+ms.reviewer: daisyfeller
 ms.date: 07/13/2023 
 audience: admin
 ms.topic: article

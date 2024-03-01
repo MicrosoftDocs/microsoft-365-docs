@@ -49,7 +49,7 @@ conceptualContent:
       # Card
       - title: Protect against and recover from ransomware
         links:
-         - url: /security/compass/human-operated-ransomware
+         - url: /security/ransomware/human-operated-ransomware
            itemType: concept
            text: What is ransomware?
          - url: /compliance/assurance/assurance-malware-and-ransomware-protection

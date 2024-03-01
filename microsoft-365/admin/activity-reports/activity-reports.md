@@ -91,7 +91,7 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 
 Depending on your subscription, here are the available reports in all environments.
 
-|Report|Public|GCC|GCC-High|DoD|Office 365 operated by 21Vianet|
+|Report|Public|GCC|GCC-High|DoD|Microsoft 365 operated by 21Vianet|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |[Microsoft browser usage](browser-usage-report.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|
 |[Email activity](email-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|

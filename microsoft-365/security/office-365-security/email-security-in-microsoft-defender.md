@@ -55,7 +55,7 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [Ma
 
 ### Report a message as clean in Explorer
 
-You can use the **Report clean** option in Explorer to report a message as false positive.
+You can use the **Submit to Microsoft** option in Explorer to report a message as false positive.
 
 1. In the Microsoft Defender portal, go to **Email & collaboration** \> **Explorer**, and then verify that **Phish** is selected.
 
@@ -63,11 +63,13 @@ You can use the **Report clean** option in Explorer to report a message as false
 
 3. Click **Message actions** to expand the list of options.
 
-4. Scroll down the list of options to go to the **Start new submission** section, and then select **Report clean**. A flyout appears.
+4. Scroll down the list of options to go to the **Start new submission** section, and then select **Submit to Microsoft**. A flyout appears.
 
-   :::image type="content" source="../../media/report-clean-option-explorer-new.png" alt-text="Screenshot of the Report clean option in the Explorer." lightbox="../../media/report-clean-option-explorer-new.png":::
+   :::image type="content" source="../../media/submission-panel-explorer.png" alt-text="Screenshot of the submission flyout in Threat Explorer." lightbox="../../media/submission-panel-explorer.png":::
 
-5. Select the **Allow emails with similar attributes** checkbox. From the dropdown list, specify the number of days you want the message to be removed, add a note if needed, and then select **Submit**.
+5. Select **It appears clean** if you're unsure and you want a verdict from Microsoft. Then select **Submit**.
+
+6. Select **I've confirmed it's clean** if you're sure that the message is clean. After selecting **Next**, you can specify whether you want to create an allow entry. You can specify how many days you want the allow entry to be active, add a note if needed, and then select **Submit**.
 
 ## View phishing URL and click verdict data
 

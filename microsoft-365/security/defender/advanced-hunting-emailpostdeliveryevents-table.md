@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 01/16/2024
 ---
 
 # EmailPostDeliveryEvents
@@ -30,7 +30,6 @@ ms.date: 02/16/2021
 
 **Applies to:**
 - Microsoft Defender XDR
-
 
 The `EmailPostDeliveryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about post-delivery actions taken on email messages processed by Microsoft 365. Use this reference to construct queries that return information from this table.
 
@@ -53,11 +52,12 @@ To get more information about individual email messages, you can also use the [`
 | `ActionResult` | `string` | Result of the action |
 | `RecipientEmailAddress` | `string` | Email address of the recipient, or email address of the recipient after distribution list expansion |
 | `DeliveryLocation` | `string` | Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed, Dropped, Deleted items |
-| `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `ThreatTypes` | `string` | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
 | `DetectionMethods` | `string` | Methods used to detect malware, phishing, or other threats found in the email |
+| `ReportId` | `string` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 
 ## Supported event types
+
 This table captures events with the following `ActionType` values:
 
 - **Manual remediation** – An administrator manually took action on an email message after it was delivered to the user mailbox. This includes actions taken manually through [Threat Explorer](../office-365-security/threat-explorer-about.md) or approvals of [automated investigation and response (AIR) actions](m365d-autoir-actions.md).
@@ -65,6 +65,7 @@ This table captures events with the following `ActionType` values:
 - **Malware ZAP** – Zero-hour auto purge (ZAP) took action on an email message found containing malware after delivery.
 
 ## Related topics
+
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)

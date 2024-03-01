@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 01/16/2024
 ---
 
 # DeviceEvents
@@ -44,7 +44,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | `datetime` | Date and time when the event was recorded |
 | `DeviceId` | `string` | Unique identifier for the device in the service |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
-| `ActionType` | `string` | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
+| `ActionType` | `string` | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details. |
 | `FileName` | `string` | Name of the file that the recorded action was applied to |
 | `FolderPath` | `string` | Folder containing the file that the recorded action was applied to |
 | `SHA1` | `string` | SHA-1 of the file that the recorded action was applied to |
@@ -55,19 +55,19 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountName` | `string` | User name of the account |
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
 | `RemoteUrl` | `string` | URL or fully qualified domain name (FQDN) that was being connected to |
-| `RemoteDeviceName` | `string` | Name of the device that performed a remote operation on the affected device. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information |
+| `RemoteDeviceName` | `string` | Name of the device that performed a remote operation on the affected device. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information. |
 | `ProcessId` | `long` | Process ID (PID) of the newly created process |
 | `ProcessCommandLine` | `string` | Command line used to create the new process |
 | `ProcessCreationTime` | `datetime` | Date and time the process was created |
 | `ProcessTokenElevation` | `string` | Indicates the type of token elevation applied to the newly created process. Possible values: TokenElevationTypeLimited (restricted), TokenElevationTypeDefault (standard), and TokenElevationTypeFull (elevated) |
-| `LogonId` | `string` | Identifier for a logon session. This identifier is unique on the same device only between restarts |
+| `LogonId` | `long` | Identifier for a logon session. This identifier is unique on the same device only between restarts. |
 | `RegistryKey` | `string` | Registry key that the recorded action was applied to |
 | `RegistryValueName` | `string` | Name of the registry value that the recorded action was applied to |
 | `RegistryValueData` | `string` | Data of the registry value that the recorded action was applied to |
 | `RemoteIP` | `string` | IP address that was being connected to |
 | `RemotePort` | `int` | TCP port on the remote device that was being connected to |
-| `LocalIP` | `string` | IP address assigned to the local machine used during communication |
-| `LocalPort` | `int` | TCP port on the local machine used during communication |
+| `LocalIP` | `string` | IP address assigned to the local device used during communication |
+| `LocalPort` | `int` | TCP port on the local device used during communication |
 | `FileOriginUrl` | `string` | URL where the file was downloaded from |
 | `FileOriginIP` | `string` | IP address where the file was downloaded from |
 | `InitiatingProcessSHA1` | `string` | SHA-1 of the process (image file) that initiated the event |
@@ -93,7 +93,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessParentId` | `long` | Process ID (PID) of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentFileName` | `string` | Name or full path of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentCreationTime` | `datetime` | Date and time when the parent of the process responsible for the event was started |
-| `InitiatingProcessLogonId` | `long` | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same device only between restarts |
+| `InitiatingProcessLogonId` | `long` | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same device only between restarts. |
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `AppGuardContainerId` | `string` | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `AdditionalFields` | `string` | Additional information about the event in JSON array format |

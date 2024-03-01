@@ -19,7 +19,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 01/16/2024
 ---
 
 # AADSpnSignInEventsBeta
@@ -41,7 +41,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 ****
 
 |Column name|Data type|Description|
-|---|---|---|
+|-----------|---------|-----------|
 |`Timestamp`|`datetime`|Date and time when the record was generated|
 |`Application`|`string`|Application that performed the recorded action|
 |`ApplicationId`|`string`|Unique identifier for the application|
@@ -61,7 +61,6 @@ For information on other tables in the advanced hunting schema, see [the advance
 |`Longitude`|`string`|The east to west coordinates of the sign-in location|
 |`RequestId`|`string`|Unique identifier of the request|
 |`ReportId`|`string`|Unique identifier for the event|
-||||
 
 ## Related articles
 

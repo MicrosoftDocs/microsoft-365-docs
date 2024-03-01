@@ -4,10 +4,9 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -56,6 +55,8 @@ Watch this short video to learn more about Attack simulation training.
     - **Attack Payload Author**<sup>\*</sup>: Create attack payloads that an admin can initiate later.
 
     <sup>\*</sup> Adding users to this role in [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md) is currently unsupported.
+
+    Currently, [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) isn't supported.
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 

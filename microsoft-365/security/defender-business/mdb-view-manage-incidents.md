@@ -2,9 +2,9 @@
 title: View and manage incidents in Microsoft Defender for Business
 description: View and manage alerts, respond to threats, manage devices, and review remediation actions on detected threats in Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
 audience: Admin
 ms.topic: how-to
 ms.service: defender-business

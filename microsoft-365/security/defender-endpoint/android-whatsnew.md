@@ -1,15 +1,11 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Android
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Android.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
 ms.service: defender-endpoint
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -75,10 +71,11 @@ It includes several admin controls to offer flexibility, such as the ability to 
 > Microsoft Defender is no longer supported for versions 1.0.3011.0302 or earlier. Users are requested to upgrade to latest versions to keep their devices secure.
 
 To update, users can use the following steps:
+
 > 1. On your work profile, go to Managed Play Store.
 > 2. Tap on the profile icon on the top right corner and select "Manage apps and device".
 > 3. Locate MDE under updates available and select update.
-> If you encounter any issues, [submit in-app feedback](/security/defender-endpoint/android-support-signin#send-in-app-feedback).
+> If you encounter any issues, [submit in-app feedback](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback).
 
 ## Microsoft Defender for Endpoint is now Microsoft Defender in the Play store
 

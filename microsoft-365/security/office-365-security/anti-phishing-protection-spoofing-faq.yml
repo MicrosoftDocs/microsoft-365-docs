@@ -5,11 +5,10 @@ metadata:
     - NOCSH
   ms.author: chrisda
   author: chrisda
-  manager: dansimp
+  manager: deniseb
   ms.date: 6/20/2023
   audience: ITPro
   ms.topic: faq
-
   ms.localizationpriority: medium
   search.appverid:
     - MET150
@@ -59,11 +58,6 @@ sections:
           How can I report spam or non-spam messages back to Microsoft?
         answer: |
           See [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
-
-      - question: |
-          I'm an admin and I don't know all of sources for messages in my email domain!
-        answer: |
-          See [You don't know all sources for your email](email-authentication-about.md#you-dont-know-all-sources-for-your-email).
 
       - question: |
           What happens if I disable anti-spoofing protection for my organization?

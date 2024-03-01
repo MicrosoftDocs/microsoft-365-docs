@@ -1,24 +1,24 @@
 ---
-title:       Understanding overrides within the email entity page in Microsoft Defender for Office 365
+title: Understanding overrides within the email entity page in Microsoft Defender for Office 365
 description: Shows the different overrides in the email entity page in Microsoft Defender for Office 365 to help admins troubleshoot configurations.
-author:      MSFTBen 
-ms.author:   benharri
+author: MSFTBen
+ms.author: benharri
 manager: dansimp
-ms.service:  microsoft-365-security
-ms.topic:    how-to
+ms.service: microsoft-365-security
+ms.topic: how-to
 audience: ITPro
 ms.subservice: mdo
 ms.collection:
 - m365-guidance-templates
 - m365-security
 - tier3
-ms.date:     08/14/2023
+ms.date: 08/14/2023
 ---
 
 # Understanding overrides within the email entity page in Microsoft Defender for Office 365
 
-Within the Microsoft Defender for Office 365 *[email entity page](/microsoft-365/security/office-365-security/mdo-email-entity-page)*, there's a wealth of useful information about an email, including if applicable the **overrides** which affected that message, and potentially the location that the message was delivered or moved to post delivery.   
-  
+Within the Microsoft Defender for Office 365 *[email entity page](/microsoft-365/security/office-365-security/mdo-email-entity-page)*, there's a wealth of useful information about an email, including if applicable the **overrides** which affected that message, and potentially the location that the message was delivered or moved to post delivery.
+
 This article is all about helping you **understand the different overrides**, how they're triggered, and helpful information for diagnosing when the effect of an override was unexpected, such as an email being blocked when no threats were found.
 
 ## Overrides details table
@@ -56,6 +56,3 @@ The following table lists all overrides, a description of what that override mea
 ## Next steps
 
 You can find a similar detailed table covering all the different detection technologies at [aka.ms/emailtech](/microsoft-365/security/office-365-security/step-by-step-guides/understand-detection-technology-in-email-entity).
-
-
-

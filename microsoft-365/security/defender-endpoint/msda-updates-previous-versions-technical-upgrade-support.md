@@ -2,12 +2,12 @@
 title: Microsoft Defender Antivirus updates - Previous versions for technical upgrade support
 description: Understand the type of technical support offered for previous versions of Microsoft Defender Antivirus
 ms.service: defender-endpoint
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 12/05/2023
-manager: dansimp
+ms.date: 02/27/2024
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -27,6 +27,29 @@ search.appverid: met150
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
 
+## September-2023 (Platform: 4.18.23090.2008 | Engine: 1.1.23090.2007)
+ 
+- Security intelligence update version: **1.399.44.0**
+- Release date:  **October 3, 2023 (Engine) | October 4, 2023 (Platform)**
+- Platform: **4.18.23090.2008**
+- Engine: **1.1.23090.2007**
+- Support phase: **Technical upgrade support (only)**
+ 
+### What's new
+
+- Fixed automatic remediation during on demand scans involving archives with multiple threats
+- Improved the performance of scanning files on network locations
+- Added support for domain computer SID for device control policies
+- Improved installer of unified agent to include legacy version of Windows Server 2012 (6.3.9600.17735)
+- Fixed issue in device control when querying Microsoft Entra group membership, which resulted in increased network traffic.
+- Improved parsing of attack surface reduction exclusions in the antimalware engine
+- Improved reliability in scanning PE files
+- Improved deployments safeguards for security intelligence updates
+
+### Known issues
+
+- None
+
 ## August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
 
 - Security intelligence update version: **1.397.59.0**
@@ -42,7 +65,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Excluded IP addresses can now be configured using [Intune](/windows/client-management/mdm/defender-csp#configurationexcludedipaddresses)
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on Windows Server 2016
 - [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
-- Fixed an issue where [device control](device-control-removable-storage-protection.md) policies weren't applied correctly without a reboot following product updates
+- Fixed an issue where [device control](device-control-overview.md) policies weren't applied correctly without a reboot following product updates
 - Fixed an issue in the attack surface reduction rule, [Block Win32 API calls from Office macros](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros), configured in warn mode where excluded files were incorrectly blocked until the next device reboot
 
 ### Known issues
@@ -467,7 +490,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Fixed false positive triggering attack surface reduction detections
 - Added fix resulting in better fidelity of EDR and Advanced Hunting detection alerts
 - Defender no longer supports custom notifications on toast pop ups. Modified GPO/Intune/SCCM and docs to reflect this change.
-- Improvements to capture both information and copy of files written to removable storage. To learn more, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](device-control-removable-storage-access-control.md).
+- Improvements to capture both information and copy of files written to removable storage.
 - Improved traffic output when SmartScreen service is unreachable
 - Connectivity improvements for customers using proxies with authentication requirements
 - Fixed VDI device update bug for network FileShares
@@ -511,7 +534,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 ### What's new
 
 - Improved CPU usage efficiency of certain intensive scenarios on Exchange servers
-- Added new device control status fields under Get-MpComputerStatus in Defender PowerShell module. For more information, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
+- Added new device control status fields under Get-MpComputerStatus in Defender PowerShell module. 
 - Fixed bug in which `SharedSignatureRoot` value couldn't be removed when set with PowerShell
 - Fixed bug in which [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) failed to be enabled, even though Microsoft Defender for Endpoint indicated that tamper protection was turned on
 - Added supportability and bug fixes to performance analyzer for Microsoft Defender Antivirus tool. For more information, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).

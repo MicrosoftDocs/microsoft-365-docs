@@ -2,10 +2,10 @@
 title: Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
 description: Learn how to deploy Defender for Endpoint on Linux and address issues such as high cpu utilization
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -24,7 +24,7 @@ ms.date: 11/29/2023
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You'll get a brief summary of the deployment steps, learn about the system requirements, then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
+This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You get a brief summary of the deployment steps, learn about the system requirements, then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
 
 For information about Microsoft Defender for Endpoint capabilities, see [Advanced Microsoft Defender for Endpoint capabilities](#advanced-microsoft-defender-for-endpoint-capabilities).
 
@@ -105,7 +105,7 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 #### Step 1: Allow URLs for the Microsoft Defender for Endpoint traffic
 
 1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx
-) or the [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) for a list of services and their associated URLs that your network must be able to connect.
+) or the [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx) for a list of services and their associated URLs that your network must be able to connect.
 
 2. Under **Geography** column, ensure the following checkboxes are selected:
     - EU, or UK, or US
@@ -167,7 +167,7 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 |---|---|
 |Disk space |Minimum: 2 GB <br> NOTE: More disk space might be needed if cloud diagnostics are enabled for crash collections. |
 |RAM |1 GB<br> 4 GB is preferred|
-|CPU |If the Linux system is running only 1 vcpu, we recommend it be increased to 2 vcpu's<br> 4 cores are preferred |
+|CPU |If the Linux system is running only one vcpu, we recommend it be increased to two vcpu's<br> 4 cores are preferred |
 
 |OS version|Kernel filter driver|Comments|
 |---|---|---|
@@ -392,14 +392,14 @@ The following table describes the settings that are recommended as part of `mdat
 
 - Save the setting as `mdatp_managed.json` file.
 - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
-- Add your third-party antimalware processes and paths to the exclusion list from the prior step.
-- Verify that you've added your current exclusions from your third-party antimalware to the prior step.
+- Add your non-Microsoft antimalware processes and paths to the exclusion list from the prior step.
+- Verify that you've added your current exclusions from your non-Microsoft antimalware solution to the prior step.
 
 ### Applications that Microsoft Defender for Endpoint can impact
 
-High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins may require additional exclusions depending on the amount of activity that is being processed (which is then monitored by Defender for Endpoint). It's best to follow guidance from third party application providers for exclusions if you experience performance degradation after installing Defender for Endpoint. Also keep in mind [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+High I/O workloads such as Postgres, OracleDB, Jira, and Jenkins might require other exclusions, depending on the amount of activity that is being processed (and monitored by Defender for Endpoint). It's best to follow guidance from non-Microsoft application providers for their exclusions if you experience performance degradation after installing Defender for Endpoint. Also keep in mind [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
-You can refer to these documents for more information if you experience performance degradation:
+If you experience performance degradation, see the following resources:
 
 - [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
 - [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
@@ -440,7 +440,7 @@ Learn how to troubleshoot issues that might occur during installation in [Troubl
 
 ## 14. Check resource utilization statistics
 
-Check performance statistics and compare to pre-deployment utilization compared to post-deployment.
+Check performance statistics and compare to predeployment utilization compared to post-deployment.
 
 ## 15. Verify communication with Microsoft Defender for Endpoint backend
 
@@ -566,7 +566,7 @@ Use the following syntaxes to help identify the process that is causing CPU over
 
   :::image type="content" source="images/cpu-utilization.png" alt-text="This is CPU utilization":::
 
-The following table lists the processes that may cause a high CPU usage:
+The following table lists the processes that might cause a high CPU usage:
 
 |Process name|Component used|MDE engine used|
 |---|---|---|
@@ -587,7 +587,7 @@ Use the following table to troubleshoot high CPU utilization:
 |---|---|---|---|
 |wdavdaemon|FANotify | Antivirus & EDR|- Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md). <br/><br/> - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).<br/><br/> - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
 |wdavdaemon unprivileged|N/A|Antivirus engine| The following diagram shows the workflow and steps required in order to add Antivirus exclusions. <br/><br/> :::image type="content" source="images/unprivileged-plugins.png" alt-text="Screenshot that shows This is unprivileged sensors." lightbox="images/unprivileged-plugins.png"::: <br/><br/>**General troubleshooting guidance**<br/> - If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they're threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the unified submissions experience (for more information, see [Unified submissions experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)) or [File submissions](https://www.microsoft.com/wdsi/filesubmission). <br/><br/> - See [troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).<br/><br/> - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md). <br/><br/> - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).<br/><br/> - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
-|wdavdaemon edr| N/A |EDR engine|The following diagram shows the workflow and steps to troubleshoot wdavedaemon_edr process issues. <br/><br/> :::image type="content" source="images/wdavdaemon_edr_engine.png" alt-text="Image of troubleshooting wdavdaemon edr process." lightbox="images/wdavdaemon_edr_engine.png"::: <br/><br/>**General troubleshooting guidance**<br/>- If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they're threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the unified submissions experience (for more information, see [Unified submissions experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)) or [File submissions](https://www.microsoft.com/wdsi/filesubmission). <br/><br/> - See [troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).<br/><br/> - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md). <br/><br/> - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).<br/><br/> - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
+|wdavdaemon edr| N/A |EDR engine|The following diagram shows the workflow and steps to troubleshoot wdavedaemon_edr process issues. <br/><br/> :::image type="content" source="images/wdavdaemon_edr_engine.png" alt-text="Image of troubleshooting wdavdaemon edr process." lightbox="images/wdavdaemon_edr_engine.png"::: <br/><br/>**General troubleshooting guidance**<br/>- If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they're threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe are incorrectly classified as malware by using the unified submissions experience (for more information, see [Unified submissions experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)) or [File submissions](https://www.microsoft.com/wdsi/filesubmission). <br/><br/> - See [troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).<br/><br/> - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md). <br/><br/> - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).<br/><br/> - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
 |mdatp_audisp_plugin|Audit framework|Audit log ingestion| See [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
 
 ## 22. Uninstall your non-Microsoft solution

@@ -23,14 +23,14 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 01/08/2024
+ms.date: 01/17/2024
 ---
 
 # Simplify business processes for frontline teams
 
 You can use Teams apps, Power Apps, and Power BI to simplify business processes for your frontline teams.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+<!-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]-->
 
 > [!NOTE]
 > Additional capabilities for [financial services](/industry/financial-services), [healthcare](/industry/healthcare), [nonprofit](/industry/nonprofit), and [retail](/industry/retail) environments are available with the Microsoft industry clouds, which include capabilities from Dynamics 365 and Microsoft Azure as well as the Microsoft 365 features.
@@ -51,22 +51,22 @@ Teams includes many apps to help you and your frontline workforce manage their d
 
 ## Create custom apps for your organization's needs
 
-Add Power Apps to create low-code or no-code applications for your organization. You can build custom apps to connect your business data, so you can manage inventory or conduct store walks, for example.
+Add Power Apps to create low-code or no-code apps for your organization. You can build custom apps to connect your business data, so you can manage inventory or conduct store walks, for example.
 
 > [!TIP]
-> Examples are given for the financial services, healthcare, nonprofit, and retail industries, but you can use these apps for an organization in any sector.
+> Examples are given for the financial services, healthcare, nonprofit, and retail industries, but apply to an organization in any sector.
 
 |Industry |Example |
 |:--------|:-------|
-|Financial services |You can create an app for relationship and account managers to track calls and emails to clients. |
-|Healthcare |You can create an app to track consumables inventory in exam rooms to make sure all rooms are ready for patients. |
-|Retail | You can create an app to manage and track your inventory, or to conduct store walks where a person in charge checks all areas of a store before opening. |
-|Manufacturing |You can create an app to track machinery and equipment inspections and repair needs. |
+|Financial services |Create an app for relationship and account managers to track calls and emails to clients. |
+|Healthcare |Create an app to track consumables inventory in exam rooms to make sure all rooms are ready for patients. |
+|Retail | Create an app to manage and track your inventory, or to conduct store walks where a person in charge checks all areas of a store before opening. |
+|Manufacturing |Create an app to track machinery and equipment inspections and repair needs. |
 
-More information: [Power Apps](/microsoftteams/manage-power-platform-apps) and [Power Apps and Microsoft Teams integration](/powerapps/teams/overview).
+More information: [Power Apps and Microsoft Teams integration](/powerapps/teams/overview).
 
 ## Track key performance indicators (KPIs) with Power BI reports
 
-Share and collaborate on interactive Power BI content in Microsoft Teams channels and chats. You can add a [Power BI tab](/microsoftteams/platform/tabs/what-are-tabs) to Teams to embed interactive reports and chat in Teams about your reports, and get notified when important things happen in Power BI right in your Teams activity feed.
+Share and collaborate on interactive Power BI content in Microsoft Teams channels and chats. You can add the Power BI app to Teams to embed interactive reports and chat in Teams about your reports.
 
-More information: [Collaborate in Microsoft Teams with Power BI](/power-bi/collaborate-share/service-collaborate-microsoft-teams).
+More information: [Collaborate with Power BI in Microsoft Teams, Outlook, and Office](/power-bi/collaborate-share/service-collaborate-microsoft-teams).

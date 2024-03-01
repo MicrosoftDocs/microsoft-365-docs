@@ -1,9 +1,9 @@
 ---
 title: Run a trial of Topics
-ms.author: daisyfeller
+ms.author: jobadach
 author: daisyfell
-manager: pamgreen
-ms.reviewer: lauris; jaeccles
+manager: elizapo
+ms.reviewer: daisyfeller
 ms.date: 11/15/2021
 audience: admin
 ms.topic: article

@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 01/16/2024
 ---
 
 # IdentityQueryEvents
@@ -52,19 +52,19 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
 | `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
-| `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
-| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the endpoint |
+| `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname. |
+| `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
 | `IPAddress` | `string` | IP address assigned to the endpoint and used during related network communications |
-| `Port` | `string` | TCP port used during communication |
+| `Port` | `int` | TCP port used during communication |
 | `DestinationDeviceName` | `string` | Name of the device running the server application that processed the recorded action |
 | `DestinationIPAddress` | `string` | IP address of the device running the server application that processed the recorded action |
-| `DestinationPort` | `string` | Destination port of related network communications |
+| `DestinationPort` | `int` | Destination port of related network communications |
 | `TargetDeviceName` | `string` | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | `TargetAccountUpn` | `string` | User principal name (UPN) of the account that the recorded action was applied to |
 | `TargetAccountDisplayName` | `string` | Display name of the account that the recorded action was applied to |
 | `Location` | `string` | City, country/region, or other geographic location associated with the event |
-| `ReportId` | `long` | Unique identifier for the event |
-| `AdditionalFields` | `string` | Additional information about the entity or event |
+| `ReportId` | `string` | Unique identifier for the event |
+| `AdditionalFields` | `dynamic` | Additional information about the entity or event |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

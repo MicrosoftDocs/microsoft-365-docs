@@ -38,7 +38,7 @@ This article describes proactive detection of new or ongoing human-operated rans
 - Microsoft 365 Business Premium
 - Microsoft Defender for Business
 
-For information about preventing ransomware attacks, see [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware-phase3).
+For information about preventing ransomware attacks, see [Quickly deploy ransomware preventions - Phase 3: Make it hard to get in](/security/ransomware/protect-against-ransomware-phase3).
 
 ## The importance of proactive detection
 
@@ -289,7 +289,7 @@ Preparing your SecOps team for proactive ransomware detection requires:
 
 Consider these steps to get your SecOps team and organization ready for focused ransomware attack prevention:
 
-1. Configure your IT and cloud infrastructure for ransomware prevention with the [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware-phase3) guidance. The phases and tasks in this guidance can be done in parallel with the following steps.
+1. Configure your IT and cloud infrastructure for ransomware prevention with the [Quickly deploy ransomware preventions - Phase 3: Make it hard to get in](/security/ransomware/protect-against-ransomware-phase3) guidance. The phases and tasks in this guidance can be done in parallel with the following steps.
 2. Get the appropriate licenses for the Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, the app governance add-on, Defender for IoT, and Microsoft Entra ID Protection services.
 3. Assemble a catalog of advanced hunting queries tuned for known ransomware attack methods or attack phases.
 4. Create the set of custom detection rules for specific advanced hunting queries that create alerts for known ransomware attack methods, including their schedule, alert naming, and automated actions.

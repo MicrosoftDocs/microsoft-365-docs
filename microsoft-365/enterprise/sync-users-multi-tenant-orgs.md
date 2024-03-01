@@ -2,8 +2,8 @@
 title: Synchronize users in multitenant organizations in Microsoft 365 (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
-ms.date: 08/17/2023
+manager: pamgreen
+ms.date: 02/02/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -31,7 +31,7 @@ There are two ways to set up user synchronization:
 
 Both methods use cross-tenant synchronization in Microsoft Entra ID.
 
-If you want to synchronize the same users with all the other tenants in a multitenant organization, we recommend sharing users in the Microsoft 365 admin center. This will create the necessary configurations in Microsoft Entra ID for you.
+If you want to synchronize the same users with all the other tenants in a multitenant organization, we recommend sharing users in the Microsoft 365 admin center. This creates the necessary configurations in Microsoft Entra ID for you.
 
 If you want to synchronize different users to different tenants, then you must configure cross-tenant synchronization directly in Microsoft Entra ID.
 
@@ -63,6 +63,19 @@ When you set up user synchronization with another tenant in a multitenant organi
 |mailNickname||
 
 You can change the properties that are synchronized after the synchronization has been configured. For more information, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure#step-9-review-attribute-mappings).
+
+#### Profile card experience
+
+The [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) is a feature that allows users to view information about another user, such as email, phone number, and office location. It's available in most Microsoft 365 apps like Teams, Outlook, SharePoint and Viva Engage. Users in multitenant organizations can see information about users in other tenants that are part of the multitenant organization. What users can see depends on what data is being synchronized between the tenants. (Note that some properties [require additional configuration](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#attributes) to be displayed.)
+
+The [new Teams desktop client](/microsoftteams/new-teams-desktop-admin) fetches some data directly from the other tenants in the multitenant organization to create a richer experience. In a multitenant organization, when a user looks at the profile card for a user in another tenant in Teams, the name, contact information, and job information is available in 1:1 chats and shared channels without the need for property synchronization to be configured. (These properties are retrieved by Microsoft Entra cross-tenant access and Teams external access.) To see these properties elsewhere in Teams, such as channels, group chats, and chats with guest accounts, you need to include them as part of user synchronization.
+
+In a multitenant organization, the profile picture is always available and is retrieved from the user's home tenant.
+
+For the most consistent profile card experience, keep in mind the following:
+
+- Don't change property values as they're synced, or users will see different values in different tenants.
+- [LinkedIn account connections](/entra/identity/users/linkedin-integration) configurations may vary across tenants.
 
 ## Users synchronized to your tenant from other tenants
 

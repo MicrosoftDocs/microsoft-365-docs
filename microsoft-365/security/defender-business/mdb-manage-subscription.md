@@ -2,9 +2,9 @@
 title: Change your endpoint security subscription
 description: Learn about your options for managing your Defender for Business or Defender for Endpoint subscription settings. Choose between Defender for Endpoint or Defender for Business.
 search.appverid: MET150  
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
 audience: ITPro
 ms.topic: overview
 ms.date: 01/03/2024

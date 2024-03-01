@@ -71,7 +71,7 @@ Selecting any tenant from the self-service password reset details table opens th
 
 ## Enable SSPR for a tenant
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Self-service password reset**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Self-service password reset**.
 
 2. On the **Self-service password reset** page, select a tenant from the list to open the details pane.
 
@@ -81,7 +81,7 @@ Selecting any tenant from the self-service password reset details table opens th
 
 ## Notify users to register for SSPR
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Self-service password reset**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Self-service password reset**.
 
 2. On the **Self-service password reset** page, select a tenant from the list to open the details pane.
 

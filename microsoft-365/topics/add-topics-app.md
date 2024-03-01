@@ -1,10 +1,10 @@
 ---
 ms.date: 04/20/2023
 title: Add the Topics app in the Teams Admin Center
-ms.author: daisyfeller
+ms.author: mgrewal
 author: daisyfell
-manager: pamgreen
-ms.reviewer: mgrewal
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:

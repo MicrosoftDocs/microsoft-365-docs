@@ -233,7 +233,7 @@ For incidents with a remediation status of **Pending approval**, you can approve
    - Select the Approve pending action option to initiate a pending action.
    - Select the Reject pending action option to prevent a pending action from being taken.
 
-:::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft Defender portal" lightbox="../../media/defender//m365-defender-approve-reject-action.png":::
+:::image type="content" source="../../media/defender/m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft Defender portal." lightbox="../../media/defender/m365-defender-approve-reject-action.png":::
 
 ## Next steps
 
