@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot issues for Microsoft Defender for Endpoint on Linux RHEL6
-ms.reviewer: 
 description: Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux
 search.appverid: met150
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
