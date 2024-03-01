@@ -3,7 +3,7 @@ title: "Add a domain to a client tenancy with Windows PowerShell for DAP partner
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2023
+ms.date: 03/01/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -60,28 +60,35 @@ You also need the following information:
 
 This command creates the domain in Microsoft Entra ID but does not associate it with the publicly registered domain. That comes when you prove that you own the publicly registered domain to Microsoft 365 for enterprises.
 
+>[!NOTE]
+> The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
+
+First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
+
+Assigning and removing licenses for a user requires the **Domain.ReadWrite.All** permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
+
 ```powershell
-New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
+Connect-MgGraph -Scopes "Domain.ReadWrite.All"
 ```
 
-> [!NOTE]
-> PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+Run the following command to create a new domain:
+
+```powershell
+New-MgDomain -Id <customer TenantId> -DomainNameReferences <FQDN of new domain>
+```
 
 ### Get the data for the DNS TXT verification record
 
  Microsoft 365 will generate the specific data that you need to place into the DNS TXT verification record. To get the data, run this command.
 
 ```powershell
-Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+(Get-MgDomainVerificationDnsRecord -DomainId <domain ID, i.e. contoso.com> | Where-Object {$_.RecordType -eq "Txt"}).AdditionalProperties.text
 ```
 
 This will give you output like:
 
- `Label: domainname.com`
-
- `Text: MS=ms########`
-
- `Ttl: 3600`
+ `MS=ms########`
 
 > [!NOTE]
 > You will need this text to create the TXT record in the publicly registered DNS zone. Be sure to copy and save it.
@@ -109,21 +116,22 @@ This will give you output like:
 In this last step, you validate to Microsoft 365 that you own the publically registered domain. After this step, Microsoft 365 will begin accepting traffic routed to the new domain name. To complete the domain creation and registration process, run this command.
 
 ```powershell
-Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
+Confirm-MgDomain -DomainId <FQDN of new domain> -InputObject @{TenantId=<customer TenantId>}
 ```
 
 This command won't return any output, so to confirm that this worked, run this command.
 
 ```powershell
-Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
+Get-MgDomain -DomainId <FQDN of new domain>
 ```
 
 This will return something like this
 
 ```console
-Name                   Status      Authentication
---------------------   ---------   --------------
-FQDN of new domain     Verified    Managed
+Id                            AuthenticationType AvailabilityStatus IsAdminManaged IsDefault IsInitial IsRoot IsVerified Manufact 
+                                                                                                                         urer     
+--                            ------------------ ------------------ -------------- --------- --------- ------ ---------- -------- 
+contoso.com                   Managed                               True           True      True      True   True
 ```
 
 ## See also
