@@ -38,7 +38,7 @@ You can exclude certain files, folders, processes, and process-opened files from
 
 Exclusions can be useful to avoid incorrect detections on files or software that are unique or customized to your organization. They can also be useful for mitigating performance issues caused by Defender for Endpoint on Mac.
 
-In order to narrow down what process and/or path and/or extension you need to exclude, please use the [real-time-protection-statistics](/microsoft-365/security/defender-endpoint/mac-support-perf)
+In order to narrow down to what process and/or path and/or extension you need to exclude, please use the [real-time-protection-statistics](/microsoft-365/security/defender-endpoint/mac-support-perf)
 
 > [!WARNING]
 > Defining exclusions lowers the protection offered by Defender for Endpoint on Mac. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
