@@ -91,6 +91,7 @@ MpCmdRun.exe: hr = 0x80072F8F
 ```error
 ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072EFE httpcore=451)
 MpCmdRun.exe: hr = 0x80072EFE
+```
 [Root cause]
 The device not having its system-wide WinHttp proxy configured.  When we set it via netsh things seem to work.
 If you don’t set the system-wide WinHttp proxy then the OS is not aware of the proxy, which means the OS can’t fetch the CRL (the OS does this, not MDE), which means that TLS connections to URLs like [cp.wd.microsoft.com](http://cp.wd.microsoft.com/) will not succeed. At least not fully. We would see successful (response 200) connections to the endpoints but our MAPS connections would still fail.
