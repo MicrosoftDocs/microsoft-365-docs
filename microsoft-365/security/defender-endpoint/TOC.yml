@@ -757,8 +757,10 @@
         href: uefi-scanning-in-defender-for-endpoint.md
       - name: Run Microsoft Defender Antivirus in a sandbox
         href: sandbox-mdav.md
-      - name: "Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus  "
+      - name: Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus
         href: elam-on-mdav.md
+      - name: Hardware acceleration and Microsoft Defender Antivirus
+        href:  hardware-acceleration-and-mdav.md
         
     - name: Address false positives/negatives in Microsoft Defender for Endpoint
       href: defender-endpoint-false-positives-negatives.md
