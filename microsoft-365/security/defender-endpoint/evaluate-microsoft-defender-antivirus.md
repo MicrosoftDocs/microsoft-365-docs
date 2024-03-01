@@ -30,15 +30,17 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 **Platforms**
+
 - Windows
 
 Use this guide to determine how well Microsoft Defender Antivirus protects you from viruses, malware, and potentially unwanted applications. It explains the important next-generation protection features of Microsoft Defender Antivirus available for both small and large enterprises, and how they increase malware detection and protection across your network.
 
 You can choose to configure and evaluate each setting independently, or all at once. We have grouped similar settings based upon typical evaluation scenarios, and include instructions for using PowerShell to enable the settings.
 
-The guide is available in PDF format for offline viewing:
+The guide is available:
 
-- [Download the guide in PDF format](https://www.microsoft.com/download/details.aspx?id=54795)
+- [Evaluate Microsoft Defender Antivirus using PowerShell](evaluate-defender-antivirus-using-powershell.md)
+- in PDF format for offline viewing: [Download the guide in PDF format](https://www.microsoft.com/download/details.aspx?id=54795).
 
 You can also download a PowerShell that will enable all the settings described in the guide automatically. You can obtain the script alongside the PDF download above, or individually from PowerShell Gallery:
 
@@ -51,6 +53,7 @@ You can also download a PowerShell that will enable all the settings described i
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
+
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -63,4 +66,5 @@ You can also download a PowerShell that will enable all the settings described i
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Deploy Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
