@@ -143,7 +143,7 @@ Use the following commands:
 cron - Manage cron.d and crontab entries
 ```
 
-See <https://docs.ansible.com/ansible/latest/modules/cron_module.html> for more information.
+See <https://docs.ansible.com/ansible/latest> for more information.
 
 ### To set crontabs in Chef
 
