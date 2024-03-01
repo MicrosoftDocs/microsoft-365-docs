@@ -77,8 +77,6 @@ For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun
 
 If you get any of these errors:
 
-In my opinion stacktraces look very readable when they are formatted using python as a language something like -
-
 ```error
 Start Time: <Day_of_the_week> MM DD YYYY HH:MM:SS
 MpEnsureProcessMitigationPolicy: hr = 0x1
