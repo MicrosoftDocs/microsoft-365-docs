@@ -43,9 +43,9 @@ When troubleshooting performance issues for Microsoft Defender for Endpoint on m
 
 |Daemon name|Component|Troubleshooting guide|
 | -------- | -------- |-------- |
-|wdavdaemon| Core (privileged)|Please open a Microsoft support case.|
+|wdavdaemon| Core (privileged)|Please open a [Microsoft support case](/microsoft-365/security/defender-endpoint/contact-support).|
 |wdavdaemon_unpriviliged| Antimalware (AV, EPP)|Please review [Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-support-perf).|
-|wdavdaemon_enterprise| Endpoint Detection and Response (EDR)|Please open a Microsoft support case.|
+|wdavdaemon_enterprise| Endpoint Detection and Response (EDR)|Please open a [Microsoft support case](/microsoft-365/security/defender-endpoint/contact-support).|
 
-Additionally, please gather a [MDE Client Analyzer](/microsoft-365/security/defender-endpoint/run-analyzer-macos-linux) of when the issue occurs.
+Additionally, please gather a [MDE Client Analyzer](/microsoft-365/security/defender-endpoint/run-analyzer-macos-linux) of while the issue is occurring.
 
