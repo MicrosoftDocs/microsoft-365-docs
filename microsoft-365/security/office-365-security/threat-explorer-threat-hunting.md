@@ -147,26 +147,68 @@ The Email entity page pulls together everything you need to know about the messa
 
 ### Email remediation
 
-After you determine that an email message is a threat, the next step is remediating the threat. You remediate the threat in Threat Explorer or Real-time detections using :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**.
+After you determine that an email message is a threat, the next step is remediating the threat. You remediate the threat in Threat Explorer or Real-time detections using **Message actions** or :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**.
 
-**Take action** is available in the **All email**, **Malware**, or **Phish** views in Threat Explorer or Real-time detections in the **Email** tab (view) of the details area below the chart:
+These actions are available in the **All email**, **Malware**, or **Phish** views in Threat Explorer or Real-time detections in the **Email** tab (view) of the details area below the chart:
 
-- Select one or more entries in the table by selecting the check box next to the first column. :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** is available directly in the tab.
+- Select one or more entries in the table by selecting the check box next to the first column. **Message actions** is available directly in the tab.
 
-  :::image type="content" source="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected.png" alt-text="The Email tab of the All email view in Threat Explorer showing a selected message and Take action available." lightbox="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected.png":::
+  :::image type="content" source="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected-message-actions.png" alt-text="The Email tab of the All email view in Threat Explorer showing a selected message and the available actions in Message actions." lightbox="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected-message-actions.png":::
 
 - Click on the **Subject** value of an entry in the table. The details flyout that opens contains :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** at the top of the flyout.
 
   :::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png" alt-text="The actions available in the details tab after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png":::
 
-Selecting **Take action** opens the **Take action** wizard in a flyout:
+#### Remediate using Message actions
+
+The available actions after you select a messages and then select **Message actions** for Threat Explorer and Real-time detections are described in the following tables:
+
+- Available actions in the **All email**, **Malware** and **Phish** views in Threat Explorer:
+
+  |Action|
+  |---|
+  |**Move & delete**|
+  |Move to junk folder|
+  |Move to deleted items|
+  |Soft delete|
+  |Hard delete|
+  |Move to inbox|
+  |**Track & notify**|
+  |Trigger investigation|
+  |Investigate Sender|
+  |Investigate Recipient|
+  |Add to remediation|
+  |Contact recipients|
+  |**Start new submission**|
+  |Submit to Microsoft|
+
+- Available actions in the **Malware** and **Phish** views in Real-time detections:
+
+  |Action|
+  |---|
+  |**Start new submission**|
+  |Report clean|
+  |Report phishing|
+  |Report malware|
+  |Report spam|
+
+#### Remediate using Take action
+
+After you click on the **Subject** value of an entry in the table, selecting :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** at the top of the flyout opens the **Take action** wizard in a new flyout.
 
 1. On the **Choose response actions** page, configure the following options:
    - **Show all response actions**: By default, only actions that apply to the selected entity (message or file) are available. To show all response actions, slide the toggle to :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**.  <!--- Not available in MDOP1 tenant--->
 
    - **Email message actions** section: Select one or more of the available options:
 
-     - **Move to mailbox folder** <!--- Security Administrator is not enough--->
+     - **Move to mailbox folder**: Select one of the available values that appear: <!--- Security Administrator is not enough--->
+       - **Junk**: Move the message to the Junk Email folder.
+       - **Inbox**: Move the message to the Inbox
+       - **Deleted items**
+       - **Soft deleted items**
+       - **Hard deleted items**
+
+       The available actions depend on the status of the message. For example, if the 
 
      - **Submit to Microsoft for review**: Select one of the available values that appear:
        - **I've confirmed it's clean**: Select this value if you're sure that the message is clean. The following options appear:

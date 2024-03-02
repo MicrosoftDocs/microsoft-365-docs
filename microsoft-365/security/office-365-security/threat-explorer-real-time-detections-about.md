@@ -344,7 +344,9 @@ The **Email** view shows a details table. You can sort the entries by clicking o
 > - Remove columns from the view.
 > - Zoom out in your web browser.
 
-When you select one or more entries from the list by selecting the check box next to the first column, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
+When you select one or more entries from the list by selecting the check box next to the first column, **Message actions** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
+
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected-message-actions.png" alt-text="The Email tab of the All email view in Threat Explorer showing a selected message and the available actions in Message actions." lightbox="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected-message-actions.png":::
 
 In the **Subject** value for the entry, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open in new window** action is available. This action opens the message in the [Email entity page](mdo-email-entity-page.md).
 
