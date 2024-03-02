@@ -32,7 +32,7 @@ ms.subservice: ngp
 > Before starting, please make sure that other security products are not currently running on the device. Multiple security products may conflict and impact the host performance.
 
 > [!TIP]
-> If running a third-party security product, please make sure that the Microsoft Defender for Endpoint on macOS processes and path are excluded from the 3rd party security product.  And vice-versa.
+> If running other third-party security product, please make sure that the Microsoft Defender for Endpoint on macOS processes and paths are excluded from the 3rd party security product.  And vice-versa.
 This topic provides some general steps that can be used to narrow down performance issues related to Microsoft Defender for Endpoint on macOS.
 
 Depending on the applications that you're running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender for Endpoint on macOS. 
@@ -41,10 +41,11 @@ In particular, applications or system processes that access many resources over 
 
 When troubleshooting performance issues for Microsoft Defender for Endpoint on macOS, you should take a look at the **Activity Monitor** and see which of the three (3) processes is leading the high cpu utilization
 
-|Daemon|MDE on macOS engine|Troubleshooting guide|
+|Daemon name|Component|Troubleshooting guide|
 | -------- | -------- |-------- |
-|wdavdaemon| Core (privileged)| Please open a Microsoft support case   |
-|wdavdaemon_unpriviliged| Antimalware (AV, EPP)| Cell 4   |
-|wdavdaemon_enterprise| Endpoint Detection and Response (EDR)| Please open a Microsoft support case  |
+|wdavdaemon| Core (privileged)|Please open a Microsoft support case.|
+|wdavdaemon_unpriviliged| Antimalware (AV, EPP)|Please review [Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-support-perf).|
+|wdavdaemon_enterprise| Endpoint Detection and Response (EDR)|Please open a Microsoft support case.|
 
-Test
+Additionally, please gather a [MDE Client Analyzer](/microsoft-365/security/defender-endpoint/run-analyzer-macos-linux) of when the issue occurs.
+
