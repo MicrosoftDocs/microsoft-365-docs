@@ -1,15 +1,12 @@
 ---
 title: How to schedule scans with Microsoft Defender for Endpoint (Linux)
 description: Learn how to schedule an automatic scanning time for Microsoft Defender for Endpoint (Linux) to better protect your organization's assets.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint (linux)
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -31,9 +28,9 @@ ms.date: 10/22/2021
 
 To run a scan for Linux, see [Supported Commands](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
-Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.
+For Linux (and Unix), you can use a tool called **crontab** (similar to Task Scheduler in Windows) to run scheduled tasks.
 
-## Pre-requisite
+## Prerequisite
 
 > [!NOTE]
 > To get a list of all the time zones, run the following command:
@@ -112,7 +109,7 @@ sudo grep mdatp /var/log/cron
 sudo nano mdatp_cron_job.log
 ```
 
-## For those who use Ansible, Chef, Puppet, or SaltStack
+## If you're using Ansible, Chef, Puppet, or SaltStack
 
 Use the following commands:
 
@@ -122,7 +119,7 @@ Use the following commands:
 cron - Manage cron.d and crontab entries
 ```
 
-See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.
+For more information, see [Ansible documentation](https://docs.ansible.com/ansible/latest).
 
 ### To set crontabs in Chef
 
@@ -130,7 +127,7 @@ See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://d
 cron resource
 ```
 
-See <https://docs.chef.io/resources/cron/> for more information.
+For more information, see [Chef documentation](https://docs.chef.io/resources/cron).
 
 ### To set cron jobs in Puppet
 
@@ -142,7 +139,7 @@ See <https://puppet.com/docs/puppet/5.5/types/cron.html> for more information.
 
 **Automating with Puppet: Cron jobs and scheduled tasks**
 
-See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) for more information.
+For more information, see [Puppet documentation about jobs and scheduled tasks](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/).
 
 ### To manage cron jobs in SaltStack
 
@@ -158,7 +155,7 @@ mdatp scan quick > /tmp/mdatp_scan_log.log:
     - special: '@hourly'
 ```
 
-See <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cron.html> for more information.
+For more information, see the [Salt.States.Cron documentation](https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cron.html).
 
 ## Additional information
 

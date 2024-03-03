@@ -1,15 +1,11 @@
 ---
 title: Microsoft Defender XDR time zone settings
 description: Use the info contained here to configure the Microsoft Defender XDR time zone settings and view license information.
-keywords: settings, Microsoft Defender, cybersecurity threat intelligence, Microsoft Defender for Endpoint, time zone, utc, local time, license
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

@@ -3,8 +3,8 @@ title: Allow or block URLs using the Tenant Allow/Block List
 f1.keywords:
   - NOCSH
 ms.author: chrisda
-author: dansimp
-manager: dansimp
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium

@@ -66,6 +66,8 @@
           items: 
             - name: Microsoft 365 endpoints
               href: microsoft-365-endpoints.md
+            - name: Unified cloud.microsoft domain for Microsoft 365 apps
+              href: cloud-microsoft-domain.md
             - name: Managing Office 365 endpoints
               href: managing-office-365-endpoints.md
             - name: Worldwide endpoints
@@ -304,6 +306,8 @@
               href: m365-dr-workload-spo.md
             - name: Microsoft Teams
               href: m365-dr-workload-teams.md
+            - name: Microsoft Copilot for Microsoft 365
+              href: m365-dr-workload-copilot.md
             - name: Microsoft Defender for Office P1
               href: m365-dr-workload-mdo-p1.md
             - name: Office for the Web

@@ -1,15 +1,11 @@
 ---
 title: List Investigations API
-description: Use this API to create calls related to get Investigations collection
-keywords: apis, graph api, supported apis, Investigations collection
+description: Use this API to create calls related to get Investigations collection.
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -43,7 +39,7 @@ Retrieves a collection of [Investigations](investigation.md).
 
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
-The OData's `$filter` query is supported on: `startTime`, `id`, `state`, `machineId` and `triggeringAlertId` properties.
+The OData's `$filter` query is supported on: `startTime`, `id`, `state`, `machineId`, and `triggeringAlertId` properties.
 <br>```$stop``` with max value of 10,000 
 <br>```$skip```
 
@@ -52,23 +48,23 @@ See examples at [OData queries with Microsoft Defender for Endpoint](exposed-api
 ## Limitations
 
 1. Maximum page size is 10,000.
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+2. Rate limitations for this API are 100 calls per minute and 1,500 calls per hour.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md).
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|Alert.Read.All|'Read all alerts'
-Application|Alert.ReadWrite.All|'Read and write all alerts'
-Delegated (work or school account)|Alert.Read|'Read alerts'
-Delegated (work or school account)|Alert.ReadWrite|'Read and write alerts'
+|Permission type|Permission|Permission display name|
+|:---|:---|:---|
+|Application|Alert.Read.All|`Read all alerts` |
+|Application|Alert.ReadWrite.All|`Read and write all alerts` |
+|Delegated (work or school account)|Alert.Read|`Read alerts` |
+|Delegated (work or school account)|Alert.ReadWrite|`Read and write alerts` |
 
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](../user-roles.md) for more information)
+> - The user needs to have at least the following role permission: `View Data`. For more information, see [Create and manage roles](../user-roles.md) for more information.
 
 ## HTTP request
 
@@ -78,9 +74,9 @@ GET https://api.securitycenter.microsoft.com/api/investigations
 
 ## Request headers
 
-Name|Type|Description
-:---|:---|:---
-Authorization|String|Bearer {token}. **Required**.
+|Name|Type|Description|
+|:---|:---|:---|
+|Authorization|String|Bearer {token}. **Required**.|
 
 ## Request body
 
@@ -94,7 +90,7 @@ If successful, this method returns 200, Ok response code with a collection of [I
 
 ### Request example
 
-Here is an example of a request to get all investigations:
+Here's an example of a request to get all investigations:
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/investigations
@@ -102,7 +98,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations
 
 ### Response example
 
-Here is an example of the response:
+Here's an example of the response:
 
 ```json
 {

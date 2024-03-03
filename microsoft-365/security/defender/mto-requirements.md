@@ -1,6 +1,6 @@
 ---
-title: Set up multi-tenant management in Microsoft Defender XDR
-description: Learn what steps you need to take to get started with multi-tenant management in Microsoft Defender XDR
+title: Set up multitenant management in Microsoft Defender XDR
+description: Learn what steps you need to take to get started with multitenant management in Microsoft Defender XDR.
 ms.service: defender-xdr
 ms.author: siosulli
 author: siosulli
@@ -21,9 +21,10 @@ ms.date: 09/01/2023
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 This article describes the steps you need to take to start using multi-tenant management in Microsoft Defender XDR.
+
+>[!Note]
+>In multi-tenant management, interactions between the multi-tenant user and the managed tenants could involve accessing data and managing configurations. The ability to undertake these actions is determined by the permissions a managed tenant has granted the multi-tenant user.
 
 1. [Review the requirements](#review-the-requirements)
 2. [Verify your tenant access](#verify-your-tenant-access)
@@ -40,7 +41,7 @@ The following table lists the basic requirements you need to use multi-tenant ma
 |:---|:---|
 | Microsoft Defender XDR prerequisites | Verify you meet the [Microsoft Defender XDR prerequisites](prerequisites.md)|
 | Multi-tenant access | To view and manage the data you have access to in multi-tenant management, you need to ensure you have the necessary access. For each tenant you want to view and manage, you need to have either: <br/> <br/> - [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) <br/> - [Microsoft Entra B2B authentication](/azure/active-directory/external-identities/what-is-b2b) <br/> <br/> To learn more about how to synchronize multiple B2B users across tenants, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure).|
-| Permissions | Users must be assigned the correct roles and permission,s at the individual tenant level, in order to view and manage the associated data in multi-tenant management. To learn more, see: <br/><br/> - [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](./m365d-permissions.md) <br/> - [Custom roles in role-based access control for Microsoft Defender XDR](./custom-roles.md)<br/><br/> To learn how to grant permissions for multiple users at scale, see [What is entitlement management](/azure/active-directory/governance/entitlement-management-overview).|
+| Permissions | Users must be assigned the correct roles and permissions at the individual tenant level, in order to view and manage the associated data in multi-tenant management. To learn more, see: <br/><br/> - [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](./m365d-permissions.md) <br/> - [Custom roles in role-based access control for Microsoft Defender XDR](./custom-roles.md)<br/><br/> To learn how to grant permissions for multiple users at scale, see [What is entitlement management](/azure/active-directory/governance/entitlement-management-overview).|
 
 >[!Note]
 > Setting up [multi-factor authentication trust](/azure/active-directory/external-identities/authentication-conditional-access) is highly recommended for each tenant to avoid missing data in multi-tenant management Microsoft Defender XDR.
@@ -49,14 +50,12 @@ The following table lists the basic requirements you need to use multi-tenant ma
 
 In order to view and manage the data you have access to in multi-tenant management, you need to ensure you have the necessary permissions. For each tenant you want to view and manage, you need to either:
 
-- [Verify your tenant access with Microsoft Entra B2B](#verify-your-tenant-access-with-azure-active-directory-b2b)
+- [Verify your tenant access with Microsoft Entra B2B](#verify-your-tenant-access-with-microsoft-entra-b2b)
 - [Verify your tenant access with GDAP](#verify-your-tenant-access-with-gdap)
-
-<a name='verify-your-tenant-access-with-azure-active-directory-b2b'></a>
 
 ### Verify your tenant access with Microsoft Entra B2B
 
-1. Go to [My account](https://myaccount.microsoft.com/organizations)
+1. Go to [My account](https://myaccount.microsoft.com/organizations).
 2. Under **Organizations > Other organizations you collaborate with** see the list of organizations you have guest access to.
 
    :::image type="content" source="../../media/defender/mto-myaccount.png" alt-text="Screenshot of organizations in the myaccount portal" lightbox="../../media/defender/mto-myaccount.png":::
@@ -75,12 +74,15 @@ In order to view and manage the data you have access to in multi-tenant manageme
 
 The first time you use multi-tenant management in Microsoft Defender XDR, you need setup the tenants you want to view and manage. To get started:
 
-1. Sign in to [Multi-tenant management in Microsoft Defender XDR](https://mto.security.microsoft.com/).
+1. Sign in to [Multi-tenant management in Microsoft Defender XDR](https://mto.security.microsoft.com/)
 2. Select **Add tenants**.
 
    :::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Screenshot of the Microsoft Defender XDR multi-tenant portal setup screen" lightbox="../../media/defender/mto-add-tenants.png":::
 
-3. Choose the tenants you want to manage and select **Add**.
+3. Choose the tenants you want to manage and select **Add**
+
+>[!Note]
+> The multi-tenant view in Microsoft Defender XDR currently has a limit of 50 target tenants.
 
 The features available in multi-tenant management now appear on the navigation bar and you're ready to view and manage security data across all your tenants.
 

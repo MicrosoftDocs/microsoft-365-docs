@@ -1,15 +1,11 @@
 ---
 title: List Indicators API
 description: Learn how to use the List Indicators API to retrieve a collection of all active Indicators in Microsoft Defender for Endpoint.
-keywords: apis, public api, supported apis, Indicators collection
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -46,21 +42,21 @@ The OData's `$filter` query is supported on: `application`, `createdByDisplayNam
 <br>```$stop``` with max value of 10,000. 
 <br>```$skip```.
 
-See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ## Limitations
 
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
+Rate limitations for this API are 100 calls per minute and 1,500 calls per hour. 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md).
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|Ti.ReadWrite|'Read and write Indicators'
-Application|Ti.ReadWrite.All|'Read and write All Indicators'
-Delegated (work or school account)|Ti.ReadWrite|'Read and write Indicators'
+|Permission type|Permission|Permission display name|
+|---|---|---|
+| Application|Ti.ReadWrite|`Read and write Indicators` |
+| Application|Ti.ReadWrite.All|`Read and write All Indicators` |
+| Delegated (work or school account)|Ti.ReadWrite|`Read and write Indicators` |
 
 ## HTTP request
 
@@ -70,9 +66,9 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 ## Request headers
 
-Name|Type|Description
-:---|:---|:---
-Authorization|String|Bearer {token}. **Required**.
+|Name|Type|Description|
+|---|---|---|
+|Authorization|String|Bearer {token}. **Required**.|
 
 ## Request body
 
@@ -83,13 +79,13 @@ Empty
 If successful, this method returns 200, Ok response code with a collection of [Indicator](ti-indicator.md) entities.
 
 > [!NOTE]
-> If the Application has 'Ti.ReadWrite.All' permission, it will be exposed to all Indicators. Otherwise, it will be exposed only to the Indicators it created.
+> If the Application has `Ti.ReadWrite.All` permission, it will be exposed to all Indicators. Otherwise, it will be exposed only to the Indicators it created.
 
 ## Example 1
 
 ### Example 1 request
 
-Here is an example of a request that gets all Indicators
+Here's an example of a request that gets all indicators.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators
@@ -97,7 +93,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 ### Example 1 response
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 200 Ok
@@ -152,7 +148,7 @@ Content-type: application/json
 
 ### Example 2 request
 
-Here is an example of a request that gets all Indicators with 'AlertAndBlock' action 
+Here's an example of a request that gets all Indicators with `AlertAndBlock` action.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'
@@ -160,7 +156,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'A
 
 ### Example 2 response
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 200 Ok
@@ -191,4 +187,5 @@ Content-type: application/json
     ]
 }
 ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

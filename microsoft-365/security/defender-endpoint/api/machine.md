@@ -1,15 +1,11 @@
 ---
 title: Machine resource type
 description: Learn about the methods and properties of the Machine resource type in Microsoft Defender for Endpoint.
-keywords: apis, supported apis, get, machines
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -66,20 +62,21 @@ ms.date: 12/18/2020
 |firstSeen|DateTimeOffset|First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.|
 |lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours. <br> NOTE: This property doesn't correspond to the last seen value in the UI. It pertains to the last device update.|
 |osPlatform|String|Operating system platform.|
-|onboardingstatus|String|Status of machine onboarding. Possible values are: "onboarded", "CanBeOnboarded", "Unsupported", and "InsufficientInfo".|
+|onboardingstatus|String|Status of machine onboarding. Possible values are: `onboarded`, `CanBeOnboarded`, `Unsupported`, and `InsufficientInfo`.|
 |osProcessor|String|Operating system processor. Use osArchitecture property instead.|
 |version|String|Operating system Version.|
 |osBuild|Nullable long|Operating system build number.|
 |lastIpAddress|String|Last IP on local NIC on the [machine](machine.md).|
 |lastExternalIpAddress|String|Last IP through which the [machine](machine.md) accessed the internet.|
-|healthStatus|Enum|[machine](machine.md) health status. Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" and "Unknown".|
+|healthStatus|Enum|[machine](machine.md) health status. Possible values are: `Active`, `Inactive`, `ImpairedCommunication`, `NoSensorData`, `NoSensorDataImpairedCommunication`, and `Unknown`.|
 |rbacGroupName|String|Machine group Name.|
 |rbacGroupId|String|Machine group ID.|
-|riskScore|Nullable Enum|Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.|
+|riskScore|Nullable Enum|Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: `None`, `Informational`, `Low`, `Medium`, and `High`.|
 |aadDeviceId|Nullable representation Guid|Microsoft Entra Device ID (when [machine](machine.md) is Microsoft Entra joined).|
 |machineTags|String collection|Set of [machine](machine.md) tags.|
-|exposureLevel|Nullable Enum|Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.|
-|deviceValue|Nullable Enum|The [value of the device](../tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.|
+|exposureLevel|Nullable Enum|Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: `None`, `Low`, `Medium`, and `High`.|
+|deviceValue|Nullable Enum|The [value of the device](../tvm-assign-device-value.md). Possible values are: `Normal`, `Low`, and `High`.|
 |ipAddresses|IpAddress collection|Set of ***IpAddress*** objects. See [Get machines API](get-machines.md).|
-|osArchitecture|String|Operating system architecture. Possible values are: "32-bit", "64-bit". Use this property instead of osProcessor.|
+|osArchitecture|String|Operating system architecture. Possible values are: `32-bit`, `64-bit`. Use this property instead of osProcessor.|
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

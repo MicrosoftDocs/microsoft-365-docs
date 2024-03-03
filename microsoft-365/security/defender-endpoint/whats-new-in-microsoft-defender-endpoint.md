@@ -1,14 +1,13 @@
 ---
 title: What's new in Microsoft Defender for Endpoint
 description: See what features are generally available (GA) in the latest release of Microsoft Defender for Endpoint, and security features in Windows 10 and Windows Server.
-keywords: what's new in Microsoft Defender for Endpoint, ga, generally available, capabilities, available, new
 search.appverid: met150
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 01/24/2024
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -49,6 +48,14 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 - [What's new in Defender for Endpoint on Android](android-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+## February 2024
+
+**Attack Surface Reduction (ASR) Rules**
+
+Two new ASR rules are now in public preview: 
+- Block rebooting machine in Safe Mode (preview): This rule prevents the execution of commands to restart machines in Safe Mode.
+- Block use of copied or impersonated system tools (preview): This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
 
 ## January 2024
 

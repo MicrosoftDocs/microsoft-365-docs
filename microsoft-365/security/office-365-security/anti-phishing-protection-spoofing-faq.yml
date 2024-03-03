@@ -5,11 +5,10 @@ metadata:
     - NOCSH
   ms.author: chrisda
   author: chrisda
-  manager: dansimp
+  manager: deniseb
   ms.date: 6/20/2023
   audience: ITPro
   ms.topic: faq
-
   ms.localizationpriority: medium
   search.appverid:
     - MET150

@@ -1,9 +1,49 @@
 {
    "redirections": [
      {
+       "source_path": "microsoft-365/security/defender-identity/directory-service-accounts.md",
+       "redirect_url": "/defender-for-identity/deploy/directory-service-accounts?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/entity-tags.md",
+       "redirect_url": "/defender-for-identity/entity-tags?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/exclusions.md",
+       "redirect_url": "/defender-for-identity/exclusions?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/manage-security-alerts.md",
+       "redirect_url": "/defender-for-identity/manage-security-alerts?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/notifications.md",
+       "redirect_url": "/defender-for-identity/notifications?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/sensor-health.md",
+       "redirect_url": "/defender-for-identity/sensor-settings?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "microsoft-365/security/defender-identity/vpn-integration.md",
+       "redirect_url": "/defender-for-identity/vpn-integration?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json",
+       "redirect_document_id": false
+     },
+     {
        "source_path": "microsoft-365/security/defender/opt-out-of-preview.md",
        "redirect_url": "/microsoft-365/security/defender/dex-xdr-overview",
        "redirect_document_id": true
+     },
+     {
+              "source_path": "microsoft-365/security/defender-endpoint/experts-on-demand.md",
+              "redirect_url": "/microsoft-365/security/defender/onboarding-defender-experts-for-hunting/collaborate-with-experts-on-demand",
+              "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/defender/defenderexpertsforhuntingprev.md",
@@ -2697,72 +2737,72 @@
      },
      {
        "source_path": "microsoft-365/security/intelligence/understanding-malware.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/understanding-malware",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/coinminer-malware.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/coinminer-malware",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/exploits-malware.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/exploits-malware",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/macro-malware.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/macro-malware",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/rootkits-malware.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/rootkits-malware",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/trojans-malware.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/trojans-malware",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/worms-malware.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/worms-malware",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/fileless-threats.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/fileless-threats",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/phishing.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/phishing",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/phishing-trends.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/phishing-trends",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/supply-chain-malware.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/supply-chain-malware",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/prevent-malware-infection.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/prevent-malware-infection",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/unwanted-software.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/unwanted-software",
        "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/intelligence/support-scams.md",
-       "redirect_url": "https://www.microsoft.com/security/business/security-101/what-is-malware",
+       "redirect_url": "microsoft-365/security/defender-endpoint/malware/support-scams",
        "redirect_document_id": false
      },
      {
@@ -3817,7 +3857,12 @@
      },
      {
       "source_path": "microsoft-365/security/intelligence/safety-scanner-download.md",
-      "redirect_url": "/microsoft-365/security/defender/safety-scanner-download",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/safety-scanner-download",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender/safety-scanner-download.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/safety-scanner-download",
       "redirect_document_id": false
      },
      {
@@ -3863,6 +3908,31 @@
      {
       "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control-faq.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-faq",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration-configuration-manager.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration-group-policy-objects.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration-intune.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
       "redirect_document_id": false
      }
    ]
