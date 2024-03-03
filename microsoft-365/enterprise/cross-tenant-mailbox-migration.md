@@ -691,7 +691,8 @@ Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
 # Get licensing plans and include disabled plans
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'ENTERPRISEPREMIUM'
-$userLicense = Get-MgUserLicenseDetail -UserId "38955658-c844-4f59-9430-6519430ac89b"
+$User = Get-MgUser -UserId LaraN@contoso.onmicrosoft.com
+$userLicense = Get-MgUserLicenseDetail -UserId $User.Id
 
 $userDisabledPlans = $userLicense.ServicePlans |
   Where ProvisioningStatus -eq "Disabled" |
@@ -719,7 +720,10 @@ Id                                   DisplayName   Mail UserPrincipalName       
   Results in the set of ServicePlans assigned are shown here:
 
   ```PowerShell
-  Get-MgUserLicenseDetail -UserId '38955658-c844-4f59-9430-6519430ac89b' | Select-Object -ExpandProperty ServicePlans | sort ProvisioningStatus -Ascending
+  $order = @(
+    @{ Expression = 'ProvisioningStatus'; Ascending = $true }
+  )
+  Get-MgUserLicenseDetail -UserId '38955658-c844-4f59-9430-6519430ac89b' | Select-Object -ExpandProperty ServicePlans | sort ProvisioningStatus $order
 
   AppliesTo ProvisioningStatus  ServicePlanId                        ServicePlanName
 --------- ------------------  -------------                        ---------------
