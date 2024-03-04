@@ -14,7 +14,6 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -23,7 +22,7 @@ ms.date:
 
 # Choose your scenarios for Microsoft 365 for frontline workers
 
-Microsoft 365 for frontline workers can help you connect and engage your workforce, enhance workforce management, and increase operational efficiency. There are several solution areas that can help you achieve these goals. 
+Microsoft 365 for frontline workers can help you connect and engage your workforce, enhance workforce management, and increase operational efficiency. There are several solution areas that can help you achieve these goals.
 
 Think of Microsoft 365 foundational security and device management capabilities as setting a secure baseline, on which you can build scenarios that enable, empower, and transform your frontline business. You can use the capabilities included with Microsoft 365 for frontline workers, from Microsoft Teams, to SharePoint, Viva Connections, Viva Engage, and Power Platform, or add in solutions from our partners in the digital ecosystem to connect with existing systems or create custom solutions for your business.
 
@@ -35,7 +34,7 @@ Use these scenario overviews to start envisioning what your organization can do 
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft 365 for frontline worker scenarios.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.|
+|[![Microsoft 365 for frontline worker scenarios.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated January 2024 |This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.|
 
 ## Communications
 
@@ -96,7 +95,6 @@ Drive operational efficiency by digitizing paper-based processes and automating 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
 | [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
-<!--| Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. | | |-->
 
 ## Virtual Appointments
 
@@ -128,8 +126,6 @@ Quickly build custom apps and digital tools for Microsoft Teams, with little or 
 
 With **[Microsoft Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)**, you can quickly create powerful AI-powered copilots using a guided, no-code graphical experience. Give your frontline access to the help they need. Automate frequently asked questions, common business processes, and more.
 
-<!--Access to the Power Platform features in Teams is available with the F3 license in Microsoft 365 for frontline workers. For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).-->
-
 ### Custom apps built on the Teams platform
 
 With code from scratch or by using templated and sample code, you can build custom apps on the [Teams platform](/microsoftteams/platform/).
@@ -139,6 +135,6 @@ With code from scratch or by using templated and sample code, you can build cust
 - **UI Elements:** Create rich experiences with adaptive cards, task modules, and notifications.
 - **APIs:** Use Microsoft Graph to enhance apps inside and outside of Teams.
 
-### Viva platform extensibility
+### Viva Connections extensibility
 
-Developers can [extend Viva Connections](/sharepoint/dev/spfx/viva/overview-viva-connections) for building engaging experiences with the widely adopted [SharePoint Framework (SPFx)](/sharepoint/dev/spfx/build-for-teams-overview). Viva Connections is your gateway to a modern employee experience where you can build and integrate apps that shape culture and foster connections to help employees thrive. With SPFx, you have multiple ways to extend – using the same out-of-the-box or custom SPFx web parts, SPFx extensions (for example, header, footer), and specific components for optimized mobile experiences.
+Developers can extend Viva Connections for building engaging experiences with the widely adopted [SharePoint Framework (SPFx)](/sharepoint/dev/spfx/sharepoint-framework-overview). Learn more about [Viva Connections extensibility](/sharepoint/dev/spfx/viva/overview-viva-connections).
