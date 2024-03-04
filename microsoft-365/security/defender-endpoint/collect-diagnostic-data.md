@@ -6,8 +6,8 @@ ms.localizationpriority: medium
 author: siosulli
 ms.author: siosulli
 ms.custom: nextgen
-ms.date: 02/02/2024
-ms.reviewer: pahuijbr
+ms.date: 03/03/2024
+ms.reviewer: pahuijbr, yongrhee
 manager: deniseb
 ms.subservice: ngp
 ms.topic: conceptual
