@@ -25,8 +25,15 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- Microsoft Defender Antivirus
+
+- [Microsoft Defender for Individuals](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)
 
 This article describes how to collect diagnostic data that's used by Microsoft support and engineering teams when they help troubleshoot issues with Microsoft Defender Antivirus.
 
@@ -47,11 +54,10 @@ On at least two devices that are experiencing the same issue, obtain the `.cab` 
 
     c. Specify administrator credentials or approve the prompt.
 
-2. Navigate to the directory for Microsoft Defender Antivirus. By default, it's `C:\Program Files\Windows Defender`.
+1. Navigate to the directory for Microsoft Defender Antivirus. 
 
-   > [!NOTE]
-   > If you're running an [updated Microsoft Defender antimalware platform version](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform), run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
-
+   Cd C:\ProgramData\Microsoft\Windows Defender\Platform\<version>
+   
 3. Type the following command, and then press **Enter**
 
     ```Dos
