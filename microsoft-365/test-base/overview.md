@@ -19,7 +19,7 @@ f1.keywords: NOCSH
 # What is Test Base for Microsoft 365?
 
 > [!IMPORTANT]
-> **Test Base for Microsoft 365 will transition to end-of-life (EOL) on May 31, 2024.** We're committed to working closely with each customer to provide support and guidance to make the transition as smooth as possible. If you have any questions, concerns, or need assistance, [submit a support request](https://aka.ms/TestBaseEolSupport).
+> **Test Base for Microsoft 365 will transition to end-of-life (EOL) on May 31, 2024.** We're committed to working closely with each customer to provide support and guidance to make the transition as smooth as possible. If you have any questions, concerns, or need assistance, [submit a support request](https://aka.ms/TestBaseSupport).
 
 Test Base is an Azure service that enables data-driven application testing for users anywhere in the world. 
 
