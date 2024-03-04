@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: android
 search.appverid: met150
-ms.date: 10/25/2023
+ms.date: 03/04/2024
 ---
 
 # What's new in Microsoft Defender for Endpoint on Android
