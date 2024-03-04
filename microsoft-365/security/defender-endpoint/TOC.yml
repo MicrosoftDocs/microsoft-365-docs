@@ -551,7 +551,11 @@
       - name: Safety Scanner Download
         href: safety-scanner-download.md
       - name: Evaluate Microsoft Defender Antivirus
-        href: evaluate-microsoft-defender-antivirus.md
+        items:
+          - name: Overview
+            href: evaluate-microsoft-defender-antivirus.md
+          - name: Evaluate Microsoft Defender Antivirus using Powershell
+            href: microsoft-defender-antivirus-using-powershell.md
       - name: Configure Microsoft Defender Antivirus features
         href: configure-microsoft-defender-antivirus-features.md
       - name: Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
