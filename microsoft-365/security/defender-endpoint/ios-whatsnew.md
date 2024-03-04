@@ -31,7 +31,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 > [!IMPORTANT]
 >  ## Network Protection – Update
-> Network protection feature will soon be enabled by default for all users. The update will be rolled out in a phased manner. As a result, users will be able to see Network Protection Card in the Defender app along with App Protection and Web Protection. Users are also required to provide Location permission to complete the set up. For more information, see [Network Protection](/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide#configure-network-protection).
+> Network protection feature will soon be enabled by default for all users. The update will be rolled out in a phased manner. As a result, users will be able to see Network Protection Card in the Defender app along with App Protection and Web Protection. Users are also required to provide Location permission to complete the set up. For more information, see [Network Protection](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
 ## Device Tagging
 
