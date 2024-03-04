@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 03/15/2023
+ms.date: 03/04/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -53,9 +53,9 @@ The setting is available via the Microsoft 365 Admin Center **Settings** menu it
 :::image type="content" alt-text="Org Settings - Send email notifications setting" source="../../media/send-email-notifications-org-settings.png" lightbox="../../media/send-email-notifications-org-settings.png":::
 
 > [!NOTE]
-> - This setting is an opt-in setting which allows the Microsoft 365 system administrators to select a verified domain within the tenant. This means that the domain has been validated for ownership.
-> - The recommendation is to use a domain that has the appropriate DNS records to facilitate email validation, like SPF, DKIM, DMARC, and MX as this then complies with the [RFC compliance](https://www.ietf.org/rfc/rfc2142.txt) for sending and receiving email. Please see [Learn more about Exchange Online Email Routing](/exchange/mail-flow-best-practices/mail-flow-best-practices) for more information.
-> - Please ensure that you comply with all privacy, compliance and security requirements and policies within your organization. 
+> - This setting is an opt-in setting that allows the Microsoft 365 system administrators to select a verified domain within the tenant. This means that the domain has been validated for ownership.
+> - The recommendation is to use a domain that has the appropriate DNS records to facilitate email validation, like SPF, DKIM, DMARC, and MX as this then complies with the [RFC compliance](https://www.ietf.org/rfc/rfc2142.txt) for sending and receiving email. For more information, see [Learn more about Exchange Online Email Routing](/exchange/mail-flow-best-practices/mail-flow-best-practices).
+> - Please ensure you comply with all privacy, compliance, and security requirements and policies within your organization. 
 
 **To configure the "Send email notifications from your domain" setting:**
 
@@ -66,7 +66,7 @@ The setting is available via the Microsoft 365 Admin Center **Settings** menu it
 5. In the **Send email notifications from your domain** page, select **Use a custom send-from domain address**.
 6. The **Domains** menu, select the domain that you want to use for your email replies.The domains listed in the menu includes verified complete and incomplete domains as Microsoft 365 allows DNS settings to be configured and managed outside of the tenant. Your System or Exchange administrator must ensure that they follow and meet all DNS and domain requirements. 
 7. For **Custom username**, administrators can optionally configure the no-reply prefix. They could then create a matching email address in Exchange, if they would like to monitor responses from users.
-8. Select **Save**.  Changes will take a few minutes to complete.
+8. Select **Save**. Changes will take a few minutes to complete.
 
 :::image type="content" alt-text="Send email notifications setting." source="../../media/save-email-notifications-domain.png" lightbox="../../media/save-email-notifications-domain.png":::
 
