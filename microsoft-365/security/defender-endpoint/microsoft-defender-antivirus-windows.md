@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Antivirus in Windows
+title: Microsoft Defender Antivirus in Windows Overview
 description: Learn how to manage, configure, and use Microsoft Defender Antivirus, built-in antimalware and antivirus protection.
 ms.service: defender-endpoint
 ms.localizationpriority: high
@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Microsoft Defender Antivirus in Windows
+# Microsoft Defender Antivirus in Windows Overview
 
 **Applies to:**
 
@@ -27,7 +27,8 @@ search.appverid: met150
 - Microsoft Defender Antivirus
 
 **Platforms**
-- Windows 
+
+- Windows
 
 Microsoft Defender Antivirus is available in Windows 10 and Windows 11, and in versions of Windows Server.
 
@@ -41,7 +42,7 @@ Modern malware requires modern solutions. Microsoft Defender Antivirus stopped u
 
 Microsoft Defender Antivirus can block almost all malware at first sight, in milliseconds.
 
-We’ve also designed our antivirus solution to work in both online and offline scenarios.  For offline scenarios, the latest dynamic intelligence from the Intelligence Security Graph is provisioned to the endpoint regularly throughout the day. When connected to the cloud, it’s fed real-time intelligence from the [Intelligent Security Graph](https://www.microsoft.com/en-us/security/blog/2018/04/17/connect-to-the-intelligent-security-graph-using-a-new-api/). 
+We’ve also designed our antivirus solution to work in both online and offline scenarios.  For offline scenarios, the latest dynamic intelligence from the Intelligence Security Graph is provisioned to the endpoint regularly throughout the day. When connected to the cloud, it’s fed real-time intelligence from the [Intelligent Security Graph](https://www.microsoft.com/security/blog/2018/04/17/connect-to-the-intelligent-security-graph-using-a-new-api/).
 
 Microsoft Defender Antivirus can also stop threats based on their behaviors and process trees even when the threat has started execution. A common example of these kinds of attacks is fileless malware. Microsoft's Next-generation protection features work together to identify and block malware based on abnormal behavior. To learn more, see [Behavioral blocking and containment](behavioral-blocking-containment.md).
 
