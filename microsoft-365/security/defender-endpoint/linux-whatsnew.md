@@ -4,7 +4,7 @@ description: List of major changes for Microsoft Defender for Endpoint on Linux.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
-ms.reviewer: kumasumit
+ms.reviewer: kumasumit, gopkr
 ms.localizationpriority: medium
 ms.date: 02/12/2024
 manager: deniseb
