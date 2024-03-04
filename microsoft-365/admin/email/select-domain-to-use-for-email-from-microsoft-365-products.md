@@ -41,14 +41,14 @@ Emails sent out to users as they interact with each other and across various pro
 
 There are several scenarios where emails are sent from a “no-reply” system-based product account. For example, batched comments, news, digests, and system notification emails are currently sent from a no-reply product address. These include addresses such no-reply@sharepointonline.com, no-reply@planner.com, no-reply@project.com.
 
-The default option is that users receive no-reply emails sent by Microsoft on behalf of your organization. Your users receive these emails as [EXTERNAL] notifications. You now have the option to use a custom domain as the sender of these notifications. Using this feature means that emails will now be sent from your own Exchange Online instance and they become internal communication. For example, **no-reply@sharepointonline.com [External]** could become **no-reply@contoso.com**, if **Contoso.com** is the domain that has been selected.
+The default option is that users receive no-reply emails sent by Microsoft on behalf of your organization. Your users receive these emails as [EXTERNAL] notifications. You can now use a custom domain as the sender of these notifications. Using this feature means that emails are sent from your own Exchange Online instance and they become internal communication. For example, **no-reply@sharepointonline.com [External]** could become **no-reply@contoso.com**, if **Contoso.com** is the selected domain.
 
 > [!NOTE]
-> Only domains registered within your tenant can be used and ownership must be verified through the existing add domains process within Microsoft 365. Please follow the steps below and note the DNS records required when configuring a domain for sending email.
+> Only domains registered within your tenant can be used and ownership must be verified through the existing add domains process within Microsoft 365. Please use the following steps and note the DNS(Domain Name System) records required when configuring a domain for sending email.
 
 ## <a name="configsetting">Configure the "Send email notifications from your domain" setting</a>
 
-The setting is available via the Microsoft 365 Admin Center **Settings** menu item. Select **Settings**, select **Org settings**, and then select the **Organization profile** tab as illustrated below. 
+The setting is available via the Microsoft 365 Admin Center **Settings** menu item. Select **Settings**, select **Org settings**, and then select the **Organization profile** tab as illustrated. 
 
 :::image type="content" alt-text="Org Settings - Send email notifications setting" source="../../media/send-email-notifications-org-settings.png" lightbox="../../media/send-email-notifications-org-settings.png":::
 
@@ -71,7 +71,7 @@ The setting is available via the Microsoft 365 Admin Center **Settings** menu it
 :::image type="content" alt-text="Send email notifications setting." source="../../media/save-email-notifications-domain.png" lightbox="../../media/save-email-notifications-domain.png":::
 
 > [!NOTE]
-> If you make a mistake or would like to roll-back the change, de-select the **Use a custom send-from domain address** checkbox and then select **Save**. The setting will revert to the original configuration.
+> If you make a mistake or would like to roll-back the change, deselect the **Use a custom send-from domain address** checkbox and then select **Save**. The setting will revert to the original configuration.
 
 ## <a name="supportedproducts">Supported Products</a>
 
