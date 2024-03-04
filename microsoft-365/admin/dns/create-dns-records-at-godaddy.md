@@ -89,7 +89,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 4. Select **TXT** option from the filter box.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-add-txt-records.png" alt-text="Select TXT from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-add-txt-records.png" alt-text="Select TXT(Text) from the Type drop-down list.":::
 
 5. In the boxes for the new record, type or copy and paste the values from the table.
 
@@ -97,7 +97,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
    |---|---|---|---|
    |TXT|@|MS=ms *XXXXXXXX*<br>**Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>|
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXTvalue.png" alt-text="Fill in the values from the table for the TXT record.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXTvalue.png" alt-text="Paste the values for the TXT record.":::
 
 6. Select **Save**.
 
@@ -113,7 +113,7 @@ To verify the record in Microsoft 365:
 
 2. On the Domains page, select the domain that you're verifying, and select **Start setup**.
 
-   :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+   :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text=" Diagram showing Select Start setup.":::
 
 3. Select **Continue**.
   
@@ -130,11 +130,11 @@ To verify the record in Microsoft 365:
 
 2. Under **Domains**, select the **DNS**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select DNS.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Screenshot showing Select DNS.":::
 
 3. Under **Records**, select **ADD**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot showing Select ADD.":::
 
 4. Choose **MX** option from the filter box.
 
@@ -148,7 +148,7 @@ To verify the record in Microsoft 365:
    |---|---|---|---|---|
    |MX|@| 10  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml)|*\<domain-key\>*.mail.protection.outlook.com  <br/> **Note:** Get your *\<domain-key\>* from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|1 hour|
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-MXvalues.png" alt-text="Fill in the values from the table for the MX record.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-MXvalues.png" alt-text="Screenshot showing paste values for the MX record.":::
 
 6. Select **Save**.
 
@@ -160,15 +160,15 @@ To verify the record in Microsoft 365:
 
 2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select DNS.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Screenshot displaying Select DNS.":::
 
 3. Under **Records**, select **ADD**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot to Select ADD.":::
 
 4. Choose **CNAME** from the drop-down list.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-type.png" alt-text="Select CNAME from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-type.png" alt-text="Screenshot showing Select CNAME from the Type drop-down list.":::
 
 
 5. Create the CNAME record.
@@ -181,7 +181,7 @@ To verify the record in Microsoft 365:
    |---|---|---|---|
    |CNAME|autodiscover|autodiscover.outlook.com|1 hour|
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Fill in the values from the table for the CNAME record.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Screenshot to paste the values for the CNAME record.":::
 
 6. Select **Save**.
 
@@ -196,15 +196,15 @@ To verify the record in Microsoft 365:
 
 2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Screenshot showing Select DNS from the drop-down list.":::
 
 3. Under **Records**, select **ADD**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot showing Select ADD.":::
 
 4. Choose **TXT** from the drop-down list.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-save.png" alt-text="Select TXT from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-save.png" alt-text="Screenshot showing drop-down list to select TXT.":::
 
 5. In the boxes for the new record, type or copy and paste the following values.
 
@@ -214,7 +214,7 @@ To verify the record in Microsoft 365:
    |---|---|---|---|
    |TXT|@|v=spf1 include:secureserver.net -all <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.|1 hour|
 
-    :::image type="content" source="../../media/dns-godaddy/godaddy-add-TXTvalue-spf.png" alt-text="Fill in the values from the table for the TXT record.":::
+    :::image type="content" source="../../media/dns-godaddy/godaddy-add-TXTvalue-spf.png" alt-text="Screenshot displaying values from the table for the TXT record.":::
 
 6. Select **Save**.
 
@@ -230,15 +230,15 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
 
 2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Screenshot showing select DNS from the drop-down list.":::
 
 3. Under **Records**, select **ADD**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot showing Select ADD.":::
 
 4. Choose **SRV** from the drop-down list.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-SRV.png" alt-text="Select SRV from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-SRV.png" alt-text="Screenshot showing SRV selected from the Type drop-down list.":::
 
 5. Create the first SRV record.
 
@@ -251,7 +251,7 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
    |SRV|_sip|_tls|@|sipdir.online.lync.com|100| 1|443|1 Hour|
    |SRV|_sipfederationtls|_tcp|@| sipfed.online.lync.com| 100|1|5061|1 Hour|
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-SRV-records.png" alt-text="Fill in the values from the table for the SRV record.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-SRV-records.png" alt-text="Screenshot showing the values pasted for the SRV record.":::
 
 6. Select **Save**.
 
@@ -268,15 +268,15 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
 
 2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **Manage DNS**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Screenshot showing Select Manage DNS from the drop-down list.":::
 
 3. Under **Records**, select **ADD**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot to Select ADD.":::
 
 4. Choose **CNAME** from the drop-down list.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-type.png" alt-text="Select CNAME from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-type.png" alt-text="Screenshot showing select CNAME from the Type drop-down list.":::
 
 5. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
 
@@ -285,7 +285,7 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
    |CNAME|sip|sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)**|1 Hour|
    |CNAME|lyncdiscover|webdir.online.lync.com.  <br/> **This value MUST end with a period (.)**|1 Hour|
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-records.png" alt-text="Fill in the values from the table for the CNAME record.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-records.png" alt-text="Screenshot showing values for the CNAME record.":::
   
 1. Select **Save**.
   
@@ -306,15 +306,15 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **DNS**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Screesnhot showing Select DNS from the drop-down list.":::
 
 3. Under **Records**, select **ADD**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot showing Select ADD.":::
 
 4. Choose **CNAME** from the drop-down list.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-type.png" alt-text="Select CNAME from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-type.png" alt-text="Screenshot to Select CNAME from the Type drop-down list.":::
 
 1. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
 
@@ -323,7 +323,7 @@ This service helps you secure and remotely manage mobile devices that connect to
    |CNAME|enterpriseregistration|enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)**|1 Hour|
    |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)**|1 Hour|
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Fill in the values from the table for the CNAME record.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Diagram showing values for the CNAME record.":::
   
 1. Select **Save**.
   
