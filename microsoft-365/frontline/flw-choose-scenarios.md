@@ -47,7 +47,7 @@ Watch the following video to see an example of how you can help your frontline w
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
-| [Team communication and collaboration](flw-team-collaboration.md) | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Connections<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie |
+| [Team communication and collaboration](flw-team-collaboration.md) | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Connections<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Planner, Praise, Shifts, Walkie Talkie |
 | [Corporate communications](flw-corp-comms.md) | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Stream, and Viva Engage. Bring it all together with Viva Connections. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Engage<br>Viva Connections | Meet |
 
 ## Wellbeing & engagement
@@ -93,8 +93,7 @@ Watch the following video to see an example of how you can simplify business pro
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
-| [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
-<!--| Manage sites, stores, and projects | Keep on top of tasks and projects. Use Tasks, Lists, Approvals, and Updates to check in with your workforce and keep things running smoothly. | | |-->
+| [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Approvals<br>Lists<br>Planner |
 
 ## Virtual Appointments
 

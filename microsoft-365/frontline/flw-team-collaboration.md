@@ -72,7 +72,7 @@ Your team can use apps in Teams to coordinate and collaborate with each other on
 - [Create, manage, and share schedules with Shifts](#create-manage-and-share-schedules-with-shifts)
 - [Keep in touch with Walkie Talkie](#keep-in-touch-with-walkie-talkie)
 - [Boost morale with Praise](#boost-morale-with-praise)
-- [Track and monitor work with Tasks](#track-and-monitor-work-with-tasks)
+- [Track and monitor work with Planner](#track-and-monitor-work-with-planner)
 - [Streamline approvals with Approvals](#streamline-approvals-with-approvals)
 - [Check in on progress with Updates](#check-in-on-progress-with-updates)
 - [Create a personalized experience with Viva Connections](#create-a-personalized-experience-with-viva-connections)
@@ -125,9 +125,9 @@ Learn how to [manage the Praise app for your organization](/microsoftteams/manag
 
 Share this [Praise video training](https://support.microsoft.com/office/communication-and-praise-7d37ef80-542b-42e5-aa01-0fabbaa634b6) with your users.
 
-### Track and monitor work with Tasks
+### Track and monitor work with Planner
 
-Use Tasks in Teams to track to-do items for your whole frontline team. Store managers and employees can create, assign, and schedule tasks, categorize tasks, and update status at any time from any device running Teams. IT pros and admins can also publish tasks to specific teams for your organization. For example, you could publish a set of tasks for daily cleaning or steps to set up a new display.
+Use Planner in Teams to track tasks for your whole frontline team. Store managers and employees can create, assign, and schedule tasks, categorize tasks, and update status at any time from any device running Teams. IT pros and admins can also publish tasks to specific teams for your organization. For example, you could publish a set of tasks for daily cleaning or steps to set up a new display.
 
 |Industry |Example |
 |:--------|:-------|
@@ -136,9 +136,9 @@ Use Tasks in Teams to track to-do items for your whole frontline team. Store man
 |Financial services |A bank manager can assign mortgage specialists a task to review and get familiar with new rates or policies. |
 |Manufacturing |A supervisor can assign a worker a task to inspect a new batch of products. |
 
-Learn how to [manage the Tasks app for your organization](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Learn how to [manage the Planner app for your organization](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
-Share this [Tasks video training](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) with your users.
+Share this [Planner video training](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) with your users.
 
 ### Streamline approvals with Approvals
 

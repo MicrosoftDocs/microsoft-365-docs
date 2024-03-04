@@ -41,7 +41,7 @@ With this example, you can mix license types for the two types of workers in you
 | Frontline workers need quick access to tools that help them work with customers: | Information workers need tools to support their tasks like: |
 | ----- | ----- |
 | Frontline workers need access to information on the go - they have the Office apps on phones or tablets. | Information workers write, edit, and share documents and have Office apps on desktops or laptops, plus mobile apps on phones and tablets. |
-| Frontline workers communicate on the go with Teams chat, schedule work with Shifts, check off to-do items with Tasks, and track items in Lists, along with other Teams functionality.  | Information workers communicate over Teams with chat, meet, and call, and use other Teams apps (depending on the specific license). |
+| Frontline workers communicate on the go with Teams chat, schedule work with Shifts, check off to-do items with Planner, and track items in Lists, along with other Teams functionality.  | Information workers communicate over Teams with chat, meet, and call, and use other Teams apps (depending on the specific license). |
 | Frontline workers can find organization-wide resources, communications, or training with SharePoint, OneDrive, Viva Engage, and Stream. | Information workers create or consume team or organization-wide resources and communications with included Microsoft 365 services (depending on the specific license). |
 
 For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
