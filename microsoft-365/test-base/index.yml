@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Test Base for Microsoft 365 documentation # < 60 chars
-summary: Test Base for Microsoft 365 is an Azure service that facilitates data-driven testing of applications. Backed by the power of data and the cloud, it enables IT professionals to take advantage of intelligent testing from anywhere in the world. It will help you test your applications without the hassle, time commitment, and expenditure of setting up and maintaining complex test environments. Most importantly, it will give you access to pre-release Windows Updates on secure virtual machines (VMs) and world-class intelligence for your applications. # < 160 chars
+summary: Test Base for Microsoft 365 will transition to end-of-life (EOL) on May 31, 2024. We're committed to working closely with each customer to provide support and guidance to make the transition as smooth as possible. If you have any questions, concerns, or need assistance, submit a support request. # < 160 chars
 
 metadata:
   title: Test Base for M365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
