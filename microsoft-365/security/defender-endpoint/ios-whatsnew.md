@@ -29,6 +29,10 @@ search.appverid: met150
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+> [!IMPORTANT]
+>  ## Network Protection – Update
+> Network protection feature will soon be enabled by default for all users. The update will be rolled out in a phased manner. As a result, users will be able to see Network Protection Card in the Defender app along with App Protection and Web Protection. Users are also required to provide Location permission to complete the set up. For more information, see [Network Protection](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide#configure-network-protection).
+
 ## Device Tagging
 
 Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. For more information, read [Configure Device Tagging](/microsoft-365/security/defender-endpoint/ios-configure-features#device-tagging).

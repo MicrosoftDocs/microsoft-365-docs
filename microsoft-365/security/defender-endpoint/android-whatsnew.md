@@ -28,9 +28,11 @@ ms.date: 10/25/2023
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!IMPORTANT]
-> Microsoft Defender for Endpoint's **Anti malware engine** is now generally available. All the users are required to have a Microsoft Defender for Endpoint version **1.0.3815.0000** or later to utilize this new malware protection capability. Users on Microsoft Defender for Endpoint earlier than version 1.0.3815.0000 are sent notifications and in-app overlay messages to update their Microsoft Defender for Endpoint application. Users can click on the link provided in the overlay message to go to the managed play store and update the application.
->
-> If users can't access the play store, the app can be updated through the company portal.
+>  ## Network Protection – Update
+> Network protection feature will soon be enabled by default for all users. The update will be rolled out in a phased manner. As a result, users will be able to see Network Protection Card in the Defender app along with App Protection and Web Protection. Users are also required to provide Location permission to complete the set up. For more information, see [Network Protection](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-configure?view=o365-worldwide#network-protection).
+
+
+
 
 ## Device Tagging
 
