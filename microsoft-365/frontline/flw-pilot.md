@@ -88,7 +88,6 @@ A recommended best practice is to begin where your users are and mimic the capab
 - Which capabilities will you include in Phase 1 of your pilot?
 - Do your frontline workers need Shifts for schedule management?
 - Do your frontline workers need Walkie Talkie for push-to-talk (PTT) communications?
-- What chat and channel messaging features will you include?
 
 #### Not sure what consumer tools these users are currently using?
 
