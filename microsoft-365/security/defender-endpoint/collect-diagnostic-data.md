@@ -56,13 +56,12 @@ On at least two devices that are experiencing the same issue, obtain the `.cab` 
 
 1. Navigate to the directory for Microsoft Defender Antivirus. 
 
-   
-   ```
    cd C:\ProgramData\Microsoft\Windows Defender\Platform\<version>
-
-   ```
    
-3. Type the following command, and then press **Enter**
+   
+   Note: Where <version> is the actual version that starts with 4.18.xxxxx.x
+   
+1. Type the following command, and then press **Enter**
 
     ```Dos
     mpcmdrun.exe -GetFiles
