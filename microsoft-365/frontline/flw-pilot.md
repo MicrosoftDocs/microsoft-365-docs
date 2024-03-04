@@ -4,8 +4,7 @@ description: Learn how to run a pilot deployment for the frontline workers in yo
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: aaglick
-ms.topic: how-to
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -21,7 +20,7 @@ ms.date: 02/01/2023
 
 # Start with a pilot deployment of Microsoft 365 for frontline workers
 
-Before you commit to a full rollout of Microsoft 365 for frontline workers across your organization, it's a good idea to try it out first with a small set of real people in your organization. Starting with a pilot program first can help:
+Before you commit to a full rollout of Microsoft 365 for frontline workers across your organization, it's a good idea to try it out first with a small set of people in your organization. Starting with a pilot program first can help:
 
 - Validate user readiness.
 - Identify and mitigate issues.
@@ -31,7 +30,7 @@ For example, a pilot can help you determine:
 
 - Whether the scenarios you identified match the business needs of your organization.
 - What elements need to be modified or further customized for your organization.
-- What training and orientation information you'll need to provide to users before, during, and after they start working with these new tools.
+- What training and orientation information you need to provide to users before, during, and after they start working with these new tools.
 
 Running a pilot program is part of the overall adoption process. For more information about adopting Microsoft 365 in your organization, see:
 
@@ -39,8 +38,6 @@ Running a pilot program is part of the overall adoption process. For more inform
 - [Microsoft 365 Adoption best practices](https://adoption.microsoft.com/files/assets/M365AdoptionGuide.pdf).
 - [Microsoft Teams Adoption](https://adoption.microsoft.com/microsoft-teams/)
 - [Enabling your frontline workers with Microsoft Teams](https://adoption.microsoft.com/microsoft-teams/frontline-workers/)
-
-<!--We recommend that you prepare for deployment by completing this 30-minute learning path: [Prepare for a Teams deployment with Microsoft 365](/training/modules/m365-teams-collab-prepare-deployment/).-->
 
 ## Steps to run a pilot program
 
@@ -61,10 +58,7 @@ Next, identify your phase 1 pilot community and make sure it includes actual fro
 
 #### Best practice
 
-It's important to include all roles within that smallest logical grouping, from managers to part time or seasonal workers, to uncover valuable insights and enable modern communication scenarios.<!-- Your most junior staff surprises you! Some key delightful and unintended valuable scenarios uncovered during pilots with sample customers include:-->
-<!--
-- Standardized Expectations and Training: Taking a picture of a clean stove to illustrate to kitchen staff what clean means. “If it doesn’t look like this, then it isn’t clean!”
-- Reducing shrinkage: Taking a picture of a known shoplifter and notifying other employees immediately. Teams on future shifts will also see this picture to mitigate future risk.-->
+It's important to include all roles within that smallest logical grouping, from managers to part time or seasonal workers, to uncover valuable insights and enable modern communication scenarios.
 
 #### Decision points
 
@@ -82,7 +76,7 @@ Here's some tips for a successful pilot.
 - Allow enough time to run the pilot and assess its impact. A minimum of 30 days is recommended.
 - Include the right stakeholders and participants, knowing you can add more users throughout the pilot, if necessary. For Microsoft 365 for frontline workers, make sure your stakeholders and participants include not only the business leaders and IT staff, but your frontline managers and workers, so you can:
     - Ensure you understand their challenges while planning the implementation.
-    - Check to make sure your implementation is having a positive impact on those challenges.
+    - Check to make sure your implementation is having a positive effect on those challenges.
 - Start small and take time to pause, assess results, and adjust the pilot.
 
 For a successful pilot for frontline workers, simplicity is key! For most organizations, this community typically isn’t provided any company-supported communication or collaboration technology, but are likely already using unsupported consumer tools to accomplish some basic needs.
@@ -94,42 +88,26 @@ A recommended best practice is to begin where your users are and mimic the capab
 - Which capabilities will you include in Phase 1 of your pilot?
 - Do your frontline workers need Shifts for schedule management?
 - Do your frontline workers need Walkie Talkie for push-to-talk (PTT) communications?
-<!--- Which chat configuration will you use?-->
+- What chat and channel messaging features will you include?
 
 #### Not sure what consumer tools these users are currently using?
 
-Use a survey to take inventory of the tools, capabilities and scenarios your users rely on today.
+Use a survey to take inventory of the tools, capabilities, and scenarios your users rely on today.
 
 ### Set up Microsoft 365 and Teams
 
 Determine what devices to support. For example, you can use the Teams mobile clients on Android and iOS for on-the-go access to Teams and frontline worker apps. See [Get Teams clients](/microsoftteams/get-clients) and [Manage devices for frontline workers](flw-devices.md).
 
-See [Set up Microsoft 365 for frontline workers](flw-setup-microsoft-365.md) and [Teams deployment overview](microsoftteams/deploy-overview) for guidance on how to set up Microsoft 365, Teams, and the other services you'll need for your pilot.
-
-<!--When you set up and configured all of the other services you need, you can set up Teams.-->
-
-<!--#### Chat configuration options
-
-Within Teams Chat on mobile, you can have the normal traditional chat layout for Teams OR a layout that includes favorite channels in Chat. This second, simplified UI works well for frontline workers who are only in one team, and is the recommended best practice. Configuring “Show favorite channels in chat” also creates an opportunity to remove the **Teams** button from the frontline worker app setup policy to further streamline and simplify the end user experience without a loss of functionality. For users who will be in multiple teams, this isn't recommended. You can configure this on a per-user basis and grow in sophistication as needed.-->
-
-#### Best practice
-
-Configure Phase 1 of the frontline Teams experience to mimic the consumer tools these users are already using! <!--We recommend starting your pilot for frontline workers with “Show favorite channels in Chat” for simplified communications and Shifts (optional).-->
-
-<!--|  With Shifts  |  Without Shifts  |
-|---------------|------------------|
-|:::image type="content" source="media/firstline-worker-chat-with-shifts.png" alt-text="Screenshot of phone screen with Shifts added":::    |:::image type="content" source="media/firstline-worker-chat-without-shifts.png" alt-text="Screenshot of phone screen without Shifts added":::|-->
+See [Set up Microsoft 365 for frontline workers](flw-setup-microsoft-365.md) and [Teams deployment overview](microsoftteams/deploy-overview) for guidance on how to set up Microsoft 365, Teams, and the other services you need for your pilot.
 
 #### Decision points
 
-- What chat and channel messaging features will you include?
-- Will you allow team owners and members to create channels?
+- What chat and channel messaging features will you include in your pilot?
+- Will you create teams from scratch or from a [team template](/microsoftteams/get-started-with-teams-templates-in-the-admin-console)?
 
 #### Best practice
 
 Keep the channels simple. We recommend resisting the urge to create a channel for every possible area of conversation and instead keep things simple. It’s okay if channels are created over time as needed.
-
-<!-- :::image type="content" source="media/firstline-worker-channels-tab.png" alt-text="Screenshot of Channels tab":::-->
 
 After you set up your teams and channels, configure frontline apps that you want to use in the pilot, including:
 
@@ -160,7 +138,7 @@ If you're iterating your pilot and adding new features over time, this feedback 
 
 #### Best practice
 
-Nurture your champions and highlight your wins. Reward your frontline workers for embracing these new tools and using them in innovative ways that relate to business outcomes for your company. This, above anything, will ensure continued adoption of Teams and value to your company.
+Nurture your champions and highlight your wins. Reward your frontline workers for embracing these new tools and using them in innovative ways that relate to business outcomes for your company. This helps ensure continued adoption of Teams and value to your company.
 
 ### Iterate and expand
 
@@ -169,6 +147,6 @@ Now that you successfully completed your first pilot with an initial group of fr
 - Expand the number of teams.
   - Instead of one location, can you do one region?
 - Expand features and capabilities.
-  - Was there a key feature that your frontline workers suggested that wasn't indcluded in the initial feature set?
+  - Was there a key feature that your frontline workers suggested that wasn't included in the initial feature set?
 
 We recommend working through this process as many times as needed to arrive at a solution, set of best practices, and training documentation for your frontline workers.
