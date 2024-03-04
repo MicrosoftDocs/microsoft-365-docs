@@ -86,6 +86,8 @@ Here's an explanation of how Microsoft Copilot for Microsoft 365 works:
 
 - Copilot returns the response to the app, where the user can review and assess the response.
 
+We refer to the user’s prompt and Copilot’s response to that prompt as the “content of interactions” and the record of those interactions is the user’s Copilot interaction history.
+
 Microsoft Copilot for Microsoft 365 iteratively processes and orchestrates these sophisticated services to help produce results that are relevant to your organization because they're contextually based on your organizational data.
 
 ## Semantic Index
