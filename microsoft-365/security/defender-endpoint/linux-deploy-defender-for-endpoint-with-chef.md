@@ -4,6 +4,7 @@ description: Learn how to deploy Defender for Endpoint on Linux with Chef.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro

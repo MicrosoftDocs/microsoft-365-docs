@@ -4,6 +4,7 @@ description: Troubleshoot performance issues in Microsoft Defender for Endpoint 
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 ms.date: 01/18/2023
 manager: deniseb
