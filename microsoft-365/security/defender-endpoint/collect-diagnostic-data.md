@@ -56,7 +56,11 @@ On at least two devices that are experiencing the same issue, obtain the `.cab` 
 
 1. Navigate to the directory for Microsoft Defender Antivirus. 
 
-   Cd C:\ProgramData\Microsoft\Windows Defender\Platform\<version>
+   
+   ```
+   cd C:\ProgramData\Microsoft\Windows Defender\Platform\<version>
+
+   ```
    
 3. Type the following command, and then press **Enter**
 
