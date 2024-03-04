@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 01/11/2024
+ms.date: 02/29/2024
 
 ---
 
@@ -32,7 +32,7 @@ To start using Shifts, frontline managers are responsible for configuring Shifts
 As an admin, you can now standardize these Shifts settings across all your frontline teams and manage them centrally by deploying Shifts to your frontline teams at scale in the Teams admin center. You can select which capabilities to turn on or off and create schedule groups and time-off reasons that will be set uniformly across all your frontline teams. Your frontline managers can start using Shifts straight out-of-the-box with minimal setup required.
 
 > [!IMPORTANT]
-> This feature will begin rolling out for public preview in December 2023. Capabilities to edit Shifts settings configurations after the first deployment will come soon.
+> This feature will begin rolling out for public preview in December 2023.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ As an admin, you can now standardize these Shifts settings across all your front
 
 ## Set up Shifts for your frontline teams
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline apps**.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline apps**.
 1. On the Manage frontline apps page, next to **Deploy Shifts to your teams** in the table, select **Set up**.
 
     :::image type="content" source="media/dsas-setup.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing the Set up button for deploying Shifts. "lightbox="media/dsas-setup.png":::
@@ -93,6 +93,9 @@ You can choose to allow schedule owners to create and manage schedule groups or 
     > To find the Group ID of a group, sign in to the [Azure portal](https://portal.azure.com/), select **Microsoft Entra ID**, and then choose **Groups**. Select the group you want, and then copy the value in the **Object Id** field.
 
 1. Choose one of the following options to define how schedule groups are managed:
+    > [!IMPORTANT]
+    > You won't be able to change your selection after you submit it for setup.  
+
     - **Schedule groups are created and managed by schedule owners**: Your schedule owners create and manage schedule groups for their teams. They can add, rename, and delete schedule groups in Shifts.
     - **Schedule groups are created and managed in the Teams admin center**: You create and manage the schedule group structure for Shifts. Your schedule owners won't be able to add, rename, or delete schedule groups in Shifts. With this option, you can standardize schedule groups across teams, which allows for automating workflows in Shifts across different teams.
 1. If you chose the option to create and manage schedule groups in the Teams admin center, select **Add** to add schedule groups.
@@ -106,7 +109,7 @@ You can choose to allow schedule owners to create and manage schedule groups or 
 
 ### Review and finish setup
 
-Review your settings. If you need to make changes, select **Back**, and edit the settings that you want. When you're ready, select **Finish setup**.
+Review your settings. If you need to make changes, select **Back**, and change the settings that you want. When you're ready, select **Finish setup**.
 
 > [!NOTE]
 > If you haven’t deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center, there may be an error after you finish the setup wizard. If an error occurs, wait 15 minutes and try again.
@@ -144,13 +147,33 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 
     :::image type="content" source="media/dsas-deploy-completed.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing a deployment status of Deployed. "lightbox="media/dsas-deploy-completed.png":::
 
-    You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed. Keep in mind that you can't redeploy Shifts to teams that already have Shifts enabled. The capability to edit Shifts settings configurations for your teams after the first deployment will be supported in the future.
+    You can repeat this process to deploy Shifts to any of your frontline teams that don't already have it deployed. Keep in mind that you can't redeploy Shifts to teams that already have Shifts enabled.
+
+## Edit Shifts settings
+
+1. If you want to edit the Shifts settings that you set previously, select **Deploy Shifts to your teams**. This allows you to edit Shifts settings for teams you already deployed Shifts to and for teams you deploy Shifts to in the future.
+
+    :::image type="content" source="media/dsas-deploy-completed.png" alt-text="Screenshot of the table on the Manage frontline apps page, showing the Deploy Shifts to your teams option. "lightbox="media/dsas-deploy-completed.png":::
+
+1. You'll see all your Shifts settings including shift request settings, time-off reasons, schedule owner group ID, and schedule group settings.
+
+    :::image type="content" source="media/dsas-edit-settings.png" alt-text="Screenshot of the Shifts settings page for editing Shifts settings" lightbox="media/dsas-edit-settings.png":::
+
+    - You can turn on or turn off shift request settings, time-off requests, and clock in/clock out by switching the toggles to **On** or **Off**.
+
+    - You can add, edit, and delete time-off reasons as you did during initial setup. However, you can't edit the time-off codes for the time-off reasons that you set previously.
+
+    - You can change the schedule owner group ID that identifies the group that contains all schedule owners.  
+
+    - You won’t be able to change your schedule group management selection from **Schedule groups are created and managed by schedule owners** to **Schedule groups are created and managed in the Teams admin center** or vice versa. If you previously chose the option to create and manage schedule groups in the Teams admin center, you can add, edit, and delete schedule groups as you did during initial setup. However, you can't edit the schedule group codes for any of the schedule groups that you set previously.  
+
+1. After you make your edits, choose **Apply**. This action applies the changes to all teams that you already deployed Shifts to. These Shifts settings are also applied to any new teams you deploy Shifts to.
 
 ## Troubleshoot errors
 
 If an error occurred during the deployment process, the status in the table shows as **Error** after you refresh the Manage frontline apps page.
 
-Select the link to download an error CSV file and use the information in it to help resolve the errors. Then, rerun the [deployment experience](#deploy-shifts-to-your-frontline-teams).  
+Select the link to download an error CSV file and use the information in it to help resolve the errors. If any errors occurred during setup of your Shifts settings, choose **Deploy Shifts to your teams** to resubmit or edit your Shifts settings. Then, rerun the [deployment experience](#deploy-shifts-to-your-frontline-teams).
 
 ## Related articles
 

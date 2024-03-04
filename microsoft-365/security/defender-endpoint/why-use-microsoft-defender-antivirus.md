@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 - mde-ngp
 search.appverid: met150
-ms.date: 02/18/2024
+ms.date: 02/29/2024
 ---
 
 # Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint
@@ -44,7 +44,7 @@ Although you can use a non-Microsoft antivirus solution with Microsoft Defender 
 |1|Antivirus signal sharing|Microsoft applications and services share signals across your enterprise organization, providing a stronger single platform. See [Insights from the MITRE ATT&CK-based evaluation of Microsoft Defender for Endpoint](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).|
 |2|Threat analytics and your score for devices|Microsoft Defender Antivirus collects underlying system data used by [threat analytics](/microsoft-365/security/defender-endpoint/threat-analytics) and [Microsoft Secure Score for Devices](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices). This provides your organization's security team with more meaningful information, such as recommendations and opportunities to improve your organization's security posture.|
 |3|Performance|Microsoft Defender for Endpoint is designed to work with Microsoft Defender Antivirus, so you get better performance when you use these offerings together. [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md) and [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/evaluate-mde).|
-|4|Details about blocked malware|More details and actions for blocked malware are available with Microsoft Defender Antivirus and Microsoft Defender for Endpoint. [Understand malware & other threats](/windows/security/threat-protection/intelligence/understanding-malware).|
+|4|Details about blocked malware|More details and actions for blocked malware are available with Microsoft Defender Antivirus and Microsoft Defender for Endpoint. [Understand malware & other threats](/microsoft-365/security/defender-endpoint/malware/understanding-malware).|
 |5|Attack surface reduction|Your organization's security team can reduce your vulnerabilities (attack surfaces), giving  attackers fewer ways to perform attacks. Attack surface reduction uses cloud protection for a number of rules. [Get an overview of attack surface reduction](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction).|
 |6|Network protection|Your organization's security team can protect your network by blocking specific URLs and IP addresses. [Protect your network](/microsoft-365/security/defender-endpoint/network-protection).|
 |7|Indicators, such as file, IP address, URL, and/or certificate allow or block indicators |Your organization's security team can import threat intel, which blocks known Indicators of Compromise (IoC's) [Get an overview of Indicator of compromise (IoC)](/microsoft-365/security/defender-endpoint/manage-indicators).|
