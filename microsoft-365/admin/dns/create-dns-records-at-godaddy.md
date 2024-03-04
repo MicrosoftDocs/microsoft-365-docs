@@ -204,7 +204,7 @@ To verify the record in Microsoft 365:
 
 4. Choose **TXT** from the drop-down list.
 
-   :::image type="content" source="../../media\dns-godaddy\godaddy-domains-TXT-save.png" alt-text="Select TXT from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-save.png" alt-text="Select TXT from the Type drop-down list.":::
 
 5. In the boxes for the new record, type or copy and paste the following values.
 
@@ -306,7 +306,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **DNS**.
 
-   :::image type="content" source="../../media\dns-godaddy\godaddy-manage-dns.png" alt-text="Select DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select DNS from the drop-down list.":::
 
 3. Under **Records**, select **ADD**.
 
