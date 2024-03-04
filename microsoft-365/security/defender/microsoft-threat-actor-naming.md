@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 02/29/2024
+ms.date: 03/04/2024
 ---
 
 # How Microsoft names threat actors
@@ -44,7 +44,7 @@ Threat actors within the same weather family are given an adjective to distingui
 The table shows how the new family names map to the threat actors that we track.
 
 |Actor category|Type|Family name|
-|---|:---:|:---:|
+|:---:|:---:|:---:|
 |Nation-state|China<br>Iran<br>Lebanon<br>North Korea<br>Russia<br>South Korea<br>Turkey<br>Vietnam|Typhoon<br>Sandstorm<br>Rain<br>Sleet<br>Blizzard<br>Hail<br>Dust<br>Cyclone|
 |Financially motivated|Financially motivated|Tempest|
 |Private sector offensive actors|PSOAs|Tsunami|
@@ -54,7 +54,7 @@ The table shows how the new family names map to the threat actors that we track.
 Use the following reference table to understand how our previously publicly disclosed old threat actor names translate to our new taxonomy.
 
 |Threat actor name|Previous name|Origin/Threat|Other names|
-|---|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|
 |Aqua Blizzard|ACTINIUM|Russia|UNC530, Primitive Bear, Gamaredon|
 |Blue Tsunami||Private sector offensive actor|Black Cube|
 |Brass Typhoon|BARIUM|China|APT41|
@@ -186,4 +186,4 @@ GetThreatActorAlias("ZINC")
 The following files containing the comprehensive mapping of old threat actor names with their new names are also available:
 
 - [JSON format](https://github.com/microsoft/mstic/blob/master/PublicFeeds/ThreatActorNaming/MicrosoftMapping.json)
-- [downloadable Excel](https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/microsoft-threat-actor-list.xlsx)
+- [downloadable Excel](https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/microsoft-threat-actor-list.xls)
