@@ -87,7 +87,7 @@ Please note that the following products currently support this feature:
 - Viva Pulse
 - Viva Topics
 - Viva Amplify
-- Teams (Pending production rollout - Updates via Message Center Post MC705761 and Roadmap ID 375694)
+- Teams
 
 > [!NOTE]
 > The supported products list will be updated as each product migrates to support the setting and no action will be required as these products onboard to the centralized setting. 
