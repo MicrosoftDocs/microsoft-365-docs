@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.collection: privacy-microsoft365
 description: "Learn how Microsoft Copilot for Microsoft 365 uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 03/01/2024
+ms.date: 03/04/2024
 ---
 
 # Data, Privacy, and Security for Microsoft Copilot for Microsoft 365
@@ -88,9 +88,9 @@ For European Union (EU) users, we have additional safeguards to comply with the 
 
 ## Microsoft Copilot for Microsoft 365 and data residency
 
-Copilot for Microsoft 365 is upholding data residency commitments as outlined in the Microsoft Product Terms and Data Protection Addendum. Copilot will be added as a covered workload in the data residency commitments in Microsoft Product Terms later in 2024.
+Copilot for Microsoft 365 is upholding data residency commitments as outlined in the Microsoft Product Terms and Data Protection Addendum. Copilot for Microsoft 365 was added as a covered workload in the data residency commitments in Microsoft Product Terms on March 1, 2024.
 
-Microsoft [Advanced Data Residency (ADR)](/microsoft-365/enterprise/advanced-data-residency) and [Multi-Geo Capabilities](/microsoft-365/enterprise/microsoft-365-multi-geo) offerings will include data residency commitments for Copilot for Microsoft 365 customers later in 2024. For EU customers, Copilot for Microsoft 365 is an EU Data Boundary service. Customers outside the EU may have their queries processed in the US, EU, or other regions.
+Microsoft [Advanced Data Residency (ADR)](/microsoft-365/enterprise/advanced-data-residency) and [Multi-Geo Capabilities](/microsoft-365/enterprise/microsoft-365-multi-geo) offerings include data residency commitments for Copilot for Microsoft 365 customers as of March 1, 2024. For EU customers, Copilot for Microsoft 365 is an EU Data Boundary service. Customers outside the EU may have their queries processed in the US, EU, or other regions.
 
 ## Microsoft Copilot for Microsoft 365 and web content
 
