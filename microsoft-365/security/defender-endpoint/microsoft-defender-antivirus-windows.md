@@ -73,7 +73,7 @@ For [Microsoft Endpoint Data Loss Prevention](/purview/endpoint-dlp-getting-star
 
 To enhance your endpoint security experience, Microsoft is releasing the Microsoft Defender Core service to help with the stability and performance of Microsoft Defender Antivirus. For customers who are using Microsoft Endpoint Data Loss Prevention in the small, medium, and enterprise business sectors, Microsoft is splitting the codebase to its own service.  
 
-The Microsoft Defender Core service is releasing with [Microsoft Defender Antivirus platform version 4.18.23110.2009](microsoft-defender-antivirus-updates.md#october-2023-platform-418231002009--engine-11231002009).
+The Microsoft Defender Core service is releasing with [Microsoft Defender Antivirus platform version 4.18.23110.2009](./msda-updates-previous-versions-technical-upgrade-support.md#october-2023-platform-418231002009--engine-11231002009).
 
 - Rollout begins in November 2023 to prerelease customers, with plans to release to all enterprise customers in the coming months.
 
