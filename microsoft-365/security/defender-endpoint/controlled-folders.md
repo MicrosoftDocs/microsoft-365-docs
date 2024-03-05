@@ -129,8 +129,6 @@ You can review the Windows event log to see events that are created when control
 
 The following table shows events related to controlled folder access:
 
-<br/><br/>
-
 |Event ID|Description|
 |---|---|
 |5007|Event when settings are changed|
