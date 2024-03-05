@@ -22,7 +22,7 @@ ms.collection:
 
 # User Testing in Multi-Geo
 
-In Microsoft Entra there are two types of user objects: cloud only users and synchronized users. Please follow the appropriate instructions for your type of user.
+In Microsoft Entra there are two types of user objects: cloud only users and synchronized users. Follow the appropriate instructions for your type of user.
 
 >[!TIP]
 >We recommend that you begin validations with a test user or small group of users before rolling out multi-geo to your broader organization.
@@ -38,11 +38,9 @@ Follow the process in <a href="/azure/active-directory/hybrid/how-to-connect-syn
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
 >[!IMPORTANT]
->For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is synchronized to Microsoft Entra ID for the changes to propagate before the user logs in to OneDrive for Business. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
+>For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is synchronized to Microsoft Entra ID for the changes to propagate before the user logs in to OneDrive. (Setting the preferred data location before the user logs in to provision their OneDrive ensures that the user's new OneDrive will be provisioned in the correct location.)
 
 ## Setting Preferred Data Location (PDL) for cloud only users
-
-If your company's users are not synchronized from an on-premises Active Directory system to Microsoft Entra ID, meaning they are created in Microsoft 365 or Microsoft Entra ID, then the PDL must be set using the Microsoft Azure Active Directory module for Windows PowerShell.
 
 >[!NOTE]
 > The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
@@ -71,18 +69,18 @@ $user = Get-MgUser -UserId $userUPN
 Update-MgUser -UserId $user.Id -PreferredDataLocation EUR
 ```
 
-You can check to confirm that the preferred data location was updated properly by navigating to the Microsoft 365 Admin Center and selecting **Settings > Users > Acive Users > <user name>**. Select the user from the list, and you will find Preferred Data Location under the **Account** tab of the user's page.
+You can check to confirm that the preferred data location was updated properly by navigating to the Microsoft 365 Admin Center and selecting **Settings > Users > Active Users > <user name>**. Select the user from the list, and you'll find Preferred Data Location under the **Account** tab of the user's page.
 
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
 >[!IMPORTANT]
->For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is set for the changes to propagate before the user logs in to OneDrive. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
+>For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is set for the changes to propagate before the user logs in to OneDrive. (Setting the preferred data location before the user logs in to provision their OneDrive ensures that the user's new OneDrive will be provisioned in the correct location.)
 
-## OneDrive for Business Provisioning and the effect of PDL
+## OneDrive Provisioning and the effect of PDL
 
-If the user already has a OneDrive for Business site created in the _Tenant_, setting their PDL will not automatically move their existing OneDrive. To move a user's OneDrive, see [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md).
+If the user already has a OneDrive site created in the _Tenant_, setting their PDL won't automatically move their existing OneDrive. To move a user's OneDrive, see [OneDrive Geo Move](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
 > Exchange Online automatically relocates the user's mailbox if the PDL changes and the MailboxRegion no longer matches the Mailbox Database Geo Location code. For more information, see [Administering Exchange Online mailboxes in a multi-geo environment](administering-exchange-online-multi-geo.md).
 
-If the user does not have a OneDrive for Business site within the _Tenant_, OneDrive for Business will be provisioned for them in accordance to their PDL value, assuming the PDL for the user matches one of the company's satellite locations.
+If the user doesn't have a OneDrive site within the _Tenant_, OneDrive will be provisioned for them in accordance to their PDL value, assuming the PDL for the user matches one of the company's satellite locations.
