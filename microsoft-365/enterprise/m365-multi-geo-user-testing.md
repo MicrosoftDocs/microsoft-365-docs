@@ -69,7 +69,7 @@ $user = Get-MgUser -UserId $userUPN
 Update-MgUser -UserId $user.Id -PreferredDataLocation EUR
 ```
 
-You can check to confirm that the preferred data location was updated properly by navigating to the Microsoft 365 Admin Center and selecting **Settings > Users > Active Users > <user name>**. Select the user from the list, and you'll find Preferred Data Location under the **Account** tab of the user's page.
+You can check to confirm that the preferred data location was updated properly by navigating to the Microsoft 365 Admin Center and selecting **Settings > Users > Active Users > [username]**. Select the user from the list, and you'll find Preferred Data Location under the **Account** tab of the user's page.
 
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
