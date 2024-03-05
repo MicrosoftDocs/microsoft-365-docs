@@ -65,5 +65,5 @@ The OCR service supports multiple solutions, as shown in the following table. Fo
 
 - Images uploaded after OCR has been enabled are the only ones that are scanned.
 
-- Currently, images that are embedded in Office documents aren't supported.
+- Images that are embedded in Office documents aren't supported.
 
