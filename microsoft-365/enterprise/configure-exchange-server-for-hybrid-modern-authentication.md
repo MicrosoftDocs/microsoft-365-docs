@@ -71,7 +71,7 @@ Requirements about linked mailboxes to be inserted.
 
 Run the commands that assign your on-premises web service URLs as Microsoft Entra SPNs. SPNs are used by client machines and devices during authentication and authorization. All the URLs that might be used to connect from on-premises to Microsoft Entra ID must be registered in Microsoft Entra ID (including both internal and external namespaces).
 
-1. First, connect to Microsoft Entra ID with [these instructions](connect-to-microsoft-365-powershell.md) and run the following commands on your Microsoft Entra ID server:
+1. First, run the following commands on your Microsoft Exchange Server:
 
     ```powershell
     Get-MapiVirtualDirectory | FL server,*url*
@@ -87,7 +87,7 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 2. Next, connect to Microsoft Entra ID with [these instructions](connect-to-microsoft-365-powershell.md). To consent to the required permissions, run the following command:
 
    ```powershell
-   Connect-MgGraph -Scopes Application.Read.All, Application.ReadWrite.All.
+   Connect-MgGraph -Scopes Application.Read.All, Application.ReadWrite.All
    ```
 
 3. For your Exchange-related URLs, type the following command:

@@ -2,9 +2,9 @@
 title: Configure and review priority account protection in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.date: 6/19/2023
 audience: ITPro
 ms.topic: how-to

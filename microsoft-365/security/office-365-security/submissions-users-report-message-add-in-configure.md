@@ -2,9 +2,9 @@
 title: Enable the Report Message or the Report Phishing add-ins
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.reviewer: dhagarwal
 ms.topic: how-to

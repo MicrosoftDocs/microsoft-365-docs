@@ -1,6 +1,6 @@
 ---
 title: Set preferences for Microsoft Defender for Endpoint on Linux
-ms.reviewer:
+ms.reviewer: gopkr
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
 ms.service: defender-endpoint
 ms.author: siosulli
@@ -407,6 +407,9 @@ When this feature is enabled, Defender for Endpoint will scan network socket eve
 ### Cloud-delivered protection preferences
 
 The *cloudService* entry in the configuration profile is used to configure the cloud-driven protection feature of the product.
+
+> [!NOTE]
+> Cloud-delivered protection is applicable with any Enforcement level settings (real_time, on_demand, passive).
 
 |Description|Value|
 |---|---|

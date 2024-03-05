@@ -85,7 +85,7 @@ The following steps with guide you how to create a multi-tenant Microsoft Entra 
 
    After you're done filling out the form, select **Register**.
 
-   :::image type="content" source="../..//media/atp-api-new-app-partner.png" alt-text="An application's registration sections in the Microsoft Defender portal" lightbox="../..//media/atp-api-new-app-partner.png":::
+   :::image type="content" source="../../media/atp-api-new-app-partner.png" alt-text="An application's registration sections in the Microsoft Defender portal" lightbox="../..//media/atp-api-new-app-partner.png":::
 
 4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**. Your app can now access Microsoft Defender XDR.
 
