@@ -109,31 +109,31 @@ If the problem goes away, follow the next steps:
 
  
 
-Find what component in Network Protection is contributing to the behavior.  Disable the following in order and test after disabling each:
+   Find what component in Network Protection is contributing to the behavior.  Disable the following in order and test after disabling each:
 
  
 
-1. [Disable Datagram Processing on Windows Server](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+   1. [Disable Datagram Processing on Windows Server](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
-1. [Disable Network Protection Perf Telemetry](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+   1. [Disable Network Protection Perf Telemetry](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
-1. [Disable FTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+   1. [Disable FTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
-1. [Disable SSH parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+   1. [Disable SSH parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
-1. [Disable RDP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+   1. [Disable RDP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
-1. [Disable HTTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+   1. [Disable HTTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
-1. [Disable SMTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+   1. [Disable SMTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
-1. [Disable DNS over TCP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+   1. [Disable DNS over TCP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
-1. [Disable DNS parsing ](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps) 
+   1. [Disable DNS parsing ](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps) 
 
-1. [Disable inbound connection filtering](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+   1. [Disable inbound connection filtering](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
-1. [Disable TLS parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+   1. [Disable TLS parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
 ## Collect diagnostic data for file submissions
 
