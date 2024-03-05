@@ -3,7 +3,7 @@ title: Protect important folders from ransomware from encrypting your files with
 description: Files in default folders can be protected from being changed by malicious apps. Prevent ransomware from encrypting your files.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 01/06/2023
+ms.date: 03/05/2024
 author: siosulli
 ms.author: siosulli
 audience: ITPro
