@@ -30,7 +30,7 @@ The Health dashboard is designed to give you a snapshot of the overall health of
 
 ## Steps: Health dashboard in the Microsoft 365 admin center
 
-1. Sign in to the admin center, and then from the view menu, select the dropdown and choose **Health**.
+Sign in to the admin center, and then from the view menu, select the dropdown and choose **Health**.
 
 :::image type="content" source="../../media/new-health-dashboard-location.jpg" alt-text="Screenshot: Choose Health from Microsoft 365 admin center View menu":::
 
