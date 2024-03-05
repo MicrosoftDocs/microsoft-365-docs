@@ -132,7 +132,7 @@ $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application key here
 
 $sourceAppIdUri = 'https://api.securitycenter.microsoft.com/.default'
-$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/v2.0/token"
 $authBody = [Ordered] @{
     scope = "$sourceAppIdUri"
     client_id = "$appId"
