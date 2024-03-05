@@ -51,6 +51,7 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-
 
 > [!NOTE]
 > Updates are released under the following KBs:
+>
 > - Microsoft Defender Antivirus: KB2267602
 > - System Center Endpoint Protection: KB2461484
 
@@ -96,6 +97,23 @@ All our updates contain
 - Performance improvements
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
+
+### February-2024 (Platform: 4.18.24010.12 | Engine: 1.1.24010.10)
+
+- Security intelligence update version:
+- Release date:  
+- Platform: 
+- Engine: 
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Improved support for virtualizing zips while compressing or decompressing files
+- Improved reporting in the Microsoft Defender portal for block-only remediations
+
+#### Known issues
+
+- None
 
 ### January-2024 (Platform: 4.18.24010.12 | Engine: 1.1.24010.10)
 
