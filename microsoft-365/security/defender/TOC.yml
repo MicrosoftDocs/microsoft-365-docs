@@ -139,19 +139,19 @@
       - name: Protect your identities
         items:
           - name: Sensor settings and health
-            href: ../defender-identity/sensor-health.md
+            href: /defender-for-identity/sensor-settings?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: Directory Services account
-            href: ../defender-identity/directory-service-accounts.md
+            href: /defender-for-identity/deploy/directory-service-accounts?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: VPN integration
-            href: ../defender-identity/vpn-integration.md
+            href: /defender-for-identity/vpn-integration?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: Set entity tags
-            href: ../defender-identity/entity-tags.md
-          - name: Manage security alerts
-            href: ../defender-identity/manage-security-alerts.md
+            href: /defender-for-identity/entity-tags?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Investigate Defender for Identity alerts
+            href: /defender-for-identity/manage-security-alerts?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: Configure detection exclusions
-            href: ../defender-identity/exclusions.md
+            href: /defender-for-identity/exclusions?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: Email and syslog notifications
-            href: ../defender-identity/notifications.md
+            href: /defender-for-identity/notifications?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
       - name: Protect your Office 365 workloads
         href: ../office-365-security/index.yml
       - name: Create Custom Defender XDR reports
@@ -417,11 +417,7 @@
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
        - name: Endpoint Attack Notifications
-         items:
-              - name: Endpoint Attack Notifications
-                href: ../defender-endpoint/endpoint-attack-notifications.md
-              - name: Experts on Demand
-                href: ../defender-endpoint/experts-on-demand.md
+         href: ../defender-endpoint/endpoint-attack-notifications.md
        - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview
@@ -620,8 +616,6 @@
               href: ../defender-endpoint/threat-indicator-concepts.md 
       - name: Microsoft Security Resources
         items: 
-          - name: Safety Scanner download
-            href: safety-scanner-download.md
           - name: Threat actor naming
             href: microsoft-threat-actor-naming.md
           - name: Malware names

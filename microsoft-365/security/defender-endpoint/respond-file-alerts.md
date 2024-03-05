@@ -24,7 +24,6 @@ ms.date: 08/07/2023
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -45,6 +44,9 @@ Response actions run along the top of the file page, and include:
 - Manual actions
 - Go hunt
 - Deep analysis
+
+> [!NOTE]
+> If you're using Defender for Endpoint Plan 1, you can take certain response actions manually. For more information, see [Manual response actions](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1#manual-response-actions).
 
 You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** action.
 
@@ -252,12 +254,6 @@ See [manage indicators](manage-indicators.md) for more details on blocking and r
 To stop blocking a file, remove the indicator. You can do so via the **Edit Indicator** action on the file's profile page. This action will be visible in the same position as the **Add Indicator** action, before you added the indicator.
 
 You can also edit indicators from  the **Settings** page, under **Rules** \> **Indicators**. Indicators are listed in this area by their file's hash.
-
-## Consult a threat expert
-
-Select Ask Defender Experts to get more insights from Microsoft experts on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
-
-See [Ask Defender Experts](experts-on-demand.md) for details.
 
 ## Check activity details in Action center
 
