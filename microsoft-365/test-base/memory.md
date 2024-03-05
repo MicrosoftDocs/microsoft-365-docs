@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Memory Regression Analysis
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Test Base helps you more clearly notice significant memory usage increases in the test VMs running your apps. Performance metrics, such as memory usage, can be indicative of overall application health and we believe this addition will greatly help keep your apps performing optimally.
 
 Read on for more details or watch this video for a quick walk-through of the latest improvements.
