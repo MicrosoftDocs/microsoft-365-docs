@@ -33,7 +33,7 @@ The Office Activation report gives you a view of which users have activated thei
   
 You can view the activations in the Office 365 report by choosing the **Activations** tab.
 
-:::image type="content" alt-text="Microsoft 365 reports - Microsoft Office 365 activation." source="../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png" lightbox="../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png":::
+:::image type="content" alt-text="Screenshot shows Microsoft 365 reports - Microsoft Office 365 activation." source="../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png" lightbox="../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png":::
 
 Select **Choose columns** to add or remove columns from the report.  
 
