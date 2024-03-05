@@ -128,6 +128,7 @@ To note, Active users of Word, Excel and PowerPoint is incomplete prior to Jan 2
 > - Typing a message into the chat window and submitting.
 > - Selecting a prompt from the "Try these Prompts" section, which will automatically copy the prompt into the chat box.
 > - Clicking on one of the suggestions from the "Stay on top" tab in some platforms (such as Microsoft365.com).
+
 > Note that automated prompts are not included in this feature.
 
 >[!IMPORTANT]
