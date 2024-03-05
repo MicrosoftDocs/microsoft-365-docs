@@ -31,7 +31,9 @@ The Office Activation report gives you a view of which users have activated thei
   
 ## Interpret the Office activations report
   
-You can view the activations in the Office 365 report by choosing the **Activations** tab.<br/>![Microsoft 365 reports - Microsoft Office 365 activation.](../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png)
+You can view the activations in the Office 365 report by choosing the **Activations** tab.
+
+:::image type="content" alt-text="Microsoft 365 reports - Microsoft Office 365 activation." source="../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png" lightbox="../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png":::
 
 Select **Choose columns** to add or remove columns from the report.  
 
@@ -42,14 +44,14 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Item|Description|
 |:-----|:-----|
 |**Metric**|**Definition**|
-|Username  <br/> |The email address of the user.  <br/> |
-|Display name  <br/> |The full name of the user.  <br/> |
-|Product licenses  <br/> |The products that are assigned to this user.  <br/> |
-|Last activated date(UTC)  <br/> |The date the user activated Microsoft 365 on a desktop or a device.  <br/> |
-|Activation on Windows computers  <br/> |The number of Windows desktops a user activated Microsoft 365 on.  <br/> |
-|Activation on Mac computers <br/> |The number of Mac desktops a user activated Microsoft 365 on.|
-|Activation on Windows 10 phones and tablets  <br/> |The number of Windows 10 mobile devices a user activated Microsoft 365 on.  <br/> |
-|Activation on iOS phones and tablets  <br/> |The number of iOS devices a user activated Microsoft 365 on.|
-|Activation on Android phones and tablets  <br/> |The number of Android devices a user activated Microsoft 365 on.  <br/> |
+|Username |The email address of the user. |
+|Display name |The full name of the user. |
+|Product licenses |The products that are assigned to this user. |
+|Last activated date(UTC) |The date the user activated Microsoft 365 on a desktop or a device. |
+|Activation on Windows computers |The number of Windows desktops a user activated Microsoft 365 on. |
+|Activation on Mac computers |The number of Mac desktops a user activated Microsoft 365 on.|
+|Activation on Windows 10 phones and tablets |The number of Windows 10 mobile devices a user activated Microsoft 365 on. |
+|Activation on iOS phones and tablets |The number of iOS devices a user activated Microsoft 365 on.|
+|Activation on Android phones and tablets |The number of Android devices a user activated Microsoft 365 on. |
 |Used Shared Computer Activation |This is true if the user used Microsoft 365 through shared computer activation.|
-|||
+
