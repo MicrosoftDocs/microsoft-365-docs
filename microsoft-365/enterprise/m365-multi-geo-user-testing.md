@@ -9,13 +9,15 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 11/29/2023
+ms.date: 03/05/2024
 ms.custom:
   - it-pro
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # User Testing in Multi-Geo
@@ -42,21 +44,34 @@ We recommend that you include setting the user's Preferred Data Location as a pa
 
 If your company's users are not synchronized from an on-premises Active Directory system to Microsoft Entra ID, meaning they are created in Microsoft 365 or Microsoft Entra ID, then the PDL must be set using the Microsoft Azure Active Directory module for Windows PowerShell.
 
-The procedures in this section require the <a href="https://www.powershellgallery.com/packages/MSOnline/1.1.166.0" target="_blank">Microsoft Azure Active Directory Module for Windows PowerShell Module</a>. If you already have this module installed, please ensure you update to the latest version.
+>[!NOTE]
+> The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
-[Connect and sign in](connect-to-microsoft-365-powershell.md) with a set of global administrator credentials for your _Tenant_.
+First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
 
-Use the [Set-MsolUser](/powershell/module/msonline/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
+Assigning and removing licenses for a user requires the **User.ReadWrite.All** permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
 
-```PowerShell
-Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR
+```powershell
+Connect-Graph -Scopes User.ReadWrite.All
 ```
 
-You can check to confirm that the preferred data location was updated properly by using the Get-MsolUser cmdlet. For example:
+Use the following script format:
 
 ```PowerShell
-(Get-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation
+$userUPN="<user's UPN>"
+$user = Get-MgUser -UserId $userUPN
+Update-MgUser -UserId $user.Id -PreferredDataLocation <international location code>
 ```
+
+In this example, you set the user adelev@contoso.com's preferred data location to EUR:
+
+```powershell
+$userUPN="adelev@contoso.com"
+$user = Get-MgUser -UserId $userUPN
+Update-MgUser -UserId $user.Id -PreferredDataLocation EUR
+```
+
+You can check to confirm that the preferred data location was updated properly by navigating to the Microsoft 365 Admin Center and selecting **Settings > Users > Acive Users > <user name>**. Select the user from the list, and you will find Preferred Data Location under the **Account** tab of the user's page.
 
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
