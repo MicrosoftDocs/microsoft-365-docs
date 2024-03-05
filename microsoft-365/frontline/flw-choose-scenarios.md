@@ -137,4 +137,4 @@ With code from scratch or by using templated and sample code, you can build cust
 
 ### Viva Connections extensibility
 
-Developers can extend Viva Connections for building engaging experiences with the widely adopted [SharePoint Framework (SPFx)](/sharepoint/dev/spfx/sharepoint-framework-overview). Learn more about [Viva Connections extensibility](/sharepoint/dev/spfx/viva/overview-viva-connections).
+Many components of the Viva Connections experience can be customized and extended. Learn more about [Viva Connections extensibility](/sharepoint/dev/spfx/viva/overview-viva-connections).
