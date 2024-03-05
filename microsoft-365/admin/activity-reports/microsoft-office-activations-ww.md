@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center Office activations reports"
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 12/07/2020
+ms.date: 03/04/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -15,12 +15,6 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- GEA150
-ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: "Learn how to get an Office Activation report to know which users have activated their Microsoft 365 subscription, and identify users that might need additional help."
 ---
 
@@ -43,7 +37,7 @@ Select **Choose columns** to add or remove columns from the report.
 
 ![Office 365 activations report - choose columns.](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. 
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis.
 
 |Item|Description|
 |:-----|:-----|
@@ -59,4 +53,3 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Activation on Android phones and tablets  <br/> |The number of Android devices a user activated Microsoft 365 on.  <br/> |
 |Used Shared Computer Activation |This is true if the user used Microsoft 365 through shared computer activation.|
 |||
-   

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/21/2023
+ms.date: 03/04/2024
 audience: Admin
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
@@ -24,7 +24,6 @@ ms.custom:
 - seo-marvel-may2020
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
-ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Learn about how to upgrade Microsoft Office to the latest Microsoft 365 apps for users in your organization.
 ms.topic: article
 ---
