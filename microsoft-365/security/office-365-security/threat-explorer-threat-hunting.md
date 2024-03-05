@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: conceptual
-ms.date: 2/23/2024
+ms.date: 3/5/2024
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
@@ -165,11 +165,15 @@ These actions are available in the **All email**, **Malware**, or **Phish** view
 
   :::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png" alt-text="The actions available in the details tab after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png":::
 
+> [!TIP]
+> The **Move & delete** actions in **Message actions** and the **Move to mailbox folder** actions in :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** require the **Search and Purge** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned to the **Data Investigator** and **Organization Management** role groups. Members of only the **Security Administrators** role group don't see these actions. You can add the members of the group to the **Data Investigator** role group, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the same roles as **Security Administrator**, and then add the **Search and Purge** role to the custom role group.
+
 #### Remediate using Message actions
 
-The available actions after you select a messages and then select **Message actions** for Threat Explorer and Real-time detections are described in the following lists:
+In Threat Explorer and Real-time detections, selecting one or more messages enables **Message actions** on the **Email** tab (view) in the details area of the view:
 
-- Available **Message actions** in the **All email**, **Malware** and **Phish** views in Threat Explorer:
+- In Threat Explorer, the available **Message actions** in the **All email**, **Malware**, and **Phish** views are described in the following list:
+
   - **Move & delete**
     - Move to junk folder
     - Move to deleted items
@@ -185,7 +189,7 @@ The available actions after you select a messages and then select **Message acti
   - **Start new submission**
     - Submit to Microsoft
 
-- Available **Message actions** in the **Malware** and **Phish** views in Real-time detections:
+- In Real-time detectionsAvailable, the available **Message actions** in the **Malware** and **Phish** views are described in the following list:
   - **Start new submission**
     - Report clean
     - Report phishing
@@ -227,7 +231,7 @@ When you select an action, a remediation wizard opens:
    When you're finished on the **Review and trigger action** page, select **Next**.
 
 4. The **Submit actions** page contains the following information:
-   - The unique **Approval ID** value (for example, `d5f139`) an a link to the **History** tab of the **Action Center** at <https://security.microsoft.com/action-center/history>.
+   - The unique **Approval ID** value (for example, `d5f139`) and a link to the **History** tab of the **Action Center** at <https://security.microsoft.com/action-center/history>.
    - The following information about the email message:
      - **Date**
      - **Recipient**
@@ -244,7 +248,7 @@ When you select an action, a remediation wizard opens:
    1. On the **Create a remediation investigation** page, select one of the following values:
       - **Create a new remediation**: When you select **Next**, you go to the **Name your remediation** page.
         1. On the **Name your remediation** page, enter a unique, descriptive name and an optional description to track and identify the selected action, and then select **Next**.
-        2. On the **Determine severity** page, select the **Severity** level (**High**, **Medium** or **Low**; **High** is the default), and then select **Next**.
+        2. On the **Determine severity** page, select the **Severity** level (**High**, **Medium**, or **Low**; **High** is the default), and then select **Next**.
 
       - **Add to an existing remediation**: When you select **Next**, you go to the **Choose an existing remediation** page where you select the existing remediation from the **Submit emails to the following remediations** list, and then select **Next**.
 
@@ -311,59 +315,56 @@ Selecting an action from the **Start new submission** category in Real-time dete
 
 #### Remediate using Take action
 
-After you click on the **Subject** value of an entry in the table, selecting :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** at the top of the flyout opens the **Take action** wizard in a new flyout.
+After you click on the **Subject** value of an entry in the details table of the **Email** tab (view), selecting :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** at the top of the flyout opens the **Take action** wizard in a new flyout.
 
 :::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png" alt-text="x":::
 
-1. On the **Choose response actions** page, configure the following options:
-   - **Show all response actions**: By default, only actions that apply to the selected entity (message or file) are available. To show all response actions, slide the toggle to :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**.  <!--- Not available in MDOP1 tenant--->
+1. On the **Choose response actions** page, select one or more of the following options in the **Email message actions** section:
 
-   - **Email message actions** section: Select one or more of the available options:
+   - **Move to mailbox folder**: Select one of the available values that appear:
+     - **Junk**: Move the message to the Junk Email folder.
+     - **Inbox**: Move the message to the Inbox.
 
-     - **Move to mailbox folder**: Select one of the available values that appear: <!--- Security Administrator is not enough--->
-       - **Junk**: Move the message to the Junk Email folder.
-       - **Inbox**: Move the message to the Inbox.
+       If the message has the value **Quarantine** for the **Latest delivery location** property, selecting **Inbox** releases the message from quarantine as described on the page. Select one of the following values that appears:
 
-         If the message has the value **Quarantine** for the **Latest delivery location** property, selecting **Inbox** releases the message from quarantine as described on the page. Select one of the following values that appears:
+       - **Release to one or more of the original recipients of the email**
+       - **Release to all recipients**.
 
-         - **Release to one or more of the original recipients of the email**
-         - **Release to all recipients**.
+     - **Deleted items**: Move the message to the Deleted items folder.
+     - **Soft deleted items**: Delete the message from the Deleted items folder (move to the Recoverable Items\Deletions folder). The message is recoverable by the user and admins.
+     - **Hard deleted items**: Purge the deleted message. Admins can recover hard deleted items using single-item recovery. For more information about hard deleted and soft deleted items, see [Soft-deleted and hard-deleted items](/compliance/assurance/assurance-exchange-online-data-deletion#soft-deleted-and-hard-deleted-items).
 
-       - **Deleted items**: Move the message to the Deleted items folder.
-       - **Soft deleted items**: Delete the message from the Deleted items folder (move to the Recoverable Items\Deletions folder). The message is recoverable by the user and admins.
-       - **Hard deleted items**: Purge the deleted message. Admins can recover hard deleted items using single-item recovery. For more information about hard deleted and soft deleted items, see [Soft-deleted and hard-deleted items](/compliance/assurance/assurance-exchange-online-data-deletion#soft-deleted-and-hard-deleted-items).
+   - **Submit to Microsoft for review**: Select one of the available values that appear:
+     - **I've confirmed it's clean**: Select this value if you're sure that the message is clean. The following options appear:
+       - **Allow messages like this**: If you select this value, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
+         - **Remove entry after**: The default value is **1 day**, but you can also select **7 days**, **30 days**, or a **Specific date** that's less than 30 days.
+         - **Allow entry note**: Enter an optional note that contains additional information.
+     - **It appears clean** or **It appears suspicious**: Select one of these values if you're unsure and you want a verdict from Microsoft.
+     - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+       - **Phish**
+       - **Malware**
+       - **Spam**
 
-     - **Submit to Microsoft for review**: Select one of the available values that appear:
-       - **I've confirmed it's clean**: Select this value if you're sure that the message is clean. The following options appear:
-         - **Allow messages like this**: If you select this value, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
-           - **Remove entry after**: The default value is **1 day**, but you can also select **7 days**, **30 days**, or a **Specific date** that's less than 30 days.
-           - **Allow entry note**: Enter an optional note that contains additional information.
-       - **It appears clean** or **It appears suspicious**: Select one of these values if you're unsure and you want a verdict from Microsoft.
-       - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
-         - **Phish**
-         - **Malware**
-         - **Spam**
+       After you select one of those values, a **Select entities to block** flyout opens where you can select one or more entities associated with the message (sender address, sender domain, URLs, or file attachments) to add as block entries to the Tenant Allow/Block list.
 
-         After you select one of those values, a **Select entities to block** flyout opens where you can select one or more entities associated with the message (sender address, sender domain, URLs, or file attachments) to add as block entries to the Tenant Allow/Block list.
+       After you select the items to block, select **Add to block rule** to close the **Select entities to block** flyout. Or, select no items and then select **Cancel**.
 
-         After you select the items to block, select **Add to block rule** to close the **Select entities to block** flyout. Or, select no items and then select **Cancel**.
+       Back on the **Choose response actions** page, select an expiration option for the block entries:
 
-         Back on the **Choose response actions** page, select an expiration option for the block entries:
+       - :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: **Expire on**: Select a date for block entries to expire.
+       - :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **Never expire**
 
-         - :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: **Expire on**: Select a date for block entries to expire.
-         - :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **Never expire**
+       The number of blocked entities is shown (for example, **4/4 entities to be blocked**). Select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** to reopen the **Add to block rule** and make changes.
 
-         The number of blocked entities is shown (for example, **4/4 entities to be blocked**). Select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** to reopen the **Add to block rule** and make changes.
+   - **Initiate automated investigation**: Threat Explorer only. Select one of the following values that appear:
+     - **Investigate email**
+     - **Investigate recipient**
+     - **Investigate sender**
+     - **Contact recipients**
 
-     - **Initiate automated investigation**: Threat Explorer only. Select one of the following values that appear:
-       - **Investigate email**
-       - **Investigate recipient**
-       - **Investigate sender**
-       - **Contact recipients**
-
-     - **Propose remediation**: Select one of the following values that appear:  <!--- Security Administrator is not enough--->
-       - **Create new**: This value triggers a soft delete email pending action that needs to be approved by an admin in the Action center.
-       - **Add to existing**: Use this value to apply actions to this email message from an existing remediation. In the **Submit email to the following remediations** box, select the existing remediation.
+   - **Propose remediation**: Select one of the following values that appear:
+     - **Create new**: This value triggers a soft delete email pending action that needs to be approved by an admin in the Action center.
+     - **Add to existing**: Use this value to apply actions to this email message from an existing remediation. In the **Submit email to the following remediations** box, select the existing remediation.
 
    When you're finished on the **Choose response actions** page, select **Next**.
 

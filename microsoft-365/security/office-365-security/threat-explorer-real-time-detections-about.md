@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: conceptual
-ms.date: 2/27/2024
+ms.date: 3/5/2024
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
@@ -67,8 +67,8 @@ To use Explorer or Real-time detections, you need to be assigned permissions. Yo
   - _Remediate malicious email_: **Security operations/Security data/Email advanced actions (manage)**.
 - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
   - _Full access_: Membership in the **Organization Management** or **Security Administrator** role groups. More permissions are required to do all available actions:
-    - _Preview and download messages_: Membership in the **Data Investigator** or **eDiscovery Manager** role groups. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) and add the **Preview** role to it.
-    - _Delete messages from mailboxes_: Membership in the **Data Investigator** or **Organization Management** role groups. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) and add the **Search and Purge** role to it.
+    - _Preview and download messages_: Membership in the **Data Investigator** or **eDiscovery Manager** role groups. Or, [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the same roles as **Organization Management** or **Security Administrator**, and then add the **Preview** role.
+    - _Move messages in and delete messages from mailboxes_: Membership in the **Data Investigator** or **Organization Management** role groups. Or, [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the same roles as **Security Administrator**, and then add the **Search and Purge** role.
   - _Read-only access_: Membership in the **Security Reader** role group.
 - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
   - _Full access_: Membership in the **Global Administrator** or **Security Administrator** roles.
@@ -221,7 +221,7 @@ The filterable properties that are available in the **Delivery action** box in t
 
 There are scenarios where **Original delivery location**/**Latest delivery location** and/or **Delivery action** have the value **Unknown**. For example:
 
-- The message was delivered (**Delivery action** is **Delivered**), but an Inbox rule moved the message to a default folder other than the Inbox or Junk Email folder (for example, the Draft or Archive folder) .
+- The message was delivered (**Delivery action** is **Delivered**), but an Inbox rule moved the message to a default folder other than the Inbox or Junk Email folder (for example, the Draft or Archive folder).
 - ZAP attempted to move the message after delivery, but the message wasn't found (for example, the user moved or deleted the message). <!--- In such cases, verify the **Result/Details** column in timeline view. Look for the statement "Message moved or deleted by the user."--->
 
 ² By default, a URL search maps to `http`, unless another value is explicitly specified. For example:
@@ -366,11 +366,17 @@ When you select an entry by clicking on the **Subject** value, a details flyout 
   - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **View header**
   - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
   - :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options**:
-    - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**
-    - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**
+    - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**¹
+    - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**¹
+
+      > [!TIP]
+      > **Download email** isn't available for messages that were quarantined. Instead, [download a password protected copy of the message from quarantine](quarantine-admin-manage-messages-files.md#download-email-from-quarantine).
+
     - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View in Explorer**
     - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Go hunt**
-  <!--- Email preview and Download email aren't available with Security Administrator permissions; Go hunt not always available?--->
+
+¹ The **Email preview** and **Download email** actions require the **Preview** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned to the **Data Investigator** and **eDiscovery Manager** role groups. Members of only the **Organization Management** or **Security Administrators** role groups can't open these actions. You can add the members of the groups to the **Data Investigator** and **eDiscovery Manager** role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the same roles as **Organization Management** or **Security Administrator**, and then add the **Search and Purge** role to the custom role group.
+
 - The following sections are available:
   - **Delivery details** section:
     - **Original threats**
@@ -426,8 +432,8 @@ When you select an entry by clicking on the **Recipient** value, a details flyou
     - Whether the user has permission to see archive information.
     - Whether the user has permission to see retention information.
     - Whether the user is covered by data loss prevention (DLP).
-    - Whether the user is covered by **Mobile management** at <https://portal.office.com/EAdmin/Device/IntuneInventory.aspx> <!-- Security Administrator can't open the page--->
-- **Email section**: A table showing the following related information for messages sent to the recipient:
+    - Whether the user is covered by **Mobile management** at <https://portal.office.com/EAdmin/Device/IntuneInventory.aspx>. <!-- Security Administrator can't open the page--->
+- **Email** section: A table showing the following related information for messages sent to the recipient:
   - **Date**
   - **Subject**
   - **Recipient**
@@ -442,7 +448,16 @@ When you select an entry by clicking on the **Recipient** value, a details flyou
 
   If there are more than three recent alerts, select **View all recent alerts** to see all of them.
 
-  - **Recent activity** section <!-- -Security Administrator can't open the page. You do not have permission to run audit search cmdlet.--->
+  - **Recent activity** section: Shows the summarized results of an [Audit log search](/purview/audit-new-search) for the recipient:
+    - **Date**
+    - **IP address**
+    - **Activity**
+    - **Item**
+
+    If the recipient has more than three audit log entries, select **View all recent activity** to see all of them.
+
+   > [!TIP]
+   > Members of the **Security Administrators** role group in [Email & collaboration permissions](mdo-portal-permissions.md) can't expand the **Recent activity** section. You need to be a member of a role group in [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) that has the **Audit Logs**, **Information Protection Analyst**, or **Information Protection Investigator** roles assigned. By default, those roles are assigned to the **Records Management**, **Compliance Management**, **Information Protection**, **Information Protection Analysts**, **Information Protection Investigators**, and **Organization Management** role groups. You can add the members of **Security Administrators** to those role groups, or you can [create a new role group](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients#use-the-eac-to-assign-permissions-to-individual-mailboxes) with with the **Audit Logs** role assigned.
 
 :::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png" alt-text="The details flyout after you select a recipient in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png":::
 
@@ -800,7 +815,7 @@ The following table shows the columns that are available in Threat Explorer and 
 > - Remove columns from the view.
 > - Zoom out in your web browser.
 
-When you select one or more entries from the list by selecting the check box next to the first column, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
+When you select one or more entries from the list by selecting the check box next to the first column, **Message actions** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
 
 When you click on the **Subject** or **Recipient** values in an entry, details flyouts open. These flyouts are described in the following subsections.
 
@@ -823,7 +838,7 @@ The **Top malware families** view for the details area organizes the data into a
 
   If you select a malware family name, a details flyout opens that contains the following information:
 
-  - **Email section**: A table showing the following related information for other messages sent to the recipient:
+  - **Email** section: A table showing the following related information for messages that contain the malware file:
     - **Date**
     - **Subject**
     - **Recipient**
@@ -1082,7 +1097,7 @@ The following table shows the columns that are available in Threat Explorer and 
 > - Remove columns from the view.
 > - Zoom out in your web browser.
 
-In Threat Explorer, when you select one or more entries from the list by selecting the check box next to the first column, the :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
+When you select one or more entries from the list by selecting the check box next to the first column, **Message actions** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
 
 When you click on the **Subject** or **Recipient** values in an entry, details flyouts open. These flyouts are described in the following subsections.
 
@@ -1323,10 +1338,23 @@ When you select a filename value from the **Name** column, a details flyout open
   - **Last modified by**
   - **File size**
   - **File owner**
-- **Recent activity**
+- **Email list** section: A table showing the following related information for messages that contain the malware file:
+    - **Date**
+    - **Subject**
+    - **Recipient**
 
-<!--- > [!TIP]
-> If the file was detected by the [built-in virus protection in SharePoint, OneDrive, and Microsoft Teams](anti-malware-protection-for-spo-odfb-teams-about.md) (the **Detected by** value is **Antimalware engine**), an **Email list** section is also available. -->
+    Select **View all email** to open Threat Explorer in a new tab filtered by the malware family name.
+
+- **Recent activity**: Shows the summarized results of an [Audit log search](/purview/audit-new-search) for the recipient:
+    - **Date**
+    - **IP address**
+    - **Activity**
+    - **Item**
+
+    If the recipient has more than three audit log entries, select **View all recent activity** to see all of them.
+
+   > [!TIP]
+   > Members of the **Security Administrators** role group in [Email & collaboration permissions](mdo-portal-permissions.md) can't expand the **Recent activity** section. You need to be a member of a role group in [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) that has the **Audit Logs**, **Information Protection Analyst**, or **Information Protection Investigator** roles assigned. By default, those roles are assigned to the **Records Management**, **Compliance Management**, **Information Protection**, **Information Protection Analysts**, **Information Protection Investigators**, and **Organization Management** role groups. You can add the members of **Security Administrators** to those role groups, or you can [create a new role group](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients#use-the-eac-to-assign-permissions-to-individual-mailboxes) with with the **Audit Logs** role assigned.
 
 :::image type="content" source="../../media/te-rtd-content-malware-view-details-area-documents-tab-filename-flyout.png" alt-text="x" lightbox="../../media/te-rtd-content-malware-view-details-area-documents-tab-filename-flyout.png":::
 
