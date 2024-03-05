@@ -63,6 +63,7 @@ Refining focus in Explorer or Real-time detection can be thought of in layers. T
 
 > [!TIP]
 > If Sec Ops uses **Tags** to mark accounts they consider high valued targets, they can make selections like *Phish View with a Tags filter focus (include a date range if used)*. This will show them any phishing attempts directed at their high value user targets during a time-range (like dates when certain phishing attacks are happening a lot for their industry).
+> If Sec Ops are hunting for attacks based on malicious URLs embedded within QR codes, the URL source filter will allow them to search for emails with URLs extracted from QR codes. 
 
 With the new version of Threat Explorer, users can use the following new dropdown options with four new operators on the filters:
 
