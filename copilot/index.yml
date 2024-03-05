@@ -36,6 +36,8 @@ additionalContent:
               url: /MicrosoftSearch/semantic-index-for-copilot
             - text: Copilot for Microsoft 365 Service Description
               url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
+            - text: Copilot for Microsoft 365 - best practice with SharePoint
+              url: /SharePoint/sharepoint-copilot-best-practices/
         # Card
         - title: Get started with Copilot for Microsoft 365
           links:
