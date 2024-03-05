@@ -23,9 +23,13 @@ ms.date: 02/16/2024
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business?branch=main)
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -47,11 +51,12 @@ There are four steps to troubleshooting these problems:
 Network protection works on devices with the following conditions:
 
 > [!div class="checklist"]
->
-> - Endpoints are running Windows 10 Pro or Enterprise edition, version 1709 or higher.
+> > - Endpoints are running Windows 10 Pro or Enterprise edition, version 1709 or higher.
 > - Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [See what happens when you're using a non-Microsoft antivirus solution](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > - [Real-time protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) is enabled.
+> - [Behavior Monitoring is enabled](/microsoft-365/security/defender-endpoint/behavior-monitor).
 > - [Cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) is enabled.
+> - [Cloud Protection network connectivity is functional](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 > - Audit mode isn't enabled. Use [Group Policy](enable-network-protection.md#group-policy) to set the rule to **Disabled** (value: **0**).
 
 ## Use audit mode
@@ -89,6 +94,46 @@ The current exclusion options are:
 2. Using IP exclusions: `Add-MpPreference -ExclusionIpAddress 192.168.1.1`.
 
 3. Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
+
+## Network Performance issues
+
+You might experience slow network connections to Domain Controllers and/or Exchange servers.  You might also notice Event ID 5783 NETLOGON errors.
+
+Solution: Change Network Protection from ‘block mode’ to either ‘[audit mode](/microsoft-365/security/defender-endpoint/troubleshoot-np?view=o365-worldwide)’ or ‘disabled’
+
+If the problem does not go away, more than likely it’s something else.
+
+ 
+
+If the problem goes away, follow the next steps:
+
+ 
+
+Find what component in Network Protection is contributing to the behavior.  Disable the following in order and test after disabling each:
+
+ 
+
+1. [Disable Datagram Processing on Windows Server](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+
+1. [Disable Network Protection Perf Telemetry](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+
+1. [Disable FTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+
+1. [Disable SSH parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+
+1. [Disable RDP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+
+1. [Disable HTTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+
+1. [Disable SMTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+
+1. [Disable DNS over TCP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+
+1. [Disable DNS parsing ](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps) 
+
+1. [Disable inbound connection filtering](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+
+1. [Disable TLS parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
 ## Collect diagnostic data for file submissions
 
