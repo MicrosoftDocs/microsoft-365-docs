@@ -63,7 +63,7 @@ The OCR service supports multiple solutions, as shown in the following table. Fo
 
 - Images must be at least 50 x 50 pixels and not larger than 16,000 x 16,000 pixels.
 
-- Images uploaded after OCR has been enabled are the only ones that are scanned.
+- Images uploaded after OCR has been enabled are the only images that are scanned.
 
 - Images that are embedded in Office documents aren't supported.
 
