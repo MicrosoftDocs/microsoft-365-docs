@@ -98,18 +98,18 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
-### February-2024 (Platform: 4.18.24010.12 | Engine: 1.1.24010.10)
+### February-2024 (Engine: 1.1.24020.xx | Platform: 4.18.24020.xx)
 
-- Security intelligence update version:
-- Release date:  
-- Platform: 
-- Engine: 
+- Security intelligence update version: **x.xxx.xxx.x**
+- Release date: **March 6, 2024** (Engine) / **To be confirmed** (Platform)
+- Platform: **4.18.24020.xx**
+- Engine: **1.1.24020.xx**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
 
-- Improved support for virtualizing zips while compressing or decompressing files
-- Improved reporting in the Microsoft Defender portal for block-only remediations
+- Improved support for virtualizing while compressing or decompressing zip files
+- Improved reporting in the Microsoft Defender XDR portal for block-only remediations
 
 #### Known issues
 
