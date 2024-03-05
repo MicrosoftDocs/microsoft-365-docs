@@ -199,7 +199,7 @@ The following actions are available in the **Move & delete** category:
 - **Move to Junk folder**: Move the message to the Junk Email folder.
 - **Move to Deleted Items**: Move the message to the Deleted items folder.
 - **Soft delete**: Delete the message from the Deleted items folder (move to the Recoverable Items\Deletions folder). The message is recoverable by the user and admins.
-- **Hard delete**: Purge the deleted message. Admins can recover hard deleted items using single-item recovery. For more information about hard deleted and soft deleted items, see [Soft-deleted and hard-deleted items](https://learn.microsoft.com/compliance/assurance/assurance-exchange-online-data-deletion#soft-deleted-and-hard-deleted-items).
+- **Hard delete**: Purge the deleted message. Admins can recover hard deleted items using single-item recovery. For more information about hard deleted and soft deleted items, see [Soft-deleted and hard-deleted items](/compliance/assurance/assurance-exchange-online-data-deletion#soft-deleted-and-hard-deleted-items).
 - **Move to Inbox**: Move the message to the Inbox.
 
 > [!TIP]
@@ -331,7 +331,7 @@ After you click on the **Subject** value of an entry in the table, selecting :::
 
        - **Deleted items**: Move the message to the Deleted items folder.
        - **Soft deleted items**: Delete the message from the Deleted items folder (move to the Recoverable Items\Deletions folder). The message is recoverable by the user and admins.
-       - **Hard deleted items**: Purge the deleted message. Admins can recover hard deleted items using single-item recovery. For more information about hard deleted and soft deleted items, see [Soft-deleted and hard-deleted items](https://learn.microsoft.com/compliance/assurance/assurance-exchange-online-data-deletion#soft-deleted-and-hard-deleted-items).
+       - **Hard deleted items**: Purge the deleted message. Admins can recover hard deleted items using single-item recovery. For more information about hard deleted and soft deleted items, see [Soft-deleted and hard-deleted items](/compliance/assurance/assurance-exchange-online-data-deletion#soft-deleted-and-hard-deleted-items).
 
      - **Submit to Microsoft for review**: Select one of the available values that appear:
        - **I've confirmed it's clean**: Select this value if you're sure that the message is clean. The following options appear:
