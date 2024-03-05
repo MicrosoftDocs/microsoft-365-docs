@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: siosulli
 ms.author: siosulli
-ms.reviewer: oogunrinde
+ms.reviewer: oogunrinde, yongrhee
 manager: deniseb
 ms.subservice: asr
 ms.topic: how-to
@@ -15,7 +15,7 @@ ms.collection:
 - tier3
 - mde-asr
 search.appverid: met150
-ms.date: 02/16/2024
+ms.date: 03/03/2024
 ---
 
 # Troubleshoot network protection
