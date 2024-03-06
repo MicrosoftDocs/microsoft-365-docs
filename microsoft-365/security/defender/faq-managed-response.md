@@ -27,7 +27,7 @@ ms.date: 01/30/2024
 
 - [Microsoft Defender XDR](microsoft-365-defender.md)
 
-The following section lists down questions you or your SOC team might have regarding [managed response](start-using-mdex-xdr.md#managed-detection-and-response).
+The following section lists down questions you or your SOC team might have regarding [managed response](managed-detection-and-response-xdr.md).
 
 | Questions | Answers |
 |---------|---------|
@@ -40,6 +40,6 @@ The following section lists down questions you or your SOC team might have regar
 
 ### See also
 
-[Start using Defender Experts for XDR service](start-using-mdex-xdr.md)
+[Managed detection and response](managed-detection-and-response-xdr.md)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
