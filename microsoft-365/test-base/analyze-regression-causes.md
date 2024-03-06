@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Analyzing the Causes of Regressions
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 In order to understand the cause of a Memory or CPU utilization regression, you have various data sources and tools that you can utilize to assist you. As part of the Windows Assessment and Deployment Kit (Windows ADK), Windows Performance Recorder (WPR) is a performance recording tool based on Event Tracing for Windows (ETW). This tool assists you in gathering the right data from which you can gain an understanding of the cause(s) of a regression. It records system and application events in an .etl file, which you will thereafter use as input to the Windows Performance Analyzer (WPA). you can also use WPR and WPA together to investigate specific areas of performance and to gain an overall understanding of resource consumption.
 
 Once a regression is detected, you can download the Windows Performance Analyzer toolkit and analyze reasons for Memory or CPU performance regressions, that is, after you provide the above mentioned .etl file as input to the WPA.
