@@ -29,7 +29,7 @@ ms.date: 02/28/2024
 
 Microsoft Defender for Endpoint includes next-generation protection to catch and block all types of emerging threats. The majority of modern malware is polymorphic, meaning it constantly mutates to evade detection. As soon as one variant is identified, another takes its place. This rapid evolution underscores the need for agile and innovative security solutions.
 
-Next-generation protections, such as Microsoft Defender Antivirus blocks malware using local and cloud-based machine learning models, behavior analysis, and heuristics. Microsoft Defender Antivirus uses predictive technologies, machine learning, applied science, and artificial intelligence to detect and block malware at the first sign of abnormal behavior.
+Next-generation protections, such as [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) blocks malware using local and cloud-based machine learning models, behavior analysis, and heuristics. Microsoft Defender Antivirus uses predictive technologies, machine learning, applied science, and artificial intelligence to detect and block malware at the first sign of abnormal behavior.
 
 In addition to Microsoft Defender Antivirus, your next-generation protection services include the following capabilities:
 
