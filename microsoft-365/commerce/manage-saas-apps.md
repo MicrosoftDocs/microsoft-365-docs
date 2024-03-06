@@ -35,7 +35,7 @@ You can manage licenses and billing for third-party apps in the <a href="https:/
 
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a Global admin or Billing account owner.
@@ -108,7 +108,7 @@ Third-party apps each have a billing profile assigned to them. Billing profiles 
 - **Contact information** –  Billing address and a contact name
 - **Roles** – Roles that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchase.
 
-For more information about billing profiles, see [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md).
+For more information about billing profiles, see [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 
 ### Edit the billing profile on a third-party app subscription
 
@@ -283,4 +283,4 @@ A CSP can buy an offer in the Partner Center in their customer's currency so tha
 
 ## Related content
 
-[Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md) (article)\
+[Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md) (article)\

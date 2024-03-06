@@ -63,6 +63,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "_memdocs",
+      "url": "https://github.com/MicrosoftDocs/memdocs-pr/",
+      "branch": "main",
+      "branch_mapping": {}
+    }, 
+    {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "main",

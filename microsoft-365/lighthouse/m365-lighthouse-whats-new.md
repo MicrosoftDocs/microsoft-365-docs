@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 11/17/2023
+ms.date: 2/16/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -32,6 +32,56 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
 
+## January 2024
+
+### Track upcoming subscription renewals
+
+To help you prioritize and drive subscription renewal discussions with customers more effectively, we've added a page to Microsoft 365 Lighthouse that lets you track customer subscriptions that are expiring within the next 90 days.
+
+To access this new page, in the left navigation pane in Lighthouse, select **Sales Advisor (Project Orland)** > **Upcoming renewals**.
+
+If you're new to Sales Advisor, you must be a Lighthouse Account Manager in your partner tenant to access the **Upcoming renewals** page. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). If you already have access to Sales Advisor, you don't need the Lighthouse Account Manager role at this time.
+
+The **Upcoming renewals** page lists all customer subscriptions, sorted by subscription expiration date. You can sort and filter the list by expiration date, billing frequency, recurring billing status, number of licenses, and more. To make it easier to see all expiring subscriptions for each tenant, switch to the **Group list by tenant** view. 
+
+[Go to the Upcoming renewals page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/UpcomingRenewals.ReactView) 
+
+To learn more, see "Optimize your renewal conversations with simplified renewal insights" in [Blog post: Unlock the Copilot opportunity and grow your CSP business with Microsoft 365 Lighthouse](https://go.microsoft.com/fwlink/?linkid=2257055).
+
+### Microsoft Copilot opportunities in Sales Advisor
+
+We've added Microsoft Copilot opportunities to Sales Advisor to help you identify customers who are eligible to buy Microsoft Copilot for Microsoft 365. Microsoft Copilot is an AI companion that works everywhere you do and intelligently adapts to your needs.
+
+To access Copilot opportunities, in the left navigation pane in Microsoft 365 Lighthouse, select **Sales Advisor (Project Orland)** > **Opportunities**, and then select the **Customer growth** tab.
+
+Select a Copilot opportunity to see customer insights, suggested actions, and resources to engage with the customer.
+
+[Go to the Opportunities page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/OrlandInsights.ReactView)
+
+To learn more, see [Blog post: Unlock the Copilot opportunity and grow your CSP business with Microsoft 365 Lighthouse](https://go.microsoft.com/fwlink/?linkid=2257335).
+
+### Assign GDAP template settings automatically after customer approval of GDAP relationships
+
+You can now set up granular delegated admin privileges (GDAP) for any customer tenant&mdash;regardless of which delegated relationship has already been set up&mdash;without the need for extra steps after a GDAP relationship is activated. Assign a GDAP template to any customer tenant in Microsoft 365 Lighthouse, and once the customer approves the relationship, the security groups and support roles are automatically applied. There's no need to re-run GDAP Setup or take extra steps after a relationship is activated to apply all GDAP template settings.
+
+To assign a GDAP template, go to the **Home** page of Lighthouse and select **Set up GDAP** on the **GDAP Setup** card.
+
+[Go to GDAP Setup now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/SetupGdap.ReactView)
+
+To learn more, see [Set up GDAP for your customers in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md).
+
+### Manage Sales Advisor access with new Lighthouse Account Manager role
+
+You can now manage Sales Advisor access directly from the Lighthouse permissions page in Microsoft 365 Lighthouse. Assign the Lighthouse Account Manager role to users in your partner tenant who need full access to Sales Advisor pages, data across the entire partner tenant, and capabilities like the ability to export data.
+
+To assign the Lighthouse Account Manager role, go to **Permissions** > **Lighthouse permissions**.
+
+Stay tuned for the announcement of additional Lighthouse management roles that you can use to further manage partner-tenant permissions in Lighthouse.
+
+[Go to the Lighthouse permissions page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/RBAC.ReactView)
+
+To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
+
 ## October 2023
 
 ### Data availability insights
@@ -54,16 +104,6 @@ Data availability insights have been added to the following pages:
 
 To see the insights, go to any of these pages in Lighthouse.
 
-### Assign GDAP template settings automatically after customer approval of GDAP relationships
-
-You can now set up granular delegated admin privileges (GDAP) for any customer tenant&mdash;regardless of which delegated relationship has already been set up&mdash;without the need for extra steps after a GDAP relationship is activated. Assign a GDAP template to any customer tenant in Microsoft 365 Lighthouse and, once the customer approves the relationship, the security groups and support roles are automatically applied. There's no need to re-run GDAP Setup or take extra steps after a relationship is activated to apply all GDAP template settings.
-
-To assign a GDAP template, go to the **Home** page of Lighthouse and select **Set up GDAP** on the **GDAP Setup** card.
-
-[Go to GDAP Setup now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/SetupGdap.ReactView)
-
-To learn more, see [Set up GDAP for your customers in Microsoft 365 Lighthouse](m365-lighthouse-setup-gdap.md).
-
 ## September 2023
 
 ### Windows event logs
@@ -71,6 +111,10 @@ To learn more, see [Set up GDAP for your customers in Microsoft 365 Lighthouse](
 The **Windows event logs** page in Microsoft 365 Lighthouse uses artificial intelligence (AI) to generate suggestions for mitigating issues found in Windows event logs. The "Collect Windows event logs" baseline enables collection of managed device event logs. After records have been ingested, you can view them by selecting **Devices** > **Windows event logs** in the left navigation pane in Lighthouse. To see additional details, select any log entry.
 
 [Go to the Windows event logs page now](https://lighthouse.microsoft.com/view/Microsoft_Intune_MTM/WindowsEventLogs.ReactView)
+
+### Quick actions on the Home page
+
+You can now perform common actions like adding a new user, tagging your tenants, accessing other admin centers, and more from the Microsoft 365 Lighthouse Home page. The new command bar at the top of the Home page helps you find and perform these actions whenever you need them.
 
 ## August 2023
 

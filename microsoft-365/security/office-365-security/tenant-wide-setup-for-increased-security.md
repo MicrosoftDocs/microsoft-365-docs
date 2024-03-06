@@ -4,10 +4,9 @@ f1.keywords:
   - NOCSH
 ms.author: bcarter
 author: BrendaCarter
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 ms.collection: 
   - Ent_O365

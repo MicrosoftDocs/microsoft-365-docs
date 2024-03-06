@@ -1,18 +1,14 @@
 ---
 title: Protect important folders from ransomware from encrypting your files with controlled folder access
 description: Files in default folders can be protected from being changed by malicious apps. Prevent ransomware from encrypting your files.
-keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
 ms.service: defender-endpoint
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 01/06/2023
-author: denisebmsft
-ms.author: deniseb
+ms.date: 03/05/2024
+author: siosulli
+ms.author: siosulli
 audience: ITPro
-ms.reviewer: oogunrinde, sugamar 
-manager: dansimp
+ms.reviewer: sugamar 
+manager: deniseb
 ms.custom: asr
 ms.subservice: asr
 ms.topic: how-to
@@ -133,13 +129,13 @@ You can review the Windows event log to see events that are created when control
 
 The following table shows events related to controlled folder access:
 
-<br/><br/>
-
 |Event ID|Description|
 |---|---|
 |5007|Event when settings are changed|
 |1124|Audited controlled folder access event|
 |1123|Blocked controlled folder access event|
+|1127|Blocked controlled folder access sector write block event|
+|1128|Audited controlled folder access sector write block event|
 
 ## View or change the list of protected folders
 

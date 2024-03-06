@@ -4,11 +4,11 @@ description: Learn about the new features and functionality available in the lat
 keywords: what's new in Microsoft Defender for Office 365, ga, generally available, capabilities, available, new
 search.appverid: met150
 f1.keywords: NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 ms.localizationpriority: medium
 ms.date: 2/2/2024
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -37,6 +37,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
+
+## February 2024
+
+- **Hunting and responding to QR code-based attacks**: Security teams will now be able to see the URLs extracted from QR codes with "QR code" as URL source in Email Entity URL tab, and "QRCode" in "UrlLocation" column of EmailUrlInfo table in Advanced Hunting. Users can also filter for emails having URLs embedded within QR codes using "URL Source" filter in Threat Explorer which now supports "QR code" option.
 
 ## January 2024
 
