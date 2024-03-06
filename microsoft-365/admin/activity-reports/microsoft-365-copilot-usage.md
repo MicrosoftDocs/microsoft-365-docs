@@ -20,14 +20,14 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Learn how to get the Microsoft 365 Copilot usage report and gain insights into the Microsoft 365 Copilot activity in your organization."
+description: "Learn how to get the Microsoft 365 Copilot usage report and gain insights into the Copilot for Microsoft 365 activity in your organization."
 ---
 
 # Microsoft 365 reports in the Admin Center – Copilot for Microsoft 365 readiness and usage
 
 The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
 
-The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section and Usage section. In the Readiness section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and we will update the documentation once there is improved latency.
+The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section and Usage section. In the Readiness section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and once available, the usage data shown on the report can have up to a maximum of 72 hours latency.
 
 ## How do I get to the Copilot for Microsoft 365 report?
 
