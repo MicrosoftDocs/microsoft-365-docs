@@ -129,7 +129,7 @@ Don’t forget to train your managers on Shifts! If you’re going to include Sh
 
 Measure usage and assess user feedback. Usage reports help you understand usage and activity patterns, and along with user feedback, provide valuable insight.
 
-See [Microsoft 365 reports in the admin center](/microsoft-365/admin/activity-reports/activity-reports), [Microsoft 365 usage analytics](/microsoft-365/admin/usage-analytics/usage-analytics), and [Teams analytics and reporting](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
+See [Microsoft 365 reports in the admin center](../admin/activity-reports/activity-reports.md), [Microsoft 365 usage analytics](../admin/usage-analytics/usage-analytics.md), and [Teams analytics and reporting](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
 
 Empowering your frontline workers is more about people than technology. To understand the impact of Teams, stay focused on your frontline workers’ experience. Survey them before, during and after the pilot in order to understand their needs, pain points, and reactions. You might want to set up a Feedback channel in Teams to collect feedback about their experiences.
 
