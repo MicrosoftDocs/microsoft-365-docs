@@ -592,7 +592,7 @@ Don't exceed 2,000 mailboxes per batch. We strongly recommend submitting batches
 
 ### What if I use Service encryption with Microsoft Purview Customer Key?
 
-The mailbox is decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it's still required. For more information, see [here](/compliance/customer-key-overview).
+The mailbox is decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it's still required. For more information, see [here](/purview/customer-key-overview).
 
 ### What is the estimated migration time?
 
