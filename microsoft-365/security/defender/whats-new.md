@@ -265,7 +265,7 @@ The security operations team can view all actions pending approval, and the stip
 
 - [Trend graph for incidents and alerts in the Microsoft Defender portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425)
 
-  Determine if there are several alerts for a single incident or that your organization is under attack with several different incidents. See [Prioritize incidents](/incident-queue.md) for more information.
+  Determine if there are several alerts for a single incident or that your organization is under attack with several different incidents. See [Prioritize incidents](incident-queue.md) for more information.
 
 ## April 2021
 
