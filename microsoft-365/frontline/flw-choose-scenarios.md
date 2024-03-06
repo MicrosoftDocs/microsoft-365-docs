@@ -48,8 +48,8 @@ Communications solutions connect your frontline workers and allow them to collab
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
-| [Team communication and collaboration](flw-team-collaboration.md) | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Connections<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie, Viva Connections|
-| [Corporate communications](flw-corp-comms.md) | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Stream, and Viva Engage. Bring it all together with Viva Connections. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Engage<br>Viva Connections | Meet, Viva Engage, Viva Connections |
+| [Team communication and collaboration](flw-team-collaboration.md) | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Teams<br>Outlook<br>SharePoint<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie, Viva Connections|
+| [Corporate communications](flw-corp-comms.md) | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, and Viva Engage. Bring it all together with Viva Connections. | Teams<br>Outlook<br>SharePoint | Meet, Viva Engage, Viva Connections |
 
 ## Wellbeing & engagement
 
@@ -59,7 +59,7 @@ Nurture a sense of belonging with your frontline employees by helping them engag
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
-| [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md) | Build deeper connections across your organization and create an inclusive workplace. | Microsoft Teams<br>SharePoint<br>Microsoft Stream<br>Viva Engage<br>Viva Connections| Viva Engage, Viva Connections, Praise |
+| [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md) | Build deeper connections across your organization and create an inclusive workplace. | Teams<br>SharePoint| Viva Engage, Viva Connections, Praise |
 
 ## Training & onboarding
 
@@ -69,8 +69,8 @@ Promote continual growth for your employees and encourage knowledge sharing and 
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
-| [Onboard new employees](flw-onboarding-training.md) | Make new employee onboard a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.| SharePoint<br>Viva Learning<br>Viva Connections<br>Viva Engage| Lists, Viva Learning, Viva Connections, Viva Engage |
-| [Ongoing training](flw-onboarding-training.md#ongoing-training) | After they're onboarded, help your workforce keep their skills up to date with ongoing training in Viva Learning. | SharePoint<br>Viva Learning<br>Viva Connections<br>Viva Engage| Viva Learning, Viva Connections, Viva Engage |
+| [Onboard new employees](flw-onboarding-training.md) | Make new employee onboard a great experience by fostering an all-in-one hybrid work environment where new employees can find important resources, meet people in their organization, and prepare to be successful in their new role.| SharePoint| Lists, Viva Learning, Viva Connections, Viva Engage |
+| [Ongoing training](flw-onboarding-training.md#ongoing-training) | After they're onboarded, help your workforce keep their skills up to date with ongoing training in Viva Learning. | SharePoint| Viva Learning, Viva Connections, Viva Engage |
 
 ## Schedule management
 
@@ -80,7 +80,7 @@ Simplify and streamline schedule coordination with your frontline workforce. Gai
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
-| [Schedule your teams with Shifts](shifts-for-teams-landing-page.md) | Use Shifts and Shifts connectors to schedule your teams and connect with your workforce management tools. | Microsoft Teams | Shifts |
+| [Schedule your teams with Shifts](shifts-for-teams-landing-page.md) | Use Shifts and Shifts connectors to schedule your teams and connect with your workforce management tools. | Teams | Shifts |
 
 ## Digitized processes
 
@@ -94,7 +94,7 @@ Drive operational efficiency by digitizing paper-based processes and automating 
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
-| [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
+| [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
 
 ## Virtual Appointments
 
