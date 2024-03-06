@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 
+ms.date: 03/06/2024
 ---
 
 # Choose your scenarios for Microsoft 365 for frontline workers
@@ -124,7 +124,7 @@ Quickly build custom apps and digital tools for Microsoft Teams, with little or 
 
 ### Microsoft Copilot Studio
 
-With **[Microsoft Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)**, you can quickly create powerful AI-powered copilots using a guided, no-code graphical experience. Give your frontline access to the help they need. Automate frequently asked questions, common business processes, and more.
+With [Microsoft Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio), you can quickly create powerful AI-powered copilots using a guided, no-code graphical experience. Give your frontline access to the help they need. Automate frequently asked questions, common business processes, and more.
 
 ### Custom apps built on the Teams platform
 
