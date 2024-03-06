@@ -807,14 +807,21 @@ In the **View data by System override** and **Chart breakdown by Reason** view, 
 - **TABL - Both URL and file allowed**
 - **TABL - File allowed**
 - **TABL - File blocked**
-- **TABL - Sender allowed**
-- **TABL - Sender blocked**
+- **TABL - Sender email address allow list**
+- **TABL - Sender email address block list**
 - **TABL - URL allowed**
 - **TABL - URL blocked**
 - **Third party filter**
 - **User Safe Domain**
 - **User Safe Sender**
 - **ZAP not enabled**
+- **Sender domain list**
+- **Trusted senders list(Outlook)**
+- **Trusted recipient address list**
+- **Exclusive setting (Outlook)**
+- **Trusted recipient domain list**
+- **Trust contact list - sender in address book**
+- **TABL spoof block**
 
 In the details table below the chart, the following information is available:
 
