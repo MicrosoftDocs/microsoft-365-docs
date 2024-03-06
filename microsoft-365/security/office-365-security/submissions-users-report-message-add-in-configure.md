@@ -183,7 +183,7 @@ Install and configure the Report Message or Report Phishing add-ins for the orga
 
 ### Get the Report Message or the Report Phishing add-ins for your Microsoft 365 GCC or GCC High organization
 
-Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use the steps in this section to get the Report Message or Report Phishing add-ins for their organizations. These steps apply for Outlook and Outlook on the web (formerly known as Outlook Web App or OWA) and are not applicable to the Outlook for iOS ro Android clients.
+Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use the steps in this section to get the Report Message or Report Phishing add-ins for their organizations. These steps apply to Outlook and Outlook on the web (formerly known as Outlook Web App or OWA) and don't apply to Outlook for iOS and Android.
 
 > [!NOTE]
 > It could take up to 24 hours for the add-in to appear in your organization.
