@@ -43,6 +43,9 @@ Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD)
 > Cross-cloud guest access between Microsoft 365 China (21Vianet) and other Microsoft 365 cloud environments is in preview.
 
 > [!NOTE]
+> The use of B2B Member accounts for cross cloud guest access is not supported.  All cross cloud users must be of type B2B Guest.
+
+> [!NOTE]
 > VDI clients aren't supported for cross-cloud guests.
 
 > [!IMPORTANT]
