@@ -38,7 +38,7 @@ Microsoft Defender Antivirus is a major component of your next-generation protec
 
 Microsoft Defender Antivirus provides anomaly detection, a layer of protection for malware that doesn’t fit any predefined pattern. Anomaly detection monitors for process creation events or files that are downloaded from the internet. Through machine learning and cloud-delivered protection, Microsoft Defender Antivirus can stay one step ahead of attackers. Anomaly detection is on by default and can help block attacks such as [3CX Security Alert for Electron Windows App](https://www.3cx.com/blog/news/desktopapp-security-alert/). Microsoft Defender Antivirus started blocking this malware four days before the attack was registered in VirusTotal.  
 
-Modern malware requires modern solutions. In 2015, Microsoft Defender Antivirus moved away from using a static signature-based engine. To a model that uses predictive technologies such as, machine learning, applied science, and artificial intelligence. The scale and scope of today’s ever-evolving malware landscape to keep you and your organizations safe.
+Modern malware requires modern solutions. In 2015, Microsoft Defender Antivirus moved away from using a static signature-based engine to a model that uses predictive technologies such as, machine learning, applied science, and artificial intelligence as this is what's necessary to keep you and your organizations safe from the complexity of today’s ever-evolving malware landscape.
 
 Microsoft Defender Antivirus can block almost all malware at first sight, in milliseconds.
 
