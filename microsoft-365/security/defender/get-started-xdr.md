@@ -178,7 +178,7 @@ The readiness assessment has two parts:
 
 - **Protected assets** – This section shows the current number of protected devices and identities versus the ones that you still need to protect to get the Defender Experts for XDR service started.
 
-  The figures are based on your Defender for Endpoint and Defender for Identity licenses; to achieve these target number of protected assets, [onboard more devices](/microsoft-365/security/defender-endpoint/onboarding) to Defender for Endpoint or [install more Defender for Identity sensors](/defender-for-identity/install-sensor).
+  The figures are based on your Defender for Endpoint and Defender for Identity licenses; to achieve these target number of protected assets, [onboard more devices](../defender-endpoint/onboarding.md) to Defender for Endpoint or [install more Defender for Identity sensors](/defender-for-identity/install-sensor).
 
 > [!IMPORTANT]
 > Defender Experts for XDR reviews your readiness assessment periodically, especially if there are any changes to your environment, such as the addition of new devices and identities. It's important that you regularly monitor and run the readiness assessment beyond the initial onboarding to ensure that your environment has strong security posture to reduce risk.
