@@ -48,7 +48,7 @@ When a mailbox is migrated cross-tenant with this feature, only user-visible con
 ## Licensing
 
 > [!IMPORTANT]
-> As of Nov. 2022, **Cross Tenant User Data Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers, and is required for cross-tenant migrations. User licenses are per migration (one-time fee) and can be assigned either on the source or target user object. This license also covers [OneDrive for Business migration](/microsoft-365/enterprise/cross-tenant-onedrive-migration). Contact your Microsoft account team for details.
+> As of Nov. 2022, **Cross Tenant User Data Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers, and is required for cross-tenant migrations. User licenses are per migration (one-time fee) and can be assigned either on the source or target user object. This license also covers [OneDrive for Business migration](cross-tenant-onedrive-migration.md). Contact your Microsoft account team for details.
 >
 > The Cross Tenant User Data Migration add-on is available as a separate purchase for Microsoft 365 Business Basic, Standard, and Premium; Microsoft 365 F1/F3/E3/E5/; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; and OneDrive for Business.
 
@@ -169,7 +169,7 @@ Now that you've successfully created the migration application and secret, the n
 2. Create a new migration endpoint for Cross-tenant mailbox moves.
 
    > [!NOTE]
-   > You'll need the application ID of the mailbox migration app you just created and the password (secret) you configured in [Prepare the target (destination) tenant by creating the migration application and secret](#prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret). Depending on the Microsoft 365 cloud instance you use, your endpoint may be different. See the [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints) page; select the correct instance for your tenant; then review the Exchange Online _Optimize/Required_ address, and replace as appropriate.
+   > You'll need the application ID of the mailbox migration app you just created and the password (secret) you configured in [Prepare the target (destination) tenant by creating the migration application and secret](#prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret). Depending on the Microsoft 365 cloud instance you use, your endpoint may be different. See the [Microsoft 365 endpoints](microsoft-365-endpoints.md) page; select the correct instance for your tenant; then review the Exchange Online _Optimize/Required_ address, and replace as appropriate.
 
    ```PowerShell
    # Enable customization if tenant is dehydrated
@@ -592,7 +592,7 @@ Don't exceed 2,000 mailboxes per batch. We strongly recommend submitting batches
 
 ### What if I use Service encryption with Microsoft Purview Customer Key?
 
-The mailbox is decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it's still required. For more information, see [here](/microsoft-365/compliance/customer-key-overview).
+The mailbox is decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it's still required. For more information, see [here](/compliance/customer-key-overview).
 
 ### What is the estimated migration time?
 
