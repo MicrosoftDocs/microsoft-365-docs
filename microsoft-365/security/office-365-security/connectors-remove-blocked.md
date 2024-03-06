@@ -2,9 +2,9 @@
 title: Remove blocked connectors from the Restricted entities page in Microsoft 365
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -59,8 +59,6 @@ For more information about compromised _user accounts_ and how to remove them fr
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - Before you follow the procedures in this article to remove a connector from the **Restricted entities** page, be sure to follow the required steps to regain control of the connector as described in [Respond to a compromised connector](connectors-detect-respond-to-compromise.md).
-
-<a name='remove-a-connector-from-the-restricted-entities-page-in-the-microsoft-365-defender-portal'></a>
 
 ## Remove a connector from the Restricted entities page in the Microsoft Defender portal
 

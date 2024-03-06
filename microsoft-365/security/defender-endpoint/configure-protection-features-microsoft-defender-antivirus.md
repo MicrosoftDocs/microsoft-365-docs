@@ -1,25 +1,21 @@
 ---
 title: Enable and configure Microsoft Defender Antivirus protection features
 description: Enable behavior-based, heuristic, and real-time protection in Microsoft Defender Antivirus.
-keywords: heuristic, machine learning, behavior monitor, real-time protection, always-on, Microsoft Defender Antivirus, antimalware, security, defender
 ms.service: defender-endpoint
 ms.subservice: ngp
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.topic: conceptual
 ms.custom: nextgen
-ms.reviewer:
-manager: dansimp
+ms.reviewer: yongrhee
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier2
 - mde-ngp
 search.appverid: met150
-ms.date: 04/08/2021
+ms.date: 02/18/2024
 ---
 
 # Configure behavioral, heuristic, and real-time protection
@@ -40,7 +36,7 @@ Microsoft Defender Antivirus uses several methods to provide threat protection:
 - Always-on scanning, using file and process behavior monitoring and other heuristics (also known as "real-time protection")
 - Dedicated protection updates based on machine learning, human and automated big-data analysis, and in-depth threat resistance research
 
-You can configure how Microsoft Defender Antivirus uses these methods with Group Policy, System Center Configuration Manage, PowerShell cmdlets, and Windows Management Instrumentation (WMI).
+You can configure how Microsoft Defender Antivirus uses these methods with [Microsoft Defender for Endpoint Security Configuration Management](/mem/intune/protect/mde-security-integration), [Microsoft Intune](/microsoft-365/security/defender-endpoint/use-intune-config-manager-microsoft-defender-antivirus), Microsoft Configuration Manager, [Group Policy](/microsoft-365/security/defender-endpoint/use-group-policy-microsoft-defender-antivirus), [PowerShell cmdlets](/microsoft-365/security/defender-endpoint/use-powershell-cmdlets-microsoft-defender-antivirus), and [Windows Management Instrumentation (WMI)](/microsoft-365/security/defender-endpoint/use-wmi-microsoft-defender-antivirus).
 
 This section covers configuration for always-on scanning, including how to detect and block apps that are deemed unsafe, but may not be detected as malware.
 

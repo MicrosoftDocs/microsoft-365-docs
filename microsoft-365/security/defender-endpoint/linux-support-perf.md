@@ -1,16 +1,13 @@
 ---
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on Linux.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, performance, AuditD, XMDEClientAnalyzer, installation, deploy, uninstallation
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 ms.date: 01/18/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security

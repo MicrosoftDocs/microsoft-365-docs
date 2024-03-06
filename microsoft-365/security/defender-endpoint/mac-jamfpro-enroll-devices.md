@@ -1,21 +1,17 @@
 ---
 title: Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro
 description: Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - mde-macos
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: macos
 search.appverid: met150
 ms.date: 12/18/2020

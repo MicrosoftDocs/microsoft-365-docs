@@ -96,7 +96,7 @@ For example, an EOP condition for pilot evaluations could be applied if the reci
 
 Likewise, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group and then managed by adding / removing accounts via the group.
 
-For complete instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](../office-365-security/preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+For complete instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](../office-365-security/preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 ### Configure custom protection policies
 

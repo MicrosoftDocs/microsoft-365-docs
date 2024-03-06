@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 f1_keywords:
@@ -65,8 +65,6 @@ For more information about compromised _connectors_ and how to remove them from 
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - A sender exceeding the outbound email limits is an indicator of a compromised account. Before you follow the procedures in this article to remove a user from the **Restricted entities** page, be sure to follow the required steps to regain control of the account as described in [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
-
-<a name='remove-a-user-from-the-restricted-entities-page-in-the-microsoft-365-defender-portal'></a>
 
 ## Remove a user from the Restricted entities page in the Microsoft Defender portal
 

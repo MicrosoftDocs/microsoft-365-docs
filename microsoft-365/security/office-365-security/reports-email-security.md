@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -46,8 +46,6 @@ The rest of this article describes the reports that are exclusive to Defender fo
 > - Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 >
 >   A link to these reports is available in the Defender portal at **Reports** \> **Email & collaboration** \> **Email & collaboration reports** \> **Exchange mail flow reports**, which takes you to <https://admin.exchange.microsoft.com/#/reports/mailflowreportsmain>.
-
-<a name='email-security-report-changes-in-the-microsoft-365-defender-portal'></a>
 
 ## Email security report changes in the Microsoft Defender portal
 

@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: high
@@ -60,8 +60,6 @@ You can configure anti-spam policies in the Microsoft Defender portal or in Powe
   - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
 
 - End-user spam notifications in anti-spam policies are replaced by _quarantine notifications_ in quarantine policies. Quarantine notifications contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts). For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
-
-<a name='use-the-microsoft-365-defender-portal-to-create-anti-spam-policies'></a>
 
 ## Use the Microsoft Defender portal to create anti-spam policies
 
@@ -220,8 +218,6 @@ You can configure anti-spam policies in the Microsoft Defender portal or in Powe
 
    Back on the **Anti-spam policies** page, the new policy is listed.
 
-<a name='use-the-microsoft-365-defender-portal-to-view-anti-spam-policy-details'></a>
-
 ## Use the Microsoft Defender portal to view anti-spam policy details
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
@@ -232,7 +228,7 @@ On the **Anti-spam policies** page, the following properties are displayed in th
 - **Status**: Values are:
   - **Always on** for the default anti-spam policy (for example, **Anti-spam inbound policy (Default)**).
   - **On** or **Off** for other anti-spam policies.
-- **Priority**: For more information, see the [Set the priority of custom anti-spam policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-anti-spam-policies) section.
+- **Priority**: For more information, see the [Set the priority of custom anti-spam policies](#use-the-microsoft-defender-portal-to-set-the-priority-of-custom-anti-spam-policies) section.
 - **Type**: One of the following values for anti-spam policies:
   - **Protection templates** for anti-spam policies that are associated with the Standard and Strict [preset security policies](preset-security-policies.md).
   - **Custom anti-spam policy**
@@ -246,8 +242,6 @@ Select an anti-spam policy by clicking anywhere in the row other than the check 
 
 > [!TIP]
 > To see details about other anti-spam policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
-
-<a name='use-the-microsoft-365-defender-portal-to-take-action-on-anti-spam-policies'></a>
 
 ## Use the Microsoft Defender portal to take action on anti-spam policies
 
@@ -264,17 +258,13 @@ On the **Anti-spam policies** page, select the anti-spam policy from the list by
 
 The actions are described in the following subsections.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies'></a>
-
 ### Use the Microsoft Defender portal to modify anti-spam policies
 
-After you select the default anti-spam policy or a custom policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create anti-spam policies](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) section earlier in this article.
+After you select the default anti-spam policy or a custom policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create anti-spam policies](#use-the-microsoft-defender-portal-to-create-anti-spam-policies) section earlier in this article.
 
 For the default policy, you can't modify the name of the policy, and there are no recipient filters to configure (the policy applies to all recipients). But, you can modify all other settings in the policy.
 
 For the anti-spam policies named **Standard Preset Security Policy** and **Strict Preset Security Policy** that are associated with [preset security policies](preset-security-policies.md), you can't modify the policy settings in the details flyout. Instead, you select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View preset security policies** in the details flyout to go to the **Preset security policies** page at <https://security.microsoft.com/presetSecurityPolicies> to modify the preset security policies.
-
-<a name='use-the-microsoft-365-defender-portal-to-enable-or-disable-anti-spam-policies'></a>
 
 ### Use the Microsoft Defender portal to enable or disable anti-spam policies
 
@@ -290,13 +280,11 @@ When you're finished in the policy details flyout, select **Close**.
 
 On the **Anti-spam policies** page, the **Status** value of the policy is now **On** or **Off**.
 
-<a name='use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-anti-spam-policies'></a>
-
 ### Use the Microsoft Defender portal to set the priority of custom anti-spam policies
 
 Anti-spam policies are processed in the order that they're displayed on the **Anti-spam policies** page:
 
-- The anti-spam policy named **Strict Preset Security Policy** that's associated with the Strict preset security policy is always applied first (if the Strict preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
+- The anti-spam policy named **Strict Preset Security Policy** that's associated with the Strict preset security policy is always applied first (if the Strict preset security policy is [enabled](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users)).
 - The anti-spam policy named **Standard Preset Security Policy** that's associated with the Standard preset security policy is always applied next (if the Standard preset security policy is enabled).
 - Custom anti-spam policies are applied next in priority order (if they're enabled):
   - A lower priority value indicates a higher priority (0 is the highest).
@@ -315,8 +303,6 @@ After you select the custom anti-spam policy by clicking anywhere in the row oth
 When you're finished in the policy details flyout, select **Close**.
 
 Back on the **Anti-spam policies** page, the order of the policy in the list matches the updated **Priority** value.
-
-<a name='use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies'></a>
 
 ### Use the Microsoft Defender portal to remove custom anti-spam policies
 
@@ -345,7 +331,7 @@ In Exchange Online PowerShell, the difference between spam filter policies and s
 - In PowerShell, you modify the settings in the spam filter policy and the spam filter rule separately.
 - When you remove a spam filter policy from PowerShell, the corresponding spam filter rule isn't automatically removed, and vice versa.
 
-A significant setting that's available only in PowerShell is the _MarkAsSpamBulkMail_ parameter that's `On` by default. The effects of this setting are explained in the [Create anti-spam policies](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) section earlier in this article.
+A significant setting that's available only in PowerShell is the _MarkAsSpamBulkMail_ parameter that's `On` by default. The effects of this setting are explained in the [Create anti-spam policies](#use-the-microsoft-defender-portal-to-create-anti-spam-policies) section earlier in this article.
 
 ### Use PowerShell to create anti-spam policies
 
@@ -355,14 +341,11 @@ Creating an anti-spam policy in PowerShell is a two-step process:
 2. Create the spam filter rule that specifies the spam filter policy that the rule applies to.
 
 > [!NOTE]
+>
 > - You can create a new spam filter rule and assign an existing, unassociated spam filter policy to it. A spam filter rule can't be associated with more than one spam filter policy.
->
 > - You can configure the following settings on new spam filter policies in PowerShell that aren't available in the Microsoft Defender portal until after you create the policy:
->
->  - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedContentFilterRule** cmdlet).
->
->  - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedContentFilterRule** cmdlet).
->
+>   - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedContentFilterRule** cmdlet).
+>   - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedContentFilterRule** cmdlet).
 > - A new spam filter policy that you create in PowerShell isn't visible in the Microsoft Defender portal until you assign the policy to a spam filter rule.
 
 #### Step 1: Use PowerShell to create a spam filter policy

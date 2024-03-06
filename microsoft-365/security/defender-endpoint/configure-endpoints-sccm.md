@@ -1,15 +1,11 @@
 ---
 title: Onboard Windows devices using Configuration Manager
 description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
-keywords: onboard devices using sccm, device management, configure Microsoft Defender for Endpoint devices
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

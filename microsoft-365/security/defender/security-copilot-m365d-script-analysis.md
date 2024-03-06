@@ -1,7 +1,7 @@
 ---
-title: Analyze scripts and codes with Security Copilot in Microsoft Defender XDR
+title: Run script and code analysis with Security Copilot in Microsoft Defender XDR
 description: Use Security Copilot script analysis embedded in Microsoft Defender XDR to investigate scripts and codes.
-keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, powershell, powershell analysis, bash, batch, bash analysis, batch analysis, code analysis, code analyzer
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, powershell, powershell analysis, bash, batch, bash analysis, batch analysis, code analysis, code analyzer, security copilot script analysis, copilot in security script analysis, security copilot script analysis in Microsoft Defender XDR
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,10 +20,10 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 10/10/2023
+ms.date: 02/12/2024
 ---
 
-# Analyze scripts and codes with Microsoft Security Copilot in Microsoft Defender XDR
+# Run script and code analysis with Microsoft Security Copilot in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -44,6 +44,9 @@ Most complex and sophisticated attacks like [ransomware](/security/ransomware) e
 The script analysis capability of Security Copilot in Microsoft Defender XDR provides security teams added capacity to inspect scripts and codes without using external tools. This capability also reduces complexity of analysis, minimizing challenges and allowing security teams to quickly assess and identify a script as malicious or benign.
 
 This guide describes what the script analysis capability is and how it works, including how you can provide feedback on the results generated.
+
+> [!NOTE]
+> The script analysis capability is also available in the Security Copilot standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
 
 ## Technical requirements
 

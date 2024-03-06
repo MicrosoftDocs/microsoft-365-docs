@@ -1,5 +1,5 @@
 ---
-title: Create a signature request using Microsoft SharePoint eSignature
+title: Create a signature request using SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use Microsoft SharePoint eSignature to create and send electronic signature requests to people inside and outside of your organization. 
+description: Learn how to use SharePoint eSignature to create and send electronic signature requests to people inside and outside of your organization. 
 ---
 
-# Create a signature request using Microsoft SharePoint eSignature
+# Create a signature request using SharePoint eSignature
 
 ## Create a signature request
 

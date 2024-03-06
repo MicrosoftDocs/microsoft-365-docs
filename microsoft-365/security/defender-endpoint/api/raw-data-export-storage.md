@@ -1,15 +1,11 @@
 ---
 title: Stream Microsoft Defender for Endpoint events to your Storage account
 description: Learn how to configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Storage account.
-keywords: raw data export, streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -40,15 +36,15 @@ ms.date: 12/18/2020
 
 1. Create a [Storage account](/azure/storage/common/storage-account-overview) in your tenant.
 
-2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.insights**.
+2. Sign in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.insights**.
 
 ## Enable raw data streaming
 
-1. Log in to [Microsoft Defender XDR](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft Defender XDR.
 
-3. Click on **Add data export settings**.
+3. Select on **Add data export settings**.
 
 4. Choose a name for your new settings.
 
@@ -58,11 +54,11 @@ ms.date: 12/18/2020
 
    :::image type="content" source="../images/storage-account-resource-id.png" alt-text="The Event Hubs with resource ID1" lightbox="../images/storage-account-resource-id.png":::
 
-7. Choose the events you want to stream and click **Save**.
+7. Choose the events you want to stream and select **Save**.
 
 ## The schema of the events in the Storage account
 
-- A blob container will be created for each event type:
+- A blob container is created for each event type:
 
   :::image type="content" source="../images/storage-account-event-schema.png" alt-text="The Event Hubs with resource ID2" lightbox="../images/storage-account-event-schema.png":::
 
@@ -79,11 +75,11 @@ ms.date: 12/18/2020
 
 - Each blob contains multiple rows.
 
-- Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
+- Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you get events only from your tenant), and the event in JSON format in a property called "properties".
 
 - For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](../advanced-hunting-overview.md).
 
-- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](../machine-groups.md) for more information.
+- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here, every event is decorated with this column as well. For more information, see [Device Groups](../machine-groups.md).
     > [!NOTE]
     > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
@@ -91,7 +87,7 @@ ms.date: 12/18/2020
 
 In order to get the data types for our events properties do the following:
 
-1. Log in to [Microsoft Defender XDR](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
+1. Sign in to [Microsoft Defender XDR](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
 
@@ -101,11 +97,11 @@ In order to get the data types for our events properties do the following:
    | project ColumnName, ColumnType
    ```
 
-- Here is an example for Device Info event:
+- Here's an example for Device Info event:
 
   :::image type="content" source="../images/data-types-mapping-query.png" alt-text="The Event Hubs with resource ID3" lightbox="../images/data-types-mapping-query.png":::
 
-## Related topics
+## Related articles
 
 - [Stream Microsoft Defender XDR events | Microsoft Learn](/microsoft-365/security/defender/streaming-api)
 

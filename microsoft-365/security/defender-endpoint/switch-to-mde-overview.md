@@ -1,15 +1,11 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint from non-Microsoft endpoint protection
 description: Move to Microsoft Defender for Endpoint, which includes Microsoft Defender Antivirus for your endpoint protection solution.
-keywords: migration, windows defender, advanced endpoint protection, antivirus, antimalware, passive mode, active mode
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security

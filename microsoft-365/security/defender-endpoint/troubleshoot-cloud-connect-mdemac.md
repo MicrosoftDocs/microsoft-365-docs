@@ -1,15 +1,11 @@
 ---
 title: Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS
 description: This topic describes how to troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, ventura, bigsur, mde for mac
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

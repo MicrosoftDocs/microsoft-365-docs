@@ -1,5 +1,5 @@
 ---
-title: Set up Microsoft SharePoint eSignature
+title: Set up SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,15 +14,15 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to set up and manage sites in Microsoft SharePoint eSignature. 
+description: Learn how to set up and manage sites in SharePoint eSignature. 
 ---
 
-# Set up Microsoft SharePoint eSignature
+# Set up SharePoint eSignature
 
 > [!NOTE]
-> Microsoft SharePoint eSignature is currently rolling out to the US market. If a tenant's location is the United States, SharePoint eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. SharePoint eSignature will roll out to other regions in 2024.
+> SharePoint eSignature is currently rolling out to the US market. If a tenant's location is the United States, SharePoint eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. SharePoint eSignature will roll out to other regions later this year.
 
-The SharePoint eSignature service is set up in the Microsoft 365 admin center. SharePoint eSignature uses simple electronic signatures. Before you begin, determine whether this feature is appropriate for your needs and then read the [Microsoft SharePoint eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
+The SharePoint eSignature service is set up in the Microsoft 365 admin center. SharePoint eSignature uses simple electronic signatures. Before you begin, determine whether this feature is appropriate for your needs and then read the [SharePoint eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
 
 ## Prerequisites
 
@@ -103,6 +103,10 @@ For more protection, when a sender cancels a request, recipients immediately los
 ### Conditional access
 
 Certain [conditional access](/entra/identity/conditional-access/overview) might determine whether external recipients (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. Depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing, but the signing operation will be unsuccessful. One common way to resolve this is to add the **Microsoft eSignature Service** to the list of approved apps via the Microsoft Entra admin center.
+
+### Microsoft Entra B2B
+
+Microsoft Entra B2B provides authentication and management of guests. External signers are considered as guests within your tenant. To be able to send requests to signers outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration). 
 
 ### Authentication
 

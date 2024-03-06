@@ -4,10 +4,9 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -68,8 +67,6 @@ Messages that are identified by the advanced delivery policy aren't security thr
       - **View-Only Organization Management** in Exchange Online RBAC.
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-<a name='use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy'></a>
-
 ## Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
@@ -98,8 +95,6 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 - The **Email** column contains the email address for each entry.
 - To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-or-remove-secops-mailboxes-in-the-advanced-delivery-policy'></a>
-
 ## Use the Microsoft Defender portal to modify or remove SecOps mailboxes in the advanced delivery policy
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
@@ -108,7 +103,7 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 
 2. On the **SecOps mailbox** tab, select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
-3. In **Edit SecOps mailboxes** flyout that opens, add or remove mailboxes as described in Step 3 in the [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
+3. In **Edit SecOps mailboxes** flyout that opens, add or remove mailboxes as described in Step 3 in the [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
 
    To remove all mailboxes, select remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to each value until there are no more mailboxes selected.
 
@@ -118,13 +113,11 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 
 Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configured are displayed. If you removed all entries, the list is empty.
 
-<a name='use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy'></a>
-
 ## Use the Microsoft Defender portal to configure third-party phishing simulations in the advanced delivery policy
 
 To configure a third-party phishing simulation, you need to provide the following information:
 
-- At least one **Domain**.
+- At least one **Domain**: The domain from the MAIL FROM address (also known as the `5321.MailFrom` address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message **or** a DKIM domain as specified by the phishing simulation vendor.
 - At least one **Sending IP**.
 - For **non-email** phishing simulations (for example, Microsoft Teams messages, Word documents, or Excel spreadsheets), you can optionally identify the **Simulation URLs to allow** that shouldn't be treated as real threats at time of click: the URLs aren't blocked or detonated, and no URL click alerts or resulting incidents are generated. The URLs are wrapped at time of click, but they aren't blocked.
 
@@ -157,21 +150,45 @@ If your MX record doesn't point to Microsoft 365, the IP address in the `Authent
 
 3. In the **Add third party phishing simulations** flyout that opens, configure the following settings:
 
-   - **Domain**: Expand this setting and enter at least one email address domain by clicking in the box, entering a value (for example, contoso.com), and then pressing the ENTER key or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 50 entries.
-
-     > [!NOTE]
-     > Use the domain in the `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message **or** a DKIM domain as specified by the phishing simulation vendor.
+   - **Domain**: Expand this setting and enter at least one email address domain by clicking in the box, entering a value (for example, contoso.com), and then pressing the ENTER key or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 50 entries. Use one of the following values:
+     - The domain in the `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message.
+     - The DKIM domain as specified by the phishing simulation vendor.
 
    - **Sending IP**: Expand this setting and enter at least one valid IPv4 address by clicking in the box, entering a value, and then pressing the ENTER key or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 10 entries. Valid values are:
      - Single IP: For example, 192.168.1.1.
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
 
-   - **Simulation URLs to allow**: This setting isn't required for links in email phishing simulations. Use this setting to optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office documents) that shouldn't be treated as real threats at time of click.
+  - **Simulation URLs to allow**: This setting isn't required for links in email phishing simulations. Use this setting to optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office documents) that shouldn't be treated as real threats at time of click.
 
      Add URL entries by expanding this setting, clicking in the box, entering a value, and then pressing the ENTER key or selecting the value that's displayed below the box. You can add up to 30 entries. For the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list).
 
    To remove an existing domain, IP, or URL value, select remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
+
+   Consider the following example:
+
+   ```text
+   Authentication-Results: spf=pass (sender IP is 172.17.17.7)
+   smtp.mailfrom=contoso.com; dkim=pass (signature was verified)
+   header.d=contoso-simulation.com; dmarc=pass action=none header.from=contoso-simulation.com;
+
+   DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=contoso-simulation.com;
+   s=selector1;
+   h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+   bh=UErATeHehIIPIXPeUAfZWiKo0w2cSsOhb9XM9ulqTX0=;
+   ```
+
+   - The connecting IP address is **172.17.17.7**.
+   - The domain in the MAIL FROM address (`smtp.mailfrom`) is **contoso.com**.
+   - The DKIM domain (`header.d`) is **contoso-simulation.com**.
+
+   From the example, you can use one of the following combinations to configure a third-party phishing simulation:
+
+   **Domain**: contoso.com<br/>
+   **Sending IP**: 172.17.17.7
+
+   **Domain**: contoso-simulation.com<br/>
+   **Sending IP**: 172.17.17.7
 
 4. When you're finished in the **Add third party phishing simulations** flyout, select **Add**.
 
@@ -184,8 +201,6 @@ Back on the **Phishing simulation** tab, the third-party phishing simulation ent
 - The **Date** column shows when the entry was created.
 - To change the list of entries from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-or-remove-third-party-phishing-simulations-in-the-advanced-delivery-policy'></a>
-
 ## Use the Microsoft Defender portal to modify or remove third-party phishing simulations in the advanced delivery policy
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
@@ -194,7 +209,7 @@ Back on the **Phishing simulation** tab, the third-party phishing simulation ent
 
 2. On the **Phishing simulation** tab, select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
-3. In the **Edit third-party phishing simulation** flyout that opens, add or remove entries for **Domain**, **Sending IP**, and **Simulation URLs** as described in Step 3 in the [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
+3. In the **Edit third-party phishing simulation** flyout that opens, add or remove entries for **Domain**, **Sending IP**, and **Simulation URLs** as described in Step 3 in the [Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy](#use-the-microsoft-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) section.
 
    To remove all entries, select remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to each value until there are no more domains, IPs, or URLs selected.
 

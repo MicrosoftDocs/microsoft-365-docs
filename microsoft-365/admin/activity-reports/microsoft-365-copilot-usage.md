@@ -91,7 +91,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 | Uses eligible update channel      | Yes/No field indicating if devices are configured to get the latest or monthly updates.                                       |
 | Uses Teams Meetings               | Indicates whether the user has attended at least one meeting using Teams in the past 30 days.                                  |
 | Uses Teams chat                   | Indicates whether the user has participated in at least one chat using Teams in the past 30 days.                              |
-| Uses Outlook Email                | Indicates whether the user has sent at least one meeting using Outlook in the past 30 days.                                    |
+| Uses Outlook Email                | Indicates whether the user has sent at least one email using Outlook in the past 30 days.                                    |
 | Uses Office docs                  | Indicates whether the user has collaborated on at least one document or file using OneDrive or sharepoint in the past 30 days. |
 
 ## Interpret the Usage tab in Copilot for Microsoft 365 report
@@ -104,12 +104,14 @@ You can view several numbers for Copilot for Microsoft 365 usage, which highligh
 
 :::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage summary information." source="../../media/copilot-usage-numbers.png":::
 
-**Enabled Users** shows you total number of unique users in your organization with Copilot for Microsoft 365 licenses over the selected time period.
+**Enabled Users** shows the total number of unique users in your organization with Copilot for Microsoft 365 licenses over the selected time period.
 
-**Active Users** shows you total number of enabled users in your organization who tried a user-initiated Copilot for Microsoft 365 feature, in one or more Microsoft 365 apps over the selected time period.
+**Active Users** shows the total number of enabled users in your organization who tried a user-initiated Copilot for Microsoft 365 feature, in one or more Microsoft 365 apps over the selected time period.
+
+> [!NOTE]
+> A user is considered active in a given app if they performed an intentional action for an AI-powered capability. For example, if a user selects the Copilot icon in the Word ribbon to open the Copilot chat pane, this does not count towards active usage. However, if the user interacts with the chat pane by submitting a prompt, this action would count towards active usage.
 
 **Active users rate** shows you the number of active users in your organization divided by the number of enabled users.
-The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
 In Recommendations, the recommended action card highlights [Microsoft Copilot Dashboard](/viva/insights/org-team-insights/copilot-dashboard), where you can deliver insights to your IT leaders to explore Copilot readiness, adoption, and impact in Viva Insights.  
 
@@ -119,24 +121,32 @@ You can see the following summary charts in this report as default view:
 
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
->[!NOTE]
-> Teams Copilot usage does not include Microsoft 365 Chat usage, but Microsoft 365 Chat usage will be displayed in Copilot for Microsoft 365 usage soon.
+To note, Active users of Word, Excel and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might be lower than expected if there are people in your organization using the Coach feature on Outlook Win32 over the selected time period. We are currently working on integrating this data into our reports and will notify you as soon as it becomes available.
 
-**Current view** shows you the total usage of Copilot for Microsoft 365 among Microsoft 365 apps of the time frame.
+>[!NOTE]
+> This report now includes a new metric for Microsoft Copilot with Graph-grounded chat, simplified as "Copilot chat." The action list for active users of Copilot chat includes the following: 
+> - Typing a message into the chat window and submitting.
+> - Selecting a prompt from the "Try these Prompts" section, which will automatically copy the prompt into the chat box.
+> - Clicking on one of the suggestions from the "Stay on top" tab in some platforms (such as Microsoft365.com).
+
+> Note that automated prompts are not included in this feature.
+
+>[!IMPORTANT]
+> Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
+
+**Summary view** shows you the total usage of Copilot for Microsoft 365 among Microsoft 365 apps of the time frame.
 
 **Trend view** shows you the daily time trend of Copilot for Microsoft 365 among Microsoft 365 apps of the time frame.
 
-You can switch between Current view and Trend view.
+You can switch between Summary view and Trend view.
 
-In the hover status in Current view, you can see the selected time frame and data refresh time.
+In the hover status in Summary view, you can see the selected time frame and data refresh time.
 
 :::image type="content" alt-text="Screenshot showing the time period view for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-time-period.png":::
 
 When switching to Trend view, you can select one product in the dropdown list to see daily usage.
 
 :::image type="content" alt-text="Screenshot showing the dropdown list of products for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-trend-view.png":::
-
-In the hover status in Trend view, you can see the selected date and data refresh time.
 
 :::image type="content" alt-text="Screenshot showing the hover status for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-hover-status.png":::
 
@@ -156,6 +166,9 @@ Select **Choose columns** to add or remove columns from the table.
 
 :::image type="content" alt-text="Screenshot showing the columns you can select for the Microsoft 365 Copilot usage report." source="../../media/copilot-usage-choose-columns.png":::
 
+>[!NOTE]
+> All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there is no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
+
 You can also export the report data into an Excel .csv file by selecting the Export link. This exports the Copilot for Microsoft 365 usage data of all users and enables you to do simple sorting, filtering, and searching for further analysis.
 
 To ensure data quality, we perform daily data validation checks for the past three days and will fill any gaps detected. You may notice differences in historical data during the process.
@@ -174,6 +187,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 | Last activity date of Outlook Copilot (UTC)    | The latest date the user had activity in Outlook Copilot, including any of the intentional activities.                                      |
 | Last activity date of OneNote Copilot (UTC)    | The latest date the user had activity in OneNote Copilot, including any of the intentional activities.                                      |
 | Last activity date of Loop Copilot (UTC)       | The latest date the user had activity in Loop Copilot, including any of the intentional activities.                                         |
+| Last activity date of Copilot chat (UTC)        | The latest date the user had activity in Copilot chat, including any of the intentional activities.                                        |
 
 ## Make the user-specific data anonymous
 
@@ -184,3 +198,9 @@ To make the data in the Copilot for Microsoft 365 report anonymous, you must be 
 2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports in Microsoft 365 admin center and Teams admin center.
 
 3. Select **Save changes**.
+
+## FAQ
+
+### What's the difference between the user activity table and audit log?
+
+The information captured in audit log records differs from that in [Microsoft 365 usage reports](#user-last-activity-table). It's important to note that audit logs are not designed for assessing user engagement in Microsoft 365, and they should not be used to replace or augment information in Microsoft 365 usage reports. To learn more about audit logs, see [Export, configure, and view audit log records](/purview/audit-log-export-records#step-1-export-audit-log-search-results).

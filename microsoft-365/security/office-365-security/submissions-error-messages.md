@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -26,7 +26,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-This article attempts to explain the common error messages that you might receive as you try to [report messages, URLs, and email attachments to Microsoft](submissions-admin.md)
+This article attempts to explain the common error messages that you might receive as you try to [report messages, URLs, and email attachments to Microsoft](submissions-admin.md).
 
 ## This message didn't pass through our mail flow system, or the message metadata isn't available yet error
 

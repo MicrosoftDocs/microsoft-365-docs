@@ -1,15 +1,11 @@
 ---
 title: Create and manage device tags
 description: Use device tags to group devices to capture context and enable dynamic list creation as part of an incident
-keywords: tags, device tags, device groups, groups, remediation, level, rules, aad group, role, assign, rank
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -41,14 +37,19 @@ Add tags on devices to create a logical group affiliation. Device tags support p
 You can add tags on devices using the following ways:
 
 - Using the portal
-- Setting a registry key value
+- Using dynamic rules for device tagging
+- Setting a registry key value (Windows)
+- Using Defender for Endpoint security settings management (macOS / Linux)
+- Creating a configuration profile (macOS / Linux)
+- Creating a custom profile in Microsoft Intune (Windows 10 or later)
+- Using App configuration policy in Intune (iOS / Android)
 
 > [!NOTE]
-> There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.
+> There might be some latency between the time a tag is added to a device and its availability in the devices list and device page.
 
 To add device tags using API, see [Add or remove device tags API](api/add-or-remove-machine-tags.md).
 
-## Add and manage device tags using the portal
+## Add device tags using the portal
 
 1. Select the device that you want to manage tags on. You can select or search for a device from any of the following views:
 
@@ -77,6 +78,13 @@ Tags are added to the device view and will also be reflected on the **Devices in
 You can also delete tags from this view.
 
 :::image type="content" source="images/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="images/new-tag-label-display.png":::
+
+## Add device tags using dynamic rules for device tagging
+
+You can create and manage rules that automatically assign and remove tags from devices based on user-defined criteria directly in the Microsoft Defender portal. Please refer to following documents for details 
+
+- [Manage your devices with ease using dynamic rules for device tagging in Microsoft Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/manage-your-devices-with-ease-using-dynamic-rules-for-device/ba-p/4024988)
+- [Asset rule management - Dynamic rules for devices](/microsoft-365/security/defender/configure-asset-rules)
 
 ## Add device tags by setting a registry key value
 
@@ -108,13 +116,62 @@ Use the following registry key entry to add a tag on a device:
 >
 > If you need to remove a tag that was added using the above Registry key, clear the contents of the Registry key data instead of removing the 'Group' key.
 
+## Add device tags using the Defender for Endpoint security settings management
+
+> [!NOTE]
+> Applicable only on the following devices:
+>
+> - macOS
+> - Linux
+
+You can use Defender for Endpoint security settings management to define and apply device tags for macOS and Linux. You can perform this task by creating Endpoint detection and response security policy. Please refer to following documentation for details.
+
+- [Manage endpoint security policies on devices onboarded to Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration)
+- [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies)
+
+## Add device tags by creating a configuration profile
+
+> [!NOTE]
+> Applicable only on the following devices:
+>
+> - macOS
+> - Linux
+
+You can use configuration profile to set device tag for macOS and Linux. Please refer to following documentation for details.
+
+- **For macOS**, create configuration profile (.plist file) and deploy it manually or through management tool including Intune. See the guidance in [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences). To deploy configuration profile with Intune, follow the guidance in [Use custom settings for macOS devices in Microsoft Intune](/mem/intune/configuration/custom-settings-macos).
+
+- **For Linux**, create configuration profile (.json file) and deploy it manually or through management tool. See the guidance in [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences)
+
 ## Add device tags by creating a custom profile in Microsoft Intune
+
+> [!NOTE]
+> Applicable only on the following devices:
+>
+> - Windows 10
+> - Windows 11
 
 You can use Microsoft Intune to define and apply device tags. You can perform this task by creating a device configuration profile using custom settings in Intune. For more information, see [Create a profile with custom settings in Intune](/mem/intune/configuration/custom-settings-configure).
 
-- In the [Create the profile](/mem/intune/configuration/custom-settings-configure) procedure, for step 3, choose either [macOS](/mem/intune/configuration/custom-settings-macos) or [Windows 10 and later](/mem/intune/configuration/custom-settings-windows-10), depending on the devices you want to tag.
+- In the [Create the profile](/mem/intune/configuration/custom-settings-configure) procedure, for step 3, choose [Windows 10 and later](/mem/intune/configuration/custom-settings-windows-10).
 
-- **For Windows 10 or later**, in the [OMA-IRU settings](/mem/intune/configuration/custom-settings-windows-10) section, for **Data type**, choose **String**. For **OMA-URI**, type (or paste) `./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/DeviceTagging/Group`.
+- In the [OMA-IRU settings](/mem/intune/configuration/custom-settings-windows-10) section, for **Data type**, choose **String**. For **OMA-URI**, type (or paste) `./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/DeviceTagging/Group`.
 
-- **For macOS**, follow the guidance in [Use custom settings for macOS devices in Microsoft Intune](/mem/intune/configuration/custom-settings-macos).
+
+
+## Add device tags by creating app configuration policy in Microsoft Intune
+
+> [!NOTE]
+> Applicable only on the following devices:
+>
+> - iOS
+> - Android
+
+You can use Microsoft Intune to define and apply tag for mobile devices. You can perform this task by creating a app configuration profile in Intune. For more information, please refer to following information.
+
+- [Tag mobile devices with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-mobile-device-tagging-for-ios-and-android/ba-p/3897368)
+
+- **For iOS**, follow the guidance in [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features).
+- **For Android**, follow the guidance on [Configure Defender for Endpoint on Android features](/microsoft-365/security/defender-endpoint/android-configure).
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
