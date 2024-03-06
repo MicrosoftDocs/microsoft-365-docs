@@ -4,7 +4,7 @@ author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
 audience: Admin
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 ms.reviewer: ansantam
 f1.keywords:
@@ -21,7 +21,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 02/01/2023
+ms.date: 02/20/2024
 ---
 # Microsoft Teams Virtual Appointments usage report
 
@@ -31,7 +31,7 @@ The Virtual Appointments usage report in the Microsoft Teams admin center gives 
 
 To view the report, you must be a Global admin, Teams admin, Global reader, or Report reader.
 
-The report contains the following tabs. The information you’ll see in the report depends on the license you have.
+The report contains the following tabs. The information you see in the report depends on the license you have.
 
 |Tab |Description  |
 |---------|---------|
@@ -76,7 +76,7 @@ Here's what you'll see on each tab of the report.
 
 ### Virtual Appointments
 
-The graphs you'll see here depend on the license you have.
+The graphs you see here depend on the license you have.
 
 :::image type="content" source="media/virtual-appts-report.png" alt-text="Screenshot of the Virtual Appointments tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/virtual-appts-report.png":::
 

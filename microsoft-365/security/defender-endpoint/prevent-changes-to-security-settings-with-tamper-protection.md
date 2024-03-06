@@ -1,15 +1,15 @@
 ---
 title: Protect security settings with tamper protection
-ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, gberecz
-manager: dansimp
+ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, gberecz, ksarens
+manager: deniseb
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 10/24/2023
+ms.date: 02/13/2024
 audience: ITPro
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
@@ -32,6 +32,7 @@ search.appverid: met150
 - [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
 
 **Platforms**
+
 - Windows
 - [macOS](tamperprotection-macos.md)
 
@@ -53,9 +54,10 @@ When tamper protection is turned on, these tamper-protected settings can't be ch
 - Security intelligence updates occur.
 - Automatic actions are taken on detected threats.
 - Notifications are visible in the Windows Security app on Windows devices.
-- Archived files are scanned. 
+- Archived files are scanned.
+- [Exclusions cannot be modified or added ](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune#tamper-protection-for-antivirus-exclusions)
 
-*As of signature release `1.383.1159.0`, due to confusion around the default value for "Allow Scanning Network Files", tamper protection no longer locks this setting to its default value. In managed environments, the default value is enabled.*
+*As of signature release `1.383.1159.0`, due to confusion around the default value for "Allow Scanning Network Files", tamper protection no longer locks this setting to its default value. In managed environments, the default value is `enabled`.*
 
 > [!IMPORTANT]
 > When tamper protection is turned on, tamper-protected settings cannot be changed. To avoid breaking management experiences, including [Intune](manage-tamper-protection-intune.md) and [Configuration Manager](manage-tamper-protection-configuration-manager.md), keep in mind that changes made to tamper-protected settings might appear to succeed but are actually blocked by tamper protection. Depending on your particular scenario, you have several options available: 

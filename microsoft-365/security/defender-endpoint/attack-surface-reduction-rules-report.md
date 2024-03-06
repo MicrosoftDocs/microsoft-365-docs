@@ -1,18 +1,14 @@
 ---
 title: Attack surface reduction rules reporting
 description: Provides information about attack surface reduction rules detections, configuration, block threats, and methods to enable three standard rules and exclusions.
-keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.service: defender-endpoint
 ms.subservice: asr
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar,
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+ms.reviewer: sugamar,
+manager: deniseb
 ms.custom: asr
 ms.topic: conceptual
 ms.collection: 
@@ -277,7 +273,7 @@ The **Add exclusions** tab presents a ranked list of detections by file name and
 
 > [!IMPORTANT]
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files are allowed to run, and no report or event will be recorded.
-> If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit).
+> If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](attack-surface-reduction-rules-deployment-test.md#step-1-test-attack-surface-reduction-rules-using-audit).
 
 When you select a file, a **Summary & expected impact** fly out opens, presenting the following types of information:
 

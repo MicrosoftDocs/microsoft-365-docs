@@ -97,7 +97,7 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 > Although some roles, such as Security Administrator, can be assigned in the Microsoft Defender portal, consider using either the Microsoft 365 admin center or Microsoft Entra ID instead. For information about roles, role groups, and permissions, see the following resources:
 >
 > - [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md)
-> - [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)
+> - [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference)
 
 |Activity|Roles and permissions|
 |---|---|

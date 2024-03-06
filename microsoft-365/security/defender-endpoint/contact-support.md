@@ -1,15 +1,11 @@
 ---
 title: Contact Microsoft Defender for Endpoint support
 description: Learn how to contact Microsoft Defender for Endpoint support
-keywords: support, contact, premier support, solutions, problems, case
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

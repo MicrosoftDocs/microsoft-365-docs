@@ -1,12 +1,13 @@
 ---
 title: Windows and Office 365 deployment lab kit
+description: Learn about where to access the Windows and Office deployment lab kit.
 f1.keywords:
 - NOCSH
 ms.author: aaroncz
 author: cdmm12
 manager: aaroncz
 ms.reviewer: alainme
-ms.date: 12/05/2023
+ms.date: 02/27/2024
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -14,28 +15,30 @@ ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.custom:
-description: Learn about where to access the Windows and Office Deployment Lab Kit.
 ---
 
 # Windows and Office 365 deployment lab kit
 
-The Windows and Office 365 deployment lab kits are designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps. The labs in the kit cover using Microsoft Intune and Microsoft Configuration Manager. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation. The following lab kits are available for free download:  
+The deployment lab kits for Windows and Office 365 can help you plan, test, and validate your deployment and management of desktops. The labs in the kit include Windows 11 Enterprise, Microsoft 365 Apps, and use of Microsoft Intune and Microsoft Configuration Manager. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation.
 
-[**Windows 11 lab**](https://info.microsoft.com/ww-landing-windows-11-office-365-lab-kit.html)  
+The following lab kits are available for free download:
+
+[**Windows 11 lab**](https://info.microsoft.com/ww-landing-windows-11-office-365-lab-kit.html)
 
 ## A complete lab environment
 
-The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, a domain controller, an internet gateway, and a fully configured Configuration Manager instance. The labs include evaluation versions of the following products:
+The lab provides you with an automatically provisioned virtual lab environment. It includes domain-joined desktop clients, a domain controller, an internet gateway, and a fully configured Configuration Manager instance.
 
-|Windows 11 Lab|
+The labs include evaluation versions of the following products:
+
+|Windows 11 lab|
 |---|
-|Windows 11 Enterprise, Version 23H2|
-|Microsoft Configuration Manager, Version 2303|
+|Windows 11 Enterprise, version 23H2|
+|Microsoft Configuration Manager, version 2303|
 |Windows Assessment and Deployment Kit for Windows 11|
 |Windows Server 2022|
 
-The labs are also designed to be connected to trials for:
+The labs are designed for you to connect them to trials for the following services:
 
 - Microsoft 365 E5
 - Microsoft 365 Apps for enterprise
@@ -43,11 +46,13 @@ The labs are also designed to be connected to trials for:
 
 ## Step-by-step labs
 
-Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager. Note: A new Windows 11 version of the lab is now available. The lab guides include the following scenarios:
+Detailed lab guides take you through multiple deployment and management scenarios. The labs support the latest releases of Intune, Configuration Manager, and Windows 11.
+
+The following sections describe the scenarios supported by the lab guides.
 
 ### Plan and prepare infrastructure
 
-- Cloud Management Gateway
+- Cloud management gateway
 - Tenant attach and co-management
 - Endpoint analytics
 - Optimize update delivery
@@ -59,52 +64,51 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 ### Service Windows
 
-- Servicing Windows using Group Policy
+- Servicing Windows using group policy
 - Servicing Windows using Microsoft Intune
 - Servicing Windows with Configuration Manager
 
-### Manage Windows 
+### Manage Windows
 
-- Device Management for Windows 11 using Microsoft Intune 
-- Dynamic Management with Windows 11 
+- Device management for Windows 11 using Microsoft Intune
+- Dynamic management with Windows 11
 - Deploying Windows apps (Win32) with Intune
-- Remote Help
+- Remote help
 
 ### Deploy Microsoft 365 Apps for enterprise
 
 - Cloud managed deployment
 - Locally managed deployment
-- Microsoft 365 Apps deployment on Non-AD Joined Devices
+- Microsoft 365 Apps deployment on non-Active Directory-joined devices
 - Enterprise managed deployment using Configuration Manager
 - Enterprise managed deployment using Microsoft Intune
 - Servicing Microsoft 365 Apps for enterprise using Configuration Manager
 - Servicing Microsoft 365 Apps for enterprise using Intune
-- LOB Deployment and Management with Microsoft Intune
+- Line of business (LOB) application deployment and management with Microsoft Intune
 - Deploy Microsoft Teams
 - Assignment filters
 
 ### Managing Microsoft Edge
 
-- Deploy and Update Edge
-- IE Mode
-- Setup Enterprise New Tab Page
+- Deploy and update Microsoft Edge
+- Internet Explorer (IE) mode
+- Setup enterprise new tab page
 
 ### Security and Compliance
 
 - BitLocker
 - Microsoft Defender Antivirus
 - Windows Hello for Business
-- Windows Defender Credential Guard       
-- Microsoft Defender Application Guard     
-- Windows Defender Exploit Guard             
-- Windows Defender Application Control   
-- Microsoft Defender for Endpoint 
-
+- Credential Guard
+- Microsoft Defender Application Guard
+- Windows Defender Exploit Guard
+- Windows Defender Application Control
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
-> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before February 20, 2024. 
+> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before May 5, 2024. For support with this lab, email the lab support alias `winlab_help@microsoft.com`.
 
-## Additional guidance
+## More guidance
 
 - [Windows client deployment resources and documentation](/windows/deployment)
 - [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)

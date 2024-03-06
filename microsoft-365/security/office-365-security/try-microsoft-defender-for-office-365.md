@@ -1,12 +1,11 @@
 ---
 title: Try and evaluate Defender for Office 365
 description: Learn how to evaluate and try the capabilities of Microsoft Defender for Office 365 without affecting your existing mail flow.
-keywords: Try, Evaluate, Trial, Evaluation, Defender for Office 365
 f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -136,7 +135,7 @@ What's the difference between an evaluation and a trial of Defender for Office 3
 
   Your only option is to set up an evaluation of Defender for Office 365 on the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>. Furthermore, the evaluation is automatically set up in **Audit mode** (evaluation policies).
 
-  Later, you can _convert_ to **blocking mode** (Standard preset security policy) using the [**Convert to standard** action on the **Microsoft Defender for Office 365 evaluation** page](#convert-to-standard-protection) or by [turning off the evaluation on the **Microsoft Defender for Office 365 evaluation** page](#manage-evaluation-settings) and then [configuring the Standard preset security policy](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+  Later, you can _convert_ to **blocking mode** (Standard preset security policy) using the [**Convert to standard** action on the **Microsoft Defender for Office 365 evaluation** page](#convert-to-standard-protection) or by [turning off the evaluation on the **Microsoft Defender for Office 365 evaluation** page](#manage-evaluation-settings) and then [configuring the Standard preset security policy](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
   By definition, organizations with Defender for Office 365 Plan 2 don't require additional licenses to evaluate Defender for Office 365 Plan 2, so evaluations in these organizations are unlimited in duration.
 
@@ -305,7 +304,7 @@ In the **Manage MDO evaluation settings** flyout that opens, the following infor
     - Custom domains for domain impersonation protection.
     - Trusted senders and domains to exclude from impersonation protection.
 
-    The steps are essentially the same as described in the **Impersonation** section in Step 5 at [Use the Microsoft Defender portal to create anti-phishing policies](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies).
+    The steps are essentially the same as described in the **Impersonation** section in Step 5 at [Use the Microsoft Defender portal to create anti-phishing policies](anti-phishing-policies-mdo-configure.md#use-the-microsoft-defender-portal-to-create-anti-phishing-policies).
 
   - If impersonation protection is configured in the anti-phishing evaluation policy, this section shows the impersonation protection settings for:
     - **User impersonation protection**
@@ -325,7 +324,7 @@ For your evaluation or trial, you can switch from **audit mode** (evaluation pol
 
 After you select **Convert to standard protection**, read the information in the dialog that opens, and then select **Continue**.
 
-You're taken to the **Apply standard protection** wizard on the **Preset security policies** page. The list of recipients that are included and excluded from the evaluation or trial are copied into the Standard preset security policy. For more information, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+You're taken to the **Apply standard protection** wizard on the **Preset security policies** page. The list of recipients that are included and excluded from the evaluation or trial are copied into the Standard preset security policy. For more information, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 - The security policies in the Standard preset security policy have a higher priority than the evaluation policies, which means the policies in the Standard preset security are always applied *before* the evaluation policies, even if both are present and turned on.
 - There's no automatic way to go from **blocking mode** to **audit mode**. The manual steps are:
@@ -435,7 +434,7 @@ The following permissions are required in [Microsoft Entra ID](/microsoft-365/ad
 - *Create, modify or delete an evaluation or trial*: Membership in the **Security Administrator** or **Global Administrator** roles.
 - *View evaluation policies and reports in audit mode*: Membership in the **Security Administrator** or **Security Reader** roles.
 
-For more information about Microsoft Entra permissions in the Microsoft Defender portal, see [Microsoft Entra roles in the Microsoft Defender portal](mdo-portal-permissions.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
+For more information about Microsoft Entra permissions in the Microsoft Defender portal, see [Microsoft Entra roles in the Microsoft Defender portal](mdo-portal-permissions.md#microsoft-entra-roles-in-the-microsoft-defender-portal)
 
 ## Frequently asked questions
 

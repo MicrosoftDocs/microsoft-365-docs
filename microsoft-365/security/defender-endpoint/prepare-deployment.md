@@ -1,15 +1,11 @@
 ---
 title: Assign roles and permissions
 description: Configure permissions deploying Microsoft Defender for Endpoint
-keywords: deploy, prepare, permissions, environment, endpoint, server
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
-author: mjcaparas
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security

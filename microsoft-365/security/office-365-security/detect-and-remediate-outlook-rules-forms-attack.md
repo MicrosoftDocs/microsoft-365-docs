@@ -226,7 +226,7 @@ The Rules and Forms exploits are only used by an attacker after they've stolen o
 
 The best way to protect user accounts (especially admin accounts) is to [set up MFA for users](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication). You should also:
 
-- Monitor how user accounts are [accessed and used](/azure/active-directory/active-directory-view-access-usage-reports). You may not prevent the initial breach, but you can shorten the duration and the effects of the breach by detecting it sooner. You can use these [Office 365 Cloud App Security policies](/cloud-app-security/what-is-cloud-app-security) to monitor accounts and alert you to unusual activity:
+- Monitor how user accounts are [accessed and used](/entra/identity/monitoring-health/overview-monitoring-health). You may not prevent the initial breach, but you can shorten the duration and the effects of the breach by detecting it sooner. You can use these [Office 365 Cloud App Security policies](/cloud-app-security/what-is-cloud-app-security) to monitor accounts and alert you to unusual activity:
 
   - **Multiple failed login attempts**: Triggers an alert when users perform multiple failed sign in activities in a single session with respect to the learned baseline, which could indicate an attempted breach.
 

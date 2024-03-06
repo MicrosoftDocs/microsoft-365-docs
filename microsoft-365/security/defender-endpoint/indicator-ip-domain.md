@@ -3,10 +3,10 @@ title: Create indicators for IPs and URLs/domains
 ms.reviewer: thdoucet
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

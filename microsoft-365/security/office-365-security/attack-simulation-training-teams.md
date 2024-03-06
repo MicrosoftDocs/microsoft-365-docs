@@ -2,7 +2,7 @@
 title: Microsoft Teams in Attack simulation training
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
@@ -41,7 +41,7 @@ The addition of Teams in Attack simulation training affects the following featur
 
 In addition to having user reporting for Teams messages turned on as described in [User reported message settings in Microsoft Teams](submissions-teams.md), you also need to configure the Teams accounts that can be used as sources for simulation messages in Attack simulation training. To configure the accounts, do the following steps:
 
-1. Identify or create a user who's a member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator), [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator), or [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator) roles in Microsoft Entra ID. Assign a Microsoft 365, Office 365, Microsoft Teams Essentials, Microsoft 365 Business Basic, or a Microsoft 365 Business Standard license for [Microsoft Teams](/office365/servicedescriptions/teams-service-description). You need to know the password.
+1. Identify or create a user who's a member of the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator), [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator), or [Attack Simulation Administrator](/entra/identity/role-based-access-control/permissions-reference#attack-simulation-administrator) roles in Microsoft Entra ID. Assign a Microsoft 365, Office 365, Microsoft Teams Essentials, Microsoft 365 Business Basic, or a Microsoft 365 Business Standard license for [Microsoft Teams](/office365/servicedescriptions/teams-service-description). You need to know the password.
 2. Using the account from Step 1, open the Microsoft Defender portal at <https://security.microsoft.com> and go to **Email & collaboration** \> **Attack simulation training** \> **Settings** tab. Or, to go directly to the **Settings** tab, use <https://security.microsoft.com/attacksimulator?viewid=setting>.
 3. On the **Settings** tab, select **Manager user accounts** in the **Teams simulation configuration** section.
 4. In the **Teams simulation configuration** flyout that opens, select **Generate token**. Read the information in the confirmation dialog, and then select **I agree**.

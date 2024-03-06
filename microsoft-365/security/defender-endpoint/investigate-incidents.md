@@ -3,10 +3,10 @@ title: Investigate incidents in Microsoft Defender for Endpoint
 description: See associated alerts, manage the incident, and see alert metadata to help you investigate an incident
 search.appverid: met150
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

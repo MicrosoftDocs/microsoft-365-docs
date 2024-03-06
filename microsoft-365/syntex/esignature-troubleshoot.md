@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot a signature request for Microsoft SharePoint eSignature
+title: Troubleshoot a signature request for SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,18 +14,21 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to troubleshoot issues with sending, receiving, or viewing requests in Microsoft SharePoint eSignature. 
+description: Learn how to troubleshoot issues with sending, receiving, or viewing requests in SharePoint eSignature. 
 ---
 
-# Troubleshoot a signature request for Microsoft SharePoint eSignature
+# Troubleshoot a signature request for SharePoint eSignature
 
 ## Unable to create a request
 
-If you aren't able to create a signature request, check the PDF viewer settings, the collaboration settings, or the access policies.
+If you aren't able to create a signature request, check the PDF viewer settings, the collaboration settings, or the access policies. Refer to the [setup page](/microsoft-365/syntex/esignature-setup) to ensure the correct settings are done. Also, check that the PDF you are attempting to sign is not already electronically signed using SharePoint eSignature or any other electronic signature provider.
+
+> [!NOTE]
+> New eSignature requests can't be started from documents that have been previously signed. You need to choose another document to create the request.
 
 ### Default program for PDF viewing
 
-The PDF viewer is opened by selecting a PDF file from SharePoint Online. The ability to use the **Get signatures** option won't be available if the PDF is viewed in any other way, for example, in Microsoft Edge or Adobe Reader.
+The PDF viewer is opened by selecting a PDF file from a SharePoint library. The ability to use the **Get signatures** option won't be available if the PDF is viewed in any other way, for example, in Microsoft Edge or Adobe Reader.
 
 ### Collaboration settings
 
@@ -39,10 +42,10 @@ SharePoint eSignature is an extension of SharePoint document storage and managem
 
 ### Conditional access policies
 
-Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation will be unsuccessful. One common way to resolve this is to contact your IT admin who will be able to add the eSignature app to the list of approved apps via the  Microsoft Entra admin center.
+Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) is able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation is unsuccessful. One common way to resolve this is to contact your IT admin who will be able to add the eSignature app to the list of approved apps via the  Microsoft Entra admin center.
 
-## Unable to  find the request emails
-If you were sent an eSignature request and cannot find it in your email inbox, you should check your spam or junk folder. It is also good practice to mark the sender as non-spam so that future emails from the same sender go directly into your inbox. 
+## Unable to find the request emails
+If you were sent an eSignature request and can't find it in your email inbox, you should check your spam or junk folder. It's also good practice to mark the sender as non-spam so that future emails from the same sender go directly into your inbox. 
 
 ## Unable to sign a document as an external recipient
 
@@ -50,7 +53,7 @@ When you receive a document for signing from someone outside of your organizatio
 
 ## Unable to access a signed document
 
-Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permissions to write to the document and the originating folder because the final signed document is saved in this folder. If the sender loses access to this folder at any point before signing is complete, they might not be able to access the signed document permanently. In this scenario, the sender will be provided temporary access of 30 days to the signed document through the completion email. To access the folder and document, the sender should ensure that they have read permission to the originating folder or request access from the owner.
+Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permissions to write to the document and the originating folder because the final signed document is saved in this folder. If the sender loses access to this folder at any point before signing is complete, they might not be able to access the signed document permanently. In this scenario, the sender is provided temporary access of 30 days to the signed document through the completion email. To access the folder and document, the sender should ensure that they have read permission to the originating folder or request access from the owner.
 
 Additionally, the eSignature service might not be able to save a copy of the signed document to the originating folder if the folder was accidentally deleted before the signature request was completed.
 

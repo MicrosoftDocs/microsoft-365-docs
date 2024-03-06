@@ -1,9 +1,8 @@
 ---
 title: Address compromised user accounts with automated investigation and response
-keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection, compromised
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium

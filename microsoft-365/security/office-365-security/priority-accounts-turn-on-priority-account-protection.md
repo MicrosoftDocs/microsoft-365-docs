@@ -2,9 +2,9 @@
 title: Configure and review priority account protection in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.date: 6/19/2023
 audience: ITPro
 ms.topic: how-to
@@ -47,8 +47,6 @@ This article describes how to confirm that priority account protection is turned
 - As previously described, priority account protection is applied to accounts that have the **Priority account** tag applied to them. For instructions, see [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
 - The Priority account tag is a type of _user tag_. You can create custom user tags to differentiate specific groups of users in reporting and other features. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
-
-<a name='review-or-turn-on-priority-account-protection-in-the-microsoft-365-defender-portal'></a>
 
 ## Review or turn on priority account protection in the Microsoft Defender portal
 

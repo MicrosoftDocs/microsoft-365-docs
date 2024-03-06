@@ -1,15 +1,11 @@
 ---
 title: Investigate Microsoft Defender for Endpoint files
 description: Use the investigation options to get details on files associated with alerts, behaviors, or events.
-keywords: investigate, investigation, file, malicious activity, attack motivation, deep analysis, deep analysis report
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -115,7 +111,7 @@ The File content tab lists information about portable executable (PE) files, inc
 
 :::image type="content" source="../../media/investigate-files/investigatefiles-filecontent.png" alt-text="Screenshot of a file's content" lightbox="../../media/investigate-files/investigatefiles-filecontent.png":::
 
-The file capabilities view lists a file's activities as mapped to the MITRE ATT&CK™ techniques.
+The file capabilities view lists a file's activities as mapped to the MITRE ATT&CK&trade; techniques.
 
 :::image type="content" source="../../media/investigate-files/investigatefiles-filecapabilities.png" alt-text="Screenshot of a file's capabilities" lightbox="../../media/investigate-files/investigatefiles-filecapabilities.png":::
 
