@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 3/5/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -38,7 +38,7 @@ To launch a simulated phishing attack, do the following steps:
    The following sections describe the steps and configuration options to create a simulation.
 
    > [!NOTE]
-   > At any point after you name the simulation during the new simulation wizard, you can select **Save and close** to save your progress and continue later. The incomplete simulation has the **Status** value **Draft**. You can pick up where you left off by selecting the simulation and then clicking the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit simulation** action that appears.
+   > At any point after you name the simulation during the new simulation wizard, you can select **Save and close** to save your progress and continue later. The incomplete simulation has the **Status** value **Draft**. You can pick up where you left off by selecting the simulation and then selecting the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit simulation** action that appears.
 
 ## Select a social engineering technique
 
@@ -50,6 +50,7 @@ On the **Select technique** page, select an available social engineering techniq
 - **Link to Malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user contains a link to this malicious file. Opening the file helps the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 - **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
+- **How-to Guide**: User training with instructions for users (for example, how to report phishing messages).
 
 If you select the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
@@ -74,32 +75,34 @@ For the **Credential Harvest** or **Link in Attachment** social engineering tech
 
 ### Select a payload
 
-The following details are shown for each payload:
+The **Select payload and login page** page has two tabs:
+
+- **Global payloads**: Contains built-in payloads.
+- **Tenant payloads**: Contains custom payloads.
+
+The following information is shown for each payload:
 
 - **Payload name**
-- **Source**: For built-in payloads, the value is **Global**. For custom payloads, the value is **Tenant**.
 - **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 29+ languages as described in :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**.
-- **Click rate**: How many people have clicked on this payload.
 - **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
-- **Simulations launched** counts the number of times this payload was used in other simulations.
+
+You can sort the entries by clicking on an available column header.
 
 To find a payload in the list, type part of the payload name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
 
-If you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false":::, the following filters are available:
+To filter the payloads, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**. The following filters are available in the **Filters** flyout that opens:
 
 - **Source**: The available values are: **Global**, **Tenant**, and **All**.
 
 - **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are: **High**, **Medium**, and **Low**.
 
-- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
+- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Chinese (Traditional, Taiwan)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, and **Other**.
 
-- **Add tag(s)**
-
-- **Filter by theme**: The available values are: **Account activation**, **Account verification**, **Billing**, **Clean up mail**, **Document received**, **Expense**, **Fax**, **Finance report**, **Incoming messages**, **Invoice**, **Items received**, **Login alert**, **Mail received**, **Password**, **Payment**, **Payroll**, **Personalized offer**, **Quarantine**, **Remote work**, **Review message**, **Security update**, **Service suspended**, **Signature required**, **Upgrade mailbox storage Verify mailbox**, **Voicemail**, and **Other**.
+- **Filter by theme**: The available values are: **Account Activation**, **Account Verification**, **Billing**, **Clean up Mail**, **Document Received**, **Expense**, **Fax**, **Finance Report**, **Incoming Messages**, **Invoice**, **Item Received**, **Login Alert**, **Mail Received**, **Password**, **Payment**, **Payroll**, **Personalized Offer**, **Quarantine**, **Remote Work**, **Review Message**, **Security Update**, **Service Suspended**, **Signature Required**, **Upgrade Mailbox Storage**, **Verify mailbox**, **Voicemail**, and **Other**.
 
 - **Filter by brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, and **Other**.
 
-- **Filter by industry**: The available values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, and **Other**.
+- **Filter by industry**: The available values are: **Banking**, **Business Services**, **Consumer Services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial Services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier Services**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real Estate**, and **Other**.
 
 - **Current event**: The available values are **Yes** or **No**.
 
@@ -107,15 +110,17 @@ If you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.pn
 
 When you're finished configuring filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-If you select a payload by selecting the check box next to the name, a :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Send a test** button appears above the list of payloads. You can use this button to send a copy of the payload email to yourself (the currently logged in user) for inspection.
+If you select a payload by selecting the check box next to the name, a :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Send a test** action appears above the list of payloads. Use this action to send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
-If no payloads are available or if you want to create your own payload, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create a payload**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-global-tab.png" alt-text="The Global payloads tab on the Select payload page with a payload selected and the Send a test action in Attack simulation training." lightbox="../../media/attack-sim-training-simulations-select-payload-global-tab.png":::
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
+On the **Tenant payloads** tab, if no payloads are available or if you want to create your own payload, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create a payload**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md#create-payloads).
 
-If you select a payload by clicking anywhere in the row other than the check box next to the name, details about the payload are shown in a flyout:
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-tenant-tab.png" alt-text="The Tenant payloads tab on the Select payload page with a payload selected and the Send a test action in Attack simulation training." lightbox="../../media/attack-sim-training-simulations-select-payload-tenant-tab.png":::
 
-- The **Overview** tab (named **Payload** in **Credential Harvest** and **Link in Attachment** payloads) contains details about the payload, include a preview.
+If you select a payload by clicking anywhere in the row other than the check box next to the name, details about the payload are shown in a flyout that opens:
+
+- The **Overview** tab (named **Payload** in **Credential Harvest** and **Link in Attachment** payloads) contains details about the payload, including a preview.
 - The **Login page** tab is available only for **Credential Harvest** or **Link in Attachment** payloads and is described in the [Select a login page](#select-a-login-page) subsection.
 - The **Attachment** tab is available only for **Malware Attachment**, **Link in Attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, include a preview.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.

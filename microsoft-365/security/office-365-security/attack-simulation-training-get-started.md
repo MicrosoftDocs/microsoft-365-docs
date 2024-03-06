@@ -20,7 +20,7 @@ ms.custom:
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 7/17/2023
+ms.date: 3/5/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -54,7 +54,7 @@ Watch this short video to learn more about Attack simulation training.
     - **Attack Simulation Administrators**<sup>\*</sup>: Create and manage all aspects of attack simulation campaigns.
     - **Attack Payload Author**<sup>\*</sup>: Create attack payloads that an admin can initiate later.
 
-    <sup>\*</sup> Adding users to this role in [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md) is currently unsupported.
+    <sup>\*</sup> Adding users to this role group in [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md) is currently unsupported.
 
     Currently, [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) isn't supported.
 
@@ -63,7 +63,7 @@ Watch this short video to learn more about Attack simulation training.
 - Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information, see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations). Attack simulation training is available in the following regions: APC, EUR, and NAM. Countries within these regions where Attack simulation training is available include ARE, AUS, BRA, CAN, CHE, DEU, FRA, GBR, IND, JPN, KOR, LAM, NOR, POL, QAT, SGP, SWE, and ZAF.
 
   > [!NOTE]
-  > NOR, ZAF, ARE and DEU are the latest additions. All features except reported email telemetry will be available in these regions. We are working to enable the features and will notify our customers as soon as reported email telemetry becomes available.
+  > NOR, ZAF, ARE and DEU are the latest additions. All features except reported email telemetry are available in these regions. We're working to enable the features and we'll notify customers as soon as reported email telemetry becomes available.
 
 - As of September 2023, Attack simulation training is available in Microsoft 365 GCC and GCC High environments, but certain advanced features are not available in GCC High (for example, payload automation, recommended payloads, the predicted compromised rate). If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training as described in this article. Attack simulation training isn't yet available in DoD environments.
 
@@ -87,6 +87,8 @@ In Attack simulation training, multiple types of social engineering techniques a
 - **Drive-by-url**: An attacker sends the recipient a message that contains a URL. When the recipient clicks on the URL, they're taken to a website that tries to run background code. This background code attempts to gather information about the recipient or deploy arbitrary code on their device. Typically, the destination website is a well-known website that has been compromised or a clone of a well-known website. Familiarity with the website helps convince the user that the link is safe to click. This technique is also known as a *watering hole attack*.
 
 - **OAuth Consent Grant**: An attacker creates a malicious Azure Application that seeks to gain access to data. The application sends an email request that contains a URL. When the recipient clicks on the URL, the consent grant mechanism of the application asks for access to the data (for example, the user's Inbox).
+
+- **How-to Guide**: User training with instructions for users (for example, how to report phishing messages).
 
 The URLs that are used by Attack simulation training are described in the following table:
 
