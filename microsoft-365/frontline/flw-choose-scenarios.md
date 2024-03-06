@@ -94,7 +94,7 @@ Drive operational efficiency by digitizing paper-based processes and automating 
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
-| [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
+| [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Teams<br>Power Platform | Tasks, Lists, Approvals |
 
 ## Virtual Appointments
 
