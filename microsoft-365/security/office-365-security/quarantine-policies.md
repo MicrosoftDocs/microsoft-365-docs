@@ -2,7 +2,7 @@
 title: Quarantine policies
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.reviewer:
 audience: ITPro
 ms.topic: how-to

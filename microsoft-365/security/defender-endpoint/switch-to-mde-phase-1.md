@@ -3,10 +3,10 @@ title: Migrate to Microsoft Defender for Endpoint - Prepare
 description: Get ready to move to Microsoft Defender for Endpoint. Update your devices and configure your network connections.
 ms.service: defender-endpoint
 ms.subservice: onboard
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security

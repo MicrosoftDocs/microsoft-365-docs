@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 6/20/2023
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 ms.collection:
   - m365-security

@@ -4,7 +4,7 @@ f1.keywords:
   - CSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.date: 1/29/2024
 audience: ITPro
 ms.topic: how-to

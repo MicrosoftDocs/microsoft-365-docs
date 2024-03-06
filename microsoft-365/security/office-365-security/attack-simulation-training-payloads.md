@@ -2,7 +2,7 @@
 title: Payloads in Attack simulation training
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security

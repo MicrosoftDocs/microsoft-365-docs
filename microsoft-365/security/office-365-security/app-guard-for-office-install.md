@@ -1,11 +1,10 @@
 ---
 title: Application Guard for Office for admins
-keywords: application guard, protection, isolation, isolated container, hardware isolation
 f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium

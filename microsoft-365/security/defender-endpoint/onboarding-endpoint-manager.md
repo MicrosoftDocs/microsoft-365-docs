@@ -1,15 +1,11 @@
 ---
 title: Onboarding using Microsoft Intune
-description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Intune
-keywords: onboarding, configuration, deploy, deployment, endpoint manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft intune
+description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Intune.
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -37,30 +33,30 @@ ms.date: 12/18/2020
 
 This article acts as an example onboarding method.
 
-In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the cloud-native architecture.
+In the [Planning](deployment-strategy.md) article, there were several methods provided to onboard devices to the service. This article covers the cloud-native architecture.
 
 :::image type="content" source="images/cloud-native-architecture.png" alt-text="The cloud-native architecture" lightbox="images/cloud-native-architecture.png":::
 *Diagram of environment architectures*
 
-While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+While Defender for Endpoint supports onboarding of various endpoints and tools, this article doesn't cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
 The Microsoft Intune family of products is a solution platform that unifies several services. It includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Configuration Manager](/mem/configmgr).
 
-This topic guides users in:
+This article guides users in:
 
 - Step 1: Onboarding devices to the service by creating a group in Microsoft Intune to assign configurations on
 - Step 2: Configuring Defender for Endpoint capabilities using Microsoft Intune
 
-This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Intune:
+This onboarding guidance walks you through the following basic steps that you need to take when using Microsoft Intune:
 
 - [Identifying target devices or users](#identify-target-devices-or-users)
   - Creating a Microsoft Entra group (User or Device)
 - [Creating a Configuration Profile](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
-  - In Microsoft Intune, we'll guide you in creating a separate policy for each capability.
+  - In Microsoft Intune, we guide you in creating a separate policy for each capability.
 
 ## Resources
 
-Here are the links you'll need for the rest of the process:
+Here are the links you need for the rest of the process:
 
 - [Intune admin center](https://aka.ms/memac)
 - [Microsoft Defender XDR](https://security.microsoft.com)
@@ -72,7 +68,7 @@ For more information about Microsoft Intune, go to [Microsoft Intune securely ma
 
 ### Identify target devices or users
 
-In this section, we will create a test group to assign your configurations on.
+In this section, we create a test group to assign your configurations on.
 
 > [!NOTE]
 > Intune uses Microsoft Entra groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs.
@@ -108,13 +104,13 @@ In this section, we will create a test group to assign your configurations on.
 
 ## Step 2: Create configuration policies to configure Microsoft Defender for Endpoint capabilities
 
-In the following section, you'll create a number of configuration policies.
+In the following section, you create several configuration policies.
 
-First is a configuration policy to select which groups of users or devices will be onboarded to Defender for Endpoint:
+First is a configuration policy to select which groups of users or devices are onboarded to Defender for Endpoint:
 
 - [Endpoint detection and response](#endpoint-detection-and-response)
 
-Then you will continue by creating several different types of endpoint security policies:
+Then, you continue by creating several different types of endpoint security policies:
 
 - [Next-generation protection](#next-generation-protection)
 - [Attack surface reduction](#attack-surface-reduction---attack-surface-reduction-rules)
@@ -123,7 +119,7 @@ Then you will continue by creating several different types of endpoint security 
 
 1. Open the Intune admin center.
 
-2. Navigate to **Endpoint security > Endpoint detection and response**. Click on **Create Policy**.
+2. Navigate to **Endpoint security > Endpoint detection and response**. Select on **Create Policy**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/58dcd48811147feb4ddc17212b7fe840.png" alt-text="The Microsoft Intune admin center4" lightbox="images/58dcd48811147feb4ddc17212b7fe840.png":::
@@ -204,7 +200,7 @@ Then you will continue by creating several different types of endpoint security 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/dfdadab79112d61bd3693d957084b0ec.png" alt-text="The Microsoft Intune admin center17" lightbox="images/dfdadab79112d61bd3693d957084b0ec.png":::
 
-9. You'll see the configuration policy you created.
+9. You see the configuration policy you created.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/38180219e632d6e4ec7bd25a46398da8.png" alt-text="The Microsoft Intune admin center18" lightbox="images/38180219e632d6e4ec7bd25a46398da8.png":::
@@ -228,8 +224,7 @@ Then you will continue by creating several different types of endpoint security 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png" alt-text="The Microsoft Intune admin center20" lightbox="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png":::
 
-6. In the **Configuration settings page**: Set the configurations you require for
-    Attack surface reduction rules, then select  **Next**.
+6. In the **Configuration settings page**: Set the configurations you require for Attack surface reduction rules, then select  **Next**.
 
     > [!NOTE]
     > We will be configuring all of the Attack surface reduction rules to Audit.
@@ -312,14 +307,14 @@ Then you will continue by creating several different types of endpoint security 
 
 ### Confirm policies have been applied
 
-Once the Configuration policy has been assigned, it will take some time to apply.
+Once the Configuration policy has been assigned, it takes some time to apply.
 
 For information on timing, see [Intune configuration information](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
-To confirm that the configuration policy has been applied to your test device, follow the following process for each configuration policy.
+To confirm that the configuration policy is applied to your test device, follow the following process for each configuration policy.
 
 1. Open the Intune admin center and navigate to the relevant policy as shown in the
-    steps above. The following example shows the next generation protection settings.
+    preceding section. The following example shows the next generation protection settings.
 
     > [!div class="mx-imgBorder"]
     > [![Image of Microsoft Intune admin center33.](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox) 
@@ -349,12 +344,12 @@ To confirm that the configuration policy has been applied to your test device, f
 
 ### Confirm endpoint detection and response
 
-1. Before applying the configuration, the Defender for Endpoint Protection service should not be started.
+1. Before applying the configuration, the Defender for Endpoint Protection service shouldn't be started.
 
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel1.](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2. After the configuration has been applied, the Defender for Endpoint Protection Service should be started.
+2. After the configuration is applied, the Defender for Endpoint Protection service should be started.
 
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
@@ -367,12 +362,12 @@ To confirm that the configuration policy has been applied to your test device, f
 ### Confirm next-generation protection
 
 1. Before applying the policy on a test device, you should be able to manually
-    manage the settings as shown below.
+    manage the settings as shown in the following image:
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/88efb4c3710493a53f2840c3eac3e3d3.png" alt-text="The settings page-1" lightbox="images/88efb4c3710493a53f2840c3eac3e3d3.png":::
 
-2. After the policy has been applied, you should not be able to manually manage
+2. After the policy is applied, you shouldn't be able to manually manage
     the settings.
 
     > [!NOTE]
@@ -386,7 +381,7 @@ To confirm that the configuration policy has been applied to your test device, f
 
 1. Before applying the policy on a test device, open a PowerShell Window and type `Get-MpPreference`.
 
-2. This should respond with the following lines with no content:
+2. You should see the following lines with no content:
 
     > AttackSurfaceReductionOnlyExclusions:
     >
@@ -398,7 +393,7 @@ To confirm that the configuration policy has been applied to your test device, f
 
 3. After applying the policy on a test device, open a PowerShell Windows and type `Get-MpPreference`.
 
-4. This should respond with the following lines with content as shown below:
+4. You should see the following lines with content, as shown in the following image:
 
    :::image type="content" source="images/619fb877791b1fc8bc7dfae1a579043d.png" alt-text="The command line-2" lightbox="images/619fb877791b1fc8bc7dfae1a579043d.png":::
 
@@ -407,14 +402,15 @@ To confirm that the configuration policy has been applied to your test device, f
 1. On the test device, open a PowerShell Windows and type
     `(Get-MpPreference).EnableNetworkProtection`.
 
-2. This should respond with a 0 as shown below.
+2. This should respond with a 0 as shown in the following image:
 
    :::image type="content" source="images/196a8e194ac99d84221f405d0f684f8c.png" alt-text="The command line-3" lightbox="images/196a8e194ac99d84221f405d0f684f8c.png":::
 
 3. After applying the policy, open a PowerShell Windows and type
     `(Get-MpPreference).EnableNetworkProtection`.
 
-4. This should respond with a 1 as shown below.
+4. You should see a response with a 1 as shown in the following image:
 
    :::image type="content" source="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="The command line-4" lightbox="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::
+   
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
