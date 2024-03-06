@@ -20,35 +20,24 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/01/2024
+ms.date: 04/01/2024
 ---
 
 # Script analysis with Microsoft Copilot for Security in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
+Through AI-powered investigation capabilities from [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) embedded in Microsoft Defender, security teams can speed up their analysis of malicious or suspicious scripts and command lines in PowerShell, batch, and bash.
 
-- Microsoft Defender
-- Microsoft Defender XDR
+Most complex and sophisticated attacks like [ransomware](/security/ransomware) evade detection through numerous ways, including the use of scripts and PowerShell. Moreover, these scripts are often obfuscated, which adds to the complexity of detection and analysis. Security operations teams need to quickly analyze scripts to understand capabilities and apply appropriate mitigation, immediately stopping attacks from progressing further within a network.
 
-Through AI-powered investigation capabilities from [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) embedded in Microsoft Defender, security teams can speed up their analysis of malicious or suspicious scripts and codes within PowerShell, batch, and bash.
-
-Most complex and sophisticated attacks like [ransomware](/security/ransomware) evade detection through numerous ways, including the use of scripts and PowerShell. Moreover, these scripts are often obfuscated, which adds to the complexity of detection and analysis. Security operations teams need to quickly analyze scripts and codes to understand capabilities and apply appropriate mitigation, immediately stopping attacks from progressing further within a network.
-
-> [!NOTE]
-> Script analysis functions are continuously in development. Analysis of scripts in languages other than PowerShell, batch, and bash are being evaluated.
-
-The script analysis capability provides security teams added capacity to inspect scripts and codes without using external tools. This capability also reduces complexity of analysis, minimizing challenges and allowing security teams to quickly assess and identify a script as malicious or benign.
+The script analysis capability provides security teams added capacity to inspect scripts without using external tools. This capability also reduces complexity of analysis, minimizing challenges and allowing security teams to quickly assess and identify a script as malicious or benign. Script analysis is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
 
 This guide describes what the script analysis capability is and how it works, including how you can provide feedback on the results generated.
 
-> [!NOTE]
-> The script analysis capability is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
+## Analyze a script
 
-## Analyze a script or code
-
-You can access the script analysis capability in the alert timeline within an incident and in the [device timeline](/microsoft-365/security/defender-endpoint/device-timeline-event-flag).
+You can access the script analysis capability in an incident page's process tree below an attack story graph and in the [device timeline](/microsoft-365/security/defender-endpoint/device-timeline-event-flag).
 
 To begin analysis, perform the following steps:
 
@@ -73,7 +62,7 @@ To begin analysis, perform the following steps:
    :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards.":::
 
 > [!TIP]
-> You can navigate to an IP, file, or URL entity page in the analysis results by clicking on the entity.
+> You can navigate to a file, IP, or URL page from the Copilot results pane by clicking on the entity.
 
 ## See also
 

@@ -20,31 +20,20 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/01/2024
+ms.date: 04/01/2024
 ---
 
 # Resolve incidents with guided responses from Microsoft Copilot for Security in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-
-- Microsoft Defender
-- Microsoft Defender XDR
-
 [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in Microsoft Defender supports incident response teams in immediately resolving incidents with guided responses. Copilot for Security and Microsoft Defender uses AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
 
-Responding to incidents in Microsoft Defender XDR often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot in Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease.
+Responding to incidents in Microsoft Defender XDR often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot in Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease. Guided responses are also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
 
 This guide outlines how to access the guided response capability, including information on providing feedback about the responses.
 
-> [!NOTE]
-> The guided response capability is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
-
 ## Apply guided responses to resolve incidents
-
-> [!NOTE]
-> Guided responses are continuously in development. Incidents and alerts are continuously reviewed to provide appropriate responses.
 
 Guided responses recommend actions in the following categories:
 

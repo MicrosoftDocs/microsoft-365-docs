@@ -160,7 +160,7 @@
       items: 
        - name: Overview
          href: incident-response-overview.md
-       - name: Investigate and respond with Security Copilot
+       - name: Investigate and respond with Microsoft Copilot for Security in Microsoft Defender
          items:
               - name: Overview
                 href: security-copilot-in-microsoft-365-defender.md
