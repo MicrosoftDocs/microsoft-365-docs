@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Creating and Testing Binary Files on Test Base
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 This section provides all the steps necessary to create a new package containing binary files, for uploading and testing on Test Base. If you already have a pre-built .zip file, you can see [Uploading pre-built Zip package](uploadApplication.md), to upload your file.
 
 > [!IMPORTANT]

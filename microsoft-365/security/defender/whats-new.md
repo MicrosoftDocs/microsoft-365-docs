@@ -101,7 +101,7 @@ You can also get product updates and important notifications through the [messag
 
 - (GA) The [Attack story](investigate-incidents.md#attack-story) in incidents is now generally available. The attack story provides the full story of the attack and allows incident response teams to view the details and apply remediation.
 
-- A new URL and domain page is now available in Microsoft Defender XDR. The updated URL and domain page provides a single place to view all the information about a URL or a domain, including its reputation, the users who clicked it, the devices that accessed it, and emails where the URL or domain was seen. For details, see [Investigate URLs in Microsoft Defender XDR](/microsoft-365/security/defender-endpoint/investigate-domain).
+- A new URL and domain page is now available in Microsoft Defender XDR. The updated URL and domain page provides a single place to view all the information about a URL or a domain, including its reputation, the users who clicked it, the devices that accessed it, and emails where the URL or domain was seen. For details, see [Investigate URLs in Microsoft Defender XDR](../defender-endpoint/investigate-domain.md).
 
 ## June 2023
 
@@ -119,7 +119,7 @@ You can also get product updates and important notifications through the [messag
 
 - (GA) The [unified Assets tab in the Incidents page](investigate-incidents.md) is now generally available.
 
-- Microsoft is using a new weather-based naming taxonomy for threat actors. This new naming schema will provide more clarity and will be easier to reference. [Learn more about the new naming taxonomy](/microsoft-365/security/intelligence/microsoft-threat-actor-naming).
+- Microsoft is using a new weather-based naming taxonomy for threat actors. This new naming schema will provide more clarity and will be easier to reference. [Learn more about the new naming taxonomy](../intelligence/microsoft-threat-actor-naming.md).
 
 ## March 2023 
 
@@ -261,11 +261,11 @@ The security operations team can view all actions pending approval, and the stip
 
 - [New alert page in the Microsoft Defender portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243)
 
-  Provides enhanced information for the context into an attack. You can see which other triggered alert caused the current alert and all the affected entities and activities involved in the attack, including files, users and mailboxes. See [Investigate alerts](/microsoft-365/security/defender/investigate-alerts) for more information.
+  Provides enhanced information for the context into an attack. You can see which other triggered alert caused the current alert and all the affected entities and activities involved in the attack, including files, users and mailboxes. See [Investigate alerts](investigate-alerts.md) for more information.
 
 - [Trend graph for incidents and alerts in the Microsoft Defender portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425)
 
-  Determine if there are several alerts for a single incident or that your organization is under attack with several different incidents. See [Prioritize incidents](/microsoft-365/security/defender/incident-queue) for more information.
+  Determine if there are several alerts for a single incident or that your organization is under attack with several different incidents. See [Prioritize incidents](incident-queue.md) for more information.
 
 ## April 2021
 
