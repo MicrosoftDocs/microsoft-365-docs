@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Viewing Application Reliability Results
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 You can determine application reliability by reviewing the data in the tables on the **Reliability** tab. For example, by reviewing data from this tab on how your application processes performed, you can determine if such processes are crashing or hanging at an unacceptable rate. This is possible because the **Reliability** tab exposes statistics for all the underlying running processes, which is inclusive of specific application reliability performance data. The dashboard also organizes the details of these processes that ran on the test machine into **Crash** signal and **Unresponding** signal categories for better assessment of results.
 
 To display the **Reliability** tab, perform the steps of the procedure that follows:
