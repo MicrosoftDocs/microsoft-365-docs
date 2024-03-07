@@ -48,7 +48,7 @@ Usage cards can help determine the following scenarios:
 
    :::image type="content" source="../../media/usage-card-mdo.png" alt-text="The Defender for Office 365 usage card in the Defender portal." lightbox="../../media/usage-card-mdo.png":::
 
-For members of **Global Administrator** or **Billing Administrator** roles in [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles), following items are available on the card:
+For members of **Global Administrator** or **Billing Administrator** roles in [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal), following items are available on the card:
 
 - **Add more licenses**
 - **See licensing details**
@@ -75,7 +75,7 @@ The details flyout that opens contains the following information from the last 2
 
 **Threat protection status report** takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 
-**See licensing details** is available for members of the **Global Administrators** or **Security Operator** roles in [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles).
+**See licensing details** is available for members of the **Global Administrators** or **Security Operator** roles in [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal).
 
 ## Frequently asked questions
 
