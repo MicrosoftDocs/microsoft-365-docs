@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Test Base Chat
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Test Base Chat, a new feature applying the power of AI, serves as your personal support guide throughout your use of Test Base. Tired of manually searching through documentation or the web to find answers to your application testing questions? Simply initiate a conversation with Test Base Chat anywhere within Test Base to pose your queries. You'll receive tailored step-by-step guidance, complete with links to relevant pages in our [Test Base for Microsoft 365 documentation](/microsoft-365/test-base/). This feature is designed to save you time and eliminate any inconvenience.
 
 You can open the **Test Base Chat** pane via the icon at the right-hand bottom.
