@@ -46,8 +46,8 @@ Defender for Office 365 can help you understand why emails are getting delivered
 ## Handling malicious emails in junk folder of end users
 
 1. Ask end users to report the email as **phishing** using Microsoft Message Add-in, or Microsoft Phish Add-in, or the Outlook buttons.
-2. Admins can triage the user reported messages from the [User reported tab on the Submissions page](../admin-submission#view-user-reported-messages-to-microsoft.md).
-3. From those reported messages admins can **submit to** [Microsoft for analysis](../admin-submission#notify-users-from-within-the-portal.md) and learn why that email was allowed in the first place.
+2. Admins can triage the user reported messages from the [User reported tab on the Submissions page](../submissions-admin.md#view-user-reported-messages-to-microsoft).
+3. From those reported messages admins can **submit to** [Microsoft for analysis](../submissions-admin.md#notify-users-from-within-the-portal) and learn why that email was allowed in the first place.
 4. If needed, while submitting to Microsoft for analysis, admins can [create a block entry for the sender](../tenant-allow-block-list-email-spoof-configure.md#create-block-entries-for-domains-and-email-addresses) to mitigate the problem.
 5. Once the results for submissions are available, read the verdict to understand why emails were allowed, and how your tenant setup could be improved to prevent similar situations from happening in the future.
 
