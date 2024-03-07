@@ -109,7 +109,7 @@ All our updates contain
 #### What's new
 
 - Improved support for virtualizing while compressing or decompressing zip files
-- Improved reporting in the Microsoft Defender portal for block-only remediations
+- Improved reporting in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for block-only remediations
 
 #### Known issues
 
