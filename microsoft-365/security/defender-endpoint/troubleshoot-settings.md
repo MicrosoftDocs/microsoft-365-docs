@@ -33,8 +33,6 @@ audience: ITPro
 
 Microsoft Defender Antivirus provides numerous ways to manage the product, which provides SMB and Enterprises with flexibility of meeting the management tools that they already have.
 
- 
-
 - Microsoft Defender for Endpoint Security settings management
 
 - Microsoft Intune (MDM)
@@ -54,15 +52,13 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 - Registry
 
 > [!TIP]
-> Best practices
-> Try sticking to one method of managing Microsoft Defender for Antivirus.
-Example 1) You are migrating from a third-party antivirus product and when you try enabling Microsoft Defender Antivirus, it won't start.
+> As a best practice, try sticking to one method of managing Microsoft Defender for Antivirus. 
 
-   You narrow it down to this registry key:
+## Example: You are migrating from a third-party antivirus product and when you try enabling Microsoft Defender Antivirus, it won't start.
+
+You can narrow down the issue with this registry key:
 
    DisableAntispyware (dword) 1 (hex) is set
-
- 
 
 Our current recommendation is:
 
@@ -87,8 +83,6 @@ Step 2) Find if it's coming through a Policy or MDM or a local setting.
  
 
 Now that you know it's set either Policy and/or MDM and/or Local setting.
-
- 
 
 Step 3) Find what the policy name is
 
