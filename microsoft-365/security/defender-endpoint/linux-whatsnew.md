@@ -48,7 +48,7 @@ This article is updated frequently to let you know what's new in the latest rele
 There are multiple fixes and new changes in this release:
 
 - Updated default engine version to `1.1.23110.4`, and default signatures version to `1.403.87.0`.
-- Generic stability and performance improvements.
+- Stability and performance improvements.
 - Bug fixes.
 </details>
 
