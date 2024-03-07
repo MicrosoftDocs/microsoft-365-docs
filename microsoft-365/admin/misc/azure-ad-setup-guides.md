@@ -124,9 +124,9 @@ SSPR requires one of the following licenses:
 
 [Open the self-service password reset setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/ssprsetup).
 
-## Configure multi-factor authentication (MFA)
+## Configure multifactor authentication (MFA)
 
-For customers with Microsoft Entra ID Governance, Microsoft Entra ID P1, or P2, we provide customizable Conditional Access templates that include the most common and least intrusive security standards. When Microsoft Entra ID licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA.
+The Configure multi-factor authentication (MFA) guide provides customers with Microsoft Entra ID P1 or Microsoft Entra ID P2 customizable Conditional Access templates that include the most common and least intrusive security standards. This includes the use of risk-based Conditional Access policies for customer with a Microsoft Entra ID P2 subscription. When Microsoft Entra ID P1 or P2 licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA.
 
 ### Licensing
 
