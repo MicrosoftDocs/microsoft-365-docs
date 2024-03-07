@@ -55,7 +55,7 @@ Users don't need Defender for Endpoint installed on their local devices to get S
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Configure Safe Documents settings_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to Safe Documents settings_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ### How does Microsoft handle your data?
 
