@@ -2,7 +2,7 @@
 title: Managed detection and response 
 ms.reviewer:
 description: Defender Experts for XDR provides actionable managed response to your security operations center (SOC) teams.
-keywords: XDR, extended detection and response, managed detection and response in defender experts for XDR, experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, Managed response in Teams
+keywords: XDR, extended detection and response, managed detection and response in defender experts for XDR, experts for xdr, managed response faq, managed threat hunting, managed detection and response (MDR) service, Managed response in Teams, guided response
 ms.service: defender-experts
 ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
@@ -19,7 +19,7 @@ ms.collection:
   - essentials-manage
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 02/12/2024
+ms.date: 03/07/2024
 ---
 
 # Managed detection and response
@@ -145,11 +145,10 @@ You could obtain visibility into incidents in your SIEM or ITSM application by u
 
 After configuring a connector, the updates by Defender Experts to an incident's **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft Defender XDR can be synchronized with the third-party SIEM or ITSM applications, depending on how the field mapping has been implemented. To illustrate, you can take a look at the [connector available from Sentinel to ServiceNow](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Servicenow/StoreApp).
 
-
 ### See also
 
-- [Get started with Microsoft Defender Experts for XDR](get-started-xdr.md)
+- [Understanding and managing Defender Experts for XDR incident notifications](faq-incident-notifications-xdr.md)
+- [Understanding managed response](faq-managed-response.md)
 - [Get real-time visibility with Defender Experts for XDR reports](reports-xdr.md)
-- [Communicating with experts in the Microsoft Defender Experts for XDR service](communicate-defender-experts-xdr.md)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
