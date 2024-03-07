@@ -1470,6 +1470,11 @@
     - name: Collect support logs using LiveAnalyzer
       href: troubleshoot-collect-support-log.md
 
+    - name: Troubleshooting where the Microsoft Defender Antivirus setting is coming
+        from?
+      href: troubleshoot-settings.md
+      displayName: Troubleshooting where the Microsoft Defender Antivirus setting is
+        coming from?
     - name: Troubleshoot attack surface reduction issues
       items:
       - name: Network protection
