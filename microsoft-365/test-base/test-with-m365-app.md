@@ -18,6 +18,7 @@ f1.keywords: NOCSH
 
 # Test your application with latest Microsoft 365 apps
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
 
 This section provides instructions on how to test your application with latest Microsoft 365 apps.
 
