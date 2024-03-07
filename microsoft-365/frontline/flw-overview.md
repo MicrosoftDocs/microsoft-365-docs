@@ -42,7 +42,7 @@ The following image shows the employee experiences that are key to frontline wor
 
 [Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization.
 
-Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses or Office 365 F3 license, but you can also use an Enterprise license (E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
+Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses, but you can also use an Enterprise license (E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
 
 Some features are available for F3 licenses, but not F1, such as Power Apps and Power Automate. For a detailed comparison of what's included in Microsoft 365  plans for enterprises, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
 
@@ -76,6 +76,10 @@ Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), th
 |:::image type="icon" source="/office/media/icons/share-teams.png":::| [Digital ecosystem](flw-choose-scenarios.md#more-scenarios-and-solutions-with-the-digital-ecosystem) | Unite the technology your frontline workforce depends on behind a single pane of glass for a seamless end-to-end experience. Include partner solutions and take advantage of integrations that help streamline processes. |
 
 ## Safeguard your business
+
+Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, threat and information protection, and security management. Manage identities and access with [Microsoft Entra ID](/entra/fundamentals/whatis). Reinforce secure access management across endpoints and devices with [Microsoft Intune](/mem/intune/fundamentals/what-is-intune).
+
+<!-- ## Safeguard your business
 
 Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, identity and threat protection, and security management. The offerings available to your workforce in these areas depends on the licenses you assign to your users in the Microsoft 365 admin center.
 
@@ -114,13 +118,25 @@ Equip your employees with industry-specific devices tailored for their needs, or
 |[Manage mobile devices for frontline workers](flw-devices.md) |Enterprise, F1, F3 |
 |[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) |Enterprise, F1, F3 |
 |[Microsoft Intune family of products](/mem/endpoint-manager-overview) |Enterprise, F1, F3 |
-|[Device partner integrations with Intune](/mem/intune/protect/device-compliance-partners) |Enterprise, F1, F3 |
+|[Device partner integrations with Intune](/mem/intune/protect/device-compliance-partners) |Enterprise, F1, F3 |-->
+
+## Simplify deployment and management at scale
+
+Give your frontline workforce access to the right apps and resources from the start.
+
+|Icon  |Capability |
+|---------|---------|
+|:::image type="icon" source="/office/media/icons/deploy-teams.png":::|[Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)|
+|:::image type="icon" source="/office/media/icons/deploy-teams.png"::: |[Deploy frontline static teams at scale](deploy-teams-at-scale.md)|
+|:::image type="icon" source="/office/media/icons/deploy-teams.png":::|[Deploy your frontline operational hierarchy](deploy-frontline-operational-hierarchy.md)|
+|:::image type="icon" source="/office/media/icons/deploy-teams.png":::|[Deploy Shifts to your frontline teams at scale](deploy-shifts-at-scale.md)|
+|:::image type="icon" source="/office/media/icons/policy.png"::: |[Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw)|
 
 ## Adoption principles to help envision and implement business scenarios
 
 You can implement many helpful scenarios for frontline workers quickly, using out-of-the-box capabilities. For a list of scenarios we recommend and provide guidance for, see [Choose your scenarios](flw-choose-scenarios.md).
 
-However, it also pays to spend time thinking through exactly what you want to achieve organizationally and setting the appropriate groundwork. Particularly if you need to enhance out-of-the-box scenarios with integrated or custom solutions from solution providers or partners, you'll want to spend time planning and envisioning before you dive in.
+However, it also pays to spend time thinking through exactly what you want to achieve organizationally and setting the appropriate groundwork. Particularly if you need to enhance out-of-the-box scenarios with integrated or custom solutions from solution providers or partners, you want to spend time planning and envisioning before you dive in.
 
 The following principles are based on information from the [Frontline Solutions Success Kit](https://aka.ms/TeamsFLWSuccessKit). Find more adoption resources on the [frontline worker section of the Microsoft Adoption site](https://adoption.microsoft.com/microsoft-teams/frontline-workers/).
 
@@ -149,7 +165,7 @@ The following principles are based on information from the [Frontline Solutions 
 >
 > * Evaluate what you need technically to enable the scenarios.
 > * Map apps and capabilities to light up key scenarios and user stories.
-> * Think through questions about device management, such as: how will workers access Teams (install themselves? pushed to them?), how will they sign in and how will you manage their identities? What's your approach to bring-your-own, corporate shared, or assigned devices?
+> * Think through questions about device management, such as how will workers access Teams (install themselves? pushed to them?), how will they sign in and how will you manage their identities? What's your approach to bring-your-own, corporate shared, or assigned devices?
 > * Identify relevant roles and responsibilities for the execution phase.
 
 **Build**

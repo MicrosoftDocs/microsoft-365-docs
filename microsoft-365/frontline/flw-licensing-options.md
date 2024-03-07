@@ -24,11 +24,11 @@ ms.date:
 Organizations in many industries, such as retail, manufacturing, hospitality, and more, have a mix of user types:
 
 - Information workers, who probably have desktop or laptop computers and likely work more on documents than directly with customers, such as headquarters staff.
-- Frontline workers, who often work on tablets or phones and work either directly with customers or the general public. They provide services, support, and sell products, or are employees directly involved in the manufacturing and distribution of products and services. For example: retail associates, healthcare clinicians and nursing staff, factory workers, and so on.
+- Frontline workers, who often work on tablets or phones and work either directly with customers or the general public. They provide services, support, and sell products, or are employees directly involved in the manufacturing and distribution of products and services. For example, retail associates, healthcare clinicians and nursing staff, factory workers, and so on.
 
 Microsoft 365 and Microsoft Teams have features and a licensing model to support both types of users for your organization. [Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a frequently mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRoBo]
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RWRoBo]
 
 ## Assign appropriate licenses to support frontline worker and information worker user types
 
@@ -40,7 +40,7 @@ With this example, you can mix license types for the two types of workers in you
 
 | Frontline workers need quick access to tools that help them work with customers: | Information workers need tools to support their tasks like: |
 | ----- | ----- |
-| Frontline workers need access to information on the go - they have the Office apps on phones or tablets. | Information workers write, edit, and share documents and have Office apps on desktops or laptops, plus mobile apps on phones and tablets. |
+| Frontline workers need access to information on the go - they have Microsoft 365 apps on phones or tablets. | Information workers write, edit, and share documents and have Microsoft 365 apps on desktops or laptops, plus mobile apps on phones and tablets. |
 | Frontline workers communicate on the go with Teams chat, schedule work with Shifts, check off to-do items with Tasks, and track items in Lists, along with other Teams functionality.  | Information workers communicate over Teams with chat, meet, and call, and use other Teams apps (depending on the specific license). |
 | Frontline workers can find organization-wide resources, communications, or training with SharePoint, OneDrive, Viva Connections, and Viva Engage. | Information workers create or consume team or organization-wide resources and communications with included Microsoft 365 services (depending on the specific license). |
 
