@@ -1018,7 +1018,7 @@ If you don't see data in the reports, check the report filters and double-check 
 
 - [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)
 - [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
-- [How do I turn off spam filtering?](/microsoft-365/security/office-365-security/anti-spam-protection-faq#how-do-i-turn-off-spam-filtering-)
+- [How do I turn off spam filtering?](anti-spam-protection-faq.md#how-do-i-turn-off-spam-filtering-)
 
 ## Download and export report information
 
