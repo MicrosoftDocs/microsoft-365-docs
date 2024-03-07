@@ -62,18 +62,17 @@ Example 1) You are migrating from a third-party antivirus product and when you t
 
 Our current recommendation is:
 
-1. [Preferred] Remove conflicting policies in GPO and/or Configuration Manager and/or 3<sup>rd</sup> party MDM and/or 3<sup>rd</sup> party management solutions when moving to MDE Security settings management or Intune for policy management.
+1. [Preferred] Remove conflicting policies in GPO and/or Configuration Manager and/or third-party MDM and/or third-party management solutions when moving to MDE Security settings management or Intune for policy management.
 
-> [!NOTE]
-> MDMWinsOverGP which is a Policy (CSP)  does not apply for all settings such as Attack Surface Reduction rules (ASR rules) in Windows 10.
-> 
-Step 1) 
+Step 1) What setting wins?
 
+Group Policy (GPO) > Microsoft Configuration Manager Co-Management > Microsoft Configuration Manager (standalone) > Microsoft Intune (MDM) > Microsoft Configuration Manager with Tenant Attach > Powershell (Set-MpPreference) or MpCmdRun.exe or Windows Management Instrumentation (WMI).
+
+> [!WARNING]
+> [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) which is a Policy (CSP) does not apply for all settings such as Attack Surface Reduction rules (ASR rules) in Windows 10.
  
 
 Step 2) Find if it’s coming through a Policy or MDM or a local setting.
-
- 
 
 ||Microsoft Defender Antivirus setting registry location | What tools?|
 | -------- | -------- | -------- |
@@ -89,12 +88,10 @@ Now that you know it’s set either Policy and/or MDM and/or Local setting.
 
 Step 3) Find what the policy name is
 
-|Method of the setting being applied |Method of the setting being applied| 
+|Method of the setting being applied |Command to run|
 | -------- | -------- |
-|Policy| GPO: Start, CMD, Run as admin GpResult.exe /h C:\temp\GpResult_output.html , or a direct modification to the registry.
-Microsoft Configuration Manager Co-Management and Microsoft Configuration Manager (standalone): C:\Windows\CCM\Logs|
-|MDM| Intune: Start, CMD, Run as admin mdmdiagnosticstool.exe -zip "c:\temp\MDMDiagReport.zip" [Collect MDM logs - Windows Client Management](/windows/client-management/mdm-collect-logs) , or a direct modification to the registry|
-|Local setting|It could have been during the imaging (sysprep), via Powershell (Set-MpPreference), Windows Management Instrumentation (WMI), or a direct modification to the registry|
-
+|Policy| GPO: Start, CMD, Run as admin GpResult.exe /h C:\temp\GpResult_output.html , or a direct modification to the registry. Microsoft Configuration Manager Co-Management and Microsoft Configuration Manager (standalone): C:\Windows\CCM\Logs.|
+|MDM |Intune: Start, CMD, Run as admin mdmdiagnosticstool.exe -zip "c:\temp\MDMDiagReport.zip" [Collect MDM logs - Windows Client Management](/windows/client-management/mdm-collect-logs), or a direct modification to the registry.|
+|Local setting |It could have been during the imaging (sysprep), via Powershell (Set-MpPreference), Windows Management Instrumentation (WMI), or a direct modification to the registry.|
 
 Step 4) Once you have the conflicting policy, working with the Administrators of the management tools to remove the targeting to the devices that need to get the correct Microsoft Defender Antivirus setting.
