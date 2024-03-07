@@ -176,9 +176,24 @@ Authentication-Results:
 
 These values are explained at [Authentication-results message header](message-headers-eop-mdo.md#authentication-results-message-header).
 
-Admins and users can examine the message headers to discover how Microsoft 365 identified the sender as spoofed or legitimate.
+Admins and users can examine the message headers to discover how Microsoft 365 identified the sender as suspicious spoofed sender or legitimate.
+
+It's crucial to understand that a failure in CAUTH does not directly lead to an email being blocked. Our system employs a holistic evaluation strategy, considering the overall suspicious nature of an email alongside CAUTH outcomes. This method is designed to mitigate the risk of incorrectly blocking legitimate emails from domains that may not strictly adhere to authentication protocols. Such a balanced approach helps in distinguishing genuinely malicious emails from those that simply fail to conform to standard authentication practices.
 
 The following examples focus on the results of email authentication only (the `compauth` value and reason). Other Microsoft 365 protection technologies can identify messages that pass email authentication as spoofed, or identify messages that fail email authentication as legitimate.
+
+  - **Scenario**: The domain in the SPF record or the DKIM signature doesn't match the domain in the From address.
+- **Result**: The message can fail composite authentication, Despite the CAUTH failure, the email might still be allowed if other assessments do not indicate a suspicious nature. 
+
+  ```text
+  Authentication-Results: spf=none (sender IP is 192.168.1.8)
+    smtp.mailfrom=maliciousdomain.com; contoso.com; dkim=pass
+    (signature was verified) header.d=maliciousdomain.com;
+    contoso.com; dmarc=none action=none header.from=contoso.com;
+    compauth=fail reason=001
+  From: chris@contoso.com
+  To: michelle@fabrikam.com
+  ```
 
 - **Scenario**: The fabrikam.com domain has no SPF, DKIM, or DMARC records.
 - **Result**: Messages from senders in the fabrikam.com domain can fail composite authentication:
