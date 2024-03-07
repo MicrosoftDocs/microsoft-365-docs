@@ -37,8 +37,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 ## March-2024 Build: 101.24012.0001 | Release version: 30.124012.0001.0
 
-&ensp;Released: **February 5,2024**<br/>
-&ensp;Published: **February 5,2024**<br/>
+&ensp;Released: **March 11,2024**<br/>
+&ensp;Published: **March 11,2024**<br/>
 &ensp;Build: **101.24012.0001**<br/>
 &ensp;Release version: **30.124012.0001.0**<br/>
 &ensp;Engine version: **1.1.23110.4**<br/>
@@ -47,9 +47,8 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 There are multiple fixes and new changes in this release:
 
-- Microsoft Defender for Endpoint on Linux now officially supports Mariner 2, Rocky 8.7 and higher, Alma 9.2 and higher version distros. If you already have Defender for Endpoint running on any of these distros and facing any issues in the older versions, please upgrade to the latest Defender for Endpoint version. Refer our public deployment docs for more details.
-- Updated default engine version to `1.1.23100.2010`, and default signatures version to `1.399.1389.0`.
-- General stability and performance improvements.
+- Updated default engine version to `1.1.23110.4`, and default signatures version to `1.403.87.0`.
+- Generic stability and performance improvements.
 - Bug fixes.
 </details>
 
