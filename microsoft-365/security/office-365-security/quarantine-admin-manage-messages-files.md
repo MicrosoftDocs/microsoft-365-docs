@@ -153,7 +153,7 @@ Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" bor
 - Sender email address
 - Subject. Use the entire subject of the message. The search isn't case-sensitive.
 
-After you've entered the search criteria, press the enter ENTER key to filter the results.
+After you've entered the search criteria, press Enter to filter the results.
 
 > [!NOTE]
 > The **Search** box searches for quarantined items in the current view (which is limited to 100 items), not all quarantined items. To search all quarantined items, use **Filter** and the resulting **Filters** flyout.
@@ -531,7 +531,7 @@ When you're finished in the **Filters** flyout, select **Apply**. To clear the f
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific files by filename. Wildcards aren't supported.
 
-After you've entered the search criteria, press the enter ENTER key to filter the results.
+After you've entered the search criteria, press Enter to filter the results.
 
 After you find a specific quarantined file, select the file to view details about it and to take action on it (for example, view, release, download, or delete the file).
 
