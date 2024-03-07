@@ -37,8 +37,8 @@ Microsoft Defender for Office 365 helps deal with important legitimate business 
 
 1. Ask end users to report the email as **not junk** using Microsoft Message Add-in or the Outlook buttons.
 2. End users can also add the sender to the [**safe sender list**](https://support.microsoft.com/office/safe-senders-in-outlook-com-470d4ee6-e3b6-402b-8cd9-a6f00eda7339) in Outlook to prevent the email from these senders landing in Junk folder.
-3. Admins can triage the user-reported messages from [the User reported tab on the Submission page](../submission-admin.md#view-user-reported-messages-to-microsoft).
-4. From those reported messages admins can submit to [**Microsoft for analysis**](../submission-admin.md#notify-users-from-within-the-portal) and understand why was that email blocked in the first place.
+3. Admins can triage the user-reported messages from [the User reported tab on the Submission page](../submissions-admin.md#view-user-reported-messages-to-microsoft).
+4. From those reported messages admins can submit to [**Microsoft for analysis**](../submissions-admin.md#notify-users-from-within-the-portal) and understand why was that email blocked in the first place.
 5. If needed, while submitting to Microsoft for analysis, admins can judiciously [create an allow entry for the sender](../tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-domains-and-email-addresses) to mitigate the problem.
 6. Once the results from the admin submission are available, read it to understand why emails were blocked and how your tenant setup could be improved to *prevent* similar situations from happening in the future.
 
