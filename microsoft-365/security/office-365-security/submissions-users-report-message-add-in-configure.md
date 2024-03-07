@@ -83,7 +83,7 @@ After the add-in is installed and enabled, users see the following icons based o
   - [Microsoft Defender XDR Unified role based access control (RBAC)](../security/defender/manage-rbac.md) (Affects the Defender portal only, not PowerShell): **Security operations/Security data/Response (manage)** or **Security operations/Security data/Read-only**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** role group.
   - [Exchange Online permissions](/Exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** role group.
-  - [Microsoft Entra permissions](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator** role gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator** role gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
@@ -183,7 +183,7 @@ Install and configure the Report Message or Report Phishing add-ins for the orga
 
 ### Get the Report Message or the Report Phishing add-ins for your Microsoft 365 GCC or GCC High organization
 
-Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use the steps in this section to get the Report Message or Report Phishing add-ins for their organizations.
+Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use the steps in this section to get the Report Message or Report Phishing add-ins for their organizations. These steps apply to Outlook and Outlook on the web (formerly known as Outlook Web App or OWA) and don't apply to Outlook for iOS and Android.
 
 > [!NOTE]
 > It could take up to 24 hours for the add-in to appear in your organization.
