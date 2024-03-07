@@ -47,7 +47,7 @@ Microsoft leverages vast amounts of anti-phishing, anti-spam, and anti-malware d
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across *multiple* companies.
 
 > [!TIP]
-> To learn more about the data available within a campaign, read [Campaign Views in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/campaigns).
+> To learn more about the data available within a campaign, read [Campaign Views in Microsoft Defender for Office 365](../campaigns.md).
 
 ## Watch the *Exploring campaign views* video
 
@@ -81,4 +81,4 @@ In the event that a campaign has targeted your organization and you'd like to le
 
 ## Next steps
 
-To learn more, read, [Campaign Views in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/campaigns).
+To learn more, read, [Campaign Views in Microsoft Defender for Office 365](../campaigns.md).
