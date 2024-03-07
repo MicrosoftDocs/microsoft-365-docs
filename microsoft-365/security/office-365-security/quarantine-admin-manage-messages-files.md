@@ -271,7 +271,7 @@ If you don't release or remove a message, it's automatically deleted from quaran
 >
 >   Verify that you aren't using third party filtering before you open a support ticket about these issues.
 >
-> - Inbox rules ([created by users in Outlook](https://support.microsoft.com/c24f5dea-9465-4df4-ad17-a50704d66c59) or by admins using the **\*-InboxRule** cmdlets in Exchange Online PowerShell) can move or delete messages from the Inbox.
+> - Inbox rules (created by users in Outlook or by admins by using the **\*-InboxRule** cmdlets in Exchange Online PowerShell) can move or delete messages from the Inbox.
 >
 > Admins can use [message trace](message-trace-defender-portal.md) to determine if a released message was delivered to the recipient's Inbox.
 
