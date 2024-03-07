@@ -1,12 +1,12 @@
 ---
 title: Collect diagnostic data of Microsoft Defender Antivirus
-description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
+description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 author: siosulli
 ms.author: siosulli
 ms.custom: nextgen
-ms.date: 03/03/2024
+ms.date: 03/07/2024
 ms.reviewer: pahuijbr, yongrhee
 manager: deniseb
 ms.subservice: ngp
@@ -54,12 +54,11 @@ On at least two devices that are experiencing the same issue, obtain the `.cab` 
 
     c. Specify administrator credentials or approve the prompt.
 
-1. Navigate to the directory for Microsoft Defender Antivirus. 
+1. Navigate to the directory for Microsoft Defender Antivirus: 
 
-   cd C:\ProgramData\Microsoft\Windows Defender\Platform\<version>
+   `cd C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
 
-   > [!NOTE]
-   > Where <version> is the actual version that starts with 4.18.2xxxx.x
+   Where `<version>` is the actual version that starts with `4.18.2xxxx.x`
    
 1. Type the following command, and then press **Enter**
 
