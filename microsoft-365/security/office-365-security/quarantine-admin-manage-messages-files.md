@@ -51,7 +51,7 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security Data / email quarantine (manage)** (management via PowerShell).
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](../defender/manage-rbac.md) (Affects the Defender portal only, not PowerShell): **Security Data / email quarantine (manage)** (management via PowerShell).
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
     - _Take action on quarantined messages for all users_: Membership in the **Quarantine Administrator**, **Security Administrator**, or **Organization Management** role groups.
       - _Submit messages from quarantine to Microsoft_: Membership in the **Quarantine Administrator** or **Security Administrator** role groups.
@@ -153,7 +153,7 @@ Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" bor
 - Sender email address
 - Subject. Use the entire subject of the message. The search isn't case-sensitive.
 
-After you've entered the search criteria, press the enter ENTER key to filter the results.
+After you've entered the search criteria, press Enter to filter the results.
 
 > [!NOTE]
 > The **Search** box searches for quarantined items in the current view (which is limited to 100 items), not all quarantined items. To search all quarantined items, use **Filter** and the resulting **Filters** flyout.
@@ -271,7 +271,7 @@ If you don't release or remove a message, it's automatically deleted from quaran
 >
 >   Verify that you aren't using third party filtering before you open a support ticket about these issues.
 >
-> - Inbox rules ([created by users in Outlook](https://support.microsoft.com/c24f5dea-9465-4df4-ad17-a50704d66c59) or by admins using the **\*-InboxRule** cmdlets in Exchange Online PowerShell) can move or delete messages from the Inbox.
+> - Inbox rules (created by users in Outlook or by admins by using the **\*-InboxRule** cmdlets in Exchange Online PowerShell) can move or delete messages from the Inbox.
 >
 > Admins can use [message trace](message-trace-defender-portal.md) to determine if a released message was delivered to the recipient's Inbox.
 
@@ -531,7 +531,7 @@ When you're finished in the **Filters** flyout, select **Apply**. To clear the f
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific files by filename. Wildcards aren't supported.
 
-After you've entered the search criteria, press the enter ENTER key to filter the results.
+After you've entered the search criteria, press Enter to filter the results.
 
 After you find a specific quarantined file, select the file to view details about it and to take action on it (for example, view, release, download, or delete the file).
 
