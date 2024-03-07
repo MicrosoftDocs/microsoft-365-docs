@@ -27,8 +27,7 @@ You can open the **Test Base Chat** pane via the icon at the right-hand bottom.
 > [!div class="mx-imgBorder"]
 > [![Screenshot of the test base chat button.](Media/testbasechat1.png)](Media/testbasechat1.png#lightbox)
 
-> [!div class="mx-imgBorder"]
-> [![Screenshot of the test base chat page.](Media/testbasechat2.png)](Media/testbasechat2.png#lightbox)
+![Screenshot of the test base chat page.](Media/testbasechat2.png)
 
 ## Privacy
 
