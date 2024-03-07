@@ -17,7 +17,7 @@ ms.date: 08/14/2023
 
 # Understanding overrides within the email entity page in Microsoft Defender for Office 365
 
-Within the Microsoft Defender for Office 365 *[email entity page](../mdo-email-entity-page)*, there's a wealth of useful information about an email, including if applicable the **overrides** which affected that message, and potentially the location that the message was delivered or moved to post delivery.
+Within the Microsoft Defender for Office 365 *[email entity page](../mdo-email-entity-page.md)*, there's a wealth of useful information about an email, including if applicable the **overrides** which affected that message, and potentially the location that the message was delivered or moved to post delivery.
 
 This article is all about helping you **understand the different overrides**, how they're triggered, and helpful information for diagnosing when the effect of an override was unexpected, such as an email being blocked when no threats were found.
 
