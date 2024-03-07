@@ -37,8 +37,8 @@ Microsoft Defender for Office 365 helps deal with important legitimate business 
 
 1. Ask end users to report the email as **not junk** using Microsoft Message Add-in or the Outlook buttons.
 2. End users can also add the sender to the [**safe sender list**](https://support.microsoft.com/office/safe-senders-in-outlook-com-470d4ee6-e3b6-402b-8cd9-a6f00eda7339) in Outlook to prevent the email from these senders landing in Junk folder.
-3. Admins can triage the user-reported messages from [the User reported tab on the Submission page](/microsoft-365/security/office-365-security/admin-submission#view-user-reported-messages-to-microsoft).
-4. From those reported messages admins can submit to [**Microsoft for analysis**](/microsoft-365/security/office-365-security/admin-submission#notify-users-from-within-the-portal) and understand why was that email blocked in the first place.
+3. Admins can triage the user-reported messages from [the User reported tab on the Submission page](../submissions-admin.md#view-user-reported-messages-to-microsoft).
+4. From those reported messages admins can submit to [**Microsoft for analysis**](../submissions-admin.md#notify-users-about-admin-submitted-messages-to-microsoft) and understand why was that email blocked in the first place.
 5. If needed, while submitting to Microsoft for analysis, admins can judiciously [create an allow entry for the sender](../tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-domains-and-email-addresses) to mitigate the problem.
 6. Once the results from the admin submission are available, read it to understand why emails were blocked and how your tenant setup could be improved to *prevent* similar situations from happening in the future.
 
@@ -49,11 +49,11 @@ Microsoft Defender for Office 365 helps deal with important legitimate business 
 
 ## Handling legitimate emails in quarantine folder of an admin
 
-1. Admins can view the quarantined emails (including the ones asking permission to request release) from the [review page](/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files).
+1. Admins can view the quarantined emails (including the ones asking permission to request release) from the [review page](../quarantine-admin-manage-messages-files.md).
 2. Admins can release the message from quarantine while submitting it to Microsoft for analysis, and create a temporary allow to mitigate the situation.
 3. Once the results for submissions are available, admins should read the verdict to understand the reason.
    - If false positives are due to tenant configuration, admins can correct it to mitigate the issue.
    - If false positives are due to other factors, Microsoft learns from the submission and similar messages aren't quarantined anymore. For more information, see [Automatic tenant Allow/Block list expiration management](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447).
 
 > [!NOTE]
-> Admins need to manually release any similar messages that have already been quarantined, as the quarantined messages aren't released automatically. To find and release quarantined messages in bulk, see [Can I release or report more than one quarantined message at a time?](/microsoft-365/security/office-365-security/quarantine-faq#can-i-release-or-report-more-than-one-quarantined-message-at-a-time-).
+> Admins need to manually release any similar messages that have already been quarantined, as the quarantined messages aren't released automatically. To find and release quarantined messages in bulk, see [Can I release or report more than one quarantined message at a time?](../quarantine-faq.yml#can-i-release-or-report-more-than-one-quarantined-message-at-a-time-)
