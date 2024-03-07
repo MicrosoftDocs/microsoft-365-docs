@@ -124,19 +124,12 @@ Equip your employees with industry-specific devices tailored for their needs, or
 
 Deploy your frontline teams and give your frontline workforce access to the right apps and resources from the start.
 
-### Frontline teams
-
-When deploying your frontline teams, you can choose between dynamic team membership, static team membership, or a combination of both. To learn more, see [How to find the best frontline team solution for your organization](frontline-team-options). 
-
-- [Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)
-- [Deploy frontline static teams at scale](deploy-teams-at-scale.md)
-
-Use [Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) to streamline and help provide consistency when managing policies for your frontline workforce.
-
-### Frontline apps and experiences
-
-- [Deploy your frontline operational hierarchy](deploy-frontline-operational-hierarchy.md)
-- [Deploy Shifts to your frontline teams at scale](deploy-shifts-at-scale.md)
+|Solution area|More information|
+|---------|---------|
+|Frontline teams|When deploying your frontline teams, you can choose between dynamic team membership, static team membership, or a combination of both. Learn more about [how to find the best frontline team solution for your organization](frontline-team-options). <ul><li>[Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)</li><li>[Deploy frontline static teams at scale](deploy-teams-at-scale.md)</li></ul>|
+|Frontline operational hierarchy|Setting up a [frontline operational hierarchy](deploy-frontline-operational-hierarchy) maps your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center, which will enable numerous frontline experiences that are coming soon.|
+|Frontline apps and experiences|Standardize Shifts settings across all your frontline teams and manage them centrally by [deploying Shifts to your frontline teams at scale](deploy-shifts-at-scale.md).|
+|Teams policy packages |Use [Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) to streamline and help provide consistency when managing policies for your frontline.|
 
 ## Adoption principles to help envision and implement business scenarios
 
