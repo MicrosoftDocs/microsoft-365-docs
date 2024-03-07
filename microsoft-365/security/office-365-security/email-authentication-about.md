@@ -18,7 +18,7 @@ ms.localizationpriority: high
 description: Admins can learn how email authentication (SPF, DKIM, DMARC) works and how Microsoft 365 uses traditional email authentication and composite email authentication to identify messages as spoofing, or pass messages that would otherwise be identified as spoofing.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/29/2024
+ms.date: 3/7/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -176,14 +176,15 @@ Authentication-Results:
 
 These values are explained at [Authentication-results message header](message-headers-eop-mdo.md#authentication-results-message-header).
 
-Admins and users can examine the message headers to discover how Microsoft 365 identified the sender as suspicious spoofed sender or legitimate.
+Admins and users can examine the message headers to discover how Microsoft 365 identified the sender as a suspicious spoofed sender or legitimate.
 
-It's crucial to understand that a failure in CAUTH does not directly lead to an email being blocked. Our system employs a holistic evaluation strategy, considering the overall suspicious nature of an email alongside CAUTH outcomes. This method is designed to mitigate the risk of incorrectly blocking legitimate emails from domains that may not strictly adhere to authentication protocols. Such a balanced approach helps in distinguishing genuinely malicious emails from those that simply fail to conform to standard authentication practices.
+> [!TIP]
+> It's important to understand that a composite authentication failure doesn't directly result in a message being blocked. Our system using a holistic evaluation strategy that considers the overall suspicious nature of a message along with composite authentication results. This method is designed to mitigate the risk of incorrectly blocking legitimate email from domains that might not strictly adhere to email authentication protocols. This balanced approach helps distinguish genuinely malicious email from message senders that simply fail to conform to standard email authentication practices.
 
 The following examples focus on the results of email authentication only (the `compauth` value and reason). Other Microsoft 365 protection technologies can identify messages that pass email authentication as spoofed, or identify messages that fail email authentication as legitimate.
 
-  - **Scenario**: The domain in the SPF record or the DKIM signature doesn't match the domain in the From address.
-- **Result**: The message can fail composite authentication, Despite the CAUTH failure, the email might still be allowed if other assessments do not indicate a suspicious nature. 
+- **Scenario**: The domain in the SPF record or the DKIM signature doesn't match the domain in the From address.
+- **Result**: The message can fail composite authentication. Despite the composite authentication failure, the message might still be allowed if other assessments don't indicate a suspicious nature:
 
   ```text
   Authentication-Results: spf=none (sender IP is 192.168.1.8)
