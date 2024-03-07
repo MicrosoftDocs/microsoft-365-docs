@@ -798,23 +798,31 @@ On the **Threat protection status** page, the :::image type="icon" source="../..
 
 In the **View data by System override** and **Chart breakdown by Reason** view, the following override reason information is shown in the chart:
 
-- **Exchange transport rule** (mail flow rule)
-- **IP Allow**
 - **On-premises skip**
-- **Organization allowed domains**
+- **IP Allow**
+- **Exchange transport rule**
 - **Organization allowed senders**
-- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
-- **TABL - Both URL and file allowed**
-- **TABL - File allowed**
-- **TABL - File blocked**
-- **TABL - Sender allowed**
-- **TABL - Sender blocked**
-- **TABL - URL allowed**
-- **TABL - URL blocked**
-- **Third party filter**
-- **User Safe Domain**
-- **User Safe Sender**
+- **Organization allowed domains**
 - **ZAP not enabled**
+- **User Safe Sender**
+- **User Safe Domain**
+- **Sender Domain List**
+- **Trusted Senders List (Outlook)**
+- **Trusted Recipient Address List**
+- **Trusted Recipient Domain List**
+- **Trusted Contact List - Sender in Address Book**
+- **Exclusive setting (Outlook)**
+- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
+- **Third party filter**
+- **TABL - URL allowed**
+- **TABL - File allowed**
+- **TABL - Both URL and file allowed**
+- **TABL Sender email address Allow**
+- **TABL - URL blocked**
+- **TABL - File blocked**
+- **TABL Sender email address block**
+- **TABL Spoof Block**
+- **Data Loss Prevention**
 
 In the details table below the chart, the following information is available:
 
@@ -1018,7 +1026,7 @@ If you don't see data in the reports, check the report filters and double-check 
 
 - [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)
 - [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
-- [How do I turn off spam filtering?](/microsoft-365/security/office-365-security/anti-spam-protection-faq#how-do-i-turn-off-spam-filtering-)
+- [How do I turn off spam filtering?](anti-spam-protection-faq.yml#how-do-i-turn-off-spam-filtering-)
 
 ## Download and export report information
 
