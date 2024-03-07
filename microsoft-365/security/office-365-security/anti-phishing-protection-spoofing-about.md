@@ -64,6 +64,8 @@ The following anti-spoofing technologies are available in EOP:
 
   Defender for Office 365 organizations can also use Real-time detections (Plan 1) or Threat Explorer (Plan 2) to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
 
+Note: It's crucial to understand that a failure in CAUTH does not directly lead to an email being blocked. Our system employs a holistic evaluation strategy, considering the overall suspicious nature of an email alongside CAUTH outcomes. This method is designed to mitigate the risk of incorrectly blocking legitimate emails from domains that may not strictly adhere to authentication protocols. Such a balanced approach helps in distinguishing genuinely malicious emails from those that simply fail to conform to standard authentication practices
+
 ## How spoofing is used in phishing attacks
 
 Spoofed senders in messages have the following negative implications for users:
