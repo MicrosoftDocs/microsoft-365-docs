@@ -1016,7 +1016,7 @@ You need to be assigned permissions before you can view and use the reports that
   - **Security Administrator**
   - **Security Reader**
   - **Global Reader**
-- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Security Reader**, or **Global Reader** roles in Microsoft Entra ID gives users the required permissions _and_ permissions for other features in Microsoft 365.
+- [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Security Reader**, or **Global Reader** roles in Microsoft Entra ID gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 <sup>\*</sup> Membership in the **Organization Management** role group or in the **Global Administrator** role is required to use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** or :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)** actions in reports (where available).
 
@@ -1026,7 +1026,7 @@ If you don't see data in the reports, check the report filters and double-check 
 
 - [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)
 - [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
-- [How do I turn off spam filtering?](/microsoft-365/security/office-365-security/anti-spam-protection-faq#how-do-i-turn-off-spam-filtering-)
+- [How do I turn off spam filtering?](anti-spam-protection-faq.yml#how-do-i-turn-off-spam-filtering-)
 
 ## Download and export report information
 

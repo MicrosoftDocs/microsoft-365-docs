@@ -46,7 +46,7 @@ The Teams Message Entity Panel is available for customers with Microsoft 365 E5 
 To access the Teams Message Entity Panel, you need to be assigned permissions. You have the following options:
 
 - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Global Administrator**, **Security Administrator**, or **Quarantine Administrator** role group.
-- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
+- [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
   - Membership in the **Global Administrator** or **Security Administrator** roles.
   - _Read-only access_: Membership in the **Global Reader** or **Security Reader** roles.
 

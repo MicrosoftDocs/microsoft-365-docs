@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 2/16/2024
+ms.date: 3/07/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -31,6 +31,12 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## March 2024
+
+### Feedback and support widget
+
+We've made it easier for you to give us feedback. Check out the new feedback and support widget in the lower-right corner of the Lighthouse portal. Make a suggestion, report a problem, or give a compliment by simply selecting the widget. Share your comments today through our enhanced feedback tool and let us know how Lighthouse is working for you.
 
 ## January 2024
 
