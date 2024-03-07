@@ -128,7 +128,7 @@ All our updates contain
 - Microsoft Defender Antivirus now caches the Mark of the Web (MoTW) Alternative Data Stream (ADS) for better performance while scanning.
 - Fixed an issue that occurred in [attack surface reduction](attack-surface-reduction-rules-reference.md) in warn mode when removing scan results from the real-time protection cache.
 - Performance improvement added for `OneNote.exe`.
-- Cloud-based entries are regularly removed from the persistent user mode cache in Windows Defender to prevent a uncommon issue where a user could still add a certificate, based on an Indicator of compromise (IoC), to the cache after a file with that certificate had already been added via cloud signature.
+- Cloud-based entries are regularly removed from the persistent user mode cache in Windows Defender to prevent an uncommon issue where a user could still add a certificate, based on an Indicator of compromise (IoC), to the cache after a file with that certificate had already been added via cloud signature.
 - The Sense onboarding event is now sent in passive mode for operating systems with the old Sense client.
 - Improved performance for logs created/accessed by powershell.
 - Improved performance for folders included in [Controlled folder access(CFA)](controlled-folders.md) when accessing network files.
@@ -148,7 +148,7 @@ All our updates contain
 #### What's new
 
 - Fixed PowerShell cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to show the correct date/time for `AntivirusSignatureLastUpdated`
-- Resolved deadock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
+- Resolved deadlock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
 - Added the `InitializationProgress` field to [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) output 
 - Fixed installation failure on Windows Server 2016 due to existing Defender EventLog registry key 
 - Added the ability to have [quick scans](schedule-antivirus-scans.md) ignore Microsoft Defender Antivirus exclusions 
