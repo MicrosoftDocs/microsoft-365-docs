@@ -17,7 +17,7 @@ ms.collection:
 
 # Understanding detection technology in the email entity page of Microsoft Defender for Office 365
 
-If a threat is detected on the Microsoft Defender for Office 365 [*email entity page*](/microsoft-365/security/office-365-security/mdo-email-entity-page), threat information will display on the left-hand flyout. This panel will also show you the **detection technology** that led to that verdict.
+If a threat is detected on the Microsoft Defender for Office 365 [*email entity page*](../mdo-email-entity-page), threat information will display on the left-hand flyout. This panel will also show you the **detection technology** that led to that verdict.
 
 This article is all about helping you **understand the different detection technologies**, how they work, and how to avoid any false alarms. Stay tuned for the Admin Submissions video at the end.
 

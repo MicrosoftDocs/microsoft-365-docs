@@ -201,4 +201,4 @@ As described in [How SPF, DKIM, and DMARC work together to authenticate email me
 - [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md)
 - [Use DMARC to validate email](email-authentication-dmarc-configure.md)
 
-For mail coming _into_ Microsoft 365, you might also need to configure trusted ARC sealers if you use services that modify messages in transit before delivery to your organization. For more information, see [Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure).
+For mail coming _into_ Microsoft 365, you might also need to configure trusted ARC sealers if you use services that modify messages in transit before delivery to your organization. For more information, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).
