@@ -77,7 +77,7 @@ Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), th
 
 ## Safeguard your business
 
-Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, threat and information protection, and security management. Manage identities and access with [Microsoft Entra ID](/entra/fundamentals/whatis). Reinforce secure access management across endpoints and devices with [Microsoft Intune](/mem/intune/fundamentals/what-is-intune).
+Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, threat and information protection, and security management. Manage identities and access with [Microsoft Entra ID](/entra/fundamentals/whatis). Simplify and reinforce secure access management across endpoints and devices with [Microsoft Intune](/mem/intune/fundamentals/what-is-intune).
 
 <!-- ## Safeguard your business
 
@@ -120,17 +120,23 @@ Equip your employees with industry-specific devices tailored for their needs, or
 |[Microsoft Intune family of products](/mem/endpoint-manager-overview) |Enterprise, F1, F3 |
 |[Device partner integrations with Intune](/mem/intune/protect/device-compliance-partners) |Enterprise, F1, F3 |-->
 
-## Simplify deployment and management at scale
+## Deploy and manage at scale
 
-Give your frontline workforce access to the right apps and resources from the start.
+Deploy your frontline teams and give your frontline workforce access to the right apps and resources from the start.
 
-|Icon  |Capability |
-|---------|---------|
-|:::image type="icon" source="/office/media/icons/deploy-teams.png":::|[Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)|
-|:::image type="icon" source="/office/media/icons/deploy-teams.png"::: |[Deploy frontline static teams at scale](deploy-teams-at-scale.md)|
-|:::image type="icon" source="/office/media/icons/deploy-teams.png":::|[Deploy your frontline operational hierarchy](deploy-frontline-operational-hierarchy.md)|
-|:::image type="icon" source="/office/media/icons/deploy-teams.png":::|[Deploy Shifts to your frontline teams at scale](deploy-shifts-at-scale.md)|
-|:::image type="icon" source="/office/media/icons/policy.png"::: |[Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw)|
+### Frontline teams
+
+When deploying your frontline teams, you can choose between dynamic team membership, static team membership, or a combination of both. To learn more, see [How to find the best frontline team solution for your organization](frontline-team-options). 
+
+- [Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)
+- [Deploy frontline static teams at scale](deploy-teams-at-scale.md)
+
+Use [Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) to streamline and help provide consistency when managing policies for your frontline workforce.
+
+### Frontline apps and experiences
+
+- [Deploy your frontline operational hierarchy](deploy-frontline-operational-hierarchy.md)
+- [Deploy Shifts to your frontline teams at scale](deploy-shifts-at-scale.md)
 
 ## Adoption principles to help envision and implement business scenarios
 
