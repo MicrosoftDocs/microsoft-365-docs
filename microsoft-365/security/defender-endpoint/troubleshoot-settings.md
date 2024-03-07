@@ -1,16 +1,20 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
-title: Troubleshooting where the Microsoft Defender Antivirus setting is coming from?
-description: Finding where the Microsoft Defender Antivirus setting is coming from...
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
+title: Troubleshoot Microsoft Defender Antivirus settings
+description: Find out where settings for Microsoft Defender Antivirus are coming fromp
+author: siosulli
+ms.author: siosulli
+manager: deniseb
+ms.reviewer: yongrhee
 ms.service: defender-endpoint
 ms.topic: troubleshooting-general
-ms.date:     03/06/2024
+ms.date: 03/07/2024
 ms.subservice: ngp
+ms.localizationpriority: medium 
+ms.collection: # Useful for querying on a set of strategic or high-priority content.
+ms.custom: partner-contribution
+search.appverid: MET150
+f1.keywords: NOCSH
+audience: ITPro
 ---
 
 # Troubleshooting where the Microsoft Defender Antivirus setting is coming from?
@@ -52,7 +56,7 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 > [!TIP]
 > Best practices
 > Try sticking to one method of managing Microsoft Defender for Antivirus.
-Example 1) You are migrating from a third-party antivirus product and when you try enabling Microsoft Defender Antivirus, it won’t start.
+Example 1) You are migrating from a third-party antivirus product and when you try enabling Microsoft Defender Antivirus, it won't start.
 
    You narrow it down to this registry key:
 
@@ -72,7 +76,7 @@ Group Policy (GPO) > Microsoft Configuration Manager Co-Management > Microsoft C
 > [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) which is a Policy (CSP) does not apply for all settings such as Attack Surface Reduction rules (ASR rules) in Windows 10.
  
 
-Step 2) Find if it’s coming through a Policy or MDM or a local setting.
+Step 2) Find if it's coming through a Policy or MDM or a local setting.
 
 ||Microsoft Defender Antivirus setting registry location | What tools?|
 | -------- | -------- | -------- |
@@ -82,7 +86,7 @@ Step 2) Find if it’s coming through a Policy or MDM or a local setting.
 
  
 
-Now that you know it’s set either Policy and/or MDM and/or Local setting.
+Now that you know it's set either Policy and/or MDM and/or Local setting.
 
  
 
