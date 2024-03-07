@@ -31,7 +31,9 @@ ms.date: 04/01/2024
 
 Security operations teams are tasked to sift through device data to find suspicious activities or entities to prevent malicious attacks. These teams need to summarize large amounts of data and simplify complex information to quickly assess, triage, and connect a device’s status and activities to potentially malicious attacks.
 
-The device summary capability of Copilot in Defender enables security teams to get a device’s security posture, vulnerable software information, and any unusual behaviors. Security analysts can use a device's summary to speed up their investigation of incidents and alerts. The device summary capability is also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
+The device summary capability of Copilot in Defender enables security teams to get a device’s security posture, vulnerable software information, and any unusual behaviors. Security analysts can use a device's summary to speed up their investigation of incidents and alerts. 
+
+The device summary capability is available in Microsoft Defender through the [Copilot for Security license](/security-copilot/faq-security-copilot). This capability is also available in the Copilot for Security standalone portal through the Microsoft Defender XDR plugin.
 
 ## Summarize device information
 
@@ -54,5 +56,6 @@ You can also access the device summary capability by choosing a device listed in
 - [Resolve incidents with guided responses](security-copilot-m365d-guided-response.md)
 - [Get started with Copilot for Security](/security-copilot/get-started-security-copilot)
 - [Learn about other Copilot for Security embedded experiences](/security-copilot/experiences-security-copilot)
+- [Know more about preinstalled plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

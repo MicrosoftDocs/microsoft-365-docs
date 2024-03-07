@@ -29,7 +29,9 @@ ms.date: 04/01/2024
 
 [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in Microsoft Defender supports incident response teams in immediately resolving incidents with guided responses. Copilot for Security and Microsoft Defender uses AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
 
-Responding to incidents in Microsoft Defender XDR often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot in Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease. Guided responses are also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
+Responding to incidents in Microsoft Defender XDR often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot in Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease. 
+
+Guided responses are available in Microsoft Defender through the [Copilot for Security license](/security-copilot/faq-security-copilot). Guided responses are also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin.
 
 This guide outlines how to access the guided response capability, including information on providing feedback about the responses.
 
@@ -86,5 +88,6 @@ The **View similar emails** action, which is specific to phishing incidents, tak
 - [Generate KQL queries](advanced-hunting-security-copilot.md)
 - [Get started with Microsoft Copilot for Security](/security-copilot/get-started-security-copilot)
 - [Learn about other Copilot for Security embedded experiences](/security-copilot/experiences-security-copilot)
+- Know more about [preinstalled plugins in Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

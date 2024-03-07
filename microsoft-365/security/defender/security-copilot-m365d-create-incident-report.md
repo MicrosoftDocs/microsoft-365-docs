@@ -33,9 +33,9 @@ A comprehensive and clear incident report is an essential reference for security
 
 While an [incident summary](security-copilot-m365d-incident-summary.md) provides an overview of an incident and how it happened, an incident report consolidates incident information from various data sources available in Microsoft Sentinel and Microsoft Defender XDR. The Copilot-generated incident report also includes all analyst-driven steps and automated actions, the analysts involved in incident response, and the comments from the analysts. Whether security teams are using Microsoft Defender XDR, Microsoft Sentinel, or both, all relevant incident data are added into the generated incident report.
 
-The incident report generation capability is also available in the Copilot for Security standalone experience through the Microsoft Defender plugin. Know more about [preinstalled plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins).
+The incident report generation capability in Microsoft Defender is available through the [Copilot for Security license](/security-copilot/faq-security-copilot). This capability is also available in the Copilot for Security standalone portal through the Microsoft Defender XDR plugin.
 
-This guide lists the data in incident reports and contains steps on how to access the incident report creation capability within Microsoft Defender. It also includes information on how to provide feedback about the generated report. 
+This guide lists the data in incident reports and contains steps on how to access the incident report creation capability within Microsoft Defender. It also includes information on how to provide feedback about the generated report.
 
 ## Incident report content
 
@@ -97,5 +97,6 @@ Here are some recommendations to consider to ensure that Copilot generates a com
 
 - [Get started with Copilot for Security](/security-copilot/get-started-security-copilot)
 - [Learn about other Copilot for Security embedded experiences](/security-copilot/experiences-security-copilot)
+- Know more about [preinstalled plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins#preinstalled-plugins)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
