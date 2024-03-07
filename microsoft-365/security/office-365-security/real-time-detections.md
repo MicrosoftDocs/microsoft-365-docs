@@ -157,7 +157,7 @@ To view and use Explorer or Real-time detections, you need to be assigned permis
 - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
   - _Full access_: Membership in the **Organization Management** or **Compliance Management** role groups.
   - _Read-only access_: Membership in the **View-Only Organization Management** or **View-Only Recipients** role groups.
-- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+- [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## More information
 

@@ -126,7 +126,7 @@ Use the following reference table to understand how our previously publicly disc
 |Storm-0539||Financially motivated||
 |Storm-0558||China||
 |Storm-0569||Financially motivated||
-|Storm-0587||Russia|SaintBot, Saint Bear, TA471||
+|Storm-0587||Russia|SaintBot, Saint Bear, TA471|
 |Storm-0744||Financially motivated||
 |Storm-0784||Iran||
 |Storm-0829||Group in development|Nwgen Team|
@@ -137,7 +137,7 @@ Use the following reference table to understand how our previously publicly disc
 |Storm-0971||Financially motivated|(Merged into Octo Tempest)|
 |Storm-0978||Group in development|RomCom, Underground Team|
 |Storm-1044||Financially motivated|Danabot|
-|Storm-1084||Iran|DarkBit||
+|Storm-1084||Iran|DarkBit|
 |Storm-1099||Russia||
 |Storm-1101||Group in development|NakedPages|
 |Storm-1113||Financially motivated||
@@ -186,4 +186,4 @@ GetThreatActorAlias("ZINC")
 The following files containing the comprehensive mapping of old threat actor names with their new names are also available:
 
 - [JSON format](https://github.com/microsoft/mstic/blob/master/PublicFeeds/ThreatActorNaming/MicrosoftMapping.json)
-- [downloadable Excel](https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/microsoft-threat-actor-list.xls)
+- [downloadable Excel](https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/microsoft-threat-actor-list.xlsx)
