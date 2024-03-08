@@ -66,9 +66,7 @@ To use guided responses, perform the following steps:
 
    :::image type="content" source="../../media/copilot-in-defender/guided-response/fig5-guided-responses-copilot.png" alt-text="Screenshot highlighting the actions available to users for each guided response card in the Copilot pane in Microsoft Defender." lightbox="../../media/copilot-in-defender/guided-response/fig5-guided-responses-copilot.png":::
 
-4. You can provide feedback to each response card to continuously enhance future responses from Copilot. To provide feedback, select the feedback icon found on the bottom right of each card.
-
-   :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards.":::
+4. You can provide feedback to each response card to continuously enhance future responses from Copilot. To provide feedback, select the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/copilot-defender-feedback.png) found on the bottom right of each card.
 
 > [!NOTE]
 > Grayed out action buttons mean these actions are limited by your permission. [Refer to the unified role-based access (RBAC) permissions](manage-rbac.md) page for more information.

@@ -75,8 +75,7 @@ To create an incident report with Copilot in Defender, perform the following ste
    :::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-new-sec-copilot-m365d-create-report.png" alt-text="Screenshot of the incident report card in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig2-expand-sec-copilot-m365d-create-report.png":::
 4. Select the three dots located on the right side of the incident report card. To copy the report, select **copy to clipboard** and paste the report to your preferred system, or **Post to comments and history** to add the report to the comments and history of the incident.
 5. Select **Regenerate** to restart report creation. You can also **Open in Copilot** to view the results and continue accessing other plugins available in the Copilot for Security standalone portal.
-6. Review the generated incident report. You can provide feedback on the report by selecting the feedback icon on the bottom of the results.
-   :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards.":::
+6. Review the generated incident report. You can provide feedback on the report by selecting the feedback icon found on the bottom of the results  ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/copilot-defender-feedback.png).
 
 > [!TIP]
 > You can navigate to a file, IP, or URL page from the Copilot results pane by clicking on the entity.
