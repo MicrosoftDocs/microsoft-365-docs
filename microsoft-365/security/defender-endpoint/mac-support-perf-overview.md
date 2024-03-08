@@ -1,12 +1,8 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
-title: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
+title: Overview for how to troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot performance issues overview for Microsoft Defender for Endpoint on macOS
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
+author:      YongRhee-MSFT 
+ms.author:   yongrhee 
 ms.service: defender-endpoint
 ms.topic: overview
 ms.date:     03/01/2024
@@ -14,7 +10,7 @@ ms.subservice: ngp
 manager: dansimp
 ---
 
-# Troubleshoot performance issues overview for Microsoft Defender for Endpoint on macOS
+# Overview for how to troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
 
 **Applies to:**
 
@@ -32,7 +28,7 @@ manager: dansimp
 > [!TIP]
 > If you're running other third-party security products, make sure that the Microsoft Defender for Endpoint on macOS processes and paths are excluded from that 3rd party security product and that security product is excluded from Microsoft Defender for Endpoint on macOS.
 
-This topic provides general steps that you can use to identify performance issues related to Microsoft Defender for Endpoint on macOS.
+This article provides general guidelines to identify performance issues related to Microsoft Defender for Endpoint on macOS. See [Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](mac-support-perf.md) for more specific guidance. 
 
 Depending on the applications that you're running and your device characteristics, you might experience suboptimal performance when running Microsoft Defender for Endpoint on macOS. 
 
