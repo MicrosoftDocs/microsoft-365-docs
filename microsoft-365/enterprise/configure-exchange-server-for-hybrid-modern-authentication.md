@@ -106,8 +106,8 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 
 5. If you don't see your internal and external `MAPI/HTTP`, `EWS`, `ActiveSync`, `OAB`, and `Autodiscover` records in this list, you must add them. Use the following command to add all urls that are missing:
 
-> [!IMPORTANT]
->  In our example, the urls that will be added are `mail.corp.contoso.com` and `owa.contoso.com`. Make sure that they are replaced by the urls that are configured in your environment.
+   > [!IMPORTANT]
+   >  In our example, the urls that will be added are `mail.corp.contoso.com` and `owa.contoso.com`. Make sure that they are replaced by the urls that are configured in your environment.
 
    ```powershell
    $x = Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
@@ -201,8 +201,6 @@ You should also hold down the CTRL key at the same time you right-click the icon
 
 ## Enable Hybrid Modern Authentication for OWA and ECP
 
-Starting with [Exchange Server 2019 CU14](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2024-h1-cumulative-update-for-exchange-server/ba-p/4047506) which has at least the [March 2024 SU](https://support.microsoft.com/help/5036401) installed, Hybrid Modern Authentication can be enabled for `OWA` and `ECP`.
-
 After the Hybrid Modern Authentication was enabled for `OWA` and `ECP`, each end user who tries to login into `OWA` or `ECP` will be redirected to the Microsoft Entra ID authentication page first. After the authentication was successful, the user will be redirected to `OWA` or `ECP`.
 
 ### Prerequisites to enable Hybrid Modern Authentication for OWA and ECP
@@ -262,8 +260,8 @@ Customers who have run the Hybrid Configuration Wizard (HCW) to configure hybrid
 
 8. To enable Hybrid Modern Authentication for `OWA` and `ECP`, you must first disable any other authentication method on these virtual directories. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
 
-> [!IMPORTANT]
-> It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands. After running these commands, login to `OWA` and `ECP` will stop work until the OAuth authentication for those virtual directories has been activated.
+   > [!IMPORTANT]
+   > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands. After running these commands, login to `OWA` and `ECP` will stop work until the OAuth authentication for those virtual directories has been activated.
 
    ```powershell
    Set-OwaVirtualDirectory <identity> -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
@@ -272,8 +270,8 @@ Customers who have run the Hybrid Configuration Wizard (HCW) to configure hybrid
 
 9. Enable OAuth for the `OWA` and `ECP` virtual directory. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
 
-> [!IMPORTANT]
-> It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands.
+   > [!IMPORTANT]
+   > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands.
 
    ```powershell
    Set-EcpVirtualDirectory <identity> -OAuthAuthentication $true
