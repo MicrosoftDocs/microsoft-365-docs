@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - highpri
 - essentials-overview
+- essentials-security
 ms.custom: VSBFY23
 description: "An overview of the Microsoft Bookings app, which includes a web-based booking calendar and integrates with Outlook to optimize your staff’s calendar and give your customers flexibility to book appointments."
 ---
