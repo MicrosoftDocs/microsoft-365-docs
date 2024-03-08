@@ -41,7 +41,7 @@ To display site URLs using PowerShell, follow these steps.
 
 ### Create an Entra ID Application
 
-1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com/) **>** Applications **>** App registrations.
+1. Go to [Microsoft Entra admin center](https://entra.microsoft.com/) **>** Applications **>** App registrations.
 
 2. On the App registrations page, select **New registrations**.
 
@@ -71,7 +71,7 @@ In the new application’s **Certificates & secrets** section, create a new clie
 
 Download the site details report on the two report pages and put the CSV report files under a local folder.
 
-Before downloading the reports, turn off the privacy setting. For details, see [Microsoft 365 admin center activity reports - Microsoft 365 admin \| Microsoft Learn](activity-reports.md)
+Before downloading the reports, make sure to turn off the privacy setting for user details. For details, see [Microsoft 365 admin center activity reports](activity-reports.md).
 
 For SharePoint site usage, go to the [SharePoint site usage page in the Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/reportsUsage/SharePointSiteUsageV1).
 
@@ -139,16 +139,22 @@ function Get-AccessToken {
     $tokenResponse = Invoke-RestMethod -Uri $tokenEndpoint -Method Post -Body $tokenRequest
     return $tokenResponse.access_token
 }
+ ```
 
-# Prepare the cache and client secret
+### Prepare the cache and client secret
+
+  ```PowerShell
 if ($reportPaths.Count -eq 0) {
     Write-Host "Please provide at least one report path" -ForegroundColor Red
     exit
 }
 $cache = New-Object 'System.Collections.Generic.Dictionary[[String],[String]]'
 $clientSecret = Read-Host "Please enter client secret" -AsSecureString
+ ```
 
-# Fetch site info from Graph API
+### Fetch site info from Graph API
+
+  ```PowerShell
 Write-Host
 Write-Host "Getting information for all the sites..." -ForegroundColor Cyan
 
@@ -190,8 +196,11 @@ while ($uri -ne $null) {
 
     Write-Host "Total sites received: $($cache.Count)"
 }
+ ```
 
-# Update the report using cached site info
+### Update the report using cached site info
+
+  ```PowerShell
 foreach ($reportPath in $reportPaths) {
     Write-Host
     Write-Host "Updating report $($reportPath) ..." -ForegroundColor Cyan
@@ -226,8 +235,11 @@ foreach ($reportPath in $reportPaths) {
     Write-Host "Processed $($rowCount) rows"
     Write-Host "Report updated: $($outputPath)" -ForegroundColor Cyan
 }
+ ```
 
-# Finalize
+### Finalize
+
+```PowerShell
 Write-Host
 Read-Host "Press any key to exit..."
 
