@@ -134,7 +134,7 @@ On the **Mailflow status report** page, the **Type** tab is selected by default.
 - **Spam**: Email that's blocked as spam by various filters.
 - **Edge protection**: Email that's rejected at the edge/perimeter before examination by EOP or Defender for Office 365.
 - **Rule messages**: Email messages that were quarantined by mail flow rules (also known as transport rules).
-- **Data loss prevention**: Email messages that were quarantined by data loss prevention policy.
+- **Data loss prevention**: Email messages that were quarantined by [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp).
 
 The details table below the graph shows the following information:
 
@@ -191,7 +191,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
   - **Edge protection**
   - **Rule messages**
   - **Phishing email**
-  - **Data loss prevention**
+  - **Data loss prevention**: Email messages that were quarantined by [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp).
 - **Domain**: Select **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
@@ -791,7 +791,7 @@ On the **Threat protection status** page, the :::image type="icon" source="../..
 
 In the **View data by System override** and **Chart breakdown by Reason** view, the following override reason information is shown in the chart:
 
-- **Data Loss Prevention**
+- **Data Loss Prevention**: Email messages that were quarantined by [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp).
 - **Exchange transport rule**
 - **Exclusive setting (Outlook)**
 - **IP Allow**
