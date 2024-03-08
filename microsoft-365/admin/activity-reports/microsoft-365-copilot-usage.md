@@ -49,12 +49,14 @@ You can see the following summary charts in this report
 - Microsoft 365 E3
 - Office 365 E3
 - Office 365 E5
-- Microsoft 365 A5 for faculty
-- Microsoft 365 A3 for faculty
-- Office 365 A5 for faculty
-- Office 365 A3 for faculty
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
+- Microsoft 365 A5 for faculty*
+- Microsoft 365 A3 for faculty*
+- Office 365 A5 for faculty*
+- Office 365 A3 for faculty*
+
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
 
 **Users on an eligible update channel** This number is the sum of all users who are enrolled in Current Channel or Monthly Enterprise Channel for app updates in your organization and could be assigned with a Copilot license.
 
@@ -117,7 +119,7 @@ In Recommendations, the recommended action card highlights [Microsoft Copilot Da
 
 You can see the following summary charts in this report as default view:
 
-:::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage adoption chart." source="../../media/copilot-usage-adoption-chart.png":::
+:::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage adoption chart." source="../../media/copilot-usage-adoption-chart2.png":::
 
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
@@ -142,11 +144,11 @@ You can switch between Summary view and Trend view.
 
 In the hover status in Summary view, you can see the selected time frame and data refresh time.
 
-:::image type="content" alt-text="Screenshot showing the time period view for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-time-period.png":::
+:::image type="content" alt-text="Screenshot showing the time period view for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-time-period2.png":::
 
 When switching to Trend view, you can select one product in the dropdown list to see daily usage.
 
-:::image type="content" alt-text="Screenshot showing the dropdown list of products for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-trend-view.png":::
+:::image type="content" alt-text="Screenshot showing the dropdown list of products for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-trend-view2.png":::
 
 :::image type="content" alt-text="Screenshot showing the hover status for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-hover-status.png":::
 
@@ -164,7 +166,7 @@ You can view a table list to show each Copilot for Microsoft 365 enabled user’
 
 Select **Choose columns** to add or remove columns from the table.
 
-:::image type="content" alt-text="Screenshot showing the columns you can select for the Microsoft 365 Copilot usage report." source="../../media/copilot-usage-choose-columns.png":::
+:::image type="content" alt-text="Screenshot showing the columns you can select for the Microsoft 365 Copilot usage report." source="../../media/copilot-usage-choose-columns2.png":::
 
 >[!NOTE]
 > All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there is no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
