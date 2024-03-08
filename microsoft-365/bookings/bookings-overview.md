@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - highpri
 - essentials-overview
+- essentials-security
 ms.custom: VSBFY23
 description: "An overview of the Microsoft Bookings app, which includes a web-based booking calendar and integrates with Outlook to optimize your staff’s calendar and give your customers flexibility to book appointments."
 ---
@@ -34,6 +35,10 @@ Bookings is made up of these components:
 - A booking page where your customers and clients can schedule appointments with the staff member who should provide the service or run the appointment. This web-based scheduling page can be shared via a direct link, your Facebook page, and even through link embedding within your website.
 
 - A web app that contains a set of web-based, business-facing pages where Bookings calendar owners and administrators within an organization can define appointment types and details, manage staff schedules and availability, set business hours, and customize how appointments are scheduled. These pages allow for versatility and the ability to customize a Bookings calendar to fit the diverse needs of the person or organization.
+
+## Bookings data and compliance
+
+All Bookings data is stored within the Microsoft 365 platform and in Exchange Online. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all Microsoft 365 apps follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange Online.
 
 ## Before you begin
 
