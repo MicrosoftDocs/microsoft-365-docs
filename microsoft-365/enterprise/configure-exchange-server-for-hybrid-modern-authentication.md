@@ -63,7 +63,7 @@ Requirements about linked mailboxes to be inserted.
 > Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
 
 > [!NOTE]
-> Outlook Web App and Exchange Control Panel do not work with hybrid Modern Authentication.  In addition, publishing Outlook Web App and Exchange Control Panel through Microsoft Entra application proxy is unsupported.
+> Publishing Outlook Web App and Exchange Control Panel through Microsoft Entra application proxy is unsupported.
 
 <a name='add-on-premises-web-service-urls-as-spns-in-azure-ad'></a>
 
@@ -74,23 +74,29 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 1. First, run the following commands on your Microsoft Exchange Server:
 
     ```powershell
-    Get-MapiVirtualDirectory | FL server,*url*
-    Get-WebServicesVirtualDirectory | FL server,*url*
+    Get-MapiVirtualDirectory | fl server,*url*
+    Get-WebServicesVirtualDirectory | fl server,*url*
     Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
-    Get-OABVirtualDirectory | FL server,*url*
-    Get-AutodiscoverVirtualDirectory | FL server,*url*
-    Get-OutlookAnywhere | FL server,*hostname*
+    Get-OABVirtualDirectory | fl server,*url*
+    Get-AutodiscoverVirtualDirectory | fl server,*url*
+    Get-OutlookAnywhere | fl server,*hostname*
     ```
 
     Ensure the URLs clients might connect to are listed as HTTPS service principal names in Microsoft Entra ID. In case EXCH is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the Microsoft Entra ID of all the tenants in hybrid with EXCH.
 
-2. Next, connect to Microsoft Entra ID with [these instructions](connect-to-microsoft-365-powershell.md). To consent to the required permissions, run the following command:
+2. Install the Microsoft Graph PowerShell module:
+
+   ```powershell
+   Install-Module Microsoft.Graph -Scope AllUsers
+   ```
+
+3. Next, connect to Microsoft Entra ID with [these instructions](connect-to-microsoft-365-powershell.md). To consent to the required permissions, run the following command:
 
    ```powershell
    Connect-MgGraph -Scopes Application.Read.All, Application.ReadWrite.All
    ```
 
-3. For your Exchange-related URLs, type the following command:
+4. For your Exchange-related URLs, type the following command:
 
    ```powershell
    Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'" | select -ExpandProperty ServicePrincipalNames
@@ -98,11 +104,14 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 
    Take note of (and screenshot for later comparison) the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises that are missing, those specific records should be added to this list.
 
-4. If you don't see your internal and external MAPI/HTTP, EWS, ActiveSync, OAB, and Autodiscover records in this list, you must add them using the following command (the example URLs are `mail.corp.contoso.com` and `owa.contoso.com`, but you should replace the example URLs with your own):
+5. If you don't see your internal and external `MAPI/HTTP`, `EWS`, `ActiveSync`, `OAB`, and `Autodiscover` records in this list, you must add them. Use the following command to add all urls that are missing:
+
+> [!IMPORTANT]
+>  In our example, the urls that will be added are `mail.corp.contoso.com` and `owa.contoso.com`. Make sure that they are replaced by the urls that are configured in your environment.
 
    ```powershell
-   $x= Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
-   $ServicePrincipalUpdate =@(
+   $x = Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
+   $ServicePrincipalUpdate = @(
    "https://mail.corp.contoso.com/","https://owa.contoso.com/"
    )
    Update-MgServicePrincipal -ServicePrincipalId $x.Id -ServicePrincipalNames $ServicePrincipalUpdate
@@ -190,7 +199,88 @@ You should also hold down the CTRL key at the same time you right-click the icon
 > [!NOTE]
 > Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
-## Using hybrid Modern Authentication with Outlook for iOS and Android
+## Enable Hybrid Modern Authentication for OWA and ECP
+
+Starting with [Exchange Server 2019 CU14](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2024-h1-cumulative-update-for-exchange-server/ba-p/4047506) which has at least the [March 2024 SU](https://support.microsoft.com/help/5036401) installed, Hybrid Modern Authentication can be enabled for `OWA` and `ECP`.
+
+After the Hybrid Modern Authentication was enabled for `OWA` and `ECP`, each end user who tries to login into `OWA` or `ECP` will be redirected to the Microsoft Entra ID authentication page first. After the authentication was successful, the user will be redirected to `OWA` or `ECP`.
+
+### Prerequisites to enable Hybrid Modern Authentication for OWA and ECP
+
+To enable Hybrid Modern Authentication for `OWA` and `ECP`, all user identities must be synchronized with Microsoft Entra ID.
+In addition to this it's important that OAuth setup between Exchange Server on-premises and Exchange Online has been established before further configuration steps can be done.
+
+Customers who have run the Hybrid Configuration Wizard (HCW) to configure hybrid, will already have a OAuth configuration in place. If OAuth was not configured, it can be done by running the HCW following the steps as outlined in the [Configure OAuth authentication between Exchange and Exchange Online organizations](/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help) documentation.
+
+> [!IMPORTANT]
+> All servers must have at least the [Exchange Server 2019 CU14](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2024-h1-cumulative-update-for-exchange-server/ba-p/4047506) update installed together with the [March 2024 SU](https://support.microsoft.com/help/5036401) or later update.
+
+### Steps to enable Hybrid Modern Authentication for OWA and ECP
+
+1. Query the `OWA` and `ECP` URLs that are configured on your Exchange Server on-premises . This is important because they must be added as reply url to Microsoft Entra ID:
+
+   ```powershell
+   Get-OwaVirtualDirectory | fl name, *url*
+   Get-EcpVirtualDirectory | fl name, *url*
+   ```
+
+2. Install the Microsoft Graph PowerShell module:
+
+   ```powershell
+   Install-Module Microsoft.Graph -Scope AllUsers
+   ```
+
+3. Connect to Microsoft Entra ID with [these instructions](connect-to-microsoft-365-powershell.md). To consent to the required permissions, run the following command:
+
+   ```powershell
+   Connect-Graph -Scopes User.Read, Application.ReadWrite.All
+   ```
+
+4. Specify your `OWA` and `ECP` URLs:
+
+   ```powershell
+   $replyUrlsToBeAdded = @(
+   "https://YourDomain.contoso.com/owa","https://YourDomain.contoso.com/ecp"
+   )
+   ```
+
+5. Update your application with the reply URLs:
+
+   ```powershell
+   $servicePrincipal = Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
+   $servicePrincipal.ReplyUrls += $replyUrlsToBeAdded
+   Update-MgServicePrincipal -ServicePrincipalId $servicePrincipal.Id -AppId "00000002-0000-0ff1-ce00-000000000000" -ReplyUrls $servicePrincipal.ReplyUrls
+   ```
+
+6. Verify that the reply URLs have been added successfully:
+
+   ```powershell
+   (Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'").ReplyUrls
+   ```
+
+7. To enable Exchange Server on-premises ability to perform Hybrid Modern Authentication, follow the steps outlined in the [Enable HMA](#enable-hma) section.
+
+8. To enable Hybrid Modern Authentication for `OWA` and `ECP`, you must first disable any other authentication method on these virtual directories. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
+
+> [!IMPORTANT]
+> It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands. After running these commands, login to `OWA` and `ECP` will stop work until the OAuth authentication for those virtual directories has been activated.
+
+   ```powershell
+   Set-OwaVirtualDirectory <identity> -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
+   Set-EcpVirtualDirectory <identity> -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
+   ```
+
+9. Enable OAuth for the `OWA` and `ECP` virtual directory. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
+
+> [!IMPORTANT]
+> It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands.
+
+   ```powershell
+   Set-EcpVirtualDirectory <identity> -OAuthAuthentication $true
+   Set-OwaVirtualDirectory <identity> -OAuthAuthentication $true
+   ```
+
+## Using Hybrid Modern Authentication with Outlook for iOS and Android
 
 If you're an on-premises customer using Exchange server on TCP 443, allow network traffic from the following IP ranges:
 
