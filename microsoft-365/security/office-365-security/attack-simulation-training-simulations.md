@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 3/8/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -737,20 +737,21 @@ All actions on existing simulations start on the **Simulations** tab. To get the
 
 You can copy an existing simulation and modify it to suit your needs. This will save you time and effort when creating new simulations based on previous ones.
 
-You can copy any simulation, regardless of its **Status** (Completed, Draft, Scheduled, In progress, Failed, Cancelled or Excluded), that you have created or automatically created, available in the **Simulations** tab. You can then modify the copy as you wish, such as changing the simulation name, description, technique, payload, target users, etc. 
+You can copy any simulation that you created and that's available in the **Simulations** tab, regardless of the **Status** value. You can then modify the copy. For example, change the simulation name, description, technique, payload, target users, etc.
 
-Note that:
--	It is **not recommended** to copy **Failed** simulations because the reasons for failure could recur in the duplicated simulation.
--	When you copy a simulation, the most recent version of the content that was selected in the original simulation, including the payload, the landing page, and end-user notifications, will be used in the new copy. If any content is deleted, you will be prompted to select the respective content again.
+**Notes**:
+
+-	We don't recommend copying **Failed** simulations, because the reasons for failure could recur in the duplicated simulation.
+-	When you copy a simulation, the most recent version of the content in the original simulation is used in the new copy. For example, the payload, landing page, and end-user notifications. If any content is deleted, you're prompted to select the respective content again.
 - The latest target and excluded users at the time of simulation launch will be used when groups are added from the search bar - **Search for users or groups**. The target and excluded users will remain unchanged in the following scenarios - when the user list was imported as a CSV, when users were added from the search bar, or when users were added for different categories: All users, Suggested user groups, User tags, City, Country, Department, Title.
 -	In the original simulation, if the scheduled simulation launch time is in the future, it will be copied as is. For past launch times, **Launch this simulation as soon as I'm done** will be selected. 
 
 To copy a simulation, follow these steps:
--	Select the **Simulations** tab and find the simulation that you want to copy.
--	Select the checkbox ![image](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/131949102/bcad996a-0f91-4183-af49-59b228467b32) next to the simulation name and choose **Copy simulation**.
-![image](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/131949102/b778fccc-25dd-450b-9899-10c392ab2757)
-- The simulation configuration wizard will open with all the original settings copied and simulation name containing suffix **_Copy**.
-- Review and modify the simulation configurations as needed and select **Submit** to launch it or **Save and close** to review it later. If you select **Cancel**, the copied simulation won’t be saved.
+
+1. Select the **Simulations** tab and find the simulation that you want to copy.
+2. Select the checkbox next to the simulation name, and then select :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy simulation**.
+3. The simulation configuration wizard opens with all the original settings and a simulation name containing the suffix **_Copy**.
+4. Review and modify the simulation configuration as needed. Select **Submit** to launch it or **Save and close** to review it later. If you select **Cancel**, the copied simulation isn't saved.
 
 ### Cancel simulations
 
