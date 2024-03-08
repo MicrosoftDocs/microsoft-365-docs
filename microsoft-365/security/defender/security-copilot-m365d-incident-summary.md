@@ -56,8 +56,7 @@ To summarize an incident, perform the following steps:
    > You can navigate to a file, IP, or URL page from the Copilot results pane by clicking on the entity.
 3. Select the **More actions** ellipsis (...) at the top of the incident summary card to copy or regenerate the summary, or view the summary in the Copilot for Security portal. Selecting **Open in Copilot for Security** opens a new tab to the Copilot for Security standalone portal where you can input prompts and access other plugins.
    :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-incident-summary-more-actions.png" alt-text="Screenshot highlighting the actions available on the incident summary card." lightbox="../../media/copilot-in-defender/incident-summary/fig2-incident-summary-more-actions.png":::
-4. Review the summary and use the information to guide your investigation and response to the incident. You can provide feedback on the summary by selecting the feedback icon on the bottom of the Copilot pane.
-   :::image type="content" source="../../media/copilot-in-defender/copilot-defender-feedback.png" alt-text="Screenshot of the feedback icon for Copilot in Defender cards.":::
+4. Review the summary and use the information to guide your investigation and response to the incident. You can provide feedback on the summary by selecting the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/copilot-defender-feedback.png) found on the bottom of the Copilot pane.
 
 ## See also
 
