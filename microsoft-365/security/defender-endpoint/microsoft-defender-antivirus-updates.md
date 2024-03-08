@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 02/27/2024
+ms.date: 03/07/2024
 audience: ITPro
 ms.topic: reference
 author: siosulli
@@ -51,6 +51,7 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-
 
 > [!NOTE]
 > Updates are released under the following KBs:
+>
 > - Microsoft Defender Antivirus: KB2267602
 > - System Center Endpoint Protection: KB2461484
 
@@ -97,6 +98,23 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
+### February-2024 (Engine: 1.1.24020.9 | Platform: 4.18.24020.xx)
+
+- Security intelligence update version: **1.407.46.0**
+- Release date: **March 6, 2024** (Engine) / **To be confirmed** (Platform)
+- Platform: **4.18.24020.xx** (*version number coming soon*)
+- Engine: **1.1.24020.9**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Improved support for virtualizing while compressing or decompressing zip files
+- Improved reporting in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for block-only remediations
+
+#### Known issues
+
+- None
+
 ### January-2024 (Platform: 4.18.24010.12 | Engine: 1.1.24010.10)
 
 - Security intelligence update version: **1.405.702.0**
@@ -110,7 +128,7 @@ All our updates contain
 - Microsoft Defender Antivirus now caches the Mark of the Web (MoTW) Alternative Data Stream (ADS) for better performance while scanning.
 - Fixed an issue that occurred in [attack surface reduction](attack-surface-reduction-rules-reference.md) in warn mode when removing scan results from the real-time protection cache.
 - Performance improvement added for `OneNote.exe`.
-- Cloud-based entries are regularly removed from the persistent user mode cache in Windows Defender to prevent a uncommon issue where a user could still add a certificate, based on an Indicator of compromise (IoC), to the cache after a file with that certificate had already been added via cloud signature.
+- Cloud-based entries are regularly removed from the persistent user mode cache in Windows Defender to prevent an uncommon issue where a user could still add a certificate, based on an Indicator of compromise (IoC), to the cache after a file with that certificate had already been added via cloud signature.
 - The Sense onboarding event is now sent in passive mode for operating systems with the old Sense client.
 - Improved performance for logs created/accessed by powershell.
 - Improved performance for folders included in [Controlled folder access(CFA)](controlled-folders.md) when accessing network files.
@@ -130,39 +148,16 @@ All our updates contain
 #### What's new
 
 - Fixed PowerShell cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to show the correct date/time for `AntivirusSignatureLastUpdated`
-- Resolved deadock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
+- Resolved deadlock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
 - Added the `InitializationProgress` field to [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) output 
 - Fixed installation failure on Windows Server 2016 due to existing Defender EventLog registry key 
 - Added the ability to have [quick scans](schedule-antivirus-scans.md) ignore Microsoft Defender Antivirus exclusions 
 - Fixed remediation for long running [on-demand scans](run-scan-microsoft-defender-antivirus.md) where the service may have been restarted 
 - Fixed an issue with Microsoft Defender Vulnerability Management to allow the execution of a [blocked application](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps) when the [warn option](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps#block-or-warn-mitigation-action) is selected 
 - Added support for managing schedule day/time for [signature updates in Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows#updates) and [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) 
-- Fixed non-standard signature path loading across platforms ([Windows](microsoft-defender-antivirus-windows.md), [Mac](microsoft-defender-endpoint-mac.md), [Linux](microsoft-defender-endpoint-linux.md), [Android](microsoft-defender-endpoint-android.md), and [iOS](microsoft-defender-endpoint-ios.md)) 
-- Improved handling of cached detections in [attack surface reduction](overview-attack-surface-reduction.md) capabilities 
-- Improved performance for enumerating virtual memory ranges 
-
-#### Known issues
-
-- None
-
-### October-2023 (Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
-
-- Security intelligence update version: **1.401.3.0**
-- Release date:  **November 3, 2023 (Engine) / November 6, 2023 (Platform)**
-- Platform: **4.18.23100.2009**
-- Engine: **1.1.23100.2009**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Improved processing of environment variables in protected folders list for [controlled folder access](controlled-folders.md)
-- Improved performance of [on-access scanning](configure-advanced-scan-types-microsoft-defender-antivirus.md) of files with Mark of the Web (MoTW)
-- Added support for Active Directory device groups with [device control](device-control-overview.md)
-- Fixed an issue so that [ASROnlyPerRuleExclusions](/windows/client-management/mdm/defender-csp#configurationasronlyperruleexclusions) don't apply during an engine reboot
-- [Microsoft Defender Core service](microsoft-defender-antivirus-windows.md#microsoft-defender-core-service) is generally available for consumer devices and is coming soon for business customers.
-- Fixed an issue with device control so that device control policies remain enforced when a platform update requires a reboot
-- Improved performance of [device control for printing scenarios](device-control-policies.md)
-- Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus.md) (processing Unicode characters)
+- Fixed non-standard signature path loading across platforms ([Windows](microsoft-defender-antivirus-windows.md), [Mac](microsoft-defender-endpoint-mac.md), [Linux](microsoft-defender-endpoint-linux.md), [Android](microsoft-defender-endpoint-android.md), and [iOS](microsoft-defender-endpoint-ios.md))
+- Improved handling of cached detections in [attack surface reduction](overview-attack-surface-reduction.md) capabilities
+- Improved performance for enumerating virtual memory ranges
 
 #### Known issues
 
