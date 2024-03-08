@@ -104,10 +104,10 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 
    Take note of (and screenshot for later comparison) the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises that are missing, those specific records should be added to this list.
 
-5. If you don't see your internal and external `MAPI/HTTP`, `EWS`, `ActiveSync`, `OAB`, and `Autodiscover` records in this list, you must add them. Use the following command to add all urls that are missing:
+5. If you don't see your internal and external `MAPI/HTTP`, `EWS`, `ActiveSync`, `OAB`, and `Autodiscover` records in this list, you must add them. Use the following command to add all URLs that are missing:
 
    > [!IMPORTANT]
-   >  In our example, the urls that will be added are `mail.corp.contoso.com` and `owa.contoso.com`. Make sure that they are replaced by the urls that are configured in your environment.
+   >  In our example, the URLs that will be added are `mail.corp.contoso.com` and `owa.contoso.com`. Make sure that they are replaced by the URLs that are configured in your environment.
 
    ```powershell
    $x = Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
