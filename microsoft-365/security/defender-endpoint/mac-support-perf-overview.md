@@ -16,7 +16,7 @@ manager: dansimp
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac?view=o365-worldwide)
+- [Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!CAUTION]
