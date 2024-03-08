@@ -203,7 +203,7 @@ You should also hold down the CTRL key at the same time you right-click the icon
 
 Hybrid Modern Authentication can now also be enabled for `OWA` and `ECP`. Make sure that the [Prerequisites](#prerequisites-to-enable-hybrid-modern-authentication-for-owa-and-ecp) are fulfilled before you continue.
 
-After the Hybrid Modern Authentication was enabled for `OWA` and `ECP`, each end user who tries to login into `OWA` or `ECP` will be redirected to the Microsoft Entra ID authentication page first. After the authentication was successful, the user will be redirected to `OWA` or `ECP`.
+After the Hybrid Modern Authentication was enabled for `OWA` and `ECP`, each end user and administrator who tries to login into `OWA` or `ECP` will be redirected to the Microsoft Entra ID authentication page first. After the authentication was successful, the user will be redirected to `OWA` or `ECP`.
 
 ### Prerequisites to enable Hybrid Modern Authentication for OWA and ECP
 
