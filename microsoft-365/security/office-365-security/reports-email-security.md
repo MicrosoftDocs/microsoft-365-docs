@@ -148,8 +148,8 @@ The details table below the graph shows the following information:
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)**: **Start date** and **End date**.
-- **Mail direction**: **Inbound**, **Outbound**, and **Intra-org**.
-- **Type**:
+- **Mail direction**: Select **Inbound**, **Outbound**, and **Intra-org**.
+- **Type**: Select one or more of the following values:
   - **Good mail**
   - **Malware**
   - **Spam**
@@ -182,8 +182,8 @@ On the **Direction** tab, the chart shows the following information for the spec
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)**: **Start date** and **End date**.
-- **Mail direction**: **Inbound**, **Outbound**, and **Intra-org**.
-- **Type**:
+- **Mail direction**: Select **Inbound**, **Outbound**, and **Intra-org**.
+- **Type**: Select one or more of the following values:
   - **Good mail**
   - **Malware**
   - **Spam**
@@ -254,7 +254,7 @@ Select a row in the details table to see a further breakdown of the email counts
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)** **Start date** and **End date**.
-- **Mail direction**: **Inbound**, **Outbound**, and **Intra-org**.
+- **Mail direction**: Select **Inbound**, **Outbound**, and **Intra-org**.
 - **Domain**: Select **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
