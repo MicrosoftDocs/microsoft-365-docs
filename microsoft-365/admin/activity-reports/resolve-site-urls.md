@@ -103,6 +103,27 @@ To clean up the environment, go back to the application's **Certificates & secre
 > Use SSD (Solid State Drive) to improve the IO performance.
 > Execute the script on a machine with enough free/unused memory. The cache takes roughly 2GB for the 15 million sites.
 
+## Additional option for small-scale scenarios
+
+For smaller scale scenarios, admins with appropriate access can use the SharePoint REST API or Microsoft Graph API to retrieve information about site IDs referenced in affected reports. The SharePoint REST API can be used to retrieve information about a specific site ID.
+
+For example, the following SharePoint REST API request retrieves information about the Contoso site with site ID 15d43f38-ce4e-4f6b-bac6-766ece1fbcb4:
+
+`https://contoso.sharepoint.com/_api/v2.1/sites/contoso.sharepoint.com,15d43f38-ce4e-4f6b-bac6-766ece1fbcb4`
+
+The Microsoft Graph API can be used to list SharePoint sites or retrieve information about a specific site ID. For details, see [site resource type](/graph/api/resources/site?view=graph-rest-1.0).
+
+For example:
+
+- `https://graph.microsoft.com/v1.0/sites?search=*&$select=sharepointIds`
+- `https://graph.microsoft.com/v1.0/sites/{siteId}`
+
+The Microsoft Graph API can also be used to retrieve information about a given user's OneDrive for Business site. For details, see [drive resource type](/graph/api/resources/drive?view=graph-rest-1.0).
+
+For example:
+
+- `https://graph.microsoft.com/v1.0/users/{userId}/drives?$select=sharepointIds`
+
 ## Update-Report PowerShell script
 
 The following is the PowerShell script for Update-Report.
