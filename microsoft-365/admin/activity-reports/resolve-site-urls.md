@@ -1,5 +1,5 @@
 ---
-title: "Use Powershell to resolve site URLs in reports"
+title: "Use PowerShell to resolve site URLs in reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
@@ -19,7 +19,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn about using PowerShell to resolve site URLs in reports for the Microsoft 365 admin center."
 ---
 
-# Use Powershell to resolve site URLs in reports
+# Use PowerShell to resolve site URLs in reports
 
 This article covers how to use PowerShell to display site URLs in reports.
 
