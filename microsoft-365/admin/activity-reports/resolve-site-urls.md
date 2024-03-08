@@ -111,14 +111,14 @@ For example, the following SharePoint REST API request retrieves information abo
 
 `https://contoso.sharepoint.com/_api/v2.1/sites/contoso.sharepoint.com,15d43f38-ce4e-4f6b-bac6-766ece1fbcb4`
 
-The Microsoft Graph API can be used to list SharePoint sites or retrieve information about a specific site ID. For details, see [site resource type](/graph/api/resources/site?view=graph-rest-1.0).
+The Microsoft Graph API can be used to list SharePoint sites or retrieve information about a specific site ID. For details, see [site resource type](/graph/api/resources/site).
 
 For example:
 
 - `https://graph.microsoft.com/v1.0/sites?search=*&$select=sharepointIds`
 - `https://graph.microsoft.com/v1.0/sites/{siteId}`
 
-The Microsoft Graph API can also be used to retrieve information about a given user's OneDrive for Business site. For details, see [drive resource type](/graph/api/resources/drive?view=graph-rest-1.0).
+The Microsoft Graph API can also be used to retrieve information about a given user's OneDrive for Business site. For details, see [drive resource type](/graph/api/resources/drive).
 
 For example:
 
