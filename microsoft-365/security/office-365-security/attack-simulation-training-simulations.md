@@ -733,6 +733,25 @@ All actions on existing simulations start on the **Simulations** tab. To get the
 > - Remove columns from the view.
 > - Zoom out in your web browser.
 
+### Copy simulations
+
+You can copy an existing simulation and modify it to suit your needs. This will save you time and effort when creating new simulations based on previous ones.
+
+You can copy any simulation, regardless of its **Status** (Completed, Draft, Scheduled, In progress, Failed, Cancelled or Excluded), that you have created or automatically created, available in the **Simulations** tab. You can then modify the copy as you wish, such as changing the simulation name, description, technique, payload, target users, etc. 
+
+Note that:
+-	It is **not recommended** to copy **Failed** simulations because the reasons for failure could recur in the duplicated simulation.
+-	When you copy a simulation, the most recent version of the content that was selected in the original simulation, including the payload, the landing page, and end-user notifications, will be used in the new copy. If any content is deleted, you will be prompted to select the respective content again.
+- The latest target and excluded users at the time of simulation launch will be used when groups are added from the search bar - **Search for users or groups**. The target and excluded users will remain unchanged in the following scenarios - when the user list was imported as a CSV, when users were added from the search bar, or when users were added for different categories: All users, Suggested user groups, User tags, City, Country, Department, Title.
+-	In the original simulation, if the scheduled simulation launch time is in the future, it will be copied as is. For past launch times, **Launch this simulation as soon as I'm done** will be selected. 
+
+To copy a simulation, follow these steps:
+-	Select the **Simulations** tab and find the simulation that you want to copy.
+-	Select the checkbox ![image](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/131949102/bcad996a-0f91-4183-af49-59b228467b32) next to the simulation name and choose **Copy simulation**.
+![image](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/131949102/b778fccc-25dd-450b-9899-10c392ab2757)
+- The simulation configuration wizard will open with all the original settings copied and simulation name containing suffix **_Copy**.
+- Review and modify the simulation configurations as needed and select **Submit** to launch it or **Save and close** to review it later. If you select **Cancel**, the copied simulation won’t be saved.
+
 ### Cancel simulations
 
 You can cancel simulations with the **Status** value **In progress** or **Scheduled**.
