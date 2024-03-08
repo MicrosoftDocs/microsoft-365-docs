@@ -52,9 +52,8 @@ You can also export the report data into an Excel .csv file by selecting the **E
 
 The **OneDrive usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
-|Item|Description|
+|Metric|Definition|
 |:-----|:-----|
-|**Metric**|**Definition**|
 |URL |The web address for the user's OneDrive. Note: URL will be empty temporarily. |
 |Deleted  |The deletion status of the OneDrive. It takes at least seven days for accounts to be marked as deleted. |
 |Owner |The username of the primary administrator of the OneDrive. |
@@ -66,5 +65,8 @@ The **OneDrive usage** report can be viewed for trends over the last 7 days, 30 
 | Site ID | The site ID of the site. |
 |||
 
-> [!NOTE]
+> [!IMPORTANT]
 > The report only includes users who have a valid OneDrive license.
+
+>[!NOTE]
+> The OneDrive site URL may not be displayed in related usage reports. To display the site URL, you can use PowerShell. To follow the steps, see [Use PowerShell to resolve site URLs](resolve-site-urls.md).
