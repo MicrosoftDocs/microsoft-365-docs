@@ -53,7 +53,7 @@ Users with access to Copilot for Security have access to this capability in adva
     You can also reopen Copilot by selecting **Copilot** at the top of the query editor.
 1. In the Copilot prompt bar, ask any threat hunting query that you want to run and press ![Send icon](../../media/Send.png) or **Enter** .
 
-    :::image type="content" source="../../media/advanced-hunting-security-copilot-query.png" alt-text="Screenshot that shows Prompt bar in the Copilot for Security for advanced hunting." lightbox="../../media/advanced-hunting-security-copilot-query-big.png":::
+    :::image type="content" source="../../media/advanced-hunting-security-copilot-query.png" alt-text="Screenshot that shows prompt bar in the Copilot for Security for advanced hunting." lightbox="../../media/advanced-hunting-security-copilot-query-big.png":::
        
 1. Copilot generates a KQL query from your text instruction or question. While Copilot is generating, you can cancel the query generation by selecting **Stop generating**.
 
