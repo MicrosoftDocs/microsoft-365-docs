@@ -757,8 +757,6 @@
             href: device-health-sensor-health-os.md
         - name: Troubleshoot performance issues related to real-time protection
           href: troubleshoot-performance-issues.md
-        - name: Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
-          href: troubleshoot-reporting.md
         - name: Collect diagnostic data of Microsoft Defender Antivirus
           href: collect-diagnostic-data.md
         - name: Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus
@@ -982,7 +980,7 @@
          href: malware/trojans-malware.md
        - name: Understanding malware
          href: malware/understanding-malware.md
-       - name: Unwated software
+       - name: Unwanted software
          href: malware/unwanted-software.md
        - name: Worms
          href: malware/worms-malware.md
