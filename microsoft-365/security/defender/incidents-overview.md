@@ -12,12 +12,13 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - usx-security
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 09/18/2023
+ms.date: 03/10/2024
 ---
 
 # Incident response with Microsoft Defender XDR
@@ -26,13 +27,15 @@ ms.date: 09/18/2023
 
 
 **Applies to:**
-- Microsoft Defender XDR
+- Microsoft Defender unified security operations center (SOC) platform, including:
+    - Microsoft Sentinel
+    - Microsoft Defender XDR
 
-An incident in Microsoft Defender XDR is a collection of correlated alerts and associated data that make up the story of an attack.
+An *incident* in the Microsoft Defender unified SOC platform is a collection of correlated alerts and associated data that make up the story of an attack.
 
-Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
+The Microsoft Sentinel and Microsoft Defender services create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable evidence of a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts, from multiple sources, for multiple entities in your tenant.
 
-Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft Defender XDR automatically aggregates the alerts and their associated information into an incident.
+Because individual alerts each tell only part of the story, and because manually grouping individual alerts together to gain insight into an attack can be challenging and time-consuming, the Microsoft Defender unified SOC platform automatically identifies alerts that are related and aggregates them and their associated information into an incident.
 
 :::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="How Microsoft Defender XDR correlates events from entities into an incident." lightbox="../../media/incidents-overview/incidents.png":::
 
@@ -40,11 +43,16 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 
 - Where the attack started.
 - What tactics were used.
-- How far the attack has gone into your tenant.
+- How far the attack has gone into your digital estate.
 - The scope of the attack, such as how many devices, users, and mailboxes were impacted.
 - All of the data associated with the attack.
 
-If [enabled](m365d-enable.md), Microsoft Defender XDR can [automatically investigate and resolve](m365d-autoir.md) alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack.
+The Microsoft Defender unified SOC platform includes methods to automate triage, investigation, and resolution of incidents through automation and artificial intelligence.
+
+- Security Copilot harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis - optimizing on SOC efficiency across Microsoft Sentinel and Defender XDR data.
+- Automated attack disruption uses high-confidence signals collected from Microsoft Defender XDR and Microsoft Sentinel to automatically disrupt active attacks at machine speed, containing the threat and limiting the impact. ***(IS THIS THE SAME AS AIR OR THE EVOLUTION OF AIR, OR SOMETHING DIFFERENT?)***
+- If [enabled](m365d-enable.md), Microsoft Defender XDR can [automatically investigate and resolve](m365d-autoir.md) alerts from Microsoft 365 and Entra ID sources through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack.
+- Microsoft Sentinel [automation rules](link-with-toc-and-breadcrumbs) can automate triage, assignment, and management of incidents, regardless of their source. They can apply tags to incidents based on their content, suppress noisy (false positive) incidents, and close resolved incidents that meet the appropriate criteria, even including specifying a reason and adding comments.
 
 <a name='incidents-and-alerts-in-the-microsoft-365-defender-portal'></a>
 
@@ -53,26 +61,27 @@ If [enabled](m365d-enable.md), Microsoft Defender XDR can [automatically investi
 > [!TIP]
 > For a limited time during January 2024, when you visit the **Incidents** page, Defender Boxed appears. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
 
-You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target=" blank">Microsoft Defender portal</a>. Here's an example.
+You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target=" blank">Microsoft Defender portal</a>. Here's an example:
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
-Selecting an incident name displays the entire attack story of the incident, including:
+Selecting an incident name displays the incident page, starting with the entire **attack story** of the incident, including:
 
-- Alert page within incident: The scope of alerts related to the incident and their information on the same tab.
-- Graph: A visual representation of the attack that connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
+- **Alert page within incident**: The scope of alerts related to the incident and their information on the same tab.
 
-You can view the entity details directly from the graph and act on them with response options like file delete or device isolation.
+- **Graph**: A visual representation of the attack that connects the different suspicious entities that are part of the attack with the assets that make up the attack's targets, such as users, devices, and mailboxes.
+
+You can view the entity or asset details directly from the graph and act on them with response options like file delete or device isolation.
 
 :::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft Defender portal." lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
-The additional tabs for an incident are:
+The incident page consists of the following tabs:
 
-- Attack story
+- **Attack story**
 
-  The full story of the attack, including all the alerts, assets, and remediation actions taken.
+  Mentioned above, this tab includes the timeline of the attack, including all the alerts, assets, and remediation actions taken.
 
-- Alerts
+- **Alerts**
 
   All the alerts related to the incident and their information.
 
