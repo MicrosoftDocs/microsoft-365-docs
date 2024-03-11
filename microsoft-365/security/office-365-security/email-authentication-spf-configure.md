@@ -61,7 +61,7 @@ The rest of this article describes the SPF TXT records that you need to create f
 > [!TIP]
 > There are no admin portals or PowerShell cmdlets in Microsoft 365 for you to manage SPF records in your domain. Instead, you create the SPF TXT record at your domain registrar or DNS hosting service (often the same company).
 >
-> We provide instructions to create the proof of domain ownership TXT record for Microsoft 365 at many domain registrars. You can use these instructions as a starting point to create the SPF TXT record value. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+> We provide instructions to create the proof of domain ownership TXT record for Microsoft 365 at many domain registrars. You can use these instructions as a starting point to create the SPF TXT record value. For more information, see [Add DNS records to connect your domain](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 >
 > If you're unfamiliar with DNS configuration, contact your domain registrar and ask for help.
 
