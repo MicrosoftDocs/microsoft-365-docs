@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn about the Training modules that are available to use in Training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 3/11/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -29,7 +29,7 @@ To see the available Training modules, open the Microsoft Defender portal at <ht
 The **Training modules** page shows the following information for each module<sup>\*</sup>:
 
 - **Training name**
-- **Languages**: The available values are: **Arabic**, **Chinese(Simplified)**, **Chinese(Traditional, Hong Kong), **Chinese(Traditional, Taiwan), **Czech**, **Danish**, **Dutch**, **English**, **English**, **Finnish**, **French**, **French**, **German**, **Hebrew**, **Hindi**, **Hungarian**, **Indonesian**, **Italian**, **Japanese**, **Korean**, **Malay**, **NorwegianBokmål**, **Persian**, **Polish**, **Portuguese**, **Portuguese**, **Russian**, **Slovakian**, **Spanish**, **Swedish**, **Thai**, **Turkish**, **Ukrainian**, **Vietnamese**
+- **Languages**: The available values are: **Turkish**, **Polish**, **Persian**, **Danish**, **Slovak**, **Korean**, **Portuguese**, **Italian**, **German**, **French**, **Swedish**, **Spanish**, **Arabic**, **Norwegian Bokmål**, **Russian**, **Portuguese**, **Japanese**, **Czech**, **Greek**, **Spanish**, **Thai**, **Romanian**, **French**, **Hungarian**, **Chinese (Simplified)**, **English**, **Indonesian**, **Finnish**, **Malay**, **English**, **Hindi**, **Chinese (Traditional**, **Hong Kong)**, **Chinese (Traditional**, **Taiwan)**, **Macedonian**, **Ukrainian**, **Vietnamese**, **Hebrew**, **Serbian (Cyrillic)/Serbian (Latin)**, and **Dutch**
 - **Tags**: Training modules are organized into one or more of the following categories:
   - **AttachmentMalware**
   - **Basic**
@@ -41,6 +41,7 @@ The **Training modules** page shows the following information for each module<su
   - **LinkToMalwareFile**
   - **OAuthConsentGrant**
   - **Phishing**
+  - **SocialEngineering**
 - **Source**: All built-in modules have the value **Global**.
 - **Duration (mins)**
 - **Last assigned date**
@@ -74,6 +75,7 @@ When you select a Training module from the list by clicking anywhere in the row 
 - **Languages**
 - **Duration**
 - **Preview**: Select this button to watch the training.
+- **Tags**
 
 - **Active Training campaigns and simulations**: This section shows the following information about active Training campaigns that are using the selected module:
   - **Name**
