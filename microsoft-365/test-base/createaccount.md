@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Creating a Test Base Account
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 To create a **Test Base** account, perform the steps that follow. 
 
 > [!IMPORTANT]
