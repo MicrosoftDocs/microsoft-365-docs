@@ -1,13 +1,15 @@
 ---
 title: "Data, Privacy, and Security for Microsoft Copilot for Microsoft 365"
+description: "Learn how Microsoft Copilot for Microsoft 365 uses data and how it stores and protects that data."
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 ms.topic: conceptual
 ms.service: microsoft-365-copilot
-ms.localizationpriority: medium
-ms.collection: privacy-microsoft365
-description: "Learn how Microsoft Copilot for Microsoft 365 uses data and how it stores and protects that data."
+ms.localizationpriority: high
+ms.collection: 
+- privacy-microsoft365
+- privacy-copilot
 hideEdit: true
 ms.date: 03/04/2024
 ---
