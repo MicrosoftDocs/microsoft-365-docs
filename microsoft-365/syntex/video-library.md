@@ -14,6 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Watch videos to learn about some of the different features in Microsoft Syntex.
 ---
 
