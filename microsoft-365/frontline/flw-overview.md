@@ -77,10 +77,18 @@ Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), th
 
 ## Safeguard your business
 
-Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, threat and information protection, and security management. Manage identities and access with [Microsoft Entra ID](/entra/fundamentals/whatis). Simplify and reinforce secure access management across endpoints and devices with [Microsoft Intune](/mem/intune/fundamentals/what-is-intune).
+Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, threat and information protection, and security management.
+
+Manage identities and access with [Microsoft Entra ID](/entra/fundamentals/whatis). Secure endpoints and apps across device types and operating systems with [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). 
+
+|Capability |More information |
+|-----------|---------------------|
+|Manage identities and access |<ul><li>[Microsoft Entra ID overview](/entra/fundamentals/whatis)</li></ul>|
+|Secure endpoints and apps across device types and operating systems |<ul><li>[Microsoft Intune overview](/mem/intune/fundamentals/what-is-intune)</li><li>[Get started with frontline worker (FLW) device management](/mem/solutions/frontline-worker)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li></ul>|
 
 <!-- ## Safeguard your business
-
+ |
+(/mem/solutions/frontline-worker/frontline-worker-overview)
 Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, identity and threat protection, and security management. The offerings available to your workforce in these areas depends on the licenses you assign to your users in the Microsoft 365 admin center.
 
 <a name='manage-identities-and-access-with-azure-active-directory'></a>
