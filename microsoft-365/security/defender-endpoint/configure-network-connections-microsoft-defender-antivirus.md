@@ -77,21 +77,12 @@ For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun
 
 If you get any of these errors:
 
-```error
-Start Time: <Day_of_the_week> MM DD YYYY HH:MM:SS
-MpEnsureProcessMitigationPolicy: hr = 0x1
-ValidateMapsConnection
-ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80070006 httpcore=451)
-MpCmdRun.exe: hr = 0x80070006
-```
-```error
-ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072F8F httpcore=451)
-MpCmdRun.exe: hr = 0x80072F8F
-```
-```error
-ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072EFE httpcore=451)
-MpCmdRun.exe: hr = 0x80072EFE
-```
+|Error message|
+|:---|
+|Start Time: <Day_of_the_week> MM DD YYYY HH:MM:SS </br> MpEnsureProcessMitigationPolicy: hr = 0x1</br>ValidateMapsConnection</br>ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80070006 httpcore=451)</br>MpCmdRun.exe: hr = 0x80070006</br>|
+|ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072F8F httpcore=451)</br>MpCmdRun.exe: hr = 0x80072F8F|
+|ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072EFE httpcore=451)</br>MpCmdRun.exe: hr = 0x80072EFE|
+
 **Root cause**: The device not having its system-wide WinHttp proxy configured.  When we set it via netsh things seem to work. If you don’t set the system-wide WinHttp proxy then the OS is not aware of the proxy, which means the OS can’t fetch the CRL (the OS does this, not MDE), which means that TLS connections to URLs like [cp.wd.microsoft.com](http://cp.wd.microsoft.com/) will not succeed. At least not fully. We would see successful (response 200) connections to the endpoints but our MAPS connections would still fail.
 
 **Solution (Preferred)**: Configure the system-wide WinHttp proxy which will allow CRL check.
