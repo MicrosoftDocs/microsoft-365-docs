@@ -210,6 +210,31 @@
         href: mac-privacy.md
       - name: Resources for Microsoft Defender for Endpoint on macOS
         href: mac-resources.md
+      - name: Troubleshoot Microsoft Defender for Endpoint on macOS
+        items:
+        - name: Troubleshooting mode on macOS
+          href: mac-troubleshoot-mode.md
+        - name: Troubleshoot macOS installation issues
+          href: mac-support-install.md
+        - name: Troubleshoot macOS performance issues overview
+          href: mac-support-perf-overview.md
+          displayName: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
+        - name: Troubleshoot performance issues
+          href: mac-support-perf.md
+        - name: Troubleshoot cloud connectivity
+          href: troubleshoot-cloud-connect-mdemac.md
+        - name: Troubleshoot license issues
+          href: mac-support-license.md
+        - name: Troubleshoot system extention issues
+          href: mac-support-sys-ext.md
+          items:
+          - name: Intune
+            href: manage-profiles-approve-sys-extensions-intune.md
+          - name: JamF
+            href: manage-sys-extensions-using-jamf.md
+          - name: Manual deployment
+            href: manage-sys-extensions-manual-deployment.md
+        
     - name: Microsoft Defender for Endpoint on Linux
       items:
        - name: Deploy Defender for Endpoint on Linux
@@ -1396,6 +1421,9 @@
         href: mac-troubleshoot-mode.md
       - name: Troubleshoot macOS installation issues
         href: mac-support-install.md
+      - name: Troubleshoot macOS performance issues overview
+        href: mac-support-perf-overview.md
+        displayName: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
       - name: Troubleshoot performance issues
         href: mac-support-perf.md
       - name: Troubleshoot cloud connectivity
