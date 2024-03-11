@@ -35,6 +35,8 @@ In the Teams admin center, choose **Frontline deployment** > **Manage frontline 
 - Directly, on the **Usage** tab.
 - Through the **App usage - Microsoft Teams** card. This card shows the overall percentage of users across all your frontline teams that have been active on Teams in the last 30 days. Choose **View details** to go to the dashboard.
 
+    :::image type="content" source="media/frontline-usage-report-app-usage-card.png" alt-text="Screenshot of the App usage - Microsoft Teams card on the Manage frontline teams page of the Teams admin center.":::
+
 To view usage reports in the dashboard, make sure the **Display concealed user, group, and site names in all reports** setting is turned on in the Microsoft 365 admin center. Otherwise, you'll see a “User details have been hidden by your Microsoft 365 Reports privacy setting” message.
 
 You must be a Global admin to turn on this setting.
@@ -42,7 +44,9 @@ You must be a Global admin to turn on this setting.
 1. In the Microsoft 365 admin center, go to **Settings** > **Org Settings**, and then on the **Services** tab, choose **Reports**.
 1. Select the **Display concealed user, group, and site names in all reports** check box, and then choose **Save**.
 
-## View the report
+## The frontline usage report
+
+To run the report:
 
 1. Under **Teams**, select which teams you want in your usage report. <br>
 Currently, the only option is **All frontline teams**, which represents all teams deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center. We’ll be adding more options in the future.  
@@ -51,7 +55,9 @@ Currently, the only option is **All frontline teams**, which represents all team
     > [!IMPORTANT]
     > It might take several minutes to load the first report of the day. After the report is loaded, it’s available to view for the next 24 hours. Usage data may take up to 72 hours to update.
 
-## Interpret the report
+### Interpret the report
+
+:::image type="content" source="media/frontline-usage-report.png" alt-text="Screenshot of the usage dashboard showing the frontline usage report and the Deployment task progress card.":::
 
 Each row in the table represents a team.
 
