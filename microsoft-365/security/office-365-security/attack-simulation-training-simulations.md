@@ -122,7 +122,7 @@ If you select a payload by clicking anywhere in the row other than the check box
 
 - The **Overview** tab (named **Payload** in **Credential Harvest** and **Link in Attachment** payloads) contains details about the payload, including a preview.
 - The **Login page** tab is available only for **Credential Harvest** or **Link in Attachment** payloads and is described in the [Select a login page](#select-a-login-page) subsection.
-- The **Attachment** tab is available only for **Malware Attachment**, **Link in Attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, include a preview.
+- The **Attachment** tab is available only for **Malware Attachment**, **Link in Attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, including a preview.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
@@ -204,7 +204,7 @@ On the **Target users** page, select who receives the simulation. Use the follow
 
     - **Search for users or groups**: If you click in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and do one of the following actions, the **Filter users by categories** options on the **Add users** flyout are replaced by a **User list** section:
 
-      - Type three or more characters and then press the ENTER key. Any users or group names that contain those characters are shown in the **User list** section by **Name**, **Email**, **Job title** and **Type**.
+      - Type three or more characters and then press the ENTER key. Any users or group names that contain those characters are shown in the **User list** section by **Name**, **Email**, **Job title**, and **Type**.
       - Type less than three characters or no characters and then press the ENTER key. No users are shown in the **User list** section, but you can type three or more characters in the **Search** box to search for users and groups.
 
       The number of results appears in the **Selected (0/x) users** label.
@@ -302,7 +302,7 @@ Use the following options on the page to assign trainings as part of the simulat
     - **Custom training URL** (required)
     - **Custom training name** (required)
     - **Custom training description**
-    - **Custom training duration (in minutes)**: The default value is 0, which means there is no specified duration for the training.
+    - **Custom training duration (in minutes)**: The default value is 0, which means there's no specified duration for the training.
     - **Due date** section: In **Select a training due date**, choose one of the following values:
       - **30 days after simulation ends**: This is the default value.
       - **15 days after simulation ends**
@@ -321,7 +321,7 @@ On the **Training assignment** page, select the trainings that you want to add t
 
 In the **Add training** flyout that opens, use the following tabs to select trainings to include in the simulation:
 
-- **Recommended** tab: Shows the recommended built-in trainings based on the simulation configuration. These are the same trainings that would have been assigned if you selected **Assign training for me (Recommended)** on the previous page.
+- **Recommended** tab: Shows the recommended built-in trainings based on the simulation configuration. These trainings are the same trainings that would have been assigned if you selected **Assign training for me (Recommended)** on the previous page.
 - **All trainings** tab: Shows all built-in trainings that are available.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="The option to add the recommended training on the Training assignment page in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
@@ -335,7 +335,7 @@ On either tab, the following information is shown for each training:
 
 On either tab, you can use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find trainings. Type part of the training name and press the ENTER key.
 
-On either tab, select one or more trainings by selecting the the check box next to the training name. To select all trainings, select the check box in the **Training name** column header. When you're finished, select **Add**.
+On either tab, select one or more trainings by selecting the check box next to the training name. To select all trainings, select the check box in the **Training name** column header. When you're finished, select **Add**.
 
 Back on the **Training assignment** page, the selected trainings are now listed. The following information is shown for each training:
 
@@ -359,7 +359,7 @@ Select one of the following options:
 
 - **Use landing pages from library**: The following options are available:
   - **Payload indicators** section: Select **Add payload indicators to email** to help users learn how do identify phishing email.
-    - This setting is not available if you selected **Malware Attachment** or **Link to Malware** on the [Select a social engineering technique](#select-a-social-engineering-technique) page.
+    - This setting isn't available if you selected **Malware Attachment** or **Link to Malware** on the [Select a social engineering technique](#select-a-social-engineering-technique) page.
     - For landing pages that you create on the **Tenant landing pages** tab, this setting is meaningful only if you use the **Dynamic tag** named **Insert Payload content** in the landing page content as described in the [Create landing pages](attack-simulation-training-landing-pages.md#create-landing-pages) subsection.
   - **Show the interstitial page before the landing page**: This setting is available only if you selected **Drive-by URL** on the [Select a social engineering technique](#select-a-social-engineering-technique) page. You can show the overlay that comes up for drive-by URL attacks. To hide the overlay and go directly to the landing page, don't select this option.
 
@@ -397,7 +397,7 @@ Select one of the following options:
 
   On the **Selecting phish landing page** page, select a landing page to use by selecting the check box next to the **Name** column.
 
-- **Use a custom URL**: This setting is not available if you selected **Malware Attachment** or **Link to Malware** on the [Select technique](#select-a-social-engineering-technique) page.
+- **Use a custom URL**: This setting isn't available if you selected **Malware Attachment** or **Link to Malware** on the [Select technique](#select-a-social-engineering-technique) page.
 
   If you select **Use a custom URL**, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the **Selecting phish landing page** page.
 
@@ -586,7 +586,7 @@ Choose one of the following values:
 
 Configure the remaining options on the page:
 
-- **Configure number of days to end simulation after**: The default value is 2 days, which is also the minimum value. The maximum value is 30 days.
+- **Configure number of days to end simulation after**: The default value is two days, which is also the minimum value. The maximum value is 30 days.
 - **Enable region aware time zone delivery**: If you select this value, the simulated attack messages are delivered to users during their regional working hours.
 
 When you're finished on the **Launch details** page, select **Next**.
@@ -616,7 +616,7 @@ Back on the **Simulations** tab, the simulation that you created is now listed. 
 
 The **Simulations** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator> shows any simulations that you've created.
 
-By default, the following information is shown for each simulation:<sup>\*</sup>
+By default, the following information is shown for each simulation<sup>\*</sup>:
 
 - **Simulation name**
 - **Type**
