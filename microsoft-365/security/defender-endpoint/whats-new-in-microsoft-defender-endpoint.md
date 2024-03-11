@@ -54,8 +54,8 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 **Attack Surface Reduction (ASR) Rules**
 
 Two new ASR rules are now in public preview: 
-- Block rebooting machine in Safe Mode (preview): This rule prevents the execution of commands to restart machines in Safe Mode.
-- Block use of copied or impersonated system tools (preview): This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
+- [Block rebooting machine in Safe Mode (preview)](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-rebooting-machine-in-safe-mode-preview): This rule prevents the execution of commands to restart machines in Safe Mode.
+- [Block use of copied or impersonated system tools (preview)](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-use-of-copied-or-impersonated-system-tools-preview): This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
 
 ## January 2024
 
