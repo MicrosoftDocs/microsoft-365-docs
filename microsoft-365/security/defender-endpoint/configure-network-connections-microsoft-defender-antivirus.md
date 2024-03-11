@@ -1,4 +1,4 @@
- 0---
+---
 title: Configure and validate Microsoft Defender Antivirus network connections
 description: Configure and test your connection to the Microsoft Defender Antivirus cloud protection service.
 ms.service: defender-endpoint
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.custom: nextgen
 ms.date: 06/26/2023
 ms.reviewer: mkaminska; pahuijbr
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 - mde-ngp
@@ -27,6 +27,7 @@ search.appverid: met150
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
 
 To ensure Microsoft Defender Antivirus cloud-delivered protection works properly, your security team must configure your network to allow connections between your endpoints and certain Microsoft servers. This article lists connections that must be allowed for using the firewall rules. It also provides instructions for validating your connection. Configuring your protection properly will ensure you receive the best value from your cloud-delivered protection services.
