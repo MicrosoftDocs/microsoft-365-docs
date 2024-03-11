@@ -108,7 +108,8 @@ To clean up the environment, go back to the application's **Certificates & secre
 The following is the PowerShell script for Update-Report.
 
    ```PowerShell
-       [Parameter(Mandatory=$true)]
+    param(
+    [Parameter(Mandatory=$true)]
     [string]$tenantId,
     [Parameter(Mandatory=$true)]
     [string]$clientId,
