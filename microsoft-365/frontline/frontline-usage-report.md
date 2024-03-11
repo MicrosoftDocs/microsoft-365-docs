@@ -49,10 +49,11 @@ You must be a Global admin to turn on this setting.
 
 ## The frontline usage report
 
-To run the report:
+To access the report, you must be a Global admin, Teams admin, Global reader, or Report reader. [CONFIRM]
 
-1. On the **Usage** tab, under **Teams**, select which teams you want in your usage report. <br>
-Currently, the only option is **All frontline teams**, which represents all teams deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center. We’ll be adding more options in the future.  
+### Run the report
+
+1. On the **Usage** tab, under **Teams**, select which teams you want in your usage report. Currently, the only option is **All frontline teams**, which represents all teams deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center. We’ll be adding more options in the future.  
 
     :::image type="content" source="media/flw-usage-report-generate.png" alt-text="Screenshot of Teams and Date range settings for generating the report. ":::
 1. Under **Date range**, select the date range for which you want to see data. You can choose from the last 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
@@ -86,12 +87,15 @@ You can:
 
 - Select the **Team members** or **Active users** column header to sort the rows from highest to lowest or vice versa.
 - Select the **Last activity date** column header to sort the rows from latest to earliest or vice versa.
-- Add or remove columns in the table by selecting **Edit columns** in the upper-right corner of the table.
+- Add or remove columns in the table by selecting **Edit columns** (the gear icon) in the upper-right corner of the table.
 - Export the data to a CSV file for further analysis by selecting the **Export to Excel** icon in the upper-right corner of the table.
+
+> [!IMPORTANT]
+> If you haven't deployed any frontline locations through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center, you won't see any teams.
 
 ## Deployment task progress card
 
-The **Deployment task progress** card on the usage dashboard shows you which tasks are completed, in progress, and not started for your overall frontline deployment.
+The **Deployment task progress** card on the usage dashboard shows you which of the following tasks are completed, in progress, and not started for your overall frontline deployment.
 
 - Map frontline attributes
 - Deploy frontline teams
