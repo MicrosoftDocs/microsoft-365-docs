@@ -38,7 +38,7 @@ In the Teams admin center, choose **Frontline deployment** > **Manage frontline 
 - Directly, on the **Usage** tab.
 - Through the **App usage - Microsoft Teams** card. This card shows the overall percentage of users across all your frontline teams that have been active on Teams in the last 30 days. Choose **View details** to go to the dashboard.
 
-    :::image type="content" source="media/frontline-usage-report-app-usage-card.png" alt-text="Screenshot of the App usage - Microsoft Teams card on the Manage frontline teams page of the Teams admin center." lightbox="media/frontline-usage-report-app-usage-card.png":::
+    :::image type="content" source="media/flw-usage-report-app-usage-card.png" alt-text="Screenshot of the App usage - Microsoft Teams card on the Manage frontline teams page of the Teams admin center." lightbox="media/flw-usage-report-app-usage-card.png":::
 
 To view usage reports in the dashboard, make sure the **Display concealed user, group, and site names in all reports** setting is turned on in the Microsoft 365 admin center. Otherwise, you'll see a “User details have been hidden by your Microsoft 365 Reports privacy setting” message.
 
@@ -51,8 +51,10 @@ You must be a Global admin to turn on this setting.
 
 To run the report:
 
-1. Under **Teams**, select which teams you want in your usage report. <br>
+1. On the **Usage** tab, under **Teams**, select which teams you want in your usage report. <br>
 Currently, the only option is **All frontline teams**, which represents all teams deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center. We’ll be adding more options in the future.  
+
+    :::image type="content" source="media/flw-usage-report-generate.png" alt-text="Screenshot of Teams and Date range settings for generating the report. ":::
 1. Under **Date range**, select the date range for which you want to see data. You can choose from the last 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
 
     > [!IMPORTANT]
@@ -62,7 +64,7 @@ Currently, the only option is **All frontline teams**, which represents all team
 
 The table shows usage data for your frontline teams during the date range you selected.
 
-:::image type="content" source="media/frontline-usage-report.png" alt-text="Screenshot of the usage dashboard showing the frontline usage report and the Deployment task progress card." lightbox="media/frontline-usage-report.png":::
+:::image type="content" source="media/flw-usage-report.png" alt-text="Screenshot of the usage dashboard showing the frontline usage report and the Deployment task progress card." lightbox="media/flw-usage-report.png":::
 
 Each row in the table represents a team.
 
