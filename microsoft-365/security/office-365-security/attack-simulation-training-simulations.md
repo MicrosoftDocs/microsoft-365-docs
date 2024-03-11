@@ -84,7 +84,7 @@ The following information is shown for each payload:
 
 - **Payload name**
 - **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 29+ languages as described in :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**.
-- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who should be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
 
 You can sort the entries by clicking on an available column header.
 
@@ -146,7 +146,7 @@ To view the complete login page, use the **Page 1** and **Page 2** links at the 
 
 To change the login page that's used in the payload, select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Change login page**.
 
-On the **Select login page** flyout that opens, The following information is shown for each login page:
+On the **Select login page** flyout that opens, the following information is shown for each login page:
 
 - **Name**
 - **Language**
@@ -177,9 +177,7 @@ When you're finished on the **Select a payload and login page** page, select **N
 On the **Configure OAuth payload** page, configure the following settings:
 
 - **App name**: Enter a name for the payload.
-
 - **App logo**: Select **Browse** to select a .png, .jpeg, or .gif file to use. To remove a file after you've selected it, select **Remove**.
-
 - **Select app scope**: Choose one of the following values:
   - **Read user calendars**
   - **Read user contacts**
@@ -195,7 +193,7 @@ When you're finished on  the **Configure OAuth payload** page, select **Next**.
 
 On the **Target users** page, select who receives the simulation. Use the following options to select users:
 
-- **Include all users in your organization**: The unmodifiable list of users is show in groups of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** icon on the page to find specific users.
+- **Include all users in your organization**: The unmodifiable list of users is show in groups of 10. You can use **Next** and **Previous** below the list of users to scroll through the list. You can also use :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** on the page to find specific users.
 
   > [!TIP]
   > Although you can't remove users from the list on this page, you can use the next **Exclude users** page to exclude specific users.
@@ -205,27 +203,28 @@ On the **Target users** page, select who receives the simulation. Use the follow
   - :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add users**: In the **Add users** flyout that opens, you find and select users and groups to receive the simulation. **Dynamic distribution groups are not supported**. The following search tools are available:
 
     - **Search for users or groups**: If you click in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and do one of the following actions, the **Filter users by categories** options on the **Add users** flyout are replaced by a **User list** section:
-      - Type three or more characters and then press the ENTER key. Any users or group names that contain those characters are shown in the **User list** section by **Name** and **Email**.
+
+      - Type three or more characters and then press the ENTER key. Any users or group names that contain those characters are shown in the **User list** section by **Name**, **Email**, **Job title** and **Type**.
       - Type less than three characters or no characters and then press the ENTER key. No users are shown in the **User list** section, but you can type three or more characters in the **Search** box to search for users and groups.
 
       The number of results appears in the **Selected (0/x) users** label.
 
-      > [!NOTE]
-      > Clicking the **Add filters** button clears and replaces any results the **User list** section with the **Filter users by categories**.
+      > [!TIP]
+      > Selecting **Add filters** clears and replaces any results the **User list** section with the **Filter users by categories**.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
-      Select the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
+      Select **Add x users** to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
     - **Filter users by categories**: Use the following options:
 
       - **Suggested user groups**: Select from the following values:
-        - **All suggested user groups**
+        - **All suggested user groups**: The same result as selecting **Users not targeted by a simulation in the last three months** and **Repeat offenders**.
         - **Users not targeted by a simulation in the last three months**
         - **Repeat offenders**: For more information, see [Configure the repeat offender threshold](attack-simulation-training-settings.md#configure-the-repeat-offender-threshold).
 
       - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md). Use the following options:
-        - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
+        - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by user tags**, you can type part of the user tag name and then press Enter. You can select some or all of the results.
         - Select **All user tags**
         - Select existing user tags. If the link is available, select **See all user tags** to see the complete list of available tags.
 
@@ -260,7 +259,7 @@ On the **Target users** page, select who receives the simulation. Use the follow
       - **Filters** section: Show how many filter values you used and the names of the filter values. If it's available, select the **See all** link to see all filter values
       - **User list** section: Shows the users or groups that match your category searches. The number of results appears in the **Selected (0/x) users** label.
 
-      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the round check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
+      When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
       Select the **Add x users** button to add the selected users or groups on the **Target users** page and to return to the **Target users** page.
 
@@ -288,13 +287,13 @@ On the **Assign training** page, you can assign trainings for the simulation. We
 
 Use the following options on the page to assign trainings as part of the simulation:
 
-- **Select training content preference**: Choose one of the following options in the dropdown list:
+- **Preferences** section: In **Select training content preference**, choose one of the following options in the dropdown list:
 
-  - **Microsoft training experience (Recommended)**: This is the default value that has the following associated options to configure on the page:
-    - Select one of the following options:
+  - **Microsoft training experience (Recommended)**: This is the default value. This value has the following associated options to configure on the page:
+    - Select one of the following values:
       - **Assign training for me (Recommended)**: This is the default value. We assign training based on a user's previous simulation and training results.
-      - **Select training courses and modules myself**: If you select this value, the next step in the wizard will be **Training assignment** where you find and select trainings. The steps are described in the [Training assignment](#training-assignment) subsection.
-    - **Due date**: Choose one of the following values:
+      - **Select training courses and modules myself**: If you select this value, the next step in the wizard is **Training assignment** where you find and select trainings. The steps are described in the [Training assignment](#training-assignment) subsection.
+    - **Due date** section: In **Select a training due date**, choose one of the following values:
       - **30 days after simulation ends**: This is the default value.
       - **15 days after simulation ends**
       - **7 days after simulation ends**
@@ -304,12 +303,12 @@ Use the following options on the page to assign trainings as part of the simulat
     - **Custom training name** (required)
     - **Custom training description**
     - **Custom training duration (in minutes)**: The default value is 0, which means there is no specified duration for the training.
-    - **Due date**: Choose one of the following values:
+    - **Due date** section: In **Select a training due date**, choose one of the following values:
       - **30 days after simulation ends**: This is the default value.
       - **15 days after simulation ends**
       - **7 days after simulation ends**
 
-  - **No training**: If you select this value, the only option on the page is the **Next** button.
+  - **No training**: If you select this value, the only option on the page is **Next**.
 
 When you're finished on the **Assign training** page, select **Next**.
 
@@ -318,9 +317,9 @@ When you're finished on the **Assign training** page, select **Next**.
 > [!NOTE]
 > This page is available only if you selected **Select training courses and modules myself** on the **Assign training** page.
 
-On the **Training assignment** page, select the trainings that you want to add to the simulation by clicking :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add trainings**.
+On the **Training assignment** page, select the trainings that you want to add to the simulation by selecting :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add trainings**.
 
-On the **Add training** flyout that opens, use the following tabs to select trainings to include in the simulation:
+In the **Add training** flyout that opens, use the following tabs to select trainings to include in the simulation:
 
 - **Recommended** tab: Shows the recommended built-in trainings based on the simulation configuration. These are the same trainings that would have been assigned if you selected **Assign training for me (Recommended)** on the previous page.
 - **All trainings** tab: Shows all built-in trainings that are available.
@@ -332,23 +331,21 @@ On either tab, the following information is shown for each training:
 - **Training name**
 - **Source**: The value is **Global**.
 - **Duration (mins)**
-- **Preview**: Select the **Preview** button to see the training.
+- **Preview**: Select **Preview** to see the training.
 
 On either tab, you can use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find trainings. Type part of the training name and press the ENTER key.
 
-On either tab, select one or more trainings by clicking in the blank area next to the **Training name** column. When you're finished, select **Add**.
+On either tab, select one or more trainings by selecting the the check box next to the training name. To select all trainings, select the check box in the **Training name** column header. When you're finished, select **Add**.
 
 Back on the **Training assignment** page, the selected trainings are now listed. The following information is shown for each training:
 
 - **Training name**
 - **Source**
 - **Duration (mins)**
-- **Assign to**: For each training, you need to select who gets the training by selecting from the following values:
+- **Assign to**: For each training, select who gets the training by selecting from the following values:
   - **All users**
   - One or both of the values **Clicked payload** or **Compromised**.
 - **Delete**: Select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** to remove the training from the simulation.
-
-:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="The Training assignment page in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 :::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="The Training assignment page in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
@@ -356,23 +353,23 @@ When you're finished on the **Training assignment** page, select **Next**.
 
 ## Select a landing page
 
-On the **Selecting phish landing page** page, you configure the web page that users are taken to if they open the payload in the simulation.
+On the **Selecting phish landing page** page, configure the web page that users are taken to if they open the payload in the simulation.
 
 Select one of the following options:
 
 - **Use landing pages from library**: The following options are available:
-  - **Payload indicators**: Select **Add payload indicators to email** to help users learn how do identify phishing email.
+  - **Payload indicators** section: Select **Add payload indicators to email** to help users learn how do identify phishing email.
     - This setting is not available if you selected **Malware Attachment** or **Link to Malware** on the [Select a social engineering technique](#select-a-social-engineering-technique) page.
-    - For landing pages that you create on the **Tenant landing pages** tab, this setting is meaningful only if you use the **Dynamic tag** named **Insert Payload content** in the landing page content as described in the **Create a landing page** subsection.
+    - For landing pages that you create on the **Tenant landing pages** tab, this setting is meaningful only if you use the **Dynamic tag** named **Insert Payload content** in the landing page content as described in the [Create landing pages](attack-simulation-training-landing-pages.md#create-landing-pages) subsection.
   - **Show the interstitial page before the landing page**: This setting is available only if you selected **Drive-by URL** on the [Select a social engineering technique](#select-a-social-engineering-technique) page. You can show the overlay that comes up for drive-by URL attacks. To hide the overlay and go directly to the landing page, don't select this option.
 
   The remainder of the **Selecting phish landing page** page has two tabs where you select the landing page to use:
 
   - **Global landing pages** tab: Contains the built-in landing pages. When you select a built-in landing page to use by selecting the check box next to name, an **Edit layout** section appears with the following options:
     - **Add logo**: Select **Browse logo image** to find and select a .png, .jpeg, or .gif file. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, select **Remove uploaded logo image**.
-    - **Select default language**: This setting is required. Select one of the following values: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+    - **Select default language**: This setting is required. Select one of the following values: **Chinese (Simplified)**, **Chinese (Traditional, Taiwan)**, **Dutch**, **English**, **Spanish**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese, or **Russian**.
 
-  - **Tenant landing pages** tab: Contains any custom landing pages that you've created. To create a new landing page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Phish landing pages** \> **Tenant landing pages** tab. For instructions, see [Landing pages in Attack simulation training](attack-simulation-training-landing-pages.md#create-landing-pages).
+  - **Tenant landing pages** tab: Contains any custom landing pages that you created. To create a new landing page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Phish landing pages** \> **Tenant landing pages** tab. For instructions, see [Create landing pages](attack-simulation-training-landing-pages.md#create-landing-pages).
 
   On both tabs, the following information is shown for each landing page:
 
@@ -380,7 +377,10 @@ Select one of the following options:
   - **Language**: If the landing page contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
   - **Default language**
   - **Status**
-  - **Linked simulation**
+  - **Linked simulations**
+  - **Created time**
+  - **Modified by**
+  - **Last modified**
 
   Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, the only available columns that aren't selected are **Source** and **Created by**.
 
@@ -388,7 +388,7 @@ Select one of the following options:
 
   Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the landing pages by language.
 
-  When you select a landing page by clicking on the name, a details flyout opens that shows more information about the landing page:
+  When a landing page is selected, if you click anywhere in the row, a details flyout opens that shows more information about the landing page:
 
   - The **Preview** tab shows what the landing page looks like to users.
   - The **Details** tab shows the properties of the landing page.
@@ -407,15 +407,14 @@ When you're finished on the **Selecting phish landing page** page, select **Next
 
 On the **Select end user notification** page, select from the following notification options:
 
-- **Do not deliver notifications**: No other configuration options are available on the page. Users will not receive **Training assignment notifications**, **Training reminder notifications** or **Positive reinforcement notifications** from the simulation.
+- **Do not deliver notifications**: No other configuration options are available on the page. Users don't receive **Training assignment notifications**, **Training reminder notifications** or **Positive reinforcement notifications** from the simulation. Select **Proceed** in the warning dialog.
 
-- **Microsoft default notification (recommended)**: The notifications that users will receive are shown on the page:
-
+- **Microsoft default notification (recommended)**: The notifications that users receive are shown on the page:
   - **Microsoft default positive reinforcement notification**
   - **Microsoft default training assignment notification**
   - **Microsoft default training reminder notification**
 
-  Select the default language to use in **Select default language**. The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Romanian**, **Russian**, **Spanish**, or **Dutch**.
+  Select the default language to use in **Select default language**. The available values are: **Chinese (Simplified)**, **Chinese (Traditional, Taiwan)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, **Dutch**, **Polish**, **Arabic**, **Finnish**, **Greek**, **Hungarian**, **Indonesian**, **Norwegian Bokmål**, **Romanian**, **Slovak**, **Swedish**, **Thai**, **Turkish**, **Vietnamese**, **Catalan**, **Croatian, or **Slovenian**.
 
   For each notification, the following information is available:
 
@@ -429,8 +428,8 @@ On the **Select end user notification** page, select from the following notifica
     - For **Microsoft default positive reinforcement notification**, select **Do not deliver**, **Deliver after campaign ends**, or **Deliver during campaign**.
     - For **Microsoft default training reminder notification**, select **Twice a week** or **Weekly**.
   - **Actions**: If you select :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View**, a **Review notification** page opens with the following information:
-    - **Preview** tab: View the notification message as users will see it.
-      - To view the message in different languages, use the **Select language** box.
+    - **Preview** tab: View the notification message as users see it.
+      - To view the message in different languages, use the **Select notification language** box.
       - Use the **Select payload to preview** box to select the notification message for simulations that contain multiple payloads.
     - **Details** tab: View details about the notification:
       - **Notification description**
@@ -444,7 +443,7 @@ On the **Select end user notification** page, select from the following notifica
 
     When you're finished on the **Review notification** page, select **Close** to return to the **Select end user notification** page.
 
-- **Customized end user notifications**: No other configuration options are available on the page. When you select **Next**, you'll need to select a **Training assignment notification**, a **Training reminder notification**, and (optionally) a **Positive reinforcement notification** to use for the simulation as described in the next three subsections.
+- **Customized end user notifications**: No other configuration options are available on the page. When you select **Next**, you need to select a **Training assignment notification**, a **Training reminder notification**, and (optionally) a **Positive reinforcement notification** to use for the simulation as described in the next three subsections.
 
 When you're finished on the **Select end user notification** page, select **Next**.
 
@@ -468,9 +467,9 @@ For more information, see [End-user notifications for Attack simulation training
 
 Do one of the following steps:
 
-- **Select an existing notification to use**:
+- Select an existing notification to use:
   - To search for an existing notification in the list, type part of the notification name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
-  - When you select a notification by clicking  anywhere in the row other than the check box, a details flyout opens that shows more information about the notification:
+  - When you select a notification by clicking anywhere in the row other than the check box, a details flyout opens that shows more information about the notification:
     - The **Preview** tab shows what the notification looks like to users.
     - The **Details** tab shows the properties of the notification.
 
@@ -478,7 +477,7 @@ Do one of the following steps:
 
   On the **Training assignment notification** page, select a notification to use by selecting the check box next to the name.
 
-- **Create a new notification to use**: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
+- Create a new notification to use: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
   > [!NOTE]
   > On the **Define details** page of the new notification wizard, be sure to select the value **Training assignment notification** for the notification type.
@@ -505,9 +504,9 @@ These notifications are also available at **Attack simulation training** \> **Co
 
 For more information, see [End-user notifications for Attack simulation training](attack-simulation-training-end-user-notifications.md).
 
-In **Set frequency for reminder notification**, select **Weekly** or **Twice a week**, and then do one of the following steps:
+In **Set frequency for reminder notification**, select **Weekly** (the default value) or **Twice a week**, and then do one of the following steps:
 
-- **Select an existing notification to use**:
+- Select an existing notification to use:
   - To search for an existing notification in the list, type part of the notification name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
   - When you select a notification by clicking  anywhere in the row other than the check box, a details flyout opens that shows more information about the notification:
     - The **Preview** tab shows what the notification looks like to users.
@@ -517,7 +516,7 @@ In **Set frequency for reminder notification**, select **Weekly** or **Twice a w
 
   On the **Training reminder notification** page, select a notification to use by selecting the check box next to the name.
 
-- **Create a new notification to use**: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
+- Create a new notification to use: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
   > [!NOTE]
   > On the **Define details** page of the new notification wizard, be sure to select the value **Training reminder notification** for the notification type.
@@ -531,13 +530,13 @@ When you're finished on the **Training reminder notification** page, select **Ne
 > [!NOTE]
 > This page is available only if you selected **Customized end user notifications** on the [Select end user notifications](#select-end-user-notifications) page.
 
-You have the following options for positive reinforcement notifications:
+You have the following options in the **Delivery preferences** section for positive reinforcement notifications:
 
-- Don't use positive reinforcement notifications: Select **Do not deliver** in the **Delivery preferences** section.
+- Don't use positive reinforcement notifications: Select **Do not deliver** section. There's nothing else to configure on the page, so you go to the [Launch details](#configure-the-simulation-launch-details) page when you select **Next**.
 
-  There's nothing else to configure on the page, so you're taken to the [Launch details](#configure-the-simulation-launch-details) page when you select **Next**.
-
-- Use an existing positive reinforcement notification: Select **Deliver after the user reports a phish and campaign ends** or **Deliver immediately after the user reports a phish** in the **Delivery preferences** section.
+- Use an existing positive reinforcement notification: Select one of the remaining values:
+  - **Deliver after the user reports a phish and campaign ends**
+  - **Deliver immediately after the user reports a phish**.
 
   The following notifications and their configured languages appear on the page:
 
@@ -560,7 +559,7 @@ You have the following options for positive reinforcement notifications:
 
   When you're finished in the notification details flyout, select **Close**.
 
-  On the **Positive reinforcement notification** page, select an existing notification to use by clicking the check box next to the name.
+  On the **Positive reinforcement notification** page, select an existing notification to use by selecting the check box next to the name.
 
 - Create a new positive reinforcement notification to use: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are identical to [Create end-user notifications](attack-simulation-training-end-user-notifications.md#create-end-user-notifications).
 
@@ -573,7 +572,7 @@ When you're finished on the **Positive reinforcement notification** page, select
 
 ## Configure the simulation launch details
 
-On the **Launch details** page, you choose when to start and end the simulation. We'll stop capturing interaction with this simulation after the end date you specify.
+On the **Launch details** page, you choose when to start and end the simulation. We stop capturing interaction with this simulation after the end date you specify.
 
 Choose one of the following values:
 
@@ -585,9 +584,10 @@ Choose one of the following values:
   - **Select launch time minute**
   - **Select time format**: Select **AM** or **PM**.
 
-The default value for **Configure number of days to end simulation after** is 2 days, which is also the minimum value. The maximum value is 30 days.
+Configure the remaining options on the page:
 
-If you select **Enable region aware time zone delivery**, the simulated attack messages are delivered to users during their regional working hours.
+- **Configure number of days to end simulation after**: The default value is 2 days, which is also the minimum value. The maximum value is 30 days.
+- **Enable region aware time zone delivery**: If you select this value, the simulated attack messages are delivered to users during their regional working hours.
 
 When you're finished on the **Launch details** page, select **Next**.
 
@@ -614,9 +614,9 @@ Back on the **Simulations** tab, the simulation that you created is now listed. 
 
 ## View simulations
 
-The **Simulations** tab in Attack simulation training shows any simulations that you've created.
+The **Simulations** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator> shows any simulations that you've created.
 
-By default, the following information is shown for each simulation<sup>\*</sup>:
+By default, the following information is shown for each simulation:<sup>\*</sup>
 
 - **Simulation name**
 - **Type**
@@ -624,7 +624,7 @@ By default, the following information is shown for each simulation<sup>\*</sup>:
 - **Launch date**
 - **End date**
 - **Actual compromise rate (%)**: The percentage of people who were compromised by your simulation (users compromised / total number of users who receive the simulation).
-- **Predicted compromise rate (%)**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
+- **Predicted compromise rate (%)**: Historical data across Microsoft 365 that predicts the percentage of people who should be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
 - **Technique**: The [social engineering technique](#select-a-social-engineering-technique) that's used in the simulation.
 - **Status**: One of the following values:
   - **Draft**
@@ -655,7 +655,7 @@ To see simulations that have been excluded from reporting (the **Status** value 
 
 ### View simulation details
 
-To view details about a simulation, use either of the following methods on the **Simulations** tab:
+To view details about a simulation, use either of the following methods on the **Simulations** tab at <https://security.microsoft.com/attacksimulator>:
 
 - Select the simulation by clicking anywhere in the row other than the check box next to the name.
 - Select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png" border="false"::: **View report**.
@@ -740,22 +740,22 @@ All actions on existing simulations start on the **Simulations** tab. To get the
 
 ### Copy simulations
 
-You can copy an existing simulation and modify it to suit your needs. This will save you time and effort when creating new simulations based on previous ones.
+You can copy an existing simulation and modify it to suit your needs. This action saves time and effort when you create new simulations based on previous ones.
 
 You can copy any simulation that you created and that's available in the **Simulations** tab, regardless of the **Status** value. You can then modify the copy. For example, change the simulation name, description, technique, payload, target users, etc.
 
 - We don't recommend copying **Failed** simulations, because the reasons for failure could recur in the duplicated simulation.
 - When you copy a simulation, the most recent version of the content in the original simulation is used in the new copy. For example, the payload, landing page, and end-user notifications. If any content is deleted, you're prompted to select the respective content again.
-- The latest target and excluded users at the time of simulation launch will be used when groups are added from the search bar - **Search for users or groups**. The target and excluded users will remain unchanged in the following scenarios:
-  - when the user list was imported as a CSV.
-  - when users were added from the search bar.
-  - When users were added for different categories: All users, Suggested user groups, User tags, City, Country, Department, Title.
+- The latest target and excluded users at the time of simulation launch are used when groups are added from the search bar (**Search for users or groups**). The target and excluded users are unchanged in the following scenarios:
+  - The user list was imported from a CSV file.
+  - Users were added from the search bar.
+  - Users were added for different categories: All users, Suggested user groups, User tags, City, Country, Department, Title.
 - If the scheduled simulation launch time in the original simulation is in the future, it's copied as is. For launch times in the past, the value **Launch this simulation as soon as I'm done** is selected.
 
 To copy a simulation, follow these steps:
 
 1. Select the **Simulations** tab and find the simulation that you want to copy.
-2. Select the checkbox next to the simulation name, and then select :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy simulation**.
+2. Select the check box next to the simulation name, and then select :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy simulation**.
 3. The simulation configuration wizard opens with all the original settings and a simulation name containing the suffix **_Copy**.
 4. Review and modify the simulation configuration as needed. Select **Submit** to launch it or **Save and close** to review it later. If you select **Cancel**, the copied simulation isn't saved.
 
@@ -771,7 +771,7 @@ After you cancel the simulation, the **Status** value changes to **Canceled**.
 
 You can't remove simulations with the **Status** value **In progress**.
 
-To remove a simulation from the **Simulations** tab, select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Cancel simulation**, and then select **Confirm** in the confirmation dialog.
+To remove a simulation from the **Simulations** tab, select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete**, and then select **Confirm** in the confirmation dialog.
 
 After you remove the simulation, it no longer appears on the **Simulations** tab.
 
@@ -796,7 +796,7 @@ The **Include** action is available only for simulations with the **Status** val
 
 To include a completed session in reporting after it has been excluded, do the following steps:
 
-1. On the **Simulations** tab, set the **Show excluded simulations** toggle to on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
+1. On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, set the **Show excluded simulations** toggle to :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**.
 2. Select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-include-icon.png" border="false"::: **Exclude**.
 
 After you've included the excluded simulation, the **Status** value changes to **Completed**. Toggle **Show excluded simulations** to off :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: to see the simulation.
