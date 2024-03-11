@@ -109,9 +109,9 @@ A similar message occurs if you're using Internet Explorer:
 
 1. On your task bar, select the Shield icon, open the **Windows Security** app. Or, search the **Start** for *Security*.
 
-2. Select **Virus & threat protection**, and then select **Protection history**.
+1. Select **Virus & threat protection**, and then select **Protection history**.
 
-1. 3. Under the **Quarantined threats** section, select **See full history** to see the detected fake malware.
+1. Under the **Quarantined threats** section, select **See full history** to see the detected fake malware.
 
    > [!NOTE]
    > Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
