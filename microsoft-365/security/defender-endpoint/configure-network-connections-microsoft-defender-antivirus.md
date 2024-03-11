@@ -78,14 +78,13 @@ For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun
 
 If you get any of these errors, see the root cause and solutions:
 
-|Error message|Root cause|Solutions| 
+|Error message|Root cause|Solutions|
 |:---|:---|:---|
-|Start Time: <Day_of_the_week> MM DD YYYY HH:MM:SS </br> MpEnsureProcessMitigationPolicy: hr = 0x1</br>ValidateMapsConnection</br>ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80070006 httpcore=451)</br>MpCmdRun.exe: hr = 0x80070006</br></br> ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072F8F httpcore=451)</br>MpCmdRun.exe: hr = 0x80072F8F</br></br>ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072EFE httpcore=451)</br>MpCmdRun.exe: hr = 0x80072EFE|
-|**Root cause**: The device does not have its system-wide WinHttp proxy configured. If you don’t set the system-wide WinHttp proxy then the operating system is not aware of the proxy, which means the operating system can’t fetch the CRL (the OS does this, not MDE), which means that TLS connections to URLs like [cp.wd.microsoft.com](http://cp.wd.microsoft.com/) will not succeed. At least not fully. We would see successful (response 200) connections to the endpoints but our MAPS connections would still fail.| 
-|**Solution (Preferred)**: Configure the system-wide WinHttp proxy which will allow CRL check.</br></br> **Solution (Preferred # 2)**: </br> [Setup Redirect the Microsoft Automatic Update URL for a disconnected environment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)?redirectedfrom=MSDN) </br> [To configure a server that has access to the Internet to retrieve the CTL files](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)?redirectedfrom=MSDN) </br> [Redirect the Microsoft Automatic Update URL for a disconnected environment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)?redirectedfrom=MSDN) </br> </br> **References:** </br> - Computer Configuration > Windows Settings > Security Settings > Public Key Policies > Certificate Path Validation Settings > Select the Network Retrieval tab, select to select Define these policy settings, and then seelct to clear the Automatically update certificates in the Microsoft Root Certificate Program (recommended) check box.</br></br> - [Certificate Revocation List (CRL) Verification - an Application Choice](https://social.technet.microsoft.com/wiki/contents/articles/964.certificate-revocation-list-crl-verification-an-application-choice.aspx) </br> - [https://support.microsoft.com/en-us/help/931125/how-to-get-a-root-certificate-update-for-windows](https://support.microsoft.com/en-us/help/931125/how-to-get-a-root-certificate-update-for-windows) </br> - [https://technet.microsoft.com/en-us/library/dn265983(v=ws.11).aspx](https://technet.microsoft.com/en-us/library/dn265983(v=ws.11).aspx) </br> - [https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element) - [https://blogs.msdn.microsoft.com/amolravande/2008/07/20/improving-application-start-up-time-generatepublisherevidence-setting-in-machine-config/](https://blogs.msdn.microsoft.com/amolravande/2008/07/20/improving-application-start-up-time-generatepublisherevidence-setting-in-machine-config/) </br> </br> **Work-around (Alternative):** Not best practice since you will no longer check for revoked certs or cert pinning. </br>Disable CRL check only for SPYNET. Configuring this registry SSLOptions disable CRL check only for SPYNET reporting. It won’t impact other services.</br> </br> Go to **HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet** > set SSLOptions (dword) to 0 (hex). </br> - 0 – disable pinning and revocation checks </br> - 1 – disable pinning </br>  - 2 – disable revocation checks only </br> <- 3 – enable revocation checks and pinning (default)|
+|Start Time: <Day_of_the_week> MM DD YYYY HH:MM:SS </br> MpEnsureProcessMitigationPolicy: hr = 0x1</br>ValidateMapsConnection</br>ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80070006 httpcore=451)</br>MpCmdRun.exe: hr = 0x80070006</br></br> ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072F8F httpcore=451)</br>MpCmdRun.exe: hr = 0x80072F8F</br></br>ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80072EFE httpcore=451)</br>MpCmdRun.exe: hr = 0x80072EFE|**Root cause**: The device does not have its system-wide WinHttp proxy configured. If you don’t set the system-wide WinHttp proxy then the operating system is not aware of the proxy, which means the operating system can’t fetch the CRL (the OS does this, not MDE), which means that TLS connections to URLs like [cp.wd.microsoft.com](http://cp.wd.microsoft.com/) will not succeed. At least not fully. We would see successful (response 200) connections to the endpoints but our MAPS connections would still fail.|**Solution (Preferred)**: Configure the system-wide WinHttp proxy which will allow CRL check.</br></br> **Solution (Preferred # 2)**: </br> [Setup Redirect the Microsoft Automatic Update URL for a disconnected environment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)?redirectedfrom=MSDN) </br> [To configure a server that has access to the Internet to retrieve the CTL files](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)?redirectedfrom=MSDN) </br> [Redirect the Microsoft Automatic Update URL for a disconnected environment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)?redirectedfrom=MSDN) </br> </br> **References:** </br> - Computer Configuration > Windows Settings > Security Settings > Public Key Policies > Certificate Path Validation Settings > Select the Network Retrieval tab, select to select Define these policy settings, and then seelct to clear the Automatically update certificates in the Microsoft Root Certificate Program (recommended) check box.</br></br> - [Certificate Revocation List (CRL) Verification - an Application Choice](https://social.technet.microsoft.com/wiki/contents/articles/964.certificate-revocation-list-crl-verification-an-application-choice.aspx) </br> - [https://support.microsoft.com/help/931125/how-to-get-a-root-certificate-update-for-windows](https://support.microsoft.com/help/931125/how-to-get-a-root-certificate-update-for-windows) </br> - [https://technet.microsoft.com/library/dn265983(v=ws.11).aspx](https://technet.microsoft.com/library/dn265983(v=ws.11).aspx) </br> - [https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element) - [https://blogs.msdn.microsoft.com/amolravande/2008/07/20/improving-application-start-up-time-generatepublisherevidence-setting-in-machine-config/](https://blogs.msdn.microsoft.com/amolravande/2008/07/20/improving-application-start-up-time-generatepublisherevidence-setting-in-machine-config/) </br> </br> **Work-around (Alternative):** Not best practice since you will no longer check for revoked certs or cert pinning. </br>Disable CRL check only for SPYNET. Configuring this registry SSLOptions disable CRL check only for SPYNET reporting. It won’t impact other services.</br> </br> Go to **HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet** > set SSLOptions (dword) to 0 (hex). </br> - 0 – disable pinning and revocation checks </br> - 1 – disable pinning </br>  - 2 – disable revocation checks only </br> <- 3 – enable revocation checks and pinning (default)|
 
 ## Attempt to download a fake malware file from Microsoft
-You can download a [sample file](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-cloud-delivered-protection) that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud. 
+
+You can download a [sample file](/microsoft-365/security/defender-endpoint/defender-endpoint-demonstration-cloud-delivered-protection) that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud.
 
 > [!NOTE]
 > The downloaded file is not exactly malware. It's a fake file designed to test if you're properly connected to the cloud.
@@ -100,7 +99,7 @@ A similar message occurs if you're using Internet Explorer:
 
 :::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="The Microsoft Defender Antivirus notification that malware was found" lightbox="../../media/wdav-bafs-ie.png":::
 
-#### View the fake malware detection in your Windows Security app
+### View the fake malware detection in your Windows Security app
 
 1. On your task bar, select the Shield icon, open the **Windows Security** app. Or, search the **Start** for *Security*.
 
@@ -115,19 +114,19 @@ A similar message occurs if you're using Internet Explorer:
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
-> 
+>
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> 
+>
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> 
+>
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> 
+>
 > - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> 
+>
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> 
+>
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
-> 
+>
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## See also
@@ -135,6 +134,5 @@ A similar message occurs if you're using Internet Explorer:
 - [Configure device proxy and Internet connectivity settings for Microsoft Defender for Endpoint](configure-proxy-internet.md)
 - [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 
-
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
