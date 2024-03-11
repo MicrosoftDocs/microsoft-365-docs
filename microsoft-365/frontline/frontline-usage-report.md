@@ -24,7 +24,7 @@ ms.date:
 
 ## Overview
 
-You can track usage for all your frontline locations deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience on a usage dashboard on the Manage frontline teams page of the Teams admin center.
+You can track usage for all your frontline locations deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience from the usage dashboard on the Manage frontline teams page in the Teams admin center.
 
 From the usage dashboard, you can:
 
@@ -38,7 +38,7 @@ In the Teams admin center, choose **Frontline deployment** > **Manage frontline 
 - Directly, on the **Usage** tab.
 - Through the **App usage - Microsoft Teams** card. This card shows the overall percentage of users across all your frontline teams that have been active on Teams in the last 30 days. Choose **View details** to go to the dashboard.
 
-    :::image type="content" source="media/frontline-usage-report-app-usage-card.png" alt-text="Screenshot of the App usage - Microsoft Teams card on the Manage frontline teams page of the Teams admin center." lighbox="media/frontline-usage-report-app-usage-card.png":::
+    :::image type="content" source="media/frontline-usage-report-app-usage-card.png" alt-text="Screenshot of the App usage - Microsoft Teams card on the Manage frontline teams page of the Teams admin center." lightbox="media/frontline-usage-report-app-usage-card.png":::
 
 To view usage reports in the dashboard, make sure the **Display concealed user, group, and site names in all reports** setting is turned on in the Microsoft 365 admin center. Otherwise, you'll see a “User details have been hidden by your Microsoft 365 Reports privacy setting” message.
 
