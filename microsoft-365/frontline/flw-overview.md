@@ -84,7 +84,7 @@ Manage identities and access with [Microsoft Entra ID](/entra/fundamentals/whati
 |Capability |More information |
 |-----------|---------------------|
 |Manage identities and access |<ul><li>[Microsoft Entra ID overview](/entra/fundamentals/whatis)</li></ul>|
-|Secure endpoints and apps across device types and operating systems |<ul><li>[Microsoft Intune overview](/mem/intune/fundamentals/what-is-intune)</li><li>[Get started with frontline worker (FLW) device management](/mem/solutions/frontline-worker)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li></ul>|
+|Secure endpoints and apps across device types and operating systems |<ul><li>[Microsoft Intune overview](/mem/intune/fundamentals/what-is-intune)</li><li>[Frontline worker device management overview in Microsoft Intune](/mem/solutions/frontline-worker/frontline-worker-overview)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li></ul>|
 
 <!-- ## Safeguard your business
  |
@@ -135,7 +135,7 @@ Deploy your frontline teams and give your frontline workforce access to the righ
 |Solution area|More information|
 |---------|---------|
 |Frontline teams|When deploying your frontline teams, you can choose between dynamic team membership, static team membership, or a combination of both. <ul><li>[Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)</li><li>[Deploy frontline static teams at scale](deploy-teams-at-scale.md)</li></ul>Learn more about [how to determine the best frontline team solution for your organization](frontline-team-options). |
-|Frontline operational hierarchy|Setting up a [frontline operational hierarchy](deploy-frontline-operational-hierarchy) maps your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center, which will enable numerous frontline experiences that are coming soon.|
+|Frontline operational hierarchy|Set up a [frontline operational hierarchy](deploy-frontline-operational-hierarchy) to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center.|
 |Frontline apps and experiences|Standardize Shifts settings across all your frontline teams and manage them centrally by [deploying Shifts to your frontline teams at scale](deploy-shifts-at-scale.md).|
 |Teams policy packages |Use [Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) to streamline and help provide consistency when managing policies for your frontline.|
 
