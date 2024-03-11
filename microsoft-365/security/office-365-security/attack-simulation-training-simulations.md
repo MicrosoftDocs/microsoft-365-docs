@@ -739,15 +739,13 @@ You can copy an existing simulation and modify it to suit your needs. This will 
 
 You can copy any simulation that you created and that's available in the **Simulations** tab, regardless of the **Status** value. You can then modify the copy. For example, change the simulation name, description, technique, payload, target users, etc.
 
-**Notes**:
-
 - We don't recommend copying **Failed** simulations, because the reasons for failure could recur in the duplicated simulation.
 - When you copy a simulation, the most recent version of the content in the original simulation is used in the new copy. For example, the payload, landing page, and end-user notifications. If any content is deleted, you're prompted to select the respective content again.
 - The latest target and excluded users at the time of simulation launch will be used when groups are added from the search bar - **Search for users or groups**. The target and excluded users will remain unchanged in the following scenarios:
   - when the user list was imported as a CSV.
   - when users were added from the search bar.
   - When users were added for different categories: All users, Suggested user groups, User tags, City, Country, Department, Title.
-- If the scheduled simulation launch time in the original simulation is in the future, it's copied as is. For launch times in the past, the value **Launch this simulation as soon as I'm done** is selected. 
+- If the scheduled simulation launch time in the original simulation is in the future, it's copied as is. For launch times in the past, the value **Launch this simulation as soon as I'm done** is selected.
 
 To copy a simulation, follow these steps:
 
