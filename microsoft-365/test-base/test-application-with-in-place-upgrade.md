@@ -17,6 +17,9 @@ f1.keywords: NOCSH
 ---
 
 # Test your application with in-place upgrade
+
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
  > [!NOTE]
  > This guide will provide instruction on how to test your application with in-place upgrade feature
 
