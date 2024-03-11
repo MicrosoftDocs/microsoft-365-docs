@@ -61,6 +61,9 @@ The device details section provides information such as the domain, OS, and heal
 
 Response actions run along the top of a specific device page and include:
 
+- View in map
+- Device value
+- Set criticality
 - Manage tags
 - Isolate device
 - Restrict app execution
@@ -188,7 +191,7 @@ The **Azure Advanced Threat Protection** card displays a high-level overview of 
 
 ### Logged on users
 
-The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the **See all users** link opens the details pane, which displays information such as user type, sign-in type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
+The **Logged on users** card shows how many users logged on in the past 30 days, along with the most and least frequent users. Selecting the **See all users** link opens the details pane, which displays information such as user type, sign-in type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
 
 :::image type="content" source="images/logged-on-users.png" alt-text="The user details pane" lightbox="images/logged-on-users.png":::
 
@@ -222,7 +225,7 @@ The **Device health status** card shows a summarized health report for the speci
 
 Other information in the card includes: the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode.
 
-Note that a grey circle indicates that the data is unknown.
+A grey circle indicates that the data is unknown.
 
 > [!NOTE]
 > The overall status message for macOS and Linux devices currently shows up as 'Status not available for macOS & Linux'. Currently, the status summary is only available for Windows devices. All other information in the table is up to date to show the individual states of each device health signal for all supported platforms.
