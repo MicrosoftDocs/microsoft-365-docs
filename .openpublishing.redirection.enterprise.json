@@ -1094,6 +1094,11 @@
       "source_path": "microsoft-365/enterprise/microsoft-365-client-support-modern-authentication.md",
       "redirect_url": "/microsoft-365/enterprise/microsoft-365-client-support-multi-factor-authentication",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }
