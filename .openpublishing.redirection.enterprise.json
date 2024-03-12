@@ -1119,6 +1119,11 @@
       "source_path": "microsoft-365/enterprise/mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }

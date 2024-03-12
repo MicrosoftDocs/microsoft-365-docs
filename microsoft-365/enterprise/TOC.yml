@@ -694,10 +694,6 @@
               href: phs-prereqs-m365-test-environment.md
             - name: Pass-through authentication
               href: pta-prereqs-m365-test-environment.md
-    - name: Mobile device management
-      items: 
-        - name: Enroll iOS and Android devices
-          href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
 
 - name: Contoso case study
   href: contoso-case-study.md
