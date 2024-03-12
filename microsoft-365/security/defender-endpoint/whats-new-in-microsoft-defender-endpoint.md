@@ -57,6 +57,12 @@ Two new ASR rules are now in public preview:
 - [Block rebooting machine in Safe Mode (preview)](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-rebooting-machine-in-safe-mode-preview): This rule prevents the execution of commands to restart machines in Safe Mode.
 - [Block use of copied or impersonated system tools (preview)](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-use-of-copied-or-impersonated-system-tools-preview): This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
 
+**Microsoft Defender for Endpoint on macOS** features are in public preview:
+
+- **Built-in Scheduled Scan for macOS** (preview): Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in Public Preview. To learn more, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-schedule-scan?view=o365-worldwide).
+
+- **Troubleshooting mode for macOS** (preview): Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. Troubleshooting mode for macOS is now available in Public Preview. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-troubleshoot-mode?view=o365-worldwide).
+
 ## January 2024
 
 - **Defender Boxed is available for a limited period of time**. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. Take a moment to celebrate your organization's improvements in security posture, overall response to detected threats (manual and automatic), blocked emails, and more. 
