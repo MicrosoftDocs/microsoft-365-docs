@@ -42,10 +42,10 @@ Key benefits include:
 
 ## How offline definition update works
 
-- Organizations need to set up a local hosting server which is reachable to Microsoft cloud; management and maintenance of the local server will be controlled by the organization 
-- Signatures are downloaded from MS Cloud on this local Web/NFS server by executing a script using cron job/task scheduler on the local server 
-- Endpoints running MDE will pull the downloaded signatures from this local web/nfs server at a user defined time interval 
-- Signatures pulled on the endpoints from the local server are first verified before loading it into the MDE Agent 
+- Organizations need to set up a Mirror Server which is reachable to Microsoft cloud; the organization is responsible for the management and maintenance of the Mirror Server
+- Signatures are downloaded from MS Cloud on this local Web/NFS Mirror Server by executing a script using cron job/task scheduler on the local server 
+- Linux endpoints running MDE will pull the downloaded signatures from this local web/nfs server at a user defined time interval 
+- Signatures pulled on the Linux endpoints from the local server are first verified before loading it into the MDE Agent 
 
 ## Prerequisites
 
@@ -77,7 +77,7 @@ Key benefits include:
 > The management and ownership of the Mirror Server lies solely with the customer as it resides in the customer's private environment.
 
 > [!NOTE]
-> The Mirror Server is not required to have MDE installed.
+> The Mirror Server does not need to have MDE installed.
 
 Microsoft hosts a downloader script on [this GitHub repo](https://github.com/microsoft/mdatp-xplat).
 
@@ -109,7 +109,7 @@ The `settings.json` file consists of a few variables which the user can configur
 |--------------------------|--------|--------------------------------------------------------|
 | `downloadFolder`         | string | Maps to the location which the script downloads the files to |
 | `downloadLinuxUpdates`   | bool   | When set to true, the script downloads the Linux specific updates to the `downloadFolder` |
-| `logFilePath`            | string | Sets up the diagnostic logs at a given folder. This file can be shared with Microsoft for debugging the script if it is not working |
+| `logFilePath`            | string | Sets up the diagnostic logs at a given folder. This file can be shared with Microsoft for debugging the script if there are any issues |
 | `downloadMacUpdates`     | bool   | The script downloads the Mac specific updates to the `downloadFolder` |
 | `downloadPreviewUpdates` | bool   | Downloads the preview version of the updates available for the specific OS |
 | `backupPreviousUpdates`  | bool   | Allows the script to copy the previous update in the _back folder, and new updates are downloaded to `downloadFolder` |
@@ -131,7 +131,7 @@ Execute the downloaded script:
 - Windows: [Schedule a cron job in Windows](https://phoenixnap.com/kb/cron-job-windows)
 
 
-Once the definitions zip is downloaded, it is ready to be hosted by the Mirror Server. The Mirror Server can be hosted using any HTTP / HTTPS / Network share servers.
+Once the definitions zip is downloaded, the Mirror Server can be used to host it. The Mirror Server can be hosted using any HTTP / HTTPS / Network share servers.
 
 Once hosted, copy the absolute path of the hosted server (up to and not including the `arch_*` directory).
 
@@ -162,15 +162,15 @@ Once the Mirror Server is set up, we need to propagate this URL to the Linux end
 | Field Name                                | Values               | Comments                                            |
 |-------------------------------------------|----------------------|-----------------------------------------------------|
 | `automaticDefinitionUpdateEnabled`        | True / False         | Determines the behavior of MDE attempting to perform updates automatically, is turned on or off respectively |
-| `definitionUpdatesInterval`               | Numeric              | Time of interval between each auto update of definitions (in seconds) |
+| `definitionUpdatesInterval`               | Numeric              | Time of interval between each automatic update of definitions (in seconds) |
 | `offlineDefinitionUpdateUrl`              | String               | URL value generated as part of the Mirror Server set up |
 | `offlineDefinitionUpdate`                 | enabled / disabled   | When set to `enabled`, offline definition update feature is enabled, and vice versa. |
-| `offlineDefinitionUpdateFallbackToCloud`  | True / False         | Determine MDE update approach when offline Mirror Server fails to serve the update request. If set to true, the update will be retried via the Microsoft cloud when offline definition update failed, else vice versa. |
+| `offlineDefinitionUpdateFallbackToCloud`  | True / False         | Determine MDE update approach when offline Mirror Server fails to serve the update request. If set to true, the update is retried via the Microsoft cloud when offline definition update failed, else vice versa. |
 
 ## Useful commands
 
 ### Check update status
-- Once the Mirror Server and the Linux endpoints have been configured, to test if the settings are applied correctly on the Linux endpoints:
+- Once the Mirror Server and the Linux endpoints are configured, to test if the settings are applied correctly on the Linux endpoints:
     ```
     mdatp health --details --definitions
     ```
@@ -196,7 +196,7 @@ Once the Mirror Server is set up, we need to propagate this URL to the Linux end
     - Check if `offline_definition_update` and `offline_definition_update_verify_sig` is enabled.
     - Check if `definitions_update_source_uri` is equal to `offline_definition_url_configured`
         - `definitions_update_source_uri` is the source from where the definitions were downloaded.
-        - `offline_definition_url_configured` is the source from where definitions should have been downloaded, the one mentioned in the managed config file.
+        - `offline_definition_url_configured` is the source from where definitions should be downloaded, the one mentioned in the managed config file.
 - Try performing the connectivity test to check if Mirror Server is reachable from the host: 
     - `mdatp connectivity test`
 - Try to trigger manual update using the command: 
@@ -212,4 +212,4 @@ A. No, as of today you can configure it via managed json only. Integration with 
 A. No, the Mirror Server need not have Microsoft Defender for Endpoint installed. The Mirror Server's management and maintenance ownership lies with the customers since the Mirror Server resides in the customer's private environment and Microsoft will have no visibility into it.
 
 ### Q. Is Automatic rollback available? 
-A. In case of an issue with the latest downloaded signatures, you can pull the signatures on your Linux endpoints from the backup folder on the local server, which will contain signatures with n-1 version.
+A. If there is any issue with the latest downloaded signatures, you can pull the signatures on your Linux endpoints from the backup folder on the local server, which contains signatures with n-1 version.
