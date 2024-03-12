@@ -685,8 +685,6 @@
           href: automate-licenses-group-membership-microsoft-365-test-environment.md
         - name: Microsoft Entra ID Protection
           href: azure-ad-identity-protection-microsoft-365-test-environment.md
-        - name: Identity and device access
-          href: identity-device-access-m365-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md

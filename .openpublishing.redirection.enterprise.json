@@ -1139,6 +1139,11 @@
       "source_path": "microsoft-365/enterprise/cloud-only-prereqs-m365-test-environment.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/identity-device-access-m365-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }
