@@ -704,8 +704,6 @@
       items: 
         - name: Increased Microsoft 365 security
           href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
-        - name: Data classification
-          href: data-classification-microsoft-365-enterprise-dev-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md
