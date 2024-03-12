@@ -162,7 +162,7 @@ Once the Mirror Server is set up, we need to propagate this URL to the Linux end
 | Field Name                                | Values               | Comments                                            |
 |-------------------------------------------|----------------------|-----------------------------------------------------|
 | `automaticDefinitionUpdateEnabled`        | True / False         | Determines the behavior of MDE attempting to perform updates automatically, is turned on or off respectively |
-| `definitionUpdatesInterval`               | Numeric              | Time of interval between each auto update of definitions |
+| `definitionUpdatesInterval`               | Numeric              | Time of interval between each auto update of definitions (in seconds) |
 | `offlineDefinitionUpdateUrl`              | String               | URL value generated as part of the Mirror Server set up |
 | `offlineDefinitionUpdate`                 | enabled / disabled   | When set to `enabled`, offline definition update feature is enabled, and vice versa. |
 | `offlineDefinitionUpdateFallbackToCloud`  | True / False         | Determine MDE update approach when offline Mirror Server fails to serve the update request. If set to true, the update will be retried via the Microsoft cloud when offline definition update failed, else vice versa. |
