@@ -1109,6 +1109,11 @@
       "source_path": "microsoft-365/enterprise/data-classification-microsoft-365-enterprise-dev-test-environment.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/increased-o365-security-microsoft-365-enterprise-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }

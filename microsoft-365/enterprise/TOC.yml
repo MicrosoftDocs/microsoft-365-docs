@@ -700,10 +700,6 @@
           href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
         - name: Device compliance policies
           href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
-    - name: Information protection
-      items: 
-        - name: Increased Microsoft 365 security
-          href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md
