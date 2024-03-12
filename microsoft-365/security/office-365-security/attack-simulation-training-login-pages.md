@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to create and manage login pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 3/11/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -28,7 +28,7 @@ To see the available login pages, open the Microsoft Defender portal at <https:/
 
 **Login pages** in the **Content library** tab has two tabs:
 
-- **Global login pages** tab: Contains the built-in, non-modifiable login pages. There are four built-in login pages localized into 12+ languages:
+- **Global login pages** tab: Contains the built-in, unmodifiable login pages. There are four built-in login pages localized into 12+ languages:
   - **GitHub login page**
   - **LinkedIn login page**
   - **Microsoft login page**
@@ -65,6 +65,9 @@ When you select a login page from the list by clicking anywhere in the row other
   - **Language**
   - **Last modified**
 
+> [!TIP]
+> To see details about other login pages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
 ## Create login pages
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Login pages**. To go directly to the **Content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
@@ -84,7 +87,7 @@ When you select a login page from the list by clicking anywhere in the row other
 
 4. On the **Configure login page** page, configure the following settings:
 
-   - **Select a language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+   - **Select a language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, **Dutch**, and **Other**.
 
    - **Make this the default login page**: If you select this option, the login page is the default selection in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
 
@@ -182,7 +185,7 @@ To make a login page the default on the **Tenant login pages** or **Global login
 - Select **Make this the default login page** on the **Configure login page** page in the wizard when you [create or modify a login page](#create-login-pages).
 
 > [!NOTE]
-> The previous procedures are not available if the login page is already the default.
+> The previous procedures aren't available if the login page is already the default.
 >
 > The default login page is also marked in the list, although you might need to widen the **Name** column to see it:
 >
