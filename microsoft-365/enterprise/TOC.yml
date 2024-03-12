@@ -681,8 +681,6 @@
           href: password-writeback-m365-ent-test-environment.md
         - name: Password reset
           href: password-reset-m365-ent-test-environment.md
-        - name: Automatic licensing and group membership
-          href: automate-licenses-group-membership-microsoft-365-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md

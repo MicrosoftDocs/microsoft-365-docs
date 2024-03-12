@@ -1149,6 +1149,11 @@
       "source_path": "microsoft-365/enterprise/azure-ad-identity-protection-microsoft-365-test-environment.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/automate-licenses-group-membership-microsoft-365-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }
