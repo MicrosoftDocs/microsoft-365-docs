@@ -1174,6 +1174,11 @@
       "source_path": "microsoft-365/enterprise/multi-factor-authentication-microsoft-365-test-environment.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/single-sign-on-m365-ent-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }
