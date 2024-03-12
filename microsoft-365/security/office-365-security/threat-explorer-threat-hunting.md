@@ -151,7 +151,7 @@ After you determine that an email message is a threat, the next step is remediat
 
 These actions are available in the **All email**, **Malware**, or **Phish** views in Threat Explorer or Real-time detections in the **Email** tab (view) of the details area below the chart:
 
-- Select one or more entries in the table by selecting the check box next to the first column. **Message actions** is available directly in the tab.
+- Select one or more entries in the table by selecting the check box next to the first column. **Message actions** is available directly in the tab. For more information, see [Remediate using Message actions](#remediate-using-message-actions).
 
   - **Threat Explorer**:
 
@@ -161,7 +161,7 @@ These actions are available in the **All email**, **Malware**, or **Phish** view
 
     :::image type="content" source="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected-message-actions-real-time-detections.png" alt-text="The Email tab of the All email view in Real-time detections showing a selected message and the available actions in Message actions." lightbox="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected-message-actions-real-time-detections.png":::
 
-- Click on the **Subject** value of an entry in the table. The details flyout that opens contains :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** at the top of the flyout.
+- Click on the **Subject** value of an entry in the table. The details flyout that opens contains :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** at the top of the flyout. For more information, see [Remediate using Take action](#remediate-using-take-action).
 
   :::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png" alt-text="The actions available in the details tab after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png":::
 

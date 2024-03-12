@@ -150,14 +150,15 @@ For instructions, see [Email remediation in Threat Explorer and Real-time detect
 
 To summarize:
 
-1. Select :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** on an email in the **All email**, **Malware**, or **Phish** views in Threat Explorer or Real-time detections in the **Email** tab (view) of the details area below the chart.
+- Select a message from the details table in the **Email** tab (view) in the **All email**, **Malware**, or **Phish** views by selecting the check box in the row, and then select **Message actions** and then one of the following options:
+  - **Threat Explorer**: Select **Submit to Microsoft** in the **Start new submission** section. For further instruction, see [Start new submission actions in Threat Explorer](threat-explorer-threat-hunting.md#start-new-submission-actions-in-threat-explorer).
+  - **Real-time detections**: Select **Report clean**. For further instruction, see [Start new submission actions in Real-time detections](threat-explorer-threat-hunting.md#start-new-submission-actions-in-real-time-detections).
 
-2. On the **Choose response actions** page of the **Take action** wizard, select **Submit to Microsoft for review** and then select one of the following options:
-   - **I've confirmed it's clean**: Select this value if you're sure that the message is clean. The following options appear:
-     - **Allow messages like this**: If you select this value, allow entries are added to the [Tenant Allow/Block List](tenant-allow-block-list-about.md) for the sender and any related URLs or attachments in the message. The following options also appear:
-       - **Remove entry after**: The default value is **1 day**, but you can also select **7 days**, **30 days**, or a **Specific date** that's less than 30 days.
-       - **Allow entry note**: Enter an optional note that contains additional information.
-   - **It appears clean**: Select one of these values if you're unsure and you want a verdict from Microsoft.
+or
+
+- Select a message from the details table in the **Email** tab (view) in the **All email**, **Malware**, or **Phish** views by clicking on the **Subject** value.
+
+  In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** \> **Submit to Microsoft for review** \> **I've confirmed it's clean**. For further instructions, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
 
 ## View phishing URL and click verdict data
 

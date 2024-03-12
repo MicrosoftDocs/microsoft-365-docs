@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: conceptual
-ms.date: 3/5/2024
+ms.date: 3/12/2024
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
@@ -217,19 +217,20 @@ The filterable properties that are available in the **Delivery action** box in t
 |DMARC|Select one or more values: <ul><li>**Best guess pass**</li><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Permanent error**</li><li>**Selector pass**</li><li>**Temporary error**</li><li>**Unknown**</li></ul>|
 |Composite|Select one or more values: <ul><li>**Fail**</li><li>**None**</li><li>**Pass**</li><li>**Soft pass**</li></ul>|
 
-¹ **Latest delivery location** doesn't include end-user actions on messages. For example, if the user deleted the message or moved the message to an archive or PST file.
-
-There are scenarios where **Original delivery location**/**Latest delivery location** and/or **Delivery action** have the value **Unknown**. For example:
-
-- The message was delivered (**Delivery action** is **Delivered**), but an Inbox rule moved the message to a default folder other than the Inbox or Junk Email folder (for example, the Draft or Archive folder).
-- ZAP attempted to move the message after delivery, but the message wasn't found (for example, the user moved or deleted the message). <!--- In such cases, verify the **Result/Details** column in timeline view. Look for the statement "Message moved or deleted by the user."--->
-
-² By default, a URL search maps to `http`, unless another value is explicitly specified. For example:
-
-- Searching with and without the `http://` prefix in **URL**, **URL Domain**, and **URL Domain and Path** should show the same results.
-- Search for the `https://` prefix in **URL**. When no value is specified, the `http://` prefix is assumed.
-- `/` at the beginning and end of the **URL path**, **URL Domain**, **URL domain and path** fields is ignored.
-- `/` at the end of the **URL** field is ignored.
+> [!TIP]
+> ¹ **Latest delivery location** doesn't include end-user actions on messages. For example, if the user deleted the message or moved the message to an archive or PST file.
+>
+> There are scenarios where **Original delivery location**/**Latest delivery location** and/or **Delivery action** have the value **Unknown**. For example:
+>
+> - The message was delivered (**Delivery action** is **Delivered**), but an Inbox rule moved the message to a default folder other than the Inbox or Junk Email folder (for example, the Draft or Archive folder).
+> - ZAP attempted to move the message after delivery, but the message wasn't found (for example, the user moved or deleted the message).
+>
+> ² By default, a URL search maps to `http`, unless another value is explicitly specified. For example:
+>
+> - Searching with and without the `http://` prefix in **URL**, **URL Domain**, and **URL Domain and Path** should show the same results.
+> - Search for the `https://` prefix in **URL**. When no value is specified, the `http://` prefix is assumed.
+> - `/` at the beginning and end of the **URL path**, **URL Domain**, **URL domain and path** fields is ignored.
+> - `/` at the end of the **URL** field is ignored.
 
 ### Pivots for the chart in the All email view in Threat Explorer
 
@@ -343,6 +344,8 @@ The **Email** view shows a details table. You can sort the entries by clicking o
 > - Narrow the width of appropriate columns.
 > - Remove columns from the view.
 > - Zoom out in your web browser.
+>
+> Customized column settings are saved per user. Customized column settings in Incognito or InPrivate browsing mode are saved until you close the web browser.
 
 When you select one or more entries from the list by selecting the check box next to the first column, **Message actions** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
 
@@ -364,7 +367,7 @@ When you select an entry by clicking on the **Subject** value, a details flyout 
 - The following actions are available:
   - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
   - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **View header**
-  - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
+  - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
   - :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options**:
     - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**¹
     - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**¹
@@ -814,6 +817,8 @@ The following table shows the columns that are available in Threat Explorer and 
 > - Narrow the width of appropriate columns.
 > - Remove columns from the view.
 > - Zoom out in your web browser.
+>
+> Customized column settings are saved per user. Customized column settings in Incognito or InPrivate browsing mode are saved until you close the web browser.
 
 When you select one or more entries from the list by selecting the check box next to the first column, **Message actions** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
 
@@ -1096,6 +1101,8 @@ The following table shows the columns that are available in Threat Explorer and 
 > - Narrow the width of appropriate columns.
 > - Remove columns from the view.
 > - Zoom out in your web browser.
+>
+> Customized column settings are saved per user. Customized column settings in Incognito or InPrivate browsing mode are saved until you close the web browser.
 
 When you select one or more entries from the list by selecting the check box next to the first column, **Message actions** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
 
@@ -1318,6 +1325,8 @@ The **Document** view shows a details table. You can sort the entries by clickin
 > - Narrow the width of appropriate columns.
 > - Remove columns from the view.
 > - Zoom out in your web browser.
+>
+> Customized column settings are saved per user. Customized column settings in Incognito or InPrivate browsing mode are saved until you close the web browser.
 
 When you select a filename value from the **Name** column, a details flyout opens. The flyout contains the following information:
 
@@ -1454,6 +1463,8 @@ The **Results** view shows a details table. You can sort the entries by clicking
 > - Narrow the width of appropriate columns.
 > - Remove columns from the view.
 > - Zoom out in your web browser.
+>
+> Customized column settings are saved per user. Customized column settings in Incognito or InPrivate browsing mode are saved until you close the web browser.
 
 Select one or entries by selecting the check box next to the first column in the row, and then select :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all emails** to open Threat Explorer in **All email** view in a new tab filtered by the **Network message ID** values of the selected messages.
 
