@@ -692,8 +692,6 @@
               href: cloud-only-prereqs-m365-test-environment.md
             - name: Password hash sync
               href: phs-prereqs-m365-test-environment.md
-            - name: Pass-through authentication
-              href: pta-prereqs-m365-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md
