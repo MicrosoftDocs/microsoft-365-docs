@@ -20,11 +20,11 @@ description: Learn about the capabilities, services, and features in Microsoft S
 
 # Overview of Microsoft Syntex
 
-</br>
+<!---</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15yuU] 
 
-</br>
+</br>--->
 
 Microsoft Syntex is a content understanding, processing, and compliance service that uses intelligent document processing, content artificial intelligence (AI), and advanced machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint libraries, Microsoft Teams, OneDrive for Business, and Exchange.
 
