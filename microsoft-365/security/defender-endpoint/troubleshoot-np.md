@@ -96,7 +96,7 @@ The current exclusion options are:
 
 In certain circumstances, a network protections component might contribute to slow network connections to Domain Controllers and/or Exchange servers. You might also notice Event ID 5783 NETLOGON errors.
 
-To attempt to solve these issues, change Network Protection from ‘block mode’ to either ‘[audit mode](troubleshoot-np.md)’ or ‘disabled’. If this resolves your network issues, follow the next steps to find out which component in Network Protection is contributing to the behavior. 
+To attempt to solve these issues, change Network Protection from ‘block mode’ to either ‘[audit mode](troubleshoot-np.md)’ or 'disabled'. If your network issues are fixed, follow the next steps to find out which component in Network Protection is contributing to the behavior. 
 
 Disable the following components in order and test your network connectivity performance after disabling each one:
 
